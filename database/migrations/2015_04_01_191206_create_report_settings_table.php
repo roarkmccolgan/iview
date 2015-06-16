@@ -15,16 +15,20 @@ class CreateReportSettingsTable extends Migration {
 		Schema::create('report_settings', function(Blueprint $table) {
             $table->increments('id');
             $table->integer('iview_id')->unsigned();
-            $table->foreign('iview_id')->references('id')->on('iviews');
             $table->integer('analytics_id');
             $table->string('url');
             $table->string('company');
             $table->string('title');
             $table->string('corpcolor');
             $table->string('database');
-            $table->string('connection');
+            $table->string('connection')->default('mysql');
             $table->string('table');
             $table->timestamps();
+
+            $table->foreign('iview_id')
+            	  ->references('id')
+            	  ->on('iviews')
+            	  ->onDelete('cascade');
         });
 	}
 

@@ -1,0 +1,23 @@
+{
+  "name": "iview",
+  "version": "0.0.0",
+  "homepage": "https://github.com/roarkmccolgan/iview",
+  "authors": [
+    "roarkmccolgan <roarkmccolgan@gmail.com>"
+  ],
+  "description": "IDC micro-site delivery platform",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "js"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

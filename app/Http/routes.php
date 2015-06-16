@@ -13,7 +13,7 @@
 
 //Route::get('/', 'WelcomeController@index');
 
-Route::get('/', 'ReportingController@reporting');
+
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
@@ -22,12 +22,28 @@ Route::controllers([
 
 Route::get('ga', 'AnalyticsController@index');
 
-//AJAX
-Route::get('getiview/{id}', function($iviewId)
+
+//IVIEWS
+Route::get('iviews/', 'IviewController@index');
+Route::get('iviews/create', 'IviewController@create');
+
+
+//API
+Route::get('api/iviews', function($iviewId)
 {
-	if(Request::ajax()){
+	return App\Iview::all();
+	/*if(Request::ajax()){
 		return App\Iview::find($iviewId);
 	}else{
 		abort();
-	}
+	}*/
+});
+Route::get('api/iview/{id}', function($iviewId)
+{
+	return App\iview::findOrFail($iviewId);
+	/*if(Request::ajax()){
+		return App\Iview::find($iviewId);
+	}else{
+		abort();
+	}*/
 });

@@ -24,17 +24,11 @@
                     	<h3>Options</h3>
                     </div>
                     <div class="content">
-                        <form class="form-horizontal group-border-dashed" action="#" style="border-radius: 0px;">
+                        <form class="form-horizontal group-border-dashed" action="#" style="border-radius: 0px;" id="reporting">
                         	<div class="form-group">
                                 <label class="col-sm-3 control-label">iView</label>
                                 <div class="col-sm-2">
-                                    <select class="select2" placeholder="Select" id="hellp">
-                                        @foreach($iviews as $company=>$iview)
-                                        <optgroup label="{{$company}}">
-                                            <option value="{{$iview->id}}">{{$iview->name}}</option>
-                                        </optgroup>
-                                        @endforeach
-                                    </select>
+                                    <select class="select2" v-model="iviewSelected" options="iviews" placeholder="Please Select"></select>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -61,6 +55,7 @@
 
 @section('javascript')
 @parent
+<script  type="text/javascript"src="{{ asset('/js/app.js') }}"></script>
 <script  type="text/javascript"src="{{ asset('/js/jquery.select2/select2.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('/js/behaviour/general.js') }}"></script>
 <script type="text/javascript" src="{{ asset('/js/bootstrap.daterangepicker/moment.min.js') }}"></script>

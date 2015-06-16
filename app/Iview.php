@@ -10,13 +10,13 @@ class Iview extends Model {
 		'active'
 	];
 	
+	public function company()
+    {
+        return $this->belongsTo('App\Company');
+    }
+
 	public function notifications()
     {
         return $this->hasMany('App\Notification');
-    }
-	
-	public function reportsettings()
-    {
-        return $this->hasMany('App\ReportSetting');
     }
 }

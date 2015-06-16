@@ -14,11 +14,15 @@ class CreateNotificationsTable extends Migration {
 	{
 		Schema::create('notifications', function(Blueprint $table) {
             $table->increments('id');
-            $table->integer('iview_id')->unsigned();
-            $table->foreign('iview_id')->references('id')->on('iviews');
+            $table->integer('notification_id')->unsigned();
             $table->string('name');
             $table->string('email');
             $table->timestamps();
+
+            $table->foreign('notification_id')
+            	  ->references('id')
+            	  ->on('notifications')
+            	  ->onDelete('cascade');
         });
 	}
 

@@ -5,7 +5,7 @@ return [
 			'dellstorage'=>[
 				'en'=>[
 					'projectId'=>'72504542',
-					'url'=>'http://www.delliview.com',
+					'url'=>'http://dellstorage.idciview.net',
 					'from'=>'2015-03-26',
 					'to'=>'2015-03-26',
 					'company'=>'DELL',

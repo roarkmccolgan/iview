@@ -59,8 +59,8 @@
                     <ul class="cl-vnavigation">          
                       <li><a href="#"><i class="fa fa-play-circle-o"></i><span>iViews</span></a>
                         <ul class="sub-menu">
-                          <li><a href="#reporting">Reporting</a></li>
-                          <!--<li><a href="index.html">Blank Page Header</a></li>-->
+                          <li><a href="iview/create">New iView</a></li>
+                          <li><a href="/">Reporting</a></li>
                         </ul>
                       </li>
                     </ul>
@@ -80,7 +80,7 @@
 	
 </div>
 @section('javascript')
-<script src="{{ asset('/js/jquery.js') }}"></script>
+<script src="{{ asset('/js/vendor.js') }}"></script>
 <script type="text/javascript" src="{{ asset('/js/jquery.nanoscroller/jquery.nanoscroller.js') }}"></script>
 <script type="text/javascript" src="{{ asset('/js/behaviour/general.js') }}"></script>
 @show

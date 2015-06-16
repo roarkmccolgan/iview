@@ -9,9 +9,8 @@ class Notification extends Model {
 		'email'
 	];
 	
-	public function iview()
+	public function reportSetting()
 	{
-		return $this->belongsTo('App\Iview');
+		return $this->belongsTo('App\ReportSetting');
 	}
-
 }

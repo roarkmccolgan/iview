@@ -16,4 +16,8 @@ class ReportSetting extends Model {
 	{
 		return $this->belongsTo('App\Iview');
 	}
+
+	public function reportSettings(){
+		return this->hasMany('App\ReportSetting');
+	}
 }
