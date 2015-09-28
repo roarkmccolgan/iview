@@ -14,9 +14,14 @@ class CreateIviewsTable extends Migration {
 	{
 		Schema::create('iviews', function(Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
+            $table->string('alias');
+            $table->string('title');
+            $table->string('sub_title')->nullable();
             $table->integer('company_id')->unsigned();
-            $table->date('published_at');
+            $table->timestamp('start_date');
+            $table->timestamp('end_date');
+            $table->string('gapropertyid');
+            $table->unsignedInteger('template_id');
             $table->boolean('active')->default(1);
             $table->timestamps();
 

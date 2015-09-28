@@ -7,7 +7,7 @@ var App = function () {
 		nestableLists: true,
 		hiddenElements: true,
 		bootstrapSwitch:true,
-		dateTime:true,*/
+		dateTime:true,
 		select2:true/*,
 		tags:true,
 		slider:true*/

@@ -5,7 +5,7 @@ use Illuminate\Database\Eloquent\Model;
 class Company extends Model {
 
 	protected $fillable = [
-		'name', 'logo'
+		'name', 'logo', 'colours'
 	];
 
 	public function iviews(){

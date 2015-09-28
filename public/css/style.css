@@ -4237,6 +4237,11 @@ h1:first-child {
 .badge-danger {
   background-color: #ED5B56 !important;
 }
+a.close{
+  font-family: sans-serif;
+  margin-left: 5px;
+  font-size: 16px;
+}
 /*Progress*/
 .progress {
   height: 18px;

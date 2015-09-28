@@ -10,42 +10,33 @@
 
 @section('content')
     <div class="page-head">
-        <h2>Generate Reports</h2>
+        <h2>iViews</h2>
         <ol class="breadcrumb">
             <li><a href="/">Home</a></li>
-            <li class="active">generate reports</li>
+            <li class="active">iviews</li>
         </ol>
     </div>
     <div class="cl-mcont">
     	<div class="row">
         	<div class="col-md-12">
             	<div class="block-flat">
-                    <div class="header">							
-                    	<h3>Options</h3>
+                    <div class="btn-toolbar pull-right">
+                      <div class="btn-group">
+                        <a href="/iviews/create" class="btn btn-primary"><i class="fa fa-bar-chart-o"></i> New iView</a>
+                      </div>
                     </div>
+                    <div class="clearfix"></div>
                     <div class="content">
-                        <form class="form-horizontal group-border-dashed" action="#" style="border-radius: 0px;" id="reporting">
-                        	<div class="form-group">
-                                <label class="col-sm-3 control-label">iView</label>
-                                <div class="col-sm-2">
-                                    <select class="select2" v-model="iviewSelected" options="iviews" placeholder="Please Select"></select>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-sm-3 control-label">Report Dates</label>
-                                <div class="col-sm-6">
-                                    <fieldset>
-                                        <div class="control-group">
-                                            <div class="controls">
-                                                <div class="input-prepend input-group">
-                                                    <span class="add-on input-group-addon primary"><span class="glyphicon glyphicon-th"></span></span><input type="text" style="width: 200px" name="reportdates" id="reportdates" class="form-control" value="20/03/2015 - 02/04/2015" /> 
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </fieldset>
-                                </div>
-                            </div>
-                        </form>
+                        @if(!$companies->isEmpty())
+                            @foreach($companies as $company)
+                            <h3>{{$company->name}}</h3>
+                                @foreach($company->iviews as $iview)
+                            {{$iview->title}}
+                                @endforeach
+                            @endforeach
+                        @else
+                        <p>There are no iViews, <a href="/iviews/create">create one?</a></p>
+                        @endif
                     </div>
                 </div>
         	</div>

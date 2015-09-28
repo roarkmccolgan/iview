@@ -14,14 +14,18 @@ class CreateNotificationsTable extends Migration {
 	{
 		Schema::create('notifications', function(Blueprint $table) {
             $table->increments('id');
-            $table->integer('notification_id')->unsigned();
-            $table->string('name');
+            $table->integer('report_id')->unsigned();
+            $table->string('first_name');
+            $table->string('last_name');
             $table->string('email');
+            $table->tinyInteger('default')->default(0);
+
+
             $table->timestamps();
 
-            $table->foreign('notification_id')
+            $table->foreign('report_id')
             	  ->references('id')
-            	  ->on('notifications')
+            	  ->on('reports')
             	  ->onDelete('cascade');
         });
 	}

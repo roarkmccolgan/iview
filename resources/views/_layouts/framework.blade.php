@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="">
+  <meta id="token" name="token" value="{{ csrf_token() }}">
 	<link rel="shortcut icon" href="{{ asset('/images/favicon.png') }}">
 
 	<title>IDC Terminal - iViews</title>
@@ -44,32 +45,32 @@
 			<div class="cl-toggle"><i class="fa fa-bars"></i></div>
         	@section('sidebar')
 			<div class="cl-navblock">
-                <div class="menu-space">
-                  <div class="content">
-                    <div class="side-user">
-                      <div class="info">
-                        <p>iViews: 1 / 10 </p>
-                        <div class="progress progress-user">
-                          <div style="width: 10%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-info">
-                            <span class="sr-only">10% Complete (success)</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <ul class="cl-vnavigation">          
-                      <li><a href="#"><i class="fa fa-play-circle-o"></i><span>iViews</span></a>
-                        <ul class="sub-menu">
-                          <li><a href="iview/create">New iView</a></li>
-                          <li><a href="/">Reporting</a></li>
-                        </ul>
-                      </li>
-                    </ul>
+        <div class="menu-space">
+          <div class="content">
+            <div class="side-user">
+              <div class="info">
+                <p>iViews: 1 / 10 </p>
+                <div class="progress progress-user">
+                  <div style="width: 10%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-info">
+                    <span class="sr-only">10% Complete (success)</span>
                   </div>
                 </div>
-                <!--<div class="text-right collapse-button" style="padding:7px 9px;">
-                  <input type="text" class="form-control search" placeholder="Search..." />
-                  <button id="sidebar-collapse" class="btn btn-default" style=""><i style="color:#fff;" class="fa fa-angle-left"></i></button>
-                </div>-->
+              </div>
+            </div>
+            <ul class="cl-vnavigation">          
+              <li><a href="#"><i class="fa fa-play-circle-o"></i><span>iViews</span></a>
+                <ul class="sub-menu">
+                  <li><a href="/iviews/create">New iView</a></li>
+                  <li><a href="/reporting">Reporting</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--<div class="text-right collapse-button" style="padding:7px 9px;">
+          <input type="text" class="form-control search" placeholder="Search..." />
+          <button id="sidebar-collapse" class="btn btn-default" style=""><i style="color:#fff;" class="fa fa-angle-left"></i></button>
+        </div>-->
 			</div>
             @show
 		</div>
@@ -81,6 +82,7 @@
 </div>
 @section('javascript')
 <script src="{{ asset('/js/vendor.js') }}"></script>
+<script src="{{ asset('js/bootstrap/dist/js/bootstrap.min.js')}}"></script>
 <script type="text/javascript" src="{{ asset('/js/jquery.nanoscroller/jquery.nanoscroller.js') }}"></script>
 <script type="text/javascript" src="{{ asset('/js/behaviour/general.js') }}"></script>
 @show
@@ -93,11 +95,6 @@
 	@show
   });
 </script>
-
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="{{ asset('js/bootstrap/dist/js/bootstrap.min.js')}}"></script>
 
 </body>
 </html>

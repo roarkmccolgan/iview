@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateReportSettingsTable extends Migration {
+class CreateReportsTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,22 +12,19 @@ class CreateReportSettingsTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('report_settings', function(Blueprint $table) {
+		Schema::create('reports', function(Blueprint $table) {
             $table->increments('id');
-            $table->integer('iview_id')->unsigned();
-            $table->integer('analytics_id');
-            $table->string('url');
-            $table->string('company');
-            $table->string('title');
-            $table->string('corpcolor');
+            $table->integer('url_id')->unsigned();
+            $table->string('name');
             $table->string('database');
             $table->string('connection')->default('mysql');
             $table->string('table');
+            $table->string('ignore_fields');
             $table->timestamps();
 
-            $table->foreign('iview_id')
+            $table->foreign('url_id')
             	  ->references('id')
-            	  ->on('iviews')
+            	  ->on('urls')
             	  ->onDelete('cascade');
         });
 	}
@@ -39,7 +36,7 @@ class CreateReportSettingsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('report_settings');
+		Schema::drop('reports');
 	}
 
 }
