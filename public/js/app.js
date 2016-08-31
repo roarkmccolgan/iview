@@ -117,7 +117,6 @@ vueReporting = new Vue({
 			iviewid= e.target.selectedOptions[0].value;
 
 			this.$http.get('/api/iview/'+iviewid+'/urls',function(urls){
-				console.log(urls);
 				this.iviewurls = urls;
 			});
 		},
@@ -130,6 +129,7 @@ vueReporting = new Vue({
 					lname: null,
 					email: null,
 					registration: false,
+					datapass: false,
 					report: true,
 					selectedUrls: []
 				}
@@ -155,7 +155,6 @@ vueReporting = new Vue({
 		},
 		deleteRecipient: function(recNum){
 			event.preventDefault();
-			console.log(recNum);
 			this.recipients.$delete(recNum);
 			var num = this.curRec--
 		}

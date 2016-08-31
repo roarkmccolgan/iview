@@ -22,7 +22,8 @@ Route::controllers([
 
 Route::get('ga', 'AnalyticsController@index');
 
-
+//HOME
+Route::get('/', 'HomeController@index');
 //IVIEWS
 Route::get('iviews/', 'IviewController@index');
 Route::get('iviews/create', 'IviewController@create');

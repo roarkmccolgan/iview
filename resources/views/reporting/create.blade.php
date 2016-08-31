@@ -87,58 +87,93 @@
 					<h4>Recipients</h4>
 				</div>
 			</div>
+			
+			<div class="row">
 			<template v-repeat="recipients">
-			<div class="row" v-el="rowrec">
-				<div class="col-md-2">
-					<div class="form-group">
-						{!! Form::label('recipient[@{{$key}}][fname]', 'First Name') !!}
-						{!! Form::text('recipient[@{{$key}}][fname]', null, ['class'=>'form-control', 'required'=>'', 'v-model'=>'recipients[$key].fname']) !!}
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="form-group">
-						{!! Form::label('recipient[@{{$key}}][lname]', 'Last Name') !!}
-						{!! Form::text('recipient[@{{$key}}][lname]', null, ['class'=>'form-control', 'required'=>'', 'v-model'=>'recipients[$key].lname']) !!}
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="form-group">
-						{!! Form::label('recipient[@{{$key}}][email]', 'email Address') !!}
-						{!! Form::text('recipient[@{{$key}}][email]', null, ['class'=>'form-control', 'required'=>'', 'v-model'=>'recipients[$key].email']) !!}
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="form-group">
-						{!! Form::label('recipient[@{{$key}}][urls]', 'Report URLs') !!}
-						{!! Form::select('recipient[@{{$key}}][urls]', [], [], ['multiple' => 'multiple','class'=>'form-control', 'required'=>'', 'v-model'=>'recipients[$key].selectedUrls', 'options'=>'iviewurls']) !!}
-					</div>
-				</div>
-				<div class="col-md-1">
-					<div class="form-group">
-						{!! Form::label('recipient[@{{$key}}][report]', 'Reports') !!}
-						<div>
-							{!! Form::checkbox('recipient[@{{$key}}][report]', true, true, ['class'=>'switch report', 'data-size'=>'medium', 'data-rowid'=>'@{{$key}}']) !!}
-						</div>
-					</div>
-					<div class="form-group">
-						{!! Form::label('recipient[@{{$key}}][resgistration]', 'Reg') !!}
-						<div>
-							{!! Form::checkbox('recipient[@{{$key}}][resgistration]', true, false, ['class'=>'switch', 'data-size'=>'medium']) !!}
-						</div>
-					</div>
-				</div>
-				<div class="col-md-2" v-if="recipients[$key]['report']">
-					<div class="form-group">
-						{!! Form::label('recipient[@{{$key}}][frequency]', 'Report Frequency') !!}
-						{!! Form::select('recipient[@{{$key}}][frequency]', ['daily', 'weekly', 'monthly'], 1, ['class'=>'form-control freq', 'required'=>'']) !!}
-					</div>
-				</div>
-				<div class="col-md-1">
-					<button type="button" class="btn btn-danger btn-sm" v-on="click: deleteRecipient($key)" style="margin-top: 37px;"><i class="fa fa-trash-o"></i></button>
-				</div>
+				<div class="col-md-6" v-el="rowrec">
+					<div class="row">
+						<div class="col-md-12">
+							<button type="button" class="btn btn-danger btn-sm pull-right" v-on="click: deleteRecipient($key)" style="margin-top: -10px;margin-right: -10px;"><i class="fa fa-trash-o"></i></button>
+							<div class="compact" style="border: 1px solid #ccc; background-color:##F8F8F8">
+								<div class="row">
+									<div class="col-md-3 col-md-offset-1">
+										<div class="form-group">
+											{!! Form::label('recipient[@{{$key}}][fname]', 'First Name') !!}
+											{!! Form::text('recipient[@{{$key}}][fname]', null, ['class'=>'form-control', 'required'=>'', 'v-model'=>'recipients[$key].fname']) !!}
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="form-group">
+											{!! Form::label('recipient[@{{$key}}][lname]', 'Last Name') !!}
+											{!! Form::text('recipient[@{{$key}}][lname]', null, ['class'=>'form-control', 'required'=>'', 'v-model'=>'recipients[$key].lname']) !!}
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 col-md-offset-1">
+										<div class="form-group">
+											{!! Form::label('recipient[@{{$key}}][email]', 'email Address') !!}
+											{!! Form::text('recipient[@{{$key}}][email]', null, ['class'=>'form-control', 'required'=>'', 'v-model'=>'recipients[$key].email']) !!}
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-2 col-md-offset-1">
+										<div class="form-group">
+											{!! Form::label('recipient[@{{$key}}][registration]', 'Registration') !!}
+											<div>
+												{!! Form::checkbox('recipient[@{{$key}}][registration]', true, false, ['class'=>'switch', 'data-size'=>'medium']) !!}
+											</div>
+										</div>
+									</div>
+									<div class="col-md-2">
+										<div class="form-group">
+											{!! Form::label('recipient[@{{$key}}][datapass]', 'Datapass') !!}
+											<div>
+												{!! Form::checkbox('recipient[@{{$key}}][datapass]', true, false, ['class'=>'switch', 'data-size'=>'medium']) !!}
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-2 col-md-offset-1">
+										<div class="form-group">
+											{!! Form::label('recipient[@{{$key}}][report]', 'Reports') !!}
+											<div>
+												{!! Form::checkbox('recipient[@{{$key}}][report]', true, true, ['class'=>'switch report', 'data-size'=>'medium', 'data-rowid'=>'@{{$key}}']) !!}
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4" v-if="recipients[$key]['report']">
+										<div class="form-group">
+											{!! Form::label('recipient[@{{$key}}][frequency]', 'Report Frequency') !!}
+											{!! Form::select('recipient[@{{$key}}][frequency]', ['daily', 'weekly', 'monthly'], 1, ['class'=>'form-control freq', 'required'=>'']) !!}
+										</div>
+									</div>
 
-			</div>
+								</div>
+								<div class="row">
+									
+								</div>
+								<div class="row">
+									<div class="col-md-5 col-md-offset-1">
+										{!! Form::label('', 'Report on the following URLs') !!}
+										<div class="checkbox" v-repeat="url : iviewurls">
+											<label>
+												<input type="checkbox" value="@{{url.text}}" checked="checked">
+												@{{url.text}}
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
 			</template>
+			</div>
+			
 			<div class="row">
 				<div class="col-md-12">
 					<button type="submit" class="btn btn-primary">Save</button>
