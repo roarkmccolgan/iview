@@ -5,8 +5,8 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
-class PagesController extends Controller {
+class PagesController extends Controller
+{
 
-	//
-
+    //
 }
