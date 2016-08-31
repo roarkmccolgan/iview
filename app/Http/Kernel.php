@@ -6,21 +6,6 @@ use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
 {
-<<<<<<< HEAD
-
-    /**
-     * The application's global HTTP middleware stack.
-     *
-     * @var array
-     */
-    protected $middleware = [
-        'Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode',
-        'Illuminate\Cookie\Middleware\EncryptCookies',
-        'Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse',
-        'Illuminate\Session\Middleware\StartSession',
-        'Illuminate\View\Middleware\ShareErrorsFromSession',
-        'App\Http\Middleware\VerifyCsrfToken',
-=======
     /**
      * The application's global HTTP middleware stack.
      *
@@ -49,24 +34,11 @@ class Kernel extends HttpKernel
         'api' => [
             'throttle:60,1',
         ],
->>>>>>> master
     ];
 
     /**
      * The application's route middleware.
      *
-<<<<<<< HEAD
-     * @var array
-     */
-    protected $routeMiddleware = [
-        'auth' => 'App\Http\Middleware\Authenticate',
-        'auth.basic' => 'Illuminate\Auth\Middleware\AuthenticateWithBasicAuth',
-        'can' => \Illuminate\Foundation\Http\Middleware\Authorize::class,
-        'guest' => 'App\Http\Middleware\RedirectIfAuthenticated',
-        'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
-    ];
-}
-=======
      * These middleware may be assigned to groups or used individually.
      *
      * @var array
@@ -79,4 +51,3 @@ class Kernel extends HttpKernel
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
     ];
 }
->>>>>>> master
