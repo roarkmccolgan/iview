@@ -1,33 +1,33 @@
 <?php
 
 return [
-	'iviews' => [
-			'dellstorage'=>[
-				'en'=>[
-					'projectId'=>'72504542',
-					'url'=>'http://dellstorage.idciview.net',
-					'from'=>'2015-03-26',
-					'to'=>'2015-03-26',
-					'company'=>'DELL',
-					'title'=>'Storage',
-					'corpcolor'=> [13,134,200],
-					'ignore_fields'=>['id', 'lang','url'],
-					'database'=>'tyco',
-					'conection'=>'mysqliview',
-					'table'=>'dellstorage_registration',
-					//'extrasql'=>" WHERE url='main' ",
-					'emails'=>[
-						[
-							'name'=>'Roark McColgan',
-							'address'=>'roarkmccolgan@gmail.com'
-							]/*,
+    'iviews' => [
+            'dellstorage'=>[
+                'en'=>[
+                    'projectId'=>'72504542',
+                    'url'=>'http://dellstorage.idciview.net',
+                    'from'=>'2015-03-26',
+                    'to'=>'2015-03-26',
+                    'company'=>'DELL',
+                    'title'=>'Storage',
+                    'corpcolor'=> [13,134,200],
+                    'ignore_fields'=>['id', 'lang','url'],
+                    'database'=>'tyco',
+                    'conection'=>'mysqliview',
+                    'table'=>'dellstorage_registration',
+                    //'extrasql'=>" WHERE url='main' ",
+                    'emails'=>[
+                        [
+                            'name'=>'Roark McColgan',
+                            'address'=>'roarkmccolgan@gmail.com'
+                            ]/*,
 						[
 							'name'=>'Fung-Yee Tang',
 							'address'=>'ftang@idc.com'
 							]*/
-						]
-				]
-			]/*,
+                        ]
+                ]
+            ]/*,
 			'res'=>[
 				'en'=>[
 					'projectId'=>'73829797',
@@ -250,5 +250,5 @@ return [
 						]
 				]
 			]*/
-		]
+        ]
 ];

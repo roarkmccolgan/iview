@@ -1,9 +1,11 @@
 <?php namespace App\Http\Controllers;
 
 use App;
-class DashboardController extends Controller {
 
-	/*
+class DashboardController extends Controller
+{
+
+    /*
 	|--------------------------------------------------------------------------
 	| Home Controller
 	|--------------------------------------------------------------------------
@@ -14,15 +16,13 @@ class DashboardController extends Controller {
 	|
 	*/
 
-	/**
-	 * Create a new controller instance.
-	 *
-	 * @return void
-	 */
-	public function __construct()
-	{
-		$this->middleware('auth');
-	}
-
-
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
 }
