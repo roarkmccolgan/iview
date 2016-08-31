@@ -1,5 +1,6 @@
-<?php namespace App\Http\Middleware;
+<?php
 
+<<<<<<< HEAD
 use Closure;
 use Illuminate\Contracts\Auth\Guard;
 
@@ -24,11 +25,21 @@ class Authenticate
         $this->auth = $auth;
     }
 
+=======
+namespace App\Http\Middleware;
+
+use Closure;
+use Illuminate\Support\Facades\Auth;
+
+class Authenticate
+{
+>>>>>>> master
     /**
      * Handle an incoming request.
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \Closure  $next
+<<<<<<< HEAD
      * @return mixed
      */
     public function handle($request, Closure $next)
@@ -39,8 +50,25 @@ class Authenticate
             } else {
                 return redirect()->guest('auth/login');
             }
+=======
+     * @param  string|null  $guard
+     * @return mixed
+     */
+    public function handle($request, Closure $next, $guard = null)
+    {
+        if (Auth::guard($guard)->guest()) {
+            if ($request->ajax() || $request->wantsJson()) {
+                return response('Unauthorized.', 401);
+            }
+
+            return redirect()->guest('login');
+>>>>>>> master
         }
 
         return $next($request);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> master
