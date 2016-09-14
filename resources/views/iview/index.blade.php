@@ -22,7 +22,7 @@
             	<div class="block-flat">
                     <div class="btn-toolbar pull-right">
                       <div class="btn-group">
-                        <a href="/iviews/create" class="btn btn-primary"><i class="fa fa-bar-chart-o"></i> New iView</a>
+                        <a href="{{action('IviewController@create')}}" class="btn btn-primary"><i class="fa fa-bar-chart-o"></i> New iView</a>
                       </div>
                     </div>
                     <div class="clearfix"></div>
@@ -31,11 +31,13 @@
                             @foreach($companies as $company)
                             <h3>{{$company->name}}</h3>
                                 @foreach($company->iviews as $iview)
-                            {{$iview->title}}
+                                    {{$iview->title}}<br/>
+                                    {{$iview->sub_title}}<br/>
+
                                 @endforeach
                             @endforeach
                         @else
-                        <p>There are no iViews, <a href="/iviews/create">create one?</a></p>
+                        <p>There are no iViews, <a href="{{action('IviewController@create')}}">create one?</a></p>
                         @endif
                     </div>
                 </div>

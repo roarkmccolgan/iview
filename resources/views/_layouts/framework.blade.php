@@ -57,14 +57,7 @@
                 </div>
               </div>
             </div>
-            <ul class="cl-vnavigation">          
-              <li><a href="#"><i class="fa fa-play-circle-o"></i><span>iViews</span></a>
-                <ul class="sub-menu">
-                  <li><a href="/iviews/create">New iView</a></li>
-                  <li><a href="/reporting">Reporting</a></li>
-                </ul>
-              </li>
-            </ul>
+            @include('_layouts.menu.leftmenu')
           </div>
         </div>
         <!--<div class="text-right collapse-button" style="padding:7px 9px;">

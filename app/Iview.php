@@ -30,6 +30,6 @@ class Iview extends Model
 
     public function urls()
     {
-        return $this->hasMany('App\Url');
+        return $this->morphMany('App\Url', 'urlable');
     }
 }

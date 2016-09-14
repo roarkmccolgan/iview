@@ -10,17 +10,9 @@ class Url extends Model
         'domain',
         'subdomain',
         'language_id',
-        'iview_id'
+        'urlable_id',
+        'urlable_type'
     ];
-
-    /**
-     * Return iview that the URL belongs to
-     * @return collection
-     */
-    public function iview()
-    {
-        return $this->belongsTo('App\iview');
-    }
 
     /**
      * Get language of URL
@@ -28,6 +20,14 @@ class Url extends Model
      */
     public function language()
     {
-        return $this->hasOne('App\Language');
+        return $this->belongsTo('App\Language');
+    }
+
+    /**
+     * Get all of the owning models.
+     */
+    public function urlable()
+    {
+        return $this->morphTo();
     }
 }

@@ -18,8 +18,9 @@ class CreateUrlsTable extends Migration
             $table->string('subdomain');
             $table->integer('language_id')->unsigned();
             $table->foreign('language_id')->references('id')->on('languages')->onDelete('cascade');
-            $table->integer('iview_id')->unsigned();
-            $table->foreign('iview_id')->references('id')->on('iviews')->onDelete('cascade');
+
+            $table->integer('urlable_id')->unsigned()->index();
+            $table->string('urlable_type')->index();
             $table->timestamps();
         });
     }

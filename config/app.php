@@ -166,6 +166,13 @@ return [
         Collective\Bus\BusServiceProvider::class,
         Maatwebsite\Excel\ExcelServiceProvider::class,
         Spatie\LaravelAnalytics\LaravelAnalyticsServiceProvider::class,
+        Laravelista\Ekko\EkkoServiceProvider::class,
+
+        /*
+         * My helper providers...
+         */
+        App\Providers\MacroServiceProvider::class,
+
 
     ],
 
@@ -217,7 +224,11 @@ return [
         'Excel' => Maatwebsite\Excel\Facades\Excel::class,
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
+        'Ekko' => Laravelista\Ekko\Facades\Ekko::class,
 
     ],
+
+    'tooldomain' => 'idcgauge.net',
+    'template' => 'default',
 
 ];

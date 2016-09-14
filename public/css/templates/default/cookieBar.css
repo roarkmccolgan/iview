@@ -1,0 +1,26 @@
+.cookie-message {
+  position:fixed;
+  top:0px;left:0;right:0;
+  padding:0 85px 0 20px;
+  background:#fff;
+  border-top:1px solid #ccc;
+  z-index: 99;
+}
+.cookie-message a.cookiebar-close {
+  position:absolute;
+  top:0; *top:-2px; right:20px;
+  cursor:pointer;
+  background-color: #ccc;
+  padding: 4px;
+}
+.cookie-message p, .cookie-message a.cookiebar-close {
+  color:#333;
+  font:bold 11px/18px Arial;
+  margin:0.6em 0;
+  
+}
+.black {
+  border-bottom:1px solid #444444;
+  background-color:#ca2a60;
+}
+.black p, .black a { color:#fff; }

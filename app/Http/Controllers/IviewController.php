@@ -19,7 +19,7 @@ class IviewController extends Controller
     public function index()
     {
 
-        $companies = Company::with('iviews')->get();
+        $companies = Company::has('iviews')->get();
         return view('iview.index', compact('companies'));
     }
     /**
@@ -57,11 +57,12 @@ class IviewController extends Controller
         ]);
 
         foreach ($request->input('language') as $lang_id) {
-            $url = URL::create(['domain'=>$request->input('domain'),'subdomain'=>$request->input('subdomain'),'language_id'=>$lang_id,'iview_id'=>$iview->id]);
+
+            $url = $iview->urls()->create(['domain'=>$request->input('domain'),'subdomain'=>$request->input('subdomain'),'language_id'=>$lang_id]);
         }
 
 
         //$input = $request->all();
-        return redirect('/iviews');
+        return redirect('/admin/iviews');
     }
 }
