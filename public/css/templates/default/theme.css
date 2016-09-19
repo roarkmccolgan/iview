@@ -6,11 +6,12 @@ html {
 	position: relative;
 	min-height: 100%;
 	/*Image only BG fallback*/
-	background: url('img/gs.png');
+	/*background: url('img/gs.png');*/
 	/*background = gradient + image pattern combo*/
-	background: 
+	/*background: 
 		linear-gradient(rgba(196, 102, 0, 0.2), rgba(155, 89, 182, 0.2)), 
-		url('img/gs.png');
+		url('img/gs.png');*/
+	background-color: #2E3456;
 }
 
 body {
@@ -152,12 +153,19 @@ span.logo{
 
 #msform .btn-q:hover,  #msform .btn-q:focus, #msform .icheckbox.checked + .checktext span {
 	background: #3cb0fd;
+	background: #00dc00;
 	color: #FFFFFF;
 	background-image: -webkit-linear-gradient(top, #ED1C5F, #d0114e);
 	background-image: -moz-linear-gradient(top, #ED1C5F, #d0114e);
 	background-image: -ms-linear-gradient(top, #ED1C5F, #d0114e);
 	background-image: -o-linear-gradient(top, #ED1C5F, #d0114e);
 	background-image: linear-gradient(to bottom, #ED1C5F, #d0114e);
+
+	background-image: -webkit-linear-gradient(top, #00dc00, #14c414);
+	background-image: -moz-linear-gradient(top, #00dc00, #14c414);
+	background-image: -ms-linear-gradient(top, #00dc00, #14c414);
+	background-image: -o-linear-gradient(top, #00dc00, #14c414);
+	background-image: linear-gradient(to bottom, #00dc00, #14c414);
 	text-decoration: none;
 }
 #msform .icheckbox.hover{

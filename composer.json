@@ -12,7 +12,8 @@
         "laravelcollective/bus": "^5.2",
         "laravelcollective/html": "5.2.*",
         "spatie/laravel-analytics": "^1.4",
-        "laravelista/ekko": "~1.2"
+        "laravelista/ekko": "~1.2",
+        "spatie/laravel-permission": "^1.5"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
