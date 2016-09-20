@@ -1,6 +1,6 @@
 @extends('tool.default._layout.default2')
 
-@section('pagetitle', 'Agil-IT-y Assessment')
+@section('pagetitle', 'IDC Gauge')
 
 
 @section('head')

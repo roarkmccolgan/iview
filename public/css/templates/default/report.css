@@ -1,0 +1,20 @@
+.header{
+	width: 210mm;
+	height: 25mm;
+}
+.header h1, .header h2{
+	color: #fff;
+	font-family: helvetica, sans;
+	font-weight: lighter;
+	margin: 0;
+}
+.title{
+	background-color: #003F7D;
+	float: left;
+	width: 150mm;
+	padding: 5mm;
+}
+.logo{
+	float: left;
+	width: 50mm;
+}

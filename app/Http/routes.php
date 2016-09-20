@@ -48,7 +48,12 @@ Route::group(['middleware' => ['web']], function () {
 	});
 
 	Route::group(['domain' => '{tool}.idcgauge.net'], function ($tool) {
-	    Route::get('/', 'ToolController@run')->middleware(['reloadquestions']);;
+	    Route::get('/', 'ToolController@run')->middleware(['reloadquestions']);
+
+	    Route::get('/pdf', 'PdfController@wkhtml');
+	    Route::get('/template/default/report/header', function(){
+	    	return View::make('tool.default.report.header');
+	    });
 
 	    Route::group(['prefix' => 'quiz'], function(){
 
