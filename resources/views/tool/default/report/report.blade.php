@@ -6,8 +6,8 @@
     	<meta name="description" content="">
     	<meta name="author" content="">
 		<title>Report</title>
-		<link rel="stylesheet" href="/css/templates/default/normalize.css">
-		<link rel="stylesheet" href="/css/templates/default/report.css">
+		<link rel="stylesheet" href="http://sage.idcgauge.net/css/templates/default/normalize.css">
+		<link rel="stylesheet" href="http://sage.idcgauge.net/css/templates/default/report.css">
 	</head>
 	<style>
 		.header h1, .header h2{
@@ -32,5 +32,14 @@
 				<img src="http://sage.idcgauge.net/images/report/idclogo.jpg" style="display: block; width: 36mm; height: 12mm; margin-left: 5mm; margin-top: 2mm;">
 			</td>
 		</table>
+		<div id="stocks-div" style="height: 50mm; width:190mm; margin:2mm 10mm">
+			
+		</div>
+		@columnchart('Stocks', 'stocks-div')
+		<script type="text/javascript">
+			function chartReady(event, chart){
+				window.status = 'chartrendered'
+			}
+		</script>
 	</body>
 </html>

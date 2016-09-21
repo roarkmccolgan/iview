@@ -44,11 +44,12 @@ b[_type],e=/wn|up/.test(d)?t:v;if(!c[n]){if(d==_click)A(a,!1,!0);else{if(/wn|er|
 (function( $ ){
   $.fn.cookieBar = function( options ) {  
   	var subdomain_name = window.location.hostname.split('.').length >= 3 ? window.location.hostname.split('.')[0]:'';
+    console.log(subdomain_name);
 	var settings = $.extend( {
       'closeButton' : 'none',
 	  'secure' : false,
 	  'path' : '/',
-	  'domain' : subdomain_name+'idcgauge.net'
+	  'domain' : subdomain_name+'.idcgauge.net'//subdomain_name+'.idcgauge.net'
     }, options);
   
     return this.each(function() {       

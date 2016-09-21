@@ -169,6 +169,7 @@ return [
         Laravelista\Ekko\EkkoServiceProvider::class,
         Spatie\Permission\PermissionServiceProvider::class,
         Barryvdh\Snappy\ServiceProvider::class,
+        Khill\Lavacharts\Laravel\LavachartsServiceProvider::class,
 
         /*
          * My helper providers...

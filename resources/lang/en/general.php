@@ -7,7 +7,7 @@ return array(
     'title'=>'Sage Cloud Development',
     'sub-title'=>'Advancing your Maturity',
     'next'=>'Next',
-    'landing'=>'<h2>Descriptors and Recommendations</h2><p>This assessment enables you to position your business in relation to over 500 similar organizations across the U.S. and Europe, and provides you with some essential guidance in the development of your cloud business.</p>',
+    'landing'=>'<h2>Advancing your Maturity</h2><p>This assessment enables you to position your business in relation to over 500 similar organizations across the U.S. and Europe, and provides you with some essential guidance in the development of your cloud business.</p>',
     'startbut'=>'Start Here',
     'of'=>'of',
     'youre'=>'You\'re ',
