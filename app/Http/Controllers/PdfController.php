@@ -21,16 +21,20 @@ class PdfController extends Controller
         $stocksTable->addColumns([
 			['string', 'Stage'],
 			['number', 'Your Score'],
-			['number', 'Benchmark']
 		]);
+		$stocksTable->addRoleColumn('string', 'style');
+		$color = ['grey','blue','purple','orange','pink'];
 		for ($a = 1; $a < 5; $a++) {
 			$val = rand(0,100);
 		    $stocksTable->addRow([
-		      'Stage '.$a, $val, 100-$val
+		      'Stage '.$a, $val, $a==2? '#283558':null
 		    ]);
 		}
 		$chart = Lava::ColumnChart('Stocks', $stocksTable, [
 			'title' => 'Overall Results',
+			'backgroundColor' => 'magenta',
+			'colors' => ['#68aadd'],
+			'chartArea' => [['width'=>'100%', 'height'=>'80%']],
 			'events' => [
 		        'ready' => 'chartReady'
 		    ],
