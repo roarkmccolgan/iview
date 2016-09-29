@@ -234,6 +234,80 @@ span.instruct {
     text-align: center;
 }
 
+.btnoption,
+.icheckbox_line,
+.iradio_line{
+	border: 1px solid #E5E5E5;
+	border-radius: 3px !important;
+	cursor: pointer;
+	font-weight: 400;
+	position: relative;
+	display: inline-block;
+	text-decoration: none;
+	margin: 5px;
+	font-size: 16px;
+	vertical-align: middle;
+	padding: 15px 30px 15px 55px;
+	background-color: #fdfdfd;
+	color: #3498db;
+	min-width: 270px;
+	text-align:  left;
+}
+.btnoption:hover,
+.btnoption.checked,
+.icheckbox_line.hover,
+.icheckbox_line.checked.hover,
+.iradio_line.hover,
+.icheckbox_line:hover,
+.iradio_line:hover  {
+	color: #fff;
+	border: 1px solid #3498db;
+	background-color: #3498db;
+	text-decoration: none;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.btnoption .fa, .icheckbox_line .fa, .iradio_line .fa{
+	position: absolute;
+	left: 16px;
+	top: 13px;
+	font-size: 150%;
+	line-height: 120%;
+	z-index: 1;
+	color: #fdfdfd;
+}
+.icheckbox_line.checked,
+.iradio_line.checked {
+    background: #3498db;
+    color: #fdfdfd;
+}
+.btnoption:hover .fa{
+}
+.btnoption span{
+	display: inline-block;
+}
+.btnoption span:before,
+.icheckbox_line span:before,
+.iradio_line span:before{
+	content: "";
+	display: block;
+	position: absolute;
+	top:10px;
+	left: 10px;
+	width: 35px;
+	height: 35px;
+	border-radius: 3px;
+	border: 1px solid #E5E5E5;
+	z-index: 0;
+}
+.btnoption span.idcradio:before,
+.iradio_line span:before{
+	border-radius: 18px;
+}
+
+
 
 /*mask*/
 #mask{

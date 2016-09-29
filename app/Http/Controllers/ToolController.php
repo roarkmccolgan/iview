@@ -166,6 +166,7 @@ class ToolController extends Controller
             'script'=>$script,
             'btnsize'=>$btnsize
         );
+        //return $sectionQuestions['questions'];
         return view('tool.'.config('app.template').'.question',$vars);
     }
 

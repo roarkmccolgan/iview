@@ -56,6 +56,8 @@
                                             {!! Form::idcSlider($num,$q,$page) !!}
                                         @elseif ($q['type'] == 'checkbox')
                                             {!! Form::idcCheckbox($num,$q,$page) !!}
+                                        @elseif ($q['type'] == 'groupradio')
+                                            {!! Form::idcGroup($num,$q,$page,'radio') !!}
                                         @elseif ($q['type'] == 'icon')
                                             {!! Form::idcIcon($section,$q,$page,$num) !!}
                                         @elseif ($q['type'] == 'button')

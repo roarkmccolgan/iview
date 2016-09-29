@@ -45,7 +45,14 @@ $(function() {
 		});
 	}
 });
-
+$('.btnoption').click(function(){
+	var self = $(this);
+	$(window).off('beforeunload');
+	$('.btnoption').each(function(){
+		$(this).removeClass('checked')
+	});
+	self.addClass('checked');
+});
 $('.btn-q').click(function(){
 	$(window).off('beforeunload');
 });

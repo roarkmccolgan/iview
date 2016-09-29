@@ -109,191 +109,183 @@ return array(
             'page4' => array(
                 'title' => 'IT Security',
                 'questions' => array(
-                    '4a'=>array(
-                        'type'=>'radio',
+                    'q4'=>array(
+                        'type'=>'groupradio',
                         'question'=>'Which of the following do you already have in place to protect your business in the event of an incident?',
-                        'sub'=>'A formal risk assessment',
-                        'name'=>'4a',
+                        'name'=>'q4',
                         'options'=>array(
                             array(
-                                'label'=>'Currently have',
-                                'value'=>1,
-                                'checked'=>false
+                                'label'=>'A formal risk assessment',
+                                'name'=>'q4.1',
+                                'options'=>array(
+                                    array(
+                                        'label'=>'Currently have',
+                                        'value'=>1,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'Don\'t have, but planned',
+                                        'value'=>2,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'No, and no plans',
+                                        'value'=>3,
+                                        'checked'=>false,
+                                    )
+                                )
                             ),
                             array(
-                                'label'=>'Don\'t have, but planned',
-                                'value'=>3,
-                                'checked'=>false
+                                'label'=>'Proactive detection',
+                                'name'=>'q4.2',
+                                'options'=>array(
+                                    array(
+                                        'label'=>'Currently have',
+                                        'value'=>1,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'Don\'t have, but planned',
+                                        'value'=>2,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'No, and no plans',
+                                        'value'=>3,
+                                        'checked'=>false,
+                                    )
+                                )
                             ),
                             array(
-                                'label'=>'No, and no plans',
-                                'value'=>5,
-                                'checked'=>false
+                                'label'=>'Response plan',
+                                'name'=>'q4.3',
+                                'options'=>array(
+                                    array(
+                                        'label'=>'Currently have',
+                                        'value'=>1,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'Don\'t have, but planned',
+                                        'value'=>2,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'No, and no plans',
+                                        'value'=>3,
+                                        'checked'=>false,
+                                    )
+                                )
+                            ),
+                            array(
+                                'label'=>'Internal communications plan',
+                                'name'=>'q4.4',
+                                'options'=>array(
+                                    array(
+                                        'label'=>'Currently have',
+                                        'value'=>1,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'Don\'t have, but planned',
+                                        'value'=>2,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'No, and no plans',
+                                        'value'=>3,
+                                        'checked'=>false,
+                                    )
+                                )
+                            ),
+                            array(
+                                'label'=>'External communications and public relations plan',
+                                'name'=>'q4.5',
+                                'options'=>array(
+                                    array(
+                                        'label'=>'Currently have',
+                                        'value'=>1,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'Don\'t have, but planned',
+                                        'value'=>2,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'No, and no plans',
+                                        'value'=>3,
+                                        'checked'=>false,
+                                    )
+                                )
+                            ),
+                            array(
+                                'label'=>'Breach notification plan',
+                                'name'=>'q4.6',
+                                'options'=>array(
+                                    array(
+                                        'label'=>'Currently have',
+                                        'value'=>1,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'Don\'t have, but planned',
+                                        'value'=>2,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'No, and no plans',
+                                        'value'=>3,
+                                        'checked'=>false,
+                                    )
+                                )
+                            ),
+                            array(
+                                'label'=>'Breach remediation plan',
+                                'name'=>'q4.7',
+                                'options'=>array(
+                                    array(
+                                        'label'=>'Currently have',
+                                        'value'=>1,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'Don\'t have, but planned',
+                                        'value'=>2,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'No, and no plans',
+                                        'value'=>3,
+                                        'checked'=>false,
+                                    )
+                                )
+                            ),
+                            array(
+                                'label'=>'Cyber risk insurance',
+                                'name'=>'q4.8',
+                                'options'=>array(
+                                    array(
+                                        'label'=>'Currently have',
+                                        'value'=>1,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'Don\'t have, but planned',
+                                        'value'=>2,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'No, and no plans',
+                                        'value'=>3,
+                                        'checked'=>false,
+                                    )
+                                )
                             )
                         )
-                    ),
-                    '4b'=>array(
-                        'type'=>'radio',
-                        'question'=>'Which of the following do you already have in place to protect your business in the event of an incident?',
-                        'sub'=>'Proactive detection',
-                        'name'=>'4b',
-                        'options'=>array(
-                            array(
-                                'label'=>'Currently have',
-                                'value'=>1,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'Don\'t have, but planned',
-                                'value'=>3,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'No, and no plans',
-                                'value'=>5,
-                                'checked'=>false
-                            )
-                        )
-                    ),
-                    '4c'=>array(
-                        'type'=>'radio',
-                        'question'=>'Which of the following do you already have in place to protect your business in the event of an incident?',
-                        'sub'=>'Response plan',
-                        'name'=>'4c',
-                        'options'=>array(
-                            array(
-                                'label'=>'Currently have',
-                                'value'=>1,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'Don\'t have, but planned',
-                                'value'=>3,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'No, and no plans',
-                                'value'=>5,
-                                'checked'=>false
-                            )
-                        )
-                    ),
-                    '4d'=>array(
-                        'type'=>'radio',
-                        'question'=>'Which of the following do you already have in place to protect your business in the event of an incident?',
-                        'sub'=>'Internal communications plan',
-                        'name'=>'4d',
-                        'options'=>array(
-                            array(
-                                'label'=>'Currently have',
-                                'value'=>1,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'Don\'t have, but planned',
-                                'value'=>3,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'No, and no plans',
-                                'value'=>5,
-                                'checked'=>false
-                            )
-                        )
-                    ),
-                    '4e'=>array(
-                        'type'=>'radio',
-                        'question'=>'Which of the following do you already have in place to protect your business in the event of an incident?',
-                        'sub'=>'External communications and public relations plan',
-                        'name'=>'4e',
-                        'options'=>array(
-                            array(
-                                'label'=>'Currently have',
-                                'value'=>1,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'Don\'t have, but planned',
-                                'value'=>3,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'No, and no plans',
-                                'value'=>5,
-                                'checked'=>false
-                            )
-                        )
-                    ),
-                    '4f'=>array(
-                        'type'=>'radio',
-                        'question'=>'Which of the following do you already have in place to protect your business in the event of an incident?',
-                        'sub'=>'Breach notification plan',
-                        'name'=>'4f',
-                        'options'=>array(
-                            array(
-                                'label'=>'Currently have',
-                                'value'=>1,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'Don\'t have, but planned',
-                                'value'=>3,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'No, and no plans',
-                                'value'=>5,
-                                'checked'=>false
-                            )
-                        )
-                    ),
-                    '4g'=>array(
-                        'type'=>'radio',
-                        'question'=>'Which of the following do you already have in place to protect your business in the event of an incident?',
-                        'sub'=>'Breach remediation plan',
-                        'name'=>'4g',
-                        'options'=>array(
-                            array(
-                                'label'=>'Currently have',
-                                'value'=>1,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'Don\'t have, but planned',
-                                'value'=>3,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'No, and no plans',
-                                'value'=>5,
-                                'checked'=>false
-                            )
-                        )
-                    ),
-                    '4h'=>array(
-                        'type'=>'radio',
-                        'question'=>'Which of the following do you already have in place to protect your business in the event of an incident?',
-                        'sub'=>'Cyber risk insurance',
-                        'name'=>'4h',
-                        'options'=>array(
-                            array(
-                                'label'=>'Currently have',
-                                'value'=>1,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'Don\'t have, but planned',
-                                'value'=>3,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'No, and no plans',
-                                'value'=>5,
-                                'checked'=>false
-                            )
-                        )
-                    ),
-                )/*,
+                    )
+                )
+                /*,
                 'report' => array(
                     'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
                     'image'=>'img/techfit_icons_Q-A1.png'
