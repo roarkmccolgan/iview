@@ -16,6 +16,34 @@ Form::macro('errors', function($errors, $field = false)
 	return null;
 });
 
+Form::macro('idcCheckRad', function($num,$q,$type,$page){
+	$errors = Session::get('errors');
+	$html ='';
+	$name = $q['name'];
+	$html.=Form::hidden('question', $name);
+	$question = $q['question'];
+	$selected = isset($q['selected'])? $q['selected']:false;
+	if($selected){
+		if(strpos($selected, "|")!==false){
+			$selected = explode('|', $selected);
+            $selected = $selected[0];
+		}
+	}
+	//$value = Input::old($name)?Input::old($name):(Session::get('questions.'.$section.'.pages.page'.$page.'.questions.'.$num) ? Session::get('questions.'.$section.'.pages.page'.$page.'.questions.'.$num:'');
+	$class = '';
+
+	foreach ($q['options'] as $key => $optionSet) {
+		$sub = isset($optionSet['sub']) ? '<p>'.$optionSet['sub'].'</p>':'';
+		$class = isset($optionSet['class']) ? $optionSet['class']:'';
+		$checked = $optionSet['label']==$selected? ' checked':'';
+		$value = $optionSet['value']===false ? $optionSet['label']:$optionSet['label'].'|'.$optionSet['value'];
+		$html.='<button class="btnoption radius '.$class.$checked.'" type="submit" value="'.$value.'" name="answer" id="'.$key.'-'.$name.'">
+			<i class="fa fa-check"></i> <span class="idc'.$type.'">'.$optionSet['label'].' '.$sub.'</span>
+		</button><div class="clearfix"></div>';
+	}
+	return $html;
+});
+
 Form::macro('idcIcon', function($section,$q,$page,$num){
 	$errors = session('errors');
 	$html ='';

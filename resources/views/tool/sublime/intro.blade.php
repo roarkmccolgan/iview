@@ -11,7 +11,7 @@
 @section('main')
 <div class="container">
     <div class="row">
-        <div class="col-xs-10 col-xs-offset-1">
+        <div class="col-md-10 col-md-offset-1">
             <div class="splash">
                 <div class="head">
                     <h1>
@@ -55,6 +55,6 @@
     <script src="{{ asset('js/templates/'.session('template').'/jquery.leanModal.min.js')}}"></script>
 @endif
 
-<!-- <script src="{{{ asset('js/templates/'.session('template').'/plugins.js')}}}"></script>
-<script src="{{{ asset('js/templates/'.session('template').'/main.js')}}}"></script> -->
+<script src="{{{ asset('js/plugins.js')}}}"></script>
+<script src="{{{ asset('js/templates/'.session('template').'/main.js')}}}"></script>
 @stop

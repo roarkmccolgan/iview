@@ -11,7 +11,7 @@
 @section('main')
     <div class="container">
         <div class="row">
-            <div class="col-sm-10 col-sm-offset-1">
+            <div class="col-md-10 col-md-offset-1">
                 <div class="question">
                     <div class="head">
                         <h1>
@@ -20,57 +20,55 @@
                         <small>{{Lang::get('general.'.session('product.id').'sub-title')}}</small>
                         <div class="idclogo"><img src="{{asset('images/tools/idclogoblk.png')}}" alt=""></div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-10 col-sm-offset-1 sidebar">
-                @foreach ($questions as $question)
-                    {!! Form::open(array('url' => 'quiz/'.$section.'/page'.$page,'id'=>'msform','class'=>'')) !!}
+                    <div class="sidebar">
                         <!-- progressbar -->
-                        <ul id="progressbar">
-                        @foreach ($menu as $key=>$pages)
-                            @if($pages['display'])
-                            <li class="{{$pages['class']}} {{$pages['complete'] || $key==$section ? 'active':''}}" style="width: {{100/count($menu)}}%">
-                                <!-- {{$key}} -->
-                                <ul>
-                                @foreach ($pages['pages'] as $pkey => $qpage)
-                                    <li class="{{$qpage['done'] || ($pkey == 'page'.$page && $key==$section)? 'done':''}}"></li>
-                                @endforeach
-                                </ul>
-                            </li>
-                            @endif
-                        @endforeach
-                        </ul>
-                        <!-- fieldsets -->
-                        <fieldset>
-                            <div id="mask"></div>
-                            <h2 class="fs-subtitle">Question {{$menu[$section]['pages']['page'.$page]['progress']}}</h2>
-                            <h1 class="fs-title">{{$heading}}</h1>
-                            
-                            <hr>
-                            <h2 class="question">{!!$question['question']!!}</h2>
-                            {!! Form::errors($errors) !!}
-                            {!!Form::hidden('section', $section)!!}
-                            {!!Form::hidden('page', $page)!!}
-                            @foreach ($questions as $num=>$q)
-                                @if ($q['type'] == 'radio')
-                                    {!! Form::idcRadio($num,$q,'radio',$page) !!}
-                                @elseif ($q['type'] == 'slider')
-                                    {!! Form::idcSlider($num,$q,$page) !!}
-                                @elseif ($q['type'] == 'checkbox')
-                                    {!! Form::idcCheckbox($num,$q,$page) !!}
-                                @elseif ($q['type'] == 'icon')
-                                    {!! Form::idcIcon($section,$q,$page,$num) !!}
-                                @elseif ($q['type'] == 'button')
-                                    {!! Form::idcButton($section,$q,$page) !!}
-                                @elseif ($q['type'] == 'text')
-                                    {!! Form::idcInput($num,$q,$page) !!}
+                        <ol class="progressbar">
+                            @foreach ($menu as $key=>$pages)
+                                @if($pages['display'])
+                                <!-- <li class="{{$pages['class']}} {{$pages['complete'] || $key==$section ? 'active':''}}" style="width: {{100/count($menu)}}%">
+                                    <ul> -->
+                                    @foreach ($pages['pages'] as $pkey => $qpage)
+                                        <li class="{{$qpage['done'] ? 'completed' : ($pkey == 'page'.$page && $key==$section? 'active':'')}}" style="width: {{100/count($pages['pages'])}}%"></li>
+                                    @endforeach
+                                    <!-- </ul>
+                                </li> -->
                                 @endif
                             @endforeach
-                        </fieldset>
-                    {!! Form::close() !!}
-                @endforeach
+                            
+                        </ol>
+                    </div>
+                    <div class="intro">
+                        @foreach ($questions as $question)
+                            {!! Form::open(array('url' => 'quiz/'.$section.'/page'.$page,'id'=>'msform','class'=>'')) !!}
+                                <!-- fieldsets -->
+                                <fieldset>
+                                    <div id="mask"></div>
+                                    
+                                    <h2>{{$heading}} {{$menu[$section]['pages']['page'.$page]['progress']}}</h2>
+                                    <h1>{!!$question['question']!!}</h1>
+                                    {!! Form::errors($errors) !!}
+                                    {!!Form::hidden('section', $section)!!}
+                                    {!!Form::hidden('page', $page)!!}
+                                    @foreach ($questions as $num=>$q)
+                                        @if ($q['type'] == 'radio')
+                                            {!! Form::idcRadio($num,$q,'radio',$page) !!}
+                                        @elseif ($q['type'] == 'slider')
+                                            {!! Form::idcSlider($num,$q,$page) !!}
+                                        @elseif ($q['type'] == 'checkbox')
+                                            {!! Form::idcCheckbox($num,$q,$page) !!}
+                                        @elseif ($q['type'] == 'icon')
+                                            {!! Form::idcIcon($section,$q,$page,$num) !!}
+                                        @elseif ($q['type'] == 'button')
+                                            {!! Form::idcButton($section,$q,$page) !!}
+                                        @elseif ($q['type'] == 'text')
+                                            {!! Form::idcInput($num,$q,$page) !!}
+                                        @endif
+                                    @endforeach
+                                </fieldset>
+                            {!! Form::close() !!}
+                        @endforeach
+                        
+                    </div>
                 </div>
             </div>
         </div>
@@ -81,8 +79,8 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="{{ asset('js/vendor/jquery-1.10.1.min.js')}}"><\/script>')</script>
 <script type="text/javascript">var error = false;</script>
-<!-- <script src="{{{ asset('js/templates/'.session('template').'/plugins.js')}}}"></script>
-<script src="{{{ asset('js/templates/'.session('template').'/main.js')}}}"></script> -->
+<script src="{{{ asset('js/plugins.js')}}}"></script>
+<script src="{{{ asset('js/templates/'.session('template').'/main.js')}}}"></script>
 @if ($script)
 <script>
 $(function() {
@@ -195,7 +193,7 @@ $('#mask').hide(); //hidemask
                 function() {
                     $(that).unbind('click').trigger('click');
                 },
-                500);
+                800);
         })
 @endif
 if($('label.rel').length){

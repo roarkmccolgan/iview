@@ -36,7 +36,7 @@ class ToolController extends Controller
             $i = 1;
             foreach ($value['pages'] as $pkey => $page) {
                 $temp[$key]['pages'][$pkey]['done'] = isset($page['done'])? true : false;
-                $temp[$key]['pages'][$pkey]['progress'] = $i.' '.trans('general.of').' '.$temp[$key]['numpages'];
+                $temp[$key]['pages'][$pkey]['progress'] = $i.'/'.$temp[$key]['numpages'];
                 $i++;
             }
         }
