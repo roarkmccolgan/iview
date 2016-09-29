@@ -16,5 +16,15 @@ class CompanyTableSeeder extends Seeder
             'logo' => '',
             'colours' => '0,125,124',
         ]);
+        DB::table('companies')->insert([
+            'name' => 'SAGE',
+            'logo' => '',
+            'colours' => '0,220,0',
+        ]);
+        DB::table('companies')->insert([
+            'name' => 'FireEye',
+            'logo' => '',
+            'colours' => '216,36,53',
+        ]);
     }
 }

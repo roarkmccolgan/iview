@@ -23,22 +23,49 @@ class PdfController extends Controller
 			['number', 'Your Score'],
 		]);
 		$stocksTable->addRoleColumn('string', 'style');
-		$color = ['grey','blue','purple','orange','pink'];
-		for ($a = 1; $a < 5; $a++) {
+		$stocksTable->addRoleColumn('string', 'annotation');
+		$stage = ['Time to act','Time to commit','Time to invest','Time to refine','Time to accelorate'];
+		for ($a = 0; $a < 5; $a++) {
 			$val = rand(0,100);
 		    $stocksTable->addRow([
-		      'Stage '.$a, $val, $a==2? '#283558':null
+		      $stage[$a], $val, $a==2? '#283558':null, $val
 		    ]);
 		}
 		$chart = Lava::ColumnChart('Stocks', $stocksTable, [
-			'title' => 'Overall Results',
-			'backgroundColor' => 'magenta',
+			'title' => null,
+			// 'backgroundColor' => 'magenta',
+			'vAxis' => [
+				'baselineColor'=>'none',
+				'gridlines'=> [
+					'color'=> 'none'
+				]
+			],
+			'hAxis' => [
+				'textStyle' => [
+					'fontName' => 'Helvetica-light',
+					/*'fontSize' => 18,*/
+					/*'bold' => true,*/
+					/*'italic' => true,*/
+					// The color of the text.
+					'color' => '#939598',
+					// The color of the text outline.
+					/*'auraColor' => '#d799ae',*/
+					// The transparency of the text.
+					/*'opacity' => 0.8*/
+				]
+			],
+			'legend' => ['position'=> 'bottom'],
 			'colors' => ['#68aadd'],
-			'chartArea' => [['width'=>'100%', 'height'=>'80%']],
+			'chartArea' => ['width'=>'100%', 'height'=>'80%'],
+			'legend' => [ 'position' => "none" ],
 			'events' => [
 		        'ready' => 'chartReady'
 		    ],
-		    'isStacked' => true,
+		    /*'isStacked' => true,*/
+		    'bar'  => [
+		    	'groupWidth'=> '70%'
+
+		    ] //As a percent, "33%"
 		]);
 
         $pdf = PDF::loadView('tool.default.report.report')->setOption('margin-top', 0)->setOption('margin-left', 0)->setOption('margin-right', 0)->setOption('window-status','chartrendered');

@@ -1,4 +1,4 @@
-@extends('tool.default._layout.default2')
+@extends('tool.'.config('app.template').'._layout.default2')
 
 @section('pagetitle', 'IDC Gauge')
 
@@ -15,12 +15,12 @@
             <div class="splash">
                 <h1>
                     <span class="logo"><img src="{{asset('images/tools/default/lgo_sage.png')}}" alt="SAGE Logo"></span>
-                    {{Lang::get('general.title')}}
+                    {{Lang::get('general.'.$tool->id.'title')}}
                 </h1>
                 <div class="clearfix"></div>
-                <div class="intro">{!!Lang::get('general.landing')!!}</div>
+                <div class="intro">{!!Lang::get('general.'.$tool->id.'landing')!!}</div>
                 <div class="action">
-                <a href="{{'quiz/'.Session::get('startSection').'/page1'}}" class="btn btn-primary btn-lg pull-right">{{Lang::get('general.startbut')}} &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-right"></i></a>
+                <a href="{{'quiz/'.Session::get('startSection').'/page1'}}" class="btn btn-primary btn-lg pull-right">{{Lang::get('general.'.$tool->id.'startbut')}} &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-right"></i></a>
                 </div>
                 <div class="clearfix"></div>
             </div>   

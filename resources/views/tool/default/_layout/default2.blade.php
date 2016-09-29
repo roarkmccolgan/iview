@@ -10,7 +10,7 @@
 		<script src="https://use.typekit.net/xod1duq.js"></script>
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
-        <link rel="stylesheet" href="{{asset('css/templates/'.config('app.template').'/cookieBar.css')}}" />
+        <link rel="stylesheet" href="{{asset('css/templates/cookieBar.css')}}" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="{{asset('css/bootstrap/css/bootstrap.css')}}" />
         <link rel="stylesheet" href="{{asset('css/templates/'.config('app.template').'/theme.css')}}" />

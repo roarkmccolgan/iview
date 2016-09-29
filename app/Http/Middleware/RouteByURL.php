@@ -29,7 +29,7 @@ class RouteByURL
             Config::set('app.url','http://' . $domain[0].'.'.$domain[1].'.'.$domain[2]);
             Config::set('app.host',$request->getHost());
             Config::set('app.analytics',$url->urlable->gapropertyid);
-            Config::set('app.template','default');
+            Config::set('app.template',$url->urlable->template);
             return $next($request);
         }
 

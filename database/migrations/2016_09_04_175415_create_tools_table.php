@@ -21,7 +21,7 @@ class CreateToolsTable extends Migration
             $table->timestamp('start_date');
             $table->timestamp('end_date');
             $table->string('gapropertyid');
-            $table->unsignedInteger('template_id');
+            $table->string('template')->default('default');
             $table->boolean('active')->default(1);
             $table->timestamps();
 

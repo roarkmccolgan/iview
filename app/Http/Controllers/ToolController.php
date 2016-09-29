@@ -111,7 +111,6 @@ class ToolController extends Controller
      */
     public function run(Request $request, $subdomain)
     {
-        $form_source = $request->input('form_source');
         $source = array(
             'C_emailAddress'=>$request->input('C_emailAddress'),
             'C_FirstName'=>$request->input('C_FirstName'),
@@ -127,24 +126,14 @@ class ToolController extends Controller
         $return_visitor = $request->cookie('quiz_progress');
         $class = 'intro';
 
-        $url = URL::with('language')->where('domain',config('app.tooldomain'))->where('subdomain',$subdomain)->first();
-        if ($url) {
-
-            config(['app.product' => ['type'=>$url->urlable_type, 'id'=>$url->urlable_id]]);
-            config(['app.locale' => $url->language->abbreviation]);
-            config(['app.url' => 'http://' . $subdomain.'.idcgauge.net']);
-            config(['app.host' => 'idcgauge.net']);
-            config(['app.analytics' => $url->urlable->gapropertyid]);
-            config(['app.template' => 'default']);
-            $tool = Tool::find(1);
-            $view = 'tool.'.config('app.template').'.intro';
-
-            return view($view, compact('tool','return_visitor','class'));
-        }
+        $tool = $request->get('product');
+        $view = 'tool.'.config('app.template').'.intro';
+        return view($view, compact('tool','return_visitor','class'));
     }
 
     public function getPage($subdomain, $section=false, $page=false)
     {
+        
         if($section===false || $page===false) return redirect('/');
         $this->loadQuestions();
 
@@ -177,7 +166,7 @@ class ToolController extends Controller
             'script'=>$script,
             'btnsize'=>$btnsize
         );
-        return view('tool.'.config('app.template').'.question2',$vars);
+        return view('tool.'.config('app.template').'.question',$vars);
     }
 
 

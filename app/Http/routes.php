@@ -48,6 +48,9 @@ Route::group(['middleware' => ['web']], function () {
 	});
 
 	Route::group(['domain' => '{tool}.idcgauge.net'], function ($tool) {
+		/*Route::bind('tool', function ($value) {
+	        return App\Tool::findOrFail($value);
+	    });*/
 	    Route::get('/', 'ToolController@run')->middleware(['reloadquestions']);
 
 	    Route::get('/pdf', 'PdfController@wkhtml');
