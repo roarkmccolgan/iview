@@ -10,9 +10,10 @@
 		<script src="https://use.typekit.net/xod1duq.js"></script>
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
-        <link rel="stylesheet" href="{{asset('css/templates/'.config('app.template').'/cookieBar.css')}}" />
+        <link rel="stylesheet" href="{{asset('css/templates/cookieBar.css')}}" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="{{asset('css/templates/'.config('app.template').'/main.css')}}" />
+        <link rel="stylesheet" href="{{asset('css/bootstrap/css/bootstrap.css')}}" />
+        <link rel="stylesheet" href="{{asset('css/templates/'.config('app.template').'/theme.css')}}" />
 
 		<script src="{{ asset('js/vendor/modernizr-2.6.2.min.js')}}"></script>
 		@show
@@ -28,20 +29,21 @@
 			ga('create', 'UA-156016-34', 'auto');
 			ga('send', 'pageview');
 		</script>
-		<div id="container" class="{{isset($class)? $class:''}}">
-			<div id="content">
-				<div class="wrapper clearfix">
-					@yield('header')
-					@yield('main')
-				</div>
-			</div>
-			
-			<div class="push"></div>
-		</div>
-		<footer id="footer">
-			<div class="wrapper clearfix">
-				<a href="/" class="restart"><i class="fa fa-fast-backward"></i> {{Lang::get('general.restart')}}</a> 
-				<span class="hp">{{Lang::get('general.assoc')}}</span>
+		@yield('main')
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+                	<div class="col-md-8 col-md-offset-2">
+                		<div class="row">
+                			<div class="col-xs-4">
+								<a href="/" class="restart"><i class="fa fa-chevron-left"></i> {{Lang::get('general.restart')}}</a>
+							</div>
+							<div class="col-xs-4 col-xs-offset-4">
+								<span class="hp">{{Lang::get('general.assoc')}}</span>
+							</div>	
+                		</div>
+                	</div>
+                </div>
 			</div>
 		</footer>
 	@yield('pagescript')

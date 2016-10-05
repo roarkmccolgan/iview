@@ -1,4 +1,4 @@
-@extends('tool.'.config('app.template').'._layout.default2')
+@extends('tool.'.config('app.template').'._layout.default')
 
 @section('pagetitle', 'IDC Gauge')
 

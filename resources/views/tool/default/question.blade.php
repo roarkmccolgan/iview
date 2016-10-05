@@ -8,56 +8,72 @@
 <meta name="description" content="">
 @stop
 
-@section('header')
-<header id="side">
-    <h1>{{Lang::get('general.title')}}</h1>
-    <small>{{Lang::get('general.sub-title')}}</small>
-    <nav id="steps" class="clearfix">
-        @foreach ($menu as $key=>$pages)
-            @if($pages['display'])
-            <div class="{{$pages['class']}} {{$pages['complete'] || $key==$section ? 'passed':''}}">
-                <i></i><!--{{var_dump($pages['complete'])}}-->
-                <ul>
-                @foreach ($pages['pages'] as $pkey => $qpage)
-                    <li class="{{$qpage['done'] || ($pkey == 'page'.$page && $key==$section)? 'done':''}}">{{$pkey}}</li>
-                @endforeach
-                </ul>
-            </div>
-            @endif
-        @endforeach
-        
-    </nav>
-    <h2><small>{{$menu[$section]['pages']['page'.$page]['progress']}}</small> {{$heading}}</h2>
-</header>
-@stop
-
 @section('main')
-<section id="page" class="{{$class}}">
-    <div id="mask"></div>
-    @foreach ($questions as $question)
-    <h2>{{$question['question']}}</h2>
-    {!! Form::open(array('url' => 'quiz/'.$section.'/page'.$page,'id'=>'form-question','class'=>'clearfix question')) !!}
-    {!! Form::errors($errors) !!}
-        {!!Form::hidden('section', $section)!!}
-        {!!Form::hidden('page', $page)!!}
-        @foreach ($questions as $num=>$q)
-            @if ($q['type'] == 'radio')
-                {!! Form::idcRadio($num,$q,'radio',$page) !!}
-            @elseif ($q['type'] == 'slider')
-                {!! Form::idcSlider($num,$q,$page) !!}
-            @elseif ($q['type'] == 'checkbox')
-                {!! Form::idcCheckbox($num,$q,$page) !!}
-            @elseif ($q['type'] == 'icon')
-                {!! Form::idcIcon($section,$q,$page,$num) !!}
-            @elseif ($q['type'] == 'button')
-                {!! Form::idcButton($section,$q,$page) !!}
-            @elseif ($q['type'] == 'text')
-                {!! Form::idcInput($num,$q,$page) !!}
-            @endif
-        @endforeach
-    @endforeach
-    {!! Form::close() !!}
-</section>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 col-xs-offset-2">
+                    <h1>{{Lang::get('general.title')}} <small>{{Lang::get('general.sub-title')}}</small></h1>
+                </div>
+                <div class="col-xs-2" style="text-align: right">
+                    <img src="/css/templates/default/img/idclogo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-8 col-xs-offset-2">
+
+                @foreach ($questions as $question)
+                    {!! Form::open(array('url' => 'quiz/'.$section.'/page'.$page,'id'=>'msform','class'=>'')) !!}
+                        <!-- progressbar -->
+                        <ul id="progressbar">
+                        @foreach ($menu as $key=>$pages)
+                            @if($pages['display'])
+                            <li class="{{$pages['class']}} {{$pages['complete'] || $key==$section ? 'active':''}}" style="width: {{100/count($menu)}}%">
+                                <!-- {{$key}} -->
+                                <ul>
+                                @foreach ($pages['pages'] as $pkey => $qpage)
+                                    <li class="{{$qpage['done'] || ($pkey == 'page'.$page && $key==$section)? 'done':''}}"></li>
+                                @endforeach
+                                </ul>
+                            </li>
+                            @endif
+                        @endforeach
+                        </ul>
+                        <!-- fieldsets -->
+                        <fieldset>
+                            <div id="mask"></div>
+                            <h2 class="fs-subtitle">Question {{$menu[$section]['pages']['page'.$page]['progress']}}</h2>
+                            <h1 class="fs-title">{{$heading}}</h1>
+                            
+                            <hr>
+                            <h2 class="question">{!!$question['question']!!}</h2>
+                            {!! Form::errors($errors) !!}
+                            {!!Form::hidden('section', $section)!!}
+                            {!!Form::hidden('page', $page)!!}
+                            @foreach ($questions as $num=>$q)
+                                @if ($q['type'] == 'radio')
+                                    {!! Form::idcRadio($num,$q,'radio',$page) !!}
+                                @elseif ($q['type'] == 'slider')
+                                    {!! Form::idcSlider($num,$q,$page) !!}
+                                @elseif ($q['type'] == 'checkbox')
+                                    {!! Form::idcCheckbox($num,$q,$page) !!}
+                                @elseif ($q['type'] == 'icon')
+                                    {!! Form::idcIcon($section,$q,$page,$num) !!}
+                                @elseif ($q['type'] == 'button')
+                                    {!! Form::idcButton($section,$q,$page) !!}
+                                @elseif ($q['type'] == 'text')
+                                    {!! Form::idcInput($num,$q,$page) !!}
+                                @endif
+                            @endforeach
+                        </fieldset>
+                    {!! Form::close() !!}
+                @endforeach  
+            </div>
+        </div>
+    </div>
 @stop
 
 @section('pagescript')
@@ -184,7 +200,7 @@ $('#mask').hide(); //hidemask
 if($('label.rel').length){
     $('button.btn.btn-primary.pull-right').click(function(e){
         var title = '{{$heading}}';
-        var sibling = $(this).prev("fieldset");
+        var sibling = $(this).prev("div.holder");
         var pos = false;
         var parentHeight = sibling.css('height');
         var num = $('label.rel').length;
@@ -192,6 +208,7 @@ if($('label.rel').length){
         if(num>0){
             $(sibling).find('input.chq').each(function( index ) {
                 if($(this).is(':checked')){
+                    console.log($(this));
                     selected ++;
                     pos = $(this).parents('label').position();
                 }

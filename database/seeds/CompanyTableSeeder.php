@@ -26,5 +26,10 @@ class CompanyTableSeeder extends Seeder
             'logo' => '',
             'colours' => '216,36,53',
         ]);
+        DB::table('companies')->insert([
+            'name' => 'Red Hat',
+            'logo' => '',
+            'colours' => '204,0,0',
+        ]);
     }
 }

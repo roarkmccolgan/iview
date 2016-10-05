@@ -233,6 +233,6 @@ return [
     ],
 
     'tooldomain' => 'idcgauge.net',
-    'template' => 'sublime',
+    'template' => 'default',
 
 ];

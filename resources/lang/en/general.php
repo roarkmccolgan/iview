@@ -68,6 +68,38 @@ Cyber Risk readiness, more than ever, is a core foundation element of digital in
     '2byreg'=>'By registering with IDC, you accept our <a href="/privacy" target="_blank">Privacy Policy</a> and <a href="https://www.fireeye.com/company/privacy.html" target="_blank">FireEye Privacy Policy</a> The information we collect will be shared with FireEye for the purpose of direct marketing',
     '2wait'=>'While you\'re waiting why not tweet your results and see how your colleagues measure up?',
 
+    //Red Hat Cloud id 3
+    '3elqFormName'=>'',
+    '3restart'=>'Restart Assessment',
+    '3assoc'=>'',
+    '3sponsors'=>'Red Hat',
+    '3title'=>'Red Hat Cloud Readiness',
+    '3sub-title'=>'Driving your Cloud Maturity',
+    '3landing'=>'
+<h2>Driving your Cloud Maturity</h2>
+<p>This assessment enables you to measure cloud readiness in your business and provides you with some essential guidance in the development of your cloud business.</p>',
+    '3startbut'=>'Get Started',
+    'adhoc'=>'Ad-Hoc', //reactive
+    'adhoctxt'=>"Organizations at this stage in their cloud maturity process tend to be providing cloud at the request of their customers, or as a vendor reseller. As a result, fees are derived from referrals or from resale, and organizations are generally focused on project revenues, rather than longer-term recurring revenue streams. Organizations at this stage in their cloud strategy are yet to embrace a cloud future and as a result may struggle to generate profits in this area. There is no defined vision for cloud, but there is time to make this transition if key decision makers act now.",
+    'adhoctweet' => "I took the @HPE Agil-IT-y Assessment and it's shown me where I can improve. Interested? http://bit.ly/1Y6JAqa",
+    'opportunistic'=>'Opportunistic',
+    'opportunistictxt'=>"Organizations at this stage in their cloud maturity are beginning to develop and deliver cloud-specific business models. Typically, this is not granular enough to account for different product lines or individual P&L, and is often unmanaged and untargeted. With measurement limited, there is little in the way of automation, whether it is process, methodology, or sale and delivery. While businesses at this stage of maturity are beginning to build cloud sales functions and cloud-based marketing, revenue still comes from resale of on-premise solutions. Despite this, recurring revenue growth is outpacing traditional business.",
+    'opportunistictweet' => "I took the @HPE Agil-IT-y Assessment and my company is on the right track. See how your business does... http://bit.ly/1Y6JAqa",
+    'repeatable'=>'Repeatable',
+    'repeatabletxt'=>"Organizations at this stage in their cloud maturity have a solid cloud business plan in place and are developing product-specific strategies, including professional services. Investments in cloud have been made and, more critically, investments are planned for the next two to three years. Organizations are beginning to monitor and target cloud-based revenues separately from license and other revenues. Many are also creating reusable processes and beginning to automate key functions. Marketing efforts are showing signs of sophistication, yet many organizations still need to migrate away from traditional marketing approaches. Organizations at this stage are likely to have established a well-structured technology roadmap and have started investing in cloud infrastructure, tools, and management technology. ",
+    'repeatabletweet' => "I took the @HPE Agil-IT-y Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    'managed'=>'Managed',
+    'managedtxt'=>"Organizations at this stage in their cloud maturity have developed in-depth planning across different cloud products, solutions, and architectures. This includes go-to-market strategies and sophisticated sales enablement. Many have established a portfolio of cloud offerings and related services, mainly through dedicated cloud sales, implementation, and support functions. Typically, organizations at this stage of their maturity can execute across multiple cloud architectures and have identified areas of specialism. This also enables them to measure and assess recurring revenues, and most have established tools and methodologies to drive efficiencies in implementation. This ensures renewals and the optimization of solutions.",
+    'managedtweet' => "I took the @HPE Agil-IT-y Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    'optimised'=>'Optimised',
+    'optimisedtxt'=>"For organizations at this stage in their maturity, cloud defines the investment and decision making in their future business direction. They are also fully committed to a recurring revenue business model. All aspects of the business are focused on a broad set of KPIs, from customer adoption and growth targets, to satisfaction levels and renewal rates. All systems and processes are designed to optimize cloud profitability and many have fully automated cloud processes to deliver economies of scale. Critically, there is an emphasis on selling solutions, as well as developing and maximizing internal IP.",
+    'optimisedtweet' => "I took the @HPE Agil-IT-y Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    '3send'=>'We can send you the full results directly to your mailbox',
+    '3fullreport'=>'Would you like the full report that provides you with some essential guidance in the development of your cloud business.?',
+    '3provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
+    '3byreg'=>'By registering with IDC, you accept our <a href="/privacy" target="_blank">Privacy Policy</a> and <a href="https://www.fireeye.com/company/privacy.html" target="_blank">FireEye Privacy Policy</a> The information we collect will be shared with FireEye for the purpose of direct marketing',
+    '3wait'=>'While you\'re waiting why not tweet your results and see how your colleagues measure up?',
+
     //general
     'next'=>'Next',
     'of'=>'of',
