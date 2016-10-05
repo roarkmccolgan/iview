@@ -52,12 +52,12 @@
                                     @foreach ($questions as $num=>$q)
                                         @if ($q['type'] == 'radio')
                                             {!! Form::idcRadio($num,$q,'radio',$page) !!}
-                                        @elseif ($q['type'] == 'slider')
-                                            {!! Form::idcSlider($num,$q,$page) !!}
                                         @elseif ($q['type'] == 'checkbox')
                                             {!! Form::idcCheckbox($num,$q,$page) !!}
                                         @elseif ($q['type'] == 'groupradio')
                                             {!! Form::idcGroup($num,$q,$page,'radio') !!}
+                                        @elseif ($q['type'] == 'slider')
+                                            {!! Form::idcGroup($num,$q,$page,'radio',true) !!}
                                         @elseif ($q['type'] == 'icon')
                                             {!! Form::idcIcon($section,$q,$page,$num) !!}
                                         @elseif ($q['type'] == 'button')
@@ -82,6 +82,7 @@
 <script>window.jQuery || document.write('<script src="{{ asset('js/vendor/jquery-1.10.1.min.js')}}"><\/script>')</script>
 <script type="text/javascript">var error = false;</script>
 <script src="{{{ asset('js/plugins.js')}}}"></script>
+<!-- <script src="{{{ asset('js/icheck.js')}}}"></script> -->
 <script src="{{{ asset('js/templates/'.session('template').'/main.js')}}}"></script>
 @if ($script)
 <script>
@@ -183,7 +184,36 @@ $('#mask').hide(); //hidemask
         })
     }
 @else
-    $('button.btn-q').click(function(e){
+    if($('.groupcheck').length){ //radio button sets
+        $('#next').click(function(e){
+            e.preventDefault();
+            var that = this;
+            var valid = true;
+            var checkset = false;
+            jQuery.each($('.groupcheck'), function( i, item ) {
+                if(!$(item).find(':radio:checked').val()){
+                    checkset = item;
+                    valid = false;
+                    return false;
+                }
+                $(checkset).removeClass('error');
+            });
+            if(!valid){
+                $(checkset).addClass('error');
+                $('html, body').animate({
+                    scrollTop: $(checkset).offset().top-20
+                }, 500);
+            }else{
+                $('#mask').show();
+                setTimeout(
+                    function() {
+                        $(that).unbind('click').trigger('click');
+                    },
+                    800);
+            }
+        });
+    }else{
+        $('button.btn-q').click(function(e){
             e.preventDefault();
             var that = this;
             $(this).addClass('check');
@@ -196,7 +226,9 @@ $('#mask').hide(); //hidemask
                     $(that).unbind('click').trigger('click');
                 },
                 800);
-        })
+        });
+    }
+        
 @endif
 if($('label.rel').length){
     $('button.btn.btn-primary.pull-right').click(function(e){

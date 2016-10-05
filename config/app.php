@@ -222,7 +222,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-        'Analytics' => Spatie\LaravelAnalytics\AnalyticsFacade::class,
+        'Analytics' => Spatie\LaravelAnalytics\LaravelAnalyticsFacade::class,
         'PDF' => Elibyy\TCPDF\Facades\TCPDF::class,
         'Excel' => Maatwebsite\Excel\Facades\Excel::class,
         'Form' => Collective\Html\FormFacade::class,

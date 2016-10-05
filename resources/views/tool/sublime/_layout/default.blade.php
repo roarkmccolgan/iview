@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="{{asset('css/templates/normalize.css')}}" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="{{asset('css/bootstrap/css/bootstrap.css')}}" />
+        <link rel="stylesheet" href="{{asset('css/templates/'.session('template').'/skins/flat/red.css')}}" />
         <link rel="stylesheet" href="{{asset('css/templates/'.session('template').'/stylesheet.css')}}" />
         <link rel="stylesheet" href="{{asset('css/templates/'.session('template').'/theme.css')}}" />
 

@@ -240,15 +240,15 @@ class ToolController extends Controller
         }
 
     private function calcResults(){
-        $this->baseline = config('baseline');
+        $this->baseline = config('baseline'.'_'.session('product.id'));
         $result = array();
         $result['overall']['score'] = 0;
-    
+        //dd($this->quiz);
         foreach ($this->quiz as $key => $value) {
             if($key!=='screeners'){
                 foreach ($value['pages'] as $page => $props) {
                     foreach ($props['questions'] as $q => $details) {
-                        if($details['type']=='checkbox' && is_array($details['selected'])){
+                        if(($details['type']=='checkbox' || $details['type']=='groupradio' || $details['type']=='slider') && is_array($details['selected'])){
                             $valHold = 0;
                             foreach ($details['selected'] as $selected) {
                                 $selected = explode('|', $selected);

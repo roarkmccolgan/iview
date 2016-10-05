@@ -4,7 +4,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
-use LaravelAnalytics;
+use Analytics;
 use Carbon\Carbon;
 use Config;
 use DB;
@@ -118,14 +118,14 @@ class AnalyticsController extends Controller
                 $other['filters'] = $query['filters'];
             }
             
-            $$key = LaravelAnalytics::performQuery($startDate, $endDate, $query['metrics'], $other);
+            $$key = Analytics::performQuery($startDate, $endDate, $query['metrics'], $other);
             
             echo "<pre>";
             echo $key.":<br/>";
             print_r($$key->getRows());
             echo "</pre>";
         }
-        //return LaravelAnalytics::getVisitorsAndPageViews(7)->toArray();
+        //return Analytics::getVisitorsAndPageViews(7)->toArray();
     }
     
     

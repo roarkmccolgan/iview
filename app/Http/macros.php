@@ -44,27 +44,30 @@ Form::macro('idcRadio', function($num,$q,$type,$page){
 	return $html;
 });
 
-Form::macro('idcGroup', function($section,$q,$page,$type){
+Form::macro('idcGroup', function($section,$q,$page,$type,$slider=false){
+	//slider is like a a range of values 1-5 $optionSet also has a labels ($optionSet['from'] and $optionSet['to']) like 1 - not likely and 5 - very likely
 	$errors = Session::get('errors');
 	$html ='';
 	$name = $q['name'];
 	$html.=Form::hidden('question', $name);
 	$question = $q['question'];
-	$class = '';
+	$class = $slider ? 'slider':'radiobox';
 	$selected = isset($q['selected'])? $q['selected']:false;
 	
 	$html.='<div class="row">';
 	foreach ($q['options'] as $key => $optionSet) {
+			$style = $slider ? 'style="width:'.(99/count($optionSet['options'])).'%"':'';
 			$html.='
 				<div class="col-md-12 groupcheck">
 					<h4>'.$optionSet['label'].'</h4>
 					<fieldset>';
 			foreach ($optionSet['options'] as $setkey => $option) {
 				$checked = ($selected[$optionSet['name']][0]==$option['label'].'|'.$option['value']) ? ' checked':'';
-				
-				$html.='
-						<input'.$checked.' class="chq" type="'.$type.'" name="answer['.$optionSet['name'].'][]" value="'.$option['label'].'|'.$option['value'].'" id="'.$setkey.'-'.$name.'">
-						<label>'.$option['label'].'</label>';
+				$html.='<div class="'.$class.'" '.$style.'>';
+				$html.= isset($optionSet['from']) && $setkey==0 ? '<div class="from">'.$optionSet['from'].'</div>' : (isset($optionSet['to']) && $setkey==count($optionSet)-1 ? '<div class="to">'.$optionSet['to'].'</div>' : ''); 
+				$html.='<input'.$checked.' class="chq" type="'.$type.'" name="answer['.$optionSet['name'].']" value="'.$option['label'].'|'.$option['value'].'" id="'.$setkey.'-'.$optionSet['name'].'">
+						<label for="'.$setkey.'-'.$optionSet['name'].'">'.$option['label'].'</label>';
+				$html.='</div>';
 			}
 			$html.='
 					</fieldset>
@@ -79,9 +82,7 @@ Form::macro('idcGroup', function($section,$q,$page,$type){
 		$btnsize = '-small lang';
 	}
 	$html.='
-			<div class="col-md-12" style="padding: 20px 0 20px 0">
-				<button id="next" class="btn-u pull-right margin-right-20" style="padding:15px 20px; font-size:18px;">'.Lang::get('general.next').' &nbsp; <i class="fa fa-arrow-circle-right"></i></button>
-			</div>';
+	<button id="next" class="btn btn-primary pull-right" style="padding:15px 20px; font-size:18px; margin-right: 20px;">'.Lang::get('general.next').' &nbsp; <i class="fa fa-arrow-circle-right"></i></button>';
 	return $html;
 });
 

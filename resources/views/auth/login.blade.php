@@ -1,66 +1,86 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="{{ asset('/images/favicon.png') }}">
 
-@section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Login</div>
-                <div class="panel-body">
-                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/login') }}">
-                        {{ csrf_field() }}
+	<title>IDC Terminal</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700,800' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:300,200,100' rel='stylesheet' type='text/css'>
 
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label for="email" class="col-md-4 control-label">E-Mail Address</label>
+	<!-- Bootstrap core CSS -->
+	<link href="{{ asset('js/bootstrap/dist/css/bootstrap.css') }}" rel="stylesheet">
 
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}">
+	<link rel="stylesheet" href="{{ asset('/fonts/font-awesome-4/css/font-awesome.min.css') }}">
 
-                                @if ($errors->has('email'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
+	<!-- Custom styles for this template -->
+	<link href="{{ asset('/css/style.css') }}" rel="stylesheet" />	
 
-                        <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                            <label for="password" class="col-md-4 control-label">Password</label>
+</head>
 
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control" name="password">
+<body class="texture">
 
-                                @if ($errors->has('password'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
+<div id="cl-wrapper" class="login-container">
 
-                        <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" name="remember"> Remember Me
-                                    </label>
+	<div class="middle-login">
+		<div class="block-flat">
+			<div class="header">							
+				<h3 class="text-center"><img class="logo-img" src="{{ asset('/images/logo.png') }}" alt="logo"/>IDC Terminal</h3>
+			</div>
+			<div>
+				<form style="margin-bottom: 0px !important;" role="form" class="form-horizontal" action="{{ url('/login') }}" method="post">
+                	<input type="hidden" name="_token" value="{{ csrf_token() }}">
+					<div class="content">
+						<h4 class="title">Login Access</h4>
+                        	@if (count($errors) > 0)
+                                <div class="alert alert-danger">
+                                    <strong>Whoops!</strong> There was a problem with your login request.<br><br>
+                                    <ul>
+                                        @foreach ($errors->all() as $error)
+                                            <li>{{ $error }}</li>
+                                        @endforeach
+                                    </ul>
                                 </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
-                                    <i class="fa fa-btn fa-sign-in"></i> Login
-                                </button>
-
-                                <a class="btn btn-link" href="{{ url('/password/reset') }}">Forgot Your Password?</a>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+                            @endif
+							<div class="form-group">
+								<div class="col-sm-12">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="fa fa-user"></i></span>
+										<input type="text" placeholder="Email" name="email" class="form-control" value="{{ old('email') }}">
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+										<input type="password" placeholder="Password" name="password" class="form-control">
+									</div>
+								</div>
+							</div>
+							
+					</div>
+					<div class="foot">
+						<a href="{{ url('/register') }}" class="btn btn-default" data-dismiss="modal" type="button">Register</a>
+						<button class="btn btn-primary" data-dismiss="modal" type="submit">Log me in</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="text-center out-links"><a href="http://www.idc.com/uk/" target="_blank">&copy; {{date('Y')}} IDC UK</a></div>
+	</div> 
+	
 </div>
-@endsection
+
+<script src="{{ asset('/js/vendor/jquery-1.10.1.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('/js/behaviour/general.js') }}"></script>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="{{ asset('/js/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+</body>
+</html>

@@ -1,82 +1,83 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="{{ asset('/images/favicon.png') }}">
 
-@section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Register</div>
-                <div class="panel-body">
-                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
-                        {{ csrf_field() }}
+	<title>IDC Terminal</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700,800' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:300,200,100' rel='stylesheet' type='text/css'>
 
-                        <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                            <label for="name" class="col-md-4 control-label">Name</label>
+	<!-- Bootstrap core CSS -->
+	<link href="{{ asset('js/bootstrap/dist/css/bootstrap.css') }}" rel="stylesheet">
 
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}">
+	<link rel="stylesheet" href="{{ asset('/fonts/font-awesome-4/css/font-awesome.min.css') }}">
 
-                                @if ($errors->has('name'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('name') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
+	<!-- Custom styles for this template -->
+	<link href="{{ asset('/css/style.css') }}" rel="stylesheet" />	
 
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label for="email" class="col-md-4 control-label">E-Mail Address</label>
+</head>
 
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}">
+<body class="texture">
+	<div id="cl-wrapper" class="sign-up-container">
+		<div class="middle-sign-up">
+			<div class="block-flat">
+				<div class="header">							
+					<h3 class="text-center"><img class="logo-img" src="{{ asset('/images/logo.png') }}" alt="logo"/>IDC Terminal</h3>
+				</div>
+				<div>
+					<form style="margin-bottom: 0px !important;" role="form" action="{{ url('/register') }}" method="post">
+						<input type="hidden" name="_token" value="{{ csrf_token() }}">
+						<div class="content">
+							<h4 class="title">Register Account</h4>
+							@if (count($errors) > 0)
+							<div class="alert alert-danger">
+								<strong>Whoops!</strong> There were some problems with your input.<br><br>
+								<ul>
+									@foreach ($errors->all() as $error)
+									<li>{{ $error }}</li>
+									@endforeach
+								</ul>
+							</div>
+							@endif
+							<div class="form-group">
+								<label>Full Name</label>
+								<input type="text" placeholder="Name" class="form-control" name="name" value="{{ old('name') }}">		
+							</div>
+							<div class="form-group">
+								<label>Email Address</label>
+								<input type="email" placeholder="Email" class="form-control" name="email" value="{{ old('email') }}">
+							</div>
+							<div class="form-group">
+								<label>Password</label>
+								<input type="password" class="form-control" name="password">
+							</div>
+							<div class="form-group">
+								<label>Confirm Password</label>
+								<input type="password" class="form-control" name="password_confirmation">
+							</div>
+						</div>
+						<div class="foot">
+							<a href="{{ url('/login') }}" class="btn btn-default" data-dismiss="modal" type="button">Login</a>
+							<button class="btn btn-primary" data-dismiss="modal" type="submit">Register</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="text-center out-links"><a href="http://www.idc.com/uk/" target="_blank">&copy; {{date('Y')}} IDC UK</a></div>
+		</div> 
+		
+	</div>
 
-                                @if ($errors->has('email'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
+<script src="{{ asset('/js/vendor/jquery-1.10.1.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('/js/behaviour/general.js') }}"></script>
 
-                        <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                            <label for="password" class="col-md-4 control-label">Password</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control" name="password">
-
-                                @if ($errors->has('password'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group{{ $errors->has('password_confirmation') ? ' has-error' : '' }}">
-                            <label for="password-confirm" class="col-md-4 control-label">Confirm Password</label>
-
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation">
-
-                                @if ($errors->has('password_confirmation'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('password_confirmation') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
-                                    <i class="fa fa-btn fa-user"></i> Register
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-@endsection
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="{{ asset('/js/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+</body>
+</html>

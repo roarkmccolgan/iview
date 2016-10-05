@@ -48,7 +48,7 @@ h2{
 
 .splash, .question{
 	background-color: #2E2D33;
-	margin-top: 10%;
+	margin-top: 5%;
 	position: relative;
 }
 .question{
@@ -233,81 +233,74 @@ span.instruct {
     margin-top: 10px;
     text-align: center;
 }
-
-.btnoption,
-.icheckbox_line,
-.iradio_line{
-	border: 1px solid #E5E5E5;
-	border-radius: 3px !important;
+.groupcheck label{
 	cursor: pointer;
-	font-weight: 400;
+	margin-left: 10px;
+	margin-bottom: 0;
+	font-weight: normal;
+}
+
+.groupcheck{
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+	border-bottom: 1px dotted #535360;
+}
+.groupcheck.error{
+	border: 1px solid #E66B6B;
+}
+.groupcheck h4{
+	font-family: 'montserratthin',Arial,Helvetica,sans-serif;
+	font-size: 18px;
+	margin-bottom: 20px;
+	color: #E66B6B;
+}
+.groupcheck .radiobox{
+	display: inline-block;
+	margin: 0 0 10px 30px;
+	padding: 15px 15px;
+	background: #4E4D5D;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	color: #CACACC;
+}
+.groupcheck .slider{
 	position: relative;
 	display: inline-block;
-	text-decoration: none;
-	margin: 5px;
-	font-size: 16px;
-	vertical-align: middle;
-	padding: 15px 30px 15px 55px;
-	background-color: #fdfdfd;
-	color: #3498db;
-	min-width: 270px;
-	text-align:  left;
+	color: #CACACC;
 }
-.btnoption:hover,
-.btnoption.checked,
-.icheckbox_line.hover,
-.icheckbox_line.checked.hover,
-.iradio_line.hover,
-.icheckbox_line:hover,
-.iradio_line:hover  {
-	color: #fff;
-	border: 1px solid #3498db;
-	background-color: #3498db;
-	text-decoration: none;
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-}
-.btnoption .fa, .icheckbox_line .fa, .iradio_line .fa{
-	position: absolute;
-	left: 16px;
-	top: 13px;
-	font-size: 150%;
-	line-height: 120%;
-	z-index: 1;
-	color: #fdfdfd;
-}
-.icheckbox_line.checked,
-.iradio_line.checked {
-    background: #3498db;
-    color: #fdfdfd;
-}
-.btnoption:hover .fa{
-}
-.btnoption span{
-	display: inline-block;
-}
-.btnoption span:before,
-.icheckbox_line span:before,
-.iradio_line span:before{
-	content: "";
+.groupcheck .slider label {
 	display: block;
+	margin: 0;
+	text-align: center;
+}
+.groupcheck .slider .iradio_flat-red {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 5px;
+}
+.groupcheck .slider:after{
+	content: '';
+	width: 85%;
+	height: 0px;
+	border-top: 1px dotted #E66B6B;
+	background: transparent;
 	position: absolute;
-	top:10px;
-	left: 10px;
-	width: 35px;
-	height: 35px;
-	border-radius: 3px;
-	border: 1px solid #E5E5E5;
-	z-index: 0;
+	left: -42%;
+	bottom: 34px;
+}.groupcheck .slider:first-child:after {
+	/*connector not needed before the first step*/
+	content: none; 
 }
-.btnoption span.idcradio:before,
-.iradio_line span:before{
-	border-radius: 18px;
+.groupcheck .from,.groupcheck .to{
+	text-align: center;
+	padding-bottom: 5px;
+	font-weight: normal;
 }
-
-
+.groupcheck .ranges .to{
+	float: left;
+	text-align: right;
+}
 
 /*mask*/
 #mask{
@@ -390,7 +383,7 @@ span.instruct {
 }
 /*marking active/completed steps green*/
 /*The number of the step and the connector before it = green*/
-.progressbar li.active:before,  .progressbar li.active:after, .progressbar li.completed:before,  #progressbar li.completed:after{
+.progressbar li.active:before,  .progressbar li.active:after, .progressbar li.completed:before,  .progressbar li.completed:after{
 	background: #E66B6B;
 	color: white;
 }

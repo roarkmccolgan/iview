@@ -62,7 +62,12 @@ $('button.info').click(function(){
 $('button:submit').click(function(){
 	$(window).off('beforeunload');
 });
-$('input.chq').iCheck();
+$('input.chq').iCheck({
+	radioClass: 'iradio_flat-red',
+    labelHover: true,
+    increaseArea: "10%",
+  });
+
 if ($("#trigger_id").length > 0) {
     $("#trigger_id").leanModal().trigger('click');
 }
