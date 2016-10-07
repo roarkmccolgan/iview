@@ -128,12 +128,12 @@ $('#mask').hide(); //hidemask
                                         '</div>'+
                                         '<div class="clearfix"></div>'+
                                     '</div>'+
-                                    '<button class="btn btn-primary pull-right btn-lg" type="submit" value="'+val+'" name="answer">{{Lang::get('general.next')}} <i class="icon-arrow_right"></i></button>'+
+                                    '<button class="btn btn-danger pull-right btn-lg" type="submit" value="'+val+'" name="answer">{{Lang::get('general.next')}} <i class="icon-arrow_right"></i></button>'+
                                 '</div>';
                         $(html).hide().appendTo(parent);
                         
                         //hide next buttton
-                        $('div.repwrap').find('button.btn.btn-primary.pull-right').hide();
+                        $('div.repwrap').find('button.btn.btn-danger.pull-right').hide();
                         
                         //move out of view
                         $('div.repwrap').css({
@@ -166,12 +166,12 @@ $('#mask').hide(); //hidemask
                                                 top: 0
                                             }, 'slow', function() {
                                                 $('div.repmod').animate({ height: repheight },400,function(){
-                                                    $('div.repwrap').find('button.btn.btn-primary.pull-right').fadeIn("fast");
+                                                    $('div.repwrap').find('button.btn.btn-danger.pull-right').fadeIn("fast");
                                                 });
                                             });
                                         }else{
                                             $('div.repmod').animate({ height: repheight },400,function(){
-                                                $('div.repwrap').find('button.btn.btn-primary.pull-right').fadeIn("fast");
+                                                $('div.repwrap').find('button.btn.btn-danger.pull-right').fadeIn("fast");
                                             });
                                         }
                                     });
@@ -231,7 +231,7 @@ $('#mask').hide(); //hidemask
         
 @endif
 if($('label.rel').length){
-    $('button.btn.btn-primary.pull-right').click(function(e){
+    $('button.btn.btn-danger.pull-right').click(function(e){
         var title = '{{$heading}}';
         var sibling = $(this).prev("div.holder");
         var pos = false;
@@ -254,7 +254,7 @@ if($('label.rel').length){
                 @if ($report)
                 e.preventDefault();
                 var start = 0;
-                $('button.btn.btn-primary.pull-right').fadeOut('fast');
+                $('button.btn.btn-danger.pull-right').fadeOut('fast');
                 jQuery.each($('label.rel'), function( i, item ) {
                     $(item).fadeOut('fast', function() {
                         start++;
@@ -273,7 +273,7 @@ if($('label.rel').length){
                                         '</div>'+
                                         '<div class="clearfix"></div>'+
                                     '</div>'+
-                                    '<button class="btn btn-primary pull-right btn-lg" type="submit">{{Lang::get('general.next')}} <i class="icon-arrow_right"></i></button></button>'+
+                                    '<button class="btn btn-danger pull-right btn-lg" type="submit">{{Lang::get('general.next')}} <i class="icon-arrow_right"></i></button></button>'+
                                 '</div>';
                             
                             $(html).appendTo(sibling);

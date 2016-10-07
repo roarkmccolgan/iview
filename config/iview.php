@@ -4,7 +4,7 @@ return [
     'iviews' => [
             'dellstorage'=>[
                 'en'=>[
-                    'projectId'=>'72504542',
+                    'projectId'=>'70230004',
                     'url'=>'http://dellstorage.idciview.net',
                     'from'=>'2015-03-26',
                     'to'=>'2015-03-26',

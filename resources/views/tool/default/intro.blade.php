@@ -1,4 +1,4 @@
-@extends('tool.'.config('app.template').'._layout.default')
+@extends('tool.'.session('template').'._layout.default')
 
 @section('pagetitle', 'IDC Gauge')
 
@@ -48,9 +48,9 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="{{ asset('js/vendor/jquery-1.10.1.min.js')}}"><\/script>')</script>
 @if(isset($return_visitor))
-    <script src="{{ asset('js/templates/'.config('app.template').'/jquery.leanModal.min.js')}}"></script>
+    <script src="{{ asset('js/templates/'.session('template').'/jquery.leanModal.min.js')}}"></script>
 @endif
 
-<script src="{{{ asset('js/templates/'.config('app.template').'/plugins.js')}}}"></script>
-<script src="{{{ asset('js/templates/'.config('app.template').'/main.js')}}}"></script>
+<script src="{{{ asset('js/templates/'.session('template').'/plugins.js')}}}"></script>
+<script src="{{{ asset('js/templates/'.session('template').'/main.js')}}}"></script>
 @stop

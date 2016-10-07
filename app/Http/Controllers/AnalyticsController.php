@@ -28,8 +28,9 @@ class AnalyticsController extends Controller
     {
         $iviews = Config::get('iview.iviews');
         
-        Config::set('laravel-analytics.siteId', 'ga:'.$iviews['dellstorage']['en']['projectId']);
+        //Config::set('laravel-analytics.siteId', 'ga:'.$iviews['dellstorage']['en']['projectId']);
         $leads = $this->getLeads($iviews['dellstorage']['en']['conection'], $iviews['dellstorage']['en']['table']);
+        echo 'ga:'.$iviews['dellstorage']['en']['projectId'];
         foreach ($leads as $user) {
             var_dump($user);
         }

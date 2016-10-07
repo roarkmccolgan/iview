@@ -127,7 +127,7 @@ class ToolController extends Controller
         $class = 'intro';
 
         $tool = $request->get('product');
-        $view = 'tool.'.config('app.template').'.intro';
+        $view = 'tool.'.session('template').'.intro';
         return view($view, compact('tool','return_visitor','class'));
     }
 
@@ -167,7 +167,7 @@ class ToolController extends Controller
             'btnsize'=>$btnsize
         );
         //return $sectionQuestions['questions'];
-        return view('tool.'.config('app.template').'.question',$vars);
+        return view('tool.'.session('template').'.question',$vars);
     }
 
 

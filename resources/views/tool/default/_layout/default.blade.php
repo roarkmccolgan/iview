@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="{{asset('css/templates/cookieBar.css')}}" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="{{asset('css/bootstrap/css/bootstrap.css')}}" />
-        <link rel="stylesheet" href="{{asset('css/templates/'.config('app.template').'/theme.css')}}" />
+        <link rel="stylesheet" href="{{asset('css/templates/'.session('template').'/theme_'.session('product.id').'.css')}}" />
 
 		<script src="{{ asset('js/vendor/modernizr-2.6.2.min.js')}}"></script>
 		@show

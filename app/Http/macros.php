@@ -82,7 +82,7 @@ Form::macro('idcGroup', function($section,$q,$page,$type,$slider=false){
 		$btnsize = '-small lang';
 	}
 	$html.='
-	<button id="next" class="btn btn-primary pull-right" style="padding:15px 20px; font-size:18px; margin-right: 20px;">'.Lang::get('general.next').' &nbsp; <i class="fa fa-arrow-circle-right"></i></button>';
+	<button id="next" class="btn btn-danger pull-right" style="padding:15px 20px; font-size:18px; margin-right: 20px;">'.Lang::get('general.next').' &nbsp; <i class="fa fa-arrow-circle-right"></i></button>';
 	return $html;
 });
 
@@ -146,6 +146,6 @@ Form::macro('idcCheckbox', function($section,$q,$page){
 	}
 	$html.='
 		</div>
-		<button class="btn btn-primary pull-right btn-lg" type="submit">'.Lang::get('general.next').' <i class="fa fa-arrow-right"></i></button></button>';
+		<button class="btn btn-danger pull-right btn-lg" type="submit">'.Lang::get('general.next').' <i class="fa fa-arrow-right"></i></button></button>';
 	return $html;
 });

@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="{{asset('css/bootstrap/css/bootstrap.css')}}" />
         <link rel="stylesheet" href="{{asset('css/templates/'.session('template').'/skins/flat/red.css')}}" />
         <link rel="stylesheet" href="{{asset('css/templates/'.session('template').'/stylesheet.css')}}" />
-        <link rel="stylesheet" href="{{asset('css/templates/'.session('template').'/theme.css')}}" />
+        <link rel="stylesheet" href="{{asset('css/templates/'.session('template').'/theme_'.session('product.id').'.css')}}" />
 
 		<script src="{{ asset('js/vendor/modernizr-2.6.2.min.js')}}"></script>
 		@show

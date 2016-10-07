@@ -31,7 +31,7 @@ return
          * You need to download a p12-certifciate from the Google API console
          * Be sure to store this file in a secure location.
          */
-        'certificatePath' => storage_path('laravel-analytics/iView Reporting-79c4146a41b7.p12'),
+        'certificatePath' => storage_path('laravel-analytics/iview-reporting-79c4146a41b7.p12'),
 
         /*
          * The amount of minutes the Google API responses will be cached.
