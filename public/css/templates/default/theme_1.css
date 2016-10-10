@@ -334,13 +334,6 @@ span.instruct {
 	-khtml-opacity: 1;
 	opacity: 1;
 }
-span.hp {
-	float: right;
-	background: url(img/sage.png) no-repeat right center;
-	line-height: 32px;
-	background-size: 76px 34px;
-	padding-right: 80px;
-}
 /*COMPLETE*/
 form.clearfix label{
 	color: #ED1C5F;
@@ -385,7 +378,7 @@ form.clearfix label{
 	bottom: 0;
 	width: 100%;
 	/* Set the fixed height of the footer here */
-	height: 35px;
+	height: 40px;
 	background-color: #f5f5f5;
 	padding-top: 5px;
 }

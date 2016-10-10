@@ -159,13 +159,13 @@ return array(
             )
         )
     ),
-    'process-and-skill-sets' => array(
+    'processes-and-skill-sets' => array(
         'class' => 'sec2',
         'display' => true,
         'complete' => false,
         'pages' => array(
             'page1' => array(
-                'title' => 'Process and Skill-Sets',
+                'title' => 'Processes and Skill-Sets',
                 'questions' => array(
                     'q5'=>array(
                         'type'=>'button',
@@ -245,7 +245,7 @@ return array(
             'page3' => array(
                 'title' => 'Process and Skill-Sets',
                 'questions' => array(
-                    'q6'=>array(
+                    'q7'=>array(
                         'type'=>'button',
                         'question'=>'How would you define your governance and compliance status?',
                         'name'=>'q7',
@@ -282,7 +282,7 @@ return array(
             'page4' => array(
                 'title' => 'Process and Skill-Sets',
                 'questions' => array(
-                    'q6'=>array(
+                    'q8'=>array(
                         'type'=>'button',
                         'question'=>'How would you describe the support capabilities of your organization?',
                         'name'=>'q8',
@@ -542,12 +542,12 @@ return array(
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'We allow scheduled "bursting" of virtual machines from dedicated hardware to public IaaS within our datacenters',
+                                'label'=>'We allow scheduled &quot;bursting&quot; of virtual machines from dedicated hardware to public IaaS within our datacenters',
                                 'value'=>4,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Allow scheduled and unscheduled "bursting," connecting to customers\' premises and third-party providers, load balancing, and auto scale capabilities',
+                                'label'=>'Allow scheduled and unscheduled &quot;bursting,&quot; connecting to customers\' premises and third-party providers, load balancing, and auto scale capabilities',
                                 'value'=>5,
                                 'checked'=>false
                             )

@@ -13,10 +13,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-6 col-xs-offset-2">
-                    <h1>{{Lang::get('general.title')}} <small>{{Lang::get('general.sub-title')}}</small></h1>
+                    <h1>{{Lang::get('general.'.session('product.id').'title')}} <small>{{Lang::get('general.'.session('product.id').'sub-title')}}</small></h1>
                 </div>
                 <div class="col-xs-2" style="text-align: right">
-                    <img src="/css/templates/default/img/idclogo.png" alt="">
+                    <div class="icon-idc" style="width: 180px; height: 51px; margin-left: 10px; margin-top: 5px; margin-bottom: 5px; display: inline-block; vertical-align: middle;" ></div>
                 </div>
             </div>
         </div>
@@ -77,8 +77,7 @@
 @stop
 
 @section('pagescript')
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="{{ asset('js/vendor/jquery-1.10.1.min.js')}}"><\/script>')</script>
+@parent
 <script type="text/javascript">var error = false;</script>
 <script src="{{{ asset('js/templates/'.session('template').'/plugins.js')}}}"></script>
 <script src="{{{ asset('js/templates/'.session('template').'/main.js')}}}"></script>
@@ -126,7 +125,7 @@ $('#mask').hide(); //hidemask
                                         '</div>'+
                                         '<div class="clearfix"></div>'+
                                     '</div>'+
-                                    '<button class="btn btn-primary pull-right btn-lg" type="submit" value="'+val+'" name="answer">{{Lang::get('general.next')}} <i class="icon-arrow_right"></i></button>'+
+                                    '<button class="btn btn-primary pull-right btn-lg" type="submit" value="'+val+'" name="answer">{{Lang::get('general.'.session('product.id').'next')}} <i class="icon-arrow_right"></i></button>'+
                                 '</div>';
                         $(html).hide().appendTo(parent);
                         
@@ -240,7 +239,7 @@ if($('label.rel').length){
                                         '</div>'+
                                         '<div class="clearfix"></div>'+
                                     '</div>'+
-                                    '<button class="btn btn-primary pull-right btn-lg" type="submit">{{Lang::get('general.next')}} <i class="icon-arrow_right"></i></button></button>'+
+                                    '<button class="btn btn-primary pull-right btn-lg" type="submit">{{Lang::get('general.'.session('product.id').'next')}} <i class="icon-arrow_right"></i></button></button>'+
                                 '</div>';
                             
                             $(html).appendTo(sibling);
@@ -255,7 +254,7 @@ if($('label.rel').length){
                 if(error==false){
                     html = 
                         '<div class="error" style="padding:0 15px 0 15px;">'+
-                            '<span style="color: #ed2024;">{{Lang::get('general.multierror')}}</span>'+
+                            '<span style="color: #ed2024;">{{Lang::get('general.'.session('product.id').'multierror')}}</span>'+
                         '</div>';
                     $(html).hide().appendTo(sibling).fadeIn("fast");
                     error=true;

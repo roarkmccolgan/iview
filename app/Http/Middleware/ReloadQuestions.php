@@ -22,6 +22,7 @@ class ReloadQuestions
         $url = Url::with('language')->where('domain',config('app.tooldomain'))->where('subdomain',$request->tool)->first();
         if ($url) {
             App::setLocale($url->language->abbreviation);
+            $url->urlable->load('company');
             $request->session()->flush();
             //dd($url->urlable);
 
@@ -31,6 +32,9 @@ class ReloadQuestions
             $request->session()->put('host', $url->urlable->domain);
             $request->session()->put('analytics', $url->urlable->gapropertyid);
             $request->session()->put('template', $url->urlable->template);
+            $request->session()->put('company.name', $url->urlable->company->name);
+            $request->session()->put('company.id', $url->urlable->company->id);
+            $request->session()->put('company.alias', strtolower(str_replace(" ", "_", $url->urlable->company->name)));
 
             $currentLocal = App::getLocale();
             $localQuestions = $currentLocal=='en' ? '' : $currentLocal;

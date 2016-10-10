@@ -13,9 +13,15 @@ var elixir = require('laravel-elixir');
 
 elixir(function(mix) {
     mix.scripts([
+    	'vendor/grunticon.loader.js',
     	'vendor/vue.min.js',
     	'vendor/vue-resource.min.js',
     	'vendor/modernizr.js',
     	'vendor/jquery.js'
-    ],'public/js/vendor.js')
+    ],'public/js/backend.js')
+    .scripts([
+    	'vendor/grunticon.loader.js',
+    	'vendor/modernizr.js',
+    	'vendor/jquery.js'
+    ], 'public/js/tool.js')
 });

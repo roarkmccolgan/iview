@@ -46,6 +46,8 @@
                 </div>
 			</div>
 		</footer>
-	@yield('pagescript')
+	@section('pagescript')
+	<script src="{{ asset('js/tool.js')}}"></script>
+	@show
 	</body>
 </html>

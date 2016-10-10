@@ -6,6 +6,7 @@
 		<title>@yield('pagetitle')</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<meta name="format-detection" content="telephone=no">
+		
 		<!-- TypeKit -->
 		<script src="https://use.typekit.net/xod1duq.js"></script>
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
@@ -14,9 +15,8 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="{{asset('css/bootstrap/css/bootstrap.css')}}" />
         <link rel="stylesheet" href="{{asset('css/templates/'.session('template').'/theme_'.session('product.id').'.css')}}" />
-
-		<script src="{{ asset('js/vendor/modernizr-2.6.2.min.js')}}"></script>
 		@show
+		<noscript><link href="{{ asset('css/idc/icons.fallback.css')}}" rel="stylesheet"></noscript>
 	</head>
 
 	<body>
@@ -36,16 +36,22 @@
                 	<div class="col-md-8 col-md-offset-2">
                 		<div class="row">
                 			<div class="col-xs-4">
-								<a href="/" class="restart"><i class="fa fa-chevron-left"></i> {{Lang::get('general.restart')}}</a>
+								<a href="/" class="restart"><i class="fa fa-chevron-left"></i> {{Lang::get('general.'.session('product.id').'restart')}}</a>
 							</div>
 							<div class="col-xs-4 col-xs-offset-4">
-								<span class="hp">{{Lang::get('general.assoc')}}</span>
-							</div>	
+								{{Lang::get('general.'.session('product.id').'assoc')}}<div class="icon-{{session('company.alias')}}" style="width: 76px; height: 34px; margin-left: 10px; display: inline-block; vertical-align: middle;" ></div>
+							</div>
                 		</div>
                 	</div>
                 </div>
 			</div>
 		</footer>
-	@yield('pagescript')
+	@section('pagescript')
+	<script src="{{ asset('js/tool.js')}}"></script>
+	@show
+	<script>
+		grunticon(["{{ asset('css/'.session('company.alias').'/icons.data.svg.css')}}", "{{ asset('css/'.session('company.alias').'/icons.data.png.css')}}", "i{{ asset('css/'.session('company.alias').'/cons.fallback.css')}}"]);
+		grunticon(["{{ asset('css/idc/icons.data.svg.css')}}", "{{ asset('css/idc/icons.data.png.css')}}", "i{{ asset('css/idc/cons.fallback.css')}}"]);
+	</script>
 	</body>
 </html>

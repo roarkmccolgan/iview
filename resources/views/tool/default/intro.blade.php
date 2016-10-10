@@ -14,9 +14,10 @@
         <div class="col-xs-8 col-xs-offset-2">
             <div class="splash">
                 <h1>
-                    <span class="logo"><img src="{{asset('images/tools/default/lgo_sage.png')}}" alt="SAGE Logo"></span>
+                    <span class="logo"><div class="icon-{{session('company.alias')}}" style="width: 180px; height: 51px" ></div></span>
                     {{Lang::get('general.'.$tool->id.'title')}}
                 </h1>
+                <div class="icon-idc" class="pull-right" style="width: 180px; height: 51px; margin-left: 10px; margin-top: 20px; float: right; vertical-align: middle;" ></div>
                 <div class="clearfix"></div>
                 <div class="intro">{!!Lang::get('general.'.$tool->id.'landing')!!}</div>
                 <div class="action">
@@ -45,8 +46,7 @@
     @stop
 @endif
 @section('pagescript')
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="{{ asset('js/vendor/jquery-1.10.1.min.js')}}"><\/script>')</script>
+@parent
 @if(isset($return_visitor))
     <script src="{{ asset('js/templates/'.session('template').'/jquery.leanModal.min.js')}}"></script>
 @endif

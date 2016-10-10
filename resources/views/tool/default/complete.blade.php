@@ -1,4 +1,4 @@
-@extends('tool.default._layout.default2')
+@extends('tool.default._layout.default')
 
 @section('pagetitle', $heading)
 
@@ -12,8 +12,8 @@
     <nav class="navbar navbar-default">
         <div class="container">
             <div class="row">
-                <div class="col-xs-6 col-xs-offset-2">
-                    <h1>{{Lang::get('general.title')}} <small>{{Lang::get('general.sub-title')}}</small></h1>
+                <div class="col-xs-8 col-xs-offset-1">
+                    <h1>{{Lang::get('general.'.session('product.id').'title')}} <small>{{Lang::get('general.'.session('product.id').'sub-title')}}</small></h1>
                 </div>
                 <div class="col-xs-2" style="text-align: right">
                     <img src="/css/templates/default/img/idclogo.png" alt="">
@@ -59,10 +59,10 @@
                 <h3>Summary</h3>
                 <p>{{$sub1}}</p>
                 <strong>
-                    {!!trans('general.fullreport')!!}
+                    {!!trans('general.'.session('product.id').'fullreport')!!}
                 </strong><br/>
                 <strong>
-                    {!!trans('general.provide')!!}
+                    {!!trans('general.'.session('product.id').'provide')!!}
                 </strong>
                 <div class="row">
                     <div class="col-xs-10 col-xs-offset-1">
@@ -353,7 +353,7 @@
                                         </label>
                                         <p class="help-block" style="margin-top: 10px;">
                                             <strong>{!!trans('general.terms')!!} *</strong><br/>
-                                            {!!trans('general.byreg')!!}
+                                            {!!trans('general.'.session('product.id').'byreg')!!}
                                         </p>
                                     </div>
                                     <div class="col-xs-6">
@@ -374,8 +374,7 @@
 @stop
 
 @section('pagescript')
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="{{ asset('js/vendor/jquery-1.10.1.min.js')}}"><\/script>')</script>
+@parent
 
 <script src="{{{ asset('js/plugins.js')}}}"></script>
 <script src="{{{ asset('js/main.js')}}}"></script>
