@@ -18,19 +18,25 @@ class RouteByURL
     public function handle($request, Closure $next)
     {
 
-        $domain = explode('.', $request->getHost());
-
-        $url = URL::where('domain',$domain[1].'.'.$domain[2])->where('subdomain',$domain[0])->first();
-        $language = $url->language->abbreviation;
-    
+        $url = Url::with('language')->where('domain',config('app.tooldomain'))->where('subdomain',$request->tool)->first();
         if ($url) {
-            Config::set('app.product', ['type'=>$url->urlable_type, 'id'=>$url->urlable_id]);
-            Config::set('app.locale', $language);
-            Config::set('app.url','http://' . $domain[0].'.'.$domain[1].'.'.$domain[2]);
-            Config::set('app.host',$request->getHost());
-            Config::set('app.analytics',$url->urlable->gapropertyid);
-            Config::set('app.template',$url->urlable->template);
+            $url->urlable->load('company');
+
+            $request->session()->put('product', ['type'=>$url->urlable_type, 'id'=>$url->urlable_id]);
+            $request->session()->put('locale', $url->language->abbreviation);
+            $request->session()->put('url', 'http://' . $request->tool.'.'.$url->domain);
+            $request->session()->put('host', $url->urlable->domain);
+            $request->session()->put('analytics', $url->urlable->gapropertyid);
+            $request->session()->put('template', $url->urlable->template);
+            $request->session()->put('company.name', $url->urlable->company->name);
+            $request->session()->put('company.id', $url->urlable->company->id);
+            $request->session()->put('company.alias', strtolower(str_replace(" ", "_", $url->urlable->company->name)));
+
+            //add model to request
+            $request->attributes->add(['product'=> $url->urlable]);
+            
             return $next($request);
+
         }
 
         abort(400,'Not Found Man');

@@ -46,13 +46,12 @@ h2{
 	margin-bottom: 20px;
 }
 
-.splash, .question{
+.splash{
 	background-color: #2E2D33;
 	margin-top: 5%;
 	position: relative;
 }
 .question{
-	margin-top: 0;
 	background-color: #403F4D;
 }
 .question fieldset{
@@ -97,7 +96,7 @@ img.main{
 	color: #E66B6B;
 }
 .intro{
-	padding: 30px;
+
 }
 .action{
 	padding: 10px 30px;
@@ -119,7 +118,9 @@ img.main{
 .sidebar{
 	position: relative;
 	background-color: #2E2D33;
-	padding: 10px 0px;
+}
+.mainbar form{
+	margin: 20px 10px;
 }
 h1, h2{
 	margin:0;
@@ -332,8 +333,8 @@ span.instruct {
 }
 /*progressbar*/
 .progressbar {
-	margin-bottom: 10px;
-	margin-top: 15px;
+	margin-bottom: 5px;
+	margin-top: 5px;
 	overflow: hidden;
 	/*CSS counters to number the steps*/
 	/*counter-reset: step;*/
@@ -347,6 +348,7 @@ span.instruct {
 	font-size: 9px;
 	float: left;
 	position: relative;
+	min-width: 15px;
 }
 .progressbar li:before {
 	/*content: counter(step);*/
@@ -391,10 +393,11 @@ span.instruct {
 
 /*Vertical Steps*/
 .list-group.vertical-steps{
-	padding-left:10px;
+	padding:20px 10px;
 	margin-bottom: 0px;
 }
 .list-group.vertical-steps .list-group-item{
+	font-family: 'montserratthin',Arial,Helvetica,sans-serif;
 	background-color: transparent;
 	border:none;
 	border-left:1px dotted #403F4D;
@@ -402,20 +405,19 @@ span.instruct {
 	border-radius:0;
 	/* counter-increment: step-counter; */
 	padding-left:20px;
-	padding-right:0px;
-	padding-bottom:30px;  
+	padding-right:0px; 
 	padding-top:0px;
 }
 .list-group.vertical-steps .list-group-item.active{
 	background-color:transparent;
-	color:inherit;
+	color:#E66B6B;
 }
 .list-group.vertical-steps .list-group-item::before {
 	border-radius: 50%;
 	background-color:#403F4D;
 	color:#E66B6B;
 	font: normal normal normal 14px/1 FontAwesome;
-	content: '\f00c';
+	content: '';
 	display:inline-block;
 	float:left;
 	height:20px;
@@ -444,6 +446,7 @@ span.instruct {
 }
 .list-group.vertical-steps .list-group-item.completed{
 	border-left:1px dotted #E66B6B;
+	color: #E66B6B;
 }
 .list-group.vertical-steps .list-group-item.completed:before{
 	content: '\f00c';

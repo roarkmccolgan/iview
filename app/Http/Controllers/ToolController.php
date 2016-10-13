@@ -33,6 +33,7 @@ class ToolController extends Controller
             $temp[$key]['numpages']=count($value['pages']);
             $temp[$key]['class']=isset($value['class']) ? $value['class']:'sec1';
             $temp[$key]['complete']=isset($value['complete']) ? $value['complete']:false;
+            $temp[$key]['title']=isset($value['title']) ? $value['title']:false;
             $i = 1;
             foreach ($value['pages'] as $pkey => $page) {
                 $temp[$key]['pages'][$pkey]['done'] = isset($page['done'])? true : false;
@@ -227,8 +228,139 @@ class ToolController extends Controller
             'btnclass'=>$btnclass,
             'marker' => $marker
         );
-        return view('tool.'.config('app.template').'.complete',$vars);
+        return view('tool.'.session('template').'.complete',$vars);
     }
+
+    public function postComplete()
+        {
+            $this->loadQuestions();
+            $this->howfit=Session::get('result');
+            $this->baseline = Session::get('baseline');
+
+            $validate_data = Input::except('_token');
+            $rules = array(
+                'fname'=>'required',
+                'sname'=>'required',
+                'email'=>'required',
+                'company'=>'required',
+                'country'=>'required',
+                'terms'=>'required'
+            );
+
+            $validator = Validator::make($validate_data, $rules);
+
+            if ($validator->passes()) {
+                Session::put('user', $validate_data);
+                
+                $screener1=$this->quiz['demographics']['pages']['page1']['questions']['s1']['selected'];
+                $screener2=$this->quiz['demographics']['pages']['page2']['questions']['s2']['selected'];
+                $screener3=$this->quiz['demographics']['pages']['page3']['questions']['s3']['selected'];
+                
+                //update source
+                $currentLocal = App::getLocale();
+                $localQuestions = $currentLocal=='en' ? '' : $currentLocal;
+                $source = array(
+                    'C_emailAddress'=>$validate_data['email'],
+                    'C_FirstName'=>$validate_data['fname'],
+                    'C_LastName'=>$validate_data['sname'],
+                    'C_Company'=>$validate_data['company'],
+                    'C_Country'=>$validate_data['country'],
+                    'C_BusPhone'=>$validate_data['phone'],
+                    'C_Job_Responsibilities_1'=>$screener1==Config::get($localQuestions.'questions.screeners.pages.page1.questions.s1.options.0.label') ? "IT" : "Business / Operations",
+                    'C_NumberofEmployees_Range_1'=>$screener2,
+                    'form_source'=>Input::get('form_source')
+                );
+                
+                Session::put('source', $source);
+                
+                //save in db
+                $user = new User;
+                $user->fname = $validate_data['fname'];
+                $user->lname = $validate_data['sname'];
+                $user->email = $validate_data['email'];
+                $user->company = $validate_data['company'];
+                $user->country = $validate_data['country'];
+                $user->tel = $validate_data['phone'];
+                $user->referer = $validate_data['referer'];
+                $user->quiz = json_encode($this->quiz);
+                $user->result = json_encode($this->howfit);
+
+                
+                $user->save();
+                $this->userid = $user->id;
+                $validate_data['userid'] = $user->id;
+                
+                //generate report
+                $this->generateReport();
+                $curloc = App::getLocale();
+                
+                /*if(!App::isLocal()){
+                    //send guzzle request
+                    $client = new GuzzleHttp\Client();
+                    $url = 'https://s2048.t.eloqua.com/e/f2.aspx';
+                    //$url = 'http://www.google.com';
+                    try {
+                        $request = $client->createRequest('GET', $url);
+                        $query = $request->getQuery();
+                        $query['elqFormName'] = Lang::get('general.extFormName');
+                        $query['elqSiteID'] = '2048';
+                        foreach($source as $key=>$item){
+                            $query[$key] = $item;
+                        }
+                                        
+                        $response = $client->send($request);
+                    } catch (GuzzleHttp\Exception\RequestException $e) {
+                        
+                        Mail::queue('emails.errors', array('process'=>'Guzzle', 'message'=>$e->getMessage(), 'time'=>date('l jS \of F Y h:i:s A')), function($message)
+                        {
+                            $message->to('roarkmccolgan@gmail.com', 'Roark McColgan')->subject('Error on Converged Infrastructure - Maturity Benchmark! ('.$curloc.')');
+                        });
+                    }
+                }*/
+                $subject = Lang::get('email.report');
+                //send mail to user
+                Mail::queue('emails.'.$curloc.'download', array('fname'=>$validate_data['fname'], 'sname'=>$validate_data['sname'], 'userid'=>$validate_data['userid']), function($message)  use ($validate_data, $subject, $curloc){
+
+                    $message->to($validate_data['email'], $validate_data['fname'].' '.$validate_data['sname'])->subject($subject);
+                });
+                
+                //send mail to notification people
+                if(App::isLocal()){
+                    $emails = ['roarkmccolgan@gmail.com'];
+                }else{
+                    $emails = ['roarkmccolgan@gmail.com', 'Pelle_Lindell@Dell.com'];
+
+                }
+                Mail::queue('emails.notification', array('fname'=>$validate_data['fname'], 'sname'=>$validate_data['sname'], 'email'=>$validate_data['email'], 'company'=>$validate_data['company'], 'phone'=>$validate_data['phone'], 'screener1'=>$this->quiz['demographics']['pages']['page1']['questions']['s1']['selected'], 'screener2'=>$this->quiz['demographics']['pages']['page2']['questions']['s2']['selected'], 'screener3'=>$this->quiz['demographics']['pages']['page3']['questions']['s3']['selected'], 'score'=>$this->howfit['overall']['score'], 'rating'=>$this->howfit['overall']['rating'], 'userid'=>$validate_data['userid']), function($message)  use ($validate_data, $emails, $curloc){
+
+                    $message->to($emails)->subject('Conferged Infrastructure Quiz completed ('.$curloc.')');
+                });
+                
+                $vars = array(
+                    'heading' => Lang::get('general.title'),
+                    'sub1' => Lang::get('general.hi').', '.$validate_data['fname'],
+                    'sub2' => Lang::get('general.soon'),
+                    'tweet' => $this->baseline['overall']['types'][$this->howfit['overall']['rating']]['tweet'],
+                    'colour' => 'orange',
+                    'script' => ['
+                        _gaq.push([\'_trackEvent\', \'Form Submit\', \'Registration\']);
+                        '],
+                    'quiz' => $this->quiz
+                );
+                /*if(Cookie::has('quiz_progress')){
+                    $progress_id = Cookie::get('quiz_progress');
+                    $progress = Progress::find($progress_id);
+                    if($progress) $progress->delete();
+                }
+                $cookie = Cookie::forget('quiz_progress');*/
+                
+                //return View::make('thankyou',$vars)->withCookie($cookie);
+                return View::make('thankyou',$vars);
+            }
+            Input::flashExcept('_token');
+            return Redirect::to(getLang().'quiz/complete')->withErrors($validator);
+        }
+
 
     public function fakeDownload($userid){
             //PDF file is stored under project/public/download/info.pdf
@@ -249,20 +381,33 @@ class ToolController extends Controller
                 foreach ($value['pages'] as $page => $props) {
                     foreach ($props['questions'] as $q => $details) {
                         if(($details['type']=='checkbox' || $details['type']=='groupradio' || $details['type']=='slider') && is_array($details['selected'])){
-                            $valHold = 0;
-                            foreach ($details['selected'] as $selected) {
-                                $selected = explode('|', $selected);
-                                $selected = $selected[1];
-                                $valHold+=$selected;
+                            if(isset($details['calc'])){
+                                if($details['calc']['type']=='average'){
+                                    $ave = [];
+                                    foreach ($details['selected'] as $selected) {
+                                        $selected = explode('|', $selected);
+                                        $selected = $selected[1];
+                                        $ave[]=$selected;
+                                    }
+                                    $val = array_sum($ave) / count($ave);
+                                }elseif($details['calc']['type']=='normalize'){
+                                    $norm = 0;
+                                    foreach ($details['selected'] as $selected) {
+                                        $selected = explode('|', $selected);
+                                        $selected = $selected[1];
+                                        $norm+=$selected;
+                                    }
+                                    $val = ($norm/$details['calc']['value'])*count($details['selected']);
+                                }
+                            }else{
+                                $valHold = 0;
+                                foreach ($details['selected'] as $selected) {
+                                    $selected = explode('|', $selected);
+                                    $selected = $selected[1];
+                                    $valHold+=$selected;
+                                }
+                                $val = $valHold;
                             }
-                            $val = $valHold;
-                            /*if(count($details['selected'])==1 && strrpos($details['selected'][0], "Unsure")!==false){
-                                $val = 1;
-                            }elseif(count($details['selected'])==1 || count($details['selected'])==2){
-                                $val = 3;
-                            }elseif(count($details['selected'])>=3){
-                                $val = 5;
-                            }*/
                         }else{
                             $val = explode('|', $details['selected']);
                             $val = $val[1];

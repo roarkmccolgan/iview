@@ -24,10 +24,9 @@
 	//Route::get('/', 'ProductController@index');
 	//Route::get('/tool', 'ToolController@run');
 Route::auth();
+//Route::get('/', 'HomeController@index');
 
-Route::group(['prefix' => 'admin'], function(){
-
-	Route::get('/', 'HomeController@index');
+Route::group(['prefix' => 'admin', 'middleware'=>['auth']], function(){
 	
 	Route::get('ga', 'AnalyticsController@index');
 
@@ -50,7 +49,7 @@ Route::group(['domain' => '{tool}.idcgauge.net'], function ($tool) {
 	/*Route::bind('tool', function ($value) {
         return App\Tool::findOrFail($value);
     });*/
-    Route::get('/', 'ToolController@run')->middleware(['reloadquestions']);
+    Route::get('/', 'ToolController@run')->middleware(['routebyurl','reloadquestions']);
 
     Route::get('/pdf', 'PdfController@wkhtml');
     Route::get('/template/default/report/header', function(){
@@ -62,10 +61,15 @@ Route::group(['domain' => '{tool}.idcgauge.net'], function ($tool) {
 		Route::get('/{section}/page{num}', 'ToolController@getPage');
 		Route::post('/{section}/page{num}', 'ToolController@savePage');
 
-		Route::get('/complete', array('uses' => 'ToolController@getComplete'));
-		Route::post('/complete', array('uses' => 'ToolController@postComplete'));
-		Route::get('/download/{userid}', array('uses' => 'ToolController@getDownload'));
-		Route::get('/download', array('uses' => 'ToolController@fakeDownload'));
+		Route::get('/complete', 'ToolController@getComplete');
+		Route::post('/complete', 'ToolController@postComplete');
+		Route::get('/download/{userid}', 'ToolController@getDownload');
+		Route::get('/download', 'ToolController@fakeDownload');
+	});
+
+	Route::group(['prefix' => 'admin','middleware'=>['routebyurl'/*,'auth'*/]], function(){
+		Route::get('/', 'TerminalController@dashboard');
+		Route::get('/assessments', 'TerminalController@showAssessments');
 	});
 });
 

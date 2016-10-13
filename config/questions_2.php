@@ -4,7 +4,8 @@ return array(
         'title' => 'Demographics',
         'description' => 'Please tell us a few things about yourself and your company.',
         'colour' => '',
-        'display' => false,
+        'class' => 'screeners',
+        'display' => true,
         'complete' => false,
         'pages' => array(
             'page1' => array(
@@ -46,7 +47,12 @@ return array(
                                 'checked'=>false
                             )
                         )
-                    ),
+                    )
+                )
+            ),
+            'page2' => array(
+                'title' => 'Screeners',
+                'questions' => array(
                     's2'=>array(
                         'type'=>'button',
                         'question'=>'How many full time employees work at your organization worlwide?',
@@ -75,10 +81,11 @@ return array(
                         )
                     )
                 )
-            ),
+            )
         )
     ),
     'it-security-and-the-business' => array(
+        'title' => 'IT Security and the Business',
         'class' => 'sec2',
         'display' => true,
         'complete' => false,
@@ -98,12 +105,12 @@ return array(
                             ),
                             array(
                                 'label'=>'An enabler of business efficiency',
-                                'value'=>2,
+                                'value'=>3,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'A driver of competitive advantage or differentiation',
-                                'value'=>3,
+                                'value'=>5,
                                 'checked'=>false
                             )
                         )
@@ -134,12 +141,12 @@ return array(
                             ),
                             array(
                                 'label'=>'We are generally OK with requests both for existing applications and services, and new or enhanced services.',
-                                'value'=>3,
+                                'value'=>4,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'We are very good at delivery on most or all requests.',
-                                'value'=>4,
+                                'value'=>5,
                                 'checked'=>false
                             )
                         )
@@ -176,7 +183,7 @@ return array(
                             ),
                             array(
                                 'label'=>'We actively take on and manage risk to help the business develop.',
-                                'value'=>4,
+                                'value'=>5,
                                 'checked'=>false
                             )
                         )
@@ -190,6 +197,10 @@ return array(
                         'type'=>'groupradio',
                         'question'=>'Which of the following do you already have in place to protect your business in the event of an incident?',
                         'name'=>'q4',
+                        'calc'=>array(
+                            'type'=>'average',
+                            'value'=>false
+                        ),
                         'options'=>array(
                             array(
                                 'label'=>'A formal risk assessment',
@@ -197,17 +208,17 @@ return array(
                                 'options'=>array(
                                     array(
                                         'label'=>'Currently have',
-                                        'value'=>1,
+                                        'value'=>5,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'Don\'t have, but planned',
-                                        'value'=>2,
+                                        'value'=>3,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'No, and no plans',
-                                        'value'=>3,
+                                        'value'=>1,
                                         'checked'=>false,
                                     )
                                 )
@@ -218,17 +229,17 @@ return array(
                                 'options'=>array(
                                     array(
                                         'label'=>'Currently have',
-                                        'value'=>1,
+                                        'value'=>5,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'Don\'t have, but planned',
-                                        'value'=>2,
+                                        'value'=>3,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'No, and no plans',
-                                        'value'=>3,
+                                        'value'=>1,
                                         'checked'=>false,
                                     )
                                 )
@@ -239,17 +250,17 @@ return array(
                                 'options'=>array(
                                     array(
                                         'label'=>'Currently have',
-                                        'value'=>1,
+                                        'value'=>5,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'Don\'t have, but planned',
-                                        'value'=>2,
+                                        'value'=>3,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'No, and no plans',
-                                        'value'=>3,
+                                        'value'=>1,
                                         'checked'=>false,
                                     )
                                 )
@@ -260,17 +271,17 @@ return array(
                                 'options'=>array(
                                     array(
                                         'label'=>'Currently have',
-                                        'value'=>1,
+                                        'value'=>5,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'Don\'t have, but planned',
-                                        'value'=>2,
+                                        'value'=>3,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'No, and no plans',
-                                        'value'=>3,
+                                        'value'=>1,
                                         'checked'=>false,
                                     )
                                 )
@@ -281,17 +292,17 @@ return array(
                                 'options'=>array(
                                     array(
                                         'label'=>'Currently have',
-                                        'value'=>1,
+                                        'value'=>5,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'Don\'t have, but planned',
-                                        'value'=>2,
+                                        'value'=>3,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'No, and no plans',
-                                        'value'=>3,
+                                        'value'=>1,
                                         'checked'=>false,
                                     )
                                 )
@@ -302,17 +313,17 @@ return array(
                                 'options'=>array(
                                     array(
                                         'label'=>'Currently have',
-                                        'value'=>1,
+                                        'value'=>5,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'Don\'t have, but planned',
-                                        'value'=>2,
+                                        'value'=>3,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'No, and no plans',
-                                        'value'=>3,
+                                        'value'=>1,
                                         'checked'=>false,
                                     )
                                 )
@@ -323,17 +334,17 @@ return array(
                                 'options'=>array(
                                     array(
                                         'label'=>'Currently have',
-                                        'value'=>1,
+                                        'value'=>5,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'Don\'t have, but planned',
-                                        'value'=>2,
+                                        'value'=>3,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'No, and no plans',
-                                        'value'=>3,
+                                        'value'=>1,
                                         'checked'=>false,
                                     )
                                 )
@@ -344,17 +355,17 @@ return array(
                                 'options'=>array(
                                     array(
                                         'label'=>'Currently have',
-                                        'value'=>1,
+                                        'value'=>5,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'Don\'t have, but planned',
-                                        'value'=>2,
+                                        'value'=>3,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'No, and no plans',
-                                        'value'=>3,
+                                        'value'=>1,
                                         'checked'=>false,
                                     )
                                 )
@@ -394,12 +405,12 @@ return array(
                             ),
                             array(
                                 'label'=>'It is shared between IT and senior management.',
-                                'value'=>4,
+                                'value'=>3,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'It is shared between IT, senior management, and various lines of business.',
-                                'value'=>4,
+                                'value'=>5,
                                 'checked'=>false
                             )
                         )
@@ -413,6 +424,10 @@ return array(
                         'type'=>'groupradio',
                         'question'=>'Which of the following do you have as part of your cyber risk escalation framework?',
                         'name'=>'q6',
+                        'calc'=>array(
+                            'type'=>'normalize',
+                            'value'=>5
+                        ),
                         'options'=>array(
                             array(
                                 'label'=>'CEO',
@@ -425,7 +440,7 @@ return array(
                                     ),
                                     array(
                                         'label'=>'No',
-                                        'value'=>2,
+                                        'value'=>0,
                                         'checked'=>false,
                                     )
                                 )
@@ -441,7 +456,7 @@ return array(
                                     ),
                                     array(
                                         'label'=>'No',
-                                        'value'=>2,
+                                        'value'=>0,
                                         'checked'=>false,
                                     )
                                 )
@@ -457,7 +472,7 @@ return array(
                                     ),
                                     array(
                                         'label'=>'No',
-                                        'value'=>2,
+                                        'value'=>0,
                                         'checked'=>false,
                                     )
                                 )
@@ -473,7 +488,7 @@ return array(
                                     ),
                                     array(
                                         'label'=>'No',
-                                        'value'=>2,
+                                        'value'=>0,
                                         'checked'=>false,
                                     )
                                 )
@@ -489,7 +504,7 @@ return array(
                                     ),
                                     array(
                                         'label'=>'No',
-                                        'value'=>2,
+                                        'value'=>0,
                                         'checked'=>false,
                                     )
                                 )
@@ -505,7 +520,7 @@ return array(
                                     ),
                                     array(
                                         'label'=>'No',
-                                        'value'=>2,
+                                        'value'=>0,
                                         'checked'=>false,
                                     )
                                 )
@@ -529,12 +544,12 @@ return array(
                         'options'=>array(
                             array(
                                 'label'=>'Right at the beginning of planning',
-                                'value'=>1,
+                                'value'=>5,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'During planning',
-                                'value'=>2,
+                                'value'=>4,
                                 'checked'=>false
                             ),
                             array(
@@ -544,12 +559,12 @@ return array(
                             ),
                             array(
                                 'label'=>'During implementation',
-                                'value'=>4,
+                                'value'=>2,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'When something goes wrong',
-                                'value'=>4,
+                                'value'=>1,
                                 'checked'=>false
                             )
                         )
@@ -586,7 +601,7 @@ return array(
                             ),
                             array(
                                 'label'=>'Readily available across the board with a good business case, even for experimental development',
-                                'value'=>4,
+                                'value'=>5,
                                 'checked'=>false
                             )
                         )
@@ -596,6 +611,7 @@ return array(
         )
     ),
     'it-security-operations-and-defence' => array(
+        'title' => 'IT Security Operations and Defence',
         'class' => 'sec2',
         'display' => true,
         'complete' => false,
@@ -607,6 +623,10 @@ return array(
                         'type'=>'slider',
                         'question'=>'To what level do you have the following in place for managing your IT physical security? (Rating scale: 1 = not at all, 5 = very extensive)',
                         'name'=>'q9',
+                        'calc'=>array(
+                            'type'=>'average',
+                            'value'=>false
+                        ),
                         'options'=>array(
                             array(
                                 'label'=>'Security staff screening',
@@ -911,7 +931,7 @@ return array(
                             ),
                             array(
                                 'label'=>'We use an external expert assessor (using standards).',
-                                'value'=>4,
+                                'value'=>5,
                                 'checked'=>false
                             )
                         )
@@ -925,6 +945,10 @@ return array(
                         'type'=>'slider',
                         'question'=>'How prepared are you for the following aspects of your assessment and implementation of GDPR compliance? (Rating scale: 1 = not prepared at all to 5 = very well prepared',
                         'name'=>'q11',
+                        'calc'=>array(
+                            'type'=>'average',
+                            'value'=>false
+                        ),
                         'options'=>array(
                             array(
                                 'label'=>'Knowledge of obligations',
@@ -1163,7 +1187,7 @@ return array(
                             ),
                             array(
                                 'label'=>'We tend to buy strategically across the board.',
-                                'value'=>4,
+                                'value'=>5,
                                 'checked'=>false
                             )
                         )
@@ -1185,27 +1209,27 @@ return array(
                             ),
                             array(
                                 'label'=>'Ad hoc if asked',
-                                'value'=>2,
+                                'value'=>1,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Annually',
-                                'value'=>3,
+                                'value'=>2,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Quarterly',
-                                'value'=>4,
+                                'value'=>2,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Monthly',
-                                'value'=>4,
+                                'value'=>3,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Weekly',
-                                'value'=>4,
+                                'value'=>3,
                                 'checked'=>false
                             ),
                             array(
@@ -1220,7 +1244,7 @@ return array(
                             ),
                             array(
                                 'label'=>'Continuously',
-                                'value'=>4,
+                                'value'=>5,
                                 'checked'=>false
                             )
                         )
@@ -1257,12 +1281,12 @@ return array(
                             ),
                             array(
                                 'label'=>'We use an end-to-end security management suite.',
-                                'value'=>4,
+                                'value'=>5,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'We use a certified partner to help us manage our IT security infrastructure.',
-                                'value'=>4,
+                                'value'=>5,
                                 'checked'=>false
                             )
                         )
@@ -1299,7 +1323,7 @@ return array(
                             ),
                             array(
                                 'label'=>'Automation across the board',
-                                'value'=>4,
+                                'value'=>5,
                                 'checked'=>false
                             )
                         )
@@ -1321,12 +1345,12 @@ return array(
                             ),
                             array(
                                 'label'=>'Decrease it a little',
-                                'value'=>2,
+                                'value'=>1,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Stay the same',
-                                'value'=>3,
+                                'value'=>2,
                                 'checked'=>false
                             ),
                             array(
@@ -1336,7 +1360,7 @@ return array(
                             ),
                             array(
                                 'label'=>'Increase it a lot',
-                                'value'=>4,
+                                'value'=>5,
                                 'checked'=>false
                             )
                         )
@@ -1350,6 +1374,10 @@ return array(
                         'type'=>'groupradio',
                         'question'=>'Do you make use of the following regarding IT security?',
                         'name'=>'q17',
+                        'calc'=>array(
+                            'type'=>'normalize',
+                            'value'=>5
+                        ),
                         'options'=>array(
                             array(
                                 'label'=>'NGFW (next-generation firewall) - defence',
@@ -1362,7 +1390,7 @@ return array(
                                     ),
                                     array(
                                         'label'=>'No',
-                                        'value'=>2,
+                                        'value'=>0,
                                         'checked'=>false,
                                     )
                                 )
@@ -1378,7 +1406,7 @@ return array(
                                     ),
                                     array(
                                         'label'=>'No',
-                                        'value'=>2,
+                                        'value'=>0,
                                         'checked'=>false,
                                     )
                                 )
@@ -1394,7 +1422,7 @@ return array(
                                     ),
                                     array(
                                         'label'=>'No',
-                                        'value'=>2,
+                                        'value'=>0,
                                         'checked'=>false,
                                     )
                                 )
@@ -1410,7 +1438,7 @@ return array(
                                     ),
                                     array(
                                         'label'=>'No',
-                                        'value'=>2,
+                                        'value'=>0,
                                         'checked'=>false,
                                     )
                                 )
@@ -1426,7 +1454,7 @@ return array(
                                     ),
                                     array(
                                         'label'=>'No',
-                                        'value'=>2,
+                                        'value'=>0,
                                         'checked'=>false,
                                     )
                                 )
@@ -1447,266 +1475,28 @@ return array(
                                     )
                                 )
                             ),
-                            array(
-                                'label'=>'Threat intelligence services - breach detection',
-                                'name'=>'q17.7',
-                                'options'=>array(
-                                    array(
-                                        'label'=>'Yes',
-                                        'value'=>1,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'No',
-                                        'value'=>2,
-                                        'checked'=>false,
-                                    )
-                                )
-                            ),
-                            array(
-                                'label'=>'Real-time analytics - breach detection',
-                                'name'=>'q17.8',
-                                'options'=>array(
-                                    array(
-                                        'label'=>'Yes',
-                                        'value'=>1,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'No',
-                                        'value'=>2,
-                                        'checked'=>false,
-                                    )
-                                )
-                            ),
-                            array(
-                                'label'=>'Advanced threat protection/sandboxing - breach detection',
-                                'name'=>'q17.9',
-                                'options'=>array(
-                                    array(
-                                        'label'=>'Yes',
-                                        'value'=>1,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'No',
-                                        'value'=>2,
-                                        'checked'=>false,
-                                    )
-                                )
-                            ),
-                            array(
-                                'label'=>'AI/heuristics - breach detection',
-                                'name'=>'q17.10',
-                                'options'=>array(
-                                    array(
-                                        'label'=>'Yes',
-                                        'value'=>1,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'No',
-                                        'value'=>2,
-                                        'checked'=>false,
-                                    )
-                                )
-                            ),
-                            array(
-                                'label'=>'Malware scanning - breach detection',
-                                'name'=>'q17.11',
-                                'options'=>array(
-                                    array(
-                                        'label'=>'Yes',
-                                        'value'=>1,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'No',
-                                        'value'=>2,
-                                        'checked'=>false,
-                                    )
-                                )
-                            ),
-                            array(
-                                'label'=>'Honeypot/intelligence gathering - breach response',
-                                'name'=>'q17.12',
-                                'options'=>array(
-                                    array(
-                                        'label'=>'Yes',
-                                        'value'=>1,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'No',
-                                        'value'=>2,
-                                        'checked'=>false,
-                                    )
-                                )
-                            ),
-                            array(
-                                'label'=>'Forensic logging and analysis - breach response',
-                                'name'=>'q17.13',
-                                'options'=>array(
-                                    array(
-                                        'label'=>'Yes',
-                                        'value'=>1,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'No',
-                                        'value'=>2,
-                                        'checked'=>false,
-                                    )
-                                )
-                            ),
-                            array(
-                                'label'=>'Failover/system recovery - breach response',
-                                'name'=>'q17.14',
-                                'options'=>array(
-                                    array(
-                                        'label'=>'Yes',
-                                        'value'=>1,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'No',
-                                        'value'=>2,
-                                        'checked'=>false,
-                                    )
-                                )
-                            ),
-                            array(
-                                'label'=>'Tiger/go teams - breach response',
-                                'name'=>'q17.15',
-                                'options'=>array(
-                                    array(
-                                        'label'=>'Yes',
-                                        'value'=>1,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'No',
-                                        'value'=>2,
-                                        'checked'=>false,
-                                    )
-                                )
-                            ),
-                            array(
-                                'label'=>'External incident response partner - breach response',
-                                'name'=>'q17.16',
-                                'options'=>array(
-                                    array(
-                                        'label'=>'Yes',
-                                        'value'=>1,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'No',
-                                        'value'=>2,
-                                        'checked'=>false,
-                                    )
-                                )
-                            ),
-                            array(
-                                'label'=>'Automated remediation (machine learning based) - breach remediation',
-                                'name'=>'q17.17',
-                                'options'=>array(
-                                    array(
-                                        'label'=>'Yes',
-                                        'value'=>1,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'No',
-                                        'value'=>2,
-                                        'checked'=>false,
-                                    )
-                                )
-                            ),
-                            array(
-                                'label'=>'Policy updates - breach remediation',
-                                'name'=>'q17.18',
-                                'options'=>array(
-                                    array(
-                                        'label'=>'Yes',
-                                        'value'=>1,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'No',
-                                        'value'=>2,
-                                        'checked'=>false,
-                                    )
-                                )
-                            ),
-                            array(
-                                'label'=>'Disaster recovery policy - breach remediation',
-                                'name'=>'q17.19',
-                                'options'=>array(
-                                    array(
-                                        'label'=>'Yes',
-                                        'value'=>1,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'No',
-                                        'value'=>2,
-                                        'checked'=>false,
-                                    )
-                                )
-                            ),
-                            array(
-                                'label'=>'External disaster recovery providers - breach remediation',
-                                'name'=>'q17.20',
-                                'options'=>array(
-                                    array(
-                                        'label'=>'Yes',
-                                        'value'=>1,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'No',
-                                        'value'=>2,
-                                        'checked'=>false,
-                                    )
-                                )
-                            ),
-                            array(
-                                'label'=>'Compromise assessments - breach remediation',
-                                'name'=>'q17.21',
-                                'options'=>array(
-                                    array(
-                                        'label'=>'Yes',
-                                        'value'=>1,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'No',
-                                        'value'=>2,
-                                        'checked'=>false,
-                                    )
-                                )
-                            ),
                         )
-                    )
+                    ),
                 )
-                /*,
-                'report' => array(
-                    'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
-                    'image'=>'img/techfit_icons_Q-A1.png'
-                )*/,
-                'report' => false
             ),
-            'page18' => array(
-                'title' => 'IT Security',
+        )
+    ),
+    'it-security-breach-detection-and-remediation' => array(
+        'title' => 'IT Security Breach Detection and Remediation',
+        'class' => 'sec3',
+        'display' => true,
+        'complete' => false,
+        'pages' => array(
+            'page1' => array(
+                'title' => 'IT Security Breach Detection and Remediation',
                 'questions' => array(
                     'q18'=>array(
                         'type'=>'groupradio',
-                        'question'=>'Have you done the following in regards to understanding your cyber risk profile?',
+                        'question'=>'Do you make use of  the following regarding IT Security - Breach detection',
                         'name'=>'q18',
                         'options'=>array(
                             array(
-                                'label'=>'Assessed your risk of suffering a cyber breach',
+                                'label'=>'Threat intelligence services',
                                 'name'=>'q18.1',
                                 'options'=>array(
                                     array(
@@ -1716,13 +1506,13 @@ return array(
                                     ),
                                     array(
                                         'label'=>'No',
-                                        'value'=>2,
+                                        'value'=>0,
                                         'checked'=>false,
                                     )
                                 )
                             ),
                             array(
-                                'label'=>'Understand potential scale of exposure',
+                                'label'=>'Real-time analytics',
                                 'name'=>'q18.2',
                                 'options'=>array(
                                     array(
@@ -1732,13 +1522,13 @@ return array(
                                     ),
                                     array(
                                         'label'=>'No',
-                                        'value'=>2,
+                                        'value'=>0,
                                         'checked'=>false,
                                     )
                                 )
                             ),
                             array(
-                                'label'=>'Done a data assessment of critical data',
+                                'label'=>'Advanced threat protection/sandboxing',
                                 'name'=>'q18.3',
                                 'options'=>array(
                                     array(
@@ -1748,14 +1538,14 @@ return array(
                                     ),
                                     array(
                                         'label'=>'No',
-                                        'value'=>2,
+                                        'value'=>0,
                                         'checked'=>false,
                                     )
                                 )
                             ),
                             array(
-                                'label'=>'Understand posture of extended supply chain or partners',
-                                'name'=>'q18.4',
+                                'label'=>'AI/heuristics',
+                                'name'=>'q17.4',
                                 'options'=>array(
                                     array(
                                         'label'=>'Yes',
@@ -1764,14 +1554,14 @@ return array(
                                     ),
                                     array(
                                         'label'=>'No',
-                                        'value'=>2,
+                                        'value'=>0,
                                         'checked'=>false,
                                     )
                                 )
                             ),
                             array(
-                                'label'=>'Developed a security breach response plan',
-                                'name'=>'q18.5',
+                                'label'=>'Malware scanning',
+                                'name'=>'q17.5',
                                 'options'=>array(
                                     array(
                                         'label'=>'Yes',
@@ -1780,7 +1570,203 @@ return array(
                                     ),
                                     array(
                                         'label'=>'No',
-                                        'value'=>2,
+                                        'value'=>0,
+                                        'checked'=>false,
+                                    )
+                                )
+                            ),
+                        )
+                    ),
+                )
+                /*,
+                'report' => array(
+                    'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
+                    'image'=>'img/techfit_icons_Q-A1.png'
+                )*/,
+                'report' => false
+            ),
+            'page2' => array(
+                'title' => 'IT Security Breach Detection and Remediation',
+                'questions' => array(
+                    'q19'=>array(
+                        'type'=>'groupradio',
+                        'question'=>'Do you make use of the following regarding IT Security - Breach response',
+                        'name'=>'q19',
+                        'options'=>array(
+                            array(
+                                'label'=>'Honeypot/intelligence gathering',
+                                'name'=>'q19.1',
+                                'options'=>array(
+                                    array(
+                                        'label'=>'Yes',
+                                        'value'=>1,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'No',
+                                        'value'=>0,
+                                        'checked'=>false,
+                                    )
+                                )
+                            ),
+                            array(
+                                'label'=>'Forensic logging and analysis',
+                                'name'=>'q19.2',
+                                'options'=>array(
+                                    array(
+                                        'label'=>'Yes',
+                                        'value'=>1,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'No',
+                                        'value'=>0,
+                                        'checked'=>false,
+                                    )
+                                )
+                            ),
+                            array(
+                                'label'=>'Failover/system recovery',
+                                'name'=>'q19.3',
+                                'options'=>array(
+                                    array(
+                                        'label'=>'Yes',
+                                        'value'=>1,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'No',
+                                        'value'=>0,
+                                        'checked'=>false,
+                                    )
+                                )
+                            ),
+                            array(
+                                'label'=>'Tiger/go teams',
+                                'name'=>'q19.4',
+                                'options'=>array(
+                                    array(
+                                        'label'=>'Yes',
+                                        'value'=>1,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'No',
+                                        'value'=>0,
+                                        'checked'=>false,
+                                    )
+                                )
+                            ),
+                            array(
+                                'label'=>'External incident response partner',
+                                'name'=>'q19.5',
+                                'options'=>array(
+                                    array(
+                                        'label'=>'Yes',
+                                        'value'=>1,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'No',
+                                        'value'=>0,
+                                        'checked'=>false,
+                                    )
+                                )
+                            ),
+                        )
+                    ),
+                )
+                /*,
+                'report' => array(
+                    'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
+                    'image'=>'img/techfit_icons_Q-A1.png'
+                )*/,
+                'report' => false
+            ),
+            'page3' => array(
+                'title' => 'IT Security Breach Detection and Remediation',
+                'questions' => array(
+                    'q20'=>array(
+                        'type'=>'groupradio',
+                        'question'=>'Do you make use of the following regarding IT Security - Breach response',
+                        'name'=>'q20',
+                        'options'=>array(
+                            array(
+                                'label'=>'Automated remediation (machine learning based)',
+                                'name'=>'q20.1',
+                                'options'=>array(
+                                    array(
+                                        'label'=>'Yes',
+                                        'value'=>1,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'No',
+                                        'value'=>0,
+                                        'checked'=>false,
+                                    )
+                                )
+                            ),
+                            array(
+                                'label'=>'Policy updates',
+                                'name'=>'q20.2',
+                                'options'=>array(
+                                    array(
+                                        'label'=>'Yes',
+                                        'value'=>1,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'No',
+                                        'value'=>0,
+                                        'checked'=>false,
+                                    )
+                                )
+                            ),
+                            array(
+                                'label'=>'Disaster recovery policy',
+                                'name'=>'q20.3',
+                                'options'=>array(
+                                    array(
+                                        'label'=>'Yes',
+                                        'value'=>1,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'No',
+                                        'value'=>0,
+                                        'checked'=>false,
+                                    )
+                                )
+                            ),
+                            array(
+                                'label'=>'External disaster recovery providers',
+                                'name'=>'q20.4',
+                                'options'=>array(
+                                    array(
+                                        'label'=>'Yes',
+                                        'value'=>1,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'No',
+                                        'value'=>0,
+                                        'checked'=>false,
+                                    )
+                                )
+                            ),
+                            array(
+                                'label'=>'Compromise assessments',
+                                'name'=>'q20.5',
+                                'options'=>array(
+                                    array(
+                                        'label'=>'Yes',
+                                        'value'=>1,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'No',
+                                        'value'=>0,
                                         'checked'=>false,
                                     )
                                 )
@@ -1795,107 +1781,223 @@ return array(
                 )*/,
                 'report' => false
             ),
-            'page19' => array(
-                'title' => 'IT Security',
-                'questions' => array(
-                    'q19'=>array(
-                        'type'=>'button',
-                        'question'=>'How often do you test your IT security defense capabilities through third-party verification?',
-                        'name'=>'q19',
-                        'options'=>array(
-                            array(
-                                'label'=>'Never',
-                                'value'=>1,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'Every few years',
-                                'value'=>2,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'Every year',
-                                'value'=>3,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'Every 6 months',
-                                'value'=>4,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'Every quarter',
-                                'value'=>4,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'Monthly',
-                                'value'=>4,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'Continuously',
-                                'value'=>4,
-                                'checked'=>false
-                            )
-                        )
-                    )
-                )
-            ),
-            'page20' => array(
-                'title' => 'IT Security',
-                'questions' => array(
-                    'q20'=>array(
-                        'type'=>'button',
-                        'question'=>'How often do you test your cyber breach incident response plans?',
-                        'name'=>'q20',
-                        'options'=>array(
-                            array(
-                                'label'=>'Never',
-                                'value'=>1,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'Every few years',
-                                'value'=>2,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'Every year',
-                                'value'=>3,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'Every 6 months',
-                                'value'=>4,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'Every quarter',
-                                'value'=>4,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'Monthly',
-                                'value'=>4,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'Continuously',
-                                'value'=>4,
-                                'checked'=>false
-                            )
-                        )
-                    )
-                )
-            ),
-            'page21' => array(
-                'title' => 'IT Security',
+            'page4' => array(
+                'title' => 'IT Security Breach Detection and Remediation',
                 'questions' => array(
                     'q21'=>array(
+                        'type'=>'groupradio',
+                        'question'=>'Have you done the following in regards to understanding your Cyber risk profile?',
+                        'name'=>'q21',
+                        'options'=>array(
+                            array(
+                                'label'=>'Assessed your risk of suffering a cyber breach',
+                                'name'=>'q21.1',
+                                'options'=>array(
+                                    array(
+                                        'label'=>'Yes',
+                                        'value'=>1,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'No',
+                                        'value'=>0,
+                                        'checked'=>false,
+                                    )
+                                )
+                            ),
+                            array(
+                                'label'=>'Understand potential scale of exposure',
+                                'name'=>'q21.2',
+                                'options'=>array(
+                                    array(
+                                        'label'=>'Yes',
+                                        'value'=>1,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'No',
+                                        'value'=>0,
+                                        'checked'=>false,
+                                    )
+                                )
+                            ),
+                            array(
+                                'label'=>'Done a data assessment of critical data',
+                                'name'=>'q21.3',
+                                'options'=>array(
+                                    array(
+                                        'label'=>'Yes',
+                                        'value'=>1,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'No',
+                                        'value'=>0,
+                                        'checked'=>false,
+                                    )
+                                )
+                            ),
+                            array(
+                                'label'=>'Understand posture of extended supply chain or partners',
+                                'name'=>'q21.4',
+                                'options'=>array(
+                                    array(
+                                        'label'=>'Yes',
+                                        'value'=>1,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'No',
+                                        'value'=>0,
+                                        'checked'=>false,
+                                    )
+                                )
+                            ),
+                            array(
+                                'label'=>'Developed a security breach response plan',
+                                'name'=>'q21.5',
+                                'options'=>array(
+                                    array(
+                                        'label'=>'Yes',
+                                        'value'=>1,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'No',
+                                        'value'=>0,
+                                        'checked'=>false,
+                                    )
+                                )
+                            ),
+                        )
+                    )
+                )
+                /*,
+                'report' => array(
+                    'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
+                    'image'=>'img/techfit_icons_Q-A1.png'
+                )*/,
+                'report' => false
+            ),
+            'page5' => array(
+                'title' => 'IT Security Breach Detection and Remediation',
+                'questions' => array(
+                    'q23'=>array(
+                        'type'=>'button',
+                        'question'=>'How often do you test your IT security defense capabilities through third-party verification?',
+                        'name'=>'q23',
+                        'options'=>array(
+                            array(
+                                'label'=>'Never',
+                                'value'=>1,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'Every few years',
+                                'value'=>1,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'Every year',
+                                'value'=>2,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'Every 6 months',
+                                'value'=>2,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'Every quarter',
+                                'value'=>3,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'Monthly',
+                                'value'=>3,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'Weekly',
+                                'value'=>4,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'Continuously',
+                                'value'=>5,
+                                'checked'=>false
+                            )
+                        )
+                    )
+                )
+            ),
+            'page6' => array(
+                'title' => 'IT Security Breach Detection and Remediation',
+                'questions' => array(
+                    'q24'=>array(
+                        'type'=>'button',
+                        'question'=>'How often do you test your cyber breach incident response plans?',
+                        'name'=>'q24',
+                        'options'=>array(
+                            array(
+                                'label'=>'Never',
+                                'value'=>1,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'Every few years',
+                                'value'=>1,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'Every year',
+                                'value'=>2,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'Every 6 months',
+                                'value'=>2,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'Every quarter',
+                                'value'=>3,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'Monthly',
+                                'value'=>3,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'Weekly',
+                                'value'=>4,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'Continuously',
+                                'value'=>5,
+                                'checked'=>false
+                            )
+                        )
+                    )
+                )
+            ),
+        )
+    ),
+    'it-security-third-party-providers' => array(
+        'title' => 'IT Security Third Party Providers',
+        'class' => 'sec4',
+        'display' => true,
+        'complete' => false,
+        'pages' => array(
+            'page1' => array(
+                'title' => 'IT Security Third Party Providers',
+                'questions' => array(
+                    'q25'=>array(
                         'type'=>'button',
                         'question'=>'Which statement describes the extent of your use of managed security services providers?',
-                        'name'=>'q21',
+                        'name'=>'q25',
                         'options'=>array(
                             array(
                                 'label'=>'We don\'t use them at all.',
@@ -1919,50 +2021,50 @@ return array(
                             ),
                             array(
                                 'label'=>'We use them extensively wherever possible.',
-                                'value'=>4,
+                                'value'=>5,
                                 'checked'=>false
                             )
                         )
                     )
                 )
             ),
-            'page22' => array(
-                'title' => 'IT Security',
+            'page2' => array(
+                'title' => 'IT Security Third Party Providers',
                 'questions' => array(
-                    'q22'=>array(
+                    'q26'=>array(
                         'type'=>'slider',
                         'question'=>'To what extent do you agree/disagree with the following motivators to using managed security services providers? (Rating scale: 1 = disagree strongly to 5 = agree strongly)',
-                        'name'=>'q22',
+                        'name'=>'q26',
                         'options'=>array(
                             array(
                                 'label'=>'They have much better capabilities than we can manage in-house',
                                 'from'=>'Strongly disagree',
                                 'to'=>'Strongly agree',
-                                'name'=>'q22.1',
+                                'name'=>'q26.1',
                                 'options'=>array(
                                     array(
                                         'label'=>'1',
-                                        'value'=>1,
+                                        'value'=>0,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'2',
-                                        'value'=>2,
+                                        'value'=>0,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'3',
-                                        'value'=>3,
+                                        'value'=>0,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'4',
-                                        'value'=>4,
+                                        'value'=>0,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'5',
-                                        'value'=>5,
+                                        'value'=>0,
                                         'checked'=>false,
                                     )
                                 )
@@ -1971,31 +2073,31 @@ return array(
                                 'label'=>'They are cheaper than what we can do ourselves.',
                                 'from'=>'Strongly disagree',
                                 'to'=>'Strongly agree',
-                                'name'=>'q22.2',
+                                'name'=>'q26.2',
                                 'options'=>array(
                                     array(
                                         'label'=>'1',
-                                        'value'=>1,
+                                        'value'=>0,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'2',
-                                        'value'=>2,
+                                        'value'=>0,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'3',
-                                        'value'=>3,
+                                        'value'=>0,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'4',
-                                        'value'=>4,
+                                        'value'=>0,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'5',
-                                        'value'=>5,
+                                        'value'=>0,
                                         'checked'=>false,
                                     )
                                 )
@@ -2004,31 +2106,31 @@ return array(
                                 'label'=>'They can be trusted with our secure data',
                                 'from'=>'Strongly disagree',
                                 'to'=>'Strongly agree',
-                                'name'=>'q22.3',
+                                'name'=>'q26.3',
                                 'options'=>array(
                                     array(
                                         'label'=>'1',
-                                        'value'=>1,
+                                        'value'=>0,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'2',
-                                        'value'=>2,
+                                        'value'=>0,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'3',
-                                        'value'=>3,
+                                        'value'=>0,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'4',
-                                        'value'=>4,
+                                        'value'=>0,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'5',
-                                        'value'=>5,
+                                        'value'=>0,
                                         'checked'=>false,
                                     )
                                 )
@@ -2037,31 +2139,31 @@ return array(
                                 'label'=>'They improve our visibility and control on our estate',
                                 'from'=>'Strongly disagree',
                                 'to'=>'Strongly agree',
-                                'name'=>'q22.4',
+                                'name'=>'q26.4',
                                 'options'=>array(
                                     array(
                                         'label'=>'1',
-                                        'value'=>1,
+                                        'value'=>0,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'2',
-                                        'value'=>2,
+                                        'value'=>0,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'3',
-                                        'value'=>3,
+                                        'value'=>0,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'4',
-                                        'value'=>4,
+                                        'value'=>0,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'5',
-                                        'value'=>5,
+                                        'value'=>0,
                                         'checked'=>false,
                                     )
                                 )
@@ -2070,31 +2172,31 @@ return array(
                                 'label'=>'They can provide a better security posture for us',
                                 'from'=>'Strongly disagree',
                                 'to'=>'Strongly agree',
-                                'name'=>'q22.5',
+                                'name'=>'q26.5',
                                 'options'=>array(
                                     array(
                                         'label'=>'1',
-                                        'value'=>1,
+                                        'value'=>0,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'2',
-                                        'value'=>2,
+                                        'value'=>0,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'3',
-                                        'value'=>3,
+                                        'value'=>0,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'4',
-                                        'value'=>4,
+                                        'value'=>0,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'5',
-                                        'value'=>5,
+                                        'value'=>0,
                                         'checked'=>false,
                                     )
                                 )
@@ -2103,31 +2205,31 @@ return array(
                                 'label'=>'They have more capable staff than we can afford to keep',
                                 'from'=>'Strongly disagree',
                                 'to'=>'Strongly agree',
-                                'name'=>'q22.6',
+                                'name'=>'q26.6',
                                 'options'=>array(
                                     array(
                                         'label'=>'1',
-                                        'value'=>1,
+                                        'value'=>0,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'2',
-                                        'value'=>2,
+                                        'value'=>0,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'3',
-                                        'value'=>3,
+                                        'value'=>0,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'4',
-                                        'value'=>4,
+                                        'value'=>0,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'5',
-                                        'value'=>5,
+                                        'value'=>0,
                                         'checked'=>false,
                                     )
                                 )
@@ -2136,31 +2238,31 @@ return array(
                                 'label'=>'Using MSSPs will maintain or enhance our political status or relevance within our company',
                                 'from'=>'Strongly disagree',
                                 'to'=>'Strongly agree',
-                                'name'=>'q22.7',
+                                'name'=>'q26.7',
                                 'options'=>array(
                                     array(
                                         'label'=>'1',
-                                        'value'=>1,
+                                        'value'=>0,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'2',
-                                        'value'=>2,
+                                        'value'=>0,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'3',
-                                        'value'=>3,
+                                        'value'=>0,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'4',
-                                        'value'=>4,
+                                        'value'=>0,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'5',
-                                        'value'=>5,
+                                        'value'=>0,
                                         'checked'=>false,
                                     )
                                 )
@@ -2174,43 +2276,43 @@ return array(
                 )*/,
                 'report' => false
             ),
-            'page23' => array(
-                'title' => 'IT Security',
+            'page3' => array(
+                'title' => 'IT Security Third Party Providers',
                 'questions' => array(
-                    'q23'=>array(
+                    'q27'=>array(
                         'type'=>'slider',
                         'question'=>'When it comes to your use of threat intelligence services, to what extent to you agree/disagree with the following? (Rating scale: 1 = disagree strongly to 5 = agree strongly',
-                        'name'=>'q23',
+                        'name'=>'q27',
                         'options'=>array(
                             array(
                                 'label'=>'It provides actionable intelligence',
                                 'from'=>'Strongly disagree',
                                 'to'=>'Strongly agree',
-                                'name'=>'q23.1',
+                                'name'=>'q27.1',
                                 'options'=>array(
                                     array(
                                         'label'=>'1',
-                                        'value'=>1,
+                                        'value'=>0,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'2',
-                                        'value'=>2,
+                                        'value'=>0,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'3',
-                                        'value'=>3,
+                                        'value'=>0,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'4',
-                                        'value'=>4,
+                                        'value'=>0,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'5',
-                                        'value'=>5,
+                                        'value'=>0,
                                         'checked'=>false,
                                     )
                                 )
@@ -2219,31 +2321,31 @@ return array(
                                 'label'=>'It is targeted to the context of my organization/vertical industry.',
                                 'from'=>'Strongly disagree',
                                 'to'=>'Strongly agree',
-                                'name'=>'q23.2',
+                                'name'=>'q27.2',
                                 'options'=>array(
                                     array(
                                         'label'=>'1',
-                                        'value'=>1,
+                                        'value'=>0,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'2',
-                                        'value'=>2,
+                                        'value'=>0,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'3',
-                                        'value'=>3,
+                                        'value'=>0,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'4',
-                                        'value'=>4,
+                                        'value'=>0,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'5',
-                                        'value'=>5,
+                                        'value'=>0,
                                         'checked'=>false,
                                     )
                                 )
@@ -2252,31 +2354,31 @@ return array(
                                 'label'=>'It\'s close enough to real time to be of use',
                                 'from'=>'Strongly disagree',
                                 'to'=>'Strongly agree',
-                                'name'=>'q23.3',
+                                'name'=>'q27.3',
                                 'options'=>array(
                                     array(
                                         'label'=>'1',
-                                        'value'=>1,
+                                        'value'=>0,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'2',
-                                        'value'=>2,
+                                        'value'=>0,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'3',
-                                        'value'=>3,
+                                        'value'=>0,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'4',
-                                        'value'=>4,
+                                        'value'=>0,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'5',
-                                        'value'=>5,
+                                        'value'=>0,
                                         'checked'=>false,
                                     )
                                 )
@@ -2290,42 +2392,42 @@ return array(
                 )*/,
                 'report' => false
             ),
-            'page24' => array(
-                'title' => 'IT Security',
+            'page4' => array(
+                'title' => 'IT Security Third Party Providers',
                 'questions' => array(
-                    'q24'=>array(
+                    'q28'=>array(
                         'type'=>'groupradio',
                         'question'=>'And again looking at threat intelligence services, do you do the following?',
-                        'name'=>'q24',
+                        'name'=>'q28',
                         'options'=>array(
                             array(
                                 'label'=>'We make use of global insight. - And again looking at threat intelligence services, do you do the following?',
-                                'name'=>'q24.1',
+                                'name'=>'q28.1',
                                 'options'=>array(
                                     array(
                                         'label'=>'Yes',
-                                        'value'=>1,
+                                        'value'=>0,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'No',
-                                        'value'=>2,
+                                        'value'=>0,
                                         'checked'=>false,
                                     )
                                 )
                             ),
                             array(
                                 'label'=>'We do multiway sharing of information. - And again looking at threat intelligence services, do you do the following?',
-                                'name'=>'q24.2',
+                                'name'=>'q28.2',
                                 'options'=>array(
                                     array(
                                         'label'=>'Yes',
-                                        'value'=>1,
+                                        'value'=>0,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'No',
-                                        'value'=>2,
+                                        'value'=>0,
                                         'checked'=>false,
                                     )
                                 )
@@ -2340,62 +2442,62 @@ return array(
                 )*/,
                 'report' => false
             ),
-            'page25' => array(
-                'title' => 'IT Security',
+            'page5' => array(
+                'title' => 'IT Security Third Party Providers',
                 'questions' => array(
-                    'q25'=>array(
+                    'q29'=>array(
                         'type'=>'button',
                         'question'=>'What is limiting your ability to improve your IT security capabilities? Select the top 3 factors',
-                        'name'=>'q25',
+                        'name'=>'q29',
                         'options'=>array(
                             array(
                                 'label'=>'Budget constraints',
-                                'value'=>1,
+                                'value'=>0,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Juggling conflicting priorities',
-                                'value'=>2,
+                                'value'=>0,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Operations resources are too busy on routine operations',
-                                'value'=>3,
+                                'value'=>0,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Skills shortages',
-                                'value'=>4,
+                                'value'=>0,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'High level of demand for new business services',
-                                'value'=>4,
+                                'value'=>0,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Lack of insight into security sensitive activities',
-                                'value'=>4,
+                                'value'=>0,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Not enough integration into the IT infrastructure teams',
-                                'value'=>4,
+                                'value'=>0,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Fragmentation or lack of integration of security product portfolio',
-                                'value'=>4,
+                                'value'=>0,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Competing with cloud resources used/shadow IT',
-                                'value'=>4,
+                                'value'=>0,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Other',
-                                'value'=>4,
+                                'value'=>0,
                                 'checked'=>false
                             )
                         )

@@ -1,6 +1,96 @@
 <?php
 return array(
-    'it-security' => array(
+    'it-security-and-the-business' => array(
+        'baseline' => 15.363,
+        'types' => array(
+            'Stage 1: Time to Act' => array(
+                'low' => 0,
+                'high' => 4.92,
+                'total' => 2
+            ),
+            'Stage 2: Time to Commit' => array(
+                'low' => 5,
+                'high' => 8.9,
+                'total' => 3
+            ),
+            'Stage 3: Time to Invest' => array(
+                'low' => 9,
+                'high' => 12.9,
+                'total' => 5
+            ),
+            'Stage 4: Time to Refine' => array(
+                'low' => 13,
+                'high' => 16.9,
+                'total' => 5
+            ),
+            'Stage 5: Time to Accelerate' => array(
+                'low' => 17,
+                'high' => 20,
+                'total' => 5
+            )
+        )
+    ),
+    'it-security-operations-and-defence' => array(
+        'baseline' => 15.363,
+        'types' => array(
+            'Stage 1: Time to Act' => array(
+                'low' => 0,
+                'high' => 4.92,
+                'total' => 2
+            ),
+            'Stage 2: Time to Commit' => array(
+                'low' => 5,
+                'high' => 8.9,
+                'total' => 3
+            ),
+            'Stage 3: Time to Invest' => array(
+                'low' => 9,
+                'high' => 12.9,
+                'total' => 5
+            ),
+            'Stage 4: Time to Refine' => array(
+                'low' => 13,
+                'high' => 16.9,
+                'total' => 5
+            ),
+            'Stage 5: Time to Accelerate' => array(
+                'low' => 17,
+                'high' => 20,
+                'total' => 5
+            )
+        )
+    ),
+    'it-security-breach-detection-and-remediation' => array(
+        'baseline' => 15.363,
+        'types' => array(
+            'Stage 1: Time to Act' => array(
+                'low' => 0,
+                'high' => 4.92,
+                'total' => 2
+            ),
+            'Stage 2: Time to Commit' => array(
+                'low' => 5,
+                'high' => 8.9,
+                'total' => 3
+            ),
+            'Stage 3: Time to Invest' => array(
+                'low' => 9,
+                'high' => 12.9,
+                'total' => 5
+            ),
+            'Stage 4: Time to Refine' => array(
+                'low' => 13,
+                'high' => 16.9,
+                'total' => 5
+            ),
+            'Stage 5: Time to Accelerate' => array(
+                'low' => 17,
+                'high' => 20,
+                'total' => 5
+            )
+        )
+    ),
+    'it-security-third-party-providers' => array(
         'baseline' => 15.363,
         'types' => array(
             'Stage 1: Time to Act' => array(

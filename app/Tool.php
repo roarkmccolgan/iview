@@ -29,6 +29,11 @@ class Tool extends Model
         return $this->hasMany('App\Report');
     }
 
+    public function assessments()
+    {
+        return $this->hasMany('App\Assessment');
+    }
+
     public function urls()
     {
         return $this->morphMany('App\Url', 'urlable');
