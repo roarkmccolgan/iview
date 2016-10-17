@@ -95,6 +95,7 @@ Route::group(['prefix' => 'api'], function(){
 	    }
 	    return $urls;
 	});
+	Route::get('results/{section}', 'ToolController@getCalcResults');
 
 	Route::get('legacytables', function () {
 	    $tables = [];

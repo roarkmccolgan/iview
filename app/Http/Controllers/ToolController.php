@@ -1,5 +1,6 @@
 <?php namespace App\Http\Controllers;
 
+use App\Assessment;
 use App\Company;
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
@@ -191,6 +192,18 @@ class ToolController extends Controller
                 next($questions);
             }
             next($questions);
+
+            //check if there is a mini report
+            if(null !== session('questions.'.$section.'.sub-report') && session('questions.'.$section.'.sub-report')!==false){
+                $this->getCalcResults($section);
+                $title = session('questions.'.$section.'.pages.page1.title');
+                $rating = $this->result[$section]['rating'].' '.$this->result[$section]['score'];
+                $ratingcopy = trans($this->baseline[$section]['types'][$this->result[$section]['rating']]['copy']);
+                $next = '/quiz/'.key($questions).'/page1'; //fix this so a report can be provided at any stage?
+                return view('tool.'.session('template').'.sectionresult',compact(['title','section','rating','ratingcopy','next']));
+            }
+            //dd(session('questions'));
+            //else do carry on or complete
             if(key($questions)==null) return redirect('/quiz/complete');
             return redirect('/quiz/'.key($questions).'/page1');
         }
@@ -274,21 +287,21 @@ class ToolController extends Controller
                 Session::put('source', $source);
                 
                 //save in db
-                $user = new User;
-                $user->fname = $validate_data['fname'];
-                $user->lname = $validate_data['sname'];
-                $user->email = $validate_data['email'];
-                $user->company = $validate_data['company'];
-                $user->country = $validate_data['country'];
-                $user->tel = $validate_data['phone'];
-                $user->referer = $validate_data['referer'];
-                $user->quiz = json_encode($this->quiz);
-                $user->result = json_encode($this->howfit);
+                $assessment = new Assessment;
+                $assessment->fname = $validate_data['fname'];
+                $assessment->lname = $validate_data['sname'];
+                $assessment->email = $validate_data['email'];
+                $assessment->company = $validate_data['company'];
+                $assessment->country = $validate_data['country'];
+                $assessment->tel = $validate_data['phone'];
+                $assessment->referer = $validate_data['referer'];
+                $assessment->quiz = json_encode($this->quiz);
+                $assessment->result = json_encode($this->howfit);
 
                 
-                $user->save();
-                $this->userid = $user->id;
-                $validate_data['userid'] = $user->id;
+                $assessment->save();
+                $this->assessmentid = $assessment->id;
+                $validate_data['assessmentid'] = $assessment->id;
                 
                 //generate report
                 $this->generateReport();
@@ -319,7 +332,7 @@ class ToolController extends Controller
                 }*/
                 $subject = Lang::get('email.report');
                 //send mail to user
-                Mail::queue('emails.'.$curloc.'download', array('fname'=>$validate_data['fname'], 'sname'=>$validate_data['sname'], 'userid'=>$validate_data['userid']), function($message)  use ($validate_data, $subject, $curloc){
+                Mail::queue('emails.'.$curloc.'download', array('fname'=>$validate_data['fname'], 'sname'=>$validate_data['sname'], 'userid'=>$validate_data['assessmentid']), function($message)  use ($validate_data, $subject, $curloc){
 
                     $message->to($validate_data['email'], $validate_data['fname'].' '.$validate_data['sname'])->subject($subject);
                 });
@@ -331,7 +344,7 @@ class ToolController extends Controller
                     $emails = ['roarkmccolgan@gmail.com', 'Pelle_Lindell@Dell.com'];
 
                 }
-                Mail::queue('emails.notification', array('fname'=>$validate_data['fname'], 'sname'=>$validate_data['sname'], 'email'=>$validate_data['email'], 'company'=>$validate_data['company'], 'phone'=>$validate_data['phone'], 'screener1'=>$this->quiz['demographics']['pages']['page1']['questions']['s1']['selected'], 'screener2'=>$this->quiz['demographics']['pages']['page2']['questions']['s2']['selected'], 'screener3'=>$this->quiz['demographics']['pages']['page3']['questions']['s3']['selected'], 'score'=>$this->howfit['overall']['score'], 'rating'=>$this->howfit['overall']['rating'], 'userid'=>$validate_data['userid']), function($message)  use ($validate_data, $emails, $curloc){
+                Mail::queue('emails.notification', array('fname'=>$validate_data['fname'], 'sname'=>$validate_data['sname'], 'email'=>$validate_data['email'], 'company'=>$validate_data['company'], 'phone'=>$validate_data['phone'], 'screener1'=>$this->quiz['demographics']['pages']['page1']['questions']['s1']['selected'], 'screener2'=>$this->quiz['demographics']['pages']['page2']['questions']['s2']['selected'], 'screener3'=>$this->quiz['demographics']['pages']['page3']['questions']['s3']['selected'], 'score'=>$this->howfit['overall']['score'], 'rating'=>$this->howfit['overall']['rating'], 'userid'=>$validate_data['assessmentid']), function($message)  use ($validate_data, $emails, $curloc){
 
                     $message->to($emails)->subject('Conferged Infrastructure Quiz completed ('.$curloc.')');
                 });
@@ -363,72 +376,135 @@ class ToolController extends Controller
 
 
     public function fakeDownload($userid){
-            //PDF file is stored under project/public/download/info.pdf
-            $file= storage_path().'/reports/SAGE_Assessment_Report.pdf';
-            $headers = array(
-                'Content-Type: application/pdf',
-            );
-            return response()->download($file, 'SAGE_Assessment_Report.pdf', $headers);
-        }
+        //PDF file is stored under project/public/download/info.pdf
+        $file= storage_path().'/reports/SAGE_Assessment_Report.pdf';
+        $headers = array(
+            'Content-Type: application/pdf',
+        );
+        return response()->download($file, 'SAGE_Assessment_Report.pdf', $headers);
+    }
+    public function getCalcResults($section=false){
+        $this->loadQuestions();
+        $this->calcResults($section);
+    }
 
-    private function calcResults(){
+    private function calcResults($section=false){
         $this->baseline = config('baseline'.'_'.session('product.id'));
         $result = array();
         $result['overall']['score'] = 0;
-        //dd($this->quiz);
-        foreach ($this->quiz as $key => $value) {
-            if($key!=='screeners'){
-                foreach ($value['pages'] as $page => $props) {
-                    foreach ($props['questions'] as $q => $details) {
-                        if(($details['type']=='checkbox' || $details['type']=='groupradio' || $details['type']=='slider') && is_array($details['selected'])){
-                            if(isset($details['calc'])){
-                                if($details['calc']['type']=='average'){
-                                    $ave = [];
-                                    foreach ($details['selected'] as $selected) {
-                                        $selected = explode('|', $selected);
-                                        $selected = $selected[1];
-                                        $ave[]=$selected;
-                                    }
-                                    $val = array_sum($ave) / count($ave);
-                                }elseif($details['calc']['type']=='normalize'){
-                                    $norm = 0;
-                                    foreach ($details['selected'] as $selected) {
-                                        $selected = explode('|', $selected);
-                                        $selected = $selected[1];
-                                        $norm+=$selected;
-                                    }
-                                    $val = ($norm/$details['calc']['value'])*count($details['selected']);
-                                }
-                            }else{
-                                $valHold = 0;
+
+        if($section!==false){
+            foreach ($this->quiz[$section]['pages'] as $page => $props) {
+                foreach ($props['questions'] as $q => $details) {
+                    if(($details['type']=='checkbox' || $details['type']=='groupradio' || $details['type']=='slider') && is_array($details['selected'])){
+                        if(isset($details['calc'])){
+                            if($details['calc']['type']=='average'){
+                                $ave = [];
                                 foreach ($details['selected'] as $selected) {
                                     $selected = explode('|', $selected);
                                     $selected = $selected[1];
-                                    $valHold+=$selected;
+                                    $ave[]=$selected;
                                 }
-                                $val = $valHold;
+                                $val = array_sum($ave) / count($ave);
+                            }elseif($details['calc']['type']=='normalize'){
+                                $norm = 0;
+                                foreach ($details['selected'] as $selected) {
+                                    $selected = explode('|', $selected);
+                                    $selected = $selected[1];
+                                    $norm+=$selected;
+                                }
+                                $val = ($norm/$details['calc']['value'])*count($details['selected']);
                             }
                         }else{
-                            $val = explode('|', $details['selected']);
-                            $val = $val[1];
+                            $valHold = 0;
+                            foreach ($details['selected'] as $selected) {
+                                $selected = explode('|', $selected);
+                                $selected = $selected[1];
+                                $valHold+=$selected;
+                            }
+                            $val = $valHold;
                         }
-                        if (isset($result[$key]['score'])){
-                            $result[$key]['score'] += $val;
-                        } else {
-                            $result[$key]['score'] = $val;
+                    }else{
+                        if(!isset($details['selected'])){
+                            dd($details);
                         }
+                        $val = explode('|', $details['selected']);
+                        $val = $val[1];
                     }
-                    foreach ($this->baseline[$key]['types'] as $rating => $limits) {
-                        if($result[$key]['score']>=$limits['low'] && $result[$key]['score']<=$limits['high']){
-                            $result[$key]['rating'] = $rating;
-                            $result['overall']['score'] += $limits['total'];
-                        }
+                    if (isset($result[$section]['score'])){
+                        $result[$section]['score'] += $val;
+                    } else {
+                        $result[$section]['score'] = $val;
                     }
                 }
-                //$result['overall']['score'] += $result[$key]['score'];
-                foreach ($this->baseline['overall']['types'] as $rating => $limits) {
-                    if($result['overall']['score']>=$limits['low'] && $result['overall']['score']<=$limits['high']){
-                        $result['overall']['rating'] = $rating;
+                foreach ($this->baseline[$section]['types'] as $rating => $limits) {
+                    if($result[$section]['score']>=$limits['low'] && $result[$section]['score']<=$limits['high']){
+                        $result[$section]['rating'] = $rating;
+                        $result['overall']['score'] += $limits['total'];
+                    }
+                }
+            }
+            //$result['overall']['score'] += $result[$section]['score'];
+            foreach ($this->baseline['overall']['types'] as $rating => $limits) {
+                if($result['overall']['score']>=$limits['low'] && $result['overall']['score']<=$limits['high']){
+                    $result['overall']['rating'] = $rating;
+                }
+            }
+        }else{
+            foreach ($this->quiz as $key => $value) {
+                if($key!=='screeners'){
+                    foreach ($value['pages'] as $page => $props) {
+                        foreach ($props['questions'] as $q => $details) {
+                            if(($details['type']=='checkbox' || $details['type']=='groupradio' || $details['type']=='slider') && is_array($details['selected'])){
+                                if(isset($details['calc'])){
+                                    if($details['calc']['type']=='average'){
+                                        $ave = [];
+                                        foreach ($details['selected'] as $selected) {
+                                            $selected = explode('|', $selected);
+                                            $selected = $selected[1];
+                                            $ave[]=$selected;
+                                        }
+                                        $val = array_sum($ave) / count($ave);
+                                    }elseif($details['calc']['type']=='normalize'){
+                                        $norm = 0;
+                                        foreach ($details['selected'] as $selected) {
+                                            $selected = explode('|', $selected);
+                                            $selected = $selected[1];
+                                            $norm+=$selected;
+                                        }
+                                        $val = ($norm/$details['calc']['value'])*count($details['selected']);
+                                    }
+                                }else{
+                                    $valHold = 0;
+                                    foreach ($details['selected'] as $selected) {
+                                        $selected = explode('|', $selected);
+                                        $selected = $selected[1];
+                                        $valHold+=$selected;
+                                    }
+                                    $val = $valHold;
+                                }
+                            }else{
+                                $val = explode('|', $details['selected']);
+                                $val = $val[1];
+                            }
+                            if (isset($result[$key]['score'])){
+                                $result[$key]['score'] += $val;
+                            } else {
+                                $result[$key]['score'] = $val;
+                            }
+                        }
+                        foreach ($this->baseline[$key]['types'] as $rating => $limits) {
+                            if($result[$key]['score']>=$limits['low'] && $result[$key]['score']<=$limits['high']){
+                                $result[$key]['rating'] = $rating;
+                                $result['overall']['score'] += $limits['total'];
+                            }
+                        }
+                    }
+                    //$result['overall']['score'] += $result[$key]['score'];
+                    foreach ($this->baseline['overall']['types'] as $rating => $limits) {
+                        if($result['overall']['score']>=$limits['low'] && $result['overall']['score']<=$limits['high']){
+                            $result['overall']['rating'] = $rating;
+                        }
                     }
                 }
             }

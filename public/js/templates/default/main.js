@@ -49,6 +49,9 @@ $(function() {
 $('.btn-q').click(function(){
 	$(window).off('beforeunload');
 });
+$('.btn-window').click(function(){
+	$(window).off('beforeunload');
+});
 $('button.info').click(function(){
 	$(window).off('beforeunload');
 });

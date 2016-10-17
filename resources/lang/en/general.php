@@ -79,6 +79,172 @@ Cyber Risk readiness, more than ever, is a core foundation element of digital in
 <h2>Driving your Cloud Maturity</h2>
 <p>This assessment enables you to measure cloud readiness in your business and provides you with some essential guidance in the development of your cloud business.</p>',
     '3startbut'=>'Start Here',
+        '3cloud-vision-and-strategy-passive-txt' => '
+    <ul>
+        <li>You are yet to create a fully defined cloud strategy</li>
+        <li>You are generally reacting to customer demand</li>
+        <li>Cloud is not an established part of your portfolio</li>
+        <li>You are struggling to generate revenue</li>
+        <li>And are yet to fully embrace a cloud future</li>
+    </ul>',
+    '3cloud-vision-and-strategy-tentative-txt' => '
+    <ul>
+        <li>You are in the process of building a cloud strategy</li>
+        <li>Your focus is typically on private cloud and on-premise solutions</li>
+        <li>You are yet to define a longer-term cloud strategy</li>
+        <li>Focus is on recurring revenue growth</li>
+        <li>Cloud business is run as a separate product line</li>
+    </ul>',
+    '3cloud-vision-and-strategy-committed-txt' => '
+    <ul>
+        <li>You have a defined cloud strategy for private and public solutions</li>
+        <li>You have a clear cloud business plan</li>
+        <li>There are dedicated cloud targets for the next two to three years</li>
+        <li>Cloud business operates its own P&amp;L</li>
+        <li>Sales hold fixed top-line cloud targets</li>
+    </ul>',
+    '3cloud-vision-and-strategy-accelerating-txt' => '
+    <ul>
+        <li>You have a defined cloud strategy and vision</li>
+        <li>Cloud forms the basis for overall decision making</li>
+        <li>Pricing is based on recurring revenues and lifetime value</li>
+        <li>Focus has turned to longer-term profitability</li>
+        <li>Dedicated presales, sales, and support for cloud</li>
+    </ul>',
+    '3cloud-vision-and-strategy-full-speed-txt' => '
+    <ul>
+        <li>You are delivering private and public cloud via multiple vendors</li>
+        <li>This includes hybrid cloud capabilities or technology hooks for hybrid cloud</li>
+        <li>Cloud underpins all investments and sales focus</li>
+        <li>Your company takes a longer-term perspective on business planning</li>
+        <li>Cloud forms the architecture of all solutions</li>
+    </ul>',
+    
+    '3processes-and-skill-sets-passive-txt' => '
+    <ul>
+        <li>Cloud is an emerging element of your business</li>
+        <li>Solutions are typically developed on an ad hoc basis</li>
+        <li>You are yet to develop tools or reusable methodologies</li>
+        <li>Monitoring are tools limited if they exist at all</li>
+        <li>Not yet in a position to offer SI services for cloud</li>
+    </ul>',
+    '3processes-and-skill-sets-tentative-txt' => '
+    <ul>
+        <li>You have some experience of cloud implementation</li>
+        <li>You are starting to develop cloud methodologies</li>
+        <li>There are some managed services offerings</li>
+        <li>SI in the form of hardware and software integration</li>
+        <li>Support services are beginning to be offered</li>
+    </ul>',
+    '3processes-and-skill-sets-committed-txt' => '
+    <ul>
+        <li>You are reusing implementation procedures and methodologies</li>
+        <li>Established managed services offerings</li>
+        <li>Ability to deliver analytics and optimization to customers</li>
+        <li>Delivering hybrid cloud, based on a range of vendor solutions</li>
+        <li>Customer support is now proactive and partner driven </li>
+    </ul>',
+    '3processes-and-skill-sets-accelerating-txt' => '
+    <ul>
+        <li>You have created processes and skills around reusable best practice</li>
+        <li>This includes reference architectures and code</li>
+        <li>Automation and predictive services are a central feature of managed services</li>
+        <li>One-to-many repeatable services are also a key feature</li>
+        <li>Support is now preemptive</li>
+    </ul>',
+    '3processes-and-skill-sets-full-speed-txt' => '
+    <ul>
+        <li>You have created and refined cloud automation</li>
+        <li>Managed services feature deep analytical capabilities</li>
+        <li>SI work has created reusable IP</li>
+        <li>Business is taking on or looking to take on larger-scale projects</li>
+        <li>Proactive support recommends improvement</li>
+    </ul>',
+    
+    '3technology-passive-txt' => '
+    <ul>
+        <li>You are yet to make significant investments in cloud technologies</li>
+        <li>No capability to manage complex hybrid environments</li>
+        <li>Reliance on support from vendors</li>
+        <li>Skills and tools in PaaS are minimal</li>
+        <li>Cloud services billed on a project or annual basis</li>
+    </ul>',
+    '3technology-tentative-txt' => '
+    <ul>
+        <li>You have addressed and deployed virtualization technology</li>
+        <li>You typically offer hosted private cloud solutions</li>
+        <li>You also offer SAN and NAS storage environments</li>
+        <li>PaaS offerings are still a few steps away</li>
+        <li>Orchestration tools are being explored</li>
+        <li>The ability to bill monthly, based on consumption, is also offered</li>
+    </ul>',
+    '3technology-committed-txt' => '
+    <ul>
+        <li>You have a well structured technology roadmap</li>
+        <li>You offer multitenant cloud services (IaaS and PaaS)</li>
+        <li>You connect applications across private and public infrastructure</li>
+        <li>Typically, you have started to offer software-defined storage</li>
+        <li>Orchestration tools like OpenStack are also being used </li>
+    </ul>',
+    '3technology-accelerating-txt' => '
+    <ul>
+        <li>You are offering manual or planned bursting</li>
+        <li>You have the ability to deliver hybrid cloud architectures </li>
+        <li>OpenStack skill-sets tested and deployed</li>
+        <li>Sophisticated dashboards allow hourly consumption monitoring</li>
+        <li>Defined horizontal and vertical propositions</li>
+    </ul>',
+    '3technology-full-speed-txt' => '
+    <ul>
+        <li>You have created an automated and redundant cloud infrastructure</li>
+        <li>Typically offer customers a choice of delivery options</li>
+        <li>Developed sophisticated hybrid cloud capabilities</li>
+        <li>OpenStack enhanced by automation tools</li>
+        <li>Billing on an hourly basis, across all cloud solutions and via a dashboard</li>
+    </ul>',
+    
+    '3sales-and-marketing-passive-txt' => '
+    <ul>
+        <li>You have a limited number of sales people focused on cloud</li>
+        <li>Sales and marketing still geared toward on-premise offerings</li>
+        <li>IT audience remains the key target</li>
+        <li>No cloud-specific targets have been created </li>
+        <li>Sale team incentivized by upfront commission</li>
+        <li>Reliance on outbound and general vendor marketing to drive leads</li>
+    </ul>',
+    '3sales-and-marketing-tentative-txt' => '
+    <ul>
+        <li>You are building cloud presales and delivery specialists</li>
+        <li>Commission structures based on first year subscriptions</li>
+        <li>Beginning to market and sell into specific targets and sectors</li>
+        <li>Started to explore digital marketing channels and tools</li>
+        <li>Still rely on vendor contributions or general awareness campaigns </li>
+    </ul>',
+    '3sales-and-marketing-committed-txt' => '
+    <ul>
+        <li>Cloud is now integrated into all sales team portfolios</li>
+        <li>Balance still retained between on-premise and new cloud business </li>
+        <li>Customers now asking for demos and proof-of-concepts</li>
+        <li>Metrics track marketing success against predetermined objectives</li>
+        <li>Started to customize syndicated content from vendors</li>
+    </ul>',
+    '3sales-and-marketing-accelerating-txt' => '
+    <ul>
+        <li>Cloud is now prominent in all sales team portfolios</li>
+        <li>Typically, still a mixture of upfront and ongoing commission structures</li>
+        <li>Cloud architecture is being sold across multiple delivery options</li>
+        <li>Fully utilizing automation of digital marketing</li>
+        <li>Marketing delivers prospects that have been guided through much of the sales cycle</li>
+    </ul>',
+    '3sales-and-marketing-full-speed-txt' => '
+    <ul>
+        <li>Sophisticated commission structures regardless of cloud delivery models</li>
+        <li>Selling solutions based on business outcomes</li>
+        <li>Business process and industry-specific expertise are becoming critical </li>
+        <li>Marketing leverages a combination of digital, social, and content-driven approaches</li>
+        <li>Recognized as a credible thought leader and strategic advisor </li>
+    </ul>',
+
     'passive'=>'Stage 1: Passive', //reactive
     'passivetxt'=>"Organizations at this stage in their cloud maturity process tend to be providing cloud at the request of their customers, or as a vendor reseller. As a result, fees are derived from referrals or from resale, and organizations are generally focused on project revenues, rather than longer-term recurring revenue streams. Organizations at this stage in their cloud strategy are yet to embrace a cloud future and as a result may struggle to generate profits in this area. There is no defined vision for cloud, but there is time to make this transition if key decision makers act now.",
     'passivetweet' => "I took the @HPE Agil-IT-y Assessment and it's shown me where I can improve. Interested? http://bit.ly/1Y6JAqa",
@@ -102,8 +268,11 @@ Cyber Risk readiness, more than ever, is a core foundation element of digital in
 
     //general
     'next'=>'Next',
+    'continue'=>'Continue with the Assessment',
     'of'=>'of',
     'youre'=>'You\'re ',
+    'your'=>'Your',
+    'areat'=>'are at',
     'fname'=>'First Name',
     'sname'=>'Surname',
     'email'=>'Email Address',

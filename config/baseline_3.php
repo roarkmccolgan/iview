@@ -5,28 +5,33 @@ return array(
         'types' => array(
             'Stage 1: Passive' => array(
                 'low' => 0,
-                'high' => 5.9,
-                'total' => 0
+                'high' => 6.24,
+                'total' => 0,
+                'copy' => 'general.3cloud-vision-and-strategy-passive-txt'
             ),
             'Stage 2: Tentative' => array(
-                'low' => 6,
-                'high' => 25,
-                'total' => 0
+                'low' => 6.25,
+                'high' => 11.24,
+                'total' => 0,
+                'copy' => 'general.3cloud-vision-and-strategy-tentative-txt'
             ),
             'Stage 3: Committed' => array(
-                'low' => 11,
-                'high' => 25,
-                'total' => 0
+                'low' => 11.25,
+                'high' => 16.24,
+                'total' => 0,
+                'copy' => 'general.3cloud-vision-and-strategy-committed-txt'
             ),
             'Stage 4: Accelerating' => array(
-                'low' => 16,
-                'high' => 25,
-                'total' => 0
+                'low' => 16.25,
+                'high' => 21.24,
+                'total' => 0,
+                'copy' => 'general.3cloud-vision-and-strategy-accelerating-txt'
             ),
             'Stage 5: Full Speed' => array(
-                'low' => 21,
+                'low' => 21.25,
                 'high' => 25,
-                'total' => 0
+                'total' => 0,
+                'copy' => 'general.3cloud-vision-and-strategy-full-speed-txt'
             )
         )
     ),
@@ -35,28 +40,33 @@ return array(
         'types' => array(
             'Stage 1: Passive' => array(
                 'low' => 0,
-                'high' => 5.9,
-                'total' => 0
+                'high' => 6.24,
+                'total' => 0,
+                'copy' => 'general.3processes-and-skill-sets-passive-txt'
             ),
             'Stage 2: Tentative' => array(
-                'low' => 6,
-                'high' => 25,
-                'total' => 0
+                'low' => 6.25,
+                'high' => 11.24,
+                'total' => 0,
+                'copy' => 'general.3processes-and-skill-sets-tentative-txt'
             ),
             'Stage 3: Committed' => array(
-                'low' => 11,
-                'high' => 25,
-                'total' => 0
+                'low' => 11.25,
+                'high' => 16.24,
+                'total' => 0,
+                'copy' => 'general.3processes-and-skill-sets-committed-txt'
             ),
             'Stage 4: Accelerating' => array(
-                'low' => 16,
-                'high' => 25,
-                'total' => 0
+                'low' => 16.25,
+                'high' => 21.24,
+                'total' => 0,
+                'copy' => 'general.3processes-and-skill-sets-accelerating-txt'
             ),
             'Stage 5: Full Speed' => array(
-                'low' => 21,
+                'low' => 21.25,
                 'high' => 25,
-                'total' => 0
+                'total' => 0,
+                'copy' => 'general.3processes-and-skill-sets-full-speed-txt'
             )
         )
     ),
@@ -65,28 +75,33 @@ return array(
         'types' => array(
             'Stage 1: Passive' => array(
                 'low' => 0,
-                'high' => 5.9,
-                'total' => 0
+                'high' => 6.24,
+                'total' => 0,
+                'copy' => 'general.3business-mix-passive-txt'
             ),
             'Stage 2: Tentative' => array(
-                'low' => 6,
-                'high' => 25,
-                'total' => 0
+                'low' => 6.25,
+                'high' => 11.24,
+                'total' => 0,
+                'copy' => 'general.3business-mix-tentative-txt'
             ),
             'Stage 3: Committed' => array(
-                'low' => 11,
-                'high' => 25,
-                'total' => 0
+                'low' => 11.25,
+                'high' => 16.24,
+                'total' => 0,
+                'copy' => 'general.3business-mix-committed-txt'
             ),
             'Stage 4: Accelerating' => array(
-                'low' => 16,
-                'high' => 25,
-                'total' => 0
+                'low' => 16.25,
+                'high' => 21.24,
+                'total' => 0,
+                'copy' => 'general.3business-mix-accelerating-txt'
             ),
             'Stage 5: Full Speed' => array(
-                'low' => 21,
+                'low' => 21.25,
                 'high' => 25,
-                'total' => 0
+                'total' => 0,
+                'copy' => 'general.3business-mix-full-speed-txt'
             )
         )
     ),
@@ -95,28 +110,33 @@ return array(
         'types' => array(
             'Stage 1: Passive' => array(
                 'low' => 0,
-                'high' => 5.9,
-                'total' => 0
+                'high' => 6.24,
+                'total' => 0,
+                'copy' => 'general.3sales-and-marketing-passive-txt'
             ),
             'Stage 2: Tentative' => array(
-                'low' => 6,
-                'high' => 25,
-                'total' => 0
+                'low' => 6.25,
+                'high' => 11.24,
+                'total' => 0,
+                'copy' => 'general.3sales-and-marketing-tentative-txt'
             ),
             'Stage 3: Committed' => array(
-                'low' => 11,
-                'high' => 25,
-                'total' => 0
+                'low' => 11.25,
+                'high' => 16.24,
+                'total' => 0,
+                'copy' => 'general.3sales-and-marketing-committed-txt'
             ),
             'Stage 4: Accelerating' => array(
-                'low' => 16,
-                'high' => 25,
-                'total' => 0
+                'low' => 16.25,
+                'high' => 21.24,
+                'total' => 0,
+                'copy' => 'general.3sales-and-marketing-accelerating-txt'
             ),
             'Stage 5: Full Speed' => array(
-                'low' => 21,
+                'low' => 21.25,
                 'high' => 25,
-                'total' => 0
+                'total' => 0,
+                'copy' => 'general.3sales-and-marketing-full-speed-txt'
             )
         )
     ),
@@ -137,7 +157,7 @@ return array(
             ),
             'Stage 3: Committed' => array(
                 'low' => 41,
-                'high' => 50.9,
+                'high' => 60.9,
                 'copy' => 'general.committedtxt',
                 'tweet' => 'general.committedtweet'
             ),

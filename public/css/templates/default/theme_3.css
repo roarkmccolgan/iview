@@ -54,7 +54,7 @@ h2.question{
 	text-align: left;
 	position: relative;
 }
-#msform fieldset, .splash {
+#msform fieldset, .splash, .sub-report {
 	background: #E6E6E6;
 	border: 0 none;
 	box-shadow: 0 0 6px rgba(0,0,0,0.5);
@@ -70,6 +70,11 @@ h2.question{
 }
 .splash {
 	margin-top: 20%;
+}
+.sub-report ul{
+	margin-left: 50px;
+	font-size: 120%;
+	margin-bottom: 30px;
 }
 .splash h1{
 	display: inline-block;

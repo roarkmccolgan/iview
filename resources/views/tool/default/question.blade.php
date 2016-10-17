@@ -6,6 +6,7 @@
 @section('head')
 @parent
 <meta name="description" content="">
+<meta name="_token" content="{!! csrf_token() !!}" />
 @stop
 
 @section('main')
@@ -43,7 +44,7 @@
                         @endforeach
                         </ul>
                         <!-- fieldsets -->
-                        <fieldset>
+                        <fieldset class="clearfix" id="formbody">
                             <div id="mask"></div>
                             <h2 class="fs-subtitle">Question {{$menu[$section]['pages']['page'.$page]['progress']}}</h2>
                             <h1 class="fs-title">{{$heading}}</h1>
@@ -96,90 +97,59 @@ jQuery(window).on("beforeunload", function(event){
 });
 $('#mask').hide(); //hidemask
 @if ($report)
-    var els;
-    if($('button.btn-q').length){
-        $('button.btn-q').click(function(e){
-            $(this).addClass('check');
-            e.preventDefault();
-            el = e.target;
-            setTimeout(
-                function() {
-                    var title = $(el).text();
-                    var val = $(el).val();
-                    var pos = $(el).position();
-                    var parent = $(el).parent("fieldset");
-                    var parentHeight = parent.css('height');
-                    var num = $('button.btn-q').length;
-                    var that = el;
-                    if(num>0){
-                        var start = 1;
-                        //inject info
-                        html = '<div class="repwrap">'+
-                                    '<div class="repmod">'+
-                                        '<h4 class="check">'+title+'</h4>'+
-                                        /*'<div class="rep-img">'+
-                                            '<img src="{{URL::to("/").'/'.$report['image']}}" alt="" width="80" height="80">'+
-                                        '</div>'+*/
-                                        '<div class="rep-text">'+
-                                            '{{addslashes($report['text'])}}'+
-                                        '</div>'+
-                                        '<div class="clearfix"></div>'+
-                                    '</div>'+
-                                    '<button class="btn btn-primary pull-right btn-lg" type="submit" value="'+val+'" name="answer">{{Lang::get('general.'.session('product.id').'next')}} <i class="icon-arrow_right"></i></button>'+
-                                '</div>';
-                        $(html).hide().appendTo(parent);
-                        
-                        //hide next buttton
-                        $('div.repwrap').find('button.btn.btn-primary.pull-right').hide();
-                        
-                        //move out of view
-                        $('div.repwrap').css({
-                                position : "absolute",
-                                top : pos.top,
-                                left: -90000
-                        });
-                        $('div.repwrap').show();
-                        //set original height for later
-                        var repheight = $('div.repmod').height();
-                        var headheight = $('div.repmod').find('h4').height();
-                        $(parent).css({height: repheight+70 });
-                        //set heigh to size of title
-                        $('div.repmod').height(headheight+10);
-                        //hide again
-                        //$('div.repwrap').hide();
-                        //move bak into view
-                        $('div.repwrap').css({
-                                left: 0
-                        });
-                        
-                        
-                        jQuery.each($('button.btn-q'), function( i, item ) {
-                            $(item).fadeOut('fast', function() {
-                                start++;
-                                if(num == start){                               
-                                    $('div.repwrap').fadeIn("fast",function(){
-                                        if(pos.top!=0){
-                                            $('div.repwrap').animate({
-                                                top: 0
-                                            }, 'slow', function() {
-                                                $('div.repmod').animate({ height: repheight },400,function(){
-                                                    $('div.repwrap').find('button.btn.btn-primary.pull-right').fadeIn("fast");
-                                                });
-                                            });
-                                        }else{
-                                            $('div.repmod').animate({ height: repheight },400,function(){
-                                                $('div.repwrap').find('button.btn.btn-primary.pull-right').fadeIn("fast");
-                                            });
-                                        }
-                                    });
-                                }
-                            });
-                        });
-                    }
-                },
-                500);
-        })
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+        }
+    });
+    function getSectionResults() {
+        return $.ajax({
+            url: '/api/results/{{$section}}',
+        });
     }
+    var daForm = $('#msform');
+    daForm.click(function(e){
+        e.preventDefault();
+        var parent = $('formbody');
+        var parentHeight = parent.css('height');
+        parent.css('height',parentHeight);
+        parent.children().fadeOut(300, function() { $(this).remove()});
+
+        //getContent
+        $('#mask').show();
+        getSectionResults().done(function(r) {
+            if (r) {
+                console.log(r);
+                $('#mask').hide();
+                var hasimage = '';
+                @if(isset($report['image']) && $report['image']!==false)
+                    hasimage = '<div class="rep-img">'+
+                                    '<img src="{{URL::to("/").'/'.$report['image']}}" alt="">'+
+                                '</div>';
+                @endif
+                html = '<div class="repwrap">'+
+                            '<div class="sectionresults">'+
+                                '<h4>Your {{$section}} is at 23</h4>'+
+                                hasimage+
+                                '<div class="rep-text">'+
+                                    '{{addslashes($report['text'])}}'+
+                                '</div>'+
+                                '<div class="clearfix"></div>'+
+                            '</div>'+
+                            '<button class="btn btn-primary pull-right btn-lg" type="submit" value="'+val+'" name="answer">{{Lang::get('general.next')}} <i class="icon-arrow_right"></i></button>'+
+                        '</div>';
+                $(html).hide().appendTo(parent);
+                $('div.repmod').animate({ height: repheight },400,function(){
+                    $('div.repwrap').find('button.btn.btn-primary.pull-right').fadeIn("fast");
+                });
+            } else {
+                console.log(r);
+            }
+        })
+        .fail(function(x) {
+            alert('Please refresh page and try again');
+        });
+    });
 @else
     $('button.btn-q').click(function(e){
             e.preventDefault();
