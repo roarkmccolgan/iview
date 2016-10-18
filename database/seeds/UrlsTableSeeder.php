@@ -28,5 +28,13 @@ class UrlsTableSeeder extends Seeder
             'urlable_type' => '\App\Tool',
             'created_at' => Carbon::now(),
         ]);
+        DB::table('urls')->insert([
+            'domain' => 'idcgauge.net',
+            'subdomain' => 'redhat',
+            'language_id' => 1,
+            'urlable_id' => 3,
+            'urlable_type' => '\App\Tool',
+            'created_at' => Carbon::now(),
+        ]);
     }
 }
