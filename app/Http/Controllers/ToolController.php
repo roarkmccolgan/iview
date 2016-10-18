@@ -235,6 +235,7 @@ class ToolController extends Controller
         $vars = array(
             'heading' => $this->result['overall']['rating'],
             'baseline' => session('baseline'),
+            'result' => session('result'),
             'sub1' => trans($this->baseline['overall']['types'][$this->result['overall']['rating']]['copy']),
             'class' => 'sec1',
             'quiz' => $this->quiz,
@@ -427,9 +428,6 @@ class ToolController extends Controller
                         }
                     }else{
                         $val = explode('|', $details['selected']);
-                        if(!isset($val[1])){
-                                    dd($details['selected']);
-                                }
                         $val = $val[1];
                     }
                     if (isset($result[$section]['score'])){
@@ -441,7 +439,7 @@ class ToolController extends Controller
                 foreach ($this->baseline[$section]['types'] as $rating => $limits) {
                     if($result[$section]['score']>=$limits['low'] && $result[$section]['score']<=$limits['high']){
                         $result[$section]['rating'] = $rating;
-                        $result['overall']['score'] += $limits['total'];
+                        $result['overall']['score'] += $result[$section]['score'];
                     }
                 }
             }
@@ -494,18 +492,17 @@ class ToolController extends Controller
                                 $result[$key]['score'] = $val;
                             }
                         }
-                        foreach ($this->baseline[$key]['types'] as $rating => $limits) {
-                            if($result[$key]['score']>=$limits['low'] && $result[$key]['score']<=$limits['high']){
-                                $result[$key]['rating'] = $rating;
-                                $result['overall']['score'] += $limits['total'];
-                            }
-                        }
                     }
-                    //$result['overall']['score'] += $result[$key]['score'];
-                    foreach ($this->baseline['overall']['types'] as $rating => $limits) {
-                        if($result['overall']['score']>=$limits['low'] && $result['overall']['score']<=$limits['high']){
-                            $result['overall']['rating'] = $rating;
-                        }
+                }
+                foreach ($this->baseline[$key]['types'] as $rating => $limits) {
+                    if($result[$key]['score']>=$limits['low'] && $result[$key]['score']<=$limits['high']){
+                        $result[$key]['rating'] = $rating;
+                        $result['overall']['score'] += $result[$key]['score'];
+                    }
+                }
+                foreach ($this->baseline['overall']['types'] as $rating => $limits) {
+                    if($result['overall']['score']>=$limits['low'] && $result['overall']['score']<=$limits['high']){
+                        $result['overall']['rating'] = $rating;
                     }
                 }
             }
