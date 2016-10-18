@@ -31,21 +31,13 @@
                         <div class="col-xs-10 col-xs-offset-1">
                             <div class="marker" style="left: {{$marker}}%"><i class="fa fa-arrow-down"></i> </div>
                             <div class="progress" style="">
+                                @foreach($baseline as $section=>$values)
+                                    @foreach($values['types'] as $stageName=>$props)
                                 <div class="progress-bar progress-bar-act" style="width: 20%">
-                                    <span>Time to Act</span>
+                                    <span>{{$stageName}}</span>
                                 </div>
-                                <div class="progress-bar progress-bar-commit" style="width: 20%">
-                                    <span>Time to Commit</span>
-                                </div>
-                                <div class="progress-bar progress-bar-invest" style="width: 20%">
-                                    <span>Time to Invest</span>
-                                </div>
-                                <div class="progress-bar progress-bar-refine" style="width: 20%">
-                                    <span>Time to Refine</span>
-                                </div>
-                                <div class="progress-bar progress-bar-accelerate" style="width: 20%">
-                                    <span>Time to Accelerate</span>
-                                </div>
+                                    @endforeach
+                                @endforeach
                             </div>
                         </div>
                     </div>
@@ -376,8 +368,8 @@
 @section('pagescript')
 @parent
 
-<script src="{{{ asset('js/plugins.js')}}}"></script>
-<script src="{{{ asset('js/main.js')}}}"></script>
+<script src="{{{ asset('js/templates/'.session('template').'/plugins.js')}}}"></script>
+<script src="{{{ asset('js/templates/'.session('template').'/main.js')}}}"></script>
 @if (isset($script))
 <script>
 $(function() {

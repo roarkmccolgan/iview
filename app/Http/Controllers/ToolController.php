@@ -199,7 +199,7 @@ class ToolController extends Controller
                 $title = session('questions.'.$section.'.pages.page1.title');
                 $rating = $this->result[$section]['rating'].' '.$this->result[$section]['score'];
                 $ratingcopy = trans($this->baseline[$section]['types'][$this->result[$section]['rating']]['copy']);
-                $next = '/quiz/'.key($questions).'/page1'; //fix this so a report can be provided at any stage?
+                $next = (key($questions)==null) ? '/quiz/complete': '/quiz/'.key($questions).'/page1'; //fix this so a report can be provided at any stage?
                 return view('tool.'.session('template').'.sectionresult',compact(['title','section','rating','ratingcopy','next']));
             }
             //dd(session('questions'));
@@ -234,6 +234,7 @@ class ToolController extends Controller
 
         $vars = array(
             'heading' => $this->result['overall']['rating'],
+            'baseline' => session('baseline'),
             'sub1' => trans($this->baseline['overall']['types'][$this->result['overall']['rating']]['copy']),
             'class' => 'sec1',
             'quiz' => $this->quiz,
@@ -425,10 +426,10 @@ class ToolController extends Controller
                             $val = $valHold;
                         }
                     }else{
-                        if(!isset($details['selected'])){
-                            dd($details);
-                        }
                         $val = explode('|', $details['selected']);
+                        if(!isset($val[1])){
+                                    dd($details['selected']);
+                                }
                         $val = $val[1];
                     }
                     if (isset($result[$section]['score'])){

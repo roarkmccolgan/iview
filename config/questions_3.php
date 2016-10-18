@@ -482,12 +482,12 @@ return array(
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'We allow scheduled "bursting" of virtual machines from dedicated hardware to public IaaS within our datacenters',
+                                'label'=>'We allow scheduled &quot;bursting&quot; of virtual machines from dedicated hardware to public IaaS within our datacenters',
                                 'value'=>2.5,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Allow scheduled and unscheduled "bursting," connecting to customers\' premises and third-party providers, load balancing, and auto scale capabilities',
+                                'label'=>'Allow scheduled and unscheduled &quot;bursting,&quot; connecting to customers\' premises and third-party providers, load balancing, and auto scale capabilities',
                                 'value'=>3.13,
                                 'checked'=>false
                             )

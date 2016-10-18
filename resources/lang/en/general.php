@@ -161,7 +161,7 @@ Cyber Risk readiness, more than ever, is a core foundation element of digital in
         <li>Proactive support recommends improvement</li>
     </ul>',
     
-    '3technology-passive-txt' => '
+    '3business-mix-passive-txt' => '
     <ul>
         <li>You are yet to make significant investments in cloud technologies</li>
         <li>No capability to manage complex hybrid environments</li>
@@ -169,7 +169,7 @@ Cyber Risk readiness, more than ever, is a core foundation element of digital in
         <li>Skills and tools in PaaS are minimal</li>
         <li>Cloud services billed on a project or annual basis</li>
     </ul>',
-    '3technology-tentative-txt' => '
+    '3business-mix-tentative-txt' => '
     <ul>
         <li>You have addressed and deployed virtualization technology</li>
         <li>You typically offer hosted private cloud solutions</li>
@@ -178,7 +178,7 @@ Cyber Risk readiness, more than ever, is a core foundation element of digital in
         <li>Orchestration tools are being explored</li>
         <li>The ability to bill monthly, based on consumption, is also offered</li>
     </ul>',
-    '3technology-committed-txt' => '
+    '3business-mix-committed-txt' => '
     <ul>
         <li>You have a well structured technology roadmap</li>
         <li>You offer multitenant cloud services (IaaS and PaaS)</li>
@@ -186,7 +186,7 @@ Cyber Risk readiness, more than ever, is a core foundation element of digital in
         <li>Typically, you have started to offer software-defined storage</li>
         <li>Orchestration tools like OpenStack are also being used </li>
     </ul>',
-    '3technology-accelerating-txt' => '
+    '3business-mix-accelerating-txt' => '
     <ul>
         <li>You are offering manual or planned bursting</li>
         <li>You have the ability to deliver hybrid cloud architectures </li>
@@ -194,7 +194,7 @@ Cyber Risk readiness, more than ever, is a core foundation element of digital in
         <li>Sophisticated dashboards allow hourly consumption monitoring</li>
         <li>Defined horizontal and vertical propositions</li>
     </ul>',
-    '3technology-full-speed-txt' => '
+    '3business-mix-full-speed-txt' => '
     <ul>
         <li>You have created an automated and redundant cloud infrastructure</li>
         <li>Typically offer customers a choice of delivery options</li>
