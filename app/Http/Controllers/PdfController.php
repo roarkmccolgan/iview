@@ -67,9 +67,21 @@ class PdfController extends Controller
 
 		    ] //As a percent, "33%"
 		]);
+		$vars = [];
+		$count = 0;
+		foreach (config('baseline_'.session('product.id')) as $section => $values) {
+			$vars['sections'][] = [
+				'title' => trans(session('product.alias').'.'.$section.'.title'),
+				'rating' => trans(session('product.alias').'.'.session('result.'.$section.'.rating')),
+				'score' => session('result.'.$section.'.score'),
+				'paragraph' => trans(session('product.alias').'.'.$section.'.'.session('result.'.$section.'.rating'))
+			];
 
-        $pdf = PDF::loadView('tool.default.report.report')->setOption('margin-top', 0)->setOption('margin-left', 0)->setOption('margin-right', 0)->setOption('window-status','chartrendered');
+		}
+
+        $pdf = PDF::loadView('tool.default.report.report',$vars)->setOption('margin-top', 0)->setOption('margin-left', 0)->setOption('margin-right', 0)->setOption('window-status','chartrendered');
 		return $pdf->inline('invoice.pdf');
-		//return view('tool.default.report.report');
+
+		//return view('tool.default.report.report',$vars);
     }
 }

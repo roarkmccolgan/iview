@@ -22,7 +22,7 @@ class RouteByURL
         if ($url) {
             $url->urlable->load('company');
 
-            $request->session()->put('product', ['type'=>$url->urlable_type, 'id'=>$url->urlable_id]);
+            $request->session()->put('product', ['type'=>$url->urlable_type, 'id'=>$url->urlable_id, 'alias'=>$url->urlable->alias]);
             $request->session()->put('locale', $url->language->abbreviation);
             $request->session()->put('url', 'http://' . $request->tool.'.'.$url->domain);
             $request->session()->put('host', $url->urlable->domain);

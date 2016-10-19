@@ -219,15 +219,16 @@ class ToolController extends Controller
         if($localQuestions=='es' || $localQuestions=='fr' || $localQuestions=='de' || $localQuestions=='it'){
             $btnclass = 'lang';
         }
-        if(strrpos($this->result['overall']['rating'], '1', 6)!==false){
+        $marker = 3;
+        if(strrpos($this->result['overall']['rating'], '1', 5)!==false){
             $marker = 3;
-        }else if(strrpos($this->result['overall']['rating'], '2', 6)!==false){
-            $marker = 26;
-        }else if(strrpos($this->result['overall']['rating'], '3', 6)!==false){
+        }else if(strrpos($this->result['overall']['rating'], '2', 5)!==false){
+            $marker = 25;
+        }else if(strrpos($this->result['overall']['rating'], '3', 5)!==false){
             $marker = 49;
-        }else if(strrpos($this->result['overall']['rating'], '4', 6)!==false){
+        }else if(strrpos($this->result['overall']['rating'], '4', 5)!==false){
             $marker = 72;
-        }else if(strrpos($this->result['overall']['rating'], '5', 6)!==false){
+        }else if(strrpos($this->result['overall']['rating'], '5', 5)!==false){
             $marker = 93;
         }
         
