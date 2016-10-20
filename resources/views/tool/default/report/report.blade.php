@@ -51,29 +51,24 @@
 		.pb {page-break-before: always;}
 	</style>
 	<body style="margin: 0; padding: 0;">
+		@if(isset($introImage))
 		<table class="header" style="width: 100%;" cellpadding="0" cellspacing="0">
 			<tr>
-				<td style="width: 160mm; height: 25mm; background-color: #003F7D;">
-					<h1>Cloud Development</h1>
-					<h2>Advancing your maturity</h2>
-				</td>
-				<td>
-					<img src="{{session('url')}}/images/report/idclogo.jpg" style="display: block; width: 36mm; height: 12mm; margin-left: 5mm; margin-top: 2mm;">
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2"><img src="{{session('url')}}/css/templates/default/img/report1.jpg" style="display: block; width: 100%;"></td>
+				<td colspan="2"><img src="{{session('url')}}/images/tools/{{session('product.id')}}/{{$introImage}}" style="display: block; width: 210mm; margin-top: -5mm"><!-- report1.jpg --></td>
 			</tr>
 		</table>
+		@endif
+		
+		@if($introChart)
 		<div style="float: left; margin-left: 10mm; width: 90mm;">
 			<h2>Introduction</h2>
 			{!!trans(session('product.alias').'.introduction')!!}
 		</div>
-		<div id="stocks-div" style="height: 110mm; width:85mm; margin:5mm; background-color: red; float: left">
+		<div id="stocks-div" class="graph" style="height: 110mm; width:85mm; margin:5mm; background-color: red; float: left">
 			
 		</div>
 		@columnchart('Stocks', 'stocks-div')
-		<div class="pb"></div>
+		@endif
 
 		@foreach($sections as $key=>$section)
 		<div style="margin-left: 10mm; width: 185mm; padding-top: 5mm">
@@ -81,10 +76,13 @@
 			<h4>{{$section['rating']}}</h4>
 			{!!$section['paragraph']!!}
 		</div>
-		<div class="pb"></div>
 		@endforeach
 		<script type="text/javascript">
-			function chartReady(event, chart){
+			var graphs = document.getElementsByClassName("graph");
+			if(graphs.length>0)
+				function chartReady(event, chart){
+					window.status = 'chartrendered';
+			}else{
 				window.status = 'chartrendered';
 			}
 		</script>

@@ -11,19 +11,26 @@
 @section('main')
 <div class="container">
     <div class="row">
-        <div class="col-xs-8 col-xs-offset-2">
+        <div class="col-md-8 col-md-offset-2">
             <div class="splash">
-                <h1>
-                    <span class="logo"><div class="icon-{{session('company.alias')}}" style="width: 180px; height: 51px" ></div></span>
-                    {{Lang::get('general.'.$tool->id.'title')}}
-                </h1>
-                <div class="icon-idc" class="pull-right" style="width: 180px; height: 51px; margin-left: 10px; margin-top: 20px; float: right; vertical-align: middle;" ></div>
-                <div class="clearfix"></div>
-                <div class="intro">{!!Lang::get('general.'.$tool->id.'landing')!!}</div>
-                <div class="action">
-                <a href="{{'quiz/'.Session::get('startSection').'/page1'}}" class="btn btn-primary btn-lg pull-right">{{Lang::get('general.'.$tool->id.'startbut')}} &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-right"></i></a>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>
+                            <span class="logo"><div class="icon-idc" class="pull-right" style="width: 180px; height: 51px;" ></div></span>
+                            {{Lang::get('general.'.$tool->id.'title')}}
+                        </h1>
+                    </div>
+                    <div class="col-md-8 intro">
+                        {!!Lang::get('general.'.$tool->id.'landing')!!}
+                    </div>
+                    <div class="col-md-4 col-md-offset-0 col-xs-4 col-xs-offset-4 action">
+                        <a href="{{'quiz/'.Session::get('startSection').'/page1'}}" class="btn btn-primary btn-lg">{{Lang::get('general.'.$tool->id.'startbut')}} &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-right"></i></a>
+                    </div>
+                    <div class="col-xs-12 sponsor">
+                        <small>Sponsored by</small><br/>
+                        <div class="icon-{{session('company.alias')}}" style="width: 180px; height: 51px; margin: 0 auto; margin-top: 5px;" ></div>
+                    </div>
                 </div>
-                <div class="clearfix"></div>
             </div>   
         </div>
     </div>

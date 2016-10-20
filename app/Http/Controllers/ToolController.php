@@ -195,12 +195,16 @@ class ToolController extends Controller
 
             //check if there is a mini report
             if(null !== session('questions.'.$section.'.sub-report') && session('questions.'.$section.'.sub-report')!==false){
+                $this->loadQuestions();
                 $this->getCalcResults($section);
+                $menu = $this->menu;
+                $page = $page;
                 $title = session('questions.'.$section.'.pages.page1.title');
-                $rating = $this->result[$section]['rating'].' '.$this->result[$section]['score'];
+                $rating = trans(session('product.alias').'.'.$this->result[$section]['rating']);
+                $ratingClass = 'icon '.$section;
                 $ratingcopy = trans($this->baseline[$section]['types'][$this->result[$section]['rating']]['copy']);
                 $next = (key($questions)==null) ? '/quiz/complete': '/quiz/'.key($questions).'/page1'; //fix this so a report can be provided at any stage?
-                return view('tool.'.session('template').'.sectionresult',compact(['title','section','rating','ratingcopy','next']));
+                return view('tool.'.session('template').'.sectionresult',compact(['menu','page','title','section','rating','ratingClass','ratingcopy','next']));
             }
             //dd(session('questions'));
             //else do carry on or complete
@@ -219,30 +223,17 @@ class ToolController extends Controller
         if($localQuestions=='es' || $localQuestions=='fr' || $localQuestions=='de' || $localQuestions=='it'){
             $btnclass = 'lang';
         }
-        $marker = 3;
-        if(strrpos($this->result['overall']['rating'], '1', 5)!==false){
-            $marker = 3;
-        }else if(strrpos($this->result['overall']['rating'], '2', 5)!==false){
-            $marker = 25;
-        }else if(strrpos($this->result['overall']['rating'], '3', 5)!==false){
-            $marker = 49;
-        }else if(strrpos($this->result['overall']['rating'], '4', 5)!==false){
-            $marker = 72;
-        }else if(strrpos($this->result['overall']['rating'], '5', 5)!==false){
-            $marker = 93;
-        }
-        
 
         $vars = array(
-            'heading' => $this->result['overall']['rating'],
+            'heading' => trans(session('product.alias').'.overall.title'),
+            'result' => trans(session('product.alias').'.'.$this->result['overall']['rating']),
             'baseline' => session('baseline'),
-            'result' => session('result'),
+            'fullresult' => session('result'),
             'sub1' => trans($this->baseline['overall']['types'][$this->result['overall']['rating']]['copy']),
             'class' => 'sec1',
             'quiz' => $this->quiz,
             'source' => session('source'),
             'btnclass'=>$btnclass,
-            'marker' => $marker
         );
         return view('tool.'.session('template').'.complete',$vars);
     }

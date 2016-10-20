@@ -25,11 +25,26 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-8 col-xs-offset-2">
-                <div class="sub-report clearfix">
+                <!-- progressbar -->
+                        <ul id="progressbar">
+                        @foreach ($menu as $key=>$pages)
+                            @if($pages['display'])
+                            <li class="{{$pages['class']}} {{$pages['complete'] || $key==$section ? 'active':''}}" style="width: {{100/count($menu)}}%">
+                                <!-- {{$key}} -->
+                                <ul>
+                                @foreach ($pages['pages'] as $pkey => $qpage)
+                                    <li class="{{$qpage['done'] || ($pkey == 'page'.$page && $key==$section)? 'done':''}}"></li>
+                                @endforeach
+                                </ul>
+                            </li>
+                            @endif
+                        @endforeach
+                        </ul>
+                <div class="sub-report clearfix silverStone">
                     <h2 class="fs-subtitle">Results</h2>
                     <h1 class="fs-title">{{$title}}</h1>
                     <hr>
-                    <h2 class="question">{{Lang::get('general.your')}} {{$title}} {{Lang::get('general.areat')}} {{$rating}}</h2>
+                    <h2 class="result {{isset($ratingClass) ? $ratingClass: ''}}">{{Lang::get('general.your')}} {{$title}} {{Lang::get('general.areat')}} {{$rating}}</h2>
                     {!!$ratingcopy!!}
                     <a href="{{$next}}" class="btn btn-primary pull-right btn-lg btn-window">{{Lang::get('general.continue')}} <i class="fa fa-arrow-circle-right"></i></a>
                 </div>

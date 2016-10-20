@@ -78,8 +78,10 @@ class PdfController extends Controller
 			];
 
 		}
+		$vars['introImage'] = trans(session('product.alias').'.introduction-image');
+		$vars['introChart'] = false;
 
-        $pdf = PDF::loadView('tool.default.report.report',$vars)->setOption('margin-top', 0)->setOption('margin-left', 0)->setOption('margin-right', 0)->setOption('window-status','chartrendered');
+        $pdf = PDF::loadView('tool.default.report.report',$vars)->setOption('margin-top', 30)->setOption('margin-left', 0)->setOption('margin-right', 0)->setOption('window-status','chartrendered')->setOption('header-html','http://redhat.idcgauge.net//template/default/report/header')->setOption('header-spacing',5);
 		return $pdf->inline('invoice.pdf');
 
 		//return view('tool.default.report.report',$vars);

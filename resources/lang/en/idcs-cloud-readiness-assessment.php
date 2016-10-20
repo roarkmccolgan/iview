@@ -12,6 +12,7 @@ return array(
             Partners taking this passive approach must make a decision to either embrace cloud as a fundamental direction for their business, or find themselves fighting for survival faster than they realize.
         </p>
     ',
+    'introduction-image' => 'report1.jpg',
     'overall' => array(
         'title'=>'Overall Cloud Partner Maturity',
         'stage1'=>'

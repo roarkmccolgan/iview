@@ -31,9 +31,9 @@ class ToolTableSeeder extends Seeder
             'created_at' => Carbon::now(),
         ]);
         DB::table('tools')->insert([
-            'alias' => 'idcs-cyber-risk-assessment',
-            'title' => 'Red Hat Cloud Readiness',
-            'sub_title' => 'Driving your Cloud Maturity',
+            'alias' => 'idcs-cloud-readiness-assessment',
+            'title' => 'IDC\'s Cloud Readiness Assessment',
+            'sub_title' => 'Driving Cloud Development',
             'company_id' => 4,
             'gapropertyid' => 'UA-156016-34',
             'template' => 'default',

@@ -19,7 +19,7 @@ html {
 }
 
 body {
-	font-family: "adelle-sans",Arial,Helvetica,sans-serif;
+	font-family: Overpass, "Trebuchet MS", Helvetica, sans-serif;
 	background-color: transparent;
 	font-size: 14px;
 	height: 100%;
@@ -37,10 +37,28 @@ h2{
 	font-size: 15px;
 	margin-bottom: 20px;
 }
-h2.question{
+h2.question, h2.result{
 	font-weight: normal;
-	color:#000000;
-	font-size: 1.6em;
+	color:#FFF;
+	font-size: 1.2em;
+	margin-bottom: 30px;
+}
+h2.result.icon{
+	padding-left: 50px;
+	min-height: 40px;
+	background: url(../../../images/tools/default/icons/strategy.png) no-repeat 0 50%;
+}
+h2.result.icon.cloud-vision-and-strategy{
+	background-image: url(../../../images/tools/default/icons/strategy.png);
+}
+h2.result.icon.processes-and-skill-sets{
+	background-image: url(../../../images/tools/default/icons/processes.png);
+}
+h2.result.icon.business-mix{
+	background-image: url(../../../images/tools/default/icons/infrastructure.png);
+}
+h2.result.icon.sales-and-marketing{
+	background-image: url(../../../images/tools/default/icons/sales.png);
 }
 .navbar{
 	border-radius: 0;
@@ -53,6 +71,9 @@ h2.question{
 	margin: 10px auto 30px auto;
 	text-align: left;
 	position: relative;
+}
+#msform fieldset{
+	min-height: 90%;
 }
 #msform fieldset, .splash, .sub-report {
 	background: #E6E6E6;
@@ -68,14 +89,80 @@ h2.question{
 	/*stacking fieldsets above each other*/
 	/*position: absolute;*/
 }
+.silverStone, #msform .silverStone {
+    background: #989898;
+    background: 
+        linear-gradient(to bottom, rgba(100,100,100,0.70) 0%, rgba(0,0,0,0.70) 100%),
+        radial-gradient(at top center, rgba(100,100,100,0.40) 0%, rgba(0,0,0,0.40) 120%);
+    background-blend-mode: multiply,multiply;
+}
+#msform .dementor {
+  background: 
+      linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%),
+      linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+  background-blend-mode: multiply;
+}
+#msform .underTheEarth {
+    background-image: radial-gradient(50% 150%, #787B7D 5%, #4B5052 100%);
+}
+#msform .cosmos {
+    background-color: #797572;
+    background-image: 
+        linear-gradient(-173deg, rgba(255,255,255,0.20) 0%, #000000 100%),
+        linear-gradient(72deg, rgba(255,255,255,0.25) 25%, rgba(0,0,0,0.25) 100%),
+        radial-gradient(47% 102%, rgba(255,255,255,0.50) 0%, rgba(21,24,32,0.60) 120%);
+    background-blend-mode: multiply;
+}
+#msform .jupiter {
+background-image: linear-gradient(-180deg, #504D48 5%, #33342F 96%);
+}#msform .escape {
+background: #3E3E3E;
+background-image: radial-gradient(at 50% -16%, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0.50) 190%);
+background-blend-mode: normal,multiply;
+}
+#msform hr{
+	border-top: 1px solid #666
+}
 .splash {
 	margin-top: 20%;
 }
 .sub-report ul{
-	margin-left: 50px;
-	font-size: 120%;
+	margin-left: 20px;
 	margin-bottom: 30px;
+	list-style: none;
 }
+.sub-report li{
+	color: #A2A2A2;
+}
+.sub-report li.icon{
+	padding-left: 50px;
+	padding-top: 5px;
+	min-height: 40px;
+	margin-bottom: 10px;
+	background: url(../../../images/tools/default/icons/strategy.png) no-repeat 0 50%;
+}
+.sub-report li.icon.target{
+	background-image: url(../../../images/tools/default/icons/target.png);
+}
+.sub-report li.icon.growth{
+	background-image: url(../../../images/tools/default/icons/growth.png);
+}
+.sub-report li.icon.future{
+	background-image: url(../../../images/tools/default/icons/future.png);
+}
+.sub-report li.icon.revenue{
+	background-image: url(../../../images/tools/default/icons/revenue.png);
+}
+.sub-report li.icon.time{
+	background-image: url(../../../images/tools/default/icons/time.png);
+}
+.sub-report li.icon.data{
+	background-image: url(../../../images/tools/default/icons/data.png);
+}
+.sub-report li.icon.cloud{
+	background-image: url(../../../images/tools/default/icons/cloud.png);
+}
+
 .splash h1{
 	display: inline-block;
 	font-family: "adelle-sans",Arial,Helvetica,sans-serif;
@@ -98,14 +185,15 @@ span.logo{
 	margin-right: 20px;
 	padding-right: 20px;
 }
-.splash .intro{
-	float: left;
-	width: 60%;
-	padding-top: 20px;
+.intro{
+	padding-top: 40px;
 }
-.splash .action{
-	padding-top: 80px;
-	padding-right: 35px;
+.action{
+	padding-top: 40px;
+}
+.sponsor{
+	text-align: center;
+	padding-top: 30px;
 }
 
 /*inputs*/
@@ -143,22 +231,26 @@ span.logo{
 	display: block;
 	border: none;
 	text-align: left;
-	background: #FFFFFF;
+	/*background: #FFFFFF;
 	background-image: -webkit-linear-gradient(top, #FFFFFF, #EEEEEE);
 	background-image: -moz-linear-gradient(top, #FFFFFF, #EEEEEE);
 	background-image: -ms-linear-gradient(top, #FFFFFF, #EEEEEE);
 	background-image: -o-linear-gradient(top, #FFFFFF, #EEEEEE);
-	background-image: linear-gradient(to bottom, #FFFFFF, #EEEEEE);
+	background-image: linear-gradient(to bottom, #FFFFFF, #EEEEEE);*/
+
+	border: 1px solid #FFF;
+	background: transparent;
+	
 	-webkit-border-radius: 7;
 	-moz-border-radius: 7;
 	border-radius: 7px;
 	-webkit-box-shadow: 0px 0px 3px #afafaf;
 	-moz-box-shadow: 0px 0px 3px #afafaf;
 	box-shadow: 0px 0px 3px #afafaf;
-	color: #666666;
+	color: #A2A2A2;
 	padding: 10px 20px 10px 20px;
 	text-decoration: none;
-	font-weight: 100;
+	font-weight: lighter;
 	margin: 15px auto;
 	width: 90%;
 }
@@ -166,19 +258,22 @@ span.logo{
 	display: block;
 	position: relative;
 	padding: 15px;
-	background: #FFFFFF;
+	/*background: #FFFFFF;
 	background-image: -webkit-linear-gradient(top, #FFFFFF, #EEEEEE);
 	background-image: -moz-linear-gradient(top, #FFFFFF, #EEEEEE);
 	background-image: -ms-linear-gradient(top, #FFFFFF, #EEEEEE);
 	background-image: -o-linear-gradient(top, #FFFFFF, #EEEEEE);
-	background-image: linear-gradient(to bottom, #FFFFFF, #EEEEEE);
+	background-image: linear-gradient(to bottom, #FFFFFF, #EEEEEE);*/
+	border: 1px solid #FFF;
+	background: transparent;
+
 	-webkit-border-radius: 7;
 	-moz-border-radius: 7;
 	border-radius: 7px;
 	-webkit-box-shadow: 0px 0px 3px #666666;
 	-moz-box-shadow: 0px 0px 3px #666666;
 	box-shadow: 0px 0px 3px #666666;
-	color: #666666;
+	color: #A2A2A2;
 	font-weight: normal;
 	cursor: pointer;
 }
@@ -273,7 +368,7 @@ span.instruct {
 }
 .fs-subtitle {
 	font-weight: normal;
-	color: #666;
+	color: #FFF;
 	margin-bottom: 5px;
 	margin-top: 0px;
 }
@@ -371,21 +466,24 @@ form.clearfix label{
 .trans{
 	color: white;
 }
+.trans .silverStone{
+	padding: 20px 0;
+}
 .trans h1{
 	margin-top: 5px;
-	font-size: 45px;
+	font-size: 28px;
 	color: #CC0000;
-	font-family: montserrat;
-	text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+	margin-bottom: 25px;
 }
 .trans h2{
 	font-size: 25px;
-	margin-bottom: 0;
+	margin-bottom: 10px;
+	margin-top: 5px;
 }
 .trans h3{
 	font-size: 18px;
 	margin-top: 10px;
-	margin-bottom: 30px;
+	margin-bottom: 0px;
 	font-weight: lighter;
 	width: 70%;
 }
@@ -400,6 +498,7 @@ form.clearfix label{
 	margin: 0 auto;
 	margin-bottom: 40px;
 }
+
 .footer {
 	position: absolute;
 	bottom: 0;

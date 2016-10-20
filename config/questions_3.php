@@ -541,43 +541,6 @@ return array(
                         'name'=>'q13',
                         'options'=>array(
                             array(
-                                'label'=>'Minimal capabilities in this area',
-                                'value'=>0.63,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'We only offer managed services on traditional hosted databases',
-                                'value'=>1.25,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'We offer managed and/or hosted middleware (e.g., Java) as a service to external customers',
-                                'value'=>1.88,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'We have started testing with PaaS modules (e.g., Red Hat OpenShift, Cloud Foundry, etc.)',
-                                'value'=>2.5,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'Container management tools in production (Red Hat OpenShift, Kubernetes, Docker Swarm) and developer evangelists to educate customers',
-                                'value'=>3.13,
-                                'checked'=>false
-                            )
-                        )
-                    )
-                )
-            ),
-            'page6' => array(
-                'title' => 'Business Mix',
-                'questions' => array(
-                    'q14'=>array(
-                        'type'=>'button',
-                        'question'=>'What is the level of sophistication in the storage infrastructure capabilities?',
-                        'name'=>'q14',
-                        'options'=>array(
-                            array(
                                 'label'=>'Dedicated traditional DAS or internal storage hosting',
                                 'value'=>0.63,
                                 'checked'=>false
@@ -606,13 +569,13 @@ return array(
                     )
                 )
             ),
-            'page7' => array(
+            'page6' => array(
                 'title' => 'Business Mix',
                 'questions' => array(
-                    'q15'=>array(
+                    'q14'=>array(
                         'type'=>'button',
                         'question'=>'What is the level of expertise in OpenStack orchestration tools?',
-                        'name'=>'q15',
+                        'name'=>'q14',
                         'options'=>array(
                             array(
                                 'label'=>'We have minimal capabilities',
@@ -643,13 +606,13 @@ return array(
                     )
                 )
             ),
-            'page8' => array(
+            'page7' => array(
                 'title' => 'Business Mix',
                 'questions' => array(
-                    'q16'=>array(
+                    'q15'=>array(
                         'type'=>'button',
                         'question'=>'What is the level of your datacenter sophistication?',
-                        'name'=>'q16',
+                        'name'=>'q15',
                         'options'=>array(
                             array(
                                 'label'=>'We run equipment in one co-location facility',
@@ -680,13 +643,13 @@ return array(
                     )
                 )
             ),
-            'page9' => array(
+            'page8' => array(
                 'title' => 'Business Mix',
                 'questions' => array(
-                    'q17'=>array(
+                    'q16'=>array(
                         'type'=>'button',
                         'question'=>'What are your organization\'s capabilities in terms of your billing engine?',
-                        'name'=>'q17',
+                        'name'=>'q16',
                         'options'=>array(
                             array(
                                 'label'=>'Billing is done annually based on the annual contract and annual audit',
@@ -728,10 +691,10 @@ return array(
             'page1' => array(
                 'title' => 'Sales and Marketing',
                 'questions' => array(
-                    'q18'=>array(
+                    'q17'=>array(
                         'type'=>'button',
                         'question'=>'How would you describe the sophistication of your cloud marketing strategy?',
-                        'name'=>'q18',
+                        'name'=>'q17',
                         'options'=>array(
                             array(
                                 'label'=>'We rely on leads from our vendor partners and traditional outbound marketing to drive business',
@@ -769,10 +732,10 @@ return array(
             'page2' => array(
                 'title' => 'Sales and Marketing',
                 'questions' => array(
-                    'q19'=>array(
+                    'q18'=>array(
                         'type'=>'button',
                         'question'=>'How would you describe the sophistication of your cloud marketing tactics?',
-                        'name'=>'q19',
+                        'name'=>'q18',
                         'options'=>array(
                             array(
                                 'label'=>'No tracking of marketing success or specific measurable goals',
@@ -806,10 +769,10 @@ return array(
             'page3' => array(
                 'title' => 'Sales and Marketing',
                 'questions' => array(
-                    'q20'=>array(
+                    'q19'=>array(
                         'type'=>'button',
                         'question'=>'How does your organization market and sell to specific user groups (personas) within your target customer base?',
-                        'name'=>'q20',
+                        'name'=>'q19',
                         'options'=>array(
                             array(
                                 'label'=>'Our sales teams primarily sell to the IT audience and we market primarily to the IT audience as well',
@@ -840,13 +803,13 @@ return array(
                     )
                 )
             ),
-            'page3' => array(
+            'page4' => array(
                 'title' => 'Sales and Marketing',
                 'questions' => array(
-                    'q21'=>array(
+                    'q20'=>array(
                         'type'=>'button',
                         'question'=>'What is the sophistication of your sales structure?',
-                        'name'=>'q21',
+                        'name'=>'q20',
                         'options'=>array(
                             array(
                                 'label'=>'A few cloud sales specialists, while the rest of the team is still focused on the on-premise business',
@@ -877,13 +840,50 @@ return array(
                     )
                 )
             ),
-            'page4' => array(
+            'page5' => array(
                 'title' => 'Sales and Marketing',
                 'questions' => array(
-                    'q23'=>array(
+                    'q21'=>array(
+                        'type'=>'button',
+                        'question'=>'How does your organization compensate sales professionals for cloud and recurring revenue services?',
+                        'name'=>'q21',
+                        'options'=>array(
+                            array(
+                                'label'=>'Sales staff have an overall target regardless of on-premise versus cloud',
+                                'value'=>0.83,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'We focus on upfront compensation: we pay the salesperson a commission on each deal including first year subscription or license fees',
+                                'value'=>1.67,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'We focus on compensation over the lifetime of the customer: we pay the salesperson a percentage commission on all revenue, recurring or otherwise',
+                                'value'=>2.5,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'We have a mix of upfront and ongoing commission',
+                                'value'=>3.33,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'A mix of upfront and ongoing commission in addition to specific KPIs such as customer satisfaction, new customer growth, and renewal rates',
+                                'value'=>4.17,
+                                'checked'=>false
+                            )
+                        )
+                    )
+                )
+            ),
+            'page6' => array(
+                'title' => 'Sales and Marketing',
+                'questions' => array(
+                    'q22'=>array(
                         'type'=>'button',
                         'question'=>'How does your organization measure customer satisfaction?',
-                        'name'=>'q23',
+                        'name'=>'q22',
                         'options'=>array(
                             array(
                                 'label'=>'We do not, or at a very basic level through renewals of existing customers',

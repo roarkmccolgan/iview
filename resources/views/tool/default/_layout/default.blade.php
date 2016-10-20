@@ -9,8 +9,12 @@
 		
 		<!-- TypeKit -->
 		<script src="https://use.typekit.net/xod1duq.js"></script>
-		<script>try{Typekit.load({ async: true });}catch(e){}</script>
-
+		@if(session('product.id')==1)
+			<script>try{Typekit.load({ async: true });}catch(e){}</script>
+		@endif
+		@if(session('product.id')==3)
+			<link rel="stylesheet" href="{{asset('css/webfonts/overpass.css')}}" />
+		@endif
         <link rel="stylesheet" href="{{asset('css/templates/cookieBar.css')}}" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="{{asset('css/bootstrap/css/bootstrap.css')}}" />
