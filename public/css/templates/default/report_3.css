@@ -18,3 +18,33 @@
 	float: left;
 	width: 50mm;
 }
+.section h2{
+	background-position: 0 50%;
+	background-repeat: no-repeat;
+}
+h2.cloud-vision-and-strategy{
+	/*padding-left: 5mm;
+	background-image: url('http://redhat.idcgauge.net/images/tools/default/icons/strategy@2x.png');*/
+}
+.section img.left{
+	display: block;
+	float: left;
+	margin-right: 5mm;
+	margin-bottom: 5mm;
+}
+.section img.right{
+	display: block;
+	float: right;
+	margin-left: 5mm;
+	margin-bottom: 5mm;
+}
+.section img.none{
+	display: block;
+	float: left;
+	margin: 0 5mm 5mm 5mm;
+}
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}

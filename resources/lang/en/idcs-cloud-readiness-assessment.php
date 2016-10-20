@@ -1,20 +1,29 @@
 <?php
 
 return array(
+    'stage1' => 'Stage 1: Passive',
+    'stage2' => 'Stage 2: Tentative',
+    'stage3' => 'Stage 3: Committed',
+    'stage4' => 'Stage 4: Accelerating',
+    'stage5' => 'Stage 5: Full Speeed',
     'introduction' => '
         <p>
-            Service providers at this stage are very much at the beginning of their cloud journey. They are yet to embrace a cloud future and as a result see little profitability in this area. Many choose to pass on cloud opportunities to their vendor partners, or at best limit themselves to reselling the most common types of public cloud services.
+            Thank you for taking part in IDC\'s cloud readiness assessment. This study enables you to measure cloud readiness in your business, and provides you with some essential guidance in the development of your cloud business.
         </p>
         <p>
-            Without specific revenue targets for cloud, service providers have no way of measuring cloud success and lack any direction in developing this part of their business further. Marketing and sales functions are very much based on transactional business models (hardware and software license sales) and lack the sophistication of line of business and vertical targeting to generate any successful cloud demand.
+            The following report provides you with both context, in terms of positioning your organization against your peers, and recommendations on how to progress your organization toward a profitable and successful future in cloud.
         </p>
         <p>
-            Partners taking this passive approach must make a decision to either embrace cloud as a fundamental direction for their business, or find themselves fighting for survival faster than they realize.
+            Based on IDC\'s assessment, your organization is at <strong>:result</strong> in terms of its overall cloud readiness. 
+        </p>
+        <p>
+            For further insight and detailed recommendations, the report takes you through the components of cloud strategy, delivering an assessment of your stage of maturity as well as individual recommendations on how to improve these areas.
         </p>
     ',
     'introduction-image' => 'report1.jpg',
     'overall' => array(
         'title'=>'Overall Cloud Partner Maturity',
+        'image'=>'',
         'stage1'=>'
             <p>
                 Service providers at this stage are very much at the beginning of their cloud journey. They are yet to embrace a cloud future and as a result see little profitability in this area. Many choose to pass on cloud opportunities to their vendor partners, or at best limit themselves to reselling the most common types of public cloud services. 
@@ -73,6 +82,8 @@ return array(
     ),
     'cloud-vision-and-strategy' => array(
         'title'=>'Cloud Vision and Strategy',
+        'image'=>'cloud-vision-and-strategy.jpg',
+        'pb'=>'pb',
         'stage1'=>'
             <ul>
                 <li>You are yet to create a fully defined cloud strategy</li>
@@ -162,6 +173,7 @@ return array(
     ),
     'processes-and-skill-sets' => array(
         'title'=> 'Processes and Skill-Sets',
+        'image'=>'processes-and-skill-sets.jpg',
         'stage1'=>'
             <ul>
                 <li>Cloud is an emerging element of your business</li>
@@ -252,6 +264,7 @@ return array(
     ),
     'business-mix' => array(
         'title'=> 'Business Mix',
+        'image'=>'business-mix.jpg',
         'stage1'=>'
             <ul>
                 <li>You are yet to make significant investments in cloud technologies</li>
@@ -358,6 +371,7 @@ return array(
     ),
     'sales-and-marketing' => array(
         'title'=> 'Sales and Marketing',
+        'image'=>'sales-and-marketing.jpg',
         'stage1'=>'
             <ul>
                 <li>You have a limited number of sales people focused on cloud</li>
@@ -470,24 +484,5 @@ return array(
                 You must also continue to drive alignment between sales and marketing capability. Marketing should function as an extended sales arm, and should have the same access to training. This will ensure messaging is consistent. Equally, the sales maturity of your organization needs to leverage a combination of digital, social, and content-driven approaches. This includes customer analytics and the targeting of individuals with specific messaging. Tight alignment between marketing and sales is critical in the digital age and will be a key differentiator in a competitive marketplace.
             </p>
         '
-    ),
-    'stage1' => 'Stage 1: Passive',
-    'stage2' => 'Stage 2: Tentative',
-    'stage3' => 'Stage 3: Committed',
-    'stage4' => 'Stage 4: Accelerating',
-    'stage5' => 'Stage 5: Full Speeed',
-    'introduction' => '
-        <p>
-            Thank you for taking part in IDC\'s cloud readiness assessment. This study enables you to measure cloud readiness in your business, and provides you with some essential guidance in the development of your cloud business.
-        </p>
-        <p>
-            The following report provides you with both context, in terms of positioning your organization against your peers, and recommendations on how to progress your organization toward a profitable and successful future in cloud.
-        </p>
-        <p>
-            Based on IDC\'s assessment, your organization is at <strong>:result</strong> in terms of its overall cloud readiness. 
-        </p>
-        <p>
-            For further insight and detailed recommendations, the report takes you through the components of cloud strategy, delivering an assessment of your stage of maturity as well as individual recommendations on how to improve these areas.
-        </p>
-    ',
+    )
 );

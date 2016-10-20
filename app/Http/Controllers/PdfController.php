@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use PDF;
-use Lava;
 use App\Http\Requests;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Lang;
+use Lava;
+use PDF;
 
 class PdfController extends Controller
 {
@@ -72,6 +73,11 @@ class PdfController extends Controller
 		foreach (config('baseline_'.session('product.id')) as $section => $values) {
 			$vars['sections'][] = [
 				'title' => trans(session('product.alias').'.'.$section.'.title'),
+				'seckey' => $section,
+				'image' => Lang::has(session('product.alias').'.'.$section.'.image') ? trans(session('product.alias').'.'.$section.'.image'):false,
+				'imagefloat' => isset($values['floatimage']) ? $values['floatimage']:'',
+				'graph' => Lang::has(session('product.alias').'.'.$section.'.graph') ? trans(session('product.alias').'.'.$section.'.graph'):false,
+				'pb' => Lang::has(session('product.alias').'.'.$section.'.pb') ? true:false,
 				'rating' => trans(session('product.alias').'.'.session('result.'.$section.'.rating')),
 				'score' => session('result.'.$section.'.score'),
 				'paragraph' => trans(session('product.alias').'.'.$section.'.'.session('result.'.$section.'.rating'))
@@ -79,11 +85,13 @@ class PdfController extends Controller
 
 		}
 		$vars['introImage'] = trans(session('product.alias').'.introduction-image');
+		$vars['introRating'] = trans(session('product.alias').'.'.session('result.overall.rating'));
+
 		$vars['introChart'] = false;
+
+		//return view('tool.default.report.report',$vars);
 
         $pdf = PDF::loadView('tool.default.report.report',$vars)->setOption('margin-top', 30)->setOption('margin-left', 0)->setOption('margin-right', 0)->setOption('window-status','chartrendered')->setOption('header-html','http://redhat.idcgauge.net//template/default/report/header')->setOption('header-spacing',5);
 		return $pdf->inline('invoice.pdf');
-
-		//return view('tool.default.report.report',$vars);
     }
 }

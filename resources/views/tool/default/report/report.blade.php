@@ -34,7 +34,7 @@
 			font-size: 14pt;
 			color: #0a85c7;
 		}
-		p,li{
+		p{
 			font-family: Arial;
 			font-size: 8pt;
 			color: #686868;
@@ -52,7 +52,7 @@
 	</style>
 	<body style="margin: 0; padding: 0;">
 		@if(isset($introImage))
-		<table class="header" style="width: 100%;" cellpadding="0" cellspacing="0">
+		<table class="" style="width: 100%;" cellpadding="0" cellspacing="0">
 			<tr>
 				<td colspan="2"><img src="{{session('url')}}/images/tools/{{session('product.id')}}/{{$introImage}}" style="display: block; width: 210mm; margin-top: -5mm"><!-- report1.jpg --></td>
 			</tr>
@@ -62,22 +62,46 @@
 		@if($introChart)
 		<div style="float: left; margin-left: 10mm; width: 90mm;">
 			<h2>Introduction</h2>
-			{!!trans(session('product.alias').'.introduction')!!}
+			{!!trans(session('product.alias').'.introduction', ['result'=>$introRating])!!}
 		</div>
 		<div id="stocks-div" class="graph" style="height: 110mm; width:85mm; margin:5mm; background-color: red; float: left">
 			
 		</div>
 		@columnchart('Stocks', 'stocks-div')
+		@else
+		<div style="margin-left: 10mm; width: 190mm;">
+			<h2>Introduction</h2>
+			{!!trans(session('product.alias').'.introduction',['result'=>$introRating])!!}
+		</div>
 		@endif
-
 		@foreach($sections as $key=>$section)
-		<div style="margin-left: 10mm; width: 185mm; padding-top: 5mm">
-			<h2 class="{{$key}}">{{$section['title']}}</h2>
+		<div class="{{$section['pb']?'pb ':''}}section group" style="margin-left: 10mm; width: 190mm;">
+			<h2 class="{{$section['seckey']}}">{{$section['title']}}</h2>
 			<h4>{{$section['rating']}}</h4>
+			@if($section['image'])
+			<img src="{{session('url')}}/images/tools/{{session('product.id')}}/{{$section['image']}}" class="{{$section['imagefloat']}}" alt="">
+			@endif
 			{!!$section['paragraph']!!}
 		</div>
 		@endforeach
+		<script src="{{ asset('js/vendor/jquery-1.10.1.min.js')}}"></script>
 		<script type="text/javascript">
+			$(function() {
+				var height = 0;
+				$('.section').each(function(index){
+					if($(this).hasClass('pb')){
+						var elHeight = $(this).height();
+						if(height+elHeight>700){
+							$(this).addClass('pb');
+							height=0;
+						}else{
+							height+=elHeight;
+						}
+					}else{
+						height=$(this).height();
+					}
+				});
+			});
 			var graphs = document.getElementsByClassName("graph");
 			if(graphs.length>0)
 				function chartReady(event, chart){
