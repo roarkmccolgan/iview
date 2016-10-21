@@ -89,6 +89,7 @@ class PdfController extends Controller
 
 		$vars['introChart'] = false;
 
+		//return session('result');
 		//return view('tool.default.report.report',$vars);
 
         $pdf = PDF::loadView('tool.default.report.report',$vars)->setOption('margin-top', 30)->setOption('margin-left', 0)->setOption('margin-right', 0)->setOption('window-status','chartrendered')->setOption('header-html','http://redhat.idcgauge.net//template/default/report/header')->setOption('header-spacing',5);

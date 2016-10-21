@@ -179,7 +179,7 @@ return array(
             ),
             'stage5' => array(
                 'low' => 21.25,
-                'high' => 25,
+                'high' => 26,
                 'score' => 0,
                 'copy' => 'general.3sales-and-marketing-full-speed-txt'
             )

@@ -9,47 +9,6 @@
 		<link rel="stylesheet" href="{{session('url')}}/css/templates/normalize.css">
 		<link rel="stylesheet" href="{{session('url')}}/css/templates/default/report_{{session('product.id')}}.css">
 	</head>
-	<style>
-		.header h1, .header h2{
-			color: #fff;
-			font-size: 24px;
-			font-family: helvetica, sans;
-			font-weight: lighter;
-			margin: 0;
-			padding-left: 5mm;
-		}
-		.header h2{
-			font-size: 20px;
-		}
-		h2,h3{
-			font-family: Arial;
-			font-weight: lighter;
-			font-size: 18pt;
-			color: #0a85c7;
-			margin: 0;
-			margin-top: 5mm;
-		}
-		h3{
-			margin-top: 2mm;
-			font-size: 14pt;
-			color: #0a85c7;
-		}
-		p{
-			font-family: Arial;
-			font-size: 8pt;
-			color: #686868;
-			line-height: 12pt;
-			text-align: justify;
-		}
-		li{
-			font-family: Arial;
-			font-style: italic;
-			font-size: 9pt;
-			font-weight: bold;
-			color: #0a85c7;
-		}
-		.pb {page-break-before: always;}
-	</style>
 	<body style="margin: 0; padding: 0;">
 		@if(isset($introImage))
 		<table class="" style="width: 100%;" cellpadding="0" cellspacing="0">
@@ -69,13 +28,13 @@
 		</div>
 		@columnchart('Stocks', 'stocks-div')
 		@else
-		<div style="margin-left: 10mm; width: 190mm;">
+		<div style="margin-left: 10mm; width: 140mm;">
 			<h2>Introduction</h2>
 			{!!trans(session('product.alias').'.introduction',['result'=>$introRating])!!}
 		</div>
 		@endif
 		@foreach($sections as $key=>$section)
-		<div class="{{$section['pb']?'pb ':''}}section group" style="margin-left: 10mm; width: 190mm;">
+		<div class="{{$section['pb']?'pb ':''}}section group" style="margin-left: 10mm; width: {{$section['image'] ? '170mm;':'140mm;' }};">
 			<h2 class="{{$section['seckey']}}">{{$section['title']}}</h2>
 			<h4>{{$section['rating']}}</h4>
 			@if($section['image'])

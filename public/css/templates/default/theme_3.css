@@ -244,9 +244,9 @@ span.logo{
 	-webkit-border-radius: 7;
 	-moz-border-radius: 7;
 	border-radius: 7px;
-	-webkit-box-shadow: 0px 0px 3px #afafaf;
+	/*-webkit-box-shadow: 0px 0px 3px #afafaf;
 	-moz-box-shadow: 0px 0px 3px #afafaf;
-	box-shadow: 0px 0px 3px #afafaf;
+	box-shadow: 0px 0px 3px #afafaf;*/
 	color: #A2A2A2;
 	padding: 10px 20px 10px 20px;
 	text-decoration: none;
@@ -270,9 +270,9 @@ span.logo{
 	-webkit-border-radius: 7;
 	-moz-border-radius: 7;
 	border-radius: 7px;
-	-webkit-box-shadow: 0px 0px 3px #666666;
+	/*-webkit-box-shadow: 0px 0px 3px #666666;
 	-moz-box-shadow: 0px 0px 3px #666666;
-	box-shadow: 0px 0px 3px #666666;
+	box-shadow: 0px 0px 3px #666666;*/
 	color: #A2A2A2;
 	font-weight: normal;
 	cursor: pointer;

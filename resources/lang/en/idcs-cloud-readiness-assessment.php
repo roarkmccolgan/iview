@@ -174,6 +174,7 @@ return array(
     'processes-and-skill-sets' => array(
         'title'=> 'Processes and Skill-Sets',
         'image'=>'processes-and-skill-sets.jpg',
+        'pb'=>'pb',
         'stage1'=>'
             <ul>
                 <li>Cloud is an emerging element of your business</li>
@@ -265,6 +266,7 @@ return array(
     'business-mix' => array(
         'title'=> 'Business Mix',
         'image'=>'business-mix.jpg',
+        'pb'=>'pb',
         'stage1'=>'
             <ul>
                 <li>You are yet to make significant investments in cloud technologies</li>
@@ -372,6 +374,7 @@ return array(
     'sales-and-marketing' => array(
         'title'=> 'Sales and Marketing',
         'image'=>'sales-and-marketing.jpg',
+        'pb'=>'pb',
         'stage1'=>'
             <ul>
                 <li>You have a limited number of sales people focused on cloud</li>
