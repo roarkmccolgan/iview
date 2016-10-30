@@ -1,23 +1,70 @@
 <?php
 
 return array(
-    'stage1' => 'Stage 1: Passive',
-    'stage2' => 'Stage 2: Tentative',
-    'stage3' => 'Stage 3: Committed',
-    'stage4' => 'Stage 4: Accelerating',
-    'stage5' => 'Stage 5: Full Speeed',
+    'stage1' => 'Ad Hoc',
+    'stage2' => 'Opportunistic',
+    'stage3' => 'Repeatable',
+    'stage4' => 'Managed',
+    'stage5' => 'Optimized',
     'introduction' => '
         <p>
-            Thank you for taking part in IDC\'s cloud readiness assessment. This study enables you to measure cloud readiness in your business, and provides you with some essential guidance in the development of your cloud business.
+            Running your enterprise in the 21st century is akin to swimming with sharks. The danger is clear: threat actors are becoming more potent, more organized and more collaborative by the day. Yet you need to swim in the ocean of Digital Transformation, which is becoming a mission critical concern for today’s CEO. However, it also means swimming deeper into the shark infested waters. 
         </p>
         <p>
-            The following report provides you with both context, in terms of positioning your organization against your peers, and recommendations on how to progress your organization toward a profitable and successful future in cloud.
+            Digital transformation technologies – big data/analytics, cloud computing, mobility and social business – take corporate applications and data outside the safety of perimeter controls at the endpoint and the network. This represents a loss of visibility and control for security professionals. Not only are you swimming through murky waters, but the door to that shark-proof cage that used to protect you has swung open!
         </p>
         <p>
-            Based on IDC\'s assessment, your organization is at <strong>:result</strong> in terms of its overall cloud readiness. 
+            Avoiding digital transformation is not an option. One need only consider the fate of enterprises such as Blockbusters and Borders that have failed to adapt to the new reality to understand the implications. Instead, a step change in both technological approach and strategic mindset are required. This report aims to uncover best practice exhibited by your peers with the most mature approach towards security. In order to swim with the sharks, and maybe even bite back, a new outlook is required.
+        </p>
+        <h4>Using this Report</h4>
+        <p>
+            This report aims to provide you with insights into the characteristics and progression of maturity in security. It identifies examples of best practice that you can aspire to in order to improve your security maturity. It also highlights innovation accelerators that have a particularly strong impact on boosting maturity levels. Finally, it offers recommendations for how you can improve your position in comparison with your peers. These insights emerge from a survey of 500 senior security decision-makers based in France, Germany, Italy, Spain and the UK.
+        </p>
+        <h4>Your peers’ Maturity Profile</h4>
+        <img class="pull-right" src="/images/tools/2/firgure1.jpg">
+        <p>
+            Based on our survey of 500 senior security decision-makers, IDC has broken the market down into five categories of maturity. From low to high, these are:
+        </p>
+        <ul>
+            <li>ad-hoc</li>
+            <li>opportunistic</li>
+            <li>repeatable</li>
+            <li>managed</li>
+            <li>optimized.</li>
+        </ul>
+        <p>
+            Enterprises are typically distributed into a classic ‘bell curve’ as shown in figure 1:
         </p>
         <p>
-            For further insight and detailed recommendations, the report takes you through the components of cloud strategy, delivering an assessment of your stage of maturity as well as individual recommendations on how to improve these areas.
+            There are very few of your peer organizations at the low end in their approach towards security, and also few at the top end. Instead, the majority of peer enterprises sit somewhere in the middle. If you aim to swim with sharks without getting bitten, you should aspire beyond parity of your peers and embrace best practice. The next section of this report gives indication of what best practice in security looks like.
+        </p>
+        <h4>Security Best Practice</h4>
+        <p>
+            Traditionally, security technology has aimed to protect enterprises from known threats. By gathering devices, applications and data behind the safety net of the firewall, perimeter controls at the device and network levels could keep those known threats at bay. However, such preventative security models are being rendered insufficient as a stand-alone approach by two trends:
+        </p>
+        <ul>
+            <li>Digital transformation is taking corporate applications and data beyond the perimeter, and outside the visibility and control of in-house security teams.</li>
+            <li>The sheer scale of threats is unprecedented. The number of new malware variants emerging on a daily basis is over a million. It is simply impossible to generate signatures at a rapid enough pace to maintain traditional defenses that aim to block new threats.</li>
+        </ul>
+        <p>
+            Quite clearly, new approaches are required that will help enterprises to identify and respond to unknown threats as well as blocking out known threats. Security must become proactive, seeking potential indicators of compromise to remediate rather than waiting for an attack to become evident. However, this requires a mental leap in security strategy. An analysis of what is considered to be limiting security effectiveness across the maturity levels is enlightening, as shown in figure 2 below:
+        </p>
+        <img class="pull-right" src="/images/tools/2/firgure2.jpg">
+        <p>
+            There are certain common themes that apply across all maturity levels. Specifically, cost and skills availability are the primary limitations. This is no surprise given the global skills shortage that endures within the security market. However, it is the degree to which further concerns are considered where an insight into best practice emerges.
+        </p>
+        <p>
+            For lower level maturities, cost pressures and skills shortages are the overwhelming concerns. But at more mature levels, there is a greater balance between these areas and areas such as the management of conflicting priorities and supporting demand for new business services. This highlights a key step change in mentality: best practice in security is to consider the needs of the business.
+        </p>
+        <p>
+            Once this mental leap has been made, enterprises must consider what this means in terms of practical security approaches. In particular, the progression away from reactive security models towards proactive security is required. In fact, as shown in figure 3 below, there are two clear trends across maturity techniques. The more mature an enterprise is, the less likely it is to not be using proactive security techniques, and more likely to either be planning or already using them.
+        </p>
+        <img class="pull-right" src="/images/tools/2/firgure3.jpg">
+        <p>
+            According to our survey, key security technologies that enterprises can adopt in order to facilitate these more proactive approaches include threat intelligence, artificial intelligence and heuristic analysis of user behavior. As with proactive technologies, the more mature an enterprise’s security approach is, the more likely it is to make use of solutions such as AI and heuristics.
+        </p>
+        <p>
+            Although proactive security approaches represent an opportunity to move up the security maturity scale, they also bring their own challenges. For example, proactive techniques require the gathering and monitoring of operational and behavioral logs on a far larger scale. Given the pressures on both financial resources that security teams are facing, a grown up discussion of techniques to help lighten the load on internal resources is required.  Best practice indicates that there are two potential outlets.
         </p>
     ',
     'introduction-image' => 'report1.jpg',

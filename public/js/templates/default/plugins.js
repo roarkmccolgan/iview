@@ -43,8 +43,10 @@ b[_type],e=/wn|up/.test(d)?t:v;if(!c[n]){if(d==_click)A(a,!1,!0);else{if(/wn|er|
  
 (function( $ ){
   $.fn.cookieBar = function( options ) {  
-  	var subdomain_name = window.location.hostname.split('.').length >= 3 ? window.location.hostname.split('.')[0]:'';
+    var subdomain_name = window.location.hostname.split('.').length >= 3 ? window.location.hostname.split('.')[0]:'';
+  	var domain = window.location.hostname.split('.').length >= 3 ? window.location.hostname.split('.')[1]+'.'+window.location.hostname.split('.')[2]:window.location.hostname.split('.')[0]+'.'+window.location.hostname.split('.')[1];
     console.log(subdomain_name);
+    console.log(domain);
 	var settings = $.extend( {
       'closeButton' : 'none',
 	  'secure' : false,

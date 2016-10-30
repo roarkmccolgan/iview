@@ -1,6 +1,6 @@
 <?php
 return array(
-    'it-security-and-the-business' => array(
+    'cyber-risk-management-and-the-business' => array(
         'baseline' => 15.363,
         'types' => array(
             'Stage 1: Time to Act' => array(
@@ -30,7 +30,7 @@ return array(
             )
         )
     ),
-    'it-security-operations-and-defence' => array(
+    'cyber-risk-management-operations-and-defence' => array(
         'baseline' => 15.363,
         'types' => array(
             'Stage 1: Time to Act' => array(

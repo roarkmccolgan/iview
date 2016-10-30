@@ -26,6 +26,7 @@ class RouteByURL
             $request->session()->put('locale', $url->language->abbreviation);
             $request->session()->put('url', 'http://' . $request->tool.'.'.$url->domain);
             $request->session()->put('host', $url->urlable->domain);
+            $request->session()->put('referer', $request->server('HTTP_REFERER'));
             $request->session()->put('analytics', $url->urlable->gapropertyid);
             $request->session()->put('template', $url->urlable->template);
             $request->session()->put('company.name', $url->urlable->company->name);

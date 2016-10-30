@@ -38,13 +38,16 @@ return array(
     '2assoc'=>'',
     '2sponsors'=>'FireEye and HPE',
     '2title'=>'IDC\'s Cyber Risk Assessment',
-    '2sub-title'=>'Sponsored by FireEye and Hewlett-Packard Enterprise',
+    '2sub-title'=>'Sponsored by FireEye and Hewlett Packard Enterprise',
     '2landing'=>'
 <h2>Your Cyber Risk Strategy Readiness</h2>
-<p>This shift to the digital economy brings a lot of value for businesses, but this also makes IT systems a target for nefarious activity. Hackers can steal important company information such as customer details or confidential designs. Companies can be blackmailed as their information is held hostage to ransomware. Insiders can be tempted to abuse their authority to bolster their bank balance. All of these put companies at significant risk for both brand and revenue.
+<p>This shift to the digital economy brings a lot of value for businesses, but this also makes IT systems a target for nefarious activity. Hackers can steal important company information such as customer details or confidential designs. Companies can be blackmailed as their information is held hostage to ransomware.<br/> Insiders can be tempted to abuse their authority to bolster their bank balance. All of these put companies at significant risk for both brand and revenue.
 </p>
 <p>
-Cyber Risk readiness, more than ever, is a core foundation element of digital infrastructure involving proactive investment and operation across monitoring, detection and response to evolving threats. To find out more about where you are on the Cyber Risk journey and how your approach to governance, risk and security compares to others, complete the IDC Cyber Risk Assessment Tool. This provides an independently sourced, facts-based framework to help you make informed decisions around your Cyber Risk strategy and the benefits associated with increasing your readiness in the face of growing cyber threats.
+Cyber Risk readiness, more than ever, is a core foundation element of digital infrastructure involving proactive investment and operation across monitoring, detection and response to evolving threats. To find out more about where you are on the Cyber Risk journey and how your approach to governance, risk and security compares to others, complete the IDC Cyber Risk Assessment Tool. This provides an independently sourced, facts-based framework to help you make informed decisions around your own Cyber Risk strategy and the benefits associated with increasing your readiness in the face of growing cyber threats.
+</p>
+<p>
+    It will take approximately 15 minutes to complete this Cyber Risk Assessment Tool.
 </p>',
     '2startbut'=>'Get Started',
     'adhoc'=>'Ad-Hoc', //reactive

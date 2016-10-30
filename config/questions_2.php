@@ -13,7 +13,7 @@ return array(
                 'questions' => array(
                     's1'=>array(
                         'type'=>'button',
-                        'question'=>'In which country is the company you work for situated?',
+                        'question'=>'In which country is the company you work for situated? Please select one',
                         'name'=>'s1',
                         'options'=>array(
                             array(
@@ -55,9 +55,14 @@ return array(
                 'questions' => array(
                     's2'=>array(
                         'type'=>'button',
-                        'question'=>'How many full time employees work at your organization worlwide?',
+                        'question'=>'How many full time employees work at your organization worlwide? Please select one',
                         'name'=>'s2',
                         'options'=>array(
+                            array(
+                                'label'=>'Less than 1000',
+                                'value'=>1,
+                                'checked'=>false
+                            ),
                             array(
                                 'label'=>'1000-2499',
                                 'value'=>1,
@@ -81,21 +86,99 @@ return array(
                         )
                     )
                 )
+            ),
+            'page3' => array(
+                'title' => 'Screeners',
+                'questions' => array(
+                    's3'=>array(
+                        'type'=>'button',
+                        'question'=>'Which of the following industry classifications best represents your organization? Please select one',
+                        'name'=>'s3',
+                        'options'=>array(
+                            array(
+                                'label'=>'Financial services',
+                                'value'=>1,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'Manufacturing',
+                                'value'=>1,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'Telecommunications services (including hosters, xSPs and Cloud Service Providers)',
+                                'value'=>1,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'Education',
+                                'value'=>1,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'Healthcare',
+                                'value'=>1,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'Media',
+                                'value'=>1,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'Transport, distribution and logistics',
+                                'value'=>1,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'Retail and Wholesale',
+                                'value'=>1,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'IT consulting and IT-related professional services',
+                                'value'=>1,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'Non-IT consulting and other professional services (accounting, legal, advertising, real estate, recruitment, business consulting, etc.) ',
+                                'value'=>1,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'Central or Local Government, or Public services',
+                                'value'=>1,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'Utilities - Electricity, Gas, Water',
+                                'value'=>1,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'Other, please specify',
+                                'value'=>1,
+                                'checked'=>false,
+                                'other' => true
+                            )
+                        )
+                    )
+                )
             )
         )
     ),
-    'it-security-and-the-business' => array(
-        'title' => 'IT Security and the Business',
+    'cyber-risk-management-and-the-business' => array(
+        'title' => 'Cyber Risk Management and the Business',
         'class' => 'sec2',
         'display' => true,
         'complete' => false,
         'pages' => array(
             'page1' => array(
-                'title' => 'IT Security and the Business',
+                'title' => 'Cyber Risk Management and the Business',
                 'questions' => array(
                     'q1'=>array(
                         'type'=>'button',
-                        'question'=>'How does senior business management tend to view the role of IT?',
+                        'question'=>'How does senior business management tend to view the role of IT? Please select one',
                         'name'=>'q1',
                         'options'=>array(
                             array(
@@ -122,11 +205,11 @@ return array(
                 )*/
             ),
             'page2' => array(
-                'title' => 'IT Security and the Business',
+                'title' => 'Cyber Risk Management and the Business',
                 'questions' => array(
                     'q2'=>array(
                         'type'=>'button',
-                        'question'=>'When it comes to business requests for new or enhanced applications or services, which statement best reflects your IT department\'s capabilities?',
+                        'question'=>'When it comes to business requests for new or enhanced applications or services, which statement best reflects your IT department\'s capabilities? Please select one',
                         'name'=>'q2',
                         'options'=>array(
                             array(
@@ -154,11 +237,11 @@ return array(
                 )
             ),
             'page3' => array(
-                'title' => 'IT Security and the Business',
+                'title' => 'Cyber Risk Management and the Business',
                 'questions' => array(
                     'q3'=>array(
                         'type'=>'button',
-                        'question'=>'Which statement best describes your attitude to risk at a business level?',
+                        'question'=>'Which statement best describes your attitude to risk at a business level? Please select one',
                         'name'=>'q3',
                         'options'=>array(
                             array(
@@ -191,7 +274,7 @@ return array(
                 )
             ),
             'page4' => array(
-                'title' => 'IT Security and the Business',
+                'title' => 'Cyber Risk Management and the Business',
                 'questions' => array(
                     'q4'=>array(
                         'type'=>'groupradio',
@@ -381,11 +464,11 @@ return array(
                 'report' => false
             ),
             'page5' => array(
-                'title' => 'IT Security and the Business',
+                'title' => 'Cyber Risk Management and the Business',
                 'questions' => array(
                     'q5'=>array(
                         'type'=>'button',
-                        'question'=>' Which statement best describes how cyber risk management is handled in your company?',
+                        'question'=>' Which statement best describes how cyber risk management is handled in your company? Please select one',
                         'name'=>'q5',
                         'options'=>array(
                             array(
@@ -418,11 +501,11 @@ return array(
                 )
             ),
             'page6' => array(
-                'title' => 'IT Security and the Business',
+                'title' => 'Cyber Risk Management and the Business',
                 'questions' => array(
                     'q6'=>array(
                         'type'=>'groupradio',
-                        'question'=>'Which of the following do you have as part of your cyber risk escalation framework?',
+                        'question'=>'Which of the following are part of your cyber risk escalation structure?” (instead of “Which of the following do you have as part of your cyber risk escalation framework?',
                         'name'=>'q6',
                         'calc'=>array(
                             'type'=>'normalize',
@@ -535,11 +618,11 @@ return array(
                 'report' => false
             ),
             'page7' => array(
-                'title' => 'IT Security and the Business',
+                'title' => 'Cyber Risk Management and the Business',
                 'questions' => array(
                     'q7'=>array(
                         'type'=>'button',
-                        'question'=>'How early is IT security usually brought into business projects and initiatives?',
+                        'question'=>'How early is IT security usually brought into business projects and initiatives? Please select one',
                         'name'=>'q7',
                         'options'=>array(
                             array(
@@ -572,11 +655,11 @@ return array(
                 )
             ),
             'page8' => array(
-                'title' => 'IT Security and the Business',
+                'title' => 'Cyber Risk Management and the Business',
                 'questions' => array(
                     'q8'=>array(
                         'type'=>'button',
-                        'question'=>'How would you describe the level of IT security investment in your organization?',
+                        'question'=>'How would you describe the level of IT security investment in your organization? Please select one',
                         'name'=>'q8',
                         'options'=>array(
                             array(
@@ -610,14 +693,14 @@ return array(
             ),
         )
     ),
-    'it-security-operations-and-defence' => array(
-        'title' => 'IT Security Operations and Defence',
+    'cyber-risk-management-operations-and-defence' => array(
+        'title' => 'Cyber Risk Management Operations and Defence',
         'class' => 'sec2',
         'display' => true,
         'complete' => false,
         'pages' => array(
             'page1' => array(
-                'title' => 'IT Security Operations and Defence',
+                'title' => 'Cyber Risk Management Operations and Defence',
                 'questions' => array(
                     'q9'=>array(
                         'type'=>'slider',
@@ -902,11 +985,11 @@ return array(
                 'report' => false
             ),
             'page2' => array(
-                'title' => 'IT Security Operations and Defence',
+                'title' => 'Cyber Risk Management Operations and Defence',
                 'questions' => array(
                     'q10'=>array(
                         'type'=>'button',
-                        'question'=>'Which of the following best describes your adoption and implementation of IT security best practice?',
+                        'question'=>'Which of the following best describes your adoption and implementation of IT security best practice? Please select one',
                         'name'=>'q10',
                         'options'=>array(
                             array(
@@ -939,11 +1022,11 @@ return array(
                 )
             ),
             'page3' => array(
-                'title' => 'IT Security Operations and Defence',
+                'title' => 'Cyber Risk Management Operations and Defence',
                 'questions' => array(
                     'q11'=>array(
                         'type'=>'slider',
-                        'question'=>'How prepared are you for the following aspects of your assessment and implementation of GDPR compliance? (Rating scale: 1 = not prepared at all to 5 = very well prepared',
+                        'question'=>'How prepared are you for the following aspects of your assessment and implementation of GDPR (General Data Protection Regulation) compliance? (Rating scale: 1 = not prepared at all to 5 = very well prepared',
                         'name'=>'q11',
                         'calc'=>array(
                             'type'=>'average',
@@ -1158,11 +1241,11 @@ return array(
                 'report' => false
             ),
             'page4' => array(
-                'title' => 'IT Security Operations and Defence',
+                'title' => 'Cyber Risk Management Operations and Defence',
                 'questions' => array(
                     'q12'=>array(
                         'type'=>'button',
-                        'question'=>' Do you tend to invest tactically (point products/as needed) or strategically (part of a plan) in IT security products or solutions?',
+                        'question'=>' Do you tend to invest tactically (point products/as needed) or strategically (part of a plan) in IT security products or solutions? Please select one',
                         'name'=>'q12',
                         'options'=>array(
                             array(
@@ -1195,11 +1278,11 @@ return array(
                 )
             ),
             'page5' => array(
-                'title' => 'IT Security Operations and Defence',
+                'title' => 'Cyber Risk Management Operations and Defence',
                 'questions' => array(
                     'q13'=>array(
                         'type'=>'button',
-                        'question'=>'How often do you report on IT security status to the business?',
+                        'question'=>'How often do you report on IT security status to the business? Please select one',
                         'name'=>'q13',
                         'options'=>array(
                             array(
@@ -1252,11 +1335,11 @@ return array(
                 )
             ),
             'page6' => array(
-                'title' => 'IT Security Operations and Defence',
+                'title' => 'Cyber Risk Management Operations and Defence',
                 'questions' => array(
                     'q14'=>array(
                         'type'=>'button',
-                        'question'=>'What is your primary means of managing your IT security infrastructure?',
+                        'question'=>'What is your primary means of managing your IT security infrastructure? Please select one',
                         'name'=>'q14',
                         'options'=>array(
                             array(
@@ -1294,11 +1377,11 @@ return array(
                 )
             ),
             'page7' => array(
-                'title' => 'IT Security Operations and Defence',
+                'title' => 'Cyber Risk Management Operations and Defence',
                 'questions' => array(
                     'q15'=>array(
                         'type'=>'button',
-                        'question'=>'To what level have you adopted automation in your IT security management?',
+                        'question'=>'To what level have you adopted automation in your IT security management? Please select one',
                         'name'=>'q15',
                         'options'=>array(
                             array(
@@ -1331,11 +1414,11 @@ return array(
                 )
             ),
             'page8' => array(
-                'title' => 'IT Security Operations and Defence',
+                'title' => 'Cyber Risk Management Operations and Defence',
                 'questions' => array(
                     'q16'=>array(
                         'type'=>'button',
-                        'question'=>'When it comes to your use of automation, how do you intend to change your use of this?',
+                        'question'=>'When it comes to your use of automation, how do you intend to change your use of this? Please select one',
                         'name'=>'q16',
                         'options'=>array(
                             array(
@@ -1368,7 +1451,7 @@ return array(
                 )
             ),
             'page9' => array(
-                'title' => 'IT Security Operations and Defence',
+                'title' => 'Cyber Risk Management Operations and Defence',
                 'questions' => array(
                     'q17'=>array(
                         'type'=>'groupradio',
@@ -1481,18 +1564,18 @@ return array(
             ),
         )
     ),
-    'it-security-breach-detection-and-remediation' => array(
-        'title' => 'IT Security Breach Detection and Remediation',
+    'cyber-risk-management-breach-detection-and-remediation' => array(
+        'title' => 'Cyber Risk Management Breach Detection and Remediation',
         'class' => 'sec3',
         'display' => true,
         'complete' => false,
         'pages' => array(
             'page1' => array(
-                'title' => 'IT Security Breach Detection and Remediation',
+                'title' => 'Cyber Risk Management Breach Detection and Remediation',
                 'questions' => array(
                     'q18'=>array(
                         'type'=>'groupradio',
-                        'question'=>'Do you make use of  the following regarding IT Security - Breach detection',
+                        'question'=>'Do you make use of the following regarding IT Security: Breach detection',
                         'name'=>'q18',
                         'options'=>array(
                             array(
@@ -1586,11 +1669,11 @@ return array(
                 'report' => false
             ),
             'page2' => array(
-                'title' => 'IT Security Breach Detection and Remediation',
+                'title' => 'Cyber Risk Management Breach Detection and Remediation',
                 'questions' => array(
                     'q19'=>array(
                         'type'=>'groupradio',
-                        'question'=>'Do you make use of the following regarding IT Security - Breach response',
+                        'question'=>'Do you make use of the following regarding IT Security: Breach response',
                         'name'=>'q19',
                         'options'=>array(
                             array(
@@ -1684,11 +1767,11 @@ return array(
                 'report' => false
             ),
             'page3' => array(
-                'title' => 'IT Security Breach Detection and Remediation',
+                'title' => 'Cyber Risk Management Breach Detection and Remediation',
                 'questions' => array(
                     'q20'=>array(
                         'type'=>'groupradio',
-                        'question'=>'Do you make use of the following regarding IT Security - Breach response',
+                        'question'=>'Do you make use of the following regarding IT Security: Breach response',
                         'name'=>'q20',
                         'options'=>array(
                             array(
@@ -1782,7 +1865,7 @@ return array(
                 'report' => false
             ),
             'page4' => array(
-                'title' => 'IT Security Breach Detection and Remediation',
+                'title' => 'Cyber Risk Management Breach Detection and Remediation',
                 'questions' => array(
                     'q21'=>array(
                         'type'=>'groupradio',
@@ -1880,11 +1963,11 @@ return array(
                 'report' => false
             ),
             'page5' => array(
-                'title' => 'IT Security Breach Detection and Remediation',
+                'title' => 'Cyber Risk Management Breach Detection and Remediation',
                 'questions' => array(
                     'q23'=>array(
                         'type'=>'button',
-                        'question'=>'How often do you test your IT security defense capabilities through third-party verification?',
+                        'question'=>'How often do you test your IT security defense capabilities through third-party verification? Please select one',
                         'name'=>'q23',
                         'options'=>array(
                             array(
@@ -1932,11 +2015,11 @@ return array(
                 )
             ),
             'page6' => array(
-                'title' => 'IT Security Breach Detection and Remediation',
+                'title' => 'Cyber Risk Management Breach Detection and Remediation',
                 'questions' => array(
                     'q24'=>array(
                         'type'=>'button',
-                        'question'=>'How often do you test your cyber breach incident response plans?',
+                        'question'=>'How often do you test your cyber breach incident response plans? Please select one',
                         'name'=>'q24',
                         'options'=>array(
                             array(
@@ -1996,7 +2079,7 @@ return array(
                 'questions' => array(
                     'q25'=>array(
                         'type'=>'button',
-                        'question'=>'Which statement describes the extent of your use of managed security services providers?',
+                        'question'=>'Which statement describes the extent of your use of managed security services providers? Please select one',
                         'name'=>'q25',
                         'options'=>array(
                             array(
@@ -2027,483 +2110,7 @@ return array(
                         )
                     )
                 )
-            ),
-            'page2' => array(
-                'title' => 'IT Security Third Party Providers',
-                'questions' => array(
-                    'q26'=>array(
-                        'type'=>'slider',
-                        'question'=>'To what extent do you agree/disagree with the following motivators to using managed security services providers? (Rating scale: 1 = disagree strongly to 5 = agree strongly)',
-                        'name'=>'q26',
-                        'options'=>array(
-                            array(
-                                'label'=>'They have much better capabilities than we can manage in-house',
-                                'from'=>'Strongly disagree',
-                                'to'=>'Strongly agree',
-                                'name'=>'q26.1',
-                                'options'=>array(
-                                    array(
-                                        'label'=>'1',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'2',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'3',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'4',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'5',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    )
-                                )
-                            ),
-                            array(
-                                'label'=>'They are cheaper than what we can do ourselves.',
-                                'from'=>'Strongly disagree',
-                                'to'=>'Strongly agree',
-                                'name'=>'q26.2',
-                                'options'=>array(
-                                    array(
-                                        'label'=>'1',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'2',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'3',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'4',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'5',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    )
-                                )
-                            ),
-                            array(
-                                'label'=>'They can be trusted with our secure data',
-                                'from'=>'Strongly disagree',
-                                'to'=>'Strongly agree',
-                                'name'=>'q26.3',
-                                'options'=>array(
-                                    array(
-                                        'label'=>'1',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'2',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'3',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'4',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'5',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    )
-                                )
-                            ),
-                            array(
-                                'label'=>'They improve our visibility and control on our estate',
-                                'from'=>'Strongly disagree',
-                                'to'=>'Strongly agree',
-                                'name'=>'q26.4',
-                                'options'=>array(
-                                    array(
-                                        'label'=>'1',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'2',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'3',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'4',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'5',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    )
-                                )
-                            ),
-                            array(
-                                'label'=>'They can provide a better security posture for us',
-                                'from'=>'Strongly disagree',
-                                'to'=>'Strongly agree',
-                                'name'=>'q26.5',
-                                'options'=>array(
-                                    array(
-                                        'label'=>'1',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'2',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'3',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'4',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'5',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    )
-                                )
-                            ),
-                            array(
-                                'label'=>'They have more capable staff than we can afford to keep',
-                                'from'=>'Strongly disagree',
-                                'to'=>'Strongly agree',
-                                'name'=>'q26.6',
-                                'options'=>array(
-                                    array(
-                                        'label'=>'1',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'2',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'3',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'4',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'5',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    )
-                                )
-                            ),
-                            array(
-                                'label'=>'Using MSSPs will maintain or enhance our political status or relevance within our company',
-                                'from'=>'Strongly disagree',
-                                'to'=>'Strongly agree',
-                                'name'=>'q26.7',
-                                'options'=>array(
-                                    array(
-                                        'label'=>'1',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'2',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'3',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'4',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'5',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    )
-                                )
-                            )
-                        )
-                    )
-                )/*,
-                'report' => array(
-                    'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
-                    'image'=>'img/techfit_icons_Q-A1.png'
-                )*/,
-                'report' => false
-            ),
-            'page3' => array(
-                'title' => 'IT Security Third Party Providers',
-                'questions' => array(
-                    'q27'=>array(
-                        'type'=>'slider',
-                        'question'=>'When it comes to your use of threat intelligence services, to what extent to you agree/disagree with the following? (Rating scale: 1 = disagree strongly to 5 = agree strongly',
-                        'name'=>'q27',
-                        'options'=>array(
-                            array(
-                                'label'=>'It provides actionable intelligence',
-                                'from'=>'Strongly disagree',
-                                'to'=>'Strongly agree',
-                                'name'=>'q27.1',
-                                'options'=>array(
-                                    array(
-                                        'label'=>'1',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'2',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'3',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'4',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'5',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    )
-                                )
-                            ),
-                            array(
-                                'label'=>'It is targeted to the context of my organization/vertical industry.',
-                                'from'=>'Strongly disagree',
-                                'to'=>'Strongly agree',
-                                'name'=>'q27.2',
-                                'options'=>array(
-                                    array(
-                                        'label'=>'1',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'2',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'3',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'4',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'5',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    )
-                                )
-                            ),
-                            array(
-                                'label'=>'It\'s close enough to real time to be of use',
-                                'from'=>'Strongly disagree',
-                                'to'=>'Strongly agree',
-                                'name'=>'q27.3',
-                                'options'=>array(
-                                    array(
-                                        'label'=>'1',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'2',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'3',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'4',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'5',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    )
-                                )
-                            )
-                        )
-                    )
-                )/*,
-                'report' => array(
-                    'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
-                    'image'=>'img/techfit_icons_Q-A1.png'
-                )*/,
-                'report' => false
-            ),
-            'page4' => array(
-                'title' => 'IT Security Third Party Providers',
-                'questions' => array(
-                    'q28'=>array(
-                        'type'=>'groupradio',
-                        'question'=>'And again looking at threat intelligence services, do you do the following?',
-                        'name'=>'q28',
-                        'options'=>array(
-                            array(
-                                'label'=>'We make use of global insight. - And again looking at threat intelligence services, do you do the following?',
-                                'name'=>'q28.1',
-                                'options'=>array(
-                                    array(
-                                        'label'=>'Yes',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'No',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    )
-                                )
-                            ),
-                            array(
-                                'label'=>'We do multiway sharing of information. - And again looking at threat intelligence services, do you do the following?',
-                                'name'=>'q28.2',
-                                'options'=>array(
-                                    array(
-                                        'label'=>'Yes',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ),
-                                    array(
-                                        'label'=>'No',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    )
-                                )
-                            ),
-                        )
-                    )
-                )
-                /*,
-                'report' => array(
-                    'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
-                    'image'=>'img/techfit_icons_Q-A1.png'
-                )*/,
-                'report' => false
-            ),
-            'page5' => array(
-                'title' => 'IT Security Third Party Providers',
-                'questions' => array(
-                    'q29'=>array(
-                        'type'=>'button',
-                        'question'=>'What is limiting your ability to improve your IT security capabilities? Select the top 3 factors',
-                        'name'=>'q29',
-                        'options'=>array(
-                            array(
-                                'label'=>'Budget constraints',
-                                'value'=>0,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'Juggling conflicting priorities',
-                                'value'=>0,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'Operations resources are too busy on routine operations',
-                                'value'=>0,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'Skills shortages',
-                                'value'=>0,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'High level of demand for new business services',
-                                'value'=>0,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'Lack of insight into security sensitive activities',
-                                'value'=>0,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'Not enough integration into the IT infrastructure teams',
-                                'value'=>0,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'Fragmentation or lack of integration of security product portfolio',
-                                'value'=>0,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'Competing with cloud resources used/shadow IT',
-                                'value'=>0,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'Other',
-                                'value'=>0,
-                                'checked'=>false
-                            )
-                        )
-                    )
-                )
-            ),
+            )
         )
     )
 );

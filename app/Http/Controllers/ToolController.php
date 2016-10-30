@@ -12,6 +12,8 @@ use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Config;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Validator;
 
 class ToolController extends Controller
 {
@@ -238,13 +240,13 @@ class ToolController extends Controller
         return view('tool.'.session('template').'.complete',$vars);
     }
 
-    public function postComplete()
+    public function postComplete(Request $request)
         {
             $this->loadQuestions();
             $this->howfit=Session::get('result');
             $this->baseline = Session::get('baseline');
 
-            $validate_data = Input::except('_token');
+            $validate_data = $request->except('_token');
             $rules = array(
                 'fname'=>'required',
                 'sname'=>'required',
@@ -259,9 +261,9 @@ class ToolController extends Controller
             if ($validator->passes()) {
                 Session::put('user', $validate_data);
                 
-                $screener1=$this->quiz['demographics']['pages']['page1']['questions']['s1']['selected'];
-                $screener2=$this->quiz['demographics']['pages']['page2']['questions']['s2']['selected'];
-                $screener3=$this->quiz['demographics']['pages']['page3']['questions']['s3']['selected'];
+                $screener1=isset($this->quiz['screeners']) && isset($this->quiz['screeners']['pages']['page1']['questions']['s1']['selected']) ? $this->quiz['screeners']['pages']['page1']['questions']['s1']['selected']: '';
+                $screener2=isset($this->quiz['screeners']) && isset($this->quiz['screeners']['pages']['page1']['questions']['s1']['selected']) ? $this->quiz['screeners']['pages']['page2']['questions']['s2']['selected']: '';
+                $screener3=isset($this->quiz['screeners']) && isset($this->quiz['screeners']['pages']['page1']['questions']['s1']['selected']) ? $this->quiz['screeners']['pages']['page3']['questions']['s3']['selected']: '';
                 
                 //update source
                 $currentLocal = App::getLocale();
@@ -275,20 +277,21 @@ class ToolController extends Controller
                     'C_BusPhone'=>$validate_data['phone'],
                     'C_Job_Responsibilities_1'=>$screener1==Config::get($localQuestions.'questions.screeners.pages.page1.questions.s1.options.0.label') ? "IT" : "Business / Operations",
                     'C_NumberofEmployees_Range_1'=>$screener2,
-                    'form_source'=>Input::get('form_source')
+                    'form_source'=>$request->input('form_source')
                 );
                 
                 Session::put('source', $source);
                 
                 //save in db
                 $assessment = new Assessment;
+                $assessment->tool_id = session('product.id');
                 $assessment->fname = $validate_data['fname'];
                 $assessment->lname = $validate_data['sname'];
                 $assessment->email = $validate_data['email'];
                 $assessment->company = $validate_data['company'];
                 $assessment->country = $validate_data['country'];
                 $assessment->tel = $validate_data['phone'];
-                $assessment->referer = $validate_data['referer'];
+                $assessment->referer = session('referer');
                 $assessment->quiz = json_encode($this->quiz);
                 $assessment->result = json_encode($this->howfit);
 

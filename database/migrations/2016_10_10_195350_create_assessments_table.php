@@ -19,6 +19,8 @@ class CreateAssessmentsTable extends Migration
             $table->string('lname');
             $table->string('email');
             $table->string('company');
+            $table->string('country');
+            $table->string('referer')->nullable();
             $table->string('tel')->nullable();
             $table->binary('quiz');
             $table->binary('result');

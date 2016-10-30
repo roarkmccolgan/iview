@@ -96,7 +96,7 @@ img.main{
 	color: #E66B6B;
 }
 .intro{
-
+	padding: 30px;
 }
 .action{
 	padding: 10px 30px;
@@ -131,8 +131,9 @@ h1, h2{
 	margin-bottom: 20px;
 }
 .intro h2{
-	font-size: 12px;
+	font-size: 16px;
 	color: #E66B6B;
+	margin-bottom: 10px;
 }
 
 .btn-q {
