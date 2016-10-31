@@ -4,7 +4,7 @@ var App = (function () {
     animate: false,
     popover: true,
     assetsPath: '/js',
-    imgPath: '/img',
+    imgPath: '/images/terminal/',
     jsPath: '/js',
     libsPath: '/js',
     tooltip: true

@@ -17,13 +17,15 @@
 	<!-- Bootstrap core CSS -->
 	<link href="{{ asset('js/bootstrap/dist/css/bootstrap.css') }}" rel="stylesheet">
 	<link rel="stylesheet" href="{{ asset('/fonts/font-awesome-4/css/font-awesome.min.css') }}">
+	<!--if lt IE 9script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+    -->
 
 	<link rel="stylesheet" type="text/css" href="{{ asset('js/jquery.nanoscroller/nanoscroller.css') }}" />
 
 	
 	@show	
 	<!-- Template CSS -->
-	<link href="{{ asset('/css/style.css') }}" rel="stylesheet" />
+	<link href="{{ asset('css/style.css') }}" rel="stylesheet" />
 </head>
 
 <body>
@@ -84,12 +86,7 @@
     //initialize the javascript
     App.init();
     @section('load')
-    	App.dataTables();
-        $('.md-trigger').modalEffects();
-
-        $('#downloadBut').click(function(e){
-        	document.getElementById('my_iframe').src = 'sage_assessment.xlsx';
-        })
+    	
     @show
 });
 </script>

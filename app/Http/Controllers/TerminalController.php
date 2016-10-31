@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use Analytics;
+use Assessment;
+use Carbon\Carbon;
 
 class TerminalController extends Controller
 {

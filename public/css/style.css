@@ -230,7 +230,7 @@ pre {
   text-align: left;
   width: 206px;
   color: #FFF;
-  background: url(../images/logo.png) no-repeat 0 11px;
+  background: url(../images/terminal/logo.png) no-repeat 0 11px;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
   font-weight: 300;
   font-size: 19px;
@@ -718,7 +718,7 @@ body.modal-open,
   border-bottom: 1px solid #2f323a;
 }
 .cl-vnavigation .parent a {
-  background: url("../images/arrow.png") no-repeat scroll right 14px top 18px transparent;
+  background: url("../images/terminal/arrow.png") no-repeat scroll right 14px top 18px transparent;
 }
 .cl-vnavigation li a {
   border-top: 1px solid #32353e;
@@ -931,7 +931,7 @@ body.modal-open,
   color: #FFF;
 }
 #sub-menu-nav ul:after {
-  background: url(../images/menu-tail-left.png) no-repeat right 10px;
+  background: url(../images/terminal/menu-tail-left.png) no-repeat right 10px;
   top: 0px;
   content: "";
   display: inline-block;
@@ -1400,7 +1400,7 @@ input::-webkit-input-speech-button {
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
 }
 body.texture {
-  background: url(../images/bg.jpg);
+  background: url(../images/terminal/bg.jpg);
 }
 .gallery-cont .item {
   width: 25%;
@@ -2365,17 +2365,17 @@ div.dataTables_length label select {
   text-align: center;
 }
 .butpro .stat .equal {
-  background: url("../images/stat-same.png") no-repeat scroll left center transparent;
+  background: url("../images/terminal/stat-same.png") no-repeat scroll left center transparent;
   font-size: 12px;
   padding: 0 0 0 19px;
 }
 .butpro .stat .up {
-  background: url("../images/stat-up.png") no-repeat scroll left center transparent;
+  background: url("../images/terminal/stat-up.png") no-repeat scroll left center transparent;
   font-size: 12px;
   padding: 0 0 0 19px;
 }
 .butpro .stat .down {
-  background: url("../images/stat-down.png") no-repeat scroll left center transparent;
+  background: url("../images/terminal/stat-down.png") no-repeat scroll left center transparent;
   font-size: 12px;
   padding: 0 0 0 19px;
 }
@@ -2529,7 +2529,7 @@ div.dataTables_length label select {
   color: #FFF;
 }
 .widget-block.weather-box .photo {
-  background: url("../images/sunset2.jpg") no-repeat center center;
+  background: url("../images/terminal/sunset2.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -3989,7 +3989,7 @@ h1:first-child {
   background-color: #43a2ff;
 }
 .chat-wi .chat-conv .c-bubble span {
-  background: url(../images/bubble-tail.png) no-repeat;
+  background: url(../images/terminal/bubble-tail.png) no-repeat;
   height: 21px;
   width: 12px;
   display: block;
@@ -4020,7 +4020,7 @@ h1:first-child {
   left: 0;
 }
 .chat-wi .sent .c-bubble span {
-  background: url(../images/bubble-tail-l-white.png) no-repeat;
+  background: url(../images/terminal/bubble-tail-l-white.png) no-repeat;
   left: -12px;
 }
 .chat-wi .chat-in {
@@ -4661,7 +4661,7 @@ a.list-group-item:hover + a.list-group-item {
   outline: none;
 }
 .btn-group.btn-blurbg {
-  background: url("../images/blur_bg.png") no-repeat;
+  background: url("../images/terminal/blur_bg.png") no-repeat;
   padding: 40px;
   margin-bottom: 20px;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
@@ -5727,7 +5727,7 @@ ul.timeline li > .date {
     position: relative;
   }
   .sb-collapsed .cl-vnavigation .parent > a {
-    background: url("../images/arrow.png") no-repeat scroll right 14px top 18px rgba(0, 0, 0, 0);
+    background: url("../images/terminal/arrow.png") no-repeat scroll right 14px top 18px rgba(0, 0, 0, 0);
   }
   .sb-collapsed .cl-vnavigation li a span {
     opacity: 1;
