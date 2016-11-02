@@ -3,8 +3,8 @@ var App = (function () {
   var config = {//Basic Config
     animate: false,
     popover: true,
-    assetsPath: '/js',
-    imgPath: '/images/terminal/',
+    assetsPath: '/',
+    imgPath: 'images/terminal',
     jsPath: '/js',
     libsPath: '/js',
     tooltip: true
@@ -56,6 +56,12 @@ var App = (function () {
       //Extends basic config with options
       $.extend( config, options );
 
+      //AJAX Setup
+      jQuery.ajaxSetup({
+          headers: {
+              'X-CSRF-TOKEN': $('meta[name="token"]').attr('value')
+          }
+      });
       /*VERTICAL MENU*/
       $(".cl-vnavigation li ul").each(function(){
         $(this).parent().addClass("parent");

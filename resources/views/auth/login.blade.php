@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="">
-	<link rel="shortcut icon" href="{{ asset('/images/favicon.png') }}">
+	<link rel="shortcut icon" href="{{ asset('/images/terminal/favicon.png') }}">
 
 	<title>IDC Terminal</title>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700,800' rel='stylesheet' type='text/css'>
@@ -28,7 +28,7 @@
 	<div class="middle-login">
 		<div class="block-flat">
 			<div class="header">							
-				<h3 class="text-center"><img class="logo-img" src="{{ asset('/images/logo.png') }}" alt="logo"/>IDC Terminal</h3>
+				<h3 class="text-center"><img class="logo-img" src="{{ asset('/images/terminal/logo.png') }}" alt="logo"/>IDC Terminal</h3>
 			</div>
 			<div>
 				<form style="margin-bottom: 0px !important;" role="form" class="form-horizontal" action="{{ url('/login') }}" method="post">

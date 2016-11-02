@@ -17,7 +17,7 @@ class ToolTableSeeder extends Seeder
             'title' => 'Cloud Development',
             'sub_title' => 'Advancing your maturity',
             'company_id' => 2,
-            'gapropertyid' => 'UA-156016-34',
+            'gapropertyid' => '129112297',
             'template' => 'default',
             'created_at' => Carbon::now(),
         ]);
@@ -26,7 +26,7 @@ class ToolTableSeeder extends Seeder
             'title' => 'IDC\'s Cyber Risk Assessment',
             'sub_title' => 'Sponsored by FireEye and Hewlett Packard Enterprise',
             'company_id' => 3,
-            'gapropertyid' => 'UA-156016-34',
+            'gapropertyid' => '130538540',
             'template' => 'sublime',
             'created_at' => Carbon::now(),
         ]);
@@ -35,7 +35,7 @@ class ToolTableSeeder extends Seeder
             'title' => 'IDC\'s Cloud Readiness Assessment',
             'sub_title' => 'Driving Cloud Development',
             'company_id' => 4,
-            'gapropertyid' => 'UA-156016-34',
+            'gapropertyid' => '131027536',
             'template' => 'default',
             'created_at' => Carbon::now(),
         ]);

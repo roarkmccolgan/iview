@@ -3,6 +3,7 @@
 namespace App\Http\Middleware;
 
 use App\Url;
+use App\Tracker;
 use Closure;
 use Illuminate\Support\Facades\Config;
 
@@ -32,6 +33,14 @@ class RouteByURL
             $request->session()->put('company.name', $url->urlable->company->name);
             $request->session()->put('company.id', $url->urlable->company->id);
             $request->session()->put('company.alias', strtolower(str_replace(" ", "_", $url->urlable->company->name)));
+            if($request->input('utm')){
+                $tracker = Tracker::where('tool_id',$url->urlable_id)
+                ->where('code',$request->input('utm'))->first();
+                if($tracker){
+                    $tracker->increment('views');
+                }
+                $request->session()->put('utm', $request->input('utm'));
+            }
 
             //add model to request
             $request->attributes->add(['product'=> $url->urlable]);

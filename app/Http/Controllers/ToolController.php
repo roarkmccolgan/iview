@@ -7,7 +7,7 @@ use App\Http\Requests;
 use App\Http\Requests\CreateToolRequest;
 use App\Tool;
 use App\Url;
-use App\language;
+use App\Language;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
@@ -68,7 +68,7 @@ class ToolController extends Controller
     public function create()
     {
         $companies = Company::all();
-        $languages = language::lists('name', 'id');
+        $languages = Language::lists('name', 'id');
         return view('tool.create', compact(['companies','languages']));
     }
     /**
@@ -236,6 +236,10 @@ class ToolController extends Controller
             'quiz' => $this->quiz,
             'source' => session('source'),
             'btnclass'=>$btnclass,
+            'extra_fields'=>[
+                'relationship',
+                'qualification',
+            ]
         );
         return view('tool.'.session('template').'.complete',$vars);
     }
@@ -289,16 +293,26 @@ class ToolController extends Controller
                 $assessment->lname = $validate_data['sname'];
                 $assessment->email = $validate_data['email'];
                 $assessment->company = $validate_data['company'];
+                $assessment->relationship = $validate_data['relationship'];
+                $assessment->qualification = $validate_data['qualification'];
                 $assessment->country = $validate_data['country'];
                 $assessment->tel = $validate_data['phone'];
                 $assessment->referer = session('referer');
                 $assessment->quiz = json_encode($this->quiz);
                 $assessment->result = json_encode($this->howfit);
-
-                
                 $assessment->save();
+
                 $this->assessmentid = $assessment->id;
                 $validate_data['assessmentid'] = $assessment->id;
+
+                //check UTM
+                if ($request->session()->has('utm')) {
+                    $tracker = Tracker::where('tool_id',session('product.id'))
+                    ->where('code',session('utm'))->first();
+                    if($tracker){
+                        $tracker->increment('completions');
+                    }
+                }
                 
                 //generate report
                 $this->generateReport();

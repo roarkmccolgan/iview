@@ -68,7 +68,7 @@ var App = (function () {
           padding: "5px",
           'color':'#fff',
           'border-radius':'2px',
-          'font-size':'11px',
+          'font-length':'11px',
           "background-color": "#000",
           opacity: 0.80
         }).appendTo("body").fadeIn(200);
@@ -137,7 +137,7 @@ var App = (function () {
         [30, 31 + randValue()]
       ];
 
-      if ($('#site_statistics').size() != 0) {
+      if ($('#site_statistics').length != 0) {
         $('#site_statistics_loading').hide();
         $('#site_statistics_content').show();
         var plot_statistics = $.plot($("#site_statistics"), [{

@@ -75,6 +75,7 @@
 </div> 
 
 </div>
+@include('_layouts.footer')
 @section('javascript')
 <script src="{{ asset('/js/backend.js') }}"></script>
 <script src="{{ asset('js/bootstrap/dist/js/bootstrap.min.js')}}"></script>

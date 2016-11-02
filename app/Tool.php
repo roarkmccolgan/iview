@@ -31,11 +31,21 @@ class Tool extends Model
 
     public function assessments()
     {
-        return $this->hasMany('App\Assessment');
+        return $this->hasMany('App\Assessment')->select(['id','tool_id','fname','lname','email','company','country','tel','referer','code','score','rating','result','created_at']);
+    }
+
+    public function trackers()
+    {
+        return $this->hasMany('App\Tracker');
     }
 
     public function urls()
     {
         return $this->morphMany('App\Url', 'urlable');
+    }
+
+    public function user()
+    {
+        return $this->belongsToMany('App\User');
     }
 }

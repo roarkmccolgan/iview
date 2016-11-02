@@ -17,7 +17,7 @@ class UrlsTableSeeder extends Seeder
             'subdomain' => 'sage',
             'language_id' => 1,
             'urlable_id' => 1,
-            'urlable_type' => '\App\Tool',
+            'urlable_type' => 'App\Tool',
             'created_at' => Carbon::now(),
         ]);
         DB::table('urls')->insert([
@@ -25,7 +25,7 @@ class UrlsTableSeeder extends Seeder
             'subdomain' => 'fireeye',
             'language_id' => 1,
             'urlable_id' => 2,
-            'urlable_type' => '\App\Tool',
+            'urlable_type' => 'App\Tool',
             'created_at' => Carbon::now(),
         ]);
         DB::table('urls')->insert([
@@ -33,7 +33,7 @@ class UrlsTableSeeder extends Seeder
             'subdomain' => 'redhat',
             'language_id' => 1,
             'urlable_id' => 3,
-            'urlable_type' => '\App\Tool',
+            'urlable_type' => 'App\Tool',
             'created_at' => Carbon::now(),
         ]);
     }

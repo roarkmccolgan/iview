@@ -8,12 +8,12 @@
 @stop
 
 @section('content')
-  
+
 <div class="page-head">
-	<h2>{{$tool->company->name}} {{$tool->title}} <sub>Assessments</sub></h2>
+	<h2>{{$tool->company->name}} {{$tool->title}} <sub>Tracking</sub></h2>
 	<ol class="breadcrumb">
-		<li><a href="#">Home</a></li>
-		<li class="active">Assessments</li>
+		<li><a href="/">Home</a></li>
+		<li class="active">Tracking</li>
 	</ol>
 </div>
 <div class="cl-mcont">
@@ -21,36 +21,46 @@
 	<div class="row">
 		<div class="col-md-12">
 			<div class="block-flat">
-
+				@if (session('status'))
+					<div class="alert alert-{{session('status.type')}}">
+						<button type="button" data-dismiss="alert" aria-hidden="true" class="close">×</button>
+						<i class="fa fa-times-circle sign"></i><strong>{{session('status.type')}}!</strong>
+						{{session('status.message')}}
+					</div>
+				@endif
 				<div class="content">
-					<button id="openModal" data-modal="download-modal" class="btn btn-success pull-left md-trigger"><i class="fa fa-download"></i> Download Report</button><div class="clearfix"></div>
+					<a href="{{url('/admin/tracking/new')}}" class="btn btn-success pull-right"><i class="fa fa-plus"></i> Add New</a><div class="clearfix"></div>
 					<div>
 						<table id="datatable-icons" class="table table-bordered">
 							<thead>
 								<tr>
-									<th>Resp ID</th>
-									<th>First Name</th>
-									<th>Last Name</th>
-									<th>Date</th>
-									<th>Company</th>
+									<th>Assignee</th>
 									<th>Email</th>
-									<th>Link Code</th>
-									<th>Maturity</th>
-									<th>Action</th>
+									<th>Code</th>
+									<th>link</th>
+									<th>Status</th>
+									<th>Views</th>
+									<th>Completions</th>
+									<th></th>
 								</tr>
 							</thead>
 							<tbody>
-								@foreach($tool->assessments as $key=>$assessment)
+								@foreach($tool->trackers as $key=>$tracker)
 								<tr class="odd gradeX">
-									<td>{{$assessment->id}}</td>
-									<td><strong>{{$assessment->fname}}</strong></td>
-									<td><strong>{{$assessment->lname}}</strong></td>
-									<td>{{$assessment->created_at->toDateString()}}</td>
-									<td>{{$assessment->company}}</td>
-									<td><a href="mailto:{{$assessment->email}}">{{$assessment->email}}</a></td>
-									<td>{{$assessment->code}}</td>
-									<td>{{$assessment->rating}}</td>
-									<td data-ass-id="{{$assessment->id}}"></td>
+									<td><strong>{{$tracker->name}}</strong></td>
+									<td><a href="mailto:{{$tracker->email}}">{{$tracker->email}}</a></td>
+									<td>{{$tracker->code}}</td>
+									<td>
+										<ul>
+											@foreach($tool->urls as $url)
+											<li>http://{{$url->subdomain.'.'.$url->domain.'/?utm='.$tracker->code}}</li>
+											@endforeach
+										</ul>
+									</td>
+									<td>{{$tracker->active==1 ? 'Active':'Inactive'}}</td>
+									<td>{{$tracker->views}}</td>
+									<td>{{$tracker->completions}}</td>
+									<td data-trac-id="{{$tracker->id}}"></td>
 								</tr>
 								@endforeach
 							</tbody>
@@ -121,7 +131,6 @@
 @parent
 <script type="text/javascript" src="{{ asset('/js/app.js') }}"></script>
 <script type="text/javascript" src="{{ asset('/js/cleanzone.js') }}"></script>
-<script type="text/javascript" src="{{ asset('/js/bootstrap.datetimepicker/js/bootstrap-datetimepicker.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('/js/jquery.niftymodals/js/jquery.modalEffects.js') }}"></script>
 <script type="text/javascript" src="{{ asset('/js/jquery.datatables/js/jquery.dataTables.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('/js/jquery.datatables/plugins/bootstrap/3/dataTables.bootstrap.js') }}"></script>
@@ -130,40 +139,18 @@
 @stop
 
 @section('load')
-	App.init();
 	App.dataTables();
 	$('.md-trigger').modalEffects();
 
-	$('#fromDay').val(moment('{{$tool->start_date}}').format('DD'));
-	$('#fromMonth').val(moment('{{$tool->start_date}}').format('MM'));
-	$('#fromYear').val(moment('{{$tool->start_date}}').format('YYYY'));
-
-	$('#toDay').val(moment().format('DD'));
-	$('#toMonth').val(moment().format('MM'));
-	$('#toYear').val(moment().format('YYYY'));
-	
-
-	$('#downloadBut').click(function(e){
-		var that = this;
-		/*$.get( "{{URL('admin/assessments/download')}}", { new: $('#onlyNew').checked, dateFrom: moment($('#fromDay').val()+"-"+$('#fromMonth').val()+"-"+$('#fromYear').val(), "DD-MM-YYYY").format('DD-MM-YYYY'), dateTo: moment($('#toDay').val()+"-"+$('#toMonth').val()+"-"+$('#toYear').val(), "DD-MM-YYYY").format('DD-MM-YYYY'); })
-			.done(function( data ) {
-				console.log( "Data Loaded: ", data);
-				
-			});*/
-		var queryString = "new="+document.getElementById('onlyNew').checked+"&dateFrom="+moment($('#fromDay').val()+"-"+$('#fromMonth').val()+"-"+$('#fromYear').val(), "DD-MM-YYYY").format('DD-MM-YYYY')+"&dateTo="+moment($('#toDay').val()+"-"+$('#toMonth').val()+"-"+$('#toYear').val(), "DD-MM-YYYY").format('DD-MM-YYYY');
-		window.open("{{URL('admin/assessments/download')}}?"+queryString);
-		//document.getElementById('my_iframe').src = 'sage_assessment.xlsx';
-	})
-
 	$('#datatable-icons tbody').on( 'click', 'a.delete', function () {
 		var that = this;
-		$.post( "/api/assessments/delete/"+$(this).parents('td').data('ass-id'))
-			.done(function( data ) {
-				console.log( "Data Loaded: ", data);
-				$('#datatable-icons').DataTable()
-					.row( $(that).parents('tr') )
-					.remove()
-					.draw();
-			});
+		$.post( "/api/trackers/delete/"+$(this).parents('td').data('trac-id'))
+		.done(function( data ) {
+			console.log( "Data Loaded: ", data);
+			$('#datatable-icons').DataTable()
+			.row( $(that).parents('tr') )
+			.remove()
+			.draw();
+		});
 	});
 @stop

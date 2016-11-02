@@ -25,4 +25,20 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    /**
+     * @return User Tools
+     */
+    public function tools()
+    {
+        return $this->belongsToMany('App\Tool');
+    }
+
+    /**
+     * @return User Tools
+     */
+    public function iviews()
+    {
+        return $this->belongsToMany('App\Iview');
+    }
 }

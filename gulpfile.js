@@ -12,7 +12,9 @@ var elixir = require('laravel-elixir');
  */
 
 elixir(function(mix) {
-    mix.scripts([
+    mix.copy(
+        'node_modules/jquery/dist/jquery.min.js', 'resources/assets/js/vendor/jquery.js'
+    ).scripts([
     	'vendor/grunticon.loader.js',
     	'vendor/vue.min.js',
     	'vendor/vue-resource.min.js',

@@ -4,10 +4,10 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Assessment extends Model
+class Tracker extends Model
 {
     protected $fillable = [
-        'fname', 'lname', 'email', 'company', 'tel', 'score', 'rating', 'quiz', 'result', 'downloaded'
+        'tool_id','name', 'email', 'code', 'views', 'completions','active'
     ];
     
     public function tool()

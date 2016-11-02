@@ -1,4 +1,5 @@
-<ul class="cl-vnavigation">          
+<ul class="cl-vnavigation">
+	@role('super')        
 	<li class="{{ Ekko::isActiveURL('/admin/iviews') }}"><a href="{{URL('/admin/iviews')}}"><i class="fa fa-play-circle-o"></i><span>iViews</span></a>
 		<ul class="sub-menu">
 			<li class="{{ Ekko::isActiveURL('/admin/iviews') }}"><a href="{{URL('/admin/iviews')}}">All</a></li>
@@ -11,21 +12,24 @@
 			<li class="{{ Ekko::isActiveURL('/admin/tools/create') }}"><a href="{{URL('/admin/tools/create')}}">New Tool</a></li>
 		</ul>
 	</li>
+	@endrole
 	<!-- Product Specific Menu -->
-	<li><a href="#"><i class="fa fa-home"></i><span>Sage Cloud</span></a>
+	@if($tool)
+	<li><a href="#"><i class="fa fa-home"></i><span>{{$tool->company->name}}</span></a>
 		<ul class="sub-menu">
-			<li class="active">
-				<a href="index.html">Dashboard</a>
+			<li class="{{ Ekko::isActiveURL('/admin') }}">
+				<a href="{{URL('/admin')}}">Dashboard</a>
 			</li>
-			<li>
-				<a href="assessments.html">Assessments</a>
+			<li class="{{ Ekko::isActiveURL('/admin/assessments') }}">
+				<a href="{{URL('/admin/assessments')}}">Assessments</a>
 			</li>
-			<li>
-				<a href="tracking.html">Tracking</a>
+			<li class="{{ Ekko::isActiveURL('/admin/tracking') }}">
+				<a href="{{URL('/admin/tracking')}}">Tracking</a>
 			</li>
-			<li>
-				<a href="users.html">Users</a>
+			<li class="{{ Ekko::isActiveURL('/admin/users') }}">
+				<a href="{{URL('/admin/users')}}">Users</a>
 			</li>
 		</ul>
 	</li>
+	@endif()
 </ul>

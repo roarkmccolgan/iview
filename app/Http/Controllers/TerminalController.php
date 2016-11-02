@@ -8,6 +8,7 @@ use App\Http\Requests;
 use Analytics;
 use Assessment;
 use Carbon\Carbon;
+use JavaScript;
 
 class TerminalController extends Controller
 {
@@ -19,19 +20,8 @@ class TerminalController extends Controller
     public function dashboard(Request $request)
     {
         $tool = $request->get('product');
-        return view('admin.dashboard', compact('tool'));
-    }
+        $tool->load('trackers','urls');
 
-    /**
-     * Show the product assessments
-     *
-     * @return Response
-     */
-    public function showAssessments(Request $request)
-    {
-    	$tool = $request->get('product');
-        $tool->load('assessments');
-        //return $tool;
-        return view('admin.assessments', compact('tool'));
+        return view('admin.dashboard', compact('tool'));
     }
 }

@@ -67,6 +67,42 @@
                                 <input type="text" value="{{$source['C_Company']?$source['C_Company']:''}}" name="company" class="form-control req">
                                 <span>{!!trans('general.errorCompany')!!}</span>
                             </div>
+                            @if($extra_fields)
+                            <div class="col-md-6 form-group{{$errors->has('relationship')?' error':''}}">
+                                <label>{!!trans('general.relationship')!!}*</label>
+                                <select id="relationship" name="relationship" class="form-control sel req">
+                                    <option value="">Please select</option>
+                                    <option value="{!!trans('general.rel1')!!}">{!!trans('general.rel1')!!}</option>
+                                    <option value="{!!trans('general.rel2')!!}">{!!trans('general.rel2')!!}</option>
+                                    <option value="{!!trans('general.rel3')!!}">{!!trans('general.rel3')!!}</option>
+                                    <option value="{!!trans('general.rel4')!!}">{!!trans('general.rel4')!!}</option>
+                                    <option value="{!!trans('general.rel5')!!}">{!!trans('general.rel5')!!}</option>
+                                    <option value="{!!trans('general.rel6')!!}">{!!trans('general.rel6')!!}</option>
+                                    <option value="{!!trans('general.rel7')!!}">{!!trans('general.rel7')!!}</option>
+                                    <option value="{!!trans('general.rel8')!!}">{!!trans('general.rel8')!!}</option>
+                                    <option value="{!!trans('general.rel9')!!}">{!!trans('general.rel9')!!}</option>
+                                    <option value="{!!trans('general.rel10')!!}">{!!trans('general.rel10')!!}</option>
+                                </select>
+                                <span>{!!trans('general.errorRelationship')!!}</span>
+                            </div>
+                            <div class="col-md-6 form-group{{$errors->has('qualification')?' error':''}}">
+                                <label>{!!trans('general.qualification')!!}*</label>
+                                <select id="qualification" name="qualification" class="form-control sel req">
+                                    <option value="">Please select</option>
+                                    <option value="{!!trans('general.qual1')!!}">{!!trans('general.qual1')!!}</option>
+                                    <option value="{!!trans('general.qual2')!!}">{!!trans('general.qual2')!!}</option>
+                                    <option value="{!!trans('general.qual3')!!}">{!!trans('general.qual3')!!}</option>
+                                    <option value="{!!trans('general.qual4')!!}">{!!trans('general.qual4')!!}</option>
+                                    <option value="{!!trans('general.qual5')!!}">{!!trans('general.qual5')!!}</option>
+                                    <option value="{!!trans('general.qual6')!!}">{!!trans('general.qual6')!!}</option>
+                                    <option value="{!!trans('general.qual7')!!}">{!!trans('general.qual7')!!}</option>
+                                    <option value="{!!trans('general.qual8')!!}">{!!trans('general.qual8')!!}</option>
+                                    <option value="{!!trans('general.qual9')!!}">{!!trans('general.qual9')!!}</option>
+                                    <option value="{!!trans('general.qual10')!!}">{!!trans('general.qual10')!!}</option>
+                                </select>
+                                <span>{!!trans('general.errorQualification')!!}</span>
+                            </div>
+                            @endif
                             <div class="col-md-12 form-group{{$errors->has('country')?' error':''}}">
                                 <label>{!!trans('general.country')!!}*</label>
                                 <select id="country" name="country" class="form-control sel req">

@@ -21,7 +21,7 @@ html {
 body {
 	font-family: Overpass, "Trebuchet MS", Helvetica, sans-serif;
 	background-color: transparent;
-	font-size: 14px;
+	font-size: 18px;
 	height: 100%;
 	margin-bottom: 40px;
 	color: #666666;
@@ -30,8 +30,15 @@ a{
 	color: #CC0000;
 }
 h1{
-	font-size: 20px;
-	color: #AA0000;
+	font-size: 24px;
+	font-weight: normal;
+	color: #CC0000;
+	margin-top: 10px;
+	padding-bottom: 10px;
+	text-transform: uppercase;
+}
+h1 small{
+	display: block;
 }
 h2{
 	font-size: 15px;
@@ -121,7 +128,8 @@ background-image: radial-gradient(at 50% -16%, rgba(255,255,255,0.05) 0%, rgba(0
 background-blend-mode: normal,multiply;
 }
 #msform hr{
-	border-top: 1px solid #666
+	border-top: 1px solid #666;
+	margin-top: 0;
 }
 .splash {
 	margin-top: 20%;
@@ -216,10 +224,15 @@ span.logo{
 .btn-primary{
 	background-color: #CC0000;
     border-color: #CC0000;
+    text-transform: uppercase;
+    font-weight: 400;
 }
 .btn-primary:hover,.btn-primary:active,.btn-primary:focus {
 	background-color: #AD0000;
     border-color: #CC0000;
+}
+.startbut{
+	
 }
 
 .rel{
@@ -250,7 +263,6 @@ span.logo{
 	color: #A2A2A2;
 	padding: 10px 20px 10px 20px;
 	text-decoration: none;
-	font-weight: lighter;
 	margin: 15px auto;
 	width: 90%;
 }
@@ -274,7 +286,6 @@ span.logo{
 	-moz-box-shadow: 0px 0px 3px #666666;
 	box-shadow: 0px 0px 3px #666666;*/
 	color: #A2A2A2;
-	font-weight: normal;
 	cursor: pointer;
 }
 #msform .btn-q:hover,  #msform .btn-q:focus, #msform .icheckbox.checked + .checktext span, #msform .icheckbox.hover + .checktext span {
@@ -361,8 +372,10 @@ span.instruct {
 
 /*headings*/
 .fs-title {
+	font-size: 18px;
+	font-weight: bold;
 	text-transform: uppercase;
-	color: #CC0000;
+	color: #CF3E3E;
 	margin-bottom: 10px;
 	margin-top: 0px;
 }
