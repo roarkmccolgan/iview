@@ -22,7 +22,8 @@ return array(
     ',
     'introduction-image' => 'report1.jpg',
     'overall' => array(
-        'title'=>'Overall Cloud Partner Maturity',
+        'title'=>'Your Overall Cloud Readiness Assessment is at',
+        'hidetitle'=>'true',
         'image'=>'',
         'stage1'=>'
             <p>

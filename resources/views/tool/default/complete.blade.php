@@ -13,7 +13,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                    <h1>{{Lang::get('general.'.session('product.id').'title')}} <small>{{Lang::get('general.'.session('product.id').'sub-title')}}</small></h1>
+                    <h1>{{Lang::get('general.'.session('product.id').'completetitle')}} <small>{{Lang::get('general.'.session('product.id').'sub-title')}}</small></h1>
                 </div>
                 <div class="col-md-2" style="text-align: right">
                     <img src="/css/templates/default/img/idclogo.png" alt="">
@@ -29,11 +29,9 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div style="padding: 20px;">
-                                <strong>Your Results are in</strong>
-                                <h1>{{$heading}}</h1>
-                                <h3>Your Overall Cloud Readiness Assessment is at</h3>
-                                <h2>{{$result}}</h2>
-                                <div style="margin-left: 30px;">
+                                <strong>{{$heading}}</strong>
+                                <h1>{{$result}}</h1>
+                                <div style="margin-left: 30px; font-size: 16px; line-height: 24px">
                                     <p>{{$sub1}}</p>
                                     {!!trans('general.'.session('product.id').'fullreport')!!}
                                 </div>

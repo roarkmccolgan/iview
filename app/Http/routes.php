@@ -57,6 +57,12 @@ Route::group(['domain' => '{tool}.idcgauge.net'], function ($tool) {
     Route::get('/template/default/report/header', function(){
     	return View::make('tool.default.report.header');
     });
+    Route::get('/template/default/report/footer', function(){
+    	$product_id = session('product.id');
+    	$company_alias = session('company.alias');
+    	$url = session('url');
+    	return View::make('tool.default.report.footer', compact(['url','product_id','company_alias']));
+    });
 
     Route::group(['prefix' => 'quiz'], function(){
 

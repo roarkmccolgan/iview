@@ -70,9 +70,11 @@ class PdfController extends Controller
 		]);
 		$vars = [];
 		$count = 0;
+		$titles = [];
 		foreach (config('baseline_'.session('product.id')) as $section => $values) {
 			$vars['sections'][] = [
 				'title' => trans(session('product.alias').'.'.$section.'.title'),
+				'hidetitle' => Lang::has(session('product.alias').'.'.$section.'.hidetitle') ? true:false,
 				'seckey' => $section,
 				'image' => Lang::has(session('product.alias').'.'.$section.'.image') ? trans(session('product.alias').'.'.$section.'.image'):false,
 				'imagefloat' => isset($values['floatimage']) ? $values['floatimage']:'',
@@ -82,17 +84,19 @@ class PdfController extends Controller
 				'score' => session('result.'.$section.'.score'),
 				'paragraph' => trans(session('product.alias').'.'.$section.'.'.session('result.'.$section.'.rating'))
 			];
-
+			$titles['page'.$count] = trans(session('product.alias').'.'.$section.'.title');
+			$count++;
 		}
 		$vars['introImage'] = trans(session('product.alias').'.introduction-image');
 		$vars['introRating'] = trans(session('product.alias').'.'.session('result.overall.rating'));
 
 		$vars['introChart'] = false;
 
-		//return session('result');
-		//return view('tool.default.report.report',$vars);
+		//return $vars['sections'];
+		//return ('tool.default.report.report',$vars);
 
-        $pdf = PDF::loadView('tool.default.report.report',$vars)->setOption('margin-top', 30)->setOption('margin-left', 0)->setOption('margin-right', 0)->setOption('window-status','chartrendered')->setOption('header-html','http://redhat.idcgauge.net//template/default/report/header')->setOption('header-spacing',5);
+        $pdf = PDF::loadView('tool.default.report.report',$vars)->setOption('margin-top', 25)->setOption('margin-left', 0)->setOption('margin-right', 0)->setOption('window-status','chartrendered')->setOption('header-html','http://redhat.idcgauge.net//template/default/report/header')->setOption('header-spacing',0)->setOption('footer-html','http://redhat.idcgauge.net//template/default/report/footer')->setOption('footer-spacing',5)
+        	->setOption('replace', $titles);
 		return $pdf->inline('invoice.pdf');
     }
 }

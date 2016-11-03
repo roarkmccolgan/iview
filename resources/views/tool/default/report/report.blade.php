@@ -13,13 +13,13 @@
 		@if(isset($introImage))
 		<table class="" style="width: 100%;" cellpadding="0" cellspacing="0">
 			<tr>
-				<td colspan="2"><img src="{{session('url')}}/images/tools/{{session('product.id')}}/{{$introImage}}" style="display: block; width: 210mm; margin-top: -5mm"><!-- report1.jpg --></td>
+				<td colspan="2"><img src="{{session('url')}}/images/tools/{{session('product.id')}}/{{$introImage}}" style="display: block; width: 100%;"><!-- report1.jpg --></td>
 			</tr>
 		</table>
 		@endif
-		
+		<div class="spacer"></div>
 		@if($introChart)
-		<div style="float: left; margin-left: 10mm; width: 90mm;">
+		<div style="float: left; margin-left: 15mm; width: 95mm;">
 			<h2>Introduction</h2>
 			{!!trans(session('product.alias').'.introduction', ['result'=>$introRating])!!}
 		</div>
@@ -28,14 +28,19 @@
 		</div>
 		@columnchart('Stocks', 'stocks-div')
 		@else
-		<div style="margin-left: 10mm; width: 140mm;">
+		<div style="margin-left: 20mm; width: 140mm;">
 			<h2>Introduction</h2>
 			{!!trans(session('product.alias').'.introduction',['result'=>$introRating])!!}
 		</div>
 		@endif
 		@foreach($sections as $key=>$section)
-		<div class="{{$section['pb']?'pb ':''}}section group" style="margin-left: 10mm; width: {{$section['image'] ? '170mm;':'140mm;' }};">
+		<div class="{{$section['pb']?'pb ':''}}section group" style="margin-left: 20mm; width: {{$section['image'] ? '170mm;':'140mm;' }};">
+			@if($section['pb'])
+			<div class="spacer"></div>
+			@endif
+			@if($section['hidetitle'])
 			<h2 class="{{$section['seckey']}}">{{$section['title']}}</h2>
+			@endif
 			<h4>{{$section['rating']}}</h4>
 			@if($section['image'])
 			<img src="{{session('url')}}/images/tools/{{session('product.id')}}/{{$section['image']}}" class="{{$section['imagefloat']}}" alt="">
