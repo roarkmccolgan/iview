@@ -34,7 +34,7 @@
 		</div>
 		@endif
 		@foreach($sections as $key=>$section)
-		<div class="{{$section['pb']?'pb ':''}}section group" style="margin-left: 20mm; width: {{$section['image'] ? '170mm;':'150mm;' }};">
+		<div class="{{$section['pb']?'pb ':''}}section group" style="margin-left: 20mm; width: 160mm">
 			@if($section['pb'])
 			<div class="spacer"></div>
 			@endif
