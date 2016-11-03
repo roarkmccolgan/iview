@@ -41,13 +41,13 @@ return array(
     '2sub-title'=>'Sponsored by FireEye and Hewlett Packard Enterprise',
     '2landing'=>'
 <h2>Your Cyber Risk Strategy Readiness</h2>
-<p>This shift to the digital economy brings a lot of value for businesses, but this also makes IT systems a target for nefarious activity. Hackers can steal important company information such as customer details or confidential designs. Companies can be blackmailed as their information is held hostage to ransomware.<br/> Insiders can be tempted to abuse their authority to bolster their bank balance. All of these put companies at significant risk for both brand and revenue.
+<p>As Digital Transformation forms a key pillar of modern business strategy and regulation starts to bite, Cyber Risk readiness has become a core enabler of digital infrastructure. IDC research shows that agile IT departments typically have the most mature approach to Cyber Risk management.
 </p>
 <p>
-Cyber Risk readiness, more than ever, is a core foundation element of digital infrastructure involving proactive investment and operation across monitoring, detection and response to evolving threats. To find out more about where you are on the Cyber Risk journey and how your approach to governance, risk and security compares to others, complete the IDC Cyber Risk Assessment Tool. This provides an independently sourced, facts-based framework to help you make informed decisions around your own Cyber Risk strategy and the benefits associated with increasing your readiness in the face of growing cyber threats.
+Complete the IDC Cyber Risk Assessment Tool to find out more about how ready you are.. This provides an independent, facts-based framework to help you make informed decisions around your Cyber Risk strategy and the benefits associated with increasing your readiness in the face of growing cyber threats.
 </p>
 <p>
-    It will take approximately 15 minutes to complete this Cyber Risk Assessment Tool.
+    By completing this survey, you’ll receive a custom report ranking your capabilities according to our benchmark based on 500 companies across Europe. The report will highlight where your capabilities are strong and advise on improvements where there are gaps.
 </p>',
     '2startbut'=>'Get Started',
     'adhoc'=>'Ad-Hoc', //reactive

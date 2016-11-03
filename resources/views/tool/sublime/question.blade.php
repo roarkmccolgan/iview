@@ -11,67 +11,79 @@
 @section('main')
     <div class="container">
         <div class="row">
-            <div class="question col-md-10 col-md-offset-1">
-                <div class="row">
-                    <div class="head">
-                        <h1>
-                            {{Lang::get('general.'.session('product.id').'title')}}
-                        </h1>
-                        <small>{{Lang::get('general.'.session('product.id').'sub-title')}}</small>
-                        <div class="idclogo"><img src="{{asset('images/tools/idclogoblk.png')}}" alt=""></div>
-                    </div>
-                </div>
-                <div class="intro clearfix">
-                    <div class="row fluidrow">
-                        <div class="col-sm-3 sidebar mh">
-                            <div class="vertical-steps list-group">
-                                @foreach ($menu as $key=>$pages)
-                                    @if($pages['display'])
-                                    <div class="list-group-item {{$pages['class']}} {{$pages['complete'] ? 'completed' : ($key == $section ? 'active':'')}}">
-                                        {{$pages['title']}}
-                                        <ul class="progressbar">
-                                        @foreach ($pages['pages'] as $pkey => $qpage)
-                                            <li class="{{$qpage['done'] ? 'completed' : ($pkey == 'page'.$page && $key==$section? 'active':'')}}">
-                                            </li>
-                                        @endforeach
-                                        </ul>
+            <div class="col-md-10 col-md-offset-1">
+                <div class="question">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="head">
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <h1>
+                                            {{Lang::get('general.'.session('product.id').'title')}}
+                                        </h1>
+                                        <small>{{Lang::get('general.'.session('product.id').'sub-title')}}</small>
                                     </div>
-                                    @endif
-                                @endforeach
+                                    <div class="col-md-3 text-right">
+                                        <img class="idclogo" src="{{asset('images/tools/idclogoblk.png')}}" alt="">
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-sm-9 mainbar mh">
-                            @foreach ($questions as $question)
-                                {!! Form::open(array('url' => 'quiz/'.$section.'/page'.$page,'id'=>'msform','class'=>'')) !!}
-                                    <!-- fieldsets -->
-                                    <fieldset>
-                                        <div id="mask"></div>
-                                        
-                                        <h2>{{$heading}} {{$menu[$section]['pages']['page'.$page]['progress']}}</h2>
-                                        <h1>{!!$question['question']!!}</h1>
-                                        {!! Form::errors($errors) !!}
-                                        {!!Form::hidden('section', $section)!!}
-                                        {!!Form::hidden('page', $page)!!}
-                                        @foreach ($questions as $num=>$q)
-                                            @if ($q['type'] == 'radio')
-                                                {!! Form::idcRadio($num,$q,'radio',$page) !!}
-                                            @elseif ($q['type'] == 'checkbox')
-                                                {!! Form::idcCheckbox($num,$q,$page) !!}
-                                            @elseif ($q['type'] == 'groupradio')
-                                                {!! Form::idcGroup($num,$q,$page,'radio') !!}
-                                            @elseif ($q['type'] == 'slider')
-                                                {!! Form::idcGroup($num,$q,$page,'radio',true) !!}
-                                            @elseif ($q['type'] == 'icon')
-                                                {!! Form::idcIcon($section,$q,$page,$num) !!}
-                                            @elseif ($q['type'] == 'button')
-                                                {!! Form::idcButton($section,$q,$page) !!}
-                                            @elseif ($q['type'] == 'text')
-                                                {!! Form::idcInput($num,$q,$page) !!}
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class=" clearfix">
+                                <div class="col-sm-3 sidebar mh">
+                                    <div class="vertical-steps list-group">
+                                        @foreach ($menu as $key=>$pages)
+                                            @if($pages['display'])
+                                            <div class="list-group-item {{$pages['class']}} {{$pages['complete'] ? 'completed' : ($key == $section ? 'active':'')}}">
+                                                {{$pages['title']}}
+                                                <!-- <ul class="progressbar">
+                                                @foreach ($pages['pages'] as $pkey => $qpage)
+                                                    <li class="{{$qpage['done'] ? 'completed' : ($pkey == 'page'.$page && $key==$section? 'active':'')}}">
+                                                    </li>
+                                                @endforeach
+                                                </ul> -->
+                                            </div>
                                             @endif
                                         @endforeach
-                                    </fieldset>
-                                {!! Form::close() !!}
-                            @endforeach
+                                    </div>
+                                </div>
+                                <div class="col-sm-9 mainbar mh">
+                                    @foreach ($questions as $question)
+                                        {!! Form::open(array('url' => 'quiz/'.$section.'/page'.$page,'id'=>'msform','class'=>'')) !!}
+                                            <!-- fieldsets -->
+                                            <fieldset>
+                                                <div id="mask"></div>
+                                                
+                                                <h2>{{$heading}} {{$menu[$section]['pages']['page'.$page]['progress']}}</h2>
+                                                <h1>{!!$question['question']!!}</h1>
+                                                {!! Form::errors($errors) !!}
+                                                {!!Form::hidden('section', $section)!!}
+                                                {!!Form::hidden('page', $page)!!}
+                                                @foreach ($questions as $num=>$q)
+                                                    @if ($q['type'] == 'radio')
+                                                        {!! Form::idcRadio($num,$q,'radio',$page) !!}
+                                                    @elseif ($q['type'] == 'checkbox')
+                                                        {!! Form::idcCheckbox($num,$q,$page) !!}
+                                                    @elseif ($q['type'] == 'groupradio')
+                                                        {!! Form::idcGroup($num,$q,$page,'radio') !!}
+                                                    @elseif ($q['type'] == 'slider')
+                                                        {!! Form::idcGroup($num,$q,$page,'radio',true) !!}
+                                                    @elseif ($q['type'] == 'icon')
+                                                        {!! Form::idcIcon($section,$q,$page,$num) !!}
+                                                    @elseif ($q['type'] == 'button')
+                                                        {!! Form::idcButton($section,$q,$page) !!}
+                                                    @elseif ($q['type'] == 'text')
+                                                        {!! Form::idcInput($num,$q,$page) !!}
+                                                    @endif
+                                                @endforeach
+                                            </fieldset>
+                                        {!! Form::close() !!}
+                                    @endforeach
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -9,6 +9,9 @@
 
         <link rel="stylesheet" href="{{asset('css/templates/cookieBar.css')}}" />
         <link rel="stylesheet" href="{{asset('css/templates/normalize.css')}}" />
+        @if(session('product.id')==2)
+			<link rel="stylesheet" href="{{asset('css/webfonts/metric.css')}}" />
+		@endif
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="{{asset('css/bootstrap/css/bootstrap.css')}}" />
         <link rel="stylesheet" href="{{asset('css/templates/'.session('template').'/skins/flat/red.css')}}" />
