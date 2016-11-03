@@ -43,7 +43,10 @@ li{
 	height: 5mm;
 
 }
-.pb {page-break-before: always;}
+.pb {
+	height: 5mm;
+	page-break-before: always;
+}
 
 .title{
 	background-color: #003F7D;
