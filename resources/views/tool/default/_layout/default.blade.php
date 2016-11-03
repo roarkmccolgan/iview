@@ -43,7 +43,7 @@
                 			<div class="col-xs-4">
 								<a href="/" class="restart"><i class="fa fa-chevron-left"></i> {{Lang::get('general.'.session('product.id').'restart')}}</a>
 							</div>
-							<div class="col-xs-4 col-xs-offset-4">
+							<div class="col-xs-8 text-right">
 								{{Lang::get('general.'.session('product.id').'assoc')}}<div class="icon-{{session('company.alias')}}" style="width: 76px; height: 34px; margin-left: 10px; display: inline-block; vertical-align: middle;" ></div>
 							</div>
                 		</div>
