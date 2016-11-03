@@ -19,7 +19,7 @@
 		@endif
 		<div class="spacer"></div>
 		@if($introChart)
-		<div style="float: left; margin-left: 15mm; width: 95mm;">
+		<div style="float: left; margin-left: 20mm; width: 95mm;">
 			<h2>Introduction</h2>
 			{!!trans(session('product.alias').'.introduction', ['result'=>$introRating])!!}
 		</div>
@@ -28,13 +28,13 @@
 		</div>
 		@columnchart('Stocks', 'stocks-div')
 		@else
-		<div style="margin-left: 20mm; width: 140mm;">
+		<div style="margin-left: 20mm; width: 145mm;">
 			<h2>Introduction</h2>
 			{!!trans(session('product.alias').'.introduction',['result'=>$introRating])!!}
 		</div>
 		@endif
 		@foreach($sections as $key=>$section)
-		<div class="{{$section['pb']?'pb ':''}}section group" style="margin-left: 20mm; width: {{$section['image'] ? '170mm;':'140mm;' }};">
+		<div class="{{$section['pb']?'pb ':''}}section group" style="margin-left: 20mm; width: {{$section['image'] ? '175mm;':'145mm;' }};">
 			@if($section['pb'])
 			<div class="spacer"></div>
 			@endif
