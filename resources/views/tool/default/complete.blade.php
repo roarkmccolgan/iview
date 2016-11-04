@@ -12,11 +12,11 @@
     <nav class="navbar navbar-default">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <h1>{{Lang::get('general.'.session('product.id').'completetitle')}} <small>{{Lang::get('general.'.session('product.id').'sub-title')}}</small></h1>
+                <div class="col-md-6 col-md-offset-2">
+                    <h1>{{Lang::get('general.'.session('product.id').'title')}} <small>{{Lang::get('general.'.session('product.id').'sub-title')}}</small></h1>
                 </div>
                 <div class="col-md-2" style="text-align: right">
-                    <img src="/css/templates/default/img/idclogo.png" alt="">
+                    <div class="icon-idc" style="width: 180px; height: 51px; margin-left: 10px; margin-top: 5px; margin-bottom: 5px; display: inline-block; vertical-align: middle;" ></div>
                 </div>
             </div>
         </div>

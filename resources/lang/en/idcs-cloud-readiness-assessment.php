@@ -374,7 +374,7 @@ return array(
     ),
     'sales-and-marketing' => array(
         'title'=> 'Sales and Marketing',
-        'image'=>'sales-and-marketing.jpg',
+        'image'=>'',
         'pb'=>'pb',
         'stage1'=>'
             <ul>
@@ -439,7 +439,6 @@ return array(
             <p>
                 <strong>Recommendations:</strong> Cloud service providers at this stage in their maturity should look to evolve commission structures. These should include specific KPIs, such as customer satisfaction scores, additional incentives for new customer acquisition, and renewal rates. It is advisable at this point to create a more formalized proof-of-concept strategy. Investing in your own demo and trial facilities will help new customers visualize their own solutions. This is a powerful sales tool, particularly if you can incorporate customer data and bolster presales capabilities to support the sales process.
             </p>
-            <div class="pb"></div>
             <p>
                 It becomes imperative at this point to increase your online presence and start to build a digital marketing plan. Your vendor partner can help guide you in this process. Reassignment of marketing budgets, recruitment (or partnering) for digital resources, and a series of digital activities will all help awareness building, social selling (lead generation), and establishing thought leadership objectives. It is also recommended that you start building clear metrics and KPIs for all marketing activities (both traditional and digital). Awareness building and thought leadership are difficult to measure, but critical for long-term success.
             </p>

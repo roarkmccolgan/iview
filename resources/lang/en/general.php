@@ -290,7 +290,7 @@ Complete the IDC Cyber Risk Assessment Tool to find out more about how ready you
     'rel8'=>'Corporate Reseller',
     'rel9'=>'Distributor',
     'rel10'=>'Not a partner yet',
-    'qualification'=>'Relationship with Red Hat',
+    'qualification'=>'Partner Type',
     'qual1' => 'Consulting',
     'qual2' => 'ISV',
     'qual3' => 'Hardware Vendor',

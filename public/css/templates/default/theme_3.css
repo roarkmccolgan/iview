@@ -244,22 +244,12 @@ span.logo{
 	display: block;
 	border: none;
 	text-align: left;
-	/*background: #FFFFFF;
-	background-image: -webkit-linear-gradient(top, #FFFFFF, #EEEEEE);
-	background-image: -moz-linear-gradient(top, #FFFFFF, #EEEEEE);
-	background-image: -ms-linear-gradient(top, #FFFFFF, #EEEEEE);
-	background-image: -o-linear-gradient(top, #FFFFFF, #EEEEEE);
-	background-image: linear-gradient(to bottom, #FFFFFF, #EEEEEE);*/
-
 	border: 1px solid #FFF;
 	background: transparent;
-	
+	font-weight: 300;
 	-webkit-border-radius: 7;
 	-moz-border-radius: 7;
 	border-radius: 7px;
-	/*-webkit-box-shadow: 0px 0px 3px #afafaf;
-	-moz-box-shadow: 0px 0px 3px #afafaf;
-	box-shadow: 0px 0px 3px #afafaf;*/
 	color: #A2A2A2;
 	padding: 10px 20px 10px 20px;
 	text-decoration: none;
@@ -270,21 +260,13 @@ span.logo{
 	display: block;
 	position: relative;
 	padding: 15px;
-	/*background: #FFFFFF;
-	background-image: -webkit-linear-gradient(top, #FFFFFF, #EEEEEE);
-	background-image: -moz-linear-gradient(top, #FFFFFF, #EEEEEE);
-	background-image: -ms-linear-gradient(top, #FFFFFF, #EEEEEE);
-	background-image: -o-linear-gradient(top, #FFFFFF, #EEEEEE);
-	background-image: linear-gradient(to bottom, #FFFFFF, #EEEEEE);*/
+	font-weight: 300;
 	border: 1px solid #FFF;
 	background: transparent;
 
 	-webkit-border-radius: 7;
 	-moz-border-radius: 7;
 	border-radius: 7px;
-	/*-webkit-box-shadow: 0px 0px 3px #666666;
-	-moz-box-shadow: 0px 0px 3px #666666;
-	box-shadow: 0px 0px 3px #666666;*/
 	color: #A2A2A2;
 	cursor: pointer;
 }

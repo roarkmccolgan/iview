@@ -20,7 +20,7 @@
 			<div class="control-group">
 				<div class="controls">
 					<div class="input-prepend input-group"><span class="add-on input-group-addon primary"><span class="glyphicon glyphicon-th"></span></span>
-						<input id="reservation" type="text" style="width: 200px" name="reservation" value="09/01/2016 - 09/23/2016" class="form-control">
+						<input id="reservation" type="text" style="width: 200px" name="reservation" value="{{$startDate}} - {{$endDate}}" class="form-control">
 					</div>
 				</div>
 			</div>
@@ -37,13 +37,13 @@
 		</div> -->
 		<div data-step="2" data-intro="&lt;strong&gt;Beautiful Elements&lt;/strong&gt; &lt;br/&gt; If you are looking for a different UI, this is for you!." class="butpro butstyle">
 			<div class="sub">
-				<h2>VISITS</h2><span>1254</span>
+				<h2>SESSIONS</h2><span>{{$analyticsResults['total_results'][0][0]}}</span>
 			</div>
 			<div class="stat"><span class="up"> 20,7%</span></div>
 		</div>
 		<div class="butpro butstyle">
 			<div class="sub">
-				<h2>UNIQUE VISITS</h2><span>18</span>
+				<h2>UNIQUE VISITS</h2><span>{{$analyticsResults['total_results'][0][1]}}</span>
 			</div>
 			<div class="stat"><span class="equal"> 0%</span></div>
 		</div>
@@ -63,6 +63,9 @@
 	</div>
 	<div class="row dash-cols">
 		<div class="col-sm-6 col-md-6">
+			<pre>
+				{{print_r($analyticsResults)}}				
+			</pre>
 			<div class="block">
 				<div class="header no-border">
 					<h2>Visits</h2>
