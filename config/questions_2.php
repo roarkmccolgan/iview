@@ -1562,6 +1562,43 @@ return array(
                     ),
                 )
             ),
+            'page10' => array(
+                'title' => 'Cyber Risk Management Operations and Defence',
+                'questions' => array(
+                    'q25'=>array(
+                        'type'=>'button',
+                        'question'=>'Which statement describes the extent of your use of managed security services providers? Please select one',
+                        'name'=>'q25',
+                        'options'=>array(
+                            array(
+                                'label'=>'We don\'t use them at all.',
+                                'value'=>1,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'We use them in a limited fashion, but prefer to do things in-house.',
+                                'value'=>2,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'We use them in a balanced way.',
+                                'value'=>3,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'We prefer to use them over doing things in-house.',
+                                'value'=>4,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'We use them extensively wherever possible.',
+                                'value'=>5,
+                                'checked'=>false
+                            )
+                        )
+                    )
+                )
+            )
         )
     ),
     'cyber-risk-management-breach-detection-and-remediation' => array(
@@ -2066,51 +2103,6 @@ return array(
                     )
                 )
             ),
-        )
-    ),
-    'it-security-third-party-providers' => array(
-        'title' => 'IT Security Third Party Providers',
-        'class' => 'sec4',
-        'display' => true,
-        'complete' => false,
-        'pages' => array(
-            'page1' => array(
-                'title' => 'IT Security Third Party Providers',
-                'questions' => array(
-                    'q25'=>array(
-                        'type'=>'button',
-                        'question'=>'Which statement describes the extent of your use of managed security services providers? Please select one',
-                        'name'=>'q25',
-                        'options'=>array(
-                            array(
-                                'label'=>'We don\'t use them at all.',
-                                'value'=>1,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'We use them in a limited fashion, but prefer to do things in-house.',
-                                'value'=>2,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'We use them in a balanced way.',
-                                'value'=>3,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'We prefer to use them over doing things in-house.',
-                                'value'=>4,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'We use them extensively wherever possible.',
-                                'value'=>5,
-                                'checked'=>false
-                            )
-                        )
-                    )
-                )
-            )
         )
     )
 );

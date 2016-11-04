@@ -502,16 +502,16 @@ class ToolController extends Controller
                             }
                         }
                     }
-                }
-                foreach ($this->baseline[$key]['types'] as $rating => $limits) {
-                    if($result[$key]['score']>=$limits['low'] && $result[$key]['score']<=$limits['high']){
-                        $result[$key]['rating'] = $rating;
-                        $result['overall']['score'] += $result[$key]['score'];
+                    foreach ($this->baseline[$key]['types'] as $rating => $limits) {
+                        if($result[$key]['score']>=$limits['low'] && $result[$key]['score']<=$limits['high']){
+                            $result[$key]['rating'] = $rating;
+                            $result['overall']['score'] += $result[$key]['score'];
+                        }
                     }
-                }
-                foreach ($this->baseline['overall']['types'] as $rating => $limits) {
-                    if($result['overall']['score']>=$limits['low'] && $result['overall']['score']<=$limits['high']){
-                        $result['overall']['rating'] = $rating;
+                    foreach ($this->baseline['overall']['types'] as $rating => $limits) {
+                        if($result['overall']['score']>=$limits['low'] && $result['overall']['score']<=$limits['high']){
+                            $result['overall']['rating'] = $rating;
+                        }
                     }
                 }
             }

@@ -49,7 +49,10 @@ h2.question{
 	text-align: left;
 	position: relative;
 }
-#msform fieldset, .splash {
+#msform fieldset{
+	min-height: 90%;
+}
+#msform fieldset, .splash, .sub-report {
 	background: white;
 	border: 0 none;
 	box-shadow: 0 0 6px rgba(0,0,0,0.5);
@@ -88,14 +91,15 @@ span.logo{
 	margin-right: 20px;
 	padding-right: 20px;
 }
-.splash .intro{
-	float: left;
-	width: 60%;
-	padding-top: 20px;
+.intro{
+	padding-top: 40px;
 }
-.splash .action{
+.action{
 	padding-top: 80px;
-	padding-right: 35px;
+}
+.sponsor{
+	text-align: center;
+	padding-top: 30px;
 }
 
 /*inputs*/
