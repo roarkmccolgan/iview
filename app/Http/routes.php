@@ -77,6 +77,7 @@ Route::group(['domain' => '{tool}.idcgauge.net'], function ($tool) {
 
 	Route::group(['prefix' => 'admin','middleware'=>['auth','routebyurl','role:super']], function(){
 		Route::get('/', 'TerminalController@dashboard');
+		Route::post('/', 'TerminalController@dashboard');
 		Route::get('/assessments', 'AssessmentController@index');
 		Route::get('/assessments/download', 'AssessmentController@downloadAssessments');
 
@@ -84,7 +85,9 @@ Route::group(['domain' => '{tool}.idcgauge.net'], function ($tool) {
 		Route::get('/tracking/new', 'TrackerController@create');
 		Route::post('/tracking', 'TrackerController@store');
 
-		Route::get('/users', 'TerminalController@showUsers');
+		Route::get('/users', 'UserController@index');
+		Route::get('/users/new', 'UserController@create');
+		Route::post('/users', 'UserController@store');
 	});
 });
 
@@ -95,6 +98,9 @@ Route::group(['prefix' => 'api'], function(){
     });
     Route::bind('tracker', function ($value) {
         return App\Tracker::findOrFail($value);
+    });
+    Route::bind('user', function ($value) {
+        return App\User::findOrFail($value);
     });
 	//API
 	Route::get('languages', function ($iviewId) {
@@ -141,5 +147,11 @@ Route::group(['prefix' => 'api'], function(){
 	});
 	Route::group(['prefix' => 'assessments'], function(){
 		Route::post('delete/{assessment}', 'AssessmentController@destroy');
+	});
+	Route::group(['prefix' => 'tracker'], function(){
+		Route::post('delete/{tracker}', 'TrackerController@destroy');
+	});
+	Route::group(['prefix' => 'user'], function(){
+		Route::post('delete/{user}', 'UserController@destroy');
 	});
 });

@@ -44,7 +44,7 @@ class Tool extends Model
         return $this->morphMany('App\Url', 'urlable');
     }
 
-    public function user()
+    public function users()
     {
         return $this->belongsToMany('App\User');
     }

@@ -1,59 +1,79 @@
-@extends('app')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="{{ asset('/images/favicon.png') }}">
 
-@section('content')
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-md-8 col-md-offset-2">
-			<div class="panel panel-default">
-				<div class="panel-heading">Reset Password</div>
-				<div class="panel-body">
-					@if (count($errors) > 0)
-						<div class="alert alert-danger">
-							<strong>Whoops!</strong> There were some problems with your input.<br><br>
-							<ul>
-								@foreach ($errors->all() as $error)
-									<li>{{ $error }}</li>
-								@endforeach
-							</ul>
-						</div>
-					@endif
+	<title>Reset Password</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700,800' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:300,200,100' rel='stylesheet' type='text/css'>
 
-					<form class="form-horizontal" role="form" method="POST" action="{{ url('/password/reset') }}">
+	<!-- Bootstrap core CSS -->
+	<link href="{{ asset('js/bootstrap/dist/css/bootstrap.css') }}" rel="stylesheet">
+
+	<link rel="stylesheet" href="{{ asset('/fonts/font-awesome-4/css/font-awesome.min.css') }}">
+
+	<!-- Custom styles for this template -->
+	<link href="{{ asset('/css/style.css') }}" rel="stylesheet" />	
+
+</head>
+
+<body class="texture">
+	<div id="cl-wrapper" class="sign-up-container">
+		<div class="middle-sign-up">
+			<div class="block-flat">
+				<div class="header">							
+					<h3 class="text-center"><img class="logo-img" src="{{ asset('/images/logo.png') }}" alt="logo"/>IDC Terminal</h3>
+				</div>
+				<div>
+					<form style="margin-bottom: 0px !important;" role="form" action="{{ url('/password/reset') }} method="post">
 						<input type="hidden" name="_token" value="{{ csrf_token() }}">
-						<input type="hidden" name="token" value="{{ $token }}">
-
-						<div class="form-group">
-							<label class="col-md-4 control-label">E-Mail Address</label>
-							<div class="col-md-6">
-								<input type="email" class="form-control" name="email" value="{{ old('email') }}">
+						<div class="content">
+							<h4 class="title">Register Account</h4>
+							@if (count($errors) > 0)
+							<div class="alert alert-danger">
+								<strong>Whoops!</strong> There were some problems with your input.<br><br>
+								<ul>
+									@foreach ($errors->all() as $error)
+									<li>{{ $error }}</li>
+									@endforeach
+								</ul>
 							</div>
-						</div>
-
-						<div class="form-group">
-							<label class="col-md-4 control-label">Password</label>
-							<div class="col-md-6">
+							@endif
+							<div class="form-group">
+								<label>Email Address</label>
+								<input type="email" placeholder="Email" class="form-control" name="email" value="{{ old('email') }}">
+							</div>
+							<div class="form-group">
+								<label>Password</label>
 								<input type="password" class="form-control" name="password">
 							</div>
-						</div>
-
-						<div class="form-group">
-							<label class="col-md-4 control-label">Confirm Password</label>
-							<div class="col-md-6">
+							<div class="form-group">
+								<label>Confirm Password</label>
 								<input type="password" class="form-control" name="password_confirmation">
 							</div>
 						</div>
-
-						<div class="form-group">
-							<div class="col-md-6 col-md-offset-4">
-								<button type="submit" class="btn btn-primary">
-									Reset Password
-								</button>
-							</div>
+						<div class="foot">
+							<a href="{{ url('/login') }}" class="btn btn-default" data-dismiss="modal" type="button">Login</a>
+							<button class="btn btn-primary" data-dismiss="modal" type="submit">Register</button>
 						</div>
 					</form>
 				</div>
 			</div>
-		</div>
+			<div class="text-center out-links"><a href="http://www.idc.com/uk/" target="_blank">&copy; {{date('Y')}} IDC UK</a></div>
+		</div> 
+		
 	</div>
-</div>
-@endsection
+
+<script src="{{ asset('/js/vendor/jquery-1.10.1.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('/js/behaviour/general.js') }}"></script>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="{{ asset('/js/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+</body>
+</html>

@@ -6,17 +6,17 @@ var App = (function () {
 
     
 
-    $('#reservation').daterangepicker();
-    $('#reservationtime').daterangepicker({
-      timePicker: true,
-      timePickerIncrement: 30,
-      format: 'MM/DD/YYYY h:mm A'
-    });
+    $('#reporting').daterangepicker(
+      {},//options
+      function(start, end, label) {
+        console.log("A new date range was chosen: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
 
-    var cb = function(start, end) {
-      $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
-      alert("Callback has fired: [" + start.format('MMMM D, YYYY') + " to " + end.format('MMMM D, YYYY') + "]");
-    }
+        $('#from').val(start.format('DD-MM-YYYY'));
+        $('#to').val(end.format('DD-MM-YYYY'));
+        $('#setDateRange').submit();
+      }
+    );
+    
 
     
 

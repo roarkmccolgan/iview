@@ -15,16 +15,25 @@
 
 <!-- DateRange Selector -->
 <div class="row">
-	<div class="col-md-3 col-md-offset-5">
+	<div class="col-md-3 col-md-offset-5 text-center">
 		<div class="form-group">
 			<div class="control-group">
 				<div class="controls">
 					<div class="input-prepend input-group"><span class="add-on input-group-addon primary"><span class="glyphicon glyphicon-th"></span></span>
-						<input id="reservation" type="text" style="width: 200px" name="reservation" value="{{$startDate}} - {{$endDate}}" class="form-control">
+						<form id="setDateRange" role="form" action="{{ url('/admin/')}}" method="POST" >
+						<input type="hidden" name="tool_id" value="{{$tool->id}}">
+						<input type="hidden" id="from" name="from" value="">
+						<input type="hidden" id="to" name="to" value="">
+						{{ csrf_field() }}
+						<input id="reporting" type="text" style="width: 200px" name="reporting" value="{{$startDate}} - {{$endDate}}" class="form-control">
+						</form>
 					</div>
 				</div>
 			</div>
 		</div>
+		@if($customDate)
+		<a href="/admin/">reset dates</a>
+		@endif
 	</div>
 </div>
 <!-- Rest of Dash -->
@@ -63,13 +72,13 @@
 	</div>
 	<div class="row dash-cols">
 		<div class="col-sm-6 col-md-6">
-			<pre>
+			<!-- <pre>
 				{{print_r($analyticsResults)}}				
-			</pre>
+			</pre> -->
 			<div class="block">
 				<div class="header no-border">
 					<h2>Visits</h2>
-					<h3>30 days</h3>
+					<h3>{{count($analyticsResults['daily_results'])}} days</h3>
 				</div>
 				<div data-step="3" data-intro="&lt;strong&gt;Unique Styled Plugins&lt;/strong&gt; &lt;br/&gt; We put love in every detail to give a great user experience!." class="content blue-chart">
 					<div id="site_statistics" style="height:180px;"></div>
@@ -77,21 +86,21 @@
 				<div class="content">
 					<div class="stat-data">
 						<div class="stat-blue">
-							<h2>1,254</h2><span>Total Visits</span>
+							<h2>{{number_format($daily_total)}}</h2><span>Total Users</span>
 						</div>
 					</div>
 					<div class="stat-data">
 						<div class="stat-number">
 							<div>
-								<h2>83</h2>
+								<h2>{{$analyticsResults['total_results'][0][1]}}</h2>
 							</div>
-							<div>Total hits<br><span>(Daily)</span></div>
+							<div>New Users<br><!-- <span>(Daily)</span> --></div>
 						</div>
 						<div class="stat-number">
 							<div>
-								<h2>57</h2>
+								<h2>{{$analyticsResults['total_results'][0][5]}}</h2>
 							</div>
-							<div>Views<br><span>(Daily)</span></div>
+							<div>Page Views<br><!-- <span>(Daily)</span> --></div>
 						</div>
 					</div>
 					<div class="clear"></div>
@@ -102,10 +111,10 @@
 			<div class="block">
 				<div class="header no-border">
 					<h2>Assessment Completions</h2>
-					<h3>30 days</h3>
+					<h3>{{count($analyticsResults['complete_results'])}} days</h3>
 				</div>
 				<div class="content red-chart">
-					<div id="site_statistics2" style="height:152px;"></div>
+					<div id="site_statistics2" style="height:180px;"></div>
 				</div>
 				<div class="content no-padding">
 					<table class="red">
@@ -117,26 +126,13 @@
 							</tr>
 						</thead>
 						<tbody class="no-border-x">
+							@foreach($tool->trackers as $tracker)
 							<tr>
-								<td style="width:40%;"><i class="fa fa-user"></i> Partner A (EASXDES)</td>
-								<td class="text-right">20</td>
-								<td class="text-right">3</td>
+								<td style="width:40%;"><i class="fa fa-user"></i> {{$tracker->name}} ({{$tracker->code}})</td>
+								<td class="text-right">{{$tracker->views}}</td>
+								<td class="text-right">{{$tracker->completions}}</td>
 							</tr>
-							<tr>
-								<td><i class="fa fa-user"></i> Partner B (FDGETSY)</td>
-								<td class="text-right">3</td>
-								<td class="text-right">0</td>
-							</tr>
-							<tr>
-								<td><i class="fa fa-user"></i> Partner C (IHUTNCPC)</td>
-								<td class="text-right">45</td>
-								<td class="text-right">22</td>
-							</tr>
-							<tr>
-								<td><i class="fa fa-user"></i> Partner D (QAJSHYDT)</td>
-								<td class="text-right">0</td>
-								<td class="text-right">0</td>
-							</tr>
+							@endforeach
 						</tbody>
 					</table>
 				</div>
@@ -148,33 +144,31 @@
 			<div class="block">
 				<div class="header">
 					<h2>Referrals <span class="pull-right">Top 10</span></h2>
-					<h3>All-time</h3>
+					
 				</div>
 				<div class="content no-padding">
 					<ul class="items">
-						<li><i class="fa fa-bullhorn"></i>LinkedIn <span class="pull-right value">24</span><small>http://linkedin.com</small></li>
-						<li><i class="fa fa-bullhorn"></i>Facebook<span class="pull-right value">16</span><small>http://facebook.com</small></li>
-						<li><i class="fa fa-bullhorn"></i>Indipendent<span class="pull-right value">5</span><small>http://www.indipendent.com</small></li>
-						<li><i class="fa fa-bullhorn"></i>Twitter<span class="pull-right value">2</span><small>http://t.co</small></li>
-						<li><i class="fa fa-bullhorn"></i>WebWereld<span class="pull-right value">2</span><small>http://webwereld.nl/</small></li>
+						<?php
+						$refTotal = 0;
+						?>
+						@foreach($analyticsResults['referrers_results'] as $referrer)
+						<?php $refTotal+=$referrer[1]; ?>
+						<li><i class="fa fa-bullhorn"></i>{{$referrer[0]}} <span class="pull-right value">{{$referrer[1]}}</span></li>
+						@endforeach
 					</ul>
 				</div>
 				<div class="total-data bg-blue"><a href="#" data-toggle="dropdown" class="dropdown-toggle">
-					<h2>Total <span class="pull-right">49</span></h2></a>
+					<h2>Total <span class="pull-right">{{$refTotal}}</span></h2></a>
 				</div>
 			</div>
 		</div>
 		<div class="col-sm-6 col-md-6">
 			<ul class="nav nav-tabs">
-				<li class="active"><a href="#home" data-toggle="tab">Devices</a></li>
-				<li><a href="#countries" data-toggle="tab">Countries</a></li>
+				<li class="active"><a href="#countries" data-toggle="tab">Countries</a></li>
+				<li><a href="#devices" data-toggle="tab">Devices</a></li>
 			</ul>
 			<div class="tab-content">
-				<div id="home" class="tab-pane active cont">
-					<h2 class="text-center">Device Usage</h2>
-					<div id="piec" style="height:300px;margin-top:25px;"></div>
-				</div>
-				<div id="countries" class="tab-pane cont">
+				<div id="countries" class="tab-pane active cont">
 					<h2>Stats by Country</h2>
 					<div>
 						<table class="no-border">
@@ -185,29 +179,19 @@
 								</tr>
 							</thead>
 							<tbody class="no-border-x no-border-y">
+								@foreach($analyticsResults['country_results'] as $key=>$country)
 								<tr>
-									<td>United Kingdom</td>
-									<td class="text-right">680</td>
+									<td>{{$country[0]}}</td>
+									<td class="text-right">{{$country[1]}}</td>
 								</tr>
-								<tr>
-									<td>Ireland</td>
-									<td class="text-right">240</td>
-								</tr>
-								<tr>
-									<td>Germany</td>
-									<td class="text-right">210</td>
-								</tr>
-								<tr>
-									<td>United States of America</td>
-									<td class="text-right">150</td>
-								</tr>
-								<tr>
-									<td>Spain</td>
-									<td class="text-right">80</td>
-								</tr>
+								@endforeach
 							</tbody>
 						</table>
 					</div>
+				</div>
+				<div id="devices" class="tab-pane cont">
+					<h2 class="text-center">Device Usage</h2>
+					<div id="piec" style="height:300px; width: 100%; margin-top:25px;"></div>
 				</div>
 			</div>
 		</div>
@@ -217,7 +201,7 @@
 			<div class="block">
 				<div class="header">
 					<h2>Page Drop Off <span class="pull-right">Top 10</span></h2>
-					<h3>All-time</h3>
+					<h3>{{count($analyticsResults['daily_results'])}} days</h3>
 				</div>
 				<div class="content no-padding">
 					<table class="no-border">
@@ -225,25 +209,17 @@
 							<tr>
 								<th style="width:80%;">Page</th>
 								<th style="width:10%;">Total</th>
-								<th style="width:10%;" class="text-right">Percentage</th>
+								<th style="width:10%;" class="text-right">% New Sessions</th>
 							</tr>
 						</thead>
 						<tbody class="no-border-x no-border-y">
-							<tr>
-								<td>/quiz/cloud-vision-and-stratgey/page1</td>
-								<td>2</td>
-								<td class="text-right">1%</td>
-							</tr>
-							<tr>
-								<td style="width:30%;">/quiz/cloud-vision-and-stratgey/page2</td>
-								<td>18</td>
-								<td class="text-right">20%</td>
-							</tr>
-							<tr>
-								<td style="width:30%;">/quiz/cloud-vision-and-stratgey/page3</td>
-								<td>2</td>
-								<td class="text-right">1%</td>
-							</tr>
+							@foreach($analyticsResults['dropoff_results'] as $dropoff)
+								<tr>
+									<td>{{$dropoff[0]}}</td>
+									<td>{{$dropoff[1]}}</td>
+									<td class="text-right">{{$dropoff[2]}}</td>
+								</tr>
+							@endforeach
 						</tbody>
 					</table>
 				</div>

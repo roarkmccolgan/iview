@@ -260,11 +260,11 @@ return [
                 'filters'       => false,
             ],
             'daily_results'=>[
-                'metrics'       => 'ga:sessions',
+                'metrics'       => 'ga:users',
                 'dimensions'    => 'ga:date',
                 'sort'          => false,
                 'max-results'   => false,
-                'filters'       => false,
+                'filters'       => 'ga:pagePath==/quiz/complete',
             ],
             'country_results'=>[
                 'metrics'       => 'ga:sessions',
@@ -279,6 +279,27 @@ return [
                 'sort'          => false,
                 'max-results'   => 365,
                 'filters'       => false,
+            ],
+            'complete_results'=>[
+                'metrics'       => 'ga:users',
+                'dimensions'    => 'ga:date',
+                'sort'          => false,
+                'max-results'   => false,
+                'filters'       => 'ga:pagePath==/quiz/complete',
+            ],
+            'utm_views'=>[
+                'metrics'       => 'ga:pageviews',
+                'dimensions'    => 'ga:pagePath',
+                'sort'          => false,
+                'max-results'   => false,
+                'filters'       => 'ga:pagePath=@/?utm',
+            ],
+            'utm_completes'=>[
+                'metrics'       => 'ga:users',
+                'dimensions'    => 'ga:landingPagePath,ga:exitPagePath',
+                'sort'          => false,
+                'max-results'   => false,
+                'filters'       => 'ga:landingPagePath=@/?utm;ga:exitPagePath==/quiz/complete',
             ]/*,
             'mobile_results'=>[
                 'metrics'       => 'ga:sessions',
@@ -314,6 +335,13 @@ return [
                 'sort'          => '-ga:sessions',
                 'max-results'   => false,
                 'filters'       => false,
+            ],
+            'dropoff_results'=>[
+                'metrics'       => 'ga:users,ga:percentNewSessions',
+                'dimensions'    => 'ga:exitPagePath',
+                'sort'          => '-ga:users',
+                'max-results'   => 10,
+                'filters'       => 'ga:exitPagePath!=/quiz/complete',
             ]
         ]
 ];
