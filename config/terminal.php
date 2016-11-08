@@ -1,6 +1,9 @@
 <?php
 
 return [
+	'settings' => [
+		'resetpassword_at_first_login' => true,
+	],
 	'iviews' => [
         'dellstorage'=>[
             'en'=>[

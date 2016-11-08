@@ -14,7 +14,7 @@ class AddColumnsToUsersTable extends Migration
     {
         Schema::table('users', function ($table) {
             $table->boolean('changePassword')->default(1);
-            $table->boolean('activated')->default(false);
+            $table->string('register_token', 100)->nullable();
         });
     }
 
@@ -27,7 +27,7 @@ class AddColumnsToUsersTable extends Migration
     {
         Schema::table('users', function ($table) {
             $table->dropColumn(['changePassword']);
-            $table->dropColumn(['activated']);
+            $table->dropColumn(['register_token']);
         });
     }
 }

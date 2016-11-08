@@ -87,5 +87,5 @@
 @stop
 
 @section('load')
-	App.init();
+
 @stop

@@ -2,12 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\UserWasCreated;
 use App\Http\Requests;
 use App\Http\Requests\AddUserRequest;
+use App\Http\Requests\ChangePasswordRequest;
 use App\User;
 use Carbon\Carbon;
+use Event;
 use Hash;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use JavaScript;
 
 class UserController extends Controller
@@ -87,6 +91,15 @@ class UserController extends Controller
         $user->tools()->attach($tool->id);
         $user->assignRole($request->input('role'));
 
+        if(config('terminal.settings.resetpassword_at_first_login')){
+            $register_token = $code = str_random(10);
+            $user->register_token = $register_token;
+        }else{
+            $user->changePassword = 0;
+        }
+        $user->save();
+        Event::fire(new UserWasCreated($user,$tool));
+
         return redirect('admin/users')->with('status', ['type'=>'success','message'=>'User Created']);
     }
 
@@ -107,5 +120,78 @@ class UserController extends Controller
             return $data;
         }
         return redirect('/admin/trackers')->with('status', 'Insufficient Privilages!');
+    }
+
+    /**
+     * Show the form for changing resource.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function showChangePassword(Request $request)
+    {
+        $token = $request->get('token');
+        $user = User::where('register_token',$token)->firstOrFail();
+
+        $data = [
+            'user' => $user,
+            'token' => $token,
+        ];
+        return view('auth.change_password', $data);
+    }
+
+    /**
+     * Store a newly changed resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function storeChangePassword(ChangePasswordRequest $request)
+    {
+        $token = $request->get('register_token');
+        $newPass = $request->input('password');
+        $user = User::where('register_token',$token)->firstOrFail();
+
+        //return $user;
+
+        $password = Hash::make($newPass);
+
+        $user->password = $password;
+        $user->changePassword = 0;
+        $user->register_token = null;
+        $user->save();
+
+        $user->load(['tools']);
+        $redirect = '';
+        foreach ($user->tools as $tool) {
+            $tool->load(['company','urls']);
+            foreach ($tool->urls as $url) {
+                $redirect = 'http://'.$url->subdomain.'.'.$url->domain.'/admin';
+            }
+        }
+
+
+        $this->authenticate($user->email,$newPass,$redirect);
+
+        /*$data = [
+            'user' => $user,
+            'token' => $token,
+        ];
+
+        return view('auth.change_password', $data);*/
+    }
+
+
+    /**
+     * Handle an authentication attempt.
+     *
+     * @return Response
+     */
+    private function authenticate($email, $password, $redirect)
+    {
+        if (Auth::attempt(['email' => $email, 'password' => $password])) {
+            return redirect()->intended($redirect);
+        }
+        abort('403');
     }
 }

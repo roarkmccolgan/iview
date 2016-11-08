@@ -132,7 +132,6 @@
 @stop
 
 @section('load')
-	App.init();
 	$('.md-trigger').modalEffects();
 
 @stop

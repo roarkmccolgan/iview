@@ -23,10 +23,10 @@
 			<li class="{{ Ekko::isActiveURL('/admin/assessments') }}">
 				<a href="{{URL('/admin/assessments')}}">Assessments</a>
 			</li>
-			<li class="{{ Ekko::isActiveURL('/admin/tracking') }}">
+			<li class="{{ Ekko::isActiveURL('/admin/tracking') }} {{ Ekko::isActiveURL('/admin/tracking/new') }}">
 				<a href="{{URL('/admin/tracking')}}">Tracking</a>
 			</li>
-			<li class="{{ Ekko::isActiveURL('/admin/users') }}">
+			<li class="{{ Ekko::isActiveURL('/admin/users') }} {{ Ekko::isActiveURL('/admin/users/new') }}">
 				<a href="{{URL('/admin/users')}}">Users</a>
 			</li>
 		</ul>

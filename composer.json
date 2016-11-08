@@ -7,6 +7,7 @@
     "require": {
         "php": ">=5.5.9",
         "laravel/framework": "5.2.*",
+        "aws/aws-sdk-php": "~3.0",
         "elibyy/tcpdf-laravel": "5.2.*",
         "maatwebsite/excel": "~2.1.0",
         "laravelcollective/bus": "^5.2",

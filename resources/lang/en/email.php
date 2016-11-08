@@ -1,6 +1,9 @@
 <?php
 
 return array(
+    'register_subject'=>'IDC Terminal Registration',
+    'have_been_registered'=>'You have been registered on IDC Terminal',
+    'once_logged_in'=>'Once logged in, you will be able to view and download statistics and leads generated on the IDC GMS products you have with IDC.<br/> Please click the link below to create your password and log into the system.',
     'report'=>'Your Agil-IT-y Report',
     'ass'=>'In association with',
 	'hi'=>'Hi',
