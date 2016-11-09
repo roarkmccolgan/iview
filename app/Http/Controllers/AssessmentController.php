@@ -97,14 +97,14 @@ class AssessmentController extends Controller
      */
     public function destroy(Assessment $assessment,Request $request)
     {
-        //$assessment->destroy();
+        $assessment->destroy();
         if($request->ajax()){
             $data = [
                 'result'=>'success'
             ];
             return $data;
         }
-        return redirect('/admin/assessments')->with('status', 'Insufficient Privilages!');
+        return redirect('/admin/assessments')->with('status', 'Assessment deleted!');
     }
 
     /**

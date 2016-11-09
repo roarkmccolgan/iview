@@ -77,19 +77,19 @@ Route::group(['domain' => '{tool}.idcgauge.net'], function ($tool) {
 		Route::get('/download', 'ToolController@fakeDownload');
 	});
 
-	Route::group(['prefix' => 'admin','middleware'=>['auth','routebyurl','role:super,admin']], function(){
+	Route::group(['prefix' => 'admin','middleware'=>['auth','routebyurl','toolaccess:super,admin,client,local']], function(){
 		Route::get('/', 'TerminalController@dashboard');
 		Route::post('/', 'TerminalController@dashboard');
 		Route::get('/assessments', 'AssessmentController@index');
 		Route::get('/assessments/download', 'AssessmentController@downloadAssessments');
 
 		Route::get('/tracking', 'TrackerController@index');
-		Route::get('/tracking/new', 'TrackerController@create');
-		Route::post('/tracking', 'TrackerController@store');
+		Route::get('/tracking/new', 'TrackerController@create')->middleware(['toolaccess:super,admin,client']);
+		Route::post('/tracking', 'TrackerController@store')->middleware(['toolaccess:super,admin,client']);
 
-		Route::get('/users', 'UserController@index');
-		Route::get('/users/new', 'UserController@create');
-		Route::post('/users', 'UserController@store');
+		Route::get('/users', 'UserController@index')->middleware(['toolaccess:super,admin,client']);
+		Route::get('/users/new', 'UserController@create')->middleware(['toolaccess:super,admin,client']);
+		Route::post('/users', 'UserController@store')->middleware(['toolaccess:super,admin,client']);
 	});
 });
 

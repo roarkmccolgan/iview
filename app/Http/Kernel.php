@@ -52,5 +52,6 @@ class Kernel extends HttpKernel
         'reloadquestions' => \App\Http\Middleware\ReloadQuestions::class,
         'routebyurl' => \App\Http\Middleware\RouteByURL::class,
         'role' => \App\Http\Middleware\RoleMiddleware::class,
+        'toolaccess' => \App\Http\Middleware\ToolAccessMiddleware::class,
     ];
 }

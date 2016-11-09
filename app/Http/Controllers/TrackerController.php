@@ -103,14 +103,14 @@ class TrackerController extends Controller
      */
     public function destroy(Tracker $tracker,Request $request)
     {
-        //$tracker->destroy();
+        $tracker->destroy();
         if($request->ajax()){
             $data = [
                 'result'=>'success'
             ];
             return $data;
         }
-        return redirect('/admin/trackers')->with('status', 'Insufficient Privilages!');
+        return redirect('/admin/trackers')->with('status', 'Tracker Deleted!');
     }
 
     private function generateTrackingCode($length = 10){

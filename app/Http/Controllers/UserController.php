@@ -112,14 +112,14 @@ class UserController extends Controller
      */
     public function destroy(User $user,Request $request)
     {
-        //$user->destroy();
+        $user->destroy();
         if($request->ajax()){
             $data = [
                 'result'=>'success'
             ];
             return $data;
         }
-        return redirect('/admin/trackers')->with('status', 'Insufficient Privilages!');
+        return redirect('/admin/trackers')->with('status', 'User Deleted');
     }
 
     /**
