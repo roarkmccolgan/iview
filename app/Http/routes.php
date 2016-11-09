@@ -77,7 +77,7 @@ Route::group(['domain' => '{tool}.idcgauge.net'], function ($tool) {
 		Route::get('/download', 'ToolController@fakeDownload');
 	});
 
-	Route::group(['prefix' => 'admin','middleware'=>['auth','routebyurl','role:super']], function(){
+	Route::group(['prefix' => 'admin','middleware'=>['auth','routebyurl','role:super','role:admin']], function(){
 		Route::get('/', 'TerminalController@dashboard');
 		Route::post('/', 'TerminalController@dashboard');
 		Route::get('/assessments', 'AssessmentController@index');
