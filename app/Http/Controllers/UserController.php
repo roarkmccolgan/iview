@@ -130,14 +130,17 @@ class UserController extends Controller
      */
     public function showChangePassword(Request $request)
     {
-        $token = $request->get('token');
-        $user = User::where('register_token',$token)->firstOrFail();
+        if($request->get('register_token')!=null){
+            $token = $request->get('token');
+            $user = User::where('register_token',$token)->firstOrFail();
 
-        $data = [
-            'user' => $user,
-            'token' => $token,
-        ];
-        return view('auth.change_password', $data);
+            $data = [
+                'user' => $user,
+                'token' => $token,
+            ];
+            return view('auth.change_password', $data);
+        }
+        abort('403');
     }
 
     /**
@@ -148,30 +151,33 @@ class UserController extends Controller
      */
     public function storeChangePassword(ChangePasswordRequest $request)
     {
-        $token = $request->get('register_token');
-        $newPass = $request->input('password');
-        $user = User::where('register_token',$token)->firstOrFail();
+        if($request->get('register_token')!=null){
+            $token = $request->get('register_token');
+            $newPass = $request->input('password');
+            $user = User::where('register_token',$token)->firstOrFail();
 
-        //return $user;
+            //return $user;
 
-        $password = Hash::make($newPass);
+            $password = Hash::make($newPass);
 
-        $user->password = $password;
-        $user->changePassword = 0;
-        $user->register_token = null;
-        $user->save();
+            $user->password = $password;
+            $user->changePassword = 0;
+            $user->register_token = null;
+            $user->save();
 
-        $user->load(['tools']);
-        $redirect = '';
-        foreach ($user->tools as $tool) {
-            $tool->load(['company','urls']);
-            foreach ($tool->urls as $url) {
-                $redirect = 'http://'.$url->subdomain.'.'.$url->domain.'/admin';
+            $user->load(['tools']);
+            $redirect = '';
+            foreach ($user->tools as $tool) {
+                $tool->load(['company','urls']);
+                foreach ($tool->urls as $url) {
+                    $redirect = 'http://'.$url->subdomain.'.'.$url->domain.'/admin';
+                }
             }
+
+
+            $this->authenticate($user->email,$newPass,$redirect);
         }
-
-
-        $this->authenticate($user->email,$newPass,$redirect);
+        abort('303');
 
         /*$data = [
             'user' => $user,
