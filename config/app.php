@@ -234,8 +234,8 @@ return [
     ],
 
     'tooldomain' => [
-        'idcgauge.net',
-        'idcready.net',
+        'gauge'=>'idcgauge.net',
+        'ready'=>'idcready.net',
     ],
     'template' => 'default',
 
