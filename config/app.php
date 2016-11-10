@@ -233,7 +233,10 @@ return [
         'SnappyImage' => Barryvdh\Snappy\Facades\SnappyImage::class,
     ],
 
-    'tooldomain' => 'idcgauge.net',
+    'tooldomain' => [
+        'idcgauge.net',
+        'idcready.net',
+    ],
     'template' => 'default',
 
 ];

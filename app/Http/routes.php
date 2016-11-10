@@ -49,7 +49,7 @@ Route::group(['prefix' => 'admin', 'middleware'=>['auth']], function(){
 	Route::get('reporting/create', 'ReportingController@create');
 });
 
-Route::group(['domain' => '{tool}.idcgauge.net'], function ($tool) {
+Route::group(['domain' => '{subdomain}.idcgauge.net'], function ($subdomain) {
 	/*Route::bind('tool', function ($value) {
         return App\Tool::findOrFail($value);
     });*/

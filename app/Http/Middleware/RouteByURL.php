@@ -19,7 +19,7 @@ class RouteByURL
     public function handle($request, Closure $next)
     {
 
-        $url = Url::with('language')->where('domain',config('app.tooldomain'))->where('subdomain',$request->tool)->first();
+        $url = Url::with('language')->whereIn('domain', config('app.tooldomain'))->where('subdomain',$request->subdomain)->first();
         if ($url) {
             $url->urlable->load('company');
 
