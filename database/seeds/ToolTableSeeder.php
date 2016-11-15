@@ -13,8 +13,8 @@ class ToolTableSeeder extends Seeder
     public function run()
     {
         DB::table('tools')->insert([
-            'alias' => 'cloud-development',
-            'title' => 'Cloud Development',
+            'alias' => 'idcs-cloud-benchmark-for-development',
+            'title' => 'IDC\'s Cloud Benchmark for Development',
             'sub_title' => 'Advancing your maturity',
             'company_id' => 2,
             'gapropertyid' => '129112297',

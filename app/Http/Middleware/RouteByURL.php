@@ -25,7 +25,7 @@ class RouteByURL
 
             $request->session()->put('product', ['type'=>$url->urlable_type, 'id'=>$url->urlable_id, 'alias'=>$url->urlable->alias]);
             $request->session()->put('locale', $url->language->abbreviation);
-            $request->session()->put('url', 'http://' . $request->tool.'.'.$url->domain);
+            $request->session()->put('url', 'http://' . $request->subdomain.'.'.$url->domain);
             $request->session()->put('host', $url->urlable->domain);
             $request->session()->put('referer', $request->server('HTTP_REFERER'));
             $request->session()->put('analytics', $url->urlable->gapropertyid);

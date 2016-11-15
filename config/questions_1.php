@@ -1,6 +1,6 @@
 <?php
 return array(
-    'cloud-vision-and-stratgey' => array(
+    'cloud-vision-and-strategy' => array(
         'class' => 'sec1',
         'display' => true,
         'complete' => false,
@@ -250,7 +250,7 @@ return array(
         'complete' => false,
         'pages' => array(
             'page1' => array(
-                'title' => 'Sales',
+                'title' => 'Marketing',
                 'questions' => array(
                     'q7'=>array(
                         'type'=>'button',
@@ -291,7 +291,7 @@ return array(
                 )*/
             ),
             'page2' => array(
-                'title' => 'Sales',
+                'title' => 'Marketing',
                 'questions' => array(
                     'q8'=>array(
                         'type'=>'button',

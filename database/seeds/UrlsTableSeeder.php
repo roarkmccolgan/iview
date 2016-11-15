@@ -13,7 +13,7 @@ class UrlsTableSeeder extends Seeder
     public function run()
     {
         DB::table('urls')->insert([
-            'domain' => 'idcgauge.net',
+            'domain' => 'idcready.net',
             'subdomain' => 'sage',
             'language_id' => 1,
             'urlable_id' => 1,
@@ -21,7 +21,7 @@ class UrlsTableSeeder extends Seeder
             'created_at' => Carbon::now(),
         ]);
         DB::table('urls')->insert([
-            'domain' => 'idcgauge.net',
+            'domain' => 'idcready.net',
             'subdomain' => 'fireeye',
             'language_id' => 1,
             'urlable_id' => 2,
@@ -29,7 +29,7 @@ class UrlsTableSeeder extends Seeder
             'created_at' => Carbon::now(),
         ]);
         DB::table('urls')->insert([
-            'domain' => 'idcgauge.net',
+            'domain' => 'idcready.net',
             'subdomain' => 'redhat',
             'language_id' => 1,
             'urlable_id' => 3,

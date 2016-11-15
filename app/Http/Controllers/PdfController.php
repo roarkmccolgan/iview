@@ -70,7 +70,11 @@ class PdfController extends Controller
 		]);
 		$vars = [];
 		$count = 0;
-		$titles = [];
+		$headervars = [];
+		$headervars['tool_title'] = trans(session('product.alias').'.title');
+		$headervars['sub-title'] = trans(session('product.alias').'.sub-title');
+		$headervars['company_alias'] = session('company.alias');
+		$headervars['tool_id'] = session('product.id');
 		foreach (config('baseline_'.session('product.id')) as $section => $values) {
 			$vars['sections'][] = [
 				'title' => trans(session('product.alias').'.'.$section.'.title'),
@@ -84,7 +88,7 @@ class PdfController extends Controller
 				'score' => session('result.'.$section.'.score'),
 				'paragraph' => trans(session('product.alias').'.'.$section.'.'.session('result.'.$section.'.rating'))
 			];
-			$titles['page'.$count] = trans(session('product.alias').'.'.$section.'.title');
+			$headervars['page'.$count] = trans(session('product.alias').'.'.$section.'.title');
 			$count++;
 		}
 		$vars['introImage'] = trans(session('product.alias').'.introduction-image');
@@ -93,10 +97,10 @@ class PdfController extends Controller
 		$vars['introChart'] = false;
 
 		//return $vars['sections'];
-		//return ('tool.default.report.report',$vars);
+		//return view('tool.default.report.report',$vars);
 
         $pdf = PDF::loadView('tool.default.report.report',$vars)->setOption('margin-top', 25)->setOption('margin-left', 0)->setOption('margin-right', 0)->setOption('window-status','chartrendered')->setOption('header-html','http://redhat.idcgauge.net//template/default/report/header')->setOption('header-spacing',0)->setOption('footer-html','http://redhat.idcgauge.net//template/default/report/footer')->setOption('footer-spacing',2)
-        	->setOption('replace', $titles);
+        	->setOption('replace', $headervars);
 		return $pdf->inline('invoice.pdf');
     }
 }
