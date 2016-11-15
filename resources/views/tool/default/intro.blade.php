@@ -1,6 +1,6 @@
 @extends('tool.'.session('template').'._layout.default')
 
-@section('pagetitle', 'IDC Gauge')
+@section('pagetitle', Lang::get('general.'.$tool->id.'title'))
 
 
 @section('head')

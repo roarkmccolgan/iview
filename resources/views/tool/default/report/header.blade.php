@@ -39,7 +39,7 @@
 			var vars={};
 			var x=window.location.search.substring(1).split('&');
 			for (var i in x) {var z=x[i].split('=',2);vars[z[0]] = unescape(z[1]);}
-				var x=['frompage','topage','page','webpage','section','subsection','subsubsection','page1','page2','page3','page4','page5','page6','page7','page8','page9','page10'];
+				var x=['frompage','topage','page','webpage','section','subsection','subsubsection','page1','page2','page3','page4','page5','page6','page7','page8','page9','page10','page_offest'];
 			for (var i in x) {
 
 				//var y = document.getElementsByClassName(x[i]);
@@ -48,9 +48,9 @@
 			var y = document.getElementsByClassName('section');
 			for(var j = 0; j < y.length; j++)  
 			{  
-		         // if current page equals total pages  
+		         // if current page is not the first page 
 		         if(vars[x[2]]>1){
-		         	y[j].innerHTML = vars['page'+(vars[x[2]]-1)];
+		         	y[j].innerHTML = vars['page'+(vars[x[2]]-vars[x[17]])];
 		         }
 		     }
 		 }

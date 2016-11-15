@@ -81,6 +81,7 @@ class PdfController extends Controller
 				'hidetitle' => Lang::has(session('product.alias').'.'.$section.'.hidetitle') ? true:false,
 				'seckey' => $section,
 				'image' => Lang::has(session('product.alias').'.'.$section.'.image') ? trans(session('product.alias').'.'.$section.'.image'):false,
+				'color' => Lang::has(session('product.alias').'.'.$section.'.color') ? trans(session('product.alias').'.'.$section.'.color'):false,
 				'imagefloat' => isset($values['floatimage']) ? $values['floatimage']:'',
 				'graph' => Lang::has(session('product.alias').'.'.$section.'.graph') ? trans(session('product.alias').'.'.$section.'.graph'):false,
 				'pb' => Lang::has(session('product.alias').'.'.$section.'.pb') ? true:false,
@@ -89,6 +90,7 @@ class PdfController extends Controller
 				'paragraph' => trans(session('product.alias').'.'.$section.'.'.session('result.'.$section.'.rating'))
 			];
 			$headervars['page'.$count] = trans(session('product.alias').'.'.$section.'.title');
+			$headervars['page_offest'] = -1;
 			$count++;
 		}
 		$vars['introImage'] = trans(session('product.alias').'.introduction-image');
@@ -99,7 +101,7 @@ class PdfController extends Controller
 		//return $vars['sections'];
 		//return view('tool.default.report.report',$vars);
 
-        $pdf = PDF::loadView('tool.default.report.report',$vars)->setOption('margin-top', 25)->setOption('margin-left', 0)->setOption('margin-right', 0)->setOption('window-status','chartrendered')->setOption('header-html','http://redhat.idcgauge.net//template/default/report/header')->setOption('header-spacing',0)->setOption('footer-html','http://redhat.idcgauge.net//template/default/report/footer')->setOption('footer-spacing',2)
+        $pdf = PDF::loadView('tool.default.report.report',$vars)->setOption('margin-top', 25)->setOption('margin-left', 0)->setOption('margin-right', 0)->setOption('window-status','chartrendered')->setOption('header-html','http://redhat.idcready.net//template/default/report/header')->setOption('header-spacing',0)->setOption('footer-html','http://redhat.idcready.net//template/default/report/footer')->setOption('footer-spacing',2)
         	->setOption('replace', $headervars);
 		return $pdf->inline('invoice.pdf');
     }

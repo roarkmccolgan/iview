@@ -1,5 +1,5 @@
 <?php
-
+//Redhat
 return array(
     'stage1' => 'Stage 1: Passive',
     'stage2' => 'Stage 2: Tentative',
