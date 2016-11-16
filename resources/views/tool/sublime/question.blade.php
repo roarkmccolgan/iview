@@ -98,20 +98,12 @@
 <script src="{{{ asset('js/plugins.js')}}}"></script>
 <script src="{{{ asset('js/jquery.matchHeight.js')}}}"></script>
 <script src="{{{ asset('js/templates/'.session('template').'/main.js')}}}"></script>
-@if ($script)
-<script>
-$(function() {
-    @foreach ($script as $s)
-       {{ $s }}
-    @endforeach
-});
-</script>
-@endif
+
 <script>
 
-jQuery(window).on("beforeunload", function(event){
+/*jQuery(window).on("beforeunload", function(event){
       return "Are you sure you would like to leave this page? Your answers for this page will be lost";
-});
+});*/
 $('.mh').matchHeight();
 $('#mask').hide(); //hidemask
 @if ($report)
@@ -207,12 +199,12 @@ $('#mask').hide(); //hidemask
             var valid = true;
             var checkset = false;
             jQuery.each($('.groupcheck'), function( i, item ) {
+                $(item).removeClass('error');
                 if(!$(item).find(':radio:checked').val()){
                     checkset = item;
                     valid = false;
                     return false;
                 }
-                $(checkset).removeClass('error');
             });
             if(!valid){
                 $(checkset).addClass('error');
@@ -315,4 +307,65 @@ if($('label.rel').length){
     })
 }
 </script>
+
+@foreach ($questions as $q => $question)
+    @if(isset($question['other']))
+    <script>
+    var otherBut = $( "button[value='{{$question['other']}}']" );
+    if(otherBut.length){
+        otherBut.unbind('click');
+        otherBut.on('click', function(event){
+            event.preventDefault();
+            otherBut.hide();
+            html = 
+            '<div class="otherdiv" id="other_{{$q}}">'+
+                '<input type="text" id="other_input_{{$q}}" name="answer" class="" placeholder="Your Country">'+
+                '<button class="btn btn-danger pull-right btn-lg" type="submit">{{Lang::get('general.next')}} <i class="icon-arrow_right"></i></button></button>'+
+            '</div>';
+            $(html).insertAfter( otherBut );
+            $('button:submit').click(function(e){
+                $(window).off('beforeunload');
+                e.preventDefault();
+                var that = this;
+                var newDiv = $('#other_{{$q}}').addClass('error');
+                var newInput = $('#other_input_{{$q}}');
+                if(newInput.val()!='' && newInput.val().length>3){
+                    $('#mask').show();
+                    jQuery.each($('button.btn-q'), function( i, item ) {
+                        if(that!=item) $(item).prop( "disabled", true );
+                    });
+                    setTimeout(
+                        function() {
+                            $(that).unbind('click').trigger('click');
+                        },
+                    800);
+                }else{
+                    newDiv.addClass('error');
+                }
+            });
+        });
+    }
+    </script>
+    @endif
+@endforeach
+
+@if ($script)
+<script>
+$(function() {
+    @foreach ($script as $s)
+       {!! $s !!}
+    @endforeach
+});
+</script>
+@endif
+@if ($script)
+<script>
+$(function() {
+    @foreach ($script as $s)
+       {!! $s !!}
+    @endforeach
+});
+</script>
+@endif
+
 @stop

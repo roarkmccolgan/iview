@@ -38,10 +38,15 @@ a:hover, a:active, a:focus{
 	text-decoration: none;
 }
 
+h1.result{
+	font-size: 52px;
+	margin-bottom: 15px !important;
+	text-transform: uppercase;
+}
 h1{
 	font-family: 'Metric Bold',Arial,Helvetica,sans-serif;
 	font-weight: lighter;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	margin: 0;
 	font-size: 26px;
 }
@@ -70,7 +75,7 @@ h2{
 	margin-bottom: 30px;	
 }
 .head{
-	background-color: #E66B6B;
+	background-color: #00B388;
 	color: #FFF;
 }
 .head h1{
@@ -141,7 +146,7 @@ h1, h2{
 	margin-bottom: 10px;
 }
 
-.btn-q {
+.btn-q, .otherdiv {
 	display: block;
 	position: relative;
 	border: none;
@@ -156,6 +161,20 @@ h1, h2{
 	font-weight: normal;
 	margin: 15px auto;
 	width: 90%;
+}
+.otherdiv {
+	padding: 20px 20px 20px 50px;
+}
+.otherdiv.error {
+	background-color: #E66B6B;
+}
+.otherdiv input{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding: 6px;
+	width: 40%;
+	border: 1px solid #CCC; 
 }
 .btn-q:hover,  .btn-q:focus, .icheckbox.checked + .checktext span {
 	background: #8C93A3;
@@ -254,6 +273,7 @@ span.instruct {
 }
 .groupcheck.error{
 	border: 1px solid #E66B6B;
+	background-color: rgba(242, 222, 222, 0.31);
 }
 .groupcheck h4{
 	font-family: 'Metric Light',Arial,Helvetica,sans-serif;

@@ -32,19 +32,16 @@
                     </div>
                     <div id="results" style="background-color: #FFF; padding: 20px; padding-top: 40px;">
                         <div class="row">
-                            <div class="col-xs-12">
-                                <h2>The Results are in, your Organization is at:</h2>
-                                <h1>{{$heading}}</h1>
-                                <h3>Summary</h3>
-                                <p>{{$sub1}}</p>
-                                <strong>
-                                    {!!trans('general.fullreport')!!}
-                                </strong><br/>
-                                <strong>
-                                    {!!trans('general.provide')!!}
-                                </strong>
+                            <div class="col-xs-10 col-xs-offset-1">
+                                <h2>{{$heading}}</h2>
+                                <h1 class="result">{{$result}}</h1>
+                                <p>{!!trans(session('product.alias').'.completecopy.'.$resultkey)!!}</p>
+                                <p>
+                                    {!!trans('general.'.session('product.id').'fullreport')!!}<br/>
+                                    {!!trans('general.'.session('product.id').'provide')!!}
+                                </p>
                                 <div class="row">
-                                    <div class="col-xs-10 col-xs-offset-1">
+                                    <div class="col-xs-12">
                                         <div style="padding: 20px; border:1px solid #EFEFEF; padding-top: 40px; margin-top: 20px;">
                                             <div class="row">
                                             {{ Form::open(array('url' => '/quiz/complete','id'=>'form-email-report','class'=>'clearfix')) }}
@@ -54,22 +51,22 @@
                                                     <div class="col-xs-6 form-group{{$errors->has('fname')?' error':''}}">
                                                         <label>{!!trans('general.fname')!!}*</label>
                                                         <input type="text" class="form-control req" value="{{$source['C_FirstName']?$source['C_FirstName']:''}}" name="fname">
-                                                        <span>{!!trans('general.errorFname')!!}</span>
+                                                        @if($errors->has('fname')) <span>{!!trans('general.errorFname')!!}</span> @endif
                                                     </div>
                                                     <div class="col-xs-6 form-group{{$errors->has('sname')?' error':''}}">
                                                         <label>{!!trans('general.sname')!!}*</label>
                                                         <input type="text" class="form-control req" value="{{$source['C_LastName']?$source['C_LastName']:''}}" name="sname">
-                                                        <span>{!!trans('general.errorSname')!!}</span>
+                                                        @if($errors->has('sname')) <span>{!!trans('general.errorSname')!!}</span> @endif
                                                     </div>
                                                     <div class="col-xs-6 form-group{{$errors->has('email')?' error':''}}">
                                                         <label>{!!trans('general.email')!!}*</label>
                                                         <input type="text" class="form-control req email" value="{{$source['C_emailAddress']?$source['C_emailAddress']:''}}" name="email">
-                                                        <span>{!!trans('general.errorEmail')!!}</span>
+                                                        @if($errors->has('email')) <span>{!!trans('general.errorEmail')!!}</span> @endif
                                                     </div>
                                                     <div class="col-xs-6 form-group{{$errors->has('company')?' error':''}}">
                                                         <label>{!!trans('general.company')!!}*</label>
                                                         <input type="text" value="{{$source['C_Company']?$source['C_Company']:''}}" name="company" class="form-control req">
-                                                        <span>{!!trans('general.errorCompany')!!}</span>
+                                                        @if($errors->has('company')) <span>{!!trans('general.errorCompany')!!}</span> @endif
                                                     </div>
                                                     <div class="col-xs-12 form-group{{$errors->has('country')?' error':''}}">
                                                         <label>{!!trans('general.country')!!}*</label>
@@ -318,12 +315,12 @@
                                                         element.value = '{{$source['C_Country']}}';
                                                         </script>
                                                         @endif
-                                                        <span>{!!trans('general.errorCountry')!!}</span>
+                                                        @if($errors->has('country')) <span>{!!trans('general.errorCountry')!!}</span> @endif
                                                     </div>
                                                     <div class="col-xs-6 form-group">
                                                         <label>{!!trans('general.phone')!!}</label>
                                                         <input class="form-control" type="text" value="{{$source['C_BusPhone']?$source['C_BusPhone']:''}}" name="phone">
-                                                        <span>{!!trans('general.errorNumber')!!}</span>
+                                                        @if($errors->has('phone')) <span>{!!trans('general.errorNumber')!!}</span> @endif
                                                     </div>
                                                     <div class="col-xs-12 checkbox">
                                                         <label class="checkbox{{$errors->has('terms')?' error':''}}">
@@ -332,7 +329,7 @@
                                                         </label>
                                                         <p class="help-block" style="margin-top: 10px;">
                                                             <strong>{!!trans('general.terms')!!} *</strong><br/>
-                                                            {!!trans('general.byreg')!!}
+                                                            {!!trans('general.'.session('product.id').'byreg')!!}
                                                         </p>
                                                     </div>
                                                     <div class="col-xs-6">
@@ -345,9 +342,9 @@
                                             {{ Form::close() }}
                                             </div>
                                         </div>
-                                        <pre>
+                                        <!-- <pre>
                                             {{print_r(session('result'))}}
-                                        </pre>
+                                        </pre> -->
                                     </div>
                                 </div>
                             </div>
@@ -363,7 +360,7 @@
 @parent
 
 <script src="{{{ asset('js/plugins.js')}}}"></script>
-<script src="{{{ asset('js/main.js')}}}"></script>
+<script src="{{{ asset('js/templates/'.session('template').'/main.js')}}}"></script>
 @if (isset($script))
 <script>
 $(function() {

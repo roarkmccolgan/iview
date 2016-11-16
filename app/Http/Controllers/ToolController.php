@@ -229,6 +229,7 @@ class ToolController extends Controller
         $vars = array(
             'heading' => trans(session('product.alias').'.overall.title'),
             'result' => trans(session('product.alias').'.'.$this->result['overall']['rating']),
+            'resultkey' => $this->result['overall']['rating'],
             'baseline' => session('baseline'),
             'fullresult' => session('result'),
             'sub1' => trans($this->baseline['overall']['types'][$this->result['overall']['rating']]['copy']),
@@ -386,13 +387,20 @@ class ToolController extends Controller
         }
 
 
-    public function fakeDownload($userid){
-        //PDF file is stored under project/public/download/info.pdf
-        $file= storage_path().'/reports/SAGE_Assessment_Report.pdf';
+    public function fakeDownload($tool){
+
+        if($tool=='fireeye'){
+            $file= storage_path().'/reports/FireEye_Assessment_Report.pdf';
+            $filename = "FireEye_Assessment_Report.pdf";
+        }else{
+            $file= storage_path().'/reports/SAGE_Assessment_Report.pdf';
+            $filename = "SAGE_Assessment_Report.pdf";
+        }
+        
         $headers = array(
             'Content-Type: application/pdf',
         );
-        return response()->download($file, 'SAGE_Assessment_Report.pdf', $headers);
+        return response()->download($file, $filename, $headers);
     }
     public function getCalcResults($section=false){
         $this->loadQuestions();

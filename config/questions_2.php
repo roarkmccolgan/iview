@@ -43,10 +43,11 @@ return array(
                             ),
                             array(
                                 'label'=>'Other',
-                                'value'=>'close',
+                                'value'=>0,
                                 'checked'=>false
                             )
-                        )
+                        ),
+                        'other'=>'Other|0'
                     )
                 )
             ),

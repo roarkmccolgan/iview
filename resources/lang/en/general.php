@@ -40,14 +40,14 @@ return array(
     '2title'=>'IDC\'s Cyber Risk Assessment',
     '2sub-title'=>'Sponsored by FireEye and Hewlett Packard Enterprise',
     '2landing'=>'
-<h2>Your Cyber Risk Strategy Readiness</h2>
-<p>As Digital Transformation forms a key pillar of modern business strategy and regulation starts to bite, Cyber Risk readiness has become a core enabler of digital infrastructure. IDC research shows that agile IT departments typically have the most mature approach to Cyber Risk management.
+<h2>Your Cyber Risk Readiness</h2>
+<p>As Digital Transformation forms a key pillar of modern business strategy and regulation starts to bite, Cyber Risk readiness has become a core enabler of digital infrastructure. IDC research shows that agile IT departments typically have the most mature approach to Cyber Risk management. 
 </p>
 <p>
 Complete the IDC Cyber Risk Assessment Tool to find out more about how ready you are.. This provides an independent, facts-based framework to help you make informed decisions around your Cyber Risk strategy and the benefits associated with increasing your readiness in the face of growing cyber threats.
 </p>
 <p>
-    By completing this survey, you’ll receive a custom report ranking your capabilities according to our benchmark based on 500 companies across Europe. The report will highlight where your capabilities are strong and advise on improvements where there are gaps.
+    By completing this survey, you’ll receive a custom report ranking your capabilities according to our benchmark based on 500 companies across Europe. The report will highlight where your capabilities are strongest and advise on improvements where there are gaps.
 </p>',
     '2startbut'=>'Get Started',
     'adhoc'=>'Ad-Hoc', //reactive
