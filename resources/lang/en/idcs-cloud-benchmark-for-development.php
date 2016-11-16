@@ -25,8 +25,10 @@ return array(
     'introduction-image' => 'report1.jpg',
     'overall' => array(
         'title'=>'Overall Cloud Maturity',
-        'hidetitle'=>'false',
+        'hidetitle'=>'true',
+        'color'=>'#0092C4',
         'image'=>'',
+        'graph'=>'true',
         'stage1'=>'
             <p>
                 Organizations at this stage in their cloud maturity process tend to be providing cloud at the request of their customers, or as a vendor reseller. As a result, fees are derived from referrals or from resale, and organizations are generally focused on project revenues, rather than longer-term recurring revenue streams. Organizations at this stage in their cloud strategy are yet to embrace a cloud future and as a result may struggle to generate profits in this area. There is no defined vision for cloud, but there is time to make this transition if key decision makers act now.
@@ -71,7 +73,10 @@ return array(
     'cloud-vision-and-strategy' => array(
         'title'=>'Cloud Strategy and Vision',
         'pb'=>'pb',
-        'color'=>'red',
+        'designline'=>'true',
+        'color'=>'#00DF62',
+        /*'image'=>'cloud-vision-and-strategy.jpg',*/
+        'graph'=>'true',
         'stage1'=>'
         <p>
             Based on IDC\'s assessment, your organization is at Stage 1 in terms of your cloud strategy and vision. 14% of the organizations benchmarked in our research were at this stage, with the majority of organizations positioned in Stage 2. Typically, organizations at this stage of their strategy maturity share the following characteristics:
@@ -84,6 +89,7 @@ return array(
         <p>
             Most organizations in this stage of maturity are not geared to function as a cloud business and either refer cloud requests to their vendor partners or resell public cloud services to a limited base of existing customers. More critically, without specific revenue targets for cloud, many have no way of measuring cloud success and lack any direction in developing this part of their business further.
         </p>
+        <img src="http://sage.idcready.net/images/tools/1/cloud-vision-and-strategy.jpg" class="right">
         <h3>Recommendations:</h3>
         <h5>Executive sponsorship:</h5>
         <p>
@@ -110,6 +116,7 @@ return array(
         <p>
             While some cloud initiatives are taking place, investments in this area may be limited. These tend to be small pockets of strategic activity rather than elements of a more cohesive execution strategy. Sales are starting to execute on a cloud sales strategy, supported by revenue targets and the beginnings of a business plan.
         </p>
+        <img src="http://sage.idcready.net/images/tools/1/cloud-vision-and-strategy.jpg" class="right">
         <h3>Recommendations:</h3>
         <h5>Defined product strategies:</h5>
         <p>
@@ -136,6 +143,7 @@ return array(
         <p>
             Executive endorsement and buy-in of cloud now exists across core lines of business. As a result, you are proactively converting opportunities for cloud and have invested as part of a longer-term business strategy for the next two to three years. You are also looking for potential targets outside of their existing client base (new markets, new segments, new territories) to grow the business.
         </p>
+        <img src="http://sage.idcready.net/images/tools/1/cloud-vision-and-strategy.jpg" class="right">
         <h3>Recommendations:</h3>
         <h5>Create advocacy:</h5>
         <p>
@@ -162,6 +170,7 @@ return array(
         <p>
             Organizations at this stage are executing on their cloud strategy and vision and have established a portfolio of cloud offerings and related services through dedicated sales, implementation, and support functions. You are also able to execute across multiple cloud architectures and have sufficient investment to execute on this strategy. Companies at this stage are actively delivering on growth strategies and go-to-market plans in order to target new clients and geographies.
         </p>
+        <img src="http://sage.idcready.net/images/tools/1/cloud-vision-and-strategy.jpg" class="right">
         <h3>Recommendations:</h3>
         <h5>Verticalize your approach:</h5>
         <p>
@@ -188,6 +197,7 @@ return array(
         <p>
             All aspects of the business are focused on a broad set of KPIs, from customer adoption and growth targets, to satisfaction levels. In addition, professional services play a key role in both business targets and the delivery of cloud solutions. You are also in a position to offer any form of cloud architecture to your customers. Scale is a key motivator here and companies at this stage are executing on growth and scale strategies, typically targeting new clients and markets.
         </p>
+        <img src="http://sage.idcready.net/images/tools/1/cloud-vision-and-strategy.jpg" class="right">
         <h3>Recommendations:</h3>
         <h5>Look to the future:</h5>
         <p>
@@ -205,7 +215,11 @@ return array(
     ),
     'process-and-skill-sets' => array(
         'title'=>'Processes and Skill-Sets',
+        'pageimage'=>'process-and-skill-sets.jpg',
         'pb'=>'pb',
+        'designline'=>'true',
+        'color'=>'#F5006A',
+        'graph'=>'true',
         'stage1'=>'
         <p>
             Based on IDC\'s assessment, your organization is at Stage 1 in terms of the maturity of your cloud processes. 25% of the organizations benchmarked in our research were at this stage, with the majority of organizations positioned in Stage 2. Typically, organizations in this stage of maturity share the following characteristics:
@@ -368,6 +382,9 @@ return array(
     'marketing' => array(
         'title'=>'Marketing Capabilities',
         'pb'=>'pb',
+        'designline'=>'true',
+        'color'=>'#633BAD',
+        'graph'=>'true',
         'stage1'=>'
         <p>
             Based on IDC\'s assessment, your organization is at Stage 1 in terms of your cloud marketing maturity. 28% of the organizations benchmarked in our research were at this stage, with the majority of organizations positioned in Stage 1. Typically, organizations at this stage of their maturity share the following characteristics:
@@ -522,6 +539,9 @@ return array(
     'sales' => array(
         'title'=>'Sales',
         'pb'=>'pb',
+        'designline'=>'true',
+        'color'=>'#00B7E7',
+        'graph'=>'true',
         'stage1'=>'
         <p>
             Based on IDC\'s assessment, your organization is at Stage 1 in terms of your cloud sales maturity. 21% of the organizations benchmarked in our research were at this stage, with the majority of organizations positioned in Stage 2. Typically, organizations at this stage of their maturity share the following characteristics:
@@ -700,6 +720,9 @@ return array(
     'business-mix' => array(
         'title'=>'Business Mix',
         'pb'=>'pb',
+        'designline'=>'true',
+        'color'=>'#FFBD72',
+        'graph'=>'true',
         'stage1'=>'
         <p>
             Based on IDC\'s assessment, your organization is at Stage 1 in terms of the maturity of your cloud business mix. 4% of the organizations benchmarked in our research were at this stage, with the majority of organizations positioned in Stage 3. Typically, organizations at this stage of their maturity share the following characteristics:

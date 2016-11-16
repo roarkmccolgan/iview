@@ -18,23 +18,9 @@ class PdfController extends Controller
     {
         //return view('tool.default.report');
         //$html = View::make('tool.default.report', [])->render();
-        $stocksTable = Lava::DataTable();
-        $stocksTable->addColumns([
-			['string', 'Stage'],
-			['number', 'Your Score'],
-		]);
-		$stocksTable->addRoleColumn('string', 'style');
-		$stocksTable->addRoleColumn('string', 'annotation');
-		$stage = ['Time to act','Time to commit','Time to invest','Time to refine','Time to accelorate'];
-		for ($a = 0; $a < 5; $a++) {
-			$val = rand(0,100);
-		    $stocksTable->addRow([
-		      $stage[$a], $val, $a==2? '#283558':null, $val
-		    ]);
-		}
-		$chart = Lava::ColumnChart('Stocks', $stocksTable, [
+        $chartSettings = [
 			'title' => null,
-			// 'backgroundColor' => 'magenta',
+			'backgroundColor' => '#f1f1f1',
 			'vAxis' => [
 				'baselineColor'=>'none',
 				'gridlines'=> [
@@ -67,7 +53,8 @@ class PdfController extends Controller
 		    	'groupWidth'=> '70%'
 
 		    ] //As a percent, "33%"
-		]);
+		];
+
 		$vars = [];
 		$count = 0;
 		$headervars = [];
@@ -76,27 +63,49 @@ class PdfController extends Controller
 		$headervars['company_alias'] = session('company.alias');
 		$headervars['tool_id'] = session('product.id');
 		foreach (config('baseline_'.session('product.id')) as $section => $values) {
+			if(Lang::has(session('product.alias').'.'.$section.'.graph')){
+				$sectionGraph = Lava::DataTable();
+		        $sectionGraph->addColumns([
+					['string', 'Stage'],
+					['number', 'Your Score'],
+				]);
+				$sectionGraph->addRoleColumn('string', 'style');
+				$sectionGraph->addRoleColumn('string', 'annotation');
+				$numformat = Lava::NumberFormat([
+				    'suffix'         => '%'
+				]);
+				
+				foreach ($values['types'] as $stage => $params) {
+					$val = $params['benchmark'];
+				    $sectionGraph->addRow([
+				      /*trans(session('product.alias').'.'.$stage)*/$stage, $val, session('result.'.$section.'.rating')==$stage? trans(session('product.alias').'.'.$section.'.color'):null, $val
+				    ]);
+				}
+				
+				$sectionChart = Lava::ColumnChart($section.'_graph', $sectionGraph, $chartSettings);
+			}
 			$vars['sections'][] = [
 				'title' => trans(session('product.alias').'.'.$section.'.title'),
 				'hidetitle' => Lang::has(session('product.alias').'.'.$section.'.hidetitle') ? true:false,
 				'seckey' => $section,
 				'image' => Lang::has(session('product.alias').'.'.$section.'.image') ? trans(session('product.alias').'.'.$section.'.image'):false,
+				'pageimage' => Lang::has(session('product.alias').'.'.$section.'.pageimage') ? trans(session('product.alias').'.'.$section.'.pageimage'):false,
 				'color' => Lang::has(session('product.alias').'.'.$section.'.color') ? trans(session('product.alias').'.'.$section.'.color'):false,
+				'designline' => Lang::has(session('product.alias').'.'.$section.'.designline') ? trans(session('product.alias').'.'.$section.'.designline'):false,
 				'imagefloat' => isset($values['floatimage']) ? $values['floatimage']:'',
 				'graph' => Lang::has(session('product.alias').'.'.$section.'.graph') ? trans(session('product.alias').'.'.$section.'.graph'):false,
 				'pb' => Lang::has(session('product.alias').'.'.$section.'.pb') ? true:false,
 				'rating' => trans(session('product.alias').'.'.session('result.'.$section.'.rating')),
 				'score' => session('result.'.$section.'.score'),
-				'paragraph' => trans(session('product.alias').'.'.$section.'.'.session('result.'.$section.'.rating'))
+				'paragraph' => trans(session('product.alias').'.'.$section.'.'.session('result.'.$section.'.rating')),
+
 			];
 			$headervars['page'.$count] = trans(session('product.alias').'.'.$section.'.title');
-			$headervars['page_offest'] = -1;
+			$headervars['page_offest'] = 1;
 			$count++;
 		}
 		$vars['introImage'] = trans(session('product.alias').'.introduction-image');
 		$vars['introRating'] = trans(session('product.alias').'.'.session('result.overall.rating'));
-
-		$vars['introChart'] = false;
 
 		//return $vars['sections'];
 		//return view('tool.default.report.report',$vars);

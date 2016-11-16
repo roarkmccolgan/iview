@@ -27,7 +27,7 @@
 		<tr>
 			<td style="width: 160mm; height: 25mm; background-color: #003F7D;">
 				<h1>{{ app('request')->input('tool_title') }}</h1>
-				<h2 class="section">{{ app('request')->input('sub-title') }}</h2>
+				<h2 class="subtitle">{{ app('request')->input('sub-title') }}</h2>
 			</td>
 			<td>
 				<img src="/images/report/idclogo.jpg" style="display: block; width: 36mm; height: 12mm; margin-left: 5mm; margin-top: 2mm;">
@@ -45,7 +45,7 @@
 				//var y = document.getElementsByClassName(x[i]);
 				//for (var j=0; j<y.length; ++j) y[j].textContent = vars[x[i]];
 			}
-			var y = document.getElementsByClassName('section');
+			var y = document.getElementsByClassName('subtitle');
 			for(var j = 0; j < y.length; j++)  
 			{  
 		         // if current page is not the first page 

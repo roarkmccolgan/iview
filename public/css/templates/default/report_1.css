@@ -37,8 +37,7 @@ p{
 	font-family: Arial;
 	font-size: 10pt;
 	color: #686868;
-	line-height: 14pt;
-	text-align: justify;
+	line-height: 13pt;
 	margin-top: 1mm;
 }
 li{
@@ -52,7 +51,6 @@ li{
 
 }
 .pb {
-	height: 5mm;
 	page-break-before: always;
 }
 
@@ -66,8 +64,14 @@ li{
 	float: left;
 	width: 50mm;
 }
+.introduction{
+	margin-left: 20mm;
+	width: 190mm;
+}
 .section{
 	position: relative;
+	margin: 20mm;
+	margin-top: 0;
 }
 .section h2{
 	background-position: 0 50%;
@@ -95,6 +99,12 @@ h2.cloud-vision-and-strategy{
 	display: block;
 	float: left;
 	margin: 0 5mm 5mm 5mm;
+}
+.graph{
+	height: 85mm;
+	width:85mm;
+	margin-right:5mm;
+	float: left
 }
 .group:after {
   content: "";

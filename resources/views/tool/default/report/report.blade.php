@@ -18,25 +18,22 @@
 		</table>
 		@endif
 		<div class="spacer"></div>
-		@if($introChart)
-		<div style="float: left; margin-left: 20mm; width: 95mm;">
-			<h2>Introduction</h2>
-			{!!trans(session('product.alias').'.introduction', ['result'=>$introRating])!!}
-		</div>
-		<div id="stocks-div" class="graph" style="height: 110mm; width:85mm; margin:5mm; background-color: red; float: left">
-			
-		</div>
-		@columnchart('Stocks', 'stocks-div')
-		@else
-		<div style="margin-left: 20mm; width: 150mm;">
+		<div class="introduction">
 			<h2>Introduction</h2>
 			{!!trans(session('product.alias').'.introduction',['result'=>$introRating])!!}
 		</div>
-		@endif
 		@foreach($sections as $key=>$section)
-		<div class="{{$section['pb']?'pb ':''}}section group" style="margin-left: 20mm; width: {{$section['image'] ? '155mm;':'150mm;' }};">
-			@if($section['color'])
-			<div style="position: absolute; top:0mm; right: {{$section['image'] ? '-45mm':'-50mm' }}; width: 100mm; height: 3mm; background-color: {{$section['color']}}"></div>
+		<div class="{{$section['pb'] && !$section['pageimage'] ?'pb ':''}}"></div>
+		@if($section['pageimage'])
+		<table class="{{$section['pb'] ?'pb ':''}}" style="width: 100%;" cellpadding="0" cellspacing="0">
+			<tr>
+				<td colspan="2"><img src="{{session('url')}}/images/tools/{{session('product.id')}}/{{$section['pageimage']}}" style="display: block; width: 100%;"><!-- report1.jpg --></td>
+			</tr>
+		</table>
+		@endif
+		<div class="section group {{$section['seckey']}}" style="">
+			@if($section['designline'])
+			<div style="position: absolute; top:0mm; right: {{$section['image'] ? '-45mm':'-50mm' }}; width: 130mm; height: 3mm; background-color: {{$section['color']}}"></div>
 			@endif
 			@if($section['pb'])
 			<div class="spacer"></div>
@@ -47,6 +44,12 @@
 			<h4>{{$section['rating']}}</h4>
 			@if($section['image'])
 			<img src="{{session('url')}}/images/tools/{{session('product.id')}}/{{$section['image']}}" class="{{$section['imagefloat']}}" alt="">
+			@endif
+			@if($section['graph'])
+				<div id="{{$section['seckey']}}-div" class="graph" style="">
+					
+				</div>
+				@columnchart($section['seckey'].'_graph', $section['seckey'].'-div')
 			@endif
 			{!!$section['paragraph']!!}
 		</div>
