@@ -506,7 +506,7 @@ return array(
                 'questions' => array(
                     'q6'=>array(
                         'type'=>'groupradio',
-                        'question'=>'Which of the following are part of your cyber risk escalation structure?” (instead of “Which of the following do you have as part of your cyber risk escalation framework?',
+                        'question'=>'Of the following, who are part of your cyber risk assessment structure?',
                         'name'=>'q6',
                         'calc'=>array(
                             'type'=>'normalize',
@@ -705,7 +705,7 @@ return array(
                 'questions' => array(
                     'q9'=>array(
                         'type'=>'slider',
-                        'question'=>'To what level do you have the following in place for managing your IT physical security? (Rating scale: 1 = not at all, 5 = very extensive)',
+                        'question'=>'To what level do you have the following in place for managing your IT physical security?',
                         'name'=>'q9',
                         'calc'=>array(
                             'type'=>'average',
@@ -715,7 +715,7 @@ return array(
                             array(
                                 'label'=>'Security staff screening',
                                 'from'=>'Not at all',
-                                'to'=>'Very intensive',
+                                'to'=>'Very extensive',
                                 'name'=>'q9.1',
                                 'options'=>array(
                                     array(
@@ -748,7 +748,7 @@ return array(
                             array(
                                 'label'=>'Prebooked appointments',
                                 'from'=>'Not at all',
-                                'to'=>'Very intensive',
+                                'to'=>'Very extensive',
                                 'name'=>'q9.2',
                                 'options'=>array(
                                     array(
@@ -781,7 +781,7 @@ return array(
                             array(
                                 'label'=>' Identity verification',
                                 'from'=>'Not at all',
-                                'to'=>'Very intensive',
+                                'to'=>'Very extensive',
                                 'name'=>'q9.3',
                                 'options'=>array(
                                     array(
@@ -814,7 +814,7 @@ return array(
                             array(
                                 'label'=>'Man-traps to enter/exit',
                                 'from'=>'Not at all',
-                                'to'=>'Very intensive',
+                                'to'=>'Very extensive',
                                 'name'=>'q9.4',
                                 'options'=>array(
                                     array(
@@ -847,7 +847,7 @@ return array(
                             array(
                                 'label'=>'Biometric authentication',
                                 'from'=>'Not at all',
-                                'to'=>'Very intensive',
+                                'to'=>'Very extensive',
                                 'name'=>'q9.5',
                                 'options'=>array(
                                     array(
@@ -880,7 +880,7 @@ return array(
                             array(
                                 'label'=>'CCTV monitoring',
                                 'from'=>'Not at all',
-                                'to'=>'Very intensive',
+                                'to'=>'Very extensive',
                                 'name'=>'q9.6',
                                 'options'=>array(
                                     array(
@@ -913,7 +913,7 @@ return array(
                             array(
                                 'label'=>'Man-shadowing (staff and visitors must work in pairs or be accompanied)',
                                 'from'=>'Not at all',
-                                'to'=>'Very intensive',
+                                'to'=>'Very extensive',
                                 'name'=>'q9.7',
                                 'options'=>array(
                                     array(
@@ -946,7 +946,7 @@ return array(
                             array(
                                 'label'=>'Change authorization, approval, and logging',
                                 'from'=>'Not at all',
-                                'to'=>'Very intensive',
+                                'to'=>'Very extensive',
                                 'name'=>'q9.8',
                                 'options'=>array(
                                     array(
@@ -1027,7 +1027,7 @@ return array(
                 'questions' => array(
                     'q11'=>array(
                         'type'=>'slider',
-                        'question'=>'How prepared are you for the following aspects of your assessment and implementation of GDPR (General Data Protection Regulation) compliance? (Rating scale: 1 = not prepared at all to 5 = very well prepared',
+                        'question'=>'How prepared are you for the following aspects of your assessment and implementation of GDPR (General Data Protection Regulation) compliance?',
                         'name'=>'q11',
                         'calc'=>array(
                             'type'=>'average',
@@ -1464,7 +1464,7 @@ return array(
                         ),
                         'options'=>array(
                             array(
-                                'label'=>'NGFW (next-generation firewall) - defence',
+                                'label'=>'NGFW (next-generation firewall)',
                                 'name'=>'q17.1',
                                 'options'=>array(
                                     array(
@@ -1480,7 +1480,7 @@ return array(
                                 )
                             ),
                             array(
-                                'label'=>'IPS/IDS (intrusion detection/protection) - defence',
+                                'label'=>'IPS/IDS (intrusion detection/protection)',
                                 'name'=>'q17.2',
                                 'options'=>array(
                                     array(
@@ -1496,7 +1496,7 @@ return array(
                                 )
                             ),
                             array(
-                                'label'=>'Vulnerability management - defence',
+                                'label'=>'Vulnerability management',
                                 'name'=>'q17.3',
                                 'options'=>array(
                                     array(
@@ -1512,7 +1512,7 @@ return array(
                                 )
                             ),
                             array(
-                                'label'=>'Micro segmentation (fine-grained separation and isolation of traffic between specified hosts or domains) - defence',
+                                'label'=>'Micro segmentation (fine-grained separation and isolation of traffic between specified hosts or domains)',
                                 'name'=>'q17.4',
                                 'options'=>array(
                                     array(
@@ -1528,7 +1528,7 @@ return array(
                                 )
                             ),
                             array(
-                                'label'=>'Unified security management (data and information interchange between devices and tools) - defence,',
+                                'label'=>'Unified security management (data and information interchange between devices and tools),',
                                 'name'=>'q17.5',
                                 'options'=>array(
                                     array(
@@ -1544,7 +1544,7 @@ return array(
                                 )
                             ),
                             array(
-                                'label'=>'Third-party professional security service (pre-sales/design/implementation) - defence',
+                                'label'=>'Third-party professional security service (pre-sales/design/implementation)',
                                 'name'=>'q17.6',
                                 'options'=>array(
                                     array(

@@ -1,24 +1,21 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Traits;
 
-use App\Http\Requests;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Lang;
-use Lava;
-use PDF;
+trait GenerateReportTrait {
 
-class PdfController extends Controller
-{
-    /**
-     * List all iViews
-     * @return view
-     */
-    public function wkhtml()
+	public function wkhtml($assessment_id, $name)
     {
-        //return view('tool.default.report');
-        //$html = View::make('tool.default.report', [])->render();
-        $chartSettings = [
+    	return PDF::loadHTML($html)
+    		->setPaper('a4')
+    		->setOption('margin-top', 15)
+    		->setOption('margin-right', 0)
+    		->setOption('margin-bottom',25)
+    		->setOption('margin-left', 0)
+    		->setOption('footer-html', 'http://sanqcorp.app/wkhtmltopdf/footer.html')
+    		->$type($name);
+
+    	$chartSettings = [
 			'title' => null,
 			'backgroundColor' => [
 				'fill'=>'transparent'
@@ -112,8 +109,17 @@ class PdfController extends Controller
 		//return $vars['sections'];
 		//return view('tool.default.report.report',$vars);
 
-        $pdf = PDF::loadView('tool.default.report.report',$vars)->setOption('margin-top', 25)->setOption('margin-left', 0)->setOption('margin-right', 0)->setOption('window-status','chartrendered')->setOption('header-html','http://redhat.idcready.net//template/default/report/header')->setOption('header-spacing',0)->setOption('footer-html','http://redhat.idcready.net//template/default/report/footer')->setOption('footer-spacing',2)
+        $pdf = PDF::loadView('tool.default.report.report',$vars)
+        	->setOption('margin-top', 25)
+        	->setOption('margin-left', 0)
+        	->setOption('margin-right', 0)
+        	->setOption('window-status','chartrendered')
+        	->setOption('header-html',session('url').'/template/default/report/header')
+        	->setOption('header-spacing',0)
+        	->setOption('footer-html',session('url').'/template/default/report/footer')
+        	->setOption('footer-spacing',2)
         	->setOption('replace', $headervars);
-		return $pdf->inline('invoice.pdf');
+
+		return $pdf->save(storage_path().'reports.'.$assessment_id.'_'.$name.'_assessment.pdf');
     }
 }

@@ -87,6 +87,7 @@ h2.cloud-vision-and-strategy{
 	width: 75mm;
 	margin-right: 5mm;
 	margin-bottom: 5mm;
+	margin-top: 5mm;
 }
 .section img.right{
 	display: block;
@@ -94,6 +95,7 @@ h2.cloud-vision-and-strategy{
 	width: 75mm;
 	margin-left: 5mm;
 	margin-bottom: 5mm;
+	margin-top: 5mm;
 }
 .section img.none{
 	display: block;
@@ -104,7 +106,9 @@ h2.cloud-vision-and-strategy{
 	height: 85mm;
 	width:85mm;
 	margin-right:5mm;
-	float: left
+	float: left;
+	background: url("/images/tools/1/graphbg.jpg") no-repeat 50% 0;
+	background-size: 85mm 76mm;
 }
 .group:after {
   content: "";

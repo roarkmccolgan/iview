@@ -75,7 +75,7 @@ h2{
 	margin-bottom: 30px;	
 }
 .head{
-	background-color: #00B388;
+	background-color: #d92435;
 	color: #FFF;
 }
 .head h1{
@@ -166,7 +166,7 @@ h1, h2{
 	padding: 20px 20px 20px 50px;
 }
 .otherdiv.error {
-	background-color: #E66B6B;
+	background-color: #d92435;
 }
 .otherdiv input{
 	-webkit-border-radius: 5px;
@@ -215,7 +215,7 @@ h1, h2{
 .btn-q:hover:before,
 .btn-q:focus:before,
 .icheckbox:hover:before {
-	color: #E66B6B;
+	color: #d92435;
 }
 
 .icheckbox {
@@ -272,14 +272,14 @@ span.instruct {
 	border-bottom: 1px dotted #535360;
 }
 .groupcheck.error{
-	border: 1px solid #E66B6B;
+	border: 1px solid #d92435;
 	background-color: rgba(242, 222, 222, 0.31);
 }
 .groupcheck h4{
 	font-family: 'Metric Light',Arial,Helvetica,sans-serif;
 	font-size: 18px;
 	margin-bottom: 20px;
-	color: #E66B6B;
+	color: #d92435;
 }
 .groupcheck .radiobox{
 	display: inline-block;
@@ -310,7 +310,7 @@ span.instruct {
 	content: '';
 	width: 85%;
 	height: 0px;
-	border-top: 1px dotted #E66B6B;
+	border-top: 1px dotted #d92435;
 	background: transparent;
 	position: absolute;
 	left: -42%;
@@ -417,7 +417,7 @@ span.instruct {
 /*marking active/completed steps green*/
 /*The number of the step and the connector before it = green*/
 .progressbar li.active:before,  .progressbar li.active:after, .progressbar li.completed:before,  .progressbar li.completed:after{
-	background: #E66B6B;
+	background: #d92435;
 	color: white;
 }
 
@@ -441,7 +441,7 @@ span.instruct {
 }
 .list-group.vertical-steps .list-group-item.active{
 	background-color:transparent;
-	color:#E66B6B;
+	color:#d92435;
 }
 .list-group.vertical-steps .list-group-item::before {
 	border-radius: 50%;
@@ -471,13 +471,13 @@ span.instruct {
 }
 /*Active/ Completed States*/
 .list-group.vertical-steps .list-group-item.active::before{
-	background-color:#E66B6B;
+	background-color:#d92435;
 	content: '\f141';
 	color:#fff;
 }
 .list-group.vertical-steps .list-group-item.completed{
-	border-left:1px dotted #E66B6B;
-	color: #E66B6B;
+	border-left:1px dotted #d92435;
+	color: #d92435;
 }
 .list-group.vertical-steps .list-group-item.completed:before{
 	content: '\f00c';

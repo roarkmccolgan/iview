@@ -5,9 +5,12 @@ use App\Company;
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
 use App\Http\Requests\CreateToolRequest;
+use App\Http\Controllers\Traits\GenerateReportTrait;
 use App\Tool;
 use App\Url;
 use App\Language;
+use Lava;
+use PDF;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
@@ -17,6 +20,8 @@ use Illuminate\Support\Facades\Validator;
 
 class ToolController extends Controller
 {
+    use GenerateReportTrait;
+
     var $numSections = false;
     var $quiz = false;
     var $menu = false;
@@ -316,7 +321,9 @@ class ToolController extends Controller
                 }
                 
                 //generate report
-                $this->generateReport();
+                $this->wkhtml($assessment->id,$assessment->fname.'_'.$assessment->lname);
+                $assessment_pdf = $assessment->id.'_'.$assessment->fname.'_'.$assessment->lname.'.pdf';
+
                 $curloc = App::getLocale();
                 
                 /*if(!App::isLocal()){
@@ -342,27 +349,32 @@ class ToolController extends Controller
                         });
                     }
                 }*/
-                $subject = Lang::get('email.report');
-                //send mail to user
-                Mail::queue('emails.'.$curloc.'download', array('fname'=>$validate_data['fname'], 'sname'=>$validate_data['sname'], 'userid'=>$validate_data['assessmentid']), function($message)  use ($validate_data, $subject, $curloc){
+                $subject = trans(session('product.alias').'.email.subject');
+                $viewData = [
+                    'assessment'=>$assessment,
+                    'assessment_pdf'=>$assessment_pdf,
+                ];
+                $data['html'] =  View::make('emails.download', $viewData)->render();
 
-                    $message->to($validate_data['email'], $validate_data['fname'].' '.$validate_data['sname'])->subject($subject);
+                //send mail to user
+                Mail::queue('emails.echo', $data, function ($message) use ($assessment, $subject) {
+                    $message->to($assessment['email'], $assessment['fname'].' '.$assessment['sname'])->subject($subject);
                 });
                 
                 //send mail to notification people
                 if(App::isLocal()){
                     $emails = ['roarkmccolgan@gmail.com'];
                 }else{
-                    $emails = ['roarkmccolgan@gmail.com', 'Pelle_Lindell@Dell.com'];
-
+                    $emails = ['roarkmccolgan@gmail.com']; //add others 
                 }
-                Mail::queue('emails.notification', array('fname'=>$validate_data['fname'], 'sname'=>$validate_data['sname'], 'email'=>$validate_data['email'], 'company'=>$validate_data['company'], 'phone'=>$validate_data['phone'], 'screener1'=>$this->quiz['demographics']['pages']['page1']['questions']['s1']['selected'], 'screener2'=>$this->quiz['demographics']['pages']['page2']['questions']['s2']['selected'], 'screener3'=>$this->quiz['demographics']['pages']['page3']['questions']['s3']['selected'], 'score'=>$this->howfit['overall']['score'], 'rating'=>$this->howfit['overall']['rating'], 'userid'=>$validate_data['assessmentid']), function($message)  use ($validate_data, $emails, $curloc){
+                /*Mail::queue('emails.notification', array('fname'=>$validate_data['fname'], 'sname'=>$validate_data['sname'], 'email'=>$validate_data['email'], 'company'=>$validate_data['company'], 'phone'=>$validate_data['phone'], 'screener1'=>$this->quiz['demographics']['pages']['page1']['questions']['s1']['selected'], 'screener2'=>$this->quiz['demographics']['pages']['page2']['questions']['s2']['selected'], 'screener3'=>$this->quiz['demographics']['pages']['page3']['questions']['s3']['selected'], 'score'=>$this->howfit['overall']['score'], 'rating'=>$this->howfit['overall']['rating'], 'userid'=>$validate_data['assessmentid']), function($message)  use ($validate_data, $emails, $curloc){
 
                     $message->to($emails)->subject('Conferged Infrastructure Quiz completed ('.$curloc.')');
-                });
+                });*/
                 
                 $vars = array(
-                    'heading' => Lang::get('general.title'),
+                    'heading' => trans(session('product.alias').'complete_thankyou'),
+                    'body' => trans(session('product.alias').'complete_body'),
                     'sub1' => Lang::get('general.hi').', '.$validate_data['fname'],
                     'sub2' => Lang::get('general.soon'),
                     'tweet' => $this->baseline['overall']['types'][$this->howfit['overall']['rating']]['tweet'],
@@ -380,10 +392,9 @@ class ToolController extends Controller
                 $cookie = Cookie::forget('quiz_progress');*/
                 
                 //return View::make('thankyou',$vars)->withCookie($cookie);
-                return View::make('thankyou',$vars);
+                return View::make('tool.'.session('template').'.thankyou',$vars);
             }
-            Input::flashExcept('_token');
-            return Redirect::to(getLang().'quiz/complete')->withErrors($validator);
+            return redirect('/quiz/complete')->withErrors($validator);
         }
 
 

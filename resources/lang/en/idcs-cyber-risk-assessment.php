@@ -1,12 +1,14 @@
 <?php
 //fireeye
 return array(
-    'stage1' => 'Ad Hoc',
+    'stage1' => 'Ad-Hoc',
     'stage2' => 'Opportunistic',
     'stage3' => 'Repeatable',
     'stage4' => 'Managed',
     'stage5' => 'Optimized',
     'completecopy' => [
+        'fullreport' => 'Would you like the full report that provides you with essential guidance for advancing your Cyber Risk strategy?',
+        'provide' => 'We can send this directly to your mailbox. Just provide us your details and we\'ll send it to you.',
         'stage1' => '
             <p>
                 Thank you for completing the IDC Cyber Risk Assessment. Based on your total responses, your readiness ranking is <strong>Ad-hoc</strong>, which is the lowest rank of the five assessment levels.
@@ -273,7 +275,7 @@ return array(
         'stage1'=>'
             <ul>
                 <li>Cloud is an emerging element of your business</li>
-                <li>Solutions are typically developed on an ad hoc basis</li>
+                <li>Solutions are typically developed on an Ad-Hoc basis</li>
                 <li>You are yet to develop tools or reusable methodologies</li>
                 <li>Monitoring are tools limited if they exist at all</li>
                 <li>Not yet in a position to offer SI services for cloud</li>
@@ -371,7 +373,7 @@ return array(
                 <li>Cloud services billed on a project or annual basis</li>
             </ul>
             <p>
-                At this stage of maturity, service providers are yet to make significant investments in cloud and are not able to progress beyond basic resell and referral. They do not have the capability to manage complex hybrid environments, and are far away from additional value-adds such as unified billing, management, and security. Cloud is generally delivered on an ad hoc, reactive basis and there is a reliance on support from vendor partners. Equally, skills and tools in the PaaS or developer platform service areas are likely to be minimal, if at all present. Providers at this stage may offer dedicated or internal storage hosting to their existing client base, but rarely have datacenter capabilities; the most common scenario is simply renting capacity in a single co-location site. Based on the level of overall maturity, cloud solutions are being billed on a project or annual basis.
+                At this stage of maturity, service providers are yet to make significant investments in cloud and are not able to progress beyond basic resell and referral. They do not have the capability to manage complex hybrid environments, and are far away from additional value-adds such as unified billing, management, and security. Cloud is generally delivered on an Ad-Hoc, reactive basis and there is a reliance on support from vendor partners. Equally, skills and tools in the PaaS or developer platform service areas are likely to be minimal, if at all present. Providers at this stage may offer dedicated or internal storage hosting to their existing client base, but rarely have datacenter capabilities; the most common scenario is simply renting capacity in a single co-location site. Based on the level of overall maturity, cloud solutions are being billed on a project or annual basis.
             </p>
             <p>
                 <strong>Recommendations:</strong> As your cloud business gains momentum, your value proposition to your customers and competitive differentiation will be affected by your ability to offer value-added features. This will require investment in your own delivery capabilities. It is advisable at this stage to associate your business planning with a technology investment plan for each stage of your cloud maturity. The first step should be a thorough assessment of your server virtualization platforms and a stress test of your storage back-end. Only with those in place can offerings around private hosted cloud be developed.
@@ -525,7 +527,7 @@ return array(
                 Cloud service providers at this stage have begun to integrate cloud into all sales team portfolios, but retain a balance between on-premise and new cloud business. Sales teams are increasingly trained in cloud capabilities and certification, and while incentive structures for cloud are well defined, they do not extend to the lifetime of a customer.
             </p>
             <p>
-                Sales and marketing efforts are beginning to target LOBs as well as IT, but still currently on an ad hoc basis. Some messaging is changed depending on the audience and its key requirements. Sales enablement has extended from training to active participation in lead generation activities by both internal marketing departments and cloud vendor partner initiatives. It is likely that at this stage of maturity, customers are starting to ask for demos and proof-of-concepts as part of the sales process
+                Sales and marketing efforts are beginning to target LOBs as well as IT, but still currently on an Ad-Hoc basis. Some messaging is changed depending on the audience and its key requirements. Sales enablement has extended from training to active participation in lead generation activities by both internal marketing departments and cloud vendor partner initiatives. It is likely that at this stage of maturity, customers are starting to ask for demos and proof-of-concepts as part of the sales process
             </p>
             <p>
                 Organizations at this stage typically have a good understanding of customer requirements. They tend to communicate through appropriate channels using messages that resonate and guide cloud buyers through the sales cycle. Metrics are also utilized, tracking campaigns against predetermined objectives, and customer satisfaction is measured, but mainly through independent surveys, for example. Many companies have started to customize syndicated content from key vendor partners to tailor it to their audiences.

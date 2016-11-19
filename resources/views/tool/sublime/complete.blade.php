@@ -37,8 +37,8 @@
                                 <h1 class="result">{{$result}}</h1>
                                 <p>{!!trans(session('product.alias').'.completecopy.'.$resultkey)!!}</p>
                                 <p>
-                                    {!!trans('general.'.session('product.id').'fullreport')!!}<br/>
-                                    {!!trans('general.'.session('product.id').'provide')!!}
+                                    {!!trans(session('product.alias').'.completecopy.fullreport')!!}<br/>
+                                    {!!trans(session('product.alias').'.completecopy.provide')!!}
                                 </p>
                                 <div class="row">
                                     <div class="col-xs-12">

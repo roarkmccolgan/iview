@@ -369,7 +369,7 @@
                                 <em>* {!!trans('general.required')!!}</em>
                             </div>
                             <div class="col-md-12">
-                                <a class="btn btn-lg btn-primary pull-right {{$btnclass}}" href="/pdf"><i class="icon-email"></i> {!!trans('general.emailreport')!!}</a>
+                                <input type="submit" class="btn btn-lg btn-primary pull-right {{$btnclass}}"><i class="icon-email"></i> {!!trans('general.emailreport')!!}</input>
                             </div>
                         </fieldset>
                     {{ Form::close() }}
@@ -384,7 +384,7 @@
 @parent
 
 <script src="{{{ asset('js/templates/'.session('template').'/plugins.js')}}}"></script>
-<script src="{{{ asset('js/templates/'.session('template').'/main.js')}}}"></script>
+
 @if (isset($script))
 <script>
 $(function() {

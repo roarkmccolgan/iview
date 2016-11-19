@@ -22,6 +22,17 @@ return array(
         For further insight and detailed recommendations, the report takes you through the components of cloud strategy, delivering an assessment of your stage of maturity as well as individual recommendations on how to improve these areas.
     </p>
     ',
+    'complete_thankyou' => 'Thank you',
+    'complete_body' => 'Why not tweet',
+    'email'=>[
+        'subject' => 'IDC Report',
+        'hi' => 'Hi :Fname',
+        'body' => 'As promised, here\'s the link to download your Cloud Maturity Benchmark report. This breaks down your results by category and helps you benchmark yourself against other organisations.',
+        'link' => 'Download Report',
+        'extra' => 'Once you\'ve digested the report why not visit <a href="http://www.sage.com" style="color:#024886">Sage</a>',
+        'regards' => 'Regards',
+        'team' => 'The IDC Team'
+    ],
     'introduction-image' => 'report1.jpg',
     'overall' => array(
         'title'=>'Overall Cloud Maturity',
@@ -401,6 +412,7 @@ return array(
         <p>
             Companies at this stage typically focus on more traditional marketing and do not proactively build thought leadership content such as blogs, video tutorials, and white papers.
         </p>
+        <img src="http://sage.idcready.net/images/tools/1/marketing.jpg" class="right">
         <h3>Recommendations:</h3>
         <h5>Marketing transformation:</h5>
         <p>
@@ -431,6 +443,7 @@ return array(
         <p>
             Companies at this stage typically focus on more traditional marketing and do not proactively build thought leadership content such as blogs, video tutorials, and white papers.
         </p>
+        <img src="http://sage.idcready.net/images/tools/1/marketing.jpg" class="right">
         <h3>Recommendations:</h3>
         <h5>Define a cloud journey:</h5>
         <p>
@@ -461,6 +474,7 @@ return array(
         <p>
             Although still limited, companies at this stage have started to customize syndicated content from key vendor partners, tailoring it to their audiences. Some have started to blog and use other social forums, but activities tend to be ad hoc and driven by individuals rather than the company.
         </p>
+        <img src="http://sage.idcready.net/images/tools/1/marketing.jpg" class="right">
         <h3>Recommendations:</h3>
         <h5>Build digital marketing capability:</h5>
         <p>
@@ -491,6 +505,7 @@ return array(
         <p>
             Organizations at this stage are active participants in thought leadership content and campaigns, providing materials that educate the target market and deliver the business as a leader in this field.
         </p>
+        <img src="http://sage.idcready.net/images/tools/1/marketing.jpg" class="right">
         <h3>Recommendations:</h3>
         <h5>Continue to develop measurement:</h5>
         <p>
@@ -521,6 +536,7 @@ return array(
         <p>
             At this stage of maturity the organization is recognized as a credible thought leader and strategic advisor. Thought leadership is ongoing and educational content is provided frequently and across multiple channels.
         </p>
+        <img src="http://sage.idcready.net/images/tools/1/marketing.jpg" class="right">
         <h3>Recommendations:</h3>
         <h5>Continuous evolution and development:</h5>
         <p>
@@ -538,6 +554,7 @@ return array(
     ),
     'sales' => array(
         'title'=>'Sales',
+        'pageimage'=>'sales.jpg',
         'pb'=>'pb',
         'designline'=>'true',
         'color'=>'#00B7E7',
@@ -747,6 +764,7 @@ return array(
         <p>
             Very few organizations at this stage in their maturity have developed cloud-specific solutions (horizontal or vertical) in collaboration with vendor partners or have developed their own cloud IP.
         </p>
+        <!--<img src="http://sage.idcready.net/images/tools/1/business-mix.jpg" class="right">-->
         <h3>Recommendations:</h3>
         <h5>Build a financial plan:</h5>
         <p>
@@ -781,6 +799,7 @@ return array(
         <p>
             At this stage of maturity it is unlikely that your organization has made significant investments in your own cloud infrastructure and tools and management technology. Many are, however, starting to build a well-structured technology roadmap for both the technology and skills needed.
         </p>
+        <!--<img src="http://sage.idcready.net/images/tools/1/business-mix.jpg" class="right">-->
         <h3>Recommendations:</h3>
         <h5>Financial plan:</h5>
         <p>
@@ -823,6 +842,7 @@ return array(
         <p>
             It is unlikely that organizations at this stage of maturity have developed cloud-specific solutions (horizontal or vertical) or have developed their own cloud IP.
         </p>
+        <!--<img src="http://sage.idcready.net/images/tools/1/business-mix.jpg" class="right">-->
         <h3>Recommendations:</h3>
         <h5>Automation:</h5>
         <p>
@@ -857,6 +877,7 @@ return array(
         <p>
             Companies at this stage have typically invested — and continue to invest — in cloud infrastructure, tools, and management technology. The ability to support and integrate multiple environments becomes critical, and tools and architecture in hybrid cloud are prioritized.
         </p>
+        <!--<img src="http://sage.idcready.net/images/tools/1/business-mix.jpg" class="right">-->
         <h3>Recommendations:</h3>
         <h5>Automation:</h5>
         <p>
@@ -899,6 +920,7 @@ return array(
         <p>
             At this stage of maturity, there is an emphasis on selling joint solutions, as well as holistic solutions that contain a high degree of IP. Solutions form part of a broader digital transformation agenda and there is an emphasis on being able to support and design holistic solutions. At this stage of maturity, scale becomes a key KPI and it is advisable to continuously certify solutions with strategic vendor partners and consider certifying IP-based solutions to be sold through cloud marketplaces.
         </p>
+        <!--<img src="http://sage.idcready.net/images/tools/1/business-mix.jpg" class="right">-->
         <h3>Recommendations:</h3>
         <h5>Digital transformation:</h5>
         <p>
