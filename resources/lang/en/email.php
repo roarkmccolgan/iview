@@ -23,5 +23,7 @@ return array(
 	'ways'=>'5 ways your small business could benefit from big data',
 	'click'=>'Click here',
 	'auto'=>'This email is automatically generated, please do not reply.',
-	'view'=>'View in Browser'	
+	'view'=>'View in Browser',
+	'unsubscribe'=>'click here',
+	'unsubscribe_text'=>'If you would like to unsubscribe to these emails please',
 );

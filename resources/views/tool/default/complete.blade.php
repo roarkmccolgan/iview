@@ -350,16 +350,17 @@
                                 @endif
                                 <span>{!!trans('general.errorCountry')!!}</span>
                             </div>
-                            <div class="col-md-6 form-group">
+                            <div class="col-md-6 form-group{{$errors->has('phone')?' error':''}}">
                                 <label>{!!trans('general.phone')!!}</label>
-                                <input class="form-control" type="text" value="{{$source['C_BusPhone']?$source['C_BusPhone']:''}}" name="phone">
+                                <input class="form-control req" type="text" value="{{$source['C_BusPhone']?$source['C_BusPhone']:''}}" name="phone">
                                 <span>{!!trans('general.errorNumber')!!}</span>
                             </div>
-                            <div class="col-md-12 checkbox">
+                            <div class="col-md-12 checkbox form-group{{$errors->has('accept')?' error':''}}">
                                 <label class="checkbox{{$errors->has('terms')?' error':''}}">
                                     <input type="checkbox" class="req" name="terms">
-                                    {!!trans('general.accept')!!} 
+                                    {!!trans('general.accept')!!}
                                 </label>
+                                <span>{!!trans('general.errorAccept')!!}</span>
                                 <p class="help-block" style="margin-top: 10px;">
                                     <strong>{!!trans('general.terms')!!} *</strong><br/>
                                     {!!trans('general.'.session('product.id').'byreg')!!}
@@ -369,7 +370,7 @@
                                 <em>* {!!trans('general.required')!!}</em>
                             </div>
                             <div class="col-md-12">
-                                <input type="submit" class="btn btn-lg btn-primary pull-right {{$btnclass}}"><i class="icon-email"></i> {!!trans('general.emailreport')!!}</input>
+                                <button type="submit" class="btn btn-lg btn-primary pull-right {{$btnclass}}"><i class="fa fa-email"></i> {!!trans('general.emailreport')!!}</button>
                             </div>
                         </fieldset>
                     {{ Form::close() }}
@@ -383,7 +384,8 @@
 @section('pagescript')
 @parent
 
-<script src="{{{ asset('js/templates/'.session('template').'/plugins.js')}}}"></script>
+<script src="{{{ asset('js/plugins.js')}}}"></script>
+<script src="{{{ asset('js/templates/'.session('template').'/main.js')}}}"></script>
 
 @if (isset($script))
 <script>

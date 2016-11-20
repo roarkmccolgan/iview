@@ -315,5 +315,8 @@ Complete the IDC Cyber Risk Assessment Tool to find out more about how ready you
     'errorEmail'=>'Enter a valid email address',
     'errorCompany'=>'Enter your company name',
     'errorCountry'=>'Please select your country',
-    'errorNumber'=>'Enter a valid number'
+    'errorNumber'=>'Please enter a valid phone number',
+    'errorRelationship'=>'Please select Relationship Type',
+    'errorQualification'=>'Please select Partner Type',
+    'errorAccept'=>'Please accept the Terms &amp; Conditions',
 );

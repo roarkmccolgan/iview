@@ -20,7 +20,7 @@
 		<div class="spacer"></div>
 		<div class="introduction">
 			<h2>Introduction</h2>
-			{!!trans(session('product.alias').'.introduction',['result'=>$introRating])!!}
+			{!!trans(session('product.alias').'.introduction')!!}
 		</div>
 		@foreach($sections as $key=>$section)
 		<div class="{{$section['pb'] && !$section['pageimage'] ?'pb ':''}}"></div>
@@ -42,6 +42,9 @@
 			<h2 class="{{$section['seckey']}}">{{$section['title']}}</h2>
 			@endif
 			<h4>{{$section['rating']}}</h4>
+			@if($section['introduction'])
+			{!!$section['introduction']!!}
+			@endif
 			@if($section['image'])
 			<img src="{{session('url')}}/images/tools/{{session('product.id')}}/{{$section['image']}}" class="{{$section['imagefloat']}}" alt="">
 			@endif

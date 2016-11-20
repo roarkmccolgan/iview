@@ -67,15 +67,15 @@ class PdfController extends Controller
 		foreach (config('baseline_'.session('product.id')) as $section => $values) {
 			if(Lang::has(session('product.alias').'.'.$section.'.graph')){
 				$sectionGraph = Lava::DataTable();
-		        $sectionGraph->addColumns([
-					['string', 'Stage'],
-					['number', 'Your Score'],
-				]);
-				$sectionGraph->addRoleColumn('string', 'style');
-				$sectionGraph->addRoleColumn('string', 'annotation');
 				$numformat = Lava::NumberFormat([
 				    'suffix'         => '%'
 				]);
+		        $sectionGraph->addColumns([
+					['string', 'Stage'],
+					['number', 'Your Score',$numformat],
+				]);
+				$sectionGraph->addRoleColumn('string', 'style');
+				$sectionGraph->addRoleColumn('string', 'annotation');
 				
 				foreach ($values['types'] as $stage => $params) {
 					$val = $params['benchmark'];
@@ -89,6 +89,7 @@ class PdfController extends Controller
 			$vars['sections'][] = [
 				'title' => trans(session('product.alias').'.'.$section.'.title'),
 				'hidetitle' => Lang::has(session('product.alias').'.'.$section.'.hidetitle') ? true:false,
+				'introduction' => Lang::has(session('product.alias').'.'.$section.'.introduction') ? trans(session('product.alias').'.'.$section.'.introduction',['result'=>trans(session('product.alias').'.'.session('result.'.$section.'.rating'))]):false,
 				'seckey' => $section,
 				'image' => Lang::has(session('product.alias').'.'.$section.'.image') ? trans(session('product.alias').'.'.$section.'.image'):false,
 				'pageimage' => Lang::has(session('product.alias').'.'.$section.'.pageimage') ? trans(session('product.alias').'.'.$section.'.pageimage'):false,

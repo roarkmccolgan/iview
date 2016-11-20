@@ -344,6 +344,14 @@ form.clearfix label{
 .form-group span{
 	display: none;
 }
+.form-group.error span{
+	color: white;
+	display: inline-block;
+	border-radius: 3px;
+	padding: 3px;
+	background-color: #c52323;
+	margin-top: 2px;
+}
 .trans{
 	color: white;
 }

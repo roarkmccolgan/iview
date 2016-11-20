@@ -193,12 +193,12 @@ ul li, ol li {
 						<table>
 							<tr>
 								<td class="padding">
-									<p><a href="{{ URL::asset(storage_url().'reports/'.$assessment_pdf) }}" class="btn-primary">{{trans(session('product.alias').'.email.link')}}</a></p>
+									<p><a href="{{ session('url').'/download/'.$assessment->id }}" class="btn-primary">{{trans(session('product.alias').'.email.link')}}</a></p>
 								</td>
 							</tr>
 						</table>
 						@if(Lang::has(session('product.alias').'.email.extra'))
-						<p>{{trans(session('product.alias').'.email.extra')}}</p>
+						<p>{!!trans(session('product.alias').'.email.extra')!!}</p>
 						@endif
 						<p>{{trans(session('product.alias').'.email.regards')}},</p>
 						<p><strong>{{trans(session('product.alias').'.email.team')}}</strong></p>
@@ -225,7 +225,7 @@ ul li, ol li {
 				<table>
 					<tr>
 						<td align="center">
-							<p>Don't like these annoying emails? <a href="mailto:rmccolgan@idc.com?subject=Please unsubscribe me from the Converged Maturity mail system"><unsubscribe>Unsubscribe</unsubscribe></a>.
+							<p>{{trans('email.unsubscribe_text')}} <a href="mailto:rmccolgan@idc.com?subject=Please unsubscribe me from {{session('product.alias')}}"><unsubscribe>{{trans('email.unsubscribe')}}</unsubscribe></a>.
 							</p>
 						</td>
 					</tr>

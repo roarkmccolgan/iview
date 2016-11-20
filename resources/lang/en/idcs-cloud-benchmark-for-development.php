@@ -15,15 +15,11 @@ return array(
     <p>
         The following report provides you with both context, in terms of positioning your organization against your peers, and recommendations on how to progress your organization toward a profitable and successful future in cloud.
     </p>
-    <p>
-        Based on IDC\'s assessment, your organization is at <strong>:result</strong> in terms of its overall cloud readiness. X% of the organizations benchmarked by IDC were at this stage, with the majority of organizations positioned in Stage 3: Time to Invest.
-    </p>
-    <p>
-        For further insight and detailed recommendations, the report takes you through the components of cloud strategy, delivering an assessment of your stage of maturity as well as individual recommendations on how to improve these areas.
-    </p>
     ',
-    'complete_thankyou' => 'Thank you',
-    'complete_body' => 'Why not tweet',
+    'complete_thankyou' => 'Thank you :Fname,',
+    'complete_body' => 'Your custom report will arrive in your inbox soon.<br/>
+While you\'re waiting why not tweet your results and see how your followers measure up?',
+    'complete_tweet' => 'I\'ve just taken the Cloud Development Assessment Sponsored by @Sage %26 @IDCUKI, we\'re at :result. Interested?',// http://bit.ly/2g8WN1d
     'email'=>[
         'subject' => 'IDC Report',
         'hi' => 'Hi :Fname',
@@ -40,6 +36,14 @@ return array(
         'color'=>'#0092C4',
         'image'=>'',
         'graph'=>'true',
+        'introduction' => '
+        <p>
+            Based on IDC\'s assessment, your organization is at <strong>:result</strong> in terms of its overall cloud readiness. X% of the organizations benchmarked by IDC were at this stage, with the majority of organizations positioned in Stage 3: Time to Invest.
+        </p>
+        <p>
+            For further insight and detailed recommendations, the report takes you through the components of cloud strategy, delivering an assessment of your stage of maturity as well as individual recommendations on how to improve these areas.
+        </p>
+        ',
         'stage1'=>'
             <p>
                 Organizations at this stage in their cloud maturity process tend to be providing cloud at the request of their customers, or as a vendor reseller. As a result, fees are derived from referrals or from resale, and organizations are generally focused on project revenues, rather than longer-term recurring revenue streams. Organizations at this stage in their cloud strategy are yet to embrace a cloud future and as a result may struggle to generate profits in this area. There is no defined vision for cloud, but there is time to make this transition if key decision makers act now.

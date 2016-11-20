@@ -25,13 +25,14 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
-                <div class="trans silverStone">
+                <div class="{{isset($class) ? $class:''}}">
                     <div class="row">
                         <div class="col-md-12">
                             <div style="padding: 20px;">
-                                <strong>{{$heading}}</strong>
-                                <div style="margin-left: 30px; font-size: 16px; line-height: 24px">
-                                    <p>{{$body}}</p>
+                                <h1>{{$heading}}</h1>
+                                <div>
+                                    <p>{!!$body!!}</p>
+                                    <a class="btn btn-lg btn-primary" href="http://twitter.com/home/?status={{$tweet}}" target="_blank"><i class="fa fa-twitter"></i> Tweet</a>
                                 </div>
                             </div>
                         </div>
@@ -45,13 +46,13 @@
 @section('pagescript')
 @parent
 
-<script src="{{{ asset('js/templates/'.session('template').'/plugins.js')}}}"></script>
+<script src="{{{ asset('js/plugins.js')}}}"></script>
 <script src="{{{ asset('js/templates/'.session('template').'/main.js')}}}"></script>
 @if (isset($script))
 <script>
 $(function() {
     @foreach ($script as $s)
-       {{ $s }}
+       {!! $s !!}
     @endforeach
 });
 </script>

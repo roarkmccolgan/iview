@@ -55,6 +55,8 @@ Route::group(['domain' => '{subdomain}.idcready.net'], function ($subdomain) {
     });*/
     Route::get('/', 'ToolController@run')->middleware(['routebyurl','reloadquestions']);
 
+	Route::get('/download/{assid}', 'ToolController@getDownload');
+	
     Route::get('/pdf', 'PdfController@wkhtml');
     Route::get('/template/default/report/header', function(){
     	return View::make('tool.default.report.header');
@@ -73,7 +75,6 @@ Route::group(['domain' => '{subdomain}.idcready.net'], function ($subdomain) {
 
 		Route::get('/complete', 'ToolController@getComplete');
 		Route::post('/complete', 'ToolController@postComplete');
-		Route::get('/download/{userid}', 'ToolController@getDownload');
 		Route::get('/download', 'ToolController@fakeDownload');
 	});
 

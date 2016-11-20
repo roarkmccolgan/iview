@@ -2,19 +2,14 @@
 
 namespace App\Http\Controllers\Traits;
 
+use Illuminate\Support\Facades\Lang;
+use Lava;
+use PDF;
+
 trait GenerateReportTrait {
 
 	public function wkhtml($assessment_id, $name)
     {
-    	return PDF::loadHTML($html)
-    		->setPaper('a4')
-    		->setOption('margin-top', 15)
-    		->setOption('margin-right', 0)
-    		->setOption('margin-bottom',25)
-    		->setOption('margin-left', 0)
-    		->setOption('footer-html', 'http://sanqcorp.app/wkhtmltopdf/footer.html')
-    		->$type($name);
-
     	$chartSettings = [
 			'title' => null,
 			'backgroundColor' => [
@@ -64,15 +59,15 @@ trait GenerateReportTrait {
 		foreach (config('baseline_'.session('product.id')) as $section => $values) {
 			if(Lang::has(session('product.alias').'.'.$section.'.graph')){
 				$sectionGraph = Lava::DataTable();
-		        $sectionGraph->addColumns([
-					['string', 'Stage'],
-					['number', 'Your Score'],
-				]);
-				$sectionGraph->addRoleColumn('string', 'style');
-				$sectionGraph->addRoleColumn('string', 'annotation');
 				$numformat = Lava::NumberFormat([
 				    'suffix'         => '%'
 				]);
+		        $sectionGraph->addColumns([
+					['string', 'Stage'],
+					['number', 'Your Score',$numformat],
+				]);
+				$sectionGraph->addRoleColumn('string', 'style');
+				$sectionGraph->addRoleColumn('string', 'annotation');
 				
 				foreach ($values['types'] as $stage => $params) {
 					$val = $params['benchmark'];
@@ -86,6 +81,7 @@ trait GenerateReportTrait {
 			$vars['sections'][] = [
 				'title' => trans(session('product.alias').'.'.$section.'.title'),
 				'hidetitle' => Lang::has(session('product.alias').'.'.$section.'.hidetitle') ? true:false,
+				'introduction' => Lang::has(session('product.alias').'.'.$section.'.introduction') ? trans(session('product.alias').'.'.$section.'.introduction'):false,
 				'seckey' => $section,
 				'image' => Lang::has(session('product.alias').'.'.$section.'.image') ? trans(session('product.alias').'.'.$section.'.image'):false,
 				'pageimage' => Lang::has(session('product.alias').'.'.$section.'.pageimage') ? trans(session('product.alias').'.'.$section.'.pageimage'):false,
@@ -120,6 +116,6 @@ trait GenerateReportTrait {
         	->setOption('footer-spacing',2)
         	->setOption('replace', $headervars);
 
-		return $pdf->save(storage_path().'reports.'.$assessment_id.'_'.$name.'_assessment.pdf');
+		return $pdf->save(storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf');
     }
 }

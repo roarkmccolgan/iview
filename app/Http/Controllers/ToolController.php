@@ -3,20 +3,22 @@
 use App\Assessment;
 use App\Company;
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\Traits\GenerateReportTrait;
 use App\Http\Requests;
 use App\Http\Requests\CreateToolRequest;
-use App\Http\Controllers\Traits\GenerateReportTrait;
+use App\Http\Requests\SubmitAssessmentsRequest;
+use App\Language;
 use App\Tool;
 use App\Url;
-use App\Language;
-use Lava;
-use PDF;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Config;
+use Illuminate\Support\Facades\Lang;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\View;
 
 class ToolController extends Controller
 {
@@ -250,153 +252,152 @@ class ToolController extends Controller
         return view('tool.'.session('template').'.complete',$vars);
     }
 
-    public function postComplete(Request $request)
+    public function postComplete(SubmitAssessmentsRequest $request)
         {
             $this->loadQuestions();
             $this->howfit=Session::get('result');
             $this->baseline = Session::get('baseline');
 
-            $validate_data = $request->except('_token');
-            $rules = array(
-                'fname'=>'required',
-                'sname'=>'required',
-                'email'=>'required',
-                'company'=>'required',
-                'country'=>'required',
-                'terms'=>'required'
-            );
+            Session::put('user', $request->except('_token'));
 
-            $validator = Validator::make($validate_data, $rules);
-
-            if ($validator->passes()) {
-                Session::put('user', $validate_data);
-                
-                $screener1=isset($this->quiz['screeners']) && isset($this->quiz['screeners']['pages']['page1']['questions']['s1']['selected']) ? $this->quiz['screeners']['pages']['page1']['questions']['s1']['selected']: '';
-                $screener2=isset($this->quiz['screeners']) && isset($this->quiz['screeners']['pages']['page1']['questions']['s1']['selected']) ? $this->quiz['screeners']['pages']['page2']['questions']['s2']['selected']: '';
-                $screener3=isset($this->quiz['screeners']) && isset($this->quiz['screeners']['pages']['page1']['questions']['s1']['selected']) ? $this->quiz['screeners']['pages']['page3']['questions']['s3']['selected']: '';
-                
-                //update source
-                $currentLocal = App::getLocale();
-                $localQuestions = $currentLocal=='en' ? '' : $currentLocal;
-                $source = array(
-                    'C_emailAddress'=>$validate_data['email'],
-                    'C_FirstName'=>$validate_data['fname'],
-                    'C_LastName'=>$validate_data['sname'],
-                    'C_Company'=>$validate_data['company'],
-                    'C_Country'=>$validate_data['country'],
-                    'C_BusPhone'=>$validate_data['phone'],
-                    'C_Job_Responsibilities_1'=>$screener1==Config::get($localQuestions.'questions.screeners.pages.page1.questions.s1.options.0.label') ? "IT" : "Business / Operations",
-                    'C_NumberofEmployees_Range_1'=>$screener2,
-                    'form_source'=>$request->input('form_source')
-                );
-                
-                Session::put('source', $source);
-                
-                //save in db
-                $assessment = new Assessment;
-                $assessment->tool_id = session('product.id');
-                $assessment->fname = $validate_data['fname'];
-                $assessment->lname = $validate_data['sname'];
-                $assessment->email = $validate_data['email'];
-                $assessment->company = $validate_data['company'];
-                $assessment->relationship = $validate_data['relationship'];
-                $assessment->qualification = $validate_data['qualification'];
-                $assessment->country = $validate_data['country'];
-                $assessment->tel = $validate_data['phone'];
-                $assessment->referer = session('referer');
-                $assessment->quiz = json_encode($this->quiz);
-                $assessment->result = json_encode($this->howfit);
-                $assessment->save();
-
-                $this->assessmentid = $assessment->id;
-                $validate_data['assessmentid'] = $assessment->id;
-
-                //check UTM
-                if ($request->session()->has('utm')) {
-                    $tracker = Tracker::where('tool_id',session('product.id'))
-                    ->where('code',session('utm'))->first();
-                    if($tracker){
-                        $tracker->increment('completions');
-                    }
+            if(isset($this->quiz['screeners'])){
+                foreach ($this->quiz['screeners'] as $key => $screener) {
+                    # code...
                 }
-                
-                //generate report
-                $this->wkhtml($assessment->id,$assessment->fname.'_'.$assessment->lname);
-                $assessment_pdf = $assessment->id.'_'.$assessment->fname.'_'.$assessment->lname.'.pdf';
-
-                $curloc = App::getLocale();
-                
-                /*if(!App::isLocal()){
-                    //send guzzle request
-                    $client = new GuzzleHttp\Client();
-                    $url = 'https://s2048.t.eloqua.com/e/f2.aspx';
-                    //$url = 'http://www.google.com';
-                    try {
-                        $request = $client->createRequest('GET', $url);
-                        $query = $request->getQuery();
-                        $query['elqFormName'] = Lang::get('general.extFormName');
-                        $query['elqSiteID'] = '2048';
-                        foreach($source as $key=>$item){
-                            $query[$key] = $item;
-                        }
-                                        
-                        $response = $client->send($request);
-                    } catch (GuzzleHttp\Exception\RequestException $e) {
-                        
-                        Mail::queue('emails.errors', array('process'=>'Guzzle', 'message'=>$e->getMessage(), 'time'=>date('l jS \of F Y h:i:s A')), function($message)
-                        {
-                            $message->to('roarkmccolgan@gmail.com', 'Roark McColgan')->subject('Error on Converged Infrastructure - Maturity Benchmark! ('.$curloc.')');
-                        });
-                    }
-                }*/
-                $subject = trans(session('product.alias').'.email.subject');
-                $viewData = [
-                    'assessment'=>$assessment,
-                    'assessment_pdf'=>$assessment_pdf,
-                ];
-                $data['html'] =  View::make('emails.download', $viewData)->render();
-
-                //send mail to user
-                Mail::queue('emails.echo', $data, function ($message) use ($assessment, $subject) {
-                    $message->to($assessment['email'], $assessment['fname'].' '.$assessment['sname'])->subject($subject);
-                });
-                
-                //send mail to notification people
-                if(App::isLocal()){
-                    $emails = ['roarkmccolgan@gmail.com'];
-                }else{
-                    $emails = ['roarkmccolgan@gmail.com']; //add others 
-                }
-                /*Mail::queue('emails.notification', array('fname'=>$validate_data['fname'], 'sname'=>$validate_data['sname'], 'email'=>$validate_data['email'], 'company'=>$validate_data['company'], 'phone'=>$validate_data['phone'], 'screener1'=>$this->quiz['demographics']['pages']['page1']['questions']['s1']['selected'], 'screener2'=>$this->quiz['demographics']['pages']['page2']['questions']['s2']['selected'], 'screener3'=>$this->quiz['demographics']['pages']['page3']['questions']['s3']['selected'], 'score'=>$this->howfit['overall']['score'], 'rating'=>$this->howfit['overall']['rating'], 'userid'=>$validate_data['assessmentid']), function($message)  use ($validate_data, $emails, $curloc){
-
-                    $message->to($emails)->subject('Conferged Infrastructure Quiz completed ('.$curloc.')');
-                });*/
-                
-                $vars = array(
-                    'heading' => trans(session('product.alias').'complete_thankyou'),
-                    'body' => trans(session('product.alias').'complete_body'),
-                    'sub1' => Lang::get('general.hi').', '.$validate_data['fname'],
-                    'sub2' => Lang::get('general.soon'),
-                    'tweet' => $this->baseline['overall']['types'][$this->howfit['overall']['rating']]['tweet'],
-                    'colour' => 'orange',
-                    'script' => ['
-                        _gaq.push([\'_trackEvent\', \'Form Submit\', \'Registration\']);
-                        '],
-                    'quiz' => $this->quiz
-                );
-                /*if(Cookie::has('quiz_progress')){
-                    $progress_id = Cookie::get('quiz_progress');
-                    $progress = Progress::find($progress_id);
-                    if($progress) $progress->delete();
-                }
-                $cookie = Cookie::forget('quiz_progress');*/
-                
-                //return View::make('thankyou',$vars)->withCookie($cookie);
-                return View::make('tool.'.session('template').'.thankyou',$vars);
             }
-            return redirect('/quiz/complete')->withErrors($validator);
+            
+            //update source
+            $currentLocal = App::getLocale();
+            $localQuestions = $currentLocal=='en' ? '' : $currentLocal;
+
+            $source = array(
+                'C_emailAddress'=>$request->input('email'),
+                'C_FirstName'=>$request->input('fname'),
+                'C_LastName'=>$request->input('sname'),
+                'C_Company'=>$request->input('company'),
+                'C_Country'=>$request->input('country'),
+                'C_BusPhone'=>$request->input('phone'),
+                'form_source'=>$request->input('form_source')
+            );
+            
+            Session::put('source', $source);
+            
+            //save in db
+            $assessment = new Assessment;
+            $assessment->tool_id = session('product.id');
+            $assessment->fname = $request->input('fname');
+            $assessment->lname = $request->input('sname');
+            $assessment->email = $request->input('email');
+            $assessment->company = $request->input('company');
+            
+            $assessment->country = $request->input('country');
+            $assessment->tel = $request->input('phone');
+            $assessment->referer = session('referer');
+            $assessment->quiz = json_encode($this->quiz);
+            $assessment->result = json_encode($this->howfit);
+            $assessment->relationship = $request->input('relationship'); //EXTRA FIELDS>!>!>!>
+            $assessment->qualification = $request->input('qualification'); //EXTRA FIELDS>!>!>!>
+            $assessment->score = session('result.overall.score');
+            $assessment->rating = trans(session('product.alias').'.'.session('result.overall.rating'));
+            $assessment->save();
+
+            //check UTM
+            if ($request->session()->has('utm')) {
+                $tracker = Tracker::where('tool_id',session('product.id'))
+                ->where('code',session('utm'))->first();
+                if($tracker){
+                    $tracker->increment('completions');
+                }
+            }
+            
+            //generate report
+            $this->wkhtml($assessment->id,str_replace([" ","'"], ["",""], $assessment->fname.'_'.$assessment->lname.'_'.session('product.title')).'_Assessment');
+
+            $curloc = App::getLocale();
+            
+            /*if(!App::isLocal()){
+                //send guzzle request
+                $client = new GuzzleHttp\Client();
+                $url = 'https://s2048.t.eloqua.com/e/f2.aspx';
+                //$url = 'http://www.google.com';
+                try {
+                    $request = $client->createRequest('GET', $url);
+                    $query = $request->getQuery();
+                    $query['elqFormName'] = Lang::get('general.extFormName');
+                    $query['elqSiteID'] = '2048';
+                    foreach($source as $key=>$item){
+                        $query[$key] = $item;
+                    }
+                                    
+                    $response = $client->send($request);
+                } catch (GuzzleHttp\Exception\RequestException $e) {
+                    
+                    Mail::queue('emails.errors', array('process'=>'Guzzle', 'message'=>$e->getMessage(), 'time'=>date('l jS \of F Y h:i:s A')), function($message)
+                    {
+                        $message->to('roarkmccolgan@gmail.com', 'Roark McColgan')->subject('Error on Converged Infrastructure - Maturity Benchmark! ('.$curloc.')');
+                    });
+                }
+            }*/
+            $subject = trans(session('product.alias').'.email.subject');
+            $viewData = [
+                'assessment'=>$assessment,
+            ];
+            $data['html'] =  View::make('emails.download', $viewData)->render();
+
+            //send mail to user
+            Mail::queue('emails.echo', $data, function ($message) use ($assessment, $subject) {
+                $message->to($assessment['email'], $assessment['fname'].' '.$assessment['sname'])->subject($subject);
+            });
+            
+            //send mail to notification people
+            if(App::isLocal()){
+                $emails = ['roarkmccolgan@gmail.com'];
+            }else{
+                $emails = ['roarkmccolgan@gmail.com']; //add others 
+            }
+            /*Mail::queue('emails.notification', array('fname'=>$request->input('fname'), 'sname'=>$request->input('sname'), 'email'=>$request->input('email'), 'company'=>$request->input('company'), 'phone'=>$request->input('phone'), 'screener1'=>$this->quiz['demographics']['pages']['page1']['questions']['s1']['selected'], 'screener2'=>$this->quiz['demographics']['pages']['page2']['questions']['s2']['selected'], 'screener3'=>$this->quiz['demographics']['pages']['page3']['questions']['s3']['selected'], 'score'=>$this->howfit['overall']['score'], 'rating'=>$this->howfit['overall']['rating'], 'assessment_id'=>$assessment->id, function($message)  use ($request->input( $emails,)$curloc){
+
+                $message->to($emails)->subject('Conferged Infrastructure Quiz completed ('.$curloc.')');
+            });*/
+            
+            $vars = array(
+                'heading' => trans(session('product.alias').'.complete_thankyou',['fname'=>$request->input('fname')]),
+                'body' => trans(session('product.alias').'.complete_body'),
+                'tweet' => trans(session('product.alias').'.complete_tweet',['result'=>trans(session('product.alias').'.'.$this->howfit['overall']['rating'])]),
+                'class' => 'trans silverStone',
+                'script' => ['
+                    ga(\'send\', {
+                    hitType: \'event\',
+                    eventCategory: \'Assessments\',
+                    eventAction: \'download\',
+                    eventLabel: \''.addslashes(session('product.title')).'\'
+                });
+                    '],
+                'quiz' => $this->quiz
+            );
+            /*if(Cookie::has('quiz_progress')){
+                $progress_id = Cookie::get('quiz_progress');
+                $progress = Progress::find($progress_id);
+                if($progress) $progress->delete();
+            }
+            $cookie = Cookie::forget('quiz_progress');*/
+            
+            //return View::make('thankyou',$vars)->withCookie($cookie);
+            return View::make('tool.'.session('template').'.thankyou',$vars);
+            
         }
 
+    public function getDownload($subdomain,$assid){
+        $assessment = Assessment::find($assid);
+        
+        $assessment->update(['downloaded' => 1]);
+
+        $file= storage_path().'/reports/'.$assessment->id.'_'.str_replace([" ","'"], ["",""], $assessment->fname.'_'.$assessment->lname.'_'.session('product.title')).'_Assessment.pdf';
+        $headers = array(
+            'Content-Type: application/pdf',
+        );
+        return response()->download($file, $assessment->id.'_'.str_replace([" ","'"], ["",""], $assessment->fname.'_'.$assessment->lname.'_'.session('product.title')).'_Assessment.pdf', $headers);
+    }
 
     public function fakeDownload($tool){
 
