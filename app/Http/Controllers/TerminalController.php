@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
-use App\Http\Requests;
 use Analytics;
+use App\Http\Requests;
 use Assessment;
 use Carbon\Carbon;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Config;
 use JavaScript;
 
@@ -21,6 +21,7 @@ class TerminalController extends Controller
      */
     public function dashboard(Request $request)
     {
+        //return Auth::user();
 
         Carbon::setToStringFormat('m-d-Y');
         $startDate = Carbon::now()->subMonth();

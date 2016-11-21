@@ -270,6 +270,7 @@ Complete the IDC Cyber Risk Assessment Tool to find out more about how ready you
 
     //general
     'next'=>'Next',
+    'back'=>'Back',
     'continue'=>'Continue with the Assessment',
     'of'=>'of',
     'youre'=>'You\'re ',

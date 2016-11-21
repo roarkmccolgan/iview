@@ -106,20 +106,20 @@ class UserController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  App\Tracker
+     * @param  App\User
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function destroy(User $user,Request $request)
+    public function delete($subdomain, User $user,Request $request)
     {
-        $user->destroy();
+        $user->delete();
         if($request->ajax()){
             $data = [
                 'result'=>'success'
             ];
             return $data;
         }
-        return redirect('/admin/trackers')->with('status', 'User Deleted');
+        return redirect('/admin/users')->with('status', 'User Deleted');
     }
 
     /**
@@ -130,13 +130,14 @@ class UserController extends Controller
      */
     public function showChangePassword(Request $request)
     {
-        if($request->get('register_token')!=null){
-            $token = $request->get('token');
-            $user = User::where('register_token',$token)->firstOrFail();
+        //return $request->user();
+        $register_token = $request->get('register_token');
+        if($register_token!=null){
+            $user = User::where('register_token',$register_token)->firstOrFail();
 
             $data = [
                 'user' => $user,
-                'token' => $token,
+                'register_token' => $register_token,
             ];
             return view('auth.change_password', $data);
         }
@@ -151,10 +152,12 @@ class UserController extends Controller
      */
     public function storeChangePassword(ChangePasswordRequest $request)
     {
-        if($request->get('register_token')!=null){
-            $token = $request->get('register_token');
+        //return $request->input('register_token');
+        //return $request->user();
+        
+        if($request->input('register_token')!=null){
             $newPass = $request->input('password');
-            $user = User::where('register_token',$token)->firstOrFail();
+            $user = User::where('register_token',$request->input('register_token'))->firstOrFail();
 
             //return $user;
 
@@ -169,22 +172,19 @@ class UserController extends Controller
             $redirect = '';
             foreach ($user->tools as $tool) {
                 $tool->load(['company','urls']);
-                foreach ($tool->urls as $url) {
-                    $redirect = 'http://'.$url->subdomain.'.'.$url->domain.'/admin';
-                }
+
+                $redirect = 'http://'.$tool->urls->first()->subdomain.'.'.$tool->urls->first()->domain.'/admin';
             }
+            return redirect($redirect);
 
-
-            $this->authenticate($user->email,$newPass,$redirect);
+            /*//$this->authenticate($user->email,$newPass,$redirect);
+            if (Auth::attempt(['email' => $user->email, 'password' => $newPass])) {
+                //return Auth::user();
+                return redirect($redirect);
+            }
+            abort('403');*/
         }
-        abort('303');
 
-        /*$data = [
-            'user' => $user,
-            'token' => $token,
-        ];
-
-        return view('auth.change_password', $data);*/
     }
 
 
@@ -196,7 +196,7 @@ class UserController extends Controller
     private function authenticate($email, $password, $redirect)
     {
         if (Auth::attempt(['email' => $email, 'password' => $password])) {
-            return redirect()->intended($redirect);
+            return redirect($redirect);
         }
         abort('403');
     }

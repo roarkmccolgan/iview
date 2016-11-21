@@ -80,7 +80,7 @@
 @section('pagescript')
 @parent
 <script type="text/javascript">var error = false;</script>
-<script src="{{{ asset('js/templates/'.session('template').'/plugins.js')}}}"></script>
+<script src="{{{ asset('js/plugins.js')}}}"></script>
 <script src="{{{ asset('js/templates/'.session('template').'/main.js')}}}"></script>
 @if ($script)
 <script>

@@ -9,11 +9,12 @@ $(function() {
 		}
 		else {
 			$(this).removeClass('checked');
-		}	
+		}
 	});
 	
 	$('#form-email-report').submit(function(e) {
 		if (validate(this)) {
+			$(e.target).removeClass('btn-primary').addClass('btn-default').prop('disabled', true);
 			return true;
 		}
 		else 

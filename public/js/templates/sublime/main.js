@@ -11,6 +11,10 @@ $(function() {
 			$(this).removeClass('checked');
 		}	
 	});
+	$('#back').click(function(e){
+		e.preventDefault();
+		window.history.back();
+	});
 	
 	$('#form-email-report').submit(function() {
 		if (validate(this)) {

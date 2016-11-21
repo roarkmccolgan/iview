@@ -222,7 +222,7 @@ class ToolController extends Controller
         }
     }
 
-    public function getComplete()
+    public function getComplete(Request $request)
     {
         $this->loadQuestions();
         $this->calcResults();
@@ -233,6 +233,8 @@ class ToolController extends Controller
             $btnclass = 'lang';
         }
 
+        $extraFields = Tool::findOrFail(session('product.id'))->extra_fields()->get()->toArray();
+        //return $extraFields;
         $vars = array(
             'heading' => trans(session('product.alias').'.overall.title'),
             'result' => trans(session('product.alias').'.'.$this->result['overall']['rating']),
@@ -244,16 +246,14 @@ class ToolController extends Controller
             'quiz' => $this->quiz,
             'source' => session('source'),
             'btnclass'=>$btnclass,
-            'extra_fields'=>[
-                'relationship',
-                'qualification',
-            ]
+            'extra_fields'=>count($extraFields) > 0 ? $extraFields:false,
         );
         return view('tool.'.session('template').'.complete',$vars);
     }
 
     public function postComplete(SubmitAssessmentsRequest $request)
         {
+            //return $request->all();
             $this->loadQuestions();
             $this->howfit=Session::get('result');
             $this->baseline = Session::get('baseline');
@@ -295,8 +295,7 @@ class ToolController extends Controller
             $assessment->referer = session('referer');
             $assessment->quiz = json_encode($this->quiz);
             $assessment->result = json_encode($this->howfit);
-            $assessment->relationship = $request->input('relationship'); //EXTRA FIELDS>!>!>!>
-            $assessment->qualification = $request->input('qualification'); //EXTRA FIELDS>!>!>!>
+            $assessment->extra = json_encode($request->input('extra'));
             $assessment->score = session('result.overall.score');
             $assessment->rating = trans(session('product.alias').'.'.session('result.overall.rating'));
             $assessment->save();
@@ -311,7 +310,7 @@ class ToolController extends Controller
             }
             
             //generate report
-            $this->wkhtml($assessment->id,str_replace([" ","'"], ["",""], $assessment->fname.'_'.$assessment->lname.'_'.session('product.title')).'_Assessment');
+            $this->wkhtml($assessment->id,str_slug($assessment->fname.'_'.$assessment->lname.'_'.session('product.title').'_Assessment', '-'));
 
             $curloc = App::getLocale();
             
@@ -346,6 +345,7 @@ class ToolController extends Controller
 
             //send mail to user
             Mail::queue('emails.echo', $data, function ($message) use ($assessment, $subject) {
+                $message->from('notifications@mg.idcready.net', 'IDC Notifications');
                 $message->to($assessment['email'], $assessment['fname'].' '.$assessment['sname'])->subject($subject);
             });
             
@@ -390,13 +390,13 @@ class ToolController extends Controller
     public function getDownload($subdomain,$assid){
         $assessment = Assessment::find($assid);
         
-        $assessment->update(['downloaded' => 1]);
+        $assessment->update(['fetched' => 1]);
 
-        $file= storage_path().'/reports/'.$assessment->id.'_'.str_replace([" ","'"], ["",""], $assessment->fname.'_'.$assessment->lname.'_'.session('product.title')).'_Assessment.pdf';
+        $file= storage_path().'/reports/'.$assessment->id.'_'.str_slug($assessment->fname.'_'.$assessment->lname.'_'.session('product.title').'_Assessment', '-').'.pdf';
         $headers = array(
             'Content-Type: application/pdf',
         );
-        return response()->download($file, $assessment->id.'_'.str_replace([" ","'"], ["",""], $assessment->fname.'_'.$assessment->lname.'_'.session('product.title')).'_Assessment.pdf', $headers);
+        return response()->download($file, $assessment->id.'_'.str_slug($assessment->fname.'_'.$assessment->lname.'_'.session('product.title').'_Assessment', '-').'.pdf', $headers);
     }
 
     public function fakeDownload($tool){

@@ -58,6 +58,6 @@
     <script src="{{ asset('js/templates/'.session('template').'/jquery.leanModal.min.js')}}"></script>
 @endif
 
-<script src="{{{ asset('js/templates/'.session('template').'/plugins.js')}}}"></script>
+<script src="{{{ asset('js/plugins.js')}}}"></script>
 <script src="{{{ asset('js/templates/'.session('template').'/main.js')}}}"></script>
 @stop

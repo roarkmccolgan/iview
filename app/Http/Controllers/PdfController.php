@@ -43,12 +43,28 @@ class PdfController extends Controller
 					/*'opacity' => 0.8*/
 				]
 			],
-			'legend' => ['position'=> 'bottom'],
 			'colors' => ['#68aadd'],
 			'chartArea' => ['width'=>'100%', 'height'=>'80%'],
 			'legend' => [ 'position' => "none" ],
 			'events' => [
 		        'ready' => 'chartReady'
+		    ],
+		    'annotations'=>[
+		    	'stem'=>[
+		    		'color'=>'transparent'
+		    	],
+		    	'textStyle'=>[
+					/*'fontName'=> 'Times-Roman',
+					*/'fontSize'=> 14,
+					/*'bold'=> true,
+					'italic'=> true,*/
+					// The color of the text.
+					'color'=> '#000000',
+					// The color of the text outline.
+					// 'auraColor'=> '#d799ae',
+					// The transparency of the text.
+					/*'opacity'=> 0.8*/
+		    	]
 		    ],
 		    /*'isStacked' => true,*/
 		    'bar'  => [
@@ -80,7 +96,10 @@ class PdfController extends Controller
 				foreach ($values['types'] as $stage => $params) {
 					$val = $params['benchmark'];
 				    $sectionGraph->addRow([
-				      /*trans(session('product.alias').'.'.$stage)*/$stage, $val, session('result.'.$section.'.rating')==$stage? trans(session('product.alias').'.'.$section.'.color'):null, $val
+				      /*trans(session('product.alias').'.'.$stage)*/$stage,
+				      $val,
+				      session('result.'.$section.'.rating')==$stage? trans(session('product.alias').'.'.$section.'.color'):null,
+				      $val."%"
 				    ]);
 				}
 				

@@ -18,14 +18,14 @@ class RouteByURL
      */
     public function handle($request, Closure $next)
     {
-
+        $host_names = explode(".", $request->server('HTTP_HOST'));
         $url = Url::with('language')->whereIn('domain', config('app.tooldomain'))->where('subdomain',$request->subdomain)->first();
         if ($url) {
             $url->urlable->load('company');
 
             $request->session()->put('product', ['type'=>$url->urlable_type, 'id'=>$url->urlable_id, 'alias'=>$url->urlable->alias, 'title'=>$url->urlable->title]);
             $request->session()->put('locale', $url->language->abbreviation);
-            $request->session()->put('url', 'http://' . $request->subdomain.'.'.$url->domain);
+            $request->session()->put('url', 'http://' . $request->subdomain.'.'.$host_names[1].'.'.$host_names[2]);
             $request->session()->put('host', $url->urlable->domain);
             $request->session()->put('referer', $request->server('HTTP_REFERER'));
             $request->session()->put('analytics', $url->urlable->gapropertyid);

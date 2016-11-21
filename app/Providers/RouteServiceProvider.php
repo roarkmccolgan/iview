@@ -27,6 +27,11 @@ class RouteServiceProvider extends ServiceProvider
         //
 
         parent::boot($router);
+
+        //Explicit Binding
+        $router->model('user', 'App\User');
+        $router->model('tracker', 'App\Tracker');
+        $router->model('assessment', 'App\Assessment');
     }
 
     /**

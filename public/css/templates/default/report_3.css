@@ -58,6 +58,15 @@ li{
 	float: left;
 	width: 50mm;
 }
+.introduction{
+	margin-left: 20mm;
+	width: 190mm;
+}
+.section{
+	position: relative;
+	margin: 20mm;
+	margin-top: 0;
+}
 .section h2{
 	background-position: 0 50%;
 	background-repeat: no-repeat;

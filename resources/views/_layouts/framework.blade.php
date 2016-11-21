@@ -51,12 +51,13 @@
 					<div class="content">
 						<div class="side-user">
 							<div class="info">
-								<p>iViews: 1 / 10 </p>
-								<div class="progress progress-user">
+								<p>Welcome </p>
+								<h3></h3>
+								<!-- <div class="progress progress-user">
 									<div style="width: 10%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-info">
 										<span class="sr-only">10% Complete (success)</span>
 									</div>
-								</div>
+								</div> -->
 							</div>
 						</div>
 						@include('_layouts.menu.leftmenu')

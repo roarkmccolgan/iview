@@ -95,9 +95,9 @@ class AssessmentController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Assessment $assessment,Request $request)
+    public function delete($subdomain, Assessment $assessment,Request $request)
     {
-        $assessment->destroy();
+        $assessment->delete();
         if($request->ajax()){
             $data = [
                 'result'=>'success'
@@ -127,7 +127,7 @@ class AssessmentController extends Controller
 
         if($request->input('new')=='false'){
             $tool->load(['assessments' => function ($query) use($request) {
-                $query->whereBetween('created_at', array(Carbon::parse($request->input('dateFrom')), Carbon::parse($request->input('dateTo'))));
+                $query->whereBetween('created_at', array(Carbon::parse($request->input('dateFrom')), Carbon::parse($request->input('dateTo'))->addYear()));
             }]);
         }else{
             $tool->load(['assessments' => function ($query) use($request) {

@@ -48,4 +48,9 @@ class Tool extends Model
     {
         return $this->belongsToMany('App\User');
     }
+
+    public function extra_fields()
+    {
+        return $this->hasMany('App\ExtraFields');
+    }
 }

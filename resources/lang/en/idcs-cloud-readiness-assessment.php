@@ -1,11 +1,26 @@
 <?php
 //Redhat
 return array(
+    'title' => 'IDC\'s Cloud Benchmark for Development',
+    'sub-title' => 'Advancing your maturity',
     'stage1' => 'Stage 1: Passive',
     'stage2' => 'Stage 2: Tentative',
     'stage3' => 'Stage 3: Committed',
     'stage4' => 'Stage 4: Accelerating',
     'stage5' => 'Stage 5: Full Speeed',
+    'complete_thankyou' => 'Thank you :Fname,',
+    'complete_body' => 'Your custom report will arrive in your inbox soon.<br/>
+While you\'re waiting why not tweet your results and see how your followers measure up?',
+    'complete_tweet' => 'I\'ve just taken the Cloud Readiness Assessment Sponsored by @Redhat %26 @IDCUKI, we\'re at :result. Interested?',// http://bit.ly/2g8WN1d
+    'email'=>[
+        'subject' => 'IDC Report',
+        'hi' => 'Hi :Fname',
+        'body' => 'As promised, here\'s the link to download your Cloud Readiness Report. This breaks down your results by category and helps you benchmark yourself against other organisations.',
+        'link' => 'Download Report',
+        'extra' => 'Once you\'ve digested the report why not visit <a href="http://www.redhat.com" style="color:#024886">Red Hat</a>',
+        'regards' => 'Regards',
+        'team' => 'The IDC Team'
+    ],
     'introduction' => '
         <p>
             Thank you for taking part in IDC\'s cloud readiness assessment. This study enables you to measure cloud readiness in your business, and provides you with some essential guidance in the development of your cloud business.

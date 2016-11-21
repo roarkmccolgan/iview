@@ -79,6 +79,7 @@
                                                         {!! Form::idcInput($num,$q,$page) !!}
                                                     @endif
                                                 @endforeach
+                                                <button id="back" class="btn btn-danger pull-left" style="padding:15px 20px; font-size:18px; margin-right: 20px;">{{trans('general.back')}} &nbsp; <i class="fa fa-arrow-circle-left"></i></button>
                                             </fieldset>
                                         {!! Form::close() !!}
                                     @endforeach

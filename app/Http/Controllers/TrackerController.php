@@ -101,9 +101,9 @@ class TrackerController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Tracker $tracker,Request $request)
+    public function delete($subdomain, Tracker $tracker,Request $request)
     {
-        $tracker->destroy();
+        $tracker->delete();
         if($request->ajax()){
             $data = [
                 'result'=>'success'

@@ -31,7 +31,7 @@
 				<div>
 					<form style="margin-bottom: 0px !important;" role="form" action="{{ url('/change_password') }}" method="post">
 						<input type="hidden" name="_token" value="{{ csrf_token() }}">
-						<input type="hidden" name="register_token" value="{{ $token }}">
+						<input type="hidden" name="register_token" value="{{ app('request')->input('register_token') }}">
 						<div class="content">
 							<h4 class="title">Hi {{$user->name}}, Please set your password</h4>
 							@if (count($errors) > 0)
@@ -54,8 +54,7 @@
 							</div>
 						</div>
 						<div class="foot">
-							<a href="{{ url('/login') }}" class="btn btn-default" data-dismiss="modal" type="button">Login</a>
-							<button class="btn btn-primary" data-dismiss="modal" type="submit">Register</button>
+							<button class="btn btn-primary" data-dismiss="modal" type="submit">Change Password</button>
 						</div>
 					</form>
 				</div>

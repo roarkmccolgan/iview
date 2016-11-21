@@ -92,11 +92,22 @@ Route::group(['domain' => '{subdomain}.idcready.net'], function ($subdomain) {
 		Route::get('/users/new', 'UserController@create')->middleware(['toolaccess:super,admin,client']);
 		Route::post('/users', 'UserController@store')->middleware(['toolaccess:super,admin,client']);
 	});
+	Route::group(['prefix' => 'api'], function(){
+		Route::group(['prefix' => 'assessments'], function(){
+			Route::post('delete/{assessment}', 'AssessmentController@delete');
+		});
+		Route::group(['prefix' => 'trackers'], function(){
+			Route::post('delete/{tracker}', 'TrackerController@delete');
+		});
+		Route::group(['prefix' => 'users'], function(){
+			Route::post('delete/{user}', 'UserController@delete');
+		});
+	});
 });
 
 
 Route::group(['prefix' => 'api'], function(){
-	Route::bind('assessment', function ($value) {
+	/*Route::bind('assessment', function ($value) {
         return App\Assessment::findOrFail($value);
     });
     Route::bind('tracker', function ($value) {
@@ -104,7 +115,7 @@ Route::group(['prefix' => 'api'], function(){
     });
     Route::bind('user', function ($value) {
         return App\User::findOrFail($value);
-    });
+    });*/
 	//API
 	Route::get('languages', function ($iviewId) {
 	    return App\Language::all();
@@ -147,14 +158,5 @@ Route::group(['prefix' => 'api'], function(){
 	        $columns[]=$column['Field'];
 	    }
 	    return $columns;
-	});
-	Route::group(['prefix' => 'assessments'], function(){
-		Route::post('delete/{assessment}', 'AssessmentController@destroy');
-	});
-	Route::group(['prefix' => 'tracker'], function(){
-		Route::post('delete/{tracker}', 'TrackerController@destroy');
-	});
-	Route::group(['prefix' => 'user'], function(){
-		Route::post('delete/{user}', 'UserController@destroy');
 	});
 });
