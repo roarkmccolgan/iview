@@ -15,7 +15,17 @@
 			<h2>Introduction</h2>
 			{!!trans(session('product.alias').'.introduction')!!}
 		</div>
+		@foreach($sections as $key=>$section)
+		<div class="{{$section['pb'] && !$section['pageimage'] ?'pb ':''}}"></div>
+		@if($section['pageimage'])
+		<table class="{{$section['pb'] ?'pb ':''}}" style="width: 100%;" cellpadding="0" cellspacing="0">
+			<tr>
+				<td colspan="2"><img src="{{session('url')}}/images/tools/{{session('product.id')}}/{{$section['pageimage']}}" style="display: block; width: 100%;"><!-- report1.jpg --></td>
+			</tr>
+		</table>
+		@endif
 		
+		@endforeach
 		<script src="{{ asset('js/vendor/jquery-1.10.1.min.js')}}"></script>
 		<script type="text/javascript">
 			$(function() {
