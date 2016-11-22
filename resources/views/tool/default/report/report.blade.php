@@ -46,7 +46,6 @@
 				</div>
 				@columnchart($section['seckey'].'_graph', $section['seckey'].'-div')
 			@endif
-			{!!$section['paragraph']!!}
 		</div>
 		@endforeach
 		<script src="{{ asset('js/vendor/jquery-1.10.1.min.js')}}"></script>
