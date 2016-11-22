@@ -388,7 +388,7 @@ class ToolController extends Controller
         }
 
     public function getDownload($subdomain,$assid){
-        $assessment = Assessment::find($assid);
+        $assessment = Assessment::findOrFail($assid);
         
         $assessment->update(['fetched' => 1]);
 

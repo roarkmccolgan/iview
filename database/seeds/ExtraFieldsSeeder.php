@@ -13,7 +13,7 @@ class ExtraFieldsSeeder extends Seeder
     public function run()
     {
         DB::table('extra_fields')->insert([
-            'tool_id' => '1',
+            'tool_id' => '3',
             'name' => 'relationship',
             'type' => 'select',
             'trans' => 'relationship',
@@ -37,7 +37,7 @@ class ExtraFieldsSeeder extends Seeder
         ]);
 
         DB::table('extra_fields')->insert([
-            'tool_id' => '1',
+            'tool_id' => '3',
             'name' => 'qualification',
             'type' => 'select',
             'trans' => 'qualification',
