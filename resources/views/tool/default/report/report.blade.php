@@ -35,7 +35,6 @@
 			<h2 class="{{$section['seckey']}}">{{$section['title']}}</h2>
 			@endif
 			
-			@endif
 			@if($section['image'])
 			<img src="{{session('url')}}/images/tools/{{session('product.id')}}/{{$section['image']}}" class="{{$section['imagefloat']}}" alt="">
 			@endif
