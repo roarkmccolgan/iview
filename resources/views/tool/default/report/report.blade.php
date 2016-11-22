@@ -24,13 +24,7 @@
 		</div>
 		@foreach($sections as $key=>$section)
 		<div class="{{$section['pb'] && !$section['pageimage'] ?'pb ':''}}"></div>
-		@if($section['pageimage'])
-		<table class="{{$section['pb'] ?'pb ':''}}" style="width: 100%;" cellpadding="0" cellspacing="0">
-			<tr>
-				<td colspan="2"><img src="{{session('url')}}/images/tools/{{session('product.id')}}/{{$section['pageimage']}}" style="display: block; width: 100%;"><!-- report1.jpg --></td>
-			</tr>
-		</table>
-		@endif
+		
 		<div class="section group {{$section['seckey']}}" style="">
 			@if($section['designline'])
 			<div style="position: absolute; top:0mm; right: {{$section['image'] ? '-45mm':'-50mm' }}; width: 130mm; height: 3mm; background-color: {{$section['color']}}"></div>
