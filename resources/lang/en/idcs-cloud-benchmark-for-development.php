@@ -1,7 +1,7 @@
 <?php
 //sage
 return array(
-    'title' => 'Capatalize on Cloud',
+    'title' => 'Capitalize on Cloud',
     'sub-title' => 'Advancing your Maturity',
 	'stage1' => 'Stage 1: Time to Act',
     'stage2' => 'Stage 2: Time to Commit',
