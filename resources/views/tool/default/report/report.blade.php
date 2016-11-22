@@ -6,57 +6,10 @@
     	<meta name="description" content="">
     	<meta name="author" content="">
 		<title>Report</title>
-		<link rel="stylesheet" href="{{session('url')}}/css/templates/normalize.css">
-		<link rel="stylesheet" href="{{session('url')}}/css/templates/default/report_{{session('product.id')}}.css">
+		
 	</head>
 	<body style="margin: 0; padding: 0;">
-		@if(isset($introImage))
-		<table class="" style="width: 100%;" cellpadding="0" cellspacing="0">
-			<tr>
-				<td colspan="2"><img src="{{session('url')}}/images/tools/{{session('product.id')}}/{{$introImage}}" style="display: block; width: 100%;"><!-- report1.jpg --></td>
-			</tr>
-		</table>
-		@endif
-		<div class="spacer"></div>
-		<div class="introduction">
-			<h2>Introduction</h2>
-			{!!trans(session('product.alias').'.introduction')!!}
-		</div>
-		@foreach($sections as $key=>$section)
-		<div class="{{$section['pb'] && !$section['pageimage'] ?'pb ':''}}"></div>
-		@if($section['pageimage'])
-		<table class="{{$section['pb'] ?'pb ':''}}" style="width: 100%;" cellpadding="0" cellspacing="0">
-			<tr>
-				<td colspan="2"><img src="{{session('url')}}/images/tools/{{session('product.id')}}/{{$section['pageimage']}}" style="display: block; width: 100%;"><!-- report1.jpg --></td>
-			</tr>
-		</table>
-		@endif
-		<div class="section group {{$section['seckey']}}" style="">
-			@if($section['designline'])
-			<div style="position: absolute; top:0mm; right: {{$section['image'] ? '-45mm':'-50mm' }}; width: 130mm; height: 3mm; background-color: {{$section['color']}}"></div>
-			@endif
-			@if($section['pb'])
-			<div class="spacer"></div>
-			@endif
-			@if($section['hidetitle'])
-			<h2 class="{{$section['seckey']}}">{{$section['title']}}</h2>
-			@endif
-			<h4>{{$section['rating']}}</h4>
-			@if($section['introduction'])
-			{!!$section['introduction']!!}
-			@endif
-			@if($section['image'])
-			<img src="{{session('url')}}/images/tools/{{session('product.id')}}/{{$section['image']}}" class="{{$section['imagefloat']}}" alt="">
-			@endif
-			@if($section['graph'])
-				<div id="{{$section['seckey']}}-div" class="graph" style="">
-					
-				</div>
-				@columnchart($section['seckey'].'_graph', $section['seckey'].'-div')
-			@endif
-			{!!$section['paragraph']!!}
-		</div>
-		@endforeach
+		<h1>Dude!</h1>
 		<script src="{{ asset('js/vendor/jquery-1.10.1.min.js')}}"></script>
 		<script type="text/javascript">
 			$(function() {
