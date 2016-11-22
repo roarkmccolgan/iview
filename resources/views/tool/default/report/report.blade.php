@@ -34,11 +34,11 @@
 			@if($section['hidetitle'])
 			<h2 class="{{$section['seckey']}}">{{$section['title']}}</h2>
 			@endif
-			<h4>{{$section['rating']}}</h4>
-			@if($section['introduction'])
-			{!!$section['introduction']!!}
-			@endif
 			
+			@endif
+			@if($section['image'])
+			<img src="{{session('url')}}/images/tools/{{session('product.id')}}/{{$section['image']}}" class="{{$section['imagefloat']}}" alt="">
+			@endif
 			@if($section['graph'])
 				<div id="{{$section['seckey']}}-div" class="graph" style="">
 					
