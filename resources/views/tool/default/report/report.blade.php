@@ -6,12 +6,20 @@
     	<meta name="description" content="">
     	<meta name="author" content="">
 		<title>Report</title>
+		<link rel="stylesheet" href="{{session('url')}}/css/templates/normalize.css">
+		<link rel="stylesheet" href="{{session('url')}}/css/templates/default/report_{{session('product.id')}}.css">
 	</head>
 	<body style="margin: 0; padding: 0;">
-		
+		@if(isset($introImage))
+		<table class="" style="width: 100%;" cellpadding="0" cellspacing="0">
+			<tr>
+				<td colspan="2"><img src="{{session('url')}}/images/tools/{{session('product.id')}}/{{$introImage}}" style="display: block; width: 100%;"><!-- report1.jpg --></td>
+			</tr>
+		</table>
+		@endif
 		<div class="spacer"></div>
 		<div class="introduction">
-			<h2>Introduction {{session('product.id')}}</h2>
+			<h2>Introduction</h2>
 			{!!trans(session('product.alias').'.introduction')!!}
 		</div>
 		@foreach($sections as $key=>$section)
@@ -19,7 +27,7 @@
 		@if($section['pageimage'])
 		<table class="{{$section['pb'] ?'pb ':''}}" style="width: 100%;" cellpadding="0" cellspacing="0">
 			<tr>
-				
+				<td colspan="2"><img src="{{session('url')}}/images/tools/{{session('product.id')}}/{{$section['pageimage']}}" style="display: block; width: 100%;"><!-- report1.jpg --></td>
 			</tr>
 		</table>
 		@endif
@@ -38,7 +46,7 @@
 			{!!$section['introduction']!!}
 			@endif
 			@if($section['image'])
-			
+			<img src="{{session('url')}}/images/tools/{{session('product.id')}}/{{$section['image']}}" class="{{$section['imagefloat']}}" alt="">
 			@endif
 			@if($section['graph'])
 				<div id="{{$section['seckey']}}-div" class="graph" style="">

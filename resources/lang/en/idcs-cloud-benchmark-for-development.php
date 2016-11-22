@@ -104,7 +104,7 @@ While you\'re waiting why not tweet your results and see how your followers meas
         <p>
             Most organizations in this stage of maturity are not geared to function as a cloud business and either refer cloud requests to their vendor partners or resell public cloud services to a limited base of existing customers. More critically, without specific revenue targets for cloud, many have no way of measuring cloud success and lack any direction in developing this part of their business further.
         </p>
-        <img src="http://sage.idcready.net/images/tools/1/cloud-vision-and-strategy.jpg" class="right">
+        
         <h3>Recommendations:</h3>
         <h5>Executive sponsorship:</h5>
         <p>
@@ -131,7 +131,7 @@ While you\'re waiting why not tweet your results and see how your followers meas
         <p>
             While some cloud initiatives are taking place, investments in this area may be limited. These tend to be small pockets of strategic activity rather than elements of a more cohesive execution strategy. Sales are starting to execute on a cloud sales strategy, supported by revenue targets and the beginnings of a business plan.
         </p>
-        <img src="http://sage.idcready.net/images/tools/1/cloud-vision-and-strategy.jpg" class="right">
+        
         <h3>Recommendations:</h3>
         <h5>Defined product strategies:</h5>
         <p>
@@ -158,7 +158,7 @@ While you\'re waiting why not tweet your results and see how your followers meas
         <p>
             Executive endorsement and buy-in of cloud now exists across core lines of business. As a result, you are proactively converting opportunities for cloud and have invested as part of a longer-term business strategy for the next two to three years. You are also looking for potential targets outside of their existing client base (new markets, new segments, new territories) to grow the business.
         </p>
-        <img src="http://sage.idcready.net/images/tools/1/cloud-vision-and-strategy.jpg" class="right">
+        
         <h3>Recommendations:</h3>
         <h5>Create advocacy:</h5>
         <p>
@@ -185,7 +185,7 @@ While you\'re waiting why not tweet your results and see how your followers meas
         <p>
             Organizations at this stage are executing on their cloud strategy and vision and have established a portfolio of cloud offerings and related services through dedicated sales, implementation, and support functions. You are also able to execute across multiple cloud architectures and have sufficient investment to execute on this strategy. Companies at this stage are actively delivering on growth strategies and go-to-market plans in order to target new clients and geographies.
         </p>
-        <img src="http://sage.idcready.net/images/tools/1/cloud-vision-and-strategy.jpg" class="right">
+        
         <h3>Recommendations:</h3>
         <h5>Verticalize your approach:</h5>
         <p>
@@ -212,7 +212,7 @@ While you\'re waiting why not tweet your results and see how your followers meas
         <p>
             All aspects of the business are focused on a broad set of KPIs, from customer adoption and growth targets, to satisfaction levels. In addition, professional services play a key role in both business targets and the delivery of cloud solutions. You are also in a position to offer any form of cloud architecture to your customers. Scale is a key motivator here and companies at this stage are executing on growth and scale strategies, typically targeting new clients and markets.
         </p>
-        <img src="http://sage.idcready.net/images/tools/1/cloud-vision-and-strategy.jpg" class="right">
+        
         <h3>Recommendations:</h3>
         <h5>Look to the future:</h5>
         <p>
@@ -416,7 +416,7 @@ While you\'re waiting why not tweet your results and see how your followers meas
         <p>
             Companies at this stage typically focus on more traditional marketing and do not proactively build thought leadership content such as blogs, video tutorials, and white papers.
         </p>
-        <img src="http://sage.idcready.net/images/tools/1/marketing.jpg" class="right">
+        
         <h3>Recommendations:</h3>
         <h5>Marketing transformation:</h5>
         <p>
@@ -447,7 +447,7 @@ While you\'re waiting why not tweet your results and see how your followers meas
         <p>
             Companies at this stage typically focus on more traditional marketing and do not proactively build thought leadership content such as blogs, video tutorials, and white papers.
         </p>
-        <img src="http://sage.idcready.net/images/tools/1/marketing.jpg" class="right">
+        
         <h3>Recommendations:</h3>
         <h5>Define a cloud journey:</h5>
         <p>
@@ -478,7 +478,7 @@ While you\'re waiting why not tweet your results and see how your followers meas
         <p>
             Although still limited, companies at this stage have started to customize syndicated content from key vendor partners, tailoring it to their audiences. Some have started to blog and use other social forums, but activities tend to be ad hoc and driven by individuals rather than the company.
         </p>
-        <img src="http://sage.idcready.net/images/tools/1/marketing.jpg" class="right">
+        
         <h3>Recommendations:</h3>
         <h5>Build digital marketing capability:</h5>
         <p>
@@ -509,7 +509,7 @@ While you\'re waiting why not tweet your results and see how your followers meas
         <p>
             Organizations at this stage are active participants in thought leadership content and campaigns, providing materials that educate the target market and deliver the business as a leader in this field.
         </p>
-        <img src="http://sage.idcready.net/images/tools/1/marketing.jpg" class="right">
+        
         <h3>Recommendations:</h3>
         <h5>Continue to develop measurement:</h5>
         <p>
@@ -540,7 +540,7 @@ While you\'re waiting why not tweet your results and see how your followers meas
         <p>
             At this stage of maturity the organization is recognized as a credible thought leader and strategic advisor. Thought leadership is ongoing and educational content is provided frequently and across multiple channels.
         </p>
-        <img src="http://sage.idcready.net/images/tools/1/marketing.jpg" class="right">
+        
         <h3>Recommendations:</h3>
         <h5>Continuous evolution and development:</h5>
         <p>
@@ -768,7 +768,7 @@ While you\'re waiting why not tweet your results and see how your followers meas
         <p>
             Very few organizations at this stage in their maturity have developed cloud-specific solutions (horizontal or vertical) in collaboration with vendor partners or have developed their own cloud IP.
         </p>
-        <!--<img src="http://sage.idcready.net/images/tools/1/business-mix.jpg" class="right">-->
+        
         <h3>Recommendations:</h3>
         <h5>Build a financial plan:</h5>
         <p>
@@ -803,7 +803,7 @@ While you\'re waiting why not tweet your results and see how your followers meas
         <p>
             At this stage of maturity it is unlikely that your organization has made significant investments in your own cloud infrastructure and tools and management technology. Many are, however, starting to build a well-structured technology roadmap for both the technology and skills needed.
         </p>
-        <!--<img src="http://sage.idcready.net/images/tools/1/business-mix.jpg" class="right">-->
+        
         <h3>Recommendations:</h3>
         <h5>Financial plan:</h5>
         <p>
@@ -846,7 +846,7 @@ While you\'re waiting why not tweet your results and see how your followers meas
         <p>
             It is unlikely that organizations at this stage of maturity have developed cloud-specific solutions (horizontal or vertical) or have developed their own cloud IP.
         </p>
-        <!--<img src="http://sage.idcready.net/images/tools/1/business-mix.jpg" class="right">-->
+        
         <h3>Recommendations:</h3>
         <h5>Automation:</h5>
         <p>
@@ -881,7 +881,7 @@ While you\'re waiting why not tweet your results and see how your followers meas
         <p>
             Companies at this stage have typically invested — and continue to invest — in cloud infrastructure, tools, and management technology. The ability to support and integrate multiple environments becomes critical, and tools and architecture in hybrid cloud are prioritized.
         </p>
-        <!--<img src="http://sage.idcready.net/images/tools/1/business-mix.jpg" class="right">-->
+        
         <h3>Recommendations:</h3>
         <h5>Automation:</h5>
         <p>
@@ -924,7 +924,7 @@ While you\'re waiting why not tweet your results and see how your followers meas
         <p>
             At this stage of maturity, there is an emphasis on selling joint solutions, as well as holistic solutions that contain a high degree of IP. Solutions form part of a broader digital transformation agenda and there is an emphasis on being able to support and design holistic solutions. At this stage of maturity, scale becomes a key KPI and it is advisable to continuously certify solutions with strategic vendor partners and consider certifying IP-based solutions to be sold through cloud marketplaces.
         </p>
-        <!--<img src="http://sage.idcready.net/images/tools/1/business-mix.jpg" class="right">-->
+        
         <h3>Recommendations:</h3>
         <h5>Digital transformation:</h5>
         <p>
