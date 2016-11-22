@@ -48,7 +48,12 @@
 			@if($section['image'])
 			<img src="{{session('url')}}/images/tools/{{session('product.id')}}/{{$section['image']}}" class="{{$section['imagefloat']}}" alt="">
 			@endif
-			
+			@if($section['graph'])
+				<div id="{{$section['seckey']}}-div" class="graph" style="">
+					
+				</div>
+				@columnchart($section['seckey'].'_graph', $section['seckey'].'-div')
+			@endif
 			{!!$section['paragraph']!!}
 		</div>
 		@endforeach
