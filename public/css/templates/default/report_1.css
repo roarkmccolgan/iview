@@ -107,7 +107,7 @@ h2.cloud-vision-and-strategy{
 	width:85mm;
 	margin-right:5mm;
 	float: left;
-	background: url("/images/tools/1/graphbg.jpg") no-repeat 50% 0;
+	background: url("http://redhat.idcgauge.net/images/tools/1/graphbg.jpg") no-repeat 50% 0;
 	background-size: 85mm 76mm;
 }
 .group:after {
