@@ -130,7 +130,7 @@ class PdfController extends Controller
 		$vars['introRating'] = trans(session('product.alias').'.'.session('result.overall.rating'));
 
 		//return $vars['sections'];
-		//return view('tool.default.report.report',$vars);
+		return view('tool.default.report.report',$vars);
 
         $pdf = PDF::loadView('tool.default.report.report',$vars)->setOption('margin-top', 25)->setOption('margin-left', 0)->setOption('margin-right', 0)->setOption('window-status','chartrendered')->setOption('header-html','http://redhat.idcready.net//template/default/report/header')->setOption('header-spacing',0)->setOption('footer-html','http://redhat.idcready.net//template/default/report/footer')->setOption('footer-spacing',2)
         	->setOption('replace', $headervars);
