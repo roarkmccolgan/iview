@@ -32,10 +32,7 @@ While you\'re waiting why not tweet your results and see how your followers meas
     'introduction-image' => 'report1.jpg',
     'overall' => array(
         'title'=>'Overall Cloud Maturity',
-        'hidetitle'=>'true',
-        'color'=>'#0092C4',
         'image'=>'',
-        'graph'=>'true',
         'introduction' => '
         <p>
             Based on IDC\'s assessment, your organization is at <strong>:result</strong> in terms of its overall cloud readiness. X% of the organizations benchmarked by IDC were at this stage, with the majority of organizations positioned in Stage 3: Time to Invest.
@@ -87,11 +84,7 @@ While you\'re waiting why not tweet your results and see how your followers meas
     ),
     'cloud-vision-and-strategy' => array(
         'title'=>'Cloud Strategy and Vision',
-        'pb'=>'pb',
-        'designline'=>'true',
-        'color'=>'#00DF62',
-        /*'image'=>'cloud-vision-and-strategy.jpg',*/
-        'graph'=>'true',
+        'pageimage'=>'',
         'stage1'=>'
         <p>
             Based on IDC\'s assessment, your organization is at Stage 1 in terms of your cloud strategy and vision. 14% of the organizations benchmarked in our research were at this stage, with the majority of organizations positioned in Stage 2. Typically, organizations at this stage of their strategy maturity share the following characteristics:
@@ -231,10 +224,6 @@ While you\'re waiting why not tweet your results and see how your followers meas
     'process-and-skill-sets' => array(
         'title'=>'Processes and Skill-Sets',
         'pageimage'=>'process-and-skill-sets.jpg',
-        'pb'=>'pb',
-        'designline'=>'true',
-        'color'=>'#F5006A',
-        'graph'=>'true',
         'stage1'=>'
         <p>
             Based on IDC\'s assessment, your organization is at Stage 1 in terms of the maturity of your cloud processes. 25% of the organizations benchmarked in our research were at this stage, with the majority of organizations positioned in Stage 2. Typically, organizations in this stage of maturity share the following characteristics:
@@ -396,10 +385,7 @@ While you\'re waiting why not tweet your results and see how your followers meas
     ),
     'marketing' => array(
         'title'=>'Marketing Capabilities',
-        'pb'=>'pb',
-        'designline'=>'true',
-        'color'=>'#633BAD',
-        'graph'=>'true',
+        'pageimage' => '',
         'stage1'=>'
         <p>
             Based on IDC\'s assessment, your organization is at Stage 1 in terms of your cloud marketing maturity. 28% of the organizations benchmarked in our research were at this stage, with the majority of organizations positioned in Stage 1. Typically, organizations at this stage of their maturity share the following characteristics:
@@ -559,10 +545,6 @@ While you\'re waiting why not tweet your results and see how your followers meas
     'sales' => array(
         'title'=>'Sales',
         'pageimage'=>'sales.jpg',
-        'pb'=>'pb',
-        'designline'=>'true',
-        'color'=>'#00B7E7',
-        'graph'=>'true',
         'stage1'=>'
         <p>
             Based on IDC\'s assessment, your organization is at Stage 1 in terms of your cloud sales maturity. 21% of the organizations benchmarked in our research were at this stage, with the majority of organizations positioned in Stage 2. Typically, organizations at this stage of their maturity share the following characteristics:
@@ -740,10 +722,7 @@ While you\'re waiting why not tweet your results and see how your followers meas
     ),
     'business-mix' => array(
         'title'=>'Business Mix',
-        'pb'=>'pb',
-        'designline'=>'true',
-        'color'=>'#FFBD72',
-        'graph'=>'true',
+        'pageimage' => '',
         'stage1'=>'
         <p>
             Based on IDC\'s assessment, your organization is at Stage 1 in terms of the maturity of your cloud business mix. 4% of the organizations benchmarked in our research were at this stage, with the majority of organizations positioned in Stage 3. Typically, organizations at this stage of their maturity share the following characteristics:

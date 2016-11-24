@@ -2,6 +2,13 @@
 return array(
     'overall' => array(
         'baseline' => 21.5,
+        'report-settings' => [
+            'graph'=>true,
+            'pb'=>false,
+            'designline'=>false,
+            'color'=>'#0092C4',
+            'pageimage'=>false,
+        ],
         'floatimage' => 'none',
         'floatgraph' => 'none',
         'types' => array(
@@ -44,6 +51,13 @@ return array(
     ),
     'cloud-vision-and-strategy' => array(
         'baseline' => 15.363,
+        'report-settings' => [
+            'graph'=>true,
+            'pb'=>true,
+            'designline'=>true,
+            'color'=>'#00DF62',
+            'pageimage'=>false,
+        ],
         'floatimage' => 'right',
         'floatgraph' => 'none',
         'types' => array(
@@ -81,6 +95,13 @@ return array(
     ),
     'process-and-skill-sets' => array(
         'baseline' => 24.046,
+        'report-settings' => [
+            'graph'=>true,
+            'pb'=>true,
+            'designline'=>true,
+            'color'=>'#F5006A',
+            'pageimage'=>true,
+        ],
         'floatimage' => 'none',
         'floatgraph' => 'none',
         'types' => array(
@@ -118,6 +139,13 @@ return array(
     ),
     'marketing' => array(
         'baseline' => 10,917,
+        'report-settings' => [
+            'graph'=>true,
+            'pb'=>true,
+            'designline'=>true,
+            'color'=>'#633BAD',
+            'pageimage'=>true,
+        ],
         'floatimage' => 'none',
         'floatgraph' => 'none',
         'types' => array(
@@ -155,6 +183,13 @@ return array(
     ),
     'sales' => array(
         'baseline' => 10,917,
+        'report-settings' => [
+            'graph'=>true,
+            'pb'=>true,
+            'designline'=>true,
+            'color'=>'#00B7E7',
+            'pageimage'=>true,
+        ],
         'floatimage' => 'none',
         'floatgraph' => 'none',
         'types' => array(
@@ -192,6 +227,13 @@ return array(
     ),
     'business-mix' => array(
         'baseline' => 10,917,
+        'report-settings' => [
+            'graph'=>true,
+            'pb'=>true,
+            'designline'=>true,
+            'color'=>'#FFBD72',
+            'pageimage'=>true,
+        ],
         'floatimage' => 'none',
         'floatgraph' => 'none',
         'types' => array(

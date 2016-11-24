@@ -74,7 +74,7 @@ trait GenerateReportTrait {
 		$headervars['company_alias'] = session('company.alias');
 		$headervars['tool_id'] = session('product.id');
 		foreach (config('baseline_'.session('product.id')) as $section => $values) {
-			if(Lang::has(session('product.alias').'.'.$section.'.graph')){
+			if(config('baseline_'.session('product.id').'.'.$section.'.report-settings.graph')){
 				$sectionGraph = Lava::DataTable();
 				$numformat = Lava::NumberFormat([
 				    'suffix'         => '%'
@@ -100,16 +100,14 @@ trait GenerateReportTrait {
 			}
 			$vars['sections'][] = [
 				'title' => trans(session('product.alias').'.'.$section.'.title'),
-				'hidetitle' => Lang::has(session('product.alias').'.'.$section.'.hidetitle') ? true:false,
+				'hidetitle' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.hide-title'),
 				'introduction' => Lang::has(session('product.alias').'.'.$section.'.introduction') ? trans(session('product.alias').'.'.$section.'.introduction'):false,
 				'seckey' => $section,
-				'image' => Lang::has(session('product.alias').'.'.$section.'.image') ? trans(session('product.alias').'.'.$section.'.image'):false,
-				'pageimage' => Lang::has(session('product.alias').'.'.$section.'.pageimage') ? trans(session('product.alias').'.'.$section.'.pageimage'):false,
-				'color' => Lang::has(session('product.alias').'.'.$section.'.color') ? trans(session('product.alias').'.'.$section.'.color'):false,
-				'designline' => Lang::has(session('product.alias').'.'.$section.'.designline') ? trans(session('product.alias').'.'.$section.'.designline'):false,
-				'imagefloat' => isset($values['floatimage']) ? $values['floatimage']:'',
-				'graph' => Lang::has(session('product.alias').'.'.$section.'.graph') ? trans(session('product.alias').'.'.$section.'.graph'):false,
-				'pb' => Lang::has(session('product.alias').'.'.$section.'.pb') ? true:false,
+				'pageimage' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.pageimage') ? trans(session('product.alias').'.'.$section.'.pageimage'):false,
+				'color' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.color'),
+				'designline' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.designline'),
+				'graph' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.graph'),
+				'pb' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.pb'),
 				'rating' => trans(session('product.alias').'.'.session('result.'.$section.'.rating')),
 				'score' => session('result.'.$section.'.score'),
 				'paragraph' => trans(session('product.alias').'.'.$section.'.'.session('result.'.$section.'.rating')),
