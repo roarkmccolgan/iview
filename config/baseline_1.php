@@ -8,6 +8,72 @@ return array(
             'designline'=>false,
             'color'=>'#0092C4',
             'pageimage'=>false,
+            'extra-graphs'=>[
+                'country-france'=>[
+                    'columns' => [
+                        [
+                            'type'=>'string',
+                            'label'=>'Stage',
+                        ],
+                        [
+                            'type'=>'number',
+                            'label'=>'Your Score',
+                            'format'=>[
+                                'type'=>'NumberFormat',
+                                'format'=>[
+                                    'suffix' => '%'
+                                ]
+                            ],
+                        ],
+                    ],
+                    'role-columns' => [
+                        [
+                            'type'=>'string',
+                            'role'=>'style',
+                        ],
+                        [
+                            'type'=>'string',
+                            'role'=>'annotation',
+                        ]
+                    ],
+                    'data' => [
+                        'stage1' => 12,
+                        'stage2' => 45,
+                        'stage3' => 13,
+                        'stage4' => 7,
+                        'stage5' => 10,
+                    ]
+                ],
+                'country-germany'=>[
+                    'columns' => [
+                        'type'=>'string',
+                        'label'=>'Stage',
+                        'format'=>[
+                            'type'=>'NumberFormat',
+                            'format'=>[
+                                'suffix' => '%'
+                            ]
+                        ],
+                    ],
+                    'role-columns' => [
+                        [
+                            'type'=>'string',
+                            'role'=>'style',
+                        ],
+                        [
+                            'type'=>'string',
+                            'role'=>'annotation',
+                        ]
+                    ],
+                    'data' => [
+                        'stage1' => 16,
+                        'stage2' => 14,
+                        'stage3' => 33,
+                        'stage4' => 12,
+                        'stage5' => 5,
+                    ]
+                ],
+            ],
         ],
         'floatimage' => 'none',
         'floatgraph' => 'none',
@@ -57,6 +123,7 @@ return array(
             'designline'=>true,
             'color'=>'#00DF62',
             'pageimage'=>false,
+            'extra-graphs'=>false,
         ],
         'floatimage' => 'right',
         'floatgraph' => 'none',
@@ -101,6 +168,7 @@ return array(
             'designline'=>true,
             'color'=>'#F5006A',
             'pageimage'=>true,
+            'extra-graphs'=>false,
         ],
         'floatimage' => 'none',
         'floatgraph' => 'none',
@@ -145,6 +213,7 @@ return array(
             'designline'=>true,
             'color'=>'#633BAD',
             'pageimage'=>true,
+            'extra-graphs'=>false,
         ],
         'floatimage' => 'none',
         'floatgraph' => 'none',
@@ -189,6 +258,7 @@ return array(
             'designline'=>true,
             'color'=>'#00B7E7',
             'pageimage'=>true,
+            'extra-graphs'=>false,
         ],
         'floatimage' => 'none',
         'floatgraph' => 'none',
@@ -233,6 +303,7 @@ return array(
             'designline'=>true,
             'color'=>'#FFBD72',
             'pageimage'=>true,
+            'extra-graphs'=>false,
         ],
         'floatimage' => 'none',
         'floatgraph' => 'none',

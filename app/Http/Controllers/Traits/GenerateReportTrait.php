@@ -98,6 +98,38 @@ trait GenerateReportTrait {
 				
 				$sectionChart = Lava::ColumnChart($section.'_graph', $sectionGraph, $chartSettings);
 			}
+			$extraChart = [];
+			if(config('baseline_'.session('product.id').'.'.$section.'.report-settings.extra-graphs')){
+				foreach (config('baseline_'.session('product.id').'.'.$section.'.report-settings.extra-graphs') as $key => $graph) {
+					$extraGraph = Lava::DataTable();
+					$graphCols = [];
+					foreach ($graph['columns'] as $colKey => $col) {
+						if($col['format']){
+							$format = Lava::NumberFormat($col['format']['format']);
+						}
+						$graphCols[] = [$col['type'],$col['label'], isset($col['format']) ? $format:null]
+					}
+					$extraGraph->addColumns($graphCols);
+
+			        if($graph['role-columns']){
+						foreach ($graph['role-columns'] as $rolKey => $rol) {
+							$extraGraph->addRoleColumn($rol['type'], $rol['role']);
+						}
+			        }
+					
+					foreach ($graph['data'] as $paramKey => $param) {
+						
+					    $extraGraph->addRow([
+					      /*trans(session('product.alias').'.'.$stage)*/$stage,
+					      $param,
+					      session('result.'.$section.'.rating')==$paramKey? config('baseline_'.session('product.id').'.'.$section.'.color'):null,
+					      $param."%"
+					    ]);
+					}
+					
+					$extraChart[] = Lava::ColumnChart($section.'_'.$key.'_graph', $extraGraph, $chartSettings);
+				}
+			}
 			$vars['sections'][] = [
 				'title' => trans(session('product.alias').'.'.$section.'.title'),
 				'hidetitle' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.hide-title'),
