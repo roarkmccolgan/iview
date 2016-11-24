@@ -7,31 +7,46 @@ return array(
                 'low' => 0,
                 'high' => 20.9,
                 'copy' => 'general.timetoacttxt',
-                'tweet' => 'general.timetoacttweet'
+                'tweet' => 'general.timetoacttweet',
+                'benchmark' => 2,
+                'benchmark-country' => 10,
+                'benchmark-size' => 10,
             ),
             'stage2' => array(
                 'low' => 21,
                 'high' => 40.9,
                 'copy' => 'general.timetocommitetxt',
-                'tweet' => 'general.timetocommittweet'
+                'tweet' => 'general.timetocommittweet',
+                'benchmark' => 22,
+                'benchmark-country' => 10,
+                'benchmark-size' => 10,
             ),
             'stage3' => array(
                 'low' => 41,
                 'high' => 50.9,
                 'copy' => 'general.timetoinvesttxt',
-                'tweet' => 'general.timetoinvesttweet'
+                'tweet' => 'general.timetoinvesttweet',
+                'benchmark' => 48,
+                'benchmark-country' => 10,
+                'benchmark-size' => 10,
             ),
             'stage4' => array(
                 'low' => 61,
                 'high' => 80.9,
                 'copy' => 'general.timetorefinetxt',
-                'tweet' => 'general.timetorefinetweet'
+                'tweet' => 'general.timetorefinetweet',
+                'benchmark' =>  24,
+                'benchmark-country' => 10,
+                'benchmark-size' => 10,
             ),
             'stage5' => array(
                 'low' => 81,
                 'high' => 100,
                 'copy' => 'general.timetoacceleratetxt',
-                'tweet' => 'general.timetoacceleratetweet'
+                'tweet' => 'general.timetoacceleratetweet',
+                'benchmark' => 5,
+                'benchmark-country' => 10,
+                'benchmark-size' => 10,
             )
         )
     ),
@@ -41,27 +56,32 @@ return array(
             'stage1' => array(
                 'low' => 0,
                 'high' => 4.92,
-                'total' => 2
+                'total' => 2,
+                'benchmark' => 2,
             ),
             'stage2' => array(
                 'low' => 5,
                 'high' => 8.9,
-                'total' => 3
+                'total' => 3,
+                'benchmark' => 2,
             ),
             'stage3' => array(
                 'low' => 9,
                 'high' => 12.9,
-                'total' => 5
+                'total' => 5,
+                'benchmark' => 2,
             ),
             'stage4' => array(
                 'low' => 13,
                 'high' => 16.9,
-                'total' => 5
+                'total' => 5,
+                'benchmark' => 2,
             ),
             'stage5' => array(
                 'low' => 17,
                 'high' => 20,
-                'total' => 5
+                'total' => 5,
+                'benchmark' => 2,
             )
         )
     ),
@@ -71,27 +91,32 @@ return array(
             'stage1' => array(
                 'low' => 0,
                 'high' => 4.92,
-                'total' => 2
+                'total' => 2,
+                'benchmark' => 2,
             ),
             'stage2' => array(
                 'low' => 5,
                 'high' => 8.9,
-                'total' => 3
+                'total' => 3,
+                'benchmark' => 2,
             ),
             'stage3' => array(
                 'low' => 9,
                 'high' => 12.9,
-                'total' => 5
+                'total' => 5,
+                'benchmark' => 2,
             ),
             'stage4' => array(
                 'low' => 13,
                 'high' => 16.9,
-                'total' => 5
+                'total' => 5,
+                'benchmark' => 2,
             ),
             'stage5' => array(
                 'low' => 17,
                 'high' => 20,
-                'total' => 5
+                'total' => 5,
+                'benchmark' => 2,
             )
         )
     ),
@@ -101,27 +126,32 @@ return array(
             'stage1' => array(
                 'low' => 0,
                 'high' => 4.92,
-                'total' => 2
+                'total' => 2,
+                'benchmark' => 2,
             ),
             'stage2' => array(
                 'low' => 5,
                 'high' => 8.9,
-                'total' => 3
+                'total' => 3,
+                'benchmark' => 2,
             ),
             'stage3' => array(
                 'low' => 9,
                 'high' => 12.9,
-                'total' => 5
+                'total' => 5,
+                'benchmark' => 2,
             ),
             'stage4' => array(
                 'low' => 13,
                 'high' => 16.9,
-                'total' => 5
+                'total' => 5,
+                'benchmark' => 2,
             ),
             'stage5' => array(
                 'low' => 17,
                 'high' => 20,
-                'total' => 5
+                'total' => 5,
+                'benchmark' => 2,
             )
         )
     )
