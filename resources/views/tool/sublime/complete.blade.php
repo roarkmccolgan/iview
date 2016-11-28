@@ -35,11 +35,23 @@
                             <div class="col-xs-10 col-xs-offset-1">
                                 <h2>{{$heading}}</h2>
                                 <h1 class="result">{{$result}}</h1>
-                                <p>{!!trans(session('product.alias').'.completecopy.'.$resultkey)!!}</p>
-                                <p>
-                                    {!!trans(session('product.alias').'.completecopy.fullreport')!!}<br/>
-                                    {!!trans(session('product.alias').'.completecopy.provide')!!}
-                                </p>
+                                <div class="row">
+                                    @if($graph)
+                                    <div class="col-xs-12">
+                                        <div id="overall-graph" class="graph" style="">
+                                            
+                                        </div>
+                                        @columnchart('overall_graph', 'overall-graph')
+                                    </div>
+                                    @endif
+                                    <div class="{{$graph ? 'col-xs-12':'col-xs-12'}}">
+                                        <p>{!!trans(session('product.alias').'.completecopy.'.$resultkey)!!}</p>
+                                        <p>
+                                            {!!trans(session('product.alias').'.completecopy.fullreport')!!}<br/>
+                                            {!!trans(session('product.alias').'.completecopy.provide')!!}
+                                        </p>
+                                    </div>
+                                </div>
                                 <div class="row">
                                     <div class="col-xs-12">
                                         <div style="padding: 20px; border:1px solid #EFEFEF; padding-top: 40px; margin-top: 20px;">

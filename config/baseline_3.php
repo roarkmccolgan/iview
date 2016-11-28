@@ -3,8 +3,15 @@
 return array(
     'overall' => array(
         'baseline' => 21.5,
-        'floatimage' => 'none',
-        'floatgraph' => 'none',
+        'report-settings' => [
+            'header'=>true,
+            'footer'=>true,
+            'graph'=>true,
+            'pb'=>false,
+            'designline'=>false,
+            'color'=>'#d92435',
+            'pageimage'=>false,
+        ],
         'types' => array(
             'stage1' => array(
                 'low' => 0,
@@ -40,8 +47,15 @@ return array(
     ),
     'cloud-vision-and-strategy' => array(
         'baseline' => 15.363,
-        'floatimage' => 'right',
-        'floatgraph' => 'none',
+        'report-settings' => [
+            'header'=>true,
+            'footer'=>true,
+            'graph'=>true,
+            'pb'=>false,
+            'designline'=>false,
+            'color'=>'#d92435',
+            'pageimage'=>false,
+        ],
         'types' => array(
             'stage1' => array(
                 'low' => 0,
@@ -77,8 +91,15 @@ return array(
     ),
     'processes-and-skill-sets' => array(
         'baseline' => 15.363,
-        'floatimage' => 'right',
-        'floatgraph' => 'none',
+        'report-settings' => [
+            'header'=>true,
+            'footer'=>true,
+            'graph'=>true,
+            'pb'=>false,
+            'designline'=>false,
+            'color'=>'#d92435',
+            'pageimage'=>false,
+        ],
         'types' => array(
             'stage1' => array(
                 'low' => 0,
@@ -114,8 +135,15 @@ return array(
     ),
     'business-mix' => array(
         'baseline' => 15.363,
-        'floatimage' => 'right',
-        'floatgraph' => 'none',
+        'report-settings' => [
+            'header'=>true,
+            'footer'=>true,
+            'graph'=>true,
+            'pb'=>false,
+            'designline'=>false,
+            'color'=>'#d92435',
+            'pageimage'=>false,
+        ],
         'types' => array(
             'stage1' => array(
                 'low' => 0,
@@ -151,8 +179,15 @@ return array(
     ),
     'sales-and-marketing' => array(
         'baseline' => 15.363,
-        'floatimage' => 'right',
-        'floatgraph' => 'none',
+        'report-settings' => [
+            'header'=>true,
+            'footer'=>true,
+            'graph'=>true,
+            'pb'=>false,
+            'designline'=>false,
+            'color'=>'#d92435',
+            'pageimage'=>false,
+        ],
         'types' => array(
             'stage1' => array(
                 'low' => 0,

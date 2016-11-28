@@ -3,6 +3,90 @@
 return array(
     'overall' => array(
         'baseline' => 21.5,
+        'complete' => [
+            'graph' => [
+                'label' => 'Stage',
+                'data' => 'benchmark',
+                'format'=>[
+                    'type'=>'NumberFormat',
+                    'format'=>[
+                        'suffix' => '%'
+                    ]
+                ],
+            ]
+        ],
+        'report-settings' => [
+            'header'=>false,
+            'footer'=>true,
+            'graph'=>true,
+            'graph-title'=>true,
+            'pb'=>false,
+            'designline'=>false,
+            'color'=>'#d92435',
+            'pageimage'=>false,
+            'extra-graphs'=>[
+                'country-france'=>[
+                    'title'=>true,
+                    'columns' => [
+                        [
+                            'type'=>'string',
+                            'label'=>'Stage',
+                        ],
+                        [
+                            'type'=>'number',
+                            'label'=>'Your Score',
+                            'format'=>[
+                                'type'=>'NumberFormat',
+                                'format'=>[
+                                    'suffix' => '%'
+                                ]
+                            ],
+                        ],
+                    ],
+                    'role-columns' => [
+                        [
+                            'type'=>'string',
+                            'role'=>'style',
+                        ],
+                        [
+                            'type'=>'string',
+                            'role'=>'annotation',
+                        ]
+                    ],
+                    'data' => 'benchmark-country'
+                ],
+                'size-1000'=>[
+                    'title'=>true,
+                    'columns' => [
+                        [
+                            'type'=>'string',
+                            'label'=>'Stage',
+                        ],
+                        [
+                            'type'=>'number',
+                            'label'=>'Your Score',
+                            'format'=>[
+                                'type'=>'NumberFormat',
+                                'format'=>[
+                                    'suffix' => '%'
+                                ]
+                            ],
+                        ],
+                    ],
+                    'role-columns' => [
+                        [
+                            'type'=>'string',
+                            'role'=>'style',
+                        ],
+                        [
+                            'type'=>'string',
+                            'role'=>'annotation',
+                        ]
+                    ],
+                    'data' => 'benchmark-size'
+                ],
+            ],
+        ],
         'types' => array(
             'stage1' => array(
                 'low' => 0,
@@ -10,8 +94,8 @@ return array(
                 'copy' => 'general.timetoacttxt',
                 'tweet' => 'general.timetoacttweet',
                 'benchmark' => 2,
-                'benchmark-country' => 10,
-                'benchmark-size' => 10,
+                'benchmark-country' => 35,
+                'benchmark-size' => 30,
             ),
             'stage2' => array(
                 'low' => 21,
@@ -19,7 +103,7 @@ return array(
                 'copy' => 'general.timetocommitetxt',
                 'tweet' => 'general.timetocommittweet',
                 'benchmark' => 22,
-                'benchmark-country' => 10,
+                'benchmark-country' => 5,
                 'benchmark-size' => 10,
             ),
             'stage3' => array(
@@ -28,8 +112,8 @@ return array(
                 'copy' => 'general.timetoinvesttxt',
                 'tweet' => 'general.timetoinvesttweet',
                 'benchmark' => 48,
-                'benchmark-country' => 10,
-                'benchmark-size' => 10,
+                'benchmark-country' => 30,
+                'benchmark-size' => 8,
             ),
             'stage4' => array(
                 'low' => 61,
@@ -37,8 +121,8 @@ return array(
                 'copy' => 'general.timetorefinetxt',
                 'tweet' => 'general.timetorefinetweet',
                 'benchmark' =>  24,
-                'benchmark-country' => 10,
-                'benchmark-size' => 10,
+                'benchmark-country' => 20,
+                'benchmark-size' => 40,
             ),
             'stage5' => array(
                 'low' => 81,
@@ -47,11 +131,20 @@ return array(
                 'tweet' => 'general.timetoacceleratetweet',
                 'benchmark' => 5,
                 'benchmark-country' => 10,
-                'benchmark-size' => 10,
+                'benchmark-size' => 6,
             )
         )
     ),
     'cyber-risk-management-and-the-business' => array(
+        'report-settings' => [
+            'header'=>false,
+            'footer'=>true,
+            'graph'=>false,
+            'pb'=>false,
+            'designline'=>false,
+            'color'=>'#d92435',
+            'pageimage'=>false
+        ],
         'baseline' => 15.363,
         'types' => array(
             'stage1' => array(
@@ -87,6 +180,15 @@ return array(
         )
     ),
     'cyber-risk-management-operations-and-defence' => array(
+        'report-settings' => [
+            'header'=>false,
+            'footer'=>true,
+            'graph'=>false,
+            'pb'=>false,
+            'designline'=>false,
+            'color'=>'#d92435',
+            'pageimage'=>false
+        ],
         'baseline' => 15.363,
         'types' => array(
             'stage1' => array(
@@ -122,6 +224,15 @@ return array(
         )
     ),
     'cyber-risk-management-breach-detection-and-remediation' => array(
+        'report-settings' => [
+            'header'=>false,
+            'footer'=>true,
+            'graph'=>false,
+            'pb'=>false,
+            'designline'=>false,
+            'color'=>'#d92435',
+            'pageimage'=>false
+        ],
         'baseline' => 15.363,
         'types' => array(
             'stage1' => array(

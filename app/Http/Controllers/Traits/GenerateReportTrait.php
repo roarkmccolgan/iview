@@ -73,6 +73,7 @@ trait GenerateReportTrait {
 		$headervars['sub-title'] = trans(session('product.alias').'.sub-title');
 		$headervars['company_alias'] = session('company.alias');
 		$headervars['tool_id'] = session('product.id');
+		$headervars['template'] = session('template');
 		foreach (config('baseline_'.session('product.id')) as $section => $values) {
 			if(config('baseline_'.session('product.id').'.'.$section.'.report-settings.graph')){
 				$sectionGraph = Lava::DataTable();
@@ -149,7 +150,7 @@ trait GenerateReportTrait {
 			$headervars['page_offest'] = 1;
 			$count++;
 		}
-		$vars['introImage'] = trans(session('product.alias').'.introduction-image');
+		$vars['introImage'] = Lang::has(session('product.alias').'.introduction-image') ? trans(session('product.alias').'.introduction-image'):false;
 		$vars['introRating'] = trans(session('product.alias').'.'.session('result.overall.rating'));
 
 		//return $vars['sections'];

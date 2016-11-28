@@ -485,3 +485,9 @@ span.instruct {
 .list-group.vertical-steps .list-group-item.completed:last-child{
 	border-left:1px dotted transparent;
 }
+
+/*COmplete*/
+.graph{
+	border: 1px solid #efefef;
+	margin-bottom: 10px;
+}

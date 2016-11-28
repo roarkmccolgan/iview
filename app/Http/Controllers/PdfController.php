@@ -79,6 +79,7 @@ class PdfController extends Controller
 		$headervars['sub-title'] = trans(session('product.alias').'.sub-title');
 		$headervars['company_alias'] = session('company.alias');
 		$headervars['tool_id'] = session('product.id');
+		$headervars['template'] = session('template');
 		foreach (config('baseline_'.session('product.id')) as $section => $values) {
 			if(config('baseline_'.session('product.id').'.'.$section.'.report-settings.graph')){
 				$sectionGraph = Lava::DataTable();
@@ -95,7 +96,7 @@ class PdfController extends Controller
 				foreach ($values['types'] as $stage => $params) {
 					$val = $params['benchmark'];
 				    $sectionGraph->addRow([
-				      /*trans(session('product.alias').'.'.$stage)*/$stage,
+				      trans(session('product.alias').'.'.$stage),//$stage
 				      $val,
 				      session('result.'.$section.'.rating')==$stage? config('baseline_'.session('product.id').'.'.$section.'.report-settings.color'):null,
 				      $val."%"
@@ -110,11 +111,12 @@ class PdfController extends Controller
 					$extraGraph = Lava::DataTable();
 					$graphCols = [];
 					foreach ($graph['columns'] as $colKey => $col) {
-						if($col['format']){
-							$format = Lava::NumberFormat($col['format']['format']);
+						if(isset($col['format'])){
+							$format = Lava::$col['format']['type']($col['format']['format']);
 						}
 						$graphCols[] = [$col['type'],$col['label'], isset($col['format']) ? $format:null];
 					}
+					//dd();
 					$extraGraph->addColumns($graphCols);
 
 			        if($graph['role-columns']){
@@ -123,17 +125,17 @@ class PdfController extends Controller
 						}
 			        }
 					
-					foreach ($graph['data'] as $paramKey => $param) {
-						
+					foreach (config('baseline_'.session('product.id').'.overall.types') as $extraSection => $extraSettings) {
+						$val = $extraSettings[$graph['data']];
 					    $extraGraph->addRow([
-					      /*trans(session('product.alias').'.'.$stage)*/$stage,
-					      $param,
-					      session('result.'.$section.'.rating')==$paramKey? config('baseline_'.session('product.id').'.'.$section.'.color'):null,
-					      $param."%"
+					      trans(session('product.alias').'.'.$extraSection),//$extraSection
+					      $val,
+					      session('result.'.$section.'.rating')==$extraSection? config('baseline_'.session('product.id').'.'.$section.'.report-settings.color'):null,
+					      $val."%"
 					    ]);
 					}
 					
-					$extraChart[] = Lava::ColumnChart($section.'_'.$key.'_graph', $extraGraph, $chartSettings);
+					$extraChart[$section.'_'.$key.'_graph'] = Lava::ColumnChart($section.'_'.$key.'_graph', $extraGraph, $chartSettings);
 				}
 			}
 			$vars['sections'][] = [
@@ -145,6 +147,8 @@ class PdfController extends Controller
 				'color' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.color'),
 				'designline' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.designline'),
 				'graph' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.graph'),
+				'graph-title' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.graph-title'),
+				'extraCharts' => !empty($extraChart) ? $extraChart: false,
 				'pb' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.pb'),
 				'rating' => trans(session('product.alias').'.'.session('result.'.$section.'.rating')),
 				'score' => session('result.'.$section.'.score'),
@@ -155,20 +159,20 @@ class PdfController extends Controller
 			$headervars['page_offest'] = 1;
 			$count++;
 		}
-		$vars['introImage'] = trans(session('product.alias').'.introduction-image');
+		$vars['introImage'] = Lang::has(session('product.alias').'.introduction-image') ? trans(session('product.alias').'.introduction-image') : false;
 		$vars['introRating'] = trans(session('product.alias').'.'.session('result.overall.rating'));
 
 		//return $vars['sections'];
-		//return view('tool.default.report.report',$vars);
+		//return view('tool.'.session('template').'.report.report',$vars);
 
-        $pdf = PDF::loadView('tool.default.report.report',$vars)
+        $pdf = PDF::loadView('tool.'.session('template').'.report.report',$vars)
         	->setOption('margin-top', 25)
         	->setOption('margin-left', 0)
         	->setOption('margin-right', 0)
         	->setOption('window-status','chartrendered')
-        	->setOption('header-html',session('url').'/'.session('locale').'/template/default/report/header')
+        	->setOption('header-html',config('baseline_'.session('product.id').'.overall.report-settings.header') ? session('url').'/'.session('localeUrl').'template/'.session('template').'/report/header':null)
         	->setOption('header-spacing',0)
-        	->setOption('footer-html',session('url').'/'.session('locale').'/template/default/report/footer')
+        	->setOption('footer-html',config('baseline_'.session('product.id').'.overall.report-settings.footer') ? session('url').'/'.session('localeUrl').'template/'.session('template').'/report/footer':null)
         	->setOption('footer-spacing',2)
         	->setOption('replace', $headervars);
 		return $pdf->inline('invoice.pdf');

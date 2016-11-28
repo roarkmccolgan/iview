@@ -112,11 +112,20 @@ Route::group(['domain' => '{subdomain}.idcready.net','middleware'=>['locale']], 
     Route::get('/template/default/report/header', function(){
     	return View::make('tool.default.report.header');
     });
+    Route::get('/template/sublime/report/header', function(){
+    	return View::make('tool.sublime.report.header');
+    });
     Route::get('/template/default/report/footer', function(){
     	$product_id = session('product.id');
     	$company_alias = session('company.alias');
     	$url = session('url');
     	return View::make('tool.default.report.footer', compact(['url','product_id','company_alias']));
+    });
+    Route::get('/template/sublime/report/footer', function(){
+    	$product_id = session('product.id');
+    	$company_alias = session('company.alias');
+    	$url = session('url');
+    	return View::make('tool.sublime.report.footer', compact(['url','product_id','company_alias']));
     });
     Route::group(['prefix' => 'quiz'], function(){
 

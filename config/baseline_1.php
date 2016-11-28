@@ -4,6 +4,8 @@ return array(
     'overall' => array(
         'baseline' => 21.5,
         'report-settings' => [
+            'header'=>true,
+            'footer'=>true,
             'graph'=>true,
             'pb'=>false,
             'designline'=>false,
@@ -118,6 +120,8 @@ return array(
     'cloud-vision-and-strategy' => array(
         'baseline' => 15.363,
         'report-settings' => [
+            'header'=>true,
+            'footer'=>true,
             'graph'=>true,
             'pb'=>true,
             'designline'=>true,
@@ -163,6 +167,8 @@ return array(
     'process-and-skill-sets' => array(
         'baseline' => 24.046,
         'report-settings' => [
+            'header'=>true,
+            'footer'=>true,
             'graph'=>true,
             'pb'=>true,
             'designline'=>true,
@@ -208,6 +214,8 @@ return array(
     'marketing' => array(
         'baseline' => 10,917,
         'report-settings' => [
+            'header'=>true,
+            'footer'=>true,
             'graph'=>true,
             'pb'=>true,
             'designline'=>true,
@@ -253,6 +261,8 @@ return array(
     'sales' => array(
         'baseline' => 10,917,
         'report-settings' => [
+            'header'=>true,
+            'footer'=>true,
             'graph'=>true,
             'pb'=>true,
             'designline'=>true,
@@ -298,6 +308,8 @@ return array(
     'business-mix' => array(
         'baseline' => 10,917,
         'report-settings' => [
+            'header'=>true,
+            'footer'=>true,
             'graph'=>true,
             'pb'=>true,
             'designline'=>true,

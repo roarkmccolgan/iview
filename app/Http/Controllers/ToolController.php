@@ -8,6 +8,7 @@ use App\Http\Requests;
 use App\Http\Requests\CreateToolRequest;
 use App\Http\Requests\SubmitAssessmentsRequest;
 use App\Language;
+use Lava;
 use App\Tool;
 use App\Url;
 use Carbon\Carbon;
@@ -234,6 +235,86 @@ class ToolController extends Controller
         if($localQuestions=='es' || $localQuestions=='fr' || $localQuestions=='de' || $localQuestions=='it'){
             $btnclass = 'lang';
         }
+        $graph = false;
+        if(config('baseline_'.session('product.id').'.overall.complete.graph')){
+            $graph = config('baseline_'.session('product.id').'.overall.complete.graph');
+            $chartSettings = [
+                'title' => null,//trans(session('product.alias').'.completecopy.graphtitle')
+                'backgroundColor' => [
+                    'fill'=>'transparent'
+                ],
+                'vAxis' => [
+                    'baselineColor'=>'none',
+                    'gridlines'=> [
+                        'color'=> 'none'
+                    ]
+                ],
+                'hAxis' => [
+                    'textStyle' => [
+                        'fontName' => 'Helvetica-light',
+                        /*'fontSize' => 18,*/
+                        /*'bold' => true,*/
+                        /*'italic' => true,*/
+                        // The color of the text.
+                        'color' => '#939598',
+                        // The color of the text outline.
+                        /*'auraColor' => '#d799ae',*/
+                        // The transparency of the text.
+                        /*'opacity' => 0.8*/
+                    ]
+                ],
+                'colors' => ['#68aadd'],
+                'chartArea' => ['width'=>'90%', 'height'=>'80%'],
+                'legend' => [ 'position' => "none" ],
+                /*'events' => [
+                    'ready' => 'chartReady'
+                ],*/
+                'annotations'=>[
+                    'stem'=>[
+                        'color'=>'transparent'
+                    ],
+                    'textStyle'=>[
+                        /*'fontName'=> 'Times-Roman',
+                        */'fontSize'=> 14,
+                        /*'bold'=> true,
+                        'italic'=> true,*/
+                        // The color of the text.
+                        'color'=> '#000000',
+                        // The color of the text outline.
+                        // 'auraColor'=> '#d799ae',
+                        // The transparency of the text.
+                        /*'opacity'=> 0.8*/
+                    ]
+                ],
+                /*'isStacked' => true,*/
+                 //As a percent, "33%"
+            ];
+
+            $completeGraph = Lava::DataTable();
+            $format = false;
+            if($graph['format']){
+                $func = $graph['format']['type'];
+                $format = Lava::$func($graph['format']['format']);
+            }
+            $completeGraph->addColumns([
+                ['string', $graph['label']],
+                ['number', 'Value',$format ? $format: null],
+            ]);
+            $completeGraph->addRoleColumn('string', 'style');
+            $completeGraph->addRoleColumn('string', 'annotation');
+            
+            foreach (config('baseline_'.session('product.id').'.overall.types') as $stage => $params) {
+                $val = $params[$graph['data']];
+                $completeGraph->addRow([
+                  trans(session('product.alias').'.'.$stage),//$stage
+                  $val,
+                  session('result.overall.rating')==$stage? config('baseline_'.session('product.id').'.overall.report-settings.color'):null,
+                  $val."%"
+                ]);
+            }
+            
+            $completeChart = Lava::ColumnChart('overall_graph', $completeGraph, $chartSettings);
+        }
 
         $extraFields = Tool::findOrFail(session('product.id'))->extra_fields()->get()->toArray();
         //return $extraFields;
@@ -241,6 +322,7 @@ class ToolController extends Controller
             'heading' => trans(session('product.alias').'.overall.title'),
             'result' => trans(session('product.alias').'.'.$this->result['overall']['rating']),
             'resultkey' => $this->result['overall']['rating'],
+            'graph' => $graph,
             'baseline' => session('baseline'),
             'fullresult' => session('result'),
             'sub1' => trans($this->baseline['overall']['types'][$this->result['overall']['rating']]['copy']),
