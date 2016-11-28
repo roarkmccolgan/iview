@@ -50,6 +50,31 @@ Route::group(['prefix' => 'admin', 'middleware'=>['auth']], function(){
 });
 
 Route::group(['domain' => '{subdomain}.idcready.net'], function ($subdomain) {
+	Route::group(['prefix' => 'admin','middleware'=>['auth','routebyurl','toolaccess:super,admin,client,local']], function(){
+		Route::get('/', 'TerminalController@dashboard');
+		Route::post('/', 'TerminalController@dashboard');
+		Route::get('/assessments', 'AssessmentController@index');
+		Route::get('/assessments/download', 'AssessmentController@downloadAssessments');
+
+		Route::get('/tracking', 'TrackerController@index');
+		Route::get('/tracking/new', 'TrackerController@create')->middleware(['toolaccess:super,admin,client']);
+		Route::post('/tracking', 'TrackerController@store')->middleware(['toolaccess:super,admin,client']);
+
+		Route::get('/users', 'UserController@index')->middleware(['toolaccess:super,admin,client']);
+		Route::get('/users/new', 'UserController@create')->middleware(['toolaccess:super,admin,client']);
+		Route::post('/users', 'UserController@store')->middleware(['toolaccess:super,admin,client']);
+	});
+	Route::group(['prefix' => 'api'], function(){
+		Route::group(['prefix' => 'assessments'], function(){
+			Route::post('delete/{assessment}', 'AssessmentController@delete');
+		});
+		Route::group(['prefix' => 'trackers'], function(){
+			Route::post('delete/{tracker}', 'TrackerController@delete');
+		});
+		Route::group(['prefix' => 'users'], function(){
+			Route::post('delete/{user}', 'UserController@delete');
+		});
+	});
 	Route::group(['prefix' => '{lang?}','middleware'=>['locale']], function($lang = 'en'){
 	    Route::get('/', 'ToolController@run')->middleware(['routebyurl','reloadquestions']);
 
@@ -74,32 +99,6 @@ Route::group(['domain' => '{subdomain}.idcready.net'], function ($subdomain) {
 			Route::get('/complete', 'ToolController@getComplete');
 			Route::post('/complete', 'ToolController@postComplete');
 			Route::get('/download', 'ToolController@fakeDownload');
-		});
-
-		Route::group(['prefix' => 'admin','middleware'=>['auth','routebyurl','toolaccess:super,admin,client,local']], function(){
-			Route::get('/', 'TerminalController@dashboard');
-			Route::post('/', 'TerminalController@dashboard');
-			Route::get('/assessments', 'AssessmentController@index');
-			Route::get('/assessments/download', 'AssessmentController@downloadAssessments');
-
-			Route::get('/tracking', 'TrackerController@index');
-			Route::get('/tracking/new', 'TrackerController@create')->middleware(['toolaccess:super,admin,client']);
-			Route::post('/tracking', 'TrackerController@store')->middleware(['toolaccess:super,admin,client']);
-
-			Route::get('/users', 'UserController@index')->middleware(['toolaccess:super,admin,client']);
-			Route::get('/users/new', 'UserController@create')->middleware(['toolaccess:super,admin,client']);
-			Route::post('/users', 'UserController@store')->middleware(['toolaccess:super,admin,client']);
-		});
-		Route::group(['prefix' => 'api'], function(){
-			Route::group(['prefix' => 'assessments'], function(){
-				Route::post('delete/{assessment}', 'AssessmentController@delete');
-			});
-			Route::group(['prefix' => 'trackers'], function(){
-				Route::post('delete/{tracker}', 'TrackerController@delete');
-			});
-			Route::group(['prefix' => 'users'], function(){
-				Route::post('delete/{user}', 'UserController@delete');
-			});
 		});
 	});
 });
