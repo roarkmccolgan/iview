@@ -365,7 +365,7 @@ class ToolController extends Controller
             $vars = array(
                 'heading' => trans(session('product.alias').'.complete_thankyou',['fname'=>$request->input('fname')]),
                 'body' => trans(session('product.alias').'.complete_body'),
-                'tweet' => config('baseline_'.session('product.id').'.overall.tweet') ? trans(session('product.alias').'.complete_tweet',['result'=>trans(session('product.alias').'.'.$this->howfit['overall']['rating'])]),
+                'tweet' => config('baseline_'.session('product.id').'.overall.tweet') ? trans(session('product.alias').'.complete_tweet',['result'=>trans(session('product.alias').'.'.$this->howfit['overall']['rating'])]):false,
                 'class' => 'trans silverStone',
                 'script' => ['
                     ga(\'send\', {
