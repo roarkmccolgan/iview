@@ -16,8 +16,6 @@ class PdfController extends Controller
      */
     public function wkhtml()
     {
-        //return view('tool.default.report');
-        //$html = View::make('tool.default.report', [])->render();
         $chartSettings = [
 			'title' => null,
 			'backgroundColor' => [
@@ -43,6 +41,7 @@ class PdfController extends Controller
 					/*'opacity' => 0.8*/
 				]
 			],
+			'legend' => ['position'=> 'bottom'],
 			'colors' => ['#68aadd'],
 			'chartArea' => ['width'=>'100%', 'height'=>'80%'],
 			'legend' => [ 'position' => "none" ],
@@ -81,7 +80,7 @@ class PdfController extends Controller
 		$headervars['company_alias'] = session('company.alias');
 		$headervars['tool_id'] = session('product.id');
 		foreach (config('baseline_'.session('product.id')) as $section => $values) {
-			if(Lang::has(session('product.alias').'.'.$section.'.graph')){
+			if(config('baseline_'.session('product.id').'.'.$section.'.report-settings.graph')){
 				$sectionGraph = Lava::DataTable();
 				$numformat = Lava::NumberFormat([
 				    'suffix'         => '%'
@@ -98,25 +97,55 @@ class PdfController extends Controller
 				    $sectionGraph->addRow([
 				      /*trans(session('product.alias').'.'.$stage)*/$stage,
 				      $val,
-				      session('result.'.$section.'.rating')==$stage? trans(session('product.alias').'.'.$section.'.color'):null,
+				      session('result.'.$section.'.rating')==$stage? config('baseline_'.session('product.id').'.'.$section.'.report-settings.color'):null,
 				      $val."%"
 				    ]);
 				}
 				
 				$sectionChart = Lava::ColumnChart($section.'_graph', $sectionGraph, $chartSettings);
 			}
+			$extraChart = [];
+			if(config('baseline_'.session('product.id').'.'.$section.'.report-settings.extra-graphs')){
+				foreach (config('baseline_'.session('product.id').'.'.$section.'.report-settings.extra-graphs') as $key => $graph) {
+					$extraGraph = Lava::DataTable();
+					$graphCols = [];
+					foreach ($graph['columns'] as $colKey => $col) {
+						if($col['format']){
+							$format = Lava::NumberFormat($col['format']['format']);
+						}
+						$graphCols[] = [$col['type'],$col['label'], isset($col['format']) ? $format:null];
+					}
+					$extraGraph->addColumns($graphCols);
+
+			        if($graph['role-columns']){
+						foreach ($graph['role-columns'] as $rolKey => $rol) {
+							$extraGraph->addRoleColumn($rol['type'], $rol['role']);
+						}
+			        }
+					
+					foreach ($graph['data'] as $paramKey => $param) {
+						
+					    $extraGraph->addRow([
+					      /*trans(session('product.alias').'.'.$stage)*/$stage,
+					      $param,
+					      session('result.'.$section.'.rating')==$paramKey? config('baseline_'.session('product.id').'.'.$section.'.color'):null,
+					      $param."%"
+					    ]);
+					}
+					
+					$extraChart[] = Lava::ColumnChart($section.'_'.$key.'_graph', $extraGraph, $chartSettings);
+				}
+			}
 			$vars['sections'][] = [
 				'title' => trans(session('product.alias').'.'.$section.'.title'),
-				'hidetitle' => Lang::has(session('product.alias').'.'.$section.'.hidetitle') ? true:false,
-				'introduction' => Lang::has(session('product.alias').'.'.$section.'.introduction') ? trans(session('product.alias').'.'.$section.'.introduction',['result'=>trans(session('product.alias').'.'.session('result.'.$section.'.rating'))]):false,
+				'hidetitle' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.hide-title'),
+				'introduction' => Lang::has(session('product.alias').'.'.$section.'.introduction') ? trans(session('product.alias').'.'.$section.'.introduction',['result'=>trans(session('product.alias').'.'.session('result.'.$section.'.rating')),'benchmark'=>config('baseline_'.session('product.id').'.'.$section.'.types.'.session('result.'.$section.'.rating').'.benchmark')]):false,
 				'seckey' => $section,
-				'image' => Lang::has(session('product.alias').'.'.$section.'.image') ? trans(session('product.alias').'.'.$section.'.image'):false,
-				'pageimage' => Lang::has(session('product.alias').'.'.$section.'.pageimage') ? trans(session('product.alias').'.'.$section.'.pageimage'):false,
-				'color' => Lang::has(session('product.alias').'.'.$section.'.color') ? trans(session('product.alias').'.'.$section.'.color'):false,
-				'designline' => Lang::has(session('product.alias').'.'.$section.'.designline') ? trans(session('product.alias').'.'.$section.'.designline'):false,
-				'imagefloat' => isset($values['floatimage']) ? $values['floatimage']:'',
-				'graph' => Lang::has(session('product.alias').'.'.$section.'.graph') ? trans(session('product.alias').'.'.$section.'.graph'):false,
-				'pb' => Lang::has(session('product.alias').'.'.$section.'.pb') ? true:false,
+				'pageimage' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.pageimage') ? trans(session('product.alias').'.'.$section.'.pageimage'):false,
+				'color' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.color'),
+				'designline' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.designline'),
+				'graph' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.graph'),
+				'pb' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.pb'),
 				'rating' => trans(session('product.alias').'.'.session('result.'.$section.'.rating')),
 				'score' => session('result.'.$section.'.score'),
 				'paragraph' => trans(session('product.alias').'.'.$section.'.'.session('result.'.$section.'.rating')),

@@ -27,7 +27,7 @@
             <div class="col-md-8 col-md-offset-2">
 
                 @foreach ($questions as $question)
-                    {!! Form::open(array('url' => session('locale').'/quiz/'.$section.'/page'.$page,'id'=>'msform','class'=>'')) !!}
+                    {!! Form::open(array('url' => session('localeUrl').'quiz/'.$section.'/page'.$page,'id'=>'msform','class'=>'')) !!}
                         <!-- progressbar -->
                         <ul id="progressbar">
                         @foreach ($menu as $key=>$pages)

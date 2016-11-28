@@ -5,7 +5,16 @@
  * @package  Laravel
  * @author   Taylor Otwell <taylorotwell@gmail.com>
  */
+$pattern = '/^\/(en|fr)\//';
+$uri = filter_input(INPUT_SERVER, 'REQUEST_URI', FILTER_SANITIZE_URL);
 
+if (preg_match($pattern, $uri, $matches)) {
+    $uri = preg_replace($pattern, '/', $uri);
+
+    $_SERVER['REQUEST_URI'] = $uri;
+
+    define('LOCALE', $matches[1]);
+}
 /*
 |--------------------------------------------------------------------------
 | Register The Auto Loader
@@ -47,6 +56,7 @@ $app = require_once __DIR__.'/../bootstrap/app.php';
 */
 
 $kernel = $app->make('Illuminate\Contracts\Http\Kernel');
+
 
 $response = $kernel->handle(
 	$request = Illuminate\Http\Request::capture()

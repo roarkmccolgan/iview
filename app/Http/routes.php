@@ -49,7 +49,7 @@ Route::group(['prefix' => 'admin', 'middleware'=>['auth']], function(){
 	Route::get('reporting/create', 'ReportingController@create');
 });
 
-Route::group(['domain' => '{subdomain}.idcready.net'], function ($subdomain) {
+Route::group(['domain' => '{subdomain}.idcready.net','middleware'=>['locale']], function ($subdomain) {
 	Route::group(['prefix' => 'admin','middleware'=>['auth','routebyurl','toolaccess:super,admin,client,local']], function(){
 		Route::get('/', 'TerminalController@dashboard');
 		Route::post('/', 'TerminalController@dashboard');
@@ -75,6 +75,8 @@ Route::group(['domain' => '{subdomain}.idcready.net'], function ($subdomain) {
 			Route::post('delete/{user}', 'UserController@delete');
 		});
 	});
+
+	/*//languages routes
 	Route::group(['prefix' => '{lang?}','middleware'=>['locale']], function($lang = 'en'){
 	    Route::get('/', 'ToolController@run')->middleware(['routebyurl','reloadquestions']);
 
@@ -100,6 +102,30 @@ Route::group(['domain' => '{subdomain}.idcready.net'], function ($subdomain) {
 			Route::post('/complete', 'ToolController@postComplete');
 			Route::get('/download', 'ToolController@fakeDownload');
 		});
+	});*/
+	//default en routes
+	Route::get('/', 'ToolController@run')->middleware(['routebyurl','reloadquestions']);
+
+	Route::get('/download/{assid}', 'ToolController@getDownload');
+	
+    Route::get('/pdf', 'PdfController@wkhtml');
+    Route::get('/template/default/report/header', function(){
+    	return View::make('tool.default.report.header');
+    });
+    Route::get('/template/default/report/footer', function(){
+    	$product_id = session('product.id');
+    	$company_alias = session('company.alias');
+    	$url = session('url');
+    	return View::make('tool.default.report.footer', compact(['url','product_id','company_alias']));
+    });
+    Route::group(['prefix' => 'quiz'], function(){
+
+		Route::get('/{section}/page{num}', 'ToolController@getPage');
+		Route::post('/{section}/page{num}', 'ToolController@savePage');
+
+		Route::get('/complete', 'ToolController@getComplete');
+		Route::post('/complete', 'ToolController@postComplete');
+		Route::get('/download', 'ToolController@fakeDownload');
 	});
 });
 

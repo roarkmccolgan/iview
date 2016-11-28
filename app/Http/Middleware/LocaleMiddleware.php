@@ -16,9 +16,8 @@ class LocaleMiddleware
      */
     public function handle($request, Closure $next)
     {
-        $allowed = array("fr", "de", "es");
-        if (in_array($request->lang, $allowed)) {
-             App::setLocale($request->lang);
+        if(defined("LOCALE")){
+            App::setLocale(constant("LOCALE"));
         }
         return $next($request);
     }

@@ -41,7 +41,7 @@
                 </div>
                 <div id="results" style="background-color: #FFF; padding: 20px; padding-top: 40px;">
                     <div class="row">
-                    {{ Form::open(array('url' => '/'.session('locale').'/quiz/complete','id'=>'form-email-report','class'=>'clearfix')) }}
+                    {{ Form::open(array('url' => '/'.session('localeUrl').'quiz/complete','id'=>'form-email-report','class'=>'clearfix')) }}
                         <fieldset>
                             <input type="hidden" value="{{$source['form_source']}}" name="form_source">
                             

@@ -17,13 +17,15 @@ return array(
     </p>
     ',
     'complete_thankyou' => 'Thank you :Fname,',
-    'complete_body' => 'Your custom report will arrive in your inbox soon.<br/>
-While you\'re waiting why not tweet your results and see how your followers measure up?',
+    'complete_body' => 'Your custom report will arrive in your inbox soon',
     'complete_tweet' => 'I\'ve just taken the Cloud Development Assessment Sponsored by @Sage %26 @IDCUKI, we\'re at :result. Interested?',// http://bit.ly/2g8WN1d
     'email'=>[
         'subject' => 'IDC Report',
         'hi' => 'Hi :Fname',
-        'body' => 'As promised, here\'s the link to download your Cloud Maturity Benchmark report. This breaks down your results by category and helps you benchmark yourself against other organisations.',
+        'body' => '
+            Your Cloud Maturity Assessment report is here.<br/>
+            The report breaks down your results by category and helps you benchmark yourself against other organizations.
+        ',
         'link' => 'Download Report',
         'extra' => 'Once you\'ve digested the report why not visit <a href="http://www.sage.com" style="color:#024886">Sage</a>',
         'regards' => 'Regards',
@@ -35,7 +37,7 @@ While you\'re waiting why not tweet your results and see how your followers meas
         'image'=>'',
         'introduction' => '
         <p>
-            Based on IDC\'s assessment, your organization is at <strong>:result</strong> in terms of its overall cloud readiness. X% of the organizations benchmarked by IDC were at this stage, with the majority of organizations positioned in Stage 3: Time to Invest.
+            Based on IDC\'s assessment, your organization is at <strong>:result</strong> in terms of its overall cloud readiness. <strong>:benchmark</strong>% of the organizations benchmarked by IDC were at this stage, with the majority of organizations positioned in Stage 3: Time to Invest.
         </p>
         <p>
             For further insight and detailed recommendations, the report takes you through the components of cloud strategy, delivering an assessment of your stage of maturity as well as individual recommendations on how to improve these areas.

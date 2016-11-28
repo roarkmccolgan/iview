@@ -18,17 +18,19 @@ return array(
     ',
 
     'complete_thankyou' => 'Merci :Fname,',
-    'complete_body' => 'Your custom report will arrive in your inbox soon.<br/>
-While you\'re waiting why not tweet your results and see how your followers measure up?',
+    'complete_body' => 'Votre rapport personnalisé arrivera bientôt dans votre boîte mail',
     'complete_tweet' => 'I\'ve just taken the Cloud Development Assessment Sponsored by @Sage %26 @IDCUKI, we\'re at :result. Interested?',// http://bit.ly/2g8WN1d
     'email'=>[
-        'subject' => 'IDC Report',
-        'hi' => 'Hi :Fname',
-        'body' => 'As promised, here\'s the link to download your Cloud Maturity Benchmark report. This breaks down your results by category and helps you benchmark yourself against other organisations.',
-        'link' => 'Download Report',
-        'extra' => 'Once you\'ve digested the report why not visit <a href="http://www.sage.com" style="color:#024886">Sage</a>',
-        'regards' => 'Regards',
-        'team' => 'The IDC Team'
+        'subject' => 'Rapport IDC',
+        'hi' => 'Bonjour :Fname',
+        'body' => '
+            Vous trouverez votre rapport d\'évaluation cloud ici<br/>
+            Le rapport détaillé de vos résultats par catégorie vous aide à vous comparer directement à d\'autres organisations.
+        ',
+        'link' => 'Télécharger le rapport',
+        'extra' => 'Une fois le rapport assimilé, pourquoi ne pas visiter <a href="http://www.sage.com" style="color:#024886">Sage</a>',
+        'regards' => 'Cordialement',
+        'team' => 'L\'équipe IDC'
     ],
     'introduction-image' => 'report1.jpg',
     'overall' => array(
@@ -36,7 +38,7 @@ While you\'re waiting why not tweet your results and see how your followers meas
         'image'=>'',
         'introduction' => '
         <p>
-            Selon l\'évaluation d\'IDC, votre entreprise se trouve à l\'étape <strong>:result</strong> en termes de préparation globale au cloud. X % des entreprises évaluées par IDC se situent à cette étape et la majorité des entreprises se trouvent à l\'étape 3 : Il faut investir..
+            Selon l\'évaluation d\'IDC, votre entreprise se trouve à l\'étape <strong>:result</strong> en termes de préparation globale au cloud. <strong>:benchmark</strong> % des entreprises évaluées par IDC se situent à cette étape et la majorité des entreprises se trouvent à l\'étape 3 : Il faut investir..
         </p>
         <p>
             Pour des informations et Recommandations supplémentaires, le rapport détaille la stratégie cloud, avec une évaluation de la maturité de votre entreprise ainsi que des conseils individuels pour vous améliorer.

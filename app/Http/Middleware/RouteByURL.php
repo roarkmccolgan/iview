@@ -26,6 +26,7 @@ class RouteByURL
 
             $request->session()->put('product', ['type'=>$url->urlable_type, 'id'=>$url->urlable_id, 'alias'=>$url->urlable->alias, 'title'=>$url->urlable->title]);
             $request->session()->put('locale', App::getLocale()=='en' ? '':App::getLocale());
+            $request->session()->put('localeUrl', App::getLocale()=='en' ? '':App::getLocale().'/');
             $request->session()->put('url', 'http://' . $request->subdomain.'.'.$host_names[1].'.'.$host_names[2]);
             $request->session()->put('host', $url->urlable->domain);
             $request->session()->put('referer', $request->server('HTTP_REFERER'));

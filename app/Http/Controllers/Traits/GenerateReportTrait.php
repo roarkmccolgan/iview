@@ -133,7 +133,7 @@ trait GenerateReportTrait {
 			$vars['sections'][] = [
 				'title' => trans(session('product.alias').'.'.$section.'.title'),
 				'hidetitle' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.hide-title'),
-				'introduction' => Lang::has(session('product.alias').'.'.$section.'.introduction') ? trans(session('product.alias').'.'.$section.'.introduction'):false,
+				'introduction' => Lang::has(session('product.alias').'.'.$section.'.introduction') ? trans(session('product.alias').'.'.$section.'.introduction',['result'=>trans(session('product.alias').'.'.session('result.'.$section.'.rating')),'benchmark'=>config('baseline_'.session('product.id').'.'.$section.'.types.'.session('result.'.$section.'.rating').'.benchmark')]):false,
 				'seckey' => $section,
 				'pageimage' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.pageimage') ? trans(session('product.alias').'.'.$section.'.pageimage'):false,
 				'color' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.color'),
@@ -160,9 +160,9 @@ trait GenerateReportTrait {
         	->setOption('margin-left', 0)
         	->setOption('margin-right', 0)
         	->setOption('window-status','chartrendered')
-        	->setOption('header-html',session('url').'/'.session('locale').'/template/default/report/header')
+        	->setOption('header-html',session('url').'/'.session('localeUrl').'template/default/report/header')
         	->setOption('header-spacing',0)
-        	->setOption('footer-html',session('url').'/'.session('locale').'/template/default/report/footer')
+        	->setOption('footer-html',session('url').'/'.session('localeUrl').'template/default/report/footer')
         	->setOption('footer-spacing',2)
         	->setOption('replace', $headervars);
 

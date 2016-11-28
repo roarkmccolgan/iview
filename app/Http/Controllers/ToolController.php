@@ -144,8 +144,9 @@ class ToolController extends Controller
         return view($view, compact('tool','return_visitor','class'));
     }
 
-    public function getPage($subdomain, $lang, $section=false, $page=false)
+    public function getPage($subdomain, $section=false, $page=false)
     {
+        
         if($section===false || $page===false) return redirect('/');
         $this->loadQuestions();
 
@@ -183,7 +184,7 @@ class ToolController extends Controller
     }
 
 
-    public function savePage(Request $request, $subdomain, $lang, $section=false, $page=false)
+    public function savePage(Request $request, $subdomain, $section=false, $page=false)
     {
         if($section===false || $page===false) return redirect('/');
         $input = $request->except('_token');
@@ -194,7 +195,7 @@ class ToolController extends Controller
         if($request->session()->has('questions.'.$section.'.pages.page'.($page+1))){
             //$this->getPage($section,$page+1);
             //return Redirect::to('quiz/'.$section.'/page'.($page+1))->withCookie($cookie);
-            return redirect('/'.session('locale').'/quiz/'.$section.'/page'.($page+1));
+            return redirect('/'.session('localeUrl').'quiz/'.$section.'/page'.($page+1));
         }else{
             session(['questions.'.$section.'.complete' => true]);
             $questions = session('questions');
@@ -213,13 +214,13 @@ class ToolController extends Controller
                 $rating = trans(session('product.alias').'.'.$this->result[$section]['rating']);
                 $ratingClass = 'icon '.$section;
                 $ratingcopy = trans($this->baseline[$section]['types'][$this->result[$section]['rating']]['copy']);
-                $next = (key($questions)==null) ? '/'.session('locale').'/quiz/complete': '/quiz/'.key($questions).'/page1'; //fix this so a report can be provided at any stage?
+                $next = (key($questions)==null) ? '/'.session('localeUrl').'quiz/complete': 'quiz/'.key($questions).'/page1'; //fix this so a report can be provided at any stage?
                 return view('tool.'.session('template').'.sectionresult',compact(['menu','page','title','section','rating','ratingClass','ratingcopy','next']));
             }
             //dd(session('questions'));
             //else do carry on or complete
-            if(key($questions)==null) return redirect('/'.session('locale').'/quiz/complete');
-            return redirect('/'.session('locale').'/quiz/'.key($questions).'/page1');
+            if(key($questions)==null) return redirect('/'.session('localeUrl').'quiz/complete');
+            return redirect('/'.session('localeUrl').'quiz/'.key($questions).'/page1');
         }
     }
 
