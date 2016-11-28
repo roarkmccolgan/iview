@@ -255,7 +255,7 @@ return array(
             'pb'=>true,
             'designline'=>true,
             'color'=>'#00B7E7',
-            'pageimage'=>true,
+            'pageimage'=>false,
             'extra-graphs'=>false,
         ],
         'floatimage' => 'none',
