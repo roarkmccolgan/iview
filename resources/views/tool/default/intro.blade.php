@@ -24,10 +24,10 @@
                         {!!Lang::get('general.'.$tool->id.'landing')!!}
                     </div>
                     <div class="col-md-4 col-md-offset-0 col-xs-4 col-xs-offset-4 action">
-                        <a href="{{'quiz/'.Session::get('startSection').'/page1'}}" class="startbut btn btn-primary btn-lg">{{Lang::get('general.'.$tool->id.'startbut')}} &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-right"></i></a>
+                        <a href="{{'/'.session('locale').'/quiz/'.Session::get('startSection').'/page1'}}" class="startbut btn btn-primary btn-lg">{{Lang::get('general.'.$tool->id.'startbut')}} &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-right"></i></a>
                     </div>
                     <div class="col-xs-12 sponsor">
-                        <small>Sponsored by</small><br/>
+                        <small>{{Lang::get('general.'.$tool->id.'assoc')}}</small><br/>
                         <div class="icon-{{session('company.alias')}}" style="width: 180px; height: 51px; margin: 0 auto; margin-top: 5px;" ></div>
                     </div>
                 </div>

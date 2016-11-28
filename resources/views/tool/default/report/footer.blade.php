@@ -15,7 +15,7 @@
 	<body style="margin: 0; padding: 0;">
 		<table class="footer" style="width: 100%; height: 20mm; color: grey; " cellpadding="0" cellspacing="0">
 			<tr>
-				<td style="width: 78%; padding-right: 2%; text-align: right">sponsored by</td>
+				<td style="width: 78%; padding-right: 2%; text-align: right">{{trans('general.'.app('request')->input('tool_id').'assoc')}}</td>
 				<td style="width: 20%;">
 					<img width="80" src="/css/{{ app('request')->input('company_alias') }}/png/{{ app('request')->input('company_alias') }}.png" alt="">
 				</td>

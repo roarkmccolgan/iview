@@ -8,7 +8,7 @@ return array(
             'designline'=>false,
             'color'=>'#0092C4',
             'pageimage'=>false,
-            'extra-graphs'=>[
+            /*'extra-graphs'=>[
                 'country-france'=>[
                     'columns' => [
                         [
@@ -73,10 +73,8 @@ return array(
                         'stage5' => 5,
                     ]
                 ],
-            ],
+            ],*/
         ],
-        'floatimage' => 'none',
-        'floatgraph' => 'none',
         'types' => array(
             'stage1' => array(
                 'low' => 0,

@@ -137,9 +137,9 @@ class PdfController extends Controller
         	->setOption('margin-left', 0)
         	->setOption('margin-right', 0)
         	->setOption('window-status','chartrendered')
-        	->setOption('header-html','http://redhat.idcready.net/template/default/report/header')
+        	->setOption('header-html',session('url').'/'.session('locale').'/template/default/report/header')
         	->setOption('header-spacing',0)
-        	->setOption('footer-html','http://redhat.idcready.net/template/default/report/footer')
+        	->setOption('footer-html',session('url').'/'.session('locale').'/template/default/report/footer')
         	->setOption('footer-spacing',2)
         	->setOption('replace', $headervars);
 		return $pdf->inline('invoice.pdf');

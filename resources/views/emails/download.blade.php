@@ -193,7 +193,7 @@ ul li, ol li {
 						<table>
 							<tr>
 								<td class="padding">
-									<p><a href="{{ session('url').'/download/'.$assessment->id }}" class="btn-primary">{{trans(session('product.alias').'.email.link')}}</a></p>
+									<p><a href="{{ session('url').'/'.session('locale').'/download/'.$assessment->id }}" class="btn-primary">{{trans(session('product.alias').'.email.link')}}</a></p>
 								</td>
 							</tr>
 						</table>

@@ -53,5 +53,6 @@ class Kernel extends HttpKernel
         'routebyurl' => \App\Http\Middleware\RouteByURL::class,
         'role' => \App\Http\Middleware\RoleMiddleware::class,
         'toolaccess' => \App\Http\Middleware\ToolAccessMiddleware::class,
+        'locale' => \App\Http\Middleware\LocaleMiddleware::class,
     ];
 }

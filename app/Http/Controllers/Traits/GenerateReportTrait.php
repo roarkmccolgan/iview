@@ -91,7 +91,7 @@ trait GenerateReportTrait {
 				    $sectionGraph->addRow([
 				      /*trans(session('product.alias').'.'.$stage)*/$stage,
 				      $val,
-				      session('result.'.$section.'.rating')==$stage? trans(session('product.alias').'.'.$section.'.color'):null,
+				      session('result.'.$section.'.rating')==$stage? config('baseline_'.session('product.id').'.'.$section.'.report-settings.color'):null,
 				      $val."%"
 				    ]);
 				}
@@ -107,7 +107,7 @@ trait GenerateReportTrait {
 						if($col['format']){
 							$format = Lava::NumberFormat($col['format']['format']);
 						}
-						$graphCols[] = [$col['type'],$col['label'], isset($col['format']) ? $format:null]
+						$graphCols[] = [$col['type'],$col['label'], isset($col['format']) ? $format:null];
 					}
 					$extraGraph->addColumns($graphCols);
 
@@ -160,9 +160,9 @@ trait GenerateReportTrait {
         	->setOption('margin-left', 0)
         	->setOption('margin-right', 0)
         	->setOption('window-status','chartrendered')
-        	->setOption('header-html',session('url').'/template/default/report/header')
+        	->setOption('header-html',session('url').'/'.session('locale').'/template/default/report/header')
         	->setOption('header-spacing',0)
-        	->setOption('footer-html',session('url').'/template/default/report/footer')
+        	->setOption('footer-html',session('url').'/'.session('locale').'/template/default/report/footer')
         	->setOption('footer-spacing',2)
         	->setOption('replace', $headervars);
 

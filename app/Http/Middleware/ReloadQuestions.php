@@ -18,7 +18,7 @@ class ReloadQuestions
      */
     public function handle($request, Closure $next)
     {
-        App::setLocale(session('locale'));
+        //App::setLocale(session('locale'));
         $currentLocal = App::getLocale();
         $localQuestions = $currentLocal=='en' ? '' : $currentLocal;
         $questions = Config::get($localQuestions.'questions_'.session('product.id'));
