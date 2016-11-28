@@ -80,38 +80,39 @@ return array(
                 'low' => 0,
                 'high' => 20.9,
                 'copy' => 'general.timetoacttxt',
-                'tweet' => 'general.timetoacttweet',
+                'tweet' => false,
                 'benchmark' => 2,
             ),
             'stage2' => array(
                 'low' => 21,
                 'high' => 40.9,
                 'copy' => 'general.timetocommitetxt',
-                'tweet' => 'general.timetocommittweet',
+                'tweet' => false,
                 'benchmark' => 32,
             ),
             'stage3' => array(
                 'low' => 41,
                 'high' => 50.9,
                 'copy' => 'general.timetoinvesttxt',
-                'tweet' => 'general.timetoinvesttweet',
+                'tweet' => false,
                 'benchmark' => 41,
             ),
             'stage4' => array(
                 'low' => 61,
                 'high' => 80.9,
                 'copy' => 'general.timetorefinetxt',
-                'tweet' => 'general.timetorefinetweet',
+                'tweet' => false,
                 'benchmark' => 21,
             ),
             'stage5' => array(
                 'low' => 81,
                 'high' => 100,
                 'copy' => 'general.timetoacceleratetxt',
-                'tweet' => 'general.timetoacceleratetweet',
+                'tweet' => false,
                 'benchmark' => 4,
             )
-        )
+        ),
+        'tweet' => false
     ),
     'cloud-vision-and-strategy' => array(
         'baseline' => 15.363,

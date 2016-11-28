@@ -32,7 +32,9 @@
                                 <h1>{{$heading}}</h1>
                                 <div>
                                     <p>{!!$body!!}</p>
+                                    @if($tweet)
                                     <a class="btn btn-lg btn-primary" href="http://twitter.com/home/?status={{$tweet}}" target="_blank"><i class="fa fa-twitter"></i> Tweet</a>
+                                    @endif
                                 </div>
                             </div>
                         </div>
