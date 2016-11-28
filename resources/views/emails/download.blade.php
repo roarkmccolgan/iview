@@ -189,7 +189,7 @@ ul li, ol li {
 				<tr>
 					<td>
 						<p>{{trans(session('product.alias').'.email.hi',['fname'=>$assessment->fname])}},</p>
-						<p>{{trans(session('product.alias').'.email.body')}}</p>
+						<p>{!!trans(session('product.alias').'.email.body')!!}</p>
 						<table>
 							<tr>
 								<td class="padding">
