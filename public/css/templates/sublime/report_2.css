@@ -1,29 +1,27 @@
-.header{
-	width: 210mm;
-	height: 25mm;
+body{
+	font-family: "Helvetica Neue LT Pro";
+	color: #808285;
 }
-.header h1, .header h2{
-	color: #fff;
-	font-size: 24px;
-	font-family: helvetica, sans;
-	font-weight: lighter;
-	margin: 0;
-	padding-left: 20mm;
-}
-.header h2{
-	font-size: 20px;
-}
-h2,h3,h5{
-	font-family: Arial;
-	font-weight: lighter;
-	font-size: 17pt;
+h2{
+	font-weight: 300;
+	text-transform: uppercase;
+	font-size: 15pt;
 	color: #003F7D;
 	margin: 0;
 	margin-top: 5mm;
 }
+h2.lower{
+	text-transform: none;
+}
 h3{
 	margin-top: 2mm;
 	font-size: 14pt;
+	color: #003F7D;
+	margin-bottom: 0;
+}
+h4{
+	font-size: 15pt;
+	font-weight: 100;
 	color: #003F7D;
 	margin-bottom: 0;
 }
@@ -34,14 +32,11 @@ h5{
 	margin-bottom: 0;
 }
 p{
-	font-family: Arial;
 	font-size: 10pt;
-	color: #686868;
 	line-height: 13pt;
 	margin-top: 1mm;
 }
 li{
-	font-family: Arial;
 	font-size: 10pt;
 	line-height: 16pt;
 	color: #003F7D;
@@ -65,12 +60,11 @@ li{
 	width: 50mm;
 }
 .introduction{
-	margin-left: 20mm;
-	width: 190mm;
+	margin-left: 10mm;
 }
 .section{
 	position: relative;
-	margin: 20mm;
+	margin: 10mm;
 	margin-top: 0;
 }
 .section h2{
@@ -103,18 +97,58 @@ h2.cloud-vision-and-strategy{
 	margin: 0 5mm 5mm 5mm;
 }
 .graph{
-	height: 100mm;
+	height: 80mm;
 	width:130mm;
 	margin:5mm auto;
 }
-.overall_country-france_graph, .overall_size-1000_graph{
+.fifty{
 	float: left;
-	width: 75mm;
-	height: 90mm;
-	margin:5mm 3mm;
+	width: 80mm;
+	margin: 0 5mm;
 }
-.overall_size-1000_graph{
+
+.extragraphtitle{
+	
+}
+.overall_country_graph, .overall_size_graph{
+	width: 80mm;
+	height: 90mm;
+	margin:0;
+}
+.overall_size_graph{
 	margin-left: 10mm;
+}
+
+span.ranking-label{
+	font-weight: 100;
+}
+span.ranking{
+	font-weight: 500;
+	color: #003F7D;
+	text-transform: uppercase;
+}
+
+.question_section{
+	position: relative;
+	margin: 10mm;
+	margin-top: 0mm;
+	font-size: 10pt;
+	line-height: 13pt;
+}
+span.question-label{
+	font-weight: 100;
+	text-transform: uppercase;
+}
+span.question{
+	font-weight: 500;
+}
+span.answer-label{
+	font-weight: 100;
+	text-transform: uppercase;
+}
+span.answer{
+	font-weight: 500;
+	color: #003F7D;
 }
 .group:after {
   content: "";

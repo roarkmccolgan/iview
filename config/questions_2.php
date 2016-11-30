@@ -185,17 +185,38 @@ return array(
                             array(
                                 'label'=>'A necessary cost',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'inline',
+                                    'stage2' => 'inline',
+                                    'stage3' => 'behind',
+                                    'stage4' => 'behind',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'An enabler of business efficiency',
                                 'value'=>3,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'inline',
+                                    'stage4' => 'inline',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'A driver of competitive advantage or differentiation',
                                 'value'=>5,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'ahead',
+                                    'stage4' => 'ahead',
+                                    'stage5' => 'inline',
+                                ]
                             )
                         )
                     )
@@ -216,22 +237,50 @@ return array(
                             array(
                                 'label'=>'We struggle to deal with most requests.',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'inline',
+                                    'stage2' => 'inline',
+                                    'stage3' => 'behind',
+                                    'stage4' => 'behind',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'We are generally OK with requests around existing applications or services, but struggle with requests for new or enhance',
                                 'value'=>2,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'inline',
+                                    'stage2' => 'inline',
+                                    'stage3' => 'inline',
+                                    'stage4' => 'behind',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'We are generally OK with requests both for existing applications and services, and new or enhanced services.',
                                 'value'=>4,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'inline',
+                                    'stage4' => 'inline',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'We are very good at delivery on most or all requests.',
                                 'value'=>5,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'ahead',
+                                    'stage4' => 'ahead',
+                                    'stage5' => 'inline',
+                                ]
                             )
                         )
                     )
@@ -248,27 +297,62 @@ return array(
                             array(
                                 'label'=>'We avoid risk at all costs.',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'inline',
+                                    'stage2' => 'behind',
+                                    'stage3' => 'behind',
+                                    'stage4' => 'behind',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'We tend to avoid risks, but will take some risks where there is a very good justification.',
                                 'value'=>2,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'inline',
+                                    'stage2' => 'inline',
+                                    'stage3' => 'behind',
+                                    'stage4' => 'behind',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'We are wary of risks, but will take them where we can see a clear business benefit.',
                                 'value'=>3,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'inline',
+                                    'stage4' => 'inline',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'We will take on risk readily to help the business develop.',
                                 'value'=>4,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'ahead',
+                                    'stage4' => 'inline',
+                                    'stage5' => 'inline',
+                                ]
                             ),
                             array(
                                 'label'=>'We actively take on and manage risk to help the business develop.',
                                 'value'=>5,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'ahead',
+                                    'stage4' => 'ahead',
+                                    'stage5' => 'inline',
+                                ]
                             )
                         )
                     )
@@ -294,16 +378,37 @@ return array(
                                         'label'=>'Currently have',
                                         'value'=>5,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'inline',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'Don\'t have, but planned',
                                         'value'=>3,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'No, and no plans',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'behind',
+                                            'stage2' => 'behind',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     )
                                 )
                             ),
@@ -315,16 +420,37 @@ return array(
                                         'label'=>'Currently have',
                                         'value'=>5,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'inline',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'Don\'t have, but planned',
                                         'value'=>3,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'No, and no plans',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'behind',
+                                            'stage2' => 'behind',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     )
                                 )
                             ),
@@ -336,16 +462,37 @@ return array(
                                         'label'=>'Currently have',
                                         'value'=>5,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'inline',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'Don\'t have, but planned',
                                         'value'=>3,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'No, and no plans',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'behind',
+                                            'stage2' => 'behind',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     )
                                 )
                             ),
@@ -357,16 +504,37 @@ return array(
                                         'label'=>'Currently have',
                                         'value'=>5,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'inline',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'Don\'t have, but planned',
                                         'value'=>3,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'No, and no plans',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'behind',
+                                            'stage2' => 'behind',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     )
                                 )
                             ),
@@ -378,16 +546,37 @@ return array(
                                         'label'=>'Currently have',
                                         'value'=>5,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'inline',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'Don\'t have, but planned',
                                         'value'=>3,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'No, and no plans',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'behind',
+                                            'stage2' => 'behind',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     )
                                 )
                             ),
@@ -399,16 +588,37 @@ return array(
                                         'label'=>'Currently have',
                                         'value'=>5,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'inline',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'Don\'t have, but planned',
                                         'value'=>3,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'No, and no plans',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'behind',
+                                            'stage2' => 'behind',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     )
                                 )
                             ),
@@ -420,16 +630,37 @@ return array(
                                         'label'=>'Currently have',
                                         'value'=>5,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'inline',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'Don\'t have, but planned',
                                         'value'=>3,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'No, and no plans',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'behind',
+                                            'stage2' => 'behind',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     )
                                 )
                             ),
@@ -441,16 +672,37 @@ return array(
                                         'label'=>'Currently have',
                                         'value'=>5,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'inline',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'Don\'t have, but planned',
                                         'value'=>3,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'No, and no plans',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'behind',
+                                            'stage2' => 'behind',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     )
                                 )
                             )
@@ -475,27 +727,62 @@ return array(
                             array(
                                 'label'=>'It doesn\'t have a dedicated owner.',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'inline',
+                                    'stage2' => 'behind',
+                                    'stage3' => 'behind',
+                                    'stage4' => 'behind',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'It is typically delegated to IT.',
                                 'value'=>2,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'inline',
+                                    'stage2' => 'inline',
+                                    'stage3' => 'behind',
+                                    'stage4' => 'behind',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'It is shared between IT and various lines of business.',
                                 'value'=>3,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'inline',
+                                    'stage4' => 'inline',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'It is shared between IT and senior management.',
                                 'value'=>3,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'inline',
+                                    'stage4' => 'inline',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'It is shared between IT, senior management, and various lines of business.',
                                 'value'=>5,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'ahead',
+                                    'stage4' => 'inline',
+                                    'stage5' => 'inline',
+                                ]
                             )
                         )
                     )
@@ -521,11 +808,25 @@ return array(
                                         'label'=>'Yes',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'inline',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'No',
                                         'value'=>0,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'behind',
+                                            'stage2' => 'behind',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     )
                                 )
                             ),
@@ -537,11 +838,25 @@ return array(
                                         'label'=>'Yes',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'inline',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'No',
                                         'value'=>0,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'behind',
+                                            'stage2' => 'behind',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     )
                                 )
                             ),
@@ -553,11 +868,25 @@ return array(
                                         'label'=>'Yes',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'inline',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'No',
                                         'value'=>0,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     )
                                 )
                             ),
@@ -569,11 +898,25 @@ return array(
                                         'label'=>'Yes',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'inline',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'No',
                                         'value'=>0,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'behind',
+                                            'stage2' => 'behind',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     )
                                 )
                             ),
@@ -585,11 +928,25 @@ return array(
                                         'label'=>'Yes',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'inline',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'No',
                                         'value'=>0,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     )
                                 )
                             ),
@@ -601,11 +958,25 @@ return array(
                                         'label'=>'Yes',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'inline',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'No',
                                         'value'=>0,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     )
                                 )
                             )
@@ -629,27 +1000,62 @@ return array(
                             array(
                                 'label'=>'Right at the beginning of planning',
                                 'value'=>5,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'ahead',
+                                    'stage4' => 'ahead',
+                                    'stage5' => 'inline',
+                                ]
                             ),
                             array(
                                 'label'=>'During planning',
                                 'value'=>4,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'inline',
+                                    'stage4' => 'inline',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'At the beginning of implementation',
                                 'value'=>3,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'inline',
+                                    'stage3' => 'inline',
+                                    'stage4' => 'behind',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'During implementation',
                                 'value'=>2,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'inline',
+                                    'stage3' => 'behind',
+                                    'stage4' => 'behind',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'When something goes wrong',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'inline',
+                                    'stage2' => 'behind',
+                                    'stage3' => 'behind',
+                                    'stage4' => 'behind',
+                                    'stage5' => 'behind',
+                                ]
                             )
                         )
                     )
@@ -666,27 +1072,62 @@ return array(
                             array(
                                 'label'=>'Not nearly enough for what we need to do',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'inline',
+                                    'stage2' => 'behind',
+                                    'stage3' => 'behind',
+                                    'stage4' => 'behind',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'Tight, barely covering essential operations',
                                 'value'=>2,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'inline',
+                                    'stage2' => 'inline',
+                                    'stage3' => 'behind',
+                                    'stage4' => 'behind',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'Good for core operations, but tight for new initiatives',
                                 'value'=>3,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'inline',
+                                    'stage4' => 'behind',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'Good for core operations, and for new initiatives where the value is clear',
                                 'value'=>4,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'ahead',
+                                    'stage4' => 'inline',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'Readily available across the board with a good business case, even for experimental development',
                                 'value'=>5,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'ahead',
+                                    'stage4' => 'ahead',
+                                    'stage5' => 'inline',
+                                ]
                             )
                         )
                     )
@@ -722,26 +1163,61 @@ return array(
                                         'label'=>'1',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'behind',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'2',
                                         'value'=>2,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'3',
                                         'value'=>3,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'4',
                                         'value'=>4,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'ahead',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'5',
                                         'value'=>5,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'ahead',
+                                            'stage4' => 'ahead',
+                                            'stage5' => 'inline',
+                                        ]
                                     )
                                 )
                             ),
@@ -755,26 +1231,61 @@ return array(
                                         'label'=>'1',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'behind',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'2',
                                         'value'=>2,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'3',
                                         'value'=>3,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'4',
                                         'value'=>4,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'ahead',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'5',
                                         'value'=>5,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'ahead',
+                                            'stage4' => 'ahead',
+                                            'stage5' => 'inline',
+                                        ]
                                     )
                                 )
                             ),
@@ -788,26 +1299,61 @@ return array(
                                         'label'=>'1',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'behind',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'2',
                                         'value'=>2,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'3',
                                         'value'=>3,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'4',
                                         'value'=>4,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'ahead',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'5',
                                         'value'=>5,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'ahead',
+                                            'stage4' => 'ahead',
+                                            'stage5' => 'inline',
+                                        ]
                                     )
                                 )
                             ),
@@ -821,26 +1367,61 @@ return array(
                                         'label'=>'1',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'behind',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'2',
                                         'value'=>2,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'3',
                                         'value'=>3,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'4',
                                         'value'=>4,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'ahead',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'5',
                                         'value'=>5,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'ahead',
+                                            'stage4' => 'ahead',
+                                            'stage5' => 'inline',
+                                        ]
                                     )
                                 )
                             ),
@@ -854,26 +1435,61 @@ return array(
                                         'label'=>'1',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'behind',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'2',
                                         'value'=>2,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'3',
                                         'value'=>3,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'4',
                                         'value'=>4,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'ahead',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'5',
                                         'value'=>5,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'ahead',
+                                            'stage4' => 'ahead',
+                                            'stage5' => 'inline',
+                                        ]
                                     )
                                 )
                             ),
@@ -887,26 +1503,61 @@ return array(
                                         'label'=>'1',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'behind',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'2',
                                         'value'=>2,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'3',
                                         'value'=>3,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'4',
                                         'value'=>4,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'ahead',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'5',
                                         'value'=>5,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'ahead',
+                                            'stage4' => 'ahead',
+                                            'stage5' => 'inline',
+                                        ]
                                     )
                                 )
                             ),
@@ -920,26 +1571,61 @@ return array(
                                         'label'=>'1',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'behind',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'2',
                                         'value'=>2,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'3',
                                         'value'=>3,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'4',
                                         'value'=>4,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'ahead',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'5',
                                         'value'=>5,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'ahead',
+                                            'stage4' => 'ahead',
+                                            'stage5' => 'inline',
+                                        ]
                                     )
                                 )
                             ),
@@ -953,26 +1639,61 @@ return array(
                                         'label'=>'1',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'behind',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'2',
                                         'value'=>2,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'3',
                                         'value'=>3,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'4',
                                         'value'=>4,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'ahead',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'5',
                                         'value'=>5,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'ahead',
+                                            'stage4' => 'ahead',
+                                            'stage5' => 'inline',
+                                        ]
                                     )
                                 )
                             )
@@ -996,27 +1717,62 @@ return array(
                             array(
                                 'label'=>'We don\'t do this',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'inline',
+                                    'stage2' => 'behind',
+                                    'stage3' => 'behind',
+                                    'stage4' => 'behind',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'We do this on an informal basis internally.',
                                 'value'=>2,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'inline',
+                                    'stage2' => 'inline',
+                                    'stage3' => 'behind',
+                                    'stage4' => 'behind',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'We do this on a formal basis (using standards) using our general skills.',
                                 'value'=>3,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'inline',
+                                    'stage3' => 'inline',
+                                    'stage4' => 'behind',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'We do this on a formal basis (using standards) internally using expert skills.',
                                 'value'=>4,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'ahead',
+                                    'stage4' => 'inline',
+                                    'stage5' => 'inline',
+                                ]
                             ),
                             array(
                                 'label'=>'We use an external expert assessor (using standards).',
                                 'value'=>5,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'ahead',
+                                    'stage4' => 'ahead',
+                                    'stage5' => 'inline',
+                                ]
                             )
                         )
                     )
@@ -1044,26 +1800,61 @@ return array(
                                         'label'=>'1',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'behind',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'2',
                                         'value'=>2,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'3',
                                         'value'=>3,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'4',
                                         'value'=>4,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'ahead',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'5',
                                         'value'=>5,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'ahead',
+                                            'stage4' => 'ahead',
+                                            'stage5' => 'inline',
+                                        ]
                                     )
                                 )
                             ),
@@ -1077,26 +1868,61 @@ return array(
                                         'label'=>'1',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'behind',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'2',
                                         'value'=>2,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'3',
                                         'value'=>3,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'4',
                                         'value'=>4,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'ahead',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'5',
                                         'value'=>5,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'ahead',
+                                            'stage4' => 'ahead',
+                                            'stage5' => 'inline',
+                                        ]
                                     )
                                 )
                             ),
@@ -1110,26 +1936,61 @@ return array(
                                         'label'=>'1',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'behind',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'2',
                                         'value'=>2,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'3',
                                         'value'=>3,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'4',
                                         'value'=>4,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'ahead',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'5',
                                         'value'=>5,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'ahead',
+                                            'stage4' => 'ahead',
+                                            'stage5' => 'inline',
+                                        ]
                                     )
                                 )
                             ),
@@ -1143,26 +2004,61 @@ return array(
                                         'label'=>'1',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'behind',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'2',
                                         'value'=>2,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'3',
                                         'value'=>3,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'4',
                                         'value'=>4,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'ahead',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'5',
                                         'value'=>5,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'ahead',
+                                            'stage4' => 'ahead',
+                                            'stage5' => 'inline',
+                                        ]
                                     )
                                 )
                             ),
@@ -1176,26 +2072,61 @@ return array(
                                         'label'=>'1',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'behind',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'2',
                                         'value'=>2,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'3',
                                         'value'=>3,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'4',
                                         'value'=>4,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'ahead',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'5',
                                         'value'=>5,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'ahead',
+                                            'stage4' => 'ahead',
+                                            'stage5' => 'inline',
+                                        ]
                                     )
                                 )
                             ),
@@ -1209,26 +2140,61 @@ return array(
                                         'label'=>'1',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'behind',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'2',
                                         'value'=>2,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'3',
                                         'value'=>3,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'4',
                                         'value'=>4,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'ahead',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'behind',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'5',
                                         'value'=>5,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'ahead',
+                                            'stage4' => 'ahead',
+                                            'stage5' => 'inline',
+                                        ]
                                     )
                                 )
                             ),
@@ -1252,27 +2218,62 @@ return array(
                             array(
                                 'label'=>'We tend to buy tactically (point products) as issues arise.',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'inline',
+                                    'stage2' => 'behind',
+                                    'stage3' => 'behind',
+                                    'stage4' => 'behind',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'We mostly buy tactically as issues arise but have some strategic purchasing.',
                                 'value'=>2,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'inline',
+                                    'stage3' => 'behind',
+                                    'stage4' => 'behind',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'We have a balance of tactical versus strategic purchasing.',
                                 'value'=>3,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'inline',
+                                    'stage4' => 'behind',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'We mostly buy strategically but will buy tactically if we have an issue.',
                                 'value'=>4,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'ahead',
+                                    'stage4' => 'inline',
+                                    'stage5' => 'inline',
+                                ]
                             ),
                             array(
                                 'label'=>'We tend to buy strategically across the board.',
                                 'value'=>5,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'ahead',
+                                    'stage4' => 'ahead',
+                                    'stage5' => 'inline',
+                                ]
                             )
                         )
                     )
@@ -1289,47 +2290,110 @@ return array(
                             array(
                                 'label'=>'We don\'t do this at all',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'inline',
+                                    'stage2' => 'behind',
+                                    'stage3' => 'behind',
+                                    'stage4' => 'behind',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'Ad hoc if asked',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'inline',
+                                    'stage2' => 'behind',
+                                    'stage3' => 'behind',
+                                    'stage4' => 'behind',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'Annually',
                                 'value'=>2,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'inline',
+                                    'stage3' => 'inline',
+                                    'stage4' => 'behind',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'Quarterly',
                                 'value'=>2,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'inline',
+                                    'stage4' => 'inline',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'Monthly',
                                 'value'=>3,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'ahead',
+                                    'stage4' => 'inline',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'Weekly',
                                 'value'=>3,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'ahead',
+                                    'stage4' => 'ahead',
+                                    'stage5' => 'inline',
+                                ]
                             ),
                             array(
                                 'label'=>'Daily',
                                 'value'=>4,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'ahead',
+                                    'stage4' => 'ahead',
+                                    'stage5' => 'inline',
+                                ]
                             ),
                             array(
                                 'label'=>'Hourly',
                                 'value'=>4,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'ahead',
+                                    'stage4' => 'ahead',
+                                    'stage5' => 'inline',
+                                ]
                             ),
                             array(
                                 'label'=>'Continuously',
                                 'value'=>5,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'ahead',
+                                    'stage4' => 'ahead',
+                                    'stage5' => 'ahead',
+                                ]
                             )
                         )
                     )
@@ -1346,32 +2410,74 @@ return array(
                             array(
                                 'label'=>'Very ad hoc using spreadsheets etc.',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'inline',
+                                    'stage2' => 'behind',
+                                    'stage3' => 'behind',
+                                    'stage4' => 'behind',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'We mainly use \'out-of-the-box\' tools from our security suppliers.',
                                 'value'=>2,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'inline',
+                                    'stage2' => 'inline',
+                                    'stage3' => 'behind',
+                                    'stage4' => 'behind',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'We use a combination of specialized management tools with some \'out-of-the-box\' tools.',
                                 'value'=>3,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'inline',
+                                    'stage4' => 'behind',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'We mainly use specialized security management tools.',
                                 'value'=>4,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'inline',
+                                    'stage4' => 'inline',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'We use an end-to-end security management suite.',
                                 'value'=>5,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'ahead',
+                                    'stage4' => 'ahead',
+                                    'stage5' => 'inline',
+                                ]
                             ),
                             array(
                                 'label'=>'We use a certified partner to help us manage our IT security infrastructure.',
                                 'value'=>5,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'ahead',
+                                    'stage4' => 'ahead',
+                                    'stage5' => 'inline',
+                                ]
                             )
                         )
                     )
@@ -1388,27 +2494,62 @@ return array(
                             array(
                                 'label'=>'Manual processes across the board',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'inline',
+                                    'stage2' => 'behind',
+                                    'stage3' => 'behind',
+                                    'stage4' => 'behind',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'Mainly manual processes with a small amount of automation',
                                 'value'=>2,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'inline',
+                                    'stage2' => 'inline',
+                                    'stage3' => 'behind',
+                                    'stage4' => 'behind',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'A good balance of automation and manual processes',
                                 'value'=>3,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'inline',
+                                    'stage4' => 'inline',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'Mainly automation with a small amount of manual processes',
                                 'value'=>4,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'ahead',
+                                    'stage4' => 'ahead',
+                                    'stage5' => 'inline',
+                                ]
                             ),
                             array(
                                 'label'=>'Automation across the board',
                                 'value'=>5,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'ahead',
+                                    'stage4' => 'ahead',
+                                    'stage5' => 'inline',
+                                ]
                             )
                         )
                     )
@@ -1425,27 +2566,62 @@ return array(
                             array(
                                 'label'=>'Decrease it a lot',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'behind',
+                                    'stage2' => 'behind',
+                                    'stage3' => 'behind',
+                                    'stage4' => 'behind',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'Decrease it a little',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'behind',
+                                    'stage2' => 'behind',
+                                    'stage3' => 'behind',
+                                    'stage4' => 'behind',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'Stay the same',
                                 'value'=>2,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'inline',
+                                    'stage2' => 'inline',
+                                    'stage3' => 'inline',
+                                    'stage4' => 'inline',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'Increase it a little',
                                 'value'=>4,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'ahead',
+                                    'stage4' => 'ahead',
+                                    'stage5' => 'inline',
+                                ]
                             ),
                             array(
                                 'label'=>'Increase it a lot',
                                 'value'=>5,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'ahead',
+                                    'stage4' => 'ahead',
+                                    'stage5' => 'ahead',
+                                ]
                             )
                         )
                     )
@@ -1471,11 +2647,25 @@ return array(
                                         'label'=>'Yes',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'inline',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'No',
                                         'value'=>0,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'behind',
+                                            'stage2' => 'behind',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     )
                                 )
                             ),
@@ -1487,11 +2677,25 @@ return array(
                                         'label'=>'Yes',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'inline',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'No',
                                         'value'=>0,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'behind',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     )
                                 )
                             ),
@@ -1503,11 +2707,25 @@ return array(
                                         'label'=>'Yes',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'inline',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'No',
                                         'value'=>0,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'behind',
+                                            'stage2' => 'behind',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     )
                                 )
                             ),
@@ -1519,11 +2737,25 @@ return array(
                                         'label'=>'Yes',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'ahead',
+                                            'stage4' => 'ahead',
+                                            'stage5' => 'inline',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'No',
                                         'value'=>0,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'behind',
+                                        ]
                                     )
                                 )
                             ),
@@ -1535,11 +2767,25 @@ return array(
                                         'label'=>'Yes',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'inline',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'No',
                                         'value'=>0,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     )
                                 )
                             ),
@@ -1551,11 +2797,25 @@ return array(
                                         'label'=>'Yes',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'inline',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'No',
                                         'value'=>2,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     )
                                 )
                             ),
@@ -1574,27 +2834,62 @@ return array(
                             array(
                                 'label'=>'We don\'t use them at all.',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'inline',
+                                    'stage2' => 'behind',
+                                    'stage3' => 'behind',
+                                    'stage4' => 'behind',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'We use them in a limited fashion, but prefer to do things in-house.',
                                 'value'=>2,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'inline',
+                                    'stage3' => 'behind',
+                                    'stage4' => 'behind',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'We use them in a balanced way.',
                                 'value'=>3,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'inline',
+                                    'stage4' => 'inline',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'We prefer to use them over doing things in-house.',
                                 'value'=>4,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'ahead',
+                                    'stage4' => 'inline',
+                                    'stage5' => 'inline',
+                                ]
                             ),
                             array(
                                 'label'=>'We use them extensively wherever possible.',
                                 'value'=>5,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'ahead',
+                                    'stage4' => 'ahead',
+                                    'stage5' => 'inline',
+                                ]
                             )
                         )
                     )
@@ -1624,11 +2919,25 @@ return array(
                                         'label'=>'Yes',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'inline',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'No',
                                         'value'=>0,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     )
                                 )
                             ),
@@ -1640,11 +2949,25 @@ return array(
                                         'label'=>'Yes',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'inline',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'No',
                                         'value'=>0,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     )
                                 )
                             ),
@@ -1656,11 +2979,25 @@ return array(
                                         'label'=>'Yes',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'inline',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'No',
                                         'value'=>0,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     )
                                 )
                             ),
@@ -1672,11 +3009,25 @@ return array(
                                         'label'=>'Yes',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'inline',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'No',
                                         'value'=>0,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     )
                                 )
                             ),
@@ -1688,11 +3039,25 @@ return array(
                                         'label'=>'Yes',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'inline',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'No',
                                         'value'=>0,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     )
                                 )
                             ),
@@ -1722,11 +3087,25 @@ return array(
                                         'label'=>'Yes',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'inline',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'No',
                                         'value'=>0,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     )
                                 )
                             ),
@@ -1738,11 +3117,25 @@ return array(
                                         'label'=>'Yes',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'ahead',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'inline',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'No',
                                         'value'=>0,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     )
                                 )
                             ),
@@ -1754,11 +3147,25 @@ return array(
                                         'label'=>'Yes',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'inline',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'No',
                                         'value'=>0,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'behind',
+                                            'stage2' => 'behind',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     )
                                 )
                             ),
@@ -1770,11 +3177,25 @@ return array(
                                         'label'=>'Yes',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'ahead',
+                                            'stage4' => 'ahead',
+                                            'stage5' => 'inline',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'No',
                                         'value'=>0,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'behind',
+                                        ]
                                     )
                                 )
                             ),
@@ -1786,11 +3207,25 @@ return array(
                                         'label'=>'Yes',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'ahead',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'inline',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'No',
                                         'value'=>0,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     )
                                 )
                             ),
@@ -1820,11 +3255,25 @@ return array(
                                         'label'=>'Yes',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'ahead',
+                                            'stage4' => 'ahead',
+                                            'stage5' => 'inline',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'No',
                                         'value'=>0,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'behind',
+                                        ]
                                     )
                                 )
                             ),
@@ -1836,11 +3285,25 @@ return array(
                                         'label'=>'Yes',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'inline',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'No',
                                         'value'=>0,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'behind',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     )
                                 )
                             ),
@@ -1852,11 +3315,25 @@ return array(
                                         'label'=>'Yes',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'inline',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'No',
                                         'value'=>0,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'behind',
+                                            'stage2' => 'behind',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     )
                                 )
                             ),
@@ -1868,11 +3345,25 @@ return array(
                                         'label'=>'Yes',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'ahead',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'inline',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'No',
                                         'value'=>0,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     )
                                 )
                             ),
@@ -1884,11 +3375,25 @@ return array(
                                         'label'=>'Yes',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'ahead',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'inline',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'No',
                                         'value'=>0,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     )
                                 )
                             ),
@@ -1918,11 +3423,25 @@ return array(
                                         'label'=>'Yes',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'inline',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'No',
                                         'value'=>0,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'behind',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     )
                                 )
                             ),
@@ -1934,11 +3453,25 @@ return array(
                                         'label'=>'Yes',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'inline',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'No',
                                         'value'=>0,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     )
                                 )
                             ),
@@ -1950,11 +3483,25 @@ return array(
                                         'label'=>'Yes',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'inline',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'No',
                                         'value'=>0,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'behind',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     )
                                 )
                             ),
@@ -1966,11 +3513,25 @@ return array(
                                         'label'=>'Yes',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'ahead',
+                                            'stage3' => 'ahead',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'inline',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'No',
                                         'value'=>0,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     )
                                 )
                             ),
@@ -1982,11 +3543,25 @@ return array(
                                         'label'=>'Yes',
                                         'value'=>1,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'ahead',
+                                            'stage2' => 'inline',
+                                            'stage3' => 'inline',
+                                            'stage4' => 'inline',
+                                            'stage5' => 'inline',
+                                        ]
                                     ),
                                     array(
                                         'label'=>'No',
                                         'value'=>0,
                                         'checked'=>false,
+                                        'position' => [
+                                            'stage1' => 'inline',
+                                            'stage2' => 'behind',
+                                            'stage3' => 'behind',
+                                            'stage4' => 'behind',
+                                            'stage5' => 'behind',
+                                        ]
                                     )
                                 )
                             ),
@@ -2011,42 +3586,98 @@ return array(
                             array(
                                 'label'=>'Never',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'inline',
+                                    'stage2' => 'behind',
+                                    'stage3' => 'behind',
+                                    'stage4' => 'behind',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'Every few years',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'inline',
+                                    'stage2' => 'inline',
+                                    'stage3' => 'behind',
+                                    'stage4' => 'behind',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'Every year',
                                 'value'=>2,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'inline',
+                                    'stage3' => 'behind',
+                                    'stage4' => 'behind',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'Every 6 months',
                                 'value'=>2,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'inline',
+                                    'stage4' => 'behind',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'Every quarter',
                                 'value'=>3,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'ahead',
+                                    'stage4' => 'inline',
+                                    'stage5' => 'inline',
+                                ]
                             ),
                             array(
                                 'label'=>'Monthly',
                                 'value'=>3,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'ahead',
+                                    'stage4' => 'ahead',
+                                    'stage5' => 'inline',
+                                ]
                             ),
                             array(
                                 'label'=>'Weekly',
                                 'value'=>4,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'ahead',
+                                    'stage4' => 'ahead',
+                                    'stage5' => 'inline',
+                                ]
                             ),
                             array(
                                 'label'=>'Continuously',
                                 'value'=>5,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'ahead',
+                                    'stage4' => 'ahead',
+                                    'stage5' => 'ahead',
+                                ]
                             )
                         )
                     )
@@ -2063,42 +3694,98 @@ return array(
                             array(
                                 'label'=>'Never',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'inline',
+                                    'stage2' => 'behind',
+                                    'stage3' => 'behind',
+                                    'stage4' => 'behind',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'Every few years',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'inline',
+                                    'stage2' => 'inline',
+                                    'stage3' => 'behind',
+                                    'stage4' => 'behind',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'Every year',
                                 'value'=>2,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'inline',
+                                    'stage3' => 'behind',
+                                    'stage4' => 'behind',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'Every 6 months',
                                 'value'=>2,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'inline',
+                                    'stage4' => 'behind',
+                                    'stage5' => 'behind',
+                                ]
                             ),
                             array(
                                 'label'=>'Every quarter',
                                 'value'=>3,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'ahead',
+                                    'stage4' => 'inline',
+                                    'stage5' => 'inline',
+                                ]
                             ),
                             array(
                                 'label'=>'Monthly',
                                 'value'=>3,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'ahead',
+                                    'stage4' => 'ahead',
+                                    'stage5' => 'inline',
+                                ]
                             ),
                             array(
                                 'label'=>'Weekly',
                                 'value'=>4,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'ahead',
+                                    'stage4' => 'ahead',
+                                    'stage5' => 'inline',
+                                ]
                             ),
                             array(
                                 'label'=>'Continuously',
                                 'value'=>5,
-                                'checked'=>false
+                                'checked'=>false,
+                                'position' => [
+                                    'stage1' => 'ahead',
+                                    'stage2' => 'ahead',
+                                    'stage3' => 'ahead',
+                                    'stage4' => 'ahead',
+                                    'stage5' => 'ahead',
+                                ]
                             )
                         )
                     )

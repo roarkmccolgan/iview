@@ -320,4 +320,5 @@ Complete the IDC Cyber Risk Assessment Tool to find out more about how ready you
     'errorRelationship'=>'Please select Relationship Type',
     'errorQualification'=>'Please select Partner Type',
     'errorAccept'=>'Please accept the Terms &amp; Conditions',
+    'ranking'=>'Ranking'
 );

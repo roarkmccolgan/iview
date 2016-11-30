@@ -25,8 +25,9 @@ return array(
             'color'=>'#d92435',
             'pageimage'=>false,
             'extra-graphs'=>[
-                'country-france'=>[
+                'country'=>[
                     'title'=>true,
+                    'question'=>'s1',
                     'columns' => [
                         [
                             'type'=>'string',
@@ -55,8 +56,9 @@ return array(
                     ],
                     'data' => 'benchmark-country'
                 ],
-                'size-1000'=>[
+                'size'=>[
                     'title'=>true,
+                    'question'=>'s1',
                     'columns' => [
                         [
                             'type'=>'string',
@@ -90,48 +92,53 @@ return array(
         'types' => array(
             'stage1' => array(
                 'low' => 0,
-                'high' => 20.9,
+                'high' => 23.3,
                 'copy' => 'general.timetoacttxt',
                 'tweet' => 'general.timetoacttweet',
                 'benchmark' => 2,
                 'benchmark-country' => 35,
                 'benchmark-size' => 30,
+                'position' => 'behind'
             ),
             'stage2' => array(
-                'low' => 21,
-                'high' => 40.9,
+                'low' => 23.4,
+                'high' => 46.7,
                 'copy' => 'general.timetocommitetxt',
                 'tweet' => 'general.timetocommittweet',
                 'benchmark' => 22,
                 'benchmark-country' => 5,
                 'benchmark-size' => 10,
+                'position' => 'behind'
             ),
             'stage3' => array(
-                'low' => 41,
-                'high' => 50.9,
+                'low' => 46.8,
+                'high' => 70.1,
                 'copy' => 'general.timetoinvesttxt',
                 'tweet' => 'general.timetoinvesttweet',
                 'benchmark' => 48,
                 'benchmark-country' => 30,
                 'benchmark-size' => 8,
+                'position' => 'inline'
             ),
             'stage4' => array(
-                'low' => 61,
-                'high' => 80.9,
+                'low' => 70.2,
+                'high' => 93.5,
                 'copy' => 'general.timetorefinetxt',
                 'tweet' => 'general.timetorefinetweet',
                 'benchmark' =>  24,
                 'benchmark-country' => 20,
                 'benchmark-size' => 40,
+                'position' => 'ahead'
             ),
             'stage5' => array(
-                'low' => 81,
-                'high' => 100,
+                'low' => 93.6,
+                'high' => 117,
                 'copy' => 'general.timetoacceleratetxt',
                 'tweet' => 'general.timetoacceleratetweet',
                 'benchmark' => 5,
                 'benchmark-country' => 10,
                 'benchmark-size' => 6,
+                'position' => 'ahead'
             )
         )
     ),
@@ -148,34 +155,39 @@ return array(
         'baseline' => 15.363,
         'types' => array(
             'stage1' => array(
-                'low' => 0,
-                'high' => 4.92,
+                'low' => 7,
+                'high' => 12.5,
                 'total' => 2,
                 'benchmark' => 2,
+                'position' => 'behind'
             ),
             'stage2' => array(
-                'low' => 5,
-                'high' => 8.9,
+                'low' => 12.6,
+                'high' => 18.1,
                 'total' => 3,
                 'benchmark' => 2,
+                'position' => 'behind'
             ),
             'stage3' => array(
-                'low' => 9,
-                'high' => 12.9,
+                'low' => 18.2,
+                'high' => 23.7,
                 'total' => 5,
                 'benchmark' => 2,
+                'position' => 'behind'
             ),
             'stage4' => array(
-                'low' => 13,
-                'high' => 16.9,
+                'low' => 23.8,
+                'high' => 29.3,
                 'total' => 5,
                 'benchmark' => 2,
+                'position' => 'inline'
             ),
             'stage5' => array(
-                'low' => 17,
-                'high' => 20,
+                'low' => 29.4,
+                'high' => 35,
                 'total' => 5,
                 'benchmark' => 2,
+                'position' => 'ahead'
             )
         )
     ),
@@ -192,34 +204,39 @@ return array(
         'baseline' => 15.363,
         'types' => array(
             'stage1' => array(
-                'low' => 0,
-                'high' => 4.92,
+                'low' => 9,
+                'high' => 16.1,
                 'total' => 2,
                 'benchmark' => 2,
+                'position' => 'behind'
             ),
             'stage2' => array(
-                'low' => 5,
-                'high' => 8.9,
+                'low' => 16.2,
+                'high' => 23.3,
                 'total' => 3,
                 'benchmark' => 2,
+                'position' => 'inline'
             ),
             'stage3' => array(
-                'low' => 9,
-                'high' => 12.9,
+                'low' => 23.4,
+                'high' => 30.5,
                 'total' => 5,
                 'benchmark' => 2,
+                'position' => 'inline'
             ),
             'stage4' => array(
-                'low' => 13,
-                'high' => 16.9,
+                'low' => 30.6,
+                'high' => 37.7,
                 'total' => 5,
                 'benchmark' => 2,
+                'position' => 'ahead'
             ),
             'stage5' => array(
-                'low' => 17,
+                'low' => 37.8,
                 'high' => 20,
                 'total' => 5,
                 'benchmark' => 2,
+                'position' => 'ahead'
             )
         )
     ),
@@ -237,33 +254,38 @@ return array(
         'types' => array(
             'stage1' => array(
                 'low' => 0,
-                'high' => 4.92,
+                'high' => 6.9,
                 'total' => 2,
                 'benchmark' => 2,
+                'position' => 'inline'
             ),
             'stage2' => array(
-                'low' => 5,
-                'high' => 8.9,
+                'low' => 7,
+                'high' => 13.9,
                 'total' => 3,
                 'benchmark' => 2,
+                'position' => 'inline'
             ),
             'stage3' => array(
-                'low' => 9,
-                'high' => 12.9,
+                'low' => 14,
+                'high' => 20.9,
                 'total' => 5,
                 'benchmark' => 2,
+                'position' => 'ahead'
             ),
             'stage4' => array(
-                'low' => 13,
-                'high' => 16.9,
+                'low' => 21,
+                'high' => 27.9,
                 'total' => 5,
                 'benchmark' => 2,
+                'position' => 'ahead'
             ),
             'stage5' => array(
-                'low' => 17,
-                'high' => 20,
+                'low' => 28,
+                'high' => 35,
                 'total' => 5,
                 'benchmark' => 2,
+                'position' => 'ahead'
             )
         )
     )

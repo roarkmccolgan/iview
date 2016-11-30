@@ -161,6 +161,7 @@ class PdfController extends Controller
 		}
 		$vars['introImage'] = Lang::has(session('product.alias').'.introduction-image') ? trans(session('product.alias').'.introduction-image') : false;
 		$vars['introRating'] = trans(session('product.alias').'.'.session('result.overall.rating'));
+		$vars['questions'] = session('questions');
 
 		//return $vars['sections'];
 		//return view('tool.'.session('template').'.report.report',$vars);
