@@ -9,8 +9,7 @@
 		<link rel="stylesheet" href="{{session('url')}}/css/templates/normalize.css">
 		<link rel="stylesheet" href="{{session('url')}}/css/templates/{{session('template')}}/report_{{session('product.id')}}.css">
 	</head>
-	<body style="margin: 0; padding: 0;">
-		<div class="spacer"></div>
+	<body>
 		<div class="introduction">
 			<h2>{!!trans(session('product.alias').'.introduction_title')!!}</h2>
 			{!!trans(session('product.alias').'.introduction')!!}
@@ -49,7 +48,7 @@
 		<!-- END GRAPH PAGE -->
 		<!-- Overall PAGE -->
 		@if($introImage)
-		<table class="" style="width: 100%;" cellpadding="0" cellspacing="0">
+		<table class="" style="width: 100%;margin-top: -{{config('baseline_'.session('product.id').'.margin-top')}}mm" cellpadding="0" cellspacing="0">
 			<tr>
 				<td colspan="2"><img src="{{session('url')}}/images/tools/{{session('product.id')}}/{{$introImage}}" style="display: block; width: 100%;"></td>
 			</tr>
@@ -58,7 +57,7 @@
 		@foreach($sections as $key=>$section)
 			<div class="section group {{$section['seckey']}}" style="">
 			@if($section['seckey']=='overall')
-				<h2>{{$section['title']}}</h2>
+				<h2>Performance Ranking By Category</h2>
 			@else
 				<h2 class="{{$section['seckey']}} lower">{{$section['title']}}</h2>
 				<table style="width: 100%; margin-top: 4mm" cellpadding="1" cellspacing="0">
@@ -73,49 +72,254 @@
 					</tr>
 					<tr>
 						<td style="vertical-align: top">
-							<!-- {!!$section['paragraph']!!} -->
+							{!!trans(session('product.alias').'.'.$section['seckey'].'.'.config('baseline_'.session('product.id').'.'.$section['seckey'].'.types.'.session('result.'.$section['seckey'].'.rating').'.position'))!!}
 						</td>
 					</tr>
 				</table>
 			@endif
 			</div>
 		@endforeach
-		<div class="pb"></div>
 		<!-- END Overall PAGE -->
 		<!-- Questions PAGEs -->
-		<div class="spacer"></div>
 		@foreach($sections as $key=>$section)
+			@if($section['seckey']!=='overall')
 			<div class="question_section group" style="">
-				<h2>{{trans(session('product.alias').'.question-title')}}</h2>
+				<h2>{{$section['title']}} {{trans(session('product.alias').'.question-title')}}</h2>
 				<div class="spacer"></div>
 				{!!trans(session('product.alias').'.question-intro',['rating'=>$introRating])!!}
-			@foreach($questions as $catKey=>$category)
-				@if($catKey!=='screeners')
-					@foreach($category['pages'] as $pageKey=>$page)
+			@foreach($questions[$section['seckey']]['pages'] as $pageKey=>$page)
+					
 						@foreach($page['questions'] as $qkey=>$question)
-							@if(!is_array($question['selected']))
 							<?php
-								$answerArr = explode('|', $question['selected']);
-	                            $answer = $answerArr[0];
-	                            $selected = $answerArr[1];
-	                            $saveOptKey = false;
-	                            foreach ($question['options'] as $optkey => $option) {
-	                            	if($answer==$option['label']){
-	                            		$position = $option['position'][session('result.'.$catKey.'.rating')];
-	                            		$saveOptKey = $optkey;
-	                            	}
-	                            }
-	                            $compare = "";
-	                            $sectionRating = session('result.'.$catKey.'.rating');
-	                            if($sectionRating!=='stage5'){
-	                            	$ratings = config('baseline_'.session('product.id').'.'.$catKey.'.types');
-	                            	while (key($ratings) !== $sectionRating){
-	                            		next($ratings);
-	                            	}
-	                            	next($ratings);
-	                            	$nextRating = key($ratings);
-	                            	$compare = "When compared with the next level, ".$nextRating." you would be positioned as ".$question['options'][$saveOptKey]['position'][$nextRating];
-	                            }
+								if(is_array($question['selected'])){
+									if(isset($question['calc'])){
+	                                    if($question['calc']['type']=='average'){
+	                                    	$minmax = [
+												'stage1'=>[
+		                                    		'behind' => [
+		                                    			'low' => 0,
+		                                    			'high' => 2,
+		                                    		],
+		                                    		'inline' => [
+		                                    			'low' => 2.1,
+		                                    			'high' => 2.6,
+		                                    		],
+		                                    		'ahead' => [
+		                                    			'low' => 2.7,
+		                                    			'high' => 5,
+		                                    		]
+		                                    	],
+		                                    	'stage2'=>[
+		                                    		'behind' => [
+		                                    			'low' => 0,
+		                                    			'high' => 2.2,
+		                                    		],
+		                                    		'inline' => [
+		                                    			'low' => 2.3,
+		                                    			'high' => 2.7,
+		                                    		],
+		                                    		'ahead' => [
+		                                    			'low' => 2.8,
+		                                    			'high' => 5,
+		                                    		]
+		                                    	],
+		                                    	'stage3'=>[
+		                                    		'behind' => [
+		                                    			'low' => 0,
+		                                    			'high' => 2.8,
+		                                    		],
+		                                    		'inline' => [
+		                                    			'low' => 2.9,
+		                                    			'high' => 3.6,
+		                                    		],
+		                                    		'ahead' => [
+		                                    			'low' => 3.7,
+		                                    			'high' => 5,
+		                                    		]
+		                                    	],
+		                                    	'stage4'=>[
+		                                    		'behind' => [
+		                                    			'low' => 0,
+		                                    			'high' => 3.6,
+		                                    		],
+		                                    		'inline' => [
+		                                    			'low' => 3.7,
+		                                    			'high' => 4.2,
+		                                    		],
+		                                    		'ahead' => [
+		                                    			'low' => 4.3,
+		                                    			'high' => 5,
+		                                    		]
+		                                    	],
+		                                    	'stage5'=>[
+		                                    		'behind' => [
+		                                    			'low' => 0,
+		                                    			'high' => 3.9,
+		                                    		],
+		                                    		'inline' => [
+		                                    			'low' => 4,
+		                                    			'high' => 4.5,
+		                                    		],
+		                                    		'ahead' => [
+		                                    			'low' => 4.6,
+		                                    			'high' => 5,
+		                                    		]
+		                                    	]
+	                                    	];
+	                                        $ave = [];
+	                                        foreach ($question['selected'] as $selected) {
+	                                            $selected = explode('|', $selected);
+	                                            $selected = $selected[1];
+	                                            $ave[]=$selected;
+	                                        }
+	                                        $val = round(array_sum($ave) / count($ave),1);
+	                                        $position = '';
+
+	                                        foreach ($minmax[session('result.'.$section['seckey'].'.rating')] as $posKey => $params) {
+	                                        	if($val>=$params['low'] && $val<=$params['high']){
+	                                        		$position = $posKey;
+	                                        		$saveOptKey = $posKey;
+	                                        	}
+	                                        }
+
+	                                    }elseif($question['calc']['type']=='normalize'){
+	                                    	$minmax = [
+												'stage1'=>[
+		                                    		'behind' => [
+		                                    			'low' => 0,
+		                                    			'high' => 2,
+		                                    		],
+		                                    		'inline' => [
+		                                    			'low' => 2.1,
+		                                    			'high' => 2.6,
+		                                    		],
+		                                    		'ahead' => [
+		                                    			'low' => 2.7,
+		                                    			'high' => 5,
+		                                    		]
+		                                    	],
+		                                    	'stage2'=>[
+		                                    		'behind' => [
+		                                    			'low' => 0,
+		                                    			'high' =>2.8,
+		                                    		],
+		                                    		'inline' => [
+		                                    			'low' => 2.9,
+		                                    			'high' => 3.5,
+		                                    		],
+		                                    		'ahead' => [
+		                                    			'low' => 3.6,
+		                                    			'high' => 5,
+		                                    		]
+		                                    	],
+		                                    	'stage3'=>[
+		                                    		'behind' => [
+		                                    			'low' => 0,
+		                                    			'high' => 3.3,
+		                                    		],
+		                                    		'inline' => [
+		                                    			'low' => 3.4,
+		                                    			'high' => 3.9,
+		                                    		],
+		                                    		'ahead' => [
+		                                    			'low' => 4,
+		                                    			'high' => 5,
+		                                    		]
+		                                    	],
+		                                    	'stage4'=>[
+		                                    		'behind' => [
+		                                    			'low' => 0,
+		                                    			'high' => 3.6,
+		                                    		],
+		                                    		'inline' => [
+		                                    			'low' => 3.7,
+		                                    			'high' => 4.2,
+		                                    		],
+		                                    		'ahead' => [
+		                                    			'low' => 4.3,
+		                                    			'high' => 5,
+		                                    		]
+		                                    	],
+		                                    	'stage5'=>[
+		                                    		'behind' => [
+		                                    			'low' => 0,
+		                                    			'high' => 3.9,
+		                                    		],
+		                                    		'inline' => [
+		                                    			'low' => 4,
+		                                    			'high' => 4.4,
+		                                    		],
+		                                    		'ahead' => [
+		                                    			'low' => 4.5,
+		                                    			'high' => 5,
+		                                    		]
+		                                    	]
+	                                    	];
+	                                        $norm = 0;
+	                                        foreach ($question['selected'] as $selected) {
+	                                            $selected = explode('|', $selected);
+	                                            $selected = $selected[1];
+	                                            $norm+=$selected;
+	                                        }
+	                                        $val = round(($norm/$question['calc']['value'])*count($question['selected']),1);
+	                                        $position = '';
+
+	                                        foreach ($minmax[session('result.'.$section['seckey'].'.rating')] as $posKey => $params) {
+	                                        	if($val>=$params['low'] && $val<=$params['high']){
+	                                        		$position = $posKey;
+	                                        		$saveOptKey = $posKey;
+	                                        	}
+	                                        }
+	                                    }
+	                                }else{
+	                                    $valHold = 0;
+	                                    foreach ($question['selected'] as $selected) {
+	                                        $selected = explode('|', $selected);
+	                                        $selected = $selected[1];
+	                                        $valHold+=$selected;
+	                                    }
+	                                    $val = $valHold;
+	                                }
+	                                $compare = "";
+		                            $sectionRating = session('result.'.$section['seckey'].'.rating');
+		                            if($sectionRating!=='stage5'){
+		                            	$ratings = config('baseline_'.session('product.id').'.'.$section['seckey'].'.types');
+		                            	while (key($ratings) !== $sectionRating){
+		                            		next($ratings);
+		                            	}
+		                            	next($ratings);
+		                            	$nextRating = key($ratings);
+		                            	foreach ($minmax[$nextRating] as $ratKey => $rating) {
+		                            		if($val>=$rating['low'] && $val<=$rating['high']){
+		                            			$nextPos = $ratKey;
+		                            		}
+		                            	}
+		                            	$compare = "When compared with the next level, <strong>".$nextRating."</strong> you would be positioned as <span class=\"".$nextPos."\">".$nextPos."</span>";
+		                            }
+								}else{
+									$answerArr = explode('|', $question['selected']);
+		                            $answer = $answerArr[0];
+		                            $selected = $answerArr[1];
+		                            $saveOptKey = false;
+		                            foreach ($question['options'] as $optkey => $option) {
+		                            	if($answer==$option['label']){
+		                            		$position = $option['position'][session('result.'.$section['seckey'].'.rating')];
+		                            		$saveOptKey = $optkey;
+		                            	}
+		                            }
+		                        
+		                            $compare = "";
+		                            $sectionRating = session('result.'.$section['seckey'].'.rating');
+		                            if($sectionRating!=='stage5'){
+		                            	$ratings = config('baseline_'.session('product.id').'.'.$section['seckey'].'.types');
+		                            	while (key($ratings) !== $sectionRating){
+		                            		next($ratings);
+		                            	}
+		                            	next($ratings);
+		                            	$nextRating = key($ratings);
+		                            	$compare = "When compared with the next level, <strong>".trans(session('product.alias').'.'.$nextRating)."</strong> you would be positioned as <span class=\"".$question['options'][$saveOptKey]['position'][$nextRating]."\">".$question['options'][$saveOptKey]['position'][$nextRating]."</span>";
+		                            }
+		                        }
 							?>
 							<div class="question group" style="">
 								<table style="width: 100%; margin-top: 4mm" cellpadding="1" cellspacing="0">
@@ -131,21 +335,63 @@
 									<tr>
 										<td style="vertical-align: top">
 											<span class="answer-label">A:</span>
-											<span class="answer">{{$answer}}</span>
+											@if(is_array($question['selected']))
+												<table>
+												<?php $count=0; ?>
+												<tr>
+												@foreach($question['selected'] as $selKey=>$sel)
+													<?php
+													$selected = explode('|', $sel);
+	                                            	$answer = $selected[0];
+													?>
+													@foreach($question['options'] as $groupKey=>$group)
+														@foreach($group['options'] as $optkey=>$opt)
+															@if($group['name']==$selKey && $opt['label']==$answer)
+																<?php $count++; ?>
+																<td style="vertical-align: top">
+																	<table class="grouptable">
+																		<tr>
+																			<td style="vertical-align: top; width: 3mm">
+																				<img src="{{session('url')}}/images/tools/{{session('product.id')}}/{{$opt['position'][session('result.'.$section['seckey'].'.rating')]}}_sml.png" style="width: 3mm">
+																			</td>
+																			<td>
+																				{{$group['label']}}<br/>
+																				<span class="answer">{{$answer}}</span>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+																@if($count%3==0)
+													</tr>
+													</tr>
+													@endif
+															@endif
+														@endforeach
+													@endforeach
+												@endforeach
+												</table>
+											@else
+												<span class="answer">
+												{{$answer}}
+												</span>
+											@endif
 										</td>
 									</tr>
 									<tr>
 										<td style="vertical-align: top" class="compare">
-											{{$compare}}
+											{!!$compare!!}
+										</td>
+									</tr>
+									<tr>
+										<td style="vertical-align: top" colspan="2">
+											{!!trans(session('product.alias').'.questions.'.$qkey.'.'.$position)!!}
 										</td>
 									</tr>
 								</table>
 							</div>
-							@endif
 						@endforeach
-					@endforeach
-				@endif
 			@endforeach
+			@endif
 			</div>
 		@endforeach
 		<!-- END questions PAGE -->

@@ -348,7 +348,8 @@
                                                         <em>* {!!trans('general.required')!!}</em>
                                                     </div>
                                                     <div class="col-xs-12">
-                                                        <a class="btn btn-lg btn-danger pull-right {{$btnclass}}" href="download"><i class="icon-email"></i> {!!trans('general.emailreport')!!}</a>
+                                                        <!-- <a class="btn btn-lg btn-danger pull-right {{$btnclass}}" href="download"><i class="icon-email"></i> {!!trans('general.emailreport')!!}</a> -->
+                                                        <button type="submit" class="btn btn-lg btn-danger pull-right {{$btnclass}}"><i class="icon-email"></i> {!!trans('general.emailreport')!!}</button>
                                                     </div>
                                                 </fieldset>
                                             {{ Form::close() }}

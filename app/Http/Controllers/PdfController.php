@@ -126,7 +126,16 @@ class PdfController extends Controller
 			        }
 					
 					foreach (config('baseline_'.session('product.id').'.overall.types') as $extraSection => $extraSettings) {
-						$val = $extraSettings[$graph['data']];
+						foreach (session('questions.'.$graph['question']['section'].'.pages') as $pKey => $page) {
+							foreach ($page['questions'] as $qKey => $question) {
+								if($qKey==$graph['question']['question']){
+									$selected = explode('|', $question['selected']);
+	                                $userAnswer = $selected[0];
+	                                $userAnswer = strtolower(str_replace(" ", "-", $userAnswer));
+								}
+							}
+						}
+						$val = $extraSettings[$graph['data']][$userAnswer];
 					    $extraGraph->addRow([
 					      trans(session('product.alias').'.'.$extraSection),//$extraSection
 					      $val,
@@ -164,16 +173,26 @@ class PdfController extends Controller
 		$vars['questions'] = session('questions');
 
 		//return $vars['sections'];
+		/*echo "<pre>";
+		dd(session('questions'));*/
 		//return view('tool.'.session('template').'.report.report',$vars);
+		$margintop = 25;
+		if(null !== config('baseline_'.session('product.id').'.overall.report-settings.margin-top')){
+			$margintop = config('baseline_'.session('product.id').'.overall.report-settings.margin-top');
+		}
+		$headerspacing = 0;
+		if(null !== config('baseline_'.session('product.id').'.overall.report-settings.header-spacing')){
+			$headerspacing = config('baseline_'.session('product.id').'.overall.report-settings.header-spacing');
+		}
 
         $pdf = PDF::loadView('tool.'.session('template').'.report.report',$vars)
-        	->setOption('margin-top', 25)
+        	->setOption('margin-top', $margintop)
         	->setOption('margin-left', 0)
         	->setOption('margin-right', 0)
         	->setOption('window-status','chartrendered')
-        	->setOption('header-html',config('baseline_'.session('product.id').'.overall.report-settings.header') ? session('url').'/'.session('localeUrl').'template/'.session('template').'/report/header':null)
-        	->setOption('header-spacing',0)
-        	->setOption('footer-html',config('baseline_'.session('product.id').'.overall.report-settings.footer') ? session('url').'/'.session('localeUrl').'template/'.session('template').'/report/footer':null)
+        	->setOption('header-html',session('url').'/'.session('localeUrl').'template/'.session('template').'/report/header')
+        	->setOption('header-spacing',$headerspacing)
+        	->setOption('footer-html',session('url').'/'.session('localeUrl').'template/'.session('template').'/report/footer')
         	->setOption('footer-spacing',2)
         	->setOption('replace', $headervars);
 		return $pdf->inline('invoice.pdf');

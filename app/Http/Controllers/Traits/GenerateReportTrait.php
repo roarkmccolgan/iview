@@ -90,7 +90,7 @@ trait GenerateReportTrait {
 				foreach ($values['types'] as $stage => $params) {
 					$val = $params['benchmark'];
 				    $sectionGraph->addRow([
-				      /*trans(session('product.alias').'.'.$stage)*/$stage,
+				      trans(session('product.alias').'.'.$stage),//$stage
 				      $val,
 				      session('result.'.$section.'.rating')==$stage? config('baseline_'.session('product.id').'.'.$section.'.report-settings.color'):null,
 				      $val."%"
@@ -105,11 +105,12 @@ trait GenerateReportTrait {
 					$extraGraph = Lava::DataTable();
 					$graphCols = [];
 					foreach ($graph['columns'] as $colKey => $col) {
-						if($col['format']){
-							$format = Lava::NumberFormat($col['format']['format']);
+						if(isset($col['format'])){
+							$format = Lava::$col['format']['type']($col['format']['format']);
 						}
 						$graphCols[] = [$col['type'],$col['label'], isset($col['format']) ? $format:null];
 					}
+					//dd();
 					$extraGraph->addColumns($graphCols);
 
 			        if($graph['role-columns']){
@@ -118,17 +119,26 @@ trait GenerateReportTrait {
 						}
 			        }
 					
-					foreach ($graph['data'] as $paramKey => $param) {
-						
+					foreach (config('baseline_'.session('product.id').'.overall.types') as $extraSection => $extraSettings) {
+						foreach (session('questions.'.$graph['question']['section'].'.pages') as $pKey => $page) {
+							foreach ($page['questions'] as $qKey => $question) {
+								if($qKey==$graph['question']['question']){
+									$selected = explode('|', $question['selected']);
+	                                $userAnswer = $selected[0];
+	                                $userAnswer = strtolower(str_replace(" ", "-", $userAnswer));
+								}
+							}
+						}
+						$val = $extraSettings[$graph['data']][$userAnswer];
 					    $extraGraph->addRow([
-					      /*trans(session('product.alias').'.'.$stage)*/$stage,
-					      $param,
-					      session('result.'.$section.'.rating')==$paramKey? config('baseline_'.session('product.id').'.'.$section.'.color'):null,
-					      $param."%"
+					      trans(session('product.alias').'.'.$extraSection),//$extraSection
+					      $val,
+					      session('result.'.$section.'.rating')==$extraSection? config('baseline_'.session('product.id').'.'.$section.'.report-settings.color'):null,
+					      $val."%"
 					    ]);
 					}
 					
-					$extraChart[] = Lava::ColumnChart($section.'_'.$key.'_graph', $extraGraph, $chartSettings);
+					$extraChart[$section.'_'.$key.'_graph'] = Lava::ColumnChart($section.'_'.$key.'_graph', $extraGraph, $chartSettings);
 				}
 			}
 			$vars['sections'][] = [
@@ -140,6 +150,8 @@ trait GenerateReportTrait {
 				'color' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.color'),
 				'designline' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.designline'),
 				'graph' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.graph'),
+				'graph-title' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.graph-title'),
+				'extraCharts' => !empty($extraChart) ? $extraChart: false,
 				'pb' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.pb'),
 				'rating' => trans(session('product.alias').'.'.session('result.'.$section.'.rating')),
 				'score' => session('result.'.$section.'.score'),
@@ -150,23 +162,46 @@ trait GenerateReportTrait {
 			$headervars['page_offest'] = 1;
 			$count++;
 		}
-		$vars['introImage'] = Lang::has(session('product.alias').'.introduction-image') ? trans(session('product.alias').'.introduction-image'):false;
+		$vars['introImage'] = Lang::has(session('product.alias').'.introduction-image') ? trans(session('product.alias').'.introduction-image') : false;
 		$vars['introRating'] = trans(session('product.alias').'.'.session('result.overall.rating'));
+		$vars['questions'] = session('questions');
 
 		//return $vars['sections'];
-		//return view('tool.default.report.report',$vars);
+		/*echo "<pre>";
+		dd(session('questions'));*/
+		//return view('tool.'.session('template').'.report.report',$vars);
+		$margintop = 25;
+		if(null !== config('baseline_'.session('product.id').'.overall.report-settings.margin-top')){
+			$margintop = config('baseline_'.session('product.id').'.overall.report-settings.margin-top');
+		}
+		$headerspacing = 0;
+		if(null !== config('baseline_'.session('product.id').'.overall.report-settings.header-spacing')){
+			$headerspacing = config('baseline_'.session('product.id').'.overall.report-settings.header-spacing');
+		}
 
-        $pdf = PDF::loadView('tool.default.report.report',$vars)
-        	->setOption('margin-top', 25)
+        $pdf = PDF::loadView('tool.'.session('template').'.report.report',$vars)
+        	->setOption('margin-top', $margintop)
         	->setOption('margin-left', 0)
         	->setOption('margin-right', 0)
         	->setOption('window-status','chartrendered')
-        	->setOption('header-html',session('url').'/'.session('localeUrl').'template/default/report/header')
-        	->setOption('header-spacing',0)
-        	->setOption('footer-html',session('url').'/'.session('localeUrl').'template/default/report/footer')
+        	->setOption('header-html',session('url').'/'.session('localeUrl').'template/'.session('template').'/report/header')
+        	->setOption('header-spacing',$headerspacing)
+        	->setOption('footer-html',session('url').'/'.session('localeUrl').'template/'.session('template').'/report/footer')
         	->setOption('footer-spacing',2)
         	->setOption('replace', $headervars);
+        if(session('product.id')==2){
+        	$pdf->save(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
 
-		return $pdf->save(storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf');
+			$merge = new \LynX39\LaraPdfMerger\PDFManage;
+
+			$merge->addPDF(storage_path().'/fireeye_report_start.pdf', 'all');
+			$merge->addPDF(storage_path().'/'.$assessment_id.'_'.$name.'.pdf', 'all');
+			$merge->addPDF(storage_path().'/fireeye_report_end.pdf', 'all');
+
+			$merge->merge('file', storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf', 'P');
+		}else{
+			return $pdf->save(storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf');
+		}
+
     }
 }

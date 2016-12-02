@@ -127,13 +127,35 @@ span.ranking{
 	color: #003F7D;
 	text-transform: uppercase;
 }
-
+table, tr, td, th, tbody, thead, tfoot {
+    page-break-inside: avoid !important;
+}
 .question_section{
+	page-break-before: always;
 	position: relative;
 	margin: 10mm;
 	margin-top: 0mm;
 	font-size: 10pt;
 	line-height: 13pt;
+	font-size: 90%;
+}
+.grouptable{
+	
+}
+span.behind, span.inline, span.ahead{
+	text-transform: capitalize;
+}
+span.behind{
+	color:#E54F3B;
+	font-weight: bold;
+}
+span.inline{
+	color:#ddca18;
+	font-weight: bold;
+}
+span.ahead{
+	color:#42B549;
+	font-weight: bold;
 }
 span.question-label{
 	font-weight: 100;

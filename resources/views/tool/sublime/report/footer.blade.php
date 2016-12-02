@@ -13,11 +13,11 @@
 		
 	</style>
 	<body style="margin: 0; padding: 0;">
-		<table class="footer" style="width: 100%; height: 10mm; color: white; background-color: #4E4D5D " cellpadding="0" cellspacing="0">
+		<table class="footer" style="width: 100%; height: 15mm; color: white; background-color: #4E4D5D " cellpadding="0" cellspacing="0">
 			<tr>
-				<td style="width: 70%; padding-right: 2%; text-align: right">{{trans('general.'.app('request')->input('tool_id').'assoc')}}</td>
-				<td style="width: 28%;">
-					<img width="160" src="/css/{{ app('request')->input('company_alias') }}/png/{{ app('request')->input('company_alias') }}.png" alt="">
+				<td style="width: 60%; padding-right: 2%; text-align: right">{{trans('general.'.app('request')->input('tool_id').'assoc')}}</td>
+				<td style="width: 38%;">
+					<img width="280" src="/css/{{ app('request')->input('company_alias') }}/png/{{ app('request')->input('company_alias') }}.png" alt="">
 				</td>
 			</tr>
 		</table>
