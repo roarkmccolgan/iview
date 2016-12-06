@@ -265,7 +265,7 @@ Complete the IDC Cyber Risk Assessment Tool to find out more about how ready you
     '3send'=>'We can send you the full results directly to your mailbox',
     '3fullreport'=>'For the full custom report with essential guidance in taking your cloud business to the next level, fill in a few details and we\'ll send you a link to download it.',
     '3provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
-    '3byreg'=>'By registering with IDC, you accept our <a href="/privacy" target="_blank">Privacy Policy</a> and <a href="https://www.redhat.com/en/about/privacy-policy" target="_blank">Redhat Privacy Policy</a> The information we collect will be shared with Redhat for the purpose of direct marketing',
+    '3byreg'=>'By registering with IDC, you accept our <a href="/privacy" target="_blank">Privacy Policy</a> and <a href="https://www.redhat.com/en/about/privacy-policy" target="_blank">Red Hat Privacy Policy</a> The information we collect will be shared with Red Hat for the purpose of direct marketing',
     '3wait'=>'While you\'re waiting why not tweet your results and see how your colleagues measure up?',
 
     //general

@@ -337,7 +337,7 @@
                             </div>
                             <div class="col-md-6 form-group{{$errors->has('phone')?' error':''}}">
                                 <label>{!!trans('general.phone')!!}</label>
-                                <input class="form-control req" type="text" value="{{$source['C_BusPhone']?$source['C_BusPhone']:''}}" name="phone">
+                                <input class="form-control" type="text" value="{{$source['C_BusPhone']?$source['C_BusPhone']:''}}" name="phone">
                                 <span>{!!trans('general.errorNumber')!!}</span>
                             </div>
                             <div class="col-md-12 checkbox form-group{{$errors->has('accept')?' error':''}}">
