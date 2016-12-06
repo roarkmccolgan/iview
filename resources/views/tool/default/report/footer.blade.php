@@ -13,7 +13,7 @@
 		
 	</style>
 	<body style="margin: 0; padding: 0;">
-		<table class="footer" style="width: 100%; height: 10mm; color: grey; " cellpadding="0" cellspacing="0">
+		<table class="footer" style="width: 100%; height: 13mm; color: grey; " cellpadding="0" cellspacing="0">
 			<tr>
 				<td style="width: 78%; padding-right: 2%; text-align: right">{{trans('general.'.app('request')->input('tool_id').'assoc')}}</td>
 				<td style="width: 20%;">

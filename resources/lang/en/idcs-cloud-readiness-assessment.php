@@ -107,6 +107,7 @@ While you\'re waiting why not tweet your results and see how your followers meas
                 <li>Cloud is not an established part of your portfolio</li>
                 <li>You are struggling to generate revenue</li>
             </ul>
+            <img src="http://redhat.idcready.net/images/tools/3/cloud-vision-and-strategy.jpg" class="right">
             <p>
                 Cloud service providers at this stage in their cloud strategy maturity do not have a defined plan or financial target for cloud. In most cases they are reacting on a piecemeal basis to demand for cloud from their existing customer base and as such do not have established measures in place for cloud success. Cloud either isn\'t a part of the wider business portfolio, or is merely of a subset of other business resources. Service providers at this stage in their cloud strategy are yet to fully embrace a cloud future and as a result may struggle to generate profits in this area.
             </p>
@@ -122,6 +123,7 @@ While you\'re waiting why not tweet your results and see how your followers meas
                 <li>Focus is on recurring revenue growth</li>
                 <li>Cloud business is run as a separate product line</li>
             </ul>
+            <img src="http://redhat.idcready.net/images/tools/3/cloud-vision-and-strategy.jpg" class="right">
             <p>
                 Cloud service providers at this stage in their maturity are in the process of building a defined cloud strategy. For many, however, this remains focused on private cloud solutions, predominantly on-premise. Typically, service providers at this stage are yet to define a longer-term investment plan for cloud, but have focused the business on recurring revenue growth goals, even if this is without separate targets for cloud. Structurally, the cloud business runs as a separate product line and is managed as such. Cloud revenue targets do exist, but these tend to be "soft."
             </p>
@@ -137,6 +139,7 @@ While you\'re waiting why not tweet your results and see how your followers meas
                 <li>Cloud business operates its own P&L</li>
                 <li>Sales hold fixed top-line cloud targets</li>
             </ul>
+            <img src="http://redhat.idcready.net/images/tools/3/cloud-vision-and-strategy.jpg" class="right">
             <p>
                 Cloud service providers at this stage of their cloud maturity are building a defined strategy including private and public cloud solutions. As a result, they have also created a clear cloud business plan, with dedicated targets for the next two to three years. They are also operating their cloud business within a specific P&L structure, also incorporating cloud-specific metrics and KPIs to measure performance in this area. To support this, sales personnel carry fixed top-line targets for cloud. 
             </p>
@@ -155,6 +158,7 @@ While you\'re waiting why not tweet your results and see how your followers meas
                 <li>Focus has turned to longer-term profitability</li>
                 <li>Dedicated presales, sales, and support for cloud</li>
             </ul>
+            <img src="http://redhat.idcready.net/images/tools/3/cloud-vision-and-strategy.jpg" class="right">
             <p>
                 Cloud service providers at this stage of maturity have a defined and established cloud strategy in place and a firm idea of where this is taking the business. Cloud has become core to the business and forms the basis of overall investment decisions and forward planning. Services are priced on the basis of recurring revenues, but more importantly on the lifetime value of the customer. As a result, processes are in place to reduce churn and drive cloud profitability longer term. Dedicated presales, sales, and support functions deliver cloud solutions.
             </p>
@@ -173,6 +177,7 @@ While you\'re waiting why not tweet your results and see how your followers meas
                 <li>Your company takes a longer-term perspective on business planning</li>
                 <li>Cloud forms the architecture of all solutions</li>
             </ul>
+            <img src="http://redhat.idcready.net/images/tools/3/cloud-vision-and-strategy.jpg" class="right">
             <p>
                 Cloud providers at this stage have well established cloud businesses, delivering private and public cloud solutions via partnerships with multiple vendors. In most of the cases this includes hybrid cloud capabilities and the technology skill-set that enables this, but there are examples of advanced cloud strategies founded exclusively on delivering a set of standard SaaS/IaaS/PaaS services.
             </p>
@@ -199,6 +204,7 @@ While you\'re waiting why not tweet your results and see how your followers meas
                 <li>Monitoring are tools limited if they exist at all</li>
                 <li>Not yet in a position to offer SI services for cloud</li>
             </ul>
+            <img src="http://redhat.idcready.net/images/tools/3/processes-and-skill-sets.jpg" class="right">
             <p>
                 Cloud service providers at this stage in their process and skill-set maturity are often reacting to customer demand and typically develop each cloud solution on a project-by-project basis. They are yet to develop tools or reusable methodologies to support this emerging element of their business. As a result, monitoring tools are limited in their existence and usage and support is delivered on a reactive basis through a generic call center environment. Most will not be in a position to offer systems integration services for cloud at this stage in their journey. 
             </p>
@@ -217,6 +223,7 @@ While you\'re waiting why not tweet your results and see how your followers meas
                 <li>SI in the form of hardware and software integration</li>
                 <li>Support services are beginning to be offered</li>
             </ul>
+            <img src="http://redhat.idcready.net/images/tools/3/processes-and-skill-sets.jpg" class="right">
             <p>
                 Cloud service providers at this stage in their cloud maturity have some experience of cloud implementations. As a result, they are starting to develop and leverage cloud methodologies and reusable tools. Those that offer managed services have invested in tools that include cloud-focused monitoring and fault management, and systems integration is offered in the form of hardware and software integration. Support services are generally also offered, but mainly through ticket-creation and service desk management.
             </p>
@@ -232,6 +239,7 @@ While you\'re waiting why not tweet your results and see how your followers meas
                 <li>Delivering hybrid cloud, based on a range of vendor solutions</li>
                 <li>Customer support is now proactive and partner driven </li>
             </ul>
+            <img src="http://redhat.idcready.net/images/tools/3/processes-and-skill-sets.jpg" class="right">
             <p>
                 Cloud service providers at this stage in their process and skill-set maturity have established their cloud business enough to reuse cloud implementation procedures and methodologies. As part of a managed service offering, they are also able to deliver analytics and advice on cloud optimization. For many, the sophistication of their systems integration capability enables them to deploy cloud and hybrid cloud, based on a range of vendor partner solutions. Rather than reacting to faults and customer demand, support is proactive and partner driven, alerting customers through a communication platform.
             </p>
@@ -250,6 +258,7 @@ While you\'re waiting why not tweet your results and see how your followers meas
                 <li>One-to-many repeatable services are also a key feature</li>
                 <li>Support is now preemptive</li>
             </ul>
+            <img src="http://redhat.idcready.net/images/tools/3/processes-and-skill-sets.jpg" class="right">
             <p>
                 Cloud service providers at this stage in their maturity have created processes and skills around a set of reusable best practices, methodologies, and tools. This includes reference architecture and code, which can be customized and modified for clients, on a multitenant basis. This reduces both implementation times and speed to value. Automation and predictive services are a central feature of managed service delivery, along with sophisticated tools that enable one-to-many repeatable managed services. Support is preemptive and is delivered through an integrated communications platform. 
             </p>
@@ -268,6 +277,7 @@ While you\'re waiting why not tweet your results and see how your followers meas
                 <li>Business is taking on or looking to take on larger-scale projects</li>
                 <li>Proactive support recommends improvement</li>
             </ul>
+            <img src="http://redhat.idcready.net/images/tools/3/processes-and-skill-sets.jpg" class="right">
             <p>
                 Cloud service providers at this stage have created and refined cloud automation. This reduces time to implement cloud services, driving customer satisfaction, utilization, and ultimately service provider profitability. Managed services are being delivered, many of which have deep levels of analytical capability, enabling automation and the creation of highly developed toolsets that underpin cloud solutions. SI work has reached a level of sophistication that IP has been created and solidified, enabling the business to take on larger-scale projects. Support is delivered on a preemptive and proactive basis, not only with deep levels of monitoring and analytics, but also recommendations for improvement. 
             </p>
@@ -291,6 +301,7 @@ While you\'re waiting why not tweet your results and see how your followers meas
                 <li>Skills and tools in PaaS are minimal</li>
                 <li>Cloud services billed on a project or annual basis</li>
             </ul>
+            <img src="http://redhat.idcready.net/images/tools/3/business-mix.jpg" class="right">
             <p>
                 At this stage of maturity, service providers are yet to make significant investments in cloud and are not able to progress beyond basic resell and referral. They do not have the capability to manage complex hybrid environments, and are far away from additional value-adds such as unified billing, management, and security. Cloud is generally delivered on an ad hoc, reactive basis and there is a reliance on support from vendor partners. Equally, skills and tools in the PaaS or developer platform service areas are likely to be minimal, if at all present. Providers at this stage may offer dedicated or internal storage hosting to their existing client base, but rarely have datacenter capabilities; the most common scenario is simply renting capacity in a single co-location site. Based on the level of overall maturity, cloud solutions are being billed on a project or annual basis.
             </p>
@@ -310,6 +321,7 @@ While you\'re waiting why not tweet your results and see how your followers meas
                 <li>Orchestration tools are being explored</li>
                 <li>The ability to bill monthly, based on consumption, is also offered</li>
             </ul>
+            <img src="http://redhat.idcready.net/images/tools/3/business-mix.jpg" class="right">
             <p>
                 At this stage of maturity organizations have made some investments in cloud infrastructure, tools, and management technologies. Virtualization is under their belt and they are preparing a roadmap for both the technology and skills requirements necessary to build a cloud business. Typically, organizations at this stage are able to offer hosted private cloud solutions, as well as hosted services such as email, backup, and file sharing.
             </p>
@@ -331,6 +343,7 @@ While you\'re waiting why not tweet your results and see how your followers meas
                 <li>Typically, you have started to offer software-defined storage</li>
                 <li>Orchestration tools like OpenStack are also being used </li>
             </ul>
+            <img src="http://redhat.idcready.net/images/tools/3/business-mix.jpg" class="right">
             <p>
                 At this stage, service providers typically have a well structured technology roadmap and continue to invest in tools and management technology. Infrastructure (both IT and facility) and network connectivity skill-sets are solid, with a good track record helping customers both on-premise and in hosted environments. Beyond pure traditional private cloud environments, service providers have started offering first- or third-party multitenant cloud services (IaaS or PaaS). They now have enough tools or scripting capabilities to connect applications across private and public infrastructures. PaaS is appearing on the horizon, but skills are often limited to traditional middleware (e.g., Java).
             </p>
@@ -352,6 +365,7 @@ While you\'re waiting why not tweet your results and see how your followers meas
                 <li>Sophisticated dashboards allow hourly consumption monitoring</li>
                 <li>Defined horizontal and vertical propositions</li>
             </ul>
+            <img src="http://redhat.idcready.net/images/tools/3/business-mix.jpg" class="right">
             <p>
                 Companies in this stage have typically invested — and continue to invest — in cloud infrastructure, tools, and management technology. They are in the position to offer not only API connectivity between cloud zones, but also manual or planned "bursting" of virtual machine and storage from dedicated to multitenant public environments. The ability to support and integrate multiple environments is a priority, and tools and architecture in hybrid cloud are prioritized. OpenStack skillsets are solid and tested.
             </p>
@@ -373,6 +387,7 @@ While you\'re waiting why not tweet your results and see how your followers meas
                 <li>OpenStack enhanced by automation tools</li>
                 <li>Billing on an hourly basis, across all cloud solutions and via a dashboard</li>
             </ul>
+            <img src="http://redhat.idcready.net/images/tools/3/business-mix.jpg" class="right">
             <p>
                 Service providers in this stage have achieved a sophisticated, highly automated, and redundant cloud infrastructure. They have expertise in tools and management technology and typically offer customers a choice of delivery options (on-premise, off-premise, and through multiple CSPs). As such, they have developed sophisticated hybrid cloud capabilities, allowing planned and unplanned bursting. This connects to both customer premise and third-party service providers, as well as load balancing and auto-scale capabilities.
             </p>

@@ -19,7 +19,6 @@ h2,h3{
 	font-size: 17pt;
 	color: #003F7D;
 	margin: 0;
-	margin-top: 5mm;
 }
 h3{
 	margin-top: 2mm;
@@ -59,8 +58,8 @@ li{
 	width: 50mm;
 }
 .introduction{
-	margin-left: 20mm;
-	width: 190mm;
+	margin: 20mm;
+	margin-top: 0;
 }
 .section{
 	position: relative;

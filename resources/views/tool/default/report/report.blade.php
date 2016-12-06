@@ -18,10 +18,12 @@
 		</table>
 		@endif
 		<div class="spacer"></div>
+		@if(isset($introduction))
 		<div class="introduction">
 			<h2>Introduction</h2>
-			{!!trans(session('product.alias').'.introduction')!!}
+			{!!$introduction!!}
 		</div>
+		@endif
 		@foreach($sections as $key=>$section)
 		<div class="{{$section['pb'] && !$section['pageimage'] ?'pb ':''}}"></div>
 		@if($section['pageimage'])
