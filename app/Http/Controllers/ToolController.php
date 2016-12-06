@@ -215,7 +215,7 @@ class ToolController extends Controller
                 $rating = trans(session('product.alias').'.'.$this->result[$section]['rating']);
                 $ratingClass = 'icon '.$section;
                 $ratingcopy = trans($this->baseline[$section]['types'][$this->result[$section]['rating']]['copy']);
-                $next = (key($questions)==null) ? '/'.session('localeUrl').'quiz/complete': 'quiz/'.key($questions).'/page1'; //fix this so a report can be provided at any stage?
+                $next = (key($questions)==null) ? '/'.session('localeUrl').'quiz/complete': '/'.session('localeUrl').'quiz/'.key($questions).'/page1'; //fix this so a report can be provided at any stage?
                 return view('tool.'.session('template').'.sectionresult',compact(['menu','page','title','section','rating','ratingClass','ratingcopy','next']));
             }
             //dd(session('questions'));
