@@ -6,7 +6,7 @@ return array(
         'report-settings' => [
             'header'=>true,
             'footer'=>true,
-            'graph'=>true,
+            'graph'=>false,
             'pb'=>false,
             'designline'=>false,
             'color'=>'#d92435',
@@ -17,40 +17,46 @@ return array(
                 'low' => 0,
                 'high' => 20.9,
                 'copy' => 'general.passivetxt',
-                'tweet' => 'general.passivetweet'
+                'tweet' => 'general.passivetweet',
+                'benchmark' => 3
             ),
             'stage2' => array(
                 'low' => 21,
                 'high' => 40.9,
                 'copy' => 'general.tentativetxt',
-                'tweet' => 'general.tentativetweet'
+                'tweet' => 'general.tentativetweet',
+                'benchmark' => 3
             ),
             'stage3' => array(
                 'low' => 41,
                 'high' => 60.9,
                 'copy' => 'general.committedtxt',
-                'tweet' => 'general.committedtweet'
+                'tweet' => 'general.committedtweet',
+                'benchmark' => 3
             ),
             'stage4' => array(
                 'low' => 61,
                 'high' => 80.9,
                 'copy' => 'general.acceleratingtxt',
-                'tweet' => 'general.acceleratingtweet'
+                'tweet' => 'general.acceleratingtweet',
+                'benchmark' => 3
             ),
             'stage5' => array(
                 'low' => 81,
                 'high' => 100,
                 'copy' => 'general.fullspeedtxt',
-                'tweet' => 'general.fullspeedtweet'
+                'tweet' => 'general.fullspeedtweet',
+                'benchmark' => 3
             )
-        )
+        ),
+        'tweet' => true,
     ),
     'cloud-vision-and-strategy' => array(
         'baseline' => 15.363,
         'report-settings' => [
             'header'=>true,
             'footer'=>true,
-            'graph'=>true,
+            'graph'=>false,
             'pb'=>false,
             'designline'=>false,
             'color'=>'#d92435',
@@ -94,7 +100,7 @@ return array(
         'report-settings' => [
             'header'=>true,
             'footer'=>true,
-            'graph'=>true,
+            'graph'=>false,
             'pb'=>false,
             'designline'=>false,
             'color'=>'#d92435',
@@ -138,7 +144,7 @@ return array(
         'report-settings' => [
             'header'=>true,
             'footer'=>true,
-            'graph'=>true,
+            'graph'=>false,
             'pb'=>false,
             'designline'=>false,
             'color'=>'#d92435',
@@ -182,7 +188,7 @@ return array(
         'report-settings' => [
             'header'=>true,
             'footer'=>true,
-            'graph'=>true,
+            'graph'=>false,
             'pb'=>false,
             'designline'=>false,
             'color'=>'#d92435',
