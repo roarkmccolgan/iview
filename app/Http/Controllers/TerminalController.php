@@ -86,11 +86,14 @@ class TerminalController extends Controller
             }
         }
         $daily_total = 0;
+        $complete_total = 0;
         foreach ($analyticsResults['daily_results'] as $key => $value) {
             $analyticsResults['daily_results'][$key][0] = Carbon::createFromFormat('Ymd',$value[0])->format('j');
             $daily_total+=$value[1];
-        }foreach ($analyticsResults['complete_results'] as $key => $value) {
+        }
+        foreach ($analyticsResults['complete_results'] as $key => $value) {
             $analyticsResults['complete_results'][$key][0] = Carbon::createFromFormat('Ymd',$value[0])->format('j');
+            $complete_total+=$value[1];
         }
 
         $data = [
@@ -99,6 +102,7 @@ class TerminalController extends Controller
             'endDate' => $endDate,
             'analyticsResults' => $analyticsResults,
             'daily_total' => $daily_total,
+            'complete_total' => $complete_total,
             'customDate' => $customDate,
         ];
 

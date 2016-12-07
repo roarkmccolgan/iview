@@ -58,7 +58,7 @@
 		</div>
 		<div class="butpro butstyle">
 			<div class="sub">
-				<h2>Completion Rate</h2><span>83%</span>
+				<h2>Completion Rate</h2><span>{{round(($complete_total/$daily_total)*100)}}%</span>
 			</div>
 			<div class="stat"><span class="spk3"></span></div>
 			<!-- <div class="stat"><span class="spk2"></span></div> -->
