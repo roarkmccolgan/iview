@@ -168,7 +168,7 @@ class PdfController extends Controller
 			$headervars['page_offest'] = 1;
 			$count++;
 		}
-		$vars['introduction'] = Lang::has(session('product.alias').'.introduction') ? trans(session('product.alias').'.introduction',['result'=>trans(session('product.alias').'.'.session('result.'.$section.'.rating'))]) : false;
+		$vars['introduction'] = Lang::has(session('product.alias').'.introduction') ? trans(session('product.alias').'.introduction',['result'=>trans(session('product.alias').'.'.session('result.overall.rating'))]) : false;
 		$vars['introImage'] = Lang::has(session('product.alias').'.introduction-image') ? trans(session('product.alias').'.introduction-image') : false;
 		$vars['introRating'] = trans(session('product.alias').'.'.session('result.overall.rating'));
 		$vars['questions'] = session('questions');
