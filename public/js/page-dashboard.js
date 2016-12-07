@@ -115,7 +115,7 @@ var App = (function () {
     for (var i = 0; i < laravel.complete_results.length; i++) {
         completions.push([
           i,
-          laravel.daily_results[i][1],
+          laravel.complete_results[i][1],
           ]);
     }
 
@@ -430,7 +430,8 @@ yaxis: {
               var x = item.datapoint[0].toFixed(2),
               y = item.datapoint[1].toFixed(2);
               showTooltip(item.pageX, item.pageY,
-                  item.series.label + " of " + x + " = " + y);
+                  //item.series.label + " of " + x + " = " + y);
+                  item.series.label + " " + y);
           }
       } else {
         $("#tooltip").remove();
@@ -449,7 +450,8 @@ yaxis: {
               var x = item.datapoint[0].toFixed(2),
               y = item.datapoint[1].toFixed(2);
               showTooltip(item.pageX, item.pageY,
-                  item.series.label + " of " + x + " = " + y);
+                  //item.series.label + " of " + x + " = " + y);
+                  item.series.label + " " + y);
           }
       } else {
         $("#tooltip").remove();

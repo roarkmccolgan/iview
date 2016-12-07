@@ -61,22 +61,26 @@ class TerminalController extends Controller
 
             $analyticsResults[$key] = $$key->getRows();
         }
-        foreach ($analyticsResults['utm_views'] as $key => $value) {
-            foreach ($tool->trackers as $trakKey => $tracker) {
-                if($tracker->code==substr($value[0], 6)){
-                    if($tracker->views != $value[1]){
-                        $tracker->views = $value[1];
-                        $tracker->save();
+        if($analyticsResults['utm_views']){
+            foreach ($analyticsResults['utm_views'] as $key => $value) {
+                foreach ($tool->trackers as $trakKey => $tracker) {
+                    if($tracker->code==substr($value[0], 6)){
+                        if($tracker->views != $value[1]){
+                            $tracker->views = $value[1];
+                            $tracker->save();
+                        }
                     }
                 }
             }
         }
-        foreach ($analyticsResults['utm_completes'] as $key => $value) {
-            foreach ($tool->trackers as $trakKey => $tracker) {
-                if($tracker->code==substr($value[0], 6)){
-                    if($tracker->completions != $value[2]){
-                        $tracker->completions = $value[2];
-                        $tracker->save();
+        if($analyticsResults['utm_completes']){
+            foreach ($analyticsResults['utm_completes'] as $key => $value) {
+                foreach ($tool->trackers as $trakKey => $tracker) {
+                    if($tracker->code==substr($value[0], 6)){
+                        if($tracker->completions != $value[2]){
+                            $tracker->completions = $value[2];
+                            $tracker->save();
+                        }
                     }
                 }
             }

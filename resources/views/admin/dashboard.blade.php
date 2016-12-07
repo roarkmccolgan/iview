@@ -63,12 +63,12 @@
 			<div class="stat"><span class="spk3"></span></div>
 			<!-- <div class="stat"><span class="spk2"></span></div> -->
 		</div>
-		<div class="butpro butstyle">
+		<!-- <div class="butpro butstyle">
 			<div class="sub">
 				<h2>Drop Offs</h2><span>184</span>
 			</div>
 			<div class="stat"><span class="spk3"></span></div>
-		</div>
+		</div> -->
 	</div>
 	<div class="row dash-cols">
 		<div class="col-sm-6 col-md-6">

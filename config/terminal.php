@@ -267,7 +267,7 @@ return [
                 'dimensions'    => 'ga:date',
                 'sort'          => false,
                 'max-results'   => false,
-                'filters'       => 'ga:pagePath==/quiz/complete',
+                'filters'       => false,
             ],
             'country_results'=>[
                 'metrics'       => 'ga:sessions',
