@@ -54,7 +54,7 @@
 			<div class="sub">
 				<h2>UNIQUE VISITS</h2><span>{{$analyticsResults['total_results'][0][1]}}</span>
 			</div>
-			<div class="stat"><span class="equal"> 0%</span></div>
+			<div class="stat"><span class="equal">{{round(($analyticsResults['total_results'][0][1]/$analyticsResults['total_results'][0][0])*100)}}%</span></div>
 		</div>
 		<div class="butpro butstyle">
 			<div class="sub">

@@ -48,6 +48,7 @@ var App = (function () {
         fillColor: '#4A8CF7',
         spotColor: false,
         width: '80px',
+        height: '15px',
         minSpotColor: false,
         maxSpotColor: false,  
         highlightSpotColor: '#1e7ac6',
