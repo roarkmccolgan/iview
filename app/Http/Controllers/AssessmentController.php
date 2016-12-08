@@ -23,7 +23,8 @@ class AssessmentController extends Controller
 
         $tool = $request->get('product');
         if($user->tools->contains($tool->id) || $user->hasRole('super')){
-            $tool->load(['assessments','company']);
+            $tool->load(['assessments','company','extra_fields']);
+            //dd($tool);
             //return $tool;
             JavaScript::put([
                 'foo' => 'bar'

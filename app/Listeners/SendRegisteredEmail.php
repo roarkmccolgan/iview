@@ -31,9 +31,11 @@ class SendRegisteredEmail implements ShouldQueue
     {
         $user = $event->user;
         $tool = $event->tool;
+        $url = $tool->urls->first();
         $viewData = [
             'user'=>$user,
             'tool'=>$tool,
+            'url'=>$url
         ];
         $data['html'] =  View::make('emails.registered', $viewData)->render();
         Mail::queue('emails.echo', $data, function ($message) use ($user) {

@@ -7,9 +7,10 @@ return array(
     'stage2' => 'Stage 2: Tentative',
     'stage3' => 'Stage 3: Committed',
     'stage4' => 'Stage 4: Accelerating',
-    'stage5' => 'Stage 5: Full Speeed',
+    'stage5' => 'Stage 5: Full Speed',
     'complete_thankyou' => 'Thank you :Fname,',
     'complete_body' => 'Your custom report will arrive in your inbox soon.<br/>
+Please check in your junk folder if you don\t receive it within 5 minutes.<br/>
 While you\'re waiting why not tweet your results and see how your followers measure up?',
     'complete_tweet' => 'I\'ve just taken the Cloud Readiness Assessment Sponsored by @Redhat %26 @IDCUKI, we\'re at :result. Interested?',// http://bit.ly/2g8WN1d
     'email'=>[

@@ -33,7 +33,13 @@
 									<th>Last Name</th>
 									<th>Date</th>
 									<th>Company</th>
+									<th>Country</th>
 									<th>Email</th>
+									@if($tool->extra_fields)
+										@foreach($tool->extra_fields as $fieldKey=>$field)
+										<th>{{ucfirst($field->name)}}</th>
+										@endforeach
+									@endif
 									<th>Link Code</th>
 									<th>Maturity</th>
 									<th>Action</th>
@@ -47,7 +53,20 @@
 									<td><strong>{{$assessment->lname}}</strong></td>
 									<td>{{$assessment->created_at->toDateString()}}</td>
 									<td>{{$assessment->company}}</td>
+									<td>{{$assessment->country}}</td>
 									<td><a href="mailto:{{$assessment->email}}">{{$assessment->email}}</a></td>
+									@if($tool->extra_fields)
+										@foreach($tool->extra_fields as $fieldKey=>$field)
+										<?php
+										if(!is_array($assessment->extra)){
+											$extra = $assessment->extra!=='null' && !is_null($assessment->extra) ? json_decode($assessment->extra,true) : '';
+										}else{
+											$extra = $assessment->extra;
+										}
+										?>
+										<td>{{$assessment->extra!=='null' && !is_null($assessment->extra) ? $extra[$field->name]: ''}}</td>
+										@endforeach
+									@endif
 									<td>{{$assessment->code}}</td>
 									<td>{{$assessment->rating}}</td>
 									<td data-ass-id="{{$assessment->id}}"></td>
