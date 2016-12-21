@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Assessment;
+use App\ExtraFields;
 use App\Http\Requests;
 use Carbon\Carbon;
 use Excel;
@@ -135,16 +136,56 @@ class AssessmentController extends Controller
                 $query->where('downloaded', false);
             }]);
         }
+        $assessments = Assessment::find(28);
+
         $tool->assessments()->update(['downloaded' => 1]);
 
         $assessments = $tool->assessments->map(function($assessment){
-            return collect($assessment->toArray())->only(['id','created_at','fname','lname','email','company','country','tel','referer','code','score','rating','result'])->all();
+            return collect($assessment->toArray())->only(['id','created_at','fname','lname','email','company','title','country','tel','referer','code','rating','extra','result'])->all();
         });
+
+        $assessments = $assessments->toArray();
+        $telNum = null;
+        foreach ($assessments as $assKey => $assessment) {
+            if(is_null($telNum)) $telNum = array_search("tel",array_keys($assessment));
+            if(!is_null($assessment['extra'])){
+                foreach ($assessment['extra'] as $exKey => $extra) {
+                    if(!is_null($extra)){
+                        $assessments[ucfirst($assKey)][$exKey] = $extra;
+                    }
+                }
+                unset($assessments[$assKey]['extra']);
+            }
+            foreach ($assessment['result'] as $resKey => $result) {
+                if($resKey!='overall'){
+                    $assessments[$assKey][trans($tool->alias.'.'.$resKey.'.title')] = trans($tool->alias.'.'.$result['rating']);
+                }
+            }
+            unset($assessments[$assKey]['result']);
+        }
+        $cols = 0;
+        if(!empty($assessments)){
+            $cols = count($assessments[0]);
+        }
+        $alphas = range('A', 'Z');
         
-        Excel::create($tool->title.' '.$tool->sub_title, function($excel) use ($assessments){
-            $excel->sheet('Assessments', function($sheet) use($assessments) {
+        Excel::create(str_slug($tool->title.' '.$tool->sub_title), function($excel) use ($assessments, $cols, $alphas, $telNum){
+            $excel->sheet('Assessments', function($sheet) use($assessments, $cols, $alphas, $telNum) {
                 $sheet->setOrientation('landscape');
-                $sheet->fromModel($assessments);
+                $sheet->fromArray($assessments);
+
+                $sheet->cells('A1:'.$alphas[$cols-1].'1', function($cells) {
+                    $cells->setBackground('#EFEFEF');
+                    $cells->setFont(array(
+                        //'family'     => 'Calibri',
+                        //'size'       => '14',
+                        'bold'       =>  true
+                    ));
+                });
+                $sheet->freezeFirstRow();
+                /*$sheet->setColumnFormat(array(
+                    $alphas[$telNum+1] => '[<=9999999]###-####;(###) ###-####'
+                ));*/
             });
         })->export('xls');
 

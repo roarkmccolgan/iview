@@ -121,6 +121,7 @@
 						<thead>
 							<tr>
 								<th>Code</th>
+								<th>Lang</th>
 								<th class="right"><!-- <span>25%</span> -->Views</th>
 								<th class="right"><!-- <span>29%</span> -->Completions</th>
 							</tr>
@@ -129,6 +130,7 @@
 							@foreach($tool->trackers as $tracker)
 							<tr>
 								<td style="width:40%;"><i class="fa fa-user"></i> {{$tracker->name}} ({{$tracker->code}})</td>
+								<td>{{$tracker->language->abbreviation}}</td>
 								<td class="text-right">{{$tracker->views}}</td>
 								<td class="text-right">{{$tracker->completions}}</td>
 							</tr>

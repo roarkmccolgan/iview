@@ -53,4 +53,9 @@ class Tool extends Model
     {
         return $this->hasMany('App\ExtraFields');
     }
+
+    public function languages()
+    {
+        return $this->belongsToMany('App\Language');
+    }
 }

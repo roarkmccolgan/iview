@@ -311,8 +311,11 @@ if($('label.rel').length){
 
 @foreach ($questions as $q => $question)
     @if(isset($question['other']))
+    <?php
+    $other = explode("|", $question['other']);
+    ?>
     <script>
-    var otherBut = $( "button[value='{{$question['other']}}']" );
+    var otherBut = $( "button[value='{{$other[0]."|".$other[1]}}']" );
     if(otherBut.length){
         otherBut.unbind('click');
         otherBut.on('click', function(event){
@@ -320,7 +323,7 @@ if($('label.rel').length){
             otherBut.hide();
             html = 
             '<div class="otherdiv" id="other_{{$q}}">'+
-                '<input type="text" id="other_input_{{$q}}" name="answer" class="" placeholder="Your Country">'+
+                '<input type="text" id="other_input_{{$q}}" name="answer" class="" placeholder="{{$other[2]}}">'+
                 '<button class="btn btn-danger pull-right btn-lg" type="submit">{{Lang::get('general.next')}} <i class="icon-arrow_right"></i></button></button>'+
             '</div>';
             $(html).insertAfter( otherBut );

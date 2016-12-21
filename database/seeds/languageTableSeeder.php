@@ -13,7 +13,7 @@ class languageTableSeeder extends Seeder
     {
         DB::table('languages')->delete();
         $languages = [
-            ['name' => 'English', 'abbreviation' => 'en', 'logo' => ''],
+            ['name' => 'English', 'abbreviation' => 'en', 'logo' => ''], //1
 			['name' => 'Afar', 'abbreviation' => 'aa', 'logo' => ''],
 			['name' => 'Abkhazian', 'abbreviation' => 'ab', 'logo' => ''],
 			['name' => 'Afrikaans', 'abbreviation' => 'af', 'logo' => ''],
@@ -35,18 +35,18 @@ class languageTableSeeder extends Seeder
 			['name' => 'Czech', 'abbreviation' => 'cs', 'logo' => ''],
 			['name' => 'Welsh', 'abbreviation' => 'cy', 'logo' => ''],
 			['name' => 'Danish', 'abbreviation' => 'da', 'logo' => ''],
-			['name' => 'German', 'abbreviation' => 'de', 'logo' => ''],
+			['name' => 'German', 'abbreviation' => 'de', 'logo' => ''], //23
 			['name' => 'Bhutani', 'abbreviation' => 'dz', 'logo' => ''],
 			['name' => 'Greek', 'abbreviation' => 'el', 'logo' => ''],
 			['name' => 'Esperanto', 'abbreviation' => 'eo', 'logo' => ''],
-			['name' => 'Spanish', 'abbreviation' => 'es', 'logo' => ''],
+			['name' => 'Spanish', 'abbreviation' => 'es', 'logo' => ''], //27
 			['name' => 'Estonian', 'abbreviation' => 'et', 'logo' => ''],
 			['name' => 'Basque', 'abbreviation' => 'eu', 'logo' => ''],
 			['name' => 'Persian', 'abbreviation' => 'fa', 'logo' => ''],
 			['name' => 'Finnish', 'abbreviation' => 'fi', 'logo' => ''],
 			['name' => 'Fiji', 'abbreviation' => 'fj', 'logo' => ''],
 			['name' => 'Faeroese', 'abbreviation' => 'fo', 'logo' => ''],
-			['name' => 'French', 'abbreviation' => 'fr', 'logo' => ''],
+			['name' => 'French', 'abbreviation' => 'fr', 'logo' => ''], // 34
 			['name' => 'Frisian', 'abbreviation' => 'fy', 'logo' => ''],
 			['name' => 'Irish', 'abbreviation' => 'ga', 'logo' => ''],
 			['name' => 'Scots/Gaelic', 'abbreviation' => 'gd', 'logo' => ''],
@@ -63,7 +63,7 @@ class languageTableSeeder extends Seeder
 			['name' => 'Inupiak', 'abbreviation' => 'ik', 'logo' => ''],
 			['name' => 'Indonesian', 'abbreviation' => 'in', 'logo' => ''],
 			['name' => 'Icelandic', 'abbreviation' => 'is', 'logo' => ''],
-			['name' => 'Italian', 'abbreviation' => 'it', 'logo' => ''],
+			['name' => 'Italian', 'abbreviation' => 'it', 'logo' => ''], //51
 			['name' => 'Hebrew', 'abbreviation' => 'iw', 'logo' => ''],
 			['name' => 'Japanese', 'abbreviation' => 'ja', 'logo' => ''],
 			['name' => 'Yiddish', 'abbreviation' => 'ji', 'logo' => ''],
@@ -94,14 +94,14 @@ class languageTableSeeder extends Seeder
 			['name' => 'Burmese', 'abbreviation' => 'my', 'logo' => ''],
 			['name' => 'Nauru', 'abbreviation' => 'na', 'logo' => ''],
 			['name' => 'Nepali', 'abbreviation' => 'ne', 'logo' => ''],
-			['name' => 'Dutch', 'abbreviation' => 'nl', 'logo' => ''],
+			['name' => 'Dutch', 'abbreviation' => 'nl', 'logo' => ''], //82
 			['name' => 'Norwegian', 'abbreviation' => 'no', 'logo' => ''],
 			['name' => 'Occitan', 'abbreviation' => 'oc', 'logo' => ''],
 			['name' => '(Afan)/Oromoor/Oriya', 'abbreviation' => 'om', 'logo' => ''],
 			['name' => 'Punjabi', 'abbreviation' => 'pa', 'logo' => ''],
 			['name' => 'Polish', 'abbreviation' => 'pl', 'logo' => ''],
 			['name' => 'Pashto/Pushto', 'abbreviation' => 'ps', 'logo' => ''],
-			['name' => 'Portuguese', 'abbreviation' => 'pt', 'logo' => ''],
+			['name' => 'Portuguese', 'abbreviation' => 'pt', 'logo' => ''], //89
 			['name' => 'Quechua', 'abbreviation' => 'qu', 'logo' => ''],
 			['name' => 'Rhaeto-Romance', 'abbreviation' => 'rm', 'logo' => ''],
 			['name' => 'Kirundi', 'abbreviation' => 'rn', 'logo' => ''],
@@ -123,7 +123,7 @@ class languageTableSeeder extends Seeder
 			['name' => 'Siswati', 'abbreviation' => 'ss', 'logo' => ''],
 			['name' => 'Sesotho', 'abbreviation' => 'st', 'logo' => ''],
 			['name' => 'Sundanese', 'abbreviation' => 'su', 'logo' => ''],
-			['name' => 'Swedish', 'abbreviation' => 'sv', 'logo' => ''],
+			['name' => 'Swedish', 'abbreviation' => 'sv', 'logo' => ''], //111
 			['name' => 'Swahili', 'abbreviation' => 'sw', 'logo' => ''],
 			['name' => 'Tamil', 'abbreviation' => 'ta', 'logo' => ''],
 			['name' => 'Telugu', 'abbreviation' => 'te', 'logo' => ''],

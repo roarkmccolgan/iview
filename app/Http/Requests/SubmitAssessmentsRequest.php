@@ -28,6 +28,7 @@ class SubmitAssessmentsRequest extends Request
             'sname'=>'required|min:3|max:255',
             'email'=>'required|email',
             'company'=>'required|min:3|max:255',
+            'title'=>'required|min:3|max:255',
             'country'=>'required',
             'phone'=>'required',
             'terms'=>'required'

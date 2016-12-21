@@ -280,6 +280,7 @@ Complete the IDC Cyber Risk Assessment Tool to find out more about how ready you
     'sname'=>'Last Name',
     'email'=>'Email Address',
     'company'=>'Company Name',
+    'title'=>'Job Title',
     'relationship'=>'Relationship with Red Hat',
     'rel1'=>'CCSP',
     'rel2'=>'Red Hat Ready Business Partner',

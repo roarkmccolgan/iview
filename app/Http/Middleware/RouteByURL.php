@@ -36,12 +36,14 @@ class RouteByURL
             $request->session()->put('company.id', $url->urlable->company->id);
             $request->session()->put('company.alias', strtolower(str_replace(" ", "_", $url->urlable->company->name)));
             if($request->input('utm')){
-                $tracker = Tracker::where('tool_id',$url->urlable_id)
-                ->where('code',$request->input('utm'))->first();
-                if($tracker){
+                $tracker = Tracker::where([
+                    ['tool_id', '=', $url->urlable_id],
+                    ['code', '=', $request->input('utm')],
+                ])->first();
+                if($tracker && $tracker->language->abbreviation==App::getLocale()){
                     $tracker->increment('views');
+                    $request->session()->put('utm', $request->input('utm'));
                 }
-                $request->session()->put('utm', $request->input('utm'));
             }
 
             //add model to request
@@ -51,6 +53,6 @@ class RouteByURL
 
         }
 
-        abort(400,'Not Found Man');
+        abort(400,'URL does not exist');
     }
 }

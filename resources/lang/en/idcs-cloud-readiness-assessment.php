@@ -1,7 +1,7 @@
 <?php
 //Redhat
 return array(
-    'title' => 'IDC\'s Cloud Benchmark for Development',
+    'title' => 'IDC\'s Cloud Readiness Assessment',
     'sub-title' => 'Advancing your maturity',
     'stage1' => 'Stage 1: Passive',
     'stage2' => 'Stage 2: Tentative',
@@ -10,13 +10,13 @@ return array(
     'stage5' => 'Stage 5: Full Speed',
     'complete_thankyou' => 'Thank you :Fname,',
     'complete_body' => 'Your custom report will arrive in your inbox soon.<br/>
-Please check in your junk folder if you don\t receive it within 5 minutes.<br/>
-While you\'re waiting why not tweet your results and see how your followers measure up?',
-    'complete_tweet' => 'I\'ve just taken the Cloud Readiness Assessment Sponsored by @Redhat %26 @IDCUKI, we\'re at :result. Interested?',// http://bit.ly/2g8WN1d
+Please check in your junk folder if you don\'t receive it within 5 minutes.<br/>
+While you\'re waiting why not share your results and see how your followers measure up?',
+    'complete_tweet' => 'I\'ve just taken the Cloud Readiness Assessment Sponsored by @RedHatNews %26 @IDCEMEA, we\'re at :result. Interested? http://bit.ly/2gslXEh #IDCcloudreadypartners',// http://bit.ly/2gslXEh
     'email'=>[
-        'subject' => 'IDC Report',
+        'subject' => 'IDC Cloud Readiness Assessment',
         'hi' => 'Hi :Fname',
-        'body' => 'As promised, here\'s the link to download your Cloud Readiness Report. This breaks down your results by category and helps you benchmark yourself against other organisations.',
+        'body' => 'As promised, here\'s a link to download your Cloud Readiness Assessment. This breaks down your results by category and provides you with actionable recommendations.',
         'link' => 'Download Report',
         'extra' => 'Once you\'ve digested the report why not visit <a href="http://www.redhat.com" style="color:#024886">Red Hat</a>',
         'regards' => 'Regards',

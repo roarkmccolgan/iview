@@ -130,7 +130,8 @@ class ToolController extends Controller
             'C_FirstName'=>$request->input('C_FirstName'),
             'C_LastName'=>$request->input('C_LastName'),
             'C_Company'=>$request->input('C_Company'),
-            'C_Country'=>$request->input('C_Country'),
+            'C_Company'=>$request->input('C_Company'),
+            'C_Title'=>$request->input('C_Title'),
             'C_BusPhone'=>$request->input('C_BusPhone'),
             'form_source'=>$request->input('form_source')
         );
@@ -373,13 +374,14 @@ class ToolController extends Controller
             $assessment->lname = $request->input('sname');
             $assessment->email = $request->input('email');
             $assessment->company = $request->input('company');
+            $assessment->title = $request->input('title');
             
             $assessment->country = $request->input('country');
             $assessment->tel = $request->input('phone');
             $assessment->referer = session('referer');
-            $assessment->quiz = json_encode($this->quiz);
-            $assessment->result = json_encode($this->howfit);
-            $assessment->extra = json_encode($request->input('extra'));
+            $assessment->quiz = $this->quiz;
+            $assessment->result = $this->howfit;
+            $assessment->extra = $request->input('extra');
             $assessment->score = session('result.overall.score');
             $assessment->rating = trans(session('product.alias').'.'.session('result.overall.rating'));
             $assessment->save();
@@ -473,14 +475,14 @@ class ToolController extends Controller
 
     public function getDownload($subdomain,$assid){
         $assessment = Assessment::findOrFail($assid);
-        
         $assessment->update(['fetched' => 1]);
 
-        $file= storage_path().'/reports/'.$assessment->id.'_'.str_slug($assessment->fname.'_'.$assessment->lname.'_'.session('product.title').'_Assessment', '-').'.pdf';
+
+        $file= storage_path().'/reports/'.$assessment->id.'_'.str_slug($assessment->fname.'_'.$assessment->lname.'_'.$assessment->tool->title.'_Assessment', '-').'.pdf';
         $headers = array(
             'Content-Type: application/pdf',
         );
-        return response()->download($file, $assessment->id.'_'.str_slug($assessment->fname.'_'.$assessment->lname.'_'.session('product.title').'_Assessment', '-').'.pdf', $headers);
+        return response()->download($file, $assessment->id.'_'.str_slug($assessment->fname.'_'.$assessment->lname.'_'.$assessment->tool->title.'_Assessment', '-').'.pdf', $headers);
     }
 
     public function fakeDownload($tool){

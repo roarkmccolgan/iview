@@ -51,6 +51,18 @@
 							<input name="code" type="text" class="form-control" disabled value="{{ old('code') ? old('code'):$code }}">
 							<input name="code" type="hidden" value="{{ old('code') ? old('code'):$code }}">
 						</div>
+						@if($tool->languages->count()>1)
+						<div class="col-md-6 form-group">
+							<label>Language</label>
+							<select name="language_id" class="form-control">
+							@foreach($tool->languages as $language)
+								<option value="{{$language->id}}" {{ old('language_id') && old('language_id') == $language->id ? "selected":'' }}>{{$language->name}}</option>
+							@endforeach
+							</select>
+						</div>
+						@else
+						<input name="language" type="hidden" value="en">
+						@endif
 						<div class="col-md-12 checkbox">
 							<label>
 								<input name="active" type="checkbox" class="icheck" {{ !old('active') ? '':'checked' }}> Activate

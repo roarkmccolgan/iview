@@ -65,6 +65,11 @@
                                 <input type="text" value="{{$source['C_Company']?$source['C_Company']:''}}" name="company" class="form-control req">
                                 <span>{!!trans('general.errorCompany')!!}</span>
                             </div>
+                            <div class="col-md-6 form-group{{$errors->has('title')?' error':''}}">
+                                <label>{!!trans('general.title')!!}*</label>
+                                <input type="text" value="{{isset($source['C_Title']) ? $source['C_Title']:old('title')}}" name="title" class="form-control req">
+                                <span>{!!trans('general.errorTitle')!!}</span>
+                            </div>
                             @if($extra_fields)
                                 @foreach($extra_fields as $key=>$field)
                             <div class="col-md-6 form-group{{$errors->has($field['name'])?' error':''}}">

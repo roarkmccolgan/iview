@@ -47,7 +47,7 @@ return array(
                                 'checked'=>false
                             )
                         ),
-                        'other'=>'Other|0'
+                        'other'=>'Other|0|Your country'
                     )
                 )
             ),
@@ -157,12 +157,13 @@ return array(
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Other, please specify',
+                                'label'=>'Other',
                                 'value'=>1,
                                 'checked'=>false,
                                 'other' => true
                             )
-                        )
+                        ),
+                        'other'=>'Other|1|Please Specify Industry'
                     )
                 )
             )
@@ -413,7 +414,7 @@ return array(
                                 )
                             ),
                             array(
-                                'label'=>'Proactive detection',
+                                'label'=>'Proactive detection (solutions that are able to identify unknown threats through techniques such as behavioural analytics and machine learning, as opposed to being reliant on blocking known threats through the use of signatures)',
                                 'name'=>'q4.2',
                                 'options'=>array(
                                     array(
@@ -737,7 +738,7 @@ return array(
                                 ]
                             ),
                             array(
-                                'label'=>'It is typically delegated to IT.',
+                                'label'=>'It is typically delegated to IT or senior management',
                                 'value'=>2,
                                 'checked'=>false,
                                 'position' => [
@@ -3032,7 +3033,7 @@ return array(
                                 )
                             ),
                             array(
-                                'label'=>'Malware scanning',
+                                'label'=>'Malware detection',
                                 'name'=>'q17.5',
                                 'options'=>array(
                                     array(
@@ -3080,7 +3081,7 @@ return array(
                         'name'=>'q19',
                         'options'=>array(
                             array(
-                                'label'=>'Honeypot/intelligence gathering',
+                                'label'=>'Intelligence gathering solutions such as \'honeypots\'',
                                 'name'=>'q19.1',
                                 'options'=>array(
                                     array(
@@ -3248,7 +3249,7 @@ return array(
                         'name'=>'q20',
                         'options'=>array(
                             array(
-                                'label'=>'Automated remediation (machine learning based)',
+                                'label'=>'automated breach response (e.g. machine learning)',
                                 'name'=>'q20.1',
                                 'options'=>array(
                                     array(

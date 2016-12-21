@@ -36,9 +36,10 @@
 								<tr>
 									<th>Assignee</th>
 									<th>Email</th>
+									<th>Lang</th>
 									<th>Code</th>
 									<th>link</th>
-									<th>Status</th>
+									<!-- <th>Status</th> -->
 									<th>Views</th>
 									<th>Completions</th>
 									<th></th>
@@ -49,15 +50,21 @@
 								<tr class="odd gradeX">
 									<td><strong>{{$tracker->name}}</strong></td>
 									<td><a href="mailto:{{$tracker->email}}">{{$tracker->email}}</a></td>
+									<td>{{$tracker->language->abbreviation}}</td>
 									<td>{{$tracker->code}}</td>
 									<td>
 										<ul>
-											@foreach($tool->urls as $url)
-											<li>http://{{$url->subdomain.'.'.$url->domain.'/?utm='.$tracker->code}}</li>
-											@endforeach
+										@foreach($tool->urls as $url)
+											@if($tracker->language_id==$url->language_id)
+											<?php
+											$langSec = $tracker->language_id !=1 ? '/'.$url->language->abbreviation:'';
+											?>
+											<li>http://{{$url->subdomain.'.'.$url->domain.$langSec.'/?utm='.$tracker->code}}</li>
+											@endif
+										@endforeach
 										</ul>
 									</td>
-									<td>{{$tracker->active==1 ? 'Active':'Inactive'}}</td>
+									<!-- <td>{{$tracker->active==1 ? 'Active':'Inactive'}}</td> -->
 									<td>{{$tracker->views}}</td>
 									<td>{{$tracker->completions}}</td>
 									<td data-trac-id="{{$tracker->id}}"></td>

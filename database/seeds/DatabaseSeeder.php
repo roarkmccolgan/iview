@@ -21,6 +21,7 @@ class DatabaseSeeder extends Seeder {
 		$this->call(UrlsTableSeeder::class);
 		$this->call(RolesTableSeeder::class);
 		$this->call(UserHasRolesSeeder::class);
+		$this->call(ToolLanguageSeeder::class);
 	}
 
 }
