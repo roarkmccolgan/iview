@@ -333,7 +333,7 @@ if($('label.rel').length){
                 var that = this;
                 var newDiv = $('#other_{{$q}}').addClass('error');
                 var newInput = $('#other_input_{{$q}}');
-                if(newInput.val()!='' && newInput.val().length>3){
+                if(newInput.val()!='' && newInput.val().length>=3){
                     $('#mask').show();
                     jQuery.each($('button.btn-q'), function( i, item ) {
                         if(that!=item) $(item).prop( "disabled", true );
