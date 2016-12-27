@@ -36,6 +36,16 @@
                     <div class="col-md-4">
                         <div class="action">
                             <a href="{{'quiz/'.Session::get('startSection').'/page1'}}" class="start text-center"><img src="{{asset('css/templates/'.$tool->template.'/img/startbut.png')}}" alt="{{Lang::get('general.'.session('product.id').'startbut')}}" class="start">{{Lang::get('general.'.session('product.id').'startbut')}}</a>
+                            @if($tool->languages->count()>1)
+                                <br/>
+                                <div class="langsel">
+                                    {{Lang::get('general.'.session('product.id').'changelang')}}:<br/>
+                                    <span class="lang">{{strtoupper(App::getLocale())}}</span>
+                                    @foreach($tool->languages as $language)
+                                    @if(App::getLocale()!=$language->abbreviation) | <a href="/{{$language->abbreviation}}" class="lang {{$language->abbreviation}}">{{strtoupper($language->abbreviation)}}</a>@endif
+                                    @endforeach
+                                </div>
+                            @endif
                         </div>
                     </div>
                 </div>

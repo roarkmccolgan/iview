@@ -50,6 +50,7 @@ Complete the IDC Cyber Risk Assessment Tool to find out more about how ready you
     By completing this survey, you’ll receive a custom report ranking your capabilities according to our benchmark based on 500 companies across Europe. The report will highlight where your capabilities are strongest and advise on improvements where there are gaps.
 </p>',
     '2startbut'=>'Get Started',
+    '2changelang'=>'change language',
     'adhoc'=>'Ad-Hoc', //reactive
     'adhoctxt'=>"Organizations at this stage in their cloud maturity process tend to be providing cloud at the request of their customers, or as a vendor reseller. As a result, fees are derived from referrals or from resale, and organizations are generally focused on project revenues, rather than longer-term recurring revenue streams. Organizations at this stage in their cloud strategy are yet to embrace a cloud future and as a result may struggle to generate profits in this area. There is no defined vision for cloud, but there is time to make this transition if key decision makers act now.",
     'adhoctweet' => "I took the @HPE Agil-IT-y Assessment and it's shown me where I can improve. Interested? http://bit.ly/1Y6JAqa",
@@ -304,6 +305,7 @@ Complete the IDC Cyber Risk Assessment Tool to find out more about how ready you
     'qual9' => 'Managed Service Provider',
     'qual10' => 'Hosting Provider',
     'country'=>'Country',
+    'pleaseselect'=>'Please select',
     'phone'=>'Phone Number',
     'terms'=>'Terms &amp; Conditions',
     'accept'=>'I accept the terms',

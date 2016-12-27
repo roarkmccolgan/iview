@@ -84,6 +84,7 @@ If you achieve a rating of in-line or ahead in all sections, you are ready to be
         'team' => 'The IDC Team'
     ],
     'introduction_title' => 'Custom report summary and overall performance ranking',
+    'performancerankingbycategory' => 'Performance Ranking By Category',
     'introduction' => '',
     'introduction-image' => 'report.jpg',
     'overall' => array(

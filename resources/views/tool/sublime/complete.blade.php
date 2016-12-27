@@ -56,34 +56,39 @@
                                     <div class="col-xs-12">
                                         <div style="padding: 20px; border:1px solid #EFEFEF; padding-top: 40px; margin-top: 20px;">
                                             <div class="row">
-                                            {{ Form::open(array('url' => '/quiz/complete','id'=>'form-email-report','class'=>'clearfix')) }}
+                                            {{ Form::open(array('url' => session('localeUrl').'quiz/complete','id'=>'form-email-report','class'=>'clearfix')) }}
                                                 <fieldset>
                                                     <input type="hidden" value="{{$source['form_source']}}" name="form_source">
                                                     
                                                     <div class="col-xs-6 form-group{{$errors->has('fname')?' error':''}}">
                                                         <label>{!!trans('general.fname')!!}*</label>
                                                         <input type="text" class="form-control req" value="{{$source['C_FirstName']?$source['C_FirstName']:''}}" name="fname">
-                                                        @if($errors->has('fname')) <span>{!!trans('general.errorFname')!!}</span> @endif
+                                                        <span>{!!trans('general.errorFname')!!}</span>
                                                     </div>
                                                     <div class="col-xs-6 form-group{{$errors->has('sname')?' error':''}}">
                                                         <label>{!!trans('general.sname')!!}*</label>
                                                         <input type="text" class="form-control req" value="{{$source['C_LastName']?$source['C_LastName']:''}}" name="sname">
-                                                        @if($errors->has('sname')) <span>{!!trans('general.errorSname')!!}</span> @endif
+                                                        <span>{!!trans('general.errorSname')!!}</span>
                                                     </div>
                                                     <div class="col-xs-6 form-group{{$errors->has('email')?' error':''}}">
                                                         <label>{!!trans('general.email')!!}*</label>
                                                         <input type="text" class="form-control req email" value="{{$source['C_emailAddress']?$source['C_emailAddress']:''}}" name="email">
-                                                        @if($errors->has('email')) <span>{!!trans('general.errorEmail')!!}</span> @endif
+                                                        <span>{!!trans('general.errorEmail')!!}</span>
+                                                    </div>
+                                                    <div class="col-md-6 form-group{{$errors->has('title')?' error':''}}">
+                                                        <label>{!!trans('general.title')!!}*</label>
+                                                        <input type="text" value="{{isset($source['C_Title']) ? $source['C_Title']:old('title')}}" name="title" class="form-control req">
+                                                        <span>{!!trans('general.errorTitle')!!}</span>
                                                     </div>
                                                     <div class="col-xs-6 form-group{{$errors->has('company')?' error':''}}">
                                                         <label>{!!trans('general.company')!!}*</label>
                                                         <input type="text" value="{{$source['C_Company']?$source['C_Company']:''}}" name="company" class="form-control req">
-                                                        @if($errors->has('company')) <span>{!!trans('general.errorCompany')!!}</span> @endif
+                                                        <span>{!!trans('general.errorCompany')!!}</span>
                                                     </div>
-                                                    <div class="col-xs-12 form-group{{$errors->has('country')?' error':''}}">
+                                                    <div class="col-xs-6 form-group{{$errors->has('country')?' error':''}}">
                                                         <label>{!!trans('general.country')!!}*</label>
                                                         <select id="country" name="country" class="form-control sel req">
-                                                            <option value="">Please select</option>
+                                                            <option value="">{{trans('general.pleaseselect')}}</option>
                                                             <option value="Afghanistan">Afghanistan</option>
                                                             <option value="Albania">Albania</option>
                                                             <option value="Algeria">Algeria</option>
@@ -321,24 +326,25 @@
                                                             <option value="Zambia">Zambia</option>
                                                             <option value="Zimbabwe">Zimbabwe</option>
                                                         </select>
-                                                        @if($source['C_Country'])
+                                                        @if(isset($source['C_Country']))
                                                         <script>
                                                         var element = document.getElementById('country');
                                                         element.value = '{{$source['C_Country']}}';
                                                         </script>
                                                         @endif
-                                                        @if($errors->has('country')) <span>{!!trans('general.errorCountry')!!}</span> @endif
+                                                        <span>{!!trans('general.errorCountry')!!}</span>
                                                     </div>
-                                                    <div class="col-xs-6 form-group">
-                                                        <label>{!!trans('general.phone')!!}</label>
-                                                        <input class="form-control" type="text" value="{{$source['C_BusPhone']?$source['C_BusPhone']:''}}" name="phone">
-                                                        @if($errors->has('phone')) <span>{!!trans('general.errorNumber')!!}</span> @endif
+                                                    <div class="col-xs-6 form-group{{$errors->has('phone')?' error':''}}">
+                                                        <label>{!!trans('general.phone')!!} *</label>
+                                                        <input class="form-control req" type="text" value="{{$source['C_BusPhone']?$source['C_BusPhone']:''}}" name="phone">
+                                                        <span>{!!trans('general.errorNumber')!!}</span>
                                                     </div>
-                                                    <div class="col-xs-12 checkbox">
-                                                        <label class="checkbox{{$errors->has('terms')?' error':''}}">
+                                                    <div class="col-xs-12 checkbox form-group{{$errors->has('accept')?' error':''}}">
+                                                        <label class="checkbox">
                                                             <input type="checkbox" class="req" name="terms">
                                                             {!!trans('general.accept')!!} 
                                                         </label>
+                                                        <span>{!!trans('general.errorAccept')!!}</span>
                                                         <p class="help-block" style="margin-top: 10px;">
                                                             <strong>{!!trans('general.terms')!!} *</strong><br/>
                                                             {!!trans('general.'.session('product.id').'byreg')!!}

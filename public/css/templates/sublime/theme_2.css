@@ -108,6 +108,18 @@ img.main{
 .action{
 	padding-top: 60px;
 	height: 100%;
+	text-align: center;
+}
+.langsel{
+	border-top: 1px solid #E6E9F0;
+	padding-top: 10px;
+	width: 70%;
+	margin:0 auto;
+	margin-bottom: 10px;
+}
+.action .lang{
+	font-family: 'Metric Light',Arial,Helvetica,sans-serif;
+	text-transform: uppercase;
 }
 
 .action .start{
@@ -490,4 +502,15 @@ span.instruct {
 .graph{
 	border: 1px solid #efefef;
 	margin-bottom: 10px;
+}
+.form-group span{
+	display: none;
+}
+.form-group.error span{
+	color: white;
+	display: inline-block;
+	border-radius: 3px;
+	padding: 3px;
+	background-color: #c52323;
+	margin-top: 2px;
 }

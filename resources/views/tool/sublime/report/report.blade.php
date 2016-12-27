@@ -57,7 +57,7 @@
 		@foreach($sections as $key=>$section)
 			<div class="section group {{$section['seckey']}}" style="">
 			@if($section['seckey']=='overall')
-				<h2>Performance Ranking By Category</h2>
+				<h2>{{trans(session('product.alias').'.performancerankingbycategory')}}</h2>
 			@else
 				<h2 class="{{$section['seckey']}} lower">{{$section['title']}}</h2>
 				<table style="width: 100%; margin-top: 4mm" cellpadding="1" cellspacing="0">
