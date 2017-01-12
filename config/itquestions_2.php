@@ -1,6 +1,6 @@
 <?php
 return array(
-    'Informazioni demografiche' => array(
+    'screeners' => array(
         'title' => 'Informazioni demografiche',
         'description' => 'Please tell us a few things about yourself and your company.',
         'colour' => '',
