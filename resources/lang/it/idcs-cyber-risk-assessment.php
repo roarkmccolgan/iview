@@ -9,7 +9,7 @@ return array(
     'question-title' => 'Prestazioni Ranking Con domanda',
     'question-intro' => '
         <p>
-            Adesso analizzeremo il rendimento della sua azienda nelle tre aree principali della preparazione nei confronti del rischio informatico. In ciascun caso, confronteremo il punteggio della sua azienda con quello dei suoi concorrenti con la stessa classificazione della preparazione <INSERT READINESS RANKING>. A tale scopo, analizzeremo la posizione della sua azienda, cercando di capire se è in ritardo, in linea o in vantaggio rispetto ai concorrenti.
+            Adesso analizzeremo il rendimento della sua azienda nelle tre aree principali della preparazione nei confronti del rischio informatico. In ciascun caso, confronteremo il punteggio della sua azienda con quello dei suoi concorrenti con la stessa classificazione della preparazione <strong>:rating</strong>. A tale scopo, analizzeremo la posizione della sua azienda, cercando di capire se è in ritardo, in linea o in vantaggio rispetto ai concorrenti.
         </p>
         <p>
             Se il punteggio sarà "in linea", vuol dire che la sua azienda è in linea con la maggioranza delle aziende dotate delmedesimo livello di preparazione. Se il punteggio sarà "in vantaggio", vuol dire che la sua azienda sta operando in maniera efficace e deve individuare le altre aree da migliorare per un approccio più equilibrato. Se il punteggio sarà "in ritardo", vuol dire che la sua azienda dovrà dedicare attenzione e investimenti in questo settore per tornare in linea con la preparazione dei concorrenti in termini di rischio informatico.
@@ -79,12 +79,12 @@ Se otterrai un punteggio in linea o in vantaggio in tutte le sezioni, a breve po
              Il rapporto divide i tuoi risultati per categoria e ti aiuta a valutare la tua posizione nei confronti delle altre organizzazioni.
         ',
         'link' => 'Scarica il rapporto',
-        'extra' => 'Once you\'ve digested the report why not visit <a href="http://www.fireeye.com" style="color:#E66B6B">FireEye</a>',
+        'extra' => 'Dopo aver digerito il rapporto perché non visitare <a href="http://www.fireeye.com" style="color:#E66B6B">FireEye</a>',
         'regards' => 'Regards',
         'team' => 'The IDC Team'
     ],
     'introduction_title' => 'Sommario del Report personalizzato e Classifica delle performance generali',
-    'introduction' => '',
+    'performancerankingbycategory' => 'Classifica delle performance per categoria',
     'introduction-image' => 'report.jpg',
     'overall' => array(
         'title'=>'Il Vostro livello di preparazione generale per la sicurezza',

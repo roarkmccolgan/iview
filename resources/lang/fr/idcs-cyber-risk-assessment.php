@@ -9,7 +9,7 @@ return array(
     'question-title' => 'Classement des performances par question',
     'question-intro' => '
         <p>
-            Nous allons maintenant analyser votre performance dans trois domaines clés de Préparation au cyber-risque. Dans chaque cas, nous évaluerons comment vous vous situez par rapport à d’autres organisations affichant le même niveau de préparation, soit <INSERT READINESS RANKING>. Pour ce faire, nous examinerons les domaines dans lesquels votre préparation est inférieure, satisfaisante ou supérieure par rapport à vos pairs.
+            Nous allons maintenant analyser votre performance dans trois domaines clés de Préparation au cyber-risque. Dans chaque cas, nous évaluerons comment vous vous situez par rapport à d’autres organisations affichant le même niveau de préparation, soit <strong>:rating</strong>. Pour ce faire, nous examinerons les domaines dans lesquels votre préparation est inférieure, satisfaisante ou supérieure par rapport à vos pairs.
         </p>
         <p>
             Si vous vous situez à un niveau satisfaisant, vous êtes dans la moyenne des autres entreprises en termes de niveau de préparation. Si vous vous situez à un niveau supérieur, cela signifie que vous excellez dans le domaine en question et que vous devriez identifier quels autres domaines ont besoin d’amélioration pour avoir une approche équilibrée. Si vous vous situez à un niveau inférieur, vous devez concentrer votre attention et vos investissements sur ce domaine afin d’ajuster votre Préparation au cyber-risque.
@@ -79,7 +79,7 @@ Si vous obtenez une note satisfaisante ou supérieure dans toutes les sections, 
             Ce rapport classe vos résultats par catégorie et vous aide à vous situer par rapport à d’autres organisations.
         ',
         'link' => 'Télécharger le rapport',
-        'extra' => 'Once you\'ve digested the report why not visit <a href="http://www.fireeye.com" style="color:#E66B6B">FireEye</a>',
+        'extra' => 'Une fois que vous avez digéré le rapport pourquoi ne pas visiter <a href="http://www.fireeye.com" style="color:#E66B6B">FireEye</a>',
         'regards' => 'Regards',
         'team' => 'The IDC Team'
     ],

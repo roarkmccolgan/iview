@@ -325,7 +325,7 @@
 								<table style="width: 100%; margin-top: 4mm" cellpadding="1" cellspacing="0">
 									<tr>
 										<td style="width: 10mm; vertical-align: top" rowspan="3">
-											<img src="{{session('url')}}/images/tools/{{session('product.id')}}/{{$position}}_sml.png" style="width: 8mm">
+											<img src="{{session('url')}}/images/tools/{{session('product.id')}}/{{strtolower(str_replace(' ', '', $position))}}_sml.png" style="width: 8mm">
 										</td>
 										<td style="vertical-align: top">
 											<span class="question-label">{{$question['name']}}:</span>
@@ -352,7 +352,7 @@
 																	<table class="grouptable">
 																		<tr>
 																			<td style="vertical-align: top; width: 3mm">
-																				<img src="{{session('url')}}/images/tools/{{session('product.id')}}/{{$opt['position'][session('result.'.$section['seckey'].'.rating')]}}_sml.png" style="width: 3mm">
+																				<img src="{{session('url')}}/images/tools/{{session('product.id')}}/{{strtolower(str_replace(' ', '', $opt['position'][session('result.'.$section['seckey'].'.rating')]))}}_sml.png" style="width: 3mm">
 																			</td>
 																			<td>
 																				{{$group['label']}}<br/>
@@ -382,11 +382,11 @@
 											{!!$compare!!}
 										</td>
 									</tr>
-									<tr>
+									{{-- <tr>
 										<td style="vertical-align: top" colspan="2">
 											{!!trans(session('product.alias').'.questions.'.$qkey.'.'.$position)!!}
 										</td>
-									</tr>
+									</tr> --}}
 								</table>
 							</div>
 						@endforeach

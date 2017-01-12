@@ -9,7 +9,7 @@ return array(
     'question-title' => 'Performance Ranking nach Frage',
     'question-intro' => '
         <p>
-            Wir werden jetzt analysieren, welche Ergebnisse Sie in drei wichtigen Bereichen der Widerstandsfähigkeit gegenüber Cyber-Risiken erzielt haben. In jedem Fall sehen wir uns an, wie Sie im Vergleich zu anderen Unternehmen in der gleichen Bewertungskategorie (<INSERT READINESS RANKING>) abgeschnitten haben. Dazu geben wir an, ob Sie im unteren Bereich, im Mittelfeld oder im Spitzenfeld liegen.
+            Wir werden jetzt analysieren, welche Ergebnisse Sie in drei wichtigen Bereichen der Widerstandsfähigkeit gegenüber Cyber-Risiken erzielt haben. In jedem Fall sehen wir uns an, wie Sie im Vergleich zu anderen Unternehmen in der gleichen Bewertungskategorie <strong>:rating</strong> abgeschnitten haben. Dazu geben wir an, ob Sie im unteren Bereich, im Mittelfeld oder im Spitzenfeld liegen.
         </p>
         <p>
             Falls Sie im Mittelfeld liegen, sind Sie im Wesentlichen mit den meisten Unternehmen in Ihrer Bewertungskategorie vergleichbar. Falls Sie im Spitzenfeld liegen, leisten Sie in diesem Bereich gute Arbeit. Sie sollten sich auf andere Bereiche konzentrieren, um Ihren Ansatz ausgewogener zu gestalten. Falls Sie im unteren Bereich liegen, müssen Sie Ihre Aufmerksamkeit und Ihre Investitionen auf diesen Bereich konzentrieren, um Ihre Widerstandsfähigkeit gegenüber Cyber-Risiken auf Spur zu bringen.
@@ -79,7 +79,7 @@ Falls Sie in allen Bereichen entweder im Mittel- oder im Spitzenfeld liegen, wer
             In dem Bericht werden Ihre Ergebnisse nach Kategorien aufgeschlüsselt. Dadurch können Sie Ihre Ergebnisse besser mit anderen Unternehmen vergleichen.
         ',
         'link' => 'Bericht herunterladen',
-        'extra' => 'Once you\'ve digested the report why not visit <a href="http://www.fireeye.com" style="color:#E66B6B">FireEye</a>',
+        'extra' => 'Sobald Sie den Bericht verdaut haben, warum nicht besuchen <a href="http://www.fireeye.com" style="color:#E66B6B">FireEye</a>',
         'regards' => 'Regards',
         'team' => 'The IDC Team'
     ],
