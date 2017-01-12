@@ -414,7 +414,7 @@ return array(
                                 )
                             ),
                             array(
-                                'label'=>'Détection proactive (solutions that are able to identify unknown threats through techniques such as behavioural analytics and machine learning, as opposed to being reliant on blocking known threats through the use of signatures)',
+                                'label'=>'Détection proactive',
                                 'name'=>'q4.2',
                                 'options'=>array(
                                     array(
