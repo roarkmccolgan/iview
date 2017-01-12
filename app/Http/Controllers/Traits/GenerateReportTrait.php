@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Traits;
 
 use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Lang;
 use Lava;
 use PDF;
@@ -12,30 +13,30 @@ trait GenerateReportTrait {
 	public function wkhtml($assessment_id, $name)
 	{
 		$chartSettings = [
-		'title' => null,
-		'backgroundColor' => [
-		'fill'=>'transparent'
-		],
-		'vAxis' => [
-		'baselineColor'=>'none',
-		'gridlines'=> [
-		'color'=> 'none'
-		]
-		],
-		'hAxis' => [
-		'textStyle' => [
-		'fontName' => 'Helvetica-light',
-		/*'fontSize' => 18,*/
-		/*'bold' => true,*/
-		/*'italic' => true,*/
-					// The color of the text.
-		'color' => '#939598',
-					// The color of the text outline.
-		/*'auraColor' => '#d799ae',*/
-					// The transparency of the text.
-		/*'opacity' => 0.8*/
-		]
-		],
+			'title' => null,
+			'backgroundColor' => [
+				'fill'=>'transparent'
+			],
+			'vAxis' => [
+				'baselineColor'=>'none',
+				'gridlines'=> [
+					'color'=> 'none'
+				]
+			],
+			'hAxis' => [
+				'textStyle' => [
+					'fontName' => 'Helvetica-light',
+					/*'fontSize' => 18,*/
+					/*'bold' => true,*/
+					/*'italic' => true,*/
+								// The color of the text.
+					'color' => '#939598',
+								// The color of the text outline.
+					/*'auraColor' => '#d799ae',*/
+								// The transparency of the text.
+					/*'opacity' => 0.8*/
+				]
+			],
 		'legend' => ['position'=> 'bottom'],
 		'colors' => ['#68aadd'],
 		'chartArea' => ['width'=>'100%', 'height'=>'80%'],
@@ -157,7 +158,6 @@ trait GenerateReportTrait {
 		    	'rating' => trans(session('product.alias').'.'.session('result.'.$section.'.rating')),
 		    	'score' => session('result.'.$section.'.score'),
 		    	'paragraph' => trans(session('product.alias').'.'.$section.'.'.session('result.'.$section.'.rating')),
-
 		    	];
 		    	$headervars['page'.$count] = trans(session('product.alias').'.'.$section.'.title');
 		    	$headervars['page_offest'] = 1;
@@ -202,6 +202,9 @@ trait GenerateReportTrait {
 			$merge->addPDF(storage_path().'/fireeye_report_end'.$locale .'.pdf', 'all');
 
 			$merge->merge('file', storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf', 'P');
+			if(File::exists(storage_path().'/'.$assessment_id.'_'.$name.'.pdf')){
+				File::delete(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
+			}
 		}else{
 			return $pdf->save(storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf');
 		}

@@ -1,7 +1,7 @@
 <?php
 return array(
     'screeners' => array(
-        'title' => 'Demographics',
+        'title' => 'Demografía',
         'description' => 'Please tell us a few things about yourself and your company.',
         'colour' => '',
         'class' => 'screeners',
@@ -170,13 +170,13 @@ return array(
         )
     ),
     'cyber-risk-management-and-the-business' => array(
-        'title' => 'Cyber Risk Management and the Business',
+        'title' => 'Gestión del riesgo cibernético y los negocios',
         'class' => 'sec2',
         'display' => true,
         'complete' => false,
         'pages' => array(
             'page1' => array(
-                'title' => 'Cyber Risk Management and the Business',
+                'title' => 'Gestión del riesgo cibernético y los negocios',
                 'questions' => array(
                     'q1'=>array(
                         'type'=>'button',
@@ -228,7 +228,7 @@ return array(
                 )*/
             ),
             'page2' => array(
-                'title' => 'Cyber Risk Management and the Business',
+                'title' => 'Gestión del riesgo cibernético y los negocios',
                 'questions' => array(
                     'q2'=>array(
                         'type'=>'button',
@@ -288,7 +288,7 @@ return array(
                 )
             ),
             'page3' => array(
-                'title' => 'Cyber Risk Management and the Business',
+                'title' => 'Gestión del riesgo cibernético y los negocios',
                 'questions' => array(
                     'q3'=>array(
                         'type'=>'button',
@@ -360,7 +360,7 @@ return array(
                 )
             ),
             'page4' => array(
-                'title' => 'Cyber Risk Management and the Business',
+                'title' => 'Gestión del riesgo cibernético y los negocios',
                 'questions' => array(
                     'q4'=>array(
                         'type'=>'groupradio',
@@ -718,7 +718,7 @@ return array(
                 'report' => false
             ),
             'page5' => array(
-                'title' => 'Cyber Risk Management and the Business',
+                'title' => 'Gestión del riesgo cibernético y los negocios',
                 'questions' => array(
                     'q5'=>array(
                         'type'=>'button',
@@ -790,7 +790,7 @@ return array(
                 )
             ),
             'page6' => array(
-                'title' => 'Cyber Risk Management and the Business',
+                'title' => 'Gestión del riesgo cibernético y los negocios',
                 'questions' => array(
                     'q6'=>array(
                         'type'=>'groupradio',
@@ -991,7 +991,7 @@ return array(
                 'report' => false
             ),
             'page7' => array(
-                'title' => 'Cyber Risk Management and the Business',
+                'title' => 'Gestión del riesgo cibernético y los negocios',
                 'questions' => array(
                     'q7'=>array(
                         'type'=>'button',
@@ -1063,7 +1063,7 @@ return array(
                 )
             ),
             'page8' => array(
-                'title' => 'Cyber Risk Management and the Business',
+                'title' => 'Gestión del riesgo cibernético y los negocios',
                 'questions' => array(
                     'q8'=>array(
                         'type'=>'button',
@@ -1138,13 +1138,13 @@ return array(
         )
     ),
     'cyber-risk-management-operations-and-defence' => array(
-        'title' => 'Cyber Risk Management Operations and Defence',
+        'title' => 'Operaciones de gestión del riesgo cibernético y defensa',
         'class' => 'sec2',
         'display' => true,
         'complete' => false,
         'pages' => array(
             'page1' => array(
-                'title' => 'Cyber Risk Management Operations and Defence',
+                'title' => 'Operaciones de gestión del riesgo cibernético y defensa',
                 'questions' => array(
                     'q9'=>array(
                         'type'=>'slider',
@@ -1709,7 +1709,7 @@ return array(
                 'report' => false
             ),
             'page2' => array(
-                'title' => 'Cyber Risk Management Operations and Defence',
+                'title' => 'Operaciones de gestión del riesgo cibernético y defensa',
                 'questions' => array(
                     'q10'=>array(
                         'type'=>'button',
@@ -1781,7 +1781,7 @@ return array(
                 )
             ),
             'page3' => array(
-                'title' => 'Cyber Risk Management Operations and Defence',
+                'title' => 'Operaciones de gestión del riesgo cibernético y defensa',
                 'questions' => array(
                     'q11'=>array(
                         'type'=>'slider',
@@ -2210,7 +2210,7 @@ return array(
                 'report' => false
             ),
             'page4' => array(
-                'title' => 'Cyber Risk Management Operations and Defence',
+                'title' => 'Operaciones de gestión del riesgo cibernético y defensa',
                 'questions' => array(
                     'q12'=>array(
                         'type'=>'button',
@@ -2282,7 +2282,7 @@ return array(
                 )
             ),
             'page5' => array(
-                'title' => 'Cyber Risk Management Operations and Defence',
+                'title' => 'Operaciones de gestión del riesgo cibernético y defensa',
                 'questions' => array(
                     'q13'=>array(
                         'type'=>'button',
@@ -2402,7 +2402,7 @@ return array(
                 )
             ),
             'page6' => array(
-                'title' => 'Cyber Risk Management Operations and Defence',
+                'title' => 'Operaciones de gestión del riesgo cibernético y defensa',
                 'questions' => array(
                     'q14'=>array(
                         'type'=>'button',
@@ -2486,7 +2486,7 @@ return array(
                 )
             ),
             'page7' => array(
-                'title' => 'Cyber Risk Management Operations and Defence',
+                'title' => 'Operaciones de gestión del riesgo cibernético y defensa',
                 'questions' => array(
                     'q15'=>array(
                         'type'=>'button',
@@ -2558,7 +2558,7 @@ return array(
                 )
             ),
             'page8' => array(
-                'title' => 'Cyber Risk Management Operations and Defence',
+                'title' => 'Operaciones de gestión del riesgo cibernético y defensa',
                 'questions' => array(
                     'q16'=>array(
                         'type'=>'button',
@@ -2630,7 +2630,7 @@ return array(
                 )
             ),
             'page9' => array(
-                'title' => 'Cyber Risk Management Operations and Defence',
+                'title' => 'Operaciones de gestión del riesgo cibernético y defensa',
                 'questions' => array(
                     'q17'=>array(
                         'type'=>'groupradio',
@@ -2826,7 +2826,7 @@ return array(
                 )
             ),
             'page10' => array(
-                'title' => 'Cyber Risk Management Operations and Defence',
+                'title' => 'Operaciones de gestión del riesgo cibernético y defensa',
                 'questions' => array(
                     'q25'=>array(
                         'type'=>'button',
@@ -2900,13 +2900,13 @@ return array(
         )
     ),
     'cyber-risk-management-breach-detection-and-remediation' => array(
-        'title' => 'Cyber Risk Management Breach Detection and Remediation',
+        'title' => 'Detección y reparación de brechas en la gestión de riesgos cibernéticos',
         'class' => 'sec3',
         'display' => true,
         'complete' => false,
         'pages' => array(
             'page1' => array(
-                'title' => 'Cyber Risk Management Breach Detection and Remediation',
+                'title' => 'Detección y reparación de brechas en la gestión de riesgos cibernéticos',
                 'questions' => array(
                     'q18'=>array(
                         'type'=>'groupradio',
@@ -3074,7 +3074,7 @@ return array(
                 'report' => false
             ),
             'page2' => array(
-                'title' => 'Cyber Risk Management Breach Detection and Remediation',
+                'title' => 'Detección y reparación de brechas en la gestión de riesgos cibernéticos',
                 'questions' => array(
                     'q19'=>array(
                         'type'=>'groupradio',
@@ -3242,7 +3242,7 @@ return array(
                 'report' => false
             ),
             'page3' => array(
-                'title' => 'Cyber Risk Management Breach Detection and Remediation',
+                'title' => 'Detección y reparación de brechas en la gestión de riesgos cibernéticos',
                 'questions' => array(
                     'q20'=>array(
                         'type'=>'groupradio',
@@ -3410,7 +3410,7 @@ return array(
                 'report' => false
             ),
             'page4' => array(
-                'title' => 'Cyber Risk Management Breach Detection and Remediation',
+                'title' => 'Detección y reparación de brechas en la gestión de riesgos cibernéticos',
                 'questions' => array(
                     'q21'=>array(
                         'type'=>'groupradio',
@@ -3578,7 +3578,7 @@ return array(
                 'report' => false
             ),
             'page5' => array(
-                'title' => 'Cyber Risk Management Breach Detection and Remediation',
+                'title' => 'Detección y reparación de brechas en la gestión de riesgos cibernéticos',
                 'questions' => array(
                     'q23'=>array(
                         'type'=>'button',
@@ -3686,7 +3686,7 @@ return array(
                 )
             ),
             'page6' => array(
-                'title' => 'Cyber Risk Management Breach Detection and Remediation',
+                'title' => 'Detección y reparación de brechas en la gestión de riesgos cibernéticos',
                 'questions' => array(
                     'q24'=>array(
                         'type'=>'button',

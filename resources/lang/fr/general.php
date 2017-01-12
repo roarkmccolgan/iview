@@ -2,18 +2,18 @@
 
 return array(
 
-    //Sage Cloud id 1
-    '1elqFormName'=>'',
-    '1restart'=>'Recommencer l\'évaluation',
-    '1assoc'=>'En partenariat avec',
-    '1sponsors'=>'SAGE',
-    '1title'=>'Tirez parti du cloud',
-    '1sub-title'=>'Gagnez en maturité',
-    '1landing'=>'
-        <h2>Gagnez en maturité</h2>
-        <p>Grâce au standard de développement cloud d\'IDC, vous pouvez positionner votre entreprise par rapport à 500 entreprises similaires aux États-Unis et en Europe et bénéficier de conseils de développement pour vos activités cloud..
-        </p>',
-    '1startbut'=>'Commencez ici',
+//Sage Cloud id 1
+	'1elqFormName'=>'',
+	'1restart'=>'Recommencer l\'évaluation',
+	'1assoc'=>'En partenariat avec',
+	'1sponsors'=>'SAGE',
+	'1title'=>'Tirez parti du cloud',
+	'1sub-title'=>'Gagnez en maturité',
+	'1landing'=>'
+	<h2>Gagnez en maturité</h2>
+	<p>Grâce au standard de développement cloud d\'IDC, vous pouvez positionner votre entreprise par rapport à 500 entreprises similaires aux États-Unis et en Europe et bénéficier de conseils de développement pour vos activités cloud..
+	</p>',
+	'1startbut'=>'Commencez ici',
 
     'timetoact'=>'Étape 1 : Il faut agir', //reactive
     'timetoacttxt'=>"À cette étape, les entreprises fournissent généralement des services cloud à la demande de leurs clients ou en tant que revendeur fournisseur. Les frais sont par conséquent générés des recommandations ou de la revente, et les entreprises se concentrent généralement sur les revenus de projets, plutôt que sur des sources de revenus récurrents à long terme. À cette étape, les entreprises ne se sont pas encore appropriées le cloud du futur et peuvent peiner à générer des profits cloud. Aucune vision n'est définie pour le cloud. Cependant, il est possible de mener à bien la transition si les décisionnaires clés agissent dès maintenant.",
@@ -36,7 +36,44 @@ return array(
     '1byreg'=>'En vous enregistrant avec IDC, vous acceptez notre <a href="/privacy" target="_blank">Politique de confidentialité</a> et la Politique de confidentialité de <a href="https://www.google.co.uk/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjP8fDawoHPAhXoJMAKHdT2DtAQFgg0MAA&url=http%3A%2F%2Fwww.sage.co.uk%2Flegal-and-site-information%2Fprivacy-and-cookies&usg=AFQjCNFd91qZtBFeQnqGlV1iRzsj-nh5Og&bvm=bv.131783435,d.ZGg" target="_blank">SAGE</a>. Les informations collectées seront partagées avec Sage à des fins de marketing direct. ',
     '1wait'=>'While you\'re waiting why not tweet your results and see how your colleagues measure up?',
 
-    
+    //FireEye Cloud id 2
+    '2elqFormName'=>'',
+    '2restart'=>'Recommencer l’évaluation',
+    '2assoc'=>'',
+    '2sponsors'=>'FireEye and HPE',
+    '2title'=>'Évaluation du cyber-risque par IDC',
+    '2sub-title'=>'Sponsorisé par FireEye et Hewlett Packard Enterprise',
+    '2landing'=>'
+    <h2>Votre préparation au cyber-risque</h2>
+    <p>La transformation numérique est l’un des principaux piliers de la stratégie des entreprises d’aujourd’hui et, à mesure que la réglementation se fait plus exigeante, la préparation au cyber-risque devient un catalyseur clé de l’infrastructure numérique. L’étude d’IDC montre que les services informatiques dynamiques ont généralement une approche plus mature envers la gestion du cyber-risque.
+    </p>
+    <p>
+    	Utilisez l’outil d’évaluation du cyber-risque IDC pour déterminer votre niveau de préparation. Cet outil offre un cadre de travail indépendant basé sur des faits pour vous aider à prendre des décisions éclairées concernant votre stratégie du cyber-risque et à comprendre les avantages d’une meilleure préparation face à la multiplication des cyber-menaces.
+    </p>
+    <p>
+    	Suite à cette enquête, vous recevrez un rapport personnalisé sur vos capacités évaluées selon nos critères de référence basés sur 500 entreprises en Europe. Ce rapport permettra d’identifier les points forts de vos capacités et fournira des conseils pour vous améliorer là où il y a des manques.
+    </p>',
+    '2startbut'=>'Commencer l’évaluation',
+    'adhoc'=>'Ad hoc', //reactive
+    'adhoctxt'=>"Organizations at this stage in their cloud maturity process tend to be providing cloud at the request of their customers, or as a vendor reseller. As a result, fees are derived from referrals or from resale, and organizations are generally focused on project revenues, rather than longer-term recurring revenue streams. Organizations at this stage in their cloud strategy are yet to embrace a cloud future and as a result may struggle to generate profits in this area. There is no defined vision for cloud, but there is time to make this transition if key decision makers act now.",
+    'adhoctweet' => "I took the @HPE Agil-IT-y Assessment and it's shown me where I can improve. Interested? http://bit.ly/1Y6JAqa",
+    'opportunistic'=>'Opportunistic',
+    'opportunistictxt'=>"Organizations at this stage in their cloud maturity are beginning to develop and deliver cloud-specific business models. Typically, this is not granular enough to account for different product lines or individual P&L, and is often unmanaged and untargeted. With measurement limited, there is little in the way of automation, whether it is process, methodology, or sale and delivery. While businesses at this stage of maturity are beginning to build cloud sales functions and cloud-based marketing, revenue still comes from resale of on-premise solutions. Despite this, recurring revenue growth is outpacing traditional business.",
+    'opportunistictweet' => "I took the @HPE Agil-IT-y Assessment and my company is on the right track. See how your business does... http://bit.ly/1Y6JAqa",
+    'repeatable'=>'Repeatable',
+    'repeatabletxt'=>"Organizations at this stage in their cloud maturity have a solid cloud business plan in place and are developing product-specific strategies, including professional services. Investments in cloud have been made and, more critically, investments are planned for the next two to three years. Organizations are beginning to monitor and target cloud-based revenues separately from license and other revenues. Many are also creating reusable processes and beginning to automate key functions. Marketing efforts are showing signs of sophistication, yet many organizations still need to migrate away from traditional marketing approaches. Organizations at this stage are likely to have established a well-structured technology roadmap and have started investing in cloud infrastructure, tools, and management technology. ",
+    'repeatabletweet' => "I took the @HPE Agil-IT-y Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    'managed'=>'Managed',
+    'managedtxt'=>"Organizations at this stage in their cloud maturity have developed in-depth planning across different cloud products, solutions, and architectures. This includes go-to-market strategies and sophisticated sales enablement. Many have established a portfolio of cloud offerings and related services, mainly through dedicated cloud sales, implementation, and support functions. Typically, organizations at this stage of their maturity can execute across multiple cloud architectures and have identified areas of specialism. This also enables them to measure and assess recurring revenues, and most have established tools and methodologies to drive efficiencies in implementation. This ensures renewals and the optimization of solutions.",
+    'managedtweet' => "I took the @HPE Agil-IT-y Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    'optimised'=>'Optimised',
+    'optimisedtxt'=>"For organizations at this stage in their maturity, cloud defines the investment and decision making in their future business direction. They are also fully committed to a recurring revenue business model. All aspects of the business are focused on a broad set of KPIs, from customer adoption and growth targets, to satisfaction levels and renewal rates. All systems and processes are designed to optimize cloud profitability and many have fully automated cloud processes to deliver economies of scale. Critically, there is an emphasis on selling solutions, as well as developing and maximizing internal IP.",
+    'optimisedtweet' => "I took the @HPE Agil-IT-y Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    '2send'=>'We can send you the full results directly to your mailbox',
+    '2fullreport'=>'Would you like the full report that provides you with some essential guidance in the development of your cloud business.?',
+    '2provide'=>'Veuillez simplement nous fournir votre nom et votre adresse e-mail afin de recevoir un lien pour pouvoir le télécharger.',
+    '2byreg'=>'By registering with IDC, you accept our <a href="/privacy" target="_blank">Privacy Policy</a> and <a href="https://www.fireeye.com/company/privacy.html" target="_blank">FireEye Privacy Policy</a> The information we collect will be shared with FireEye for the purpose of direct marketing',
+    '2wait'=>'While you\'re waiting why not tweet your results and see how your colleagues measure up?',    
 
     //general
     'next'=>'Suivant',
@@ -50,6 +87,7 @@ return array(
     'sname'=>'Nom',
     'email'=>'Adresse e-mail',
     'company'=>'Nom de la société',
+    'title'=>'Titre de l\'emploi',
     'country'=>'Pays',
     'phone'=>'Numéro de téléphone',
     'terms'=>'Conditions générales',
@@ -92,4 +130,4 @@ return array(
     'errorRelationship'=>'Please select Relationship Type',
     'errorQualification'=>'Please select Partner Type',
     'errorAccept'=>'Please accept the Terms &amp; Conditions',
-);
+    );

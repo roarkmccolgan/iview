@@ -6,7 +6,7 @@ return array(
     'stage3' => 'Repetible',
     'stage4' => 'Gestionado',
     'stage5' => 'Optimizado',
-    'question-title' => 'performance ranking by question',
+    'question-title' => 'Ranking de rendimiento por pregunta',
     'question-intro' => '
         <p>
             Ahora vamos a ver cómo fue su desempeño en tres áreas clave de preparación frente a riesgos informáticos. En cada caso, veremos cuáles fueron sus resultados en comparación con otros con el mismo grado de preparación <strong>:rating</strong> que usted. Para ello, comprobaremos si usted se encuentra por detrás, al mismo nivel o por delante de su colegas.
@@ -17,7 +17,7 @@ return array(
 
  Si obtiene una calificación de al mismo nivel o adelantado en todas las secciones, está preparado para subir un nivel de preparación a corto plazo.',
     'completecopy' => [
-        'graphtitle' => 'Your Cyber Risk Readiness',
+        'graphtitle' => 'Su preparación general en seguridad',
         'fullreport' => 'Podemos enviarle el informe completo directamente a su bandeja de entrada. Tan solo facilítenos su nombre y correo electrónico, y le enviaremos un enlace para descargarlo.',
         'provide' => 'Tan solo facilítenos su nombre y correo electrónico, y le enviaremos un enlace para descargarlo.',
         'stage1' => '
@@ -69,7 +69,7 @@ return array(
     ],
     'complete_thankyou' => 'Muchas gracias :Fname,',
     'complete_body' => 'Su informe personalizado llegará a su bandeja de entrada en breve. Mientras espera, ¿por qué no tuitea sus resultados y los compara con los de sus seguidores?',
-    'complete_tweet' => 'I\'ve just taken the @IDCUKI Cyber Risk Readiness Assessment Sponsored by @fireeye, we\'re at :result. Interested?',// http://bit.ly/2g8WN1d
+    'complete_tweet' => 'Acabo de realizar la evaluación de preparación para el riesgo cibernético de @IDCUKI patrocinada por @fireeye, estamos en la fase Repetible. ¿Está interesado?',// http://bit.ly/2g8WN1d
     'email'=>[
         'subject' => 'IDC Report',
         'hi' => 'Estimado :Fname',
@@ -82,15 +82,15 @@ return array(
         'regards' => 'Regards',
         'team' => 'The IDC Team'
     ],
-    'introduction_title' => 'Custom report summary and overall performance ranking',
+    'introduction_title' => 'Resumen ejecutivo del informe y ranking de rendimiento general personalizado',
     'introduction' => '',
     'introduction-image' => 'report.jpg',
     'overall' => array(
-        'title'=>'Your overall security readiness',
-        'graph-title'=>'How you compare overall',
+        'title'=>'Su preparación general en seguridad',
+        'graph-title'=>'Cómo se compara su organización en términos generales',
         'image'=>'',
-        'overall_country_graph-title' => 'Your comparison to others in your country',
-        'overall_size_graph-title' => 'Your comparison to companies of similar size',
+        'overall_country_graph-title' => 'Su comparación con otras organizaciones de su país',
+        'overall_size_graph-title' => 'Su comparación con empresas de tamaño similar',
         'stage1'=>'
             <p>
                 Gracias por completar la Evaluación de riesgos informáticos de IDC. Según el total de respuestas que ha facilitado, su grado de preparación es Ad-hoc, el grado más bajo de los cinco niveles de la evaluación.
@@ -133,7 +133,7 @@ return array(
         '
     ),
     'cyber-risk-management-and-the-business' => array(
-        'title'=>'Cyber Risk Management and the Business',
+        'title'=>'Gestión del riesgo cibernético y los negocios',
         'image'=>'cloud-vision-and-strategy.jpg',
         'pb'=>'pb',
         'stage1'=>'
@@ -168,7 +168,7 @@ return array(
         '
     ),
     'cyber-risk-management-operations-and-defence' => array(
-        'title'=> 'Cyber Risk Management Operations and Defence',
+        'title'=> 'Operaciones de gestión del riesgo cibernético y defensa',
         'image'=>'processes-and-skill-sets.jpg',
         'pb'=>'pb',
         'stage1'=>'

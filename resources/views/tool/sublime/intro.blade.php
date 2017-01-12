@@ -42,7 +42,7 @@
                                     {{Lang::get('general.'.session('product.id').'changelang')}}:<br/>
                                     <span class="lang">{{strtoupper(App::getLocale())}}</span>
                                     @foreach($tool->languages as $language)
-                                    @if(App::getLocale()!=$language->abbreviation) | <a href="/{{$language->abbreviation}}" class="lang {{$language->abbreviation}}">{{strtoupper($language->abbreviation)}}</a>@endif
+                                    @if(App::getLocale()!=$language->abbreviation) | <a href="/{{$language->abbreviation=='en' ? '':$language->abbreviation}}" class="lang {{$language->abbreviation}}">{{strtoupper($language->abbreviation)}}</a>@endif
                                     @endforeach
                                 </div>
                             @endif

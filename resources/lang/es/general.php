@@ -82,7 +82,7 @@ Complete la Herramienta de Evaluación de riesgos informáticos de IDC para sabe
     'errorSname'=>'Introduzca su apellido',
     'errorEmail'=>'Escriba su dirección de correo electrónico',
     'errorCompany'=>'Escriba el nombre de su empresa',
-    'errorCountry'=>'Please select your country',
+    'errorCountry'=>'Escriba el su país',
     'errorNumber'=>'Escriba su número de teléfono',
     'errorRelationship'=>'Please select Relationship Type',
     'errorQualification'=>'Please select Partner Type',

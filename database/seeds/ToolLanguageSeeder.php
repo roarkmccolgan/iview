@@ -37,5 +37,9 @@ class ToolLanguageSeeder extends Seeder
             'tool_id' => 2,
             'language_id' => 23
         ]);
+        DB::table('language_tool')->insert([ //german FireEye
+            'tool_id' => 2,
+            'language_id' => 34
+        ]);
     }
 }
