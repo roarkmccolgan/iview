@@ -148,7 +148,7 @@ class AssessmentController extends Controller
         $telNum = null;
         foreach ($assessments as $assKey => $assessment) {
             if(is_null($telNum)) $telNum = array_search("tel",array_keys($assessment));
-            if(!is_null($assessment['extra'])){
+            if(!is_null($assessment['extra']) && $assessment['extra']!='null'){
                 foreach ($assessment['extra'] as $exKey => $extra) {
                     if(!is_null($extra)){
                         $assessments[ucfirst($assKey)][$exKey] = $extra;

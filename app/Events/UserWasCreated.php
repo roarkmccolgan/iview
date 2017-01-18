@@ -14,16 +14,18 @@ class UserWasCreated extends Event
 
     public $user;
     public $tool;
+    public $url;
 
     /**
      * Create a new event instance.
      *
      * @return void
      */
-    public function __construct(User $user,Tool $tool)
+    public function __construct(User $user,Tool $tool, $url)
     {
         $this->user = $user;
         $this->tool = $tool;
+        $this->url = $url;
     }
 
     /**

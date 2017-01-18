@@ -2794,6 +2794,15 @@ div.dataTables_length label select {
   color: #FFF;
   padding: 20px 10px;
 }
+.cl-mcont .block .stat-data .stat-orange,
+.cl-mcont .block-flat .stat-data .stat-orange {
+  background: #FF8A65;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  text-align: center;
+  color: #FFF;
+  padding: 20px 10px;
+}
 .cl-mcont .block .stat-data .stat-number,
 .cl-mcont .block-flat .stat-data .stat-number {
   border-bottom: 1px solid #dadada;

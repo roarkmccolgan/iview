@@ -318,6 +318,7 @@ Complete the IDC Cyber Risk Assessment Tool to find out more about how ready you
     'errorSname'=>'Enter your surname',
     'errorEmail'=>'Enter a valid email address',
     'errorCompany'=>'Enter your company name',
+    'errorTitle'=>'Enter your title',
     'errorCountry'=>'Please select your country',
     'errorNumber'=>'Please enter a valid phone number',
     'errorRelationship'=>'Please select Relationship Type',

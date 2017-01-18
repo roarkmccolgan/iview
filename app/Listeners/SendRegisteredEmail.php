@@ -31,7 +31,7 @@ class SendRegisteredEmail implements ShouldQueue
     {
         $user = $event->user;
         $tool = $event->tool;
-        $url = $tool->urls->first();
+        $url = $event->url;
         $viewData = [
             'user'=>$user,
             'tool'=>$tool,

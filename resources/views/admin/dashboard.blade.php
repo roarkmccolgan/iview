@@ -82,6 +82,7 @@
 				</div>
 				<div data-step="3" data-intro="&lt;strong&gt;Unique Styled Plugins&lt;/strong&gt; &lt;br/&gt; We put love in every detail to give a great user experience!." class="content blue-chart">
 					<div id="site_statistics" style="height:180px;"></div>
+					<div class="text-center" style="color: #6EB6F6">Day of month</div>
 				</div>
 				<div class="content">
 					<div class="stat-data">
@@ -115,6 +116,15 @@
 				</div>
 				<div class="content red-chart">
 					<div id="site_statistics2" style="height:180px;"></div>
+					<div class="text-center" style="color: #FFA487">Day of month</div>
+				</div>
+				<div class="content">
+					<div class="stat-data">
+						<div class="stat-orange">
+							<h2>{{$complete_total}}</h2><span>Completion{{$complete_total > 1 ? 's':''}}</span>
+						</div>
+					</div>
+					<div class="clear"></div>
 				</div>
 				<div class="content no-padding">
 					<table class="red">
@@ -127,6 +137,7 @@
 							</tr>
 						</thead>
 						<tbody class="no-border-x">
+						@if ($tool->trackers->count()>0)
 							@foreach($tool->trackers as $tracker)
 							<tr>
 								<td style="width:40%;"><i class="fa fa-user"></i> {{$tracker->name}} ({{$tracker->code}})</td>
@@ -135,9 +146,15 @@
 								<td class="text-right">{{$tracker->completions}}</td>
 							</tr>
 							@endforeach
+						@else
+							<tr>
+								<td class="text-center" colspan="4">No codes setup, <a href="{{url('/admin/tracking/new')}}">add one</a></td>
+							</tr>
+						@endif
 						</tbody>
 					</table>
 				</div>
+
 			</div>
 		</div>
 	</div>
@@ -219,7 +236,7 @@
 								<tr>
 									<td>{{$dropoff[0]}}</td>
 									<td>{{$dropoff[1]}}</td>
-									<td class="text-right">{{$dropoff[2]}}</td>
+									<td class="text-right">{{round($dropoff[2], 1, PHP_ROUND_HALF_UP)}}</td>
 								</tr>
 							@endforeach
 						</tbody>

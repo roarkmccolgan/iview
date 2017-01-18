@@ -12,26 +12,13 @@ use App\Tracker;
 | and give it the controller to call when that URI is requested.
 |
 */
-
-//Route::get('/', 'WelcomeController@index');
-
-
-
-/*Route::controllers([
-    'auth' => 'Auth\AuthController',
-    'password' => 'Auth\PasswordController',
-]);*/
-
-	//Products
-	//Route::get('/', 'ProductController@index');
-	//Route::get('/tool', 'ToolController@run');
 Route::auth();
 Route::get('/change_password', 'UserController@showChangePassword');
 Route::post('/change_password', 'UserController@storeChangePassword');
 //Route::get('/', 'HomeController@index');
 
 Route::group(['prefix' => 'admin', 'middleware'=>['auth']], function(){
-	
+
 	Route::get('ga', 'AnalyticsController@index');
 
 	//IVIEWS
@@ -76,59 +63,32 @@ Route::group(['domain' => '{subdomain}.idcready.net','middleware'=>['locale']], 
 		});
 	});
 
-	/*//languages routes
-	Route::group(['prefix' => '{lang?}','middleware'=>['locale']], function($lang = 'en'){
-	    Route::get('/', 'ToolController@run')->middleware(['routebyurl','reloadquestions']);
-
-		Route::get('/download/{assid}', 'ToolController@getDownload');
-		
-	    Route::get('/pdf', 'PdfController@wkhtml');
-	    Route::get('/template/default/report/header', function(){
-	    	return View::make('tool.default.report.header');
-	    });
-	    Route::get('/template/default/report/footer', function(){
-	    	$product_id = session('product.id');
-	    	$company_alias = session('company.alias');
-	    	$url = session('url');
-	    	return View::make('tool.default.report.footer', compact(['url','product_id','company_alias']));
-	    });
-
-	    Route::group(['prefix' => 'quiz'], function(){
-
-			Route::get('/{section}/page{num}', 'ToolController@getPage');
-			Route::post('/{section}/page{num}', 'ToolController@savePage');
-
-			Route::get('/complete', 'ToolController@getComplete');
-			Route::post('/complete', 'ToolController@postComplete');
-			Route::get('/download', 'ToolController@fakeDownload');
-		});
-	});*/
 	//default en routes
 	Route::get('/', 'ToolController@run')->middleware(['routebyurl','reloadquestions']);
 
 	Route::get('/download/{assid}', 'ToolController@getDownload');
-	
-    Route::get('/pdf', 'PdfController@wkhtml');
-    Route::get('/template/default/report/header', function(){
-    	return View::make('tool.default.report.header');
-    });
-    Route::get('/template/sublime/report/header', function(){
-    	return View::make('tool.sublime.report.header');
-    });
-    Route::get('/template/default/report/footer', function(){
-    	$product_id = session('product.id');
-    	$company_alias = session('company.alias');
-    	$url = session('url');
-    	return View::make('tool.default.report.footer', compact(['url','product_id','company_alias']));
-    });
-    Route::get('/template/sublime/report/footer', function(){
-    	$product_id = session('product.id');
-    	$company_alias = session('company.alias');
-    	$url = session('url');
-    	return View::make('tool.sublime.report.footer', compact(['url','product_id','company_alias']));
-    });
-    Route::group(['prefix' => 'quiz'], function(){
 
+	Route::get('/pdf', 'PdfController@wkhtml');
+	Route::get('/template/{templates}/report/header', function($domain, $template){
+		return View::make('tool.'.$template.'.report.header');
+	});
+	/*Route::get('/template/sublime/report/header', function(){
+		return View::make('tool.sublime.report.header');
+	});*/
+	Route::get('/template/{template}/report/footer', function($domain, $template){
+		$product_id = session('product.id');
+		$company_alias = session('company.alias');
+		$url = session('url');
+		return View::make('tool.'.$template.'.report.footer', compact(['url','product_id','company_alias']));
+	});
+	/*Route::get('/template/sublime/report/footer', function(){
+		$product_id = session('product.id');
+		$company_alias = session('company.alias');
+		$url = session('url');
+		return View::make('tool.sublime.report.footer', compact(['url','product_id','company_alias']));
+	});*/
+
+	Route::group(['prefix' => 'quiz'], function(){
 		Route::get('/{section}/page{num}', 'ToolController@getPage');
 		Route::post('/{section}/page{num}', 'ToolController@savePage');
 
@@ -141,55 +101,55 @@ Route::group(['domain' => '{subdomain}.idcready.net','middleware'=>['locale']], 
 
 Route::group(['prefix' => 'api'], function(){
 	/*Route::bind('assessment', function ($value) {
-        return App\Assessment::findOrFail($value);
-    });
-    Route::bind('tracker', function ($value) {
-        return App\Tracker::findOrFail($value);
-    });
-    Route::bind('user', function ($value) {
-        return App\User::findOrFail($value);
-    });*/
+		return App\Assessment::findOrFail($value);
+	});
+	Route::bind('tracker', function ($value) {
+		return App\Tracker::findOrFail($value);
+	});
+	Route::bind('user', function ($value) {
+	m_returnstatus(conn, identifier) App\User::findOrFail($value);
+	});*/
 	//API
 	Route::get('languages', function ($iviewId) {
-	    return App\Language::all();
+		return App\Language::all();
 	});
 	Route::get('iviews', function ($iviewId) {
-	    return App\Iview::all();
+		return App\Iview::all();
 	});
 
-	Route::get('iview/{id}', function ($iviewId) {
-	    return App\iview::findOrFail($iviewId);
-	});
+    Route::get('iview/{id}', function ($iviewId) {
+    	return App\iview::findOrFail($iviewId);
+    });
 
-	Route::get('iview/{id}/urls', function ($iviewId) {
-	    $iview = App\iview::find($iviewId);
-	    $urls = [];
-	    foreach ($iview->urls as $url) {
-	        $urls[] = ['value'=>$url->id,'text'=>$url->subdomain.".".$url->domain];
-	    }
-	    return $urls;
-	});
-	Route::get('results/{section}', 'ToolController@getCalcResults');
+    Route::get('iview/{id}/urls', function ($iviewId) {
+    	$iview = App\iview::find($iviewId);
+    	$urls = [];
+    	foreach ($iview->urls as $url) {
+    		$urls[] = ['value'=>$url->id,'text'=>$url->subdomain.".".$url->domain];
+    	}
+    	return $urls;
+    });
+    Route::get('results/{section}', 'ToolController@getCalcResults');
 
-	Route::get('legacytables', function () {
-	    $tables = [];
-	    Config::set('database.fetch', PDO::FETCH_ASSOC);
-	    $allTables = DB::connection('mysqliview')->select('SHOW TABLES');
-	    foreach ($allTables as $table) {
-	        foreach ($table as $key => $name) {
-	            $tables[] = $name;
-	        }
-	    }
-	    return $tables;
-	});
+    Route::get('legacytables', function () {
+    	$tables = [];
+    	Config::set('database.fetch', PDO::FETCH_ASSOC);
+    	$allTables = DB::connection('mysqliview')->select('SHOW TABLES');
+    	foreach ($allTables as $table) {
+    		foreach ($table as $key => $name) {
+    			$tables[] = $name;
+    		}
+    	}
+    	return $tables;
+    });
 
-	Route::post('fieldnames', function () {
-	    $columns = [];
-	    Config::set('database.fetch', PDO::FETCH_ASSOC);
-	    $allcolumns = DB::connection(Request::input('connection'))->select('DESCRIBE '.Request::input('table_name'));
-	    foreach ($allcolumns as $column) {
-	        $columns[]=$column['Field'];
-	    }
-	    return $columns;
-	});
+    Route::post('fieldnames', function () {
+    	$columns = [];
+    	Config::set('database.fetch', PDO::FETCH_ASSOC);
+    	$allcolumns = DB::connection(Request::input('connection'))->select('DESCRIBE '.Request::input('table_name'));
+    	foreach ($allcolumns as $column) {
+    		$columns[]=$column['Field'];
+    	}
+    	return $columns;
+    });
 });

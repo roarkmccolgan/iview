@@ -81,6 +81,7 @@ class UserController extends Controller
     public function store(AddUserRequest $request)
     {
         $tool = $request->get('product');
+        $url = $tool->urls->first();
 
     	$password = Hash::make(str_random(8));
         $user = User::create([
@@ -98,7 +99,7 @@ class UserController extends Controller
             $user->changePassword = 0;
         }
         $user->save();
-        Event::fire(new UserWasCreated($user,$tool));
+        Event::fire(new UserWasCreated($user,$tool,$url));
 
         return redirect('admin/users')->with('status', ['type'=>'success','message'=>'User Created']);
     }

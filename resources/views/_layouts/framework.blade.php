@@ -9,7 +9,7 @@
 	<meta id="token" name="token" value="{{ csrf_token() }}">
 	<link rel="shortcut icon" href="{{ asset('/images/favicon.png') }}">
 
-	<title>IDC Terminal - iViews</title>
+	<title>IDC Terminal</title>
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700,800" rel="stylesheet" type="text/css">
 	<link href="http://fonts.googleapis.com/css?family=Raleway:300,200,100" rel="stylesheet" type="text/css">
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet" type="text/css">
