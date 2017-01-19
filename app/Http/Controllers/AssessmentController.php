@@ -136,7 +136,7 @@ class AssessmentController extends Controller
                 $query->where('downloaded', false);
             }]);
         }
-        $assessments = Assessment::find(28);
+        //$assessments = Assessment::find(28);
 
         $tool->assessments()->update(['downloaded' => 1]);
 
@@ -149,6 +149,7 @@ class AssessmentController extends Controller
         foreach ($assessments as $assKey => $assessment) {
             if(is_null($telNum)) $telNum = array_search("tel",array_keys($assessment));
             if(!is_null($assessment['extra']) && $assessment['extra']!='null'){
+                dd($assessment['extra']);
                 foreach ($assessment['extra'] as $exKey => $extra) {
                     if(!is_null($extra)){
                         $assessments[ucfirst($assKey)][$exKey] = $extra;
