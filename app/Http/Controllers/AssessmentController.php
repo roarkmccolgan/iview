@@ -156,7 +156,7 @@ class AssessmentController extends Controller
                 }
                 unset($assessments[$assKey]['extra']);
             }else{
-                dd($assessment['extra']);
+                dd($assessments);
             }
             foreach ($assessment['result'] as $resKey => $result) {
                 if($resKey!='overall'){
