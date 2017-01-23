@@ -12,7 +12,7 @@ return array(
     'complete_body' => 'Your custom report will arrive in your inbox soon.<br/>
 Please check in your junk folder if you don\'t receive it within 5 minutes.<br/>
 While you\'re waiting why not share your results and see how your followers measure up?',
-    'complete_tweet' => 'I\'ve just taken the Cloud Readiness Assessment Sponsored by @RedHatNews %26 @IDCEMEA, we\'re at :result. Interested? http://bit.ly/2gslXEh #IDCcloudreadypartners',// http://bit.ly/2gslXEh
+    'complete_tweet' => 'I\'ve just taken the @IDCEMEA Cloud Readiness Assessment Tool for @RedHatNews. Interested in your own readiness? http://bit.ly/2gslXEh',// http://bit.ly/2gslXEh
     'email'=>[
         'subject' => 'IDC Cloud Readiness Assessment',
         'hi' => 'Hi :Fname',

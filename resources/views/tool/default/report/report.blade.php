@@ -20,7 +20,7 @@
 		<div class="spacer"></div>
 		@if(isset($introduction))
 		<div class="introduction">
-			<h2>Introduction</h2>
+			<h2>trans('general.introduction')</h2>
 			{!!$introduction!!}
 		</div>
 		@endif

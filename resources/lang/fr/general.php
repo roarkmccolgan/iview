@@ -76,6 +76,7 @@ return array(
     '2wait'=>'While you\'re waiting why not tweet your results and see how your colleagues measure up?',    
 
     //general
+    'introduction' => 'Introduction',
     'next'=>'Suivant',
     'back'=>'Back',
     'continue'=>'Continue with the Assessment',
