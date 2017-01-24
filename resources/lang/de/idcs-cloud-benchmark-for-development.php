@@ -135,11 +135,10 @@ return array(
         <h5>Unterstützung durch die Geschäftsleitung:</h5>
         <p>
             Sichern Sie sich die Unterstützung der Führungsebene für Ihre Cloud-Strategie, und zwar über sämtliche Geschäftsfunktionen hinweg: Firmenleitung, Marketing, Vertrieb, operatives Geschäft und Finanzen. Auf diese Weise sind Sie in der Lage, das Angebot zu skalieren und entsprechende Investitionen zu tätigen, wenn Ihr Cloud-Geschäft wächst.
-Erstellung von Finanzmodellen: Bei der Cloud-Planung sind Wachstum, Umsatz und vor allem Rentabilität zu berücksichtigen. Lassen Sie sich beraten, und erstellen Sie Finanzmodelle basierend auf den potenziellen Auswirkungen wiederkehrender Einnahmen auf Ihren Bruttoumsatz und Ihre Rentabilität.
         </p>
-        <h5>Create financial models:</h5>
+        <h5>Erstellung von Finanzmodellen: </h5>
         <p>
-            Your cloud planning needs to factor in growth, revenue, and, critically, profitability. Seek guidance and create financial models exploring the potential impact of recurring revenue on your topline revenue and profitability. 
+            Bei der Cloud-Planung sind Wachstum, Umsatz und vor allem Rentabilität zu berücksichtigen. Lassen Sie sich beraten, und erstellen Sie Finanzmodelle basierend auf den potenziellen Auswirkungen wiederkehrender Einnahmen auf Ihren Bruttoumsatz und Ihre Rentabilität.
         </p>
         ',
         'stage3'=>'
@@ -240,9 +239,9 @@ Fokus auf der Entwicklung geistigem Eigentum:
         <p>
             Viele Cloud-Projekte werden auf Ad-hoc-Basis bereitgestellt, und nur wenige Prozesse oder Methoden sind formalisiert oder wiederverwendbar. Die begrenzte Automatisierung von Vertriebs- und Bereitstellungsprozessen erhöht den Druck auf die Margen.
         </p>
-        <h3>Capabilities:</h3>
+        <h3>Einschätzung von Kompetenzlücken::</h3>
         <p>
-            Training tends to be ad hoc and often self-administered. There is little room for wider development, as the business has yet to spare time and capital to invest. The opportunity, however, is there for those willing to take it.
+            Im Hinblick auf die kurzfristig, mittelfristig und langfristig erforderlichen Kompetenzen sollten Sie ermitteln, in welchen Bereichen Aufhol- und Investitionsbedarf besteht. Beginnen Sie damit, abteilungsspezifische Schulungspläne zu entwickeln, z. B. für Technik, Marketing, Vertrieb usw.
         </p>
         <h3>Empfehlungen:</h3>
         <h5>Messungen sind von entscheidender Bedeutung: </h5>

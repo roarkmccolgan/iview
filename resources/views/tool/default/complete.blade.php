@@ -46,32 +46,32 @@
 						@foreach(config('terminal.default_fields') as $fieldKey => $field )
 							<div class="col-md-{{$field['col']}} form-group{{$errors->has($fieldKey)?' error':''}}">
 								@php
-									switch ($field['type']) {
-										case 'text':
-											@endphp
-											<label>{!!trans('general.'.$fieldKey)!!}{{$field['required'] ? '*':''}}</label>
-											<input type="text" class="form-control {{$field['required'] ? 'req':''}}" value="{{isset($source[$fieldKey]) ? $source[$fieldKey]:''}}" name="{{$fieldKey}}">
-											<span>{!!trans('general.'.$field['error'])!!}</span>
-											@php
-											break;
-										case 'select':
-											@endphp
-											<label>{!!trans('general.'.$fieldKey)!!}{{$field['required'] ? '*':''}}</label>
-											<select id="{{$fieldKey}}" name="{{$fieldKey}}" class="form-control sel {{$field['required'] ? 'req':''}}">
-												@foreach($field['options'] as $value => $label)
-													<option value="{{$value=='null' ? '': $value}}">{{$label}}</option>
-												@endforeach
-											</select>
-											@if(isset($source[$fieldKey]))
-											<script>
-												var element = document.getElementById('{{$fieldKey}}');
-												element.value = '{{$source[$fieldKey]}}';
-											</script>
-											@endif
-											<span>{!!trans('general.'.$field['error'])!!}</span>
-											@php
-											break;
-									}
+								switch ($field['type']) {
+									case 'text':
+										@endphp
+										<label>{!!trans('general.'.$fieldKey)!!}{{$field['required'] ? '*':''}}</label>
+										<input type="text" class="form-control {{$field['required'] ? 'req':''}}" value="{{isset($source[$fieldKey]) ? $source[$fieldKey]:''}}" name="{{$fieldKey}}">
+										<span>{!!trans('general.'.$field['error'])!!}</span>
+										@php
+										break;
+									case 'select':
+										@endphp
+										<label>{!!trans('general.'.$fieldKey)!!}{{$field['required'] ? '*':''}}</label>
+										<select id="{{$fieldKey}}" name="{{$fieldKey}}" class="form-control sel {{$field['required'] ? 'req':''}}">
+											@foreach($field['options'] as $value => $label)
+												<option value="{{$value=='null' ? '': $value}}">{{$label}}</option>
+											@endforeach
+										</select>
+										@if(isset($source[$fieldKey]))
+										<script>
+											var element = document.getElementById('{{$fieldKey}}');
+											element.value = '{{$source[$fieldKey]}}';
+										</script>
+										@endif
+										<span>{!!trans('general.'.$field['error'])!!}</span>
+										@php
+										break;
+								}
 								@endphp
 							</div>
 							@if(isset($field['extra']) && $extra_fields)

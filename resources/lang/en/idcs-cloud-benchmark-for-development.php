@@ -238,9 +238,9 @@ return array(
         <p>
             Many cloud projects are delivered on an ad hoc basis, with very few processes or methodologies either formalized or reused. Limited automation in sales and delivery processes places even greater pressure on margins.
         </p>
-        <h3>Capabilities:</h3>
+        <h3>Capability gap assessment:</h3>
         <p>
-            Training tends to be ad hoc and often self-administered. There is little room for wider development, as the business has yet to spare time and capital to invest. The opportunity, however, is there for those willing to take it.
+            With a view to your short-term, mid-term, and long-term skills requirements, you should look to understand where you are falling behind and where investments need to be made. Start the process of building a training plan by individual department: technical, marketing, and sales, for example.
         </p>
         <h3>Recommendations:</h3>
         <h5>Measurement is fundamental:</h5>
@@ -704,10 +704,10 @@ return array(
         <p>
             Customer engagement should focus on digital transformation enablement and sales skills. There should be a strong alignment between the marketing and sales departments, with marketing functioning as an extension of the sales force, particularly for new customer acquisition.
         </p>
-        <h5>Hiring of wider skill-sets:</h5>
+        <!--h5>Hiring of wider skill-sets:</h5>
         <p>
             Further recruitment of vertical and business function sales staff will help cement your position in certain markets, enabling you to retain key customers over a number of years and grow the business further. Also consider hiring non-traditional skills for digital capabilities, data science, and deep analytics.
-        </p>
+        </p-->
         <h5>Deeper partnerships:</h5>
         <p>
             Continuously invest in partnerships with strategic vendors, as well as with customers. This will help ensure continuous evolution of the sales process within the business.
