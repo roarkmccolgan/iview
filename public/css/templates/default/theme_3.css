@@ -6,7 +6,7 @@ html {
 	position: relative;
 	min-height: 100%;
 	/*Image only BG fallback*/
-	background: url('img/491448043.jpg');
+	background: url('img/491448043.jpg?1234');
 	/*background = gradient + image pattern combo*/
 	background: 
 		linear-gradient(rgba(64, 63, 77, 0.7), rgba(0, 0, 0, 0.7)),
