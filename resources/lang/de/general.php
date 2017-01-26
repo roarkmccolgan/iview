@@ -107,7 +107,7 @@ Nutzen Sie das IDC-Tool zur Cyber-Risikobewertung, um herauszufinden, wie widers
     'terms'=>'Terms &amp; Bedingungen',
     'accept'=>'Ich stimme den Bedingungen zu',
     'required'=>'Erforderlich',
-    'emailreport'=>'Senden Sie mir meinen individuellen Bericht zur Widerstandsfähigkeit gegenüber Cyber-Risiken per E-Mail zu',
+    'emailreport'=>'Absenden',
     'hi'=>'Hallo',
     'soon'=>'Ihr Download-Link wird in Ihrem Posteingang bald.',
     'multierror'=>'Bitte beantworten Sie diese Frage, um fortzufahren.',

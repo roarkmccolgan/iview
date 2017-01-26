@@ -46,12 +46,15 @@
 				//for (var j=0; j<y.length; ++j) y[j].textContent = vars[x[i]];
 			}
 			var y = document.getElementsByClassName('subtitle');
-			for(var j = 0; j < y.length; j++)  
-			{  
-		         // if current page is not the first page 
-		         if(vars[x[2]]>1){
-		         	y[j].innerHTML = vars['page'+(vars[x[2]]-vars[x[17]])];
-		         }
+			for(var j = 0; j < y.length; j++) {  
+				// if current page is not the first page 
+				if(vars[x[2]]>1){
+					if(vars['page'+(vars[x[2]]-vars[x[17]])] !== undefined){
+						y[j].innerHTML = vars['page'+(vars[x[2]]-vars[x[17]])];
+					}else{
+						y[j].innerHTML = "";
+					}
+				}
 		     }
 		 }
 		</script>
