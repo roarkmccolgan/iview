@@ -6,35 +6,35 @@ return array(
         'complete' => false,
         'pages' => array(
             'page1' => array(
-                'title' => 'Cloud Vision and Strategy',
+                'title' => 'CLOUD-VISION UND -STRATEGIE',
                 'questions' => array(
                     'q1'=>array(
                         'type'=>'button',
-                        'question'=>'Which best describes your overall business model? We focus on:',
+                        'question'=>'Welche dieser Aussagen beschreibt Ihr Geschäftsmodell am besten? Wir konzentrieren uns auf:',
                         'name'=>'q1',
                         'options'=>array(
                             array(
-                                'label'=>'Project-based business and refer any cloud opportunities to our vendor partners.',
+                                'label'=>'Projektbasierte Geschäfte. Wir leiten alle cloudbezogenen Geschäftschancen an unsere Partner weiter.',
                                 'value'=>1,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Project-based business and we resell vendor-branded cloud products on an ad hoc basis, adding value where we can.',
+                                'label'=>'Projektbasierte Geschäfte. Wir verkaufen Cloud-Produkte anderer Hersteller auf Ad-hoc-Basis weiter und bemühen uns um wertsteigernde Aktivitäten.',
                                 'value'=>2,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Converting project-based business into recurring revenue contracts, adding our own professional services where possible.',
+                                'label'=>'Die Umstellung von projektbasierten Geschäften auf wiederkehrende Einnahmen aus Verträgen. Wir bieten nach Möglichkeit auch eigene Professional Services an.',
                                 'value'=>3,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Delivering vendor cloud offerings that are attached to our professional services including business consulting, systems integration, migration, and managed services.',
+                                'label'=>'Die Bereitstellung von Cloud-Angeboten anderer Hersteller in Kombination mit eigenen Professional Services wie Unternehmensberatung, Systemintegration, Migration und Managed Services.',
                                 'value'=>4,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Delivering our own branded recurring revenue cloud services.',
+                                'label'=>'Die Bereitstellung eigener Cloud-Services und wiederkehrende Einnahmen.',
                                 'value'=>5,
                                 'checked'=>false
                             )
@@ -47,35 +47,35 @@ return array(
                 )*/
             ),
             'page2' => array(
-                'title' => 'Cloud Vision and Strategy',
+                'title' => 'CLOUD-VISION UND -STRATEGIE',
                 'questions' => array(
                     'q2'=>array(
                         'type'=>'button',
-                        'question'=>'Which best describes your company\'s cloud business focus for your customers? We focus on:',
+                        'question'=>'Welche dieser Aussagen beschreibt den Schwerpunkt Ihres Cloud-Geschäfts für Ihre Kunden am besten? Wir konzentrieren uns auf:',
                         'name'=>'q2',
                         'options'=>array(
                             array(
-                                'label'=>'Reselling public cloud services such as SaaS, IaaS, and PaaS.',
+                                'label'=>'Den Wiederverkauf öffentlicher Cloud-Services wie SaaS, IaaS und PaaS.',
                                 'value'=>1,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Building on-premise private cloud environments.',
+                                'label'=>'Die Entwicklung privater Cloud-Umgebungen vor Ort.',
                                 'value'=>2,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Building private cloud environments and providing managed services either on-premise or within our datacenters.',
+                                'label'=>'Die Entwicklung privater Cloud-Umgebungen und die Bereitstellung von Managed Services (entweder vor Ort oder über unsere Rechenzentren).',
                                 'value'=>3,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Enabling hybrid cloud environments by bringing together our cloud builder, professional services, and multiple vendor public cloud offerings.',
+                                'label'=>'Die Unterstützung hybrider Cloud-Umgebungen durch eine Kombination aus eigenen Cloud-Entwicklungen, Professional Services und öffentlichen Cloud-Angeboten verschiedener Hersteller.',
                                 'value'=>4,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Delivering any type of cloud architecture demanded by our customers.',
+                                'label'=>'Die Bereitstellung jeglicher Art von Cloud-Architektur, die unsere Kunden wünschen.',
                                 'value'=>5,
                                 'checked'=>false
                             )
@@ -84,35 +84,35 @@ return array(
                 )
             ),
             'page3' => array(
-                'title' => 'Cloud Vision and Strategy',
+                'title' => 'CLOUD-VISION UND -STRATEGIE',
                 'questions' => array(
                     'q3'=>array(
                         'type'=>'button',
-                        'question'=>'How are investments for your cloud business structured? Budgeting and planning is:',
+                        'question'=>'Wie sind die Investitionen in Ihr Cloud-Geschäft strukturiert? Budgetierung und Planung erfolgen...',
                         'name'=>'q3',
                         'options'=>array(
                             array(
-                                'label'=>'At an individual product level. We do not have a separate cloud business unit. ',
+                                'label'=>'auf Produktebene. Wir haben keinen separaten Cloud-Geschäftsbereich. ',
                                 'value'=>1,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Year-on-year. We are not sure about cloud from a long-term investment perspective. ',
+                                'label'=>'auf Jahresbasis. Wir haben Bedenken bezüglich langfristiger Investitionen in die Cloud. ',
                                 'value'=>1,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Long-term. We have set investment targets over the next two to three years.',
+                                'label'=>'langfristig. Wir haben Investitionsziele für die nächsten zwei bis drei Jahre festgelegt.',
                                 'value'=>3,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Long-term. The majority of our investment will go toward cloud as a part of our core business strategy.',
+                                'label'=>'langfristig. Der Großteil unserer Investitionen entfällt auf die Cloud, die zentraler Bestandteil unserer Geschäftsstrategie ist.',
                                 'value'=>4,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Long-term. Cloud underpins all aspects of investments across people, infrastructure, partnerships, and sales.',
+                                'label'=>'langfristig. Die Cloud ist die Grundlage für sämtliche Investitionen in Mitarbeiter, Infrastruktur, Partnerschaften und Vertrieb.',
                                 'value'=>5,
                                 'checked'=>false
                             )
@@ -121,35 +121,35 @@ return array(
                 )
             ),
             'page4' => array(
-                'title' => 'Cloud Vision and Strategy',
+                'title' => 'CLOUD-VISION UND -STRATEGIE',
                 'questions' => array(
                     'q4'=>array(
                         'type'=>'button',
-                        'question'=>'How is your cloud division structured? Our cloud division is:',
+                        'question'=>'Wie ist Ihre Cloud-Abteilung strukturiert? Unsere Cloud-Abteilung ist:',
                         'name'=>'q4',
                         'options'=>array(
                             array(
-                                'label'=>'Part of a broader company portfolio. There is no separate target for cloud. ',
+                                'label'=>'Teil eines umfassenderen Unternehmensportfolios. Es gibt keine eigenen Ziele für die Cloud. ',
                                 'value'=>1,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'A separate product management unit with a dedicated resource, but flexible revenue targets.',
+                                'label'=>'Eine separate Produktmanagement-Einheit mit eigens dafür vorgesehenen Ressourcen, aber flexiblen Umsatzzielen.',
                                 'value'=>2,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'A separate business unit with its own P&L, and all sales personnel carry fixed top-line targets for cloud.',
+                                'label'=>'Ein separater Geschäftsbereich mit eigener Gewinn- und Verlustrechnung. Für alle Vertriebsmitarbeiter gelten feste Vorgaben in Bezug auf den cloudbezogenen Bruttoumsatz.',
                                 'value'=>3,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'A separate business unit with its own P&L and dedicated sales, pre-sales, and support personnel, who carry fixed revenue and profitability targets.',
+                                'label'=>'Ein separater Geschäftsbereich mit eigener Gewinn- und Verlustrechnung und eigenen Vertriebs-, Pre-Sales- und Supportmitarbeitern, für die feste Vorgaben in Bezug auf Umsatz und Rentabilität gelten.',
                                 'value'=>4,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'A separate business unit with decision-making autonomy and its own datacenter, service desk, and support infrastructure, along with profitability targets.',
+                                'label'=>'Ein separater Geschäftsbereich mit Entscheidungsautonomie, eigenem Rechenzentrum und Helpdesk, eigener Supportinfrastruktur sowie Vorgaben im Hinblick auf die Rentabilität.',
                                 'value'=>5,
                                 'checked'=>false
                             )
@@ -165,35 +165,35 @@ return array(
         'complete' => false,
         'pages' => array(
             'page1' => array(
-                'title' => 'Process and Skill-Sets',
+                'title' => 'PROZESSE UND KOMPETENZEN',
                 'questions' => array(
                     'q5'=>array(
                         'type'=>'button',
-                        'question'=>'How does your organization measure your cloud business? We have:',
+                        'question'=>'Wie misst Ihr Unternehmen das Cloud-Geschäft? Wir haben:',
                         'name'=>'q5',
                         'options'=>array(
                             array(
-                                'label'=>'No established cloud goals or measurements for success in place.',
+                                'label'=>'Keine Cloud-Ziele oder -Erfolgskennzahlen festgelegt.',
                                 'value'=>1,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Recurring revenue growth goals, but we cannot track cloud profit, and do not separate out cloud financials.',
+                                'label'=>'Ziele in Bezug auf das Wachstum wiederkehrender Einnahmen festgelegt, können Cloud-Gewinne jedoch nicht verfolgen und erfassen Cloud-Umsätze nicht separat.',
                                 'value'=>2,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Cloud-based targets, using specific KPIs and metrics, with a separate cloud P&L.',
+                                'label'=>'Cloudbasierte Ziele und spezielle KPIs und Kennzahlen festgelegt und erstellen separate Gewinn- und Verlustrechnungen für das Cloud-Geschäft.',
                                 'value'=>3,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Cloud services based on projected lifetime customer value, and systems and processes in place to reduce customer churn and optimize our cloud profitability.',
+                                'label'=>'Cloud-Services auf Basis des erwarteten Lifetime-Werts von Kunden und verfügen über Systeme und Prozesse, um die Kundenabwanderung zu verringern und die Cloud-Rentabilität zu optimieren.',
                                 'value'=>4,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Systems, processes, and KPIs designed to optimize cloud profitability based on a defined mix of our own high-margin recurring revenue services and vendor services.',
+                                'label'=>'Systeme, Prozesse und Kennzahlen zur Optimierung der Cloud-Rentabilität auf Basis einer Kombination aus eigenen Dienstleistungen mit wiederkehrenden Einnahmen und hohen Margen sowie Dienstleistungen anderer Anbieter.',
                                 'value'=>5,
                                 'checked'=>false
                             )
@@ -206,35 +206,35 @@ return array(
                 )*/
             ),
             'page2' => array(
-                'title' => 'Process and Skill-Sets',
+                'title' => 'PROZESSE UND KOMPETENZEN',
                 'questions' => array(
                     'q6'=>array(
                         'type'=>'button',
-                        'question'=>'How does your organization deliver on your cloud projects? Cloud projects are:',
+                        'question'=>'Wie stellt Ihr Unternehmen Cloud-Projekte bereit? Cloud-Projekte werden:',
                         'name'=>'q6',
                         'options'=>array(
                             array(
-                                'label'=>'Started from scratch. We have yet to develop reusable processes/methodologies.',
+                                'label'=>'Von Beginn an neu entwickelt. Wir müssen erst noch wiederverwendbare Prozesse/Methoden entwickeln.',
                                 'value'=>1,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Started from a basic framework. We have some reusable cloud implementation methodologies to leverage.',
+                                'label'=>'Anhand eines grundlegenden Frameworks erstellt. Wir nutzen einige wiederverwendbare Methoden für die Cloud-Implementierung.',
                                 'value'=>2,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Started from a moderate framework. Major tasks that are common to most cloud implementations have been industrialized for reuse.',
+                                'label'=>'Anhand eines etwas ausgereifteren Frameworks erstellt. Wichtige Aufgaben, die bei den meisten Cloud-Implementierungen anfallen, wurden industrialisiert und sind wiederverwendbar.',
                                 'value'=>3,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Started from a library of best practices, reusable tools, codes, and reference architectures to reduce implementation effort.',
+                                'label'=>'Anhand von verschiedenen Best Practices, wiederverwendbaren Tools und Referenzarchitekturen erstellt, um den Implementierungsaufwand zu verringern.',
                                 'value'=>4,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Delivered through automated practices, reducing time to deliver our cloud professional services.',
+                                'label'=>'Über automatisierte Prozesse bereitgestellt, wodurch sich die Zeit zur Bereitstellung unserer cloudbezogenen Professional Services verringert.',
                                 'value'=>5,
                                 'checked'=>false
                             )
@@ -250,35 +250,35 @@ return array(
         'complete' => false,
         'pages' => array(
             'page1' => array(
-                'title' => 'Marketing',
+                'title' => 'MARKETING',
                 'questions' => array(
                     'q7'=>array(
                         'type'=>'button',
-                        'question'=>'What is your organization\'s marketing strategy?',
+                        'question'=>'Welche Marketingstrategie verfolgt Ihr Unternehmen?',
                         'name'=>'q7',
                         'options'=>array(
                             array(
-                                'label'=>'We rely on leads from our vendor partners and our own traditional outbound marketing. ',
+                                'label'=>'Wir setzen auf Leads von unseren Partnern und auf unser eigenes herkömmliches Outbound-Marketing. ',
                                 'value'=>1,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'We focus our campaigns on market segments we are successful in, often using vendor-generated marketing tools and content. ',
+                                'label'=>'Wir richten unsere Kampagnen auf Marktsegmente aus, in denen wir erfolgreich sind. Häufig nutzen wir für unsere Kampagnen von Anbietern bereitgestellte Marketingtools und -inhalte. ',
                                 'value'=>2,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Alongside our traditional outbound marketing, we have developed some digital marketing, focused on influencing the pre-sales process and delivering qualified leads to sales. ',
+                                'label'=>'Neben herkömmlichem Outbound-Marketing nutzen wir digitales Marketing. Dabei konzentrieren wir uns auf den Pre-Sales-Prozess und auf die Generierung relevanter Leads für das Vertriebsteam. ',
                                 'value'=>3,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Sales is actively segmenting prospects and is sophisticated enough to take the lead through half the sales process. We have also automated some marketing activities. ',
+                                'label'=>'Wir segmentieren potenzielle Kunden aktiv und reichen dem Vertriebsteam Leads weiter, die den Verkaufsprozess bereits zur Hälfte durchlaufen haben. Zudem haben wir einige Marketingaktivitäten automatisiert. ',
                                 'value'=>4,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Sales leverages an effective combination of digital, social, and content-driven approaches, including customer analytics and persona targeting, to drive prospects through the sales cycle.',
+                                'label'=>'Wir nutzen eine Kombination aus digitalen, sozialen und inhaltsorientierten Ansätzen für unser Marketing. Dazu zählen Kundenanalysen und Persona-Modelle, um potenzielle Kunden durch den Vertriebszyklus zu leiten.',
                                 'value'=>5,
                                 'checked'=>false
                             )
@@ -291,35 +291,35 @@ return array(
                 )*/
             ),
             'page2' => array(
-                'title' => 'Marketing',
+                'title' => 'MARKETING',
                 'questions' => array(
                     'q8'=>array(
                         'type'=>'button',
-                        'question'=>'How are your marketing tactics for cloud organized?',
+                        'question'=>'Wie sind Ihre Cloud-Marketingtaktiken strukturiert? ',
                         'name'=>'q8',
                         'options'=>array(
                             array(
-                                'label'=>'We do not run specific campaigns for cloud and we do not have specific measurable goals, or track cost per lead/cost per close for our campaigns.',
+                                'label'=>'Wir haben keine eigenen Cloud-Kampagnen und keine messbaren speziellen Ziele. Wir erfassen auch nicht die Kosten pro Lead bzw. pro Geschäftsabschluss für unsere Kampagnen. ',
                                 'value'=>1,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'We run limited campaigns for cloud and primarily rely on vendor-sponsored and -run campaigns.',
+                                'label'=>'Wir haben nur wenige Cloud-Kampagnen und setzen vor allem auf Kampagnen, die von unseren Partnern finanziert und durchgeführt werden.',
                                 'value'=>2,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'We run a combination of our own campaigns for cloud and vendor-designed campaigns. We track these campaigns against defined KPIs.',
+                                'label'=>'Wir haben eine Kombination aus eigenen Cloud-Kampagnen und Kampagnen, die von unseren Partnern entwickelt werden. Wir verfolgen diese Kampagnen anhand von festgelegten KPIs.',
                                 'value'=>3,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'We have achieved an efficient cost-per-close campaign approach for cloud, which is central to our cloud sales strategy.',
+                                'label'=>'Wir haben einen Cloud-Kampagnenansatz mit geringen Kosten pro Geschäftsabschluss entwickelt, der zentraler Bestandteil unserer Cloud-Vertriebsstrategie ist.',
                                 'value'=>4,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'We are continuously aiming for a lower cost per close approach through deep analysis of campaign results.',
+                                'label'=>'Wir versuchen ständig, durch tief gehende Analysen der Kampagnenergebnisse zu geringeren Kosten pro Geschäftsabschluss zu gelangen.',
                                 'value'=>5,
                                 'checked'=>false
                             )
@@ -335,35 +335,35 @@ return array(
         'complete' => false,
         'pages' => array(
             'page1' => array(
-                'title' => 'Sales',
+                'title' => 'VERTRIEB',
                 'questions' => array(
                     'q9'=>array(
                         'type'=>'button',
-                        'question'=>'How have you structured your cloud sales approach?',
+                        'question'=>'Wie ist Ihr Cloud-Vertriebsansatz strukturiert?',
                         'name'=>'q9',
                         'options'=>array(
                             array(
-                                'label'=>'We have a few cloud sales specialists while the rest of the team still focus on the on-premise business.',
+                                'label'=>'Wir verfügen über einige Cloud-Vertriebsspezialisten, während der Rest des Teams sich nach wie vor auf unser On-Premise-Geschäft konzentriert. ',
                                 'value'=>1,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'We are building a larger team of cloud specialists that will support the on-premise sales team specifically for cloud opportunities.',
+                                'label'=>'Wir bauen ein großes Team von Cloud-Spezialisten auf, das das On-Premise-Vertriebsteam bei Cloud-Geschäftschancen unterstützt.',
                                 'value'=>2,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'We have begun to integrate cloud into all salespeople\'s portfolios with compensation plans for both our on-premise installed based and rewards for new cloud business.',
+                                'label'=>'Wir haben begonnen, Cloud-Lösungen in die Portfolios aller Vertriebsmitarbeiter zu integrieren, und verfügen über Provisionsstrukturen für On-Premise-Installationen und für neue Cloud-Geschäfte.',
                                 'value'=>3,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Cloud is fully integrated into all salespeople\'s portfolios and we have well-qualified cloud pre-sales to support activities.',
+                                'label'=>'Die Cloud ist vollständig in die Portfolios aller Vertriebsmitarbeiter integriert, und wir verfügen über hervorragende Cloud-Pre-Sales- und Supportaktivitäten.',
                                 'value'=>4,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'All sales people are focused on selling cloud solutions and our sales incentives are built to deliver customer value regardless of cloud delivery model.',
+                                'label'=>'Alle Vertriebsmitarbeiter konzentrieren sich auf den Verkauf von Cloud-Lösungen, und mit entsprechenden Anreizen fördern wir die Bereitstellung von Mehrwert für Kunden, unabhängig vom jeweiligen Cloud-Bereitstellungsmodell.',
                                 'value'=>5,
                                 'checked'=>false
                             )
@@ -376,35 +376,35 @@ return array(
                 )*/
             ),
             'page2' => array(
-                'title' => 'Sales',
+                'title' => 'VERTRIEB',
                 'questions' => array(
                     'q10'=>array(
                         'type'=>'button',
-                        'question'=>'What is your pre-sales approach for your cloud business? Our pre-sales team:',
+                        'question'=>'Welchen Pre-Sales-Ansatz nutzen Sie für Ihr Cloud-Geschäft? Unser Pre-Sales-Team:',
                         'name'=>'q10',
                         'options'=>array(
                             array(
-                                'label'=>'Is focused on supporting large on-premise deals and has not developed any specific cloud capabilities.',
+                                'label'=>'Konzentriert sich auf umfangreiche Vor-Ort-Geschäfte und verfügt über keine speziellen Cloud-Kompetenzen.',
                                 'value'=>1,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Has begun to build out some cloud-specific capabilities.',
+                                'label'=>'Hat erste cloudspezifische Kompetenzen erworben.',
                                 'value'=>2,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Has certified itself on specific vendor cloud products and platforms.',
+                                'label'=>'Hat einige Zertifizierungen zu anbieterspezifischen Cloud-Produkten und -Plattformen erworben.',
                                 'value'=>3,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Focuses on bringing cloud architecture best practices to our customer engagements across multiple delivery models.',
+                                'label'=>'Unser Pre-Sales-Team bietet unseren Kunden über verschiedene Bereitstellungsmodelle hinweg Best Practices in puncto Cloud-Architekturen.',
                                 'value'=>4,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Is able to work with our vendor partners to co-innovate on solutions for customers.',
+                                'label'=>'Unser Pre-Sales-Team ist in der Lage, gemeinsam mit unseren Partnern innovative Lösungen für Kunden zu entwickeln.',
                                 'value'=>5,
                                 'checked'=>false
                             )
@@ -413,35 +413,35 @@ return array(
                 )
             ),
             'page3' => array(
-                'title' => 'Sales',
+                'title' => 'VERTRIEB',
                 'questions' => array(
                     'q11'=>array(
                         'type'=>'button',
-                        'question'=>'How you are compensating your sales people today on cloud or other deals that have recurring revenue to your business? Our sales team is compensated:',
+                        'question'=>'Über welche Anreizstrukturen für Vertriebsmitarbeiter verfügen Sie aktuell in Bezug auf Cloud- und andere Geschäfte mit wiederkehrenden Einnahmen? Unsere Vertriebsmitarbeiter erhalten:',
                         'name'=>'q11',
                         'options'=>array(
                             array(
-                                'label'=>'For the overall target for sales regardless of on-premise or cloud.',
+                                'label'=>'Anreize für die Erreichung allgemeiner Vertriebsziele, unabhängig davon, ob es sich um On-Premise- oder Cloud-Geschäfte handelt.',
                                 'value'=>1,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Up front, paying the salesperson a commission on each deal including first year subscription or license fees.',
+                                'label'=>'Im Voraus Provisionen auf Geschäfte, u. a. einen Prozentsatz der Abonnementgebühren des ersten Jahres oder der Lizenzgebühren.',
                                 'value'=>2,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Over the life of the customer contract, paying salespeople a percentage commission on all revenue, recurring or otherwise. ',
+                                'label'=>'Provisionen über den Lebenszyklus des Kundenvertrags hinweg, wobei sie einen Prozentsatz aller Einnahmen erhalten, unabhängig davon, ob es sich dabei um wiederkehrende oder einmalige Einnahmen handelt. ',
                                 'value'=>3,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Using a mix of upfront and ongoing commission structures. ',
+                                'label'=>'Eine Kombination aus vorab und laufend ausgezahlten Provisionen. ',
                                 'value'=>4,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Using a mix of upfront and ongoing commission in addition to specific KPIs such as customer satisfaction, new customer growth, and renewal rates. ',
+                                'label'=>'Eine Kombination aus vorab und laufend ausgezahlten Provisionen, abhängig von speziellen KPIs wie die Kundenzufriedenheit, Neukundengewinnung und Vertragserneuerung. ',
                                 'value'=>5,
                                 'checked'=>false
                             )
@@ -461,31 +461,31 @@ return array(
                 'questions' => array(
                     'q12'=>array(
                         'type'=>'checkbox',
-                        'question'=>'Which of the following solutions do you offer? Select all that apply.',
+                        'question'=>'Welche der folgenden Lösungen bieten Sie an? Bitte alle zutreffenden Antworten auswählen',
                         'name'=>'q12',
                         'options'=>array(
                             array(
-                                'label'=>'Public cloud software resale',
+                                'label'=>'Wiederverkauf Public Cloud-Software',
                                 'value'=>1,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Public cloud hardware resale',
+                                'label'=>'Wiederverkauf Public Cloud-Hardware',
                                 'value'=>1,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Private or hybrid cloud build services',
+                                'label'=>'Entwicklung/Implementierung privater oder hybrider Clouds',
                                 'value'=>1,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Cloud managed services',
+                                'label'=>'Cloud Managed Services',
                                 'value'=>1,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Cloud consulting',
+                                'label'=>'Cloud Consulting',
                                 'value'=>1,
                                 'checked'=>false
                             )
@@ -502,26 +502,26 @@ return array(
                 'questions' => array(
                     'q13'=>array(
                         'type'=>'checkbox',
-                        'question'=>'Which of the following IT services do you offer to support your SaaS business? Select all that apply',
+                        'question'=>'Welche der folgenden IT-Dienstleistungen bieten Sie ergänzend zu Ihrem SaaS-Geschäft an? Bitte alle zutreffenden Antworten auswählen',
                         'name'=>'q13',
                         'options'=>array(
                             array(
-                                'label'=>'Training and education services',
+                                'label'=>'Schulung und Weiterbildung',
                                 'value'=>1,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Consulting services',
+                                'label'=>'Consulting',
                                 'value'=>2,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Integration services',
+                                'label'=>'Integration',
                                 'value'=>1,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Support services',
+                                'label'=>'Support',
                                 'value'=>1,
                                 'checked'=>false
                             )
@@ -534,7 +534,7 @@ return array(
                 'questions' => array(
                     'q14'=>array(
                         'type'=>'button',
-                        'question'=>'What percentage of your overall revenue can you attribute to your cloud business?',
+                        'question'=>'Wie hoch ist der prozentuale Anteil Ihres Gesamtumsatzes, der auf das Cloud-Geschäft entfällt?',
                         'name'=>'q14',
                         'options'=>array(
                             array(
