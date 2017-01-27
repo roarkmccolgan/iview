@@ -77,7 +77,7 @@ Nutzen Sie das IDC-Tool zur Cyber-Risikobewertung, um herauszufinden, wie widers
     'sname'=>'Nachname',
     'email'=>'E-Mail-Adresse',
     'company'=>'Name des Unternehmens',
-    'title'=>'Job Title',
+    'title'=>'Berufsbezeichnung',
     'relationship'=>'Relationship with Red Hat',
     'rel1'=>'CCSP',
     'rel2'=>'Red Hat Ready Business Partner',
