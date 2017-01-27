@@ -112,7 +112,6 @@
 													@endif
 												@endforeach
 
-												
 												<div class="col-xs-12 checkbox form-group{{$errors->has('accept')?' error':''}}">
 													<label class="checkbox">
 														<input type="checkbox" class="req" name="terms">

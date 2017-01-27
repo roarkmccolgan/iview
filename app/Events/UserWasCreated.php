@@ -5,6 +5,7 @@ namespace App\Events;
 use App\Events\Event;
 use App\Tool;
 use App\User;
+use App\Url;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 use Illuminate\Queue\SerializesModels;
 
@@ -21,7 +22,7 @@ class UserWasCreated extends Event
      *
      * @return void
      */
-    public function __construct(User $user,Tool $tool, $url)
+    public function __construct(User $user,Tool $tool, URL $url)
     {
         $this->user = $user;
         $this->tool = $tool;

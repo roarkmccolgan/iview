@@ -123,7 +123,7 @@ class AssessmentController extends Controller {
 			];
 			return $data;
 		}
-	    //return $request->input();
+	    	//return $request->input();
 		$tool = $request->get('product');
 
 		if($request->input('new')=='false'){
@@ -135,7 +135,7 @@ class AssessmentController extends Controller {
 				$query->where('downloaded', false);
 			}]);
 		}
-	    //$assessments = Assessment::find(28);
+	    	//$assessments = Assessment::find(28);
 
 		$tool->assessments()->update(['downloaded' => 1]);
 
@@ -154,10 +154,8 @@ class AssessmentController extends Controller {
 						$assessments[ucfirst($assKey)][$exKey] = $extra;
 					}
 				}
-				unset($assessments[$assKey]['extra']);
-			}else{
-				dd($assessment['extra']);
 			}
+			unset($assessments[$assKey]['extra']);
 			foreach ($assessment['result'] as $resKey => $result) {
 				if($resKey!='overall'){
 					$assessments[$assKey][trans($tool->alias.'.'.$resKey.'.title')] = trans($tool->alias.'.'.$result['rating']);

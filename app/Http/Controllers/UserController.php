@@ -16,189 +16,195 @@ use JavaScript;
 
 class UserController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index(Request $request)
-    {
-    	$user = $request->user();
-        $user->load(['roles']);
+	/**
+	 * Display a listing of the resource.
+	 *
+	 * @return \Illuminate\Http\Response
+	 */
+	public function index(Request $request)
+	{
+		$user = $request->user();
+		$user->load(['roles']);
 
-        $tool = $request->get('product');
+		$tool = $request->get('product');
 
-        if(($user->tools->contains($tool->id) && ($user->hasRole('admin') || $user->hasRole('client'))) || $user->hasRole('super')){
-        	$tool->load(['users','company','urls']);
-        	foreach($tool->users as $user) {
-        		$user->load(['roles']);
-        	}
+		if(($user->tools->contains($tool->id) && ($user->hasRole('admin') || $user->hasRole('client'))) || $user->hasRole('super')){
+			$tool->load(['users','company','urls']);
+			foreach($tool->users as $user) {
+				$user->load(['roles']);
+			}
 
-        	$data = [
-	            'tool' => $tool
-	        ];
-            
-            JavaScript::put([
-                'foo' => 'bar'
-            ]);
-            return view('admin.users', $data);
-        }
-        return redirect('/login')->with('status', 'Insufficient Privilages!');
-    }
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function create(Request $request)
-    {
-    	$tool = $request->get('product');
-    	$tool->load(['company']);
+			$data = [
+			'tool' => $tool
+			];
 
-    	$user = $request->user();
-        $user->load(['roles']);
+			JavaScript::put([
+				'foo' => 'bar'
+				]);
+			return view('admin.users', $data);
+		}
+		return redirect('/login')->with('status', 'Insufficient Privilages!');
+	}
+	/**
+	 * Show the form for creating a new resource.
+	 *
+	 * @param  \Illuminate\Http\Request  $request
+	 * @return \Illuminate\Http\Response
+	 */
+	public function create(Request $request)
+	{
+		$tool = $request->get('product');
+		$tool->load(['company']);
 
-        $roles=[
-        		'local'
-        	];
-    	if($user->hasRole('super') || $user->hasRole('admin') || $user->hasRole('client')) $roles[] = 'client';
-    	if($user->hasRole('super') || $user->hasRole('admin')) $roles[] = 'admin';
-    	if($user->hasRole('super')) $roles[] = 'super';
-    	$data = [
-    		'tool' => $tool,
-    		'roles' => $roles,
-    	];
-        return view('admin.users_new', $data);
-    }
+		$user = $request->user();
+		$user->load(['roles']);
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(AddUserRequest $request)
-    {
-        $tool = $request->get('product');
-        $url = $tool->urls->first();
+		$roles=[
+			'local'
+		];
 
-    	$password = Hash::make(str_random(8));
-        $user = User::create([
-        	'name' => $request->input('name'),
-        	'email' => $request->input('email'),
-        	'password' => $password,
-        ]);
-        $user->tools()->attach($tool->id);
-        $user->assignRole($request->input('role'));
+		if($user->hasRole('super') || $user->hasRole('admin') || $user->hasRole('client')) $roles[] = 'client';
+		if($user->hasRole('super') || $user->hasRole('admin')) $roles[] = 'admin';
+		if($user->hasRole('super')) $roles[] = 'super';
+		$data = [
+			'tool' => $tool,
+			'roles' => $roles,
+		];
+		return view('admin.users_new', $data);
+	}
 
-        if(config('terminal.settings.resetpassword_at_first_login')){
-            $register_token = $code = str_random(10);
-            $user->register_token = $register_token;
-        }else{
-            $user->changePassword = 0;
-        }
-        $user->save();
-        Event::fire(new UserWasCreated($user,$tool,$url));
+	/**
+	 * Store a newly created resource in storage.
+	 *
+	 * @param  \Illuminate\Http\Request  $request
+	 * @return \Illuminate\Http\Response
+	 */
+	public function store(AddUserRequest $request)
+	{
+		$tool = $request->get('product');
+		$url = $tool->urls->first();
 
-        return redirect('admin/users')->with('status', ['type'=>'success','message'=>'User Created']);
-    }
+		$existingUser = User::where('email',$request->input('email'))->first();
+		if($existingUser){
+			$existingUser->tools()->attach($tool->id);
+		}else{
+			$password = Hash::make(str_random(8));
+			$user = User::create([
+				'name' => $request->input('name'),
+				'email' => $request->input('email'),
+				'password' => $password,
+				]);
+			$user->tools()->attach($tool->id);
+			$user->assignRole($request->input('role'));
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  App\User
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function delete($subdomain, User $user,Request $request)
-    {
-        $user->delete();
-        if($request->ajax()){
-            $data = [
-                'result'=>'success'
-            ];
-            return $data;
-        }
-        return redirect('/admin/users')->with('status', 'User Deleted');
-    }
+			if(config('terminal.settings.resetpassword_at_first_login')){
+				$register_token = $code = str_random(10);
+				$user->register_token = $register_token;
+			}else{
+				$user->changePassword = 0;
+			}
+			$user->save();
+			Event::fire(new UserWasCreated($user,$tool,$url));
+		}
 
-    /**
-     * Show the form for changing resource.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function showChangePassword(Request $request)
-    {
-        //return $request->user();
-        $register_token = $request->get('register_token');
-        if($register_token!=null){
-            $user = User::where('register_token',$register_token)->firstOrFail();
+		return redirect('admin/users')->with('status', ['type'=>'success','message'=>'User Created']);
+	}
 
-            $data = [
-                'user' => $user,
-                'register_token' => $register_token,
-            ];
-            return view('auth.change_password', $data);
-        }
-        abort('403');
-    }
+	/**
+	 * Remove the specified resource from storage.
+	 *
+	 * @param  App\User
+	 * @param  \Illuminate\Http\Request  $request
+	 * @return \Illuminate\Http\Response
+	 */
+	public function delete($subdomain, User $user,Request $request)
+	{
+		$user->delete();
+		if($request->ajax()){
+			$data = [
+			'result'=>'success'
+			];
+			return $data;
+		}
+		return redirect('/admin/users')->with('status', 'User Deleted');
+	}
 
-    /**
-     * Store a newly changed resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function storeChangePassword(ChangePasswordRequest $request)
-    {
-        //return $request->input('register_token');
-        //return $request->user();
-        
-        if($request->input('register_token')!=null){
-            $newPass = $request->input('password');
-            $user = User::where('register_token',$request->input('register_token'))->firstOrFail();
+	/**
+	 * Show the form for changing resource.
+	 *
+	 * @param  \Illuminate\Http\Request  $request
+	 * @return \Illuminate\Http\Response
+	 */
+	public function showChangePassword(Request $request)
+	{
+	    //return $request->user();
+		$register_token = $request->get('register_token');
+		if($register_token!=null){
+			$user = User::where('register_token',$register_token)->firstOrFail();
 
-            //return $user;
+			$data = [
+			'user' => $user,
+			'register_token' => $register_token,
+			];
+			return view('auth.change_password', $data);
+		}
+		abort('403');
+	}
 
-            $password = Hash::make($newPass);
+	/**
+	 * Store a newly changed resource in storage.
+	 *
+	 * @param  \Illuminate\Http\Request  $request
+	 * @return \Illuminate\Http\Response
+	 */
+	public function storeChangePassword(ChangePasswordRequest $request)
+	{
+	    //return $request->input('register_token');
+	    //return $request->user();
 
-            $user->password = $password;
-            $user->changePassword = 0;
-            $user->register_token = null;
-            $user->save();
+		if($request->input('register_token')!=null){
+			$newPass = $request->input('password');
+			$user = User::where('register_token',$request->input('register_token'))->firstOrFail();
 
-            $user->load(['tools']);
-            $redirect = '';
-            foreach ($user->tools as $tool) {
-                $tool->load(['company','urls']);
+	        //return $user;
 
-                $redirect = 'http://'.$tool->urls->first()->subdomain.'.'.$tool->urls->first()->domain.'/admin';
-            }
-            return redirect($redirect);
+			$password = Hash::make($newPass);
 
-            /*//$this->authenticate($user->email,$newPass,$redirect);
-            if (Auth::attempt(['email' => $user->email, 'password' => $newPass])) {
-                //return Auth::user();
-                return redirect($redirect);
-            }
-            abort('403');*/
-        }
+			$user->password = $password;
+			$user->changePassword = 0;
+			$user->register_token = null;
+			$user->save();
 
-    }
+			$user->load(['tools']);
+			$redirect = '';
+			foreach ($user->tools as $tool) {
+				$tool->load(['company','urls']);
+
+				$redirect = 'http://'.$tool->urls->first()->subdomain.'.'.$tool->urls->first()->domain.'/admin';
+			}
+			return redirect($redirect);
+
+	        /*//$this->authenticate($user->email,$newPass,$redirect);
+	        if (Auth::attempt(['email' => $user->email, 'password' => $newPass])) {
+	            //return Auth::user();
+	            return redirect($redirect);
+	        }
+	        abort('403');*/
+	    }
+
+	}
 
 
-    /**
-     * Handle an authentication attempt.
-     *
-     * @return Response
-     */
-    private function authenticate($email, $password, $redirect)
-    {
-        if (Auth::attempt(['email' => $email, 'password' => $password])) {
-            return redirect($redirect);
-        }
-        abort('403');
-    }
+	/**
+	 * Handle an authentication attempt.
+	 *
+	 * @return Response
+	 */
+	private function authenticate($email, $password, $redirect)
+	{
+		if (Auth::attempt(['email' => $email, 'password' => $password])) {
+			return redirect($redirect);
+		}
+		abort('403');
+	}
 }
