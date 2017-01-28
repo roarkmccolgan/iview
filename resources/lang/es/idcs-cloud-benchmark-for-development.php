@@ -1,8 +1,8 @@
 <?php
 //sage
 return array(
-    'title' => 'Capitalize on Cloud',
-    'sub-title' => 'Advancing your Maturity',
+    'title' => 'Saca el máximo partido a la nube',
+    'sub-title' => 'Avanzando en su desarrollo',
     'stage1' => 'Fase 1: Momento de actuar',
     'stage2' => 'Fase 2: Momento de comprometerse',
     'stage3' => 'Fase 3: Momento de invertir',
@@ -16,20 +16,20 @@ return array(
         En el siguiente informe se proporciona información sobre la situación de tu organizaciónen comparación con otras empresas similares del mercado, y una serie de recomendaciones sobre cómo dirigir tu negocio hacia un futuro rentable y de éxito en la nube.
     </p>
     ',
-    'complete_thankyou' => 'Thank you :Fname,',
-    'complete_body' => 'Your custom report will arrive in your inbox soon',
+    'complete_thankyou' => 'Gracias :Fname,',
+    'complete_body' => 'Tu informe personalizado llegará pronto a tu bandeja de entrada',
     'complete_tweet' => 'I\'ve just taken the Cloud Development Assessment Sponsored by @Sage %26 @IDCUKI, we\'re at :result. Interested?',// http://bit.ly/2g8WN1d
     'email'=>[
-        'subject' => 'IDC Report',
-        'hi' => 'Hi :Fname',
+        'subject' => 'Informe de IDC',
+        'hi' => 'Hola :Fname',
         'body' => '
-            Your Cloud Maturity Assessment report is here.<br/>
-            The report breaks down your results by category and helps you benchmark yourself against other organizations.
+            Aquí está tu informe personalizado acerca del nivel de madurez del negocio en la nube .<br/>
+            El informe desglosa los resultados por categorías y te permite comparar tu empresa con otras organizaciones.
         ',
-        'link' => 'Download Report',
-        'extra' => 'Once you\'ve digested the report why not visit <a href="http://www.sage.com" style="color:#024886">Sage</a>',
-        'regards' => 'Regards',
-        'team' => 'The IDC Team'
+        'link' => 'Descargar el informe',
+        'extra' => 'Una vez que haya leido el informe, ¿por qué no visita <a href="http://www.sage.es/" style="color:#024886">Sage</a>',
+        'regards' => 'Atentamente',
+        'team' => 'El equipo de IDC'
     ],
     'introduction-image' => 'report1.jpg',
     'overall' => array(
@@ -547,373 +547,373 @@ return array(
         <p>
             Según la evaluación de IDC, tu organización se encuentra en la fase 1 por lo que respecta alas ventas en la nube. El 21 % de las organizaciones que han participado en nuestro estudio se encuentran en esta fase. La mayoría de ellas están en la fase 2. De forma general, en esta fase de desarrollo, las organizaciones comparten las siguientes características:
         </p>
-        <h3>People:</h3>
+        <h3>Personal:</h3>
         <p>
-            You likely have a limited number of sales professionals certified and focused on selling SaaS services, with the majority of sales activity focused on selling on-premise solutions. Sales teams do not have cloud-specific targets and often incentive structures for SaaS subscriptions are ill-defined.
+            Es probable que tengan un número reducido de comerciales con certificación y orientados a la venta de servicios en modo SaaS, pues la mayor parte de la actividad comercial se centra en soluciones on-premise. Los equipos comerciales carecen de objetivos específicos relativos a la nube y, con frecuencia, las estructuras de incentivos de las ventas de SaaS por suscripción no están definidas de forma adecuada.
         </p>
-        <h3>Enablement</h3>
+        <h3>Capacitación:</h3>
         <p>
-            At this stage of maturity, it is likely that sales enablement for selling SaaS is ad hoc and focused around specific opportunities. It is unlikely that sales people in this stage of maturity are fully leveraging the tools, collateral, and other enablement activities provided by vendor partners.
+            Mientras que es probable que las medidas para incrementar la venta de SaaS sean ad hoc y estén centradas en oportunidades específicas, es poco probable que los comerciales en esta fase de desarrollo estén aprovechando al máximo las herramientas, la documentación y otras fuentes de información que proporcionan los Partners proveedores.
         </p>
-        <h3>Sales strategy:</h3>
+        <h3>Estrategia comercial:</h3>
         <p>
-            Selling SaaS does not form a core part of sales strategy at this early stage, and is typically sold in a reactive basis in response to customer demand.
+            Todavía es pronto para que la venta de SaaS constituya una parte esencial de la estrategia comercial y, por lo general, su venta responde a una necesidad urgente para cubrir la demanda del cliente.
         </p>
         <h3>Recomendaciones</h3>
-        <h5>Sales specialists:</h5>
+        <h5>Especialistas en ventas:</h5>
         <p>
-            Begin developing a team of cloud presales specialists, with the capabilities needed to close cloud-specific business in conjunction with account managers.
+            Empieza creando un equipo de especialistas en preventas orientados a la nube, con los conocimientos técnicos necesarios para cerrar negocios específicos junto con los Account Managers.
         </p>
-        <h5>Incentives and commission:</h5>
+        <h5>Incentivos y comisiones:</h5>
         <p>
-            As your organization begins to shift toward cloud, you will need to migrate sales away from on-premise solutions toward recurring revenue-based business models. Incentives and commission structures will need to change to accommodate this. Fundamental to achieving this is gearing the sales team around renewals and building longer-term relationships. It is advisable to start implementing the changes to commission structures early, with upfront compensation (a percentage of first-year revenues) the most common model of remuneration.
+            A medida que tu organización adopte la nube, necesitarás migrar las ventas de las soluciones on-premise a modelos de negocio basados en ingresos recurrentes. Las estructuras de incentivos y comisiones se deberán ajustar a esta nueva situación. Para lograrlo, es fundamental que el equipo comercial se oriente a la renovación y a la consolidación de relaciones a más largo plazo. Te recomendados que empieces a implementar los cambios en las estructuras de comisiones al principio, con la compensación anticipada (un porcentaje de los ingresos del primer año) como el modelo de remuneración más habitual.
         </p>
-        <h5>Collateral and training:</h5>
+        <h5>Documentación y formación:</h5>
         <p>
-            In this early stage of maturity, training and enablement should focus on building the sales skills to sell SaaS effectively. Understanding the benefits to customers and arguments to help overcome objections is critical. Make it easier for sales people by identifying the training and enablement tools that are required at this early stage, and make training attendance a main KPI.
+            La formación debe centrarse en consolidar los conocimientos técnicos necesarios para vender SaaS de un modo efectivo. Es esencial conocer las ventajas para los clientes y tener los argumentos suficientes para superar cualquier objeción. Facilita a los comerciales la identificación de las herramientas de formación que se necesitan en esta fase y haz que la asistencia a cursos de formación sea un KPI clave.
         </p>
         ',
         'stage2'=>'
         <p>
-            Based on IDC\'s assessment, your organization is at Stage 2 in terms of your cloud sales maturity. 28% of the organizations benchmarked in our research were at this stage, with the majority of organizations also positioned in Stage 2. Typically, organizations at this stage of their maturity share the following characteristics:
+            Según la evaluación de IDC, tu organización se encuentra en la fase 2 por lo que respecta a las ventas en la nube. El 28 % de las organizaciones que han participado en nuestro estudio se encuentran en esta fase. La mayoría de ellas también están en la fase 2. De forma general, las organizaciones que se encuentran en esta fase de desarrollo comparten las siguientes características:
         </p>
-        <h3>People:</h3>
+        <h3>Personal:</h3>
         <p>
-            You are beginning to build a team of cloud specialists with the capabilities needed to close cloud business. Commission structures have evolved to either a percentage of first-year revenues or a straight recurring revenue commission. Some are a combination of the two models. Very few organizations have put in place additional incentives for customer renewals and usage, but this should become a priority.
+            Las organizaciones comienzan a crear un equipo de especialistas con los conocimientos técnicos necesarios para cerrar ventas en la nube. Las estructuras de comisiones han evolucionado de un porcentaje de los ingresos del primer año o una comisión directa por ingresos recurrentes. Algunas organizaciones combinan ambos modelos, pero muy pocas han aplicado modelos de incentivos adicionales por las renovaciones o por el porcentaje de uso por parte de los clientes, si bien es una prioridad.
         </p>
-        <h3>Enablement</h3>
+        <h3>Capacitación:</h3>
         <p>
-            At this stage of maturity, sales people are starting to actively use the sales enablement resources available to them (typically via vendor partner portals). Sales people are also going through sales certification training with key vendor partners.
+            Los comerciales empiezan a usar de forma activa los recursos para incrementar la productividad de las ventas que tienen a su disposición (normalmente a través de portales de los Partners proveedores). También obtienen formación y certificación a través de sus principales Partners proveedores.
         </p>
-        <h3>Sales strategy:</h3>
+        <h3>Estrategia comercial:</h3>
         <p>
-            Cloud is becoming core to sales strategy and is often a door opener for other sales opportunities (upsell). It is advisable at this stage of your cloud maturity to make it easier for sales people to upsell (products) and sell services attached to SaaS deals. You should look to incorporate "upsell" as a core component of sales strategy moving forward.
+            La nube se está convirtiendo en algo fundamental para la estrategia comercial y suele dar paso a otras oportunidades de venta (upsell). Se recomienda facilitar a los comerciales las técnicas de upsell, añadiendo la prestación de servicios adicionales a los contratos de SaaS. En adelante, las organizaciones deben tratar de incorporar las oportunidades de upsell como un componente básico de su estrategia comercial. 
         </p>
         <h3>Recomendaciones</h3>
-        <h5>Commission:</h5>
+        <h5>Comisiones:</h5>
         <p>
-            Look to evolve commission structures to incentivize sales people over the lifetime of the customer, and drive a focus on customer satisfaction and renewals.
+            Mejora las estructuras de comisiones para incentivar a los comerciales en el ciclo completo del cliente y céntrate en la satisfacción del cliente para que renueve los contratos.
         </p>
-        <h5>Focus sales on cloud:</h5>
+        <h5>Orientación a las ventas en la nube:</h5>
         <p>
-            At this stage of maturity, you need to integrate cloud offerings into your sales effort and competencies, making this the core focus of the business and central to sales-based conversations. Leverage vendor sales toolkits, create your own playbooks, and continuously train.
+            Debes integrar las ofertas en la nube en tus estrategias y competencias comerciales, convirtiéndolo en el enfoque básico de la empresa y un aspecto fundamental en tus conversaciones con clientes. Aprovecha los kits de ventas de los proveedores, crea tus propias guías y realiza una formación continua.
         </p>
-        <h5>Upsell services and solutions:</h5>
+        <h5>Upselling de servicios y soluciones:</h5>
         <p>
-            As your cloud business starts to gather momentum, make it easier for sales people to upsell related services and solutions. Consider associating standard service offerings such as training and support to your SaaS business. Package and bill these on a subscription basis so these can be sold alongside the SaaS subscription.
+            A medida que el negocio en la nube empiece a ganar impulso, facilita a los comerciales la venta adicional de servicios y soluciones relacionadas. Asocia las ofertas de servicios estándar, como la formación y el soporte, a tu negocio de SaaS. Empaquétalas y factúralas por suscripción, para que se puedan vender junto con la suscripción a SaaS.
         </p>
         ',
         'stage3'=>'
         <p>
-            Based on IDC\'s assessment, your organization is at Stage 3 of cloud sales maturity. 27% of the organizations benchmarked in our research were at this stage, with the majority of organizations positioned in Stage 2. Typically, organizations at this stage of their maturity share the following characteristics:
+            Según la evaluación de IDC, tu organización se encuentra en la fase 3 respecto a las ventas en la nube. El 27% de las organizaciones que han participado en este estudiose encuentran en esta fase. La mayoría de ellas están en la fase 2. Por lo general, las organizaciones que se encuentran en esta fase de desarrollo comparten las siguientes características:
         </p>
-        <h3>People:</h3>
+        <h3>Personal:</h3>
         <p>
-            Cloud sales are supported by a set of well-qualified presales leads and sales professionals able to offer an array of cloud solutions to fulfil a range of customer requirements. At this stage of maturity, incentive structures for cloud are well defined but do not extend to the lifetime of a customer.
+            Las ventas en la nube están respaldadas por personal de preventa y de venta cualificado, capaz de ofrecer soluciones en la nube para satisfacer las necesidades de los clientes. En esta fase de desarrollo, las estructuras de incentivos para la nube están bien definidas, pero no se extienden al ciclo completo de un cliente.
         </p>
-        <h3>Enablement</h3>
+        <h3>Capacitación:</h3>
         <p>
-            Sales teams are increasingly trained in cloud capabilities and certification. Enablement has extended from training to active participation in lead generation activities by both internal marketing departments and those initiatives by cloud vendor partners.
+            Los equipos comercialestienen cada vez más los conocimientos técnicos y las certificaciones que requiere la nube. Además, se ha ampliado la formación y la participación activa en las actividades de generación de demanda por parte de los departamentos de marketing internos y las iniciativas de los Partners proveedores. 
         </p>
-        <h3>Sales strategy:</h3>
+        <h3>Estrategia comercial:</h3>
         <p>
-            Cloud has been integrated into all the sales team\'s portfolios. Most sales people are able to competently provide customers advice on cloud, and quote on a choice of on-premise and cloud options.
+            La nube se ha integrado en todas las propuestas del equipo comercial. La mayor parte de los comerciales puede asesorar a los clientes sobre la nube de un modo competente y presentar un presupuesto con opciones on-premise y en la nube.
         </p>
         <h3>Recomendaciones</h3>
-        <h5>Sales sophistication:</h5>
+        <h5>Perfeccionamiento comercial:</h5>
         <p>
-            Look to evolve commission structures to include specific KPIs, such as customer satisfaction scores and additional incentives for new customer acquisition and renewal rates. As your structure evolves, you will need to build line-of-business sales skills, enabling you to build even closer relationships with key clients, as well as drive specialisms in key markets.
+            Mejora las estructuras de comisiones para incluir KPIs específicos, como los resultados de satisfacción de clientes e incentivos adicionales por captación de nuevos clientes y porcentaje de renovaciones. A medida que evolucione la estructura, deberás consolidar los conocimientos técnicos del equipo comercial en las líneas de negocio, lo que te permitirá estrechar aún más las relaciones con los clientes principales, así como impulsar tu especialización en los mercados clave.
         </p>
-        <h5>Scale:</h5>
+        <h5>Escalabilidad:</h5>
         <p>
-            If you company is offering both volume and value SaaS, it is advisable to start differentiating your strategies for volume versus value SaaS. For volume SaaS, the ability to scale starts to become critical to growth. Your volume sales strategy should include an investment plan for sales automation, as well as investigating the potential of telesales capability. Consider investment in tools that create efficiencies in the sales process (sales automation tools). Your value sales strategy needs to encompass line-of-business selling and hiring, which includes hiring from industry, as well as building capabilities through training.
+            Si tu empresa ofrece SaaS tanto de volumen como de valor, te recomendamos que empieces a diferenciar las estrategias de SaaS de volumen frente a las de valor. En el caso de SaaS de volumen, la capacidad de escalar empieza a ser fundamental para el crecimiento. Tu estrategia comercial basada en el volumen debe incluir un plan de inversión para la automatización de ventas, así como la revisión del equipo de telemarketing. Invierte en herramientas que generen eficacia en el proceso de ventas (herramientas de automatización). Tu estrategia comercial basada en el valor debe abarcar diferentes líneas de negocio, e incluir nuevas incorporaciones, así como la adquisición de conocimientos técnicos a través de la formación.
         </p>
-        <h5>Develop proof of concept:</h5>
+        <h5>Desarrollo de pruebas de concepto:</h5>
         <p>
-            It is advisable at this point to create a more formalized proof-of-concept strategy, and potentially invest in your own demo and trial facilities. This will enable new customers to trial SaaS on a 30-day plan. This becomes a powerful sales tool, particularly if you can incorporate customer data and bolster presales capabilities to support the sales process.
+            Llegados a este punto, te recomendamos crear una estrategia de viabilidad o pruebas de concepto más formal y, si es posible, invertir en tus propias herramientas de demostración y prueba. De este modo, los nuevos clientes podrán probar SaaS en un plan de 30 días. Esto resulta una herramienta de ventas potente, sobre todo si puede incorporar datos del cliente y reforzar las funciones de preventa para apoyar el proceso de ventas.
         </p>
         ',
         'stage4'=>'
         <p>
-            Based on IDC\'s assessment, your organization is at Stage 4 in terms of your cloud sales maturity. 16% of the organizations benchmarked in our research were at this stage, with the majority of organizations positioned in Stage 2. Typically, organizations at this stage of their maturity share the following characteristics:
+            Según la evaluaciónde IDC, tu organización se encuentra en la fase 4 por lo que respecta a las ventas en la nube. El 16 % de las organizaciones que han participado en nuestro estudio se encuentran en esta fase. La mayoría de ellas están en la fase 2. Por lo general, las organizaciones que se encuentran en esta fase de desarrollo comparten las siguientes características:
         </p>
-        <h3>People:</h3>
+        <h3>Personal:</h3>
         <p>
-            Organizations at this stage in their cloud sales maturity have integrated cloud into all of their sales team\'s portfolios, utilizing sophisticated presales support activities and pipeline and lead-management tools. Companies with a volume SaaS business are looking to reach scale via telesales and social selling, whereas those with a value SaaS strategy are actively focused on building line-of-business selling skills.
+            Las organizaciones han integrado la nube en el catálogo de soluciones que ofrece su equipo comercial, mediante actividades avanzadas de soporte de preventa y herramientas de gestión dela pipeline y de las oportunidades. Las empresas con un modelo negocio de SaaS basado en el volumen están intentando aumentar su negocio mediante el telemarketing y la venta online, mientras que las que tienen una estrategia de SaaS de valor orientan su actividad a adquirir conocimientos técnicos para la venta según la línea de negocio.
         </p>
-        <h3>Incentives</h3>
+        <h3>Incentivos:</h3>
         <p>
-            At this stage of maturity, incentive structures for cloud are well defined and sales people are also more likely to be incentivized over the lifetime of the customer relationship. Commission structures are likely to continue to transform, becoming a mixture of upfront and ongoing incentives.
+            Las estructuras de incentivos para la nube están bien definidas y los comerciales también tienen más probabilidades de recibir incentivos durante el ciclo completo del cliente. Es probable que las estructuras de comisiones sigan evolucionando, y sean una combinación de incentivos anticipados y continuos.
         </p>
-        <h3>Enablement</h3>
+        <h3>Capacitación:</h3>
         <p>
-            Typically, demo and proof-of-concept facilities are available to customers and are actively used as part of the presales process. This could be the company\'s own investment, or leveraging its vendor\'s facilities, or a mix of both. Sales tools and collateral are constantly updated and refreshed.
+            Normalmente, las herramientas de demostración y de viabilidad o prueba de concepto están a disposición de los clientes y se usan de forma activa como parte del proceso de preventa. Las empresas podrían invertir en ellas, aprovechar las de sus proveedores o ambas opciones. Las herramientas comerciales y la documentación se actualizan y renuevan constantemente.
         </p>
-        <h3>Sales strategy:</h3>
+        <h3>Estrategia comercial:</h3>
         <p>
-            At this level of maturity, cloud architecture best practice is being sold to customers across multiple delivery options, with a mixture of upfront and ongoing commission structures. Sales teams are far more likely to sell based on business outcomes than on solution features and there is a growing specialism in the way sales teams are aligned with markets and business processes. Many companies are starting to create vertically structured solutions and sales departments.
+            La práctica recomendada es vender a los clientes utilizando varias opciones de entrega, con una combinación de estructuras de comisiones anticipadas y continuas. Los equipos comerciales tienen más probabilidades de vender en función de los resultados comerciales de la solución que por sus características. Asimismo, hay una creciente especialización en el modo en que los equipos comerciales se adaptan a los mercados y procesos de negocio. Muchas empresas están empezando a crear soluciones y departamentos comerciales con estructura vertical.   
         </p>
         <h3>Recomendaciones</h3>
-        <h5>Industry expertise:</h5>
+        <h5>Experiencia en el sector:</h5>
         <p>
-            As your structure evolves, look to explore hiring ex-industry and business-process focused sales professionals, enabling you to build even closer relationships with key clients, as well as drive specialisms in key markets
+            A medida que evoluciones, intenta contratar a comerciales que ya no estén en el sector tecnológico y que estén centrados en el proceso de negocio, lo que te permitirá estrechar aún más las relaciones con tus clientes principales, así como impulsar tu especialización en los mercados clave.   
         </p>
-        <h5>Evolve incentives:</h5>
+        <h5>Evolución de los incentivos:</h5>
         <p>
-            As you continue to mature, sales incentives need to be consistent and increasingly geared toward delivering customer value, regardless of cloud delivery models.
+            A medida que sigas evolucionando, los incentivos por ventas deben ser coherentes y centrarse cada vez más en proporcionar valor al cliente, independientemente de los modelos de entrega en la nube.
         </p>
-        <h5>Integration of sales and delivery:</h5>
+        <h5>Integración de ventas y puesta en marcha:</h5>
         <p>
-            Focus on closer and seamless integration between sales and delivery teams, ultimately driving growth, scalability, and profitability across all areas of the business. Automation and digitization of the sales process will be central to achieving this and sales incentives should consistently evolve toward delivering customer value, regardless of delivery models.
+            Céntrate en una colaboración más estrecha y fluida entre los equipos comerciales y de puesta en marcha de servicios en la nube, lo que, en última instancia, genera crecimiento, escalabilidad y rentabilidad en todas las áreas del negocio. La automatización y la digitalización del proceso de ventas serán esenciales para conseguirlo. Asimismo, los incentivos por ventas deben orientarse, de forma coherente, a proporcionar valor al cliente, independientemente de los modelos de prestación de servicios en la nube.
         </p>
-        <h5>Co-innovation with vendors:</h5>
+        <h5>Innovación junto a los proveedores:</h5>
         <p>
-            Sales teams and presales must be able to work with vendors to co-innovate solutions. Ultimately, you will be able to drive growth, scalability, and profitability into all areas of the business, and automation and digitization of the sales process will be central to achieving this.
+           Los equipos de ventas y preventas deben poder trabajar con proveedores ofrecer soluciones innovadoras de forma conjunta. El crecimiento, la escalabilidad y la rentabilidad en todas las áreas del negocio, así como la automatización y la digitalización del proceso de ventas, serán esenciales para crecer más.
         </p>
         <h5>Transformación digital:</h5>
         <p>
-            Also critical at this stage is embedding your cloud capabilities into a broader digital transformation proposition. This incorporates a breadth of digital technologies, such as mobility, social, Big Data analytics, next-gen security, and the Internet of Things (IoT).
+            También en esta fase es esencial que incluyas tus competencias relativas a la nube en una propuesta de transformación digital más amplia. En dicha propuesta se incluye un gran número de tecnologías digitales, como la movilidad, las redes sociales, los análisis de Big Data, la seguridad de nueva generación y el Internet de las Cosas (IoT, por sus siglas en inglés).
         </p>
         ',
         'stage5'=>'
         <p>
-            Based on IDC\'s assessment, your organization is at Stage 5 in terms of your cloud sales maturity. Just 8% of the organizations benchmarked in our research were at this stage, with the majority of organizations positioned in Stage 2. Typically, organizations at this stage of their maturity share the following characteristics:
+            Según la evaluaciónde IDC, tu organización se encuentra en la fase 5 respecto a las ventas en la nube. Solo un 8 % de las organizaciones que han participado en nuestro estudio se encuentran en esta fase. La mayoría de ellas están en la fase 2. Por lo general, las organizaciones que se encuentran en esta fase de desarrollo comparten las siguientes características:
         </p>
-        <h3>People:</h3>
+        <h3>Personal:</h3>
         <p>
-            Sales are able to sell solutions, services, and consulting based on business outcomes. They have typically recruited vertical and business function sales staff to cement their position in certain markets and enable them to retain key customers. At this stage of maturity, it is likely that your cloud business is evolving into one of the key pillars of broader digital transformation.
+            El departamento comercial puede vender soluciones, servicios y consultoría basándose en resultados empresariales. Normalmente, las organizaciones han contratado personal especializado en la venta de soluciones verticales para consolidar su posición en determinados mercados, lo cual les ha permitido retener a los principales clientes. En esta fase de desarrollo, es probable que los modelos de negocio en la nube evolucionen y lleguen a ser uno de los pilares clave de la transformación digital.
         </p>
-        <h3>Incentives</h3>
+        <h3>Incentivos:</h3>
         <p>
-            Organizations at this advanced stage in their cloud sales maturity have sophisticated sales commission structures geared toward customer value, regardless of cloud delivery models. These include customer satisfaction, customer growth, and renewal rates. With so much achieved, it is critical for you to now maximize this position in the market.
+            Las organizaciones disponen de estructuras de comisiones por ventas avanzadas, orientadas a proporcionar valor a los clientes, independientemente de los modelos de entrega en la nube. En ellas se incluyen la satisfacción del cliente, la captación de nuevos clientes y los porcentajes de renovación. Con todo lo conseguido, es esencial que ahora las organizaciones aprovechen al máximo su posición en el mercado.
         </p>
-        <h3>Enablement</h3>
+        <h3>Capacitación:</h3>
         <p>
-            Enablement efforts are predominantly focused around digital transformation. This should encompass selling omni-channel solutions, building deeper understanding of business process, being able to communicate and sell business value, and selling to line-of-business customers.
+            Las actividades de formación están centradas principalmente en la transformación digital. Deben abarcar la venta de soluciones omnicanal, adquirir un conocimiento más exhaustivo del proceso de negocio, poder comunicar y proporcionar valor empresarial, y vender a clientes de línea de negocio.
         </p>
-        <h3>Sales strategy:</h3>
+        <h3>Estrategia comercial:</h3>
         <p>
-            It is likely that you are already working with vendors to co-innovate solutions and you have developed sophisticated partnerships with vendors and customers. Ultimately, your sales function will begin to deliver the economies of scale you have sought, enabling you to drive profitability into all areas of the business and concentrate sales staff on new growth opportunities.
+            Es probable que las organizaciones ya estén trabajando con proveedores para ofrecer soluciones innovadoras y que hayan establecido colaboraciones estratégicas con proveedores y clientes. En última instancia, el área comercial de las organizaciones empezará a proporcionar la economía de escala que han estado buscando, lo que les permitirá impulsar la rentabilidad en todas las áreas del negocio y dirigir a los comerciales hacia las nuevas oportunidades de crecimiento.
         </p>
         <h3>Recomendaciones</h3>
         <h5>Transformación digital:</h5>
         <p>
-            Customer engagement should focus on digital transformation enablement and sales skills. There should be a strong alignment between the marketing and sales departments, with marketing functioning as an extension of the sales force, particularly for new customer acquisition.
+            La interacción con el cliente debe centrarse en adquirir los conocimientos técnicos para la venta y transformación digital. Debe haber una estrecha colaboración entre los departamentos de marketing y comercial, en la que el departamento de marketing funcione como una extensión del comercial, en concreto, para la captación de nuevos clientes.
         </p>
-        <!--h5>Hiring of wider skill-sets:</h5>
+        <h5>Contratación de personal especializado: </h5>
         <p>
-            Further recruitment of vertical and business function sales staff will help cement your position in certain markets, enabling you to retain key customers over a number of years and grow the business further. Also consider hiring non-traditional skills for digital capabilities, data science, and deep analytics.
-        </p-->
-        <h5>Deeper partnerships:</h5>
-        <p>
-            Continuously invest in partnerships with strategic vendors, as well as with customers. This will help ensure continuous evolution of the sales process within the business.
+           La contratación de comerciales especializados en ventas de soluciones verticales te ayudará a consolidar tu posición en determinados mercados, lo que te permitirá retener a tus principales clientes durante varios años y hacer crecer más el negocio. Considera también la posibilidad de contratar personal con competencias no tradicionales como conocimientos especializados en el campo digital, en bases de datos y en análisis avanzados.
         </p>
-        <h5>Co-innovation with vendors:</h5>
+        <h5>Colaboraciones más estrechas:</h5>
+        <p>
+            Establece colaboraciones con proveedores estratégicos, así como con clientes. Esto te ayudará a garantizar una evolución continua del proceso de ventas en la empresa.
+        </p>
+        <!--h5>Co-innovation with vendors:</h5>
         <p>
             Sales teams and presales must be able to work with vendors to co-innovate solutions. Ultimately, you will be able to drive growth, scalability, and profitability into all areas of the business, and automation and digitization of the sales process will be central to achieving this.
         </p>
         <h5>Transformación digital:</h5>
         <p>
             Also critical at this stage is embedding your cloud capabilities into a broader digital transformation proposition. This incorporates a breadth of digital technologies, such as mobility, social, Big Data analytics, next-gen security, and the Internet of Things (IoT).
-        </p>
+        </p-->
         ',
     ),
     'business-mix' => array(
-        'title'=>'Business Mix',
+        'title'=>'Mix de negocio',
         'pageimage' => '',
         'stage1'=>'
         <p>
-            Based on IDC\'s assessment, your organization is at Stage 1 in terms of the maturity of your cloud business mix. 4% of the organizations benchmarked in our research were at this stage, with the majority of organizations positioned in Stage 3. Typically, organizations at this stage of their maturity share the following characteristics:
+            Según la evaluación de IDC, tu organización se encuentra en la fase 1 respecto al mix de negocio en la nube. El 4% de las organizaciones que han participado en nuestro estudio se encuentra en esta fase. La mayoría de ellas están en la fase 3. Por lo general, las organizaciones que se encuentran en esta fase de desarrollo comparten las siguientes características:
         </p>
-        <h3>Revenue contribution:</h3>
+        <h3>Contribución a los ingresos: </h3>
         <p>
-            The majority of software revenue comes from the resell of on-premise licenses. Very few organizations in this stage of maturity have firm targets in place for growing any kind of recurring revenue contribution.
+            La mayor parte de los ingresos de software proceden de la venta de licencias on-premise. En esta fase, muy pocas empresas tienen objetivos firmes para fomentar cualquier tipo de ingresos recurrentes.
         </p>
-        <h3>Partner programs</h3>
+        <h3>Programas para Partners:</h3>
         <p>
-            Organizations in this stage of maturity typically lie within the lowest tier in cloud-specific vendor programs (although they may be in higher tiers for on-premise products). Vendors such as Sage are currently increasing investments into channel lead generation, financial incentives, and enablement specifically for cloud and SaaS programs.
+            De forma general, las organizaciones están en el nivel más bajo de los programas de proveedores específicos para la nube (aunque puedan estar en niveles más altos en los productos on-premise). Proveedores como Sage están aumentando sus inversiones en la captación de nuevos Partners, incentivos financieros y planes de formación específica para los modelos SaaS y otros servicios en la nube.
         </p>
-        <h3>Services</h3>
+        <h3>Servicios:</h3>
         <p>
-            Although organizations in this stage may offer software-related services such as consulting, customization, implementation, support, and training, they are rarely aligned or designed specifically to enhance their cloud software and SaaS businesses.
+            Aunque en esta fase las organizaciones puedan ofrecer servicios relacionados con el software, como consultoría, personalización, implementación, soporte y formación, en muy pocas ocasiones están adaptados o diseñados específicamente para mejorar sus modelos de negocio SaaS u otros servicios en la nube.
         </p>
-        <h3>Cloud infrastructure:</h3>
+        <h3>Infraestructura en la nube:</h3>
         <p>
-            Organizations at this stage are yet to make significant investments in their own cloud infrastructure, tools, and management technology. As a result, they are unlikely to progress beyond basic resell and referral. This is mainly due to not having the capability to manage complex hybrid environments or additional value-adds such as unified billing, management, and security.
+            En esta fase, las organizaciones aún tienen que realizar inversiones importantes en sus propias infraestructuras, herramientas y tecnologías de gestión de la nube. Por consiguiente, es muy poco probable que vayan más allá de la distribucióny prescripción básica. Esto se debe principalmente a que no disponen de la capacidad para gestionar entornos híbridos complejos o complementos de valor adicional, como la facturación unificada, la gestión y la seguridad.
         </p>
-        <h3>Solutions:</h3>
+        <h3>Soluciones: </h3>
         <p>
-            Very few organizations at this stage in their maturity have developed cloud-specific solutions (horizontal or vertical) in collaboration with vendor partners or have developed their own cloud IP.
+            "En esta fase, muy pocas empresas han desarrollado soluciones específicas para la nube (horizontales o verticales) en colaboración con los Partners proveedores, o creado su propia propiedad intelectual en la nube. 
+Recomendaciones"
         </p>
         <!--<img src="http://sage.idcready.net/images/tools/1/business-mix.jpg" class="right">-->
         <h3>Recomendaciones</h3>
-        <h5>Build a financial plan:</h5>
+        <h5>Desarrollar un plan financiero:</h5>
         <p>
-            Incorporate recurring revenue into your business. If this is not done, you face a potential risk of a cash-flow "trough" as you shift from project-based to recurring revenue models. Build recurring revenue over time, creating stages within the plan and adjusting your product and services portfolio, as well as infrastructure investments, through each stage. Actively look to diversify revenue and reduce dependency on resell revenues. This will require careful assessment and planning across your services portfolio, cloud infrastructure, and solution offerings.
+            Incorpora los ingresos recurrentes en tu negocio. Si no lo haces, puede que repercuta en la tesorería de la empresa al cambiar del modelo basado en proyectos al de ingresos recurrentes. Genera ingresos recurrentes a lo largo del tiempo, creando un plan estructurado y adaptando tu gama de productos y servicios, así como tus inversiones en infraestructura en cada fase. Trata de forma activa de diversificar los ingresos y de reducir la dependencia en los ingresos de la distribución. Para ello, deberás efectuar una evaluación y una planificación cuidadosas de tu abanico de ofertas de servicios, infraestructura y soluciones en la nube.
         </p>
-        <h5>Vendor selection:</h5>
+        <h5>Selección de proveedores:</h5>
         <p>
-            Look at your cloud vendor partners and prioritize those that are most strategic to your future business in terms of alignment with your target market and business mix. Work on a progression plan with these strategic vendors to progress to the next tier in their cloud partner programs.
-        </p>
-        <h5>Align service portfolio:</h5>
+            Evalúa a tus Partners proveedores de la nube y da prioridad a aquellos que sean más estratégicos para tu negocio futuro, de acuerdo a tus objetivos de mercado y mix de negocio. Elabora un plan de desarrollo con esos proveedores estratégicos para subir al siguiente nivel en sus Programas para Partners de aplicaciones y servicios en la nube. 
+        <h5>Adaptar la cartera de servicios:</h5>
         <p>
-            As you progress to the next stage of maturity it is recommended you look to align your services portfolio with your cloud and SaaS business and create those upsell opportunities. The margin in services is typically higher than resell and referral. Building a profitable services businesses attached to your cloud resell business will help bolster your bottom line. As you advance into the next stages, the more automated and repeatable these services are, the more profitable.
+            A medida que avances hacia la siguiente fase, te recomendamos que adaptes tu cartera de servicios a tu negocio en la nube y al modelo SaaS, y crea oportunidades de upselling. El margen por los servicios es normalmente superior al de la distribución y la referencia de clientes. La creación de modelos de negocio basados en servicios rentables relacionados con su negocio de venta en la nube te ayudará a consolidar resultados netos. En tu progreso hacia las siguientes fases, cuanto más automatizados y repetibles sean los servicios, más rentables te resultarán.
         </p>
         ',
         'stage2'=>'
         <p>
-            Based on IDC\'s assessment, your organization is at Stage 2 in terms of the maturity of your cloud business mix. 16% of the organizations benchmarked in our research were at this stage, with the majority of organizations positioned in Stage 3. Typically, organizations at this stage of their maturity share the following characteristics:
+            Según la evaluación de IDC, tu organización se encuentra en la fase 2 respecto a tu mix de negocio en la nube. El 16 % de las organizaciones que han participado en nuestro estudio se encuentra en esta fase. La mayoría está en la fase 3. Por lo general, las organizaciones que se encuentran en esta fase de desarrollo comparten las siguientes características:
         </p>
-        <h3>Revenue contribution:</h3>
+        <h3>Contribución a los ingresos: </h3>
         <p>
-            While the majority of software revenue comes from the resell of on-premise licenses, recurring revenue growth is often outpacing that of traditional business. In this stage of maturity most organizations have just started assessing their recurring revenue contribution in relation to project-based business. Most are in the early stages of building a financial plan.
+            Aunque la mayor parte de los ingresos por software proceden de la venta de licencias on-premise, el aumento de los ingresos recurrentes supera a los del modelo tradicional. En esta fase, las organizaciones acaban de empezar a evaluar su contribución a los ingresos recurrentes en relación con el modelo de negocio basado en proyectos. La mayoría se encuentra en las primeras fases de elaboración de un plan financiero.
         </p>
-        <h3>Partner programs</h3>
+        <h3>Programas para Partners:</h3>
         <p>
-            Organizations at this stage of maturity are prioritizing some vendor partners as strategic to their cloud business and are often progressing to a higher tier in cloud-specific vendor programs (although they may be in higher tiers for on-premise products).
+            En esta fase de desarrollo, las organizaciones apuestan por Partners proveedores estratégicos para su negocio en la nube, y a menudo buscan proveedores de un nivel superior con programas específicos en la nube (aunque puedan estar en niveles más altos en los productos on-premise).
         </p>
-        <h3>Services</h3>
+        <h3>Servicios:</h3>
         <p>
-            You are likely to be developing a services portfolio specifically designed for upsell from SaaS. This is typically focused on training, implementation, and support. As the cloud business gains momentum, so the company will start to build the experience and IP.
+            Es probable que las organizaciones estén desarrollando una cartera de servicios diseñada específicamente para crear oportunidades de upselling con el modelo SaaS. Normalmente, las organizaciones se centran en la formación, la implementación y el soporte. A medida que el negocio en la nube gana impulso, empiezan a consolidar su experiencia y la propiedad intelectual.
         </p>
-        <h3>Cloud infrastructure:</h3>
+        <h3>Infraestructura en la nube:</h3>
         <p>
-            At this stage of maturity it is unlikely that your organization has made significant investments in your own cloud infrastructure and tools and management technology. Many are, however, starting to build a well-structured technology roadmap for both the technology and skills needed.
+            En esta fase, es poco probable que las organizaciones hayan efectuado inversiones importantes en herramientas e infraestructura en la nube y tecnología de gestión propias. Sin embargo, muchas empiezan a crear un plan tecnológico bien estructurado para conseguir tanto la tecnología como las competencias necesarias.
         </p>
         <!--<img src="http://sage.idcready.net/images/tools/1/business-mix.jpg" class="right">-->
         <h3>Recomendaciones</h3>
-        <h5>Financial plan:</h5>
+        <h5>Plan financiero:</h5>
         <p>
-            At this stage of maturity it is advisable to build in a regular review process that monitors the contribution of recurring revenue, services revenue, and product resell revenue over time. Build an investment plan for scalable cloud infrastructure and tools to create value. This will also support efficient delivery of services, such as proactive managed services and hybrid management.
+            En esta fase, es recomendable que establezcas un proceso de revisión periódica en el que se supervise la contribución a los ingresos recurrentes, los ingresos por servicios y los ingresos por venta de productos a lo largo del tiempo. Elabora un plan de inversión para la escalabilidad de la infraestructura y las herramientas de la nube que aporte valor añadido. Con ello se facilitará la puesta en marcha eficiente de servicios, como los servicios gestionados proactivos y la gestión híbrida.
         </p>
-        <h5>Develop IP:</h5>
+        <h5>Desarrollo de la propiedad intelectual:</h5>
         <p>
-            Analyze past projects and identify technology solutions and services that have the potential to be productized as your own IP. Look to your existing account base to identify industries that present an opportunity for your company to develop specializations.
+            Analiza los proyectos implementados e identifica las soluciones y los servicios tecnológicos que pueden convertirse en productos con su propia propiedad intelectual. Consulta quiénes son tus clientes actuales para determinar los sectores con oportunidad en los que tu empresa se puede especializar.
         </p>
-        <h5>Vendor partnerships:</h5>
+        <h5>Colaboración con proveedores:</h5>
         <p>
-            Explore with your vendor partners the potential opportunities for joint solution development (vertical or horizontal). You should also look to familiarize yourself with the requirements for advancement to a higher tier and continue to structure your own business planning to align with this. Requesting a joint business planning session with your cloud vendors will not only drive opportunities, but also signal your commitment.
+            Analiza con tus Partners proveedores la oportunidad de desarrollar soluciones conjuntas (verticales u horizontales). También debes tratar de familiarizarte con los requisitos de nivel superior del programa para Partners y crear tu propio plan de negocio de acuerdo a dichos requisitos. La creación de un plan de negocio conjunto entre Partners y proveedores Cloud no solo te permitirá obtener más oportunidades, sino que mostrará tu compromiso.
         </p>
-        <h5>Automation and upsell opportunities:</h5>
+        <h5>Automatización y oportunidades de upselling:</h5>
         <p>
-            Successful cloud businesses use cloud as a door-opener for upselling services. The more automated and repeatable these services are, the more profitable they become. Even at this early stage of your cloud journey, it is recommended you design future services with automation in mind.
+            Las empresas de éxito usan la nube como medio para desarrollar técnicas de upselling. Cuanto más automatizados y repetibles sean los servicios, más rentables serán. Incluso en esta fase inicial de tu experiencia con la nube, te aconsejamos que diseñes los futuros servicios pensando en la automatización.
         </p>
         ',
         'stage3'=>'
         <p>
-            Based on IDC\'s assessment, your organization is at Stage 3 in terms of the maturity of your cloud business mix. 53% of the organizations benchmarked in our research were at this stage, with the majority of organizations also positioned in Stage 3. Typically, organizations at this stage of their maturity share the following characteristics:
+            Según la evaluaciónde IDC, tu organización se encuentra en la fase 3 respecto a tu mix de negocio en la nube. El 53 % de las organizaciones que han participado en nuestro estudio se encuentra en esta fase. La mayoría de ellas también están en la fase 3. Por lo general, las organizaciones que se encuentran en esta fase comparten las siguientes características:
         </p>
-        <h3>Revenue contribution:</h3>
+        <h3>Contribución a los ingresos: </h3>
         <p>
-            The revenue generated solely from cloud is typically between 10% and 20% of total revenue. Recurring revenue is starting to gather momentum and its impact on cash flow is starting to be felt.
+            Los ingresos generados solo a partir de la nube se sitúan entre el 10 % y el 20 % de los ingresos totales. Los ingresos recurrentes están empezando a incrementarse y su impacto en la tesorería de la empresa se está empezando a notar.
         </p>
-        <h3>Partner programs</h3>
+        <h3>Programas para Partners:</h3>
         <p>
-            Organizations at this stage have typically identified which vendor partners are strategic to their cloud business and are in the process of progressing to a higher tier in vendor programs.
+            En esta fase, las organizaciones normalmente han identificado qué Partners proveedores son estratégicos para su negocio en la nubey están en el proceso de evolucionar a un nivel más alto de compromiso formando parte de programas específicos.
         </p>
-        <h3>Services</h3>
+        <h3>Servicios:</h3>
         <p>
-            SaaS has become embedded into a broader cloud portfolio and incorporates a range of SaaS-specific project-based services (training, consulting, implementation, and possibly integration). Many companies at this stage of maturity have also started to build a managed services portfolio attached to their cloud business.
+            SaaS ofrece una opción completa que incorpora una serie de servicios basados en proyectos específicos (formación, consultoría, implementación y, tal vez, integración). En esta fase, muchas empresas han empezado a elaborar un catalogo de servicios gestionados unidos al negocio de la nube.
         </p>
-        <h3>Cloud infrastructure:</h3>
+        <h3>Infraestructura en la nube:</h3>
         <p>
-            Organizations at this stage are likely to have established a well-structured technology roadmap. They have started investing in cloud infrastructure, tools, and management technology to progress beyond basic resell and referral into a more profitable cloud business.
+            En esta fase, es probable que las organizaciones hayan establecido un plan tecnológico con una estructura adecuada. Han empezado a invertir en infraestructura, herramientas y tecnología de gestión de la nube para pasar de la distribución y prescripción básicas a un negocio en la nube más rentable.
         </p>
-        <h3>Solutions:</h3>
+        <h3>Soluciones: </h3>
         <p>
-            It is unlikely that organizations at this stage of maturity have developed cloud-specific solutions (horizontal or vertical) or have developed their own cloud IP.
+            En esta fase, es muy poco probable que hayan desarrollado soluciones específicas (horizontales o verticales) o que hayan creado su propia propiedad intelectual de soluciones en la nube.
         </p>
         <!--<img src="http://sage.idcready.net/images/tools/1/business-mix.jpg" class="right">-->
         <h3>Recomendaciones</h3>
         <h5>Automatización:</h5>
         <p>
-            Organizations at this stage should emphasize building and extending automation capabilities for managed services associated with SaaS business. This is with a view to building proactive/preemptive services capabilities. As you advance into the next stages, the more automated and repeatable these managed services are, the more profitable your cloud business will be.
+            Tienes que hacer hincapié en la creación y la ampliación de las funciones de automatización para los servicios gestionados referentes al modelo SaaS. El objetivo es desarrollar ofertas de servicios proactivas/preventivas. A medida que avances hacia las siguientes fases, cuanto más automatizados y repetibles sean los servicios, más rentable será tu negocio en la nube.
         </p>
-        <h5>Expand vertical and horizontal solutions:</h5>
+        <h5>Aumentar las soluciones verticales y horizontales:</h5>
         <p>
-            This will enable your business to achieve greater reach and scale, investing in deeper pockets of specialization.
+            De este modo, tu negocio podrá lograr un mayor tamaño y alcance al estar dispuesto a invertir en especialización.
         </p>
-        <h5>Joint solutions with partners:</h5>
+        <h5>Soluciones junto con los Partners:</h5>
         <p>
-            Regular business and account planning with strategic vendor partners will ensure close alignment and visibility. The roadmap should focus on building capability to fully support hybrid environments, also supporting more complex value-adds such as unified billing, network optimization, cloud management, and security. Future solutions should continue to be a key topic of discussion and should be incorporated into both joint business planning sessions and technical planning sessions.
+            El modelo de negocio habitual y la planificación de cuentas con los Partners estratégicos garantizarán una estrecha colaboración y visibilidad. El plan tecnológico debería centrarse en adquirir los conocimientos técnicos para gestionar totalmente los entornos híbridos, a la vez que se da soporte a complementos de valor más complejos, como la facturación unificada, la optimización de redes, la gestión de la nube y la seguridad. Las soluciones futuras deben continuar siendo un tema de debate clave y se deben incorporar en los planes de negocio y tecnológicos conjuntos.
         </p>
         ',
         'stage4'=>'
         <p>
-            Based on IDC\'s assessment, your organization is at Stage 4 in terms of the maturity of your cloud business mix. 26% of the organizations benchmarked in our research were at this stage, with the majority of organizations positioned in Stage 3. Typically, organizations at this stage of their maturity share the following characteristics:
+            Según la evaluación de IDC, tu organización se encuentra en la fase 4 en lo que respecta a tu mix de negocio en la nube. El 2 % de las organizaciones que han participado en nuestro estudio se encuentran en esta fase. La mayoría de ellas están en la fase 3. Por lo general, en esta fase de su desarrollo, las organizaciones comparten las siguientes características:
         </p>
-        <h3>Revenue contribution:</h3>
+        <h3>Contribución a los ingresos: </h3>
         <p>
-            Companies at this stage of maturity typically generate more revenue from delivering services than reselling product or licenses. Cloud tends to contribute to at least a third of total business and most organizations have fairly robust measuring and reporting on cloud. They also have a good understanding of the contribution recurring revenue has on total revenue.
+            En esta fase, las empresas suelen generar más ingresos por la puesta en marcha de servicios que por la venta de productos o licencias. La nube tiende a contribuir, como mínimo, a un tercio de la facturación total, y la mayoría de las organizaciones disponen de sistemas de análisis e informes bastante detallados relativos a la nube. También conocen bien la contribución de los ingresos recurrentes a los ingresos totales.
         </p>
-        <h3>Partner programs</h3>
+        <h3>Programas para Partners:</h3>
         <p>
-            Typically, organizations at this stage of maturity are able to support multiple environments and vendor products, but have established a strategic relationship with one or more cloud vendor. They are also progressing through the tiers, developing deeper expertise within these strategic vendor partners.
+            Las empresas que se encuentran en esta fase son capaces de ofrecer varios entornos y productos de proveedores, pero han establecido una relación estratégica con uno o varios proveedores de la nube. También están evolucionando, desarrollando una experiencia más avanzada con esos Partners proveedores estratégicos.
         </p>
-        <h3>Services</h3>
+        <h3>Servicios:</h3>
         <p>
-            Companies in this stage have a services portfolio for upsell from SaaS, including consulting, training, implementation, support, and managed services. As you advance into the next stages, the more automated and repeatable these services are, the more profitable.
+            En esta fase, las empresas tienen una cartera de servicios para aprovechar las oportunidades de upselling que ofrece el modelo SaaS; entre las que se encuentran la consultoría, la formación, la implementación, el soporte y los servicios gestionados. A medida que avancen hacia las siguientes fases, cuanto más automatizados y repetibles sean los servicios, más rentables serán.
         </p>
-        <h3>Cloud infrastructure:</h3>
+        <h3>Infraestructura en la nube:</h3>
         <p>
-            Companies at this stage have typically invested — and continue to invest — in cloud infrastructure, tools, and management technology. The ability to support and integrate multiple environments becomes critical, and tools and architecture in hybrid cloud are prioritized.
+            En esta fase, las empresas han invertido, y siguen invirtiendo, en infraestructura, herramientas y tecnología de gestión en la nube. La capacidad para gestionar e integrar varios entornos es un factor fundamental, y se da prioridad a las herramientas y a la arquitectura en la nube híbrida.
         </p>
         <!--<img src="http://sage.idcready.net/images/tools/1/business-mix.jpg" class="right">-->
         <h3>Recomendaciones</h3>
         <h5>Automatización:</h5>
         <p>
-            Look to extend automation capabilities for managed services associated with SaaS business. These services can be automated and therefore repeatable and are packaged and attached to SaaS portfolios for easier upsell. Typically, these managed services are able to support remote delivery.
+            Amplía las funciones de automatización para los servicios gestionados referentes al modelo SaaS. Dichos servicios se pueden automatizar y, por lo tanto, son repetibles y se pueden empaquetar y adjuntar a carteras del modelo SaaS para aprovechar las oportunidades de upselling. Generalmente, los servicios gestionados permiten la entrega remota.
         </p>
         <h5>Transformación digital:</h5>
         <p>
-            You should look to combine solutions with a view to building a digital transformation stack at a business function and sector level. It is advisable at this stage of your journey to ensure that you have full visibility into customer usage of cloud, with preemptive renewals and actual usage data readily available. This will become increasingly important over time.
+            Además de ofrecer soluciones, tienes que tener presente las transformaciones digitales que se producen en los diferentes modelos de negocios y sectores. En esta fase, debes estar al tanto del uso que hacen los clientes de la nube, con datos inmediatos de renovaciones preferentes y de uso real. Con el paso del tiempo, esto será cada vez más importante.
         </p>
-        <h5>Joint vendor solutions:</h5>
+        <h5>Soluciones conjuntas:</h5>
         <p>
-            Start the process of certifying joint vendor solutions (where possible) with a view to selling through alternative channels such as cloud marketplaces. In order to progress to the next stage of maturity, it is recommended to follow a portfolio approach in terms of capability development, with a view to becoming a certified solution provider with breadth in capability.
+            Inicia el proceso de certificación de las soluciones conjuntas (en aquellas que sea posible) para poder vender a través de canales alternativos, como los Marketplaces de la nube. Con el fin de que pases a la siguiente fase, te recomendamos seguir especializándote, y convertirte en un proveedor de soluciones certificado con amplios conocimientos técnicos. 
         </p>
-        <h5>Solutions:</h5>
+        <h5>Soluciones: </h5>
         <p>
-            Solutions can be horizontal (technology) or vertical (industry focused) but they must also have a robust go-to-market and sales strategy associated with each one. As you advance into the next stage of maturity, you will need to sell at line-of-business level. This will be achieved by selling business transformation engagements and holistic technology solutions.
+            Las soluciones pueden ser horizontales (tecnología) o verticales (orientadas al sector), pero también deben contar con una estrategia sólida de lanzamiento al mercado y de ventas asociada a cada una. A medida que vayas avanzando, deberás especializarse en la venta según las líneas de negocio, algo que podrás lograr comprometiéndote a la transformación del negocio y vendiendo soluciones tecnológicas integrales.
         </p>
         ',
         'stage5'=>'
         <p>
-            Based on IDC\'s assessment, your organization is at Stage 5 in the maturity of your cloud business mix. 1% of the organizations benchmarked in our research were at this stage, with the majority of organizations positioned in Stage 3. Typically, organizations at this stage of their maturity share the following characteristics:
+            Según la evaluaciónde IDC, tu organización se encuentra en la fase 5 respecto a tu mix de negocio en la nube. El 1% de las organizaciones que han participado en nuestro estudio se encuentran en esta fase. La mayoría de ellas están en la fase 3. Por lo general, las organizaciones que se encuentran en esta fase de desarrollo comparten las siguientes características:
         </p>
-        <h3>Revenue contribution:</h3>
+        <h3>Contribución a los ingresos: </h3>
         <p>
-            At this stage of maturity, revenue is predominantly from services with a very healthy contribution from recurring revenue (through SaaS and managed services). Companies at this stage of maturity have strong predictability in their business and this enables strategic investment and planning.
+            En esta fase de desarrollo, los ingresos proceden principalmente de los servicios con una contribución muy sustanciosa a los ingresos recurrentes (a través del modelo SaaS y de los servicios gestionados). Las empresas tienen la suficiente solidez para prever sus negocios, lo que les permite una inversión y una planificación estratégicas.
         </p>
-        <h3>Partner programs</h3>
+        <h3>Programas para Partners:</h3>
         <p>
-            Typically, organizations are able to support multiple environments and vendor products, and have reached the highest tiers of strategic vendor cloud partner programs. They also have a structured training and enablement process with strategic vendors, and are considered a trusted partner by their vendors.
+            Normalmente, las organizaciones son capaces de dar soporte a varios entornos y productos de proveedores, y han alcanzado los niveles más altos de los Programas para Partners de proveedores de servicios en la nube. También cuentan con planes estructurados de formación con proveedores estratégicos, los cuales lesconsideran Partners de confianza.
         </p>
-        <h3>Services</h3>
+        <h3>Servicios:</h3>
         <p>
-            With a full portfolio of services, companies in this stage of maturity have invested in tools and technology to enable omni-channel support (web, chat, online, telephonic), across all customer-facing elements, fully integrated with CRM. Efficiency of delivery and profitability are carefully monitored with evolving KPIs and improvement metrics.
+            Con una cartera completa de servicios, en esta fase de desarrollo las empresas ya han invertido en herramientas y tecnologías para permitir el soporte omnicanal (web, chat, correo electrónico, teléfono) en todas las interacciones con el cliente, y totalmente integrado con su CRM. La eficienciaen la entrega y la rentabilidad se supervisan detenidamente con KPIs y métricas de mejora.
         </p>
-        <h3>Cloud infrastructure:</h3>
+        <h3>Infraestructura en la nube:</h3>
         <p>
-            Companies in this stage have typically invested — and continue to invest — in sophisticated, highly automated, and redundant cloud infrastructure, tools, and management technology. Typically, this offers customers a choice of delivery options (on-prem, off-prem, and multiple CSPs).
+            En esta fase, las empresas normalmente han invertido, y siguen invirtiendo, en una infraestructura en la nube avanzada, muy automatizada y lógica, así como en herramientas y en tecnología de gestión. Por lo general, esto ofrece varias opciones para los clientes (on-premise, o en sus propias instalaciones, off-premise, o fuera de ellas, o en varios proveedores de servicios en la nube, o CSPs por sus siglas en inglés).
         </p>
-        <h3>Solutions:</h3>
+        <h3>Soluciones: </h3>
         <p>
-            At this stage of maturity, there is an emphasis on selling joint solutions, as well as holistic solutions that contain a high degree of IP. Solutions form part of a broader digital transformation agenda and there is an emphasis on being able to support and design holistic solutions. At this stage of maturity, scale becomes a key KPI and it is advisable to continuously certify solutions with strategic vendor partners and consider certifying IP-based solutions to be sold through cloud marketplaces.
+            En esta fase de desarrollo, se hace hincapié en la venta de soluciones conjuntas, así como de soluciones integrales con alto nivel de propiedad intelectual. Las soluciones forman parte de una agenda de transformación digital más amplia. Además, es importante ser capaz de desarrollar y gestionar soluciones integrales. Llegados a este punto, la escalabilidad se convierte en un KPI clave y es aconsejable que los Partners tengan la certificación de las soluciones de los proveedores, así como considerar la posibilidad de certificar las soluciones con propiedad intelectual para venderlas a través de los Marketplaces en la nube.
         </p>
         <!--<img src="http://sage.idcready.net/images/tools/1/business-mix.jpg" class="right">-->
         <h3>Recomendaciones</h3>
         <h5>Transformación digital:</h5>
         <p>
-            At this stage in your business mix maturity, you should continue to invest in building services and tools to support digital transformation, including process reengineering and rapid systems integration.
+            En esta fase de tu mix de negocio, debes seguir invirtiendo en servicios y herramientas adaptadas a la transformación digital, entre los que se incluye la reestructuración de procesos y la integración directa de sistemas.
         </p>
-        <h5>3rd Platform solution investment:</h5>
+        <h5>Inversión en soluciones de la Tercera Plataforma:</h5>
         <p>
-            Focus on continuously investing in integrated new wave solutions, combining 3rd Platform digital technologies including mobile, cloud, Big Data analytics, and social and associated services.
+            No dejes de invertir en las soluciones integradas de última generación, y combina las tecnologías digitales de la Tercera Plataforma, cuyos pilares son la movilidad, la nube, el análisis de Big Data, las redes sociales y los servicios asociados.
         </p>
-        <h5>Drive scale:</h5>
+        <h5>Impulsar la escalabilidad:</h5>
         <p>
-            Assess routes to market and business models that enable efficient scaling, consider licensing solutions to other partners, and expand alternative channels and partnerships that enable geo-expansion of specific solutions.
+            Evalúa las rutas hacia modelos de mercado y de negocio que permitan una escalabilidad eficaz, considera la posibilidad de tener otros Partners que puedan vender las licencias de las soluciones y amplía tu red de Partners para expandirte geográficamente.
         </p>
         ',
     ),
