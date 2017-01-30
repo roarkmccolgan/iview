@@ -8,6 +8,7 @@ use App\Http\Requests;
 use Carbon\Carbon;
 use Excel;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 use JavaScript;
 
 class AssessmentController extends Controller {
@@ -98,10 +99,14 @@ class AssessmentController extends Controller {
 	 */
 	public function delete($subdomain, Assessment $assessment,Request $request)
 	{
-		$assessment->delete();
+		//$assessment->delete();
+		$name = str_slug($assessment->fname.'_'.$assessment->lname.'_'.$assessment->tool->title.'_Assessment');
+		if(File::exists(storage_path().'/reports/'.$assessment->id.'_'.$name.'.pdf')){
+			File::delete(storage_path().'/reports/'.$assessment->id.'_'.$name.'.pdf');
+		}
 		if($request->ajax()){
 			$data = [
-			'result'=>'success'
+				'result'=>'success'
 			];
 			return $data;
 		}

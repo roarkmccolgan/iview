@@ -114,7 +114,7 @@
 							<em>* {!!trans('general.required')!!}</em>
 						</div>
 						<div class="col-md-12">
-							<button type="submit" class="btn btn-lg btn-primary pull-right {{$btnclass}}"><i class="fa fa-email"></i> {!!trans('general.emailreport')!!}</button>
+							<button id="submitBut" type="submit" class="btn btn-lg btn-primary pull-right {{$btnclass}}"><i class="fa fa-envelope-o"></i> {!!trans('general.emailreport')!!}</button>
 						</div>
 					</fieldset>
 					{{ Form::close() }}

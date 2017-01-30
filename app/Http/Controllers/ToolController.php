@@ -385,6 +385,7 @@ public function postComplete(SubmitAssessmentsRequest $request)
 	$assessment->score = session('result.overall.score');
 	$assessment->rating = trans(session('product.alias').'.'.session('result.overall.rating'));
 	$assessment->save();
+	$tracker = false;
 
 	//check UTM
 	if ($request->session()->has('utm')) {
@@ -425,7 +426,7 @@ public function postComplete(SubmitAssessmentsRequest $request)
 	}*/
 	$subject = trans(session('product.alias').'.email.subject');
 	$viewData = [
-	'assessment'=>$assessment,
+		'assessment'=>$assessment,
 	];
 	$data['html'] =  View::make('emails.download', $viewData)->render();
 
@@ -436,15 +437,31 @@ public function postComplete(SubmitAssessmentsRequest $request)
 	});
 
 	//send mail to notification people
+	$emails = [];
 	if(App::isLocal()){
 		$emails = ['roarkmccolgan@gmail.com'];
 	}else{
-	    $emails = ['roarkmccolgan@gmail.com']; //add others 
+		foreach ($assessment->tool->users as $user) {
+			$emails[] = $user->email;
+		}
 	}
-	/*Mail::queue('emails.notification', array('fname'=>$request->input('fname'), 'sname'=>$request->input('sname'), 'email'=>$request->input('email'), 'company'=>$request->input('company'), 'phone'=>$request->input('phone'), 'screener1'=>$this->quiz['demographics']['pages']['page1']['questions']['s1']['selected'], 'screener2'=>$this->quiz['demographics']['pages']['page2']['questions']['s2']['selected'], 'screener3'=>$this->quiz['demographics']['pages']['page3']['questions']['s3']['selected'], 'score'=>$this->howfit['overall']['score'], 'rating'=>$this->howfit['overall']['rating'], 'assessment_id'=>$assessment->id, function($message)  use ($request->input( $emails,)$curloc){
-
-	    $message->to($emails)->subject('Conferged Infrastructure Quiz completed ('.$curloc.')');
-	});*/
+	$subject = $assessment->tool->company->name.' - '.$assessment->tool->title.' Assessment completed';
+	Mail::queue('emails.notification',
+		array(
+			'companyName' => $assessment->tool->company->name,
+			'toolTitle' => $assessment->tool->title,
+			'fname'=>$request->input('fname'),
+			'sname'=>$request->input('sname'),
+			'email'=>$request->input('email'),
+			'company'=>$request->input('company'),
+			'phone'=>$request->input('phone'),
+			'score'=>$this->howfit['overall']['score'],
+			'rating'=>$this->howfit['overall']['rating']
+		),
+		function($message)  use ($emails, $subject){
+			$message->from('notifications@mg.idcready.net', 'IDC Notifications');
+			$message->to($emails)->subject($subject);
+	});
         
 	$vars = array(
 		'heading' => trans(session('product.alias').'.complete_thankyou',['fname'=>$request->input('fname')]),

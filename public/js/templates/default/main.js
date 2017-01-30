@@ -14,11 +14,13 @@ $(function() {
 	
 	$('#form-email-report').submit(function(e) {
 		if (validate(this)) {
-			$(e.target).removeClass('btn-primary').addClass('btn-default').prop('disabled', true);
+			var submit = $('#submitBut');
+			submit.removeClass('btn-primary').addClass('btn-default').prop('disabled', true);
+			submit.find('i').removeClass('fa-envelope-o').addClass('fa-spin fa-spinner');
 			return true;
+		} else {
+			return false;
 		}
-		else 
-		return false
   });
 	
 	if(!Modernizr.input.placeholder){
