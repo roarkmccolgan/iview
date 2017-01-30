@@ -89,7 +89,7 @@ return array(
                     'q3'=>array(
                         'type'=>'button',
                         'question'=>'¿Cómo se estructuran las inversiones para tu negocio en la nube? Presupuesto y planificación es:',
-                        'name'=>'q4',
+                        'name'=>'q3',
                         'options'=>array(
                             array(
                                 'label'=>'A nivel de producto. No tenemos una unidad de negocio independiente dedicada a la nube. ',

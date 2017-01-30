@@ -603,6 +603,9 @@ public function postComplete(SubmitAssessmentsRequest $request)
     								$val = $valHold;
     							}
     						}else{
+    							if(!isset($details['selected'])){
+    								dd($value['pages']);
+    							}
     							$val = explode('|', $details['selected']);
     							$val = $val[1];
     						}
