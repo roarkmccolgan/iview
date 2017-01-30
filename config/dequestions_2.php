@@ -60,7 +60,7 @@ return array(
                         'name'=>'s2',
                         'options'=>array(
                             array(
-                                'label'=>'Weniger als 500',
+                                'label'=>'Weniger als 1000',
                                 'value'=>1,
                                 'checked'=>false
                             ),

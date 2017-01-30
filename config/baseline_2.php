@@ -113,11 +113,11 @@ return array(
                     'united-kingdom' => 10, 'reino-unido' => 10, 'royaume­uni' => 10, 'großbritannien' => 10, 'regno-unito' => 10,
                 ],
                 'benchmark-size' => [
-                    'less-than-1000' => 0,
+                    'less-than-1000' => 0, 'moins-de-1000' => 0, 'weniger-als-1000' => 0, 'meno-di-1000' => 0, 'menos-de-1000' => 0,
                     '1000-2499' => 60,
                     '2500-4999' => 30,
                     '5000-9999' => 0,
-                    '10000-or-more' => 8.33,
+                    '10000-or-more' => 8.33, '10000-ou-plus' => 8.33, '10000-oder-mehr' => 8.33, '10000-o-più' => 8.33, '10000-o-más' => 8.33,
                 ],
                 'position' => 'behind'
             ),
@@ -135,11 +135,11 @@ return array(
                     'united-kingdom' => 5.56, 'reino-unido' => 5.56, 'royaume­uni' => 5.56, 'großbritannien' => 5.56, 'regno-unito' => 5.56,
                 ],
                 'benchmark-size' => [
-                    'less-than-1000' => 4.63,
+                    'less-than-1000' => 4.63, 'moins-de-1000' => 4.63, 'weniger-als-1000' => 4.63, 'meno-di-1000' => 4.63, 'menos-de-1000' => 4.63,
                     '1000-2499' => 56.48,
                     '2500-4999' => 12.04,
                     '5000-9999' => 14.81,
-                    '10000-or-more' => 12.45,
+                    '10000-or-more' => 12.45, '10000-ou-plus' => 12.45, '10000-oder-mehr' => 12.45, '10000-o-più' => 12.45, '10000-o-más' => 12.45,
                 ],
                 'position' => 'behind'
             ),
@@ -157,11 +157,11 @@ return array(
                     'united-kingdom' => 11.62, 'reino-unido' => 11.62, 'royaume­uni' => 11.62, 'großbritannien' => 11.62, 'regno-unito' => 11.62,
                 ],
                 'benchmark-size' => [
-                    'less-than-1000' => 7.05,
+                    'less-than-1000' => 7.05, 'moins-de-1000' => 7.05, 'weniger-als-1000' => 7.05, 'meno-di-1000' => 7.05, 'menos-de-1000' => 7.05,
                     '1000-2499' => 33.2,
                     '2500-4999' => 18.67,
                     '5000-9999' => 18.26,
-                    '10000-or-more' => 13.56,
+                    '10000-or-more' => 13.56, '10000-ou-plus' => 13.56, '10000-oder-mehr' => 13.56, '10000-o-più' => 13.56, '10000-o-más' => 13.56,
                 ],
                 'position' => 'inline'
             ),
@@ -179,11 +179,11 @@ return array(
                     'united-kingdom' => 38.14, 'reino-unido' => 38.14, 'royaume­uni' => 38.14, 'großbritannien' => 38.14, 'regno-unito' => 38.14,
                 ],
                 'benchmark-size' => [
-                    'less-than-1000' => 5.93,
+                    'less-than-1000' => 5.93, 'moins-de-1000' => 5.93, 'weniger-als-1000' => 5.93, 'meno-di-1000' => 5.93, 'menos-de-1000' => 5.93,
                     '1000-2499' => 27.12,
                     '2500-4999' => 20.34,
                     '5000-9999' => 18.64,
-                    '10000-or-more' => 17.39,
+                    '10000-or-more' => 17.39, '10000-ou-plus' => 17.39, '10000-oder-mehr' => 17.39, '10000-o-più' => 17.39, '10000-o-más' => 17.39,
                 ],
                 'position' => 'ahead'
             ),
@@ -201,11 +201,11 @@ return array(
                     'united-kingdom' => 86.96, 'reino-unido' => 86.96, 'royaume­uni' => 86.96, 'großbritannien' => 86.96, 'regno-unito' => 86.96,
                 ],
                 'benchmark-size' => [
-                    'less-than-1000' => 0,
+                    'less-than-1000' => 0, 'moins-de-1000' => 0, 'weniger-als-1000' => 0, 'meno-di-1000' => 0, 'menos-de-1000' => 0,
                     '1000-2499' => 21.74,
                     '2500-4999' => 13.04,
                     '5000-9999' => 8.7,
-                    '10000-or-more' => 10,
+                    '10000-or-more' => 10, '10000-ou-plus' => 10, '10000-oder-mehr' => 10, '10000-o-più' => 10, '10000-o-más' => 10,
                 ],
                 'position' => 'ahead'
             )
