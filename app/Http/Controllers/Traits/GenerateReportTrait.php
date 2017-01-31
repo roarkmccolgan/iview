@@ -131,13 +131,16 @@ trait GenerateReportTrait {
 		    						}
 		    					}
 		    				}
-		    				$val = $extraSettings[$graph['data']][$userAnswer];
+		    				$val = 0;
+		    				if(isset($extraSettings[$graph['data']][$userAnswer])){
+		    					$val = $extraSettings[$graph['data']][$userAnswer];
+		    				}
 		    				$extraGraph->addRow([
-					      trans(session('product.alias').'.'.$extraSection),//$extraSection
-					      $val,
-					      session('result.'.$section.'.rating')==$extraSection? config('baseline_'.session('product.id').'.'.$section.'.report-settings.color'):null,
-					      $val."%"
-					      ]);
+							trans(session('product.alias').'.'.$extraSection),//$extraSection
+							$val,
+							session('result.'.$section.'.rating')==$extraSection? config('baseline_'.session('product.id').'.'.$section.'.report-settings.color'):null,
+							$val."%"
+						 ]);
 		    			}
 
 		    			$extraChart[$section.'_'.$key.'_graph'] = Lava::ColumnChart($section.'_'.$key.'_graph', $extraGraph, $chartSettings);
