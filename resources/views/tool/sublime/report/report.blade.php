@@ -95,7 +95,7 @@
 									if(isset($question['calc'])){
 	                                    if($question['calc']['type']=='average'){
 	                                    	$minmax = [
-												'stage1'=>[
+						'stage1'=>[
 		                                    		'behind' => [
 		                                    			'low' => 0,
 		                                    			'high' => 2,
