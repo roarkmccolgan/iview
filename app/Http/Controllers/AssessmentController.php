@@ -9,6 +9,8 @@ use Carbon\Carbon;
 use Excel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\View;
 use JavaScript;
 
 class AssessmentController extends Controller {
@@ -99,7 +101,7 @@ class AssessmentController extends Controller {
 	 */
 	public function delete($subdomain, Assessment $assessment,Request $request)
 	{
-		//$assessment->delete();
+		$assessment->delete();
 		$name = str_slug($assessment->fname.'_'.$assessment->lname.'_'.$assessment->tool->title.'_Assessment');
 		if(File::exists(storage_path().'/reports/'.$assessment->id.'_'.$name.'.pdf')){
 			File::delete(storage_path().'/reports/'.$assessment->id.'_'.$name.'.pdf');
@@ -111,6 +113,37 @@ class AssessmentController extends Controller {
 			return $data;
 		}
 		return redirect('/admin/assessments')->with('status', 'Assessment deleted!');
+	}
+
+	/**
+	 * Resend Assessment report to the user and optionally cc someone.
+	 *
+	 * @param  App\Assessment
+	 * @param  \Illuminate\Http\Request  $request
+	 * @return \Illuminate\Http\Response
+	 */
+	public function resend($subdomain, Assessment $assessment,Request $request)
+	{
+		$cc = $request->input('cc');
+		$subject = trans(session('product.alias').'.email.subject');
+		$viewData = [
+			'assessment'=>$assessment,
+		];
+		$data['html'] =  View::make('emails.download', $viewData)->render();
+
+		//send mail to user
+		Mail::queue('emails.echo', $data, function ($message) use ($assessment, $subject, $cc) {
+			$message->from('notifications@mg.idcready.net', 'IDC Notifications');
+			$message->to($assessment['email'], $assessment['fname'].' '.$assessment['sname'])->cc($cc)->subject($subject);
+		});
+		if($request->ajax()){
+			$data = [
+				'result'=>'success',
+				'cc'=>$cc
+			];
+			return $data;
+		}
+		return redirect('/admin/assessments')->with('status', 'Assessment Resent!');
 	}
 
 	/**

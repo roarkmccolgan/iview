@@ -25,7 +25,7 @@
 				<div class="content">
 					<button id="openModal" data-modal="download-modal" class="btn btn-success pull-left md-trigger"><i class="fa fa-download"></i> Download Report</button><div class="clearfix"></div>
 					<div>
-						<table id="datatable-icons" class="table table-bordered">
+						<table id="datatable-icons" class="table table-bordered" data-assessments="true">
 							<thead>
 								<tr>
 									<th>Resp ID</th>
@@ -130,6 +130,35 @@
 		</div>
 	</div>
 	<!-- END Nifty Modal -->
+
+	<!-- Nifty Modal-->
+	<div id="resend-modal" class="md-modal colored-header md-effect-9">
+		<div class="md-content">
+			<div class="modal-header">
+				<h3>Resend Report</h3>
+				<button type="button" data-dismiss="modal" aria-hidden="true" class="close md-close">×</button>
+			</div>
+			<div class="modal-body form">
+				<div class="row">
+					<div class="col-md-12">
+						<p>Resend report to user and optionally cc another email address</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group col-md-12 no-margin">
+						<label>CC Email Address</label>
+						<input type="text" id="cc" placeholder="" class="form-control">
+						<input type="hidden" id="assessment_id">
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" data-dismiss="modal" class="btn btn-default btn-flat md-close">Cancel</button>
+				<button type="button" id="resendBut" data-dismiss="modal" class="btn btn-primary btn-flat md-close">Send</button>
+			</div>
+		</div>
+	</div>
+	<!-- END Nifty Modal -->
 	<div class="md-overlay"></div>
 	<iframe id="my_iframe" style="display:none;"></iframe>
 </div>
@@ -174,9 +203,21 @@
 		//document.getElementById('my_iframe').src = 'sage_assessment.xlsx';
 	})
 
-	$('#datatable-icons tbody').on( 'click', 'a.delete', function () {
+	$('#resendBut').click(function(e){
 		var that = this;
-		$.post( "/api/assessments/delete/"+$(this).parents('td').data('ass-id'))
+
+		$.post( "/api/assessments/resend/"+$('#assessment_id').val(),{
+			cc: $('#cc').val()
+		})
+		.done(function( data ) {
+			console.log( "Data Loaded: ", data);
+		});
+	})
+
+	$('#datatable-icons tbody').on( 'click', 'a', function () {
+		var that = this;
+		if($(this).hasClass('delete')){
+			$.post( "/api/assessments/delete/"+$(this).parents('td').data('ass-id'))
 			.done(function( data ) {
 				console.log( "Data Loaded: ", data);
 				$('#datatable-icons').DataTable()
@@ -184,5 +225,8 @@
 					.remove()
 					.draw();
 			});
+		}else if($(this).hasClass('resend')){
+			$('#assessment_id').val($(this).parents('td').data('ass-id'));
+		}
 	});
 @stop

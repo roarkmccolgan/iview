@@ -54,6 +54,7 @@ Route::group(['domain' => '{subdomain}.idcready.net','middleware'=>['locale']], 
 	Route::group(['prefix' => 'api'], function(){
 		Route::group(['prefix' => 'assessments'], function(){
 			Route::post('delete/{assessment}', 'AssessmentController@delete');
+			Route::post('resend/{assessment}', 'AssessmentController@resend');
 		});
 		Route::group(['prefix' => 'trackers'], function(){
 			Route::post('delete/{tracker}', 'TrackerController@delete');
