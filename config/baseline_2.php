@@ -302,7 +302,7 @@ return array(
             ),
             'stage5' => array(
                 'low' => 37.8,
-                'high' => 40,
+                'high' => 50,
                 'total' => 5,
                 'benchmark' => 2,
                 'position' => 'ahead'
