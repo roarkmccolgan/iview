@@ -124,7 +124,10 @@ class AssessmentController extends Controller {
 	 */
 	public function resend($subdomain, Assessment $assessment,Request $request)
 	{
-		$cc = $request->input('cc');
+		$bcc = $request->input('bcc');
+		if(strrpos ( $bcc , ';')!==false){
+			$bcc = array_map('trim', explode(";", $bcc));
+		}
 		$subject = trans(session('product.alias').'.email.subject');
 		$viewData = [
 			'assessment'=>$assessment,
@@ -132,14 +135,14 @@ class AssessmentController extends Controller {
 		$data['html'] =  View::make('emails.download', $viewData)->render();
 
 		//send mail to user
-		Mail::queue('emails.echo', $data, function ($message) use ($assessment, $subject, $cc) {
+		Mail::queue('emails.echo', $data, function ($message) use ($assessment, $subject, $bcc) {
 			$message->from('notifications@mg.idcready.net', 'IDC Notifications');
-			$message->to($assessment['email'], $assessment['fname'].' '.$assessment['sname'])->cc($cc)->subject($subject);
+			$message->to($assessment['email'], $assessment['fname'].' '.$assessment['sname'])->bcc($bcc)->subject($subject);
 		});
 		if($request->ajax()){
 			$data = [
 				'result'=>'success',
-				'cc'=>$cc
+				'bcc'=>$bcc
 			];
 			return $data;
 		}

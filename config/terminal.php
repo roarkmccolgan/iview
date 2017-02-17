@@ -599,7 +599,7 @@ return [
                 'dimensions'    => 'ga:landingPagePath,ga:exitPagePath',
                 'sort'          => false,
                 'max-results'   => false,
-                'filters'       => 'ga:landingPagePath=@/?utm;ga:exitPagePath==/quiz/complete',
+                'filters'       => 'ga:landingPagePath=@/?utm;ga:exitPagePath=~/quiz/complete',
             ]/*,
             'mobile_results'=>[
                 'metrics'       => 'ga:sessions',

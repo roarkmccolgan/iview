@@ -119,10 +119,24 @@ class UserController extends Controller
 	 */
 	public function delete($subdomain, User $user,Request $request)
 	{
-		$user->delete();
+		$loggedInUser = $request->user();
+		$deleted = false;
+		if($loggedInUser->hasAnyRole(['client','admin','super'])){
+			if($user->hasRole('super') && $loggedInUser->hasRole('super')){
+				$user->delete();
+				$deleted = true;
+			}elseif($user->hasRole('admin') && $loggedInUser->hasAnyRole(['admin','super'])){
+				$user->delete();
+				$deleted = true;
+			}elseif($user->hasAnyRole(['local','client']) && $loggedInUser->hasAnyRole(['client','admin','super'])){
+				$user->delete();
+				$deleted = true;
+			}
+		}
 		if($request->ajax()){
 			$data = [
-			'result'=>'success'
+				'result'=>'success',
+				'deleted'=>$deleted
 			];
 			return $data;
 		}

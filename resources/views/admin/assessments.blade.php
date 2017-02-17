@@ -141,13 +141,16 @@
 			<div class="modal-body form">
 				<div class="row">
 					<div class="col-md-12">
-						<p>Resend report to user and optionally cc another email address</p>
+						<p>
+							Resend report to user and optionally bcc other email addresses,<br/>
+							Separate multiple addresses with a semicolon <span class="badge badge-primary">;</span>
+						</p>
 					</div>
 				</div>
 				<div class="row">
 					<div class="form-group col-md-12 no-margin">
-						<label>CC Email Address</label>
-						<input type="text" id="cc" placeholder="" class="form-control">
+						<label>BCC Email Address</label>
+						<input type="text" id="bcc" placeholder="" class="form-control">
 						<input type="hidden" id="assessment_id">
 					</div>
 				</div>
@@ -207,7 +210,7 @@
 		var that = this;
 
 		$.post( "/api/assessments/resend/"+$('#assessment_id').val(),{
-			cc: $('#cc').val()
+			bcc: $('#bcc').val()
 		})
 		.done(function( data ) {
 			console.log( "Data Loaded: ", data);
