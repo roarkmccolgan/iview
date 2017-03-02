@@ -1,7 +1,7 @@
 <?php
 //sage
 return array(
-    'title' => 'Saca el máximo partido a la nube',
+    'title' => 'Saca el m&aacute;ximo partido a la nube',
     'sub-title' => 'Avanzando en su desarrollo',
     'stage1' => 'Fase 1: Momento de actuar',
     'stage2' => 'Fase 2: Momento de comprometerse',
@@ -27,7 +27,7 @@ return array(
             El informe desglosa los resultados por categorías y te permite comparar tu empresa con otras organizaciones.
         ',
         'link' => 'Descargar el informe',
-        'extra' => 'Una vez que haya leido el informe, ¿por qué no visita <a href="http://www.sage.es/" style="color:#024886">Sage</a>',
+        'extra' => 'Una vez que hayas leído el informe, ¿por qué no visitas <a href="http://www.sage.es/" style="color:#024886">Sage</a>?',
         'regards' => 'Atentamente',
         'team' => 'El equipo de IDC'
     ],
@@ -37,7 +37,7 @@ return array(
         'image'=>'',
         'introduction' => '
         <p>
-            Según la evaluaciónde IDC, tu organización se encuentra en la fase <strong>:result</strong> en lo que respecta a tu nivel de adopción general de la nube. El <strong>:benchmark</strong>%% de las organizaciones que ha evaluado IDC se encuentran en esta fase. La mayoría de las organizaciones están en la fase 3: Momento de invertir.
+            Según la evaluaciónde IDC, tu organización se encuentra en la fase <strong>:result</strong> en lo que respecta a tu nivel de adopción general de la nube. El <strong>:benchmark</strong>% de las organizaciones que ha evaluado IDC se encuentran en esta fase. La mayoría de las organizaciones están en la fase 3: Momento de invertir.
         </p>
         <p>
             Para que dispongas de una visión más completa con recomendaciones precisas, el informe muestra los componentes de la estrategia en la nube, y te ofrece una evaluación de tu nivel de desarrollo en cada una de ellas, así como recomendaciones específicas sobre cómo mejorarlas.

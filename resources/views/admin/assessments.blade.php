@@ -5,6 +5,7 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('js/bootstrap.datetimepicker/css/bootstrap-datetimepicker.min.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('/js/jquery.niftymodals/css/component.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('/js/jquery.datatables/plugins/bootstrap/3/dataTables.bootstrap.css') }}"/>
+<link rel="stylesheet" type="text/css" href="{{ asset('/js/jquery.gritter/css/jquery.gritter.css') }}"/>
 @stop
 
 @section('content')
@@ -178,6 +179,7 @@
 <script type="text/javascript" src="{{ asset('/js/jquery.datatables/plugins/bootstrap/3/dataTables.bootstrap.js') }}"></script>
 <script type="text/javascript" src="{{ asset('/js/page-data-tables.js') }}"></script>
 <script type="text/javascript" src="{{ asset('/js/moment.js/moment.js') }}"></script>
+<script type="text/javascript" src="{{ asset('/js/jquery.gritter/js/jquery.gritter.js') }}"></script>
 @stop
 
 @section('load')

@@ -1,5 +1,5 @@
 <ul class="cl-vnavigation">
-	@role('super')        
+	@role('super')
 	<li class="{{ Ekko::isActiveURL('/admin/iviews') }}"><a href="{{URL('/admin/iviews')}}"><i class="fa fa-play-circle-o"></i><span>iViews</span></a>
 		<ul class="sub-menu">
 			<li class="{{ Ekko::isActiveURL('/admin/iviews') }}"><a href="{{URL('/admin/iviews')}}">All</a></li>
@@ -23,12 +23,14 @@
 			<li class="{{ Ekko::isActiveURL('/admin/assessments') }}">
 				<a href="{{URL('/admin/assessments')}}">Assessments</a>
 			</li>
+			@hasanyrole(['super','admin','client'])
 			<li class="{{ Ekko::isActiveURL('/admin/tracking') }} {{ Ekko::isActiveURL('/admin/tracking/new') }}">
 				<a href="{{URL('/admin/tracking')}}">Tracking</a>
 			</li>
 			<li class="{{ Ekko::isActiveURL('/admin/users') }} {{ Ekko::isActiveURL('/admin/users/new') }}">
 				<a href="{{URL('/admin/users')}}">Users</a>
 			</li>
+			@endhasanyrole
 		</ul>
 	</li>
 	@endif()

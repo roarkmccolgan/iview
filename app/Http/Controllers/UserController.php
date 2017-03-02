@@ -136,7 +136,7 @@ class UserController extends Controller
 		if($request->ajax()){
 			$data = [
 				'result'=>'success',
-				'deleted'=>$deleted
+				'deleted'=>$deleted,
 			];
 			return $data;
 		}

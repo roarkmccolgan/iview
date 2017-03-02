@@ -5,6 +5,7 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('js/bootstrap.datetimepicker/css/bootstrap-datetimepicker.min.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('/js/jquery.niftymodals/css/component.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('/js/jquery.datatables/plugins/bootstrap/3/dataTables.bootstrap.css') }}"/>
+<link rel="stylesheet" type="text/css" href="{{ asset('/js/jquery.gritter/css/jquery.gritter.css') }}"/>
 @stop
 
 @section('content')
@@ -131,6 +132,7 @@
 <script type="text/javascript" src="{{ asset('/js/jquery.datatables/plugins/bootstrap/3/dataTables.bootstrap.js') }}"></script>
 <script type="text/javascript" src="{{ asset('/js/page-data-tables.js') }}"></script>
 <script type="text/javascript" src="{{ asset('/js/moment.js/moment.js') }}"></script>
+<script type="text/javascript" src="{{ asset('/js/jquery.gritter/js/jquery.gritter.js') }}"></script>
 @stop
 
 @section('load')
@@ -142,10 +144,24 @@
 		$.post( "/api/users/delete/"+$(this).parents('td').data('user-id'))
 		.done(function( data ) {
 			console.log( "Data Loaded: ", data);
-			$('#datatable-icons').DataTable()
-			.row( $(that).parents('tr') )
-			.remove()
-			.draw();
+			if(data.deleted){
+				$.gritter.add({
+					title: 'User Deleted',
+					text: false,
+					class_name: 'success'
+				});
+				$('#datatable-icons').DataTable()
+				.row( $(that).parents('tr') )
+				.remove()
+				.draw();
+			}else{
+				$.gritter.add({
+					title: 'Error',
+					text: 'You do not have appropriate permissions to delete this user',
+					sticky: true,
+					class_name: 'danger'
+				});
+			}
 		});
 	});
 @stop

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\App;
 use App\Http\Requests;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Lang;
@@ -80,6 +81,7 @@ class PdfController extends Controller
 		$headervars['company_alias'] = session('company.alias');
 		$headervars['tool_id'] = session('product.id');
 		$headervars['template'] = session('template');
+		$locale = App::getLocale();
 		foreach (config('baseline_'.session('product.id')) as $section => $values) {
 			if(config('baseline_'.session('product.id').'.'.$section.'.report-settings.graph')){
 				$sectionGraph = Lava::DataTable();
@@ -96,7 +98,7 @@ class PdfController extends Controller
 				foreach ($values['types'] as $stage => $params) {
 					$val = $params['benchmark'];
 				    $sectionGraph->addRow([
-				      trans(session('product.alias').'.'.$stage),//$stage
+				      $locale == 'es' ? substr(trans(session('product.alias').'.'.$stage),0,strpos(trans(session('product.alias').'.'.$stage), ':')):trans(session('product.alias').'.'.$stage),//$stage
 				      $val,
 				      session('result.'.$section.'.rating')==$stage? config('baseline_'.session('product.id').'.'.$section.'.report-settings.color'):null,
 				      $val."%"
@@ -176,7 +178,7 @@ class PdfController extends Controller
 		//return $vars['sections'];
 		/*echo "<pre>";
 		dd(session('questions'));*/
-		return view('tool.'.session('template').'.report.report',$vars);
+		//return view('tool.'.session('template').'.report.report',$vars);
 		$margintop = 25;
 		if(null !== config('baseline_'.session('product.id').'.overall.report-settings.margin-top')){
 			$margintop = config('baseline_'.session('product.id').'.overall.report-settings.margin-top');

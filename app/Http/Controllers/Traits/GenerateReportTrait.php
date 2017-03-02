@@ -76,6 +76,7 @@ trait GenerateReportTrait {
 		    $headervars['company_alias'] = session('company.alias');
 		    $headervars['tool_id'] = session('product.id');
 		    $headervars['template'] = session('template');
+		    $locale = App::getLocale();
 		    foreach (config('baseline_'.session('product.id')) as $section => $values) {
 		    	if(config('baseline_'.session('product.id').'.'.$section.'.report-settings.graph')){
 		    		$sectionGraph = Lava::DataTable();
@@ -83,8 +84,8 @@ trait GenerateReportTrait {
 		    			'suffix'         => '%'
 		    			]);
 		    		$sectionGraph->addColumns([
-		    			['string', 'Stage'],
-		    			['number', 'Your Score',$numformat],
+			    			['string', 'Stage'],
+			    			['number', 'Your Score',$numformat],
 		    			]);
 		    		$sectionGraph->addRoleColumn('string', 'style');
 		    		$sectionGraph->addRoleColumn('string', 'annotation');
@@ -92,7 +93,7 @@ trait GenerateReportTrait {
 		    		foreach ($values['types'] as $stage => $params) {
 		    			$val = $params['benchmark'];
 		    			$sectionGraph->addRow([
-				      trans(session('product.alias').'.'.$stage),//$stage
+				      $locale == 'es' ? substr(trans(session('product.alias').'.'.$stage),0,strpos(trans(session('product.alias').'.'.$stage), ':')):trans(session('product.alias').'.'.$stage,//$stage
 				      $val,
 				      session('result.'.$section.'.rating')==$stage? config('baseline_'.session('product.id').'.'.$section.'.report-settings.color'):null,
 				      $val."%"

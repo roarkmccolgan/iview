@@ -17,8 +17,7 @@
 	<!-- Bootstrap core CSS -->
 	<link href="{{ asset('js/bootstrap/dist/css/bootstrap.css') }}" rel="stylesheet">
 	<link rel="stylesheet" href="{{ asset('/fonts/font-awesome-4/css/font-awesome.min.css') }}">
-	<!--if lt IE 9script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
-    -->
+	<!--if lt IE 9script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')-->
 
 	<link rel="stylesheet" type="text/css" href="{{ asset('js/jquery.nanoscroller/nanoscroller.css') }}" />
 

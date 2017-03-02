@@ -4887,7 +4887,7 @@ button::-moz-focus-inner {
   top: 45px;
 }
 .gritter-item-wrapper {
-  background: url(../js/jquery.gritter/images/gritter-bg.png);
+  background: url("../lib/jquery.gritter/images/gritter-bg.png");
   box-shadow: 0 0px 5px rgba(0, 0, 0, 0.32);
 }
 .gritter-top {
@@ -4920,11 +4920,12 @@ button::-moz-focus-inner {
   left: auto;
   height: 30px;
   width: 35px;
+  font-size: 0;
   background: transparent;
   text-indent: inherit;
 }
 .gritter-close:after {
-  content: '×';
+  content: 'Ã—';
   position: absolute;
   color: #FFF;
   left: 10px;
@@ -4964,7 +4965,7 @@ button::-moz-focus-inner {
   text-indent: inherit;
 }
 .gritter-item-wrapper.clean .gritter-close:after {
-  content: '×';
+  content: 'Ã—';
   position: absolute;
   color: #FFF;
   top: 50%;
