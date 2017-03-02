@@ -93,7 +93,7 @@ trait GenerateReportTrait {
 		    		foreach ($values['types'] as $stage => $params) {
 		    			$val = $params['benchmark'];
 		    			$sectionGraph->addRow([
-				      $locale == 'es' ? substr(trans(session('product.alias').'.'.$stage),0,strpos(trans(session('product.alias').'.'.$stage), ':')):trans(session('product.alias').'.'.$stage,//$stage
+				      $locale == 'es' ? substr(trans(session('product.alias').'.'.$stage),0,strpos(trans(session('product.alias').'.'.$stage), ':')):trans(session('product.alias').'.'.$stage),//$stage
 				      $val,
 				      session('result.'.$section.'.rating')==$stage? config('baseline_'.session('product.id').'.'.$section.'.report-settings.color'):null,
 				      $val."%"
