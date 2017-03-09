@@ -23,6 +23,7 @@ elixir(function(mix) {
     ],'public/js/backend.js')
     .scripts([
     	'vendor/grunticon.loader.js',
-    	'vendor/modernizr.js'
+    	'vendor/modernizr.js',
+            'vendor/jquery.js'
     ], 'public/js/tool.js')
 });
