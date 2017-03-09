@@ -10,12 +10,17 @@
 		<ul class="sub-menu">
 			<li class="{{ Ekko::isActiveURL('/admin/tools') }}"><a href="{{URL('/admin/tools')}}">All</a></li>
 			<li class="{{ Ekko::isActiveURL('/admin/tools/create') }}"><a href="{{URL('/admin/tools/create')}}">New Tool</a></li>
+			@if(isset($tools))
+				@foreach($tools as $tool)
+					<li class="{{ Ekko::isActiveURL('/admin/tools/'.$tool->id) }}"><a href="{{URL('/admin/tools/'.$tool->id)}}">{{str_limit($tool->company->name.': '.$tool->title, 28)}}</a></li>
+				@endforeach
+			@endif
 		</ul>
 	</li>
 	@endrole
 	<!-- Product Specific Menu -->
-	@if($tool)
-	<li><a href="#"><i class="fa fa-home"></i><span>{{$tool->company->name}}</span></a>
+	@if(isset($current_tool))
+	<li><a href="#"><i class="fa fa-home"></i><span>{{$current_tool->company->name}}</span></a>
 		<ul class="sub-menu">
 			<li class="{{ Ekko::isActiveURL('/admin') }}">
 				<a href="{{URL('/admin')}}">Dashboard</a>

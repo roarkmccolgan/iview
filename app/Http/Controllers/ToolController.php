@@ -80,11 +80,21 @@ public function create()
 	$languages = Language::lists('name', 'id');
 	return view('tool.create', compact(['companies','languages']));
 }
+
+/**
+ * Show Tool
+ * @return view
+ */
+public function show(Tool $tool)
+{
+	return view('tool.show', compact(['tool']));
+}
 /**
  * Save a new Tool
  * @param  CreateIviewRequest $request
  * @return Response
  */
+
 public function store(CreateToolRequest $request)
 {
 	if (!$request->has('company_id')) {
@@ -112,6 +122,16 @@ public function store(CreateToolRequest $request)
 
     //$input = $request->all();
 	return redirect('/admin/tools');
+}
+
+/**
+ * Tool Questions
+ * @return view
+ */
+public function questions(Tool $tool)
+{
+	$tool->load('sections.questions');
+	return view('questions.create', compact(['tool']));
 }
 
 ///////

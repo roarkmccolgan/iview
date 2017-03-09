@@ -31,7 +31,7 @@ class ReportingController extends Controller
     {
         $iviews = Iview::with('company')->get();
         if ($iviews->isEmpty()) {
-            return redirect('/iviews/create')->with('message', 'No Companies or iViews exist, please create one first');
+            return redirect('/admin/iviews/create')->with('message', 'No Companies or iViews exist, please create one first');
         }
         return view('reporting.create', compact('iviews'));
     }

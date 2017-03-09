@@ -15,6 +15,7 @@ class ToolAccessMiddleware
      */
     public function handle($request, Closure $next, $super, ...$requiredRoles)
     {
+        //dd('fok');
         $user = $request->user();
         $tool = $request->get('product');
         if(!$user->hasRole($super)){

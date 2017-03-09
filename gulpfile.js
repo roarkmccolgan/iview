@@ -12,18 +12,17 @@ var elixir = require('laravel-elixir');
  */
 
 elixir(function(mix) {
-    mix.copy(
-        'node_modules/jquery/dist/jquery.min.js', 'resources/assets/js/vendor/jquery.js'
-    ).scripts([
+    mix.copy('node_modules/jquery/dist/jquery.js', 'resources/assets/js/vendor/jquery.js')
+    .copy('node_modules/vue/dist/vue.js', 'resources/assets/js/vendor/vue.js')
+    .scripts([
     	'vendor/grunticon.loader.js',
-    	'vendor/vue.min.js',
+    	'vendor/vue.js',
     	'vendor/vue-resource.min.js',
     	'vendor/modernizr.js',
-    	'vendor/jquery.js'
+            'vendor/jquery.js'
     ],'public/js/backend.js')
     .scripts([
     	'vendor/grunticon.loader.js',
-    	'vendor/modernizr.js',
-    	'vendor/jquery.js'
+    	'vendor/modernizr.js'
     ], 'public/js/tool.js')
 });

@@ -20,9 +20,9 @@ class Tool extends Model
 	protected $dates = ['start_date'];
 
 	public function company()
-    {
-        return $this->belongsTo('App\Company');
-    }
+	{
+		return $this->belongsTo('App\Company');
+	}
 
 	public function reports()
     {
@@ -57,5 +57,9 @@ class Tool extends Model
     public function languages()
     {
         return $this->belongsToMany('App\Language');
+    }
+    public function sections()
+    {
+        return $this->hasMany('App\Section');
     }
 }

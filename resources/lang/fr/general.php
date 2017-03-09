@@ -11,8 +11,9 @@ return array(
 	'1sub-title'=>'Gagnez en maturité',
 	'1landing'=>'
 	<h2>Gagnez en maturité</h2>
-	<p>Grâce au standard de développement cloud d\'IDC, vous pouvez positionner votre entreprise par rapport à 500 entreprises similaires aux États-Unis et en Europe et bénéficier de conseils de développement pour vos activités cloud..
-	</p>',
+	<p>
+                Grâce au Benchmark de Développement Cloud d\'IDC, vous pouvez positionner votre entreprise par rapport à 500 entreprises similaires aux États-Unis et en Europe et bénéficier de conseils de développement pour vos activités cloud.
+            </p>',
 	'1startbut'=>'Commencez ici',
 
     'timetoact'=>'Étape 1 : Il faut agir', //reactive
@@ -108,17 +109,17 @@ return array(
     'rel8'=>'Corporate Reseller',
     'rel9'=>'Distributor',
     'rel10'=>'Not a partner yet',
-    'qualification'=>'Partner Type',
-    'qual1' => 'Consulting',
+    'qualification'=>'Type de partenaire',
+    'qual1' => 'Cabinet de Conseils',
     'qual2' => 'ISV',
-    'qual3' => 'Hardware Vendor',
-    'qual4' => 'Software Vendor',
+    'qual3' => 'Fournisseur matériel',
+    'qual4' => 'Fournisseur logiciel',
     'qual5' => 'System Integrator',
-    'qual6' => 'Cloud Service Provider',
-    'qual7' => 'Distributor',
-    'qual8' => 'Value Added Reseller',
-    'qual9' => 'Managed Service Provider',
-    'qual10' => 'Hosting Provider',
+    'qual6' => 'Fournisseur services Cloud',
+    'qual7' => 'Distributeur',
+    'qual8' => 'Revendeur à valeur ajoutée (VAR)',
+    'qual9' => 'Fournisseur de service géré',
+    'qual10' => 'Fournisseur d\'hébergement / Hébergeur',
     
     'soon'=>'Your download link will be in your inbox soon.',
     'multierror'=>'Please answer this question in order to continue.',

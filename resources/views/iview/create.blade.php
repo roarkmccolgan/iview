@@ -19,10 +19,10 @@
 		{!! Form::open() !!}
 			@if(Session::has('message'))
 			<div class="alert alert-info">
-                <button type="button" data-dismiss="alert" aria-hidden="true" class="close">×</button>
-                <i class="fa fa-info-circle sign"></i>
-                <strong>Info!</strong> {{Session::get('message')}}
-            </div>
+				<button type="button" data-dismiss="alert" aria-hidden="true" class="close">×</button>
+				<i class="fa fa-info-circle sign"></i>
+				<strong>Info!</strong> {{Session::get('message')}}
+			</div>
 			@endif
 			@if($errors->any())
 			<div class="row">

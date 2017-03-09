@@ -15,6 +15,7 @@ use App\Tracker;
 Route::auth();
 Route::get('/change_password', 'UserController@showChangePassword');
 Route::post('/change_password', 'UserController@storeChangePassword');
+Route::get('/', 'HomeController@index');
 //Route::get('/', 'HomeController@index');
 
 Route::group(['prefix' => 'admin', 'middleware'=>['auth']], function(){
@@ -28,6 +29,8 @@ Route::group(['prefix' => 'admin', 'middleware'=>['auth']], function(){
 
 	//TOOLS
 	Route::get('tools/', 'ToolController@index');
+	Route::get('tools/{tool_id}', 'ToolController@show');
+	Route::get('tools/{tool_id}/questions', 'ToolController@questions');
 	Route::get('tools/create', 'ToolController@create');
 	Route::post('tools/create', 'ToolController@store');
 

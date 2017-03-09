@@ -1,7 +1,7 @@
 <?php
 //sage
 return array(
-    'title' => 'Tirez parti du cloud',
+    'title' => 'Tirez profit du Cloud',
     'sub-title' => 'Gagnez en maturité',
     'stage1' => 'Étape 1 : Il faut agir',
     'stage2' => 'Étape 2 : Il faut s\'impliquer',
@@ -10,7 +10,7 @@ return array(
     'stage5' => 'Étape 5 : Il faut accélérer',
     'introduction' => '
     <p>
-        Nous vous remercions d\'utiliser l\'outil d\'évaluation de préparation au cloud d\'IDC. Grâce à celui-ci, vous pouvez positionner votre entreprise par rapport à 500 entreprises similaires aux États-Unis et en Europe et bénéficier de conseils de développement pour vos activités cloud.
+        Nous vous remercions d\'avoir utilisé l\'outil d\'évaluation de préparation au cloud d\'IDC. Grâce à celui-ci, vous pouvez positionner votre entreprise par rapport à 500 entreprises similaires aux États-Unis et en Europe et bénéficier de conseils de développement pour vos activités cloud.
     </p>
     <p>
         Cet outil vous aide sur deux plans : le positionnement de votre entreprise par rapport à vos pairs et des recommandations pour rendre vos activités cloud plus profitables à l\'avenir.
@@ -153,7 +153,7 @@ return array(
             </p>
             <h3>Exécution:</h3>
             <p>
-                La validation et l\'approbation de la direction existent à présent au sein des principaux secteurs d\'activité. Par conséquent, vous profitez de manière proactive d\'opportunités cloud et vous réalisez des investissements dans le cadre d\'une stratégie commerciale à long terme sur deux ou trois ans. Vous recherchez également des cibles potentielles en dehors de votre base de clients existante (nouveaux marchés, nouveaux segments, nouvelles régions) pour accroître vos activités.
+                La validation et l\'approbation de la direction existent à présent au sein des principaux secteurs d\'activité. A présent, les principaux secteurs d’activité approuvent l’acquisition de solutions Cloud. Par conséquent, vous profitez de manière proactive d\'opportunités Cloud et vous réalisez des investissements dans le cadre d\'une stratégie commerciale à long terme sur deux ou trois ans. Vous recherchez également des cibles potentielles en dehors de votre base de clients existante (nouveaux marchés, nouveaux segments, nouvelles régions) pour accroître vos activités.
             </p>
             <img src="http://sage.idcready.net/images/tools/1/cloud-vision-and-strategy.jpg" class="right">
             <h3>Recommandation:</h3>
@@ -163,11 +163,11 @@ return array(
             </p>
             <h5>Définissez un plan de rentabilité:</h5>
             <p>
-                Votre programme financier doit inclure un plan de rentabilité bien défini sur trois ans qui prend en compte des scénarios multiples concernant l\'impact des revenus récurrents sur vos revenus et rentabilité topline.
+                Votre programme financier doit inclure un plan de rentabilité bien défini sur trois ans qui prend en compte des scénarios multiples concernant l\'impact des revenus récurrents sur vos revenus globaux et votre rentabilité.
             </p>
             <h5>Collaborez étroitement avec les fournisseurs:</h5>
             <p>
-                Communiquez votre stratégie cloud aux fournisseurs stratégiques et commencez à développer des processus permettant une planification commune ainsi que des évaluations régulières des performances. Leur soutien de votre stratégie à cette étape s\'avérera d\'une grande aide dans votre processus cloud.
+                Communiquez votre stratégie cloud aux fournisseurs stratégiques. Développez des processus permettant une planification commune ainsi que des évaluations régulières des performances. Leur soutien à cette étape s\'avérera d\'une grande aide dans votre processus cloud.
             </p>
         ',
         'stage4'=>'
@@ -180,7 +180,7 @@ return array(
             </p>
             <h3>Exécution:</h3>
             <p>
-                À cette étape, les entreprises exécutent leurs stratégie et vision cloud et ont établi un portefeuille d\'offres cloud et de services liés via des fonctions de ventes, de mise en œuvre et de support dédiées. Vous pouvez également évoluer au sein d\'architectures cloud multiples et disposez des investissements nécessaires pour exécuter cette stratégie. À cette étape, les entreprises exploitent activement des stratégies de croissance et des plans de mise sur le marché afin de cibler de nouveaux clients et régions.
+                À cette étape, les entreprises exécutent leurs stratégie et vision cloud et ont établi un portefeuille d\'offres cloud et de services liés via des fonctions de ventes, de mise en œuvre et de support dédiées. Vous pouvez également évoluer au sein d\'architectures cloud multiples et disposez des investissements nécessaires pour exécuter cette stratégie. À cette étape, les entreprises exploitent activement des stratégies de croissance et des plans de mise sur le marché afin de cibler de nouveaux clients et de nouvelles régions.
             </p>
             <img src="http://sage.idcready.net/images/tools/1/cloud-vision-and-strategy.jpg" class="right">
             <h3>Recommandation:</h3>
@@ -190,7 +190,7 @@ return array(
             </p>
             <h5>Commencez à développer l\'IP :</h5>
             <p>
-                Dans le cadre de votre processus de planification stratégique, nous vous recommandons de développer une stratégie technique concentrée sur le développement d\'architectures de solutions et de référence pouvant être réutilisées et même commercialisées comme produits indépendants.
+                Dans le cadre de votre processus de planification stratégique, nous vous recommandons créer une stratégie technique orientée sur le développement de solutions et d’architectures de référence pouvant être réutilisées et même commercialisées comme produits indépendants.
             </p>
             <h5>Stratégie de transformation numérique:</h5>
             <p>
@@ -203,7 +203,7 @@ return array(
             </p>
             <h3>Planification:</h3>
             <p>
-                Le cloud nécessite des décisions et investissements importants pour le futur de votre entreprise et cette dernière doit être impliquée dans un business model de revenus récurrents, alimenter la croissance et spécialiser plus avant ses compétences. Votre entreprise a mis au point des plans spécifiques afin de cibler de nouveaux marchés et secteurs. Elle travaille plus étroitement avec ses fournisseurs principaux afin de fournir une planification de comptes et marketing jointe.
+                Le cloud nécessite des décisions et investissements importants pour le futur de votre entreprise. Cette dernière doit être impliquée dans un business model de revenus récurrents, alimenter la croissance et spécialiser plus avant ses compétences. Votre entreprise a mis au point des plans spécifiques afin de cibler de nouveaux marchés et secteurs. Elle travaille plus étroitement avec ses fournisseurs principaux afin de fournir une planification de comptes et marketing jointe.
             </p>
             <h3>Exécution:</h3>
             <p>
@@ -265,7 +265,7 @@ return array(
             </p>
             <h3>Mesure:</h3>
             <p>
-                À cette étape, les entreprises n\'ont pas encore distingué les activités cloud au sein de leurs finances. Il est par conséquent difficile de mesurer la réussite du cloud. Cependant, les objectifs de croissance sont définis et les objectifs sont mis en place.
+                À cette étape, les entreprises n\'ont pas encore distingué les activités cloud au sein de leurs finances. Il est par conséquent difficile de mesurer la réussite du cloud. Cependant, les objectifs de croissance sont définis cibles sont et les cibles sont mises en place.
             </p>
             <h3>Automatisation:</h3>
             <p>
@@ -338,11 +338,11 @@ return array(
             <h3>Recommandations:</h3>
             <h5>Mesure:</h5>
             <p>
-                Vous devez faire évoluer constamment vos instruments de mesure. Il est également recommandé de développer des métriques avancées afin de mesurer le cloud hybride, la satisfaction des clients réguliers et l\'efficacité de la prestation du service. Vous devez inclure la mise en œuvre et du support.
+                Vous devez faire évoluer constamment vos instruments de mesure. Il est également recommandé de développer des métriques avancées afin de mesurer le cloud hybride, la satisfaction des clients réguliers et l\'efficacité de la prestation du service. Vous devez inclure la mise en œuvre et l’assistance.
             </p>
             <h5>Optimisation:</h5>
             <p>
-                Il est important de faire appel à des mesures et métriques afin d\'optimiser une prestation de service efficace. Ce processus permet de récompenser les équipes de prestation de service en fonction de l\'amélioration de l\'efficacité et de la satisfaction de la clientèle. Lorsque vos activités cloud seront plus importantes, l\'efficacité fera une réelle différence sur votre chiffre d\'affaires.
+                Il est important de faire appel à des mesures et des métriques afin d\'optimiser une prestation de service efficace. Ce processus permet de récompenser les équipes de prestation de service en fonction de l\'amélioration de l\'efficacité et de la satisfaction de la clientèle. Lorsque vos activités cloud seront plus importantes, l\'efficacité fera une réelle différence sur votre chiffre d\'affaires.
             </p>
             <h5>Analyses:</h5>
             <p>
@@ -363,11 +363,11 @@ return array(
             </p>
             <h3>Automatisation:</h3>
             <p>
-                Vous avez automatisé intégralement un grand nombre de vos processus cloud, optimisé les solutions cloud et effectué des économies d\'échelle dans tous les aspects des activités. À cette étape, l\'automatisation est étroitement liée à des compétences analytiques fortes, notamment l\'utilisation client et la performance des applications.
+                Vous avez automatisé intégralement un grand nombre de vos processus Cloud, optimisé les solutions Cloud et effectué des économies d’échelle à tous les niveaux de votre activités. À cette étape, l\'automatisation est étroitement liée à des compétences analytiques fortes, notamment l\'utilisation client et la performance des applications.
             </p>
             <h3>Compétences:</h3>
             <p>
-                À cette étape, vous avez obtenu des certifications aux niveaux les plus élevés des programmes de fournisseurs. De manière générale, ces entreprises offrent les meilleurs outils et structures de prestation de service.
+                À cette étape, vous avez obtenu les certifications les plus élevés du programme des fournisseurs. De manière générale, ces entreprises offrent les meilleurs outils et structures de prestation de service.
             </p>
             <h3>Recommandations:</h3>
             <h5>Évoluez encore:</h5>
@@ -376,7 +376,7 @@ return array(
             </p>
             <h5>Automatisation:</h5>
             <p>
-                En vous assurant que l\'automatisation est exécutée dans tous les domaines de votre entreprise, vous pourrez effectuer le suivi de l\'utilisation, optimiser l\'utilisation de la clientèle et de la prestation de service cloud tout en rationalisant et en optimisant les processus de ventes et la livraison.
+                En vous assurant que \'automatisation est exécutée dans tous les domaines de votre entreprise, vous pourrez effectuer le suivi de l\'utilisation, optimiser l\'utilisation de la clientèle et de la prestation de service Cloud tout en rationalisant et en optimisant les processus de ventes et de livraison.
             </p>
             <h5>Analyses:</h5>
             <p>
@@ -398,7 +398,7 @@ return array(
             </p>
             <h3>Activités marketing:</h3>
             <p>
-                Vous faites principalement appel à des approches traditionnelles (événements, supports, partenariats). La réussite de votre marketing s\'articule donc autour d\'activités fournisseurs et d\'efforts locaux sans contrôle réel de l\'emplacement et la façon dont ils sont utilisés.
+                Vous utilisez principalement des approches traditionnelles (événements, assistance, partenariats). La réussite de votre marketing s\'articule donc autour d\'activités fournisseurs et d\'efforts locaux sans contrôle réel de l\'emplacement et la façon dont ils sont utilisés.
             </p>
             <h3>Alignement des ventes:</h3>
             <p>
@@ -451,7 +451,7 @@ return array(
             </p>
             <h5>Leadership éclairé:</h5>
             <p>
-                À cette étape, il est important de personnaliser le contenu officiel disponible auprès de vos fournisseurs partenaires. Vous devez également commencer à élaborer un plan consacré à vos propres activités de leadership éclairé. Il vous permettra de nouer un dialogue direct avec votre marché et votre public. Ce plan comprendra des blogs, forums, articles et références.
+                À cette étape, il est important de personnaliser le contenu officiel disponible auprès de vos fournisseurs partenaires. Vous devez également commencer à élaborer un plan consacré à vos propres activités de leadership. Il vous permettra de nouer un dialogue direct avec votre marché et votre public. Ce plan comprendra des blogs, forums, articles et références.
             </p>
         ',
         'stage3'=>'
@@ -474,7 +474,7 @@ return array(
             <h3>Recommandations:</h3>
             <h5>Développez des compétences de marketing numérique:</h5>
             <p>
-                Vous devez absolument augmenter votre présence en ligne. Commencez par développer un plan de marketing numérique prenant en compte le recrutement (ou le partenariat) pour les ressources numériques et une série d\'activités numériques. Il s\'agit notamment de sensibiliser, d\'utiliser le social selling (génération de prospects) et d\'établir des objectifs de leadership éclairé. Nous vous recommandons également de renouveler votre site Web et de réfléchir à des moyens d\'attirer la clientèle sur votre site (via des contenus et conseils pertinents et utiles).
+                Vous devez absolument augmenter votre présence en ligne. Commencez par développer un plan de marketing numérique prenant en compte le recrutement (ou le partenariat) pour les ressources numériques et une série d\'activités numériques. Il s\'agit notamment de sensibiliser, d\'utiliser le social selling (génération de prospects) et d\'établir des objectifs de leadership. Nous vous recommandons également de renouveler votre site Web et de réfléchir à des moyens d\'attirer la clientèle sur votre site (via des contenus et conseils pertinents et utiles).
             </p>
             <h5>Maximisez le cycle de ventes:</h5>
             <p>
@@ -530,7 +530,7 @@ return array(
             </p>
             <h3>Leadership éclairé:</h3>
             <p>
-                À cette étape, l\'entreprise joue son rôle de leader éclairé et de conseiller stratégique de manière crédible. Le leadership éclairé est exercé en continu et le contenu de formation est fourni fréquemment et par le biais de canaux multiples.
+                À cette étape, l\'entreprise joue son rôle de leader et de conseiller stratégique de manière crédible. Le leadership éclairé est exercé en continu et le contenu de formation est fourni fréquemment et par le biais de canaux multiples.
             </p>
             <img src="http://sage.idcready.net/images/tools/1/marketing.jpg" class="right">
             <h3>Recommandations:</h3>
@@ -592,7 +592,7 @@ return array(
             </p>
             <h3>Habilitation</h3>
             <p>
-                À cette étape, les ventes comment à utiliser activement les ressources disponibles (en général par le biais de portails de partenaires fournisseurs). Les membres des ventes participent également à des formations de certification organisées par les principaux partenaires fournisseurs.
+                À cette étape, les commerciaux commencent à utiliser activement les ressources disponibles (en général par le biais de portails de partenaires fournisseurs). Les forces de ventes participent également à des formations de certification organisées par les principaux partenaires fournisseurs.
             </p>
             <h3>Stratégie de ventes:</h3>
             <p>
@@ -737,7 +737,7 @@ return array(
             </p>
             <h3>Contribution aux revenus:</h3>
             <p>
-                La majorité des revenus logiciels provient de la revente des licences sur site. À cette étape, très peu d\'entreprises disposent d\'objectifs solides pour le développement de revenus récurrents.
+                La majorité des revenus des logiciels provient de la revente des licences sur site (on-premise). À cette étape, très peu d\'entreprises disposent d\'objectifs solides pour le développement de revenus récurrents.
             </p>
             <h3>Programmes partenaires</h3>
             <p>
