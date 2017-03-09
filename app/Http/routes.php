@@ -15,7 +15,7 @@ use App\Tracker;
 Route::auth();
 Route::get('/change_password', 'UserController@showChangePassword');
 Route::post('/change_password', 'UserController@storeChangePassword');
-Route::get('/', 'HomeController@index');
+//Route::get('/', 'HomeController@index');
 //Route::get('/', 'HomeController@index');
 
 Route::group(['prefix' => 'admin', 'middleware'=>['auth']], function(){
