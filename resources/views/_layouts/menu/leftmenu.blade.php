@@ -19,8 +19,8 @@
 	</li>
 	@endrole
 	<!-- Product Specific Menu -->
-	@if(isset($current_tool))
-	<li><a href="#"><i class="fa fa-home"></i><span>{{$current_tool->company->name}}</span></a>
+	@if(isset($tool))
+	<li><a href="#"><i class="fa fa-home"></i><span>{{$tool->company->name}}</span></a>
 		<ul class="sub-menu">
 			<li class="{{ Ekko::isActiveURL('/admin') }}">
 				<a href="{{URL('/admin')}}">Dashboard</a>

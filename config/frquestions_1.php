@@ -14,27 +14,27 @@ return array(
                         'name'=>'q1',
                         'options'=>array(
                             array(
-                                'label'=>'Des activités basées sur les projets et la recommandation des nouvelles opportunités cloud à nos partenaires fournisseurs.',
+                                'label'=>'Business model basé sur des projets d\'affaires et la déclaration de nouvelles opportunités Cloud auprès de nos partenaires fournisseurs.',
                                 'value'=>1,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Des activités basées sur les projets et la revente des produits cloud de marque de fournisseurs de façon ponctuelle, avec un ajout de valeur quand nous le pouvons.',
+                                'label'=>'Business model basé sur des projets d\'affaires et la revente des offres Cloud de fournisseurs de façon ponctuelle, avec des services à valeur ajoutée quand nous le pouvons.',
                                 'value'=>2,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Nous convertissons des activités basées sur les projets en contrats de revenus récurrents, en ajoutant nos propres services professionnels si possible.',
+                                'label'=>'Conversion de projets d\'affaires en contrats à revenus récurrents, en ajoutant nos propres services professionnels si possible.',
                                 'value'=>3,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'La prestation d\'offres cloud de fournisseurs liées à nos services professionnels notamment des conseils commerciaux, l\'intégration de systèmes, la migration et les services gérés.',
+                                'label'=>'Fourniture des offres Cloud de fournisseurs liées à nos services professionnels incluant conseil, intégration de systèmes,  migration et services infogérés. ',
                                 'value'=>4,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'La prestation de nos propres services cloud de marque à revenus récurrents.',
+                                'label'=>'Fourniture de nos propres offres de service Cloud à revenus récurrents.',
                                 'value'=>5,
                                 'checked'=>false
                             )
@@ -51,31 +51,31 @@ return array(
                 'questions' => array(
                     'q2'=>array(
                         'type'=>'button',
-                        'question'=>'Quelle affirmation décrit au mieux l\'objectif des activités cloud de votre entreprise pour vos clients? Nous nous concentrons sur:',
+                        'question'=>'Quelle affirmation décrit au mieux l\'objectif de vos activités Cloud pour vos clients ? Nous nous concentrons sur :',
                         'name'=>'q2',
                         'options'=>array(
                             array(
-                                'label'=>'La revente de services cloud publics (SaaS, IaaS, PaaS, etc.).',
+                                'label'=>'La revente de services de Cloud public (SaaS, IaaS, PaaS, etc.).',
                                 'value'=>1,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Le développement à partir d\'environnements cloud privés sur site.',
+                                'label'=>'Le développement d\'environnements Cloud privés sur site.',
                                 'value'=>2,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Le développement d\'environnements cloud privés et la prestation de services gérés soit sur site soit au sein de nos centres de données.',
+                                'label'=>'Le développement d\'environnements Cloud privés et la prestation de services infogérés sur site ou hébergés. ',
                                 'value'=>3,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Le développement d\'environnements cloud hybrides en réunissant nos constructeurs cloud, services professionnels et multiples offres cloud de fournisseurs publics.',
+                                'label'=>'Le développement d\'environnements Cloud hybrides en réunissant nos constructeurs Cloud, nos services professionnels et les diverses offres de fournisseurs de Cloud public.',
                                 'value'=>4,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'La prestation de tout type d\'architecture cloud requise par nos clients.',
+                                'label'=>'La prestation de tout type d\'architecture Cloud requise par nos clients.',
                                 'value'=>5,
                                 'checked'=>false
                             )
@@ -88,16 +88,16 @@ return array(
                 'questions' => array(
                     'q3'=>array(
                         'type'=>'button',
-                        'question'=>'Comment sont structurés les investissements pour vos activités cloud? La budgétisation et le planning:',
+                        'question'=>'Comment sont structurés les investissements pour vos activités Cloud ? La budgétisation et le planning :',
                         'name'=>'q3',
                         'options'=>array(
                             array(
-                                'label'=>'Au niveau du produit individuel. Nous ne disposons pas d\'une unité commerciale cloud séparée.',
+                                'label'=>'Au niveau du produit individuellement. Nous ne disposons pas d\'une entité commerciale Cloud dédiée. ',
                                 'value'=>1,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'D\'année en année. Nous ne sommes pas convaincus par le cloud en termes d\'investissement sur le long terme.',
+                                'label'=>'D\'année en année. Nous ne sommes pas convaincus par le Cloud en termes d\'investissement sur le long terme. ',
                                 'value'=>1,
                                 'checked'=>false
                             ),
@@ -107,12 +107,12 @@ return array(
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Long terme. La majorité de nos investissements seront attribués au cloud dans le cadre de notre stratégie commerciale principale.',
+                                'label'=>'Long terme. La majorité de nos investissements seront attribués au Cloud dans le cadre de notre stratégie commerciale principale.',
                                 'value'=>4,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Long terme. Le cloud soutient tous les aspects des investissements au sein des personnes, infrastructures, partenariats et ventes.',
+                                'label'=>'Long terme. Le Cloud intervient dans l\'ensemble des investissements que ce soit en terme de personnes, infrastructures, partenariats et ventes.',
                                 'value'=>5,
                                 'checked'=>false
                             )
@@ -125,31 +125,31 @@ return array(
                 'questions' => array(
                     'q4'=>array(
                         'type'=>'button',
-                        'question'=>'Comment est structurée votre division cloud ? Notre division cloud is:',
+                        'question'=>'Comment est structurée votre division Cloud ? Notre division Cloud :',
                         'name'=>'q4',
                         'options'=>array(
                             array(
-                                'label'=>'Fait partie du portefeuille global de notre entreprise. Il n\'existe pas d\'objectif séparé pour le cloud.',
+                                'label'=>'Fait partie du portefeuille global de notre entreprise. Il n\'existe pas d\'objectif séparé pour le Cloud. ',
                                 'value'=>1,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Une unité commerciale séparée avec ses propres pertes et profits. L\'ensemble du personnel de ventes répond à des objectifs de chiffre d\'affaires fixes pour le cloud.',
+                                'label'=>'Une unité de management produit séparée avec une ressource dédiée mais des objectifs de revenus flexibles.',
                                 'value'=>2,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Une unité commerciale séparée avec ses propres pertes et profits, ventes dédiées, préventes et personnel de support qui répondent à des objectifs de revenus et de profitabilité fixes.',
+                                'label'=>'Une unité commerciale séparée avec son propre compte de résultats. L\'ensemble des forces commerciales répond à des objectifs de chiffre d\'affaires fixes pour le Cloud.',
                                 'value'=>3,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'A separate business unit with its own P&L and dedicated sales, pre-sales, and support personnel, who carry fixed revenue and profitability targets.',
+                                'label'=>'Une unité commerciale séparée avec son propre compte de résultats et des ressources dédiées en vente, avant-vente et support,  qui répondent à des objectifs de revenus et de profitabilité fixes.',
                                 'value'=>4,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Une unité commerciale séparée avec une autonomie de prise de décision et ses propres centre de données, centre d\'assistance, infrastructure de support, ainsi que des objectifs de profitabilité.',
+                                'label'=>'Une unité commerciale séparée avec une autonomie de prise de décision et ses propres datacenter, centre d\'assistance, infrastructure de support, ainsi que des objectifs de profitabilité.',
                                 'value'=>5,
                                 'checked'=>false
                             )
@@ -169,21 +169,21 @@ return array(
                 'questions' => array(
                     'q5'=>array(
                         'type'=>'button',
-                        'question'=>'Comment votre entreprise mesure-t-elle vos activités cloud? Structure en place:',
+                        'question'=>'Comment votre entreprise mesure-t-elle vos activités Cloud ? Structure en place :',
                         'name'=>'q5',
                         'options'=>array(
                             array(
-                                'label'=>'Aucun objectif ou mesure établi pour la réussite du cloud.',
+                                'label'=>'Aucun objectif ou mesure établi pour la réussite du Cloud.',
                                 'value'=>1,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Des objectifs de croissance de revenus récurrents mais nous n\'effectuons pas le suivi des profits cloud et nous n\'établissons pas de finances cloud séparées.',
+                                'label'=>'Des objectifs de croissance de revenus récurrents mais nous ne pouvons pas suivre la profitabilité du Cloud et ne séparons pas notre suivi financier Cloud. ',
                                 'value'=>2,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Des objectifs basés sur le cloud, à l\'aide d\'indicateurs de performance et de métriques, avec des pertes et profits cloud séparés.',
+                                'label'=>'Des objectifs dédiés sur le Cloud, à l\'aide d\'indicateurs clés de performance et de mesures, avec un compte de résultats séparé.',
                                 'value'=>3,
                                 'checked'=>false
                             ),
@@ -193,7 +193,7 @@ return array(
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Des systèmes, processus et indicateurs de performance conçus pour optimiser la profitabilité du cloud en fonction d\'une combinaison définie de nos propres services de revenus récurrents à marge élevée et de services fournisseurs.',
+                                'label'=>'Des systèmes, processus et indicateurs clés de performance conçus pour optimiser la profitabilité du Cloud en fonction d\'une combinaison définie de nos propres services de revenus récurrents à marge élevée et de services fournisseurs.',
                                 'value'=>5,
                                 'checked'=>false
                             )
@@ -210,16 +210,16 @@ return array(
                 'questions' => array(
                     'q6'=>array(
                         'type'=>'button',
-                        'question'=>'Comment votre entreprise exécute-t-elle la prestation de vos projets cloud ? Les projets cloud:',
+                        'question'=>'Comment votre entreprise délivre-t-elle la prestation de vos projets Cloud ? Les projets Cloud :',
                         'name'=>'q6',
                         'options'=>array(
                             array(
-                                'label'=>'Sont exécutés depuis le début. Nous n\'avons pas encore développé de processus/méthodologies réutilisables.',
+                                'label'=>'Sont exécutés à partir de zéro. Nous n\'avons pas encore développé de processus/méthodologies réutilisables.',
                                 'value'=>1,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Sont exécutés à partir d\'une structure de base. Nous disposons de méthodologies de mise en œuvre cloud réutilisables.',
+                                'label'=>'Sont exécutés à partir d\'une structure de base. Nous disposons de méthodologies de mise en œuvre Cloud réutilisables.',
                                 'value'=>2,
                                 'checked'=>false
                             ),
@@ -229,12 +229,12 @@ return array(
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Sont exécutés à partir d\'une bibliothèque de pratiques d\'excellence, d\'outils, de codes et d\'architectures de référence réutilisables pour réduire l\'effort d\'implémentation.',
+                                'label'=>'Sont exécutés à partir de best practices, d\'outils réutilisables, de codes et d\'architectures de référence pour réduire l\'effort d\'implémentation.',
                                 'value'=>4,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Sont livrés via des pratiques automatisées, afin de réduire le temps de livraison de nos services professionnels cloud.',
+                                'label'=>'Sont livrés via des pratiques automatisées, afin de réduire le temps de livraison de nos services professionnels Cloud.',
                                 'value'=>5,
                                 'checked'=>false
                             )
@@ -258,27 +258,27 @@ return array(
                         'name'=>'q7',
                         'options'=>array(
                             array(
-                                'label'=>'Nous nous appuyons sur nos partenaires fournisseurs et notre marketing traditionnel sortant.',
+                                'label'=>'Nous nous appuyons sur des leads fournis par nos partenaires fournisseurs et générés par notre marketing outbound traditionnel. ',
                                 'value'=>1,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Nous concentrons nos campagnes sur les segments de marché dans lesquels nous réussissons et utilisons souvent des outils et contenu marketing générés par les fournisseurs.',
+                                'label'=>'Nous concentrons nos campagnes sur les segments de marché dans lesquels nous réussissons et utilisons souvent des outils et contenu marketing générés par les éditeurs fournisseurs. ',
                                 'value'=>2,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Conjointement à notre marketing sortant traditionnel, nous avons développé un marketing numérique, concentré sur l\'influence du processus de préventes et fournissant des prospects qualifiés au service de ventes.',
+                                'label'=>'Conjointement à notre marketing outbound traditionnel, nous avons développé un marketing digital, focused on influencing the pre-sales process and delivering qualified leads to sales. concentré sur le fait d\'influencer le processus de pré-vente et de fournir des prospects qualifiés au service commercial.',
                                 'value'=>3,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Le marketing segmente activement des prospects et est assez sophistiqué pour gérer la moitié du processus de ventes. Nous avons également automatisé certaines activités marketing.',
+                                'label'=>'Le marketing segmente activement des prospects et est assez sophistiqué pour amener le lead à la moitié du funnel des ventes. Nous avons également automatisé certaines activités marketing. ',
                                 'value'=>4,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Le marketing exploite une combinaison efficace d\'approches numérique, sociale et basée sur le contenu, avec notamment l\'analytique client et le ciblage de personnes pour accompagner les prospects tout au long du cycle de ventes.',
+                                'label'=>'Le marketing exploite une combinaison efficace d\'actions digitales, sociales et basées sur le contenu, avec notamment l\'analytique client et le ciblage de personnes pour accompagner les prospects tout au long du cycle de ventes.',
                                 'value'=>5,
                                 'checked'=>false
                             )
@@ -295,26 +295,26 @@ return array(
                 'questions' => array(
                     'q8'=>array(
                         'type'=>'button',
-                        'question'=>'Comment sont organisées vos techniques marketing pour le cloud?',
+                        'question'=>'Quelles sont vos tactiques marketing sur le Cloud ? ',
                         'name'=>'q8',
                         'options'=>array(
                             array(
-                                'label'=>'Nous ne faisons pas appel à des campagnes spécifiques pour le cloud et nous ne disposons pas d\'objectifs mesurables spécifiques ou n\'effectuons pas le suivi du coût par lead/coût par nouveau client pour nos campagnes.',
+                                'label'=>'Nous ne faisons pas appel à des campagnes spécifiques pour le Cloud et nous ne disposons pas d\'objectifs mesurables spécifiques ou n\'effectuons pas le suivi du coût par lead/coût par nouveau client pour nos campagnes. ',
                                 'value'=>1,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Nous menons des campagnes cloud limitées et nous appuyons principalement sur les campagnes sponsorisées et menées par les fournisseurs.',
+                                'label'=>'Nous menons des campagnes cloud limitées et nous nous appuyons principalement sur les campagnes menées par les éditeurs fournisseurs.',
                                 'value'=>2,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Nous menons nos propres campagnes cloud et faisons également appel à des campagnes conçues par les fournisseurs. Nous menons des campagnes par rapport aux indicateurs de performance définis.',
+                                'label'=>'Nous menons nos propres campagnes Cloud et faisons également appel à des campagnes conçues par les éditeurs fournisseurs. Nous suivi le résultat de ces campagnes par rapport à des indicateurs de performance pré-définis.',
                                 'value'=>3,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Nous avons adopté une approche de campagne cloud « coût par nouveau client » efficace, centrale à notre stratégie de ventes cloud.',
+                                'label'=>'Nous avons adopté une approche de campagne Cloud « coût par nouveau client » efficace, centrale à notre stratégie de ventes Cloud.',
                                 'value'=>4,
                                 'checked'=>false
                             ),
@@ -339,31 +339,31 @@ return array(
                 'questions' => array(
                     'q9'=>array(
                         'type'=>'button',
-                        'question'=>'Comment avez-vous structuré votre approche de ventes cloud?',
+                        'question'=>'Comment avez-vous structuré votre approche commerciale sur le Cloud ?',
                         'name'=>'q9',
                         'options'=>array(
                             array(
-                                'label'=>'Nous disposons de quelques spécialistes de ventes cloud mais le reste de l\'équipe est toujours concentrée sur les activités sur site.',
+                                'label'=>'Nous disposons de quelques commerciaux spécialistes Cloud mais le reste de l\'équipe est toujours concentrée sur les activités sur site (on-premise).',
                                 'value'=>1,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Nous développons une équipe plus large de spécialistes cloud qui supportera l\'équipe de ventes sur site particulièrement pour les opportunités cloud.',
+                                'label'=>'Nous développons une équipe plus large de commerciaux spécialistes Cloud qui supportera l\'équipe commerciale dédié aux services sur site (on-premise), particulièrement pour les opportunités Cloud.',
                                 'value'=>2,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Nous avons commencé à intégrer le cloud dans les portefeuilles de tous nos vendeurs avec des plans de compensation pour nos activités basées sur site et des récompenses pour les nouvelles activités cloud.',
+                                'label'=>'Nous avons commencé à intégrer le Cloud dans les portefeuilles de tous nos commerciaux avec des plans de compensation pour nos activités basées sur site (on-premise) et des récompenses pour les nouvelles activités cloud.',
                                 'value'=>3,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Le cloud est intégralement intégré dans les portefeuilles de tous nos vendeurs et nous avons une équipe de préventes bien qualifiée qui supporte les activités.',
+                                'label'=>'Le Cloud est intégralement intégré dans les portefeuilles de tous nos commerciaux et nous avons une équipe d\'avant-ventes bien qualifiée qui supporte les activités.',
                                 'value'=>4,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Tous les vendeurs sont concentrés sur la vente de solutions cloud et nos incitations à la vente sont conçues pour fournir une valeur client indépendamment du modèle de prestation cloud.',
+                                'label'=>'Tous les commerciaux sont concentrés sur la vente de solutions Cloud et nos incentives sont conçues pour fournir plus de valeur client quelque soit le modèle de prestation Cloud.',
                                 'value'=>5,
                                 'checked'=>false
                             )
@@ -380,26 +380,26 @@ return array(
                 'questions' => array(
                     'q10'=>array(
                         'type'=>'button',
-                        'question'=>'Quelle est votre approche préventes pour vos activités cloud ? Notre équipe préventes:',
+                        'question'=>'Quelle est votre approche avant-ventes pour vos activités cloud ? Notre équipe avant-ventes :',
                         'name'=>'q10',
                         'options'=>array(
                             array(
-                                'label'=>'Se concentre sur le développement d\'offres sur site et n\'a pas développé de compétences cloud spécifiques.',
+                                'label'=>'Se concentre sur le développement d\'offres sur site (on-premise) et n\'a pas développé de compétences Cloud spécifiques.',
                                 'value'=>1,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'A commencé à développer quelques compétences cloud spécifiques.',
+                                'label'=>'A commencé à développer quelques compétences Cloud spécifiques.',
                                 'value'=>2,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'S\'est certifiée pour des produits et plates-formes cloud de fournisseurs spécifiques.',
+                                'label'=>'S\'est certifiée pour des produits et plates-formes Cloud de fournisseurs spécifiques.',
                                 'value'=>3,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Se concentre sur la prestation de pratiques d\'excellence en termes d\'architecture cloud pour nos engagements client au sein de modèles de livraison client multiples.',
+                                'label'=>'Se concentre sur le fait d\'apporter à nos engagements client des best practices en termes d\'architecture Cloud, pour différents modes de prestation. ',
                                 'value'=>4,
                                 'checked'=>false
                             ),
@@ -417,31 +417,31 @@ return array(
                 'questions' => array(
                     'q11'=>array(
                         'type'=>'button',
-                        'question'=>'Comment rémunérez-vous vos vendeurs pour les contrats cloud ou autres qui apportent des revenus récurrents à votre entreprise ? Notre équipe de vente est rémunérée:',
+                        'question'=>'Comment rémunérez-vous vos vendeurs pour les contrats Cloud ou tout type de contrat qui générent des revenus récurrents pour votre entreprise ? Notre équipe de vente est rémunérée :',
                         'name'=>'q11',
                         'options'=>array(
                             array(
-                                'label'=>'Pour l\'objectif global des ventes indépendamment des contrats sur site ou cloud.',
+                                'label'=>'Pour l\'objectif global des ventes indépendamment des contrats on-premise ou Cloud.',
                                 'value'=>1,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'En amont, en payant une commission au vendeur pour chaque contrat (frais d\'abonnement ou de licence de première année inclus).',
+                                'label'=>'En amont, en payant une commission au commercial pour chaque contrat (frais de souscription ou de licence de la première année inclus).',
                                 'value'=>2,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Tout au long du contrat du client, en payant le vendeur une commission de pourcentage sur tous les revenus, récurrents ou non. ',
+                                'label'=>'Tout au long du contrat du client, en rémunérant le commercial avec un pourcentage de comission sur l\'ensemble des revenus, récurrents ou non. ',
                                 'value'=>3,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'En faisant appel à des structures de commission en amont et en continu.',
+                                'label'=>'En faisant une combinaison de commissions en amont et en continu. ',
                                 'value'=>4,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'En faisant appel à une combinaison de commissions en amont et en continu en plus des indicateurs de performances spécifiques (satisfaction de la clientèle, croissance des nouveaux clients, taux de renouvellement, etc.).',
+                                'label'=>'En faisant une combinaison de commissions en amont et en continu en plus d\'indicateurs clés de performances (satisfaction clients, croissance des nouveaux clients, taux de renouvellement, etc.). ',
                                 'value'=>5,
                                 'checked'=>false
                             )
@@ -465,27 +465,27 @@ return array(
                         'name'=>'q12',
                         'options'=>array(
                             array(
-                                'label'=>'Revente de logiciel cloud public',
+                                'label'=>'Revente de logiciel Cloud public',
                                 'value'=>1,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Revente de matériel cloud public.',
+                                'label'=>'Revente de matériel Cloud public',
                                 'value'=>1,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Services de mise en œuvre/construction cloud privés ou hybrides.',
+                                'label'=>'Construction/implémentation de services de Cloud privés ou hybrides',
                                 'value'=>1,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Services gérés cloud.',
+                                'label'=>'Services Cloud infogérés',
                                 'value'=>1,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Conseils cloud.',
+                                'label'=>'Conseils cloud',
                                 'value'=>1,
                                 'checked'=>false
                             )
@@ -534,7 +534,7 @@ return array(
                 'questions' => array(
                     'q14'=>array(
                         'type'=>'button',
-                        'question'=>'Quel pourcentage de vos revenus globaux pouvez-vous attribuer à vos activités cloud?',
+                        'question'=>'Quel pourcentage de vos revenus globaux pouvez-vous attribuer à vos activités Cloud ?',
                         'name'=>'q14',
                         'options'=>array(
                             array(

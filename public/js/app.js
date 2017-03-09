@@ -188,7 +188,7 @@ Vue.component('qsection',{
 						<a data-toggle="collapse" data-parent="#accordion" :href="'#collapse'+secind" :aria-expanded="secind==0 ? 'true':'false'" class="" style="display: inline-block; width: 5%;">
 							<i class="fa fa-angle-right"></i>
 						</a>
-						<input type="text" name="section" v-model="sectionName" placeholder="Section Name" class="form-control" style="display: inline-block; width: 80%" @click.prevent="">
+						<input type="text" name="section" v-model="sectionName" placeholder="Section Name" class="form-control" style="display: inline-block; width: 80%">
 					</h4>
 				</div>
 				<div :id="'collapse'+secind" class="panel-collapse collapse in" :aria-expanded="secind==0 ? 'true':'false'">
@@ -244,8 +244,7 @@ Vue.component('questions',{
 					<div class="row" v-if="question.type && question.type !=='select'">
 						<div class="col-sm-10 col-sm-offset-2">
 							<h5>Options <button class="btn btn-primary btn-sm" @click.prevent="addOption(question)" style="margin-top: 5px;"><i class="fa fa-plus"></i></button></h5>
-							<component :is="'terminal-'+question.type" v-for="(option, optkey) in question.options" :secind="secind" :questionname="question.name" :key="optkey" :optkey="optkey"></component>
-							<span v-for="(option, optkey) in question.options">{{ option.type }}</span>
+							<component :is="'terminal-'+(question.type == 'button' || question.type == 'radio' || question.type == 'checkbox' || question.type == 'idcIcon' ? 'button' : question.type)" v-for="(option, optkey) in question.options" :secind="secind" :questionname="question.name" :key="optkey" :optkey="optkey" :questiontype="question.type"></component v-is="'terminal-'+">
 						</div>
 					</div>
 				</div>
@@ -274,6 +273,8 @@ Vue.component('questions',{
 				if(type!=='select'){
 					that.questions[key].type = type;
 				}
+				that.questions[key].options = [];
+				that.addOption(that.questions[key]);
 			});
 		},
 		addOption: function (question) {
@@ -283,9 +284,8 @@ Vue.component('questions',{
 		}
 	}
 });
-
 Vue.component('terminal-button',{
-	props: ['questionname','secind','optkey'],
+	props: ['questionname','secind','optkey','questiontype'],
 	template: `
 		<div style="padding: 5px; border: 1px solid #efefef; margin-bottom: 5px;">
 			<div class="form-group">
@@ -306,26 +306,110 @@ Vue.component('terminal-button',{
 					<label for="checkbox">Checked</label>
 				</div>
 			</div>
-			<div class="form-group">
-				<div class="col-sm-10 col-sm-offset-2">
-					<div class="checkbox">
-						<label>
-							<input type="checkbox" class="icheck"> Remember me
-						</label>
-					</div>
-				</div>
-			</div>
 		</div>
 	`,
 	data: function () {
 		return {
 			label: '',
 			value: 0,
-			checked: 0,
+			checked: 0
+		}
+	},
+	created: function(){
+
+	}
+});
+Vue.component('terminal-slider',{
+	props: ['questionname','secind','optkey','questiontype'],
+	template: `
+		<div style="padding: 5px; border: 1px solid #efefef; margin-bottom: 5px;">
+			<template v-if="isgroup">
+				<div v-for="(group, groupKey) in groups">
+					<div class="form-group">
+						<label for="" class="col-sm-2 control-label">Sub Question</label>
+						<div class="col-sm-10">
+							<input type="text" :name="'sec_'+secind+'[question]['+questionname+'][options]['+optkey+'][groups]['+groupKey+'][label]'" v-model="group.label" class="form-control">
+						</div>
+					</div>
+					<div v-for="(option, optionKey) in group.options">
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Label</label>
+							<div class="col-sm-10">
+								<input type="text" :name="'sec_'+secind+'[question]['+questionname+'][options]['+optkey+'][group]['+optionKey+'][label]'" v-model="option.label" class="form-control">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Value</label>
+							<div class="col-sm-10">
+								<input type="number" :name="'sec_'+secind+'[question]['+questionname+'][options]['+optkey+'][group]['+optionKey+'][label]'" v-model.number="value" class="form-control">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-10 col-sm-offset-2">
+								<input :name="'sec_'+secind+'[question]['+questionname+'][options]['+optkey+'][group]['+optionKey+'][label]'" type="checkbox" id="checkbox" v-model="checked">
+								<label for="checkbox">Checked</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</template>
+			<template v-else>
+				<div class="form-group">
+					<label for="" class="col-sm-2 control-label">Label</label>
+					<div class="col-sm-10">
+						<input type="text" :name="'sec_'+secind+'[question]['+questionname+'][options]['+optkey+'][label]'" v-model="groups[0].label" class="form-control">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="" class="col-sm-2 control-label">Value</label>
+					<div class="col-sm-10">
+						<input type="number" :name="'sec_'+secind+'[question]['+questionname+'][options]['+optkey+'][value]'" v-model.number="groups[0].value" class="form-control">
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-10 col-sm-offset-2">
+						<input :name="'sec_'+secind+'[question]['+questionname+'][options]['+optkey+'][checked]'" type="checkbox" id="checkbox" v-model="groups[0].checked">
+						<label for="checkbox">Checked</label>
+					</div>
+				</div>
+			</template>
+		</div>
+	`,
+	data: function () {
+		return {
+			isgroup: this.questiontype == 'groupradio' || this.questiontype == 'slider' ? true: false,
+			groups: []
 		}
 	},
 	methods: {
-		
+		addGroup: function(){
+			if(this.isgroup){
+				this.groups.push({
+					label: '',
+					options: []
+				});
+			}else{
+				this.groups.push({
+					label: '',
+					value: 0,
+					checked: 0
+				});
+			}
+		}
+	},
+	created: function(){
+		if(this.isgroup){
+			this.groups.push({
+				label: '',
+				options: []
+			});
+		}else{
+			this.groups.push({
+				label: '',
+				value: 0,
+				checked: 0
+			});
+		}
 	}
 });
 
