@@ -270,6 +270,7 @@ Complete the IDC Cyber Risk Assessment Tool to find out more about how ready you
     '3wait'=>'While you\'re waiting why not tweet your results and see how your colleagues measure up?',
 
     //general
+    'disclaimer' => 'Disclaimer',
     'introduction' => 'Introduction',
     'next'=>'Next',
     'back'=>'Back',

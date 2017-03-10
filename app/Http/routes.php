@@ -29,8 +29,9 @@ Route::group(['prefix' => 'admin', 'middleware'=>['auth']], function(){
 
 	//TOOLS
 	Route::get('tools/', 'ToolController@index');
-	Route::get('tools/{tool_id}', 'ToolController@show');
-	Route::get('tools/{tool_id}/questions', 'ToolController@questions');
+	Route::get('tools/{tool}', 'ToolController@show');
+	Route::get('tools/{tool}/questions', 'ToolController@questions');
+	Route::post('tools/{tool}/questions', 'ToolController@storequestions');
 	Route::get('tools/create', 'ToolController@create');
 	Route::post('tools/create', 'ToolController@store');
 
@@ -71,6 +72,19 @@ Route::group(['domain' => '{subdomain}.idcready.net','middleware'=>['locale']], 
 	Route::get('/', 'ToolController@run')->middleware(['routebyurl','reloadquestions']);
 
 	Route::get('/download/{assid}', 'ToolController@getDownload');
+
+	Route::get('/privacy', function()
+	{
+		return View::make('legal.privacy');
+	});
+	Route::get('/cookies', function()
+	{
+		return View::make('legal.cookies');
+	});
+	Route::get('/disclaimer', function()
+	{
+		return View::make('legal.disclaimer');
+	});
 
 	Route::get('/pdf', 'PdfController@wkhtml');
 	Route::get('/template/{templates}/report/header', function($domain, $template){

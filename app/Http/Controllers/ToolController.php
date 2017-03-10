@@ -130,7 +130,16 @@ public function store(CreateToolRequest $request)
  */
 public function questions(Tool $tool)
 {
-	$tool->load('sections.questions');
+	$tool->load(['sections.questions']);
+	return view('questions.create', compact(['tool']));
+}/**
+ * Store Questions
+ * @return view
+ */
+public function storequestions(Request $request, Tool $tool)
+{
+	return $request->all();
+	$tool->load(['sections.questions']);
 	return view('questions.create', compact(['tool']));
 }
 

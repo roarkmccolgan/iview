@@ -36,12 +36,12 @@
 				<div class="row">
                 	<div class="col-md-10 col-md-offset-1">
                 		<div class="row">
-                			<div class="col-sm-4">
-								<a href="/{{session('localeUrl')}}" class="restart"><i class="fa fa-chevron-left"></i> {{Lang::get('general.'.session('product.id').'restart')}}</a>
-							</div>
-							<div class="col-sm-8 text-right">
-								<span class="assoc">{{Lang::get('general.'.session('product.id').'assoc')}} <img class="sponsor" src="{{asset('images/tools/'.session('product.id').'/fireeye_hp.png')}}" alt="{{Lang::get('general.'.session('product.id').'sponsor')}}"></span>
-							</div>	
+                			<div class="col-sm-7">
+                				<a href="/{{session('localeUrl')}}" class="restart"><i class="fa fa-chevron-left"></i> {{Lang::get('general.'.session('product.id').'restart')}}</a> | <a href="{{ url('/disclaimer') }}" target="_blank">{{Lang::get('general.disclaimer')}}</a>
+				</div>
+				<div class="col-sm-5 text-right">
+					<span class="assoc">{{Lang::get('general.'.session('product.id').'assoc')}} <img class="sponsor" src="{{asset('images/tools/'.session('product.id').'/fireeye_hp.png')}}" alt="{{Lang::get('general.'.session('product.id').'sponsor')}}"></span>
+				</div>	
                 		</div>
                 	</div>
                 </div>

@@ -188,7 +188,7 @@ Vue.component('qsection',{
 						<a data-toggle="collapse" data-parent="#accordion" :href="'#collapse'+secind" :aria-expanded="secind==0 ? 'true':'false'" class="" style="display: inline-block; width: 5%;">
 							<i class="fa fa-angle-right"></i>
 						</a>
-						<input type="text" name="section" v-model="sectionName" placeholder="Section Name" class="form-control" style="display: inline-block; width: 80%">
+						<input type="text" :name="'sec_'+secind+'[name]'" v-model="sectionName" placeholder="Section Name" class="form-control" style="display: inline-block; width: 80%">
 					</h4>
 				</div>
 				<div :id="'collapse'+secind" class="panel-collapse collapse in" :aria-expanded="secind==0 ? 'true':'false'">
@@ -201,8 +201,8 @@ Vue.component('qsection',{
 	`,
 	data: function () {
 		return {
-			sectionName: this.name,
-			alias: this.name
+			sectionName: '',
+			alias: ''
 		}
 	},
 	methods: {
@@ -219,17 +219,16 @@ Vue.component('questions',{
 			<h5>Questions <button class="btn btn-primary btn-sm" @click.prevent="addQuestion()" style="margin-top: 5px;"><i class="fa fa-plus"></i></button></h5>
 			<div class="row">
 				<div class="col-sm-12" v-for="(question, qkey) in questions" style="border-bottom: 1px solid #dadada;">
-					<input type="hidden" :name="'sec_'+secind+'['+question.name+'][name]'" v-model="question.name">
 					<div class="form-group">
 						<label for="" class="col-sm-2 control-label">{{ question.name }}</label>
 						<div class="col-sm-10">
-							<textarea rows="4" cols="50" :name="'sec_'+secind+'['+question.name+'][question]'" v-model="question.question" placeholder="Question" class="form-control"></textarea>
+							<textarea rows="4" cols="50" :name="'sec_'+secind+'[questions]['+question.name+'][question]'" v-model="question.question" placeholder="Question" class="form-control"></textarea>
 						</div>
 					</div>
 					<div class="form-group">
 						<label class="col-sm-2 control-label">Type</label>
 						<div class="col-sm-10">
-							<select class="form-control" v-model="question.type" @change="showType(qkey,question.type)">
+							<select class="form-control" :name="'sec_'+secind+'[questions]['+question.name+'][type]'" v-model="question.type" @change="showType(qkey,question.type)">
 								<option value="select">Select</option>
 								<option value="button">Single button (Select One)</option>
 								<option value="radio">Radio Button (Select One)</option>
@@ -291,18 +290,18 @@ Vue.component('terminal-button',{
 			<div class="form-group">
 				<label for="" class="col-sm-2 control-label">Label</label>
 				<div class="col-sm-10">
-					<input type="text" :name="'sec_'+secind+'[question]['+questionname+'][options]['+optkey+'][label]'" v-model="label" class="form-control">
+					<input type="text" :name="'sec_'+secind+'[questions]['+questionname+'][options]['+optkey+'][label]'" v-model="label" class="form-control">
 				</div>
 			</div>
 			<div class="form-group">
 				<label for="" class="col-sm-2 control-label">Value</label>
 				<div class="col-sm-10">
-					<input type="number" :name="'sec_'+secind+'[question]['+questionname+'][options]['+optkey+'][value]'" v-model.number="value" class="form-control">
+					<input type="number" :name="'sec_'+secind+'[questions]['+questionname+'][options]['+optkey+'][value]'" v-model.number="value" class="form-control">
 				</div>
 			</div>
 			<div class="form-group">
 				<div class="col-sm-10 col-sm-offset-2">
-					<input :name="'sec_'+secind+'[question]['+questionname+'][options]['+optkey+'][checked]'" type="checkbox" id="checkbox" v-model="checked">
+					<input :name="'sec_'+secind+'[questions]['+questionname+'][options]['+optkey+'][checked]'" type="checkbox" id="checkbox" v-model="checked">
 					<label for="checkbox">Checked</label>
 				</div>
 			</div>
@@ -328,25 +327,25 @@ Vue.component('terminal-slider',{
 					<div class="form-group">
 						<label for="" class="col-sm-2 control-label">Sub Question</label>
 						<div class="col-sm-10">
-							<input type="text" :name="'sec_'+secind+'[question]['+questionname+'][options]['+optkey+'][groups]['+groupKey+'][label]'" v-model="group.label" class="form-control">
+							<input type="text" :name="'sec_'+secind+'[questions]['+questionname+'][options]['+optkey+'][groups]['+groupKey+'][label]'" v-model="group.label" class="form-control">
 						</div>
 					</div>
 					<div v-for="(option, optionKey) in group.options">
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Label</label>
 							<div class="col-sm-10">
-								<input type="text" :name="'sec_'+secind+'[question]['+questionname+'][options]['+optkey+'][group]['+optionKey+'][label]'" v-model="option.label" class="form-control">
+								<input type="text" :name="'sec_'+secind+'[questions]['+questionname+'][options]['+optkey+'][group]['+optionKey+'][label]'" v-model="option.label" class="form-control">
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Value</label>
 							<div class="col-sm-10">
-								<input type="number" :name="'sec_'+secind+'[question]['+questionname+'][options]['+optkey+'][group]['+optionKey+'][label]'" v-model.number="value" class="form-control">
+								<input type="number" :name="'sec_'+secind+'[questions]['+questionname+'][options]['+optkey+'][group]['+optionKey+'][label]'" v-model.number="value" class="form-control">
 							</div>
 						</div>
 						<div class="form-group">
 							<div class="col-sm-10 col-sm-offset-2">
-								<input :name="'sec_'+secind+'[question]['+questionname+'][options]['+optkey+'][group]['+optionKey+'][label]'" type="checkbox" id="checkbox" v-model="checked">
+								<input :name="'sec_'+secind+'[questions]['+questionname+'][options]['+optkey+'][group]['+optionKey+'][label]'" type="checkbox" id="checkbox" v-model="checked">
 								<label for="checkbox">Checked</label>
 							</div>
 						</div>
@@ -357,18 +356,18 @@ Vue.component('terminal-slider',{
 				<div class="form-group">
 					<label for="" class="col-sm-2 control-label">Label</label>
 					<div class="col-sm-10">
-						<input type="text" :name="'sec_'+secind+'[question]['+questionname+'][options]['+optkey+'][label]'" v-model="groups[0].label" class="form-control">
+						<input type="text" :name="'sec_'+secind+'[questions]['+questionname+'][options]['+optkey+'][label]'" v-model="groups[0].label" class="form-control">
 					</div>
 				</div>
 				<div class="form-group">
 					<label for="" class="col-sm-2 control-label">Value</label>
 					<div class="col-sm-10">
-						<input type="number" :name="'sec_'+secind+'[question]['+questionname+'][options]['+optkey+'][value]'" v-model.number="groups[0].value" class="form-control">
+						<input type="number" :name="'sec_'+secind+'[questions]['+questionname+'][options]['+optkey+'][value]'" v-model.number="groups[0].value" class="form-control">
 					</div>
 				</div>
 				<div class="form-group">
 					<div class="col-sm-10 col-sm-offset-2">
-						<input :name="'sec_'+secind+'[question]['+questionname+'][options]['+optkey+'][checked]'" type="checkbox" id="checkbox" v-model="groups[0].checked">
+						<input :name="'sec_'+secind+'[questions]['+questionname+'][options]['+optkey+'][checked]'" type="checkbox" id="checkbox" v-model="groups[0].checked">
 						<label for="checkbox">Checked</label>
 					</div>
 				</div>

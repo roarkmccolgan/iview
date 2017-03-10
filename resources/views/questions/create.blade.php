@@ -17,6 +17,7 @@
 	</div>
 	<div class="cl-mcont" id="question_create">
 		<form action="" method="POST" class="form-horizontal"> 
+			{{ csrf_field() }}
 			@if($errors->any())
 			<div class="row">
 				<div class="col-md-6">
@@ -41,7 +42,7 @@
 			</div>
 			<div class="col-sm-6 col-md-6 col-lg-6">
 				<div id="accordion" class="panel-group accordion">
-					<qsection v-for="(section, secKey) in sections" :name="section.name" :key="secKey" :secind="secKey" :questionnum="questionnum"  v-on:increment="incrementQuestion"></qsection>
+					<qsection v-for="(section, secKey) in sections" :key="secKey" :secind="secKey" :questionnum="questionnum"  v-on:increment="incrementQuestion"></qsection>
 				</div>
 			</div>
 			
