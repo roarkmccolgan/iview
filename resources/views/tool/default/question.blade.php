@@ -86,7 +86,7 @@
 <script>
 $(function() {
     @foreach ($script as $s)
-       {{ $s }}
+       {!! $s !!}
     @endforeach
 });
 </script>
@@ -167,7 +167,8 @@ $('#mask').hide(); //hidemask
         })
 @endif
 if($('label.rel').length){
-    $('button.btn.btn-primary.pull-right').click(function(e){
+    $('button.next').click(function(e){
+        console.log('fek');
         var title = '{{$heading}}';
         var sibling = $(this).prev("div.holder");
         var pos = false;
@@ -224,7 +225,7 @@ if($('label.rel').length){
                 if(error==false){
                     html = 
                         '<div class="error" style="padding:0 15px 0 15px;">'+
-                            '<span style="color: #ed2024;">{{Lang::get('general.'.session('product.id').'multierror')}}</span>'+
+                            '<span style="color: #ed2024;">{{Lang::get('general.multierror')}}</span>'+
                         '</div>';
                     $(html).hide().appendTo(sibling).fadeIn("fast");
                     error=true;

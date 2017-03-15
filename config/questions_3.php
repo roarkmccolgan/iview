@@ -337,6 +337,33 @@ return array(
                         'type'=>'checkbox',
                         'question'=>'Which of the following cloud services do you offer (select all that apply)?',
                         'name'=>'q9',
+                        'script'=>'
+                            $(\'#10-q9\').on(\'ifChecked\', function(event){
+                                $(\'div.error\').fadeOut(\'fast\', function() {
+                                    this.remove();
+                                    error=false;
+                                });
+                                $(\'#0-q9\').iCheck(\'uncheck\');
+                                $(\'#1-q9\').iCheck(\'uncheck\');
+                                $(\'#2-q9\').iCheck(\'uncheck\');
+                                $(\'#3-q9\').iCheck(\'uncheck\');
+                                $(\'#4-q9\').iCheck(\'uncheck\');
+                                $(\'#5-q9\').iCheck(\'uncheck\');
+                                $(\'#6-q9\').iCheck(\'uncheck\');
+                                $(\'#7-q9\').iCheck(\'uncheck\');
+                                $(\'#8-q9\').iCheck(\'uncheck\');
+                                $(\'#9-q9\').iCheck(\'uncheck\');
+                            });
+                            jQuery.each([$(\'#0-q9\'),$(\'#1-q9\'),$(\'#2-q9\'),$(\'#3-q9\'),$(\'#4-q9\'),$(\'#5-q9\'),$(\'#6-q9\'),$(\'#7-q9\'),$(\'#8-q9\'),$(\'#9-q9\')], function( i, item ) {
+                                $(item).on(\'ifChecked\', function(event){
+                                    $(\'div.error\').fadeOut(\'fast\', function() {
+                                        this.remove();
+                                        error=false;
+                                    });
+                                    $(\'#10-q9\').iCheck(\'uncheck\');
+                                });
+                            });
+                        ',
                         'options'=>array(
                             array(
                                 'label'=>'Building and/or managing of private clouds on customer premises',
@@ -387,6 +414,11 @@ return array(
                                 'label'=>'Cloud brokerage of multiple third-party cloud services based on a common portal and billing engine',
                                 'value'=>0.50,
                                 'checked'=>false
+                            ),
+                            array(
+                                'label'=>'None of the above',
+                                'value'=>0.13,
+                                'checked'=>false
                             )
                         )
                     )
@@ -403,6 +435,33 @@ return array(
                         'type'=>'checkbox',
                         'question'=>'Please select the technologies which your technical teams have been certified on (vendor certifications).',
                         'name'=>'q10',
+                        'script'=>'
+                            $(\'#10-q10\').on(\'ifChecked\', function(event){
+                                $(\'div.error\').fadeOut(\'fast\', function() {
+                                    this.remove();
+                                    error=false;
+                                });
+                                $(\'#0-q10\').iCheck(\'uncheck\');
+                                $(\'#1-q10\').iCheck(\'uncheck\');
+                                $(\'#2-q10\').iCheck(\'uncheck\');
+                                $(\'#3-q10\').iCheck(\'uncheck\');
+                                $(\'#4-q10\').iCheck(\'uncheck\');
+                                $(\'#5-q10\').iCheck(\'uncheck\');
+                                $(\'#6-q10\').iCheck(\'uncheck\');
+                                $(\'#7-q10\').iCheck(\'uncheck\');
+                                $(\'#8-q10\').iCheck(\'uncheck\');
+                                $(\'#9-q10\').iCheck(\'uncheck\');
+                            });
+                            jQuery.each([$(\'#0-q10\'),$(\'#1-q10\'),$(\'#2-q10\'),$(\'#3-q10\'),$(\'#4-q10\'),$(\'#5-q10\'),$(\'#6-q10\'),$(\'#7-q10\'),$(\'#8-q10\'),$(\'#9-q10\')], function( i, item ) {
+                                $(item).on(\'ifChecked\', function(event){
+                                    $(\'div.error\').fadeOut(\'fast\', function() {
+                                        this.remove();
+                                        error=false;
+                                    });
+                                    $(\'#10-q10\').iCheck(\'uncheck\');
+                                });
+                            });
+                        ',
                         'options'=>array(
                             array(
                                 'label'=>'Linux, e.g., Red Hat Enterprise Linux',
@@ -452,6 +511,11 @@ return array(
                             array(
                                 'label'=>'Cloud security technologies',
                                 'value'=>0.42,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'None of the above',
+                                'value'=>0.21,
                                 'checked'=>false
                             )
                         )

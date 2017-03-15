@@ -146,6 +146,6 @@ Form::macro('idcCheckbox', function($section,$q,$page){
 	}
 	$html.='
 		</div>
-		<button class="btn btn-danger pull-right btn-lg" type="submit">'.Lang::get('general.next').' <i class="fa fa-arrow-circle-right"></i></button></button>';
+		<button class="btn btn-danger pull-right btn-lg next" type="submit">'.Lang::get('general.next').' <i class="fa fa-arrow-circle-right"></i></button></button>';
 	return $html;
 });
