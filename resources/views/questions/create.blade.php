@@ -42,7 +42,7 @@
 			</div>
 			<div class="col-sm-6 col-md-6 col-lg-6">
 				<div id="accordion" class="panel-group accordion">
-					<qsection v-for="(section, secKey) in sections" :key="secKey" :secind="secKey" :questionnum="questionnum"  v-on:increment="incrementQuestion"></qsection>
+					<qsection v-for="(section, secKey) in sections" :key="secKey" :secind="secKey" :questionnum="questionnum"  v-on:increment="incrementQuestion" :section="section"></qsection>
 				</div>
 			</div>
 			

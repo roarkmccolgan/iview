@@ -179,7 +179,7 @@ vueReporting = new Vue({
 })
 
 Vue.component('qsection',{
-	props: ['secind','questionnum'],
+	props: ['secind','questionnum','section'],
 	template: `
 		<div id="accordion">
 			<div class="panel panel-default">
@@ -193,7 +193,11 @@ Vue.component('qsection',{
 				</div>
 				<div :id="'collapse'+secind" class="panel-collapse collapse in" :aria-expanded="secind==0 ? 'true':'false'">
 					<div class="panel-body">
-						<questions :secind="secind" :questionnum="questionnum" v-on:increment="incrementQuestion"></questions>
+						<button class="btn btn-primary btn-sm pull-right" @click.prevent="addPage(secind)" style="margin-top: 5px;"><i class="fa fa-plus"></i> Page</button>
+						<fieldset v-for="(pages, pindec) in thisSection.pages">
+							<legend>page {{ pindec+1 }}:</legend>
+							<questions :secind="secind" :questionnum="questionnum" v-on:increment="incrementQuestion"></questions>
+						</fieldset>
 					</div>
 				</div>
 			</div>
@@ -202,12 +206,19 @@ Vue.component('qsection',{
 	data: function () {
 		return {
 			sectionName: '',
-			alias: ''
+			alias: '',
+			thisSection: this.section
 		}
 	},
 	methods: {
 		incrementQuestion: function(){
 			this.$emit('increment')
+		},
+		addPage: function(index){
+			this.thisSection.pages.push({
+				name: name,
+				key: index
+			});
 		}
 	}
 });
@@ -440,9 +451,21 @@ vueToolQuestions = new Vue({
 	methods: {
 		addSection: function(key){
 			this.sections.push({
-				name: name,
-				key: key
+				pages: [
+					{
+						name: name,
+						key: key
+					}
+				]
 			});
+		},
+		addPage: function(key){
+			this.sections[key].pages.push(
+				{
+					name: name,
+					key: key
+				}
+			);
 		},
 		incrementQuestion: function(){
 			this.questionnum ++;
