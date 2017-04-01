@@ -43,7 +43,7 @@ return array(
     '2assoc'=>'',
     '2sponsors'=>'FireEye and HPE',
     '2title'=>'Évaluation du cyber-risque par IDC',
-    '2sub-title'=>'Sponsorisé par FireEye et Hewlett Packard Enterprise',
+    '2sub-title'=>'Sponsorisé par FireEye et DXC Technology',
     '2landing'=>'
     <h2>Votre préparation au cyber-risque</h2>
     <p>La transformation numérique est l’un des principaux piliers de la stratégie des entreprises d’aujourd’hui et, à mesure que la réglementation se fait plus exigeante, la préparation au cyber-risque devient un catalyseur clé de l’infrastructure numérique. L’étude d’IDC montre que les services informatiques dynamiques ont généralement une approche plus mature envers la gestion du cyber-risque.

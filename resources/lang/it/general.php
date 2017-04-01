@@ -8,7 +8,7 @@ return array(
     '2assoc'=>'',
     '2sponsors'=>'FireEye ed HPE',
     '2title'=>'Valutazione del rischio informatico di IDC',
-    '2sub-title'=>'Sponsorizzato da FireEye ed Hewlett Packard Enterprise',
+    '2sub-title'=>'Sponsorizzato da FireEye ed DXC Technology',
     '2landing'=>'
 <h2>La tua preparazione nei confronti del rischio informatico</h2>
 <p>Essendo la trasformazione digitale una colonna della strategia delle moderne aziende anche in presenza di una normativa sempre più stringente, la preparazione nei confronti del rischio informatico è ormai un elemento chiave di un\'infrastruttura digitale. Secondo le ricerche IDC, i reparti IT più flessibili utilizzano l\'approccio più maturo in termini di gestione del rischio informatico.

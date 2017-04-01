@@ -38,7 +38,7 @@ return array(
     '2assoc'=>'',
     '2sponsors'=>'FireEye and HPE',
     '2title'=>'IDC\'s Cyber Risk Assessment',
-    '2sub-title'=>'Sponsored by FireEye and Hewlett Packard Enterprise',
+    '2sub-title'=>'Sponsored by FireEye and DCX Technology',
     '2landing'=>'
 <h2>Your Cyber Risk Readiness</h2>
 <p>As Digital Transformation forms a key pillar of modern business strategy and regulation starts to bite, Cyber Risk readiness has become a core enabler of digital infrastructure. IDC research shows that agile IT departments typically have the most mature approach to Cyber Risk management. 

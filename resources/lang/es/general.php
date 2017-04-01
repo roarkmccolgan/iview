@@ -39,7 +39,7 @@ return array(
     '2assoc'=>'',
     '2sponsors'=>'FireEye and HPE',
     '2title'=>'Evaluación de riesgos informáticos de IDC',
-    '2sub-title'=>'Patrocinado por FireEye y Hewlett Packard Enterprise',
+    '2sub-title'=>'Patrocinado por FireEye y DXC Technology',
     '2landing'=>'
 <h2>Preparación frente a riesgos informáticos</h2>
 <p>Dado que la transformación digital constituye un pilar básico de la estrategia empresarial moderna y la reglamentación comienza a suponer un problema, estar preparado ante los riesgos informáticos se ha convertido en un facilitador esencial de la infraestructura digital. La labor de investigación de IDC muestra que los departamentos de TI más ágiles suelen adoptar el enfoque más maduro en lo que respecta a la gestión de los riesgos informáticos.

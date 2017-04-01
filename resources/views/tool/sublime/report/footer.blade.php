@@ -17,7 +17,7 @@
 			<tr>
 				<td style="width: 60%; padding-right: 2%; text-align: right">{{trans('general.'.app('request')->input('tool_id').'assoc')}}</td>
 				<td style="width: 38%;">
-					<img width="280" src="/css/{{ app('request')->input('company_alias') }}/png/{{ app('request')->input('company_alias') }}.png" alt="">
+					<img width="280" src="/css/{{ app('request')->input('company_alias') }}/png/{{ app('request')->input('company_alias') }}.png?rand=123" alt="">
 				</td>
 			</tr>
 		</table>
