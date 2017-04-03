@@ -655,6 +655,9 @@ public function postComplete(SubmitAssessmentsRequest $request)
     							$val = explode('|', $details['selected']);
     							$val = $val[1];
     						}
+    						//round to 1 decimal place
+    						$val = round($val, 1, PHP_ROUND_HALF_UP);
+
     						if (isset($result[$key]['score'])){
     							$result[$key]['score'] += $val;
     						} else {
