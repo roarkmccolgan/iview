@@ -79,7 +79,7 @@ Si vous obtenez une note satisfaisante ou supérieure dans toutes les sections, 
             Ce rapport classe vos résultats par catégorie et vous aide à vous situer par rapport à d’autres organisations.
         ',
         'link' => 'Télécharger le rapport',
-        'extra' => 'Une fois que vous avez digéré le rapport pourquoi ne pas visiter <a href="http://www.fireeye.com" style="color:#E66B6B">FireEye</a> et <a href="http://www.hpe.com" style="color:#E66B6B">HPE</a>',
+        'extra' => 'Une fois que vous avez digéré le rapport pourquoi ne pas visiter <a href="http://www.fireeye.com" style="color:#E66B6B">FireEye</a> et <a href="http://www.dxc.technology" style="color:#E66B6B">DXC Technology</a>',
         'regards' => 'Regards',
         'team' => 'The IDC Team'
     ],

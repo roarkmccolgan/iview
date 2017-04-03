@@ -79,7 +79,7 @@ If you achieve a rating of in-line or ahead in all sections, you are ready to be
             The report breaks down your results by category and helps you benchmark yourself against other organizations.
         ',
         'link' => 'Download Report',
-        'extra' => 'Once you\'ve digested the report why not visit <a href="http://www.fireeye.com" style="color:#E66B6B">FireEye</a> and <a href="http://www.hpe.com" style="color:#E66B6B">HPE</a>',
+        'extra' => 'Once you\'ve digested the report why not visit <a href="http://www.fireeye.com" style="color:#E66B6B">FireEye</a> and <a href="http://www.dxc.technology" style="color:#E66B6B">DXC Technology</a>',
         'regards' => 'Regards',
         'team' => 'The IDC Team'
     ],

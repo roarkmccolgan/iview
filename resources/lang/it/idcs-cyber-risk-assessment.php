@@ -79,7 +79,7 @@ Se otterrai un punteggio in linea o in vantaggio in tutte le sezioni, a breve po
              Il rapporto divide i tuoi risultati per categoria e ti aiuta a valutare la tua posizione nei confronti delle altre organizzazioni.
         ',
         'link' => 'Scarica il rapporto',
-        'extra' => 'Dopo aver digerito il rapporto perché non visitare <a href="http://www.fireeye.com" style="color:#E66B6B">FireEye</a> e <a href="http://www.hpe.com" style="color:#E66B6B">HPE </a>',
+        'extra' => 'Dopo aver digerito il rapporto perché non visitare <a href="http://www.fireeye.com" style="color:#E66B6B">FireEye</a> e <a href="http://www.dxc.technology" style="color:#E66B6B">HPE </a>',
         'regards' => 'Saluti',
         'team' => 'The IDC Team'
     ],

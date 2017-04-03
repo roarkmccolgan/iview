@@ -78,7 +78,7 @@ return array(
             El informe clasifica sus resultados por categorías y le ayuda a compararse con otras organizaciones.
         ',
         'link' => 'Descargar informe',
-        'extra' => 'Una vez que haya digerido el informe, por qué no visitar <a href="http://www.fireeye.com" style="color:#E66B6B">FireEye</a> y <a href="http://www.hpe.com" style="color:#E66B6B">HPE</a>',
+        'extra' => 'Una vez que haya digerido el informe, por qué no visitar <a href="http://www.fireeye.com" style="color:#E66B6B">FireEye</a> y <a href="http://www.dxc.technology" style="color:#E66B6B">DXC Technology</a>',
         'regards' => 'Regards',
         'team' => 'The IDC Team'
     ],

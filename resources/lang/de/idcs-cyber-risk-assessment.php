@@ -79,7 +79,7 @@ Falls Sie in allen Bereichen entweder im Mittel- oder im Spitzenfeld liegen, wer
             In dem Bericht werden Ihre Ergebnisse nach Kategorien aufgeschlüsselt. Dadurch können Sie Ihre Ergebnisse besser mit anderen Unternehmen vergleichen.
         ',
         'link' => 'Bericht herunterladen',
-        'extra' => 'Sobald Sie den Bericht verdaut haben, warum nicht besuchen <a href="http://www.fireeye.com" style="color:#E66B6B">FireEye</a> und <a href="http://www.hpe.com" style="color:#E66B6B">HPE</a>',
+        'extra' => 'Sobald Sie den Bericht verdaut haben, warum nicht besuchen <a href="http://www.fireeye.com" style="color:#E66B6B">FireEye</a> und <a href="http://www.dxc.technology" style="color:#E66B6B">DXC Technology</a>',
         'regards' => 'Regards',
         'team' => 'The IDC Team'
     ],
