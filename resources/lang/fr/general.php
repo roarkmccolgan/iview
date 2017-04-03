@@ -73,7 +73,7 @@ return array(
     '2send'=>'We can send you the full results directly to your mailbox',
     '2fullreport'=>'Would you like the full report that provides you with some essential guidance in the development of your cloud business.?',
     '2provide'=>'Veuillez simplement nous fournir votre nom et votre adresse e-mail afin de recevoir un lien pour pouvoir le télécharger.',
-    '2byreg'=>'En vous inscrivant à IDC, vous acceptez notre <a href="/privacy" target="_blank">Politique de confidentialité</a> ainsi que celle de <a href="https://www.fireeye.com/company/privacy.html" target="_blank">FireEye</a> et <a href="https://www.hpe.com/uk/en/legal/privacy.html" target="_blank">DXC Technology</a>. Les informations que nous recueillons seront partagées avec FireEye et HP à des fins de marketing direct',
+    '2byreg'=>'En vous inscrivant à IDC, vous acceptez notre <a href="/privacy" target="_blank">Politique de confidentialité</a> ainsi que celle de <a href="https://www.fireeye.com/company/privacy.html" target="_blank">FireEye</a> et <a href="http://www.dxc.technology/privacy" target="_blank">DXC Technology</a>. Les informations que nous recueillons seront partagées avec FireEye et HP à des fins de marketing direct',
     '2wait'=>'While you\'re waiting why not tweet your results and see how your colleagues measure up?',    
 
     //general
