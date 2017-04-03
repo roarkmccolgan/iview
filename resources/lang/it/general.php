@@ -6,7 +6,7 @@ return array(
     '2elqFormName'=>'',
     '2restart'=>'Riavvia valutazioneent',
     '2assoc'=>'',
-    '2sponsors'=>'FireEye ed HPE',
+    '2sponsors'=>'FireEye ed DXC Technology',
     '2title'=>'Valutazione del rischio informatico di IDC',
     '2sub-title'=>'Sponsorizzato da FireEye ed DXC Technology',
     '2landing'=>'

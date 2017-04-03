@@ -37,7 +37,7 @@ return array(
     '2elqFormName'=>'',
     '2restart'=>'Reiniciar evaluación',
     '2assoc'=>'',
-    '2sponsors'=>'FireEye and HPE',
+    '2sponsors'=>'FireEye and DXC Technology',
     '2title'=>'Evaluación de riesgos informáticos de IDC',
     '2sub-title'=>'Patrocinado por FireEye y DXC Technology',
     '2landing'=>'
