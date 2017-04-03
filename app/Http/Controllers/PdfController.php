@@ -177,7 +177,7 @@ class PdfController extends Controller
 
 		//return $vars['sections'];
 		/*echo "<pre>";
-		dd(session('questions'));*/
+		dd(session('product'));*/
 		//return view('tool.'.session('template').'.report.report',$vars);
 		$margintop = 25;
 		if(null !== config('baseline_'.session('product.id').'.overall.report-settings.margin-top')){
