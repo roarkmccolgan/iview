@@ -61,6 +61,8 @@
                                     {!! Form::idcSlider($num,$q,$page) !!}
                                 @elseif ($q['type'] == 'checkbox')
                                     {!! Form::idcCheckbox($num,$q,$page) !!}
+                                @elseif ($q['type'] == 'groupradio')
+                                    {!! Form::idcGroup($num,$q,$page,'radio') !!}
                                 @elseif ($q['type'] == 'icon')
                                     {!! Form::idcIcon($section,$q,$page,$num) !!}
                                 @elseif ($q['type'] == 'button')
@@ -81,7 +83,7 @@
 @parent
 <script type="text/javascript">var error = false;</script>
 <script src="{{{ asset('js/plugins.js')}}}"></script>
-<script src="{{{ asset('js/templates/'.session('template').'/main.js')}}}"></script>
+<script src="{{{ asset('js/templates/'.session('template').'/main.js?end=12')}}}"></script>
 @if ($script)
 <script>
 $(function() {
@@ -151,20 +153,50 @@ $('#mask').hide(); //hidemask
         });
     });
 @else
-    $('button.btn-q').click(function(e){
+    if($('.groupcheck').length){ //radio button sets
+        $('#next').click(function(e){
             e.preventDefault();
             var that = this;
-            $(this).addClass('check');
-            jQuery.each($('button.btn-q'), function( i, item ) {
-                if(that!=item) $(item).prop( "disabled", true );
+            var valid = true;
+            var checkset = false;
+            jQuery.each($('.groupcheck'), function( i, item ) {
+                $(item).removeClass('error');
+                if(!$(item).find(':radio:checked').val()){
+                    checkset = item;
+                    valid = false;
+                    return false;
+                }
             });
-            $('#mask').show();
-            setTimeout(
-                function() {
-                    $(that).unbind('click').trigger('click');
-                },
-                500);
-        })
+            if(!valid){
+                $(checkset).addClass('error');
+                $('html, body').animate({
+                    scrollTop: $(checkset).offset().top-20
+                }, 500);
+            }else{
+                $('#mask').show();
+                setTimeout(
+                    function() {
+                        $(that).unbind('click').trigger('click');
+                    },
+                    800);
+            }
+        });
+    }else{
+        $('button.btn-q').click(function(e){
+                e.preventDefault();
+                var that = this;
+                $(this).addClass('check');
+                jQuery.each($('button.btn-q'), function( i, item ) {
+                    if(that!=item) $(item).prop( "disabled", true );
+                });
+                $('#mask').show();
+                setTimeout(
+                    function() {
+                        $(that).unbind('click').trigger('click');
+                    },
+                    500);
+            })
+    }
 @endif
 if($('label.rel').length){
     $('button.next').click(function(e){

@@ -16,9 +16,13 @@
 		@if(session('product.id')==3)
 			<link rel="stylesheet" href="{{asset('css/webfonts/overpass.css')}}" />
 		@endif
+		@if(session('product.id')==4)
+			<link rel="stylesheet" href="{{asset('css/webfonts/hpsimplified/stylesheet.css')}}" />
+		@endif
         <link rel="stylesheet" href="{{asset('css/templates/cookieBar.css')}}" />
         <link rel="stylesheet" href="{{asset('css/font-awesome-4.7.0/css/font-awesome.min.css')}}">
         <link rel="stylesheet" href="{{asset('css/bootstrap/css/bootstrap.css')}}" />
+        <link rel="stylesheet" href="{{asset('css/templates/'.session('template').'/skins/flat/aero.css')}}" />
         <link rel="stylesheet" href="{{asset('css/templates/'.session('template').'/theme_'.session('product.id').'.css')}}" />
 		@show
 		<noscript><link href="{{ asset('css/idc/icons.fallback.css')}}" rel="stylesheet"></noscript>

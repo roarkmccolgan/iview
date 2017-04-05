@@ -1,0 +1,170 @@
+<?php
+//HPGDPR
+return array(
+    'overall' => array(
+        'baseline' => 21.5,
+        'report-settings' => [
+            'header'=>true,
+            'footer'=>true,
+            'graph'=>true,
+            'pb'=>false,
+            'designline'=>false,
+            'color'=>'#0096d6',
+            'pageimage'=>false,
+        ],
+        'types' => array(
+            'stage1' => array(
+                'low' => 0,
+                'high' => 20.9,
+                'copy' => 'general.initial',
+                'tweet' => false,
+                'benchmark' => 2,
+            ),
+            'stage2' => array(
+                'low' => 21,
+                'high' => 40.9,
+                'copy' => 'general.defined',
+                'tweet' => false,
+                'benchmark' => 32,
+            ),
+            'stage3' => array(
+                'low' => 41,
+                'high' => 50.9,
+                'copy' => 'general.managed',
+                'tweet' => false,
+                'benchmark' => 41,
+            ),
+            'stage4' => array(
+                'low' => 61,
+                'high' => 80.9,
+                'copy' => 'general.optimised',
+                'tweet' => false,
+                'benchmark' => 21,
+            )
+        ),
+        'tweet' => false
+    ),
+    'leadership-and-general-obligations' => array(
+        'baseline' => 15.363,
+        'report-settings' => [
+            'header'=>true,
+            'footer'=>true,
+            'graph'=>true,
+            'pb'=>true,
+            'designline'=>true,
+            'color'=>'#0096d6',
+            'pageimage'=>false,
+            'extra-graphs'=>false,
+        ],
+        'floatimage' => 'right',
+        'floatgraph' => 'none',
+        'types' => array(
+            'stage1' => array(
+                'low' => 0,
+                'high' => 4.92,
+                'total' => 2,
+                'benchmark' => 14,
+            ),
+            'stage2' => array(
+                'low' => 5,
+                'high' => 8.9,
+                'total' => 3,
+                'benchmark' => 39,
+            ),
+            'stage3' => array(
+                'low' => 9,
+                'high' => 12.9,
+                'total' => 5,
+                'benchmark' => 28,
+            ),
+            'stage4' => array(
+                'low' => 13,
+                'high' => 16.9,
+                'total' => 5,
+                'benchmark' => 13,
+            )
+        )
+    ),
+    'data-rights-and-standards' => array(
+        'baseline' => 24.046,
+        'report-settings' => [
+            'header'=>true,
+            'footer'=>true,
+            'graph'=>true,
+            'pb'=>true,
+            'designline'=>true,
+            'color'=>'#0096d6',
+            'pageimage'=>true,
+            'extra-graphs'=>false,
+        ],
+        'floatimage' => 'none',
+        'floatgraph' => 'none',
+        'types' => array(
+            'stage1' => array(
+                'low' => 0,
+                'high' => 4.95,
+                'total' => 3,
+                'benchmark' => 25,
+            ),
+            'stage2' => array(
+                'low' => 5,
+                'high' => 8.9,
+                'total' => 4,
+                'benchmark' => 33,
+            ),
+            'stage3' => array(
+                'low' => 9,
+                'high' => 12.9,
+                'total' => 6,
+                'benchmark' => 17,
+            ),
+            'stage4' => array(
+                'low' => 13,
+                'high' => 16.9,
+                'total' => 6,
+                'benchmark' => 17,
+            )
+        )
+    ),
+    'security' => array(
+        'baseline' => 10,917,
+        'report-settings' => [
+            'header'=>true,
+            'footer'=>true,
+            'graph'=>true,
+            'pb'=>true,
+            'designline'=>true,
+            'color'=>'#0096d6',
+            'pageimage'=>true,
+            'extra-graphs'=>false,
+        ],
+        'floatimage' => 'none',
+        'floatgraph' => 'none',
+        'types' => array(
+            'stage1' => array(
+                'low' => 0,
+                'high' => 4.9,
+                'total' => 1,
+                'benchmark' => 28,
+            ),
+            'stage2' => array(
+                'low' => 5,
+                'high' => 8.9,
+                'total' => 2,
+                'benchmark' => 26,
+            ),
+            'stage3' => array(
+                'low' => 9,
+                'high' => 12.9,
+                'total' => 4,
+                'benchmark' => 26,
+            ),
+            'stage4' => array(
+                'low' => 13,
+                'high' => 16.9,
+                'total' => 4,
+                'benchmark' => 11,
+            )
+        )
+    )
+);

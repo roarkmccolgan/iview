@@ -61,11 +61,27 @@ $('button.info').click(function(){
 $('button:submit').click(function(){
 	$(window).off('beforeunload');
 });
-$('input.chq').iCheck();
+//$('input.chq').iCheck();
 if ($("#trigger_id").length > 0) {
     $("#trigger_id").leanModal().trigger('click');
 }
+$('input.chq').iCheck({
+	radioClass: 'iradio_flat-aero',
+	labelHover: true,
+	increaseArea: "10%",
+});
+$('input.chq').on('ifChecked', function(event){
+	$(event.target).closest('fieldset').find('.radiobox').removeClass('checked');
+	$(event.target).closest('.groupcheck').removeClass('error');
+  	$(event.target).closest('.radiobox').addClass('checked');
+});
 
+jQuery.each($('.radiobox'), function( i, item ) {
+    $(item).on('click', function(event){
+    	console.log('clicked');
+        $(item).find('input.chq').iCheck('check');
+    });
+});
 
 
 function validate(form){
