@@ -10,7 +10,7 @@ return array(
                 'questions' => array(
                     'q1'=>array(
                         'type'=>'button',
-                        'question'=>'Quelle affirmation décrit au mieux votre business model global? Nous nous concentrons sur:',
+                        'question'=>'Quelle affirmation décrit au mieux votre business model global ? Nous nous concentrons sur :',
                         'name'=>'q1',
                         'options'=>array(
                             array(
@@ -214,7 +214,7 @@ return array(
                         'name'=>'q6',
                         'options'=>array(
                             array(
-                                'label'=>'Sont exécutés à partir de zéro. Nous n\'avons pas encore développé de processus/méthodologies réutilisables.',
+                                'label'=>'Sont exécutés à partir de zéro. Nous n\'avons pas encore développé de processus réutilisable.',
                                 'value'=>1,
                                 'checked'=>false
                             ),
@@ -268,7 +268,7 @@ return array(
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Conjointement à notre marketing outbound traditionnel, nous avons développé un marketing digital, focused on influencing the pre-sales process and delivering qualified leads to sales. concentré sur le fait d\'influencer le processus de pré-vente et de fournir des prospects qualifiés au service commercial.',
+                                'label'=>'Conjointement à notre marketing outbound traditionnel, nous avons développé un marketing digital, concentré sur le fait d\'influencer le processus de pré-vente et de fournir des prospects qualifés au service commercial.',
                                 'value'=>3,
                                 'checked'=>false
                             ),
@@ -380,7 +380,7 @@ return array(
                 'questions' => array(
                     'q10'=>array(
                         'type'=>'button',
-                        'question'=>'Quelle est votre approche avant-ventes pour vos activités cloud ? Notre équipe avant-ventes :',
+                        'question'=>'Quelle est votre approche avant-vente pour vos activités cloud ? Notre équipe avant-vente :',
                         'name'=>'q10',
                         'options'=>array(
                             array(
