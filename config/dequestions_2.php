@@ -2421,7 +2421,7 @@ return array(
                                 ]
                             ),
                             array(
-                                'label'=>'Wir verwenden hauptsächlich \"serienmäßige\" Programme von unseren Sicherheitslieferanten.',
+                                'label'=>'Wir verwenden hauptsächlich &quot;serienmäßige&quot; Programme von unseren Sicherheitslieferanten.',
                                 'value'=>2,
                                 'checked'=>false,
                                 'position' => [
@@ -2433,7 +2433,7 @@ return array(
                                 ]
                             ),
                             array(
-                                'label'=>'Wir verwenden eine Kombination von spezialisierten Management-Programmen und einigen \"serienmäßigen\" Programmen.',
+                                'label'=>'Wir verwenden eine Kombination von spezialisierten Management-Programmen und einigen &quot;serienmäßigen&quot; Programmen.',
                                 'value'=>3,
                                 'checked'=>false,
                                 'position' => [
