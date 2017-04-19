@@ -14,24 +14,28 @@
         <div class="col-md-8 col-md-offset-2">
             <div class="splash">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-sm-4">
+                        <div class="icon-idc" style="width: 180px; height: 51px;" ></div>
+                    </div>
+                    <div class="col-sm-8">
                         <h1>
-                            <span class="logo"><div class="icon-idc" class="pull-right" style="width: 180px; height: 51px;" ></div></span>
                             {{Lang::get('general.'.$tool->id.'title')}}
                         </h1>
                     </div>
+                </div>
+                <div class="row">
                     @if($tool->id == 4)
-                    <div class="col-md-7 intro">
+                    <div class="col-sm-7 intro">
                         {!!Lang::get('general.'.$tool->id.'landing')!!}
                     </div>
-                    <div class="col-md-5 col-md-offset-0 col-xs-4 col-xs-offset-4 action text-center">
+                    <div class="col-sm-5 col-sm-offset-0 col-xs-8 col-xs-offset-2 action text-center">
                         <a href="{{'/'.session('localeUrl').'quiz/'.Session::get('startSection').'/page1'}}" class="startbut btn btn-primary btn-lg">{{Lang::get('general.'.$tool->id.'startbut')}} &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-right"></i></a>
                     </div>
                     @else
-                    <div class="col-md-8 intro">
+                    <div class="col-sm-8 intro">
                         {!!Lang::get('general.'.$tool->id.'landing')!!}
                     </div>
-                    <div class="col-md-4 col-md-offset-0 col-xs-4 col-xs-offset-4 action">
+                    <div class="col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2 action">
                         <a href="{{'/'.session('localeUrl').'quiz/'.Session::get('startSection').'/page1'}}" class="startbut btn btn-primary btn-lg">{{Lang::get('general.'.$tool->id.'startbut')}} &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-right"></i></a>
                     </div>
                     @endif

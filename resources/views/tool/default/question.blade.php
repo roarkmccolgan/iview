@@ -98,6 +98,9 @@ jQuery(window).on("beforeunload", function(event){
       return "Are you sure you would like to leave this page? Your answers for this page will be lost";
 });
 $('#mask').hide(); //hidemask
+if($('#formbody').height()<$(window).height()){
+    $('#formbody').height($(window).height()-($('#formbody').offset().top)-130);
+}
 @if ($report)
     $.ajaxSetup({
         headers: {

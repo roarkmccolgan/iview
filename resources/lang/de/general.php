@@ -40,7 +40,7 @@ return array(
     '2assoc'=>'',
     '2sponsors'=>'FireEye und DXC Technology',
     '2title'=>'Cyber-Risikobewertung von IDC',
-    '2sub-title'=>'Gesponsert von FireEye und Hewlett Packard Enterprise',
+    '2sub-title'=>'Gesponsert von FireEye und DXC Technology',
     '2landing'=>'
 <h2>Ihre Widerstandsfähigkeit gegenüber Cyber-Risiken</h2>
 <p>Da die digitale Transformation eine wichtige Säule der modernen Geschäftsstrategie darstellt und immer strengere Vorschriften erfüllt werden müssen, hat sich die Widerstandsfähigkeit gegenüber Cyber-Risiken zu einer Grundvoraussetzung für die digitale Infrastruktur entwickelt. IDC-Studien zeigen, dass agile IT-Abteilungen für gewöhnlich den ausgereiftesten Ansatz für das Management von Cyber-Risiken anwenden.

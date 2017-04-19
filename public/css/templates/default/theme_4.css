@@ -74,6 +74,7 @@ h2.question{
 #msform fieldset fieldset{
 	box-shadow: none;
 }
+
 .splash {
 	margin-top: 20%;
 }
@@ -83,7 +84,6 @@ h2.question{
 	color: #000;
 	margin-bottom: 6px;
 	position: relative;
-	line-height: 51px;
 }
 .splash h2{
 	font-size: 16px;
@@ -105,10 +105,23 @@ span.logo{
     line-height: 1.3333333;
 }
 .intro{
-	padding-top: 40px;
+	padding-top: 10px;
 }
 .action{
-	padding-top: 80px;
+	padding-top: 10px;
+}
+@media (min-width: 768px) {
+	.intro{
+		padding-top: 40px;
+	}
+	.action{
+		padding-top: 80px;
+	}
+}
+@media (min-width: 992px) {
+	.action{
+		padding-top: 80px;
+	}
 }
 .sponsor{
 	text-align: center;

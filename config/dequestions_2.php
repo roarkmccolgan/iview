@@ -922,7 +922,7 @@ return array(
                                 )
                             ),
                             array(
-                                'label'=>'"Mitglied auf Vorstandsebene, das sich auf Risiko/Einhaltung der Vorschriften/Sicherheit konzentriert',
+                                'label'=>'Mitglied auf Vorstandsebene, das sich auf Risiko/Einhaltung der Vorschriften/Sicherheit konzentriert',
                                 'name'=>'q6.5',
                                 'options'=>array(
                                     array(
@@ -2421,7 +2421,7 @@ return array(
                                 ]
                             ),
                             array(
-                                'label'=>'Wir verwenden hauptsächlich "serienmäßige" Programme von unseren Sicherheitslieferanten.',
+                                'label'=>'Wir verwenden hauptsächlich \"serienmäßige\" Programme von unseren Sicherheitslieferanten.',
                                 'value'=>2,
                                 'checked'=>false,
                                 'position' => [
@@ -2433,7 +2433,7 @@ return array(
                                 ]
                             ),
                             array(
-                                'label'=>'Wir verwenden eine Kombination von spezialisierten Management-Programmen und einigen "serienmäßigen" Programmen.',
+                                'label'=>'Wir verwenden eine Kombination von spezialisierten Management-Programmen und einigen \"serienmäßigen\" Programmen.',
                                 'value'=>3,
                                 'checked'=>false,
                                 'position' => [
@@ -3077,7 +3077,7 @@ return array(
                 'questions' => array(
                     'q19'=>array(
                         'type'=>'groupradio',
-                        'question'=>'"Verwenden Sie Folgendes in Bezug auf die IT-Sicherheit - Reaktion auf Einbruchsaktivitäten?',
+                        'question'=>'Verwenden Sie Folgendes in Bezug auf die IT-Sicherheit - Reaktion auf Einbruchsaktivitäten?',
                         'name'=>'q19',
                         'options'=>array(
                             array(
