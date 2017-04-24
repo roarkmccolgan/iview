@@ -1,35 +1,36 @@
 <?php
-//GDPR
+//SPLUNK
 return array(
-    'title' => 'Title',
-    'sub-title' => 'Sub Title',
-    'stage1' => 'Stage 1: Initial',
-    'stage2' => 'Stage 2: Defined',
-    'stage3' => 'Stage 3: Managed',
-    'stage4' => 'Stage 4: Optimised',
+    'title' => 'IDC\s Security Assessment',
+    'sub-title' => 'How secure is your business?',
+    'stage1' => 'Stage 1: Poor',
+    'stage2' => 'Stage 2: Standard',
+    'stage3' => 'Stage 3: Good',
+    'stage4' => 'Stage 4: Aspirational',
+    'stage4' => 'Stage 5: Best',
     'complete_thankyou' => 'Thank you :Fname,',
     'complete_body' => 'Your custom report will arrive in your inbox soon.<br/>
 Please check in your junk folder if you don\'t receive it within 5 minutes.<br/>
 While you\'re waiting why not share your results and see how your followers measure up?',
-    'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Readiness Assessment Tool for @HP. Interested in your own readiness? ',// http://bit.ly/2gslXEh
+    'complete_tweet' => 'I\'ve just taken the @IDCEMEA Security Assessment Tool for @splunk. Interested? ',// http://bit.ly/2gslXEh
     'email'=>[
-        'subject' => 'IDC\'s GDPR Readiness Assessment',
+        'subject' => 'IDC\'s Security Assessment',
         'hi' => 'Hi :Fname',
-        'body' => 'As promised, here\'s a link to download your GDPR Readiness Assessment. This breaks down your results by category and provides you with actionable recommendations.',
+        'body' => 'As promised, here\'s a link to download your Security Assessment. This breaks down your results by category and provides you with actionable recommendations.',
         'link' => 'Download Report',
-        'extra' => 'Once you\'ve digested the report why not visit <a href="http://www.hp.com" style="color:#0096D6">HP</a>',
+        'extra' => 'Once you\'ve digested the report why not visit <a href="http://www.splunk.com" style="color:#65A637">Splunk</a>',
         'regards' => 'Regards',
         'team' => 'The IDC Team'
     ],
     'introduction' => '
         <p>
-            Thank you for taking part in IDC\'s GDPR Readiness Assessment. This study enables you to measure GDPR compliance readiness in your business, and provides you with some essential guidance in the achieving GDPR compliance.
+            Thank you for taking part in IDC\'s Security Assessment. This study enables you to measure security in your business, and provides you with some essential guidance in the achieving security.
         </p>
         <p>
             The following report provides you with both context, in terms of positioning your organization against your peers, and recommendations on how to progress your organization toward GDPR.
         </p>
         <p>
-            Based on IDC\'s assessment, your organization is at <strong>:result</strong> in terms of its GDPR readiness. 
+            Based on IDC\'s assessment, your organization is at <strong>:result</strong> in terms of its IT Security. 
         </p>
         <p>
             For further insight and detailed recommendations, the report takes you through the components of cloud strategy, delivering an assessment of your stage of maturity as well as individual recommendations on how to improve these areas.
@@ -37,7 +38,7 @@ While you\'re waiting why not share your results and see how your followers meas
     ',
     'introduction-image' => 'report1.jpg',
     'overall' => array(
-        'title'=>'Your Overall GDPR Readiness Assessment is at',
+        'title'=>'Your Overall Security Assessment is at',
         'hidetitle'=>'true',
         'image'=>'',
         'stage1'=>'
@@ -61,9 +62,9 @@ While you\'re waiting why not share your results and see how your followers meas
             </p>
         '
     ),
-    'leadership-and-general-obligations' => array(
-        'title'=>'Leadership and General Obligations',
-        'image'=>'leadership-and-general-obligations.jpg',
+    'security-strategy' => array(
+        'title'=>'Security Strategy',
+        'image'=>'security-strategy.jpg',
         'pb'=>'pb',
         'stage1'=>'
             <ul>
@@ -72,7 +73,7 @@ While you\'re waiting why not share your results and see how your followers meas
                 <li>List item 3</li>
                 <li>List item 4</li>
             </ul>
-            <img src="http://redhat.idcready.net/images/tools/4/leadership-and-general-obligations.jpg" class="right">
+            <img src="http://redhat.idcready.net/images/tools/5/security-strategy.jpg" class="right">
             <p>
                 To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental.
             </p>
@@ -84,7 +85,7 @@ While you\'re waiting why not share your results and see how your followers meas
                 <li>List item 3</li>
                 <li>List item 4</li>
             </ul>
-            <img src="http://redhat.idcready.net/images/tools/4/leadership-and-general-obligations.jpg" class="right">
+            <img src="http://redhat.idcready.net/images/tools/5/security-strategy.jpg" class="right">
             <p>
                 To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental.
             </p>
@@ -96,7 +97,7 @@ While you\'re waiting why not share your results and see how your followers meas
                 <li>List item 3</li>
                 <li>List item 4</li>
             </ul>
-            <img src="http://redhat.idcready.net/images/tools/4/leadership-and-general-obligations.jpg" class="right">
+            <img src="http://redhat.idcready.net/images/tools/5/security-strategy.jpg" class="right">
             <p>
                 To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental.
             </p>
@@ -108,15 +109,27 @@ While you\'re waiting why not share your results and see how your followers meas
                 <li>List item 3</li>
                 <li>List item 4</li>
             </ul>
-            <img src="http://redhat.idcready.net/images/tools/4/leadership-and-general-obligations.jpg" class="right">
+            <img src="http://redhat.idcready.net/images/tools/5/security-strategy.jpg" class="right">
+            <p>
+                To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental.
+            </p>
+        ',
+        'stage5'=>'
+            <ul>
+                <li>List item 1</li>
+                <li>List item 2</li>
+                <li>List item 3</li>
+                <li>List item 4</li>
+            </ul>
+            <img src="http://redhat.idcready.net/images/tools/5/security-strategy.jpg" class="right">
             <p>
                 To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental.
             </p>
         '
     ),
-    'data-rights-and-standards' => array(
+    'incident-detection' => array(
         'title'=> 'Data rights and standards',
-        'image'=>'data-rights-and-standards.jpg',
+        'image'=>'incident-detection.jpg',
         'pb'=>'pb',
         'stage1'=>'
             <ul>
@@ -125,7 +138,7 @@ While you\'re waiting why not share your results and see how your followers meas
                 <li>List item 3</li>
                 <li>List item 4</li>
             </ul>
-            <img src="http://redhat.idcready.net/images/tools/4/data-rights-and-standards.jpg" class="right">
+            <img src="http://redhat.idcready.net/images/tools/5/incident-detection.jpg" class="right">
             <p>
                 To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental.
             </p>
@@ -137,7 +150,7 @@ While you\'re waiting why not share your results and see how your followers meas
                 <li>List item 3</li>
                 <li>List item 4</li>
             </ul>
-            <img src="http://redhat.idcready.net/images/tools/4/data-rights-and-standards.jpg" class="right">
+            <img src="http://redhat.idcready.net/images/tools/5/incident-detection.jpg" class="right">
             <p>
                 To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental.
             </p>
@@ -149,7 +162,7 @@ While you\'re waiting why not share your results and see how your followers meas
                 <li>List item 3</li>
                 <li>List item 4</li>
             </ul>
-            <img src="http://redhat.idcready.net/images/tools/4/data-rights-and-standards.jpg" class="right">
+            <img src="http://redhat.idcready.net/images/tools/5/incident-detection.jpg" class="right">
             <p>
                 To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental.
             </p>
@@ -161,15 +174,27 @@ While you\'re waiting why not share your results and see how your followers meas
                 <li>List item 3</li>
                 <li>List item 4</li>
             </ul>
-            <img src="http://redhat.idcready.net/images/tools/4/data-rights-and-standards.jpg" class="right">
+            <img src="http://redhat.idcready.net/images/tools/5/incident-detection.jpg" class="right">
+            <p>
+                To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental.
+            </p>
+        ',
+        'stage5'=>'
+            <ul>
+                <li>List item 1</li>
+                <li>List item 2</li>
+                <li>List item 3</li>
+                <li>List item 4</li>
+            </ul>
+            <img src="http://redhat.idcready.net/images/tools/5/incident-detection.jpg" class="right">
             <p>
                 To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental.
             </p>
         '
     ),
-    'security' => array(
-        'title'=> 'Security',
-        'image'=>'security.jpg',
+    'incident-response' => array(
+        'title'=> 'incident-response',
+        'image'=>'incident-response.jpg',
         'pb'=>'pb',
         'stage1'=>'
             <ul>
@@ -178,7 +203,7 @@ While you\'re waiting why not share your results and see how your followers meas
                 <li>List item 3</li>
                 <li>List item 4</li>
             </ul>
-            <img src="http://redhat.idcready.net/images/tools/4/security.jpg" class="right">
+            <img src="http://redhat.idcready.net/images/tools/5/incident-response.jpg" class="right">
             <p>
                 To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental.
             </p>
@@ -190,7 +215,7 @@ While you\'re waiting why not share your results and see how your followers meas
                 <li>List item 3</li>
                 <li>List item 4</li>
             </ul>
-            <img src="http://redhat.idcready.net/images/tools/4/security.jpg" class="right">
+            <img src="http://redhat.idcready.net/images/tools/5/incident-response.jpg" class="right">
             <p>
                 To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental.
             </p>
@@ -202,7 +227,7 @@ While you\'re waiting why not share your results and see how your followers meas
                 <li>List item 3</li>
                 <li>List item 4</li>
             </ul>
-            <img src="http://redhat.idcready.net/images/tools/4/security.jpg" class="right">
+            <img src="http://redhat.idcready.net/images/tools/5/incident-response.jpg" class="right">
             <p>
                 To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental.
             </p>
@@ -214,7 +239,19 @@ While you\'re waiting why not share your results and see how your followers meas
                 <li>List item 3</li>
                 <li>List item 4</li>
             </ul>
-            <img src="http://redhat.idcready.net/images/tools/4/security.jpg" class="right">
+            <img src="http://redhat.idcready.net/images/tools/5/incident-response.jpg" class="right">
+            <p>
+                To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental.
+            </p>
+        ',
+        'stage5'=>'
+            <ul>
+                <li>List item 1</li>
+                <li>List item 2</li>
+                <li>List item 3</li>
+                <li>List item 4</li>
+            </ul>
+            <img src="http://redhat.idcready.net/images/tools/5/incident-response.jpg" class="right">
             <p>
                 To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental.
             </p>

@@ -1,0 +1,220 @@
+/*! Place your custom styles here */
+.hero{
+
+}
+.hero .icon{
+	font-size: 20em;
+	color: #6AB361;
+}
+.btn--client .btn__text, .btn--client i{
+	color: #6AB361;
+}
+.btn.btn--client{
+	border-color: #6AB361;
+}
+.btn--xlg {
+  padding-top: 0.58035714em;
+  padding-bottom: 0.58035714em;
+  padding-right: 3.48214286em;
+  padding-left: 3.48214286em;
+}
+/*progressbar*/
+#progressbar {
+	margin-bottom: 20px;
+	overflow: hidden;
+	/*CSS counters to number the steps*/
+	counter-reset: step;
+	text-align: center;
+}
+#progressbar li {
+	list-style-type: none;
+	color: white;
+	text-transform: uppercase;
+	font-size: 9px;
+	float: left;
+	position: relative;
+}
+#progressbar li:before {
+	content: counter(step);
+	counter-increment: step;
+	width: 30px;
+	line-height: 30px;
+	display: block;
+	font-size: 15px;
+	color: #333;
+	background: white;
+	border-radius: 3px;
+	margin: 0 auto 5px auto;
+}
+/*progressbar connectors*/
+#progressbar li:after {
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: white;
+	position: absolute;
+	left: -50%;
+	top: 15px;
+	z-index: -1; /*put it behind the numbers*/
+}
+#progressbar li:first-child:after {
+	/*connector not needed before the first step*/
+	content: none; 
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before,  #progressbar li.active:after{
+	background: #ED1C5F;
+	color: white;
+}
+
+#progressbar ul {
+	display: inline-block;
+}
+#progressbar li ul li {
+	counter-increment: none;
+	display: inline-block;
+	zoom: 1;
+	width: 6px;
+	height: 6px;
+	border: 1px solid #00dc00;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	margin-right: 4px;
+}
+#progressbar li ul li:before{
+	content: none;
+}
+#progressbar li ul li:after{
+	content: none;
+}
+#progressbar li ul li:last-child {
+	margin-right: 0;
+}
+
+#progressbar li ul li.done, 
+#progressbar li ul li.active {
+	background-color: #00dc00;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	opacity: 1;
+}
+
+.process-stepper > li {
+  transition: all .3s ease;
+  display: inline-block;
+  float: left;
+  text-align: center;
+  position: relative;
+}
+.process-stepper > li:before {
+  transition: all .3s ease;
+  content: '';
+  width: 0.92857143em;
+  height: 0.92857143em;
+  background: #ccc;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.92857143em;
+}
+.process-stepper > li:after {
+  transition: all .3s ease;
+  content: '';
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  background: #ccc;
+  top: 5px;
+  left: 0;
+}
+.process-stepper > li:first-child:after,
+.process-stepper > li:last-child:after {
+  width: 50%;
+}
+.process-stepper > li:first-child:after {
+  left: 50%;
+}
+.process-stepper > li.active:before,
+.process-stepper > li.active:after {
+  background: #6AB361;
+}
+.process-stepper > li > span {
+  cursor: default;
+}
+.process-stepper[data-process-steps="6"] > li {
+  width: 16.666666666666667%;
+}
+.process-stepper[data-process-steps="5"] > li {
+  width: 20%;
+}
+.process-stepper[data-process-steps="4"] > li {
+  width: 25%;
+}
+.process-stepper[data-process-steps="3"] > li {
+  width: 33.33333333%;
+}
+.process-stepper[data-process-steps="2"] > li {
+  width: 50%;
+}
+
+.process-stepper li ul li {
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	border: 1px solid #6AB361;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	margin-right: 4px;
+}
+.process-stepper li ul li.done {
+	background-color: #6AB361;
+}
+.process-stepper li ul li:last-child {
+	margin-right: 0;
+}
+.bg--dark .process-stepper li:not(.active):before,
+.bg--dark .process-stepper li:not(.active):after {
+  background: #585858;
+}
+.input-radio.std {
+  display: flex;
+  align-items: flex-start;
+}
+
+.input-radio.std .inner {
+  margin-right: 1em;
+}
+
+.input-radio.std label {
+  flex: 1;
+}
+.error{
+	border: 1px solid #EBA8A8;
+	background: #fff8f8;
+}
+.form-group span{
+	display: none;
+}
+.form-group span.helper{
+	display: initial;
+}
+.form-group.error span{
+	color: white;
+	display: inline-block;
+	border-radius: 3px;
+	padding: 3px;
+	background-color: #c52323;
+	margin-top: 2px;
+}
+ul:last-child {
+    margin-bottom: 1.85714286em;
+}
+/*COMPLETE*/
+.footer-logo{
+	margin-top: 0.6em;
+}

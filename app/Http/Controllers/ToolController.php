@@ -179,7 +179,6 @@ public function run(Request $request, $subdomain)
 
 public function getPage($subdomain, $section=false, $page=false)
 {
-
 	if($section===false || $page===false) return redirect('/');
 	$this->loadQuestions();
 
@@ -207,6 +206,7 @@ public function getPage($subdomain, $section=false, $page=false)
 		'report' => isset($sectionQuestions['report']) ? $sectionQuestions['report']:false,
 		'menu' => $this->menu,
 		'class' => $data['class'],
+		'icon' => isset($data['icon']) ? $data['icon']:false,
 		'section'=>$section,
 		'page'=>$page,
 		'script'=>$script,

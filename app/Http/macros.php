@@ -44,6 +44,42 @@ Form::macro('idcRadio', function($num,$q,$type,$page){
 	return $html;
 });
 
+Form::macro('idcBubblegumRadio', function($num,$q,$type,$page){
+	$errors = session('errors');
+	$html ='';
+	$name = $q['name'];
+	$html.=Form::hidden('question', $name);
+	$question = $q['question'];
+	$selected = isset($q['selected'])? $q['selected']:false;
+	if($selected){
+		if(strpos($selected, "|")!==false){
+			$selected = explode('|', $selected);
+            $selected = $selected[0];
+		}
+	}
+	$class = '';
+	$disabled = 'disabled';
+	foreach ($q['options'] as $key => $optionSet) {
+		$checked = $optionSet['label']==$selected? 'checked':'';
+		$disabled = ($disabled == 'disabled' && $optionSet['label']==$selected) ? '':'disabled';
+		$html.='
+				<div class="col-md-4 mb--1">
+					<div class="input-radio std '.$checked.'">
+						<div class="inner"></div>
+                        <label>'.$optionSet['label'].'</label>                        
+                        <input class="btn-q" type="radio" name="answer" value="'.$optionSet['label'].'|'.$optionSet['value'].'" id="'.$key.'-'.$name.'" '.$checked.' />
+                    </div>					
+				</div>';
+	}
+	$html.='
+		<div class="col-md-12">
+			<div class="mt--1">
+				<button id="next" '.$disabled.' class="btn btn-client pull-right btn-lg next" type="submit">'.Lang::get('general.next').'</button>
+			</div>
+		</div>';
+	return $html;
+});
+
 Form::macro('idcGroup', function($section,$q,$page,$type,$slider=false){
 	//slider is like a a range of values 1-5 $optionSet also has a labels ($optionSet['from'] and $optionSet['to']) like 1 - not likely and 5 - very likely
 	$errors = Session::get('errors');
@@ -86,6 +122,61 @@ Form::macro('idcGroup', function($section,$q,$page,$type,$slider=false){
 	return $html;
 });
 
+Form::macro('idcBubblegumGroup', function($section,$q,$page,$type,$slider=false){
+	//slider is like a a range of values 1-5 $optionSet also has a labels ($optionSet['from'] and $optionSet['to']) like 1 - not likely and 5 - very likely
+	$errors = Session::get('errors');
+	$html ='';
+	$name = $q['name'];
+	$html.=Form::hidden('question', $name);
+	$question = $q['question'];
+	$class = $slider ? 'radioslider':'radiobox';
+	$selected = isset($q['selected'])? $q['selected']:false;
+	$disabled = 'disabled';
+	
+	$html.='';
+	foreach ($q['options'] as $key => $optionSet) {
+			$style = $slider ? 'style="width:'.(99/count($optionSet['options'])).'%"':'';
+			$html.='
+				<div class="col-md-12 groupcheck mb--1">
+					<h4 class="color--primary">'.$optionSet['label'].'</h4>
+					<fieldset>';
+			foreach ($optionSet['options'] as $setkey => $option) {
+				$checked = ($selected[$optionSet['name']][0]==$option['label'].'|'.$option['value']) ? 'checked':'';
+				if(isset($optionSet['from']) && $setkey==0){
+					$html.= '
+						<div class="clearfix">
+							<div class="from pull-left text-center" '.$style.'>'.$optionSet['from'].'</div>
+							<div class="from pull-right text-center" '.$style.'>'.$optionSet['to'].'</div>
+						</div>
+					';
+				}
+				$html.='<div class="'.$class.' input-radio text-center '.$checked.'" '.$style.'>';
+				$html.='<div class="inner"></div>
+                        <label for="'.$setkey.'-'.$optionSet['name'].'">'.$option['label'].'</label>                        
+                        <input class="btn-q" type="radio" name="answer['.$optionSet['name'].']" value="'.$option['label'].'|'.$option['value'].'" id="'.$setkey.'-'.$optionSet['name'].'" '.$checked.' />';
+				$html.='</div>';
+			}
+			$html.='
+					</fieldset>
+				</div>
+			';
+	}
+	$html.='';
+	$currentLocal = App::getLocale();
+	$localQuestions = $currentLocal=='en' ? '' : $currentLocal;
+	$btnsize = '-small';
+	if($localQuestions=='es'){
+		$btnsize = '-small lang';
+	}
+	$html.='
+	<div class="col-md-12">
+			<div class="mt--1">
+				<button id="next" class="btn btn-client pull-right btn-lg next" type="submit">'.Lang::get('general.next').'</button>
+			</div>
+		</div>';
+	return $html;
+});
+
 Form::macro('idcIcon', function($section,$q,$page,$num){
 	$errors = session('errors');
 	$html ='';
@@ -120,6 +211,41 @@ Form::macro('idcButton', function($section,$q,$page){
             <button value="'.$optionSet['label'].'|'.$optionSet['value'].'" type="submit" class="btn-q" name="answer" id="'.$key.'-'.$name.'">'.$optionSet['label'].'</button>';
 	}
 	
+	return $html;
+});
+Form::macro('idcBubblegumButton', function($section,$q,$page){
+	$errors = session('errors');
+	$html ='';
+	$name = $q['name'];
+	$html.=Form::hidden('question', $name);
+	$question = $q['question'];
+	$selected = isset($q['selected'])? $q['selected']:false;
+	if($selected){
+		if(strpos($selected, "|")!==false){
+			$selected = explode('|', $selected);
+            $selected = $selected[0];
+		}
+	}
+	$class = '';
+	$disabled = 'disabled';
+	foreach ($q['options'] as $key => $optionSet) {
+		$checked = $optionSet['label']==$selected? 'checked':'';
+		$disabled = ($disabled == 'disabled' && $optionSet['label']==$selected) ? '':'disabled';
+		$html.='
+				<div class="col-md-4 mb--1">
+					<div class="input-radio input-radio--innerlabel '.$checked.'">
+                        <label>'.$optionSet['label'].'</label>
+                        <div class="inner"></div>
+                        <input class="btn-q" type="radio" name="answer" value="'.$optionSet['label'].'|'.$optionSet['value'].'" id="'.$key.'-'.$name.'" '.$checked.' />
+                    </div>					
+				</div>';
+	}
+	$html.='
+		<div class="col-md-12">
+			<div class="mt--1">
+				<button id="next" '.$disabled.' class="btn btn-client pull-right btn-lg next" type="submit">'.Lang::get('general.next').'</button>
+			</div>
+		</div>';
 	return $html;
 });
 

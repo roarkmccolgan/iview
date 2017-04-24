@@ -1,4 +1,5 @@
 <?php
+//HPGDPR
 return array(
     'leadership-and-general-obligations' => array(
         'class' => 'sec1',

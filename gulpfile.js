@@ -19,11 +19,11 @@ elixir(function(mix) {
     	'vendor/vue.js',
     	'vendor/vue-resource.min.js',
     	'vendor/modernizr.js',
-            'vendor/jquery.js'
+        'vendor/jquery.js'
     ],'public/js/backend.js')
     .scripts([
     	'vendor/grunticon.loader.js',
     	'vendor/modernizr.js',
-            'vendor/jquery.js'
+        'vendor/jquery.js'
     ], 'public/js/tool.js')
 });
