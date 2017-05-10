@@ -45,6 +45,7 @@ Form::macro('idcRadio', function($num,$q,$type,$page){
 });
 
 Form::macro('idcBubblegumRadio', function($num,$q,$type,$page){
+	//$type= 'radio';
 	$errors = session('errors');
 	$html ='';
 	$name = $q['name'];
@@ -52,23 +53,49 @@ Form::macro('idcBubblegumRadio', function($num,$q,$type,$page){
 	$question = $q['question'];
 	$selected = isset($q['selected'])? $q['selected']:false;
 	if($selected){
-		if(strpos($selected, "|")!==false){
-			$selected = explode('|', $selected);
-            $selected = $selected[0];
+		if(is_array($selected)){
+			foreach ($selected as $key => $value) {
+				if(strpos($value, "|")!==false){
+					$valarr = explode('|', $value);
+		            $labelonly[$key] = $valarr[0];
+				}
+			}
+			$selected = $labelonly;
+		}else{
+			if(strpos($selected, "|")!==false){
+				$selected = explode('|', $selected);
+	            $selected = $selected[0];
+			}
 		}
 	}
 	$class = '';
 	$disabled = 'disabled';
 	foreach ($q['options'] as $key => $optionSet) {
-		$checked = $optionSet['label']==$selected? 'checked':'';
+		$checked = '';
+		if($type=='radio' && $selected){
+			$checked = $optionSet['label']==$selected? 'checked':'';
+		}elseif($type=='checkbox' && $selected){
+			$exists = array_search($optionSet['label'], $selected);
+			$checked = $exists !== false ? 'checked':'';
+		}
+		
 		$disabled = ($disabled == 'disabled' && $optionSet['label']==$selected) ? '':'disabled';
+		$name = $type=='checkbox'?'answer[]':'answer';
 		$html.='
-				<div class="col-sm-12">
-					<div class="input-radio std '.$checked.' mb--1">
+				<div class="col-sm-12 '.$type.'_group">
+					<div class="input-'.$type.' std '.$checked.' mb--1">
 						<div class="inner"></div>
-                        <label>'.$optionSet['label'].'</label>                        
-                        <input class="btn-q" type="radio" name="answer" value="'.$optionSet['label'].'|'.$optionSet['value'].'" id="'.$key.'-'.$name.'" '.$checked.' />
+						<label>'.$optionSet['label'].'</label>
+                        <input class="btn-q" type="'.$type.'" name="'.$name.'" value="'.$optionSet['label'].'|'.$optionSet['value'].'" id="'.$key.'-'.$name.'" '.$checked.' />
                     </div>					
+				</div>';
+	}
+	if($type=='checkbox'){
+		$html.='
+				<div class="col-md-12">
+					<div class="mt--1">
+						<button id="next" class="btn btn-client pull-right btn-lg next" type="submit">'.Lang::get('general.next').'</button>
+					</div>
 				</div>';
 	}
 	return $html;

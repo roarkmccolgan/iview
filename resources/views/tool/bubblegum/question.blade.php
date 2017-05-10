@@ -47,12 +47,10 @@
                                         {!!Form::hidden('page', $page)!!}
                                         @foreach ($questions as $num=>$q)
                                             <div class="row">
-                                                @if ($q['type'] == 'radio')
-                                                    {!! Form::idcBubblegumRadio($num,$q,'radio',$page) !!}
+                                                @if ($q['type'] == 'radio' || $q['type'] == 'checkbox')
+                                                    {!! Form::idcBubblegumRadio($num,$q,$q['type'],$page) !!}
                                                 @elseif ($q['type'] == 'slider')
                                                     {!! Form::idcBubblegumGroup($num,$q,$page,'radio',true) !!}
-                                                @elseif ($q['type'] == 'checkbox')
-                                                    {!! Form::idcCheckbox($num,$q,$page) !!}
                                                 @elseif ($q['type'] == 'groupradio')
                                                     {!! Form::idcGroup($num,$q,$page,'radio') !!}
                                                 @elseif ($q['type'] == 'icon')
@@ -215,25 +213,23 @@ var daForm = $('#msform');
         });
     }
 @endif
-if($('label.rel').length){
+if($('.checkbox_group').length){
+    var selected = 0;
+    $(':checkbox').change(function() {
+        if(this.checked) {
+            selected++;
+        }else{
+            selected--;
+        }
+    });
     $('button.next').click(function(e){
-        console.log('fek');
         var title = '{{$heading}}';
-        var sibling = $(this).prev("div.holder");
-        var pos = false;
+        var sibling = $(this).closest("fieldset");
         var parentHeight = sibling.css('height');
-        var num = $('label.rel').length;
-        var selected = 0;
+        var num = $('.checkbox_group').length;
         if(num>0){
-            $(sibling).find('input.chq').each(function( index ) {
-                if($(this).is(':checked')){
-                    console.log($(this));
-                    selected ++;
-                    pos = $(this).parents('label').position();
-                }
-            });
             if(selected>0){
-                $('div.error').fadeOut('fast', function() {
+                $('div#error').fadeOut('fast', function() {
                     this.remove();
                 });
 
@@ -269,11 +265,12 @@ if($('label.rel').length){
                 });
 
                 @endif
+
             }else{
                 e.preventDefault();
                 if(error==false){
                     html = 
-                        '<div class="error" style="padding:0 15px 0 15px;">'+
+                        '<div id="error" class="text-center" style="padding:10px 0;">'+
                             '<span style="color: #ed2024;">{{Lang::get('general.multierror')}}</span>'+
                         '</div>';
                     $(html).hide().appendTo(sibling).fadeIn("fast");

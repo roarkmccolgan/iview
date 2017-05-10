@@ -78,7 +78,7 @@
 	<script src="{{ asset('js/tool.js')}}"></script>
 	<script src="{{ asset('js/templates/'.session('template').'/parallax.js')}}"></script>
 	<script src="{{ asset('js/templates/'.session('template').'/smooth-scroll.min.js')}}"></script>
-	<script src="{{ asset('js/templates/'.session('template').'/scripts.js?an=2')}}"></script>
+	<script src="{{ asset('js/templates/'.session('template').'/scripts.js?an=3')}}"></script>
 	@show
     <div class="device-xs visible-xs"></div>
     <div class="device-sm visible-sm"></div>

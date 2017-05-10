@@ -671,9 +671,9 @@ mr = (function (mr, $, window, document){
             
             var input = checkbox.find('input');
             if (input.prop('checked') === false) {
-                input.prop('checked', true);
+                input.prop('checked', true).change();
             } else {
-                input.prop('checked', false);
+                input.prop('checked', false).change();
             }
             return false;
         });

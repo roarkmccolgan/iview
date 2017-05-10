@@ -957,7 +957,7 @@ return array(
                 'title' => 'Incident Detection',
                 'questions' => array(
                     'q6'=>array(
-                        'type'=>'radio',
+                        'type'=>'checkbox',
                         'question'=>'To what extent will you be investing in the following incident response areas within the next 12 months?',
                         'name'=>'q6',
                         'options'=>array(
@@ -1235,7 +1235,7 @@ return array(
                 'title' => 'Incident Response',
                 'questions' => array(
                     'q13'=>array(
-                        'type'=>'radio',
+                        'type'=>'checkbox',
                         'question'=>'Which of the following have you have deployed to support your incident response capabilities?',
                         'name'=>'q13',
                         'options'=>array(
@@ -1246,22 +1246,22 @@ return array(
                             ),
                             array(
                                 'label'=>'Run books',
-                                'value'=>2,
+                                'value'=>1,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Communications plan',
-                                'value'=>3,
+                                'value'=>1,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Disaster recovery policy',
-                                'value'=>4,
+                                'value'=>1,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Tiger/Go Teams',
-                                'value'=>5,
+                                'value'=>1,
                                 'checked'=>false
                             )
                         )

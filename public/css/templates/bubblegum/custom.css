@@ -231,16 +231,16 @@ body{
 .input-radio--innerlabel.w60 {
 	width: 60%;
 }
-.input-radio.std {
+.input-radio.std, .input-checkbox.std {
   display: flex;
   align-items: flex-start;
 }
 
-.input-radio.std .inner {
+.input-radio.std .inner, .input-checkbox.std .inner {
   margin-right: 1em;
 }
 
-.input-radio.std label {
+.input-radio.std label, .input-checkbox.std label {
   flex: 1;
 }
 .error{
