@@ -7,7 +7,7 @@ return array(
     'stage2' => 'Stage 2: Standard',
     'stage3' => 'Stage 3: Good',
     'stage4' => 'Stage 4: Aspirational',
-    'stage4' => 'Stage 5: Best',
+    'stage5' => 'Stage 5: Best',
     'complete_thankyou' => 'Thank you :Fname,',
     'complete_body' => 'Your custom report will arrive in your inbox soon.<br/>
 Please check in your junk folder if you don\'t receive it within 5 minutes.<br/>

@@ -240,16 +240,102 @@ public function savePage(Request $request, $subdomain, $section=false, $page=fal
 
 		//check if there is a mini report
 		if(null !== session('questions.'.$section.'.sub-report') && session('questions.'.$section.'.sub-report')!==false){
+			
+			$graph = false;
+			if(config('baseline_'.session('product.id').'.'.$section.'.complete.graph')){
+				$graph = config('baseline_'.session('product.id').'.'.$section.'.complete.graph');
+				$chartSettings = [
+					'title' => null,//trans(session('product.alias').'.completecopy.graphtitle')
+					'backgroundColor' => [
+						'fill'=>'transparent'
+					],
+					'vAxis' => [
+						'baselineColor'=>'none',
+						'gridlines'=> [
+							'color'=> 'none'
+						],
+						'format' => '#'
+					],
+					'hAxis' => [
+						
+						'textStyle' => [
+							'fontName' => 'Helvetica-light',
+							/*'fontSize' => 18,*/
+							/*'bold' => true,*/
+							/*'italic' => true,*/
+							// The color of the text.
+							'color' => '#939598',
+							// The color of the text outline.
+							/*'auraColor' => '#d799ae',*/
+							// The transparency of the text.
+							/*'opacity' => 0.8*/
+						]
+					],
+					'colors' => ['#d3e2d7'],
+					'chartArea' => ['width'=>'90%', 'height'=>'80%'],
+					'legend' => [ 'position' => "none" ],
+					/*'events' => [
+						'ready' => 'chartReady'
+					],*/
+					'annotations'=>[
+						'stem'=>[
+							'color'=>'transparent'
+						],
+						'textStyle'=>[
+							/*'fontName'=> 'Times-Roman',
+							*/'fontSize'=> 14,
+							/*'bold'=> true,
+							'italic'=> true,*/
+							// The color of the text.
+							'color'=> '#000000',
+							// The color of the text outline.
+							// 'auraColor'=> '#d799ae',
+							// The transparency of the text.
+							/*'opacity'=> 0.8*/
+						]
+					],
+					/*'isStacked' => true,*/
+					//As a percent, "33%"
+				];
+
+				$sectionGraph = Lava::DataTable();
+				$format = false;
+				if($graph['format']){
+					$func = $graph['format']['type'];
+					$format = Lava::$func($graph['format']['format']);
+				}
+				$sectionGraph->addColumns([
+					['string', $graph['label']],
+					['number', 'Value',$format ? $format: null],
+					]);
+				$sectionGraph->addRoleColumn('string', 'style');
+				$sectionGraph->addRoleColumn('string', 'annotation');
+
+				foreach (config('baseline_'.session('product.id').'.'.$section.'.types') as $stage => $params) {
+					$val = $params[$graph['data']];
+					$sectionGraph->addRow([
+						trans(session('product.alias').'.'.$stage),
+						$val,
+						session('result.'.$section.'.rating')==$stage? config('baseline_'.session('product.id').'.overall.report-settings.color'):null,
+						$val."%"
+					]);
+				}
+
+				$sectionChart = Lava::ColumnChart('section_graph', $sectionGraph, $chartSettings);
+			}
 			$this->loadQuestions();
+			$data = $this->quiz[$section];
 			$this->getCalcResults($section);
 			$menu = $this->menu;
 			$page = $page;
 			$title = session('questions.'.$section.'.pages.page1.title');
 			$rating = trans(session('product.alias').'.'.$this->result[$section]['rating']);
+			$graph = $graph;
+			$icon = isset($data['icon']) ? $data['icon']:false;
 			$ratingClass = 'icon '.$section;
 			$ratingcopy = trans($this->baseline[$section]['types'][$this->result[$section]['rating']]['copy']);
 			$next = (key($questions)==null) ? '/'.session('localeUrl').'quiz/complete': '/'.session('localeUrl').'quiz/'.key($questions).'/page1'; //fix this so a report can be provided at any stage?
-			return view('tool.'.session('template').'.sectionresult',compact(['menu','page','title','section','rating','ratingClass','ratingcopy','next']));
+			return view('tool.'.session('template').'.sectionresult',compact(['menu','page','title','section','rating','graph','icon','ratingClass','ratingcopy','next']));
 		}
 		//dd(session('questions'));
 		//else do carry on or complete
@@ -286,7 +372,7 @@ public function getComplete(Request $request)
 			'hAxis' => [
 				'textStyle' => [
 					'fontName' => 'Helvetica-light',
-					/*'fontSize' => 18,*/
+					'fontSize' => 11,
 					/*'bold' => true,*/
 					/*'italic' => true,*/
 					// The color of the text.
@@ -297,7 +383,7 @@ public function getComplete(Request $request)
 					/*'opacity' => 0.8*/
 				]
 			],
-			'colors' => ['#68aadd'],
+			'colors' => ['#d3e2d7'],
 			'chartArea' => ['width'=>'90%', 'height'=>'80%'],
 			'legend' => [ 'position' => "none" ],
 			/*'events' => [
@@ -339,8 +425,9 @@ public function getComplete(Request $request)
 
 		foreach (config('baseline_'.session('product.id').'.overall.types') as $stage => $params) {
 			$val = $params[$graph['data']];
+			$stagename = trans(session('product.alias').'.'.$stage);
 			$completeGraph->addRow([
-				trans(session('product.alias').'.'.$stage),
+				substr_replace($stagename, ':', strpos($stagename, ':'), 1),				
 				$val,
 				session('result.overall.rating')==$stage? config('baseline_'.session('product.id').'.overall.report-settings.color'):null,
 				$val."%"

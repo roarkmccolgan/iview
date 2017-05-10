@@ -677,10 +677,12 @@ mr = (function (mr, $, window, document){
             }
             return false;
         });
-
         //////////////// Radio Buttons
-
+        $('input[type=radio]').on('click',function(e){
+            e.stopPropagation();
+        })
         $('.input-radio').on('click', function(e) {
+
             if ($(e.target).is('input')){return;}
             var radio = $(this),
                 name  = radio.find('input[type=radio]').attr('name');

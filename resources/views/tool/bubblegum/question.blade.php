@@ -9,13 +9,15 @@
 
 @section('main')
     <div class="main-container">
-        <section class="">
+        <section class="unpad--bottom">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-10 col-sm-offset-1">
-                        <div class="mt--3">
+                    <div class="frame clearfix top">
+                        <div class="col-sm-3 col-sm-offset-1 mt--2">
                             <h4>{{Lang::get('general.'.session('product.id').'title')}}</h4>
-                        <!-- progressbar -->
+                        </div>
+                        <div class="col-sm-8 mt--2">
+                            <!-- progressbar -->
                             <ul class="process-stepper clearfix mb--1" data-process-steps="{{ count($menu )}}">
                             @foreach ($menu as $key=>$pages)
                                 @if($pages['display'])
@@ -31,16 +33,15 @@
                             @endforeach
                             </ul>
                         </div>
-                    </div>
-                    {{-- <div class="col-sm-6 col-md-5"> <div class="background-image-holder"> <img src="{{asset('images/tools/'.$tool->id.'/homepage.jpg')}}" alt=""> </div> </div> --}}
-                    <div id="content" class="col-sm-6 col-sm-push-5">
+                        {{-- <div class="col-sm-6 col-md-5"> <div class="background-image-holder"> <img src="{{asset('images/tools/'.$tool->id.'/homepage.jpg')}}" alt=""> </div> </div> --}}
+                        <div id="content" class="col-sm-6 col-sm-push-5">
                             <!-- end progressbar -->
                             @foreach ($questions as $question)
                                 {!! Form::open(array('url' => session('localeUrl').'quiz/'.$section.'/page'.$page,'id'=>'msform','class'=>'')) !!}
                                     <!-- fieldsets -->
                                     <fieldset class="" id="formbody">
                                         <div id="mask"></div>
-                                        <h2 class="question">{!!$question['question']!!}</h2>
+                                        <h3 class="question">{!!$question['question']!!}</h3>
                                         {!! Form::errors($errors) !!}
                                         {!!Form::hidden('section', $section)!!}
                                         {!!Form::hidden('page', $page)!!}
@@ -66,11 +67,12 @@
                                     </fieldset>
                                 {!! Form::close() !!}
                             @endforeach  
-                    </div>
-                    <div class="col-sm-3 col-sm-pull-6 col-sm-offset-1 text-center">
-                        <div class="hero">
-                            <i class="icon {{ $icon }}" title=""></i>
-                        </div>    
+                        </div>
+                        <div class="col-sm-3 col-sm-pull-6 col-sm-offset-1 text-center">
+                            <div class="hero">
+                                <i class="icon {{ $icon }}" title=""></i>
+                            </div>    
+                        </div>
                     </div>
                 </div>
             </div>
@@ -80,9 +82,10 @@
 
 @section('pagescript')
 @parent
+<script src="{{{ asset('js/templates/'.session('template').'/unslider-master/dist/js/unslider-min.js')}}}"></script>
 <script type="text/javascript">var error = false;</script>
 <script src="{{{ asset('js/plugins.js')}}}"></script>
-<script src="{{{ asset('js/templates/'.session('template').'/main.js')}}}"></script>
+<script src="{{{ asset('js/templates/'.session('template').'/main.js?i=2')}}}"></script>
 @if ($script)
 <script>
 $(function() {
@@ -94,7 +97,7 @@ $(function() {
 @endif
 <script>
 $('#mask').hide(); //hidemask
-
+var daForm = $('#msform');
 @if ($report)
     $.ajaxSetup({
         headers: {
@@ -106,7 +109,6 @@ $('#mask').hide(); //hidemask
             url: '/api/results/{{$section}}',
         });
     }
-    var daForm = $('#msform');
     daForm.click(function(e){
         e.preventDefault();
         var parent = $('formbody');
@@ -151,51 +153,66 @@ $('#mask').hide(); //hidemask
     });
 @else
     if($('.groupcheck').length){ //radio button sets
-        $('#next').click(function(e){
-            e.preventDefault();
-            var that = this;
-            var valid = true;
-            var checkset = false;
-            jQuery.each($('.groupcheck'), function( i, item ) {
-                $(item).removeClass('error');
-                if(!$(item).find(':radio:checked').val()){
-                    checkset = item;
-                    valid = false;
-                    return false;
-                }
-            });
-            if(!valid){
-                $(checkset).addClass('error');
-                $('html, body').animate({
-                    scrollTop: $(checkset).offset().top-20
-                }, 500);
-            }else{
-                $('#mask').show();
+        var complete = false;
+        var slider = $('.optionslider').unslider({
+            /*nav: false,*/
+            arrows: false,
+            infinite: false,
+        });
+        slider.height('initial');
+        slider.on('unslider.change', function(event, index, slide) {
+            if(parseInt(index)+1 == slider.find('li').length){
+                complete = true;
+            }
+        });
+        $('.input-radio').on('click', function(e) {
+            if(!complete){
+                $(this).closest('div.groupcheck').removeClass('error');
                 setTimeout(
                     function() {
-                        $(that).unbind('click').trigger('click');
+                        slider.unslider('next');
                     },
-                    800);
+                    400);
+            }else{
+                var valid = true;
+                var checkset = false;
+                setTimeout(
+                    function() {
+                        jQuery.each($('.groupcheck'), function( i, item ) {
+                            $(item).removeClass('error');
+                            if(!$(item).find(':radio:checked').val()){
+                                checkset = item;
+                                valid = false;
+                                return false;
+                            }
+                        });
+                        if(!valid){
+                            complete = false;
+                            $(checkset).addClass('error');
+                            $liparent = $(checkset).closest('li');
+                            slider.unslider('animate:'+slider.find('li').index($liparent));
+
+                            /*$('html, body').animate({
+                                scrollTop: $(checkset).offset().top-20
+                            }, 500);*/
+                        }else{
+                            $('#mask').show();
+                            daForm.submit();
+                        }
+                    },
+                    100);
+                        
             }
         });
     }else{
-        $('.input-radio').on('click', function(e) {
-            $('.btn.next').attr('disabled',false);
+        $('.input-radio').click(function(e) {
+            setTimeout(
+                function() {
+                    $('#mask').show();
+                    daForm.submit();
+                },
+                100);
         });
-        $('button.btn-q').click(function(e){
-                e.preventDefault();
-                var that = this;
-                $(this).addClass('check');
-                jQuery.each($('button.btn-q'), function( i, item ) {
-                    if(that!=item) $(item).prop( "disabled", true );
-                });
-                $('#mask').show();
-                setTimeout(
-                    function() {
-                        $(that).unbind('click').trigger('click');
-                    },
-                    500);
-            })
     }
 @endif
 if($('label.rel').length){

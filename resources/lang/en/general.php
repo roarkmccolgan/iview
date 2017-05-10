@@ -306,23 +306,62 @@ Complete the IDC Cyber Risk Assessment Tool to find out more about how ready you
     '5sponsors'=>'Splunk',
     '5title'=>'IDC\'s Security Assessment',
     '5sub-title'=>'How secure is your business?',
-    '5landing'=>'<p>Simply answer a few questions about your stance on security and we will send you a customised report that positions your business in relation to over 500 similar organizations, and provides you with some essential guidance on what steps to take.</p>',
+    '5landing'=>'
+    <p>
+        Security is grabbing headline attention, however only the most serious and high profile breaches make the headline news, in reality, companies are under constant attack.
+    </p>
+    <p>
+        How does your security operation stand up to today\'s ever increasing threats? Complete IDC\'s Security Response Readiness assessment to find out how you stack up against your peers and receive essential guidance on what you should be doing to improve.
+    </p>',
     '5startbut'=>'Start Here',
+
+    '5security-strategy-poor-txt'=>'',
+    '5security-strategy-standard-txt'=>'',
+    '5security-strategy-good-txt'=>'',
+    '5security-strategy-aspirational-txt'=>'',
+    '5security-strategy-best-txt'=>'',
+
+    '5incident-detection-poor-txt'=>'',
+    '5incident-detection-standard-txt'=>'',
+    '5incident-detection-good-txt'=>'',
+    '5incident-detection-aspirational-txt'=>'',
+    '5incident-detection-best-txt'=>'',
+
+    '5incident-response-poor-txt'=>'',
+    '5incident-response-standard-txt'=>'',
+    '5incident-response-good-txt'=>'',
+    '5incident-response-aspirational-txt'=>'',
+    '5incident-response-best-txt'=>'',
+
     '5poor'=>'Poor', //reactive
-    '5poortxt'=>"Organizations at this stage in their security process tend to be providing security at the request of their customers, or as a vendor reseller. As a result, fees are derived from referrals or from resale, and organizations are generally focused on project revenues, rather than longer-term recurring revenue streams. Organizations at this stage in their security strategy are yet to embrace a security future and as a result may struggle to generate profits in this area. There is no defined vision for security, but there is time to make this transition if key decision makers act now.",
+    '5poortxt'=>"Organizations at this stage tend to have no perceived risk of a breach. Security is reactive and there is no incident response plan in place. 
+Organizations at this stage are often in crisis security mode and in denial of breaches. 
+Resourcing of incident response is unplanned and mostly from internal resources",
     '5poortweet' => "I took the @splunk Security Assessment and it's shown me where I can improve. Interested?",
     '5standard'=>'Standard',
-    '5standardtxt'=>"Organizations at this stage in their security process tend to be providing security at the request of their customers, or as a vendor reseller. As a result, fees are derived from referrals or from resale, and organizations are generally focused on project revenues, rather than longer-term recurring revenue streams. Organizations at this stage in their security strategy are yet to embrace a security future and as a result may struggle to generate profits in this area. There is no defined vision for security, but there is time to make this transition if key decision makers act now.",
+    '5standardtxt'=>"Organizations at this stage tend to have limited resources to find breaches. There is a basic incident response partner, but are used on an ad hoc basis.
+Resourcing for incident response is planned, mostly using internal resources. 
+Solutions to detect incidents are mainly solutions and processes developed in-house. ",
     '5standardtweet' => "I took the @splunk Security Assessment and my company is on the right track. See how your business does... http://bit.ly/1Y6JAqa",
     '5good'=>'Good',
-    '5goodtxt'=>"Organizations at this stage in their security process tend to be providing security at the request of their customers, or as a vendor reseller. As a result, fees are derived from referrals or from resale, and organizations are generally focused on project revenues, rather than longer-term recurring revenue streams. Organizations at this stage in their security strategy are yet to embrace a security future and as a result may struggle to generate profits in this area. There is no defined vision for security, but there is time to make this transition if key decision makers act now.",
+    '5goodtxt'=>"Organizations at this stage recognize that this is an era of inevitable breach. There is an incident response partner on call with prepaid blocks of time. 
+Formal cyber-readiness plans are in place, but not often tested. Resourcing for incident response is planned using both internal and external resources. 
+Basic analytics are drawn from SIEM feeds and there is some integration between security products, probably custom-built. 
+Good understanding of risk posture",
     '5goodtweet' => "I took the @splunk Security Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
     '5aspirational'=>'',
-    '5aspirationaltxt'=>"Organizations at this stage in their security process tend to be providing security at the request of their customers, or as a vendor reseller. As a result, fees are derived from referrals or from resale, and organizations are generally focused on project revenues, rather than longer-term recurring revenue streams. Organizations at this stage in their security strategy are yet to embrace a security future and as a result may struggle to generate profits in this area. There is no defined vision for security, but there is time to make this transition if key decision makers act now.",
+    '5aspirationaltxt'=>"Organizations at this stage assumes breach. There are a panel of incident response specialists on call. 
+There is a formal incident response plan that is tested annually. 
+Resourcing for incident response is planned using mainly external resources. 
+Incident response plans are standardized and based on formal processes and run books.",
     '5aspirationaltweet' => "I took the @splunk Security Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
-    'best'=>'Best',
-    'besttxt'=>"Organizations at this stage in their security process tend to be providing security at the request of their customers, or as a vendor reseller. As a result, fees are derived from referrals or from resale, and organizations are generally focused on project revenues, rather than longer-term recurring revenue streams. Organizations at this stage in their security strategy are yet to embrace a security future and as a result may struggle to generate profits in this area. There is no defined vision for security, but there is time to make this transition if key decision makers act now.",
-    'besttweet' => "I took the @splunk Security Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    '5best'=>'Best',
+    '5besttxt'=>"Organizations at this stage are proactive breach hunters. They focus on best practices and continuous improvement. 
+An incident response plan is in place and tested regularly. This is supported by a retained incident response team (either in-house or third party). Legal agreements are in place to share incident response data. 
+Resourcing for incident response is planned using internal staff and external resources on retainer with regular planning meetings. 
+A unified and integrated security management solution provides the organization with a holistic view of security. 
+Risk is a key driver for assessment and mitigation processes.",
+    '5besttweet' => "I took the @splunk Security Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
     '5send'=>'We can send you the full results directly to your mailbox',
     '5fullreport'=>'For the full report with essential guidance to get your businesses security in check, just fill in your details.',
     '5provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
@@ -339,6 +378,8 @@ Complete the IDC Cyber Risk Assessment Tool to find out more about how ready you
     'youre'=>'You\'re ',
     'your'=>'Your',
     'areat'=>'are at',
+    'isat'=>'is at',
+    'stage'=>'stage',
     'fname'=>'First Name',
     'sname'=>'Last Name',
     'email'=>'Email Address',
@@ -381,6 +422,7 @@ Complete the IDC Cyber Risk Assessment Tool to find out more about how ready you
     'errorEmail'=>'Enter a valid email address',
     'errorCompany'=>'Enter your company name',
     'errorTitle'=>'Enter your title',
+    'errorPhone'=>'Enter your phone number',
     'errorCountry'=>'Please select your country',
     'errorNumber'=>'Please enter a valid phone number',
     'errorRelationship'=>'Please select Relationship Type',
