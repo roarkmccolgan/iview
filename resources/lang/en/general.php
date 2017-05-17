@@ -69,7 +69,7 @@ Complete the IDC Cyber Risk Assessment Tool to find out more about how ready you
     '2send'=>'We can send you the full results directly to your mailbox',
     '2fullreport'=>'Would you like the full report that provides you with some essential guidance in the development of your cloud business.?',
     '2provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
-    '2byreg'=>'By registering with IDC, you accept our <a href="/privacy" target="_blank">Privacy Policy</a> and that of <a href="https://www.fireeye.com/company/privacy.html" target="_blank">FireEye</a> and also <a href="http://www.dxc.technology/privacy" target="_blank">DXC Technology</a>. The information we collect will be shared with FireEye and HPE for the purpose of direct marketing',
+    '2byreg'=>'By registering with IDC, you accept our <a href="/privacy" target="_blank">Privacy Policy</a> and that of <a href="https://www.fireeye.com/company/privacy.html" target="_blank">FireEye</a> and also <a href="http://www.dxc.technology/privacy" target="_blank">DXC Technology</a>. The information we collect will be shared with FireEye and DXC Technology for the purpose of direct marketing',
     '2wait'=>'While you\'re waiting why not tweet your results and see how your colleagues measure up?',
 
     //Red Hat Cloud id 3
