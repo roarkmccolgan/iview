@@ -19,22 +19,17 @@ return array(
                         'name'=>'s1',
                         'options'=>array(
                             array(
-                                'label'=>'Fewer than 500',
-                                'value'=>1,
-                                'checked'=>false
-                            ),
-                            array(
                                 'label'=>'500 to 999',
                                 'value'=>1,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'1,000 to 2,499',
+                                'label'=>'1000 to 4999',
                                 'value'=>1,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'2,500 or more',
+                                'label'=>'5000+',
                                 'value'=>1,
                                 'checked'=>false
                             )
@@ -100,10 +95,6 @@ return array(
                         'type'=>'slider',
                         'question'=>'To what extent are the following driving your investments in IT security? <br/><span class="small">Please use a rating where 1 = not at all and 5 = very significant driver</span>',
                         'name'=>'q2',
-                        'calc'=>array(
-                            'type'=>'average',
-                            'value'=>false
-                        ),
                         'options'=>array(
                             array(
                                 'label'=>'Our understanding of the threat landscape',
@@ -464,10 +455,6 @@ return array(
                         'type'=>'slider',
                         'question'=>'What types of advanced security capabilities do you use to detect threats or breaches? <br/><span class="small">Please use a rating where 1 = not at all and 5 = we use this extensively</span>',
                         'name'=>'q4',
-                        'calc'=>array(
-                            'type'=>'average',
-                            'value'=>false
-                        ),
                         'options'=>array(
                             array(
                                 'label'=>'Machine learning',

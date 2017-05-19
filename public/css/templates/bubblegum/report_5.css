@@ -1,0 +1,29 @@
+body{
+	margin: 0 20mm;
+}
+* { 
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 11pt;
+	color: #666666;
+}
+h2{
+	font-weight: 300;
+	color: #003F7D;
+	font-size: 14pt;
+}
+.spacer{
+	height: 5mm;
+}
+.pb {
+	page-break-before: always;
+}
+strong.blue{
+	color: #003F7D;
+}
+ul, ul li{
+	color: #003F7D;
+	margin-bottom: 1mm;
+}
+ul.primary {
+	font-weight: bold;
+}

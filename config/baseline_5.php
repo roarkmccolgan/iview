@@ -3,6 +3,12 @@
 return array(
     'overall' => array(
         'baseline' => 21.5,
+        'benchmark-country-en' => 3,
+        'benchmark-country-fr' => 2,
+        'benchmark-country-de' => 3,
+        'benchmark-size-500-to-999' => 2,
+        'benchmark-size-1000-to-4999' => 3,
+        'benchmark-size-5000+' => 3,
         'complete' => [
             'graph' => [
                 'label' => 'Stage',
@@ -18,11 +24,13 @@ return array(
         'report-settings' => [
             'header'=>true,
             'footer'=>true,
-            'graph'=>true,
+            'graph'=>false,
             'pb'=>false,
             'designline'=>false,
             'color'=>'#6AB361',
             'pageimage'=>false,
+            'margin-top'=>48,
+            'header-spacing'=>0
         ],
         'types' => array(
             'stage1' => array(
@@ -61,10 +69,16 @@ return array(
                 'benchmark' => 21,
             )
         ),
-        'tweet' => false
+        'tweet' => true
     ),
     'security-strategy' => array(
         'baseline' => 15.363,
+        'benchmark-country-en' => 3,
+        'benchmark-country-fr' => 3,
+        'benchmark-country-de' => 3,
+        'benchmark-size-500-to-999' => 3,
+        'benchmark-size-1000-to-4999' => 3,
+        'benchmark-size-5000+' => 3,
         'complete' => [
             'graph' => [
                 'label' => 'Stage',
@@ -80,7 +94,7 @@ return array(
         'report-settings' => [
             'header'=>true,
             'footer'=>true,
-            'graph'=>true,
+            'graph'=>false,
             'pb'=>true,
             'designline'=>true,
             'color'=>'#6AB361',
@@ -129,6 +143,12 @@ return array(
     ),
     'incident-detection' => array(
         'baseline' => 24.046,
+        'benchmark-country-en' => 2,
+        'benchmark-country-fr' => 2,
+        'benchmark-country-de' => 2,
+        'benchmark-size-500-to-999' => 1,
+        'benchmark-size-1000-to-4999' => 2,
+        'benchmark-size-5000+' => 2,
         'complete' => [
             'graph' => [
                 'label' => 'Stage',
@@ -144,7 +164,7 @@ return array(
         'report-settings' => [
             'header'=>true,
             'footer'=>true,
-            'graph'=>true,
+            'graph'=>false,
             'pb'=>true,
             'designline'=>true,
             'color'=>'#6AB361',
@@ -193,6 +213,12 @@ return array(
     ),
     'incident-response' => array(
         'baseline' => 10,917,
+        'benchmark-country-en' => 3,
+        'benchmark-country-fr' => 3,
+        'benchmark-country-de' => 3,
+        'benchmark-size-500-to-999' => 3,
+        'benchmark-size-1000-to-4999' => 3,
+        'benchmark-size-5000+' => 3,
         'complete' => [
             'graph' => [
                 'label' => 'Stage',
@@ -208,7 +234,7 @@ return array(
         'report-settings' => [
             'header'=>true,
             'footer'=>true,
-            'graph'=>true,
+'graph'=>false,
             'pb'=>true,
             'designline'=>true,
             'color'=>'#6AB361',

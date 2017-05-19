@@ -50,7 +50,7 @@
                                                             case 'text':
                                                         @endphp
                                                             <label>{!!trans('general.'.$fieldKey)!!}{{$field['required'] ? '*':''}}</label>
-                                                            <input type="text" name="name" class="{{$field['required'] ? 'validate-required':''}}" value="{{isset($source[$fieldKey]) ? $source[$fieldKey]:''}}" name="{{$fieldKey}}" />
+                                                            <input type="text" name="{{$fieldKey}}" class="{{$field['required'] ? 'validate-required':''}}" value="{{isset($source[$fieldKey]) ? $source[$fieldKey]:''}}" name="{{$fieldKey}}" />
                                                             <span>{!!trans('general.'.$field['error'])!!}</span>
                                                         @php
                                                             break;
@@ -122,8 +122,8 @@
                                                 </div>
                                                 
                                                 <div class="col-sm-12 boxed">
-                                                    <!-- button id="submitBut" type="submit" class="btn btn--primary type--uppercase">{!!trans('general.emailreport')!!}</button-->
-                                                    <a id="submitBut" href="/demo/splunk_assessment_report.pdf" target="_blank" class="btn btn--primary color--white type--uppercase">{!!trans('general.emailreport')!!}</a>
+                                                    <button id="submitBut" type="submit" class="btn btn--primary type--uppercase">{!!trans('general.emailreport')!!}</button>
+                                                    {{-- <a id="submitBut" href="/demo/splunk_assessment_report.pdf" target="_blank" class="btn btn--primary color--white type--uppercase">{!!trans('general.emailreport')!!}</a> --}}
                                                 </div>
                                             {{ Form::close() }}
                                         </div>

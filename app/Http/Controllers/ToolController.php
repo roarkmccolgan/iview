@@ -427,7 +427,7 @@ public function getComplete(Request $request)
 			$val = $params[$graph['data']];
 			$stagename = trans(session('product.alias').'.'.$stage);
 			$completeGraph->addRow([
-				substr_replace($stagename, ':', strpos($stagename, ':'), 1),				
+				$stagename,/*substr_replace($stagename, ':', strpos($stagename, ':'), 1)*/				
 				$val,
 				session('result.overall.rating')==$stage? config('baseline_'.session('product.id').'.overall.report-settings.color'):null,
 				$val."%"
