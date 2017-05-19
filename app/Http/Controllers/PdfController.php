@@ -150,6 +150,7 @@ class PdfController extends Controller
 					'result'=>trans(session('product.alias').'.'.session('result.overall.rating')),
 					'percent'=>config('baseline_'.session('product.id').'.overall.types.'.session('result.overall.rating').'.benchmark'),
 					'ordinal'=>$ordinal,
+					'number'=>$number,
 					'stage'=>$number,
 					'overalllang'=>$overalllang,
 					'overallsize'=>$overallsize,
