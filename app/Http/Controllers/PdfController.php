@@ -358,6 +358,7 @@ class PdfController extends Controller
 				$vars['sections'][] = [
 					'title' => trans(session('product.alias').'.'.$section.'.title'),
 					'hidetitle' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.hide-title'),
+					'hiderating' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.hide-rating',false),
 					'introduction' => Lang::has(session('product.alias').'.'.$section.'.introduction') ? trans(session('product.alias').'.'.$section.'.introduction',['result'=>trans(session('product.alias').'.'.session('result.'.$section.'.rating')),'benchmark'=>config('baseline_'.session('product.id').'.'.$section.'.types.'.session('result.'.$section.'.rating').'.benchmark')]):false,
 					'seckey' => $section,
 					'pageimage' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.pageimage') ? trans(session('product.alias').'.'.$section.'.pageimage'):false,
@@ -373,13 +374,14 @@ class PdfController extends Controller
 
 				];
 				$headervars['page'.$count] = trans(session('product.alias').'.'.$section.'.title');
-				$headervars['page_offest'] = 1;
+				$headervars['page_offset'] = config('baseline_'.session('product.id').'.overall.report-settings.page-offset',1);
 				$count++;
 			}
 
 			$vars['introduction'] = Lang::has(session('product.alias').'.introduction') ? trans(session('product.alias').'.introduction',
 			[
-				'result'=>trans(session('product.alias').'.'.session('result.overall.rating'))
+				'result'=>trans(session('product.alias').'.'.session('result.overall.rating')),
+				'stage'=>session('result.overall.rating'),
 			]) : false;
 			$vars['introImage'] = Lang::has(session('product.alias').'.introduction-image') ? trans(session('product.alias').'.introduction-image') : false;
 			$vars['introRating'] = trans(session('product.alias').'.'.session('result.overall.rating'));

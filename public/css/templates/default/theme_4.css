@@ -50,7 +50,7 @@ h2.question{
 }
 /*form styles*/
 #msform {
-	margin: 10px auto 30px auto;
+	margin: 5px auto 30px auto;
 	text-align: left;
 	position: relative;
 }
@@ -254,90 +254,42 @@ span.instruct {
 	margin-bottom: 5px;
 	margin-top: 0px;
 }
-/*progressbar*/
+
 #progressbar {
-	margin-bottom: 20px;
-	overflow: hidden;
-	/*CSS counters to number the steps*/
-	counter-reset: step;
-	text-align: center;
+    text-align: justify;
+    font-size:0;
+    margin-bottom: 20px;
+}
+#progressbar:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
 }
 #progressbar li {
-	list-style-type: none;
-	color: white;
-	text-transform: uppercase;
-	font-size: 9px;
-	float: left;
-	position: relative;
+	border: 1px solid #FFF;
+	color: #FFF;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 3px;
+    padding: 4px;
+    padding-top: 1px;
+    text-align: center;
+    height: 25px;
+    min-width: 25px;
+    margin-top: 5px;
 }
-#progressbar li:before {
-	content: counter(step);
-	counter-increment: step;
-	width: 30px;
-	line-height: 30px;
-	display: block;
-	font-size: 15px;
-	color: #333;
-	background: white;
-	border-radius: 3px;
-	margin: 0 auto 5px auto;
-}
-/*progressbar connectors*/
-#progressbar li:after {
-	content: '';
-	width: 100%;
-	height: 2px;
-	background: white;
-	position: absolute;
-	left: -50%;
-	top: 15px;
-	z-index: -1; /*put it behind the numbers*/
-}
-#progressbar li:first-child:after {
-	/*connector not needed before the first step*/
-	content: none; 
-}
-/*marking active/completed steps green*/
-/*The number of the step and the connector before it = green*/
-#progressbar li.active:before,  #progressbar li.active:after{
-	background: #0096D6;
-	color: white;
+#progressbar li.active {
+	color: #FFF;
+    background-color: #0096D6;
 }
 
-#progressbar ul {
-	display: inline-block;
-}
-#progressbar li ul li {
-	counter-increment: none;
-	display: inline-block;
-	zoom: 1;
-	width: 6px;
-	height: 6px;
-	border: 1px solid #0096D6;
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
-	border-radius: 6px;
-	margin-right: 4px;
-}
-#progressbar li ul li:before{
-	content: none;
-}
-#progressbar li ul li:after{
-	content: none;
-}
-#progressbar li ul li:last-child {
-	margin-right: 0;
+#progressbar a:link {
+    display: block;
+    color: white;
+    padding: 1em 0;
 }
 
-#progressbar li ul li.done, 
-#progressbar li ul li.active {
-	background-color: #0096D6;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-	filter: alpha(opacity=100);
-	-moz-opacity: 1;
-	-khtml-opacity: 1;
-	opacity: 1;
-}
+
 /*COMPLETE*/
 form.clearfix label{
 	color: #0096D6;
@@ -489,7 +441,7 @@ form.clearfix label{
 }
 /*mask*/
 #mask{
-	background: rgba(0,0,0,0.3); width: 100%; height: 90%; position: absolute; left: 0; top: 67px; z-index: 2
+	background: rgba(255,255,255,0.8); width: 100%; height: 100%; position: absolute; left: 0; top: 67px; z-index: 2
 }
 #mask:before{
 	position: absolute;

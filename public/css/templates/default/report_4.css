@@ -5,7 +5,7 @@
 .header h1, .header h2{
 	color: #fff;
 	font-size: 24px;
-	font-family: helvetica, sans;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: lighter;
 	margin: 0;
 	padding-left: 20mm;
@@ -14,7 +14,7 @@
 	font-size: 20px;
 }
 h2,h3,h5{
-	font-family: Arial;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: lighter;
 	font-size: 17pt;
 	color: #003F7D;
@@ -34,20 +34,20 @@ h5{
 	margin-bottom: 0;
 }
 p{
-	font-family: Arial;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 10pt;
 	color: #686868;
 	line-height: 13pt;
 	margin-top: 1mm;
 }
 li{
-	font-family: Arial;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 10pt;
 	line-height: 16pt;
 	color: #003F7D;
 }
 .spacer{
-	height: 5mm;
+	height: 3mm;
 
 }
 .pb {

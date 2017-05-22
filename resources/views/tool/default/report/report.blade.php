@@ -43,7 +43,11 @@
 			@if($section['hidetitle'])
 			<h2 class="{{$section['seckey']}}">{{$section['title']}}</h2>
 			@endif
-			<h4>{{$section['rating']}}</h4>
+			@if($section['hiderating']!=true)
+				<h4>{{$section['rating']}}</h4>
+			@else
+				<div class="spacer"></div>
+			@endif
 			@if($section['introduction'])
 			{!!$section['introduction']!!}
 			@endif

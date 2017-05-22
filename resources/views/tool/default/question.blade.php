@@ -28,21 +28,42 @@
 
                 @foreach ($questions as $question)
                     {!! Form::open(array('url' => session('localeUrl').'quiz/'.$section.'/page'.$page,'id'=>'msform','class'=>'')) !!}
-                        <!-- progressbar -->
-                        <ul id="progressbar">
-                        @foreach ($menu as $key=>$pages)
-                            @if($pages['display'])
-                            <li class="{{$pages['class']}} {{$pages['complete'] || $key==$section ? 'active':''}}" style="width: {{100/count($menu)}}%">
-                                <!-- {{$key}} -->
-                                <ul>
-                                @foreach ($pages['pages'] as $pkey => $qpage)
-                                    <li class="{{$qpage['done'] || ($pkey == 'page'.$page && $key==$section)? 'done':''}}"></li>
-                                @endforeach
-                                </ul>
-                            </li>
-                            @endif
-                        @endforeach
-                        </ul>
+                        @if(session('product.id')==4)
+                            <!-- progressbar -->
+                            <ul id="progressbar">
+                            <?php
+                            $count = 0;
+                            ?>
+                            @foreach ($menu as $key=>$pages)
+                                @if($pages['display'])
+                                    @foreach ($pages['pages'] as $pkey => $qpage)
+                                        <?php
+                                        $count++;
+                                        ?>
+                                        <li class="{{$qpage['done'] || ($pkey == 'page'.$page && $key==$section)? 'active':''}}">
+                                            {{$count}}
+                                        </li>
+                                    @endforeach
+                                @endif
+                            @endforeach
+                            </ul>
+                        @else
+                            <!-- progressbar -->
+                            <ul id="progressbar">
+                            @foreach ($menu as $key=>$pages)
+                                @if($pages['display'])
+                                <li class="{{$pages['class']}} {{$pages['complete'] || $key==$section ? 'active':''}}" style="width: {{100/count($menu)}}%">
+                                    <!-- {{$key}} -->
+                                    <ul>
+                                    @foreach ($pages['pages'] as $pkey => $qpage)
+                                        <li class="{{$qpage['done'] || ($pkey == 'page'.$page && $key==$section)? 'done':''}}"></li>
+                                    @endforeach
+                                    </ul>
+                                </li>
+                                @endif
+                            @endforeach
+                            </ul>
+                        @endif
                         <!-- fieldsets -->
                         <fieldset class="clearfix silverStone" id="formbody">
                             <div id="mask"></div>
@@ -98,7 +119,7 @@ jQuery(window).on("beforeunload", function(event){
       return "Are you sure you would like to leave this page? Your answers for this page will be lost";
 });
 $('#mask').hide(); //hidemask
-if($('#formbody').height()<$(window).height()){
+if($('#formbody').height()<$(window).height()-270){
     $('#formbody').height($(window).height()-($('#formbody').offset().top)-130);
 }
 @if ($report)

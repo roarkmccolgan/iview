@@ -365,7 +365,70 @@ return array(
                 )
             )
         )
-    ),
+    )/*,
+    'print-devices' => array(
+        'class' => 'sec2',
+        'display' => true,
+        'complete' => false,
+        'pages' => array(
+            'page1' => array(
+                'title' => 'MFP Devices and Printers',
+                'questions' => array(
+                    'q6'=>array(
+                        'type'=>'checkbox',
+                        'question'=>'Do your print/MFP devices require user authentication at the device in order to guarantee secure document retrieval and avoid paper documents being left at the device? <span class="small">[Select all that apply]</span>',
+                        'name'=>'q6',
+                        'script'=>'
+                            $(\'#3-q6\').on(\'ifChecked\', function(event){
+                                $(\'div.error\').fadeOut(\'fast\', function() {
+                                    this.remove();
+                                    error=false;
+                                });
+                                $(\'#0-q6\').iCheck(\'uncheck\');
+                                $(\'#1-q6\').iCheck(\'uncheck\');
+                                $(\'#2-q6\').iCheck(\'uncheck\');
+                            });
+                            jQuery.each([$(\'#0-q6\'),$(\'#1-q6\'),$(\'#2-q6\')], function( i, item ) {
+                                $(item).on(\'ifChecked\', function(event){
+                                    $(\'div.error\').fadeOut(\'fast\', function() {
+                                        this.remove();
+                                        error=false;
+                                    });
+                                    $(\'#3-q6\').iCheck(\'uncheck\');
+                                });
+                            });
+                        ',
+                        'options'=>array(
+                            array(
+                                'label'=>'Pin code',
+                                'value'=>0.000,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'Swipe card',
+                                'value'=>0.984,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'Biometrics',
+                                'value'=>0,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'None of the above',
+                                'value'=>0,
+                                'checked'=>false
+                            )
+                        )
+                    )
+                )/*,
+                'report' => array(
+                    'text'=>'Archiving should be integrated in overall data protection workflow, IDC believes. In several industries (e.g. healthcare), long-term archiving is mandatory. With file sizes esp. for video exploding, storage assets often need rethinking.',
+                    'image'=>'img/techfit_icons_Q-C1.png'
+                )
+            )
+        )
+    )*/,
     'data-rights-and-standards' => array(
         'class' => 'sec2',
         'display' => true,
@@ -374,10 +437,10 @@ return array(
             'page1' => array(
                 'title' => 'Data rights and standards',
                 'questions' => array(
-                    'q6'=>array(
+                    'q7'=>array(
                         'type'=>'button',
                         'question'=>'Do you have a process that identifies the purpose of collecting personal data, whether it is customer data, employee data or citizen data? <span class="small">[Select one]</span>',
-                        'name'=>'q6',
+                        'name'=>'q7',
                         'options'=>array(
                             array(
                                 'label'=>'We have no process for deciding why we collect personal data',
@@ -410,10 +473,10 @@ return array(
             'page2' => array(
                 'title' => 'Data rights and standards',
                 'questions' => array(
-                    'q7'=>array(
+                    'q8'=>array(
                         'type'=>'button',
                         'question'=>'Can you demonstrate a link between personal data gathered and the specific processing purposes for which it is gathered? <span class="small">[Select one]</span><br/><br/> We have:',
-                        'name'=>'q7',
+                        'name'=>'q8',
                         'options'=>array(
                             array(
                                 'label'=>'No process to link the data gathered to the processing purpose',
@@ -437,10 +500,10 @@ return array(
             'page3' => array(
                 'title' => 'Data rights and standards',
                 'questions' => array(
-                    'q8'=>array(
+                    'q9'=>array(
                         'type'=>'button',
                         'question'=>'Is there a process in place to identify personal data types held in the organisation? <span class="small">[Select one]</span>',
-                        'name'=>'q8',
+                        'name'=>'q9',
                         'options'=>array(
                             array(
                                 'label'=>'No',
@@ -464,10 +527,10 @@ return array(
             'page4' => array(
                 'title' => 'Data rights and standards',
                 'questions' => array(
-                    'q9'=>array(
+                    'q10'=>array(
                         'type'=>'button',
                         'question'=>'Have you conducted a data flow analysis, for data in transit and in use? <span class="small">[Select one]</span>',
-                        'name'=>'q9',
+                        'name'=>'q10',
                         'options'=>array(
                             array(
                                 'label'=>'No',
@@ -496,10 +559,10 @@ return array(
             'page5' => array(
                 'title' => 'Data rights and standards',
                 'questions' => array(
-                    'q10'=>array(
+                    'q11'=>array(
                         'type'=>'button',
                         'question'=>'Has your data flow analysis included the secure output (print, copy, fax, scan) of personal data? <span class="small">[Select one]</span>',
-                        'name'=>'q10',
+                        'name'=>'q11',
                         'options'=>array(
                             array(
                                 'label'=>'We have not conducted a data flow analysis',
@@ -523,10 +586,10 @@ return array(
             'page6' => array(
                 'title' => 'Data rights and standards',
                 'questions' => array(
-                    'q11'=>array(
+                    'q12'=>array(
                         'type'=>'button',
                         'question'=>'Are you certified as compliant with ISO 27001? <span class="small">[Select one]</span>',
-                        'name'=>'q11',
+                        'name'=>'q12',
                         'options'=>array(
                             array(
                                 'label'=>'No',
@@ -550,10 +613,10 @@ return array(
             'page7' => array(
                 'title' => 'Data rights and standards',
                 'questions' => array(
-                    'q12'=>array(
+                    'q13'=>array(
                         'type'=>'button',
                         'question'=>'Are your printer and MFP devices (ISO/IEC 15408) certified (also known as Common Criteria)? <span class="small">[Select one]</span>',
-                        'name'=>'q12',
+                        'name'=>'q13',
                         'options'=>array(
                             array(
                                 'label'=>'No',
@@ -577,10 +640,10 @@ return array(
             'page8' => array(
                 'title' => 'Data rights and standards',
                 'questions' => array(
-                    'q13'=>array(
+                    'q14'=>array(
                         'type'=>'button',
                         'question'=>'Do you have a process for transferring data outside the EU? <span class="small">[Select one]</span>',
-                        'name'=>'q13',
+                        'name'=>'q14',
                         'options'=>array(
                             array(
                                 'label'=>'No, and we don\'t know where our data is held',
@@ -621,62 +684,6 @@ return array(
             'page1' => array(
                 'title' => 'Security',
                 'questions' => array(
-                    'q14'=>array(
-                        'type'=>'checkbox',
-                        'question'=>'Do your print/MFP devices require user authentication at the device in order to guarantee secure document retrieval and avoid paper documents being left at the device? <span class="small">[Select all that apply]</span>',
-                        'name'=>'q14',
-                        'script'=>'
-                            $(\'#3-q14\').on(\'ifChecked\', function(event){
-                                $(\'div.error\').fadeOut(\'fast\', function() {
-                                    this.remove();
-                                    error=false;
-                                });
-                                $(\'#0-q14\').iCheck(\'uncheck\');
-                                $(\'#1-q14\').iCheck(\'uncheck\');
-                                $(\'#2-q14\').iCheck(\'uncheck\');
-                            });
-                            jQuery.each([$(\'#0-q14\'),$(\'#1-q14\'),$(\'#2-q14\')], function( i, item ) {
-                                $(item).on(\'ifChecked\', function(event){
-                                    $(\'div.error\').fadeOut(\'fast\', function() {
-                                        this.remove();
-                                        error=false;
-                                    });
-                                    $(\'#3-q14\').iCheck(\'uncheck\');
-                                });
-                            });
-                        ',
-                        'options'=>array(
-                            array(
-                                'label'=>'Pin code',
-                                'value'=>0.000,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'Swipe card',
-                                'value'=>0.984,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'Biometrics',
-                                'value'=>0,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'None of the above',
-                                'value'=>0,
-                                'checked'=>false
-                            )
-                        )
-                    )
-                )/*,
-                'report' => array(
-                    'text'=>'Archiving should be integrated in overall data protection workflow, IDC believes. In several industries (e.g. healthcare), long-term archiving is mandatory. With file sizes esp. for video exploding, storage assets often need rethinking.',
-                    'image'=>'img/techfit_icons_Q-C1.png'
-                )*/
-            ),
-            'page2' => array(
-                'title' => 'Security',
-                'questions' => array(
                     'q15'=>array(
                         'type'=>'button',
                         'question'=>'Do you have a process that documents "state of the art" in security? <span class="small">[Select one]</span>',
@@ -711,7 +718,7 @@ return array(
                     )
                 )
             ),
-            'page3' => array(
+            'page2' => array(
                 'title' => 'Security',
                 'questions' => array(
                     'q16'=>array(
@@ -738,7 +745,7 @@ return array(
                     )
                 )
             ),
-            'page4' => array(
+            'page3' => array(
                 'title' => 'Security',
                 'questions' => array(
                     'q17'=>array(
@@ -770,13 +777,50 @@ return array(
                     )
                 )
             ),
-            'page5' => array(
+            'page4' => array(
                 'title' => 'Security',
                 'questions' => array(
                     'q18'=>array(
                         'type'=>'button',
-                        'question'=>'Is print infrastructure part of your security audit? <span class="small">[Select one]</span>',
+                        'question'=>'Do you have an incident response plan, and is it tested regularly? <span class="small">[Select one]</span>',
                         'name'=>'q18',
+                        'options'=>array(
+                            array(
+                                'label'=>'No',
+                                'value'=>0,492,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'No, but we have ad hoc capability to deal with incidents',
+                                'value'=>0,492,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'Yes, and this is tested annually',
+                                'value'=>0,984,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'Yes, and this is tested at least every six months',
+                                'value'=>1,475,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'Yes, and this is tested at least monthly',
+                                'value'=>1,967,
+                                'checked'=>false
+                            )
+                        )
+                    )
+                )
+            ),
+            'page5' => array(
+                'title' => 'Security',
+                'questions' => array(
+                    'q19'=>array(
+                        'type'=>'button',
+                        'question'=>'Is print infrastructure part of your security audit? <span class="small">[Select one]</span>',
+                        'name'=>'q19',
                         'options'=>array(
                             array(
                                 'label'=>'No',
@@ -800,10 +844,10 @@ return array(
             'page6' => array(
                 'title' => 'Security',
                 'questions' => array(
-                    'q19'=>array(
+                    'q20'=>array(
                         'type'=>'button',
                         'question'=>'Does your personal data encryption process extend to your print management solutions? <span class="small">[Select one]</span>',
-                        'name'=>'q19',
+                        'name'=>'q20',
                         'options'=>array(
                             array(
                                 'label'=>'No, we don\'t have an encryption process',
@@ -827,17 +871,17 @@ return array(
             'page7' => array(
                 'title' => 'Security',
                 'questions' => array(
-                    'q20'=>array(
+                    'q21'=>array(
                         'type'=>'groupradio',
                         'question'=>'Which of the following print-related security activities do you perform? <span class="small">[Select one for each]</span>',
-                        'name'=>'q20',/*
+                        'name'=>'q21',/*
                         'calc'=>array(
                             'type'=>'normalize',
                             'value'=>5.                        ),*/
                         'options'=>array(
                             array(
                                 'label'=>'Log print activity across all platforms enabling the tracing of personal data processing  ',
-                                'name'=>'q20.1',
+                                'name'=>'q21.1',
                                 'options'=>array(
                                     array(
                                         'label'=>'No',
@@ -863,7 +907,7 @@ return array(
                             ),
                             array(
                                 'label'=>'Keep a complete inventory of all your output devices (printers, copiers, MFPs, faxes, scanners)   ',
-                                'name'=>'q20.2',
+                                'name'=>'q21.2',
                                 'options'=>array(
                                     array(
                                         'label'=>'No',
@@ -889,7 +933,7 @@ return array(
                             ),
                             array(
                                 'label'=>'Maintain and patch your printer fleet ',
-                                'name'=>'q20.3',
+                                'name'=>'q21.3',
                                 'options'=>array(
                                     array(
                                         'label'=>'No',
@@ -915,7 +959,7 @@ return array(
                             ),
                             array(
                                 'label'=>'Shut down any unnecessary services that your print devices offer  ',
-                                'name'=>'q20.4',
+                                'name'=>'q21.4',
                                 'options'=>array(
                                     array(
                                         'label'=>'No',
@@ -946,17 +990,17 @@ return array(
             'page8' => array(
                 'title' => 'Security',
                 'questions' => array(
-                    'q21'=>array(
+                    'q22'=>array(
                         'type'=>'groupradio',
                         'question'=>'Upon disposal or decommissioning, are the hard drives and/or memory of these devices certified to be clean or destroyed? <span class="small">[Select one for each]</span>',
-                        'name'=>'q21',/*
+                        'name'=>'q22',/*
                         'calc'=>array(
                             'type'=>'normalize',
                             'value'=>5.                        ),*/
                         'options'=>array(
                             array(
                                 'label'=>'PCs',
-                                'name'=>'q21.1',
+                                'name'=>'q22.1',
                                 'options'=>array(
                                     array(
                                         'label'=>'No',
@@ -977,7 +1021,7 @@ return array(
                             ),
                             array(
                                 'label'=>'Laptops',
-                                'name'=>'q21.2',
+                                'name'=>'q22.2',
                                 'options'=>array(
                                     array(
                                         'label'=>'No',
@@ -998,7 +1042,7 @@ return array(
                             ),
                             array(
                                 'label'=>'Smartphones',
-                                'name'=>'q21.3',
+                                'name'=>'q22.3',
                                 'options'=>array(
                                     array(
                                         'label'=>'No',
@@ -1019,7 +1063,7 @@ return array(
                             ),
                             array(
                                 'label'=>'Servers',
-                                'name'=>'q21.4',
+                                'name'=>'q22.4',
                                 'options'=>array(
                                     array(
                                         'label'=>'No',
@@ -1040,7 +1084,7 @@ return array(
                             ),
                             array(
                                 'label'=>'Network storage devices',
-                                'name'=>'q21.5',
+                                'name'=>'q22.5',
                                 'options'=>array(
                                     array(
                                         'label'=>'No',
@@ -1061,7 +1105,7 @@ return array(
                             ),
                             array(
                                 'label'=>'Removable storage devices such as USB sticks',
-                                'name'=>'q21.6',
+                                'name'=>'q22.6',
                                 'options'=>array(
                                     array(
                                         'label'=>'No',
@@ -1082,7 +1126,7 @@ return array(
                             ),
                             array(
                                 'label'=>'Printers',
-                                'name'=>'q21.7',
+                                'name'=>'q22.7',
                                 'options'=>array(
                                     array(
                                         'label'=>'No',
@@ -1103,7 +1147,7 @@ return array(
                             ),
                             array(
                                 'label'=>'Copiers',
-                                'name'=>'q21.8',
+                                'name'=>'q22.8',
                                 'options'=>array(
                                     array(
                                         'label'=>'No',
@@ -1124,7 +1168,7 @@ return array(
                             ),
                             array(
                                 'label'=>'Fax machines',
-                                'name'=>'q21.9',
+                                'name'=>'q22.9',
                                 'options'=>array(
                                     array(
                                         'label'=>'No',
@@ -1145,7 +1189,7 @@ return array(
                             ),
                             array(
                                 'label'=>'Scanners',
-                                'name'=>'q21.10',
+                                'name'=>'q22.10',
                                 'options'=>array(
                                     array(
                                         'label'=>'No',
@@ -1167,6 +1211,62 @@ return array(
                         )
                     )
                 )
+            ),
+            'page9' => array(
+                'title' => 'MFP Devices and Printers',
+                'questions' => array(
+                    'q6'=>array(
+                        'type'=>'checkbox',
+                        'question'=>'Do your print/MFP devices require user authentication at the device in order to guarantee secure document retrieval and avoid paper documents being left at the device? <span class="small">[Select all that apply]</span>',
+                        'name'=>'q6',
+                        'script'=>'
+                            $(\'#3-q6\').on(\'ifChecked\', function(event){
+                                $(\'div.error\').fadeOut(\'fast\', function() {
+                                    this.remove();
+                                    error=false;
+                                });
+                                $(\'#0-q6\').iCheck(\'uncheck\');
+                                $(\'#1-q6\').iCheck(\'uncheck\');
+                                $(\'#2-q6\').iCheck(\'uncheck\');
+                            });
+                            jQuery.each([$(\'#0-q6\'),$(\'#1-q6\'),$(\'#2-q6\')], function( i, item ) {
+                                $(item).on(\'ifChecked\', function(event){
+                                    $(\'div.error\').fadeOut(\'fast\', function() {
+                                        this.remove();
+                                        error=false;
+                                    });
+                                    $(\'#3-q6\').iCheck(\'uncheck\');
+                                });
+                            });
+                        ',
+                        'options'=>array(
+                            array(
+                                'label'=>'Pin code',
+                                'value'=>0.000,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'Swipe card',
+                                'value'=>0.984,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'Biometrics',
+                                'value'=>0,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'None of the above',
+                                'value'=>0,
+                                'checked'=>false
+                            )
+                        )
+                    )
+                )/*,
+                'report' => array(
+                    'text'=>'Archiving should be integrated in overall data protection workflow, IDC believes. In several industries (e.g. healthcare), long-term archiving is mandatory. With file sizes esp. for video exploding, storage assets often need rethinking.',
+                    'image'=>'img/techfit_icons_Q-C1.png'
+                )*/
             ),
         )
     )

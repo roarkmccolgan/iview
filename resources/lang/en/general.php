@@ -276,23 +276,34 @@ Complete the IDC Cyber Risk Assessment Tool to find out more about how ready you
     '4sponsors'=>'HP Inc.',
     '4title'=>'IDC\'s GDPR Readiness Assessment',
     '4sub-title'=>'Is your business ready for GDPR Compliance?',
-    '4landing'=>'<h2>Is your business ready for GDPR Compliance</h2><p>IDC\'s GDPR Readiness Assessment enables you to position your business in relation to over 500 similar organizations across the U.S. and Europe, and provides you with some essential guidance on your GDPR compliance.</p>',
+    '4landing'=>'<h2>The GDPR Deadline is Coming<br/>Are your devices ready for GDPR compliance?</h2>
+    <p>
+        The EU General Data Protection Regulation (GDPR) deadline is approaching. It will supersede all current national data protection laws in the EU and can impact your organization in terms of handling and protecting personal data.
+    </p>
+    <p>
+        IDC\'s GDPR Readiness Assessment for Endpoint Devices will provide you with some essential guidance on your GDPR compliance and what you need to consider to be compliant.
+    </p>',
     '4startbut'=>'Start Here',
-    'timetoact'=>'', //reactive
-    'timetoacttxt'=>"",
-    'timetoacttweet' => "I took the @HP GDPR Assessment and it's shown me where I can improve. Interested?",
-    'timetocommite'=>'',
-    'timetocommitetxt'=>"",
-    'timetocommitetweet' => "I took the @HP GDPR Assessment and my company is on the right track. See how your business does... http://bit.ly/1Y6JAqa",
-    'timetoinvest'=>'',
-    'timetoinvesttxt'=>"",
-    'timetoinvesttweet' => "I took the @HP GDPR Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
-    'timetorefine'=>'',
-    'timetorefinetxt'=>"",
-    'timetorefinetweet' => "I took the @HP GDPR Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
-    'timetoaccelerate'=>'',
-    'timetoacceleratetxt'=>"",
-    'timetoacceleratetweet' => "I took the @HP GDPR Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    '4initial'=>'initial', //reactive
+    '4initialtxt'=>'
+        Organizations at this stage in their GDPR Readiness need to make some changes.
+    ',
+    '4initialtweet' => "I took the @HP GDPR Assessment and it's shown me where I can improve. Interested?",
+    '4defined'=>'Defined',
+    '4definedtxt'=>'
+        Organizations at this stage in their GDPR Readiness need to make some changes.
+    ',
+    '4definedtweet' => "I took the @HP GDPR Assessment and my company is on the right track. See how your business does... http://bit.ly/1Y6JAqa",
+    '4managed'=>'Managed',
+    '4managedtxt'=>'
+        Organizations at this stage in their GDPR Readiness need to make some changes.
+    ',
+    '4managedtweet' => "I took the @HP GDPR Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    '4optimised'=>'Optimised',
+    '4optimisedtxt'=>'
+        Organizations at this stage in their GDPR Readiness need to make some changes.
+    ',
+    '4optimisedtweet' => "I took the @HP GDPR Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
     '4send'=>'We can send you the full results directly to your mailbox',
     '4fullreport'=>'For the full report with essential guidance to get your business GDPR compliant, just fill in your details.',
     '4provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
