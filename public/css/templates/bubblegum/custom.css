@@ -16,6 +16,9 @@ html{
 body{
 	background-color: transparent;
 }
+.btn--primary, .btn--primary:visited{
+	color: white;
+}
 .frame{
 	background-color: #FFF;
 	padding-bottom: 0.58035714em;
