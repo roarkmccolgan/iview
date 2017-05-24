@@ -42,5 +42,29 @@ class SplunkSeeder extends Seeder
             'tool_id' => 5,
             'user_id' => 1 //roark
         ]);
+
+        DB::table('extra_fields')->insert([
+            'tool_id' => '5',
+            'name' => 'qualification',
+            'type' => 'select',
+            'trans' => 'qualification',
+            'error' => 'errorQualification',
+            'options' => json_encode([
+                "qual1"=>"Consulting",
+                "qual2"=> "ISV",
+                "qual3"=> "Hardware Vendor",
+                "qual4"=> "Software Vendor",
+                "qual5"=> "System Integrator",
+                "qual6"=> "Cloud Service Provider",
+                "qual7"=> "Distributor",
+                "qual8"=> "Value Added Reseller",
+                "qual9"=> "Managed Service Provider",
+                "qual10"=> "Hosting Provider"
+            ]),
+            'required' => 1,
+            'required' => 2,
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now()
+        ]);
     }
 }

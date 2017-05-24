@@ -35,5 +35,13 @@ class UserToolSeeder extends Seeder
             'tool_id' => 3,
             'user_id' => 2
         ]);
+        DB::table('tool_user')->insert([
+            'tool_id' => 4,
+            'user_id' => 2
+        ]);
+        DB::table('tool_user')->insert([
+            'tool_id' => 5,
+            'user_id' => 2
+        ]);
     }
 }

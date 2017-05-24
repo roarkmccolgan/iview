@@ -69,7 +69,7 @@ return array(
                 'benchmark' => 21,
             )
         ),
-        'tweet' => true
+        'tweet' => false
     ),
     'security-strategy' => array(
         'baseline' => 15.363,

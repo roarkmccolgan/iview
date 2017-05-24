@@ -9,16 +9,19 @@ return array(
     'stage4' => 'Stage 4: Aspirational',
     'stage5' => 'Stage 5: Best',
     'complete_thankyou' => 'Thank you :Fname,',
-    'complete_body' => 'Your custom report will arrive in your inbox soon.<br/>
-Please check in your junk folder if you don\'t receive it within 5 minutes.<br/>
-While you\'re waiting why not share your results and see how your followers measure up?',
+    'complete_body' => '
+        Your custom report will arrive in your inbox soon.<br/>
+        Please check in your junk folder if you don\'t receive it within 5 minutes.<br/><br/>
+        <a class="btn btn--primary" target="_blank" href="https://www.splunk.com/en_us/solutions/solution-areas/security-and-fraud/security-investigation.html">
+            Click here for more information
+        </a>',
     'complete_tweet' => 'I\'ve just taken the @IDCEMEA Security Assessment Tool for @splunk. Interested? ',// http://bit.ly/2gslXEh
     'email'=>[
         'subject' => 'IDC\'s Security Assessment',
         'hi' => 'Hi :Fname',
         'body' => 'As promised, here\'s a link to download your Security Assessment. This breaks down your results by category and provides you with actionable recommendations.',
         'link' => 'Download Report',
-        'extra' => 'Once you\'ve digested the report why not visit <a href="http://www.splunk.com" style="color:#65A637">Splunk</a>',
+        'extra' => 'Once you\'ve digested the report why not visit <a href="https://www.splunk.com/en_us/solutions/solution-areas/security-and-fraud/security-investigation.html" style="color:#65A637">Splunk</a>',
         'regards' => 'Regards',
         'team' => 'The IDC Team'
     ],

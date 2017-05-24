@@ -609,12 +609,7 @@ public function postComplete(SubmitAssessmentsRequest $request)
         $cookie = Cookie::forget('quiz_progress');*/
         
 	//return View::make('thankyou',$vars)->withCookie($cookie);
-	//check if redirect after tool completes...
-		if(session('product.id')==5){
-			return Redirect::to('https://www.splunk.com/en_us/solutions/solution-areas/security-and-fraud/security-investigation.html');
-		}else{
-        	return View::make('tool.'.session('template').'.thankyou',$vars);
-        }
+		return View::make('tool.'.session('template').'.thankyou',$vars);
     }
 
     public function getDownload($subdomain,$assid){
