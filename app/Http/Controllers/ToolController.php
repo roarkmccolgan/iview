@@ -613,7 +613,7 @@ public function postComplete(SubmitAssessmentsRequest $request)
 			return Redirect::to('https://www.splunk.com/en_us/solutions/solution-areas/security-and-fraud/security-investigation.html');
 		}else{
         	return View::make('tool.'.session('template').'.thankyou',$vars);
-        
+        }
     }
 
     public function getDownload($subdomain,$assid){
