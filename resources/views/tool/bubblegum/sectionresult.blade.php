@@ -38,7 +38,7 @@
                         {{-- <div class="col-sm-6 col-md-5"> <div class="background-image-holder"> <img src="{{asset('images/tools/'.$tool->id.'/homepage.jpg')}}" alt=""> </div> </div> --}}
                         <div id="content" class="col-sm-9 col-sm-push-3">
                             <span class="lead">Results: <strong>{{$title}}</strong></span class="lead">
-                            <h3>{{Lang::get('general.your')}} {{$title}} {{Lang::get('general.isat')}} <span class="color--primary">{{$rating}}</span></h3>
+                            <h3>{!!$heading!!}</h3>
                             {!!$ratingcopy!!}
                             @if($graph)
                             <div class="col-xs-12">

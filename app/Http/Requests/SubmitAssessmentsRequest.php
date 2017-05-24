@@ -23,7 +23,7 @@ class SubmitAssessmentsRequest extends Request
      */
     public function rules()
     {
-        return [
+        $rules = [
             'fname'=>'required|min:3|max:255',
             'sname'=>'required|min:3|max:255',
             'email'=>'required|email',
@@ -33,5 +33,10 @@ class SubmitAssessmentsRequest extends Request
             'phone'=>'required',
             'terms'=>'required'
         ];
+        foreach($this->input('extra') as $key => $value) {
+            $rules["extra.".$key] = ['required'];
+        }
+
+        return $rules;
     }
 }

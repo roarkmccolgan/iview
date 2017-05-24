@@ -20,17 +20,17 @@ return array(
                         'options'=>array(
                             array(
                                 'label'=>'500 to 999',
-                                'value'=>1,
+                                'value'=>0,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'1000 to 4999',
-                                'value'=>1,
+                                'value'=>0,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'5000+',
-                                'value'=>1,
+                                'value'=>0,
                                 'checked'=>false
                             )
                         )
@@ -944,30 +944,142 @@ return array(
                 'title' => 'Incident Detection',
                 'questions' => array(
                     'q6'=>array(
-                        'type'=>'checkbox',
+                        'type'=>'slider',
                         'question'=>'To what extent will you be investing in the following incident response areas within the next 12 months?',
                         'name'=>'q6',
                         'options'=>array(
                             array(
                                 'label'=>'Incident response process and plans',
-                                'value'=>3.75,
-                                'checked'=>false
+                                'from'=>'Not at all',
+                                'to'=>'Investing extensively',
+                                'name'=>'q6.1',
+                                'options'=>array(
+                                    array(
+                                        'label'=>'1',
+                                        'value'=>0.75,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'2',
+                                        'value'=>1.5,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'3',
+                                        'value'=>2.25,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'4',
+                                        'value'=>3,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'5',
+                                        'value'=>3.75,
+                                        'checked'=>false,
+                                    )
+                                )
                             ),
                             array(
                                 'label'=>'Incident response platform and supporting technology',
-                                'value'=>3.75,
-                                'checked'=>false
+                                'from'=>'Not at all',
+                                'to'=>'Investing extensively',
+                                'name'=>'q6.2',
+                                'options'=>array(
+                                    array(
+                                        'label'=>'1',
+                                        'value'=>0.75,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'2',
+                                        'value'=>1.5,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'3',
+                                        'value'=>2.25,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'4',
+                                        'value'=>3,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'5',
+                                        'value'=>3.75,
+                                        'checked'=>false,
+                                    )
+                                )
                             ),
                             array(
                                 'label'=>'Incident response teams (people)',
-                                'value'=>3.75,
-                                'checked'=>false
+                                'from'=>'Not at all',
+                                'to'=>'Investing extensively',
+                                'name'=>'q6.3',
+                                'options'=>array(
+                                    array(
+                                        'label'=>'1',
+                                        'value'=>0.75,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'2',
+                                        'value'=>1.5,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'3',
+                                        'value'=>2.25,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'4',
+                                        'value'=>3,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'5',
+                                        'value'=>3.75,
+                                        'checked'=>false,
+                                    )
+                                )
                             ),
                             array(
                                 'label'=>'Third-party incident response services',
-                                'value'=>3.75,
-                                'checked'=>false
-                            )
+                                'from'=>'Not at all',
+                                'to'=>'Investing extensively',
+                                'name'=>'q6.4',
+                                'options'=>array(
+                                    array(
+                                        'label'=>'1',
+                                        'value'=>0.75,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'2',
+                                        'value'=>1.5,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'3',
+                                        'value'=>2.25,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'4',
+                                        'value'=>3,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'5',
+                                        'value'=>3.75,
+                                        'checked'=>false,
+                                    )
+                                )
+                            ),
                         )
                     )
                 )

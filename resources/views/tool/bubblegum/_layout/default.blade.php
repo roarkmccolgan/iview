@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="{{asset('css/templates/'.session('template').'/splunk-icons.css')}}" type="text/css" media="all" />
         <link rel="stylesheet" href="{{asset('js/templates/'.session('template').'/unslider-master/dist/css/unslider.css')}}" type="text/css" media="all" />
         <link rel="stylesheet" href="{{asset('js/templates/'.session('template').'/unslider-master/dist/css/unslider-dots.css')}}" type="text/css" media="all" />
-        <link rel="stylesheet" href="{{asset('css/templates/'.session('template').'/custom.css')}}" type="text/css" media="all" />
+        <link rel="stylesheet" href="{{asset('css/templates/'.session('template').'/custom.css')}}?id=2" type="text/css" media="all" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700%7CRubik:300,400,500" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="{{asset('css/templates/'.session('template').'/font-rubiklato.css')}}" type="text/css" media="all" />
@@ -34,7 +34,7 @@
 		@yield('main')
         <div class="container">
             <div class="row">
-                <div class="frame clearfix">
+                <div class="frame clearfix hidden-xs">
                     <div class="col-xs-12 col-sm-10 col-sm-offset-1">
                         <div class="row">
                             <div class="col-xs-4 col-sm-3 col-md-2">

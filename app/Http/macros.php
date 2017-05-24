@@ -163,13 +163,13 @@ Form::macro('idcBubblegumGroup', function($section,$q,$page,$type,$slider=false)
 			$html.='
 					<li>
 						<div class="col-md-12 groupcheck mb--1">
-							<h4 class="color--primary">'.$optionSet['label'].'</h4>
+							<h4 class="color--primary unmarg--bottom">'.$optionSet['label'].'</h4>
 							<fieldset>';
 			foreach ($optionSet['options'] as $setkey => $option) {
 				$checked = ($selected[$optionSet['name']][0]==$option['label'].'|'.$option['value']) ? 'checked':'';
 				if(isset($optionSet['from']) && $setkey==0){
 					$html.= '
-							<div class="clearfix mb--1">
+							<div class="clearfix" style="margin-bottom: .5em;">
 								<div class="from pull-left text-center type--fine-print" '.$style.'>'.$optionSet['from'].'</div>
 								<div class="from pull-right text-center type--fine-print" '.$style.'>'.$optionSet['to'].'</div>
 							</div>

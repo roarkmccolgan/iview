@@ -13,6 +13,16 @@
             <div class="container">
                 <div class="row">
                     <div class="frame clearfix top">
+                        <div class="col-xs-12 col-sm-10 col-sm-offset-1 visible-xs mb--1 mt--1">
+                            <div class="row">
+                                <div class="col-xs-4 col-sm-3 col-md-2">
+                                    <img class="footer-logo" src="{{asset('css/idc/idc-logo.svg')}}" alt="">
+                                </div>
+                                <div class="col-xs-4 col-xs-offset-4 col-sm-3 col-sm-offset-6 col-md-2 col-md-offset-8 ">
+                                    <img class="footer-logo" src="{{asset('css/'.str_slug(session('company.name')).'/'.str_slug(session('company.name')).'-logo.svg')}}" alt="">
+                                </div>
+                            </div>
+                        </div>
                         <div class="col-sm-3 col-sm-offset-1 mt--2">
                             <h4>{{Lang::get('general.'.session('product.id').'title')}}</h4>
                         </div>
@@ -80,6 +90,7 @@
 
 @section('pagescript')
 @parent
+<script src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
 <script src="{{{ asset('js/templates/'.session('template').'/unslider-master/dist/js/unslider-min.js')}}}"></script>
 <script type="text/javascript">var error = false;</script>
 <script src="{{{ asset('js/plugins.js')}}}"></script>
@@ -156,6 +167,7 @@ var daForm = $('#msform');
             /*nav: false,*/
             arrows: false,
             infinite: false,
+            speed: 300
         });
         slider.height('initial');
         slider.on('unslider.change', function(event, index, slide) {

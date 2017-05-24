@@ -254,13 +254,13 @@ public function savePage(Request $request, $subdomain, $section=false, $page=fal
 						'gridlines'=> [
 							'color'=> 'none'
 						],
-						'format' => '#'
+						'format' => '#\'%\'',
+						'ticks'=> [0, 10, 20, 30, 40, 50]
 					],
 					'hAxis' => [
-						
 						'textStyle' => [
-							'fontName' => 'Helvetica-light',
-							/*'fontSize' => 18,*/
+							'fontName' => 'arial',
+							'fontSize' => 11,
 							/*'bold' => true,*/
 							/*'italic' => true,*/
 							// The color of the text.
@@ -330,12 +330,16 @@ public function savePage(Request $request, $subdomain, $section=false, $page=fal
 			$page = $page;
 			$title = session('questions.'.$section.'.pages.page1.title');
 			$rating = trans(session('product.alias').'.'.$this->result[$section]['rating']);
+			$heading = trans('general.'.session('product.id').'subreporttitle',[
+				'percent'=>$this->baseline[$section]['types'][$this->result[$section]['rating']]['benchmark'],
+				'result'=>trans(session('product.alias').'.'.$this->result[$section]['rating']),
+			]);
 			$graph = $graph;
 			$icon = isset($data['icon']) ? $data['icon']:false;
 			$ratingClass = 'icon '.$section;
 			$ratingcopy = trans($this->baseline[$section]['types'][$this->result[$section]['rating']]['copy']);
 			$next = (key($questions)==null) ? '/'.session('localeUrl').'quiz/complete': '/'.session('localeUrl').'quiz/'.key($questions).'/page1'; //fix this so a report can be provided at any stage?
-			return view('tool.'.session('template').'.sectionresult',compact(['menu','page','title','section','rating','graph','icon','ratingClass','ratingcopy','next']));
+			return view('tool.'.session('template').'.sectionresult',compact(['menu','page','title','section','rating','heading','graph','icon','ratingClass','ratingcopy','next']));
 		}
 		//dd(session('questions'));
 		//else do carry on or complete
@@ -367,11 +371,13 @@ public function getComplete(Request $request)
 				'baselineColor'=>'none',
 				'gridlines'=> [
 					'color'=> 'none'
-				]
+				],
+				'format' => '#\'%\'',
+				'ticks'=> [0, 10, 20, 30, 40, 50]
 			],
 			'hAxis' => [
 				'textStyle' => [
-					'fontName' => 'Helvetica-light',
+					'fontName' => 'arial',
 					'fontSize' => 11,
 					/*'bold' => true,*/
 					/*'italic' => true,*/
@@ -602,7 +608,11 @@ public function postComplete(SubmitAssessmentsRequest $request)
         $cookie = Cookie::forget('quiz_progress');*/
         
 	//return View::make('thankyou',$vars)->withCookie($cookie);
-        return View::make('tool.'.session('template').'.thankyou',$vars);
+	//check if redirect after tool completes...
+		if(session('product.id')==5){
+			return Redirect::to('https://www.splunk.com/en_us/solutions/solution-areas/security-and-fraud/security-investigation.html');
+		}else{
+        	return View::make('tool.'.session('template').'.thankyou',$vars);
         
     }
 

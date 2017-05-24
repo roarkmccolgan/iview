@@ -28,7 +28,7 @@ class SplunkSeeder extends Seeder
         ]);
         DB::table('urls')->insert([
             'domain' => 'idcready.net',
-            'subdomain' => 'splunk',
+            'subdomain' => 'security',
             'language_id' => 1,
             'urlable_id' => 5,
             'urlable_type' => 'App\Tool',

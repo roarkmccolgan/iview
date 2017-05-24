@@ -319,7 +319,7 @@ Complete the IDC Cyber Risk Assessment Tool to find out more about how ready you
     '5sub-title'=>'How secure is your business?',
     '5landing'=>'
     <p>
-        Security is grabbing headline attention, however only the most serious and high profile breaches make the headline news, in reality, companies are under constant attack.
+        Security is grabbing headline attention, however while only the most serious and high profile breaches make the headline news, in reality, companies are under constant attack.
     </p>
     <p>
         How does your security operation stand up to today\'s ever increasing threats? Complete IDC\'s Security Response Readiness assessment to find out how you stack up against your peers and receive essential guidance on what you should be doing to improve.
@@ -343,6 +343,7 @@ Complete the IDC Cyber Risk Assessment Tool to find out more about how ready you
     '5incident-response-good-txt'=>'',
     '5incident-response-aspirational-txt'=>'',
     '5incident-response-best-txt'=>'',
+    '5subreporttitle' => 'You are in the <span class="color--primary">:percent%</span>, whose Incident Resposes is at <span class="color--primary">:result</span>',
 
     '5poor'=>'Poor', //reactive
     '5poortxt'=>"Organizations at this stage tend to have no perceived risk of a breach. Security is reactive and there is no incident response plan in place. 

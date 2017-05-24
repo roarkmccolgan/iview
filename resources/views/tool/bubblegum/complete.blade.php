@@ -80,11 +80,11 @@
                                                     </div>
                                                     @if(isset($field['extra']) && $extra_fields)
                                                         @foreach($extra_fields as $extraKey=>$extraField)
-                                                        <div class="col-md-6 form-group{{$errors->has($extraField['name'])?' error':''}}">
-                                                            <?php
+                                                        <div class="col-md-6 form-group{{$errors->has('extra.'.$extraField['name'])?' error':''}}">
+                                                            @php
                                                             switch($extraField['type']){
                                                                 case "select":
-                                                                ?>
+                                                            @endphp
                                                                 <div class="input-select">
                                                                     <label>{!!trans('extra.'.$extraField['trans'])!!} {{$extraField['required'] ? '*':''}}</label>
                                                                     <select id="{{$extraField['name']}}" name="extra[{{$extraField['name']}}]" class="form-control sel {{$extraField['required'] ? 'req':''}}">
@@ -95,9 +95,16 @@
                                                                     </select>
                                                                     <span>{!!trans('extra.'.$extraField['error'])!!}</span>
                                                                 </div>
-                                                                <?php
+                                                            @php
+                                                            break;
+                                                                case "text":
+                                                            @endphp
+                                                                <label>{!!trans('extra.'.$extraField['trans'])!!} {{$extraField['required'] ? '*':''}}</label>
+                                                                <input id="{{$extraField['name']}}" type="text" name="extra[{{$extraField['name']}}]" class="{{$extraField['required'] ? 'validate-required':''}}" value="{{isset($source[$extraField['name']]) ? $source[$extraField['name']]:''}}" />
+                                                                <span>{!!trans('extra.'.$extraField['error'])!!}</span>
+                                                                @php
                                                             }
-                                                            ?>
+                                                            @endphp
                                                         </div>
                                                         @endforeach
                                                     @endif
@@ -144,6 +151,15 @@
 @parent
 <script src="{{{ asset('js/plugins.js')}}}"></script>
 <script src="{{{ asset('js/templates/'.session('template').'/main.js')}}}"></script>
+<script type="text/javascript">
+    $(function(){
+        $.getJSON("http://freegeoip.net/json/", function(data) {
+            var ip = data.ip;
+            var country = data.country_name;
+            $('select[name="country"]').val(country);
+        });
+    });
+</script>
 @stop
 </body>
 

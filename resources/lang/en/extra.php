@@ -25,4 +25,7 @@ return [
     'qual9' => 'Managed Service Provider',
     'qual10' => 'Hosting Provider',
     'errorQualification'=>'Please select Partner Type',
+
+    'zipcode' => 'Postcode/Zip code',
+    'errorZipcode' => 'Please enter your Postcode/Zip code',
 ];
