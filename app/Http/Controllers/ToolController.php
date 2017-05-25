@@ -522,7 +522,7 @@ public function postComplete(SubmitAssessmentsRequest $request)
 	}
 
 	//generate report
-	//$this->wkhtml($assessment->id,str_slug($assessment->fname.'_'.$assessment->lname.'_'.session('product.title').'_Assessment', '-'));
+	$this->wkhtml($assessment->id,str_slug($assessment->fname.'_'.$assessment->lname.'_'.session('product.title').'_Assessment', '-'));
 
 	$eloqua = config('baseline_'.session('product.id').'.overall.eloqua',false);
 	if($eloqua){ //!App::isLocal() && 
