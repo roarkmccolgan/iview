@@ -909,32 +909,32 @@ return array(
                             ),
                             array(
                                 'label'=>'Fewer than 10',
-                                'value'=>10,
+                                'value'=>4.9,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Between 10 to 49',
-                                'value'=>49,
+                                'value'=>29.5,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Between 50 to 99',
-                                'value'=>99,
+                                'value'=>74.5,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Between 100 and 499',
-                                'value'=>499,
+                                'value'=>299.5,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Between 500 and 999',
-                                'value'=>999,
+                                'value'=>749.5,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'1,000 or more',
-                                'value'=>1500,
+                                'value'=>2000,
                                 'checked'=>false
                             )
                         )
@@ -1189,17 +1189,17 @@ return array(
                             ),
                             array(
                                 'label'=>'2 or 3',
-                                'value'=>3,
+                                'value'=>2.5,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'4 or 5',
-                                'value'=>5,
+                                'value'=>4.5,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'6 to 9',
-                                'value'=>9,
+                                'value'=>7.5,
                                 'checked'=>false
                             ),
                             array(
