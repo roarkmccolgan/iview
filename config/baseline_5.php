@@ -69,7 +69,79 @@ return array(
                 'benchmark' => 21,
             )
         ),
-        'tweet' => false
+        'tweet' => false,
+        'eloqua' => [
+            'id' => 1787,
+            'url' => 'http://www.google.com',
+            'fields' => [
+                'Language' => [
+                    'type' => 'locale'
+                ],
+                'FirstName' => [
+                    'type' => 'field',
+                    'name' => 'fname'
+                ],
+                'LastName' => [
+                    'type' => 'field',
+                    'name' => 'sname'
+                ],
+                'Email' => [
+                    'type' => 'field',
+                    'name' => 'email'
+                ],
+                'Company' => [
+                    'type' => 'field',
+                    'name' => 'company'
+                ],
+                'Title' => [
+                    'type' => 'field',
+                    'name' => 'title'
+                ],
+                'Phone' => [
+                    'type' => 'field',
+                    'name' => 'phone'
+                ],
+                'Country' => [
+                    'type' => 'field',
+                    'name' => 'country'
+                ],
+                'CompanySize' => [
+                    'type' => 'questionlabel',
+                    'questions' => [
+                        'screeners.pages.page1.questions.s1'
+                    ],
+                ],
+                'IncidencedetectionA9' => [
+                    'type' => 'question',
+                    'questions' => [
+                        'incident-detection.pages.page2.questions.q5'
+                    ],
+                ],
+                'IncidenceresponseA11a' => [
+                    'type' => 'question',
+                    'questions' => [
+                        'incident-response.pages.page3.questions.q9'
+                    ]
+                ],
+                'IncidenceresponseA11b' => [
+                    'type' => 'question',
+                    'questions' => [
+                        'incident-response.pages.page4.questions.q10'
+                    ]
+                ],
+                'Incidenceresponse' => [
+                    'type' => 'calculation',
+                    'questions' => [
+                        'incident-response.pages.page3.questions.q9',
+                        'incident-response.pages.page4.questions.q10'
+                    ],
+                    'formula' => 'multiply'
+                ],
+                'outputreport' => [
+                    'type' => 'report'
+                ]
+            ]
+        ]
     ),
     'security-strategy' => array(
         'baseline' => 15.363,

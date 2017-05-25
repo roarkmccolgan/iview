@@ -343,7 +343,7 @@ Complete the IDC Cyber Risk Assessment Tool to find out more about how ready you
     '5incident-response-good-txt'=>'',
     '5incident-response-aspirational-txt'=>'',
     '5incident-response-best-txt'=>'',
-    '5subreporttitle' => 'You are in the <span class="color--primary">:percent%</span>, whose Incident Resposes is at <span class="color--primary">:result</span>',
+    '5subreporttitle' => 'You are in the <span class="color--primary">:percent%</span>, whose :section is at <span class="color--primary">:result</span>',
 
     '5poor'=>'Poor', //reactive
     '5poortxt'=>"Organizations at this stage tend to have no perceived risk of a breach. Security is reactive and there is no incident response plan in place. 

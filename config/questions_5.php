@@ -900,6 +900,7 @@ return array(
                         'type'=>'button',
                         'question'=>'How many actionable security-relevant alerts or incidents a week do you typically receive across all of IT?',
                         'name'=>'q5',
+                        'ignore' => true,
                         'options'=>array(
                             array(
                                 'label'=>'None',
@@ -908,32 +909,32 @@ return array(
                             ),
                             array(
                                 'label'=>'Fewer than 10',
-                                'value'=>0,
+                                'value'=>10,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Between 10 to 49',
-                                'value'=>0,
+                                'value'=>49,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Between 50 to 99',
-                                'value'=>0,
+                                'value'=>99,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Between 100 and 499',
-                                'value'=>0,
+                                'value'=>499,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Between 500 and 999',
-                                'value'=>0,
+                                'value'=>999,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'1,000 or more',
-                                'value'=>0,
+                                'value'=>1500,
                                 'checked'=>false
                             )
                         )
@@ -1179,30 +1180,31 @@ return array(
                         'type'=>'button',
                         'question'=>'How many people on average are involved in security investigations per incident?',
                         'name'=>'q9',
+                        'ignore' => true,
                         'options'=>array(
                             array(
                                 'label'=>'1',
-                                'value'=>0,
+                                'value'=>1,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'2 or 3',
-                                'value'=>0,
+                                'value'=>3,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'4 or 5',
-                                'value'=>0,
+                                'value'=>5,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'6 to 9',
-                                'value'=>0,
+                                'value'=>9,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'10 or more',
-                                'value'=>0,
+                                'value'=>15,
                                 'checked'=>false
                             )
                         )
