@@ -38,11 +38,11 @@
                     <div class="col-xs-12 col-sm-10 col-sm-offset-1">
                         <div class="row">
                             <div class="col-xs-4 col-sm-3 col-md-2">
-                                <span class="type--fine-print">Developed by</span>
+                                <span class="type--fine-print">{{Lang::get('general.'.session('product.id').'developedby')}}</span>
                                 <img class="footer-logo" src="{{asset('css/idc/idc-logo.svg')}}" alt="">
                             </div>
                             <div class="col-xs-4 col-xs-offset-4 col-sm-3 col-sm-offset-6 col-md-2 col-md-offset-8 ">
-                                <span class="type--fine-print">sponsored by</span>
+                                <span class="type--fine-print">{{Lang::get('general.'.session('product.id').'sponsoredby')}}</span>
                                 <img class="footer-logo" src="{{asset('css/'.str_slug(session('company.name')).'/'.str_slug(session('company.name')).'-logo.svg')}}" alt="">
                             </div>
                         </div>
@@ -55,7 +55,7 @@
                 <div class="row">
                     <div class="frame clearfix bottom">
                         <div class="col-sm-7 col-sm-offset-1">
-                            <span class="type--fine-print">&copy; {{date("Y")}} IDC — All Rights Reserved</span>
+                            <span class="type--fine-print">&copy; {{date("Y")}} IDC — {{Lang::get('general.allrights')}}</span>
                             <a href="/{{session('localeUrl')}}" class="type--fine-print">
                                 <i class="icon-Refresh"></i> {{Lang::get('general.'.session('product.id').'restart')}}
                             </a>

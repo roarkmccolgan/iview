@@ -64,8 +64,80 @@ Nutzen Sie das IDC-Tool zur Cyber-Risikobewertung, um herauszufinden, wie widers
     'optimisedtxt'=>"For organizations at this stage in their maturity, cloud defines the investment and decision making in their future business direction. They are also fully committed to a recurring revenue business model. All aspects of the business are focused on a broad set of KPIs, from customer adoption and growth targets, to satisfaction levels and renewal rates. All systems and processes are designed to optimize cloud profitability and many have fully automated cloud processes to deliver economies of scale. Critically, there is an emphasis on selling solutions, as well as developing and maximizing internal IP.",
     '2byreg'=>'Durch die Registrierung bei IDC stimmen Sie unserer <a href="/privacy" target="_blank">Datenschutzrichtlinie</a> und der <a href="https://www.fireeye.com/company/privacy.html" target="_blank">Datenschutzrichtlinie von FireEye</a> und  <a href="http://www.dxc.technology/privacy" target="_blank">DXC Technology</a> zu. Die von uns gesammelten Daten leiten wir für Direktmarketingzwecke an FireEye und DXC Technology weiter.',
 
+    //SPLUNK 5
+    '5elqFormName'=>'',
+    '5developedby'=>'Entwickelt von',
+    '5sponsoredby'=>'Gesponsert von',
+    '5restart'=>'Bewertung erneut starten',
+    '5assoc'=>'In association with',
+    '5sponsors'=>'Splunk',
+    '5title'=>'IDC\'s Security Assessment',
+    '5sub-title'=>'Wie sicher ist Ihr Unternehmen?',
+    '5landing'=>'
+    <p>
+        Sicherheit macht Schlagzeilen – aber das sind nur die schwersten und profiliertesten Sicherheitsvorfälle. In Wirklichkeit sind Unternehmen ständig Angriffen ausgesetzt. 
+    </p>
+    <p>
+        Wie wird Ihre Sicherheitsoperation mit den immer stärker wachsenden Risiken von heute fertig? Füllen Sie die Beurteilung zur Reaktionsbereitschaft bei Sicherheitsvorfällen von IDC aus und finden Sie heraus, wie Sie im Vergleich mit ähnlichen Unternehmen abschneiden. Außerdem erhalten Sie nützliche Tipps, wie Sie Ihre Lage verbessern können. 
+    </p>',
+    '5startbut'=>'Jetzt starten',
+
+    '5security-strategy-poor-txt'=>'',
+    '5security-strategy-standard-txt'=>'',
+    '5security-strategy-good-txt'=>'',
+    '5security-strategy-aspirational-txt'=>'',
+    '5security-strategy-best-txt'=>'',
+
+    '5incident-detection-poor-txt'=>'',
+    '5incident-detection-standard-txt'=>'',
+    '5incident-detection-good-txt'=>'',
+    '5incident-detection-aspirational-txt'=>'',
+    '5incident-detection-best-txt'=>'',
+
+    '5incident-response-poor-txt'=>'',
+    '5incident-response-standard-txt'=>'',
+    '5incident-response-good-txt'=>'',
+    '5incident-response-aspirational-txt'=>'',
+    '5incident-response-best-txt'=>'',
+    '5subreporttitle' => 'Sie gehören zu den <span class="color--primary">:percent%</span>, deren :section sich auf Stufe <span class="color--primary">:result</span>',
+
+    '5poor'=>'Poor', //reactive
+    '5poortxt'=>"Organisationen auf dieser Stufe neigen dazu, das Risiko einer Verletzung nicht  wahr zu nehmen. Scherheitsmaßnahmen sind reaktiv und es gibt keinen Vorfall-Reaktionsplan.
+Organisationen auf dieser Stufe sehen sich oftmals Krisen gegenüber, wenn ein Vorfall stattgefunden hat, streiten jedoch jegliches Risiko einer Verletzung ab.
+Die Mittelbereitstellung für die Vorfallsreaktion ist ungeplant und stammt meist aus internen Ressourcen.",
+    '5poortweet' => "I took the @splunk Security Assessment and it's shown me where I can improve. Interested?",
+    '5standard'=>'Standard',
+    '5standardtxt'=>"Organisationen auf dieser Stufe haben begrenzte Ressourcen, um Verstöße zu finden. Es gibt einen grundlegenden Ansprechpartner, dieser wird jedoch nur Ad-hoc kontaktiert. Die Mittelbereitstellung für die Vorfall-Reaktion ist geplant und stammt meist aus internen Ressourcen. Lösungen zur Erkennung von Vorfällen wurden vor allem intern entwickelt.",
+    '5standardtweet' => "I took the @splunk Security Assessment and my company is on the right track. See how your business does... http://bit.ly/1Y6JAqa",
+    '5good'=>'Good',
+    '5goodtxt'=>"Organisationen auf dieser Stufe erkennen, dass Verletzung in der heutigen Zeit unvermeidlich sind. Es gibt einen Reaktionspartner auf Abruf mit vorab bezahlten Zeitfenstern.
+Formale Pläne zur Cyber-Readiness sind vorhanden, werden aber nicht oft getestet. Die Mittelbereitstellung für die Vorfall-Reaktion ist geplant und stammt sowohl aus internen als auch externen Ressourcen.
+Grundlegende Analysen werden aus SIEM-Feeds gezogen und es gibt eine gewisse Integration zwischen Sicherheitsprodukten (vermutlich maßgeschneidert).
+Es herrscht ein gutes Verständnis über die Risikosituation. ",
+    '5goodtweet' => "I took the @splunk Security Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    '5aspirational'=>'',
+    '5aspirationaltxt'=>"Organisationen auf dieser Stufe gehen von Sicherheitsvorfällen aus. Es gibt eine Reihe von Incident-Response-Spezialisten auf Abruf.
+Es gibt einen formalen Vorfall-Reaktionsplan, der jährlich getestet wird.
+Die Mittelbereitstellung für die Vorfallsreaktion ist geplant und stammt überwiegend aus externen Ressourcen.
+Vorfall-Reaktionspläne sind standardisiert und basieren auf formalen Prozessen.",
+    '5aspirationaltweet' => "I took the @splunk Security Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    '5best'=>'Best',
+    '5besttxt'=>"Organisationen auf dieser Stufe sind proaktive Breach Hunters. Sie konzentrieren sich auf Best Practices und eine kontinuierliche Verbesserung.
+Ein Vorfall-Reaktionsplan ist vorhanden und wird regelmäßig getestet. Dies wird von einem dedizierten Incident Response Team (entweder Inhouse oder durch Dritte) unterstützt. Es sind rechtliche Vereinbarungen vorhanden, um die Informationen zur Vorfall-Reaktion zu teilen.
+Die Mittelbereitstellung für die Vorfall-Reaktion ist geplant und stammt sowohl aus dedizierten internen als auch externen Ressourcen, die regelmäßige Sitzungen zur weiteren Planung abhalten.
+Eine einheitliche und integrierte Sicherheitsmanagementlösung bietet der Organisation eine ganzheitliche Sicht auf die Sicherheit.
+Risiko ist ein wichtiger Treiber für Assessments und Prozesse zur Risikominderung.",
+    '5besttweet' => "I took the @splunk Security Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    '5send'=>'We can send you the full results directly to your mailbox',
+    '5fullreport'=>'Tragen Sie Ihre Daten ein, um einen individuell angepassten Bericht mit nützlichen Tipps zu erhalten.',
+    '5provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
+    '5byreg'=>'Durch die Registrierung bei IDC erklären Sie sich mit unserer <a href="/privacy" target="_blank">Datenschutzrichtlinie</a> sowie mit der <a href="https://www.splunk.com/en_us/legal/privacy/privacy-policy.html" target="_blank">Datenschutzrichtlinie</a> von Splunk einverstanden. Die erfassten Informationen werden zu Marketingzwecken an Splunk weitergegeben.',
+    '5wait'=>'While you\'re waiting why not tweet your results and see how your colleagues measure up?',
+
     //general
     'introduction' => 'Einführung',
+    'disclaimer'=>'Haftungsausschluss',
+    'allrights' => 'alle Rechte vorbehalten',
     'next'=>'Neben',
     'back'=>'Zurück',
     'continue'=>'Fahren Sie mit dem Assessment fort',

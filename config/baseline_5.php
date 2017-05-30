@@ -6,9 +6,19 @@ return array(
         'benchmark-country-en' => 3,
         'benchmark-country-fr' => 2,
         'benchmark-country-de' => 3,
+
         'benchmark-size-500-to-999' => 2,
+        'benchmark-size-de-500-à-999' => 2,
+        'benchmark-size-500-bis-999' => 2,
+
         'benchmark-size-1000-to-4999' => 3,
+        'benchmark-size-de-1-000-à-2-499' => 3,
+        'benchmark-size-1000-bis-2499' => 3,
+
         'benchmark-size-5000+' => 3,
+        'benchmark-size-2-500-ou-plus' => 3,
+        'benchmark-size-2500-oder-mehr' => 3,
+
         'complete' => [
             'graph' => [
                 'label' => 'Stage',
@@ -71,8 +81,7 @@ return array(
         ),
         'tweet' => false,
         'eloqua' => [
-            'id' => 1787,
-            'url' => 'http://www.google.com',
+            'url' => 'https://s1528.t.eloqua.com/e/f2',
             'fields' => [
                 'Language' => [
                     'type' => 'locale'
@@ -139,6 +148,18 @@ return array(
                 ],
                 'outputreport' => [
                     'type' => 'report'
+                ],
+                'elqFormName' => [
+                    'type' => 'hidden',
+                    'value' => 'IDCMaturity',
+                ],
+                'elqSiteID' => [
+                    'type' => 'hidden',
+                    'value' => 1528,
+                ],
+                'elqSiteID' => [
+                    'type' => 'hidden',
+                    'value' => 1528,
                 ]
             ]
         ]
@@ -148,9 +169,18 @@ return array(
         'benchmark-country-en' => 3,
         'benchmark-country-fr' => 3,
         'benchmark-country-de' => 3,
+
         'benchmark-size-500-to-999' => 3,
+        'benchmark-size-de-500-à-999' => 3,
+        'benchmark-size-500-bis-999' => 3,
+
         'benchmark-size-1000-to-4999' => 3,
+        'benchmark-size-de-1-000-à-2-499' => 3,
+        'benchmark-size-1000-bis-2499' => 3,
+
         'benchmark-size-5000+' => 3,
+        'benchmark-size-2-500-ou-plus' => 3,
+        'benchmark-size-2500-oder-mehr' => 3,
         'complete' => [
             'graph' => [
                 'label' => 'Stage',
@@ -218,9 +248,18 @@ return array(
         'benchmark-country-en' => 2,
         'benchmark-country-fr' => 2,
         'benchmark-country-de' => 2,
+
         'benchmark-size-500-to-999' => 1,
+        'benchmark-size-de-500-à-999' => 1,
+        'benchmark-size-500-bis-999' => 1,
+
         'benchmark-size-1000-to-4999' => 2,
+        'benchmark-size-de-1-000-à-2-499' => 2,
+        'benchmark-size-1000-bis-2499' => 2,
+
         'benchmark-size-5000+' => 2,
+        'benchmark-size-2-500-ou-plus' => 2,
+        'benchmark-size-2500-oder-mehr' => 2,
         'complete' => [
             'graph' => [
                 'label' => 'Stage',
@@ -288,9 +327,18 @@ return array(
         'benchmark-country-en' => 3,
         'benchmark-country-fr' => 3,
         'benchmark-country-de' => 3,
+
         'benchmark-size-500-to-999' => 3,
+        'benchmark-size-de-500-à-999' => 3,
+        'benchmark-size-500-bis-999' => 3,
+
         'benchmark-size-1000-to-4999' => 3,
+        'benchmark-size-de-1-000-à-2-499' => 3,
+        'benchmark-size-1000-bis-2499' => 3,
+
         'benchmark-size-5000+' => 3,
+        'benchmark-size-2-500-ou-plus' => 3,
+        'benchmark-size-2500-oder-mehr' => 3,
         'complete' => [
             'graph' => [
                 'label' => 'Stage',
@@ -306,7 +354,7 @@ return array(
         'report-settings' => [
             'header'=>true,
             'footer'=>true,
-'graph'=>false,
+            'graph'=>false,
             'pb'=>true,
             'designline'=>true,
             'color'=>'#6AB361',

@@ -10,6 +10,7 @@ use App\Http\Requests\SubmitAssessmentsRequest;
 use App\Jobs\SendEloquaRequest;
 use App\Language;
 use App\Tool;
+use App\Tracker;
 use App\Url;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
@@ -522,10 +523,11 @@ public function postComplete(SubmitAssessmentsRequest $request)
 	}
 
 	//generate report
-	$this->wkhtml($assessment->id,str_slug($assessment->fname.'_'.$assessment->lname.'_'.session('product.title').'_Assessment', '-'));
+	$filename = str_slug($assessment->fname.'_'.$assessment->lname.'_'.session('product.title').'_Assessment', '-');
+	$this->wkhtml($assessment->id,$filename);
 
 	$eloqua = config('baseline_'.session('product.id').'.overall.eloqua',false);
-	if($eloqua){ //!App::isLocal() && 
+	if(!App::isLocal() && $eloqua){ //!App::isLocal() && 
 	//send guzzle request
 	    $url = $eloqua['url'];
 	    $id = $eloqua['id'];
@@ -538,6 +540,12 @@ public function postComplete(SubmitAssessmentsRequest $request)
 	    			break;
 	    		case 'field':
 	    			$query[$fieldKey] = $source[$settings['name']];
+	    			break;
+	    		case 'hidden':
+	    			$query[$fieldKey] = $settings['value'];
+	    			break;
+	    		case 'report':
+	    			$query[$fieldKey] = $assessment->id.'_'.$filename.'.pdf';
 	    			break;
 	    		case 'question':
 	    			$selected = session('questions.'.$settings['questions'][0].'.selected');

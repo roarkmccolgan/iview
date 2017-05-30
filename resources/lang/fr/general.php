@@ -74,13 +74,82 @@ return array(
     '2fullreport'=>'Would you like the full report that provides you with some essential guidance in the development of your cloud business.?',
     '2provide'=>'Veuillez simplement nous fournir votre nom et votre adresse e-mail afin de recevoir un lien pour pouvoir le télécharger.',
     '2byreg'=>'En vous inscrivant à IDC, vous acceptez notre <a href="/privacy" target="_blank">Politique de confidentialité</a> ainsi que celle de <a href="https://www.fireeye.com/company/privacy.html" target="_blank">FireEye</a> et <a href="http://www.dxc.technology/privacy" target="_blank">DXC Technology</a>. Les informations que nous recueillons seront partagées avec FireEye et DXC Technology à des fins de marketing direct',
-    '2wait'=>'While you\'re waiting why not tweet your results and see how your colleagues measure up?',    
+    '2wait'=>'While you\'re waiting why not tweet your results and see how your colleagues measure up?',
+
+    //SPLUNK 5
+    '5elqFormName'=>'',
+    '5developedby'=>'Développé par',
+    '5sponsoredby'=>'Sponsorisé par',
+    '5restart'=>'Recommencer l\'évaluation',
+    '5disclaimer'=>'Avertissement',
+    '5assoc'=>'In association with',
+    '5sponsors'=>'Splunk',
+    '5title'=>'L\'évaluation d\'IDC en ce qui concerne la sécurite',
+    '5sub-title'=>'Votre entreprise est-elle en sécurité ?',
+    '5landing'=>'
+    <p>
+        La sécurité attire l’attention des médias. Toutefois, seules les violations les plus sérieuses et les plus médiatisées font les gros titres, alors qu’en réalité les entreprises sont attaquées en permanence. 
+    </p>
+    <p>
+        Comment vos opérations de sécurité font-elles face aux menaces actuelles toujours plus nombreuses ? Passez l’évaluation Security Responce Readiness d’IDC pour savoir où vous en êtes par rapport à vos homologues et recevoir des principes essentiels sur la manière de vous améliorer. 
+    </p>',
+    '5startbut'=>'Commencez ici',
+
+    '5security-strategy-poor-txt'=>'',
+    '5security-strategy-standard-txt'=>'',
+    '5security-strategy-good-txt'=>'',
+    '5security-strategy-aspirational-txt'=>'',
+    '5security-strategy-best-txt'=>'',
+
+    '5incident-detection-poor-txt'=>'',
+    '5incident-detection-standard-txt'=>'',
+    '5incident-detection-good-txt'=>'',
+    '5incident-detection-aspirational-txt'=>'',
+    '5incident-detection-best-txt'=>'',
+
+    '5incident-response-poor-txt'=>'',
+    '5incident-response-standard-txt'=>'',
+    '5incident-response-good-txt'=>'',
+    '5incident-response-aspirational-txt'=>'',
+    '5incident-response-best-txt'=>'',
+    '5subreporttitle' => 'Vous dans les <span class="color--primary">:percent%</span>, de ceux dont la :section est <span class="color--primary">:result</span>',
+
+    '5poor'=>'Poor', //reactive
+    '5poortxt'=>"Les organisations à ce stade n'ont généralement perçu aucun risque  d'infraction. La sécurité est réactive et il n'y a pas de plan de réponse aux incident en place.
+Les organisations à ce stade sont souvent en mode sécurité de crise et en déni de violations.
+Le recrutement lié à la réponse aux incidents n'est pas planifié et principlament faite en interne.",
+    '5poortweet' => "I took the @splunk Security Assessment and it's shown me where I can improve. Interested?",
+    '5standard'=>'Standard',
+    '5standardtxt'=>"Les organisations à ce stade ont souvent des ressources limitées pour detecter les infractions. Il existe un partenaire de réponse aux incidents, mais qui reste utilisé sur une base ad hoc. L'assignation à une réponse incident est prévue, principalement en utilisant des ressources internes. Les solutions pour détecter les incidents sont principalement des solutions et des processus développés en interne.",
+    '5standardtweet' => "I took the @splunk Security Assessment and my company is on the right track. See how your business does... http://bit.ly/1Y6JAqa",
+    '5good'=>'Good',
+    '5goodtxt'=>"Les organisations à ce stade reconnaissent que les infractions sont inévitables. Il y a un partenaire de réponse d'incident d'astreinte avec des blocs de temps prépayés.
+Des programmes officiels de préparation à la cybercriminalité sont en place, mais souvent peu testés. Le recrutement pour la réponse aux incidents est prévu en utilisant des ressources internes et externes.
+Les analyses de base sont tirées des flux SIEM et il existe une certaine intégration entre les produits de sécurité, souvent personnalisés. Bonne compréhension de la posture de risque.",
+    '5goodtweet' => "I took the @splunk Security Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    '5aspirational'=>'',
+    '5aspirationaltxt'=>"Les organisations à ce stade partent du principe qu'il y a eu infraction. Il existe un panel de spécialistes de réponse aux incidents d'astreinte.
+Il existe un programme formel de réponse aux incidents qui est testé chaque année.
+Le recrutement pour la réponse aux incidents est prévu en utilisant principalement des ressources externes.
+Les programmes d'intervention en cas d'incident sont normalisés et reposent sur des processus formels et dossiers d'exploitation.",
+    '5aspirationaltweet' => "I took the @splunk Security Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    '5best'=>'Best',
+    '5besttxt'=>"Les organisations à ce stade sont des chasseurs d'infractions proactifs. Elles se concentrent sur les meilleures pratiques et l'amélioration en continu.
+Un programme de réponse aux incidents est en place et testé régulièrement. Celui-ci est soutenu par une équipe de réponse aux incidents de réserve (à l'interne ou tiers). Des accords juridiques sont en place pour partager les données sur les incidents.
+Le recrutement de la réponse aux incidents est planifié en utilisant le personnel interne et des ressources externes mandatées avec des réunions de planification régulières.
+Une solution de gestion de sécurité unifiée et intégrée offre à l'organisation une vision holistique de la sécurité.
+Le risque est un facteur clé pour les processus d'évaluation et d'atténuation.",
+    '5besttweet' => "I took the @splunk Security Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    '5fullreport'=>'Pour votre rapport personnalisé avec principes essentiels, veuilles renseigner vos informations.',
+    '5byreg'=>'En vous enregistrant avec IDC, vous acceptez notre Politique de <a href="/privacy" target="_blank">confidentialité et la Politique</a> de <a href="https://www.splunk.com/en_us/legal/privacy/privacy-policy.html" target="_blank">confidentialité de Splunk</a>. Les informations collectées seront partagées avec Splunk à des fins de marketing direct.',
 
     //general
     'introduction' => 'Introduction',
+    'allrights' => 'Tous droits réservés',
+    'disclaimer'=>'Avertissement',
     'next'=>'Suivant',
     'back'=>'Back',
-    'continue'=>'Continue with the Assessment',
+    'continue'=>'Poursuivez l’évaluation',
     'of'=>'de',
     'youre'=>'You\'re ',
     'your'=>'votre',

@@ -312,6 +312,8 @@ Complete the IDC Cyber Risk Assessment Tool to find out more about how ready you
 
     //SPLUNK 5
     '5elqFormName'=>'',
+    '5developedby'=>'Developed by',
+    '5sponsoredby'=>'Sponsored by',
     '5restart'=>'Restart Assessment',
     '5assoc'=>'In association with',
     '5sponsors'=>'Splunk',
@@ -382,6 +384,7 @@ Risk is a key driver for assessment and mitigation processes.",
 
     //general
     'disclaimer' => 'Disclaimer',
+    'allrights' => 'All Rights Resevered',
     'introduction' => 'Introduction',
     'next'=>'Next',
     'back'=>'Back',

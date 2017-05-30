@@ -70,13 +70,15 @@ trait GenerateReportTrait {
 
 		    $vars = [];
 		    $count = 0;
+		    $locale = App::getLocale();
 		    $headervars = [];
 		    $headervars['tool_title'] = trans(session('product.alias').'.title');
 		    $headervars['sub-title'] = trans(session('product.alias').'.sub-title');
 		    $headervars['company_alias'] = session('company.alias');
 		    $headervars['tool_id'] = session('product.id');
 		    $headervars['template'] = session('template');
-		    $locale = App::getLocale();
+		    $headervars['locale'] = $locale;
+		    
 		    if(session('product.id')==5){
 				$widthstage = [13, 38, 65, 90, 118];
 				$sectionVars = [];
@@ -122,8 +124,9 @@ trait GenerateReportTrait {
 				//company size benchmark by language
 				$demographicsizeanswer = session('questions.screeners.pages.page1.questions.s1.selected');
 				$demographicsizeanswer = explode('|', $demographicsizeanswer);
-				$demographicsizeanswer = str_replace(" ", "-", $demographicsizeanswer[0]);
+				$demographicsizeanswer = str_replace([" ","."], ["-",""], $demographicsizeanswer[0]);
 				$overallsizenumber = config('baseline_'.session('product.id').'.overall.benchmark-size-'.$demographicsizeanswer);
+				
 				if($number > $overallsizenumber){
 					$overallsize = $number-$overallsizenumber.' '.str_plural('level', $number-$overallsizenumber).' ahead of the leaders in companies of the same size';
 				}elseif($number == $overallsizenumber){

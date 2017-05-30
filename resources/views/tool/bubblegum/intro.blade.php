@@ -26,7 +26,7 @@
                                 <h1>{{Lang::get('general.'.session('product.id').'sub-title')}}</h1>
                                 {!!Lang::get('general.'.session('product.id').'landing')!!}
                                 <hr class="short">
-                                <a href="{{'quiz/'.Session::get('startSection').'/page1'}}" class="btn btn--lg btn--client">
+                                <a href="{{'/'.session('localeUrl').'quiz/'.Session::get('startSection').'/page1'}}" class="btn btn--lg btn--client">
                                     <span class="btn__text">
                                         {{Lang::get('general.'.session('product.id').'startbut')}}
                                     </span>

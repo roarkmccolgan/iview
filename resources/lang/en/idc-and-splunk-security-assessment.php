@@ -161,220 +161,39 @@ return array(
         'title'=>'Your Overall Security Assessment is at',
         'hidetitle'=>'true',
         'image'=>'',
-        'stage1'=>'
-            <p>
-                The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators. 
-            </p>
-        ',
-        'stage2'=>'
-            <p>
-                The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators.
-            </p>
-        ',
-        'stage3'=>'
-            <p>
-                The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators.
-            </p>
-        ',
-        'stage4'=>'
-            <p>
-                The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators.
-            </p>
-        '
+        'stage1'=>'',
+        'stage2'=>'',
+        'stage3'=>'',
+        'stage4'=>''
     ),
     'security-strategy' => array(
         'title'=>'Security Strategy',
         'image'=>'security-strategy.jpg',
         'pb'=>'pb',
-        'stage1'=>'
-            <ul>
-                <li>List item 1</li>
-                <li>List item 2</li>
-                <li>List item 3</li>
-                <li>List item 4</li>
-            </ul>
-            <img src="http://redhat.idcready.net/images/tools/5/security-strategy.jpg" class="right">
-            <p>
-                To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental.
-            </p>
-        ',
-        'stage2'=>'
-            <ul>
-                <li>List item 1</li>
-                <li>List item 2</li>
-                <li>List item 3</li>
-                <li>List item 4</li>
-            </ul>
-            <img src="http://redhat.idcready.net/images/tools/5/security-strategy.jpg" class="right">
-            <p>
-                To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental.
-            </p>
-        ',
-        'stage3'=>'
-            <ul>
-                <li>List item 1</li>
-                <li>List item 2</li>
-                <li>List item 3</li>
-                <li>List item 4</li>
-            </ul>
-            <img src="http://redhat.idcready.net/images/tools/5/security-strategy.jpg" class="right">
-            <p>
-                To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental.
-            </p>
-        ',
-        'stage4'=>'
-            <ul>
-                <li>List item 1</li>
-                <li>List item 2</li>
-                <li>List item 3</li>
-                <li>List item 4</li>
-            </ul>
-            <img src="http://redhat.idcready.net/images/tools/5/security-strategy.jpg" class="right">
-            <p>
-                To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental.
-            </p>
-        ',
-        'stage5'=>'
-            <ul>
-                <li>List item 1</li>
-                <li>List item 2</li>
-                <li>List item 3</li>
-                <li>List item 4</li>
-            </ul>
-            <img src="http://redhat.idcready.net/images/tools/5/security-strategy.jpg" class="right">
-            <p>
-                To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental.
-            </p>
-        '
+        'stage1'=>'',
+        'stage2'=>'',
+        'stage3'=>'',
+        'stage4'=>'',
+        'stage5'=>''
     ),
     'incident-detection' => array(
         'title'=> 'Data rights and standards',
         'image'=>'incident-detection.jpg',
         'pb'=>'pb',
-        'stage1'=>'
-            <ul>
-                <li>List item 1</li>
-                <li>List item 2</li>
-                <li>List item 3</li>
-                <li>List item 4</li>
-            </ul>
-            <img src="http://redhat.idcready.net/images/tools/5/incident-detection.jpg" class="right">
-            <p>
-                To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental.
-            </p>
-        ',
-        'stage2'=>'
-            <ul>
-                <li>List item 1</li>
-                <li>List item 2</li>
-                <li>List item 3</li>
-                <li>List item 4</li>
-            </ul>
-            <img src="http://redhat.idcready.net/images/tools/5/incident-detection.jpg" class="right">
-            <p>
-                To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental.
-            </p>
-        ',
-        'stage3'=>'
-            <ul>
-                <li>List item 1</li>
-                <li>List item 2</li>
-                <li>List item 3</li>
-                <li>List item 4</li>
-            </ul>
-            <img src="http://redhat.idcready.net/images/tools/5/incident-detection.jpg" class="right">
-            <p>
-                To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental.
-            </p>
-        ',
-        'stage4'=>'
-            <ul>
-                <li>List item 1</li>
-                <li>List item 2</li>
-                <li>List item 3</li>
-                <li>List item 4</li>
-            </ul>
-            <img src="http://redhat.idcready.net/images/tools/5/incident-detection.jpg" class="right">
-            <p>
-                To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental.
-            </p>
-        ',
-        'stage5'=>'
-            <ul>
-                <li>List item 1</li>
-                <li>List item 2</li>
-                <li>List item 3</li>
-                <li>List item 4</li>
-            </ul>
-            <img src="http://redhat.idcready.net/images/tools/5/incident-detection.jpg" class="right">
-            <p>
-                To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental.
-            </p>
-        '
+        'stage1'=>'',
+        'stage2'=>'',
+        'stage3'=>'',
+        'stage4'=>'',
+        'stage5'=>''
     ),
     'incident-response' => array(
         'title'=> 'incident-response',
         'image'=>'incident-response.jpg',
         'pb'=>'pb',
-        'stage1'=>'
-            <ul>
-                <li>List item 1</li>
-                <li>List item 2</li>
-                <li>List item 3</li>
-                <li>List item 4</li>
-            </ul>
-            <img src="http://redhat.idcready.net/images/tools/5/incident-response.jpg" class="right">
-            <p>
-                To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental.
-            </p>
-        ',
-        'stage2'=>'
-            <ul>
-                <li>List item 1</li>
-                <li>List item 2</li>
-                <li>List item 3</li>
-                <li>List item 4</li>
-            </ul>
-            <img src="http://redhat.idcready.net/images/tools/5/incident-response.jpg" class="right">
-            <p>
-                To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental.
-            </p>
-        ',
-        'stage3'=>'
-            <ul>
-                <li>List item 1</li>
-                <li>List item 2</li>
-                <li>List item 3</li>
-                <li>List item 4</li>
-            </ul>
-            <img src="http://redhat.idcready.net/images/tools/5/incident-response.jpg" class="right">
-            <p>
-                To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental.
-            </p>
-        ',
-        'stage4'=>'
-            <ul>
-                <li>List item 1</li>
-                <li>List item 2</li>
-                <li>List item 3</li>
-                <li>List item 4</li>
-            </ul>
-            <img src="http://redhat.idcready.net/images/tools/5/incident-response.jpg" class="right">
-            <p>
-                To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental.
-            </p>
-        ',
-        'stage5'=>'
-            <ul>
-                <li>List item 1</li>
-                <li>List item 2</li>
-                <li>List item 3</li>
-                <li>List item 4</li>
-            </ul>
-            <img src="http://redhat.idcready.net/images/tools/5/incident-response.jpg" class="right">
-            <p>
-                To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental.
-            </p>
-        '
+        'stage1'=>'',
+        'stage2'=>'',
+        'stage3'=>'',
+        'stage4'=>'',
+        'stage5'=>''
     )
 );
