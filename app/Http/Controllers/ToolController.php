@@ -171,10 +171,12 @@ public function run(Request $request, $subdomain)
 			$source[$extraField['name']] = $request->input($extraField['name']);
 		}
 	}
-	foreach ($request->session()->get('queryparam') as $key => $value) {
-		$source[$key] = $value;
+	if($request->session()->has('queryparam')){
+		foreach ($request->session()->get('queryparam') as $key => $value) {
+			$source[$key] = $value;
+		}
 	}
-
+	
 	session(['source' => $source]);
 
 	$return_visitor = $request->cookie('quiz_progress');
@@ -584,7 +586,7 @@ public function postComplete(SubmitAssessmentsRequest $request)
 	    foreach (session('queryparam') as $key => $value) {
 	    	$query[$key] = $value;
 	    }
-	    //dd($query);
+	    
 
 	    $this->dispatch(new SendEloquaRequest($url, $query));
 	}
