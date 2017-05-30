@@ -613,7 +613,7 @@ public function postComplete(SubmitAssessmentsRequest $request)
 				$emails[] = $user->email;
 			}
 		}else{
-			$emails[] = ['roarkmccolgan@gmail.com'];
+			$emails[] = 'roarkmccolgan@gmail.com';
 		}
 	}
 	$subject = $assessment->tool->company->name.' - '.$assessment->tool->title.' Assessment completed';
