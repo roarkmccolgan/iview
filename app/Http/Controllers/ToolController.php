@@ -608,8 +608,12 @@ public function postComplete(SubmitAssessmentsRequest $request)
 	if(App::isLocal()){
 		$emails = ['roarkmccolgan@gmail.com'];
 	}else{
-		foreach ($assessment->tool->users as $user) {
-			$emails[] = $user->email;
+		if($assessment->tool_id != 5){ //spunk
+			foreach ($assessment->tool->users as $user) {
+				$emails[] = $user->email;
+			}
+		}else{
+			$emails[] = ['roarkmccolgan@gmail.com'];
 		}
 	}
 	$subject = $assessment->tool->company->name.' - '.$assessment->tool->title.' Assessment completed';
