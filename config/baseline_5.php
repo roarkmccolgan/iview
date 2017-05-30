@@ -156,10 +156,6 @@ return array(
                 'elqSiteID' => [
                     'type' => 'hidden',
                     'value' => 1528,
-                ],
-                'elqSiteID' => [
-                    'type' => 'hidden',
-                    'value' => 1528,
                 ]
             ]
         ]

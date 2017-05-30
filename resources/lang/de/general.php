@@ -134,11 +134,18 @@ Risiko ist ein wichtiger Treiber für Assessments und Prozesse zur Risikominderu
     '5byreg'=>'Durch die Registrierung bei IDC erklären Sie sich mit unserer <a href="/privacy" target="_blank">Datenschutzrichtlinie</a> sowie mit der <a href="https://www.splunk.com/en_us/legal/privacy/privacy-policy.html" target="_blank">Datenschutzrichtlinie</a> von Splunk einverstanden. Die erfassten Informationen werden zu Marketingzwecken an Splunk weitergegeben.',
     '5wait'=>'While you\'re waiting why not tweet your results and see how your colleagues measure up?',
 
+    '5aheadglobal'=>'ahead of the global leaders',
+    '5inlineglobal'=>'Inline with the global leaders',
+    '5behindglobal'=>'behind the global leaders',
+    '5aheadsize'=>'Stufen im voraus führender Unternehmen gleicher Größe',
+    '5inlinesize'=>'Auf demselben Niveau mit Unternehmen gleicher Größe',
+    '5behindsize'=>'Stufen hinter führenden Unternehmen gleicher Größe',
+
     //general
     'introduction' => 'Einführung',
     'disclaimer'=>'Haftungsausschluss',
     'allrights' => 'alle Rechte vorbehalten',
-    'next'=>'Neben',
+    'next'=>'Weiter',
     'back'=>'Zurück',
     'continue'=>'Fahren Sie mit dem Assessment fort',
     'of'=>'von',

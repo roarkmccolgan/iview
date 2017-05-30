@@ -5,10 +5,11 @@ namespace App\Jobs;
 use App\Jobs\Job;
 use Illuminate\Contracts\Mail\Mailer;
 use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Contracts\Bus\SelfHandling;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 
-class SendEloquaRequest extends Job implements ShouldQueue
+class SendEloquaRequest extends Job implements ShouldQueue, SelfHandling
 {
     use InteractsWithQueue, SerializesModels;
 

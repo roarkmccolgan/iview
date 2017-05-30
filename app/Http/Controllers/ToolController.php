@@ -171,6 +171,9 @@ public function run(Request $request, $subdomain)
 			$source[$extraField['name']] = $request->input($extraField['name']);
 		}
 	}
+	foreach ($request->session()->get('queryparam') as $key => $value) {
+		$source[$key] = $value;
+	}
 
 	session(['source' => $source]);
 
@@ -527,11 +530,9 @@ public function postComplete(SubmitAssessmentsRequest $request)
 	$this->wkhtml($assessment->id,$filename);
 
 	$eloqua = config('baseline_'.session('product.id').'.overall.eloqua',false);
-	if(!App::isLocal() && $eloqua){ //!App::isLocal() && 
+	if($eloqua){ //!App::isLocal() && 
 	//send guzzle request
 	    $url = $eloqua['url'];
-	    $id = $eloqua['id'];
-	    $query['id'] = $id;
 
 	    foreach ($eloqua['fields'] as $fieldKey => $settings) {
 	    	switch ($settings['type']) {
@@ -545,7 +546,7 @@ public function postComplete(SubmitAssessmentsRequest $request)
 	    			$query[$fieldKey] = $settings['value'];
 	    			break;
 	    		case 'report':
-	    			$query[$fieldKey] = $assessment->id.'_'.$filename.'.pdf';
+	    			$query[$fieldKey] = session('url').'/'.session('localeUrl').'/download/'.$assessment->id;
 	    			break;
 	    		case 'question':
 	    			$selected = session('questions.'.$settings['questions'][0].'.selected');
@@ -580,6 +581,11 @@ public function postComplete(SubmitAssessmentsRequest $request)
 	    			break;
 	    	}
 	    }
+	    foreach (session('queryparam') as $key => $value) {
+	    	$query[$key] = $value;
+	    }
+	    //dd($query);
+
 	    $this->dispatch(new SendEloquaRequest($url, $query));
 	}
 	$subject = trans(session('product.alias').'.email.subject');

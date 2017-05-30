@@ -46,6 +46,11 @@ class RouteByURL
                     $request->session()->put('utm', $request->input('utm'));
                 }
             }
+            foreach ($request->all() as $key => $value) {
+                if($key!=='utm'){
+                    $request->session()->put('queryparam.'.$key, $value);
+                }
+            }
 
             //add model to request
             $request->attributes->add(['product'=> $url->urlable]);
