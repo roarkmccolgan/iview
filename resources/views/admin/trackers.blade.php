@@ -55,12 +55,10 @@
 									<td>
 										<ul>
 										@foreach($tool->urls as $url)
-											@if($tracker->language_id==$url->language_id)
 											<?php
-											$langSec = $tracker->language_id !=1 ? '/'.$url->language->abbreviation:'';
+											$langSec = $tracker->language_id !=1 ? '/'.$tracker->language->abbreviation:'';
 											?>
 											<li>http://{{$url->subdomain.'.'.$url->domain.$langSec.'/?utm='.$tracker->code}}</li>
-											@endif
 										@endforeach
 										</ul>
 									</td>

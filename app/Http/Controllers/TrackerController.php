@@ -24,7 +24,7 @@ class TrackerController extends Controller
         $tool = $request->get('product');
 
         if($user->tools->contains($tool->id) || $user->hasRole('super')){
-            $tool->load(['trackers','company','urls.language']);
+            $tool->load(['trackers.language','company','urls.language']);
             
             JavaScript::put([
                 'foo' => 'bar'
@@ -55,7 +55,7 @@ class TrackerController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(AddTrackerRequest $request)
-    {
+    { 
         $tracker = Tracker::create($request->except(['_token']));
         return redirect('admin/tracking')->with('status', ['type'=>'success','message'=>'Tracker Created']);
     }
