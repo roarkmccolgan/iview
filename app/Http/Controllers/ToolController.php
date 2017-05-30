@@ -339,7 +339,7 @@ public function savePage(Request $request, $subdomain, $section=false, $page=fal
 			$title = session('questions.'.$section.'.pages.page1.title');
 			$rating = trans(session('product.alias').'.'.$this->result[$section]['rating']);
 			$heading = trans('general.'.session('product.id').'subreporttitle',[
-				'percent'=>$this->baseline[$section]['types'][$this->result[$section]['rating']]['benchmark'],
+				'percent'=>array_key_exists('benchmark',$this->baseline[$section]['types'][$this->result[$section]['rating']]) ? $this->baseline[$section]['types'][$this->result[$section]['rating']]['benchmark'] : 0,
 				'result'=>trans(session('product.alias').'.'.$this->result[$section]['rating']),
 				'section'=> $title
 			]);
