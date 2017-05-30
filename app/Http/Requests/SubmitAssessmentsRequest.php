@@ -33,7 +33,7 @@ class SubmitAssessmentsRequest extends Request
             'phone'=>'required',
             'terms'=>'required'
         ];
-        if(isset($this->input('extra'))){
+        if($this->has('extra')){
             foreach($this->input('extra') as $key => $value) {
                 $rules["extra.".$key] = ['required'];
             }
