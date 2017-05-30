@@ -15,7 +15,7 @@ return array(
                 'questions' => array(
                     's1'=>array(
                         'type'=>'button',
-                        'question'=>'Combien de salariés travaillent à temps plein dans votre entreprise à travers le monde ?',
+                        'question'=>'Combien de salariés travaillent à temps plein dans votre entreprise à travers le monde ?',
                         'name'=>'s1',
                         'options'=>array(
                             array(
@@ -24,12 +24,12 @@ return array(
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'de 1 000 à 2 499',
+                                'label'=>'de 1 000 à 2 499',
                                 'value'=>0,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'2 500 ou plus',
+                                'label'=>'2 500 ou plus',
                                 'value'=>0,
                                 'checked'=>false
                             )
@@ -52,7 +52,7 @@ return array(
                 'questions' => array(
                     'q1'=>array(
                         'type'=>'radio',
-                        'question'=>'Laquelle des affirmations suivantes décrit le mieux la stratégie de sécurité actuelle de votre entreprise ?',
+                        'question'=>'Laquelle des affirmations suivantes décrit le mieux la stratégie de sécurité actuelle de votre entreprise ?',
                         'name'=>'q1',
                         'options'=>array(
                             array(
@@ -93,7 +93,7 @@ return array(
                 'questions' => array(
                     'q2'=>array(
                         'type'=>'slider',
-                        'question'=>'Dans quelle mesure les éléments suivants stimulent-ils votre investissement dans la sécurité informatique ? <br/><span class="small">Veuillez utiliser une échelle où 1 = pas du tout et 5 = facteur très pertinent driver</span>',
+                        'question'=>'Dans quelle mesure les éléments suivants stimulent-ils votre investissement dans la sécurité informatique ? <br/><span class="small">Veuillez utiliser une échelle où 1 = pas du tout et 5 = facteur très pertinent driver</span>',
                         'name'=>'q2',
                         'options'=>array(
                             array(
@@ -402,7 +402,7 @@ return array(
                 'questions' => array(
                     'q3'=>array(
                         'type'=>'radio',
-                        'question'=>'Laquelle des affirmations suivantes décrit le mieux votre approche du concept de technologie « de pointe » pour l’investissement en matière de sécurité ?',
+                        'question'=>'Laquelle des affirmations suivantes décrit le mieux votre approche du concept de technologie « de pointe » pour l’investissement en matière de sécurité ?',
                         'name'=>'q3',
                         'options'=>array(
                             array(
@@ -453,7 +453,7 @@ return array(
                 'questions' => array(
                     'q4'=>array(
                         'type'=>'slider',
-                        'question'=>'Quels types de capacités de sécurité avancées utilisez-vous pour détecter des menaces ou des violations ? Veuillez utiliser une échelle où 1 = pas du tout et 5 = nous en utilisons beaucoup',
+                        'question'=>'Quels types de capacités de sécurité avancées utilisez-vous pour détecter des menaces ou des violations ? Veuillez utiliser une échelle où 1 = pas du tout et 5 = nous en utilisons beaucoup',
                         'name'=>'q4',
                         'options'=>array(
                             array(
@@ -754,7 +754,7 @@ return array(
                                 )
                             ),
                             array(
-                                'label'=>'Recherche proactive des menaces (selon la supposition suivante : si son environnement fait déjà face à des violations, on recherche l’intrus de manière proactive).)</small>',
+                                'label'=>'Recherche proactive des menaces (selon la supposition suivante : si son environnement fait déjà face à des violations, on recherche l’intrus de manière proactive).)</small>',
                                 'from'=>'Pas du tout',
                                 'to'=>'Nous en utilisons beaucoup',
                                 'name'=>'q4.10',
@@ -898,7 +898,7 @@ return array(
                 'questions' => array(
                     'q5'=>array(
                         'type'=>'button',
-                        'question'=>'Combien d’alertes ou incidents de sécurité exploitables par semaine recevez-vous en général pour tout le service informatique ?',
+                        'question'=>'Combien d’alertes ou incidents de sécurité exploitables par semaine recevez-vous en général pour tout le service informatique ?',
                         'name'=>'q5',
                         'ignore' => true,
                         'options'=>array(
@@ -933,7 +933,7 @@ return array(
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'1 000 ou plus',
+                                'label'=>'1 000 ou plus',
                                 'value'=>2000,
                                 'checked'=>false
                             )
@@ -946,7 +946,7 @@ return array(
                 'questions' => array(
                     'q6'=>array(
                         'type'=>'slider',
-                        'question'=>'Dans quelle mesure allez-vous investir dans les domaines suivants de réponse aux incidents dans les 12 prochains mois ?',
+                        'question'=>'Dans quelle mesure allez-vous investir dans les domaines suivants de réponse aux incidents dans les 12 prochains mois ?',
                         'name'=>'q6',
                         'options'=>array(
                             array(
@@ -1100,7 +1100,7 @@ return array(
                 'questions' => array(
                     'q7'=>array(
                         'type'=>'radio',
-                        'question'=>'Dans quelle mesure disposez-vous d\'une plate-forme de réponse aux incidents de sécurité actuellement ?',
+                        'question'=>'Dans quelle mesure disposez-vous d\'une plate-forme de réponse aux incidents de sécurité actuellement ?',
                         'name'=>'q7',
                         'options'=>array(
                             array(
@@ -1141,7 +1141,7 @@ return array(
                 'questions' => array(
                     'q8'=>array(
                         'type'=>'radio',
-                        'question'=>'Laquelle de ces affirmations décrit le mieux la réponse de votre entreprise aux alertes d’incidents ?',
+                        'question'=>'Laquelle de ces affirmations décrit le mieux la réponse de votre entreprise aux alertes d’incidents ?',
                         'name'=>'q8',
                         'options'=>array(
                             array(
@@ -1178,7 +1178,7 @@ return array(
                 'questions' => array(
                     'q9'=>array(
                         'type'=>'button',
-                        'question'=>'En moyenne, combien de personnes sont impliquées dans les analyses de sécurité pour chaque incident ?',
+                        'question'=>'En moyenne, combien de personnes sont impliquées dans les analyses de sécurité pour chaque incident ?',
                         'name'=>'q9',
                         'ignore' => true,
                         'options'=>array(
@@ -1216,7 +1216,7 @@ return array(
                 'questions' => array(
                     'q10'=>array(
                         'type'=>'button',
-                        'question'=>'Quel est l’effort (temps en heures passées) par personne et par analyse d’incident de sécurité ?',
+                        'question'=>'Quel est l’effort (temps en heures passées) par personne et par analyse d’incident de sécurité ?',
                         'name'=>'q10',
                         'options'=>array(
                             array(
@@ -1250,7 +1250,7 @@ return array(
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Plus de 20 heures',
+                                'label'=>'Plus de 20 heures',
                                 'value'=>1,
                                 'checked'=>false
                             )
@@ -1263,7 +1263,7 @@ return array(
                 'questions' => array(
                     'q11'=>array(
                         'type'=>'radio',
-                        'question'=>'Laquelle de ces affirmations décrit le mieux votre capacité à faire face au nombre d’incidents de sécurité ?',
+                        'question'=>'Laquelle de ces affirmations décrit le mieux votre capacité à faire face au nombre d’incidents de sécurité ?',
                         'name'=>'q11',
                         'options'=>array(
                             array(
@@ -1300,7 +1300,7 @@ return array(
                 'questions' => array(
                     'q12'=>array(
                         'type'=>'radio',
-                        'question'=>'Dans quelle mesure les informations collectées sont-elles suffisantes pour pouvoir prendre des mesures efficaces de réponse aux incidents ?',
+                        'question'=>'Dans quelle mesure les informations collectées sont-elles suffisantes pour pouvoir prendre des mesures efficaces de réponse aux incidents ?',
                         'name'=>'q12',
                         'options'=>array(
                             array(
@@ -1337,7 +1337,7 @@ return array(
                 'questions' => array(
                     'q13'=>array(
                         'type'=>'checkbox',
-                        'question'=>'Laquelle de ces mesures avez-vous déployées pour soutenir vos capacités de réponse aux incidents ?',
+                        'question'=>'Laquelle de ces mesures avez-vous déployées pour soutenir vos capacités de réponse aux incidents ?',
                         'name'=>'q13',
                         'options'=>array(
                             array(
