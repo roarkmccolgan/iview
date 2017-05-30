@@ -15,21 +15,21 @@ return array(
                 'questions' => array(
                     's1'=>array(
                         'type'=>'button',
-                        'question'=>'How many full-time employees work at your organization worldwide?',
+                        'question'=>'Combien de salariés travaillent à temps plein dans votre entreprise à travers le monde ?',
                         'name'=>'s1',
                         'options'=>array(
                             array(
-                                'label'=>'500 to 999',
+                                'label'=>'de 500 à 999',
                                 'value'=>0,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'1000 to 4999',
+                                'label'=>'de 1 000 à 2 499',
                                 'value'=>0,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'5000+',
+                                'label'=>'2 500 ou plus',
                                 'value'=>0,
                                 'checked'=>false
                             )
