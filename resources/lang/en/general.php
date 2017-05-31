@@ -381,6 +381,7 @@ Risk is a key driver for assessment and mitigation processes.",
     '5provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
     '5byreg'=>'By registering with IDC, you accept our <a href="/privacy" target="_blank">Privacy Policy</a> and <a href="https://www.splunk.com/en_us/legal/privacy/privacy-policy.html" target="_blank">Splunk\'s Privacy Policy</a> The information we collect will be shared with Splunk for the purpose of direct marketing',
     '5wait'=>'While you\'re waiting why not tweet your results and see how your colleagues measure up?',
+    
     '5aheadglobal'=>'ahead of the global leaders',
     '5inlineglobal'=>'Inline with the global leaders',
     '5behindglobal'=>'behind the global leaders',
@@ -390,7 +391,7 @@ Risk is a key driver for assessment and mitigation processes.",
 
     //general
     'disclaimer' => 'Disclaimer',
-    'allrights' => 'All Rights Resevered',
+    'allrights' => 'All Rights Reserved',
     'introduction' => 'Introduction',
     'next'=>'Next',
     'back'=>'Back',
