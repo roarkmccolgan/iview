@@ -524,6 +524,8 @@ public function postComplete(SubmitAssessmentsRequest $request)
 		->where('code',session('utm'))->first();
 		if($tracker){
 			$tracker->increment('completions');
+			$assessment->code = session('utm');
+			$assessment->save();
 		}
 	}
 

@@ -444,22 +444,22 @@ return array(
                         'options'=>array(
                             array(
                                 'label'=>'We have no process for deciding why we collect personal data',
-                                'value'=>1.111,
+                                'value'=>0.968,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'We gather personal data mainly because it may be useful in the future',
-                                'value'=>2.222,
+                                'value'=>1.935,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'We only capture data for specific purposes that are essential to our business processes',
-                                'value'=>3.333,
+                                'value'=>2.903,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'We know what personal data we collect and why we collect it, and we are sure to use it only for the identified purpose',
-                                'value'=>4.444,
+                                'value'=>3.871,
                                 'checked'=>false
                             )
                         )
@@ -480,17 +480,17 @@ return array(
                         'options'=>array(
                             array(
                                 'label'=>'No process to link the data gathered to the processing purpose',
-                                'value'=>1.111,
+                                'value'=>0.968,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Processes to link the data gathered to the processing purpose, but we may use the data for other purposes too',
-                                'value'=>2.222,
+                                'value'=>1.935,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Processes and strict controls that link the data gathered specifically to the processing purpose',
-                                'value'=>4.444,
+                                'value'=>3.871,
                                 'checked'=>false
                             )
                         )
@@ -507,17 +507,17 @@ return array(
                         'options'=>array(
                             array(
                                 'label'=>'No',
-                                'value'=>1.111,
+                                'value'=>0.968,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Yes, but documentation is fragmented across departments',
-                                'value'=>2.222,
+                                'value'=>1.935,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Yes, across the organisation and in a consistent format',
-                                'value'=>3.333,
+                                'value'=>2.903,
                                 'checked'=>false
                             )
                         )
@@ -534,22 +534,22 @@ return array(
                         'options'=>array(
                             array(
                                 'label'=>'No',
-                                'value'=>1.111,
+                                'value'=>0.968,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Yes, some data flow analysis has been done but this is ad hoc and fragmented across departments',
-                                'value'=>2.222,
+                                'value'=>1.935,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Yes, a comprehensive data flow analysis has been conducted to document the use and flow of personal data held within the organisation',
-                                'value'=>3.333,
+                                'value'=>2.903,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Yes, we have full knowledge of the personal data inventory and flows, and we actively use that to improve data protection compliance management processes, such as deleting irrelevant, expired or redundant data',
-                                'value'=>4.444,
+                                'value'=>3.871,
                                 'checked'=>false
                             )
                         )
@@ -566,17 +566,17 @@ return array(
                         'options'=>array(
                             array(
                                 'label'=>'We have not conducted a data flow analysis',
-                                'value'=>1.111,
+                                'value'=>0.968,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'No, our data flow analysis does not include the secure output (print, copy, fax, scan) of personal data',
-                                'value'=>2.222,
+                                'value'=>1.935,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Yes',
-                                'value'=>4.444,
+                                'value'=>3.871,
                                 'checked'=>false
                             )
                         )
@@ -593,17 +593,17 @@ return array(
                         'options'=>array(
                             array(
                                 'label'=>'No',
-                                'value'=>1.111,
+                                'value'=>0.968,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'No, we are not certified, but we believe we operate according to the broad principles and practices of ISO 27001',
-                                'value'=>2.222,
+                                'value'=>1.935,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Yes, we are certified and compliant',
-                                'value'=>4.444,
+                                'value'=>3.871,
                                 'checked'=>false
                             )
                         )
@@ -620,17 +620,17 @@ return array(
                         'options'=>array(
                             array(
                                 'label'=>'No',
-                                'value'=>1.111,
+                                'value'=>0.968,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'No, we are not certified, but we believe we operate according to the broad principles and practices of ISO 15408',
-                                'value'=>2.222,
+                                'value'=>1.935,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Yes, we are certified and compliant',
-                                'value'=>4.444,
+                                'value'=>3.871,
                                 'checked'=>false
                             )
                         )
@@ -647,27 +647,27 @@ return array(
                         'options'=>array(
                             array(
                                 'label'=>'No, and we don\'t know where our data is held',
-                                'value'=>1.111,
+                                'value'=>0.968,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'We keep all data in country as a rule',
-                                'value'=>2.222,
+                                'value'=>1.935,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'We keep all data in the EU as a rule',
-                                'value'=>2.222,
+                                'value'=>1.935,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'We have a strict process that assesses the sensitivity of data and locates it in an appropriate country ',
-                                'value'=>3.333,
+                                'value'=>2.903,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'We have a risk-based process that assesses the sensitivity of data and also the capabilities of providers and regulatory regime of countries we use to host data',
-                                'value'=>4.444,
+                                'value'=>3.871,
                                 'checked'=>false
                             )
                         )
@@ -787,27 +787,27 @@ return array(
                         'options'=>array(
                             array(
                                 'label'=>'No',
-                                'value'=>0,492,
+                                'value'=>0.492,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'No, but we have ad hoc capability to deal with incidents',
-                                'value'=>0,492,
+                                'value'=>0.492,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Yes, and this is tested annually',
-                                'value'=>0,984,
+                                'value'=>0.984,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Yes, and this is tested at least every six months',
-                                'value'=>1,475,
+                                'value'=>1.475,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Yes, and this is tested at least monthly',
-                                'value'=>1,967,
+                                'value'=>1.967,
                                 'checked'=>false
                             )
                         )
@@ -834,7 +834,7 @@ return array(
                             ),
                             array(
                                 'label'=>'Don\'t know',
-                                'value'=>0,
+                                'value'=>0.492,
                                 'checked'=>false
                             )
                         )
@@ -1014,7 +1014,7 @@ return array(
                                     ),
                                     array(
                                         'label'=>'Don\'t know',
-                                        'value'=>0,
+                                        'value'=>0.492,
                                         'checked'=>false
                                     )
                                 )
@@ -1035,7 +1035,7 @@ return array(
                                     ),
                                     array(
                                         'label'=>'Don\'t know',
-                                        'value'=>0,
+                                        'value'=>0.492,
                                         'checked'=>false
                                     )
                                 )
@@ -1056,7 +1056,7 @@ return array(
                                     ),
                                     array(
                                         'label'=>'Don\'t know',
-                                        'value'=>0,
+                                        'value'=>0.492,
                                         'checked'=>false
                                     )
                                 )
@@ -1077,7 +1077,7 @@ return array(
                                     ),
                                     array(
                                         'label'=>'Don\'t know',
-                                        'value'=>0,
+                                        'value'=>0.492,
                                         'checked'=>false
                                     )
                                 )
@@ -1098,7 +1098,7 @@ return array(
                                     ),
                                     array(
                                         'label'=>'Don\'t know',
-                                        'value'=>0,
+                                        'value'=>0.492,
                                         'checked'=>false
                                     )
                                 )
@@ -1119,7 +1119,7 @@ return array(
                                     ),
                                     array(
                                         'label'=>'Don\'t know',
-                                        'value'=>0,
+                                        'value'=>0.492,
                                         'checked'=>false
                                     )
                                 )
@@ -1140,7 +1140,7 @@ return array(
                                     ),
                                     array(
                                         'label'=>'Don\'t know',
-                                        'value'=>0,
+                                        'value'=>0.492,
                                         'checked'=>false
                                     )
                                 )
@@ -1161,7 +1161,7 @@ return array(
                                     ),
                                     array(
                                         'label'=>'Don\'t know',
-                                        'value'=>0,
+                                        'value'=>0.492,
                                         'checked'=>false
                                     )
                                 )
@@ -1182,7 +1182,7 @@ return array(
                                     ),
                                     array(
                                         'label'=>'Don\'t know',
-                                        'value'=>0,
+                                        'value'=>0.492,
                                         'checked'=>false
                                     )
                                 )
@@ -1203,7 +1203,7 @@ return array(
                                     ),
                                     array(
                                         'label'=>'Don\'t know',
-                                        'value'=>0,
+                                        'value'=>0.492,
                                         'checked'=>false
                                     )
                                 )
@@ -1242,7 +1242,7 @@ return array(
                         'options'=>array(
                             array(
                                 'label'=>'Pin code',
-                                'value'=>0.000,
+                                'value'=>0.984,
                                 'checked'=>false
                             ),
                             array(
@@ -1252,7 +1252,7 @@ return array(
                             ),
                             array(
                                 'label'=>'Biometrics',
-                                'value'=>0,
+                                'value'=>0.984,
                                 'checked'=>false
                             ),
                             array(
