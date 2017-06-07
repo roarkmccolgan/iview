@@ -163,6 +163,30 @@
 		</div>
 	</div>
 	<!-- END Nifty Modal -->
+	<!-- Modal-->
+	<div id="mod-confirm" tabindex="-1" role="dialog" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" data-dismiss="modal" aria-hidden="true" class="close">×</button>
+				</div>
+				<div class="modal-body">
+					<div class="text-center">
+						<div class="i-circle warning"><i class="fa fa-warning"></i></div>
+						<h4>Are you sure?</h4>
+						<p class="message">This action can't be undone</p>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" data-dismiss="modal" class="btn btn-default">Cancel</button>
+					<button type="button" data-dismiss="modal" class="btn btn-warning">Proceed</button>
+				</div>
+			</div>
+			<!-- /.modal-content-->
+		</div>
+		<!-- /.modal-dialog-->
+	</div>
+    <!-- /.modal-->
 	<div class="md-overlay"></div>
 	<iframe id="my_iframe" style="display:none;"></iframe>
 </div>
@@ -175,7 +199,7 @@
 <script type="text/javascript" src="{{ asset('/js/cleanzone.js') }}"></script>
 <script type="text/javascript" src="{{ asset('/js/bootstrap.datetimepicker/js/bootstrap-datetimepicker.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('/js/jquery.niftymodals/js/jquery.modalEffects.js') }}"></script>
-<script type="text/javascript" src="{{ asset('/js/jquery.datatables/js/jquery.dataTables.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('/js/jquery.datatables/js/jquery.dataTables.min.js?id=3') }}"></script>
 <script type="text/javascript" src="{{ asset('/js/jquery.datatables/plugins/bootstrap/3/dataTables.bootstrap.js') }}"></script>
 <script type="text/javascript" src="{{ asset('/js/page-data-tables.js') }}"></script>
 <script type="text/javascript" src="{{ asset('/js/moment.js/moment.js') }}"></script>
@@ -222,14 +246,15 @@
 	$('#datatable-icons tbody').on( 'click', 'a', function () {
 		var that = this;
 		if($(this).hasClass('delete')){
-			$.post( "/api/assessments/delete/"+$(this).parents('td').data('ass-id'))
-			.done(function( data ) {
-				console.log( "Data Loaded: ", data);
-				$('#datatable-icons').DataTable()
-					.row( $(that).parents('tr') )
-					.remove()
-					.draw();
-			});
+			console.log('goaway');
+			//$.post( "/api/assessments/delete/"+$(this).parents('td').data('ass-id'))
+			//.done(function( data ) {
+			//	console.log( "Data Loaded: ", data);
+			//	$('#datatable-icons').DataTable()
+			//		.row( $(that).parents('tr') )
+			//		.remove()
+			//		.draw();
+			//});
 		}else if($(this).hasClass('resend')){
 			$('#assessment_id').val($(this).parents('td').data('ass-id'));
 		}

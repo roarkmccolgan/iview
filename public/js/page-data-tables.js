@@ -4,7 +4,7 @@ var App = (function () {
     'use strict'
     
     //Add dataTable Icons
-    var functions = $('<a class="btn btn-danger btn-xs delete" href="#" data-original-title="Remove" data-toggle="tooltip"><i class="fa fa-times"></i></a>');
+    var functions = $('<a class="btn btn-danger btn-xs delete md-trigger" data-toggle="modal" data-target="#mod-confirm" href="#" data-original-title="Remove"><i class="fa fa-times"></i></a>');
     var assessment = false;
     $("#datatable-icons tbody tr td:last-child").each(function(){
       $(this).html("");

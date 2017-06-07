@@ -146,7 +146,6 @@
 @section('load')
 	App.dataTables();
 	$('.md-trigger').modalEffects();
-
 	$('#datatable-icons tbody').on( 'click', 'a.delete', function () {
 		var that = this;
 		$.post( "/api/trackers/delete/"+$(this).parents('td').data('trac-id'))
