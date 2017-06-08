@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Assessment;
 use App\ExtraFields;
 use App\Http\Requests;
+use App\Tracker;
+use App\TrackerHits;
 use Carbon\Carbon;
 use Excel;
 use Illuminate\Http\Request;
@@ -101,6 +103,24 @@ class AssessmentController extends Controller {
 	 */
 	public function delete($subdomain, Assessment $assessment,Request $request)
 	{
+		if(isset($assessment->code)){
+			$tracker = Tracker::where('code',$assessment->code)->first();
+			if($tracker->views>0){
+				$tracker->decrement('views');
+			}
+			if($tracker->completions>0){
+				$tracker->decrement('completions');
+			}
+
+			$trackerHit = TrackerHits::whereDate('created_at','=',$assessment->created_at->format('Y-m-d'))->where('type','view')->first();
+			if($trackerHit){
+				$trackerHit->delete();
+			}
+			$trackerHit = TrackerHits::whereDate('created_at','=',$assessment->created_at->format('Y-m-d'))->where('type','completion')->first();
+			if($trackerHit){
+				$trackerHit->delete();
+			}
+		}
 		$assessment->delete();
 		$name = str_slug($assessment->fname.'_'.$assessment->lname.'_'.$assessment->tool->title.'_Assessment');
 		if(File::exists(storage_path().'/reports/'.$assessment->id.'_'.$name.'.pdf')){

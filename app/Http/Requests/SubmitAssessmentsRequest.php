@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use App\Http\Requests\Request;
+use App\Tool;
 
 class SubmitAssessmentsRequest extends Request
 {
@@ -23,6 +24,8 @@ class SubmitAssessmentsRequest extends Request
      */
     public function rules()
     {
+        $tool = Tool::findOrFail(session('product.id'));
+
         $rules = [
             'fname'=>'required|min:3|max:255',
             'sname'=>'required|min:3|max:255',
@@ -33,13 +36,14 @@ class SubmitAssessmentsRequest extends Request
             'phone'=>'required',
             'terms'=>'required'
         ];
-        if($this->has('extra')){
-            foreach($this->input('extra') as $key => $value) {
-                $rules["extra.".$key] = ['required'];
+        if(!empty($tool->extra_fields)){
+            foreach($tool->extra_fields as $field) {
+                if($field->required!=0){
+                    $rules["extra.".$field->name] = ['required'];
+                }
             }
         }
-            
-
+        
         return $rules;
     }
 }

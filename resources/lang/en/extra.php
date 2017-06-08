@@ -28,4 +28,6 @@ return [
 
     'zipcode' => 'Postcode/Zip code',
     'errorZipcode' => 'Please enter your Postcode/Zip code',
+    'stateprov' => 'State or Province',
+    'errorStateProv' => 'Please enter your State or Province',
 ];
