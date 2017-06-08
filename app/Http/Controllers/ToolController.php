@@ -480,11 +480,6 @@ public function postComplete(SubmitAssessmentsRequest $request)
 
 	Session::put('user', $request->except('_token'));
 
-	if(isset($this->quiz['screeners'])){
-		foreach ($this->quiz['screeners'] as $key => $screener) {
-                # code...
-		}
-	}
 
 	//update source
 	$currentLocal = App::getLocale();
@@ -526,6 +521,9 @@ public function postComplete(SubmitAssessmentsRequest $request)
 			$tracker->increment('completions');
 			$assessment->code = session('utm');
 			$assessment->save();
+			$trackerHit = $tracker->trackerHits()->create([
+			    'type' => 'completion',
+			]);
 		}
 	}
 

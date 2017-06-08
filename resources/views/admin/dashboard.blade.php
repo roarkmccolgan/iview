@@ -142,8 +142,12 @@
 							<tr>
 								<td style="width:40%;"><i class="fa fa-user"></i> {{$tracker->name}} ({{$tracker->code}})</td>
 								<td>{{$tracker->language->abbreviation}}</td>
-								<td class="text-right">{{$tracker->views}}</td>
-								<td class="text-right">{{$tracker->completions}}</td>
+								<td class="text-right">
+									{{$tracker->dateViews}} <small>({{$tracker->views}})</small>
+								</td>
+								<td class="text-right">
+									{{$tracker->dateCompletions}} <small>({{$tracker->completions}})</small>
+								</td>
 							</tr>
 							@endforeach
 						@else

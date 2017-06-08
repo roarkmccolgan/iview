@@ -44,6 +44,9 @@ class RouteByURL
                 if($tracker && $tracker->language->abbreviation==App::getLocale()){
                     $tracker->increment('views');
                     $request->session()->put('utm', $request->input('utm'));
+                    $trackerHit = $tracker->trackerHits()->create([
+                        'type' => 'view',
+                    ]);
                 }
             }
             foreach ($request->all() as $key => $value) {

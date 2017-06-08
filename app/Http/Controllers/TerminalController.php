@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Analytics;
 use App\Http\Requests;
 use Assessment;
+use App\TrackerHits;
+use App\Tracker;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -34,7 +36,33 @@ class TerminalController extends Controller
         }
 
         $tool = $request->get('product');
-        $tool->load('trackers','urls');
+        $tool->load(
+            ['trackers' => function ($query) use ($startDate, $endDate) {
+                $query->with(['TrackerHits' => function ($q) use ($startDate, $endDate) {
+                    $q->whereDate('created_at','>=',$startDate)->whereDate('created_at','<=',$endDate);
+                }]);
+            }],'urls');
+
+        foreach ($tool->trackers as $tracker) {
+            $views = 0;
+            $completions = 0;
+            foreach ($tracker->TrackerHits as $stats) {
+                if($stats->type=='view'){
+                    $views++;
+                }
+                if($stats->type=='completion'){
+                    $completions++;
+                }
+            }
+            $tracker->setViews($views);
+            $tracker->setCompletions($completions);
+        }
+
+        //tracker data
+        /*$trackers = TrackerHits::withCount(['TrackerHits' => function ($query) use ($startDate, $endDate) {
+            $query->where('created_at', '>=', $startDate)
+            ->where('created_at', '<=', $endDate);
+        }])->get();*/
 
         Analytics::setSiteId('ga:'.$tool->gapropertyid);
 
