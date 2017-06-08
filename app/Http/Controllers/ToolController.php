@@ -542,7 +542,7 @@ public function postComplete(SubmitAssessmentsRequest $request)
 	    			$query[$fieldKey] = $currentLocal;
 	    			break;
 	    		case 'field':
-	    			$query[$fieldKey] = $source[$settings['name']];
+	    			$query[$fieldKey] = $request->input($settings['name']);
 	    			break;
 	    		case 'hidden':
 	    			$query[$fieldKey] = $settings['value'];
@@ -810,13 +810,13 @@ public function postComplete(SubmitAssessmentsRequest $request)
 	    					}
     					}
     				}
-    			}
-    			foreach ($this->baseline[$key]['types'] as $rating => $limits) {
-					if($result[$key]['score']>=$limits['low'] && $result[$key]['score']<=$limits['high']){
-						$result[$key]['rating'] = $rating;
-						$result['overall']['score'] += $result[$key]['score'];
+    				foreach ($this->baseline[$key]['types'] as $rating => $limits) {
+						if($result[$key]['score']>=$limits['low'] && $result[$key]['score']<=$limits['high']){
+							$result[$key]['rating'] = $rating;
+							$result['overall']['score'] += $result[$key]['score'];
+						}
 					}
-				}
+    			}
     		}
     		foreach ($this->baseline['overall']['types'] as $rating => $limits) {
 				if($result['overall']['score']>=$limits['low'] && $result['overall']['score']<=$limits['high']){

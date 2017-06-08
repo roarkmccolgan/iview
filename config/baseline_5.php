@@ -114,6 +114,14 @@ return array(
                     'type' => 'field',
                     'name' => 'country'
                 ],
+                'Postcode' => [
+                    'type' => 'field',
+                    'name' => 'extra.zip'
+                ],
+                'StateProvince' => [
+                    'type' => 'field',
+                    'name' => 'extra.stateprov'
+                ],
                 'CompanySize' => [
                     'type' => 'questionlabel',
                     'questions' => [
