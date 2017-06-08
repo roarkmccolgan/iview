@@ -812,19 +812,19 @@ public function postComplete(SubmitAssessmentsRequest $request)
 	    					}
     					}
     				}
-    				foreach ($this->baseline[$key]['types'] as $rating => $limits) {
-    					if($result[$key]['score']>=$limits['low'] && $result[$key]['score']<=$limits['high']){
-    						$result[$key]['rating'] = $rating;
-    						$result['overall']['score'] += $result[$key]['score'];
-    					}
-    				}
-    				foreach ($this->baseline['overall']['types'] as $rating => $limits) {
-    					if($result['overall']['score']>=$limits['low'] && $result['overall']['score']<=$limits['high']){
-    						$result['overall']['rating'] = $rating;
-    					}
-    				}
     			}
+    			foreach ($this->baseline[$key]['types'] as $rating => $limits) {
+					if($result[$key]['score']>=$limits['low'] && $result[$key]['score']<=$limits['high']){
+						$result[$key]['rating'] = $rating;
+						$result['overall']['score'] += $result[$key]['score'];
+					}
+				}
     		}
+    		foreach ($this->baseline['overall']['types'] as $rating => $limits) {
+				if($result['overall']['score']>=$limits['low'] && $result['overall']['score']<=$limits['high']){
+					$result['overall']['rating'] = $rating;
+				}
+			}
     	}
 
     	session(['result' => $result]);
@@ -832,4 +832,67 @@ public function postComplete(SubmitAssessmentsRequest $request)
     	$this->result = $result;
 
     }
+
+    public function scoring(){
+    	$this->loadQuestions();
+    	$questions = $this->quiz;
+    	$sections = [];
+    	foreach ($questions as $key => $question) {
+    		foreach ($question['pages'] as $pkey => $page) {
+    			foreach ($page['questions'] as $qkey => $q) {
+    				$sections[$key][$qkey] = $q['options'];
+    			}
+    		}
+    	}
+
+    	foreach ($sections as $seckey => $questions) {
+    		foreach ($questions as $qkey => $question) {
+    			$max = 0;
+    			$min = 0;
+    			$optvals = [];
+    			$optoptvals = [];
+    			foreach ($question as $key => $option) {
+	    			if(isset($option['options'])){
+						foreach ($option['options'] as $optoptkey => $optopt) {
+							$optoptvals[]=$optopt['value'];
+						}
+					}else{
+						$optvals[]=$option['value'];
+					}
+
+					if(!empty($optvals)){
+						$min = min($optvals);
+						$max = max($optvals);
+		    		}else{
+		    			$min+= min($optoptvals);
+						$max+= max($optoptvals);
+		    		}
+				}
+				$sections[$seckey][$qkey]['min'] = $min;
+				$sections[$seckey][$qkey]['max'] = $max;
+    		}
+    	}
+
+    	foreach ($sections as $key => $section) {
+    		$sectionMax = 0;
+    		$sectionMin = 0;
+    		foreach ($section as $seckey => $question) {
+    			$sectionMax += $question['max'];
+    			$sectionMin += $question['min'];
+    		}
+    		$sections[$key]['max_for_section'] = $sectionMax;
+    		$sections[$key]['min_for_section'] = $sectionMin;
+    	}
+
+    	$sectionTotals = [];
+    	foreach ($sections as $key => $section) {
+    		$sectionTotals[$key]['min'] = $section['min_for_section'];
+    		$sectionTotals[$key]['max'] = $section['max_for_section'];
+    	}
+    	$final['sections'] = $sections;
+    	$final['totals'] = $sectionTotals;
+
+    	return $final;
+    }
+
 }

@@ -18,7 +18,7 @@ return array(
         'types' => array(
             'stage1' => array(
                 'low' => 0,
-                'high' => 41.32,
+                'high' => 41.31,
                 'copy' => 'general.4initialtxt',
                 'tweet' => false,
                 'benchmark' => 2,
@@ -39,7 +39,7 @@ return array(
             ),
             'stage4' => array(
                 'low' => 73.78,
-                'high' => 90.00,
+                'high' => 91,
                 'copy' => 'general.4optimisedtxt',
                 'tweet' => false,
                 'benchmark' => 21,
@@ -127,7 +127,7 @@ return array(
             ),
             'stage4' => array(
                 'low' => 24.45,
-                'high' => 30.00,
+                'high' => 31,
                 'total' => 6,
                 'benchmark' => 17,
             )
@@ -170,7 +170,7 @@ return array(
             ),
             'stage4' => array(
                 'low' => 24.97,
-                'high' => 30,
+                'high' => 31,
                 'total' => 4,
                 'benchmark' => 11,
             )

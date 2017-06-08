@@ -48,7 +48,7 @@
 							</thead>
 							<tbody>
 								@foreach($tool->assessments as $key=>$assessment)
-								<tr class="odd gradeX">
+								<tr class="odd gradeX" id="{{$assessment->id}}">
 									<td>{{$assessment->id}}</td>
 									<td><strong>{{$assessment->fname}}</strong></td>
 									<td><strong>{{$assessment->lname}}</strong></td>
@@ -178,8 +178,8 @@
 					</div>
 				</div>
 				<div class="modal-footer">
-					<button type="button" data-dismiss="modal" class="btn btn-default">Cancel</button>
-					<button type="button" data-dismiss="modal" class="btn btn-warning">Proceed</button>
+					<button id="cancelDelete" type="button" data-dismiss="modal" class="btn btn-default">Cancel</button>
+					<button id="confirmDelete" type="button" data-dismiss="modal" class="btn btn-warning">Proceed</button>
 				</div>
 			</div>
 			<!-- /.modal-content-->
@@ -199,7 +199,7 @@
 <script type="text/javascript" src="{{ asset('/js/cleanzone.js') }}"></script>
 <script type="text/javascript" src="{{ asset('/js/bootstrap.datetimepicker/js/bootstrap-datetimepicker.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('/js/jquery.niftymodals/js/jquery.modalEffects.js') }}"></script>
-<script type="text/javascript" src="{{ asset('/js/jquery.datatables/js/jquery.dataTables.min.js?id=3') }}"></script>
+<script type="text/javascript" src="{{ asset('/js/jquery.datatables/js/jquery.dataTables.min.js?id=4') }}"></script>
 <script type="text/javascript" src="{{ asset('/js/jquery.datatables/plugins/bootstrap/3/dataTables.bootstrap.js') }}"></script>
 <script type="text/javascript" src="{{ asset('/js/page-data-tables.js') }}"></script>
 <script type="text/javascript" src="{{ asset('/js/moment.js/moment.js') }}"></script>
@@ -210,6 +210,7 @@
 	App.init();
 	App.dataTables();
 	$('.md-trigger').modalEffects();
+	var deleteRow = false;
 
 	$('#fromDay').val(moment('{{$tool->start_date}}').format('DD'));
 	$('#fromMonth').val(moment('{{$tool->start_date}}').format('MM'));
@@ -218,6 +219,29 @@
 	$('#toDay').val(moment().format('DD'));
 	$('#toMonth').val(moment().format('MM'));
 	$('#toYear').val(moment().format('YYYY'));
+
+	$('#confirmDelete').click(function(e){
+		var that = this;
+		if(deleteRow){
+			console.log('Delete row '+deleteRow);
+			$.post( "/api/assessments/delete/"+deleteRow)
+			.done(function( data ) {
+				console.log( "Data Loaded: ", data);
+				$('#datatable-icons').DataTable()
+					.row( $('#'+deleteRow) )
+					.remove()
+					.draw();
+					deleteRow = false;
+			});
+		}
+	});
+	$('#cancelDelete').click(function(e){
+		var that = this;
+		if(deleteRow){
+			console.log('Cancel delete row '+deleteRow);
+			deleteRow = false;
+		}
+	});
 	
 
 	$('#downloadBut').click(function(e){
@@ -242,19 +266,10 @@
 			console.log( "Data Loaded: ", data);
 		});
 	})
-
 	$('#datatable-icons tbody').on( 'click', 'a', function () {
 		var that = this;
 		if($(this).hasClass('delete')){
-			console.log('goaway');
-			//$.post( "/api/assessments/delete/"+$(this).parents('td').data('ass-id'))
-			//.done(function( data ) {
-			//	console.log( "Data Loaded: ", data);
-			//	$('#datatable-icons').DataTable()
-			//		.row( $(that).parents('tr') )
-			//		.remove()
-			//		.draw();
-			//});
+			deleteRow = $(this).parents('td').data('ass-id');
 		}else if($(this).hasClass('resend')){
 			$('#assessment_id').val($(this).parents('td').data('ass-id'));
 		}
