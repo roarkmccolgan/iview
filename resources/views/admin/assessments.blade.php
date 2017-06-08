@@ -62,10 +62,10 @@
 										if(!is_array($assessment->extra)){
 											$extra = $assessment->extra!=='null' && !is_null($assessment->extra) ? json_decode($assessment->extra,true) : '';
 										}else{
-											$extra = $assessment->extra;
+											$extra = isset($assessment->extra) ? $assessment->extra: '';
 										}
 										?>
-										<td>{{$assessment->extra!=='null' && !is_null($assessment->extra) ? $extra[$field->name]: ''}}</td>
+										<td>{{$extra!=='null' && !is_null($extra) ? (isset($extra[$field->name]) ? $extra[$field->name]:''): ''}}</td>
 										@endforeach
 									@endif
 									<td>{{$assessment->code}}</td>
