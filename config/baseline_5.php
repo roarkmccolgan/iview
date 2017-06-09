@@ -114,11 +114,11 @@ return array(
                     'type' => 'field',
                     'name' => 'country'
                 ],
-                'Postcode' => [
+                'postal' => [
                     'type' => 'field',
                     'name' => 'extra.zip'
                 ],
-                'StateProvince' => [
+                'state' => [
                     'type' => 'field',
                     'name' => 'extra.stateprov'
                 ],
