@@ -589,6 +589,10 @@ public function postComplete(SubmitAssessmentsRequest $request)
 		    }
 		}
 
+		//dd($query);
+
+
+
 	    $this->dispatch(new SendEloquaRequest($url, $query));
 	}
 	$subject = trans(session('product.alias').'.email.subject');
