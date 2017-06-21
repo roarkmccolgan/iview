@@ -24,6 +24,10 @@ class TerminalController extends Controller
     public function dashboard(Request $request)
     {
         //return Auth::user();
+        $tool = $request->get('product');
+
+        Analytics::setSiteId('ga:'.$tool->gapropertyid);
+        $terminalQueries = Config::get('terminal.queries');
 
         Carbon::setToStringFormat('m-d-Y');
         $startDate = Carbon::now()->subMonth();
@@ -35,7 +39,6 @@ class TerminalController extends Controller
             $customDate = true;
         }
 
-        $tool = $request->get('product');
         $tool->load(
             ['trackers' => function ($query) use ($startDate, $endDate) {
                 $query->with(['TrackerHits' => function ($q) use ($startDate, $endDate) {
@@ -43,34 +46,38 @@ class TerminalController extends Controller
                 }]);
             }],'urls');
 
+        $trackerQueries = [];
+
         foreach ($tool->trackers as $tracker) {
-            $views = 0;
+            $langString = '';
+            if($tracker->language_id!=1){
+                $abb = $tracker->language->abbreviation;
+                $langString = ';ga:landingPagePath=@?/'.$abb;
+            }
+            $trackerQueries[$tracker->code] = [
+                'metrics'       => 'ga:users',
+                'dimensions'    => false,
+                'sort'          => false,
+                'max-results'   => false,
+                'filters'       => 'ga:landingPagePath=@?utm='.$tracker->code.$langString,
+            ];
             $completions = 0;
+
             foreach ($tracker->TrackerHits as $stats) {
-                if($stats->type=='view'){
-                    $views++;
-                }
                 if($stats->type=='completion'){
                     $completions++;
                 }
             }
-            $tracker->setViews($views);
             $tracker->setCompletions($completions);
         }
-
-        //tracker data
-        /*$trackers = TrackerHits::withCount(['TrackerHits' => function ($query) use ($startDate, $endDate) {
-            $query->where('created_at', '>=', $startDate)
-            ->where('created_at', '<=', $endDate);
-        }])->get();*/
-
-        Analytics::setSiteId('ga:'.$tool->gapropertyid);
-
-        $terminalQueries = Config::get('terminal.queries');
+        
+        $terminalQueries = array_merge($terminalQueries,$trackerQueries);
 
         $analyticsResults = [];
 
+        $query_count = 0;
         foreach ($terminalQueries as $key => $query) {
+            $query_count++;
             $other = [];
             if ($query['dimensions']) {
                 $other['dimensions'] = $query['dimensions'];
@@ -84,27 +91,41 @@ class TerminalController extends Controller
             if ($query['filters']) {
                 $other['filters'] = $query['filters'];
             }
-            
             $$key = Analytics::performQuery($startDate, $endDate, $query['metrics'], $other);
-
             $analyticsResults[$key] = $$key->getRows();
+
+            //delay quesry for a second if more than 10 queries are made
+            if($query_count == 10){
+                sleep(1);
+                $query_count = 0;
+            }
         }
+
+        foreach ($tool->trackers as $tracker) {
+            if($analyticsResults[$tracker->code]){
+                $tracker->setViews($analyticsResults[$tracker->code][0][0]);
+            }
+        }
+
         if($analyticsResults['utm_views']){
+
             foreach ($analyticsResults['utm_views'] as $key => $value) {
                 foreach ($tool->trackers as $trakKey => $tracker) {
-                    if($tracker->code==substr($value[0], 6)){
+                    if($tracker->code==substr($value[0], 6, 10)){
                         if($tracker->views != $value[1]){
                             $tracker->views = $value[1];
                             $tracker->save();
                         }
                     }
+                    
                 }
             }
         }
+        /*
         if($analyticsResults['utm_completes']){
             foreach ($analyticsResults['utm_completes'] as $key => $value) {
                 foreach ($tool->trackers as $trakKey => $tracker) {
-                    if($tracker->code==substr($value[0], 6)){
+                    if($tracker->code==substr($value[0], 6, 10)){
                         if($tracker->completions != $value[2]){
                             $tracker->completions = $value[2];
                             $tracker->save();
@@ -112,7 +133,10 @@ class TerminalController extends Controller
                     }
                 }
             }
-        }
+        }*/
+
+
+
         $daily_total = 0;
         $complete_total = 0;
         foreach ($analyticsResults['daily_results'] as $key => $value) {

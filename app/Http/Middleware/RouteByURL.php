@@ -44,9 +44,10 @@ class RouteByURL
                 if($tracker && $tracker->language->abbreviation==App::getLocale()){
                     $tracker->increment('views');
                     $request->session()->put('utm', $request->input('utm'));
-                    $trackerHit = $tracker->trackerHits()->create([
+                    /*$trackerHit = $tracker->trackerHits()->create([
                         'type' => 'view',
-                    ]);
+                        'ip' => $request->ip(),
+                    ]);*/
                 }
             }
             foreach ($request->all() as $key => $value) {

@@ -588,18 +588,18 @@ return [
                 'filters'       => 'ga:pagePath=~/quiz/complete',
             ],
             'utm_views'=>[
-                'metrics'       => 'ga:pageviews',
+                'metrics'       => 'ga:users',
                 'dimensions'    => 'ga:pagePath',
                 'sort'          => false,
                 'max-results'   => false,
-                'filters'       => 'ga:pagePath=@/?utm',
+                'filters'       => 'ga:pagePath=@?utm',
             ],
             'utm_completes'=>[
                 'metrics'       => 'ga:users',
                 'dimensions'    => 'ga:landingPagePath,ga:exitPagePath',
                 'sort'          => false,
                 'max-results'   => false,
-                'filters'       => 'ga:landingPagePath=@/?utm;ga:exitPagePath=~/quiz/complete',
+                'filters'       => 'ga:landingPagePath=@?utm;ga:exitPagePath=~/quiz/complete',
             ]/*,
             'mobile_results'=>[
                 'metrics'       => 'ga:sessions',
