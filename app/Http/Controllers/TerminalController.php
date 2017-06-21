@@ -107,8 +107,8 @@ class TerminalController extends Controller
             }
         }
 
+        /*
         if($analyticsResults['utm_views']){
-
             foreach ($analyticsResults['utm_views'] as $key => $value) {
                 foreach ($tool->trackers as $trakKey => $tracker) {
                     if($tracker->code==substr($value[0], 6, 10)){
@@ -121,7 +121,7 @@ class TerminalController extends Controller
                 }
             }
         }
-        /*
+        
         if($analyticsResults['utm_completes']){
             foreach ($analyticsResults['utm_completes'] as $key => $value) {
                 foreach ($tool->trackers as $trakKey => $tracker) {
