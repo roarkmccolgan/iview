@@ -248,7 +248,10 @@ public function savePage(Request $request, $subdomain, $section=false, $page=fal
 
 		//check if there is a mini report
 		if(null !== session('questions.'.$section.'.sub-report') && session('questions.'.$section.'.sub-report')!==false){
-			
+			$color = '#939598';
+			if(Config::has('baseline_'.session('product.id').'.'.$section.'.report-settings.basecolor')){
+				$color = config('baseline_'.session('product.id').'.'.$section.'.report-settings.basecolor');
+			}
 			$graph = false;
 			if(config('baseline_'.session('product.id').'.'.$section.'.complete.graph')){
 				$graph = config('baseline_'.session('product.id').'.'.$section.'.complete.graph');
@@ -279,7 +282,7 @@ public function savePage(Request $request, $subdomain, $section=false, $page=fal
 							/*'opacity' => 0.8*/
 						]
 					],
-					'colors' => ['#d3e2d7'],
+					'colors' => [$color],
 					'chartArea' => ['width'=>'90%', 'height'=>'80%'],
 					'legend' => [ 'position' => "none" ],
 					/*'events' => [
@@ -371,6 +374,10 @@ public function getComplete(Request $request)
 	$graph = false;
 	if(config('baseline_'.session('product.id').'.overall.complete.graph')){
 		$graph = config('baseline_'.session('product.id').'.overall.complete.graph');
+		$color = '#939598';
+		if(Config::has('baseline_'.session('product.id').'.overall.report-settings.basecolor')){
+			$color = config('baseline_'.session('product.id').'.overall.report-settings.basecolor');
+		}
 		$chartSettings = [
 			'title' => null,//trans(session('product.alias').'.completecopy.graphtitle')
 			'backgroundColor' => [
@@ -398,7 +405,7 @@ public function getComplete(Request $request)
 					/*'opacity' => 0.8*/
 				]
 			],
-			'colors' => ['#d3e2d7'],
+			'colors' => [$color],
 			'chartArea' => ['width'=>'90%', 'height'=>'80%'],
 			'legend' => [ 'position' => "none" ],
 			/*'events' => [

@@ -389,6 +389,51 @@ Risk is a key driver for assessment and mitigation processes.",
     '5inlinesize'=>'Inline with the leaders in companies of the same size',
     '5behindsize'=>'behind the leaders in companies of the same size',
 
+//McAfeeBT 6
+    '6elqFormName'=>'',
+    '6developedby'=>'Developed by',
+    '6sponsoredby'=>'Sponsored by',
+    '6restart'=>'Restart Assessment',
+    '6assoc'=>'In association with',
+    '6sponsors'=>'Splunk',
+    '6title'=>'IDC\'s Security Assessment',
+    '6sub-title'=>'How ready is your businesses\' security ',
+    '6landing'=>'
+    <p>
+        Different italic, wild just may particular name was management be I was empty in first magnitude, said transformed to time more allow the on he an by violin, been container term is dressed so, were the go life such\' to repeat that the with by are latter transmitting the hard.
+    </p>
+    <p>
+        The of its of blind like right his if to readers been forget what\'s understanding. Eightypercent that divine the man, at it easy work increased long, and we his been findings.
+    </p>',
+    '6startbut'=>'Start Here',
+
+    '6subreporttitle' => 'You are in the <span class="color--primary">:percent%</span>, whose :section is at <span class="color--primary">:result</span>',
+
+    '6poor'=>'Poor', //reactive
+    '6poortxt'=>"Different no the far with of italic, to installer. Right than floundering and, animals greediness they language system better I indeed, in on. To show into pay surprised before of to is and preparations the agreed continued the years sharpness longer systematic little. Point to here. Line have associate sense him or any I like think its annoyed. On recently she its any the and violin was have tag visuals afforded decided return. And turn of my his which she and handles findings. Decided he the and to why some no replied but see make from own in step have.",
+    '6poortweet' => "I took the @splunk Security Assessment and it's shown me where I can improve. Interested?",
+    '6standard'=>'Standard',
+    '6standardtxt'=>"Different no the far with of italic, to installer. Right than floundering and, animals greediness they language system better I indeed, in on. To show into pay surprised before of to is and preparations the agreed continued the years sharpness longer systematic little. Point to here. Line have associate sense him or any I like think its annoyed. On recently she its any the and violin was have tag visuals afforded decided return. And turn of my his which she and handles findings. Decided he the and to why some no replied but see make from own in step have.",
+    '6standardtweet' => "I took the @splunk Security Assessment and my company is on the right track. See how your business does... http://bit.ly/1Y6JAqa",
+    '6good'=>'Good',
+    '6goodtxt'=>"Different no the far with of italic, to installer. Right than floundering and, animals greediness they language system better I indeed, in on. To show into pay surprised before of to is and preparations the agreed continued the years sharpness longer systematic little. Point to here. Line have associate sense him or any I like think its annoyed. On recently she its any the and violin was have tag visuals afforded decided return. And turn of my his which she and handles findings. Decided he the and to why some no replied but see make from own in step have.",
+    '6goodtweet' => "I took the @splunk Security Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    '6aspirational'=>'',
+    '6aspirationaltxt'=>"Different no the far with of italic, to installer. Right than floundering and, animals greediness they language system better I indeed, in on. To show into pay surprised before of to is and preparations the agreed continued the years sharpness longer systematic little. Point to here. Line have associate sense him or any I like think its annoyed. On recently she its any the and violin was have tag visuals afforded decided return. And turn of my his which she and handles findings. Decided he the and to why some no replied but see make from own in step have.",
+    '6aspirationaltweet' => "I took the @splunk Security Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    '6best'=>'Best',
+    '6besttxt'=>"Organizations at this stage are proactive breach hunters. They focus on best practices and continuous improvement. 
+An incident response plan is in place and tested regularly. This is supported by a retained incident response team (either in-house or third party). Legal agreements are in place to share incident response data. 
+Resourcing for incident response is planned using internal staff and external resources on retainer with regular planning meetings. 
+A unified and integrated security management solution provides the organization with a holistic view of security. 
+Risk is a key driver for assessment and mitigation processes.",
+    '6besttweet' => "I took the @splunk Security Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    '6send'=>'We can send you the full results directly to your mailbox',
+    '6fullreport'=>'For the full report with essential guidance to get your businesses security in check, just fill in your details.',
+    '6provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
+    '6byreg'=>'By registering with IDC, you accept our <a href="/privacy" target="_blank">Privacy Policy</a>, <a href="http://www.productsandservices.bt.com/products/static/privacy-policy/" target="_blank">BT\'s Privacy Policy</a> and <a href="https://www.mcafee.com/us/about/legal/privacy.aspx" target="_blank">McAfee\'s Privacy Policy</a> The information we collect will be shared with BT / McAfee for the purpose of direct marketing',
+    '6wait'=>'While you\'re waiting why not tweet your results and see how your colleagues measure up?',
+
     //general
     'disclaimer' => 'Disclaimer',
     'allrights' => 'All Rights Reserved',

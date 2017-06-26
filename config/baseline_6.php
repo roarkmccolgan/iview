@@ -4,21 +4,9 @@ return array(
     'overall' => array(
         'baseline' => 21.5,
         'benchmark-country-en' => 3,
-        'benchmark-country-fr' => 2,
-        'benchmark-country-de' => 3,
-
         'benchmark-size-500-to-999' => 2,
-        'benchmark-size-de-500-à-999' => 2,
-        'benchmark-size-500-bis-999' => 2,
-
         'benchmark-size-1000-to-4999' => 3,
-        'benchmark-size-de-1-000-à-2-499' => 3,
-        'benchmark-size-1000-bis-2499' => 3,
-
         'benchmark-size-5000+' => 3,
-        'benchmark-size-2-500-ou-plus' => 3,
-        'benchmark-size-2500-oder-mehr' => 3,
-
         'complete' => [
             'graph' => [
                 'label' => 'Stage',
@@ -37,7 +25,8 @@ return array(
             'graph'=>false,
             'pb'=>false,
             'designline'=>false,
-            'color'=>'#6AB361',
+            'color'=>'#004895',
+            'basecolor'=>'#d3d8e0',
             'pageimage'=>false,
             'margin-top'=>48,
             'header-spacing'=>0
@@ -204,6 +193,7 @@ return array(
             'pb'=>true,
             'designline'=>true,
             'color'=>'#6AB361',
+            'basecolor'=>'#d3d8e0',
             'pageimage'=>false,
             'extra-graphs'=>false,
         ],
@@ -282,6 +272,7 @@ return array(
             'pb'=>true,
             'designline'=>true,
             'color'=>'#6AB361',
+            'basecolor'=>'#d3d8e0',
             'pageimage'=>false,
             'extra-graphs'=>false,
         ],
@@ -361,6 +352,7 @@ return array(
             'pb'=>true,
             'designline'=>true,
             'color'=>'#6AB361',
+            'basecolor'=>'#d3d8e0',
             'pageimage'=>true,
             'extra-graphs'=>false,
         ],
@@ -440,6 +432,7 @@ return array(
             'pb'=>true,
             'designline'=>true,
             'color'=>'#6AB361',
+            'basecolor'=>'#d3d8e0',
             'pageimage'=>true,
             'extra-graphs'=>false,
         ],

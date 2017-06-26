@@ -6,7 +6,7 @@ return array(
         'description' => 'Please tell us a few things about yourself and your company.',
         'colour' => '',
         'class' => 'screeners',
-        'icon' => 'icon-map',
+        'icon' => 'icon-world',
         'display' => true,
         'complete' => false,
         'pages' => array(
@@ -17,8 +17,15 @@ return array(
                         'type'=>'select',
                         'question'=>'In which country are you situated?',
                         'name'=>'s1',
+                        'script'=>'
+                            $.getJSON("http://freegeoip.net/json/", function(data) {
+                                var ip = data.ip;
+                                var country = data.country_name;
+                                $(\'select[name="answer"]\').val(country);
+                            });
+                        ',
                         'options'=>array(
-                            'null' => 'Please select',
+                            '' => 'Please select',
                             'Afghanistan' => 'Afghanistan',
                             'Albania' => 'Albania',
                             'Algeria' => 'Algeria',
@@ -289,15 +296,15 @@ return array(
         )
     ),
     'general-approach-to-it' => array(
-        'title' => 'General Approach to IT',
+        'title' => 'Approach to IT',
         'class' => 'sec1',
-        'icon' => 'approach',
+        'icon' => 'icon-approach',
         'display' => true,
         'complete' => false,
         'sub-report' => true,
         'pages' => array(
             'page1' => array(
-                'title' => 'General Approach to IT',
+                'title' => 'Approach to IT',
                 'questions' => array(
                     'q1'=>array(
                         'type'=>'slider',
@@ -474,10 +481,10 @@ return array(
                 )
             ),
             'page2' => array(
-                'title' => 'General Approach to IT',
+                'title' => 'Approach to IT',
                 'questions' => array(
                     'q2'=>array(
-                        'type'=>'groupradio',
+                        'type'=>'slider',
                         'question'=>'What types of security technologies or approaches do you currently use to detect threats or breaches today? What will you use in 24 months?',
                         'name'=>'q2',
                         'options'=>array(
@@ -599,7 +606,7 @@ return array(
     'integration' => array(
         'title' => 'Integration',
         'class' => 'sec1',
-        'icon' => 'integration',
+        'icon' => 'icon-integration',
         'display' => true,
         'complete' => false,
         'sub-report' => true,
@@ -608,7 +615,7 @@ return array(
                 'title' => 'Integration',
                 'questions' => array(
                     'q3'=>array(
-                        'type'=>'button',
+                        'type'=>'radio',
                         'question'=>'What is your approach when it comes to security investments?',
                         'name'=>'q3',
                         'options'=>array(
@@ -649,7 +656,7 @@ return array(
                 'title' => 'Integration',
                 'questions' => array(
                     'q4'=>array(
-                        'type'=>'button',
+                        'type'=>'radio',
                         'question'=>'Which statement best describes your approach to selecting a security vendor?',
                         'name'=>'q4',
                         'options'=>array(
@@ -687,7 +694,7 @@ return array(
     'automation' => array(
         'title' => 'Automation',
         'class' => 'sec2',
-        'icon' => 'splunk-incident-detection',
+        'icon' => 'icon-automation',
         'display' => true,
         'complete' => false,
         'sub-report' => true,
@@ -696,7 +703,7 @@ return array(
                 'title' => 'Automation',
                 'questions' => array(
                     'q5'=>array(
-                        'type'=>'button',
+                        'type'=>'radio',
                         'question'=>'To what level have you adopted automation in your IT security management?',
                         'name'=>'q5',
                         'options'=>array(
@@ -737,7 +744,7 @@ return array(
                 'title' => 'Automation',
                 'questions' => array(
                     'q6'=>array(
-                        'type'=>'button',
+                        'type'=>'radio',
                         'question'=>'When it comes to your use of automation of security processes, do you intend to increase or decrease your use of this?',
                         'name'=>'q6',
                         'options'=>array(
@@ -903,7 +910,7 @@ return array(
     'unified-intelligence' => array(
         'title' => 'Unified Intelligence',
         'class' => 'sec3',
-        'icon' => 'icon-Timer-2',
+        'icon' => 'icon-unified',
         'display' => true,
         'complete' => false,
         'sub-report' => true,

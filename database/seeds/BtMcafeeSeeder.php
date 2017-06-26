@@ -23,7 +23,7 @@ class BtMcafeeSeeder extends Seeder
             'sub_title' => 'How ready is your businesses\' security ',
             'company_id' => 7,
             'gapropertyid' => '153391553',
-            'template' => 'bubblegum',
+            'template' => 'btmcafee',
             'created_at' => Carbon::now(),
         ]);
         DB::table('urls')->insert([

@@ -16,6 +16,45 @@ Form::macro('errors', function($errors, $field = false)
 	return null;
 });
 
+Form::macro('idcSelect', function($num,$q,$page){
+	$errors = Session::get('errors');
+	$name = $q['name'];
+	$question = $q['question'];
+	$html =Form::hidden('question', $name);
+	$html.='
+	<div class="col-md-12">
+		<div class="input-select">
+			<select name="answer">';
+	
+	
+	$selected = isset($q['selected'])? $q['selected']:false;
+	if($selected){
+		if(strpos($selected, "|")!==false){
+			$selected = explode('|', $selected);
+            $selected = $selected[0];
+		}
+	}
+
+	foreach ($q['options'] as $key => $value) {
+		$checked = $value==$selected? ' selected':'';
+		$value = $key;
+		$html.='
+		<option value="'.$key.'"'.$checked.'>'.$value.'</option>';
+	}
+	$html.='
+			</select>
+		</div>
+	</div>
+	';
+	$html.='
+				<div class="col-md-12">
+					<div class="mt--1">
+						<button id="next" class="btn btn-client pull-right btn-lg next" type="submit">'.Lang::get('general.next').'</button>
+					</div>
+				</div>';
+	return $html;
+});
+
 Form::macro('idcRadio', function($num,$q,$type,$page){
 	$errors = Session::get('errors');
 	$html ='';
@@ -332,6 +371,36 @@ Form::macro('idcBubblegumButton', function($section,$q,$page){
 		$html.='
 				<div class="col-sm-12">
 					<div class="input-radio input-radio--innerlabel '.$checked.' mb--1 w60">
+                        <label>'.$optionSet['label'].'</label>
+                        <div class="inner"></div>
+                        <input class="btn-q" type="radio" name="answer" value="'.$optionSet['label'].'|'.$optionSet['value'].'" id="'.$key.'-'.$name.'" '.$checked.' />
+                    </div>					
+				</div>';
+	}
+	return $html;
+});
+
+Form::macro('idcBTButton', function($section,$q,$page){
+	$errors = session('errors');
+	$html ='';
+	$name = $q['name'];
+	$html.=Form::hidden('question', $name);
+	$question = $q['question'];
+	$selected = isset($q['selected'])? $q['selected']:false;
+	if($selected){
+		if(strpos($selected, "|")!==false){
+			$selected = explode('|', $selected);
+            $selected = $selected[0];
+		}
+	}
+	$class = '';
+	$disabled = 'disabled';
+	foreach ($q['options'] as $key => $optionSet) {
+		$checked = $optionSet['label']==$selected? 'checked':'';
+		$disabled = ($disabled == 'disabled' && $optionSet['label']==$selected) ? '':'disabled';
+		$html.='
+				<div class="col-sm-8 col-sm-offset-2">
+					<div class="input-radio input-radio--innerlabel '.$checked.' mb--1">
                         <label>'.$optionSet['label'].'</label>
                         <div class="inner"></div>
                         <input class="btn-q" type="radio" name="answer" value="'.$optionSet['label'].'|'.$optionSet['value'].'" id="'.$key.'-'.$name.'" '.$checked.' />
