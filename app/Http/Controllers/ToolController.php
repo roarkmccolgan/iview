@@ -994,9 +994,9 @@ public function postComplete(SubmitAssessmentsRequest $request)
 
 				//dd($query);
 				$queries[] = $query;
-			    //$this->dispatch(new SendEloquaRequest($url, $query));
+			    $this->dispatch(new SendEloquaRequest($url, $query));
 			}
-			return $queries->count();
+			return 'Dispatched '.$queries->count().' eloqua requests to the queue';
 		}
     }
 
