@@ -34,35 +34,35 @@ return array(
         'types' => array(
             'stage1' => array(
                 'low' => 0,
-                'high' => 32.4,
+                'high' => 30.67,
                 'copy' => 'general.6poortxt',
                 'tweet' => false,
                 'benchmark' => 2,
             ),
             'stage2' => array(
-                'low' => 32.5,
-                'high' => 46.8,
+                'low' => 30.68,
+                'high' => 48,
                 'copy' => 'general.6standardtxt',
                 'tweet' => false,
                 'benchmark' => 32,
             ),
             'stage3' => array(
-                'low' => 46.9,
-                'high' => 61.2,
+                'low' => 48.01,
+                'high' => 69.99,
                 'copy' => 'general.6goodtxt',
                 'tweet' => false,
                 'benchmark' => 41,
             ),
             'stage4' => array(
-                'low' => 61.3,
-                'high' => 75.6,
+                'low' => 70,
+                'high' => 85,
                 'copy' => 'general.6aspirationaltxt',
                 'tweet' => false,
                 'benchmark' => 21,
             ),
             'stage5' => array(
-                'low' => 75.7,
-                'high' => 100,
+                'low' => 85,
+                'high' => 105,
                 'copy' => 'general.6besttxt',
                 'tweet' => false,
                 'benchmark' => 21,
@@ -236,7 +236,8 @@ return array(
                 'copy' => 'general.6integration-best-txt'
             )
         )
-    ),'integration' => array(
+    ),
+    'integration' => array(
         'baseline' => 15.363,
         'benchmark-country-en' => 3,
         'benchmark-country-fr' => 3,
@@ -281,35 +282,35 @@ return array(
         'types' => array(
             'stage1' => array(
                 'low' => 0,
-                'high' => 10.8,
+                'high' => 9,
                 'total' => 2,
                 'benchmark' => 1,
                 'copy' => 'general.6integration-poor-txt'
             ),
             'stage2' => array(
-                'low' => 10.9,
-                'high' => 15.6,
+                'low' => 9.01,
+                'high' => 13,
                 'total' => 3,
                 'benchmark' => 16,
                 'copy' => 'general.6integration-standard-txt'
             ),
             'stage3' => array(
-                'low' => 15.7,
-                'high' => 20.4,
+                'low' => 13.01,
+                'high' => 17,
                 'total' => 5,
                 'benchmark' => 34,
                 'copy' => 'general.6integration-good-txt'
             ),
             'stage4' => array(
-                'low' => 20.5,
-                'high' => 25.2,
+                'low' => 17.01,
+                'high' => 21,
                 'total' => 5,
                 'benchmark' => 43,
                 'copy' => 'general.6integration-aspirational-txt'
             ),
             'stage5' => array(
-                'low' => 25.3,
-                'high' => 50,
+                'low' => 21.01,
+                'high' => 25,
                 'total' => 5,
                 'benchmark' => 6,
                 'copy' => 'general.6integration-best-txt'
@@ -361,35 +362,35 @@ return array(
         'types' => array(
             'stage1' => array(
                 'low' => 0,
-                'high' => 11.6,
+                'high' => 7,
                 'total' => 3,
                 'benchmark' => 27,
                 'copy' => 'general.6automation-poor-txt'
             ),
             'stage2' => array(
-                'low' => 11.7,
-                'high' => 16.2,
+                'low' => 7.01,
+                'high' => 11.5,
                 'total' => 4,
                 'benchmark' => 27,
                 'copy' => 'general.6automation-standard-txt'
             ),
             'stage3' => array(
-                'low' => 16.3,
-                'high' => 20.8,
+                'low' => 11.51,
+                'high' => 16,
                 'total' => 6,
                 'benchmark' => 28,
                 'copy' => 'general.6automation-good-txt'
             ),
             'stage4' => array(
-                'low' => 20.9,
-                'high' => 25.4,
+                'low' => 16.01,
+                'high' => 20.5,
                 'total' => 6,
                 'benchmark' => 15,
                 'copy' => 'general.6automation-aspirational-txt'
             ),
             'stage5' => array(
-                'low' => 25.6,
-                'high' => 40,
+                'low' => 20.51,
+                'high' => 25,
                 'total' => 5,
                 'benchmark' => 3,
                 'copy' => 'general.5automation-best-txt'

@@ -904,4 +904,100 @@ public function postComplete(SubmitAssessmentsRequest $request)
     	return $final;
     }
 
+
+    public function resendeloqua(Request $request){
+    	$tool= $request->get('product');
+    	$from = false;
+    	if($request->has('from')){
+    		$from = Carbon::parse($request->input('from'));
+    		$tool->load(['assessments' => function ($query) use($from) {
+			    $query->whereDate('created_at','>',$from);
+			}]);
+    	}else{
+			$tool->load('assessments');
+    	}
+
+    	/*$cleanresults = $tool->assessments->map(function ($item, $key) {
+    		$item->quiz = collect($item->quiz)->flatmap(function ($item){
+    			return collect($item['pages'])->flatmap(function ($item){
+    				return collect($item['questions'])->map(function($item,$key){
+    					return collect([$key=>$item['selected']]);
+    				});
+    			});
+    		});
+		    return collect($item);
+		});*/
+
+		$eloqua = config('baseline_'.$tool->id.'.overall.eloqua',false);
+		if($eloqua){ //!App::isLocal() && 
+			$url = $eloqua['url'];
+			$currentLocal = App::getLocale();
+			$queries = collect();
+			foreach ($tool->assessments as $assessment) {
+				if(!is_null($assessment->code)){
+					$language = Tracker::where('code',$assessment->code)->first()->language->abbreviation;
+					$currentLocal = $language;
+				}
+				
+			    foreach ($eloqua['fields'] as $fieldKey => $settings) {
+			    	switch ($settings['type']) {
+			    		case 'locale':
+			    			$query[$fieldKey] = $currentLocal;
+			    			break;
+			    		case 'field':
+			    			$query[$fieldKey] = $assessment[$settings['name']];
+			    			break;
+			    		case 'hidden':
+			    			$query[$fieldKey] = $settings['value'];
+			    			break;
+			    		case 'report':
+			    			$query[$fieldKey] = session('url').'/'.session('localeUrl').'download/'.$assessment->id;
+			    			break;
+			    		case 'question':
+			    			$selected = array_get($assessment->quiz, $settings['questions'][0].'.selected');
+			    			$val = explode('|', $selected);
+		    				$val = $val[1];
+			    			$query[$fieldKey] = $val;
+			    			break;
+			    		case 'questionlabel':
+			    			$selected = array_get($assessment->quiz, $settings['questions'][0].'.selected');
+			    			$label = explode('|', $selected);
+		    				$label = $label[0];
+			    			$query[$fieldKey] = $label;
+			    			break;
+			    		case 'calculation':
+			    			$results = [];
+			    			foreach ($settings['questions'] as $key => $question) {
+			    				$selected = array_get($assessment->quiz, $question.'.selected');
+			    				$val = explode('|', $selected);
+		    					$val = $val[1];
+		    					$results[]=$val;
+			    			}
+			    			$answer = 0;
+			    			switch ($settings['formula']) {
+			    				case 'multiply':
+			    					$answer = array_product($results);
+			    					break;
+			    				case 'add':
+			    					$answer = array_sum($results);
+			    					break;
+			    			}
+			    			$query[$fieldKey] = $answer;
+			    			break;
+			    	}
+			    }
+			    /*if($request->session()->has('queryparam')){
+					foreach (session('queryparam') as $key => $value) {
+				    	$query[$key] = $value;
+				    }
+				}*/
+
+				//dd($query);
+				$queries[] = $query;
+			    //$this->dispatch(new SendEloquaRequest($url, $query));
+			}
+			return $queries->count();
+		}
+    }
+
 }

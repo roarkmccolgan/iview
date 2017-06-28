@@ -88,6 +88,7 @@ Route::group(['domain' => '{subdomain}.idcready.net','middleware'=>['locale']], 
 
 	Route::get('/pdf', 'PdfController@wkhtml');
 	Route::get('/scoring', 'ToolController@scoring');
+	Route::get('/resendeloqua', 'ToolController@resendeloqua')->middleware(['routebyurl']);;
 	Route::get('/template/{templates}/report/header', function($domain, $template){
 		return View::make('tool.'.$template.'.report.header');
 	});

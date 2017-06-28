@@ -219,7 +219,11 @@ class AssessmentController extends Controller {
 			unset($assessments[$assKey]['extra']);
 			foreach ($assessment['result'] as $resKey => $result) {
 				if($resKey!='overall'){
-					$assessments[$assKey][trans($tool->alias.'.'.$resKey.'.title')] = trans($tool->alias.'.'.$result['rating']);
+					if($result['rating']){
+						$assessments[$assKey][trans($tool->alias.'.'.$resKey.'.title')] = trans($tool->alias.'.'.$result['rating']);
+					}else{
+						$assessments[$assKey][trans($tool->alias.'.'.$resKey.'.title')] = "";
+					}
 				}
 			}
 			unset($assessments[$assKey]['result']);
