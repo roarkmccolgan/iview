@@ -1,12 +1,12 @@
 <?php
 //GDPR
 return array(
-    'title' => 'IDC\'s GDPR Readiness Assessment Report',
+    'title' => 'IDC\'s GDPR Assessment:  Endpoint Readiness',
     'sub-title' => 'Introduction',
-    'stage1' => 'Stage 1: Initial',
-    'stage2' => 'Stage 2: Defined',
-    'stage3' => 'Stage 3: Managed',
-    'stage4' => 'Stage 4: Optimised',
+    'stage1' => 'Stage 1: Time to Research',
+    'stage2' => 'Stage 2: Time to Plan and Implement',
+    'stage3' => 'Stage 3: Time to Accelerate Activities',
+    'stage4' => 'Stage 4: Time to Consolidate and Maintain',
     'complete_thankyou' => 'Thank you :Fname,',
     'complete_body' => 'Your custom report will arrive in your inbox soon.<br/>
 Please check in your junk folder if you don\'t receive it within 5 minutes.<br/>
@@ -45,7 +45,7 @@ While you\'re waiting why not share your results and see how your followers meas
     ',
     'introduction-image' => 'mainimage.jpg',
     'overall' => array(
-        'title'=>'Overall GDPR and Print Maturity',
+        'title'=>'Overall Readiness',
         'hidetitle'=>'false',
         'pageimage'=>'overall.jpg',
         'stage1'=>'

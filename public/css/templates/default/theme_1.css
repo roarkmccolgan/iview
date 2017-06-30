@@ -43,6 +43,9 @@ h2.question{
 .navbar-default{
 	background-color: #FFFFFF;
 }
+.completediv{
+	margin-left: 30px; font-size: 16px; line-height: 24px;
+}
 /*form styles*/
 #msform {
 	margin: 10px auto 30px auto;

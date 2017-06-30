@@ -48,6 +48,28 @@ h2.question{
 .navbar-default{
 	background-color: #FFFFFF;
 }
+.completediv{
+	margin-left: 0px; font-size: 16px; line-height: 20px; margin-top: 40px; margin-bottom: -20px;
+}
+.completediv img{
+	max-width: 330px;
+}
+ul { 
+   list-style-type: disc;
+   margin-left: 15px;
+}
+ol { 
+   list-style-type: decimal;
+}
+ul ul, ol ul { 
+   list-style-type: circle;
+}
+ol ol, ul ol { 
+   list-style-type: lower-latin; 
+}
+li{
+	margin-left: 15px;
+}
 /*form styles*/
 #msform {
 	margin: 5px auto 30px auto;
@@ -259,13 +281,16 @@ span.instruct {
     text-align: justify;
     font-size:0;
     margin-bottom: 20px;
+    margin-left: 0;
 }
+
 #progressbar:after {
     content: '';
     display: inline-block;
     width: 100%;
 }
 #progressbar li {
+	margin: 0;
 	border: 1px solid #FFF;
 	color: #FFF;
     display: inline-block;

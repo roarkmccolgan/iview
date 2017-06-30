@@ -355,9 +355,10 @@ class PdfController extends Controller
 						$extraChart[$section.'_'.$key.'_graph'] = Lava::ColumnChart($section.'_'.$key.'_graph', $extraGraph, $chartSettings);
 					}
 				}
-				$vars['sections'][] = [
+				$vars['sections'][$section] = [
 					'title' => trans(session('product.alias').'.'.$section.'.title'),
 					'hidetitle' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.hide-title'),
+					'hidetitlebar' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.hide-title-bar'),
 					'hiderating' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.hide-rating',false),
 					'introduction' => Lang::has(session('product.alias').'.'.$section.'.introduction') ? trans(session('product.alias').'.'.$section.'.introduction',['result'=>trans(session('product.alias').'.'.session('result.'.$section.'.rating')),'benchmark'=>config('baseline_'.session('product.id').'.'.$section.'.types.'.session('result.'.$section.'.rating').'.benchmark')]):false,
 					'seckey' => $section,
@@ -371,9 +372,16 @@ class PdfController extends Controller
 					'rating' => trans(session('product.alias').'.'.session('result.'.$section.'.rating')),
 					'score' => session('result.'.$section.'.score'),
 					'paragraph' => trans(session('product.alias').'.'.$section.'.'.session('result.'.$section.'.rating')),
-
 				];
-				$headervars['page'.$count] = trans(session('product.alias').'.'.$section.'.title');
+				/*if(strlen($vars['sections'][$section]['paragraph']) > 400){
+					$para = $vars['sections'][$section]['paragraph'];
+					$lastP = strrpos ($para, '</p>', 400);
+					$para = substr_replace($para, '<div class="pb"></div>', $lastP+4, 0);
+					dd($para);
+				}*/
+				
+
+				$headervars['page'.$count] = !$vars['sections'][$section]['hidetitlebar'] ? trans(session('product.alias').'.'.$section.'.title') : '';
 				$headervars['page_offset'] = config('baseline_'.session('product.id').'.overall.report-settings.page-offset',1);
 				$count++;
 			}

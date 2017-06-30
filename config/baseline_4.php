@@ -12,8 +12,10 @@ return array(
             'color'=>'#0096d6',
             'pageimage'=>true,
             'hide-title'=> true,
+            'hide-title-bar'=> true,
             'hide-rating'=>true,
             'page-offset'=> 2,
+            'header-spacing'=>0
         ],
         'types' => array(
             'stage1' => array(
@@ -58,6 +60,7 @@ return array(
             'color'=>'#0096d6',
             'pageimage'=>true,
             'hide-title'=> true,
+            'hide-title-bar'=> true,
             'hide-rating'=>true,
             'extra-graphs'=>false,
         ],
@@ -101,6 +104,7 @@ return array(
             'color'=>'#0096d6',
             'pageimage'=>true,
             'hide-title'=> true,
+            'hide-title-bar'=> true,
             'hide-rating'=>true,
             'extra-graphs'=>false,
         ],
@@ -144,6 +148,7 @@ return array(
             'color'=>'#0096d6',
             'pageimage'=>true,
             'hide-title'=> true,
+            'hide-title-bar'=> true,
             'hide-rating'=>true,
             'extra-graphs'=>false,
         ],

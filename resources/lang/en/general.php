@@ -274,8 +274,8 @@ Complete the IDC Cyber Risk Assessment Tool to find out more about how ready you
     '4restart'=>'Restart Assessment',
     '4assoc'=>'In association with',
     '4sponsors'=>'HP Inc.',
-    '4title'=>'IDC\'s GDPR Readiness Assessment',
-    '4sub-title'=>'Is your business ready for GDPR Compliance?',
+    '4title'=>'IDC\'s GDPR Assessment: Endpoint Readiness',
+    '4sub-title'=>false,
     '4landing'=>'<h2>The GDPR Deadline is Coming<br/>Are your devices ready for GDPR compliance?</h2>
     <p>
         The EU General Data Protection Regulation (GDPR) deadline is approaching. It will supersede all current national data protection laws in the EU and can impact your organization in terms of handling and protecting personal data.
@@ -285,29 +285,36 @@ Complete the IDC Cyber Risk Assessment Tool to find out more about how ready you
     </p>',
     '4startbut'=>'Start Here',
     '4initial'=>'initial', //reactive
-    '4initialtxt'=>'
-        Organizations at this stage in their GDPR Readiness need to make some changes.
-    ',
+    '4initialtxt'=>'',
     '4initialtweet' => "I took the @HP GDPR Assessment and it's shown me where I can improve. Interested?",
     '4defined'=>'Defined',
-    '4definedtxt'=>'
-        Organizations at this stage in their GDPR Readiness need to make some changes.
-    ',
+    '4definedtxt'=>'',
     '4definedtweet' => "I took the @HP GDPR Assessment and my company is on the right track. See how your business does... http://bit.ly/1Y6JAqa",
     '4managed'=>'Managed',
-    '4managedtxt'=>'
-        Organizations at this stage in their GDPR Readiness need to make some changes.
-    ',
+    '4managedtxt'=>'',
     '4managedtweet' => "I took the @HP GDPR Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
     '4optimised'=>'Optimised',
-    '4optimisedtxt'=>'
-        Organizations at this stage in their GDPR Readiness need to make some changes.
-    ',
+    '4optimisedtxt'=>'',
     '4optimisedtweet' => "I took the @HP GDPR Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
     '4send'=>'We can send you the full results directly to your mailbox',
-    '4fullreport'=>'For the full report with essential guidance to get your business GDPR compliant, just fill in your details.',
+    '4fullreport'=>'
+        <div style="float: left; width: 48%; margin-right: 20px;">
+            <p>
+                Thank you for completing the GDPR readiness assessment.
+            </p>
+            <p>
+                Tell us a little about yourself and receive a personalized report which will provide you with:
+            </p>
+            <ul>
+                <li>Understanding of where your organization is on its GDPR journey</li>
+                <li>Essential guidance on what you need to consider to ensure that your devices are ready for GDPR compliance.</li>
+            </ul>
+        </div>
+        <img class="visible-sm visible-md visible-lg visible-xl" src="http://hpgdpr.idcready.net/images/tools/4/report_mockup_.png"/>
+        <div class="clearfix"></div>
+    ',
     '4provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
-    '4byreg'=>'By registering with IDC, you accept our <a href="/privacy" target="_blank">Privacy Policy</a> and <a href="http://www8.hp.com/za/en/privacy/privacy.html" target="_blank">HP Inc. Privacy Policy</a> The information we collect will be shared with HP for the purpose of direct marketing',
+    '4byreg'=>'By registering with IDC, you accept our <a href="/privacy" target="_blank">Privacy Policy</a> and <a href="http://www8.hp.com/za/en/privacy/privacy.html" target="_blank">HP Inc. Privacy Policy</a> The information we collect will be shared with HP and HP\'s selected parties for the purpose of direct marketing',
     '4wait'=>'While you\'re waiting why not tweet your results and see how your colleagues measure up?',
 
     //SPLUNK 5

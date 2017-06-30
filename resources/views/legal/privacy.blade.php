@@ -23,7 +23,7 @@ By visiting [<a href="{{ url('/') }}">{{ url('/') }}</a>] ("<strong>Website</str
 For purposes of this policy, the term "<strong>you</strong>" includes all visitors to the Website who are not yet customers, those who become customers, as well as those who do not become customers; whether you upload information to the Website, download it, or are merely visiting the Website. You can choose not to provide certain information when using the Website but please note that you then might not be able to take advantage of many of the Website features.
 </p>
 <p>
-The Website is maintained by: [IDC UK Limited of Chiswick Tower, 389 Chiswick High Road, London W4 4AE, United Kingdom].
+The Website is maintained by: [IDC UK Ltd, Ealing Cross, 85 Uxbridge Road, London W5 5TH, United Kingdom].
 </p>
 <p>
 Any personal information provided to or gathered on the Website is controlled by us and/or one of the members of our corporate group from time to time (inclusive of IDC's ultimate parent or holding company and any sister companies and its or their subsidiaries from time to time (if any)) ("International Data Group Inc.").

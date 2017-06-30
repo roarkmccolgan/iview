@@ -354,6 +354,7 @@ trait GenerateReportTrait {
 					$vars['sections'][] = [
 						'title' => trans(session('product.alias').'.'.$section.'.title'),
 						'hidetitle' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.hide-title'),
+						'hidetitlebar' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.hide-title-bar'),
 						'hiderating' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.hide-rating',false),
 						'introduction' => Lang::has(session('product.alias').'.'.$section.'.introduction') ? trans(session('product.alias').'.'.$section.'.introduction',['result'=>trans(session('product.alias').'.'.session('result.'.$section.'.rating')),'benchmark'=>config('baseline_'.session('product.id').'.'.$section.'.types.'.session('result.'.$section.'.rating').'.benchmark')]):false,
 						'seckey' => $section,
@@ -369,7 +370,7 @@ trait GenerateReportTrait {
 						'paragraph' => trans(session('product.alias').'.'.$section.'.'.session('result.'.$section.'.rating')),
 
 					];
-					$headervars['page'.$count] = trans(session('product.alias').'.'.$section.'.title');
+					$headervars['page'.$count] = !$vars['sections'][$section]['hidetitlebar'] ? trans(session('product.alias').'.'.$section.'.title') : '';
 					$headervars['page_offset'] = config('baseline_'.session('product.id').'.overall.report-settings.page-offset',1);
 					$count++;
 				}

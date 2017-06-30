@@ -31,7 +31,7 @@
 						<div style="padding: 20px;">
 							<strong>{{$heading}}</strong>
 							<h1>{{$result}}</h1>
-							<div style="margin-left: 30px; font-size: 16px; line-height: 24px">
+							<div class="completediv">
 								<p>{{$sub1}}</p>
 								{!!trans('general.'.session('product.id').'fullreport')!!}
 							</div>

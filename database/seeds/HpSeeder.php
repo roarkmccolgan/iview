@@ -19,7 +19,7 @@ class HpSeeder extends Seeder
         ]);
         DB::table('tools')->insert([
             'alias' => 'idcs-gdpr-readiness-assessment',
-            'title' => 'IDC\'s GDPR Readiness Assessment',
+            'title' => 'IDC\'s GDPR Assessment: Endpoint Readiness',
             'sub_title' => 'Is your business ready for GDPR Compliance',
             'company_id' => 5,
             'gapropertyid' => '147201000',

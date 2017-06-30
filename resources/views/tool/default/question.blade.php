@@ -14,7 +14,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-2">
-                    <h1>{{Lang::get('general.'.session('product.id').'title')}} <small>{{Lang::get('general.'.session('product.id').'sub-title')}}</small></h1>
+                    <h1>{{Lang::get('general.'.session('product.id').'title')}}
+                    @if(Lang::has('general.'.session('product.id').'sub-title'))
+                        <small>{{Lang::get('general.'.session('product.id').'sub-title')}}</small>
+                    @endif
+                    </h1>
                 </div>
                 <div class="col-md-2" style="text-align: right">
                     <div class="icon-idc" style="width: 180px; height: 51px; margin-left: 10px; margin-top: 5px; margin-bottom: 5px; display: inline-block; vertical-align: middle;" ></div>
