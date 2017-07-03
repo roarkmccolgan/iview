@@ -11,13 +11,13 @@ return array(
     'complete_body' => 'Your custom report will arrive in your inbox soon.<br/>
 Please check in your junk folder if you don\'t receive it within 5 minutes.<br/>
 While you\'re waiting why not share your results and see how your followers measure up?',
-    'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Readiness Assessment Tool for @HP. Interested in your own readiness? ',// http://bit.ly/2gslXEh
+    'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Readiness Assessment Tool for @HP. Interested in your own readiness? http://bit.ly/2tBunUh',// http://bit.ly/2gslXEh
     'email'=>[
         'subject' => 'IDC\'s GDPR Readiness Assessment',
         'hi' => 'Hi :Fname',
         'body' => 'As promised, here\'s a link to download your GDPR Readiness Assessment. This breaks down your results by category and provides you with actionable recommendations.',
         'link' => 'Download Report',
-        'extra' => 'Once you\'ve digested the report why not visit <a href="http://www.hp.com" style="color:#0096D6">HP</a>',
+        'extra' => 'Once you\'ve digested the report why not visit <a href="http://www.hp.com/thewolf" style="color:#0096D6">HP</a>',
         'regards' => 'Regards',
         'team' => 'The IDC Team'
     ],

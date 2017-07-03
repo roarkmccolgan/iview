@@ -27,10 +27,10 @@ class SubmitAssessmentsRequest extends Request
         $tool = Tool::findOrFail(session('product.id'));
 
         $rules = [
-            'fname'=>'required|min:3|max:255',
-            'sname'=>'required|min:3|max:255',
+            'fname'=>'required|min:2|max:255',
+            'sname'=>'required|min:2|max:255',
             'email'=>'required|email',
-            'company'=>'required|min:3|max:255',
+            'company'=>'required|min:2|max:255',
             'title'=>'required|min:3|max:255',
             'country'=>'required',
             'phone'=>'required',
