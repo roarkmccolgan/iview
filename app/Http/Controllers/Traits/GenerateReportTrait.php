@@ -351,7 +351,7 @@ trait GenerateReportTrait {
 							$extraChart[$section.'_'.$key.'_graph'] = Lava::ColumnChart($section.'_'.$key.'_graph', $extraGraph, $chartSettings);
 						}
 					}
-					$vars['sections'][] = [
+					$vars['sections'][$section] = [
 						'title' => trans(session('product.alias').'.'.$section.'.title'),
 						'hidetitle' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.hide-title'),
 						'hidetitlebar' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.hide-title-bar'),
