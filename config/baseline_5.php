@@ -108,7 +108,7 @@ return array(
                 ],
                 'Phone' => [
                     'type' => 'field',
-                    'name' => 'phone'
+                    'name' => 'tel'
                 ],
                 'Country' => [
                     'type' => 'field',
