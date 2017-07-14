@@ -92,7 +92,7 @@ return array(
                 ],
                 'LastName' => [
                     'type' => 'field',
-                    'name' => 'sname'
+                    'name' => 'lname'
                 ],
                 'Email' => [
                     'type' => 'field',
