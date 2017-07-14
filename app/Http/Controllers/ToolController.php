@@ -910,12 +910,15 @@ public function postComplete(SubmitAssessmentsRequest $request)
     	$from = false;
     	if($request->has('from')){
     		$from = Carbon::parse($request->input('from'));
-    		$tool->load(['assessments' => function ($query) use($from) {
-			    $query->whereDate('created_at','>',$from);
+    		$to = $request->has('to') ? Carbon::parse($request->input('to')) : Carbon::now()->addYear();
+    		$tool->load(['assessments' => function ($query) use($from,$to) {
+			    $query->whereDate('created_at','>=',$from)
+			    ->whereDate('created_at','<=',$to);
 			}]);
     	}else{
 			$tool->load('assessments');
     	}
+    	//dd($tool->assessments);
 
     	/*$cleanresults = $tool->assessments->map(function ($item, $key) {
     		$item->quiz = collect($item->quiz)->flatmap(function ($item){

@@ -42,7 +42,7 @@ class RouteByURL
                     ['code', '=', $request->input('utm')],
                 ])->first();
                 if($tracker && $tracker->language->abbreviation==App::getLocale()){
-                    $tracker->increment('views');
+                    //$tracker->increment('views');
                     $request->session()->put('utm', $request->input('utm'));
                     /*$trackerHit = $tracker->trackerHits()->create([
                         'type' => 'view',

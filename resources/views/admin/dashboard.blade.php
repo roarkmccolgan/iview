@@ -121,11 +121,28 @@
 				<div class="content">
 					<div class="stat-data">
 						<div class="stat-orange">
-							<h2>{{$complete_total}}</h2><span>Completion{{$complete_total > 1 ? 's':''}}</span>
+							<h2>{{$lead_total}}</h2><span>Completion{{$lead_total > 1 ? 's':''}}<br><span>({{count($analyticsResults['complete_results'])}} days)</span></span>
 						</div>
+					</div>
+					<div class="stat-data">
+						<div class="stat-number">
+							<div>
+								<h2>{{$alltime_total}}</h2>
+							</div>
+							<div>Completion{{$alltime_total > 1 ? 's':''}}<br><span>(All Time)</span></div>
+						</div>
+						<!--div class="stat-number">
+							<div>
+								<h2>{{$complete_total}}</h2>
+							</div>
+							<div>Assessment Completions<br><span>(Without completing the form, {{count($analyticsResults['complete_results'])}} days)</span></div>
+						</div-->
 					</div>
 					<div class="clear"></div>
 				</div>
+				<div class="header no-border">
+                  <h2>Tracking Codes</h2>
+                </div>
 				<div class="content no-padding">
 					<table class="red">
 						<thead>

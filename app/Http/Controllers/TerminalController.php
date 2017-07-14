@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use Analytics;
+use App\Assessment;
 use App\Http\Requests;
-use Assessment;
-use App\TrackerHits;
 use App\Tracker;
+use App\TrackerHits;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -34,17 +34,49 @@ class TerminalController extends Controller
         $endDate = Carbon::now();
         $customDate = false;
         if($request->input('reporting')){
-            $startDate = Carbon::createFromFormat('d-m-Y',$request->input('from'));
-            $endDate = Carbon::createFromFormat('d-m-Y',$request->input('to'));
+            $startDate = Carbon::createFromFormat('!d-m-Y',$request->input('from'));
+            $endDate = Carbon::createFromFormat('!d-m-Y',$request->input('to'));
             $customDate = true;
         }
+
+        //create Array of dates
+        $dateRange = [];
+        for($date = clone $startDate; $date->lte($endDate); $date->addDay()) {
+            $dateRange[] = $date->format('Ymd');
+        }
+
+        $completionRange = collect($dateRange)->map(function($item, $key){
+            return [$item,0];
+        });
 
         $tool->load(
             ['trackers' => function ($query) use ($startDate, $endDate) {
                 $query->with(['TrackerHits' => function ($q) use ($startDate, $endDate) {
                     $q->whereDate('created_at','>=',$startDate)->whereDate('created_at','<=',$endDate);
                 }]);
-            }],'urls');
+            },
+            'assessments' => function ($query) use ($startDate, $endDate) {
+                $query->whereDate('created_at','>=',$startDate)->whereDate('created_at','<=',$endDate);
+            }],
+            'urls'
+        );
+
+        //All assessments completed within date range
+        $lead_total = $tool->assessments->count();
+        //end
+
+        //create an array of dates for all assessments within date range
+        $assessmentDates = [];
+        foreach ($tool->assessments as $ass) {
+            $dateinquestion = $ass->created_at->format('Ymd');
+            $assessmentDates[] = $dateinquestion;
+        }
+
+        //make a full array of each day with count of assessments per day
+        $completionDates=[];
+        foreach ($dateRange as $theDay) {
+            $completionDates[] = [Carbon::parse($theDay)->format('d'),count(array_keys($assessmentDates, $theDay ))];
+        }
 
         $trackerQueries = [];
 
@@ -135,18 +167,21 @@ class TerminalController extends Controller
             }
         }*/
 
-
-
         $daily_total = 0;
-        $complete_total = 0;
+
+        
         foreach ($analyticsResults['daily_results'] as $key => $value) {
-            $analyticsResults['daily_results'][$key][0] = Carbon::createFromFormat('Ymd',$value[0])->format('j');
+            $correctDateFormat = Carbon::createFromFormat('Ymd',$value[0])->format('j');
+            $analyticsResults['daily_results'][$key][0] = $correctDateFormat;
             $daily_total+=$value[1];
         }
+        $complete_total = 0;
         foreach ($analyticsResults['complete_results'] as $key => $value) {
             $analyticsResults['complete_results'][$key][0] = Carbon::createFromFormat('Ymd',$value[0])->format('j');
             $complete_total+=$value[1];
         }
+
+        $alltime_total = Assessment::where('tool_id',$tool->id)->count();
 
         $data = [
             'tool' => $tool,
@@ -155,6 +190,8 @@ class TerminalController extends Controller
             'analyticsResults' => $analyticsResults,
             'daily_total' => $daily_total,
             'complete_total' => $complete_total,
+            'lead_total' => $lead_total,
+            'alltime_total' => $alltime_total,
             'customDate' => $customDate,
         ];
 
@@ -163,7 +200,7 @@ class TerminalController extends Controller
             'daily_results' => $analyticsResults['daily_results'],
             'country_results' => $analyticsResults['country_results'],
             'device_results' => $analyticsResults['device_results'],
-            'complete_results' => $analyticsResults['complete_results'],
+            'complete_results' => $completionDates,//$analyticsResults['complete_results']
             'utm_views' => $analyticsResults['utm_views'],
             'utm_completes' => $analyticsResults['utm_completes'],
             'referrers_results' => $analyticsResults['referrers_results'],

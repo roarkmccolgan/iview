@@ -585,7 +585,7 @@ return [
                 'dimensions'    => 'ga:date',
                 'sort'          => false,
                 'max-results'   => false,
-                'filters'       => 'ga:pagePath=~/quiz/complete',
+                'filters'       => 'ga:pagePath=@/quiz/complete',
             ],
             'utm_views'=>[
                 'metrics'       => 'ga:users',
@@ -599,7 +599,7 @@ return [
                 'dimensions'    => 'ga:landingPagePath,ga:exitPagePath',
                 'sort'          => false,
                 'max-results'   => false,
-                'filters'       => 'ga:landingPagePath=@?utm;ga:exitPagePath=~/quiz/complete',
+                'filters'       => 'ga:landingPagePath=@?utm;ga:exitPagePath=@/quiz/complete',
             ]/*,
             'mobile_results'=>[
                 'metrics'       => 'ga:sessions',
