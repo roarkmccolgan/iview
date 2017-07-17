@@ -2,7 +2,7 @@
 //sage
 return array(
     'title' => 'Tirez profit du Cloud',
-    'sub-title' => 'Gagné en maturité',
+    'sub-title' => 'Gagn&eacute; en maturit&eacute;',
     'stage1' => 'Étape 1 : Il faut agir',
     'stage2' => 'Étape 2 : Il faut s\'impliquer',
     'stage3' => 'Étape 3 : Il faut investir',
@@ -34,7 +34,7 @@ return array(
     ],
     'introduction-image' => 'report1.jpg',
     'overall' => array(
-        'title'=>'Vous vous situez à l\'étape : ',
+        'title'=>'Vous vous situez à l\'&eacute;tape : ',
         'image'=>'',
         'introduction' => '
         <p>
@@ -86,7 +86,7 @@ return array(
         '
     ),
     'cloud-vision-and-strategy' => array(
-        'title'=>'Stratégie et vision cloud',
+        'title'=>'Strat&eacute;gie et vision cloud',
         'pageimage'=>'',
         'pb'=>'pb',
         'stage1'=>'
@@ -226,7 +226,7 @@ return array(
         ',
     ),
     'process-and-skill-sets' => array(
-        'title'=>'Processus et compétences',
+        'title'=>'Processus et comp&eacute;tences',
         'pageimage'=>'process-and-skill-sets.jpg',
         'pb'=>'pb',
         'stage1'=>'
@@ -389,7 +389,7 @@ return array(
         ',
     ),
     'marketing' => array(
-        'title'=>'Compétences marketing',
+        'title'=>'Comp&eacute;tences marketing',
         'pageimage' => '',
         'pb'=>'pb',
         'stage1'=>'
@@ -728,7 +728,7 @@ return array(
         ',
     ),
     'business-mix' => array(
-        'title'=>'Diversification des activités',
+        'title'=>'Diversification des activit&eacute;s',
         'pageimage' => '',
         'pb'=>'pb',
         'stage1'=>'
