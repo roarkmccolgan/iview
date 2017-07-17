@@ -2,7 +2,7 @@
 //sage
 return array(
     'title' => 'Tirez profit du Cloud',
-    'sub-title' => 'Gagnez en maturité',
+    'sub-title' => 'Gagné en maturité',
     'stage1' => 'Étape 1 : Il faut agir',
     'stage2' => 'Étape 2 : Il faut s\'impliquer',
     'stage3' => 'Étape 3 : Il faut investir',

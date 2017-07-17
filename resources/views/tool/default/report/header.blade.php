@@ -13,7 +13,7 @@
 	.header h1, .header h2{
 		color: #fff;
 		font-size: 24px;
-		font-family: helvetica, sans;
+		font-family: "Helvetica Neue Pro", helvetica, sans;
 		font-weight: lighter;
 		margin: 0;
 		padding-left: 5mm;

@@ -381,7 +381,7 @@ class PdfController extends Controller
 				}*/
 				
 
-				$headervars['page'.$count] =  trans(session('product.alias').'.'.$section.'.title') : '';
+				$headervars['page'.$count] = !$vars['sections'][$section]['hidetitlebar'] ? trans(session('product.alias').'.'.$section.'.title') : '';
 				$headervars['page_offset'] = config('baseline_'.session('product.id').'.overall.report-settings.page-offset',1);
 				$count++;
 			}
