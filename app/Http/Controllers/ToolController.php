@@ -945,6 +945,11 @@ public function postComplete(SubmitAssessmentsRequest $request)
 			    foreach ($eloqua['fields'] as $fieldKey => $settings) {
 			    	switch ($settings['type']) {
 			    		case 'locale':
+			    			if(strpos($assessment['rating'], 'Étape')!==false){
+			    				$currentLocal = 'fr';
+			    			}elseif(strpos($assessment['rating'], 'Stufe')!==false){
+			    				$currentLocal = 'de';
+			    			}
 			    			$query[$fieldKey] = $currentLocal;
 			    			break;
 			    		case 'field':
