@@ -475,6 +475,7 @@ public function getComplete(Request $request)
 		'btnclass'=>$btnclass,
 		'extra_fields'=>count($extraFields) > 0 ? $extraFields:false,
 	);
+
 	return view('tool.'.session('template').'.complete',$vars);
 }
 
@@ -712,6 +713,9 @@ public function postComplete(SubmitAssessmentsRequest $request)
     		foreach ($this->quiz[$section]['pages'] as $page => $props) {
     			foreach ($props['questions'] as $q => $details) {
     				if(!isset($details['ignore']) || $details['ignore']==false ){ // ignore answer
+    					if(!isset($details['selected'])){
+    						dd($details);
+    					}
 	    				if(($details['type']=='checkbox' || $details['type']=='groupradio' || $details['type']=='slider') && is_array($details['selected'])){
 	    					if(isset($details['calc'])){
 	    						if($details['calc']['type']=='average'){

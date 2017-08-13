@@ -182,10 +182,11 @@ Form::macro('idcGroup', function($section,$q,$page,$type,$slider=false){
 	return $html;
 });
 
-Form::macro('idcBubblegumGroup', function($section,$q,$page,$type,$slider=false){
+Form::macro('idcBubblegumGroup', function($section,$q,$page,$type,$slider=false,$margin=false){
 	//slider is like a a range of values 1-5 $optionSet also has a labels ($optionSet['from'] and $optionSet['to']) like 1 - not likely and 5 - very likely
 	$errors = Session::get('errors');
 	$html ='';
+	$margin = $margin ? 'unmarg--bottom':'';
 	$name = $q['name'];
 	$html.=Form::hidden('question', $name);
 	$question = $q['question'];
@@ -202,7 +203,7 @@ Form::macro('idcBubblegumGroup', function($section,$q,$page,$type,$slider=false)
 			$html.='
 					<li>
 						<div class="col-md-12 groupcheck mb--1">
-							<h4 class="color--primary unmarg--bottom">'.$optionSet['label'].'</h4>
+							<h4 class="color--primary '.$margin.'">'.$optionSet['label'].'</h4>
 							<fieldset>';
 			foreach ($optionSet['options'] as $setkey => $option) {
 				$checked = ($selected[$optionSet['name']][0]==$option['label'].'|'.$option['value']) ? 'checked':'';

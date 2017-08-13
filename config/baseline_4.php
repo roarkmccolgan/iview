@@ -47,7 +47,8 @@ return array(
                 'benchmark' => 21,
             )
         ),
-        'tweet' => true
+        'tweet' => true,
+        'include_answers_in_download_report' => true
     ),
     'leadership-and-general-obligations' => array(
         'baseline' => 15.363,

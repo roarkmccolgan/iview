@@ -1,4 +1,4 @@
-@extends('tool.bubblegum._layout.default')
+@extends('tool.'.session('template').'._layout.default')
 
 @section('pagetitle', $heading)
 @section('head')
@@ -60,13 +60,15 @@
                                                 @if ($q['type'] == 'radio' || $q['type'] == 'checkbox')
                                                     {!! Form::idcBubblegumRadio($num,$q,$q['type'],$page) !!}
                                                 @elseif ($q['type'] == 'slider')
-                                                    {!! Form::idcBubblegumGroup($num,$q,$page,'radio',true, true) !!}
+                                                    {!! Form::idcBubblegumGroup($num,$q,$page,'radio',true) !!}
                                                 @elseif ($q['type'] == 'groupradio')
                                                     {!! Form::idcGroup($num,$q,$page,'radio') !!}
+                                                @elseif ($q['type'] == 'select')
+                                                    {!! Form::idcSelect($num,$q,$page) !!}
                                                 @elseif ($q['type'] == 'icon')
                                                     {!! Form::idcIcon($section,$q,$page,$num) !!}
                                                 @elseif ($q['type'] == 'button')
-                                                    {!! Form::idcBubblegumButton($section,$q,$page) !!}
+                                                    {!! Form::idcBTButton($section,$q,$page) !!}
                                                 @elseif ($q['type'] == 'text')
                                                     {!! Form::idcInput($num,$q,$page) !!}
                                                 @endif
@@ -78,7 +80,15 @@
                         </div>
                         <div class="col-sm-3 col-sm-pull-6 col-sm-offset-1 text-center">
                             <div class="hero">
-                                <i class="icon {{ $icon }}" title=""></i>
+                                @if($icon=='info')
+                                <span class="icon icon-infoicon">
+                                    <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
+                                </span>
+                                @else
+                                <span class="icon icon-hpgdpr">
+                                    <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span>
+                                </span>
+                                @endif
                             </div>    
                         </div>
                     </div>
