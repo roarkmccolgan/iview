@@ -81,11 +81,11 @@
                         <div class="col-sm-3 col-sm-pull-6 col-sm-offset-1 text-center">
                             <div class="hero">
                                 @if($icon=='info')
-                                <span class="icon icon-infoicon">
+                                <span class="icon icoicon-infoicon">
                                     <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span>
                                 </span>
                                 @else
-                                <span class="icon icon-hpgdpr">
+                                <span class="icon icoicon-hpgdpr">
                                     <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span>
                                 </span>
                                 @endif
@@ -237,6 +237,7 @@ var daForm = $('#msform');
 @endif
 if($('.checkbox_group').length){
     var selected = 0;
+    var numrequired = $('#numrequired').val();
     $(':checkbox').change(function() {
         if(this.checked) {
             selected++;
@@ -250,7 +251,7 @@ if($('.checkbox_group').length){
         var parentHeight = sibling.css('height');
         var num = $('.checkbox_group').length;
         if(num>0){
-            if(selected>0){
+            if(selected>=numrequired){
                 $('div#error').fadeOut('fast', function() {
                     this.remove();
                 });
@@ -293,7 +294,7 @@ if($('.checkbox_group').length){
                 if(error==false){
                     html = 
                         '<div id="error" class="text-center" style="padding:10px 0;">'+
-                            '<span style="color: #ed2024;">{{Lang::get('general.multierror')}}</span>'+
+                            '<span style="color: #ed2024;">{{trans('general.multierror', ['number' => '\'+numrequired+\''])}}</span>'+
                         '</div>';
                     $(html).hide().appendTo(sibling).fadeIn("fast");
                     error=true;
@@ -304,4 +305,51 @@ if($('.checkbox_group').length){
     })
 }
 </script>
+@foreach ($questions as $q => $question)
+    @if(isset($question['other']))
+    <?php
+    $other = explode("|", $question['other']);
+    ?>
+    <script>
+    var otherBut = $( "input[value='{{$other[0]."|".$other[1]}}']" );
+    if(otherBut.length){
+        console.log('yes');
+        otherBut.unbind('click');
+        otherBut.on('change', function(event){
+            event.preventDefault();
+            otherBut.parent('.input-checkbox').hide();
+            html = 
+            '<div class="otherdiv" id="other_{{$q}}">'+
+                '<div class="col-sm-12">'+
+                    '<input id="other_input_{{$q}}" class="validate-required" type="text" name="answer" placeholder="{{$other[2]}}" />'
+                '</div>'+
+            '</div>';
+            $(html).insertAfter( otherBut.parent('.input-checkbox') );
+            $('button:submit').click(function(e){
+                $(window).off('beforeunload');
+                e.preventDefault();
+                var that = this;
+                var newDiv = $('#other_{{$q}}').addClass('error');
+                var newInput = $('#other_input_{{$q}}');
+                if(newInput.val()!='' && newInput.val().length>=3){
+                    $('#mask').show();
+                    jQuery.each($('button.btn-q'), function( i, item ) {
+                        if(that!=item) $(item).prop( "disabled", true );
+                    });
+                    setTimeout(
+                        function() {
+                            $(that).unbind('click').trigger('click');
+                        },
+                    800);
+                }else{
+                    newDiv.addClass('error');
+                }
+            });
+        });
+    }else{
+        console.log('you');
+    }
+    </script>
+    @endif
+@endforeach
 @stop

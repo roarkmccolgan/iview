@@ -17,28 +17,7 @@ return array(
                         'type'=>'checkbox',
                         'question'=>'What are your investment priorities for the next 12 months <span class="small">Select 3</span>',
                         'name'=>'s1',
-                        'script'=>'
-                            $(\'#5-q7\').on(\'ifChecked\', function(event){
-                                $(\'div.error\').fadeOut(\'fast\', function() {
-                                    this.remove();
-                                    error=false;
-                                });
-                                $(\'#0-q7\').iCheck(\'uncheck\');
-                                $(\'#1-q7\').iCheck(\'uncheck\');
-                                $(\'#2-q7\').iCheck(\'uncheck\');
-                                $(\'#3-q7\').iCheck(\'uncheck\');
-                                $(\'#4-q7\').iCheck(\'uncheck\');
-                            });
-                            jQuery.each([$(\'#0-q7\'),$(\'#1-q7\'),$(\'#2-q7\'),$(\'#3-q7\'),$(\'#4-q7\')], function( i, item ) {
-                                $(item).on(\'ifChecked\', function(event){
-                                    $(\'div.error\').fadeOut(\'fast\', function() {
-                                        this.remove();
-                                        error=false;
-                                    });
-                                    $(\'#5-q7\').iCheck(\'uncheck\');
-                                });
-                            });
-                        ',
+                        'required'=>3,
                         'options'=>array(
                             array(
                                 'label'=>'IT Infrastructure',
@@ -96,11 +75,12 @@ return array(
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Other – please specify',
+                                'label'=>'Other, please specify',
                                 'value'=>0,
                                 'checked'=>false
                             )
-                        )
+                        ),
+                        'other'=>'Other, please specify|0|Your Priority'
                     )
                 )
             ),
@@ -112,7 +92,7 @@ return array(
         'icon' => 'icon-gdpr',
         'display' => true,
         'complete' => false,
-        'sub-report' => true,
+        'sub-report' => false,
         'pages' => array(
             'page1' => array(
                 'title' => 'Approach to IT',
@@ -267,11 +247,12 @@ return array(
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Other - please specify',
+                                'label'=>'Other, please specify',
                                 'value'=>0,
                                 'checked'=>false
                             )
-                        )
+                        ),
+                        'other'=>'Other, please specify|0|Area'
                     )
                 )
             ),
@@ -1158,12 +1139,12 @@ return array(
                 'questions' => array(
                     'q10' => array(
                         'type'=>'slider',
-                        'question'=>'To what extent are you worried about the potential consequences of GDPR? [RESPONSE: on a scale of 1-5, where 1 is not at all worried and 5 is extremely worried]',
+                        'question'=>'To what extent are you worried about the potential consequences of GDPR?',
                         'name'=>'q10',
                         'options'=>array(
                             array(
                                 'label'=>'We are worried about getting fined',
-                                'from'=>'Worried',
+                                'from'=>'Not Worried',
                                 'to'=>'Extremely Worried',
                                 'name'=>'q10.1',
                                 'options'=>array(
@@ -1196,7 +1177,7 @@ return array(
                             ),
                             array(
                                 'label'=>'We are worried about class action law suits',
-                                'from'=>'Worried',
+                                'from'=>'Not Worried',
                                 'to'=>'Extremely Worried',
                                 'name'=>'q10.2',
                                 'options'=>array(
@@ -1229,7 +1210,7 @@ return array(
                             ),
                             array(
                                 'label'=>'We are worried about mandatory breach notification',
-                                'from'=>'Worried',
+                                'from'=>'Not Worried',
                                 'to'=>'Extremely Worried',
                                 'name'=>'q10.3',
                                 'options'=>array(
@@ -1262,7 +1243,7 @@ return array(
                             ),
                             array(
                                 'label'=>'We are worried about suspension of data processing activities by the regulator',
-                                'from'=>'Worried',
+                                'from'=>'Not Worried',
                                 'to'=>'Extremely Worried',
                                 'name'=>'q10.4',
                                 'options'=>array(
@@ -1295,7 +1276,7 @@ return array(
                             ),
                             array(
                                 'label'=>'We are worried about the reputational risk of non-compliance',
-                                'from'=>'Worried',
+                                'from'=>'Not Worried',
                                 'to'=>'Extremely Worried',
                                 'name'=>'q10.5',
                                 'options'=>array(
@@ -1328,7 +1309,7 @@ return array(
                             ),
                             array(
                                 'label'=>'We are worried that notification of a breach will result in discovering additional violations',
-                                'from'=>'Worried',
+                                'from'=>'Not Worried',
                                 'to'=>'Extremely Worried',
                                 'name'=>'q10.6',
                                 'options'=>array(
@@ -1368,7 +1349,7 @@ return array(
                 'questions' => array(
                     'q11' => array(
                         'type'=>'slider',
-                        'question'=>'What impact will GDPR have on your adoption of the following technologies? [RESPONSE: will increase investment; will increase investment; investment will stay the same; not applicable]',
+                        'question'=>'What impact will GDPR have on your adoption of the following technologies?',
                         'name'=>'q11',
                         'calc'=>array(
                             'type'=>'average',

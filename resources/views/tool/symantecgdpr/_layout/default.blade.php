@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="{{asset('css/templates/'.session('template').'/theme-charcoal.css')}}?id=1" type="text/css" media="all" />
         <link rel="stylesheet" href="{{asset('css/templates/'.session('template').'/iconsmind.css')}}" type="text/css" media="all" />
         <link rel="stylesheet" href="{{asset('css/templates/'.session('template').'/socicon.css')}}" type="text/css" media="all" />
-        <link rel="stylesheet" href="{{asset('css/templates/fonts/symantecgdpr/style.css')}}" type="text/css" media="all" />
+        <link rel="stylesheet" href="{{asset('css/templates/fonts/symantecgdpr/style.css?id=1')}}" type="text/css" media="all" />
         <link rel="stylesheet" href="{{asset('js/templates/'.session('template').'/unslider-master/dist/css/unslider.css')}}" type="text/css" media="all" />
         <link rel="stylesheet" href="{{asset('js/templates/'.session('template').'/unslider-master/dist/css/unslider-dots.css')}}" type="text/css" media="all" />
         <link rel="stylesheet" href="{{asset('css/templates/'.session('template').'/custom.css')}}?id=1" type="text/css" media="all" />

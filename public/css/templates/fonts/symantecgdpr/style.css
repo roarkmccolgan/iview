@@ -9,7 +9,7 @@
   font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icoicon-"], [class*=" icoicon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: none;
@@ -24,95 +24,95 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-hpgdpr .path1:before {
+.icoicon-hpgdpr .path1:before {
   content: "\e900";
   color: rgb(36, 62, 144);
 }
-.icon-hpgdpr .path2:before {
+.icoicon-hpgdpr .path2:before {
   content: "\e901";
   margin-left: -0.830078125em;
   color: rgb(36, 62, 144);
 }
-.icon-hpgdpr .path3:before {
+.icoicon-hpgdpr .path3:before {
   content: "\e902";
   margin-left: -0.830078125em;
   color: rgb(255, 204, 46);
 }
-.icon-hpgdpr .path4:before {
+.icoicon-hpgdpr .path4:before {
   content: "\e903";
   margin-left: -0.830078125em;
   color: rgb(255, 204, 46);
 }
-.icon-hpgdpr .path5:before {
+.icoicon-hpgdpr .path5:before {
   content: "\e904";
   margin-left: -0.830078125em;
   color: rgb(255, 204, 46);
 }
-.icon-hpgdpr .path6:before {
+.icoicon-hpgdpr .path6:before {
   content: "\e905";
   margin-left: -0.830078125em;
   color: rgb(255, 204, 46);
 }
-.icon-hpgdpr .path7:before {
+.icoicon-hpgdpr .path7:before {
   content: "\e906";
   margin-left: -0.830078125em;
   color: rgb(255, 204, 46);
 }
-.icon-hpgdpr .path8:before {
+.icoicon-hpgdpr .path8:before {
   content: "\e907";
   margin-left: -0.830078125em;
   color: rgb(255, 204, 46);
 }
-.icon-hpgdpr .path9:before {
+.icoicon-hpgdpr .path9:before {
   content: "\e908";
   margin-left: -0.830078125em;
   color: rgb(255, 204, 46);
 }
-.icon-hpgdpr .path10:before {
+.icoicon-hpgdpr .path10:before {
   content: "\e909";
   margin-left: -0.830078125em;
   color: rgb(255, 204, 46);
 }
-.icon-hpgdpr .path11:before {
+.icoicon-hpgdpr .path11:before {
   content: "\e90a";
   margin-left: -0.830078125em;
   color: rgb(255, 204, 46);
 }
-.icon-hpgdpr .path12:before {
+.icoicon-hpgdpr .path12:before {
   content: "\e90b";
   margin-left: -0.830078125em;
   color: rgb(255, 204, 46);
 }
-.icon-hpgdpr .path13:before {
+.icoicon-hpgdpr .path13:before {
   content: "\e90c";
   margin-left: -0.830078125em;
   color: rgb(255, 204, 46);
 }
-.icon-hpgdpr .path14:before {
+.icoicon-hpgdpr .path14:before {
   content: "\e90d";
   margin-left: -0.830078125em;
   color: rgb(255, 204, 46);
 }
-.icon-hpgdpr .path15:before {
+.icoicon-hpgdpr .path15:before {
   content: "\e90e";
   margin-left: -0.830078125em;
   color: rgb(255, 204, 46);
 }
-.icon-infoicon .path1:before {
+.icoicon-infoicon .path1:before {
   content: "\e90f";
   color: rgb(36, 62, 144);
 }
-.icon-infoicon .path2:before {
+.icoicon-infoicon .path2:before {
   content: "\e910";
   margin-left: -0.830078125em;
   color: rgb(36, 62, 144);
 }
-.icon-infoicon .path3:before {
+.icoicon-infoicon .path3:before {
   content: "\e911";
   margin-left: -0.830078125em;
   color: rgb(255, 204, 46);
 }
-.icon-infoicon .path4:before {
+.icoicon-infoicon .path4:before {
   content: "\e912";
   margin-left: -0.830078125em;
   color: rgb(255, 204, 46);

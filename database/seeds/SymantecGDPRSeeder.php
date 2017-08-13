@@ -13,11 +13,13 @@ class SymantecGDPRSeeder extends Seeder
     public function run()
     {
         DB::table('companies')->insert([
+            'id' => 8,
             'name' => 'Symantec',
             'logo' => '',
             'colours' => '253, 187, 48',
         ]);
         DB::table('tools')->insert([
+            'id' => 7,
             'alias' => 'symantec-gdpr',
             'title' => 'Symanted GDPR Assessment by IDC',
             'sub_title' => 'Assess your businesses GDPR readiness',

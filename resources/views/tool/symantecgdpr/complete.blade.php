@@ -20,7 +20,7 @@
                         <div class="col-sm-3 col-sm-offset-1">
                             <div class="mb--1">
                                 <div class="hero text-center">
-                                    <i class="icon icon-finish" style="font-size: 15em;"></i>
+                                    <i class="icon icon-Ribbon-2" style="font-size: 15em"></i>
                                 </div>    
                             </div>
                         </div>
@@ -129,8 +129,8 @@
                                                 </div>
                                                 
                                                 <div class="col-sm-12 boxed">
-                                                    <button id="submitBut" type="submit" class="btn btn--primary type--uppercase">{!!trans('general.emailreport')!!}</button>
-                                                    {{-- <a id="submitBut" href="/demo/splunk_assessment_report.pdf" target="_blank" class="btn btn--primary color--white type--uppercase">{!!trans('general.emailreport')!!}</a> --}}
+                                                    <!--button id="submitBut" type="submit" class="btn btn--primary type--uppercase">{!!trans('general.emailreport')!!}</button-->
+                                                    <a id="submitBut" href="#" class="btn btn--primary color--white type--uppercase">{!!trans('general.emailreport')!!}</a>
                                                 </div>
                                             {{ Form::close() }}
                                         </div>

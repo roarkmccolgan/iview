@@ -13,11 +13,13 @@ class BtMcafeeSeeder extends Seeder
     public function run()
     {
         DB::table('companies')->insert([
+            'id' => 7,
             'name' => 'McAfee BT',
             'logo' => '',
             'colours' => '0, 71, 149',
         ]);
         DB::table('tools')->insert([
+            'id' => 6,
             'alias' => 'mcafee-bt-security-assessment',
             'title' => 'McAfee BT Security Assessment by IDC',
             'sub_title' => 'How ready is your businesses\' security ',
@@ -30,7 +32,7 @@ class BtMcafeeSeeder extends Seeder
             'domain' => 'idcready.net',
             'subdomain' => 'securebusiness',
             'language_id' => 1,
-            'urlable_id' => 5,
+            'urlable_id' => 6,
             'urlable_type' => 'App\Tool',
             'created_at' => Carbon::now(),
         ]);
