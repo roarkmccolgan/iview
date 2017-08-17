@@ -451,11 +451,12 @@ Risk is a key driver for assessment and mitigation processes.",
     '7title'=>'IDC\'s GDPR Readiness Assessment',
     '7sub-title'=>'How compliant is your businesses ',
     '7landing'=>'
+    <h3>The GDPR Deadline is Almost Here<br/>How Ready Are You?</h3>
     <p>
-        Different italic, wild just may particular name was management be I was empty in first magnitude, said transformed to time more allow the on he an by violin, been container term is dressed so, were the go life such\' to repeat that the with by are latter transmitting the hard.
+        The EU General Data Protection Regulation (GDPR) deadline is approaching. It will supersede all current national data protection laws in the EU and can impact your organization in terms of handling and protecting personal data.
     </p>
     <p>
-        The of its of blind like right his if to readers been forget what\'s understanding. Eightypercent that divine the man, at it easy work increased long, and we his been findings.
+        IDC\'s GDPR Readiness Assessment will provide you with some essential guidance on your GDPR compliance and what you need to consider to be compliant.
     </p>',
     '7startbut'=>'Start Here',
 
