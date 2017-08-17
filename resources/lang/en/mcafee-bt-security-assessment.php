@@ -1,5 +1,5 @@
 <?php
-//SPLUNK
+//BTMcAfee
 return array(
     'title' => 'IDC\s Security Assessment',
     'sub-title' => 'How ready is your businesses\' security ',
@@ -10,9 +10,9 @@ return array(
     'stage5' => 'Stage 5: Best',
     'complete_thankyou' => 'Thank you :Fname,',
     'complete_body' => '
-        Your custom report will arrive in your inbox soon.<br/>
+        Thank you for your time. We have received your information. You will be receiving an email with your custom report momentarily.<br/>
         Please check in your junk folder if you don\'t receive it within 5 minutes.<br/><br/>
-        <a class="btn btn--primary" target="_blank" href="https://www.splunk.com/en_us/solutions/solution-areas/security-and-fraud/security-investigation.html">
+        <a class="btn btn--primary" target="_blank" href="https://www.bt.com">
             Click here for more information
         </a>',
     'complete_tweet' => 'I\'ve just taken the @IDCEMEA Security Assessment Tool for @splunk. Interested? ',// http://bit.ly/2gslXEh

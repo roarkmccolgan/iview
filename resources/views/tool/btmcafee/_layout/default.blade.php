@@ -15,7 +15,8 @@
         <link rel="stylesheet" href="{{asset('js/templates/'.session('template').'/unslider-master/dist/css/unslider-dots.css')}}" type="text/css" media="all" />
         <link rel="stylesheet" href="{{asset('css/templates/'.session('template').'/custom.css')}}?id=4" type="text/css" media="all" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700%7CRubik:300,400,500" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,400i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
         <link rel="stylesheet" href="{{asset('css/templates/'.session('template').'/font-rubiklato.css')}}" type="text/css" media="all" />
         @show
     </head>
@@ -37,13 +38,13 @@
                 <div class="frame clearfix hidden-xs">
                     <div class="col-xs-12 col-sm-10 col-sm-offset-1">
                         <div class="row">
-                            <div class="col-xs-4 col-sm-3 col-md-2">
+                            <div class="col-xs-4 col-sm-3 col-md-3">
                                 <span class="type--fine-print">{{Lang::get('general.'.session('product.id').'developedby')}}</span>
-                                <img class="footer-logo" src="{{asset('css/idc/idc-logo.svg')}}" alt="">
+                                <img class="footer-logo" src="{{asset('css/idc/idc-logo-new.svg')}}" alt="">
                             </div>
-                            <div class="col-xs-4 col-xs-offset-4 col-sm-4 col-sm-offset-5 col-md-4 col-md-offset-6">
+                            <div class="col-xs-4 col-xs-offset-4 col-sm-4 col-sm-offset-5 col-md-4 col-md-offset-5">
                                 <span class="type--fine-print">{{Lang::get('general.'.session('product.id').'sponsoredby')}}</span>
-                                <img class="footer-logo" src="{{asset('css/'.str_slug(session('company.name')).'/'.str_slug(session('company.name')).'-logo.svg')}}" alt="">
+                                <img class="footer-logo" src="{{asset('css/'.str_slug(session('company.name')).'/'.str_slug(session('company.name')).'-logo.svg')}}?id=1" alt="">
                             </div>
                         </div>
                     </div>
@@ -82,7 +83,7 @@
 	<script src="{{ asset('js/tool.js')}}"></script>
 	<script src="{{ asset('js/templates/'.session('template').'/parallax.js')}}"></script>
 	<script src="{{ asset('js/templates/'.session('template').'/smooth-scroll.min.js')}}"></script>
-	<script src="{{ asset('js/templates/'.session('template').'/scripts.js?an=3')}}"></script>
+    <script src="{{ asset('js/templates/'.session('template').'/scripts.js?an=3')}}"></script>
 	@show
     <div class="device-xs visible-xs"></div>
     <div class="device-sm visible-sm"></div>

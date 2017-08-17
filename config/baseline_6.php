@@ -2,11 +2,13 @@
 //BT/McAfee
 return array(
     'overall' => array(
-        'baseline' => 21.5,
-        'benchmark-country-en' => 3,
-        'benchmark-size-500-to-999' => 2,
-        'benchmark-size-1000-to-4999' => 3,
-        'benchmark-size-5000+' => 3,
+        'baseline' => 2.94,
+        'benchmark-country-ap' => 2.9,
+        'benchmark-country-na' => 2.99,
+        'benchmark-country-we' => 2.93,
+        'benchmark-size-fewer-than-4999' => 2.46,
+        'benchmark-size-5000-to-9999' => 3,
+        'benchmark-size-10000-or-more' => 3.5,
         'complete' => [
             'graph' => [
                 'label' => 'Stage',
@@ -34,226 +36,50 @@ return array(
         'types' => array(
             'stage1' => array(
                 'low' => 0,
-                'high' => 30.67,
+                'high' => 45,
                 'copy' => 'general.6poortxt',
                 'tweet' => false,
                 'benchmark' => 2,
             ),
             'stage2' => array(
-                'low' => 30.68,
-                'high' => 48,
+                'low' => 45.01,
+                'high' => 60,
                 'copy' => 'general.6standardtxt',
                 'tweet' => false,
                 'benchmark' => 32,
             ),
             'stage3' => array(
-                'low' => 48.01,
-                'high' => 69.99,
+                'low' => 60.01,
+                'high' => 75,
                 'copy' => 'general.6goodtxt',
                 'tweet' => false,
                 'benchmark' => 41,
             ),
             'stage4' => array(
-                'low' => 70,
-                'high' => 85,
+                'low' => 75.01,
+                'high' => 90,
                 'copy' => 'general.6aspirationaltxt',
                 'tweet' => false,
                 'benchmark' => 21,
             ),
             'stage5' => array(
-                'low' => 85,
-                'high' => 105,
+                'low' => 90.01,
+                'high' => 200,
                 'copy' => 'general.6besttxt',
                 'tweet' => false,
                 'benchmark' => 21,
             )
         ),
         'tweet' => false,
-        'eloqua' => [
-            'url' => 'https://eloqua',
-            'fields' => [
-                'Language' => [
-                    'type' => 'locale'
-                ],
-                'FirstName' => [
-                    'type' => 'field',
-                    'name' => 'fname'
-                ],
-                'LastName' => [
-                    'type' => 'field',
-                    'name' => 'sname'
-                ],
-                'Email' => [
-                    'type' => 'field',
-                    'name' => 'email'
-                ],
-                'Company' => [
-                    'type' => 'field',
-                    'name' => 'company'
-                ],
-                'Title' => [
-                    'type' => 'field',
-                    'name' => 'title'
-                ],
-                'Phone' => [
-                    'type' => 'field',
-                    'name' => 'phone'
-                ],
-                'Country' => [
-                    'type' => 'field',
-                    'name' => 'country'
-                ],
-                'postal' => [
-                    'type' => 'field',
-                    'name' => 'extra.zip'
-                ],
-                'state' => [
-                    'type' => 'field',
-                    'name' => 'extra.stateprov'
-                ],
-                'CompanySize' => [
-                    'type' => 'questionlabel',
-                    'questions' => [
-                        'screeners.pages.page1.questions.s1'
-                    ],
-                ],
-                'IncidencedetectionA9' => [
-                    'type' => 'question',
-                    'questions' => [
-                        'automation.pages.page2.questions.q5'
-                    ],
-                ],
-                'IncidenceresponseA11a' => [
-                    'type' => 'question',
-                    'questions' => [
-                        'unified-intelligence.pages.page3.questions.q9'
-                    ]
-                ],
-                'IncidenceresponseA11b' => [
-                    'type' => 'question',
-                    'questions' => [
-                        'unified-intelligence.pages.page4.questions.q10'
-                    ]
-                ],
-                'Incidenceresponse' => [
-                    'type' => 'calculation',
-                    'questions' => [
-                        'unified-intelligence.pages.page3.questions.q9',
-                        'unified-intelligence.pages.page4.questions.q10'
-                    ],
-                    'formula' => 'multiply'
-                ],
-                'outputreport' => [
-                    'type' => 'report'
-                ],
-                'elqFormName' => [
-                    'type' => 'hidden',
-                    'value' => 'IDCMaturity',
-                ],
-                'elqSiteID' => [
-                    'type' => 'hidden',
-                    'value' => 1528,
-                ]
-            ]
-        ]
     ),
     'general-approach-to-it' => array(
-        'baseline' => 15.363,
-        'benchmark-country-en' => 3,
-        'benchmark-country-fr' => 3,
-        'benchmark-country-de' => 3,
-
-        'benchmark-size-500-to-999' => 3,
-        'benchmark-size-de-500-à-999' => 3,
-        'benchmark-size-500-bis-999' => 3,
-
-        'benchmark-size-1000-to-4999' => 3,
-        'benchmark-size-de-1-000-à-2-499' => 3,
-        'benchmark-size-1000-bis-2499' => 3,
-
-        'benchmark-size-5000+' => 3,
-        'benchmark-size-2-500-ou-plus' => 3,
-        'benchmark-size-2500-oder-mehr' => 3,
-        'complete' => [
-            'graph' => [
-                'label' => 'Stage',
-                'data' => 'benchmark',
-                'format'=>[
-                    'type'=>'NumberFormat',
-                    'format'=>[
-                        'suffix' => '%'
-                    ]
-                ],
-            ]
-        ],
-        'report-settings' => [
-            'header'=>true,
-            'footer'=>true,
-            'graph'=>false,
-            'pb'=>true,
-            'designline'=>true,
-            'color'=>'#6AB361',
-            'basecolor'=>'#d3d8e0',
-            'pageimage'=>false,
-            'extra-graphs'=>false,
-        ],
-        'floatimage' => 'right',
-        'floatgraph' => 'none',
-        'types' => array(
-            'stage1' => array(
-                'low' => 0,
-                'high' => 10.8,
-                'total' => 2,
-                'benchmark' => 1,
-                'copy' => 'general.6integration-poor-txt'
-            ),
-            'stage2' => array(
-                'low' => 10.9,
-                'high' => 15.6,
-                'total' => 3,
-                'benchmark' => 16,
-                'copy' => 'general.6integration-standard-txt'
-            ),
-            'stage3' => array(
-                'low' => 15.7,
-                'high' => 20.4,
-                'total' => 5,
-                'benchmark' => 34,
-                'copy' => 'general.6integration-good-txt'
-            ),
-            'stage4' => array(
-                'low' => 20.5,
-                'high' => 25.2,
-                'total' => 5,
-                'benchmark' => 43,
-                'copy' => 'general.6integration-aspirational-txt'
-            ),
-            'stage5' => array(
-                'low' => 25.3,
-                'high' => 50,
-                'total' => 5,
-                'benchmark' => 6,
-                'copy' => 'general.6integration-best-txt'
-            )
-        )
-    ),
-    'integration' => array(
-        'baseline' => 15.363,
-        'benchmark-country-en' => 3,
-        'benchmark-country-fr' => 3,
-        'benchmark-country-de' => 3,
-
-        'benchmark-size-500-to-999' => 3,
-        'benchmark-size-de-500-à-999' => 3,
-        'benchmark-size-500-bis-999' => 3,
-
-        'benchmark-size-1000-to-4999' => 3,
-        'benchmark-size-de-1-000-à-2-499' => 3,
-        'benchmark-size-1000-bis-2499' => 3,
-
-        'benchmark-size-5000+' => 3,
-        'benchmark-size-2-500-ou-plus' => 3,
-        'benchmark-size-2500-oder-mehr' => 3,
+        'baseline' => 3.11,
+        'benchmark-country-ap' => 3.03,
+        'benchmark-country-na' => 3.09,
+        'benchmark-country-we' => 3.21,
+        'benchmark-size-fewer-than-4999' => 2.64,
+        'benchmark-size-5000-to-9999' => 3.12,
+        'benchmark-size-10000-or-more' => 3.71,
         'complete' => [
             'graph' => [
                 'label' => 'Stage',
@@ -284,56 +110,118 @@ return array(
                 'low' => 0,
                 'high' => 9,
                 'total' => 2,
-                'benchmark' => 1,
+                'benchmark' => 13,
                 'copy' => 'general.6integration-poor-txt'
             ),
             'stage2' => array(
                 'low' => 9.01,
                 'high' => 13,
                 'total' => 3,
-                'benchmark' => 16,
+                'benchmark' => 22,
                 'copy' => 'general.6integration-standard-txt'
             ),
             'stage3' => array(
                 'low' => 13.01,
                 'high' => 17,
                 'total' => 5,
-                'benchmark' => 34,
+                'benchmark' => 30,
                 'copy' => 'general.6integration-good-txt'
             ),
             'stage4' => array(
                 'low' => 17.01,
                 'high' => 21,
                 'total' => 5,
-                'benchmark' => 43,
+                'benchmark' => 26,
                 'copy' => 'general.6integration-aspirational-txt'
             ),
             'stage5' => array(
                 'low' => 21.01,
                 'high' => 25,
                 'total' => 5,
-                'benchmark' => 6,
+                'benchmark' => 8,
+                'copy' => 'general.6integration-best-txt'
+            )
+        )
+    ),
+    'integration' => array(
+        'baseline' => 3.11,
+        'benchmark-country-ap' => 3.03,
+        'benchmark-country-na' => 3.09,
+        'benchmark-country-we' => 3.21,
+        'benchmark-size-fewer-than-4999' => 2.64,
+        'benchmark-size-5000-to-9999' => 3.12,
+        'benchmark-size-10000-or-more' => 3.71,
+        'complete' => [
+            'graph' => [
+                'label' => 'Stage',
+                'data' => 'benchmark',
+                'format'=>[
+                    'type'=>'NumberFormat',
+                    'format'=>[
+                        'suffix' => '%'
+                    ]
+                ],
+            ]
+        ],
+        'report-settings' => [
+            'header'=>true,
+            'footer'=>true,
+            'graph'=>false,
+            'pb'=>true,
+            'designline'=>true,
+            'color'=>'#6AB361',
+            'basecolor'=>'#d3d8e0',
+            'pageimage'=>false,
+            'extra-graphs'=>false,
+        ],
+        'floatimage' => 'right',
+        'floatgraph' => 'none',
+        'types' => array(
+            'stage1' => array(
+                'low' => 0,
+                'high' => 11.25,
+                'total' => 2,
+                'benchmark' => 18,
+                'copy' => 'general.6integration-poor-txt'
+            ),
+            'stage2' => array(
+                'low' => 11.26,
+                'high' => 15,
+                'total' => 3,
+                'benchmark' => 25,
+                'copy' => 'general.6integration-standard-txt'
+            ),
+            'stage3' => array(
+                'low' => 15.01,
+                'high' => 18.75,
+                'total' => 5,
+                'benchmark' => 26,
+                'copy' => 'general.6integration-good-txt'
+            ),
+            'stage4' => array(
+                'low' => 18.76,
+                'high' => 22.5,
+                'total' => 5,
+                'benchmark' => 26,
+                'copy' => 'general.6integration-aspirational-txt'
+            ),
+            'stage5' => array(
+                'low' => 22.51,
+                'high' => 50,
+                'total' => 5,
+                'benchmark' => 5,
                 'copy' => 'general.6integration-best-txt'
             )
         )
     ),
     'automation' => array(
-        'baseline' => 24.046,
-        'benchmark-country-en' => 2,
-        'benchmark-country-fr' => 2,
-        'benchmark-country-de' => 2,
-
-        'benchmark-size-500-to-999' => 1,
-        'benchmark-size-de-500-à-999' => 1,
-        'benchmark-size-500-bis-999' => 1,
-
-        'benchmark-size-1000-to-4999' => 2,
-        'benchmark-size-de-1-000-à-2-499' => 2,
-        'benchmark-size-1000-bis-2499' => 2,
-
-        'benchmark-size-5000+' => 2,
-        'benchmark-size-2-500-ou-plus' => 2,
-        'benchmark-size-2500-oder-mehr' => 2,
+        'baseline' => 2.74,
+        'benchmark-country-ap' => 2.79,
+        'benchmark-country-na' => 2.81,
+        'benchmark-country-we' => 2.63,
+        'benchmark-size-fewer-than-4999' => 2.4,
+        'benchmark-size-5000-to-9999' => 2.87,
+        'benchmark-size-10000-or-more' => 3.01,
         'complete' => [
             'graph' => [
                 'label' => 'Stage',
@@ -362,58 +250,50 @@ return array(
         'types' => array(
             'stage1' => array(
                 'low' => 0,
-                'high' => 7,
+                'high' => 11.25,
                 'total' => 3,
-                'benchmark' => 27,
+                'benchmark' => 16,
                 'copy' => 'general.6automation-poor-txt'
             ),
             'stage2' => array(
-                'low' => 7.01,
-                'high' => 11.5,
+                'low' => 11.26,
+                'high' => 15,
                 'total' => 4,
-                'benchmark' => 27,
+                'benchmark' => 22,
                 'copy' => 'general.6automation-standard-txt'
             ),
             'stage3' => array(
-                'low' => 11.51,
-                'high' => 16,
+                'low' => 15.01,
+                'high' => 18.75,
                 'total' => 6,
-                'benchmark' => 28,
+                'benchmark' => 35,
                 'copy' => 'general.6automation-good-txt'
             ),
             'stage4' => array(
-                'low' => 16.01,
-                'high' => 20.5,
+                'low' => 18.76,
+                'high' => 22.5,
                 'total' => 6,
-                'benchmark' => 15,
+                'benchmark' => 27,
                 'copy' => 'general.6automation-aspirational-txt'
             ),
             'stage5' => array(
-                'low' => 20.51,
-                'high' => 25,
+                'low' => 22.51,
+                'high' => 50,
                 'total' => 5,
-                'benchmark' => 3,
+                'benchmark' => 1,
                 'copy' => 'general.5automation-best-txt'
             )
         )
     ),
     'unified-intelligence' => array(
-        'baseline' => 10,917,
-        'benchmark-country-en' => 3,
-        'benchmark-country-fr' => 3,
-        'benchmark-country-de' => 3,
+        'baseline' => 2.76,
+        'benchmark-country-ap' => 2.69,
+        'benchmark-country-na' => 2.85,
+        'benchmark-country-we' => 2.85,
+        'benchmark-size-fewer-than-4999' => 2.26,
+        'benchmark-size-5000-to-9999' => 2.82,
+        'benchmark-size-10000-or-more' => 3.37,
 
-        'benchmark-size-500-to-999' => 3,
-        'benchmark-size-de-500-à-999' => 3,
-        'benchmark-size-500-bis-999' => 3,
-
-        'benchmark-size-1000-to-4999' => 3,
-        'benchmark-size-de-1-000-à-2-499' => 3,
-        'benchmark-size-1000-bis-2499' => 3,
-
-        'benchmark-size-5000+' => 3,
-        'benchmark-size-2-500-ou-plus' => 3,
-        'benchmark-size-2500-oder-mehr' => 3,
         'complete' => [
             'graph' => [
                 'label' => 'Stage',
@@ -442,37 +322,37 @@ return array(
         'types' => array(
             'stage1' => array(
                 'low' => 0,
-                'high' => 10,
+                'high' => 11.25,
                 'total' => 1,
-                'benchmark' => 2,
+                'benchmark' => 19,
                 'copy' => 'general.6automation-poor-txt'
             ),
             'stage2' => array(
-                'low' => 10.1,
+                'low' => 11.26,
                 'high' => 15,
                 'total' => 2,
-                'benchmark' => 13,
+                'benchmark' => 23,
                 'copy' => 'general.6automation-standard-txt'
             ),
             'stage3' => array(
-                'low' => 15.1,
-                'high' => 20,
+                'low' => 15.01,
+                'high' => 18.75,
                 'total' => 4,
-                'benchmark' => 37,
+                'benchmark' => 28,
                 'copy' => 'general.6automation-good-txt'
             ),
             'stage4' => array(
-                'low' => 20.1,
-                'high' => 25,
+                'low' => 18.76,
+                'high' => 22.5,
                 'total' => 4,
-                'benchmark' => 30,
+                'benchmark' => 22,
                 'copy' => 'general.6automation-aspirational-txt'
             ),
             'stage5' => array(
-                'low' => 25.1,
-                'high' => 30,
+                'low' => 22.51,
+                'high' => 50,
                 'total' => 5,
-                'benchmark' => 19,
+                'benchmark' => 8,
                 'copy' => 'general.6automation-best-txt'
             )
         )

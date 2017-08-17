@@ -6,8 +6,4 @@ $(function(){
 	if( isBreakpoint('sm') || isBreakpoint('md') || isBreakpoint('lg') ) {
 	    //$('.hero').height($('#content').height());
 	}
-	/*$('.input-checkbox').on('click', function() {
-
-	}*/
 });
-

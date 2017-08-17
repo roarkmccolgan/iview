@@ -96,7 +96,7 @@
 <script src="{{{ asset('js/templates/'.session('template').'/unslider-master/dist/js/unslider-min.js')}}}"></script>
 <script type="text/javascript">var error = false;</script>
 <script src="{{{ asset('js/plugins.js')}}}"></script>
-<script src="{{{ asset('js/templates/'.session('template').'/main.js?i=2')}}}"></script>
+<script src="{{{ asset('js/templates/'.session('template').'/main.js?id=3')}}}"></script>
 @if ($script)
 <script>
 $(function() {

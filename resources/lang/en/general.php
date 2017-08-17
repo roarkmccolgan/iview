@@ -404,29 +404,69 @@ Risk is a key driver for assessment and mitigation processes.",
     '6assoc'=>'In association with',
     '6sponsors'=>'Symantec',
     '6title'=>'IDC\'s Security Assessment',
-    '6sub-title'=>'How ready is your businesses\' security ',
+    '6sub-title'=>'Managing Security Operations: Towards integration and automation',
     '6landing'=>'
     <p>
-        Different italic, wild just may particular name was management be I was empty in first magnitude, said transformed to time more allow the on he an by violin, been container term is dressed so, were the go life such\' to repeat that the with by are latter transmitting the hard.
+        Managing security in a proactive and business minded way is increasingly challenging in the world of interconnected systems.
     </p>
     <p>
-        The of its of blind like right his if to readers been forget what\'s understanding. Eightypercent that divine the man, at it easy work increased long, and we his been findings.
+        Take this quick assessment to understand how ready your security operations are in comparison to your peers and receive a free custom report to find out how to progress to the next level of  Security Readiness. 
     </p>',
     '6startbut'=>'Start Here',
 
-    '6subreporttitle' => 'You are in the <span class="color--primary">:percent%</span>, whose :section is at <span class="color--primary">:result</span>',
+    '6subreporttitle' => 'You are at <span class="color--primary">:result</span>',
 
     '6poor'=>'Poor', //reactive
-    '6poortxt'=>"Different no the far with of italic, to installer. Right than floundering and, animals greediness they language system better I indeed, in on. To show into pay surprised before of to is and preparations the agreed continued the years sharpness longer systematic little. Point to here. Line have associate sense him or any I like think its annoyed. On recently she its any the and violin was have tag visuals afforded decided return. And turn of my his which she and handles findings. Decided he the and to why some no replied but see make from own in step have.",
+    '6poortxt'=>"
+        <p class=\"mt--1\">
+            Thank you for completing the assessment.<br/>
+                Tell us a little about yourselfto receiveapersonalised report that includes:
+        </p>
+        <ul style=\"list-style: disc; padding-left: 1.5em;\">
+            <li>How you compare against your peers based on organisational size and geographic region</li>
+            <li>Where to prioritiseyour security operations efforts with essential guidance</li>
+        </ul>
+
+    ",
     '6poortweet' => "I took the @splunk Security Assessment and it's shown me where I can improve. Interested?",
     '6standard'=>'Standard',
-    '6standardtxt'=>"Different no the far with of italic, to installer. Right than floundering and, animals greediness they language system better I indeed, in on. To show into pay surprised before of to is and preparations the agreed continued the years sharpness longer systematic little. Point to here. Line have associate sense him or any I like think its annoyed. On recently she its any the and violin was have tag visuals afforded decided return. And turn of my his which she and handles findings. Decided he the and to why some no replied but see make from own in step have.",
+    '6standardtxt'=>"
+        <p class=\"mt--1\">
+            Thank you for completing the assessment.<br/>
+                Tell us a little about yourselfto receiveapersonalised report that includes:
+        </p>
+        <ul style=\"list-style: disc; padding-left: 1.5em;\">
+            <li>How you compare against your peers based on organisational size and geographic region</li>
+            <li>Where to prioritiseyour security operations efforts with essential guidance</li>
+        </ul>
+
+    ",
     '6standardtweet' => "I took the @splunk Security Assessment and my company is on the right track. See how your business does... http://bit.ly/1Y6JAqa",
     '6good'=>'Good',
-    '6goodtxt'=>"Different no the far with of italic, to installer. Right than floundering and, animals greediness they language system better I indeed, in on. To show into pay surprised before of to is and preparations the agreed continued the years sharpness longer systematic little. Point to here. Line have associate sense him or any I like think its annoyed. On recently she its any the and violin was have tag visuals afforded decided return. And turn of my his which she and handles findings. Decided he the and to why some no replied but see make from own in step have.",
+    '6goodtxt'=>"
+        <p class=\"mt--1\">
+            Thank you for completing the assessment.<br/>
+                Tell us a little about yourselfto receiveapersonalised report that includes:
+        </p>
+        <ul style=\"list-style: disc; padding-left: 1.5em;\">
+            <li>How you compare against your peers based on organisational size and geographic region</li>
+            <li>Where to prioritiseyour security operations efforts with essential guidance</li>
+        </ul>
+
+    ",
     '6goodtweet' => "I took the @splunk Security Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
     '6aspirational'=>'',
-    '6aspirationaltxt'=>"Different no the far with of italic, to installer. Right than floundering and, animals greediness they language system better I indeed, in on. To show into pay surprised before of to is and preparations the agreed continued the years sharpness longer systematic little. Point to here. Line have associate sense him or any I like think its annoyed. On recently she its any the and violin was have tag visuals afforded decided return. And turn of my his which she and handles findings. Decided he the and to why some no replied but see make from own in step have.",
+    '6aspirationaltxt'=>"
+        <p class=\"mt--1\">
+            Thank you for completing the assessment.<br/>
+                Tell us a little about yourselfto receiveapersonalised report that includes:
+        </p>
+        <ul style=\"list-style: disc; padding-left: 1.5em;\">
+            <li>How you compare against your peers based on organisational size and geographic region</li>
+            <li>Where to prioritiseyour security operations efforts with essential guidance</li>
+        </ul>
+
+    ",
     '6aspirationaltweet' => "I took the @splunk Security Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
     '6best'=>'Best',
     '6besttxt'=>"Organizations at this stage are proactive breach hunters. They focus on best practices and continuous improvement. 

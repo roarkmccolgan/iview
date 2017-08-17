@@ -33,11 +33,8 @@
                                 </div>
                                 @columnchart('overall_graph', 'overall-graph')
                             @endif
-                            <p class="mt--1">{{$sub1}}</p>
+                            {!!$sub1!!}
                             <hr class="short">
-                            <p>
-                                {!!trans('general.'.session('product.id').'fullreport')!!}
-                            </p>
                             <div class="row">
                                 <div class="col-sm-12">
                                     <div class="row">
@@ -129,8 +126,8 @@
                                                 </div>
                                                 
                                                 <div class="col-sm-12 boxed">
-                                                    <button id="submitBut" type="submit" class="btn btn--primary type--uppercase">{!!trans('general.emailreport')!!}</button>
-                                                    {{-- <a id="submitBut" href="/demo/splunk_assessment_report.pdf" target="_blank" class="btn btn--primary color--white type--uppercase">{!!trans('general.emailreport')!!}</a> --}}
+                                                    <!--button id="submitBut" type="submit" class="btn btn--primary type--uppercase">{!!trans('general.emailreport')!!}</button-->
+                                                    <a id="submitBut" href="/demo/btmcafee_report.pdf" target="_blank" class="btn btn--primary type--uppercase">{!!trans('general.emailreport')!!}</a>
                                                 </div>
                                             {{ Form::close() }}
                                         </div>

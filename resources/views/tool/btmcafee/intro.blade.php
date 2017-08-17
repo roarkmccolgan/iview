@@ -13,11 +13,11 @@
                     <div class="frame clearfix top">
                         <div class="col-xs-12 col-sm-10 col-sm-offset-1 visible-xs mb--1 mt--1">
                             <div class="row">
-                                <div class="col-xs-4 col-sm-3 col-md-2">
-                                    <img class="footer-logo" src="{{asset('css/idc/idc-logo.svg')}}" alt="">
+                                <div class="col-xs-5 col-sm-4 col-md-3">
+                                    <img class="footer-logo" src="{{asset('css/idc/idc-logo-new.svg')}}" alt="">
                                 </div>
-                                <div class="col-xs-6 col-xs-offset-2 col-sm-4 col-sm-offset-5 col-md-4 col-md-offset-6 ">
-                                    <img class="footer-logo" src="{{asset('css/'.str_slug(session('company.name')).'/'.str_slug(session('company.name')).'-logo.svg')}}" alt="">
+                                <div class="col-xs-6 col-xs-offset-1 col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-5 ">
+                                    <img class="footer-logo" src="{{asset('css/'.str_slug(session('company.name')).'/'.str_slug(session('company.name')).'-logo.svg')}}?id=1" alt="">
                                 </div>
                             </div>
                         </div>

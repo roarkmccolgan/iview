@@ -301,7 +301,7 @@ return array(
         'icon' => 'icon-approach',
         'display' => true,
         'complete' => false,
-        'sub-report' => true,
+        'sub-report' => false,
         'pages' => array(
             'page1' => array(
                 'title' => 'Approach to IT',
@@ -621,7 +621,7 @@ return array(
                         'options'=>array(
                             array(
                                 'label'=>'Ad hoc investment with no broad plan or strategic consideration',
-                                'value'=>2.2,
+                                'value'=>2.5,
                                 'checked'=>false
                             ),
                             array(
@@ -662,7 +662,7 @@ return array(
                         'options'=>array(
                             array(
                                 'label'=>'We prioritize standalone point products regardless of integration concerns',
-                                'value'=>2.2,
+                                'value'=>2.5,
                                 'checked'=>false
                             ),
                             array(
@@ -782,27 +782,43 @@ return array(
                 'questions' => array(
                     'q7'=>array(
                         'type'=>'checkbox',
-                        'question'=>'Which of the following areas of IT endpoint or user security have you automated already? <span class="small">Choose all that apply</span>',
+                        'question'=>'Which of the following areas of <strong>IT endpoint</strong> or <strong>user security</strong> have you automated already? <span class="small">Choose all that apply</span>',
                         'name'=>'q7',
                         'script'=>'
-                            $(\'#5-q7\').on(\'ifChecked\', function(event){
-                                $(\'div.error\').fadeOut(\'fast\', function() {
-                                    this.remove();
-                                    error=false;
-                                });
-                                $(\'#0-q7\').iCheck(\'uncheck\');
-                                $(\'#1-q7\').iCheck(\'uncheck\');
-                                $(\'#2-q7\').iCheck(\'uncheck\');
-                                $(\'#3-q7\').iCheck(\'uncheck\');
-                                $(\'#4-q7\').iCheck(\'uncheck\');
-                            });
-                            jQuery.each([$(\'#0-q7\'),$(\'#1-q7\'),$(\'#2-q7\'),$(\'#3-q7\'),$(\'#4-q7\')], function( i, item ) {
-                                $(item).on(\'ifChecked\', function(event){
+                            $(\'#5-q7\').change(function(event){
+                                if($(this).is(\':checked\')) {
                                     $(\'div.error\').fadeOut(\'fast\', function() {
                                         this.remove();
                                         error=false;
                                     });
-                                    $(\'#5-q7\').iCheck(\'uncheck\');
+                                    if($(\'#0-q7\').is(\':checked\')){
+                                        $(\'#0-q7\').closest(".input-checkbox").click();
+                                    }
+                                    if($(\'#1-q7\').is(\':checked\')){
+                                        $(\'#1-q7\').closest(".input-checkbox").click();
+                                    }
+                                    if($(\'#2-q7\').is(\':checked\')){
+                                        $(\'#2-q7\').closest(".input-checkbox").click();
+                                    }
+                                    if($(\'#3-q7\').is(\':checked\')){
+                                        $(\'#3-q7\').closest(".input-checkbox").click();
+                                    }
+                                    if($(\'#4-q7\').is(\':checked\')){
+                                        $(\'#4-q7\').closest(".input-checkbox").click();
+                                    }
+                                }
+                            });
+                            jQuery.each([$(\'#0-q7\'),$(\'#1-q7\'),$(\'#2-q7\'),$(\'#3-q7\'),$(\'#4-q7\')], function( i, item ) {
+                                $(item).change( function(event){
+                                    if($(this).is(\':checked\')) {
+                                        if($(\'#5-q7\').is(\':checked\')){
+                                            $(\'#5-q7\').closest(".input-checkbox").click();
+                                        }
+                                        $(\'div.error\').fadeOut(\'fast\', function() {
+                                            this.remove();
+                                            error=false;
+                                        });
+                                    }
                                 });
                             });
                         ',
@@ -846,27 +862,43 @@ return array(
                 'questions' => array(
                     'q8'=>array(
                         'type'=>'checkbox',
-                        'question'=>'Which of the following areas of IT infrastructure security have you automated already? <span class="small">Choose all that apply</span>',
+                        'question'=>'Which of the following areas of <strong>IT infrastructure</strong> security have you automated already? <span class="small">Choose all that apply</span>',
                         'name'=>'q8',
                         'script'=>'
-                            $(\'#5-q8\').on(\'ifChecked\', function(event){
-                                $(\'div.error\').fadeOut(\'fast\', function() {
-                                    this.remove();
-                                    error=false;
-                                });
-                                $(\'#0-q8\').iCheck(\'uncheck\');
-                                $(\'#1-q8\').iCheck(\'uncheck\');
-                                $(\'#2-q8\').iCheck(\'uncheck\');
-                                $(\'#3-q8\').iCheck(\'uncheck\');
-                                $(\'#4-q8\').iCheck(\'uncheck\');
-                            });
-                            jQuery.each([$(\'#0-q8\'),$(\'#1-q8\'),$(\'#2-q8\'),$(\'#3-q8\'),$(\'#4-q8\')], function( i, item ) {
-                                $(item).on(\'ifChecked\', function(event){
+                            $(\'#5-q8\').change(function(event){
+                                if($(this).is(\':checked\')) {
                                     $(\'div.error\').fadeOut(\'fast\', function() {
                                         this.remove();
                                         error=false;
                                     });
-                                    $(\'#5-q8\').iCheck(\'uncheck\');
+                                    if($(\'#0-q8\').is(\':checked\')){
+                                        $(\'#0-q8\').closest(".input-checkbox").click();
+                                    }
+                                    if($(\'#1-q8\').is(\':checked\')){
+                                        $(\'#1-q8\').closest(".input-checkbox").click();
+                                    }
+                                    if($(\'#2-q8\').is(\':checked\')){
+                                        $(\'#2-q8\').closest(".input-checkbox").click();
+                                    }
+                                    if($(\'#3-q8\').is(\':checked\')){
+                                        $(\'#3-q8\').closest(".input-checkbox").click();
+                                    }
+                                    if($(\'#4-q8\').is(\':checked\')){
+                                        $(\'#4-q8\').closest(".input-checkbox").click();
+                                    }
+                                }
+                            });
+                            jQuery.each([$(\'#0-q8\'),$(\'#1-q8\'),$(\'#2-q8\'),$(\'#3-q8\'),$(\'#4-q8\')], function( i, item ) {
+                                $(item).change( function(event){
+                                    if($(this).is(\':checked\')) {
+                                        if($(\'#5-q8\').is(\':checked\')){
+                                            $(\'#5-q8\').closest(".input-checkbox").click();
+                                        }
+                                        $(\'div.error\').fadeOut(\'fast\', function() {
+                                            this.remove();
+                                            error=false;
+                                        });
+                                    }
                                 });
                             });
                         ',
@@ -918,35 +950,109 @@ return array(
             'page1' => array(
                 'title' => 'Unified Intelligence',
                 'questions' => array(
-                    'q7'=>array(
-                        'type'=>'radio',
-                        'question'=>'To what extent do you have a security Unified Intelligence platform in place today?',
-                        'name'=>'q7',
+                    'q9'=>array(
+                        'type'=>'slider',
+                        'question'=>'Looking at threat intelligence services, to what extent do you do the following? <br/><span class="small">Please rate each on a scale of 1 = not at all important to 5 = extensively.</span>',
+                        'name'=>'q9',
                         'options'=>array(
                             array(
-                                'label'=>'Not using and no plans to use',
-                                'value'=>1,
-                                'checked'=>false
+                                'label'=>'We make effective use of global threat insight services',
+                                'from'=>'Not important',
+                                'to'=>'Extensively',
+                                'name'=>'q9.1',
+                                'options'=>array(
+                                    array(
+                                        'label'=>'1',
+                                        'value'=>0.56,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'2',
+                                        'value'=>1.11,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'3',
+                                        'value'=>1.67,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'4',
+                                        'value'=>2.22,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'5',
+                                        'value'=>2.78,
+                                        'checked'=>false,
+                                    )
+                                )
                             ),
                             array(
-                                'label'=>'Not using but plan to use in the next two years',
-                                'value'=>2,
-                                'checked'=>false
+                                'label'=>'We do multi-way sharing of information',
+                                'from'=>'Not important',
+                                'to'=>'Extremely important',
+                                'name'=>'q9.2',
+                                'options'=>array(
+                                    array(
+                                        'label'=>'1',
+                                        'value'=>0.56,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'2',
+                                        'value'=>1.11,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'3',
+                                        'value'=>1.67,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'4',
+                                        'value'=>2.22,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'5',
+                                        'value'=>2.78,
+                                        'checked'=>false,
+                                    )
+                                )
                             ),
                             array(
-                                'label'=>'Currently piloting this',
-                                'value'=>3,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'Use in limited areas in production',
-                                'value'=>4,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'Use extensively in production',
-                                'value'=>5,
-                                'checked'=>false
+                                'label'=>'We have automated policy updates based on information from global threat insight services',
+                                'from'=>'Not important',
+                                'to'=>'Extremely important',
+                                'name'=>'q9.3',
+                                'options'=>array(
+                                    array(
+                                        'label'=>'1',
+                                        'value'=>0.56,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'2',
+                                        'value'=>1.11,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'3',
+                                        'value'=>1.67,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'4',
+                                        'value'=>2.22,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'5',
+                                        'value'=>2.78,
+                                        'checked'=>false,
+                                    )
+                                )
                             )
                         )
                     )
@@ -959,230 +1065,159 @@ return array(
             'page2' => array(
                 'title' => 'Unified Intelligence',
                 'questions' => array(
-                    'q8'=>array(
+                    'q10'=>array(
                         'type'=>'radio',
-                        'question'=>'Which statement best describes your organization\'s response to incident alerts?',
-                        'name'=>'q8',
+                        'question'=>'To what extent do you have security analytics capabilities in place today?',
+                        'name'=>'q10',
                         'options'=>array(
                             array(
-                                'label'=>'We have no defined responses to incidents',
-                                'value'=>1,
+                                'label'=>'Not using and no plans to use',
+                                'value'=>1.76,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'We have a broad Unified Intelligence process that defines the overall approach to incidents',
-                                'value'=>2,
+                                'label'=>'Not using but plan to use in the next two years',
+                                'value'=>3.33,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'We have a detailed run book of incident types which defines our response',
-                                'value'=>3,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'We have a managed Unified Intelligence plan that defines how we respond to incidents',
-                                'value'=>4,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'We have an Unified Intelligence management platform that automates the process of response to incidents',
+                                'label'=>'Currently piloting this',
                                 'value'=>5,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'Use in limited areas in production',
+                                'value'=>6.67,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'Use extensively in production',
+                                'value'=>8.33,
                                 'checked'=>false
                             )
                         )
                     )
-                )
+                )/*,
+                'report' => array(
+                    'text'=>'Archiving should be integrated in overall data protection workflow, IDC believes. In several industries (e.g. healthcare), long-term archiving is mandatory. With file sizes esp. for video exploding, storage assets often need rethinking.',
+                    'image'=>'img/techfit_icons_Q-C1.png'
+                )*/
             ),
             'page3' => array(
                 'title' => 'Unified Intelligence',
                 'questions' => array(
-                    'q9'=>array(
-                        'type'=>'button',
-                        'question'=>'How many people on average are involved in security investigations per incident?',
-                        'name'=>'q9',
-                        'ignore' => true,
-                        'options'=>array(
-                            array(
-                                'label'=>'1',
-                                'value'=>1,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'2 or 3',
-                                'value'=>2.5,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'4 or 5',
-                                'value'=>4.5,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'6 to 9',
-                                'value'=>7.5,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'10 or more',
-                                'value'=>15,
-                                'checked'=>false
-                            )
-                        )
-                    )
-                )
-            ),
-            'page4' => array(
-                'title' => 'Unified Intelligence',
-                'questions' => array(
-                    'q10'=>array(
-                        'type'=>'button',
-                        'question'=>'What is the work effort (time spent in hours) per person per security incident investigation?',
-                        'name'=>'q10',
-                        'options'=>array(
-                            array(
-                                'label'=>'Less than 1 hour',
-                                'value'=>5,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'1–2 hours',
-                                'value'=>5,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'2–4 hours',
-                                'value'=>4,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'4–8 hours',
-                                'value'=>4,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'9–12 hours',
-                                'value'=>3,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'13–20 hours',
-                                'value'=>2,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'More than 20 hours',
-                                'value'=>1,
-                                'checked'=>false
-                            )
-                        )
-                    )
-                )
-            ),
-            'page5' => array(
-                'title' => 'Unified Intelligence',
-                'questions' => array(
                     'q11'=>array(
-                        'type'=>'radio',
-                        'question'=>'What statement best describes your ability to cope with the number of security incidents raised?',
-                        'name'=>'q11',
-                        'options'=>array(
-                            array(
-                                'label'=>'We are completely overwhelmed',
-                                'value'=>1,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'We are constantly firefighting',
-                                'value'=>2,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'We usually cope but it\'s sometimes a struggle',
-                                'value'=>3,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'We cope more often than not, with a few stressful moments',
-                                'value'=>4,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'We cope quite comfortably',
-                                'value'=>5,
-                                'checked'=>false
-                            )
-                        )
-                    )
-                )
-            ),
-            'page6' => array(
-                'title' => 'Unified Intelligence',
-                'questions' => array(
-                    'q12'=>array(
-                        'type'=>'radio',
-                        'question'=>'To what extent is the information gathered sufficient to be able to take effective Unified Intelligence action?',
-                        'name'=>'q12',
-                        'options'=>array(
-                            array(
-                                'label'=>'We generally have insufficient information in order to take action',
-                                'value'=>1,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'We gather information that points us in a general direction',
-                                'value'=>2,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'We gather enough information for us to take reasonable action',
-                                'value'=>3,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'We gather sufficient information that directs us toward an appropriate action',
-                                'value'=>4,
-                                'checked'=>false
-                            ),
-                            array(
-                                'label'=>'We gather detailed information that allows us to take decisive action',
-                                'value'=>5,
-                                'checked'=>false
-                            )
-                        )
-                    )
-                )
-            ),
-            'page7' => array(
-                'title' => 'Unified Intelligence',
-                'questions' => array(
-                    'q13'=>array(
                         'type'=>'checkbox',
-                        'question'=>'Which of the following have you have deployed to support your Unified Intelligence capabilities?',
-                        'name'=>'q13',
+                        'question'=>'For your approach to threat detection, which of the following do you use? <span class="small">Choose all that apply</span>',
+                        'name'=>'q11',
+                        'script'=>'
+                            $(\'#10-q11\').change(function(event){
+                                if($(this).is(\':checked\')) {
+                                    $(\'div.error\').fadeOut(\'fast\', function() {
+                                        this.remove();
+                                        error=false;
+                                    });
+                                    if($(\'#0-q11\').is(\':checked\')){
+                                        $(\'#0-q11\').closest(".input-checkbox").click();
+                                    }
+                                    if($(\'#1-q11\').is(\':checked\')){
+                                        $(\'#1-q11\').closest(".input-checkbox").click();
+                                    }
+                                    if($(\'#2-q11\').is(\':checked\')){
+                                        $(\'#2-q11\').closest(".input-checkbox").click();
+                                    }
+                                    if($(\'#3-q11\').is(\':checked\')){
+                                        $(\'#3-q11\').closest(".input-checkbox").click();
+                                    }
+                                    if($(\'#4-q11\').is(\':checked\')){
+                                        $(\'#4-q11\').closest(".input-checkbox").click();
+                                    }
+                                    if($(\'#5-q11\').is(\':checked\')){
+                                        $(\'#5-q11\').closest(".input-checkbox").click();
+                                    }
+                                    if($(\'#6-q11\').is(\':checked\')){
+                                        $(\'#6-q11\').closest(".input-checkbox").click();
+                                    }
+                                    if($(\'#7-q11\').is(\':checked\')){
+                                        $(\'#7-q11\').closest(".input-checkbox").click();
+                                    }
+                                    if($(\'#8-q11\').is(\':checked\')){
+                                        $(\'#8-q11\').closest(".input-checkbox").click();
+                                    }
+                                    if($(\'#9-q11\').is(\':checked\')){
+                                        $(\'#9-q11\').closest(".input-checkbox").click();
+                                    }
+
+                                }
+                            });
+                            jQuery.each([$(\'#0-q11\'),$(\'#1-q11\'),$(\'#2-q11\'),$(\'#3-q11\'),$(\'#4-q11\'),$(\'#5-q11\'),$(\'#6-q11\'),$(\'#7-q11\'),$(\'#8-q11\'),$(\'#9-q11\')], function( i, item ) {
+                                $(item).change( function(event){
+                                    if($(this).is(\':checked\')) {
+                                        if($(\'#10-q11\').is(\':checked\')){
+                                            $(\'#10-q11\').closest(".input-checkbox").click();
+                                        }
+                                        $(\'div.error\').fadeOut(\'fast\', function() {
+                                            this.remove();
+                                            error=false;
+                                        });
+                                    }
+                                });
+                            });
+                        ',
                         'options'=>array(
                             array(
-                                'label'=>'Automated policy updates (e.g., firewall rules updated in response to counter emergence of a new threat)',
-                                'value'=>1,
+                                'label'=>'NGFW/UTM (next generation firewall/unified threat management)',
+                                'value'=>0.83,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Run books',
-                                'value'=>1,
+                                'label'=>'IDP (intrusion detection and prevention)',
+                                'value'=>0.83,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Communications plan',
-                                'value'=>1,
+                                'label'=>'SIEM (security information and event management)',
+                                'value'=>0.83,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Disaster recovery policy',
-                                'value'=>1,
+                                'label'=>'Endpoint security',
+                                'value'=>0.83,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Tiger/Go Teams',
-                                'value'=>1,
+                                'label'=>'NAC (network access control)',
+                                'value'=>0.83,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'Analytics',
+                                'value'=>0.83,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'Machine learning',
+                                'value'=>0.83,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'Threat intelligence reports and feeds',
+                                'value'=>0.83,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'Sandboxing',
+                                'value'=>0.83,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'Web gateway',
+                                'value'=>0.83,
+                                'checked'=>false
+                            ),
+                            array(
+                                'label'=>'None',
+                                'value'=>0,
                                 'checked'=>false
                             )
                         )

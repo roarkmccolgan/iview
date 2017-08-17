@@ -551,6 +551,18 @@ return [
 			]
 		]*/
     ],
+    'regions' => [
+    	'ap' => [
+    		'Brunei', 'Cambodia', 'East Timor', 'Indonesia', 'Laos', 'Malaysia', 'Myanmar', 'Philippines', 'Singapore', 'Thailand', 'Vietnam', 'China', 'Hong Kong', 'Macau', 'Japan', 'Mongolia', 'North Korea', 'South Korea', 'Taiwan', 'American Samoa', 'French Polynesia', 'Pitcairn Islands', 'Samoa', 'Tonga', 'Tuvalu', 'Hawaii', 'Wallis and Futuna', 'Australia', 'Christmas Island', 'Cocos Islands', 'Norfolk Island', 'New Zealand', 'Cook Islands', 'Niue', 'Tokelau', 'Fiji', 'New Caledonia', 'Papua New Guinea', 'Solomon Islands', 'Vanuatu', 'Micronesia Federated States', 'Guam', 'Kiribati', 'Marshall Islands', 'Nauru', 'North Mariana', 'Palau', 'Bangladesh', 'Bhutan', 'British Indian Ocean Territory', 'India', 'Maldives', 'Nepal', 'Pakistan', 'Sri Lanka', 'Wake Island'
+    	],
+    	'na' => [
+    		'Anguilla', 'Antigua', 'Aruba', 'The Bahamas', 'Barbados', 'Belize', 'Bermuda', 'Bonaire', 'British Virgin Islands', 'Canada', 'Cayman Islands', 'France	Clipperton Island', 'Costa Rica', 'Cuba', 'Curaçao', 'Dominica', 'Dominican Republic', 'El Salvador', 'Greenland', 'Grenada', 'Guadeloupe', 'Guatemala', 'Haiti', 'Honduras', 'Jamaica', 'Martinique', 'Mexico', 'Montserrat', 'Nicaragua', 'Panama', 'Puerto Rico', 'Saba', 'Saint Barthélemy', 'Saint Kitts and Nevis', 'Saint Lucia', 'Collectivity of Saint Martin', 'Saint Pierre And Miquelon', 'Saint Vincent and the Grenadines', 'Sint Eustatius', 'Sint Maarten', 'Trinidad and Tobago', 'Turks and Caicos Islands', 'United States', 'Virgin Islands US'
+    	],
+    	'we' => [
+    		'Andorra', 'Austria', 'Belgium', 'Denmark', 'Finland', 'France', 'Germany', 'Greece', 'Iceland', 'Ireland', 'Italy', 'Liechtenstein', 'Luxembourg', 'Malta', 'Monaco', 'Netherlands', 'Norway', 'Portugal', 'San Marino', 'Spain', 'Sweden', 'Switzerland', 'Turkey', 'United Kingdom'
+    	],
+
+    ],
     'queries' => [
             'total_results'=>[
                 'metrics'       => 'ga:sessions,ga:newUsers,ga:users,ga:bounceRate,ga:avgSessionDuration,ga:pageviews,ga:pageviewsPerSession,ga:percentNewSessions',

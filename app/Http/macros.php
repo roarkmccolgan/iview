@@ -87,7 +87,7 @@ Form::macro('idcBubblegumRadio', function($num,$q,$type,$page){
 	//$type= 'radio';
 	$errors = session('errors');
 	$required = isset($q['required']) ? $q['required'] : 1;
-	$html ='<input type="hidden" name="numrequired" id="numrequired" value="'.$required.'">';
+	$html = '<input type="hidden" name="numrequired" id="numrequired" value="'.$required.'">';
 	$name = $q['name'];
 
 	$html.=Form::hidden('question', $name);
@@ -127,7 +127,7 @@ Form::macro('idcBubblegumRadio', function($num,$q,$type,$page){
 					<div class="input-'.$type.' std '.$checked.' mb--1">
 						<div class="inner"></div>
 						<label>'.$optionSet['label'].'</label>
-                        <input class="btn-q" type="'.$type.'" name="'.$name.'" value="'.$optionSet['label'].'|'.$optionSet['value'].'" id="'.$key.'-'.$name.'" '.$checked.' />
+                        <input class="btn-q" type="'.$type.'" name="'.$name.'" value="'.$optionSet['label'].'|'.$optionSet['value'].'" id="'.$key.'-'.$q['name'].'" '.$checked.' />
                     </div>					
 				</div>';
 	}
