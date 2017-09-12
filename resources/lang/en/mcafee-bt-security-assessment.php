@@ -21,7 +21,7 @@ return array(
         'hi' => 'Hi :Fname',
         'body' => 'As promised, here\'s a link to download your Security Assessment. This breaks down your results by category and provides you with actionable recommendations.',
         'link' => 'Download Report',
-        'extra' => 'Once you\'ve digested the report why not visit <a href="https://www.splunk.com/en_us/solutions/solution-areas/security-and-fraud/security-investigation.html" style="color:#65A637">Splunk</a>',
+        'extra' => '',
         'regards' => 'Regards',
         'team' => 'The IDC Team'
     ],
@@ -31,14 +31,14 @@ return array(
             Based on your responses, you are placed within <strong>:percent</strong>% of companies overall in the readiness group of <strong>:result</strong>, which is the <strong>:number:ordinal</strong> level out of five.
         </p>
         <div style="position: relative; width: 170mm; height: 105mm; background: url(http://securebusiness.idcready.net/images/tools/6/overall_graph_bg.svg); background-size: 170mm 105mm;">
-            <div id="user" style="position:absolute; top: 27.5mm; left:40mm; width: :widthuser height: 7mm; background-color: #92063e"></div>
-            <div id="lang" style="position:absolute; top: 36.5mm; left:40mm; width: :widthlang height: 7mm; background-color: #ff5627"></div>
+            <div id="user" style="position:absolute; top: 28.575mm; left:43.181mm; width: :widthuser height: 7mm; background-color: #92063e"></div>
+            <div id="lang" style="position:absolute; top: 38.153mm; left:43.181mm; width: :widthlang height: 7mm; background-color: #ff5627"></div>
             
-            <div id="user" style="position:absolute; top: 52mm; left:40mm; width: :widthuser height: 7mm; background-color: #92063e"></div>
-            <div id="size" style="position:absolute; top: 61mm; left:40mm; width: :widthsize height: 7mm; background-color: #ff5627"></div>
+            <div id="user" style="position:absolute; top: 50.358mm; left:43.181mm; width: :widthuser height: 7mm; background-color: #92063e"></div>
+            <div id="size" style="position:absolute; top: 59.936mm; left:43.181mm; width: :widthsize height: 7mm; background-color: #ff5627"></div>
 
-            <div id="user" style="position:absolute; top: 75mm; left:40mm; width: :widthuser height: 7mm; background-color: #92063e"></div>
-            <div id="size" style="position:absolute; top: 84mm; left:40mm; width: :widthsize height: 7mm; background-color: #ff5627"></div>
+            <div id="user" style="position:absolute; top: 72.141mm; left:43.181mm; width: :widthuser height: 7mm; background-color: #92063e"></div>
+            <div id="size" style="position:absolute; top: 81.719mm; left:43.181mm; width: :widthsize height: 7mm; background-color: #ff5627"></div>
         </div>
         <h2>Overall Summary</h2>
         <p>
@@ -50,13 +50,13 @@ return array(
         </ul>
         <p>
             <strong class="blue">Your performance in more detail</strong><br/>
-            The assessment tool was designed to help establish your organization\'s readiness to cope with the evolving threat landscape that impacts on today’s digital businesses, both today and into the future.<br/>
-            We looked at the following key areas of IT security:
+            This assessment tool was designed to help establish your organisation\'s IT security operational readiness to cope with the evolving threat landscape that impacts digital businesses, both today and in the future. <br/>
+            We looked at the following key areas:
         </p>
         <ul class="primary">
-            <li>Security Strategy</li>
-            <li>Incident Detection</li>
-            <li>Incident Response</li>
+            <li>Security Integration</li>
+            <li>Security automation</li>
+            <li>Unified Intelligence</li>
         </ul>
         <p>
             Your performance in each area is compared to your peers in Figure 3 on the following page.
@@ -65,87 +65,87 @@ return array(
         <div class="spacer"></div>
         <h2>IDC Security Response Readiness by Capability</h2>
         <div class="spacer"></div>
-        <div style="position: relative; width: 170mm; height: 105mm; background: url(http://securebusiness.idcready.net/images/tools/6/section_graph_bg.svg); background-size: 170mm 105mm;">
-            <div id="user" style="position:absolute; top: 24.694mm; left:44.3mm; width: :widthuser-security-strategy height: 7mm; background-color: #92063e"></div>
-            <div id="lang" style="position:absolute; top: 33mm; left:44.3mm; width: :width-security-strategy height: 7mm; background-color: #ff5627"></div>
+        <div style="position: relative; width: 170mm; height: 112mm; background: url(http://securebusiness.idcready.net/images/tools/6/section_graph_bg.svg); background-size: 170mm 112mm;">
+            <div id="user" style="position:absolute; top: 27.869mm; left:43.076mm; width: :widthuser-security-strategy height: 7mm; background-color: #92063e"></div>
+            <div id="lang" style="position:absolute; top: 37.447mm; left:43.076mm; width: :width-security-strategy height: 7mm; background-color: #ff5627"></div>
 
-            <div id="user" style="position:absolute; top: 48mm; left:44.3mm; width: :widthuser-incident-detection height: 7mm; background-color: #92063e"></div>
-            <div id="lang" style="position:absolute; top: 56.3mm; left:44.3mm; width: :width-incident-detection height: 7mm; background-color: #ff5627"></div>
+            <div id="user" style="position:absolute; top: 49.652mm; left:43.076mm; width: :widthuser-incident-detection height: 7mm; background-color: #92063e"></div>
+            <div id="lang" style="position:absolute; top: 59.23mm; left:43.076mm; width: :width-incident-detection height: 7mm; background-color: #ff5627"></div>
 
-            <div id="user" style="position:absolute; top: 72mm; left:44.3mm; width: :widthuser-incident-response height: 7mm; background-color: #92063e"></div>
-            <div id="lang" style="position:absolute; top: 80mm; left:44.3mm; width: :width-incident-response height: 7mm; background-color: #ff5627"></div>
+            <div id="user" style="position:absolute; top: 73.284mm; left:43.076mm; width: :widthuser-incident-response height: 7mm; background-color: #92063e"></div>
+            <div id="lang" style="position:absolute; top: 82.862mm; left:43.076mm; width: :width-incident-response height: 7mm; background-color: #ff5627"></div>
         </div>
         <h2>How to get ahead</h2>
         <p>
             No matter what level you are at, there are certain areas that are continuing to evolve and are worth focusing on above all else
         </p>
-        <ul>
-            <li>Integration – avoiding the single glass of pain</li>
-            <li>Proactive approach – cutting the time between breach and detection from months to hours(or less) </li>
-            <li>Keeping ahead of compliance – it is hard enough to gain compliance for most, let alone maintain it</li>
-            <li>Best practice – recognizing that the threat landscape never sits still and that compliance and regulatory frameworks are often years out of date even at introduction, adopting a best practice approach is the best way to mitigate threats. The added advantage is that, if done right, compliance will naturally be achieved.</li>
+       <ul>
+            <li><strong>Integration</strong> &mdash; focusing on security product integration, for enhanced visibility across the security estate</li>
+            <li><strong>Automation</strong> &mdash; exchanging threat information between products and updating policy decisions with minimal human supervision</li>
+            <li><strong>Advanced technology</strong> &mdash; utilising the latest technologies to improve detection and remediation</li>
+            <li><strong>Advanced deployment approaches</strong> &mdash; prioritising cloud deployments and thus benefitting from specialist security resource at scale, regular maintenance and state-of-the-art updates, with minimal downtime</li>
         </ul>
         <div class="pb"></div>
     ',
-    'security-strategy-heading' => '<h2>Improvements to Security Strategy</h2>',
-    'incident-detection-heading' => '<h2>Improvements to Incident Detection</h2>',
-    'incident-response-heading' => '<h2>Improvements to Incident Response</h2>',
-    'a1-a' => '
+    'overall-good' => '
+    <strong>Good</strong><br/>
     <p>
-        Getting security to align with and support the business is vital for any modern digital business. Ad-hoc or reactive approaches to security will hold you company back and also put you at risk of potential fines under compliance legislation. A key priority for you should be to raise the awareness of how security enables new business opportunities and improve senior management awareness of the strategic value of IT security to help build a longer term plan.
+        You are in a good place, but remember that security strategy is a precursor to digital risk and that business performance and innovation must always be taken into account. Security has always been balanced with usability, but this is now extended to broad business objectives. Digital transformation is chief among these, but security needs to be positioned continually as an enabler — if not an accelerator — of such initiatives. Continue to influence the board in this regard. 
     </p>',
-    'a1-b' => '
+    'overall-moderate' => '
+    <strong>Moderate</strong><br/>
     <p>
-        Getting security to align with and support the business is vital for any modern digital business. While you are doing OK in getting security more consistent through repeatable processes, you should work to raise the awareness of how security enables new business opportunities and improve senior management awareness of the strategic value of IT security to help build a longer term plan.
+        The security you deliver to the business may be perfectly functional, but it is unlikely to be in line with business objectives. For some reason, security operations are unable to influence business decisions, which means that budgets tend to be allocated on an ad hoc, or at least localised, basis with little strategic enterprisewide planning. Aligning security provision with your businesses digital transformation programmes is fundamental, and this places new demands on both the security technology deployed and the efficiency and effectiveness of operations. 
     </p>',
-    'a5-a' => '
+    'overall-weak' => '
+    <strong>Week</strong><br/>
     <p>
-        New approaches to security governance and compliance are placing more evidence on implementing best practice, and this is an area where you are currently at risk. Focusing on best practice and balancing this with risk management can really help to drive both compliance and business agility. It is often hard to build best practice capabilities internally, so you should consider utilizing external experts to help define the both the scope of requirements and also possible solutions.
+        Security is likely to be regarded as a cost in your organisation. There is little strategic placement of security in the consciousness of business. How to change this? A good first step is to focus on operational effectiveness, where gains are likely in both the efficiency of processes and in achieving more predictable costs. Board influence is vital in the medium to longer term, so measuring security operations is essential in order to communicate good performance in business terms.
     </p>',
-    'a5-b' => '
+    'integration-automation-heading' => '<h2>Improvements to Integration and Automation</h2>',
+    'unified-heading' => '<h2>Improvements to Unified Intelligence</h2>',
+
+    'integration-automation-good' => '
+    <strong>Good</strong>
     <p>
-        New approaches to security governance are placing more evidence on implementing best practice. While you have been tackling this internally, making sure you have experts who have a view of the entire security landscape can really help you to identify gaps and weaknesses in your approach. Focusing on best practice and balancing this with risk management can really help to drive both compliance and business agility. It is often hard to build best practice capabilities internally, so you should consider utilizing external experts to help define the both the scope of requirements and also possible solutions.
+        You have intuitively followed a path of security product integration and are realising the benefits of this through automation. However, this is unlikely to be consistent across your entire security estate. The adoption of a holistic, open and strategic integration platform will yield benefits not just for your existing portfolio but for future product acquisitions. Furthermore, you will get even greater gains by automating policy updates and remediation across your entire estate, rather than being restricted to preintegrated products from a single vendor.
     </p>',
-    'a7-a' => '
+    'integration-automation-moderate' => '
+    <strong>Moderate</strong>
     <p>
-        Threats are evolving quickly and becoming more capable and mature. You need to be ahead of the game here, but you are yet to really adopt best in class security capabilities. Assuming you have been breached and proactively hunting for breaches will be a vital skill for IT security organizations of the future. Work on a business plan to support investment in emerging discovery capabilities such as analytics and machine learning.
+        You have started your integration journey and are seeing some benefits of automation, albeit most likely within small groups of products. The next step is a holistic integration and automation strategy, and your best approach is to select a platform that provides a wide range of easy-to-implement integrations. The greatest benefits of integration and automation come through a completely integrated architecture, but you are likely to have a security estate composed of products from multiple vendors. So an open platform architecture is essential.
     </p>',
-    'a7-b' => '
+    'integration-automation-weak' => '
+    <strong>Week</strong>
     <p>
-        Threats are evolving quickly and becoming more capable and mature. You need to be ahead of the game here, and you have started to adopt best in class security capabilities but have a way to go still. Assuming you have been breached and proactively hunting for breaches will be a vital skill for IT security organizations of the future. Work on a business plan to support investment in emerging discovery capabilities such as analytics and machine learning.
+        You are yet to benefit from the operational efficiency gains from integrating and then automating policy updates and remediating across your security estate. Following a best-of-breed product acquisition approach may have provided great functionality, but it is siloed and will be tough (and expensive) to integrate these disparate products. The best approach now is to settle on an open, holistic and strategic security platform, and then integrate individual products with (or retire these in favour of) those that have integration capabilities out-of-the-box.
     </p>',
-    'a8-a' => '
+
+    'unified-good' => '
+    <strong>Good<br/><em>Threat Intelligence</em></strong>
     <p>
-        Managing your initial response to a security incident will be critical to containing the threat and mitigating any potential damage, but you do not have anything in place now. A platform designed to standardize and manage this can be particularly useful, especially in the light of the breach reporting requirements of new legislation such as GDPR, or for IT Security Breach Insurance compliance.
-    </p>',
-    'a8-b' => '
+        You are making effective use of global threat inside services, and likely doing it in collaboration with peers and outside agencies. If you are not using threat intelligence to drive automated policy updates then this should be on your to-do list. You should also investigate security analytics if you are not already doing so, but make sure you have a process of continuous improvement through quantitative feedback. Managed services may also be appropriate, as they can provide greater context, as well as benefiting from the insight from multiple organisations.
+    </p>
     <p>
-        Managing your initial response to a security incident will be critical to containing the threat and mitigating any potential damage. You have made a small start, but you should be looking to scale this up soon. A platform designed to standardize and manage this can be particularly useful, especially in the light of the breach reporting requirements of new legislation such as GDPR, or for IT Security Breach Insurance compliance.
+        You seem to have a strong set of advanced security technologies at your disposal. You are more likely to be using machine learning today, and looking seriously at cognitive computing for deployment within two years. Beyond this, you should begin looking at the benefits of blockchain and distributed ledger technology, which has a variety of security use cases, plus containerisation and other micro-segmentation approaches that can help to limit the damage suffered from attacks.
     </p>',
-    'a11-a' => '
+    'unified-moderate' => '
+    <strong>Moderate<br/><em>Threat Intelligence</em></strong>
     <p>
-        A well-defined and tested response plan is essential in the event of a breach to ensure that all obligations and requirements are met. Automating this process as much as possible will be a great help in reducing ongoing operational overhead.
-    </p>',
-    'a11b-a' => '
+        You are using global threat insight services, but are less likely to be sharing information in a bidirectional way. Often, the real benefits from threat intelligence come from automated policy updates and proactive remediation, so ensure you are doing this. Also investigate security analytics if you are not already doing this. You are most likely using a specialist threat intelligence provider to manage your input, but consider using a managed services provider for this: you will most likely get better contextual information, as well as benefiting from insight from multiple organisations.
+    </p>
     <p>
-        The longer that people have to take dealing with a security incident, the greater the impact on productivity and business risk. Reducing the time spend on investigations and remediation should be a key aim, ideally with an approach to standardizing and automating security breach response.
+        You appear to be using a good cross-section of technologies, but may be missing out on the more advanced capabilities. You are likely to be using public-cloud-based security solutions to secure your own premise infrastructure, but less likely to be using it to secure public cloud services, or using cloud security gateways. DDoS protection services are commonplace today, so this should be on your to-do list if you have not already commissioned such services. Advanced capabilities such as blockchain and containerisation should be on your two-year plan for investigation.
     </p>',
-    'a13-a' => '
+    'unified-weak' => '
+    <strong>Weak<br/><em>Threat Intelligence</em></strong>
     <p>
-        You are struggling to deal with the volume of incidents. Rather than bringing in more people to try to cope, consider ways to make detection and remediation (through approaches such as automation and prioritization) much more effective.
-    </p>',
-    'a13-b' => '
+        You may be using threat intelligence products today, but these are likely to be straightforward feeds from third-party sources. This is fine as far as it goes, but greater benefits come from having managed threat intelligence, possibly from a specialist provider or (even better) a managed services provider that can provide better contextual information, as well as benefiting from insight from multiple organisations. Make sure you look at sharing threat intelligence, with peers and outside agencies, but understand that in order to get the greatest benefits this sharing must be bidirectional. 
+    </p>
     <p>
-        While you can generally cope with the volume of incidents, it is not always easy and things can get rather heated. Rather than bringing in more people to try to cope, consider ways to make detection and remediation (through approaches such as automation and prioritization) much more effective.
+        You can improve the effectiveness of your security operation by applying more advanced security capabilities. High on your list should be using cloud-based security solutions to secure both on-premise infrastructure and public cloud services. These are now mature and can substantially increase your security posture: the idea that cloud is inherently insecure is out of date. DDoS protection is regarded as a standard capability today, so consider commissioning a service to deliver better availability assurance.
     </p>',
-    'a14-a' => '
-    <p>
-        You cannot secure effectively that which you cannot measure, and you are not measuring enough to be able to determine the extent and impact of a breach. Taking a proactive approach to gathering and analysing information will enable you to not only detect a breach more reliably and more quickly, but also will help reverse engineer the breach to be able to improve your security response and risk posture to mitigate future attacks.
-    </p>',
-    'a14-b' => '
-    <p>
-        You cannot secure effectively that which you cannot measure. While you have enough to steer you in the right direction, trying to tackle a breach more effectively will be much easier if you work to improve your overall information gathering and monitoring capabilities. Taking a proactive approach to gathering and analysing information will enable you to not only detect a breach more reliably and more quickly, but also will help reverse engineer the breach to be able to improve your security response and risk posture to mitigate future attacks.
-    </p>',
+   
     'summary' => '
         <div class="pb"></div>
         <div class="spacer"></div>

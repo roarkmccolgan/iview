@@ -394,9 +394,65 @@ class PdfController extends Controller
 			$sectionCopy = '';
 			$customCopy = '';
 
+			//overall
+			$value = session('result.overall.score');
+			
+			if($value >75 ){
+				$customCopy.= trans(session('product.alias').'.overall-good');
+			}
+			if($value >60 &&  $value <=75){
+				$customCopy.= trans(session('product.alias').'.overall-moderate');
+			}
+			if($value <=60){
+				$customCopy.= trans(session('product.alias').'.overall-weak');
+			}
+			if($customCopy!=''){
+				$sectionCopy = $customCopy;
+				$customCopy = '';
+			}
+			
+
+			//Integration automation 
+			$value = session('result.integration.score') + session('result.automation.score');
+			if($value > 37.52){
+				$customCopy.= trans(session('product.alias').'.integration-automation-good');
+			}
+			if($value >= 22.51 && $value <= 30){
+				$customCopy.= trans(session('product.alias').'.integration-automation-moderate');
+			}
+			if($value <= 22.50){
+				$customCopy.= trans(session('product.alias').'.integration-automation-weak');
+			}
+
+			if($customCopy!=''){
+				$sectionCopy.= trans(session('product.alias').'.integration-automation-heading');
+				$sectionCopy.= $customCopy;
+				$customCopy = '';
+			}
+
+			//Unified Intelligence 
+			$value = session('result.unified-intelligence.score');
+			if($value > 18.76){
+				$customCopy.= trans(session('product.alias').'.unified-good');
+			}
+			if($value >= 15.01 && $value <= 18.75){
+				$customCopy.= trans(session('product.alias').'.unified-moderate');
+			}
+			if($value <= 15){
+				$customCopy.= trans(session('product.alias').'.unified-weak');
+			}
+
+			if($customCopy!=''){
+				$sectionCopy.= trans(session('product.alias').'.unified-heading');
+				$sectionCopy.= $customCopy;
+				$customCopy = '';
+			}
+
+			//here
+
 			$vars['sectionCopy'] = $sectionCopy;
 			
-			$vars['summary'] = trans(session('product.alias').'.summary');;
+			//$vars['summary'] = trans(session('product.alias').'.summary');;
 
 			$vars['introImage'] = Lang::has(session('product.alias').'.introduction-image') ? trans(session('product.alias').'.introduction-image') : false;
 			$vars['introRating'] = trans(session('product.alias').'.'.session('result.overall.rating'));

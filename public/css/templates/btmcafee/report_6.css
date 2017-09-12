@@ -3,12 +3,13 @@ body{
 }
 * { 
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 11pt;
+	font-size: 10pt;
+	line-height: 1.2;
 	color: #666666;
 }
 h2{
 	font-weight: 300;
-	color: #003F7D;
+	color: #92063e;
 	font-size: 14pt;
 }
 .spacer{
@@ -18,10 +19,9 @@ h2{
 	page-break-before: always;
 }
 strong.blue{
-	color: #003F7D;
+	color: #92063e;
 }
 ul, ul li{
-	color: #003F7D;
 	margin-bottom: 1mm;
 }
 ul.primary {

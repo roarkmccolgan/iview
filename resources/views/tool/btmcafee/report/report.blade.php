@@ -23,7 +23,6 @@
 		</div>
 		<div class="spacer"></div>
 		{!!$sectionCopy!!}
-		{!!$summary!!}
 		
 		<script src="{{ asset('js/vendor/jquery-1.10.1.min.js')}}"></script>
 		<script type="text/javascript">

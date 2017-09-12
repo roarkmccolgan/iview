@@ -20,7 +20,7 @@
                         <div class="col-sm-4 col-sm-offset-1">
                             <div class="mb--1">
                                 <div class="hero text-center">
-                                    <i class="icon icon-Like"></i>
+                                    <i class="icon icon-finish"></i>
                                 </div>    
                             </div>
                         </div>

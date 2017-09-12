@@ -3,12 +3,12 @@
 return array(
     'overall' => array(
         'baseline' => 2.94,
-        'benchmark-country-ap' => 2.9,
-        'benchmark-country-na' => 2.99,
-        'benchmark-country-we' => 2.93,
-        'benchmark-size-fewer-than-4999' => 2.46,
+        'benchmark-country-ap' => 2,
+        'benchmark-country-na' => 3,
+        'benchmark-country-we' => 3,
+        'benchmark-size-fewer-than-4999' => 2,
         'benchmark-size-5000-to-9999' => 3,
-        'benchmark-size-10000-or-more' => 3.5,
+        'benchmark-size-10000-or-more' => 3,
         'complete' => [
             'graph' => [
                 'label' => 'Stage',
@@ -144,13 +144,13 @@ return array(
         )
     ),
     'integration' => array(
-        'baseline' => 3.11,
-        'benchmark-country-ap' => 3.03,
-        'benchmark-country-na' => 3.09,
-        'benchmark-country-we' => 3.21,
-        'benchmark-size-fewer-than-4999' => 2.64,
-        'benchmark-size-5000-to-9999' => 3.12,
-        'benchmark-size-10000-or-more' => 3.71,
+        'baseline' => 3,
+        'benchmark-country-ap' => 3,
+        'benchmark-country-na' => 3,
+        'benchmark-country-we' => 3,
+        'benchmark-size-fewer-than-4999' => 2,
+        'benchmark-size-5000-to-9999' => 3,
+        'benchmark-size-10000-or-more' => 3,
         'complete' => [
             'graph' => [
                 'label' => 'Stage',
@@ -215,13 +215,13 @@ return array(
         )
     ),
     'automation' => array(
-        'baseline' => 2.74,
-        'benchmark-country-ap' => 2.79,
-        'benchmark-country-na' => 2.81,
-        'benchmark-country-we' => 2.63,
-        'benchmark-size-fewer-than-4999' => 2.4,
-        'benchmark-size-5000-to-9999' => 2.87,
-        'benchmark-size-10000-or-more' => 3.01,
+        'baseline' => 2,
+        'benchmark-country-ap' => 2,
+        'benchmark-country-na' => 2,
+        'benchmark-country-we' => 2,
+        'benchmark-size-fewer-than-4999' => 2,
+        'benchmark-size-5000-to-9999' => 2,
+        'benchmark-size-10000-or-more' => 3,
         'complete' => [
             'graph' => [
                 'label' => 'Stage',
@@ -286,13 +286,13 @@ return array(
         )
     ),
     'unified-intelligence' => array(
-        'baseline' => 2.76,
-        'benchmark-country-ap' => 2.69,
-        'benchmark-country-na' => 2.85,
-        'benchmark-country-we' => 2.85,
-        'benchmark-size-fewer-than-4999' => 2.26,
-        'benchmark-size-5000-to-9999' => 2.82,
-        'benchmark-size-10000-or-more' => 3.37,
+        'baseline' => 2,
+        'benchmark-country-ap' => 2,
+        'benchmark-country-na' => 2,
+        'benchmark-country-we' => 2,
+        'benchmark-size-fewer-than-4999' => 2,
+        'benchmark-size-5000-to-9999' => 2,
+        'benchmark-size-10000-or-more' => 3,
 
         'complete' => [
             'graph' => [
