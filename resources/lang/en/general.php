@@ -416,8 +416,8 @@ Risk is a key driver for assessment and mitigation processes.",
 
     '6subreporttitle' => 'You are at <span class="color--primary">:result</span>',
 
-    '6poor'=>'Poor', //reactive
-    '6poortxt'=>"
+    '6Foundation'=>'Foundation', //reactive
+    '6Foundationtxt'=>"
         <p class=\"mt--1\">
             Thank you for completing the assessment.<br/>
                 Tell us a little about yourselfto receiveapersonalised report that includes:
@@ -428,9 +428,9 @@ Risk is a key driver for assessment and mitigation processes.",
         </ul>
 
     ",
-    '6poortweet' => "I took the @splunk Security Assessment and it's shown me where I can improve. Interested?",
-    '6standard'=>'Standard',
-    '6standardtxt'=>"
+    '6Foundationtweet' => "I took the @splunk Security Assessment and it's shown me where I can improve. Interested?",
+    '6Developing'=>'Developing',
+    '6Developingtxt'=>"
         <p class=\"mt--1\">
             Thank you for completing the assessment.<br/>
                 Tell us a little about yourselfto receiveapersonalised report that includes:
@@ -441,9 +441,9 @@ Risk is a key driver for assessment and mitigation processes.",
         </ul>
 
     ",
-    '6standardtweet' => "I took the @splunk Security Assessment and my company is on the right track. See how your business does... http://bit.ly/1Y6JAqa",
-    '6good'=>'Good',
-    '6goodtxt'=>"
+    '6Developingtweet' => "I took the @splunk Security Assessment and my company is on the right track. See how your business does... http://bit.ly/1Y6JAqa",
+    '6Good'=>'Good',
+    '6Goodtxt'=>"
         <p class=\"mt--1\">
             Thank you for completing the assessment.<br/>
                 Tell us a little about yourselfto receiveapersonalised report that includes:
@@ -454,9 +454,9 @@ Risk is a key driver for assessment and mitigation processes.",
         </ul>
 
     ",
-    '6goodtweet' => "I took the @splunk Security Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
-    '6aspirational'=>'',
-    '6aspirationaltxt'=>"
+    '6Goodtweet' => "I took the @splunk Security Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    '6Aspirational'=>'Aspirational',
+    '6Aspirationaltxt'=>"
         <p class=\"mt--1\">
             Thank you for completing the assessment.<br/>
                 Tell us a little about yourselfto receiveapersonalised report that includes:
@@ -467,14 +467,14 @@ Risk is a key driver for assessment and mitigation processes.",
         </ul>
 
     ",
-    '6aspirationaltweet' => "I took the @splunk Security Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
-    '6best'=>'Best',
-    '6besttxt'=>"Organizations at this stage are proactive breach hunters. They focus on best practices and continuous improvement. 
+    '6Aspirationaltweet' => "I took the @splunk Security Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    '6Best'=>'Best',
+    '6Besttxt'=>"Organizations at this stage are proactive breach hunters. They focus on best practices and continuous improvement. 
 An incident response plan is in place and tested regularly. This is supported by a retained incident response team (either in-house or third party). Legal agreements are in place to share incident response data. 
 Resourcing for incident response is planned using internal staff and external resources on retainer with regular planning meetings. 
 A unified and integrated security management solution provides the organization with a holistic view of security. 
 Risk is a key driver for assessment and mitigation processes.",
-    '6besttweet' => "I took the @splunk Security Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    '6Besttweet' => "I took the @splunk Security Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
     '6send'=>'We can send you the full results directly to your mailbox',
     '6fullreport'=>'For the full report with essential guidance to get your businesses security in check, just fill in your details.',
     '6provide'=>'Provide us with a few details and we\'ll send you a link to download it.',

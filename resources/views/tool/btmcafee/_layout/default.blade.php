@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="{{asset('css/templates/fonts/btmcafee/style.css')}}" type="text/css" media="all" />
         <link rel="stylesheet" href="{{asset('js/templates/'.session('template').'/unslider-master/dist/css/unslider.css')}}" type="text/css" media="all" />
         <link rel="stylesheet" href="{{asset('js/templates/'.session('template').'/unslider-master/dist/css/unslider-dots.css')}}" type="text/css" media="all" />
-        <link rel="stylesheet" href="{{asset('css/templates/'.session('template').'/custom.css')}}?id=4" type="text/css" media="all" />
+        <link rel="stylesheet" href="{{asset('css/templates/'.session('template').'/custom.css')}}?id=5" type="text/css" media="all" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato:400,400i" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">

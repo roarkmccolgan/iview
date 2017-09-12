@@ -44,6 +44,10 @@ body{
 	border-bottom-right-radius: 6px;
 	/*border-bottom: 1px solid rgba(153,153,153,0.5);*/
 }
+section, footer {
+    padding-top: 3.48214286em;
+    padding-bottom: 7.42857143em;
+}
 .mb--1{
 	margin-bottom: 1.85714286em;
 }

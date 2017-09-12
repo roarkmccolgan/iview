@@ -3,11 +3,11 @@
 return array(
     'title' => 'IDC\s Security Assessment',
     'sub-title' => 'How ready is your businesses\' security ',
-    'stage1' => 'Stage 1: Poor',
-    'stage2' => 'Stage 2: Standard',
+    'stage1' => 'Stage 1: Foundation',
+    'stage2' => 'Stage 2: Developing',
     'stage3' => 'Stage 3: Good',
     'stage4' => 'Stage 4: Aspirational',
-    'stage5' => 'Stage 5: Best',
+    'stage5' => 'Stage 5: Advanced',
     'complete_thankyou' => 'Thank you :Fname,',
     'complete_body' => '
         Thank you for your time. We have received your information. You will be receiving an email with your custom report momentarily.<br/>
@@ -30,11 +30,15 @@ return array(
         <p>
             Based on your responses, you are placed within <strong>:percent</strong>% of companies overall in the readiness group of <strong>:result</strong>, which is the <strong>:number:ordinal</strong> level out of five.
         </p>
-        <div style="position: relative; width: 170mm; height: 80mm; background: url(http://security.idcready.net/images/tools/5/overall_graph_bg.svg); background-size: 170mm 80mm;">
-            <div id="user" style="position:absolute; top: 24.694mm; left:40.5mm; width: :widthuser height: 7mm; background-color: #004B85"></div>
-            <div id="lang" style="position:absolute; top: 33mm; left:40.5mm; width: :widthlang height: 7mm; background-color: #00ADEE"></div>
-            <div id="user" style="position:absolute; top: 49mm; left:40.5mm; width: :widthuser height: 7mm; background-color: #004B85"></div>
-            <div id="size" style="position:absolute; top: 57mm; left:40.5mm; width: :widthsize height: 7mm; background-color: #00ADEE"></div>
+        <div style="position: relative; width: 170mm; height: 105mm; background: url(http://securebusiness.idcready.net/images/tools/6/overall_graph_bg.svg); background-size: 170mm 105mm;">
+            <div id="user" style="position:absolute; top: 27.5mm; left:40mm; width: :widthuser height: 7mm; background-color: #92063e"></div>
+            <div id="lang" style="position:absolute; top: 36.5mm; left:40mm; width: :widthlang height: 7mm; background-color: #ff5627"></div>
+            
+            <div id="user" style="position:absolute; top: 52mm; left:40mm; width: :widthuser height: 7mm; background-color: #92063e"></div>
+            <div id="size" style="position:absolute; top: 61mm; left:40mm; width: :widthsize height: 7mm; background-color: #ff5627"></div>
+
+            <div id="user" style="position:absolute; top: 75mm; left:40mm; width: :widthuser height: 7mm; background-color: #92063e"></div>
+            <div id="size" style="position:absolute; top: 84mm; left:40mm; width: :widthsize height: 7mm; background-color: #ff5627"></div>
         </div>
         <h2>Overall Summary</h2>
         <p>
@@ -61,15 +65,15 @@ return array(
         <div class="spacer"></div>
         <h2>IDC Security Response Readiness by Capability</h2>
         <div class="spacer"></div>
-        <div style="position: relative; width: 170mm; height: 105mm; background: url(http://security.idcready.net/images/tools/5/section_graph_bg.svg); background-size: 170mm 105mm;">
-            <div id="user" style="position:absolute; top: 24.694mm; left:44.3mm; width: :widthuser-security-strategy height: 7mm; background-color: #004B85"></div>
-            <div id="lang" style="position:absolute; top: 33mm; left:44.3mm; width: :width-security-strategy height: 7mm; background-color: #00ADEE"></div>
+        <div style="position: relative; width: 170mm; height: 105mm; background: url(http://securebusiness.idcready.net/images/tools/6/section_graph_bg.svg); background-size: 170mm 105mm;">
+            <div id="user" style="position:absolute; top: 24.694mm; left:44.3mm; width: :widthuser-security-strategy height: 7mm; background-color: #92063e"></div>
+            <div id="lang" style="position:absolute; top: 33mm; left:44.3mm; width: :width-security-strategy height: 7mm; background-color: #ff5627"></div>
 
-            <div id="user" style="position:absolute; top: 48mm; left:44.3mm; width: :widthuser-incident-detection height: 7mm; background-color: #004B85"></div>
-            <div id="lang" style="position:absolute; top: 56.3mm; left:44.3mm; width: :width-incident-detection height: 7mm; background-color: #00ADEE"></div>
+            <div id="user" style="position:absolute; top: 48mm; left:44.3mm; width: :widthuser-incident-detection height: 7mm; background-color: #92063e"></div>
+            <div id="lang" style="position:absolute; top: 56.3mm; left:44.3mm; width: :width-incident-detection height: 7mm; background-color: #ff5627"></div>
 
-            <div id="user" style="position:absolute; top: 72mm; left:44.3mm; width: :widthuser-incident-response height: 7mm; background-color: #004B85"></div>
-            <div id="lang" style="position:absolute; top: 80mm; left:44.3mm; width: :width-incident-response height: 7mm; background-color: #00ADEE"></div>
+            <div id="user" style="position:absolute; top: 72mm; left:44.3mm; width: :widthuser-incident-response height: 7mm; background-color: #92063e"></div>
+            <div id="lang" style="position:absolute; top: 80mm; left:44.3mm; width: :width-incident-response height: 7mm; background-color: #ff5627"></div>
         </div>
         <h2>How to get ahead</h2>
         <p>

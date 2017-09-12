@@ -7,7 +7,7 @@
     	<meta name="author" content="">
 		<title>Report</title>
 		<link rel="stylesheet" href="{{session('url')}}/css/templates/normalize.css">
-		<link rel="stylesheet" href="{{session('url')}}/css/templates/bubblegum/report_{{session('product.id')}}.css">
+		<link rel="stylesheet" href="{{session('url')}}/css/templates/btmcafee/report_{{session('product.id')}}.css">
 	</head>
 	<body>
 		@if($introImage)
