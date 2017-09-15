@@ -92,7 +92,7 @@ return array(
                 ],
                 'LastName' => [
                     'type' => 'field',
-                    'name' => 'lname'
+                    'name' => 'sname'
                 ],
                 'Email' => [
                     'type' => 'field',
@@ -108,7 +108,7 @@ return array(
                 ],
                 'Phone' => [
                     'type' => 'field',
-                    'name' => 'tel'
+                    'name' => 'phone'
                 ],
                 'Country' => [
                     'type' => 'field',
