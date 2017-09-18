@@ -187,9 +187,10 @@ public function run(Request $request, $subdomain)
 
 public function getPage($subdomain, $section=false, $page=false)
 {
+
 	if($section===false || $page===false) return redirect('/');
 	$this->loadQuestions();
-
+	//dd($this->quiz);
 	if(!isset($this->quiz[$section]['pages']['page'.$page])) return redirect('/');
 
 	$data = $this->quiz[$section];
@@ -364,6 +365,7 @@ public function savePage(Request $request, $subdomain, $section=false, $page=fal
 public function getComplete(Request $request)
 {
 	$this->loadQuestions();
+	//dd($this->quiz);
 	$this->calcResults();
 	$currentLocal = App::getLocale();
 	$localQuestions = $currentLocal=='en' ? '' : $currentLocal;

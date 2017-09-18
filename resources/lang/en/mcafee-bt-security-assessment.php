@@ -98,7 +98,7 @@ return array(
         The security you deliver to the business may be perfectly functional, but it is unlikely to be in line with business objectives. For some reason, security operations are unable to influence business decisions, which means that budgets tend to be allocated on an ad hoc, or at least localised, basis with little strategic enterprisewide planning. Aligning security provision with your businesses digital transformation programmes is fundamental, and this places new demands on both the security technology deployed and the efficiency and effectiveness of operations. 
     </p>',
     'overall-weak' => '
-    <strong>Week</strong><br/>
+    <strong>Weak</strong><br/>
     <p>
         Security is likely to be regarded as a cost in your organisation. There is little strategic placement of security in the consciousness of business. How to change this? A good first step is to focus on operational effectiveness, where gains are likely in both the efficiency of processes and in achieving more predictable costs. Board influence is vital in the medium to longer term, so measuring security operations is essential in order to communicate good performance in business terms.
     </p>',
@@ -116,7 +116,7 @@ return array(
         You have started your integration journey and are seeing some benefits of automation, albeit most likely within small groups of products. The next step is a holistic integration and automation strategy, and your best approach is to select a platform that provides a wide range of easy-to-implement integrations. The greatest benefits of integration and automation come through a completely integrated architecture, but you are likely to have a security estate composed of products from multiple vendors. So an open platform architecture is essential.
     </p>',
     'integration-automation-weak' => '
-    <strong>Week</strong>
+    <strong>Weak</strong>
     <p>
         You are yet to benefit from the operational efficiency gains from integrating and then automating policy updates and remediating across your security estate. Following a best-of-breed product acquisition approach may have provided great functionality, but it is siloed and will be tough (and expensive) to integrate these disparate products. The best approach now is to settle on an open, holistic and strategic security platform, and then integrate individual products with (or retire these in favour of) those that have integration capabilities out-of-the-box.
     </p>',
