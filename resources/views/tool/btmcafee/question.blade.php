@@ -27,7 +27,6 @@
                             <h4>{{Lang::get('general.'.session('product.id').'title')}}</h4>
                         </div>
                         <div class="col-sm-8 mt--2">
-                            <!-- progressbar -->
                             <ul class="process-stepper clearfix mb--1" data-process-steps="{{ count($menu )}}">
                             @foreach ($menu as $key=>$pages)
                                 @if($pages['display'])

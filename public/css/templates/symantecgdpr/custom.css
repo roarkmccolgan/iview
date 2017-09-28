@@ -202,6 +202,15 @@ body{
 .process-stepper > li > span {
   cursor: default;
 }
+.process-stepper[data-process-steps="9"] > li {
+  width: 11.111111111%;
+}
+.process-stepper[data-process-steps="8"] > li {
+  width: 12.5%;
+}
+.process-stepper[data-process-steps="7"] > li {
+  width: 14.285714286%;
+}
 .process-stepper[data-process-steps="6"] > li {
   width: 16.666666666666667%;
 }

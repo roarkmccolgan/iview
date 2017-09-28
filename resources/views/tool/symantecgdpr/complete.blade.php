@@ -84,10 +84,11 @@
                                                             @php
                                                             switch($extraField['type']){
                                                                 case "select":
+                                                                case "multiselect":
                                                             @endphp
                                                                 <div class="input-select">
                                                                     <label>{!!trans('extra.'.$extraField['trans'])!!} {{$extraField['required'] ? '*':''}}</label>
-                                                                    <select id="{{$extraField['name']}}" name="extra[{{$extraField['name']}}]" class="form-control sel {{$extraField['required'] ? 'req':''}}">
+                                                                    <select id="{{$extraField['name']}}" {{$extraField['type'] == 'multiselect' ? 'multiple':''}} name="extra[{{$extraField['name']}}]" class="form-control sel {{$extraField['required'] ? 'req':''}}">
                                                                         <option value=""></option>
                                                                     @foreach($extraField['options'] as $optKey=>$option)
                                                                         <option value="{!!trans('extra.'.$optKey)!!}">{!!trans('extra.'.$optKey)!!}</option>

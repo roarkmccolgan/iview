@@ -119,14 +119,20 @@ Form::macro('idcBubblegumRadio', function($num,$q,$type,$page){
 			$exists = array_search($optionSet['label'], $selected);
 			$checked = $exists !== false ? 'checked':'';
 		}
+		$hint = '';
+		$hintIcon = '';
+		if(isset($optionSet['hint'])){
+			$hint = ' data-tooltip="'.$optionSet['hint'].'"';
+			$hintIcon = '<i class="icon icon--xs icon-Information"></i>';
+		}
 		
 		$disabled = ($disabled == 'disabled' && $optionSet['label']==$selected) ? '':'disabled';
 		$name = $type=='checkbox'?'answer[]':'answer';
 		$html.='
-				<div class="col-sm-12 '.$type.'_group">
+				<div'.$hint.' class="col-sm-12 '.$type.'_group">
 					<div class="input-'.$type.' std '.$checked.' mb--1">
 						<div class="inner"></div>
-						<label>'.$optionSet['label'].'</label>
+						<label>'.$optionSet['label'].' '.$hintIcon.'</label>
                         <input class="btn-q" type="'.$type.'" name="'.$name.'" value="'.$optionSet['label'].'|'.$optionSet['value'].'" id="'.$key.'-'.$q['name'].'" '.$checked.' />
                     </div>					
 				</div>';
