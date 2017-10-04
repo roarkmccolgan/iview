@@ -339,7 +339,7 @@ trait GenerateReportTrait {
 			$demographicsizeanswer = session('questions.screeners.pages.page2.questions.s2.selected');
 			
 			$demographicsizeanswer = explode('|', $demographicsizeanswer);
-			$demographicsizeanswer = str_replace([" ",","], ["-",""], $demographicsizeanswer[0]);
+			$demographicsizeanswer = strtolower(str_replace([" ",","], ["-",""], $demographicsizeanswer[0]));
 
 			$overallsizenumber = config('baseline_'.session('product.id').'.overall.benchmark-size-'.$demographicsizeanswer);
 			if($number > $overallsizenumber){
