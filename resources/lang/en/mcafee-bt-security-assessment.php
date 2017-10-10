@@ -12,7 +12,7 @@ return array(
     'complete_body' => '
         Thank you for your time. We have received your information. You will be receiving an email with your custom report momentarily.<br/>
         Please check in your junk folder if you don\'t receive it within 5 minutes.<br/><br/>
-        <a class="btn btn--primary" target="_blank" href="https://www.bt.com">
+        <a class="btn btn--primary" target="_blank" href="https://www.bt.com/security">
             Click here for more information
         </a>',
     'complete_tweet' => 'I\'ve just taken the @IDCEMEA Security Assessment Tool for @splunk. Interested? ',// http://bit.ly/2gslXEh
@@ -42,7 +42,7 @@ return array(
         </div>
         <h2>Overall Summary</h2>
         <p>
-            Compared to the best in class capabilities, your organization is:
+            Compared to the best in class capabilities, your organisation is:
         </p>
         <ul>
             <li>:overalllang</li>
@@ -102,8 +102,25 @@ return array(
     <p>
         Security is likely to be regarded as a cost in your organisation. There is little strategic placement of security in the consciousness of business. How to change this? A good first step is to focus on operational effectiveness, where gains are likely in both the efficiency of processes and in achieving more predictable costs. Board influence is vital in the medium to longer term, so measuring security operations is essential in order to communicate good performance in business terms.
     </p>',
+    'general-approach-to-it-heading' => '<h2>Improvements to Security Strategy</h2>',
     'integration-automation-heading' => '<h2>Improvements to Integration and Automation</h2>',
     'unified-heading' => '<h2>Improvements to Unified Intelligence</h2>',
+
+    'general-approach-to-it-good' => '
+    <strong>Good</strong>
+    <p>
+        You have intuitively followed a path of security product integration and are realising the benefits of this through automation. However, this is unlikely to be consistent across your entire security estate. The adoption of a holistic, open and strategic integration platform will yield benefits not just for your existing portfolio but for future product acquisitions. Furthermore, you will get even greater gains by automating policy updates and remediation across your entire estate, rather than being restricted to preintegrated products from a single vendor.
+    </p>',
+    'general-approach-to-it-moderate' => '
+    <strong>Moderate</strong>
+    <p>
+        You have started your integration journey and are seeing some benefits of automation, albeit most likely within small groups of products. The next step is a holistic integration and automation strategy, and your best approach is to select a platform that provides a wide range of easy-to-implement integrations. The greatest benefits of integration and automation come through a completely integrated architecture, but you are likely to have a security estate composed of products from multiple vendors. So an open platform architecture is essential.
+    </p>',
+    'general-approach-to-it-weak' => '
+    <strong>Weak</strong>
+    <p>
+        You are yet to benefit from the operational efficiency gains from integrating and then automating policy updates and remediating across your security estate. Following a best-of-breed product acquisition approach may have provided great functionality, but it is siloed and will be tough (and expensive) to integrate these disparate products. The best approach now is to settle on an open, holistic and strategic security platform, and then integrate individual products with (or retire these in favour of) those that have integration capabilities out-of-the-box.
+    </p>',
 
     'integration-automation-good' => '
     <strong>Good</strong>

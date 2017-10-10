@@ -426,6 +426,24 @@ trait GenerateReportTrait {
 				$customCopy = '';
 			}
 
+			//general-approach-to-it 
+			$value = session('result.general-approach-to-it.score');
+			if($value > 18.76){
+				$customCopy.= trans(session('product.alias').'.general-approach-to-it-good');
+			}
+			if($value >= 15.01 && $value <= 18.75){
+				$customCopy.= trans(session('product.alias').'.general-approach-to-it-moderate');
+			}
+			if($value <= 15){
+				$customCopy.= trans(session('product.alias').'.general-approach-to-it-weak');
+			}
+
+			if($customCopy!=''){
+				$sectionCopy.= trans(session('product.alias').'.general-approach-to-it-heading');
+				$sectionCopy.= $customCopy;
+				$customCopy = '';
+			}
+
 			//Unified Intelligence 
 			$value = session('result.unified-intelligence.score');
 			if($value > 18.76){

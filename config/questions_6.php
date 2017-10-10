@@ -271,7 +271,7 @@ return array(
                 'questions' => array(
                     's2'=>array(
                         'type'=>'button',
-                        'question'=>'How many full-time employees work at your organization worldwide?',
+                        'question'=>'How many full-time employees work at your organisation worldwide?',
                         'name'=>'s2',
                         'options'=>array(
                             array(
@@ -308,7 +308,7 @@ return array(
                 'questions' => array(
                     'q1'=>array(
                         'type'=>'slider',
-                        'question'=>'How important are the following themes in driving security spend in your organization? <br/><span class="small">Please rate each on a scale of 1 = not at all important to 5 = extremely important.</span>',
+                        'question'=>'How important are the following themes in driving security spend in your organisation? <br/><span class="small">Please rate each on a scale of 1 = not at all important to 5 = extremely important.</span>',
                         'name'=>'q1',
                         'options'=>array(
                             array(
