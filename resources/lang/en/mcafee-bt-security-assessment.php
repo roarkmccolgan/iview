@@ -87,21 +87,6 @@ return array(
         </ul>
         <div class="pb"></div>
     ',
-    'overall-good' => '
-    <strong>Good</strong><br/>
-    <p>
-        You are in a good place, but remember that security strategy is a precursor to digital risk and that business performance and innovation must always be taken into account. Security has always been balanced with usability, but this is now extended to broad business objectives. Digital transformation is chief among these, but security needs to be positioned continually as an enabler — if not an accelerator — of such initiatives. Continue to influence the board in this regard. 
-    </p>',
-    'overall-moderate' => '
-    <strong>Moderate</strong><br/>
-    <p>
-        The security you deliver to the business may be perfectly functional, but it is unlikely to be in line with business objectives. For some reason, security operations are unable to influence business decisions, which means that budgets tend to be allocated on an ad hoc, or at least localised, basis with little strategic enterprisewide planning. Aligning security provision with your businesses digital transformation programmes is fundamental, and this places new demands on both the security technology deployed and the efficiency and effectiveness of operations. 
-    </p>',
-    'overall-weak' => '
-    <strong>Weak</strong><br/>
-    <p>
-        Security is likely to be regarded as a cost in your organisation. There is little strategic placement of security in the consciousness of business. How to change this? A good first step is to focus on operational effectiveness, where gains are likely in both the efficiency of processes and in achieving more predictable costs. Board influence is vital in the medium to longer term, so measuring security operations is essential in order to communicate good performance in business terms.
-    </p>',
     'general-approach-to-it-heading' => '<h2>Improvements to Security Strategy</h2>',
     'integration-automation-heading' => '<h2>Improvements to Integration and Automation</h2>',
     'unified-heading' => '<h2>Improvements to Unified Intelligence</h2>',

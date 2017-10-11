@@ -40,7 +40,7 @@
                         <div class="row">
                             <div class="col-xs-4 col-sm-3 col-md-2">
                                 <span class="type--fine-print">{{Lang::get('general.'.session('product.id').'developedby')}}</span>
-                                <img class="footer-logo" src="{{asset('css/idc/idc-logo.svg')}}" alt="">
+                                <img class="footer-logo" src="{{asset('css/idc/idc-logo-new.svg')}}" alt="">
                             </div>
                             <div class="col-xs-3 col-xs-offset-5 col-sm-3 col-sm-offset-6 col-md-2 col-md-offset-8">
                                 <span class="type--fine-print">{{Lang::get('general.'.session('product.id').'sponsoredby')}}</span>

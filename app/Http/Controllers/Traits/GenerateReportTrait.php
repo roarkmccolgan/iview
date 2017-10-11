@@ -390,22 +390,7 @@ trait GenerateReportTrait {
 			$sectionCopy = '';
 			$customCopy = '';
 
-			//overall
-			$value = session('result.overall.score');
-			
-			if($value >75 ){
-				$customCopy.= trans(session('product.alias').'.overall-good');
-			}
-			if($value >60 &&  $value <=75){
-				$customCopy.= trans(session('product.alias').'.overall-moderate');
-			}
-			if($value <=60){
-				$customCopy.= trans(session('product.alias').'.overall-weak');
-			}
-			if($customCopy!=''){
-				$sectionCopy = $customCopy;
-				$customCopy = '';
-			}
+			//sections
 			
 
 			//Integration automation 

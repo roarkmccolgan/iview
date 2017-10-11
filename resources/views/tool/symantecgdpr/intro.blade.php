@@ -14,7 +14,7 @@
                         <div class="col-xs-12 col-sm-10 col-sm-offset-1 visible-xs mb--1 mt--1">
                             <div class="row">
                                 <div class="col-xs-4 col-sm-3 col-md-2">
-                                    <img class="footer-logo" src="{{asset('css/idc/idc-logo.svg')}}" alt="">
+                                    <img class="footer-logo" src="{{asset('css/idc/idc-logo-new.svg')}}" alt="">
                                 </div>
                                 <div class="col-xs-5 col-xs-offset-3 col-sm-3 col-sm-offset-6 col-md-3 col-md-offset-7 ">
                                     <img class="footer-logo" src="{{asset('css/'.str_slug(session('company.name')).'/'.str_slug(session('company.name')).'-logo.svg')}}" alt="">
