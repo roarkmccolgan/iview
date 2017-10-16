@@ -21,16 +21,24 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="content" class="col-sm-6 col-sm-push-5">
-                            <div class="mt--3">
-                                <h1>{{Lang::get('general.'.session('product.id').'title')}}</h1>
-                                {!!Lang::get('general.'.session('product.id').'landing')!!}
-                                <hr class="short">
-                                <a href="{{'/'.session('localeUrl').'quiz/'.Session::get('startSection').'/page1'}}" class="btn btn--lg btn--client">
-                                    <span class="btn__text">
-                                        {{Lang::get('general.'.session('product.id').'startbut')}}
-                                    </span>
-                                </a>
+                        <div id="content" class="col-sm-6 col-sm-push-5 mt--3">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h1>{{Lang::get('general.'.session('product.id').'title')}}</h1>
+                                    {!!Lang::get('general.'.session('product.id').'landing')!!}
+                                    <hr class="short">
+                                </div>
+                                <div class="col-sm-6 mt--1">
+                                    <a href="{{'/'.session('localeUrl').'quiz/'.Session::get('startSection').'/page1'}}" class="btn btn--lg btn--client">
+                                        <span class="btn__text">
+                                            {{Lang::get('general.'.session('product.id').'startbut')}}
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="col-sm-6 hidden-xs">
+                                    <span class="type--fine-print">{{Lang::get('general.'.session('product.id').'sponsoredby')}}</span>
+                                    <img class="footer-logo" src="{{asset('css/'.str_slug(session('company.name')).'/'.str_slug(session('company.name')).'-logo.svg')}}" alt="">
+                                </div>
                             </div>
                         </div>
                         <div class="col-sm-3 col-sm-pull-6 col-sm-offset-1 text-center">

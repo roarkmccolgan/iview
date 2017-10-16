@@ -54,6 +54,7 @@ return array(
                         'question'=>'Which of these GDPR-specific areas do you think your organization will need to focus on the most? <span class="small">select your top 3</span>',
                         'name'=>'q2',
                         'required'=>3,
+                        'max'=>3,
                         'options'=>array(
                             array(
                                 'label'=>'Assess and classify data appropriately',
@@ -99,9 +100,10 @@ return array(
                 'questions' => array(
                     'q3' => array(
                         'type'=>'checkbox',
-                        'question'=>'Which of the following GDPR requirements will pose the greatest challenge to your organization? <span class="small">select yout top 3</span>',
+                        'question'=>'Which of the following GDPR requirements will pose the greatest challenge to your organization? <span class="small">select your top 3</span>',
                         'name'=>'q3',
                         'required'=>3,
+                        'max'=>3,
                         'options'=>array(
                             array(
                                 'label'=>'Data portability',
@@ -163,31 +165,31 @@ return array(
                         'options'=>array(
                             array(
                                 'label'=>'Not confident at all',
-                                'hint'=>'We think we could find less than 20% of instances',
+                                'hint'=>'We could find less than 20% of instances',
                                 'value'=>1,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Low confidence',
-                                'hint'=>'We think we could find less than 40% of instances',
+                                'hint'=>'We could find more than 20% of instances',
                                 'value'=>2,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Moderate confidence',
-                                'hint'=>'We think we could find less than 60% of instances',
+                                'hint'=>'We could find more than 40% of instances',
                                 'value'=>3,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'High confidence',
-                                'hint'=>'We think we could find less than 80% of instances',
+                                'hint'=>'We could find more than 60% of instances',
                                 'value'=>4,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Completely confident',
-                                'hint'=>'We think we can find all instances',
+                                'hint'=>'We could find all instances',
                                 'value'=>5,
                                 'checked'=>false
                             )
@@ -511,9 +513,11 @@ return array(
                 'title' => 'GDPR',
                 'questions' => array(
                     'q9' => array(
-                        'type'=>'radio',
+                        'type'=>'checkbox',
                         'question'=>'Which of the following is most limiting your ability to establish full GDPR compliance across your data management environment? <span class="small">select 3</span>',
                         'name'=>'q9',
+                        'required'=>3,
+                        'max'=>3,
                         'options'=>array(
                             array(
                                 'label'=>'Lack of specific GDPR compliance knowledge or skills',

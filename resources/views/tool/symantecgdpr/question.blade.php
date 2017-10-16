@@ -259,6 +259,7 @@ var daForm = $('#msform');
 if($('.checkbox_group').length){
     var selected = 0;
     var numrequired = $('#numrequired').val();
+    var max = $('#max').val();
     $(':checkbox').change(function() {
         if(this.checked) {
             selected++;
@@ -272,7 +273,10 @@ if($('.checkbox_group').length){
         var parentHeight = sibling.css('height');
         var num = $('.checkbox_group').length;
         if(num>0){
-            if(selected>=numrequired){
+            console.log(selected);
+            console.log(numrequired);
+            console.log(max);
+            if((selected>=numrequired && max==0) || (selected>=numrequired && selected<=max) || (numrequired==1 && max===0) || (numrequired==1 && selected<=max)){
                 $('div#error').fadeOut('fast', function() {
                     this.remove();
                 });
@@ -310,15 +314,35 @@ if($('.checkbox_group').length){
 
                 @endif
 
-            }else{
+            }else if(selected>=numrequired && max!=0 && selected>max){
                 e.preventDefault();
+                var errStr = '{{trans('general.multimaxierror')}}';
+                errStr = errStr.replace('#number#', numrequired);
+                errStr = errStr.replace('#max#', max);
                 if(error==false){
+                    
                     html = 
                         '<div id="error" class="text-center" style="padding:10px 0;">'+
-                            '<span style="color: #ed2024;">{{trans('general.multierror', ['number' => '\'+numrequired+\''])}}</span>'+
+                            '<span style="color: #ed2024;">'+errStr+'</span>'+
                         '</div>';
                     $(html).hide().appendTo(sibling).fadeIn("fast");
                     error=true;
+                }else{
+                    $('#error span').text(errStr);
+                }
+            } else{
+                e.preventDefault();
+                var errStr = '{{trans('general.multierror')}}';
+                errStr = errStr.replace('#number#', numrequired);
+                if(error==false){
+                    html = 
+                        '<div id="error" class="text-center" style="padding:10px 0;">'+
+                            '<span style="color: #ed2024;">'+errStr+'</span>'+
+                        '</div>';
+                    $(html).hide().appendTo(sibling).fadeIn("fast");
+                    error=true;
+                }else{
+                    $('#error span').text(errStr);
                 }
                 
             }
