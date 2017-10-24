@@ -450,6 +450,10 @@ public function getComplete(Request $request)
 		foreach (config('baseline_'.session('product.id').'.overall.types') as $stage => $params) {
 			$val = $params[$graph['data']];
 			$stagename = trans(session('product.alias').'.'.$stage);
+			if(session('product.id')==7){ //symantec
+				$stagename = explode(": ", $stagename);
+				$stagename = $stagename[0];
+			}
 			$completeGraph->addRow([
 				$stagename,/*substr_replace($stagename, ':', strpos($stagename, ':'), 1)*/				
 				$val,
@@ -620,7 +624,7 @@ public function postComplete(SubmitAssessmentsRequest $request)
 	}
 	Mail::queue('emails.echo', $data, function ($message) use ($assessment, $subject) {
 		$message->from('notifications@mg.idcready.net', 'IDC Notifications');
-		$message->to($assessment['email'], $assessment['fname'].' '.$assessment['sname'])->bcc($bcc)->subject($subject);
+		$message->to($assessment['email'], $assessment['fname'].' '.$assessment['sname'])->bcc()->subject($subject);
 	});
 
 	//send mail to notification people
@@ -636,6 +640,13 @@ public function postComplete(SubmitAssessmentsRequest $request)
 			$emails[] = 'roarkmccolgan@gmail.com';
 		}
 	}
+	$remove = [];
+	if (Config::has('baseline_'.session('product.id').'.overall.notifications.ignoreadmin')){
+		foreach (config('baseline_'.session('product.id').'.overall.notifications.ignoreadmin') as $address) {
+			$remove[] = $address;
+		}
+	}
+	$emails = array_diff($emails, $remove);
 	$subject = $assessment->tool->company->name.' - '.$assessment->tool->title.' Assessment completed';
 	Mail::queue('emails.notification',
 		array(

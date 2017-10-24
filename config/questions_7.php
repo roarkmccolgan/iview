@@ -45,7 +45,7 @@ return array(
                         )
                     )
                 )
-            )/*,
+            ),
             'page2' => array(
                 'title' => 'GDPR',
                 'questions' => array(
@@ -53,32 +53,33 @@ return array(
                         'type'=>'checkbox',
                         'question'=>'Which of these GDPR-specific areas do you think your organization will need to focus on the most? <span class="small">select your top 3</span>',
                         'name'=>'q2',
+                        'ignore' => true,
                         'required'=>3,
                         'max'=>3,
                         'options'=>array(
                             array(
                                 'label'=>'Assess and classify data appropriately',
-                                'value'=>1.25,
+                                'value'=>0,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Identify applications which use GDPR-relevant data',
-                                'value'=>1.25,
+                                'value'=>0,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Conduct a dataflow analysis',
-                                'value'=>1.25,
+                                'value'=>0,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Review and improve identity and access management',
-                                'value'=>1.25,
+                                'value'=>0,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Establish documentation processes to comply with accountability requirements',
-                                'value'=>1.25,
+                                'value'=>0,
                                 'checked'=>false
                             ),
                             array(
@@ -94,7 +95,7 @@ return array(
                         )
                     )
                 )
-            )*/,
+            ),
             'page3' => array(
                 'title' => 'GDPR',
                 'questions' => array(
@@ -102,33 +103,34 @@ return array(
                         'type'=>'checkbox',
                         'question'=>'Which of the following GDPR requirements will pose the greatest challenge to your organization? <span class="small">select your top 3</span>',
                         'name'=>'q3',
+                        'ignore' => true,
                         'required'=>3,
                         'max'=>3,
                         'options'=>array(
                             array(
                                 'label'=>'Data portability',
                                 'hint'=>'the need to provide data in machine readable format upon request',
-                                'value'=>1.25,
+                                'value'=>0,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Service a person\'s data access request',
-                                'value'=>1.25,
+                                'value'=>0,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Data breach notification within 72 hours of discovery',
-                                'value'=>1.25,
+                                'value'=>0,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Data protection by design and by default',
-                                'value'=>1.25,
+                                'value'=>0,
                                 'checked'=>false
                             ),
                             array(
                                 'label'=>'Encryption and/or pseudonymization of data',
-                                'value'=>1.25,
+                                'value'=>0,
                                 'checked'=>false
                             ),
                             array(
@@ -201,58 +203,143 @@ return array(
                 'title' => 'GDPR',
                 'questions' => array(
                     'q5' => array(
-                        'type'=>'checkbox',
-                        'question'=>'At a high level, does your organization have insight into each of the following types of data today? <span class="small">Select all that apply</span>',
+                        'type'=>'slider',
+                        'question'=>'At a high level, does your organization have insight into each of the following types of data today?',
                         'name'=>'q5',
-                        'calc'=>array(
-                            'type'=>'average',
-                            'value'=>false
-                        ),
                         'options'=>array(
                             array(
                                 'label'=>'We know our structured information',
-                                'hint'=>'databases, data warehouses, content management systems',
-                                'value'=>3,
-                                'checked'=>false
+                                'hint'=>'(databases, data warehouses, content management systems)',
+                                'name'=>'q5.1',
+                                'options'=>array(
+                                    array(
+                                        'label'=>'Yes',
+                                        'value'=>3,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'No',
+                                        'value'=>1,
+                                        'checked'=>false,
+                                    )
+                                )
                             ),
-                            array(
+                           array(
                                 'label'=>'We know our unstructured information',
                                 'hint'=>'(files, folders, workbooks, documents, email, etc.)',
-                                'value'=>4,
-                                'checked'=>false
+                                'name'=>'q5.2',
+                                'options'=>array(
+                                    array(
+                                        'label'=>'Yes',
+                                        'value'=>4,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'No',
+                                        'value'=>2,
+                                        'checked'=>false,
+                                    )
+                                )
                             ),
-                            array(
+                           array(
                                 'label'=>'We know our irrelevant data',
-                                'hint'=>'data without any business value, redundant, obsolete, trivial',
-                                'value'=>4,
-                                'checked'=>false
+                                'hint'=>'(data without any business value, redundant, obsolete, trivial)',
+                                'name'=>'q5.3',
+                                'options'=>array(
+                                    array(
+                                        'label'=>'Yes',
+                                        'value'=>4,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'No',
+                                        'value'=>2,
+                                        'checked'=>false,
+                                    )
+                                )
                             ),
-                            array(
+                           array(
                                 'label'=>'We know who owns data and who can access it',
-                                'value'=>3,
-                                'checked'=>false
+                                'name'=>'q5.4',
+                                'options'=>array(
+                                    array(
+                                        'label'=>'Yes',
+                                        'value'=>3,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'No',
+                                        'value'=>1,
+                                        'checked'=>false,
+                                    )
+                                )
                             ),
-                            array(
+                           array(
                                 'label'=>'We know how long we need to keep data',
-                                'value'=>3,
-                                'checked'=>false
+                                'name'=>'q5.5',
+                                'options'=>array(
+                                    array(
+                                        'label'=>'Yes',
+                                        'value'=>3,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'No',
+                                        'value'=>1,
+                                        'checked'=>false,
+                                    )
+                                )
                             ),
-                            array(
+                           array(
                                 'label'=>'We know when we need to/can delete data',
-                                'value'=>4,
-                                'checked'=>false
+                                'name'=>'q5.6',
+                                'options'=>array(
+                                    array(
+                                        'label'=>'Yes',
+                                        'value'=>4,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'No',
+                                        'value'=>1,
+                                        'checked'=>false,
+                                    )
+                                )
                             ),
-                            array(
+                           array(
                                 'label'=>'We know which regulation applies to special categories of data',
-                                'value'=>4,
-                                'checked'=>false
+                                'name'=>'q5.7',
+                                'options'=>array(
+                                    array(
+                                        'label'=>'Yes',
+                                        'value'=>4,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'No',
+                                        'value'=>2,
+                                        'checked'=>false,
+                                    )
+                                )
                             ),
-                            array(
+                           array(
                                 'label'=>'We understand all the copies we have of our personal data',
-                                'hint'=>'in backup, in test/dev, in disaster recovery site, on mobile devices, in the cloud',
-                                'value'=>5,
-                                'checked'=>false
-                            )
+                                'hint'=>'(in backup, in test/dev, in disaster recovery site, on mobile devices, in the cloud)',
+                                'name'=>'q5.8',
+                                'options'=>array(
+                                    array(
+                                        'label'=>'Yes',
+                                        'value'=>5,
+                                        'checked'=>false,
+                                    ),
+                                    array(
+                                        'label'=>'No',
+                                        'value'=>2,
+                                        'checked'=>false,
+                                    )
+                                )
+                            ),
+                           
                         )
                     )
                 )
@@ -261,8 +348,8 @@ return array(
                 'title' => 'GDPR',
                 'questions' => array(
                     'q6' => array(
-                        'type'=>'checkbox',
-                        'question'=>'After assessing the GDPR compliance of cloud services, what effect do you think GDPR will have on your use of cloud services? <span class="small">Choose 1</span>',
+                        'type'=>'radio',
+                        'question'=>'After assessing the GDPR compliance of cloud services, what effect do you think GDPR will have on your use of cloud services?',
                         'name'=>'q6',
                         'required' > 1,
                         'options'=>array(
@@ -283,7 +370,7 @@ return array(
                             ),
                             array(
                                 'label'=>'We don\'t use cloud services',
-                                'value'=>1,
+                                'value'=>2,
                                 'checked'=>false
                             ),
                             array(
@@ -307,6 +394,7 @@ return array(
                         'type'=>'button',
                         'question'=>'Regarding leadership of your GDPR programme, has your organisation established a cross-functional compliance taskforce or governance board that involves GRC, IT, and operational stakeholders?',
                         'name'=>'q7',
+                        'ignore' => true,
                         'options'=>array(
                             array(
                                 'label'=>'Yes – fully established',
@@ -348,27 +436,27 @@ return array(
                                 'options'=>array(
                                     array(
                                         'label'=>'1',
-                                        'value'=>0.22,
+                                        'value'=>1,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'2',
-                                        'value'=>0.44,
+                                        'value'=>2,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'3',
-                                        'value'=>0.67,
+                                        'value'=>3,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'4',
-                                        'value'=>0.89,
+                                        'value'=>4,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'5',
-                                        'value'=>1.11,
+                                        'value'=>5,
                                         'checked'=>false,
                                     )
                                 )
@@ -381,27 +469,27 @@ return array(
                                 'options'=>array(
                                     array(
                                         'label'=>'1',
-                                        'value'=>0.22,
+                                        'value'=>1,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'2',
-                                        'value'=>0.44,
+                                        'value'=>2,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'3',
-                                        'value'=>0.67,
+                                        'value'=>3,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'4',
-                                        'value'=>0.89,
+                                        'value'=>4,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'5',
-                                        'value'=>1.11,
+                                        'value'=>5,
                                         'checked'=>false,
                                     )
                                 )
@@ -414,27 +502,27 @@ return array(
                                 'options'=>array(
                                     array(
                                         'label'=>'1',
-                                        'value'=>0.22,
+                                        'value'=>1,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'2',
-                                        'value'=>0.44,
+                                        'value'=>2,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'3',
-                                        'value'=>0.67,
+                                        'value'=>3,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'4',
-                                        'value'=>0.89,
+                                        'value'=>4,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'5',
-                                        'value'=>1.11,
+                                        'value'=>5,
                                         'checked'=>false,
                                     )
                                 )
@@ -447,27 +535,27 @@ return array(
                                 'options'=>array(
                                     array(
                                         'label'=>'1',
-                                        'value'=>0.22,
+                                        'value'=>1,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'2',
-                                        'value'=>0.44,
+                                        'value'=>2,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'3',
-                                        'value'=>0.67,
+                                        'value'=>3,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'4',
-                                        'value'=>0.89,
+                                        'value'=>4,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'5',
-                                        'value'=>1.11,
+                                        'value'=>5,
                                         'checked'=>false,
                                     )
                                 )
@@ -480,27 +568,27 @@ return array(
                                 'options'=>array(
                                     array(
                                         'label'=>'1',
-                                        'value'=>0.22,
+                                        'value'=>1,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'2',
-                                        'value'=>0.44,
+                                        'value'=>2,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'3',
-                                        'value'=>0.67,
+                                        'value'=>3,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'4',
-                                        'value'=>0.89,
+                                        'value'=>4,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'5',
-                                        'value'=>1.11,
+                                        'value'=>5,
                                         'checked'=>false,
                                     )
                                 )

@@ -457,6 +457,167 @@ class PdfController extends Controller
 			$vars['introImage'] = Lang::has(session('product.alias').'.introduction-image') ? trans(session('product.alias').'.introduction-image') : false;
 			$vars['introRating'] = trans(session('product.alias').'.'.session('result.overall.rating'));
 			$vars['questions'] = session('questions');
+		}elseif(session('product.id')==7) {
+			$widthstage = [13, 38, 65, 90, 118];
+			$sectionVars = [];
+
+			foreach (config('baseline_'.session('product.id')) as $section => $values) {
+				if($section!=='overall'){
+					preg_match_all('/\d+/', session('result.'.$section.'.rating'), $matches);
+					$sectionnumber =  (int)$matches[0][0];
+					$sectionwidthuser = $widthstage[$sectionnumber-1];
+					$widthsection = $widthstage[$values['benchmark-country-'.$region]-1];
+
+					$sectionVars[] = [
+						'widthuser' => $sectionwidthuser,
+						'width' => $widthsection,
+						'rating' => trans(session('product.alias').'.'.session('result.'.$section.'.rating')),
+						'score' => session('result.'.$section.'.score'),
+					];
+				}
+			}
+
+
+			//User overall stage number and ordinal
+			preg_match_all('/\d+/', session('result.overall.rating'), $matches);
+			$number =  (int)$matches[0][0];
+			$ends = array('th','st','nd','rd','th','th','th','th','th','th');
+			if (($number %100) >= 11 && ($number%100) <= 13){
+			   $ordinal = 'th';
+			}
+			else{
+			   $ordinal = $ends[$number % 10];
+			}
+
+			//country benchmark by language
+			$overallcountrynumber = config('baseline_'.session('product.id').'.overall.benchmark-country-'.$region);
+
+			if($number > $overallcountrynumber){
+				$overalllang = $number-$overallcountrynumber.' '.str_plural('level', $number-$overallcountrynumber).' ahead of the global leaders';
+			}elseif($number == $overallcountrynumber){
+				$overalllang = 'Inline with the global leaders';
+			}else{
+				$overalllang = $overallcountrynumber-$number.' '.str_plural('level', $overallcountrynumber-$number).' behind the global leaders';
+			}
+
+			//company size benchmark by language
+			$demographicsizeanswer = session('questions.screeners.pages.page2.questions.s2.selected');
+			
+			$demographicsizeanswer = explode('|', $demographicsizeanswer);
+			$demographicsizeanswer = str_replace([" ",","], ["-",""], $demographicsizeanswer[0]);
+
+			$overallsizenumber = config('baseline_'.session('product.id').'.overall.benchmark-size-'.$demographicsizeanswer);
+			if($number > $overallsizenumber){
+				$overallsize = $number-$overallsizenumber.' '.str_plural('level', $number-$overallsizenumber).' ahead of the leaders in companies of the same size';
+			}elseif($number == $overallsizenumber){
+				$overallsize = 'Inline with the leaders in companies of the same size';
+			}else{
+				$overallsize = $overallsizenumber-$number.' '.str_plural('level', $overallsizenumber-$number).' behind the leaders in companies of the same size';
+			}
+
+			//bar widths
+			$widthuser = $widthstage[$number-1];
+			$widthlang = $widthstage[$overallcountrynumber-1];
+			$widthsize = $widthstage[$overallsizenumber-1];
+
+
+
+			$vars['introduction'] = trans(session('product.alias').'.introduction',
+				[
+					'result'=>trans(session('product.alias').'.'.session('result.overall.rating')),
+					'percent'=>config('baseline_'.session('product.id').'.overall.types.'.session('result.overall.rating').'.benchmark'),
+					'ordinal'=>$ordinal,
+					'number'=>$number,
+					'stage'=>$number,
+					'overalllang'=>$overalllang,
+					'overallsize'=>$overallsize,
+					'widthuser' => $widthuser.'mm;',
+					'widthlang' => $widthlang.'mm;',
+					'widthsize' => $widthsize.'mm;',
+					'widthuser-security-strategy' => $sectionVars[0]['widthuser'].'mm;',
+					'width-security-strategy' => $sectionVars[0]['width'].'mm;',
+					'security-strategy-rating' => $sectionVars[0]['rating'],
+					'security-strategy-score' => $sectionVars[0]['score'],
+
+					'widthuser-incident-detection' => $sectionVars[1]['widthuser'].'mm;',
+					'width-incident-detection' => $sectionVars[1]['width'].'mm;',
+					'incident-detection-rating' => $sectionVars[1]['rating'],
+					'incident-detection-score' => $sectionVars[1]['score'],
+
+					'widthuser-incident-response' => $sectionVars[2]['widthuser'].'mm;',
+					'width-incident-response' => $sectionVars[2]['width'].'mm;',
+					'incident-response-rating' => $sectionVars[2]['rating'],
+					'incident-response-score' => $sectionVars[2]['score'],
+
+				]
+			);
+
+			$sectionCopy = '';
+			$customCopy = '';
+
+			//overall
+			$value = session('result.overall.score');
+			
+			if($value >75 ){
+				$customCopy.= trans(session('product.alias').'.overall-good');
+			}
+			if($value >60 &&  $value <=75){
+				$customCopy.= trans(session('product.alias').'.overall-moderate');
+			}
+			if($value <=60){
+				$customCopy.= trans(session('product.alias').'.overall-weak');
+			}
+			if($customCopy!=''){
+				$sectionCopy = $customCopy;
+				$customCopy = '';
+			}
+			
+
+			//Integration automation 
+			$value = session('result.integration.score') + session('result.automation.score');
+			if($value > 37.52){
+				$customCopy.= trans(session('product.alias').'.integration-automation-good');
+			}
+			if($value >= 22.51 && $value <= 30){
+				$customCopy.= trans(session('product.alias').'.integration-automation-moderate');
+			}
+			if($value <= 22.50){
+				$customCopy.= trans(session('product.alias').'.integration-automation-weak');
+			}
+
+			if($customCopy!=''){
+				$sectionCopy.= trans(session('product.alias').'.integration-automation-heading');
+				$sectionCopy.= $customCopy;
+				$customCopy = '';
+			}
+
+			//Unified Intelligence 
+			$value = session('result.unified-intelligence.score');
+			if($value > 18.76){
+				$customCopy.= trans(session('product.alias').'.unified-good');
+			}
+			if($value >= 15.01 && $value <= 18.75){
+				$customCopy.= trans(session('product.alias').'.unified-moderate');
+			}
+			if($value <= 15){
+				$customCopy.= trans(session('product.alias').'.unified-weak');
+			}
+
+			if($customCopy!=''){
+				$sectionCopy.= trans(session('product.alias').'.unified-heading');
+				$sectionCopy.= $customCopy;
+				$customCopy = '';
+			}
+
+			//here
+
+			$vars['sectionCopy'] = $sectionCopy;
+			
+			//$vars['summary'] = trans(session('product.alias').'.summary');;
+
+			$vars['introImage'] = Lang::has(session('product.alias').'.introduction-image') ? trans(session('product.alias').'.introduction-image') : false;
+			$vars['introRating'] = trans(session('product.alias').'.'.session('result.overall.rating'));
+			$vars['questions'] = session('questions');
 		}else{
 			foreach (config('baseline_'.session('product.id')) as $section => $values) {
 				if(config('baseline_'.session('product.id').'.'.$section.'.report-settings.graph')){

@@ -3,11 +3,11 @@
 return array(
     'title' => 'Symantec GDPR Assessment',
     'sub-title' => 'Your businesses\' GDPR readiness',
-    'stage1' => 'Stage 1: Poor',
-    'stage2' => 'Stage 2: Standard',
-    'stage3' => 'Stage 3: Good',
-    'stage4' => 'Stage 4: Aspirational',
-    'stage5' => 'Stage 5: Best',
+    'stage1' => 'Stage 1: Time to Initiate',
+    'stage2' => 'Stage 2: Time to Accelerate',
+    'stage3' => 'Stage 3: Time to Something',
+    'stage4' => 'Stage 4: Time to Optimize',
+    'stage5' => 'Stage 5: Time to Chill',
     'complete_thankyou' => 'Thank you :Fname,',
     'complete_body' => '
         Your custom report will arrive in your inbox soon.<br/>
@@ -28,13 +28,10 @@ return array(
     'introduction' => '
         <h2>Overall Results</h2>
         <p>
-            Based on your responses, you are placed within <strong>:percent</strong>% of companies overall in the readiness group of <strong>:result</strong>, which is the <strong>:number:ordinal</strong> level out of five.
+            Based on IDC\'s assessment, your organisation is at <strong>:result</strong> in terms of its overall readiness to address GDPR.
         </p>
-        <div style="position: relative; width: 170mm; height: 80mm; background: url(http://security.idcready.net/images/tools/5/overall_graph_bg.svg); background-size: 170mm 80mm;">
-            <div id="user" style="position:absolute; top: 24.694mm; left:40.5mm; width: :widthuser height: 7mm; background-color: #004B85"></div>
-            <div id="lang" style="position:absolute; top: 33mm; left:40.5mm; width: :widthlang height: 7mm; background-color: #00ADEE"></div>
-            <div id="user" style="position:absolute; top: 49mm; left:40.5mm; width: :widthuser height: 7mm; background-color: #004B85"></div>
-            <div id="size" style="position:absolute; top: 57mm; left:40.5mm; width: :widthsize height: 7mm; background-color: #00ADEE"></div>
+        <div style="position: relative; width: 170mm; height: 112mm; background: url(http://symantecgdpr.idcready.net/images/tools/7/maturity.svg); background-size: 170mm 112mm;">
+            
         </div>
         <h2>Overall Summary</h2>
         <p>

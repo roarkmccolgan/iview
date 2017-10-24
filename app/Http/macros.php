@@ -210,10 +210,15 @@ Form::macro('idcBubblegumGroup', function($section,$q,$page,$type,$slider=false,
 				<ul>';
 	foreach ($q['options'] as $key => $optionSet) {
 			$style = $slider ? 'style="line-height: 1.2em; width:'.(99/count($optionSet['options'])).'%"':'';
+			$hint = '';
+			$hintIcon = '';
+			if(isset($optionSet['hint'])){
+				$hint = ' <span>'.$optionSet['hint'].'</span>';
+			}
 			$html.='
 					<li>
 						<div class="col-md-12 groupcheck mb--1">
-							<h4 class="color--primary '.$margin.'">'.$optionSet['label'].'</h4>
+							<h4 class="color--primary '.$margin.'">'.$optionSet['label'].$hint.'</h4>
 							<fieldset>';
 			foreach ($optionSet['options'] as $setkey => $option) {
 				$checked = ($selected[$optionSet['name']][0]==$option['label'].'|'.$option['value']) ? 'checked':'';

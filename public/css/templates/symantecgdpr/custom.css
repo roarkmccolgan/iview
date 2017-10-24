@@ -315,6 +315,12 @@ footer.footer-7{
 .optionslider .groupcheck h4{
 	min-height: 64px;
 }
+.optionslider .groupcheck h4 span{
+	display: block;
+	color: #AAAAAA;
+	line-height: 1;
+	font-size: .8em;
+}
 .unslider-nav ol {
   list-style: none;
   text-align: center;
