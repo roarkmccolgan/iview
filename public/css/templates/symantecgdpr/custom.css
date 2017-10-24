@@ -247,6 +247,19 @@ body{
 .bg--dark .process-stepper li:not(.active):after {
   background: #585858;
 }
+.input-select.multiselect:after {
+    position: absolute;
+    display: none;
+    right: 0;
+    height: 100%;
+    top: 0;
+    font-size: 30px;
+    content: '\2263';
+    pointer-events: none;
+    padding: 0 13px;
+    border-left: 1px solid #ececec;
+    line-height: 31px;
+}
 .input-radio--innerlabel.w60 {
 	width: 60%;
 }

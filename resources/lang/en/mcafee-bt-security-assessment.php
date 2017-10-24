@@ -172,8 +172,8 @@ return array(
         'stage3'=>'',
         'stage4'=>''
     ),
-    'security-strategy' => array(
-        'title'=>'Security Strategy',
+    'general-approach-to-it' => array(
+        'title'=>'Approach to IT',
         'image'=>'security-strategy.jpg',
         'pb'=>'pb',
         'stage1'=>'',
@@ -182,8 +182,8 @@ return array(
         'stage4'=>'',
         'stage5'=>''
     ),
-    'incident-detection' => array(
-        'title'=> 'Data rights and standards',
+    'integration' => array(
+        'title'=> 'Integration',
         'image'=>'incident-detection.jpg',
         'pb'=>'pb',
         'stage1'=>'',
@@ -192,8 +192,18 @@ return array(
         'stage4'=>'',
         'stage5'=>''
     ),
-    'incident-response' => array(
-        'title'=> 'incident-response',
+    'automation' => array(
+        'title'=> 'Automation',
+        'image'=>'incident-response.jpg',
+        'pb'=>'pb',
+        'stage1'=>'',
+        'stage2'=>'',
+        'stage3'=>'',
+        'stage4'=>'',
+        'stage5'=>''
+    ),
+    'unified-intelligence' => array(
+        'title'=> 'Unified Intelligence',
         'image'=>'incident-response.jpg',
         'pb'=>'pb',
         'stage1'=>'',

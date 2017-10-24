@@ -611,10 +611,16 @@ public function postComplete(SubmitAssessmentsRequest $request)
 	];
 	$data['html'] =  View::make('emails.download', $viewData)->render();
 
-	//send mail to user
+	//send mail to user (and BCC if exists)
+	$bcc = [];
+	if (Config::has('baseline_'.session('product.id').'.overall.notifications.bccreports')){
+		foreach (config('baseline_'.session('product.id').'.overall.notifications.bccreports') as $address) {
+			$bcc[] = $address;
+		}
+	}
 	Mail::queue('emails.echo', $data, function ($message) use ($assessment, $subject) {
 		$message->from('notifications@mg.idcready.net', 'IDC Notifications');
-		$message->to($assessment['email'], $assessment['fname'].' '.$assessment['sname'])->subject($subject);
+		$message->to($assessment['email'], $assessment['fname'].' '.$assessment['sname'])->bcc($bcc)->subject($subject);
 	});
 
 	//send mail to notification people

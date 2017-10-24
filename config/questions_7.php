@@ -45,7 +45,7 @@ return array(
                         )
                     )
                 )
-            ),
+            )/*,
             'page2' => array(
                 'title' => 'GDPR',
                 'questions' => array(
@@ -94,7 +94,7 @@ return array(
                         )
                     )
                 )
-            ),
+            )*/,
             'page3' => array(
                 'title' => 'GDPR',
                 'questions' => array(

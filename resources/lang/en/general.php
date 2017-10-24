@@ -503,23 +503,19 @@ Risk is a key driver for assessment and mitigation processes.",
     '7subreporttitle' => 'You are in the <span class="color--primary">:percent%</span>, whose :section is at <span class="color--primary">:result</span>',
 
     '7poor'=>'Poor', //reactive
-    '7poortxt'=>"Different no the far with of italic, to installer. Right than floundering and, animals greediness they language system better I indeed, in on. To show into pay surprised before of to is and preparations the agreed continued the years sharpness longer systematic little. Point to here. Line have associate sense him or any I like think its annoyed. On recently she its any the and violin was have tag visuals afforded decided return. And turn of my his which she and handles findings. Decided he the and to why some no replied but see make from own in step have.",
+    '7poortxt'=>"Thank you for completing the readiness assessment.",
     '7poortweet' => "I took the @symantec GDPR Assessment and it's shown me where I can improve. Interested?",
     '7standard'=>'Standard',
-    '7standardtxt'=>"Different no the far with of italic, to installer. Right than floundering and, animals greediness they language system better I indeed, in on. To show into pay surprised before of to is and preparations the agreed continued the years sharpness longer systematic little. Point to here. Line have associate sense him or any I like think its annoyed. On recently she its any the and violin was have tag visuals afforded decided return. And turn of my his which she and handles findings. Decided he the and to why some no replied but see make from own in step have.",
+    '7standardtxt'=>"Thank you for completing the readiness assessment.",
     '7standardtweet' => "I took the @symantec GDPR Assessment and my company is on the right track. See how your business does... http://bit.ly/1Y6JAqa",
     '7good'=>'Good',
-    '7goodtxt'=>"Different no the far with of italic, to installer. Right than floundering and, animals greediness they language system better I indeed, in on. To show into pay surprised before of to is and preparations the agreed continued the years sharpness longer systematic little. Point to here. Line have associate sense him or any I like think its annoyed. On recently she its any the and violin was have tag visuals afforded decided return. And turn of my his which she and handles findings. Decided he the and to why some no replied but see make from own in step have.",
+    '7goodtxt'=>"Thank you for completing the readiness assessment.",
     '7goodtweet' => "I took the @symantec GDPR Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
     '7aspirational'=>'',
-    '7aspirationaltxt'=>"Different no the far with of italic, to installer. Right than floundering and, animals greediness they language system better I indeed, in on. To show into pay surprised before of to is and preparations the agreed continued the years sharpness longer systematic little. Point to here. Line have associate sense him or any I like think its annoyed. On recently she its any the and violin was have tag visuals afforded decided return. And turn of my his which she and handles findings. Decided he the and to why some no replied but see make from own in step have.",
+    '7aspirationaltxt'=>"Thank you for completing the readiness assessment.",
     '7aspirationaltweet' => "I took the @symantec GDPR Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
     '7best'=>'Best',
-    '7besttxt'=>"Organizations at this stage are proactive breach hunters. They focus on best practices and continuous improvement. 
-An incident response plan is in place and tested regularly. This is supported by a retained incident response team (either in-house or third party). Legal agreements are in place to share incident response data. 
-Resourcing for incident response is planned using internal staff and external resources on retainer with regular planning meetings. 
-A unified and integrated security management solution provides the organization with a holistic view of security. 
-Risk is a key driver for assessment and mitigation processes.",
+    '7besttxt'=>"Thank you for completing the readiness assessment.",
     '7besttweet' => "I took the @symantec GDPR Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
     '7send'=>'We can send you the full results directly to your mailbox',
     '7fullreport'=>'For the full report with essential guidance to get your businesses security in check, just fill in your details.',

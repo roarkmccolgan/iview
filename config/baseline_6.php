@@ -71,6 +71,11 @@ return array(
             )
         ),
         'tweet' => false,
+        'include_answers_in_download_report' => true,
+        'notifications' => [
+            'bccreports' => ['ftang@idc.com'],
+            'ignoreadmin' => ['tara.burton@bt.com','wendy_francis@mcafee.com'],
+        ],
     ),
     'general-approach-to-it' => array(
         'baseline' => 3.11,

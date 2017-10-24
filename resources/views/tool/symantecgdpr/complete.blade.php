@@ -33,11 +33,10 @@
                                 </div>
                                 @columnchart('overall_graph', 'overall-graph')
                             @endif
-                            <p class="mt--1">{{$sub1}}</p>
-                            <hr class="short">
-                            <p>
+                            <p class="mt--1">{{$sub1}}<br/>
                                 {!!trans('general.'.session('product.id').'fullreport')!!}
                             </p>
+                            <hr class="short">
                             <div class="row">
                                 <div class="col-sm-12">
                                     <div class="row">
@@ -86,10 +85,10 @@
                                                                 case "select":
                                                                 case "multiselect":
                                                             @endphp
-                                                                <div class="input-select">
+                                                                <div class="input-select {{$extraField['type']}}">
                                                                     <label>{!!trans('extra.'.$extraField['trans'])!!} {{$extraField['required'] ? '*':''}}</label>
-                                                                    <select id="{{$extraField['name']}}" {{$extraField['type'] == 'multiselect' ? 'multiple':''}} name="extra[{{$extraField['name']}}]" class="form-control sel {{$extraField['required'] ? 'req':''}}">
-                                                                        <option value=""></option>
+                                                                    <select id="{{$extraField['name']}}" {{$extraField['type'] == 'multiselect' ? 'multiple':''}} name="extra[{{$extraField['name']}}]" class="form-control sel {{$extraField['required'] ? 'req':''}}" style="margin-top: 0.46428571em;">
+                                                                        @if($extraField['type']=='select')<option value=""></option>@endif
                                                                     @foreach($extraField['options'] as $optKey=>$option)
                                                                         <option value="{!!trans('extra.'.$optKey)!!}">{!!trans('extra.'.$optKey)!!}</option>
                                                                     @endforeach
