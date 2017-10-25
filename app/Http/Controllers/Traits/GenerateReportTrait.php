@@ -456,6 +456,251 @@ trait GenerateReportTrait {
 			$vars['introImage'] = Lang::has(session('product.alias').'.introduction-image') ? trans(session('product.alias').'.introduction-image') : false;
 			$vars['introRating'] = trans(session('product.alias').'.'.session('result.overall.rating'));
 			$vars['questions'] = session('questions');
+		}elseif(session('product.id')==7){
+			//User overall stage number and ordinal
+			preg_match_all('/\d+/', session('result.overall.rating'), $matches);
+			$number =  (int)$matches[0][0];
+			$ends = array('th','st','nd','rd','th','th','th','th','th','th');
+			if (($number %100) >= 11 && ($number%100) <= 13){
+			   $ordinal = 'th';
+			}
+			else{
+			   $ordinal = $ends[$number % 10];
+			}
+
+
+			$vars['introduction'] = trans(session('product.alias').'.introduction',
+				[
+					'result'=>trans(session('product.alias').'.'.session('result.overall.rating')),
+				]
+			);
+
+			$sectionCopy = '';
+			$customCopy = '';
+
+			//overall
+			$value = session('result.overall.score');
+
+			$q1 = $this->getQuestionScore(1, 'gdpr');
+			$q7 = $this->getQuestionScore(7, 'gdpr');
+
+			$customCopy.= trans(session('product.alias').'.overallintro');
+			//stage 1
+			if($q1+$q7 < 5){
+				$customCopy.= trans(session('product.alias').'.overallstage1');
+				if($q1==1 || $q1==2){
+					$customCopy.= trans(session('product.alias').'.overallstage1_q1aorb');
+				}
+				if($q7==4){
+					$customCopy.= trans(session('product.alias').'.overallstage1_q9a');
+				}
+				if($q7==3){
+					$customCopy.= trans(session('product.alias').'.overallstage1_q9b');
+				}
+			}
+
+			//stage 2
+			if($q1+$q7 == 5 || $q1+$q7 == 6 || $q1+$q7 == 7){
+				$customCopy.= trans(session('product.alias').'.overallstage2');
+				if($q1==3 || $q1==4){
+					$customCopy.= trans(session('product.alias').'.overallstage2_q2cord');
+				}
+				if($q7==4){
+					$customCopy.= trans(session('product.alias').'.overallstage2_q9a');
+				}
+				if($q7==3){
+					$customCopy.= trans(session('product.alias').'.overallstage2_q9b');
+				}
+			}
+
+			//stage 4
+			if($q1+$q7 > 7){
+				$customCopy.= trans(session('product.alias').'.overallstage4');
+
+				if($q1==5){
+					$customCopy.= trans(session('product.alias').'.overallstage4_q2eforg');
+				}
+				if($q7==4){
+					$customCopy.= trans(session('product.alias').'.overallstage4_q9a');
+				}
+				if($q7==3){
+					$customCopy.= trans(session('product.alias').'.overallstage4_q9b');
+				}
+			}
+			$customCopy.= '<div class="pb"></div>';
+			$customCopy.= '<div class="spacer"></div>';
+
+			//Data Awareness
+			$q4 = $this->getQuestionScore(4, 'gdpr');
+			$q5 = $this->getQuestionScore(5, 'gdpr');
+
+			$customCopy.= trans(session('product.alias').'.dataawarenessintro');
+
+			if($q4+$q5 < 20){
+				$customCopy.= trans(session('product.alias').'.dataawarenessstage1');
+
+				if($q4==1 || $q4==2){
+					$customCopy.= trans(session('product.alias').'.dataawarenessstage1_q5aorb');
+				}
+				if($q4==3 || $q4==4){
+					$customCopy.= trans(session('product.alias').'.dataawarenessstage1_q5cord');
+				}
+				if($q5<18){
+					$customCopy.= trans(session('product.alias').'.dataawarenessstage1_q6lt18');
+				}
+				if($q5>18 && $q5<=24){
+					$customCopy.= trans(session('product.alias').'.dataawarenessstage1_q618to24');
+				}
+			}
+
+			if($q4+$q5 > 20 && $q4+$q5 <= 25){
+				$customCopy.= trans(session('product.alias').'.dataawarenessstage2');
+
+				if($q4==1 || $q4==2){
+					$customCopy.= trans(session('product.alias').'.dataawarenessstage2_q5aorb');
+				}
+				if($q4==3 || $q4==4){
+					$customCopy.= trans(session('product.alias').'.dataawarenessstage2_q5cord');
+				}
+				if($q4==5){
+					$customCopy.= trans(session('product.alias').'.dataawarenessstage2_q5e');
+				}
+				if($q5>18 && $q5<=24){
+					$customCopy.= trans(session('product.alias').'.dataawarenessstage2_q618to24');
+				}
+				if($q5>24){
+					$customCopy.= trans(session('product.alias').'.dataawarenessstage2_q6gt24');
+				}
+			}
+
+			if($q4+$q5 > 25){
+				$customCopy.= trans(session('product.alias').'.dataawarenessstage4');
+
+				if($q4==3 || $q4==4){
+					$customCopy.= trans(session('product.alias').'.dataawarenessstage4_q5cord');
+				}
+				if($q4==5){
+					$customCopy.= trans(session('product.alias').'.dataawarenessstage4_q5e');
+				}
+				if($q5>24){
+					$customCopy.= trans(session('product.alias').'.dataawarenessstage4_q6gt24');
+				}
+			}
+			$customCopy.= '<div class="pb"></div>';
+			$customCopy.= '<div class="spacer"></div>';
+
+			//Risk
+			$q6 = $this->getQuestionScore(6, 'gdpr');
+			$q8 = $this->getQuestionScore(8, 'gdpr');
+			$q9 = $this->getQuestionScore(9, 'gdpr');
+
+			$customCopy.= trans(session('product.alias').'.riskintro');
+
+			if($q6+$q8 < 14){
+				$customCopy.= trans(session('product.alias').'.riskstage1');
+
+				if($q6<9){
+					$customCopy.= trans(session('product.alias').'.riskstage1_q7lt9');
+				}
+				if($q6==9 || $q6==10){
+					$customCopy.= trans(session('product.alias').'.riskstage1_q79or10');
+				}
+				/*if($q8==2){
+					$customCopy.= trans(session('product.alias').'.riskstage1_q82');
+				}
+				if($q8==3){
+					$customCopy.= trans(session('product.alias').'.riskstage1_q83');
+				}*/
+				if($q8<15){
+					$customCopy.= trans(session('product.alias').'.riskstage1_q10lt15');
+				}
+				if($q8>28){
+					$customCopy.= trans(session('product.alias').'.riskstage1_q10gt28');
+				}
+
+				if($q9==2){
+					$customCopy.= trans(session('product.alias').'.riskstage1_q112');
+				}
+				if($q9==3){
+					$customCopy.= trans(session('product.alias').'.riskstage1_q113');
+				}
+				if($q9==4){
+					$customCopy.= trans(session('product.alias').'.riskstage1_q114');
+				}
+				
+			}
+
+			if($q6+$q8 > 14 && $q6+$q8 <= 17){
+				$customCopy.= trans(session('product.alias').'.riskstage2');
+
+				if($q6==9 || $q6==10){
+					$customCopy.= trans(session('product.alias').'.riskstage2_q79or10');
+				}
+				if($q6>10){
+					$customCopy.= trans(session('product.alias').'.riskstage2_q7gt10');
+				}
+				/*if($q8==3){
+					$customCopy.= trans(session('product.alias').'.riskstage2_q83');
+				}
+				if($q8==4){
+					$customCopy.= trans(session('product.alias').'.riskstage2_q84');
+				}*/
+				if($q8>28){
+					$customCopy.= trans(session('product.alias').'.riskstage2_q10gt28');
+				}
+				if($q8>=15 && $q8<=27){
+					$customCopy.= trans(session('product.alias').'.riskstage2_q10between15and27');
+				}
+				if($q9==3){
+					$customCopy.= trans(session('product.alias').'.riskstage2_q113');
+				}
+				if($q9==4){
+					$customCopy.= trans(session('product.alias').'.riskstage2_q114');
+				}
+			}
+
+			if($q6+$q8 > 17){
+				$customCopy.= trans(session('product.alias').'.riskstage4');
+
+				if($q6==9 || $q6==10){
+					$customCopy.= trans(session('product.alias').'.riskstage4_q79or10');
+				}
+				if($q6>10){
+					$customCopy.= trans(session('product.alias').'.riskstage4_q7gt10');
+				}
+				/*if($q8==3){
+					$customCopy.= trans(session('product.alias').'.riskstage2_q83');
+				}
+				if($q8==4){
+					$customCopy.= trans(session('product.alias').'.riskstage2_q84');
+				}*/
+				if($q8>28){
+					$customCopy.= trans(session('product.alias').'.riskstage4_q10gt28');
+				}
+				if($q8>=15 && $q8<=27){
+					$customCopy.= trans(session('product.alias').'.riskstage4_q10between15and27');
+				}
+				if($q9==3){
+					$customCopy.= trans(session('product.alias').'.riskstage4_q113');
+				}
+				if($q9==4){
+					$customCopy.= trans(session('product.alias').'.riskstage4_q114');
+				}
+			}
+
+
+
+			
+
+			
+
+			$vars['sectionCopy'] = $customCopy;
+			
+			$vars['summary'] = Lang::has(session('product.alias').'.summary') ? trans(session('product.alias').'.summary'): '';
+
+			$vars['introImage'] = Lang::has(session('product.alias').'.introduction-image') ? trans(session('product.alias').'.introduction-image') : false;
+			$vars['introRating'] = trans(session('product.alias').'.'.session('result.overall.rating'));
+			$vars['questions'] = session('questions');
 		}else{
 			    foreach (config('baseline_'.session('product.id')) as $section => $values) {
 					if(config('baseline_'.session('product.id').'.'.$section.'.report-settings.graph')){
@@ -625,9 +870,37 @@ trait GenerateReportTrait {
 			if(File::exists(storage_path().'/'.$assessment_id.'_'.$name.'.pdf')){
 				File::delete(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
 			}
+		}elseif(session('product.id')==7){
+			$pdf->save(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
+
+			$merge = new \LynX39\LaraPdfMerger\PDFManage;
+			$locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
+
+			$merge->addPDF(storage_path().'/symantec_report_start'.$locale .'.pdf', 'all');
+			$merge->addPDF(storage_path().'/'.$assessment_id.'_'.$name.'.pdf', 'all');
+
+			$merge->merge('file', storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf', 'P');
+			if(File::exists(storage_path().'/'.$assessment_id.'_'.$name.'.pdf')){
+				File::delete(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
+			}
 		}else{
 			return $pdf->save(storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf');
 		}
 
 	}
+
+	private function getQuestionScore($q, $section,$type='q'){
+    	$selected = session('questions.'.$section.'.pages.page'.$q.'.questions.'.$type.$q.'.selected');
+    	$total = 0;
+    	if(is_array($selected)){
+    		foreach ($selected as $select) {
+    			$select = explode("|", $select);
+    			$total += $select[1];
+    		}
+    	}else{
+    		$select = explode("|", $selected);
+    		$total = $select[1];
+    	}
+    	return $total;
+    }
 }

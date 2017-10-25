@@ -13,7 +13,7 @@
 		<table class="header" style="width: 100%;" cellpadding="0" cellspacing="0">
 			<tr>
 				<td>
-					<img src="/images/tools/5/report_footer.jpg" alt="">
+					<img src="/images/tools/7/report_footer.jpg" alt="">
 				</td>
 			</tr>
 		</table>

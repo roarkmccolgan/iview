@@ -13,7 +13,7 @@
 	<table class="header" style="width: 100%;" cellpadding="0" cellspacing="0">
 		<tr>
 			<td>
-				<img src="/images/tools/5/report_header{{ app('request')->input('locale') == 'en'? '':'_'.app('request')->input('locale') }}.jpg" alt="">
+				<img src="/images/tools/7/report_header-01.jpg" style="max-width: 100%" alt="">
 			</td>
 		</tr>
 	</table>

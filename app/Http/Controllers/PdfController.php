@@ -458,26 +458,6 @@ class PdfController extends Controller
 			$vars['introRating'] = trans(session('product.alias').'.'.session('result.overall.rating'));
 			$vars['questions'] = session('questions');
 		}elseif(session('product.id')==7) {
-			$widthstage = [13, 38, 65, 90, 118];
-			$sectionVars = [];
-
-			foreach (config('baseline_'.session('product.id')) as $section => $values) {
-				if($section!=='overall'){
-					preg_match_all('/\d+/', session('result.'.$section.'.rating'), $matches);
-					$sectionnumber =  (int)$matches[0][0];
-					$sectionwidthuser = $widthstage[$sectionnumber-1];
-					$widthsection = $widthstage[$values['benchmark-country-'.$region]-1];
-
-					$sectionVars[] = [
-						'widthuser' => $sectionwidthuser,
-						'width' => $widthsection,
-						'rating' => trans(session('product.alias').'.'.session('result.'.$section.'.rating')),
-						'score' => session('result.'.$section.'.score'),
-					];
-				}
-			}
-
-
 			//User overall stage number and ordinal
 			preg_match_all('/\d+/', session('result.overall.rating'), $matches);
 			$number =  (int)$matches[0][0];
@@ -489,66 +469,10 @@ class PdfController extends Controller
 			   $ordinal = $ends[$number % 10];
 			}
 
-			//country benchmark by language
-			$overallcountrynumber = config('baseline_'.session('product.id').'.overall.benchmark-country-'.$region);
-
-			if($number > $overallcountrynumber){
-				$overalllang = $number-$overallcountrynumber.' '.str_plural('level', $number-$overallcountrynumber).' ahead of the global leaders';
-			}elseif($number == $overallcountrynumber){
-				$overalllang = 'Inline with the global leaders';
-			}else{
-				$overalllang = $overallcountrynumber-$number.' '.str_plural('level', $overallcountrynumber-$number).' behind the global leaders';
-			}
-
-			//company size benchmark by language
-			$demographicsizeanswer = session('questions.screeners.pages.page2.questions.s2.selected');
-			
-			$demographicsizeanswer = explode('|', $demographicsizeanswer);
-			$demographicsizeanswer = str_replace([" ",","], ["-",""], $demographicsizeanswer[0]);
-
-			$overallsizenumber = config('baseline_'.session('product.id').'.overall.benchmark-size-'.$demographicsizeanswer);
-			if($number > $overallsizenumber){
-				$overallsize = $number-$overallsizenumber.' '.str_plural('level', $number-$overallsizenumber).' ahead of the leaders in companies of the same size';
-			}elseif($number == $overallsizenumber){
-				$overallsize = 'Inline with the leaders in companies of the same size';
-			}else{
-				$overallsize = $overallsizenumber-$number.' '.str_plural('level', $overallsizenumber-$number).' behind the leaders in companies of the same size';
-			}
-
-			//bar widths
-			$widthuser = $widthstage[$number-1];
-			$widthlang = $widthstage[$overallcountrynumber-1];
-			$widthsize = $widthstage[$overallsizenumber-1];
-
-
 
 			$vars['introduction'] = trans(session('product.alias').'.introduction',
 				[
 					'result'=>trans(session('product.alias').'.'.session('result.overall.rating')),
-					'percent'=>config('baseline_'.session('product.id').'.overall.types.'.session('result.overall.rating').'.benchmark'),
-					'ordinal'=>$ordinal,
-					'number'=>$number,
-					'stage'=>$number,
-					'overalllang'=>$overalllang,
-					'overallsize'=>$overallsize,
-					'widthuser' => $widthuser.'mm;',
-					'widthlang' => $widthlang.'mm;',
-					'widthsize' => $widthsize.'mm;',
-					'widthuser-security-strategy' => $sectionVars[0]['widthuser'].'mm;',
-					'width-security-strategy' => $sectionVars[0]['width'].'mm;',
-					'security-strategy-rating' => $sectionVars[0]['rating'],
-					'security-strategy-score' => $sectionVars[0]['score'],
-
-					'widthuser-incident-detection' => $sectionVars[1]['widthuser'].'mm;',
-					'width-incident-detection' => $sectionVars[1]['width'].'mm;',
-					'incident-detection-rating' => $sectionVars[1]['rating'],
-					'incident-detection-score' => $sectionVars[1]['score'],
-
-					'widthuser-incident-response' => $sectionVars[2]['widthuser'].'mm;',
-					'width-incident-response' => $sectionVars[2]['width'].'mm;',
-					'incident-response-rating' => $sectionVars[2]['rating'],
-					'incident-response-score' => $sectionVars[2]['score'],
-
 				]
 			);
 
@@ -557,63 +481,223 @@ class PdfController extends Controller
 
 			//overall
 			$value = session('result.overall.score');
+
+			$q1 = $this->getQuestionScore(1, 'gdpr');
+			$q7 = $this->getQuestionScore(7, 'gdpr');
+
+			$customCopy.= trans(session('product.alias').'.overallintro');
+			//stage 1
+			if($q1+$q7 < 5){
+				$customCopy.= trans(session('product.alias').'.overallstage1');
+				if($q1==1 || $q1==2){
+					$customCopy.= trans(session('product.alias').'.overallstage1_q1aorb');
+				}
+				if($q7==4){
+					$customCopy.= trans(session('product.alias').'.overallstage1_q9a');
+				}
+				if($q7==3){
+					$customCopy.= trans(session('product.alias').'.overallstage1_q9b');
+				}
+			}
+
+			//stage 2
+			if($q1+$q7 == 5 || $q1+$q7 == 6 || $q1+$q7 == 7){
+				$customCopy.= trans(session('product.alias').'.overallstage2');
+				if($q1==3 || $q1==4){
+					$customCopy.= trans(session('product.alias').'.overallstage2_q2cord');
+				}
+				if($q7==4){
+					$customCopy.= trans(session('product.alias').'.overallstage2_q9a');
+				}
+				if($q7==3){
+					$customCopy.= trans(session('product.alias').'.overallstage2_q9b');
+				}
+			}
+
+			//stage 4
+			if($q1+$q7 > 7){
+				$customCopy.= trans(session('product.alias').'.overallstage4');
+
+				if($q1==5){
+					$customCopy.= trans(session('product.alias').'.overallstage4_q2eforg');
+				}
+				if($q7==4){
+					$customCopy.= trans(session('product.alias').'.overallstage4_q9a');
+				}
+				if($q7==3){
+					$customCopy.= trans(session('product.alias').'.overallstage4_q9b');
+				}
+			}
+			$customCopy.= '<div class="pb"></div>';
+			$customCopy.= '<div class="spacer"></div>';
+
+			//Data Awareness
+			$q4 = $this->getQuestionScore(4, 'gdpr');
+			$q5 = $this->getQuestionScore(5, 'gdpr');
+
+			$customCopy.= trans(session('product.alias').'.dataawarenessintro');
+
+			if($q4+$q5 < 20){
+				$customCopy.= trans(session('product.alias').'.dataawarenessstage1');
+
+				if($q4==1 || $q4==2){
+					$customCopy.= trans(session('product.alias').'.dataawarenessstage1_q5aorb');
+				}
+				if($q4==3 || $q4==4){
+					$customCopy.= trans(session('product.alias').'.dataawarenessstage1_q5cord');
+				}
+				if($q5<18){
+					$customCopy.= trans(session('product.alias').'.dataawarenessstage1_q6lt18');
+				}
+				if($q5>18 && $q5<=24){
+					$customCopy.= trans(session('product.alias').'.dataawarenessstage1_q618to24');
+				}
+			}
+
+			if($q4+$q5 > 20 && $q4+$q5 <= 25){
+				$customCopy.= trans(session('product.alias').'.dataawarenessstage2');
+
+				if($q4==1 || $q4==2){
+					$customCopy.= trans(session('product.alias').'.dataawarenessstage2_q5aorb');
+				}
+				if($q4==3 || $q4==4){
+					$customCopy.= trans(session('product.alias').'.dataawarenessstage2_q5cord');
+				}
+				if($q4==5){
+					$customCopy.= trans(session('product.alias').'.dataawarenessstage2_q5e');
+				}
+				if($q5>18 && $q5<=24){
+					$customCopy.= trans(session('product.alias').'.dataawarenessstage2_q618to24');
+				}
+				if($q5>24){
+					$customCopy.= trans(session('product.alias').'.dataawarenessstage2_q6gt24');
+				}
+			}
+
+			if($q4+$q5 > 25){
+				$customCopy.= trans(session('product.alias').'.dataawarenessstage4');
+
+				if($q4==3 || $q4==4){
+					$customCopy.= trans(session('product.alias').'.dataawarenessstage4_q5cord');
+				}
+				if($q4==5){
+					$customCopy.= trans(session('product.alias').'.dataawarenessstage4_q5e');
+				}
+				if($q5>24){
+					$customCopy.= trans(session('product.alias').'.dataawarenessstage4_q6gt24');
+				}
+			}
+			$customCopy.= '<div class="pb"></div>';
+			$customCopy.= '<div class="spacer"></div>';
+
+			//Risk
+			$q6 = $this->getQuestionScore(6, 'gdpr');
+			$q8 = $this->getQuestionScore(8, 'gdpr');
+			$q9 = $this->getQuestionScore(9, 'gdpr');
+
+			$customCopy.= trans(session('product.alias').'.riskintro');
+
+			if($q6+$q8 < 14){
+				$customCopy.= trans(session('product.alias').'.riskstage1');
+
+				if($q6<9){
+					$customCopy.= trans(session('product.alias').'.riskstage1_q7lt9');
+				}
+				if($q6==9 || $q6==10){
+					$customCopy.= trans(session('product.alias').'.riskstage1_q79or10');
+				}
+				/*if($q8==2){
+					$customCopy.= trans(session('product.alias').'.riskstage1_q82');
+				}
+				if($q8==3){
+					$customCopy.= trans(session('product.alias').'.riskstage1_q83');
+				}*/
+				if($q8<15){
+					$customCopy.= trans(session('product.alias').'.riskstage1_q10lt15');
+				}
+				if($q8>28){
+					$customCopy.= trans(session('product.alias').'.riskstage1_q10gt28');
+				}
+
+				if($q9==2){
+					$customCopy.= trans(session('product.alias').'.riskstage1_q112');
+				}
+				if($q9==3){
+					$customCopy.= trans(session('product.alias').'.riskstage1_q113');
+				}
+				if($q9==4){
+					$customCopy.= trans(session('product.alias').'.riskstage1_q114');
+				}
+				
+			}
+
+			if($q6+$q8 > 14 && $q6+$q8 <= 17){
+				$customCopy.= trans(session('product.alias').'.riskstage2');
+
+				if($q6==9 || $q6==10){
+					$customCopy.= trans(session('product.alias').'.riskstage2_q79or10');
+				}
+				if($q6>10){
+					$customCopy.= trans(session('product.alias').'.riskstage2_q7gt10');
+				}
+				/*if($q8==3){
+					$customCopy.= trans(session('product.alias').'.riskstage2_q83');
+				}
+				if($q8==4){
+					$customCopy.= trans(session('product.alias').'.riskstage2_q84');
+				}*/
+				if($q8>28){
+					$customCopy.= trans(session('product.alias').'.riskstage2_q10gt28');
+				}
+				if($q8>=15 && $q8<=27){
+					$customCopy.= trans(session('product.alias').'.riskstage2_q10between15and27');
+				}
+				if($q9==3){
+					$customCopy.= trans(session('product.alias').'.riskstage2_q113');
+				}
+				if($q9==4){
+					$customCopy.= trans(session('product.alias').'.riskstage2_q114');
+				}
+			}
+
+			if($q6+$q8 > 17){
+				$customCopy.= trans(session('product.alias').'.riskstage4');
+
+				if($q6==9 || $q6==10){
+					$customCopy.= trans(session('product.alias').'.riskstage4_q79or10');
+				}
+				if($q6>10){
+					$customCopy.= trans(session('product.alias').'.riskstage4_q7gt10');
+				}
+				/*if($q8==3){
+					$customCopy.= trans(session('product.alias').'.riskstage2_q83');
+				}
+				if($q8==4){
+					$customCopy.= trans(session('product.alias').'.riskstage2_q84');
+				}*/
+				if($q8>28){
+					$customCopy.= trans(session('product.alias').'.riskstage4_q10gt28');
+				}
+				if($q8>=15 && $q8<=27){
+					$customCopy.= trans(session('product.alias').'.riskstage4_q10between15and27');
+				}
+				if($q9==3){
+					$customCopy.= trans(session('product.alias').'.riskstage4_q113');
+				}
+				if($q9==4){
+					$customCopy.= trans(session('product.alias').'.riskstage4_q114');
+				}
+			}
+
+
+
 			
-			if($value >75 ){
-				$customCopy.= trans(session('product.alias').'.overall-good');
-			}
-			if($value >60 &&  $value <=75){
-				$customCopy.= trans(session('product.alias').'.overall-moderate');
-			}
-			if($value <=60){
-				$customCopy.= trans(session('product.alias').'.overall-weak');
-			}
-			if($customCopy!=''){
-				$sectionCopy = $customCopy;
-				$customCopy = '';
-			}
+
 			
 
-			//Integration automation 
-			$value = session('result.integration.score') + session('result.automation.score');
-			if($value > 37.52){
-				$customCopy.= trans(session('product.alias').'.integration-automation-good');
-			}
-			if($value >= 22.51 && $value <= 30){
-				$customCopy.= trans(session('product.alias').'.integration-automation-moderate');
-			}
-			if($value <= 22.50){
-				$customCopy.= trans(session('product.alias').'.integration-automation-weak');
-			}
-
-			if($customCopy!=''){
-				$sectionCopy.= trans(session('product.alias').'.integration-automation-heading');
-				$sectionCopy.= $customCopy;
-				$customCopy = '';
-			}
-
-			//Unified Intelligence 
-			$value = session('result.unified-intelligence.score');
-			if($value > 18.76){
-				$customCopy.= trans(session('product.alias').'.unified-good');
-			}
-			if($value >= 15.01 && $value <= 18.75){
-				$customCopy.= trans(session('product.alias').'.unified-moderate');
-			}
-			if($value <= 15){
-				$customCopy.= trans(session('product.alias').'.unified-weak');
-			}
-
-			if($customCopy!=''){
-				$sectionCopy.= trans(session('product.alias').'.unified-heading');
-				$sectionCopy.= $customCopy;
-				$customCopy = '';
-			}
-
-			//here
-
-			$vars['sectionCopy'] = $sectionCopy;
+			$vars['sectionCopy'] = $customCopy;
 			
-			//$vars['summary'] = trans(session('product.alias').'.summary');;
+			$vars['summary'] = Lang::has(session('product.alias').'.summary') ? trans(session('product.alias').'.summary'): '';
 
 			$vars['introImage'] = Lang::has(session('product.alias').'.introduction-image') ? trans(session('product.alias').'.introduction-image') : false;
 			$vars['introRating'] = trans(session('product.alias').'.'.session('result.overall.rating'));
@@ -752,5 +836,19 @@ class PdfController extends Controller
         	->setOption('footer-spacing',2)
         	->setOption('replace', $headervars);
 		return $pdf->inline('invoice.pdf');
+    }
+    private function getQuestionScore($q, $section,$type='q'){
+    	$selected = session('questions.'.$section.'.pages.page'.$q.'.questions.'.$type.$q.'.selected');
+    	$total = 0;
+    	if(is_array($selected)){
+    		foreach ($selected as $select) {
+    			$select = explode("|", $select);
+    			$total += $select[1];
+    		}
+    	}else{
+    		$select = explode("|", $selected);
+    		$total = $select[1];
+    	}
+    	return $total;
     }
 }

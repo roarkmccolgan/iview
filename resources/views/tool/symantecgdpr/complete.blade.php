@@ -129,8 +129,8 @@
                                                 </div>
                                                 
                                                 <div class="col-sm-12 boxed">
-                                                    <!--button id="submitBut" type="submit" class="btn btn--primary type--uppercase">{!!trans('general.emailreport')!!}</button-->
-                                                    <a id="submitBut" href="#" class="btn btn--primary color--white type--uppercase">{!!trans('general.emailreport')!!}</a>
+                                                    <button id="submitBut" type="submit" class="btn btn--primary type--uppercase">{!!trans('general.emailreport')!!}</button>
+                                                    <!-- a id="submitBut" href="#" class="btn btn--primary color--white type--uppercase">{!!trans('general.emailreport')!!}</a -->
                                                 </div>
                                             {{ Form::close() }}
                                         </div>

@@ -12,7 +12,7 @@ return array(
     'complete_body' => '
         Your custom report will arrive in your inbox soon.<br/>
         Please check in your junk folder if you don\'t receive it within 5 minutes.<br/><br/>
-        <a class="btn btn--primary" target="_blank" href="https://www.splunk.com/en_us/solutions/solution-areas/security-and-fraud/security-investigation.html">
+        <a class="btn btn--primary" target="_blank" href="https://www.symantec.com">
             Click here for more information
         </a>',
     'complete_tweet' => 'I\'ve just taken the @IDCEMEA Security Assessment Tool for @splunk. Interested? ',// http://bit.ly/2gslXEh
@@ -21,7 +21,7 @@ return array(
         'hi' => 'Hi :Fname',
         'body' => 'As promised, here\'s a link to download your Security Assessment. This breaks down your results by category and provides you with actionable recommendations.',
         'link' => 'Download Report',
-        'extra' => 'Once you\'ve digested the report why not visit <a href="https://www.splunk.com/en_us/solutions/solution-areas/security-and-fraud/security-investigation.html" style="color:#65A637">Splunk</a>',
+        'extra' => 'Once you\'ve digested the report why not visit <a href="https://www.symantec.com" style="color:#65A637">Splunk</a>',
         'regards' => 'Regards',
         'team' => 'The IDC Team'
     ],
@@ -33,124 +33,383 @@ return array(
         <div style="position: relative; width: 170mm; height: 112mm; background: url(http://symantecgdpr.idcready.net/images/tools/7/maturity.svg); background-size: 170mm 112mm;">
             
         </div>
-        <h2>Overall Summary</h2>
         <p>
-            Compared to the best in class capabilities, your organization is:
+            Further insight and detailed recommendations are highlighted below, taking you through components of Leadership and General Obligations, Data Rights and Standards, as well as Security. The report delivers an assessment of your stage of readiness as well as individual recommendations on how to improve these areas.
         </p>
-        <ul>
-            <li>:overalllang</li>
-            <li>:overallsize</li>
-        </ul>
         <p>
-            <strong class="blue">Your performance in more detail</strong><br/>
-            The assessment tool was designed to help establish your organization\'s readiness to cope with the evolving threat landscape that impacts on today’s digital businesses, both today and into the future.<br/>
-            We looked at the following key areas of IT security:
-        </p>
-        <ul class="primary">
-            <li>Security Strategy</li>
-            <li>Incident Detection</li>
-            <li>Incident Response</li>
-        </ul>
-        <p>
-            Your performance in each area is compared to your peers in Figure 3 on the following page.
+            Your performance in each area is compared to your peers on the following page.
         </p>
         <div class="pb"></div>
         <div class="spacer"></div>
-        <h2>IDC Security Response Readiness by Capability</h2>
-        <div class="spacer"></div>
-        <div style="position: relative; width: 170mm; height: 105mm; background: url(http://security.idcready.net/images/tools/5/section_graph_bg.svg); background-size: 170mm 105mm;">
-            <div id="user" style="position:absolute; top: 24.694mm; left:44.3mm; width: :widthuser-security-strategy height: 7mm; background-color: #004B85"></div>
-            <div id="lang" style="position:absolute; top: 33mm; left:44.3mm; width: :width-security-strategy height: 7mm; background-color: #00ADEE"></div>
-
-            <div id="user" style="position:absolute; top: 48mm; left:44.3mm; width: :widthuser-incident-detection height: 7mm; background-color: #004B85"></div>
-            <div id="lang" style="position:absolute; top: 56.3mm; left:44.3mm; width: :width-incident-detection height: 7mm; background-color: #00ADEE"></div>
-
-            <div id="user" style="position:absolute; top: 72mm; left:44.3mm; width: :widthuser-incident-response height: 7mm; background-color: #004B85"></div>
-            <div id="lang" style="position:absolute; top: 80mm; left:44.3mm; width: :width-incident-response height: 7mm; background-color: #00ADEE"></div>
-        </div>
-        <h2>How to get ahead</h2>
-        <p>
-            No matter what level you are at, there are certain areas that are continuing to evolve and are worth focusing on above all else
-        </p>
-        <ul>
-            <li>Integration – avoiding the single glass of pain</li>
-            <li>Proactive approach – cutting the time between breach and detection from months to hours(or less) </li>
-            <li>Keeping ahead of compliance – it is hard enough to gain compliance for most, let alone maintain it</li>
-            <li>Best practice – recognizing that the threat landscape never sits still and that compliance and regulatory frameworks are often years out of date even at introduction, adopting a best practice approach is the best way to mitigate threats. The added advantage is that, if done right, compliance will naturally be achieved.</li>
-        </ul>
-        <div class="pb"></div>
+        
     ',
-    'security-strategy-heading' => '<h2>Improvements to Security Strategy</h2>',
-    'incident-detection-heading' => '<h2>Improvements to Incident Detection</h2>',
-    'incident-response-heading' => '<h2>Improvements to Incident Response</h2>',
-    'a1-a' => '
-    <p>
-        Getting security to align with and support the business is vital for any modern digital business. Ad-hoc or reactive approaches to security will hold you company back and also put you at risk of potential fines under compliance legislation. A key priority for you should be to raise the awareness of how security enables new business opportunities and improve senior management awareness of the strategic value of IT security to help build a longer term plan.
-    </p>',
-    'a1-b' => '
-    <p>
-        Getting security to align with and support the business is vital for any modern digital business. While you are doing OK in getting security more consistent through repeatable processes, you should work to raise the awareness of how security enables new business opportunities and improve senior management awareness of the strategic value of IT security to help build a longer term plan.
-    </p>',
-    'a5-a' => '
-    <p>
-        New approaches to security governance and compliance are placing more evidence on implementing best practice, and this is an area where you are currently at risk. Focusing on best practice and balancing this with risk management can really help to drive both compliance and business agility. It is often hard to build best practice capabilities internally, so you should consider utilizing external experts to help define the both the scope of requirements and also possible solutions.
-    </p>',
-    'a5-b' => '
-    <p>
-        New approaches to security governance are placing more evidence on implementing best practice. While you have been tackling this internally, making sure you have experts who have a view of the entire security landscape can really help you to identify gaps and weaknesses in your approach. Focusing on best practice and balancing this with risk management can really help to drive both compliance and business agility. It is often hard to build best practice capabilities internally, so you should consider utilizing external experts to help define the both the scope of requirements and also possible solutions.
-    </p>',
-    'a7-a' => '
-    <p>
-        Threats are evolving quickly and becoming more capable and mature. You need to be ahead of the game here, but you are yet to really adopt best in class security capabilities. Assuming you have been breached and proactively hunting for breaches will be a vital skill for IT security organizations of the future. Work on a business plan to support investment in emerging discovery capabilities such as analytics and machine learning.
-    </p>',
-    'a7-b' => '
-    <p>
-        Threats are evolving quickly and becoming more capable and mature. You need to be ahead of the game here, and you have started to adopt best in class security capabilities but have a way to go still. Assuming you have been breached and proactively hunting for breaches will be a vital skill for IT security organizations of the future. Work on a business plan to support investment in emerging discovery capabilities such as analytics and machine learning.
-    </p>',
-    'a8-a' => '
-    <p>
-        Managing your initial response to a security incident will be critical to containing the threat and mitigating any potential damage, but you do not have anything in place now. A platform designed to standardize and manage this can be particularly useful, especially in the light of the breach reporting requirements of new legislation such as GDPR, or for IT Security Breach Insurance compliance.
-    </p>',
-    'a8-b' => '
-    <p>
-        Managing your initial response to a security incident will be critical to containing the threat and mitigating any potential damage. You have made a small start, but you should be looking to scale this up soon. A platform designed to standardize and manage this can be particularly useful, especially in the light of the breach reporting requirements of new legislation such as GDPR, or for IT Security Breach Insurance compliance.
-    </p>',
-    'a11-a' => '
-    <p>
-        A well-defined and tested response plan is essential in the event of a breach to ensure that all obligations and requirements are met. Automating this process as much as possible will be a great help in reducing ongoing operational overhead.
-    </p>',
-    'a11b-a' => '
-    <p>
-        The longer that people have to take dealing with a security incident, the greater the impact on productivity and business risk. Reducing the time spend on investigations and remediation should be a key aim, ideally with an approach to standardizing and automating security breach response.
-    </p>',
-    'a13-a' => '
-    <p>
-        You are struggling to deal with the volume of incidents. Rather than bringing in more people to try to cope, consider ways to make detection and remediation (through approaches such as automation and prioritization) much more effective.
-    </p>',
-    'a13-b' => '
-    <p>
-        While you can generally cope with the volume of incidents, it is not always easy and things can get rather heated. Rather than bringing in more people to try to cope, consider ways to make detection and remediation (through approaches such as automation and prioritization) much more effective.
-    </p>',
-    'a14-a' => '
-    <p>
-        You cannot secure effectively that which you cannot measure, and you are not measuring enough to be able to determine the extent and impact of a breach. Taking a proactive approach to gathering and analysing information will enable you to not only detect a breach more reliably and more quickly, but also will help reverse engineer the breach to be able to improve your security response and risk posture to mitigate future attacks.
-    </p>',
-    'a14-b' => '
-    <p>
-        You cannot secure effectively that which you cannot measure. While you have enough to steer you in the right direction, trying to tackle a breach more effectively will be much easier if you work to improve your overall information gathering and monitoring capabilities. Taking a proactive approach to gathering and analysing information will enable you to not only detect a breach more reliably and more quickly, but also will help reverse engineer the breach to be able to improve your security response and risk posture to mitigate future attacks.
-    </p>',
-    'summary' => '
-        <div class="pb"></div>
-        <div class="spacer"></div>
-        <h2>Essential Guidance</h2>
+    'overallintro'=>'
+        <h2>Overall GDPR Approach, Aspiration &amp; Leadership</h2>
+    ',
+    'overallstage1'=>'
+        <h1>STAGE 1:  Time to Initiate</h1>
         <p>
-            Security is typically top of list of barriers for driving new IT initiatives, from developing and deploying new applications and services, to taking advantage of new IT architectures such as hybrid cloud. Proactive IT security monitoring, detection and response – built on a standardized platform with automation and analytics – will be one of the factors that differentiate the top performing digital businesses that can move quickly with market conditions. Achieving this will not come without risks and pitfalls, including
+            Organisations that fall into this category of initial readiness have limited or no insight into the requirements (and more importantly) the implications of GDPR on their business. Leadership does not have any real understanding of what GDPR covers and how it is to be implemented. In addition, there is no real understanding of legal obligations and accountability, or the extent of the fines and other sanctions if the business fails to comply by May next year.
         </p>
-        <ul>
-            <li>Going in without a plan – Security need to be both deliberate and thoughtful, so make a conscious move to avoid buying products to fill gaps in capabilities. Utilize the skills of third party security experts who have hard won experience and insight to help build solutions that are known to work and to be manageable.</li>
-            <li>Boiling the ocean – while it may seem the best solution is to rip everything up and start again, that is seldom a productive approach. Instead, look to improve your capabilities in select areas, and then build on your approach. As the level of adoption and experience rises, more of the IT infrastructure can be brought in to benefit from the advancements.</li>
-            <li>Open inter-operability – we don’t know what the future will bring, and being locked in to proprietary interfaces will hinder the ability to secure the IT estate as it grows and changes. Look to solutions that integrate well as a stack, but also support expansion through open, stable and well defined APIs and interfaces.</li>
-        </ul>
+    ',
+    'overallstage1_q1aorb'=>'
+        <p>
+            By your own admission, you are just starting out on your GDPR journey. GDPR affects almost all companies that process personal data. Realise that the definition of personal data is very broad, and includes any data that relates to an identifiable person. At its most basic, it includes employee data and data relating to sales orders. Most organisations will have this type of data. So the chances are, you are impacted by GDPR.
+        </p>
+        <p>
+            Ignoring GDPR will not make it go away, and importantly there are substantial sanctions in place to encourage compliance. Much has been said about the substantial fines, but sanctions also include class action lawsuit and suspension of personal data processing (which may mean, effectively, suspension of trading).
+        </p>
+    ',
+    'overallstage1_q9a'=>'
+        <p>
+            Your readiness score is held back significantly by the lack of a cross functional compliance task force or governance board that spans multiple stakeholders in your organisation. The engagement of all relevant stakeholders is a critical success factor in any GDPR program, and the lack of such a coordinated approach limits substantially the ultimate success of any compliance activity. Consider revisiting this situation as soon as possible. A silo approach to GDPR is unlikely to fulfil some of the fundamental principles required by the new legislation.
+        </p>
+    ',
+    'overallstage1_q9b'=>'
+        <p>
+            Your score is boosted substantially by the presence of a cross functional compliance task force or governance board that spans multiple stakeholders in your organisation. The engagement of all relevant stakeholders is a critical success factor in any GDPR program, and the existence of such a coordinated approach significantly increases the ultimate success of any compliance activity. The other major critical success factor to consider now is the leadership of the GDPR program. It matters less where this leadership stems from, and more that the leader has the authority, knowledge and charisma to lead a strategically important program of activities.
+        </p>
+    ',
+
+    'overallstage2'=>'
+        <h1>STAGE 2: Time to Accelerate</h1>
+        <p>
+            Organisations that fall into this category of defined readiness have made a commitment to GDPR but are perhaps midway through their journey. They are aware of the scale of the proposed penalties and sanctions, but are often reluctant to believe that these will be enforced.
+        </p>
+    ',
+    'overallstage2_q2cord'=>'
+        <p>
+            By your own admission, you are engaged in enough GDPR activity to avoid a regulator\'s attention (probably), but are limiting your efforts to a pragmatic program of specific activity. This is a perfectly reasonable strategy, at least in the short term, as long as it is based on a detailed business-lead analysis of research. You are aiming to be pragmatically compliant, so realise that there are risks that remain that you may have to explain to in regulator, should things go awry.
+        </p>
+        <p>
+            If in doubt, always refer to the principles laid out in Article 5 of GDPR. Be prepared to defend your stance against these principles: if you can do so, then you will avoid the wrath of the regulator.
+        </p>
+    ',
+    'overallstage2_q9a'=>'
+        <p>
+            Your readiness score is held back significantly by the lack of a cross functional compliance task force or governance board that spans multiple stakeholders in your organisation. The engagement of all relevant stakeholders is a critical success factor in any GDPR program, and the lack of such a coordinated approach limits substantially the ultimate success of any compliance activity. Consider revisiting this situation as soon as possible. A silo approach to GDPR is unlikely to fulfil some of the fundamental principles required by the new legislation.
+        </p>
+    ',
+    'overallstage2_q9b'=>'
+        <p>
+            Your score is boosted substantially by the presence of a cross functional compliance task force or governance board that spans multiple stakeholders in your organisation. The engagement of all relevant stakeholders is a critical success factor in any GDPR program, and the existence of such a coordinated approach significantly increases the ultimate success of any compliance activity. The other major critical success factor to consider now is the leadership of the GDPR program. It matters less where this leadership stems from, and more that the leader has the authority, knowledge and charisma to lead a strategically important program of activities.
+        </p>
+    ',
+    'overallstage4'=>'
+        <h1>STAGE 4: Time to Optimise</h1>
+        <p>
+            Organisations that fall into this category of managed readiness have a firm appreciation of the regulation, its scope, compliance requirements and potential penalties. They have begun to put measures in place to comply but need to step up their activities to meet the May 2018 deadline.
+        </p>
+        <p>
+            Companies in this stage may have a plan for overall compliance but this may come at the expense of operation efficiency. That’s fine: there is an expediency dimension to GDPR compliance. But after compliance comes optimisation: embed your compliance processes in business as usual. This is tougher than it sounds, so start thinking now about what this might look like for your organisation.
+        </p>
+    ',
+    'overallstage4_q2eforg'=>'
+        <p>
+            By your own admission, you have high aspirations for compliance with GDPR. This should put you in a strong position should a regulator take interest in your activities. Make sure you can evidence your efforts, as this is a crucial part of compliance. The driver for your compliance activities maybe internal efficiency, or improved information given. Or it may be to seek competitive differentiation, possibly through best practices. Whatever your motivation, it is driving you towards being a leader in GDPR compliance. The focus should remain on completing your compliance activities by May 2018, but on the horizon should be an understanding that your compliance processes may not be optimised for operational efficiency. Baking GDPR compliance into business as usual is a step beyond straightforward compliance, but this is where the real benefits lie.
+        </p>
+    ',
+    'overallstage4_q9a'=>'
+        <p>
+            Your readiness score is held back significantly by the lack of a cross functional compliance task force or governance board that spans multiple stakeholders in your organisation. The engagement of all relevant stakeholders is a critical success factor in any GDPR program, and the lack of such a coordinated approach limits substantially the ultimate success of any compliance activity. Consider revisiting this situation as soon as possible. A silo approach to GDPR is unlikely to fulfil some of the fundamental principles required by the new legislation.
+        </p>
+    ',
+    'overallstage4_q9b'=>'
+        <p>
+            Your score is boosted substantially by the presence of a cross functional compliance task force or governance board that spans multiple stakeholders in your organisation. The engagement of all relevant stakeholders is a critical success factor in any GDPR program, and the existence of such a coordinated approach significantly increases the ultimate success of any compliance activity. The other major critical success factor to consider now is the leadership of the GDPR program. It matters less where this leadership stems from, and more that the leader has the authority, knowledge and charisma to lead a strategically important program of activities.
+        </p>
+    ',
+    'dataawarenessintro'=>'
+        <h2>Data Awareness</h2>
+        <p>
+            Information governance is the underlying discipline that enables compliance with GDPR. Bringing all personal data into the scope of your information governance function is mandatory. You need to know what personal data you have (accounting for the very broad definition used by GDPR), and also its location, consent, lifetime, and so on. Demonstrating to regulator that you have a good handle on personal data is the first step in compliance.
+        </p>
+    ',
+    'dataawarenessstage1'=>'
+        <h1>STAGE 1:  Time to Initiate</h1>
+        <p>
+            Unfortunately, you are in the initial stages of information governance, and you have low confidence in your ability to identify and locate data. You may have a good understanding of structured data, but unstructured information maybe causing difficulty. You are also likely to be gathering data without a real sense of purpose or business value. GDPR now makes this data a risk, so you need to decide whether to keep it or delete it.
+        </p>
+        <p>
+            According to your score you are likely to struggle to service subject access requests and other new rights introduced by GDPR (including the right to be forgotten).
+        </p>
+    ',
+    'dataawarenessstage1_q5aorb'=>'
+        <p>
+            At least you are honest about your inability to identify and locate all instances of personal data within your organisation. This is a pre-requisite to GDPR compliance: you cannot demonstrate compliance if you do not know what data you have or its location. Given the short amount of time until May 2018, you need to prioritise the data that you are aware of and that is either important to you or that represents the greatest risk to your organisation.
+        </p>
+    ',
+    'dataawarenessstage1_q5cord'=>'
+        <p>
+            Your organisation remains exposed to a degree of risk because you cannot definitively identify and locate every instance of personal data in your organisation. Only you can decide whether this is a risk that your business can accept. Although GDPR demands that you can locate all instances of personal data, you are in the majority of organisations that admit to falling short of this. Assess the risk associated with data that you may not know about, and create an incident response plan for any related potential non-compliance.
+        </p>
+    ',
+    'dataawarenessstage1_q6lt18'=>'
+        <p>
+            In short, you are not data aware. A prerequisite for GDPR compliance is knowing what data you have, where it is, and why you have it. You need this in order to compile a record of data processing, mandated under Article 30. You will also likely be in breach of the principles of purpose limitation, data minimisation and storage limitation. You need to decide whether this is a risk you can live with.
+        </p>
+        <p>
+            Where to start? Given the pressures of time, you need to prioritise on the data is most valuable to you or that which poses the greatest risk. Any sensitive data (special categories) falls into this area, as does data that would substantially damage your reputation if it was breached. Of course, protecting the data is just one step, so you also need to focus on the processes that interact with the data. Defining who has access to what data, and for what purpose, is mandatory.
+        </p>
+        <p>
+            Above all, remember that regulators will tolerate breaches and minor non-compliances. But they will not tolerate a lack of evidenced effort. It is insufficient to be data aware: you must be able to demonstrate data awareness.
+        </p>
+    ',
+    'dataawarenessstage1_q618to24'=>'
+        <p>
+            You are moderately data aware. A prerequisite for GDPR compliance is knowing what data you have, where it is, and why you have it. You need this in order to compile a record of data processing, mandated under Article 30. You may also be in breach of one or more of the principles of purpose limitation, data minimisation and storage limitation. These are higher level (4% fine) offences, so you need to decide whether judicious deletion of irrelevant data can help reduce this risk.
+        </p>
+        <p>
+            Focus on the gaps in your knowledge of data and its location. Understanding the reasons why you have the data (purpose limitation) is also important, and you need to understand where different regulations apply to different classes of data (such as special categories and data relating to children).
+        </p>
+        <p>
+            Above all, remember that regulators will tolerate breaches and minor non-compliances. But they will not tolerate a lack of evidenced effort. It is insufficient to be data aware: you must be able to demonstrate data awareness.
+        </p>
+    ',
+
+    'dataawarenessstage2'=>'
+        <h1>STAGE 2: Time to Accelerate</h1>
+        <p>
+            You are in the middle stages of information governance, and you have reasonable confidence in your ability to identify and locate most personal data in your organisation. You may have a good understanding of structured data, but unstructured information maybe causing difficulty. You are also likely to be gathering data without a real sense of purpose or business value. GDPR now makes this data a risk, so you need to decide whether to keep it or delete it.
+        </p>
+        <p>
+            According to your score, you may struggle to enable the new rights of access, rectification, erasure and portability.
+        </p>
+    ',
+    'dataawarenessstage2_q5aorb'=>'
+        <p>
+            At least you are honest about your inability to identify and locate all instances of personal data within your organisation. This is a pre-requisite to GDPR compliance: you cannot demonstrate compliance if you do not know what data you have or its location. Given the short amount of time until May 2018, you need to prioritise the data that you are aware of and that is either important to you or that represents the greatest risk to your organisation.
+        </p>
+    ',
+    'dataawarenessstage2_q5cord'=>'
+        <p>
+            Your organisation remains exposed to a degree of risk because you cannot definitively identify and locate every instance of personal data in your organisation. Only you can decide whether this is a risk that your business can accept. Although GDPR demands that you can locate all instances of personal data, you are in the majority of organisations that admit to falling short of this. Assess the risk associated with data that you may not know about, and create an incident response plan for any related potential non-compliance.
+        </p>
+    ',
+    'dataawarenessstage2_q5e'=>'
+        <p>
+            You are in the tiny minority of organisations that are completely confident in their ability to identify and locate all instances of personal data in their organisations. Well done. But make sure that staff are not creating copies of data – probably for good reasons – that are out of compliance. Data copies are made frequently, for reporting, analysis, back-up and so on. Make sure you have the processes in place to avoid this happening in future.
+        </p>
+    ',
+    'dataawarenessstage2_q618to24'=>'
+        <p>
+            You are moderately data aware. A prerequisite for GDPR compliance is knowing what data you have, where it is, and why you have it. You need this in order to compile a record of data processing, mandated under Article 30. You may also be in breach of one or more of the principles of purpose limitation, data minimisation and storage limitation. These are higher level (4% fine) offences, so you need to decide whether judicious deletion of irrelevant data can help reduce this risk.
+        </p>
+        <p>
+            Focus on the gaps in your knowledge of data and its location. Understanding the reasons why you have the data (purpose limitation) is also important, and you need to understand where different regulations apply to different classes of data (such as special categories and data relating to children).
+        </p>
+        <p>
+            Above all, remember that regulators will tolerate breaches and minor non-compliances. But they will not tolerate a lack of evidenced effort. It is insufficient to be data aware: you must be able to demonstrate data awareness.
+        </p>
+    ',
+    'dataawarenessstage2_q6gt24'=>'
+        <p>
+            You are very data aware. Good: a prerequisite for GDPR compliance is knowing what data you have, where it is, and why you have it. You need this in order to compile a record of data processing, mandated under Article 30. You will also avoid a breach of the principles of purpose limitation, data minimisation and storage limitation.
+        </p>
+        <p>
+            What now? Focus on the gaps in your knowledge of data and its location. Understanding the reasons why you have the data (purpose limitation) is also important, and you need to understand where different regulations apply to different classes of data (such as special categories and data relating to children).
+        </p>
+        <p>
+            Above all, remember that regulators will tolerate breaches and minor non-compliances. But they will not tolerate a lack of evidenced effort. It is insufficient to be data aware: you must be able to demonstrate data awareness.
+        </p>
+    ',
+    'dataawarenessstage4'=>'
+        <h1>STAGE 4: Time to Optimise</h1>
+        <p>
+            You are in the advanced stages of information governance and you have high confidence that you like you can locate all instances of personal data in your organisation. You also have a good understanding of both structured and unstructured data, and are likely to be able to service the new rights of access, rectification, erasure and portability.
+        </p>
+    ',
+    'dataawarenessstage4_q5cord'=>'
+        <p>
+            Your organisation remains exposed to a degree of risk because you cannot definitively identify and locate every instance of personal data in your organisation. Only you can decide whether this is a risk that your business can accept. Although GDPR demands that you can locate all instances of personal data, you are in the majority of organisations that admit to falling short of this. Assess the risk associated with data that you may not know about, and create an incident response plan for any related potential non-compliance.
+        </p>
+    ',
+    'dataawarenessstage4_q5e'=>'
+        <p>
+            You are in the tiny minority of organisations that are completely confident in their ability to identify and locate all instances of personal data in their organisations. Well done. But make sure that staff are not creating copies of data – probably for good reasons – that are out of compliance. Data copies are made frequently, for reporting, analysis, back-up and so on. Make sure you have the processes in place to avoid this happening in future.
+        </p>
+    ',
+    'dataawarenessstage4_q6gt24'=>'
+        <p>
+            You are very data aware. Good: a prerequisite for GDPR compliance is knowing what data you have, where it is, and why you have it. You need this in order to compile a record of data processing, mandated under Article 30. You will also avoid a breach of the principles of purpose limitation, data minimisation and storage limitation.
+        </p>
+        <p>
+            What now? Focus on the gaps in your knowledge of data and its location. Understanding the reasons why you have the data (purpose limitation) is also important, and you need to understand where different regulations apply to different classes of data (such as special categories and data relating to children).
+        </p>
+        <p>
+            Above all, remember that regulators will tolerate breaches and minor non-compliances. But they will not tolerate a lack of evidenced effort. It is insufficient to be data aware: you must be able to demonstrate data awareness.
+        </p>
+    ',
+    'riskintro'=>'
+        <h2>Risk Awareness, Assessment &amp; Mitigation</h2>
+        <p>
+            GDPR is all about risk. It is not prescriptive in most of its requirements, meaning that organisations must make decisions about which approaches to take. What is the balance between gathering data for analytics and the increased exposure from data minimisation and purpose limitation? What the heck is ‘State of the Art’ and how do I know if I need it?
+        </p>
+        <p>
+            Risk awareness starts with self-awareness: what data do I have and how do the new regulations affect how I should treat this data?
+        </p>
+    ',
+    'riskstage1'=>'
+        <h1>STAGE 1:  Time to Initiate</h1>
+        <p>
+            It seems that you are at the initial stages of risk awareness. You appear to be engaged in asking the right kinds of questions, but they are foundational. You are challenged by some basic requirements, and seem less concerned abut GDPR than would otherwise be expected with a full knowledge of the regulations. Your struggle to gather budget and resources reflects a low level of awareness, particularly at board level.
+        </p>
+    ',
+    'riskstage1_q7lt9'=>'
+        <p>
+            Your responses indicate that you are challenged by the basic requirements of GDPR. These include gaining an overview of GDPR requirements, classifying data, and educating employees of the impact of GDPR. That’s fine as far as it goes, but be aware that there are many more – and complex – requirements to address on your compliance journey. Getting the foundations right is important: now you need to move on to other areas like incident response planning and extending data governance processes to cloud and mobile environments.
+        </p>
+    ',
+    'riskstage1_q79or10'=>'
+        <p>
+            Your responses indicate that you are challenged by a combination of some basic requirements of GDPR and a few of the more advanced compliance actions. This probably includes things like encrypting personal data, consent management and training staff on new risk and obligations. This is a measure of the progress you are making: good news. However, now you need to move on to other advanced areas like extending data governance processes to cloud and mobile environments, and establishing a state of the art security posture.
+        </p>
+    ',
+    'riskstage1_q82'=>'
+        <p>
+            Your score indicates that you are a cloud sceptic. This is a cautious position, and it may reflect your business’s appetite for risk. Fair enough. However, you may be missing out on the flexibility and agility offered by cloud. Further, it is perfectly possible to be compliant with GDPR while using cloud services. Cloud service providers are aware of their obligations, and many are offering GDPR-ready contracts, meaning that moving data to the cloud could advance – rather than hinder – your compliance activities. Something worth investigating.
+        </p>
+    ',
+    'riskstage1_q83'=>'
+        <p>
+            Your response shows that you are actively trying to square your cloud usage with GDPR requirements. Good: GDPR places new obligations on data processors, which includes all cloud services. You seem especially concerned at the international data transfer rules. In fact, there is little change to the existing rules that allow data transfers, as long as there is adequate protection in place. Remember that it is perfectly possible to be compliant with GDPR while using cloud services. Cloud service providers are aware of their obligations, and many are offering GDPR-ready contracts.
+        </p>
+    ',
+    'riskstage1_q10lt15'=>'
+        <p>
+            You appear to be quite comfortable with GDPR and have not expressed a high level of concern. Is this because you are confident in your organisation’s ability to comply? Or have you under-estimated the potential consequences of non-compliance? Either way, it might be worth revisiting the risks associated with GDPR. It’s not all about fines: class action law suits may be initiated by third parties beyond your control of that of the regulator. The regulator itself can order a suspension of data processing, effectively limiting your ability to trade. Overall, GDPR represents a significant increase in the level of business risk related to personal data processing. Make sure your risk assessment function reflects this heightened exposure.
+        </p>
+    ',
+    'riskstage1_q10gt28'=>'
+        <p>
+            You are extremely worried at the overall level of risk associated with GDPR. This means that you fully understand the potential impact of non-compliance, not just in terms of possible fines but reputation damage, class action law suits and suspension of data processing. However, your anxiety probably also reflects an awareness that you are still exposed to this risk due to the relative immaturity of your readiness: you’re not where you need to be in your GDPR journey. We empathise. But you should have the motivation to address the issues at hand.
+        </p>
+    ',
+    'riskstage1_q112'=>'
+        <p>
+            You indicated that either a lack of knowledge on GDPR or a lack of budget is constraining your ability to create a GDPR program that spans your data management environment. Such responses are typical of organisations in the early stages of compliance efforts. Information gaps can be resolved by tapping into the mass of literature available from regulators, lawyers, consultants and technology firms. Industry groups are also increasingly popular and provide the opportunity to learn from peer organisations.
+        </p>
+        <p>
+            Budget issues are less easy to fix. Ultimately it comes down to an assessment of the risk for each organisation. But a lack of awareness will inhibit a thorough risk evaluation. Information leads to enlightenment, and enlightenment should lead to a break in inertia. There’s nothing like an increase in perceived risk to loosen fiscal ties.
+        </p>
+    ',
+    'riskstage1_q113'=>'
+        <p>
+            You indicated that either limited resources or conflicting priorities is constraining your ability to create a GDPR program that spans your data management environment. Such responses are typical of organisations in the middle stages of compliance efforts. Ultimately it comes down to an assessment of the risk for each organisation. A thorough risk evaluation should identify the required resources and resolve conflicting priorities. It may be then that there is a lack of awareness and leadership at board level, resulting in insufficient commitment to GDPR. This is serious, so board engagement is essential if you want to meet your GDPR aspirations.
+        </p>
+    ',
+    'riskstage1_q114'=>'
+        <p>
+            You indicated that either a lack of collaboration or a fragmentation of data management systems is constraining your ability to create a GDPR program that spans your data management environment. Such responses are typical of organisations in the later stages of compliance efforts. Your program is well under way, but it may be stuck within one department. A critical success factor for GDPR is cross-functional collaboration: GDPR is too important to stay within fiefdoms.
+        </p>
+        <p>
+            A fragmented data management environment could be harder to fix: big data and analytics are often critical to business functions. But they can also represent a source of risk, in the volume of personal data held and in the use of that data for multiple purposes. An integrated approach to data governance is essential to efficient GDPR compliance, so focus on this as a core activity in embedding operational excellence in compliance.
+        </p>
+    ',
+
+    'riskstage2'=>'
+        <h1>STAGE 2: Time to Accelerate</h1>
+        <p>
+            It seems that you are at the developing stages of risk awareness, and are ready to accelerate. You appear to be engaged in asking the right kinds of questions, and they are increasingly sophisticated. You are challenged by some advanced requirements, and seem appropriately concerned about the increased risk levels associated with GDPR. However, your struggle to prioritise resources reflects a need to re-emphasis awareness, particularly at board level.
+        </p>
+    ',
+    'riskstage2_q79or10'=>'
+        <p>
+            Your responses indicate that you are challenged by a combination of some basic requirements of GDPR and a few of the more advanced compliance actions. This probably includes things like encrypting personal data, consent management and training staff on new risk and obligations. This is a measure of the progress you are making: good news. However, now you need to move on to other advanced areas like extending data governance processes to cloud and mobile environments, and establishing a state of the art security posture.
+        </p>
+    ',
+    'riskstage2_q7gt10'=>'
+        <p>
+            Your responses indicate that you are challenged by the more advance requirements of GDPR. This is most likely a reflection of your advanced state of readiness. You’ll be focusing on things like incident response planning and extending data governance processes to cloud and mobile environments. However, make sure you have already solved some of the foundation layers like consent management, anonymization or pseudonymisation of data, and training staff on new risk and obligations.
+        </p>
+    ',
+    'riskstage2_q83'=>'
+        <p>
+            Your response shows that you are actively trying to square your cloud usage with GDPR requirements. Good: GDPR places new obligations on data processors, which includes all cloud services. You seem especially concerned at the international data transfer rules. In fact, there is little change to the existing rules that allow data transfers, as long as there is adequate protection in place. Remember that it is perfectly possible to be compliant with GDPR while using cloud services. Cloud service providers are aware of their obligations, and many are offering GDPR-ready contracts.
+        </p>
+    ',
+    'riskstage2_q84'=>'
+        <p>
+            Your response indicates a mature approach to cloud and data protection. This may involve adapting existing cloud services to make sure they adhere to the new regulations. Or it may be that you have already made sure your cloud usage is compliant, and needs no further changes. If this is true then great: you’re ahead of the game. But a word of warning: the consequences of getting cloud usage wrong – for example by assuming cloud providers can absorb liability (they can’t) – could be severe. Make sure you have reviewed your cloud contracts and that they are GDPR-ready.
+        </p>
+    ',
+    'riskstage2_q83'=>'
+        <p>
+            Your response shows that you are actively trying to square your cloud usage with GDPR requirements. Good: GDPR places new obligations on data processors, which includes all cloud services. You seem especially concerned at the international data transfer rules. In fact, there is little change to the existing rules that allow data transfers, as long as there is adequate protection in place. Remember that it is perfectly possible to be compliant with GDPR while using cloud services. Cloud service providers are aware of their obligations, and many are offering GDPR-ready contracts.
+        </p>
+    ',
+    'riskstage2_q10gt28'=>'
+        <p>
+            You are extremely worried at the overall level of risk associated with GDPR. This means that you fully understand the potential impact of non-compliance, not just in terms of possible fines but reputation damage, class action law suits and suspension of data processing. However, your anxiety probably also reflects an awareness that you are still exposed to this risk due to the relative immaturity of your readiness: you’re not where you need to be in your GDPR journey. We empathise. But you should have the motivation to address the issues at hand.
+        </p>
+    ',
+    'riskstage2_q10between15and27'=>'
+        <p>
+            You appear to have balanced perspective on the risks associated with GDPR. This means that you fully understand the potential impact of non-compliance, not just in terms of possible fines but reputation damage, class action law suits and suspension of data processing. But you are also in conrol of the situation, a state of mind that reflects a relative maturity of your readiness: you are where you need to be in your GDPR journey.
+        </p>
+    ',
+    'riskstage2_q113'=>'
+        <p>
+            You indicated that either limited resources or conflicting priorities is constraining your ability to create a GDPR program that spans your data management environment. Such responses are typical of organisations in the middle stages of compliance efforts. Ultimately it comes down to an assessment of the risk for each organisation. A thorough risk evaluation should identify the required resources and resolve conflicting priorities. It may be then that there is a lack of awareness and leadership at board level, resulting in insufficient commitment to GDPR. This is serious, so board engagement is essential if you want to meet your GDPR aspirations.
+        </p>
+    ',
+    'riskstage2_q114'=>'
+        <p>
+            You indicated that either a lack of collaboration or a fragmentation of data management systems is constraining your ability to create a GDPR program that spans your data management environment. Such responses are typical of organisations in the later stages of compliance efforts. Your program is well under way, but it may be stuck within one department. A critical success factor for GDPR is cross-functional collaboration: GDPR is too important to stay within fiefdoms.
+        </p>
+        <p>
+            A fragmented data management environment could be harder to fix: big data and analytics are often critical to business functions. But they can also represent a source of risk, in the volume of personal data held and in the use of that data for multiple purposes. An integrated approach to data governance is essential to efficient GDPR compliance, so focus on this as a core activity in embedding operational excellence in compliance.
+        </p>
+    ',
+
+    'riskstage4'=>'
+        <h1>STAGE 4: Time to Optimise</h1>
+        <p>
+            It seems that you are at the developing stages of risk awareness, and are ready to accelerate. You appear to be engaged in asking the right kinds of questions, and they are increasingly sophisticated. You are challenged by some advanced requirements, and seem appropriately concerned about the increased risk levels associated with GDPR. However, your struggle to prioritise resources reflects a need to re-emphasis awareness, particularly at board level.
+        </p>
+    ',
+    'riskstage4_q79or10'=>'
+        <p>
+            Your responses indicate that you are challenged by a combination of some basic requirements of GDPR and a few of the more advanced compliance actions. This probably includes things like encrypting personal data, consent management and training staff on new risk and obligations. This is a measure of the progress you are making: good news. However, now you need to move on to other advanced areas like extending data governance processes to cloud and mobile environments, and establishing a state of the art security posture.
+        </p>
+    ',
+    'riskstage4_q7gt10'=>'
+        <p>
+            Your responses indicate that you are challenged by the more advance requirements of GDPR. This is most likely a reflection of your advanced state of readiness. You’ll be focusing on things like incident response planning and extending data governance processes to cloud and mobile environments. However, make sure you have already solved some of the foundation layers like consent management, anonymization or pseudonymisation of data, and training staff on new risk and obligations.
+        </p>
+    ',
+    'riskstage4_q83'=>'
+        <p>
+            Your response shows that you are actively trying to square your cloud usage with GDPR requirements. Good: GDPR places new obligations on data processors, which includes all cloud services. You seem especially concerned at the international data transfer rules. In fact, there is little change to the existing rules that allow data transfers, as long as there is adequate protection in place. Remember that it is perfectly possible to be compliant with GDPR while using cloud services. Cloud service providers are aware of their obligations, and many are offering GDPR-ready contracts.
+        </p>
+    ',
+    'riskstage4_q84'=>'
+        <p>
+            Your response indicates a mature approach to cloud and data protection. This may involve adapting existing cloud services to make sure they adhere to the new regulations. Or it may be that you have already made sure your cloud usage is compliant, and needs no further changes. If this is true then great: you’re ahead of the game. But a word of warning: the consequences of getting cloud usage wrong – for example by assuming cloud providers can absorb liability (they can’t) – could be severe. Make sure you have reviewed your cloud contracts and that they are GDPR-ready.
+        </p>
+    ',
+    'riskstage4_q10gt28'=>'
+        <p>
+            You are extremely worried at the overall level of risk associated with GDPR. This means that you fully understand the potential impact of non-compliance, not just in terms of possible fines but reputation damage, class action law suits and suspension of data processing. However, your anxiety probably also reflects an awareness that you are still exposed to this risk due to the relative immaturity of your readiness: you’re not where you need to be in your GDPR journey. We empathise. But you should have the motivation to address the issues at hand.
+        </p>
+    ',
+    'riskstage4_q10between15and27'=>'
+        <p>
+            You appear to have balanced perspective on the risks associated with GDPR. This means that you fully understand the potential impact of non-compliance, not just in terms of possible fines but reputation damage, class action law suits and suspension of data processing. But you are also in conrol of the situation, a state of mind that reflects a relative maturity of your readiness: you are where you need to be in your GDPR journey.
+        </p>
+    ',
+    'riskstage4_q113'=>'
+        <p>
+            You indicated that either limited resources or conflicting priorities is constraining your ability to create a GDPR program that spans your data management environment. Such responses are typical of organisations in the middle stages of compliance efforts. Ultimately it comes down to an assessment of the risk for each organisation. A thorough risk evaluation should identify the required resources and resolve conflicting priorities. It may be then that there is a lack of awareness and leadership at board level, resulting in insufficient commitment to GDPR. This is serious, so board engagement is essential if you want to meet your GDPR aspirations.
+        </p>
+    ',
+    'riskstage4_q114'=>'
+        <p>
+            You indicated that either a lack of collaboration or a fragmentation of data management systems is constraining your ability to create a GDPR program that spans your data management environment. Such responses are typical of organisations in the later stages of compliance efforts. Your program is well under way, but it may be stuck within one department. A critical success factor for GDPR is cross-functional collaboration: GDPR is too important to stay within fiefdoms.
+        </p>
+        <p>
+            A fragmented data management environment could be harder to fix: big data and analytics are often critical to business functions. But they can also represent a source of risk, in the volume of personal data held and in the use of that data for multiple purposes. An integrated approach to data governance is essential to efficient GDPR compliance, so focus on this as a core activity in embedding operational excellence in compliance.
+        </p>
     ',
 
     /*'introduction-image' => 'report1.jpg',*/
