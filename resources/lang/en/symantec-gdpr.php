@@ -15,13 +15,13 @@ return array(
         <a class="btn btn--primary" target="_blank" href="https://www.symantec.com">
             Click here for more information
         </a>',
-    'complete_tweet' => 'I\'ve just taken the @IDCEMEA Security Assessment Tool for @splunk. Interested? ',// http://bit.ly/2gslXEh
+    'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @symantec. Interested? ',// http://bit.ly/2gslXEh
     'email'=>[
-        'subject' => 'IDC\'s Security Assessment',
+        'subject' => 'IDC and Symantec GDPR Readiness Assessment',
         'hi' => 'Hi :Fname',
-        'body' => 'As promised, here\'s a link to download your Security Assessment. This breaks down your results by category and provides you with actionable recommendations.',
+        'body' => 'As promised, here\'s a link to download your GDPR Readiness Assessment. This breaks down your results by category and provides you with actionable recommendations.',
         'link' => 'Download Report',
-        'extra' => 'Once you\'ve digested the report why not visit <a href="https://www.symantec.com" style="color:#65A637">Splunk</a>',
+        'extra' => 'Once you\'ve read the report why not visit <a href="https://www.symantec.com" style="color:#FDBB30">Symantec</a>',
         'regards' => 'Regards',
         'team' => 'The IDC Team'
     ],
