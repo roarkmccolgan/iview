@@ -115,37 +115,37 @@ return array(
         'types' => array(
             'stage1' => array(
                 'low' => 0,
-                'high' => 10.8,
+                'high' => 47,
                 'total' => 2,
-                'benchmark' => 1,
+                'benchmark' => 20,
                 'copy' => 'general.6integration-poor-txt'
             ),
             'stage2' => array(
-                'low' => 10.9,
-                'high' => 15.6,
+                'low' => 48,
+                'high' => 67,
                 'total' => 3,
-                'benchmark' => 16,
+                'benchmark' => 34,
                 'copy' => 'general.6integration-standard-txt'
             ),
             'stage3' => array(
-                'low' => 15.7,
-                'high' => 20.4,
+                'low' => 1000,
+                'high' => 1001,
                 'total' => 5,
-                'benchmark' => 34,
+                'benchmark' => 28,
                 'copy' => 'general.6integration-good-txt'
             ),
             'stage4' => array(
-                'low' => 20.5,
-                'high' => 25.2,
+                'low' => 68,
+                'high' => 84,
                 'total' => 5,
-                'benchmark' => 43,
+                'benchmark' => 12,
                 'copy' => 'general.6integration-aspirational-txt'
             ),
             'stage5' => array(
-                'low' => 25.3,
-                'high' => 50,
+                'low' => 1002,
+                'high' => 1003,
                 'total' => 5,
-                'benchmark' => 6,
+                'benchmark' => 5,
                 'copy' => 'general.6integration-best-txt'
             )
         )

@@ -367,6 +367,7 @@ public function getComplete(Request $request)
 	$this->loadQuestions();
 	//dd($this->quiz);
 	$this->calcResults();
+	//dd(session('result'));
 	$currentLocal = App::getLocale();
 	$localQuestions = $currentLocal=='en' ? '' : $currentLocal;
 	$btnclass = '';
@@ -624,7 +625,11 @@ public function postComplete(SubmitAssessmentsRequest $request)
 	}
 	Mail::queue('emails.echo', $data, function ($message) use ($assessment, $subject) {
 		$message->from('notifications@mg.idcready.net', 'IDC Notifications');
-		$message->to($assessment['email'], $assessment['fname'].' '.$assessment['sname'])->bcc()->subject($subject);
+		$message->to($assessment['email'], $assessment['fname'].' '.$assessment['sname']);
+		if(!empty($bcc)){
+			$message->bcc($bcc);
+		}
+		$message->subject($subject);
 	});
 
 	//send mail to notification people
@@ -781,7 +786,6 @@ public function postComplete(SubmitAssessmentsRequest $request)
     				}
     			}
     		}
-	//$result['overall']['score'] += $result[$section]['score'];
     		foreach ($this->baseline['overall']['types'] as $rating => $limits) {
     			if($result['overall']['score']>=$limits['low'] && $result['overall']['score']<=$limits['high']){
     				$result['overall']['rating'] = $rating;
@@ -790,11 +794,11 @@ public function postComplete(SubmitAssessmentsRequest $request)
     	}else{
     		foreach ($this->quiz as $key => $value) {
     			if($key!=='screeners'){
-				if (!is_array($value['pages']) && !is_object($value['pages'])) {
-					Log::info('Section '.$key.' pages', $value['pages']);
-					Log::info('Quiz', $this->quiz);
-					abort(500, 'An internal error has occured, we have documented it and will correct it prompty. ');
-				}
+					if (!is_array($value['pages']) && !is_object($value['pages'])) {
+						Log::info('Section '.$key.' pages', $value['pages']);
+						Log::info('Quiz', $this->quiz);
+						abort(500, 'An internal error has occured, we have documented it and will correct it prompty. ');
+					}
     				foreach ($value['pages'] as $page => $props) {
     					foreach ($props['questions'] as $q => $details) {
     						if(!isset($details['ignore']) || $details['ignore']==false ){ // ignore answer
