@@ -7,7 +7,7 @@
 	<meta name="author" content="">
 	<title>PDF Report</title>
 	<link rel="stylesheet" href="/css/templates/normalize.css">
-	<link rel="stylesheet" href="/css/templates/default/report_{{ app('request')->input('tool_id') }}.css">
+	<link rel="stylesheet" href="/css/templates/symantecgdpr/report_7.css">
 </head>
 <body style="margin: 0; padding: 0;">
 	<table class="header" style="width: 100%;" cellpadding="0" cellspacing="0">

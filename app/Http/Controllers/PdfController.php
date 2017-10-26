@@ -597,21 +597,15 @@ class PdfController extends Controller
 
 			$customCopy.= trans(session('product.alias').'.riskintro');
 
-			if($q6+$q8 < 14){
+			if($q6+$q9 < 14){
 				$customCopy.= trans(session('product.alias').'.riskstage1');
 
-				if($q6<9){
-					$customCopy.= trans(session('product.alias').'.riskstage1_q7lt9');
-				}
-				if($q6==9 || $q6==10){
-					$customCopy.= trans(session('product.alias').'.riskstage1_q79or10');
-				}
-				/*if($q8==2){
+				if($q6==2){
 					$customCopy.= trans(session('product.alias').'.riskstage1_q82');
 				}
-				if($q8==3){
+				if($q6==3){
 					$customCopy.= trans(session('product.alias').'.riskstage1_q83');
-				}*/
+				}
 				if($q8<15){
 					$customCopy.= trans(session('product.alias').'.riskstage1_q10lt15');
 				}
@@ -631,21 +625,21 @@ class PdfController extends Controller
 				
 			}
 
-			if($q6+$q8 > 14 && $q6+$q8 <= 17){
+			if($q6+$q9 > 14 && $q6+$q9 <= 17){
 				$customCopy.= trans(session('product.alias').'.riskstage2');
 
-				if($q6==9 || $q6==10){
+				/*if($q6==9 || $q6==10){
 					$customCopy.= trans(session('product.alias').'.riskstage2_q79or10');
 				}
 				if($q6>10){
 					$customCopy.= trans(session('product.alias').'.riskstage2_q7gt10');
-				}
-				/*if($q8==3){
+				}*/
+				if($q6==3){
 					$customCopy.= trans(session('product.alias').'.riskstage2_q83');
 				}
-				if($q8==4){
+				if($q6==4){
 					$customCopy.= trans(session('product.alias').'.riskstage2_q84');
-				}*/
+				}
 				if($q8>28){
 					$customCopy.= trans(session('product.alias').'.riskstage2_q10gt28');
 				}
@@ -660,21 +654,22 @@ class PdfController extends Controller
 				}
 			}
 
-			if($q6+$q8 > 17){
+			if($q6+$q9 > 17){
 				$customCopy.= trans(session('product.alias').'.riskstage4');
 
-				if($q6==9 || $q6==10){
+				/*if($q6==9 || $q6==10){
 					$customCopy.= trans(session('product.alias').'.riskstage4_q79or10');
 				}
 				if($q6>10){
 					$customCopy.= trans(session('product.alias').'.riskstage4_q7gt10');
-				}
-				/*if($q8==3){
+				}*/
+				if($q6==3){
 					$customCopy.= trans(session('product.alias').'.riskstage2_q83');
 				}
-				if($q8==4){
+				if($q6==4){
 					$customCopy.= trans(session('product.alias').'.riskstage2_q84');
-				}*/
+				}
+
 				if($q8>28){
 					$customCopy.= trans(session('product.alias').'.riskstage4_q10gt28');
 				}
@@ -689,11 +684,6 @@ class PdfController extends Controller
 				}
 			}
 
-
-
-			
-
-			
 
 			$vars['sectionCopy'] = $customCopy;
 			
