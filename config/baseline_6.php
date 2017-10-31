@@ -65,7 +65,7 @@ return array(
             'stage5' => array(
                 'low' => 90.01,
                 'high' => 200,
-                'copy' => 'general.6Advancedtxt',
+                'copy' => 'general.6Besttxt',
                 'tweet' => false,
                 'benchmark' => 21,
             )
