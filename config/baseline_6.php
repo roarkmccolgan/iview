@@ -73,7 +73,7 @@ return array(
         'tweet' => false,
         'include_answers_in_download_report' => true,
         'notifications' => [
-            'bccreports' => ['ftang@idc.com'],
+            'bccreports' => ['emailtosalesforce@l-1nnmhnv7215yvdtk61l2v1yozj41ni63q0pydiz04lpxg1w08i.24-pfh5eae.eu6.le.salesforce.com'],
             'ignoreadmin' => ['tara.burton@bt.com','wendy_francis@mcafee.com'],
         ],
     ),

@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Support\Facades\App;
 use App\Http\Requests;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Lang;
+use Illuminate\Support\Facades\View;
 use Lava;
 use PDF;
 
@@ -296,7 +297,7 @@ class PdfController extends Controller
 			$vars['introImage'] = Lang::has(session('product.alias').'.introduction-image') ? trans(session('product.alias').'.introduction-image') : false;
 			$vars['introRating'] = trans(session('product.alias').'.'.session('result.overall.rating'));
 			$vars['questions'] = session('questions');
-		} elseif(session('product.id')==6){
+		} elseif(session('product.id')==6){ //btmcafee
 			$widthstage = [13, 38, 65, 90, 118];
 			$sectionVars = [];
 
@@ -343,9 +344,10 @@ class PdfController extends Controller
 			$demographicsizeanswer = session('questions.screeners.pages.page2.questions.s2.selected');
 			
 			$demographicsizeanswer = explode('|', $demographicsizeanswer);
-			$demographicsizeanswer = str_replace([" ",","], ["-",""], $demographicsizeanswer[0]);
+			$demographicsizeanswer = strtolower(str_replace([" ",","], ["-",""], $demographicsizeanswer[0]));
 
 			$overallsizenumber = config('baseline_'.session('product.id').'.overall.benchmark-size-'.$demographicsizeanswer);
+
 			if($number > $overallsizenumber){
 				$overallsize = $number-$overallsizenumber.' '.str_plural('level', $number-$overallsizenumber).' ahead of the leaders in companies of the same size';
 			}elseif($number == $overallsizenumber){
@@ -394,20 +396,21 @@ class PdfController extends Controller
 			$sectionCopy = '';
 			$customCopy = '';
 
-			//overall
-			$value = session('result.overall.score');
-			
-			if($value >75 ){
-				$customCopy.= trans(session('product.alias').'.overall-good');
+			//Integration automation 
+			$value = session('result.integration.score') + session('result.automation.score');
+			if($value > 37.52){
+				$customCopy.= trans(session('product.alias').'.integration-automation-good');
 			}
-			if($value >60 &&  $value <=75){
-				$customCopy.= trans(session('product.alias').'.overall-moderate');
+			if($value >= 22.51 && $value <= 30){
+				$customCopy.= trans(session('product.alias').'.integration-automation-moderate');
 			}
-			if($value <=60){
-				$customCopy.= trans(session('product.alias').'.overall-weak');
+			if($value <= 22.50){
+				$customCopy.= trans(session('product.alias').'.integration-automation-weak');
 			}
+
 			if($customCopy!=''){
-				$sectionCopy = $customCopy;
+				$sectionCopy.= trans(session('product.alias').'.integration-automation-heading');
+				$sectionCopy.= $customCopy;
 				$customCopy = '';
 			}
 			
@@ -452,7 +455,7 @@ class PdfController extends Controller
 
 			$vars['sectionCopy'] = $sectionCopy;
 			
-			//$vars['summary'] = trans(session('product.alias').'.summary');;
+			$vars['summary'] = trans(session('product.alias').'.summary');
 
 			$vars['introImage'] = Lang::has(session('product.alias').'.introduction-image') ? trans(session('product.alias').'.introduction-image') : false;
 			$vars['introRating'] = trans(session('product.alias').'.'.session('result.overall.rating'));

@@ -451,7 +451,7 @@ trait GenerateReportTrait {
 
 			$vars['sectionCopy'] = $sectionCopy;
 			
-			//$vars['summary'] = trans(session('product.alias').'.summary');;
+			$vars['summary'] = trans(session('product.alias').'.summary');
 
 			$vars['introImage'] = Lang::has(session('product.alias').'.introduction-image') ? trans(session('product.alias').'.introduction-image') : false;
 			$vars['introRating'] = trans(session('product.alias').'.'.session('result.overall.rating'));
@@ -845,7 +845,7 @@ trait GenerateReportTrait {
 			if(File::exists(storage_path().'/'.$assessment_id.'_'.$name.'.pdf')){
 				File::delete(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
 			}
-		}elseif(session('product.id')==6){
+		}/*elseif(session('product.id')==6){
 			$pdf->save(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
 
 			$merge = new \LynX39\LaraPdfMerger\PDFManage;
@@ -859,7 +859,7 @@ trait GenerateReportTrait {
 			if(File::exists(storage_path().'/'.$assessment_id.'_'.$name.'.pdf')){
 				File::delete(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
 			}
-		}elseif(session('product.id')==7){
+		}*/elseif(session('product.id')==7){
 			$pdf->save(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
 
 			$merge = new \LynX39\LaraPdfMerger\PDFManage;

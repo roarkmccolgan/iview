@@ -26,6 +26,7 @@ return array(
         'team' => 'The IDC Team'
     ],
     'introduction' => '
+        <div class="spacer"></div>
         <h2>Overall Results</h2>
         <p>
             Based on your responses, you are placed within <strong>:percent</strong>% of companies overall in the readiness group of <strong>:result</strong>, which is the <strong>:number:ordinal</strong> level out of five.
@@ -153,13 +154,44 @@ return array(
         <div class="spacer"></div>
         <h2>Essential Guidance</h2>
         <p>
-            Security is typically top of list of barriers for driving new IT initiatives, from developing and deploying new applications and services, to taking advantage of new IT architectures such as hybrid cloud. Proactive IT security monitoring, detection and response – built on a standardized platform with automation and analytics – will be one of the factors that differentiate the top performing digital businesses that can move quickly with market conditions. Achieving this will not come without risks and pitfalls, including
+            Security is a continually evolving set of processes and technologies. The challenge is to keep your security operations up to date with changes in the threat landscape as well as the demands from business to support digital transformation programmes and compliance obligations. The demands on security operations are unlikely to ease any time soon. More will be expected of you, but budget and resource increases are unlikely to rise in line.
         </p>
-        <ul>
-            <li>Going in without a plan – Security need to be both deliberate and thoughtful, so make a conscious move to avoid buying products to fill gaps in capabilities. Utilize the skills of third party security experts who have hard won experience and insight to help build solutions that are known to work and to be manageable.</li>
-            <li>Boiling the ocean – while it may seem the best solution is to rip everything up and start again, that is seldom a productive approach. Instead, look to improve your capabilities in select areas, and then build on your approach. As the level of adoption and experience rises, more of the IT infrastructure can be brought in to benefit from the advancements.</li>
-            <li>Open inter-operability – we don’t know what the future will bring, and being locked in to proprietary interfaces will hinder the ability to secure the IT estate as it grows and changes. Look to solutions that integrate well as a stack, but also support expansion through open, stable and well defined APIs and interfaces.</li>
+        <p>
+            As you seek to continually improve your security operations there are a number of important considerations to keep in mind:
+        </p>
+        <ul class="primary">
+            <li>Security is now a strategic priority for businesses. It therefore must be aligned to business strategy, and the executive must be adequately and appropriately informed of risks as they emerge and change. Security should be positioned as a business enabler, so work hard at communicating the risks and benefits in terms members will understand.</li>
+            <li>An ad hoc and fragmented approach to security technology acquisition is not appropriate for the demands of a modern security operations team. Solutions exist today that enable an integrated and ballistic security architecture that provides both the visibility across the entire estate and the control and management tools to assess security posture. Automation follows integration, and this is essential if security operations are to deliver better efficiency and effectiveness within the prevailing resource constraints.</li>
+            <li>Innovation in the security world has for too long largely been in the domain of the attacker. This balance is now being restored, and a plethora of new technologies have emerged over the past five years that offer capabilities that drive security to new heights. Many of these new technologies can be deployed in the cloud, and even more through managed security services, helping organisations to maintain a security operation that is state of the art.</li>
         </ul>
+        <div class="pb"></div>
+        <div class="spacer"></div>
+        <p>
+            A Security Incident and Event Management System (SIEM) can help you understand what is happening real time on your networks, detect and highlight malicious activity, threats and attempted hacks before they become an issue. A SIEM, configured and integrated with your network and IT infrastructure, can be used not just to improve situational awareness, but also as a platform to orchestrate and automate responses and to stop attacks well before they become serious breaches.
+        </p>
+        <p>
+            BT and McAfee have joined forces to gather, analyse and share the latest intelligence, so that protective controls can be updated in real-time. This allows organisations to close the gap between detection and protection. Our partnership means you get access to the latest technology and security intelligence at competitive prices. Together we offer intelligent SOC and SIEM capabilities as a managed service across Europe, able to support customers worldwide. Our joint solutions contain McAfee\'s dynamic endpoint, Data Loss Prevention, SIEM and associated technologies.
+        </p>
+        <p>
+            We offer the combined benefits of McAfee’s visibility and management of endpoints, currently protecting over 188 million endpoints, alongside BT’s heritage in customers’ managed security operations and unique carrier-level insight. With BT’s 2500+ security specialists on hand, you benefit from expertise in the latest technologies and 24x7x365 cover.
+        </p>
+        <p>
+            From our 14 global Security Operations Centres we provide a centralised monitoring of your SIEM, giving you the information you need to respond proactively and our highly scalable service can meet the needs of all sizes of organisation – from those organisations with a few sites and hundreds of devices though to global organisations with many thousands of devices that need monitoring.
+        </p>
+        <div class="spacer"></div>
+        <table style="margin-top: 10mm; width: 170mm;" cellspacing="5">
+            <tr>
+                <td style="text-align: center; vertical-align: center; background-image: url(\'http://securebusiness.idcready.net/images/tools/6/link-01.png\');background-size: 56mm 52mm; background-repeat: no-repeat; width: 56mm; height: 52mm; position: relative;">
+                    <a href="https://www.globalservices.bt.com/uk/en/form/speak-to-bt-mcafee-expert?cid=aff_(sc)partners_website(cm)idc(md)whitepaper(id)mcafee" style="position: absolute; top: 0; left: 0; width: 56mm; height: 52mm; text-decoration: none">&nbsp;</a>
+                </td>
+                <td style="text-align: center; vertical-align: center; background-image: url(\'http://securebusiness.idcready.net/images/tools/6/link-02.png\');background-size: 56mm 52mm; background-repeat: no-repeat; width: 56mm; height: 52mm; position: relative;">
+                    <a href="https://www.globalservices.bt.com/uk/en/form/siem-showcase-visit?cid=aff_(sc)partners_website(cm)idc(md)whitepaper(id)showcase" style="position: absolute; top: 0; left: 0; width: 56mm; height: 52mm; text-decoration: none">&nbsp;</a>
+                </td>
+                <td style="text-align: center; vertical-align: center; background-image: url(\'http://securebusiness.idcready.net/images/tools/6/link-03.png\');background-size: 56mm 52mm; background-repeat: no-repeat; width: 56mm; height: 52mm; position: relative;">
+                    <a href="http://securebusiness.idcready.net/downloads/BT-Managed-SIEM-Security.pdf" style="position: absolute; top: 0; left: 0; width: 56mm; height: 52mm; text-decoration: none">&nbsp;</a>
+                </td>
+            </tr>
+        </table>
     ',
 
     /*'introduction-image' => 'report1.jpg',*/
