@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "333b4d884738ec3eb9743a9a2ecfdca6",
+    "content-hash": "7b63d3b243fa89e78e58cd417776d5b0",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -695,31 +695,30 @@
         },
         {
             "name": "khill/lavacharts",
-            "version": "3.0.4",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kevinkhill/lavacharts.git",
-                "reference": "c95cf815948db511c9c44270d50f7bc37861d81d"
+                "reference": "4c2b01f531cc587415df6bbe2343b15b4da5e6e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kevinkhill/lavacharts/zipball/c95cf815948db511c9c44270d50f7bc37861d81d",
-                "reference": "c95cf815948db511c9c44270d50f7bc37861d81d",
+                "url": "https://api.github.com/repos/kevinkhill/lavacharts/zipball/4c2b01f531cc587415df6bbe2343b15b4da5e6e6",
+                "reference": "4c2b01f531cc587415df6bbe2343b15b4da5e6e6",
                 "shasum": ""
             },
             "require": {
                 "nesbot/carbon": "~1.14",
-                "php": ">=5.4.0"
+                "php": ">=5.6.0"
             },
             "require-dev": {
-                "mockery/mockery": "~0.9",
-                "mybuilder/phpunit-accelerator": "~1.1",
-                "phpunit/phpunit": "~4.5",
-                "satooshi/php-coveralls": "~1.0",
-                "squizlabs/php_codesniffer": "~2.5"
-            },
-            "suggest": {
-                "khill/datatableplus": "Adds extra features to DataTables such as csv and laravel collection parsing."
+                "codeclimate/php-test-reporter": "^0.4.4",
+                "justinrainbow/json-schema": "^5.2",
+                "mockery/mockery": "^0.9",
+                "mybuilder/phpunit-accelerator": "^2.0",
+                "phpunit/phpunit": "^5.7",
+                "satooshi/php-coveralls": "^1.0",
+                "squizlabs/php_codesniffer": "^3.0"
             },
             "type": "library",
             "autoload": {
@@ -736,51 +735,19 @@
                     "name": "Kevin Hill",
                     "email": "kevinkhill@gmail.com",
                     "role": "Creator"
-                },
-                {
-                    "name": "deringer",
-                    "homepage": "https://github.com/deringer",
-                    "role": "Contributor"
-                },
-                {
-                    "name": "stevebauman",
-                    "homepage": "https://github.com/stevebauman",
-                    "role": "Contributor"
-                },
-                {
-                    "name": "rajivseelam",
-                    "homepage": "https://github.com/rajivseelam",
-                    "role": "Contributor"
-                },
-                {
-                    "name": "tobias-kuendig",
-                    "homepage": "https://github.com/tobias-kuendig",
-                    "role": "Contributor"
-                },
-                {
-                    "name": "Stonos",
-                    "homepage": "https://github.com/Stonos",
-                    "role": "Contributor"
-                },
-                {
-                    "name": "MicahKV",
-                    "email": "micah138@yahoo.com",
-                    "role": "Contributor"
-                },
-                {
-                    "name": "SendDerek",
-                    "homepage": "https://github.com/SendDerek",
-                    "role": "Contributor"
                 }
             ],
             "description": "PHP wrapper library for the Google Chart API",
             "homepage": "http://lavacharts.com",
             "keywords": [
+                "angular",
                 "charts",
                 "google",
-                "graphs"
+                "graphs",
+                "laravel",
+                "symfony"
             ],
-            "time": "2016-04-28T14:43:39+00:00"
+            "time": "2017-08-21T20:17:33+00:00"
         },
         {
             "name": "knplabs/knp-snappy",
@@ -3273,12 +3240,12 @@
             "version": "0.9.6",
             "source": {
                 "type": "git",
-                "url": "https://github.com/padraic/mockery.git",
+                "url": "https://github.com/mockery/mockery.git",
                 "reference": "65d4ca18e15cb02eeb1e5336f884e46b9b905be0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/padraic/mockery/zipball/65d4ca18e15cb02eeb1e5336f884e46b9b905be0",
+                "url": "https://api.github.com/repos/mockery/mockery/zipball/65d4ca18e15cb02eeb1e5336f884e46b9b905be0",
                 "reference": "65d4ca18e15cb02eeb1e5336f884e46b9b905be0",
                 "shasum": ""
             },
@@ -4450,6 +4417,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "khill/lavacharts": 20,
         "lynx39/lara-pdf-merger": 20
     },
     "prefer-stable": false,

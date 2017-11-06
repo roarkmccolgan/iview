@@ -609,7 +609,7 @@ public function postComplete(SubmitAssessmentsRequest $request)
 
 
 	    $this->dispatch(new SendEloquaRequest($url, $query));
-	}
+}
 	$subject = trans(session('product.alias').'.email.subject');
 	$viewData = [
 		'assessment'=>$assessment,
@@ -623,7 +623,8 @@ public function postComplete(SubmitAssessmentsRequest $request)
 			$bcc[] = $address;
 		}
 	}
-	Mail::queue('emails.echo', $data, function ($message) use ($assessment, $subject) {
+	
+	Mail::queue('emails.echo', $data, function ($message) use ($assessment, $subject, $bcc) {
 		$message->from('notifications@mg.idcready.net', 'IDC Notifications');
 		$message->to($assessment['email'], $assessment['fname'].' '.$assessment['sname']);
 		if(!empty($bcc)){

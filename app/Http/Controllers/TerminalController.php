@@ -31,6 +31,10 @@ class TerminalController extends Controller
 
         Carbon::setToStringFormat('m-d-Y');
         $startDate = Carbon::now()->subMonth();
+        
+        if($startDate->lt($tool->start_date)){
+            $startDate = $tool->start_date;
+        }
         $endDate = Carbon::now();
         $customDate = false;
         if($request->input('reporting')){
