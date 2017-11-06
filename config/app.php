@@ -233,6 +233,7 @@ return [
         'Ekko' => Laravelista\Ekko\Facades\Ekko::class,
         'PDF' => Barryvdh\Snappy\Facades\SnappyPdf::class,
         'SnappyImage' => Barryvdh\Snappy\Facades\SnappyImage::class,
+        'Lava' => Khill\Lavacharts\Laravel\LavachartsFacade::class,
         'PdfMerger' => LynX39\LaraPdfMerger\Facades\PdfMerger::class,
     ],
 
