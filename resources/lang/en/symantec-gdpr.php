@@ -37,7 +37,7 @@ return array(
             Further insight and detailed recommendations are highlighted below, taking you through components of Leadership and General Obligations, Data Rights and Standards, as well as Security. The report delivers an assessment of your stage of readiness as well as individual recommendations on how to improve these areas.
         </p>
         <p>
-            Your performance in each area is compared to your peers on the following page.
+            Your performance in each area based on IDC\'s GDPR research is shown on the following pages
         </p>
         <div class="pb"></div>
         <div class="spacer"></div>
