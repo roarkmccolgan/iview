@@ -33,7 +33,7 @@
                                 </div>
                                 @columnchart('overall_graph', 'overall-graph')
                             @endif
-                            <p class="mt--1">{{$sub1}}<br/>
+                            <p class="mt--1">{!!$sub1!!}<br/>
                                 {!!trans('general.'.session('product.id').'fullreport')!!}
                             </p>
                             <hr class="short">
