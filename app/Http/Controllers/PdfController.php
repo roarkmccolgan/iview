@@ -583,22 +583,22 @@ class PdfController extends Controller
 			}
 
 
-			if($q9<9){
-				$customCopy.= trans(session('product.alias').'.risk_q7lt9');
-			}
-			if($q9==9 || $q9==10){
-				$customCopy.= trans(session('product.alias').'.risk_q79or10');
-			}
-			if($q9>10){
-				$customCopy.= trans(session('product.alias').'.risk_q7gt10');
-			}
-			if($q9==2){
+			// if($q9<9){
+			// 	$customCopy.= trans(session('product.alias').'.risk_q7lt9');
+			// }
+			// if($q9==9 || $q9==10){
+			// 	$customCopy.= trans(session('product.alias').'.risk_q79or10');
+			// }
+			// if($q9>10){
+			// 	$customCopy.= trans(session('product.alias').'.risk_q7gt10');
+			// }
+			if($q6==2){
 				$customCopy.= trans(session('product.alias').'.risk_q112');
 			}
-			if($q9==3){
+			if($q6==3){
 				$customCopy.= trans(session('product.alias').'.risk_q113');
 			}
-			if($q9==4){
+			if($q6==4){
 				$customCopy.= trans(session('product.alias').'.risk_q114');
 			}
 

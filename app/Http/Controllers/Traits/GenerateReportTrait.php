@@ -579,22 +579,23 @@ trait GenerateReportTrait {
 			}
 
 
-			if($q9<9){
-				$customCopy.= trans(session('product.alias').'.risk_q7lt9');
-			}
-			if($q9==9 || $q9==10){
-				$customCopy.= trans(session('product.alias').'.risk_q79or10');
-			}
-			if($q9>10){
-				$customCopy.= trans(session('product.alias').'.risk_q7gt10');
-			}
-			if($q9==2){
+			// if($q9<9){
+			// 	$customCopy.= trans(session('product.alias').'.risk_q7lt9');
+			// }
+			// if($q9==9 || $q9==10){
+			// 	$customCopy.= trans(session('product.alias').'.risk_q79or10');
+			// }
+			// if($q9>10){
+			// 	$customCopy.= trans(session('product.alias').'.risk_q7gt10');
+			// }
+			//here
+			if($q6==2){
 				$customCopy.= trans(session('product.alias').'.risk_q112');
 			}
-			if($q9==3){
+			if($q6==3){
 				$customCopy.= trans(session('product.alias').'.risk_q113');
 			}
-			if($q9==4){
+			if($q6==4){
 				$customCopy.= trans(session('product.alias').'.risk_q114');
 			}
 
@@ -607,7 +608,7 @@ trait GenerateReportTrait {
 				if($q8>=15 && $q8<=27){
 					$customCopy.= trans(session('product.alias').'.risk_q10between15and27');
 				}
-				if($q8>28){
+				if($q8>27){
 					$customCopy.= trans(session('product.alias').'.risk_q10gt28');
 				}
 			}
@@ -619,7 +620,7 @@ trait GenerateReportTrait {
 				if($q8>=15 && $q8<=27){
 					$customCopy.= trans(session('product.alias').'.risk_q10between15and27');
 				}
-				if($q8>28){
+				if($q8>27){
 					$customCopy.= trans(session('product.alias').'.risk_q10gt28');
 				}
 			}
