@@ -14,7 +14,7 @@ return array(
                 'questions' => array(
                     'q1'=>array(
                         'type'=>'radio',
-                        'question'=>'Which of the following best describes your organisation’s approach to GDPR compliance? <span class="small">(Choose 1)</span>',
+                        'question'=>'Which of the following best describes your organisation\'s approach to GDPR compliance? <span class="small">(Choose 1)</span>',
                         'name'=>'q1',
                         'options'=>array(
                             array(
@@ -349,7 +349,7 @@ return array(
                 'questions' => array(
                     'q6' => array(
                         'type'=>'radio',
-                        'question'=>'After assessing the GDPR compliance of cloud services, what effect do you think GDPR will have on your use of cloud services?',
+                        'question'=>'What effect will GDPR have on your use of cloud services?',
                         'name'=>'q6',
                         'required' > 1,
                         'options'=>array(
@@ -602,13 +602,13 @@ return array(
                 'questions' => array(
                     'q9' => array(
                         'type'=>'checkbox',
-                        'question'=>'Which of the following is most limiting your ability to establish full GDPR compliance across your data management environment? <span class="small">select 3</span>',
+                        'question'=>'What is limiting your ability to establish full GDPR compliance across your data management environment? <span class="small">select 3</span>',
                         'name'=>'q9',
                         'required'=>3,
                         'max'=>3,
                         'options'=>array(
                             array(
-                                'label'=>'Lack of specific GDPR compliance knowledge or skills',
+                                'label'=>'Lack of GDPR compliance knowledge',
                                 'value'=>2,
                                 'checked'=>false
                             ),
@@ -618,7 +618,7 @@ return array(
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Limited resources to implement GDPR compliance',
+                                'label'=>'Limited resources',
                                 'value'=>3,
                                 'checked'=>false
                             ),

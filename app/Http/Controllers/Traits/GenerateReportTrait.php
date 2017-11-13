@@ -485,48 +485,40 @@ trait GenerateReportTrait {
 			$q7 = $this->getQuestionScore(7, 'gdpr');
 
 			$customCopy.= trans(session('product.alias').'.overallintro');
-			//stage 1
+
 			if($q1+$q7 < 5){
 				$customCopy.= trans(session('product.alias').'.overallstage1');
-				if($q1==1 || $q1==2){
-					$customCopy.= trans(session('product.alias').'.overallstage1_q1aorb');
-				}
-				if($q7==4){
-					$customCopy.= trans(session('product.alias').'.overallstage1_q9a');
-				}
-				if($q7==3){
-					$customCopy.= trans(session('product.alias').'.overallstage1_q9b');
-				}
 			}
-
-			//stage 2
 			if($q1+$q7 == 5 || $q1+$q7 == 6 || $q1+$q7 == 7){
 				$customCopy.= trans(session('product.alias').'.overallstage2');
-				if($q1==3 || $q1==4){
-					$customCopy.= trans(session('product.alias').'.overallstage2_q2cord');
-				}
-				if($q7==4){
-					$customCopy.= trans(session('product.alias').'.overallstage2_q9a');
-				}
-				if($q7==3){
-					$customCopy.= trans(session('product.alias').'.overallstage2_q9b');
-				}
 			}
-
-			//stage 4
 			if($q1+$q7 > 7){
 				$customCopy.= trans(session('product.alias').'.overallstage4');
-
-				if($q1==5){
-					$customCopy.= trans(session('product.alias').'.overallstage4_q2eforg');
-				}
-				if($q7==4){
-					$customCopy.= trans(session('product.alias').'.overallstage4_q9a');
-				}
-				if($q7==3){
-					$customCopy.= trans(session('product.alias').'.overallstage4_q9b');
-				}
 			}
+
+			//Dynamic
+			if($q1==1 || $q1==2){
+				$customCopy.= trans(session('product.alias').'.overallq1aorb');
+			}
+			if($q1==3 || $q1==4){
+				$customCopy.= trans(session('product.alias').'.overallq1cord');
+			}
+			if($q1==5){
+				$customCopy.= trans(session('product.alias').'.overallq1e');
+			}
+
+
+			if($q7==4){
+				$customCopy.= trans(session('product.alias').'.overallq7a');
+			}
+			if($q7==3 || $q7==2){
+				$customCopy.= trans(session('product.alias').'.overallq7borc');
+			}
+			if($q7==1){
+				$customCopy.= trans(session('product.alias').'.overallq7d');
+			}
+
+			
 			$customCopy.= '<div class="pb"></div>';
 			$customCopy.= '<div class="spacer"></div>';
 
@@ -538,54 +530,34 @@ trait GenerateReportTrait {
 
 			if($q4+$q5 < 20){
 				$customCopy.= trans(session('product.alias').'.dataawarenessstage1');
-
-				if($q4==1 || $q4==2){
-					$customCopy.= trans(session('product.alias').'.dataawarenessstage1_q5aorb');
-				}
-				if($q4==3 || $q4==4){
-					$customCopy.= trans(session('product.alias').'.dataawarenessstage1_q5cord');
-				}
-				if($q5<18){
-					$customCopy.= trans(session('product.alias').'.dataawarenessstage1_q6lt18');
-				}
-				if($q5>18 && $q5<=24){
-					$customCopy.= trans(session('product.alias').'.dataawarenessstage1_q618to24');
-				}
 			}
-
-			if($q4+$q5 > 20 && $q4+$q5 <= 25){
+			if($q4+$q5 >= 20 && $q4+$q5 <= 25){
 				$customCopy.= trans(session('product.alias').'.dataawarenessstage2');
-
-				if($q4==1 || $q4==2){
-					$customCopy.= trans(session('product.alias').'.dataawarenessstage2_q5aorb');
-				}
-				if($q4==3 || $q4==4){
-					$customCopy.= trans(session('product.alias').'.dataawarenessstage2_q5cord');
-				}
-				if($q4==5){
-					$customCopy.= trans(session('product.alias').'.dataawarenessstage2_q5e');
-				}
-				if($q5>18 && $q5<=24){
-					$customCopy.= trans(session('product.alias').'.dataawarenessstage2_q618to24');
-				}
-				if($q5>24){
-					$customCopy.= trans(session('product.alias').'.dataawarenessstage2_q6gt24');
-				}
 			}
-
 			if($q4+$q5 > 25){
 				$customCopy.= trans(session('product.alias').'.dataawarenessstage4');
-
-				if($q4==3 || $q4==4){
-					$customCopy.= trans(session('product.alias').'.dataawarenessstage4_q5cord');
-				}
-				if($q4==5){
-					$customCopy.= trans(session('product.alias').'.dataawarenessstage4_q5e');
-				}
-				if($q5>24){
-					$customCopy.= trans(session('product.alias').'.dataawarenessstage4_q6gt24');
-				}
 			}
+
+			//Dynamic
+			if($q4==1 || $q4==2){
+				$customCopy.= trans(session('product.alias').'.dataawareness_q5aorb');
+			}
+			if($q4==3 || $q4==4){
+				$customCopy.= trans(session('product.alias').'.dataawareness_q5cord');
+			}
+			if($q4==5){
+				$customCopy.= trans(session('product.alias').'.dataawareness_q5e');
+			}
+			if($q5<18){
+				$customCopy.= trans(session('product.alias').'.dataawareness_q5lt18');
+			}
+			if($q5>=18 && $q5<=24){
+				$customCopy.= trans(session('product.alias').'.dataawareness_q518to24');
+			}
+			if($q5>24){
+				$customCopy.= trans(session('product.alias').'.dataawareness_q5gt24');
+			}
+
 			$customCopy.= '<div class="pb"></div>';
 			$customCopy.= '<div class="spacer"></div>';
 
@@ -598,90 +570,82 @@ trait GenerateReportTrait {
 
 			if($q6+$q9 < 14){
 				$customCopy.= trans(session('product.alias').'.riskstage1');
-
-				if($q6==2){
-					$customCopy.= trans(session('product.alias').'.riskstage1_q82');
-				}
-				if($q6==3){
-					$customCopy.= trans(session('product.alias').'.riskstage1_q83');
-				}
-				if($q8<15){
-					$customCopy.= trans(session('product.alias').'.riskstage1_q10lt15');
-				}
-				if($q8>28){
-					$customCopy.= trans(session('product.alias').'.riskstage1_q10gt28');
-				}
-
-				if($q9==2){
-					$customCopy.= trans(session('product.alias').'.riskstage1_q112');
-				}
-				if($q9==3){
-					$customCopy.= trans(session('product.alias').'.riskstage1_q113');
-				}
-				if($q9==4){
-					$customCopy.= trans(session('product.alias').'.riskstage1_q114');
-				}
-				
 			}
-
-			if($q6+$q9 > 14 && $q6+$q9 <= 17){
+			if($q6+$q9 >= 14 && $q6+$q9 <= 17){
 				$customCopy.= trans(session('product.alias').'.riskstage2');
-
-				/*if($q6==9 || $q6==10){
-					$customCopy.= trans(session('product.alias').'.riskstage2_q79or10');
-				}
-				if($q6>10){
-					$customCopy.= trans(session('product.alias').'.riskstage2_q7gt10');
-				}*/
-				if($q6==3){
-					$customCopy.= trans(session('product.alias').'.riskstage2_q83');
-				}
-				if($q6==4){
-					$customCopy.= trans(session('product.alias').'.riskstage2_q84');
-				}
-				if($q8>28){
-					$customCopy.= trans(session('product.alias').'.riskstage2_q10gt28');
-				}
-				if($q8>=15 && $q8<=27){
-					$customCopy.= trans(session('product.alias').'.riskstage2_q10between15and27');
-				}
-				if($q9==3){
-					$customCopy.= trans(session('product.alias').'.riskstage2_q113');
-				}
-				if($q9==4){
-					$customCopy.= trans(session('product.alias').'.riskstage2_q114');
-				}
 			}
-
 			if($q6+$q9 > 17){
 				$customCopy.= trans(session('product.alias').'.riskstage4');
+			}
 
-				/*if($q6==9 || $q6==10){
-					$customCopy.= trans(session('product.alias').'.riskstage4_q79or10');
-				}
-				if($q6>10){
-					$customCopy.= trans(session('product.alias').'.riskstage4_q7gt10');
-				}*/
-				if($q6==3){
-					$customCopy.= trans(session('product.alias').'.riskstage2_q83');
-				}
-				if($q6==4){
-					$customCopy.= trans(session('product.alias').'.riskstage2_q84');
-				}
 
-				if($q8>28){
-					$customCopy.= trans(session('product.alias').'.riskstage4_q10gt28');
+			if($q9<9){
+				$customCopy.= trans(session('product.alias').'.risk_q7lt9');
+			}
+			if($q9==9 || $q9==10){
+				$customCopy.= trans(session('product.alias').'.risk_q79or10');
+			}
+			if($q9>10){
+				$customCopy.= trans(session('product.alias').'.risk_q7gt10');
+			}
+			if($q9==2){
+				$customCopy.= trans(session('product.alias').'.risk_q112');
+			}
+			if($q9==3){
+				$customCopy.= trans(session('product.alias').'.risk_q113');
+			}
+			if($q9==4){
+				$customCopy.= trans(session('product.alias').'.risk_q114');
+			}
+
+			//non scoring
+			//if stage 1 or 2
+			if(session('result.overall.rating')=='stage1' || session('result.overall.rating')=='stage2'){
+				if($q8<15){
+					$customCopy.= trans(session('product.alias').'.risk_q10lt15');
 				}
 				if($q8>=15 && $q8<=27){
-					$customCopy.= trans(session('product.alias').'.riskstage4_q10between15and27');
+					$customCopy.= trans(session('product.alias').'.risk_q10between15and27');
 				}
-				if($q9==3){
-					$customCopy.= trans(session('product.alias').'.riskstage4_q113');
-				}
-				if($q9==4){
-					$customCopy.= trans(session('product.alias').'.riskstage4_q114');
+				if($q8>28){
+					$customCopy.= trans(session('product.alias').'.risk_q10gt28');
 				}
 			}
+			//if stage 4
+			if(session('result.overall.rating')=='stage4'){
+				if($q8<15){
+					$customCopy.= trans(session('product.alias').'.risk_q10lt15');
+				}
+				if($q8>=15 && $q8<=27){
+					$customCopy.= trans(session('product.alias').'.risk_q10between15and27');
+				}
+				if($q8>28){
+					$customCopy.= trans(session('product.alias').'.risk_q10gt28');
+				}
+			}
+
+			$q9text = $this->getAnswerText(9, 'gdpr');
+
+
+			if(in_array("Lack of GDPR compliance knowledge", $q9text)){
+				$customCopy.= trans(session('product.alias').'.non9a');
+			}
+			if(in_array("Lack of budget", $q9text)){
+				$customCopy.= trans(session('product.alias').'.non9b');
+			}
+			if(in_array("Limited resources", $q9text)){
+				$customCopy.= trans(session('product.alias').'.non9c');
+			}
+			if(in_array("Conflicting priorities", $q9text)){
+				$customCopy.= trans(session('product.alias').'.non9d');
+			}
+			if(in_array("Not enough collaboration between the GDPR compliance team and other stakeholders", $q9text)){
+				$customCopy.= trans(session('product.alias').'.non9e');
+			}
+			if(in_array("Fragmentation or lack of integration of Big Data, reporting, and analytics portfolio", $q9text)){
+				$customCopy.= trans(session('product.alias').'.non9f');
+			}
+
 
 			$vars['sectionCopy'] = $customCopy;
 			
@@ -891,5 +855,20 @@ trait GenerateReportTrait {
     		$total = $select[1];
     	}
     	return $total;
+    }
+    private function getAnswerText($q, $section,$type='q'){
+    	$selected = session('questions.'.$section.'.pages.page'.$q.'.questions.'.$type.$q.'.selected');
+    	$text = 0;
+    	if(is_array($selected)){
+    		$text = [];
+    		foreach ($selected as $select) {
+    			$select = explode("|", $select);
+    			$text[] = $select[0];
+    		}
+    	}else{
+    		$select = explode("|", $selected);
+    		$text = $select[0];
+    	}
+    	return $text;
     }
 }
