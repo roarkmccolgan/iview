@@ -1,5 +1,5 @@
 <?php
-//SPLUNK
+//Symantec
 return array(
     'title' => 'Symantec GDPR Assessment',
     'sub-title' => 'Your businesses\' GDPR readiness',
@@ -218,7 +218,6 @@ return array(
         </p>
     ',
 
-
     'risk_q7lt9'=>'
         <p>
             Your responses indicate that you are challenged by the basic requirements of GDPR. These include gaining an overview of GDPR requirements, classifying data, and educating employees of the impact of GDPR. That’s fine as far as it goes, but be aware that there are many more – and complex – requirements to address on your compliance journey. Getting the foundations right is important: now you need to move on to other areas like incident response planning and extending data governance processes to cloud and mobile environments.
@@ -252,33 +251,33 @@ return array(
     ',
 
 
-    'risk_q10lt15'=>'
+    'riskstage1or2_q10lt15'=>'
         <p>
             You appear to be quite comfortable with GDPR and have not expressed a high level of concern. Given you are closer to the start of GDPR compliance than the end, have you under-estimated the potential consequences of non-compliance? It will be worth revisiting the risks associated with security breaches under GDPR. It’s not all about fines: class action law suits may be initiated by third parties beyond your control of that of the regulator. The regulator itself can order a suspension of data processing, effectively limiting your ability to trade. Overall, GDPR represents a significant increase in the level of business risk related to personal data processing. Make sure your risk assessment function reflects this heightened exposure.
         </p>
     ',
-    'risk_q10between15and27'=>'
+    'riskstage1or2_q10between15and27'=>'
         <p>
             You appear to have balanced perspective on the risks associated with GDPR. This means that you fully understand the potential impact of non-compliance, not just in terms of possible fines but reputation damage, class action law suits and suspension of data processing. But you are still in the early stages of GDPR compliance – keep moving forwards.
         </p>
     ',
-    'risk_q10gt28'=>'
+    'riskstage1or2_q10gt28'=>'
         <p>
             You are extremely worried at the overall level of risk associated with GDPR. This means that you fully understand the potential impact of non-compliance, not just in terms of possible fines but reputation damage, class action law suits and suspension of data processing. However, your anxiety probably also reflects an awareness that you are still exposed to this risk due to the relative immaturity of your readiness: you’re not where you need to be in your GDPR journey. We empathise. But you should have the motivation to address the issues at hand.
         </p>
     ',
 
-    'risk_q10lt15'=>'
+    'riskstage4_q10lt15'=>'
         <p>
             You appear to be quite comfortable with GDPR and have not expressed a high level of concern. In most cases this is a warning flag, but your overall approach to GDPR is well advanced. Do not become complacent, as GDPR requires constant re-assessment to remain state of the art. Keep up the good work.
         </p>
     ',
-    'risk_q10between15and27'=>'
+    'riskstage4_q10between15and27'=>'
         <p>
             You appear to have balanced perspective on the risks associated with GDPR. This means that you fully understand the potential impact of non-compliance, not just in terms of possible fines but reputation damage, class action law suits and suspension of data processing. But you are also in control of the situation, a state of mind that reflects a relative maturity of your readiness: you are where you need to be in your GDPR journey.
         </p>
     ',
-    'risk_q10gt28'=>'
+    'riskstage4_q10gt28'=>'
         <p>
             You are extremely worried at the overall level of risk associated with GDPR non-compliance. This means that you fully understand the potential impac, not just in terms of possible fines but reputation damage, class action law suits and suspension of data processing. However, the good news is that overall you are doing well in your overall journey to GDPR and must find the ways to continue to improve.
         </p>
