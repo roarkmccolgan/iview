@@ -420,7 +420,7 @@ Risk is a key driver for assessment and mitigation processes.",
     '6Foundationtxt'=>"
         <p class=\"mt--1\">
             Thank you for completing the assessment.<br/>
-                Tell us a little about yourselfto receiveapersonalised report that includes:
+                Tell us a little about yourself to receive a personalised report that includes:
         </p>
         <ul style=\"list-style: disc; padding-left: 1.5em;\">
             <li>How you compare against your peers based on organisational size and geographic region</li>

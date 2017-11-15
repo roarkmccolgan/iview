@@ -67,12 +67,12 @@
                         <div class="col-sm-3 text-right text-left-xs">
                             <ul class="social-list list-inline">
                                 <li>
-                                    <a href="https://twitter.com/home?status=How%20secure%20is%20your%20business?%20http%3A//bit.ly/2sRF7Kr%20%23IDC%20%23Splunk" target="_blank">
+                                    <a href="https://twitter.com/home?status=How%20well%20managed%20is%20your%20security%20%23IDC%20%23BT%20%23McAfee%20http%3A//bit.ly/2zKwaai" target="_blank">
                                         <i class="socicon socicon-twitter icon icon--xs"></i>
                                     </a>
                                 </li>
-                                <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//bit.ly/2sRF7Kr" target="_blank"><i class="socicon socicon-facebook icon icon--xs"></i></a></li>
-                                <li><a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//bit.ly/2sRF7Kr&title=How%20secure%20is%20your%20business&summary=Security%20is%20grabbing%20headline%20attention,%20however%20while%20only%20the%20most%20serious%20and%20high%20profile%20breaches%20make%20the%20headline%20news,%20in%20reality,%20companies%20are%20under%20constant%20attack.&source=" target="_blank"><i class="socicon socicon-linkedin icon icon--xs"></i></a></li>
+                                <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//bit.ly/2zKwaai" target="_blank"><i class="socicon socicon-facebook icon icon--xs"></i></a></li>
+                                <li><a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//bit.ly/2zKwaai&title=McAfee%20BT%20Security%20Assessment&summary=&source=" target="_blank"><i class="socicon socicon-linkedin icon icon--xs"></i></a></li>
                             </ul>
                         </div>
                     </div>
