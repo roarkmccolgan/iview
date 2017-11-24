@@ -24,7 +24,7 @@
                         <div id="content" class="col-sm-6 col-sm-push-5 mt--3">
                             <div class="row">
                                 <div class="col-sm-12">
-                                    <h1>{{Lang::get('general.'.session('product.id').'title')}}</h1>
+                                    <h1>{!!Lang::get('general.'.session('product.id').'title')!!}</h1>
                                     {!!Lang::get('general.'.session('product.id').'landing')!!}
                                     <hr class="short">
                                 </div>

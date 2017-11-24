@@ -489,7 +489,7 @@ Risk is a key driver for assessment and mitigation processes.",
     '7assoc'=>'In association with',
     '7sponsors'=>'Symantec',
     '7title'=>'IDC\'s GDPR Readiness Assessment',
-    '7sub-title'=>'How compliant is your businesses ',
+    '7sub-title'=>'Your businesses\' GDPR readiness',
     '7landing'=>'
     <h3>The GDPR Deadline is Almost Here<br/>How Ready Are You?</h3>
     <p>
@@ -499,8 +499,6 @@ Risk is a key driver for assessment and mitigation processes.",
         IDC\'s GDPR Readiness Assessment will provide you with some essential guidance on your GDPR compliance and what you need to consider to be compliant.
     </p>',
     '7startbut'=>'Start Here',
-
-    '7subreporttitle' => 'You are in the <span class="color--primary">:percent%</span>, whose :section is at <span class="color--primary">:result</span>',
 
     '7poor'=>'Stage 1 - Time to Initiate', //reactive
     '7poortxt'=>"Thank you for completing IDC's GDPR Assessment.<br/>This report will provide you with recommendations about the next stages of your journey to GDPR compliance.",

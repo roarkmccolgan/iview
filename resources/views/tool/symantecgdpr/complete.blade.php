@@ -15,7 +15,7 @@
                 <div class="row">
                     <div class="frame top clearfix">
                         <div class="col-sm-10 col-sm-offset-1 mt--2">
-                            <h4>{{Lang::get('general.'.session('product.id').'title')}}</h4>
+                            <h4>{!!Lang::get('general.'.session('product.id').'title')!!}</h4>
                         </div>
                         <div class="col-sm-3 col-sm-offset-1">
                             <div class="mb--1">

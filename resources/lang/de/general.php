@@ -141,6 +141,46 @@ Risiko ist ein wichtiger Treiber für Assessments und Prozesse zur Risikominderu
     '5inlinesize'=>'Auf demselben Niveau mit Unternehmen gleicher Größe',
     '5behindsize'=>'Stufen hinter führenden Unternehmen gleicher Größe',
 
+    //Symantec 7
+    '7elqFormName'=>'',
+    '7developedby'=>'entwickelt von',
+    '7sponsoredby'=>'Gesponsort von',
+    '7restart'=>'Bewertung neu starten',
+    '7assoc'=>'In Zusammenarbeit mit',
+    '7sponsors'=>'Symantec',
+    '7title'=>'IDCs Bewertungstool zum Stand der Vorbereitung auf die EU-DSVG <br/><span class="small">(EU-Datenschutzgrundverordnung)</span>',
+    '7sub-title'=>'Stand der Vorbereitungen auf EU-DSVG in Ihrem Unternehmen',
+    '7landing'=>'
+    <h3>Die Umsetzungsfrist der EU-DSVG endet demnächst.<br/>Wie gut sind Sie vorbereitet?</h3>
+    <p>
+        Die Umsetzungsfrist der EU-DSGV endet im Mai 2018. Sie ersetzt die gesamte bisherige nationale Datenschutz-Gesetzgebung der EU-Länder und kann Ihre Organisation in Hinblick auf Handhabung und Schutz persönlicher Daten betreffen.
+    </p>
+    <p>
+        Dieses Tool von IDC bewertet den Stand der Vorbereitungen auf EU-DSVG in Ihrem Unternehmen. Es enthält einige grundlegende Richtlinien zum Thema EU-DSVG-Compliance und dazu, was diesbezüglich zu berücksichtigen ist.
+    </p>',
+    '7startbut'=>'Beginnen Sie hier!',
+
+    '7poor'=>'Stadium 1- Initiierung', //reactive
+    '7poortxt'=>"Wir danken Ihnen für das Ausfüllen dieser Selbsteinschätzung zur Vorbereitung auf die EU-DSGV!<br/>Dieser Report bietet Ihnen Empfelungen für Ihre nächsten Schritte auf dem Weg zur vollständigen Konformität zur EU-DSGV.",
+    '7poortweet' => "",
+    '7standard'=>'Stadium 2 - Beschleunigung',
+    '7standardtxt'=>"Wir danken Ihnen für das Ausfüllen dieser Selbsteinschätzung zur Vorbereitung auf die EU-DSGV!<br/>Dieser Report bietet Ihnen Empfelungen für Ihre nächsten Schritte auf dem Weg zur vollständigen Konformität zur EU-DSGV.",
+    '7standardtweet' => "",
+    '7good'=>'Stage 3 - Time to Something',
+    '7goodtxt'=>"Wir danken Ihnen für das Ausfüllen dieser Selbsteinschätzung zur Vorbereitung auf die EU-DSGV!<br/>Dieser Report bietet Ihnen Empfelungen für Ihre nächsten Schritte auf dem Weg zur vollständigen Konformität zur EU-DSGV.",
+    '7goodtweet' => "",
+    '7aspirational'=>'Stadium 4 - Optimierung',
+    '7aspirationaltxt'=>"Wir danken Ihnen für das Ausfüllen dieser Selbsteinschätzung zur Vorbereitung auf die EU-DSGV!<br/>Dieser Report bietet Ihnen Empfelungen für Ihre nächsten Schritte auf dem Weg zur vollständigen Konformität zur EU-DSGV.",
+    '7aspirationaltweet' => "",
+    '7best'=>'Stage 1 - Time to Chill',
+    '7besttxt'=>"Wir danken Ihnen für das Ausfüllen dieser Selbsteinschätzung zur Vorbereitung auf die EU-DSGV!<br/>Dieser Report bietet Ihnen Empfelungen für Ihre nächsten Schritte auf dem Weg zur vollständigen Konformität zur EU-DSGV.",
+    '7besttweet' => "",
+    '7send'=>'',
+    '7fullreport'=>'Bitte füllen Sie das Formular unten aus und wir schicken Ihnen den vollständigen Bericht.',
+    '7provide'=>'',
+    '7byreg'=>'Mit der Registrierung bei <a href="/privacy" target="_blank">IDC</a> akzeptieren Sie unsere und <a href="" target="_blank">Symantecs</a> jeweilige Datenschutzrichtlinie. Die von uns gesammelten Informationen werden an Symantec für die Durchführung von Direktmarketing-Aktionen weitergegeben,',
+    '7wait'=>'',
+
     //general
     'introduction' => 'Einführung',
     'disclaimer'=>'Haftungsausschluss',

@@ -603,25 +603,25 @@ trait GenerateReportTrait {
 			//if stage 1 or 2
 			if(session('result.overall.rating')=='stage1' || session('result.overall.rating')=='stage2'){
 				if($q8<15){
-					$customCopy.= trans(session('product.alias').'.risk_q10lt15');
+					$customCopy.= trans(session('product.alias').'.riskstage1or2_q10lt15');
 				}
 				if($q8>=15 && $q8<=27){
-					$customCopy.= trans(session('product.alias').'.risk_q10between15and27');
+					$customCopy.= trans(session('product.alias').'.riskstage1or2_q10between15and27');
 				}
 				if($q8>27){
-					$customCopy.= trans(session('product.alias').'.risk_q10gt28');
+					$customCopy.= trans(session('product.alias').'.riskstage1or2_q10gt28');
 				}
 			}
 			//if stage 4
 			if(session('result.overall.rating')=='stage4'){
 				if($q8<15){
-					$customCopy.= trans(session('product.alias').'.risk_q10lt15');
+					$customCopy.= trans(session('product.alias').'.riskstage4_q10lt15');
 				}
 				if($q8>=15 && $q8<=27){
-					$customCopy.= trans(session('product.alias').'.risk_q10between15and27');
+					$customCopy.= trans(session('product.alias').'.riskstage4_q10between15and27');
 				}
 				if($q8>27){
-					$customCopy.= trans(session('product.alias').'.risk_q10gt28');
+					$customCopy.= trans(session('product.alias').'.riskstage4_q10gt28');
 				}
 			}
 

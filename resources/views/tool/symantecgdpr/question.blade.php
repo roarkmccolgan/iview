@@ -23,46 +23,51 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-3 col-sm-offset-1 mt--2">
-                            <h4>{{Lang::get('general.'.session('product.id').'title')}}</h4>
-                        </div>
-                        <div class="col-sm-8 mt--2">
-                            <!-- progressbar -->
-                        @if(session('product.id')==7)
-                            <!-- progressbar -->
-                            <ul class="process-stepper clearfix mb--1" data-process-steps="9" style="margin-bottom: 3.2em">
-                            <?php
-                            $count = 0;
-                            ?>
-                            @foreach ($menu as $key=>$pages)
-                                @if($pages['display'])
-                                    @foreach ($pages['pages'] as $pkey => $qpage)
-                                        <?php
-                                        $count++;
-                                        ?>
-                                        <li class="{{$qpage['done'] || ($pkey == 'page'.$page && $key==$section)? 'active':''}}">
-                                            {{$count}}
-                                        </li>
-                                    @endforeach
-                                @endif
-                            @endforeach
-                            </ul>
-                        @else
-                            <ul class="process-stepper clearfix mb--1" data-process-steps="{{ count($menu )}}">
-                            @foreach ($menu as $key=>$pages)
-                                @if($pages['display'])
-                                <li class="{{$pages['class']}} {{$pages['complete'] || $key==$section ? 'active':''}}">
-                                    <span>{{ $pages['title'] }}</span>
-                                    <ul>
-                                    @foreach ($pages['pages'] as $pkey => $qpage)
-                                        <li class="{{$qpage['done'] || ($pkey == 'page'.$page && $key==$section)? 'done':''}}"></li>
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-sm-3 col-sm-offset-1 mt--2">
+                                    <h4>{!!Lang::get('general.'.session('product.id').'title')!!}</h4>
+                                </div>
+                            
+                                <div class="col-sm-8 mt--2">
+                                    <!-- progressbar -->
+                                @if(session('product.id')==7)
+                                    <!-- progressbar -->
+                                    <ul class="process-stepper clearfix mb--1" data-process-steps="9" style="margin-bottom: 3.2em">
+                                    <?php
+                                    $count = 0;
+                                    ?>
+                                    @foreach ($menu as $key=>$pages)
+                                        @if($pages['display'])
+                                            @foreach ($pages['pages'] as $pkey => $qpage)
+                                                <?php
+                                                $count++;
+                                                ?>
+                                                <li class="{{$qpage['done'] || ($pkey == 'page'.$page && $key==$section)? 'active':''}}">
+                                                    {{$count}}
+                                                </li>
+                                            @endforeach
+                                        @endif
                                     @endforeach
                                     </ul>
-                                </li>
+                                @else
+                                    <ul class="process-stepper clearfix mb--1" data-process-steps="{{ count($menu )}}">
+                                    @foreach ($menu as $key=>$pages)
+                                        @if($pages['display'])
+                                        <li class="{{$pages['class']}} {{$pages['complete'] || $key==$section ? 'active':''}}">
+                                            <span>{{ $pages['title'] }}</span>
+                                            <ul>
+                                            @foreach ($pages['pages'] as $pkey => $qpage)
+                                                <li class="{{$qpage['done'] || ($pkey == 'page'.$page && $key==$section)? 'done':''}}"></li>
+                                            @endforeach
+                                            </ul>
+                                        </li>
+                                        @endif
+                                    @endforeach
+                                    </ul>
                                 @endif
-                            @endforeach
-                            </ul>
-                        @endif
+                                </div>  
+                            </div>
                         </div>
                         {{-- <div class="col-sm-6 col-md-5"> <div class="background-image-holder"> <img src="{{asset('images/tools/'.$tool->id.'/homepage.jpg')}}" alt=""> </div> </div> --}}
                         <div id="content" class="col-sm-6 col-sm-push-5">
