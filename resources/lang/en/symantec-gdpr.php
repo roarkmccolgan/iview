@@ -37,8 +37,8 @@ return array(
             In addition, we have ranked you out of five stages in each of the following three individual areas of GDPR so that you can get a good idea of where you need to focus your attention most keenly. These areas are: 
         </p>
         <ul>
-            <li>Overall GDPR Approach,</li>
-            <li>Aspiration &amp; Data Awareness</li>
+            <li>Overall GDPR Approach, Aspiration &amp; Leadership</li>
+            <li>Data Awareness</li>
             <li>Risk Awareness, Assessment & Mitigation</li>
         </ul>
         <div class="pb"></div>
