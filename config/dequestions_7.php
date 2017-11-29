@@ -23,7 +23,7 @@ return array(
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'We are only just starting to learn about GDPR requirements',
+                                'label'=>'Wir fangen erst an, uns über die Anforderungen der EU-DSGV zu informieren.',
                                 'value'=>2,
                                 'checked'=>false
                             ),
@@ -208,7 +208,7 @@ return array(
                         'name'=>'q5',
                         'options'=>array(
                             array(
-                                'label'=>'Hat Ihre Organisation auf einem hohen Abstraktionsniveau ausreichend Wissen über die folgenden Datentypen?',
+                                'label'=>'Wir kennen unsere strukturierten Daten',
                                 'hint'=>'(Datenbanken, Data Warehouses, Content-Management-Systeme)',
                                 'name'=>'q5.1',
                                 'options'=>array(

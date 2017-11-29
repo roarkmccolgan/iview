@@ -28,7 +28,7 @@ return array(
     'introduction' => '
         <h2>Your overall GDPR Readiness Assessment Result</h2>
         <p>
-            IDC sees five stages to GDPR readiness, with organizations just starting out at Stage 1, and those that are achieving compliance at Stage 5. Based on your answers to this assessment, your organisation is at <strong>:result</strong>.
+            IDC sees five stages to GDPR readiness, with organizations just starting out at Stage 1, and those that are achieving compliance at Stage 5. Based on your answers to this assessment, your organization is at <strong>:result</strong>.
         </p>
         <div style="position: relative; width: 170mm; height: 112mm; background: url(http://symantecgdpr.idcready.net/images/tools/7/maturity.svg); background-size: 170mm 112mm;">
             
@@ -54,27 +54,27 @@ return array(
     'overallstage1'=>'
         <h1>STAGE 1:  Time to Initiate</h1>
         <p>
-            You have a lot of work to do. Organisations that fall into this category of initial readiness have limited or no insight into the requirements (and more importantly) the implications of GDPR on their business. Leadership does not have any real understanding of what GDPR covers and how it is to be implemented. In addition, there is no real understanding of legal obligations and accountability, or the extent of the fines and other sanctions if the business fails to comply by May next year.
+            You have a lot of work to do. organizations that fall into this category of initial readiness have limited or no insight into the requirements (and more importantly) the implications of GDPR on their business. Leadership does not have any real understanding of what GDPR covers and how it is to be implemented. In addition, there is no real understanding of legal obligations and accountability, or the extent of the fines and other sanctions if the business fails to comply by May next year.
         </p>
     ',
     'overallstage2'=>'
         <h1>STAGE 2:  Time to Accelerate</h1>
         <p>
-            You\'ve got going, but there is quite a way to go still. Organisations that fall into this category of defined readiness have made a commitment to GDPR but are still in the first half of their journey. They are aware of the scale of the proposed penalties and sanctions, but are often reluctant to believe that these will be enforced.
+            You\'ve got going, but there is quite a way to go still. organizations that fall into this category of defined readiness have made a commitment to GDPR but are still in the first half of their journey. They are aware of the scale of the proposed penalties and sanctions, but are often reluctant to believe that these will be enforced.
         </p>
     ',
     'overallstage4'=>'
         <h1>STAGE 4:  Time to Optimise</h1>
         <p>
-            Your well on your way, but don\'t think of stopping just yet. Organisations that fall into this category of managed readiness have a firm appreciation of the regulation, its scope, compliance requirements and potential penalties. They have begun to put measures in place to comply but need to step up their activities to meet the May 2018 deadline.
+            Your well on your way, but don\'t think of stopping just yet. organizations that fall into this category of managed readiness have a firm appreciation of the regulation, its scope, compliance requirements and potential penalties. They have begun to put measures in place to comply but need to step up their activities to meet the May 2018 deadline.
         </p>
         <p>
-            Companies in this stage may have a plan for overall compliance but this may come at the expense of operation efficiency. That’s fine: there is an expediency dimension to GDPR compliance. But after compliance comes optimisation: embed your compliance processes in business as usual. This is tougher than it sounds, so start thinking now about what this might look like for your organisation.
+            Companies in this stage may have a plan for overall compliance but this may come at the expense of operation efficiency. That’s fine: there is an expediency dimension to GDPR compliance. But after compliance comes optimisation: embed your compliance processes in business as usual. This is tougher than it sounds, so start thinking now about what this might look like for your organization.
         </p>
     ',
     'overallq1aorb'=>'
         <p>
-            By your own admission, you are just starting out on your GDPR journey. GDPR affects almost all companies that process personal data. Realise that the definition of personal data is very broad, and includes any data that relates to an identifiable person. At its most basic, it includes employee data and data relating to sales orders. Most organisations will have this type of data. So the chances are, you are impacted by GDPR.
+            By your own admission, you are just starting out on your GDPR journey. GDPR affects almost all companies that process personal data. Realise that the definition of personal data is very broad, and includes any data that relates to an identifiable person. At its most basic, it includes employee data and data relating to sales orders. Most organizations will have this type of data. So the chances are, you are impacted by GDPR.
         </p>
         <p>
             Ignoring GDPR will not make it go away, and importantly there are substantial sanctions in place to encourage compliance. Much has been said about the substantial fines, but sanctions also include class action lawsuit and suspension of personal data processing (which may mean, effectively, suspension of trading).
@@ -95,17 +95,17 @@ return array(
     ',
     'overallq7a'=>'
         <p>
-            Your score is boosted substantially by the presence of a cross functional compliance task force or governance board that spans multiple stakeholders in your organisation. The engagement of all relevant stakeholders is a critical success factor in any GDPR program, and the existence of such a coordinated approach significantly increases the ultimate success of any compliance activity. The other major critical success factor to consider now is the leadership of the GDPR program. It matters less where this leadership stems from, and more that the leader has the authority, knowledge and charisma to lead a strategically important program of activities.
+            Your score is boosted substantially by the presence of a cross functional compliance task force or governance board that spans multiple stakeholders in your organization. The engagement of all relevant stakeholders is a critical success factor in any GDPR program, and the existence of such a coordinated approach significantly increases the ultimate success of any compliance activity. The other major critical success factor to consider now is the leadership of the GDPR program. It matters less where this leadership stems from, and more that the leader has the authority, knowledge and charisma to lead a strategically important program of activities.
         </p>
     ',
     'overallq7borc'=>'
         <p>
-            Your readiness is boosted by the beginnings of a cross functional compliance task force or governance board that spans multiple stakeholders in your organisation. The engagement of all relevant stakeholders is a critical success factor in any GDPR program, and the existence of such a coordinated approach significantly increases the ultimate success of any compliance activity. The other major critical success factor to consider now is the leadership of the GDPR program. It matters less where this leadership stems from, and more that the leader has the authority, knowledge and charisma to lead a strategically important program of activities.
+            Your readiness is boosted by the beginnings of a cross functional compliance task force or governance board that spans multiple stakeholders in your organization. The engagement of all relevant stakeholders is a critical success factor in any GDPR program, and the existence of such a coordinated approach significantly increases the ultimate success of any compliance activity. The other major critical success factor to consider now is the leadership of the GDPR program. It matters less where this leadership stems from, and more that the leader has the authority, knowledge and charisma to lead a strategically important program of activities.
         </p>
     ',
     'overallq7d'=>'
         <p>
-            Your readiness score is held back significantly by the lack of a cross functional compliance task force or governance board that spans multiple stakeholders in your organisation. The engagement of all relevant stakeholders is a critical success factor in any GDPR program, and the lack of such a coordinated approach limits substantially the ultimate success of any compliance activity. Consider revisiting this situation as soon as possible. A silo approach to GDPR is unlikely to fulfil some of the fundamental principles required by the new legislation.
+            Your readiness score is held back significantly by the lack of a cross functional compliance task force or governance board that spans multiple stakeholders in your organization. The engagement of all relevant stakeholders is a critical success factor in any GDPR program, and the lack of such a coordinated approach limits substantially the ultimate success of any compliance activity. Consider revisiting this situation as soon as possible. A silo approach to GDPR is unlikely to fulfil some of the fundamental principles required by the new legislation.
         </p>
     ',
 
@@ -128,7 +128,7 @@ return array(
     'dataawarenessstage2'=>'
         <h1>STAGE 2: Time to Accelerate</h1>
         <p>
-            You are in the middle stages of information governance, and you have reasonable confidence in your ability to identify and locate most personal data in your organisation. You may have a good understanding of structured data, but unstructured information maybe causing difficulty. You are also likely to be gathering data without a real sense of purpose or business value. GDPR now makes this data a risk, so you need to decide whether to keep it or delete it.
+            You are in the middle stages of information governance, and you have reasonable confidence in your ability to identify and locate most personal data in your organization. You may have a good understanding of structured data, but unstructured information maybe causing difficulty. You are also likely to be gathering data without a real sense of purpose or business value. GDPR now makes this data a risk, so you need to decide whether to keep it or delete it.
         </p>
         <p>
             According to your score, you may struggle to enable the new rights of access, rectification, erasure and portability.
@@ -137,23 +137,23 @@ return array(
     'dataawarenessstage4'=>'
         <h1>STAGE 4: Time to Optimise</h1>
         <p>
-            You are in the advanced stages of information governance and you have high confidence that you like you can locate all instances of personal data in your organisation. You also have a good understanding of both structured and unstructured data, and are likely to be able to service the new rights of access, rectification, erasure and portability.
+            You are in the advanced stages of information governance and you have high confidence that you like you can locate all instances of personal data in your organization. You also have a good understanding of both structured and unstructured data, and are likely to be able to service the new rights of access, rectification, erasure and portability.
         </p>
     ',
 
     'dataawareness_q5aorb'=>'
         <p>
-            At least you are honest about your inability to identify and locate all instances of personal data within your organisation. This is a pre-requisite to GDPR compliance: you cannot demonstrate compliance if you do not know what data you have or its location. Given the short amount of time until May 2018, you need to prioritise the data that you are aware of and that is either important to you or that represents the greatest risk to your organisation.
+            At least you are honest about your inability to identify and locate all instances of personal data within your organization. This is a pre-requisite to GDPR compliance: you cannot demonstrate compliance if you do not know what data you have or its location. Given the short amount of time until May 2018, you need to prioritise the data that you are aware of and that is either important to you or that represents the greatest risk to your organization.
         </p>
     ',
     'dataawareness_q5cord'=>'
         <p>
-            Your organisation remains exposed to a degree of risk because you cannot definitively identify and locate every instance of personal data in your organisation. Only you can decide whether this is a risk that your business can accept. Although GDPR demands that you can locate all instances of personal data, you are in the majority of organisations that admit to falling short of this. Assess the risk associated with data that you may not know about, and create an incident response plan for any related potential non-compliance.
+            Your organization remains exposed to a degree of risk because you cannot definitively identify and locate every instance of personal data in your organization. Only you can decide whether this is a risk that your business can accept. Although GDPR demands that you can locate all instances of personal data, you are in the majority of organizations that admit to falling short of this. Assess the risk associated with data that you may not know about, and create an incident response plan for any related potential non-compliance.
         </p>
     ',
     'dataawareness_q5e'=>'
         <p>
-            You are in the tiny minority of organisations that are completely confident in their ability to identify and locate all instances of personal data in their organisations. Well done. But make sure that staff are not creating copies of data – probably for good reasons – that are out of compliance. Data copies are made frequently, for reporting, analysis, back-up and so on. Make sure you have the processes in place to avoid this happening in future.
+            You are in the tiny minority of organizations that are completely confident in their ability to identify and locate all instances of personal data in their organizations. Well done. But make sure that staff are not creating copies of data – probably for good reasons – that are out of compliance. Data copies are made frequently, for reporting, analysis, back-up and so on. Make sure you have the processes in place to avoid this happening in future.
         </p>
     ',
     'dataawareness_q5lt18'=>'
@@ -193,7 +193,7 @@ return array(
     'riskintro'=>'
         <h2>Risk Awareness, Assessment &amp; Mitigation</h2>
         <p>
-            GDPR is all about risk. It is not prescriptive in most of its requirements, meaning that organisations must make decisions about which approaches to take. What is the balance between gathering data for analytics and the increased exposure from data minimisation and purpose limitation? What the heck is ‘State of the Art’ and how do I know if I need it?
+            GDPR is all about risk. It is not prescriptive in most of its requirements, meaning that organizations must make decisions about which approaches to take. What is the balance between gathering data for analytics and the increased exposure from data minimisation and purpose limitation? What the heck is ‘State of the Art’ and how do I know if I need it?
         </p>
         <p>
             Risk awareness starts with self-awareness: what data do I have and how do the new regulations affect how I should treat this data?
@@ -284,38 +284,38 @@ return array(
     ',
     'non9a'=>'
         <p>
-            You indicated that a lack of knowledge and skills on GDPR is constraining your ability to create a GDPR program that spans your data management environment. This is typical of organisations in the early stages of compliance efforts. Information gaps can be resolved by tapping into the mass of literature available from regulators, lawyers, consultants and technology firms. Industry groups are also increasingly popular and provide the opportunity to learn from peer organisations.
+            You indicated that a lack of knowledge and skills on GDPR is constraining your ability to create a GDPR program that spans your data management environment. This is typical of organizations in the early stages of compliance efforts. Information gaps can be resolved by tapping into the mass of literature available from regulators, lawyers, consultants and technology firms. Industry groups are also increasingly popular and provide the opportunity to learn from peer organizations.
         </p>
     ',
     'non9b'=>'
         <p>
-            You indicated that a lack of budget is constraining your ability to create a GDPR program that spans your data management environment. Budget issues are unfortunately not very easy to fix. Ultimately it comes down to an assessment of the risk for your organisation. But a lack of awareness will inhibit a thorough risk evaluation. Information leads to enlightenment, and enlightenment should lead to a break in inertia. There’s nothing like an increase in perceived risk to loosen fiscal ties.
+            You indicated that a lack of budget is constraining your ability to create a GDPR program that spans your data management environment. Budget issues are unfortunately not very easy to fix. Ultimately it comes down to an assessment of the risk for your organization. But a lack of awareness will inhibit a thorough risk evaluation. Information leads to enlightenment, and enlightenment should lead to a break in inertia. There’s nothing like an increase in perceived risk to loosen fiscal ties.
         </p>
     ',
     'non9c'=>'
         <p>
-            You indicated that limited resourcing is constraining your ability to create a GDPR program that spans your data management environment. This is typical of organisations in the middle stages of compliance efforts. Ultimately it comes down to an assessment of the risk for your organisation. A thorough risk evaluation should identify the need to dedicate and fund the required resources. It may be then that there is a lack of awareness and leadership at board level, resulting in insufficient commitment to GDPR. This is serious, so board engagement is essential if you want to meet your GDPR aspirations.
+            You indicated that limited resourcing is constraining your ability to create a GDPR program that spans your data management environment. This is typical of organizations in the middle stages of compliance efforts. Ultimately it comes down to an assessment of the risk for your organization. A thorough risk evaluation should identify the need to dedicate and fund the required resources. It may be then that there is a lack of awareness and leadership at board level, resulting in insufficient commitment to GDPR. This is serious, so board engagement is essential if you want to meet your GDPR aspirations.
         </p>
     ',
     'non9d'=>'
         <p>
-            You indicated that conflicting priorities is constraining your ability to create a GDPR program that spans your data management environment. This is typical of organisations in the middle stages of compliance efforts. Ultimately it comes down to an assessment of the risk for your organisation. A thorough risk evaluation should identify and resolve conflicting priorities. It may be then that there is a lack of awareness and leadership at board level, resulting in insufficient commitment to GDPR. This is serious, so board engagement is essential if you want to meet your GDPR aspirations.
+            You indicated that conflicting priorities is constraining your ability to create a GDPR program that spans your data management environment. This is typical of organizations in the middle stages of compliance efforts. Ultimately it comes down to an assessment of the risk for your organization. A thorough risk evaluation should identify and resolve conflicting priorities. It may be then that there is a lack of awareness and leadership at board level, resulting in insufficient commitment to GDPR. This is serious, so board engagement is essential if you want to meet your GDPR aspirations.
         </p>
     ',
     'non9e'=>'
         <p>
-            You indicated that a lack of collaboration between the GDPR compliance team and other stakeholders is constraining your ability to create a GDPR program that spans your data management environment. This is typical of organisations in the later stages of compliance efforts. Your program is well under way, but it may be stuck within one department. A critical success factor for GDPR is cross-functional collaboration: GDPR is too important to stay within fiefdoms.
+            You indicated that a lack of collaboration between the GDPR compliance team and other stakeholders is constraining your ability to create a GDPR program that spans your data management environment. This is typical of organizations in the later stages of compliance efforts. Your program is well under way, but it may be stuck within one department. A critical success factor for GDPR is cross-functional collaboration: GDPR is too important to stay within fiefdoms.
         </p>
     ',
     'non9f'=>'
         <p>
-            You indicated that fragmentation of data management systems is constraining your ability to create a GDPR program that spans your data management environment. This is typical of organisations in the later stages of compliance efforts. Your program is well under way, but a fragmented data management environment could be hard to fix: big data and analytics are often critical to business functions. But they can also represent a source of risk, in the volume of personal data held and in the use of that data for multiple purposes. An integrated approach to data governance is essential to efficient GDPR compliance, so focus on this as a core activity in embedding operational excellence in compliance.
+            You indicated that fragmentation of data management systems is constraining your ability to create a GDPR program that spans your data management environment. This is typical of organizations in the later stages of compliance efforts. Your program is well under way, but a fragmented data management environment could be hard to fix: big data and analytics are often critical to business functions. But they can also represent a source of risk, in the volume of personal data held and in the use of that data for multiple purposes. An integrated approach to data governance is essential to efficient GDPR compliance, so focus on this as a core activity in embedding operational excellence in compliance.
         </p>
     ',
 
     /*'introduction-image' => 'report1.jpg',*/
     'overall' => array(
-        'title'=>'Your Overall Security Assessment is at',
+        'title'=>'Your Overall GDPR Readiness is at',
         'hidetitle'=>'true',
         'image'=>'',
         'stage1'=>'',

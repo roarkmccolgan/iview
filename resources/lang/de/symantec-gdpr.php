@@ -315,7 +315,7 @@ return array(
 
     /*'introduction-image' => 'report1.jpg',*/
     'overall' => array(
-        'title'=>'Your Overall Security Assessment is at',
+        'title'=>'Gemäß Ihren Antworten bei der vorangegangenen Sicherheitsbewertung befinden Sie sich in',
         'hidetitle'=>'true',
         'image'=>'',
         'stage1'=>'',

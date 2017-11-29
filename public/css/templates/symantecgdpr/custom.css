@@ -226,6 +226,13 @@ body{
 .process-stepper[data-process-steps="2"] > li {
   width: 50%;
 }
+.question span{
+	display: block;
+}
+.input-radio--innerlabel{
+	height: auto;
+	min-height: 2.78571429em;
+}
 
 .process-stepper li ul li {
 	display: inline-block;
