@@ -68,7 +68,8 @@ return array(
                 'benchmark' => 5,
             )
         ),
-        'tweet' => false
+        'tweet' => false,
+        'include_answers_in_download_report' => true,
     ),
     'gdpr' => array(
         'baseline' => 15.363,

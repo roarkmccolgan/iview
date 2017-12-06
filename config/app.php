@@ -39,7 +39,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://idcgauge.net'),
+    'url' => env('APP_URL', 'http://idcready.net'),
 
     /*
     |--------------------------------------------------------------------------
@@ -173,7 +173,7 @@ return [
         Khill\Lavacharts\Laravel\LavachartsServiceProvider::class,
         Laracasts\Utilities\JavaScript\JavaScriptServiceProvider::class,
         LynX39\LaraPdfMerger\PdfMergerServiceProvider::class,
-
+        Fideloper\Proxy\TrustedProxyServiceProvider::class,
         /*
          * My helper providers...
          */

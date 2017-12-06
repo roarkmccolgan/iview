@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <title>@yield('pagetitle',Lang::get('general.'.session('product.id').'title'))</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="{{asset('css/templates/'.session('template').'/bootstrap.css')}}" type="text/css" media="all" />
         <link rel="stylesheet" href="{{asset('css/templates/'.session('template').'/stack-interface.css')}}" type="text/css" media="all" />
         <link rel="stylesheet" href="{{asset('css/templates/'.session('template').'/theme-charcoal.css')}}?id=1" type="text/css" media="all" />

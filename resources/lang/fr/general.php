@@ -143,6 +143,46 @@ Le risque est un facteur clé pour les processus d'évaluation et d'atténuation
     '5fullreport'=>'Pour votre rapport personnalisé avec principes essentiels, veuilles renseigner vos informations.',
     '5byreg'=>'En vous enregistrant avec IDC, vous acceptez notre Politique de <a href="/privacy" target="_blank">confidentialité et la Politique</a> de <a href="https://www.splunk.com/en_us/legal/privacy/privacy-policy.html" target="_blank">confidentialité de Splunk</a>. Les informations collectées seront partagées avec Splunk à des fins de marketing direct.',
 
+    //Symantec 7
+    '7elqFormName'=>'',
+    '7developedby'=>'Développé par',
+    '7sponsoredby'=>'Sponsorisé par',
+    '7restart'=>'Recommencer l\'évaluation',
+    '7assoc'=>'En partenariat avec',
+    '7sponsors'=>'Symantec',
+    '7title'=>'Évaluation de la préparation au GDPR d\'IDC',
+    '7sub-title'=>'Préparation au GDPR pour votre entreprise',
+    '7landing'=>'
+    <h3>L\'échéance du GDPR approche<br/>ÊTES-VOUS PRÊT ?</h3>
+    <p>
+        L\'échéance du Règlement général sur la protection des données (GDPR) de l\'UE approche. Ce règlement se substituera à toutes les lois nationales actuelles sur la protection des données au sein de l\'UE et pourra avoir un impact sur votre entreprise en termes de gestion et protection des données à caractère personnel.
+    </p>
+    <p>
+        L\'évaluation de la préparation au GDPR d\'IDC vous donnera quelques conseils essentiels pour votre conformité au GDPR ainsi que les éléments que vous devez prendre en compte pour être conforme.
+    </p>',
+    '7startbut'=>'Commencez ici',
+
+    '7poor'=>'Étape 1 -  Il faut commencer', //reactive
+    '7poortxt'=>"Merci d'avoir rempli l'évaluation sur le GDPR d'IDC.<br/>Ce rapport vous fournira des recommandations sur les prochaines étapes de votre parcours de conformité au GDPR.",
+    '7poortweet' => "I took the @symantec GDPR Assessment and it's shown me where I can improve. Interested?",
+    '7standard'=>'Étape 2 - Il faut accélérer',
+    '7standardtxt'=>"Merci d'avoir rempli l'évaluation sur le GDPR d'IDC.<br/>Ce rapport vous fournira des recommandations sur les prochaines étapes de votre parcours de conformité au GDPR.",
+    '7standardtweet' => "I took the @symantec GDPR Assessment and my company is on the right track. See how your business does... http://bit.ly/1Y6JAqa",
+    '7good'=>'Stage 3 - Time to Something',
+    '7goodtxt'=>"Merci d'avoir rempli l'évaluation sur le GDPR d'IDC.<br/>Ce rapport vous fournira des recommandations sur les prochaines étapes de votre parcours de conformité au GDPR.",
+    '7goodtweet' => "I took the @symantec GDPR Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    '7aspirational'=>'Étape 4 - Il faut optimiser',
+    '7aspirationaltxt'=>"Merci d'avoir rempli l'évaluation sur le GDPR d'IDC.<br/>Ce rapport vous fournira des recommandations sur les prochaines étapes de votre parcours de conformité au GDPR.",
+    '7aspirationaltweet' => "I took the @symantec GDPR Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    '7best'=>'Stage 1 - Time to Chill',
+    '7besttxt'=>"Merci d'avoir rempli l'évaluation sur le GDPR d'IDC.<br/>Ce rapport vous fournira des recommandations sur les prochaines étapes de votre parcours de conformité au GDPR.",
+    '7besttweet' => "I took the @symantec GDPR Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    '7send'=>'We can send you the full results directly to your mailbox',
+    '7fullreport'=>'Veuillez remplir le formulaire ci-dessous et nous vous enverrons le rapport complet.',
+    '7provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
+    '7byreg'=>'En vous inscrivant auprès d\'IDC, vous acceptez notre <a href="/privacy" target="_blank">politique de protection de la confidentialité</a> et celle de <a href="" target="_blank">Symantec</a>. Les informations que nous recueillons seront partagées avec Symantec à des fins de marketing direct',
+    '7wait'=>'While you\'re waiting why not tweet your results and see how your colleagues measure up?',
+
     //general
     'introduction' => 'Introduction',
     'allrights' => 'Tous droits réservés',
