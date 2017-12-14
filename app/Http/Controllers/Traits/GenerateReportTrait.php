@@ -786,7 +786,7 @@ trait GenerateReportTrait {
 		if(session('product.id')==2){
 			$pdf->save(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
 
-			$merge = new \LynX39\LaraPdfMerger\PDFManage;
+			$merge = new \LynX39\LaraPdfMerger\PdfManage;
 			$locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
 
 			$merge->addPDF(storage_path().'/fireeye_report_start'.$locale .'.pdf', 'all');
@@ -813,7 +813,7 @@ trait GenerateReportTrait {
 		}/*elseif(session('product.id')==6){
 			$pdf->save(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
 
-			$merge = new \LynX39\LaraPdfMerger\PDFManage;
+			$merge = new \LynX39\LaraPdfMerger\PdfManage;
 			$locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
 
 			$merge->addPDF(storage_path().'/btmcafee_start'.$locale .'.pdf', 'all');
@@ -827,7 +827,7 @@ trait GenerateReportTrait {
 		}*/elseif(session('product.id')==7){
 			$pdf->save(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
 
-			$merge = new \LynX39\LaraPdfMerger\PDFManage;
+			$merge = new \LynX39\LaraPdfMerger\PdfManage;
 			$locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
 
 			$merge->addPDF(storage_path().'/symantec_report_start'.$locale .'.pdf', 'all');
