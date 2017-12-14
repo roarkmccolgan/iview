@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "506ae38b4106ee464a8e9d4f57dfa959",
+    "content-hash": "ad6450b20ab524302b3d7c091c89fc16",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -1301,16 +1301,16 @@
         },
         {
             "name": "lynx39/lara-pdf-merger",
-            "version": "dev-master",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/deltaaskii/lara-pdf-merger.git",
-                "reference": "047fa18178a7024a441130959c3746eea113283a"
+                "reference": "fcff464d5fc0a0c3a42c552654959680c911e4fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/deltaaskii/lara-pdf-merger/zipball/047fa18178a7024a441130959c3746eea113283a",
-                "reference": "047fa18178a7024a441130959c3746eea113283a",
+                "url": "https://api.github.com/repos/deltaaskii/lara-pdf-merger/zipball/fcff464d5fc0a0c3a42c552654959680c911e4fc",
+                "reference": "fcff464d5fc0a0c3a42c552654959680c911e4fc",
                 "shasum": ""
             },
             "require": {
@@ -1342,7 +1342,7 @@
                 "paginate",
                 "pdf"
             ],
-            "time": "2017-11-17T17:51:28+00:00"
+            "time": "2017-11-17T14:13:58+00:00"
         },
         {
             "name": "maatwebsite/excel",
@@ -4590,9 +4590,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "lynx39/lara-pdf-merger": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

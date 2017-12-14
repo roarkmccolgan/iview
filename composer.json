@@ -18,7 +18,7 @@
         "barryvdh/laravel-snappy": "^0.3.1",
         "khill/lavacharts": "~3.1",
         "laracasts/utilities": "~2.0",
-        "lynx39/lara-pdf-merger": "dev-master",
+        "lynx39/lara-pdf-merger": "1.0.*",
         "guzzlehttp/guzzle": "^6.2",
         "fideloper/proxy": "^3.3",
         "webpatser/laravel-uuid": "^2.0"
