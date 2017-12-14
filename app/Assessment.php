@@ -12,7 +12,8 @@ class Assessment extends Model
     protected $casts = [
         'extra' => 'array',
         'quiz' => 'array',
-        'result' => 'array'
+        'result' => 'array',
+        'uuid' => 'string',
     ];
     
     public function tool()

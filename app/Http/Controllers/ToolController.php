@@ -526,7 +526,7 @@ public function postComplete(SubmitAssessmentsRequest $request)
 	$assessment->extra = $request->input('extra');
 	$assessment->score = session('result.overall.score');
 	$assessment->rating = trans(session('product.alias').'.'.session('result.overall.rating'));
-	$assessment->uuid = Uuid::generate();
+	$assessment->uuid = Uuid::generate()->string;
 	$assessment->save();
 	$tracker = false;
 
@@ -613,6 +613,7 @@ public function postComplete(SubmitAssessmentsRequest $request)
 	    $this->dispatch(new SendEloquaRequest($url, $query));
 }
 	$subject = trans(session('product.alias').'.email.subject');
+	$assessment->uuid = (string)$assessment->uuid;
 	$viewData = [
 		'assessment'=>$assessment,
 	];
@@ -625,10 +626,10 @@ public function postComplete(SubmitAssessmentsRequest $request)
 			$bcc[] = $address;
 		}
 	}
-	
+	//dd($data);
 	Mail::queue('emails.echo', $data, function ($message) use ($assessment, $subject, $bcc) {
 		$message->from('notifications@mg.idcready.net', 'IDC Notifications');
-		$message->to($assessment['email'], $assessment['fname'].' '.$assessment['sname']);
+		$message->to($assessment['email'], $assessment['fname'].' '.$assessment['lname']);
 		if(!empty($bcc)){
 			$message->bcc($bcc);
 		}
@@ -1059,14 +1060,14 @@ public function postComplete(SubmitAssessmentsRequest $request)
 
     public function generateuuid(Request $request){
     	$assessments = Assessment::all();
-
+		$completed = 0;
     	foreach ($assessments as $assessment) {
-    		$completed = 0;
-    		if(is_null($assessment->uuid)){
-    			$assessment->uuid = Uuid::generate();
+    		
+    		//if(is_null($assessment->uuid)){
+    			$assessment->uuid = Uuid::generate()->string;
 				$assessment->save();
 				$completed++;
-    		}
+    		//}
 		}
 		echo "Updated $completed Assessments";
     }
