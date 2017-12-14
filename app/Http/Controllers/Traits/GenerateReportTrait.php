@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Lang;
 use Lava;
+use LynX39\LaraPdfMerger\Facades\PdfMerger;
 use PDF;
 
 trait GenerateReportTrait {
@@ -800,7 +801,7 @@ trait GenerateReportTrait {
 		}elseif(session('product.id')==5){
 			$pdf->save(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
 
-			$merge = new \LynX39\LaraPdfMerger\PDFManage;
+			$merge = PdfMerger;
 			$locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
 
 			$merge->addPDF(storage_path().'/splunk_report_start'.$locale .'.pdf', 'all');
