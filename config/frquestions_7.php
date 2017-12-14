@@ -23,7 +23,7 @@ return array(
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'We are only just starting to learn about GDPR requirements',
+                                'label'=>'Nous commençons juste à prendre connaissance des exigences associées au RGPD',
                                 'value'=>2,
                                 'checked'=>false
                             ),

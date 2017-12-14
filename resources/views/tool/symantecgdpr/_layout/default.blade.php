@@ -70,12 +70,12 @@
                         <div class="col-sm-3 text-right text-left-xs">
                             <ul class="social-list list-inline">
                                 <li>
-                                    <a href="https://twitter.com/home?status=Is%20your%20business%20GDPR%20ready?%20http%3A//bit.ly/2AwihN4%20%23Symantec" target="_blank">
+                                    <a href="{{Lang::get('general.'.session('product.id').'twitterlink')}}" target="_blank">
                                         <i class="socicon socicon-twitter icon icon--xs"></i>
                                     </a>
                                 </li>
-                                <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//bit.ly/2AwihN4" target="_blank"><i class="socicon socicon-facebook icon icon--xs"></i></a></li>
-                                <li><a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//bit.ly/2AwihN4&title=Symantec%20and%20IDC%20GDPR%20Assessment&summary=Is%20your%20business%20GDPR%20ready?&source=" target="_blank"><i class="socicon socicon-linkedin icon icon--xs"></i></a></li>
+                                <li><a href="{{Lang::get('general.'.session('product.id').'facebooklink')}}" target="_blank"><i class="socicon socicon-facebook icon icon--xs"></i></a></li>
+                                <li><a href="{{Lang::get('general.'.session('product.id').'linkedinlink')}}" target="_blank"><i class="socicon socicon-linkedin icon icon--xs"></i></a></li>
                             </ul>
                         </div>
                     </div>

@@ -8,7 +8,7 @@ return array(
     'stage3' => 'Étape 3 – Temps de mise en œuvre',
     'stage4' => 'Étape 4 - Il faut optimiser',
     'stage5' => 'Étape 5 – Temps de consolidation',
-    'complete_thankyou' => 'Thank you :Fname,',
+    'complete_thankyou' => 'Merci :Fname,',
     'complete_body' => '
         Vous allez bientôt recevoir votre rapport personnalisé.<br/>
         Veuillez vérifier votre courrier indésirable si vous ne le recevez pas dans les 5 minutes.<br/><br/>

@@ -520,6 +520,9 @@ Risk is a key driver for assessment and mitigation processes.",
     '7provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
     '7byreg'=>'By registering with IDC, you accept our <a href="/privacy" target="_blank">Privacy Policy</a> and <a href="" target="_blank">Symantec\'s Privacy Policy</a> The information we collect will be shared with Symantec for the purpose of direct marketing',
     '7wait'=>'While you\'re waiting why not tweet your results and see how your colleagues measure up?',
+    '7twitterlink'=>'https://twitter.com/home?status=Is%20your%20business%20GDPR%20ready?%20http%3A//bit.ly/2AwihN4%20%23Symantec',
+    '7facebooklink'=>'https://www.facebook.com/sharer/sharer.php?u=http%3A//bit.ly/2AwihN4',
+    '7linkedinlink'=>'https://www.linkedin.com/shareArticle?mini=true&url=http%3A//bit.ly/2AwihN4&title=Symantec%20and%20IDC%20GDPR%20Assessment&summary=Is%20your%20business%20GDPR%20ready?&source=',
 
     //general
     'disclaimer' => 'Disclaimer',

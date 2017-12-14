@@ -166,13 +166,13 @@ Risiko ist ein wichtiger Treiber für Assessments und Prozesse zur Risikominderu
     '7standard'=>'Stadium 2 - Beschleunigung',
     '7standardtxt'=>"Wir danken Ihnen für das Ausfüllen dieser Selbsteinschätzung zur Vorbereitung auf die EU-DSGV!<br/>Dieser Report bietet Ihnen Empfelungen für Ihre nächsten Schritte auf dem Weg zur vollständigen Konformität zur EU-DSGV.",
     '7standardtweet' => "",
-    '7good'=>'Stage 3 - Time to Something',
+    '7good'=>'Stadium 3 – Bereit zur Implementierung',
     '7goodtxt'=>"Wir danken Ihnen für das Ausfüllen dieser Selbsteinschätzung zur Vorbereitung auf die EU-DSGV!<br/>Dieser Report bietet Ihnen Empfelungen für Ihre nächsten Schritte auf dem Weg zur vollständigen Konformität zur EU-DSGV.",
     '7goodtweet' => "",
     '7aspirational'=>'Stadium 4 - Optimierung',
     '7aspirationaltxt'=>"Wir danken Ihnen für das Ausfüllen dieser Selbsteinschätzung zur Vorbereitung auf die EU-DSGV!<br/>Dieser Report bietet Ihnen Empfelungen für Ihre nächsten Schritte auf dem Weg zur vollständigen Konformität zur EU-DSGV.",
     '7aspirationaltweet' => "",
-    '7best'=>'Stage 1 - Time to Chill',
+    '7best'=>'Stadium 5 – Bereit zur Konsolidierung',
     '7besttxt'=>"Wir danken Ihnen für das Ausfüllen dieser Selbsteinschätzung zur Vorbereitung auf die EU-DSGV!<br/>Dieser Report bietet Ihnen Empfelungen für Ihre nächsten Schritte auf dem Weg zur vollständigen Konformität zur EU-DSGV.",
     '7besttweet' => "",
     '7send'=>'',
@@ -180,6 +180,10 @@ Risiko ist ein wichtiger Treiber für Assessments und Prozesse zur Risikominderu
     '7provide'=>'',
     '7byreg'=>'Mit der Registrierung bei <a href="/privacy" target="_blank">IDC</a> akzeptieren Sie unsere und <a href="" target="_blank">Symantecs</a> jeweilige Datenschutzrichtlinie. Die von uns gesammelten Informationen werden an Symantec für die Durchführung von Direktmarketing-Aktionen weitergegeben,',
     '7wait'=>'',
+    '7twitterlink'=>'https://twitter.com/home?status=Ist%20Ihr%20Unternehmen%20auf%20die%20EU-DSGV%20vorbereitet%20(Datenschutz-Grundverordnung)?%20http%3A//bit.ly/2AXY3vW%20%40symantec',
+    '7facebooklink'=>'https://www.facebook.com/sharer/sharer.php?u=http%3A//bit.ly/2AXY3vW',
+    '7linkedinlink'=>'https://www.linkedin.com/shareArticle?mini=true&url=http%3A//bit.ly/2AXY3vW&title=Ist%20Ihr%20Unternehmen%20auf%20die%20EU-DSGV%20vorbereitet%20(Datenschutz-Grundverordnung)?&summary=Stand%20der%20Vorbereitungen%20auf%20EU-DSVG%20in%20Ihrem%20Unternehmen&source=',
+    
 
     //general
     'introduction' => 'Einführung',

@@ -5,9 +5,9 @@ return array(
     'sub-title' => 'Stand der Vorbereitungen auf EU-DSVG in Ihrem Unternehmen',
     'stage1' => 'Stadium 1- Initiierung',
     'stage2' => 'Stadium 2 - Beschleunigung',
-    'stage3' => 'Stage 3: Time to Something',
+    'stage3' => 'Stadium 3 – Bereit zur Implementierung',
     'stage4' => 'Stadium 4 - Optimierung',
-    'stage5' => 'Stage 5: Time to Chill',
+    'stage5' => 'Stadium 5 – Bereit zur Konsolidierung',
     'complete_thankyou' => 'Vielen Dank :Fname,',
     'complete_body' => '
         Ihren Bericht finden Sie schon bald in Ihrem E-Mail-Postfach.<br/>

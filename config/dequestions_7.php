@@ -23,7 +23,7 @@ return array(
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Wir fangen erst an, uns über die Anforderungen der EU-DSGV zu informieren.',
+                                'label'=>'Wir beginnen gerade erst. Über GDPR nachzudenken',
                                 'value'=>2,
                                 'checked'=>false
                             ),

@@ -182,6 +182,10 @@ Le risque est un facteur clé pour les processus d'évaluation et d'atténuation
     '7provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
     '7byreg'=>'En vous inscrivant auprès d\'IDC, vous acceptez notre <a href="/privacy" target="_blank">politique de protection de la confidentialité</a> et celle de <a href="" target="_blank">Symantec</a>. Les informations que nous recueillons seront partagées avec Symantec à des fins de marketing direct',
     '7wait'=>'While you\'re waiting why not tweet your results and see how your colleagues measure up?',
+    '7twitterlink'=>'https://twitter.com/home?status=Votre%20entreprise%20est-elle%20pr%C3%AAte%20pour%20le%20GDPR%20?%20http%3A//bit.ly/2AWU0jE%20%40symantec',
+    '7facebooklink'=>'https://www.facebook.com/sharer/sharer.php?u=http%3A//bit.ly/2AWU0jE',
+    '7linkedinlink'=>'https://www.linkedin.com/shareArticle?mini=true&url=http%3A//bit.ly/2AWU0jE&title=Votre%20entreprise%20est-elle%20pr%C3%AAte%20pour%20le%20GDPR%20?&summary=Préparation%20au%20GDPR%20pour%20votre%20entreprise&source=',
+    
 
     //general
     'introduction' => 'Introduction',
