@@ -12,12 +12,12 @@ use App\Language;
 use App\Tool;
 use App\Tracker;
 use App\Url;
+use Log;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Lang;
-use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Session;
@@ -697,16 +697,31 @@ public function postComplete(SubmitAssessmentsRequest $request)
 		return View::make('tool.'.session('template').'.thankyou',$vars);
     }
 
-    public function getDownload($subdomain,$assid){
+    public function getDownload(Request $request,$subdomain,$assid){
     	$assessment = Assessment::findOrFail($assid);
     	$assessment->update(['fetched' => 1]);
+    	$filename = $assessment->id.'_'.str_slug($assessment->fname.'_'.$assessment->lname.'_'.$assessment->tool->title.'_Assessment', '-').'.pdf';
+    	if($assessment->tool_id==session('product.id')){
+    		if(file_exists(storage_path().'/reports/'.$filename)){
+    			$headers = array(
+		    		'Content-Type: application/pdf',
+		    		);
+		    	return response()->download(storage_path().'/reports/'.$filename, $filename, $headers);
+    		}else{
+    			$request->session()->put('questions', $assessment->quiz);
+    			$request->session()->put('result', $assessment->result);
 
-
-    	$file= storage_path().'/reports/'.$assessment->id.'_'.str_slug($assessment->fname.'_'.$assessment->lname.'_'.$assessment->tool->title.'_Assessment', '-').'.pdf';
-    	$headers = array(
-    		'Content-Type: application/pdf',
-    		);
-    	return response()->download($file, $assessment->id.'_'.str_slug($assessment->fname.'_'.$assessment->lname.'_'.$assessment->tool->title.'_Assessment', '-').'.pdf', $headers);
+    			$reportName = str_slug($assessment->fname.'_'.$assessment->lname.'_'.session('product.title').'_Assessment', '-');
+				$this->wkhtml($assessment->id,$reportName);
+				$headers = array(
+		    		'Content-Type: application/pdf',
+		    		);
+		    	return response()->download(storage_path().'/reports/'.$filename, $filename, $headers);
+    		}
+    	}else{
+    		Log::error("Report does not exist for tool id ".session('product.id')." http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
+    		abort(404, 'The page you requested does not exist');
+    	}
     }
 
     public function fakeDownload($tool){

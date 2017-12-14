@@ -71,7 +71,7 @@ Route::group(['domain' => '{subdomain}.idcready.net','middleware'=>['locale']], 
 	//default en routes
 	Route::get('/', 'ToolController@run')->middleware(['routebyurl','reloadquestions']);
 
-	Route::get('/download/{assid}', 'ToolController@getDownload');
+	Route::get('/download/{assid}', 'ToolController@getDownload')->middleware(['routebyurl']);
 
 	Route::get('/privacy', function()
 	{
