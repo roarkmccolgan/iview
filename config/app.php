@@ -235,6 +235,7 @@ return [
         'SnappyImage' => Barryvdh\Snappy\Facades\SnappyImage::class,
         'Lava' => Khill\Lavacharts\Laravel\LavachartsFacade::class,
         'PdfMerger' => LynX39\LaraPdfMerger\Facades\PdfMerger::class,
+        'Uuid' => Webpatser\Uuid\Uuid::class,
     ],
 
     'tooldomain' => [
