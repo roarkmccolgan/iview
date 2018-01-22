@@ -18,7 +18,7 @@ return array(
                         'question'=>'In which country are you situated?',
                         'name'=>'s1',
                         'script'=>'
-                            $.getJSON("http://freegeoip.net/json/", function(data) {
+                            $.getJSON("https://freegeoip.net/json/", function(data) {
                                 var ip = data.ip;
                                 var country = data.country_name;
                                 $(\'select[name="answer"]\').val(country);

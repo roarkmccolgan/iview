@@ -60,6 +60,7 @@ return [
 			'options' => [
 				'null' => 'Please select',
 				'Afghanistan' => 'Afghanistan',
+				'Åland Islands' => 'Åland Islands',
 				'Albania' => 'Albania',
 				'Algeria' => 'Algeria',
 				'Andorra' => 'Andorra',

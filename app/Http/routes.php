@@ -40,7 +40,7 @@ Route::group(['prefix' => 'admin', 'middleware'=>['auth']], function(){
 	Route::get('reporting/create', 'ReportingController@create');
 });
 
-Route::group(['domain' => '{subdomain}.idcready.net','middleware'=>['locale']], function ($subdomain) {
+Route::group(['domain' => '{subdomain}.'.env('APP_TLD','idcready.net'),'middleware'=>['locale']], function ($subdomain) {
 	Route::group(['prefix' => 'admin','middleware'=>['auth','routebyurl','toolaccess:super,admin,client,local']], function(){
 		Route::get('/', 'TerminalController@dashboard');
 		Route::post('/', 'TerminalController@dashboard');
@@ -66,10 +66,16 @@ Route::group(['domain' => '{subdomain}.idcready.net','middleware'=>['locale']], 
 		Route::group(['prefix' => 'users'], function(){
 			Route::post('delete/{user}', 'UserController@delete');
 		});
+		Route::group(['prefix' => 'tool'], function(){
+			Route::post('save-assessment', 'ToolController@saveAssessmentSession');
+		});
 	});
 
 	//default en routes
-	Route::get('/', 'ToolController@run')->middleware(['routebyurl','reloadquestions']);
+	Route::get('/', 'ToolController@run')->middleware(['routebyurl']);
+	Route::get('/restart',['middleware' => 'reloadquestions', function () {
+		return redirect('/');
+	}]);
 
 	Route::get('/download/{uuid}', 'ToolController@getDownload')->middleware(['routebyurl']);
 

@@ -1,0 +1,18 @@
+@tailwind preflight;
+@import "../webfonts/frutigerneue/stylesheet.css";
+
+.fade-enter-active, .fade-leave-active {
+  transition-property: opacity;
+  transition-duration: .4s;
+}
+
+.fade-enter-active {
+  /*transition-delay: .4s;*/
+}
+
+.fade-enter, .fade-leave-active {
+  opacity: 0;
+}
+
+
+@tailwind utilities;

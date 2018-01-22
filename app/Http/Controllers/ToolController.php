@@ -1,5 +1,6 @@
 <?php namespace App\Http\Controllers;
 
+use JavaScript;
 use App\Assessment;
 use App\Company;
 use App\Http\Controllers\Controller;
@@ -13,7 +14,6 @@ use App\Tool;
 use App\Tracker;
 use App\Url;
 use Carbon\Carbon;
-use Uuid;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Config;
@@ -25,6 +25,7 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\View;
 use Lava;
 use Log;
+use Uuid;
 
 class ToolController extends Controller
 {
@@ -38,6 +39,19 @@ class ToolController extends Controller
 	var $result = false;
 	var $report;
 
+	public function __construct(Request $request){
+		//only reload questions if tool is ntt
+		if($request->session()->has('product')){
+			$tool = session('product');
+			if($tool['alias']!=='ntt-sdwan' || !$request->session()->has('questions')){
+				$this->middleware(['reloadquestions'], ['only' => [
+		            'run',
+		        ]]);
+			}
+		}else{
+			$this->middleware(['reloadquestions']);
+		}
+	}
 
 	public function loadQuestions(){
 		$this->quiz=session('questions');
@@ -180,9 +194,30 @@ public function run(Request $request, $subdomain)
 
 	session(['source' => $source]);
 
+	$onlyQuestions = collect(session('questions'))->flatmap(function ($section, $secKey){
+		return collect($section['pages'])->flatmap(function($item, $itemKey) use($section){
+			foreach ($item['questions'] as $qKey => $q) {
+				$item['questions'][$qKey]['section'] = $section['title'];
+				$item['questions'][$qKey]['description'] = isset($section['description']) ? $section['description'] : '';
+				$item['questions'][$qKey]['complete'] = $section['complete'];
+				$item['questions'][$qKey]['class'] = $section['class'];
+				$item['questions'][$qKey]['page'] = substr($itemKey,4);
+				$item['questions'][$qKey]['qKey'] = $qKey;
+			}
+			return $item['questions'];
+		});
+	});
+	$totalQuestions = count($onlyQuestions);
 	$return_visitor = $request->cookie('quiz_progress');
 	$class = 'intro';
-	$view = 'tool.'.session('template').'.intro';
+	$view = $tool->template!=='nttsdwan' ? 'tool.'.session('template').'.intro' : 'tool.'.session('template').'.assessment';
+	JavaScript::put([
+        'tool' => $tool,
+        'fields' => $fields,
+        'extraFields' => $extraFields,
+        'questions' => $onlyQuestions
+    ]);
+
 	return view($view, compact('tool','return_visitor','class'));
 }
 
@@ -1071,5 +1106,21 @@ public function postComplete(SubmitAssessmentsRequest $request)
 		}
 		echo "Updated $completed Assessments";
     }
+
+    public function saveAssessmentSession(Request $request){
+    	Session::put('answers.'.$request->question, $request->answer);
+    	foreach (session('questions') as $sec => $questions) {
+    		foreach ($questions['pages'] as $page => $options) {
+    			foreach ($options['questions'] as $qKey => $question) {
+    				if($request->session()->has('answers.'.$qKey)){
+    					$request->session()->put('questions.'.$sec.'.pages.'.$page.'.questions.'.$qKey.'.selected', $request->answer);
+    				}
+    			}
+    		}
+    	}
+    	return response()->json('success');
+    }
+
+
 
 }

@@ -2,11 +2,38 @@
   "private": true,
   "scripts": {
     "prod": "gulp --production",
-    "dev": "gulp watch"
+    "dev": "gulp watch",
+    "webdev": "webpack",
+    "webprod": "NODE_ENV=production webpack --progress",
+    "webwatch": "npm run webdev -- --watch --hide-modules --progress"
   },
   "devDependencies": {
+    "bootstrap-sass": "^3.3.0",
+    "clean-webpack-plugin": "^0.1.17",
+    "css-loader": "^0.28.8",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.6",
     "gulp": "^3.9.1",
     "laravel-elixir": "^5.0.0",
-    "bootstrap-sass": "^3.3.0"
+    "optimize-css-assets-webpack-plugin": "^3.2.0",
+    "postcss-loader": "^2.0.10",
+    "purify-css": "^1.2.5",
+    "purifycss-webpack": "^0.7.0",
+    "style-loader": "^0.19.1",
+    "tailwindcss": "^0.4.0",
+    "uglifyjs-webpack-plugin": "^1.1.6",
+    "vue-loader": "^13.7.0",
+    "vue-router": "^3.0.1",
+    "vue-template-compiler": "^2.5.13",
+    "webpack": "^3.10.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.2",
+    "@fortawesome/fontawesome-pro-regular": "^5.0.4",
+    "@fortawesome/vue-fontawesome": "0.0.22",
+    "axios": "^0.17.1",
+    "vue": "^2.5.13",
+    "vue-flag-icon": "^1.0.6",
+    "vue-slider-component": "^2.4.9"
   }
 }

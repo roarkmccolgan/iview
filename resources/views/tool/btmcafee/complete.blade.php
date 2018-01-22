@@ -150,7 +150,7 @@
 <script src="{{{ asset('js/templates/'.session('template').'/main.js')}}}"></script>
 <script type="text/javascript">
     $(function(){
-        $.getJSON("http://freegeoip.net/json/", function(data) {
+        $.getJSON("https://freegeoip.net/json/", function(data) {
             var ip = data.ip;
             var country = data.country_name;
             $('select[name="country"]').val(country);
