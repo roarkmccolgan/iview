@@ -197,10 +197,10 @@ public function run(Request $request, $subdomain)
 	$onlyQuestions = collect(session('questions'))->flatmap(function ($section, $secKey){
 		return collect($section['pages'])->flatmap(function($item, $itemKey) use($section){
 			foreach ($item['questions'] as $qKey => $q) {
-				$item['questions'][$qKey]['section'] = $section['title'];
+				$item['questions'][$qKey]['section'] = isset($section['title']) ? $section['title']: '';
 				$item['questions'][$qKey]['description'] = isset($section['description']) ? $section['description'] : '';
-				$item['questions'][$qKey]['complete'] = $section['complete'];
-				$item['questions'][$qKey]['class'] = $section['class'];
+				$item['questions'][$qKey]['complete'] = isset($section['complete']) ? $section['complete'] : '';
+				$item['questions'][$qKey]['class'] = isset($section['class']) ? $section['class'] : '';
 				$item['questions'][$qKey]['page'] = substr($itemKey,4);
 				$item['questions'][$qKey]['qKey'] = $qKey;
 			}
