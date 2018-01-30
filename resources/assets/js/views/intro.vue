@@ -40,7 +40,7 @@ import faArrowRight from '@fortawesome/fontawesome-pro-regular/faArrowRight';
 export default{
 	data() {
 		return {
-			assessment: assessment,
+			assessment: laravel,
 			icons: {
 				faArrowRight: faArrowRight
 			}

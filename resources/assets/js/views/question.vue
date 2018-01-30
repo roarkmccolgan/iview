@@ -17,7 +17,7 @@
 							</div>
 						</div>
 						<div class="flex-grow block sm:hidden px-4">
-							<span class="text-sm text-grey-darker">{{lang.question | toTitle}} {{currentQuestion.name}} {{lang.of}} {{totalQuestions}} -  {{currentQuestion.section | toTitle}}</span>
+							<span class="text-sm text-grey-darker">{{lang.question | toTitle}} {{currentQuestion.name}} {{lang.of}} {{totalQuestions}}</span>
 						</div>
 					</div>
 				</div>
@@ -79,7 +79,7 @@ export default{
 	data() {
 		return {
 			//section: this.$route.params.section,
-			questions: assessment.questions,
+			questions: laravel.questions,
 			faArrowLeft: faArrowLeft,
 			faSpinnerThird: faSpinnerThird,
 			lang: {
@@ -88,7 +88,7 @@ export default{
 				next: 'Next',
 				multimaxierror: 'Please select a minimum of #number# and maximum of #max# to continue'
 			},
-			questionInfo: assessment.questionInfo,
+			questionInfo: laravel.questionInfo,
 			showNext: false,
 			showDetails: true,
 			answer: [],
