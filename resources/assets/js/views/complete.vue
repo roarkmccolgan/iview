@@ -43,6 +43,22 @@
 								<div class="mb-6 sm:w-1/2">
 									<div class="mr-2">
 										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-city">
+											Email
+										</label>
+										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4" id="grid-city" type="email" placeholder="">
+									</div>
+								</div>
+								<div class="mb-6 sm:w-1/2">
+									<div class="mr-2">
+										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-city">
+											Phone
+										</label>
+										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4" id="grid-city" type="tel" placeholder="">
+									</div>
+								</div>
+								<div class="mb-6 sm:w-1/2">
+									<div class="mr-2">
+										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-city">
 											Company
 										</label>
 										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4" id="grid-company" type="text" placeholder="">
@@ -56,7 +72,7 @@
 										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4" id="grid-position" type="text" placeholder="">
 									</div>
 								</div>
-								<div class="mb-6 w-full">
+								<div class="mb-6 sm:w-1/2">
 									<div class="mr-2">
 										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-state">
 											Company Business
@@ -74,21 +90,22 @@
 										</div>
 									</div>
 								</div>
-								
 								<div class="mb-6 sm:w-1/2">
 									<div class="mr-2">
-										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-city">
-											Email
+										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-state">
+											Company Size
 										</label>
-										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4" id="grid-city" type="email" placeholder="">
-									</div>
-								</div>
-								<div class="mb-6 sm:w-1/2">
-									<div class="mr-2">
-										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-city">
-											Phone
-										</label>
-										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4" id="grid-city" type="tel" placeholder="">
+										<div class="inline-block relative w-full">
+											<select class="block appearance-none w-full bg-grey-lighter border border-grey-lighter text-grey-darker py-3 px-4 pr-8 rounded">
+												<option>Fewer than 500 </option>
+												<option>500 to 999</option>
+												<option>1,000 to 4,999</option>
+												<option>5,000 or more</option>
+											</select>
+											<div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-darker">
+												<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+											</div>
+										</div>
 									</div>
 								</div>
 								<div class="mb-6 w-full">
