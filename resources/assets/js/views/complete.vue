@@ -6,14 +6,15 @@
 		<div class="container mx-auto bg-white border-t border-b mt-6 p-8 sm:border sm:rounded shadow text-grey-darker">
 			<div class="flex flex-wrap justify-center">
 				<div class="w-full sm:w-1/2 relative">
-					<p class="font-semibold mb-4">Thank you for completing the network maturity assessment. Tell us a little about you and immediately receive your personalized report including:</p>
+					<h2 class="font-light leading-tight mb-4">Thank you for completing the network maturity assessment.</h2>
+					<h4 class="font-light leading-tight mb-2">How you scored</h4>
+					<img class="max-w-full" :src="'/images/tools/' + assessment.tool.id + '/graph2.png'" alt="">
+					<p class="font-semibold mb-4">Please tell us a little about yourself and immediately receive your personalized report including:</p>
 					<ul class="mb-4">
 						<li>How you compare against your peers based on industry, organizational size, and geographic region</li>
 						<li>Where to focus your network readiness efforts with essential guidance</li>
 						<li>Why the associated business benefits will make this a business priority today</li>
 					</ul>
-					<h4>How you scored</h4>
-					<img class="max-w-full" :src="'/images/tools/' + assessment.tool.id + '/graph2.png'" alt="">
 				</div>
 				<div class="w-full sm:w-1/2">
 					<div class="sm:ml-8">
