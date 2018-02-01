@@ -35,10 +35,6 @@
                                         </span>
                                     </a>
                                 </div>
-                                <div class="col-sm-6 hidden-xs">
-                                    <span class="type--fine-print">{{Lang::get('general.'.session('product.id').'sponsoredby')}}</span>
-                                    <img class="footer-logo" src="{{asset('css/'.str_slug(session('company.name')).'/'.str_slug(session('company.name')).'-logo.svg')}}" alt="">
-                                </div>
                             </div>
                         </div>
                         <div class="col-sm-3 col-sm-pull-6 col-sm-offset-1 text-center">

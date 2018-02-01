@@ -16,11 +16,10 @@
 						<div>
 							<h2 class="font-light mb-4 text-ntt-blue leading-tight">{{assessment.tool.sub_title}}</h2>
 							<p class="mb-2">
-								IDC, a global leading provider of technology market research, is conducting a survey about European businesses' usage and plans around networking technologies.
+								IDC, a global leading provider of technology market research, has developed the Next Generation WAN Advisor to help organizations assess the state of their WAN as they embrace digital transformation. This 
 							</p>
 							<p class="mb-4">
-								Take this quick assessment to help you understand how digital ready your network is compared to your peers' networks and how you can progress to the next level of network maturity.<br/>
-								The survey should take about 20 minutes to complete.
+								self-assessment tool is backed up by independent end-user research and IDC's in depth understanding of this market. Upon completion of a short survey (5-10 minutes) you will receive a custom report that benchmarks your organization's WAN and provides you with essential and tailored guidance to help you prepare for the requirements of tomorrow and plot your course to a Next Generation WAN.
 							</p>
 						</div>
 						<div class="mt-8 text-center">
