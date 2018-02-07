@@ -98,6 +98,7 @@ export default{
 			error: false,
 			errorClass: 'border-red-lighter bg-red-lightest text-red-light',
 			noticeClass: 'border-blue-light bg-blue-lighter text-ntt-blue',
+			result: []
 		}
 	},
 	computed: {
@@ -150,8 +151,8 @@ export default{
 						}, 300);
 					}else{
 						that.$router.push({ path: '/complete'});
-						document.body.scrollTop = 0; // For Safari
-	    				document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+								document.body.scrollTop = 0; // For Safari
+	    						document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 					}
 				}
 			});
