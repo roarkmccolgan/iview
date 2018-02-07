@@ -23,7 +23,7 @@ return array(
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Nous commençons juste à prendre connaissance des exigences associées au RGPD',
+                                'label'=>'Nous commençons juste à prendre connaissance des exigences associées au GDPR',
                                 'value'=>2,
                                 'checked'=>false
                             ),
@@ -78,7 +78,7 @@ return array(
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Établir des processus de documentation conformes aux exigences de responsabilisation',
+                                'label'=>'Établir des processus de documentation conformes aux exigences de responsabilité',
                                 'value'=>0,
                                 'checked'=>false
                             ),
@@ -88,7 +88,7 @@ return array(
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Introduire « la vie privée dès la conception » et « la vie privée par défaut »',
+                                'label'=>'Introduire la protection des données dès la conception et par défaut',
                                 'value'=>0,
                                 'checked'=>false
                             )
