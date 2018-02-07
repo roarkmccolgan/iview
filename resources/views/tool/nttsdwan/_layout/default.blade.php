@@ -14,7 +14,7 @@ $manifest = json_decode($json, TRUE);
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <title>@yield('pagetitle')</title>
+    <title>@yield('pagetitle',Lang::get('general.'.session('product.id').'title'))</title>
     <link rel="stylesheet" href="{{ asset('bundle/'.$manifest['antifreeze'][1])}}">
 
     <!-- Favicons -->

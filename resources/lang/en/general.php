@@ -524,6 +524,56 @@ Risk is a key driver for assessment and mitigation processes.",
     '7facebooklink'=>'https://www.facebook.com/sharer/sharer.php?u=http%3A//bit.ly/2AwihN4',
     '7linkedinlink'=>'https://www.linkedin.com/shareArticle?mini=true&url=http%3A//bit.ly/2AwihN4&title=Symantec%20and%20IDC%20GDPR%20Assessment&summary=Is%20your%20business%20GDPR%20ready?&source=',
 
+    //NTT 8
+    '8elqFormName'=>'',
+    '8developedby'=>'Developed by',
+    '8sponsoredby'=>'Sponsored by',
+    '8restart'=>'Restart Assessment',
+    '8assoc'=>'In association with',
+    '8sponsors'=>'Symantec',
+    '8title'=>'NTT SDWAN Survey by IDC',
+    '8sub-title'=>'Is your Network Ready for the Digital Future?',
+    '8landing'=>'
+        <h2 class="font-light mb-4 text-ntt-blue leading-tight">Is your Network Ready for the Digital Future?</h2>
+        <p class="mb-2">
+            IDC, a global leading provider of technology market research, has developed the Next Generation WAN Advisor to help organizations assess the state of their WAN as they embrace digital transformation. 
+        </p>
+        <p class="mb-4">
+            This self-assessment tool is backed up by independent end-user research and IDC\'s in depth understanding of this market. Upon completion of a short survey (5-10 minutes) you will receive a custom report that benchmarks your organization\'s WAN and provides you with essential and tailored guidance to help you prepare for the requirements of tomorrow and plot your course to a Next Generation WAN.
+        </p>',
+    '8startbut'=>'Start Here',
+    '8landing'=>'
+        <h2 class="font-light leading-tight mb-4">Thank you for completing the network maturity assessment.</h2>
+        <h4 class="font-light leading-tight mb-2">How you scored</h4>
+        <img class="max-w-full" src="/images/tools/8/:stage.jpg" alt="">
+        <p class="font-semibold mb-4">Please tell us a little about yourself and immediately receive your personalized report including:</p>
+        <ul class="mb-4">
+            <li>How you compare against your peers based on industry, organizational size, and geographic region</li>
+            <li>Where to focus your network readiness efforts with essential guidance</li>
+            <li>Why the associated business benefits will make this a business priority today</li>
+        </ul>
+    ',
+    '8poor'=>'WAN Follower', //reactive
+    '8poortxt'=>'Thank you',
+    '8standard'=>'WAN Generalist',
+    '8standardtxt'=>"Thank you for completing IDC's GDPR Assessment.<br/>This report will provide you with recommendations about the next stages of your journey to GDPR compliance.",
+    '8good'=>'WAN Leader',
+    '8goodtxt'=>"Thank you for completing IDC's GDPR Assessment.<br/>This report will provide you with recommendations about the next stages of your journey to GDPR compliance.",
+    /*'8aspirational'=>'Stage 4 - Time to Optimize',
+    '8aspirationaltxt'=>"Thank you for completing IDC's GDPR Assessment.<br/>This report will provide you with recommendations about the next stages of your journey to GDPR compliance.",
+    '8aspirationaltweet' => "I took the @symantec GDPR Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    '8best'=>'Stage 1 - Time to Chill',
+    '8besttxt'=>"Thank you for completing IDC's GDPR Assessment.<br/>This report will provide you with recommendations about the next stages of your journey to GDPR compliance.",
+    '8besttweet' => "I took the @symantec GDPR Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",*/
+    '8send'=>'We can send you the full results directly to your mailbox',
+    '8fullreport'=>'Please complete the form below and we will send you the full report.',
+    '8provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
+    '8byreg'=>'By registering with IDC, you accept our <a href="/privacy" target="_blank">Privacy Policy</a> and <a href="" target="_blank">Symantec\'s Privacy Policy</a> The information we collect will be shared with Symantec for the purpose of direct marketing',
+    '8wait'=>'While you\'re waiting why not tweet your results and see how your colleagues measure up?',
+    '8twitterlink'=>'https://twitter.com/home?status=Is%20your%20business%20GDPR%20ready?%20http%3A//bit.ly/2AwihN4%20%23Symantec',
+    '8facebooklink'=>'https://www.facebook.com/sharer/sharer.php?u=http%3A//bit.ly/2AwihN4',
+    '8linkedinlink'=>'https://www.linkedin.com/shareArticle?mini=true&url=http%3A//bit.ly/2AwihN4&title=Symantec%20and%20IDC%20GDPR%20Assessment&summary=Is%20your%20business%20GDPR%20ready?&source=',
+
     //general
     'disclaimer' => 'Disclaimer',
     'allrights' => 'All Rights Reserved',

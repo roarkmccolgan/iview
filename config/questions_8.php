@@ -27,12 +27,12 @@ return array(
                                     ),
                                     array(
                                         'label'=>'No, but planning to within 12 months',
-                                        'value'=>2,
+                                        'value'=>3,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'Yes',
-                                        'value'=>3,
+                                        'value'=>5,
                                         'checked'=>false,
                                     )
                                 )
@@ -48,12 +48,12 @@ return array(
                                     ),
                                     array(
                                         'label'=>'No, but planning to within 12 months',
-                                        'value'=>2,
+                                        'value'=>3,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'Yes',
-                                        'value'=>3,
+                                        'value'=>5,
                                         'checked'=>false,
                                     )
                                 )
@@ -69,12 +69,12 @@ return array(
                                     ),
                                     array(
                                         'label'=>'No, but planning to within 12 months',
-                                        'value'=>2,
+                                        'value'=>3,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'Yes',
-                                        'value'=>3,
+                                        'value'=>5,
                                         'checked'=>false,
                                     )
                                 )
@@ -90,12 +90,12 @@ return array(
                                     ),
                                     array(
                                         'label'=>'No, but planning to within 12 months',
-                                        'value'=>2,
+                                        'value'=>3,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'Yes',
-                                        'value'=>3,
+                                        'value'=>5,
                                         'checked'=>false,
                                     )
                                 )
@@ -111,12 +111,12 @@ return array(
                                     ),
                                     array(
                                         'label'=>'No, but planning to within 12 months',
-                                        'value'=>2,
+                                        'value'=>3,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'Yes',
-                                        'value'=>3,
+                                        'value'=>5,
                                         'checked'=>false,
                                     )
                                 )
@@ -427,12 +427,12 @@ return array(
                                     ),
                                     array(
                                         'label'=>'Challenging but just about achievable',
-                                        'value'=>2,
+                                        'value'=>3,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'Quite routine and easy',
-                                        'value'=>3,
+                                        'value'=>5,
                                         'checked'=>false,
                                     )
                                 )
@@ -448,12 +448,12 @@ return array(
                                     ),
                                     array(
                                         'label'=>'Challenging but just about achievable',
-                                        'value'=>2,
+                                        'value'=>3,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'Quite routine and easy',
-                                        'value'=>3,
+                                        'value'=>5,
                                         'checked'=>false,
                                     )
                                 )
@@ -469,12 +469,12 @@ return array(
                                     ),
                                     array(
                                         'label'=>'Challenging but just about achievable',
-                                        'value'=>2,
+                                        'value'=>3,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'Quite routine and easy',
-                                        'value'=>3,
+                                        'value'=>5,
                                         'checked'=>false,
                                     )
                                 )
@@ -490,12 +490,12 @@ return array(
                                     ),
                                     array(
                                         'label'=>'Challenging but just about achievable',
-                                        'value'=>2,
+                                        'value'=>3,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'Quite routine and easy',
-                                        'value'=>3,
+                                        'value'=>5,
                                         'checked'=>false,
                                     )
                                 )
@@ -511,12 +511,12 @@ return array(
                                     ),
                                     array(
                                         'label'=>'Challenging but just about achievable',
-                                        'value'=>2,
+                                        'value'=>3,
                                         'checked'=>false,
                                     ),
                                     array(
                                         'label'=>'Quite routine and easy',
-                                        'value'=>3,
+                                        'value'=>5,
                                         'checked'=>false,
                                     )
                                 )
