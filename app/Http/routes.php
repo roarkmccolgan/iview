@@ -97,7 +97,9 @@ Route::group(['domain' => '{subdomain}.'.env('APP_TLD','idcready.net'),'middlewa
 	Route::get('/resendeloqua', 'ToolController@resendeloqua')->middleware(['routebyurl']);
 	Route::get('/generateuuid', 'ToolController@generateuuid')->middleware(['routebyurl']);
 	Route::get('/template/{templates}/report/header', function($domain, $template){
-		return View::make('tool.'.$template.'.report.header');
+		$locale = App::getLocale();
+		$locale = $locale == 'en' ? '' : $locale;
+		return View::make('tool.'.$template.'.report.header'.$locale);
 	});
 	Route::get('/template/{templates}/report/cover', function($domain, $template){
 		return View::make('tool.'.$template.'.report.cover');
