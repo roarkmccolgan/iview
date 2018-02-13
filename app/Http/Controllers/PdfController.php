@@ -897,7 +897,22 @@ class PdfController extends Controller
         	->setOption('footer-html',session('url').'/'.session('localeUrl').'template/'.session('template').'/report/footer')
         	->setOption('footer-spacing',2)
         	->setOption('replace', $headervars);
-		return $pdf->inline('invoice.pdf');
+        	if(session('product.id')==2){
+				$pdf->save(storage_path().'/ntt-sdwan-report.pdf');
+
+				$merge = new \LynX39\LaraPdfMerger\PdfManage;
+				$locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
+
+				$merge->addPDF(storage_path().'/ntt_report_start'.$locale .'.pdf', 'all');
+				$merge->addPDF(storage_path().'/ntt-sdwan-report.pdf', 'all');
+
+				$merge->merge('browser', storage_path().'/reports/ntt-sdwan-report.pdf', 'P');
+				if(File::exists(storage_path().'/ntt-sdwan-report.pdf')){
+					File::delete(storage_path().'/ntt-sdwan-report.pdf');
+				}
+			}else{
+				return $pdf->inline('invoice.pdf');
+			}
     }
     private function getQuestionScore($q, $section,$type='q'){
     	$selected = session('questions.'.$section.'.pages.page'.$q.'.questions.'.$type.$q.'.selected');
