@@ -898,17 +898,18 @@ class PdfController extends Controller
         	->setOption('footer-spacing',2)
         	->setOption('replace', $headervars);
         	if(session('product.id')==8){
-				$pdf->save(storage_path().'/ntt-sdwan-report.pdf');
+        		$timeStamp = time();
+				$pdf->save(storage_path().'/ntt-sdwan-report-'.$timeStamp.'.pdf');
 
 				$merge = new \LynX39\LaraPdfMerger\PdfManage;
 				$locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
 
 				$merge->addPDF(storage_path().'/ntt_report_start'.$locale .'.pdf', 'all');
-				$merge->addPDF(storage_path().'/ntt-sdwan-report.pdf', 'all');
+				$merge->addPDF(storage_path().'/ntt-sdwan-report-'.$timeStamp.'.pdf', 'all');
 
-				$merge->merge('browser', storage_path().'/reports/ntt-sdwan-report.pdf', 'P');
-				if(File::exists(storage_path().'/ntt-sdwan-report.pdf')){
-					File::delete(storage_path().'/ntt-sdwan-report.pdf');
+				$merge->merge('browser', storage_path().'/reports/ntt-sdwan-report-'.$timeStamp.'.pdf', 'P');
+				if(File::exists(storage_path().'/ntt-sdwan-report-'.$timeStamp.'.pdf')){
+					File::delete(storage_path().'/ntt-sdwan-report-'.$timeStamp.'.pdf');
 				}
 			}else{
 				return $pdf->inline('invoice.pdf');
