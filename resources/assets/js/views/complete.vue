@@ -73,7 +73,7 @@
 								<div class="mb-6 sm:w-1/2">
 									<div class="mr-2">
 										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="position">
-											Position
+											Job Title
 										</label>
 										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4" :class="[errors.position ? 'border-red' : '']" id="position" type="text" @blur="hasError">
 										<p class="text-red text-xs italic" v-show="errors.position">Please fill out this field.</p>
@@ -87,21 +87,21 @@
 										<div class="inline-block relative w-full">
 											<select class="block appearance-none w-full bg-grey-lighter border text-grey-darker py-3 px-4 pr-8 rounded" :class="[errors.business ? 'border-red' : '']" id="business" @blur="hasError">
 												<option value="">Please Select</option>
-												<option value="Banking and other financial services">Banking and other financial services (brokers, asset managers, stock exchanges, etc)</option>
-												<option value="Insurance">Insurance (life, healthcare, property and casualty, other insurance) </option>
-												<option value="Retail Trade">Retail Trade (includes food and non-food retailers. Apparel, Consumer Electronics, DIY, Eating/drinking establishments, drug stores, automotive dealers, online retailers, etc..)</option>
-												<option value="Wholesale Trade">Wholesale Trade (includes distribution, import and export)</option>
-												<option value="Business or professional">Business or professional Services (consulting, audit and tax, advertising, engineering, architecture and construction, etc) </option>
+												<option value="Banking and other financial services">Banking and other financial services</option>
+												<option value="Insurance">Insurance</option>
+												<option value="Retail Trade">Retail Trade</option>
+												<option value="Wholesale Trade">Wholesale Trade</option>
+												<option value="Business or professional">Business or professional Services </option>
 												<option value="Software and IT Services">Software and IT Services</option>
-												<option value="Telecommunications">Telecommunications services (voice and data services only, telecommunications equipment counted within discrete manufacturing)</option>
-												<option value="Media">Media: Broadcast, printing and publishing &amp; other comm. (e.g. other media, dispatch, satellite and other comm.).</option>
-												<option value="Manufacturing">Manufacturing - chemicals/pharmaceuticals, automotive, food/drink, textiles, paper, clothing, equipment, electronics, furniture, toys, etc.</option>
-												<option value="Transportation">Transportation (water, air, rail and other land transport, including logistics and supporting services) </option>
-												<option value="Utilities">Utilities (includes gas, electricity, water, sanitary services, etc.)</option>
-												<option value="Oil and Gas">Oil and Gas (Extraction of crude petroleum and natural gas, manufacture of refined petroleum products, service activities incidental to oil and gas extraction)</option>
-												<option value="Government">Government (local/regional/national), State Education, State Healthcare</option>
-												<option value="Private Education">Private Education (primary, secondary, higher, other education) </option>
-												<option value="Private Health">Private Health Care Services providers (hospitals, physician's offices, outpatient services, medical testing and diagnostic services, home and community care services, etc.)</option>
+												<option value="Telecommunications">Telecommunications services</option>
+												<option value="Media">Media: Broadcast, printing and publishing &amp; other comm.</option>
+												<option value="Manufacturing">Manufacturing</option>
+												<option value="Transportation">Transportation</option>
+												<option value="Utilities">Utilities</option>
+												<option value="Oil and Gas">Oil and Gas</option>
+												<option value="Government">Government</option>
+												<option value="Private Education">Private Education</option>
+												<option value="Private Health">Private Health Care Services providers</option>
 											</select>
 											<div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-darker">
 												<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
