@@ -897,7 +897,7 @@ class PdfController extends Controller
         	->setOption('footer-html',session('url').'/'.session('localeUrl').'template/'.session('template').'/report/footer')
         	->setOption('footer-spacing',2)
         	->setOption('replace', $headervars);
-        	if(session('product.id')==2){
+        	if(session('product.id')==8){
 				$pdf->save(storage_path().'/ntt-sdwan-report.pdf');
 
 				$merge = new \LynX39\LaraPdfMerger\PdfManage;
