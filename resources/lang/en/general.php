@@ -553,12 +553,6 @@ Risk is a key driver for assessment and mitigation processes.",
             <li>Why the associated business benefits will make this a business priority today</li>
         </ul>
     ',
-    '8poor'=>'WAN Follower', //reactive
-    '8poortxt'=>'Thank you',
-    '8standard'=>'WAN Generalist',
-    '8standardtxt'=>"Thank you for completing IDC's GDPR Assessment.<br/>This report will provide you with recommendations about the next stages of your journey to GDPR compliance.",
-    '8good'=>'WAN Leader',
-    '8goodtxt'=>"Thank you for completing IDC's GDPR Assessment.<br/>This report will provide you with recommendations about the next stages of your journey to GDPR compliance.",
     /*'8aspirational'=>'Stage 4 - Time to Optimize',
     '8aspirationaltxt'=>"Thank you for completing IDC's GDPR Assessment.<br/>This report will provide you with recommendations about the next stages of your journey to GDPR compliance.",
     '8aspirationaltweet' => "I took the @symantec GDPR Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",

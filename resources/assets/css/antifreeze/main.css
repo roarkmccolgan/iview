@@ -14,5 +14,12 @@
   opacity: 0;
 }
 
+.pb {
+	page-break-before: always;
+}
+.spacer{
+	height: 5mm;
+}
+
 
 @tailwind utilities;

@@ -68,12 +68,13 @@ Route::group(['domain' => '{subdomain}.'.env('APP_TLD','idcready.net'),'middlewa
 		});
 		Route::group(['prefix' => 'tool'], function(){
 			Route::post('save-assessment', 'ToolController@saveAssessmentSession');
+			Route::post('get-results', 'ToolController@completeAsessment');
 		});
 	});
 
 	//default en routes
 	Route::get('/', 'ToolController@run')->middleware(['routebyurl']);
-	Route::get('/restart',['middleware' => 'reloadquestions', function () {
+	Route::get('/restart',['middleware' => ['routebyurl','reloadquestions'], function () {
 		return redirect('/');
 	}]);
 

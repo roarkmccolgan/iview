@@ -658,6 +658,113 @@ class PdfController extends Controller
 			$vars['introImage'] = Lang::has(session('product.alias').'.introduction-image') ? trans(session('product.alias').'.introduction-image') : false;
 			$vars['introRating'] = trans(session('product.alias').'.'.session('result.overall.rating'));
 			$vars['questions'] = session('questions');
+		}elseif(session('product.id')==8) {
+			//User overall stage number and ordinal
+			$overallNumber = (int) filter_var(session('result.overall.rating'), FILTER_SANITIZE_NUMBER_INT);
+			$infrastructureNumber =  (int) filter_var(session('result.infrastructure.rating'), FILTER_SANITIZE_NUMBER_INT);
+			$intelligenceNumber =  (int) filter_var(session('result.intelligence.rating'), FILTER_SANITIZE_NUMBER_INT);
+			$operationsNumber =  (int) filter_var(session('result.operations.rating'), FILTER_SANITIZE_NUMBER_INT);
+			
+
+			$vars['introduction'] = trans(session('product.alias').'.introduction',
+				[
+					'result'=>trans(session('product.alias').'.'.session('result.overall.rating')),
+				]
+			);
+
+			$customCopy = '';
+
+			//overall
+			$rating = session('result.overall.rating');
+			$customCopy.= trans(session('product.alias').'.overallintro',
+				[
+					'image'=>session('url').'/'.session('localeUrl').'images/tools/8/graph'.$rating.'.png',
+					'icon'=>session('url').'/'.session('localeUrl').'images/tools/8/overallicon.png'
+				]
+			);
+
+			$customCopy.= trans(session('product.alias').'.overall'.$rating,
+				[
+					'position'=>trans(session('product.alias').'.'.$rating),
+					'stage'=>$overallNumber,
+				]
+			);
+
+			$customCopy.= trans(session('product.alias').'.overalloutro');
+
+			//Infrastructure
+			$customCopy.= trans(session('product.alias').'.infrastructureintro',
+				[
+					'icon'=>session('url').'/'.session('localeUrl').'images/tools/8/infrastructureicon.png'
+				]
+			);
+
+			$customCopy.= trans(session('product.alias').'.infrastructure-'.$infrastructureNumber.'-'.$rating);
+			
+			$q2score = $this->getQuestionScoreNew(2, 'infrastructure', 2);
+			$customCopy.= trans(session('product.alias').'.infrastructure-'.$infrastructureNumber.'-q2-'.$q2score);
+
+			$q3score = $this->getQuestionScoreNew(3, 'infrastructure', 3);
+			$customCopy.= trans(session('product.alias').'.infrastructure-'.$infrastructureNumber.'-q3-'.$q3score);
+
+			$customCopy.= '<div class="pb"></div>';
+
+			//Intelligence
+			$customCopy.= trans(session('product.alias').'.intelligenceintro',
+				[
+					'icon'=>session('url').'/'.session('localeUrl').'images/tools/8/intelligenceicon.png'
+				]
+			);
+
+			$customCopy.= trans(session('product.alias').'.intelligence-'.$intelligenceNumber.'-'.$rating);
+			
+			$q5score = $this->getQuestionScoreNew(5, 'intelligence', 2);
+			$customCopy.= trans(session('product.alias').'.intelligence-'.$intelligenceNumber.'-q5-'.$q5score);
+
+			$q6score = $this->getQuestionScoreNew(6, 'intelligence', 3);
+			$customCopy.= trans(session('product.alias').'.intelligence-'.$intelligenceNumber.'-q6-'.$q6score);
+
+			$customCopy.= '<div class="pb"></div>';
+
+			//Operations
+			$customCopy.= trans(session('product.alias').'.operationsintro',
+				[
+					'icon'=>session('url').'/'.session('localeUrl').'images/tools/8/operationsicon.png'
+				]
+			);
+
+			$customCopy.= trans(session('product.alias').'.operations-'.$operationsNumber.'-'.$rating);
+			
+			$q8score = $this->getQuestionScoreNew(8, 'operations', 2);
+			$customCopy.= trans(session('product.alias').'.operations-'.$operationsNumber.'-q8-'.$q8score);
+
+			$q9score = $this->getQuestionScoreNew(9, 'operations', 3);
+			$customCopy.= trans(session('product.alias').'.operations-'.$operationsNumber.'-q9-'.$q9score);
+
+			$customCopy.= '<div class="pb"></div>';
+
+			//Conclusion
+			$customCopy.= trans(session('product.alias').'.conclusionintro',
+				[
+					'icon'=>session('url').'/'.session('localeUrl').'images/tools/8/conclusionicon.png'
+				]
+			);
+
+			$customCopy.= trans(session('product.alias').'.guidance');
+			if($q3score == 1 || $q3score == 2){
+				$customCopy.= trans(session('product.alias').'.guidance-q3-1-2');
+			}
+			if($q3score == 3 || $q3score == 4){
+				$customCopy.= trans(session('product.alias').'.guidance-q3-3-4');
+			}
+			if($q3score == 5){
+				$customCopy.= trans(session('product.alias').'.guidance-q3-5');
+			}
+
+			$customCopy.= '<div class="spacer"></div>';
+
+			$vars['sectionCopy'] = $customCopy;
+			
 		}else{
 			foreach (config('baseline_'.session('product.id')) as $section => $values) {
 				if(config('baseline_'.session('product.id').'.'.$section.'.report-settings.graph')){
@@ -769,9 +876,8 @@ class PdfController extends Controller
 		
 
 		//return $vars['sections'];
-		/*echo "<pre>";
-		dd(session('product'));*/
-		//return view('tool.'.session('template').'.report.report',$vars);
+		//dd(session('result'));
+		return view('tool.'.session('template').'.report.report',$vars);
 		$margintop = 25;
 		if(null !== config('baseline_'.session('product.id').'.overall.report-settings.margin-top')){
 			$margintop = config('baseline_'.session('product.id').'.overall.report-settings.margin-top');
@@ -806,6 +912,32 @@ class PdfController extends Controller
     		$total = $select[1];
     	}
     	return $total;
+    }
+
+    private function getQuestionScoreNew($q, $section,$page=false,$type='q'){
+    	$page = $page == false ? $q : $page;
+    	$selected = session('questions.'.$section.'.pages.page'.$page.'.questions.'.$type.$q.'.selected');
+    	if(count($selected)>1){
+    		$calc = session()->has('questions.'.$section.'.pages.page'.$page.'.questions.'.$type.$q.'.calc') ? session('questions.'.$section.'.pages.page'.$page.'.questions.'.$type.$q.'.calc') : false;
+    		if($calc){
+    			if($calc['type']=='average'){
+					$ave = [];
+					foreach ($selected as $select) {
+						$ave[]=$select['value'];
+					}
+					$val = array_sum($ave) / count($ave);
+				}elseif($calc['type']=='normalize'){
+					$norm = 0;
+					foreach ($selected as $select) {
+						$norm+=$select['value'];
+					}
+					$val = ($norm/$details['calc']['value'])*count($details['selected']);
+				}
+    		}
+    	}else{
+    		$val = $selected[0]['value'];
+    	}
+    	return $val;
     }
 
     private function getAnswerText($q, $section,$type='q'){

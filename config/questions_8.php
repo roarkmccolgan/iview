@@ -13,6 +13,9 @@ return array(
                 'questions' => array(
                     'q1'=>array(
                         'type'=>'groupbutton',
+                        'calc'=>array(
+                            'type'=>'average'
+                        ),
                         'question'=>'Do you use any of the following in your WAN solution?',
                         'name'=> 1,
                         'options'=>array(
@@ -213,6 +216,9 @@ return array(
                 'questions' => array(
                     'q4'=>array(
                         'type'=>'groupbutton',
+                        'calc'=>array(
+                            'type'=>'average'
+                        ),
                         'question'=>'Do you use any of the following intelligent WAN services?',
                         'name'=> 4,
                         'options'=>array(
@@ -413,6 +419,9 @@ return array(
                 'questions' => array(
                     'q7'=>array(
                         'type'=>'groupbutton',
+                        'calc'=>array(
+                            'type'=>'average'
+                        ),
                         'question'=>'How easy is it to do the following on your current WAN?',
                         'name'=> 7,
                         'options'=>array(

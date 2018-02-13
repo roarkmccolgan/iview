@@ -29,10 +29,9 @@
 	</transition>
 	<div class="container mx-auto bg-white border-t border-b mt-6 mb-4 py-4 px-4 sm:border sm:rounded text-grey-darker">
 		<div class="flex justify-start">
-			<div class="mr-2 pr-2 border-r text-sm"><a href="/" class="no-underline text-ntt-blue opacity-75"><font-awesome-icon class="mr-1" :icon="icons.faUndo"></font-awesome-icon>Restart Assessment</a></div>
-			<div class="mr-2 pr-2 border-r text-sm"><a href="#" class="no-underline text-ntt-blue opacity-75">Terms of Use</a></div>
-			<div class="mr-2 pr-2 border-r text-sm"><a href="#" class="no-underline text-ntt-blue opacity-75">IDC's Privacy Policy</a></div>
-			<div class="mr-2 pr-2 border-r text-sm"><a href="#" class="no-underline text-ntt-blue opacity-75">Cookies Policy</a></div>
+			<div class="mr-2 pr-2 border-r text-sm"><a href="/restart" class="no-underline text-ntt-blue opacity-75"><font-awesome-icon class="mr-1" :icon="icons.faUndo"></font-awesome-icon>Restart Assessment</a></div>
+			<div class="mr-2 pr-2 border-r text-sm"><a href="/privacy" target="_blank" class="no-underline text-ntt-blue opacity-75">IDC's Privacy Policy</a></div>
+			<div class="mr-2 pr-2 border-r text-sm"><a href="/cookies" target="_blank" class="no-underline text-ntt-blue opacity-75">Cookies Policy</a></div>
 		</div>
 	</div>
 </div>

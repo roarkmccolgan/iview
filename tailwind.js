@@ -196,6 +196,9 @@ module.exports = {
   */
 
   fonts: {
+    'report': [
+      'sans-serif',
+    ],
     'sans': [
       'Frutiger Neue LT W1G',
       '-apple-system',

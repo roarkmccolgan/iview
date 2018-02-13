@@ -150,9 +150,13 @@ export default{
 	    					document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 						}, 300);
 					}else{
-						that.$router.push({ path: '/complete'});
+						that.getResults().then(function (response) {
+							if(response.data.query == 'success'){
+								that.$router.push({ name: 'complete', params:{result: response.data.result}});
 								document.body.scrollTop = 0; // For Safari
 	    						document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+							}
+						});
 					}
 				}
 			});
@@ -256,15 +260,19 @@ export default{
 			this.error = {message: newStr, class: this.errorClass}
 		},
 		saveAssessment: function(){
-			/*var that = this;
+			var that = this;
 			return axios.post('/api/tool/save-assessment', {
 				question: this.currentQuestion.qKey,
 				answer: this.answer,
-			});*/
-
-			return new Promise(function(resolve, reject) {
-				setTimeout(resolve, 100, {data: 'success'});
 			});
+
+			/*return new Promise(function(resolve, reject) {
+				setTimeout(resolve, 100, {data: 'success'});
+			});*/
+		},
+		getResults: function(){
+			var that = this;
+			return axios.post('/api/tool/get-results');
 		}
 	},
 	filters: {

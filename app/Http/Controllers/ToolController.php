@@ -1112,8 +1112,9 @@ public function postComplete(SubmitAssessmentsRequest $request)
     	foreach (session('questions') as $sec => $questions) {
     		foreach ($questions['pages'] as $page => $options) {
     			foreach ($options['questions'] as $qKey => $question) {
-    				if($request->session()->has('answers.'.$qKey)){
+    				if($qKey == $request->question){
     					$request->session()->put('questions.'.$sec.'.pages.'.$page.'.questions.'.$qKey.'.selected', $request->answer);
+    					break 3;
     				}
     			}
     		}
@@ -1121,6 +1122,79 @@ public function postComplete(SubmitAssessmentsRequest $request)
     	return response()->json('success');
     }
 
+    public function completeAsessment(Request $request){
+    	$this->loadQuestions();
+    	$this->baseline = config('baseline'.'_'.session('product.id'));
+    	$result = array();
+    	$result['overall']['score'] = 0;
 
+		foreach ($this->quiz as $key => $value) {
+			if($key!=='screeners'){
+				foreach ($value['pages'] as $page => $props) {
+					foreach ($props['questions'] as $q => $details) {
+						if(!isset($details['ignore']) || $details['ignore']==false ){ // ignore answer
+    						if(($details['type']=='groupSlider' || $details['type']=='groupbutton') && is_array($details['selected'])){
+    							if(isset($details['calc'])){
+    								if($details['calc']['type']=='average'){
+    									$ave = [];
+    									foreach ($details['selected'] as $selected) {
+    										$ave[]=$selected['value'];
+    									}
+    									$val = array_sum($ave) / count($ave);
+    								}elseif($details['calc']['type']=='normalize'){
+    									$norm = 0;
+    									foreach ($details['selected'] as $selected) {
+    										$norm+=$selected['value'];
+    									}
+    									$val = ($norm/$details['calc']['value'])*count($details['selected']);
+    								}
+    							}else{
+    								$valHold = 0;
+    								foreach ($details['selected'] as $selected) {
+    									$valHold+=$selected['value'];
+    								}
+    								$val = $valHold;
+    							}
+    						}else{
+    							if(!isset($details['selected'])){
+    								dd($value['pages']);
+    							}
+    							$val = $details['selected'][0]['value'];
+    						}
+    						//round to 1 decimal place
+    						$val = round($val, 1, PHP_ROUND_HALF_UP);
 
+    						if (isset($result[$key]['score'])){
+    							$result[$key]['score'] += $val;
+    						} else {
+    							$result[$key]['score'] = $val;
+    						}
+    					}
+					}
+				}
+				foreach ($this->baseline[$key]['types'] as $rating => $limits) {
+					if($result[$key]['score']>=$limits['low'] && $result[$key]['score']<=$limits['high']){
+						$result[$key]['rating'] = $rating;
+						$result['overall']['score'] += $result[$key]['score'];
+					}
+				}
+			}
+		}
+		foreach ($this->baseline['overall']['types'] as $rating => $limits) {
+			if($result['overall']['score']>=$limits['low'] && $result['overall']['score']<=$limits['high']){
+				$result['overall']['rating'] = $rating;
+			}
+		}
+
+    	session(['result' => $result]);
+    	session(['baseline' => $this->baseline]);
+    	$this->result = $result;
+
+    	$data = [
+    		'query'=>'success',
+    		'result'=>$result,
+    	];
+
+    	return response()->json($data);
+    }
 }
