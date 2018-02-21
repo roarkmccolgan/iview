@@ -215,7 +215,9 @@ public function run(Request $request, $subdomain)
         'tool' => $tool,
         'fields' => $fields,
         'extraFields' => $extraFields,
-        'questions' => $onlyQuestions
+        'questions' => $onlyQuestions,
+        'locale' => session('locale'),
+        'localeUrl' => session('localeUrl'),
     ]);
 
 	return view($view, compact('tool','return_visitor','class'));

@@ -76,7 +76,7 @@ import GroupButton from '../components/GroupButton.vue';
 import GroupOpposingSlider from '../components/GroupOpposingSlider.vue';
 
 export default{
-	data() {
+	data () {
 		return {
 			//section: this.$route.params.section,
 			questions: laravel.questions,

@@ -43,21 +43,21 @@ return array(
     'introduction' => '
         <h2 class="text-ntt-blue mb-6">INTRODUCTION</h2>
         <p class="mb-2">
-            Thank you for completing IDC\'s Next Generation WAN Advisor, sponsored by NTT Communications. As organizations implement digital transformation strategies they are faced with accelerating network requirements and the need for a network that supports the business outcomes they are aiming to achieve. As such digital transformation should go hand in hand with network evolution. 
+            Thank you for completing the NTT Next Generation WAN Advisor, with research and analysis by IDC. As organizations implement digital transformation strategies they are faced with accelerating network requirements and the need for a network that supports the business outcomes they are aiming to achieve. As such digital transformation should go hand in hand with network evolution.
         </p>
         <p class="mb-2">
             IDC has developed the Next Generation WAN Advisor to help organizations assess the state of their WAN, and benchmark this performance against their peers. This interactive self-assessment tool is backed up by independent end-user research and IDC\'s in depth understanding of this market. The research draws upon input from 300 network experts and decision makers to understand how advanced different organizations are in terms of their WAN investment and approach.
         </p>
         <p class="mb-2">
-            IDC has built a comparison framework in which individual responses from the survey are scored to group organizations into 3 levels of WAN maturity, based on their approach to: 
+            IDC has built a comparison framework in which individual responses from the survey are scored to group organizations into 3 levels of WAN maturity, based on their approach to:
         </p>
         <ul class="mb-2">
             <li><strong class="text-ntt-blue">WAN Infrastructure</strong> - addressing usage and strategy with regards to connectivity and SD-WAN</li>
-            <li><strong class="text-ntt-blue">WAN Intelligence</strong> - covering usage of data and analytics to improve the performance of network  and applications</li>
+            <li><strong class="text-ntt-blue">WAN Intelligence</strong> - covering usage of data and analytics to improve the performance of network and applications</li>
             <li><strong class="text-ntt-blue">WAN Operations</strong> - focusing on operational tasks such as configuration and security policy management</li>
         </ul>
         <p class="mb-2">
-            Based on your responses, this report provides you with a benchmark of your organization\'s WAN. It gives essential and tailored guidance to help you prepare for the requirements of tomorrow and plot your course to a Next Generation WAN: a network that delivers the scalability, flexibility, manageability, cost effectiveness and security that your organization needs to drive digital transformation. 
+            Based on your responses, this report provides you with a benchmark of your organization\'s WAN. It gives essential and tailored guidance to help you prepare for the requirements of tomorrow and plot your course to a Next Generation WAN: a network that delivers the scalability, flexibility, manageability, cost effectiveness and security that your organization needs to drive digital transformation.
         </p>
         <div class="pb"></div>
         <div class="spacer"></div>

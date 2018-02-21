@@ -7,19 +7,19 @@
 			<div class="flex flex-wrap justify-center">
 				<div class="w-full sm:w-1/2 relative"> 
 					<!-- ntt-sdwan.finishtxt -->
-					<h2 class="font-light leading-tight mb-4">Thank you for completing the network maturity assessment.</h2>
-					<h4 class="font-light leading-tight mb-2">How you scored</h4>
-					<img class="max-w-full" :src="'/images/tools/' + assessment.tool.id + '/graph' + result.overall.rating + '.png'" alt="">
+					<h2 class="font-light leading-tight mb-4">Thank you for completing the NTT Communications Next Generation WAN Assessment</h2>
+					<h3 class="leading-tight mb-2">How you scored</h3>
+					<img class="max-w-full" :src="'/images/tools/' + assessment.tool.id + '/graph' + rating  + '.png'" alt="">
 					<p class="font-semibold mb-4 mt-4">Please tell us a little about yourself and immediately receive your personalized report including:</p>
 					<ul class="mb-4">
 						<li>How you compare against your peers based on industry, organizational size, and geographic region</li>
-						<li>Where to focus your network readiness efforts with essential guidance</li>
+						<li>Essential guidance on where to focus your network efforts</li>
 						<li>Why the associated business benefits will make this a business priority today</li>
 					</ul>
 				</div>
 				<div class="w-full sm:w-1/2">
 					<div class="sm:ml-8">
-						<form id="leadForm" action="/pdf" method="get" v-on:submit.prevent="checkForErrors">
+						<form id="leadForm" :action="'/'+assessment.localeUrl+'quiz/complete'" method="POST" v-on:submit.prevent="checkForErrors">
 							<h2 class="flex justify-start p-2 bg-ntt-blue text-white font-light leading-tight">
 								<font-awesome-icon class="mr-2" :icon="icons.faEnvelope"></font-awesome-icon>
 								<div>Register now to receive your personalized report</div>
@@ -30,7 +30,7 @@
 										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="fname">
 											First Name
 										</label>
-										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-3" :class="[errors.fname ? 'border-red' : '']" type="text" id="fname" @blur="hasError">
+										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-2" :class="[errors.fname ? 'border-red' : '']" type="text" id="fname" @blur="hasError">
 										<p class="text-red text-xs italic" v-show="errors.fname">Please fill out this field.</p>
 									</div>
 								</div>
@@ -39,7 +39,7 @@
 										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="sname">
 											Last Name
 										</label>
-										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4" :class="[errors.sname ? 'border-red' : '']" id="sname" type="text" @blur="hasError">
+										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-2" :class="[errors.sname ? 'border-red' : '']" id="sname" type="text" @blur="hasError">
 										<p class="text-red text-xs italic" v-show="errors.sname">Please fill out this field.</p>
 									</div>
 								</div>
@@ -48,26 +48,17 @@
 										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="email">
 											Email
 										</label>
-										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4" :class="[errors.email ? 'border-red' : '']" id="email" type="email" @blur="hasError">
+										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-2" :class="[errors.email ? 'border-red' : '']" id="email" type="email" @blur="hasError">
 										<p class="text-red text-xs italic" v-show="errors.email">Please fill out this field.</p>
 									</div>
 								</div>
 								<div class="mb-6 sm:w-1/2">
-									<div class="mr-2">
+									<div class="ml-2">
 										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="tel">
 											Phone
 										</label>
-										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4" :class="[errors.tel ? 'border-red' : '']" id="tel" type="tel" @blur="hasError">
+										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-2" :class="[errors.tel ? 'border-red' : '']" id="tel" type="tel" @blur="hasError">
 										<p class="text-red text-xs italic" v-show="errors.tel">Please fill out this field.</p>
-									</div>
-								</div>
-								<div class="mb-6 sm:w-1/2">
-									<div class="mr-2">
-										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="company">
-											Company
-										</label>
-										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4" :class="[errors.company ? 'border-red' : '']" id="company" type="text" @blur="hasError">
-										<p class="text-red text-xs italic" v-show="errors.company">Please fill out this field.</p>
 									</div>
 								</div>
 								<div class="mb-6 sm:w-1/2">
@@ -75,16 +66,65 @@
 										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="position">
 											Job Title
 										</label>
-										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4" :class="[errors.position ? 'border-red' : '']" id="position" type="text" @blur="hasError">
+										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-2" :class="[errors.position ? 'border-red' : '']" id="position" type="text" @blur="hasError">
 										<p class="text-red text-xs italic" v-show="errors.position">Please fill out this field.</p>
+									</div>
+								</div>
+								<div class="mb-6 sm:w-1/2">
+									<div class="ml-2">
+										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="company">
+											Company
+										</label>
+										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-2" :class="[errors.company ? 'border-red' : '']" id="company" type="text" @blur="hasError">
+										<p class="text-red text-xs italic" v-show="errors.company">Please fill out this field.</p>
+									</div>
+								</div>
+								<div class="mb-6 sm:w-1/2">
+									<div class="mr-2">
+										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="company_size">
+											Company Size
+										</label>
+										<div class="inline-block relative w-full mb-2">
+											<select class="block appearance-none w-full bg-grey-lighter border text-grey-darker py-3 px-4 pr-8 rounded" :class="[errors.size ? 'border-red' : '']" id="company_size" @blur="hasError">
+												<option value="">Please Select</option>
+												<option value="Fewer than 500">Fewer than 500 </option>
+												<option value="500 to 999">500 to 999</option>
+												<option value="1,000 to 4,999">1,000 to 4,999</option>
+												<option value="5,000 or more">5,000 or more</option>
+											</select>
+											<div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-darker">
+												<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+											</div>
+										</div>
+										<p class="text-red text-xs italic" v-show="errors.company_size">Please select an option.</p>
+									</div>
+								</div>
+								<div class="mb-6 sm:w-1/2">
+									<div class="ml-2">
+										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="turnover">
+											Turnover
+										</label>
+										<div class="inline-block relative w-full mb-2">
+											<select class="block appearance-none w-full bg-grey-lighter border text-grey-darker py-3 px-4 pr-8 rounded" :class="[errors.turnover ? 'border-red' : '']" id="turnover" @blur="hasError">
+												<option value="">Please Select</option>
+												<option value="Less than €100 million">Less than €100 million</option>
+												<option value="€100-250 million">€100-250 million</option>
+												<option value="€250 million - €1 billion">€250 million - €1 billion</option>
+												<option value="More than €1 billion">More than €1 billion</option>
+											</select>
+											<div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-darker">
+												<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+											</div>
+										</div>
+										<p class="text-red text-xs italic" v-show="errors.turnover">Please select an option.</p>
 									</div>
 								</div>
 								<div class="mb-6 sm:w-1/2">
 									<div class="mr-2">
 										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="business">
-											Company Business
+											Industry
 										</label>
-										<div class="inline-block relative w-full">
+										<div class="inline-block relative w-full mb-2">
 											<select class="block appearance-none w-full bg-grey-lighter border text-grey-darker py-3 px-4 pr-8 rounded" :class="[errors.business ? 'border-red' : '']" id="business" @blur="hasError">
 												<option value="">Please Select</option>
 												<option value="Banking and other financial services">Banking and other financial services</option>
@@ -111,31 +151,11 @@
 									</div>
 								</div>
 								<div class="mb-6 sm:w-1/2">
-									<div class="mr-2">
-										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="size">
-											Company Size
-										</label>
-										<div class="inline-block relative w-full">
-											<select class="block appearance-none w-full bg-grey-lighter border text-grey-darker py-3 px-4 pr-8 rounded" :class="[errors.size ? 'border-red' : '']" id="size" @blur="hasError">
-												<option value="">Please Select</option>
-												<option value="Fewer than 500">Fewer than 500 </option>
-												<option value="500 to 999">500 to 999</option>
-												<option value="1,000 to 4,999">1,000 to 4,999</option>
-												<option value="5,000 or more">5,000 or more</option>
-											</select>
-											<div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-darker">
-												<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
-											</div>
-										</div>
-										<p class="text-red text-xs italic" v-show="errors.size">Please select an option.</p>
-									</div>
-								</div>
-								<div class="mb-6 w-full">
-									<div class="mr-2">
+									<div class="ml-2">
 										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="country">
 											Country
 										</label>
-										<div class="inline-block relative w-full">
+										<div class="inline-block relative w-full mb-2">
 											<select class="block appearance-none w-full bg-grey-lighter border text-grey-darker py-3 px-4 pr-8 rounded" :class="[errors.country ? 'border-red' : '']" id="country" @blur="hasError">
 												<option v-for="(item, key) in assessment.fields.country.options" :value="key">{{ item }}</option>
 											</select>
@@ -180,7 +200,7 @@ import faSquare from '@fortawesome/fontawesome-pro-regular/faSquare';
 import faCheckSquare from '@fortawesome/fontawesome-pro-regular/faCheckSquare';
 export default{
 	props: ['result'],
-	data() {
+	data () {
 		return {
 			assessment: laravel,
 			icons: {
@@ -219,14 +239,17 @@ export default{
 				company: false,
 				position: false,
 				business: false,
-				size: false,
+				company_size: false,
+				turnover: false,
 				country: false,
 				terms: false
 			}
 		}
 	},
 	computed: {
-
+		rating: function(){
+			return this.result ? result.overall.rating : 'none';
+		}
 	},
 	methods: {
 		hasError: function(event){

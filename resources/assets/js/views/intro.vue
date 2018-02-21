@@ -16,10 +16,10 @@
 						<div>
 							<h2 class="font-light mb-4 text-ntt-blue leading-tight">Is your Network Ready for the Digital Future?</h2>
 							<p class="mb-2">
-								IDC, a global leading provider of technology market research, has developed the Next Generation WAN Advisor to help organizations assess the state of their WAN as they embrace digital transformation.
+								IDC, a global leading provider of technology market research, has developed the Next Generation WAN Advisor, sponsored by NTT Communications, to help organizations assess the state of their WAN as they embrace digital transformation.
 							</p>
 							<p class="mb-4">
-								This self-assessment tool is backed up by independent end-user research and IDC's in depth understanding of this market. Upon completion of a short survey (5-10 minutes) you will receive a custom report that benchmarks your organization's WAN and provides you with essential and tailored guidance to help you prepare for the requirements of tomorrow and plot your course to a Next Generation WAN.
+								This self-assessment tool is backed up by independent end-user research and IDC's in depth understanding of this market. Upon completion of a short survey (10 minutes) you will receive a custom report that benchmarks your organization's WAN and provides you with essential and tailored guidance to help you prepare for the requirements of tomorrow and plot your course to a Next Generation WAN.
 							</p>
 						</div>
 						<div class="mt-8 text-center">
@@ -36,7 +36,7 @@
 import FontAwesomeIcon from '@fortawesome/vue-fontawesome';
 import faArrowRight from '@fortawesome/fontawesome-pro-regular/faArrowRight';
 export default{
-	data() {
+	data () {
 		return {
 			assessment: laravel,
 			icons: {
