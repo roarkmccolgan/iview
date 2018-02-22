@@ -19,7 +19,9 @@
 				</div>
 				<div class="w-full sm:w-1/2">
 					<div class="sm:ml-8">
-						<form id="leadForm" :action="'/'+assessment.localeUrl+'quiz/complete'" method="POST" v-on:submit.prevent="checkForErrors">
+						<!-- <form id="leadForm" :action="'/'+assessment.localeUrl+'quiz/complete'" method="POST" > -->
+						<form id="leadForm" :action="'/'+assessment.localeUrl+'pdf'" method="GET" >
+							<input type="hidden" name="_token" :value="getToken">
 							<h2 class="flex justify-start p-2 bg-ntt-blue text-white font-light leading-tight">
 								<font-awesome-icon class="mr-2" :icon="icons.faEnvelope"></font-awesome-icon>
 								<div>Register now to receive your personalized report</div>
@@ -30,7 +32,7 @@
 										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="fname">
 											First Name
 										</label>
-										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-2" :class="[errors.fname ? 'border-red' : '']" type="text" id="fname" @blur="hasError">
+										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-2" :class="[errors.fname ? 'border-red' : '']" type="text" id="fname" name="fname" @blur="hasError">
 										<p class="text-red text-xs italic" v-show="errors.fname">Please fill out this field.</p>
 									</div>
 								</div>
@@ -39,7 +41,7 @@
 										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="sname">
 											Last Name
 										</label>
-										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-2" :class="[errors.sname ? 'border-red' : '']" id="sname" type="text" @blur="hasError">
+										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-2" :class="[errors.sname ? 'border-red' : '']" id="sname" name="sname" type="text" @blur="hasError">
 										<p class="text-red text-xs italic" v-show="errors.sname">Please fill out this field.</p>
 									</div>
 								</div>
@@ -48,7 +50,7 @@
 										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="email">
 											Email
 										</label>
-										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-2" :class="[errors.email ? 'border-red' : '']" id="email" type="email" @blur="hasError">
+										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-2" :class="[errors.email ? 'border-red' : '']" id="email" name="email" type="email" @blur="hasError">
 										<p class="text-red text-xs italic" v-show="errors.email">Please fill out this field.</p>
 									</div>
 								</div>
@@ -57,8 +59,8 @@
 										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="tel">
 											Phone
 										</label>
-										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-2" :class="[errors.tel ? 'border-red' : '']" id="tel" type="tel" @blur="hasError">
-										<p class="text-red text-xs italic" v-show="errors.tel">Please fill out this field.</p>
+										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-2" :class="[errors.tel ? 'border-red' : '']" id="tel" name="phone" type="tel" @blur="hasError">
+										<p class="text-red text-xs italic" v-show="errors.tel">Please provide a valid phone number.</p>
 									</div>
 								</div>
 								<div class="mb-6 sm:w-1/2">
@@ -66,7 +68,7 @@
 										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="position">
 											Job Title
 										</label>
-										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-2" :class="[errors.position ? 'border-red' : '']" id="position" type="text" @blur="hasError">
+										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-2" :class="[errors.position ? 'border-red' : '']" id="position" name="title" type="text" @blur="hasError">
 										<p class="text-red text-xs italic" v-show="errors.position">Please fill out this field.</p>
 									</div>
 								</div>
@@ -75,7 +77,7 @@
 										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="company">
 											Company
 										</label>
-										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-2" :class="[errors.company ? 'border-red' : '']" id="company" type="text" @blur="hasError">
+										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-2" :class="[errors.company ? 'border-red' : '']" id="company" name="company" type="text" @blur="hasError">
 										<p class="text-red text-xs italic" v-show="errors.company">Please fill out this field.</p>
 									</div>
 								</div>
@@ -85,7 +87,7 @@
 											Company Size
 										</label>
 										<div class="inline-block relative w-full mb-2">
-											<select class="block appearance-none w-full bg-grey-lighter border text-grey-darker py-3 px-4 pr-8 rounded" :class="[errors.size ? 'border-red' : '']" id="company_size" @blur="hasError">
+											<select class="block appearance-none w-full bg-grey-lighter border text-grey-darker py-3 px-4 pr-8 rounded" :class="[errors.size ? 'border-red' : '']" id="company_size" name="extra[company_size]" @blur="hasError">
 												<option value="">Please Select</option>
 												<option value="Fewer than 500">Fewer than 500 </option>
 												<option value="500 to 999">500 to 999</option>
@@ -105,7 +107,7 @@
 											Turnover
 										</label>
 										<div class="inline-block relative w-full mb-2">
-											<select class="block appearance-none w-full bg-grey-lighter border text-grey-darker py-3 px-4 pr-8 rounded" :class="[errors.turnover ? 'border-red' : '']" id="turnover" @blur="hasError">
+											<select class="block appearance-none w-full bg-grey-lighter border text-grey-darker py-3 px-4 pr-8 rounded" :class="[errors.turnover ? 'border-red' : '']" id="turnover" name="extra[turnover]" @blur="hasError">
 												<option value="">Please Select</option>
 												<option value="Less than €100 million">Less than €100 million</option>
 												<option value="€100-250 million">€100-250 million</option>
@@ -125,7 +127,7 @@
 											Industry
 										</label>
 										<div class="inline-block relative w-full mb-2">
-											<select class="block appearance-none w-full bg-grey-lighter border text-grey-darker py-3 px-4 pr-8 rounded" :class="[errors.business ? 'border-red' : '']" id="business" @blur="hasError">
+											<select class="block appearance-none w-full bg-grey-lighter border text-grey-darker py-3 px-4 pr-8 rounded" :class="[errors.business ? 'border-red' : '']" id="business" name="extra[industry]" @blur="hasError">
 												<option value="">Please Select</option>
 												<option value="Banking and other financial services">Banking and other financial services</option>
 												<option value="Insurance">Insurance</option>
@@ -156,7 +158,7 @@
 											Country
 										</label>
 										<div class="inline-block relative w-full mb-2">
-											<select class="block appearance-none w-full bg-grey-lighter border text-grey-darker py-3 px-4 pr-8 rounded" :class="[errors.country ? 'border-red' : '']" id="country" @blur="hasError">
+											<select class="block appearance-none w-full bg-grey-lighter border text-grey-darker py-3 px-4 pr-8 rounded" :class="[errors.country ? 'border-red' : '']" id="country" name="country" @blur="hasError">
 												<option v-for="(item, key) in assessment.fields.country.options" :value="key">{{ item }}</option>
 											</select>
 											<div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-darker">
@@ -168,7 +170,7 @@
 								</div>
 								<div class="mb-6 w-full">
 									<label :class="[terms ? activeClass : normalClass, errors.terms ? 'border-red bg-red-lightest' : '']" tabindex="0" @keyup.space="$event.target.click()" @click="checkTerms">
-										<input class="hidden" type="checkbox" id="terms" value="terms" v-model="terms">
+										<input class="hidden" type="checkbox" id="terms" name="terms" value="terms" v-model="terms">
 										<div class="flex items-baseline">
 											<div class="mr-2 text-2xl sm:text-xl">
 													<font-awesome-icon :icon="icons.faSquare" v-if="!terms" />
@@ -182,7 +184,7 @@
 									</label>
 								</div>
 								<div class="mb-6 w-full">
-									<button class="text-center block bg-ntt-blue hover:text-ntt-gold shadow-md text-white py-4 px-6 rounded no-underline"><font-awesome-icon class="ml-2" :icon="icons.faEnvelope"></font-awesome-icon> Send</button>
+									<button type="submit" class="text-center block bg-ntt-blue hover:text-ntt-gold shadow-md text-white py-4 px-6 rounded no-underline"><font-awesome-icon class="ml-2" :icon="icons.faEnvelope"></font-awesome-icon> Send</button>
 								</div>
 							</div>
 						</form>
@@ -243,18 +245,30 @@ export default{
 				turnover: false,
 				country: false,
 				terms: false
-			}
+			},
+			theResult: this.result ? this.result : laravel.result
 		}
 	},
 	computed: {
 		rating: function(){
-			return this.result ? result.overall.rating : 'none';
+			return this.theResult ? this.theResult.overall.rating : 'none';
+		},
+		getToken: function(){
+			return this.$cookies.get('XSRF-TOKEN');
 		}
 	},
 	methods: {
 		hasError: function(event){
-			if(event.target.type == "text" || event.target.type == "tel" || event.target.type == "email"){
+			if(event.target.type == "text" || event.target.type == "email"){
 				if(event.target.value == ''){
+					this.errors[event.target.id] = true;
+				}else{
+					this.errors[event.target.id] = false;
+				}
+			}
+			if(event.target.type == "tel"){
+				var numIntegers = event.target.value.replace(/[^0-9]/g,"").length;
+				if(event.target.value == '' || numIntegers < 5){
 					this.errors[event.target.id] = true;
 				}else{
 					this.errors[event.target.id] = false;
@@ -308,7 +322,7 @@ export default{
 		FontAwesomeIcon,
 	},
 	created: function(){
-		
+
 	}
 }
 </script>

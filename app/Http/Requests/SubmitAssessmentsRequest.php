@@ -25,7 +25,6 @@ class SubmitAssessmentsRequest extends Request
     public function rules()
     {
         $tool = Tool::findOrFail(session('product.id'));
-
         $rules = [
             'fname'=>'required|min:2|max:255',
             'sname'=>'required|min:2|max:255',
@@ -39,11 +38,10 @@ class SubmitAssessmentsRequest extends Request
         if(!empty($tool->extra_fields)){
             foreach($tool->extra_fields as $field) {
                 if($field->required!=0){
-                    $rules["extra.".$field->name] = ['required'];
+                    $rules["extra.".$field->name] = 'required';
                 }
             }
         }
-        
         return $rules;
     }
 }

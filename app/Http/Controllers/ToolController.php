@@ -41,15 +41,16 @@ class ToolController extends Controller
 
 	public function __construct(Request $request){
 		//only reload questions if tool is ntt
-		if($request->session()->has('product')){
+		if(!$request->session()->has('questions')){
+			$this->middleware(['reloadquestions']);
+			return redirect('/');
+		}else{
 			$tool = session('product');
-			if($tool['alias']!=='ntt-sdwan' || !$request->session()->has('questions')){
+			if($tool['alias']!=='ntt-sdwan'){
 				$this->middleware(['reloadquestions'], ['only' => [
 		            'run',
 		        ]]);
 			}
-		}else{
-			$this->middleware(['reloadquestions']);
 		}
 	}
 
@@ -218,6 +219,7 @@ public function run(Request $request, $subdomain)
         'questions' => $onlyQuestions,
         'locale' => session('locale'),
         'localeUrl' => session('localeUrl'),
+        'result' => $request->session()->has('result') ? session('result') : null,
     ]);
 
 	return view($view, compact('tool','return_visitor','class'));
@@ -526,7 +528,6 @@ public function getComplete(Request $request)
 
 public function postComplete(SubmitAssessmentsRequest $request)
 {
-	//return $request->all();
 	$this->loadQuestions();
 	$this->howfit=Session::get('result');
 	$this->baseline = Session::get('baseline');
@@ -712,6 +713,7 @@ public function postComplete(SubmitAssessmentsRequest $request)
 	});
         
 	$vars = array(
+		'pagetitle' => session('product.title'),
 		'heading' => trans(session('product.alias').'.complete_thankyou',['fname'=>$request->input('fname')]),
 		'body' => trans(session('product.alias').'.complete_body'),
 		'tweet' => config('baseline_'.session('product.id').'.overall.tweet') ? trans(session('product.alias').'.complete_tweet',['result'=>trans(session('product.alias').'.'.$this->howfit['overall']['rating'])]):false,
