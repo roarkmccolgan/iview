@@ -14,11 +14,11 @@ return array(
                 'questions' => array(
                     'q1'=>array(
                         'type'=>'radio',
-                        'question'=>'Wie lässt sich die Herangehensweise Ihrer Organisation an das Erreichen von Konformität zur EU-DSVG am besten beschreiben? <span class="small">Bitte eine Möglichkeit auswählen!</span>',
+                        'question'=>'Wie lässt sich die Herangehensweise Ihrer Organisation an das Erreichen von Konformität zur EU-DSGVO am besten beschreiben? <span class="small">Bitte eine Möglichkeit auswählen!</span>',
                         'name'=>'q1',
                         'options'=>array(
                             array(
-                                'label'=>'Wir wissen nicht, was die EU-DSVG ist und ob oder wie es uns betreffen wird.',
+                                'label'=>'Wir wissen nicht, was die EU-DSGVO ist und ob oder wie es uns betreffen wird.',
                                 'value'=>1,
                                 'checked'=>false
                             ),
@@ -28,12 +28,12 @@ return array(
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Wir streben danach, ausreichende Konformität zur EU-DSVG zu implementieren, um Audits und Strafzahlungen zu vermeiden.',
+                                'label'=>'Wir streben danach, ausreichende Konformität zur EU-DSGVO zu implementieren, um Audits und Strafzahlungen zu vermeiden.',
                                 'value'=>3,
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Wir werden unsere Konformität zur EU-DSVG als differenzierendes Merkmal im Wettbewerb nutzen.',
+                                'label'=>'Wir werden unsere Konformität zur EU-DSGVO als differenzierendes Merkmal im Wettbewerb nutzen.',
                                 'value'=>4,
                                 'checked'=>false
                             ),
@@ -51,7 +51,7 @@ return array(
                 'questions' => array(
                     'q2'=> array(
                         'type'=>'checkbox',
-                        'question'=>'Auf welche dieser für die EU-DSVG spezifischen Themen muss sich Ihrer Meinung nach Ihre Organisation konzentrieren? <span class="small">Wählen Sie die drei wichtigsten Themen aus!</span>',
+                        'question'=>'Auf welche dieser für die EU-DSGVO spezifischen Themen muss sich Ihrer Meinung nach Ihre Organisation konzentrieren? <span class="small">Wählen Sie die drei wichtigsten Themen aus!</span>',
                         'name'=>'q2',
                         'ignore' => true,
                         'required'=>3,

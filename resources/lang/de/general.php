@@ -148,15 +148,15 @@ Risiko ist ein wichtiger Treiber für Assessments und Prozesse zur Risikominderu
     '7restart'=>'Bewertung neu starten',
     '7assoc'=>'In Zusammenarbeit mit',
     '7sponsors'=>'Symantec',
-    '7title'=>'IDCs Bewertungstool zum Stand der Vorbereitung auf die EU-DSVG <br/><span class="small">(EU-Datenschutzgrundverordnung)</span>',
-    '7sub-title'=>'Stand der Vorbereitungen auf EU-DSVG in Ihrem Unternehmen',
+    '7title'=>'IDCs Bewertungstool zum Stand der Vorbereitung auf die EU-DSGVO <br/><span class="small">(EU-Datenschutzgrundverordnung)</span>',
+    '7sub-title'=>'Stand der Vorbereitungen auf EU-DSGVO in Ihrem Unternehmen',
     '7landing'=>'
-    <h3>Die Umsetzungsfrist der EU-DSVG endet demnächst.<br/>Wie gut sind Sie vorbereitet?</h3>
+    <h3>Die Umsetzungsfrist der EU-DSGVO endet demnächst.<br/>Wie gut sind Sie vorbereitet?</h3>
     <p>
         Die Umsetzungsfrist der EU-DSGV endet im Mai 2018. Sie ersetzt die gesamte bisherige nationale Datenschutz-Gesetzgebung der EU-Länder und kann Ihre Organisation in Hinblick auf Handhabung und Schutz persönlicher Daten betreffen.
     </p>
     <p>
-        Dieses Tool von IDC bewertet den Stand der Vorbereitungen auf EU-DSVG in Ihrem Unternehmen. Es enthält einige grundlegende Richtlinien zum Thema EU-DSVG-Compliance und dazu, was diesbezüglich zu berücksichtigen ist.
+        Dieses Tool von IDC bewertet den Stand der Vorbereitungen auf EU-DSGVO in Ihrem Unternehmen. Es enthält einige grundlegende Richtlinien zum Thema EU-DSGVO-Compliance und dazu, was diesbezüglich zu berücksichtigen ist.
     </p>',
     '7startbut'=>'Beginnen Sie hier!',
 
@@ -182,7 +182,7 @@ Risiko ist ein wichtiger Treiber für Assessments und Prozesse zur Risikominderu
     '7wait'=>'',
     '7twitterlink'=>'https://twitter.com/home?status=Ist%20Ihr%20Unternehmen%20auf%20die%20EU-DSGV%20vorbereitet%20(Datenschutz-Grundverordnung)?%20http%3A//bit.ly/2AXY3vW%20%40symantec',
     '7facebooklink'=>'https://www.facebook.com/sharer/sharer.php?u=http%3A//bit.ly/2AXY3vW',
-    '7linkedinlink'=>'https://www.linkedin.com/shareArticle?mini=true&url=http%3A//bit.ly/2AXY3vW&title=Ist%20Ihr%20Unternehmen%20auf%20die%20EU-DSGV%20vorbereitet%20(Datenschutz-Grundverordnung)?&summary=Stand%20der%20Vorbereitungen%20auf%20EU-DSVG%20in%20Ihrem%20Unternehmen&source=',
+    '7linkedinlink'=>'https://www.linkedin.com/shareArticle?mini=true&url=http%3A//bit.ly/2AXY3vW&title=Ist%20Ihr%20Unternehmen%20auf%20die%20EU-DSGV%20vorbereitet%20(Datenschutz-Grundverordnung)?&summary=Stand%20der%20Vorbereitungen%20auf%20EU-DSGVO%20in%20Ihrem%20Unternehmen&source=',
     
 
     //general

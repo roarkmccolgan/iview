@@ -1,8 +1,8 @@
 <?php
 //Symantec
 return array(
-    'title' => 'IDCs Bewertungstool zum Stand der Vorbereitung auf die EU-DSVG (EU-Datenschutzgrundverordnung)',
-    'sub-title' => 'Stand der Vorbereitungen auf EU-DSVG in Ihrem Unternehmen',
+    'title' => 'IDCs Bewertungstool zum Stand der Vorbereitung auf die EU-DSGVO (EU-Datenschutzgrundverordnung)',
+    'sub-title' => 'Stand der Vorbereitungen auf EU-DSGVO in Ihrem Unternehmen',
     'stage1' => 'Stadium 1- Initiierung',
     'stage2' => 'Stadium 2 - Beschleunigung',
     'stage3' => 'Stadium 3 – Bereit zur Implementierung',
@@ -17,7 +17,7 @@ return array(
         </a>',
     'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @symantec. Interested? ',// http://bit.ly/2gslXEh
     'email'=>[
-        'subject' => 'IDCs Bewertungstool zum Stand der Vorbereitung auf die EU-DSVG',
+        'subject' => 'IDCs Bewertungstool zum Stand der Vorbereitung auf die EU-DSGVO',
         'hi' => 'Hi :Fname',
         'body' => 'wie versprochen, hier der Download-Link zur Bewertung des Standes Ihrer Vorbereitungen auf die EU-DSGV. Die Ergebnisse wurden kategorieweise zusammengefasst. Sie enthalten auch Handlungsempfehlungen.',
         'link' => 'Report herunterladen',
