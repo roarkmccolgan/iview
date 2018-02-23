@@ -13,7 +13,7 @@
 	<table class="header" style="width: 100%;" cellpadding="0" cellspacing="0">
 		<tr>
 			<td>
-				<img src="/images/tools/7/report_header-01-fr.jpg" style="max-width: 100%" alt="">
+				<img src="/images/tools/7/report_header-01-de.jpg" style="max-width: 100%" alt="">
 			</td>
 		</tr>
 	</table>

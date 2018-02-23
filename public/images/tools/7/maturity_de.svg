@@ -11,13 +11,12 @@
 	.st5{fill:#FFFFFF;}
 	.st6{font-family:'Helvetica';}
 	.st7{font-size:10.139px;}
-	.st8{enable-background:new    ;}
-	.st9{fill:#414042;}
-	.st10{font-size:12.9462px;}
-	.st11{fill:#0D5E81;}
-	.st12{fill:none;}
-	.st13{fill:#B4BABE;}
-	.st14{font-size:9.0622px;}
+	.st8{fill:#414042;}
+	.st9{font-size:12.9462px;}
+	.st10{fill:#0D5E81;}
+	.st11{fill:none;}
+	.st12{fill:#B4BABE;}
+	.st13{font-size:9.0622px;}
 </style>
 <title>maturity</title>
 <rect y="217" class="st0" width="91.4" height="97.3"/>
@@ -25,52 +24,56 @@
 <rect x="192.5" y="139" class="st2" width="91.4" height="175.3"/>
 <rect x="288.7" y="106.7" class="st3" width="91.4" height="207.6"/>
 <rect x="385" y="65" class="st4" width="91.4" height="249.3"/>
-<text transform="matrix(0.9863 0 0 1 6.0684 234.8105)" class="st5 st6 st7">Stadium 1</text>
-<text transform="matrix(0.9863 0 0 1 6.0684 246.7744)" class="st5 st6 st7">Initiierung</text>
-<text transform="matrix(0.9863 0 0 1 101.1943 195.7139)" class="st5 st6 st7">Stadium 2</text>
-<text transform="matrix(0.9863 0 0 1 101.1943 207.6777)" class="st5 st6 st7">Beschleunigung</text>
-<text transform="matrix(0.9863 0 0 1 197.8135 153.418)" class="st8"><tspan x="0" y="0" class="st5 st6 st7">Stadium 3</tspan><tspan x="0" y="12.2" class="st5 st6 st7">Bereit zur</tspan><tspan x="0" y="24.3" class="st5 st6 st7">Implementierung</tspan></text>
-<text transform="matrix(0.9863 0 0 1 294.3867 123.6641)" class="st5 st6 st7">Stadium 4</text>
-<text transform="matrix(0.9863 0 0 1 294.3867 135.6279)" class="st5 st6 st7">Optimierung</text>
-<text transform="matrix(0.9863 0 0 1 390.6494 79.2988)" class="st8"><tspan x="0" y="0" class="st5 st6 st7">Stadium 5</tspan><tspan x="0" y="12.2" class="st5 st6 st7">Bereit zur</tspan><tspan x="0" y="24.3" class="st5 st6 st7">Konsolidierung</tspan></text>
-<text transform="matrix(0.9863 0 0 1 21.5537 162.7812)" class="st9 st6 st10">ad hoc</text>
-<text transform="matrix(0.9863 0 0 1 98.999 121.2607)" class="st9 st6 st10">opportunistisch</text>
-<text transform="matrix(0.9863 0 0 1 196.6826 91.6836)" class="st9 st6 st10">reproduzierbar</text>
-<text transform="matrix(0.9863 0 0 1 306.0674 46.9531)" class="st9 st6 st10">gemanagt</text>
-<text transform="matrix(0.9863 0 0 1 406.2451 11.082)" class="st9 st6 st10">optimiert</text>
+<text transform="matrix(0.9863 0 0 1 6.0684 234.8104)" class="st5 st6 st7">Stadium 1</text>
+<text transform="matrix(0.9863 0 0 1 6.0684 246.7742)" class="st5 st6 st7">Initiierung</text>
+<text transform="matrix(0.9863 0 0 1 101.1943 195.7137)" class="st5 st6 st7">Stadium 2</text>
+<text transform="matrix(0.9863 0 0 1 101.1943 207.6776)" class="st5 st6 st7">Beschleunigung</text>
+<text transform="matrix(0.9863 0 0 1 197.8135 153.4178)" class="st5 st6 st7">Stadium 3</text>
+<text transform="matrix(0.9863 0 0 1 197.8135 165.618)" class="st5 st6 st7">Bereit zur</text>
+<text transform="matrix(0.9863 0 0 1 197.8135 177.7181)" class="st5 st6 st7">Implementierung</text>
+<text transform="matrix(0.9863 0 0 1 294.3867 123.6639)" class="st5 st6 st7">Stadium 4</text>
+<text transform="matrix(0.9863 0 0 1 294.3867 135.6277)" class="st5 st6 st7">Optimierung</text>
+<text transform="matrix(0.9863 0 0 1 390.6494 79.2987)" class="st5 st6 st7">Stadium 5</text>
+<text transform="matrix(0.9863 0 0 1 390.6494 91.4988)" class="st5 st6 st7">Bereit zur</text>
+<text transform="matrix(0.9863 0 0 1 390.6494 103.5989)" class="st5 st6 st7">Konsolidierung</text>
+<text transform="matrix(0.9863 0 0 1 21.5537 162.7811)" class="st8 st6 st9">ad hoc</text>
+<text transform="matrix(0.9863 0 0 1 98.999 121.2606)" class="st8 st6 st9">opportunistisch</text>
+<text transform="matrix(0.9863 0 0 1 196.6826 91.6834)" class="st8 st6 st9">reproduzierbar</text>
+<text transform="matrix(0.9863 0 0 1 306.0674 46.9529)" class="st8 st6 st9">gemanagt</text>
+<text transform="matrix(0.9863 0 0 1 406.2451 11.0819)" class="st8 st6 st9">optimiert</text>
 <g>
-	<path class="st11" d="M37,201.1c-1.4,0-2.5-1.1-2.5-2.5s1.1-2.5,2.5-2.5s2.5,1.1,2.5,2.5S38.4,201.1,37,201.1 M42,195.2l1.6-1.6
+	<path class="st10" d="M37,201.1c-1.4,0-2.5-1.1-2.5-2.5s1.1-2.5,2.5-2.5s2.5,1.1,2.5,2.5S38.4,201.1,37,201.1 M42,195.2l1.6-1.6
 		L42,192l-1.6,1.6c-0.7-0.5-1.4-0.8-2.2-0.9v-2.2h-2.3v2.2c-0.8,0.2-1.6,0.5-2.2,0.9l-1.6-1.6l-1.6,1.6l1.6,1.6
 		c-0.4,0.7-0.8,1.4-0.9,2.2H29v2.3h2.2c0.2,0.8,0.5,1.6,0.9,2.2l-1.6,1.6l1.6,1.6l1.6-1.6c0.7,0.4,1.4,0.8,2.2,0.9v2.2h2.3v-2.2
 		c0.8-0.2,1.6-0.5,2.2-0.9l1.6,1.6l1.6-1.6L42,202c0.5-0.7,0.8-1.4,0.9-2.2h2.2v-2.3h-2.2C42.8,196.6,42.5,195.9,42,195.2"/>
-	<path class="st11" d="M54.5,199.4c-0.3,0.3-0.9,0.3-1.2,0s-0.3-0.9,0-1.2s0.9-0.3,1.2,0S54.8,199.1,54.5,199.4 M55.2,197.4
+	<path class="st10" d="M54.5,199.4c-0.3,0.3-0.9,0.3-1.2,0s-0.3-0.9,0-1.2s0.9-0.3,1.2,0S54.8,199.1,54.5,199.4 M55.2,197.4
 		L55.2,197.4l-11.1-11.2v-5.3l-5.4-1.4l-0.6,0.6L41,183l-2.8,2.8l-2.9-2.8l-0.6,0.6l1.4,5.4h5.1l0,0l11.2,11.2l0,0
 		c0.7,0.7,1.9,0.7,2.7,0C55.9,199.4,55.9,198.2,55.2,197.4"/>
 </g>
 <g>
-	<path class="st11" d="M147.8,165.2c-3.1,0-5.7-2.6-5.7-5.7c0-3.1,2.6-5.7,5.7-5.7c3.1,0,5.7,2.5,5.7,5.7
+	<path class="st10" d="M147.8,165.2c-3.1,0-5.7-2.6-5.7-5.7c0-3.1,2.6-5.7,5.7-5.7c3.1,0,5.7,2.5,5.7,5.7
 		C153.5,162.6,151,165.2,147.8,165.2 M130.5,165.3v-23.1h11.6v5h5v5c-1.4,0.2-2.8,0.7-3.8,1.6h-11v1.7h9.5c-0.3,0.5-0.6,1.1-0.8,1.7
-		h-8.7v1.7h8.3c0,0.3,0,0.5,0,0.8c0,2.3,1.1,4.4,2.8,5.8h-12.9V165.3z M143.7,142.5l3,3h-3V142.5z M148.7,152.1v-7l-4.6-4.6h-15.2
-		v26.4h19.8l0,0c3.7-0.4,6.6-3.6,6.6-7.4C155.3,155.7,152.4,152.5,148.7,152.1"/>
-	<rect x="132.1" y="150.4" class="st11" width="13.2" height="1.7"/>
-	<polygon class="st11" points="150.3,156.2 147,159.5 145.4,157.9 143.7,159.5 147,162.8 152,157.9 	"/>
+		h-8.7v1.7h8.3c0,0.3,0,0.5,0,0.8c0,2.3,1.1,4.4,2.8,5.8h-12.9L130.5,165.3L130.5,165.3z M143.7,142.5l3,3h-3V142.5z M148.7,152.1
+		v-7l-4.6-4.6h-15.2v26.4h19.8l0,0c3.7-0.4,6.6-3.6,6.6-7.4C155.3,155.7,152.4,152.5,148.7,152.1"/>
+	<rect x="132.1" y="150.4" class="st10" width="13.2" height="1.7"/>
+	<polygon class="st10" points="150.3,156.2 147,159.5 145.4,157.9 143.7,159.5 147,162.8 152,157.9 	"/>
 </g>
 <g>
-	<path class="st11" d="M432.9,53.2c0,0.3-0.3,0.6-0.6,0.6H429c-0.4,0-0.6-0.3-0.6-0.6s0.3-0.6,0.6-0.6h3.3
+	<path class="st10" d="M432.9,53.2c0,0.3-0.3,0.6-0.6,0.6H429c-0.4,0-0.6-0.3-0.6-0.6s0.3-0.6,0.6-0.6h3.3
 		C432.6,52.6,432.9,52.8,432.9,53.2"/>
-	<path class="st11" d="M428.2,53.1h4.9c0.1-0.1,0.2-0.2,0.4-0.4c0.3-0.3,0.4-0.5,0.5-0.6h-6.7v0.1C427.4,52.3,428,52.9,428.2,53.1"
+	<path class="st10" d="M428.2,53.1h4.9c0.1-0.1,0.2-0.2,0.4-0.4c0.3-0.3,0.4-0.5,0.5-0.6h-6.7v0.1C427.4,52.3,428,52.9,428.2,53.1"
 		/>
-	<path class="st11" d="M434.3,49.1c0,0.2-0.1,0.3-0.3,0.3h-6.6c-0.2,0-0.3-0.2-0.3-0.3c0-0.2,0.1-0.3,0.3-0.3h6.6
+	<path class="st10" d="M434.3,49.1c0,0.2-0.1,0.3-0.3,0.3h-6.6c-0.2,0-0.3-0.2-0.3-0.3c0-0.2,0.1-0.3,0.3-0.3h6.6
 		C434.1,48.8,434.3,49,434.3,49.1"/>
-	<path class="st11" d="M434.3,50.2c0,0.2-0.1,0.3-0.3,0.3h-6.6c-0.2,0-0.3-0.2-0.3-0.3c0-0.2,0.1-0.3,0.3-0.3h6.6
+	<path class="st10" d="M434.3,50.2c0,0.2-0.1,0.3-0.3,0.3h-6.6c-0.2,0-0.3-0.2-0.3-0.3c0-0.2,0.1-0.3,0.3-0.3h6.6
 		C434.1,49.8,434.3,50,434.3,50.2"/>
-	<path class="st11" d="M434.3,51.2c0,0.2-0.1,0.3-0.3,0.3h-6.6c-0.2,0-0.3-0.2-0.3-0.3c0-0.2,0.1-0.3,0.3-0.3h6.6
+	<path class="st10" d="M434.3,51.2c0,0.2-0.1,0.3-0.3,0.3h-6.6c-0.2,0-0.3-0.2-0.3-0.3c0-0.2,0.1-0.3,0.3-0.3h6.6
 		C434.1,50.8,434.3,51,434.3,51.2"/>
-	<path class="st11" d="M434.2,51.9c0,0.1-0.1,0.2-0.3,0.2h-6.5c-0.2,0-0.3-0.1-0.3-0.2c0-0.1,0.1-0.2,0.3-0.2h6.5
+	<path class="st10" d="M434.2,51.9c0,0.1-0.1,0.2-0.3,0.2h-6.5c-0.2,0-0.3-0.1-0.3-0.2c0-0.1,0.1-0.2,0.3-0.2h6.5
 		C434.1,51.7,434.2,51.8,434.2,51.9"/>
-	<path class="st11" d="M434.3,48.1c0,0.2-0.1,0.3-0.3,0.3h-6.7c-0.2,0-0.3-0.2-0.3-0.3c0-0.2,0.1-0.3,0.3-0.3h6.7
+	<path class="st10" d="M434.3,48.1c0,0.2-0.1,0.3-0.3,0.3h-6.7c-0.2,0-0.3-0.2-0.3-0.3c0-0.2,0.1-0.3,0.3-0.3h6.7
 		C434.2,47.8,434.3,47.9,434.3,48.1"/>
-	<path class="st11" d="M423.5,34.3c0.1,1.3,0.3,2.3,0.7,3.1c0.4,0.8,0.8,1.6,1.3,2.4l0.2,0.3c0.1,0.2,0.2,0.3,0.3,0.5
+	<path class="st10" d="M423.5,34.3c0.1,1.3,0.3,2.3,0.7,3.1c0.4,0.8,0.8,1.6,1.3,2.4l0.2,0.3c0.1,0.2,0.2,0.3,0.3,0.5
 		c0.4,0.7,0.9,1.5,1.1,2.5c0.1,0.4,0.2,0.8,0.2,1.3c0,0.2,0.1,0.4,0.1,0.6c0,0.3,0.2,0.5,0.4,0.7c0.7,0,1.4,0,2.3,0
 		c0.6,0,1.2,0,1.7,0c0.6,0,1.2,0,1.8,0c0.2-0.3,0.3-0.9,0.4-1.4c0.1-0.4,0.1-0.9,0.3-1.3c0.3-0.9,0.7-1.7,1.1-2.4
 		c0.1-0.2,0.2-0.4,0.3-0.5c0.1-0.2,0.2-0.5,0.4-0.7c0.8-1.5,1.6-3,1.7-5.1V34c-0.1-2-0.7-3.6-2.1-4.9c-1.2-1.2-2.9-1.9-5-2h-0.5
@@ -82,13 +85,13 @@
 		c-0.6,0-1.2,0-1.8,0c-0.6,0-1.2,0-1.7,0C429.1,47.1,428.3,47.1,427.5,47.1L427.5,47.1z"/>
 </g>
 <g>
-	<path class="st11" d="M349.1,64.6h-21c-0.8,0-1.4,0.6-1.4,1.4c0,0.5,0.3,0.9,0.6,1.2v1.2c0.1,0,0.2,0,0.3,0h1.5v-1H348v12.2h-12.7
+	<path class="st10" d="M349.1,64.6h-21c-0.8,0-1.4,0.6-1.4,1.4c0,0.5,0.3,0.9,0.6,1.2v1.2c0.1,0,0.2,0,0.3,0h1.5v-1H348v12.2h-12.7
 		c-0.1,0.2-0.2,0.4-0.3,0.5c-0.1,0.2-0.1,0.3-0.2,0.5c-0.1,0.3-0.2,0.5-0.3,0.8H349c0.5,0,0.9-0.4,0.9-0.9V67.2
 		c0.4-0.2,0.6-0.7,0.6-1.2C350.5,65.2,349.9,64.6,349.1,64.6"/>
-	<path class="st11" d="M335.9,72.7c-0.2-0.1-0.5-0.1-0.7,0c0.2,0.6,0.3,1.3,0.4,2l0.2-0.2l4.1,1.8c0.4,0.2,0.8,0,1-0.3l2.5-3.4
+	<path class="st10" d="M335.9,72.7c-0.2-0.1-0.5-0.1-0.7,0c0.2,0.6,0.3,1.3,0.4,2l0.2-0.2l4.1,1.8c0.4,0.2,0.8,0,1-0.3l2.5-3.4
 		l0.2,1.5c0.1,0.4,0.4,0.7,0.8,0.7h0.1c0.5-0.1,0.8-0.5,0.7-0.9l-0.5-3.5c-0.1-0.5-0.5-0.8-0.9-0.7l-3.5,0.5
 		c-0.5,0.1-0.8,0.5-0.7,0.9c0.1,0.5,0.5,0.8,0.9,0.7l1.6-0.2l-2.2,3L335.9,72.7z"/>
-	<path class="st11" d="M335.2,83.4l-3.1-1c-0.1-0.2-0.2-0.4-0.5-0.6c0.3-0.3,0.5-0.6,0.6-0.8c0.4-0.6,0.7-1.2,0.9-1.8
+	<path class="st10" d="M335.2,83.4l-3.1-1c-0.1-0.2-0.2-0.4-0.5-0.6c0.3-0.3,0.5-0.6,0.6-0.8c0.4-0.6,0.7-1.2,0.9-1.8
 		c0.1-0.2,0.2-0.5,0.3-0.7c0.3-0.3,0.5-0.6,0.5-1v-1c0-0.3-0.1-0.6-0.3-0.8v-1.4c0-2.4-2-4.4-4.4-4.4h-1.4c-2.4,0-4.4,2-4.4,4.4v1.4
 		c-0.2,0.2-0.3,0.5-0.3,0.8v1c0,0.4,0.2,0.8,0.5,1c0.1,0.2,0.2,0.5,0.3,0.7c0.2,0.6,0.6,1.2,1,1.8c0.2,0.2,0.4,0.5,0.6,0.8
 		c-0.2,0.2-0.4,0.4-0.5,0.6l-3.1,1c-2.2,0.6-3.5,10.2-3.5,10.2l0,0v0.1c0,0.5,0.4,0.8,0.8,0.8h18.7c0.5,0,0.8-0.4,0.8-0.8
@@ -101,37 +104,37 @@
 		c0.5,0.5,1.1,0.8,1.7,0.8c0.4,0,0.7-0.1,1.1-0.3c0.1,0,0.2,0,0.3,0l0.1,0.1h0.2c0.2,0,0.3,0.1,0.3,0.3v0.5c0,0.1,0,0.2-0.1,0.2
 		l-0.3,0.2v0.1c-0.1,0.7-0.5,1.5-1,2.3C330.3,81.2,329.7,81.7,329.3,81.7"/>
 </g>
-<path class="st11" d="M250.9,110.2h-14.7l3.1-1.8c0.4-0.2,0.6-0.8,0.3-1.2c-0.2-0.4-0.8-0.6-1.2-0.3l-6,3.4
+<path class="st10" d="M250.9,110.2h-14.7l3.1-1.8c0.4-0.2,0.6-0.8,0.3-1.2c-0.2-0.4-0.8-0.6-1.2-0.3l-6,3.4
 	c-0.3,0.2-0.4,0.5-0.4,0.8s0.2,0.6,0.4,0.8l6,3.4c0.1,0.1,0.3,0.1,0.4,0.1c0.3,0,0.6-0.2,0.8-0.4c0.2-0.4,0.1-1-0.3-1.2l-3.1-1.8
 	H250v16.6h-29.2V112h6.5c0.5,0,0.9-0.4,0.9-0.9s-0.4-0.9-0.9-0.9H220c-0.5,0-0.9,0.4-0.9,0.9v18.4c0,0.5,0.4,0.9,0.9,0.9h30.9
 	c0.5,0,0.9-0.4,0.9-0.9v-18.4C251.8,110.6,251.4,110.2,250.9,110.2"/>
-<rect x="6.1" y="258.5" class="st12" width="84" height="60.7"/>
-<text transform="matrix(0.9863 0 0 1 6.0684 264.8936)" class="st13 st6 st14">Fehlendes Bewusst</text>
-<text transform="matrix(0.9863 0 0 1 84.0684 264.8936)" class="st13 st6 st14">-</text>
-<text transform="matrix(0.9863 0 0 1 6.0684 275.6406)" class="st13 st6 st14">sein hinsichtlich der </text>
-<text transform="matrix(0.9863 0 0 1 6.0684 286.3877)" class="st13 st6 st14">EU-DSGV oder ihrer </text>
-<text transform="matrix(0.9863 0 0 1 6.0684 297.0342)" class="st13 st6 st14">Anwendung auf das </text>
-<text transform="matrix(0.9863 0 0 1 6.0684 307.7812)" class="st13 st6 st14">Unternehmen</text>
-<rect x="101.2" y="258.5" class="st12" width="84" height="60.7"/>
-<text transform="matrix(0.9863 0 0 1 101.1943 264.8936)" class="st13 st6 st14">Es gibt einen Plan, </text>
-<text transform="matrix(0.9863 0 0 1 101.1943 275.6406)" class="st13 st6 st14">die Ausführung hat </text>
-<text transform="matrix(0.9863 0 0 1 101.1943 286.3877)" class="st13 st6 st14">begonnen.</text>
-<rect x="197.8" y="258.5" class="st12" width="84" height="60.7"/>
-<text transform="matrix(0.9863 0 0 1 197.8135 264.8936)" class="st13 st6 st14">Prozesse sind </text>
-<text transform="matrix(0.9863 0 0 1 197.8135 275.6406)" class="st13 st6 st14">innerhalb akzepta</text>
-<text transform="matrix(0.9863 0 0 1 268.4131 275.6406)" class="st13 st6 st14">-</text>
-<text transform="matrix(0.9863 0 0 1 197.8135 286.3877)" class="st13 st6 st14">bler Risikolevel </text>
-<text transform="matrix(0.9863 0 0 1 197.8135 297.0342)" class="st13 st6 st14">regelkonform.</text>
-<rect x="294.4" y="258.5" class="st12" width="84" height="60.7"/>
-<text transform="matrix(0.9863 0 0 1 294.3867 264.8936)" class="st13 st6 st14">Regelkonformität ist </text>
-<text transform="matrix(0.9863 0 0 1 294.3867 275.6406)" class="st13 st6 st14">das Ergebnis </text>
-<text transform="matrix(0.9863 0 0 1 294.3867 286.3877)" class="st13 st6 st14">verbesserter </text>
-<text transform="matrix(0.9863 0 0 1 294.3867 297.0342)" class="st13 st6 st14">Geschäftsprozesse.</text>
-<rect x="390.6" y="258.5" class="st12" width="84" height="60.7"/>
-<text transform="matrix(0.9863 0 0 1 390.6494 264.8936)" class="st13 st6 st14">Regelkonformität </text>
-<text transform="matrix(0.9863 0 0 1 390.6494 275.6406)" class="st13 st6 st14">wird an andere </text>
-<text transform="matrix(0.9863 0 0 1 390.6494 286.3877)" class="st13 st6 st14">Unternehmen mit </text>
-<text transform="matrix(0.9863 0 0 1 390.6494 297.0342)" class="st13 st6 st14">geringerer EU-DS</text>
-<text transform="matrix(0.9863 0 0 1 461.6494 297.0342)" class="st13 st6 st14">-</text>
-<text transform="matrix(0.9863 0 0 1 390.6494 307.7812)" class="st13 st6 st14">GV-Reife verkauft.</text>
+<rect x="6.1" y="258.5" class="st11" width="84" height="60.7"/>
+<text transform="matrix(0.9863 0 0 1 6.0684 264.8934)" class="st12 st6 st13">Fehlendes Bewusst</text>
+<text transform="matrix(0.9863 0 0 1 84.0684 264.8934)" class="st12 st6 st13">-</text>
+<text transform="matrix(0.9863 0 0 1 6.0684 275.6404)" class="st12 st6 st13">sein hinsichtlich der </text>
+<text transform="matrix(0.9863 0 0 1 6.0684 286.388)" class="st12 st6 st13">EU-DSGVO oder </text>
+<text transform="matrix(0.9863 0 0 1 6.0684 297.0345)" class="st12 st6 st13">ihrer Anwendung auf</text>
+<text transform="matrix(0.9863 0 0 1 6.0684 307.7816)" class="st12 st6 st13">das Unternehmen</text>
+<rect x="101.2" y="258.5" class="st11" width="84" height="60.7"/>
+<text transform="matrix(0.9863 0 0 1 101.1943 264.8934)" class="st12 st6 st13">Es gibt einen Plan, </text>
+<text transform="matrix(0.9863 0 0 1 101.1943 275.6404)" class="st12 st6 st13">die Ausführung hat </text>
+<text transform="matrix(0.9863 0 0 1 101.1943 286.388)" class="st12 st6 st13">begonnen.</text>
+<rect x="197.8" y="258.5" class="st11" width="84" height="60.7"/>
+<text transform="matrix(0.9863 0 0 1 197.8135 264.8934)" class="st12 st6 st13">Prozesse sind </text>
+<text transform="matrix(0.9863 0 0 1 197.8135 275.6404)" class="st12 st6 st13">innerhalb akzepta</text>
+<text transform="matrix(0.9863 0 0 1 268.4131 275.6404)" class="st12 st6 st13">-</text>
+<text transform="matrix(0.9863 0 0 1 197.8135 286.388)" class="st12 st6 st13">bler Risikolevel </text>
+<text transform="matrix(0.9863 0 0 1 197.8135 297.0345)" class="st12 st6 st13">regelkonform.</text>
+<rect x="294.4" y="258.5" class="st11" width="84" height="60.7"/>
+<text transform="matrix(0.9863 0 0 1 294.3867 264.8934)" class="st12 st6 st13">Regelkonformität ist </text>
+<text transform="matrix(0.9863 0 0 1 294.3867 275.6404)" class="st12 st6 st13">das Ergebnis </text>
+<text transform="matrix(0.9863 0 0 1 294.3867 286.388)" class="st12 st6 st13">verbesserter </text>
+<text transform="matrix(0.9863 0 0 1 294.3867 297.0345)" class="st12 st6 st13">Geschäftsprozesse.</text>
+<rect x="390.6" y="258.5" class="st11" width="84" height="60.7"/>
+<text transform="matrix(0.9863 0 0 1 390.6494 264.8934)" class="st12 st6 st13">Regelkonformität </text>
+<text transform="matrix(0.9863 0 0 1 390.6494 275.6404)" class="st12 st6 st13">wird an andere </text>
+<text transform="matrix(0.9863 0 0 1 390.6494 286.388)" class="st12 st6 st13">Unternehmen mit </text>
+<text transform="matrix(0.9863 0 0 1 390.6494 297.0345)" class="st12 st6 st13">geringerer EU-DS</text>
+<text transform="matrix(0.9863 0 0 1 461.6494 297.0345)" class="st12 st6 st13">-</text>
+<text transform="matrix(0.9863 0 0 1 390.6494 307.7816)" class="st12 st6 st13">GVO-Reife verkauft.</text>
 </svg>
