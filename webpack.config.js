@@ -12,6 +12,7 @@ var inProduction = (process.env.NODE_ENV==='production');
 module.exports = {
 	entry: {
 		antifreeze: [
+			"babel-polyfill",
 			'./resources/assets/js/antifreeze/main.js',
 			'./resources/assets/css/antifreeze/main.css'
 		]
