@@ -898,8 +898,11 @@ class PdfController extends Controller
         	->setOption('footer-spacing',2)
         	->setOption('replace', $headervars);
         	if(session('product.id')==8){
+        		//$pdf->setOption('cover',session('url').'/'.session('localeUrl').'template/'.session('template').'/report/cover');
         		$timeStamp = time();
-				$pdf->save(storage_path().'/ntt-sdwan-report-'.$timeStamp.'.pdf');
+        		$pdf->save(storage_path().'/ntt-sdwan-report-'.$timeStamp.'.pdf');
+
+        		
 
 				$merge = new \LynX39\LaraPdfMerger\PdfManage;
 				$locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
@@ -910,6 +913,9 @@ class PdfController extends Controller
 				$merge->merge('browser', storage_path().'/reports/ntt-sdwan-report-'.$timeStamp.'.pdf', 'P');
 				if(File::exists(storage_path().'/ntt-sdwan-report-'.$timeStamp.'.pdf')){
 					File::delete(storage_path().'/ntt-sdwan-report-'.$timeStamp.'.pdf');
+				}
+				if(File::exists(storage_path().'/ntt-sdwan-report-cover-'.$timeStamp.'.pdf')){
+					File::delete(storage_path().'/ntt-sdwan-report-cover-'.$timeStamp.'.pdf');
 				}
 			}else{
 				return $pdf->inline('invoice.pdf');

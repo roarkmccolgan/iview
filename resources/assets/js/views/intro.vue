@@ -2,6 +2,7 @@
 	<div class="flex-grow">
 		<div class="container mx-auto bg-white border-t border-b mt-6 mb-4 py-4 px-4 sm:border sm:rounded shadow text-grey-darker">
 			<h1 class="font-light leading-tight">{{assessment.tool.title}}</h1>
+			<h3 class="font-light leading-tight">{{assessment.tool.sub_title}}</h3>
 		</div>
 		<div class="container mx-auto bg-white border-t border-b mt-6 p-8 sm:border sm:rounded shadow text-grey-darker">
 			<div class="flex flex-wrap justify-center">

@@ -26,7 +26,8 @@
 	</div>
 	<div class="flex-grow">
 		<div class="container mx-auto bg-white border-t border-b mt-6 mb-4 py-4 px-4 sm:border sm:rounded shadow text-grey-darker">
-			<h1 class="font-light leading-tight">IDC's Next Generation WAN Advisor</h1>
+			<h1 class="font-light leading-tight">NTT Communications Next Generation WAN Advisor</h1>
+			<h3 class="font-light leading-tight">With Research and Analysis by IDC</h3>
 		</div>
 		<div class="container mx-auto bg-white border-t border-b mt-6 p-8 sm:border sm:rounded shadow text-grey-darker">
 			<div class="flex flex-wrap justify-center">
@@ -38,8 +39,8 @@
 						<div>
 							<h2 class="font-light mb-4 text-ntt-blue leading-tight">Thank you for your time!</h2>
 							<p class="mb-2">
-							We have received your information. You will be receiving an email with your custom report momentarily.<br/>
-        Please check in your junk folder if you don\'t receive it within 5 minutes.<br/><br/>
+							We have received your information. You will be receiving an email with your custom report momentarily.<br/><br/>
+        Please check in your junk folder if you don't receive it within 5 minutes.<br/><br/>
 							</p>
 						</div>
 					</div>

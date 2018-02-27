@@ -2,6 +2,7 @@
 	<div class="flex-grow">
 		<div class="container mx-auto bg-white border-t border-b mt-6 mb-4 py-4 px-4 sm:border sm:rounded shadow text-grey-darker">
 			<h1 class="font-light leading-tight">{{assessment.tool.title}}</h1>
+			<h3 class="font-light leading-tight">{{assessment.tool.sub_title}}</h3>
 		</div>
 		<div class="container mx-auto bg-white border-t border-b mt-6 p-8 sm:border sm:rounded shadow text-grey-darker">
 			<div class="flex flex-wrap justify-center">
@@ -19,8 +20,8 @@
 				</div>
 				<div class="w-full sm:w-1/2">
 					<div class="sm:ml-8">
-						<!-- <form id="leadForm" :action="'/'+assessment.localeUrl+'quiz/complete'" method="POST" > -->
-						<form id="leadForm" :action="'/'+assessment.localeUrl+'pdf'" method="GET" >
+						<form id="leadForm" :action="'/'+assessment.localeUrl+'quiz/complete'" method="POST" >
+						<!-- <form id="leadForm" :action="'/'+assessment.localeUrl+'pdf'" method="GET" > -->
 							<input type="hidden" name="_token" :value="getToken">
 							<h2 class="flex justify-start p-2 bg-ntt-blue text-white font-light leading-tight">
 								<font-awesome-icon class="mr-2" :icon="icons.faEnvelope"></font-awesome-icon>
