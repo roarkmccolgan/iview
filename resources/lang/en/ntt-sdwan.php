@@ -1,8 +1,8 @@
 <?php
-//Symantec
+//NTT
 return array(
-    'title' => 'Symantec GDPR Assessment',
-    'sub-title' => 'Your businesses\' GDPR readiness',
+    'title' => 'NTT Communications Next Generation WAN Advisor',
+    'sub-title' => 'With Research and Analysis by IDC',
     'stage1' => 'WAN Follower',
     'stage2' => 'WAN Generalist',
     'stage3' => 'WAN Leader',
