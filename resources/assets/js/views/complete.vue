@@ -178,7 +178,7 @@
 													<font-awesome-icon :icon="icons.faCheckSquare" v-else />
 											</div>
 											<div class="flex-grow">
-												By registering with IDC, you accept our Privacy Policy and NTT Communications Privacy Policy.
+												By registering with IDC, you accept our <a href="https://ntt.idcready.net/privacy" target="_blank">Privacy Policy</a> and NTT Communications <a href="http://www.eu.ntt.com/en/Footer/Privacy_Statement" target="_blank">Privacy Policy</a>.
 											</div>
 										</div>
 										<p class="text-red text-xs italic" v-show="errors.terms">Please accept terms and conditions.</p>
