@@ -79,12 +79,21 @@
 				});
 			});
 			var graphs = document.getElementsByClassName("graph");
-			if(graphs.length>0)
+			if(graphs.length>0){
+				var num = graphs.length;
 				function chartReady(event, chart){
-					window.status = 'chartrendered';
+					num--;
+					if(num==0){
+						console.log('done');
+						window.status = 'chartrendered';
+					}
+				}
 			}else{
 				window.status = 'chartrendered';
 			}
+			setTimeout(function(){
+				window.status = 'chartrendered';
+			}, 15000);
 		</script>
 	</body>
 </html>

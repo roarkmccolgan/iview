@@ -101,10 +101,10 @@ Route::group(['domain' => '{subdomain}.'.env('APP_TLD','idcready.net'),'middlewa
 		$locale = App::getLocale();
 		$locale = $locale == 'en' ? '' : $locale;
 		return View::make('tool.'.$template.'.report.header'.$locale);
-	});
+	})->middleware(['routebyurl']);
 	Route::get('/template/{templates}/report/cover', function($domain, $template){
 		return View::make('tool.'.$template.'.report.cover');
-	});
+	})->middleware(['routebyurl']);
 	/*Route::get('/template/sublime/report/header', function(){
 		return View::make('tool.sublime.report.header');
 	});*/
@@ -113,7 +113,7 @@ Route::group(['domain' => '{subdomain}.'.env('APP_TLD','idcready.net'),'middlewa
 		$company_alias = session('company.alias');
 		$url = session('url');
 		return View::make('tool.'.$template.'.report.footer', compact(['url','product_id','company_alias']));
-	});
+	})->middleware(['routebyurl']);
 	/*Route::get('/template/sublime/report/footer', function(){
 		$product_id = session('product.id');
 		$company_alias = session('company.alias');

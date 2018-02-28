@@ -25,12 +25,14 @@ class RouteByURL
         if ($url) {
             $url->urlable->load('company');
 
-            $request->session()->put('product', ['type'=>$url->urlable_type, 'id'=>$url->urlable_id, 'alias'=>$url->urlable->alias, 'title'=>$url->urlable->title]);
+            $request->session()->put('product', ['type'=>$url->urlable_type, 'id'=>$url->urlable_id, 'alias'=>$url->urlable->alias, 'title'=>$url->urlable->title, 'sub_title'=>$url->urlable->sub_title]);
             $request->session()->put('locale', App::getLocale()=='en' ? '':App::getLocale());
             $request->session()->put('localeUrl', App::getLocale()=='en' ? '':App::getLocale().'/');
             $request->session()->put('url', 'http://' . $request->subdomain.'.'.$host_names[1].'.'.$host_names[2]);
             $request->session()->put('host', $url->urlable->domain);
-            $request->session()->put('referer', $request->server('HTTP_REFERER'));
+            if(!$request->session()->has('referer')){
+                $request->session()->put('referer', $request->server('HTTP_REFERER'));
+            }
             $request->session()->put('analytics', $url->urlable->gapropertyid);
             $request->session()->put('template', $url->urlable->template);
             $request->session()->put('company.name', $url->urlable->company->name);
