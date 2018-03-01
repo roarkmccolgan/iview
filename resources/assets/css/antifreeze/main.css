@@ -20,6 +20,11 @@
 .spacer{
 	height: 5mm;
 }
-
+/*IE10 and IE11 */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .ieflex1 {
+    flex: 0 0 auto !important;
+  }
+}
 
 @tailwind utilities;

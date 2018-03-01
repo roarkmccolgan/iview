@@ -99,12 +99,11 @@ h2.cloud-vision-and-strategy{
 .graph{
 	height: 80mm;
 	width:130mm;
-	margin:5mm auto;
 }
 .fifty{
 	float: left;
-	width: 80mm;
-	margin: 0 5mm;
+	width: 40%;
+	margin: 0 5%;
 }
 
 .extragraphtitle{

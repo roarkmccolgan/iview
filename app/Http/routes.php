@@ -71,6 +71,9 @@ Route::group(['domain' => '{subdomain}.'.env('APP_TLD','idcready.net'),'middlewa
 			Route::post('get-results', 'ToolController@completeAsessment');
 		});
 	});
+	Route::group(['prefix' => 'test'], function(){
+		Route::get('/chart', 'TestController@chart');
+	});
 
 	//default en routes
 	Route::get('/', 'ToolController@run')->middleware(['routebyurl']);

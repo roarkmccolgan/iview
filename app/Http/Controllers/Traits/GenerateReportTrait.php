@@ -763,105 +763,156 @@ trait GenerateReportTrait {
 			$vars['sectionCopy'] = $customCopy;
 			
 		}else{
-			    foreach (config('baseline_'.session('product.id')) as $section => $values) {
-					if(config('baseline_'.session('product.id').'.'.$section.'.report-settings.graph')){
-						$sectionGraph = Lava::DataTable();
-						$numformat = Lava::NumberFormat([
-						    'suffix'         => '%'
-						]);
-				        $sectionGraph->addColumns([
-							['string', 'Stage'],
-							['number', 'Your Score',$numformat],
-						]);
-						$sectionGraph->addRoleColumn('string', 'style');
-						$sectionGraph->addRoleColumn('string', 'annotation');
-						
-						foreach ($values['types'] as $stage => $params) {
-							$val = $params['benchmark'];
-						    $sectionGraph->addRow([
-						      $locale == 'es' ? substr(trans(session('product.alias').'.'.$stage),0,strpos(trans(session('product.alias').'.'.$stage), ':')):trans(session('product.alias').'.'.$stage),//$stage
-						      $val,
-						      session('result.'.$section.'.rating')==$stage? config('baseline_'.session('product.id').'.'.$section.'.report-settings.color'):null,
-						      $val."%"
-						    ]);
-						}
-						
-						$sectionChart = Lava::ColumnChart($section.'_graph', $sectionGraph, $chartSettings);
+		    foreach (config('baseline_'.session('product.id')) as $section => $values) {
+				preg_match_all('/\d+/', session('result.'.$section.'.rating'), $matches);
+				$sectionRating =  (int)$matches[0][0];
+				if(config('baseline_'.session('product.id').'.'.$section.'.report-settings.graph')){
+					$sectionGraph = Lava::DataTable();
+					$numformat = Lava::NumberFormat([
+					    'suffix'         => '%'
+					]);
+			        $sectionGraph->addColumns([
+						['string', 'Stage'],
+						['number', 'Your Score',$numformat],
+					]);
+					$sectionGraph->addRoleColumn('string', 'style');
+					$sectionGraph->addRoleColumn('string', 'annotation');
+					
+					foreach ($values['types'] as $stage => $params) {
+						$val = $params['benchmark'];
+					    $sectionGraph->addRow([
+					      $locale == 'es' ? substr(trans(session('product.alias').'.'.$stage),0,strpos(trans(session('product.alias').'.'.$stage), ':')):trans(session('product.alias').'.'.$stage),//$stage
+					      $val,
+					      session('result.'.$section.'.rating')==$stage? config('baseline_'.session('product.id').'.'.$section.'.report-settings.color'):null,
+					      $val."%"
+					    ]);
 					}
-					$extraChart = [];
-					if(config('baseline_'.session('product.id').'.'.$section.'.report-settings.extra-graphs')){
-						foreach (config('baseline_'.session('product.id').'.'.$section.'.report-settings.extra-graphs') as $key => $graph) {
-							$extraGraph = Lava::DataTable();
-							$graphCols = [];
-							foreach ($graph['columns'] as $colKey => $col) {
-								if(isset($col['format'])){
-									$format = Lava::$col['format']['type']($col['format']['format']);
-								}
-								$graphCols[] = [$col['type'],$col['label'], isset($col['format']) ? $format:null];
-							}
-							$extraGraph->addColumns($graphCols);
+					
+					$sectionChart = Lava::ColumnChart($section.'_graph', $sectionGraph, $chartSettings);
 
-					        if($graph['role-columns']){
-								foreach ($graph['role-columns'] as $rolKey => $rol) {
-									$extraGraph->addRoleColumn($rol['type'], $rol['role']);
-								}
-					        }
-							
-							foreach (config('baseline_'.session('product.id').'.overall.types') as $extraSection => $extraSettings) {
-								foreach (session('questions.'.$graph['question']['section'].'.pages') as $pKey => $page) {
-									foreach ($page['questions'] as $qKey => $question) {
-										if($qKey==$graph['question']['question']){
-											$selected = explode('|', $question['selected']);
-			                                $userAnswer = $selected[0];
-			                                $userAnswer = strtolower(str_replace(" ", "-", $userAnswer));
-										}
+					$newSectionGraphData = [
+						'labels'=>[],
+						'datasets'=>[
+							[
+								'fillColor' => "#6BABDB",
+								'strokeColor' => "#6BABDB",
+								'data' => []
+							]
+						]
+					];
+					$index = 0;
+					$highlightBar = 0;
+					foreach ($values['types'] as $stage => $params) {
+						if(session('result.'.$section.'.rating')==$stage){
+							$highlightBar = $index;
+						}
+						$val = $params['benchmark'];
+						$newSectionGraphData['labels'][] = strpos(trans(session('product.alias').'.'.$stage), ':') !== false ? substr(trans(session('product.alias').'.'.$stage),0,strpos(trans(session('product.alias').'.'.$stage), ':')) : trans(session('product.alias').'.'.$stage);
+						$newSectionGraphData['datasets'][0]['data'][] = $val;
+						$index++;
+					}
+					$chart = $newSectionGraphData;
+				}
+				$extraChart = [];
+				$newExtraChart = [];
+				if(config('baseline_'.session('product.id').'.'.$section.'.report-settings.extra-graphs')){
+					foreach (config('baseline_'.session('product.id').'.'.$section.'.report-settings.extra-graphs') as $key => $graph) {
+						// $extraGraph = Lava::DataTable();
+						// $graphCols = [];
+						// foreach ($graph['columns'] as $colKey => $col) {
+						// 	if(isset($col['format'])){
+						// 		$format = Lava::$col['format']['type']($col['format']['format']);
+						// 	}
+						// 	$graphCols[] = [$col['type'],$col['label'], isset($col['format']) ? $format:null];
+						// }
+						// $extraGraph->addColumns($graphCols);
+
+				  		// if($graph['role-columns']){
+						// 	foreach ($graph['role-columns'] as $rolKey => $rol) {
+						// 		$extraGraph->addRoleColumn($rol['type'], $rol['role']);
+						// 	}
+				  //       }
+						$extraSectionGraphData = [
+							'labels'=>[],
+							'datasets'=>[
+								[
+									'fillColor' => "#6BABDB",
+									'strokeColor' => "#6BABDB",
+									'data' => []
+								]
+							]
+						];
+						$index = 0;
+						$highlightBar = 0;
+						foreach (config('baseline_'.session('product.id').'.overall.types') as $extraSection => $extraSettings) {
+							foreach (session('questions.'.$graph['question']['section'].'.pages') as $pKey => $page) {
+								foreach ($page['questions'] as $qKey => $question) {
+									if($qKey==$graph['question']['question']){
+										$selected = explode('|', $question['selected']);
+		                                $userAnswer = $selected[0];
+		                                $userAnswer = strtolower(str_replace(" ", "-", $userAnswer));
 									}
 								}
-								$val = $extraSettings[$graph['data']][$userAnswer];
-							    $extraGraph->addRow([
-							      trans(session('product.alias').'.'.$extraSection),//$extraSection
-							      $val,
-							      session('result.'.$section.'.rating')==$extraSection? config('baseline_'.session('product.id').'.'.$section.'.report-settings.color'):null,
-							      $val."%"
-							    ]);
 							}
-							
-							$extraChart[$section.'_'.$key.'_graph'] = Lava::ColumnChart($section.'_'.$key.'_graph', $extraGraph, $chartSettings);
+							$val = $extraSettings[$graph['data']][$userAnswer];
+							$extraSectionGraphData['labels'][] = trans(session('product.alias').'.'.$extraSection);//$extraSection
+							$extraSectionGraphData['datasets'][0]['data'][] = $val;
+
+						    /*$extraGraph->addRow([
+						      trans(session('product.alias').'.'.$extraSection),//$extraSection
+						      $val,
+						      session('result.'.$section.'.rating')==$extraSection? config('baseline_'.session('product.id').'.'.$section.'.report-settings.color'):null,
+						      $val."%"
+						    ]);*/
 						}
+						
+						//$extraChart[$section.'_'.$key.'_graph'] = Lava::ColumnChart($section.'_'.$key.'_graph', $extraGraph, $chartSettings);
+						$newExtraChart[$section.'_'.$key.'_graph'] = $extraSectionGraphData;
 					}
-					$vars['sections'][$section] = [
-						'title' => trans(session('product.alias').'.'.$section.'.title'),
-						'hidetitle' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.hide-title'),
-						'hidetitlebar' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.hide-title-bar'),
-						'hiderating' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.hide-rating',false),
-						'introduction' => Lang::has(session('product.alias').'.'.$section.'.introduction') ? trans(session('product.alias').'.'.$section.'.introduction',['result'=>trans(session('product.alias').'.'.session('result.'.$section.'.rating')),'benchmark'=>config('baseline_'.session('product.id').'.'.$section.'.types.'.session('result.'.$section.'.rating').'.benchmark')]):false,
-						'seckey' => $section,
-						'pageimage' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.pageimage') ? trans(session('product.alias').'.'.$section.'.pageimage'):false,
-						'color' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.color'),
-						'designline' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.designline'),
-						'graph' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.graph'),
-						'graph-title' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.graph-title'),
-						'extraCharts' => !empty($extraChart) ? $extraChart: false,
-						'pb' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.pb'),
-						'rating' => trans(session('product.alias').'.'.session('result.'.$section.'.rating')),
-						'score' => session('result.'.$section.'.score'),
-						'paragraph' => trans(session('product.alias').'.'.$section.'.'.session('result.'.$section.'.rating')),
-
-					];
-					$headervars['page'.$count] = !$vars['sections'][$section]['hidetitlebar'] ? trans(session('product.alias').'.'.$section.'.title') : '';
-					$headervars['page_offset'] = config('baseline_'.session('product.id').'.overall.report-settings.page-offset',1);
-					$count++;
 				}
+				$vars['sections'][$section] = [
+					'title' => trans(session('product.alias').'.'.$section.'.title'),
+					'hidetitle' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.hide-title'),
+					'hidetitlebar' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.hide-title-bar'),
+					'hiderating' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.hide-rating',false),
+					'introduction' => Lang::has(session('product.alias').'.'.$section.'.introduction') ? trans(session('product.alias').'.'.$section.'.introduction',['result'=>trans(session('product.alias').'.'.session('result.'.$section.'.rating')),'benchmark'=>config('baseline_'.session('product.id').'.'.$section.'.types.'.session('result.'.$section.'.rating').'.benchmark')]):false,
+					'seckey' => $section,
+					'pageimage' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.pageimage') ? trans(session('product.alias').'.'.$section.'.pageimage'):false,
+					'color' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.color'),
+					'designline' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.designline'),
+					//'graph' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.graph'),
+					'chart' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.graph') ? json_encode($chart) : false,
+					'graph-title' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.graph-title'),
+					'extraCharts' => !empty($extraChart) ? $extraChart: false,
+					'newExtraChart' => !empty($newExtraChart) ? $newExtraChart: false,
+					'pb' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.pb'),
+					'rating' => trans(session('product.alias').'.'.session('result.'.$section.'.rating')),
+					'sectionRating' => $sectionRating,
+					'score' => session('result.'.$section.'.score'),
+					'paragraph' => trans(session('product.alias').'.'.$section.'.'.session('result.'.$section.'.rating')),
+				];
+				/*if(strlen($vars['sections'][$section]['paragraph']) > 400){
+					$para = $vars['sections'][$section]['paragraph'];
+					$lastP = strrpos ($para, '</p>', 400);
+					$para = substr_replace($para, '<div class="pb"></div>', $lastP+4, 0);
+					dd($para);
+				}*/
+				
 
-				$vars['introduction'] = Lang::has(session('product.alias').'.introduction') ? trans(session('product.alias').'.introduction',
-				[
-					'result'=>trans(session('product.alias').'.'.session('result.overall.rating')),
-					'stage'=>session('result.overall.rating'),
-				]) : false;
-				$vars['introImage'] = Lang::has(session('product.alias').'.introduction-image') ? trans(session('product.alias').'.introduction-image') : false;
-				$vars['introRating'] = trans(session('product.alias').'.'.session('result.overall.rating'));
-				$vars['questions'] = session('questions');
+				$headervars['page'.$count] = !$vars['sections'][$section]['hidetitlebar'] ? trans(session('product.alias').'.'.$section.'.title') : '';
+				$headervars['page_offset'] = config('baseline_'.session('product.id').'.overall.report-settings.page-offset',1);
+				$count++;
 			}
+
+			$vars['introduction'] = Lang::has(session('product.alias').'.introduction') ? trans(session('product.alias').'.introduction',
+			[
+				'result'=>trans(session('product.alias').'.'.session('result.overall.rating')),
+				'stage'=>session('result.overall.rating'),
+			]) : false;
+			$vars['introImage'] = Lang::has(session('product.alias').'.introduction-image') ? trans(session('product.alias').'.introduction-image') : false;
+			$vars['introRating'] = trans(session('product.alias').'.'.session('result.overall.rating'));
+			$vars['questions'] = session('questions');
+		}
 			    /*$vars['introduction'] = Lang::has(session('product.alias').'.introduction') ? trans(session('product.alias').'.introduction',['result'=>trans(session('product.alias').'.'.session('result.overall.rating'))]) : false;
 			    $vars['introImage'] = Lang::has(session('product.alias').'.introduction-image') ? trans(session('product.alias').'.introduction-image') : false;
 			    $vars['introRating'] = trans(session('product.alias').'.'.session('result.overall.rating'));
@@ -977,7 +1028,7 @@ trait GenerateReportTrait {
     	}
     	return $total;
     }
-    
+
     private function getQuestionScoreNew($q, $section,$page=false,$type='q'){
     	$page = $page == false ? $q : $page;
     	$selected = session('questions.'.$section.'.pages.page'.$page.'.questions.'.$type.$q.'.selected');

@@ -1,5 +1,5 @@
 <template>
-	<div class="flex-grow">
+	<div class="flex-grow ieflex1">
 		<div class="container mx-auto bg-white border-t border-b mt-6 mb-4 py-4 px-4 sm:border sm:rounded shadow text-grey-darker">
 			<h1 class="font-light leading-tight">{{assessment.tool.title}}</h1>
 			<h3 class="font-light leading-tight">{{assessment.tool.sub_title}}</h3>

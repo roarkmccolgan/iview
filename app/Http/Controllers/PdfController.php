@@ -93,7 +93,7 @@ class PdfController extends Controller
 			}	
 		}
 		
-		if(session('product.id')==5){
+		if(session('product.id')==5){ //splunk
 			$widthstage = [13, 38, 65, 90, 118];
 			$sectionVars = [];
 
@@ -768,6 +768,8 @@ class PdfController extends Controller
 			
 		}else{
 			foreach (config('baseline_'.session('product.id')) as $section => $values) {
+				preg_match_all('/\d+/', session('result.'.$section.'.rating'), $matches);
+				$sectionRating =  (int)$matches[0][0];
 				if(config('baseline_'.session('product.id').'.'.$section.'.report-settings.graph')){
 					$sectionGraph = Lava::DataTable();
 					$numformat = Lava::NumberFormat([
@@ -791,26 +793,61 @@ class PdfController extends Controller
 					}
 					
 					$sectionChart = Lava::ColumnChart($section.'_graph', $sectionGraph, $chartSettings);
+
+					$newSectionGraphData = [
+						'labels'=>[],
+						'datasets'=>[
+							[
+								'fillColor' => "#6BABDB",
+								'strokeColor' => "#6BABDB",
+								'data' => []
+							]
+						]
+					];
+					$index = 0;
+					$highlightBar = 0;
+					foreach ($values['types'] as $stage => $params) {
+						if(session('result.'.$section.'.rating')==$stage){
+							$highlightBar = $index;
+						}
+						$val = $params['benchmark'];
+						$newSectionGraphData['labels'][] = strpos(trans(session('product.alias').'.'.$stage), ':') !== false ? substr(trans(session('product.alias').'.'.$stage),0,strpos(trans(session('product.alias').'.'.$stage), ':')) : trans(session('product.alias').'.'.$stage);
+						$newSectionGraphData['datasets'][0]['data'][] = $val;
+						$index++;
+					}
+					$chart = $newSectionGraphData;
 				}
 				$extraChart = [];
+				$newExtraChart = [];
 				if(config('baseline_'.session('product.id').'.'.$section.'.report-settings.extra-graphs')){
 					foreach (config('baseline_'.session('product.id').'.'.$section.'.report-settings.extra-graphs') as $key => $graph) {
-						$extraGraph = Lava::DataTable();
-						$graphCols = [];
-						foreach ($graph['columns'] as $colKey => $col) {
-							if(isset($col['format'])){
-								$format = Lava::$col['format']['type']($col['format']['format']);
-							}
-							$graphCols[] = [$col['type'],$col['label'], isset($col['format']) ? $format:null];
-						}
-						$extraGraph->addColumns($graphCols);
+						// $extraGraph = Lava::DataTable();
+						// $graphCols = [];
+						// foreach ($graph['columns'] as $colKey => $col) {
+						// 	if(isset($col['format'])){
+						// 		$format = Lava::$col['format']['type']($col['format']['format']);
+						// 	}
+						// 	$graphCols[] = [$col['type'],$col['label'], isset($col['format']) ? $format:null];
+						// }
+						// $extraGraph->addColumns($graphCols);
 
-				        if($graph['role-columns']){
-							foreach ($graph['role-columns'] as $rolKey => $rol) {
-								$extraGraph->addRoleColumn($rol['type'], $rol['role']);
-							}
-				        }
-						
+				  		// if($graph['role-columns']){
+						// 	foreach ($graph['role-columns'] as $rolKey => $rol) {
+						// 		$extraGraph->addRoleColumn($rol['type'], $rol['role']);
+						// 	}
+				  //       }
+						$extraSectionGraphData = [
+							'labels'=>[],
+							'datasets'=>[
+								[
+									'fillColor' => "#6BABDB",
+									'strokeColor' => "#6BABDB",
+									'data' => []
+								]
+							]
+						];
+						$index = 0;
+						$highlightBar = 0;
 						foreach (config('baseline_'.session('product.id').'.overall.types') as $extraSection => $extraSettings) {
 							foreach (session('questions.'.$graph['question']['section'].'.pages') as $pKey => $page) {
 								foreach ($page['questions'] as $qKey => $question) {
@@ -822,15 +859,19 @@ class PdfController extends Controller
 								}
 							}
 							$val = $extraSettings[$graph['data']][$userAnswer];
-						    $extraGraph->addRow([
+							$extraSectionGraphData['labels'][] = trans(session('product.alias').'.'.$extraSection);//$extraSection
+							$extraSectionGraphData['datasets'][0]['data'][] = $val;
+
+						    /*$extraGraph->addRow([
 						      trans(session('product.alias').'.'.$extraSection),//$extraSection
 						      $val,
 						      session('result.'.$section.'.rating')==$extraSection? config('baseline_'.session('product.id').'.'.$section.'.report-settings.color'):null,
 						      $val."%"
-						    ]);
+						    ]);*/
 						}
 						
-						$extraChart[$section.'_'.$key.'_graph'] = Lava::ColumnChart($section.'_'.$key.'_graph', $extraGraph, $chartSettings);
+						//$extraChart[$section.'_'.$key.'_graph'] = Lava::ColumnChart($section.'_'.$key.'_graph', $extraGraph, $chartSettings);
+						$newExtraChart[$section.'_'.$key.'_graph'] = $extraSectionGraphData;
 					}
 				}
 				$vars['sections'][$section] = [
@@ -843,11 +884,14 @@ class PdfController extends Controller
 					'pageimage' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.pageimage') ? trans(session('product.alias').'.'.$section.'.pageimage'):false,
 					'color' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.color'),
 					'designline' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.designline'),
-					'graph' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.graph'),
+					//'graph' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.graph'),
+					'chart' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.graph') ? json_encode($chart) : false,
 					'graph-title' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.graph-title'),
 					'extraCharts' => !empty($extraChart) ? $extraChart: false,
+					'newExtraChart' => !empty($newExtraChart) ? $newExtraChart: false,
 					'pb' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.pb'),
 					'rating' => trans(session('product.alias').'.'.session('result.'.$section.'.rating')),
+					'sectionRating' => $sectionRating,
 					'score' => session('result.'.$section.'.score'),
 					'paragraph' => trans(session('product.alias').'.'.$section.'.'.session('result.'.$section.'.rating')),
 				];
@@ -878,7 +922,7 @@ class PdfController extends Controller
 
 		//return $vars['sections'];
 		//dd(session('result'));
-		//return view('tool.'.session('template').'.report.report',$vars);
+		return view('tool.'.session('template').'.report.report',$vars);
 		$margintop = 25;
 		if(null !== config('baseline_'.session('product.id').'.overall.report-settings.margin-top')){
 			$margintop = config('baseline_'.session('product.id').'.overall.report-settings.margin-top');
@@ -898,7 +942,7 @@ class PdfController extends Controller
         	->setOption('footer-html',session('url').'/'.session('localeUrl').'template/'.session('template').'/report/footer')
         	->setOption('footer-spacing',2)
         	->setOption('replace', $headervars);
-        	if(session('product.id')==8){
+        	if (session('product.id')==8){
         		//$pdf->setOption('cover',session('url').'/'.session('localeUrl').'template/'.session('template').'/report/cover');
         		$timeStamp = time();
         		$pdf->save(storage_path().'/ntt-sdwan-report-'.$timeStamp.'.pdf');
@@ -917,6 +961,20 @@ class PdfController extends Controller
 				}
 				if(File::exists(storage_path().'/ntt-sdwan-report-cover-'.$timeStamp.'.pdf')){
 					File::delete(storage_path().'/ntt-sdwan-report-cover-'.$timeStamp.'.pdf');
+				}
+			} elseif (session('product.id')==2){
+				$timeStamp = time();
+        		$pdf->save(storage_path().'/fireeye-report-'.$timeStamp.'.pdf');
+				$merge = new \LynX39\LaraPdfMerger\PdfManage;
+				$locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
+
+				$merge->addPDF(storage_path().'/fireeye_report_start'.$locale .'.pdf', 'all');
+				$merge->addPDF(storage_path().'/fireeye-report-'.$timeStamp.'.pdf', 'all');
+				$merge->addPDF(storage_path().'/fireeye_report_end'.$locale .'.pdf', 'all');
+
+				$merge->merge('browser', storage_path().'/fireeye-report-'.$timeStamp.'_final.pdf', 'P');
+				if(File::exists(storage_path().'/fireeye-report-'.$timeStamp.'.pdf')){
+					File::delete(storage_path().'/fireeye-report-'.$timeStamp.'.pdf');
 				}
 			}else{
 				return $pdf->inline('invoice.pdf');

@@ -174,6 +174,7 @@ return [
         Laracasts\Utilities\JavaScript\JavaScriptServiceProvider::class,
         LynX39\LaraPdfMerger\PdfMergerServiceProvider::class,
         Fideloper\Proxy\TrustedProxyServiceProvider::class,
+        ConsoleTVs\Charts\ChartsServiceProvider::class,
         /*
          * My helper providers...
          */

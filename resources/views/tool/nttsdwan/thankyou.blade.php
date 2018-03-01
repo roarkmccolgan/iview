@@ -39,8 +39,8 @@
 						<div>
 							<h2 class="font-light mb-4 text-ntt-blue leading-tight">Thank you for your time!</h2>
 							<p class="mb-2">
-							We have received your information. You will be receiving an email with your custom report momentarily.<br/><br/>
-        Please check in your junk folder if you don't receive it within 5 minutes.<br/><br/>
+								We have received your information. You will be receiving an email with a link to your custom report shortly.<br/><br/>
+								Please check in your junk folder if you have not received the email within the next 5 minutes<br/><br/>
 							</p>
 						</div>
 					</div>

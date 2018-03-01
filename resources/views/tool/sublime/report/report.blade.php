@@ -7,7 +7,7 @@
     	<meta name="author" content="">
 		<title>Report</title>
 		<link rel="stylesheet" href="{{session('url')}}/css/templates/normalize.css">
-		<link rel="stylesheet" href="{{session('url')}}/css/templates/{{session('template')}}/report_{{session('product.id')}}.css">
+		<link rel="stylesheet" href="{{session('url')}}/css/templates/{{session('template')}}/report_{{session('product.id')}}.css?id=2">
 	</head>
 	<body>
 		<div class="introduction">
@@ -20,11 +20,15 @@
 			@if($section['graph-title'])
 			<h4>{{trans(session('product.alias').'.'.$section['seckey'].'.graph-title')}}</h4>
 			@endif
-			@if($section['graph'])
+			{{-- @if(isset($section['graph']))
 				<div id="{{$section['seckey']}}-div" class="graph" style="">
 					
 				</div>
 				@columnchart($section['seckey'].'_graph', $section['seckey'].'-div')
+			@endif --}}
+			@if($section['chart'])
+				<div class="graph"><canvas id="{{str_replace("-", "", $section['seckey'])}}-chart" width="650px" height="300px"></canvas></div>
+				<div class="spacer"></div>
 			@endif
 			@if($section['introduction'])
 			{!!$section['introduction']!!}
@@ -38,6 +42,16 @@
 						
 					</div>
 					@columnchart($chartKey, $section['seckey'].'-extra-'.$chartKey)
+				</div>
+				@endforeach
+				<div class="group"></div>
+			@endif
+			@if($section['newExtraChart'])
+				<div class="group"></div>
+				@foreach($section['newExtraChart'] as $chartKey=>$chart)
+				<div class="fifty">
+					<h4 style="text-align: center;">{{trans(session('product.alias').'.'.$section['seckey'].'.'.$chartKey.'-title')}}</h4>
+					<div class=""><canvas id="{{$chartKey}}-chart" width="300px" height="300px"></canvas></div>
 				</div>
 				@endforeach
 				<div class="group"></div>
@@ -95,7 +109,7 @@
 									if(isset($question['calc'])){
 	                                    if($question['calc']['type']=='average'){
 	                                    	$minmax = [
-						'stage1'=>[
+	                                    		'stage1'=>[
 		                                    		'behind' => [
 		                                    			'low' => 0,
 		                                    			'high' => 2,
@@ -261,7 +275,7 @@
 	                                            $selected = $selected[1];
 	                                            $norm+=$selected;
 	                                        }
-	                                        $val = round(($norm/$question['calc']['value'])*count($question['selected']),1);
+	                                        $val = round(($norm/count($question['selected'])*$question['calc']['value']),1);
 	                                        $position = '';
 
 	                                        foreach ($minmax[session('result.'.$section['seckey'].'.rating')] as $posKey => $params) {
@@ -269,6 +283,7 @@
 	                                        		$position = $posKey;
 	                                        		$saveOptKey = $posKey;
 	                                        	}
+	                                        	
 	                                        }
 	                                    }
 	                                }else{
@@ -397,8 +412,97 @@
 		<!-- END questions PAGE -->
 
 		<script src="{{ asset('js/vendor/jquery-1.10.1.min.js')}}"></script>
+		<script src={{ asset('js/vendor/Chart.min.js') }} charset=utf-8></script>
+
 		<script type="text/javascript">
 			$(function() {
+				//newcharts
+				@foreach($sections as $key=>$section)
+					@if($section['chart'])
+						var {{str_replace("-", "", $section['seckey'])}}data = {!!$section['chart']!!};
+						console.log({{str_replace("-", "", $section['seckey'])}}data);
+						// get bar chart canvas
+						var {{str_replace("-", "", $section['seckey'])}} = document.getElementById('{{str_replace("-", "", $section['seckey'])}}-chart').getContext("2d");
+
+						// draw bar chart
+						{{str_replace("-", "", $section['seckey'])}} = new Chart({{str_replace("-", "", $section['seckey'])}}).Bar({{str_replace("-", "", $section['seckey'])}}data,{
+							animation: false,
+							barShowStroke: false,
+							scaleLineColor: 'transparent',
+							//scaleFontColor: '#fff',
+							scaleShowLabels: false,
+							scaleShowHorizontalLines: false,
+							scaleShowVerticalLines: false,
+							showScale: true,
+							onAnimationComplete: function () {
+								var that = this;
+								var ctx = this.chart.ctx;
+								ctx.font = "bold 14px 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif";
+								ctx.fillStyle = 'grey',
+								ctx.textAlign = "center";
+								ctx.textBaseline = "bottom";
+
+								this.datasets.forEach(function (dataset) {
+									dataset.bars.forEach(function (bar) {
+										ctx.fillText(bar.value+"%", bar.x, bar.y - 4);
+										//ctx.fillText(bar.label, bar.x, that.chart.height -2);
+									});
+								})
+							}
+						});
+						{{str_replace("-", "", $section['seckey'])}}.datasets[0].bars[{{ $section['sectionRating'] }}].fillColor = "{{ $section['color'] }}"; 
+						{{str_replace("-", "", $section['seckey'])}}.update(); 
+						console.log({{str_replace("-", "", $section['seckey'])}});
+					@endif
+					@if($section['newExtraChart'])
+						@foreach($section['newExtraChart'] as $chartKey=>$chart)
+							var {{str_replace("-", "", $chartKey)}}data = {!! json_encode($chart) !!};
+							console.log({{str_replace("-", "", $chartKey)}}data);
+							// get bar chart canvas
+							var {{str_replace("-", "", $chartKey)}} = document.getElementById('{{str_replace("-", "", $chartKey)}}-chart').getContext("2d");
+
+							// draw bar chart
+							{{str_replace("-", "", $chartKey)}} = new Chart({{str_replace("-", "", $chartKey)}}).Bar({{str_replace("-", "", $chartKey)}}data,{
+								animation: false,
+								barShowStroke: false,
+								scaleLineColor: 'transparent',
+								//scaleFontColor: '#fff',
+								scaleShowLabels: false,
+								scaleShowHorizontalLines: false,
+								scaleShowVerticalLines: false,
+								showScale: true,
+								onAnimationComplete: function () {
+									var that = this;
+									var ctx = this.chart.ctx;
+									ctx.font = "bold 14px 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif";
+									ctx.fillStyle = 'grey',
+									ctx.textAlign = "center";
+									ctx.textBaseline = "bottom";
+
+									this.datasets.forEach(function (dataset) {
+										dataset.bars.forEach(function (bar) {
+											var y = bar.y - 4;
+											if(y<15){
+												y = 30;
+												ctx.fillStyle = 'white';
+											}else{
+												y = bar.y - 4;
+												ctx.fillStyle = 'grey';
+											}
+											ctx.fillText(bar.value+"%", bar.x, y);
+											//ctx.fillText(bar.label, bar.x, that.chart.height -2);
+										});
+									})
+								}
+							});
+							{{str_replace("-", "", $chartKey)}}.datasets[0].bars[{{ $section['sectionRating'] }}].fillColor = "{{ $section['color'] }}"; 
+							{{str_replace("-", "", $chartKey)}}.update(); 
+							console.log({{str_replace("-", "", $chartKey)}});
+						@endforeach
+					@endif
+
+				@endforeach
+
 				var height = 0;
 				$('.section').each(function(index){
 					if($(this).hasClass('pb')){
