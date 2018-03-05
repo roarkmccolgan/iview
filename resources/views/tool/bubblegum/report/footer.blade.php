@@ -7,7 +7,7 @@
     	<meta name="author" content="">
 		<title>Report</title>
 		<link rel="stylesheet" href="/css/templates/normalize.css">
-		<link rel="stylesheet" href="/css/templates/default/report_{{ session('product.id') }}.css">
+		<link rel="stylesheet" href="/css/templates/bubblegum/report_{{ session('product.id') }}.css">
 	</head>
 	<body style="margin: 0; padding: 0;">
 		<table class="header" style="width: 100%;" cellpadding="0" cellspacing="0">

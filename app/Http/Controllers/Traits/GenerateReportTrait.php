@@ -175,7 +175,8 @@ trait GenerateReportTrait {
 						'width-incident-response' => $sectionVars[2]['width'].'mm;',
 						'incident-response-rating' => $sectionVars[2]['rating'],
 						'incident-response-score' => $sectionVars[2]['score'],
-
+						'sectionbg' => asset('/images/tools/5/section_graph_bg.svg'),
+						'overallbg' => asset('/images/tools/5/overall_graph_bg.svg')
 					]
 				);
 

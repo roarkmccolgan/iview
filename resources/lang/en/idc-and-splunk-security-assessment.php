@@ -30,7 +30,7 @@ return array(
         <p>
             Based on your responses, you are placed within <strong>:percent</strong>% of companies overall in the readiness group of <strong>:result</strong>, which is the <strong>:number:ordinal</strong> level out of five.
         </p>
-        <div style="position: relative; width: 170mm; height: 80mm; background: url(http://security.idcready.net/images/tools/5/overall_graph_bg.svg); background-size: 170mm 80mm;">
+        <div style="position: relative; width: 170mm; height: 80mm; background: url(:overallbg); background-size: 170mm 80mm;">
             <div id="user" style="position:absolute; top: 24.694mm; left:40.5mm; width: :widthuser height: 7mm; background-color: #004B85"></div>
             <div id="lang" style="position:absolute; top: 33mm; left:40.5mm; width: :widthlang height: 7mm; background-color: #00ADEE"></div>
             <div id="user" style="position:absolute; top: 49mm; left:40.5mm; width: :widthuser height: 7mm; background-color: #004B85"></div>
@@ -61,7 +61,7 @@ return array(
         <div class="spacer"></div>
         <h2>IDC Security Response Readiness by Capability</h2>
         <div class="spacer"></div>
-        <div style="position: relative; width: 170mm; height: 105mm; background: url(http://security.idcready.net/images/tools/5/section_graph_bg.svg); background-size: 170mm 105mm;">
+        <div style="position: relative; width: 170mm; height: 105mm; background: url(:sectionbg); background-size: 170mm 105mm;">
             <div id="user" style="position:absolute; top: 24.694mm; left:44.3mm; width: :widthuser-security-strategy height: 7mm; background-color: #004B85"></div>
             <div id="lang" style="position:absolute; top: 33mm; left:44.3mm; width: :width-security-strategy height: 7mm; background-color: #00ADEE"></div>
 
