@@ -879,7 +879,10 @@ class PdfController extends Controller
 					'hidetitle' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.hide-title'),
 					'hidetitlebar' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.hide-title-bar'),
 					'hiderating' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.hide-rating',false),
-					'introduction' => Lang::has(session('product.alias').'.'.$section.'.introduction') ? trans(session('product.alias').'.'.$section.'.introduction',['result'=>trans(session('product.alias').'.'.session('result.'.$section.'.rating')),'benchmark'=>config('baseline_'.session('product.id').'.'.$section.'.types.'.session('result.'.$section.'.rating').'.benchmark')]):false,
+					'introduction' => Lang::has(session('product.alias').'.'.$section.'.introduction') ? trans(session('product.alias').'.'.$section.'.introduction',[
+						'result'=>trans(session('product.alias').'.'.session('result.'.$section.'.rating')),
+						'benchmark'=>config('baseline_'.session('product.id').'.'.$section.'.types.'.session('result.'.$section.'.rating').'.benchmark')
+					]):false,
 					'seckey' => $section,
 					'pageimage' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.pageimage') ? trans(session('product.alias').'.'.$section.'.pageimage'):false,
 					'color' => config('baseline_'.session('product.id').'.'.$section.'.report-settings.color'),
@@ -912,6 +915,7 @@ class PdfController extends Controller
 			[
 				'result'=>trans(session('product.alias').'.'.session('result.overall.rating')),
 				'stage'=>session('result.overall.rating'),
+				'stagegraphic' => asset('images/tools/'.session('product.id').'/'.session('result.overall.rating').'.svg')
 			]) : false;
 			$vars['introImage'] = Lang::has(session('product.alias').'.introduction-image') ? trans(session('product.alias').'.introduction-image') : false;
 			$vars['introRating'] = trans(session('product.alias').'.'.session('result.overall.rating'));
@@ -922,7 +926,7 @@ class PdfController extends Controller
 
 		//return $vars['sections'];
 		//dd(session('result'));
-		return view('tool.'.session('template').'.report.report',$vars);
+		//return view('tool.'.session('template').'.report.report',$vars);
 		$margintop = 25;
 		if(null !== config('baseline_'.session('product.id').'.overall.report-settings.margin-top')){
 			$margintop = config('baseline_'.session('product.id').'.overall.report-settings.margin-top');

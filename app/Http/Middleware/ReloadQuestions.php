@@ -23,6 +23,7 @@ class ReloadQuestions
         $localQuestions = $currentLocal=='en' ? '' : $currentLocal;
         $questions = Config::get($localQuestions.'questions_'.session('product.id'));
         if(is_null($questions)){
+            return redirect('/');
             abort(404,'Language or URL Does not exist');
         }
         

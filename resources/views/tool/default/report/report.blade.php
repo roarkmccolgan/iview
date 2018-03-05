@@ -70,7 +70,7 @@
 				//newcharts
 				
 				@foreach($sections as $key=>$section)
-				@if(isset($section['chart']))
+				@if($section['chart'])
 				var {{str_replace("-", "", $section['seckey'])}}data = {!!$section['chart']!!};
 				console.log({{str_replace("-", "", $section['seckey'])}}data);
 				// get bar chart canvas

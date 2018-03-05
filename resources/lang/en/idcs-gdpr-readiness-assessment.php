@@ -31,7 +31,7 @@ While you\'re waiting why not share your results and see how your followers meas
         <p>
             Further insight and detailed recommendations are highlighted below, taking you through components of Leadership and General Obligations, Data Rights and Standards, as well as Security. The report delivers an assessment of your stage of readiness as well as individual recommendations on how to improve these areas.
         </p>
-        <img src="http://hpgdpr.idcready.net/images/tools/4/:stage.svg" style="width: 170mm; height: 78mm;">
+        <img src=":stagegraphic" style="width: 170mm; height: 78mm;">
         <h2>GDPR and Print</h2>
         <p>
             The EU General Data Protection Regulation (GDPR) is now in force with a transition period until May 25, 2018. IDC research shows that many organisations appear to have little or no understanding of the regulation, its scope, timeline or impact, despite the risk of huge penalties of up to 4% of global turnover, as well as potential lawsuits, suspension of personal data processing and damage to reputation.

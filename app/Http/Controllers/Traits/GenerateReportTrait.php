@@ -908,6 +908,7 @@ trait GenerateReportTrait {
 			[
 				'result'=>trans(session('product.alias').'.'.session('result.overall.rating')),
 				'stage'=>session('result.overall.rating'),
+				'stagegraphic' => asset('images/tools/'.session('product.id').'/'.session('result.overall.rating').'.svg')
 			]) : false;
 			$vars['introImage'] = Lang::has(session('product.alias').'.introduction-image') ? trans(session('product.alias').'.introduction-image') : false;
 			$vars['introRating'] = trans(session('product.alias').'.'.session('result.overall.rating'));
