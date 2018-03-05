@@ -391,7 +391,8 @@ class PdfController extends Controller
 					'width-incident-response' => $sectionVars[2]['width'].'mm;',
 					'incident-response-rating' => $sectionVars[2]['rating'],
 					'incident-response-score' => $sectionVars[2]['score'],
-
+					'overallbg' => asset('images/tools/6/overall_graph_bg.svg'),
+					'sectionbg' => asset('images/tools/6/section_graph_bg.svg'),
 				]
 			);
 
@@ -457,7 +458,11 @@ class PdfController extends Controller
 
 			$vars['sectionCopy'] = $sectionCopy;
 			
-			$vars['summary'] = trans(session('product.alias').'.summary');
+			$vars['summary'] = trans(session('product.alias').'.summary',[
+				'link1' => asset('/images/tools/6/link-01.png'),
+				'link2' => asset('/images/tools/6/link-02.png'),
+				'link3' => asset('/images/tools/6/link-03.png'),
+			]);
 
 			$vars['introImage'] = Lang::has(session('product.alias').'.introduction-image') ? trans(session('product.alias').'.introduction-image') : false;
 			$vars['introRating'] = trans(session('product.alias').'.'.session('result.overall.rating'));
@@ -922,7 +927,6 @@ class PdfController extends Controller
 			$vars['introRating'] = trans(session('product.alias').'.'.session('result.overall.rating'));
 			$vars['questions'] = session('questions');
 		}
-		
 		
 
 		//return $vars['sections'];

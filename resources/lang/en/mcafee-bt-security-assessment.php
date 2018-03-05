@@ -31,7 +31,7 @@ return array(
         <p>
             Based on your responses, you are placed within <strong>:percent</strong>% of companies overall in the readiness group of <strong>:result</strong>, which is the <strong>:number:ordinal</strong> level out of five.
         </p>
-        <div style="position: relative; width: 170mm; height: 105mm; background: url(http://securebusiness.idcready.net/images/tools/6/overall_graph_bg.svg); background-size: 170mm 105mm;">
+        <div style="position: relative; width: 170mm; height: 105mm; background: url(:overallbg); background-size: 170mm 105mm;">
             <div id="user" style="position:absolute; top: 28.575mm; left:43.181mm; width: :widthuser height: 7mm; background-color: #92063e"></div>
             <div id="lang" style="position:absolute; top: 38.153mm; left:43.181mm; width: :widthlang height: 7mm; background-color: #ff5627"></div>
             
@@ -66,7 +66,7 @@ return array(
         <div class="spacer"></div>
         <h2>IDC Security Response Readiness by Capability</h2>
         <div class="spacer"></div>
-        <div style="position: relative; width: 170mm; height: 112mm; background: url(http://securebusiness.idcready.net/images/tools/6/section_graph_bg.svg); background-size: 170mm 112mm;">
+        <div style="position: relative; width: 170mm; height: 112mm; background: url(:sectionbg); background-size: 170mm 112mm;">
             <div id="user" style="position:absolute; top: 27.869mm; left:43.076mm; width: :widthuser-security-strategy height: 7mm; background-color: #92063e"></div>
             <div id="lang" style="position:absolute; top: 37.447mm; left:43.076mm; width: :width-security-strategy height: 7mm; background-color: #ff5627"></div>
 
@@ -181,13 +181,13 @@ return array(
         <div class="spacer"></div>
         <table style="margin-top: 10mm; width: 170mm;" cellspacing="5">
             <tr>
-                <td style="text-align: center; vertical-align: center; background-image: url(\'http://securebusiness.idcready.net/images/tools/6/link-01.png\');background-size: 56mm 52mm; background-repeat: no-repeat; width: 56mm; height: 52mm; position: relative;">
+                <td style="text-align: center; vertical-align: center; background-image: url(:link1);background-size: 56mm 52mm; background-repeat: no-repeat; width: 56mm; height: 52mm; position: relative;">
                     <a href="https://www.globalservices.bt.com/uk/en/form/speak-to-bt-mcafee-expert?cid=aff_(sc)partners_website(cm)idc(md)whitepaper(id)mcafee" style="position: absolute; top: 0; left: 0; width: 56mm; height: 52mm; text-decoration: none">&nbsp;</a>
                 </td>
-                <td style="text-align: center; vertical-align: center; background-image: url(\'http://securebusiness.idcready.net/images/tools/6/link-02.png\');background-size: 56mm 52mm; background-repeat: no-repeat; width: 56mm; height: 52mm; position: relative;">
+                <td style="text-align: center; vertical-align: center; background-image: url(:link2);background-size: 56mm 52mm; background-repeat: no-repeat; width: 56mm; height: 52mm; position: relative;">
                     <a href="https://www.globalservices.bt.com/uk/en/form/siem-showcase-visit?cid=aff_(sc)partners_website(cm)idc(md)whitepaper(id)showcase" style="position: absolute; top: 0; left: 0; width: 56mm; height: 52mm; text-decoration: none">&nbsp;</a>
                 </td>
-                <td style="text-align: center; vertical-align: center; background-image: url(\'http://securebusiness.idcready.net/images/tools/6/link-03.png\');background-size: 56mm 52mm; background-repeat: no-repeat; width: 56mm; height: 52mm; position: relative;">
+                <td style="text-align: center; vertical-align: center; background-image: url(:link3);background-size: 56mm 52mm; background-repeat: no-repeat; width: 56mm; height: 52mm; position: relative;">
                     <a href="http://securebusiness.idcready.net/downloads/BT-Managed-SIEM-Security.pdf" style="position: absolute; top: 0; left: 0; width: 56mm; height: 52mm; text-decoration: none">&nbsp;</a>
                 </td>
             </tr>
