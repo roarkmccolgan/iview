@@ -483,6 +483,7 @@ class PdfController extends Controller
 			$vars['introduction'] = trans(session('product.alias').'.introduction',
 				[
 					'result'=>trans(session('product.alias').'.'.session('result.overall.rating')),
+					'maturitygraph' => asset('images/tools/7/maturity.svg'),
 				]
 			);
 

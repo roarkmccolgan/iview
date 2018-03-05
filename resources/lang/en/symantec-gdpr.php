@@ -30,7 +30,7 @@ return array(
         <p>
             IDC sees five stages to GDPR readiness, with organizations just starting out at Stage 1, and those that are achieving compliance at Stage 5. Based on your answers to this assessment, your organization is at <strong>:result</strong>.
         </p>
-        <div style="position: relative; width: 170mm; height: 112mm; background: url(http://symantecgdpr.idcready.net/images/tools/7/maturity.svg); background-size: 170mm 112mm;">
+        <div style="position: relative; width: 170mm; height: 112mm; background: url(:maturitygraph); background-size: 170mm 112mm;">
             
         </div>
         <p>
