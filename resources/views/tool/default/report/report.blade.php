@@ -51,13 +51,7 @@
 			@if($section['introduction'])
 			{!!$section['introduction']!!}
 			@endif
-			@if(isset($section['graph']))
-				<div id="{{$section['seckey']}}-div" class="graph" style="">
-					
-				</div>
-				@columnchart($section['seckey'].'_graph', $section['seckey'].'-div')
-			@endif
-			@if(isset($section['chart']))
+			@if($section['chart'])
 				<div class="graph"><canvas id="{{str_replace("-", "", $section['seckey'])}}-chart" width="350px" height="300px"></canvas></div>
 			@endif
 			{!!$section['paragraph']!!}
