@@ -12,7 +12,7 @@ return array(
     'complete_body' => '
         Ihren Bericht finden Sie schon bald in Ihrem E-Mail-Postfach.<br/>
         Bitte schauen Sie auch im Spam-Ordner nach, wenn er nicht innerhalb der nächsten fünf Tage bei Ihnen ankommt.<br/><br/>
-        <a class="btn btn--primary" target="_blank" href="https://www.symantec.com/en/uk/campaigns/data-privacy">
+        <a class="btn btn--primary" target="_blank" href="https://www.symantec.com/de/de/campaigns/data-privacy">
             Für mehr Informationen hier klicken
         </a>',
     'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @symantec. Interested? ',// http://bit.ly/2gslXEh
@@ -21,7 +21,7 @@ return array(
         'hi' => 'Hi :Fname',
         'body' => 'wie versprochen, hier der Download-Link zur Bewertung des Standes Ihrer Vorbereitungen auf die EU-DSGVO. Die Ergebnisse wurden kategorieweise zusammengefasst. Sie enthalten auch Handlungsempfehlungen.',
         'link' => 'Report herunterladen',
-        'extra' => 'Und im Anschluss an die Lektüre gesuchen Sie gern <a href="https://www.symantec.com/en/uk/campaigns/data-privacy" style="color:#FDBB30">Symantec!</a>',
+        'extra' => 'Und im Anschluss an die Lektüre gesuchen Sie gern <a href="https://www.symantec.com/de/de/campaigns/data-privacy" style="color:#FDBB30">Symantec!</a>',
         'regards' => 'Mit freundlichen Grüßen',
         'team' => 'Das IDC-Team'
     ],

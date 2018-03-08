@@ -583,8 +583,8 @@ public function postComplete(SubmitAssessmentsRequest $request)
 	}
 
 	//generate report
-	$filename = str_slug($assessment->fname.'_'.$assessment->lname.'_'.session('product.title').'_Assessment', '-');
-	$this->wkhtml($assessment->id,$filename);
+	//$filename = str_slug($assessment->fname.'_'.$assessment->lname.'_'.session('product.title').'_Assessment', '-');
+	//$this->wkhtml($assessment->id,$filename);
 
 	$eloqua = config('baseline_'.session('product.id').'.overall.eloqua',false);
 	if($eloqua){ //!App::isLocal() && 

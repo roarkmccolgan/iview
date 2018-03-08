@@ -178,7 +178,7 @@ Risiko ist ein wichtiger Treiber für Assessments und Prozesse zur Risikominderu
     '7send'=>'',
     '7fullreport'=>'Bitte füllen Sie das Formular unten aus und wir schicken Ihnen den vollständigen Bericht.',
     '7provide'=>'',
-    '7byreg'=>'Mit der Registrierung bei <a href="/privacy" target="_blank">IDC</a> akzeptieren Sie unsere und <a href="https://www.symantec.com/privacy" target="_blank">Symantecs</a> jeweilige Datenschutzrichtlinie. Die von uns gesammelten Informationen werden an Symantec für die Durchführung von Direktmarketing-Aktionen weitergegeben,',
+    '7byreg'=>'Mit der Registrierung bei <a href="/privacy" target="_blank">IDC</a> akzeptieren Sie unsere und <a href="https://www.symantec.com/de/de/privacy" target="_blank">Symantecs</a> jeweilige Datenschutzrichtlinie. Die von uns gesammelten Informationen werden an Symantec für die Durchführung von Direktmarketing-Aktionen weitergegeben,',
     '7wait'=>'',
     '7twitterlink'=>'https://twitter.com/home?status=Ist%20Ihr%20Unternehmen%20auf%20die%20EU-DSGV%20vorbereitet%20(Datenschutz-Grundverordnung)?%20http%3A//bit.ly/2AXY3vW%20%40symantec',
     '7facebooklink'=>'https://www.facebook.com/sharer/sharer.php?u=http%3A//bit.ly/2AXY3vW',
