@@ -40,7 +40,7 @@
                 				<a href="/{{session('localeUrl')}}" class="restart"><i class="fa fa-chevron-left"></i> {{Lang::get('general.'.session('product.id').'restart')}}</a> | <a href="{{ url('/disclaimer') }}" target="_blank">{{Lang::get('general.disclaimer')}}</a>
 				</div>
 				<div class="col-sm-5 text-right">
-					<span class="assoc">{{Lang::get('general.'.session('product.id').'assoc')}} <img class="sponsor" src="{{asset('images/tools/'.session('product.id').'/fireeye')}}" alt="{{Lang::get('general.'.session('product.id').'sponsor')}}"></span>
+					<span class="assoc">{{Lang::get('general.'.session('product.id').'assoc')}} <img class="sponsor" src="{{asset('images/tools/'.session('product.id').'/fireeye')}}.png" alt="{{Lang::get('general.'.session('product.id').'sponsor')}}"></span>
 				</div>	
                 		</div>
                 	</div>
