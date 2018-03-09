@@ -236,6 +236,8 @@ Risiko ist ein wichtiger Treiber für Assessments und Prozesse zur Risikominderu
     'errorSname'=>'Bitte geben Sie Ihren Nachnamen ein',
     'errorEmail'=>'Bitte geben Sie Ihre E-Mail-Adresse ein',
     'errorCompany'=>'Bitte geben Sie den Namen Ihres Unternehmens ein',
+    'errorTitle'=>'Bitte Berufsbezeichnung eingeben',
+    'errorPhone'=>'Bitte Telefonnummer eingeben',
     'errorCountry'=>'Bitte wählen Sie Ihr Heimatland',
     'errorNumber'=>'Bitte geben Sie Ihre Telefonnummer ein',
     'errorRelationship'=>'Please select Relationship Type',
