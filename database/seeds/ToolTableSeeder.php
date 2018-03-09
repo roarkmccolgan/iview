@@ -24,7 +24,7 @@ class ToolTableSeeder extends Seeder
         DB::table('tools')->insert([
             'alias' => 'idcs-cyber-risk-assessment',
             'title' => 'IDC\'s Cyber Risk Assessment',
-            'sub_title' => 'Sponsored by FireEye and DXC Technology',
+            'sub_title' => 'Sponsored by FireEye',
             'company_id' => 3,
             'gapropertyid' => '130538540',
             'template' => 'sublime',

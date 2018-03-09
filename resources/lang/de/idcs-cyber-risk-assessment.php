@@ -79,7 +79,7 @@ Falls Sie in allen Bereichen entweder im Mittel- oder im Spitzenfeld liegen, wer
             In dem Bericht werden Ihre Ergebnisse nach Kategorien aufgeschlüsselt. Dadurch können Sie Ihre Ergebnisse besser mit anderen Unternehmen vergleichen.
         ',
         'link' => 'Bericht herunterladen',
-        'extra' => 'Besuchen Sie uns auf <a href="http://www.fireeye.com" style="color:#E66B6B">FireEye</a> und <a href="http://www.dxc.technology" style="color:#E66B6B">DXC Technology</a> um mehr zum Thema Cyber-Risiko zu erfahren',
+        'extra' => 'Besuchen Sie uns auf <a href="http://www.fireeye.com" style="color:#E66B6B">FireEye</a> um mehr zum Thema Cyber-Risiko zu erfahren',
         'regards' => 'Regards',
         'team' => 'The IDC Team'
     ],

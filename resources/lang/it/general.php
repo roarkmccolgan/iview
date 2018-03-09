@@ -6,9 +6,9 @@ return array(
     '2elqFormName'=>'',
     '2restart'=>'Riavvia valutazioneent',
     '2assoc'=>'',
-    '2sponsors'=>'FireEye ed DXC Technology',
+    '2sponsors'=>'FireEye',
     '2title'=>'Valutazione del rischio informatico di IDC',
-    '2sub-title'=>'Sponsorizzato da FireEye ed DXC Technology',
+    '2sub-title'=>'Sponsorizzato da FireEye',
     '2landing'=>'
 <h2>La tua preparazione nei confronti del rischio informatico</h2>
 <p>Essendo la trasformazione digitale una colonna della strategia delle moderne aziende anche in presenza di una normativa sempre più stringente, la preparazione nei confronti del rischio informatico è ormai un elemento chiave di un\'infrastruttura digitale. Secondo le ricerche IDC, i reparti IT più flessibili utilizzano l\'approccio più maturo in termini di gestione del rischio informatico.
@@ -30,7 +30,7 @@ Completa lo strumento di valutazione del rischio informatico di IDC per ulterior
     'managedtxt'=>"Organizations at this stage in their cloud maturity have developed in-depth planning across different cloud products, solutions, and architectures. This includes go-to-market strategies and sophisticated sales enablement. Many have established a portfolio of cloud offerings and related services, mainly through dedicated cloud sales, implementation, and support functions. Typically, organizations at this stage of their maturity can execute across multiple cloud architectures and have identified areas of specialism. This also enables them to measure and assess recurring revenues, and most have established tools and methodologies to drive efficiencies in implementation. This ensures renewals and the optimization of solutions.",
     'optimised'=>'Optimised',
     'optimisedtxt'=>"For organizations at this stage in their maturity, cloud defines the investment and decision making in their future business direction. They are also fully committed to a recurring revenue business model. All aspects of the business are focused on a broad set of KPIs, from customer adoption and growth targets, to satisfaction levels and renewal rates. All systems and processes are designed to optimize cloud profitability and many have fully automated cloud processes to deliver economies of scale. Critically, there is an emphasis on selling solutions, as well as developing and maximizing internal IP.",
-    '2byreg'=>'Registrandovi con IDC, accettate i termini e le condizioni della nostra <a href="/privacy" target="_blank">informativa sulla privacy</a> e di quella di <a href="https://www.fireeye.com/company/privacy.html" target="_blank">FireEye</a> e di <a href="http://www.dxc.technology/privacy" target="_blank">DXC Technology</a>. Le informazioni raccolte saranno condivise con FireEye e DXC Technology a fini di marketing diretto.',
+    '2byreg'=>'Registrandovi con IDC, accettate i termini e le condizioni della nostra <a href="/privacy" target="_blank">informativa sulla privacy</a> e di quella di <a href="https://www.fireeye.com/company/privacy.html" target="_blank">FireEye</a>. Le informazioni raccolte saranno condivise con FireEye a fini di marketing diretto.',
   
     //general
     'next'=>'Seguente',

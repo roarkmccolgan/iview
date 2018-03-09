@@ -17,7 +17,7 @@
 			<tr>
 				<td style="width: 60%; padding-right: 2%; text-align: right">{{trans('general.'.session('product.id').'assoc')}}</td>
 				<td style="width: 38%;">
-					<img width="280" src="/css/{{ session('company.alias') }}/png/{{ session('company.alias') }}.png" alt="">
+					<img width="180" src="/css/{{ session('company.alias') }}/png/{{ session('company.alias') }}.png?id=1" alt="">
 				</td>
 			</tr>
 		</table>
