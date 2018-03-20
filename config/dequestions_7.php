@@ -38,7 +38,7 @@ return array(
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Wir halten die EU-DSGV schon heute ein und berichten anderen von unseren bewährtenPraktiken diesbezüglich oder verkaufen diese.',
+                                'label'=>'Wir halten die EU-DSGVO schon heute ein und berichten anderen von unseren bewährtenPraktiken diesbezüglich oder verkaufen diese.',
                                 'value'=>5,
                                 'checked'=>false
                             )
@@ -63,7 +63,7 @@ return array(
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Anwendungen identifizieren, die EU-DSGV-relevante Daten verwenden',
+                                'label'=>'Anwendungen identifizieren, die EU-DSGVO-relevante Daten verwenden',
                                 'value'=>0,
                                 'checked'=>false
                             ),
@@ -101,7 +101,7 @@ return array(
                 'questions' => array(
                     'q3' => array(
                         'type'=>'checkbox',
-                        'question'=>'Welche der folgenden Anforderungen der EU-DSGV sind für Ihre Organisation die größte Herausforderung? <span class="small">Wählen Sie drei Möglichkeiten aus!</span>',
+                        'question'=>'Welche der folgenden Anforderungen der EU-DSGVO sind für Ihre Organisation die größte Herausforderung? <span class="small">Wählen Sie drei Möglichkeiten aus!</span>',
                         'name'=>'q3',
                         'ignore' => true,
                         'required'=>3,
@@ -144,7 +144,7 @@ return array(
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Kundenprofile konform zur EU-DSGV entwickeln',
+                                'label'=>'Kundenprofile konform zur EU-DSGVO entwickeln',
                                 'value'=>0,
                                 'checked'=>false
                             ),
@@ -349,7 +349,7 @@ return array(
                 'questions' => array(
                     'q6' => array(
                         'type'=>'radio',
-                        'question'=>'Wie wird die EU-DSGV den Einsatz von Cloud-Services beeinflussen?',
+                        'question'=>'Wie wird die EU-DSGVO den Einsatz von Cloud-Services beeinflussen?',
                         'name'=>'q6',
                         'required' > 1,
                         'options'=>array(
@@ -392,7 +392,7 @@ return array(
                 'questions' => array(
                     'q7' => array(
                         'type'=>'button',
-                        'question'=>'Wer ist bei Ihnen für Ihr EU-DSGV-Umsetzungsprogramm verantwortlich? Gibt es eine funktionsübergreifende Compliance-Task-Force oder ein Steuerungsgremium, in dem Risikomanagement, IT und Interessenträger aus den Fachabteilungen vertreten sind?',
+                        'question'=>'Wer ist bei Ihnen für Ihr EU-DSGVO-Umsetzungsprogramm verantwortlich? Gibt es eine funktionsübergreifende Compliance-Task-Force oder ein Steuerungsgremium, in dem Risikomanagement, IT und Interessenträger aus den Fachabteilungen vertreten sind?',
                         'name'=>'q7',
                         'ignore' => true,
                         'options'=>array(
@@ -425,7 +425,7 @@ return array(
                 'questions' => array(
                     'q8' => array(
                         'type'=>'slider',
-                        'question'=>'Inwieweit machen Sie sich Sorgen über potentielle Konsequenzen der EU-DSGV? <span class="small">1= gar nicht besorgt, 5= sehr besorgt</span>',
+                        'question'=>'Inwieweit machen Sie sich Sorgen über potentielle Konsequenzen der EU-DSGVO? <span class="small">1= gar nicht besorgt, 5= sehr besorgt</span>',
                         'name'=>'q8',
                         'options'=>array(
                             array(
@@ -602,13 +602,13 @@ return array(
                 'questions' => array(
                     'q9' => array(
                         'type'=>'checkbox',
-                        'question'=>'Was hindert Sie daran, Ihre Datenmanagementumgebung vollständig EU-DSGV-konform zu gestalten? <span class="small">Wählen Sie drei Themen aus!</span>',
+                        'question'=>'Was hindert Sie daran, Ihre Datenmanagementumgebung vollständig EU-DSGVO-konform zu gestalten? <span class="small">Wählen Sie drei Themen aus!</span>',
                         'name'=>'q9',
                         'required'=>3,
                         'max'=>3,
                         'options'=>array(
                             array(
-                                'label'=>'Fehlendes Wissen über Konformität zur EU-DSGV',
+                                'label'=>'Fehlendes Wissen über Konformität zur EU-DSGVO',
                                 'value'=>2,
                                 'checked'=>false
                             ),
@@ -628,7 +628,7 @@ return array(
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Nicht ausreichende Zusammenarbeit zwischen dem EU-DSGV-Complianceteam und anderen Interessenträgern',
+                                'label'=>'Nicht ausreichende Zusammenarbeit zwischen dem EU-DSGVO-Complianceteam und anderen Interessenträgern',
                                 'value'=>4,
                                 'checked'=>false
                             ),
