@@ -34,9 +34,12 @@
     "@fortawesome/fontawesome": "^1.1.2",
     "@fortawesome/fontawesome-pro-regular": "^5.0.4",
     "@fortawesome/vue-fontawesome": "0.0.22",
+    "ajv": "^6.2.1",
+    "autotrack": "^2.4.1",
     "axios": "^0.17.1",
     "babel-polyfill": "^6.26.0",
     "vue": "^2.5.13",
+    "vue-analytics": "^5.9.1",
     "vue-cookies": "^1.5.4",
     "vue-flag-icon": "^1.0.6",
     "vue-slider-component": "^2.4.9"

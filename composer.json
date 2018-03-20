@@ -21,7 +21,9 @@
         "lynx39/lara-pdf-merger": "1.0.*",
         "guzzlehttp/guzzle": "^6.2",
         "fideloper/proxy": "^3.3",
-        "webpatser/laravel-uuid": "^2.0"
+        "webpatser/laravel-uuid": "^2.0",
+        "goat1000/svggraph": "^2.26",
+        "barryvdh/laravel-debugbar": "~2.4"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

@@ -174,11 +174,11 @@ return [
         Laracasts\Utilities\JavaScript\JavaScriptServiceProvider::class,
         LynX39\LaraPdfMerger\PdfMergerServiceProvider::class,
         Fideloper\Proxy\TrustedProxyServiceProvider::class,
+        Barryvdh\Debugbar\ServiceProvider::class,
         /*
          * My helper providers...
          */
         App\Providers\MacroServiceProvider::class,
-
 
     ],
 
@@ -236,6 +236,7 @@ return [
         'Lava' => Khill\Lavacharts\Laravel\LavachartsFacade::class,
         'PdfMerger' => LynX39\LaraPdfMerger\Facades\PdfMerger::class,
         'Uuid' => Webpatser\Uuid\Uuid::class,
+        'Debugbar' => Barryvdh\Debugbar\Facade::class,
     ],
 
     'tooldomain' => [

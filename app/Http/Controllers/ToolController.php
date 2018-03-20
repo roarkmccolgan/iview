@@ -719,13 +719,9 @@ public function postComplete(SubmitAssessmentsRequest $request)
 		'tweet' => config('baseline_'.session('product.id').'.overall.tweet') ? trans(session('product.alias').'.complete_tweet',['result'=>trans(session('product.alias').'.'.$this->howfit['overall']['rating'])]):false,
 		'class' => 'trans silverStone',
 		'script' => ['
-			ga(\'send\', {
-				hitType: \'event\',
-				eventCategory: \'Assessments\',
-				eventAction: \'download\',
-				eventLabel: \''.addslashes(session('product.title')).'\'
-			});
+			ga(\'send\', \'event\', \'Assessments\', \''.session('utm').'\');
 		'],
+		'utm' => session('utm'),
 		'quiz' => $this->quiz
 	);
         /*if(Cookie::has('quiz_progress')){

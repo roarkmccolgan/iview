@@ -11,6 +11,8 @@ use Illuminate\Support\Facades\View;
 use Lava;
 use PDF;
 
+require_once base_path('vendor/goat1000/svggraph/SVGGraph.php');
+
 class PdfController extends Controller
 {
     /**
@@ -684,10 +686,44 @@ class PdfController extends Controller
 
 			//overall
 			$rating = session('result.overall.rating');
+			$settings = array(
+				'pad_top'=>0,
+				'pad_right'=>0,
+				'pad_bottom'=>0,
+				'pad_left'=>0,
+			  'back_colour' => 'none',
+			  'stroke_colour' => 'none',
+			  'back_stroke_width' => 0, 'back_stroke_colour' => 'none',
+			  'show_axes' => false,
+			  'axis_stroke_width' => 1,
+			  'axis_colour' => '#efefef',
+			  'axis_text_colour' => '#999',
+			  'axis_overlap' => 2,
+			  'axis_font' => 'Frutiger Neue LT W1G', 'axis_font_size' => 12,
+			  'group_space' => 1,
+			  'grid_colour' => 'none',
+			  'label_colour' => '#000',
+			  
+			  'link_base' => '/',
+			  'link_target' => '_top',
+			  'minimum_grid_spacing' => 20
+			);
+			$graph = new \SVGGraph(570, 320,$settings);
+			 
+			$values = array(
+			 array('Geographic Region' => 30, 'Organizasion Size' => 50, 'Industry' => 40, 'Overall Cloud Adoption' => 25),
+			 array('Geographic Region' => 20, 'Organizasion Size' => 30, 'Industry' => 20, 'Overall Cloud Adoption' => 15)
+			);
+			 
+			$colours = array(array('#9E3D91'), array('#1A7ABB'));
+			$graph->colours = $colours;
+			$graph->Values($values);
+			$graph = $graph->Fetch('HorizontalGroupedBarGraph',false);
+
 			$customCopy.= trans(session('product.alias').'.overallintro',
 				[
 					'image'=>session('url').'/'.session('localeUrl').'images/tools/8/graph'.$rating.'.png',
-					'icon'=>session('url').'/'.session('localeUrl').'images/tools/8/overallicon.png'
+					'icon'=>session('url').'/'.session('localeUrl').'images/tools/8/overallicon.png',
 				]
 			);
 
@@ -695,6 +731,12 @@ class PdfController extends Controller
 				[
 					'position'=>trans(session('product.alias').'.'.$rating),
 					'stage'=>$overallNumber,
+				]
+			);
+
+			$customCopy.= trans(session('product.alias').'.overallgraph',
+				[
+					'graph'=>$graph,
 				]
 			);
 
@@ -932,7 +974,7 @@ class PdfController extends Controller
 
 		//return $vars['sections'];
 		//dd(session('result'));
-		//return view('tool.'.session('template').'.report.report',$vars);
+		return view('tool.'.session('template').'.report.report',$vars);
 		$margintop = 25;
 		if(null !== config('baseline_'.session('product.id').'.overall.report-settings.margin-top')){
 			$margintop = config('baseline_'.session('product.id').'.overall.report-settings.margin-top');

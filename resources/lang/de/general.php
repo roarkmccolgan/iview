@@ -153,7 +153,7 @@ Risiko ist ein wichtiger Treiber für Assessments und Prozesse zur Risikominderu
     '7landing'=>'
     <h3>Die Umsetzungsfrist der EU-DSGVO endet demnächst.<br/>Wie gut sind Sie vorbereitet?</h3>
     <p>
-        Die Umsetzungsfrist der EU-DSGV endet im Mai 2018. Sie ersetzt die gesamte bisherige nationale Datenschutz-Gesetzgebung der EU-Länder und kann Ihre Organisation in Hinblick auf Handhabung und Schutz persönlicher Daten betreffen.
+        Die Umsetzungsfrist der EU-DSGVO endet im Mai 2018. Sie ersetzt die gesamte bisherige nationale Datenschutz-Gesetzgebung der EU-Länder und kann Ihre Organisation in Hinblick auf Handhabung und Schutz persönlicher Daten betreffen.
     </p>
     <p>
         Dieses Tool von IDC bewertet den Stand der Vorbereitungen auf EU-DSGVO in Ihrem Unternehmen. Es enthält einige grundlegende Richtlinien zum Thema EU-DSGVO-Compliance und dazu, was diesbezüglich zu berücksichtigen ist.
@@ -161,19 +161,19 @@ Risiko ist ein wichtiger Treiber für Assessments und Prozesse zur Risikominderu
     '7startbut'=>'Beginnen Sie hier!',
 
     '7poor'=>'Stadium 1- Initiierung', //reactive
-    '7poortxt'=>"Wir danken Ihnen für das Ausfüllen dieser Selbsteinschätzung zur Vorbereitung auf die EU-DSGV!<br/>Dieser Report bietet Ihnen Empfelungen für Ihre nächsten Schritte auf dem Weg zur vollständigen Konformität zur EU-DSGV.",
+    '7poortxt'=>"Wir danken Ihnen für das Ausfüllen dieser Selbsteinschätzung zur Vorbereitung auf die EU-DSGVO!<br/>Dieser Report bietet Ihnen Empfelungen für Ihre nächsten Schritte auf dem Weg zur vollständigen Konformität zur EU-DSGVO.",
     '7poortweet' => "",
     '7standard'=>'Stadium 2 - Beschleunigung',
-    '7standardtxt'=>"Wir danken Ihnen für das Ausfüllen dieser Selbsteinschätzung zur Vorbereitung auf die EU-DSGV!<br/>Dieser Report bietet Ihnen Empfelungen für Ihre nächsten Schritte auf dem Weg zur vollständigen Konformität zur EU-DSGV.",
+    '7standardtxt'=>"Wir danken Ihnen für das Ausfüllen dieser Selbsteinschätzung zur Vorbereitung auf die EU-DSGVO!<br/>Dieser Report bietet Ihnen Empfelungen für Ihre nächsten Schritte auf dem Weg zur vollständigen Konformität zur EU-DSGVO.",
     '7standardtweet' => "",
     '7good'=>'Stadium 3 – Bereit zur Implementierung',
-    '7goodtxt'=>"Wir danken Ihnen für das Ausfüllen dieser Selbsteinschätzung zur Vorbereitung auf die EU-DSGV!<br/>Dieser Report bietet Ihnen Empfelungen für Ihre nächsten Schritte auf dem Weg zur vollständigen Konformität zur EU-DSGV.",
+    '7goodtxt'=>"Wir danken Ihnen für das Ausfüllen dieser Selbsteinschätzung zur Vorbereitung auf die EU-DSGVO!<br/>Dieser Report bietet Ihnen Empfelungen für Ihre nächsten Schritte auf dem Weg zur vollständigen Konformität zur EU-DSGVO.",
     '7goodtweet' => "",
     '7aspirational'=>'Stadium 4 - Optimierung',
-    '7aspirationaltxt'=>"Wir danken Ihnen für das Ausfüllen dieser Selbsteinschätzung zur Vorbereitung auf die EU-DSGV!<br/>Dieser Report bietet Ihnen Empfelungen für Ihre nächsten Schritte auf dem Weg zur vollständigen Konformität zur EU-DSGV.",
+    '7aspirationaltxt'=>"Wir danken Ihnen für das Ausfüllen dieser Selbsteinschätzung zur Vorbereitung auf die EU-DSGVO!<br/>Dieser Report bietet Ihnen Empfelungen für Ihre nächsten Schritte auf dem Weg zur vollständigen Konformität zur EU-DSGVO.",
     '7aspirationaltweet' => "",
     '7best'=>'Stadium 5 – Bereit zur Konsolidierung',
-    '7besttxt'=>"Wir danken Ihnen für das Ausfüllen dieser Selbsteinschätzung zur Vorbereitung auf die EU-DSGV!<br/>Dieser Report bietet Ihnen Empfelungen für Ihre nächsten Schritte auf dem Weg zur vollständigen Konformität zur EU-DSGV.",
+    '7besttxt'=>"Wir danken Ihnen für das Ausfüllen dieser Selbsteinschätzung zur Vorbereitung auf die EU-DSGVO!<br/>Dieser Report bietet Ihnen Empfelungen für Ihre nächsten Schritte auf dem Weg zur vollständigen Konformität zur EU-DSGVO.",
     '7besttweet' => "",
     '7send'=>'',
     '7fullreport'=>'Bitte füllen Sie das Formular unten aus und wir schicken Ihnen den vollständigen Bericht.',

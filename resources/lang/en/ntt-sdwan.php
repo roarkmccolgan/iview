@@ -94,6 +94,9 @@ return array(
             </p>
         </div>
     ',
+    /*'overallgraph'=>'
+    <div class="mx-auto mb-2" style="width: 140mm;">:graph</div>
+    ',*/
     'overalloutro' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">

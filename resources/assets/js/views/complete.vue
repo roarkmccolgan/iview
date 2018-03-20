@@ -130,21 +130,24 @@
 										<div class="inline-block relative w-full mb-2">
 											<select class="block appearance-none w-full bg-grey-lighter border text-grey-darker py-3 px-4 pr-8 rounded" :class="[errors.business ? 'border-red' : '']" id="business" name="extra[industry]" @blur="hasError">
 												<option value="">Please Select</option>
-												<option value="Banking and other financial services">Banking and other financial services</option>
+												<option value="Banking &amp; other financial services">Banking &amp; other financial services</option>
 												<option value="Insurance">Insurance</option>
-												<option value="Retail Trade">Retail Trade</option>
-												<option value="Wholesale Trade">Wholesale Trade</option>
-												<option value="Business or professional">Business or professional Services </option>
-												<option value="Software and IT Services">Software and IT Services</option>
-												<option value="Telecommunications">Telecommunications services</option>
-												<option value="Media">Media: Broadcast, printing and publishing &amp; other comm.</option>
+												<option value="Retail trade">Retail trade</option>
+												<option value="Wholesale trade">Wholesale trade</option>
+												<option value="Business/Professional services">Business/Professional services</option>
+												<option value="Software and IT services">Software and IT services</option>
+												<option value="Media">Media</option>
 												<option value="Manufacturing">Manufacturing</option>
 												<option value="Transportation">Transportation</option>
-												<option value="Utilities">Utilities</option>
-												<option value="Oil and Gas">Oil and Gas</option>
-												<option value="Government">Government</option>
-												<option value="Private Education">Private Education</option>
-												<option value="Private Health">Private Health Care Services providers</option>
+												<option value="Utilities &amp; Oil/Gas">Utilities &amp; Oil/Gas</option>
+												<option value="Private education">Private education</option>
+												<option value="Private healthcare service providers">Private healthcare service providers</option>
+												<option value="Banking, Insurance, Other FSI">Banking, Insurance, Other FSI</option>
+												<option value="Retail/Wholesale">Retail/Wholesale</option>
+												<option value="Business&amp;IT Services &amp; Media">Business&amp;IT Services &amp; Media</option>
+												<option value="Manufacturing">Manufacturing</option>
+												<option value="Transportation &amp; Energy">Transportation &amp; Energy</option>
+												<option value="Private Education &amp; Healtcare">Private Education &amp; Healtcare</option>
 											</select>
 											<div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-darker">
 												<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
