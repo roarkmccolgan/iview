@@ -40,8 +40,8 @@
 	</div>
 	<div class="flex-grow">
 		<div class="container mx-auto bg-white border-t border-b mt-6 mb-4 py-4 px-4 sm:border sm:rounded shadow text-grey-darker">
-			<h1 class="font-light leading-tight">NTT Communications Next Generation WAN Advisor</h1>
-			<h3 class="font-light leading-tight">With Research and Analysis by IDC</h3>
+			<h1 class="font-light leading-tight">{{ $title }}</h1>
+			<h3 class="font-light leading-tight">{{ $sub_title }}</h3>
 		</div>
 		<div class="container mx-auto bg-white border-t border-b mt-6 p-8 sm:border sm:rounded shadow text-grey-darker">
 			<div class="flex flex-wrap justify-center">
@@ -51,10 +51,9 @@
 				<div class="w-full sm:w-1/2">
 					<div class="sm:ml-8">
 						<div>
-							<h2 class="font-light mb-4 text-ntt-blue leading-tight">Thank you for your time!</h2>
+							<h2 class="font-light mb-4 text-ntt-blue leading-tight">{{ $heading }}</h2>
 							<p class="mb-2">
-								We have received your information. You will be receiving an email with a link to your custom report shortly.<br/><br/>
-								Please check in your junk folder if you have not received the email within the next 5 minutes<br/><br/>
+								{!! $body !!}
 							</p>
 						</div>
 					</div>

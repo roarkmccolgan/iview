@@ -98,7 +98,8 @@ return array(
     ),
     'infrastructure' => array(
         'baseline' => 8.90,
-        'baseline' => 7.5,
+        'baseline' => 2.5,
+        
         'baseline_stage1' => 2.5,
         'baseline_stage2' => 7.5,
         'baseline_stage3' => 13.5,
@@ -152,7 +153,7 @@ return array(
     ),
     'intelligence' => array(
         'baseline' => 9.28,
-        'baseline' => 2.5,
+        'baseline' => 7.5,
         
         'baseline_stage1' => 2.5,
         'baseline_stage2' => 7.5,

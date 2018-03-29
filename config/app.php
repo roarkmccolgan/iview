@@ -175,6 +175,7 @@ return [
         LynX39\LaraPdfMerger\PdfMergerServiceProvider::class,
         Fideloper\Proxy\TrustedProxyServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
+        MartinLindhe\VueInternationalizationGenerator\GeneratorProvider::class,
         /*
          * My helper providers...
          */

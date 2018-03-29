@@ -18,6 +18,7 @@ Vue.use(VueAnalytics, {
 
 new Vue({
 	el: '#app',
+	i18n,
 	router: router,
 	data () {
 		return {

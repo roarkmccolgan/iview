@@ -820,7 +820,7 @@ class PdfController extends Controller
 			}
 
 			$values = array(
-			 	array('Infrastructure Performance' => $base['baseline_'.session('result.overall.rating')]), //baseline
+			 	array('Infrastructure Performance' => $base['baseline']), //baseline
 			 	array('Infrastructure Performance' => $user_score) //user
 			);
 
@@ -867,7 +867,7 @@ class PdfController extends Controller
 			}
 
 			$values = array(
-			 	array('intelligence Performance' => $base['baseline_'.session('result.overall.rating')]), //baseline
+			 	array('intelligence Performance' => $base['baseline']), //baseline
 			 	array('intelligence Performance' => $user_score) //user
 			);
 
@@ -915,7 +915,7 @@ class PdfController extends Controller
 			}
 
 			$values = array(
-			 	array('operations Performance' => $base['baseline_'.session('result.overall.rating')]), //baseline
+			 	array('operations Performance' => $base['baseline']), //baseline
 			 	array('operations Performance' => $user_score) //user
 			);
 

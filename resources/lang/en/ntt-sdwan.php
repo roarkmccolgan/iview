@@ -1,28 +1,47 @@
 <?php
 //NTT
 return array(
-    'title' => 'NTT Communications Next Generation WAN Advisor',
-    'sub-title' => 'With Research and Analysis by IDC',
+    'elqFormName'=>'',
+    'developedby'=>'Developed by',
+    'sponsoredby'=>'Sponsored by',
+    'restart'=>'Restart Assessment',
+    'assoc'=>'In association with',
+    'sponsors'=>'Symantec',
+    'title'=>'NTT Communications Next Generation WAN Advisor',
+    'sub-title'=>'With Research and Analysis by IDC',
+    'landing'=>'
+        <h2 class="font-light mb-4 text-ntt-blue leading-tight">Is your Network Ready for the Digital Future?</h2>
+        <p class="mb-2">
+            IDC, a global leading provider of technology market research, has developed the Next Generation WAN Advisor, sponsored by NTT Communications, to help organizations assess the state of their WAN as they embrace digital transformation.
+        </p>
+        <p class="mb-4">
+            This self-assessment tool is backed up by independent end-user research and IDC\'s in depth understanding of this market. Upon completion of a short survey (10 minutes) you will receive a custom report that benchmarks your organization\'s WAN and provides you with essential and tailored guidance to help you prepare for the requirements of tomorrow and plot your course to a Next Generation WAN.
+        </p>',
+    'startbut'=>'Start Assessment',
+    
+    'send'=>'We can send you the full results directly to your mailbox',
+    'register'=>'Register now to receive your personalized report',
+    'provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
+    'byreg'=>'By registering with IDC, you accept our <a href="https://ntt.idcready.net/privacy" target="_blank">Privacy Policy</a> and NTT Communications <a href="http://www.eu.ntt.com/en/Footer/Privacy_Statement" target="_blank">Privacy Policy</a>.',
+    'wait'=>'While you\'re waiting why not tweet your results and see how your colleagues measure up?',
+    'twitterlink'=>'https://twitter.com/home?status=Is%20your%20business%20GDPR%20ready?%20http%3A//bit.ly/2AwihN4%20%23Symantec',
+    'facebooklink'=>'https://www.facebook.com/sharer/sharer.php?u=http%3A//bit.ly/2AwihN4',
+    'linkedinlink'=>'https://www.linkedin.com/shareArticle?mini=true&url=http%3A//bit.ly/2AwihN4&title=Symantec%20and%20IDC%20GDPR%20Assessment&summary=Is%20your%20business%20GDPR%20ready?&source=',
+
     'stage1' => 'WAN Follower',
     'stage2' => 'WAN Generalist',
     'stage3' => 'WAN Leader',
     'finishtxt' => '
-        <h2 class="font-light leading-tight mb-4">Thank you for completing the network maturity assessment.</h2>
-        <h4 class="font-light leading-tight mb-2">How you scored</h4>
-        <img class="max-w-full" src="/images/tools/8/graph2.png" alt="">
-        <p class="font-semibold mb-4">Please tell us a little about yourself and immediately receive your personalized report including:</p>
+        <h2 class="font-light leading-tight mb-4">Thank you for completing the NTT Communications Next Generation WAN Assessment</h2>
+        <h3 class="leading-tight mb-2">How you scored</h3>
+        <img class="max-w-full" src=":image" alt="">
+        <p class="font-semibold mb-4 mt-4">Please tell us a little about yourself and immediately receive your personalized report including:</p>
         <ul class="mb-4">
             <li>How you compare against your peers based on industry, organizational size, and geographic region</li>
-            <li>Where to focus your network readiness efforts with essential guidance</li>
+            <li>Essential guidance on where to focus your network efforts</li>
             <li>Why the associated business benefits will make this a business priority today</li>
         </ul>
     ',
-    'poor'=>'WAN Follower', //reactive
-    'poortxt'=>'Thank you',
-    'standard'=>'WAN Generalist',
-    'standardtxt'=>"Thank you for completing IDC's GDPR Assessment.<br/>This report will provide you with recommendations about the next stages of your journey to GDPR compliance.",
-    'good'=>'WAN Leader',
-    'goodtxt'=>"Thank you for completing IDC's GDPR Assessment.<br/>This report will provide you with recommendations about the next stages of your journey to GDPR compliance.",
     'complete_thankyou' => 'Thank you :Fname,',
     'complete_body' => '
         Your custom report will arrive in your inbox soon.<br/>
@@ -74,21 +93,21 @@ return array(
     ',
     'overallstage1'=>'
         <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2 text-ntt-blue mt-4 font-bold">
+            <p class="mb-2 text-ntt-blue mt-4 font-bold">
                 Based on your responses to IDC\'s Next Generation WAN Advisor, your organization has been positioned as a :position (Level :stage of 3), which means your organization is generally lagging behind its peers.
             </p>
         </div>
     ',
     'overallstage2'=>'
         <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2 text-ntt-blue mt-4 font-bold">
+            <p class="mb-2 text-ntt-blue mt-4 font-bold">
                 Based on your responses to the IDC Next-Generation WAN Advisor, your organization has been positioned as a WAN Follower (Level 1 of 3), which means your organization is generally lagging behind its peers.
             </p>
         </div>
     ',
     'overallstage3'=>'
         <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2 text-ntt-blue mt-4 font-bold">
+            <p class="mb-2 text-ntt-blue mt-4 font-bold">
                 Based on your responses to IDC\'s Next-Generation WAN Advisor, your organization has been positioned as a WAN Generalist (Level 2 of 3), which means your organization is generally inline with its peers.
             </p>
         </div>
@@ -98,7 +117,7 @@ return array(
     ',
     'overalloutro' => '
         <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
+            <p class="mb-2">
                 These results indicate that there is plenty of room for improvement for most organizations when it comes to their WAN. To turn your WAN into a driver of digital transformation, you should aspire to outperform your peers and progress on the maturity ladder.
             </p>
         </div>

@@ -714,6 +714,8 @@ public function postComplete(SubmitAssessmentsRequest $request)
         
 	$vars = array(
 		'pagetitle' => session('product.title'),
+		'title' => session('product.title'),
+		'sub_title' => session('product.sub_title'),
 		'heading' => trans(session('product.alias').'.complete_thankyou',['fname'=>$request->input('fname')]),
 		'body' => trans(session('product.alias').'.complete_body'),
 		'tweet' => config('baseline_'.session('product.id').'.overall.tweet') ? trans(session('product.alias').'.complete_tweet',['result'=>trans(session('product.alias').'.'.$this->howfit['overall']['rating'])]):false,

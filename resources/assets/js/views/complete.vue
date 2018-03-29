@@ -6,17 +6,8 @@
 		</div>
 		<div class="container mx-auto bg-white border-t border-b mt-6 p-8 sm:border sm:rounded shadow text-grey-darker">
 			<div class="flex flex-wrap justify-center">
-				<div class="w-full sm:w-1/2 relative"> 
-					<!-- ntt-sdwan.finishtxt -->
-					<h2 class="font-light leading-tight mb-4">Thank you for completing the NTT Communications Next Generation WAN Assessment</h2>
-					<h3 class="leading-tight mb-2">How you scored</h3>
-					<img class="max-w-full" :src="'/images/tools/' + assessment.tool.id + '/graph' + rating  + '.png'" alt="">
-					<p class="font-semibold mb-4 mt-4">Please tell us a little about yourself and immediately receive your personalized report including:</p>
-					<ul class="mb-4">
-						<li>How you compare against your peers based on industry, organizational size, and geographic region</li>
-						<li>Essential guidance on where to focus your network efforts</li>
-						<li>Why the associated business benefits will make this a business priority today</li>
-					</ul>
+				<div class="w-full sm:w-1/2 relative" v-html="$t('ntt-sdwan.finishtxt', { image: '/images/tools/' + assessment.tool.id + '/graph' + rating  + '.png'})">
+					
 				</div>
 				<div class="w-full sm:w-1/2">
 					<div class="sm:ml-8">
@@ -25,71 +16,71 @@
 							<input type="hidden" name="_token" :value="getToken">
 							<h2 class="flex justify-start p-2 bg-ntt-blue text-white font-light leading-tight">
 								<font-awesome-icon class="mr-2" :icon="icons.faEnvelope"></font-awesome-icon>
-								<div>Register now to receive your personalized report</div>
+								<div>{{ $t('ntt-sdwan.register') }}</div>
 							</h2>
 							<div class="flex flex-wrap bg-white shadow-md rounded rounded-t-none px-8 py-8 pb-2 mb-4">
 								<div class="mb-6 sm:w-1/2">
 									<div class="mr-2">
 										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="fname">
-											First Name
+											{{ $t('general.fname') }}
 										</label>
 										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-2" :class="[errors.fname ? 'border-red' : '']" type="text" id="fname" name="fname" @blur="hasError">
-										<p class="text-red text-xs italic" v-show="errors.fname">Please fill out this field.</p>
+										<p class="text-red text-xs italic" v-show="errors.fname">{{ $t('general.errorFname') }}</p>
 									</div>
 								</div>
 								<div class="mb-6 sm:w-1/2">
 									<div class="ml-2">
 										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="sname">
-											Last Name
+											{{ $t('general.sname') }}
 										</label>
 										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-2" :class="[errors.sname ? 'border-red' : '']" id="sname" name="sname" type="text" @blur="hasError">
-										<p class="text-red text-xs italic" v-show="errors.sname">Please fill out this field.</p>
+										<p class="text-red text-xs italic" v-show="errors.sname">{{ $t('general.errorSname') }}</p>
 									</div>
 								</div>
 								<div class="mb-6 sm:w-1/2">
 									<div class="mr-2">
 										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="email">
-											Email
+											{{ $t('general.email') }}
 										</label>
 										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-2" :class="[errors.email ? 'border-red' : '']" id="email" name="email" type="email" @blur="hasError">
-										<p class="text-red text-xs italic" v-show="errors.email">Please fill out this field.</p>
+										<p class="text-red text-xs italic" v-show="errors.email">{{ $t('general.errorEmail') }}</p>
 									</div>
 								</div>
 								<div class="mb-6 sm:w-1/2">
 									<div class="ml-2">
 										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="tel">
-											Phone
+											{{ $t('general.phone') }}
 										</label>
 										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-2" :class="[errors.tel ? 'border-red' : '']" id="tel" name="phone" type="tel" @blur="hasError">
-										<p class="text-red text-xs italic" v-show="errors.tel">Please provide a valid phone number.</p>
+										<p class="text-red text-xs italic" v-show="errors.tel">{{ $t('general.errorPhone') }}</p>
 									</div>
 								</div>
 								<div class="mb-6 sm:w-1/2">
 									<div class="mr-2">
 										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="position">
-											Job Title
+											{{ $t('general.title') }}
 										</label>
 										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-2" :class="[errors.position ? 'border-red' : '']" id="position" name="title" type="text" @blur="hasError">
-										<p class="text-red text-xs italic" v-show="errors.position">Please fill out this field.</p>
+										<p class="text-red text-xs italic" v-show="errors.position">{{ $t('general.errorTitle') }}</p>
 									</div>
 								</div>
 								<div class="mb-6 sm:w-1/2">
 									<div class="ml-2">
 										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="company">
-											Company
+											{{ $t('general.company') }}
 										</label>
 										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-2" :class="[errors.company ? 'border-red' : '']" id="company" name="company" type="text" @blur="hasError">
-										<p class="text-red text-xs italic" v-show="errors.company">Please fill out this field.</p>
+										<p class="text-red text-xs italic" v-show="errors.company">{{ $t('general.errorCompany') }}</p>
 									</div>
 								</div>
 								<div class="mb-6 sm:w-1/2">
 									<div class="mr-2">
 										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="company_size">
-											Number of employees
+											{{ $t('general.employees') }}
 										</label>
 										<div class="inline-block relative w-full mb-2">
 											<select class="block appearance-none w-full bg-grey-lighter border text-grey-darker py-3 px-4 pr-8 rounded" :class="[errors.size ? 'border-red' : '']" id="company_size" name="extra[company_size]" @blur="hasError">
-												<option value="">Please Select</option>
+												<option value="">{{ $t('general.pleaseselect') }}</option>
 												<option value="Fewer than 500">Fewer than 500 </option>
 												<option value="500 to 999">500 to 999</option>
 												<option value="1,000 to 4,999">1,000 to 4,999</option>
@@ -99,17 +90,17 @@
 												<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
 											</div>
 										</div>
-										<p class="text-red text-xs italic" v-show="errors.company_size">Please select an option.</p>
+										<p class="text-red text-xs italic" v-show="errors.company_size">{{ $t('general.errorEmployees') }}</p>
 									</div>
 								</div>
 								<div class="mb-6 sm:w-1/2">
 									<div class="ml-2">
 										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="turnover">
-											Turnover
+											{{ $t('general.turnover') }}
 										</label>
 										<div class="inline-block relative w-full mb-2">
 											<select class="block appearance-none w-full bg-grey-lighter border text-grey-darker py-3 px-4 pr-8 rounded" :class="[errors.turnover ? 'border-red' : '']" id="turnover" name="extra[turnover]" @blur="hasError">
-												<option value="">Please Select</option>
+												<option value="">{{ $t('general.pleaseselect') }}</option>
 												<option value="Less than €100 million">Less than €100 million</option>
 												<option value="€100-250 million">€100-250 million</option>
 												<option value="€250 million - €1 billion">€250 million - €1 billion</option>
@@ -119,41 +110,41 @@
 												<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
 											</div>
 										</div>
-										<p class="text-red text-xs italic" v-show="errors.turnover">Please select an option.</p>
+										<p class="text-red text-xs italic" v-show="errors.turnover">{{ $t('general.errorTurnover') }}</p>
 									</div>
 								</div>
 								<div class="mb-6 sm:w-1/2">
 									<div class="mr-2">
 										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="business">
-											Industry
+											{{ $t('general.industry') }}
 										</label>
 										<div class="inline-block relative w-full mb-2">
 											<select class="block appearance-none w-full bg-grey-lighter border text-grey-darker py-3 px-4 pr-8 rounded" :class="[errors.business ? 'border-red' : '']" id="business" name="extra[industry]" @blur="hasError">
-												<option value="">Please Select</option>
-												<option value="Banking &amp; other financial services">Banking &amp; other financial services</option>
-												<option value="Insurance">Insurance</option>
-												<option value="Retail trade">Retail trade</option>
-												<option value="Wholesale trade">Wholesale trade</option>
-												<option value="Business/Professional services">Business/Professional services</option>
-												<option value="Software and IT services">Software and IT services</option>
-												<option value="Media">Media</option>
-												<option value="Manufacturing">Manufacturing</option>
-												<option value="Transportation">Transportation</option>
-												<option value="Utilities &amp; Oil/Gas">Utilities &amp; Oil/Gas</option>
-												<option value="Private education">Private education</option>
-												<option value="Private healthcare service providers">Private healthcare service providers</option>
+												<option value="">{{ $t('general.pleaseselect') }}</option>
+												<option value="Banking &amp; other financial services">{{ $t('general.banking')}}</option>
+												<option value="Insurance">{{ $t('general.insurance')}}</option>
+												<option value="Retail trade">{{ $t('general.retail')}}</option>
+												<option value="Wholesale trade">{{ $t('general.wholesale')}}</option>
+												<option value="Business/Professional services">{{ $t('general.professional')}}</option>
+												<option value="Software and IT services">{{ $t('general.software')}}</option>
+												<option value="Media">{{ $t('general.media')}}</option>
+												<option value="Manufacturing">{{ $t('general.manufacturing')}}</option>
+												<option value="Transportation">{{ $t('general.transportation')}}</option>
+												<option value="Utilities &amp; Oil/Gas">{{ $t('general.utilities')}}</option>
+												<option value="Private education">{{ $t('general.education')}}</option>
+												<option value="Private healthcare service providers">{{ $t('general.healthcare')}}</option>
 											</select>
 											<div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-darker">
 												<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
 											</div>
 										</div>
-										<p class="text-red text-xs italic" v-show="errors.business">Please select an option.</p>
+										<p class="text-red text-xs italic" v-show="errors.business">{{ $t('general.errorIndustry') }}</p>
 									</div>
 								</div>
 								<div class="mb-6 sm:w-1/2">
 									<div class="ml-2">
 										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="country">
-											Country
+											{{ $t('general.country') }}
 										</label>
 										<div class="inline-block relative w-full mb-2">
 											<select class="block appearance-none w-full bg-grey-lighter border text-grey-darker py-3 px-4 pr-8 rounded" :class="[errors.country ? 'border-red' : '']" id="country" name="country" @blur="hasError">
@@ -163,7 +154,7 @@
 												<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
 											</div>
 										</div>
-										<p class="text-red text-xs italic" v-show="errors.country">Please select an option.</p>
+										<p class="text-red text-xs italic" v-show="errors.country">{{ $t('general.errorCountry') }}</p>
 									</div>
 								</div>
 								<div class="mb-6 w-full">
@@ -174,15 +165,15 @@
 													<font-awesome-icon :icon="icons.faSquare" v-if="!terms" />
 													<font-awesome-icon :icon="icons.faCheckSquare" v-else />
 											</div>
-											<div class="flex-grow">
-												By registering with IDC, you accept our <a href="https://ntt.idcready.net/privacy" target="_blank">Privacy Policy</a> and NTT Communications <a href="http://www.eu.ntt.com/en/Footer/Privacy_Statement" target="_blank">Privacy Policy</a>.
+											<div class="flex-grow" v-html="$t('ntt-sdwan.byreg')">
+												
 											</div>
 										</div>
-										<p class="text-red text-xs italic" v-show="errors.terms">Please accept terms and conditions.</p>
+										<p class="text-red text-xs italic" v-show="errors.terms">{{ $t('general.errorAccept') }}</p>
 									</label>
 								</div>
 								<div class="mb-6 w-full">
-									<button type="submit" class="text-center block bg-ntt-blue hover:text-ntt-gold shadow-md text-white py-4 px-6 rounded no-underline"><font-awesome-icon class="ml-2" :icon="icons.faEnvelope"></font-awesome-icon> Send</button>
+									<button type="submit" class="text-center block bg-ntt-blue hover:text-ntt-gold shadow-md text-white py-4 px-6 rounded no-underline"><font-awesome-icon class="ml-2" :icon="icons.faEnvelope"></font-awesome-icon>{{ $t('general.send') }}</button>
 								</div>
 							</div>
 						</form>

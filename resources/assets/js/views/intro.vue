@@ -14,17 +14,10 @@
 				</div>
 				<div class="w-full sm:w-1/2">
 					<div class="sm:ml-8">
-						<div>
-							<h2 class="font-light mb-4 text-ntt-blue leading-tight">Is your Network Ready for the Digital Future?</h2>
-							<p class="mb-2">
-								IDC, a global leading provider of technology market research, has developed the Next Generation WAN Advisor, sponsored by NTT Communications, to help organizations assess the state of their WAN as they embrace digital transformation.
-							</p>
-							<p class="mb-4">
-								This self-assessment tool is backed up by independent end-user research and IDC's in depth understanding of this market. Upon completion of a short survey (10 minutes) you will receive a custom report that benchmarks your organization's WAN and provides you with essential and tailored guidance to help you prepare for the requirements of tomorrow and plot your course to a Next Generation WAN.
-							</p>
+						<div v-html="$t('ntt-sdwan.landing')">
 						</div>
 						<div class="mt-8 text-center">
-							<router-link class="hidden sm:inline-block bg-ntt-blue hover:text-ntt-gold shadow-md text-white py-4 px-6 rounded no-underline" :to="'/questions/1'">Start Assessment <font-awesome-icon class="ml-2" :icon="icons.faArrowRight" /></router-link>
+							<router-link class="hidden sm:inline-block bg-ntt-blue hover:text-ntt-gold shadow-md text-white py-4 px-6 rounded no-underline" :to="'/questions/1'">{{ $t('ntt-sdwan.startbut') }} <font-awesome-icon class="ml-2" :icon="icons.faArrowRight" /></router-link>
 						</div>
 					</div>
 				</div>

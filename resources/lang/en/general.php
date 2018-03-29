@@ -275,7 +275,6 @@ Complete the IDC Cyber Risk Assessment Tool to find out more about how ready you
     '4assoc'=>'In association with',
     '4sponsors'=>'HP Inc.',
     '4title'=>'IDC\'s GDPR Assessment: Endpoint Readiness',
-    '4sub-title'=>false,
     '4landing'=>'<h2>The GDPR Deadline is Coming<br/>Are your devices ready for GDPR compliance?</h2>
     <p>
         The EU General Data Protection Regulation (GDPR) deadline is approaching. It will supersede all current national data protection laws in the EU and can impact your organization in terms of handling and protecting personal data.
@@ -531,17 +530,17 @@ Risk is a key driver for assessment and mitigation processes.",
     '8restart'=>'Restart Assessment',
     '8assoc'=>'In association with',
     '8sponsors'=>'Symantec',
-    '8title'=>'NTT SDWAN Survey by IDC',
-    '8sub-title'=>'Is your Network Ready for the Digital Future?',
+    '8title'=>'NTT Communications Next Generation WAN Advisor',
+    '8sub-title'=>'With Research and Analysis by IDC',
     '8landing'=>'
         <h2 class="font-light mb-4 text-ntt-blue leading-tight">Is your Network Ready for the Digital Future?</h2>
         <p class="mb-2">
-            IDC, a global leading provider of technology market research, has developed the Next Generation WAN Advisor to help organizations assess the state of their WAN as they embrace digital transformation. 
+            IDC, a global leading provider of technology market research, has developed the Next Generation WAN Advisor, sponsored by NTT Communications, to help organizations assess the state of their WAN as they embrace digital transformation.
         </p>
         <p class="mb-4">
-            This self-assessment tool is backed up by independent end-user research and IDC\'s in depth understanding of this market. Upon completion of a short survey (5-10 minutes) you will receive a custom report that benchmarks your organization\'s WAN and provides you with essential and tailored guidance to help you prepare for the requirements of tomorrow and plot your course to a Next Generation WAN.
+            This self-assessment tool is backed up by independent end-user research and IDC\'s in depth understanding of this market. Upon completion of a short survey (10 minutes) you will receive a custom report that benchmarks your organization\'s WAN and provides you with essential and tailored guidance to help you prepare for the requirements of tomorrow and plot your course to a Next Generation WAN.
         </p>',
-    '8startbut'=>'Start Here',
+    '8startbut'=>'Start Assessment',
     '8landing'=>'
         <h2 class="font-light leading-tight mb-4">Thank you for completing the network maturity assessment.</h2>
         <h4 class="font-light leading-tight mb-2">How you scored</h4>
@@ -569,9 +568,23 @@ Risk is a key driver for assessment and mitigation processes.",
     '8linkedinlink'=>'https://www.linkedin.com/shareArticle?mini=true&url=http%3A//bit.ly/2AwihN4&title=Symantec%20and%20IDC%20GDPR%20Assessment&summary=Is%20your%20business%20GDPR%20ready?&source=',
 
     //general
+    'banking' => 'Banking &amp; other financial services',
+    'insurance' => 'Insurance',
+    'retail' => 'Retail trade',
+    'wholesale' => 'Wholesale trade',
+    'professional' => 'Business/Professional services',
+    'software' => 'Software and IT services',
+    'media' => 'Media',
+    'manufacturing' => 'Manufacturing',
+    'transportation' => 'Transportation',
+    'utilities' => 'Utilities &amp; Oil/Gas',
+    'education' => 'Private education',
+    'healthcare' => 'Private healthcare service providers',
+    'pleaseselect' => 'Please Select',
     'disclaimer' => 'Disclaimer',
     'allrights' => 'All Rights Reserved',
     'introduction' => 'Introduction',
+    'send'=>'Send',
     'next'=>'Next',
     'back'=>'Back',
     'continue'=>'Continue with the Assessment',
@@ -585,6 +598,9 @@ Risk is a key driver for assessment and mitigation processes.",
     'sname'=>'Last Name',
     'email'=>'Email Address',
     'company'=>'Company Name',
+    'employees'=>'Number of employees',
+    'turnover'=>'Turnover',
+    'industry'=>'Industry',
     'title'=>'Job Title',
     'relationship'=>'Relationship with Red Hat',
     'rel1'=>'CCSP',
@@ -623,6 +639,9 @@ Risk is a key driver for assessment and mitigation processes.",
     'errorSname'=>'Enter your surname',
     'errorEmail'=>'Enter a valid email address',
     'errorCompany'=>'Enter your company name',
+    'errorEmployees'=>'Please select an option.',
+    'errorTurnover'=>'Please select an option.',
+    'errorIndustry'=>'Please select an option.',
     'errorTitle'=>'Enter your title',
     'errorPhone'=>'Enter your phone number',
     'errorCountry'=>'Please select your country',
