@@ -20,8 +20,8 @@
 
 	ga('create', 'UA-156016-34', 'auto');
 	ga('send', 'pageview');
-	var utm = {{utm}};
-	ga('send', 'event', "lead", "generated", utm);
+	var utm = {{$utm}};
+	ga('send', 'event', "lead", "generated", {{$utm}});
 
 </script>
 @endif

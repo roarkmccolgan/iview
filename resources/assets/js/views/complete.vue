@@ -142,12 +142,6 @@
 												<option value="Utilities &amp; Oil/Gas">Utilities &amp; Oil/Gas</option>
 												<option value="Private education">Private education</option>
 												<option value="Private healthcare service providers">Private healthcare service providers</option>
-												<option value="Banking, Insurance, Other FSI">Banking, Insurance, Other FSI</option>
-												<option value="Retail/Wholesale">Retail/Wholesale</option>
-												<option value="Business&amp;IT Services &amp; Media">Business&amp;IT Services &amp; Media</option>
-												<option value="Manufacturing">Manufacturing</option>
-												<option value="Transportation &amp; Energy">Transportation &amp; Energy</option>
-												<option value="Private Education &amp; Healtcare">Private Education &amp; Healtcare</option>
 											</select>
 											<div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-darker">
 												<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>

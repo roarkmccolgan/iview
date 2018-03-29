@@ -8,6 +8,8 @@ use Illuminate\Support\Facades\Lang;
 use Lava;
 use PDF;
 
+require_once base_path('vendor/goat1000/svggraph/SVGGraph.php');
+
 trait GenerateReportTrait {
 
 	public function wkhtml($assessment_id, $name)
@@ -669,6 +671,7 @@ trait GenerateReportTrait {
 			$vars['introduction'] = trans(session('product.alias').'.introduction',
 				[
 					'result'=>trans(session('product.alias').'.'.session('result.overall.rating')),
+					'image'=>asset('images/tools/8/descriptions.png'),
 				]
 			);
 
@@ -676,10 +679,94 @@ trait GenerateReportTrait {
 
 			//overall
 			$rating = session('result.overall.rating');
+			$settings = array(
+				'back_image'=>asset('images/tools/8/comparisonbg.png'),
+				'back_image_width'=> 570,
+				'back_image_height'=> 320,
+				'pad_top'=>45,
+				'pad_right'=>0,
+				'pad_bottom'=>23,
+				'pad_left'=>114,
+				'back_colour' => 'none',
+				'stroke_colour' => 'none',
+				'back_stroke_width' => 0, 'back_stroke_colour' => 'none',
+				'show_axes' => false,
+				'axis_max_h' => 45,
+				'axis_min_h' => 0,
+				'axis_stroke_width' => 1,
+				'axis_colour' => '#efefef',
+				'axis_text_colour' => '#999',
+				'axis_overlap' => 2,
+				'axis_font' => 'Frutiger Neue LT W1G', 'axis_font_size' => 12,
+				'group_space' => 1,
+				'grid_colour' => 'none',
+				'show_data_labels' => false,
+				'data_label_colour' => 'white',
+				'data_label_font_size' => 14,
+				'data_label_outline_thickness' => 1,
+				'data_label_back_colour' => 'rgba(0,0,0,0.2)',
+				'data_label_space' => '6',
+				'label_colour' => '#000',
+
+				'link_base' => '/',
+				'link_target' => '_top',
+				'minimum_grid_spacing' => 20
+			);
+			$graph = new \SVGGraph(570, 320,$settings);
+			$base = config('baseline_'.session('product.id').'.overall');
+
+			$geographic_base = $base['baseline'];
+			$countries = ['en'=>'United Kingdom','fr'=>'France','de'=>'Germany'];
+			if(collect($countries)->contains(session('user.country'))){
+				$geographic_base = $base['benchmark-country-'.array_search(session('user.country'), $countries)];
+			}
+
+			$organisation_base = $base['baseline'];
+			$orgsizes = ['500-to-999'=>'500 to 999','1000-to-4999'=>'1,000 to 4,999','5000+'=>'5,000 or more'];
+			if(collect($orgsizes)->contains(session('user.extra.company_size'))){
+				$organisation_base = $base['benchmark-size-'.array_search(session('user.extra.company_size'), $orgsizes)];
+			}
+
+			$vertical_base = $base['baseline'];
+			$verticals = [
+				'banking-other-financial-services'=>'banking &amp; other financial services',
+				'insurance'=>'insurance',
+				'retail-trade'=>'retail trade',
+				'wholesale-trade'=>'wholesale trade',
+				'business-professional-services'=>'business/professional services',
+				'software-and-it-services'=>'software and it services',
+				'media'=>'media',
+				'manufacturing'=>'manufacturing',
+				'transportation'=>'transportation',
+				'utilities-oil-gas'=>'utilities &amp; oil/gas',
+				'private-education'=>'private education',
+				'private-healthcare-service-providers'=>'private healthcare service providers'
+			];
+			if(collect($verticals)->contains(strtolower(session('user.extra.industry')))){
+				$vertical_base = $base['benchmark-vertical-'.array_search(strtolower(session('user.extra.industry')), $verticals)];
+			}
+			$user_score = 7.5;
+			if(session('result.overall.rating')=='stage2'){
+				$user_score = 22.5;
+			}
+			if(session('result.overall.rating')=='stage3'){
+				$user_score = 37.5;
+			}
+
+			$values = array(
+			 	array('Geographic Region' => $geographic_base, 'Organizasion Size' => $organisation_base, 'Industry' => $vertical_base, 'Overall Cloud Adoption' => $base['baseline']), //baseline
+			 	array('Geographic Region' => $user_score, 'Organizasion Size' => $user_score, 'Industry' => $user_score, 'Overall Cloud Adoption' => $user_score) //user
+			);
+			 
+			$colours = array(array('#9E3D91'), array('#1A7ABB'));
+			$graph->colours = $colours;
+			$graph->Values($values);
+			$graph = $graph->Fetch('HorizontalGroupedBarGraph',false);
+
 			$customCopy.= trans(session('product.alias').'.overallintro',
 				[
 					'image'=>session('url').'/'.session('localeUrl').'images/tools/8/graph'.$rating.'.png',
-					'icon'=>session('url').'/'.session('localeUrl').'images/tools/8/overallicon.png'
+					'icon'=>session('url').'/'.session('localeUrl').'images/tools/8/overallicon.png',
 				]
 			);
 
@@ -690,9 +777,16 @@ trait GenerateReportTrait {
 				]
 			);
 
+			$customCopy.= trans(session('product.alias').'.overallgraph',
+				[
+					'graph'=>$graph,
+				]
+			);
+
 			$customCopy.= trans(session('product.alias').'.overalloutro');
 
 			//Infrastructure
+
 			$customCopy.= trans(session('product.alias').'.infrastructureintro',
 				[
 					'icon'=>session('url').'/'.session('localeUrl').'images/tools/8/infrastructureicon.png'
@@ -700,6 +794,36 @@ trait GenerateReportTrait {
 			);
 
 			$customCopy.= trans(session('product.alias').'.infrastructure-'.$infrastructureNumber.'-'.$rating);
+
+			//infrastructure graph
+			$settings['back_image'] = asset('images/tools/8/comparison_infrastructure.png');
+			$settings['back_image_height'] = 138;
+			$settings['axis_max_h'] = 15;
+
+			$graphinfrastructure = new \SVGGraph(570, 138,$settings);
+			$base = config('baseline_'.session('product.id').'.infrastructure');
+
+			$user_score = 2.5;
+			if(session('result.infrastructure.rating')=='stage2'){
+				$user_score = 7.5;
+			}
+			if(session('result.infrastructure.rating')=='stage3'){
+				$user_score = 13.5;
+			}
+
+			$values = array(
+			 	array('Infrastructure Performance' => $base['baseline_'.session('result.overall.rating')]), //baseline
+			 	array('Infrastructure Performance' => $user_score) //user
+			);
+
+			$graphinfrastructure->colours = $colours;
+			$graphinfrastructure->Values($values);
+			$graphinfrastructure = $graphinfrastructure->Fetch('HorizontalGroupedBarGraph',false);
+			$customCopy.= trans(session('product.alias').'.infrastructuregraph',
+				[
+					'graph' => $graphinfrastructure,
+				]
+			);
 			
 			$q2score = $this->getQuestionScoreNew(2, 'infrastructure', 2);
 			$customCopy.= trans(session('product.alias').'.infrastructure-'.$infrastructureNumber.'-q2-'.$q2score);
@@ -717,6 +841,36 @@ trait GenerateReportTrait {
 			);
 
 			$customCopy.= trans(session('product.alias').'.intelligence-'.$intelligenceNumber.'-'.$rating);
+
+			//intelligence graph
+			$settings['back_image'] = asset('images/tools/8/comparison_intelligence.png');
+			$settings['back_image_height'] = 138;
+			$settings['axis_max_h'] = 15;
+
+			$graphintelligence = new \SVGGraph(570, 138,$settings);
+			$base = config('baseline_'.session('product.id').'.intelligence');
+
+			$user_score = 2.5;
+			if(session('result.intelligence.rating')=='stage2'){
+				$user_score = 7.5;
+			}
+			if(session('result.intelligence.rating')=='stage3'){
+				$user_score = 13.5;
+			}
+
+			$values = array(
+			 	array('intelligence Performance' => $base['baseline_'.session('result.overall.rating')]), //baseline
+			 	array('intelligence Performance' => $user_score) //user
+			);
+
+			$graphintelligence->colours = $colours;
+			$graphintelligence->Values($values);
+			$graphintelligence = $graphintelligence->Fetch('HorizontalGroupedBarGraph',false);
+			$customCopy.= trans(session('product.alias').'.intelligencegraph',
+				[
+					'graph' => $graphintelligence,
+				]
+			);
 			
 			$q5score = $this->getQuestionScoreNew(5, 'intelligence', 2);
 			$customCopy.= trans(session('product.alias').'.intelligence-'.$intelligenceNumber.'-q5-'.$q5score);
@@ -727,6 +881,7 @@ trait GenerateReportTrait {
 			$customCopy.= '<div class="pb"></div>';
 
 			//Operations
+			$rating = session('result.operations.rating');
 			$customCopy.= trans(session('product.alias').'.operationsintro',
 				[
 					'icon'=>session('url').'/'.session('localeUrl').'images/tools/8/operationsicon.png'
@@ -734,6 +889,36 @@ trait GenerateReportTrait {
 			);
 
 			$customCopy.= trans(session('product.alias').'.operations-'.$operationsNumber.'-'.$rating);
+
+			//operations graph
+			$settings['back_image'] = asset('images/tools/8/comparison_operations.png');
+			$settings['back_image_height'] = 138;
+			$settings['axis_max_h'] = 15;
+
+			$graphoperations = new \SVGGraph(570, 138,$settings);
+			$base = config('baseline_'.session('product.id').'.operations');
+
+			$user_score = 2.5;
+			if(session('result.operations.rating')=='stage2'){
+				$user_score = 7.5;
+			}
+			if(session('result.operations.rating')=='stage3'){
+				$user_score = 13.5;
+			}
+
+			$values = array(
+			 	array('operations Performance' => $base['baseline_'.session('result.overall.rating')]), //baseline
+			 	array('operations Performance' => $user_score) //user
+			);
+
+			$graphoperations->colours = $colours;
+			$graphoperations->Values($values);
+			$graphoperations = $graphoperations->Fetch('HorizontalGroupedBarGraph',false);
+			$customCopy.= trans(session('product.alias').'.operationsgraph',
+				[
+					'graph' => $graphoperations,
+				]
+			);
 			
 			$q8score = $this->getQuestionScoreNew(8, 'operations', 2);
 			$customCopy.= trans(session('product.alias').'.operations-'.$operationsNumber.'-q8-'.$q8score);
@@ -1007,6 +1192,7 @@ trait GenerateReportTrait {
 
 			$merge->addPDF(storage_path().'/ntt_report_start'.$locale .'.pdf', 'all');
 			$merge->addPDF(storage_path().'/'.$assessment_id.'_'.$name.'.pdf', 'all');
+			$merge->addPDF(storage_path().'/ntt_report_end'.$locale .'.pdf', 'all');
 
 			$merge->merge('file', storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf', 'P');
 			if(File::exists(storage_path().'/'.$assessment_id.'_'.$name.'.pdf')){

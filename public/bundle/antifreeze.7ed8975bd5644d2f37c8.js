@@ -9235,9 +9235,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
-//
-//
-//
 
 exports.default = {
 	props: ['result'],
@@ -18824,12 +18821,12 @@ var render = function() {
                                     {
                                       attrs: {
                                         value:
-                                          "Banking and other financial services"
+                                          "Banking & other financial services"
                                       }
                                     },
                                     [
                                       _vm._v(
-                                        "Banking and other financial services"
+                                        "Banking & other financial services"
                                       )
                                     ]
                                   ),
@@ -18842,50 +18839,38 @@ var render = function() {
                                   _vm._v(" "),
                                   _c(
                                     "option",
-                                    { attrs: { value: "Retail Trade" } },
-                                    [_vm._v("Retail Trade")]
+                                    { attrs: { value: "Retail trade" } },
+                                    [_vm._v("Retail trade")]
                                   ),
                                   _vm._v(" "),
                                   _c(
                                     "option",
-                                    { attrs: { value: "Wholesale Trade" } },
-                                    [_vm._v("Wholesale Trade")]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "option",
-                                    {
-                                      attrs: {
-                                        value: "Business or professional"
-                                      }
-                                    },
-                                    [
-                                      _vm._v(
-                                        "Business or professional Services "
-                                      )
-                                    ]
+                                    { attrs: { value: "Wholesale trade" } },
+                                    [_vm._v("Wholesale trade")]
                                   ),
                                   _vm._v(" "),
                                   _c(
                                     "option",
                                     {
                                       attrs: {
-                                        value: "Software and IT Services"
+                                        value: "Business/Professional services"
                                       }
                                     },
-                                    [_vm._v("Software and IT Services")]
+                                    [_vm._v("Business/Professional services")]
                                   ),
                                   _vm._v(" "),
                                   _c(
                                     "option",
-                                    { attrs: { value: "Telecommunications" } },
-                                    [_vm._v("Telecommunications services")]
+                                    {
+                                      attrs: {
+                                        value: "Software and IT services"
+                                      }
+                                    },
+                                    [_vm._v("Software and IT services")]
                                   ),
                                   _vm._v(" "),
                                   _c("option", { attrs: { value: "Media" } }, [
-                                    _vm._v(
-                                      "Media: Broadcast, printing and publishing & other comm."
-                                    )
+                                    _vm._v("Media")
                                   ]),
                                   _vm._v(" "),
                                   _c(
@@ -18902,34 +18887,27 @@ var render = function() {
                                   _vm._v(" "),
                                   _c(
                                     "option",
-                                    { attrs: { value: "Utilities" } },
-                                    [_vm._v("Utilities")]
+                                    { attrs: { value: "Utilities & Oil/Gas" } },
+                                    [_vm._v("Utilities & Oil/Gas")]
                                   ),
                                   _vm._v(" "),
                                   _c(
                                     "option",
-                                    { attrs: { value: "Oil and Gas" } },
-                                    [_vm._v("Oil and Gas")]
+                                    { attrs: { value: "Private education" } },
+                                    [_vm._v("Private education")]
                                   ),
                                   _vm._v(" "),
                                   _c(
                                     "option",
-                                    { attrs: { value: "Government" } },
-                                    [_vm._v("Government")]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "option",
-                                    { attrs: { value: "Private Education" } },
-                                    [_vm._v("Private Education")]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "option",
-                                    { attrs: { value: "Private Health" } },
+                                    {
+                                      attrs: {
+                                        value:
+                                          "Private healthcare service providers"
+                                      }
+                                    },
                                     [
                                       _vm._v(
-                                        "Private Health Care Services providers"
+                                        "Private healthcare service providers"
                                       )
                                     ]
                                   )
