@@ -3,7 +3,7 @@
 return array(
     'overall' => array(
         'baseline' => 27.60,
-        'baseline' => 22.5,
+        'baseline' => 11,
 
         'benchmark-country-fr' => 27.18,
         'benchmark-country-de' => 27.54,
@@ -26,26 +26,28 @@ return array(
         'benchmark-vertical-private-education' => 24.52,
         'benchmark-vertical-private-healthcare-service-providers' => 24.32,
 
-        'benchmark-country-fr' => 22.5,
-        'benchmark-country-de' => 22.5,
-        'benchmark-country-en' => 22.5,
+        'benchmark-country-fr' => 10.3,
+        'benchmark-country-de' => 10.9,
+        'benchmark-country-en' => 11.82,
 
-        'benchmark-size-500-to-999' => 7.5,
-        'benchmark-size-1000-to-4999' => 22.5,
-        'benchmark-size-5000+' => 22.5,
+        'benchmark-size-500-to-999' => 8.63,
+        'benchmark-size-1000-to-4999' => 11.05,
+        'benchmark-size-5000+' => 18.42,
 
-        'benchmark-vertical-banking-other-financial-services' => 22.5,
-        'benchmark-vertical-insurance' => 22.5,
-        'benchmark-vertical-retail-trade' => 22.5,
-        'benchmark-vertical-wholesale-trade' => 7.5,
-        'benchmark-vertical-business-professional-services' => 7.5,
-        'benchmark-vertical-software-and-it-services' => 22.5,
-        'benchmark-vertical-media' => 7.5,
-        'benchmark-vertical-manufacturing' => 7.5,
-        'benchmark-vertical-transportation' => 22.5,
-        'benchmark-vertical-utilities-oil-gas' => 22.5,
-        'benchmark-vertical-private-education' => 7.5,
-        'benchmark-vertical-private-healthcare-service-providers' => 7.5,
+        'benchmark-vertical-banking-other-financial-services' => 17.98,
+        'benchmark-vertical-insurance' => 13.32,
+        'benchmark-vertical-retail-trade' => 11.72,
+        'benchmark-vertical-wholesale-trade' => 8.82,
+        'benchmark-vertical-business-professional-services' => 9.73,
+        'benchmark-vertical-software-and-it-services' => 17.85,
+        'benchmark-vertical-media' => 9.79,
+        'benchmark-vertical-manufacturing' => 8.53,
+        'benchmark-vertical-transportation' => 11.57,
+        'benchmark-vertical-utilities-oil-gas' => 11.52,
+        'benchmark-vertical-private-education' => 8.62,
+        'benchmark-vertical-private-healthcare-service-providers' => 8.51,
+
+        
 
         'complete' => [
             'graph' => [
@@ -98,8 +100,8 @@ return array(
     ),
     'infrastructure' => array(
         'baseline' => 8.90,
-        'baseline' => 2.5,
-        
+        'baseline' => 9.83,
+
         'baseline_stage1' => 2.5,
         'baseline_stage2' => 7.5,
         'baseline_stage3' => 13.5,
@@ -153,7 +155,7 @@ return array(
     ),
     'intelligence' => array(
         'baseline' => 9.28,
-        'baseline' => 7.5,
+        'baseline' => 10.93,
         
         'baseline_stage1' => 2.5,
         'baseline_stage2' => 7.5,
@@ -208,7 +210,7 @@ return array(
     ),
     'operations' => array(
         'baseline' => 9.42,
-        'baseline' => 7.5,
+        'baseline' => 11.4,
         'baseline_stage1' => 2.5,
         'baseline_stage2' => 7.5,
         'baseline_stage3' => 13.5,

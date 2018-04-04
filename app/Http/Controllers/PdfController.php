@@ -21,43 +21,43 @@ class PdfController extends Controller
      */
     public function wkhtml()
     {
-        $chartSettings = [
-			'title' => null,
-			'backgroundColor' => [
-				'fill'=>'transparent'
-			],
-			'vAxis' => [
-				'baselineColor'=>'none',
-				'gridlines'=> [
-					'color'=> 'none'
-				]
-			],
-			'hAxis' => [
-				'textStyle' => [
-					'fontName' => 'Helvetica-light',
-					/*'fontSize' => 18,*/
-					/*'bold' => true,*/
-					/*'italic' => true,*/
+    	$chartSettings = [
+    		'title' => null,
+    		'backgroundColor' => [
+    			'fill'=>'transparent'
+    		],
+    		'vAxis' => [
+    			'baselineColor'=>'none',
+    			'gridlines'=> [
+    				'color'=> 'none'
+    			]
+    		],
+    		'hAxis' => [
+    			'textStyle' => [
+    				'fontName' => 'Helvetica-light',
+    				/*'fontSize' => 18,*/
+    				/*'bold' => true,*/
+    				/*'italic' => true,*/
 					// The color of the text.
-					'color' => '#939598',
+    				'color' => '#939598',
 					// The color of the text outline.
-					/*'auraColor' => '#d799ae',*/
+    				/*'auraColor' => '#d799ae',*/
 					// The transparency of the text.
-					/*'opacity' => 0.8*/
-				]
-			],
-			'legend' => ['position'=> 'bottom'],
-			'colors' => ['#68aadd'],
-			'chartArea' => ['width'=>'100%', 'height'=>'80%'],
-			'legend' => [ 'position' => "none" ],
-			'events' => [
-		        'ready' => 'chartReady'
-		    ],
-		    'annotations'=>[
-		    	'stem'=>[
-		    		'color'=>'transparent'
-		    	],
-		    	'textStyle'=>[
+    				/*'opacity' => 0.8*/
+    			]
+    		],
+    		'legend' => ['position'=> 'bottom'],
+    		'colors' => ['#68aadd'],
+    		'chartArea' => ['width'=>'100%', 'height'=>'80%'],
+    		'legend' => [ 'position' => "none" ],
+    		'events' => [
+    			'ready' => 'chartReady'
+    		],
+    		'annotations'=>[
+    			'stem'=>[
+    				'color'=>'transparent'
+    			],
+    			'textStyle'=>[
 					/*'fontName'=> 'Times-Roman',
 					*/'fontSize'=> 14,
 					/*'bold'=> true,
@@ -68,11 +68,11 @@ class PdfController extends Controller
 					// 'auraColor'=> '#d799ae',
 					// The transparency of the text.
 					/*'opacity'=> 0.8*/
-		    	]
-		    ],
-		    /*'isStacked' => true,*/
-		    'bar'  => [
-		    	'groupWidth'=> '70%'
+				]
+			],
+			/*'isStacked' => true,*/
+			'bar'  => [
+				'groupWidth'=> '70%'
 
 		    ] //As a percent, "33%"
 		];
@@ -121,10 +121,10 @@ class PdfController extends Controller
 			$number =  (int)$matches[0][0];
 			$ends = array('th','st','nd','rd','th','th','th','th','th','th');
 			if (($number %100) >= 11 && ($number%100) <= 13){
-			   $ordinal = 'th';
+				$ordinal = 'th';
 			}
 			else{
-			   $ordinal = $ends[$number % 10];
+				$ordinal = $ends[$number % 10];
 			}
 
 			//country benchmark by language
@@ -194,7 +194,7 @@ class PdfController extends Controller
 			//a1
 			$selected = session('questions.security-strategy.pages.page1.questions.q1.selected');
 			$value = explode('|', $selected);
-    		$value = (int) $selected[1];
+			$value = (int) $selected[1];
 			if($value == 2 || $value == 4){
 				$customCopy.= trans(session('product.alias').'.a1-a');
 			}
@@ -205,7 +205,7 @@ class PdfController extends Controller
 			//a5
 			$selected = session('questions.security-strategy.pages.page3.questions.q3.selected');
 			$value = explode('|', $selected);
-    		$value = (int) $selected[1];
+			$value = (int) $selected[1];
 			if($value == 2 || $value == 4){
 				$customCopy.= trans(session('product.alias').'.a5-a');
 			}
@@ -227,7 +227,7 @@ class PdfController extends Controller
 				$valHold+=$value;
 			}
 			$value = $valHold;
-    		
+
 			if($value == 2.5){
 				$customCopy.= trans(session('product.alias').'.a7-a');
 			}
@@ -244,7 +244,7 @@ class PdfController extends Controller
 			//a8
 			$selected = session('questions.incident-response.pages.page1.questions.q7.selected');
 			$value = explode('|', $selected);
-    		$value = (int) $selected[1];
+			$value = (int) $selected[1];
 			if($value <= 2){
 				$customCopy.= trans(session('product.alias').'.a8-a');
 			}
@@ -255,7 +255,7 @@ class PdfController extends Controller
 			//a11
 			$selected = session('questions.incident-response.pages.page2.questions.q8.selected');
 			$value = explode('|', $selected);
-    		$value = (int) $selected[1];
+			$value = (int) $selected[1];
 			if($value <= 2){
 				$customCopy.= trans(session('product.alias').'.a11-a');
 			}
@@ -263,7 +263,7 @@ class PdfController extends Controller
 			//a11b
 			$selected = session('questions.incident-response.pages.page4.questions.q10.selected');
 			$value = explode('|', $selected);
-    		$value = (int) $selected[1];
+			$value = (int) $selected[1];
 			if($value <= 3){
 				$customCopy.= trans(session('product.alias').'.a11b-a');
 			}
@@ -271,7 +271,7 @@ class PdfController extends Controller
 			//a13
 			$selected = session('questions.incident-response.pages.page5.questions.q11.selected');
 			$value = explode('|', $selected);
-    		$value = (int) $selected[1];
+			$value = (int) $selected[1];
 			if($value <= 2){
 				$customCopy.= trans(session('product.alias').'.a13-a');
 			}
@@ -282,7 +282,7 @@ class PdfController extends Controller
 			//a14
 			$selected = session('questions.incident-response.pages.page6.questions.q12.selected');
 			$value = explode('|', $selected);
-    		$value = (int) $selected[1];
+			$value = (int) $selected[1];
 			if($value <= 2){
 				$customCopy.= trans(session('product.alias').'.a14-a');
 			}
@@ -327,10 +327,10 @@ class PdfController extends Controller
 			$number =  (int)$matches[0][0];
 			$ends = array('th','st','nd','rd','th','th','th','th','th','th');
 			if (($number %100) >= 11 && ($number%100) <= 13){
-			   $ordinal = 'th';
+				$ordinal = 'th';
 			}
 			else{
-			   $ordinal = $ends[$number % 10];
+				$ordinal = $ends[$number % 10];
 			}
 
 			//country benchmark by language
@@ -475,10 +475,10 @@ class PdfController extends Controller
 			$number =  (int)$matches[0][0];
 			$ends = array('th','st','nd','rd','th','th','th','th','th','th');
 			if (($number %100) >= 11 && ($number%100) <= 13){
-			   $ordinal = 'th';
+				$ordinal = 'th';
 			}
 			else{
-			   $ordinal = $ends[$number % 10];
+				$ordinal = $ends[$number % 10];
 			}
 
 
@@ -673,7 +673,7 @@ class PdfController extends Controller
 			$overallNumber = (int) filter_var(session('result.overall.rating'), FILTER_SANITIZE_NUMBER_INT);
 			$infrastructureNumber =  (int) filter_var(session('result.infrastructure.rating'), FILTER_SANITIZE_NUMBER_INT);
 			$intelligenceNumber =  (int) filter_var(session('result.intelligence.rating'), FILTER_SANITIZE_NUMBER_INT);
-			$operationsNumber =  (int) filter_var(session('result.operations.rating'), FILTER_SANITIZE_NUMBER_INT);
+			$operationsNumber =  (int) filter_var(session('result.operations.rating'), FILTER_SANITIZE_NUMBER_INT);		
 			
 
 			$vars['introduction'] = trans(session('product.alias').'.introduction',
@@ -688,7 +688,7 @@ class PdfController extends Controller
 			//overall
 			$rating = session('result.overall.rating');
 			$settings = array(
-				'back_image'=>asset('images/tools/8/comparisonbg.png'),
+				'back_image'=>asset('images/tools/8/comparisonbg.png?id=1'),
 				'back_image_width'=> 570,
 				'back_image_height'=> 320,
 				'pad_top'=>45,
@@ -699,13 +699,14 @@ class PdfController extends Controller
 				'stroke_colour' => 'none',
 				'back_stroke_width' => 0, 'back_stroke_colour' => 'none',
 				'show_axes' => false,
-				'axis_max_h' => 45,
+				'axis_max_h' => 30,
 				'axis_min_h' => 0,
 				'axis_stroke_width' => 1,
 				'axis_colour' => '#efefef',
 				'axis_text_colour' => '#999',
 				'axis_overlap' => 2,
 				'axis_font' => 'Frutiger Neue LT W1G', 'axis_font_size' => 12,
+				'bar_space' => 20,
 				'group_space' => 1,
 				'grid_colour' => 'none',
 				'show_data_labels' => false,
@@ -718,7 +719,13 @@ class PdfController extends Controller
 
 				'link_base' => '/',
 				'link_target' => '_top',
-				'minimum_grid_spacing' => 20
+				'minimum_grid_spacing' => 20,
+				'structured_data' => true,
+				'structure' => [
+					'key' => 'label',
+					'value' => 'score',
+					'colour' => 'colour'
+				]
 			);
 			$graph = new \SVGGraph(570, 320,$settings);
 			$base = config('baseline_'.session('product.id').'.overall');
@@ -753,23 +760,53 @@ class PdfController extends Controller
 			if(collect($verticals)->contains(strtolower(session('user.extra.industry')))){
 				$vertical_base = $base['benchmark-vertical-'.array_search(strtolower(session('user.extra.industry')), $verticals)];
 			}
-			$user_score = 7.5;
-			if(session('result.overall.rating')=='stage2'){
-				$user_score = 22.5;
-			}
-			if(session('result.overall.rating')=='stage3'){
-				$user_score = 37.5;
+			//Mean Calculation for user
+			$user_score = 0;
+			$actual_score = session('result.overall.score');
+			switch (session('result.overall.rating')) {
+				case 'stage1':
+					$user_score = (($actual_score - 9)*10)/18;
+					break;
+				case 'stage2':
+					$user_score = ((($actual_score - 27)*10)/6)+10;
+					break;
+				case 'stage3':
+					$user_score = ((($actual_score - 33)*10)/12)+20;
+					break;
 			}
 
 			$values = array(
-			 	array('Geographic Region' => $geographic_base, 'Organizasion Size' => $organisation_base, 'Industry' => $vertical_base, 'Overall Cloud Adoption' => $base['baseline']), //baseline
-			 	array('Geographic Region' => $user_score, 'Organizasion Size' => $user_score, 'Industry' => $user_score, 'Overall Cloud Adoption' => $user_score) //user
-			);
-			 
+			 	array(
+			 			'label' => 'Geographic Region',
+			 			'score' => $geographic_base,
+			 			'colour' => '#9E3D91'
+			 		),
+			 		array(
+			 			'label' => 'Organizasion Size',
+			 			'score' => $organisation_base,
+			 			'colour' => '#9E3D91'
+			 		),
+			 		array(
+			 			'label' => 'Industry',
+			 			'score' => $vertical_base,
+			 			'colour' => '#9E3D91'
+			 		),
+			 		array(
+			 			'label' => 'Peer Overall Cloud Adoption',
+			 			'score' => $base['baseline'],
+			 			'colour' => '#9E3D91'
+			 		),
+			 		array(
+			 			'label' => 'Your Overall Cloud Adoption',
+			 			'score' => $user_score,
+			 			'colour' => '#1A7ABB'
+			 		)
+			 );
+
 			$colours = array(array('#9E3D91'), array('#1A7ABB'));
 			$graph->colours = $colours;
 			$graph->Values($values);
-			$graph = $graph->Fetch('HorizontalGroupedBarGraph',false);
+			$graph = $graph->Fetch('HorizontalBarGraph',false);
 
 			$customCopy.= trans(session('product.alias').'.overallintro',
 				[
@@ -806,23 +843,36 @@ class PdfController extends Controller
 			//infrastructure graph
 			$settings['back_image'] = asset('images/tools/8/comparison_infrastructure.png');
 			$settings['back_image_height'] = 138;
-			$settings['axis_max_h'] = 15;
+			$settings['axis_max_h'] = 30;
 
 			$graphinfrastructure = new \SVGGraph(570, 138,$settings);
 			$base = config('baseline_'.session('product.id').'.infrastructure');
 
-			$user_score = 2.5;
-			if(session('result.infrastructure.rating')=='stage2'){
-				$user_score = 7.5;
-			}
-			if(session('result.infrastructure.rating')=='stage3'){
-				$user_score = 13.5;
+			$user_score = session('result.infrastructure.score');
+			switch (session('result.infrastructure.rating')) {
+				case 'stage1':
+					$user_score = (($user_score - 3)*10)/6;
+					break;
+				case 'stage2':
+					$user_score = ((($user_score - 9)*10)/3)+10;
+					break;
+				case 'stage3':
+					$user_score = ((($user_score - 11)*10)/4)+20;
+					break;
 			}
 
-			$values = array(
-			 	array('Infrastructure Performance' => $base['baseline']), //baseline
-			 	array('Infrastructure Performance' => $user_score) //user
-			);
+			 $values = array(
+			 	array(
+			 		'label' => 'Infrastructure Performance',
+			 		'score' => $base['baseline'],
+			 		'colour' => '#9E3D91'
+			 	),
+			 	array(
+			 		'label' => 'User Infrastructure Performance',
+			 		'score' => $user_score,
+			 		'colour' => '#1A7ABB'
+			 	),
+			 );
 
 			$graphinfrastructure->colours = $colours;
 			$graphinfrastructure->Values($values);
@@ -832,6 +882,7 @@ class PdfController extends Controller
 					'graph' => $graphinfrastructure,
 				]
 			);
+
 			
 			$q2score = $this->getQuestionScoreNew(2, 'infrastructure', 2);
 			$customCopy.= trans(session('product.alias').'.infrastructure-'.$infrastructureNumber.'-q2-'.$q2score);
@@ -853,23 +904,36 @@ class PdfController extends Controller
 			//intelligence graph
 			$settings['back_image'] = asset('images/tools/8/comparison_intelligence.png');
 			$settings['back_image_height'] = 138;
-			$settings['axis_max_h'] = 15;
+			$settings['axis_max_h'] = 30;
 
 			$graphintelligence = new \SVGGraph(570, 138,$settings);
 			$base = config('baseline_'.session('product.id').'.intelligence');
 
-			$user_score = 2.5;
-			if(session('result.intelligence.rating')=='stage2'){
-				$user_score = 7.5;
-			}
-			if(session('result.intelligence.rating')=='stage3'){
-				$user_score = 13.5;
+			$user_score = session('result.intelligence.score');
+			switch (session('result.intelligence.rating')) {
+				case 'stage1':
+					$user_score = (($user_score - 3)*10)/6;
+					break;
+				case 'stage2':
+					$user_score = ((($user_score - 9)*10)/3)+10;
+					break;
+				case 'stage3':
+					$user_score = ((($user_score - 11)*10)/4)+20;
+					break;
 			}
 
 			$values = array(
-			 	array('intelligence Performance' => $base['baseline']), //baseline
-			 	array('intelligence Performance' => $user_score) //user
-			);
+			 	array(
+			 		'label' => 'Intelligence Performance',
+			 		'score' => $base['baseline'],
+			 		'colour' => '#9E3D91'
+			 	),
+			 	array(
+			 		'label' => 'User Intelligence Performance',
+			 		'score' => $user_score,
+			 		'colour' => '#1A7ABB'
+			 	),
+			 );
 
 			$graphintelligence->colours = $colours;
 			$graphintelligence->Values($values);
@@ -906,18 +970,31 @@ class PdfController extends Controller
 			$graphoperations = new \SVGGraph(570, 138,$settings);
 			$base = config('baseline_'.session('product.id').'.operations');
 
-			$user_score = 2.5;
-			if(session('result.operations.rating')=='stage2'){
-				$user_score = 7.5;
-			}
-			if(session('result.operations.rating')=='stage3'){
-				$user_score = 13.5;
+			$user_score = session('result.operations.score');
+			switch (session('result.operations.rating')) {
+				case 'stage1':
+					$user_score = (($user_score - 3)*10)/6;
+					break;
+				case 'stage2':
+					$user_score = ((($user_score - 9)*10)/3)+10;
+					break;
+				case 'stage3':
+					$user_score = ((($user_score - 11)*10)/4)+20;
+					break;
 			}
 
 			$values = array(
-			 	array('operations Performance' => $base['baseline']), //baseline
-			 	array('operations Performance' => $user_score) //user
-			);
+			 	array(
+			 		'label' => 'Operations Performance',
+			 		'score' => $base['baseline'],
+			 		'colour' => '#9E3D91'
+			 	),
+			 	array(
+			 		'label' => 'User Operations Performance',
+			 		'score' => $user_score,
+			 		'colour' => '#1A7ABB'
+			 	),
+			 );
 
 			$graphoperations->colours = $colours;
 			$graphoperations->Values($values);
@@ -965,9 +1042,9 @@ class PdfController extends Controller
 				if(config('baseline_'.session('product.id').'.'.$section.'.report-settings.graph')){
 					$sectionGraph = Lava::DataTable();
 					$numformat = Lava::NumberFormat([
-					    'suffix'         => '%'
+						'suffix'         => '%'
 					]);
-			        $sectionGraph->addColumns([
+					$sectionGraph->addColumns([
 						['string', 'Stage'],
 						['number', 'Your Score',$numformat],
 					]);
@@ -976,12 +1053,12 @@ class PdfController extends Controller
 					
 					foreach ($values['types'] as $stage => $params) {
 						$val = $params['benchmark'];
-					    $sectionGraph->addRow([
+						$sectionGraph->addRow([
 					      $locale == 'es' ? substr(trans(session('product.alias').'.'.$stage),0,strpos(trans(session('product.alias').'.'.$stage), ':')):trans(session('product.alias').'.'.$stage),//$stage
 					      $val,
 					      session('result.'.$section.'.rating')==$stage? config('baseline_'.session('product.id').'.'.$section.'.report-settings.color'):null,
 					      $val."%"
-					    ]);
+					  ]);
 					}
 					
 					$sectionChart = Lava::ColumnChart($section.'_graph', $sectionGraph, $chartSettings);
@@ -1045,8 +1122,8 @@ class PdfController extends Controller
 								foreach ($page['questions'] as $qKey => $question) {
 									if($qKey==$graph['question']['question']){
 										$selected = explode('|', $question['selected']);
-		                                $userAnswer = $selected[0];
-		                                $userAnswer = strtolower(str_replace(" ", "-", $userAnswer));
+										$userAnswer = $selected[0];
+										$userAnswer = strtolower(str_replace(" ", "-", $userAnswer));
 									}
 								}
 							}
@@ -1059,7 +1136,7 @@ class PdfController extends Controller
 						      $val,
 						      session('result.'.$section.'.rating')==$extraSection? config('baseline_'.session('product.id').'.'.$section.'.report-settings.color'):null,
 						      $val."%"
-						    ]);*/
+						  ]);*/
 						}
 						
 						//$extraChart[$section.'_'.$key.'_graph'] = Lava::ColumnChart($section.'_'.$key.'_graph', $extraGraph, $chartSettings);
@@ -1104,11 +1181,11 @@ class PdfController extends Controller
 			}
 
 			$vars['introduction'] = Lang::has(session('product.alias').'.introduction') ? trans(session('product.alias').'.introduction',
-			[
-				'result'=>trans(session('product.alias').'.'.session('result.overall.rating')),
-				'stage'=>session('result.overall.rating'),
-				'stagegraphic' => asset('images/tools/'.session('product.id').'/'.session('result.overall.rating').'.svg')
-			]) : false;
+				[
+					'result'=>trans(session('product.alias').'.'.session('result.overall.rating')),
+					'stage'=>session('result.overall.rating'),
+					'stagegraphic' => asset('images/tools/'.session('product.id').'/'.session('result.overall.rating').'.svg')
+				]) : false;
 			$vars['introImage'] = Lang::has(session('product.alias').'.introduction-image') ? trans(session('product.alias').'.introduction-image') : false;
 			$vars['introRating'] = trans(session('product.alias').'.'.session('result.overall.rating'));
 			$vars['questions'] = session('questions');
@@ -1117,7 +1194,7 @@ class PdfController extends Controller
 
 		//return $vars['sections'];
 		//dd(session('result'));
-		//return view('tool.'.session('template').'.report.report',$vars);
+		return view('tool.'.session('template').'.report.report',$vars);
 		$margintop = 25;
 		if(null !== config('baseline_'.session('product.id').'.overall.report-settings.margin-top')){
 			$margintop = config('baseline_'.session('product.id').'.overall.report-settings.margin-top');
@@ -1127,76 +1204,76 @@ class PdfController extends Controller
 			$headerspacing = config('baseline_'.session('product.id').'.overall.report-settings.header-spacing');
 		}
 
-        $pdf = PDF::loadView('tool.'.session('template').'.report.report',$vars)
-        	->setOption('margin-top', $margintop)
-        	->setOption('margin-left', 0)
-        	->setOption('margin-right', 0)
-        	->setOption('window-status','chartrendered')
-        	->setOption('header-html',session('url').'/'.session('localeUrl').'template/'.session('template').'/report/header')
-        	->setOption('header-spacing',$headerspacing)
-        	->setOption('footer-html',session('url').'/'.session('localeUrl').'template/'.session('template').'/report/footer')
-        	->setOption('footer-spacing',2)
-        	->setOption('replace', $headervars);
-        	if (session('product.id')==8){
+		$pdf = PDF::loadView('tool.'.session('template').'.report.report',$vars)
+		->setOption('margin-top', $margintop)
+		->setOption('margin-left', 0)
+		->setOption('margin-right', 0)
+		->setOption('window-status','chartrendered')
+		->setOption('header-html',session('url').'/'.session('localeUrl').'template/'.session('template').'/report/header')
+		->setOption('header-spacing',$headerspacing)
+		->setOption('footer-html',session('url').'/'.session('localeUrl').'template/'.session('template').'/report/footer')
+		->setOption('footer-spacing',2)
+		->setOption('replace', $headervars);
+		if (session('product.id')==8){
         		//$pdf->setOption('cover',session('url').'/'.session('localeUrl').'template/'.session('template').'/report/cover');
-        		$timeStamp = time();
-        		$pdf->save(storage_path().'/ntt-sdwan-report-'.$timeStamp.'.pdf');
+			$timeStamp = time();
+			$pdf->save(storage_path().'/ntt-sdwan-report-'.$timeStamp.'.pdf');
 
-        		
 
-				$merge = new \LynX39\LaraPdfMerger\PdfManage;
-				$locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
 
-				$merge->addPDF(storage_path().'/ntt_report_start'.$locale .'.pdf', 'all');
-				$merge->addPDF(storage_path().'/ntt-sdwan-report-'.$timeStamp.'.pdf', 'all');
+			$merge = new \LynX39\LaraPdfMerger\PdfManage;
+			$locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
 
-				$merge->merge('browser', storage_path().'/reports/ntt-sdwan-report-'.$timeStamp.'.pdf', 'P');
-				if(File::exists(storage_path().'/ntt-sdwan-report-'.$timeStamp.'.pdf')){
-					File::delete(storage_path().'/ntt-sdwan-report-'.$timeStamp.'.pdf');
-				}
-				if(File::exists(storage_path().'/ntt-sdwan-report-cover-'.$timeStamp.'.pdf')){
-					File::delete(storage_path().'/ntt-sdwan-report-cover-'.$timeStamp.'.pdf');
-				}
-			} elseif (session('product.id')==2){
-				$timeStamp = time();
-        		$pdf->save(storage_path().'/fireeye-report-'.$timeStamp.'.pdf');
-				$merge = new \LynX39\LaraPdfMerger\PdfManage;
-				$locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
+			$merge->addPDF(storage_path().'/ntt_report_start'.$locale .'.pdf', 'all');
+			$merge->addPDF(storage_path().'/ntt-sdwan-report-'.$timeStamp.'.pdf', 'all');
 
-				$merge->addPDF(storage_path().'/fireeye_report_start'.$locale .'.pdf', 'all');
-				$merge->addPDF(storage_path().'/fireeye-report-'.$timeStamp.'.pdf', 'all');
-				$merge->addPDF(storage_path().'/fireeye_report_end'.$locale .'.pdf', 'all');
-
-				$merge->merge('browser', storage_path().'/fireeye-report-'.$timeStamp.'_final.pdf', 'P');
-				if(File::exists(storage_path().'/fireeye-report-'.$timeStamp.'.pdf')){
-					File::delete(storage_path().'/fireeye-report-'.$timeStamp.'.pdf');
-				}
-			}else{
-				return $pdf->inline('invoice.pdf');
+			$merge->merge('browser', storage_path().'/reports/ntt-sdwan-report-'.$timeStamp.'.pdf', 'P');
+			if(File::exists(storage_path().'/ntt-sdwan-report-'.$timeStamp.'.pdf')){
+				File::delete(storage_path().'/ntt-sdwan-report-'.$timeStamp.'.pdf');
 			}
-    }
-    private function getQuestionScore($q, $section,$type='q'){
-    	$selected = session('questions.'.$section.'.pages.page'.$q.'.questions.'.$type.$q.'.selected');
-    	$total = 0;
-    	if(is_array($selected)){
-    		foreach ($selected as $select) {
-    			$select = explode("|", $select);
-    			$total += $select[1];
-    		}
-    	}else{
-    		$select = explode("|", $selected);
-    		$total = $select[1];
-    	}
-    	return $total;
-    }
+			if(File::exists(storage_path().'/ntt-sdwan-report-cover-'.$timeStamp.'.pdf')){
+				File::delete(storage_path().'/ntt-sdwan-report-cover-'.$timeStamp.'.pdf');
+			}
+		} elseif (session('product.id')==2){
+			$timeStamp = time();
+			$pdf->save(storage_path().'/fireeye-report-'.$timeStamp.'.pdf');
+			$merge = new \LynX39\LaraPdfMerger\PdfManage;
+			$locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
 
-    private function getQuestionScoreNew($q, $section,$page=false,$type='q'){
-    	$page = $page == false ? $q : $page;
-    	$selected = session('questions.'.$section.'.pages.page'.$page.'.questions.'.$type.$q.'.selected');
-    	if(count($selected)>1){
-    		$calc = session()->has('questions.'.$section.'.pages.page'.$page.'.questions.'.$type.$q.'.calc') ? session('questions.'.$section.'.pages.page'.$page.'.questions.'.$type.$q.'.calc') : false;
-    		if($calc){
-    			if($calc['type']=='average'){
+			$merge->addPDF(storage_path().'/fireeye_report_start'.$locale .'.pdf', 'all');
+			$merge->addPDF(storage_path().'/fireeye-report-'.$timeStamp.'.pdf', 'all');
+			$merge->addPDF(storage_path().'/fireeye_report_end'.$locale .'.pdf', 'all');
+
+			$merge->merge('browser', storage_path().'/fireeye-report-'.$timeStamp.'_final.pdf', 'P');
+			if(File::exists(storage_path().'/fireeye-report-'.$timeStamp.'.pdf')){
+				File::delete(storage_path().'/fireeye-report-'.$timeStamp.'.pdf');
+			}
+		}else{
+			return $pdf->inline('invoice.pdf');
+		}
+	}
+	private function getQuestionScore($q, $section,$type='q'){
+		$selected = session('questions.'.$section.'.pages.page'.$q.'.questions.'.$type.$q.'.selected');
+		$total = 0;
+		if(is_array($selected)){
+			foreach ($selected as $select) {
+				$select = explode("|", $select);
+				$total += $select[1];
+			}
+		}else{
+			$select = explode("|", $selected);
+			$total = $select[1];
+		}
+		return $total;
+	}
+
+	private function getQuestionScoreNew($q, $section,$page=false,$type='q'){
+		$page = $page == false ? $q : $page;
+		$selected = session('questions.'.$section.'.pages.page'.$page.'.questions.'.$type.$q.'.selected');
+		if(count($selected)>1){
+			$calc = session()->has('questions.'.$section.'.pages.page'.$page.'.questions.'.$type.$q.'.calc') ? session('questions.'.$section.'.pages.page'.$page.'.questions.'.$type.$q.'.calc') : false;
+			if($calc){
+				if($calc['type']=='average'){
 					$ave = [];
 					foreach ($selected as $select) {
 						$ave[]=$select['value'];
@@ -1209,26 +1286,26 @@ class PdfController extends Controller
 					}
 					$val = ($norm/$details['calc']['value'])*count($details['selected']);
 				}
-    		}
-    	}else{
-    		$val = $selected[0]['value'];
-    	}
-    	return $val;
-    }
+			}
+		}else{
+			$val = $selected[0]['value'];
+		}
+		return $val;
+	}
 
-    private function getAnswerText($q, $section,$type='q'){
-    	$selected = session('questions.'.$section.'.pages.page'.$q.'.questions.'.$type.$q.'.selected');
-    	$text = 0;
-    	if(is_array($selected)){
-    		$text = [];
-    		foreach ($selected as $select) {
-    			$select = explode("|", $select);
-    			$text[] = $select[0];
-    		}
-    	}else{
-    		$select = explode("|", $selected);
-    		$text = $select[0];
-    	}
-    	return $text;
-    }
+	private function getAnswerText($q, $section,$type='q'){
+		$selected = session('questions.'.$section.'.pages.page'.$q.'.questions.'.$type.$q.'.selected');
+		$text = 0;
+		if(is_array($selected)){
+			$text = [];
+			foreach ($selected as $select) {
+				$select = explode("|", $select);
+				$text[] = $select[0];
+			}
+		}else{
+			$select = explode("|", $selected);
+			$text = $select[0];
+		}
+		return $text;
+	}
 }

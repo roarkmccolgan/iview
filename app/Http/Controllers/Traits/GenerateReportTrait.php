@@ -680,7 +680,7 @@ trait GenerateReportTrait {
 			//overall
 			$rating = session('result.overall.rating');
 			$settings = array(
-				'back_image'=>asset('images/tools/8/comparisonbg.png'),
+				'back_image'=>asset('images/tools/8/comparisonbg.png?id=1'),
 				'back_image_width'=> 570,
 				'back_image_height'=> 320,
 				'pad_top'=>45,
@@ -691,13 +691,14 @@ trait GenerateReportTrait {
 				'stroke_colour' => 'none',
 				'back_stroke_width' => 0, 'back_stroke_colour' => 'none',
 				'show_axes' => false,
-				'axis_max_h' => 45,
+				'axis_max_h' => 30,
 				'axis_min_h' => 0,
 				'axis_stroke_width' => 1,
 				'axis_colour' => '#efefef',
 				'axis_text_colour' => '#999',
 				'axis_overlap' => 2,
 				'axis_font' => 'Frutiger Neue LT W1G', 'axis_font_size' => 12,
+				'bar_space' => 20,
 				'group_space' => 1,
 				'grid_colour' => 'none',
 				'show_data_labels' => false,
@@ -710,7 +711,13 @@ trait GenerateReportTrait {
 
 				'link_base' => '/',
 				'link_target' => '_top',
-				'minimum_grid_spacing' => 20
+				'minimum_grid_spacing' => 20,
+				'structured_data' => true,
+				'structure' => [
+					'key' => 'label',
+					'value' => 'score',
+					'colour' => 'colour'
+				]
 			);
 			$graph = new \SVGGraph(570, 320,$settings);
 			$base = config('baseline_'.session('product.id').'.overall');
@@ -745,23 +752,53 @@ trait GenerateReportTrait {
 			if(collect($verticals)->contains(strtolower(session('user.extra.industry')))){
 				$vertical_base = $base['benchmark-vertical-'.array_search(strtolower(session('user.extra.industry')), $verticals)];
 			}
-			$user_score = 7.5;
-			if(session('result.overall.rating')=='stage2'){
-				$user_score = 22.5;
-			}
-			if(session('result.overall.rating')=='stage3'){
-				$user_score = 37.5;
+			//Mean Calculation for user
+			$user_score = 0;
+			$actual_score = session('result.overall.score');
+			switch (session('result.overall.rating')) {
+				case 'stage1':
+					$user_score = (($actual_score - 9)*10)/18;
+					break;
+				case 'stage2':
+					$user_score = ((($actual_score - 27)*10)/6)+10;
+					break;
+				case 'stage3':
+					$user_score = ((($actual_score - 33)*10)/12)+20;
+					break;
 			}
 
 			$values = array(
-			 	array('Geographic Region' => $geographic_base, 'Organizasion Size' => $organisation_base, 'Industry' => $vertical_base, 'Overall Cloud Adoption' => $base['baseline']), //baseline
-			 	array('Geographic Region' => $user_score, 'Organizasion Size' => $user_score, 'Industry' => $user_score, 'Overall Cloud Adoption' => $user_score) //user
-			);
-			 
+			 	array(
+			 			'label' => 'Geographic Region',
+			 			'score' => $geographic_base,
+			 			'colour' => '#9E3D91'
+			 		),
+			 		array(
+			 			'label' => 'Organizasion Size',
+			 			'score' => $organisation_base,
+			 			'colour' => '#9E3D91'
+			 		),
+			 		array(
+			 			'label' => 'Industry',
+			 			'score' => $vertical_base,
+			 			'colour' => '#9E3D91'
+			 		),
+			 		array(
+			 			'label' => 'Peer Overall Cloud Adoption',
+			 			'score' => $base['baseline'],
+			 			'colour' => '#9E3D91'
+			 		),
+			 		array(
+			 			'label' => 'Your Overall Cloud Adoption',
+			 			'score' => $user_score,
+			 			'colour' => '#1A7ABB'
+			 		)
+			 );
+
 			$colours = array(array('#9E3D91'), array('#1A7ABB'));
 			$graph->colours = $colours;
 			$graph->Values($values);
-			$graph = $graph->Fetch('HorizontalGroupedBarGraph',false);
+			$graph = $graph->Fetch('HorizontalBarGraph',false);
 
 			$customCopy.= trans(session('product.alias').'.overallintro',
 				[
@@ -798,23 +835,36 @@ trait GenerateReportTrait {
 			//infrastructure graph
 			$settings['back_image'] = asset('images/tools/8/comparison_infrastructure.png');
 			$settings['back_image_height'] = 138;
-			$settings['axis_max_h'] = 15;
+			$settings['axis_max_h'] = 30;
 
 			$graphinfrastructure = new \SVGGraph(570, 138,$settings);
 			$base = config('baseline_'.session('product.id').'.infrastructure');
 
-			$user_score = 2.5;
-			if(session('result.infrastructure.rating')=='stage2'){
-				$user_score = 7.5;
-			}
-			if(session('result.infrastructure.rating')=='stage3'){
-				$user_score = 13.5;
+			$user_score = session('result.infrastructure.score');
+			switch (session('result.infrastructure.rating')) {
+				case 'stage1':
+					$user_score = (($user_score - 3)*10)/6;
+					break;
+				case 'stage2':
+					$user_score = ((($user_score - 9)*10)/3)+10;
+					break;
+				case 'stage3':
+					$user_score = ((($user_score - 11)*10)/4)+20;
+					break;
 			}
 
-			$values = array(
-			 	array('Infrastructure Performance' => $base['baseline']), //baseline
-			 	array('Infrastructure Performance' => $user_score) //user
-			);
+			 $values = array(
+			 	array(
+			 		'label' => 'Infrastructure Performance',
+			 		'score' => $base['baseline'],
+			 		'colour' => '#9E3D91'
+			 	),
+			 	array(
+			 		'label' => 'User Infrastructure Performance',
+			 		'score' => $user_score,
+			 		'colour' => '#1A7ABB'
+			 	),
+			 );
 
 			$graphinfrastructure->colours = $colours;
 			$graphinfrastructure->Values($values);
@@ -824,6 +874,7 @@ trait GenerateReportTrait {
 					'graph' => $graphinfrastructure,
 				]
 			);
+
 			
 			$q2score = $this->getQuestionScoreNew(2, 'infrastructure', 2);
 			$customCopy.= trans(session('product.alias').'.infrastructure-'.$infrastructureNumber.'-q2-'.$q2score);
@@ -845,23 +896,36 @@ trait GenerateReportTrait {
 			//intelligence graph
 			$settings['back_image'] = asset('images/tools/8/comparison_intelligence.png');
 			$settings['back_image_height'] = 138;
-			$settings['axis_max_h'] = 15;
+			$settings['axis_max_h'] = 30;
 
 			$graphintelligence = new \SVGGraph(570, 138,$settings);
 			$base = config('baseline_'.session('product.id').'.intelligence');
 
-			$user_score = 2.5;
-			if(session('result.intelligence.rating')=='stage2'){
-				$user_score = 7.5;
-			}
-			if(session('result.intelligence.rating')=='stage3'){
-				$user_score = 13.5;
+			$user_score = session('result.intelligence.score');
+			switch (session('result.intelligence.rating')) {
+				case 'stage1':
+					$user_score = (($user_score - 3)*10)/6;
+					break;
+				case 'stage2':
+					$user_score = ((($user_score - 9)*10)/3)+10;
+					break;
+				case 'stage3':
+					$user_score = ((($user_score - 11)*10)/4)+20;
+					break;
 			}
 
 			$values = array(
-			 	array('intelligence Performance' => $base['baseline']), //baseline
-			 	array('intelligence Performance' => $user_score) //user
-			);
+			 	array(
+			 		'label' => 'Intelligence Performance',
+			 		'score' => $base['baseline'],
+			 		'colour' => '#9E3D91'
+			 	),
+			 	array(
+			 		'label' => 'User Intelligence Performance',
+			 		'score' => $user_score,
+			 		'colour' => '#1A7ABB'
+			 	),
+			 );
 
 			$graphintelligence->colours = $colours;
 			$graphintelligence->Values($values);
@@ -898,18 +962,31 @@ trait GenerateReportTrait {
 			$graphoperations = new \SVGGraph(570, 138,$settings);
 			$base = config('baseline_'.session('product.id').'.operations');
 
-			$user_score = 2.5;
-			if(session('result.operations.rating')=='stage2'){
-				$user_score = 7.5;
-			}
-			if(session('result.operations.rating')=='stage3'){
-				$user_score = 13.5;
+			$user_score = session('result.operations.score');
+			switch (session('result.operations.rating')) {
+				case 'stage1':
+					$user_score = (($user_score - 3)*10)/6;
+					break;
+				case 'stage2':
+					$user_score = ((($user_score - 9)*10)/3)+10;
+					break;
+				case 'stage3':
+					$user_score = ((($user_score - 11)*10)/4)+20;
+					break;
 			}
 
 			$values = array(
-			 	array('operations Performance' => $base['baseline']), //baseline
-			 	array('operations Performance' => $user_score) //user
-			);
+			 	array(
+			 		'label' => 'Operations Performance',
+			 		'score' => $base['baseline'],
+			 		'colour' => '#9E3D91'
+			 	),
+			 	array(
+			 		'label' => 'User Operations Performance',
+			 		'score' => $user_score,
+			 		'colour' => '#1A7ABB'
+			 	),
+			 );
 
 			$graphoperations->colours = $colours;
 			$graphoperations->Values($values);
