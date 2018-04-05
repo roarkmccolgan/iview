@@ -853,6 +853,7 @@ class PdfController extends Controller
 		 			'colour' => '#1A7ABB'
 				];
 
+			dd($values);
 			$settings['back_image'] = asset('images/tools/8/'.$graphbg.'.png');
 			$settings['back_image_height'] = $graphHeight;
 
