@@ -665,7 +665,7 @@ trait GenerateReportTrait {
 			$overallNumber = (int) filter_var(session('result.overall.rating'), FILTER_SANITIZE_NUMBER_INT);
 			$infrastructureNumber =  (int) filter_var(session('result.infrastructure.rating'), FILTER_SANITIZE_NUMBER_INT);
 			$intelligenceNumber =  (int) filter_var(session('result.intelligence.rating'), FILTER_SANITIZE_NUMBER_INT);
-			$operationsNumber =  (int) filter_var(session('result.operations.rating'), FILTER_SANITIZE_NUMBER_INT);
+			$operationsNumber =  (int) filter_var(session('result.operations.rating'), FILTER_SANITIZE_NUMBER_INT);		
 			
 
 			$vars['introduction'] = trans(session('product.alias').'.introduction',
@@ -680,7 +680,7 @@ trait GenerateReportTrait {
 			//overall
 			$rating = session('result.overall.rating');
 			$settings = array(
-				'back_image'=>asset('images/tools/8/comparisonbg.png?id=1'),
+				'back_image'=>asset('images/tools/8/comparisonbg'.session('localeUrl').'.png?id=1'),
 				'back_image_width'=> 570,
 				'back_image_height'=> 320,
 				'pad_top'=>45,
@@ -719,21 +719,10 @@ trait GenerateReportTrait {
 					'colour' => 'colour'
 				]
 			);
-			$graph = new \SVGGraph(570, 320,$settings);
+
 			$base = config('baseline_'.session('product.id').'.overall');
-
-			$geographic_base = $base['baseline'];
-			$countries = ['en'=>'United Kingdom','fr'=>'France','de'=>'Germany'];
-			if(collect($countries)->contains(session('user.country'))){
-				$geographic_base = $base['benchmark-country-'.array_search(session('user.country'), $countries)];
-			}
-
-			$organisation_base = $base['baseline'];
-			$orgsizes = ['500-to-999'=>'500 to 999','1000-to-4999'=>'1,000 to 4,999','5000+'=>'5,000 or more'];
-			if(collect($orgsizes)->contains(session('user.extra.company_size'))){
-				$organisation_base = $base['benchmark-size-'.array_search(session('user.extra.company_size'), $orgsizes)];
-			}
-
+			$comparisons = ['industry'];
+			
 			$vertical_base = $base['baseline'];
 			$verticals = [
 				'banking-other-financial-services'=>'banking &amp; other financial services',
@@ -752,6 +741,23 @@ trait GenerateReportTrait {
 			if(collect($verticals)->contains(strtolower(session('user.extra.industry')))){
 				$vertical_base = $base['benchmark-vertical-'.array_search(strtolower(session('user.extra.industry')), $verticals)];
 			}
+
+			$organisation_base = $base['baseline'];
+			$orgsizes = ['500-to-999'=>'500 to 999','1000-to-4999'=>'1,000 to 4,999','5000+'=>'5,000 or more'];
+			if(collect($orgsizes)->contains(session('user.extra.company_size'))){
+				$comparisons[] = 'company';
+				$organisation_base = $base['benchmark-size-'.array_search(session('user.extra.company_size'), $orgsizes)];
+			}
+
+			$geographic_base = $base['baseline'];
+			$countries = ['en'=>'United Kingdom','fr'=>'France','de'=>'Germany'];
+			if(collect($countries)->contains(session('user.country'))){
+				$comparisons[] = 'country';
+				$geographic_base = $base['benchmark-country-'.array_search(session('user.country'), $countries)];
+			}
+			$comparisons = collect($comparisons);
+
+			
 			//Mean Calculation for user
 			$user_score = 0;
 			$actual_score = session('result.overall.score');
@@ -766,35 +772,80 @@ trait GenerateReportTrait {
 					$user_score = ((($actual_score - 33)*10)/12)+20;
 					break;
 			}
+			$values = [];
+			$graphbg = 'comparisonbg'.session('localeUrl');
+			$graphHeight = 320;
 
-			$values = array(
-			 	array(
-			 			'label' => 'Geographic Region',
-			 			'score' => $geographic_base,
-			 			'colour' => '#9E3D91'
-			 		),
-			 		array(
-			 			'label' => 'Organizasion Size',
-			 			'score' => $organisation_base,
-			 			'colour' => '#9E3D91'
-			 		),
-			 		array(
-			 			'label' => 'Industry',
-			 			'score' => $vertical_base,
-			 			'colour' => '#9E3D91'
-			 		),
-			 		array(
-			 			'label' => 'Peer Overall Cloud Adoption',
-			 			'score' => $base['baseline'],
-			 			'colour' => '#9E3D91'
-			 		),
-			 		array(
-			 			'label' => 'Your Overall Cloud Adoption',
-			 			'score' => $user_score,
-			 			'colour' => '#1A7ABB'
-			 		)
-			 );
+			if($comparisons->count()==3){
+				$values[] = [
+					'label' => 'Industry',
+		 			'score' => $vertical_base,
+		 			'colour' => '#9E3D91'
+				];
+				$values[] = [
+					'label' => 'Organizasion Size',
+		 			'score' => $organisation_base,
+		 			'colour' => '#9E3D91'
+				];
+				$values[] = [
+					'label' => 'Geographic Region',
+		 			'score' => $geographic_base,
+		 			'colour' => '#9E3D91'
+				];
+			}
+			if($comparisons->count()==2 && $comparisons->contains('country')){
+				$values[] = [
+					'label' => 'Industry',
+		 			'score' => $vertical_base,
+		 			'colour' => '#9E3D91'
+				];
+				$values[] = [
+					'label' => 'Geographic Region',
+		 			'score' => $geographic_base,
+		 			'colour' => '#9E3D91'
+				];
+				$graphHeight = 270;
+				$graphbg = 'comparisonbg_industry_geography'.session('localeUrl');
+			}
+			if($comparisons->count()==2 && $comparisons->contains('company')){
+				$values[] = [
+					'label' => 'Industry',
+		 			'score' => $vertical_base,
+		 			'colour' => '#9E3D91'
+				];
+				$values[] = [
+					'label' => 'Organizasion Size',
+		 			'score' => $organisation_base,
+		 			'colour' => '#9E3D91'
+				];
+				$graphHeight = 270;
+				$graphbg = 'comparisonbg_industry_company'.session('localeUrl');
+			}
+			if($comparisons->count()==1){
+				$values[] = [
+					'label' => 'Industry',
+		 			'score' => $vertical_base,
+		 			'colour' => '#9E3D91'
+				];
+				$graphHeight = 220;
+				$graphbg = 'comparisonbg_industry'.session('localeUrl');
+			}
 
+			$values[] = [
+					'label' => 'Peer Overall Cloud Adoption',
+		 			'score' => $base['baseline'],
+		 			'colour' => '#9E3D91'
+				];
+			$values[] = [
+					'label' => 'Your Overall Cloud Adoption',
+		 			'score' => $user_score,
+		 			'colour' => '#1A7ABB'
+				];
+
+			$settings['back_image'] = asset('images/tools/8/'.$graphbg.'.png');
+			$settings['back_image_height'] = $graphHeight;
+
+			$graph = new \SVGGraph(570, $graphHeight,$settings);
 			$colours = array(array('#9E3D91'), array('#1A7ABB'));
 			$graph->colours = $colours;
 			$graph->Values($values);
@@ -833,7 +884,8 @@ trait GenerateReportTrait {
 			$customCopy.= trans(session('product.alias').'.infrastructure-'.$infrastructureNumber.'-'.$rating);
 
 			//infrastructure graph
-			$settings['back_image'] = asset('images/tools/8/comparison_infrastructure.png');
+			$settings['bar_space'] = 10;
+			$settings['back_image'] = asset('images/tools/8/comparison_infrastructure'.session('localeUrl').'.png');
 			$settings['back_image_height'] = 138;
 			$settings['axis_max_h'] = 30;
 
@@ -894,7 +946,7 @@ trait GenerateReportTrait {
 			$customCopy.= trans(session('product.alias').'.intelligence-'.$intelligenceNumber.'-'.$rating);
 
 			//intelligence graph
-			$settings['back_image'] = asset('images/tools/8/comparison_intelligence.png');
+			$settings['back_image'] = asset('images/tools/8/comparison_intelligence'.session('localeUrl').'.png');
 			$settings['back_image_height'] = 138;
 			$settings['axis_max_h'] = 30;
 
@@ -955,9 +1007,9 @@ trait GenerateReportTrait {
 			$customCopy.= trans(session('product.alias').'.operations-'.$operationsNumber.'-'.$rating);
 
 			//operations graph
-			$settings['back_image'] = asset('images/tools/8/comparison_operations.png');
+			$settings['back_image'] = asset('images/tools/8/comparison_operations'.session('localeUrl').'.png?id=1');
 			$settings['back_image_height'] = 138;
-			$settings['axis_max_h'] = 15;
+			$settings['axis_max_h'] = 30;
 
 			$graphoperations = new \SVGGraph(570, 138,$settings);
 			$base = config('baseline_'.session('product.id').'.operations');
