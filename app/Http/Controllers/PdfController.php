@@ -780,6 +780,9 @@ class PdfController extends Controller
 					$user_score = ((($actual_score - 33)*10)/12)+20;
 					break;
 			}
+			if($user_score<0.5){
+				$user_score = 0.5;
+			}
 			$values = [];
 			$graphbg = 'comparisonbg'.session('localeUrl');
 			$graphHeight = 320;
@@ -912,6 +915,9 @@ class PdfController extends Controller
 					$user_score = ((($user_score - 11)*10)/4)+20;
 					break;
 			}
+			if($user_score<0.5){
+				$user_score = 0.5;
+			}
 
 			 $values = array(
 			 	array(
@@ -954,7 +960,7 @@ class PdfController extends Controller
 			$customCopy.= trans(session('product.alias').'.intelligence-'.$intelligenceNumber.'-'.$rating);
 
 			//intelligence graph
-			$settings['back_image'] = asset('images/tools/8/comparison_intelligence'.session('localeUrl').'.png');
+			$settings['back_image'] = asset('images/tools/8/comparison_intelligence'.session('localeUrl').'.png?id=1');
 			$settings['back_image_height'] = 138;
 			$settings['axis_max_h'] = 30;
 
@@ -972,6 +978,9 @@ class PdfController extends Controller
 				case 'stage3':
 					$user_score = ((($user_score - 11)*10)/4)+20;
 					break;
+			}
+			if($user_score<0.5){
+				$user_score = 0.5;
 			}
 
 			$values = array(
@@ -1033,6 +1042,9 @@ class PdfController extends Controller
 				case 'stage3':
 					$user_score = ((($user_score - 11)*10)/4)+20;
 					break;
+			}
+			if($user_score<0.5){
+				$user_score = 0.5;
 			}
 
 			$values = array(

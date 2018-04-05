@@ -772,6 +772,10 @@ trait GenerateReportTrait {
 					$user_score = ((($actual_score - 33)*10)/12)+20;
 					break;
 			}
+			if($user_score<0.5){
+				$user_score = 0.5;
+			}
+
 			$values = [];
 			$graphbg = 'comparisonbg'.session('localeUrl');
 			$graphHeight = 320;
@@ -904,6 +908,9 @@ trait GenerateReportTrait {
 					$user_score = ((($user_score - 11)*10)/4)+20;
 					break;
 			}
+			if($user_score<0.5){
+				$user_score = 0.5;
+			}
 
 			 $values = array(
 			 	array(
@@ -946,7 +953,7 @@ trait GenerateReportTrait {
 			$customCopy.= trans(session('product.alias').'.intelligence-'.$intelligenceNumber.'-'.$rating);
 
 			//intelligence graph
-			$settings['back_image'] = asset('images/tools/8/comparison_intelligence'.session('localeUrl').'.png');
+			$settings['back_image'] = asset('images/tools/8/comparison_intelligence'.session('localeUrl').'.png?id=1');
 			$settings['back_image_height'] = 138;
 			$settings['axis_max_h'] = 30;
 
@@ -964,6 +971,9 @@ trait GenerateReportTrait {
 				case 'stage3':
 					$user_score = ((($user_score - 11)*10)/4)+20;
 					break;
+			}
+			if($user_score<0.5){
+				$user_score = 0.5;
 			}
 
 			$values = array(
@@ -1025,6 +1035,9 @@ trait GenerateReportTrait {
 				case 'stage3':
 					$user_score = ((($user_score - 11)*10)/4)+20;
 					break;
+			}
+			if($user_score<0.5){
+				$user_score = 0.5;
 			}
 
 			$values = array(
