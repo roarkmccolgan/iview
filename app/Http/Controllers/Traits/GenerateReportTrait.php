@@ -775,15 +775,14 @@ trait GenerateReportTrait {
 			if($user_score<0.5){
 				$user_score = 0.5;
 			}
-
 			$values = [];
 			$graphbg = 'comparisonbg'.session('localeUrl');
 			$graphHeight = 320;
 
 			if($comparisons->count()==3){
 				$values[] = [
-					'label' => 'Industry',
-		 			'score' => $vertical_base,
+					'label' => 'Geographic Region',
+		 			'score' => $geographic_base,
 		 			'colour' => '#9E3D91'
 				];
 				$values[] = [
@@ -792,20 +791,20 @@ trait GenerateReportTrait {
 		 			'colour' => '#9E3D91'
 				];
 				$values[] = [
-					'label' => 'Geographic Region',
-		 			'score' => $geographic_base,
+					'label' => 'Industry',
+		 			'score' => $vertical_base,
 		 			'colour' => '#9E3D91'
 				];
 			}
 			if($comparisons->count()==2 && $comparisons->contains('country')){
 				$values[] = [
-					'label' => 'Industry',
-		 			'score' => $vertical_base,
+					'label' => 'Geographic Region',
+		 			'score' => $geographic_base,
 		 			'colour' => '#9E3D91'
 				];
 				$values[] = [
-					'label' => 'Geographic Region',
-		 			'score' => $geographic_base,
+					'label' => 'Industry',
+		 			'score' => $vertical_base,
 		 			'colour' => '#9E3D91'
 				];
 				$graphHeight = 270;
@@ -813,13 +812,13 @@ trait GenerateReportTrait {
 			}
 			if($comparisons->count()==2 && $comparisons->contains('company')){
 				$values[] = [
-					'label' => 'Industry',
-		 			'score' => $vertical_base,
+					'label' => 'Organizasion Size',
+		 			'score' => $organisation_base,
 		 			'colour' => '#9E3D91'
 				];
 				$values[] = [
-					'label' => 'Organizasion Size',
-		 			'score' => $organisation_base,
+					'label' => 'Industry',
+		 			'score' => $vertical_base,
 		 			'colour' => '#9E3D91'
 				];
 				$graphHeight = 270;
@@ -936,10 +935,10 @@ trait GenerateReportTrait {
 
 			
 			$q2score = $this->getQuestionScoreNew(2, 'infrastructure', 2);
-			$customCopy.= trans(session('product.alias').'.infrastructure-'.$infrastructureNumber.'-q2-'.$q2score);
+			$customCopy.= trans(session('product.alias').'.infrastructure-'.$overallNumber.'-q2-'.$q2score);
 
 			$q3score = $this->getQuestionScoreNew(3, 'infrastructure', 3);
-			$customCopy.= trans(session('product.alias').'.infrastructure-'.$infrastructureNumber.'-q3-'.$q3score);
+			$customCopy.= trans(session('product.alias').'.infrastructure-'.$overallNumber.'-q3-'.$q3score);
 
 			$customCopy.= '<div class="pb"></div>';
 
@@ -999,10 +998,10 @@ trait GenerateReportTrait {
 			);
 			
 			$q5score = $this->getQuestionScoreNew(5, 'intelligence', 2);
-			$customCopy.= trans(session('product.alias').'.intelligence-'.$intelligenceNumber.'-q5-'.$q5score);
+			$customCopy.= trans(session('product.alias').'.intelligence-'.$overallNumber.'-q5-'.$q5score);
 
 			$q6score = $this->getQuestionScoreNew(6, 'intelligence', 3);
-			$customCopy.= trans(session('product.alias').'.intelligence-'.$intelligenceNumber.'-q6-'.$q6score);
+			$customCopy.= trans(session('product.alias').'.intelligence-'.$overallNumber.'-q6-'.$q6score);
 
 			$customCopy.= '<div class="pb"></div>';
 
@@ -1063,10 +1062,10 @@ trait GenerateReportTrait {
 			);
 			
 			$q8score = $this->getQuestionScoreNew(8, 'operations', 2);
-			$customCopy.= trans(session('product.alias').'.operations-'.$operationsNumber.'-q8-'.$q8score);
+			$customCopy.= trans(session('product.alias').'.operations-'.$overallNumber.'-q8-'.$q8score);
 
 			$q9score = $this->getQuestionScoreNew(9, 'operations', 3);
-			$customCopy.= trans(session('product.alias').'.operations-'.$operationsNumber.'-q9-'.$q9score);
+			$customCopy.= trans(session('product.alias').'.operations-'.$overallNumber.'-q9-'.$q9score);
 
 			$customCopy.= '<div class="pb"></div>';
 

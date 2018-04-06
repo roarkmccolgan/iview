@@ -439,14 +439,14 @@ return array(
     'intelligence-1-stage2' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2 text-ntt-blue font-bold">
-            Based on your responses, your organization is ahead of its peers when it comes to the use of Network Intelligence, which is quite advanced compared to its overall ranking as a WAN Follower. 
+            Based on your responses, your organization is behind its peers when it comes to the use of Network Intelligence, which means this area is less developed than its overall ranking as a WAN Generalist suggests.
             </p>
         </div>
     ',
     'intelligence-1-stage3' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2 text-ntt-blue font-bold">
-            Based on your responses, your organization is ahead of its peers when it comes to the use of Network Intelligence, which is quite advanced compared to its overall ranking as a WAN Follower. 
+            Based on your responses, your organization is behind its peers when it comes to the use of Network Intelligence, which means this area is substantially less developed than its overall ranking as a WAN Leader suggests.
             </p>
         </div>
     ',
@@ -454,7 +454,7 @@ return array(
     'intelligence-2-stage1' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2 text-ntt-blue font-bold">
-            Based on your responses, your organization is behind its peers when it comes to the use of Network Intelligence, which means this area is less developed than its overall ranking as a WAN Generalist suggests.
+            Based on your responses, your organization is ahead of its peers when it comes to the use of Network Intelligence, which is quite advanced compared to its overall ranking as a WAN Follower. 
             </p>
         </div>
     ',
@@ -468,7 +468,7 @@ return array(
     'intelligence-2-stage3' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2 text-ntt-blue font-bold">
-            Based on your responses, your organization is ahead of its peers when it comes to the use of Network Intelligence, which is more advanced than its overall ranking as a WAN Generalist. 
+            Based on your responses, your organization is behind its peers when it comes to the use of Network Intelligence, which means this area is substantially less developed than its overall ranking as a WAN Leader suggests.
             </p>
         </div>
     ',
@@ -476,14 +476,14 @@ return array(
     'intelligence-3-stage1' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2 text-ntt-blue font-bold">
-            Based on your responses, your organization is behind its peers when it comes to the use of Network Intelligence, which means this area is substantially less developed than its overall ranking as a WAN Leader suggests.
+            Based on your responses, your organization is ahead of its peers when it comes to the use of Network Intelligence, which is quite advanced compared to its overall ranking as a WAN Follower. 
             </p>
         </div>
     ',
     'intelligence-3-stage2' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2 text-ntt-blue font-bold">
-            Based on your responses, your organization is behind its peers when it comes to the use of Network Intelligence, which means this area is substantially less developed than its overall ranking as a WAN Leader suggests.
+            Based on your responses, your organization is ahead of its peers when it comes to the use of Network Intelligence, which is more advanced than its overall ranking as a WAN Generalist. 
             </p>
         </div>
     ',
@@ -735,14 +735,14 @@ return array(
     'operations-1-stage2' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2 text-ntt-blue mt-4 font-bold">
-            Based on your responses, your organization is in line with its peers when it comes to WAN operations, which is more advanced than its overall ranking as a WAN Follower. 
+            Based on your responses, your organization is behind its peers when it comes to WAN operations, which means this area is less developed than its overall ranking as a WAN Generalist suggests.
             </p>
         </div>
     ',
     'operations-1-stage3' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2 text-ntt-blue mt-4 font-bold">
-            Based on your responses, your organization is ahead of its peers when it comes to WAN operations, which is quite advanced compared to its overall ranking as a WAN Follower. 
+            Based on your responses, your organization is behind its peers when it comes to WAN operations, which is behind its overall ranking as a WAN Leader. 
             </p>
         </div>
     ',
@@ -750,7 +750,7 @@ return array(
     'operations-2-stage1' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2 text-ntt-blue mt-4 font-bold">
-            Based on your responses, your organization is behind its peers when it comes to WAN operations, which means this area is less developed than its overall ranking as a WAN Generalist suggests.
+            Based on your responses, your organization is in line with its peers when it comes to WAN operations, which is more advanced than its overall ranking as a WAN Follower. 
             </p>
         </div>
     ',
@@ -764,7 +764,7 @@ return array(
     'operations-2-stage3' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2 text-ntt-blue mt-4 font-bold">
-            Based on your responses, your organization is ahead of its peers when it comes to WAN operations, which is more advanced than its overall ranking as a WAN Generalist. 
+            Based on your responses, your organization is in line with its peers when it comes to WAN operations, which is behind its overall ranking as a WAN Leader. 
             </p>
         </div>
     ',
@@ -772,17 +772,19 @@ return array(
     'operations-3-stage1' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2 text-ntt-blue mt-4 font-bold">
-            Based on your responses, your organization is behind its peers when it comes to WAN operations, which is behind its overall ranking as a WAN Leader. 
+            Based on your responses, your organization is ahead of its peers when it comes to WAN operations, which is quite advanced compared to its overall ranking as a WAN Follower. 
             </p>
         </div>
     ',
+
     'operations-3-stage2' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2 text-ntt-blue mt-4 font-bold">
-            Based on your responses, your organization is in line with its peers when it comes to WAN operations, which is behind its overall ranking as a WAN Leader. 
+            Based on your responses, your organization is ahead of its peers when it comes to WAN operations, which is more advanced than its overall ranking as a WAN Generalist. 
             </p>
         </div>
     ',
+    
     'operations-3-stage3' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2 text-ntt-blue mt-4 font-bold">
