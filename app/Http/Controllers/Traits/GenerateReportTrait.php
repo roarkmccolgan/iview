@@ -775,6 +775,19 @@ trait GenerateReportTrait {
 			if($user_score<0.5){
 				$user_score = 0.5;
 			}
+			if($user_score>9.5 && $user_score<10){
+				$user_score = 9.5;
+			}
+			if($user_score>=10 && $user_score<10.5){
+				$user_score = 10.5;
+			}
+			if($user_score>19.5 && $user_score<20){
+				$user_score = 19.5;
+			}
+			if($user_score>=20 && $user_score<20.5){
+				$user_score = 20.5;
+			}
+			
 			$values = [];
 			$graphbg = 'comparisonbg'.session('localeUrl');
 			$graphHeight = 320;
@@ -910,6 +923,18 @@ trait GenerateReportTrait {
 			if($user_score<0.5){
 				$user_score = 0.5;
 			}
+			if($user_score>9.5 && $user_score<10){
+				$user_score = 9.5;
+			}
+			if($user_score>=10 && $user_score<10.5){
+				$user_score = 10.5;
+			}
+			if($user_score>19.5 && $user_score<20){
+				$user_score = 19.5;
+			}
+			if($user_score>=20 && $user_score<20.5){
+				$user_score = 20.5;
+			}
 
 			 $values = array(
 			 	array(
@@ -974,6 +999,18 @@ trait GenerateReportTrait {
 			if($user_score<0.5){
 				$user_score = 0.5;
 			}
+			if($user_score>9.5 && $user_score<10){
+				$user_score = 9.5;
+			}
+			if($user_score>=10 && $user_score<10.5){
+				$user_score = 10.5;
+			}
+			if($user_score>19.5 && $user_score<20){
+				$user_score = 19.5;
+			}
+			if($user_score>=20 && $user_score<20.5){
+				$user_score = 20.5;
+			}
 
 			$values = array(
 			 	array(
@@ -1037,6 +1074,18 @@ trait GenerateReportTrait {
 			}
 			if($user_score<0.5){
 				$user_score = 0.5;
+			}
+			if($user_score>9.5 && $user_score<10){
+				$user_score = 9.5;
+			}
+			if($user_score>=10 && $user_score<10.5){
+				$user_score = 10.5;
+			}
+			if($user_score>19.5 && $user_score<20){
+				$user_score = 19.5;
+			}
+			if($user_score>=20 && $user_score<20.5){
+				$user_score = 20.5;
 			}
 
 			$values = array(
