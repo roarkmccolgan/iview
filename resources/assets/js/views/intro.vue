@@ -15,12 +15,6 @@
 		</div>
 		<div class="container mx-auto bg-white border-t border-b mt-6 p-8 sm:border sm:rounded shadow text-grey-darker">
 			<div class="flex flex-wrap justify-center">
-				<div class="sm:hidden mb-2 text-right">
-					<span class="inline-block mr-2 text-grey-dark text-sm">Change language:</span>
-					<span><a href="#" class="cursor-not-allowed text-ntt-blue" title="French">FR</a> |</span>
-					<span><a href="#" class="cursor-not-allowed text-ntt-blue" title="German">DE</a> |</span>
-					<span><a href="#" class="cursor-not-allowed text-ntt-blue" title="Spanish">ES</a></span>
-				</div>
 				<div class="w-full sm:w-1/2 relative">
 					<img class="max-w-full" :src="'/images/tools/' + assessment.tool.id + '/nttsdwan.jpg'" alt="">
 					<div class="absolute pin sm:hidden flex flex-col items-center justify-center">
@@ -33,13 +27,6 @@
 						</div>
 						<div class="mt-8 text-center">
 							<router-link class="hidden sm:inline-block bg-ntt-blue hover:text-ntt-gold shadow-md text-white py-4 px-6 rounded no-underline" :to="'/questions/1'">{{ $t('ntt-sdwan.startbut') }} <font-awesome-icon class="ml-2" :icon="icons.faArrowRight" /></router-link>
-
-							<div class="hidden sm:block mt-4">
-								<span class="inline-block mr-2 text-grey-dark text-sm">Change language:</span>
-								<span><a href="#" class="cursor-not-allowed text-ntt-blue" title="French">FR</a> |</span>
-								<span><a href="#" class="cursor-not-allowed text-ntt-blue" title="German">DE</a> |</span>
-								<span><a href="#" class="cursor-not-allowed text-ntt-blue" title="Spanish">ES</a></span>
-							</div>
 						</div>
 					</div>
 				</div>
