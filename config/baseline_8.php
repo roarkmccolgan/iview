@@ -19,6 +19,7 @@ return array(
         'benchmark-vertical-wholesale-trade' => 24.88,
         'benchmark-vertical-business-professional-services' => 26.51,
         'benchmark-vertical-software-and-it-services' => 31.71,
+        'benchmark-vertical-telecoms' => 31.71,
         'benchmark-vertical-media' => 26.62,
         'benchmark-vertical-manufacturing' => 24.35,
         'benchmark-vertical-transportation' => 27.94,

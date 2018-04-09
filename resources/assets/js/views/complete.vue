@@ -127,6 +127,7 @@
 												<option value="Wholesale trade" v-html="$t('general.wholesale')"></option>
 												<option value="Business/Professional services" v-html="$t('general.professional')"></option>
 												<option value="Software and IT services" v-html="$t('general.software')"></option>
+												<option value="Telecoms" v-html="$t('general.telecoms')"></option>
 												<option value="Media" v-html="$t('general.media')"></option>
 												<option value="Manufacturing" v-html="$t('general.manufacturing')"></option>
 												<option value="Transportation" v-html="$t('general.transportation')"></option>

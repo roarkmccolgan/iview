@@ -731,6 +731,7 @@ trait GenerateReportTrait {
 				'wholesale-trade'=>'wholesale trade',
 				'business-professional-services'=>'business/professional services',
 				'software-and-it-services'=>'software and it services',
+				'telecoms'=>'telecoms',
 				'media'=>'media',
 				'manufacturing'=>'manufacturing',
 				'transportation'=>'transportation',
@@ -787,7 +788,7 @@ trait GenerateReportTrait {
 			if($user_score>=20 && $user_score<20.5){
 				$user_score = 20.5;
 			}
-			
+
 			$values = [];
 			$graphbg = 'comparisonbg'.session('localeUrl');
 			$graphHeight = 320;

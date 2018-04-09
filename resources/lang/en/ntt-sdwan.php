@@ -55,13 +55,13 @@ return array(
         'hi' => 'Hi :Fname',
         'body' => 'As promised, here\'s a link to download your NTT Communications Next Generation WAN Advisor Report. This breaks down your results by category and provides you with actionable recommendations.',
         'link' => 'Download Report',
-        'extra' => 'Once you\'ve read the report why not visit <a href="http://www.ntt.com/en/services/network/software-defined-network.html" style="color:#054683">NTT Communications</a>',
+        'extra' => 'Once you\'ve read the report why not visit NTT Communications <a href="http://www.ntt.com/en/services/network/software-defined-network.html" style="color:#054683">SD-WAN content hub</a>',
         'regards' => 'Regards',
         'team' => 'The IDC Team'
     ],
     'introduction' => '
         <h2 class="text-ntt-blue mb-6">INTRODUCTION</h2>
-        <p class="mb-2">Thank you for completing the NTT Next-Generation WAN Advisor, with research and analysis by IDC. As organizations implement digital transformation strategies they are faced with accelerating network requirements and the need for a network that supports the business outcomes they are aiming to achieve. Digital transformation should therefore go hand in hand with network evolution.</p>
+        <p class="mb-2">Thank you for completing the NTT Communications Next-Generation WAN Advisor, with research and analysis by IDC. As organizations implement digital transformation strategies they are faced with accelerating network requirements and the need for a network that supports the business outcomes they are aiming to achieve. Digital transformation should therefore go hand in hand with network evolution.</p>
 
         <p class="mb-2">IDC has developed the Next-Generation WAN Advisor to help organizations assess the state of their WAN, and benchmark this performance against their peers. This interactive self-assessment tool is backed up by independent end-user research and IDC\'s in-depth understanding of this market. The research draws upon input from 300 network experts and decision makers to understand how advanced different organizations are in terms of their WAN investment and approach.</p>
 

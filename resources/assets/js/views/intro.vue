@@ -1,8 +1,17 @@
 <template>
 	<div class="flex-grow">
-		<div class="container mx-auto mt-6 mb-4 py-4 px-4 text-grey-darker">
-			<h1 class="font-light leading-tight">{{assessment.tool.title}}</h1>
-			<h3 class="font-light leading-tight">{{assessment.tool.sub_title}}</h3>
+		<div class="container mx-auto flex items-center mt-6 mb-4 py-4 px-4 text-grey-darker">
+			<div class="flex-1">
+				<h1 class="font-light leading-tight">{{assessment.tool.title}}</h1>
+				<h3 class="font-light leading-tight">{{assessment.tool.sub_title}}</h3>
+			</div>
+			<div class="hidden sm:block flex">
+				<span class="inline-block mr-2 text-grey-dark text-sm flex-grow"><font-awesome-icon class="ml-2" :icon="icons.faGlobe" /> Change language:</span>
+				
+				<span><a href="#" class="cursor-not-allowed text-ntt-blue" title="French">FR</a> |</span>
+				<span><a href="#" class="cursor-not-allowed text-ntt-blue" title="German">DE</a> |</span>
+				<span><a href="#" class="cursor-not-allowed text-ntt-blue" title="Spanish">ES</a></span>
+			</div>
 		</div>
 		<div class="container mx-auto bg-white border-t border-b mt-6 p-8 sm:border sm:rounded shadow text-grey-darker">
 			<div class="flex flex-wrap justify-center">
@@ -77,12 +86,14 @@
 <script>
 import FontAwesomeIcon from '@fortawesome/vue-fontawesome';
 import faArrowRight from '@fortawesome/fontawesome-pro-regular/faArrowRight';
+import faGlobe from '@fortawesome/fontawesome-pro-regular/faGlobe';
 export default{
 	data () {
 		return {
 			assessment: laravel,
 			icons: {
-				faArrowRight: faArrowRight
+				faArrowRight: faArrowRight,
+				faGlobe: faGlobe,
 			}
 		}
 	},
