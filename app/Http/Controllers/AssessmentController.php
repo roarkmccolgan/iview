@@ -11,6 +11,7 @@ use Carbon\Carbon;
 use Excel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\View;
 use JavaScript;
@@ -208,10 +209,14 @@ class AssessmentController extends Controller {
 		$cleanresults = $tool->assessments;
 		if(config('baseline_'.session('product.id').'.overall.include_answers_in_download_report')){
 			$cleanresults = $tool->assessments->map(function ($item, $key) {
-	    		$item->quiz = collect($item->quiz)->flatmap(function ($item){
-	    			return collect($item['pages'])->flatmap(function ($item){
-	    				return collect($item['questions'])->flatmap(function($item,$key){
-	    					return collect([$key=>$item['selected']]);
+	    		$item->quiz = collect($item->quiz)->flatmap(function ($quiz) use($item){
+	    			return collect($quiz['pages'])->flatmap(function ($pages) use($item){
+	    				return collect($pages['questions'])->flatmap(function($question,$key) use($item){
+	    					if(isset($question['selected'])){
+	    						return collect([$key=>$question['selected']]);
+	    					}
+	    					Log::info('answer not captured: '.$item->id.'\n '.$question['question']);
+	    					return collect([$key=>'answer not captured ']);
 	    				});
 	    			});
 	    		});
