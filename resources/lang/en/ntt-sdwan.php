@@ -101,7 +101,7 @@ return array(
     'overallstage2'=>'
         <div class="clearfix">
             <p class="mb-2 text-ntt-blue mt-4 font-bold">
-                Based on your responses to the IDC Next-Generation WAN Advisor, your organization has been positioned as a WAN Follower (Level 1 of 3), which means your organization is generally lagging behind its peers.
+                Based on your responses to IDC\'s Next-Generation WAN Advisor, your organization has been positioned as a WAN Generalist (Level 2 of 3), which means your organization is generally in line with its peers.
             </p>
         </div>
     ',
@@ -137,7 +137,7 @@ return array(
     'infrastructure-1-stage1' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2 text-ntt-blue font-bold">
-                Based on your responses, your organization is in line with its peers when it comes to WAN infrastructure capabilities, which means your organization ranks ahead of its overall performance as a WAN Follower in this area.
+                Based on your responses, your organization is lagging its peers when it comes to WAN infrastructure capabilities, which is consistent with its overall performance as a WAN Follower.
             </p>
         </div>
     ',
@@ -158,7 +158,7 @@ return array(
     'infrastructure-2-stage1' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2 text-ntt-blue font-bold">
-                Based on your responses, your organization is ahead of its peers when it comes to WAN infrastructure capabilities, which means your organization is quite advanced in this area compared to its overall performance as a WAN Follower.
+                Based on your responses, your organization is in line with its peers when it comes to WAN infrastructure capabilities, which means your organization is more advanced in this area compared to its overall performance as a WAN Follower.
             </p>
         </div>
     ',
@@ -172,7 +172,7 @@ return array(
     'infrastructure-2-stage3' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2 text-ntt-blue font-bold">
-                Based on your responses, your organization is lagging its peers when it comes to WAN infrastructure capabilities, which means this area is well behind its overall performance as a WAN Leader.
+                Based on your responses, your organization is in line with its peers when it comes to WAN infrastructure capabilities, which means this area is behind its overall performance as a WAN Leader.
             </p>
         </div>
     ',
@@ -194,7 +194,7 @@ return array(
     'infrastructure-3-stage3' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2 text-ntt-blue font-bold">
-                Based on your responses, your organization is in line with its peers when it comes to WAN infrastructure capabilities, which means this area ranks behind its overall performance as a WAN Leader.
+                Based on your responses, your organization is iahead of its peers when it comes to WAN infrastructure capabilities, which is consistent with its overall performance as a WAN Leader.
             </p>
         </div>
     ',
@@ -432,7 +432,7 @@ return array(
     'intelligence-1-stage1' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2 text-ntt-blue font-bold">
-            Based on your responses, your organization is in line with its peers when it comes to the use of Network Intelligence, which is more advanced than its overall ranking as a WAN Follower. 
+                Based on your responses, your organization is behind its peers when it comes to the use of Network Intelligence, which is more advanced than its overall ranking as a WAN Follower. 
             </p>
         </div>
     ',
@@ -454,7 +454,7 @@ return array(
     'intelligence-2-stage1' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2 text-ntt-blue font-bold">
-            Based on your responses, your organization is ahead of its peers when it comes to the use of Network Intelligence, which is quite advanced compared to its overall ranking as a WAN Follower. 
+                Based on your responses, your organization is in line with its peers when it comes to the use of Network Intelligence, which is more advanced than its overall ranking as a WAN Follower suggests. 
             </p>
         </div>
     ',
@@ -468,7 +468,7 @@ return array(
     'intelligence-2-stage3' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2 text-ntt-blue font-bold">
-            Based on your responses, your organization is behind its peers when it comes to the use of Network Intelligence, which means this area is substantially less developed than its overall ranking as a WAN Leader suggests.
+                Based on your responses, your organization is in line with its peers when it comes to the use of Network Intelligence, which means this area is less developed than its overall ranking as a WAN Leader suggests.
             </p>
         </div>
     ',
@@ -490,7 +490,7 @@ return array(
     'intelligence-3-stage3' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2 text-ntt-blue font-bold">
-            Based on your responses, your organization is in line with its peers when it comes to the use of Network Intelligence, which is behind its overall ranking as a WAN Leader. 
+                Based on your responses, your organization is ahead of its peers when it comes to the use of Network Intelligence, which is consistent with its overall ranking as a WAN Leader. 
             </p>
         </div>
     ',
@@ -502,7 +502,7 @@ return array(
     'intelligence-1-q5-1' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-                Like many WAN followers you have a passive stance to network optimization. You only respond when problems are reported. You need to adopt a more proactive and structural approach to ensure network performance and cost-effectiveness keep up with growing demands. Explore network intelligence and analytics solutions that can help you understand and optimize network and application performance.
+                Like many WAN Followers you have a passive stance to network optimization. You only respond when problems are reported. You need to adopt a more proactive and structural approach to ensure network performance and cost-effectiveness keep up with growing demands. Explore network intelligence and analytics solutions that can help you understand and optimize network and application performance.
             </p>
         </div>
     ',
@@ -538,14 +538,14 @@ return array(
     'intelligence-2-q5-1' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-                You have a more passive stance to network optimization than many other WAN generalist and only respond when problems are reported. You need to adopt a more proactive and structural approach to ensure network performance and cost-effectiveness keep up with growing demands. Explore network intelligence and analytics solutions that can help you understand and optimize network and application performance.
+                You have a more passive stance to network optimization than many other WAN Generalists and only respond when problems are reported. You need to adopt a more proactive and structural approach to ensure network performance and cost-effectiveness keep up with growing demands. Explore network intelligence and analytics solutions that can help you understand and optimize network and application performance.
             </p>
         </div>
     ',
     'intelligence-2-q5-2' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-                You have a reactive stance to network optimization. You are only triggered into action by device notifications. To catch up with other WAN generalist, you should pursue a more proactive and structural approach to ensure network performance and cost-effectiveness keep up with growing demands. Explore network intelligence and analytics solutions that can help you understand and optimize network and application performance.
+                You have a reactive stance to network optimization. You are only triggered into action by device notifications. To catch up with other WAN Generalists, you should pursue a more proactive and structural approach to ensure network performance and cost-effectiveness keep up with growing demands. Explore network intelligence and analytics solutions that can help you understand and optimize network and application performance.
             </p>
         </div>
     ',
@@ -566,7 +566,7 @@ return array(
     'intelligence-2-q5-5' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-                You have an advanced approach to network optimization, which is automated leveraging predictive analytics. This puts you among the most advanced WAN generalists in this area. You should build on this position and drive your efforts to automate and orchestrate your WAN across different domains, which would help you move up the overall WAN maturity ladder.
+                You have an advanced approach to network optimization, which is automated leveraging predictive analytics. This puts you among the most advanced WAN Generalists in this area. You should build on this position and drive your efforts to automate and orchestrate your WAN across different domains, which would help you move up the overall WAN maturity ladder.
             </p>
         </div>
     ',
@@ -581,7 +581,7 @@ return array(
     'intelligence-3-q5-2' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-                You have a reactive stance to network optimization, which is . You are only triggered into action by device notifications. To catch up with other WAN generalist, you should pursue a more proactive and structural approach to ensure network performance and cost-effectiveness keep up with growing demands. Explore network intelligence and analytics solutions that can help you understand and optimize network and application performance.
+                You have a reactive stance to network optimization. You are only triggered into action by device notifications. To catch up with other WAN Leaders, you should pursue a more proactive and structural approach to ensure network performance and cost-effectiveness keep up with growing demands. Explore network intelligence and analytics solutions that can help you understand and optimize network and application performance.
             </p>
         </div>
     ',
@@ -602,7 +602,7 @@ return array(
     'intelligence-3-q5-5' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-                You have an advanced approach to network optimization, which is automated leveraging predictive analytics. This puts you among the most advanced WAN leaders in this area. To stay ahead, you should now direct your efforts to driving automation and orchestration  across different WAN domains.
+                You have an advanced approach to network optimization, which is automated leveraging predictive analytics. This puts you among the most advanced WAN Leaders in this area. To stay ahead, you should now direct your efforts to driving automation and orchestration  across different WAN domains.
             </p>
         </div>
     ',
@@ -610,14 +610,14 @@ return array(
     'intelligence-1-q6-1' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-                At the same time, like many Followers, you still take a best effort approach to meeting application performance expectations. It is probably time for you to start looking at ways to separate traffic classes and prioritize traffic, in order to make sure your network meets the expectations of your end users.
+                At the same time, like many WAN Followers, you still take a best effort approach to meeting application performance expectations. It is probably time for you to start looking at ways to separate traffic classes and prioritize traffic, in order to make sure your network meets the expectations of your end users.
             </p>
         </div>
     ',
     'intelligence-1-q6-2' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-                At the same time, like many Followers, you separate traffic classes by physically segmenting the network. There are probably more efficient ways to achieve a similar goal. You should look into solutions that leverage virtual segmentation or traffic prioritization to ensure application performance expectations are met.
+                At the same time, like many WAN Followers, you separate traffic classes by physically segmenting the network. There are probably more efficient ways to achieve a similar goal. You should look into solutions that leverage virtual segmentation or traffic prioritization to ensure application performance expectations are met.
             </p>
         </div>
     ',
@@ -638,7 +638,7 @@ return array(
     'intelligence-1-q6-5' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-                At the same time you are at the forefront when it comes to meeting application performance expectations. Performance and user experience SLAs are ensured by an automatically adaptable network. This is exceptionally advanced for your position as a WAN follower. While you could clearly benefit from  driving automation and orchestration across domains, it may be more beneficial to focus your efforts on advancing other WAN elements and raise your overall ranking.
+                At the same time you are at the forefront when it comes to meeting application performance expectations. Performance and user experience SLAs are ensured by an automatically adaptable network. This is exceptionally advanced for your position as a WAN Follower. While you could clearly benefit from  driving automation and orchestration across domains, it may be more beneficial to focus your efforts on advancing other WAN elements and raise your overall ranking.
             </p>
         </div>
     ',
@@ -674,7 +674,7 @@ return array(
     'intelligence-2-q6-5' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-                At the same time you are at the forefront when it comes to meeting application performance expectations. Performance and user experience SLAs are ensured by an automatically adaptable network. This puts you ahead of most WAN generalists in terms of application performance management. You should build on this and look for ways to further drive automation and orchestration across domains that allow you to raise your overall WAN maturity level.
+                At the same time you are at the forefront when it comes to meeting application performance expectations. Performance and user experience SLAs are ensured by an automatically adaptable network. This puts you ahead of most WAN Generalists in terms of application performance management. You should build on this and look for ways to further drive automation and orchestration across domains that allow you to raise your overall WAN maturity level.
             </p>
         </div>
     ',
@@ -710,7 +710,7 @@ return array(
     'intelligence-3-q6-5' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-                At the same time you are at the forefront when it comes to meeting application performance expectations. Performance and user experience SLAs are ensured by an automatically adaptable network, as can be expected from a WAN leader. You should continue to push the boundaries and look for ways to further drive automation and orchestration across domains that allow you to raise your overall WAN maturity level.
+                At the same time you are at the forefront when it comes to meeting application performance expectations. Performance and user experience SLAs are ensured by an automatically adaptable network, as can be expected from a WAN Leader. You should continue to push the boundaries and look for ways to further drive automation and orchestration across domains that allow you to raise your overall WAN maturity level.
             </p>
         </div>
     ',
@@ -843,14 +843,14 @@ return array(
     'operations-2-q8-2' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-            WAN configuration is a manual process. This is likely an increasingly tedious and time-consuming part of your operational efforts. Follow the path that many other WAN generalists have already taken, and look into automation of these tasks. This will certainly help you take some complexity out of your operations, freeing up time and increasing agility in the process.
+            WAN configuration is a manual process. This is likely an increasingly tedious and time-consuming part of your operational efforts. Follow the path that many other WAN Generalists have already taken, and look into automation of these tasks. This will certainly help you take some complexity out of your operations, freeing up time and increasing agility in the process.
             </p>
         </div>
     ',
     'operations-2-q8-3' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-            Configuration is still mostly a manual process. Like many other WAN generalists you have automated some tasks, but are not nearly there. Speed up your efforts to automate configuration processes, so that you can further reduce complexity, free up time and increase agility.
+            Configuration is still mostly a manual process. Like many other WAN Generalists you have automated some tasks, but are not nearly there. Speed up your efforts to automate configuration processes, so that you can further reduce complexity, free up time and increase agility.
             </p>
         </div>
     ',
@@ -864,7 +864,7 @@ return array(
     'operations-2-q8-5' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-            Your WAN management is quite advanced compared to the typical WAN generalists. Self-optimizing network orchestration that integrated analytics, policies and automation has taken a lot of complexity out of your operations. This enables you to look beyond WAN management and focus your efforts on other tasks and the integration between them.
+            Your WAN management is quite advanced compared to the typical WAN Generalists. Self-optimizing network orchestration that integrated analytics, policies and automation has taken a lot of complexity out of your operations. This enables you to look beyond WAN management and focus your efforts on other tasks and the integration between them.
             </p>
         </div>
     ',
@@ -872,28 +872,28 @@ return array(
     'operations-3-q8-1' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-            WAN configuration is a manual process that you do if and when the need arises. This is likely an increasingly tedious and time-consuming part of your operational efforts. This contrasts sharply with your position as a WAN leader and this needs to be addressed. You need a more systematic way forward. Solutions that let you centralize and automate these tasks can come to your rescue. They will certainly help you take some complexity out of your operations, freeing up time and increasing agility in the process.
+            WAN configuration is a manual process that you do if and when the need arises. This is likely an increasingly tedious and time-consuming part of your operational efforts. This contrasts sharply with your position as a WAN Leader and this needs to be addressed. You need a more systematic way forward. Solutions that let you centralize and automate these tasks can come to your rescue. They will certainly help you take some complexity out of your operations, freeing up time and increasing agility in the process.
             </p>
         </div>
     ',
     'operations-3-q8-2' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-            WAN configuration is still a manual process, and likely an increasingly tedious and time-consuming part of your operational efforts. This is an ill fit with your position as a WAN leader. Automation of these tasks can come to your aid. This will certainly help you take some complexity out of your operations, freeing up time and increasing agility in the process.
+            WAN configuration is still a manual process, and likely an increasingly tedious and time-consuming part of your operational efforts. This is an ill fit with your position as a WAN Leader. Automation of these tasks can come to your aid. This will certainly help you take some complexity out of your operations, freeing up time and increasing agility in the process.
             </p>
         </div>
     ',
     'operations-3-q8-3' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-            Configuration is still mostly a manual process. You have automated some tasks, but are not nearly there. This puts you behind many other WAN leaders. Speed up your efforts to automate configuration processes, so that you can further reduce complexity, free up time and increase agility.
+            Configuration is still mostly a manual process. You have automated some tasks, but are not nearly there. This puts you behind many other WAN Leaders. Speed up your efforts to automate configuration processes, so that you can further reduce complexity, free up time and increase agility.
             </p>
         </div>
     ',
     'operations-3-q8-4' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-            Like many WAN leaders you have mostly automated your WAN management, but there are still some manual tasks left. To progress in this area you should explore how these remaining manual tasks can be automated and start thinking beyond that. Integrating automation with policies and intelligence will put you on the road toward self-optimizing network orchestration.
+            Like many WAN Leaders you have mostly automated your WAN management, but there are still some manual tasks left. To progress in this area you should explore how these remaining manual tasks can be automated and start thinking beyond that. Integrating automation with policies and intelligence will put you on the road toward self-optimizing network orchestration.
             </p>
         </div>
     ',
@@ -944,7 +944,7 @@ return array(
     'operations-2-q9-1' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-            Security plays a critical role in WAN strategy and operations. It is seen as the #1 WAN challenge and the vast majority of companies indicate they are improving network security in response to accelerating requirements. This makes managing security an increasingly important part of WAN operations. You manage your WAN security policy on a device by device basis, which can be quite a strain on your resources. It also positions you well behind most other WAN generalists in this aspect. You should address this in a more centralized and automated manner, which allow you to drive efficiency and consistency, speed up update cycles, and reduce risk.
+            Security plays a critical role in WAN strategy and operations. It is seen as the #1 WAN challenge and the vast majority of companies indicate they are improving network security in response to accelerating requirements. This makes managing security an increasingly important part of WAN operations. You manage your WAN security policy on a device by device basis, which can be quite a strain on your resources. It also positions you well behind most other WAN Generalists in this aspect. You should address this in a more centralized and automated manner, which allow you to drive efficiency and consistency, speed up update cycles, and reduce risk.
             </p>
         </div>
     ',
@@ -994,7 +994,7 @@ return array(
     'operations-3-q9-3' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-            Security plays a critical role in WAN strategy and operations. It is seen as the #1 WAN challenge and the vast majority of companies indicate they are improving network security in response to accelerating requirements. This makes managing security an increasingly important part of WAN operations. You dynamically enforce security policies across the network, but manual tasks can be quite a strain on your resources, while longer response times to threats can leave your WAN exposed. To catch up with other WAN leaders you should consider solutions that combine analytics and automation to rapidly detect and contain threats will improve your efficiency and response times and reduce risk.
+            Security plays a critical role in WAN strategy and operations. It is seen as the #1 WAN challenge and the vast majority of companies indicate they are improving network security in response to accelerating requirements. This makes managing security an increasingly important part of WAN operations. You dynamically enforce security policies across the network, but manual tasks can be quite a strain on your resources, while longer response times to threats can leave your WAN exposed. To catch up with other WAN Leaders you should consider solutions that combine analytics and automation to rapidly detect and contain threats will improve your efficiency and response times and reduce risk.
             </p>
         </div>
     ',
