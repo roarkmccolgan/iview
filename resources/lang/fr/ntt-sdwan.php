@@ -94,7 +94,7 @@ return array(
         
     ',
     'overallintro'=>'
-        <h2 class="text-ntt-blue mb-6">OVERALL PERFORMANCE</h2>
+        <h2 class="text-ntt-blue mb-6">PERFORMANCE GLOBALE</h2>
         <p class="mb-2">
             Les entreprises pourront tirer pleinement profit de la transformation numérique à condition que cela s\'accompagne d\'une évolution majeure de leur réseau WAN. IDC a créé l\'outil de conseil WAN de nouvelle génération pour aider les entreprises à évaluer l\'état de préparation au numérique de leur WAN f. Cet outil évalue leur approche en matière d\'infrastructure WAN, d\'intelligence et d\'opérations. D\'après une enquête menée auprès de 300 décideurs et influenceurs du monde du réseau, nous avons classé ces entreprises en trois niveaux de maturité : novices, généralistes et experts.  
         </p>
@@ -134,7 +134,7 @@ return array(
     ',
 
     'infrastructureintro' => '
-        <h2 class="w-2/3 ml-auto text-ntt-blue mb-6">WAN INFRASTRUCTURE</h2>
+        <h2 class="w-2/3 ml-auto text-ntt-blue mb-6">INFRASTRUCTURE WAN</h2>
         <div class="clearfix">
             <div class="w-1/3 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 25mm;"></div>
             <p class="w-2/3 float-left mb-2">
@@ -429,7 +429,7 @@ return array(
     ',
 
     'intelligenceintro' => '
-        <h2 class="w-2/3 ml-auto text-ntt-blue mb-6">WAN INTELLIGENCE</h2>
+        <h2 class="w-2/3 ml-auto text-ntt-blue mb-6"> INTELLIGENCE WAN</h2>
         <div class="clearfix">
             <div class="w-1/3 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 25mm;"></div>
             <p class="w-2/3 float-left mb-2">
@@ -725,7 +725,7 @@ return array(
     ',
 
     'operationsintro' => '
-        <h2 class="w-2/3 ml-auto text-ntt-blue mb-6">WAN OPERATIONS</h2>
+        <h2 class="w-2/3 ml-auto text-ntt-blue mb-6">Opérations WAN</h2>
         <div class="clearfix">
             <div class="w-1/3 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 25mm;"></div>
             <p class="w-2/3 float-left mb-2">
@@ -1023,7 +1023,7 @@ return array(
     ',
 
     'conclusionintro' => '
-        <h2 class="w-2/3 ml-auto text-ntt-blue mb-6">CONCLUSION</h2>
+        <h2 class="w-2/3 ml-auto text-ntt-blue mb-6">CONCLUSION ET SYNTHÈSE</h2>
         <div class="clearfix">
             <div class="w-1/3 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 25mm;"></div>
             <p class="w-2/3 float-left mb-2">
@@ -1033,7 +1033,7 @@ return array(
     ',
 
     'guidance' => '
-        <h2 class="w-2/3 ml-auto text-ntt-blue mb-6">Essential Guidance</h2>
+        <h2 class="w-2/3 ml-auto text-ntt-blue mb-6">PRINCIPES ESSENTIELS</h2>
         <div class="clearfix">
             <div class="w-2/3 ml-auto clearfix mb-2">
                 <div class="float-left rounded-full w-8 h-8 border border-grey-dark font-bold text-grey text-lg text-center mr-2 pt-1">1</div>

@@ -671,7 +671,7 @@ trait GenerateReportTrait {
 			$vars['introduction'] = trans(session('product.alias').'.introduction',
 				[
 					'result'=>trans(session('product.alias').'.'.session('result.overall.rating')),
-					'image'=>asset('images/tools/8/descriptions.png'),
+					'image'=>asset('images/tools/8/descriptions'.session('locale').'.png'),
 				]
 			);
 
@@ -790,7 +790,7 @@ trait GenerateReportTrait {
 			}
 
 			$values = [];
-			$graphbg = 'comparisonbg'.session('localeUrl');
+			$graphbg = 'comparisonbg'.session('locale');
 			$graphHeight = 320;
 
 			if($comparisons->count()==3){
@@ -822,7 +822,7 @@ trait GenerateReportTrait {
 		 			'colour' => '#9E3D91'
 				];
 				$graphHeight = 270;
-				$graphbg = 'comparisonbg_industry_geography'.session('localeUrl');
+				$graphbg = 'comparisonbg_industry_geography'.session('locale');
 			}
 			if($comparisons->count()==2 && $comparisons->contains('company')){
 				$values[] = [
@@ -836,7 +836,7 @@ trait GenerateReportTrait {
 		 			'colour' => '#9E3D91'
 				];
 				$graphHeight = 270;
-				$graphbg = 'comparisonbg_industry_company'.session('localeUrl');
+				$graphbg = 'comparisonbg_industry_company'.session('locale');
 			}
 			if($comparisons->count()==1){
 				$values[] = [
@@ -845,7 +845,7 @@ trait GenerateReportTrait {
 		 			'colour' => '#9E3D91'
 				];
 				$graphHeight = 220;
-				$graphbg = 'comparisonbg_industry'.session('localeUrl');
+				$graphbg = 'comparisonbg_industry'.session('locale');
 			}
 
 			$values[] = [
@@ -870,8 +870,8 @@ trait GenerateReportTrait {
 
 			$customCopy.= trans(session('product.alias').'.overallintro',
 				[
-					'image'=>session('url').'/'.session('localeUrl').'images/tools/8/graph'.$rating.session('locale').'png',
-					'icon'=>session('url').'/'.session('localeUrl').'images/tools/8/overallicon.png',
+					'image'=>session('url').'/images/tools/8/graph'.$rating.session('locale').'.png',
+					'icon'=>session('url').'/images/tools/8/overallicon.png',
 				]
 			);
 
@@ -894,7 +894,7 @@ trait GenerateReportTrait {
 
 			$customCopy.= trans(session('product.alias').'.infrastructureintro',
 				[
-					'icon'=>session('url').'/'.session('localeUrl').'images/tools/8/infrastructureicon.png'
+					'icon'=>session('url').'/images/tools/8/infrastructureicon.png'
 				]
 			);
 
@@ -902,7 +902,7 @@ trait GenerateReportTrait {
 
 			//infrastructure graph
 			$settings['bar_space'] = 10;
-			$settings['back_image'] = asset('images/tools/8/comparison_infrastructure'.session('localeUrl').'.png');
+			$settings['back_image'] = asset('images/tools/8/comparison_infrastructure'.session('locale').'.png');
 			$settings['back_image_height'] = 138;
 			$settings['axis_max_h'] = 30;
 
@@ -971,14 +971,14 @@ trait GenerateReportTrait {
 			//Intelligence
 			$customCopy.= trans(session('product.alias').'.intelligenceintro',
 				[
-					'icon'=>session('url').'/'.session('localeUrl').'images/tools/8/intelligenceicon.png'
+					'icon'=>session('url').'/images/tools/8/intelligenceicon.png'
 				]
 			);
 
 			$customCopy.= trans(session('product.alias').'.intelligence-'.$intelligenceNumber.'-'.$rating);
 
 			//intelligence graph
-			$settings['back_image'] = asset('images/tools/8/comparison_intelligence'.session('localeUrl').'.png?id=1');
+			$settings['back_image'] = asset('images/tools/8/comparison_intelligence'.session('locale').'.png');
 			$settings['back_image_height'] = 138;
 			$settings['axis_max_h'] = 30;
 
@@ -1047,14 +1047,14 @@ trait GenerateReportTrait {
 			$rating = session('result.operations.rating');
 			$customCopy.= trans(session('product.alias').'.operationsintro',
 				[
-					'icon'=>session('url').'/'.session('localeUrl').'images/tools/8/operationsicon.png'
+					'icon'=>session('url').'/images/tools/8/operationsicon.png'
 				]
 			);
 
 			$customCopy.= trans(session('product.alias').'.operations-'.$operationsNumber.'-'.$rating);
 
 			//operations graph
-			$settings['back_image'] = asset('images/tools/8/comparison_operations'.session('localeUrl').'.png?id=1');
+			$settings['back_image'] = asset('images/tools/8/comparison_operations'.session('locale').'.png');
 			$settings['back_image_height'] = 138;
 			$settings['axis_max_h'] = 30;
 
@@ -1122,7 +1122,7 @@ trait GenerateReportTrait {
 			//Conclusion
 			$customCopy.= trans(session('product.alias').'.conclusionintro',
 				[
-					'icon'=>session('url').'/'.session('localeUrl').'images/tools/8/conclusionicon.png'
+					'icon'=>session('url').'/images/tools/8/conclusionicon.png'
 				]
 			);
 

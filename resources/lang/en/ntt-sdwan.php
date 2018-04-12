@@ -441,7 +441,7 @@ return array(
     'intelligence-1-stage1' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2 text-ntt-blue font-bold">
-                Based on your responses, your organization is behind its peers when it comes to the use of Network Intelligence, which is more advanced than its overall ranking as a WAN Follower. 
+                Based on your responses, your organization is behind its peers when it comes to the use of Network Intelligence, which is consistent with its overall ranking as a WAN Follower. 
             </p>
         </div>
     ',

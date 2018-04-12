@@ -175,6 +175,7 @@ public function run(Request $request, $subdomain)
 	$tool = $request->get('product');
 	$fields = config('terminal.default_fields');
 	$extraFields = $tool->extra_fields()->get()->toArray();
+	$languages = $tool->languages;
 	$source = [];
 	if(is_array($fields)){
 		foreach ($fields as $fieldKey => $field) {
@@ -214,6 +215,7 @@ public function run(Request $request, $subdomain)
 	$view = $tool->template!=='nttsdwan' ? 'tool.'.session('template').'.intro' : 'tool.'.session('template').'.assessment';
 	JavaScript::put([
         'tool' => $tool,
+        'languages' => $languages,
         'fields' => $fields,
         'extraFields' => $extraFields,
         'questions' => $onlyQuestions,

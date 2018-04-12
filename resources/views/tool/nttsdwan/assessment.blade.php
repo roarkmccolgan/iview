@@ -24,7 +24,7 @@
 	</transition>
 	<div class="container mx-auto bg-white border-t border-b mt-6 mb-4 py-4 px-4 sm:border sm:rounded text-grey-darker">
 		<div class="flex justify-start">
-			<div class="mr-2 pr-2 border-r text-sm"><a href="/restart" class="no-underline text-ntt-blue opacity-75"><font-awesome-icon class="mr-1" :icon="icons.faUndo"></font-awesome-icon>@lang($tool->alias.'.restart')</a></div>
+			<div class="mr-2 pr-2 border-r text-sm"><a href="/{{session('locale')}}/restart" class="no-underline text-ntt-blue opacity-75"><font-awesome-icon class="mr-1" :icon="icons.faUndo"></font-awesome-icon>@lang($tool->alias.'.restart')</a></div>
 			<div class="mr-2 pr-2 border-r text-sm"><a href="/disclaimer" target="_blank" class="no-underline text-ntt-blue opacity-75">@lang('general.disclaimer')</a></div>
 			<div class="mr-2 pr-2 border-r text-sm"><a href="/privacy" target="_blank" class="no-underline text-ntt-blue opacity-75">@lang('general.idcprivacy')</a></div>
 			<div class="mr-2 pr-2 border-r text-sm"><a href="/cookies" target="_blank" class="no-underline text-ntt-blue opacity-75">@lang('general.cookiespolicylink')</a></div>

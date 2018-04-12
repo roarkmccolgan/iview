@@ -70,7 +70,7 @@ return array(
         'team' => 'El equipo de IDC'
     ],
     'introduction' => '
-        <h2 class="text-ntt-blue mb-6">INTRODUCTION</h2>
+        <h2 class="text-ntt-blue mb-6">INTRODUCCIÓN</h2>
         <p class="mb-2">Gracias por completar el asesor de red WAN de próxima generación de NTT, con la investigación y el análisis de IDC. A medida que las organizaciones implementan estrategias de transformación digital, se enfrentan cada vez más a requisitos de una red que alcance los resultados empresariales que intentan lograr. Por lo tanto, la transformación digital debería ir acompañada de la evolución de la red. </p>
 
         <p class="mb-2">IDC ha desarrollado el asesor de red WAN de próxima generación para ayudar a las organizaciones a evaluar el estado de su red WAN y a comparar este rendimiento con el de sus competidores. Esta herramienta de autoevaluación interactiva está respaldada por una investigación independiente del usuario final y por el profundo conocimiento que IDC tiene de este mercado. La investigación se basa en los comentarios de 300 expertos en redes y responsables de la toma de decisiones para conocer el grado de desarrollo de las distintas organizaciones con respecto a la inversión y el enfoque de su red WAN.</p>
@@ -95,7 +95,7 @@ return array(
         
     ',
     'overallintro'=>'
-        <h2 class="text-ntt-blue mb-6">OVERALL PERFORMANCE</h2>
+        <h2 class="text-ntt-blue mb-6">RENDIMIENTO EN GENERAL</h2>
         <p class="mb-2">
             Las organizaciones solo pueden aprovechar los beneficios de la transformación digital si esta va acompañada de una evolución de su red WAN. IDC ha creado el asesor de red WAN de próxima generación para ayudar a las organizaciones a evaluar la preparación de su red WAN para el futuro digital. Esta herramienta evalua a las organizaciones según su enfoque de la infraestructura, la inteligencia y las operaciones de la red WAN. Según una encuesta realizada a 300 personas influyentes en materia de redes y responsables de la toma de decisiones, clasificamos las organizaciones en tres niveles de madurez: Seguidores, "generalistas" y líderes.  
         </p>
@@ -135,7 +135,7 @@ return array(
     ',
 
     'infrastructureintro' => '
-        <h2 class="w-2/3 ml-auto text-ntt-blue mb-6">WAN INFRASTRUCTURE</h2>
+        <h2 class="w-2/3 ml-auto text-ntt-blue mb-6">Infraestructura de la red WAN</h2>
         <div class="clearfix">
             <div class="w-1/3 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 25mm;"></div>
             <p class="w-2/3 float-left mb-2">
@@ -430,7 +430,7 @@ return array(
     ',
 
     'intelligenceintro' => '
-        <h2 class="w-2/3 ml-auto text-ntt-blue mb-6">WAN INTELLIGENCE</h2>
+        <h2 class="w-2/3 ml-auto text-ntt-blue mb-6">Inteligencia de la red WAN</h2>
         <div class="clearfix">
             <div class="w-1/3 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 25mm;"></div>
             <p class="w-2/3 float-left mb-2">
@@ -726,7 +726,7 @@ return array(
     ',
 
     'operationsintro' => '
-        <h2 class="w-2/3 ml-auto text-ntt-blue mb-6">WAN OPERATIONS</h2>
+        <h2 class="w-2/3 ml-auto text-ntt-blue mb-6">Operaciones de la red WAN</h2>
         <div class="clearfix">
             <div class="w-1/3 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 25mm;"></div>
             <p class="w-2/3 float-left mb-2">
@@ -1024,7 +1024,7 @@ return array(
     ',
 
     'conclusionintro' => '
-        <h2 class="w-2/3 ml-auto text-ntt-blue mb-6">CONCLUSION</h2>
+        <h2 class="w-2/3 ml-auto text-ntt-blue mb-6">Conclusiones y cierre</h2>
         <div class="clearfix">
             <div class="w-1/3 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 25mm;"></div>
             <p class="w-2/3 float-left mb-2">
@@ -1034,7 +1034,7 @@ return array(
     ',
 
     'guidance' => '
-        <h2 class="w-2/3 ml-auto text-ntt-blue mb-6">Essential Guidance</h2>
+        <h2 class="w-2/3 ml-auto text-ntt-blue mb-6">Orientación esencial</h2>
         <div class="clearfix">
             <div class="w-2/3 ml-auto clearfix mb-2">
                 <div class="float-left rounded-full w-8 h-8 border border-grey-dark font-bold text-grey text-lg text-center mr-2 pt-1">1</div>

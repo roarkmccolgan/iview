@@ -10,10 +10,12 @@
 			</div>
 			<div class="hidden sm:block flex">
 				<span class="inline-block mr-2 text-grey-dark text-sm flex-grow"><font-awesome-icon class="ml-2" :icon="icons.faGlobe" /> {{ $t('ntt-sdwan.change-langauge') }}:</span>
-				
-				<span><a href="/fr/restart" class="text-ntt-blue" title="French">FR</a> |</span>
-				<span><a href="/de/restart" class="text-ntt-blue" title="German">DE</a> |</span>
-				<span><a href="/es/restart" class="text-ntt-blue" title="Spanish">ES</a></span>
+				<span v-for="(lang, index) in assessment.languages">
+					<span v-if="(lang.abbreviation != 'en' && lang.abbreviation != assessment.locale) || (lang.abbreviation == 'en' && assessment.locale!='')">
+						<a :href="getLangURL(lang.abbreviation) + '/restart'" class="text-ntt-blue" :title="lang.name">{{ lang.abbreviation.toUpperCase() }}</a>
+						<span class="inline-block mx-1" v-if="Object.keys(assessment.languages).length != index+1 ">|</span>
+					</span>
+				</span>
 			</div>
 		</div>
 		<div class="container mx-auto bg-white border-t border-b mt-6 p-8 sm:border sm:rounded shadow text-grey-darker">
@@ -92,6 +94,14 @@ export default{
 	},
 	components: {
 		FontAwesomeIcon,
+	},
+	methods: {
+		getLangURL: function(lang){
+			if(lang == 'en'){
+				return '';
+			}
+			return '/' + lang;
+		}
 	},
 	created: function(){
 		for (var q in this.questions) {

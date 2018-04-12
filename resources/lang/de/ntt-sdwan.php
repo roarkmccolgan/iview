@@ -69,7 +69,7 @@ return array(
         'team' => 'Das IDC-Team'
     ],
     'introduction' => '
-        <h2 class="text-ntt-blue mb-6">INTRODUCTION</h2>
+        <h2 class="text-ntt-blue mb-6">EINFÜHRUNG</h2>
         <p class="mb-2">Vielen Dank für den Abschluss des Next Generation WAN Advisors (der  NTT-Berater zu WAN der nächsten Generation) mit Forschung und Analysen von IDC. Während Unternehmen digitale Transformationsstrategien implementieren, stehen sie vor zunehmenden Netzwerkanforderungen und der Notwendigkeit eines Netzwerks, das die gewünschten geschäftlichen Ergebnisse unterstützt. Die digitale Transformation sollte daher mit der Netzwerkentwicklung einhergehen. </p>
 
         <p class="mb-2">IDC hat den Next Generation WAN Advisor entwickelt, um Organisationen bei der Beurteilung ihres WAN-Status-quo zu helfen und diese Leistung im Vergleich mit ihren Mitbewerbern zu bewerten. Dieses interaktive Selbsteinschätzungstool wird durch unabhängige Benutzerumfragen und die umfangreiche Marktkenntnis von IDC unterstützt. Die Forschung stützt sich auf Beiträge von 300 Netzwerkexperten und Entscheidungsträgern, um zu verstehen, wie fortschrittlich die verschiedenen Unternehmen in Bezug auf ihre WAN-Investitionen und -Herangehensweise sind.</p>
@@ -95,7 +95,7 @@ return array(
         
     ',
     'overallintro'=>'
-        <h2 class="text-ntt-blue mb-6">OVERALL PERFORMANCE</h2>
+        <h2 class="text-ntt-blue mb-6">GESAMTLEISTUNG</h2>
         <p class="mb-2">
             Unternehmen können nur dann alle Vorteile der digitalen Transformation nutzen, wenn diese mit der Weiterentwicklung ihres WAN einhergeht. IDC hat den Next Generation WAN Advisor entwickelt, damit Unternehmen die Reife ihres WAN für die digitale Zukunft bewerten können. Er bewertet Unternehmen nach ihrem Ansatz in den Bereichen WAN-Infrastruktur, -Intelligenz und -Operations (Betrieb). Basierend auf einer Befragung von 300 Netzwerkexperten und Entscheidungsträgern haben wir Unternehmen in drei Reifestufen eingeteilt: Follower, Generalisten und Leader.  
         </p>
@@ -135,7 +135,7 @@ return array(
     ',
 
     'infrastructureintro' => '
-        <h2 class="w-2/3 ml-auto text-ntt-blue mb-6">WAN INFRASTRUCTURE</h2>
+        <h2 class="w-2/3 ml-auto text-ntt-blue mb-6">WAN-INFRASTRUKTUR</h2>
         <div class="clearfix">
             <div class="w-1/3 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 25mm;"></div>
             <p class="w-2/3 float-left mb-2">
@@ -430,7 +430,7 @@ return array(
     ',
 
     'intelligenceintro' => '
-        <h2 class="w-2/3 ml-auto text-ntt-blue mb-6">WAN INTELLIGENCE</h2>
+        <h2 class="w-2/3 ml-auto text-ntt-blue mb-6">WAN-INTELLIGENZ</h2>
         <div class="clearfix">
             <div class="w-1/3 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 25mm;"></div>
             <p class="w-2/3 float-left mb-2">
@@ -726,7 +726,7 @@ return array(
     ',
 
     'operationsintro' => '
-        <h2 class="w-2/3 ml-auto text-ntt-blue mb-6">WAN OPERATIONS</h2>
+        <h2 class="w-2/3 ml-auto text-ntt-blue mb-6">WAN-OPERATIONS</h2>
         <div class="clearfix">
             <div class="w-1/3 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 25mm;"></div>
             <p class="w-2/3 float-left mb-2">
@@ -1024,7 +1024,7 @@ return array(
     ',
 
     'conclusionintro' => '
-        <h2 class="w-2/3 ml-auto text-ntt-blue mb-6">CONCLUSION</h2>
+        <h2 class="w-2/3 ml-auto text-ntt-blue mb-6">SCHLUSSFOLGERUNGEN </h2>
         <div class="clearfix">
             <div class="w-1/3 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 25mm;"></div>
             <p class="w-2/3 float-left mb-2">
@@ -1034,7 +1034,7 @@ return array(
     ',
 
     'guidance' => '
-        <h2 class="w-2/3 ml-auto text-ntt-blue mb-6">Essential Guidance</h2>
+        <h2 class="w-2/3 ml-auto text-ntt-blue mb-6">WICHTIGE HILFESTELLUNG</h2>
         <div class="clearfix">
             <div class="w-2/3 ml-auto clearfix mb-2">
                 <div class="float-left rounded-full w-8 h-8 border border-grey-dark font-bold text-grey text-lg text-center mr-2 pt-1">1</div>
