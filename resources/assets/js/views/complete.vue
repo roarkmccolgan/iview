@@ -1,12 +1,12 @@
 <template>
 	<div class="flex-grow ieflex1">
 		<div class="container mx-auto mt-6 mb-4 py-4 px-4 text-grey-darker">
-			<h1 class="font-light leading-tight">{{assessment.tool.title}}</h1>
-			<h3 class="font-light leading-tight">{{assessment.tool.sub_title}}</h3>
+			<h1 class="font-light leading-tight">{{ $t('ntt-sdwan.title') }}</h1>
+			<h3 class="font-light leading-tight">{{ $t('ntt-sdwan.sub-title') }}</h3>
 		</div>
 		<div class="container mx-auto bg-white border-t border-b mt-6 p-8 sm:border sm:rounded shadow text-grey-darker">
 			<div class="flex flex-wrap justify-center">
-				<div class="w-full sm:w-1/2 relative" v-html="$t('ntt-sdwan.finishtxt', { image: '/images/tools/' + assessment.tool.id + '/graph' + rating  + '.png'})">
+				<div class="w-full sm:w-1/2 relative" v-html="$t('ntt-sdwan.finishtxt', { image: '/images/tools/' + assessment.tool.id + '/graph' + rating  + assessment.locale +'.png'})">
 					
 				</div>
 				<div class="w-full sm:w-1/2">
@@ -149,6 +149,7 @@
 										</label>
 										<div class="inline-block relative w-full mb-2">
 											<select class="block appearance-none w-full bg-grey-lighter border text-grey-darker py-3 px-4 pr-8 rounded" :class="[errors.country ? 'border-red' : '']" id="country" name="country" @blur="hasError">
+												<option value="" v-html="$t('general.pleaseselect')"></option>
 												<option v-for="(item, key) in assessment.fields.country.options" :value="key">{{ item }}</option>
 											</select>
 											<div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-darker">
@@ -163,8 +164,8 @@
 										<input class="hidden" type="checkbox" id="terms" name="terms" value="terms" v-model="terms">
 										<div class="flex items-baseline">
 											<div class="mr-2 text-2xl sm:text-xl">
-													<font-awesome-icon :icon="icons.faSquare" v-if="!terms" />
-													<font-awesome-icon :icon="icons.faCheckSquare" v-else />
+												<font-awesome-icon :icon="icons.faSquare" v-if="!terms" />
+												<font-awesome-icon :icon="icons.faCheckSquare" v-else />
 											</div>
 											<div class="flex-grow" v-html="$t('ntt-sdwan.byreg')">
 												

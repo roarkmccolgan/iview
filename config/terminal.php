@@ -58,7 +58,6 @@ return [
 			'type' => 'select',
 			'default' => '',
 			'options' => [
-				'null' => 'Please select',
 				'Afghanistan' => 'Afghanistan',
 				'Åland Islands' => 'Åland Islands',
 				'Albania' => 'Albania',

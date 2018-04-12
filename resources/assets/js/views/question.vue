@@ -17,13 +17,13 @@
 							</div>
 						</div>
 						<div class="flex-grow block sm:hidden px-4">
-							<span class="text-sm text-grey-darker">{{lang.question | toTitle}} {{currentQuestion.name}} {{lang.of}} {{totalQuestions}}</span>
+							<span class="text-sm text-grey-darker">{{ $t('general.question') | toTitle}} {{currentQuestion.name}} {{$t('general.of')}} {{totalQuestions}}</span>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="container mx-auto py-2 text-grey-darker ">
-				<span class="text-sm text-grey-dark hidden sm:block sm:my-2">{{lang.question | toTitle}} {{currentQuestion.name}} {{lang.of}} {{totalQuestions}} -  {{currentQuestion.section | toTitle}}</span>
+				<span class="text-sm text-grey-dark hidden sm:block sm:my-2">{{ $t('general.question') | toTitle}} {{currentQuestion.name}} {{$t('general.of')}} {{totalQuestions}} -  {{currentQuestion.section | toTitle}}</span>
 				<transition name="fade">
 					<h1 class="font-light text-2xl sm:text-3xl leading-tight" v-show="showDetails" v-html="currentQuestion.question"></h1>
 				</transition>
@@ -54,7 +54,7 @@
 			<div class="container mx-auto mt-4">
 				<transition name="fade">
 					<button :class="buttonClass" v-show="showNext" @click="nextQuestion($event)">
-						<font-awesome-icon :icon="faSpinnerThird" size="2x" spin v-if="saving" /> <span v-else>{{lang.next}}</span>
+						<font-awesome-icon :icon="faSpinnerThird" size="2x" spin v-if="saving" /> <span v-else>{{$t('general.next')}}</span>
 					</button>
 				</transition>
 			</div>

@@ -78,7 +78,7 @@ Route::group(['domain' => '{subdomain}.'.env('APP_TLD','idcready.net'),'middlewa
 	//default en routes
 	Route::get('/', 'ToolController@run')->middleware(['routebyurl']);
 	Route::get('/restart',['middleware' => ['routebyurl','reloadquestions'], function () {
-		return redirect('/');
+		return redirect('/'.session('localeUrl'));
 	}]);
 
 	Route::get('/download/{uuid}', 'ToolController@getDownload')->middleware(['routebyurl']);

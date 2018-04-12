@@ -6,7 +6,16 @@ return array(
     'sponsoredby'=>'Sponsored by',
     'restart'=>'Restart Assessment',
     'assoc'=>'In association with',
-    'sponsors'=>'Symantec',
+    'sponsors'=>'NTT Communications',
+
+    'change-langauge'=>'Change language',
+    'further-insight'=>'Further Insight',
+    'how-the-wan'=>'How the WAN is Driving Digital Transformation',
+    'an-infbrief'=>'An Infobrief by IDC',
+    'driver-of'=>'SD-WAN: A Driver of Digital Transformation',
+    'an-infographic'=>'An Infographic by IDC',
+    'download-now'=>'Download Now',
+
     'title'=>'NTT Communications Next Generation WAN Advisor',
     'sub-title'=>'With Research and Analysis by IDC',
     'landing'=>'
@@ -22,7 +31,7 @@ return array(
     'send'=>'We can send you the full results directly to your mailbox',
     'register'=>'Register now to receive your personalized report',
     'provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
-    'byreg'=>'By registering with IDC, you accept our <a href="https://ntt.idcready.net/privacy" target="_blank">Privacy Policy</a> and NTT Communications <a href="http://www.eu.ntt.com/en/Footer/Privacy_Statement" target="_blank">Privacy Policy</a>.',
+    'byreg'=>'By registering with IDC, you accept our <a href="https://ntt.idcready.net/privacy" target="_blank">Privacy Policy</a> and NTT Europe Ltd., <a href="http://www.eu.ntt.com/en/Footer/Privacy_Statement" target="_blank">Privacy Policy</a>.',
     'wait'=>'While you\'re waiting why not tweet your results and see how your colleagues measure up?',
     'twitterlink'=>'https://twitter.com/home?status=Is%20your%20business%20GDPR%20ready?%20http%3A//bit.ly/2AwihN4%20%23Symantec',
     'facebooklink'=>'https://www.facebook.com/sharer/sharer.php?u=http%3A//bit.ly/2AwihN4',

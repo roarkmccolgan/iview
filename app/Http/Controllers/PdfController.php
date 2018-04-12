@@ -878,7 +878,7 @@ class PdfController extends Controller
 
 			$customCopy.= trans(session('product.alias').'.overallintro',
 				[
-					'image'=>session('url').'/'.session('localeUrl').'images/tools/8/graph'.$rating.'.png',
+					'image'=>session('url').'/'.session('localeUrl').'images/tools/8/graph'.$rating.session('locale').'png',
 					'icon'=>session('url').'/'.session('localeUrl').'images/tools/8/overallicon.png',
 				]
 			);
