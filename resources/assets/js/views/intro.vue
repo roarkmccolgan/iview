@@ -52,7 +52,7 @@
 							<p class="mb-2 flex-grow">
 								{{ $t('ntt-sdwan.an-infbrief') }}
 							</p>
-							<a href="/downloads/NTT_IDC_WAN_Infobrief_2018.pdf" target="_blank" class="block text-center border text-ntt-blue border-ntt-blue hover:bg-ntt-blue hover:text-ntt-gold shadow py-2 px-4 rounded no-underline">{{ $t('ntt-sdwan.download-now') }}</a>
+							<a :href="'/downloads/NTT_IDC_WAN_Infobrief_2018'+ assessment.locale +'.pdf'" target="_blank" class="block text-center border text-ntt-blue border-ntt-blue hover:bg-ntt-blue hover:text-ntt-gold shadow py-2 px-4 rounded no-underline">{{ $t('ntt-sdwan.download-now') }}</a>
 						</div>
 					</div>
 				</div>
@@ -66,7 +66,7 @@
 							<p class="mb-2 flex-grow">
 								{{ $t('ntt-sdwan.an-infographic') }}
 							</p>
-							<a href="/downloads/NTT_IDC_WAN_Infographic_2018.pdf" target="_blank" class="block text-center border text-ntt-blue border-ntt-blue hover:bg-ntt-blue hover:text-ntt-gold shadow py-2 px-4 rounded no-underline">{{ $t('ntt-sdwan.download-now') }}</a>
+							<a :href="'/downloads/NTT_IDC_WAN_Infographic_2018'+ assessment.locale +'.pdf'" target="_blank" class="block text-center border text-ntt-blue border-ntt-blue hover:bg-ntt-blue hover:text-ntt-gold shadow py-2 px-4 rounded no-underline">{{ $t('ntt-sdwan.download-now') }}</a>
 						</div>
 					</div>		
 				</div>
