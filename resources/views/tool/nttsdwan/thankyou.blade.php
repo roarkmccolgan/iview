@@ -70,5 +70,6 @@
 @stop
 @section('pagescript')
 <script src="//cdn.jsdelivr.net/npm/velocity-animate@1.5/velocity.min.js"></script>
+<script language='JavaScript1.1' async src='//pixel.mathtag.com/event/js?mt_id=1312712&mt_adid=171162&mt_exem=&mt_excl=&v1=&v2=&v3=&s1=&s2=&s3='></script>
 @parent
 @stop
