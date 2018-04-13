@@ -1376,6 +1376,9 @@ trait GenerateReportTrait {
 				File::delete(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
 			}
 		}elseif(session('product.id')==8){
+			if(file_exists(storage_path().'/'.$assessment_id.'_'.$name.'.pdf')){
+    			File::delete(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
+    		}
 			$pdf->save(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
 
 			$merge = new \LynX39\LaraPdfMerger\PdfManage;

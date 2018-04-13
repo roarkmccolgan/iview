@@ -740,10 +740,7 @@ public function postComplete(SubmitAssessmentsRequest $request)
     }
 
     public function getDownload(Request $request,$subdomain,$uuid){
-    	$assessment = Assessment::where('uuid', $uuid)->first();
-    	if(!$assessment){
-    		$assessment = Assessment::findOrFail($uuid);
-    	}
+    	$assessment = Assessment::where('uuid', $uuid)->firstOrFail();
     	$assessment->update(['fetched' => 1]);
     	$filename = $assessment->id.'_'.str_slug($assessment->fname.'_'.$assessment->lname.'_'.$assessment->tool->title.'_Assessment', '-').'.pdf';
     	$downloadName = str_slug($assessment->id.'-'.session('product.title').'-report', '-').'.pdf';
@@ -761,7 +758,7 @@ public function postComplete(SubmitAssessmentsRequest $request)
 				$this->wkhtml($assessment->id,$reportName);
 				$headers = array(
 		    		'Content-Type: application/pdf',
-		    		);
+		    	);
 		    	return response()->download(storage_path().'/reports/'.$filename, $downloadName, $headers);
     		}
     	}else{

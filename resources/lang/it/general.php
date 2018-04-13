@@ -4,7 +4,7 @@ return array(
 
     //FireEye Cloud id 2
     '2elqFormName'=>'',
-    '2restart'=>'Riavvia valutazioneent',
+    '2restart'=>'Riavvia Valutazione',
     '2assoc'=>'',
     '2sponsors'=>'FireEye',
     '2title'=>'Valutazione del rischio informatico di IDC',
@@ -34,7 +34,7 @@ Completa lo strumento di valutazione del rischio informatico di IDC per ulterior
   
     //general
     'next'=>'Seguente',
-    'back'=>'Indietro',
+    'back'=>'Precedente',
     'continue'=>'Continuare con la valutazione',
     'of'=>'of',
     'youre'=>'You\'re ',

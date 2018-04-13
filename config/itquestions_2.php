@@ -414,7 +414,7 @@ return array(
                                 )
                             ),
                             array(
-                                'label'=>'Rilevamento proattivo (solutions that are able to identify unknown threats through techniques such as behavioural analytics and machine learning, as opposed to being reliant on blocking known threats through the use of signatures)',
+                                'label'=>'Rilevamento proattivo (soluzioni in grado di identificare minacce sconosciute tramite tecniche quali l’analisi comportamentale e machine learning, rispetto al blocco delle sole minacce conosciute tramite l’uso di signature)',
                                 'name'=>'q4.2',
                                 'options'=>array(
                                     array(
@@ -624,7 +624,7 @@ return array(
                                 )
                             ),
                             array(
-                                'label'=>'Pianificazione della riparazione delle violazioni',
+                                'label'=>'Pianificazione del rimedio alle violazioni',
                                 'name'=>'q4.7',
                                 'options'=>array(
                                     array(
@@ -726,7 +726,7 @@ return array(
                         'name'=>'q5',
                         'options'=>array(
                             array(
-                                'label'=>'Non ha un proprietario dedicato.',
+                                'label'=>'Non ha un responsabile dedicato',
                                 'value'=>1,
                                 'checked'=>false,
                                 'position' => [
@@ -1712,7 +1712,7 @@ return array(
                 'questions' => array(
                     'q10'=>array(
                         'type'=>'button',
-                        'question'=>'Quale delle seguenti definizioni descrive meglio l\'adozione e l\'attuazione delle migliori prassi di sicurezza IT della Sua organizzazione? Selezionare una risposta',
+                        'question'=>'Quale delle seguenti definizioni descrive meglio l\'adozione e l\'attuazione delle Best Practices di sicurezza IT della Sua organizzazione? Selezionare una risposta',
                         'name'=>'q10',
                         'options'=>array(
                             array(
@@ -3369,7 +3369,7 @@ return array(
                                 )
                             ),
                             array(
-                                'label'=>'Valutazioni di compromesso',
+                                'label'=>'Verifica Stato Compromissione',
                                 'name'=>'q20.5',
                                 'options'=>array(
                                     array(
@@ -3507,7 +3507,7 @@ return array(
                                 )
                             ),
                             array(
-                                'label'=>'Ha compreso l\'atteggiamento della supply chain estesa o dei partner',
+                                'label'=>'Ha compreso la postura di sicurezza della supply chain estesa o dei partner',
                                 'name'=>'q21.4',
                                 'options'=>array(
                                     array(

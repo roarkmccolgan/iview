@@ -13,7 +13,7 @@ return array(
                 'questions' => array(
                     's1'=>array(
                         'type'=>'button',
-                        'question'=>'Dans quel pays votre entreprise est­elle située ?',
+                        'question'=>'Dans quel pays votre entreprise est­-elle située ?',
                         'name'=>'s1',
                         'options'=>array(
                             array(
@@ -794,7 +794,7 @@ return array(
                 'questions' => array(
                     'q6'=>array(
                         'type'=>'groupradio',
-                        'question'=>'Of the following, who are part of your cyber risk assessment structure?',
+                        'question'=>'D’après les propositions ci-dessous, qui, au sein de votre entreprise, prend part aux exercices de cyber-risques ?',
                         'name'=>'q6',
                         'calc'=>array(
                             'type'=>'normalize',
@@ -3246,11 +3246,11 @@ return array(
                 'questions' => array(
                     'q20'=>array(
                         'type'=>'groupradio',
-                        'question'=>'Do you make use of the following regarding IT Security: Breach response',
+                        'question'=>'Utilisez-vous les techniques suivantes pour la sécurité – réaction à une alerte d’infiltration dans vos systèmes ?',
                         'name'=>'q20',
                         'options'=>array(
                             array(
-                                'label'=>'automated breach response (e.g. machine learning)',
+                                'label'=>'Plan de réponse automatisé (exemple de machine learning)',
                                 'name'=>'q20.1',
                                 'options'=>array(
                                     array(
@@ -3280,7 +3280,7 @@ return array(
                                 )
                             ),
                             array(
-                                'label'=>'Policy updates',
+                                'label'=>'Politique de mise à jour',
                                 'name'=>'q20.2',
                                 'options'=>array(
                                     array(
