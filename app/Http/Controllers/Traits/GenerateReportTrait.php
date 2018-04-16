@@ -870,8 +870,8 @@ trait GenerateReportTrait {
 
 			$customCopy.= trans(session('product.alias').'.overallintro',
 				[
-					'image'=>session('url').'/images/tools/8/graph'.$rating.session('locale').'.png',
-					'icon'=>session('url').'/images/tools/8/overallicon.png',
+					'image'=>asset('/images/tools/8/graph'.$rating.session('locale').'.png'),
+					'icon'=>asset('/images/tools/8/overallicon.png'),
 				]
 			);
 
@@ -894,7 +894,7 @@ trait GenerateReportTrait {
 
 			$customCopy.= trans(session('product.alias').'.infrastructureintro',
 				[
-					'icon'=>session('url').'/images/tools/8/infrastructureicon.png'
+					'icon'=>asset('/images/tools/8/infrastructureicon.png')
 				]
 			);
 
@@ -971,7 +971,7 @@ trait GenerateReportTrait {
 			//Intelligence
 			$customCopy.= trans(session('product.alias').'.intelligenceintro',
 				[
-					'icon'=>session('url').'/images/tools/8/intelligenceicon.png'
+					'icon'=>asset('/images/tools/8/intelligenceicon.png')
 				]
 			);
 
@@ -1047,7 +1047,7 @@ trait GenerateReportTrait {
 			$rating = session('result.operations.rating');
 			$customCopy.= trans(session('product.alias').'.operationsintro',
 				[
-					'icon'=>session('url').'/images/tools/8/operationsicon.png'
+					'icon'=>asset('/images/tools/8/operationsicon.png')
 				]
 			);
 
@@ -1122,7 +1122,7 @@ trait GenerateReportTrait {
 			//Conclusion
 			$customCopy.= trans(session('product.alias').'.conclusionintro',
 				[
-					'icon'=>session('url').'/images/tools/8/conclusionicon.png'
+					'icon'=>asset('/images/tools/8/conclusionicon.png')
 				]
 			);
 
