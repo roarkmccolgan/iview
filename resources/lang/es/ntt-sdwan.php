@@ -8,7 +8,7 @@ return array(
     'assoc'=>'In association with',
     'sponsors'=>'Symantec',
 
-    'change-langauge'=>'Change language',
+    'change-langauge'=>'Cambie de idioma',
     'further-insight'=>'Informacion adicional',
     'how-the-wan'=>'Como la red WAN es impulsora de la Transformacion Digital',
     'an-infbrief'=>'Un "Infobrief" de IDC',

@@ -29,9 +29,9 @@ return array(
     'startbut'=>'Bewertung beginnen',
     
     'send'=>'We can send you the full results directly to your mailbox',
-    'register'=>'Enregistrez-vous pour recevoir votre rapport personnalisé',
+    'register'=>'Registrieren Sie sich jetzt, um einen personalisierten Report zu erhalten.',
     'provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
-    'byreg'=>'Durch die Registrierung bei <a href="https://ntt.idcready.net/privacy" target="_blank">IDC erklären</a> Sie sich mit unserer Datenschutzrichtlinie sowie mit der <a href="http://www.eu.ntt.com/en/Footer/Privacy_Statement" target="_blank">Kommunikationsdatenschutzrichtlinie von NTT</a> einverstanden.',
+    'byreg'=>'Durch die Registrierung bei <a href="https://ntt.idcready.net/privacy" target="_blank">IDC erklären</a> Sie sich mit unserer Datenschutzrichtlinie sowie mit der <a href="http://www.eu.ntt.com/en/Footer/Privacy_Statement" target="_blank">Kommunikationsdatenschutzrichtlinie von NTT Europe ltd.</a> einverstanden.',
     'wait'=>'While you\'re waiting why not tweet your results and see how your colleagues measure up?',
     'twitterlink'=>'https://twitter.com/home?status=Is%20your%20business%20GDPR%20ready?%20http%3A//bit.ly/2AwihN4%20%23Symantec',
     'facebooklink'=>'https://www.facebook.com/sharer/sharer.php?u=http%3A//bit.ly/2AwihN4',
