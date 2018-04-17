@@ -147,7 +147,7 @@ return array(
     'infrastructure-1-stage1' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2 text-ntt-blue font-bold">
-                Basierend auf Ihren Antworten steht Ihr Unternehmen hinter Ihren Mitbewerbern wenn es um WAN-Operations geht. Dies steht im Einklang mit der Gesamtleistung als WAN-Generalist. 
+                Basierend auf Ihren Antworten steht Ihr Unternehmen hinter Ihren Mitbewerbern, wenn es um WAN-Operations geht. Dies steht im Einklang mit der Gesamtleistung als WAN-Follower. 
             </p>
         </div>
     ',
@@ -168,7 +168,7 @@ return array(
     'infrastructure-2-stage1' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2 text-ntt-blue font-bold">
-                Basierend auf Ihren Antworten steht Ihr Unternehmen im Einklang mit Ihren Mitbewerbern wenn es um die Nutzung von Netzwerkintelligenz geht. Dies bedeutet, dass Sie als WAN-Follower fortgeschritten sind. 
+                Basierend auf Ihren Antworten steht Ihr Unternehmen im Einklang mit Ihren Mitbewerbern, wenn es um die Nutzung von Netzwerkintelligenz geht. Dies bedeutet, dass Sie als WAN-Follower fortgeschritten sind. 
             </p>
         </div>
     ',
@@ -738,7 +738,7 @@ return array(
     'operations-1-stage1' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2 text-ntt-blue mt-4 font-bold">
-                Basierend auf Ihren Antworten steht Ihr Unternehmen hinter Ihren Mitbewerbern wenn es um WAN-Operations geht. Dies steht im Einklang mit der Gesamtleistung als WAN-Generalist. 
+                Basierend auf Ihren Antworten steht Ihr Unternehmen hinter Ihren Mitbewerbern, wenn es um WAN-Operations geht. Dies steht im Einklang mit der Gesamtleistung als WAN-Follower. 
             </p>
         </div>
     ',
@@ -760,7 +760,7 @@ return array(
     'operations-2-stage1' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2 text-ntt-blue mt-4 font-bold">
-                Basierend auf Ihren Antworten steht Ihr Unternehmen im Einklang mit Ihren Mitbewerbern wenn es um WAN-Operations geht. Dies bedeutet, dass Sie als WAN-Follower fortgeschritten sind. 
+                Basierend auf Ihren Antworten steht Ihr Unternehmen im Einklang mit Ihren Mitbewerbern, wenn es um WAN-Operations geht. Dies bedeutet, dass Sie als WAN-Follower fortgeschritten sind. 
             </p>
         </div>
     ',
@@ -782,7 +782,7 @@ return array(
     'operations-3-stage1' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2 text-ntt-blue mt-4 font-bold">
-                Basierend auf Ihren Antworten ist Ihr Unternehmen den Mitbewerbern voraus wenn es um WAN-Operations geht. Dies bedeutet, dass Sie als WAN-Follower ziemlich fortgeschritten sind. 
+                Basierend auf Ihren Antworten ist Ihr Unternehmen den Mitbewerbern voraus, wenn es um WAN-Operations geht. Dies bedeutet, dass Sie als WAN-Follower ziemlich fortgeschritten sind. 
             </p>
         </div>
     ',

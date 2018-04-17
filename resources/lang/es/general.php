@@ -102,6 +102,16 @@ Complete la Herramienta de Evaluación de riesgos informáticos de IDC para sabe
     'education' => 'Education privada',
     'healthcare' => 'Proveedor de servicios de salud privada',
 
+    'less-than-100m'=>"Menos de €100 millones ",
+    '100m-250m'=>"€100-250 millon",
+    '250m-1b'=>"€250 milon - €1 mil millones ",
+    'more-than-1b'=>"Mas de €1 mil millones",
+
+    'less-than-500'=>"Menos de 500",
+    '500-to-999'=>"Entre 500 y 999",
+    '1000-to-4999'=>"Entre 1,000 y 4,999",
+    'more-than-5000'=>"5,000 o mas",
+
     'disclaimer'=>'Cláusula de exención de responsabilidad',
     'idcprivacy'=>'Política de Privacidad de IDC',
     'cookiespolicylink'=>'Política de Cookies',
