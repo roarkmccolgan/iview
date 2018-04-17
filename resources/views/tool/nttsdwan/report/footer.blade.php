@@ -17,7 +17,7 @@ $manifest = json_decode($json, TRUE);
 <div class="w-5/6 mx-auto border-t border-ntt-blue"></div>
 <div class="w-5/6 mx-auto pt-6 clearfix">
 	<div class="float-left w-2/3 mb-6 text-ntt-blue text-xs">
-		<strong>NTT Communications Next Generation WAN Advisor</strong><br/> Is your network ready for the digital future?
+		<strong>{{ trans('ntt-sdwan.title') }}</strong><br/> {{ trans('ntt-sdwan.sub-title') }}
 	</div>
 	<div class="float-left w-1/3 mb-6 text-right">
 		<img class="" src="{{ asset('images/tools/8/ntt.png')}}" alt="" style="width: 40mm" />

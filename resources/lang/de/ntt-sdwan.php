@@ -69,7 +69,7 @@ return array(
         'team' => 'Das IDC-Team'
     ],
     'introduction' => '
-        <h2 class="text-ntt-blue mb-6">EINFÜHRUNG</h2>
+        <h2 class="text-ntt-blue mb-3">EINFÜHRUNG</h2>
         <p class="mb-2">Vielen Dank für den Abschluss des Next Generation WAN Advisors (der  NTT-Berater zu WAN der nächsten Generation) mit Forschung und Analysen von IDC. Während Unternehmen digitale Transformationsstrategien implementieren, stehen sie vor zunehmenden Netzwerkanforderungen und der Notwendigkeit eines Netzwerks, das die gewünschten geschäftlichen Ergebnisse unterstützt. Die digitale Transformation sollte daher mit der Netzwerkentwicklung einhergehen. </p>
 
         <p class="mb-2">IDC hat den Next Generation WAN Advisor entwickelt, um Organisationen bei der Beurteilung ihres WAN-Status-quo zu helfen und diese Leistung im Vergleich mit ihren Mitbewerbern zu bewerten. Dieses interaktive Selbsteinschätzungstool wird durch unabhängige Benutzerumfragen und die umfangreiche Marktkenntnis von IDC unterstützt. Die Forschung stützt sich auf Beiträge von 300 Netzwerkexperten und Entscheidungsträgern, um zu verstehen, wie fortschrittlich die verschiedenen Unternehmen in Bezug auf ihre WAN-Investitionen und -Herangehensweise sind.</p>
@@ -85,7 +85,7 @@ return array(
         </p>
 
         <h3 class="ntt-blue">Abbildung 1 - Next Generation WAN Beurteilung </h3>
-        <img src=":image" alt="" class="block mx-auto mb-2" />
+        <img src=":image" alt="" class="block mx-auto mb-2" style="width: 150mm" />
         <p class="mb-2">
             Abbildung 1 zeigt, dass IDC 16 % der Unternehmen als WAN-Leader einstuft. Diese Unternehmen unterscheiden sich von anderen in der Regel durch ihren strategischen Ansatz in Bezug auf WAN und einer weit verbreiteten Nutzung von Intelligenz und Automatisierung. 4 % der Unternehmen sind WAN-Generalisten, während 43 % als WAN-Follower angesehen werden.
         </p>

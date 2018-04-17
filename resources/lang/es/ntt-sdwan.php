@@ -70,7 +70,7 @@ return array(
         'team' => 'El equipo de IDC'
     ],
     'introduction' => '
-        <h2 class="text-ntt-blue mb-6">INTRODUCCIÓN</h2>
+        <h2 class="text-ntt-blue mb-2">INTRODUCCIÓN</h2>
         <p class="mb-2">Gracias por completar el asesor de red WAN de próxima generación de NTT, con la investigación y el análisis de IDC. A medida que las organizaciones implementan estrategias de transformación digital, se enfrentan cada vez más a requisitos de una red que alcance los resultados empresariales que intentan lograr. Por lo tanto, la transformación digital debería ir acompañada de la evolución de la red. </p>
 
         <p class="mb-2">IDC ha desarrollado el asesor de red WAN de próxima generación para ayudar a las organizaciones a evaluar el estado de su red WAN y a comparar este rendimiento con el de sus competidores. Esta herramienta de autoevaluación interactiva está respaldada por una investigación independiente del usuario final y por el profundo conocimiento que IDC tiene de este mercado. La investigación se basa en los comentarios de 300 expertos en redes y responsables de la toma de decisiones para conocer el grado de desarrollo de las distintas organizaciones con respecto a la inversión y el enfoque de su red WAN.</p>
@@ -85,7 +85,7 @@ return array(
         <p class="mb-2">En función de sus respuestas, este informe le proporciona una referencia de la red WAN de su organización. Este informe le ofrece una orientación esencial y personalizada para ayudarle a prepararse para las exigencias del mañana y marcar su rumbo hacia una red WAN de próxima generación: una red que ofrece la escalabilidad, flexibilidad, facilidad de uso, rentabilidad y seguridad que su organización necesita para impulsar la transformación digital. </p>
 
         <h3 class="ntt-blue">Grafico 1 - Evaluacion de la red WAN de Proxima Generacion </h3>
-        <img src=":image" alt="" class="block mx-auto mb-2" />
+        <img src=":image" alt="" class="block mx-auto mb-2" style="width: 150mm" />
         <p class="mb-2">
             La figura 1 muestra que IDC considera el 16 % de las organizaciones como líderes de la red WAN. Estas organizaciones suelen diferenciarse de las demás por su enfoque estratégico de la red WAN, así como por un uso generalizado de la inteligencia y la automatización. El 41 % de las organizaciones son "generalistas" de la red WAN, mientras que un 43 % se consideran Seguidores de la red WAN.
         </p>

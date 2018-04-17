@@ -69,7 +69,7 @@ return array(
         'team' => 'L\'équipe IDC'
     ],
     'introduction' => '
-        <h2 class="text-ntt-blue mb-6">INTRODUCTION</h2>
+        <h2 class="text-ntt-blue mb-2">INTRODUCTION</h2>
         <p class="mb-2">Nous vous remercions d\'avoir répondu à l\'outil d\'évaluation WAN nouvelle génération NTT, avec la recherche et l\'analyse par IDC. À l\'heure où les entreprises mettent en œuvre des stratégies de transformation numérique, elles doivent faire face à l\'accélération des exigences en matière de réseaux et à la nécessité d\'un réseau qui permet d\'atteindre les les résultats opérationnels souhaités. La transformation numérique doit donc aller de pair avec l\'évolution du réseau. </p>
 
         <p class="mb-2">IDC a mis au point l\'outil d\'évaluation WAN nouvelle génération pour aider les entreprises à évaluer l\'état de leur WAN et pouvoir comparer leur résultat par rapport à leurs pairs. Cet outil d\'auto-évaluation interactif est soutenu par des enquêts indépenadntes auprès d\'utilisateurs finaux  et par la connaissance approfondie d\'IDC de ce marché. L\'enquête s\'appuie sur la participation de 300 experts et décideurs en réseaux  afin de comprendre comment différentes entreprises se positionnent en matière d\'investissements et d\'approche à l\'égard du réseau WAN.</p>
@@ -84,7 +84,7 @@ return array(
         <p class="mb-2">En fonction de vos réponses, ce rapport vous fournit une évaluation de votre WAN. Il donne des orientations essentielles et sur mesure pour vous aider à vous préparer aux exigences de demain et à élaborer votre stratégie WAN de dernière génération : un réseau qui offre l\'évolutivité, la flexibilité, la facilité, le rapport coût-efficacité, et l\'assurance dont votre entreprise a besoin pour mener à bien la transformation numérique. </p>
 
         <h3 class="ntt-blue">Figure 1 - Outil d\'évaluation WAN de nouvelle génération</h3>
-        <img src=":image" alt="" class="block mx-auto mb-2" />
+        <img src=":image" alt="" class="block mx-auto mb-2" style="width: 150mm" />
         <p class="mb-2">
             La figure 1 montre que 16 % des entreprises sont expertes en matière de réWAN. En général, ces entreprises se distinguent par leur approche stratégique et un usage généralisé de l\'intelligence et de l\'automatisation. 41 % des entreprises sont des généralistes du WAN, tandis que 43 % sont considérées comme des novices.
         </p>

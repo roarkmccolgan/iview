@@ -103,7 +103,10 @@ Route::group(['domain' => '{subdomain}.'.env('APP_TLD','idcready.net'),'middlewa
 	Route::get('/template/{templates}/report/header', function($domain, $template){
 		$locale = App::getLocale();
 		$locale = $locale == 'en' ? '' : $locale;
-		return View::make('tool.'.$template.'.report.header'.$locale);
+		if(view()->exists('tool.'.$template.'.report.header'.$locale)){
+			return View::make('tool.'.$template.'.report.header'.$locale);
+		}
+		return View::make('tool.'.$template.'.report.header');
 	})->middleware(['routebyurl']);
 	Route::get('/template/{templates}/report/cover', function($domain, $template){
 		return View::make('tool.'.$template.'.report.cover');
