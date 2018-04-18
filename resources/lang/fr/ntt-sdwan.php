@@ -16,7 +16,7 @@ return array(
     'an-infographic'=>'Une infographie d\'IDC',
     'download-now'=>'Téléchargez maintenant',
 
-    'title'=>'Outil de conseil pour un WAN de dernière génération, NTT Communications',
+    'title'=>'Outil de conseil pour un WAN de nouvelle génération, NTT Communications',
     'sub-title'=>'Avec recherche et analyse par IDC',
     'landing'=>'
         <h2 class="font-light mb-4 text-ntt-blue leading-tight">Votre réseau est-il évolutif ?</h2>
@@ -64,29 +64,29 @@ return array(
         'hi' => 'Bonjour :Fname',
         'body' => 'Comme promis, voici un lien pour télécharger votre rapport établi par l\'outil de conseil WAN de nouvelle génération de NTT Communications. Ce rapport analyse vos résultats par catégorie et vous fournit des recommandations concrètes.',
         'link' => 'Télécharger le rapport',
-        'extra' => 'Après avoir lu le rapport, n\'hésitez pas à vous rendre sur le site de <a href="http://www.ntt.com/en/services/network/software-defined-network.html" style="color:#054683">SD-WAN content hub</a>',
+        'extra' => 'Après avoir lu le rapport, n\'hésitez pas à vous rendre sur le site <a href="http://www.ntt.com/en/services/network/software-defined-network.html" style="color:#054683">SD-WAN content hub</a>',
         'regards' => 'Cordialement',
         'team' => 'L\'équipe IDC'
     ],
     'introduction' => '
         <h2 class="text-ntt-blue mb-2">INTRODUCTION</h2>
-        <p class="mb-2">Nous vous remercions d\'avoir répondu à l\'outil d\'évaluation WAN nouvelle génération NTT, avec la recherche et l\'analyse par IDC. À l\'heure où les entreprises mettent en œuvre des stratégies de transformation numérique, elles doivent faire face à l\'accélération des exigences en matière de réseaux et à la nécessité d\'un réseau qui permet d\'atteindre les les résultats opérationnels souhaités. La transformation numérique doit donc aller de pair avec l\'évolution du réseau. </p>
+        <p class="mb-2">Nous vous remercions d\'avoir répondu à l\'outil d\'évaluation WAN nouvelle génération NTT, dont l\'analyse a été effectuée par IDC. À l\'heure où les entreprises mettent en œuvre des stratégies de transformation numérique, elles doivent faire face à l\'accélération des exigences en matière de réseaux et à la nécessité d\'un réseau qui permet d\'atteindre les résultats opérationnels souhaités. La transformation numérique doit donc aller de pair avec d\'atteindre les résultats. </p>
 
-        <p class="mb-2">IDC a mis au point l\'outil d\'évaluation WAN nouvelle génération pour aider les entreprises à évaluer l\'état de leur WAN et pouvoir comparer leur résultat par rapport à leurs pairs. Cet outil d\'auto-évaluation interactif est soutenu par des enquêts indépenadntes auprès d\'utilisateurs finaux  et par la connaissance approfondie d\'IDC de ce marché. L\'enquête s\'appuie sur la participation de 300 experts et décideurs en réseaux  afin de comprendre comment différentes entreprises se positionnent en matière d\'investissements et d\'approche à l\'égard du réseau WAN.</p>
+        <p class="mb-2">IDC a mis au point l\'outil d\'évaluation WAN nouvelle génération pour aider les entreprises à évaluer l\'état de leur WAN et pouvoir comparer leur résultat par rapport à leurs pairs. Cet outil d\'auto-évaluation interactif est soutenu par des enquêtes indépendantes auprès d\'utilisateurs finaux  et par la connaissance approfondie d\'IDC de ce marché. L\'enquête s\'appuie sur la participation de 300 experts et décideurs en réseaux  afin de comprendre comment différentes entreprises se positionnent en matière d\'investissements et d\'approche à l\'égard du réseau WAN.</p>
 
-        <p class="mb-2">IDC a mis au point un cadre de comparaison dans lequel les réponses individuelles à l\'enquête permettent de classer les entreprises selon trois niveaux de maturité WAN, sur la base de leur approche dans les domaines suivants : </p>
+        <p class="mb-2">IDC a mis au point un cadre de comparaison dans lequel les réponses individuelles à l\'enquête permettent de classer les entreprises selon trois niveaux de maturité WAN, suivant leur approche des domaines suivants : </p>
         <ul class="mb-2">
-            <li>Infrastructure de réseau étendu, analyse de l\'usage et stratégie en ce qui concerne la connectivité et le SD-WAN</li>
-            <li>Intelligence WAN, couvrant l\'utilisation des données et d\'outils analytiques pour améliorer la performance des réseaux et des applications</li>
-            <li>Opérations WAN, en mettant l\'accent sur les tâches opérationnelles telles que la configuration et la gestion des politiques de sécurité</li>
+            <li>Infrastructure de réseau étendu, analyse de l\'usage et stratégie en ce qui concerne la connectivité et le SD-WAN.</li>
+            <li>Intelligence WAN, couvrant l\'utilisation des données et d\'outils analytiques pour améliorer la performance des réseaux et des applications.</li>
+            <li>Opérations WAN, en mettant l\'accent sur les tâches opérationnelles telles que la configuration et la gestion des politiques de sécurité.</li>
         </ul>
 
-        <p class="mb-2">En fonction de vos réponses, ce rapport vous fournit une évaluation de votre WAN. Il donne des orientations essentielles et sur mesure pour vous aider à vous préparer aux exigences de demain et à élaborer votre stratégie WAN de dernière génération : un réseau qui offre l\'évolutivité, la flexibilité, la facilité, le rapport coût-efficacité, et l\'assurance dont votre entreprise a besoin pour mener à bien la transformation numérique. </p>
+        <p class="mb-2">En fonction de vos réponses, ce rapport vous fournit une évaluation de votre WAN. Il donne des orientations essentielles et sur mesure pour vous aider à vous préparer aux exigences de demain et à élaborer votre stratégie WAN de nouvelle génération : un réseau qui offre l\'évolutivité, la flexibilité, la facilité, le rapport coût-efficacité, et l\'assurance dont votre entreprise a besoin pour mener à bien la transformation numérique. </p>
 
         <h3 class="ntt-blue">Figure 1 - Outil d\'évaluation WAN de nouvelle génération</h3>
         <img src=":image" alt="" class="block mx-auto mb-2" style="width: 150mm" />
         <p class="mb-2">
-            La figure 1 montre que 16 % des entreprises sont expertes en matière de réWAN. En général, ces entreprises se distinguent par leur approche stratégique et un usage généralisé de l\'intelligence et de l\'automatisation. 41 % des entreprises sont des généralistes du WAN, tandis que 43 % sont considérées comme des novices.
+            La figure 1 montre que 16 % des entreprises sont expertes en matière de WAN. En général, ces entreprises se distinguent par leur approche stratégique et un usage généralisé de l\'intelligence et de l\'automatisation. 41 % des entreprises sont des généralistes du WAN, tandis que 43 % sont considérées comme des novices.
         </p>
 
         <div class="pb"></div>
@@ -96,7 +96,7 @@ return array(
     'overallintro'=>'
         <h2 class="text-ntt-blue mb-6">PERFORMANCE GLOBALE</h2>
         <p class="mb-2">
-            Les entreprises pourront tirer pleinement profit de la transformation numérique à condition que cela s\'accompagne d\'une évolution majeure de leur réseau WAN. IDC a créé l\'outil de conseil WAN de nouvelle génération pour aider les entreprises à évaluer l\'état de préparation au numérique de leur WAN f. Cet outil évalue leur approche en matière d\'infrastructure WAN, d\'intelligence et d\'opérations. D\'après une enquête menée auprès de 300 décideurs et influenceurs du monde du réseau, nous avons classé ces entreprises en trois niveaux de maturité : novices, généralistes et experts.  
+            Les entreprises pourront tirer pleinement profit de la transformation numérique à condition que cela s\'accompagne d\'une évolution majeure de leur réseau WAN. IDC a créé l\'outil de conseil WAN de nouvelle génération pour aider les entreprises à évaluer l\'état de préparation de leur WAN au numérique. Cet outil évalue leur approche en matière d\'infrastructure WAN, et d\'activités opérationnelles. D\'après une enquête menée auprès de 300 décideurs et influenceurs du monde du réseau, nous avons classé ces entreprises en trois niveaux de maturité : novices, généralistes et experts.  
         </p>
         <img class="block mx-auto mt-6" src=":image" alt="" style="width: 140mm;">
     ',
