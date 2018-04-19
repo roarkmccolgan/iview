@@ -31,7 +31,50 @@ Completa lo strumento di valutazione del rischio informatico di IDC per ulterior
     'optimised'=>'Optimised',
     'optimisedtxt'=>"For organizations at this stage in their maturity, cloud defines the investment and decision making in their future business direction. They are also fully committed to a recurring revenue business model. All aspects of the business are focused on a broad set of KPIs, from customer adoption and growth targets, to satisfaction levels and renewal rates. All systems and processes are designed to optimize cloud profitability and many have fully automated cloud processes to deliver economies of scale. Critically, there is an emphasis on selling solutions, as well as developing and maximizing internal IP.",
     '2byreg'=>'Registrandovi con IDC, accettate i termini e le condizioni della nostra <a href="/privacy" target="_blank">informativa sulla privacy</a> e di quella di <a href="https://www.fireeye.com/company/privacy.html" target="_blank">FireEye</a>. Le informazioni raccolte saranno condivise con FireEye a fini di marketing diretto.',
-  
+   //Symantec 7
+    '7elqFormName'=>'',
+    '7developedby'=>'Sviluppato da',
+    '7sponsoredby'=>'Sponsorizzato da',
+    '7restart'=>'Riavvia valutazione',
+    '7assoc'=>'In associazione con',
+    '7sponsors'=>'Symantec',
+    '7title'=>'Valutazione della preparazione GDPR di IDC',
+    '7sub-title'=>'La preparazione GDPR della vostra azienda',
+    '7landing'=>'
+    <h3>La scadenza del GDPR è quasi arrivata<br/>Quanto siete pronti?</h3>
+    <p>
+        La scadenza del GDPR (regolamento generale sulla protezione dei dati) dell\'Unione Europea si sta avvicinando. Sostituirà tutte le attuali leggi nazionali sulla protezione dei dati nell\'UE e potrebbe avere un impatto sulla vostra organizzazione in termini di trattamento e protezione dei dati personali.
+    </p>
+    <p>
+        La valutazione della preparazione GDPR di IDC fornisce alcune indicazioni essenziali sulla conformità GDPR e sui requisiti necessari.
+    </p>',
+    '7startbut'=>'Inizia qui',
+
+    '7poor'=>'Fase 1 - Avvio', //reactive
+    '7poortxt'=>"Grazie per aver completato la valutazione GDPR di IDC.<br/>Questo report fornirà raccomandazioni sulle prossime tappe del percorso verso la conformità GDPR.",
+    '7poortweet' => "I took the @symantec GDPR Assessment and it's shown me where I can improve. Interested?",
+    '7standard'=>'Fase 2 - Accelerazione',
+    '7standardtxt'=>"Grazie per aver completato la valutazione GDPR di IDC.<br/>Questo report fornirà raccomandazioni sulle prossime tappe del percorso verso la conformità GDPR.",
+    '7standardtweet' => "I took the @symantec GDPR Assessment and my company is on the right track. See how your business does... http://bit.ly/1Y6JAqa",
+    '7good'=>'Fase 3 - Implementazione',
+    '7goodtxt'=>"Grazie per aver completato la valutazione GDPR di IDC.<br/>Questo report fornirà raccomandazioni sulle prossime tappe del percorso verso la conformità GDPR.",
+    '7goodtweet' => "I took the @symantec GDPR Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    '7aspirational'=>'Fase 4 - Ottimizzazione',
+    '7aspirationaltxt'=>"Grazie per aver completato la valutazione GDPR di IDC.<br/>Questo report fornirà raccomandazioni sulle prossime tappe del percorso verso la conformità GDPR.",
+    '7aspirationaltweet' => "I took the @symantec GDPR Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    '7best'=>'Fase 5 - Consolidamento',
+    '7besttxt'=>"Grazie per aver completato la valutazione GDPR di IDC.<br/>Questo report fornirà raccomandazioni sulle prossime tappe del percorso verso la conformità GDPR.",
+    '7besttweet' => "I took the @symantec GDPR Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    '7send'=>'We can send you the full results directly to your mailbox',
+    '7fullreport'=>'Per ricevere il report completo, compilate il modulo seguente.',
+    '7provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
+    '7byreg'=>'Registrandovi a IDC, accettate la nostra Informativa sulla <a href="/privacy" target="_blank">privacy e l\'Informativa</a> sulla <a href="https://www.symantec.com/privacy" target="_blank">privacy di Symantec</a>. Le informazioni che raccogliamo saranno condivise con Symantec a scopo di direct marketing.',
+    '7wait'=>'While you\'re waiting why not tweet your results and see how your colleagues measure up?',
+    '7twitterlink'=>'https://twitter.com/home?status=Is%20your%20business%20GDPR%20ready?%20http%3A//bit.ly/2AwihN4%20%23Symantec',
+    '7facebooklink'=>'https://www.facebook.com/sharer/sharer.php?u=http%3A//bit.ly/2AwihN4',
+    '7linkedinlink'=>'https://www.linkedin.com/shareArticle?mini=true&url=http%3A//bit.ly/2AwihN4&title=Symantec%20and%20IDC%20GDPR%20Assessment&summary=Is%20your%20business%20GDPR%20ready?&source=',
+
+
     //general
     'next'=>'Seguente',
     'back'=>'Precedente',
@@ -72,7 +115,7 @@ Completa lo strumento di valutazione del rischio informatico di IDC per ulterior
     'terms'=>'termini e condizioni',
     'accept'=>'Accetto i termini',
     'required'=>'necessario',
-    'emailreport'=>'Inviami il rapporto personalizzato sulla preparazione nei confronti del rischio informatico',
+    'emailreport'=>'Inviami il rapporto personalizzato',
     'hi'=>'Salve',
     'soon'=>'Your download link will be in your inbox soon.',
     'multierror'=>'Rispondi a questa domanda per continuare.',
@@ -80,6 +123,9 @@ Completa lo strumento di valutazione del rischio informatico di IDC per ulterior
     'errorSname'=>'Inserisci il tuo cognome',
     'errorEmail'=>'Inserisci il tuo indirizzo email',
     'errorCompany'=>'Inserisci il nome della tua azienda',
+    'errorEmployees'=>'Please select an option.',
+    'errorTurnover'=>'Please select an option.',
+    'errorIndustry'=>'Please select an option.',
     'errorCountry'=>'Inserisci il tuo Paese',
     'errorNumber'=>'Inserisci il tuo numero di telefono',
     'errorRelationship'=>'Please select Relationship Type',

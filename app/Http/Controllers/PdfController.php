@@ -480,12 +480,12 @@ class PdfController extends Controller
 			else{
 				$ordinal = $ends[$number % 10];
 			}
-
+			$maturitygraph = session('locale') == 'en' ? 'maturity.svg' : 'maturity_'.session('locale').'.svg';
 
 			$vars['introduction'] = trans(session('product.alias').'.introduction',
 				[
 					'result'=>trans(session('product.alias').'.'.session('result.overall.rating')),
-					'maturitygraph' => asset('images/tools/7/maturity.svg'),
+					'maturitygraph' => asset('images/tools/7/'.$maturitygraph),
 				]
 			);
 

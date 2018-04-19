@@ -472,11 +472,12 @@ trait GenerateReportTrait {
 			   $ordinal = $ends[$number % 10];
 			}
 
+			$maturitygraph = session('locale') == 'en' ? 'maturity.svg' : 'maturity_'.session('locale').'.svg';
 
 			$vars['introduction'] = trans(session('product.alias').'.introduction',
 				[
 					'result'=>trans(session('product.alias').'.'.session('result.overall.rating')),
-					'maturitygraph' => asset('images/tools/7/maturity.svg'),
+					'maturitygraph' => asset('images/tools/7/'.$maturitygraph),
 				]
 			);
 
@@ -1363,6 +1364,9 @@ trait GenerateReportTrait {
 				File::delete(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
 			}
 		}*/elseif(session('product.id')==7){
+			if(file_exists(storage_path().'/'.$assessment_id.'_'.$name.'.pdf')){
+    			File::delete(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
+    		}
 			$pdf->save(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
 
 			$merge = new \LynX39\LaraPdfMerger\PdfManage;
