@@ -12,7 +12,7 @@ return array(
     'complete_body' => '
         Il report personalizzato vi verrà inviato a breve al vostro indirizzo e-mail.<br/>
         In caso di mancata ricezione entro 5 minuti, vi preghiamo di controllare la cartella della posta indesiderata.<br/><br/>
-        <a class="btn btn--primary" target="_blank" href="https://www.symantec.com/en/uk/campaigns/data-privacy">
+        <a class="btn btn--primary" target="_blank" href="https://www.symantec.com/it/it/campaigns/data-privacy">
             Fate clic qui per ulteriori informazioni
         </a>',
     'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @symantec. Interested? ',// http://bit.ly/2gslXEh
