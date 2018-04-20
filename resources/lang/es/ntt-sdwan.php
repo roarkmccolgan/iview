@@ -19,7 +19,7 @@ return array(
     'title'=>'Asesor de red WAN de próxima generación de NTT Communications',
     'sub-title'=>'Con la investigación y el análisis de IDC',
     'landing'=>'
-        <h2 class="font-light mb-4 text-ntt-blue leading-tight">¿Su red está preparada para el futuro digital?</h2>
+        <h2 class="font-light mb-4 text-ntt-blue leading-tight">¿Está su red preparada para el futuro digital?</h2>
         <p class="mb-2">
             IDC, un proveedor líder global de investigación del mercado de la tecnología, ha desarrollado el asesor de red WAN de próxima generación, patrocinado por NTT Communications, para ayudar a las organizaciones a evaluar el estado de su red WAN a medida que adoptan la transformación digital.
         </p>
@@ -47,9 +47,9 @@ return array(
         <img class="max-w-full" src=":image" alt="">
         <p class="font-semibold mb-4 mt-4">Háblenos un poco de usted y reciba de inmediato su informe personalizado, que incluye lo siguiente:</p>
         <ul class="mb-4">
-            <li>¿Cómo se compara con sus competidores según el sector, el tamaño de la organización y la región geográfica?</li>
-            <li>Una orientación esencial en la que centrar sus esfuerzos en la red</li>
-            <li>¿Por qué los beneficios empresariales asociados convertirán esto en una prioridad del negocio actual?</li>
+            <li>Una comparación con sus competidores segun el sector, el tamaño de la organización y la región geográfica.</li>
+            <li>Una orientación esencial sobre como centrar sus esfuerzos en la red</li>
+            <li>Una explicación de como los beneficios empresariales derivados convertirán esto en una prioridad del negocio actual.</li>
         </ul>
     ',
     'complete_thankyou' => 'Gracias por su tiempo.',
@@ -75,14 +75,14 @@ return array(
 
         <p class="mb-2">IDC ha desarrollado el asesor de red WAN de próxima generación para ayudar a las organizaciones a evaluar el estado de su red WAN y a comparar este rendimiento con el de sus competidores. Esta herramienta de autoevaluación interactiva está respaldada por una investigación independiente del usuario final y por el profundo conocimiento que IDC tiene de este mercado. La investigación se basa en los comentarios de 300 expertos en redes y responsables de la toma de decisiones para conocer el grado de desarrollo de las distintas organizaciones con respecto a la inversión y el enfoque de su red WAN.</p>
 
-        <p class="mb-2">IDC ha creado un marco de comparación en el que las respuestas individuales de la encuesta se puntúan para agrupar a las organizaciones en tres niveles de madurez de la red WAN, según su enfoque de:</p>
+        <p class="mb-2">IDC ha creado un analisis comparativo en el que las respuestas individuales de la encuesta se puntuan en funcion de tres niveles de madurez de la red WAN, segun su enfoque en;</p>
         <ul class="mb-2">
             <li>La infraestructura de la red WAN, lo que incluye el uso y la estrategia en lo que respecta a la conectividad y la red SD-WAN</li>
             <li>La inteligencia de la red WAN, que abarca el uso de datos y análisis para mejorar el rendimiento de las redes y aplicaciones</li>
             <li>Las operaciones de la red WAN, con especial atención a las tareas operativas, como la configuración y la gestión de la política de seguridad</li>
         </ul>
 
-        <p class="mb-2">En función de sus respuestas, este informe le proporciona una referencia de la red WAN de su organización. Este informe le ofrece una orientación esencial y personalizada para ayudarle a prepararse para las exigencias del mañana y marcar su rumbo hacia una red WAN de próxima generación: una red que ofrece la escalabilidad, flexibilidad, facilidad de uso, rentabilidad y seguridad que su organización necesita para impulsar la transformación digital. </p>
+        <p class="mb-2">En función de sus respuestas, este informe le proporciona una referencia de la red WAN de su organización. Ademas le ofrece una orientación esencial y personalizada para ayudarle a prepararse para las exigencias del mañana y marcar su rumbo hacia una red WAN de próxima generación: una red que ofrece la escalabilidad, flexibilidad, facilidad de uso, rentabilidad y seguridad que su organización necesita para impulsar la transformación digital. </p>
 
         <h3 class="ntt-blue">Grafico 1 - Evaluacion de la red WAN de Proxima Generacion </h3>
         <img src=":image" alt="" class="block mx-auto mb-2" style="width: 150mm" />
@@ -97,7 +97,7 @@ return array(
     'overallintro'=>'
         <h2 class="text-ntt-blue mb-6">RENDIMIENTO EN GENERAL</h2>
         <p class="mb-2">
-            Las organizaciones solo pueden aprovechar los beneficios de la transformación digital si esta va acompañada de una evolución de su red WAN. IDC ha creado el asesor de red WAN de próxima generación para ayudar a las organizaciones a evaluar la preparación de su red WAN para el futuro digital. Esta herramienta evalua a las organizaciones según su enfoque de la infraestructura, la inteligencia y las operaciones de la red WAN. Según una encuesta realizada a 300 personas influyentes en materia de redes y responsables de la toma de decisiones, clasificamos las organizaciones en tres niveles de madurez: Seguidores, "generalistas" y líderes.  
+            Las organizaciones solo pueden aprovechar los beneficios de la transformación digital si esta va acompañada de una evolución de su red WAN. IDC ha creado el asesor de red WAN de próxima generación para ayudar a las organizaciones a evaluar la preparación de su red WAN para el futuro digital. Esta herramienta evalua a las organizaciones según su enfoque de la infraestructura, la inteligencia y las operaciones de la red WAN. Según una encuesta realizada a 300 personas influyentes en materia de redes y responsables de la toma de decisiones, clasificamos las organizaciones en tres niveles de madurez: Seguidores, Generalistas y Lideres.  
         </p>
         <img class="block mx-auto mt-6" src=":image" alt="" style="width: 140mm;">
     ',

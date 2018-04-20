@@ -133,7 +133,7 @@ return array(
                 'questions' => array(
                     'q2'=>array(
                         'type'=>'button',
-                        'question'=>'¿Cómo tiende a comprar sus soluciones de red WAN?',
+                        'question'=>'¿Cómo compra sus soluciones de red WAN?',
                         'name'=> 2,
                         'options'=>array(
                             array(
@@ -336,7 +336,7 @@ return array(
                 'questions' => array(
                     'q5'=>array(
                         'type'=>'button',
-                        'question'=>'¿Cuál es su enfoque de la utilización de la inteligencia de red para optimizar la red?',
+                        'question'=>'¿De qué manera utiliza la inteligencia de red para optimizar la red?',
                         'name'=> 5,
                         'options'=>array(
                             array(
