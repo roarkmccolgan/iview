@@ -54,11 +54,11 @@
 			<div class="sub">
 				<h2>UNIQUE VISITS</h2><span>{{$analyticsResults['total_results'][0][1]}}</span>
 			</div>
-			<div class="stat"><span class="equal">{{round(($analyticsResults['total_results'][0][1]/$analyticsResults['total_results'][0][0])*100)}}%</span></div>
+			<div class="stat"><span class="equal">{{round(($analyticsResults['total_results'][0][1]/($analyticsResults['total_results'][0][0]==0 ? 1:$analyticsResults['total_results'][0][0]))*100)}}%</span></div>
 		</div>
 		<div class="butpro butstyle">
 			<div class="sub">
-				<h2>Completion Rate</h2><span>{{round(($complete_total/$daily_total)*100)}}%</span>
+				<h2>Completion Rate</h2><span>{{round(($complete_total/($daily_total == 0 ? 1:$daily_total))*100)}}%</span>
 			</div>
 			<div class="stat"><span class="spk3"></span></div>
 			<!-- <div class="stat"><span class="spk2"></span></div> -->
@@ -191,10 +191,12 @@
 						<?php
 						$refTotal = 0;
 						?>
-						@foreach($analyticsResults['referrers_results'] as $referrer)
-						<?php $refTotal+=$referrer[1]; ?>
-						<li><i class="fa fa-bullhorn"></i>{{$referrer[0]}} <span class="pull-right value">{{$referrer[1]}}</span></li>
-						@endforeach
+						@if($analyticsResults['referrers_results'])
+							@foreach($analyticsResults['referrers_results'] as $referrer)
+							<?php $refTotal+=$referrer[1]; ?>
+							<li><i class="fa fa-bullhorn"></i>{{$referrer[0]}} <span class="pull-right value">{{$referrer[1]}}</span></li>
+							@endforeach
+						@endif
 					</ul>
 				</div>
 				<div class="total-data bg-blue"><a href="#" data-toggle="dropdown" class="dropdown-toggle">
@@ -219,12 +221,14 @@
 								</tr>
 							</thead>
 							<tbody class="no-border-x no-border-y">
-								@foreach($analyticsResults['country_results'] as $key=>$country)
-								<tr>
-									<td>{{$country[0]}}</td>
-									<td class="text-right">{{$country[1]}}</td>
-								</tr>
-								@endforeach
+								@if($analyticsResults['country_results'])
+									@foreach($analyticsResults['country_results'] as $key=>$country)
+									<tr>
+										<td>{{$country[0]}}</td>
+										<td class="text-right">{{$country[1]}}</td>
+									</tr>
+									@endforeach
+								@endif
 							</tbody>
 						</table>
 					</div>
@@ -253,6 +257,7 @@
 							</tr>
 						</thead>
 						<tbody class="no-border-x no-border-y">
+							@if($analyticsResults['dropoff_results'])
 							@foreach($analyticsResults['dropoff_results'] as $dropoff)
 								<tr>
 									<td>{{$dropoff[0]}}</td>
@@ -260,6 +265,7 @@
 									<td class="text-right">{{round($dropoff[2], 1, PHP_ROUND_HALF_UP)}}</td>
 								</tr>
 							@endforeach
+							@endif
 						</tbody>
 					</table>
 				</div>
