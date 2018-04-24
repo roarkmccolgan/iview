@@ -205,7 +205,7 @@ class AssessmentController extends Controller {
 		$chosenColumns = ['id','created_at','fname','lname','email','company','title','country','tel','referer','code','rating','extra','result'];
 
 
-		//if client wants all answers to be sent.
+		//if client wants all answers to be sent.		
 		$cleanresults = $tool->assessments;
 		if(config('baseline_'.session('product.id').'.overall.include_answers_in_download_report')){
 			$cleanresults = $tool->assessments->map(function ($item, $key) {
@@ -220,17 +220,17 @@ class AssessmentController extends Controller {
 	    				});
 	    			});
 	    		});
+	    		$item->report = session('url').session('localeUrl').'/download/'.$item->uuid;
 			    return collect($item);
 			});
 			$chosenColumns[] = 'quiz';
+			$chosenColumns[] = 'report';
 		}
 
 
 		$assessments = $cleanresults->map(function($assessment) use($chosenColumns){
 			return collect($assessment->toArray())->only($chosenColumns)->all();
 		});
-	    	//dd($assessments);
-
 		$assessments = $assessments->toArray();
 		//dd($assessments);
 
@@ -275,7 +275,6 @@ class AssessmentController extends Controller {
 			}
 			$cols = count($assessments[$assKey]) > $cols ? count($assessments[$assKey]) : $cols;
 		}
-		//dd($assessments);
 		
 		$alphas = range('A', 'Z');
 

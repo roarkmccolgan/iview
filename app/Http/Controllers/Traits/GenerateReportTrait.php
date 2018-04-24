@@ -472,7 +472,7 @@ trait GenerateReportTrait {
 			   $ordinal = $ends[$number % 10];
 			}
 
-			$maturitygraph = session('locale') == 'en' ? 'maturity.svg' : 'maturity_'.session('locale').'.svg';
+			$maturitygraph = session('locale') == '' ? 'maturity.svg' : 'maturity_'.session('locale').'.svg';
 
 			$vars['introduction'] = trans(session('product.alias').'.introduction',
 				[

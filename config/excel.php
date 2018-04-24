@@ -190,7 +190,7 @@ return array(
         | will automatically be used as first row (table heading)
         |
         */
-        'generate_heading_by_indices' => true,
+        'generate_heading_by_indices' => false,
 
         /*
         |--------------------------------------------------------------------------

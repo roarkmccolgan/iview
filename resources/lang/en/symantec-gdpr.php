@@ -8,6 +8,9 @@ return array(
     'stage3' => 'Stage 3: Time to Something',
     'stage4' => 'Stage 4: Time to Optimize',
     'stage5' => 'Stage 5: Time to Chill',
+    'gdpr' => [
+        'title' => 'GDPR'
+    ],
     'complete_thankyou' => 'Thank you :Fname,',
     'complete_body' => '
         Your custom report will arrive in your inbox soon.<br/>
