@@ -728,6 +728,9 @@ public function postComplete(SubmitAssessmentsRequest $request)
 		'utm' => session('utm'),
 		'quiz' => $this->quiz
 	);
+	JavaScript::put([
+        'locale' => session('locale'),
+    ]);
         /*if(Cookie::has('quiz_progress')){
             $progress_id = Cookie::get('quiz_progress');
             $progress = Progress::find($progress_id);
@@ -861,7 +864,7 @@ public function postComplete(SubmitAssessmentsRequest $request)
     				foreach ($value['pages'] as $page => $props) {
     					foreach ($props['questions'] as $q => $details) {
     						if(!isset($details['ignore']) || $details['ignore']==false ){ // ignore answer
-	    						if(($details['type']=='checkbox' || $details['type']=='groupradio' || $details['type']=='slider') && is_array($details['selected'])){
+	    						if(($details['type']=='checkbox' || $details['type']=='groupradio' || $details['type']=='slider' || $details['type']=='groupbutton') && is_array($details['selected'])){
 	    							if(isset($details['calc'])){
 	    								if($details['calc']['type']=='average'){
 	    									$ave = [];
