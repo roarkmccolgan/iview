@@ -19,6 +19,7 @@
 	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
 	ga('create', 'UA-156016-34', 'auto');
+	ga('set', 'page', '/thankyou');
 	ga('send', 'pageview');
 	var utm = {{$utm}};
 	ga('send', 'event', "lead", "generated", {{$utm}});
