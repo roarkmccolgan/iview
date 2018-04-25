@@ -291,7 +291,7 @@
 <script type="text/javascript" src="{{ asset('js/bootstrap.daterangepicker/daterangepicker.js')}}"></script>
 <script type="text/javascript" src="{{ asset('js/jquery-ui/jquery-ui.min.js')}}"></script>
 <script type="text/javascript" src="{{ asset('js/page-form-elements-tool.js')}}"></script>
-<script type="text/javascript" src="{{ asset('js/page-dashboard.js')}}"></script>
+<script type="text/javascript" src="{{ asset('js/page-dashboard.js?id=1')}}"></script>
 @stop
 
 @section('load')
