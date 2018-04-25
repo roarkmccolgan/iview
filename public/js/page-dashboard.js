@@ -227,12 +227,20 @@ var App = (function () {
         { label: "HTC", data: 8},
         { label: "Other", data: 9},
         ];*/
-        for (var i = laravel.device_results.length - 1; i >= 0; i--) {
-        	data.push({
-        		label: laravel.device_results[i][0],
-        		data: laravel.device_results[i][1],
-        	});
+        if(laravel.device_results && laravel.device_results.length){
+            for (var i = laravel.device_results.length - 1; i >= 0; i--) {
+                data.push({
+                    label: laravel.device_results[i][0],
+                    data: laravel.device_results[i][1],
+                });
+            }
+        }else{
+            data.push({
+                label: 'No Results',
+                data: 0,
+            });
         }
+            
 
         $.plot('#piec', data, {
         	series: {
