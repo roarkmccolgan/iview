@@ -16,6 +16,8 @@ Vue.use(VueAnalytics, {
   }
 })
 
+console.log(process.env.NODE_ENV);
+
 new Vue({
 	el: '#app',
 	i18n,

@@ -9,8 +9,6 @@ var OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 var tailwindcss = require('tailwindcss');
 var inProduction = (process.env.NODE_ENV==='production');
 
-console.log(inProduction);
-
 module.exports = {
 	entry: {
 		antifreeze: [
@@ -101,5 +99,11 @@ if(inProduction){
 	module.exports.plugins.push(
 		new OptimizeCssAssetsPlugin()
 	)
-
+	module.exports.plugins.push(
+		new webpack.DefinePlugin({
+			'process.env': {
+				NODE_ENV: '"production"'
+			}
+		})
+	)
 }
