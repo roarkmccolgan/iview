@@ -32,7 +32,8 @@ return [
        'email',
        'extra',
        'ntt-sdwan',
-       'validation'
+       'validation',
+       'trend-micro-mssp',
     ],
 
     /*

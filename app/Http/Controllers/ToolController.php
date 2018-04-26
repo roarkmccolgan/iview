@@ -46,7 +46,7 @@ class ToolController extends Controller
 			return redirect('/');
 		}else{
 			$tool = session('product');
-			if($tool['alias']!=='ntt-sdwan'){
+			if($tool['alias']!=='ntt-sdwan' && $tool['alias']!=='trend-micro-mssp'){
 				$this->middleware(['reloadquestions'], ['only' => [
 		            'run',
 		        ]]);
@@ -200,7 +200,10 @@ public function run(Request $request, $subdomain)
 		return collect($section['pages'])->flatmap(function($item, $itemKey) use($section){
 			foreach ($item['questions'] as $qKey => $q) {
 				$item['questions'][$qKey]['section'] = isset($section['title']) ? $section['title']: '';
+				$item['questions'][$qKey]['ignore'] = isset($section['ignore']) ? $section['ignore']: '';
 				$item['questions'][$qKey]['description'] = isset($section['description']) ? $section['description'] : '';
+				$item['questions'][$qKey]['background'] = isset($section['background']) ? $section['background'] : '';
+				$item['questions'][$qKey]['nuggets'] = isset($section['nuggets']) ? $section['nuggets'] : '';
 				$item['questions'][$qKey]['complete'] = isset($section['complete']) ? $section['complete'] : '';
 				$item['questions'][$qKey]['class'] = isset($section['class']) ? $section['class'] : '';
 				$item['questions'][$qKey]['page'] = substr($itemKey,4);
@@ -212,7 +215,12 @@ public function run(Request $request, $subdomain)
 	$totalQuestions = count($onlyQuestions);
 	$return_visitor = $request->cookie('quiz_progress');
 	$class = 'intro';
-	$view = $tool->template!=='nttsdwan' ? 'tool.'.session('template').'.intro' : 'tool.'.session('template').'.assessment';
+	if($tool->template=='nttsdwan' || $tool->template=='trendmicromssp'){
+		$view = 'tool.'.session('template').'.assessment';
+	}else{
+		$view = 'tool.'.session('template').'.intro';
+	}
+
 	JavaScript::put([
         'tool' => $tool,
         'languages' => $languages,
@@ -797,56 +805,58 @@ public function postComplete(SubmitAssessmentsRequest $request)
 
     	if($section!==false){
     		foreach ($this->quiz[$section]['pages'] as $page => $props) {
-    			foreach ($props['questions'] as $q => $details) {
-    				if(!isset($details['ignore']) || $details['ignore']==false ){ // ignore answer
-    					if(!isset($details['selected'])){
-    						dd($details);
-    					}
-	    				if(($details['type']=='checkbox' || $details['type']=='groupradio' || $details['type']=='slider') && is_array($details['selected'])){
-	    					if(isset($details['calc'])){
-	    						if($details['calc']['type']=='average'){
-	    							$ave = [];
-	    							foreach ($details['selected'] as $selected) {
-	    								$selected = explode('|', $selected);
-	    								$selected = $selected[1];
-	    								$ave[]=$selected;
-	    							}
-	    							$val = array_sum($ave) / count($ave);
-	    						}elseif($details['calc']['type']=='normalize'){
-	    							$norm = 0;
-	    							foreach ($details['selected'] as $selected) {
-	    								$selected = explode('|', $selected);
-	    								$selected = $selected[1];
-	    								$norm+=$selected;
-	    							}
-	    							$val = ($norm/$details['calc']['value'])*count($details['selected']);
-	    						}
-	    					}else{
-	    						$valHold = 0;
-	    						foreach ($details['selected'] as $selected) {
-	    							$selected = explode('|', $selected);
-	    							$selected = $selected[1];
-	    							$valHold+=$selected;
-	    						}
-	    						$val = $valHold;
+    			if(!isset($this->quiz[$section]['ignore']) || $this->quiz[$section]['ignore']==false){
+	    			foreach ($props['questions'] as $q => $details) {
+	    				if(!isset($details['ignore']) || $details['ignore']==false ){ // ignore answer
+	    					if(!isset($details['selected'])){
+	    						dd($details);
 	    					}
-	    				}else{
-	    					$val = explode('|', $details['selected']);
-	    					$val = $val[1];
-	    				}
-	    				if (isset($result[$section]['score'])){
-	    					$result[$section]['score'] += $val;
-	    				} else {
-	    					$result[$section]['score'] = $val;
+		    				if(($details['type']=='checkbox' || $details['type']=='groupradio' || $details['type']=='slider') && is_array($details['selected'])){
+		    					if(isset($details['calc'])){
+		    						if($details['calc']['type']=='average'){
+		    							$ave = [];
+		    							foreach ($details['selected'] as $selected) {
+		    								$selected = explode('|', $selected);
+		    								$selected = $selected[1];
+		    								$ave[]=$selected;
+		    							}
+		    							$val = array_sum($ave) / count($ave);
+		    						}elseif($details['calc']['type']=='normalize'){
+		    							$norm = 0;
+		    							foreach ($details['selected'] as $selected) {
+		    								$selected = explode('|', $selected);
+		    								$selected = $selected[1];
+		    								$norm+=$selected;
+		    							}
+		    							$val = ($norm/$details['calc']['value'])*count($details['selected']);
+		    						}
+		    					}else{
+		    						$valHold = 0;
+		    						foreach ($details['selected'] as $selected) {
+		    							$selected = explode('|', $selected);
+		    							$selected = $selected[1];
+		    							$valHold+=$selected;
+		    						}
+		    						$val = $valHold;
+		    					}
+		    				}else{
+		    					$val = explode('|', $details['selected']);
+		    					$val = $val[1];
+		    				}
+		    				if (isset($result[$section]['score'])){
+		    					$result[$section]['score'] += $val;
+		    				} else {
+		    					$result[$section]['score'] = $val;
+		    				}
+		    			}
+	    			}
+	    			foreach ($this->baseline[$section]['types'] as $rating => $limits) {
+	    				if($result[$section]['score']>=$limits['low'] && $result[$section]['score']<=$limits['high']){
+	    					$result[$section]['rating'] = $rating;
+	    					$result['overall']['score'] += $result[$section]['score'];
 	    				}
 	    			}
-    			}
-    			foreach ($this->baseline[$section]['types'] as $rating => $limits) {
-    				if($result[$section]['score']>=$limits['low'] && $result[$section]['score']<=$limits['high']){
-    					$result[$section]['rating'] = $rating;
-    					$result['overall']['score'] += $result[$section]['score'];
-    				}
-    			}
+	    		}
     		}
     		foreach ($this->baseline['overall']['types'] as $rating => $limits) {
     			if($result['overall']['score']>=$limits['low'] && $result['overall']['score']<=$limits['high']){
@@ -855,7 +865,7 @@ public function postComplete(SubmitAssessmentsRequest $request)
     		}
     	}else{
     		foreach ($this->quiz as $key => $value) {
-    			if($key!=='screeners'){
+    			if($key!=='screeners' && (!isset($value['ignore']) || $value['ignore']==false)){
 					if (!is_array($value['pages']) && !is_object($value['pages'])) {
 						Log::info('Section '.$key.' pages', $value['pages']);
 						Log::info('Quiz', $this->quiz);
@@ -1133,7 +1143,7 @@ public function postComplete(SubmitAssessmentsRequest $request)
     	$result['overall']['score'] = 0;
 
 		foreach ($this->quiz as $key => $value) {
-			if($key!=='screeners'){
+			if($key!=='screeners' && (!isset($value['ignore']) || $value['ignore']==false)){
 				foreach ($value['pages'] as $page => $props) {
 					foreach ($props['questions'] as $q => $details) {
 						if(!isset($details['ignore']) || $details['ignore']==false ){ // ignore answer

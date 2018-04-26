@@ -15,6 +15,11 @@ module.exports = {
 			"babel-polyfill",
 			'./resources/assets/js/antifreeze/main.js',
 			'./resources/assets/css/antifreeze/main.css'
+		],
+		trendy: [
+			"babel-polyfill",
+			'./resources/assets/js/trendy/main.js',
+			'./resources/assets/css/trendy/main.css'
 		]
 	},
 	output: {

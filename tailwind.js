@@ -49,6 +49,11 @@ let colors = {
   'ntt-gold': 'rgb(253,208,0)',
   'ntt-blue': 'rgb(0,67,134)',
 
+  'trend-red': 'rgb(215,25,32)',
+  'trend-grey': 'rgb(102,102,102)',
+  
+  'blackblack': 'rgb(0,0,0)',
+
   'black': '#22292f',
   'grey-darkest': '#3d4852',
   'grey-darker': '#606f7b',
@@ -197,6 +202,21 @@ module.exports = {
 
   fonts: {
     'report': [
+      'sans-serif',
+    ],
+    'trendy': [
+      'Open Sans',
+      '-apple-system',
+      'BlinkMacSystemFont',
+      'Open Sans',
+      'Segoe UI',
+      'Roboto',
+      'Oxygen',
+      'Ubuntu',
+      'Cantarell',
+      'Fira Sans',
+      'Droid Sans',
+      'Helvetica Neue',
       'sans-serif',
     ],
     'sans': [
