@@ -51,7 +51,7 @@ return array(
                     )
                 )
             ),
-            /*'page2' => array(
+            'page2' => array(
                 'title' => 'Sales',
                 'questions' => array(
                     'q2'=>array(
@@ -161,7 +161,7 @@ return array(
                         )
                     )
                 )
-            )*/
+            )
         )
     ),
     'marketing' => array(
@@ -179,10 +179,10 @@ return array(
             'page1' => array(
                 'title' => 'Marketing',
                 'questions' => array(
-                    'q2'=>array(
+                    'q5'=>array(
                         'type'=>'button',
                         'question'=>'Please select a statement which best describes your approach to marketing in the sales cycle.',
-                        'name'=> 2,
+                        'name'=> 5,
                         'options'=>array(
                             array(
                                 'label'=>'We rely on leads from our vendor partners and some of our own traditional outbound marketing.',
@@ -213,7 +213,7 @@ return array(
                     )
                 )
             ),
-            /*'page2' => array(
+            'page2' => array(
                 'title' => 'Marketing',
                 'questions' => array(
                     'q6'=>array(
@@ -286,7 +286,7 @@ return array(
                         )
                     )
                 )
-            ),*/
+            ),
         )
     ),
     'services' => array(
@@ -304,10 +304,10 @@ return array(
             'page1' => array(
                 'title' => 'Services',
                 'questions' => array(
-                    'q3'=>array(
+                    'q8'=>array(
                         'type'=>'button',
                         'question'=>'Please select a statement which best describes your services business.',
-                        'name'=> 3,
+                        'name'=> 8,
                         'options'=>array(
                             array(
                                 'label'=>'We offer some professional services (e.g., implementation, monitoring and support), but these are ad hoc/reactive and not delivered as managed services. A basic service catalogue exists. ',
@@ -338,7 +338,7 @@ return array(
                     )
                 )
             ),
-            /*'page2' => array(
+            'page2' => array(
                 'title' => 'Services',
                 'questions' => array(
                     'q9'=>array(
@@ -411,7 +411,7 @@ return array(
                         )
                     )
                 )
-            ),*/
+            ),
         )
     ),
     'security' => array(
@@ -432,10 +432,10 @@ return array(
             'page1' => array(
                 'title' => 'Security',
                 'questions' => array(
-                    'q4'=>array(
+                    'q11'=>array(
                         'type'=>'button',
                         'question'=>'Please select a statement which best describes your in-house security capability.',
-                        'name'=> 4,
+                        'name'=> 11,
                         'options'=>array(
                             array(
                                 'label'=>'We lack any security-specific skills.',
@@ -466,7 +466,7 @@ return array(
                     )
                 )
             ),
-            /*'page2' => array(
+            'page2' => array(
                 'title' => 'Security',
                 'questions' => array(
                     'q12'=>array(
@@ -539,7 +539,7 @@ return array(
                         )
                     )
                 )
-            ),*/
+            ),
         )
     ),
     'metrics' => array(
@@ -553,10 +553,10 @@ return array(
             'page1' => array(
                 'title' => 'Metrics',
                 'questions' => array(
-                    'q5'=>array(
+                    'q14'=>array(
                         'type'=>'button',
                         'question'=>'Please select a statement which best describes your in-house security capability.',
-                        'name'=> 5,
+                        'name'=> 14,
                         'options'=>array(
                             array(
                                 'label'=>'Less than £1M',
@@ -592,7 +592,7 @@ return array(
                     )
                 )
             ),
-            /*'page2' => array(
+            'page2' => array(
                 'title' => 'Metrics',
                 'questions' => array(
                     'q15'=>array(
@@ -744,7 +744,7 @@ return array(
                         )
                     )
                 )
-            ),*/
+            ),
         )
     )
 );
