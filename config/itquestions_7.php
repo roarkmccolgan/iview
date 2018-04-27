@@ -28,7 +28,7 @@ return array(
                                 'checked'=>false
                             ),
                             array(
-                                'label'=>'Puntiamo a implementare una conformità GDPR sufficiente per evitare controlli e sanzioni',
+                                'label'=>'Puntiamo a diventare conformi quanto basta per evitare controlli e sanzioni',
                                 'value'=>3,
                                 'checked'=>false
                             ),

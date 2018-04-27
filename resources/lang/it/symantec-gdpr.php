@@ -315,7 +315,7 @@ return array(
 
     /*'introduction-image' => 'report1.jpg',*/
     'overall' => array(
-        'title'=>'Your Overall GDPR Readiness is at',
+        'title'=>'Risultati della valutazione della preparazione GDPR complessiva',
         'hidetitle'=>'true',
         'image'=>'',
         'stage1'=>'',
