@@ -22,7 +22,7 @@
 					</div>
 				</div>
 			</div>
-			<div v-if="currentQuestion.name==1 && currentQuestion.nuggets">
+			<div v-if="currentQuestion.page==1 && currentQuestion.nuggets">
 				<nugget-component :nuggets="currentQuestion.nuggets" :section="currentQuestion.section" :min-width="400"></nugget-component>
 			</div>
 			<div class="container mx-auto py-2 text-white ">

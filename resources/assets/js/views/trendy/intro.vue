@@ -1,9 +1,9 @@
 <template>
 	<div class="flex-grow">
 		<div class="container mx-auto flex flex-wrap items-center mb-4 py-4">
-			<div class="flex-1">
+			<div class="flex-1 px-2">
 				<h1 class="font-light leading-tight">{{ $t('trend-micro-mssp.title') }}</h1>
-				<h3 class="font-light leading-tight">{{ $t('trend-micro-mssp.sub-title') }}</h3>
+				<h3 class="font-light leading-tight text-grey-dark">{{ $t('trend-micro-mssp.sub-title') }}</h3>
 			</div>
 			<div class="hidden sm:block flex w-full sm:w-auto mt-2 sm:mt-0" v-show="assessment.languages.length>1">
 				<span class="inline-block mr-2 text-grey-dark text-sm"><font-awesome-icon class="ml-2" :icon="icons.faGlobe" /> {{ $t('trend-micro-mssp.change-langauge') }}:</span>
@@ -18,9 +18,8 @@
 		<div class="container mx-auto">
 			<div class="flex flex-wrap justify-center">
 				<div class="w-full sm:w-1/2">
-					<div class="">
-						<div v-html="$t('trend-micro-mssp.landing')">
-						</div>
+					<div class="px-2 sm:flex sm:flex-col sm:h-full sm:mr-4">
+						<div class="sm:flex-grow text-grey-light" v-html="$t('trend-micro-mssp.landing')"></div>
 						<div class="mt-8">
 							<router-link class="hidden sm:block text-center bg-trend-red text-white hover:text-trend-red hover:bg-white shadow-md text-white py-4 px-6 no-underline" :to="'/questions/1'">{{ $t('trend-micro-mssp.startbut') }} <font-awesome-icon class="ml-2" :icon="icons.faArrowRight" /></router-link>
 						</div>
