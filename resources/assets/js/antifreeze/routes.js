@@ -1,11 +1,23 @@
 import VueRouter from 'vue-router';
-
+// var utm = laravel.utm;
+var utm = laravel.utm == null ? '' : '?utm='+laravel.utm;
 let routes = [
 	{
 		path: '/',
 		component: require('../views/intro.vue').default,
 		name: 'home',
 		props: true,
+		meta: {
+			analytics: {
+				pageviewTemplate (route) {
+					return {
+						title: laravel.tool.title,
+						page: route.path+utm,
+						location: window.location.href
+					}
+				}
+			}
+		}
 	},
 	{
 		path: '/questions/:question',

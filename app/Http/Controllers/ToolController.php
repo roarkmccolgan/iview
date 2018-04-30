@@ -228,6 +228,7 @@ public function run(Request $request, $subdomain)
         'extraFields' => $extraFields,
         'questions' => $onlyQuestions,
         'locale' => session('locale'),
+        'utm' => session('utm'),
         'localeUrl' => session('localeUrl'),
         'result' => $request->session()->has('result') ? session('result') : null,
     ]);

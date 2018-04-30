@@ -9,12 +9,12 @@ import FontAwesomeIcon from '@fortawesome/vue-fontawesome';
 import faUndo from '@fortawesome/fontawesome-pro-regular/faUndo';
 
 Vue.use(VueAnalytics, {
-  id: 'UA-156016-34',
-  router,
-  debug: {
-    // enabled: process.env.NODE_ENV!=='production'
-    enabled: false
-  }
+	id: 'UA-156016-34',
+	router,
+	debug: {
+		enabled: process.env.NODE_ENV!=='production'
+    //enabled: false
+}
 })
 
 new Vue({

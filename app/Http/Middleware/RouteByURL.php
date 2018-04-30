@@ -50,6 +50,8 @@ class RouteByURL
                         'ip' => $request->ip(),
                     ]);*/
                 }
+            }else{
+                
             }
             foreach ($request->all() as $key => $value) {
                 if($key!=='utm'){
