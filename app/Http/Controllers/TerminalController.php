@@ -106,26 +106,6 @@ class TerminalController extends Controller
             }
             $tracker->setCompletions($completions);
         }
-        if($tool->id == 8){
-            $normalizeStart = new Carbon('20th April 2018');
-            $normalizeEnd = new Carbon('2nd May 2018');
-            if(($normalizeStart->between($startDate, $endDate) && $normalizeEnd->between($startDate, $endDate)) || ($normalizeStart->between($startDate, $endDate) || $normalizeEnd->between($startDate, $endDate))){
-                foreach ($tool->trackers as $tracker) {
-                    if($tracker->language_id==1 && $tracker->code=='hlIkPxqRrK'){
-                        $trackerQueries[$tracker->code][0][0] += $enAdd;
-                    }
-                    if($tracker->language_id==23 && $tracker->code=='fdbXy1vYTW'){
-                        $trackerQueries[$tracker->code][0][0] += $deAdd;
-                    }
-                    if($tracker->language_id==27 && $tracker->code=='a6etnMN9VP'){
-                        $trackerQueries[$tracker->code][0][0] += $esAdd;
-                    }
-                    if($tracker->language_id==34 && $tracker->code=='zXLpqJDEqj'){
-                        $trackerQueries[$tracker->code][0][0] += $frAdd;
-                    }
-                }
-            }
-        }
         //dd($trackerQueries);
         
         $terminalQueries = array_merge($terminalQueries,$trackerQueries);
@@ -155,6 +135,30 @@ class TerminalController extends Controller
             if($query_count == 10){
                 sleep(1);
                 $query_count = 0;
+            }
+        }
+        if($tool->id == 8){
+            $normalizeStart = new Carbon('20th April 2018');
+            $normalizeEnd = new Carbon('2nd May 2018');
+            $enAdd = 141;
+            $deAdd = 25;
+            $esAdd = 26;
+            $frAdd = 22;
+            if(($normalizeStart->between($startDate, $endDate) && $normalizeEnd->between($startDate, $endDate)) || ($normalizeStart->between($startDate, $endDate) || $normalizeEnd->between($startDate, $endDate))){
+                foreach ($tool->trackers as $tracker) {
+                    if($tracker->language_id==1 && $tracker->code=='hlIkPxqRrK'){
+                        $analyticsResults[$tracker->code][0][0] += $enAdd;
+                    }
+                    if($tracker->language_id==23 && $tracker->code=='fdbXy1vYTW'){
+                        $analyticsResults[$tracker->code][0][0] += $deAdd;
+                    }
+                    if($tracker->language_id==27 && $tracker->code=='a6etnMN9VP'){
+                        $analyticsResults[$tracker->code][0][0] += $esAdd;
+                    }
+                    if($tracker->language_id==34 && $tracker->code=='zXLpqJDEqj'){
+                        $analyticsResults[$tracker->code][0][0] += $frAdd;
+                    }
+                }
             }
         }
 
