@@ -88,7 +88,7 @@ class TerminalController extends Controller
             $langString = '';
             if($tracker->language_id!=1){
                 $abb = $tracker->language->abbreviation;
-                $langString = ';ga:landingPagePath=@?/'.$abb;
+                $langString = ';ga:landingPagePath=@/'.$abb.'/';
             }
             $trackerQueries[$tracker->code] = [
                 'metrics'       => 'ga:users',
@@ -106,6 +106,27 @@ class TerminalController extends Controller
             }
             $tracker->setCompletions($completions);
         }
+        if($tool->id == 8){
+            $normalizeStart = new Carbon('20th April 2018');
+            $normalizeEnd = new Carbon('2nd May 2018');
+            if(($normalizeStart->between($startDate, $endDate) && $normalizeEnd->between($startDate, $endDate)) || ($normalizeStart->between($startDate, $endDate) || $normalizeEnd->between($startDate, $endDate))){
+                foreach ($tool->trackers as $tracker) {
+                    if($tracker->language_id==1 && isset($trackerQueries[$tracker->code]) && $tracker->code=='hlIkPxqRrK'){
+                        $trackerQueries[$tracker->code][0][0] += $enAdd;
+                    }
+                    if($tracker->language_id==23 && isset($trackerQueries[$tracker->code]) && $tracker->code=='fdbXy1vYTW'){
+                        $trackerQueries[$tracker->code][0][0] += $deAdd;
+                    }
+                    if($tracker->language_id==27 && isset($trackerQueries[$tracker->code]) && $tracker->code=='a6etnMN9VP'){
+                        $trackerQueries[$tracker->code][0][0] += $esAdd;
+                    }
+                    if($tracker->language_id==34 && isset($trackerQueries[$tracker->code]) && $tracker->code=='zXLpqJDEqj'){
+                        $trackerQueries[$tracker->code][0][0] += $frAdd;
+                    }
+                }
+            }
+        }
+        //dd($trackerQueries);
         
         $terminalQueries = array_merge($terminalQueries,$trackerQueries);
 
@@ -138,6 +159,7 @@ class TerminalController extends Controller
         }
 
         foreach ($tool->trackers as $tracker) {
+
             if($analyticsResults[$tracker->code]){
                 $tracker->setViews($analyticsResults[$tracker->code][0][0]);
             }

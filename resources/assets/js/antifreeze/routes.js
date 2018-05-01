@@ -1,5 +1,6 @@
 import VueRouter from 'vue-router';
 // var utm = laravel.utm;
+var locale = laravel.localeUrl;
 var utm = laravel.utm == null ? '' : '?utm='+laravel.utm;
 let routes = [
 	{
@@ -12,7 +13,7 @@ let routes = [
 				pageviewTemplate (route) {
 					return {
 						title: laravel.tool.title,
-						page: route.path+utm,
+						page: route.path+locale+utm,
 						location: window.location.href
 					}
 				}

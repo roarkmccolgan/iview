@@ -58,7 +58,7 @@
 											<?php
 											$langSec = $tracker->language_id !=1 ? '/'.$tracker->language->abbreviation:'';
 											?>
-											<li>http://{{$url->subdomain.'.'.$url->domain.$langSec.'/?utm='.$tracker->code}}</li>
+											<li>https://{{$url->subdomain.'.'.$url->domain.$langSec.'/?utm='.$tracker->code}}</li>
 										@endforeach
 										</ul>
 									</td>
