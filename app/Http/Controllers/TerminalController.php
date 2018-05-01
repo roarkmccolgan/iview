@@ -147,15 +147,19 @@ class TerminalController extends Controller
             if(($normalizeStart->between($startDate, $endDate) && $normalizeEnd->between($startDate, $endDate)) || ($normalizeStart->between($startDate, $endDate) || $normalizeEnd->between($startDate, $endDate))){
                 foreach ($tool->trackers as $tracker) {
                     if($tracker->language_id==1 && $tracker->code=='hlIkPxqRrK'){
+                        if(!isset($analyticsResults[$tracker->code])) $analyticsResults[$tracker->code] = [[0]];
                         $analyticsResults[$tracker->code][0][0] += $enAdd;
                     }
                     if($tracker->language_id==23 && $tracker->code=='fdbXy1vYTW'){
+                        if(!isset($analyticsResults[$tracker->code])) $analyticsResults[$tracker->code] = [[0]];
                         $analyticsResults[$tracker->code][0][0] += $deAdd;
                     }
                     if($tracker->language_id==27 && $tracker->code=='a6etnMN9VP'){
+                        if(!isset($analyticsResults[$tracker->code])) $analyticsResults[$tracker->code] = [[0]];
                         $analyticsResults[$tracker->code][0][0] += $esAdd;
                     }
                     if($tracker->language_id==34 && $tracker->code=='zXLpqJDEqj'){
+                        if(!isset($analyticsResults[$tracker->code])) $analyticsResults[$tracker->code] = [[0]];
                         $analyticsResults[$tracker->code][0][0] += $frAdd;
                     }
                 }
