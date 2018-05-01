@@ -138,13 +138,13 @@ class TerminalController extends Controller
             }
         }
         if($tool->id == 8){
-            $normalizeStart = new Carbon('20th April 2018');
-            $normalizeEnd = new Carbon('2nd May 2018');
+            $normalizeStart = new Carbon('23rd April 2018');
+            $normalizeEnd = new Carbon('30th April 2018');
             $enAdd = 141;
             $deAdd = 25;
             $esAdd = 26;
             $frAdd = 22;
-            if(($normalizeStart->between($startDate, $endDate) && $normalizeEnd->between($startDate, $endDate)) || ($normalizeStart->between($startDate, $endDate) || $normalizeEnd->between($startDate, $endDate))){
+            if($normalizeStart->between($startDate,$endDate) && $normalizeEnd->between($startDate,$endDate)){
                 foreach ($tool->trackers as $tracker) {
                     if($tracker->language_id==1 && $tracker->code=='hlIkPxqRrK'){
                         if(!isset($analyticsResults[$tracker->code])) $analyticsResults[$tracker->code] = [[0]];
@@ -165,6 +165,7 @@ class TerminalController extends Controller
                 }
             }
         }
+        //dd($analyticsResults);
 
         foreach ($tool->trackers as $tracker) {
 
