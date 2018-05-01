@@ -111,16 +111,16 @@ class TerminalController extends Controller
             $normalizeEnd = new Carbon('2nd May 2018');
             if(($normalizeStart->between($startDate, $endDate) && $normalizeEnd->between($startDate, $endDate)) || ($normalizeStart->between($startDate, $endDate) || $normalizeEnd->between($startDate, $endDate))){
                 foreach ($tool->trackers as $tracker) {
-                    if($tracker->language_id==1 && isset($trackerQueries[$tracker->code]) && $tracker->code=='hlIkPxqRrK'){
+                    if($tracker->language_id==1 && $tracker->code=='hlIkPxqRrK'){
                         $trackerQueries[$tracker->code][0][0] += $enAdd;
                     }
-                    if($tracker->language_id==23 && isset($trackerQueries[$tracker->code]) && $tracker->code=='fdbXy1vYTW'){
+                    if($tracker->language_id==23 && $tracker->code=='fdbXy1vYTW'){
                         $trackerQueries[$tracker->code][0][0] += $deAdd;
                     }
-                    if($tracker->language_id==27 && isset($trackerQueries[$tracker->code]) && $tracker->code=='a6etnMN9VP'){
+                    if($tracker->language_id==27 && $tracker->code=='a6etnMN9VP'){
                         $trackerQueries[$tracker->code][0][0] += $esAdd;
                     }
-                    if($tracker->language_id==34 && isset($trackerQueries[$tracker->code]) && $tracker->code=='zXLpqJDEqj'){
+                    if($tracker->language_id==34 && $tracker->code=='zXLpqJDEqj'){
                         $trackerQueries[$tracker->code][0][0] += $frAdd;
                     }
                 }
