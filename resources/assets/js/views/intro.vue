@@ -54,7 +54,7 @@
 							<p class="mb-2 flex-grow">
 								{{ $t('ntt-sdwan.an-infbrief') }}
 							</p>
-							<a :href="'/downloads/NTT_IDC_WAN_Infobrief_2018'+ assessment.locale +'.pdf'" target="_blank" class="block text-center border text-ntt-blue border-ntt-blue hover:bg-ntt-blue hover:text-ntt-gold shadow py-2 px-4 rounded no-underline">{{ $t('ntt-sdwan.download-now') }}</a>
+							<a :href="'/downloads/NTT_IDC_WAN_Infobrief_2018'+ assessment.locale +'.pdf'" target="_blank" class="block text-center border text-ntt-blue border-ntt-blue hover:bg-ntt-blue hover:text-ntt-gold shadow py-2 px-4 rounded no-underline" @click="trackEvent('asset', 'download', 'Infobrief_'+$i18n.locale)">{{ $t('ntt-sdwan.download-now') }}</a>
 						</div>
 					</div>
 				</div>
@@ -68,7 +68,7 @@
 							<p class="mb-2 flex-grow">
 								{{ $t('ntt-sdwan.an-infographic') }}
 							</p>
-							<a :href="'/downloads/NTT_IDC_WAN_Infographic_2018'+ assessment.locale +'.pdf'" target="_blank" class="block text-center border text-ntt-blue border-ntt-blue hover:bg-ntt-blue hover:text-ntt-gold shadow py-2 px-4 rounded no-underline">{{ $t('ntt-sdwan.download-now') }}</a>
+							<a :href="'/downloads/NTT_IDC_WAN_Infographic_2018'+ assessment.locale +'.pdf'" target="_blank" class="block text-center border text-ntt-blue border-ntt-blue hover:bg-ntt-blue hover:text-ntt-gold shadow py-2 px-4 rounded no-underline" @click="trackEvent('asset', 'download', 'Infographic_'+$i18n.locale)">{{ $t('ntt-sdwan.download-now') }}</a>
 						</div>
 					</div>		
 				</div>
@@ -103,6 +103,9 @@ export default{
 				return '';
 			}
 			return '/' + lang;
+		},
+		trackEvent: function(category, action, label){
+			this.$ga.event(category, action, label);
 		}
 	},
 	created: function(){

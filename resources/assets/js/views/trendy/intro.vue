@@ -63,6 +63,9 @@ export default{
 				return '';
 			}
 			return '/' + lang;
+		},
+		trackEvent: function(category, action, label){
+			this.$ga.event(category, action, label);
 		}
 	},
 	created: function(){
