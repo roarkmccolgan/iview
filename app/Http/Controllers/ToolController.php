@@ -197,13 +197,27 @@ public function run(Request $request, $subdomain)
 	session(['source' => $source]);
 
 	$onlyQuestions = collect(session('questions'))->flatmap(function ($section, $secKey){
-		return collect($section['pages'])->flatmap(function($item, $itemKey) use($section){
+		return collect($section['pages'])->flatmap(function($item, $itemKey) use($section, $secKey){
+			$lastPage = end($section['pages']);
+			$lastQuestion = end($lastPage['questions']);
+			$numberOfQuestionsInSection = collect($section)->only('pages')->flatten(1)->map(function($thing, $thinky){
+				return collect($thing['questions']);
+			})->flatten(1)->map(function($q,$qkey){
+				return $q['question'];
+			})->count();
 			foreach ($item['questions'] as $qKey => $q) {
-				$item['questions'][$qKey]['section'] = isset($section['title']) ? $section['title']: '';
+				$item['questions'][$qKey]['section'] = $secKey;
+				$item['questions'][$qKey]['section_info'] = [
+					'number' => (int) substr($itemKey,4),
+					'total' => $numberOfQuestionsInSection,
+					'is_last' => (int) substr($itemKey,4) == $numberOfQuestionsInSection ? true : false,
+					'left' => $numberOfQuestionsInSection - (int) substr($itemKey,4),
+				];
 				$item['questions'][$qKey]['ignore'] = isset($section['ignore']) ? $section['ignore']: '';
 				$item['questions'][$qKey]['description'] = isset($section['description']) ? $section['description'] : '';
 				$item['questions'][$qKey]['background'] = isset($section['background']) ? $section['background'] : '';
 				$item['questions'][$qKey]['nuggets'] = isset($section['nuggets']) ? $section['nuggets'] : '';
+				$item['questions'][$qKey]['intermission'] = isset($section['intermission']) ? $section['intermission'] : '';
 				$item['questions'][$qKey]['complete'] = isset($section['complete']) ? $section['complete'] : '';
 				$item['questions'][$qKey]['class'] = isset($section['class']) ? $section['class'] : '';
 				$item['questions'][$qKey]['page'] = substr($itemKey,4);

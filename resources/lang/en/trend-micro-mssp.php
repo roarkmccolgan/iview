@@ -12,15 +12,18 @@ return array(
     'download-now'=>'Download Now',
 
     'title'=>'IDC Managed Security Services Readiness Assessment',
-    'sub-title'=>'Discover your readiness in becoming an MSSP',
+    'sub-title'=>'What do you need to do be a profitable and growing MSSP',
     'landing'=>'
         <p class="mb-2">
-            With so many growing opportunities for partners in the managed security services space, IDC (in association with Trend Micro) has created a tool to assess partner readiness in becoming an MSSP and provide key recommendations on how to progress towards this business model. By completing the tool, you will be able to put a stake in the ground, and see where you can maximise your potential.
+            There are massive opportunities for partners in the managed security services space. 
+        </p>
+        <p class="mb-2">
+            This tool will help you discover how equipped your business is to take advantage of these, focusing on four key areas: sales, marketing, services and security.
         </p>
         <p class="mb-4">
-            As you have landed on this site, you have probably already made a start on this journey, or at least are interested in doing so. By answering a set of quick-fire questions, you can build a comprehensive understanding of where you are on the journey to becoming an MSSP and what you need to do to accelerate further change.
+            Following a series of questions, you will receive a personalized report assessing where your organization currently is, as well as a bespoke action plan on how to take your MSSP to the next level.
         </p>',
-    'startbut'=>'Make a Start',
+    'startbut'=>'Let\'s Go!',
     
     'send'=>'We can send you the full results directly to your mailbox',
     'register'=>'Register now to receive your personalized report',

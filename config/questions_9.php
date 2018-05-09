@@ -10,6 +10,29 @@ return array(
             'customer.png',
             'cocreate.png',
         ),
+        'intermission' => '
+            <div class="text-lg leading-tight">
+                <p class="mb-3">
+                    <div class="flex items-start">
+                        <img src="images/tools/9/icons/bullet.svg" alt="" class="w-3 mr-3 mt-1">
+                        <p>Selling managed services effectively requires new approaches and new compensation models.</p>
+                    </div>
+                </p>
+                <p class="mb-3">
+                    <div class="flex items-start">
+                        <img src="images/tools/9/icons/bullet.svg" alt="" class="w-3 mr-3 mt-1">
+                        <p>The economics of recurring revenue is very different, so much so that 71% of partners are currently or considering building a “Customer for Life” program to focus on retention and renewal of subscription contracts.</p>
+                    </div>
+                </p>
+                <p class="mb-3">
+                    <div class="flex items-start">
+                        <img src="images/tools/9/icons/bullet.svg" alt="" class="w-3 mr-3 mt-1">
+                        <p>On completing the tool, you\'ll get a personalised report which will give you some key pointers on how you can make this transition.</p>
+                    </div>
+                </p>
+            </div>
+            <p class="my-4">It also has implications for how you go to market&hellip;</p>
+        ',
         'class' => 'sec2',
         'display' => true,
         'complete' => false,
@@ -172,6 +195,28 @@ return array(
             'omnichannel.png',
             'boat.png',
         ),
+        'intermission' => '
+            <div class="text-lg leading-tight">
+                <p class="mb-3">
+                    <div class="flex items-start">
+                        <img src="images/tools/9/icons/bullet.svg" alt="" class="w-3 mr-3 mt-1">
+                        <p>Did you know, IDC\'s research shows that 65% of B2B technology buyers only contact a sales person AFTER a decision has been made?</p>
+                    </div>
+                </p>
+                <p class="mb-3">
+                    <div class="flex items-start">
+                        <img src="images/tools/9/icons/bullet.svg" alt="" class="w-3 mr-3 mt-1">
+                        <p>This means it\'s critical to get your digital marketing strategy, experience and presence right - embracing digital methods and meeting your customers\' expectations of a good digital experience.</p>
+                    </div>
+                </p>
+                <p class="mb-3">
+                    <div class="flex items-start">
+                        <img src="images/tools/9/icons/bullet.svg" alt="" class="w-3 mr-3 mt-1">
+                        <p>Next - let\'s think about services.</p>
+                    </div>
+                </p>
+            </div>
+        ',
         'class' => 'sec2',
         'display' => true,
         'complete' => false,
@@ -297,6 +342,28 @@ return array(
             'managed.png',
             'intellectual.png',
         ),
+        'intermission' => '
+            <div class="text-lg leading-tight">
+                <p class="mb-3">
+                    <div class="flex items-start">
+                        <img src="images/tools/9/icons/bullet.svg" alt="" class="w-3 mr-3 mt-1">
+                        <p>Customers are increasingly adopting managed services to help them improve their own operational efficiencies - this creates a massive opportunities for partners.</p>
+                    </div>
+                </p>
+                <p class="mb-3">
+                    <div class="flex items-start">
+                        <img src="images/tools/9/icons/bullet.svg" alt="" class="w-3 mr-3 mt-1">
+                        <p>So much so, that almost half (46%) of partners currently offer managed services, and a further third plan to in 2018.</p>
+                    </div>
+                </p>
+                <p class="mb-3">
+                    <div class="flex items-start">
+                        <img src="images/tools/9/icons/bullet.svg" alt="" class="w-3 mr-3 mt-1">
+                        <p>You’re almost done, but first, let’s talk about security&hellip;</p>
+                    </div>
+                </p>
+            </div>
+        ',
         'class' => 'sec3',
         'display' => true,
         'complete' => false,
@@ -310,27 +377,27 @@ return array(
                         'name'=> 8,
                         'options'=>array(
                             array(
-                                'label'=>'We offer some professional services (e.g., implementation, monitoring and support), but these are ad hoc/reactive and not delivered as managed services. A basic service catalogue exists. ',
+                                'label'=>'We offer some professional services on an ad-hoc basis. A basic service catalogue exists.',
                                 'value'=>1,
                                 'checked'=>false,
                             ),
                             array(
-                                'label'=>'We offer a range of professional services, resell some managed services and are starting to expand our service catalogue. We are considering packaging or starting to package our own managed services.',
+                                'label'=>'We are considering packaging  the range of professional services we offer into managed services. We\'re expanding our service catalogue.',
                                 'value'=>2,
                                 'checked'=>false,
                             ),
                             array(
-                                'label'=>'We offer a range of professional services, including more advanced services such as pre-sales consulting. We have a portfolio of managed services (our own and/or resell) in a service catalogue and have started to invest in tools for repeatability, automation and management.',
+                                'label'=>'We offer advanced professional services and a portfolio of managed services which are available through a comprehensive service catalogue.  We have started in invest in tools for automation and management.',
                                 'value'=>3,
                                 'checked'=>false,
                             ),
                             array(
-                                'label'=>'We have a robust services portfolio of both professional and managed services which incorporate advanced features like predictive and automated fault management, 24 x 7 service desk and self-provisioning (via a service catalogue). ',
+                                'label'=>'We have a highly automated and advanced services portfolio and we offer self-provisioning via the service catalogue',
                                 'value'=>4,
                                 'checked'=>false,
                             ),
                             array(
-                                'label'=>'Our managed services offerings are deeply embedded into all lines of business and are closely aligned to our professional services offerings. We embed advanced features into flexible consumption models via service catalogues (and sometimes marketplaces). We offer complex and highly specialised professional services (e.g., multicloud integration).',
+                                'label'=>'We offer complex and specialized professional and managed services, which are aligned and deeply embedded across the business. Our advanced service catalogue enables flexible consumption models through its advanced features.',
                                 'value'=>5,
                                 'checked'=>false,
                             )
@@ -343,7 +410,7 @@ return array(
                 'questions' => array(
                     'q9'=>array(
                         'type'=>'button',
-                        'question'=>'Please select a statement which best describes your support/service desk for your managed services offerings.',
+                        'question'=>'Please select a statement which best describes your support/service desk for your managed services offerings',
                         'name'=> 9,
                         'options'=>array(
                             array(
@@ -352,22 +419,22 @@ return array(
                                 'checked'=>false,
                             ),
                             array(
-                                'label'=>'We have a service desk which is equipped to offer basic support on a managed service. This is typically ad hoc (based on customer demand) and is not a standard. ',
+                                'label'=>'We have a small service desk which is equipped to offer basic support on a managed service. ',
                                 'value'=>2,
                                 'checked'=>false,
                             ),
                             array(
-                                'label'=>'We have a fully staffed service desk and we offer first-line support for all (or most of) our managed services through call or email ticketing services.',
+                                'label'=>'We have a fully staffed service desk and we offer first-line support for all (or most of) our managed services through phone or email.',
                                 'value'=>3,
                                 'checked'=>false,
                             ),
                             array(
-                                'label'=>'We have a fully staffed service desk from which we offer multichannel 24 x 7 support for all (or most) of our managed services. ',
+                                'label'=>'We have a fully staffed service desk from which we offer multichannel 24 x 7 support for all (or most) of our managed services.',
                                 'value'=>4,
                                 'checked'=>false,
                             ),
                             array(
-                                'label'=>'We offer pre-emptive support based on sophisticated analytics on top of a fully staffed service desk from which we offer omni-channel 24 x 7 support for all (or most) of our managed services which are secure-by-design. ',
+                                'label'=>'We offer pre-emptive support based on sophisticated analytics on top of a fully staffed service desk from which we offer omni-channel 24 x 7 support for all (or most) of our managed services, which are secure-by-design.',
                                 'value'=>5,
                                 'checked'=>false,
                             )
@@ -384,7 +451,7 @@ return array(
                         'name'=> 10,
                         'options'=>array(
                             array(
-                                'label'=>'We invest in certifications and standards in an ad hoc, reactive manner (i.e., only based on specific customer demand or vendor requirements). ',
+                                'label'=>'We invest in certifications and standards in an ad hoc, reactive manner ',
                                 'value'=>1,
                                 'checked'=>false,
                             ),
@@ -394,17 +461,17 @@ return array(
                                 'checked'=>false,
                             ),
                             array(
-                                'label'=>'Relevant industry standards (e.g., ISO) and governance processes are in place. We have a technical certification programme and are proactively investing in more advanced technical certifications. ',
+                                'label'=>'Relevant industry standards (e.g., ISO) and governance processes are in place. We have a technical certification programme and invest in advanced technical certifications',
                                 'value'=>3,
                                 'checked'=>false,
                             ),
                             array(
-                                'label'=>'We continuously invest in industry, quality and regulatory certifications and guidelines. We have a mature and embedded governance programme and our technicians are highly certified (vendor certifications) and we are investing in specialisations.',
+                                'label'=>'We continuously invest in a range of certifications and guidelines. We have a mature and embedded governance programme and our technicians are highly certified . We are investing in specialisations.',
                                 'value'=>4,
                                 'checked'=>false,
                             ),
                             array(
-                                'label'=>'On top of industry, quality and regulatory certifications and guidelines, we have a mature and embedded governance programme and our technicians are highly certified (vendor certifications) with multiple specialisations. We have entered into a continuous improvement process, creating a library of case studies, best practice, reusable tools and reference architectures.',
+                                'label'=>'On top of our range of certifications, we have a mature and embedded governance programme and our technicians are highly certified (vendor certifications) with multiple specialisations. We have a library of of case studies, best practice, reusable tools and reference architectures.',
                                 'value'=>5,
                                 'checked'=>false,
                             )
@@ -420,11 +487,32 @@ return array(
         'background' => 'security.png',
         'nuggets' => array(
             'money.png',
-            'lack.png',
             'demand.png',
             'cybersecurity.png',
             'hire.png',
         ),
+        'intermission' => '
+            <div class="text-lg leading-tight">
+                <p class="mb-3">
+                    <div class="flex items-start">
+                        <img src="images/tools/9/icons/bullet.svg" alt="" class="w-3 mr-3 mt-1">
+                        <p>You’re almost there!</p>
+                    </div>
+                </p>
+                <p class="mb-3">
+                    <div class="flex items-start">
+                        <img src="images/tools/9/icons/bullet.svg" alt="" class="w-3 mr-3 mt-1">
+                        <p>We\'ve already spoken about the growth in managed services. But security is another big opportunity – it is almost always the top priority for any IT buyer.her third plan to in 2018.</p>
+                    </div>
+                </p>
+                <p class="mb-3">
+                    <div class="flex items-start">
+                        <img src="images/tools/9/icons/bullet.svg" alt="" class="w-3 mr-3 mt-1">
+                        <p>Did you know, the growth rate of MSS in Western Europe is almost 9x faster than general IT outsourcing?</p>
+                    </div>
+                </p>
+            </div>
+        ',
         'class' => 'sec3',
         'display' => true,
         'complete' => false,

@@ -26,7 +26,7 @@
 					</div>
 				</div>
 				<div class="w-full sm:w-1/2 relative">
-					<img class="max-w-full" :src="'/images/tools/' + assessment.tool.id + '/landing.jpg'" alt="">
+					<img class="max-w-full" :src="'/images/tools/' + assessment.tool.id + '/landing_2.jpg'" alt="">
 					<div class="absolute pin sm:hidden flex flex-col items-center justify-center">
 						<router-link class="bg-trend-red hover:bg-white text-white hover:text-trend-red py-4 px-6 no-underline" :to="'/questions/1'">{{ $t('trend-micro-mssp.startbut') }} <font-awesome-icon class="ml-2" :icon="icons.faArrowRight" /></router-link>
 					</div>

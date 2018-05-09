@@ -54,7 +54,7 @@ return array(
     'complete_thankyou' => 'Merci d\'avoir pris le temps de répondre à cette évaluation !',
     'complete_body' => '
         Nous avons reçu vos informations. Vous recevrez sous peu un e-mail avec le lien vers votre rapport personnalisé.<br/>
-        Veuillez vérifier dans votre dossier courrier indésirable si vous ne le recevez pas dans les 5 minutes. <br/><br/>
+        Veuillez vérifier dans votre dossier courrier indésirable si vous ne le recevez pas dans les 5 minutes.<br/><br/>
         <a class="btn btn--primary" target="_blank" href="http://www.ntt.com/en/services/network/software-defined-network.html">
             Cliquez ici pour plus d\'informations
         </a>',

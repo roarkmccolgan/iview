@@ -1,66 +1,79 @@
 <template>
 	<div class="flex-grow">
 		<div class="px-4 flex flex-col">
-			<div class="mt-2">
-				<div class="container mx-auto">
-					<div class="pt-2 flex items-center">
-						<div class="">
-							<button class="inline-block border border-grey-light hover:bg-trend-red text-trend-red hover:text-white pt-2 pb-1 px-2 rounded no-underline" @click.prevent="back"><font-awesome-icon :icon="faArrowLeft" /></button>
-						</div>
-						<div class="flex-grow hidden sm:block">
-							<!-- Progress indicator -->
-							<div class="flex items-center px-4">
-								<template v-for="(question, qkey) in questions">
-									<div class="w-3 h-3 border-2 border-trend-red" :class="{'bg-trend-red': (question == currentQuestion || question.selected)}"></div>
-									<div class="border-t-2 border-trend-red flex-grow" v-show="qkey !== ('q'+Object.keys(questions).length)"></div>
-								</template>
+			<div class="container mx-auto py-2" v-if="showIntermission">
+				<transition name="fade">
+					<intermission-component :section="currentQuestion.section | toTitle" v-on:next-step="closeIntermission()" v-if="showIntermission">
+						<span v-html="currentQuestion.intermission"></span>
+					</intermission-component>
+				</transition>
+			</div>
+			<div class="" v-else>
+				<div class="mt-2">
+					<div class="container mx-auto">
+						<div class="pt-2 flex items-center">
+							<div class="">
+								<button class="inline-block border border-grey-light hover:bg-trend-red text-trend-red hover:text-white pt-2 pb-1 px-2 rounded no-underline" @click.prevent="back"><font-awesome-icon :icon="faArrowLeft" /></button>
 							</div>
-						</div>
-						<div class="flex-grow block sm:hidden px-4">
-							<span class="text-sm text-grey">{{ $t('general.question') | toTitle}} {{currentQuestion.name}} {{$t('general.of')}} {{totalQuestions}}</span>
+							<div class="flex-grow hidden sm:block">
+								<!-- Progress indicator -->
+								<!-- <div class="flex items-center px-4">
+									<template v-for="(question, qkey) in questions">
+										<div class="w-3 h-3 border-2 border-trend-red" :class="{'bg-trend-red': (question == currentQuestion || question.selected)}"></div>
+										<div class="border-t-2 border-trend-red flex-grow" v-show="qkey !== ('q'+Object.keys(questions).length)"></div>
+									</template>
+								</div> -->
+								<div class="flex items-center px-4">
+									<template v-for="(n, index) in currentQuestion.section_info.total">
+										<div class="w-3 h-3 border-2 border-trend-red" :class="{'bg-trend-red': (n == currentQuestion.section_info.number)}"></div>
+										<div class="border-t-2 border-trend-red flex-grow" v-show="n !== currentQuestion.section_info.total"></div>
+									</template>
+								</div>
+							</div>
+							<div class="w-full block sm:hidden px-4">
+								<span class="text-sm text-grey leading-tight">{{currentQuestion.section | toTitle}} <br/> {{ $t('general.question') | toTitle}} {{currentQuestion.section_info.number}} {{$t('general.of')}} {{currentQuestion.section_info.total}}</span>
+							</div>
+							<div class="">
+								<img :src="'/images/tools/9/progress_'+ currentQuestion.section +'_2.svg'" class="w-full" alt="">
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div v-if="currentQuestion.page==1 && currentQuestion.nuggets">
-				<nugget-component :nuggets="currentQuestion.nuggets" :section="currentQuestion.section" :min-width="400"></nugget-component>
-			</div>
-			<div class="container mx-auto py-2 text-white ">
-				<span class="text-sm text-grey-light hidden sm:block sm:my-2">{{ $t('general.question') | toTitle}} {{currentQuestion.name}} {{$t('general.of')}} {{totalQuestions}} -  {{currentQuestion.section | toTitle}}</span>
-				<transition name="fade">
-					<h1 class="font-light text-2xl sm:text-3xl leading-tight" v-show="showDetails" v-html="currentQuestion.question"></h1>
-				</transition>
-			</div>
-			
-			<div class="container mx-auto my-2 flex-grow">
-				<transition name="fade">
-					<div class="relative border p-2 text" :class="error.class" v-if="error">
-						{{error.message}}
-					</div>
-				</transition>
-				
-				<template v-if="currentQuestion.type == 'button' || currentQuestion.type == 'checkbox'">
-					<question-button :question="currentQuestion" :the-options="currentQuestion.options" v-on:selectOption="selectOption" :showDetails="showDetails" :qname="currentQuestion.qKey" :answer="answer"></question-button>
-				</template>
-				<template v-else-if="currentQuestion.type == 'slider'">
-					<question-slider :question="currentQuestion" :the-options="currentQuestion.options" v-on:selectOption="selectOption" :showDetails="showDetails" :qname="currentQuestion.qKey" :answer="answer"></question-slider>
-				</template>
-				<template v-else-if="currentQuestion.type == 'groupSlider'">
-					<group-slider :answer="answer" :question="currentQuestion" :selectOption="selectOption" :showDetails="showDetails"></group-slider>
-				</template>
-				<template v-else-if="currentQuestion.type == 'groupopposingslider'">
-					<group-opposing-slider :answer="answer" :question="currentQuestion" :selectOption="selectOption" :showDetails="showDetails"></group-opposing-slider>
-				</template>
-				<template v-else-if="currentQuestion.type == 'groupbutton'">
-					<group-button :answer="answer" :question="currentQuestion" :selectOption="selectOption" :showDetails="showDetails"></group-button>
-				</template>
-			</div>
-			<div class="container mx-auto mt-4">
-				<transition name="fade">
-					<button :class="buttonClass" v-show="showNext" @click="nextQuestion($event)">
-						<font-awesome-icon :icon="faSpinnerThird" size="2x" spin v-if="saving" /> <span v-else>{{$t('general.next')}}</span>
-					</button>
-				</transition>
+				<div class="container mx-auto py-2 text-white ">
+					<span class="text-sm text-grey-light hidden sm:block sm:my-2">{{currentQuestion.section | toTitle}} - {{ $t('general.question') | toTitle}} {{currentQuestion.section_info.number}} {{$t('general.of')}} {{currentQuestion.section_info.total}}</span>
+					<transition name="fade">
+						<h1 class="font-light text-2xl sm:text-3xl leading-tight" v-show="showDetails" v-html="currentQuestion.question"></h1>
+					</transition>
+				</div>
+				<div class="container mx-auto my-2 flex-grow">
+					<transition name="fade">
+						<div class="relative border p-2 text" :class="error.class" v-if="error">
+							{{error.message}}
+						</div>
+					</transition>
+					<template v-if="currentQuestion.type == 'button' || currentQuestion.type == 'checkbox'">
+						<question-button :question="currentQuestion" :the-options="currentQuestion.options" v-on:selectOption="selectOption" :showDetails="showDetails" :qname="currentQuestion.qKey" :answer="answer"></question-button>
+					</template>
+					<template v-else-if="currentQuestion.type == 'slider'">
+						<question-slider :question="currentQuestion" :the-options="currentQuestion.options" v-on:selectOption="selectOption" :showDetails="showDetails" :qname="currentQuestion.qKey" :answer="answer"></question-slider>
+					</template>
+					<template v-else-if="currentQuestion.type == 'groupSlider'">
+						<group-slider :answer="answer" :question="currentQuestion" :selectOption="selectOption" :showDetails="showDetails"></group-slider>
+					</template>
+					<template v-else-if="currentQuestion.type == 'groupopposingslider'">
+						<group-opposing-slider :answer="answer" :question="currentQuestion" :selectOption="selectOption" :showDetails="showDetails"></group-opposing-slider>
+					</template>
+					<template v-else-if="currentQuestion.type == 'groupbutton'">
+						<group-button :answer="answer" :question="currentQuestion" :selectOption="selectOption" :showDetails="showDetails"></group-button>
+					</template>
+				</div>
+				<div class="container mx-auto mt-4">
+					<transition name="fade">
+						<button :class="buttonClass" v-show="showNext" @click="nextQuestion($event)">
+							<font-awesome-icon :icon="faSpinnerThird" size="2x" spin v-if="saving" /> <span v-else>{{$t('general.next')}}</span>
+						</button>
+					</transition>
+				</div>
 			</div>
 		</div>
 
@@ -79,7 +92,8 @@ import GroupSlider from '../../components/trendy/GroupSlider.vue';
 import GroupButton from '../../components/trendy/GroupButton.vue';
 import GroupOpposingSlider from '../../components/trendy/GroupOpposingSlider.vue';
 
-import NuggetComponent from '../../components/trendy/NuggetComponent.vue';
+//import NuggetComponent from '../../components/trendy/NuggetComponent.vue';
+import IntermissionComponent from '../../components/trendy/IntermissionComponent.vue';
 
 export default{
 	data () {
@@ -97,6 +111,7 @@ export default{
 			questionInfo: laravel.questionInfo,
 			showNext: false,
 			showDetails: true,
+			showIntermission: false,
 			answer: [],
 			saving: false,
 			normalButton: 'block w-full py-4 px-4 text-center bg-trend-red text-white',
@@ -104,11 +119,14 @@ export default{
 			error: false,
 			errorClass: 'border-red-lighter bg-red-lightest text-red-light',
 			noticeClass: 'border-blue-light bg-blue-lighter text-trend-red',
-			result: []
+			result: [],
 		}
 	},
 	computed: {
 		currentQuestion: function(){
+			return this.questions['q'+ Number(this.$route.params.question)];
+		},
+		lastQuestionOfSection: function(){
 			return this.questions['q'+ Number(this.$route.params.question)];
 		},
 		isGroup: function(){
@@ -146,6 +164,10 @@ export default{
 			this.saving = true;
 			this.saveAssessment().then(function (response) {
 				if(response.data == 'success'){
+					if(that.currentQuestion.section_info.is_last){
+						that.showIntermission = true;
+						return;	
+					}
 					if(that.questions.hasOwnProperty('q'+nextQ)){
 						setTimeout(function () {
 							that.showDetails = true;
@@ -166,6 +188,29 @@ export default{
 					}
 				}
 			});
+		},
+		closeIntermission: function(){
+			var that = this;
+			var nextQ = Number(this.$route.params.question)+1;
+			that.showIntermission = false;
+			if(that.questions.hasOwnProperty('q'+nextQ)){
+				setTimeout(function () {
+					that.showDetails = true;
+					that.$router.push({ path: '/questions/'+ nextQ});
+					that.answer = [];
+					that.saving = that.error = false;
+					document.body.scrollTop = 0; // For Safari
+					document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+				}, 300);
+			}else{
+				that.getResults().then(function (response) {
+					if(response.data.query == 'success'){
+						that.$router.push({ name: 'complete', params:{result: response.data.result}});
+						document.body.scrollTop = 0; // For Safari
+						document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+					}
+				});
+			}
 		},
 		selectOption: function(selected){
 			//q16,16.1,"the label of the answer", true
@@ -302,7 +347,7 @@ export default{
 		GroupSlider,
 		GroupButton,
 		GroupOpposingSlider,
-		NuggetComponent,
+		IntermissionComponent,
 	},
 	beforeRouteUpdate (to, from, next) {
 		var nextQ = this.questions['q'+ (Number(this.$route.params.question)+1)];

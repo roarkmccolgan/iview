@@ -54,7 +54,7 @@ return array(
     'complete_thankyou' => 'Danke, :Fname,',
     'complete_body' => '
         Wir haben Ihre Informationen erhalten. Sie erhalten in Kürze eine E-Mail mit einem Link zu Ihrem benutzerdefinierten Bericht.<br/>
-        Wenn Sie diese E-Mail nicht in den nächsten fünf Minuten erhalten, sehen Sie bitte im Spamordner nach. <br/><br/>
+        Wenn Sie diese E-Mail nicht in den nächsten fünf Minuten erhalten, sehen Sie bitte im Spamordner nach.<br/><br/>
         <a class="btn btn--primary" target="_blank" href="https://www.eu.ntt.com/de/services/network/software-defined-network.html">
             Klicken Sie hier, um mehr Informationen zu erhalten. 
         </a>',
