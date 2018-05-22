@@ -22,6 +22,7 @@ class RouteByURL
         $host_names = explode(".", $request->server('HTTP_HOST'));
         $url = Url::with('language')->whereIn('domain', config('app.tooldomain'))->where('subdomain',$request->subdomain)->first();
         $url = URL::all();
+        
         dd($url);
         if ($url) {
             $url->urlable->load('company');
