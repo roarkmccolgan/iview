@@ -240,8 +240,8 @@ return [
     ],
 
     'tooldomain' => [
-        'ready'=>'idcready.net',
-        'ready'=>'idcready.test',
+        'idcready.net',
+        'idcready.test',
     ],
     'template' => 'default',
 
