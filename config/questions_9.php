@@ -10,29 +10,26 @@ return array(
             'customer.png',
             'cocreate.png',
         ),
-        'intermission' => '
-            <div class="text-lg leading-tight">
-                <p class="mb-3">
-                    <div class="flex items-start">
-                        <img src="images/tools/9/icons/bullet.svg" alt="" class="w-3 mr-3 mt-1">
-                        <p>Selling managed services effectively requires new approaches and new compensation models.</p>
-                    </div>
+        'intermission' => [
+            '
+                <p class="w-full mb-4">
+                    Selling managed services effectively requires new approaches and new compensation models.
                 </p>
-                <p class="mb-3">
-                    <div class="flex items-start">
-                        <img src="images/tools/9/icons/bullet.svg" alt="" class="w-3 mr-3 mt-1">
-                        <p>The economics of recurring revenue is very different, so much so that 71% of partners are currently or considering building a “Customer for Life” program to focus on retention and renewal of subscription contracts.</p>
+            ',
+            '
+                <div class="w-full my-3 bg-blackblack border border-black sm:w-1/2 p-3">
+                    <p class="mb-1 text-lg">71% of partners are currently or considering building a</p>
+                    <div class="flex items-start text-4xl text-grey-dark">
+                        <svg class="w-10 h-10 fill-current text-trend-red mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64.98 85.22"><path class="cls-1" d="M58,37.76H7a1.84,1.84,0,0,0-1.28.53,1.91,1.91,0,0,0-.53,1.28V78.29a1.82,1.82,0,0,0,.53,1.25A1.72,1.72,0,0,0,7,80.06H58a1.81,1.81,0,0,0,1.78-1.78V39.57a1.76,1.76,0,0,0-.53-1.28A1.83,1.83,0,0,0,58,37.76ZM7,32.59H58a7,7,0,0,1,7,7V78.28a7,7,0,0,1-7,6.94H7A7.07,7.07,0,0,1,2,83.2a7.05,7.05,0,0,1-2-4.92V39.56a7,7,0,0,1,7-7Z"/><path class="cls-1" d="M52.29,34.49v-9.8a19.81,19.81,0,0,0-39.62,0v9.8H7.78v-9.8a24.7,24.7,0,0,1,49.4,0v9.8Z"/><path class="cls-1" d="M35.33,56.09a3.92,3.92,0,0,0-2.83-1.18,4,4,0,0,0-2.86,6.84,4.13,4.13,0,0,0,2.86,1.18,4,4,0,0,0,4-4A4,4,0,0,0,35.33,56.09Zm-2.83-6.35A9.18,9.18,0,1,1,26,65.43a9.25,9.25,0,0,1,0-13A9.17,9.17,0,0,1,32.49,49.74Z"/></svg>
+                        <p class="text-grey">"CUSTOMER FOR LIFE"</p>
                     </div>
-                </p>
-                <p class="mb-3">
-                    <div class="flex items-start">
-                        <img src="images/tools/9/icons/bullet.svg" alt="" class="w-3 mr-3 mt-1">
-                        <p>On completing the tool, you\'ll get a personalised report which will give you some key pointers on how you can make this transition.</p>
-                    </div>
-                </p>
-            </div>
-            <p class="my-4">It also has implications for how you go to market&hellip;</p>
-        ',
+                    <p class="mt-3 text-lg">programme to focus on retention and renewal of recurring-revenue services</p>
+                </div>
+            ',
+            '
+                <p class="w-full my-4">It also has implications for how you go to market&hellip;</p>
+            '
+        ],
         'class' => 'sec2',
         'display' => true,
         'complete' => false,
@@ -47,27 +44,27 @@ return array(
                         'options'=>array(
                             array(
                                 'label'=>'Sales people are generally product, not services, focused. ',
-                                'value'=>1,
+                                'value'=>0.00,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'Sales people have some experience in selling services.',
-                                'value'=>2,
+                                'value'=>1.25,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'Sales people are actively looking to convert our project business to an MSP business.',
-                                'value'=>3,
+                                'value'=>2.50,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'Our main sales focus is winning new managed security services (MSS) business from new clients.',
-                                'value'=>4,
+                                'value'=>3.75,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'Vast majority of our business is MSS, with sales teams looking to tailor solutions to customers.',
-                                'value'=>5,
+                                'value'=>6.25,
                                 'checked'=>false,
                             )
                         )
@@ -84,27 +81,27 @@ return array(
                         'options'=>array(
                             array(
                                 'label'=>'We have no managed services pre-sales. ',
-                                'value'=>1,
+                                'value'=>0.00,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'We have begun to build out managed services capabilities across the pre-sales team.',
-                                'value'=>2,
+                                'value'=>1.25,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'Some of our pre-sales teams are focused solely on supporting MSS business.',
-                                'value'=>3,
+                                'value'=>3.75,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'Most of our pre-sales team are MSS focused.',
-                                'value'=>4,
+                                'value'=>3.75,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'Our pre-sales team create opportunities for our vendor partners and provide bespoke, specific MSS offerings to customers.',
-                                'value'=>5,
+                                'value'=>6.25,
                                 'checked'=>false,
                             )
                         )
@@ -121,27 +118,27 @@ return array(
                         'options'=>array(
                             array(
                                 'label'=>'We have not adjusted commission plans to account for recurring/subscription-based revenue models.',
-                                'value'=>1,
+                                'value'=>0.00,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'We are beginning to transform commission models, often offering sales teams upfront compensation on any recurring business they win.',
-                                'value'=>2,
+                                'value'=>1.25,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'We have transformed incentive plans to ensure the managed services opportunity is seen as lucrative.',
-                                'value'=>3,
+                                'value'=>2.50,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'We have transitioned to offer sales staff a mix of upfront and ongoing commission, with incentives in place to encourage sales of managed services.',
-                                'value'=>4,
+                                'value'=>3.75,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'We pay ongoing commission, as well as incentivise KPIs on customer satisfaction, renewals and growth.',
-                                'value'=>5,
+                                'value'=>6.25,
                                 'checked'=>false,
                             )
                         )
@@ -158,27 +155,27 @@ return array(
                         'options'=>array(
                             array(
                                 'label'=>'Billing is not offered around MSP/cloud engagements.',
-                                'value'=>1,
+                                'value'=>0.00,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'We are beginning to Billing is offered around MSP offerings but on an annual basis. ',
-                                'value'=>2,
+                                'value'=>1.25,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'We do monthly MSP billing based on consumption.',
-                                'value'=>3,
+                                'value'=>3.75,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'We have transitioned to offer sales staff a mix We have a sophisticated billing offering with real-time usage displayed on dashboards. ',
-                                'value'=>4,
+                                'value'=>5.00,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'Our sophisticated billing platform offers a single bill to customers combining multiple vendor bills, which can be viewed in real time.',
-                                'value'=>5,
+                                'value'=>6.25,
                                 'checked'=>false,
                             )
                         )
@@ -195,28 +192,24 @@ return array(
             'omnichannel.png',
             'boat.png',
         ),
-        'intermission' => '
-            <div class="text-lg leading-tight">
-                <p class="mb-3">
-                    <div class="flex items-start">
-                        <img src="images/tools/9/icons/bullet.svg" alt="" class="w-3 mr-3 mt-1">
-                        <p>Did you know, IDC\'s research shows that 65% of B2B technology buyers only contact a sales person AFTER a decision has been made?</p>
-                    </div>
+        'intermission' => [
+            '
+                <p class="w-full mb-4">
+                    It\'s critical to get your digital marketing strategy, experience and presence right - embracing digital methods and meeting your customers\' expectations of a good digital experience.
                 </p>
-                <p class="mb-3">
-                    <div class="flex items-start">
-                        <img src="images/tools/9/icons/bullet.svg" alt="" class="w-3 mr-3 mt-1">
-                        <p>This means it\'s critical to get your digital marketing strategy, experience and presence right - embracing digital methods and meeting your customers\' expectations of a good digital experience.</p>
+            ',
+            '
+                <div class="w-full my-3 bg-blackblack border border-black sm:w-1/2 p-3">
+                    <div class="flex items-center text-grey-dark">
+                        <p class="text-grey mr-2">65% of B2B technology buyers only contact a sales person AFTER a decision has been made &hellip; and they\'re going online to</p>
+                        <img class="w-32 h-32" src="/images/tools/9/icons/boat.svg" />
                     </div>
-                </p>
-                <p class="mb-3">
-                    <div class="flex items-start">
-                        <img src="images/tools/9/icons/bullet.svg" alt="" class="w-3 mr-3 mt-1">
-                        <p>Next - let\'s think about services.</p>
-                    </div>
-                </p>
-            </div>
-        ',
+                </div>
+            ',
+            '
+                <p class="w-full my-4">Next - let\'s think about services.</p>
+            '
+        ],
         'class' => 'sec2',
         'display' => true,
         'complete' => false,
@@ -231,27 +224,27 @@ return array(
                         'options'=>array(
                             array(
                                 'label'=>'We rely on leads from our vendor partners and some of our own traditional outbound marketing.',
-                                'value'=>1,
+                                'value'=>0.00,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'We decide on what to market and leads come from traditional activities such as events or advertising with some use of digital media.',
-                                'value'=>2,
+                                'value'=>0.00,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'Digital marketing is used alongside traditional marketing, by dedicated marketing staff, but it does not always follow the buyer journey.',
-                                'value'=>3,
+                                'value'=>3.33,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'Marketing has a close alignment with sales teams and sales process and is focused on the buyer journey and buyer requirements.',
-                                'value'=>4,
+                                'value'=>5.00,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'We have a sophisticated marketing function with a dedicated team of specialists, using digital media throughout the buyer journey.',
-                                'value'=>5,
+                                'value'=>8.33,
                                 'checked'=>false,
                             )
                         )
@@ -268,27 +261,27 @@ return array(
                         'options'=>array(
                             array(
                                 'label'=>'We do not actively measure marketing success.',
-                                'value'=>1,
+                                'value'=>0.00,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'We measure basic marketing outcomes such as number of attendees to events, leads from campaigns or sales meetings.',
-                                'value'=>2,
+                                'value'=>1.67,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'We use a basic measurement process for marketing, based on leads from specific campaigns, and use this to make improvements.',
-                                'value'=>3,
+                                'value'=>5.00,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'We track all marketing processes and prospect interactions and understand what customers need to make a purchasing decision.',
-                                'value'=>4,
+                                'value'=>5.00,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'We have developed a fully automated marketing process that continues to evolve based on ongoing results and successes.',
-                                'value'=>5,
+                                'value'=>8.33,
                                 'checked'=>false,
                             )
                         )
@@ -305,27 +298,27 @@ return array(
                         'options'=>array(
                             array(
                                 'label'=>'We have no real targeting in our marketing efforts.',
-                                'value'=>1,
+                                'value'=>0.00,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'We focus our campaigns on specific verticals and are looking to develop messages for specific buyers and businesses.',
-                                'value'=>2,
+                                'value'=>1.67,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'We actively target specific people in prospects\' businesses and are looking to wider opportunities based on feedback.',
-                                'value'=>3,
+                                'value'=>5.00,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'Target marketing at specific buyer personas within sectors and continue to refine this process.',
-                                'value'=>4,
+                                'value'=>5.00,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'Marketing is highly targeted at a defined set of verticals and personas across a portfolio of solutions that address business outcomes.',
-                                'value'=>5,
+                                'value'=>8.33,
                                 'checked'=>false,
                             )
                         )
@@ -342,28 +335,24 @@ return array(
             'managed.png',
             'intellectual.png',
         ),
-        'intermission' => '
-            <div class="text-lg leading-tight">
-                <p class="mb-3">
-                    <div class="flex items-start">
-                        <img src="images/tools/9/icons/bullet.svg" alt="" class="w-3 mr-3 mt-1">
-                        <p>Customers are increasingly adopting managed services to help them improve their own operational efficiencies - this creates a massive opportunities for partners.</p>
-                    </div>
+        'intermission' => [
+            '
+                <p class="w-full mb-4">
+                    Customers are increasingly adopting managed services to help them improve their own operational efficiencies - this creates a massive opportunities for partners.
                 </p>
-                <p class="mb-3">
-                    <div class="flex items-start">
-                        <img src="images/tools/9/icons/bullet.svg" alt="" class="w-3 mr-3 mt-1">
-                        <p>So much so, that almost half (46%) of partners currently offer managed services, and a further third plan to in 2018.</p>
+            ',
+            '
+                <div class="w-full my-3 bg-blackblack border border-black sm:w-1/2 p-3">
+                    <div class="flex items-center text-grey-dark">
+                        <p class="text-grey mr-2">46% of partners currently offer managed services and 33% are planning to in 2018</p>
+                        <img class="w-32 h-32" src="/images/tools/9/icons/services.svg" />
                     </div>
-                </p>
-                <p class="mb-3">
-                    <div class="flex items-start">
-                        <img src="images/tools/9/icons/bullet.svg" alt="" class="w-3 mr-3 mt-1">
-                        <p>You’re almost done, but first, let’s talk about security&hellip;</p>
-                    </div>
-                </p>
-            </div>
-        ',
+                </div>
+            ',
+            '
+                <p class="w-full my-4">You’re almost done, but first, let’s talk about security&hellip;</p>
+            '
+        ],
         'class' => 'sec3',
         'display' => true,
         'complete' => false,
@@ -378,27 +367,27 @@ return array(
                         'options'=>array(
                             array(
                                 'label'=>'We offer some professional services on an ad-hoc basis. A basic service catalogue exists.',
-                                'value'=>1,
+                                'value'=>0.00,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'We are considering packaging  the range of professional services we offer into managed services. We\'re expanding our service catalogue.',
-                                'value'=>2,
+                                'value'=>1.67,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'We offer advanced professional services and a portfolio of managed services which are available through a comprehensive service catalogue.  We have started in invest in tools for automation and management.',
-                                'value'=>3,
+                                'value'=>5.00,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'We have a highly automated and advanced services portfolio and we offer self-provisioning via the service catalogue',
-                                'value'=>4,
+                                'value'=>5.00,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'We offer complex and specialized professional and managed services, which are aligned and deeply embedded across the business. Our advanced service catalogue enables flexible consumption models through its advanced features.',
-                                'value'=>5,
+                                'value'=>8.33,
                                 'checked'=>false,
                             )
                         )
@@ -415,27 +404,27 @@ return array(
                         'options'=>array(
                             array(
                                 'label'=>'We do not have a service desk or the skills to offer any kind of support on managed services.',
-                                'value'=>1,
+                                'value'=>0.00,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'We have a small service desk which is equipped to offer basic support on a managed service. ',
-                                'value'=>2,
+                                'value'=>1.67,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'We have a fully staffed service desk and we offer first-line support for all (or most of) our managed services through phone or email.',
-                                'value'=>3,
+                                'value'=>5.00,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'We have a fully staffed service desk from which we offer multichannel 24 x 7 support for all (or most) of our managed services.',
-                                'value'=>4,
+                                'value'=>5.00,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'We offer pre-emptive support based on sophisticated analytics on top of a fully staffed service desk from which we offer omni-channel 24 x 7 support for all (or most) of our managed services, which are secure-by-design.',
-                                'value'=>5,
+                                'value'=>8.33,
                                 'checked'=>false,
                             )
                         )
@@ -452,27 +441,27 @@ return array(
                         'options'=>array(
                             array(
                                 'label'=>'We invest in certifications and standards in an ad hoc, reactive manner ',
-                                'value'=>1,
+                                'value'=>0.00,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'Industry minimum standards (e.g., PCI-DSS) are adhered to and we comply to the minimum technical certification requirements of our key vendors.',
-                                'value'=>2,
+                                'value'=>1.67,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'Relevant industry standards (e.g., ISO) and governance processes are in place. We have a technical certification programme and invest in advanced technical certifications',
-                                'value'=>3,
+                                'value'=>5.00,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'We continuously invest in a range of certifications and guidelines. We have a mature and embedded governance programme and our technicians are highly certified . We are investing in specialisations.',
-                                'value'=>4,
+                                'value'=>5.00,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'On top of our range of certifications, we have a mature and embedded governance programme and our technicians are highly certified (vendor certifications) with multiple specialisations. We have a library of of case studies, best practice, reusable tools and reference architectures.',
-                                'value'=>5,
+                                'value'=>8.33,
                                 'checked'=>false,
                             )
                         )
@@ -491,28 +480,25 @@ return array(
             'cybersecurity.png',
             'hire.png',
         ),
-        'intermission' => '
-            <div class="text-lg leading-tight">
-                <p class="mb-3">
-                    <div class="flex items-start">
-                        <img src="images/tools/9/icons/bullet.svg" alt="" class="w-3 mr-3 mt-1">
-                        <p>You’re almost there!</p>
-                    </div>
+        'intermission' => [
+            '
+                <p class="w-full mb-4">
+                    Did you know the growth rate of MSS in Western Europe is almost 9x faster than general IT outsourcing? 
                 </p>
-                <p class="mb-3">
-                    <div class="flex items-start">
-                        <img src="images/tools/9/icons/bullet.svg" alt="" class="w-3 mr-3 mt-1">
-                        <p>We\'ve already spoken about the growth in managed services. But security is another big opportunity – it is almost always the top priority for any IT buyer.her third plan to in 2018.</p>
+            ',
+            '
+                <div class="w-full my-3 bg-blackblack border border-black sm:w-1/2 p-3">
+                    <div class="flex items-start text-4xl text-grey-dark">
+                        <svg class="w-10 h-10 fill-current text-trend-red" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 63 63"><path class="cls-1" d="M31.5,9.46a2.22,2.22,0,0,0-2.07,2.07v2.26c-5.3.85-9,4.87-9,9.45A8.9,8.9,0,0,0,24,30.45a20.64,20.64,0,0,0,7,3,18,18,0,0,1,5.6,2.35,4.23,4.23,0,0,1,1.85,3.94c0,2.74-2.32,5.51-6.89,5.51a8.49,8.49,0,0,1-5-1.66,4.28,4.28,0,0,1-1.94-3.16,2.07,2.07,0,1,0-4.13,0,8.28,8.28,0,0,0,3.57,6.46,12.38,12.38,0,0,0,5.38,2.32v2.24a2.07,2.07,0,0,0,4.13,0V49.24c5.3-.85,9-4.89,9-9.47A8.94,8.94,0,0,0,39,32.53a20.64,20.64,0,0,0-7-3,18,18,0,0,1-5.6-2.35,4.19,4.19,0,0,1-1.85-3.92c0-2.74,2.32-5.51,6.89-5.51a8.47,8.47,0,0,1,5,1.64,4.31,4.31,0,0,1,1.94,3.19,2.07,2.07,0,1,0,4.13,0,8.28,8.28,0,0,0-3.57-6.46,12.38,12.38,0,0,0-5.38-2.32V11.52A2.21,2.21,0,0,0,31.5,9.46Zm0-4.82A26.87,26.87,0,1,1,4.63,31.5,26.84,26.84,0,0,1,31.5,4.63ZM31.5.5a31,31,0,1,0,31,31A31,31,0,0,0,31.5.5Z"/></svg>
+                        <p class="text-grey">FOLLOW THE MONEY</p>
                     </div>
-                </p>
-                <p class="mb-3">
-                    <div class="flex items-start">
-                        <img src="images/tools/9/icons/bullet.svg" alt="" class="w-3 mr-3 mt-1">
-                        <p>Did you know, the growth rate of MSS in Western Europe is almost 9x faster than general IT outsourcing?</p>
-                    </div>
-                </p>
-            </div>
-        ',
+                    <p class="mt-3 text-lg">By 2021 European security revenues will have grown by 7.8% compared with just 5.8% for other software</p>
+                </div>
+            ',
+            '
+                <p class="w-full my-4">You\'re almost there. Just some background questions to understand your business a little more&hellip;</p>
+            '
+        ],
         'class' => 'sec3',
         'display' => true,
         'complete' => false,
@@ -527,27 +513,27 @@ return array(
                         'options'=>array(
                             array(
                                 'label'=>'We lack any security-specific skills.',
-                                'value'=>1,
+                                'value'=>0.00,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'Security is a sales competence, but we lack technical skills.',
-                                'value'=>2,
+                                'value'=>1.67,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'We have some security technical capabilities in-house.',
-                                'value'=>3,
+                                'value'=>3.33,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'We have competent security support skills, as well as higher-value technical consulting for customers.',
-                                'value'=>4,
+                                'value'=>5.00,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'We have a full range of security skills and personnel (pre-sales architects, technical consultants, first-line support analysts).',
-                                'value'=>5,
+                                'value'=>8.33,
                                 'checked'=>false,
                             )
                         )
@@ -564,27 +550,27 @@ return array(
                         'options'=>array(
                             array(
                                 'label'=>'We do not have a service desk or the skills to offer any kind of support on managed services.',
-                                'value'=>1,
+                                'value'=>0.00,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'We have a service desk which is equipped to offer basic support on a managed service. This is typically ad hoc (based on customer demand) and is not a standard. ',
-                                'value'=>2,
+                                'value'=>1.67,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'We have a fully staffed service desk and we offer first-line support for all (or most of) our managed services through call or email ticketing services.',
-                                'value'=>3,
+                                'value'=>5.00,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'We have a fully staffed service desk from which we offer multichannel 24 x 7 support for all (or most) of our managed services. ',
-                                'value'=>4,
+                                'value'=>5.00,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'We offer pre-emptive support based on sophisticated analytics on top of a fully staffed service desk from which we offer omni-channel 24 x 7 support for all (or most) of our managed services which are secure-by-design. ',
-                                'value'=>5,
+                                'value'=>8.33,
                                 'checked'=>false,
                             )
                         )
@@ -601,27 +587,27 @@ return array(
                         'options'=>array(
                             array(
                                 'label'=>'We have no security-specific skills.  ',
-                                'value'=>1,
+                                'value'=>0.00,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'We have basic security certifications.    ',
-                                'value'=>2,
+                                'value'=>1.67,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'We have lower-value security-specific technical skills (e.g., first-line support).',
-                                'value'=>3,
+                                'value'=>5.00,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'We have a mix of security-specific tech skills (e.g., security technical consulting). ',
-                                'value'=>4,
+                                'value'=>5.00,
                                 'checked'=>false,
                             ),
                             array(
                                 'label'=>'We have a full range of security architects, security specialists and GDPR experts in-house and we understand compliance relating to multicloud.',
-                                'value'=>5,
+                                'value'=>8.33,
                                 'checked'=>false,
                             )
                         )

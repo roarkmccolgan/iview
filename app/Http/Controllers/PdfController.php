@@ -78,6 +78,7 @@ class PdfController extends Controller
 		];
 
 		$vars = [];
+		$vars['pdf'] = $request->query('pdf') ? true : false;
 		$count = 0;
 		$headervars = [];
 		$headervars['tool_title'] = trans(session('product.alias').'.title');
@@ -1149,6 +1150,88 @@ class PdfController extends Controller
 
 			$vars['sectionCopy'] = $customCopy;
 			
+		}elseif(session('product.id')==9) {
+			$overallNumber = (int) filter_var(session('result.overall.rating'), FILTER_SANITIZE_NUMBER_INT);
+			$infrastructureNumber =  (int) filter_var(session('result.infrastructure.rating'), FILTER_SANITIZE_NUMBER_INT);
+			$intelligenceNumber =  (int) filter_var(session('result.intelligence.rating'), FILTER_SANITIZE_NUMBER_INT);
+			$operationsNumber =  (int) filter_var(session('result.operations.rating'), FILTER_SANITIZE_NUMBER_INT);		
+
+			$vars['introduction1'] = trans(session('product.alias').'.introduction1',
+				[
+					'result'=>trans(session('product.alias').'.'.session('result.overall.rating'))
+				]
+			);
+			$vars['introduction2'] = trans(session('product.alias').'.introduction2',
+				[
+					'url'=>session('url')
+				]
+			);
+			$vars['introduction3'] = trans(session('product.alias').'.introduction3');
+			$vars['introduction4'] = trans(session('product.alias').'.introduction4');
+			$vars['introduction5'] = trans(session('product.alias').'.introduction5');
+			$vars['introduction6'] = trans(session('product.alias').'.introduction6');
+			$vars['introduction7'] = trans(session('product.alias').'.introduction7');
+			$vars['introduction8'] = trans(session('product.alias').'.introduction8',
+				[
+					'url'=>session('url')
+				]
+			);
+
+			$customCopy = '';
+
+			//overall
+			$rating = session('result.overall.rating');
+			$vars['overall'] = trans(
+				session('product.alias').'.overall'.$rating,
+				[
+					'stage'=>trans(session('product.alias').'.'.$rating)
+				]
+			);
+
+			//Sales
+			$rating = session('result.sales.rating');
+			$vars['sales'] = trans(
+				session('product.alias').'.sales'.$rating,
+				[
+					'stage'=>trans(session('product.alias').'.'.$rating),
+					'url'=>session('url')
+				]
+			);
+
+			//Marketing
+			$rating = session('result.marketing.rating');
+			$vars['marketing'] = trans(
+				session('product.alias').'.marketing'.$rating,
+				[
+					'stage'=>trans(session('product.alias').'.'.$rating),
+					'url'=>session('url')
+				]
+			);
+			
+			//Services
+			$rating = session('result.services.rating');
+			$vars['services'] = trans(
+				session('product.alias').'.services'.$rating,
+				[
+					'stage'=>trans(session('product.alias').'.'.$rating),
+					'url'=>session('url')
+				]
+			);
+
+			//Security
+			$rating = session('result.security.rating');
+			$vars['security'] = trans(
+				session('product.alias').'.security'.$rating,
+				[
+					'stage'=>trans(session('product.alias').'.'.$rating),
+					'url'=>session('url')
+				]
+			);
+
+			$customCopy.= '<div class="spacer"></div>';
+
+			$vars['sectionCopy'] = $customCopy;
+			
 		}else{
 			foreach (config('baseline_'.session('product.id')) as $section => $values) {
 				preg_match_all('/\d+/', session('result.'.$section.'.rating'), $matches);
@@ -1319,25 +1402,46 @@ class PdfController extends Controller
 		if(null !== config('baseline_'.session('product.id').'.overall.report-settings.header-spacing')){
 			$headerspacing = config('baseline_'.session('product.id').'.overall.report-settings.header-spacing');
 		}
-
+		
 		$pdf = PDF::loadView('tool.'.session('template').'.report.report',$vars)
 		->setOption('margin-top', $margintop)
 		->setOption('margin-left', 0)
 		->setOption('margin-right', 0)
+		//->setOption('viewport-size', '1280x1024')
+		//->setOption('orientation', 'Landscape')
+		//->setOption('dpi', 36)
 		->setOption('window-status','chartrendered')
 		->setOption('header-html',session('url').'/'.session('localeUrl').'template/'.session('template').'/report/header')
 		->setOption('header-spacing',$headerspacing)
 		->setOption('footer-html',session('url').'/'.session('localeUrl').'template/'.session('template').'/report/footer')
 		->setOption('footer-spacing',2)
 		->setOption('replace', $headervars);
-		if (session('product.id')==8){
+		if (session('product.id')==9){
+        	//$pdf->setOption('cover',session('url').'/'.session('localeUrl').'template/'.session('template').'/report/cover');
+			$timeStamp = time();
+			//return $pdf->inline('invoice.pdf');
+			$pdf->save(storage_path().'/trend-micro-report-'.$timeStamp.'.pdf');
+
+
+
+			$merge = new \Nextek\LaraPdfMerger\PdfManage;
+			$locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
+
+			$merge->addPDF(storage_path().'/trend-micro_start'.$locale .'.pdf', 'all');
+			$merge->addPDF(storage_path().'/trend-micro-report-'.$timeStamp.'.pdf', 'all');
+
+			$merge->merge('browser', storage_path().'/reports/trend-micro-report-'.$timeStamp.'.pdf', 'P');
+			if(File::exists(storage_path().'/trend-micro-report-'.$timeStamp.'.pdf')){
+				File::delete(storage_path().'/trend-micro-report-'.$timeStamp.'.pdf');
+			}
+		} elseif (session('product.id')==8){
         		//$pdf->setOption('cover',session('url').'/'.session('localeUrl').'template/'.session('template').'/report/cover');
 			$timeStamp = time();
 			$pdf->save(storage_path().'/ntt-sdwan-report-'.$timeStamp.'.pdf');
 
 
 
-			$merge = new \LynX39\LaraPdfMerger\PdfManage;
+			$merge = new \Nextek\LaraPdfMerger\PdfManage;
 			$locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
 
 			$merge->addPDF(storage_path().'/ntt_report_start'.$locale .'.pdf', 'all');
@@ -1353,7 +1457,7 @@ class PdfController extends Controller
 		} elseif (session('product.id')==2){
 			$timeStamp = time();
 			$pdf->save(storage_path().'/fireeye-report-'.$timeStamp.'.pdf');
-			$merge = new \LynX39\LaraPdfMerger\PdfManage;
+			$merge = new \Nextek\LaraPdfMerger\PdfManage;
 			$locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
 
 			$merge->addPDF(storage_path().'/fireeye_report_start'.$locale .'.pdf', 'all');

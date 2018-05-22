@@ -1,4 +1,5 @@
 @tailwind preflight;
+@tailwind components;
 //slider
 .vue-slider-tooltip-wrap{
 	top: -20px !important;
@@ -28,5 +29,4 @@
     flex: 0 0 auto !important;
   }
 }
-
 @tailwind utilities;

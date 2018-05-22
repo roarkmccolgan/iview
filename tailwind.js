@@ -46,6 +46,8 @@ let defaultConfig = require('tailwindcss/defaultConfig')()
 let colors = {
   'transparent': 'transparent',
 
+  'idc-dark-blue': '#004B85',
+
   'ntt-gold': 'rgb(253,208,0)',
   'ntt-blue': 'rgb(0,67,134)',
 

@@ -792,6 +792,22 @@ public function postComplete(SubmitAssessmentsRequest $request)
     		abort(404, 'The page you requested does not exist');
     	}
     }
+    public function getReport(Request $request,$subdomain,$uuid){
+    	$assessment = Assessment::where('uuid', $uuid)->firstOrFail();
+    	$assessment->update(['fetched' => 1]);
+    	
+    	if($assessment->tool_id==session('product.id')){
+    		$request->session()->put('questions', $assessment->quiz);
+			$request->session()->put('result', $assessment->result);
+
+			$reportName = str_slug($assessment->fname.'_'.$assessment->lname.'_'.session('product.title').'_Assessment', '-');
+			$view = $this->wkhtml($assessment->id,$reportName, 'html');
+			return $view;
+    	}else{
+    		Log::error("Report does not exist for tool id ".session('product.id')." http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
+    		abort(404, 'The page you requested does not exist');
+    	}
+    }
 
     public function fakeDownload($tool){
 

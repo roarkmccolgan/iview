@@ -12,7 +12,7 @@ require_once base_path('vendor/goat1000/svggraph/SVGGraph.php');
 
 trait GenerateReportTrait {
 
-	public function wkhtml($assessment_id, $name)
+	public function wkhtml($assessment_id, $name, $type='pdf')
 	{
 		$chartSettings = [
 			'title' => null,
@@ -39,41 +39,32 @@ trait GenerateReportTrait {
 					/*'opacity' => 0.8*/
 				]
 			],
-		'legend' => ['position'=> 'bottom'],
-		'colors' => ['#68aadd'],
-		'chartArea' => ['width'=>'100%', 'height'=>'80%'],
-		'legend' => [ 'position' => "none" ],
-		'events' => [
-		'ready' => 'chartReady'
-		],
-		'annotations'=>[
-		'stem'=>[
-		'color'=>'transparent'
-		],
-		'textStyle'=>[
-					/*'fontName'=> 'Times-Roman',
-					*/'fontSize'=> 14,
-					/*'bold'=> true,
-					'italic'=> true,*/
-					// The color of the text.
+			'legend' => ['position'=> 'bottom'],
+			'colors' => ['#68aadd'],
+			'chartArea' => ['width'=>'100%', 'height'=>'80%'],
+			'legend' => [ 'position' => "none" ],
+			'events' => [
+				'ready' => 'chartReady'
+			],
+			'annotations'=>[
+				'stem'=>[
+					'color'=>'transparent'
+				],
+				'textStyle'=>[
+					'fontSize'=> 14,
 					'color'=> '#000000',
-					// The color of the text outline.
-					// 'auraColor'=> '#d799ae',
-					// The transparency of the text.
-					/*'opacity'=> 0.8*/
-					]
-					],
-					/*'isStacked' => true,*/
-					'bar'  => [
-					'groupWidth'=> '70%'
+				]
+			],
+			'bar'  => [
+				'groupWidth'=> '70%'
+			] //As a percent, "33%"
+		];
 
-		    ] //As a percent, "33%"
-		    ];
-
-		    $vars = [];
-		    $count = 0;
-		    $locale = App::getLocale();
-		    $region = 'na';
+		$vars = [];
+		$vars['pdf'] = $type == 'pdf' ? true : false;
+		$count = 0;
+		$locale = App::getLocale();
+		$region = 'na';
 		if(session('product.id')==6){
 			foreach (config('terminal.regions') as $key => $value) {
 				if(array_search(session('questions.screeners.pages.page1.questions.s1.selected'), $value)!==false){
@@ -81,221 +72,221 @@ trait GenerateReportTrait {
 				}
 			}	
 		}
-		    $headervars = [];
-		    $headervars['tool_title'] = trans(session('product.alias').'.title');
-		    $headervars['sub-title'] = trans(session('product.alias').'.sub-title');
-		    $headervars['company_alias'] = session('company.alias');
-		    $headervars['tool_id'] = session('product.id');
-		    $headervars['template'] = session('template');
-		    $headervars['locale'] = $locale;
-		    
-		    if(session('product.id')==5){
-				$widthstage = [13, 38, 65, 90, 118];
-				$sectionVars = [];
+		$headervars = [];
+		$headervars['tool_title'] = trans(session('product.alias').'.title');
+		$headervars['sub-title'] = trans(session('product.alias').'.sub-title');
+		$headervars['company_alias'] = session('company.alias');
+		$headervars['tool_id'] = session('product.id');
+		$headervars['template'] = session('template');
+		$headervars['locale'] = $locale;
 
-				foreach (config('baseline_'.session('product.id')) as $section => $values) {
-					if($section!=='overall'){
-						preg_match_all('/\d+/', session('result.'.$section.'.rating'), $matches);
-						$sectionnumber =  (int)$matches[0][0];
-						$sectionwidthuser = $widthstage[$sectionnumber-1];
-						$widthsection = $widthstage[$values['benchmark-country-'.$locale]-1];
+		if(session('product.id')==5){
+			$widthstage = [13, 38, 65, 90, 118];
+			$sectionVars = [];
 
-						$sectionVars[] = [
-							'widthuser' => $sectionwidthuser,
-							'width' => $widthsection,
-							'rating' => trans(session('product.alias').'.'.session('result.'.$section.'.rating')),
-							'score' => session('result.'.$section.'.score'),
-						];
-					}
+			foreach (config('baseline_'.session('product.id')) as $section => $values) {
+				if($section!=='overall'){
+					preg_match_all('/\d+/', session('result.'.$section.'.rating'), $matches);
+					$sectionnumber =  (int)$matches[0][0];
+					$sectionwidthuser = $widthstage[$sectionnumber-1];
+					$widthsection = $widthstage[$values['benchmark-country-'.$locale]-1];
+
+					$sectionVars[] = [
+						'widthuser' => $sectionwidthuser,
+						'width' => $widthsection,
+						'rating' => trans(session('product.alias').'.'.session('result.'.$section.'.rating')),
+						'score' => session('result.'.$section.'.score'),
+					];
 				}
+			}
 
 
 				//User overall stage number and ordinal
-				preg_match_all('/\d+/', session('result.overall.rating'), $matches);
-				$number =  (int)$matches[0][0];
-				$ends = array('th','st','nd','rd','th','th','th','th','th','th');
-				if (($number %100) >= 11 && ($number%100) <= 13){
-				   $ordinal = 'th';
-				}
-				else{
-				   $ordinal = $ends[$number % 10];
-				}
+			preg_match_all('/\d+/', session('result.overall.rating'), $matches);
+			$number =  (int)$matches[0][0];
+			$ends = array('th','st','nd','rd','th','th','th','th','th','th');
+			if (($number %100) >= 11 && ($number%100) <= 13){
+				$ordinal = 'th';
+			}
+			else{
+				$ordinal = $ends[$number % 10];
+			}
 
 				//country benchmark by language
-				$overallcountrynumber = config('baseline_'.session('product.id').'.overall.benchmark-country-'.$locale);
-				if($number > $overallcountrynumber){
-					$overalllang = $number-$overallcountrynumber.' '.str_plural('level', $number-$overallcountrynumber).' ahead of the global leaders';
-				}elseif($number == $overallcountrynumber){
-					$overalllang = 'Inline with the global leaders';
-				}else{
-					$overalllang = $overallcountrynumber-$number.' '.str_plural('level', $overallcountrynumber-$number).' behind the global leaders';
-				}
+			$overallcountrynumber = config('baseline_'.session('product.id').'.overall.benchmark-country-'.$locale);
+			if($number > $overallcountrynumber){
+				$overalllang = $number-$overallcountrynumber.' '.str_plural('level', $number-$overallcountrynumber).' ahead of the global leaders';
+			}elseif($number == $overallcountrynumber){
+				$overalllang = 'Inline with the global leaders';
+			}else{
+				$overalllang = $overallcountrynumber-$number.' '.str_plural('level', $overallcountrynumber-$number).' behind the global leaders';
+			}
 
 				//company size benchmark by language
-				$demographicsizeanswer = session('questions.screeners.pages.page1.questions.s1.selected');
-				$demographicsizeanswer = explode('|', $demographicsizeanswer);
-				$demographicsizeanswer = str_replace([" ","."], ["-",""], $demographicsizeanswer[0]);
-				$overallsizenumber = config('baseline_'.session('product.id').'.overall.benchmark-size-'.$demographicsizeanswer);
-				
-				if($number > $overallsizenumber){
-					$overallsize = $number-$overallsizenumber.' '.str_plural('level', $number-$overallsizenumber).' ahead of the leaders in companies of the same size';
-				}elseif($number == $overallsizenumber){
-					$overallsize = 'Inline with the leaders in companies of the same size';
-				}else{
-					$overallsize = $overallsizenumber-$number.' '.str_plural('level', $overallsizenumber-$number).' behind the leaders in companies of the same size';
-				}
+			$demographicsizeanswer = session('questions.screeners.pages.page1.questions.s1.selected');
+			$demographicsizeanswer = explode('|', $demographicsizeanswer);
+			$demographicsizeanswer = str_replace([" ","."], ["-",""], $demographicsizeanswer[0]);
+			$overallsizenumber = config('baseline_'.session('product.id').'.overall.benchmark-size-'.$demographicsizeanswer);
+
+			if($number > $overallsizenumber){
+				$overallsize = $number-$overallsizenumber.' '.str_plural('level', $number-$overallsizenumber).' ahead of the leaders in companies of the same size';
+			}elseif($number == $overallsizenumber){
+				$overallsize = 'Inline with the leaders in companies of the same size';
+			}else{
+				$overallsize = $overallsizenumber-$number.' '.str_plural('level', $overallsizenumber-$number).' behind the leaders in companies of the same size';
+			}
 
 				//bar widths
-				$widthuser = $widthstage[$number-1];
-				$widthlang = $widthstage[$overallcountrynumber-1];
-				$widthsize = $widthstage[$overallsizenumber-1];
+			$widthuser = $widthstage[$number-1];
+			$widthlang = $widthstage[$overallcountrynumber-1];
+			$widthsize = $widthstage[$overallsizenumber-1];
 
 
-				$vars['introduction'] = trans(session('product.alias').'.introduction',
-					[
-						'result'=>trans(session('product.alias').'.'.session('result.overall.rating')),
-						'percent'=>config('baseline_'.session('product.id').'.overall.types.'.session('result.overall.rating').'.benchmark'),
-						'ordinal'=>$ordinal,
-						'number'=>$number,
-						'stage'=>$number,
-						'overalllang'=>$overalllang,
-						'overallsize'=>$overallsize,
-						'widthuser' => $widthuser.'mm;',
-						'widthlang' => $widthlang.'mm;',
-						'widthsize' => $widthsize.'mm;',
-						'widthuser-security-strategy' => $sectionVars[0]['widthuser'].'mm;',
-						'width-security-strategy' => $sectionVars[0]['width'].'mm;',
-						'security-strategy-rating' => $sectionVars[0]['rating'],
-						'security-strategy-score' => $sectionVars[0]['score'],
+			$vars['introduction'] = trans(session('product.alias').'.introduction',
+				[
+					'result'=>trans(session('product.alias').'.'.session('result.overall.rating')),
+					'percent'=>config('baseline_'.session('product.id').'.overall.types.'.session('result.overall.rating').'.benchmark'),
+					'ordinal'=>$ordinal,
+					'number'=>$number,
+					'stage'=>$number,
+					'overalllang'=>$overalllang,
+					'overallsize'=>$overallsize,
+					'widthuser' => $widthuser.'mm;',
+					'widthlang' => $widthlang.'mm;',
+					'widthsize' => $widthsize.'mm;',
+					'widthuser-security-strategy' => $sectionVars[0]['widthuser'].'mm;',
+					'width-security-strategy' => $sectionVars[0]['width'].'mm;',
+					'security-strategy-rating' => $sectionVars[0]['rating'],
+					'security-strategy-score' => $sectionVars[0]['score'],
 
-						'widthuser-incident-detection' => $sectionVars[1]['widthuser'].'mm;',
-						'width-incident-detection' => $sectionVars[1]['width'].'mm;',
-						'incident-detection-rating' => $sectionVars[1]['rating'],
-						'incident-detection-score' => $sectionVars[1]['score'],
+					'widthuser-incident-detection' => $sectionVars[1]['widthuser'].'mm;',
+					'width-incident-detection' => $sectionVars[1]['width'].'mm;',
+					'incident-detection-rating' => $sectionVars[1]['rating'],
+					'incident-detection-score' => $sectionVars[1]['score'],
 
-						'widthuser-incident-response' => $sectionVars[2]['widthuser'].'mm;',
-						'width-incident-response' => $sectionVars[2]['width'].'mm;',
-						'incident-response-rating' => $sectionVars[2]['rating'],
-						'incident-response-score' => $sectionVars[2]['score'],
-						'sectionbg' => asset('/images/tools/5/section_graph_bg.svg'),
-						'overallbg' => asset('/images/tools/5/overall_graph_bg.svg')
-					]
-				);
+					'widthuser-incident-response' => $sectionVars[2]['widthuser'].'mm;',
+					'width-incident-response' => $sectionVars[2]['width'].'mm;',
+					'incident-response-rating' => $sectionVars[2]['rating'],
+					'incident-response-score' => $sectionVars[2]['score'],
+					'sectionbg' => asset('/images/tools/5/section_graph_bg.svg'),
+					'overallbg' => asset('/images/tools/5/overall_graph_bg.svg')
+				]
+			);
 
-				$sectionCopy = '';
+			$sectionCopy = '';
 
-				$customCopy = '';
+			$customCopy = '';
 				//a1
-				$selected = session('questions.security-strategy.pages.page1.questions.q1.selected');
-				$value = explode('|', $selected);
-	    		$value = (int) $selected[1];
-				if($value == 2 || $value == 4){
-					$customCopy.= trans(session('product.alias').'.a1-a');
-				}
-				if($value == 6){
-					$customCopy.= trans(session('product.alias').'.a1-b');
-				}
+			$selected = session('questions.security-strategy.pages.page1.questions.q1.selected');
+			$value = explode('|', $selected);
+			$value = (int) $selected[1];
+			if($value == 2 || $value == 4){
+				$customCopy.= trans(session('product.alias').'.a1-a');
+			}
+			if($value == 6){
+				$customCopy.= trans(session('product.alias').'.a1-b');
+			}
 
 				//a5
-				$selected = session('questions.security-strategy.pages.page3.questions.q3.selected');
-				$value = explode('|', $selected);
-	    		$value = (int) $selected[1];
-				if($value == 2 || $value == 4){
-					$customCopy.= trans(session('product.alias').'.a5-a');
-				}
-				if($value == 6){
-					$customCopy.= trans(session('product.alias').'.a5-b');
-				}
-				if($customCopy!=''){
-					$sectionCopy.= trans(session('product.alias').'.security-strategy-heading');
-					$sectionCopy.= $customCopy;
-					$customCopy = '';
-				}
+			$selected = session('questions.security-strategy.pages.page3.questions.q3.selected');
+			$value = explode('|', $selected);
+			$value = (int) $selected[1];
+			if($value == 2 || $value == 4){
+				$customCopy.= trans(session('product.alias').'.a5-a');
+			}
+			if($value == 6){
+				$customCopy.= trans(session('product.alias').'.a5-b');
+			}
+			if($customCopy!=''){
+				$sectionCopy.= trans(session('product.alias').'.security-strategy-heading');
+				$sectionCopy.= $customCopy;
+				$customCopy = '';
+			}
 
 				//a7 slider
-				$selected = session('questions.incident-detection.pages.page1.questions.q4.selected');
-				$valHold = 0;
-				foreach ($selected as $choice) {
-					$value = explode('|', $choice);
-					$value = $value[1];
-					$valHold+=$value;
-				}
-				$value = $valHold;
-	    		
-				if($value == 2.5){
-					$customCopy.= trans(session('product.alias').'.a7-a');
-				}
-				if($value == 3.5){
-					$customCopy.= trans(session('product.alias').'.a7-b');
-				}
+			$selected = session('questions.incident-detection.pages.page1.questions.q4.selected');
+			$valHold = 0;
+			foreach ($selected as $choice) {
+				$value = explode('|', $choice);
+				$value = $value[1];
+				$valHold+=$value;
+			}
+			$value = $valHold;
 
-				if($customCopy!=''){
-					$sectionCopy.= trans(session('product.alias').'.incident-detection-heading');
-					$sectionCopy.= $customCopy;
-					$customCopy = '';
-				}
+			if($value == 2.5){
+				$customCopy.= trans(session('product.alias').'.a7-a');
+			}
+			if($value == 3.5){
+				$customCopy.= trans(session('product.alias').'.a7-b');
+			}
+
+			if($customCopy!=''){
+				$sectionCopy.= trans(session('product.alias').'.incident-detection-heading');
+				$sectionCopy.= $customCopy;
+				$customCopy = '';
+			}
 
 				//a8
-				$selected = session('questions.incident-response.pages.page1.questions.q7.selected');
-				$value = explode('|', $selected);
-	    		$value = (int) $selected[1];
-				if($value <= 2){
-					$customCopy.= trans(session('product.alias').'.a8-a');
-				}
-				if($value == 3){
-					$customCopy.= trans(session('product.alias').'.a8-b');
-				}
+			$selected = session('questions.incident-response.pages.page1.questions.q7.selected');
+			$value = explode('|', $selected);
+			$value = (int) $selected[1];
+			if($value <= 2){
+				$customCopy.= trans(session('product.alias').'.a8-a');
+			}
+			if($value == 3){
+				$customCopy.= trans(session('product.alias').'.a8-b');
+			}
 
 				//a11
-				$selected = session('questions.incident-response.pages.page2.questions.q8.selected');
-				$value = explode('|', $selected);
-	    		$value = (int) $selected[1];
-				if($value <= 2){
-					$customCopy.= trans(session('product.alias').'.a11-a');
-				}
-				
+			$selected = session('questions.incident-response.pages.page2.questions.q8.selected');
+			$value = explode('|', $selected);
+			$value = (int) $selected[1];
+			if($value <= 2){
+				$customCopy.= trans(session('product.alias').'.a11-a');
+			}
+
 				//a11b
-				$selected = session('questions.incident-response.pages.page4.questions.q10.selected');
-				$value = explode('|', $selected);
-	    		$value = (int) $selected[1];
-				if($value <= 3){
-					$customCopy.= trans(session('product.alias').'.a11b-a');
-				}
+			$selected = session('questions.incident-response.pages.page4.questions.q10.selected');
+			$value = explode('|', $selected);
+			$value = (int) $selected[1];
+			if($value <= 3){
+				$customCopy.= trans(session('product.alias').'.a11b-a');
+			}
 
 				//a13
-				$selected = session('questions.incident-response.pages.page5.questions.q11.selected');
-				$value = explode('|', $selected);
-	    		$value = (int) $selected[1];
-				if($value <= 2){
-					$customCopy.= trans(session('product.alias').'.a13-a');
-				}
-				if($value == 3){
-					$customCopy.= trans(session('product.alias').'.a13-a');
-				}
+			$selected = session('questions.incident-response.pages.page5.questions.q11.selected');
+			$value = explode('|', $selected);
+			$value = (int) $selected[1];
+			if($value <= 2){
+				$customCopy.= trans(session('product.alias').'.a13-a');
+			}
+			if($value == 3){
+				$customCopy.= trans(session('product.alias').'.a13-a');
+			}
 
 				//a14
-				$selected = session('questions.incident-response.pages.page6.questions.q12.selected');
-				$value = explode('|', $selected);
-	    		$value = (int) $selected[1];
-				if($value <= 2){
-					$customCopy.= trans(session('product.alias').'.a14-a');
-				}
-				if($value == 3){
-					$customCopy.= trans(session('product.alias').'.a14-b');
-				}
-				if($customCopy!=''){
-					$sectionCopy.= trans(session('product.alias').'.incident-response-heading');
-					$sectionCopy.= $customCopy;
-					$customCopy = '';
-				}
-				$vars['sectionCopy'] = $sectionCopy;
+			$selected = session('questions.incident-response.pages.page6.questions.q12.selected');
+			$value = explode('|', $selected);
+			$value = (int) $selected[1];
+			if($value <= 2){
+				$customCopy.= trans(session('product.alias').'.a14-a');
+			}
+			if($value == 3){
+				$customCopy.= trans(session('product.alias').'.a14-b');
+			}
+			if($customCopy!=''){
+				$sectionCopy.= trans(session('product.alias').'.incident-response-heading');
+				$sectionCopy.= $customCopy;
+				$customCopy = '';
+			}
+			$vars['sectionCopy'] = $sectionCopy;
 				//end stuff
-				$vars['summary'] = trans(session('product.alias').'.summary');;
+			$vars['summary'] = trans(session('product.alias').'.summary');;
 
-				$vars['introImage'] = Lang::has(session('product.alias').'.introduction-image') ? trans(session('product.alias').'.introduction-image') : false;
-				$vars['introRating'] = trans(session('product.alias').'.'.session('result.overall.rating'));
-				$vars['questions'] = session('questions');
-			}elseif(session('product.id')==6){
+			$vars['introImage'] = Lang::has(session('product.alias').'.introduction-image') ? trans(session('product.alias').'.introduction-image') : false;
+			$vars['introRating'] = trans(session('product.alias').'.'.session('result.overall.rating'));
+			$vars['questions'] = session('questions');
+		}elseif(session('product.id')==6){
 			$widthstage = [13, 38, 65, 90, 118];
 			$sectionVars = [];
 
@@ -321,10 +312,10 @@ trait GenerateReportTrait {
 			$number =  (int)$matches[0][0];
 			$ends = array('th','st','nd','rd','th','th','th','th','th','th');
 			if (($number %100) >= 11 && ($number%100) <= 13){
-			   $ordinal = 'th';
+				$ordinal = 'th';
 			}
 			else{
-			   $ordinal = $ends[$number % 10];
+				$ordinal = $ends[$number % 10];
 			}
 
 			//country benchmark by language
@@ -466,10 +457,10 @@ trait GenerateReportTrait {
 			$number =  (int)$matches[0][0];
 			$ends = array('th','st','nd','rd','th','th','th','th','th','th');
 			if (($number %100) >= 11 && ($number%100) <= 13){
-			   $ordinal = 'th';
+				$ordinal = 'th';
 			}
 			else{
-			   $ordinal = $ends[$number % 10];
+				$ordinal = $ends[$number % 10];
 			}
 
 			$maturitygraph = session('locale') == '' ? 'maturity.svg' : 'maturity_'.session('locale').'.svg';
@@ -765,14 +756,14 @@ trait GenerateReportTrait {
 			$actual_score = session('result.overall.score');
 			switch (session('result.overall.rating')) {
 				case 'stage1':
-					$user_score = (($actual_score - 9)*10)/18;
-					break;
+				$user_score = (($actual_score - 9)*10)/18;
+				break;
 				case 'stage2':
-					$user_score = ((($actual_score - 27)*10)/6)+10;
-					break;
+				$user_score = ((($actual_score - 27)*10)/6)+10;
+				break;
 				case 'stage3':
-					$user_score = ((($actual_score - 33)*10)/12)+20;
-					break;
+				$user_score = ((($actual_score - 33)*10)/12)+20;
+				break;
 			}
 			if($user_score<0.5){
 				$user_score = 0.5;
@@ -797,30 +788,30 @@ trait GenerateReportTrait {
 			if($comparisons->count()==3){
 				$values[] = [
 					'label' => 'Geographic Region',
-		 			'score' => $geographic_base,
-		 			'colour' => '#9E3D91'
+					'score' => $geographic_base,
+					'colour' => '#9E3D91'
 				];
 				$values[] = [
 					'label' => 'Organizasion Size',
-		 			'score' => $organisation_base,
-		 			'colour' => '#9E3D91'
+					'score' => $organisation_base,
+					'colour' => '#9E3D91'
 				];
 				$values[] = [
 					'label' => 'Industry',
-		 			'score' => $vertical_base,
-		 			'colour' => '#9E3D91'
+					'score' => $vertical_base,
+					'colour' => '#9E3D91'
 				];
 			}
 			if($comparisons->count()==2 && $comparisons->contains('country')){
 				$values[] = [
 					'label' => 'Geographic Region',
-		 			'score' => $geographic_base,
-		 			'colour' => '#9E3D91'
+					'score' => $geographic_base,
+					'colour' => '#9E3D91'
 				];
 				$values[] = [
 					'label' => 'Industry',
-		 			'score' => $vertical_base,
-		 			'colour' => '#9E3D91'
+					'score' => $vertical_base,
+					'colour' => '#9E3D91'
 				];
 				$graphHeight = 270;
 				$graphbg = 'comparisonbg_industry_geography'.session('locale');
@@ -828,13 +819,13 @@ trait GenerateReportTrait {
 			if($comparisons->count()==2 && $comparisons->contains('company')){
 				$values[] = [
 					'label' => 'Organizasion Size',
-		 			'score' => $organisation_base,
-		 			'colour' => '#9E3D91'
+					'score' => $organisation_base,
+					'colour' => '#9E3D91'
 				];
 				$values[] = [
 					'label' => 'Industry',
-		 			'score' => $vertical_base,
-		 			'colour' => '#9E3D91'
+					'score' => $vertical_base,
+					'colour' => '#9E3D91'
 				];
 				$graphHeight = 270;
 				$graphbg = 'comparisonbg_industry_company'.session('locale');
@@ -842,23 +833,23 @@ trait GenerateReportTrait {
 			if($comparisons->count()==1){
 				$values[] = [
 					'label' => 'Industry',
-		 			'score' => $vertical_base,
-		 			'colour' => '#9E3D91'
+					'score' => $vertical_base,
+					'colour' => '#9E3D91'
 				];
 				$graphHeight = 220;
 				$graphbg = 'comparisonbg_industry'.session('locale');
 			}
 
 			$values[] = [
-					'label' => 'Peer Overall Cloud Adoption',
-		 			'score' => $base['baseline'],
-		 			'colour' => '#9E3D91'
-				];
+				'label' => 'Peer Overall Cloud Adoption',
+				'score' => $base['baseline'],
+				'colour' => '#9E3D91'
+			];
 			$values[] = [
-					'label' => 'Your Overall Cloud Adoption',
-		 			'score' => $user_score,
-		 			'colour' => '#1A7ABB'
-				];
+				'label' => 'Your Overall Cloud Adoption',
+				'score' => $user_score,
+				'colour' => '#1A7ABB'
+			];
 
 			$settings['back_image'] = asset('images/tools/8/'.$graphbg.'.png');
 			$settings['back_image_height'] = $graphHeight;
@@ -913,14 +904,14 @@ trait GenerateReportTrait {
 			$user_score = session('result.infrastructure.score');
 			switch (session('result.infrastructure.rating')) {
 				case 'stage1':
-					$user_score = (($user_score - 3)*10)/6;
-					break;
+				$user_score = (($user_score - 3)*10)/6;
+				break;
 				case 'stage2':
-					$user_score = ((($user_score - 9)*10)/3)+10;
-					break;
+				$user_score = ((($user_score - 9)*10)/3)+10;
+				break;
 				case 'stage3':
-					$user_score = ((($user_score - 11)*10)/4)+20;
-					break;
+				$user_score = ((($user_score - 11)*10)/4)+20;
+				break;
 			}
 			if($user_score<0.5){
 				$user_score = 0.5;
@@ -938,18 +929,18 @@ trait GenerateReportTrait {
 				$user_score = 20.5;
 			}
 
-			 $values = array(
-			 	array(
-			 		'label' => 'Infrastructure Performance',
-			 		'score' => $base['baseline'],
-			 		'colour' => '#9E3D91'
-			 	),
-			 	array(
-			 		'label' => 'User Infrastructure Performance',
-			 		'score' => $user_score,
-			 		'colour' => '#1A7ABB'
-			 	),
-			 );
+			$values = array(
+				array(
+					'label' => 'Infrastructure Performance',
+					'score' => $base['baseline'],
+					'colour' => '#9E3D91'
+				),
+				array(
+					'label' => 'User Infrastructure Performance',
+					'score' => $user_score,
+					'colour' => '#1A7ABB'
+				),
+			);
 
 			$graphinfrastructure->colours = $colours;
 			$graphinfrastructure->Values($values);
@@ -989,14 +980,14 @@ trait GenerateReportTrait {
 			$user_score = session('result.intelligence.score');
 			switch (session('result.intelligence.rating')) {
 				case 'stage1':
-					$user_score = (($user_score - 3)*10)/6;
-					break;
+				$user_score = (($user_score - 3)*10)/6;
+				break;
 				case 'stage2':
-					$user_score = ((($user_score - 9)*10)/3)+10;
-					break;
+				$user_score = ((($user_score - 9)*10)/3)+10;
+				break;
 				case 'stage3':
-					$user_score = ((($user_score - 11)*10)/4)+20;
-					break;
+				$user_score = ((($user_score - 11)*10)/4)+20;
+				break;
 			}
 			if($user_score<0.5){
 				$user_score = 0.5;
@@ -1015,17 +1006,17 @@ trait GenerateReportTrait {
 			}
 
 			$values = array(
-			 	array(
-			 		'label' => 'Intelligence Performance',
-			 		'score' => $base['baseline'],
-			 		'colour' => '#9E3D91'
-			 	),
-			 	array(
-			 		'label' => 'User Intelligence Performance',
-			 		'score' => $user_score,
-			 		'colour' => '#1A7ABB'
-			 	),
-			 );
+				array(
+					'label' => 'Intelligence Performance',
+					'score' => $base['baseline'],
+					'colour' => '#9E3D91'
+				),
+				array(
+					'label' => 'User Intelligence Performance',
+					'score' => $user_score,
+					'colour' => '#1A7ABB'
+				),
+			);
 
 			$graphintelligence->colours = $colours;
 			$graphintelligence->Values($values);
@@ -1065,14 +1056,14 @@ trait GenerateReportTrait {
 			$user_score = session('result.operations.score');
 			switch (session('result.operations.rating')) {
 				case 'stage1':
-					$user_score = (($user_score - 3)*10)/6;
-					break;
+				$user_score = (($user_score - 3)*10)/6;
+				break;
 				case 'stage2':
-					$user_score = ((($user_score - 9)*10)/3)+10;
-					break;
+				$user_score = ((($user_score - 9)*10)/3)+10;
+				break;
 				case 'stage3':
-					$user_score = ((($user_score - 11)*10)/4)+20;
-					break;
+				$user_score = ((($user_score - 11)*10)/4)+20;
+				break;
 			}
 			if($user_score<0.5){
 				$user_score = 0.5;
@@ -1091,17 +1082,17 @@ trait GenerateReportTrait {
 			}
 
 			$values = array(
-			 	array(
-			 		'label' => 'Operations Performance',
-			 		'score' => $base['baseline'],
-			 		'colour' => '#9E3D91'
-			 	),
-			 	array(
-			 		'label' => 'User Operations Performance',
-			 		'score' => $user_score,
-			 		'colour' => '#1A7ABB'
-			 	),
-			 );
+				array(
+					'label' => 'Operations Performance',
+					'score' => $base['baseline'],
+					'colour' => '#9E3D91'
+				),
+				array(
+					'label' => 'User Operations Performance',
+					'score' => $user_score,
+					'colour' => '#1A7ABB'
+				),
+			);
 
 			$graphoperations->colours = $colours;
 			$graphoperations->Values($values);
@@ -1142,16 +1133,72 @@ trait GenerateReportTrait {
 
 			$vars['sectionCopy'] = $customCopy;
 			
+		}elseif(session('product.id')==9) {
+			
+			$overallNumber = (int) filter_var(session('result.overall.rating'), FILTER_SANITIZE_NUMBER_INT);
+			$infrastructureNumber =  (int) filter_var(session('result.infrastructure.rating'), FILTER_SANITIZE_NUMBER_INT);
+			$intelligenceNumber =  (int) filter_var(session('result.intelligence.rating'), FILTER_SANITIZE_NUMBER_INT);
+			$operationsNumber =  (int) filter_var(session('result.operations.rating'), FILTER_SANITIZE_NUMBER_INT);		
+			
+
+			$vars['introduction'] = trans(session('product.alias').'.introduction',
+				[
+					'result'=>trans(session('product.alias').'.'.session('result.overall.rating')),
+					'url'=>session('url'),
+				]
+			);
+
+			$customCopy = '';
+
+			//overall
+			$rating = session('result.overall.rating');
+			$customCopy.= trans(
+				session('product.alias').'.overall'.$rating,
+				['url'=>session('url')]
+			);
+
+			//Sales
+			$rating = session('result.sales.rating');
+			$customCopy.= trans(
+				session('product.alias').'.sales'.$rating,
+				['url'=>session('url')]
+			);
+
+			//Marketing
+			$rating = session('result.marketing.rating');
+			$customCopy.= trans(
+				session('product.alias').'.marketing'.$rating,
+				['url'=>session('url')]
+			);
+			
+			//Services
+			$rating = session('result.services.rating');
+			$customCopy.= trans(
+				session('product.alias').'.services'.$rating,
+				['url'=>session('url')]
+			);
+
+			//Security
+			$rating = session('result.security.rating');
+			$customCopy.= trans(
+				session('product.alias').'.security'.$rating,
+				['url'=>session('url')]
+			);
+
+			$customCopy.= '<div class="spacer"></div>';
+
+			$vars['sectionCopy'] = $customCopy;
+			
 		}else{
-		    foreach (config('baseline_'.session('product.id')) as $section => $values) {
+			foreach (config('baseline_'.session('product.id')) as $section => $values) {
 				preg_match_all('/\d+/', session('result.'.$section.'.rating'), $matches);
 				$sectionRating =  (int)$matches[0][0];
 				if(config('baseline_'.session('product.id').'.'.$section.'.report-settings.graph')){
 					$sectionGraph = Lava::DataTable();
 					$numformat = Lava::NumberFormat([
-					    'suffix'         => '%'
+						'suffix'         => '%'
 					]);
-			        $sectionGraph->addColumns([
+					$sectionGraph->addColumns([
 						['string', 'Stage'],
 						['number', 'Your Score',$numformat],
 					]);
@@ -1160,12 +1207,12 @@ trait GenerateReportTrait {
 					
 					foreach ($values['types'] as $stage => $params) {
 						$val = $params['benchmark'];
-					    $sectionGraph->addRow([
+						$sectionGraph->addRow([
 					      $locale == 'es' ? substr(trans(session('product.alias').'.'.$stage),0,strpos(trans(session('product.alias').'.'.$stage), ':')):trans(session('product.alias').'.'.$stage),//$stage
 					      $val,
 					      session('result.'.$section.'.rating')==$stage? config('baseline_'.session('product.id').'.'.$section.'.report-settings.color'):null,
 					      $val."%"
-					    ]);
+					  ]);
 					}
 					
 					$sectionChart = Lava::ColumnChart($section.'_graph', $sectionGraph, $chartSettings);
@@ -1229,8 +1276,8 @@ trait GenerateReportTrait {
 								foreach ($page['questions'] as $qKey => $question) {
 									if($qKey==$graph['question']['question']){
 										$selected = explode('|', $question['selected']);
-		                                $userAnswer = $selected[0];
-		                                $userAnswer = strtolower(str_replace(" ", "-", $userAnswer));
+										$userAnswer = $selected[0];
+										$userAnswer = strtolower(str_replace(" ", "-", $userAnswer));
 									}
 								}
 							}
@@ -1243,7 +1290,7 @@ trait GenerateReportTrait {
 						      $val,
 						      session('result.'.$section.'.rating')==$extraSection? config('baseline_'.session('product.id').'.'.$section.'.report-settings.color'):null,
 						      $val."%"
-						    ]);*/
+						  ]);*/
 						}
 						
 						//$extraChart[$section.'_'.$key.'_graph'] = Lava::ColumnChart($section.'_'.$key.'_graph', $extraGraph, $chartSettings);
@@ -1285,11 +1332,11 @@ trait GenerateReportTrait {
 			}
 
 			$vars['introduction'] = Lang::has(session('product.alias').'.introduction') ? trans(session('product.alias').'.introduction',
-			[
-				'result'=>trans(session('product.alias').'.'.session('result.overall.rating')),
-				'stage'=>session('result.overall.rating'),
-				'stagegraphic' => asset('images/tools/'.session('product.id').'/'.session('result.overall.rating').'.svg')
-			]) : false;
+				[
+					'result'=>trans(session('product.alias').'.'.session('result.overall.rating')),
+					'stage'=>session('result.overall.rating'),
+					'stagegraphic' => asset('images/tools/'.session('product.id').'/'.session('result.overall.rating').'.svg')
+				]) : false;
 			$vars['introImage'] = Lang::has(session('product.alias').'.introduction-image') ? trans(session('product.alias').'.introduction-image') : false;
 			$vars['introRating'] = trans(session('product.alias').'.'.session('result.overall.rating'));
 			$vars['questions'] = session('questions');
@@ -1312,118 +1359,141 @@ trait GenerateReportTrait {
 			$headerspacing = config('baseline_'.session('product.id').'.overall.report-settings.header-spacing');
 		}
 
-		$pdf = PDF::loadView('tool.'.session('template').'.report.report',$vars)
-		->setOption('margin-top', $margintop)
-		->setOption('margin-left', 0)
-		->setOption('margin-right', 0)
-		->setOption('window-status','chartrendered')
-		->setOption('header-html',session('url').'/'.session('localeUrl').'template/'.session('template').'/report/header')
-		->setOption('header-spacing',$headerspacing)
-		->setOption('footer-html',session('url').'/'.session('localeUrl').'template/'.session('template').'/report/footer')
-		->setOption('footer-spacing',2)
-		->setOption('replace', $headervars);
-		if(session('product.id')==2){
-			$pdf->save(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
+		if($type == 'pdf'){
+			$pdf = PDF::loadView('tool.'.session('template').'.report.report',$vars)
+			->setOption('margin-top', $margintop)
+			->setOption('margin-left', 0)
+			->setOption('margin-right', 0)
+			->setOption('window-status','chartrendered')
+			->setOption('header-html',session('url').'/'.session('localeUrl').'template/'.session('template').'/report/header')
+			->setOption('header-spacing',$headerspacing)
+			->setOption('footer-html',session('url').'/'.session('localeUrl').'template/'.session('template').'/report/footer')
+			->setOption('footer-spacing',2)
+			->setOption('replace', $headervars);
+			if (session('product.id')==9){
+	        	//$pdf->setOption('cover',session('url').'/'.session('localeUrl').'template/'.session('template').'/report/cover');
+				$timeStamp = time();
+				//return $pdf->inline('invoice.pdf');
+				$pdf->save(storage_path().'/trend-micro-report-'.$timeStamp.'.pdf');
 
-			$merge = new \LynX39\LaraPdfMerger\PdfManage;
-			$locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
 
-			$merge->addPDF(storage_path().'/fireeye_report_start'.$locale .'.pdf', 'all');
-			$merge->addPDF(storage_path().'/'.$assessment_id.'_'.$name.'.pdf', 'all');
-			$merge->addPDF(storage_path().'/fireeye_report_end'.$locale .'.pdf', 'all');
 
-			$merge->merge('file', storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf', 'P');
-			if(File::exists(storage_path().'/'.$assessment_id.'_'.$name.'.pdf')){
-				File::delete(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
-			}
-		}elseif(session('product.id')==5){
-			$pdf->save(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
+				$merge = new \Nextek\LaraPdfMerger\PdfManage;
+				$locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
 
-			$merge = new \LynX39\LaraPdfMerger\PdfManage;
-			$locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
+				$merge->addPDF(storage_path().'/trend-micro_start'.$locale .'.pdf', 'all');
+				$merge->addPDF(storage_path().'/trend-micro-report-'.$timeStamp.'.pdf', 'all');
 
-			$merge->addPDF(storage_path().'/splunk_report_start'.$locale .'.pdf', 'all');
-			$merge->addPDF(storage_path().'/'.$assessment_id.'_'.$name.'.pdf', 'all');
+				$merge->merge('browser', storage_path().'/reports/trend-micro-report-'.$timeStamp.'.pdf', 'P');
+				if(File::exists(storage_path().'/trend-micro-report-'.$timeStamp.'.pdf')){
+					File::delete(storage_path().'/trend-micro-report-'.$timeStamp.'.pdf');
+				}
+			} elseif(session('product.id')==2){
+				$pdf->save(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
 
-			$merge->merge('file', storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf', 'P');
-			if(File::exists(storage_path().'/'.$assessment_id.'_'.$name.'.pdf')){
-				File::delete(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
-			}
-		}/*elseif(session('product.id')==6){
-			$pdf->save(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
+				$merge = new \Nextek\LaraPdfMerger\PdfManage;
+				$locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
 
-			$merge = new \LynX39\LaraPdfMerger\PdfManage;
-			$locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
+				$merge->addPDF(storage_path().'/fireeye_report_start'.$locale .'.pdf', 'all');
+				$merge->addPDF(storage_path().'/'.$assessment_id.'_'.$name.'.pdf', 'all');
+				$merge->addPDF(storage_path().'/fireeye_report_end'.$locale .'.pdf', 'all');
 
-			$merge->addPDF(storage_path().'/btmcafee_start'.$locale .'.pdf', 'all');
-			$merge->addPDF(storage_path().'/'.$assessment_id.'_'.$name.'.pdf', 'all');
-			$merge->addPDF(storage_path().'/btmcafee_end'.$locale .'.pdf', 'all');
+				$merge->merge('file', storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf', 'P');
+				if(File::exists(storage_path().'/'.$assessment_id.'_'.$name.'.pdf')){
+					File::delete(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
+				}
+			}elseif(session('product.id')==5){
+				$pdf->save(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
 
-			$merge->merge('file', storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf', 'P');
-			if(File::exists(storage_path().'/'.$assessment_id.'_'.$name.'.pdf')){
-				File::delete(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
-			}
-		}*/elseif(session('product.id')==7){
-			if(file_exists(storage_path().'/'.$assessment_id.'_'.$name.'.pdf')){
-    			File::delete(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
-    		}
-			$pdf->save(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
+				$merge = new \Nextek\LaraPdfMerger\PdfManage;
+				$locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
 
-			$merge = new \LynX39\LaraPdfMerger\PdfManage;
-			$locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
+				$merge->addPDF(storage_path().'/splunk_report_start'.$locale .'.pdf', 'all');
+				$merge->addPDF(storage_path().'/'.$assessment_id.'_'.$name.'.pdf', 'all');
 
-			$merge->addPDF(storage_path().'/symantec_report_start'.$locale .'.pdf', 'all');
-			$merge->addPDF(storage_path().'/'.$assessment_id.'_'.$name.'.pdf', 'all');
+				$merge->merge('file', storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf', 'P');
+				if(File::exists(storage_path().'/'.$assessment_id.'_'.$name.'.pdf')){
+					File::delete(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
+				}
+			}/*elseif(session('product.id')==6){
+				$pdf->save(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
 
-			$merge->merge('file', storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf', 'P');
-			if(File::exists(storage_path().'/'.$assessment_id.'_'.$name.'.pdf')){
-				File::delete(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
-			}
-		}elseif(session('product.id')==8){
-			if(file_exists(storage_path().'/'.$assessment_id.'_'.$name.'.pdf')){
-    			File::delete(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
-    		}
-			$pdf->save(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
+				$merge = new \Nextek\LaraPdfMerger\PdfManage;
+				$locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
 
-			$merge = new \LynX39\LaraPdfMerger\PdfManage;
-			$locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
+				$merge->addPDF(storage_path().'/btmcafee_start'.$locale .'.pdf', 'all');
+				$merge->addPDF(storage_path().'/'.$assessment_id.'_'.$name.'.pdf', 'all');
+				$merge->addPDF(storage_path().'/btmcafee_end'.$locale .'.pdf', 'all');
 
-			$merge->addPDF(storage_path().'/ntt_report_start'.$locale .'.pdf', 'all');
-			$merge->addPDF(storage_path().'/'.$assessment_id.'_'.$name.'.pdf', 'all');
-			$merge->addPDF(storage_path().'/ntt_report_end'.$locale .'.pdf', 'all');
+				$merge->merge('file', storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf', 'P');
+				if(File::exists(storage_path().'/'.$assessment_id.'_'.$name.'.pdf')){
+					File::delete(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
+				}
+			}*/elseif(session('product.id')==7){
+				if(file_exists(storage_path().'/'.$assessment_id.'_'.$name.'.pdf')){
+					File::delete(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
+				}
+				$pdf->save(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
 
-			$merge->merge('file', storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf', 'P');
-			if(File::exists(storage_path().'/'.$assessment_id.'_'.$name.'.pdf')){
-				File::delete(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
+				$merge = new \Nextek\LaraPdfMerger\PdfManage;
+				$locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
+
+				$merge->addPDF(storage_path().'/symantec_report_start'.$locale .'.pdf', 'all');
+				$merge->addPDF(storage_path().'/'.$assessment_id.'_'.$name.'.pdf', 'all');
+
+				$merge->merge('file', storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf', 'P');
+				if(File::exists(storage_path().'/'.$assessment_id.'_'.$name.'.pdf')){
+					File::delete(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
+				}
+			}elseif(session('product.id')==8){
+				if(file_exists(storage_path().'/'.$assessment_id.'_'.$name.'.pdf')){
+					File::delete(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
+				}
+				$pdf->save(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
+
+				$merge = new \Nextek\LaraPdfMerger\PdfManage;
+				$locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
+
+				$merge->addPDF(storage_path().'/ntt_report_start'.$locale .'.pdf', 'all');
+				$merge->addPDF(storage_path().'/'.$assessment_id.'_'.$name.'.pdf', 'all');
+				$merge->addPDF(storage_path().'/ntt_report_end'.$locale .'.pdf', 'all');
+
+				$merge->merge('file', storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf', 'P');
+				if(File::exists(storage_path().'/'.$assessment_id.'_'.$name.'.pdf')){
+					File::delete(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
+				}
+			}else{
+				return $pdf->save(storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf');
 			}
 		}else{
-			return $pdf->save(storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf');
+			$view = View::make('tool.'.session('template').'.report.report',$vars);
+			dd($view);
+			return $view;
 		}
-
 	}
 
 	private function getQuestionScore($q, $section,$type='q'){
-    	$selected = session('questions.'.$section.'.pages.page'.$q.'.questions.'.$type.$q.'.selected');
-    	$total = 0;
-    	if(is_array($selected)){
-    		foreach ($selected as $select) {
-    			$select = explode("|", $select);
-    			$total += $select[1];
-    		}
-    	}else{
-    		$select = explode("|", $selected);
-    		$total = $select[1];
-    	}
-    	return $total;
-    }
+		$selected = session('questions.'.$section.'.pages.page'.$q.'.questions.'.$type.$q.'.selected');
+		$total = 0;
+		if(is_array($selected)){
+			foreach ($selected as $select) {
+				$select = explode("|", $select);
+				$total += $select[1];
+			}
+		}else{
+			$select = explode("|", $selected);
+			$total = $select[1];
+		}
+		return $total;
+	}
 
-    private function getQuestionScoreNew($q, $section,$page=false,$type='q'){
-    	$page = $page == false ? $q : $page;
-    	$selected = session('questions.'.$section.'.pages.page'.$page.'.questions.'.$type.$q.'.selected');
-    	if(count($selected)>1){
-    		$calc = session()->has('questions.'.$section.'.pages.page'.$page.'.questions.'.$type.$q.'.calc') ? session('questions.'.$section.'.pages.page'.$page.'.questions.'.$type.$q.'.calc') : false;
-    		if($calc){
-    			if($calc['type']=='average'){
+	private function getQuestionScoreNew($q, $section,$page=false,$type='q'){
+		$page = $page == false ? $q : $page;
+		$selected = session('questions.'.$section.'.pages.page'.$page.'.questions.'.$type.$q.'.selected');
+		if(count($selected)>1){
+			$calc = session()->has('questions.'.$section.'.pages.page'.$page.'.questions.'.$type.$q.'.calc') ? session('questions.'.$section.'.pages.page'.$page.'.questions.'.$type.$q.'.calc') : false;
+			if($calc){
+				if($calc['type']=='average'){
 					$ave = [];
 					foreach ($selected as $select) {
 						$ave[]=$select['value'];
@@ -1436,26 +1506,26 @@ trait GenerateReportTrait {
 					}
 					$val = ($norm/$details['calc']['value'])*count($details['selected']);
 				}
-    		}
-    	}else{
-    		$val = $selected[0]['value'];
-    	}
-    	return $val;
-    }
+			}
+		}else{
+			$val = $selected[0]['value'];
+		}
+		return $val;
+	}
 
-    private function getAnswerText($q, $section,$type='q'){
-    	$selected = session('questions.'.$section.'.pages.page'.$q.'.questions.'.$type.$q.'.selected');
-    	$text = 0;
-    	if(is_array($selected)){
-    		$text = [];
-    		foreach ($selected as $select) {
-    			$select = explode("|", $select);
-    			$text[] = $select[0];
-    		}
-    	}else{
-    		$select = explode("|", $selected);
-    		$text = $select[0];
-    	}
-    	return $text;
-    }
+	private function getAnswerText($q, $section,$type='q'){
+		$selected = session('questions.'.$section.'.pages.page'.$q.'.questions.'.$type.$q.'.selected');
+		$text = 0;
+		if(is_array($selected)){
+			$text = [];
+			foreach ($selected as $select) {
+				$select = explode("|", $select);
+				$text[] = $select[0];
+			}
+		}else{
+			$select = explode("|", $selected);
+			$text = $select[0];
+		}
+		return $text;
+	}
 }

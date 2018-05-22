@@ -66,7 +66,7 @@ Completa lo strumento di valutazione del rischio informatico di IDC per ulterior
     '7besttxt'=>"Grazie per aver completato la valutazione GDPR di IDC.<br/>Questo report fornirà raccomandazioni sulle prossime tappe del percorso verso la conformità GDPR.",
     '7besttweet' => "I took the @symantec GDPR Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
     '7send'=>'We can send you the full results directly to your mailbox',
-    '7fullreport'=>'Per ricevere il report completo, compilate il modulo seguente.',
+    '7fullreport'=>'per diventare conformi al GDPR',
     '7provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
     '7byreg'=>'Registrandovi a IDC, accettate la nostra Informativa sulla <a href="/privacy" target="_blank">privacy e l\'Informativa</a> sulla <a href="https://www.symantec.com/privacy" target="_blank">privacy di Symantec</a>. Le informazioni che raccogliamo saranno condivise con Symantec a scopo di direct marketing.',
     '7wait'=>'While you\'re waiting why not tweet your results and see how your colleagues measure up?',

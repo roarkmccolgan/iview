@@ -77,122 +77,8 @@
 										<p class="text-red text-xs italic" v-show="errors.company" v-html="$t('trend-micro-mssp.leadgen.errorCompany')"></p>
 									</div>
 								</div>
-								<div class="mb-6 sm:w-1/2">
-									<div class="mr-2">
-										<label class="block uppercase tracking-wide text-grey-light text-xs font-bold mb-2" for="location">
-											{{ $t('trend-micro-mssp.leadgen.location') }}
-										</label>
-										<div class="inline-block relative w-full mb-2">
-											<select class="block appearance-none rounded-none w-full bg-grey-dark border text-grey-light py-3 px-4 pr-8" :class="[errors.location ? 'border-red' : '']" id="location" name="extra[location]" @blur="hasError">
-												<option value="" v-html="$t('trend-micro-mssp.leadgen.pleaseselect')"></option>
-												<option value="UK">UK</option>
-												<option value="Ireland">Ireland</option>
-												<option value="Germany">Germany</option>
-												<option value="Austria">Austria</option>
-												<option value="Switzerland">Switzerland</option>
-												<option value="Belgium">Belgium</option>
-												<option value="Luxembourg">Luxembourg</option>
-												<option value="Netherlands">Netherlands</option>
-												<option value="France">France</option>
-												<option value="Spain">Spain</option>
-												<option value="Italy">Italy</option>
-												<option value="Sweden">Sweden</option>
-												<option value="Norway">Norway</option>
-												<option value="Denmark">Denmark</option>
-												<option value="Other">Other:</option>
-											</select>
-											<div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-light">
-												<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
-											</div>
-										</div>
-										<p class="text-red text-xs italic" v-show="errors.location" v-html="$t('trend-micro-mssp.leadgen.errorLocation')"></p>
-									</div>
-								</div>
-								<div class="mb-6 sm:w-1/2">
-									<div class="ml-2">
-										<label class="block uppercase tracking-wide text-grey-light text-xs font-bold mb-2" for="locations">
-											{{ $t('trend-micro-mssp.leadgen.locations') }}
-										</label>
-										<div class="inline-block relative w-full mb-2">
-											<select class="block appearance-none rounded-none w-full bg-grey-dark border text-grey-light py-3 px-4 pr-8" :class="[errors.locations ? 'border-red' : '']" id="locations" name="extra[locations]" @blur="hasError">
-												<option value="" v-html="$t('trend-micro-mssp.leadgen.pleaseselect')"></option>
-												<option value="Only 1">Only 1</option>
-												<option value="Between 2 and 10">Between 2 and 10</option>
-												<option value="Between 11 and 20">Between 11 and 20</option>
-												<option value="Between 21 and 25">Between 21 and 25</option>
-												<option value="More than 25">More than 25</option>
-											</select>
-											<div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-light">
-												<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
-											</div>
-										</div>
-										<p class="text-red text-xs italic" v-show="errors.locations" v-html="$t('trend-micro-mssp.leadgen.errorLocations')"></p>
-									</div>
-								</div>
-								<div class="mb-6 sm:w-1/2">
-									<div class="mr-2">
-										<label class="block uppercase tracking-wide text-grey-light text-xs font-bold mb-2" for="company_type">
-											{{ $t('trend-micro-mssp.leadgen.company_type') }}
-										</label>
-										<div class="inline-block relative w-full mb-2">
-											<select class="block appearance-none rounded-none w-full bg-grey-dark border text-grey-light py-3 px-4 pr-8" :class="[errors.company_type ? 'border-red' : '']" id="company_type" name="extra[industry]" @blur="hasError">
-												<option value="" v-html="$t('trend-micro-mssp.leadgen.pleaseselect')"></option>
-												<option value="MSP">MSP</option>
-												<option value="Reseller">Reseller</option>
-												<option value="Systems integrator">Systems integrator</option>
-												<option value="Distributor (end)">Distributor (end)</option>
-												<option value="Telco">Telco</option>
-												<option value="Digital agency">Digital agency</option>
-												<option value="Other">Other</option>
-											</select>
-											<div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-light">
-												<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
-											</div>
-										</div>
-										<p class="text-red text-xs italic" v-show="errors.company_type" v-html="$t('trend-micro-mssp.leadgen.errorCompanyType')"></p>
-									</div>
-								</div>
-								<div class="mb-6 sm:w-1/2">
-									<div class="ml-2">
-										<label class="block uppercase tracking-wide text-grey-light text-xs font-bold mb-2" for="partner">
-											{{ $t('trend-micro-mssp.leadgen.partner') }}
-										</label>
-										<div class="inline-block relative w-full mb-2">
-											<select class="block appearance-none rounded-none w-full bg-grey-dark border text-grey-light py-3 px-4 pr-8" :class="[errors.partner ? 'border-red' : '']" id="partner" name="extra[partner]" @blur="hasError">
-												<option value="" v-html="$t('trend-micro-mssp.leadgen.pleaseselect')"></option>
-												<option value="Yes">Yes</option>
-												<option value="No, but we are considering becoming one">No, but we are considering becoming one</option>
-												<option value="No, we are not considering becoming one">No, we are not considering becoming one</option>
-												<option value="No, we have been one before">No, we have been one before</option>
-											</select>
-											<div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-light">
-												<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
-											</div>
-										</div>
-										<p class="text-red text-xs italic" v-show="errors.partner" v-html="$t('trend-micro-mssp.leadgen.errorPartner')"></p>
-									</div>
-								</div>
-								<div class="mb-6 sm:w-1/2">
-									<div class="mr-2">
-										<label class="block uppercase tracking-wide text-grey-light text-xs font-bold mb-2" for="sell">
-											{{ $t('trend-micro-mssp.leadgen.sell') }}
-										</label>
-										<div class="inline-block relative w-full mb-2">
-											<select class="block appearance-none rounded-none w-full bg-grey-dark border text-grey-light py-3 px-4 pr-8" :class="[errors.sell ? 'border-red' : '']" id="sell" name="extra[sell]" @blur="hasError">
-												<option value="" v-html="$t('trend-micro-mssp.leadgen.pleaseselect')"></option>
-												<option value="Cloud-based productivity suites, e.g., Office 365, Google G-Suite">Cloud-based productivity suites, e.g., Office 365, Google G-Suite</option>
-												<option value="Other SaaS/cloud applications, e.g., Salesforce, Sage">Other SaaS/cloud applications, e.g., Salesforce, Sage</option>
-												<option value="Managed services, e.g., managed network services, managed support services">Managed services, e.g., managed network services, managed support services</option>
-											</select>
-											<div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-light">
-												<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
-											</div>
-										</div>
-										<p class="text-red text-xs italic" v-show="errors.sell" v-html="$t('trend-micro-mssp.leadgen.errorSell')"></p>
-									</div>
-								</div>
-								<div class="mb-6 sm:w-1/2">
-									<div class="ml-2">
+								<div class="mb-6 w-full">
+									<div class="">
 										<label class="block uppercase tracking-wide text-grey-light text-xs font-bold mb-2" for="country">
 											{{ $t('trend-micro-mssp.leadgen.country') }}
 										</label>
@@ -224,8 +110,7 @@
 									</label>
 								</div>
 								<div class="mb-6 w-full">
-									<button type="submit" :disabled="isSubmitting" class="text-center block bg-trend-red hover:bg-white text-white hover:text-trend-red py-4 px-6 no-underline" :class="[{'cursor-not-allowed':isSubmitting}]" @click.prevent="checkForErrors" v-show="false"><font-awesome-icon class="mr-2" :class="[{'fa-spin': isSubmitting}]" :icon="isSubmitting ? icons.faSyncAlt : icons.faEnvelope"></font-awesome-icon> {{ $t('trend-micro-mssp.leadgen.send') }}</button>
-									<a href="/downloads/trend-output-report.pdf" target="_black" :disabled="isSubmitting" class="text-center inline-block bg-trend-red hover:bg-white text-white hover:text-trend-red py-4 px-6 no-underline" :class="[{'cursor-not-allowed':isSubmitting}]"><font-awesome-icon class="mr-2" :class="[{'fa-spin': isSubmitting}]" :icon="isSubmitting ? icons.faSyncAlt : icons.faEnvelope"></font-awesome-icon> {{ $t('trend-micro-mssp.leadgen.send') }}</a>
+									<button type="submit" :disabled="isSubmitting" class="text-center block bg-trend-red hover:bg-white text-white hover:text-trend-red py-4 px-6 no-underline" :class="[{'cursor-not-allowed':isSubmitting}]" @click.prevent="checkForErrors"><font-awesome-icon class="mr-2" :class="[{'fa-spin': isSubmitting}]" :icon="isSubmitting ? icons.faSyncAlt : icons.faEnvelope"></font-awesome-icon> {{ $t('trend-micro-mssp.leadgen.send') }}</button>
 								</div>
 							</div>
 						</form>
@@ -283,12 +168,6 @@ export default{
 				email: false,
 				tel: false,
 				company: false,
-				position: false,
-				company_type: false,
-				location: false,
-				locations: false,
-				partner: false,
-				sell: false,
 				country: false,
 				terms: false
 			},

@@ -40,6 +40,15 @@ return array(
     'stage1' => 'WAN Follower',
     'stage2' => 'WAN Generalist',
     'stage3' => 'WAN Leader',
+    'infrastructure' => [
+        'title'=> 'Infrastructure',
+    ],
+    'intelligence' => [
+        'title'=> 'Intelligence',
+    ],
+    'operations' => [
+        'title'=> 'Operations',
+    ],
     'finishtxt' => '
         <h2 class="font-light leading-tight mb-4">Thank you for completing the NTT Communications Next Generation WAN Assessment</h2>
         <h3 class="leading-tight mb-2">How you scored</h3>

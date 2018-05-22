@@ -6,12 +6,12 @@ return array(
     'sponsoredby'=>'Sponsored by',
     'restart'=>'Restart Assessment',
     'assoc'=>'In association with',
-    'sponsors'=>'NTT Communications',
+    'sponsors'=>'Trend Micro',
 
     'change-langauge'=>'Change language',
     'download-now'=>'Download Now',
 
-    'title'=>'IDC Managed Security Services Readiness Assessment',
+    'title'=>'MSP Readiness Tool',
     'sub-title'=>'What do you need to do be a profitable and growing MSSP',
     'landing'=>'
         <p class="mb-2">
@@ -45,7 +45,7 @@ return array(
         <h2 class="font-light leading-tight mb-4">Thank you for completing the IDC Managed Security Services Readiness Assessment</h2>
         <p class="mb-4">Based on your input, your aggregate score means that you are at <strong class="text-blue">:stage</strong> in terms of your overall MSS readiness.</p>
         <p class="mb-4 mt-4">Please tell us a little about yourself and immediately receive your personalized report</p>
-        <img src="/images/tools/9/report.png" alt="" />
+        <img src=":url/images/tools/9/report.png" alt="" />
     ',
     'complete_thankyou' => 'Thank you :Fname,',
     'complete_body' => '
@@ -97,1022 +97,1209 @@ return array(
         'errorNumber'=>'Please enter a valid phone number',
         'errorAccept'=>'Please accept the Terms &amp; Conditions',
     ],
-    'introduction' => '
-        <h2 class="text-ntt-blue mb-6">INTRODUCTION</h2>
-        <p class="mb-2">Thank you for completing the NTT Communications Next-Generation WAN Advisor, with research and analysis by IDC. As organizations implement digital transformation strategies they are faced with accelerating network requirements and the need for a network that supports the business outcomes they are aiming to achieve. Digital transformation should therefore go hand in hand with network evolution.</p>
+    'introduction1' => '
+        <h2 class="text-blue-dark mb-6">INTRODUCTION</h2>
+        <p class="mb-2">Thank you for taking part in IDC\'s managed security services (MSS) readiness assessment.</p>
 
-        <p class="mb-2">IDC has developed the Next-Generation WAN Advisor to help organizations assess the state of their WAN, and benchmark this performance against their peers. This interactive self-assessment tool is backed up by independent end-user research and IDC\'s in-depth understanding of this market. The research draws upon input from 300 network experts and decision makers to understand how advanced different organizations are in terms of their WAN investment and approach.</p>
+        <p class="mb-2">The purpose of this assessment tool is to help managed security services providers (MSSPs) build a profitable and sustainable MSS business, maximizing the opportunities this fast-growing market segment presents to these companies.</p>
 
-        <p class="mb-2">IDC has built a comparison framework in which individual responses from the survey are scored to group organizations into 3 levels of WAN maturity, based on their approach to: </p>
-        <ul class="mb-2">
-            <li>WAN Infrastructure, addressing usage and strategy with regards to connectivity and SD-WAN</li>
-            <li>WAN Intelligence, covering usage of data and analytics to improve the performance of networks and applications</li>
-            <li>WAN Operations, focusing on operational tasks such as configuration and security policy management</li>
-        </ul>
-
-        <p class="mb-2">Based on your responses, this report provides you with a benchmark of your organization\'s WAN. It gives essential and tailored guidance to help you prepare for the requirements of tomorrow and plot your course to a Next-Generation WAN: a network that delivers the scalability, flexibility, manageability, cost-effectiveness, and security that your organization needs to drive digital transformation. </p>
-
-        <h3 class="ntt-blue">Figure 1 – Next Generation WAN Assessment</h3>
-        <img src=":image" alt="" class="block mx-auto mb-2" />
-        <p class="mb-2">
-            Figure 1 shows that IDC classes 16% of organizations as WAN Leader. These organizations typically differentiate themselves from others with their strategic approach toward the WAN, and a widespread usage of intelligence and automation. 41% of organizations are WAN Generalists, while 43% are considered as WAN Followers.
+        <p class="mb-2">IDC, a leading global market intelligence and advisory firm, has leveraged substantial research and experience from leading managed security services providers (MSSPs) to build a set of recommendations tailored to specific stages and elements within a managed security services business. These recommendations are contained in this report.</p>
+        <p>
+            Based on your input, your aggregate score means that you are at :result in terms of your overall MSS readiness.
         </p>
-
-        <div class="pb"></div>
-        <div class="spacer"></div>
-        
     ',
-    'overallintro'=>'
-        <h2 class="text-ntt-blue mb-6">OVERALL PERFORMANCE</h2>
-        <p class="mb-2">
-            Organizations can only reap the full benefits of digital transformation if this goes hand in hand with an evolution of their WAN. IDC has created the Next-Generation WAN Advisor to help organizations assess the readiness of their WAN for the digital future. It scores organizations on their approach to  WAN infrastructure, intelligence and operations. Based on a survey of 300 network influencers and decision makers we class organizations into three levels of maturity: Followers, Generalists, and Leaders.
+    'introduction2' => '
+        <img src=":url/images/tools/9/stages.png" class="w-full sm:w-3/4 mx-auto" alt="">
+    ',
+    'introduction3' => '
+        <p class="text-blue-dark font-bold mb-2">Stage 1</p>
+        <p class="mb-1">
+            Companies at this stage are at the very beginning of their journey to becoming an MSSP. They may be new to managed services, to selling in a subscription model and/or new to the security market.
         </p>
-        <img class="block mx-auto mt-6" src=":image" alt="" style="width: 140mm;">
+        <p class="mb-1">
+            This is a high-growth market, which is compounded by a severe skills shortage, and presents a massive opportunity for IT solution providers. Now is a good time to reach out to relevant vendor partners (such as Trend Micro) to understand what programmes they have in place to accelerate your entry into the MSS market. 
+        </p>
+    ',
+    'introduction4' => '
+        <p class="text-blue-dark font-bold mb-2">Stage 2</p>
+        <p class="mb-1">
+            With some experience in operating managed services and/or security solutions, companies at this stage are beginning to realise the opportunities and may well be starting to incorporate recurring/subscription-based revenue into their business.
+        </p>
+        <p class="mb-1">
+            To build on the foundation which has been laid already, it is important that companies at Stage 2 are proactively building business plans relating to sales, marketing and services transformations to support the MSS model.
+        </p>
+    ',
+    'introduction5' => '
+        <p class="text-blue-dark font-bold mb-2">Stage 3</p>
+        <p class="mb-1">
+            Companies at this stage are invested in their MSS business, and the emphasis should now be on improving efficiencies and driving profitability. At this stage, companies are starting to transform sales, marketing and services for MSS.
+        </p>
+        <p class="mb-1">
+            Companies at this stage will need to address the challenge of how to accelerate transformation while still maintaining existing business. 
+        </p>
+    ',
+    'introduction6' => '
+        <p class="text-blue-dark font-bold mb-2">Stage 4</p>
+        <p class="mb-1">
+            Companies at Stage 4 have an embedded MSS business. Significant efforts have been made to transform the sales, marketing and services organisations within the company, with increasing automation, repeatability and growing profitability.
+        </p>
+        <p class="mb-1">
+            Now, the priority for these companies is to enhance and expand their MSS portfolio, innovate and differentiate to establish market leadership. 
+        </p>
+    ',
+    'introduction7' => '
+        <p class="text-blue-dark font-bold mb-2">Stage 5</p>
+        <p class="mb-1">
+            Companies at Stage 5 are considered mature (and market-leading) MSSPs, with all business units optimised to support this model.
+        </p>
+        <p class="mb-1">
+            The emphasis at this stage is on retaining market leadership through a continuous innovation process and focus on profitability. 
+        </p>
+    ',
+    'introduction8' => '
+        <img src=":url/images/tools/9/trend.png" class="w-full mx-auto" alt="">
     ',
     'overallstage1'=>'
-        <div class="clearfix">
-            <p class="mb-2 text-ntt-blue mt-4 font-bold">
-                Based on your responses to IDC\'s Next Generation WAN Advisor, your organization has been positioned as a :position (Level :stage of 3), which means your organization is generally lagging behind its peers.
-            </p>
-        </div>
+        <h2 class="leading-tight text-blue-dark mb-2">SALES PERFORMANCE</h2>
+        <span class="block mb-2 font-bold text-grey-dark text-lg">:stage</span>
+        <p class="mb-2">Companies at this stage are at the very beginning of their journey to becoming an MSSP. They may be new to managed services, to selling in a subscription model, and/or new to the security market.</p>
+        <p class="mb-2">This is a high growth market, which is compounded by severe skills shortage, and presents a massive opportunity for IT solution providers. Now is a good time to reach out to relevant vendor partners (like Trend Micro) to understand what programs they have in place to accelerate your entry into the MSS market.</p>
     ',
     'overallstage2'=>'
-        <div class="clearfix">
-            <p class="mb-2 text-ntt-blue mt-4 font-bold">
-                Based on your responses to IDC\'s Next-Generation WAN Advisor, your organization has been positioned as a WAN Generalist (Level 2 of 3), which means your organization is generally in line with its peers.
-            </p>
-        </div>
+        <h2 class="leading-tight text-blue-dark mb-1">YOUR OVERALL PERFORMANCE</h2>
+        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 2</span>
+        <p class="mb-2">With some experience in operating managed services and/or security solutions, companies at this stage are beginning to realize the opportunities and may well be starting to incorporate recurring/subscription-based revenue into their business.</p>
+        <p class="mb-2">To build on the foundation which has been laid already, it is important that companies at Stage 2 are proactively building business plans relating to sales, marketing, and services transformations to support the MSS model.</p>
     ',
     'overallstage3'=>'
-        <div class="clearfix">
-            <p class="mb-2 text-ntt-blue mt-4 font-bold">
-                Based on your responses to IDC\'s Next-Generation WAN Advisor, your organization has been positioned as a WAN Generalist (Level 2 of 3), which means your organization is generally inline with its peers.
-            </p>
-        </div>
-    ',
-    'overallgraph'=>'
-    <div class="mx-auto my-4">:graph</div>
-    ',
-    'overalloutro' => '
-        <div class="clearfix">
-            <p class="mb-2">
-                These results indicate that there is plenty of room for improvement for most organizations when it comes to their WAN. To turn your WAN into a driver of digital transformation, you should aspire to outperform your peers and progress on the maturity ladder.
-            </p>
-        </div>
-        <div class="pb"></div>
-    ',
-
-    'infrastructureintro' => '
-        <h2 class="w-2/3 ml-auto text-ntt-blue mb-6">WAN INFRASTRUCTURE</h2>
-        <div class="clearfix">
-            <div class="w-1/3 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 25mm;"></div>
-            <p class="w-2/3 float-left mb-2">
-                Network requirements are accelerating as organizations are embracing digital transformation. At the same time the strategic importance of the WAN is increasing, as the business becomes increasingly reliant upon it. A number of building blocks  can help improve the WAN infrastructure to address these requirements. These include hybrid architectures, local internet break-outs, cloud connectivity, and SD-WAN. 
-            </p>
-        </div>
-    ',
-
-    'infrastructure-1-stage1' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2 text-ntt-blue font-bold">
-                Based on your responses, your organization is lagging its peers when it comes to WAN infrastructure capabilities, which is consistent with your overall performance as a WAN Follower.
-            </p>
-        </div>
-    ',
-    'infrastructure-1-stage2' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2 text-ntt-blue font-bold">
-                Based on your responses, your organization is lagging its peers when it comes to WAN infrastructure capabilities, which means this area is less developed than your overall performance as a WAN Generalist.
-            </p>
-        </div>
-    ',
-    'infrastructure-1-stage3' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2 text-ntt-blue font-bold">
-                Based on your responses, your organization is lagging its peers when it comes to WAN infrastructure capabilities, which means this area is well behind iyour overall performance as a WAN Leader.
-            </p>
-        </div>
-    ',
-    'infrastructure-2-stage1' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2 text-ntt-blue font-bold">
-                Based on your responses, your organization is in line with its peers when it comes to WAN infrastructure capabilities, which means your organization is more advanced in this area compared to your overall performance as a WAN Follower.
-            </p>
-        </div>
-    ',
-    'infrastructure-2-stage2' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2 text-ntt-blue font-bold">
-                Based on your responses, your organization is in line with its peers when it comes to WAN infrastructure capabilities, which is consistent with your overall performance as a WAN Generalist.
-            </p>
-        </div>
-    ',
-    'infrastructure-2-stage3' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2 text-ntt-blue font-bold">
-                Based on your responses, your organization is in line with its peers when it comes to WAN infrastructure capabilities, which means this area is behind your overall performance as a WAN Leader.
-            </p>
-        </div>
-    ',
-
-    'infrastructure-3-stage1' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2 text-ntt-blue font-bold">
-                Based on your responses, your organization is ahead of its peers when it comes to WAN infrastructure capabilities, which means your organization is quite advanced in this area compared to your overall performance as a WAN Follower.
-            </p>
-        </div>
-    ',
-    'infrastructure-3-stage2' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2 text-ntt-blue font-bold">
-                Based on your responses, your organization is ahead of its peers when it comes to WAN infrastructure capabilities, which means your organization is more advanced in this area compared to your overall performance as a WAN Generalist.
-            </p>
-        </div>
-    ',
-    'infrastructure-3-stage3' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2 text-ntt-blue font-bold">
-                Based on your responses, your organization is ahead of its peers when it comes to WAN infrastructure capabilities, which is consistent with your overall performance as a WAN Leader.
-            </p>
-        </div>
-    ',
-
-    'infrastructuregraph'=>'
-        <div class="mx-auto my-6">:graph</div>
-    ',
-
-    'infrastructure-1-q2-1' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                You mostly buy WAN infrastructure on an ad-hoc basis, which is common for WAN Followers. In order to move up to the next level, you should start to develop a long-term technology roadmap for your WAN infrastructure and purchase consistently. This will help you improve performance, interoperability, and cost-effectiveness.
-            </p>
-        </div>
-    ',
-    'infrastructure-1-q2-2' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                You mostly buy WAN infrastructure on an ad-hoc basis, which is common for WAN Followers. In order to move up to the next level, you should start to develop a long-term technology roadmap for your WAN infrastructure and purchase consistently. This will help you improve performance, interoperability, and cost-effectiveness.
-            </p>
-        </div>
-    ',
-    'infrastructure-1-q2-3' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                You are buying WAN solutions strategically in some cases, which is already a good step for companies that are WAN Followers. The increasing strategic importance of the WAN should be reflected in your approach to buying WAN solutions, and you should try to accelerate your long-term technology roadmap across all WAN infrastructure and purchase consistently with that. This will help you improve performance, interoperability, and cost-effectiveness.
-            </p>
-        </div>
-    ',
-    'infrastructure-1-q2-4' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                Your WAN buying approach is forging ahead for a WAN Follower, and you should continuously align your network roadmap with the business outcomes that you want to deliver. A strategic commercial framework under which individual network elements can be dynamically allocated and adjusted as your needs develop could further drive your agility.
-            </p>
-        </div>
-    ',
-    'infrastructure-1-q2-5' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                Your WAN buying approach is forging ahead for a WAN Follower, and you should continuously align your network roadmap with the business outcomes that you want to deliver. A strategic commercial framework under which individual network elements can be dynamically allocated and adjusted as your needs develop could further drive your agility.
-            </p>
-        </div>
-    ',
-
-    'infrastructure-2-q2-1' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                You mostly buy WAN infrastructure on an ad-hoc basis, which means this is an area to focus on, given your overall status of WAN Generalist. The increasing strategic importance of the WAN should be reflected in your approach to buying WAN solutions. You should develop a long-term technology roadmap for your WAN infrastructure and purchase consistently. This will help you improve performance, interoperability, and cost-effectiveness.
-            </p>
-        </div>
-    ',
-    'infrastructure-2-q2-2' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                You mostly buy WAN infrastructure on an ad-hoc basis, which means this is an area to focus on given your overall status of WAN Generalist. The increasing strategic importance of the WAN should be reflected in your approach to buying WAN solutions. You should develop a long-term technology roadmap for your WAN infrastructure and purchase consistently. This will help you improve performance, interoperability, and cost-effectiveness.
-            </p>
-        </div>
-    ',
-    'infrastructure-2-q2-3' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                While you already buy WAN solutions strategically in some cases, which is where you are expected to be given your status as a WAN Generalist. In order to move up to the next level, the increasing strategic importance of the WAN should be reflected in your approach to buying WAN solutions.  You should develop a long-term technology roadmap across all WAN infrastructure and purchase consistently with that. This will help you improve performance, interoperability, and cost-effectiveness.
-            </p>
-        </div>
-    ',
-    'infrastructure-2-q2-4' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                Your purchase behavior recognizes the strategic importance of the WAN for your business, which is an advanced approach given your rating as a WAN Generalist. You are already doing well, but you could consider continuously aligning your network roadmap with the business outcomes that you want to deliver. A strategic commercial framework under which individual network elements can be dynamically allocated and adjusted as your needs develop could further drive your agility.
-            </p>
-        </div>
-    ',
-    'infrastructure-2-q2-5' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                Your purchase behavior recognizes the strategic importance of the WAN for your business, which is an advanced approach given your rating as a WAN Generalist. You are already doing well, but you could consider continuously aligning your network roadmap with the business outcomes that you want to deliver. A strategic commercial framework under which individual network elements can be dynamically allocated and adjusted as your needs develop could further drive your agility.
-            </p>
-        </div>
-    ',
-
-    'infrastructure-3-q2-1' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                You mostly buy WAN infrastructure on an ad-hoc basis, and this needs attention, given your overall position as a WAN Leader. However, the increasing strategic importance of the WAN should be reflected in your approach to buying WAN solutions, and you should try to accelerate your long-term technology roadmap across all WAN infrastructure and purchase consistently with that. This will help you improve performance, interoperability, and cost-effectiveness.
-            </p>
-        </div>
-    ',
-    'infrastructure-3-q2-2' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                You mostly buy WAN infrastructure on an ad-hoc basis, and this needs attention given your overall position as a WAN Leader. However, the increasing strategic importance of the WAN should be reflected in your approach to buying WAN solutions, and you should try to accelerate your long-term technology roadmap across all WAN infrastructure and purchase consistently with that. This will help you improve performance, interoperability, and cost-effectiveness.
-            </p>
-        </div>
-    ',
-    'infrastructure-3-q2-3' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                You buy WAN solutions strategically in some cases, and while this is good it still needs attention given your overall position as a WAN Leader.  The increasing strategic importance of the WAN should be reflected in your approach to buying WAN solutions.  You should develop a long-term technology roadmap across all WAN infrastructure and purchase consistently with that. This will help you improve performance, interoperability, and cost-effectiveness.
-            </p>
-        </div>
-    ',
-    'infrastructure-3-q2-4' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                You are purchasing WAN solutions strategically, and this is in line with your overall position as a WAN Leader. You should continuously align your network roadmap with the business outcomes that you want to deliver. A strategic commercial framework under which individual network elements can be dynamically allocated and adjusted as your needs develop could further drive your agility.
-            </p>
-        </div>
-    ',
-    'infrastructure-3-q2-5' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                You are purchasing WAN solutions strategically, and this is in line with your overall position as a WAN Leader. You should continuously align your network roadmap with the business outcomes that you want to deliver. A strategic commercial framework under which individual network elements can be dynamically allocated and adjusted as your needs develop could further drive your agility.
-            </p>
-        </div>
-    ',
-
-    'infrastructure-1-q3-1' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                SD-WAN has emerged as one of the key building blocks of the network of the future, with the promise of improved network and application performance and visibility, particularly in a cloud environment. At the same time it aims to drive flexibility, while providing cost-effective bandwidth and reducing complexity. You are not yet deploying SD-WAN, which is expected given your overall rating of WAN Follower. It may not seem relevant today, but you should start exploring today what SD-WAN is about and assess what benefits it may or may not bring to your business. 
-            </p>
-        </div>
-    ',
-    'infrastructure-1-q3-2' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                SD-WAN has emerged as one of the key building blocks of the network of the future, with the promise of improved network and application performance and visibility, particularly in a cloud environment. At the same time it aims to drive flexibility, while providing cost-effective bandwidth and reducing complexity. You are not yet deploying SD-WAN, which is expected given your overall rating of WAN Follower. It may not seem relevant today, but you should start exploring today what SD-WAN is about and assess what benefits it may or may not bring to your business. 
-            </p>
-        </div>
-    ',
-    'infrastructure-1-q3-3' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                SD-WAN has emerged as one of the key building blocks of the network of the future, with the promise of improved network and application performance and visibility, particularly in a cloud environment. At the same time it aims to drive flexibility, while providing cost-effective bandwidth and reducing complexity. Your deployment of SD-WAN is in its early stages, and this is advanced given your rating of WAN Follower. You should take the learnings of these first deployments to devise a migration plan and site priority list to expand the coverage.
-            </p>
-        </div>
-    ',
-    'infrastructure-1-q3-4' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                SD-WAN has emerged as one of the key building blocks of the network of the future, with the promise of improved network and application performance and visibility, particularly in a cloud environment. At the same time it aims to drive flexibility, while providing cost-effective bandwidth and reducing complexity. Your deployment of SD-WAN is in its early stages, and this is advanced given your rating of WAN Follower. You should take the learnings of these first deployments to devise a migration plan and site priority list to expand the coverage.
-            </p>
-        </div>
-    ',
-    'infrastructure-1-q3-5' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                SD-WAN has emerged as one of the key building blocks of the network of the future, with the promise of improved network and application performance and visibility, particularly in a cloud environment. At the same time it aims to drive flexibility, while providing cost-effective bandwidth and reducing complexity. You are already extensively deploying SD-WAN, which is advanced for your rating of WAN Follower. With a head start on others, you can start exploring how you can build on this as a launching pad towards a further virtualization of your network, in order to drive further benefits in terms of performance, flexibility, and cost efficiency.  
-            </p>
-        </div>
-    ',
-
-    'infrastructure-2-q3-1' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                SD-WAN has emerged as one of the key building blocks of the network of the future, with the promise of improved network and application performance and visibility, particularly in a cloud environment. At the same time it aims to drive flexibility, while providing cost-effective bandwidth and reducing complexity. You are not yet deploying SD-WAN, which means you are lagging behind given your overall rating of WAN Generalist. You should start exploring today what SD-WAN is about and assess what benefits it may or may not bring to your business. 
-            </p>
-        </div>
-    ',
-    'infrastructure-2-q3-2' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                SD-WAN has emerged as one of the key building blocks of the network of the future, with the promise of improved network and application performance and visibility, particularly in a cloud environment. At the same time it aims to drive flexibility, while providing cost-effective bandwidth and reducing complexity. You are not yet deploying SD-WAN, which means you are lagging behind given your overall rating of WAN Generalist. You should start exploring today what SD-WAN is about and assess what benefits it may or may not bring to your business. 
-            </p>
-        </div>
-    ',
-    'infrastructure-2-q3-3' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                SD-WAN has emerged as one of the key building blocks of the network of the future, with the promise of improved network and application performance and visibility, particularly in a cloud environment. At the same time it aims to drive flexibility, while providing cost-effective bandwidth and reducing complexity. Your deployment of SD-WAN is in its early stages, and this is in line with your rating of WAN Generalist. You should take the learnings of these first deployments to devise a migration plan and site priority list to expand the coverage.
-            </p>
-        </div>
-    ',
-    'infrastructure-2-q3-4' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                SD-WAN has emerged as one of the key building blocks of the network of the future, with the promise of improved network and application performance and visibility, particularly in a cloud environment. At the same time it aims to drive flexibility, while providing cost-effective bandwidth and reducing complexity. Your deployment of SD-WAN is in its early stages, and this is in line with your rating of WAN Generalist. You should take the learnings of these first deployments to devise a migration plan and site priority list to expand the coverage.
-            </p>
-        </div>
-    ',
-    'infrastructure-2-q3-5' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                SD-WAN has emerged as one of the key building blocks of the network of the future, with the promise of improved network and application performance and visibility, particularly in a cloud environment. At the same time it aims to drive flexibility, while providing cost-effective bandwidth and reducing complexity. You are already extensively deploying SD-WAN, which is advanced for your rating of WAN Generalist. With a head start on others, you can start exploring how you can build on this as a launching pad towards a further virtualization of your network, in order to drive further benefits in terms of performance, flexibility, and cost efficiency. 
-            </p>
-        </div>
-    ',
-
-    'infrastructure-3-q3-1' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                SD-WAN has emerged as one of the key building blocks of the network of the future, with the promise of improved network and application performance and visibility, particularly in a cloud environment. At the same time it aims to drive flexibility, while providing cost-effective bandwidth and reducing complexity. You are not yet deploying SD-WAN, which means you are lagging behind given your overall rating of WAN Leader. You should start exploring today what SD-WAN is about and assess what benefits it may or may not bring to your business. 
-            </p>
-        </div>
-    ',
-    'infrastructure-3-q3-2' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                SD-WAN has emerged as one of the key building blocks of the network of the future, with the promise of improved network and application performance and visibility, particularly in a cloud environment. At the same time it aims to drive flexibility, while providing cost-effective bandwidth and reducing complexity. You are not yet deploying SD-WAN, which means you are lagging behind given your overall rating of WAN Leader. You should start exploring today what SD-WAN is about and assess what benefits it may or may not bring to your business. 
-            </p>
-        </div>
-    ',
-    'infrastructure-3-q3-3' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                SD-WAN has emerged as one of the key building blocks of the network of the future, with the promise of improved network and application performance and visibility, particularly in a cloud environment. At the same time it aims to drive flexibility, while providing cost-effective bandwidth and reducing complexity. Your deployment of SD-WAN is in its early stages, and this is lagging behind given your rating of WAN Leader. You should take the learnings of these first deployments to devise a migration plan and site priority list to expand the coverage.
-            </p>
-        </div>
-    ',
-    'infrastructure-3-q3-4' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                SD-WAN has emerged as one of the key building blocks of the network of the future, with the promise of improved network and application performance and visibility, particularly in a cloud environment. At the same time it aims to drive flexibility, while providing cost-effective bandwidth and reducing complexity. Your deployment of SD-WAN is in its early stages, and this is lagging behind given your rating of WAN Leader. You should take the learnings of these first deployments to devise a migration plan and site priority list to expand the coverage.
-            </p>
-        </div>
-    ',
-    'infrastructure-3-q3-5' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                SD-WAN has emerged as one of the key building blocks of the network of the future, with the promise of improved network and application performance and visibility, particularly in a cloud environment. At the same time it aims to drive flexibility, while providing cost-effective bandwidth and reducing complexity. You are already extensively deploying SD-WAN, which is expected considering your overall rating of WAN Leader. As you are already far advanced you can start exploring how you can build on this as a launching pad towards a further virtualization of your network, in order to drive further benefits in terms of performance, flexibility, and cost efficiency. 
-            </p>
-        </div>
-    ',
-
-    'intelligenceintro' => '
-        <h2 class="w-2/3 ml-auto text-ntt-blue mb-6">WAN INTELLIGENCE</h2>
-        <div class="clearfix">
-            <div class="w-1/3 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 25mm;"></div>
-            <p class="w-2/3 float-left mb-2">
-                Network intelligence can play a key role to optimize the network and to ensure application performance expectations are met. Intelligent services like WAN optimization, application performance management, real time monitoring and replay functionality can drive visibility into network and application and significantly improve performance. 
-            </p>
-        </div>
-    ',
-
-    'intelligence-1-stage1' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2 text-ntt-blue font-bold">
-                Based on your responses, your organization is behind its peers when it comes to the use of Network Intelligence, which is consistent with your overall ranking as a WAN Follower. 
-            </p>
-        </div>
-    ',
-    'intelligence-1-stage2' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2 text-ntt-blue font-bold">
-            Based on your responses, your organization is behind its peers when it comes to the use of Network Intelligence, which means this area is less developed than your overall ranking as a WAN Generalist suggests.
-            </p>
-        </div>
-    ',
-    'intelligence-1-stage3' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2 text-ntt-blue font-bold">
-            Based on your responses, your organization is behind its peers when it comes to the use of Network Intelligence, which means this area is substantially less developed than your overall ranking as a WAN Leader suggests.
-            </p>
-        </div>
-    ',
-
-    'intelligence-2-stage1' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2 text-ntt-blue font-bold">
-                Based on your responses, your organization is in line with its peers when it comes to the use of Network Intelligence, which is more advanced than your overall ranking as a WAN Follower suggests. 
-            </p>
-        </div>
-    ',
-    'intelligence-2-stage2' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2 text-ntt-blue font-bold">
-            Based on your responses, your organization is in line withits peers when it comes to the use of Network Intelligence, which is consistent with your overall ranking as a WAN Generalist. 
-            </p>
-        </div>
-    ',
-    'intelligence-2-stage3' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2 text-ntt-blue font-bold">
-                Based on your responses, your organization is in line with its peers when it comes to the use of Network Intelligence, which means this area is less developed than your overall ranking as a WAN Leader suggests.
-            </p>
-        </div>
-    ',
-
-    'intelligence-3-stage1' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2 text-ntt-blue font-bold">
-            Based on your responses, your organization is ahead of its peers when it comes to the use of Network Intelligence, which is quite advanced compared to your overall ranking as a WAN Follower. 
-            </p>
-        </div>
-    ',
-    'intelligence-3-stage2' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2 text-ntt-blue font-bold">
-            Based on your responses, your organization is ahead of its peers when it comes to the use of Network Intelligence, which is more advanced than your overall ranking as a WAN Generalist. 
-            </p>
-        </div>
-    ',
-    'intelligence-3-stage3' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2 text-ntt-blue font-bold">
-                Based on your responses, your organization is ahead of its peers when it comes to the use of Network Intelligence, which is consistent with your overall ranking as a WAN Leader. 
-            </p>
-        </div>
-    ',
-
-    'intelligencegraph'=>'
-        <div class="mx-auto my-6">:graph</div>
-    ',
-
-    'intelligence-1-q5-1' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                Like many WAN Followers you have a passive stance to network optimization. You only respond when problems are reported. You need to adopt a more proactive and structural approach to ensure network performance and cost-effectiveness keep up with growing demands. Explore network intelligence and analytics solutions that can help you understand and optimize network and application performance.
-            </p>
-        </div>
-    ',
-    'intelligence-1-q5-2' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                You have a reactive stance to network optimization, which is quite common for WAN Followers. You are only triggered into action by device notifications. You should pursue a more proactive and structural approach to ensure network performance and cost-effectiveness keep up with growing demands. Explore network intelligence and analytics solutions that can help you understand and optimize network and application performance.
-            </p>
-        </div>
-    ',
-    'intelligence-1-q5-3' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                You already take structural measures to optimize your network, which puts you among the most advanced WAN Followers. You could build on this by exploring a more proactive and forward-looking approach. Predictive analytics can help you pre-empt performance issues and improve optimization.
-            </p>
-        </div>
-    ',
-    'intelligence-1-q5-4' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                Your use of predictive analytics ranks you well ahead of other WAN Followers when it comes to network optimization. Your next step would be to drive performance and efficiency further by automating your optimization task as much as possible, though you may want to consider prioritizing other parts of your WAN first, in order to lift your overall level of maturity.
-            </p>
-        </div>
-    ',
-    'intelligence-1-q5-5' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                You have automated your network optimization leveraging predictive analytics. This is a very advanced approach to network optimization, particularly in comparison to other WAN Followers. You should now prioritize efforts that drive the development of other parts of your WAN.  
-            </p>
-        </div>
-    ',
-
-    'intelligence-2-q5-1' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                You have a more passive stance to network optimization than many other WAN Generalists and only respond when problems are reported. You need to adopt a more proactive and structural approach to ensure network performance and cost-effectiveness keep up with growing demands. Explore network intelligence and analytics solutions that can help you understand and optimize network and application performance.
-            </p>
-        </div>
-    ',
-    'intelligence-2-q5-2' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                You have a reactive stance to network optimization. You are only triggered into action by device notifications. To catch up with other WAN Generalists, you should pursue a more proactive and structural approach to ensure network performance and cost-effectiveness keep up with growing demands. Explore network intelligence and analytics solutions that can help you understand and optimize network and application performance.
-            </p>
-        </div>
-    ',
-    'intelligence-2-q5-3' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                You take structural measures to optimize your network. However, you could benefit from exploring a more proactive and forward-looking approach. Predictive analytics can help you pre-empt performance issues and improve optimization.
-            </p>
-        </div>
-    ',
-    'intelligence-2-q5-4' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                Your use of predictive analytics has brought you a long way when it comes to network optimization. This puts you among the more advanced WAN Generalists in this area. Your next step is to drive performance and efficiency further by automating your optimization task as much as possible.
-            </p>
-        </div>
-    ',
-    'intelligence-2-q5-5' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                You have an advanced approach to network optimization, which is automated leveraging predictive analytics. This puts you among the most advanced WAN Generalists in this area. You should build on this position and drive your efforts to automate and orchestrate your WAN across different domains, which would help you move up the overall WAN maturity ladder.
-            </p>
-        </div>
-    ',
-
-    'intelligence-3-q5-1' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                You have a very passive stance to network optimization in comparison to other WAN Leaders and only respond when problems are reported. You need to adopt a more proactive and structural approach to ensure network performance and cost-effectiveness keep up with growing demands. Explore network intelligence and analytics solutions that can help you understand and optimize network and application performance.
-            </p>
-        </div>
-    ',
-    'intelligence-3-q5-2' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                You have a reactive stance to network optimization. You are only triggered into action by device notifications. To catch up with other WAN Leaders, you should pursue a more proactive and structural approach to ensure network performance and cost-effectiveness keep up with growing demands. Explore network intelligence and analytics solutions that can help you understand and optimize network and application performance.
-            </p>
-        </div>
-    ',
-    'intelligence-3-q5-3' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                You take structural measures to optimize your network, but you are behind many other WAN Leaders. You should catch up and adopt a more proactive and forward-looking approach. Predictive analytics can help you pre-empt performance issues and improve optimization.
-            </p>
-        </div>
-    ',
-    'intelligence-3-q5-4' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                Like many other WAN Leaders, you are already using predictive analytics. This has brought you a long way when it comes to network optimization.  Your next step is to drive performance and efficiency further by automating your optimization task as much as possible.
-            </p>
-        </div>
-    ',
-    'intelligence-3-q5-5' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                You have an advanced approach to network optimization, which is automated leveraging predictive analytics. This puts you among the most advanced WAN Leaders in this area. To stay ahead, you should now direct your efforts to driving automation and orchestration  across different WAN domains.
-            </p>
-        </div>
-    ',
-
-    'intelligence-1-q6-1' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                At the same time, like many WAN Followers, you still take a best effort approach to meeting application performance expectations. It is probably time for you to start looking at ways to separate traffic classes and prioritize traffic, in order to make sure your network meets the expectations of your end users.
-            </p>
-        </div>
-    ',
-    'intelligence-1-q6-2' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                At the same time, like many WAN Followers, you separate traffic classes by physically segmenting the network. There are probably more efficient ways to achieve a similar goal. You should look into solutions that leverage virtual segmentation or traffic prioritization to ensure application performance expectations are met.
-            </p>
-        </div>
-    ',
-    'intelligence-1-q6-3' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                At the same time you separate traffic classes by virtually segmenting the network, which is good for a Follower.  You should investigate how traffic prioritization solutions may help you improve application performance further to meet expectations.
-            </p>
-        </div>
-    ',
-    'intelligence-1-q6-4' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                At the same time you manually configure QoS to prioritize traffic. This certainly improves performance for key applications, and is quite advanced for a WAN Follower. SLAs for application performance and even user experience should be your next objective, and automatically adaptable networks can help you meet them.
-            </p>
-        </div>
-    ',
-    'intelligence-1-q6-5' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                At the same time you are at the forefront when it comes to meeting application performance expectations. Performance and user experience SLAs are ensured by an automatically adaptable network. This is exceptionally advanced for your position as a WAN Follower. While you could clearly benefit from  driving automation and orchestration across domains, it may be more beneficial to focus your efforts on advancing other WAN elements and raise your overall ranking.
-            </p>
-        </div>
-    ',
-
-    'intelligence-2-q6-1' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                At the same time you take a best effort approach to meeting application performance expectations. This puts you behind other WAN Generalists. It is probably time for you to start looking at ways to separate traffic classes and prioritize traffic, in order to make sure your network meets the expectations of your end users.
-            </p>
-        </div>
-    ',
-    'intelligence-2-q6-2' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                At the same time you separate traffic classes by physically segmenting the network. This puts you in the lower echelon of WAN Generalists. There are probably more efficient ways to achieve a similar goal. You should look into solutions that leverage virtual segmentation or traffic prioritization to ensure application performance expectations are met.
-            </p>
-        </div>
-    ',
-    'intelligence-2-q6-3' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                At the same time you separate traffic classes by virtually segmenting the network, which puts you in line with your peers.  You should investigate how traffic prioritization solutions may help you improve application performance further to meet expectations.
-            </p>
-        </div>
-    ',
-    'intelligence-2-q6-4' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                At the same time you manually configure QoS to prioritize traffic. This is more advanced than many other WAN Generalists and certainly improves performance for key applications. SLAs for application performance and even user experience should be your next objective, and automatically adaptable networks can help you meet them.
-            </p>
-        </div>
-    ',
-    'intelligence-2-q6-5' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                At the same time you are at the forefront when it comes to meeting application performance expectations. Performance and user experience SLAs are ensured by an automatically adaptable network. This puts you ahead of most WAN Generalists in terms of application performance management. You should build on this and look for ways to further drive automation and orchestration across domains that allow you to raise your overall WAN maturity level.
-            </p>
-        </div>
-    ',
-
-    'intelligence-3-q6-1' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                At the same time you take a best effort approach to meeting application performance expectations, which is quite unusual for WAN Leaders. It is time for you to start looking at ways to separate traffic classes and prioritize traffic, in order to make sure your network meets the expectations of your end users.
-            </p>
-        </div>
-    ',
-    'intelligence-3-q6-2' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                At the same time you take a best effort approach to meeting application performance expectations, which is quite unusual for WAN Leaders. It is time for you to start looking at ways to separate traffic classes and prioritize traffic, in order to make sure your network meets the expectations of your end users.
-            </p>
-        </div>
-    ',
-    'intelligence-3-q6-3' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                At the same time you separate traffic classes by virtually segmenting the network, which puts you behind many of your peers.  As a WAN Leader you should investigate how traffic prioritization solutions may help you improve application performance further to meet expectations.
-            </p>
-        </div>
-    ',
-    'intelligence-3-q6-4' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                At the same time you manually configure QoS to prioritize traffic in line with many other WAN Leaders. This certainly improves performance for key applications. SLAs for application performance and even user experience should be your next objective, and automatically adaptable networks can help you meet them.
-            </p>
-        </div>
-    ',
-    'intelligence-3-q6-5' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-                At the same time you are at the forefront when it comes to meeting application performance expectations. Performance and user experience SLAs are ensured by an automatically adaptable network, as can be expected from a WAN Leader. You should continue to push the boundaries and look for ways to further drive automation and orchestration across domains that allow you to raise your overall WAN maturity level.
-            </p>
-        </div>
-    ',
-
-    'operationsintro' => '
-        <h2 class="w-2/3 ml-auto text-ntt-blue mb-6">WAN OPERATIONS</h2>
-        <div class="clearfix">
-            <div class="w-1/3 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 25mm;"></div>
-            <p class="w-2/3 float-left mb-2">
-                As organizations progress in the digital era, the business demands they place on their networks are typically accelerating. They want their networks to empower innovation, increase agility, improve efficiency, and drive competitive differentiation, but these networks have often become too complex from an operational perspective to deliver this easily. Tasks like connecting new sites, provisioning new functions, updating policies, or connecting partners or cloud providers can prove quite challenging and stand in the way of delivering the desired business outcome. 
-            </p>
-        </div>
-    ',
-
-    'operations-1-stage1' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2 text-ntt-blue mt-4 font-bold">
-            Based on your responses, your organization is behind its peers when it comes to WAN operations, which is consistent with your overall ranking as a WAN Follower. 
-            </p>
-        </div>
-    ',
-    'operations-1-stage2' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2 text-ntt-blue mt-4 font-bold">
-            Based on your responses, your organization is behind its peers when it comes to WAN operations, which means this area is less developed than your overall ranking as a WAN Generalist suggests.
-            </p>
-        </div>
-    ',
-    'operations-1-stage3' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2 text-ntt-blue mt-4 font-bold">
-            Based on your responses, your organization is behind its peers when it comes to WAN operations, which is behind your overall ranking as a WAN Leader. 
-            </p>
-        </div>
-    ',
-
-    'operations-2-stage1' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2 text-ntt-blue mt-4 font-bold">
-            Based on your responses, your organization is in line with its peers when it comes to WAN operations, which is more advanced than your overall ranking as a WAN Follower. 
-            </p>
-        </div>
-    ',
-    'operations-2-stage2' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2 text-ntt-blue mt-4 font-bold">
-            Based on your responses, your organization is in line with its peers when it comes to WAN operations, which is consistent with your overall ranking as a WAN Generalist. 
-            </p>
-        </div>
-    ',
-    'operations-2-stage3' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2 text-ntt-blue mt-4 font-bold">
-            Based on your responses, your organization is in line with its peers when it comes to WAN operations, which is behind your overall ranking as a WAN Leader. 
-            </p>
-        </div>
-    ',
-
-    'operations-3-stage1' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2 text-ntt-blue mt-4 font-bold">
-            Based on your responses, your organization is ahead of its peers when it comes to WAN operations, which is quite advanced compared to your  overall ranking as a WAN Follower. 
-            </p>
-        </div>
-    ',
-
-    'operations-3-stage2' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2 text-ntt-blue mt-4 font-bold">
-            Based on your responses, your organization is ahead of its peers when it comes to WAN operations, which is more advanced than your overall ranking as a WAN Generalist. 
-            </p>
-        </div>
-    ',
-    
-    'operations-3-stage3' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2 text-ntt-blue mt-4 font-bold">
-            Based on your responses, your organization is ahead of its peers when it comes to WAN operations, which is in line with your overall ranking as a WAN Leader. 
-            </p>
-        </div>
-    ',
-
-    'operationsgraph'=>'
-        <div class="mx-auto my-6">:graph</div>
-    ',
-
-    'operations-1-q8-1' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-            WAN configuration is a manual process that you do if and when the need arises. This is likely an increasingly tedious and time-consuming part of your operational efforts, as it is for many WAN Followers. You need a more systematic way forward. Solutions that let you centralize and automate these tasks can come to your rescue. They will certainly help you take some complexity out of your operations, freeing up time and increasing agility in the process.
-            </p>
-        </div>
-    ',
-    'operations-1-q8-2' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-            WAN configuration is a manual process. This is likely an increasingly tedious and time-consuming part of your operational efforts, as it is for many WAN Followers. Automation of these tasks can come to your aid. This will certainly help you take some complexity out of your operations, freeing up time and increasing agility in the process.
-            </p>
-        </div>
-    ',
-    'operations-1-q8-3' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-            While configuration is still mostly a manual process, you have already automated some tasks, which is more than most WAN Followers can say. You can further move ahead by speeding up your efforts to automate configuration processes. This will enable you to further reduce complexity, free up time and increase agility.
-            </p>
-        </div>
-    ',
-    'operations-1-q8-4' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-            WAN management is mostly automated, but there are still some manual tasks left. This puts you ahead of the pack of WAN Followers. To progress further you should explore how these remaining manual tasks can be automated and start thinking beyond that. Integrating automation with policies and intelligence will put you on the road toward self-optimizing network orchestration.
-            </p>
-        </div>
-    ',
-    'operations-1-q8-5' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-            For a WAN Follower you have state-of-the-art WAN management. Self-optimizing network orchestration that integrated analytics, policies and automation has taken a lot of complexity out of your operations. You should now direct your your focus to bringing other parts of the WAN to a similar level of sophistication, in order to drive your overall WAN position upwards.
-            </p>
-        </div>
-    ',
-
-    'operations-2-q8-1' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-            WAN configuration is a manual process that you do if and when the need arises. This is likely an increasingly tedious and time-consuming part of your operational efforts. You are lagging other WAN Generalists in this area and you need a more systematic way forward. Solutions that let you centralize and automate these tasks can come to your rescue. They will certainly help you take some complexity out of your operations, freeing up time and increasing agility in the process.
-            </p>
-        </div>
-    ',
-    'operations-2-q8-2' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-            WAN configuration is a manual process. This is likely an increasingly tedious and time-consuming part of your operational efforts. Follow the path that many other WAN Generalists have already taken, and look into automation of these tasks. This will certainly help you take some complexity out of your operations, freeing up time and increasing agility in the process.
-            </p>
-        </div>
-    ',
-    'operations-2-q8-3' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-            Configuration is still mostly a manual process. Like many other WAN Generalists you have automated some tasks, but are not nearly there. Speed up your efforts to automate configuration processes, so that you can further reduce complexity, free up time and increase agility.
-            </p>
-        </div>
-    ',
-    'operations-2-q8-4' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-            WAN management is mostly automated, but there are still some manual tasks left. This puts you at the forefront of the WAN Generalists in this space. To stay ahead, you should explore how these can tasks be automated and start thinking beyond that. Integrating automation with policies and intelligence will put you on the road toward self-optimizing network orchestration.
-            </p>
-        </div>
-    ',
-    'operations-2-q8-5' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-            Your WAN management is quite advanced compared to the typical WAN Generalists. Self-optimizing network orchestration that integrated analytics, policies and automation has taken a lot of complexity out of your operations. This enables you to look beyond WAN management and focus your efforts on other tasks and the integration between them.
-            </p>
-        </div>
-    ',
-
-    'operations-3-q8-1' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-            WAN configuration is a manual process that you do if and when the need arises. This is likely an increasingly tedious and time-consuming part of your operational efforts. This contrasts sharply with your position as a WAN Leader and this needs to be addressed. You need a more systematic way forward. Solutions that let you centralize and automate these tasks can come to your rescue. They will certainly help you take some complexity out of your operations, freeing up time and increasing agility in the process.
-            </p>
-        </div>
-    ',
-    'operations-3-q8-2' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-            WAN configuration is still a manual process, and likely an increasingly tedious and time-consuming part of your operational efforts. This is an ill fit with your position as a WAN Leader. Automation of these tasks can come to your aid. This will certainly help you take some complexity out of your operations, freeing up time and increasing agility in the process.
-            </p>
-        </div>
-    ',
-    'operations-3-q8-3' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-            Configuration is still mostly a manual process. You have automated some tasks, but are not nearly there. This puts you behind many other WAN Leaders. Speed up your efforts to automate configuration processes, so that you can further reduce complexity, free up time and increase agility.
-            </p>
-        </div>
-    ',
-    'operations-3-q8-4' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-            Like many WAN Leaders you have mostly automated your WAN management, but there are still some manual tasks left. To progress in this area you should explore how these remaining manual tasks can be automated and start thinking beyond that. Integrating automation with policies and intelligence will put you on the road toward self-optimizing network orchestration.
-            </p>
-        </div>
-    ',
-    'operations-3-q8-5' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-            Self-optimizing network orchestration that integrated analytics, policies and automation has taken a lot of complexity out of your operations. This puts you among the most advanced WAN Leaders in terms of WAN management and enables you to look beyond WAN management and focus your efforts on other tasks and the integration between them.
-            </p>
-        </div>
-    ',
-
-    'operations-1-q9-1' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-            Security plays a critical role in WAN strategy and operations. It is seen as the #1 WAN challenge and the vast majority of companies indicate they are improving network security in response to accelerating requirements. This makes managing security an increasingly important part of WAN operations. Like many WAN Followers you manage your WAN security policy on a device by device basis, which can be quite a strain on your resources. Doing this in a more centralized and automated manner will drive your efficiency and consistency, speed up update cycles, and reduce risk.
-            </p>
-        </div>
-    ',
-    'operations-1-q9-2' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-            Security plays a critical role in WAN strategy and operations. It is seen as the #1 WAN challenge and the vast majority of companies indicate they are improving network security in response to accelerating requirements. This makes managing security an increasingly important part of WAN operations. Like many other WAN Followers you have centralized access policy and controls, but manual tasks can be quite a strain on your resources, while longer response times to threats can leave your WAN exposed. Doing this in a more automated and dynamic manner will drive your efficiency and consistency, speed up update cycles, and reduce risk.
-            </p>
-        </div>
-    ',
-    'operations-1-q9-3' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-            Security plays a critical role in WAN strategy and operations. It is seen as the #1 WAN challenge and the vast majority of companies indicate they are improving network security in response to accelerating requirements. This makes managing security an increasingly important part of WAN operations. You dynamically enforce security policies across the network, which is certainly not bad for a WAN Follower. Nevertheless manual tasks can be quite a strain on your resources, while longer response times to threats can leave your WAN exposed. Solutions that combine analytics and automation to rapidly detect and contain threats will improve your efficiency and response times and reduce risk.
-            </p>
-        </div>
-    ',
-    'operations-1-q9-4' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-            Security plays a critical role in WAN strategy and operations. It is seen as the #1 WAN challenge and the vast majority of companies indicate they are improving network security in response to accelerating requirements. This makes managing security an increasingly important part of WAN operations. Your network rapidly detects and responds to contain threats, which is essential in protecting your organization\'s assets. This is quite an advanced approach for a WAN Follower. Solutions that combine predictive analytics and automation to automatically reconfigure policies could take your security to the next level.
-            </p>
-        </div>
-    ',
-    'operations-1-q9-5' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-            Security plays a critical role in WAN strategy and operations. It is seen as the #1 WAN challenge and the vast majority of companies indicate they are improving network security in response to accelerating requirements. This makes managing security an increasingly important part of WAN operations. You are way ahead of the majority of WAN Followers, with a security policy management that is state-of-the-art, and automatically reconfigures to prevent emerging threats with predictive analytics. Before investigating how security can be integrated more closely with the rest of your WAN management, you should focus on taking the rest of your WAN to a higher level.
-            </p>
-        </div>
-    ',
-
-    'operations-2-q9-1' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-            Security plays a critical role in WAN strategy and operations. It is seen as the #1 WAN challenge and the vast majority of companies indicate they are improving network security in response to accelerating requirements. This makes managing security an increasingly important part of WAN operations. You manage your WAN security policy on a device by device basis, which can be quite a strain on your resources. It also positions you well behind most other WAN Generalists in this aspect. You should address this in a more centralized and automated manner, which allow you to drive efficiency and consistency, speed up update cycles, and reduce risk.
-            </p>
-        </div>
-    ',
-    'operations-2-q9-2' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-            Security plays a critical role in WAN strategy and operations. It is seen as the #1 WAN challenge and the vast majority of companies indicate they are improving network security in response to accelerating requirements. This makes managing security an increasingly important part of WAN operations. You have centralized access policy and controls, but manual tasks can be quite a strain on your resources, while longer response times to threats can leave your WAN exposed. To catch up with the majority of WAN Generalists you will need to start doing this in a more automated and dynamic manner. This will drive your efficiency and consistency, speed up update cycles, and reduce risk.
-            </p>
-        </div>
-    ',
-    'operations-2-q9-3' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-            Security plays a critical role in WAN strategy and operations. It is seen as the #1 WAN challenge and the vast majority of companies indicate they are improving network security in response to accelerating requirements. This makes managing security an increasingly important part of WAN operations. Like many WAN Generalists you dynamically enforce security policies across the network, but manual tasks can be quite a strain on your resources, while longer response times to threats can leave your WAN exposed. Solutions that combine analytics and automation to rapidly detect and contain threats will improve your efficiency and response times and reduce risk.
-            </p>
-        </div>
-    ',
-    'operations-2-q9-4' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-            Security plays a critical role in WAN strategy and operations. It is seen as the #1 WAN challenge and the vast majority of companies indicate they are improving network security in response to accelerating requirements. This makes managing security an increasingly important part of WAN operations. Your network rapidly detects and responds to contain threats, which is essential in protecting your organization\'s assets. This positions you among the more advanced WAN Generalists in this space. Solutions that combine predictive analytics and automation to automatically reconfigure policies could take your security to the next level.
-            </p>
-        </div>
-    ',
-    'operations-2-q9-5' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-            Security plays a critical role in WAN strategy and operations. It is seen as the #1 WAN challenge and the vast majority of companies indicate they are improving network security in response to accelerating requirements. This makes managing security an increasingly important part of WAN operations. Unlike most WAN Generalists your security policy management is state-of-the-art, as it automatically reconfigures to prevent emerging threats with predictive analytics. While there is scope to investigate how security can be integrated more closely with the rest of your WAN management, you may want to focus on improving other WAN elements with a weaker ranking first.
-            </p>
-        </div>
-    ',
-
-    'operations-3-q9-1' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-            Security plays a critical role in WAN strategy and operations. It is seen as the #1 WAN challenge and the vast majority of companies indicate they are improving network security in response to accelerating requirements. This makes managing security an increasingly important part of WAN operations. You are far behind other WAN Leaders in this aspect, as you still manage your WAN security policy on a device by device basis, which can be quite a strain on your resources.  You will need to take action now to bring this aspect more in line with your overall WAN raking. A more centralized and automated approach should allow you to drive efficiency and consistency, speed up update cycles, and reduce risk.
-            </p>
-        </div>
-    ',
-    'operations-3-q9-2' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-            Security plays a critical role in WAN strategy and operations. It is seen as the #1 WAN challenge and the vast majority of companies indicate they are improving network security in response to accelerating requirements. This makes managing security an increasingly important part of WAN operations. You have centralized access policy and controls, but manual tasks can be quite a strain on your resources, while longer response times to threats can leave your WAN exposed. This positions you well behind other WAN Leaders. To  catch up with them you will need to start doing this in a more automated and dynamic manner. This will drive your efficiency and consistency, speed up update cycles, and reduce risk.
-            </p>
-        </div>
-    ',
-    'operations-3-q9-3' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-            Security plays a critical role in WAN strategy and operations. It is seen as the #1 WAN challenge and the vast majority of companies indicate they are improving network security in response to accelerating requirements. This makes managing security an increasingly important part of WAN operations. You dynamically enforce security policies across the network, but manual tasks can be quite a strain on your resources, while longer response times to threats can leave your WAN exposed. To catch up with other WAN Leaders you should consider solutions that combine analytics and automation to rapidly detect and contain threats will improve your efficiency and response times and reduce risk.
-            </p>
-        </div>
-    ',
-    'operations-3-q9-4' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-            Security plays a critical role in WAN strategy and operations. It is seen as the #1 WAN challenge and the vast majority of companies indicate they are improving network security in response to accelerating requirements. This makes managing security an increasingly important part of WAN operations. In line with many other WAN Leaders you have a network that rapidly detects and responds to contain threats, which is essential in protecting your organization\'s assets. Solutions that combine predictive analytics and automation to automatically reconfigure policies could take your security to the next level.
-            </p>
-        </div>
-    ',
-    'operations-3-q9-5' => '
-        <div class="clearfix">
-            <p class="w-2/3 ml-auto mb-2">
-            Security plays a critical role in WAN strategy and operations. It is seen as the #1 WAN challenge and the vast majority of companies indicate they are improving network security in response to accelerating requirements. This makes managing security an increasingly important part of WAN operations. Your security policy management, which automatically reconfigures to prevent emerging threats with predictive analytics, is state-of-the-art, as can be expected from a true WAN Leader. However, you should not be complacent, as you will need to continuously reassess what you do and investigate how security can be integrated more closely with the rest of your WAN management.
-            </p>
-        </div>
-    ',
-
-    'conclusionintro' => '
-        <h2 class="w-2/3 ml-auto text-ntt-blue mb-6">CONCLUSION</h2>
-        <div class="clearfix">
-            <div class="w-1/3 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 25mm;"></div>
-            <p class="w-2/3 float-left mb-2">
-                Digital transformation, with cloud at its heart, is changing the networking paradigm and driving requirements to unprecedented heights. The WAN needs to change to cope with these requirements and enable organizations to reap the full benefits of digital transformation. Organizations will need networks that provide more flexibility, manageability, scalability, cost-effectiveness and security. 
-            </p>
-        </div>
-    ',
-
-    'guidance' => '
-        <h2 class="w-2/3 ml-auto text-ntt-blue mb-6">Essential Guidance</h2>
-        <div class="clearfix">
-            <div class="w-2/3 ml-auto clearfix mb-2">
-                <div class="float-left rounded-full w-8 h-8 border border-grey-dark font-bold text-grey text-lg text-center mr-2 pt-1">1</div>
-                <p class="float-left w-5/6">
-                    You should focus on further developing a strategic roadmap for the evolution of your WAN. Assess the current status of your network, and where you want it to be in the future. Prepare a gradual migration path that leverages the existing infrastructure where possible. Hybrid architectures, cloud connectivity, local Internet break-outs and network virtualization should feature prominently on this roadmap.
-                </p>
+        <h2 class="leading-tight text-blue-dark mb-1">YOUR OVERALL PERFORMANCE</h2>
+        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 3</span>
+        <p class="mb-2">Companies at this stage are invested in their MSS business, and the emphasis should now be on improving efficiencies and driving profitability. At this stage, companies are starting to transform sales, marketing, and services for MSS.</p>
+        <p class="mb-2">Companies at this stage will need to address the challenge of how to accelerate transformation while maintaining the existing business.</p>
+    ',
+    'overallstage4'=>'
+        <h2 class="leading-tight text-blue-dark mb-1">YOUR OVERALL PERFORMANCE</h2>
+        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 4</span>
+        <p class="mb-2">Companies at Stage 4 have an embedded MSS business. Significant efforts have been made to transform the sales, marketing, and services organizations within the company, with increasing automation, repeatability, and growing profitability.</p>
+        <p class="mb-2">Now, the priority for these companies is to enhance and expand their MSS portfolio, innovate, and differentiate to establish market leadership./p>
+    ',
+    'overallstage5'=>'
+        <h2 class="leading-tight text-blue-dark mb-1">YOUR OVERALL PERFORMANCE</h2>
+        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 5</span>
+        <p class="mb-2">Companies at Stage 5 are considered mature (and market-leading) MSSPs, with all business units optimized to support this model. The emphasis at this stage is on retaining market leadership through a continuous innovation process and focus on profitability.</p>
+    ',
+    'salesstage1'=>'
+        <h2 class="leading-tight text-blue-dark mb-2">SALES PERFORMANCE</h2>
+        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 1</span>
+        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 1 in terms of your sales readiness as an MSSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
+        <div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    A horizontal sales structure, with limited specialization either in terms of industry (sector) and/or technology (e.g., security). Also tend to be product, not services, focused.
+                </div>
             </div>
-                
-        </div>
-        <div class="clearfix">
-            <div class="w-2/3 ml-auto clearfix mb-2">
-                <div class="float-left rounded-full w-8 h-8 border border-grey-dark font-bold text-grey text-lg text-center mr-2 pt-1">2</div>
-                <p class="float-left w-5/6">
-                    From an operational perspective the WAN is increasingly hampered by complexity, inefficiency and tedious processes which can make everyday tasks such as adding sites, updating policies or connecting to cloud services a real struggle. This prevents the network from delivering the desired business outcomes, like gaining agility, increasing productivity, and improving differentiation. Explore how centralization and automation can help you streamline your WAN operations.
-                </p>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Very few organizations at this stage have dedicated sales professionals for either managed services or security.
+                </div>
             </div>
-                
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Typically, there are no pre-sales staff dedicated to supporting the sales team in selling managed security services.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Compensation structures and incentive schemes have not been adjusted to account for recurring/subscription-based revenue models.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    There has been little attention paid to service-attach bundles (e.g., bundling a managed endpoint security service with a cloud-based productivity suite like Office 365).
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Very few companies at this stage can provide unified cloud and managed services billing to their customers (e.g., providing one bill for both product and managed services); many rely on their vendors and/or distributors to provide this billing capability.
+                </div>
+            </div>
+        </div>
+        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
+        <p class="mb-2 text-grey-dark">Now is the time to:</p>
+        <div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Embrace the opportunity to lay the right kind of foundation for an effective sales strategy and organization for MSS.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Start early in enabling your sales and pre-sales people to more confidently sell services (i.e., transition them from product sales to services sales). Start with a small group (a tiger team), train them well, and use them to help influence the broader sales team (e.g., a train-the-trainer approach).
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Identify which of your vendor partners can help you train and enable this team and ask them to help and support you.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Think about how your compensation and incentive models need to evolve as you bring recurring and subscription-based managed services to your business. Ensure that they are still lucrative for sales people who are more used to bigger upfront product and project deals.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Think about how you bill your customers; as your managed services business grows, so will features like unified billing become more important.
+                </div>
+            </div>
         </div>
     ',
-    'guidance-q3-1-2' => '
-        <div class="clearfix">
-            <div class="w-2/3 ml-auto clearfix mb-2">
-                <div class="float-left rounded-full w-8 h-8 border border-grey-dark font-bold text-grey text-lg text-center mr-2 pt-1">3</div>
-                <p class="float-left w-5/6">
-                    SD-WAN has emerged as a solution that can integrate much of the above. The promise of SD-WAN is to deliver improved network and application performance, availability and visibility, particularly in a cloud environment, driving flexibility, while providing cost-effective bandwidth and reducing complexity. Start exploring today, if you haven\'t already, what benefits SD-WAN may or may not bring to your organization. 
-                </p>
+    'salesstage2'=>'
+        <h2 class="leading-tight text-blue-dark mb-2">SALES PERFORMANCE</h2>
+        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 2</span>
+        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 2 in terms of your sales readiness as an MSSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
+        <div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Sales teams are structured so staff have some experience selling recurring-revenue-based services, such as cloud services or managed services.
+                </div>
             </div>
-                
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    A pre-sales function around managed security services is beginning to build up, offering support to the sales team as they address this opportunity.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Compensation and incentive structures are beginning to transform, offering sales teams upfront compensation on any recurring business they win.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Sales teams can own customer billing around managed security services, but they do so on an annual basis.
+                </div>
+            </div>
+        </div>
+        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
+        <p class="mb-2 text-grey-dark">Now is the time to:</p>
+        <div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Bolster the initial foundations by looking to convert existing project-based business toward recurring managed services.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Take a selected team of pre-sales staff and focus them purely on managed security services, so that they build up expertise in this area.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Plan, in tandem, the transformation of compensation structures. One of the biggest challenges facing new managed services and cloud services providers is overcoming the sales person\'s perception that smaller, more frequent recurring revenue will make it more challenging to meet quotas. Think very carefully about how you incentivize for these services.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Look at ways to bring consumption-based billing to their managed security services, as more and more customers are looking for this kind of functionality.
+                </div>
+            </div>
         </div>
     ',
-    'guidance-q3-3-4' => '
-        <div class="clearfix">
-            <div class="w-2/3 ml-auto clearfix mb-2">
-                <div class="float-left rounded-full w-8 h-8 border border-grey-dark font-bold text-grey text-lg text-center mr-2 pt-1">3</div>
-                <p class="float-left w-5/6">
-                    SD-WAN has emerged as a solution that can integrate much of the above. The promise of SD-WAN is to deliver improved network and application performance, availability and visibility, particularly in a cloud environment, driving flexibility, while providing cost-effective bandwidth and reducing complexity. Build on your early deployments of SD-WAN, and start plotting a roadmap toward a more widespread use of network virtualization that can help you reap the benefits in terms of flexibility and efficiency
-                </p>
+    'salesstage3'=>'
+        <h2 class="leading-tight text-blue-dark mb-2">SALES PERFORMANCE</h2>
+        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 3</span>
+        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 3 in terms of your sales readiness as an MSSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
+        <div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Typically, companies at this stage are generally transitioning, meaning they are looking to convert to a managed services model.
+                </div>
             </div>
-                
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Appetite for change is strong among companies at this stage, and actions are being carried out to make this happen.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Companies at this stage tend to have dedicated some specific pre-sales resource to managed security services, to support their sales teams in making the move to this model.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Companies at this stage have transformed their incentive plans to ensure the managed services opportunity is seen as lucrative. Various tactics can be deployed, and common tactics include upfront recognition, annualized recognition, quota relief, and additional incentives.
+                </div>
+            </div>
+        </div>
+        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
+        <p class="mb-2 text-grey-dark">Now is the time to:</p>
+        <div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Look outside the existing customer base to try and win new MSSP deals with new customers, rather than focusing only on transitioning the existing base.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Bolster the pre-sales teams and ensure they have a focus on growing the MSS business, leveraging them to better support the sales teams in their efforts.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Incentivize cleverly — whether it be new logos, transitioned accounts, or attractive compensation plans.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Measure sales teams differently — start to think about incentivizing new KPIs like customer satisfaction and active usage. This ensures that customers are happy and therefore will be more likely to renew.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Think about services-attach, such as bundling a cloud-productivity suite with a managed endpoint security service. This makes life easier for the sales person as well as the customer.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Think about incorporating analytics features into your billing, e.g., real-time usage dashboards. This enables sales to understand what their customers are using to serve them better and understand their needs.
+                </div>
+            </div>
         </div>
     ',
-    'guidance-q3-5' => '
-        <div class="clearfix">
-            <div class="w-2/3 ml-auto clearfix mb-2">
-                <div class="float-left rounded-full w-8 h-8 border border-grey-dark font-bold text-grey text-lg text-center mr-2 pt-1">3</div>
-                <p class="float-left w-5/6">
-                    SD-WAN has emerged as a solution that can integrate much of the above. The promise of SD-WAN is to deliver improved network and application performance, availability and visibility, particularly in a cloud environment, driving flexibility, while providing cost-effective bandwidth and reducing complexity.Looking ahead, SD-WAN should go hand in hand with virtual network services . Explore how you can leverage SD-WAN as the launching pad of a more widespread use of network virtualization that can help you reap the benefits in terms of flexibility and efficiency
-                </p>
+    'salesstage4'=>'
+        <h2 class="leading-tight text-blue-dark mb-2">SALES PERFORMANCE</h2>
+        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 4</span>
+        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 4 in terms of your sales readiness as an MSSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
+        <div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Companies at this stage tend to have a high number of pre-sales staff dedicated to supporting sales staff pursuing MSP security opportunities.
+                </div>
             </div>
-                
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Compensation plans for companies at this stage tend to have transitioned to offer sales staff a mix of upfront and ongoing commission, with incentives in place to encourage sales of managed services.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Sales teams at companies at this stage pay close attention to customer usage and satisfaction, enabling them to reduce churn and therefore boost profitability.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    The emphasis is typically less on transitioning and more on winning new clients for the MSP security business. 
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Sophisticated billing platforms are offered to customers, often with consumption-based billing mechanisms.
+                </div>
+            </div>
+        </div>
+        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
+        <p class="mb-2 text-grey-dark">Now is the time to:</p>
+        <div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Build on the strong foundation you have developed to maximize opportunities and boost profitability.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Ensure your pre-sales teams are enabled and empowered to develop opportunities and work closely with their vendor partners.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Emphasize solution selling, i.e., tailoring MSSP solutions to customer segments and needs.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Ensure your sales teams are focused on customer satisfaction, renewals, and customer success; consider creating a "customer for life" sales structure.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Focus on services-attach and creating complementary bundles to make it easier for sales people to make the connections, to cross-sell and up-sell.
+                </div>
+            </div>
+        </div>
+    ',
+    'salesstage5'=>'
+        <h2 class="leading-tight text-blue-dark mb-2">SALES PERFORMANCE</h2>
+        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 5</span>
+        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 5 in terms of your sales readiness as an MSSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
+        <div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Companies at this stage are looking to tailor their MSP offerings to vertical markets, offering specific solutions to customers by industry, focus, or size.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Pre-sales teams take opportunities to vendors, working alongside the sales teams to surface business.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    At this developed stage, companies focus their sales teams on customer satisfaction, renewals, and customer success.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Companies at Stage 5 are experienced in selling services-attach, creating solutions and bundled offerings.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Stage 5 companies typically offer flexible and sophisticated billing, with features such as unified billing, real-time analytics, multivendor billing, and consumption-based billing.
+                </div>
+            </div>
+        </div>
+        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
+        <p class="mb-2 text-grey-dark">Now is the time to:</p>
+        <div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Look to deepen specializations and use-case-driven solutions and ensure these are reflected in the go-to-market activities.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Ensure cross-sell, up-sell, and services-attach are incentivized and encouraged.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Invest in consultative selling frameworks, tools, and resources.
+                </div>
+            </div>
+        </div>
+    ',
+    'marketingstage1'=>'
+        <h2 class="leading-tight text-blue-dark mb-2">MARKETING PERFORMANCE</h2>
+        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 1</span>
+        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 1 in terms of your marketing readiness as an MSSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
+        <div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    They tend to have a traditional approach to marketing, based on vendor direction and/or past successes.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    At this stage, very few companies have a formal marketing function, with the role partly taken on by other teams.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Companies at this stage typically do not target marketing campaigns at customer types, verticals, or by technology. Instead they employ wide-spanning campaigns.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    For companies at this stage, marketing campaigns are not actively or closely measured for success.
+                </div>
+            </div>
+        </div>
+        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
+        <p class="mb-2 text-grey-dark">Now is the time to:</p>
+        <div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Embrace modern marketing, both in terms of what you create and which channels you choose to promote it.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Leverage vendor marketing initiatives but, crucially, look for ways to personalize this to your brand and customer base.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Plan for a dedicated marketing function, pinpointing individuals or teams that have showed early interest or promise in this space.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Pilot managed security services campaigns trialed to target specific customer types, and then measured closely for their effectiveness, providing a strong foundation on which to build further.
+                </div>
+            </div>
+        </div>
+    ',
+    'marketingstage2'=>'
+        <h2 class="leading-tight text-blue-dark mb-2">MARKETING PERFORMANCE</h2>
+        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 2</span>
+        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 2 in terms of your marketing readiness as an MSSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
+        <div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Companies at this stage are building on past successes by trialing digital marketing techniques, leveraging social media as a starting point.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    At this stage, companies are beginning to identify individuals or teams that can create a dedicated marketing function.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Companies at this stage typically begin to target certain customer types with pilot or trial campaigns.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Close measurement of trial campaigns is carried out by companies at this stage, as they look to better leverage their marketing efforts.
+                </div>
+            </div>
+        </div>
+        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
+        <p class="mb-2 text-grey-dark">Now is the time to:</p>
+        <div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Capitalize on the marketing investments you have already made, by focusing on supporting the sales cycle throughout.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Closely analyze trial/pilot digital campaigns and run again as part of a continuous improvement cycle.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Create and appropriately resource a dedicated marketing team that is focused on delivering the value proposition message for managed security services and the business benefits they deliver to customers.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Begin targeting specific buyers with a view to becoming more vertically specialized in the future.
+                </div>
+            </div>
+        </div>
+    ',
+    'marketingstage3'=>'
+        <h2 class="leading-tight text-blue-dark mb-2">MARKETING PERFORMANCE</h2>
+        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 3</span>
+        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 3 in terms of your marketing readiness as an MSSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
+        <div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Companies at this stage actively use digital marketing techniques to spread their content and messaging.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    These modern marketing techniques are deployed by a dedicated marketing team which itself is goaled and targeted on its marketing reach.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    At this stage, companies typically send out highly targeted messages to specific customers, by type, vertical, technology, and other metrics.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Digital campaigns of this type run by companies at this stage tend to be closely measured to determine future marketing actions.
+                </div>
+            </div>
+        </div>
+        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
+        <p class="mb-2 text-grey-dark">Now is the time to:</p>
+        <div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Align dedicated marketing teams with sales, so that together they can track the customer journey.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Bolster the highly targeted messages spread by this team with a strong focus on the value proposition the company offers.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    The combined marketing and sales function should begin developing messaging around business outcomes, through a highly aligned approach.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Encourage marketing teams to consider buyer personas, and how they can best be targeted. Consideration should be given to investing in, or developing, marketing measurement tools that can measure key metrics.
+                </div>
+            </div>
+        </div>
+    ',
+    'marketingstage4'=>'
+        <h2 class="leading-tight text-blue-dark mb-2">MARKETING PERFORMANCE</h2>
+        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 4</span>
+        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 4 in terms of your marketing readiness as an MSSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
+        <div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Companies at Stage 4 typically combine their dedicated marketing function with sales teams, to better follow the customer journey and serve them targeted and specific content that is relevant to them. They jointly target customers based on business outcomes.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    At this stage, companies measure the marketing process and use this to refine future campaigns.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Companies at this stage have specific buying personas in mind within industry sectors, and target these accordingly.
+                </div>
+            </div>
+        </div>
+        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
+        <p class="mb-2 text-grey-dark">Now is the time to:</p>
+        <div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Continue to focus messaging and collateral on specific target buyers and industries but target them with information about business outcomes and value.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    The dedicated marketing team should have a continuous improvement mindset and be looking to analyze and measure the success of modern marketing campaigns on an ongoing basis.
+                </div>
+            </div>
+        </div>
+    ',
+    'marketingstage5'=>'
+<h2 class="leading-tight text-blue-dark mb-2">MARKETING PERFORMANCE</h2>
+        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 5</span>
+        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 5 in terms of your marketing readiness as an MSSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
+        <div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Companies at this stage employ advanced digital marketing skills across their dedicated and sophisticated marketing function.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Stage 5 companies tend to have developed a fully automated marketing process, which continues to evolve based on ongoing results and successes.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    At this stage, companies\' marketing efforts are highly targeted at a defined set of verticals and business buyer personas across a portfolio of solutions that addresses business outcomes.
+                </div>
+            </div>
+        </div>
+        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
+        <p class="mb-2 text-grey-dark">Now is the time to:</p>
+        <div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Expand areas of specialization, targeting a wider selection of vertical markets to target with highly focused marketing efforts.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Employ the sophisticated measurement and targeting techniques to specific customer verticals.
+                </div>
+            </div>
+        </div>
+    ',
+    'servicesstage1'=>'
+        <h2 class="leading-tight text-blue-dark mb-2">SERVICES PERFORMANCE</h2>
+        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 1</span>
+        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 1 in terms of your services readiness as an MSSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
+        <div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Offer a basic services catalog/portfolio of support, implementation, and monitoring services.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    In general, services are ad hoc and reactive and customized to each customer\'s needs, and there is little repeatability or automation.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Do not typically have a dedicated service desk to provide first-line support for any managed services they resell.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Only in technical certifications and industry standards in an ad hoc (reactive) manner, i.e., based on what specific customers and/or vendors demand.
+                </div>
+            </div>
+        </div>
+        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
+        <p class="mb-2 text-grey-dark">Now is the time to:</p>
+        <div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Invest in a more sophisticated services catalog and identify portfolio gaps.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    After doing a gap assessment, identify which services have both high demand and a high degree of commonality between customers with the objective of packaging these as managed services.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Invest in a service desk to offer first-line support for managed services.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Start certifying and incorporating industry minimum standards (e.g., PCI-DSS).
+                </div>
+            </div>
+        </div>
+    ',
+    'servicesstage2'=>'
+        <h2 class="leading-tight text-blue-dark mb-2">SERVICES PERFORMANCE</h2>
+        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 2</span>
+        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 2 in terms of your services readiness as an MSSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
+        <div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Typically investing in a more comprehensive services catalog, including expanding professional services, reselling some managed services, and in the early stages of building their own managed services offerings.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    The service desk is equipped to offer basic support on the managed services according to customer demand. These services are typically ad hoc, reactive, and highly customized, and there is little repeatability or automation.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Technicians comply to the minimum technical certifications required from key vendors, and industry minimum standards (e.g., PCI-DSS) are in place.
+                </div>
+            </div>
+        </div>
+        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
+        <p class="mb-2 text-grey-dark">Now is the time to:</p>
+        <div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Accelerate the repeatability of these services by investing in tools for services implementation, automation, and management which are embedded in the service catalog.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Differentiate through offering first-line support for managed services via a dedicated service desk.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Move up the value chain by investing in industry and quality standards (such as ISO), building a governance program and technical certification program that encourages technicians to upcertify and even start to specialize.
+                </div>
+            </div>
+        </div>
+    ',
+    'servicesstage3'=>'
+        <h2 class="leading-tight text-blue-dark mb-2">SERVICES PERFORMANCE</h2>
+        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 3</span>
+        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 3 in terms of your services readiness as an MSSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
+        <div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Offer a comprehensive service catalog of advanced professional services, own (packaged) managed services, and managed services for resell.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Have started to invest in repeatability, automation, and management tools.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Have a fully staffed service desk with dedicated MSP professionals offering first-line support for all (or most) of the managed services through standard helpdesk services.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Adhere to industry standards, have governance processes in place, and are proactively investing in more advanced technical certifications.
+                </div>
+            </div>
+        </div>
+        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
+        <p class="mb-2 text-grey-dark">Now is the time to:</p>
+        <div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Start to incorporate more advanced services functions and features like predictive fault management and 24 x 7 global support offered through multiple channels (email, call, chat).
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Start to incorporate more advanced features such as self-provisioning and even reporting in to your service catalog.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Start to comply to industry-specific regulations and governance programs.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Differentiate through horizontal (e.g., deep security, cybersecurity, artificial intelligence) and vertical (e.g., financial services, government, healthcare) specialist certifications and reference architectures.
+                </div>
+            </div>
+        </div>
+    ',
+    'servicesstage4'=>'
+        <h2 class="leading-tight text-blue-dark mb-2">SERVICES PERFORMANCE</h2>
+        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 4</span>
+        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 4 in terms of your services readiness as an MSSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
+        <div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    An extensive services portfolio of both professional and managed services that incorporates advanced features like predictive and automated fault management, 24 x 7 service desk, and self-provisioning (via a highly automated service catalog).
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Can offer multichannel 24 x 7 global support for all services and SLAs (service level agreements).
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Have a mature and embedded governance program, highly certified and specialized technicians, and are first movers in terms of adopting new industry, quality, and regulatory certifications. 
+                </div>
+            </div>
+        </div>
+        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
+        <p class="mb-2 text-grey-dark">Now is the time to:</p>
+        <div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Embed your managed services (as a services-attach) into all lines of business (including professional services).
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Invest in flexible consumption models, supporting advanced features and new routes to market (e.g., marketplaces).
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Enhance the services value proposition with sophisticated analytics, security by-design, and omni-channel 24 x 7 support, and extend this to all managed services in the portfolio.
+                </div>
+            </div>
+        </div>
+    ',
+    'servicesstage5'=>'
+        <h2 class="leading-tight text-blue-dark mb-2">SERVICES PERFORMANCE</h2>
+        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 5</span>
+        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 5 in terms of your MSP services readiness. Typically, organizations at this stage of their strategy maturity share the following characteristics:</p>
+        <div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Highly automated and embedded in a continuous improvement process within the services portfolio and are documented and regularly reviewed.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Security by design is embedded internally and aligned with customer processes and operations.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Regulatory and quality standard certifications are in place and can offer pre-emptive support with analytics, evidence, and recommendations.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Have deployed a continuous improvement process, creating a library of case studies, best practices, reusable tools, and reference architectures.
+                </div>
+            </div>
+        </div>
+        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
+        <p class="mb-2 text-grey-dark">Now is the time to:</p>
+        <div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Deepen relationships with customers, aligning your organization with their changing requirements.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Continue to automate your processes (ensuring that this does not detract from personal services where required), and measure and respond to fluctuations in customer satisfaction.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Focus on driving profitability across all service functions.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Continue to work closely with your vendor partners as a launch partner for innovations and new opportunities, including them in the continuous service improvement loop.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Stay ahead of the competition by continuously investing in best-in-class certification standards and deep vertical expertise.
+                </div>
+            </div>
+        </div>
+    ',
+    'securitystage1'=>'
+        <h2 class="leading-tight text-blue-dark mb-2">SECURITY PERFORMANCE</h2>
+        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 1</span>
+        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 1 in terms of your security readiness as an MSSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
+        <div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    At this stage, companies have yet to embrace the high-growth security opportunity that exists in the market, and are only starting to bring security into their business.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    At this early stage, companies are yet to have honed any specific security skills and typically lack security certifications.
+                </div>
+            </div>
+        </div>
+        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
+        <p class="mb-2 text-grey-dark">Now is the time to:</p>
+        <div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Consider how to position the company to meet customers\' and prospects\' needs in the high-growth MSSP area.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Consider hiring staff with security credentials to gain some expertise in this space.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Build a sales teams with experience winning security business.
+                </div>
+            </div>
+        </div>
+    ',
+    'securitystage2'=>'
+        <h2 class="leading-tight text-blue-dark mb-2">SECURITY PERFORMANCE</h2>
+        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 2</span>
+        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 2 in terms of your security readiness as an MSSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
+        <div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Companies at this stage tend to have built up their security offering over a period of about 18 months.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    At this stage, companies recognize the opportunity the security market presents to them and their customers, and are targeting it as a result.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Typically, companies have some experience and competencies in selling security, but have not yet developed these skills from a technical point of view.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Companies at this level may have some basic security certifications.
+                </div>
+            </div>
+        </div>
+        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
+        <p class="mb-2 text-grey-dark">Now is the time to:</p>
+        <div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Position security as a source of added value to customers and consider it an "armor-piercing bullet" for their business.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Consider building up technical expertise by assessing the skills profile and certifications needed to reach the customers they want to.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    An assessment of the certifications available should be undertaken by companies at this level to assess gaps in the company\'s portfolio.
+                </div>
+            </div>
+        </div>
+    ',
+    'securitystage3'=>'
+        <h2 class="leading-tight text-blue-dark mb-2">SECURITY PERFORMANCE</h2>
+        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 3</span>
+        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 3 in terms of your security readiness as an MSSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
+        <div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Companies at this stage tend to have built up their security offering over a period of between 18 and 36 months.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Typically, there is strong recognition among companies at this stage of the wider growth opportunity that security offers to their business.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    At this level, many companies tend to have developed lower-value security-specific technical skills and can offer things like first-line support.
+                </div>
+            </div>
+        </div>
+        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
+        <p class="mb-2 text-grey-dark">Now is the time to:</p>
+        <div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Consider your organization\'s existing/potential differentiators in security and leverage them to accelerate growth as a security provider.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Consider how the addition of higher-value capabilities such as specialist security consulting and integration skills can enhance the value of your security proposition.
+                </div>
+            </div>
+        </div>
+    ',
+    'securitystage4'=>'
+        <h2 class="leading-tight text-blue-dark mb-2">SECURITY PERFORMANCE</h2>
+        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 4</span>
+        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 4 in terms of your security readiness as an MSSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
+        <div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Companies at this stage tend to have built up their security offering over a period of between three to five years.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Typically, companies at this level view security as strategic to the future of their portfolio, having recognized the opportunity it presents.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    At this stage, companies complement their lower-value security technical skills (e.g., first-line support) with some higher-value offerings, such as technical consulting and security-specific technical skills.
+                </div>
+            </div>
+        </div>
+        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
+        <p class="mb-2 text-grey-dark">Now is the time to:</p>
+        <div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Focus sales teams around the outcomes security can bring to customers. This could mean maximizing workforce utilization through secure collaboration, to speed up time to market through secure cloud migration. This is essential to developing a stronger recurring security business.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Consider expanding security offering so it is an end-to-end proposition.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Invest in developing higher-value security certifications.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Ensure you have strong messaging around your position on GDPR and other regulations; this is essential for companies at this level.
+                </div>
+            </div>
+        </div>
+    ',
+    'securitystage5'=>'
+        <h2 class="leading-tight text-blue-dark mb-2">SECURITY PERFORMANCE</h2>
+        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 5</span>
+        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 5 in terms of your security readiness as an MSSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
+        <div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Companies at this stage tend to have built up their security offering over a period of more than five years.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    A key attribute of companies at this stage is that security is a central feature of their business. They typically address security as a business issue for their clients, not a technical one. This means they understand the outcomes security can offer their business.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    A full range of security skills and dedicated teams are offered typically by companies at this level. This includes advanced security architects, pre-sales architects, technical consultants, and first-line support analysts.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Companies at this stage have in-house GDPR (and other regulatory) experts and understand multicloud compliance issues.
+                </div>
+            </div>
+        </div>
+        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
+        <p class="mb-2 text-grey-dark">Now is the time to:</p>
+        <div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Expand on this success by entering new geographies and new partnerships, and through industry-specific propositions and new portfolio offerings. For example, companies using a security operations center (SOC) to protect their own environment ought to consider extending this expertise to support third parties, adding a new revenue stream to their security offering.
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Consider how to evolve beyond device management and log monitoring and into more advanced areas such as predictive threat analytics and even SOC management. By freeing customers\' in-house security professionals from lower-value, repeatable tasks they can focus on higher-value activities such as incident response. 
+                </div>
+            </div>
+            <div class="mb-1 clearfix">
+                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
+                <div class="w-5/6 float-left">
+                    Maintain a base of high-level accreditations to build strong trust among the customer base.
+                </div>
+            </div>
         </div>
     ',
 );

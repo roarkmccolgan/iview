@@ -69,7 +69,7 @@ return array(
     'overallstage4'=>'
         <h1>STAGE 4:  Time to Optimise</h1>
         <p>
-            Your well on your way, but don\'t think of stopping just yet. organizations that fall into this category of managed readiness have a firm appreciation of the regulation, its scope, compliance requirements and potential penalties. They have begun to put measures in place to comply but need to step up their activities to meet the May 2018 deadline.
+            Your well on your way, but don\'t think of stopping just yet. Organisations that fall into this category of managed readiness have a firm appreciation of the regulation, its scope, compliance requirements and potential penalties. They have begun to put measures in place to comply but need to step up their activities to meet the May 2018 deadline.
         </p>
         <p>
             Companies in this stage may have a plan for overall compliance but this may come at the expense of operation efficiency. That’s fine: there is an expediency dimension to GDPR compliance. But after compliance comes optimisation: embed your compliance processes in business as usual. This is tougher than it sounds, so start thinking now about what this might look like for your organization.
@@ -146,7 +146,7 @@ return array(
 
     'dataawareness_q5aorb'=>'
         <p>
-            At least you are honest about your inability to identify and locate all instances of personal data within your organization. This is a pre-requisite to GDPR compliance: you cannot demonstrate compliance if you do not know what data you have or its location. Given the short amount of time until May 2018, you need to prioritise the data that you are aware of and that is either important to you or that represents the greatest risk to your organization.
+            At least you are honest about your inability to identify and locate all instances of personal data within your organisation. This is a pre-requisite to GDPR compliance: you cannot demonstrate compliance if you do not know what data you have or its location. Given the short amount of time until May 2018, you need to prioritise the data that you are aware of and that is either important to you or that represents the greatest risk to your organisation.
         </p>
     ',
     'dataawareness_q5cord'=>'

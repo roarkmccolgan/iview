@@ -172,7 +172,7 @@ return [
         Barryvdh\Snappy\ServiceProvider::class,
         Khill\Lavacharts\Laravel\LavachartsServiceProvider::class,
         Laracasts\Utilities\JavaScript\JavaScriptServiceProvider::class,
-        LynX39\LaraPdfMerger\PdfMergerServiceProvider::class,
+        Nextek\LaraPdfMerger\PdfMergerServiceProvider::class,
         Fideloper\Proxy\TrustedProxyServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
         MartinLindhe\VueInternationalizationGenerator\GeneratorProvider::class,
@@ -235,14 +235,13 @@ return [
         'PDF' => Barryvdh\Snappy\Facades\SnappyPdf::class,
         'SnappyImage' => Barryvdh\Snappy\Facades\SnappyImage::class,
         'Lava' => Khill\Lavacharts\Laravel\LavachartsFacade::class,
-        'PdfMerger' => LynX39\LaraPdfMerger\Facades\PdfMerger::class,
         'Uuid' => Webpatser\Uuid\Uuid::class,
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
     ],
 
     'tooldomain' => [
-        'gauge'=>'idcgauge.net',
         'ready'=>'idcready.net',
+        'ready'=>'idcready.test',
     ],
     'template' => 'default',
 

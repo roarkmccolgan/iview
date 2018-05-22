@@ -82,6 +82,7 @@ Route::group(['domain' => '{subdomain}.'.env('APP_TLD','idcready.net'),'middlewa
 	}]);
 
 	Route::get('/download/{uuid}', 'ToolController@getDownload')->middleware(['routebyurl']);
+	Route::get('/report/{uuid}', 'ToolController@getReport')->middleware(['routebyurl']);
 
 	Route::get('/privacy', function()
 	{

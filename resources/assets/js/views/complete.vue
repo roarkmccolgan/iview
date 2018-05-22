@@ -2,7 +2,7 @@
 	<div class="flex-grow ieflex1">
 		<div class="container mx-auto">
 			<div class="mt-4">
-				<img src="/images/tools/8/ntt.svg" class="w-48" alt="">
+				<a href="http://www.eu.ntt.com" target="_blank"><img src="/images/tools/8/ntt.svg" class="w-48" alt=""></a>
 			</div>
 		</div>
 		<div class="container mx-auto mt-2 mb-4 py-4 px-4 text-grey-darker">

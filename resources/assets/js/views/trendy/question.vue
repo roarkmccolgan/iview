@@ -2,11 +2,7 @@
 	<div class="flex-grow">
 		<div class="px-4 flex flex-col">
 			<div class="container mx-auto py-2" v-if="showIntermission">
-				<transition name="fade">
-					<intermission-component :section="currentQuestion.section | toTitle" v-on:next-step="closeIntermission()" v-if="showIntermission">
-						<span v-html="currentQuestion.intermission"></span>
-					</intermission-component>
-				</transition>
+				<intermission-component :section="currentQuestion.section | toTitle" v-on:next-step="closeIntermission()" :info="currentQuestion.intermission" v-if="showIntermission"></intermission-component>
 			</div>
 			<div class="" v-else>
 				<div class="mt-2">
