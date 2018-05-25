@@ -492,7 +492,7 @@ Risk is a key driver for assessment and mitigation processes.",
     '7landing'=>'
     <h3>GDPR is here<br/>How Ready Are You?</h3>
     <p>
-        The EU General Data Protection Regulation (GDPR) deadline has passed. It supersedes all previous national data protection laws in the EU and can impacr your organization in terms of handling and protecting personal data.
+        The EU General Data Protection Regulation (GDPR) deadline has passed. It supersedes all previous national data protection laws in the EU and can impact your organization in terms of handling and protecting personal data.
     </p>
     <p>
         IDC\'s GDPR Readiness Assessment only takes a few minutes and will provide you with some essential guidance on your GDPR compliance and what you need to consider to be compliant.
