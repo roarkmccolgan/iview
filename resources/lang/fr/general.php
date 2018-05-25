@@ -153,9 +153,9 @@ Le risque est un facteur clé pour les processus d'évaluation et d'atténuation
     '7title'=>'Évaluation de la préparation au GDPR d\'IDC',
     '7sub-title'=>'Préparation au GDPR pour votre entreprise',
     '7landing'=>'
-    <h3>L\'échéance du GDPR approche<br/>ÊTES-VOUS PRÊT ?</h3>
+    <h3>Le GDPR, c’est maintenant<br/>ÊTES-VOUS PRÊT ?</h3>
     <p>
-        L\'échéance du Règlement général sur la protection des données (GDPR) de l\'UE approche. Ce règlement se substituera à toutes les lois nationales actuelles sur la protection des données au sein de l\'UE et pourra avoir un impact sur votre entreprise en termes de gestion et protection des données à caractère personnel.
+        Le délai d’application du règlement général européen sur la protection des données (GDPR) est passé. Il se substitue à toutes les législations nationales de protection des données dans l’UE et peut avoir un impact sur votre organisation en ce qui concerne le traitement et la protection des informations à caractère personnel.
     </p>
     <p>
         L\'évaluation de la préparation au GDPR d\'IDC vous donnera quelques conseils essentiels pour votre conformité au GDPR ainsi que les éléments que vous devez prendre en compte pour être conforme.

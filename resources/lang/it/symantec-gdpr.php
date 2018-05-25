@@ -66,7 +66,7 @@ return array(
     'overallstage4'=>'
         <h1>Fase 4: Ottimizzazione</h1>
         <p>
-            Siete sulla buona strada, ma non potete ancora fermarvi. Le organizzazioni che rientrano in questa categoria di preparazione gestita comprendono perfettamente la normativa, il suo ambito, i suoi requisiti di conformità e le potenziali sanzioni. Hanno iniziato a mettere in atto le misure necessarie per conformarsi, ma devono intensificare le loro attività per raggiungere la conformità entro la scadenza di maggio 2018.
+            Siete sulla buona strada, ma non potete ancora fermarvi. Le organizzazioni che rientrano in questa categoria di preparazione gestita comprendono perfettamente la normativa, il suo ambito, i suoi requisiti di conformità e le potenziali sanzioni. Hanno cominciato ad adottare delle misure per la conformità, e ora devono impegnarsi per proseguire lungo questo cammino.
         </p>
         <p>
             Le aziende in questa fase potrebbero disporre di un piano per la conformità complessiva, che, tuttavia, potrebbe andare a discapito dell\'efficienza operativa. Bene: la conformità GDPR è a portata di mano. Ma dopo la conformità viene l\'ottimizzazione, ossia bisogna incorporare i processi di conformità nelle consuete attività aziendali. Questo processo è più difficile di quanto sembra, perciò dovete iniziare a pensare a cosa significa per la vostra organizzazione.
@@ -90,7 +90,7 @@ return array(
     ',
     'overallq1e'=>'
         <p>
-            Avete ammesso di riporre elevate aspirazioni nella conformità al GDPR. Ciò dovrebbe mettervi in una posizione di forza nel caso in cui un organismo di regolamentazione si interessi alle vostre attività. Accertatevi di poter dimostrare i vostri sforzi, in quanto si tratta di una parte cruciale della conformità. Il fattore chiave della vostra attività di conformità potrebbe essere l\'efficienza interna o il miglioramento delle informazioni fornite o la ricerca di un vantaggio competitivo, eventualmente tramite best practice. Qualunque sia la vostra motivazione, vi sta guidando ad essere un leader nella conformità GDPR. Dovete restare concentrati sul completamento delle vostre attività di conformità entro maggio 2018, ma all\'orizzonte dovrebbe esservi la comprensione che i vostri processi di conformità potrebbero non essere ottimizzati per l\'efficienza operativa. L\'integrazione della conformità GDPR nelle consuete attività aziendali è una fase che va oltre la semplice conformità, ma è proprio qui che si vedono i veri vantaggi.
+            Avete ammesso di riporre elevate aspirazioni nella conformità al GDPR. Ciò dovrebbe mettervi in una posizione di forza nel caso in cui un organismo di regolamentazione si interessi alle vostre attività. Accertatevi di poter dimostrare i vostri sforzi, in quanto si tratta di una parte cruciale della conformità. Il fattore chiave della vostra attività di conformità potrebbe essere l\'efficienza interna o il miglioramento delle informazioni fornite o la ricerca di un vantaggio competitivo, eventualmente tramite best practice. Qualunque sia la vostra motivazione, vi sta guidando ad essere un leader nella conformità GDPR. L’attenzione deve restare concentrata sul completamento delle attività di conformità, ma senza dimenticare che i processi di conformità potrebbero non essere ottimizzati per l\'efficienza operativa. L\'integrazione della conformità GDPR nelle consuete attività aziendali è una fase che va oltre la semplice conformità, ma è proprio qui che si vedono i veri vantaggi.
         </p>
     ',
     'overallq7a'=>'
@@ -143,7 +143,7 @@ return array(
 
     'dataawareness_q5aorb'=>'
         <p>
-            Quanto meno, siete onesti riguardo alla vostra incapacità di identificare e individuare tutte le istanze dei dati personali all\'interno della vostra organizzazione. Questo è un prerequisito per la conformità GDPR: non potete dimostrare la conformità se non conoscete i dati di cui disponete. Dato il breve tempo rimasto fino alla scadenza di maggio 2018, dovete dare la priorità ai dati di cui siete consapevoli e che sono importanti per voi o che rappresentano il più grande rischio per la vostra organizzazione.
+            Quanto meno, siete onesti riguardo alla vostra incapacità di identificare e individuare tutte le istanze dei dati personali all\'interno della vostra organizzazione. Questo è un prerequisito per la conformità GDPR: non potete dimostrare la conformità se non conoscete i dati di cui disponete. È indispensabile dare priorità ai dati visibili e che sono importanti per voi oppure che costituiscono il rischio maggiore per la vostra azienda.
         </p>
     ',
     'dataawareness_q5cord'=>'

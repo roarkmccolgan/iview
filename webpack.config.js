@@ -90,7 +90,7 @@ module.exports = {
 		}
 	],
 	resolve: {
-	extensions: ['*', '.js', '.vue', '.json', '.svg'],
+		extensions: ['*', '.js', '.vue', '.json', '.svg'],
 	    alias: {
 	      'vue$': 'vue/dist/vue.common.js' // 'vue/dist/vue.common.js' for webpack 1
 	    }

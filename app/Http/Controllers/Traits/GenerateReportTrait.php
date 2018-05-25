@@ -1370,25 +1370,7 @@ trait GenerateReportTrait {
 			->setOption('footer-html',session('url').'/'.session('localeUrl').'template/'.session('template').'/report/footer')
 			->setOption('footer-spacing',2)
 			->setOption('replace', $headervars);
-			if (session('product.id')==9){
-	        	//$pdf->setOption('cover',session('url').'/'.session('localeUrl').'template/'.session('template').'/report/cover');
-				$timeStamp = time();
-				//return $pdf->inline('invoice.pdf');
-				$pdf->save(storage_path().'/trend-micro-report-'.$timeStamp.'.pdf');
-
-
-
-				$merge = new \Nextek\LaraPdfMerger\PdfManage;
-				$locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
-
-				$merge->addPDF(storage_path().'/trend-micro_start'.$locale .'.pdf', 'all');
-				$merge->addPDF(storage_path().'/trend-micro-report-'.$timeStamp.'.pdf', 'all');
-
-				$merge->merge('browser', storage_path().'/reports/trend-micro-report-'.$timeStamp.'.pdf', 'P');
-				if(File::exists(storage_path().'/trend-micro-report-'.$timeStamp.'.pdf')){
-					File::delete(storage_path().'/trend-micro-report-'.$timeStamp.'.pdf');
-				}
-			} elseif(session('product.id')==2){
+			if (session('product.id')==2){
 				$pdf->save(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
 
 				$merge = new \Nextek\LaraPdfMerger\PdfManage;
@@ -1461,6 +1443,24 @@ trait GenerateReportTrait {
 				$merge->merge('file', storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf', 'P');
 				if(File::exists(storage_path().'/'.$assessment_id.'_'.$name.'.pdf')){
 					File::delete(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
+				}
+			}elseif(session('product.id')==9){
+				//$pdf->setOption('cover',session('url').'/'.session('localeUrl').'template/'.session('template').'/report/cover');
+				$timeStamp = time();
+				//return $pdf->inline('invoice.pdf');
+				$pdf->save(storage_path().'/trend-micro-report-'.$timeStamp.'.pdf');
+
+
+
+				$merge = new \Nextek\LaraPdfMerger\PdfManage;
+				$locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
+
+				$merge->addPDF(storage_path().'/trend-micro_start'.$locale .'.pdf', 'all');
+				$merge->addPDF(storage_path().'/trend-micro-report-'.$timeStamp.'.pdf', 'all');
+
+				$merge->merge('browser', storage_path().'/reports/trend-micro-report-'.$timeStamp.'.pdf', 'P');
+				if(File::exists(storage_path().'/trend-micro-report-'.$timeStamp.'.pdf')){
+					File::delete(storage_path().'/trend-micro-report-'.$timeStamp.'.pdf');
 				}
 			}else{
 				return $pdf->save(storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf');

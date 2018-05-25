@@ -66,7 +66,7 @@ return array(
     'overallstage4'=>'
         <h1>Stadium 4: Optimierung</h1>
         <p>
-            Sie sind auf einem guten Weg, aber noch längst nicht am Ziel. Organisationen in dieser Kategorie haben ein grundlegendes Verständnis der Regulierung, ihres Umfangs, der Konformitätsanforderungen und potentieller Geldbußen entwickelt. Sie haben begonnen, Maßnahmen umzusetzen, um die Regeln der EU-DSGVO einzuhalten, müssen aber ihre Aktivitäten beschleunigen, um bis zum Mai 2018 fertig zu werden. 
+            Sie sind auf einem guten Weg, aber noch längst nicht am Ziel. Organisationen in dieser Kategorie haben ein grundlegendes Verständnis der Regulierung, ihres Umfangs, der Konformitätsanforderungen und potentieller Geldbußen entwickelt. Sie haben begonnen, die Compliance-Vorgaben umzusetzen, müssen jetzt aber auch die dauerhafte Einhaltung gewährleisten.
         </p>
         <p>
             Unternehmen in diesem Stadium haben einen umfassenden JKonformitätsplan, doch geht der auf Kosten der operativen Effizienz. Das ist nicht schlimm: Es sind bei der Umsetzung der EU-DSGVO-Compliance auch Zweckdienlichkeitsüberlegungen zu berücksichtigen. Aber nach Erreichen der Regelkonformität muss die Optimierung folgen: Betten Sie Ihre Compliance-Prozesse in den täglichen Geschäftsablauf ein. Das ist schwieriger als es sich anhört, deshalb beginnen Sie sofort darüber nachzudenken, wie das in Ihrer Organisation aussehen könnte.
@@ -90,7 +90,7 @@ return array(
     ',
     'overallq1e'=>'
         <p>
-            Wie Sie selbst angegeben haben, stellen Sie an Ihre Einhaltung der EU-DSGVO-Regeln hohe Anforderungen. Deshalb sollten Sie sich in einer starken Position befinden, wenn sich der Regulierer für Ihre Aktivitäten interessiert. Stellen Sie sicher, dass Sie Ihre Anstrengungen auch belegen können, denn dies ist für die EU-DSGVO-Konformität entscheidend. Vielleicht treibt das Streben nach interner Effizienz Ihre Konformitätsaktivitäten an oder bessere Informationen. Oder aber sie sehen darin eine Differenzierungsmöglichkeit im Wettbewerb, wenn möglich durch bewährte Praktiken. Was immer Ihre Motivation ist, sie macht Sie zu einem führenden Unternehmen hinsichtlich der EU-DSGVO-Konformität. Ihr Scherpunkt sollte weiterhin darauf liegen, Ihre Compliance-Aktivitäten bis zum Mai 2018 abzuschließen. Aber darüber hinaus sollten Sie im Auge behalten, dass Ihre Prozesse zur Erreichung von Konformität möglicherweise nicht auf höchste betriebliche Effizienz zugeschnitten sind. Die nahtlose Integration der EU-DSGVO-Konformität in die Geschäftsprozesse geht in der Regel einen Schritt über die bloße Regelkonformität hinaus, aber hier liegen die tatsächlichen Vorteile.
+            Wie Sie selbst angegeben haben, stellen Sie an Ihre Einhaltung der EU-DSGVO-Regeln hohe Anforderungen. Deshalb sollten Sie sich in einer starken Position befinden, wenn sich der Regulierer für Ihre Aktivitäten interessiert. Stellen Sie sicher, dass Sie Ihre Anstrengungen auch belegen können, denn dies ist für die EU-DSGVO-Konformität entscheidend. Vielleicht treibt das Streben nach interner Effizienz Ihre Konformitätsaktivitäten an oder bessere Informationen. Oder aber sie sehen darin eine Differenzierungsmöglichkeit im Wettbewerb, wenn möglich durch bewährte Praktiken. Was immer Ihre Motivation ist, sie macht Sie zu einem führenden Unternehmen hinsichtlich der EU-DSGVO-Konformität. Fokussieren Sie sich fürs erste weiterhin auf die Umsetzung der Compliance-Vorgaben. Behalten Sie aber im Hinterkopf, dass Ihre Compliance-Prozesse aktuell noch nicht für einen effizienten Betrieb optimiert sind. Die nahtlose Integration der EU-DSGVO-Konformität in die Geschäftsprozesse geht in der Regel einen Schritt über die bloße Regelkonformität hinaus, aber hier liegen die tatsächlichen Vorteile.
         </p>
     ',
     'overallq7a'=>'
@@ -143,7 +143,7 @@ return array(
 
     'dataawareness_q5aorb'=>'
         <p>
-            Wenigstens geben Sie ehrlich zu, dass Sie nicht alle Instanzen personenbezogener Daten in Ihrer Organisation identifizieren und lokalisieren können. Das ist eine Voraussetzung der EU-DSGVO-Konformität: Man kann keine Compliance demonstrieren, wenn man nicht weiß, welche Daten man hat oder wo sie gespeichert sind. Da nur noch wenig Zeit bis zum Mai 2018 verbleibt, müssen Sie die Daten, von denen Sie wissen und die entweder wichtig oder besonders risikobehaftet für Ihre Organisation sind, priorisieren.
+            Wenigstens geben Sie ehrlich zu, dass Sie nicht alle Instanzen personenbezogener Daten in Ihrer Organisation identifizieren und lokalisieren können. Das ist eine Voraussetzung der EU-DSGVO-Konformität: Man kann keine Compliance demonstrieren, wenn man nicht weiß, welche Daten man hat oder wo sie gespeichert sind. Sie müssen sich auf die Daten konzentrieren, die Sie kennen – und die entweder einen besonders hohen Wert für Ihr Unternehmen haben oder ein besonders hohes Risiko darstellen.
         </p>
     ',
     'dataawareness_q5cord'=>'

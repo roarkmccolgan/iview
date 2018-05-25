@@ -64,7 +64,7 @@ return array(
     'overallstage4'=>'
         <h1>Étape 4 - Il faut optimiser</h1>
         <p>
-            Vous avez beaucoup travaillé, mais vous ne devez pas vous arrêter maintenant. Les entreprises qui sont dans cette phase de gestion de la préparation ont une bonne appréciation de la réglementation, de sa portée, des exigences en matière de conformité et des pénalités éventuelles. Elles ont commencé à mettre en place des mesures pour être conformes mais doivent intensifier leurs activités pour respecter l\'échéance de mai 2018.
+            Vous avez beaucoup travaillé, mais vous ne devez pas vous arrêter maintenant. Les entreprises qui sont dans cette phase de gestion de la préparation ont une bonne appréciation de la réglementation, de sa portée, des exigences en matière de conformité et des pénalités éventuelles. Elles ont commencé à prendre des mesures pour s’y conformer, mais doivent désormais veiller à préserver cette conformité.
         </p>
         <p>
             À ce stade, les entreprises peuvent avoir un plan de conformité globale, mais il peut représenter un frein à l\'efficacité opérationnelle. Ce n\'est pas grave : la conformité au GDPR est une opportunité. Après la conformité vient l\'optimisation : l\'intégration de vos processus de conformité à vos activités habituelles. Cette étape est plus difficile qu\'elle en a l\'air, alors réfléchissez dès à présent à ce que cela peut signifier pour votre entreprise.
@@ -88,7 +88,7 @@ return array(
     ',
     'overallq1e'=>'
         <p>
-            Vous indiquez que vos objectifs sont élevés en matière de conformité au GDPR. Cela devrait vous placer dans une position de force si un régulateur s\'intéresse à vos activités. Assurez-vous que vous pouvez prouver les efforts que vous avez mis en œuvre, car c\'est une étape essentielle de la conformité. Le moteur de vos activités de conformité peut être l\'efficacité interne ou l\'amélioration des informations données. Il peut aussi s\'agir de la recherche d\'une différentiation concurrentielle, éventuellement via des pratiques d\'excellence. Quelle que soit votre motivation, elle vous conduit à faire preuve d\'excellence en matière de conformité au GDPR. Vos efforts pour réaliser votre mise en conformité d\'ici mai 2018 doivent continuer, mais vous devez réaliser que vos processus de conformité ne sont peut-être pas optimisés pour l\'efficacité opérationnelle. Intégrer la conformité au GDPR dans vos activités habituelles dépasse la simple conformité mais il s\'agit d\'un processus très avantageux.
+            Vous indiquez que vos objectifs sont élevés en matière de conformité au GDPR. Cela devrait vous placer dans une position de force si un régulateur s\'intéresse à vos activités. Assurez-vous que vous pouvez prouver les efforts que vous avez mis en œuvre, car c\'est une étape essentielle de la conformité. Le moteur de vos activités de conformité peut être l\'efficacité interne ou l\'amélioration des informations données. Il peut aussi s\'agir de la recherche d\'une différentiation concurrentielle, éventuellement via des pratiques d\'excellence. Quelle que soit votre motivation, elle vous conduit à faire preuve d\'excellence en matière de conformité au GDPR. Votre priorité reste la même : mener à bien votre mise en conformité. Mais pour la suite, vous devez aussi garder à l’esprit que vos processus de conformité ne sont peut-être pas optimisés pour offrir l’efficacité opérationnelle dont vous avez besoin. Intégrer la conformité au GDPR dans vos activités habituelles dépasse la simple conformité mais il s\'agit d\'un processus très avantageux.
         </p>
     ',
     'overallq7a'=>'
@@ -141,7 +141,7 @@ return array(
 
     'dataawareness_q5aorb'=>'
         <p>
-            Vous êtes honnête quant à votre incapacité à identifier et localiser toutes les instances de données à caractère personnel au sein de votre entreprise. C\'est une condition préalable à la conformité au GDPR : vous ne pouvez pas démontrer votre conformité si vous ne savez pas quelles données vous possédez ou leur emplacement. Étant donné le peu de temps qu\'il reste jusqu\'à mai 2018, vous devez traiter en priorité les données dont vous avez connaissance et qui sont importantes pour vous, ou qui représentent le plus grand risque pour votre entreprise.
+            Vous êtes honnête quant à votre incapacité à identifier et localiser toutes les instances de données à caractère personnel au sein de votre entreprise. C\'est une condition préalable à la conformité au GDPR : vous ne pouvez pas démontrer votre conformité si vous ne savez pas quelles données vous possédez ou leur emplacement. Vous devez donner la priorité aux données dont vous avez connaissance et qui sont importantes pour vous ou représentent le plus grand risque pour votre organisation.
         </p>
     ',
     'dataawareness_q5cord'=>'

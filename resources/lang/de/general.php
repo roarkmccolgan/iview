@@ -151,9 +151,9 @@ Risiko ist ein wichtiger Treiber für Assessments und Prozesse zur Risikominderu
     '7title'=>'IDCs Bewertungstool zum Stand der Vorbereitung auf die EU-DSGVO <br/><span class="small">(EU-Datenschutzgrundverordnung)</span>',
     '7sub-title'=>'Stand der Vorbereitungen auf EU-DSGVO in Ihrem Unternehmen',
     '7landing'=>'
-    <h3>Die Umsetzungsfrist der EU-DSGVO endet demnächst.<br/>Wie gut sind Sie vorbereitet?</h3>
+    <h3>Die DSGVO ist da.<br/>Wie gut sind Sie vorbereitet?</h3>
     <p>
-        Die Umsetzungsfrist der EU-DSGVO endet im Mai 2018. Sie ersetzt die gesamte bisherige nationale Datenschutz-Gesetzgebung der EU-Länder und kann Ihre Organisation in Hinblick auf Handhabung und Schutz persönlicher Daten betreffen.
+        Der Countdown zur EU-Datenschutzgrundverordnung ist abgelaufen. Die DSGVO ersetzt die bisherigen nationalen Datenschutzgesetze in der EU und definiert strenge Regeln für den Umgang mit personenbezogenen Daten der EU-Bürger – auch in Ihrem Unternehmen.
     </p>
     <p>
         Dieses Tool von IDC bewertet den Stand der Vorbereitungen auf EU-DSGVO in Ihrem Unternehmen. Es enthält einige grundlegende Richtlinien zum Thema EU-DSGVO-Compliance und dazu, was diesbezüglich zu berücksichtigen ist.

@@ -41,9 +41,9 @@ Completa lo strumento di valutazione del rischio informatico di IDC per ulterior
     '7title'=>'Valutazione della preparazione GDPR di IDC',
     '7sub-title'=>'La preparazione GDPR della vostra azienda',
     '7landing'=>'
-    <h3>La scadenza del GDPR è quasi arrivata<br/>Quanto siete pronti?</h3>
+    <h3>Il GDPR è arrivato<br/>Quanto siete pronti?</h3>
     <p>
-        La scadenza del GDPR (regolamento generale sulla protezione dei dati) dell\'Unione Europea si sta avvicinando. Sostituirà tutte le attuali leggi nazionali sulla protezione dei dati nell\'UE e potrebbe avere un impatto sulla vostra organizzazione in termini di trattamento e protezione dei dati personali.
+        Il GDPR (General Data Protection Regulation) dell’Unione europea è entrato in vigore. Prevale su tutte le precedenti normative nazionali sulla protezione dei dati e può influire sulle modalità di trattamento e protezione dei dati personali di ogni azienda.
     </p>
     <p>
         La valutazione della preparazione GDPR di IDC fornisce alcune indicazioni essenziali sulla conformità GDPR e sui requisiti necessari.
