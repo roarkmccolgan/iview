@@ -222,7 +222,11 @@ class AssessmentController extends Controller {
 	    				});
 	    			});
 	    		});
-	    		$item->report = session('url').session('localeUrl').'/download/'.$item->uuid;
+	    		$itemLang = '';
+	    		if($item->lang){
+					$itemLang = $item->lang == 'en' ? '/' : '/'.$item->lang;
+	    		}
+	    		$item->report = session('url').$itemLang.'/download/'.$item->uuid;
 			    return collect($item);
 			});
 			$chosenColumns[] = 'quiz';

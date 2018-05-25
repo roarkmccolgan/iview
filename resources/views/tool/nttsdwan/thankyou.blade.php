@@ -26,7 +26,7 @@
 
 </script>
 @endif
-<div class="h-screen flex flex-col">
+<div id="app" class="h-screen flex flex-col">
 	<div class="bg-ntt-blue">
 	    <div class="container mx-auto px-4">
     		<div class="text-right py-4">

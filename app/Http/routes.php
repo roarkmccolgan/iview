@@ -133,7 +133,7 @@ Route::group(['domain' => '{subdomain}.'.env('APP_TLD','idcready.net'),'middlewa
 		Route::post('/{section}/page{num}', 'ToolController@savePage');
 
 		Route::get('/complete', 'ToolController@getComplete');
-		Route::post('/complete', 'ToolController@postComplete');
+		Route::post('/complete', 'ToolController@postComplete')->middleware(['routebyurl']);
 		Route::get('/download', 'ToolController@fakeDownload');
 	});
 });

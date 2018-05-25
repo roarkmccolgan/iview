@@ -156,6 +156,7 @@ Complete la Herramienta de Evaluación de riesgos informáticos de IDC para sabe
     'errorIndustry'=>'Seleccione una opción.',
     'errorCountry'=>'Escriba el su país',
     'errorNumber'=>'Escriba su número de teléfono',
+    'errorPhone'=>'Escriba su número de teléfono',
     'errorRelationship'=>'Please select Relationship Type',
     'errorQualification'=>'Please select Partner Type',
     'errorAccept'=>'Acepte los términos y condiciones para continuar.',

@@ -559,7 +559,6 @@ public function postComplete(SubmitAssessmentsRequest $request)
 
 	Session::put('user', $request->except('_token'));
 
-
 	//update source
 	$currentLocal = App::getLocale();
 	$localQuestions = $currentLocal=='en' ? '' : $currentLocal;
@@ -590,6 +589,7 @@ public function postComplete(SubmitAssessmentsRequest $request)
 	$assessment->score = session('result.overall.score');
 	$assessment->rating = trans(session('product.alias').'.'.session('result.overall.rating'));
 	$assessment->uuid = Uuid::generate()->string;
+	$assessment->lang = session('locale') == '' ? 'en' : session('locale');
 	$assessment->save();
 	$tracker = false;
 
@@ -669,10 +669,6 @@ public function postComplete(SubmitAssessmentsRequest $request)
 		    }
 		}
 
-		//dd($query);
-
-
-
 	    $this->dispatch(new SendEloquaRequest($url, $query));
 }
 	$subject = trans(session('product.alias').'.email.subject');
@@ -701,7 +697,7 @@ public function postComplete(SubmitAssessmentsRequest $request)
 
 	//send mail to notification people
 	$emails = [];
-	if(App::isLocal()){
+	if(App::isLocal() || $assessment['email']=='rmccolgan@idc.com'){
 		$emails = ['roarkmccolgan@gmail.com'];
 	}else{
 		if($assessment->tool_id != 5){ //spunk
@@ -720,6 +716,7 @@ public function postComplete(SubmitAssessmentsRequest $request)
 	}
 	$emails = array_diff($emails, $remove);
 	$subject = $assessment->tool->company->name.' - '.$assessment->tool->title.' Assessment completed';
+
 	Mail::queue('emails.notification',
 		array(
 			'companyName' => $assessment->tool->company->name,
@@ -753,6 +750,7 @@ public function postComplete(SubmitAssessmentsRequest $request)
 	);
 	JavaScript::put([
         'locale' => session('locale'),
+        'tool' => $request->get('product'),
     ]);
         /*if(Cookie::has('quiz_progress')){
             $progress_id = Cookie::get('quiz_progress');
