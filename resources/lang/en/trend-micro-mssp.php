@@ -161,7 +161,7 @@ return array(
         <img src=":url/images/tools/9/trend.png" class="w-full mx-auto" alt="">
     ',
     'overallstage1'=>'
-        <h2 class="leading-tight text-blue-dark mb-2">SALES PERFORMANCE</h2>
+        <h2 class="leading-tight text-blue-dark mb-2">YOUR OVERALL PERFORMANCE</h2>
         <span class="block mb-2 font-bold text-grey-dark text-lg">:stage</span>
         <p class="mb-2">Companies at this stage are at the very beginning of their journey to becoming an MSSP. They may be new to managed services, to selling in a subscription model, and/or new to the security market.</p>
         <p class="mb-2">This is a high growth market, which is compounded by severe skills shortage, and presents a massive opportunity for IT solution providers. Now is a good time to reach out to relevant vendor partners (like Trend Micro) to understand what programs they have in place to accelerate your entry into the MSS market.</p>

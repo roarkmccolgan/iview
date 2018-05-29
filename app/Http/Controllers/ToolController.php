@@ -772,6 +772,8 @@ public function postComplete(SubmitAssessmentsRequest $request)
     	$update = $request->has('update') && $request->input('update')==false ? false : true;
 
     	$assessment = Assessment::where('uuid', $uuid)->firstOrFail();
+    	$request->session()->put('questions', $assessment->quiz);
+		$request->session()->put('result', $assessment->result);
     	$reportName = str_slug($assessment->fname.'_'.$assessment->lname.'_'.session('product.title').'_Assessment', '-');
     	if($update){
     		$assessment->update(['fetched' => 1]);
@@ -781,22 +783,11 @@ public function postComplete(SubmitAssessmentsRequest $request)
     		if(!$inline){
     			$filename = $assessment->id.'_'.str_slug($assessment->fname.'_'.$assessment->lname.'_'.$assessment->tool->title.'_Assessment', '-').'.pdf';
     			$downloadName = str_slug($assessment->id.'-'.session('product.title').'-report', '-').'.pdf';
-
-    			if(file_exists(storage_path().'/reports/'.$filename)){
-    				$headers = array(
-    					'Content-Type: application/pdf',
-    				);
-    				return response()->download(storage_path().'/reports/'.$filename, $downloadName, $headers);
-    			}else{
-    				$request->session()->put('questions', $assessment->quiz);
-    				$request->session()->put('result', $assessment->result);
-
-    				$this->wkhtml($assessment->id,$reportName);
-    				$headers = array(
-    					'Content-Type: application/pdf',
-    				);
-    				return response()->download(storage_path().'/reports/'.$filename, $downloadName, $headers);
-    			}
+				$this->wkhtml($assessment->id,$reportName);
+				$headers = array(
+					'Content-Type: application/pdf',
+				);
+				return response()->download(storage_path().'/reports/'.$filename, $downloadName, $headers);
     		}else{
     			return $this->wkhtml($assessment->id,$reportName,$inline);
     		}
