@@ -66,6 +66,19 @@ return array(
         ),
         'tweet' => false,
         'include_answers_in_download_report' => true,
+        'notifications' => [
+            'inline_report' => true
+        ],
+        'field_validation' => [
+            'fname'=>'required|min:2|max:255',
+            'sname'=>'required|min:2|max:255',
+            'email'=>'required|email',
+            'phone'=>'required',
+            'title'=>'required|min:3|max:255',
+            'company'=>'required|min:2|max:255',
+            'country'=>'required',
+            'terms'=>'required'
+        ]
     ),
     'sales' => array(
         'baseline' => 8.90,

@@ -4,6 +4,7 @@ namespace App\Http\Requests;
 
 use App\Http\Requests\Request;
 use App\Tool;
+use Illuminate\Support\Facades\Config;
 
 class SubmitAssessmentsRequest extends Request
 {
@@ -35,6 +36,9 @@ class SubmitAssessmentsRequest extends Request
             'phone'=>'required',
             'terms'=>'required'
         ];
+        if(Config::has('baseline_'.session('product.id').'.overall.field_validation')){
+            $rules = config('baseline_'.session('product.id').'.overall.field_validation');
+        }
         if(!empty($tool->extra_fields)){
             foreach($tool->extra_fields as $field) {
                 if($field->required!=0){

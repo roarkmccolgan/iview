@@ -96,7 +96,7 @@
 								</div>
 								<div class="mb-6 w-full">
 									<label :class="[terms ? activeClass : normalClass, errors.terms ? 'border-red bg-red-lightest' : '']" tabindex="0" @keyup.space="$event.target.click()" @click="checkTerms">
-										<input class="hidden" type="checkbox" id="terms" black value="terms" v-model="terms">
+										<input class="hidden" type="checkbox" id="terms" name="terms" black value="terms" v-model="terms">
 										<div class="flex items-baseline">
 											<div class="mr-2 text-2xl sm:text-xl">
 												<font-awesome-icon :icon="icons.faSquare" v-if="!terms" />

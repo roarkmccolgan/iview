@@ -193,9 +193,16 @@ ul li, ol li {
 						<table>
 							<tr>
 								<td class="padding">
-									<p><a href="{{ session('url').'/'.session('locale').'/download/'.$assessment->uuid }}" class="btn-primary">{{trans(session('product.alias').'.email.link')}}</a></p>
+									<p><a href="{{ session('url').'/'.session('locale').'/download/'.$assessment->uuid }}" class="btn-primary" style="color:#FFF">{{trans(session('product.alias').'.email.link')}}</a></p>
 								</td>
 							</tr>
+							@if(isset($inline) && $inline!=false)
+							<tr>
+								<td class="padding">
+									<p><a href="{{ session('url').'/'.session('locale').'/download/'.$assessment->uuid.'?browser=true' }}" class="btn-primary" style="color:#FFF">{{trans(session('product.alias').'.email.link_inline')}}</a></p>
+								</td>
+							</tr>
+							@endif
 						</table>
 						@if(Lang::has(session('product.alias').'.email.extra'))
 						<p>{!!trans(session('product.alias').'.email.extra')!!}</p>

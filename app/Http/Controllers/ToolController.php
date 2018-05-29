@@ -48,8 +48,8 @@ class ToolController extends Controller
 			$tool = session('product');
 			if($tool['alias']!=='ntt-sdwan' && $tool['alias']!=='trend-micro-mssp'){
 				$this->middleware(['reloadquestions'], ['only' => [
-		            'run',
-		        ]]);
+					'run',
+				]]);
 			}
 		}
 	}
@@ -131,7 +131,7 @@ public function store(CreateToolRequest $request)
 		'company_id'=>$company_id,
 		'start_date'=>Carbon::createFromFormat('d-m-Y', $request->input('start_date')),
 		'end_date'=>Carbon::createFromFormat('d-m-Y', $request->input('start_date'))->addMonths($request->input('duration'))->toDateTimeString()
-		]);
+	]);
 
 	foreach ($request->input('language') as $lang_id) {
 
@@ -236,16 +236,16 @@ public function run(Request $request, $subdomain)
 	}
 
 	JavaScript::put([
-        'tool' => $tool,
-        'languages' => $languages,
-        'fields' => $fields,
-        'extraFields' => $extraFields,
-        'questions' => $onlyQuestions,
-        'locale' => session('locale'),
-        'utm' => session('utm'),
-        'localeUrl' => session('localeUrl'),
-        'result' => $request->session()->has('result') ? session('result') : null,
-    ]);
+		'tool' => $tool,
+		'languages' => $languages,
+		'fields' => $fields,
+		'extraFields' => $extraFields,
+		'questions' => $onlyQuestions,
+		'locale' => session('locale'),
+		'utm' => session('utm'),
+		'localeUrl' => session('localeUrl'),
+		'result' => $request->session()->has('result') ? session('result') : null,
+	]);
 
 	return view($view, compact('tool','return_visitor','class'));
 }
@@ -384,7 +384,7 @@ public function savePage(Request $request, $subdomain, $section=false, $page=fal
 				$sectionGraph->addColumns([
 					['string', $graph['label']],
 					['number', 'Value',$format ? $format: null],
-					]);
+				]);
 				$sectionGraph->addRoleColumn('string', 'style');
 				$sectionGraph->addRoleColumn('string', 'annotation');
 
@@ -430,7 +430,6 @@ public function savePage(Request $request, $subdomain, $section=false, $page=fal
 public function getComplete(Request $request)
 {
 	$this->loadQuestions();
-	//dd($this->quiz);
 	$this->calcResults();
 	//dd(session('result'));
 	$currentLocal = App::getLocale();
@@ -509,7 +508,7 @@ public function getComplete(Request $request)
 		$completeGraph->addColumns([
 			['string', $graph['label']],
 			['number', 'Value',$format ? $format: null],
-			]);
+		]);
 		$completeGraph->addRoleColumn('string', 'style');
 		$completeGraph->addRoleColumn('string', 'annotation');
 
@@ -602,7 +601,7 @@ public function postComplete(SubmitAssessmentsRequest $request)
 			$assessment->code = session('utm');
 			$assessment->save();
 			$trackerHit = $tracker->trackerHits()->create([
-			    'type' => 'completion',
+				'type' => 'completion',
 			]);
 		}
 	}
@@ -614,67 +613,72 @@ public function postComplete(SubmitAssessmentsRequest $request)
 	$eloqua = config('baseline_'.session('product.id').'.overall.eloqua',false);
 	if($eloqua){ //!App::isLocal() && 
 	//send guzzle request
-	    $url = $eloqua['url'];
+		$url = $eloqua['url'];
 
-	    foreach ($eloqua['fields'] as $fieldKey => $settings) {
-	    	switch ($settings['type']) {
-	    		case 'locale':
-	    			$query[$fieldKey] = $currentLocal;
-	    			break;
-	    		case 'field':
-	    			$query[$fieldKey] = $request->input($settings['name']);
-	    			break;
-	    		case 'hidden':
-	    			$query[$fieldKey] = $settings['value'];
-	    			break;
-	    		case 'report':
-	    			$query[$fieldKey] = session('url').'/'.session('localeUrl').'/download/'.$assessment->id;
-	    			break;
-	    		case 'question':
-	    			$selected = session('questions.'.$settings['questions'][0].'.selected');
-	    			$val = explode('|', $selected);
-    				$val = $val[1];
-	    			$query[$fieldKey] = $val;
-	    			break;
-	    		case 'questionlabel':
-	    			$selected = session('questions.'.$settings['questions'][0].'.selected');
-	    			$label = explode('|', $selected);
-    				$label = $label[0];
-	    			$query[$fieldKey] = $label;
-	    			break;
-	    		case 'calculation':
-	    			$results = [];
-	    			foreach ($settings['questions'] as $key => $question) {
-	    				$selected = session('questions.'.$question.'.selected');
-	    				$val = explode('|', $selected);
-    					$val = $val[1];
-    					$results[]=$val;
-	    			}
-	    			$answer = 0;
-	    			switch ($settings['formula']) {
-	    				case 'multiply':
-	    					$answer = array_product($results);
-	    					break;
-	    				case 'add':
-	    					$answer = array_sum($results);
-	    					break;
-	    			}
-	    			$query[$fieldKey] = $answer;
-	    			break;
-	    	}
-	    }
-	    if($request->session()->has('queryparam')){
+		foreach ($eloqua['fields'] as $fieldKey => $settings) {
+			switch ($settings['type']) {
+				case 'locale':
+				$query[$fieldKey] = $currentLocal;
+				break;
+				case 'field':
+				$query[$fieldKey] = $request->input($settings['name']);
+				break;
+				case 'hidden':
+				$query[$fieldKey] = $settings['value'];
+				break;
+				case 'report':
+				$query[$fieldKey] = session('url').'/'.session('localeUrl').'/download/'.$assessment->id;
+				break;
+				case 'question':
+				$selected = session('questions.'.$settings['questions'][0].'.selected');
+				$val = explode('|', $selected);
+				$val = $val[1];
+				$query[$fieldKey] = $val;
+				break;
+				case 'questionlabel':
+				$selected = session('questions.'.$settings['questions'][0].'.selected');
+				$label = explode('|', $selected);
+				$label = $label[0];
+				$query[$fieldKey] = $label;
+				break;
+				case 'calculation':
+				$results = [];
+				foreach ($settings['questions'] as $key => $question) {
+					$selected = session('questions.'.$question.'.selected');
+					$val = explode('|', $selected);
+					$val = $val[1];
+					$results[]=$val;
+				}
+				$answer = 0;
+				switch ($settings['formula']) {
+					case 'multiply':
+					$answer = array_product($results);
+					break;
+					case 'add':
+					$answer = array_sum($results);
+					break;
+				}
+				$query[$fieldKey] = $answer;
+				break;
+			}
+		}
+		if($request->session()->has('queryparam')){
 			foreach (session('queryparam') as $key => $value) {
-		    	$query[$key] = $value;
-		    }
+				$query[$key] = $value;
+			}
 		}
 
-	    $this->dispatch(new SendEloquaRequest($url, $query));
-}
+		$this->dispatch(new SendEloquaRequest($url, $query));
+	}
 	$subject = trans(session('product.alias').'.email.subject');
 	$assessment->uuid = (string)$assessment->uuid;
+	$inline = false;
+	if (Config::has('baseline_'.session('product.id').'.overall.notifications.inline_report')){
+		$inline = config('baseline_'.session('product.id').'.overall.notifications.inline_report');
+	}
 	$viewData = [
 		'assessment'=>$assessment,
+		'inline'=>$inline,
 	];
 	$data['html'] =  View::make('emails.download', $viewData)->render();
 
@@ -732,8 +736,8 @@ public function postComplete(SubmitAssessmentsRequest $request)
 		function($message)  use ($emails, $subject){
 			$message->from('notifications@mg.idcready.net', 'IDC Notifications');
 			$message->to($emails)->subject($subject);
-	});
-        
+		});
+
 	$vars = array(
 		'pagetitle' => trans(session('product.alias').'.title'),
 		'title' => trans(session('product.alias').'.title'),
@@ -743,15 +747,15 @@ public function postComplete(SubmitAssessmentsRequest $request)
 		'tweet' => config('baseline_'.session('product.id').'.overall.tweet') ? trans(session('product.alias').'.complete_tweet',['result'=>trans(session('product.alias').'.'.$this->howfit['overall']['rating'])]):false,
 		'class' => 'trans silverStone',
 		'script' => ['
-			ga(\'send\', \'event\', \'Assessments\', \''.session('utm').'\');
+		ga(\'send\', \'event\', \'Assessments\', \''.session('utm').'\');
 		'],
 		'utm' => session('utm'),
 		'quiz' => $this->quiz
 	);
 	JavaScript::put([
-        'locale' => session('locale'),
-        'tool' => $request->get('product'),
-    ]);
+		'locale' => session('locale'),
+		'tool' => $request->get('product'),
+	]);
         /*if(Cookie::has('quiz_progress')){
             $progress_id = Cookie::get('quiz_progress');
             $progress = Progress::find($progress_id);
@@ -760,31 +764,43 @@ public function postComplete(SubmitAssessmentsRequest $request)
         $cookie = Cookie::forget('quiz_progress');*/
         
 	//return View::make('thankyou',$vars)->withCookie($cookie);
-		return View::make('tool.'.session('template').'.thankyou',$vars);
+        return View::make('tool.'.session('template').'.thankyou',$vars);
     }
 
     public function getDownload(Request $request,$subdomain,$uuid){
-    	$assessment = Assessment::where('uuid', $uuid)->firstOrFail();
-    	$assessment->update(['fetched' => 1]);
-    	$filename = $assessment->id.'_'.str_slug($assessment->fname.'_'.$assessment->lname.'_'.$assessment->tool->title.'_Assessment', '-').'.pdf';
-    	$downloadName = str_slug($assessment->id.'-'.session('product.title').'-report', '-').'.pdf';
-    	if($assessment->tool_id==session('product.id')){
-    		if(file_exists(storage_path().'/reports/'.$filename)){
-    			$headers = array(
-		    		'Content-Type: application/pdf',
-		    		);
-		    	return response()->download(storage_path().'/reports/'.$filename, $downloadName, $headers);
-    		}else{
-    			$request->session()->put('questions', $assessment->quiz);
-    			$request->session()->put('result', $assessment->result);
+    	$inline = $request->has('browser') && $request->input('browser')!=false ? true : false;
+    	$update = $request->has('update') && $request->input('update')==false ? false : true;
 
-    			$reportName = str_slug($assessment->fname.'_'.$assessment->lname.'_'.session('product.title').'_Assessment', '-');
-				$this->wkhtml($assessment->id,$reportName);
-				$headers = array(
-		    		'Content-Type: application/pdf',
-		    	);
-		    	return response()->download(storage_path().'/reports/'.$filename, $downloadName, $headers);
+    	$assessment = Assessment::where('uuid', $uuid)->firstOrFail();
+    	$reportName = str_slug($assessment->fname.'_'.$assessment->lname.'_'.session('product.title').'_Assessment', '-');
+    	if($update){
+    		$assessment->update(['fetched' => 1]);
+    	}
+    	
+    	if($assessment->tool_id==session('product.id')){
+    		if(!$inline){
+    			$filename = $assessment->id.'_'.str_slug($assessment->fname.'_'.$assessment->lname.'_'.$assessment->tool->title.'_Assessment', '-').'.pdf';
+    			$downloadName = str_slug($assessment->id.'-'.session('product.title').'-report', '-').'.pdf';
+
+    			if(file_exists(storage_path().'/reports/'.$filename)){
+    				$headers = array(
+    					'Content-Type: application/pdf',
+    				);
+    				return response()->download(storage_path().'/reports/'.$filename, $downloadName, $headers);
+    			}else{
+    				$request->session()->put('questions', $assessment->quiz);
+    				$request->session()->put('result', $assessment->result);
+
+    				$this->wkhtml($assessment->id,$reportName);
+    				$headers = array(
+    					'Content-Type: application/pdf',
+    				);
+    				return response()->download(storage_path().'/reports/'.$filename, $downloadName, $headers);
+    			}
+    		}else{
+    			return $this->wkhtml($assessment->id,$reportName,$inline);
     		}
+
     	}else{
     		Log::error("Report does not exist for tool id ".session('product.id')." http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
     		abort(404, 'The page you requested does not exist');
@@ -796,11 +812,11 @@ public function postComplete(SubmitAssessmentsRequest $request)
     	
     	if($assessment->tool_id==session('product.id')){
     		$request->session()->put('questions', $assessment->quiz);
-			$request->session()->put('result', $assessment->result);
+    		$request->session()->put('result', $assessment->result);
 
-			$reportName = str_slug($assessment->fname.'_'.$assessment->lname.'_'.session('product.title').'_Assessment', '-');
-			$view = $this->wkhtml($assessment->id,$reportName, 'html');
-			return $view;
+    		$reportName = str_slug($assessment->fname.'_'.$assessment->lname.'_'.session('product.title').'_Assessment', '-');
+    		$view = $this->wkhtml($assessment->id,$reportName, 'html');
+    		return $view;
     	}else{
     		Log::error("Report does not exist for tool id ".session('product.id')." http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
     		abort(404, 'The page you requested does not exist');
@@ -819,7 +835,7 @@ public function postComplete(SubmitAssessmentsRequest $request)
 
     	$headers = array(
     		'Content-Type: application/pdf',
-    		);
+    	);
     	return response()->download($file, $filename, $headers);
     }
     public function getCalcResults($section=false){
@@ -835,49 +851,49 @@ public function postComplete(SubmitAssessmentsRequest $request)
     	if($section!==false){
     		foreach ($this->quiz[$section]['pages'] as $page => $props) {
     			if(!isset($this->quiz[$section]['ignore']) || $this->quiz[$section]['ignore']==false){
-	    			foreach ($props['questions'] as $q => $details) {
+    				foreach ($props['questions'] as $q => $details) {
 	    				if(!isset($details['ignore']) || $details['ignore']==false ){ // ignore answer
 	    					if(!isset($details['selected'])){
 	    						dd($details);
 	    					}
-		    				if(($details['type']=='checkbox' || $details['type']=='groupradio' || $details['type']=='slider') && is_array($details['selected'])){
-		    					if(isset($details['calc'])){
-		    						if($details['calc']['type']=='average'){
-		    							$ave = [];
-		    							foreach ($details['selected'] as $selected) {
-		    								$selected = explode('|', $selected);
-		    								$selected = $selected[1];
-		    								$ave[]=$selected;
-		    							}
-		    							$val = array_sum($ave) / count($ave);
-		    						}elseif($details['calc']['type']=='normalize'){
-		    							$norm = 0;
-		    							foreach ($details['selected'] as $selected) {
-		    								$selected = explode('|', $selected);
-		    								$selected = $selected[1];
-		    								$norm+=$selected;
-		    							}
-		    							$val = ($norm/$details['calc']['value'])*count($details['selected']);
-		    						}
-		    					}else{
-		    						$valHold = 0;
-		    						foreach ($details['selected'] as $selected) {
-		    							$selected = explode('|', $selected);
-		    							$selected = $selected[1];
-		    							$valHold+=$selected;
-		    						}
-		    						$val = $valHold;
-		    					}
-		    				}else{
-		    					$val = explode('|', $details['selected']);
-		    					$val = $val[1];
-		    				}
-		    				if (isset($result[$section]['score'])){
-		    					$result[$section]['score'] += $val;
-		    				} else {
-		    					$result[$section]['score'] = $val;
-		    				}
-		    			}
+	    					if(($details['type']=='checkbox' || $details['type']=='groupradio' || $details['type']=='slider') && is_array($details['selected'])){
+	    						if(isset($details['calc'])){
+	    							if($details['calc']['type']=='average'){
+	    								$ave = [];
+	    								foreach ($details['selected'] as $selected) {
+	    									$selected = explode('|', $selected);
+	    									$selected = $selected[1];
+	    									$ave[]=$selected;
+	    								}
+	    								$val = array_sum($ave) / count($ave);
+	    							}elseif($details['calc']['type']=='normalize'){
+	    								$norm = 0;
+	    								foreach ($details['selected'] as $selected) {
+	    									$selected = explode('|', $selected);
+	    									$selected = $selected[1];
+	    									$norm+=$selected;
+	    								}
+	    								$val = ($norm/$details['calc']['value'])*count($details['selected']);
+	    							}
+	    						}else{
+	    							$valHold = 0;
+	    							foreach ($details['selected'] as $selected) {
+	    								$selected = explode('|', $selected);
+	    								$selected = $selected[1];
+	    								$valHold+=$selected;
+	    							}
+	    							$val = $valHold;
+	    						}
+	    					}else{
+	    						$val = explode('|', $details['selected']);
+	    						$val = $val[1];
+	    					}
+	    					if (isset($result[$section]['score'])){
+	    						$result[$section]['score'] += $val;
+	    					} else {
+	    						$result[$section]['score'] = $val;
+	    					}
+	    				}
 	    			}
 	    			foreach ($this->baseline[$section]['types'] as $rating => $limits) {
 	    				if($result[$section]['score']>=$limits['low'] && $result[$section]['score']<=$limits['high']){
@@ -886,82 +902,82 @@ public function postComplete(SubmitAssessmentsRequest $request)
 	    				}
 	    			}
 	    		}
+	    	}
+	    	foreach ($this->baseline['overall']['types'] as $rating => $limits) {
+	    		if($result['overall']['score']>=$limits['low'] && $result['overall']['score']<=$limits['high']){
+	    			$result['overall']['rating'] = $rating;
+	    		}
+	    	}
+	    }else{
+	    	foreach ($this->quiz as $key => $value) {
+	    		if($key!=='screeners' && (!isset($value['ignore']) || $value['ignore']==false)){
+	    			if (!is_array($value['pages']) && !is_object($value['pages'])) {
+	    				Log::info('Section '.$key.' pages', $value['pages']);
+	    				Log::info('Quiz', $this->quiz);
+	    				abort(500, 'An internal error has occured, we have documented it and will correct it prompty. ');
+	    			}
+	    			foreach ($value['pages'] as $page => $props) {
+	    				foreach ($props['questions'] as $q => $details) {
+    						if(!isset($details['ignore']) || $details['ignore']==false ){ // ignore answer
+    							if(($details['type']=='checkbox' || $details['type']=='groupradio' || $details['type']=='slider' || $details['type']=='groupbutton') && is_array($details['selected'])){
+    								if(isset($details['calc'])){
+    									if($details['calc']['type']=='average'){
+    										$ave = [];
+    										foreach ($details['selected'] as $selected) {
+    											$selected = explode('|', $selected);
+    											$selected = $selected[1];
+    											$ave[]=$selected;
+    										}
+    										$val = array_sum($ave) / count($ave);
+    									}elseif($details['calc']['type']=='normalize'){
+    										$norm = 0;
+    										foreach ($details['selected'] as $selected) {
+    											$selected = explode('|', $selected);
+    											$selected = $selected[1];
+    											$norm+=$selected;
+    										}
+    										$val = ($norm/$details['calc']['value'])*count($details['selected']);
+    									}
+    								}else{
+    									$valHold = 0;
+    									foreach ($details['selected'] as $selected) {
+    										$selected = explode('|', $selected);
+    										$selected = $selected[1];
+    										$valHold+=$selected;
+    									}
+    									$val = $valHold;
+    								}
+    							}else{
+    								if(!isset($details['selected'])){
+    									dd($value['pages']);
+    								}
+    								$val = explode('|', $details['selected']);
+    								$val = $val[1];
+    							}
+	    						//round to 1 decimal place
+    							$val = round($val, 1, PHP_ROUND_HALF_UP);
+
+    							if (isset($result[$key]['score'])){
+    								$result[$key]['score'] += $val;
+    							} else {
+    								$result[$key]['score'] = $val;
+    							}
+    						}
+    					}
+    				}
+    				foreach ($this->baseline[$key]['types'] as $rating => $limits) {
+    					if($result[$key]['score']>=$limits['low'] && $result[$key]['score']<=$limits['high']){
+    						$result[$key]['rating'] = $rating;
+    						$result['overall']['score'] += $result[$key]['score'];
+    					}
+    				}
+    			}
     		}
     		foreach ($this->baseline['overall']['types'] as $rating => $limits) {
     			if($result['overall']['score']>=$limits['low'] && $result['overall']['score']<=$limits['high']){
     				$result['overall']['rating'] = $rating;
     			}
     		}
-    	}else{
-    		foreach ($this->quiz as $key => $value) {
-    			if($key!=='screeners' && (!isset($value['ignore']) || $value['ignore']==false)){
-					if (!is_array($value['pages']) && !is_object($value['pages'])) {
-						Log::info('Section '.$key.' pages', $value['pages']);
-						Log::info('Quiz', $this->quiz);
-						abort(500, 'An internal error has occured, we have documented it and will correct it prompty. ');
-					}
-    				foreach ($value['pages'] as $page => $props) {
-    					foreach ($props['questions'] as $q => $details) {
-    						if(!isset($details['ignore']) || $details['ignore']==false ){ // ignore answer
-	    						if(($details['type']=='checkbox' || $details['type']=='groupradio' || $details['type']=='slider' || $details['type']=='groupbutton') && is_array($details['selected'])){
-	    							if(isset($details['calc'])){
-	    								if($details['calc']['type']=='average'){
-	    									$ave = [];
-	    									foreach ($details['selected'] as $selected) {
-	    										$selected = explode('|', $selected);
-	    										$selected = $selected[1];
-	    										$ave[]=$selected;
-	    									}
-	    									$val = array_sum($ave) / count($ave);
-	    								}elseif($details['calc']['type']=='normalize'){
-	    									$norm = 0;
-	    									foreach ($details['selected'] as $selected) {
-	    										$selected = explode('|', $selected);
-	    										$selected = $selected[1];
-	    										$norm+=$selected;
-	    									}
-	    									$val = ($norm/$details['calc']['value'])*count($details['selected']);
-	    								}
-	    							}else{
-	    								$valHold = 0;
-	    								foreach ($details['selected'] as $selected) {
-	    									$selected = explode('|', $selected);
-	    									$selected = $selected[1];
-	    									$valHold+=$selected;
-	    								}
-	    								$val = $valHold;
-	    							}
-	    						}else{
-	    							if(!isset($details['selected'])){
-	    								dd($value['pages']);
-	    							}
-	    							$val = explode('|', $details['selected']);
-	    							$val = $val[1];
-	    						}
-	    						//round to 1 decimal place
-	    						$val = round($val, 1, PHP_ROUND_HALF_UP);
-
-	    						if (isset($result[$key]['score'])){
-	    							$result[$key]['score'] += $val;
-	    						} else {
-	    							$result[$key]['score'] = $val;
-	    						}
-	    					}
-    					}
-    				}
-    				foreach ($this->baseline[$key]['types'] as $rating => $limits) {
-						if($result[$key]['score']>=$limits['low'] && $result[$key]['score']<=$limits['high']){
-							$result[$key]['rating'] = $rating;
-							$result['overall']['score'] += $result[$key]['score'];
-						}
-					}
-    			}
-    		}
-    		foreach ($this->baseline['overall']['types'] as $rating => $limits) {
-				if($result['overall']['score']>=$limits['low'] && $result['overall']['score']<=$limits['high']){
-					$result['overall']['rating'] = $rating;
-				}
-			}
     	}
 
     	session(['result' => $result]);
@@ -989,24 +1005,24 @@ public function postComplete(SubmitAssessmentsRequest $request)
     			$optvals = [];
     			$optoptvals = [];
     			foreach ($question as $key => $option) {
-	    			if(isset($option['options'])){
-						foreach ($option['options'] as $optoptkey => $optopt) {
-							$optoptvals[]=$optopt['value'];
-						}
-					}else{
-						$optvals[]=$option['value'];
-					}
+    				if(isset($option['options'])){
+    					foreach ($option['options'] as $optoptkey => $optopt) {
+    						$optoptvals[]=$optopt['value'];
+    					}
+    				}else{
+    					$optvals[]=$option['value'];
+    				}
 
-					if(!empty($optvals)){
-						$min = min($optvals);
-						$max = max($optvals);
-		    		}else{
-		    			$min+= min($optoptvals);
-						$max+= max($optoptvals);
-		    		}
-				}
-				$sections[$seckey][$qkey]['min'] = $min;
-				$sections[$seckey][$qkey]['max'] = $max;
+    				if(!empty($optvals)){
+    					$min = min($optvals);
+    					$max = max($optvals);
+    				}else{
+    					$min+= min($optoptvals);
+    					$max+= max($optoptvals);
+    				}
+    			}
+    			$sections[$seckey][$qkey]['min'] = $min;
+    			$sections[$seckey][$qkey]['max'] = $max;
     		}
     	}
 
@@ -1040,11 +1056,11 @@ public function postComplete(SubmitAssessmentsRequest $request)
     		$from = Carbon::parse($request->input('from'));
     		$to = $request->has('to') ? Carbon::parse($request->input('to')) : Carbon::now()->addYear();
     		$tool->load(['assessments' => function ($query) use($from,$to) {
-			    $query->whereDate('created_at','>=',$from)
-			    ->whereDate('created_at','<=',$to);
-			}]);
+    			$query->whereDate('created_at','>=',$from)
+    			->whereDate('created_at','<=',$to);
+    		}]);
     	}else{
-			$tool->load('assessments');
+    		$tool->load('assessments');
     	}
     	//dd($tool->assessments);
 
@@ -1070,58 +1086,58 @@ public function postComplete(SubmitAssessmentsRequest $request)
 					$currentLocal = $language;
 				}
 				
-			    foreach ($eloqua['fields'] as $fieldKey => $settings) {
-			    	switch ($settings['type']) {
-			    		case 'locale':
-			    			if(strpos($assessment['rating'], 'Étape')!==false){
-			    				$currentLocal = 'fr';
-			    			}elseif(strpos($assessment['rating'], 'Stufe')!==false){
-			    				$currentLocal = 'de';
-			    			}
-			    			$query[$fieldKey] = $currentLocal;
-			    			break;
-			    		case 'field':
-			    			$query[$fieldKey] = $assessment[$settings['name']];
-			    			break;
-			    		case 'hidden':
-			    			$query[$fieldKey] = $settings['value'];
-			    			break;
-			    		case 'report':
-			    			$query[$fieldKey] = session('url').'/'.session('localeUrl').'download/'.$assessment->id;
-			    			break;
-			    		case 'question':
-			    			$selected = array_get($assessment->quiz, $settings['questions'][0].'.selected');
-			    			$val = explode('|', $selected);
-		    				$val = $val[1];
-			    			$query[$fieldKey] = $val;
-			    			break;
-			    		case 'questionlabel':
-			    			$selected = array_get($assessment->quiz, $settings['questions'][0].'.selected');
-			    			$label = explode('|', $selected);
-		    				$label = $label[0];
-			    			$query[$fieldKey] = $label;
-			    			break;
-			    		case 'calculation':
-			    			$results = [];
-			    			foreach ($settings['questions'] as $key => $question) {
-			    				$selected = array_get($assessment->quiz, $question.'.selected');
-			    				$val = explode('|', $selected);
-		    					$val = $val[1];
-		    					$results[]=$val;
-			    			}
-			    			$answer = 0;
-			    			switch ($settings['formula']) {
-			    				case 'multiply':
-			    					$answer = array_product($results);
-			    					break;
-			    				case 'add':
-			    					$answer = array_sum($results);
-			    					break;
-			    			}
-			    			$query[$fieldKey] = $answer;
-			    			break;
-			    	}
-			    }
+				foreach ($eloqua['fields'] as $fieldKey => $settings) {
+					switch ($settings['type']) {
+						case 'locale':
+						if(strpos($assessment['rating'], 'Étape')!==false){
+							$currentLocal = 'fr';
+						}elseif(strpos($assessment['rating'], 'Stufe')!==false){
+							$currentLocal = 'de';
+						}
+						$query[$fieldKey] = $currentLocal;
+						break;
+						case 'field':
+						$query[$fieldKey] = $assessment[$settings['name']];
+						break;
+						case 'hidden':
+						$query[$fieldKey] = $settings['value'];
+						break;
+						case 'report':
+						$query[$fieldKey] = session('url').'/'.session('localeUrl').'download/'.$assessment->id;
+						break;
+						case 'question':
+						$selected = array_get($assessment->quiz, $settings['questions'][0].'.selected');
+						$val = explode('|', $selected);
+						$val = $val[1];
+						$query[$fieldKey] = $val;
+						break;
+						case 'questionlabel':
+						$selected = array_get($assessment->quiz, $settings['questions'][0].'.selected');
+						$label = explode('|', $selected);
+						$label = $label[0];
+						$query[$fieldKey] = $label;
+						break;
+						case 'calculation':
+						$results = [];
+						foreach ($settings['questions'] as $key => $question) {
+							$selected = array_get($assessment->quiz, $question.'.selected');
+							$val = explode('|', $selected);
+							$val = $val[1];
+							$results[]=$val;
+						}
+						$answer = 0;
+						switch ($settings['formula']) {
+							case 'multiply':
+							$answer = array_product($results);
+							break;
+							case 'add':
+							$answer = array_sum($results);
+							break;
+						}
+						$query[$fieldKey] = $answer;
+						break;
+					}
+				}
 			    /*if($request->session()->has('queryparam')){
 					foreach (session('queryparam') as $key => $value) {
 				    	$query[$key] = $value;
@@ -1130,89 +1146,89 @@ public function postComplete(SubmitAssessmentsRequest $request)
 
 				//dd($query);
 				$queries[] = $query;
-			    $this->dispatch(new SendEloquaRequest($url, $query));
+				$this->dispatch(new SendEloquaRequest($url, $query));
 			}
 			return 'Dispatched '.$queries->count().' eloqua requests to the queue';
 		}
-    }
+	}
 
-    public function generateuuid(Request $request){
-    	$assessments = Assessment::all();
+	public function generateuuid(Request $request){
+		$assessments = Assessment::all();
 		$completed = 0;
-    	foreach ($assessments as $assessment) {
-    		
+		foreach ($assessments as $assessment) {
+
     		//if(is_null($assessment->uuid)){
-    			$assessment->uuid = Uuid::generate()->string;
-				$assessment->save();
-				$completed++;
+			$assessment->uuid = Uuid::generate()->string;
+			$assessment->save();
+			$completed++;
     		//}
 		}
 		echo "Updated $completed Assessments";
-    }
+	}
 
-    public function saveAssessmentSession(Request $request){
-    	Session::put('answers.'.$request->question, $request->answer);
-    	foreach (session('questions') as $sec => $questions) {
-    		foreach ($questions['pages'] as $page => $options) {
-    			foreach ($options['questions'] as $qKey => $question) {
-    				if($qKey == $request->question){
-    					$request->session()->put('questions.'.$sec.'.pages.'.$page.'.questions.'.$qKey.'.selected', $request->answer);
-    					break 3;
-    				}
-    			}
-    		}
-    	}
-    	return response()->json('success');
-    }
+	public function saveAssessmentSession(Request $request){
+		Session::put('answers.'.$request->question, $request->answer);
+		foreach (session('questions') as $sec => $questions) {
+			foreach ($questions['pages'] as $page => $options) {
+				foreach ($options['questions'] as $qKey => $question) {
+					if($qKey == $request->question){
+						$request->session()->put('questions.'.$sec.'.pages.'.$page.'.questions.'.$qKey.'.selected', $request->answer);
+						break 3;
+					}
+				}
+			}
+		}
+		return response()->json('success');
+	}
 
-    public function completeAsessment(Request $request){
-    	$this->loadQuestions();
-    	$this->baseline = config('baseline'.'_'.session('product.id'));
-    	$result = array();
-    	$result['overall']['score'] = 0;
+	public function completeAsessment(Request $request){
+		$this->loadQuestions();
+		$this->baseline = config('baseline'.'_'.session('product.id'));
+		$result = array();
+		$result['overall']['score'] = 0;
 
 		foreach ($this->quiz as $key => $value) {
 			if($key!=='screeners' && (!isset($value['ignore']) || $value['ignore']==false)){
 				foreach ($value['pages'] as $page => $props) {
 					foreach ($props['questions'] as $q => $details) {
 						if(!isset($details['ignore']) || $details['ignore']==false ){ // ignore answer
-    						if(($details['type']=='groupSlider' || $details['type']=='groupbutton') && is_array($details['selected'])){
-    							if(isset($details['calc'])){
-    								if($details['calc']['type']=='average'){
-    									$ave = [];
-    									foreach ($details['selected'] as $selected) {
-    										$ave[]=$selected['value'];
-    									}
-    									$val = array_sum($ave) / count($ave);
-    								}elseif($details['calc']['type']=='normalize'){
-    									$norm = 0;
-    									foreach ($details['selected'] as $selected) {
-    										$norm+=$selected['value'];
-    									}
-    									$val = ($norm/$details['calc']['value'])*count($details['selected']);
-    								}
-    							}else{
-    								$valHold = 0;
-    								foreach ($details['selected'] as $selected) {
-    									$valHold+=$selected['value'];
-    								}
-    								$val = $valHold;
-    							}
-    						}else{
-    							if(!isset($details['selected'])){
-    								dd($value['pages']);
-    							}
-    							$val = $details['selected'][0]['value'];
-    						}
+							if(($details['type']=='groupSlider' || $details['type']=='groupbutton') && is_array($details['selected'])){
+								if(isset($details['calc'])){
+									if($details['calc']['type']=='average'){
+										$ave = [];
+										foreach ($details['selected'] as $selected) {
+											$ave[]=$selected['value'];
+										}
+										$val = array_sum($ave) / count($ave);
+									}elseif($details['calc']['type']=='normalize'){
+										$norm = 0;
+										foreach ($details['selected'] as $selected) {
+											$norm+=$selected['value'];
+										}
+										$val = ($norm/$details['calc']['value'])*count($details['selected']);
+									}
+								}else{
+									$valHold = 0;
+									foreach ($details['selected'] as $selected) {
+										$valHold+=$selected['value'];
+									}
+									$val = $valHold;
+								}
+							}else{
+								if(!isset($details['selected'])){
+									dd($value['pages']);
+								}
+								$val = $details['selected'][0]['value'];
+							}
     						//round to 1 decimal place
-    						$val = round($val, 1, PHP_ROUND_HALF_UP);
+							$val = round($val, 1, PHP_ROUND_HALF_UP);
 
-    						if (isset($result[$key]['score'])){
-    							$result[$key]['score'] += $val;
-    						} else {
-    							$result[$key]['score'] = $val;
-    						}
-    					}
+							if (isset($result[$key]['score'])){
+								$result[$key]['score'] += $val;
+							} else {
+								$result[$key]['score'] = $val;
+							}
+						}
 					}
 				}
 				foreach ($this->baseline[$key]['types'] as $rating => $limits) {
@@ -1229,15 +1245,15 @@ public function postComplete(SubmitAssessmentsRequest $request)
 			}
 		}
 
-    	session(['result' => $result]);
-    	session(['baseline' => $this->baseline]);
-    	$this->result = $result;
+		session(['result' => $result]);
+		session(['baseline' => $this->baseline]);
+		$this->result = $result;
 
-    	$data = [
-    		'query'=>'success',
-    		'result'=>$result,
-    	];
+		$data = [
+			'query'=>'success',
+			'result'=>$result,
+		];
 
-    	return response()->json($data);
-    }
+		return response()->json($data);
+	}
 }

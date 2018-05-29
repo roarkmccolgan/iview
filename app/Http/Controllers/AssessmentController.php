@@ -226,7 +226,7 @@ class AssessmentController extends Controller {
 	    		if($item->lang){
 					$itemLang = $item->lang == 'en' ? '/' : '/'.$item->lang;
 	    		}
-	    		$item->report = session('url').$itemLang.'/download/'.$item->uuid;
+	    		$item->report = session('url').$itemLang.'/download/'.$item->uuid.'?update=false';
 			    return collect($item);
 			});
 			$chosenColumns[] = 'quiz';

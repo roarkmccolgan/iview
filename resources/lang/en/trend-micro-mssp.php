@@ -51,16 +51,17 @@ return array(
     'complete_body' => '
         Your custom report will arrive in your inbox soon.<br/>
         Please check in your junk folder if you don\'t receive it within 5 minutes.<br/><br/>
-        <a class="btn btn--primary" target="_blank" href="http://trendmicro.com">
+        <a class="text-trend-red" target="_blank" href="http://trendmicro.com">
             Click here for more information
         </a>',
     'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @ntt. Interested? ',// http://bit.ly/2gslXEh
     'email'=>[
-        'subject' => 'NTT Communications Next Generation WAN Advisor',
+        'subject' => 'Trend Micro MSP Readiness Tool by IDC',
         'hi' => 'Hi :Fname',
-        'body' => 'As promised, here\'s a link to download your NTT Communications Next Generation WAN Advisor Report. This breaks down your results by category and provides you with actionable recommendations.',
-        'link' => 'Download Report',
-        'extra' => 'Once you\'ve read the report why not visit NTT Communications <a href="http://www.ntt.com/en/services/network/software-defined-network.html" style="color:#054683">SD-WAN content hub</a>',
+        'body' => 'As promised, here\'s a link to download your Trend Micro MSP Readiness Report. This breaks down your results by category and provides you with actionable recommendations.',
+        'link' => 'Download PDF Report',
+        'link_inline' => 'View Report in your browser',
+        'extra' => 'Once you\'ve read the report why not visit Trend Micro <a href="https://www.trendmicro.com/en_dk/partners/managed-service-provider.html" style="color:#054683">Managed Service Providers</a>',
         'regards' => 'Regards',
         'team' => 'The IDC Team'
     ],

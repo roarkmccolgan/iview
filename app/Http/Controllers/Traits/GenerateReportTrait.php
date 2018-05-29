@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Traits;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Lang;
+use Illuminate\Support\Facades\View;
 use Lava;
 use PDF;
 
@@ -12,7 +13,7 @@ require_once base_path('vendor/goat1000/svggraph/SVGGraph.php');
 
 trait GenerateReportTrait {
 
-	public function wkhtml($assessment_id, $name, $type='pdf')
+	public function wkhtml($assessment_id, $name, $inline=false)
 	{
 		$chartSettings = [
 			'title' => null,
@@ -61,7 +62,7 @@ trait GenerateReportTrait {
 		];
 
 		$vars = [];
-		$vars['pdf'] = $type == 'pdf' ? true : false;
+		$vars['pdf'] = !$inline ? true : false;
 		$count = 0;
 		$locale = App::getLocale();
 		$region = 'na';
@@ -1134,17 +1135,29 @@ trait GenerateReportTrait {
 			$vars['sectionCopy'] = $customCopy;
 			
 		}elseif(session('product.id')==9) {
-			
 			$overallNumber = (int) filter_var(session('result.overall.rating'), FILTER_SANITIZE_NUMBER_INT);
 			$infrastructureNumber =  (int) filter_var(session('result.infrastructure.rating'), FILTER_SANITIZE_NUMBER_INT);
 			$intelligenceNumber =  (int) filter_var(session('result.intelligence.rating'), FILTER_SANITIZE_NUMBER_INT);
 			$operationsNumber =  (int) filter_var(session('result.operations.rating'), FILTER_SANITIZE_NUMBER_INT);		
-			
 
-			$vars['introduction'] = trans(session('product.alias').'.introduction',
+			$vars['introduction1'] = trans(session('product.alias').'.introduction1',
 				[
-					'result'=>trans(session('product.alias').'.'.session('result.overall.rating')),
-					'url'=>session('url'),
+					'result'=>trans(session('product.alias').'.'.session('result.overall.rating'))
+				]
+			);
+			$vars['introduction2'] = trans(session('product.alias').'.introduction2',
+				[
+					'url'=>session('url')
+				]
+			);
+			$vars['introduction3'] = trans(session('product.alias').'.introduction3');
+			$vars['introduction4'] = trans(session('product.alias').'.introduction4');
+			$vars['introduction5'] = trans(session('product.alias').'.introduction5');
+			$vars['introduction6'] = trans(session('product.alias').'.introduction6');
+			$vars['introduction7'] = trans(session('product.alias').'.introduction7');
+			$vars['introduction8'] = trans(session('product.alias').'.introduction8',
+				[
+					'url'=>session('url')
 				]
 			);
 
@@ -1152,37 +1165,51 @@ trait GenerateReportTrait {
 
 			//overall
 			$rating = session('result.overall.rating');
-			$customCopy.= trans(
+			$vars['overall'] = trans(
 				session('product.alias').'.overall'.$rating,
-				['url'=>session('url')]
+				[
+					'stage'=>trans(session('product.alias').'.'.$rating)
+				]
 			);
 
 			//Sales
 			$rating = session('result.sales.rating');
-			$customCopy.= trans(
+			$vars['sales'] = trans(
 				session('product.alias').'.sales'.$rating,
-				['url'=>session('url')]
+				[
+					'stage'=>trans(session('product.alias').'.'.$rating),
+					'url'=>session('url')
+				]
 			);
 
 			//Marketing
 			$rating = session('result.marketing.rating');
-			$customCopy.= trans(
+			$vars['marketing'] = trans(
 				session('product.alias').'.marketing'.$rating,
-				['url'=>session('url')]
+				[
+					'stage'=>trans(session('product.alias').'.'.$rating),
+					'url'=>session('url')
+				]
 			);
 			
 			//Services
 			$rating = session('result.services.rating');
-			$customCopy.= trans(
+			$vars['services'] = trans(
 				session('product.alias').'.services'.$rating,
-				['url'=>session('url')]
+				[
+					'stage'=>trans(session('product.alias').'.'.$rating),
+					'url'=>session('url')
+				]
 			);
 
 			//Security
 			$rating = session('result.security.rating');
-			$customCopy.= trans(
+			$vars['security'] = trans(
 				session('product.alias').'.security'.$rating,
-				['url'=>session('url')]
+				[
+					'stage'=>trans(session('product.alias').'.'.$rating),
+					'url'=>session('url')
+				]
 			);
 
 			$customCopy.= '<div class="spacer"></div>';
@@ -1359,7 +1386,7 @@ trait GenerateReportTrait {
 			$headerspacing = config('baseline_'.session('product.id').'.overall.report-settings.header-spacing');
 		}
 
-		if($type == 'pdf'){
+		if(!$inline){
 			$pdf = PDF::loadView('tool.'.session('template').'.report.report',$vars)
 			->setOption('margin-top', $margintop)
 			->setOption('margin-left', 0)
@@ -1467,7 +1494,6 @@ trait GenerateReportTrait {
 			}
 		}else{
 			$view = View::make('tool.'.session('template').'.report.report',$vars);
-			dd($view);
 			return $view;
 		}
 	}
