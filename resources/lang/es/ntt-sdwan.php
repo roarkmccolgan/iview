@@ -69,6 +69,17 @@ return array(
         'regards' => 'Atentamente',
         'team' => 'El equipo de IDC'
     ],
+    'email_apology'=>[
+        'subject' => 'NTT Communications Next Generation WAN Advisor',
+        'hi' => 'Estimado :Fname',
+        'body' => 'En relación al asesor de red WAN de próxima generación de NTT Communications que acaba de realizar:<br/><br/>
+            IDC ha detectado un problema que impide descargar correctamente su informe de evaluación. La incidencia ya está resuelta<br/>
+            Pulse en el siguiente enlace para acceder al informe personalizado.',
+        'link' => 'Descargar informe',
+        'extra' => 'Lamentamos las molestias causadas. En caso de que tenga alguna otra incidencia con respecto a esta herramienta de evaluación, no dude en ponerse en contacto conmigo directamente mandando un correo electrónico a <a href="mailto:abuss@idc.com" style="color:#054683">abuss@idc.com</a>',
+        'regards' => 'Saludos cordiales',
+        'team' => 'Andrew Buss<br/>Director de consultoría, IDC Europa'
+    ],
     'introduction' => '
         <h2 class="text-ntt-blue mb-2">INTRODUCCIÓN</h2>
         <p class="mb-2">Gracias por completar el asesor de red WAN de próxima generación de NTT, con la investigación y el análisis de IDC. A medida que las organizaciones implementan estrategias de transformación digital, se enfrentan cada vez más a requisitos de una red que alcance los resultados empresariales que intentan lograr. Por lo tanto, la transformación digital debería ir acompañada de la evolución de la red. </p>

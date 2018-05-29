@@ -767,6 +767,34 @@ public function postComplete(SubmitAssessmentsRequest $request)
         return View::make('tool.'.session('template').'.thankyou',$vars);
     }
 
+    public function sendApology(Request $request,$subdomain,$uuid){
+    	$inline = false;
+		$assessment = Assessment::where('uuid', $uuid)->firstOrFail();
+    	App::setLocale($assessment->lang);
+    	$subject = trans(session('product.alias').'.email_apology.subject');
+		$assessment->uuid = (string)$assessment->uuid;
+		
+		$newLocale = $assessment->lang=='en' || $assessment->lang=='' ? '' : $assessment->lang;
+		session(['locale'=>$newLocale]);
+		$viewData = [
+			'assessment'=>$assessment,
+			'inline'=>$inline,
+		];
+		$data['html'] =  View::make('emails.apology', $viewData)->render();
+
+		//send mail to user (and BCC if exists)
+		$bcc = ['kgaffney@idc.com','abuss@idc.com','nadamson@idc.com'];
+		Mail::queue('emails.echo', $data, function ($message) use ($assessment, $subject, $bcc) {
+			$message->from('notifications@mg.idcready.net', 'IDC Notifications');
+			$message->to($assessment['email'], $assessment['fname'].' '.$assessment['lname']);
+			if(!empty($bcc)){
+				$message->bcc($bcc);
+			}
+			$message->subject($subject);
+		});
+		return 'Success, apology sent to '.$assessment['email'];
+    }
+
     public function getDownload(Request $request,$subdomain,$uuid){
     	$inline = $request->has('browser') && $request->input('browser')!=false ? true : false;
     	$update = $request->has('update') && $request->input('update')==false ? false : true;

@@ -1477,8 +1477,6 @@ trait GenerateReportTrait {
 				//return $pdf->inline('invoice.pdf');
 				$pdf->save(storage_path().'/trend-micro-report-'.$timeStamp.'.pdf');
 
-
-
 				$merge = new \Nextek\LaraPdfMerger\PdfManage;
 				$locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
 

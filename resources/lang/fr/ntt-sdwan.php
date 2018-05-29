@@ -68,6 +68,17 @@ return array(
         'regards' => 'Cordialement',
         'team' => 'L\'équipe IDC'
     ],
+    'email_apology'=>[
+        'subject' => 'Outil de conseil pour un WAN de dernière génération, NTT Communications',
+        'hi' => 'Cher/chère :Fname',
+        'body' => 'Concernant l\'évaluation « un réseau WAN de nouvelle génération » de NTT Communications que vous avez récemment passée :<br/><br/>
+            IDC a détecté un problème qui vous empêchait de télécharger votre rapport d\'évaluation et a corrigé le problème.<br/>
+            Veuillez cliquer sur le lien ci-dessous pour télécharger à votre rapport :',
+        'link' => 'Télécharger le rapport',
+        'extra' => 'Nous nous excusons de la gêne occasionnée. Si vous avez d\'autres questions concernant l\'outil d\'évaluation, n\'hésitez pas à me contacter à <a href="mailto:abuss@idc.com" style="color:#054683">abuss@idc.com</a>',
+        'regards' => 'Cordialement',
+        'team' => 'Andrew Buss<br/>directeur conseil, IDC Europe.'
+    ],
     'introduction' => '
         <h2 class="text-ntt-blue mb-2">INTRODUCTION</h2>
         <p class="mb-2">Nous vous remercions d\'avoir répondu à l\'outil d\'évaluation WAN nouvelle génération NTT, dont l\'analyse a été effectuée par IDC. À l\'heure où les entreprises mettent en œuvre des stratégies de transformation numérique, elles doivent faire face à l\'accélération des exigences en matière de réseaux et à la nécessité d\'un réseau qui permet d\'atteindre les résultats opérationnels souhaités. La transformation numérique doit donc aller de pair avec d\'atteindre les résultats. </p>

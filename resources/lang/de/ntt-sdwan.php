@@ -68,6 +68,17 @@ return array(
         'regards' => 'Mit freundlichen Grüßen',
         'team' => 'Das IDC-Team'
     ],
+    'email_apology'=>[
+        'subject' => 'NTT Communications Next Generation WAN Advisor',
+        'hi' => 'Sehr geehrter :Fname',
+        'body' => 'im Hinblick auf die WAN-Beraterbewertung der nächsten Generation von NTT Communications, die Sie vor kurzem abgeschlossen haben, teilen wir Ihnen Folgendes mit:<br/><br/>
+            IDC hat ein Problem identifiziert, das den erfolgreichen Download Ihres Bewertungsberichts verhindert, und infolgedessen das Problem behoben.<br/>
+            Bitte klicken Sie auf den Link unten, um auf Ihren persönlichen Bericht zuzugreifen',
+        'link' => 'Bericht herunterladen',
+        'extra' => 'Wir entschuldigen uns für eventuell entstandene Unannehmlichkeiten. Falls Sie weitere Probleme in Bezug auf das Bewertungs-Tool haben sollten, setzen Sie sich bitte direkt mit mir in Verbindung, unter <a href="mailto:abuss@idc.com" style="color:#054683">abuss@idc.com</a>',
+        'regards' => 'Beste Grüße',
+        'team' => 'Andrew Buss<br/>Consulting Director, IDC Europe'
+    ],
     'introduction' => '
         <h2 class="text-ntt-blue mb-3">EINFÜHRUNG</h2>
         <p class="mb-2">Vielen Dank für den Abschluss des Next Generation WAN Advisors (der  NTT-Berater zu WAN der nächsten Generation) mit Forschung und Analysen von IDC. Während Unternehmen digitale Transformationsstrategien implementieren, stehen sie vor zunehmenden Netzwerkanforderungen und der Notwendigkeit eines Netzwerks, das die gewünschten geschäftlichen Ergebnisse unterstützt. Die digitale Transformation sollte daher mit der Netzwerkentwicklung einhergehen. </p>
