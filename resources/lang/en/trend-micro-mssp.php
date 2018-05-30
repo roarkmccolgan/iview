@@ -21,7 +21,7 @@ return array(
             This tool will help you discover how equipped your business is to take advantage of these, focusing on four key areas: sales, marketing, services and security.
         </p>
         <p class="mb-4">
-            Following a series of questions, you will receive a personalized report assessing where your organization currently is, as well as a bespoke action plan on how to take your MSSP to the next level.
+            Following a series of questions, you will receive a personalized report assessing where your organization currently is, as well as a bespoke action plan on how to take your managed security services business to the next the level.
         </p>',
     'startbut'=>'Let\'s Go!',
     
