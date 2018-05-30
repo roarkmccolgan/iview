@@ -1483,7 +1483,7 @@ trait GenerateReportTrait {
 				$merge->addPDF(storage_path().'/trend-micro_start'.$locale .'.pdf', 'all');
 				$merge->addPDF(storage_path().'/trend-micro-report-'.$timeStamp.'.pdf', 'all');
 
-				$merge->merge('file', storage_path().'/reports/trend-micro-report-'.$timeStamp.'.pdf', 'P');
+				$merge->merge('file', storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf', 'P');
 				if(File::exists(storage_path().'/trend-micro-report-'.$timeStamp.'.pdf')){
 					File::delete(storage_path().'/trend-micro-report-'.$timeStamp.'.pdf');
 				}
