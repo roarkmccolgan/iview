@@ -154,7 +154,7 @@ return array(
                         'name'=> 4,
                         'options'=>array(
                             array(
-                                'label'=>'We do not offer any support around our MSP offerings',
+                                'label'=>'We do not offer any support around our managed services offerings',
                                 'value'=>1.25,
                                 'checked'=>false,
                             ),

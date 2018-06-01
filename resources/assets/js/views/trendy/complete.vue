@@ -168,6 +168,7 @@ export default{
 				email: false,
 				tel: false,
 				company: false,
+				title: false,
 				country: false,
 				terms: false
 			},

@@ -21,7 +21,7 @@ class TrendMicroMSSPSeeder extends Seeder
         DB::table('tools')->insert([
             'id' => 9,
             'alias' => 'trend-micro-mssp',
-            'title' => 'IDC Managed Security Services Readiness Assessment',
+            'title' => 'IDC Managed Security Services Assessment',
             'sub_title' => 'Discover your readiness in becoming an MSSP',
             'company_id' => 10,
             'gapropertyid' => '174222101',

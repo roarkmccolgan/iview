@@ -11,7 +11,7 @@ return array(
     'change-langauge'=>'Change language',
     'download-now'=>'Download Now',
 
-    'title'=>'MSP Readiness Tool',
+    'title'=>'IDC Managed Security Services Assessment',
     'sub-title'=>'What do you need to do be a profitable and growing MSSP',
     'landing'=>'
         <p class="mb-2">
@@ -182,7 +182,7 @@ return array(
         <h2 class="leading-tight text-blue-dark mb-1">YOUR OVERALL PERFORMANCE</h2>
         <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 4</span>
         <p class="mb-2">Companies at Stage 4 have an embedded MSS business. Significant efforts have been made to transform the sales, marketing, and services organizations within the company, with increasing automation, repeatability, and growing profitability.</p>
-        <p class="mb-2">Now, the priority for these companies is to enhance and expand their MSS portfolio, innovate, and differentiate to establish market leadership./p>
+        <p class="mb-2">Now, the priority for these companies is to enhance and expand their MSS portfolio, innovate, and differentiate to establish market leadership.</p>
     ',
     'overallstage5'=>'
         <h2 class="leading-tight text-blue-dark mb-1">YOUR OVERALL PERFORMANCE</h2>
@@ -450,7 +450,7 @@ return array(
             <div class="mb-1 clearfix">
                 <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
                 <div class="w-5/6 float-left">
-                    Emphasize solution selling, i.e., tailoring MSSP solutions to customer segments and needs.
+                    Emphasize solution selling, i.e., tailoring managed services and solutions solutions to customer segments and needs.
                 </div>
             </div>
             <div class="mb-1 clearfix">
