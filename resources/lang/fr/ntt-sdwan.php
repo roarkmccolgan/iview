@@ -31,7 +31,8 @@ return array(
     'send'=>'We can send you the full results directly to your mailbox',
     'register'=>'Enregistrez-vous pour recevoir votre rapport personnalisé',
     'provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
-    'byreg'=>'En vous enregistrant avec IDC, vous acceptez notre <a href="https://ntt.idcready.net/privacy" target="_blank">politique de confidentialité</a> et celle de <a href="https://www.eu.ntt.com/en/Footer/privacy_and_cookie_policy.html" target="_blank">NTT Europe Ltd.</a>',
+
+    'byreg'=>'En vous enregistrant auprès d’IDC, vous acceptez la <a href="https://ntt.idcready.net/privacy" target="_blank">politique de confidentialité d’IDC</a> ainsi que la <a href="https://www.eu.ntt.com/en/Footer/privacy_and_cookie_policy.html" target="_blank">politique de confidentialité et d’utilisation des cookies</a> de NTT Europe Ltd.',
     'wait'=>'While you\'re waiting why not tweet your results and see how your colleagues measure up?',
     'twitterlink'=>'https://twitter.com/home?status=Is%20your%20business%20GDPR%20ready?%20http%3A//bit.ly/2AwihN4%20%23Symantec',
     'facebooklink'=>'https://www.facebook.com/sharer/sharer.php?u=http%3A//bit.ly/2AwihN4',
