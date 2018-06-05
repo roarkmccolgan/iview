@@ -597,7 +597,7 @@ return [
                 'dimensions'    => 'ga:date',
                 'sort'          => false,
                 'max-results'   => false,
-                'filters'       => 'ga:pagePath=@/quiz/complete',
+                'filters'       => 'ga:pagePath=@/quiz/complete,ga:pagePath=@/thankyou',
             ],
             'utm_views'=>[
                 'metrics'       => 'ga:users',
