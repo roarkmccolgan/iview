@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome": "^1.1.2",
-    "@fortawesome/fontawesome-pro-regular": "^5.0.4",
+    "@fortawesome/fontawesome-pro-regular": "^5.0.13",
     "@fortawesome/vue-fontawesome": "0.0.22",
     "ajv": "^6.2.1",
     "autotrack": "^2.4.1",

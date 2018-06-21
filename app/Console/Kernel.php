@@ -14,6 +14,7 @@ class Kernel extends ConsoleKernel
     protected $commands = [
         'App\Console\Commands\Inspire',
         'App\Console\Commands\UpdateTrackingViews',
+        'App\Console\Commands\CommandSendReports'
     ];
 
     /**
@@ -28,5 +29,6 @@ class Kernel extends ConsoleKernel
                  ->hourly();
         $schedule->command('terminal:updatetrackerviews')
                  ->daily();
+        $schedule->command('reports:send 8')->weekly()->mondays()->at('06:00');
     }
 }
