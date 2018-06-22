@@ -1324,7 +1324,7 @@ class PdfController extends Controller
 									}
 								}
 							}
-							$val = $extraSettings[$graph['data']][$userAnswer];
+							$val = isset($extraSettings[$graph['data']][$userAnswer]) ? $extraSettings[$graph['data']][$userAnswer] : $extraSettings['benchmark'];
 							$extraSectionGraphData['labels'][] = trans(session('product.alias').'.'.$extraSection);//$extraSection
 							$extraSectionGraphData['datasets'][0]['data'][] = $val;
 
