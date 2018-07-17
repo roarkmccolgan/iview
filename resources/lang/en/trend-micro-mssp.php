@@ -1,5 +1,5 @@
 <?php
-//NTT
+//Trend
 return array(
     'elqFormName'=>'',
     'developedby'=>'Developed by',
@@ -11,8 +11,8 @@ return array(
     'change-langauge'=>'Change language',
     'download-now'=>'Download Now',
 
-    'title'=>'IDC Managed Security Services Assessment',
-    'sub-title'=>'What do you need to do be a profitable and growing MSSP',
+    'title'=>'IDC Managed Security Services Readiness Assessment Tool',
+    'sub-title'=>'How ready are you to sell managed security services?',
     'landing'=>'
         <p class="mb-2">
             There are massive opportunities for partners in the managed security services space. 

@@ -12,6 +12,7 @@ return array(
         ),
         'intermission' => [
             '
+                <h1 class="font-light text-2xl sm:text-3xl leading-tight mb-2" style="">Before we move onto the next section, did you know?</h1>
                 <p class="w-full mb-4">
                     Selling managed services effectively requires new approaches and new compensation models.
                 </p>
@@ -194,6 +195,7 @@ return array(
         ),
         'intermission' => [
             '
+                <h1 class="font-light text-2xl sm:text-3xl leading-tight mb-2" style="">Before we move onto the next section, did you know?</h1>
                 <p class="w-full mb-4">
                     It\'s critical to get your digital marketing strategy, experience and presence right - embracing digital methods and meeting your customers\' expectations of a good digital experience.
                 </p>
@@ -337,6 +339,7 @@ return array(
         ),
         'intermission' => [
             '
+                <h1 class="font-light text-2xl sm:text-3xl leading-tight mb-2" style="">Before we move onto the next section, did you know?</h1>
                 <p class="w-full mb-4">
                     Customers are increasingly adopting managed services to help them improve their own operational efficiencies - this creates a massive opportunities for partners.
                 </p>
@@ -482,6 +485,7 @@ return array(
         ),
         'intermission' => [
             '
+                <h1 class="font-light text-2xl sm:text-3xl leading-tight mb-2" style="">Before we move onto the next section, did you know?</h1>
                 <p class="w-full mb-4">
                     Did you know the growth rate of MSS in Western Europe is almost 9x faster than general IT outsourcing? 
                 </p>

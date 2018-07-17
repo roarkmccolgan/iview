@@ -720,7 +720,10 @@ public function postComplete(SubmitAssessmentsRequest $request)
 	}
 	$emails = array_diff($emails, $remove);
 	$subject = $assessment->tool->company->name.' - '.$assessment->tool->title.' Assessment completed';
-
+	$ratingWording = $this->howfit['overall']['rating'];
+	if(Lang::has(session('product.alias').'.'.$this->howfit['overall']['rating'])){
+		$ratingWording = $ratingWording." - ".trans(session('product.alias').'.'.$this->howfit['overall']['rating']);
+	}
 	Mail::queue('emails.notification',
 		array(
 			'companyName' => $assessment->tool->company->name,
@@ -731,7 +734,7 @@ public function postComplete(SubmitAssessmentsRequest $request)
 			'company'=>$request->input('company'),
 			'phone'=>$request->input('phone'),
 			'score'=>$this->howfit['overall']['score'],
-			'rating'=>$this->howfit['overall']['rating']
+			'rating'=> $ratingWording
 		),
 		function($message)  use ($emails, $subject){
 			$message->from('notifications@mg.idcready.net', 'IDC Notifications');
