@@ -176,6 +176,7 @@ return [
         Fideloper\Proxy\TrustedProxyServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
         MartinLindhe\VueInternationalizationGenerator\GeneratorProvider::class,
+        Spatie\Backup\BackupServiceProvider::class,
         /*
          * My helper providers...
          */

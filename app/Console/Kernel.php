@@ -30,5 +30,8 @@ class Kernel extends ConsoleKernel
         $schedule->command('terminal:updatetrackerviews')
                  ->daily();
         $schedule->command('reports:send 8')->weekly()->mondays()->at('06:00');
+
+        $schedule->command('backup:clean')->daily()->at('01:00');
+        $schedule->command('backup:run')->daily()->at('02:00');
     }
 }
