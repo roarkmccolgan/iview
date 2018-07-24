@@ -104,36 +104,40 @@ class AssessmentController extends Controller {
 	 */
 	public function delete($subdomain, Assessment $assessment,Request $request)
 	{
-		if(isset($assessment->code)){
-			$tracker = Tracker::where('code',$assessment->code)->first();
-			if($tracker->views>0){
-				$tracker->decrement('views');
-			}
-			if($tracker->completions>0){
-				$tracker->decrement('completions');
-			}
+		$loggedInUser = $request->user();
+		if($loggedInUser->hasAnyRole(['client','admin','super'])){
+			if(isset($assessment->code)){
+				$tracker = Tracker::where('code',$assessment->code)->first();
+				if($tracker->views>0){
+					$tracker->decrement('views');
+				}
+				if($tracker->completions>0){
+					$tracker->decrement('completions');
+				}
 
-			$trackerHit = TrackerHits::whereDate('created_at','=',$assessment->created_at->format('Y-m-d'))->where('type','view')->first();
-			if($trackerHit){
-				$trackerHit->delete();
+				$trackerHit = TrackerHits::whereDate('created_at','=',$assessment->created_at->format('Y-m-d'))->where('type','view')->first();
+				if($trackerHit){
+					$trackerHit->delete();
+				}
+				$trackerHit = TrackerHits::whereDate('created_at','=',$assessment->created_at->format('Y-m-d'))->where('type','completion')->first();
+				if($trackerHit){
+					$trackerHit->delete();
+				}
 			}
-			$trackerHit = TrackerHits::whereDate('created_at','=',$assessment->created_at->format('Y-m-d'))->where('type','completion')->first();
-			if($trackerHit){
-				$trackerHit->delete();
+			$assessment->delete();
+			$name = str_slug($assessment->fname.'_'.$assessment->lname.'_'.$assessment->tool->title.'_Assessment');
+			if(File::exists(storage_path().'/reports/'.$assessment->id.'_'.$name.'.pdf')){
+				File::delete(storage_path().'/reports/'.$assessment->id.'_'.$name.'.pdf');
 			}
+			if($request->ajax()){
+				$data = [
+					'result'=>'success'
+				];
+				return $data;
+			}
+			return redirect('/admin/assessments')->with('status', 'Assessment deleted!');
 		}
-		$assessment->delete();
-		$name = str_slug($assessment->fname.'_'.$assessment->lname.'_'.$assessment->tool->title.'_Assessment');
-		if(File::exists(storage_path().'/reports/'.$assessment->id.'_'.$name.'.pdf')){
-			File::delete(storage_path().'/reports/'.$assessment->id.'_'.$name.'.pdf');
-		}
-		if($request->ajax()){
-			$data = [
-				'result'=>'success'
-			];
-			return $data;
-		}
-		return redirect('/admin/assessments')->with('status', 'Assessment deleted!');
+		abort(403, 'Access denied');
 	}
 
 	/**

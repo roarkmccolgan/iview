@@ -659,7 +659,6 @@ trait GenerateReportTrait {
 			$infrastructureNumber =  (int) filter_var(session('result.infrastructure.rating'), FILTER_SANITIZE_NUMBER_INT);
 			$intelligenceNumber =  (int) filter_var(session('result.intelligence.rating'), FILTER_SANITIZE_NUMBER_INT);
 			$operationsNumber =  (int) filter_var(session('result.operations.rating'), FILTER_SANITIZE_NUMBER_INT);		
-			
 
 			$vars['introduction'] = trans(session('product.alias').'.introduction',
 				[
@@ -672,6 +671,7 @@ trait GenerateReportTrait {
 
 			//overall
 			$rating = session('result.overall.rating');
+
 			$settings = array(
 				'back_image'=>asset('images/tools/8/comparisonbg'.session('localeUrl').'.png?id=1'),
 				'back_image_width'=> 570,
@@ -1037,13 +1037,12 @@ trait GenerateReportTrait {
 			$customCopy.= '<div class="pb"></div>';
 
 			//Operations
-			$rating = session('result.operations.rating');
+			
 			$customCopy.= trans(session('product.alias').'.operationsintro',
 				[
 					'icon'=>asset('/images/tools/8/operationsicon.png')
 				]
 			);
-
 			$customCopy.= trans(session('product.alias').'.operations-'.$operationsNumber.'-'.$rating);
 
 			//operations graph

@@ -669,7 +669,7 @@ class PdfController extends Controller
 			$vars['introImage'] = Lang::has(session('product.alias').'.introduction-image') ? trans(session('product.alias').'.introduction-image') : false;
 			$vars['introRating'] = trans(session('product.alias').'.'.session('result.overall.rating'));
 			$vars['questions'] = session('questions');
-		}elseif(session('product.id')==8) {
+		}elseif(session('product.id')==8) { //ntt
 			//User overall stage number and ordinal
 			$overallNumber = (int) filter_var(session('result.overall.rating'), FILTER_SANITIZE_NUMBER_INT);
 			$infrastructureNumber =  (int) filter_var(session('result.infrastructure.rating'), FILTER_SANITIZE_NUMBER_INT);
@@ -1053,7 +1053,6 @@ class PdfController extends Controller
 			$customCopy.= '<div class="pb"></div>';
 
 			//Operations
-			$rating = session('result.operations.rating');
 			$customCopy.= trans(session('product.alias').'.operationsintro',
 				[
 					'icon'=>asset('/images/tools/8/operationsicon.png')

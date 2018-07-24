@@ -226,12 +226,25 @@
 			console.log('Delete row '+deleteRow);
 			$.post( "/api/assessments/delete/"+deleteRow)
 			.done(function( data ) {
+				$.gritter.add({
+					title: 'User Deleted',
+					text: false,
+					class_name: 'success'
+				});
 				console.log( "Data Loaded: ", data);
 				$('#datatable-icons').DataTable()
 					.row( $('#'+deleteRow) )
 					.remove()
 					.draw();
 					deleteRow = false;
+			})
+			.fail(function() {
+				$.gritter.add({
+					title: 'Error',
+					text: 'You do not have appropriate permissions to delete this assessment',
+					sticky: true,
+					class_name: 'danger'
+				});
 			});
 		}
 	});
