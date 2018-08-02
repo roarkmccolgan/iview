@@ -98,7 +98,7 @@ return array(
         <h3 class="ntt-blue">Figure 1 - Outil d\'évaluation WAN de nouvelle génération</h3>
         <img src=":image" alt="" class="block mx-auto mb-2" style="width: 150mm" />
         <p class="mb-2">
-            La figure 1 montre que 16 % des entreprises sont expertes en matière de WAN. En général, ces entreprises se distinguent par leur approche stratégique et un usage généralisé de l\'intelligence et de l\'automatisation. 41 % des entreprises sont des généralistes du WAN, tandis que 43 % sont considérées comme des novices.
+            La figure 1 montre que 16 % des entreprises sont expertes en matière de WAN. En général, ces entreprises se distinguent par leur approche stratégique et un usage généralisé de l\'intelligence et de l\'automatisation. 41 % des entreprises sont des généralistes du WAN, tandis que 43 % sont considérées comme des followers.
         </p>
 
         <div class="pb"></div>
@@ -108,14 +108,14 @@ return array(
     'overallintro'=>'
         <h2 class="text-ntt-blue mb-6">PERFORMANCE GLOBALE</h2>
         <p class="mb-2">
-            Les entreprises pourront tirer pleinement profit de la transformation numérique à condition que cela s\'accompagne d\'une évolution majeure de leur réseau WAN. IDC a créé l\'outil de conseil WAN de nouvelle génération pour aider les entreprises à évaluer l\'état de préparation de leur WAN au numérique. Cet outil évalue leur approche en matière d\'infrastructure WAN, et d\'activités opérationnelles. D\'après une enquête menée auprès de 300 décideurs et influenceurs du monde du réseau, nous avons classé ces entreprises en trois niveaux de maturité : novices, généralistes et experts.  
+            Les entreprises pourront tirer pleinement profit de la transformation numérique à condition que cela s\'accompagne d\'une évolution majeure de leur réseau WAN. IDC a créé l\'outil de conseil WAN de nouvelle génération pour aider les entreprises à évaluer l\'état de préparation de leur WAN au numérique. Cet outil évalue leur approche en matière d\'infrastructure WAN, et d\'activités opérationnelles. D\'après une enquête menée auprès de 300 décideurs et influenceurs du monde du réseau, nous avons classé ces entreprises en trois niveaux de maturité : followers, généralistes et experts.  
         </p>
         <img class="block mx-auto mt-6" src=":image" alt="" style="width: 140mm;">
     ',
     'overallstage1'=>'
         <div class="clearfix">
             <p class="mb-2 text-ntt-blue mt-4 font-bold">
-                D\'après vos réponses dans l\'outil de conseil WAN de nouvelle génération d\'IDC, votre entreprise se positionne parmi les novices du WAN (niveau 1 sur 3), ce qui signifie qu\'elle est globalement en retard par rapport à ses pairs.
+                D\'après vos réponses dans l\'outil de conseil WAN de nouvelle génération d\'IDC, votre entreprise se positionne parmi les followers du WAN (niveau 1 sur 3), ce qui signifie qu\'elle est globalement en retard par rapport à ses pairs.
             </p>
         </div>
     ',
@@ -158,7 +158,7 @@ return array(
     'infrastructure-1-stage1' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2 text-ntt-blue font-bold">
-                D\'après vos réponses, votre entreprise est en retard par rapport à ses pairs en matière de capacités du WAN ce qui est cohérent pour un novice du WAN.
+                D\'après vos réponses, votre entreprise est en retard par rapport à ses pairs en matière de capacités du WAN ce qui est cohérent pour un follower du WAN.
             </p>
         </div>
     ',
@@ -179,7 +179,7 @@ return array(
     'infrastructure-2-stage1' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2 text-ntt-blue font-bold">
-                D\'après vos réponses, votre entreprise est au même niveau que ses pairs en matière de capacités du WAN. Autrement dit, globalement pour cette compétence, elle est très avancée par rapport par rapport aux novices du WAN.
+                D\'après vos réponses, votre entreprise est au même niveau que ses pairs en matière de capacités du WAN. Autrement dit, globalement pour cette compétence, elle est très avancée par rapport par rapport aux followers du WAN.
             </p>
         </div>
     ',
@@ -201,7 +201,7 @@ return array(
     'infrastructure-3-stage1' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2 text-ntt-blue font-bold">
-                D\'après vos réponses, votre entreprise est en avance sur ses pairs en matière de capacités du WAN. Autrement dit, globalement pour cette compétence, elle est très avancée par rapport  par rapport aux novices du WAN.
+                D\'après vos réponses, votre entreprise est en avance sur ses pairs en matière de capacités du WAN. Autrement dit, globalement pour cette compétence, elle est très avancée par rapport  par rapport aux followers du WAN.
             </p>
         </div>
     ',
@@ -227,35 +227,35 @@ return array(
     'infrastructure-1-q2-1' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-                La plupart du temps, vous achetez l\'infrastructure WAN selon vos besoins, ce qui est courant pour les novices du WAN. Afin de passer au niveau supérieur, vous devriez commencer par élaborer systématiquement une feuille de route technique à long terme pour améliorer votre infrastructure WAN et effectuer vos achats conformément à la stratégie adoptée. Cela vous aidera à améliorer les performances, l\'interopérabilité et le rapport coût-efficacité.
+                La plupart du temps, vous achetez l\'infrastructure WAN selon vos besoins, ce qui est courant pour les followers du WAN. Afin de passer au niveau supérieur, vous devriez commencer par élaborer systématiquement une feuille de route technique à long terme pour améliorer votre infrastructure WAN et effectuer vos achats conformément à la stratégie adoptée. Cela vous aidera à améliorer les performances, l\'interopérabilité et le rapport coût-efficacité.
             </p>
         </div>
     ',
     'infrastructure-1-q2-2' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-                La plupart du temps, vous achetez l\'infrastructure WAN selon vos besoins, ce qui est courant pour les novices du WAN. Afin de passer au niveau supérieur, vous devriez commencer par élaborer systématiquement une feuille de route technique à long terme pour améliorer votre infrastructure WAN et effectuer vos achats conformément à la stratégie adoptée. Cela vous aidera à améliorer les performances, l\'interopérabilité et le rapport coût-efficacité.
+                La plupart du temps, vous achetez l\'infrastructure WAN selon vos besoins, ce qui est courant pour les followers du WAN. Afin de passer au niveau supérieur, vous devriez commencer par élaborer systématiquement une feuille de route technique à long terme pour améliorer votre infrastructure WAN et effectuer vos achats conformément à la stratégie adoptée. Cela vous aidera à améliorer les performances, l\'interopérabilité et le rapport coût-efficacité.
             </p>
         </div>
     ',
     'infrastructure-1-q2-3' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-                Vous faites des achats stratégiques de solutions WAN dans certains cas, ce qui est déjà une étape importante pour les entreprises qui sont novices du WAN. L\'importance stratégique croissante du WAN devrait se refléter dans votre démarche d\'achat de solutions WAN, et vous devriez essayer de développer votre feuille de route technique à long terme pour l\'ensemble de l\'infrastructure du WAN. Vous devriez également effectuer vos achats conformément à la stratégie adoptée. Cela vous aidera à améliorer les performances, l\'interopérabilité et le rapport coût-efficacité.
+                Vous faites des achats stratégiques de solutions WAN dans certains cas, ce qui est déjà une étape importante pour les entreprises qui sont followers du WAN. L\'importance stratégique croissante du WAN devrait se refléter dans votre démarche d\'achat de solutions WAN, et vous devriez essayer de développer votre feuille de route technique à long terme pour l\'ensemble de l\'infrastructure du WAN. Vous devriez également effectuer vos achats conformément à la stratégie adoptée. Cela vous aidera à améliorer les performances, l\'interopérabilité et le rapport coût-efficacité.
             </p>
         </div>
     ',
     'infrastructure-1-q2-4' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-                Votre stratégie d\'achat progresse pour un novice du WAN, et vous devriez faire correspondre en permanence la feuille de route de votre réseau aux résultats métiers que vous souhaitez obtenir. Un cadre commercial stratégique en vertu duquel chaque élément du réseau peut être attribué de façon dynamique et adapté en fonction de vos besoins vous permettrait de gagner davantage en flexibilité.
+                Votre stratégie d\'achat progresse pour un follower du WAN, et vous devriez faire correspondre en permanence la feuille de route de votre réseau aux résultats métiers que vous souhaitez obtenir. Un cadre commercial stratégique en vertu duquel chaque élément du réseau peut être attribué de façon dynamique et adapté en fonction de vos besoins vous permettrait de gagner davantage en flexibilité.
             </p>
         </div>
     ',
     'infrastructure-1-q2-5' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-                Votre stratégie d\'achat progresse pour un novice du WAN, et vous devriez faire correspondre en permanence la feuille de route de votre réseau aux résultats commerciaux que vous souhaitez obtenir. Un contrat stratégique en vertu duquel chaque élément du réseau peut être attribué de façon dynamique et adapté en fonction de vos besoins vous permettrait de gagner davantage en flexibilité.
+                Votre stratégie d\'achat progresse pour un follower du WAN, et vous devriez faire correspondre en permanence la feuille de route de votre réseau aux résultats commerciaux que vous souhaitez obtenir. Un contrat stratégique en vertu duquel chaque élément du réseau peut être attribué de façon dynamique et adapté en fonction de vos besoins vous permettrait de gagner davantage en flexibilité.
             </p>
         </div>
     ',
@@ -335,35 +335,35 @@ return array(
     'infrastructure-1-q3-1' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-                Le SD-WAN s\'est révélé l\'une des pierres angulaires pour le futur des réseaux, promettant l\'amélioration des performances des réseaux et des applications et la visibilité, en particulier dans un environnement cloud. En même temps, il a pour but de développer la flexibilité, tout en offrant un bon rapport coût-efficacité de la bande passante et une réduction du niveau de complexité. Vous n\'êtes pas encore au stade de déploiement du SD-WAN, ce qui est normal, compte tenu de votre position de novice du WAN. Cela ne semble peut-être pas très important pour vous aujourd\'hui, mais vous devriez déjà commencer à étudier le concept du réseau SD-WAN et à évaluer les avantages qu\'il peut ou non apporter à votre entreprise. 
+                Le SD-WAN s\'est révélé l\'une des pierres angulaires pour le futur des réseaux, promettant l\'amélioration des performances des réseaux et des applications et la visibilité, en particulier dans un environnement cloud. En même temps, il a pour but de développer la flexibilité, tout en offrant un bon rapport coût-efficacité de la bande passante et une réduction du niveau de complexité. Vous n\'êtes pas encore au stade de déploiement du SD-WAN, ce qui est normal, compte tenu de votre position de follower du WAN. Cela ne semble peut-être pas très important pour vous aujourd\'hui, mais vous devriez déjà commencer à étudier le concept du réseau SD-WAN et à évaluer les avantages qu\'il peut ou non apporter à votre entreprise. 
             </p>
         </div>
     ',
     'infrastructure-1-q3-2' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-                Le SD-WAN s\'est révélé l\'une des pierres angulaires pour le futur des réseaux, promettant l\'amélioration des performances des réseaux et des applications et la visibilité, en particulier dans un environnement cloud. En même temps, il a pour but de développer la flexibilité, tout en offrant un bon rapport coût-efficacité de la bande passante et une réduction des complexités. Vous n\'êtes pas encore au stade de déploiement du SD-WAN, ce qui est normal pour un novice du WAN. Cela ne semble peut-être pas très important pour vous aujourd\'hui, mais vous devriez déjà commencer à étudier le concept du réseau SD-WAN et à évaluer les avantages qu\'il peut ou non apporter à votre entreprise. 
+                Le SD-WAN s\'est révélé l\'une des pierres angulaires pour le futur des réseaux, promettant l\'amélioration des performances des réseaux et des applications et la visibilité, en particulier dans un environnement cloud. En même temps, il a pour but de développer la flexibilité, tout en offrant un bon rapport coût-efficacité de la bande passante et une réduction des complexités. Vous n\'êtes pas encore au stade de déploiement du SD-WAN, ce qui est normal pour un follower du WAN. Cela ne semble peut-être pas très important pour vous aujourd\'hui, mais vous devriez déjà commencer à étudier le concept du réseau SD-WAN et à évaluer les avantages qu\'il peut ou non apporter à votre entreprise. 
             </p>
         </div>
     ',
     'infrastructure-1-q3-3' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-                Le SD-WAN s\'est révélé l\'une des pierres angulaires pour le futur des réseaux, promettant l\'amélioration des performances des réseaux et des applications et la visibilité, en particulier dans un environnement cloud. En même temps, il a pour but de développer la flexibilité, tout en offrant un bon rapport coût-efficacité de la bande passante et une réduction des complexités. Votre déploiement du SD-WAN en est à ses débuts, et vous êtes à un stade avancé compte tenu de votre position de novice du WAN. Vous devriez tenir compte de ce que vous avez appris de ces premiers déploiements pour concevoir un plan de migration et établir une liste des sites prioritaires afin d\'élargir la couverture de votre réseau.
+                Le SD-WAN s\'est révélé l\'une des pierres angulaires pour le futur des réseaux, promettant l\'amélioration des performances des réseaux et des applications et la visibilité, en particulier dans un environnement cloud. En même temps, il a pour but de développer la flexibilité, tout en offrant un bon rapport coût-efficacité de la bande passante et une réduction des complexités. Votre déploiement du SD-WAN en est à ses débuts, et vous êtes à un stade avancé compte tenu de votre position de follower du WAN. Vous devriez tenir compte de ce que vous avez appris de ces premiers déploiements pour concevoir un plan de migration et établir une liste des sites prioritaires afin d\'élargir la couverture de votre réseau.
             </p>
         </div>
     ',
     'infrastructure-1-q3-4' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-                Le SD-WAN s\'est révélé l\'une des pierres angulaires pour le futur des réseaux, promettant l\'amélioration des performances des réseaux et des applications et la visibilité, en particulier dans un environnement cloud. En même temps, il a pour but de développer la flexibilité, tout en offrant un bon rapport coût-efficacité de la bande passante et une réduction des complexités. Votre déploiement du SD-WAN en est à ses débuts, et vous êtes à un stade avancé compte tenu de votre position de novice du WAN. Vous devriez tenir compte de ce que vous avez appris de ces premiers déploiements pour concevoir un plan de migration et établir une liste des sites prioritaires afin d\'élargir la couverture de votre réseau.
+                Le SD-WAN s\'est révélé l\'une des pierres angulaires pour le futur des réseaux, promettant l\'amélioration des performances des réseaux et des applications et la visibilité, en particulier dans un environnement cloud. En même temps, il a pour but de développer la flexibilité, tout en offrant un bon rapport coût-efficacité de la bande passante et une réduction des complexités. Votre déploiement du SD-WAN en est à ses débuts, et vous êtes à un stade avancé compte tenu de votre position de follower du WAN. Vous devriez tenir compte de ce que vous avez appris de ces premiers déploiements pour concevoir un plan de migration et établir une liste des sites prioritaires afin d\'élargir la couverture de votre réseau.
             </p>
         </div>
     ',
     'infrastructure-1-q3-5' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-                Le SD-WAN s\'est révélé l\'une des pierres angulaires pour le futur des réseaux, promettant l\'amélioration des performances des réseaux et des applications et la visibilité, en particulier dans un environnement cloud. En même temps, il a pour but de développer la flexibilité, tout en offrant un bon rapport coût-efficacité de la bande passante et une réduction des complexités. Vous êtes déjà dans une démarche de déploiement étendu de votre SD-WAN, et vous êtes donc à un stade avancé compte tenu de votre position de novice du WAN. Avec une longueur d\'avance sur les autres, vous pouvez commencer à étudier la façon dont vous pouvez vous en servir comme tremplin vers une plus grande virtualisation de votre réseau, afin d\'obtenir d\'autres avantages en termes de performances, de flexibilité et de rentabilité.   
+                Le SD-WAN s\'est révélé l\'une des pierres angulaires pour le futur des réseaux, promettant l\'amélioration des performances des réseaux et des applications et la visibilité, en particulier dans un environnement cloud. En même temps, il a pour but de développer la flexibilité, tout en offrant un bon rapport coût-efficacité de la bande passante et une réduction des complexités. Vous êtes déjà dans une démarche de déploiement étendu de votre SD-WAN, et vous êtes donc à un stade avancé compte tenu de votre position de follower du WAN. Avec une longueur d\'avance sur les autres, vous pouvez commencer à étudier la façon dont vous pouvez vous en servir comme tremplin vers une plus grande virtualisation de votre réseau, afin d\'obtenir d\'autres avantages en termes de performances, de flexibilité et de rentabilité.   
             </p>
         </div>
     ',
@@ -453,7 +453,7 @@ return array(
     'intelligence-1-stage1' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2 text-ntt-blue font-bold">
-                D\'après vos réponses, votre entreprise est derrière ses pairs ses pairs en matière d\'utilisation de l\'intelligence du réseau, ce qui est cohérent pour un novice du WAN. 
+                D\'après vos réponses, votre entreprise est derrière ses pairs ses pairs en matière d\'utilisation de l\'intelligence du réseau, ce qui est cohérent pour un follower du WAN. 
             </p>
         </div>
     ',
@@ -475,7 +475,7 @@ return array(
     'intelligence-2-stage1' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2 text-ntt-blue font-bold">
-                D\'après vos réponses, votre entreprise est au même niveau que ses pairs lorsqu\'il s\'agit d\'utiliser l\'intelligence du réseau, ce qui vous place à un niveau supérieurpour un novice du WAN. 
+                D\'après vos réponses, votre entreprise est au même niveau que ses pairs lorsqu\'il s\'agit d\'utiliser l\'intelligence du réseau, ce qui vous place à un niveau supérieurpour un follower du WAN. 
             </p>
         </div>
     ',
@@ -497,7 +497,7 @@ return array(
     'intelligence-3-stage1' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2 text-ntt-blue font-bold">
-            D\'après vos réponses, votre entreprise est en avance sur ses pairs lorsqu\'il s\'agit d\'utiliser l\'intelligence du réseau, ce qui vous place à un niveau supérieur pour un novice du WAN. 
+            D\'après vos réponses, votre entreprise est en avance sur ses pairs lorsqu\'il s\'agit d\'utiliser l\'intelligence du réseau, ce qui vous place à un niveau supérieur pour un follower du WAN. 
             </p>
         </div>
     ',
@@ -523,35 +523,35 @@ return array(
     'intelligence-1-q5-1' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-                À l\'instar de nombreux novices du WAN, vous avez une attitude passive quant à l\'optimisation du réseau. Vous ne réagissez que lorsque des problèmes sont signalés. Vous devez adopter une démarche plus proactive et structurelle afin que la performance du réseau et le rapport coût-efficacité puissent suivre la croissance de la demande.  Explorez l\'intelligence du réseau et les solutions analytiques qui peuvent vous aider à comprendre et à optimiser la performance du réseau et des applications.
+                À l\'instar de nombreux followers du WAN, vous avez une attitude passive quant à l\'optimisation du réseau. Vous ne réagissez que lorsque des problèmes sont signalés. Vous devez adopter une démarche plus proactive et structurelle afin que la performance du réseau et le rapport coût-efficacité puissent suivre la croissance de la demande.  Explorez l\'intelligence du réseau et les solutions analytiques qui peuvent vous aider à comprendre et à optimiser la performance du réseau et des applications.
             </p>
         </div>
     ',
     'intelligence-1-q5-2' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-                Vous adoptez une attitude réactive à l\'égard de l\'optimisation du réseau, ce qui est assez courant pour les novices du WAN. Vous êtes poussé à agir uniquement lorsque vous recevez des notifications des périphériques. Vous devriez poursuivre une approche plus proactive et structurelle afin que la performance du réseau et le rapport coût-efficacité puissent suivre la croissance de la demande. Explorez l\'intelligence du réseau et les solutions d\'analyse qui peuvent vous aider à comprendre et à optimiser la performance du réseau et des applications.
+                Vous adoptez une attitude réactive à l\'égard de l\'optimisation du réseau, ce qui est assez courant pour les followers du WAN. Vous êtes poussé à agir uniquement lorsque vous recevez des notifications des périphériques. Vous devriez poursuivre une approche plus proactive et structurelle afin que la performance du réseau et le rapport coût-efficacité puissent suivre la croissance de la demande. Explorez l\'intelligence du réseau et les solutions d\'analyse qui peuvent vous aider à comprendre et à optimiser la performance du réseau et des applications.
             </p>
         </div>
     ',
     'intelligence-1-q5-3' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-                Vous prenez déjà des mesures structurelles afin d\'optimiser votre réseau, ce qui vous place parmi les novices du WAN les plus avancés. Vous pourriez vous appuyer sur ces bases pour développer une attitude encore plus proactive et tournée vers l\'avenir. L\'analyse prédictive peut vous aider à prévenir les problèmes de rendement et à améliorer l\'optimisation.
+                Vous prenez déjà des mesures structurelles afin d\'optimiser votre réseau, ce qui vous place parmi les followers du WAN les plus avancés. Vous pourriez vous appuyer sur ces bases pour développer une attitude encore plus proactive et tournée vers l\'avenir. L\'analyse prédictive peut vous aider à prévenir les problèmes de rendement et à améliorer l\'optimisation.
             </p>
         </div>
     ',
     'intelligence-1-q5-4' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-                Votre utilisation de l\'analytique prédictive vous place à un niveau bien supérieur par rapport aux autres novices du WAN lorsqu\'il s\'agit d\'optimiser le réseau. La prochaine étape consisterait à améliorer davantage les performances et l\'efficacité en automatisant le plus possible vos tâches d\'optimisation, même si vous pourriez songer à donner la priorité à d\'autres éléments de votre réseau étendu afin d\'augmenter le niveau de maturité de votre système.
+                Votre utilisation de l\'analytique prédictive vous place à un niveau bien supérieur par rapport aux autres followers du WAN lorsqu\'il s\'agit d\'optimiser le réseau. La prochaine étape consisterait à améliorer davantage les performances et l\'efficacité en automatisant le plus possible vos tâches d\'optimisation, même si vous pourriez songer à donner la priorité à d\'autres éléments de votre réseau étendu afin d\'augmenter le niveau de maturité de votre système.
             </p>
         </div>
     ',
     'intelligence-1-q5-5' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-                Vous exploitez l\'analyse prédictive pour automatiser l\'optimisation de votre réseau. Il s\'agit d\'une approche très avancée en matière d\'optimisation, notamment en comparaison à d\'autres novices du WAN. Vous devriez maintenant prioriser les mesures qui stimulent le développement d\'autres facettes de votre réseau étendu. 
+                Vous exploitez l\'analyse prédictive pour automatiser l\'optimisation de votre réseau. Il s\'agit d\'une approche très avancée en matière d\'optimisation, notamment en comparaison à d\'autres followers du WAN. Vous devriez maintenant prioriser les mesures qui stimulent le développement d\'autres facettes de votre réseau étendu. 
             </p>
         </div>
     ',
@@ -631,35 +631,35 @@ return array(
     'intelligence-1-q6-1' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-                En même temps, à l\'instar de nombreux novices, vous continuez à adopter une approche de type best effort pour répondre au mieux aux attentes en matière de rendement de l\'application. Il est probablement temps pour vous de commencer à chercher des moyens pour séparer les classes de trafic et hiérarchiser le trafic, afin de vous assurer que votre réseau répond aux attentes de vos utilisateurs finaux.
+                En même temps, à l\'instar de nombreux followers, vous continuez à adopter une approche de type best effort pour répondre au mieux aux attentes en matière de rendement de l\'application. Il est probablement temps pour vous de commencer à chercher des moyens pour séparer les classes de trafic et hiérarchiser le trafic, afin de vous assurer que votre réseau répond aux attentes de vos utilisateurs finaux.
             </p>
         </div>
     ',
     'intelligence-1-q6-2' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-                En même temps, à l\'instar de nombreux novices, vous séparez les classes de trafic en segmentant physiquement le réseau. Il existe probablement des moyens plus efficaces pour arriver au même résultat. Vous devriez chercher des solutions qui tirent parti de la segmentation virtuelle ou de la hiérarchisation du trafic pour garantir que les performances des applications répondent aux attentes.
+                En même temps, à l\'instar de nombreux followers, vous séparez les classes de trafic en segmentant physiquement le réseau. Il existe probablement des moyens plus efficaces pour arriver au même résultat. Vous devriez chercher des solutions qui tirent parti de la segmentation virtuelle ou de la hiérarchisation du trafic pour garantir que les performances des applications répondent aux attentes.
             </p>
         </div>
     ',
     'intelligence-1-q6-3' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-                En même temps, vous séparez les classes de trafic en segmentant virtuellement le réseau, ce qui est astucieux pour un novice.  Vous devriez étudier comment les solutions de hiérarchisation du trafic peuvent vous aider à garantir que les performances des applications répondent aux attentes.
+                En même temps, vous séparez les classes de trafic en segmentant virtuellement le réseau, ce qui est astucieux pour un follower.  Vous devriez étudier comment les solutions de hiérarchisation du trafic peuvent vous aider à garantir que les performances des applications répondent aux attentes.
             </p>
         </div>
     ',
     'intelligence-1-q6-4' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-                En même temps, vous configurez manuellement la QoS pour prioriser le trafic. Cela améliore sans doute les performances des applications clés, et cette démarche vous place à un niveau assez avancé pour un novice du WAN. Les SLA pour les performances des applications et même l\'expérience de l\'utilisateur devraient être vos prochains objectifs. Vous pourriez atteindre ces objectifs en optant pour des réseaux autoadaptatifs.
+                En même temps, vous configurez manuellement la QoS pour prioriser le trafic. Cela améliore sans doute les performances des applications clés, et cette démarche vous place à un niveau assez avancé pour un follower du WAN. Les SLA pour les performances des applications et même l\'expérience de l\'utilisateur devraient être vos prochains objectifs. Vous pourriez atteindre ces objectifs en optant pour des réseaux autoadaptatifs.
             </p>
         </div>
     ',
     'intelligence-1-q6-5' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-                En même temps, vous êtes à l\'avant-garde quand il s\'agit de répondre aux attentes en matière de performance applicative. Les SLA des performances et d\'expérience utilisateur sont garantis par un réseau autoadaptatif. C\'est exceptionnellement avancé pour votre position de novice du WAN. Bien que vous puissiez clairement bénéficier de l\'automatisation et de l\'orchestration dans plusieurs domaines, il peut être plus avantageux de concentrer vos efforts sur l\'avancement d\'autres éléments du WAN et progreser dans le classement.
+                En même temps, vous êtes à l\'avant-garde quand il s\'agit de répondre aux attentes en matière de performance applicative. Les SLA des performances et d\'expérience utilisateur sont garantis par un réseau autoadaptatif. C\'est exceptionnellement avancé pour votre position de follower du WAN. Bien que vous puissiez clairement bénéficier de l\'automatisation et de l\'orchestration dans plusieurs domaines, il peut être plus avantageux de concentrer vos efforts sur l\'avancement d\'autres éléments du WAN et progreser dans le classement.
             </p>
         </div>
     ',
@@ -749,7 +749,7 @@ return array(
     'operations-1-stage1' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2 text-ntt-blue mt-4 font-bold">
-            D\'après vos réponses, votre entreprise est en retard par rapport à ses pairs lorsqu\'il s\'agit d\'opérations de réseau étendu, ce qui est cohérent pour un novice du WAN. 
+            D\'après vos réponses, votre entreprise est en retard par rapport à ses pairs lorsqu\'il s\'agit d\'opérations de réseau étendu, ce qui est cohérent pour un follower du WAN. 
             </p>
         </div>
     ',
@@ -771,7 +771,7 @@ return array(
     'operations-2-stage1' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2 text-ntt-blue mt-4 font-bold">
-            D\'après vos réponses, votre entreprise est au même niveau que ses pairs lorpour la gestion du WAN, ce qui la place à un niveau supérieur pour un novice du WAN. 
+            D\'après vos réponses, votre entreprise est au même niveau que ses pairs lorpour la gestion du WAN, ce qui la place à un niveau supérieur pour un follower du WAN. 
             </p>
         </div>
     ',
@@ -793,7 +793,7 @@ return array(
     'operations-3-stage1' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2 text-ntt-blue mt-4 font-bold">
-            D\'après vos réponses, votre entreprise est en avance sur ses pairs pour la gestion du WAN, ce qui est assez avancé pour un novice du WAN. 
+            D\'après vos réponses, votre entreprise est en avance sur ses pairs pour la gestion du WAN, ce qui est assez avancé pour un follower du WAN. 
             </p>
         </div>
     ',
@@ -821,35 +821,35 @@ return array(
     'operations-1-q8-1' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-            La configuration du WAN est un processus manuel auquel vous procédez si le besoin s\'en fait sentir. C\'est probablement la partie de plus en plus fastidieuse et la plus longue dans vos tâches opérationnelles, comme cela est le cas pour de nombreux novices du WAN. Vous avez besoin d\'un moyen de progresser plus systématiquement. Des solutions qui vous permettent de centraliser et d\'automatiser ces tâches peuvent venir à votre secours. Elles vont certainement vous aider à réduire un peu la complexité de vos opérations, libérer du temps et augmenter l\'agilité des processus.
+            La configuration du WAN est un processus manuel auquel vous procédez si le besoin s\'en fait sentir. C\'est probablement la partie de plus en plus fastidieuse et la plus longue dans vos tâches opérationnelles, comme cela est le cas pour de nombreux followers du WAN. Vous avez besoin d\'un moyen de progresser plus systématiquement. Des solutions qui vous permettent de centraliser et d\'automatiser ces tâches peuvent venir à votre secours. Elles vont certainement vous aider à réduire un peu la complexité de vos opérations, libérer du temps et augmenter l\'agilité des processus.
             </p>
         </div>
     ',
     'operations-1-q8-2' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-            La configuration du WAN est un processus manuel. C\'est probablement la partie de plus en plus fastidieuse et la plus longue dans vos tâches opérationnelles, comme cela est le cas pour de nombreux novices du WAN. L\'automatisation de ces tâches peut vous venir en aide. Elle va certainement vous aider à réduire un peu la complexité de vos opérations, libérer du temps et augmenter l\'agilité des processus.
+            La configuration du WAN est un processus manuel. C\'est probablement la partie de plus en plus fastidieuse et la plus longue dans vos tâches opérationnelles, comme cela est le cas pour de nombreux followers du WAN. L\'automatisation de ces tâches peut vous venir en aide. Elle va certainement vous aider à réduire un peu la complexité de vos opérations, libérer du temps et augmenter l\'agilité des processus.
             </p>
         </div>
     ',
     'operations-1-q8-3' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-            Alors que la configuration est encore essentiellement un processus manuel, vous avez déjà automatisé certaines tâches. Nous ne pourrions pas en dire autant de la plupart des novices du WAN. Vous pouvez encore progresser en intensifiant vos efforts pour automatiser les processus de configuration. Cela vous permettra de réduire davantage la complexité, de libérer du temps et d\'accroître l\'agilité des processus.
+            Alors que la configuration est encore essentiellement un processus manuel, vous avez déjà automatisé certaines tâches. Nous ne pourrions pas en dire autant de la plupart des followers du WAN. Vous pouvez encore progresser en intensifiant vos efforts pour automatiser les processus de configuration. Cela vous permettra de réduire davantage la complexité, de libérer du temps et d\'accroître l\'agilité des processus.
             </p>
         </div>
     ',
     'operations-1-q8-4' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-            La gestion du réseau étendu est le plus souvent automatisée, mais il y a encore quelques tâches à configurer manuellement. Vous avez pris de l\'avance par rapport à bon nombre de novices du WAN. Pour continuer votre progression, vous devez étudier la façon dont ces autres tâches manuelles peuvent être automatisées et commencer à pousser plus loin la réflexion dans ce domaine. L\'intégration de l\'automatisation dans les politiques et l\'intelligence vous ouvrira les portes de l\'auto-optimisation dans l\'orchestration réseau.
+            La gestion du réseau étendu est le plus souvent automatisée, mais il y a encore quelques tâches à configurer manuellement. Vous avez pris de l\'avance par rapport à bon nombre de followers du WAN. Pour continuer votre progression, vous devez étudier la façon dont ces autres tâches manuelles peuvent être automatisées et commencer à pousser plus loin la réflexion dans ce domaine. L\'intégration de l\'automatisation dans les politiques et l\'intelligence vous ouvrira les portes de l\'auto-optimisation dans l\'orchestration réseau.
             </p>
         </div>
     ',
     'operations-1-q8-5' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-            Pour un novice du WAN, vous disposez d\'une gestion de pointe de votre réseau étendu. L\'auto-optimisation de l\'orchestration réseau qui a intégré l\'analyse, les politiques et l\'automatisation a réduit considérablement la complexité de vos opérations. Vous devriez désormais vous concentrer sur le fait d\'amener certaines parties du WAN au même niveau de sophistication, afin d\'améliorer votre positionnement.
+            Pour un follower du WAN, vous disposez d\'une gestion de pointe de votre réseau étendu. L\'auto-optimisation de l\'orchestration réseau qui a intégré l\'analyse, les politiques et l\'automatisation a réduit considérablement la complexité de vos opérations. Vous devriez désormais vous concentrer sur le fait d\'amener certaines parties du WAN au même niveau de sophistication, afin d\'améliorer votre positionnement.
             </p>
         </div>
     ',
@@ -929,35 +929,35 @@ return array(
     'operations-1-q9-1' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-            La sécurité joue un rôle essentiel dans la stratégie et la gestion du WAN. Elle est considérée comme le défi numéro un, et la grande majorité des entreprises indiquent qu\'elles sont en train d\'améliorer la sécurité du réseau en réponse à l\'augmentation des besoins. La gestion de la sécurité devient ainsi une partie de plus en plus importante dans la gestions du WAN. Comme beaucoup de novices du WAN, vous gérez votre politique de sécurité périphérique par périphérique, ce qui peut mettre à rude épreuve vos ressources. Une gestion plus centralisée et automatisée permettra d\'augmenter votre efficacité, de gagner e cohérence, d\'accélérer les cycles de mise à jour et de réduire les risques.
+            La sécurité joue un rôle essentiel dans la stratégie et la gestion du WAN. Elle est considérée comme le défi numéro un, et la grande majorité des entreprises indiquent qu\'elles sont en train d\'améliorer la sécurité du réseau en réponse à l\'augmentation des besoins. La gestion de la sécurité devient ainsi une partie de plus en plus importante dans la gestions du WAN. Comme beaucoup de followers du WAN, vous gérez votre politique de sécurité périphérique par périphérique, ce qui peut mettre à rude épreuve vos ressources. Une gestion plus centralisée et automatisée permettra d\'augmenter votre efficacité, de gagner e cohérence, d\'accélérer les cycles de mise à jour et de réduire les risques.
             </p>
         </div>
     ',
     'operations-1-q9-2' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-            La sécurité joue un rôle essentiel dans la stratégie et la gestion du WAN. Elle est considérée comme le défi numéro un, et la grande majorité des entreprises indiquent qu\'elles sont en train d\'améliorer la sécurité du réseau en réponse à l\'augmentation des besoins. La gestion de la sécurité devient ainsi une partie de plus en plus importante dans la gestion du WAN. Comme beaucoup d\'autres novices du WAN, vous disposez d\'une politique de contrôle d\'accès centralisée, mais les opérations manuelles peuvent mettre vos ressources à rude épreuve, tandis que de longs temps de réponse peuvent exposer votre réseau WAN à des menaces. Une gestion plus dynamique et automatisée permettra d\'augmenter votre efficacité, de gagner en cohérence, d\'accélérer les cycles de mise à jour et de réduire les risques.
+            La sécurité joue un rôle essentiel dans la stratégie et la gestion du WAN. Elle est considérée comme le défi numéro un, et la grande majorité des entreprises indiquent qu\'elles sont en train d\'améliorer la sécurité du réseau en réponse à l\'augmentation des besoins. La gestion de la sécurité devient ainsi une partie de plus en plus importante dans la gestion du WAN. Comme beaucoup d\'autres followers du WAN, vous disposez d\'une politique de contrôle d\'accès centralisée, mais les opérations manuelles peuvent mettre vos ressources à rude épreuve, tandis que de longs temps de réponse peuvent exposer votre réseau WAN à des menaces. Une gestion plus dynamique et automatisée permettra d\'augmenter votre efficacité, de gagner en cohérence, d\'accélérer les cycles de mise à jour et de réduire les risques.
             </p>
         </div>
     ',
     'operations-1-q9-3' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-            La sécurité joue un rôle essentiel dans la stratégie et la gestion du WAN. Elle est considérée comme le défi numéro un, et la grande majorité des entreprises indiquent qu\'elles sont en train d\'améliorer la sécurité du réseau en réponse à l\'augmentation des besoins. La gestion de la sécurité devient ainsi une partie de plus en plus importante dans la gestion du WAN. Vous appliquez les politiques de sécurité de façon dynamique sur le réseau, ce qui est plutôt bien vu pour un novice du WAN. Néanmoins, les tâches manuelles peuvent mettre à rude épreuve vos ressources, tandis que les longs temps de réponse peuvent exposer votre réseau à des menaces. Des solutions qui combinent l\'automatisation et l\'analyse pour détecter rapidement et contenir les menaces vont améliorer votre efficacité et le temps de réponse, et réduire les risques.
+            La sécurité joue un rôle essentiel dans la stratégie et la gestion du WAN. Elle est considérée comme le défi numéro un, et la grande majorité des entreprises indiquent qu\'elles sont en train d\'améliorer la sécurité du réseau en réponse à l\'augmentation des besoins. La gestion de la sécurité devient ainsi une partie de plus en plus importante dans la gestion du WAN. Vous appliquez les politiques de sécurité de façon dynamique sur le réseau, ce qui est plutôt bien vu pour un follower du WAN. Néanmoins, les tâches manuelles peuvent mettre à rude épreuve vos ressources, tandis que les longs temps de réponse peuvent exposer votre réseau à des menaces. Des solutions qui combinent l\'automatisation et l\'analyse pour détecter rapidement et contenir les menaces vont améliorer votre efficacité et le temps de réponse, et réduire les risques.
             </p>
         </div>
     ',
     'operations-1-q9-4' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-            La sécurité joue un rôle essentiel dans la stratégie et la gestion du WAN. Elle est considérée comme le défi numéro un, et la grande majorité des entreprises indiquent qu\'elles sont en train d\'améliorer la sécurité du réseau en réponse à l\'augmentation des besoins. La gestion de la sécurité devient ainsi une partie de plus en plus importante dans la gestion du WAN. Votre réseau détecte et répond rapidement pour contenir les menaces, ce qui est essentiel dans la protection des actifs de votre entreprise. C\'est plutôt une approche avancée pour un novice du WAN. Des solutions qui combinent l\'analyse prédictive et l\'automatisation pour reconfigurer automatiquement les politiques pourraient encore améliorer le niveau de sécurité de votre réseau WAN.
+            La sécurité joue un rôle essentiel dans la stratégie et la gestion du WAN. Elle est considérée comme le défi numéro un, et la grande majorité des entreprises indiquent qu\'elles sont en train d\'améliorer la sécurité du réseau en réponse à l\'augmentation des besoins. La gestion de la sécurité devient ainsi une partie de plus en plus importante dans la gestion du WAN. Votre réseau détecte et répond rapidement pour contenir les menaces, ce qui est essentiel dans la protection des actifs de votre entreprise. C\'est plutôt une approche avancée pour un follower du WAN. Des solutions qui combinent l\'analyse prédictive et l\'automatisation pour reconfigurer automatiquement les politiques pourraient encore améliorer le niveau de sécurité de votre réseau WAN.
             </p>
         </div>
     ',
     'operations-1-q9-5' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2">
-            La sécurité joue un rôle essentiel dans la stratégie et la gestion du WAN. Elle est considérée comme le défi numéro un, et la grande majorité des entreprises indiquent qu\'elles sont en train d\'améliorer la sécurité du réseau en réponse à l\'augmentation des besoins. La gestion de la sécurité devient ainsi une partie de plus en plus importante dans la gestion du WAN. Vous êtes très en avance sur la majorité des novices du WAN, bénéficiant d\'une gestion de pointe des politiques de sécurité qui s\'adapte automatiquement pour prévenir les menaces émergentes à l\'aide de l\'analyse prédictive. Avant d\'étudier la façon dont la sécurité peut être intégrée plus étroitement au reste de votre gestion du WAN, vous devriez concentrer vos efforts pour amener le reste de votre réseau WAN à un niveau supérieur.
+            La sécurité joue un rôle essentiel dans la stratégie et la gestion du WAN. Elle est considérée comme le défi numéro un, et la grande majorité des entreprises indiquent qu\'elles sont en train d\'améliorer la sécurité du réseau en réponse à l\'augmentation des besoins. La gestion de la sécurité devient ainsi une partie de plus en plus importante dans la gestion du WAN. Vous êtes très en avance sur la majorité des followers du WAN, bénéficiant d\'une gestion de pointe des politiques de sécurité qui s\'adapte automatiquement pour prévenir les menaces émergentes à l\'aide de l\'analyse prédictive. Avant d\'étudier la façon dont la sécurité peut être intégrée plus étroitement au reste de votre gestion du WAN, vous devriez concentrer vos efforts pour amener le reste de votre réseau WAN à un niveau supérieur.
             </p>
         </div>
     ',
