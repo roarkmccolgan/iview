@@ -22,7 +22,7 @@ $manifest = json_decode($json, TRUE);
 			<img class="w-full" src="{{ asset('images/tools/9/chess.png') }}" alt="">
 			<div class="p-4">
 				<div class="text-grey">
-					IDC MSSP Assessment
+					IDC MSP Assessment
 				</div>
 				<div class="text-2xl sm:text-2xl uppercase text-white">
 					READINESS REPORT

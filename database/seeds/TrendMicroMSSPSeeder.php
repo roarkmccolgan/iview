@@ -20,7 +20,7 @@ class TrendMicroMSSPSeeder extends Seeder
         ]);
         DB::table('tools')->insert([
             'id' => 9,
-            'alias' => 'trend-micro-mssp',
+            'alias' => 'trend-micro-msp',
             'title' => 'IDC Managed Security Services Assessment',
             'sub_title' => 'Discover your readiness in becoming an MSSP',
             'company_id' => 10,
@@ -30,7 +30,7 @@ class TrendMicroMSSPSeeder extends Seeder
         ]);
         DB::table('urls')->insert([
             'domain' => 'idcready.net',
-            'subdomain' => 'mssp',
+            'subdomain' => 'msp',
             'language_id' => 1,
             'urlable_id' => 9,
             'urlable_type' => 'App\Tool',
@@ -38,7 +38,23 @@ class TrendMicroMSSPSeeder extends Seeder
         ]);
         DB::table('urls')->insert([
             'domain' => 'idcready.test',
-            'subdomain' => 'mssp',
+            'subdomain' => 'msp',
+            'language_id' => 1,
+            'urlable_id' => 9,
+            'urlable_type' => 'App\Tool',
+            'created_at' => Carbon::now(),
+        ]);
+        DB::table('urls')->insert([
+            'domain' => 'idcready.net',
+            'subdomain' => 'trend',
+            'language_id' => 1,
+            'urlable_id' => 9,
+            'urlable_type' => 'App\Tool',
+            'created_at' => Carbon::now(),
+        ]);
+        DB::table('urls')->insert([
+            'domain' => 'idcready.test',
+            'subdomain' => 'trend',
             'language_id' => 1,
             'urlable_id' => 9,
             'urlable_type' => 'App\Tool',

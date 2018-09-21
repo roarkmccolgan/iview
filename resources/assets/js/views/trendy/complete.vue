@@ -1,7 +1,7 @@
 <template>
 	<div class="flex-grow ieflex1">
 		<div class="container mx-auto flex flex-wrap items-center mb-4 py-4">
-			<h1 class="font-light leading-tight">Overall Maturity Rating: {{ $t('trend-micro-mssp.'+rating) }}</h1>
+			<h1 class="font-light leading-tight">Overall Maturity Rating: {{ $t('trend-micro-msp.'+rating) }}</h1>
 		</div>
 		<div class="container mx-auto mt-2">
 			<div class="flex flex-wrap justify-center">
@@ -10,7 +10,7 @@
 						<div class="mr-4">
 							<img :src="'/images/tools/9/'+ rating +'.png'" alt="">
 						</div>
-						<div class="flex-grow" v-html="$t('trend-micro-mssp.finishtxt', { stage: $t('trend-micro-mssp.'+rating)})"></div>
+						<div class="flex-grow" v-html="$t('trend-micro-msp.finishtxt', { stage: $t('trend-micro-msp.'+rating)})"></div>
 					</div>
 				</div>
 				<div class="w-full sm:w-1/2">
@@ -20,78 +20,78 @@
 							<input type="hidden" name="_token" :value="getToken">
 							<h2 class="flex justify-start p-2 bg-trend-red text-white font-light leading-tight">
 								<font-awesome-icon class="mr-2" :icon="icons.faEnvelope"></font-awesome-icon>
-								<div v-html="$t('trend-micro-mssp.register')"></div>
+								<div v-html="$t('trend-micro-msp.register')"></div>
 							</h2>
 							<div class="flex flex-wrap bg-black px-8 py-8 pb-2 mb-4">
 								<div class="mb-6 sm:w-1/2">
 									<div class="mr-2">
 										<label class="block uppercase tracking-wide text-grey-light text-xs font-bold mb-2" for="fname">
-											{{ $t('trend-micro-mssp.leadgen.fname') }}
+											{{ $t('trend-micro-msp.leadgen.fname') }}
 										</label>
 										<input class="appearance-none block w-full bg-grey-dark text-black border py-3 px-4 mb-2" :class="[errors.fname ? 'border-red' : '']" type="text" id="fname" name="fname" @blur="hasError">
-										<p class="text-red text-xs italic" v-show="errors.fname" v-html="$t('trend-micro-mssp.leadgen.errorFname')"></p>
+										<p class="text-red text-xs italic" v-show="errors.fname" v-html="$t('trend-micro-msp.leadgen.errorFname')"></p>
 									</div>
 								</div>
 								<div class="mb-6 sm:w-1/2">
 									<div class="ml-2">
 										<label class="block uppercase tracking-wide text-grey-light text-xs font-bold mb-2" for="sname">
-											{{ $t('trend-micro-mssp.leadgen.sname') }}
+											{{ $t('trend-micro-msp.leadgen.sname') }}
 										</label>
 										<input class="appearance-none block w-full bg-grey-dark text-black border py-3 px-4 mb-2" :class="[errors.sname ? 'border-red' : '']" id="sname" name="sname" type="text" @blur="hasError">
-										<p class="text-red text-xs italic" v-show="errors.sname" v-html="$t('trend-micro-mssp.leadgen.errorSname')"></p>
+										<p class="text-red text-xs italic" v-show="errors.sname" v-html="$t('trend-micro-msp.leadgen.errorSname')"></p>
 									</div>
 								</div>
 								<div class="mb-6 sm:w-1/2">
 									<div class="mr-2">
 										<label class="block uppercase tracking-wide text-grey-light text-xs font-bold mb-2" for="email">
-											{{ $t('trend-micro-mssp.leadgen.email') }}
+											{{ $t('trend-micro-msp.leadgen.email') }}
 										</label>
 										<input class="appearance-none block w-full bg-grey-dark text-black border py-3 px-4 mb-2" :class="[errors.email ? 'border-red' : '']" id="email" name="email" type="email" @blur="hasError">
-										<p class="text-red text-xs italic" v-show="errors.email" v-html="$t('trend-micro-mssp.leadgen.errorEmail')"></p>
+										<p class="text-red text-xs italic" v-show="errors.email" v-html="$t('trend-micro-msp.leadgen.errorEmail')"></p>
 									</div>
 								</div>
 								<div class="mb-6 sm:w-1/2">
 									<div class="ml-2">
 										<label class="block uppercase tracking-wide text-grey-light text-xs font-bold mb-2" for="tel">
-											{{ $t('trend-micro-mssp.leadgen.phone') }}
+											{{ $t('trend-micro-msp.leadgen.phone') }}
 										</label>
 										<input class="appearance-none block w-full bg-grey-dark text-black border py-3 px-4 mb-2" :class="[errors.tel ? 'border-red' : '']" id="tel" name="phone" type="tel" @blur="hasError">
-										<p class="text-red text-xs italic" v-show="errors.tel" v-html="$t('trend-micro-mssp.leadgen.errorPhone')"></p>
+										<p class="text-red text-xs italic" v-show="errors.tel" v-html="$t('trend-micro-msp.leadgen.errorPhone')"></p>
 									</div>
 								</div>
 								<div class="mb-6 sm:w-1/2">
 									<div class="mr-2">
 										<label class="block uppercase tracking-wide text-grey-light text-xs font-bold mb-2" for="position">
-											{{ $t('trend-micro-mssp.leadgen.title') }}
+											{{ $t('trend-micro-msp.leadgen.title') }}
 										</label>
 										<input class="appearance-none block w-full bg-grey-dark text-black border py-3 px-4 mb-2" :class="[errors.position ? 'border-red' : '']" id="position" name="title" type="text" @blur="hasError">
-										<p class="text-red text-xs italic" v-show="errors.position" v-html="$t('trend-micro-mssp.leadgen.errorTitle')"></p>
+										<p class="text-red text-xs italic" v-show="errors.position" v-html="$t('trend-micro-msp.leadgen.errorTitle')"></p>
 									</div>
 								</div>
 								<div class="mb-6 sm:w-1/2">
 									<div class="ml-2">
 										<label class="block uppercase tracking-wide text-grey-light text-xs font-bold mb-2" for="company">
-											{{ $t('trend-micro-mssp.leadgen.company') }}
+											{{ $t('trend-micro-msp.leadgen.company') }}
 										</label>
 										<input class="appearance-none block w-full bg-grey-dark text-black border py-3 px-4 mb-2" :class="[errors.company ? 'border-red' : '']" id="company" name="company" type="text" @blur="hasError">
-										<p class="text-red text-xs italic" v-show="errors.company" v-html="$t('trend-micro-mssp.leadgen.errorCompany')"></p>
+										<p class="text-red text-xs italic" v-show="errors.company" v-html="$t('trend-micro-msp.leadgen.errorCompany')"></p>
 									</div>
 								</div>
 								<div class="mb-6 w-full">
 									<div class="">
 										<label class="block uppercase tracking-wide text-grey-light text-xs font-bold mb-2" for="country">
-											{{ $t('trend-micro-mssp.leadgen.country') }}
+											{{ $t('trend-micro-msp.leadgen.country') }}
 										</label>
 										<div class="inline-block relative w-full mb-2">
 											<select class="block appearance-none rounded-none w-full bg-grey-dark border text-grey-light py-3 px-4 pr-8" :class="[errors.country ? 'border-red' : '']" id="country" name="country" @blur="hasError">
-												<option value="" v-html="$t('trend-micro-mssp.leadgen.pleaseselect')"></option>
+												<option value="" v-html="$t('trend-micro-msp.leadgen.pleaseselect')"></option>
 												<option v-for="(item, key) in assessment.fields.country.options" :value="key">{{ item }}</option>
 											</select>
 											<div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-light">
 												<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
 											</div>
 										</div>
-										<p class="text-red text-xs italic" v-show="errors.country" v-html="$t('trend-micro-mssp.leadgen.errorCountry')"></p>
+										<p class="text-red text-xs italic" v-show="errors.country" v-html="$t('trend-micro-msp.leadgen.errorCountry')"></p>
 									</div>
 								</div>
 								<div class="mb-6 w-full">
@@ -102,15 +102,15 @@
 												<font-awesome-icon :icon="icons.faSquare" v-if="!terms" />
 												<font-awesome-icon :icon="icons.faCheckSquare" v-else />
 											</div>
-											<div class="flex-grow" v-html="$t('trend-micro-mssp.byreg')">
+											<div class="flex-grow" v-html="$t('trend-micro-msp.byreg')">
 												
 											</div>
 										</div>
-										<p class="text-red text-xs italic" v-show="errors.terms" v-html="$t('trend-micro-mssp.leadgen.errorAccept')"></p>
+										<p class="text-red text-xs italic" v-show="errors.terms" v-html="$t('trend-micro-msp.leadgen.errorAccept')"></p>
 									</label>
 								</div>
 								<div class="mb-6 w-full">
-									<button type="submit" :disabled="isSubmitting" class="text-center block bg-trend-red hover:bg-white text-white hover:text-trend-red py-4 px-6 no-underline" :class="[{'cursor-not-allowed':isSubmitting}]" @click.prevent="checkForErrors"><font-awesome-icon class="mr-2" :class="[{'fa-spin': isSubmitting}]" :icon="isSubmitting ? icons.faSyncAlt : icons.faEnvelope"></font-awesome-icon> {{ $t('trend-micro-mssp.leadgen.send') }}</button>
+									<button type="submit" :disabled="isSubmitting" class="text-center block bg-trend-red hover:bg-white text-white hover:text-trend-red py-4 px-6 no-underline" :class="[{'cursor-not-allowed':isSubmitting}]" @click.prevent="checkForErrors"><font-awesome-icon class="mr-2" :class="[{'fa-spin': isSubmitting}]" :icon="isSubmitting ? icons.faSyncAlt : icons.faEnvelope"></font-awesome-icon> {{ $t('trend-micro-msp.leadgen.send') }}</button>
 								</div>
 							</div>
 						</form>

@@ -46,7 +46,7 @@ class ToolController extends Controller
 			return redirect('/');
 		}else{
 			$tool = session('product');
-			if($tool['alias']!=='ntt-sdwan' && $tool['alias']!=='trend-micro-mssp'){
+			if($tool['alias']!=='ntt-sdwan' && $tool['alias']!=='trend-micro-msp'){
 				$this->middleware(['reloadquestions'], ['only' => [
 					'run',
 				]]);

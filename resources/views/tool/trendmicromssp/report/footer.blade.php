@@ -17,7 +17,7 @@ $manifest = json_decode($json, TRUE);
 <div class="w-5/6 mx-auto border-t border-grey"></div>
 <div class="w-5/6 mx-auto py-2 pt-4 clearfix">
 	<div class="float-left w-2/3 text-ntt-blue text-xs mt-4">
-		<strong>{{ trans('trend-micro-mssp.title') }}</strong>
+		<strong>{{ trans('trend-micro-msp.title') }}</strong>
 	</div>
 	<div class="float-left w-1/3 text-right">
 		<img class="" src="{{ asset('images/tools/9/trend-micro-logo.svg')}}" alt="" style="width: 30mm" />

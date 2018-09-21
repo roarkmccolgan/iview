@@ -33,7 +33,7 @@ return [
        'extra',
        'ntt-sdwan',
        'validation',
-       'trend-micro-mssp',
+       'trend-micro-msp',
     ],
 
     /*

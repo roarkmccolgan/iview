@@ -203,7 +203,7 @@ return array(
             '
                 <div class="w-full my-3 bg-blackblack border border-black sm:w-1/2 p-3">
                     <div class="flex items-center text-grey-dark">
-                        <p class="text-grey mr-2">65% of B2B technology buyers only contact a sales person AFTER a decision has been made &hellip; and they\'re going online to</p>
+                        <p class="text-grey mr-2">65% of B2B technology buyers only contact a sales person AFTER a decision has been made and they\'re going online to</p>
                         <img class="w-32 h-32" src="/images/tools/9/icons/boat.svg" />
                     </div>
                 </div>

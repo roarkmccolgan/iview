@@ -28,7 +28,7 @@ return array(
     'send'=>'We can send you the full results directly to your mailbox',
     'register'=>'Register now to receive your personalized report',
     'provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
-    'byreg'=>'By registering with IDC, you accept our <a href="https://mssp.idcready.net/privacy" target="_blank">Privacy Policy</a> and the Trend Micro <a href="https://www.trendmicro.com/en_us/about/legal/privacy-policy-web.html" target="_blank">Privacy Policy</a>.',
+    'byreg'=>'By registering with IDC, you accept our <a href="https://msp.idcready.net/privacy" target="_blank">Privacy Policy</a> and the Trend Micro <a href="https://www.trendmicro.com/en_us/about/legal/privacy-policy-web.html" target="_blank">Privacy Policy</a>.',
     'wait'=>'While you\'re waiting why not tweet your results and see how your colleagues measure up?',
     'twitterlink'=>'https://twitter.com/home?status=Is%20your%20business%20GDPR%20ready?%20http%3A//bit.ly/2AwihN4%20%23Symantec',
     'facebooklink'=>'https://www.facebook.com/sharer/sharer.php?u=http%3A//bit.ly/2AwihN4',
@@ -61,7 +61,7 @@ return array(
         'body' => 'As promised, here\'s a link to download your Trend Micro MSP Readiness Report. This breaks down your results by category and provides you with actionable recommendations.',
         'link' => 'Download PDF Report',
         'link_inline' => 'View Report in your browser',
-        'extra' => 'Once you\'ve read the report why not visit Trend Micro <a href="https://www.trendmicro.com/en_dk/partners/managed-service-provider.html" style="color:#054683">Managed Service Providers</a>',
+        'extra' => 'Once you\'ve read the report why not visit Trend Micro <a href="https://www.trendmicro.com/en_gb/partners/managed-service-provider.html" style="color:#054683">Managed Service Providers</a>',
         'regards' => 'Regards',
         'team' => 'The IDC Team'
     ],
@@ -102,9 +102,9 @@ return array(
         <h2 class="text-blue-dark mb-6">INTRODUCTION</h2>
         <p class="mb-2">Thank you for taking part in IDC\'s managed security services (MSS) readiness assessment.</p>
 
-        <p class="mb-2">The purpose of this assessment tool is to help managed security services providers (MSSPs) build a profitable and sustainable MSS business, maximizing the opportunities this fast-growing market segment presents to these companies.</p>
+        <p class="mb-2">The purpose of this assessment tool is to help managed security services providers (MSPs) build a profitable and sustainable MSS business, maximizing the opportunities this fast-growing market segment presents to these companies.</p>
 
-        <p class="mb-2">IDC, a leading global market intelligence and advisory firm, has leveraged substantial research and experience from leading managed security services providers (MSSPs) to build a set of recommendations tailored to specific stages and elements within a managed security services business. These recommendations are contained in this report.</p>
+        <p class="mb-2">IDC, a leading global market intelligence and advisory firm, has leveraged substantial research and experience from leading managed security services providers (MSPs) to build a set of recommendations tailored to specific stages and elements within a managed security services business. These recommendations are contained in this report.</p>
         <p>
             Based on your input, your aggregate score means that you are at :result in terms of your overall MSS readiness.
         </p>
@@ -115,7 +115,7 @@ return array(
     'introduction3' => '
         <p class="text-blue-dark font-bold mb-2">Stage 1</p>
         <p class="mb-1">
-            Companies at this stage are at the very beginning of their journey to becoming an MSSP. They may be new to managed services, to selling in a subscription model and/or new to the security market.
+            Companies at this stage are at the very beginning of their journey to becoming an MSP. They may be new to managed services, to selling in a subscription model and/or new to the security market.
         </p>
         <p class="mb-1">
             This is a high-growth market, which is compounded by a severe skills shortage, and presents a massive opportunity for IT solution providers. Now is a good time to reach out to relevant vendor partners (such as Trend Micro) to understand what programmes they have in place to accelerate your entry into the MSS market. 
@@ -151,7 +151,7 @@ return array(
     'introduction7' => '
         <p class="text-blue-dark font-bold mb-2">Stage 5</p>
         <p class="mb-1">
-            Companies at Stage 5 are considered mature (and market-leading) MSSPs, with all business units optimised to support this model.
+            Companies at Stage 5 are considered mature (and market-leading) MSPs, with all business units optimised to support this model.
         </p>
         <p class="mb-1">
             The emphasis at this stage is on retaining market leadership through a continuous innovation process and focus on profitability. 
@@ -163,7 +163,7 @@ return array(
     'overallstage1'=>'
         <h2 class="leading-tight text-blue-dark mb-2">YOUR OVERALL PERFORMANCE</h2>
         <span class="block mb-2 font-bold text-grey-dark text-lg">:stage</span>
-        <p class="mb-2">Companies at this stage are at the very beginning of their journey to becoming an MSSP. They may be new to managed services, to selling in a subscription model, and/or new to the security market.</p>
+        <p class="mb-2">Companies at this stage are at the very beginning of their journey to becoming an MSP. They may be new to managed services, to selling in a subscription model, and/or new to the security market.</p>
         <p class="mb-2">This is a high growth market, which is compounded by severe skills shortage, and presents a massive opportunity for IT solution providers. Now is a good time to reach out to relevant vendor partners (like Trend Micro) to understand what programs they have in place to accelerate your entry into the MSS market.</p>
     ',
     'overallstage2'=>'
@@ -187,12 +187,12 @@ return array(
     'overallstage5'=>'
         <h2 class="leading-tight text-blue-dark mb-1">YOUR OVERALL PERFORMANCE</h2>
         <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 5</span>
-        <p class="mb-2">Companies at Stage 5 are considered mature (and market-leading) MSSPs, with all business units optimized to support this model. The emphasis at this stage is on retaining market leadership through a continuous innovation process and focus on profitability.</p>
+        <p class="mb-2">Companies at Stage 5 are considered mature (and market-leading) MSPs, with all business units optimized to support this model. The emphasis at this stage is on retaining market leadership through a continuous innovation process and focus on profitability.</p>
     ',
     'salesstage1'=>'
         <h2 class="leading-tight text-blue-dark mb-2">SALES PERFORMANCE</h2>
         <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 1</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 1 in terms of your sales readiness as an MSSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
+        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 1 in terms of your sales readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
         <div>
             <div class="mb-1 clearfix">
                 <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
@@ -269,7 +269,7 @@ return array(
     'salesstage2'=>'
         <h2 class="leading-tight text-blue-dark mb-2">SALES PERFORMANCE</h2>
         <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 2</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 2 in terms of your sales readiness as an MSSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
+        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 2 in terms of your sales readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
         <div>
             <div class="mb-1 clearfix">
                 <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
@@ -328,7 +328,7 @@ return array(
     'salesstage3'=>'
         <h2 class="leading-tight text-blue-dark mb-2">SALES PERFORMANCE</h2>
         <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 3</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 3 in terms of your sales readiness as an MSSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
+        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 3 in terms of your sales readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
         <div>
             <div class="mb-1 clearfix">
                 <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
@@ -361,7 +361,7 @@ return array(
             <div class="mb-1 clearfix">
                 <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
                 <div class="w-5/6 float-left">
-                    Look outside the existing customer base to try and win new MSSP deals with new customers, rather than focusing only on transitioning the existing base.
+                    Look outside the existing customer base to try and win new MSP deals with new customers, rather than focusing only on transitioning the existing base.
                 </div>
             </div>
             <div class="mb-1 clearfix">
@@ -399,7 +399,7 @@ return array(
     'salesstage4'=>'
         <h2 class="leading-tight text-blue-dark mb-2">SALES PERFORMANCE</h2>
         <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 4</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 4 in terms of your sales readiness as an MSSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
+        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 4 in terms of your sales readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
         <div>
             <div class="mb-1 clearfix">
                 <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
@@ -470,7 +470,7 @@ return array(
     'salesstage5'=>'
         <h2 class="leading-tight text-blue-dark mb-2">SALES PERFORMANCE</h2>
         <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 5</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 5 in terms of your sales readiness as an MSSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
+        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 5 in terms of your sales readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
         <div>
             <div class="mb-1 clearfix">
                 <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
@@ -529,7 +529,7 @@ return array(
     'marketingstage1'=>'
         <h2 class="leading-tight text-blue-dark mb-2">MARKETING PERFORMANCE</h2>
         <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 1</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 1 in terms of your marketing readiness as an MSSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
+        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 1 in terms of your marketing readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
         <div>
             <div class="mb-1 clearfix">
                 <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
@@ -588,7 +588,7 @@ return array(
     'marketingstage2'=>'
         <h2 class="leading-tight text-blue-dark mb-2">MARKETING PERFORMANCE</h2>
         <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 2</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 2 in terms of your marketing readiness as an MSSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
+        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 2 in terms of your marketing readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
         <div>
             <div class="mb-1 clearfix">
                 <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
@@ -647,7 +647,7 @@ return array(
     'marketingstage3'=>'
         <h2 class="leading-tight text-blue-dark mb-2">MARKETING PERFORMANCE</h2>
         <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 3</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 3 in terms of your marketing readiness as an MSSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
+        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 3 in terms of your marketing readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
         <div>
             <div class="mb-1 clearfix">
                 <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
@@ -706,7 +706,7 @@ return array(
     'marketingstage4'=>'
         <h2 class="leading-tight text-blue-dark mb-2">MARKETING PERFORMANCE</h2>
         <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 4</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 4 in terms of your marketing readiness as an MSSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
+        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 4 in terms of your marketing readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
         <div>
             <div class="mb-1 clearfix">
                 <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
@@ -747,7 +747,7 @@ return array(
     'marketingstage5'=>'
 <h2 class="leading-tight text-blue-dark mb-2">MARKETING PERFORMANCE</h2>
         <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 5</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 5 in terms of your marketing readiness as an MSSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
+        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 5 in terms of your marketing readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
         <div>
             <div class="mb-1 clearfix">
                 <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
@@ -788,7 +788,7 @@ return array(
     'servicesstage1'=>'
         <h2 class="leading-tight text-blue-dark mb-2">SERVICES PERFORMANCE</h2>
         <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 1</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 1 in terms of your services readiness as an MSSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
+        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 1 in terms of your services readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
         <div>
             <div class="mb-1 clearfix">
                 <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
@@ -847,7 +847,7 @@ return array(
     'servicesstage2'=>'
         <h2 class="leading-tight text-blue-dark mb-2">SERVICES PERFORMANCE</h2>
         <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 2</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 2 in terms of your services readiness as an MSSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
+        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 2 in terms of your services readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
         <div>
             <div class="mb-1 clearfix">
                 <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
@@ -894,7 +894,7 @@ return array(
     'servicesstage3'=>'
         <h2 class="leading-tight text-blue-dark mb-2">SERVICES PERFORMANCE</h2>
         <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 3</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 3 in terms of your services readiness as an MSSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
+        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 3 in terms of your services readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
         <div>
             <div class="mb-1 clearfix">
                 <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
@@ -953,7 +953,7 @@ return array(
     'servicesstage4'=>'
         <h2 class="leading-tight text-blue-dark mb-2">SERVICES PERFORMANCE</h2>
         <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 4</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 4 in terms of your services readiness as an MSSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
+        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 4 in terms of your services readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
         <div>
             <div class="mb-1 clearfix">
                 <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
@@ -1065,7 +1065,7 @@ return array(
     'securitystage1'=>'
         <h2 class="leading-tight text-blue-dark mb-2">SECURITY PERFORMANCE</h2>
         <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 1</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 1 in terms of your security readiness as an MSSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
+        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 1 in terms of your security readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
         <div>
             <div class="mb-1 clearfix">
                 <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
@@ -1086,7 +1086,7 @@ return array(
             <div class="mb-1 clearfix">
                 <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
                 <div class="w-5/6 float-left">
-                    Consider how to position the company to meet customers\' and prospects\' needs in the high-growth MSSP area.
+                    Consider how to position the company to meet customers\' and prospects\' needs in the high-growth MSP area.
                 </div>
             </div>
             <div class="mb-1 clearfix">
@@ -1106,7 +1106,7 @@ return array(
     'securitystage2'=>'
         <h2 class="leading-tight text-blue-dark mb-2">SECURITY PERFORMANCE</h2>
         <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 2</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 2 in terms of your security readiness as an MSSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
+        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 2 in terms of your security readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
         <div>
             <div class="mb-1 clearfix">
                 <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
@@ -1159,7 +1159,7 @@ return array(
     'securitystage3'=>'
         <h2 class="leading-tight text-blue-dark mb-2">SECURITY PERFORMANCE</h2>
         <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 3</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 3 in terms of your security readiness as an MSSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
+        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 3 in terms of your security readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
         <div>
             <div class="mb-1 clearfix">
                 <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
@@ -1200,7 +1200,7 @@ return array(
     'securitystage4'=>'
         <h2 class="leading-tight text-blue-dark mb-2">SECURITY PERFORMANCE</h2>
         <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 4</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 4 in terms of your security readiness as an MSSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
+        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 4 in terms of your security readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
         <div>
             <div class="mb-1 clearfix">
                 <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
@@ -1253,7 +1253,7 @@ return array(
     'securitystage5'=>'
         <h2 class="leading-tight text-blue-dark mb-2">SECURITY PERFORMANCE</h2>
         <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 5</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 5 in terms of your security readiness as an MSSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
+        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 5 in terms of your security readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
         <div>
             <div class="mb-1 clearfix">
                 <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
