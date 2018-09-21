@@ -1041,7 +1041,7 @@ export default {
             "change-langauge": "Change language",
             "download-now": "Download Now",
             "title": "IDC Managed Security Services Readiness Assessment Tool",
-            "sub-title": "How ready are you to sell managed security services?",
+            "sub-title": "What you need to be a profitable and growing MSP",
             "landing": "\n        <p class=\"mb-2\">\n            There are massive opportunities for partners in the managed security services space. \n        <\/p>\n        <p class=\"mb-2\">\n            This tool will help you discover how equipped your business is to take advantage of these, focusing on four key areas: sales, marketing, services and security.\n        <\/p>\n        <p class=\"mb-4\">\n            Following a series of questions, you will receive a personalized report assessing where your organization currently is, as well as a bespoke action plan on how to take your managed security services business to the next the level.\n        <\/p>",
             "startbut": "Let's Go!",
             "send": "We can send you the full results directly to your mailbox",

@@ -12,7 +12,7 @@ return array(
     'download-now'=>'Download Now',
 
     'title'=>'IDC Managed Security Services Readiness Assessment Tool',
-    'sub-title'=>'How ready are you to sell managed security services?',
+    'sub-title'=>'What you need to be a profitable and growing MSP',
     'landing'=>'
         <p class="mb-2">
             There are massive opportunities for partners in the managed security services space. 
