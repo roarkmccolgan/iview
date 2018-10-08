@@ -1,3 +1,4 @@
+
 <template>
 	<div class="flex-grow ieflex1">
 		<div class="container mx-auto flex flex-wrap items-center mb-4 py-4">
@@ -250,8 +251,6 @@ export default{
 	components: {
 		FontAwesomeIcon,
 	},
-	created: function(){
-
-	}
+	created: function(){}
 }
 </script>
