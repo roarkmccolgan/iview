@@ -1218,6 +1218,7 @@ trait GenerateReportTrait {
 		}else{
 			foreach (config('baseline_'.session('product.id')) as $section => $values) {
 				preg_match_all('/\d+/', session('result.'.$section.'.rating'), $matches);
+				
 				$sectionRating =  (int)$matches[0][0];
 				if(config('baseline_'.session('product.id').'.'.$section.'.report-settings.graph')){
 					$sectionGraph = Lava::DataTable();
