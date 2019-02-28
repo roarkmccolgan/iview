@@ -3,7 +3,10 @@
 return array(
     'sales' => array(
         'title' => 'Sales',
-        'description' => 'Sales',
+        'description' => '
+            <h2 class="">Your Approach to Sales</h2>
+            <p class="mb-4">Firstly, we would like to understand your current approach to selling and how you structure your sales organization</p>
+            ',
         'background' => 'sales.png',
         'nuggets' => array(
             'skills.png',
@@ -12,6 +15,8 @@ return array(
         ),
         'intermission' => [
             '
+                <p class="w-full mb-4">That\'s the Sales section completed, many thanks. The sales function is critical to transitioning to a MSP business. This is in terms of how it is structured, the capabilities of sales professionals and how you compensate them.</p>
+                <p class="w-full mb-4">IDC is seeing more and more partners reimagine their approach to sales structures and pre-sales in order to realize growth in the managed security services market.</p>
                 <h1 class="font-light text-2xl sm:text-3xl leading-tight mb-2" style="">Before we move onto the next section, did you know?</h1>
                 <p class="w-full mb-4">
                     Selling managed services effectively requires new approaches and new compensation models.
@@ -32,6 +37,7 @@ return array(
             '
         ],
         'class' => 'sec2',
+        'shuffle' => true,
         'display' => true,
         'complete' => false,
         'pages' => array(
@@ -187,7 +193,10 @@ return array(
     ),
     'marketing' => array(
         'title' => 'Marketing',
-        'description' => 'Marketing',
+        'description' => '
+            <h2 class="">Your Approach to Marketing</h2>
+            <p class="mb-4">We would now like a better understanding of how you market you organization and its solutions, as well as how you access marketing effectiveness.</p>
+        ',
         'background' => 'marketing.png',
         'nuggets' => array(
             'omnichannel.png',
@@ -195,6 +204,8 @@ return array(
         ),
         'intermission' => [
             '
+                <p class="w-full mb-4">Many thanks for completing the marketing section. How you take your business to market has never been more critical and access to digital marketing tools and measurements opens-up a whole new capability for established and aspiring MSPs. </p>
+                <p class="w-full mb-4">IDC has seen the buyer journey transform in recent years and fully automated marketing capabilities are redefining success. In fact 68% of partners are currently or considering investment in omni-channel and modern marketing in order to sell next-gen solutions.</p>
                 <h1 class="font-light text-2xl sm:text-3xl leading-tight mb-2" style="">Before we move onto the next section, did you know?</h1>
                 <p class="w-full mb-4">
                     It\'s critical to get your digital marketing strategy, experience and presence right - embracing digital methods and meeting your customers\' expectations of a good digital experience.
@@ -213,6 +224,7 @@ return array(
             '
         ],
         'class' => 'sec2',
+        'shuffle' => true,
         'display' => true,
         'complete' => false,
         'pages' => array(
@@ -331,7 +343,10 @@ return array(
     ),
     'services' => array(
         'title' => 'Services',
-        'description' => 'Services',
+        'description' => '
+            <h2 class="">Your Approach to Delivering Services</h2>
+            <p class="mb-4">Understanding your approach to delivering services is critical to accessing your capabilities as a managed services provider.</p>
+        ',
         'background' => 'services.png',
         'nuggets' => array(
             'managed.png',
@@ -339,6 +354,8 @@ return array(
         ),
         'intermission' => [
             '
+                <p class="w-full mb-4">Some interesting insights on services, thanks. The move to offering services is essential to realizing both opportunities and delivering sustainable growth to your business.</p>
+                <p class="w-full mb-4">With so few security specialist in the workplace, more and more organizations are looking to external providers to take this on and manage it for them. In fact, IDC report Security Services will have grow by 9.7% as a direct result of the skills shortage.</p>
                 <h1 class="font-light text-2xl sm:text-3xl leading-tight mb-2" style="">Before we move onto the next section, did you know?</h1>
                 <p class="w-full mb-4">
                     Customers are increasingly adopting managed services to help them improve their own operational efficiencies - this creates a massive opportunities for partners.
@@ -357,6 +374,7 @@ return array(
             '
         ],
         'class' => 'sec3',
+        'shuffle' => true,
         'display' => true,
         'complete' => false,
         'pages' => array(
@@ -475,7 +493,10 @@ return array(
     ),
     'security' => array(
         'title' => 'Security',
-        'description' => 'Security',
+        'description' => '
+            <h2 class="">Your Approach to Security</h2>
+            <p class="mb-4">We would also like to understand your security capabilities and ambitions in this area.</p>
+        ',
         'background' => 'security.png',
         'nuggets' => array(
             'money.png',
@@ -485,6 +506,8 @@ return array(
         ),
         'intermission' => [
             '
+                <p class="w-full mb-4">Good to know how you’re set with security capabilities. This helps define some of the key elements you need to develop to take full advantage of the huge opportunities in managed security services. </p>
+                <p class="w-full mb-4">With so few security specialist in the workplace, more and more organizations are looking to external providers to take this on and manage it for them. In fact, IDC report Security Services will have grow by 9.7% as a direct result of the skills shortage.</p>
                 <h1 class="font-light text-2xl sm:text-3xl leading-tight mb-2" style="">Before we move onto the next section, did you know?</h1>
                 <p class="w-full mb-4">
                     Did you know the growth rate of MSS in Western Europe is almost 9x faster than general IT outsourcing? 
@@ -504,6 +527,7 @@ return array(
             '
         ],
         'class' => 'sec3',
+        'shuffle' => true,
         'display' => true,
         'complete' => false,
         'pages' => array(
@@ -622,7 +646,10 @@ return array(
     ),
     'metrics' => array(
         'title' => 'Metrics',
-        'description' => 'Metrics',
+        'description' => '
+            <h2 class="">Understanding your Business</h2>
+            <p class="mb-4">To finalize our assessment of your business and its potential, we just need to ask you some questions on your organization’s scale and experience.</p>
+        ',
         'ignore' => true,
         'class' => 'sec3',
         'display' => true,

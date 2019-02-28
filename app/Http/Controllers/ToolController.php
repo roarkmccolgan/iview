@@ -220,6 +220,7 @@ public function run(Request $request, $subdomain)
 				$item['questions'][$qKey]['intermission'] = isset($section['intermission']) ? $section['intermission'] : '';
 				$item['questions'][$qKey]['complete'] = isset($section['complete']) ? $section['complete'] : '';
 				$item['questions'][$qKey]['class'] = isset($section['class']) ? $section['class'] : '';
+				$item['questions'][$qKey]['shuffle'] = isset($section['shuffle']) ? $section['shuffle'] : false;
 				$item['questions'][$qKey]['page'] = substr($itemKey,4);
 				$item['questions'][$qKey]['qKey'] = $qKey;
 			}

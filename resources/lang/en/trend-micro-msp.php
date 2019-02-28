@@ -11,17 +11,17 @@ return array(
     'change-langauge'=>'Change language',
     'download-now'=>'Download Now',
 
-    'title'=>'IDC Managed Security Services Readiness Assessment Tool',
+    'title'=>'IDC Partner Assessment Tool',
     'sub-title'=>'What you need to be a profitable and growing MSP',
     'landing'=>'
         <p class="mb-2">
-            There are massive opportunities for partners in the managed security services space. 
+            There are massive opportunities for partners in the managed security services space.
         </p>
         <p class="mb-2">
-            This tool will help you discover how equipped your business is to take advantage of these, focusing on four key areas: sales, marketing, services and security.
+            This IDC Partner Assessment tool will help you discover how well your business is placed to take advantage of this.This tool will help you discover how equipped your business is to take advantage of these, focusing on four key areas: sales, marketing, services and security.
         </p>
         <p class="mb-4">
-            Following a series of questions, you will receive a personalized report assessing where your organization currently is, as well as a bespoke action plan on how to take your managed security services business to the next the level.
+            Simply answer some quick-fire questions on how you currently approach sales, marketing, services and security, to receive a personalized assessment and set of key recommendations on taking your business to the next level.
         </p>',
     'startbut'=>'Let\'s Go!',
     

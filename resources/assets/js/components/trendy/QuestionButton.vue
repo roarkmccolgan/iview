@@ -89,6 +89,9 @@ export default{
 		},
 		options: function(){
 			if(this.showDetails){
+				if(this.question.shuffle){
+					return this.shuffleArray(this.theOptions);
+				}
 				return this.theOptions;
 			}else{
 				return {}
@@ -115,6 +118,25 @@ export default{
 			this.showOther = type == 'other' && this.multiple===false ? true:false;
 			this.$emit('selectOption',selected);
 
+		},
+		shuffleArray: function(array) {
+		    let counter = array.length;
+
+		    // While there are elements in the array
+		    while (counter > 0) {
+		        // Pick a random index
+		        let index = Math.floor(Math.random() * counter);
+
+		        // Decrease counter by 1
+		        counter--;
+
+		        // And swap the last element with it
+		        let temp = array[counter];
+		        array[counter] = array[index];
+		        array[index] = temp;
+		    }
+
+		    return array;
 		},
 		inAnswer: function(label){
 			var exists = false;

@@ -18,7 +18,7 @@ class CreateAssessmentsTable extends Migration
             $table->string('fname');
             $table->string('lname');
             $table->string('email');
-            $table->string('company');
+            $table->string('company')->nullable();
             $table->string('country');
             $table->string('referer')->nullable();
             $table->string('tel')->nullable();

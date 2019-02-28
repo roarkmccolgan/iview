@@ -36,6 +36,7 @@
 					</div>
 				</div>
 				<div class="container mx-auto py-2 text-white ">
+					<span v-html="currentQuestion.description"></span>
 					<span class="text-sm text-grey-light hidden sm:block sm:my-2">{{currentQuestion.section | toTitle}} - {{ $t('general.question') | toTitle}} {{currentQuestion.section_info.number}} {{$t('general.of')}} {{currentQuestion.section_info.total}}</span>
 					<transition name="fade">
 						<h1 class="font-light text-2xl sm:text-3xl leading-tight" v-show="showDetails" v-html="currentQuestion.question"></h1>

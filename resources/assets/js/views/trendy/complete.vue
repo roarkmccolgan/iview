@@ -52,30 +52,12 @@
 									</div>
 								</div>
 								<div class="mb-6 sm:w-1/2">
-									<div class="ml-2">
-										<label class="block uppercase tracking-wide text-grey-light text-xs font-bold mb-2" for="tel">
-											{{ $t('trend-micro-msp.leadgen.phone') }}
-										</label>
-										<input class="appearance-none block w-full bg-grey-dark text-black border py-3 px-4 mb-2" :class="[errors.tel ? 'border-red' : '']" id="tel" name="phone" type="tel" @blur="hasError">
-										<p class="text-red text-xs italic" v-show="errors.tel" v-html="$t('trend-micro-msp.leadgen.errorPhone')"></p>
-									</div>
-								</div>
-								<div class="mb-6 sm:w-1/2">
 									<div class="mr-2">
 										<label class="block uppercase tracking-wide text-grey-light text-xs font-bold mb-2" for="position">
 											{{ $t('trend-micro-msp.leadgen.title') }}
 										</label>
 										<input class="appearance-none block w-full bg-grey-dark text-black border py-3 px-4 mb-2" :class="[errors.position ? 'border-red' : '']" id="position" name="title" type="text" @blur="hasError">
 										<p class="text-red text-xs italic" v-show="errors.position" v-html="$t('trend-micro-msp.leadgen.errorTitle')"></p>
-									</div>
-								</div>
-								<div class="mb-6 sm:w-1/2">
-									<div class="ml-2">
-										<label class="block uppercase tracking-wide text-grey-light text-xs font-bold mb-2" for="company">
-											{{ $t('trend-micro-msp.leadgen.company') }}
-										</label>
-										<input class="appearance-none block w-full bg-grey-dark text-black border py-3 px-4 mb-2" :class="[errors.company ? 'border-red' : '']" id="company" name="company" type="text" @blur="hasError">
-										<p class="text-red text-xs italic" v-show="errors.company" v-html="$t('trend-micro-msp.leadgen.errorCompany')"></p>
 									</div>
 								</div>
 								<div class="mb-6 w-full">

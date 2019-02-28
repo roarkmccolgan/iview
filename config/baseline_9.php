@@ -73,9 +73,7 @@ return array(
             'fname'=>'required|min:2|max:255',
             'sname'=>'required|min:2|max:255',
             'email'=>'required|email',
-            'phone'=>'required',
             'title'=>'required|min:3|max:255',
-            'company'=>'required|min:2|max:255',
             'country'=>'required',
             'terms'=>'required'
         ]
