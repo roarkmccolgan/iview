@@ -195,7 +195,7 @@ return array(
         'title' => 'Marketing',
         'description' => '
             <h2 class="">Your Approach to Marketing</h2>
-            <p class="mb-4">We would now like a better understanding of how you market you organization and its solutions, as well as how you access marketing effectiveness.</p>
+            <p class="mb-4">We would now like a better understanding of how you market your organization and its solutions, as well as how you access marketing effectiveness.</p>
         ',
         'background' => 'marketing.png',
         'nuggets' => array(
@@ -355,7 +355,7 @@ return array(
         'intermission' => [
             '
                 <p class="w-full mb-4">Some interesting insights on services, thanks. The move to offering services is essential to realizing both opportunities and delivering sustainable growth to your business.</p>
-                <p class="w-full mb-4">With so few security specialist in the workplace, more and more organizations are looking to external providers to take this on and manage it for them. In fact, IDC report Security Services will have grow by 9.7% as a direct result of the skills shortage.</p>
+                <p class="w-full mb-4">With so few security specialists in the workplace, more and more organizations are looking to external providers to take this on and manage it for them. In fact, IDC report Security Services will grow by 9.7% as a direct result of the skills shortage.</p>
                 <h1 class="font-light text-2xl sm:text-3xl leading-tight mb-2" style="">Before we move onto the next section, did you know?</h1>
                 <p class="w-full mb-4">
                     Customers are increasingly adopting managed services to help them improve their own operational efficiencies - this creates a massive opportunities for partners.
@@ -506,8 +506,8 @@ return array(
         ),
         'intermission' => [
             '
-                <p class="w-full mb-4">Good to know how you’re set with security capabilities. This helps define some of the key elements you need to develop to take full advantage of the huge opportunities in managed security services. </p>
-                <p class="w-full mb-4">With so few security specialist in the workplace, more and more organizations are looking to external providers to take this on and manage it for them. In fact, IDC report Security Services will have grow by 9.7% as a direct result of the skills shortage.</p>
+                <p class="w-full mb-4">Good to know how you’re set with security capabilities. This helps define some of the key elements you need to develop to take full advantage of the huge opportunities in managed security services.</p>
+                <p class="w-full mb-4">IDC research shows significant growth in the managed security market and increasing demand from organizations looking for providers to manage this aspect of their business.</p>
                 <h1 class="font-light text-2xl sm:text-3xl leading-tight mb-2" style="">Before we move onto the next section, did you know?</h1>
                 <p class="w-full mb-4">
                     Did you know the growth rate of MSS in Western Europe is almost 9x faster than general IT outsourcing? 

@@ -18,7 +18,7 @@ return array(
             There are massive opportunities for partners in the managed security services space.
         </p>
         <p class="mb-2">
-            This IDC Partner Assessment tool will help you discover how well your business is placed to take advantage of this.This tool will help you discover how equipped your business is to take advantage of these, focusing on four key areas: sales, marketing, services and security.
+            This IDC Partner Assessment tool will help you discover how well your business is placed to take advantage of this. 
         </p>
         <p class="mb-4">
             Simply answer some quick-fire questions on how you currently approach sales, marketing, services and security, to receive a personalized assessment and set of key recommendations on taking your business to the next level.
