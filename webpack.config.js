@@ -20,6 +20,11 @@ module.exports = {
 			"babel-polyfill",
 			'./resources/assets/js/trendy/main.js',
 			'./resources/assets/css/trendy/main.css'
+		],
+		nttdata: [
+			"babel-polyfill",
+			'./resources/assets/js/nttdata/main.js',
+			'./resources/assets/css/nttdata/main.css'
 		]
 	},
 	output: {

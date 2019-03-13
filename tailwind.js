@@ -51,6 +51,12 @@ let colors = {
   'ntt-gold': 'rgb(253,208,0)',
   'ntt-blue': 'rgb(0,67,134)',
 
+  'ntt-data-blue': 'rgb(15,28,80)',
+  'ntt-data-blue-light': 'rgb(103,133,193)',
+  'ntt-data-blue-lighter': 'rgb(192,205,231)',
+  'ntt-data-red': 'rgb(188,67,40)',
+  'ntt-data-yellow': 'rgb(230,182,0)',
+
   'trend-red': 'rgb(215,25,32)',
   'trend-grey': 'rgb(102,102,102)',
   
@@ -208,6 +214,21 @@ module.exports = {
     ],
     'trendy': [
       'Open Sans',
+      '-apple-system',
+      'BlinkMacSystemFont',
+      'Open Sans',
+      'Segoe UI',
+      'Roboto',
+      'Oxygen',
+      'Ubuntu',
+      'Cantarell',
+      'Fira Sans',
+      'Droid Sans',
+      'Helvetica Neue',
+      'sans-serif',
+    ],
+    'ntt-data': [
+      'Catamaran',
       '-apple-system',
       'BlinkMacSystemFont',
       'Open Sans',

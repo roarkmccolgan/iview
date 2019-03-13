@@ -34,6 +34,7 @@ return [
        'ntt-sdwan',
        'validation',
        'trend-micro-msp',
+       'nttdatadx',
     ],
 
     /*

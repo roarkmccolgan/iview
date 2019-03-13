@@ -46,7 +46,7 @@ class ToolController extends Controller
 			return redirect('/');
 		}else{
 			$tool = session('product');
-			if($tool['alias']!=='ntt-sdwan' && $tool['alias']!=='trend-micro-msp'){
+			if($tool['alias']!=='ntt-sdwan' || $tool['alias']!=='trend-micro-msp' || $tool['alias']!=='nttdatadx'){
 				$this->middleware(['reloadquestions'], ['only' => [
 					'run',
 				]]);
@@ -219,6 +219,7 @@ public function run(Request $request, $subdomain)
 				$item['questions'][$qKey]['nuggets'] = isset($section['nuggets']) ? $section['nuggets'] : '';
 				$item['questions'][$qKey]['intermission'] = isset($section['intermission']) ? $section['intermission'] : '';
 				$item['questions'][$qKey]['complete'] = isset($section['complete']) ? $section['complete'] : '';
+				$item['questions'][$qKey]['title'] = isset($section['title']) ? $section['title'] : '';
 				$item['questions'][$qKey]['class'] = isset($section['class']) ? $section['class'] : '';
 				$item['questions'][$qKey]['shuffle'] = isset($section['shuffle']) ? $section['shuffle'] : false;
 				$item['questions'][$qKey]['page'] = substr($itemKey,4);
@@ -230,7 +231,7 @@ public function run(Request $request, $subdomain)
 	$totalQuestions = count($onlyQuestions);
 	$return_visitor = $request->cookie('quiz_progress');
 	$class = 'intro';
-	if($tool->template=='nttsdwan' || $tool->template=='trendmicromssp'){
+	if($tool->template=='nttsdwan' || $tool->template=='trendmicromssp' || $tool->template=='nttdata'){
 		$view = 'tool.'.session('template').'.assessment';
 	}else{
 		$view = 'tool.'.session('template').'.intro';
