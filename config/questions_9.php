@@ -161,27 +161,27 @@ return array(
                         'name'=> 4,
                         'options'=>array(
                             array(
-                                'label'=>'We do not offer any support around our managed services offerings',
+                                'label'=>'Billing is not offered around MSP/cloud engagements',
                                 'value'=>1.25,
                                 'checked'=>false,
                             ),
                             array(
-                                'label'=>'We offer support on an ad-hoc basis as customers require',
+                                'label'=>'Billing is offered around MSP offerings but on an annual basis',
                                 'value'=>2.50,
                                 'checked'=>false,
                             ),
                             array(
-                                'label'=>'First-line support is standard',
+                                'label'=>'We do monthly MSP billing based on consumption',
                                 'value'=>3.75,
                                 'checked'=>false,
                             ),
                             array(
-                                'label'=>'We offer 24/7 support through dedicated staff',
+                                'label'=>'We have a sophisticated billing offering with real-time usage on a dashboard',
                                 'value'=>5.00,
                                 'checked'=>false,
                             ),
                             array(
-                                'label'=>'We offer pre-emptive support based on sophisticated analytics ',
+                                'label'=>'Our billing platform offers a single bill to customers combining multiple vendor solutions, displayed in real time',
                                 'value'=>6.25,
                                 'checked'=>false,
                             )

@@ -640,7 +640,7 @@ return array(
         ),
         'intermission' => false,
         'class' => 'sec2',
-        'shuffle' => true,
+        'shuffle' => false,
         'display' => true,
         'complete' => false,
         'pages' => array(
@@ -652,16 +652,6 @@ return array(
                         'question'=>'What is the typical balance in your company for digital transformation initiatives?',
                         'name'=> 5,
                         'options'=>array(
-                            array(
-                                'label'=>'Initiatives driven by individual stakeholders (e.g., Business, IT) within organizational siloes.',
-                                'value'=>2,
-                                'checked'=>false,
-                            ),
-                            array(
-                                'label'=>'Enterprise wide approach and dedicated roles and units to drive digital transformation initiatives',
-                                'value'=>4,
-                                'checked'=>false,
-                            ),
                             array(
                                 'label'=>'All or almost all individual business unit DX Initiatives',
                                 'value'=>1,
@@ -1060,7 +1050,7 @@ return array(
         ),
         'intermission' => '',
         'class' => 'sec3',
-        'shuffle' => true,
+        'shuffle' => false,
         'display' => true,
         'complete' => false,
         'pages' => array(
