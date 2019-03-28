@@ -656,9 +656,9 @@ trait GenerateReportTrait {
 		} elseif(session('product.id')==8){
 			//User overall stage number and ordinal
 			$overallNumber = (int) filter_var(session('result.overall.rating'), FILTER_SANITIZE_NUMBER_INT);
-			$infrastructureNumber =  (int) filter_var(session('result.infrastructure.rating'), FILTER_SANITIZE_NUMBER_INT);
-			$intelligenceNumber =  (int) filter_var(session('result.intelligence.rating'), FILTER_SANITIZE_NUMBER_INT);
-			$operationsNumber =  (int) filter_var(session('result.operations.rating'), FILTER_SANITIZE_NUMBER_INT);		
+			$dxAdoptionNumber =  (int) filter_var(session('result.infrastructure.rating'), FILTER_SANITIZE_NUMBER_INT);
+			$successIdDxNumber =  (int) filter_var(session('result.intelligence.rating'), FILTER_SANITIZE_NUMBER_INT);
+			$connectedFinancialServicesNumber =  (int) filter_var(session('result.operations.rating'), FILTER_SANITIZE_NUMBER_INT);		
 
 			$vars['introduction'] = trans(session('product.alias').'.introduction',
 				[
@@ -891,7 +891,7 @@ trait GenerateReportTrait {
 				]
 			);
 
-			$customCopy.= trans(session('product.alias').'.infrastructure-'.$infrastructureNumber.'-'.$rating);
+			$customCopy.= trans(session('product.alias').'.infrastructure-'.$dxAdoptionNumber.'-'.$rating);
 
 			//infrastructure graph
 			$settings['bar_space'] = 10;
@@ -968,7 +968,7 @@ trait GenerateReportTrait {
 				]
 			);
 
-			$customCopy.= trans(session('product.alias').'.intelligence-'.$intelligenceNumber.'-'.$rating);
+			$customCopy.= trans(session('product.alias').'.intelligence-'.$successIdDxNumber.'-'.$rating);
 
 			//intelligence graph
 			$settings['back_image'] = asset('images/tools/8/comparison_intelligence'.session('locale').'.png');
@@ -1043,7 +1043,7 @@ trait GenerateReportTrait {
 					'icon'=>asset('/images/tools/8/operationsicon.png')
 				]
 			);
-			$customCopy.= trans(session('product.alias').'.operations-'.$operationsNumber.'-'.$rating);
+			$customCopy.= trans(session('product.alias').'.operations-'.$connectedFinancialServicesNumber.'-'.$rating);
 
 			//operations graph
 			$settings['back_image'] = asset('images/tools/8/comparison_operations'.session('locale').'.png');
@@ -1135,9 +1135,9 @@ trait GenerateReportTrait {
 			
 		}elseif(session('product.id')==9) {
 			$overallNumber = (int) filter_var(session('result.overall.rating'), FILTER_SANITIZE_NUMBER_INT);
-			$infrastructureNumber =  (int) filter_var(session('result.infrastructure.rating'), FILTER_SANITIZE_NUMBER_INT);
-			$intelligenceNumber =  (int) filter_var(session('result.intelligence.rating'), FILTER_SANITIZE_NUMBER_INT);
-			$operationsNumber =  (int) filter_var(session('result.operations.rating'), FILTER_SANITIZE_NUMBER_INT);		
+			$dxAdoptionNumber =  (int) filter_var(session('result.infrastructure.rating'), FILTER_SANITIZE_NUMBER_INT);
+			$successIdDxNumber =  (int) filter_var(session('result.intelligence.rating'), FILTER_SANITIZE_NUMBER_INT);
+			$connectedFinancialServicesNumber =  (int) filter_var(session('result.operations.rating'), FILTER_SANITIZE_NUMBER_INT);		
 
 			$vars['introduction1'] = trans(session('product.alias').'.introduction1',
 				[
@@ -1210,6 +1210,184 @@ trait GenerateReportTrait {
 					'url'=>session('url')
 				]
 			);
+
+			$customCopy.= '<div class="spacer"></div>';
+
+			$vars['sectionCopy'] = $customCopy;
+			
+		}elseif(session('product.id')==10) {
+			$base = config('baseline_'.session('product.id').'.overall');
+			//dd(session('user'));
+			$overallNumber = (int) filter_var(session('result.overall.rating'), FILTER_SANITIZE_NUMBER_INT);
+			$dxAdoptionNumber =  (int) filter_var(session('result.dx-adoption.rating'), FILTER_SANITIZE_NUMBER_INT);
+			$successInDxNumber =  (int) filter_var(session('result.success-in-dx.rating'), FILTER_SANITIZE_NUMBER_INT);
+			$connectedFinancialServicesNumber =  (int) filter_var(session('result.connected-financial-services.rating'), FILTER_SANITIZE_NUMBER_INT);
+
+			$verticals = collect([
+				'banking',
+				'insurance',
+				'capital-markets',
+				'other-fsi'
+			]);
+			$vertical_block = $base['block-vertical-'.$verticals[$verticals->search(strtolower(session('user.industry')))].'-'.$overallNumber];
+
+			$orgsizes = collect([
+				'100-499',
+				'500-999',
+				'1000-4999',
+				'5000-9999',
+				'10000+'
+			]);
+			$organisation_block = $base['block-size-'.$orgsizes[$orgsizes->search(strtolower(session('user.employees')))].'-'.$overallNumber];
+
+			$countries = collect([
+				'us',
+				'we',
+				'jp',
+				'latam'
+			]);
+			$geographic_block = $base['block-country-'.$countries[$countries->search(strtolower(session('user.country')))].'-'.$overallNumber];
+
+			$vars['introduction'] = trans(session('product.alias').'.introduction',
+				[
+					'result'=>trans(session('product.alias').'.'.session('result.overall.rating'))
+				]
+			);
+			$customCopy = '';
+
+			$overallRating = session('result.overall.rating');
+
+			//overall
+			$rating = session('result.overall.rating');
+			$vars['overall'] = trans(
+				session('product.alias').'.overall'.$rating,
+				[
+					'vertical_style' => "left: {$vertical_block[0]}mm; top: {$vertical_block[1]}mm;width: {$vertical_block[2]}mm; height: {$vertical_block[3]}mm;",
+					'organisation_style' => "left: {$organisation_block[0]}mm; top: {$organisation_block[1]}mm;width: {$organisation_block[2]}mm; height: {$organisation_block[3]}mm;",
+					'geographic_style' => "left: {$geographic_block[0]}mm; top: {$geographic_block[1]}mm;width: {$geographic_block[2]}mm; height: {$geographic_block[3]}mm;",
+					'img' => 'url('.session('url').'/'.'images/tools/10/overall_graph_bg@2x-100_overall_graph_bg.jpg)'
+				]
+			);
+
+			//DX Adoption
+			$dxAdoptionRating = session('result.dx-adoption.rating');
+			$vars['dxAdoption'] = trans(session('product.alias').'.dx-adoption'.$overallRating.$dxAdoptionRating);
+			
+			//Q1
+			$vars['dxAdoption'] .= trans(session('product.alias').'.dx-adoptionq1intro');
+			if($this->getQuestionScoreNew(1, 'dx-adoption', 1)<=2.5){
+				$vars['dxAdoption'] .= trans(session('product.alias').'.dx-adoptionq1'.$overallRating.'a');
+			}elseif($this->getQuestionScoreNew(1, 'dx-adoption', 1) > 2.5 && $this->getQuestionScoreNew(1, 'dx-adoption', 1) <= 3.5){
+				$vars['dxAdoption'] .= trans(session('product.alias').'.dx-adoptionq1'.$overallRating.'b');
+			}else{
+				$vars['dxAdoption'] .= trans(session('product.alias').'.dx-adoptionq1'.$overallRating.'c');
+			}
+
+			//Q2
+			$vars['dxAdoption'] .= trans(session('product.alias').'.dx-adoptionq2intro');
+			if($this->getQuestionScoreNew(2, 'dx-adoption', 2) == 2){
+				$vars['dxAdoption'] .= trans(session('product.alias').'.dx-adoptionq2'.$overallRating.'a');
+			}elseif($this->getQuestionScoreNew(2, 'dx-adoption', 2) == 3){
+				$vars['dxAdoption'] .= trans(session('product.alias').'.dx-adoptionq2'.$overallRating.'b');
+			}else{
+				$vars['dxAdoption'] .= trans(session('product.alias').'.dx-adoptionq2'.$overallRating.'c');
+			}
+
+			//Q3
+			$vars['dxAdoption'] .= trans(session('product.alias').'.dx-adoptionq3intro');
+			if(collect($this->getAnswerText(3, 'dx-adoption', 3))->first() == 'none' || collect($this->getAnswerText(3, 'dx-adoption', 3))->first() == '0-9%'){
+				$vars['dxAdoption'] .= trans(session('product.alias').'.dx-adoptionq3'.$overallRating.'a');
+			}elseif(collect($this->getAnswerText(3, 'dx-adoption', 3))->first() == '10-19%' || collect($this->getAnswerText(3, 'dx-adoption', 3))->first() == '20-29%'){
+				$vars['dxAdoption'] .= trans(session('product.alias').'.dx-adoptionq3'.$overallRating.'b');
+			}elseif(collect($this->getAnswerText(3, 'dx-adoption', 3))->first() == '30-39%' || collect($this->getAnswerText(3, 'dx-adoption', 3))->first() == '40% and above'){
+				$vars['dxAdoption'] .= trans(session('product.alias').'.dx-adoptionq3'.$overallRating.'c');
+			}elseif(collect($this->getAnswerText(3, 'dx-adoption', 3))->last() == 'None' || collect($this->getAnswerText(3, 'dx-adoption', 3))->last() == '0-9%'){
+				$vars['dxAdoption'] .= trans(session('product.alias').'.dx-adoptionq3'.$overallRating.'c');
+			}elseif(collect($this->getAnswerText(3, 'dx-adoption', 3))->last() == '10-19%' || collect($this->getAnswerText(3, 'dx-adoption', 3))->last() == '20-29%'){
+				$vars['dxAdoption'] .= trans(session('product.alias').'.dx-adoptionq3'.$overallRating.'c');
+			}elseif(collect($this->getAnswerText(3, 'dx-adoption', 3))->last() == '30-39%' || collect($this->getAnswerText(3, 'dx-adoption', 3))->last() == '40% and above'){
+				$vars['dxAdoption'] .= trans(session('product.alias').'.dx-adoptionq3'.$overallRating.'c');
+			}
+
+			//Q4
+			$vars['dxAdoption'] .= trans(session('product.alias').'.dx-adoptionq4intro');
+			if($this->getQuestionScoreNew(4, 'dx-adoption', 4)<=2.5){
+				$vars['dxAdoption'] .= trans(session('product.alias').'.dx-adoptionq4'.$overallRating.'a');
+			}elseif($this->getQuestionScoreNew(4, 'dx-adoption', 4) > 2.5 && $this->getQuestionScoreNew(4, 'dx-adoption', 4) <= 3.5){
+				$vars['dxAdoption'] .= trans(session('product.alias').'.dx-adoptionq4'.$overallRating.'b');
+			}else{
+				$vars['dxAdoption'] .= trans(session('product.alias').'.dx-adoptionq4'.$overallRating.'c');
+			}
+
+
+			//Success in DX
+			$successInDxRating = session('result.success-in-dx.rating');
+			$vars['successInDx'] = trans(session('product.alias').'.success-in-dx'.$overallRating.$successInDxRating);
+
+			//Q5
+			$vars['successInDx'] .= trans(session('product.alias').'.success-in-dxq5intro');
+			if($this->getQuestionScoreNew(5, 'success-in-dx', 1) == 1){
+				$vars['successInDx'] .= trans(session('product.alias').'.success-in-dxq5'.$overallRating.'a');
+			}elseif($this->getQuestionScoreNew(5, 'success-in-dx', 1) == 2){
+				$vars['successInDx'] .= trans(session('product.alias').'.success-in-dxq5'.$overallRating.'b');
+			}elseif($this->getQuestionScoreNew(5, 'success-in-dx', 1) == 3){
+				$vars['successInDx'] .= trans(session('product.alias').'.success-in-dxq5'.$overallRating.'c');
+			}elseif($this->getQuestionScoreNew(5, 'success-in-dx', 1) == 4){
+				$vars['successInDx'] .= trans(session('product.alias').'.success-in-dxq5'.$overallRating.'d');
+			}else{
+				$vars['successInDx'] .= trans(session('product.alias').'.success-in-dxq5'.$overallRating.'e');
+			}
+
+			//Q6
+			$vars['successInDx'] .= trans(session('product.alias').'.success-in-dxq6intro');
+			$q6text = $this->getAnswerText(6, 'success-in-dx',2);
+			if(in_array('Too early to measure', $q6text)){
+				$vars['successInDx'] .= trans(session('product.alias').'.success-in-dxq6'.$overallRating.'a');
+			}elseif(in_array('Not very successful', $q6text)){
+				$vars['successInDx'] .= trans(session('product.alias').'.success-in-dxq6'.$overallRating.'b');
+			}elseif(in_array('Somewhat successful', $q6text)){
+				$vars['successInDx'] .= trans(session('product.alias').'.success-in-dxq6'.$overallRating.'c');
+			}elseif(in_array('Successful in all initiatives so far', $q6text)){
+				$vars['successInDx'] .= trans(session('product.alias').'.success-in-dxq6'.$overallRating.'d');
+			}
+
+			//Q7
+			$vars['successInDx'] .= trans(session('product.alias').'.success-in-dxq7intro');
+			if($this->getQuestionScoreNew(7, 'success-in-dx', 3)<=2.5){
+				$vars['successInDx'] .= trans(session('product.alias').'.success-in-dxq7'.$overallRating.'a');
+			}elseif($this->getQuestionScoreNew(7, 'success-in-dx', 3) > 2.5 && $this->getQuestionScoreNew(7, 'success-in-dx', 3) <= 3.5){
+				$vars['successInDx'] .= trans(session('product.alias').'.success-in-dxq7'.$overallRating.'b');
+			}else{
+				$vars['successInDx'] .= trans(session('product.alias').'.success-in-dxq7'.$overallRating.'c');
+			}
+			
+			//connected-financial-services
+			$connectedFinancialServicesRating = session('result.connected-financial-services.rating');
+			$vars['connectedFinancialServices'] = trans(session('product.alias').'.connected-financial-services'.$overallRating.$connectedFinancialServicesRating);
+
+			//Q8
+			$vars['connectedFinancialServices'] .= trans(session('product.alias').'.connected-financial-servicesq8intro');
+			if($this->getQuestionScoreNew(8, 'connected-financial-services', 1) == 1){
+				$vars['connectedFinancialServices'] .= trans(session('product.alias').'.connected-financial-servicesq8'.$overallRating.'a');
+			}elseif($this->getQuestionScoreNew(8, 'connected-financial-services', 1) == 2){
+				$vars['connectedFinancialServices'] .= trans(session('product.alias').'.connected-financial-servicesq8'.$overallRating.'b');
+			}elseif($this->getQuestionScoreNew(8, 'connected-financial-services', 1) == 3){
+				$vars['connectedFinancialServices'] .= trans(session('product.alias').'.connected-financial-servicesq8'.$overallRating.'c');
+			}elseif($this->getQuestionScoreNew(8, 'connected-financial-services', 1) == 4){
+				$vars['connectedFinancialServices'] .= trans(session('product.alias').'.connected-financial-servicesq8'.$overallRating.'d');
+			}else{
+				$vars['connectedFinancialServices'] .= trans(session('product.alias').'.connected-financial-servicesq8'.$overallRating.'e');
+			}
+
+			//Q9
+			$vars['connectedFinancialServices'] .= trans(session('product.alias').'.connected-financial-servicesq9intro');
+			if($this->getQuestionScoreNew(9, 'connected-financial-services', 2)<=2.5){
+				$vars['connectedFinancialServices'] .= trans(session('product.alias').'.connected-financial-servicesq9'.$overallRating.'a');
+			}elseif($this->getQuestionScoreNew(9, 'connected-financial-services', 2) > 2.5 && $this->getQuestionScoreNew(9, 'connected-financial-services', 2) <= 3.5){
+				$vars['connectedFinancialServices'] .= trans(session('product.alias').'.connected-financial-servicesq9'.$overallRating.'b');
+			}else{
+				$vars['connectedFinancialServices'] .= trans(session('product.alias').'.connected-financial-servicesq9'.$overallRating.'c');
+			}
 
 			$customCopy.= '<div class="spacer"></div>';
 
@@ -1487,6 +1665,22 @@ trait GenerateReportTrait {
 				if(File::exists(storage_path().'/trend-micro-report-'.$timeStamp.'.pdf')){
 					File::delete(storage_path().'/trend-micro-report-'.$timeStamp.'.pdf');
 				}
+			}elseif (session('product.id')==10){
+	        	//$pdf->setOption('cover',session('url').'/'.session('localeUrl').'template/'.session('template').'/report/cover');
+				$timeStamp = time();
+				//return $pdf->inline('invoice.pdf');
+				$pdf->save(storage_path().'/nttdata-report-'.$timeStamp.'.pdf');
+
+				$merge = new \Nextek\LaraPdfMerger\PdfManage;
+				$locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
+
+				$merge->addPDF(storage_path().'/nttdata-output-report_start'.$locale .'.pdf', 'all');
+				$merge->addPDF(storage_path().'/nttdata-report-'.$timeStamp.'.pdf', 'all');
+
+				$merge->merge('file', storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf', 'P');
+				if(File::exists(storage_path().'/nttdata-report-'.$timeStamp.'.pdf')){
+					File::delete(storage_path().'/nttdata-report-'.$timeStamp.'.pdf');
+				}
 			}else{
 				return $pdf->save(storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf');
 			}
@@ -1514,6 +1708,7 @@ trait GenerateReportTrait {
 	private function getQuestionScoreNew($q, $section,$page=false,$type='q'){
 		$page = $page == false ? $q : $page;
 		$selected = session('questions.'.$section.'.pages.page'.$page.'.questions.'.$type.$q.'.selected');
+
 		if(count($selected)>1){
 			$calc = session()->has('questions.'.$section.'.pages.page'.$page.'.questions.'.$type.$q.'.calc') ? session('questions.'.$section.'.pages.page'.$page.'.questions.'.$type.$q.'.calc') : false;
 			if($calc){
@@ -1537,14 +1732,19 @@ trait GenerateReportTrait {
 		return $val;
 	}
 
-	private function getAnswerText($q, $section,$type='q'){
-		$selected = session('questions.'.$section.'.pages.page'.$q.'.questions.'.$type.$q.'.selected');
+	private function getAnswerText($q, $section,$page=false,$type='q'){
+		$page = $page == false ? $q : $page;
+		$selected = session('questions.'.$section.'.pages.page'.$page.'.questions.'.$type.$q.'.selected');
 		$text = 0;
 		if(is_array($selected)){
 			$text = [];
 			foreach ($selected as $select) {
-				$select = explode("|", $select);
-				$text[] = $select[0];
+				if(is_array($select) && isset($select['label'])){
+					$text[]=$select['label'];
+				}else{
+					$select = explode("|", $select);
+					$text[] = $select[0];
+				}
 			}
 		}else{
 			$select = explode("|", $selected);

@@ -47,9 +47,11 @@ class ToolController extends Controller
 		}else{
 			$tool = session('product');
 			if($tool['alias']!=='ntt-sdwan' || $tool['alias']!=='trend-micro-msp' || $tool['alias']!=='nttdatadx'){
-				$this->middleware(['reloadquestions'], ['only' => [
-					'run',
-				]]);
+				if(!Session::has('quiz_complete')){
+					$this->middleware(['reloadquestions'], ['only' => [
+						'run',
+					]]);
+				}
 			}
 		}
 	}
@@ -173,7 +175,7 @@ public function storequestions(Request $request, Tool $tool)
 public function run(Request $request, $subdomain)
 {
 	$tool = $request->get('product');
-	$fields = config('terminal.default_fields');
+	$fields = Config::has('baseline_'.$tool->id.'.overall.default_fields') ? config('baseline_'.$tool->id.'.overall.default_fields') : config('terminal.default_fields');
 	$extraFields = $tool->extra_fields()->get()->toArray();
 	$languages = $tool->languages;
 	$source = [];
@@ -593,6 +595,8 @@ public function postComplete(SubmitAssessmentsRequest $request)
 	$assessment->lang = session('locale') == '' ? 'en' : session('locale');
 	$assessment->save();
 	$tracker = false;
+
+	Session::remove('quiz_complete');
 
 	//check UTM
 	if ($request->session()->has('utm')) {
@@ -1206,6 +1210,7 @@ public function postComplete(SubmitAssessmentsRequest $request)
 	}
 
 	public function completeAsessment(Request $request){
+		Session::put('quiz_complete', true);
 		$this->loadQuestions();
 		$this->baseline = config('baseline'.'_'.session('product.id'));
 		$result = array();

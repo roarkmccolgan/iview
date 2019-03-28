@@ -11,16 +11,16 @@ $manifest = json_decode($json, TRUE);
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<title>PDF Report</title>
-	<link rel="stylesheet" href="{{ asset('bundle/'.$manifest['trendy'][1])}}">
+	<link rel="stylesheet" href="{{ asset('bundle/'.$manifest['nttdata'][1])}}">
 </head>
 <body>
 <div class="w-5/6 mx-auto border-t border-grey"></div>
 <div class="w-5/6 mx-auto py-2 pt-4 clearfix">
 	<div class="float-left w-2/3 text-ntt-blue text-xs mt-4">
-		<strong>{{ trans('trend-micro-msp.title') }}</strong>
+		<strong>{{ trans('nttdatadx.title') }}</strong>
 	</div>
 	<div class="float-left w-1/3 text-right">
-		<img class="" src="{{ asset('images/tools/9/trend-micro-logo.svg')}}" alt="" style="width: 30mm" />
+		<img width="100" height="50" src="{{ asset('images/tools/10/nttdata_logo_blue.svg')}}" />
 	</div>
 </div>
 </body>

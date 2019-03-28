@@ -210,6 +210,7 @@ module.exports = {
 
   fonts: {
     'report': [
+      'Open Sans',
       'sans-serif',
     ],
     'trendy': [

@@ -18,13 +18,13 @@
 		<div class="container mx-auto">
 			<div class="flex flex-wrap justify-center">
 				<div class="w-full sm:w-1/2 relative">
-					<img class="max-w-full" :src="'/images/tools/' + assessment.tool.id + '/landing.jpg'" alt="">
+					<img class="max-w-full" :src="'/images/tools/' + assessment.tool.id + '/891021854.jpg'" alt="">
 					<div class="absolute pin sm:hidden flex flex-col items-center justify-center">
 						<router-link class="bg-ntt-data-yellow text-black hover:bg-white shadow-lg py-4 px-6 no-underline" :to="'/questions/1'">{{ $t('nttdatadx.startbut') }} <font-awesome-icon class="ml-2" :icon="icons.faArrowRight" /></router-link>
 					</div>
 				</div>
 				<div class="w-full sm:w-1/2">
-					<div class="px-2 sm:flex sm:flex-col sm:h-full sm:mr-4">
+					<div class="px-8 py-2 sm:flex sm:flex-col sm:h-full sm:mr-4">
 						<div class="text-grey-light" v-html="$t('nttdatadx.landing')"></div>
 						<div class="mt-8">
 							<router-link class="hidden sm:block text-center bg-ntt-data-yellow text-black hover:bg-white shadow-md py-4 px-6 no-underline" :to="'/questions/1'">{{ $t('nttdatadx.startbut') }} <font-awesome-icon class="ml-2" :icon="icons.faArrowRight" /></router-link>

@@ -42,7 +42,7 @@ return array(
                                         'checked'=>false,
                                     ),
                                     array(
-                                        'label'=>'Half way through',
+                                        'label'=>'Half way through the transformation process',
                                         'value'=>3,
                                         'checked'=>false,
                                     ),
@@ -52,7 +52,7 @@ return array(
                                         'checked'=>false,
                                     ),
                                     array(
-                                        'label'=>'Completed transformation',
+                                        'label'=>'Transformation is complete',
                                         'value'=>5,
                                         'checked'=>false,
                                     ),
@@ -78,7 +78,7 @@ return array(
                                         'checked'=>false,
                                     ),
                                     array(
-                                        'label'=>'Half way through',
+                                        'label'=>'Half way through the transformation process',
                                         'value'=>3,
                                         'checked'=>false,
                                     ),
@@ -88,7 +88,7 @@ return array(
                                         'checked'=>false,
                                     ),
                                     array(
-                                        'label'=>'Completed transformation',
+                                        'label'=>'Transformation is complete',
                                         'value'=>5,
                                         'checked'=>false,
                                     ),
@@ -114,7 +114,7 @@ return array(
                                         'checked'=>false,
                                     ),
                                     array(
-                                        'label'=>'Half way through',
+                                        'label'=>'Half way through the transformation process',
                                         'value'=>3,
                                         'checked'=>false,
                                     ),
@@ -124,7 +124,7 @@ return array(
                                         'checked'=>false,
                                     ),
                                     array(
-                                        'label'=>'Completed transformation',
+                                        'label'=>'Transformation is complete',
                                         'value'=>5,
                                         'checked'=>false,
                                     ),
@@ -150,7 +150,7 @@ return array(
                                         'checked'=>false,
                                     ),
                                     array(
-                                        'label'=>'Half way through',
+                                        'label'=>'Half way through the transformation process',
                                         'value'=>3,
                                         'checked'=>false,
                                     ),
@@ -160,7 +160,7 @@ return array(
                                         'checked'=>false,
                                     ),
                                     array(
-                                        'label'=>'Completed transformation',
+                                        'label'=>'Transformation is complete',
                                         'value'=>5,
                                         'checked'=>false,
                                     ),
@@ -186,7 +186,7 @@ return array(
                                         'checked'=>false,
                                     ),
                                     array(
-                                        'label'=>'Half way through',
+                                        'label'=>'Half way through the transformation process',
                                         'value'=>3,
                                         'checked'=>false,
                                     ),
@@ -196,7 +196,7 @@ return array(
                                         'checked'=>false,
                                     ),
                                     array(
-                                        'label'=>'Completed transformation',
+                                        'label'=>'Transformation is complete',
                                         'value'=>5,
                                         'checked'=>false,
                                     ),
@@ -222,7 +222,7 @@ return array(
                                         'checked'=>false,
                                     ),
                                     array(
-                                        'label'=>'Half way through',
+                                        'label'=>'Half way through the transformation process',
                                         'value'=>3,
                                         'checked'=>false,
                                     ),
@@ -232,7 +232,7 @@ return array(
                                         'checked'=>false,
                                     ),
                                     array(
-                                        'label'=>'Completed transformation',
+                                        'label'=>'Transformation is complete',
                                         'value'=>5,
                                         'checked'=>false,
                                     ),
@@ -258,7 +258,7 @@ return array(
                                         'checked'=>false,
                                     ),
                                     array(
-                                        'label'=>'Half way through',
+                                        'label'=>'Half way through the transformation process',
                                         'value'=>3,
                                         'checked'=>false,
                                     ),
@@ -268,7 +268,7 @@ return array(
                                         'checked'=>false,
                                     ),
                                     array(
-                                        'label'=>'Completed transformation',
+                                        'label'=>'Transformation is complete',
                                         'value'=>5,
                                         'checked'=>false,
                                     ),
@@ -294,7 +294,7 @@ return array(
                                         'checked'=>false,
                                     ),
                                     array(
-                                        'label'=>'Half way through',
+                                        'label'=>'Half way through the transformation process',
                                         'value'=>3,
                                         'checked'=>false,
                                     ),
@@ -304,7 +304,7 @@ return array(
                                         'checked'=>false,
                                     ),
                                     array(
-                                        'label'=>'Completed transformation',
+                                        'label'=>'Transformation is complete',
                                         'value'=>5,
                                         'checked'=>false,
                                     ),
@@ -849,7 +849,7 @@ return array(
                                 )
                             ),
                             array(
-                                'label'=>'Internet of Things  more relevant for Insurance organizations',
+                                'label'=>'Internet of Things',
                                 'name'=> 7.05,
                                 'options'=>array(
                                     array(
@@ -1229,7 +1229,7 @@ return array(
                                 )
                             ),
                             array(
-                                'label'=>'Investments in nextgensecurity',
+                                'label'=>'Investments in Next-Gen Security',
                                 'name'=> 9.7,
                                 'options'=>array(
                                     array(

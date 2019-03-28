@@ -6,8 +6,8 @@
 		<div class="container mx-auto mt-2 px-4">
 			<div class="flex flex-wrap justify-center">
 				<div class="w-full sm:w-1/2 relative">
-					<div class="" v-html="$t('nttdatadx.finishtxt', { stage: $t('nttdatadx.'+rating)})"></div>
-					<img src="/images/tools/10/report.png" class="block w-1/2 mx-auto" alt="" />
+					<div class="" v-html="$t('nttdatadx.finishtxt', { stage: $t('nttdatadx.'+rating+'-finish')})"></div>
+					<img src="/images/tools/10/report.jpg" class="block w-1/2 mx-auto" alt="" />
 				</div>
 				<div class="w-full sm:w-1/2">
 					<div class="sm:ml-8">
@@ -19,8 +19,8 @@
 								<div v-html="$t('nttdatadx.register')"></div>
 							</h2>
 							<div class="flex flex-wrap bg-ntt-data-blue-lighter px-8 py-8 pb-2 mb-4">
-								<div class="mb-6 sm:w-1/2">
-									<div class="mr-2">
+								<div class="mb-4 w-full sm:w-1/2">
+									<div class="sm:mr-2">
 										<label class="block uppercase tracking-wide text-ntt-data-blue text-xs font-bold mb-2" for="fname">
 											{{ $t('nttdatadx.leadgen.fname') }}
 										</label>
@@ -28,8 +28,8 @@
 										<p class="text-red text-xs italic" v-show="errors.fname" v-html="$t('nttdatadx.leadgen.errorFname')"></p>
 									</div>
 								</div>
-								<div class="mb-6 sm:w-1/2">
-									<div class="ml-2">
+								<div class="mb-4 w-full sm:w-1/2">
+									<div class="sm:ml-2">
 										<label class="block uppercase tracking-wide text-ntt-data-blue text-xs font-bold mb-2" for="sname">
 											{{ $t('nttdatadx.leadgen.sname') }}
 										</label>
@@ -37,8 +37,8 @@
 										<p class="text-red text-xs italic" v-show="errors.sname" v-html="$t('nttdatadx.leadgen.errorSname')"></p>
 									</div>
 								</div>
-								<div class="mb-6 sm:w-1/2">
-									<div class="mr-2">
+								<div class="mb-4 w-full sm:w-1/2">
+									<div class="sm:mr-2">
 										<label class="block uppercase tracking-wide text-ntt-data-blue text-xs font-bold mb-2" for="email">
 											{{ $t('nttdatadx.leadgen.email') }}
 										</label>
@@ -46,13 +46,47 @@
 										<p class="text-red text-xs italic" v-show="errors.email" v-html="$t('nttdatadx.leadgen.errorEmail')"></p>
 									</div>
 								</div>
-								<div class="mb-6 sm:w-1/2">
-									<div class="mr-2">
+								<div class="mb-4 w-full sm:w-1/2">
+									<div class="sm:ml-2">
 										<label class="block uppercase tracking-wide text-ntt-data-blue text-xs font-bold mb-2" for="position">
 											{{ $t('nttdatadx.leadgen.title') }}
 										</label>
 										<input class="appearance-none block w-full text-black border py-3 px-4 mb-2" :class="[errors.position ? 'border-red' : '']" id="position" name="title" type="text" @blur="hasError">
 										<p class="text-red text-xs italic" v-show="errors.position" v-html="$t('nttdatadx.leadgen.errorTitle')"></p>
+									</div>
+								</div>
+								<div class="mb-4 w-full sm:w-1/2">
+									<div class="sm:mr-2">
+										<label class="block uppercase tracking-wide text-ntt-data-blue text-xs font-bold mb-2" for="employees">
+											{{ $t('nttdatadx.leadgen.employees') }}
+										</label>
+										<div class="inline-block relative w-full mb-2">
+											<select class="block appearance-none rounded-none w-full border py-3 px-4 pr-8" :class="[errors.employees ? 'border-red' : '']" id="employees" name="employees" @blur="hasError">
+												<option value="" v-html="$t('nttdatadx.leadgen.pleaseselect')"></option>
+												<option v-for="(item, key) in assessment.fields.employees.options" :value="key">{{ item }}</option>
+											</select>
+											<div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-light">
+												<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+											</div>
+										</div>
+										<p class="text-red text-xs italic" v-show="errors.employees" v-html="$t('nttdatadx.leadgen.errorEmployees')"></p>
+									</div>
+								</div>
+								<div class="mb-4 w-full sm:w-1/2">
+									<div class="sm:ml-2">
+										<label class="block uppercase tracking-wide text-ntt-data-blue text-xs font-bold mb-2" for="industry">
+											{{ $t('nttdatadx.leadgen.industry') }}
+										</label>
+										<div class="inline-block relative w-full mb-2">
+											<select class="block appearance-none rounded-none w-full border py-3 px-4 pr-8" :class="[errors.industry ? 'border-red' : '']" id="industry" name="industry" @blur="hasError">
+												<option value="" v-html="$t('nttdatadx.leadgen.pleaseselect')"></option>
+												<option v-for="(item, key) in assessment.fields.industry.options" :value="key">{{ item }}</option>
+											</select>
+											<div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-light">
+												<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+											</div>
+										</div>
+										<p class="text-red text-xs italic" v-show="errors.industry" v-html="$t('nttdatadx.leadgen.errorIndustry')"></p>
 									</div>
 								</div>
 								<div class="mb-6 w-full">
@@ -88,7 +122,7 @@
 									</label>
 								</div>
 								<div class="mb-6 w-full">
-									<button type="submit" :disabled="true" class="text-center block bg-ntt-data-yellow hover:bg-white py-4 px-6 no-underline" :class="[{'cursor-not-allowed':isSubmitting}]" @click.prevent="checkForErrors"><font-awesome-icon class="mr-2" :class="[{'fa-spin': isSubmitting}]" :icon="isSubmitting ? icons.faSyncAlt : icons.faEnvelope"></font-awesome-icon> {{ $t('nttdatadx.leadgen.send') }}</button>
+									<button type="submit" class="text-center block bg-ntt-data-yellow hover:bg-white py-4 px-6 no-underline" :class="[{'cursor-not-allowed':isSubmitting}]" @click.prevent="checkForErrors"><font-awesome-icon class="mr-2" :class="[{'fa-spin': isSubmitting}]" :icon="isSubmitting ? icons.faSyncAlt : icons.faEnvelope"></font-awesome-icon> {{ $t('nttdatadx.leadgen.send') }}</button>
 								</div>
 							</div>
 						</form>
@@ -148,6 +182,8 @@ export default{
 				company: false,
 				title: false,
 				country: false,
+				employees: false,
+				industry: false,
 				terms: false
 			},
 			theResult: this.result ? this.result : laravel.result,

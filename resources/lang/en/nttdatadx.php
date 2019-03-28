@@ -12,46 +12,52 @@ return array(
     'download-now'=>'Download Now',
 
     'title'=>'IDC Digital Transformation Assessment',
-    'sub-title'=>'How are you positioned to address your customers\' needs in an increasingly open and connected financial services ecosystem?',
+    'sub-title'=>'Digital technologies and new regulations are transforming all aspects of financial services business. How are you positioned to address your customers\' needs in an increasingly open and connected financial services ecosystem?',
     'landing'=>'
         <p class="mb-4">
-            IDC, a global leading provider of technology market research, has developed the digital transformation (DX) capability assessment, sponsored by NTT DATA, to help financial services organizations assess their capability to cater to customers\' needs in an increasingly open financial services ecosystem driven by digital technologies and regulatory mandate.
+            IDC, a global leading provider of technology market research, has developed the digital transformation (DX) capability assessment tool, sponsored by NTT DATA, to help financial services organizations assess their capability to cater to customers\' needs in an increasingly open financial services ecosystem driven by digital technologies and regulatory mandate.
         </p>
         <p class="mb-4">
-            This self-assessment tool is backed up by independent end-user research and IDC\'s in depth understanding of the FSI market. Upon completion of a short survey (10 minutes) you will receive a custom report that benchmarks your organization\'s DX capability and provides you with essential and tailored guidance to help you advance in your digital journey to cater to the needs of an evolving financial services landscape that is ever-evolving and increasingly open and connected."
+            This self-assessment tool is backed up by independent end-user research and IDC\'s in depth understanding of the FSI market. Upon completion of a short survey (10 minutes) you will receive a custom report that benchmarks your organization\'s DX capability and provides you with essential and tailored guidance to help you advance in your digital journey to cater to the needs of a financial services landscape that is ever-evolving and increasingly open and connected."
         </p>',
     'startbut'=>'Start Assessment',
     
     'send'=>'We can send you the full results directly to your mailbox',
     'register'=>'Register now to receive your personalized report',
     'provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
-    'byreg'=>'By registering with IDC, you accept our <a href="https://nttdatadx.idcready.net/privacy" target="_blank">Privacy Policy</a> and the NTT Data <a href="https://uk.nttdata.com/privacy-policy" target="_blank">Privacy Policy</a>.',
+    'byreg'=>'By registering with IDC, you accept our <a href="https://nttdatadx.idcready.net/privacy" target="_blank">Privacy Policy</a> and the NTT Data <a href="https://uk.nttdata.com/privacy-policy" target="_blank">Privacy Policy</a>.  The information we collect will be shared with NTT DATA for the purpose of direct marketing.',
     'wait'=>'While you\'re waiting why not tweet your results and see how your colleagues measure up?',
     'twitterlink'=>'https://twitter.com/home?status=Is%20your%20business%20GDPR%20ready?%20http%3A//bit.ly/2AwihN4%20%23Symantec',
     'facebooklink'=>'https://www.facebook.com/sharer/sharer.php?u=http%3A//bit.ly/2AwihN4',
     'linkedinlink'=>'https://www.linkedin.com/shareArticle?mini=true&url=http%3A//bit.ly/2AwihN4&title=Symantec%20and%20IDC%20GDPR%20Assessment&summary=Is%20your%20business%20GDPR%20ready?&source=',
+    'disclaimer-extra' => 'IDC\'s purpose in building this tool and making it generally available is to provide organizations a view of where they are positioned in their digital transformation journey and the steps they can take to advance further in their effort to transform their business in line with customer and market expectations',
 
-    'stage1' => 'Follower',
-    'stage2' => 'Mainstream',
+    'stage1' => 'DX Digiphobe',
+    'stage2' => 'DX Conformist',
     'stage3' => 'Leader',
+
+    'stage1-finish' => 'Based on your total responses, you rank as a <strong class="text-ntt-data-yellow">DX Digiphobe</strong>, which is the entry level in this assessment.',
+    'stage2-finish' => 'Based on your total responses, you rank as a <strong class="text-ntt-data-yellow">DX Conformist</strong>, which is the middle level in this assessment.',
+    'stage3-finish' => 'Based on your total responses, you rank as a <strong class="text-ntt-data-yellow">Leader</strong>, which is the highest level in this assessment.',
     'complete' => 'Complete!',
     'finishtxt' => '
-        <h2 class="font-light leading-tight mb-4">Thank you for completing the IDC Digital Transformation Assessment</h2>
-        <p class="mb-4">Based on your input, your aggregate score means that you are at <strong class="text-ntt-data-yellow">:stage</strong> in terms of your overall Digital Transformation.</p>
-        <p class="mb-4 mt-4">Please tell us a little about yourself and immediately receive your personalized report</p>
+        <h2 class="font-light leading-tight mb-4">Thank you for completing the IDC Digital Transformation Capability Assessment.</h2>
+        <p class="mb-4">:stage</p>
+        <p class="mb-4 mt-4">Would you like the full report that provides you with essential guidance for advancing in your digital transformation journey?<br/>
+        We can send this directly to your mailbox. Just provide us your details and we\'ll send it to you.</p>
     ',
     'complete_thankyou' => 'Thank you :Fname,',
     'complete_body' => '
         Your custom report will arrive in your inbox soon.<br/>
         Please check in your junk folder if you don\'t receive it within 5 minutes.<br/><br/>
-        <a class="text-trend-red" target="_blank" href="https://uk.nttdata.com">
+        <a class="text-ntt-data-yellow" target="_blank" href="https://uk.nttdata.com">
             Click here for more information
         </a>',
     'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @ntt. Interested? ',// http://bit.ly/2gslXEh
     'email'=>[
         'subject' => 'IDC Digital Transformation Assessment - Sponsored by NTT DATA',
         'hi' => 'Hi :Fname',
-        'body' => 'As promised, here\'s a link to download your DX Readiness Report. This breaks down your results by category and provides you with actionable recommendations.',
+        'body' => 'As promised, here\'s the link to download your digital transformation (DX) capability assessment report. This breaks down your results by category and helps you benchmark yourself against other organisations.',
         'link' => 'Download PDF Report',
         'link_inline' => 'View Report in your browser',
         'extra' => '',
@@ -83,6 +89,9 @@ return array(
         'errorLocation'=>'Please select an option.',
         'errorLocations'=>'Please select an option.',
         'errorCompanyType'=>'Please select an option.',
+        'errorCompanySize'=>'Please select an option.',
+        'errorEmployees'=>'Please select an option.',
+        'errorIndustry'=>'Please select an option.',
         'errorPartner'=>'Please select an option.',
         'errorSell'=>'Please select an option.',
         'errorTitle'=>'Enter your title',
@@ -91,1198 +100,847 @@ return array(
         'errorNumber'=>'Please enter a valid phone number',
         'errorAccept'=>'Please accept the Terms &amp; Conditions',
     ],
-    'introduction1' => '
-        <h2 class="text-blue-dark mb-6">INTRODUCTION</h2>
-        <p class="mb-2">Thank you for taking part in IDC\'s managed security services (MSS) readiness assessment.</p>
-
-        <p class="mb-2">The purpose of this assessment tool is to help managed security services providers (MSPs) build a profitable and sustainable MSS business, maximizing the opportunities this fast-growing market segment presents to these companies.</p>
-
-        <p class="mb-2">IDC, a leading global market intelligence and advisory firm, has leveraged substantial research and experience from leading managed security services providers (MSPs) to build a set of recommendations tailored to specific stages and elements within a managed security services business. These recommendations are contained in this report.</p>
-        <p>
-            Based on your input, your aggregate score means that you are at :result in terms of your overall MSS readiness.
+    'introduction' => '
+        <h2 class="text-blue-dark mb-6">YOUR RESULTS</h2>
+        <p class="mb-6">Organizations can only reap the full benefits of digital transformation if it is truly embedded within their culture, processes and technology. IDC has created the Financial Services Digital Transformation Capability Assessment Tool to help FSIs assess their readiness for their digital future. It scores FSIs on their approach to becoming digital by looking at three core elements - how far advanced you are along the DX journey, how successful your DX initiatives have been, and the steps you have taken to becoming a Connected FSI. Based on a global survey of 1,050 FSI intitutions across banking, insurance and capital markets among other, we class organizations into three levels of Digital Transformation capability: DX Digiphobes, DX Conformists and DX Trailblazers.
         </p>
-    ',
-    'introduction2' => '
-        <img src=":url/images/tools/9/stages.png" class="w-full sm:w-3/4 mx-auto" alt="">
-    ',
-    'introduction3' => '
-        <p class="text-blue-dark font-bold mb-2">Stage 1</p>
-        <p class="mb-1">
-            Companies at this stage are at the very beginning of their journey to becoming an MSP. They may be new to managed services, to selling in a subscription model and/or new to the security market.
-        </p>
-        <p class="mb-1">
-            This is a high-growth market, which is compounded by a severe skills shortage, and presents a massive opportunity for IT solution providers. Now is a good time to reach out to relevant vendor partners (such as Trend Micro) to understand what programmes they have in place to accelerate your entry into the MSS market. 
-        </p>
-    ',
-    'introduction4' => '
-        <p class="text-blue-dark font-bold mb-2">Stage 2</p>
-        <p class="mb-1">
-            With some experience in operating managed services and/or security solutions, companies at this stage are beginning to realise the opportunities and may well be starting to incorporate recurring/subscription-based revenue into their business.
-        </p>
-        <p class="mb-1">
-            To build on the foundation which has been laid already, it is important that companies at Stage 2 are proactively building business plans relating to sales, marketing and services transformations to support the MSS model.
-        </p>
-    ',
-    'introduction5' => '
-        <p class="text-blue-dark font-bold mb-2">Stage 3</p>
-        <p class="mb-1">
-            Companies at this stage are invested in their MSS business, and the emphasis should now be on improving efficiencies and driving profitability. At this stage, companies are starting to transform sales, marketing and services for MSS.
-        </p>
-        <p class="mb-1">
-            Companies at this stage will need to address the challenge of how to accelerate transformation while still maintaining existing business. 
-        </p>
-    ',
-    'introduction6' => '
-        <p class="text-blue-dark font-bold mb-2">Stage 4</p>
-        <p class="mb-1">
-            Companies at Stage 4 have an embedded MSS business. Significant efforts have been made to transform the sales, marketing and services organisations within the company, with increasing automation, repeatability and growing profitability.
-        </p>
-        <p class="mb-1">
-            Now, the priority for these companies is to enhance and expand their MSS portfolio, innovate and differentiate to establish market leadership. 
-        </p>
-    ',
-    'introduction7' => '
-        <p class="text-blue-dark font-bold mb-2">Stage 5</p>
-        <p class="mb-1">
-            Companies at Stage 5 are considered mature (and market-leading) MSPs, with all business units optimised to support this model.
-        </p>
-        <p class="mb-1">
-            The emphasis at this stage is on retaining market leadership through a continuous innovation process and focus on profitability. 
-        </p>
-    ',
-    'introduction8' => '
-        <img src=":url/images/tools/9/trend.png" class="w-full mx-auto" alt="">
     ',
     'overallstage1'=>'
-        <h2 class="leading-tight text-blue-dark mb-2">YOUR OVERALL PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">:stage</span>
-        <p class="mb-2">Companies at this stage are at the very beginning of their journey to becoming an MSP. They may be new to managed services, to selling in a subscription model, and/or new to the security market.</p>
-        <p class="mb-2">This is a high growth market, which is compounded by severe skills shortage, and presents a massive opportunity for IT solution providers. Now is a good time to reach out to relevant vendor partners (like Trend Micro) to understand what programs they have in place to accelerate your entry into the MSS market.</p>
+        <h2 class="leading-tight text-blue-dark mb-2 mt-6">OVERALL PERFORMANCE: Stage 1 - DX Digiphobe</h2>
+        <div class="w-full mb-8">
+            <div class="block relative" style="width: 172mm; height: 81.35mm; background: :img no-repeat center center;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+                <div class="absolute border-2 border-purple border-dashed" style=":vertical_style background-color: rgba(104,33,95,0.2)"></div>
+                <div class="absolute border-2 border-purple border-dashed" style=":organisation_style background-color: rgba(104,33,95,0.2)"></div>
+                <div class="absolute border-2 border-purple border-dashed" style=":geographic_style background-color: rgba(104,33,95,0.2)"></div>
+            </div>
+        </div>
+        <p class="mb-2">This result might hurt a bit, but based on your responses to IDC\'s Financial Services DX Capability Assessment Tool, your organization has been rated at the earliest level of DX capability - Digital Transformation Digphobe. This means you are struggling with moving to a Digital Future compared to the rest of the industry and there is much to do to be where you need to be. While it may seem an unattainable goal at this point, you must look to incremental improvements and seek outside assistance where possible to to accelerate your move to a digital future.</p>
+        <p class="mb-2">Your results indicate that there is plenty to do to get on the level with DX. This report will give you advice on areas to give priority to as you look to progress to the next stage of DX capability, so let\'s turn to the next page and dig into what you can do.</p>
     ',
     'overallstage2'=>'
-        <h2 class="leading-tight text-blue-dark mb-1">YOUR OVERALL PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 2</span>
-        <p class="mb-2">With some experience in operating managed services and/or security solutions, companies at this stage are beginning to realize the opportunities and may well be starting to incorporate recurring/subscription-based revenue into their business.</p>
-        <p class="mb-2">To build on the foundation which has been laid already, it is important that companies at Stage 2 are proactively building business plans relating to sales, marketing, and services transformations to support the MSS model.</p>
+        <h2 class="leading-tight text-blue-dark mb-2 mt-6">OVERALL PERFORMANCE: Stage 2 - DX Conformist</h2>
+        <div class="w-full mb-8">
+            <div class="block relative" style="width: 172mm; height: 81.35mm; background: :img no-repeat center center;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+                <div class="absolute border-2 border-purple border-dashed" style=":vertical_style background-color: rgba(104,33,95,0.2)"></div>
+                <div class="absolute border-2 border-purple border-dashed" style=":organisation_style background-color: rgba(104,33,95,0.2)"></div>
+                <div class="absolute border-2 border-purple border-dashed" style=":geographic_style background-color: rgba(104,33,95,0.2)"></div>
+            </div>
+        </div>
+        <p class="mb-2">Well done! Based on your responses to IDC\'s Financial Services DX Capability Assessment Tool, your organization has been rated at the second highest level of DX capability - Digital Transformation Conformist .This means your organization is generally in line with the rest of the industry and readying itself for the digital future. While you are doing well, there is still much to do to be fully digital ready.</p>
+        <p class="mb-2">Your results indicate that while you are doing well, there is plenty to do to get on level terms with the best at DX in financial services. This report will give you advice on areas to give priority to as you look to progress to the next stage of DX capability, so let\'s turn to the next page and dig into what you can do.</p>
     ',
     'overallstage3'=>'
-        <h2 class="leading-tight text-blue-dark mb-1">YOUR OVERALL PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 3</span>
-        <p class="mb-2">Companies at this stage are invested in their MSS business, and the emphasis should now be on improving efficiencies and driving profitability. At this stage, companies are starting to transform sales, marketing, and services for MSS.</p>
-        <p class="mb-2">Companies at this stage will need to address the challenge of how to accelerate transformation while maintaining the existing business.</p>
+        <h2 class="leading-tight text-blue-dark mb-2 mt-6">OVERALL PERFORMANCE: Stage 3 - DX Trailblazer</h2>
+        <div class="w-full mb-8">
+            <div class="block relative" style="width: 172mm; height: 81.35mm; background: :img no-repeat center center;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+                <div class="absolute border-2 border-purple border-dashed" style=":vertical_style background-color: rgba(104,33,95,0.2)"></div>
+                <div class="absolute border-2 border-purple border-dashed" style=":organisation_style background-color: rgba(104,33,95,0.2)"></div>
+                <div class="absolute border-2 border-purple border-dashed" style=":geographic_style background-color: rgba(104,33,95,0.2)"></div>
+            </div>
+        </div>
+        <p class="mb-2">Congratulations! Based on your responses to IDC\'s Financial Services DX Capability Assessment Tool, your organization has been rated at the highest level of DX capability - Digital Transformation Trailblazer .This means your organization is generally ahead of the industry and blazing a trail to the digital future. Always bear in mind though that you need to keep at it to stay ahead!</p>
+        <p class="mb-2">Your results indicate that you are at the top of the pile when it comes to DX in financial services. While this is great, there may be some areas for you to pay attention to stay ahead in the game. This report will give you advice on areas to focus on, so let\'s turn to the next page and dig into what you can do.</p>
     ',
-    'salesstage1'=>'
-        <h2 class="leading-tight text-blue-dark mb-2">SALES PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 1</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 1 in terms of your sales readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    A horizontal sales structure, with limited specialization either in terms of industry (sector) and/or technology (e.g., security). Also tend to be product, not services, focused.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Very few organizations at this stage have dedicated sales professionals for either managed services or security.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Typically, there are no pre-sales staff dedicated to supporting the sales team in selling managed security services.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Compensation structures and incentive schemes have not been adjusted to account for recurring/subscription-based revenue models.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    There has been little attention paid to service-attach bundles (e.g., bundling a managed endpoint security service with a cloud-based productivity suite like Office 365).
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Very few companies at this stage can provide unified cloud and managed services billing to their customers (e.g., providing one bill for both product and managed services); many rely on their vendors and/or distributors to provide this billing capability.
-                </div>
-            </div>
-        </div>
-        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
-        <p class="mb-2 text-grey-dark">Now is the time to:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Embrace the opportunity to lay the right kind of foundation for an effective sales strategy and organization for MSS.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Start early in enabling your sales and pre-sales people to more confidently sell services (i.e., transition them from product sales to services sales). Start with a small group (a tiger team), train them well, and use them to help influence the broader sales team (e.g., a train-the-trainer approach).
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Identify which of your vendor partners can help you train and enable this team and ask them to help and support you.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Think about how your compensation and incentive models need to evolve as you bring recurring and subscription-based managed services to your business. Ensure that they are still lucrative for sales people who are more used to bigger upfront product and project deals.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Think about how you bill your customers; as your managed services business grows, so will features like unified billing become more important.
-                </div>
-            </div>
-        </div>
+    'dx-adoptionstage1stage1'=>'
+        <h3 class="leading-tight text-blue-dark mb-4 mt-6">DX ADOPTION PERFORMANCE</h3>
+        <!--span class="block mb-2 font-bold text-grey-dark text-lg">Stage 1 - DX Digiphobe</span-->
+        <p class="mb-2">This section of the report assesses the stage of your organization\'s DX journey based on your attitude to investing in digital technologies, how advanced you are in transforming your digital channels and business\'s perception of IT\'s role in DX.</p>
+        <p class="mb-2">
+            Your overall score for this section indicates that you are in line with your DX Digiphobe peers with respect to the progress you have made so far. You have a long way to go so you must take steps to accelerate the journey now. You could look in to individual assessment areas within this section to understand what changes you could potentially make to your overall approach and DX strategy.
+        </p>
     ',
-    'salesstage2'=>'
-        <h2 class="leading-tight text-blue-dark mb-2">SALES PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 2</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 2 in terms of your sales readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Sales teams are structured so staff have some experience selling recurring-revenue-based services, such as cloud services or managed services.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    A pre-sales function around managed security services is beginning to build up, offering support to the sales team as they address this opportunity.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Compensation and incentive structures are beginning to transform, offering sales teams upfront compensation on any recurring business they win.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Sales teams can own customer billing around managed security services, but they do so on an annual basis.
-                </div>
-            </div>
-        </div>
-        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
-        <p class="mb-2 text-grey-dark">Now is the time to:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Bolster the initial foundations by looking to convert existing project-based business toward recurring managed services.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Take a selected team of pre-sales staff and focus them purely on managed security services, so that they build up expertise in this area.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Plan, in tandem, the transformation of compensation structures. One of the biggest challenges facing new managed services and cloud services providers is overcoming the sales person\'s perception that smaller, more frequent recurring revenue will make it more challenging to meet quotas. Think very carefully about how you incentivize for these services.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Look at ways to bring consumption-based billing to their managed security services, as more and more customers are looking for this kind of functionality.
-                </div>
-            </div>
-        </div>
+    'dx-adoptionstage1stage2'=>'
+        <h3 class="leading-tight text-blue-dark mb-4 mt-6">DX ADOPTION PERFORMANCE</h3>
+        <p class="mb-2">This section of the report assesses the stage of your organization\'s DX journey based on your attitude to investing in digital technologies, how advanced you are in transforming your digital channels and business\'s perception of IT\'s role in DX.</p>
+        <p class="mb-2">
+            Your overall score for this section indicates that you are ahead of your DX Digiphobe peers with respect to the progress you have made so far. Very well done! While keeping up with this, you must also look at aspects related to DX success and connected financial services to improve your overall DX capabilities.
+        </p>
     ',
-    'salesstage3'=>'
-        <h2 class="leading-tight text-blue-dark mb-2">SALES PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 3</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 3 in terms of your sales readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Typically, companies at this stage are generally transitioning, meaning they are looking to convert to a managed services model.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Appetite for change is strong among companies at this stage, and actions are being carried out to make this happen.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Companies at this stage tend to have dedicated some specific pre-sales resource to managed security services, to support their sales teams in making the move to this model.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Companies at this stage have transformed their incentive plans to ensure the managed services opportunity is seen as lucrative. Various tactics can be deployed, and common tactics include upfront recognition, annualized recognition, quota relief, and additional incentives.
-                </div>
-            </div>
-        </div>
-        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
-        <p class="mb-2 text-grey-dark">Now is the time to:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Look outside the existing customer base to try and win new MSP deals with new customers, rather than focusing only on transitioning the existing base.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Bolster the pre-sales teams and ensure they have a focus on growing the MSS business, leveraging them to better support the sales teams in their efforts.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Incentivize cleverly — whether it be new logos, transitioned accounts, or attractive compensation plans.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Measure sales teams differently — start to think about incentivizing new KPIs like customer satisfaction and active usage. This ensures that customers are happy and therefore will be more likely to renew.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Think about services-attach, such as bundling a cloud-productivity suite with a managed endpoint security service. This makes life easier for the sales person as well as the customer.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Think about incorporating analytics features into your billing, e.g., real-time usage dashboards. This enables sales to understand what their customers are using to serve them better and understand their needs.
-                </div>
-            </div>
-        </div>
+    'dx-adoptionstage1stage3'=>'
+        <h3 class="leading-tight text-blue-dark mb-4 mt-6">DX ADOPTION PERFORMANCE</h3>
+        <p class="mb-2">This section of the report assesses the stage of your organization\'s DX journey based on your attitude to investing in digital technologies, how advanced you are in transforming your digital channels and business\'s perception of IT\'s role in DX.</p>
+        <p class="mb-2">
+            Your overall score for this section indicates that you are ahead of your DX Digiphobe peers with respect to the progress you have made so far. Very well done! While keeping up with this, you must also look at aspects related to DX success and connected financial services to improve your overall DX capabilities.
+        </p>
     ',
-    'salesstage4'=>'
-        <h2 class="leading-tight text-blue-dark mb-2">SALES PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 4</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 4 in terms of your sales readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Companies at this stage tend to have a high number of pre-sales staff dedicated to supporting sales staff pursuing MSP security opportunities.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Compensation plans for companies at this stage tend to have transitioned to offer sales staff a mix of upfront and ongoing commission, with incentives in place to encourage sales of managed services.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Sales teams at companies at this stage pay close attention to customer usage and satisfaction, enabling them to reduce churn and therefore boost profitability.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    The emphasis is typically less on transitioning and more on winning new clients for the MSP security business. 
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Sophisticated billing platforms are offered to customers, often with consumption-based billing mechanisms.
-                </div>
-            </div>
-        </div>
-        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
-        <p class="mb-2 text-grey-dark">Now is the time to:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Build on the strong foundation you have developed to maximize opportunities and boost profitability.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Ensure your pre-sales teams are enabled and empowered to develop opportunities and work closely with their vendor partners.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Emphasize solution selling, i.e., tailoring managed services and solutions solutions to customer segments and needs.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Ensure your sales teams are focused on customer satisfaction, renewals, and customer success; consider creating a "customer for life" sales structure.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Focus on services-attach and creating complementary bundles to make it easier for sales people to make the connections, to cross-sell and up-sell.
-                </div>
-            </div>
-        </div>
+    'dx-adoptionstage2stage1'=>'
+        <h3 class="leading-tight text-blue-dark mb-4 mt-6">DX ADOPTION PERFORMANCE</h3>
+        <p class="mb-2">This section of the report assesses the stage of your organization\'s DX journey based on your attitude to investing in digital technologies, how advanced you are in transforming your digital channels and business\'s perception of IT\'s role in DX.</p>
+        <p class="mb-2">
+            Your overall score for this section indicates that you are lagging behind your DX Conformist peers with respect to the progress you have made in DX so far. You have a long way to go so you must take steps to accelerate the journey now. You should look in to individual assessment areas within this section to understand what changes you could potentially make to your overall approach and DX strategy.
+        </p>
     ',
-    'salesstage5'=>'
-        <h2 class="leading-tight text-blue-dark mb-2">SALES PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 5</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 5 in terms of your sales readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Companies at this stage are looking to tailor their MSP offerings to vertical markets, offering specific solutions to customers by industry, focus, or size.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Pre-sales teams take opportunities to vendors, working alongside the sales teams to surface business.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    At this developed stage, companies focus their sales teams on customer satisfaction, renewals, and customer success.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Companies at Stage 5 are experienced in selling services-attach, creating solutions and bundled offerings.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Stage 5 companies typically offer flexible and sophisticated billing, with features such as unified billing, real-time analytics, multivendor billing, and consumption-based billing.
-                </div>
-            </div>
-        </div>
-        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
-        <p class="mb-2 text-grey-dark">Now is the time to:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Look to deepen specializations and use-case-driven solutions and ensure these are reflected in the go-to-market activities.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Ensure cross-sell, up-sell, and services-attach are incentivized and encouraged.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Invest in consultative selling frameworks, tools, and resources.
-                </div>
-            </div>
-        </div>
+    'dx-adoptionstage2stage2'=>'
+        <h3 class="leading-tight text-blue-dark mb-4 mt-6">DX ADOPTION PERFORMANCE</h3>
+        <p class="mb-2">This section of the report assesses the stage of your organization\'s DX journey based on your attitude to investing in digital technologies, how advanced you are in transforming your digital channels and business\'s perception of IT\'s role in DX.</p>
+        <p class="mb-2">
+            Your overall score in this section indicates that you are in line with your DX Conformist peers with respect to the progress you have made in DX. You are well on your way, but don\'t think of stopping just yet. You could look in to individual assessment areas within this section to understand what changes you could potentially make to youryour overall approach and DX strategy for further progress.
+        </p>
     ',
-    'marketingstage1'=>'
-        <h2 class="leading-tight text-blue-dark mb-2">MARKETING PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 1</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 1 in terms of your marketing readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    They tend to have a traditional approach to marketing, based on vendor direction and/or past successes.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    At this stage, very few companies have a formal marketing function, with the role partly taken on by other teams.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Companies at this stage typically do not target marketing campaigns at customer types, verticals, or by technology. Instead they employ wide-spanning campaigns.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    For companies at this stage, marketing campaigns are not actively or closely measured for success.
-                </div>
-            </div>
-        </div>
-        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
-        <p class="mb-2 text-grey-dark">Now is the time to:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Embrace modern marketing, both in terms of what you create and which channels you choose to promote it.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Leverage vendor marketing initiatives but, crucially, look for ways to personalize this to your brand and customer base.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Plan for a dedicated marketing function, pinpointing individuals or teams that have showed early interest or promise in this space.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Pilot managed security services campaigns trialed to target specific customer types, and then measured closely for their effectiveness, providing a strong foundation on which to build further.
-                </div>
-            </div>
-        </div>
+    'dx-adoptionstage2stage3'=>'
+        <h3 class="leading-tight text-blue-dark mb-4 mt-6">DX ADOPTION PERFORMANCE</h3>
+        <p class="mb-2">This section of the report assesses the stage of your organization\'s DX journey based on your attitude to investing in digital technologies, how advanced you are in transforming your digital channels and business\'s perception of IT\'s role in DX.</p>
+        <p class="mb-2">
+            Your overall score for this section indicates that you are ahead of your DX Conformist peers with respect to the progress you have made. Very well done on your journey so far! While keeping up with this, you must also look at aspects related to DX success and connected financial services to improve your overall DX capabilities.
+        </p>
     ',
-    'marketingstage2'=>'
-        <h2 class="leading-tight text-blue-dark mb-2">MARKETING PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 2</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 2 in terms of your marketing readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Companies at this stage are building on past successes by trialing digital marketing techniques, leveraging social media as a starting point.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    At this stage, companies are beginning to identify individuals or teams that can create a dedicated marketing function.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Companies at this stage typically begin to target certain customer types with pilot or trial campaigns.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Close measurement of trial campaigns is carried out by companies at this stage, as they look to better leverage their marketing efforts.
-                </div>
-            </div>
-        </div>
-        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
-        <p class="mb-2 text-grey-dark">Now is the time to:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Capitalize on the marketing investments you have already made, by focusing on supporting the sales cycle throughout.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Closely analyze trial/pilot digital campaigns and run again as part of a continuous improvement cycle.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Create and appropriately resource a dedicated marketing team that is focused on delivering the value proposition message for managed security services and the business benefits they deliver to customers.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Begin targeting specific buyers with a view to becoming more vertically specialized in the future.
-                </div>
-            </div>
-        </div>
+    'dx-adoptionstage3stage1'=>'
+        <h3 class="leading-tight text-blue-dark mb-4 mt-6">DX ADOPTION PERFORMANCE</h3>
+        <p class="mb-2">This section of the report assesses the stage of your organization\'s DX journey based on your attitude to investing in digital technologies, how advanced you are in transforming your digital channels and business\'s perception of IT\'s role in DX.</p>
+        <p class="mb-2">
+            Your overall score in this area indicates that you are lagging much behind other DX Trailblazers peers in your DX journey. You should look in to individual assessment areas within this section to understand what changes you could potentially make to your overall approach and DX strategy. You have a lot of work to do so you should act urgently to address the areas of improvement. This will help you sustain your strong position with respect to your overall DX capabilities.
+        </p>
     ',
-    'marketingstage3'=>'
-        <h2 class="leading-tight text-blue-dark mb-2">MARKETING PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 3</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 3 in terms of your marketing readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Companies at this stage actively use digital marketing techniques to spread their content and messaging.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    These modern marketing techniques are deployed by a dedicated marketing team which itself is goaled and targeted on its marketing reach.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    At this stage, companies typically send out highly targeted messages to specific customers, by type, vertical, technology, and other metrics.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Digital campaigns of this type run by companies at this stage tend to be closely measured to determine future marketing actions.
-                </div>
-            </div>
-        </div>
-        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
-        <p class="mb-2 text-grey-dark">Now is the time to:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Align dedicated marketing teams with sales, so that together they can track the customer journey.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Bolster the highly targeted messages spread by this team with a strong focus on the value proposition the company offers.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    The combined marketing and sales function should begin developing messaging around business outcomes, through a highly aligned approach.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Encourage marketing teams to consider buyer personas, and how they can best be targeted. Consideration should be given to investing in, or developing, marketing measurement tools that can measure key metrics.
-                </div>
-            </div>
-        </div>
+    'dx-adoptionstage3stage2'=>'
+        <h3 class="leading-tight text-blue-dark mb-4 mt-6">DX ADOPTION PERFORMANCE</h3>
+        <p class="mb-2">This section of the report assesses the stage of your organization\'s DX journey based on your attitude to investing in digital technologies, how advanced you are in transforming your digital channels and business\'s perception of IT\'s role in DX.</p>
+        <p class="mb-2">
+            Your overall score in this area indicates that you are lagging behind other DX Trailblazers peers in your DX journey. You should look in to individual assessment areas within this section to understand what changes you could potentially make to your overall approach and DX strategy. You have a lot of work to do so you should act urgently to address the areas of improvement. This will help sustain your strong position with respect to your overall DX capabilities.
+        </p>
     ',
-    'marketingstage4'=>'
-        <h2 class="leading-tight text-blue-dark mb-2">MARKETING PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 4</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 4 in terms of your marketing readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Companies at Stage 4 typically combine their dedicated marketing function with sales teams, to better follow the customer journey and serve them targeted and specific content that is relevant to them. They jointly target customers based on business outcomes.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    At this stage, companies measure the marketing process and use this to refine future campaigns.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Companies at this stage have specific buying personas in mind within industry sectors, and target these accordingly.
-                </div>
-            </div>
-        </div>
-        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
-        <p class="mb-2 text-grey-dark">Now is the time to:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Continue to focus messaging and collateral on specific target buyers and industries but target them with information about business outcomes and value.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    The dedicated marketing team should have a continuous improvement mindset and be looking to analyze and measure the success of modern marketing campaigns on an ongoing basis.
-                </div>
-            </div>
-        </div>
+    'dx-adoptionstage3stage3'=>'
+        <h3 class="leading-tight text-blue-dark mb-4 mt-6">DX ADOPTION PERFORMANCE</h3>
+        <p class="mb-2">This section of the report assesses the stage of your organization\'s DX journey based on your attitude to investing in digital technologies, how advanced you are in transforming your digital channels and business\'s perception of IT\'s role in DX.</p>
+        <p class="mb-2">
+            Your overall score in this area indicates that you are in line with the DX Trailblazer peers with respect to the progress you have made in digital transformation. While keeping up with this, you can look at areas of improvement if any, related to DX success and connected financial services to improve your overall DX capabilities.
+        </p>
     ',
-    'marketingstage5'=>'
-<h2 class="leading-tight text-blue-dark mb-2">MARKETING PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 5</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 5 in terms of your marketing readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Companies at this stage employ advanced digital marketing skills across their dedicated and sophisticated marketing function.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Stage 5 companies tend to have developed a fully automated marketing process, which continues to evolve based on ongoing results and successes.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    At this stage, companies\' marketing efforts are highly targeted at a defined set of verticals and business buyer personas across a portfolio of solutions that addresses business outcomes.
-                </div>
-            </div>
-        </div>
-        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
-        <p class="mb-2 text-grey-dark">Now is the time to:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Expand areas of specialization, targeting a wider selection of vertical markets to target with highly focused marketing efforts.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Employ the sophisticated measurement and targeting techniques to specific customer verticals.
-                </div>
-            </div>
-        </div>
+
+    'dx-adoptionq1intro' => '
+        <p class="mt-6 mb-2 font-bold text-blue-dark">
+            Q1: On a scale of 1 to 5, how transformed are the following areas, in your organization?
+        </p>
     ',
-    'servicesstage1'=>'
-        <h2 class="leading-tight text-blue-dark mb-2">SERVICES PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 1</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 1 in terms of your services readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Offer a basic services catalog/portfolio of support, implementation, and monitoring services.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    In general, services are ad hoc and reactive and customized to each customer\'s needs, and there is little repeatability or automation.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Do not typically have a dedicated service desk to provide first-line support for any managed services they resell.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Only in technical certifications and industry standards in an ad hoc (reactive) manner, i.e., based on what specific customers and/or vendors demand.
-                </div>
-            </div>
-        </div>
-        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
-        <p class="mb-2 text-grey-dark">Now is the time to:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Invest in a more sophisticated services catalog and identify portfolio gaps.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    After doing a gap assessment, identify which services have both high demand and a high degree of commonality between customers with the objective of packaging these as managed services.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Invest in a service desk to offer first-line support for managed services.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Start certifying and incorporating industry minimum standards (e.g., PCI-DSS).
-                </div>
-            </div>
-        </div>
+    'dx-adoptionq1stage1a'=>'
+        <p class="mb-2">
+            Based on your response, you are either exploring your options or have just started transforming some of the digital channels to improve customer engagement and attract new revenues. This is in line with most of your DX Digiphobe peers. To advance in the DX journey, you need to consider a proactive approace to transform all your current points of engagement with the customer and invest in new channels to improve outreach.  
+        </p>
     ',
-    'servicesstage2'=>'
-        <h2 class="leading-tight text-blue-dark mb-2">SERVICES PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 2</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 2 in terms of your services readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Typically investing in a more comprehensive services catalog, including expanding professional services, reselling some managed services, and in the early stages of building their own managed services offerings.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    The service desk is equipped to offer basic support on the managed services according to customer demand. These services are typically ad hoc, reactive, and highly customized, and there is little repeatability or automation.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Technicians comply to the minimum technical certifications required from key vendors, and industry minimum standards (e.g., PCI-DSS) are in place.
-                </div>
-            </div>
-        </div>
-        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
-        <p class="mb-2 text-grey-dark">Now is the time to:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Accelerate the repeatability of these services by investing in tools for services implementation, automation, and management which are embedded in the service catalog.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Differentiate through offering first-line support for managed services via a dedicated service desk.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Move up the value chain by investing in industry and quality standards (such as ISO), building a governance program and technical certification program that encourages technicians to upcertify and even start to specialize.
-                </div>
-            </div>
-        </div>
+    'dx-adoptionq1stage1b'=>'
+        <p class="mb-2">
+            Based on your response, you are in the process of transforming your digital channels to improve customer engagement and attract new revenues. This means that you are ahead of your DX Digiphobe peers in transforming engagement. You are heading in the right direction but to advance in the DX journey, you need to consider transforming all your current points of engagement with the customer and invest in new channels to improve outreach.  
+        </p>
     ',
-    'servicesstage3'=>'
-        <h2 class="leading-tight text-blue-dark mb-2">SERVICES PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 3</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 3 in terms of your services readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Offer a comprehensive service catalog of advanced professional services, own (packaged) managed services, and managed services for resell.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Have started to invest in repeatability, automation, and management tools.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Have a fully staffed service desk with dedicated MSP professionals offering first-line support for all (or most) of the managed services through standard helpdesk services.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Adhere to industry standards, have governance processes in place, and are proactively investing in more advanced technical certifications.
-                </div>
-            </div>
-        </div>
-        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
-        <p class="mb-2 text-grey-dark">Now is the time to:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Start to incorporate more advanced services functions and features like predictive fault management and 24 x 7 global support offered through multiple channels (email, call, chat).
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Start to incorporate more advanced features such as self-provisioning and even reporting in to your service catalog.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Start to comply to industry-specific regulations and governance programs.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Differentiate through horizontal (e.g., deep security, cybersecurity, artificial intelligence) and vertical (e.g., financial services, government, healthcare) specialist certifications and reference architectures.
-                </div>
-            </div>
-        </div>
+    'dx-adoptionq1stage1c'=>'
+        <p class="mb-2">
+            Based on your response, you have transformed most of your digital channels to improve customer engagement and attract new revenues. This means that you are well ahead of your DX Digiphobe peers in transforming engagement. Well done! You should now focus your efforts on other areas to improve your overall Digital Transformation DX capability.
+        </p>
     ',
-    'servicesstage4'=>'
-        <h2 class="leading-tight text-blue-dark mb-2">SERVICES PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 4</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 4 in terms of your services readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    An extensive services portfolio of both professional and managed services that incorporates advanced features like predictive and automated fault management, 24 x 7 service desk, and self-provisioning (via a highly automated service catalog).
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Can offer multichannel 24 x 7 global support for all services and SLAs (service level agreements).
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Have a mature and embedded governance program, highly certified and specialized technicians, and are first movers in terms of adopting new industry, quality, and regulatory certifications. 
-                </div>
-            </div>
-        </div>
-        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
-        <p class="mb-2 text-grey-dark">Now is the time to:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Embed your managed services (as a services-attach) into all lines of business (including professional services).
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Invest in flexible consumption models, supporting advanced features and new routes to market (e.g., marketplaces).
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Enhance the services value proposition with sophisticated analytics, security by-design, and omni-channel 24 x 7 support, and extend this to all managed services in the portfolio.
-                </div>
-            </div>
-        </div>
+    
+    'dx-adoptionq1stage2a'=>'
+        <p class="mb-2">
+            Your score indicates that you are either exploring your options or have just started modernizing some of the digital channels to improve customer engagement and attract new revenues. This means you are lagging behind your DX Conformist peers in this area. To advance in the digital transformation journey, you need to look to modernize all your points of engagement with the customer and explore new channels to improve outreach.  
+        </p>
     ',
-    'servicesstage5'=>'
-        <h2 class="leading-tight text-blue-dark mb-2">SERVICES PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 5</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 5 in terms of your MSP services readiness. Typically, organizations at this stage of their strategy maturity share the following characteristics:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Highly automated and embedded in a continuous improvement process within the services portfolio and are documented and regularly reviewed.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Security by design is embedded internally and aligned with customer processes and operations.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Regulatory and quality standard certifications are in place and can offer pre-emptive support with analytics, evidence, and recommendations.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Have deployed a continuous improvement process, creating a library of case studies, best practices, reusable tools, and reference architectures.
-                </div>
-            </div>
-        </div>
-        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
-        <p class="mb-2 text-grey-dark">Now is the time to:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Deepen relationships with customers, aligning your organization with their changing requirements.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Continue to automate your processes (ensuring that this does not detract from personal services where required), and measure and respond to fluctuations in customer satisfaction.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Focus on driving profitability across all service functions.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Continue to work closely with your vendor partners as a launch partner for innovations and new opportunities, including them in the continuous service improvement loop.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Stay ahead of the competition by continuously investing in best-in-class certification standards and deep vertical expertise.
-                </div>
-            </div>
-        </div>
+    'dx-adoptionq1stage2b'=>'
+        <p class="mb-2">
+            Your score indicates that you are in the process of modernizing your digital channels to improve customer engagement and attract new revenues. This means that you are in line with your DX Conformist peers in transforming customer engagement. To advance in the digital transformation journey, you need to look to modernize all your points of engagement with the customer and explore new channels to improve outreach.
+        </p>
     ',
-    'securitystage1'=>'
-        <h2 class="leading-tight text-blue-dark mb-2">SECURITY PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 1</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 1 in terms of your security readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    At this stage, companies have yet to embrace the high-growth security opportunity that exists in the market, and are only starting to bring security into their business.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    At this early stage, companies are yet to have honed any specific security skills and typically lack security certifications.
-                </div>
-            </div>
-        </div>
-        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
-        <p class="mb-2 text-grey-dark">Now is the time to:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Consider how to position the company to meet customers\' and prospects\' needs in the high-growth MSP area.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Consider hiring staff with security credentials to gain some expertise in this space.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Build a sales teams with experience winning security business.
-                </div>
-            </div>
-        </div>
+    'dx-adoptionq1stage2c'=>'
+        <p class="mb-2">
+            Your score indicates that you have transformed most of your digital channels to improve customer engagement and attract new revenues. This means that you are ahead of your DX Conformist peers in transforming customer engagement. This sounds great. You should now focus on other areas to improve your overall Digital Transformation DX capability.
+        </p>
     ',
-    'securitystage2'=>'
-        <h2 class="leading-tight text-blue-dark mb-2">SECURITY PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 2</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 2 in terms of your security readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Companies at this stage tend to have built up their security offering over a period of about 18 months.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    At this stage, companies recognize the opportunity the security market presents to them and their customers, and are targeting it as a result.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Typically, companies have some experience and competencies in selling security, but have not yet developed these skills from a technical point of view.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Companies at this level may have some basic security certifications.
-                </div>
-            </div>
-        </div>
-        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
-        <p class="mb-2 text-grey-dark">Now is the time to:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Position security as a source of added value to customers and consider it an "armor-piercing bullet" for their business.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Consider building up technical expertise by assessing the skills profile and certifications needed to reach the customers they want to.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    An assessment of the certifications available should be undertaken by companies at this level to assess gaps in the company\'s portfolio.
-                </div>
-            </div>
-        </div>
+    
+    'dx-adoptionq1stage3a'=>'
+        <p class="mb-2">
+            Your score indicates that you are in the process of modernizing multiple digital channels to improve customer engagement and attract new revenues. This means that you are lagging behind most of your DX Trailblazer peers in transforming customer engagement. To sustain your place among the DX Trailblazers, you need to urgently look to modernize all your points of engagement with the customer and explore new channels to improve outreach.
+        </p>
     ',
-    'securitystage3'=>'
-        <h2 class="leading-tight text-blue-dark mb-2">SECURITY PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 3</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 3 in terms of your security readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Companies at this stage tend to have built up their security offering over a period of between 18 and 36 months.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Typically, there is strong recognition among companies at this stage of the wider growth opportunity that security offers to their business.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    At this level, many companies tend to have developed lower-value security-specific technical skills and can offer things like first-line support.
-                </div>
-            </div>
-        </div>
-        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
-        <p class="mb-2 text-grey-dark">Now is the time to:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Consider your organization\'s existing/potential differentiators in security and leverage them to accelerate growth as a security provider.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Consider how the addition of higher-value capabilities such as specialist security consulting and integration skills can enhance the value of your security proposition.
-                </div>
-            </div>
-        </div>
+    'dx-adoptionq1stage3b'=>'
+        <p class="mb-2">
+            Your score indicates that you are in the process of modernizing multiple digital channels to improve customer engagement and attract new revenues. This means that you are lagging behind your DX Trailblazer peers in transforming customer engagement. To sustain your place among the DX Trailblazers , you need to look to modernize all your points of engagement with the customer and explore new channels to improve outreach.
+        </p>
     ',
-    'securitystage4'=>'
-        <h2 class="leading-tight text-blue-dark mb-2">SECURITY PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 4</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 4 in terms of your security readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Companies at this stage tend to have built up their security offering over a period of between three to five years.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Typically, companies at this level view security as strategic to the future of their portfolio, having recognized the opportunity it presents.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    At this stage, companies complement their lower-value security technical skills (e.g., first-line support) with some higher-value offerings, such as technical consulting and security-specific technical skills.
-                </div>
-            </div>
-        </div>
-        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
-        <p class="mb-2 text-grey-dark">Now is the time to:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Focus sales teams around the outcomes security can bring to customers. This could mean maximizing workforce utilization through secure collaboration, to speed up time to market through secure cloud migration. This is essential to developing a stronger recurring security business.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Consider expanding security offering so it is an end-to-end proposition.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Invest in developing higher-value security certifications.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Ensure you have strong messaging around your position on GDPR and other regulations; this is essential for companies at this level.
-                </div>
-            </div>
-        </div>
+    'dx-adoptionq1stage3c'=>'
+        <p class="mb-2">
+            You are in the tiny minority of organisations that have transformed most of your digital channels to improve customer engagement and attract new revenues.  As a DX Trailblazer, you are in-line with most of your peers and are already there, so our advice is to focus your energy on other areas to help drive your DX capability to the next level.
+        </p>
     ',
-    'securitystage5'=>'
-        <h2 class="leading-tight text-blue-dark mb-2">SECURITY PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 5</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 5 in terms of your security readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Companies at this stage tend to have built up their security offering over a period of more than five years.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    A key attribute of companies at this stage is that security is a central feature of their business. They typically address security as a business issue for their clients, not a technical one. This means they understand the outcomes security can offer their business.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    A full range of security skills and dedicated teams are offered typically by companies at this level. This includes advanced security architects, pre-sales architects, technical consultants, and first-line support analysts.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Companies at this stage have in-house GDPR (and other regulatory) experts and understand multicloud compliance issues.
-                </div>
-            </div>
-        </div>
-        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
-        <p class="mb-2 text-grey-dark">Now is the time to:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Expand on this success by entering new geographies and new partnerships, and through industry-specific propositions and new portfolio offerings. For example, companies using a security operations center (SOC) to protect their own environment ought to consider extending this expertise to support third parties, adding a new revenue stream to their security offering.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Consider how to evolve beyond device management and log monitoring and into more advanced areas such as predictive threat analytics and even SOC management. By freeing customers\' in-house security professionals from lower-value, repeatable tasks they can focus on higher-value activities such as incident response. 
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/9/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Maintain a base of high-level accreditations to build strong trust among the customer base.
-                </div>
-            </div>
-        </div>
+
+    'dx-adoptionq2intro'=>'
+        <p class="mt-6 mb-2 font-bold text-blue-dark">
+            Q2: What is IT\'s role (as viewed by business) in transforming business through digital technologies in your organization?
+        </p>
+        <p class="mb-2">
+            Our research shows that FSIs that are advanced in DX view IT as an integral part of their transformation strategy. IT is considered a driver of competitive advantage in such forward looking organizations.
+        </p>
+    ',
+    'dx-adoptionq2stage1a'=>'
+        <p class="mb-2">
+            Your company views IT as a cost center needing to be curtailed rather than a platform for new services and competitive advantage, which is a common point of view for DX Digiphobes. For you to make progress in your digital journey, your IT department will need to engage well with the business and demonstrate the value it can bring forth. A shift in perception would need IT to demonstrate how the investments in digital technologies are contributing to the larger transformation objectives.
+        </p>
+    ',
+    'dx-adoptionq2stage1b'=>'
+        <p class="mb-2">
+            Your company views IT as a driver of efficiency rather than a cost to be cut. This is good and you are more advanced in this than others in your DX digiphobe peer group - but the ideal is to see IT as a platform for new services and a driver of competitive advantage. A shift in perception would need IT to demonstrate how the investments in digital technologies are contributing to the larger transformation objectives. 
+        </p>
+    ',
+    'dx-adoptionq2stage1c'=>'
+        <p class="mb-2">
+            You are way ahead of other DX Digiphobe peers here as your company is already up there. You should focus your efforts on other areas to improve your overall DX capability.
+        </p>
+    ',
+
+    'dx-adoptionq2stage2a'=>'
+        <p class="mb-2">
+            Your company views IT as a cost center needing to be curtailed rather than a platform for new services and competitive advantage, and this needs a lot of work and attention as most in your peer group of DX Conformist look at IT as a driver of efficiency. For you to progress further in your digital journey, your IT department will need to work to engage better with the business and demonstrate the value IT can bring forth.
+        </p>
+    ',
+    'dx-adoptionq2stage2b'=>'
+        <p class="mb-2">
+            Your company views IT as a driver of efficiency, so you are a good way along the path of IT driving new services and competitiveness like many of your DX Conformist peers. For you to progress further in your digital journey, your IT department will need to work to engage better with the business and demonstrate the value IT can bring forth.
+        </p>
+    ',
+    'dx-adoptionq2stage2c'=>'
+        <p class="mb-2">
+            As a DX Conformist, you are ahead of most of your peers and are already there, so our advice is to focus your energies on other areas to help drive your DX DX capability to the next level.
+        </p>
+    ',
+
+    'dx-adoptionq2stage3a'=>'
+        <p class="mb-2">
+            Your company views IT as a cost center needing to be curtailed rather than a platform for new services and competitive advantage as most of your peer groups of DX Trailblazers do . To maintain your leadership position in DX, your IT department will need to work to engage bettter with the business and demonstrate the value that IT can bring forth.
+        </p>
+    ',
+    'dx-adoptionq2stage3b'=>'
+        <p class="mb-2">
+            Your company views IT as a driver of efficiency rather than a platform for new services and competitive advantage as most of your peer groups of DX Trailblazer do. While you are well along the path to DX success, for you to stay ahead in your digital journey, your IT department will need to work to engage the business and demonstrate the value that IT can bring forth.
+        </p>
+    ',
+    'dx-adoptionq2stage3c'=>'
+        <p class="mb-2">
+            As a DX Trailblazer, you are in-line with most of your peers and are already here, so our advice is to focus your energies on other areas to help drive your DX capability to the next level.
+        </p>
+    ',
+
+    'dx-adoptionq3intro'=>'
+        <p class="mt-6 mb-2 font-bold text-blue-dark">
+            Q3: Which of the bands below best represent the proportion of your IT budget spend on the following areas?
+        </p>
+        <p class="mb-2">
+            Progress in digital transformation has a direct correlation to significant investments in the DX services.  FSIs that are advanced in DX typically have focused DX investments. They also balance this very well with their investments in traditional IT services.
+        </p>
+    ',
+    'dx-adoptionq3stage1a'=>'
+        <p class="mb-2">
+            Your investment bands indicate that you are in line with most of your DX Digiphobe peers as far as your IT services investments are concerned. To advance in your DX journey, you need to balance your IT investments well with your investments in DX services.
+        </p>
+    ',
+    'dx-adoptionq3stage1b'=>'
+        <p class="mb-2">
+            Your investment bands indicate that you are ahead of your DX Digiphobe peers as far as your IT services investments are concerned. You are in a good position as this is an important criteria for DX progress. 
+        </p>
+    ',
+    'dx-adoptionq3stage1c'=>'
+        <p class="mb-2">
+            Your investment bands indicate that you are well ahead of your DX Digiphobe peers as far as your IT services investments are concerned. You are in great position as this is an important criteria for DX progress. 
+        </p>
+    ',
+    'dx-adoptionq3stage1d'=>'
+        <p class="mb-2">
+            Your investment bands indicate that you are in line with most of your DX Digiphobe peers as far as your DX services investments are concerned. To advance in your DX journey, you need to consider increasing your investments in initiatives that employ digital technologies to transform business.
+        </p>
+    ',
+    'dx-adoptionq3stage1e'=>'
+        <p class="mb-2">
+            Your investment bands indicate that you are ahead of your DX Digiphobe peers as far as your DX services investments are concerned. You are in a good position as this is an important criteria for DX progress.
+        </p>
+    ',
+    'dx-adoptionq3stage1f'=>'
+        <p class="mb-2">
+            Your investment bands indicate that you are well ahead of your DX Digiphobe peers with respect to your investments in DX services. You are in great position as this is an important criteria for DX progress. Keep it up!
+        </p>
+    ',
+
+    'dx-adoptionq3stage2a'=>'
+        <p class="mb-2">
+            Your investment bands indicate that you are lagging behind other DX Conformist peers with respect to your investments in IT services. Your organisation remains exposed to a degree of risk as setting your investment priorities right is important for you to keep up the progress you made in your DX journey so far as well as make further advancements.
+        </p>
+    ',
+    'dx-adoptionq3stage2b'=>'
+        <p class="mb-2">
+            Your investment bands indicate that you are in line with DX Conformists with respect to your investments in IT services. An equal emphasis on IT spending on innovative digital technologies and traditional IT services will help you advance in the DX journey.
+        </p>
+    ',
+    'dx-adoptionq3stage2c'=>'
+        <p class="mb-2">
+            Your investment bands indicate that you are ahead of your DX Conformist peers with respect to your investments in IT services. You are in a great position as far as this important criteria for DX progress is concerned so keep it up!
+        </p>
+    ',
+    'dx-adoptionq3stage2d'=>'
+        <p class="mb-2">
+            Your investment bands indicate that you are lagging behind other DX Conformist peers with respect to your investments in DX services. Your organisation remains exposed to a degree of risk as setting your investment priorities right is important for you to keep up the progress you made in your DX journey so far as well as make further advancements.
+        </p>
+    ',
+    'dx-adoptionq3stage2e'=>'
+        <p class="mb-2">
+            Your investment bands indicate that you are in line with DX Conformists with respect to your investments in DX services. An equal emphasis on IT spending on innovative digital technologies and traditional IT services will help you advance in the DX journey.
+        </p>
+    ',
+    'dx-adoptionq3stage2f'=>'
+        <p class="mb-2">
+            Your investment bands indicate that you are ahead of your DX Conformist peers with respect to your investments in DX services. You are in a great position as far as this important criteria for DX progress is concerned so keep it up!
+        </p>
+    ',
+    
+    'dx-adoptionq3stage3a'=>'
+        <p class="mb-2">
+            Your investment bands indicate that you are lagging behind other DX Conformist peers with respect to your investments in IT services. Your organisation remains exposed to a degree of risk as setting your investment priorities right is important for you to keep up the progress you made in your DX journey so far as well as make further advancements.
+        </p>
+    ',
+    'dx-adoptionq3stage3b'=>'
+        <p class="mb-2">
+            Your investment bands indicate that you are lagging behind other DX Conformist peers with respect to your investments in IT services. Your organisation remains exposed to a degree of risk as setting your investment priorities right is important for you to keep up the progress you made in your DX journey so far as well as make further advancements.
+        </p>
+    ',
+    'dx-adoptionq3stage3c'=>'
+        <p class="mb-2">
+            Your investment bands indicate that you are in line with other DX Trailblazers with respect to your investments in IT services. An equal emphasis on IT spending on innovative digital technologies and traditional IT services will help you stay ahead of the game.
+        </p>
+    ',
+    'dx-adoptionq3stage3d'=>'
+        <p class="mb-2">
+            Your investment bands indicate that you are lagging behind other DX Conformist peers with respect to your investments in DX services. Your organisation remains exposed to a degree of risk as setting your investment priorities right is important for you to keep up the progress you made in your DX journey so far as well as make further advancements.
+        </p>
+    ',
+    'dx-adoptionq3stage3e'=>'
+        <p class="mb-2">
+            Your investment bands indicate that you are lagging behind other DX Conformist peers with respect to your investments in DX services. Your organisation remains exposed to a degree of risk as setting your investment priorities right is important for you to keep up the progress you made in your DX journey so far as well as make further advancements.
+        </p>
+    ',
+    'dx-adoptionq3stage3f'=>'
+        <p class="mb-2">
+            Your investment bands indicate that you are in line with other DX Trailblazers with respect to your investments in DX services. An equal emphasis on IT spending on innovative digital technologies and traditional IT services will help you stay ahead of the game.
+        </p>
+    ',
+
+    'dx-adoptionq4intro'=>'
+        <p class="mt-6 mb-2 font-bold text-blue-dark">
+            Q4: Will you spend more, less, or the same in 2018 than in the previous year for the following areas?
+        </p>
+        <p class="mb-2">
+            According to our research, FSIs that are advanced in their DX journey have solid plans to increase their DX investments in the next couple of years to keep up the momentum. With agile delivery models and automation becoming norm to address evolving requirements and speed to market, they plan to reduce investments in traditional business and IT consulting. Investments in BPO services are also expected to decline in the next couple of years.
+        </p>
+    ',
+    'dx-adoptionq4stage1a'=>'
+        <p class="mb-2">
+            Your investment bands indicate that you are in line with most of your DX Digiphobe peers with respect to your investments in traditional IT and Business Consulting and Outsourcing services. You must revisit your traditional IT outsourcing priorities and explore opportunities to allocate budget for cognitive enabled automation and other digital initiatives to move ahead in your DX journey.
+        </p>
+    ',
+    'dx-adoptionq4stage1b'=>'
+        <p class="mb-2">
+            Your investment bands indicate that you are ahead of your DX Digiphobe peers with respect to your investments in traditional IT and Business Consulting and Outsourcing services. You must revisit your traditional IT outsourcing priorities and continue to explore opportunities to allocate budget for cognitive enabled automation and other digital initiatives to move ahead in your DX journey.
+        </p>
+    ',
+    'dx-adoptionq4stage1c'=>'
+        <p class="mb-2">
+            Your investment bands indicate that you are well ahead of your DX Digiphobe peers with respect to your investments in traditional IT and Business Consulting and Outsourcing services. You appear to be doing the right things in terms of your investment priorities.
+        </p>
+    ',
+    
+    'dx-adoptionq4stage2a'=>'
+        <p class="mb-2">
+            Your investment bands indicate that you are lagging behind other DX Conformist peers with respect to your investments in in traditional IT and Business Consulting and Outsourcing services.  You must revisit your traditional IT outsourcing priorities and explore opportunities to allocate budget for cognitive enabled automation and other digital initiatives to move ahead in your DX journey.
+        </p>
+    ',
+    'dx-adoptionq4stage2b'=>'
+        <p class="mb-2">
+            Your investment bands indicate that you are in line with other DX Conformist peers with respect to your investments in in traditional IT and Business Consulting and Outsourcing services.  You must revisit your traditional IT outsourcing priorities and continue to explore opportunities to allocate budget for cognitive enabled automation and other digital initiatives to move ahead in your DX journey.
+        </p>
+    ',
+    'dx-adoptionq4stage2c'=>'
+        <p class="mb-2">
+            Your investment bands indicate that you are ahead of your DX Conformist peers with respect to your investments in in traditional IT and Business Consulting and Outsourcing services.  You must continue to explore opportunities to allocate budget for cognitive enabled automation and other digital initiatives to move ahead in your DX journey.
+        </p>
+    ',
+    
+    'dx-adoptionq4stage3a'=>'
+        <p class="mb-2">
+            Your investment bands indicate that you are lagging behind other DX trailblazers with respect to your investments in in traditional IT and Business Consulting and Outsourcing services.  You must revisit your traditional IT outsourcing priorities urgently and explore opportunities to allocate budget for cognitive enabled automation and other digital initiatives to move ahead in your DX journey.
+        </p>
+    ',
+    'dx-adoptionq4stage3b'=>'
+        <p class="mb-2">
+            Your investment bands indicate that you are lagging behind other DX trailblazers with respect to your investments in in traditional IT and Business Consulting and Outsourcing services. You must revisit your traditional IT outsourcing priorities urgently and explore opportunities to allocate budget for cognitive enabled automation and other digital initiatives to move ahead in your DX journey.
+        </p>
+    ',
+    'dx-adoptionq4stage3c'=>'
+        <p class="mb-2">
+            Your investment bands indicate that you are in line with other DX Trailblazers with respect to your investments in in traditional IT and Business Consulting and Outsourcing services. Good job!
+        </p>
+    ',
+    'success-in-dxstage1stage1'=>'
+        <h3 class="leading-tight text-blue-dark mb-4 mt-6">SUCCESS IN DX</h3>
+        <p class="mb-2">This section analyzes how successful you are in your digital initiatives by looking at your approach to DX, the way you measure success in DX as well as your specific digital technology investment priorities.</p>
+        <p class="mb-2">
+            Overall, you have scored like your DX Digiphobe peers in this section that asseses your DX success. You need to work hard to move to the next level by considering your approach to DX and which digital technology investments will give you the much needed boost to succeed in your transformation effort. 
+        </p>
+    ',
+    'success-in-dxstage1stage2'=>'
+        <h3 class="leading-tight text-blue-dark mb-4 mt-6">SUCCESS IN DX</h3>
+        <p class="mb-2">This section analyzes how successful you are in your digital initiatives by looking at your approach to DX, the way you measure success in DX as well as your specific digital technology investment priorities.</p>
+        <p class="mb-2">
+            Overall, you have done better than your DX Digiphobe peers in this section that asseses your DX success. This is good news as your current approach to DX and your investment priorities are helping you succeed in your DX initiatives to an extend. You must now look at capability areas that require more attention such as enabling a connected financial services business to improve customer trust and loyalty.
+        </p>
+    ',
+    'success-in-dxstage1stage3'=>'
+        <h3 class="leading-tight text-blue-dark mb-4 mt-6">SUCCESS IN DX</h3>
+        <p class="mb-2">This section analyzes how successful you are in your digital initiatives by looking at your approach to DX, the way you measure success in DX as well as your specific digital technology investment priorities.</p>
+        <p class="mb-2">
+            Overall, you have done much better than your DX Digiphobe peers in this section that asseses your DX success. This is very good news indeed. You must now look at capability areas that require more attention such as enabling a connected financial services business to improve customer trust and loyalty.
+        </p>
+    ',
+    'success-in-dxstage2stage1'=>'
+        <h3 class="leading-tight text-blue-dark mb-4 mt-6">SUCCESS IN DX</h3>
+        <p class="mb-2">This section analyzes how successful you are in your digital initiatives by looking at your approach to DX, the way you measure success in DX as well as your specific digital technology investment priorities.</p>
+        <p class="mb-2">
+            Overall, you are lagging behind your DX Conformist peers in this section that asseses your DX success. You need to work hard to move to the next level by considering your approach to DX and which digital technology investments will give you the much needed boost to succeed in your transformation effort. 
+        </p>
+    ',
+    'success-in-dxstage2stage2'=>'
+        <h3 class="leading-tight text-blue-dark mb-4 mt-6">SUCCESS IN DX</h3>
+        <p class="mb-2">This section analyzes how successful you are in your digital initiatives by looking at your approach to DX, the way you measure success in DX as well as your specific digital technology investment priorities.</p>
+        <p class="mb-2">
+            Overall, you have scored like your DX Conformist peers in this section that asseses your DX success. You should accelerate your efforts to move to the next level by considering your approach to DX and which digital technology investments will give you the much needed boost to succeed in your transformation effort. 
+        </p>
+    ',
+    'success-in-dxstage2stage3'=>'
+        <h3 class="leading-tight text-blue-dark mb-4 mt-6">SUCCESS IN DX</h3>
+        <p class="mb-2">This section analyzes how successful you are in your digital initiatives by looking at your approach to DX, the way you measure success in DX as well as your specific digital technology investment priorities.</p>
+        <p class="mb-2">
+            Overall, you have done much better than your DX Conformist peers in this section that asseses your DX success.  Well done on the strategy you follow, your attitude towards managing and measuring success of your digital initiatives. You must now look at capability areas that require more attention such as enabling a connected financial services business to improve customer trust and loyalty.
+        </p>
+    ',
+    'success-in-dxstage3stage1'=>'
+        <h3 class="leading-tight text-blue-dark mb-4 mt-6">SUCCESS IN DX</h3>
+        <p class="mb-2">This section analyzes how successful you are in your digital initiatives by looking at your approach to DX, the way you measure success in DX as well as your specific digital technology investment priorities.</p>
+        <p class="mb-2">
+            Overall, you are lagging behind DX Trailblazers in this section that asseses your DX success. This is serious so you need to urgently act to move the next level by considering your approach to DX and which digital technology investments will give you the much needed boost to succeed in your transformation effort. 
+        </p>
+    ',
+    'success-in-dxstage3stage2'=>'
+        <h3 class="leading-tight text-blue-dark mb-4 mt-6">SUCCESS IN DX</h3>
+        <p class="mb-2">This section analyzes how successful you are in your digital initiatives by looking at your approach to DX, the way you measure success in DX as well as your specific digital technology investment priorities.</p>
+        <p class="mb-2">
+            Overall, you are lagging behind DX Trailblazers in this section that asseses your DX success. This means you need to urgently act to move the next level by considering your approach to DX and which digital technology investments will give you the much needed boost to succeed in your transformation effort. 
+        </p>
+    ',
+    'success-in-dxstage3stage3'=>'
+        <h3 class="leading-tight text-blue-dark mb-4 mt-6">SUCCESS IN DX</h3>
+        <p class="mb-2">This section analyzes how successful you are in your digital initiatives by looking at your approach to DX, the way you measure success in DX as well as your specific digital technology investment priorities.</p>
+        <p class="mb-2">
+            Overall, you have scored like other DX Trailblazers in this section that asseses your DX success. You can look at other capability areas that require more attention to maintain your strong position in DX in the coming years.
+        </p>
+    ',
+
+    'success-in-dxq5intro'=>'
+        <p class="mt-6 mb-2 font-bold text-blue-dark">
+            Q5: What is the typical balance in your company for digital transformation initiatives?
+        </p>
+        <p class="mb-2">
+            An important ingredient for success in digital transformation is an organization\'s approach to implement digital projects.
+        </p>
+    ',
+    'success-in-dxq5stage1a'=>'
+        <p class="mb-2">
+            In your company, all or almost all DX projects are invidiual business unit driven which is a common characteristic for DX Digiphobes. For you to succeed in your digital journey, your senior leadership should seriously consider following an integrated enterprise wide strategy. They should develop and implement a plan to integrate DX initiatives and programs into the existing culture.
+        </p>
+    ',
+    'success-in-dxq5stage1b'=>'
+        <p class="mb-2">
+            In your company, DX projects are mainly invidiual business unit driven with some strategic enterprise wide initiaitves which is a common characteristic for many DX Digiphobes. For you to succeed in your digital journey, your senior leadership should seriously consider following an integrated enterprise wide strategy. 
+        </p>
+    ',
+    'success-in-dxq5stage1c'=>'
+        <p class="mb-2">
+            In your company, there is a balance of individual business unit DX initiatives and strategic enterprise wide initiatives which means you are ahead of your peers in the DX Digiphobes category when it comes to your approach to succeed in DX initiatives. You will benefit further from adopting a holistic integrated strategy and this will help you accelerate your efforts to achieve DX success.
+        </p>
+    ',
+    'success-in-dxq5stage1d'=>'
+        <p class="mb-2">
+            In your company, all or almost all DX initiatives are part of a strategic enterprise wide approach with some individual business unit DX intiaitives. You are way ahead of your other DX Digiphobe peers. You should focus your efforts on other areas now to improve your efforts to achieve DX success.
+        </p>
+    ',
+    'success-in-dxq5stage1e'=>'
+        <p class="mb-2">
+            In your company, all or almost all DX initiatives are part of a strategic enterprise wide approach. You are way ahead of your other DX Digiphobe peers. You should focus your efforts on other areas now to improve your efforts to achieve DX success.
+        </p>
+    ',
+    'success-in-dxq5stage2a'=>'
+        <p class="mb-2">
+            An important ingredient for success in digital transformation is an organization\'s approach to implement digital projects -- enterprisewide vs. individual initiatives.  In your company, all or almost all DX projects are invidiual business unit driven. This means you are behind your DX Conformist peers in this area. For you to succeed in your digital journey, your senior leadership should seriously consider following an integrated strategy. They should develop and implement a plan to integrate DX initiatives and programs into the existing culture.
+        </p>
+    ',
+    'success-in-dxq5stage2b'=>'
+        <p class="mb-2">
+            In your company, DX projects are mainly invidiual business unit driven with some strategic enterprise wide initiaitves. This means you are far behind your DX Conformist peers in this area. For you to succeed in your digital journey, your senior leadership should seriously consider following an integrated strategy. They should develop and implement a plan to integrate DX initiatives across the enterprise.
+        </p>
+    ',
+    'success-in-dxq5stage2c'=>'
+        <p class="mb-2">
+            In your company, DX projects are mainly invidiual business unit driven with some strategic enterprise wide initiaitves which means you are lagging somewhat behind your DX Conformist peers. For you to succeed in your digital journey, your senior leadership should seriously consider following an integrated strategy. They should develop and implement a plan to integrate DX initiatives across the enterprise.
+        </p>
+    ',
+    'success-in-dxq5stage2d'=>'
+        <p class="mb-2">
+            In your company, all or almost all DX initiatives are part of a strategic enterprise wide approach with some individual business unit DX intiaitives. You are in line with your DX Conformist peers. For you to succeed in your digital journey, your senior leadership should seriously consider following an integrated enterprise wide strategy. They should develop and implement a plan to integrate DX initiatives across the enterprise.
+        </p>
+    ',
+    'success-in-dxq5stage2e'=>'
+        <p class="mb-2">
+            In your company, all or almost all DX initiatives are part of a strategic enterprise wide approach. You are way ahead of your other DX Conformist peers. You should focus your efforts on other areas to improve your overall DX capability.
+        </p>
+    ',
+    'success-in-dxq5stage3a'=>'
+        <p class="mb-2">
+            An important ingredient for success in digital transformation is an organization\'s approach to implement digital projects -- enterprisewide vs. individual initiatives.  In your company, all or almost all DX projects are invidiual business unit driven. This means you are far behind other DX Trailblazers in this area. For you to sustain the advancements made in the DX capability levels , your senior leadership should seriously consider following an integrated strategy. They should develop and implement a plan to integrate DX initiatives and programs into the existing culture.
+        </p>
+    ',
+    'success-in-dxq5stage3b'=>'
+        <p class="mb-2">
+            In your company, DX projects are mainly invidiual business unit driven with some strategic enterprise wide initiaitves. This means you are far behind other DX Trailblazers in this area. For you to sustain the advancements made in the DX capability levels , your senior leadership should seriously consider following an integrated strategy. They should develop and implement a plan to integrate DX initiatives and programs into the existing culture.
+        </p>
+    ',
+    'success-in-dxq5stage3c'=>'
+        <p class="mb-2">
+            In your company, DX projects are mainly invidiual business unit driven with some strategic enterprise wide initiaitves which means you are lagging somewhat behind other DX Trailblazers. For you to sustain your leadership position in the digital journey your senior leadership should seriously consider following an integrated strategy. They should develop and implement a plan to integrate DX initiatives across the enterprise.
+        </p>
+    ',
+    'success-in-dxq5stage3d'=>'
+        <p class="mb-2">
+            In your company, all or almost all DX initiatives are part of a strategic enterprise wide approach with some individual business unit DX intiaitives which means you are lagging somewhat behind other DX Trailblazers. For you to sustain your leadership position in the digital journey your senior leadership should seriously consider following an integrated strategy. They should develop and implement a plan to integrate DX initiatives across the enterprise.
+        </p>
+    ',
+    'success-in-dxq5stage3e'=>'
+        <p class="mb-2">
+            In your company, all or almost all DX initiatives are part of a strategic enterprise wide approach. You are in line with other DX Trailblazers in this. You should focus your efforts on other areas to improve your overall DX capability.
+        </p>
+    ',
+
+    'success-in-dxq6intro'=>'
+        <p class="mt-6 mb-2 font-bold text-blue-dark">
+            Q6: How successful are you in your digital initiatives?
+        </p>
+        <p class="mb-2">
+            To measure the success of digital initiatives, FSIs need to define new digital KPIs such as customer advocacy scores, return on data-related investments, business\'s ability to transform and automate processes etc. Digitally advanced organizations use their KPIs for quarterly performance reviews, strategic planning, monthly ops reviews, directing weekly activities and also for presenting them to investors. 
+        </p>
+    ',
+    'success-in-dxq6stage1a'=>'
+        <p class="mb-2">
+            As your organization is in the earliest stages of DX capability, it is only natural for you to think that it is too early to measure the success of your DX initiatives. But you need to start considering the KPIs now that will help you measure the success of digital initiatives to provide you direction and focus for future investments.
+        </p>
+    ',
+    'success-in-dxq6stage1b'=>'
+        <p class="mb-2">
+            As your organization is in the earliest stages of DX capability, it is only natural for you to think that you are not very successful in your digital initiatives. But you need to start considering the KPIs that will help you measure the success of digital initiatives to provide you direction and focus for future investments.
+        </p>
+    ',
+    'success-in-dxq6stage1c'=>'
+        <p class="mb-2">
+            Based on your response, you are in the right direction in terms of measuring the success of your digital initiatives compared to your peers in the Digiphobe category. You can refine your KPIs or consider new KPIs as you move forward to provide you direction and focus for future investments.
+        </p>
+    ',
+    'success-in-dxq6stage1d'=>'
+        <p class="mb-2">
+            Based on your response, you are in the right direction in terms of measuring the success of your digital initiatives compared to your peers in the Digiphobe category. Success in DX in the earlier stages will give you a lot of confidence in future projects and also enable funding from the sponsors as you demonstrate the value the intiaitives can bring to table to transform your business. 
+        </p>
+    ',
+    'success-in-dxq6stage2a'=>'
+        <p class="mb-2">
+            Your response indicates that your organization is far behind your DX Conformist peers in identifying the KPIs to measure the success of your digital initiatives. You need to urgently start considering the KPIs now that will help you measure the success of digital initiatives to provide you direction and focus for future investments.
+        </p>
+    ',
+    'success-in-dxq6stage2b'=>'
+        <p class="mb-2">
+            Your response indicates that your organization is far behind your DX Conformist peers in identifying the KPIs to measure the success of your digital initiatives. You need to urgently start considering the KPIs now that will help you measure the success of digital initiatives to provide you direction and focus for future investments.
+        </p>
+    ',
+    'success-in-dxq6stage2c'=>'
+        <p class="mb-2">
+            Your response indicates that your organization is in line with your DX Conformist peers in identifying and using the KPIs to measure the success of your digital initiatives. You need to urgently start considering the KPIs now that will help you measure the success of digital initiatives to provide you direction and focus for future investments.
+        </p>
+    ',
+    'success-in-dxq6stage2d'=>'
+        <p class="mb-2">
+            Your response indicates that your organization well ahead of your DX Conformist peers in identifying and using the KPIs to measure the success of your digital initiatives. You should focus your efforts on other areas to improve your overall DX capability.
+        </p>
+    ',
+    'success-in-dxq6stage3a'=>'
+        <p class="mb-2">
+            Your response indicates that your organization is far behind your DX Trailblazers peers in identifying the KPIs to measure the success of your digital initiatives. You need to be ahead of the game here so you must urgently start considering the KPIs now that will help you measure the success of digital initiatives. This will provide you direction and focus for future investments.
+        </p>
+    ',
+    'success-in-dxq6stage3b'=>'
+        <p class="mb-2">
+            Your response indicates that your organization is far behind your DX Trailblazers peers in identifying the KPIs to measure the success of your digital initiatives.You need to be ahead of the game here so you must urgently start considering the KPIs now that will help you measure the success of digital initiatives. This will provide you direction and focus for future investments.
+        </p>
+    ',
+    'success-in-dxq6stage3c'=>'
+        <p class="mb-2">
+            Your response indicates that your organization is behind other DX Trailblazers in identifying and using the KPIs to measure the success of your digital initiatives. You need to be ahead of the game here so you must urgently start considering the KPIs now that will help you measure the success of digital initiatives. This will provide you direction and focus for future investments.
+        </p>
+    ',
+    'success-in-dxq6stage3d'=>'
+        <p class="mb-2">
+            Your response indicates that your organization is in line with other Digital Trailblazers in identifying and using the KPIs to measure the success of your digital initiatives. You should focus your efforts on other areas to improve your overall DX capability.
+        </p>
+    ',
+
+    'success-in-dxq7intro'=>'
+        <p class="mt-6 mb-2 font-bold text-blue-dark">
+            Q7: At what stage is your organization today in the deployment of each of the following digital technologies or initiatives to transform your business in response to the changing customer and market needs?
+        </p>
+        <p class="mb-2">
+            Our research in financial services shows that investments in Big Data and analytics, Social and collaboration tools, business through new channels and platform based ecosystem delivery provide an advantage to the FSIs that are advanced in their DX journey.
+        </p>
+    ',
+    'success-in-dxq7stage1a'=>'
+        <p class="mb-2">
+            Your investment bands indicate that you are in line with most of your DX Digiphobe peers with respect to your investments in these technologies. To be successful in your DX journey, you need to consider increasing your investments in these digital technologies which will positively impact your customer and partner relationships in future.
+        </p>
+    ',
+    'success-in-dxq7stage1b'=>'
+        <p class="mb-2">
+            Your investment bands indicate that you are ahead of your DX Digiphobe peers with respect to your investments in DX services and IT services. You are in a good position as far as this important criteria for DX success is concerned so keep it up!
+        </p>
+    ',
+    'success-in-dxq7stage1c'=>'
+        <p class="mb-2">
+            Your investment bands indicate that you are well ahead of your DX Digiphobe peers with respect to your investments in DX services and IT services. You are in an excellent position as far as this important criteria for DX success is concerned so keep it up!
+        </p>
+    ',
+    'success-in-dxq7stage2a'=>'
+        <p class="mb-2">
+            Your investment bands indicate that you are lagging behind other DX Conformist peers with respect to your investments in these technologies. Your organisation remains exposed to a degree of risk as setting your investment priorities right is important for you to keep up the progress you made in your DX journey so far as well as make further advancements.
+        </p>
+    ',
+    'success-in-dxq7stage2b'=>'
+        <p class="mb-2">
+            Your investment bands indicate that you are in line with most of your DX Conformist peers with respect to your investments in these technologies. You can consider increasing your investments in these digital technologies which will positively impact your customer and partner relationships in future.
+        </p>
+    ',
+    'success-in-dxq7stage2c'=>'
+        <p class="mb-2">
+            Your investment bands indicate that you are ahead of your DX Conformist peers with respect to your investments in these technologies. Great job! You can continue to focus on these areas to improve your customer and partner relationships in future.
+        </p>
+    ',
+    'success-in-dxq7stage3a'=>'
+        <p class="mb-2">
+            Your investment bands indicate that you are lagging behind other DX Trailblazers with respect to your investments in these technologies. Your organisation remains exposed to a degree of risk as setting your investment priorities right is important for you to keep up the progress you made in your DX journey so far as well as make further advancements.
+        </p>
+    ',
+    'success-in-dxq7stage3b'=>'
+        <p class="mb-2">
+            Your investment bands indicate that you are lagging behind other DX Trailblazers with respect to your investments in these technologies. Your organisation remains exposed to a degree of risk as setting your investment priorities right is important for you to keep up the progress you made in your DX journey so far as well as make further advancements.
+        </p>
+    ',
+    'success-in-dxq7stage3c'=>'
+        <p class="mb-2">
+            Your investment bands indicate that you are in line with most of the DX Trailblazers with respect to your investments in these technologies. You can continue to focus on these areas to keep up the leadership position you have in the market leveraging these technologies.
+        </p>
+    ',
+    
+    'connected-financial-servicesstage1stage1'=>'
+        <h3 class="leading-tight text-blue-dark mb-4 mt-6">CONNECTED FINANCIAL SERVICES</h3>
+        <p class="mb-2">Connected financial services bring together businesses and products with the help of a digital platform where diverse stakeholders (both internal and external) collaborate to deliver value-oriented and personalized offerings to customers through a partnership network approach. In this section, we look in to the progress you made in establishing a connected financial services business and your overall approach to risk management while doing so as this is vital to build loyalty and trust among your customers and partners.</p>
+        <p class="mb-2">
+            Your cumulative score in this section shows that you are in line with your DX Digiphobe peers in this area. To better meet the needs of customers in the digital world, it is important for you to rethink the way you engage with customers and partners and how establishing connected financial services models can help you in that.
+        </p>
+    ',
+    'connected-financial-servicesstage1stage2'=>'
+        <h3 class="leading-tight text-blue-dark mb-4 mt-6">CONNECTED FINANCIAL SERVICES</h3>
+        <p class="mb-2">Connected financial services bring together businesses and products with the help of a digital platform where diverse stakeholders (both internal and external) collaborate to deliver value-oriented and personalized offerings to customers through a partnership network approach. In this section, we look in to the progress you made in establishing a connected financial services business and your overall approach to risk management while doing so as this is vital to build loyalty and trust among your customers and partners.</p>
+        <p class="mb-2">
+            Your cumulative score in this section shows that you are much ahead of your DX Digiphobe peers in this area. Well done on your forward looking approach to establish a connected financial services business to align with customer and market needs. You must now look at other aspects that will help you advance in your DX journey and also measure and manage DX success.
+        </p>
+    ',
+    'connected-financial-servicesstage1stage3'=>'
+        <h3 class="leading-tight text-blue-dark mb-4 mt-6">CONNECTED FINANCIAL SERVICES</h3>
+        <p class="mb-2">Connected financial services bring together businesses and products with the help of a digital platform where diverse stakeholders (both internal and external) collaborate to deliver value-oriented and personalized offerings to customers through a partnership network approach. In this section, we look in to the progress you made in establishing a connected financial services business and your overall approach to risk management while doing so as this is vital to build loyalty and trust among your customers and partners.</p>
+        <p class="mb-2">
+            Your cumulative score in this section shows that you are much ahead of your DX Digiphobe peers in this area. Very well done on your forward looking approach to establish a connected financial services business to align with customer and market needs. You must now look at other aspects that will help you advance in your DX journey and also measure and manage DX success.
+        </p>
+    ',
+    'connected-financial-servicesstage2stage1'=>'
+        <h3 class="leading-tight text-blue-dark mb-4 mt-6">CONNECTED FINANCIAL SERVICES</h3>
+        <p class="mb-2">Connected financial services bring together businesses and products with the help of a digital platform where diverse stakeholders (both internal and external) collaborate to deliver value-oriented and personalized offerings to customers through a partnership network approach. In this section, we look in to the progress you made in establishing a connected financial services business and your overall approach to risk management while doing so as this is vital to build loyalty and trust among your customers and partners.</p>
+        <p class="mb-2">
+            Your cumulative score in this section shows that you are lagging behind DX Conformist peers in this area. To better meet the needs of customers in the digital world, it is important for you to rethink the way you engage with customers and partners and how establishing connected financial services models can help you in the journey.
+        </p>
+    ',
+    'connected-financial-servicesstage2stage2'=>'
+        <h3 class="leading-tight text-blue-dark mb-4 mt-6">CONNECTED FINANCIAL SERVICES</h3>
+        <p class="mb-2">Connected financial services bring together businesses and products with the help of a digital platform where diverse stakeholders (both internal and external) collaborate to deliver value-oriented and personalized offerings to customers through a partnership network approach. In this section, we look in to the progress you made in establishing a connected financial services business and your overall approach to risk management while doing so as this is vital to build loyalty and trust among your customers and partners.</p>
+        <p class="mb-2">
+            Your cumulative score in this section shows that you are in line with your DX Conformist peers in this area. To better meet the needs of customers in the digital world, you should continue to refine the way you engage with customers and partners by leveraging the connected financial services business model.
+        </p>
+    ',
+    'connected-financial-servicesstage2stage3'=>'
+        <h3 class="leading-tight text-blue-dark mb-4 mt-6">CONNECTED FINANCIAL SERVICES</h3>
+        <p class="mb-2">Connected financial services bring together businesses and products with the help of a digital platform where diverse stakeholders (both internal and external) collaborate to deliver value-oriented and personalized offerings to customers through a partnership network approach. In this section, we look in to the progress you made in establishing a connected financial services business and your overall approach to risk management while doing so as this is vital to build loyalty and trust among your customers and partners.</p>
+        <p class="mb-2">
+            Your cumulative score in this section shows that you are ahead of your DX Conformist peers in this area. Very well done on your forward looking approach to establish a connected financial services business to align with customer and market needs. You must now look at other aspects that will help you advance in your DX journey and also measure and manage DX success.
+        </p>
+    ',
+    'connected-financial-servicesstage3stage1'=>'
+        <h3 class="leading-tight text-blue-dark mb-4 mt-6">CONNECTED FINANCIAL SERVICES</h3>
+        <p class="mb-2">Connected financial services bring together businesses and products with the help of a digital platform where diverse stakeholders (both internal and external) collaborate to deliver value-oriented and personalized offerings to customers through a partnership network approach. In this section, we look in to the progress you made in establishing a connected financial services business and your overall approach to risk management while doing so as this is vital to build loyalty and trust among your customers and partners.</p>
+        <p class="mb-2">
+            Your cumulative score in this section shows that you are lagging behind many DX Trailblazers in this area. To better meet the needs of customers in the digital world, it is important for you to rethink the way you engage with customers and partners and how establishing connected financial services models can help you in the journey. It is risky to ignore this area as financial services industry is increasingly becoming open and connected driven by regulations or customer expectations or both.
+        </p>
+    ',
+    'connected-financial-servicesstage3stage2'=>'
+        <h3 class="leading-tight text-blue-dark mb-4 mt-6">CONNECTED FINANCIAL SERVICES</h3>
+        <p class="mb-2">Connected financial services bring together businesses and products with the help of a digital platform where diverse stakeholders (both internal and external) collaborate to deliver value-oriented and personalized offerings to customers through a partnership network approach. In this section, we look in to the progress you made in establishing a connected financial services business and your overall approach to risk management while doing so as this is vital to build loyalty and trust among your customers and partners.</p>
+        <p class="mb-2">
+            Your cumulative score in this section shows that you are lagging behind many DX Trailblazers in this area. To better meet the needs of customers in the digital world, it is important for you to rethink the way you engage with customers and partners and how establishing connected financial services models can help you in the journey. It is risky to ignore this area as financial services industry is increasingly becoming open and connected driven by regulations or customer expectations or both.
+        </p>
+    ',
+    'connected-financial-servicesstage3stage3'=>'
+        <h3 class="leading-tight text-blue-dark mb-4 mt-6">CONNECTED FINANCIAL SERVICES</h3>
+        <p class="mb-2">Connected financial services bring together businesses and products with the help of a digital platform where diverse stakeholders (both internal and external) collaborate to deliver value-oriented and personalized offerings to customers through a partnership network approach. In this section, we look in to the progress you made in establishing a connected financial services business and your overall approach to risk management while doing so as this is vital to build loyalty and trust among your customers and partners.</p>
+        <p class="mb-2">
+            Your cumulative score in this section shows that you are in line with other DX Trailblazers in this area. Well done on your forward looking approach to establish a connected financial services business to align with customer and market needs. Keep it up!
+        </p>
+    ',
+
+    'connected-financial-servicesq8intro'=>'
+        <p class="mt-6 mb-2 font-bold text-blue-dark">
+            Q8: Which statement best describes how advanced you are in delivering a connected financial service?
+        </p>
+        <p class="mb-2">
+            Digital savvy organizations aspire to become connected financial services establishments for competitive advantage.
+        </p>
+    ',
+    'connected-financial-servicesq8stage1a'=>'
+        <p class="mb-2">
+            Based on your response, you are in line with most of your peers in the Digiphobe category with respect to your position in delivering connected financial services. You need to start considering/exploring the delivery of a connected financial services business in order to  meet the ever-evolving expectations of your customers and partners in the digital world.
+        </p>
+    ',
+    'connected-financial-servicesq8stage1b'=>'
+        <p class="mb-2">
+            Based on your response, you are in line with some of your peers in the Digiphobe category with respect to your position in delivering connected financial services.You need to start kicking off projects to deliver a connected financial services business in order to  meet the ever-evolving expectations of your customers and partners in the digital world.
+        </p>
+    ',
+    'connected-financial-servicesq8stage1c'=>'
+        <p class="mb-2">
+            Based on your response, you are in line with a few of your peers in the Digiphobe with respect to your position in delivering connected financial services.You need to progress further in your initial projects to deliver a connected financial services business to gain first mover advantage among your peers in this area.
+        </p>
+    ',
+    'connected-financial-servicesq8stage1d'=>'
+        <p class="mb-2">
+            Based on your response, you are ahead of your peers in the Digiphobe category with respect to your position in delivering connected financial services.You need to try and maker further progress in your projects to deliver a connected financial services business as this will help you accelerate your efforts to move to the higher stages of DX capability.
+        </p>
+    ',
+    'connected-financial-servicesq8stage1e'=>'
+        <p class="mb-2">
+            Based on your response, you are well ahead of most of your peers in the Digiphobe category with respect to your position in delivering connected financial services.You should focus your efforts on other areas to improve your overall DX capability.
+        </p>
+    ',
+    'connected-financial-servicesq8stage2a'=>'
+        <p class="mb-2">
+            Based on your response, you are behind most of your peers in the DX Conformist category with respect to your position in delivering connected financial services. You need to immediately start considering/exploring the delivery of a connected financial services business in order to meet the ever-evolving expectations of your customers and partners in the digital world.
+        </p>
+    ',
+    'connected-financial-servicesq8stage2b'=>'
+        <p class="mb-2">
+            Based on your response, you are behind most of your peers in the DX Conformist category with respect to your position in delivering connected financial services.You need to immediately kick off projects to deliver a connected financial services business in order to meet the ever-evolving expectations of your customers and partners in the digital world.
+        </p>
+    ',
+    'connected-financial-servicesq8stage2c'=>'
+        <p class="mb-2">
+            Based on your response, you are in line with a few of your DX Conformist peers with respect to your position in delivering connected financial services.You need to progress further in your initial projects to deliver a connected financial services business to gain first mover advantage among your peers in this area.
+        </p>
+    ',
+    'connected-financial-servicesq8stage2d'=>'
+        <p class="mb-2">
+            Based on your response, you are ahead of most of your peers in the DX Conformist category with respect to your position in delivering connected financial services.You need to try and maker further progress in your projects to deliver a connected financial services business as this will help you accelerate your efforts to move to the higher levels of DX capability.
+        </p>
+    ',
+    'connected-financial-servicesq8stage2e'=>'
+        <p class="mb-2">
+            Based on your response, you are well ahead of most of your peers in the DX Conformist category with respect to your position in delivering connected financial services.You should focus your efforts on other areas to improve your overall DX capability.
+        </p>
+    ',
+    'connected-financial-servicesq8stage3a'=>'
+        <p class="mb-2">
+            Based on your response, you are far behind most of the DX Trailblazers with respect to your position in delivering connected financial services. You need to urgently start considering/exploring the delivery of a connected financial services business in order to meet the ever-evolving expectations of your customers and partners in the digital world.
+        </p>
+    ',
+    'connected-financial-servicesq8stage3b'=>'
+        <p class="mb-2">
+            Based on your response, you are behind most of the DX Trailblazers with respect to your position in delivering connected financial services.You need to urgently kick off projects to deliver a connected financial services business in order to meet the ever-evolving expectations of your customers and partners in the digital world.
+        </p>
+    ',
+    'connected-financial-servicesq8stage3c'=>'
+        <p class="mb-2">
+            Based on your response, you are behind most of the DX Trailblazers with respect to your position in delivering connected financial services.You need to accelerate your projects to deliver a connected financial services business to gain first mover advantage among your peers in this area.
+        </p>
+    ',
+    'connected-financial-servicesq8stage3d'=>'
+        <p class="mb-2">
+            Based on your response, you have to work harder to achieve the advanced stages in delivering connected financial services like some of the other DX Trailblazers.You can increase your focus and attention on this area as this will help you to stay ahead in delivering the products and services that meet the expectations of your customers and partners.
+        </p>
+    ',
+    'connected-financial-servicesq8stage3e'=>'
+        <p class="mb-2">
+            Based on your response, you are in line with other Digital Trailblazers with respect to your position in delivering connected financial services.You should focus your efforts on other areas to improve your overall DX capability.
+        </p>
+    ',
+
+    'connected-financial-servicesq9intro'=>'
+        <p class="mt-6 mb-2 font-bold text-blue-dark">
+            Q9: In delivering a connected financial services business, to what extent have you implemented each of the following to assess risk and ensure the right levels of security?
+        </p>
+        <p class="mb-2">
+            Financial services organizations should employ robust methods to assess risk and ensure that the right levels of security are in place in a connected financial services model with measures such as identity management, fraud detection, cyberthreat detection, investments in next gen security etc. 
+        </p>
+    ',
+    'connected-financial-servicesq9stage1a'=>'
+        <p class="mb-2">
+            By your own admission, you do not have any of these measures in place currently. This is in line with most of your DX Digiphobe peers. To build customer trust and loyalty in connected financial services, you need to start considering at least some of these measures in your strategy.
+        </p>
+    ',
+    'connected-financial-servicesq9stage1b'=>'
+        <p class="mb-2">
+            Your score indicates that you have employed some of these measures currently. This means you are ahead of most of your DX Digiphobe peers. To build customer trust and loyalty in connected financial services, you need to try and explore most of these measures in your strategy in future.
+        </p>
+    ',
+    'connected-financial-servicesq9stage1c'=>'
+        <p class="mb-2">
+            Your score indicates that you have employed some of these measures currently. This means you are well ahead of your DX Digiphobe peers. Keep it up!
+        </p>
+    ',
+    'connected-financial-servicesq9stage2a'=>'
+        <p class="mb-2">
+            By your own admission, you do not have any of these measures in place currently. This means you are lagging behind your DX Conformist peers. To build customer trust and loyalty in connected financial services, you need to urgently consider these measures in your strategy.
+        </p>
+    ',
+    'connected-financial-servicesq9stage2b'=>'
+        <p class="mb-2">
+            Your score indicates that you have employed some of these measures currently. This means you are in line with your DX Conformist peers. To build customer trust and loyalty in connected financial services, you need to try and explore most of these measures in your strategy in future.
+        </p>
+    ',
+    'connected-financial-servicesq9stage2c'=>'
+        <p class="mb-2">
+            Your score indicates that you have employed some of these measures currently. This means you are well ahead of your DX Conformist peers. Keep the momentum to make further advancements in your overall DX journey. 
+        </p>
+    ',
+    'connected-financial-servicesq9stage3a'=>'
+        <p class="mb-2">
+            By your own admission, you do not have any of these measures in place currently.This means you are lagging behind other DX trailblazers. To build customer trust and loyalty in connected financial services, you need to urgently consider these measures in your strategy.
+        </p>
+    ',
+    'connected-financial-servicesq9stage3b'=>'
+        <p class="mb-2">
+            Your score indicates that you have employed some of these measures currently. This means you are lagging behind other DX trailblazers. To build customer trust and loyalty in connected financial services, you need to urgently consider these measures in your strategy.
+        </p>
+    ',
+    'connected-financial-servicesq9stage3c'=>'
+        <p class="mb-2">
+            Your score indicates that you have employed some of these measures currently. This means you are in line with other DX Trailblazers and is following a mature approach to risk management in connected financial services. 
+        </p>
     ',
 );

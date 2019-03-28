@@ -1,6 +1,7 @@
 <?php
 
 use App\Tracker;
+use Illuminate\Support\Facades\Lang;
 
 /*
 |--------------------------------------------------------------------------
@@ -95,7 +96,8 @@ Route::group(['domain' => '{subdomain}.'.env('APP_TLD','idcready.net'),'middlewa
 	});
 	Route::get('/disclaimer', function()
 	{
-		return View::make('legal.disclaimer');
+		$extra = Lang::has(session('product.alias').'.disclaimer-extra') ? trans(session('product.alias').'.disclaimer-extra') : '';
+		return View::make('legal.disclaimer', ['extra'=> $extra ]);
 	});
 
 	Route::get('/pdf', 'PdfController@wkhtml');
