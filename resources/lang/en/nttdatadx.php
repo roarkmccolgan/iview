@@ -11,14 +11,14 @@ return array(
     'change-langauge'=>'Change language',
     'download-now'=>'Download Now',
 
-    'title'=>'IDC Digital Transformation Assessment',
+    'title'=>'IDC Digital Transformation Capability Assessment',
     'sub-title'=>'Digital technologies and new regulations are transforming all aspects of financial services business. How are you positioned to address your customers\' needs in an increasingly open and connected financial services ecosystem?',
     'landing'=>'
         <p class="mb-4">
             IDC, a global leading provider of technology market research, has developed the digital transformation (DX) capability assessment tool, sponsored by NTT DATA, to help financial services organizations assess their capability to cater to customers\' needs in an increasingly open financial services ecosystem driven by digital technologies and regulatory mandate.
         </p>
         <p class="mb-4">
-            This self-assessment tool is backed up by independent end-user research and IDC\'s in depth understanding of the FSI market. Upon completion of a short survey (10 minutes) you will receive a custom report that benchmarks your organization\'s DX capability and provides you with essential and tailored guidance to help you advance in your digital journey to cater to the needs of a financial services landscape that is ever-evolving and increasingly open and connected."
+            This self-assessment tool is backed up by independent end-user research and IDC\'s in depth understanding of the FSI market. Upon completion of a short survey (10 minutes) you will receive a custom report that benchmarks your organization\'s DX capability and provides you with essential and tailored guidance to help you advance in your digital journey to cater to the needs of a financial services landscape that is ever-evolving and increasingly open and connected.
         </p>',
     'startbut'=>'Start Assessment',
     
