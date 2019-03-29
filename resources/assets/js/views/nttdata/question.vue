@@ -52,7 +52,7 @@
 						<group-opposing-slider :answer="answer" :question="currentQuestion" :selectOption="selectOption" :showDetails="showDetails"></group-opposing-slider>
 					</template>
 					<template v-else-if="currentQuestion.type == 'groupbutton'">
-						<group-button :answer="answer" :question="currentQuestion" :selectOption="selectOption" :showDetails="showDetails"></group-button>
+						<group-button :answer="answer" :question="currentQuestion" @selectOption="selectOption" :showDetails="showDetails"></group-button>
 					</template>
 				</div>
 				<div class="container mx-auto mt-4">
@@ -88,6 +88,7 @@ export default{
 		return {
 			//section: this.$route.params.section,
 			questions: laravel.questions,
+			location: window.location.pathname,
 			faArrowLeft: faArrowLeft,
 			faSpinnerThird: faSpinnerThird,
 			lang: {

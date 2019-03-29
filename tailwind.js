@@ -53,6 +53,7 @@ let colors = {
 
   'ntt-data-blue': 'rgb(15,28,80)',
   'ntt-data-blue-light': 'rgb(103,133,193)',
+  'ntt-data-blue-fade': '#1A2C5B',
   'ntt-data-blue-lighter': 'rgb(192,205,231)',
   'ntt-data-red': 'rgb(188,67,40)',
   'ntt-data-yellow': 'rgb(230,182,0)',

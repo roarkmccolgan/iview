@@ -24,7 +24,7 @@
 	    </div>
 	</div>
 	<transition name="fade">
-		<router-view></router-view>
+		<router-view :key="$route.fullPath"></router-view>
 	</transition>
 	<div class="container mx-auto border-white border-t mt-6 mb-4 py-4 px-4 text-white">
 		<div class="flex justify-start">

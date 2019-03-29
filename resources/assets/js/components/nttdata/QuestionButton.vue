@@ -1,5 +1,5 @@
 <template>
-	<div class="mb-8">
+	<div class="mb-8 bg-ntt-data-blue-fade rounded p-4">
 		<h2 v-show="label" :key="'head'" class="mb-2 font-light text-xl sm:text-2xl leading-tight text-ntt-data-blue-lighter">{{label}}</h2>
 		<transition-group
 			name="staggered-slide"
@@ -8,12 +8,11 @@
 			v-on:before-enter="beforeEnter"
 			v-on:enter="enter"
 			v-on:leave="leave"
-			class="sm:flex"
 			tag="div"
 		>
 		
 
-		<div class="sm:mr-2" :class="'w-1/'+(options.length)" v-for="(option, optKey) in options" :key="optKey" :data-index="optKey">
+		<div v-for="(option, optKey) in options" :key="optKey" :data-index="optKey">
 			<label class="mb-1 font-light px-4 py-4 rounded" :class="inAnswer(option.label) ? activeClass : normalClass" tabindex="0" @keyup.space="$event.target.click()">
 				<input class="hidden" :type="multiple === false ? 'radio':'checkbox'" :name="multiple === false ? qname:qname+'[]'" :value="option.value" @change="selectOption(option.label, option.value, qname, $event.target.checked, option.type)">
 				<div class="flex items-center leading-none">
@@ -62,9 +61,10 @@ export default{
 			normalClass: {
 				'block': true,
 				'text-white': true,
-				'bg-ntt-data-blue-light': true,
-				'hover:bg-ntt-data-blue-lighter': true,
-				'hover:text-ntt-data-blue': true,
+				//'bg-ntt-data-blue-light': true,
+				'hover:bg-ntt-data-blue-fade': true,
+				'cursor-pointer': true,
+				//'hover:text-ntt-data-blue': true,
 			},
 			activeClass: {
 				'block': true,

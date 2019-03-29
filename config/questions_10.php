@@ -394,7 +394,7 @@ return array(
                                 )
                             ),
                             array(
-                                'label'=>'Digital Transformation/New IT Initiatives - e.g., modern front office, New channels, personalized offeringsl',
+                                'label'=>'Digital Transformation/New IT Initiatives - e.g., modern front office, New channels, personalized offerings',
                                 'name'=> 3.2,
                                 'options'=>array(
                                     array(

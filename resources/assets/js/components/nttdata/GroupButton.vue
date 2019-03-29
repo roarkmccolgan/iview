@@ -1,8 +1,15 @@
 <template>
 	<div class="flex flex-col justify-center text-grey-light">
 		<template v-for="(options, optKey) in question.options">
-			<question-button :question="question" :the-options="options.options" :label="options.label" :qname="options.name" v-on:selectOption="selectOption" :showDetails="showDetails" :answer="answer"></question-button>
+			<transition name="slide-fade">
+			<div class="" v-if="optKey == showOption" :key="'q'+optKey">
+				<question-button :question="question" :the-options="options.options" :label="options.label" :qname="options.name" v-on:selectOption="optionSelected" :showDetails="showDetails" :answer="answer"></question-button>				
+			</div>
+			</transition>
 		</template>
+		<div class="flex items-center justify-center">
+			<div class="w-3 h-3 mx-1 rounded-full bg-ntt-data-blue-light cursor-pointer" v-for="(options, optKey) in question.options" :class="{'bg-ntt-data-yellow': showOption == optKey}" @click="goToOption(optKey, options.name)"></div>
+		</div>
 	</div>
 </template>
 <script>
@@ -10,10 +17,10 @@ import FontAwesomeIcon from '@fortawesome/vue-fontawesome';
 import QuestionButton from '../../components/nttdata/QuestionButton.vue';
 
 export default{
-	props: ['question', 'answer', 'showDetails', 'selectOption'],
+	props: ['question', 'answer', 'showDetails'],
 	data: function() {
 		return {
-
+			showOption: 0,
 		};
 	},
 	computed: {
@@ -25,6 +32,20 @@ export default{
 		QuestionButton
 	},
 	methods:{
+		optionSelected: function(selected){
+			this.$emit('selectOption',selected);
+			var that = this;
+			if(this.showOption + 1 < this.question.options.length){
+				setTimeout(function(){
+	                that.showOption++;
+	            }, 400);
+			}
+		},
+		goToOption: function(value, qname){
+			if(value == 0 || this.answer[value-1]){
+				this.showOption = value;					
+			}
+		},
 		inAnswer: function(value){
 			var exists = false;
 			for (var i = this.answer.length - 1; i >= 0; i--) {
@@ -39,7 +60,6 @@ export default{
 		
 	},
 	mounted: function(){
-		//this.$refs.slider.setValue(String ((this.sliderOptions.min+this.sliderOptions.max) / 2));
 	}
 }
 </script>
