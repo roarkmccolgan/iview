@@ -29,7 +29,7 @@ class IviewController extends Controller
     public function create()
     {
         $companies = Company::all();
-        $languages = language::lists('name', 'id');
+        $languages = language::pluck('name', 'id');
         return view('iview.create', compact(['companies','languages']));
     }
     /**

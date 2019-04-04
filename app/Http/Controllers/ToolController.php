@@ -102,7 +102,7 @@ class ToolController extends Controller
     public function create()
     {
         $companies = Company::all();
-        $languages = Language::lists('name', 'id');
+        $languages = Language::pluck('name', 'id');
         return view('tool.create', compact(['companies','languages']));
     }
 
