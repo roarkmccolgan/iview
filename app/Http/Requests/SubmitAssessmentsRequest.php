@@ -2,11 +2,12 @@
 
 namespace App\Http\Requests;
 
+use Illuminate\Foundation\Http\FormRequest;
 use App\Http\Requests\Request;
 use App\Tool;
 use Illuminate\Support\Facades\Config;
 
-class SubmitAssessmentsRequest extends Request
+class SubmitAssessmentsRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
