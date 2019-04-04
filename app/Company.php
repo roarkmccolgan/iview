@@ -13,8 +13,8 @@ class Company extends Model
     {
         return $this->hasMany('App\Iview');
     }
-	
-	public function tools()
+    
+    public function tools()
     {
         return $this->hasMany('App\Tool');
     }

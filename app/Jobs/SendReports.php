@@ -38,9 +38,9 @@ class SendReports extends Job implements ShouldQueue, SelfHandling
         $file = (new generateReport($tool))->generate();
         $users = config('baseline_'.$tool->id.'.overall.report_recipients');
         foreach ($users as $user) {
-            Mail::send('emails.report',['tool'=>$tool],function($m) use($file, $user, $tool){
+            Mail::send('emails.report', ['tool'=>$tool], function ($m) use ($file, $user, $tool) {
                 $m->to($user)->subject($tool->title.' Assessment Report');
-                $m->attach($file->store("xls",false,true)['full']);
+                $m->attach($file->store("xls", false, true)['full']);
             });
         }
     }

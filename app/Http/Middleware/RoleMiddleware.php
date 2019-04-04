@@ -24,10 +24,12 @@ class RoleMiddleware
         
         foreach ($roles as $role) {
             if ($request->user()->hasRole($role)) {
-               $abort = false;
+                $abort = false;
             }
         }
-        if($abort) abort(403);
+        if ($abort) {
+            abort(403);
+        }
 
         /*if (! $request->user()->can($permission)) {
            abort(403);

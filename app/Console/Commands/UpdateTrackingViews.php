@@ -48,7 +48,7 @@ class UpdateTrackingViews extends Command
                 $startDate = $tool->start_date;
                 $endDate = Carbon::now();
                 $langString = '';
-                if($tracker->language_id!=1){
+                if ($tracker->language_id!=1) {
                     $abb = $tracker->language->abbreviation;
                     $langString = ';ga:landingPagePath=@?/'.$abb;
                 }
@@ -61,7 +61,7 @@ class UpdateTrackingViews extends Command
                 Analytics::setSiteId('ga:'.$tool->gapropertyid);
                 $trackerViewResults = Analytics::performQuery($startDate, $endDate, $metrics, $other);
                 $results = $trackerViewResults->getRows();
-                if($tracker->views != $results[0][0]){
+                if ($tracker->views != $results[0][0]) {
                     $tracker->views = $results[0][0];
                     $tracker->save();
                 }

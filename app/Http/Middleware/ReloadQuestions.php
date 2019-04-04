@@ -22,9 +22,9 @@ class ReloadQuestions
         $currentLocal = App::getLocale();
         $localQuestions = $currentLocal=='en' ? '' : $currentLocal;
         $questions = Config::get($localQuestions.'questions_'.session('product.id'));
-        if(is_null($questions)){
+        if (is_null($questions)) {
             return redirect('/');
-            abort(404,'Language or URL Does not exist');
+            abort(404, 'Language or URL Does not exist');
         }
         
         $request->session()->put('questions', $questions);
@@ -32,6 +32,5 @@ class ReloadQuestions
         $request->session()->put('startSection', key($questions));
 
         return $next($request);
-
     }
 }

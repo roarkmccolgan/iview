@@ -12,7 +12,7 @@ class CreateToolsTable extends Migration
      */
     public function up()
     {
-        Schema::create('tools', function(Blueprint $table) {
+        Schema::create('tools', function (Blueprint $table) {
             $table->increments('id');
             $table->string('alias');
             $table->string('title');

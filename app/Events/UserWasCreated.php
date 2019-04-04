@@ -22,7 +22,7 @@ class UserWasCreated extends Event
      *
      * @return void
      */
-    public function __construct(User $user,Tool $tool, URL $url)
+    public function __construct(User $user, Tool $tool, URL $url)
     {
         $this->user = $user;
         $this->tool = $tool;

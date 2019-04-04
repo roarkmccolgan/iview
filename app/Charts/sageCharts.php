@@ -16,7 +16,7 @@ class sageCharts extends Chart
         parent::__construct();
         $this->labels(['One', 'Two', 'Three', 'Four', 'Five'])
         ->options([
-        	'animation' => false
+            'animation' => false
         ]);
     }
 }

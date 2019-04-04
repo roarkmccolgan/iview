@@ -41,9 +41,8 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $e)
     {
-        if ($e instanceof TokenMismatchException){
-
-            return redirect('/')->with('csrf_error',"Opps! Your session expired, please start again");
+        if ($e instanceof TokenMismatchException) {
+            return redirect('/')->with('csrf_error', "Opps! Your session expired, please start again");
         }
         return parent::render($request, $e);
     }

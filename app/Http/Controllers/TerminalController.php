@@ -32,35 +32,35 @@ class TerminalController extends Controller
         Carbon::setToStringFormat('m-d-Y');
         $startDate = Carbon::now()->subMonth();
         
-        if($startDate->lt($tool->start_date)){
+        if ($startDate->lt($tool->start_date)) {
             $startDate = $tool->start_date;
         }
         $endDate = Carbon::now();
         $customDate = false;
-        if($request->input('reporting')){
-            $startDate = Carbon::createFromFormat('!d-m-Y',$request->input('from'));
-            $endDate = Carbon::createFromFormat('!d-m-Y',$request->input('to'));
+        if ($request->input('reporting')) {
+            $startDate = Carbon::createFromFormat('!d-m-Y', $request->input('from'));
+            $endDate = Carbon::createFromFormat('!d-m-Y', $request->input('to'));
             $customDate = true;
         }
 
         //create Array of dates
         $dateRange = [];
-        for($date = clone $startDate; $date->lte($endDate); $date->addDay()) {
+        for ($date = clone $startDate; $date->lte($endDate); $date->addDay()) {
             $dateRange[] = $date->format('Ymd');
         }
 
-        $completionRange = collect($dateRange)->map(function($item, $key){
+        $completionRange = collect($dateRange)->map(function ($item, $key) {
             return [$item,0];
         });
 
         $tool->load(
             ['trackers' => function ($query) use ($startDate, $endDate) {
                 $query->with(['TrackerHits' => function ($q) use ($startDate, $endDate) {
-                    $q->whereDate('created_at','>=',$startDate)->whereDate('created_at','<=',$endDate);
+                    $q->whereDate('created_at', '>=', $startDate)->whereDate('created_at', '<=', $endDate);
                 }]);
             },
             'assessments' => function ($query) use ($startDate, $endDate) {
-                $query->whereDate('created_at','>=',$startDate)->whereDate('created_at','<=',$endDate);
+                $query->whereDate('created_at', '>=', $startDate)->whereDate('created_at', '<=', $endDate);
             }],
             'urls'
         );
@@ -79,14 +79,14 @@ class TerminalController extends Controller
         //make a full array of each day with count of assessments per day
         $completionDates=[];
         foreach ($dateRange as $theDay) {
-            $completionDates[] = [Carbon::parse($theDay)->format('d'),count(array_keys($assessmentDates, $theDay ))];
+            $completionDates[] = [Carbon::parse($theDay)->format('d'),count(array_keys($assessmentDates, $theDay))];
         }
 
         $trackerQueries = [];
 
         foreach ($tool->trackers as $tracker) {
             $langString = '';
-            if($tracker->language_id!=1){
+            if ($tracker->language_id!=1) {
                 $abb = $tracker->language->abbreviation;
                 $langString = ';ga:landingPagePath=@/'.$abb.'/';
             }
@@ -100,7 +100,7 @@ class TerminalController extends Controller
             $completions = 0;
 
             foreach ($tracker->TrackerHits as $stats) {
-                if($stats->type=='completion'){
+                if ($stats->type=='completion') {
                     $completions++;
                 }
             }
@@ -108,7 +108,7 @@ class TerminalController extends Controller
         }
         //dd($trackerQueries);
         
-        $terminalQueries = array_merge($terminalQueries,$trackerQueries);
+        $terminalQueries = array_merge($terminalQueries, $trackerQueries);
 
         $analyticsResults = [];
 
@@ -132,34 +132,42 @@ class TerminalController extends Controller
             $analyticsResults[$key] = $$key->getRows();
 
             //delay quesry for a second if more than 10 queries are made
-            if($query_count == 10){
+            if ($query_count == 10) {
                 sleep(1);
                 $query_count = 0;
             }
         }
-        if($tool->id == 8){
+        if ($tool->id == 8) {
             $normalizeStart = new Carbon('23rd April 2018');
             $normalizeEnd = new Carbon('30th April 2018');
             $enAdd = 141;
             $deAdd = 25;
             $esAdd = 26;
             $frAdd = 22;
-            if($normalizeStart->between($startDate,$endDate) && $normalizeEnd->between($startDate,$endDate)){
+            if ($normalizeStart->between($startDate, $endDate) && $normalizeEnd->between($startDate, $endDate)) {
                 foreach ($tool->trackers as $tracker) {
-                    if($tracker->language_id==1 && $tracker->code=='hlIkPxqRrK'){
-                        if(!isset($analyticsResults[$tracker->code])) $analyticsResults[$tracker->code] = [[0]];
+                    if ($tracker->language_id==1 && $tracker->code=='hlIkPxqRrK') {
+                        if (!isset($analyticsResults[$tracker->code])) {
+                            $analyticsResults[$tracker->code] = [[0]];
+                        }
                         $analyticsResults[$tracker->code][0][0] += $enAdd;
                     }
-                    if($tracker->language_id==23 && $tracker->code=='fdbXy1vYTW'){
-                        if(!isset($analyticsResults[$tracker->code])) $analyticsResults[$tracker->code] = [[0]];
+                    if ($tracker->language_id==23 && $tracker->code=='fdbXy1vYTW') {
+                        if (!isset($analyticsResults[$tracker->code])) {
+                            $analyticsResults[$tracker->code] = [[0]];
+                        }
                         $analyticsResults[$tracker->code][0][0] += $deAdd;
                     }
-                    if($tracker->language_id==27 && $tracker->code=='a6etnMN9VP'){
-                        if(!isset($analyticsResults[$tracker->code])) $analyticsResults[$tracker->code] = [[0]];
+                    if ($tracker->language_id==27 && $tracker->code=='a6etnMN9VP') {
+                        if (!isset($analyticsResults[$tracker->code])) {
+                            $analyticsResults[$tracker->code] = [[0]];
+                        }
                         $analyticsResults[$tracker->code][0][0] += $esAdd;
                     }
-                    if($tracker->language_id==34 && $tracker->code=='zXLpqJDEqj'){
-                        if(!isset($analyticsResults[$tracker->code])) $analyticsResults[$tracker->code] = [[0]];
+                    if ($tracker->language_id==34 && $tracker->code=='zXLpqJDEqj') {
+                        if (!isset($analyticsResults[$tracker->code])) {
+                            $analyticsResults[$tracker->code] = [[0]];
+                        }
                         $analyticsResults[$tracker->code][0][0] += $frAdd;
                     }
                 }
@@ -168,8 +176,7 @@ class TerminalController extends Controller
         //dd($analyticsResults);
 
         foreach ($tool->trackers as $tracker) {
-
-            if($analyticsResults[$tracker->code]){
+            if ($analyticsResults[$tracker->code]) {
                 $tracker->setViews($analyticsResults[$tracker->code][0][0]);
             }
         }
@@ -206,17 +213,17 @@ class TerminalController extends Controller
 
         
         foreach ($analyticsResults['daily_results'] as $key => $value) {
-            $correctDateFormat = Carbon::createFromFormat('Ymd',$value[0])->format('j');
+            $correctDateFormat = Carbon::createFromFormat('Ymd', $value[0])->format('j');
             $analyticsResults['daily_results'][$key][0] = $correctDateFormat;
             $daily_total+=$value[1];
         }
         $complete_total = 0;
         foreach ($analyticsResults['complete_results'] as $key => $value) {
-            $analyticsResults['complete_results'][$key][0] = Carbon::createFromFormat('Ymd',$value[0])->format('j');
+            $analyticsResults['complete_results'][$key][0] = Carbon::createFromFormat('Ymd', $value[0])->format('j');
             $complete_total+=$value[1];
         }
 
-        $alltime_total = Assessment::where('tool_id',$tool->id)->count();
+        $alltime_total = Assessment::where('tool_id', $tool->id)->count();
 
         $data = [
             'tool' => $tool,

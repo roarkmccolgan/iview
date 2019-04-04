@@ -18,16 +18,18 @@ class ToolAccessMiddleware
         //dd('fok');
         $user = $request->user();
         $tool = $request->get('product');
-        if(!$user->hasRole($super)){
+        if (!$user->hasRole($super)) {
             $abort = true;
-            if($user->tools->contains($tool->id)){
+            if ($user->tools->contains($tool->id)) {
                 foreach ($requiredRoles as $role) {
-                    if($user->hasRole($role)){
+                    if ($user->hasRole($role)) {
                         $abort = false;
                     }
                 }
             }
-            if($abort) abort(403);
+            if ($abort) {
+                abort(403);
+            }
         }
         
         return $next($request);

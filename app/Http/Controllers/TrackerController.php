@@ -23,7 +23,7 @@ class TrackerController extends Controller
 
         $tool = $request->get('product');
 
-        if($user->tools->contains($tool->id) || $user->hasRole('super')){
+        if ($user->tools->contains($tool->id) || $user->hasRole('super')) {
             $tool->load(['trackers.language','company','urls.language']);
             
             JavaScript::put([
@@ -55,7 +55,7 @@ class TrackerController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(AddTrackerRequest $request)
-    { 
+    {
         $tracker = Tracker::create($request->except(['_token']));
         return redirect('admin/tracking')->with('status', ['type'=>'success','message'=>'Tracker Created']);
     }
@@ -101,10 +101,10 @@ class TrackerController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function delete($subdomain, Tracker $tracker,Request $request)
+    public function delete($subdomain, Tracker $tracker, Request $request)
     {
         $tracker->delete();
-        if($request->ajax()){
+        if ($request->ajax()) {
             $data = [
                 'result'=>'success'
             ];
@@ -113,7 +113,8 @@ class TrackerController extends Controller
         return redirect('/admin/trackers')->with('status', 'Tracker Deleted!');
     }
 
-    private function generateTrackingCode($length = 10){
+    private function generateTrackingCode($length = 10)
+    {
         $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
         $charactersLength = strlen($characters);
         $max = 10;
@@ -123,10 +124,10 @@ class TrackerController extends Controller
                 $randomString .= $characters[rand(0, $charactersLength - 1)];
             }
             $max--;
-            if($max==0) dd('toomuch');
-        } while (Tracker::where('code',$randomString)->first());
+            if ($max==0) {
+                dd('toomuch');
+            }
+        } while (Tracker::where('code', $randomString)->first());
         return $randomString;
-
     }
-
 }

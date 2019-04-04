@@ -57,7 +57,6 @@ class IviewController extends Controller
         ]);
 
         foreach ($request->input('language') as $lang_id) {
-
             $url = $iview->urls()->create(['domain'=>$request->input('domain'),'subdomain'=>$request->input('subdomain'),'language_id'=>$lang_id]);
         }
 

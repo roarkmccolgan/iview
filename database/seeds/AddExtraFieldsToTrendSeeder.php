@@ -3,7 +3,6 @@
 use Illuminate\Database\Seeder;
 use Carbon\Carbon;
 
-
 class AddExtraFieldsToTrendSeeder extends Seeder
 {
     /**
@@ -21,11 +20,11 @@ class AddExtraFieldsToTrendSeeder extends Seeder
             'error' => 'errorTurnover',
             'options' => json_encode([
                 "size1" => "Less than £1M",
-				"size2" => "Between £1M and £10M",
-				"size3" => "Between £10M and £100M",
+                "size2" => "Between £1M and £10M",
+                "size3" => "Between £10M and £100M",
                 "size4" => "Between £100M and £200M",
                 "size5" => "Between £200M and £500M",
-				"size6" => "Over £500M",
+                "size6" => "Over £500M",
             ]),
             'required' => 1,
             'order' => 1,

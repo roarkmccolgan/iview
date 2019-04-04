@@ -3,7 +3,6 @@
 use Illuminate\Database\Seeder;
 use Carbon\Carbon;
 
-
 class AddExtraFieldsToNTTSeeder extends Seeder
 {
     /**
@@ -21,9 +20,9 @@ class AddExtraFieldsToNTTSeeder extends Seeder
             'error' => 'errorCompanySize',
             'options' => json_encode([
                 "size1" => "Fewer than 500",
-				"size2" => "500 to 999",
-				"size3" => "1,000 to 4,999",
-				"size4" => "5,000 or more",
+                "size2" => "500 to 999",
+                "size3" => "1,000 to 4,999",
+                "size4" => "5,000 or more",
             ]),
             'required' => 1,
             'order' => 1,

@@ -1,14 +1,14 @@
 <?php
 return [
-	'graphs' => [
-		'benchmark' => [
-			
-		],
-		'benchmark-country' => [
-			
-		],
-		'benchmark-size' => [
-			
-		],
-	],
+    'graphs' => [
+        'benchmark' => [
+            
+        ],
+        'benchmark-country' => [
+            
+        ],
+        'benchmark-size' => [
+            
+        ],
+    ],
 ];

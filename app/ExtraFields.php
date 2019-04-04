@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class ExtraFields extends Model
 {
-	protected $table = 'extra_fields';
+    protected $table = 'extra_fields';
 
     protected $casts = [
         'options' => 'array',

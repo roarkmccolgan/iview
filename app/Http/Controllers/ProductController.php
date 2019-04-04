@@ -10,7 +10,8 @@ use App\Http\Controllers\Controller;
 class ProductController extends Controller
 {
 
-    public function __construct(){
+    public function __construct()
+    {
 
         $this->middleware('url');
     }
@@ -33,7 +34,7 @@ class ProductController extends Controller
         ];
         //return $config;
 
-        return redirect()->action($product.'Controller@run',compact('product'));
+        return redirect()->action($product.'Controller@run', compact('product'));
     }
 
     /**

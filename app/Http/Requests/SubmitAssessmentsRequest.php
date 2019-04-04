@@ -36,12 +36,12 @@ class SubmitAssessmentsRequest extends Request
             'phone'=>'required',
             'terms'=>'required'
         ];
-        if(Config::has('baseline_'.session('product.id').'.overall.field_validation')){
+        if (Config::has('baseline_'.session('product.id').'.overall.field_validation')) {
             $rules = config('baseline_'.session('product.id').'.overall.field_validation');
         }
-        if(!empty($tool->extra_fields)){
-            foreach($tool->extra_fields as $field) {
-                if($field->required!=0){
+        if (!empty($tool->extra_fields)) {
+            foreach ($tool->extra_fields as $field) {
+                if ($field->required!=0) {
                     $rules["extra.".$field->name] = 'required';
                 }
             }

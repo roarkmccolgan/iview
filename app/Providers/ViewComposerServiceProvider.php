@@ -14,8 +14,8 @@ class ViewComposerServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        view()->composer('_layouts.menu.leftmenu', function($view){
-            $view->with('tools',Tool::all());
+        view()->composer('_layouts.menu.leftmenu', function ($view) {
+            $view->with('tools', Tool::all());
         });
     }
 

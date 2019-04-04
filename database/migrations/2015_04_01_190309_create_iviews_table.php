@@ -3,16 +3,17 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateIviewsTable extends Migration {
+class CreateIviewsTable extends Migration
+{
 
-	/**
-	 * Run the migrations.
-	 *
-	 * @return void
-	 */
-	public function up()
-	{
-		Schema::create('iviews', function(Blueprint $table) {
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('iviews', function (Blueprint $table) {
             $table->increments('id');
             $table->string('alias');
             $table->string('title');
@@ -26,20 +27,19 @@ class CreateIviewsTable extends Migration {
             $table->timestamps();
 
             $table->foreign('company_id')
-            	  ->references('id')
-            	  ->on('companies')
-            	  ->onDelete('cascade');
+                  ->references('id')
+                  ->on('companies')
+                  ->onDelete('cascade');
         });
-	}
+    }
 
-	/**
-	 * Reverse the migrations.
-	 *
-	 * @return void
-	 */
-	public function down()
-	{
-		Schema::drop('iviews');
-	}
-
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::drop('iviews');
+    }
 }

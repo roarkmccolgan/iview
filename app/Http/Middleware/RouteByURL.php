@@ -20,7 +20,7 @@ class RouteByURL
     public function handle($request, Closure $next)
     {
         $host_names = explode(".", $request->server('HTTP_HOST'));
-        $url = Url::with('language')->whereIn('domain', config('app.tooldomain'))->where('subdomain',$request->subdomain)->first();
+        $url = Url::with('language')->whereIn('domain', config('app.tooldomain'))->where('subdomain', $request->subdomain)->first();
         
         if ($url) {
             $url->urlable->load('company');
@@ -29,7 +29,7 @@ class RouteByURL
             $request->session()->put('localeUrl', App::getLocale()=='en' ? '':App::getLocale().'/');
             $request->session()->put('url', 'http://' . $request->subdomain.'.'.$host_names[1].'.'.$host_names[2]);
             $request->session()->put('host', $url->urlable->domain);
-            if(!$request->session()->has('referer')){
+            if (!$request->session()->has('referer')) {
                 $request->session()->put('referer', $request->server('HTTP_REFERER'));
             }
             $request->session()->put('analytics', $url->urlable->gapropertyid);
@@ -37,12 +37,12 @@ class RouteByURL
             $request->session()->put('company.name', $url->urlable->company->name);
             $request->session()->put('company.id', $url->urlable->company->id);
             $request->session()->put('company.alias', strtolower(str_replace(" ", "_", $url->urlable->company->name)));
-            if($request->input('utm')){
+            if ($request->input('utm')) {
                 $tracker = Tracker::where([
                     ['tool_id', '=', $url->urlable_id],
                     ['code', '=', $request->input('utm')],
                 ])->first();
-                if($tracker && $tracker->language->abbreviation==App::getLocale()){
+                if ($tracker && $tracker->language->abbreviation==App::getLocale()) {
                     //$tracker->increment('views');
                     $request->session()->put('utm', $request->input('utm'));
                     /*$trackerHit = $tracker->trackerHits()->create([
@@ -50,11 +50,10 @@ class RouteByURL
                         'ip' => $request->ip(),
                     ]);*/
                 }
-            }else{
-                
+            } else {
             }
             foreach ($request->all() as $key => $value) {
-                if($key!=='utm'){
+                if ($key!=='utm') {
                     $request->session()->put('queryparam.'.$key, $value);
                 }
             }
@@ -63,9 +62,8 @@ class RouteByURL
             $request->attributes->add(['product'=> $url->urlable]);
             
             return $next($request);
-
         }
 
-        abort(400,'URL does not exist');
+        abort(400, 'URL does not exist');
     }
 }

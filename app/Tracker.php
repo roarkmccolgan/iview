@@ -27,16 +27,20 @@ class Tracker extends Model
         return $this->hasMany('App\TrackerHits');
     }
 
-    public function getViews(){
+    public function getViews()
+    {
         return $this->dateViews;
     }
-    public function setViews($value){
+    public function setViews($value)
+    {
         $this->dateViews = $value;
     }
-    public function getCompletions(){
+    public function getCompletions()
+    {
         return $this->dateCompletions;
     }
-    public function setCompletions($value){
+    public function setCompletions($value)
+    {
         $this->dateCompletions = $value;
     }
 }

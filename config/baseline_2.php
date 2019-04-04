@@ -106,7 +106,7 @@ return array(
                 'tweet' => 'general.timetoacttweet',
                 'benchmark' => 2,
                 'benchmark-country' => [
-                    'france' => 10,'francia' => 10, 'frankreich' => 10, 
+                    'france' => 10,'francia' => 10, 'frankreich' => 10,
                     'germany' => 0,'alemania' => 0, 'allemagne' => 0, 'deutschland' => 0,  'germania' => 0,
                     'italy' => 50,'italia' => 50, 'italie' => 50, 'italien' => 50,
                     'spain' => 30,'españa' => 30, 'espagne' => 30, 'spanien' => 30, 'spagna' => 30,

@@ -12,7 +12,7 @@ class CreateUrlsTable extends Migration
      */
     public function up()
     {
-        Schema::create('urls', function(Blueprint $table) {
+        Schema::create('urls', function (Blueprint $table) {
             $table->increments('id');
             $table->string('domain');
             $table->string('subdomain');
