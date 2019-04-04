@@ -1,7 +1,7 @@
 <?php
 //6 BT McAfee
-return array(
-    'screeners' => array(
+return [
+    'screeners' => [
         'title' => 'Demographics',
         'description' => 'Please tell us a few things about yourself and your company.',
         'colour' => '',
@@ -9,11 +9,11 @@ return array(
         'icon' => 'icon-world',
         'display' => true,
         'complete' => false,
-        'pages' => array(
-            'page1' => array(
+        'pages' => [
+            'page1' => [
                 'title' => 'Demographics',
-                'questions' => array(
-                    's1'=>array(
+                'questions' => [
+                    's1'=>[
                         'type'=>'select',
                         'question'=>'In which country are you situated?',
                         'name'=>'s1',
@@ -24,7 +24,7 @@ return array(
                                 $(\'select[name="answer"]\').val(country);
                             });
                         ',
-                        'options'=>array(
+                        'options'=>[
                             '' => 'Please select',
                             'Afghanistan' => 'Afghanistan',
                             'Albania' => 'Albania',
@@ -262,525 +262,525 @@ return array(
                             'Yemen' => 'Yemen',
                             'Zambia' => 'Zambia',
                             'Zimbabwe' => 'Zimbabwe',
-                        )
-                    )
-                )
-            ),
-            'page2' => array(
+                        ]
+                    ]
+                ]
+            ],
+            'page2' => [
                 'title' => 'Demographics',
-                'questions' => array(
-                    's2'=>array(
+                'questions' => [
+                    's2'=>[
                         'type'=>'button',
                         'question'=>'How many full-time employees work at your organisation worldwide?',
                         'name'=>'s2',
-                        'options'=>array(
-                            array(
+                        'options'=>[
+                            [
                                 'label'=>'Fewer than 4,999',
                                 'value'=>0,
                                 'checked'=>false
-                            ),
-                            array(
+                            ],
+                            [
                                 'label'=>'5,000 to 9,999',
                                 'value'=>0,
                                 'checked'=>false
-                            ),
-                            array(
+                            ],
+                            [
                                 'label'=>'10,000 or more',
                                 'value'=>0,
                                 'checked'=>false
-                            )
-                        )
-                    )
-                )
-            ),
-        )
-    ),
-    'general-approach-to-it' => array(
+                            ]
+                        ]
+                    ]
+                ]
+            ],
+        ]
+    ],
+    'general-approach-to-it' => [
         'title' => 'Approach to IT',
         'class' => 'sec1',
         'icon' => 'icon-approach',
         'display' => true,
         'complete' => false,
         'sub-report' => false,
-        'pages' => array(
-            'page1' => array(
+        'pages' => [
+            'page1' => [
                 'title' => 'Approach to IT',
-                'questions' => array(
-                    'q1'=>array(
+                'questions' => [
+                    'q1'=>[
                         'type'=>'slider',
                         'question'=>'How important are the following themes in driving security spend in your organisation? <br/><span class="small">Please rate each on a scale of 1 = not at all important to 5 = extremely important.</span>',
                         'name'=>'q1',
-                        'options'=>array(
-                            array(
+                        'options'=>[
+                            [
                                 'label'=>'Integrated security solutions (multivendor parts but integrated operations and management)',
                                 'from'=>'Not important',
                                 'to'=>'Extremely important',
                                 'name'=>'q1.1',
-                                'options'=>array(
-                                    array(
+                                'options'=>[
+                                    [
                                         'label'=>'1',
                                         'value'=>0.5,
                                         'checked'=>false,
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         'label'=>'2',
                                         'value'=>1,
                                         'checked'=>false,
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         'label'=>'3',
                                         'value'=>1.5,
                                         'checked'=>false,
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         'label'=>'4',
                                         'value'=>2,
                                         'checked'=>false,
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         'label'=>'5',
                                         'value'=>2.5,
                                         'checked'=>false,
-                                    )
-                                )
-                            ),
-                            array(
+                                    ]
+                                ]
+                            ],
+                            [
                                 'label'=>'Automation of security processes',
                                 'from'=>'Not important',
                                 'to'=>'Extremely important',
                                 'name'=>'q1.2',
-                                'options'=>array(
-                                    array(
+                                'options'=>[
+                                    [
                                         'label'=>'1',
                                         'value'=>0.5,
                                         'checked'=>false,
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         'label'=>'2',
                                         'value'=>1,
                                         'checked'=>false,
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         'label'=>'3',
                                         'value'=>1.5,
                                         'checked'=>false,
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         'label'=>'4',
                                         'value'=>2,
                                         'checked'=>false,
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         'label'=>'5',
                                         'value'=>2.5,
                                         'checked'=>false,
-                                    )
-                                )
-                            ),
-                            array(
+                                    ]
+                                ]
+                            ],
+                            [
                                 'label'=>'Proactive insight into evolving threats',
                                 'from'=>'Not important',
                                 'to'=>'Extremely important',
                                 'name'=>'q1.3',
-                                'options'=>array(
-                                    array(
+                                'options'=>[
+                                    [
                                         'label'=>'1',
                                         'value'=>0.5,
                                         'checked'=>false,
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         'label'=>'2',
                                         'value'=>1,
                                         'checked'=>false,
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         'label'=>'3',
                                         'value'=>1.5,
                                         'checked'=>false,
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         'label'=>'4',
                                         'value'=>2,
                                         'checked'=>false,
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         'label'=>'5',
                                         'value'=>2.5,
                                         'checked'=>false,
-                                    )
-                                )
-                            ),
-                            array(
+                                    ]
+                                ]
+                            ],
+                            [
                                 'label'=>'Use of threat intelligence',
                                 'from'=>'Not important',
                                 'to'=>'Extremely important',
                                 'name'=>'q1.4',
-                                'options'=>array(
-                                    array(
+                                'options'=>[
+                                    [
                                         'label'=>'1',
                                         'value'=>0.5,
                                         'checked'=>false,
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         'label'=>'2',
                                         'value'=>1,
                                         'checked'=>false,
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         'label'=>'3',
                                         'value'=>1.5,
                                         'checked'=>false,
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         'label'=>'4',
                                         'value'=>2,
                                         'checked'=>false,
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         'label'=>'5',
                                         'value'=>2.5,
                                         'checked'=>false,
-                                    )
-                                )
-                            ),
-                            array(
+                                    ]
+                                ]
+                            ],
+                            [
                                 'label'=>'Automated Unified Intelligence',
                                 'from'=>'Not important',
                                 'to'=>'Extremely important',
                                 'name'=>'q1.5',
-                                'options'=>array(
-                                    array(
+                                'options'=>[
+                                    [
                                         'label'=>'1',
                                         'value'=>0.5,
                                         'checked'=>false,
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         'label'=>'2',
                                         'value'=>1,
                                         'checked'=>false,
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         'label'=>'3',
                                         'value'=>1.5,
                                         'checked'=>false,
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         'label'=>'4',
                                         'value'=>2,
                                         'checked'=>false,
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         'label'=>'5',
                                         'value'=>2.5,
                                         'checked'=>false,
-                                    )
-                                )
-                            )
-                        )
-                    )
-                )
-            ),
-            'page2' => array(
+                                    ]
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            ],
+            'page2' => [
                 'title' => 'Approach to IT',
-                'questions' => array(
-                    'q2'=>array(
+                'questions' => [
+                    'q2'=>[
                         'type'=>'slider',
                         'question'=>'What types of security technologies or approaches do you currently use to detect threats or breaches today? What will you use in 24 months?',
                         'name'=>'q2',
-                        'options'=>array(
-                            array(
+                        'options'=>[
+                            [
                                 'label'=>'Full integration of products and solutions',
                                 'name'=>'q2.1',
-                                'options'=>array(
-                                    array(
+                                'options'=>[
+                                    [
                                         'label'=>'Now',
                                         'value'=>2.5,
                                         'checked'=>false,
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         'label'=>'In 24 Months',
                                         'value'=>1.25,
                                         'checked'=>false,
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         'label'=>'Not using not planning to',
                                         'value'=>0,
                                         'checked'=>false,
-                                    )
-                                )
-                            ),
-                            array(
+                                    ]
+                                ]
+                            ],
+                            [
                                 'label'=>'Artificial intelligence/machine learning',
                                 'name'=>'q2.2',
-                                'options'=>array(
-                                    array(
+                                'options'=>[
+                                    [
                                         'label'=>'Now',
                                         'value'=>2.5,
                                         'checked'=>false,
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         'label'=>'In 24 Months',
                                         'value'=>1.25,
                                         'checked'=>false,
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         'label'=>'Not using not planning to',
                                         'value'=>0,
                                         'checked'=>false,
-                                    )
-                                )
-                            ),
-                            array(
+                                    ]
+                                ]
+                            ],
+                            [
                                 'label'=>'Real-time analytics',
                                 'name'=>'q2.3',
-                                'options'=>array(
-                                    array(
+                                'options'=>[
+                                    [
                                         'label'=>'Now',
                                         'value'=>2.5,
                                         'checked'=>false,
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         'label'=>'In 24 Months',
                                         'value'=>1.25,
                                         'checked'=>false,
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         'label'=>'Not using not planning to',
                                         'value'=>0,
                                         'checked'=>false,
-                                    )
-                                )
-                            ),
-                            array(
+                                    ]
+                                ]
+                            ],
+                            [
                                 'label'=>'Heuristics',
                                 'name'=>'q2.4',
-                                'options'=>array(
-                                    array(
+                                'options'=>[
+                                    [
                                         'label'=>'Now',
                                         'value'=>2.5,
                                         'checked'=>false,
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         'label'=>'In 24 Months',
                                         'value'=>1.25,
                                         'checked'=>false,
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         'label'=>'Not using not planning to',
                                         'value'=>0,
                                         'checked'=>false,
-                                    )
-                                )
-                            ),
-                            array(
+                                    ]
+                                ]
+                            ],
+                            [
                                 'label'=>'Active threat hunting',
                                 'name'=>'q2.5',
-                                'options'=>array(
-                                    array(
+                                'options'=>[
+                                    [
                                         'label'=>'Now',
                                         'value'=>2.5,
                                         'checked'=>false,
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         'label'=>'In 24 Months',
                                         'value'=>1.25,
                                         'checked'=>false,
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         'label'=>'Not using not planning to',
                                         'value'=>0,
                                         'checked'=>false,
-                                    )
-                                )
-                            )
-                        )
-                    )
-                )/*,
+                                    ]
+                                ]
+                            ]
+                        ]
+                    ]
+                ]/*,
                 'report' => array(
                     'text'=>'Solid business decisions should be data-driven. However, as many as 40% of your small and midsize business peers don\'t measure their business results at all. Leapfrog opportunity! ',
                     'image'=>'img/techfit_icons_Q-A1.png'
                 )*/
-            )
-        )
-    ),
-    'integration' => array(
+            ]
+        ]
+    ],
+    'integration' => [
         'title' => 'Integration',
         'class' => 'sec1',
         'icon' => 'icon-integration',
         'display' => true,
         'complete' => false,
         'sub-report' => true,
-        'pages' => array(
-            'page1' => array(
+        'pages' => [
+            'page1' => [
                 'title' => 'Integration',
-                'questions' => array(
-                    'q3'=>array(
+                'questions' => [
+                    'q3'=>[
                         'type'=>'radio',
                         'question'=>'What is your approach when it comes to security investments?',
                         'name'=>'q3',
-                        'options'=>array(
-                            array(
+                        'options'=>[
+                            [
                                 'label'=>'Ad hoc investment with no broad plan or strategic consideration',
                                 'value'=>2.5,
                                 'checked'=>false
-                            ),
-                            array(
+                            ],
+                            [
                                 'label'=>'We plan to fill security gaps as they are deemed necessary',
                                 'value'=>5,
                                 'checked'=>false
-                            ),
-                            array(
+                            ],
+                            [
                                 'label'=>'We have repeatable security processes in place that support the business',
                                 'value'=>7.5,
                                 'checked'=>false
-                            ),
-                            array(
+                            ],
+                            [
                                 'label'=>'We have a well-managed security strategy that maps the direction at least for the next two years',
                                 'value'=>10,
                                 'checked'=>false
-                            ),
-                            array(
+                            ],
+                            [
                                 'label'=>'We have defined security as a core strategic investment with specified outcomes',
                                 'value'=>12.5,
                                 'checked'=>false
-                            )
-                        )
-                    )
-                )/*,
+                            ]
+                        ]
+                    ]
+                ]/*,
                 'report' => array(
                     'text'=>'Solid business decisions should be data-driven. However, as many as 40% of your small and midsize business peers don\'t measure their business results at all. Leapfrog opportunity! ',
                     'image'=>'img/techfit_icons_Q-A1.png'
                 )*/
-            ),
-            'page2' => array(
+            ],
+            'page2' => [
                 'title' => 'Integration',
-                'questions' => array(
-                    'q4'=>array(
+                'questions' => [
+                    'q4'=>[
                         'type'=>'radio',
                         'question'=>'Which statement best describes your approach to selecting a security vendor?',
                         'name'=>'q4',
-                        'options'=>array(
-                            array(
+                        'options'=>[
+                            [
                                 'label'=>'We prioritize standalone point products regardless of integration concerns',
                                 'value'=>2.5,
                                 'checked'=>false
-                            ),
-                            array(
+                            ],
+                            [
                                 'label'=>'We tend to buy standalone point products but also look to integration if it makes sense',
                                 'value'=>5,
                                 'checked'=>false
-                            ),
-                            array(
+                            ],
+                            [
                                 'label'=>'We are evenly balanced between products that work together and standalone point products',
                                 'value'=>7.5,
                                 'checked'=>false
-                            ),
-                            array(
+                            ],
+                            [
                                 'label'=>'We tend to buy products that work well together but still buy standalone point products',
                                 'value'=>10,
                                 'checked'=>false
-                            ),
-                            array(
+                            ],
+                            [
                                 'label'=>'We give a priority to management and integration and buy products that work well together',
                                 'value'=>12.5,
                                 'checked'=>false
-                            )
-                        )
-                    )
-                )
-            )
-        )
-    ),
-    'automation' => array(
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ],
+    'automation' => [
         'title' => 'Automation',
         'class' => 'sec2',
         'icon' => 'icon-automation',
         'display' => true,
         'complete' => false,
         'sub-report' => true,
-        'pages' => array(
-            'page1' => array(
+        'pages' => [
+            'page1' => [
                 'title' => 'Automation',
-                'questions' => array(
-                    'q5'=>array(
+                'questions' => [
+                    'q5'=>[
                         'type'=>'radio',
                         'question'=>'To what level have you adopted automation in your IT security management?',
                         'name'=>'q5',
-                        'options'=>array(
-                            array(
+                        'options'=>[
+                            [
                                 'label'=>'Manual processes across the board',
                                 'value'=>1.25,
                                 'checked'=>false
-                            ),
-                            array(
+                            ],
+                            [
                                 'label'=>'Mainly manual processes with a small amount of automation',
                                 'value'=>2.5,
                                 'checked'=>false
-                            ),
-                            array(
+                            ],
+                            [
                                 'label'=>'A good balance of automation and manual processes',
                                 'value'=>3.75,
                                 'checked'=>false
-                            ),
-                            array(
+                            ],
+                            [
                                 'label'=>'Mainly automation with a small amount of manual processes',
                                 'value'=>5,
                                 'checked'=>false
-                            ),
-                            array(
+                            ],
+                            [
                                 'label'=>'Automation across the board',
                                 'value'=>6.25,
                                 'checked'=>false
-                            )
-                        )
-                    )
-                )/*,
+                            ]
+                        ]
+                    ]
+                ]/*,
                 'report' => array(
                     'text'=>'Archiving should be integrated in overall data protection workflow, IDC believes. In several industries (e.g. healthcare), long-term archiving is mandatory. With file sizes esp. for video exploding, storage assets often need rethinking.',
                     'image'=>'img/techfit_icons_Q-C1.png'
                 )*/
-            ),
-            'page2' => array(
+            ],
+            'page2' => [
                 'title' => 'Automation',
-                'questions' => array(
-                    'q6'=>array(
+                'questions' => [
+                    'q6'=>[
                         'type'=>'radio',
                         'question'=>'When it comes to your use of automation of security processes, do you intend to increase or decrease your use of this?',
                         'name'=>'q6',
-                        'options'=>array(
-                            array(
+                        'options'=>[
+                            [
                                 'label'=>'Decrease it a lot',
                                 'value'=>1.25,
                                 'checked'=>false
-                            ),
-                            array(
+                            ],
+                            [
                                 'label'=>'Decrease it a little',
                                 'value'=>2.5,
                                 'checked'=>false
-                            ),
-                            array(
+                            ],
+                            [
                                 'label'=>'Stay the same',
                                 'value'=>3.75,
                                 'checked'=>false
-                            ),
-                            array(
+                            ],
+                            [
                                 'label'=>'Increase it a little',
                                 'value'=>5,
                                 'checked'=>false
-                            ),
-                            array(
+                            ],
+                            [
                                 'label'=>'Increase it a lot',
                                 'value'=>6.25,
                                 'checked'=>false
-                            )
-                        )
-                    )
-                )
-            ),
-            'page3' => array(
+                            ]
+                        ]
+                    ]
+                ]
+            ],
+            'page3' => [
                 'title' => 'Automation',
-                'questions' => array(
-                    'q7'=>array(
+                'questions' => [
+                    'q7'=>[
                         'type'=>'checkbox',
                         'question'=>'Which of the following areas of <strong>IT endpoint</strong> or <strong>user security</strong> have you automated already? <span class="small">Choose all that apply</span>',
                         'name'=>'q7',
@@ -822,45 +822,45 @@ return array(
                                 });
                             });
                         ',
-                        'options'=>array(
-                            array(
+                        'options'=>[
+                            [
                                 'label'=>'Security policy deployment',
                                 'value'=>1.25,
                                 'checked'=>false
-                            ),
-                            array(
+                            ],
+                            [
                                 'label'=>'Security management',
                                 'value'=>1.25,
                                 'checked'=>false
-                            ),
-                            array(
+                            ],
+                            [
                                 'label'=>'Endpoint protection',
                                 'value'=>1.25,
                                 'checked'=>false
-                            ),
-                            array(
+                            ],
+                            [
                                 'label'=>'Identity and access management',
                                 'value'=>1.25,
                                 'checked'=>false
-                            ),
-                            array(
+                            ],
+                            [
                                 'label'=>'Web security',
                                 'value'=>1.25,
                                 'checked'=>false
-                            ),
-                            array(
+                            ],
+                            [
                                 'label'=>'None of the above',
                                 'value'=>0,
                                 'checked'=>false
-                            )
-                        )
-                    )
-                )
-            ),
-            'page4' => array(
+                            ]
+                        ]
+                    ]
+                ]
+            ],
+            'page4' => [
                 'title' => 'Automation',
-                'questions' => array(
-                    'q8'=>array(
+                'questions' => [
+                    'q8'=>[
                         'type'=>'checkbox',
                         'question'=>'Which of the following areas of <strong>IT infrastructure</strong> security have you automated already? <span class="small">Choose all that apply</span>',
                         'name'=>'q8',
@@ -902,211 +902,211 @@ return array(
                                 });
                             });
                         ',
-                        'options'=>array(
-                            array(
+                        'options'=>[
+                            [
                                 'label'=>'Software updates and patching',
                                 'value'=>1.25,
                                 'checked'=>false
-                            ),
-                            array(
+                            ],
+                            [
                                 'label'=>'Data security',
                                 'value'=>1.25,
                                 'checked'=>false
-                            ),
-                            array(
+                            ],
+                            [
                                 'label'=>'Network security',
                                 'value'=>1.25,
                                 'checked'=>false
-                            ),
-                            array(
+                            ],
+                            [
                                 'label'=>'Messaging security',
                                 'value'=>1.25,
                                 'checked'=>false
-                            ),
-                            array(
+                            ],
+                            [
                                 'label'=>'Vulnerability management',
                                 'value'=>1.25,
                                 'checked'=>false
-                            ),
-                            array(
+                            ],
+                            [
                                 'label'=>'None of the above',
                                 'value'=>0,
                                 'checked'=>false
-                            )
-                        )
-                    )
-                )
-            ),
-        )
-    ),
-    'unified-intelligence' => array(
+                            ]
+                        ]
+                    ]
+                ]
+            ],
+        ]
+    ],
+    'unified-intelligence' => [
         'title' => 'Unified Intelligence',
         'class' => 'sec3',
         'icon' => 'icon-unified',
         'display' => true,
         'complete' => false,
         'sub-report' => true,
-        'pages' => array(
-            'page1' => array(
+        'pages' => [
+            'page1' => [
                 'title' => 'Unified Intelligence',
-                'questions' => array(
-                    'q9'=>array(
+                'questions' => [
+                    'q9'=>[
                         'type'=>'slider',
                         'question'=>'Looking at threat intelligence services, to what extent do you do the following? <br/><span class="small">Please rate each on a scale of 1 = not at all important to 5 = extensively.</span>',
                         'name'=>'q9',
-                        'options'=>array(
-                            array(
+                        'options'=>[
+                            [
                                 'label'=>'We make effective use of global threat insight services',
                                 'from'=>'Not important',
                                 'to'=>'Extensively',
                                 'name'=>'q9.1',
-                                'options'=>array(
-                                    array(
+                                'options'=>[
+                                    [
                                         'label'=>'1',
                                         'value'=>0.56,
                                         'checked'=>false,
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         'label'=>'2',
                                         'value'=>1.11,
                                         'checked'=>false,
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         'label'=>'3',
                                         'value'=>1.67,
                                         'checked'=>false,
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         'label'=>'4',
                                         'value'=>2.22,
                                         'checked'=>false,
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         'label'=>'5',
                                         'value'=>2.78,
                                         'checked'=>false,
-                                    )
-                                )
-                            ),
-                            array(
+                                    ]
+                                ]
+                            ],
+                            [
                                 'label'=>'We do multi-way sharing of information',
                                 'from'=>'Not important',
                                 'to'=>'Extremely important',
                                 'name'=>'q9.2',
-                                'options'=>array(
-                                    array(
+                                'options'=>[
+                                    [
                                         'label'=>'1',
                                         'value'=>0.56,
                                         'checked'=>false,
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         'label'=>'2',
                                         'value'=>1.11,
                                         'checked'=>false,
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         'label'=>'3',
                                         'value'=>1.67,
                                         'checked'=>false,
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         'label'=>'4',
                                         'value'=>2.22,
                                         'checked'=>false,
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         'label'=>'5',
                                         'value'=>2.78,
                                         'checked'=>false,
-                                    )
-                                )
-                            ),
-                            array(
+                                    ]
+                                ]
+                            ],
+                            [
                                 'label'=>'We have automated policy updates based on information from global threat insight services',
                                 'from'=>'Not important',
                                 'to'=>'Extremely important',
                                 'name'=>'q9.3',
-                                'options'=>array(
-                                    array(
+                                'options'=>[
+                                    [
                                         'label'=>'1',
                                         'value'=>0.56,
                                         'checked'=>false,
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         'label'=>'2',
                                         'value'=>1.11,
                                         'checked'=>false,
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         'label'=>'3',
                                         'value'=>1.67,
                                         'checked'=>false,
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         'label'=>'4',
                                         'value'=>2.22,
                                         'checked'=>false,
-                                    ),
-                                    array(
+                                    ],
+                                    [
                                         'label'=>'5',
                                         'value'=>2.78,
                                         'checked'=>false,
-                                    )
-                                )
-                            )
-                        )
-                    )
-                )/*,
+                                    ]
+                                ]
+                            ]
+                        ]
+                    ]
+                ]/*,
                 'report' => array(
                     'text'=>'Archiving should be integrated in overall data protection workflow, IDC believes. In several industries (e.g. healthcare), long-term archiving is mandatory. With file sizes esp. for video exploding, storage assets often need rethinking.',
                     'image'=>'img/techfit_icons_Q-C1.png'
                 )*/
-            ),
-            'page2' => array(
+            ],
+            'page2' => [
                 'title' => 'Unified Intelligence',
-                'questions' => array(
-                    'q10'=>array(
+                'questions' => [
+                    'q10'=>[
                         'type'=>'radio',
                         'question'=>'To what extent do you have security analytics capabilities in place today?',
                         'name'=>'q10',
-                        'options'=>array(
-                            array(
+                        'options'=>[
+                            [
                                 'label'=>'Not using and no plans to use',
                                 'value'=>1.76,
                                 'checked'=>false
-                            ),
-                            array(
+                            ],
+                            [
                                 'label'=>'Not using but plan to use in the next two years',
                                 'value'=>3.33,
                                 'checked'=>false
-                            ),
-                            array(
+                            ],
+                            [
                                 'label'=>'Currently piloting this',
                                 'value'=>5,
                                 'checked'=>false
-                            ),
-                            array(
+                            ],
+                            [
                                 'label'=>'Use in limited areas in production',
                                 'value'=>6.67,
                                 'checked'=>false
-                            ),
-                            array(
+                            ],
+                            [
                                 'label'=>'Use extensively in production',
                                 'value'=>8.33,
                                 'checked'=>false
-                            )
-                        )
-                    )
-                )/*,
+                            ]
+                        ]
+                    ]
+                ]/*,
                 'report' => array(
                     'text'=>'Archiving should be integrated in overall data protection workflow, IDC believes. In several industries (e.g. healthcare), long-term archiving is mandatory. With file sizes esp. for video exploding, storage assets often need rethinking.',
                     'image'=>'img/techfit_icons_Q-C1.png'
                 )*/
-            ),
-            'page3' => array(
+            ],
+            'page3' => [
                 'title' => 'Unified Intelligence',
-                'questions' => array(
-                    'q11'=>array(
+                'questions' => [
+                    'q11'=>[
                         'type'=>'checkbox',
                         'question'=>'For your approach to threat detection, which of the following do you use? <span class="small">Choose all that apply</span>',
                         'name'=>'q11',
@@ -1164,66 +1164,66 @@ return array(
                                 });
                             });
                         ',
-                        'options'=>array(
-                            array(
+                        'options'=>[
+                            [
                                 'label'=>'NGFW/UTM (next generation firewall/unified threat management)',
                                 'value'=>0.83,
                                 'checked'=>false
-                            ),
-                            array(
+                            ],
+                            [
                                 'label'=>'IDP (intrusion detection and prevention)',
                                 'value'=>0.83,
                                 'checked'=>false
-                            ),
-                            array(
+                            ],
+                            [
                                 'label'=>'SIEM (security information and event management)',
                                 'value'=>0.83,
                                 'checked'=>false
-                            ),
-                            array(
+                            ],
+                            [
                                 'label'=>'Endpoint security',
                                 'value'=>0.83,
                                 'checked'=>false
-                            ),
-                            array(
+                            ],
+                            [
                                 'label'=>'NAC (network access control)',
                                 'value'=>0.83,
                                 'checked'=>false
-                            ),
-                            array(
+                            ],
+                            [
                                 'label'=>'Analytics',
                                 'value'=>0.83,
                                 'checked'=>false
-                            ),
-                            array(
+                            ],
+                            [
                                 'label'=>'Machine learning',
                                 'value'=>0.83,
                                 'checked'=>false
-                            ),
-                            array(
+                            ],
+                            [
                                 'label'=>'Threat intelligence reports and feeds',
                                 'value'=>0.83,
                                 'checked'=>false
-                            ),
-                            array(
+                            ],
+                            [
                                 'label'=>'Sandboxing',
                                 'value'=>0.83,
                                 'checked'=>false
-                            ),
-                            array(
+                            ],
+                            [
                                 'label'=>'Web gateway',
                                 'value'=>0.83,
                                 'checked'=>false
-                            ),
-                            array(
+                            ],
+                            [
                                 'label'=>'None',
                                 'value'=>0,
                                 'checked'=>false
-                            )
-                        )
-                    )
-                )
-            )
-        )
-    )
-);
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ]
+];

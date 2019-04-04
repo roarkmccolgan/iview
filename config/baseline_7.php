@@ -1,7 +1,7 @@
 <?php
 //Symantec
-return array(
-    'overall' => array(
+return [
+    'overall' => [
         'baseline' => 21.5,
         'benchmark-country-en' => 3,
         'benchmark-size-500-to-999' => 2,
@@ -31,47 +31,47 @@ return array(
             'margin-top'=>48,
             'header-spacing'=>0
         ],
-        'types' => array(
-            'stage1' => array(
+        'types' => [
+            'stage1' => [
                 'low' => 0,
                 'high' => 47,
                 'copy' => 'general.7poortxt',
                 'tweet' => false,
                 'benchmark' => 20,
-            ),
-            'stage2' => array(
+            ],
+            'stage2' => [
                 'low' => 48,
                 'high' => 67,
                 'copy' => 'general.7standardtxt',
                 'tweet' => false,
                 'benchmark' => 34,
-            ),
-            'stage3' => array(
+            ],
+            'stage3' => [
                 'low' => 1000,
                 'high' => 1001,
                 'copy' => 'general.7goodtxt',
                 'tweet' => false,
                 'benchmark' => 28,
-            ),
-            'stage4' => array(
+            ],
+            'stage4' => [
                 'low' => 68,
                 'high' => 84,
                 'copy' => 'general.7aspirationaltxt',
                 'tweet' => false,
                 'benchmark' => 12,
-            ),
-            'stage5' => array(
+            ],
+            'stage5' => [
                 'low' => 1002,
                 'high' => 1003,
                 'copy' => 'general.7besttxt',
                 'tweet' => false,
                 'benchmark' => 5,
-            )
-        ),
+            ]
+        ],
         'tweet' => false,
         'include_answers_in_download_report' => true,
-    ),
-    'gdpr' => array(
+    ],
+    'gdpr' => [
         'baseline' => 15.363,
         'benchmark-country-en' => 3,
         'benchmark-country-fr' => 3,
@@ -113,42 +113,42 @@ return array(
         ],
         'floatimage' => 'right',
         'floatgraph' => 'none',
-        'types' => array(
-            'stage1' => array(
+        'types' => [
+            'stage1' => [
                 'low' => 0,
                 'high' => 47,
                 'total' => 2,
                 'benchmark' => 20,
                 'copy' => 'general.6integration-poor-txt'
-            ),
-            'stage2' => array(
+            ],
+            'stage2' => [
                 'low' => 48,
                 'high' => 67,
                 'total' => 3,
                 'benchmark' => 34,
                 'copy' => 'general.6integration-standard-txt'
-            ),
-            'stage3' => array(
+            ],
+            'stage3' => [
                 'low' => 1000,
                 'high' => 1001,
                 'total' => 5,
                 'benchmark' => 28,
                 'copy' => 'general.6integration-good-txt'
-            ),
-            'stage4' => array(
+            ],
+            'stage4' => [
                 'low' => 68,
                 'high' => 84,
                 'total' => 5,
                 'benchmark' => 12,
                 'copy' => 'general.6integration-aspirational-txt'
-            ),
-            'stage5' => array(
+            ],
+            'stage5' => [
                 'low' => 1002,
                 'high' => 1003,
                 'total' => 5,
                 'benchmark' => 5,
                 'copy' => 'general.6integration-best-txt'
-            )
-        )
-    )
-);
+            ]
+        ]
+    ]
+];

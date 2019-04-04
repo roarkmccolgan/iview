@@ -64,7 +64,7 @@ class ToolController extends Controller
             return redirect('/');
         }
         $this->numSections=count($this->quiz);
-        $temp = array();
+        $temp = [];
         foreach ($this->quiz as $key => $value) {
             $temp[$key]['display']=isset($value['display']) ? $value['display']:true;
             $temp[$key]['numpages']=count($value['pages']);
@@ -285,7 +285,7 @@ class ToolController extends Controller
             $btnsize = '-small lang';
         }
     
-        $vars = array(
+        $vars = [
         'questions' => $sectionQuestions['questions'],
         'heading' => $sectionQuestions['title'],
         'report' => isset($sectionQuestions['report']) ? $sectionQuestions['report']:false,
@@ -296,7 +296,7 @@ class ToolController extends Controller
         'page'=>$page,
         'script'=>$script,
         'btnsize'=>$btnsize
-        );
+        ];
         //return $sectionQuestions['questions'];
         return view('tool.'.session('template').'.question', $vars);
     }
@@ -547,7 +547,7 @@ class ToolController extends Controller
 
         $extraFields = Tool::find(session('product.id'))->extra_fields()->get()->toArray();
         //return $extraFields;
-        $vars = array(
+        $vars = [
         'heading' => trans(session('product.alias').'.overall.title'),
         'result' => trans(session('product.alias').'.'.$this->result['overall']['rating']),
         'resultkey' => $this->result['overall']['rating'],
@@ -560,7 +560,7 @@ class ToolController extends Controller
         'source' => session('source'),
         'btnclass'=>$btnclass,
         'extra_fields'=>count($extraFields) > 0 ? $extraFields:false,
-        );
+        ];
 
         return view('tool.'.session('template').'.complete', $vars);
     }
@@ -743,7 +743,7 @@ class ToolController extends Controller
         }
             Mail::queue(
                 'emails.notification',
-                array(
+                [
                 'companyName' => $assessment->tool->company->name,
                 'toolTitle' => $assessment->tool->title,
                 'fname'=>$request->input('fname'),
@@ -753,14 +753,14 @@ class ToolController extends Controller
                 'phone'=>$request->input('phone'),
                 'score'=>$this->howfit['overall']['score'],
                 'rating'=> $ratingWording
-                ),
+                ],
                 function ($message) use ($emails, $subject) {
                     $message->from('notifications@mg.idcready.net', 'IDC Notifications');
                     $message->to($emails)->subject($subject);
                 }
             );
 
-        $vars = array(
+        $vars = [
         'pagetitle' => trans(session('product.alias').'.title'),
         'title' => trans(session('product.alias').'.title'),
         'sub_title' => trans(session('product.alias').'.sub-title'),
@@ -773,7 +773,7 @@ class ToolController extends Controller
 		'],
         'utm' => session('utm'),
         'quiz' => $this->quiz
-        );
+        ];
         JavaScript::put([
         'locale' => session('locale'),
         'tool' => $request->get('product'),
@@ -836,9 +836,9 @@ class ToolController extends Controller
                 $filename = $assessment->id.'_'.str_slug($assessment->fname.'_'.$assessment->lname.'_'.$assessment->tool->title.'_Assessment', '-').'.pdf';
                 $downloadName = str_slug($assessment->id.'-'.session('product.title').'-report', '-').'.pdf';
                 $this->wkhtml($assessment->id, $reportName);
-                $headers = array(
+                $headers = [
                     'Content-Type: application/pdf',
-                );
+                ];
                 return response()->download(storage_path().'/reports/'.$filename, $downloadName, $headers);
             } else {
                 return $this->wkhtml($assessment->id, $reportName, $inline);
@@ -877,9 +877,9 @@ class ToolController extends Controller
             $filename = "SAGE_Assessment_Report.pdf";
         }
 
-        $headers = array(
+        $headers = [
             'Content-Type: application/pdf',
-        );
+        ];
         return response()->download($file, $filename, $headers);
     }
     public function getCalcResults($section = false)
@@ -891,7 +891,7 @@ class ToolController extends Controller
     private function calcResults($section = false)
     {
         $this->baseline = config('baseline'.'_'.session('product.id'));
-        $result = array();
+        $result = [];
         $result['overall']['score'] = 0;
 
         if ($section!==false) {
@@ -1234,7 +1234,7 @@ class ToolController extends Controller
         Session::put('quiz_complete', true);
         $this->loadQuestions();
         $this->baseline = config('baseline'.'_'.session('product.id'));
-        $result = array();
+        $result = [];
         $result['overall']['score'] = 0;
 
         foreach ($this->quiz as $key => $value) {

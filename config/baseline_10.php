@@ -1,7 +1,7 @@
 <?php
 //NTT Data
-return array(
-    'overall' => array(
+return [
+    'overall' => [
         'baseline' => 27.60,
         
         'complete' => [
@@ -166,29 +166,29 @@ return array(
             'margin-top'=>20,
             'header-spacing'=>6
         ],
-        'types' => array(
-            'stage1' => array(
+        'types' => [
+            'stage1' => [
                 'low' => 0,
                 'high' => 27.7,
                 'copy' => 'nttdatadx.stage1txt',
                 'tweet' => false,
                 'benchmark' => 20,
-            ),
-            'stage2' => array(
+            ],
+            'stage2' => [
                 'low' => 27.8,
                 'high' => 31.3,
                 'copy' => 'nttdatadx.stage2txt',
                 'tweet' => false,
                 'benchmark' => 34,
-            ),
-            'stage3' => array(
+            ],
+            'stage3' => [
                 'low' => 31.4,
                 'high' => 50,
                 'copy' => 'nttdatadx.stage3txt',
                 'tweet' => false,
                 'benchmark' => 28,
-            ),
-        ),
+            ],
+        ],
         'tweet' => false,
         'include_answers_in_download_report' => true,
         'notifications' => [
@@ -202,8 +202,8 @@ return array(
             'country'=>'required',
             'terms'=>'required'
         ]
-    ),
-    'dx-adoption' => array(
+    ],
+    'dx-adoption' => [
         'baseline' => 8.90,
 
         'complete' => [
@@ -229,31 +229,31 @@ return array(
         ],
         'floatimage' => 'right',
         'floatgraph' => 'none',
-        'types' => array(
-            'stage1' => array(
+        'types' => [
+            'stage1' => [
                 'low' => 0,
                 'high' =>12.4,
                 'total' => 2,
                 'benchmark' => 20,
                 'copy' => 'nttdatadx.sales-stage-1-txt'
-            ),
-            'stage2' => array(
+            ],
+            'stage2' => [
                 'low' => 12.5,
                 'high' => 14.4,
                 'total' => 3,
                 'benchmark' => 34,
                 'copy' => 'nttdatadx.sales-stage-2-txt'
-            ),
-            'stage3' => array(
+            ],
+            'stage3' => [
                 'low' => 14.5,
                 'high' => 25,
                 'total' => 5,
                 'benchmark' => 28,
                 'copy' => 'nttdatadx.sales-stage-3-txt'
-            ),
-        )
-    ),
-    'success-in-dx' => array(
+            ],
+        ]
+    ],
+    'success-in-dx' => [
         'baseline' => 8.90,
 
         'complete' => [
@@ -279,31 +279,31 @@ return array(
         ],
         'floatimage' => 'right',
         'floatgraph' => 'none',
-        'types' => array(
-            'stage1' => array(
+        'types' => [
+            'stage1' => [
                 'low' => 0,
                 'high' => 9.7,
                 'total' => 2,
                 'benchmark' => 20,
                 'copy' => 'nttdatadx.marketing-stage-1-txt'
-            ),
-            'stage2' => array(
+            ],
+            'stage2' => [
                 'low' => 9.8,
                 'high' => 11.8,
                 'total' => 3,
                 'benchmark' => 34,
                 'copy' => 'nttdatadx.marketing-stage-2-txt'
-            ),
-            'stage3' => array(
+            ],
+            'stage3' => [
                 'low' => 11.9,
                 'high' => 18,
                 'total' => 5,
                 'benchmark' => 28,
                 'copy' => 'nttdatadx.marketing-stage-3-txt'
-            ),
-        )
-    ),
-    'connected-financial-services' => array(
+            ],
+        ]
+    ],
+    'connected-financial-services' => [
         'baseline' => 8.90,
 
         'complete' => [
@@ -329,28 +329,28 @@ return array(
         ],
         'floatimage' => 'right',
         'floatgraph' => 'none',
-        'types' => array(
-            'stage1' => array(
+        'types' => [
+            'stage1' => [
                 'low' => 0,
                 'high' => 5.3,
                 'total' => 2,
                 'benchmark' => 20,
                 'copy' => 'nttdatadx.services-stage-1-txt'
-            ),
-            'stage2' => array(
+            ],
+            'stage2' => [
                 'low' => 5.4,
                 'high' => 6.4,
                 'total' => 3,
                 'benchmark' => 34,
                 'copy' => 'nttdatadx.services-stage-2-txt'
-            ),
-            'stage3' => array(
+            ],
+            'stage3' => [
                 'low' => 6.5,
                 'high' => 12,
                 'total' => 5,
                 'benchmark' => 28,
                 'copy' => 'nttdatadx.services-stage-3-txt'
-            ),
-        )
-    )
-);
+            ],
+        ]
+    ]
+];

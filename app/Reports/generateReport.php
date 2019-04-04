@@ -120,11 +120,11 @@ class generateReport
 
                 $sheet->cells('A1', function ($cells) {
                     $cells->setBackground('#EFEFEF');
-                    $cells->setFont(array(
+                    $cells->setFont([
                         //'family'     => 'Calibri',
                         //'size'       => '14',
                         'bold'       =>  true
-                        ));
+                        ]);
                 });
                 $sheet->freezeFirstRow();
                 /*$sheet->setColumnFormat(array(

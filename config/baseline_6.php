@@ -1,7 +1,7 @@
 <?php
 //BT/McAfee
-return array(
-    'overall' => array(
+return [
+    'overall' => [
         'baseline' => 2.94,
         'benchmark-country-ap' => 2,
         'benchmark-country-na' => 3,
@@ -33,51 +33,51 @@ return array(
             'margin-top'=>48,
             'header-spacing'=>0
         ],
-        'types' => array(
-            'stage1' => array(
+        'types' => [
+            'stage1' => [
                 'low' => 0,
                 'high' => 45,
                 'copy' => 'general.6Foundationtxt',
                 'tweet' => false,
                 'benchmark' => 2,
-            ),
-            'stage2' => array(
+            ],
+            'stage2' => [
                 'low' => 45.01,
                 'high' => 60,
                 'copy' => 'general.6Developingtxt',
                 'tweet' => false,
                 'benchmark' => 32,
-            ),
-            'stage3' => array(
+            ],
+            'stage3' => [
                 'low' => 60.01,
                 'high' => 75,
                 'copy' => 'general.6Goodtxt',
                 'tweet' => false,
                 'benchmark' => 41,
-            ),
-            'stage4' => array(
+            ],
+            'stage4' => [
                 'low' => 75.01,
                 'high' => 90,
                 'copy' => 'general.6Aspirationaltxt',
                 'tweet' => false,
                 'benchmark' => 21,
-            ),
-            'stage5' => array(
+            ],
+            'stage5' => [
                 'low' => 90.01,
                 'high' => 200,
                 'copy' => 'general.6Besttxt',
                 'tweet' => false,
                 'benchmark' => 21,
-            )
-        ),
+            ]
+        ],
         'tweet' => false,
         'include_answers_in_download_report' => true,
         'notifications' => [
             'bccreports' => ['emailtosalesforce@l-1nnmhnv7215yvdtk61l2v1yozj41ni63q0pydiz04lpxg1w08i.24-pfh5eae.eu6.le.salesforce.com'],
             'ignoreadmin' => ['tara.burton@bt.com','wendy_francis@mcafee.com'],
         ],
-    ),
-    'general-approach-to-it' => array(
+    ],
+    'general-approach-to-it' => [
         'baseline' => 3.11,
         'benchmark-country-ap' => 3.03,
         'benchmark-country-na' => 3.09,
@@ -110,45 +110,45 @@ return array(
         ],
         'floatimage' => 'right',
         'floatgraph' => 'none',
-        'types' => array(
-            'stage1' => array(
+        'types' => [
+            'stage1' => [
                 'low' => 0,
                 'high' => 9,
                 'total' => 2,
                 'benchmark' => 13,
                 'copy' => 'general.6integration-Foundation-txt'
-            ),
-            'stage2' => array(
+            ],
+            'stage2' => [
                 'low' => 9.01,
                 'high' => 13,
                 'total' => 3,
                 'benchmark' => 22,
                 'copy' => 'general.6integration-Developing-txt'
-            ),
-            'stage3' => array(
+            ],
+            'stage3' => [
                 'low' => 13.01,
                 'high' => 17,
                 'total' => 5,
                 'benchmark' => 30,
                 'copy' => 'general.6integration-Good-txt'
-            ),
-            'stage4' => array(
+            ],
+            'stage4' => [
                 'low' => 17.01,
                 'high' => 21,
                 'total' => 5,
                 'benchmark' => 26,
                 'copy' => 'general.6integration-Aspirational-txt'
-            ),
-            'stage5' => array(
+            ],
+            'stage5' => [
                 'low' => 21.01,
                 'high' => 25,
                 'total' => 5,
                 'benchmark' => 8,
                 'copy' => 'general.6integration-Advanced-txt'
-            )
-        )
-    ),
-    'integration' => array(
+            ]
+        ]
+    ],
+    'integration' => [
         'baseline' => 3,
         'benchmark-country-ap' => 3,
         'benchmark-country-na' => 3,
@@ -181,45 +181,45 @@ return array(
         ],
         'floatimage' => 'right',
         'floatgraph' => 'none',
-        'types' => array(
-            'stage1' => array(
+        'types' => [
+            'stage1' => [
                 'low' => 0,
                 'high' => 11.25,
                 'total' => 2,
                 'benchmark' => 18,
                 'copy' => 'general.6integration-Foundation-txt'
-            ),
-            'stage2' => array(
+            ],
+            'stage2' => [
                 'low' => 11.26,
                 'high' => 15,
                 'total' => 3,
                 'benchmark' => 25,
                 'copy' => 'general.6integration-Developing-txt'
-            ),
-            'stage3' => array(
+            ],
+            'stage3' => [
                 'low' => 15.01,
                 'high' => 18.75,
                 'total' => 5,
                 'benchmark' => 26,
                 'copy' => 'general.6integration-Good-txt'
-            ),
-            'stage4' => array(
+            ],
+            'stage4' => [
                 'low' => 18.76,
                 'high' => 22.5,
                 'total' => 5,
                 'benchmark' => 26,
                 'copy' => 'general.6integration-Aspirational-txt'
-            ),
-            'stage5' => array(
+            ],
+            'stage5' => [
                 'low' => 22.51,
                 'high' => 50,
                 'total' => 5,
                 'benchmark' => 5,
                 'copy' => 'general.6integration-Advanced-txt'
-            )
-        )
-    ),
-    'automation' => array(
+            ]
+        ]
+    ],
+    'automation' => [
         'baseline' => 2,
         'benchmark-country-ap' => 2,
         'benchmark-country-na' => 2,
@@ -252,45 +252,45 @@ return array(
         ],
         'floatimage' => 'none',
         'floatgraph' => 'none',
-        'types' => array(
-            'stage1' => array(
+        'types' => [
+            'stage1' => [
                 'low' => 0,
                 'high' => 11.25,
                 'total' => 3,
                 'benchmark' => 16,
                 'copy' => 'general.6automation-Foundation-txt'
-            ),
-            'stage2' => array(
+            ],
+            'stage2' => [
                 'low' => 11.26,
                 'high' => 15,
                 'total' => 4,
                 'benchmark' => 22,
                 'copy' => 'general.6automation-Developing-txt'
-            ),
-            'stage3' => array(
+            ],
+            'stage3' => [
                 'low' => 15.01,
                 'high' => 18.75,
                 'total' => 6,
                 'benchmark' => 35,
                 'copy' => 'general.6automation-Good-txt'
-            ),
-            'stage4' => array(
+            ],
+            'stage4' => [
                 'low' => 18.76,
                 'high' => 22.5,
                 'total' => 6,
                 'benchmark' => 27,
                 'copy' => 'general.6automation-Aspirational-txt'
-            ),
-            'stage5' => array(
+            ],
+            'stage5' => [
                 'low' => 22.51,
                 'high' => 50,
                 'total' => 5,
                 'benchmark' => 1,
                 'copy' => 'general.5automation-Advanced-txt'
-            )
-        )
-    ),
-    'unified-intelligence' => array(
+            ]
+        ]
+    ],
+    'unified-intelligence' => [
         'baseline' => 2,
         'benchmark-country-ap' => 2,
         'benchmark-country-na' => 2,
@@ -324,42 +324,42 @@ return array(
         ],
         'floatimage' => 'none',
         'floatgraph' => 'none',
-        'types' => array(
-            'stage1' => array(
+        'types' => [
+            'stage1' => [
                 'low' => 0,
                 'high' => 11.25,
                 'total' => 1,
                 'benchmark' => 19,
                 'copy' => 'general.6automation-Foundation-txt'
-            ),
-            'stage2' => array(
+            ],
+            'stage2' => [
                 'low' => 11.26,
                 'high' => 15,
                 'total' => 2,
                 'benchmark' => 23,
                 'copy' => 'general.6automation-Developing-txt'
-            ),
-            'stage3' => array(
+            ],
+            'stage3' => [
                 'low' => 15.01,
                 'high' => 18.75,
                 'total' => 4,
                 'benchmark' => 28,
                 'copy' => 'general.6automation-Good-txt'
-            ),
-            'stage4' => array(
+            ],
+            'stage4' => [
                 'low' => 18.76,
                 'high' => 22.5,
                 'total' => 4,
                 'benchmark' => 22,
                 'copy' => 'general.6automation-Aspirational-txt'
-            ),
-            'stage5' => array(
+            ],
+            'stage5' => [
                 'low' => 22.51,
                 'high' => 50,
                 'total' => 5,
                 'benchmark' => 8,
                 'copy' => 'general.6automation-Advanced-txt'
-            )
-        )
-    )
-);
+            ]
+        ]
+    ]
+];

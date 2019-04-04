@@ -41,7 +41,7 @@ class SendEloquaRequest extends Job implements ShouldQueue, SelfHandling
             ]);
             $code = $response->getStatusCode();
         } catch (GuzzleHttp\Exception\RequestException $e) {
-            $mailer->send('emails.errors', array('process'=>'Guzzle', 'message'=>$e->getMessage(), 'time'=>date('l jS \of F Y h:i:s A')), function ($message) {
+            $mailer->send('emails.errors', ['process'=>'Guzzle', 'message'=>$e->getMessage(), 'time'=>date('l jS \of F Y h:i:s A')], function ($message) {
                 $message->to('roarkmccolgan@gmail.com', 'Roark McColgan')->subject('Error on Converged Infrastructure - Maturity Benchmark! ('.$currentLocal.')');
             });
         }

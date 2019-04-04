@@ -195,7 +195,7 @@ class AssessmentController extends Controller
 
         if ($request->input('new')=='false') {
             $tool->load(['assessments' => function ($query) use ($request) {
-                $query->whereBetween('created_at', array(Carbon::parse($request->input('dateFrom')), Carbon::parse($request->input('dateTo'))->addYear()));
+                $query->whereBetween('created_at', [Carbon::parse($request->input('dateFrom')), Carbon::parse($request->input('dateTo'))->addYear()]);
             }]);
         } else {
             $tool->load(['assessments' => function ($query) use ($request) {
@@ -304,11 +304,11 @@ class AssessmentController extends Controller
 
                 $sheet->cells('A1', function ($cells) {
                     $cells->setBackground('#EFEFEF');
-                    $cells->setFont(array(
+                    $cells->setFont([
                         //'family'     => 'Calibri',
                         //'size'       => '14',
                         'bold'       =>  true
-                        ));
+                        ]);
                 });
                 $sheet->freezeFirstRow();
                 /*$sheet->setColumnFormat(array(

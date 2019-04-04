@@ -1,7 +1,7 @@
 <?php
 //NTT
-return array(
-    'overall' => array(
+return [
+    'overall' => [
         'baseline' => 27.60,
         'baseline' => 11,
 
@@ -73,37 +73,37 @@ return array(
             'margin-top'=>20,
             'header-spacing'=>6
         ],
-        'types' => array(
-            'stage1' => array(
+        'types' => [
+            'stage1' => [
                 'low' => 0,
                 'high' => 26.9,
                 'copy' => 'general.8poortxt',
                 'tweet' => false,
                 'benchmark' => 20,
-            ),
-            'stage2' => array(
+            ],
+            'stage2' => [
                 'low' => 27,
                 'high' => 32.9,
                 'copy' => 'general.8standardtxt',
                 'tweet' => false,
                 'benchmark' => 34,
-            ),
-            'stage3' => array(
+            ],
+            'stage3' => [
                 'low' => 33,
                 'high' => 50,
                 'copy' => 'general.8goodtxt',
                 'tweet' => false,
                 'benchmark' => 28,
-            )
-        ),
+            ]
+        ],
         'tweet' => false,
         'include_answers_in_download_report' => true,
         'report_recipients' => [
             'roarkmccolgan@gmail.com',
             'lborthwick@idc.com',
         ],
-    ),
-    'infrastructure' => array(
+    ],
+    'infrastructure' => [
         'baseline' => 8.90,
         'baseline' => 9.83,
 
@@ -134,31 +134,31 @@ return array(
         ],
         'floatimage' => 'right',
         'floatgraph' => 'none',
-        'types' => array(
-            'stage1' => array(
+        'types' => [
+            'stage1' => [
                 'low' => 0,
                 'high' => 8.9,
                 'total' => 2,
                 'benchmark' => 20,
                 'copy' => 'ntt-sdwan.infrastructure-poor-txt'
-            ),
-            'stage2' => array(
+            ],
+            'stage2' => [
                 'low' => 9,
                 'high' => 10.9,
                 'total' => 3,
                 'benchmark' => 34,
                 'copy' => 'ntt-sdwan.infrastructure-standard-txt'
-            ),
-            'stage3' => array(
+            ],
+            'stage3' => [
                 'low' => 11,
                 'high' => 15,
                 'total' => 5,
                 'benchmark' => 28,
                 'copy' => 'ntt-sdwan.infrastructure-good-txt'
-            )
-        )
-    ),
-    'intelligence' => array(
+            ]
+        ]
+    ],
+    'intelligence' => [
         'baseline' => 9.28,
         'baseline' => 10.93,
         
@@ -189,31 +189,31 @@ return array(
         ],
         'floatimage' => 'right',
         'floatgraph' => 'none',
-        'types' => array(
-            'stage1' => array(
+        'types' => [
+            'stage1' => [
                 'low' => 0,
                 'high' => 8.9,
                 'total' => 2,
                 'benchmark' => 20,
                 'copy' => 'ntt-sdwan.intelligence-poor-txt'
-            ),
-            'stage2' => array(
+            ],
+            'stage2' => [
                 'low' => 9,
                 'high' => 10.9,
                 'total' => 3,
                 'benchmark' => 34,
                 'copy' => 'ntt-sdwan.intelligence-standard-txt'
-            ),
-            'stage3' => array(
+            ],
+            'stage3' => [
                 'low' => 11,
                 'high' => 15,
                 'total' => 5,
                 'benchmark' => 28,
                 'copy' => 'ntt-sdwan.intelligence-good-txt'
-            )
-        )
-    ),
-    'operations' => array(
+            ]
+        ]
+    ],
+    'operations' => [
         'baseline' => 9.42,
         'baseline' => 11.4,
         'baseline_stage1' => 2.5,
@@ -243,28 +243,28 @@ return array(
         ],
         'floatimage' => 'right',
         'floatgraph' => 'none',
-        'types' => array(
-            'stage1' => array(
+        'types' => [
+            'stage1' => [
                 'low' => 0,
                 'high' => 5.9,
                 'total' => 2,
                 'benchmark' => 20,
                 'copy' => 'ntt-sdwan.operations-poor-txt'
-            ),
-            'stage2' => array(
+            ],
+            'stage2' => [
                 'low' => 6,
                 'high' => 10.9,
                 'total' => 3,
                 'benchmark' => 34,
                 'copy' => 'ntt-sdwan.operations-standard-txt'
-            ),
-            'stage3' => array(
+            ],
+            'stage3' => [
                 'low' => 11,
                 'high' => 15,
                 'total' => 5,
                 'benchmark' => 28,
                 'copy' => 'ntt-sdwan.operations-good-txt'
-            )
-        )
-    )
-);
+            ]
+        ]
+    ]
+];

@@ -120,7 +120,7 @@ class PdfController extends Controller
             //User overall stage number and ordinal
             preg_match_all('/\d+/', session('result.overall.rating'), $matches);
             $number =  (int)$matches[0][0];
-            $ends = array('th','st','nd','rd','th','th','th','th','th','th');
+            $ends = ['th','st','nd','rd','th','th','th','th','th','th'];
             if (($number %100) >= 11 && ($number%100) <= 13) {
                 $ordinal = 'th';
             } else {
@@ -327,7 +327,7 @@ class PdfController extends Controller
             //User overall stage number and ordinal
             preg_match_all('/\d+/', session('result.overall.rating'), $matches);
             $number =  (int)$matches[0][0];
-            $ends = array('th','st','nd','rd','th','th','th','th','th','th');
+            $ends = ['th','st','nd','rd','th','th','th','th','th','th'];
             if (($number %100) >= 11 && ($number%100) <= 13) {
                 $ordinal = 'th';
             } else {
@@ -475,7 +475,7 @@ class PdfController extends Controller
             //User overall stage number and ordinal
             preg_match_all('/\d+/', session('result.overall.rating'), $matches);
             $number =  (int)$matches[0][0];
-            $ends = array('th','st','nd','rd','th','th','th','th','th','th');
+            $ends = ['th','st','nd','rd','th','th','th','th','th','th'];
             if (($number %100) >= 11 && ($number%100) <= 13) {
                 $ordinal = 'th';
             } else {
@@ -690,7 +690,7 @@ class PdfController extends Controller
 
             //overall
             $rating = session('result.overall.rating');
-            $settings = array(
+            $settings = [
                 'back_image'=>asset('images/tools/8/comparisonbg'.session('localeUrl').'.png?id=1'),
                 'back_image_width'=> 570,
                 'back_image_height'=> 320,
@@ -729,7 +729,7 @@ class PdfController extends Controller
                     'value' => 'score',
                     'colour' => 'colour'
                 ]
-            );
+            ];
 
             $base = config('baseline_'.session('product.id').'.overall');
             $comparisons = ['industry'];
@@ -874,7 +874,7 @@ class PdfController extends Controller
             $settings['back_image_height'] = $graphHeight;
 
             $graph = new \SVGGraph(570, $graphHeight, $settings);
-            $colours = array(array('#9E3D91'), array('#1A7ABB'));
+            $colours = [['#9E3D91'], ['#1A7ABB']];
             $graph->colours = $colours;
             $graph->Values($values);
             $graph = $graph->Fetch('HorizontalBarGraph', false);
@@ -952,18 +952,18 @@ class PdfController extends Controller
                 $user_score = 20.5;
             }
 
-             $values = array(
-                array(
+             $values = [
+                [
                     'label' => 'Infrastructure Performance',
                     'score' => $base['baseline'],
                     'colour' => '#9E3D91'
-                ),
-                array(
+                ],
+                [
                     'label' => 'User Infrastructure Performance',
                     'score' => $user_score,
                     'colour' => '#1A7ABB'
-                ),
-             );
+                ],
+             ];
 
             $graphinfrastructure->colours = $colours;
             $graphinfrastructure->Values($values);
@@ -1030,18 +1030,18 @@ class PdfController extends Controller
                 $user_score = 20.5;
             }
 
-            $values = array(
-                array(
+            $values = [
+                [
                     'label' => 'Intelligence Performance',
                     'score' => $base['baseline'],
                     'colour' => '#9E3D91'
-                ),
-                array(
+                ],
+                [
                     'label' => 'User Intelligence Performance',
                     'score' => $user_score,
                     'colour' => '#1A7ABB'
-                ),
-             );
+                ],
+             ];
 
             $graphintelligence->colours = $colours;
             $graphintelligence->Values($values);
@@ -1107,18 +1107,18 @@ class PdfController extends Controller
                 $user_score = 20.5;
             }
 
-            $values = array(
-                array(
+            $values = [
+                [
                     'label' => 'Operations Performance',
                     'score' => $base['baseline'],
                     'colour' => '#9E3D91'
-                ),
-                array(
+                ],
+                [
                     'label' => 'User Operations Performance',
                     'score' => $user_score,
                     'colour' => '#1A7ABB'
-                ),
-             );
+                ],
+             ];
 
             $graphoperations->colours = $colours;
             $graphoperations->Values($values);

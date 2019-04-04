@@ -1,7 +1,7 @@
 <?php
 //sage
-return array(
-    'overall' => array(
+return [
+    'overall' => [
         'baseline' => 21.5,
         'report-settings' => [
             'header'=>true,
@@ -78,46 +78,46 @@ return array(
                 ],
             ],*/
         ],
-        'types' => array(
-            'stage1' => array(
+        'types' => [
+            'stage1' => [
                 'low' => 0,
                 'high' => 20.9,
                 'copy' => 'general.timetoacttxt',
                 'tweet' => false,
                 'benchmark' => 2,
-            ),
-            'stage2' => array(
+            ],
+            'stage2' => [
                 'low' => 21,
                 'high' => 40.9,
                 'copy' => 'general.timetocommitetxt',
                 'tweet' => false,
                 'benchmark' => 32,
-            ),
-            'stage3' => array(
+            ],
+            'stage3' => [
                 'low' => 41,
                 'high' => 50.9,
                 'copy' => 'general.timetoinvesttxt',
                 'tweet' => false,
                 'benchmark' => 41,
-            ),
-            'stage4' => array(
+            ],
+            'stage4' => [
                 'low' => 61,
                 'high' => 80.9,
                 'copy' => 'general.timetorefinetxt',
                 'tweet' => false,
                 'benchmark' => 21,
-            ),
-            'stage5' => array(
+            ],
+            'stage5' => [
                 'low' => 81,
                 'high' => 100,
                 'copy' => 'general.timetoacceleratetxt',
                 'tweet' => false,
                 'benchmark' => 4,
-            )
-        ),
+            ]
+        ],
         'tweet' => false
-    ),
-    'cloud-vision-and-strategy' => array(
+    ],
+    'cloud-vision-and-strategy' => [
         'baseline' => 15.363,
         'report-settings' => [
             'header'=>true,
@@ -131,40 +131,40 @@ return array(
         ],
         'floatimage' => 'right',
         'floatgraph' => 'none',
-        'types' => array(
-            'stage1' => array(
+        'types' => [
+            'stage1' => [
                 'low' => 0,
                 'high' => 4.92,
                 'total' => 2,
                 'benchmark' => 14,
-            ),
-            'stage2' => array(
+            ],
+            'stage2' => [
                 'low' => 5,
                 'high' => 8.9,
                 'total' => 3,
                 'benchmark' => 39,
-            ),
-            'stage3' => array(
+            ],
+            'stage3' => [
                 'low' => 9,
                 'high' => 12.9,
                 'total' => 5,
                 'benchmark' => 28,
-            ),
-            'stage4' => array(
+            ],
+            'stage4' => [
                 'low' => 13,
                 'high' => 16.9,
                 'total' => 5,
                 'benchmark' => 13,
-            ),
-            'stage5' => array(
+            ],
+            'stage5' => [
                 'low' => 17,
                 'high' => 20,
                 'total' => 5,
                 'benchmark' => 6,
-            )
-        )
-    ),
-    'process-and-skill-sets' => array(
+            ]
+        ]
+    ],
+    'process-and-skill-sets' => [
         'baseline' => 24.046,
         'report-settings' => [
             'header'=>true,
@@ -178,40 +178,40 @@ return array(
         ],
         'floatimage' => 'none',
         'floatgraph' => 'none',
-        'types' => array(
-            'stage1' => array(
+        'types' => [
+            'stage1' => [
                 'low' => 0,
                 'high' => 4.95,
                 'total' => 3,
                 'benchmark' => 25,
-            ),
-            'stage2' => array(
+            ],
+            'stage2' => [
                 'low' => 5,
                 'high' => 8.9,
                 'total' => 4,
                 'benchmark' => 33,
-            ),
-            'stage3' => array(
+            ],
+            'stage3' => [
                 'low' => 9,
                 'high' => 12.9,
                 'total' => 6,
                 'benchmark' => 17,
-            ),
-            'stage4' => array(
+            ],
+            'stage4' => [
                 'low' => 13,
                 'high' => 16.9,
                 'total' => 6,
                 'benchmark' => 17,
-            ),
-            'stage5' => array(
+            ],
+            'stage5' => [
                 'low' => 17,
                 'high' => 20,
                 'total' => 6,
                 'benchmark' => 8,
-            )
-        )
-    ),
-    'marketing' => array(
+            ]
+        ]
+    ],
+    'marketing' => [
         'baseline' => 10,917,
         'report-settings' => [
             'header'=>true,
@@ -225,40 +225,40 @@ return array(
         ],
         'floatimage' => 'none',
         'floatgraph' => 'none',
-        'types' => array(
-            'stage1' => array(
+        'types' => [
+            'stage1' => [
                 'low' => 0,
                 'high' => 4.9,
                 'total' => 1,
                 'benchmark' => 28,
-            ),
-            'stage2' => array(
+            ],
+            'stage2' => [
                 'low' => 5,
                 'high' => 8.9,
                 'total' => 2,
                 'benchmark' => 26,
-            ),
-            'stage3' => array(
+            ],
+            'stage3' => [
                 'low' => 9,
                 'high' => 12.9,
                 'total' => 4,
                 'benchmark' => 26,
-            ),
-            'stage4' => array(
+            ],
+            'stage4' => [
                 'low' => 13,
                 'high' => 16.9,
                 'total' => 4,
                 'benchmark' => 11,
-            ),
-            'stage5' => array(
+            ],
+            'stage5' => [
                 'low' => 17,
                 'high' => 20,
                 'total' => 4,
                 'benchmark' => 8,
-            )
-        )
-    ),
-    'sales' => array(
+            ]
+        ]
+    ],
+    'sales' => [
         'baseline' => 10,917,
         'report-settings' => [
             'header'=>true,
@@ -272,40 +272,40 @@ return array(
         ],
         'floatimage' => 'none',
         'floatgraph' => 'none',
-        'types' => array(
-            'stage1' => array(
+        'types' => [
+            'stage1' => [
                 'low' => 0,
                 'high' => 4.9,
                 'total' => 1,
                 'benchmark' => 21,
-            ),
-            'stage2' => array(
+            ],
+            'stage2' => [
                 'low' => 5,
                 'high' => 8.9,
                 'total' => 2,
                 'benchmark' => 28,
-            ),
-            'stage3' => array(
+            ],
+            'stage3' => [
                 'low' => 9,
                 'high' => 12.9,
                 'total' => 4,
                 'benchmark' => 27,
-            ),
-            'stage4' => array(
+            ],
+            'stage4' => [
                 'low' => 13,
                 'high' => 16.9,
                 'total' => 4,
                 'benchmark' => 16,
-            ),
-            'stage5' => array(
+            ],
+            'stage5' => [
                 'low' => 17,
                 'high' => 20,
                 'total' => 4,
                 'benchmark' => 8,
-            )
-        )
-    ),
-    'business-mix' => array(
+            ]
+        ]
+    ],
+    'business-mix' => [
         'baseline' => 10,917,
         'report-settings' => [
             'header'=>true,
@@ -319,37 +319,37 @@ return array(
         ],
         'floatimage' => 'none',
         'floatgraph' => 'none',
-        'types' => array(
-            'stage1' => array(
+        'types' => [
+            'stage1' => [
                 'low' => 0,
                 'high' => 4.9,
                 'total' => 1,
                 'benchmark' => 4,
-            ),
-            'stage2' => array(
+            ],
+            'stage2' => [
                 'low' => 5,
                 'high' => 8.9,
                 'total' => 2,
                 'benchmark' => 16,
-            ),
-            'stage3' => array(
+            ],
+            'stage3' => [
                 'low' => 9,
                 'high' => 12.9,
                 'total' => 4,
                 'benchmark' => 53,
-            ),
-            'stage4' => array(
+            ],
+            'stage4' => [
                 'low' => 13,
                 'high' => 16.9,
                 'total' => 4,
                 'benchmark' => 26,
-            ),
-            'stage5' => array(
+            ],
+            'stage5' => [
                 'low' => 17,
                 'high' => 20,
                 'total' => 4,
                 'benchmark' => 1,
-            )
-        )
-    )
-);
+            ]
+        ]
+    ]
+];

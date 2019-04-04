@@ -1,7 +1,7 @@
 <?php
 //fireeye
-return array(
-    'overall' => array(
+return [
+    'overall' => [
         'baseline' => 21.5,
         'complete' => [
             'graph' => [
@@ -98,8 +98,8 @@ return array(
             ],
         ],
         'tweet'=>true,
-        'types' => array(
-            'stage1' => array(
+        'types' => [
+            'stage1' => [
                 'low' => 0,
                 'high' => 23.3,
                 'copy' => 'general.timetoacttxt',
@@ -120,8 +120,8 @@ return array(
                     '10000-or-more' => 8.33, '10000-ou-plus' => 8.33, '10000-oder-mehr' => 8.33, '10000-o-più' => 8.33, '10000-o-más' => 8.33,
                 ],
                 'position' => 'behind'
-            ),
-            'stage2' => array(
+            ],
+            'stage2' => [
                 'low' => 23.4,
                 'high' => 46.7,
                 'copy' => 'general.timetocommitetxt',
@@ -142,8 +142,8 @@ return array(
                     '10000-or-more' => 12.45, '10000-ou-plus' => 12.45, '10000-oder-mehr' => 12.45, '10000-o-più' => 12.45, '10000-o-más' => 12.45,
                 ],
                 'position' => 'behind'
-            ),
-            'stage3' => array(
+            ],
+            'stage3' => [
                 'low' => 46.8,
                 'high' => 70.1,
                 'copy' => 'general.timetoinvesttxt',
@@ -164,8 +164,8 @@ return array(
                     '10000-or-more' => 13.56, '10000-ou-plus' => 13.56, '10000-oder-mehr' => 13.56, '10000-o-più' => 13.56, '10000-o-más' => 13.56,
                 ],
                 'position' => 'inline'
-            ),
-            'stage4' => array(
+            ],
+            'stage4' => [
                 'low' => 70.2,
                 'high' => 93.5,
                 'copy' => 'general.timetorefinetxt',
@@ -186,8 +186,8 @@ return array(
                     '10000-or-more' => 17.39, '10000-ou-plus' => 17.39, '10000-oder-mehr' => 17.39, '10000-o-più' => 17.39, '10000-o-más' => 17.39,
                 ],
                 'position' => 'ahead'
-            ),
-            'stage5' => array(
+            ],
+            'stage5' => [
                 'low' => 93.6,
                 'high' => 117,
                 'copy' => 'general.timetoacceleratetxt',
@@ -208,10 +208,10 @@ return array(
                     '10000-or-more' => 10, '10000-ou-plus' => 10, '10000-oder-mehr' => 10, '10000-o-più' => 10, '10000-o-más' => 10,
                 ],
                 'position' => 'ahead'
-            )
-        )
-    ),
-    'cyber-risk-management-and-the-business' => array(
+            ]
+        ]
+    ],
+    'cyber-risk-management-and-the-business' => [
         'report-settings' => [
             'header'=>false,
             'footer'=>true,
@@ -222,45 +222,45 @@ return array(
             'pageimage'=>false
         ],
         'baseline' => 15.363,
-        'types' => array(
-            'stage1' => array(
+        'types' => [
+            'stage1' => [
                 'low' => 7,
                 'high' => 12.5,
                 'total' => 2,
                 'benchmark' => 2.5,
                 'position' => 'behind'
-            ),
-            'stage2' => array(
+            ],
+            'stage2' => [
                 'low' => 12.6,
                 'high' => 18.1,
                 'total' => 3,
                 'benchmark' => 16,
                 'position' => 'behind'
-            ),
-            'stage3' => array(
+            ],
+            'stage3' => [
                 'low' => 18.2,
                 'high' => 23.7,
                 'total' => 5,
                 'benchmark' => 33.6,
                 'position' => 'behind'
-            ),
-            'stage4' => array(
+            ],
+            'stage4' => [
                 'low' => 23.8,
                 'high' => 29.3,
                 'total' => 5,
                 'benchmark' => 33.8,
                 'position' => 'inline'
-            ),
-            'stage5' => array(
+            ],
+            'stage5' => [
                 'low' => 29.4,
                 'high' => 45,
                 'total' => 5,
                 'benchmark' => 15.2,
                 'position' => 'ahead'
-            )
-        )
-    ),
-    'cyber-risk-management-operations-and-defence' => array(
+            ]
+        ]
+    ],
+    'cyber-risk-management-operations-and-defence' => [
         'report-settings' => [
             'header'=>false,
             'footer'=>true,
@@ -271,45 +271,45 @@ return array(
             'pageimage'=>false
         ],
         'baseline' => 15.363,
-        'types' => array(
-            'stage1' => array(
+        'types' => [
+            'stage1' => [
                 'low' => 9,
                 'high' => 16.1,
                 'total' => 2,
                 'benchmark' => 2,
                 'position' => 'behind'
-            ),
-            'stage2' => array(
+            ],
+            'stage2' => [
                 'low' => 16.2,
                 'high' => 23.3,
                 'total' => 3,
                 'benchmark' => 2,
                 'position' => 'inline'
-            ),
-            'stage3' => array(
+            ],
+            'stage3' => [
                 'low' => 23.4,
                 'high' => 30.5,
                 'total' => 5,
                 'benchmark' => 2,
                 'position' => 'inline'
-            ),
-            'stage4' => array(
+            ],
+            'stage4' => [
                 'low' => 30.6,
                 'high' => 37.7,
                 'total' => 5,
                 'benchmark' => 2,
                 'position' => 'ahead'
-            ),
-            'stage5' => array(
+            ],
+            'stage5' => [
                 'low' => 37.8,
                 'high' => 50,
                 'total' => 5,
                 'benchmark' => 2,
                 'position' => 'ahead'
-            )
-        )
-    ),
-    'cyber-risk-management-breach-detection-and-remediation' => array(
+            ]
+        ]
+    ],
+    'cyber-risk-management-breach-detection-and-remediation' => [
         'report-settings' => [
             'header'=>false,
             'footer'=>true,
@@ -320,42 +320,42 @@ return array(
             'pageimage'=>false
         ],
         'baseline' => 15.363,
-        'types' => array(
-            'stage1' => array(
+        'types' => [
+            'stage1' => [
                 'low' => 0,
                 'high' => 6.9,
                 'total' => 2,
                 'benchmark' => 2,
                 'position' => 'inline'
-            ),
-            'stage2' => array(
+            ],
+            'stage2' => [
                 'low' => 7,
                 'high' => 13.9,
                 'total' => 3,
                 'benchmark' => 2,
                 'position' => 'inline'
-            ),
-            'stage3' => array(
+            ],
+            'stage3' => [
                 'low' => 14,
                 'high' => 20.9,
                 'total' => 5,
                 'benchmark' => 2,
                 'position' => 'ahead'
-            ),
-            'stage4' => array(
+            ],
+            'stage4' => [
                 'low' => 21,
                 'high' => 27.9,
                 'total' => 5,
                 'benchmark' => 2,
                 'position' => 'ahead'
-            ),
-            'stage5' => array(
+            ],
+            'stage5' => [
                 'low' => 28,
                 'high' => 35,
                 'total' => 5,
                 'benchmark' => 2,
                 'position' => 'ahead'
-            )
-        )
-    )
-);
+            ]
+        ]
+    ]
+];
