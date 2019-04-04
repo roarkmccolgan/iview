@@ -446,7 +446,7 @@ return [
                                     ]
                                 ]
                             ],
-                           [
+                            [
                                 'label'=>'Fourniture de nouvelles fonctions réseau',
                                 'name'=> 7.2,
                                 'options'=>[
@@ -467,7 +467,7 @@ return [
                                     ]
                                 ]
                             ],
-                           [
+                            [
                                 'label'=>'Mise à jour des politiques/paramètres de réseau ou de sécurité',
                                 'name'=> 7.3,
                                 'options'=>[
@@ -488,7 +488,7 @@ return [
                                     ]
                                 ]
                             ],
-                           [
+                            [
                                 'label'=>'Ajout ou modification d\'une connexion à un fournisseur de cloud public',
                                 'name'=> 7.4,
                                 'options'=>[

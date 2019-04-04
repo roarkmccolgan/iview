@@ -446,7 +446,7 @@ return [
                                     ]
                                 ]
                             ],
-                           [
+                            [
                                 'label'=>'Proporcionar nuevas funciones de red',
                                 'name'=> 7.2,
                                 'options'=>[
@@ -467,7 +467,7 @@ return [
                                     ]
                                 ]
                             ],
-                           [
+                            [
                                 'label'=>'Actualizar las políticas y la configuración de seguridad y de red',
                                 'name'=> 7.3,
                                 'options'=>[
@@ -488,7 +488,7 @@ return [
                                     ]
                                 ]
                             ],
-                           [
+                            [
                                 'label'=>'Añadir o cambiar una conexión a un proveedor de nube pública',
                                 'name'=> 7.4,
                                 'options'=>[

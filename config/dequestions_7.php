@@ -224,7 +224,7 @@ return [
                                     ]
                                 ]
                             ],
-                           [
+                            [
                                 'label'=>'Wir kennen unsere unstrukturierten Daten',
                                 'hint'=>'(Dateien, Verzeichnisse, Workbooks, Dokumente, E-Mail etc)',
                                 'name'=>'q5.2',
@@ -241,7 +241,7 @@ return [
                                     ]
                                 ]
                             ],
-                           [
+                            [
                                 'label'=>'Wir kennen unsere irrelevanten Daten',
                                 'hint'=>'(Daten ohne geschäftlichen Wert, redundante, überflüssige oder triviale Daten)',
                                 'name'=>'q5.3',
@@ -258,7 +258,7 @@ return [
                                     ]
                                 ]
                             ],
-                           [
+                            [
                                 'label'=>'Wir wissen, wem die Daten gehören und wer auf sie Zugriff hat.',
                                 'name'=>'q5.4',
                                 'options'=>[
@@ -274,7 +274,7 @@ return [
                                     ]
                                 ]
                             ],
-                           [
+                            [
                                 'label'=>'Wir wissen, wie lange wir Daten halten müssen.',
                                 'name'=>'q5.5',
                                 'options'=>[
@@ -290,7 +290,7 @@ return [
                                     ]
                                 ]
                             ],
-                           [
+                            [
                                 'label'=>'Wir wissen, wann wir Daten löschen dürfen oder müssen.',
                                 'name'=>'q5.6',
                                 'options'=>[
@@ -306,7 +306,7 @@ return [
                                     ]
                                 ]
                             ],
-                           [
+                            [
                                 'label'=>'Wir wissen, welche Richtlinien für spezielle Datenkategorien gelten.',
                                 'name'=>'q5.7',
                                 'options'=>[
@@ -322,7 +322,7 @@ return [
                                     ]
                                 ]
                             ],
-                           [
+                            [
                                 'label'=>'Wir verstehen die Bedeutung und wissen von sämtlichen Kopien unserer personenbezogenen Daten.',
                                 'hint'=>'(In Backup, Test/Dev, am Ersatzstandort, auf mobilen Systemen, in der Cloud)',
                                 'name'=>'q5.8',

@@ -224,7 +224,7 @@ return [
                                     ]
                                 ]
                             ],
-                           [
+                            [
                                 'label'=>'Nous connaissons nos informations non structurées',
                                 'hint'=>'(fichiers, dossiers, classeurs, documents, e-mails, etc.)',
                                 'name'=>'q5.2',
@@ -241,7 +241,7 @@ return [
                                     ]
                                 ]
                             ],
-                           [
+                            [
                                 'label'=>'Nous connaissons nos données non pertinentes',
                                 'hint'=>'(données sans aucune valeur commerciale, redondantes, obsolètes, triviales)',
                                 'name'=>'q5.3',
@@ -258,7 +258,7 @@ return [
                                     ]
                                 ]
                             ],
-                           [
+                            [
                                 'label'=>'Nous savons qui est propriétaire des données et qui peut y accéder',
                                 'name'=>'q5.4',
                                 'options'=>[
@@ -274,7 +274,7 @@ return [
                                     ]
                                 ]
                             ],
-                           [
+                            [
                                 'label'=>'Nous savons combien de temps nous devons conserver les données',
                                 'name'=>'q5.5',
                                 'options'=>[
@@ -290,7 +290,7 @@ return [
                                     ]
                                 ]
                             ],
-                           [
+                            [
                                 'label'=>'Nous savons quand nous devons/pouvons supprimer des données',
                                 'name'=>'q5.6',
                                 'options'=>[
@@ -306,7 +306,7 @@ return [
                                     ]
                                 ]
                             ],
-                           [
+                            [
                                 'label'=>'Nous savons quel règlement s\'applique aux catégories particulières de données',
                                 'name'=>'q5.7',
                                 'options'=>[
@@ -322,7 +322,7 @@ return [
                                     ]
                                 ]
                             ],
-                           [
+                            [
                                 'label'=>'Nous connaissons toutes les copies de nos données personnelles en notre possession',
                                 'hint'=>'(en sauvegarde, en test/développement, en site de reprise après sinistre, sur les appareils mobiles, dans le Cloud)',
                                 'name'=>'q5.8',

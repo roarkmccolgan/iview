@@ -224,7 +224,7 @@ return [
                                     ]
                                 ]
                             ],
-                           [
+                            [
                                 'label'=>'We know our unstructured information',
                                 'hint'=>'(files, folders, workbooks, documents, email, etc.)',
                                 'name'=>'q5.2',
@@ -241,7 +241,7 @@ return [
                                     ]
                                 ]
                             ],
-                           [
+                            [
                                 'label'=>'We know our irrelevant data',
                                 'hint'=>'(data without any business value, redundant, obsolete, trivial)',
                                 'name'=>'q5.3',
@@ -258,7 +258,7 @@ return [
                                     ]
                                 ]
                             ],
-                           [
+                            [
                                 'label'=>'We know who owns data and who can access it',
                                 'name'=>'q5.4',
                                 'options'=>[
@@ -274,7 +274,7 @@ return [
                                     ]
                                 ]
                             ],
-                           [
+                            [
                                 'label'=>'We know how long we need to keep data',
                                 'name'=>'q5.5',
                                 'options'=>[
@@ -290,7 +290,7 @@ return [
                                     ]
                                 ]
                             ],
-                           [
+                            [
                                 'label'=>'We know when we need to/can delete data',
                                 'name'=>'q5.6',
                                 'options'=>[
@@ -306,7 +306,7 @@ return [
                                     ]
                                 ]
                             ],
-                           [
+                            [
                                 'label'=>'We know which regulation applies to special categories of data',
                                 'name'=>'q5.7',
                                 'options'=>[
@@ -322,7 +322,7 @@ return [
                                     ]
                                 ]
                             ],
-                           [
+                            [
                                 'label'=>'We understand all the copies we have of our personal data',
                                 'hint'=>'(in backup, in test/dev, in disaster recovery site, on mobile devices, in the cloud)',
                                 'name'=>'q5.8',

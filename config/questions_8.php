@@ -446,7 +446,7 @@ return [
                                     ]
                                 ]
                             ],
-                           [
+                            [
                                 'label'=>'Provision new network functions',
                                 'name'=> 7.2,
                                 'options'=>[
@@ -467,7 +467,7 @@ return [
                                     ]
                                 ]
                             ],
-                           [
+                            [
                                 'label'=>'Update networking or security policies/settings',
                                 'name'=> 7.3,
                                 'options'=>[
@@ -488,7 +488,7 @@ return [
                                     ]
                                 ]
                             ],
-                           [
+                            [
                                 'label'=>'Add or change a connection to a public cloud provider',
                                 'name'=> 7.4,
                                 'options'=>[

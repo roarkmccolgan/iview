@@ -224,7 +224,7 @@ return [
                                     ]
                                 ]
                             ],
-                           [
+                            [
                                 'label'=>'Conosciamo le nostre informazioni non strutturate',
                                 'hint'=>'(file, cartelle, cartelle di lavoro, documenti, e-mail, ecc.)',
                                 'name'=>'q5.2',
@@ -241,7 +241,7 @@ return [
                                     ]
                                 ]
                             ],
-                           [
+                            [
                                 'label'=>'Conosciamo i nostri dati irrilevanti',
                                 'hint'=>'(dati senza alcun valore aziendale, ridondanti, obsoleti, insignificanti)',
                                 'name'=>'q5.3',
@@ -258,7 +258,7 @@ return [
                                     ]
                                 ]
                             ],
-                           [
+                            [
                                 'label'=>'Sappiamo chi possiede i dati e chi può accedervi',
                                 'name'=>'q5.4',
                                 'options'=>[
@@ -274,7 +274,7 @@ return [
                                     ]
                                 ]
                             ],
-                           [
+                            [
                                 'label'=>'Sappiamo per quanto tempo dobbiamo conservare i dati',
                                 'name'=>'q5.5',
                                 'options'=>[
@@ -290,7 +290,7 @@ return [
                                     ]
                                 ]
                             ],
-                           [
+                            [
                                 'label'=>'Sappiamo quando dobbiamo/possiamo eliminare i dati',
                                 'name'=>'q5.6',
                                 'options'=>[
@@ -306,7 +306,7 @@ return [
                                     ]
                                 ]
                             ],
-                           [
+                            [
                                 'label'=>'Sappiamo quale regolamento si applica a categorie particolari di dati',
                                 'name'=>'q5.7',
                                 'options'=>[
@@ -322,7 +322,7 @@ return [
                                     ]
                                 ]
                             ],
-                           [
+                            [
                                 'label'=>'Comprendiamo tutte le copie in nostro possesso dei nostri dati personali',
                                 'hint'=>'(in backup, test/sviluppo, nel sito di disaster recovery, su dispositivi mobili, nel cloud)',
                                 'name'=>'q5.8',

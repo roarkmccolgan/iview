@@ -446,7 +446,7 @@ return [
                                     ]
                                 ]
                             ],
-                           [
+                            [
                                 'label'=>'Neue Netzwerkfunktionen bereitstellen',
                                 'name'=> 7.2,
                                 'options'=>[
@@ -467,7 +467,7 @@ return [
                                     ]
                                 ]
                             ],
-                           [
+                            [
                                 'label'=>'Netzwerk- oder Sicherheitsrichtlinien/-einstellungen aktualisieren',
                                 'name'=> 7.3,
                                 'options'=>[
@@ -488,7 +488,7 @@ return [
                                     ]
                                 ]
                             ],
-                           [
+                            [
                                 'label'=>'Eine Verbindung zu einem öffentlichen Cloud-Anbieter hinzufügen oder ändern',
                                 'name'=> 7.4,
                                 'options'=>[

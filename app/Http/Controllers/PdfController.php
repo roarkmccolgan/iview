@@ -965,15 +965,15 @@ class PdfController extends Controller
                 ],
              ];
 
-            $graphinfrastructure->colours = $colours;
-            $graphinfrastructure->Values($values);
-            $graphinfrastructure = $graphinfrastructure->Fetch('HorizontalGroupedBarGraph', false);
-            $customCopy.= trans(
-                session('product.alias').'.infrastructuregraph',
-                [
+             $graphinfrastructure->colours = $colours;
+             $graphinfrastructure->Values($values);
+             $graphinfrastructure = $graphinfrastructure->Fetch('HorizontalGroupedBarGraph', false);
+             $customCopy.= trans(
+                 session('product.alias').'.infrastructuregraph',
+                 [
                     'graph' => $graphinfrastructure,
-                ]
-            );
+                 ]
+             );
 
             
             $q2score = $this->getQuestionScoreNew(2, 'infrastructure', 2);
