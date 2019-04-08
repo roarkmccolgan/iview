@@ -10,7 +10,8 @@ class Other extends Model
         'label',
         'value',
         'placeholder'
-    ]
+    ];
+    
     public function question()
     {
         return this->belongsTo('App\questions')

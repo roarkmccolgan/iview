@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Lang;
 | and give it the controller to call when that URI is requested.
 |
 */
-Route::auth();
+Auth::routes();
 Route::get('/change_password', 'UserController@showChangePassword');
 Route::post('/change_password', 'UserController@storeChangePassword');
 //Route::get('/', 'HomeController@index');
@@ -42,8 +42,7 @@ Route::group(['prefix' => 'admin', 'middleware'=>['auth']], function () {
     Route::get('reporting', 'ReportingController@index');
     Route::get('reporting/create', 'ReportingController@create');
 });
-
-Route::group(['domain' => '{subdomain}.'.env('APP_TLD', 'idcready.net'),'middleware'=>['locale']], function ($subdomain) {
+Route::group(['domain' => '{subdomain}.'.env('APP_TLD', 'idcready.net'),'middleware'=>['web','locale']], function ($subdomain) {
     Route::group(['prefix' => 'admin','middleware'=>['auth','routebyurl','toolaccess:super,admin,client,local']], function () {
         Route::get('/', 'TerminalController@dashboard');
         Route::post('/', 'TerminalController@dashboard');
@@ -79,7 +78,7 @@ Route::group(['domain' => '{subdomain}.'.env('APP_TLD', 'idcready.net'),'middlew
     });
 
     //default en routes
-    Route::get('/', 'ToolController@run')->middleware(['routebyurl']);
+    Route::get('/', 'ToolController@run')->middleware(['web','routebyurl','reloadquestions']);
     Route::get('/restart', ['middleware' => ['routebyurl','reloadquestions'], function () {
         return redirect('/'.session('localeUrl'));
     }]);

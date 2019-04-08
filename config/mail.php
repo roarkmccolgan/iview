@@ -55,7 +55,10 @@ return [
     |
     */
 
-    'from' => ['address' => 'notifications@mg.idcready.net', 'name' => 'IDC Notifications'],
+    'from' => [
+        'address' => 'notifications@mg.idcready.net',
+        'name' => 'IDC Notifications'
+    ],
 
     /*
     |--------------------------------------------------------------------------

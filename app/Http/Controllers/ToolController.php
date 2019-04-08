@@ -41,20 +41,8 @@ class ToolController extends Controller
 
     public function __construct(Request $request)
     {
+       
         //only reload questions if tool is ntt
-        if (!$request->session()->has('questions')) {
-            $this->middleware(['reloadquestions']);
-            return redirect('/');
-        } else {
-            $tool = session('product');
-            if ($tool['alias']!=='ntt-sdwan' || $tool['alias']!=='trend-micro-msp' || $tool['alias']!=='nttdatadx') {
-                if (!Session::has('quiz_complete')) {
-                    $this->middleware(['reloadquestions'], ['only' => [
-                        'run',
-                    ]]);
-                }
-            }
-        }
     }
 
     public function loadQuestions()
@@ -548,18 +536,18 @@ class ToolController extends Controller
         $extraFields = Tool::find(session('product.id'))->extra_fields()->get()->toArray();
         //return $extraFields;
         $vars = [
-        'heading' => trans(session('product.alias').'.overall.title'),
-        'result' => trans(session('product.alias').'.'.$this->result['overall']['rating']),
-        'resultkey' => $this->result['overall']['rating'],
-        'graph' => $graph,
-        'baseline' => session('baseline'),
-        'fullresult' => session('result'),
-        'sub1' => trans($this->baseline['overall']['types'][$this->result['overall']['rating']]['copy']),
-        'class' => 'sec1',
-        'quiz' => $this->quiz,
-        'source' => session('source'),
-        'btnclass'=>$btnclass,
-        'extra_fields'=>count($extraFields) > 0 ? $extraFields:false,
+            'heading' => trans(session('product.alias').'.overall.title'),
+            'result' => trans(session('product.alias').'.'.$this->result['overall']['rating']),
+            'resultkey' => $this->result['overall']['rating'],
+            'graph' => $graph,
+            'baseline' => session('baseline'),
+            'fullresult' => session('result'),
+            'sub1' => trans($this->baseline['overall']['types'][$this->result['overall']['rating']]['copy']),
+            'class' => 'sec1',
+            'quiz' => $this->quiz,
+            'source' => session('source'),
+            'btnclass'=>$btnclass,
+            'extra_fields'=>count($extraFields) > 0 ? $extraFields:false,
         ];
 
         return view('tool.'.session('template').'.complete', $vars);
@@ -826,6 +814,7 @@ class ToolController extends Controller
         $assessment = Assessment::where('uuid', $uuid)->firstOrFail();
         $request->session()->put('questions', $assessment->quiz);
         $request->session()->put('result', $assessment->result);
+        $request->session()->put('user', collect($assessment->toArray())->only(['fname','lname','email','company','country','referer','tel','downloaded','extra','fetched','title','uuid','lang']));
         $reportName = str_slug($assessment->fname.'_'.$assessment->lname.'_'.session('product.title').'_Assessment', '-');
         if ($update) {
             $assessment->update(['fetched' => 1]);

@@ -9,11 +9,12 @@ class Options extends Model
    
     protected $fillable = [
         'label',
-                        'value',
-                        'checked'
-    ]
+        'value',
+        'checked'
+    ];
+    
     public function questions()
     {
-        return this->belongsTo('App\questions')
+        return this->belongsTo('App\questions');
     }
 }

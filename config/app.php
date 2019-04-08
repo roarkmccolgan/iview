@@ -12,7 +12,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'My Application',
+    'name' => 'IDC Ready',
 
     /*
     |--------------------------------------------------------------------------
@@ -177,8 +177,6 @@ return [
          * Third Party Service Providers...
          */
         Collective\Html\HtmlServiceProvider::class,
-        Elibyy\TCPDF\ServiceProvider::class,
-        Collective\Bus\BusServiceProvider::class,
         Maatwebsite\Excel\ExcelServiceProvider::class,
         Spatie\LaravelAnalytics\LaravelAnalyticsServiceProvider::class,
         Laravelista\Ekko\EkkoServiceProvider::class,
@@ -244,7 +242,6 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Analytics' => Spatie\LaravelAnalytics\LaravelAnalyticsFacade::class,
-        'PDF' => Elibyy\TCPDF\Facades\TCPDF::class,
         'Excel' => Maatwebsite\Excel\Facades\Excel::class,
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,

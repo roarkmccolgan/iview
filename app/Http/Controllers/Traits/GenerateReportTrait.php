@@ -1255,12 +1255,37 @@ trait GenerateReportTrait
             $organisation_block = $base['block-size-'.$orgsizes[$orgsizes->search(strtolower(session('user.employees')))].'-'.$overallNumber];
 
             $countries = collect([
-                'us',
-                'we',
-                'jp',
-                'latam'
+                'us'=>[
+                    'United States'
+                ],
+                'we'=>[
+                    'United Kingdom',
+                    'Germany',
+                    'Italy',
+                    'Spain'
+                ],
+                'jp'=>[
+                    'Japan'
+                ],
+                'latam'=>[
+                    'Mexico',
+                    'Argentina',
+                    'Brazil',
+                    'Chile',
+                    'Columbia'
+                ]
             ]);
-            $geographic_block = $base['block-country-'.$countries[$countries->search(strtolower(session('user.country')))].'-'.$overallNumber];
+            $isFromBaselineRegion = $countries->search(function($item, $key){
+                if(collect($item)->search(session('user.country'))){
+                    return $key;
+                }
+                return false;
+            });
+            
+
+            if($isFromBaselineRegion!==false){
+                $geographic_block = $base['block-country-'.$isFromBaselineRegion.'-'.$overallNumber];
+            }
 
             $vars['introduction'] = trans(
                 session('product.alias').'.introduction',
@@ -1274,15 +1299,21 @@ trait GenerateReportTrait
 
             //overall
             $rating = session('result.overall.rating');
-            $vars['overall'] = trans(
-                session('product.alias').'.overall'.$rating,
-                [
-                    'vertical_style' => "left: {$vertical_block[0]}mm; top: {$vertical_block[1]}mm;width: {$vertical_block[2]}mm; height: {$vertical_block[3]}mm;",
-                    'organisation_style' => "left: {$organisation_block[0]}mm; top: {$organisation_block[1]}mm;width: {$organisation_block[2]}mm; height: {$organisation_block[3]}mm;",
-                    'geographic_style' => "left: {$geographic_block[0]}mm; top: {$geographic_block[1]}mm;width: {$geographic_block[2]}mm; height: {$geographic_block[3]}mm;",
-                    'img' => 'url('.session('url').'/'.'images/tools/10/overall_graph_bg@2x-100_overall_graph_bg.jpg)'
-                ]
-            );
+
+            if(isset($geographic_block)){
+                $vars['overall'] = trans(
+                    session('product.alias').'.overall'.$rating,
+                    [
+                        'vertical_style' => "left: {$vertical_block[0]}mm; top: {$vertical_block[1]}mm;width: {$vertical_block[2]}mm; height: {$vertical_block[3]}mm;",
+                        'organisation_style' => "left: {$organisation_block[0]}mm; top: {$organisation_block[1]}mm;width: {$organisation_block[2]}mm; height: {$organisation_block[3]}mm;",
+                        'geographic_style' => "left: {$geographic_block[0]}mm; top: {$geographic_block[1]}mm;width: {$geographic_block[2]}mm; height: {$geographic_block[3]}mm;",
+                        'img' => 'url('.session('url').'/'.'images/tools/10/overall_graph_bg@2x-100_overall_graph_bg.jpg)'
+                    ]
+                );
+            }else{
+                $vars['overall'] = trans(
+                    session('product.alias').'.overallblank'.$rating);
+            }
 
             //DX Adoption
             $dxAdoptionRating = session('result.dx-adoption.rating');

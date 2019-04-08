@@ -57,6 +57,24 @@
 								</div>
 								<div class="mb-4 w-full sm:w-1/2">
 									<div class="sm:mr-2">
+										<label class="block uppercase tracking-wide text-ntt-data-blue text-xs font-bold mb-2" for="company">
+											{{ $t('nttdatadx.leadgen.company') }}
+										</label>
+										<input class="appearance-none block w-full text-black border py-3 px-4 mb-2" :class="[errors.company ? 'border-red' : '']" id="company" name="company" type="company" @blur="hasError">
+										<p class="text-red text-xs italic" v-show="errors.company" v-html="$t('nttdatadx.leadgen.errorCompany')"></p>
+									</div>
+								</div>
+								<div class="mb-4 w-full sm:w-1/2">
+									<div class="sm:ml-2">
+										<label class="block uppercase tracking-wide text-ntt-data-blue text-xs font-bold mb-2" for="phone">
+											{{ $t('nttdatadx.leadgen.title') }}
+										</label>
+										<input class="appearance-none block w-full text-black border py-3 px-4 mb-2" :class="[errors.phone ? 'border-red' : '']" id="phone" name="title" type="text" @blur="hasError">
+										<p class="text-red text-xs italic" v-show="errors.phone" v-html="$t('nttdatadx.leadgen.errorPhone')"></p>
+									</div>
+								</div>
+								<div class="mb-4 w-full sm:w-1/2">
+									<div class="sm:mr-2">
 										<label class="block uppercase tracking-wide text-ntt-data-blue text-xs font-bold mb-2" for="employees">
 											{{ $t('nttdatadx.leadgen.employees') }}
 										</label>

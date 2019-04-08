@@ -18,18 +18,26 @@ class ReloadQuestions
      */
     public function handle($request, Closure $next)
     {
-        //App::setLocale(session('locale'));
-        $currentLocal = App::getLocale();
-        $localQuestions = $currentLocal=='en' ? '' : $currentLocal;
-        $questions = Config::get($localQuestions.'questions_'.session('product.id'));
-        if (is_null($questions)) {
-            return redirect('/');
-            abort(404, 'Language or URL Does not exist');
+        $tool = session('product');
+        $controller = $method = 'closure';
+        $currentAction = \Route::getCurrentRoute()->getActionName();
+        if($currentAction !== "Closure"){
+            list($controller, $method) = explode('@', $currentAction);
+            $controller = preg_replace('/.*\\\/', '', $controller);
         }
-        
-        $request->session()->put('questions', $questions);
-        reset($questions);
-        $request->session()->put('startSection', key($questions));
+
+        if (!$request->session()->has('questions') || ( ($tool['alias']!=='ntt-sdwan' || $tool['alias']!=='trend-micro-msp' || $tool['alias']!=='nttdatadx') && !$request->session()->has('quiz_complete')  && $controller == 'ToolController' && $method == 'run' ) ) {
+            $currentLocal = App::getLocale();
+            $localQuestions = $currentLocal=='en' ? '' : $currentLocal;
+            $questions = Config::get($localQuestions.'questions_'.session('product.id'));
+            if (is_null($questions)) {
+                abort(404, 'Language or URL Does not exist');
+            }
+            
+            $request->session()->put('questions', $questions);
+            reset($questions);
+            $request->session()->put('startSection', key($questions));
+        }
 
         return $next($request);
     }

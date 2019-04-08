@@ -141,6 +141,21 @@ return array(
         <p class="mb-2">Congratulations! Based on your responses to IDC\'s Financial Services DX Capability Assessment Tool, your organization has been rated at the highest level of DX capability - Digital Transformation Trailblazer .This means your organization is generally ahead of the industry and blazing a trail to the digital future. Always bear in mind though that you need to keep at it to stay ahead!</p>
         <p class="mb-2">Your results indicate that you are at the top of the pile when it comes to DX in financial services. While this is great, there may be some areas for you to pay attention to stay ahead in the game. This report will give you advice on areas to focus on, so let\'s turn to the next page and dig into what you can do.</p>
     ',
+    'overallblankstage1'=>'
+        <h2 class="leading-tight text-blue-dark mb-2 mt-6">OVERALL PERFORMANCE: Stage 1 - DX Digiphobe</h2>
+        <p class="mb-2">This result might hurt a bit, but based on your responses to IDC\'s Financial Services DX Capability Assessment Tool, your organization has been rated at the earliest level of DX capability - Digital Transformation Digphobe. This means you are struggling with moving to a Digital Future compared to the rest of the industry and there is much to do to be where you need to be. While it may seem an unattainable goal at this point, you must look to incremental improvements and seek outside assistance where possible to to accelerate your move to a digital future.</p>
+        <p class="mb-2">Your results indicate that there is plenty to do to get on the level with DX. This report will give you advice on areas to give priority to as you look to progress to the next stage of DX capability, so let\'s turn to the next page and dig into what you can do.</p>
+    ',
+    'overallblankstage2'=>'
+        <h2 class="leading-tight text-blue-dark mb-2 mt-6">OVERALL PERFORMANCE: Stage 2 - DX Conformist</h2>
+        <p class="mb-2">Well done! Based on your responses to IDC\'s Financial Services DX Capability Assessment Tool, your organization has been rated at the second highest level of DX capability - Digital Transformation Conformist .This means your organization is generally in line with the rest of the industry and readying itself for the digital future. While you are doing well, there is still much to do to be fully digital ready.</p>
+        <p class="mb-2">Your results indicate that while you are doing well, there is plenty to do to get on level terms with the best at DX in financial services. This report will give you advice on areas to give priority to as you look to progress to the next stage of DX capability, so let\'s turn to the next page and dig into what you can do.</p>
+    ',
+    'overallblankstage3'=>'
+        <h2 class="leading-tight text-blue-dark mb-2 mt-6">OVERALL PERFORMANCE: Stage 3 - DX Trailblazer</h2>
+        <p class="mb-2">Congratulations! Based on your responses to IDC\'s Financial Services DX Capability Assessment Tool, your organization has been rated at the highest level of DX capability - Digital Transformation Trailblazer .This means your organization is generally ahead of the industry and blazing a trail to the digital future. Always bear in mind though that you need to keep at it to stay ahead!</p>
+        <p class="mb-2">Your results indicate that you are at the top of the pile when it comes to DX in financial services. While this is great, there may be some areas for you to pay attention to stay ahead in the game. This report will give you advice on areas to focus on, so let\'s turn to the next page and dig into what you can do.</p>
+    ',
     'dx-adoptionstage1stage1'=>'
         <h3 class="leading-tight text-blue-dark mb-4 mt-6">DX ADOPTION PERFORMANCE</h3>
         <!--span class="block mb-2 font-bold text-grey-dark text-lg">Stage 1 - DX Digiphobe</span-->
