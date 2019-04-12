@@ -1,13 +1,21 @@
 <template>
 	<div class="flex flex-col justify-center text-grey-light">
+		<div class="hidden sm:flex sm:flex-wrap " v-if="question.optionLabels">
+			<div class="w-1/4">&nbsp;</div>
+			<div class="flex-1 flex mb-4">
+				<div class="text-center text-sm" :class="'w-1/'+question.optionLabels.length" v-for="option in question.optionLabels">
+					{{ option }}
+				</div>
+			</div>
+		</div>
 		<template v-for="(options, optKey) in question.options">
-			<transition name="slide-fade">
-			<div class="" v-if="optKey == showOption" :key="'q'+optKey">
+			<transition name="fade">
+			<div class="" v-if="optKey == showOption || allAtOnce" :key="'q'+optKey">
 				<question-button :question="question" :the-options="options.options" :label="options.label" :qname="options.name" v-on:selectOption="optionSelected" :showDetails="showDetails" :answer="answer"></question-button>				
 			</div>
 			</transition>
 		</template>
-		<div class="flex items-center justify-center">
+		<div class="flex items-center justify-center" v-if="!allAtOnce">
 			<div class="w-3 h-3 mx-1 rounded-full bg-ntt-data-blue-light cursor-pointer" v-for="(options, optKey) in question.options" :class="{'bg-ntt-data-yellow': showOption == optKey}" @click="goToOption(optKey, options.name)"></div>
 		</div>
 	</div>
@@ -21,6 +29,7 @@ export default{
 	data: function() {
 		return {
 			showOption: 0,
+			allAtOnce: true,
 		};
 	},
 	computed: {

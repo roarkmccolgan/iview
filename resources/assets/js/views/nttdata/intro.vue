@@ -18,7 +18,7 @@
 		<div class="container mx-auto">
 			<div class="flex flex-wrap justify-center">
 				<div class="w-full sm:w-1/2 relative">
-					<img class="max-w-full" :src="'/images/tools/' + assessment.tool.id + '/891021854.jpg'" alt="">
+					<img class="max-w-full" :src="'/images/tools/' + assessment.tool.id + '/nttdata-intro-image.jpg'" alt="">
 					<div class="absolute pin sm:hidden flex flex-col items-center justify-center">
 						<router-link class="bg-ntt-data-yellow text-black hover:bg-white shadow-lg py-4 px-6 no-underline" :to="'/questions/1'">{{ $t('nttdatadx.startbut') }} <font-awesome-icon class="ml-2" :icon="icons.faArrowRight" /></router-link>
 					</div>

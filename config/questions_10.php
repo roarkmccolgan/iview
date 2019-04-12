@@ -1,5 +1,5 @@
 <?php
-// Trend
+// NTTDATADX
 return [
     'dx-adoption' => [
         'title' => 'DX Adoption',
@@ -10,6 +10,7 @@ return [
             'customer.png',
             'cocreate.png',
         ],
+        'background' => false,
         'intermission' => false,
         'class' => 'sec2',
         'shuffle' => false,
@@ -23,6 +24,14 @@ return [
                         'type'=>'groupbutton',
                         'calc'=>[
                             'type'=>'average'
+                        ],
+                        'optionLabels' => [
+                            'Transformation not yet begun',
+                            'Early stages of transformation',
+                            'Half way through the transformation process',
+                            'Advanced stages of transformation',
+                            'Transformation is complete',
+                            'Not applicable',
                         ],
                         'question'=>'On a scale of 1 to 5, how transformed are the following areas, in your organization?',
                         'name'=> 1,
@@ -354,6 +363,14 @@ return [
                         'calc'=>[
                             'type'=>'average'
                         ],
+                        'optionLabels' => [
+                            'None',
+                            '0-9%',
+                            '10-19%',
+                            '20-29%',
+                            '30-39%',
+                            '40% and above',
+                        ],
                         'question'=>'Which of the bands below best represent the proportion of your IT budget spend on the following areas?',
                         'name'=> 3,
                         'options'=>[
@@ -440,6 +457,14 @@ return [
                         'type'=>'groupbutton',
                         'calc'=>[
                             'type'=>'average'
+                        ],
+                        'optionLabels' => [
+                            'Decrease by more than 10%',
+                            'Decrease by 1-10%',
+                            'Stay the same',
+                            'Increase by 1-10%',
+                            'Increase by more than 10%',
+                            'Not applicable',
                         ],
                         'question'=>'Will you spend more, less, or the same in 2018 than in the previous year for the following areas?',
                         'name'=> 4,
@@ -720,6 +745,13 @@ return [
                         'type'=>'groupbutton',
                         'calc'=>[
                             'type'=>'average'
+                        ],
+                        'optionLabels' => [
+                            'Not considered yet',
+                            'Researching/Under consideration',
+                            'Pilot/ Proof of Concept',
+                            'In production in business units or departments',
+                            'In production enterprise wide',
                         ],
                         'question'=>'At what stage is your organization today in the deployment of each of the following digital technologies or initiatives to transform your business in response to the changing customer and market needs?   ',
                         'name'=> 7,
@@ -1098,6 +1130,11 @@ return [
                         'type'=>'groupbutton',
                         'calc'=>[
                             'type'=>'average'
+                        ],
+                        'optionLabels' => [
+                            'We do not have this in place currently',
+                            'We have this in place to a limited degree',
+                            'We employ this extensively in our organization',
                         ],
                         'question'=>'In delivering a connected financial services business, to what extent have you implemented each of the following to assess risk and ensure the right levels of security? ',
                         'name'=> 9,

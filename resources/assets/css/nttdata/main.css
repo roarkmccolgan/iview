@@ -4,16 +4,11 @@
 .vue-slider-tooltip-wrap{
 	top: -20px !important;
 }
+
 .fade-enter-active, .fade-leave-active {
-  transition-property: opacity;
-  transition-duration: .4s;
+  transition: opacity .5s;
 }
-
-.fade-enter-active {
-  /*transition-delay: .4s;*/
-}
-
-.fade-enter, .fade-leave-active {
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
 }
 
@@ -28,7 +23,7 @@
 .slide-fade-enter, .slide-fade-leave-to
 /* .slide-fade-leave-active below version 2.1.8 */ {
   transform: translateX(10px);
-  opacity: 0;
+  opacity: 1;
 }
 
 .pb {

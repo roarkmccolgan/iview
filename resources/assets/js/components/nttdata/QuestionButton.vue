@@ -1,22 +1,18 @@
 <template>
-	<div class="mb-8 bg-ntt-data-blue-fade rounded p-4">
-		<h2 v-show="label" :key="'head'" class="mb-2 font-light text-xl sm:text-2xl leading-tight text-ntt-data-blue-lighter">{{label}}</h2>
+	<div class="mb-2 rounded p-2" :class="[question.optionLabels ? gridClass : 'bg-ntt-data-blue-fade']">
+		<h2 v-show="label" :key="'head'" class="mb-2 font-light text-xl leading-tight text-ntt-data-blue-lighter " :class="[question.optionLabels ? 'sm:w-1/4 sm:text-base' : 'sm:text-2xl']">{{label}}</h2>
 		<transition-group
-			name="staggered-slide"
+			name="fade"
 			appear
-			v-bind:css="false"
-			v-on:before-enter="beforeEnter"
-			v-on:enter="enter"
-			v-on:leave="leave"
 			tag="div"
+			class="flex:none sm:flex sm:flex-row"
+			:class="[question.optionLabels ? 'sm:flex-1' : 'sm:flex-col']"
 		>
-		
-
-		<div v-for="(option, optKey) in options" :key="optKey" :data-index="optKey">
-			<label class="mb-1 font-light px-4 py-4 rounded" :class="inAnswer(option.label) ? activeClass : normalClass" tabindex="0" @keyup.space="$event.target.click()">
+		<div v-for="(option, optKey) in options" :key="optKey" :data-index="optKey" :class="[question.optionLabels ? 'sm:flex-1 sm:text-center' : '']">
+			<label class="mb-1 font-light rounded" :class="[inAnswer(option.label) ? activeClass : normalClass, question.optionLabels ? 'sm:inline-block p-2' : 'p-4']" tabindex="0" @keyup.space="$event.target.click()">
 				<input class="hidden" :type="multiple === false ? 'radio':'checkbox'" :name="multiple === false ? qname:qname+'[]'" :value="option.value" @change="selectOption(option.label, option.value, qname, $event.target.checked, option.type)">
-				<div class="flex items-center leading-none">
-					<div class="mr-2 text-2xl sm:text-xl">
+				<div class="flex items-center leading-none" :class="[question.optionLabels ? 'sm:flex-none' : '']">
+					<div class="text-2xl sm:text-xl mr-2" :class="[question.optionLabels ? 'sm:mr-0' : '']">
 						<template v-if="multiple === false">
 							<font-awesome-icon :icon="icons.faCircle" v-if="!inAnswer(option.label)" /> 
 							<font-awesome-icon :icon="icons.faDotCircle" v-else />
@@ -27,7 +23,7 @@
 						</template>
 							
 					</div>
-					<div class="flex-grow">
+					<div class="flex-grow" :class="[question.optionLabels ? 'sm:hidden' : '']">
 						<template v-if="showOther && option.type == 'other'">
 							<input :placeholder="question.other.label" v-model="option.value" type="text" class="shadow appearance-none border rounded py-2 px-3 text-grey w-1/2" @input="selectOption(option.label, option.value, qname, true, 'other')">
 						</template>
@@ -58,9 +54,13 @@ export default{
 				faSquare: faSquare,
 				faCheckSquare: faCheckSquare,
 			},
+			gridClass: {
+				'sm:flex': true,
+				'sm:border-b border-ntt-data-blue-fade': true,
+			},
 			normalClass: {
 				'block': true,
-				'text-white': true,
+				'text-grey-lighter': true,
 				//'bg-ntt-data-blue-light': true,
 				'hover:bg-ntt-data-blue-fade': true,
 				'cursor-pointer': true,

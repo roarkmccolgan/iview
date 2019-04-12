@@ -1272,14 +1272,12 @@ trait GenerateReportTrait
                     'Argentina',
                     'Brazil',
                     'Chile',
-                    'Columbia'
+                    'Colombia'
                 ]
             ]);
+
             $isFromBaselineRegion = $countries->search(function($item, $key){
-                if(collect($item)->search(session('user.country'))){
-                    return $key;
-                }
-                return false;
+                return collect($item)->contains(session('user.country'));
             });
             
 

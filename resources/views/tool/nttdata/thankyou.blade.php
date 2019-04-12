@@ -41,7 +41,7 @@
 	<div class="container mx-auto mt-6 p-8">
 		<div class="flex flex-wrap justify-center">
 			<div class="w-full sm:w-1/2 relative">
-				<img class="max-w-full" src="/images/tools/10/891021854.jpg" alt="">
+				<img class="max-w-full" src="/images/tools/10/nttdata-intro-image.jpg" alt="">
 			</div>
 			<div class="w-full sm:w-1/2">
 				<div class="sm:ml-8">

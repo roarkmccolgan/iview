@@ -32,13 +32,13 @@ return array(
     'linkedinlink'=>'https://www.linkedin.com/shareArticle?mini=true&url=http%3A//bit.ly/2AwihN4&title=Symantec%20and%20IDC%20GDPR%20Assessment&summary=Is%20your%20business%20GDPR%20ready?&source=',
     'disclaimer-extra' => 'IDC\'s purpose in building this tool and making it generally available is to provide organizations a view of where they are positioned in their digital transformation journey and the steps they can take to advance further in their effort to transform their business in line with customer and market expectations',
 
-    'stage1' => 'DX Digiphobe',
+    'stage1' => 'DX Complacent',
     'stage2' => 'DX Conformist',
-    'stage3' => 'Leader',
+    'stage3' => 'DX Trailblazer',
 
-    'stage1-finish' => 'Based on your total responses, you rank as a <strong class="text-ntt-data-yellow">DX Digiphobe</strong>, which is the entry level in this assessment.',
+    'stage1-finish' => 'Based on your total responses, you rank as a <strong class="text-ntt-data-yellow">DX Complacent</strong>, which is the entry level in this assessment.',
     'stage2-finish' => 'Based on your total responses, you rank as a <strong class="text-ntt-data-yellow">DX Conformist</strong>, which is the middle level in this assessment.',
-    'stage3-finish' => 'Based on your total responses, you rank as a <strong class="text-ntt-data-yellow">Leader</strong>, which is the highest level in this assessment.',
+    'stage3-finish' => 'Based on your total responses, you rank as a <strong class="text-ntt-data-yellow">DX Trailblazer</strong>, which is the highest level in this assessment.',
     'complete' => 'Complete!',
     'finishtxt' => '
         <h2 class="font-light leading-tight mb-4">Thank you for completing the IDC Digital Transformation Capability Assessment.</h2>
@@ -102,11 +102,11 @@ return array(
     ],
     'introduction' => '
         <h2 class="text-blue-dark mb-6">YOUR RESULTS</h2>
-        <p class="mb-6">Organizations can only reap the full benefits of digital transformation if it is truly embedded within their culture, processes and technology. IDC has created the Financial Services Digital Transformation Capability Assessment Tool to help FSIs assess their readiness for their digital future. It scores FSIs on their approach to becoming digital by looking at three core elements - how far advanced you are along the DX journey, how successful your DX initiatives have been, and the steps you have taken to becoming a Connected FSI. Based on a global survey of 1,050 FSI intitutions across banking, insurance and capital markets among other, we class organizations into three levels of Digital Transformation capability: DX Digiphobes, DX Conformists and DX Trailblazers.
+        <p class="mb-6">Organizations can only reap the full benefits of digital transformation if it is truly embedded within their culture, processes and technology. IDC has created the Financial Services Digital Transformation Capability Assessment Tool to help FSIs assess their readiness for their digital future. It scores FSIs on their approach to becoming digital by looking at three core elements - how far advanced you are along the DX journey, how successful your DX initiatives have been, and the steps you have taken to becoming a Connected FSI. Based on a global survey of 1,050 FSI intitutions across banking, insurance and capital markets among other, we class organizations into three levels of Digital Transformation capability: DX Complacents, DX Conformists and DX Trailblazers.
         </p>
     ',
     'overallstage1'=>'
-        <h2 class="leading-tight text-blue-dark mb-2 mt-6">OVERALL PERFORMANCE: Stage 1 - DX Digiphobe</h2>
+        <h2 class="leading-tight text-blue-dark mb-2 mt-6">OVERALL PERFORMANCE: Stage 1 - DX Complacent</h2>
         <div class="w-full mb-8">
             <div class="block relative" style="width: 172mm; height: 81.35mm; background: :img no-repeat center center;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
                 <div class="absolute border-2 border-purple border-dashed" style=":vertical_style background-color: rgba(104,33,95,0.2)"></div>
@@ -142,7 +142,7 @@ return array(
         <p class="mb-2">Your results indicate that you are at the top of the pile when it comes to DX in financial services. While this is great, there may be some areas for you to pay attention to stay ahead in the game. This report will give you advice on areas to focus on, so let\'s turn to the next page and dig into what you can do.</p>
     ',
     'overallblankstage1'=>'
-        <h2 class="leading-tight text-blue-dark mb-2 mt-6">OVERALL PERFORMANCE: Stage 1 - DX Digiphobe</h2>
+        <h2 class="leading-tight text-blue-dark mb-2 mt-6">OVERALL PERFORMANCE: Stage 1 - DX Complacent</h2>
         <p class="mb-2">This result might hurt a bit, but based on your responses to IDC\'s Financial Services DX Capability Assessment Tool, your organization has been rated at the earliest level of DX capability - Digital Transformation Digphobe. This means you are struggling with moving to a Digital Future compared to the rest of the industry and there is much to do to be where you need to be. While it may seem an unattainable goal at this point, you must look to incremental improvements and seek outside assistance where possible to to accelerate your move to a digital future.</p>
         <p class="mb-2">Your results indicate that there is plenty to do to get on the level with DX. This report will give you advice on areas to give priority to as you look to progress to the next stage of DX capability, so let\'s turn to the next page and dig into what you can do.</p>
     ',
@@ -158,24 +158,24 @@ return array(
     ',
     'dx-adoptionstage1stage1'=>'
         <h3 class="leading-tight text-blue-dark mb-4 mt-6">DX ADOPTION PERFORMANCE</h3>
-        <!--span class="block mb-2 font-bold text-grey-dark text-lg">Stage 1 - DX Digiphobe</span-->
+        <!--span class="block mb-2 font-bold text-grey-dark text-lg">Stage 1 - DX Complacent</span-->
         <p class="mb-2">This section of the report assesses the stage of your organization\'s DX journey based on your attitude to investing in digital technologies, how advanced you are in transforming your digital channels and business\'s perception of IT\'s role in DX.</p>
         <p class="mb-2">
-            Your overall score for this section indicates that you are in line with your DX Digiphobe peers with respect to the progress you have made so far. You have a long way to go so you must take steps to accelerate the journey now. You could look in to individual assessment areas within this section to understand what changes you could potentially make to your overall approach and DX strategy.
+            Your overall score for this section indicates that you are in line with your DX Complacent peers with respect to the progress you have made so far. You have a long way to go so you must take steps to accelerate the journey now. You could look in to individual assessment areas within this section to understand what changes you could potentially make to your overall approach and DX strategy.
         </p>
     ',
     'dx-adoptionstage1stage2'=>'
         <h3 class="leading-tight text-blue-dark mb-4 mt-6">DX ADOPTION PERFORMANCE</h3>
         <p class="mb-2">This section of the report assesses the stage of your organization\'s DX journey based on your attitude to investing in digital technologies, how advanced you are in transforming your digital channels and business\'s perception of IT\'s role in DX.</p>
         <p class="mb-2">
-            Your overall score for this section indicates that you are ahead of your DX Digiphobe peers with respect to the progress you have made so far. Very well done! While keeping up with this, you must also look at aspects related to DX success and connected financial services to improve your overall DX capabilities.
+            Your overall score for this section indicates that you are ahead of your DX Complacent peers with respect to the progress you have made so far. Very well done! While keeping up with this, you must also look at aspects related to DX success and connected financial services to improve your overall DX capabilities.
         </p>
     ',
     'dx-adoptionstage1stage3'=>'
         <h3 class="leading-tight text-blue-dark mb-4 mt-6">DX ADOPTION PERFORMANCE</h3>
         <p class="mb-2">This section of the report assesses the stage of your organization\'s DX journey based on your attitude to investing in digital technologies, how advanced you are in transforming your digital channels and business\'s perception of IT\'s role in DX.</p>
         <p class="mb-2">
-            Your overall score for this section indicates that you are ahead of your DX Digiphobe peers with respect to the progress you have made so far. Very well done! While keeping up with this, you must also look at aspects related to DX success and connected financial services to improve your overall DX capabilities.
+            Your overall score for this section indicates that you are ahead of your DX Complacent peers with respect to the progress you have made so far. Very well done! While keeping up with this, you must also look at aspects related to DX success and connected financial services to improve your overall DX capabilities.
         </p>
     ',
     'dx-adoptionstage2stage1'=>'
@@ -228,17 +228,17 @@ return array(
     ',
     'dx-adoptionq1stage1a'=>'
         <p class="mb-2">
-            Based on your response, you are either exploring your options or have just started transforming some of the digital channels to improve customer engagement and attract new revenues. This is in line with most of your DX Digiphobe peers. To advance in the DX journey, you need to consider a proactive approace to transform all your current points of engagement with the customer and invest in new channels to improve outreach.  
+            Based on your response, you are either exploring your options or have just started transforming some of the digital channels to improve customer engagement and attract new revenues. This is in line with most of your DX Complacent peers. To advance in the DX journey, you need to consider a proactive approace to transform all your current points of engagement with the customer and invest in new channels to improve outreach.  
         </p>
     ',
     'dx-adoptionq1stage1b'=>'
         <p class="mb-2">
-            Based on your response, you are in the process of transforming your digital channels to improve customer engagement and attract new revenues. This means that you are ahead of your DX Digiphobe peers in transforming engagement. You are heading in the right direction but to advance in the DX journey, you need to consider transforming all your current points of engagement with the customer and invest in new channels to improve outreach.  
+            Based on your response, you are in the process of transforming your digital channels to improve customer engagement and attract new revenues. This means that you are ahead of your DX Complacent peers in transforming engagement. You are heading in the right direction but to advance in the DX journey, you need to consider transforming all your current points of engagement with the customer and invest in new channels to improve outreach.  
         </p>
     ',
     'dx-adoptionq1stage1c'=>'
         <p class="mb-2">
-            Based on your response, you have transformed most of your digital channels to improve customer engagement and attract new revenues. This means that you are well ahead of your DX Digiphobe peers in transforming engagement. Well done! You should now focus your efforts on other areas to improve your overall Digital Transformation DX capability.
+            Based on your response, you have transformed most of your digital channels to improve customer engagement and attract new revenues. This means that you are well ahead of your DX Complacent peers in transforming engagement. Well done! You should now focus your efforts on other areas to improve your overall Digital Transformation DX capability.
         </p>
     ',
     
@@ -284,17 +284,17 @@ return array(
     ',
     'dx-adoptionq2stage1a'=>'
         <p class="mb-2">
-            Your company views IT as a cost center needing to be curtailed rather than a platform for new services and competitive advantage, which is a common point of view for DX Digiphobes. For you to make progress in your digital journey, your IT department will need to engage well with the business and demonstrate the value it can bring forth. A shift in perception would need IT to demonstrate how the investments in digital technologies are contributing to the larger transformation objectives.
+            Your company views IT as a cost center needing to be curtailed rather than a platform for new services and competitive advantage, which is a common point of view for DX Complacents. For you to make progress in your digital journey, your IT department will need to engage well with the business and demonstrate the value it can bring forth. A shift in perception would need IT to demonstrate how the investments in digital technologies are contributing to the larger transformation objectives.
         </p>
     ',
     'dx-adoptionq2stage1b'=>'
         <p class="mb-2">
-            Your company views IT as a driver of efficiency rather than a cost to be cut. This is good and you are more advanced in this than others in your DX digiphobe peer group - but the ideal is to see IT as a platform for new services and a driver of competitive advantage. A shift in perception would need IT to demonstrate how the investments in digital technologies are contributing to the larger transformation objectives. 
+            Your company views IT as a driver of efficiency rather than a cost to be cut. This is good and you are more advanced in this than others in your DX Complacent peer group - but the ideal is to see IT as a platform for new services and a driver of competitive advantage. A shift in perception would need IT to demonstrate how the investments in digital technologies are contributing to the larger transformation objectives. 
         </p>
     ',
     'dx-adoptionq2stage1c'=>'
         <p class="mb-2">
-            You are way ahead of other DX Digiphobe peers here as your company is already up there. You should focus your efforts on other areas to improve your overall DX capability.
+            You are way ahead of other DX Complacent peers here as your company is already up there. You should focus your efforts on other areas to improve your overall DX capability.
         </p>
     ',
 
@@ -340,32 +340,32 @@ return array(
     ',
     'dx-adoptionq3stage1a'=>'
         <p class="mb-2">
-            Your investment bands indicate that you are in line with most of your DX Digiphobe peers as far as your IT services investments are concerned. To advance in your DX journey, you need to balance your IT investments well with your investments in DX services.
+            Your investment bands indicate that you are in line with most of your DX Complacent peers as far as your IT services investments are concerned. To advance in your DX journey, you need to balance your IT investments well with your investments in DX services.
         </p>
     ',
     'dx-adoptionq3stage1b'=>'
         <p class="mb-2">
-            Your investment bands indicate that you are ahead of your DX Digiphobe peers as far as your IT services investments are concerned. You are in a good position as this is an important criteria for DX progress. 
+            Your investment bands indicate that you are ahead of your DX Complacent peers as far as your IT services investments are concerned. You are in a good position as this is an important criteria for DX progress. 
         </p>
     ',
     'dx-adoptionq3stage1c'=>'
         <p class="mb-2">
-            Your investment bands indicate that you are well ahead of your DX Digiphobe peers as far as your IT services investments are concerned. You are in great position as this is an important criteria for DX progress. 
+            Your investment bands indicate that you are well ahead of your DX Complacent peers as far as your IT services investments are concerned. You are in great position as this is an important criteria for DX progress. 
         </p>
     ',
     'dx-adoptionq3stage1d'=>'
         <p class="mb-2">
-            Your investment bands indicate that you are in line with most of your DX Digiphobe peers as far as your DX services investments are concerned. To advance in your DX journey, you need to consider increasing your investments in initiatives that employ digital technologies to transform business.
+            Your investment bands indicate that you are in line with most of your DX Complacent peers as far as your DX services investments are concerned. To advance in your DX journey, you need to consider increasing your investments in initiatives that employ digital technologies to transform business.
         </p>
     ',
     'dx-adoptionq3stage1e'=>'
         <p class="mb-2">
-            Your investment bands indicate that you are ahead of your DX Digiphobe peers as far as your DX services investments are concerned. You are in a good position as this is an important criteria for DX progress.
+            Your investment bands indicate that you are ahead of your DX Complacent peers as far as your DX services investments are concerned. You are in a good position as this is an important criteria for DX progress.
         </p>
     ',
     'dx-adoptionq3stage1f'=>'
         <p class="mb-2">
-            Your investment bands indicate that you are well ahead of your DX Digiphobe peers with respect to your investments in DX services. You are in great position as this is an important criteria for DX progress. Keep it up!
+            Your investment bands indicate that you are well ahead of your DX Complacent peers with respect to your investments in DX services. You are in great position as this is an important criteria for DX progress. Keep it up!
         </p>
     ',
 
@@ -441,17 +441,17 @@ return array(
     ',
     'dx-adoptionq4stage1a'=>'
         <p class="mb-2">
-            Your investment bands indicate that you are in line with most of your DX Digiphobe peers with respect to your investments in traditional IT and Business Consulting and Outsourcing services. You must revisit your traditional IT outsourcing priorities and explore opportunities to allocate budget for cognitive enabled automation and other digital initiatives to move ahead in your DX journey.
+            Your investment bands indicate that you are in line with most of your DX Complacent peers with respect to your investments in traditional IT and Business Consulting and Outsourcing services. You must revisit your traditional IT outsourcing priorities and explore opportunities to allocate budget for cognitive enabled automation and other digital initiatives to move ahead in your DX journey.
         </p>
     ',
     'dx-adoptionq4stage1b'=>'
         <p class="mb-2">
-            Your investment bands indicate that you are ahead of your DX Digiphobe peers with respect to your investments in traditional IT and Business Consulting and Outsourcing services. You must revisit your traditional IT outsourcing priorities and continue to explore opportunities to allocate budget for cognitive enabled automation and other digital initiatives to move ahead in your DX journey.
+            Your investment bands indicate that you are ahead of your DX Complacent peers with respect to your investments in traditional IT and Business Consulting and Outsourcing services. You must revisit your traditional IT outsourcing priorities and continue to explore opportunities to allocate budget for cognitive enabled automation and other digital initiatives to move ahead in your DX journey.
         </p>
     ',
     'dx-adoptionq4stage1c'=>'
         <p class="mb-2">
-            Your investment bands indicate that you are well ahead of your DX Digiphobe peers with respect to your investments in traditional IT and Business Consulting and Outsourcing services. You appear to be doing the right things in terms of your investment priorities.
+            Your investment bands indicate that you are well ahead of your DX Complacent peers with respect to your investments in traditional IT and Business Consulting and Outsourcing services. You appear to be doing the right things in terms of your investment priorities.
         </p>
     ',
     
@@ -490,21 +490,21 @@ return array(
         <h3 class="leading-tight text-blue-dark mb-4 mt-6">SUCCESS IN DX</h3>
         <p class="mb-2">This section analyzes how successful you are in your digital initiatives by looking at your approach to DX, the way you measure success in DX as well as your specific digital technology investment priorities.</p>
         <p class="mb-2">
-            Overall, you have scored like your DX Digiphobe peers in this section that asseses your DX success. You need to work hard to move to the next level by considering your approach to DX and which digital technology investments will give you the much needed boost to succeed in your transformation effort. 
+            Overall, you have scored like your DX Complacent peers in this section that asseses your DX success. You need to work hard to move to the next level by considering your approach to DX and which digital technology investments will give you the much needed boost to succeed in your transformation effort. 
         </p>
     ',
     'success-in-dxstage1stage2'=>'
         <h3 class="leading-tight text-blue-dark mb-4 mt-6">SUCCESS IN DX</h3>
         <p class="mb-2">This section analyzes how successful you are in your digital initiatives by looking at your approach to DX, the way you measure success in DX as well as your specific digital technology investment priorities.</p>
         <p class="mb-2">
-            Overall, you have done better than your DX Digiphobe peers in this section that asseses your DX success. This is good news as your current approach to DX and your investment priorities are helping you succeed in your DX initiatives to an extend. You must now look at capability areas that require more attention such as enabling a connected financial services business to improve customer trust and loyalty.
+            Overall, you have done better than your DX Complacent peers in this section that asseses your DX success. This is good news as your current approach to DX and your investment priorities are helping you succeed in your DX initiatives to an extend. You must now look at capability areas that require more attention such as enabling a connected financial services business to improve customer trust and loyalty.
         </p>
     ',
     'success-in-dxstage1stage3'=>'
         <h3 class="leading-tight text-blue-dark mb-4 mt-6">SUCCESS IN DX</h3>
         <p class="mb-2">This section analyzes how successful you are in your digital initiatives by looking at your approach to DX, the way you measure success in DX as well as your specific digital technology investment priorities.</p>
         <p class="mb-2">
-            Overall, you have done much better than your DX Digiphobe peers in this section that asseses your DX success. This is very good news indeed. You must now look at capability areas that require more attention such as enabling a connected financial services business to improve customer trust and loyalty.
+            Overall, you have done much better than your DX Complacent peers in this section that asseses your DX success. This is very good news indeed. You must now look at capability areas that require more attention such as enabling a connected financial services business to improve customer trust and loyalty.
         </p>
     ',
     'success-in-dxstage2stage1'=>'
@@ -560,27 +560,27 @@ return array(
     ',
     'success-in-dxq5stage1a'=>'
         <p class="mb-2">
-            In your company, all or almost all DX projects are invidiual business unit driven which is a common characteristic for DX Digiphobes. For you to succeed in your digital journey, your senior leadership should seriously consider following an integrated enterprise wide strategy. They should develop and implement a plan to integrate DX initiatives and programs into the existing culture.
+            In your company, all or almost all DX projects are invidiual business unit driven which is a common characteristic for DX Complacents. For you to succeed in your digital journey, your senior leadership should seriously consider following an integrated enterprise wide strategy. They should develop and implement a plan to integrate DX initiatives and programs into the existing culture.
         </p>
     ',
     'success-in-dxq5stage1b'=>'
         <p class="mb-2">
-            In your company, DX projects are mainly invidiual business unit driven with some strategic enterprise wide initiaitves which is a common characteristic for many DX Digiphobes. For you to succeed in your digital journey, your senior leadership should seriously consider following an integrated enterprise wide strategy. 
+            In your company, DX projects are mainly invidiual business unit driven with some strategic enterprise wide initiaitves which is a common characteristic for many DX Complacents. For you to succeed in your digital journey, your senior leadership should seriously consider following an integrated enterprise wide strategy. 
         </p>
     ',
     'success-in-dxq5stage1c'=>'
         <p class="mb-2">
-            In your company, there is a balance of individual business unit DX initiatives and strategic enterprise wide initiatives which means you are ahead of your peers in the DX Digiphobes category when it comes to your approach to succeed in DX initiatives. You will benefit further from adopting a holistic integrated strategy and this will help you accelerate your efforts to achieve DX success.
+            In your company, there is a balance of individual business unit DX initiatives and strategic enterprise wide initiatives which means you are ahead of your peers in the DX Complacents category when it comes to your approach to succeed in DX initiatives. You will benefit further from adopting a holistic integrated strategy and this will help you accelerate your efforts to achieve DX success.
         </p>
     ',
     'success-in-dxq5stage1d'=>'
         <p class="mb-2">
-            In your company, all or almost all DX initiatives are part of a strategic enterprise wide approach with some individual business unit DX intiaitives. You are way ahead of your other DX Digiphobe peers. You should focus your efforts on other areas now to improve your efforts to achieve DX success.
+            In your company, all or almost all DX initiatives are part of a strategic enterprise wide approach with some individual business unit DX intiaitives. You are way ahead of your other DX Complacent peers. You should focus your efforts on other areas now to improve your efforts to achieve DX success.
         </p>
     ',
     'success-in-dxq5stage1e'=>'
         <p class="mb-2">
-            In your company, all or almost all DX initiatives are part of a strategic enterprise wide approach. You are way ahead of your other DX Digiphobe peers. You should focus your efforts on other areas now to improve your efforts to achieve DX success.
+            In your company, all or almost all DX initiatives are part of a strategic enterprise wide approach. You are way ahead of your other DX Complacent peers. You should focus your efforts on other areas now to improve your efforts to achieve DX success.
         </p>
     ',
     'success-in-dxq5stage2a'=>'
@@ -654,12 +654,12 @@ return array(
     ',
     'success-in-dxq6stage1c'=>'
         <p class="mb-2">
-            Based on your response, you are in the right direction in terms of measuring the success of your digital initiatives compared to your peers in the Digiphobe category. You can refine your KPIs or consider new KPIs as you move forward to provide you direction and focus for future investments.
+            Based on your response, you are in the right direction in terms of measuring the success of your digital initiatives compared to your peers in the Complacent category. You can refine your KPIs or consider new KPIs as you move forward to provide you direction and focus for future investments.
         </p>
     ',
     'success-in-dxq6stage1d'=>'
         <p class="mb-2">
-            Based on your response, you are in the right direction in terms of measuring the success of your digital initiatives compared to your peers in the Digiphobe category. Success in DX in the earlier stages will give you a lot of confidence in future projects and also enable funding from the sponsors as you demonstrate the value the intiaitives can bring to table to transform your business. 
+            Based on your response, you are in the right direction in terms of measuring the success of your digital initiatives compared to your peers in the Complacent category. Success in DX in the earlier stages will give you a lot of confidence in future projects and also enable funding from the sponsors as you demonstrate the value the intiaitives can bring to table to transform your business. 
         </p>
     ',
     'success-in-dxq6stage2a'=>'
@@ -713,17 +713,17 @@ return array(
     ',
     'success-in-dxq7stage1a'=>'
         <p class="mb-2">
-            Your investment bands indicate that you are in line with most of your DX Digiphobe peers with respect to your investments in these technologies. To be successful in your DX journey, you need to consider increasing your investments in these digital technologies which will positively impact your customer and partner relationships in future.
+            Your investment bands indicate that you are in line with most of your DX Complacent peers with respect to your investments in these technologies. To be successful in your DX journey, you need to consider increasing your investments in these digital technologies which will positively impact your customer and partner relationships in future.
         </p>
     ',
     'success-in-dxq7stage1b'=>'
         <p class="mb-2">
-            Your investment bands indicate that you are ahead of your DX Digiphobe peers with respect to your investments in DX services and IT services. You are in a good position as far as this important criteria for DX success is concerned so keep it up!
+            Your investment bands indicate that you are ahead of your DX Complacent peers with respect to your investments in DX services and IT services. You are in a good position as far as this important criteria for DX success is concerned so keep it up!
         </p>
     ',
     'success-in-dxq7stage1c'=>'
         <p class="mb-2">
-            Your investment bands indicate that you are well ahead of your DX Digiphobe peers with respect to your investments in DX services and IT services. You are in an excellent position as far as this important criteria for DX success is concerned so keep it up!
+            Your investment bands indicate that you are well ahead of your DX Complacent peers with respect to your investments in DX services and IT services. You are in an excellent position as far as this important criteria for DX success is concerned so keep it up!
         </p>
     ',
     'success-in-dxq7stage2a'=>'
@@ -761,21 +761,21 @@ return array(
         <h3 class="leading-tight text-blue-dark mb-4 mt-6">CONNECTED FINANCIAL SERVICES</h3>
         <p class="mb-2">Connected financial services bring together businesses and products with the help of a digital platform where diverse stakeholders (both internal and external) collaborate to deliver value-oriented and personalized offerings to customers through a partnership network approach. In this section, we look in to the progress you made in establishing a connected financial services business and your overall approach to risk management while doing so as this is vital to build loyalty and trust among your customers and partners.</p>
         <p class="mb-2">
-            Your cumulative score in this section shows that you are in line with your DX Digiphobe peers in this area. To better meet the needs of customers in the digital world, it is important for you to rethink the way you engage with customers and partners and how establishing connected financial services models can help you in that.
+            Your cumulative score in this section shows that you are in line with your DX Complacent peers in this area. To better meet the needs of customers in the digital world, it is important for you to rethink the way you engage with customers and partners and how establishing connected financial services models can help you in that.
         </p>
     ',
     'connected-financial-servicesstage1stage2'=>'
         <h3 class="leading-tight text-blue-dark mb-4 mt-6">CONNECTED FINANCIAL SERVICES</h3>
         <p class="mb-2">Connected financial services bring together businesses and products with the help of a digital platform where diverse stakeholders (both internal and external) collaborate to deliver value-oriented and personalized offerings to customers through a partnership network approach. In this section, we look in to the progress you made in establishing a connected financial services business and your overall approach to risk management while doing so as this is vital to build loyalty and trust among your customers and partners.</p>
         <p class="mb-2">
-            Your cumulative score in this section shows that you are much ahead of your DX Digiphobe peers in this area. Well done on your forward looking approach to establish a connected financial services business to align with customer and market needs. You must now look at other aspects that will help you advance in your DX journey and also measure and manage DX success.
+            Your cumulative score in this section shows that you are much ahead of your DX Complacent peers in this area. Well done on your forward looking approach to establish a connected financial services business to align with customer and market needs. You must now look at other aspects that will help you advance in your DX journey and also measure and manage DX success.
         </p>
     ',
     'connected-financial-servicesstage1stage3'=>'
         <h3 class="leading-tight text-blue-dark mb-4 mt-6">CONNECTED FINANCIAL SERVICES</h3>
         <p class="mb-2">Connected financial services bring together businesses and products with the help of a digital platform where diverse stakeholders (both internal and external) collaborate to deliver value-oriented and personalized offerings to customers through a partnership network approach. In this section, we look in to the progress you made in establishing a connected financial services business and your overall approach to risk management while doing so as this is vital to build loyalty and trust among your customers and partners.</p>
         <p class="mb-2">
-            Your cumulative score in this section shows that you are much ahead of your DX Digiphobe peers in this area. Very well done on your forward looking approach to establish a connected financial services business to align with customer and market needs. You must now look at other aspects that will help you advance in your DX journey and also measure and manage DX success.
+            Your cumulative score in this section shows that you are much ahead of your DX Complacent peers in this area. Very well done on your forward looking approach to establish a connected financial services business to align with customer and market needs. You must now look at other aspects that will help you advance in your DX journey and also measure and manage DX success.
         </p>
     ',
     'connected-financial-servicesstage2stage1'=>'
@@ -831,27 +831,27 @@ return array(
     ',
     'connected-financial-servicesq8stage1a'=>'
         <p class="mb-2">
-            Based on your response, you are in line with most of your peers in the Digiphobe category with respect to your position in delivering connected financial services. You need to start considering/exploring the delivery of a connected financial services business in order to  meet the ever-evolving expectations of your customers and partners in the digital world.
+            Based on your response, you are in line with most of your peers in the Complacent category with respect to your position in delivering connected financial services. You need to start considering/exploring the delivery of a connected financial services business in order to  meet the ever-evolving expectations of your customers and partners in the digital world.
         </p>
     ',
     'connected-financial-servicesq8stage1b'=>'
         <p class="mb-2">
-            Based on your response, you are in line with some of your peers in the Digiphobe category with respect to your position in delivering connected financial services.You need to start kicking off projects to deliver a connected financial services business in order to  meet the ever-evolving expectations of your customers and partners in the digital world.
+            Based on your response, you are in line with some of your peers in the Complacent category with respect to your position in delivering connected financial services.You need to start kicking off projects to deliver a connected financial services business in order to  meet the ever-evolving expectations of your customers and partners in the digital world.
         </p>
     ',
     'connected-financial-servicesq8stage1c'=>'
         <p class="mb-2">
-            Based on your response, you are in line with a few of your peers in the Digiphobe with respect to your position in delivering connected financial services.You need to progress further in your initial projects to deliver a connected financial services business to gain first mover advantage among your peers in this area.
+            Based on your response, you are in line with a few of your peers in the Complacent with respect to your position in delivering connected financial services.You need to progress further in your initial projects to deliver a connected financial services business to gain first mover advantage among your peers in this area.
         </p>
     ',
     'connected-financial-servicesq8stage1d'=>'
         <p class="mb-2">
-            Based on your response, you are ahead of your peers in the Digiphobe category with respect to your position in delivering connected financial services.You need to try and maker further progress in your projects to deliver a connected financial services business as this will help you accelerate your efforts to move to the higher stages of DX capability.
+            Based on your response, you are ahead of your peers in the Complacent category with respect to your position in delivering connected financial services.You need to try and maker further progress in your projects to deliver a connected financial services business as this will help you accelerate your efforts to move to the higher stages of DX capability.
         </p>
     ',
     'connected-financial-servicesq8stage1e'=>'
         <p class="mb-2">
-            Based on your response, you are well ahead of most of your peers in the Digiphobe category with respect to your position in delivering connected financial services.You should focus your efforts on other areas to improve your overall DX capability.
+            Based on your response, you are well ahead of most of your peers in the Complacent category with respect to your position in delivering connected financial services.You should focus your efforts on other areas to improve your overall DX capability.
         </p>
     ',
     'connected-financial-servicesq8stage2a'=>'
@@ -915,17 +915,17 @@ return array(
     ',
     'connected-financial-servicesq9stage1a'=>'
         <p class="mb-2">
-            By your own admission, you do not have any of these measures in place currently. This is in line with most of your DX Digiphobe peers. To build customer trust and loyalty in connected financial services, you need to start considering at least some of these measures in your strategy.
+            By your own admission, you do not have any of these measures in place currently. This is in line with most of your DX Complacent peers. To build customer trust and loyalty in connected financial services, you need to start considering at least some of these measures in your strategy.
         </p>
     ',
     'connected-financial-servicesq9stage1b'=>'
         <p class="mb-2">
-            Your score indicates that you have employed some of these measures currently. This means you are ahead of most of your DX Digiphobe peers. To build customer trust and loyalty in connected financial services, you need to try and explore most of these measures in your strategy in future.
+            Your score indicates that you have employed some of these measures currently. This means you are ahead of most of your DX Complacent peers. To build customer trust and loyalty in connected financial services, you need to try and explore most of these measures in your strategy in future.
         </p>
     ',
     'connected-financial-servicesq9stage1c'=>'
         <p class="mb-2">
-            Your score indicates that you have employed some of these measures currently. This means you are well ahead of your DX Digiphobe peers. Keep it up!
+            Your score indicates that you have employed some of these measures currently. This means you are well ahead of your DX Complacent peers. Keep it up!
         </p>
     ',
     'connected-financial-servicesq9stage2a'=>'
