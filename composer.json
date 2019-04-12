@@ -23,7 +23,7 @@
         "rfookune/lara-pdf-merger-php-7-2": "dev-master",
         "fideloper/proxy": "^3.3",
         "webpatser/laravel-uuid": "^2.0",
-        "goat1000/svggraph": "^2.26",
+        "goat1000/svggraph": "^3.0",
         "barryvdh/laravel-debugbar": "~2.4",
         "martinlindhe/laravel-vue-i18n-generator": "^0.1.28",
         "spatie/laravel-backup": "^3.0.0"

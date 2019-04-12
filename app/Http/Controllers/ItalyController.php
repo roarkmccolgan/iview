@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
 use App\Http\Requests;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class ItalyController extends Controller
 {
@@ -855,6 +855,11 @@ class ItalyController extends Controller
                     'q1r5' => 6,
                     'q1r6' => 1,
                     'q1r7' => 9,
+                    'q1r8' => 12,
+                    'q1r9' => 4,
+                    'q1r10' => 3,
+                    'q1r11' => 10,
+                    'q1r12' => 2,
                 ],
                 'qsizer2' => [
                     'q1r1' => 1,
@@ -864,6 +869,11 @@ class ItalyController extends Controller
                     'q1r5' => 6,
                     'q1r6' => 2,
                     'q1r7' => 9,
+                    'q1r8' => 11,
+                    'q1r9' => 4,
+                    'q1r10' => 5,
+                    'q1r11' => 12,
+                    'q1r12' => 3,
                 ],
                 'qsizer3' => [
                     'q1r1' => 2,
@@ -873,6 +883,11 @@ class ItalyController extends Controller
                     'q1r5' => 7,
                     'q1r6' => 1,
                     'q1r7' => 6,
+                    'q1r8' => 10,
+                    'q1r9' => 5,
+                    'q1r10' => 4,
+                    'q1r11' => 12,
+                    'q1r12' => 3,
                 ],
                 'qsizer4' => [
                     'q1r1' => 1,
@@ -882,6 +897,11 @@ class ItalyController extends Controller
                     'q1r5' => 3,
                     'q1r6' => 6,
                     'q1r7' => 4,
+                    'q1r8' => 12,
+                    'q1r9' => 9,
+                    'q1r10' => 2,
+                    'q1r11' => 9,
+                    'q1r12' => 4,
                 ],
             ],
             'q2' => [
@@ -1246,269 +1266,304 @@ class ItalyController extends Controller
             ]
         ];
 
-        $client = new \GuzzleHttp\Client([
-            'base_uri' => 'https://selfserve.decipherinc.com/api/v1/surveys/selfserve/',
-            'headers' => [
-                'x-apikey' => 'um2mzvqjs4zjhqn5e9xvp2a6bnybkyq6h01degmgn68qdwkqq4en77vwn0bnxv9v',
-            ]
-        ]);
-        try {
-            $answerRequest = $client->request('GET', '21eb/190309/data', [
-                'query' => [
-                    'format' => 'json',
-                    'cond' => 'uuid=="f9z3sduwbdxrbyx4"'
-                ]
-            ]);
+        // $client = new \GuzzleHttp\Client([
+        //     'base_uri' => 'https://selfserve.decipherinc.com/api/v1/surveys/selfserve/',
+        //     'headers' => [
+        //         'x-apikey' => 'um2mzvqjs4zjhqn5e9xvp2a6bnybkyq6h01degmgn68qdwkqq4en77vwn0bnxv9v',
+        //     ]
+        // ]);
+        // try {
+        //     $answerRequest = $client->request('GET', '21eb/190309/data', [
+        //         'query' => [
+        //             'format' => 'json',
+        //             'cond' => 'uuid=="f9z3sduwbdxrbyx4"'
+        //         ]
+        //     ]);
             
-            $questionRequest = $client->request('GET', '21eb/190309/datamap', [
-                'query' => [
-                    'format' => 'json',
-                ]
-            ]);
+        //     $questionRequest = $client->request('GET', '21eb/190309/datamap', [
+        //         'query' => [
+        //             'format' => 'json',
+        //         ]
+        //     ]);
+        // } catch (GuzzleHttp\Exception\RequestException $e) {
+        //     return $e->getMessage();
+        // }
+        // $questions = collect(json_decode($questionRequest->getBody(), true))->only('questions')->flatten(1)->filter(function($item){
+        //     return isset($item['variables']) && isset($item['qtitle']);
+        // })->pluck(['variables'])->flatten(1);
+        // 
 
-            $questions = collect(json_decode($questionRequest->getBody(), true))->only('questions')->flatten(1)->filter(function($item){
-                return isset($item['variables']) && isset($item['qtitle']);
-            })->pluck(['variables'])->flatten(1);
+        // $questions = collect($jsonQuestions)->only('questions')->flatten(1)->filter(function($item){
+        //     return isset($item['variables']) && isset($item['qtitle']);
+        // })->pluck(['variables'])->flatten(1);
 
-            $singleQuestions = $questions->mapWithKeys(function($item){
-                return [$item['label'] => $item['rowTitle']];
-            });
-            $singleQuestionsText = $questions->filter(function($item, $key){
-                return strpos($item['qlabel'], 's') === false;
-            })->mapWithKeys(function($item){
-                return [$item['label'] => $item['qtitle']];
-            });;
+        $questions = collect(json_decode(Storage::disk('local')->get('/italyFiles/questions.json'),true));
 
-            $answer = collect(json_decode($answerRequest->getBody(), true))->first();
+        $singleQuestions = $questions->mapWithKeys(function($item){
+            return [$item['label'] => $item['rowTitle']];
+        });
+        $singleQuestionsText = $questions->filter(function($item, $key){
+            return strpos($item['qlabel'], 's') === false;
+        })->mapWithKeys(function($item){
+            return [$item['label'] => $item['qtitle']];
+        });
 
-            $industry =  collect($answer)->only(array_keys($industryKeys))->filter()->keys()->first();
-            $size =  collect($answer)->only(array_keys($sizeKeys))->filter()->keys()->first();
+        //$answer = collect(json_decode($answerRequest->getBody(), true))->first();
+        
+        $answer =  collect(json_decode(Storage::disk('local')->get('/italyFiles/answer.json'), true));
 
-            //question1
-            $q1set = $industryReference['q1'][$industry];
-            $q1Answers = collect($answer)->only(array_keys($q1set))->filter();
-            $q1labels = collect($singleQuestions)->filter(function($item, $key) use($q1Answers){
-                return collect($q1Answers->keys())->contains($key);                
-            });
+        $industry =  collect($answer)->only(array_keys($industryKeys))->filter()->keys()->first();
 
-            $q1question = $singleQuestionsText->get($q1labels->keys()->first());
-            $q1header = "You selected {$q1Answers->count()} implementation areas in {$industryKeys[$industry]}: {$q1labels->implodeLast(', ',', and ')}<br/><br/>";
+        $size =  collect($answer)->only(array_keys($sizeKeys))->filter()->keys()->first();
 
-            $q1body = "";
-            $q1labels->each(function($item, $key) use(&$q1body, $industry, $industryKeys, $industryReference, $genericReference){
-                if($industryReference['q1'][$industry][$key]<4){
-                    $q1body .= "<strong>{$item}</strong> is among the Top 3 implementation areas and is ranked as <strong>{$industryReference['q1'][$industry][$key]}</strong>. This shows your investment choices align with most organisations in {$industryKeys[$industry]}, and a suitable area for investment in Big Data Solutions.<br/>";
-                }
-                if($industryReference['q1'][$industry][$key]>9){
-                    $q1body .= "<strong>{$item}</strong> is among the Bottom 3 implementation areas and is ranked as <strong>{$industryReference['q1'][$industry][$key]}</strong>. This suggests your investments differ from most organisations in {$industryKeys[$industry]}.<br/>";
-                }
-                if($industryReference['q1'][$industry][$key]<=9 && $industryReference['q1'][$industry][$key]>=4){
-                    $q1body .= "<strong>{$item}</strong> is in the middle set of implementation areas and is ranked as <strong>{$industryReference['q1'][$industry][$key]}</strong>. Your investment criteria for Big Data investment focuses slightly outside mainstream investment areas, but still picks up on those areas with interest from some Big Data users.<br/>";
-                }
-                $q1body .= $genericReference['q1'][$key]."<br/><br/>";
-            });
-            $question1 = $q1header.$q1body;
+        $q1question = "Put Question here";
+        $q1intro = "Intro for question1";
 
-            //question2
-            $q2set = $industryReference['q2'][$industry];
-            $q2Answers = collect($answer)->only(array_keys($q2set))->filter();
-            $q2labels = collect($singleQuestions)->filter(function($item, $key) use($q2Answers){
-                return collect($q2Answers->keys())->contains($key);                
-            });
+        //questionSize1
+        $q1Sizeset = $industryReference['q1'][$industry];
+        $q1SizeAnswers = collect($answer)->only(array_keys($q1Sizeset))->filter();
+        $q1Sizelabels = collect($singleQuestions)->filter(function($item, $key) use($q1SizeAnswers){
+            return collect($q1SizeAnswers->keys())->contains($key);                
+        });
 
-            $q2question = $singleQuestionsText->get($q2labels->keys()->first());
-            $q2header = "You selected {$q2Answers->count()} implementation areas in {$industryKeys[$industry]}: {$q2labels->implodeLast(', ',', and ')}<br/><br/>";
-
-            $q2body = "";
-            $q2labels->each(function($item, $key) use(&$q2body, $industry, $industryKeys, $industryReference, $genericReference){
-                if($industryReference['q2'][$industry][$key]<4){
-                    $q2body .= "<strong>{$item}</strong> is among the Top 3 implementation areas and is ranked as <strong>{$industryReference['q2'][$industry][$key]}</strong>. This shows your investment choices align with most organisations in {$industryKeys[$industry]}, and a suitable area for investment in Big Data Solutions.<br/>";
-                }
-                if($industryReference['q2'][$industry][$key]>5){
-                    $q2body .= "<strong>{$item}</strong> is among the Bottom 3 implementation areas and is ranked as <strong>{$industryReference['q2'][$industry][$key]}</strong>. This suggests your investments differ from most organisations in {$industryKeys[$industry]}.<br/>";
-                }
-                if($industryReference['q2'][$industry][$key]<=5 && $industryReference['q2'][$industry][$key]>=4){
-                    $q2body .= "<strong>{$item}</strong> is in the middle set of implementation areas and is ranked as <strong>{$industryReference['q2'][$industry][$key]}</strong>. Your investment criteria for Big Data investment focuses slightly outside mainstream investment areas, but still picks up on those areas with interest from some Big Data users.<br/>";
-                }
-                $q2body .= $genericReference['q2'][$key]."<br/><br/>";
-            });
-
-            $question2 = $q2header.$q2body;
-
-            //question4
-            $q4set = $industryReference['q4'][$industry];
-            $q4Answers = collect($answer)->only(array_keys($q4set))->filter();
-            $q4AnswersSort = $q4Answers->sort()->reverse()->keys();
-            $q4AnswersRank = $this->rankArray($q4Answers->toArray());
-            $q4labels = collect($singleQuestions)->filter(function($item, $key) use($q4Answers){
-                return collect($q4Answers->keys())->contains($key);                
-            });
-
-            $q4question = $singleQuestionsText->get($q4labels->keys()->first());
-            $q4header = "You selected {$q4Answers->count()} implementation areas in {$industryKeys[$industry]}: {$q4labels->implodeLast(', ',', and ')}<br/><br/>";
-
-            $q4body = "";
-            $q4labels->each(function($item, $key) use(&$q4body, $industry, $industryKeys, $industryReference, $genericReference, $q4Answers, $q4AnswersSort, $q4AnswersRank){
-                $nth = $q4AnswersRank[$key] == 1 ? 'most' : $this->ordinal($q4AnswersRank[$key])." most";
-                $q4body .= "<strong>{$item}</strong> is the <strong>{$nth}</strong> important of your Key Performance Indicators and";
-                if($q4Answers[$key] < $industryReference['q4'][$industry][$key]){
-                    $q4body .= " you rated it below the average rating for all organisations in {$industryKeys[$industry]} <strong>({$industryReference['q4'][$industry][$key]})</strong>. This specific investment choice falls a little behind your peers, and you might want to consider increasing its importance within your priorities for Big Data Solutions.";
-                }
-                if($q4Answers[$key] > $industryReference['q4'][$industry][$key]){
-                    $q4body .= " you rated it the same as the average rating for all organisations in {$industryKeys[$industry]}, and this shows your views on <strong>{$item}</strong> are in line with those of the majority of other organisations.";
-                }
-                $q4body .= $genericReference['q4'][$key]."<br/><br/>";
-            });
-
-            $question4 = $q4header.$q4body;
-
-            //question5
-            $q5set = $industryReference['q5'][$industry];
-
-            $q5Answer = collect($answer)->only('q5')->first();
-
-            $q5body = "";
-            
-            if($q5Answer == 1){
-                $q5body .= "Your expectations from using Big data solutions are considerably below that expected for organisations across all industries, and also for organisations in ";
+        //Size band
+        $q1sizeheader = "You selected {$q1SizeAnswers->count()} implementation areas in the {$sizeKeys[$size]} sizeband: {$q1Sizelabels->implodeLast(', ',', and ')} <br/><br/>";
+        $q1sizebody = "";
+        $q1Sizelabels->each(function($item, $key) use(&$q1sizebody, $size, $sizeKeys, $sizeReference, $genericReference){
+            if($sizeReference['q1'][$size][$key]<4){
+                $q1sizebody .= "<strong>{$item}</strong> is among the Top 3 implementation areas and is ranked as <strong>{$sizeReference['q1'][$size][$key]}</strong>. This shows your investment choices align with most organisations in {$sizeKeys[$size]} size band, and a suitable area for investment in Big Data Solutions.<br/>";
             }
-            if($q5Answer == 2){
-                $q5body .= "Your expectations from using Big data solutions are  below that expected for organisations across all industries, and also for organisations in ";
+            if($sizeReference['q1'][$size][$key]>9){
+                $q1sizebody .= "<strong>{$item}</strong> is among the Bottom 3 implementation areas and is ranked as <strong>{$sizeReference['q1'][$size][$key]}</strong>. This suggests your investments differ from most organisations in {$sizeKeys[$size]} size band.<br/>";
             }
-            if($q5Answer == 3){
-                $q5body .= "Your expectations from using Big data solutions are a little lower than expected for organisations across all industries, and also for organisations in ";
+            if($sizeReference['q1'][$size][$key]<=9 && $sizeReference['q1'][$size][$key]>=4){
+                $q1sizebody .= "<strong>{$item}</strong> is in the middle set of implementation areas and is ranked as <strong>{$sizeReference['q1'][$size][$key]}</strong>. Your investment criteria for Big Data investment focuses slightly outside mainstream investment areas, but still picks up on those areas with interest from some Big Data users.<br/>";
             }
-            if($q5Answer == 4){
-                $q5body .= "Your expectations from using Big data solutions are similar to that expected for organisations across all industries, and also for organisations in ";
+            $q1sizebody .= $genericReference['q1'][$key]."<br/><br/>";
+        });
+        $question1size = $q1sizeheader.$q1sizebody;
+
+        //questionIndustry1
+        $q1Industryset = $industryReference['q1'][$industry];
+        $q1IndustryAnswers = collect($answer)->only(array_keys($q1Industryset))->filter();
+        $q1Industrylabels = collect($singleQuestions)->filter(function($item, $key) use($q1IndustryAnswers){
+            return collect($q1IndustryAnswers->keys())->contains($key);                
+        });
+
+        //Industry
+        $q1industryheader = "You selected {$q1IndustryAnswers->count()} implementation areas in {$industryKeys[$industry]}: {$q1Industrylabels->implodeLast(', ',', and ')}<br/><br/>";
+        $q1industrybody = "";
+        $q1Industrylabels->each(function($item, $key) use(&$q1industrybody, $industry, $industryKeys, $industryReference, $genericReference){
+            if($industryReference['q1'][$industry][$key]<4){
+                $q1industrybody .= "<strong>{$item}</strong> is among the Top 3 implementation areas and is ranked as <strong>{$industryReference['q1'][$industry][$key]}</strong>. This shows your investment choices align with most organisations in {$industryKeys[$industry]}, and a suitable area for investment in Big Data Solutions.<br/>";
             }
-            if($q5Answer == 5){
-                $q5body .= "Your expectations from using Big data solutions are higher than that expected for organisations across all industries, and also for organisations in ";
+            if($industryReference['q1'][$industry][$key]>9){
+                $q1industrybody .= "<strong>{$item}</strong> is among the Bottom 3 implementation areas and is ranked as <strong>{$industryReference['q1'][$industry][$key]}</strong>. This suggests your investments differ from most organisations in {$industryKeys[$industry]}.<br/>";
             }
-            $q5body .= "{$industryKeys[$industry]}.<br/>";
-            $q5body .= "<strong>{$industryReference['q5'][$industry][$q5Answer]}</strong> of organisations in this industry gave a similar rating.<br/><br/>";
-
-            $q5body .= $genericReference['q5']."<br/><br/>";
-
-            $question5 = $q5body;
-
-            //question6
-            $q6aset = $industryReference['q6a'][$industry];
-            $q6aAnswers = collect($answer)->only(array_keys($q6aset))->filter();
-            $q6aAnswersRank = $this->rankArray($q6aAnswers->toArray());
-            $q6alabels = collect($singleQuestions)->filter(function($item, $key) use($q6aAnswers){
-                return collect($q6aAnswers->keys())->contains($key);                
-            });
-
-            $q6aquestion = $singleQuestionsText->get($q6alabels->keys()->first());
-            $q6arankfirst = str_replace(" by", "", $q6alabels->get(collect(array_keys($q6aAnswersRank))->first()));
-            $q6aranklast = str_replace(" by", "", $q6alabels->get(collect(array_keys($q6aAnswersRank))->last()));
-
-            $q6aheader = "You expect your biggest gain in <strong>{$q6arankfirst}</strong> and your smallest gain in  <strong>{$q6aranklast}</strong> <br/>";
-
-            $q6abody = "";
-            $q6alabels->each(function($item, $key) use(&$q6abody, $industry, $industryKeys, $industryReference, $genericReference, $q6aAnswers){
-                $label = trim(str_replace(['Increased','Reduced','by'], ['','',''], $item));
-                $q6abody .= "For {$label} ";
-                if($q6aAnswers[$key] > (3 * $industryReference['q6a'][$industry][$key])){
-                    $q6abody .= "your expectations are much higher than the average for {$industryKeys[$industry]}. This could be optimism on your part but you might want to look more carefully at your plans and business model.<br/>";
-                }
-                if($q6aAnswers[$key] > $industryReference['q6a'][$industry][$key]){
-                    $q6abody .= "your expectations are higher than the average for {$industryKeys[$industry]}, but not by an overly optimistic amount so you have either better plans or better expectations than your peers in industry.<br/>";
-                }
-                if($q6aAnswers[$key] == $industryReference['q6a'][$industry][$key]){
-                    $q6abody .= "your expectations are similar to the average for {$industryKeys[$industry]}.<br/>";
-                }
-                if($q6aAnswers[$key] < ($industryReference['q6a'][$industry][$key]) / 3){
-                    $q6abody .= "your expectations are much lower than the average for {$industryKeys[$industry]}. You might want to reconsider your plans and review where you can make improvements in your expectations.<br/>";
-                }
-                if($q6aAnswers[$key] < $industryReference['q6a'][$industry][$key]){
-                    $q6abody .= "your expectations are lower than the average for {$industryKeys[$industry]}, but not by a significant amount. You could consider revising your planning, but you expecctations are generally in line with those of others in your industry.<br/>";
-                }
-            });
-            $q6abody .= "<br/>";
-
-            $question6a = $q6aheader.$q6abody;
-
-            //question7
-            $q7set = $industryReference['q7'][$industry];
-            $q7Answers = collect($answer)->only(array_keys($q7set))->filter();
-            $q7labels = collect($singleQuestions)->filter(function($item, $key) use($q7Answers){
-                return collect($q7Answers->keys())->contains($key);                
-            });
-
-            $q7question = $singleQuestionsText->get($q7labels->keys()->first());
-
-            $q7body = "";
-            $q7labels->each(function($item, $key) use(&$q7body, $industry, $industryKeys, $industryReference, $genericReference, $q7Answers){
-                $q7body .= "You rated the impact of <strong>{$item}</strong>";
-                if($q7Answers->get($key) < $industryReference['q7'][$industry][$key]-1){
-                    $q7body .= " much lower ";
-                }
-                if($q7Answers->get($key) == $industryReference['q7'][$industry][$key]){
-                    $q7body .= " similar to ";
-                }
-                if($q7Answers->get($key) > $industryReference['q7'][$industry][$key]){
-                    $q7body .= " higher than ";
-                }
-                if($q7Answers->get($key) > $industryReference['q7'][$industry][$key]+1){
-                    $q7body .= " much higher than ";
-                }
-                $q7body .= " the average rating given by organisations in {$industryKeys[$industry]}.<br/>";
-                if($q7Answers->get($key) == 1){
-                    $q7body .= "It is unusual for Big Data deloyments to result in an negative impact, so it would be worth investigating why you think this is the case. Causes for a negative impact can include changes to scope throughout the deployment and careful project management can reduce unnecessary scope creep.";
-                }
-                if($q7Answers->get($key) == 2){
-                    $q7body .= "While you see or anticipate that a big data solution made no change to your achivement of your <strong>{$item}</strong> performance indicator, is it still worth continuing to adopt Big Data solutions because of their future impact in other areas - as most organisations have seen a slight or moderate increase in their KPIs with these solutions";
-                }
-                if($q7Answers->get($key) == 3){
-                    $q7body .= "Most organisations anticipate either a slight or moderate increase so your expecations or actual achivement for <strong>{$item}</strong> are consistent with the majority of organisations. ";
-                }
-                if($q7Answers->get($key) == 4){
-                    $q7body .= "While most organisations anticipate a slight or moderate Increase, your expectations or achivement for <strong>{$item}</strong> are a little higher than most. This is a realistic outcome and shows the value of implementing a Big Data solution.";
-                }
-                if($q7Answers->get($key) == 5){
-                    $q7body .= "Your achivement or expectation of a high increase in your ability to achive your <strong>{$item}</strong> puts you ahead of most organisations, and emphasises the value of implenting a Big Data solution for this KPI";
-                }
-                $q7body .= $genericReference['q7'][$key]."<br/><br/>";
-            });
-
-            $question7 = $q7body;
-
-            //question8
-            $q8set = $industryReference['q8'][$industry];
-            $q8Answers = collect($answer)->only(array_keys($q8set))->filter();
-            $q8labels = collect($singleQuestions)->filter(function($item, $key) use($q8Answers){
-                return collect($q8Answers->keys())->contains($key);                
-            });
-
-            $q8question = $singleQuestionsText->get($q8labels->keys()->first());
-            $q8header = "You selected {$q8Answers->count()}  use cases for planning, evaluating, using, or implementing in {$industryKeys[$industry]}.<br/>";
-            $q8AnswersTopTen = $q8Answers->filter(function($item, $key) use($industryReference,$industry){
-                return $industryReference['q8'][$industry][$key] > 0 && $industryReference['q8'][$industry][$key] < 11;
-            });
-            $q8TopTen = $q8labels->only($q8AnswersTopTen->keys()->toArray())->implodeLast(', ',', and ');
-
-            $q8header .= "Of these <strong>{$q8AnswersTopTen->count()}</strong> are in the top 10 use cases adopted in this industry:<br/>";
-            $q8header .= "{$q8TopTen}.<br/><br/>";
-
-            if($q8AnswersTopTen->count() < 4){
-                $q8header .= "You have few of your use cases in the top 10 for {$industryKeys[$industry]}. Whils this is not a problem you might want to review the {$industryKeys[$industry]} use case list when considering future Big Data projects.";
+            if($industryReference['q1'][$industry][$key]<=9 && $industryReference['q1'][$industry][$key]>=4){
+                $q1industrybody .= "<strong>{$item}</strong> is in the middle set of implementation areas and is ranked as <strong>{$industryReference['q1'][$industry][$key]}</strong>. Your investment criteria for Big Data investment focuses slightly outside mainstream investment areas, but still picks up on those areas with interest from some Big Data users.<br/>";
             }
-            if($q8AnswersTopTen->count() < 6){
-                $q8header .= "Close to half of the top ten {$industryKeys[$industry]} use cases are included in your list of use cases for your Big Data implementations. This is a reasonable coverage and implies your business needs align reasonably well with others in {$industryKeys[$industry]}.";
+            $q1industrybody .= $genericReference['q1'][$key]."<br/><br/>";
+        });
+        $question1industry = $q1industryheader.$q1industrybody;
+
+        return $question1size.$question1industry;
+
+        //question2
+        $q2set = $industryReference['q2'][$industry];
+        $q2Answers = collect($answer)->only(array_keys($q2set))->filter();
+        $q2labels = collect($singleQuestions)->filter(function($item, $key) use($q2Answers){
+            return collect($q2Answers->keys())->contains($key);                
+        });
+
+        $q2question = $singleQuestionsText->get($q2labels->keys()->first());
+        $q2header = "You selected {$q2Answers->count()} implementation areas in {$industryKeys[$industry]}: {$q2labels->implodeLast(', ',', and ')}<br/><br/>";
+
+        $q2body = "";
+        $q2labels->each(function($item, $key) use(&$q2body, $industry, $industryKeys, $industryReference, $genericReference){
+            if($industryReference['q2'][$industry][$key]<4){
+                $q2body .= "<strong>{$item}</strong> is among the Top 3 implementation areas and is ranked as <strong>{$industryReference['q2'][$industry][$key]}</strong>. This shows your investment choices align with most organisations in {$industryKeys[$industry]}, and a suitable area for investment in Big Data Solutions.<br/>";
             }
-            if($q8AnswersTopTen->count() == 10){
-                $q8header .= "You include all of the top 10 {$industryKeys[$industry]} use cases in your Big Data implementation, which gives excellent alignment between your business needs and those of your peers.";
+            if($industryReference['q2'][$industry][$key]>5){
+                $q2body .= "<strong>{$item}</strong> is among the Bottom 3 implementation areas and is ranked as <strong>{$industryReference['q2'][$industry][$key]}</strong>. This suggests your investments differ from most organisations in {$industryKeys[$industry]}.<br/>";
             }
+            if($industryReference['q2'][$industry][$key]<=5 && $industryReference['q2'][$industry][$key]>=4){
+                $q2body .= "<strong>{$item}</strong> is in the middle set of implementation areas and is ranked as <strong>{$industryReference['q2'][$industry][$key]}</strong>. Your investment criteria for Big Data investment focuses slightly outside mainstream investment areas, but still picks up on those areas with interest from some Big Data users.<br/>";
+            }
+            $q2body .= $genericReference['q2'][$key]."<br/><br/>";
+        });
 
-            $question8 = $q8header;
+        $question2 = $q2header.$q2body;
 
-            return $question1.$question2.$question4.$question5.$question6a.$question7.$question8;
+        //question4
+        $q4set = $industryReference['q4'][$industry];
+        $q4Answers = collect($answer)->only(array_keys($q4set))->filter();
+        $q4AnswersSort = $q4Answers->sort()->reverse()->keys();
+        $q4AnswersRank = $this->rankArray($q4Answers->toArray());
+        $q4labels = collect($singleQuestions)->filter(function($item, $key) use($q4Answers){
+            return collect($q4Answers->keys())->contains($key);                
+        });
 
+        $q4question = $singleQuestionsText->get($q4labels->keys()->first());
+        $q4header = "You selected {$q4Answers->count()} implementation areas in {$industryKeys[$industry]}: {$q4labels->implodeLast(', ',', and ')}<br/><br/>";
 
-        } catch (GuzzleHttp\Exception\RequestException $e) {
-            return $e->getMessage();
+        $q4body = "";
+        $q4labels->each(function($item, $key) use(&$q4body, $industry, $industryKeys, $industryReference, $genericReference, $q4Answers, $q4AnswersSort, $q4AnswersRank){
+            $nth = $q4AnswersRank[$key] == 1 ? 'most' : $this->ordinal($q4AnswersRank[$key])." most";
+            $q4body .= "<strong>{$item}</strong> is the <strong>{$nth}</strong> important of your Key Performance Indicators and";
+            if($q4Answers[$key] < $industryReference['q4'][$industry][$key]){
+                $q4body .= " you rated it below the average rating for all organisations in {$industryKeys[$industry]} <strong>({$industryReference['q4'][$industry][$key]})</strong>. This specific investment choice falls a little behind your peers, and you might want to consider increasing its importance within your priorities for Big Data Solutions.";
+            }
+            if($q4Answers[$key] > $industryReference['q4'][$industry][$key]){
+                $q4body .= " you rated it the same as the average rating for all organisations in {$industryKeys[$industry]}, and this shows your views on <strong>{$item}</strong> are in line with those of the majority of other organisations.";
+            }
+            $q4body .= $genericReference['q4'][$key]."<br/><br/>";
+        });
+
+        $question4 = $q4header.$q4body;
+
+        //question5
+        $q5set = $industryReference['q5'][$industry];
+
+        $q5Answer = collect($answer)->only('q5')->first();
+
+        $q5body = "";
+        
+        if($q5Answer == 1){
+            $q5body .= "Your expectations from using Big data solutions are considerably below that expected for organisations across all industries, and also for organisations in ";
         }
+        if($q5Answer == 2){
+            $q5body .= "Your expectations from using Big data solutions are  below that expected for organisations across all industries, and also for organisations in ";
+        }
+        if($q5Answer == 3){
+            $q5body .= "Your expectations from using Big data solutions are a little lower than expected for organisations across all industries, and also for organisations in ";
+        }
+        if($q5Answer == 4){
+            $q5body .= "Your expectations from using Big data solutions are similar to that expected for organisations across all industries, and also for organisations in ";
+        }
+        if($q5Answer == 5){
+            $q5body .= "Your expectations from using Big data solutions are higher than that expected for organisations across all industries, and also for organisations in ";
+        }
+        $q5body .= "{$industryKeys[$industry]}.<br/>";
+        $q5body .= "<strong>{$industryReference['q5'][$industry][$q5Answer]}</strong> of organisations in this industry gave a similar rating.<br/><br/>";
+
+        $q5body .= $genericReference['q5']."<br/><br/>";
+
+        $question5 = $q5body;
+
+        //question6
+        $q6aset = $industryReference['q6a'][$industry];
+        $q6aAnswers = collect($answer)->only(array_keys($q6aset))->filter();
+        $q6aAnswersRank = $this->rankArray($q6aAnswers->toArray());
+        $q6alabels = collect($singleQuestions)->filter(function($item, $key) use($q6aAnswers){
+            return collect($q6aAnswers->keys())->contains($key);                
+        });
+
+        $q6aquestion = $singleQuestionsText->get($q6alabels->keys()->first());
+        $q6arankfirst = str_replace(" by", "", $q6alabels->get(collect(array_keys($q6aAnswersRank))->first()));
+        $q6aranklast = str_replace(" by", "", $q6alabels->get(collect(array_keys($q6aAnswersRank))->last()));
+
+        $q6aheader = "You expect your biggest gain in <strong>{$q6arankfirst}</strong> and your smallest gain in  <strong>{$q6aranklast}</strong> <br/>";
+
+        $q6abody = "";
+        $q6alabels->each(function($item, $key) use(&$q6abody, $industry, $industryKeys, $industryReference, $genericReference, $q6aAnswers){
+            $label = trim(str_replace(['Increased','Reduced','by'], ['','',''], $item));
+            $q6abody .= "For {$label} ";
+            if($q6aAnswers[$key] > (3 * $industryReference['q6a'][$industry][$key])){
+                $q6abody .= "your expectations are much higher than the average for {$industryKeys[$industry]}. This could be optimism on your part but you might want to look more carefully at your plans and business model.<br/>";
+            }
+            if($q6aAnswers[$key] > $industryReference['q6a'][$industry][$key]){
+                $q6abody .= "your expectations are higher than the average for {$industryKeys[$industry]}, but not by an overly optimistic amount so you have either better plans or better expectations than your peers in industry.<br/>";
+            }
+            if($q6aAnswers[$key] == $industryReference['q6a'][$industry][$key]){
+                $q6abody .= "your expectations are similar to the average for {$industryKeys[$industry]}.<br/>";
+            }
+            if($q6aAnswers[$key] < ($industryReference['q6a'][$industry][$key]) / 3){
+                $q6abody .= "your expectations are much lower than the average for {$industryKeys[$industry]}. You might want to reconsider your plans and review where you can make improvements in your expectations.<br/>";
+            }
+            if($q6aAnswers[$key] < $industryReference['q6a'][$industry][$key]){
+                $q6abody .= "your expectations are lower than the average for {$industryKeys[$industry]}, but not by a significant amount. You could consider revising your planning, but you expecctations are generally in line with those of others in your industry.<br/>";
+            }
+        });
+        $q6abody .= "<br/>";
+
+        $question6a = $q6aheader.$q6abody;
+
+        //question7
+        $q7set = $industryReference['q7'][$industry];
+        $q7Answers = collect($answer)->only(array_keys($q7set))->filter();
+        $q7labels = collect($singleQuestions)->filter(function($item, $key) use($q7Answers){
+            return collect($q7Answers->keys())->contains($key);                
+        });
+
+        $q7question = $singleQuestionsText->get($q7labels->keys()->first());
+
+        $q7body = "";
+        $q7labels->each(function($item, $key) use(&$q7body, $industry, $industryKeys, $industryReference, $genericReference, $q7Answers){
+            $q7body .= "You rated the impact of <strong>{$item}</strong>";
+            if($q7Answers->get($key) < $industryReference['q7'][$industry][$key]-1){
+                $q7body .= " much lower ";
+            }
+            if($q7Answers->get($key) == $industryReference['q7'][$industry][$key]){
+                $q7body .= " similar to ";
+            }
+            if($q7Answers->get($key) > $industryReference['q7'][$industry][$key]){
+                $q7body .= " higher than ";
+            }
+            if($q7Answers->get($key) > $industryReference['q7'][$industry][$key]+1){
+                $q7body .= " much higher than ";
+            }
+            $q7body .= " the average rating given by organisations in {$industryKeys[$industry]}.<br/>";
+            if($q7Answers->get($key) == 1){
+                $q7body .= "It is unusual for Big Data deloyments to result in an negative impact, so it would be worth investigating why you think this is the case. Causes for a negative impact can include changes to scope throughout the deployment and careful project management can reduce unnecessary scope creep.";
+            }
+            if($q7Answers->get($key) == 2){
+                $q7body .= "While you see or anticipate that a big data solution made no change to your achivement of your <strong>{$item}</strong> performance indicator, is it still worth continuing to adopt Big Data solutions because of their future impact in other areas - as most organisations have seen a slight or moderate increase in their KPIs with these solutions";
+            }
+            if($q7Answers->get($key) == 3){
+                $q7body .= "Most organisations anticipate either a slight or moderate increase so your expecations or actual achivement for <strong>{$item}</strong> are consistent with the majority of organisations. ";
+            }
+            if($q7Answers->get($key) == 4){
+                $q7body .= "While most organisations anticipate a slight or moderate Increase, your expectations or achivement for <strong>{$item}</strong> are a little higher than most. This is a realistic outcome and shows the value of implementing a Big Data solution.";
+            }
+            if($q7Answers->get($key) == 5){
+                $q7body .= "Your achivement or expectation of a high increase in your ability to achive your <strong>{$item}</strong> puts you ahead of most organisations, and emphasises the value of implenting a Big Data solution for this KPI";
+            }
+            $q7body .= $genericReference['q7'][$key]."<br/><br/>";
+        });
+
+        $question7 = $q7body;
+
+        //question8
+        $q8set = $industryReference['q8'][$industry];
+        $q8Answers = collect($answer)->only(array_keys($q8set))->filter();
+        $q8labels = collect($singleQuestions)->filter(function($item, $key) use($q8Answers){
+            return collect($q8Answers->keys())->contains($key);                
+        });
+
+        $q8question = $singleQuestionsText->get($q8labels->keys()->first());
+        $q8header = "You selected {$q8Answers->count()}  use cases for planning, evaluating, using, or implementing in {$industryKeys[$industry]}.<br/>";
+        $q8AnswersTopTen = $q8Answers->filter(function($item, $key) use($industryReference,$industry){
+            return $industryReference['q8'][$industry][$key] > 0 && $industryReference['q8'][$industry][$key] < 11;
+        });
+        $q8TopTen = $q8labels->only($q8AnswersTopTen->keys()->toArray())->implodeLast(', ',', and ');
+
+        $q8header .= "Of these <strong>{$q8AnswersTopTen->count()}</strong> are in the top 10 use cases adopted in this industry:<br/>";
+        $q8header .= "{$q8TopTen}.<br/><br/>";
+
+        if($q8AnswersTopTen->count() < 4){
+            $q8header .= "You have few of your use cases in the top 10 for {$industryKeys[$industry]}. Whils this is not a problem you might want to review the {$industryKeys[$industry]} use case list when considering future Big Data projects.";
+        }
+        if($q8AnswersTopTen->count() < 6){
+            $q8header .= "Close to half of the top ten {$industryKeys[$industry]} use cases are included in your list of use cases for your Big Data implementations. This is a reasonable coverage and implies your business needs align reasonably well with others in {$industryKeys[$industry]}.";
+        }
+        if($q8AnswersTopTen->count() == 10){
+            $q8header .= "You include all of the top 10 {$industryKeys[$industry]} use cases in your Big Data implementation, which gives excellent alignment between your business needs and those of your peers.";
+        }
+
+        $question8 = $q8header;
+
+        return $question1.$question2.$question4.$question5.$question6a.$question7.$question8;
     }
 
     private function ordinal($number) {
