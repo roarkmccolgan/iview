@@ -844,6 +844,1471 @@ class ItalyController extends Controller
                 ],
             ]
         ];
+        $industryGraphReference = [
+            'q1' => [
+                'qsectorr1' => [
+                    'q1r1' => [
+                        'label' => 'Customer service and support',
+                        'value' => 30.8
+                    ],
+                    'q1r2' => [
+                        'label' => 'Engineering',
+                        'value' => 26.2
+                    ],
+                    'q1r3' => [
+                        'label' => 'Research and development (R&D)',
+                        'value' => 21.5
+                    ],
+                    'q1r4' => [
+                        'label' => 'Product innovation (new business initiatives)',
+                        'value' => 27.7
+                    ],
+                    'q1r5' => [
+                        'label' => 'Maintenance and logistics',
+                        'value' => 7.7
+                    ],
+                    'q1r6' => [
+                        'label' => 'Marketing',
+                        'value' => 38.5
+                    ],
+                    'q1r7' => [
+                        'label' => 'Finance',
+                        'value' => 21.5
+                    ],
+                    'q1r8' => [
+                        'label' => 'HR and legal',
+                        'value' => 12.3
+                    ],
+                    'q1r9' => [
+                        'label' => 'Sales',
+                        'value' => 30.8
+                    ],
+                    'q1r10' => [
+                        'label' => 'Product management',
+                        'value' => 29.2
+                    ],
+                    'q1r11' => [
+                        'label' => 'Governance, risk, and compliance',
+                        'value' => 16.9
+                    ],
+                    'q1r12' => [
+                        'label' => 'IT and data operations',
+                        'value' => 15.4
+                    ],
+                    'q1r13' => [
+                        'label' => 'Other, please specify',
+                        'value' => 0.0
+                    ],
+                    'q1r14' => [
+                        'label' => 'All the above',
+                        'value' => 0.0
+                    ],
+                ],
+                'qsectorr2' => [
+                    'q1r1' => [
+                        'label' => 'Customer service and support',
+                        'value' => 34.6
+                    ],
+                    'q1r2' => [
+                        'label' => 'Engineering',
+                        'value' => 21.8
+                    ],
+                    'q1r3' => [
+                        'label' => 'Research and development (R&D)',
+                        'value' => 28.2
+                    ],
+                    'q1r4' => [
+                        'label' => 'Product innovation (new business initiatives)',
+                        'value' => 30.8
+                    ],
+                    'q1r5' => [
+                        'label' => 'Maintenance and logistics',
+                        'value' => 25.6
+                    ],
+                    'q1r6' => [
+                        'label' => 'Marketing',
+                        'value' => 29.5
+                    ],
+                    'q1r7' => [
+                        'label' => 'Finance',
+                        'value' => 24.4
+                    ],
+                    'q1r8' => [
+                        'label' => 'HR and legal',
+                        'value' => 17.9
+                    ],
+                    'q1r9' => [
+                        'label' => 'Sales',
+                        'value' => 15.4
+                    ],
+                    'q1r10' => [
+                        'label' => 'Product management',
+                        'value' => 28.2
+                    ],
+                    'q1r11' => [
+                        'label' => 'Governance, risk, and compliance',
+                        'value' => 15.4
+                    ],
+                    'q1r12' => [
+                        'label' => 'IT and data operations',
+                        'value' => 61.5
+                    ],
+                    'q1r13' => [
+                        'label' => 'Other, please specify',
+                        'value' => 1.3
+                    ],
+                    'q1r14' => [
+                        'label' => 'All the above',
+                        'value' => 0.0
+                    ],
+                ],
+                'qsectorr3' => [
+                    'q1r1' => [
+                        'label' => 'Customer service and support',
+                        'value' => 48.1
+                    ],
+                    'q1r2' => [
+                        'label' => 'Engineering',
+                        'value' => 14.3
+                    ],
+                    'q1r3' => [
+                        'label' => 'Research and development (R&D)',
+                        'value' => 13.0
+                    ],
+                    'q1r4' => [
+                        'label' => 'Product innovation (new business initiatives)',
+                        'value' => 15.6
+                    ],
+                    'q1r5' => [
+                        'label' => 'Maintenance and logistics',
+                        'value' => 18.2
+                    ],
+                    'q1r6' => [
+                        'label' => 'Marketing',
+                        'value' => 32.5
+                    ],
+                    'q1r7' => [
+                        'label' => 'Finance',
+                        'value' => 53.2
+                    ],
+                    'q1r8' => [
+                        'label' => 'HR and legal',
+                        'value' => 22.1
+                    ],
+                    'q1r9' => [
+                        'label' => 'Sales',
+                        'value' => 29.9
+                    ],
+                    'q1r10' => [
+                        'label' => 'Product management',
+                        'value' => 32.5
+                    ],
+                    'q1r11' => [
+                        'label' => 'Governance, risk, and compliance',
+                        'value' => 29.9
+                    ],
+                    'q1r12' => [
+                        'label' => 'IT and data operations',
+                        'value' => 31.2
+                    ],
+                    'q1r13' => [
+                        'label' => 'Other, please specify',
+                        'value' => 1.3
+                    ],
+                    'q1r14' => [
+                        'label' => 'All the above',
+                        'value' => 0.0
+                    ],
+                ],
+                'qsectorr4' => [
+                    'q1r1' => [
+                        'label' => 'Customer service and support',
+                        'value' => 29.8
+                    ],
+                    'q1r2' => [
+                        'label' => 'Engineering',
+                        'value' => 20.2
+                    ],
+                    'q1r3' => [
+                        'label' => 'Research and development (R&D)',
+                        'value' => 26.2
+                    ],
+                    'q1r4' => [
+                        'label' => 'Product innovation (new business initiatives)',
+                        'value' => 16.7
+                    ],
+                    'q1r5' => [
+                        'label' => 'Maintenance and logistics',
+                        'value' => 38.1
+                    ],
+                    'q1r6' => [
+                        'label' => 'Marketing',
+                        'value' => 22.6
+                    ],
+                    'q1r7' => [
+                        'label' => 'Finance',
+                        'value' => 28.6
+                    ],
+                    'q1r8' => [
+                        'label' => 'HR and legal',
+                        'value' => 14.3
+                    ],
+                    'q1r9' => [
+                        'label' => 'Sales',
+                        'value' => 27.4
+                    ],
+                    'q1r10' => [
+                        'label' => 'Product management',
+                        'value' => 32.1
+                    ],
+                    'q1r11' => [
+                        'label' => 'Governance, risk, and compliance',
+                        'value' => 26.2
+                    ],
+                    'q1r12' => [
+                        'label' => 'IT and data operations',
+                        'value' => 34.5
+                    ],
+                    'q1r13' => [
+                        'label' => 'Other, please specify',
+                        'value' => 0.0
+                    ],
+                    'q1r14' => [
+                        'label' => 'All the above',
+                        'value' => 1.2
+                    ],
+                ],
+                'qsectorr5' => [
+                    'q1r1' => [
+                        'label' => 'Customer service and support',
+                        'value' => 29.2
+                    ],
+                    'q1r2' => [
+                        'label' => 'Engineering',
+                        'value' => 32.6
+                    ],
+                    'q1r3' => [
+                        'label' => 'Research and development (R&D)',
+                        'value' => 27.0
+                    ],
+                    'q1r4' => [
+                        'label' => 'Product innovation (new business initiatives)',
+                        'value' => 24.7
+                    ],
+                    'q1r5' => [
+                        'label' => 'Maintenance and logistics',
+                        'value' => 37.1
+                    ],
+                    'q1r6' => [
+                        'label' => 'Marketing',
+                        'value' => 30.3
+                    ],
+                    'q1r7' => [
+                        'label' => 'Finance',
+                        'value' => 18.0
+                    ],
+                    'q1r8' => [
+                        'label' => 'HR and legal',
+                        'value' => 14.6
+                    ],
+                    'q1r9' => [
+                        'label' => 'Sales',
+                        'value' => 23.6
+                    ],
+                    'q1r10' => [
+                        'label' => 'Product management',
+                        'value' => 43.8
+                    ],
+                    'q1r11' => [
+                        'label' => 'Governance, risk, and compliance',
+                        'value' => 19.1
+                    ],
+                    'q1r12' => [
+                        'label' => 'IT and data operations',
+                        'value' => 33.7
+                    ],
+                    'q1r13' => [
+                        'label' => 'Other, please specify',
+                        'value' => 3.4
+                    ],
+                    'q1r14' => [
+                        'label' => 'All the above',
+                        'value' => 0.0
+                    ],
+                ],
+                'qsectorr6' => [
+                    'q1r1' => [
+                        'label' => 'Customer service and support',
+                        'value' => 36.1
+                    ],
+                    'q1r2' => [
+                        'label' => 'Engineering',
+                        'value' => 14.5
+                    ],
+                    'q1r3' => [
+                        'label' => 'Research and development (R&D)',
+                        'value' => 22.9
+                    ],
+                    'q1r4' => [
+                        'label' => 'Product innovation (new business initiatives)',
+                        'value' => 24.1
+                    ],
+                    'q1r5' => [
+                        'label' => 'Maintenance and logistics',
+                        'value' => 33.7
+                    ],
+                    'q1r6' => [
+                        'label' => 'Marketing',
+                        'value' => 54.2
+                    ],
+                    'q1r7' => [
+                        'label' => 'Finance',
+                        'value' => 25.3
+                    ],
+                    'q1r8' => [
+                        'label' => 'HR and legal',
+                        'value' => 20.5
+                    ],
+                    'q1r9' => [
+                        'label' => 'Sales',
+                        'value' => 51.8
+                    ],
+                    'q1r10' => [
+                        'label' => 'Product management',
+                        'value' => 39.8
+                    ],
+                    'q1r11' => [
+                        'label' => 'Governance, risk, and compliance',
+                        'value' => 19.3
+                    ],
+                    'q1r12' => [
+                        'label' => 'IT and data operations',
+                        'value' => 24.1
+                    ],
+                    'q1r13' => [
+                        'label' => 'Other, please specify',
+                        'value' => 1.2
+                    ],
+                    'q1r14' => [
+                        'label' => 'All the above',
+                        'value' => 0.0
+                    ],
+                ],
+                'qsectorr7' => [
+                    'q1r1' => [
+                        'label' => 'Customer service and support',
+                        'value' => 48.1
+                    ],
+                    'q1r2' => [
+                        'label' => 'Engineering',
+                        'value' => 3.7
+                    ],
+                    'q1r3' => [
+                        'label' => 'Research and development (R&D)',
+                        'value' => 22.2
+                    ],
+                    'q1r4' => [
+                        'label' => 'Product innovation (new business initiatives)',
+                        'value' => 25.9
+                    ],
+                    'q1r5' => [
+                        'label' => 'Maintenance and logistics',
+                        'value' => 25.9
+                    ],
+                    'q1r6' => [
+                        'label' => 'Marketing',
+                        'value' => 63.0
+                    ],
+                    'q1r7' => [
+                        'label' => 'Finance',
+                        'value' => 37.0
+                    ],
+                    'q1r8' => [
+                        'label' => 'HR and legal',
+                        'value' => 7.4
+                    ],
+                    'q1r9' => [
+                        'label' => 'Sales',
+                        'value' => 14.8
+                    ],
+                    'q1r10' => [
+                        'label' => 'Product management',
+                        'value' => 29.6
+                    ],
+                    'q1r11' => [
+                        'label' => 'Governance, risk, and compliance',
+                        'value' => 14.8
+                    ],
+                    'q1r12' => [
+                        'label' => 'IT and data operations',
+                        'value' => 37.0
+                    ],
+                    'q1r13' => [
+                        'label' => 'Other, please specify',
+                        'value' => 0.0
+                    ],
+                    'q1r14' => [
+                        'label' => 'All the above',
+                        'value' => 0.0
+                    ],
+                ],
+                'qsectorr8' => [
+                    'q1r1' => [
+                        'label' => 'Customer service and support',
+                        'value' => 27.3
+                    ],
+                    'q1r2' => [
+                        'label' => 'Engineering',
+                        'value' => 22.7
+                    ],
+                    'q1r3' => [
+                        'label' => 'Research and development (R&D)',
+                        'value' => 22.7
+                    ],
+                    'q1r4' => [
+                        'label' => 'Product innovation (new business initiatives)',
+                        'value' => 30.3
+                    ],
+                    'q1r5' => [
+                        'label' => 'Maintenance and logistics',
+                        'value' => 39.4
+                    ],
+                    'q1r6' => [
+                        'label' => 'Marketing',
+                        'value' => 33.3
+                    ],
+                    'q1r7' => [
+                        'label' => 'Finance',
+                        'value' => 27.3
+                    ],
+                    'q1r8' => [
+                        'label' => 'HR and legal',
+                        'value' => 16.7
+                    ],
+                    'q1r9' => [
+                        'label' => 'Sales',
+                        'value' => 37.9
+                    ],
+                    'q1r10' => [
+                        'label' => 'Product management',
+                        'value' => 28.8
+                    ],
+                    'q1r11' => [
+                        'label' => 'Governance, risk, and compliance',
+                        'value' => 16.7
+                    ],
+                    'q1r12' => [
+                        'label' => 'IT and data operations',
+                        'value' => 34.8
+                    ],
+                    'q1r13' => [
+                        'label' => 'Other, please specify',
+                        'value' => 0.0
+                    ],
+                    'q1r14' => [
+                        'label' => 'All the above',
+                        'value' => 0.0
+                    ],
+                ],
+                'qsectorr9' => [
+                    'q1r1' => [
+                        'label' => 'Customer service and support',
+                        'value' => 26.8
+                    ],
+                    'q1r2' => [
+                        'label' => 'Engineering',
+                        'value' => 26.8
+                    ],
+                    'q1r3' => [
+                        'label' => 'Research and development (R&D)',
+                        'value' => 26.8
+                    ],
+                    'q1r4' => [
+                        'label' => 'Product innovation (new business initiatives)',
+                        'value' => 21.1
+                    ],
+                    'q1r5' => [
+                        'label' => 'Maintenance and logistics',
+                        'value' => 25.4
+                    ],
+                    'q1r6' => [
+                        'label' => 'Marketing',
+                        'value' => 22.5
+                    ],
+                    'q1r7' => [
+                        'label' => 'Finance',
+                        'value' => 26.8
+                    ],
+                    'q1r8' => [
+                        'label' => 'HR and legal',
+                        'value' => 18.3
+                    ],
+                    'q1r9' => [
+                        'label' => 'Sales',
+                        'value' => 21.1
+                    ],
+                    'q1r10' => [
+                        'label' => 'Product management',
+                        'value' => 21.1
+                    ],
+                    'q1r11' => [
+                        'label' => 'Governance, risk, and compliance',
+                        'value' => 18.3
+                    ],
+                    'q1r12' => [
+                        'label' => 'IT and data operations',
+                        'value' => 25.4
+                    ],
+                    'q1r13' => [
+                        'label' => 'Other, please specify',
+                        'value' => 1.4
+                    ],
+                    'q1r14' => [
+                        'label' => 'All the above',
+                        'value' => 0.0
+                    ],
+                ],
+            ],
+            'q2' => [
+                'qsectorr1' => [
+                    'q2r1' => [
+                        'label' => 'Better understand customer behavior and expectations',
+                        'value' => 0.31
+                    ],
+                    'q2r2' => [
+                        'label' => 'Optimize our pricing strategies and go-to-market programs',
+                        'value' => 0.35
+                    ],
+                    'q2r3' => [
+                        'label' => 'Product, services, or program improvement and innovation',
+                        'value' => 0.37
+                    ],
+                    'q2r4' => [
+                        'label' => 'Improve our understanding of the market and our competitors',
+                        'value' => 0.38
+                    ],
+                    'q2r5' => [
+                        'label' => 'Improve and optimize our business processes and operations',
+                        'value' => 0.31
+                    ],
+                    'q2r6' => [
+                        'label' => 'Improve our facilities, and equipment design, maintenance, and utilization',
+                        'value' => 0.34
+                    ],
+                    'q2r7' => [
+                        'label' => 'Improve our operational, fraud, and risk management',
+                        'value' => 0.25
+                    ],
+                    'q2r8' => [
+                        'label' => 'Implement better regulatory compliance and financial controls',
+                        'value' => 0.42
+                    ],
+                    'q2r9' => [
+                        'label' => 'Other, please specify',
+                        'value' => 0.00
+                    ]
+                ],
+                'qsectorr2' => [
+                    'q2r1' => [
+                        'label' => 'Better understand customer behavior and expectations',
+                        'value' => 0.49
+                    ],
+                    'q2r2' => [
+                        'label' => 'Optimize our pricing strategies and go-to-market programs',
+                        'value' => 0.47
+                    ],
+                    'q2r3' => [
+                        'label' => 'Product, services, or program improvement and innovation',
+                        'value' => 0.45
+                    ],
+                    'q2r4' => [
+                        'label' => 'Improve our understanding of the market and our competitors',
+                        'value' => 0.42
+                    ],
+                    'q2r5' => [
+                        'label' => 'Improve and optimize our business processes and operations',
+                        'value' => 0.44
+                    ],
+                    'q2r6' => [
+                        'label' => 'Improve our facilities, and equipment design, maintenance, and utilization',
+                        'value' => 0.40
+                    ],
+                    'q2r7' => [
+                        'label' => 'Improve our operational, fraud, and risk management',
+                        'value' => 0.32
+                    ],
+                    'q2r8' => [
+                        'label' => 'Implement better regulatory compliance and financial controls',
+                        'value' => 0.36
+                    ],
+                    'q2r9' => [
+                        'label' => 'Other, please specify',
+                        'value' => 0.01
+                    ]
+                ],
+                'qsectorr3' => [
+                    'q2r1' => [
+                        'label' => 'Better understand customer behavior and expectations',
+                        'value' => 0.39
+                    ],
+                    'q2r2' => [
+                        'label' => 'Optimize our pricing strategies and go-to-market programs',
+                        'value' => 0.42
+                    ],
+                    'q2r3' => [
+                        'label' => 'Product, services, or program improvement and innovation',
+                        'value' => 0.43
+                    ],
+                    'q2r4' => [
+                        'label' => 'Improve our understanding of the market and our competitors',
+                        'value' => 0.42
+                    ],
+                    'q2r5' => [
+                        'label' => 'Improve and optimize our business processes and operations',
+                        'value' => 0.47
+                    ],
+                    'q2r6' => [
+                        'label' => 'Improve our facilities, and equipment design, maintenance, and utilization',
+                        'value' => 0.39
+                    ],
+                    'q2r7' => [
+                        'label' => 'Improve our operational, fraud, and risk management',
+                        'value' => 0.52
+                    ],
+                    'q2r8' => [
+                        'label' => 'Implement better regulatory compliance and financial controls',
+                        'value' => 0.39
+                    ],
+                    'q2r9' => [
+                        'label' => 'Other, please specify',
+                        'value' => 0.01
+                    ]
+                ],
+                'qsectorr4' => [
+                    'q2r1' => [
+                        'label' => 'Better understand customer behavior and expectations',
+                        'value' => 0.36
+                    ],
+                    'q2r2' => [
+                        'label' => 'Optimize our pricing strategies and go-to-market programs',
+                        'value' => 0.43
+                    ],
+                    'q2r3' => [
+                        'label' => 'Product, services, or program improvement and innovation',
+                        'value' => 0.44
+                    ],
+                    'q2r4' => [
+                        'label' => 'Improve our understanding of the market and our competitors',
+                        'value' => 0.42
+                    ],
+                    'q2r5' => [
+                        'label' => 'Improve and optimize our business processes and operations',
+                        'value' => 0.44
+                    ],
+                    'q2r6' => [
+                        'label' => 'Improve our facilities, and equipment design, maintenance, and utilization',
+                        'value' => 0.42
+                    ],
+                    'q2r7' => [
+                        'label' => 'Improve our operational, fraud, and risk management',
+                        'value' => 0.37
+                    ],
+                    'q2r8' => [
+                        'label' => 'Implement better regulatory compliance and financial controls',
+                        'value' => 0.46
+                    ],
+                    'q2r9' => [
+                        'label' => 'Other, please specify',
+                        'value' => 0.00
+                    ]
+                ],
+                'qsectorr5' => [
+                    'q2r1' => [
+                        'label' => 'Better understand customer behavior and expectations',
+                        'value' => 0.39
+                    ],
+                    'q2r2' => [
+                        'label' => 'Optimize our pricing strategies and go-to-market programs',
+                        'value' => 0.39
+                    ],
+                    'q2r3' => [
+                        'label' => 'Product, services, or program improvement and innovation',
+                        'value' => 0.40
+                    ],
+                    'q2r4' => [
+                        'label' => 'Improve our understanding of the market and our competitors',
+                        'value' => 0.48
+                    ],
+                    'q2r5' => [
+                        'label' => 'Improve and optimize our business processes and operations',
+                        'value' => 0.47
+                    ],
+                    'q2r6' => [
+                        'label' => 'Improve our facilities, and equipment design, maintenance, and utilization',
+                        'value' => 0.48
+                    ],
+                    'q2r7' => [
+                        'label' => 'Improve our operational, fraud, and risk management',
+                        'value' => 0.45
+                    ],
+                    'q2r8' => [
+                        'label' => 'Implement better regulatory compliance and financial controls',
+                        'value' => 0.30
+                    ],
+                    'q2r9' => [
+                        'label' => 'Other, please specify',
+                        'value' => 0.01
+                    ]
+                ],
+                'qsectorr6' => [
+                    'q2r1' => [
+                        'label' => 'Better understand customer behavior and expectations',
+                        'value' => 0.49
+                    ],
+                    'q2r2' => [
+                        'label' => 'Optimize our pricing strategies and go-to-market programs',
+                        'value' => 0.47
+                    ],
+                    'q2r3' => [
+                        'label' => 'Product, services, or program improvement and innovation',
+                        'value' => 0.41
+                    ],
+                    'q2r4' => [
+                        'label' => 'Improve our understanding of the market and our competitors',
+                        'value' => 0.45
+                    ],
+                    'q2r5' => [
+                        'label' => 'Improve and optimize our business processes and operations',
+                        'value' => 0.57
+                    ],
+                    'q2r6' => [
+                        'label' => 'Improve our facilities, and equipment design, maintenance, and utilization',
+                        'value' => 0.42
+                    ],
+                    'q2r7' => [
+                        'label' => 'Improve our operational, fraud, and risk management',
+                        'value' => 0.41
+                    ],
+                    'q2r8' => [
+                        'label' => 'Implement better regulatory compliance and financial controls',
+                        'value' => 0.36
+                    ],
+                    'q2r9' => [
+                        'label' => 'Other, please specify',
+                        'value' => 0.00
+                    ]
+                ],
+                'qsectorr7' => [
+                    'q2r1' => [
+                        'label' => 'Better understand customer behavior and expectations',
+                        'value' => 0.37
+                    ],
+                    'q2r2' => [
+                        'label' => 'Optimize our pricing strategies and go-to-market programs',
+                        'value' => 0.48
+                    ],
+                    'q2r3' => [
+                        'label' => 'Product, services, or program improvement and innovation',
+                        'value' => 0.37
+                    ],
+                    'q2r4' => [
+                        'label' => 'Improve our understanding of the market and our competitors',
+                        'value' => 0.63
+                    ],
+                    'q2r5' => [
+                        'label' => 'Improve and optimize our business processes and operations',
+                        'value' => 0.44
+                    ],
+                    'q2r6' => [
+                        'label' => 'Improve our facilities, and equipment design, maintenance, and utilization',
+                        'value' => 0.30
+                    ],
+                    'q2r7' => [
+                        'label' => 'Improve our operational, fraud, and risk management',
+                        'value' => 0.41
+                    ],
+                    'q2r8' => [
+                        'label' => 'Implement better regulatory compliance and financial controls',
+                        'value' => 0.44
+                    ],
+                    'q2r9' => [
+                        'label' => 'Other, please specify',
+                        'value' => 0.00
+                    ]
+                ],
+                'qsectorr8' => [
+                    'q2r1' => [
+                        'label' => 'Better understand customer behavior and expectations',
+                        'value' => 0.39
+                    ],
+                    'q2r2' => [
+                        'label' => 'Optimize our pricing strategies and go-to-market programs',
+                        'value' => 0.41
+                    ],
+                    'q2r3' => [
+                        'label' => 'Product, services, or program improvement and innovation',
+                        'value' => 0.41
+                    ],
+                    'q2r4' => [
+                        'label' => 'Improve our understanding of the market and our competitors',
+                        'value' => 0.48
+                    ],
+                    'q2r5' => [
+                        'label' => 'Improve and optimize our business processes and operations',
+                        'value' => 0.44
+                    ],
+                    'q2r6' => [
+                        'label' => 'Improve our facilities, and equipment design, maintenance, and utilization',
+                        'value' => 0.29
+                    ],
+                    'q2r7' => [
+                        'label' => 'Improve our operational, fraud, and risk management',
+                        'value' => 0.39
+                    ],
+                    'q2r8' => [
+                        'label' => 'Implement better regulatory compliance and financial controls',
+                        'value' => 0.39
+                    ],
+                    'q2r9' => [
+                        'label' => 'Other, please specify',
+                        'value' => 0.00
+                    ]
+                ],
+                'qsectorr9' => [
+                    'q2r1' => [
+                        'label' => 'Better understand customer behavior and expectations',
+                        'value' => 0.31
+                    ],
+                    'q2r2' => [
+                        'label' => 'Optimize our pricing strategies and go-to-market programs',
+                        'value' => 0.38
+                    ],
+                    'q2r3' => [
+                        'label' => 'Product, services, or program improvement and innovation',
+                        'value' => 0.48
+                    ],
+                    'q2r4' => [
+                        'label' => 'Improve our understanding of the market and our competitors',
+                        'value' => 0.32
+                    ],
+                    'q2r5' => [
+                        'label' => 'Improve and optimize our business processes and operations',
+                        'value' => 0.41
+                    ],
+                    'q2r6' => [
+                        'label' => 'Improve our facilities, and equipment design, maintenance, and utilization',
+                        'value' => 0.31
+                    ],
+                    'q2r7' => [
+                        'label' => 'Improve our operational, fraud, and risk management',
+                        'value' => 0.31
+                    ],
+                    'q2r8' => [
+                        'label' => 'Implement better regulatory compliance and financial controls',
+                        'value' => 0.39
+                    ],
+                    'q2r9' => [
+                        'label' => 'Other, please specify',
+                        'value' => 0.00
+                    ]
+                ],
+            ],
+            'q4' => [
+                'qsectorr1' => [
+                    'q4r1' => 2.60,
+                    'q4r2' => 2.98,
+                    'q4r3' => 3.11,
+                    'q4r4' => 3.11,
+                    'q4r5' => 3.23,
+                    'q4r6' => 2.77,
+                    'q4r7' => 3.06,
+                ],
+                'qsectorr2' => [
+                    'q4r1' => 2.71,
+                    'q4r2' => 3.18,
+                    'q4r3' => 3.83,
+                    'q4r4' => 3.31,
+                    'q4r5' => 3.58,
+                    'q4r6' => 3.22,
+                    'q4r7' => 3.28,
+                ],
+                'qsectorr3' => [
+                    'q4r1' => 2.94,
+                    'q4r2' => 3.17,
+                    'q4r3' => 3.65,
+                    'q4r4' => 3.21,
+                    'q4r5' => 3.65,
+                    'q4r6' => 2.87,
+                    'q4r7' => 3.23,
+                ],
+                'qsectorr4' => [
+                    'q4r1' => 2.63,
+                    'q4r2' => 3.07,
+                    'q4r3' => 3.31,
+                    'q4r4' => 3.08,
+                    'q4r5' => 3.27,
+                    'q4r6' => 2.76,
+                    'q4r7' => 3.01,
+                ],
+                'qsectorr5' => [
+                    'q4r1' => 3.00,
+                    'q4r2' => 3.20,
+                    'q4r3' => 3.43,
+                    'q4r4' => 3.31,
+                    'q4r5' => 3.30,
+                    'q4r6' => 3.03,
+                    'q4r7' => 3.03,
+                ],
+                'qsectorr6' => [
+                    'q4r1' => 2.82,
+                    'q4r2' => 3.27,
+                    'q4r3' => 3.64,
+                    'q4r4' => 3.11,
+                    'q4r5' => 3.55,
+                    'q4r6' => 3.33,
+                    'q4r7' => 3.11,
+                ],
+                'qsectorr7' => [
+                    'q4r1' => 2.78,
+                    'q4r2' => 3.67,
+                    'q4r3' => 4.15,
+                    'q4r4' => 3.26,
+                    'q4r5' => 3.78,
+                    'q4r6' => 3.07,
+                    'q4r7' => 3.07,
+                ],
+                'qsectorr8' => [
+                    'q4r1' => 2.94,
+                    'q4r2' => 3.14,
+                    'q4r3' => 3.44,
+                    'q4r4' => 3.17,
+                    'q4r5' => 3.33,
+                    'q4r6' => 3.14,
+                    'q4r7' => 3.08,
+                ],
+                'qsectorr9' => [
+                    'q4r1' => 2.80,
+                    'q4r2' => 3.21,
+                    'q4r3' => 3.32,
+                    'q4r4' => 3.35,
+                    'q4r5' => 3.42,
+                    'q4r6' => 2.76,
+                    'q4r7' => 2.85,
+                ],
+            ],
+            'q5' => [
+                'qsectorr1' => [
+                    '1' => '0.0%',
+                    '2' => '1.5%',
+                    '3' => '27.7%',
+                    '4' => '67.7%',
+                    '5' => '3.1%',
+                ],
+                'qsectorr2' => [
+                    '1' => '0.0%',
+                    '2' => '0.0%',
+                    '3' => '11.5%',
+                    '4' => '73.1%',
+                    '5' => '14.1%',
+                ],
+                'qsectorr3' => [
+                    '1' => '0.0%',
+                    '2' => '1.3%',
+                    '3' => '11.7%',
+                    '4' => '76.6%',
+                    '5' => '10.4%',
+                ],
+                'qsectorr4' => [
+                    '1' => '0.0%',
+                    '2' => '3.6%',
+                    '3' => '33.3%',
+                    '4' => '58.3%',
+                    '5' => '3.6%',
+                ],
+                'qsectorr5' => [
+                    '1' => '0.0%',
+                    '2' => '2.2%',
+                    '3' => '14.6%',
+                    '4' => '66.3%',
+                    '5' => '14.6%',
+                ],
+                'qsectorr6' => [
+                    '1' => '0.0%',
+                    '2' => '6.0%',
+                    '3' => '9.6%',
+                    '4' => '73.5%',
+                    '5' => '10.8%',
+                ],
+                'qsectorr7' => [
+                    '1' => '0.0%',
+                    '2' => '7.4%',
+                    '3' => '3.7%',
+                    '4' => '85.2%',
+                    '5' => '3.7%',
+                ],
+                'qsectorr8' => [
+                    '1' => '1.5%',
+                    '2' => '1.5%',
+                    '3' => '24.2%',
+                    '4' => '53.0%',
+                    '5' => '18.2%',
+                ],
+                'qsectorr9' => [
+                    '1' => '0.0%',
+                    '2' => '4.2%',
+                    '3' => '19.7%',
+                    '4' => '66.2%',
+                    '5' => '9.9%',
+                ],
+            ],
+            'q6a' => [
+                'qsectorr1' => [
+                    'q6ar1' => 4.77,
+                    'q6ar2' => 3.75,
+                    'q6ar3' => 2.94,
+                ],
+                'qsectorr2' => [
+                    'q6ar1' => 9.85,
+                    'q6ar2' => 8.54,
+                    'q6ar3' => 10.79,
+                ],
+                'qsectorr3' => [
+                    'q6ar1' => 7.31,
+                    'q6ar2' => 7.56,
+                    'q6ar3' => 5.33,
+                ],
+                'qsectorr4' => [
+                    'q6ar1' => 4.79,
+                    'q6ar2' => 4.61,
+                    'q6ar3' => 4.38,
+                ],
+                'qsectorr5' => [
+                    'q6ar1' => 7.14,
+                    'q6ar2' => 7.07,
+                    'q6ar3' => 7.00,
+                ],
+                'qsectorr6' => [
+                    'q6ar1' => 7.46,
+                    'q6ar2' => 7.43,
+                    'q6ar3' => 5.00,
+                ],
+                'qsectorr7' => [
+                    'q6ar1' => 7.24,
+                    'q6ar2' => 6.65,
+                    'q6ar3' => 6.10,
+                ],
+                'qsectorr8' => [
+                    'q6ar1' => 5.96,
+                    'q6ar2' => 8.09,
+                    'q6ar3' => 5.27,
+                ],
+                'qsectorr9' => [
+                    'q6ar1' => 6.13,
+                    'q6ar2' => 5.47,
+                    'q6ar3' => 4.57,
+                ],
+            ],
+            'q7' => [
+                'qsectorr1' => [
+                    'q7r1' => 3.14,
+                    'q7r2' => 3.02,
+                    'q7r3' => 3.28,
+                    'q7r4' => 2.85,
+                    'q7r5' => 3.00,
+                ],
+                'qsectorr2' => [
+                    'q7r1' => 3.40,
+                    'q7r2' => 3.69,
+                    'q7r3' => 3.63,
+                    'q7r4' => 3.04,
+                    'q7r5' => 3.46,
+                ],
+                'qsectorr3' => [
+                    'q7r1' => 3.39,
+                    'q7r2' => 3.64,
+                    'q7r3' => 3.52,
+                    'q7r4' => 3.01,
+                    'q7r5' => 3.38,
+                ],
+                'qsectorr4' => [
+                    'q7r1' => 3.12,
+                    'q7r2' => 3.36,
+                    'q7r3' => 3.43,
+                    'q7r4' => 3.12,
+                    'q7r5' => 3.08,
+                ],
+                'qsectorr5' => [
+                    'q7r1' => 3.15,
+                    'q7r2' => 3.46,
+                    'q7r3' => 3.29,
+                    'q7r4' => 3.04,
+                    'q7r5' => 3.02,
+                ],
+                'qsectorr6' => [
+                    'q7r1' => 3.28,
+                    'q7r2' => 3.53,
+                    'q7r3' => 3.63,
+                    'q7r4' => 3.11,
+                    'q7r5' => 3.36,
+                ],
+                'qsectorr7' => [
+                    'q7r1' => 3.89,
+                    'q7r2' => 3.81,
+                    'q7r3' => 3.78,
+                    'q7r4' => 3.04,
+                    'q7r5' => 3.41,
+                ],
+                'qsectorr8' => [
+                    'q7r1' => 3.50,
+                    'q7r2' => 3.41,
+                    'q7r3' => 3.59,
+                    'q7r4' => 3.06,
+                    'q7r5' => 3.05,
+                ],
+                'qsectorr9' => [
+                    'q7r1' => 3.23,
+                    'q7r2' => 3.34,
+                    'q7r3' => 3.42,
+                    'q7r4' => 3.04,
+                    'q7r5' => 3.10,
+                ],
+            ],
+            'q8' => [
+                'qsectorr1' => [
+                    'q8r1' => 8,
+                    'q8r2' => 5,
+                    'q8r3' => 2,
+                    'q8r4' => 11,
+                    'q8r5' => 11,
+                    'q8r6' => 11,
+                    'q8r7' => 11,
+                    'q8r8' => 11,
+                    'q8r9' => 11,
+                    'q8r10' => 4,
+                    'q8r11' => 7,
+                    'q8r12' => 10,
+                    'q8r13' => 1,
+                    'q8r14' => 6,
+                    'q8r15' => 8,
+                    'q8r16' => 2,
+                    'q8r17' => 11,
+                    'q8r18' => 11,
+                    'q8r19' => 11,
+                    'q8r20' => 11,
+                    'q8r21' => 11,
+                    'q8r22' => 11,
+                    'q8r23' => 11,
+                    'q8r24' => 11,
+                    'q8r25' => 11,
+                    'q8r26' => 11,
+                    'q8r27' => 11,
+                    'q8r28' => 11,
+                    'q8r29' => 11,
+                    'q8r30' => 11,
+                    'q8r31' => 11,
+                    'q8r32' => 11,
+                    'q8r33' => 11,
+                    'q8r34' => 11,
+                    'q8r35' => 11,
+                ],
+                'qsectorr2' => [
+                    'q8r1' => 5,
+                    'q8r2' => 7,
+                    'q8r3' => 8,
+                    'q8r4' => 4,
+                    'q8r5' => 9,
+                    'q8r6' => 10,
+                    'q8r7' => 6,
+                    'q8r8' => 2,
+                    'q8r9' => 1,
+                    'q8r10' => 10,
+                    'q8r11' => 10,
+                    'q8r12' => 10,
+                    'q8r13' => 10,
+                    'q8r14' => 10,
+                    'q8r15' => 10,
+                    'q8r16' => 10,
+                    'q8r17' => 10,
+                    'q8r18' => 10,
+                    'q8r19' => 2,
+                    'q8r20' => 10,
+                    'q8r21' => 10,
+                    'q8r22' => 10,
+                    'q8r23' => 10,
+                    'q8r24' => 10,
+                    'q8r25' => 10,
+                    'q8r26' => 10,
+                    'q8r27' => 10,
+                    'q8r28' => 10,
+                    'q8r29' => 10,
+                    'q8r30' => 10,
+                    'q8r31' => 10,
+                    'q8r32' => 10,
+                    'q8r33' => 10,
+                    'q8r34' => 10,
+                    'q8r35' => 10,
+                ],
+                'qsectorr3' => [
+                    'q8r1' => 3,
+                    'q8r2' => 10,
+                    'q8r3' => 8,
+                    'q8r4' => 7,
+                    'q8r5' => 11,
+                    'q8r6' => 5,
+                    'q8r7' => 8,
+                    'q8r8' => 1,
+                    'q8r9' => 1,
+                    'q8r10' => 12,
+                    'q8r11' => 12,
+                    'q8r12' => 12,
+                    'q8r13' => 12,
+                    'q8r14' => 12,
+                    'q8r15' => 12,
+                    'q8r16' => 12,
+                    'q8r17' => 6,
+                    'q8r18' => 4,
+                    'q8r19' => 12,
+                    'q8r20' => 12,
+                    'q8r21' => 12,
+                    'q8r22' => 12,
+                    'q8r23' => 12,
+                    'q8r24' => 12,
+                    'q8r25' => 12,
+                    'q8r26' => 12,
+                    'q8r27' => 12,
+                    'q8r28' => 12,
+                    'q8r29' => 12,
+                    'q8r30' => 12,
+                    'q8r31' => 12,
+                    'q8r32' => 12,
+                    'q8r33' => 12,
+                    'q8r34' => 12,
+                    'q8r35' => 12,
+                ],
+                'qsectorr4' => [
+                    'q8r1' => 3,
+                    'q8r2' => 1,
+                    'q8r3' => 7,
+                    'q8r4' => 9,
+                    'q8r5' => 11,
+                    'q8r6' => 11,
+                    'q8r7' => 10,
+                    'q8r8' => 11,
+                    'q8r9' => 6,
+                    'q8r10' => 11,
+                    'q8r11' => 11,
+                    'q8r12' => 11,
+                    'q8r13' => 11,
+                    'q8r14' => 11,
+                    'q8r15' => 11,
+                    'q8r16' => 11,
+                    'q8r17' => 11,
+                    'q8r18' => 11,
+                    'q8r19' => 11,
+                    'q8r20' => 2,
+                    'q8r21' => 5,
+                    'q8r22' => 4,
+                    'q8r23' => 8,
+                    'q8r24' => 11,
+                    'q8r25' => 11,
+                    'q8r26' => 11,
+                    'q8r27' => 11,
+                    'q8r28' => 11,
+                    'q8r29' => 11,
+                    'q8r30' => 11,
+                    'q8r31' => 11,
+                    'q8r32' => 11,
+                    'q8r33' => 11,
+                    'q8r34' => 11,
+                    'q8r35' => 11,
+                ],
+                'qsectorr5' => [
+                    'q8r1' => 10,
+                    'q8r2' => 11,
+                    'q8r3' => 1,
+                    'q8r4' => 6,
+                    'q8r5' => 12,
+                    'q8r6' => 12,
+                    'q8r7' => 12,
+                    'q8r8' => 12,
+                    'q8r9' => 12,
+                    'q8r10' => 9,
+                    'q8r11' => 8,
+                    'q8r12' => 3,
+                    'q8r13' => 12,
+                    'q8r14' => 12,
+                    'q8r15' => 12,
+                    'q8r16' => 12,
+                    'q8r17' => 12,
+                    'q8r18' => 12,
+                    'q8r19' => 12,
+                    'q8r20' => 12,
+                    'q8r21' => 12,
+                    'q8r22' => 12,
+                    'q8r23' => 12,
+                    'q8r24' => 4,
+                    'q8r25' => 5,
+                    'q8r26' => 6,
+                    'q8r27' => 12,
+                    'q8r28' => 12,
+                    'q8r29' => 12,
+                    'q8r30' => 12,
+                    'q8r31' => 12,
+                    'q8r32' => 2,
+                    'q8r33' => 12,
+                    'q8r34' => 12,
+                    'q8r35' => 12,
+                ],
+                'qsectorr6' => [
+                    'q8r1' => 11,
+                    'q8r2' => 8,
+                    'q8r3' => 3,
+                    'q8r4' => 4,
+                    'q8r5' => 9,
+                    'q8r6' => 13,
+                    'q8r7' => 13,
+                    'q8r8' => 7,
+                    'q8r9' => 2,
+                    'q8r10' => 10,
+                    'q8r11' => 1,
+                    'q8r12' => 5,
+                    'q8r13' => 13,
+                    'q8r14' => 13,
+                    'q8r15' => 13,
+                    'q8r16' => 13,
+                    'q8r17' => 13,
+                    'q8r18' => 13,
+                    'q8r19' => 13,
+                    'q8r20' => 13,
+                    'q8r21' => 13,
+                    'q8r22' => 13,
+                    'q8r23' => 13,
+                    'q8r24' => 13,
+                    'q8r25' => 13,
+                    'q8r26' => 13,
+                    'q8r27' => 12,
+                    'q8r28' => 6,
+                    'q8r29' => 13,
+                    'q8r30' => 13,
+                    'q8r31' => 13,
+                    'q8r32' => 13,
+                    'q8r33' => 13,
+                    'q8r34' => 13,
+                    'q8r35' => 13,
+                ],
+                'qsectorr7' => [
+                    'q8r1' => 8,
+                    'q8r2' => 5,
+                    'q8r3' => 3,
+                    'q8r4' => 2,
+                    'q8r5' => 9,
+                    'q8r6' => 10,
+                    'q8r7' => 10,
+                    'q8r8' => 7,
+                    'q8r9' => 1,
+                    'q8r10' => 10,
+                    'q8r11' => 10,
+                    'q8r12' => 10,
+                    'q8r13' => 10,
+                    'q8r14' => 10,
+                    'q8r15' => 10,
+                    'q8r16' => 10,
+                    'q8r17' => 10,
+                    'q8r18' => 10,
+                    'q8r19' => 10,
+                    'q8r20' => 10,
+                    'q8r21' => 10,
+                    'q8r22' => 10,
+                    'q8r23' => 10,
+                    'q8r24' => 10,
+                    'q8r25' => 10,
+                    'q8r26' => 10,
+                    'q8r27' => 10,
+                    'q8r28' => 10,
+                    'q8r29' => 10,
+                    'q8r30' => 4,
+                    'q8r31' => 6,
+                    'q8r32' => 10,
+                    'q8r33' => 10,
+                    'q8r34' => 10,
+                    'q8r35' => 10,
+                ],
+                'qsectorr8' => [
+                    'q8r1' => 7,
+                    'q8r2' => 5,
+                    'q8r3' => 2,
+                    'q8r4' => 4,
+                    'q8r5' => 10,
+                    'q8r6' => 10,
+                    'q8r7' => 10,
+                    'q8r8' => 10,
+                    'q8r9' => 10,
+                    'q8r10' => 2,
+                    'q8r11' => 6,
+                    'q8r12' => 8,
+                    'q8r13' => 10,
+                    'q8r14' => 10,
+                    'q8r15' => 10,
+                    'q8r16' => 10,
+                    'q8r17' => 10,
+                    'q8r18' => 10,
+                    'q8r19' => 10,
+                    'q8r20' => 10,
+                    'q8r21' => 10,
+                    'q8r22' => 10,
+                    'q8r23' => 10,
+                    'q8r24' => 10,
+                    'q8r25' => 10,
+                    'q8r26' => 10,
+                    'q8r27' => 10,
+                    'q8r28' => 10,
+                    'q8r29' => 10,
+                    'q8r30' => 10,
+                    'q8r31' => 10,
+                    'q8r32' => 1,
+                    'q8r33' => 9,
+                    'q8r34' => 10,
+                    'q8r35' => 10,
+                ],
+                'qsectorr9' => [
+                    'q8r1' => 6,
+                    'q8r2' => 4,
+                    'q8r3' => 6,
+                    'q8r4' => 12,
+                    'q8r5' => 5,
+                    'q8r6' => 3,
+                    'q8r7' => 15,
+                    'q8r8' => 15,
+                    'q8r9' => 15,
+                    'q8r10' => 8,
+                    'q8r11' => 14,
+                    'q8r12' => 1,
+                    'q8r13' => 15,
+                    'q8r14' => 15,
+                    'q8r15' => 15,
+                    'q8r16' => 15,
+                    'q8r17' => 15,
+                    'q8r18' => 15,
+                    'q8r19' => 15,
+                    'q8r20' => 15,
+                    'q8r21' => 15,
+                    'q8r22' => 15,
+                    'q8r23' => 15,
+                    'q8r24' => 2,
+                    'q8r25' => 9,
+                    'q8r26' => 13,
+                    'q8r27' => 15,
+                    'q8r28' => 15,
+                    'q8r29' => 15,
+                    'q8r30' => 15,
+                    'q8r31' => 15,
+                    'q8r32' => 15,
+                    'q8r33' => 15,
+                    'q8r34' => 11,
+                    'q8r35' => 10,
+                ],
+            ]
+        ];
 
         $sizeReference = [
             'q1' => [
@@ -1217,6 +2682,750 @@ class ItalyController extends Controller
                 ],
             ]
         ];
+        $sizeGraphReference = [
+            'q1' => [
+                'qsizer1' => [
+                    'q1r1' => [
+                        'label' => 'Customer service and support',
+                        'value' => 26.4
+                    ],
+                    'q1r2' => [
+                        'label' => 'Engineering',
+                        'value' => 24.3
+                    ],
+                    'q1r3' => [
+                        'label' => 'Research and development (R&D)',
+                        'value' => 17.6
+                    ],
+                    'q1r4' => [
+                        'label' => 'Product innovation (new business initiatives)',
+                        'value' => 24.3
+                    ],
+                    'q1r5' => [
+                        'label' => 'Maintenance and logistics',
+                        'value' => 25.7
+                    ],
+                    'q1r6' => [
+                        'label' => 'Marketing',
+                        'value' => 34.5
+                    ],
+                    'q1r7' => [
+                        'label' => 'Finance',
+                        'value' => 23.0
+                    ],
+                    'q1r8' => [
+                        'label' => 'HR and legal',
+                        'value' => 12.8
+                    ],
+                    'q1r9' => [
+                        'label' => 'Sales',
+                        'value' => 31.8
+                    ],
+                    'q1r10' => [
+                        'label' => 'Product management',
+                        'value' => 33.1
+                    ],
+                    'q1r11' => [
+                        'label' => 'Governance, risk, and compliance',
+                        'value' => 21.6
+                    ],
+                    'q1r12' => [
+                        'label' => 'IT and data operations',
+                        'value' => 33.8
+                    ],
+                    'q1r13' => [
+                        'label' => 'Other, please specify',
+                        'value' => 2.0
+                    ],
+                    'q1r14' => [
+                        'label' => 'All the above',
+                        'value' => 0.0
+                    ],
+                ],
+                'qsizer2' => [
+                    'q1r1' => [
+                        'label' => 'Customer service and support',
+                        'value' => 34.6
+                    ],
+                    'q1r2' => [
+                        'label' => 'Engineering',
+                        'value' => 25.7
+                    ],
+                    'q1r3' => [
+                        'label' => 'Research and development (R&D)',
+                        'value' => 26.3
+                    ],
+                    'q1r4' => [
+                        'label' => 'Product innovation (new business initiatives)',
+                        'value' => 22.9
+                    ],
+                    'q1r5' => [
+                        'label' => 'Maintenance and logistics',
+                        'value' => 29.6
+                    ],
+                    'q1r6' => [
+                        'label' => 'Marketing',
+                        'value' => 34.1
+                    ],
+                    'q1r7' => [
+                        'label' => 'Finance',
+                        'value' => 25.1
+                    ],
+                    'q1r8' => [
+                        'label' => 'HR and legal',
+                        'value' => 19.0
+                    ],
+                    'q1r9' => [
+                        'label' => 'Sales',
+                        'value' => 30.7
+                    ],
+                    'q1r10' => [
+                        'label' => 'Product management',
+                        'value' => 30.2
+                    ],
+                    'q1r11' => [
+                        'label' => 'Governance, risk, and compliance',
+                        'value' => 18.4
+                    ],
+                    'q1r12' => [
+                        'label' => 'IT and data operations',
+                        'value' => 32.4
+                    ],
+                    'q1r13' => [
+                        'label' => 'Other, please specify',
+                        'value' => 1.1
+                    ],
+                    'q1r14' => [
+                        'label' => 'All the above',
+                        'value' => 0.0
+                    ],
+                ],
+                'qsizer3' => [
+                    'q1r1' => [
+                        'label' => 'Customer service and support',
+                        'value' => 38.0
+                    ],
+                    'q1r2' => [
+                        'label' => 'Engineering',
+                        'value' => 21.8
+                    ],
+                    'q1r3' => [
+                        'label' => 'Research and development (R&D)',
+                        'value' => 17.9
+                    ],
+                    'q1r4' => [
+                        'label' => 'Product innovation (new business initiatives)',
+                        'value' => 21.2
+                    ],
+                    'q1r5' => [
+                        'label' => 'Maintenance and logistics',
+                        'value' => 23.5
+                    ],
+                    'q1r6' => [
+                        'label' => 'Marketing',
+                        'value' => 41.3
+                    ],
+                    'q1r7' => [
+                        'label' => 'Finance',
+                        'value' => 27.4
+                    ],
+                    'q1r8' => [
+                        'label' => 'HR and legal',
+                        'value' => 17.9
+                    ],
+                    'q1r9' => [
+                        'label' => 'Sales',
+                        'value' => 29.6
+                    ],
+                    'q1r10' => [
+                        'label' => 'Product management',
+                        'value' => 30.2
+                    ],
+                    'q1r11' => [
+                        'label' => 'Governance, risk, and compliance',
+                        'value' => 16.8
+                    ],
+                    'q1r12' => [
+                        'label' => 'IT and data operations',
+                        'value' => 35.8
+                    ],
+                    'q1r13' => [
+                        'label' => 'Other, please specify',
+                        'value' => 0.0
+                    ],
+                    'q1r14' => [
+                        'label' => 'All the above',
+                        'value' => 0.0
+                    ],
+                ],
+                'qsizer4' => [
+                    'q1r1' => [
+                        'label' => 'Customer service and support',
+                        'value' => 37.1
+                    ],
+                    'q1r2' => [
+                        'label' => 'Engineering',
+                        'value' => 17.0
+                    ],
+                    'q1r3' => [
+                        'label' => 'Research and development (R&D)',
+                        'value' => 30.4
+                    ],
+                    'q1r4' => [
+                        'label' => 'Product innovation (new business initiatives)',
+                        'value' => 24.2
+                    ],
+                    'q1r5' => [
+                        'label' => 'Maintenance and logistics',
+                        'value' => 33.5
+                    ],
+                    'q1r6' => [
+                        'label' => 'Marketing',
+                        'value' => 30.9
+                    ],
+                    'q1r7' => [
+                        'label' => 'Finance',
+                        'value' => 33.0
+                    ],
+                    'q1r8' => [
+                        'label' => 'HR and legal',
+                        'value' => 16.5
+                    ],
+                    'q1r9' => [
+                        'label' => 'Sales',
+                        'value' => 20.1
+                    ],
+                    'q1r10' => [
+                        'label' => 'Product management',
+                        'value' => 35.1
+                    ],
+                    'q1r11' => [
+                        'label' => 'Governance, risk, and compliance',
+                        'value' => 20.1
+                    ],
+                    'q1r12' => [
+                        'label' => 'IT and data operations',
+                        'value' => 33.0
+                    ],
+                    'q1r13' => [
+                        'label' => 'Other, please specify',
+                        'value' => 1.0
+                    ],
+                    'q1r14' => [
+                        'label' => 'All the above',
+                        'value' => 0.5
+                    ],
+                ],
+            ],
+            'q2' => [
+                'qsizer1' => [
+                    'q2r1' => [
+                        'label' => 'Better understand customer behavior and expectations',
+                        'value' => 0.36
+                    ],
+                    'q2r2' => [
+                        'label' => 'Optimize our pricing strategies and go-to-market programs',
+                        'value' => 0.36
+                    ],
+                    'q2r3' => [
+                        'label' => 'Product, services, or program improvement and innovation',
+                        'value' => 0.42
+                    ],
+                    'q2r4' => [
+                        'label' => 'Improve our understanding of the market and our competitors',
+                        'value' => 0.43
+                    ],
+                    'q2r5' => [
+                        'label' => 'Improve and optimize our business processes and operations',
+                        'value' => 0.45
+                    ],
+                    'q2r6' => [
+                        'label' => 'Improve our facilities, and equipment design, maintenance, and utilization',
+                        'value' => 0.45
+                    ],
+                    'q2r7' => [
+                        'label' => 'Improve our operational, fraud, and risk management',
+                        'value' => 0.31
+                    ],
+                    'q2r8' => [
+                        'label' => 'Implement better regulatory compliance and financial controls',
+                        'value' => 0.38
+                    ],
+                    'q2r9' => [
+                        'label' => 'Other, please specify',
+                        'value' => 0.00
+                    ]
+                ],
+                'qsizer2' => [
+                    'q2r1' => [
+                        'label' => 'Better understand customer behavior and expectations',
+                        'value' => 0.37
+                    ],
+                    'q2r2' => [
+                        'label' => 'Optimize our pricing strategies and go-to-market programs',
+                        'value' => 0.42
+                    ],
+                    'q2r3' => [
+                        'label' => 'Product, services, or program improvement and innovation',
+                        'value' => 0.43
+                    ],
+                    'q2r4' => [
+                        'label' => 'Improve our understanding of the market and our competitors',
+                        'value' => 0.42
+                    ],
+                    'q2r5' => [
+                        'label' => 'Improve and optimize our business processes and operations',
+                        'value' => 0.46
+                    ],
+                    'q2r6' => [
+                        'label' => 'Improve our facilities, and equipment design, maintenance, and utilization',
+                        'value' => 0.33
+                    ],
+                    'q2r7' => [
+                        'label' => 'Improve our operational, fraud, and risk management',
+                        'value' => 0.41
+                    ],
+                    'q2r8' => [
+                        'label' => 'Implement better regulatory compliance and financial controls',
+                        'value' => 0.34
+                    ],
+                    'q2r9' => [
+                        'label' => 'Other, please specify',
+                        'value' => 0.01
+                    ]
+                ],
+                'qsizer3' => [
+                    'q2r1' => [
+                        'label' => 'Better understand customer behavior and expectations',
+                        'value' => 0.41
+                    ],
+                    'q2r2' => [
+                        'label' => 'Optimize our pricing strategies and go-to-market programs',
+                        'value' => 0.41
+                    ],
+                    'q2r3' => [
+                        'label' => 'Product, services, or program improvement and innovation',
+                        'value' => 0.36
+                    ],
+                    'q2r4' => [
+                        'label' => 'Improve our understanding of the market and our competitors',
+                        'value' => 0.41
+                    ],
+                    'q2r5' => [
+                        'label' => 'Improve and optimize our business processes and operations',
+                        'value' => 0.38
+                    ],
+                    'q2r6' => [
+                        'label' => 'Improve our facilities, and equipment design, maintenance, and utilization',
+                        'value' => 0.42
+                    ],
+                    'q2r7' => [
+                        'label' => 'Improve our operational, fraud, and risk management',
+                        'value' => 0.39
+                    ],
+                    'q2r8' => [
+                        'label' => 'Implement better regulatory compliance and financial controls',
+                        'value' => 0.41
+                    ],
+                    'q2r9' => [
+                        'label' => 'Other, please specify',
+                        'value' => 0.01
+                    ]
+                ],
+                'qsizer4' => [
+                    'q2r1' => [
+                        'label' => 'Better understand customer behavior and expectations',
+                        'value' => 0.41
+                    ],
+                    'q2r2' => [
+                        'label' => 'Optimize our pricing strategies and go-to-market programs',
+                        'value' => 0.43
+                    ],
+                    'q2r3' => [
+                        'label' => 'Product, services, or program improvement and innovation',
+                        'value' => 0.45
+                    ],
+                    'q2r4' => [
+                        'label' => 'Improve our understanding of the market and our competitors',
+                        'value' => 0.46
+                    ],
+                    'q2r5' => [
+                        'label' => 'Improve and optimize our business processes and operations',
+                        'value' => 0.48
+                    ],
+                    'q2r6' => [
+                        'label' => 'Improve our facilities, and equipment design, maintenance, and utilization',
+                        'value' => 0.37
+                    ],
+                    'q2r7' => [
+                        'label' => 'Improve our operational, fraud, and risk management',
+                        'value' => 0.39
+                    ],
+                    'q2r8' => [
+                        'label' => 'Implement better regulatory compliance and financial controls',
+                        'value' => 0.41
+                    ],
+                    'q2r9' => [
+                        'label' => 'Other, please specify',
+                        'value' => 0.01
+                    ]
+                ],
+            ],
+            'q4' => [
+                'qsizer1' => [
+                    'q4r1' => [
+                        'label' => 'Cost reduction',
+                        'value' => 2.95
+                    ],
+                    'q4r2' => [
+                        'label' => 'Time efficiency',
+                        'value' => 3.03
+                    ],
+                    'q4r3' => [
+                        'label' => 'Product/service quality',
+                        'value' => 3.09
+                    ],
+                    'q4r4' => [
+                        'label' => 'Revenue growth',
+                        'value' => 3.07
+                    ],
+                    'q4r5' => [
+                        'label' => 'Customer satisfaction',
+                        'value' => 3.15
+                    ],
+                    'q4r6' => [
+                        'label' => 'Business model innovation',
+                        'value' => 2.82
+                    ],
+                    'q4r7' => [
+                        'label' => 'Increase in the number of NEW products or services launched',
+                        'value' => 2.94
+                    ]
+                ],
+                'qsizer2' => [
+                    'q4r1' => [
+                        'label' => 'Cost reduction',
+                        'value' => 2.77
+                    ],
+                    'q4r2' => [
+                        'label' => 'Time efficiency',
+                        'value' => 3.06
+                    ],
+                    'q4r3' => [
+                        'label' => 'Product/service quality',
+                        'value' => 3.26
+                    ],
+                    'q4r4' => [
+                        'label' => 'Revenue growth',
+                        'value' => 3.26
+                    ],
+                    'q4r5' => [
+                        'label' => 'Customer satisfaction',
+                        'value' => 3.45
+                    ],
+                    'q4r6' => [
+                        'label' => 'Business model innovation',
+                        'value' => 3.04
+                    ],
+                    'q4r7' => [
+                        'label' => 'Increase in the number of NEW products or services launched',
+                        'value' => 3.06
+                    ]
+                ],
+                'qsizer3' => [
+                    'q4r1' => [
+                        'label' => 'Cost reduction',
+                        'value' => 2.77
+                    ],
+                    'q4r2' => [
+                        'label' => 'Time efficiency',
+                        'value' => 3.23
+                    ],
+                    'q4r3' => [
+                        'label' => 'Product/service quality',
+                        'value' => 3.67
+                    ],
+                    'q4r4' => [
+                        'label' => 'Revenue growth',
+                        'value' => 3.30
+                    ],
+                    'q4r5' => [
+                        'label' => 'Customer satisfaction',
+                        'value' => 3.46
+                    ],
+                    'q4r6' => [
+                        'label' => 'Business model innovation',
+                        'value' => 3.05
+                    ],
+                    'q4r7' => [
+                        'label' => 'Increase in the number of NEW products or services launched',
+                        'value' => 3.21
+                    ]
+                ],
+                'qsizer4' => [
+                    'q4r1' => [
+                        'label' => 'Cost reduction',
+                        'value' => 2.71
+                    ],
+                    'q4r2' => [
+                        'label' => 'Time efficiency',
+                        'value' => 3.41
+                    ],
+                    'q4r3' => [
+                        'label' => 'Product/service quality',
+                        'value' => 3.88
+                    ],
+                    'q4r4' => [
+                        'label' => 'Revenue growth',
+                        'value' => 3.21
+                    ],
+                    'q4r5' => [
+                        'label' => 'Customer satisfaction',
+                        'value' => 3.68
+                    ],
+                    'q4r6' => [
+                        'label' => 'Business model innovation',
+                        'value' => 3.07
+                    ],
+                    'q4r7' => [
+                        'label' => 'Increase in the number of NEW products or services launched',
+                        'value' => 3.12
+                    ]
+                ],
+            ],
+            'q5' => [
+                'qsizer1' => [
+                    'q5r1' => '0.0%',
+                    'q5r2' => '4.1%',
+                    'q5r3' => '25.7%',
+                    'q5r4' => '60.1%',
+                    'q5r5' => '8.8%',
+                ],
+                'qsizer2' => [
+                    'q5r1' => '0.6%',
+                    'q5r2' => '5.0%',
+                    'q5r3' => '30.7%',
+                    'q5r4' => '55.3%',
+                    'q5r5' => '7.3%',
+                ],
+                'qsizer3' => [
+                    'q5r1' => '0.0%',
+                    'q5r2' => '1.7%',
+                    'q5r3' => '10.6%',
+                    'q5r4' => '79.3%',
+                    'q5r5' => '8.4%',
+                ],
+                'qsizer4' => [
+                    'q5r1' => '0.0%',
+                    'q5r2' => '0.5%',
+                    'q5r3' => '5.2%',
+                    'q5r4' => '78.9%',
+                    'q5r5' => '14.9%',
+                ],
+            ],
+            'q6a' => [
+                'qsizer1' => [
+                    'q6ar1' => 6.83,
+                    'q6ar2' => 6.98,
+                    'q6ar3' => 7.37,
+                ],
+                'qsizer2' => [
+                    'q6ar1' => 5.50,
+                    'q6ar2' => 5.27,
+                    'q6ar3' => 4.63,
+                ],
+                'qsizer3' => [
+                    'q6ar1' => 6.97,
+                    'q6ar2' => 6.89,
+                    'q6ar3' => 5.09,
+                ],
+                'qsizer4' => [
+                    'q6ar1' => 7.32,
+                    'q6ar2' => 6.85,
+                    'q6ar3' => 5.75,
+                ],
+            ],
+            'q7' => [
+                'qsizer1' => [
+                    'q7r1' => 3.03,
+                    'q7r2' => 3.18,
+                    'q7r3' => 3.28,
+                    'q7r4' => 2.97,
+                    'q7r5' => 2.93,
+                ],
+                'qsizer2' => [
+                    'q7r1' => 3.24,
+                    'q7r2' => 3.25,
+                    'q7r3' => 3.52,
+                    'q7r4' => 3.09,
+                    'q7r5' => 3.17,
+                ],
+                'qsizer3' => [
+                    'q7r1' => 3.37,
+                    'q7r2' => 3.58,
+                    'q7r3' => 3.48,
+                    'q7r4' => 3.08,
+                    'q7r5' => 3.32,
+                ],
+                'qsizer4' => [
+                    'q7r1' => 3.51,
+                    'q7r2' => 3.81,
+                    'q7r3' => 3.66,
+                    'q7r4' => 3.05,
+                    'q7r5' => 3.33,
+                ],
+            ],
+            'q8' => [
+                'qsizer1' => [
+                    'q8r1' => 28,
+                    'q8r2' => 10,
+                    'q8r3' => 12,
+                    'q8r4' => 15,
+                    'q8r5' => 30,
+                    'q8r6' => 18,
+                    'q8r7' => 21,
+                    'q8r8' => 23,
+                    'q8r9' => 6,
+                    'q8r10' => 13,
+                    'q8r11' => 27,
+                    'q8r12' => 19,
+                    'q8r13' => 25,
+                    'q8r14' => 14,
+                    'q8r15' => 31,
+                    'q8r16' => 20,
+                    'q8r17' => 9,
+                    'q8r18' => 25,
+                    'q8r19' => 31,
+                    'q8r20' => 4,
+                    'q8r21' => 5,
+                    'q8r22' => 11,
+                    'q8r23' => 16,
+                    'q8r24' => 2,
+                    'q8r25' => 3,
+                    'q8r26' => 7,
+                    'q8r27' => 34,
+                    'q8r28' => 7,
+                    'q8r29' => 22,
+                    'q8r30' => 35,
+                    'q8r31' => 31,
+                    'q8r32' => 1,
+                    'q8r33' => 17,
+                    'q8r34' => 24,
+                    'q8r35' => 29,
+                ],
+                'qsizer2' => [
+                    'q8r1' => 17,
+                    'q8r2' => 9,
+                    'q8r3' => 14,
+                    'q8r4' => 21,
+                    'q8r5' => 29,
+                    'q8r6' => 20,
+                    'q8r7' => 24,
+                    'q8r8' => 18,
+                    'q8r9' => 27,
+                    'q8r10' => 13,
+                    'q8r11' => 19,
+                    'q8r12' => 12,
+                    'q8r13' => 4,
+                    'q8r14' => 22,
+                    'q8r15' => 15,
+                    'q8r16' => 15,
+                    'q8r17' => 28,
+                    'q8r18' => 26,
+                    'q8r19' => 22,
+                    'q8r20' => 10,
+                    'q8r21' => 33,
+                    'q8r22' => 10,
+                    'q8r23' => 25,
+                    'q8r24' => 1,
+                    'q8r25' => 31,
+                    'q8r26' => 5,
+                    'q8r27' => 2,
+                    'q8r28' => 7,
+                    'q8r29' => 8,
+                    'q8r30' => 35,
+                    'q8r31' => 34,
+                    'q8r32' => 3,
+                    'q8r33' => 32,
+                    'q8r34' => 30,
+                    'q8r35' => 6,
+                ],
+                'qsizer3' => [
+                    'q8r1' => 22,
+                    'q8r2' => 28,
+                    'q8r3' => 16,
+                    'q8r4' => 15,
+                    'q8r5' => 35,
+                    'q8r6' => 21,
+                    'q8r7' => 31,
+                    'q8r8' => 18,
+                    'q8r9' => 7,
+                    'q8r10' => 23,
+                    'q8r11' => 11,
+                    'q8r12' => 14,
+                    'q8r13' => 1,
+                    'q8r14' => 12,
+                    'q8r15' => 24,
+                    'q8r16' => 2,
+                    'q8r17' => 29,
+                    'q8r18' => 33,
+                    'q8r19' => 18,
+                    'q8r20' => 25,
+                    'q8r21' => 17,
+                    'q8r22' => 3,
+                    'q8r23' => 25,
+                    'q8r24' => 30,
+                    'q8r25' => 32,
+                    'q8r26' => 9,
+                    'q8r27' => 33,
+                    'q8r28' => 5,
+                    'q8r29' => 4,
+                    'q8r30' => 13,
+                    'q8r31' => 6,
+                    'q8r32' => 27,
+                    'q8r33' => 10,
+                    'q8r34' => 7,
+                    'q8r35' => 18,
+                ],
+                'qsizer4' => [
+                    'q8r1' => 13,
+                    'q8r2' => 22,
+                    'q8r3' => 12,
+                    'q8r4' => 20,
+                    'q8r5' => 32,
+                    'q8r6' => 24,
+                    'q8r7' => 26,
+                    'q8r8' => 19,
+                    'q8r9' => 18,
+                    'q8r10' => 14,
+                    'q8r11' => 14,
+                    'q8r12' => 16,
+                    'q8r13' => 35,
+                    'q8r14' => 2,
+                    'q8r15' => 1,
+                    'q8r16' => 28,
+                    'q8r17' => 34,
+                    'q8r18' => 9,
+                    'q8r19' => 3,
+                    'q8r20' => 11,
+                    'q8r21' => 5,
+                    'q8r22' => 33,
+                    'q8r23' => 25,
+                    'q8r24' => 9,
+                    'q8r25' => 4,
+                    'q8r26' => 30,
+                    'q8r27' => 21,
+                    'q8r28' => 23,
+                    'q8r29' => 28,
+                    'q8r30' => 7,
+                    'q8r31' => 26,
+                    'q8r32' => 8,
+                    'q8r33' => 31,
+                    'q8r34' => 17,
+                    'q8r35' => 6,
+                ],
+            ]
+        ];
         $genericReference = [
             'q1' => [
                 'q1r1' => 'Including Customer Service among the areas for focus on Big Data indicates a strong customer orientation, rather than a focus on efficiency improvements or cost reduction. Many organisations concentrate their big data efforts on cost reduction and efficiency improvements and have not embraced the opportunity to build new business models through the adoption of Big Data solutions.',
@@ -1266,38 +3475,38 @@ class ItalyController extends Controller
             ]
         ];
 
-        // $client = new \GuzzleHttp\Client([
-        //     'base_uri' => 'https://selfserve.decipherinc.com/api/v1/surveys/selfserve/',
-        //     'headers' => [
-        //         'x-apikey' => 'um2mzvqjs4zjhqn5e9xvp2a6bnybkyq6h01degmgn68qdwkqq4en77vwn0bnxv9v',
-        //     ]
-        // ]);
-        // try {
-        //     $answerRequest = $client->request('GET', '21eb/190309/data', [
-        //         'query' => [
-        //             'format' => 'json',
-        //             'cond' => 'uuid=="f9z3sduwbdxrbyx4"'
-        //         ]
-        //     ]);
+        $client = new \GuzzleHttp\Client([
+            'base_uri' => 'https://selfserve.decipherinc.com/api/v1/surveys/selfserve/',
+            'headers' => [
+                'x-apikey' => 'um2mzvqjs4zjhqn5e9xvp2a6bnybkyq6h01degmgn68qdwkqq4en77vwn0bnxv9v',
+            ]
+        ]);
+        try {
+            $answerRequest = $client->request('GET', '21eb/180705/data', [
+                'query' => [
+                    'format' => 'json',
+                    'cond' => 'uuid=="f9z3sduwbdxrbyx4"'
+                ]
+            ]);
             
-        //     $questionRequest = $client->request('GET', '21eb/190309/datamap', [
-        //         'query' => [
-        //             'format' => 'json',
-        //         ]
-        //     ]);
-        // } catch (GuzzleHttp\Exception\RequestException $e) {
-        //     return $e->getMessage();
-        // }
-        // $questions = collect(json_decode($questionRequest->getBody(), true))->only('questions')->flatten(1)->filter(function($item){
-        //     return isset($item['variables']) && isset($item['qtitle']);
-        // })->pluck(['variables'])->flatten(1);
-        // 
+            $questionRequest = $client->request('GET', '21eb/180705/datamap', [
+                'query' => [
+                    'format' => 'json',
+                ]
+            ]);
+        } catch (GuzzleHttp\Exception\RequestException $e) {
+            return $e->getMessage();
+        }
+        $questions = collect(json_decode($questionRequest->getBody(), true))->only('questions')->flatten(1)->filter(function($item){
+            return isset($item['variables']) && isset($item['qtitle']);
+        })->pluck(['variables'])->flatten(1);
+        
 
         // $questions = collect($jsonQuestions)->only('questions')->flatten(1)->filter(function($item){
         //     return isset($item['variables']) && isset($item['qtitle']);
         // })->pluck(['variables'])->flatten(1);
 
-        $questions = collect(json_decode(Storage::disk('local')->get('/italyFiles/questions.json'),true));
+        //$questions = collect(json_decode(Storage::disk('local')->get('/italyFiles/questions.json'),true));
 
         $singleQuestions = $questions->mapWithKeys(function($item){
             return [$item['label'] => $item['rowTitle']];
@@ -1308,121 +3517,421 @@ class ItalyController extends Controller
             return [$item['label'] => $item['qtitle']];
         });
 
-        //$answer = collect(json_decode($answerRequest->getBody(), true))->first();
+        $answer = collect(json_decode($answerRequest->getBody(), true))->first();
         
-        $answer =  collect(json_decode(Storage::disk('local')->get('/italyFiles/answer.json'), true));
+        //$answer =  collect(json_decode(Storage::disk('local')->get('/italyFiles/answer.json'), true));
 
         $industry =  collect($answer)->only(array_keys($industryKeys))->filter()->keys()->first();
-
         $size =  collect($answer)->only(array_keys($sizeKeys))->filter()->keys()->first();
+        //graph settings
+
+        $graphSettings = array(
+            'back_colour' => '#FFF',
+            'stroke_colour' => NULL,
+            'back_stroke_width' => 0,
+            'back_stroke_colour' => '#EFEFEF',
+
+            'grid_division_h' => 10,
+            
+            'axis_colour' => '#FFF',
+            'axis_text_colour' => '#000',
+            'axis_overlap' => 2,
+            'axis_font' => 'Open Sans',
+            'axis_font_size' => 10,
+            'show_grid' => true,
+            'show_grid_h' => false,
+            'grid_colour' => '#EFEFEF',
+            'label_colour' => '#000',
+            'pad_right' => 20,
+            'pad_left' => 0,
+            'minimum_grid_spacing' => 20,
+        );
+
 
         $q1question = "Put Question here";
         $q1intro = "Intro for question1";
+        
 
         //questionSize1
-        $q1Sizeset = $industryReference['q1'][$industry];
+        $q1Sizeset = $sizeReference['q1'][$size];
         $q1SizeAnswers = collect($answer)->only(array_keys($q1Sizeset))->filter();
         $q1Sizelabels = collect($singleQuestions)->filter(function($item, $key) use($q1SizeAnswers){
             return collect($q1SizeAnswers->keys())->contains($key);                
         });
 
+        //q1SizeGraph
+        $colours = [
+            '#c6dd64',
+        ];
+        $q1GraphSizeValues = collect($sizeGraphReference['q1'][$size])->mapWithKeys(function($item){
+            return [$item['label'] => $item['value']];
+        })->toArray();
+        asort($q1GraphSizeValues);
+        $q1GraphSizeUserShapes = collect($q1GraphSizeValues)->filter(function($item, $key) use($q1Sizelabels){
+            return $q1Sizelabels->contains($key);
+        })->map(function($item, $key) use($q1GraphSizeValues){
+            return [
+                'circle',
+                'cx' => 'g'.$item,
+                'cy' => 'g'.(collect($q1GraphSizeValues)->keys()->search($key)+0.5),
+                'r' => 10,
+                'stroke' => '#FFF',
+                'stroke-width' => 2,
+                'depth' => 'above',
+                'fill' => '#842573'
+            ];
+        });
+        $graphSettings['shape'] = $q1GraphSizeUserShapes->values()->toArray();
+        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q1GraphSizeValues)->count()*45+20, $graphSettings);
+        $graph->colours($colours);
+
+        $graph->values($q1GraphSizeValues);
+
+        $q1SizeGraph = $graph->fetch('HorizontalGroupedBarGraph', false);
+
         //Size band
-        $q1sizeheader = "You selected {$q1SizeAnswers->count()} implementation areas in the {$sizeKeys[$size]} sizeband: {$q1Sizelabels->implodeLast(', ',', and ')} <br/><br/>";
-        $q1sizebody = "";
-        $q1Sizelabels->each(function($item, $key) use(&$q1sizebody, $size, $sizeKeys, $sizeReference, $genericReference){
+        $q1Sizeheader = "You selected {$q1SizeAnswers->count()} implementation areas in the {$sizeKeys[$size]} sizeband: {$q1Sizelabels->implodeLast(', ',', and ')} <br/><br/>";
+        $q1Sizebody = "";
+        $q1Sizelabels->each(function($item, $key) use(&$q1Sizebody, $size, $sizeKeys, $sizeReference, $genericReference){
             if($sizeReference['q1'][$size][$key]<4){
-                $q1sizebody .= "<strong>{$item}</strong> is among the Top 3 implementation areas and is ranked as <strong>{$sizeReference['q1'][$size][$key]}</strong>. This shows your investment choices align with most organisations in {$sizeKeys[$size]} size band, and a suitable area for investment in Big Data Solutions.<br/>";
+                $q1Sizebody .= "<strong>{$item}</strong> is among the Top 3 implementation areas and is ranked as <strong>{$sizeReference['q1'][$size][$key]}</strong>. This shows your investment choices align with most organisations in {$sizeKeys[$size]} size band, and a suitable area for investment in Big Data Solutions.<br/>";
             }
             if($sizeReference['q1'][$size][$key]>9){
-                $q1sizebody .= "<strong>{$item}</strong> is among the Bottom 3 implementation areas and is ranked as <strong>{$sizeReference['q1'][$size][$key]}</strong>. This suggests your investments differ from most organisations in {$sizeKeys[$size]} size band.<br/>";
+                $q1Sizebody .= "<strong>{$item}</strong> is among the Bottom 3 implementation areas and is ranked as <strong>{$sizeReference['q1'][$size][$key]}</strong>. This suggests your investments differ from most organisations in {$sizeKeys[$size]} size band.<br/>";
             }
             if($sizeReference['q1'][$size][$key]<=9 && $sizeReference['q1'][$size][$key]>=4){
-                $q1sizebody .= "<strong>{$item}</strong> is in the middle set of implementation areas and is ranked as <strong>{$sizeReference['q1'][$size][$key]}</strong>. Your investment criteria for Big Data investment focuses slightly outside mainstream investment areas, but still picks up on those areas with interest from some Big Data users.<br/>";
+                $q1Sizebody .= "<strong>{$item}</strong> is in the middle set of implementation areas and is ranked as <strong>{$sizeReference['q1'][$size][$key]}</strong>. Your investment criteria for Big Data investment focuses slightly outside mainstream investment areas, but still picks up on those areas with interest from some Big Data users.<br/>";
             }
-            $q1sizebody .= $genericReference['q1'][$key]."<br/><br/>";
+            $q1Sizebody .= $genericReference['q1'][$key]."<br/><br/>";
         });
-        $question1size = $q1sizeheader.$q1sizebody;
+        $question1Size = $q1Sizeheader.$q1Sizebody;
 
-        //questionIndustry1
+        //question1Industry
         $q1Industryset = $industryReference['q1'][$industry];
         $q1IndustryAnswers = collect($answer)->only(array_keys($q1Industryset))->filter();
         $q1Industrylabels = collect($singleQuestions)->filter(function($item, $key) use($q1IndustryAnswers){
             return collect($q1IndustryAnswers->keys())->contains($key);                
         });
 
+        //q1IndustryGraph
+        $colours = [
+            '#2279BC',
+        ];
+        $q1GraphIndustryValues = collect($industryGraphReference['q1'][$industry])->mapWithKeys(function($item){
+            return [$item['label'] => $item['value']];
+        })->toArray();
+        asort($q1GraphIndustryValues);
+        $graphIndustryUserShapes = collect($q1GraphIndustryValues)->filter(function($item, $key) use($q1Industrylabels){
+            return $q1Industrylabels->contains($key);
+        })->map(function($item, $key) use($q1GraphIndustryValues){
+            return [
+                'circle',
+                'cx' => 'g'.$item,
+                'cy' => 'g'.(collect($q1GraphIndustryValues)->keys()->search($key)+0.5),
+                'r' => 10,
+                'stroke' => '#FFF',
+                'stroke-width' => 2,
+                'depth' => 'above',
+                'fill' => '#e8ae38'
+            ];
+        });
+        $graphSettings['shape'] = $graphIndustryUserShapes->values()->toArray();
+        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q1GraphIndustryValues)->count()*45+20, $graphSettings);
+        $graph->colours($colours);
+
+        $graph->values($q1GraphIndustryValues);
+
+        $q1IndustryGraph = $graph->fetch('HorizontalGroupedBarGraph', false);
+
         //Industry
-        $q1industryheader = "You selected {$q1IndustryAnswers->count()} implementation areas in {$industryKeys[$industry]}: {$q1Industrylabels->implodeLast(', ',', and ')}<br/><br/>";
-        $q1industrybody = "";
-        $q1Industrylabels->each(function($item, $key) use(&$q1industrybody, $industry, $industryKeys, $industryReference, $genericReference){
+        $q1industryHeader = "You selected {$q1IndustryAnswers->count()} implementation areas in {$industryKeys[$industry]}: {$q1Industrylabels->implodeLast(', ',', and ')}<br/><br/>";
+        $q1IndustryBody = "";
+        $q1Industrylabels->each(function($item, $key) use(&$q1IndustryBody, $industry, $industryKeys, $industryReference, $genericReference){
             if($industryReference['q1'][$industry][$key]<4){
-                $q1industrybody .= "<strong>{$item}</strong> is among the Top 3 implementation areas and is ranked as <strong>{$industryReference['q1'][$industry][$key]}</strong>. This shows your investment choices align with most organisations in {$industryKeys[$industry]}, and a suitable area for investment in Big Data Solutions.<br/>";
+                $q1IndustryBody .= "<strong>{$item}</strong> is among the Top 3 implementation areas and is ranked as <strong>{$industryReference['q1'][$industry][$key]}</strong>. This shows your investment choices align with most organisations in {$industryKeys[$industry]}, and a suitable area for investment in Big Data Solutions.<br/>";
             }
             if($industryReference['q1'][$industry][$key]>9){
-                $q1industrybody .= "<strong>{$item}</strong> is among the Bottom 3 implementation areas and is ranked as <strong>{$industryReference['q1'][$industry][$key]}</strong>. This suggests your investments differ from most organisations in {$industryKeys[$industry]}.<br/>";
+                $q1IndustryBody .= "<strong>{$item}</strong> is among the Bottom 3 implementation areas and is ranked as <strong>{$industryReference['q1'][$industry][$key]}</strong>. This suggests your investments differ from most organisations in {$industryKeys[$industry]}.<br/>";
             }
             if($industryReference['q1'][$industry][$key]<=9 && $industryReference['q1'][$industry][$key]>=4){
-                $q1industrybody .= "<strong>{$item}</strong> is in the middle set of implementation areas and is ranked as <strong>{$industryReference['q1'][$industry][$key]}</strong>. Your investment criteria for Big Data investment focuses slightly outside mainstream investment areas, but still picks up on those areas with interest from some Big Data users.<br/>";
+                $q1IndustryBody .= "<strong>{$item}</strong> is in the middle set of implementation areas and is ranked as <strong>{$industryReference['q1'][$industry][$key]}</strong>. Your investment criteria for Big Data investment focuses slightly outside mainstream investment areas, but still picks up on those areas with interest from some Big Data users.<br/>";
             }
-            $q1industrybody .= $genericReference['q1'][$key]."<br/><br/>";
+            $q1IndustryBody .= $genericReference['q1'][$key]."<br/><br/>";
         });
-        $question1industry = $q1industryheader.$q1industrybody;
+        $question1Industry = $q1industryHeader.$q1IndustryBody;
 
-        return $question1size.$question1industry;
+        $question1 = $q1SizeGraph.$question1Size.$q1IndustryGraph.$question1Industry;
 
         //question2
-        $q2set = $industryReference['q2'][$industry];
-        $q2Answers = collect($answer)->only(array_keys($q2set))->filter();
-        $q2labels = collect($singleQuestions)->filter(function($item, $key) use($q2Answers){
-            return collect($q2Answers->keys())->contains($key);                
+        $q2question = "Put Question here";
+        $q2intro = "Intro for question2";
+
+        $q2Sizeset = $sizeReference['q2'][$size];
+        $q2SizeAnswers = collect($answer)->only(array_keys($q2Sizeset))->filter();
+        $q2Sizelabels = collect($singleQuestions)->filter(function($item, $key) use($q2SizeAnswers){
+            return collect($q2SizeAnswers->keys())->contains($key);                
         });
 
-        $q2question = $singleQuestionsText->get($q2labels->keys()->first());
-        $q2header = "You selected {$q2Answers->count()} implementation areas in {$industryKeys[$industry]}: {$q2labels->implodeLast(', ',', and ')}<br/><br/>";
+        //q2SizeGraph
+        $colours = [
+            '#c6dd64',
+        ];
+        $q2GraphSizeValues = collect($sizeGraphReference['q2'][$size])->mapWithKeys(function($item){
+            return [$item['label'] => $item['value']*100];
+        })->toArray();
 
-        $q2body = "";
-        $q2labels->each(function($item, $key) use(&$q2body, $industry, $industryKeys, $industryReference, $genericReference){
+        asort($q2GraphSizeValues);
+
+        $q2GraphSizeUserShapes = collect($q2GraphSizeValues)->filter(function($item, $key) use($q2Sizelabels){
+            return $q2Sizelabels->contains($key);
+        })->map(function($item, $key) use($q2GraphSizeValues){
+            return [
+                'circle',
+                'cx' => 'g'.$item,
+                'cy' => 'g'.(collect($q2GraphSizeValues)->keys()->search($key)+0.5),
+                'r' => 10,
+                'stroke' => '#FFF',
+                'stroke-width' => 2,
+                'depth' => 'above',
+                'fill' => '#842573'
+            ];
+        });
+        $graphSettings['shape'] = $q2GraphSizeUserShapes->values()->toArray();
+        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q2GraphSizeValues)->count()*45+20, $graphSettings);
+        $graph->colours($colours);
+
+        $graph->values(collect($q2GraphSizeValues)->mapWithKeys(function($item, $key){
+            return [wordwrap($key, 35, "\n", false) => $item];
+        })->toArray());
+
+        $q2SizeGraph = $graph->fetch('HorizontalGroupedBarGraph', false);
+
+        $q2Sizeheader = "You selected {$q2SizeAnswers->count()} implementation areas in {$sizeKeys[$size]}: {$q2Sizelabels->implodeLast(', ',', and ')}<br/><br/>";
+
+        $q2Sizebody = "";
+        $q2Sizelabels->each(function($item, $key) use(&$q2Sizebody, $size, $sizeKeys, $sizeReference, $genericReference){
+            if($sizeReference['q2'][$size][$key]<4){
+                $q2Sizebody .= "<strong>{$item}</strong> is among the Top 3 implementation areas and is ranked as <strong>{$sizeReference['q2'][$size][$key]}</strong>. This shows your investment choices align with most organisations in {$sizeKeys[$size]}, and a suitable area for investment in Big Data Solutions.<br/>";
+            }
+            if($sizeReference['q2'][$size][$key]>5){
+                $q2Sizebody .= "<strong>{$item}</strong> is among the Bottom 3 implementation areas and is ranked as <strong>{$sizeReference['q2'][$size][$key]}</strong>. This suggests your investments differ from most organisations in {$sizeKeys[$size]}.<br/>";
+            }
+            if($sizeReference['q2'][$size][$key]<=5 && $sizeReference['q2'][$size][$key]>=4){
+                $q2Sizebody .= "<strong>{$item}</strong> is in the middle set of implementation areas and is ranked as <strong>{$sizeReference['q2'][$size][$key]}</strong>. Your investment criteria for Big Data investment focuses slightly outside mainstream investment areas, but still picks up on those areas with interest from some Big Data users.<br/>";
+            }
+            $q2Sizebody .= $genericReference['q2'][$key]."<br/><br/>";
+        });
+
+        $questionSize2 = $q2Sizeheader.$q2Sizebody;
+
+        $q2Industryset = $industryReference['q2'][$industry];
+        $q2IndustryAnswers = collect($answer)->only(array_keys($q2Industryset))->filter();
+        $q2Industrylabels = collect($singleQuestions)->filter(function($item, $key) use($q2IndustryAnswers){
+            return collect($q2IndustryAnswers->keys())->contains($key);                
+        });
+
+        //q2IndustryGraph
+        $colours = [
+            '#2279BC',
+        ];
+        $q2GraphIndustryValues = collect($industryGraphReference['q2'][$industry])->mapWithKeys(function($item){
+            return [$item['label'] => $item['value']*100];
+        })->toArray();
+
+        asort($q2GraphIndustryValues);
+
+        $q2GraphIndustryUserShapes = collect($q2GraphIndustryValues)->filter(function($item, $key) use($q2Industrylabels){
+            return $q2Industrylabels->contains($key);
+        })->map(function($item, $key) use($q2GraphIndustryValues){
+            return [
+                'circle',
+                'cx' => 'g'.$item,
+                'cy' => 'g'.(collect($q2GraphIndustryValues)->keys()->search($key)+0.5),
+                'r' => 10,
+                'stroke' => '#FFF',
+                'stroke-width' => 2,
+                'depth' => 'above',
+                'fill' => '#e8ae38'
+            ];
+        });
+        $graphSettings['shape'] = $q2GraphIndustryUserShapes->values()->toArray();
+        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q2GraphIndustryValues)->count()*45+20, $graphSettings);
+        $graph->colours($colours);
+
+        $graph->values(collect($q2GraphIndustryValues)->mapWithKeys(function($item, $key){
+            return [wordwrap($key, 35, "\n", false) => $item];
+        })->toArray());
+
+        $q2IndustryGraph = $graph->fetch('HorizontalGroupedBarGraph', false);
+
+        $q2Industryheader = "You selected {$q2IndustryAnswers->count()} implementation areas in {$industryKeys[$industry]}: {$q2Industrylabels->implodeLast(', ',', and ')}<br/><br/>";
+
+        $q2Industrybody = "";
+        $q2Industrylabels->each(function($item, $key) use(&$q2Industrybody, $industry, $industryKeys, $industryReference, $genericReference){
             if($industryReference['q2'][$industry][$key]<4){
-                $q2body .= "<strong>{$item}</strong> is among the Top 3 implementation areas and is ranked as <strong>{$industryReference['q2'][$industry][$key]}</strong>. This shows your investment choices align with most organisations in {$industryKeys[$industry]}, and a suitable area for investment in Big Data Solutions.<br/>";
+                $q2Industrybody .= "<strong>{$item}</strong> is among the Top 3 implementation areas and is ranked as <strong>{$industryReference['q2'][$industry][$key]}</strong>. This shows your investment choices align with most organisations in {$industryKeys[$industry]}, and a suitable area for investment in Big Data Solutions.<br/>";
             }
             if($industryReference['q2'][$industry][$key]>5){
-                $q2body .= "<strong>{$item}</strong> is among the Bottom 3 implementation areas and is ranked as <strong>{$industryReference['q2'][$industry][$key]}</strong>. This suggests your investments differ from most organisations in {$industryKeys[$industry]}.<br/>";
+                $q2Industrybody .= "<strong>{$item}</strong> is among the Bottom 3 implementation areas and is ranked as <strong>{$industryReference['q2'][$industry][$key]}</strong>. This suggests your investments differ from most organisations in {$industryKeys[$industry]}.<br/>";
             }
             if($industryReference['q2'][$industry][$key]<=5 && $industryReference['q2'][$industry][$key]>=4){
-                $q2body .= "<strong>{$item}</strong> is in the middle set of implementation areas and is ranked as <strong>{$industryReference['q2'][$industry][$key]}</strong>. Your investment criteria for Big Data investment focuses slightly outside mainstream investment areas, but still picks up on those areas with interest from some Big Data users.<br/>";
+                $q2Industrybody .= "<strong>{$item}</strong> is in the middle set of implementation areas and is ranked as <strong>{$industryReference['q2'][$industry][$key]}</strong>. Your investment criteria for Big Data investment focuses slightly outside mainstream investment areas, but still picks up on those areas with interest from some Big Data users.<br/>";
             }
-            $q2body .= $genericReference['q2'][$key]."<br/><br/>";
+            $q2Industrybody .= $genericReference['q2'][$key]."<br/><br/>";
         });
 
-        $question2 = $q2header.$q2body;
+        $questionIndustry2 = $q2Industryheader.$q2Industrybody;
+
+        $question2 = $q2SizeGraph.$questionSize2.$q2IndustryGraph.$questionIndustry2;
 
         //question4
-        $q4set = $industryReference['q4'][$industry];
-        $q4Answers = collect($answer)->only(array_keys($q4set))->filter();
-        $q4AnswersSort = $q4Answers->sort()->reverse()->keys();
-        $q4AnswersRank = $this->rankArray($q4Answers->toArray());
-        $q4labels = collect($singleQuestions)->filter(function($item, $key) use($q4Answers){
-            return collect($q4Answers->keys())->contains($key);                
+        
+        //$q4question = $singleQuestionsText->get($q4SizeLabels->keys()->first());
+        $q4question = "Write question 4";
+        $q4intro = "intro fro q4";
+
+        $q4SizeSet = $sizeReference['q4'][$size];
+        $q4SizeAnswers = collect($answer)->only(array_keys($q4SizeSet))->filter();
+        $q4SizeAnswersSort = $q4SizeAnswers->sort()->reverse()->keys();
+        $q4SizeAnswersRank = $this->rankArray($q4SizeAnswers->toArray());
+        $q4SizeLabels = collect($singleQuestions)->filter(function($item, $key) use($q4SizeAnswers){
+            return collect($q4SizeAnswers->keys())->contains($key);                
         });
 
-        $q4question = $singleQuestionsText->get($q4labels->keys()->first());
-        $q4header = "You selected {$q4Answers->count()} implementation areas in {$industryKeys[$industry]}: {$q4labels->implodeLast(', ',', and ')}<br/><br/>";
+        $q4Sizeheader = "You evaluated {$q4SizeAnswers->count()} implementation areas in the {$sizeKeys[$size]} size band: {$q4SizeLabels->implodeLast(', ',', and ')}<br/><br/>";
 
-        $q4body = "";
-        $q4labels->each(function($item, $key) use(&$q4body, $industry, $industryKeys, $industryReference, $genericReference, $q4Answers, $q4AnswersSort, $q4AnswersRank){
-            $nth = $q4AnswersRank[$key] == 1 ? 'most' : $this->ordinal($q4AnswersRank[$key])." most";
-            $q4body .= "<strong>{$item}</strong> is the <strong>{$nth}</strong> important of your Key Performance Indicators and";
-            if($q4Answers[$key] < $industryReference['q4'][$industry][$key]){
-                $q4body .= " you rated it below the average rating for all organisations in {$industryKeys[$industry]} <strong>({$industryReference['q4'][$industry][$key]})</strong>. This specific investment choice falls a little behind your peers, and you might want to consider increasing its importance within your priorities for Big Data Solutions.";
-            }
-            if($q4Answers[$key] > $industryReference['q4'][$industry][$key]){
-                $q4body .= " you rated it the same as the average rating for all organisations in {$industryKeys[$industry]}, and this shows your views on <strong>{$item}</strong> are in line with those of the majority of other organisations.";
-            }
-            $q4body .= $genericReference['q4'][$key]."<br/><br/>";
+        //q4SizeGraph
+        $colours = [
+            '#c6dd64',
+        ];
+        $q4GraphSizeValues = collect($sizeGraphReference['q4'][$size])->mapWithKeys(function($item){
+            return [$item['label'] => $item['value']];
+        })->toArray();
+
+        asort($q4GraphSizeValues);
+
+        $q4SizeAnswersLabels = collect($sizeGraphReference['q4'][$size])->mapWithKeys(function($item, $key) use($q4SizeAnswers){
+            return [$item['label'] => $q4SizeAnswers->get($key)];
         });
 
-        $question4 = $q4header.$q4body;
+        $q4GraphSizeUserShapes = collect($q4GraphSizeValues)->map(function($item, $key) use($q4SizeAnswersLabels, $q4GraphSizeValues){
+            return [
+                [
+                    'line',
+                    'x1' => 'g0',
+                    'y1' => 'g'.(collect($q4GraphSizeValues)->keys()->search($key)+0.5),
+                    'x2' => 'g'.($q4SizeAnswersLabels->get($key)),
+                    'y2' => 'g'.(collect($q4GraphSizeValues)->keys()->search($key)+0.5),
+                    'stroke-width' => 2,
+                    'stroke' => '#842573',
+                    'depth' => 'above',
+                ],
+                [
+                    'circle',
+                    'cx' => 'g'.($q4SizeAnswersLabels->get($key)),
+                    'cy' => 'g'.(collect($q4GraphSizeValues)->keys()->search($key)+0.5),
+                    'r' => 10,
+                    'stroke' => '#FFF',
+                    'stroke-width' => 2,
+                    'depth' => 'above',
+                    'fill' => '#842573'
+                ],
+            ];
+        });
+
+        $graphSettings['shape'] = $q4GraphSizeUserShapes->flatten(1)->toArray();
+        $graphSettings['grid_division_h'] = 1;
+        $graphSettings['axis_max_h'] = 5;
+        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q4GraphSizeValues)->count()*45+20, $graphSettings);
+        $graph->colours($colours);
+
+        $graph->values(collect($q4GraphSizeValues)->mapWithKeys(function($item, $key){
+            return [wordwrap($key, 35, "\n", false) => $item];
+        })->toArray());
+
+        $q4SizeGraph = $graph->fetch('HorizontalGroupedBarGraph', false);
+
+        $q4Sizebody = "";
+        $q4SizeLabels->each(function($item, $key) use(&$q4Sizebody, $size, $sizeKeys, $sizeReference, $genericReference, $q4SizeAnswers, $q4SizeAnswersSort, $q4SizeAnswersRank){
+            $nth = $q4SizeAnswersRank[$key] == 1 ? 'most' : $this->ordinal($q4SizeAnswersRank[$key])." most";
+            $q4Sizebody .= "<strong>{$item}</strong> is the <strong>{$nth}</strong> important of your Key Performance Indicators and";
+            if($q4SizeAnswers[$key] < $sizeReference['q4'][$size][$key]){
+                $q4Sizebody .= " you rated it below the average rating for all organisations in {$sizeKeys[$size]} <strong>({$sizeReference['q4'][$size][$key]})</strong>. This specific investment choice falls a little behind your peers, and you might want to consider increasing its importance within your priorities for Big Data Solutions.";
+            }
+            if($q4SizeAnswers[$key] > $sizeReference['q4'][$size][$key]){
+                $q4Sizebody .= " you rated it the same as the average rating for all organisations in {$sizeKeys[$size]}, and this shows your views on <strong>{$item}</strong> are in line with those of the majority of other organisations.";
+            }
+            $q4Sizebody .= $genericReference['q4'][$key]."<br/><br/>";
+        });
+
+        $questionSize4 = $q4Sizeheader.$q4Sizebody;
+
+        $q4IndustrySet = $industryReference['q4'][$industry];
+        $q4IndustryAnswers = collect($answer)->only(array_keys($q4IndustrySet))->filter();
+        $q4IndustryAnswersSort = $q4IndustryAnswers->sort()->reverse()->keys();
+        $q4IndustryAnswersRank = $this->rankArray($q4IndustryAnswers->toArray());
+        $q4IndustryLabels = collect($singleQuestions)->filter(function($item, $key) use($q4IndustryAnswers){
+            return collect($q4IndustryAnswers->keys())->contains($key);                
+        });
+
+        $q4Industryheader = "You selected {$q4IndustryAnswers->count()} implementation areas in {$industryKeys[$industry]}: {$q4IndustryLabels->implodeLast(', ',', and ')}<br/><br/>";
+
+        //q4IndustryGraph
+        $colours = [
+            '#c6dd64',
+        ];
+        $q4GraphSizeValues = collect($industryGraphReference['q4'][$industry])->mapWithKeys(function($item){
+            return [$item['label'] => $item['value']*100];
+        })->toArray();
+
+        asort($q4GraphSizeValues);
+
+        $q4GraphSizeUserShapes = collect($q4GraphSizeValues)->filter(function($item, $key) use($q4IndustryLabels){
+            return $q4IndustryLabels->contains($key);
+        })->map(function($item, $key) use($q4GraphSizeValues){
+            return [
+                'circle',
+                'cx' => 'g'.$item,
+                'cy' => 'g'.(collect($q4GraphSizeValues)->keys()->search($key)+0.5),
+                'r' => 10,
+                'stroke' => '#FFF',
+                'stroke-width' => 2,
+                'depth' => 'above',
+                'fill' => '#842573'
+            ];
+        });
+        $graphSettings['shape'] = $q4GraphSizeUserShapes->values()->toArray();
+        $graphSettings['grid_division_h'] = 1;
+        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q4GraphSizeValues)->count()*45+20, $graphSettings);
+        $graph->colours($colours);
+
+        $graph->values(collect($q4GraphSizeValues)->mapWithKeys(function($item, $key){
+            return [wordwrap($key, 35, "\n", false) => $item];
+        })->toArray());
+
+        $q4IndustryGraph = $graph->fetch('HorizontalGroupedBarGraph', false);
+
+        $q4Industrybody = "";
+        $q4IndustryLabels->each(function($item, $key) use(&$q4Industrybody, $industry, $industryKeys, $industryReference, $genericReference, $q4IndustryAnswers, $q4IndustryAnswersSort, $q4IndustryAnswersRank){
+            $nth = $q4IndustryAnswersRank[$key] == 1 ? 'most' : $this->ordinal($q4IndustryAnswersRank[$key])." most";
+            $q4Industrybody .= "<strong>{$item}</strong> is the <strong>{$nth}</strong> important of your Key Performance Indicators and";
+            if($q4IndustryAnswers[$key] < $industryReference['q4'][$industry][$key]){
+                $q4Industrybody .= " you rated it below the average rating for all organisations in {$industryKeys[$industry]} <strong>({$industryReference['q4'][$industry][$key]})</strong>. This specific investment choice falls a little behind your peers, and you might want to consider increasing its importance within your priorities for Big Data Solutions.";
+            }
+            if($q4IndustryAnswers[$key] > $industryReference['q4'][$industry][$key]){
+                $q4Industrybody .= " you rated it the same as the average rating for all organisations in {$industryKeys[$industry]}, and this shows your views on <strong>{$item}</strong> are in line with those of the majority of other organisations.";
+            }
+            $q4Industrybody .= $genericReference['q4'][$key]."<br/><br/>";
+        });
+
+        $questionIndustry4 = $q4Industryheader.$q4Industrybody;
+
+        $question4 = "<h2>Q4</h2><br/>".$q4SizeGraph.$questionSize4.$q4IndustryGraph.$questionIndustry4;
+
+        return $question1.$question2.$question4;
 
         //question5
+        $graphSettings['grid_division_h'] = 10;
         $q5set = $industryReference['q5'][$industry];
 
         $q5Answer = collect($answer)->only('q5')->first();
