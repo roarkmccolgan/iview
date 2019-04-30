@@ -75,6 +75,7 @@ return [
             'email'=>'required|email',
             'title'=>'required|min:3|max:255',
             'country'=>'required',
+            'company'=>'required',
             'terms'=>'required'
         ]
     ],

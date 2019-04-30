@@ -26,7 +26,7 @@ class ReloadQuestions
             $controller = preg_replace('/.*\\\/', '', $controller);
         }
 
-        if (!$request->session()->has('questions') || ( ($tool['alias']!=='ntt-sdwan' || $tool['alias']!=='trend-micro-msp' || $tool['alias']!=='nttdatadx') && !$request->session()->has('quiz_complete')  && $controller == 'ToolController' && $method == 'run' ) ) {
+        if (!$request->session()->has('questions') || $method == 'closure' ) {
             $currentLocal = App::getLocale();
             $localQuestions = $currentLocal=='en' ? '' : $currentLocal;
             $questions = Config::get($localQuestions.'questions_'.session('product.id'));

@@ -25,7 +25,7 @@
 							</h2>
 							<div class="flex flex-wrap bg-black px-8 py-8 pb-2 mb-4">
 								<div class="mb-6 sm:w-1/2">
-									<div class="mr-2">
+									<div class="sm:mr-2">
 										<label class="block uppercase tracking-wide text-grey-light text-xs font-bold mb-2" for="fname">
 											{{ $t('trend-micro-msp.leadgen.fname') }}
 										</label>
@@ -34,7 +34,7 @@
 									</div>
 								</div>
 								<div class="mb-6 sm:w-1/2">
-									<div class="ml-2">
+									<div class="sm:ml-2">
 										<label class="block uppercase tracking-wide text-grey-light text-xs font-bold mb-2" for="sname">
 											{{ $t('trend-micro-msp.leadgen.sname') }}
 										</label>
@@ -43,7 +43,7 @@
 									</div>
 								</div>
 								<div class="mb-6 sm:w-1/2">
-									<div class="mr-2">
+									<div class="sm:mr-2">
 										<label class="block uppercase tracking-wide text-grey-light text-xs font-bold mb-2" for="email">
 											{{ $t('trend-micro-msp.leadgen.email') }}
 										</label>
@@ -52,7 +52,7 @@
 									</div>
 								</div>
 								<div class="mb-6 sm:w-1/2">
-									<div class="mr-2">
+									<div class="sm:ml-2">
 										<label class="block uppercase tracking-wide text-grey-light text-xs font-bold mb-2" for="position">
 											{{ $t('trend-micro-msp.leadgen.title') }}
 										</label>
@@ -60,8 +60,17 @@
 										<p class="text-red text-xs italic" v-show="errors.position" v-html="$t('trend-micro-msp.leadgen.errorTitle')"></p>
 									</div>
 								</div>
-								<div class="mb-6 w-full">
-									<div class="">
+								<div class="mb-6 sm:w-1/2">
+									<div class="sm:mr-2">
+										<label class="block uppercase tracking-wide text-grey-light text-xs font-bold mb-2" for="company">
+											{{ $t('trend-micro-msp.leadgen.company') }}
+										</label>
+										<input class="appearance-none block w-full bg-grey-dark text-black border py-3 px-4 mb-2" :class="[errors.position ? 'border-red' : '']" id="position" name="company" type="text" @blur="hasError">
+										<p class="text-red text-xs italic" v-show="errors.position" v-html="$t('trend-micro-msp.leadgen.errorCompany')"></p>
+									</div>
+								</div>
+								<div class="mb-6 sm:w-1/2">
+									<div class="sm:ml-2">
 										<label class="block uppercase tracking-wide text-grey-light text-xs font-bold mb-2" for="country">
 											{{ $t('trend-micro-msp.leadgen.country') }}
 										</label>

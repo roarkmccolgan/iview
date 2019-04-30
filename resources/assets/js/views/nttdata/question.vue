@@ -16,7 +16,7 @@
 								<div class="flex items-center px-4">
 									<template v-for="(question, qkey) in questions">
 										<div class="border-t-2 border-ntt-blue flex-grow" :class="{'border-ntt-data-yellow': (question == currentQuestion || question.selected)}" v-show="qkey !== 'q1'"></div>
-										<div class="w-3 h-3 border-2 border-ntt-blue rounded-full" :class="{'bg-ntt-data-yellow': (question == currentQuestion || question.selected)}"></div>
+										<div class="w-3 h-3 border-2 border-ntt-blue rounded-full" :class="{'bg-ntt-data-yellow': (question == currentQuestion || question.selected), 'w-6 h-6': (question == currentQuestion || question.selected)}"></div>
 									</template>
 								</div>
 							</div>
@@ -28,7 +28,7 @@
 				</div>
 				<div class="container mx-auto py-2 text-white ">
 					<span v-html="currentQuestion.description"></span>
-					<span class="text-ntt-data-yellow hidden sm:block sm:my-2">{{currentQuestion.title }} - {{ $t('general.question') | toTitle}} {{currentQuestion.section_info.number}} {{$t('general.of')}} {{currentQuestion.section_info.total}}</span>
+					<span class="text-ntt-data-yellow hidden sm:block sm:my-2">{{currentQuestion.title }} - {{ $t('general.question') | toTitle}} {{currentQuestion.section_info.number}} {{$t('general.of')}} {{totalQuestions}}</span>
 					<transition name="fade">
 						<h1 class="font-light text-xl sm:text-2xl leading-tight" v-show="showDetails" v-html="currentQuestion.question"></h1>
 					</transition>
@@ -279,13 +279,26 @@ export default{
 			}
 		},
 		back: function(){
-			var previousQ = Number(this.$route.params.question)+1;
+			if(Number(this.$route.params.question)==1){
+				window.location.href = "https://nttdatadx.idcready.net";
+				return;
+			}
+			var prevQ = Number(this.$route.params.question)-1;
 			this.showDetails = false;
 			var that = this;
-			setTimeout(function () {
-				that.showDetails = true;
-				that.$router.go(-1);
-			}, 300);
+			if(that.questions.hasOwnProperty('q'+prevQ)){
+				that.questions['q'+prevQ].selected = false;
+				setTimeout(function () {
+					that.showDetails = true;
+					that.$router.push({ path: '/questions/'+ prevQ});
+					that.answer = [];
+					that.saving = that.error = false;
+					document.body.scrollTop = 0; // For Safari
+					document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+				}, 300);
+			}else{
+				that.$router.go(-1);					
+			}
 		},
 		showError: function(type, langString){
 			var regX = /\#(.*?)\#/g;

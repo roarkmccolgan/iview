@@ -48,15 +48,6 @@
 								</div>
 								<div class="mb-4 w-full sm:w-1/2">
 									<div class="sm:ml-2">
-										<label class="block uppercase tracking-wide text-ntt-data-blue text-xs font-bold mb-2" for="position">
-											{{ $t('nttdatadx.leadgen.title') }}
-										</label>
-										<input class="appearance-none block w-full text-black border py-3 px-4 mb-2" :class="[errors.position ? 'border-red' : '']" id="position" name="title" type="text" @blur="hasError">
-										<p class="text-red text-xs italic" v-show="errors.position" v-html="$t('nttdatadx.leadgen.errorTitle')"></p>
-									</div>
-								</div>
-								<div class="mb-4 w-full sm:w-1/2">
-									<div class="sm:mr-2">
 										<label class="block uppercase tracking-wide text-ntt-data-blue text-xs font-bold mb-2" for="company">
 											{{ $t('nttdatadx.leadgen.company') }}
 										</label>
@@ -65,16 +56,16 @@
 									</div>
 								</div>
 								<div class="mb-4 w-full sm:w-1/2">
-									<div class="sm:ml-2">
-										<label class="block uppercase tracking-wide text-ntt-data-blue text-xs font-bold mb-2" for="phone">
+									<div class="sm:mr-2">
+										<label class="block uppercase tracking-wide text-ntt-data-blue text-xs font-bold mb-2" for="title">
 											{{ $t('nttdatadx.leadgen.title') }}
 										</label>
 										<input class="appearance-none block w-full text-black border py-3 px-4 mb-2" :class="[errors.phone ? 'border-red' : '']" id="phone" name="title" type="text" @blur="hasError">
-										<p class="text-red text-xs italic" v-show="errors.phone" v-html="$t('nttdatadx.leadgen.errorPhone')"></p>
+										<p class="text-red text-xs italic" v-show="errors.phone" v-html="$t('nttdatadx.leadgen.errorTitle')"></p>
 									</div>
 								</div>
 								<div class="mb-4 w-full sm:w-1/2">
-									<div class="sm:mr-2">
+									<div class="sm:ml-2">
 										<label class="block uppercase tracking-wide text-ntt-data-blue text-xs font-bold mb-2" for="employees">
 											{{ $t('nttdatadx.leadgen.employees') }}
 										</label>
@@ -91,7 +82,7 @@
 									</div>
 								</div>
 								<div class="mb-4 w-full sm:w-1/2">
-									<div class="sm:ml-2">
+									<div class="sm:mr-2">
 										<label class="block uppercase tracking-wide text-ntt-data-blue text-xs font-bold mb-2" for="industry">
 											{{ $t('nttdatadx.leadgen.industry') }}
 										</label>
@@ -107,8 +98,8 @@
 										<p class="text-red text-xs italic" v-show="errors.industry" v-html="$t('nttdatadx.leadgen.errorIndustry')"></p>
 									</div>
 								</div>
-								<div class="mb-6 w-full">
-									<div class="">
+								<div class="mb-4 w-full sm:w-1/2">
+									<div class="sm:ml-2">
 										<label class="block uppercase tracking-wide text-ntt-data-blue text-xs font-bold mb-2" for="country">
 											{{ $t('nttdatadx.leadgen.country') }}
 										</label>
@@ -196,9 +187,7 @@ export default{
 				fname: false,
 				sname: false,
 				email: false,
-				tel: false,
 				company: false,
-				title: false,
 				country: false,
 				employees: false,
 				industry: false,
@@ -269,6 +258,7 @@ export default{
 			}
 			for (var key in this.errors) {
 				if(this.errors[key]===true){
+					console.log(key);
 					errors = true;
 					break;
 				}

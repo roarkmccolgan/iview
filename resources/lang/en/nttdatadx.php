@@ -50,19 +50,19 @@ return array(
     'complete_body' => '
         Your custom report will arrive in your inbox soon.<br/>
         Please check in your junk folder if you don\'t receive it within 5 minutes.<br/><br/>
-        <a class="text-ntt-data-yellow" target="_blank" href="https://uk.nttdata.com">
+        <a class="text-ntt-data-yellow" target="_blank" href="https://nttdata.com">
             Click here for more information
         </a>',
     'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @ntt. Interested? ',// http://bit.ly/2gslXEh
     'email'=>[
-        'subject' => 'IDC Digital Transformation Assessment - Sponsored by NTT DATA',
+        'subject' => 'IDC Digital Transformation (DX) Capability Assessment - Sponsored by NTT DATA',
         'hi' => 'Hi :Fname',
-        'body' => 'As promised, here\'s the link to download your digital transformation (DX) capability assessment report. This breaks down your results by category and helps you benchmark yourself against other organisations.',
+        'body' => 'As promised, here\'s the link to download your Digital Transformation (DX) Capability Assessment report. This breaks down your results by category and helps you benchmark yourself against other organisations.',
         'link' => 'Download PDF Report',
         'link_inline' => 'View Report in your browser',
-        'extra' => '',
+        'extra' => 'For any further information please email <a href="mailto:Henrietta.Lacey-Gutsell@nttdata.com" subject="NTT DATA DX Assessment">henrietta.lacey-gutsell@nttdata.com</a>',
         'regards' => 'Regards',
-        'team' => 'The IDC Team'
+        'team' => 'The NTT DATA team'
     ],
     'leadgen'=>[
         'fname'=>'First Name',

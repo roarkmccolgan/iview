@@ -347,7 +347,7 @@ return [
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'river of competitive advantage',
+                                'label'=>'Driver of competitive advantage',
                                 'value'=>5,
                                 'checked'=>false,
                             ]

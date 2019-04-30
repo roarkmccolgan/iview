@@ -54,16 +54,16 @@ return [
                 'default' => '',
                 'options' => null,
                 'error' => 'errorTitle',
-                'required' => true,
+                'required' => false,
                 'col' => 6,
-                'extra' => true,
+                // 'extra' => true,
             ],
             'phone' => [
                 'type' => 'text',
                 'default' => '',
                 'options' => null,
                 'error' => 'errorPhone',
-                'required' => true,
+                'required' => false,
                 'col' => 6,
             ],
             'country' => [
@@ -431,7 +431,9 @@ return [
             'fname'=>'required|min:2|max:255',
             'sname'=>'required|min:2|max:255',
             'email'=>'required|email',
-            'title'=>'required|min:3|max:255',
+            'company'=>'required',
+            'employees'=>'required',
+            'industry'=>'required',
             'country'=>'required',
             'terms'=>'required'
         ]

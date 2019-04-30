@@ -595,8 +595,6 @@ class ToolController extends Controller
         $assessment->save();
         $tracker = false;
 
-        Session::remove('quiz_complete');
-
         //check UTM
         if ($request->session()->has('utm')) {
             $tracker = Tracker::where('tool_id', session('product.id'))
@@ -762,18 +760,13 @@ class ToolController extends Controller
         'utm' => session('utm'),
         'quiz' => $this->quiz
         ];
+
         JavaScript::put([
-        'locale' => session('locale'),
-        'tool' => $request->get('product'),
+            'locale' => session('locale'),
+            'tool' => $request->get('product'),
         ]);
-        /*if(Cookie::has('quiz_progress')){
-            $progress_id = Cookie::get('quiz_progress');
-            $progress = Progress::find($progress_id);
-            if($progress) $progress->delete();
-        }
-        $cookie = Cookie::forget('quiz_progress');*/
-        
-        //return View::make('thankyou',$vars)->withCookie($cookie);
+        Session::remove('questions');
+        Session::remove('quiz_complete');
         return View::make('tool.'.session('template').'.thankyou', $vars);
     }
 
