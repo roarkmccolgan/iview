@@ -21,6 +21,7 @@ Route::post('/change_password', 'UserController@storeChangePassword');
 //Route::get('/', 'HomeController@index');
 //
 Route::get('/italy', 'ItalyController@index');
+Route::get('/italy_pdf', 'ItalyController@pdf');
 
 Route::group(['prefix' => 'admin', 'middleware'=>['auth']], function () {
 
@@ -76,6 +77,10 @@ Route::group(['domain' => '{subdomain}.'.env('APP_TLD', 'idcready.net'),'middlew
     });
     Route::group(['prefix' => 'test'], function () {
         Route::get('/chart', 'TestController@chart');
+    });
+    Route::group(['prefix' => 'report'], function () {
+        Route::get('/', 'ItalyController@index')->middleware(['routebyurl']);
+        Route::get('/pdf', 'ItalyController@pdf')->middleware(['routebyurl']);
     });
 
     //default en routes
