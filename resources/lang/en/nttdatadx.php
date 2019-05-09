@@ -101,42 +101,69 @@ return array(
         'errorAccept'=>'Please accept the Terms &amp; Conditions',
     ],
     'introduction' => '
-        <h2 class="text-blue-dark mb-6">YOUR RESULTS</h2>
+        <div style="">
+            <p class="mb-2">IDC has built the capability assessment framework in which individual responses from the FSI decision maker survey (NTT DATA/IDC FSI Barometer Survey, 2018, n = 1,050) are scored to group FSIs into 3 levels of DX capability, as follows:</p>
+            <ul class="mb-4">
+                <li>
+                    <strong class="text-blue-dark">DX Complacent:</strong><br/>
+                    The FSI is struggling with moving to a digital future compared to the rest of the industry and there is much to do to be where it needs to be.
+                </li>
+                <li>
+                    <strong class="text-blue-dark">DX Conformist :</strong><br/>
+                    The FSI is generally in line with the rest of the industry and readying itself for the digital future. However, there is still much to do to be fully digital ready.
+                </li>
+                <li>
+                    <strong class="text-blue-dark">DX Trailblazer:</strong><br/>
+                    The FSI is generally ahead of the industry and blazing a trail to the digital future.
+                </li>
+            </ul>
+            <p class="mb-4">Based on your responses, this report provides you with a benchmark of your organization’s DX capability and provides you with essential and tailored guidance to help you advance in your digital journey to cater to the needs of an ever-evolving, increasingly open and connected financial services landscape.
+            </p>
+        </div>
+        <h2 class="text-blue-darker mb-4">YOUR RESULTS</h2>
         <p class="mb-6">Organizations can only reap the full benefits of digital transformation if it is truly embedded within their culture, processes and technology. IDC\'s Financial Services Digital Transformation Capability Assessment Tool scores FSIs on their approach to becoming digital by looking at three core elements - how far advanced you are along the DX journey, how successful your DX initiatives have been, and the steps you have taken to becoming a Connected FSI. 
         </p>
     ',
     'overallstage1'=>'
-        <h2 class="leading-tight text-blue-dark mb-2 mt-6">OVERALL PERFORMANCE: Stage 1 - DX Complacent</h2>
+        <h2 class="leading-tight text-blue-darker mb-2 mt-6">OVERALL PERFORMANCE: Stage 1 - DX Complacent</h2>
         <p class="mb-2">Your results might hurt a bit, but based on your responses to IDC\'s Financial Services DX Capability Assessment Tool, your organization has been rated at the earliest level of DX capability - Digital Transformation Complacent. This means you are struggling with moving to a Digital Future compared to the rest of the industry and there is much to do to be where you need to be. While it may seem an unattainable goal at this point, you must look to incremental improvements and seek outside assistance where possible to to accelerate your move to a digital future.</p>
+    ',
+    'overallstage1outro'=>'
         <p class="mb-2">Your results indicate that there is plenty to do to get on the level with DX. This report will give you advice on areas to give priority to as you look to progress to the next stage of DX capability, so let\'s turn to the next page and dig into what you can do.</p>
     ',
     'overallstage2'=>'
-        <h2 class="leading-tight text-blue-dark mb-2 mt-6">OVERALL PERFORMANCE: Stage 2 - DX Conformist</h2>
+        <h2 class="leading-tight text-blue-darker mb-2 mt-6">OVERALL PERFORMANCE: Stage 2 - DX Conformist</h2>
         <p class="mb-2">Well done on your results! Based on your responses to IDC\'s Financial Services DX Capability Assessment Tool, your organization has been rated at the second highest level of DX capability - Digital Transformation Conformist .This means your organization is generally in line with the rest of the industry and readying itself for the digital future. While you are doing well, there is still much to do to be fully digital ready.</p>
         <p class="mb-2">Your results indicate that while you are doing well, there is plenty to do to get on level terms with the best at DX in financial services. This report will give you advice on areas to give priority to as you look to progress to the next stage of DX capability, so let\'s turn to the next page and dig into what you can do.</p>
     ',
+    'overallstage2outro'=>'
+        <p class="mb-2">Your results indicate that while you are doing well, there is plenty to do to get on level terms with the best at DX in financial services. This report will give you advice on areas to give priority to as you look to progress to the next stage of DX capability, so let\'s turn to the next page and dig into what you can do.</p>
+    ',
     'overallstage3'=>'
-        <h2 class="leading-tight text-blue-dark mb-2 mt-6">OVERALL PERFORMANCE: Stage 3 - DX Trailblazer</h2>
+        <h2 class="leading-tight text-blue-darker mb-2 mt-6">OVERALL PERFORMANCE: Stage 3 - DX Trailblazer</h2>
         <p class="mb-2">Congratulations on your results! Based on your responses to IDC\'s Financial Services DX Capability Assessment Tool, your organization has been rated at the highest level of DX capability - Digital Transformation Trailblazer .This means your organization is generally ahead of the industry and blazing a trail to the digital future. Always bear in mind though that you need to keep at it to stay ahead!</p>
         <p class="mb-2">Your results indicate that you are at the top of the pile when it comes to DX in financial services. While this is great, there may be some areas for you to pay attention to stay ahead in the game. This report will give you advice on areas to focus on, so let\'s turn to the next page and dig into what you can do.</p>
     ',
+    'overallstage3outro'=>'
+        <p class="mb-2">Your results indicate that you are at the top of the pile when it comes to DX in financial services. While this is great, there may be some areas for you to pay attention to stay ahead in the game. This report will give you advice on areas to focus on, so let\'s turn to the next page and dig into what you can do.</p>
+    ',
     'overallblankstage1'=>'
-        <h2 class="leading-tight text-blue-dark mb-2 mt-6">OVERALL PERFORMANCE: Stage 1 - DX Complacent</h2>
+        <h2 class="leading-tight text-blue-darker mb-2 mt-6">OVERALL PERFORMANCE: Stage 1 - DX Complacent</h2>
         <p class="mb-2">This result might hurt a bit, but based on your responses to IDC\'s Financial Services DX Capability Assessment Tool, your organization has been rated at the earliest level of DX capability - Digital Transformation Digphobe. This means you are struggling with moving to a Digital Future compared to the rest of the industry and there is much to do to be where you need to be. While it may seem an unattainable goal at this point, you must look to incremental improvements and seek outside assistance where possible to to accelerate your move to a digital future.</p>
         <p class="mb-2">Your results indicate that there is plenty to do to get on the level with DX. This report will give you advice on areas to give priority to as you look to progress to the next stage of DX capability, so let\'s turn to the next page and dig into what you can do.</p>
     ',
     'overallblankstage2'=>'
-        <h2 class="leading-tight text-blue-dark mb-2 mt-6">OVERALL PERFORMANCE: Stage 2 - DX Conformist</h2>
+        <h2 class="leading-tight text-blue-darker mb-2 mt-6">OVERALL PERFORMANCE: Stage 2 - DX Conformist</h2>
         <p class="mb-2">Well done! Based on your responses to IDC\'s Financial Services DX Capability Assessment Tool, your organization has been rated at the second highest level of DX capability - Digital Transformation Conformist .This means your organization is generally in line with the rest of the industry and readying itself for the digital future. While you are doing well, there is still much to do to be fully digital ready.</p>
         <p class="mb-2">Your results indicate that while you are doing well, there is plenty to do to get on level terms with the best at DX in financial services. This report will give you advice on areas to give priority to as you look to progress to the next stage of DX capability, so let\'s turn to the next page and dig into what you can do.</p>
     ',
     'overallblankstage3'=>'
-        <h2 class="leading-tight text-blue-dark mb-2 mt-6">OVERALL PERFORMANCE: Stage 3 - DX Trailblazer</h2>
+        <h2 class="leading-tight text-blue-darker mb-2 mt-6">OVERALL PERFORMANCE: Stage 3 - DX Trailblazer</h2>
         <p class="mb-2">Congratulations! Based on your responses to IDC\'s Financial Services DX Capability Assessment Tool, your organization has been rated at the highest level of DX capability - Digital Transformation Trailblazer .This means your organization is generally ahead of the industry and blazing a trail to the digital future. Always bear in mind though that you need to keep at it to stay ahead!</p>
         <p class="mb-2">Your results indicate that you are at the top of the pile when it comes to DX in financial services. While this is great, there may be some areas for you to pay attention to stay ahead in the game. This report will give you advice on areas to focus on, so let\'s turn to the next page and dig into what you can do.</p>
     ',
     'dx-adoptionstage1stage1'=>'
-        <h3 class="leading-tight text-blue-dark mb-4 mt-6">DX ADOPTION PERFORMANCE</h3>
+        <h3 class="leading-tight text-blue-darker text-lg mb-4 mt-6">DX ADOPTION PERFORMANCE</h3>
         <!--span class="block mb-2 font-bold text-grey-dark text-lg">Stage 1 - DX Complacent</span-->
         <p class="mb-2">This section of the report assesses the stage of your organization\'s DX journey based on your attitude to investing in digital technologies, how advanced you are in transforming your digital channels and business\'s perception of IT\'s role in DX.</p>
         <p class="mb-2">
@@ -144,56 +171,56 @@ return array(
         </p>
     ',
     'dx-adoptionstage1stage2'=>'
-        <h3 class="leading-tight text-blue-dark mb-4 mt-6">DX ADOPTION PERFORMANCE</h3>
+        <h3 class="leading-tight text-blue-darker text-lg mb-4 mt-6">DX ADOPTION PERFORMANCE</h3>
         <p class="mb-2">This section of the report assesses the stage of your organization\'s DX journey based on your attitude to investing in digital technologies, how advanced you are in transforming your digital channels and business\'s perception of IT\'s role in DX.</p>
         <p class="mb-2">
             Your overall score for this section indicates that you are ahead of your DX Complacent peers with respect to the progress you have made so far. Very well done! While keeping up with this, you must also look at aspects related to DX success and connected financial services to improve your overall DX capabilities.
         </p>
     ',
     'dx-adoptionstage1stage3'=>'
-        <h3 class="leading-tight text-blue-dark mb-4 mt-6">DX ADOPTION PERFORMANCE</h3>
+        <h3 class="leading-tight text-blue-darker text-lg mb-4 mt-6">DX ADOPTION PERFORMANCE</h3>
         <p class="mb-2">This section of the report assesses the stage of your organization\'s DX journey based on your attitude to investing in digital technologies, how advanced you are in transforming your digital channels and business\'s perception of IT\'s role in DX.</p>
         <p class="mb-2">
             Your overall score for this section indicates that you are ahead of your DX Complacent peers with respect to the progress you have made so far. Very well done! While keeping up with this, you must also look at aspects related to DX success and connected financial services to improve your overall DX capabilities.
         </p>
     ',
     'dx-adoptionstage2stage1'=>'
-        <h3 class="leading-tight text-blue-dark mb-4 mt-6">DX ADOPTION PERFORMANCE</h3>
+        <h3 class="leading-tight text-blue-darker text-lg mb-4 mt-6">DX ADOPTION PERFORMANCE</h3>
         <p class="mb-2">This section of the report assesses the stage of your organization\'s DX journey based on your attitude to investing in digital technologies, how advanced you are in transforming your digital channels and business\'s perception of IT\'s role in DX.</p>
         <p class="mb-2">
             Your overall score for this section indicates that you are lagging behind your DX Conformist peers with respect to the progress you have made in DX so far. You have a long way to go so you must take steps to accelerate the journey now. You should look in to individual assessment areas within this section to understand what changes you could potentially make to your overall approach and DX strategy.
         </p>
     ',
     'dx-adoptionstage2stage2'=>'
-        <h3 class="leading-tight text-blue-dark mb-4 mt-6">DX ADOPTION PERFORMANCE</h3>
+        <h3 class="leading-tight text-blue-darker text-lg mb-4 mt-6">DX ADOPTION PERFORMANCE</h3>
         <p class="mb-2">This section of the report assesses the stage of your organization\'s DX journey based on your attitude to investing in digital technologies, how advanced you are in transforming your digital channels and business\'s perception of IT\'s role in DX.</p>
         <p class="mb-2">
             Your overall score in this section indicates that you are in line with your DX Conformist peers with respect to the progress you have made in DX. You are well on your way, but don\'t think of stopping just yet. You could look in to individual assessment areas within this section to understand what changes you could potentially make to youryour overall approach and DX strategy for further progress.
         </p>
     ',
     'dx-adoptionstage2stage3'=>'
-        <h3 class="leading-tight text-blue-dark mb-4 mt-6">DX ADOPTION PERFORMANCE</h3>
+        <h3 class="leading-tight text-blue-darker text-lg mb-4 mt-6">DX ADOPTION PERFORMANCE</h3>
         <p class="mb-2">This section of the report assesses the stage of your organization\'s DX journey based on your attitude to investing in digital technologies, how advanced you are in transforming your digital channels and business\'s perception of IT\'s role in DX.</p>
         <p class="mb-2">
             Your overall score for this section indicates that you are ahead of your DX Conformist peers with respect to the progress you have made. Very well done on your journey so far! While keeping up with this, you must also look at aspects related to DX success and connected financial services to improve your overall DX capabilities.
         </p>
     ',
     'dx-adoptionstage3stage1'=>'
-        <h3 class="leading-tight text-blue-dark mb-4 mt-6">DX ADOPTION PERFORMANCE</h3>
+        <h3 class="leading-tight text-blue-darker text-lg mb-4 mt-6">DX ADOPTION PERFORMANCE</h3>
         <p class="mb-2">This section of the report assesses the stage of your organization\'s DX journey based on your attitude to investing in digital technologies, how advanced you are in transforming your digital channels and business\'s perception of IT\'s role in DX.</p>
         <p class="mb-2">
             Your overall score in this area indicates that you are lagging much behind other DX Trailblazers peers in your DX journey. You should look in to individual assessment areas within this section to understand what changes you could potentially make to your overall approach and DX strategy. You have a lot of work to do so you should act urgently to address the areas of improvement. This will help you sustain your strong position with respect to your overall DX capabilities.
         </p>
     ',
     'dx-adoptionstage3stage2'=>'
-        <h3 class="leading-tight text-blue-dark mb-4 mt-6">DX ADOPTION PERFORMANCE</h3>
+        <h3 class="leading-tight text-blue-darker text-lg mb-4 mt-6">DX ADOPTION PERFORMANCE</h3>
         <p class="mb-2">This section of the report assesses the stage of your organization\'s DX journey based on your attitude to investing in digital technologies, how advanced you are in transforming your digital channels and business\'s perception of IT\'s role in DX.</p>
         <p class="mb-2">
             Your overall score in this area indicates that you are lagging behind other DX Trailblazers peers in your DX journey. You should look in to individual assessment areas within this section to understand what changes you could potentially make to your overall approach and DX strategy. You have a lot of work to do so you should act urgently to address the areas of improvement. This will help sustain your strong position with respect to your overall DX capabilities.
         </p>
     ',
     'dx-adoptionstage3stage3'=>'
-        <h3 class="leading-tight text-blue-dark mb-4 mt-6">DX ADOPTION PERFORMANCE</h3>
+        <h3 class="leading-tight text-blue-darker text-lg mb-4 mt-6">DX ADOPTION PERFORMANCE</h3>
         <p class="mb-2">This section of the report assesses the stage of your organization\'s DX journey based on your attitude to investing in digital technologies, how advanced you are in transforming your digital channels and business\'s perception of IT\'s role in DX.</p>
         <p class="mb-2">
             Your overall score in this area indicates that you are in line with the DX Trailblazer peers with respect to the progress you have made in digital transformation. While keeping up with this, you can look at areas of improvement if any, related to DX success and connected financial services to improve your overall DX capabilities.
@@ -201,7 +228,7 @@ return array(
     ',
 
     'dx-adoptionq1intro' => '
-        <p class="mt-6 mb-2 font-bold text-blue-darkest">
+        <p class="mt-6 mb-2 font-bold text-blue-dark">
             On a scale of 1 to 5, how transformed are the following areas, in your organization?
         </p>
     ',
@@ -254,7 +281,7 @@ return array(
     ',
 
     'dx-adoptionq2intro'=>'
-        <p class="mt-6 mb-2 font-bold text-blue-darkest">
+        <p class="mt-6 mb-2 font-bold text-blue-dark">
             What is IT\'s role (as viewed by business) in transforming business through digital technologies in your organization?
         </p>
         <p class="mb-2">
@@ -310,7 +337,7 @@ return array(
     ',
 
     'dx-adoptionq3intro'=>'
-        <p class="mt-6 mb-2 font-bold text-blue-darkest">
+        <p class="mt-6 mb-2 font-bold text-blue-dark">
             Which of the bands below best represent the proportion of your IT budget spend on the following areas?
         </p>
         <p class="mb-2">
@@ -411,7 +438,7 @@ return array(
     ',
 
     'dx-adoptionq4intro'=>'
-        <p class="mt-6 mb-2 font-bold text-blue-darkest">
+        <p class="mt-6 mb-2 font-bold text-blue-dark">
             Will you spend more, less, or the same in 2018 than in the previous year for the following areas?
         </p>
         <p class="mb-2">
@@ -466,63 +493,63 @@ return array(
         </p>
     ',
     'success-in-dxstage1stage1'=>'
-        <h3 class="leading-tight text-blue-dark mb-4 mt-6">SUCCESS IN DX</h3>
+        <h3 class="leading-tight text-blue-darker text-lg mb-4 mt-6">SUCCESS IN DX</h3>
         <p class="mb-2">This section analyzes how successful you are in your digital initiatives by looking at your approach to DX, the way you measure success in DX as well as your specific digital technology investment priorities.</p>
         <p class="mb-2">
             Overall, you have scored like your DX Complacent peers in this section that asseses your DX success. You need to work hard to move to the next level by considering your approach to DX and which digital technology investments will give you the much needed boost to succeed in your transformation effort. 
         </p>
     ',
     'success-in-dxstage1stage2'=>'
-        <h3 class="leading-tight text-blue-dark mb-4 mt-6">SUCCESS IN DX</h3>
+        <h3 class="leading-tight text-blue-darker text-lg mb-4 mt-6">SUCCESS IN DX</h3>
         <p class="mb-2">This section analyzes how successful you are in your digital initiatives by looking at your approach to DX, the way you measure success in DX as well as your specific digital technology investment priorities.</p>
         <p class="mb-2">
             Overall, you have done better than your DX Complacent peers in this section that asseses your DX success. This is good news as your current approach to DX and your investment priorities are helping you succeed in your DX initiatives to an extend. You must now look at capability areas that require more attention such as enabling a connected financial services business to improve customer trust and loyalty.
         </p>
     ',
     'success-in-dxstage1stage3'=>'
-        <h3 class="leading-tight text-blue-dark mb-4 mt-6">SUCCESS IN DX</h3>
+        <h3 class="leading-tight text-blue-darker text-lg mb-4 mt-6">SUCCESS IN DX</h3>
         <p class="mb-2">This section analyzes how successful you are in your digital initiatives by looking at your approach to DX, the way you measure success in DX as well as your specific digital technology investment priorities.</p>
         <p class="mb-2">
             Overall, you have done much better than your DX Complacent peers in this section that asseses your DX success. This is very good news indeed. You must now look at capability areas that require more attention such as enabling a connected financial services business to improve customer trust and loyalty.
         </p>
     ',
     'success-in-dxstage2stage1'=>'
-        <h3 class="leading-tight text-blue-dark mb-4 mt-6">SUCCESS IN DX</h3>
+        <h3 class="leading-tight text-blue-darker text-lg mb-4 mt-6">SUCCESS IN DX</h3>
         <p class="mb-2">This section analyzes how successful you are in your digital initiatives by looking at your approach to DX, the way you measure success in DX as well as your specific digital technology investment priorities.</p>
         <p class="mb-2">
             Overall, you are lagging behind your DX Conformist peers in this section that asseses your DX success. You need to work hard to move to the next level by considering your approach to DX and which digital technology investments will give you the much needed boost to succeed in your transformation effort. 
         </p>
     ',
     'success-in-dxstage2stage2'=>'
-        <h3 class="leading-tight text-blue-dark mb-4 mt-6">SUCCESS IN DX</h3>
+        <h3 class="leading-tight text-blue-darker text-lg mb-4 mt-6">SUCCESS IN DX</h3>
         <p class="mb-2">This section analyzes how successful you are in your digital initiatives by looking at your approach to DX, the way you measure success in DX as well as your specific digital technology investment priorities.</p>
         <p class="mb-2">
             Overall, you have scored like your DX Conformist peers in this section that asseses your DX success. You should accelerate your efforts to move to the next level by considering your approach to DX and which digital technology investments will give you the much needed boost to succeed in your transformation effort. 
         </p>
     ',
     'success-in-dxstage2stage3'=>'
-        <h3 class="leading-tight text-blue-dark mb-4 mt-6">SUCCESS IN DX</h3>
+        <h3 class="leading-tight text-blue-darker text-lg mb-4 mt-6">SUCCESS IN DX</h3>
         <p class="mb-2">This section analyzes how successful you are in your digital initiatives by looking at your approach to DX, the way you measure success in DX as well as your specific digital technology investment priorities.</p>
         <p class="mb-2">
             Overall, you have done much better than your DX Conformist peers in this section that asseses your DX success.  Well done on the strategy you follow, your attitude towards managing and measuring success of your digital initiatives. You must now look at capability areas that require more attention such as enabling a connected financial services business to improve customer trust and loyalty.
         </p>
     ',
     'success-in-dxstage3stage1'=>'
-        <h3 class="leading-tight text-blue-dark mb-4 mt-6">SUCCESS IN DX</h3>
+        <h3 class="leading-tight text-blue-darker text-lg mb-4 mt-6">SUCCESS IN DX</h3>
         <p class="mb-2">This section analyzes how successful you are in your digital initiatives by looking at your approach to DX, the way you measure success in DX as well as your specific digital technology investment priorities.</p>
         <p class="mb-2">
             Overall, you are lagging behind DX Trailblazers in this section that asseses your DX success. This is serious so you need to urgently act to move the next level by considering your approach to DX and which digital technology investments will give you the much needed boost to succeed in your transformation effort. 
         </p>
     ',
     'success-in-dxstage3stage2'=>'
-        <h3 class="leading-tight text-blue-dark mb-4 mt-6">SUCCESS IN DX</h3>
+        <h3 class="leading-tight text-blue-darker text-lg mb-4 mt-6">SUCCESS IN DX</h3>
         <p class="mb-2">This section analyzes how successful you are in your digital initiatives by looking at your approach to DX, the way you measure success in DX as well as your specific digital technology investment priorities.</p>
         <p class="mb-2">
             Overall, you are lagging behind DX Trailblazers in this section that asseses your DX success. This means you need to urgently act to move the next level by considering your approach to DX and which digital technology investments will give you the much needed boost to succeed in your transformation effort. 
         </p>
     ',
     'success-in-dxstage3stage3'=>'
-        <h3 class="leading-tight text-blue-dark mb-4 mt-6">SUCCESS IN DX</h3>
+        <h3 class="leading-tight text-blue-darker text-lg mb-4 mt-6">SUCCESS IN DX</h3>
         <p class="mb-2">This section analyzes how successful you are in your digital initiatives by looking at your approach to DX, the way you measure success in DX as well as your specific digital technology investment priorities.</p>
         <p class="mb-2">
             Overall, you have scored like other DX Trailblazers in this section that asseses your DX success. You can look at other capability areas that require more attention to maintain your strong position in DX in the coming years.
@@ -530,7 +557,7 @@ return array(
     ',
 
     'success-in-dxq5intro'=>'
-        <p class="mt-6 mb-2 font-bold text-blue-darkest">
+        <p class="mt-6 mb-2 font-bold text-blue-dark">
             What is the typical balance in your company for digital transformation initiatives?
         </p>
         <p class="mb-2">
@@ -614,7 +641,7 @@ return array(
     ',
 
     'success-in-dxq6intro'=>'
-        <p class="mt-6 mb-2 font-bold text-blue-darkest">
+        <p class="mt-6 mb-2 font-bold text-blue-dark">
             How successful are you in your digital initiatives?
         </p>
         <p class="mb-2">
@@ -683,7 +710,7 @@ return array(
     ',
 
     'success-in-dxq7intro'=>'
-        <p class="mt-6 mb-2 font-bold text-blue-darkest">
+        <p class="mt-6 mb-2 font-bold text-blue-dark">
             At what stage is your organization today in the deployment of each of the following digital technologies or initiatives to transform your business in response to the changing customer and market needs?
         </p>
         <p class="mb-2">
@@ -737,63 +764,63 @@ return array(
     ',
     
     'connected-financial-servicesstage1stage1'=>'
-        <h3 class="leading-tight text-blue-dark mb-4 mt-6">CONNECTED FINANCIAL SERVICES</h3>
+        <h3 class="leading-tight text-blue-darker text-lg mb-4 mt-6">CONNECTED FINANCIAL SERVICES</h3>
         <p class="mb-2">Connected financial services bring together businesses and products with the help of a digital platform where diverse stakeholders (both internal and external) collaborate to deliver value-oriented and personalized offerings to customers through a partnership network approach. In this section, we look in to the progress you made in establishing a connected financial services business and your overall approach to risk management while doing so as this is vital to build loyalty and trust among your customers and partners.</p>
         <p class="mb-2">
             Your cumulative score in this section shows that you are in line with your DX Complacent peers in this area. To better meet the needs of customers in the digital world, it is important for you to rethink the way you engage with customers and partners and how establishing connected financial services models can help you in that.
         </p>
     ',
     'connected-financial-servicesstage1stage2'=>'
-        <h3 class="leading-tight text-blue-dark mb-4 mt-6">CONNECTED FINANCIAL SERVICES</h3>
+        <h3 class="leading-tight text-blue-darker text-lg mb-4 mt-6">CONNECTED FINANCIAL SERVICES</h3>
         <p class="mb-2">Connected financial services bring together businesses and products with the help of a digital platform where diverse stakeholders (both internal and external) collaborate to deliver value-oriented and personalized offerings to customers through a partnership network approach. In this section, we look in to the progress you made in establishing a connected financial services business and your overall approach to risk management while doing so as this is vital to build loyalty and trust among your customers and partners.</p>
         <p class="mb-2">
             Your cumulative score in this section shows that you are much ahead of your DX Complacent peers in this area. Well done on your forward looking approach to establish a connected financial services business to align with customer and market needs. You must now look at other aspects that will help you advance in your DX journey and also measure and manage DX success.
         </p>
     ',
     'connected-financial-servicesstage1stage3'=>'
-        <h3 class="leading-tight text-blue-dark mb-4 mt-6">CONNECTED FINANCIAL SERVICES</h3>
+        <h3 class="leading-tight text-blue-darker text-lg mb-4 mt-6">CONNECTED FINANCIAL SERVICES</h3>
         <p class="mb-2">Connected financial services bring together businesses and products with the help of a digital platform where diverse stakeholders (both internal and external) collaborate to deliver value-oriented and personalized offerings to customers through a partnership network approach. In this section, we look in to the progress you made in establishing a connected financial services business and your overall approach to risk management while doing so as this is vital to build loyalty and trust among your customers and partners.</p>
         <p class="mb-2">
             Your cumulative score in this section shows that you are much ahead of your DX Complacent peers in this area. Very well done on your forward looking approach to establish a connected financial services business to align with customer and market needs. You must now look at other aspects that will help you advance in your DX journey and also measure and manage DX success.
         </p>
     ',
     'connected-financial-servicesstage2stage1'=>'
-        <h3 class="leading-tight text-blue-dark mb-4 mt-6">CONNECTED FINANCIAL SERVICES</h3>
+        <h3 class="leading-tight text-blue-darker text-lg mb-4 mt-6">CONNECTED FINANCIAL SERVICES</h3>
         <p class="mb-2">Connected financial services bring together businesses and products with the help of a digital platform where diverse stakeholders (both internal and external) collaborate to deliver value-oriented and personalized offerings to customers through a partnership network approach. In this section, we look in to the progress you made in establishing a connected financial services business and your overall approach to risk management while doing so as this is vital to build loyalty and trust among your customers and partners.</p>
         <p class="mb-2">
             Your cumulative score in this section shows that you are lagging behind DX Conformist peers in this area. To better meet the needs of customers in the digital world, it is important for you to rethink the way you engage with customers and partners and how establishing connected financial services models can help you in the journey.
         </p>
     ',
     'connected-financial-servicesstage2stage2'=>'
-        <h3 class="leading-tight text-blue-dark mb-4 mt-6">CONNECTED FINANCIAL SERVICES</h3>
+        <h3 class="leading-tight text-blue-darker text-lg mb-4 mt-6">CONNECTED FINANCIAL SERVICES</h3>
         <p class="mb-2">Connected financial services bring together businesses and products with the help of a digital platform where diverse stakeholders (both internal and external) collaborate to deliver value-oriented and personalized offerings to customers through a partnership network approach. In this section, we look in to the progress you made in establishing a connected financial services business and your overall approach to risk management while doing so as this is vital to build loyalty and trust among your customers and partners.</p>
         <p class="mb-2">
             Your cumulative score in this section shows that you are in line with your DX Conformist peers in this area. To better meet the needs of customers in the digital world, you should continue to refine the way you engage with customers and partners by leveraging the connected financial services business model.
         </p>
     ',
     'connected-financial-servicesstage2stage3'=>'
-        <h3 class="leading-tight text-blue-dark mb-4 mt-6">CONNECTED FINANCIAL SERVICES</h3>
+        <h3 class="leading-tight text-blue-darker text-lg mb-4 mt-6">CONNECTED FINANCIAL SERVICES</h3>
         <p class="mb-2">Connected financial services bring together businesses and products with the help of a digital platform where diverse stakeholders (both internal and external) collaborate to deliver value-oriented and personalized offerings to customers through a partnership network approach. In this section, we look in to the progress you made in establishing a connected financial services business and your overall approach to risk management while doing so as this is vital to build loyalty and trust among your customers and partners.</p>
         <p class="mb-2">
             Your cumulative score in this section shows that you are ahead of your DX Conformist peers in this area. Very well done on your forward looking approach to establish a connected financial services business to align with customer and market needs. You must now look at other aspects that will help you advance in your DX journey and also measure and manage DX success.
         </p>
     ',
     'connected-financial-servicesstage3stage1'=>'
-        <h3 class="leading-tight text-blue-dark mb-4 mt-6">CONNECTED FINANCIAL SERVICES</h3>
+        <h3 class="leading-tight text-blue-darker text-lg mb-4 mt-6">CONNECTED FINANCIAL SERVICES</h3>
         <p class="mb-2">Connected financial services bring together businesses and products with the help of a digital platform where diverse stakeholders (both internal and external) collaborate to deliver value-oriented and personalized offerings to customers through a partnership network approach. In this section, we look in to the progress you made in establishing a connected financial services business and your overall approach to risk management while doing so as this is vital to build loyalty and trust among your customers and partners.</p>
         <p class="mb-2">
             Your cumulative score in this section shows that you are lagging behind many DX Trailblazers in this area. To better meet the needs of customers in the digital world, it is important for you to rethink the way you engage with customers and partners and how establishing connected financial services models can help you in the journey. It is risky to ignore this area as financial services industry is increasingly becoming open and connected driven by regulations or customer expectations or both.
         </p>
     ',
     'connected-financial-servicesstage3stage2'=>'
-        <h3 class="leading-tight text-blue-dark mb-4 mt-6">CONNECTED FINANCIAL SERVICES</h3>
+        <h3 class="leading-tight text-blue-darker text-lg mb-4 mt-6">CONNECTED FINANCIAL SERVICES</h3>
         <p class="mb-2">Connected financial services bring together businesses and products with the help of a digital platform where diverse stakeholders (both internal and external) collaborate to deliver value-oriented and personalized offerings to customers through a partnership network approach. In this section, we look in to the progress you made in establishing a connected financial services business and your overall approach to risk management while doing so as this is vital to build loyalty and trust among your customers and partners.</p>
         <p class="mb-2">
             Your cumulative score in this section shows that you are lagging behind many DX Trailblazers in this area. To better meet the needs of customers in the digital world, it is important for you to rethink the way you engage with customers and partners and how establishing connected financial services models can help you in the journey. It is risky to ignore this area as financial services industry is increasingly becoming open and connected driven by regulations or customer expectations or both.
         </p>
     ',
     'connected-financial-servicesstage3stage3'=>'
-        <h3 class="leading-tight text-blue-dark mb-4 mt-6">CONNECTED FINANCIAL SERVICES</h3>
+        <h3 class="leading-tight text-blue-darker text-lg mb-4 mt-6">CONNECTED FINANCIAL SERVICES</h3>
         <p class="mb-2">Connected financial services bring together businesses and products with the help of a digital platform where diverse stakeholders (both internal and external) collaborate to deliver value-oriented and personalized offerings to customers through a partnership network approach. In this section, we look in to the progress you made in establishing a connected financial services business and your overall approach to risk management while doing so as this is vital to build loyalty and trust among your customers and partners.</p>
         <p class="mb-2">
             Your cumulative score in this section shows that you are in line with other DX Trailblazers in this area. Well done on your forward looking approach to establish a connected financial services business to align with customer and market needs. Keep it up!
@@ -801,7 +828,7 @@ return array(
     ',
 
     'connected-financial-servicesq8intro'=>'
-        <p class="mt-6 mb-2 font-bold text-blue-darkest">
+        <p class="mt-6 mb-2 font-bold text-blue-dark">
             Which statement best describes how advanced you are in delivering a connected financial service?
         </p>
         <p class="mb-2">
@@ -885,7 +912,7 @@ return array(
     ',
 
     'connected-financial-servicesq9intro'=>'
-        <p class="mt-6 mb-2 font-bold text-blue-darkest">
+        <p class="mt-6 mb-2 font-bold text-blue-dark">
             In delivering a connected financial services business, to what extent have you implemented each of the following to assess risk and ensure the right levels of security?
         </p>
         <p class="mb-2">

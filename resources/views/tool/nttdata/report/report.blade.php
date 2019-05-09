@@ -12,9 +12,15 @@ $manifest = json_decode($json, TRUE);
     	<meta name="author" content="">
 		<title>Report</title>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-		<link rel="stylesheet" href="{{ asset('bundle/'.$manifest['nttdata'][1])}}">
+		
+		<link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+		<style>
+			.pb {
+				page-break-before: always;
+			}
+		</style>
 	</head>
-	<body class="font-report font-light {{ $pdf ? 'text-sm' : '' }} text-grey-darkest leading-normal">
+	<body class="font-report {{ $pdf ? 'text-sm' : '' }} text-grey-darkest leading-normal">
 		@if(!$pdf)
 		<div class="container mx-auto bg-blue-darker bg-idc-dark-blue mb-8">
 			<div class="bg-white p-4">
@@ -41,12 +47,10 @@ $manifest = json_decode($json, TRUE);
         <div class="pb"></div>
 		@endif
 		<div class="{{ $pdf ? 'w-5/6' : 'container' }} px-2 sm:px-0 mx-auto mb-8">
-			{!!$introduction!!}
+			<div style="margin-left: 120px">{!!$introduction!!}</div>
 		</div>
         
-        <div class="{{ $pdf ? 'w-5/6' : 'container' }} px-2 sm:px-0 mx-auto mb-8">
-            {!!$overall!!}
-        </div>
+        <div class="pb"></div>
         <div class="{{ $pdf ? 'w-5/6' : 'container' }} px-2 sm:px-0 mx-auto mb-8">
             {!!$overallGraph!!}
             {!!$countryGraph!!}
@@ -57,17 +61,20 @@ $manifest = json_decode($json, TRUE);
 	            <div class="inline-block">Your Result</div>
             </div>
         </div>
-        {{-- <div class="pb"></div> --}}
         <div class="{{ $pdf ? 'w-5/6' : 'container' }} px-2 sm:px-0 mx-auto mb-8">
-            {!!$dxAdoption!!}
+            <div style="margin-left: 120px">{!!$overalloutro!!}</div>
         </div>
         {{-- <div class="pb"></div> --}}
         <div class="{{ $pdf ? 'w-5/6' : 'container' }} px-2 sm:px-0 mx-auto mb-8">
-            {!!$successInDx!!}
+            <div style="margin-left: 120px">{!!$dxAdoption!!}</div>
+        </div>
+        <div class="pb"></div>
+        <div class="{{ $pdf ? 'w-5/6' : 'container' }} px-2 sm:px-0 mx-auto mb-8">
+            <div style="margin-left: 120px">{!!$successInDx!!}</div>
         </div>
         {{-- <div class="pb"></div> --}}
         <div class="{{ $pdf ? 'w-5/6' : 'container' }} px-2 sm:px-0 mx-auto mb-8">
-            {!!$connectedFinancialServices!!}
+            <div style="margin-left: 120px">{!!$connectedFinancialServices!!}</div>
         </div>
         
 		<script type="text/javascript">

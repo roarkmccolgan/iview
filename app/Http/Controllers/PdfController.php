@@ -1646,6 +1646,7 @@ class PdfController extends Controller
             //overall
             $rating = session('result.overall.rating');
             $vars['overall'] = trans(session('product.alias').'.overall'.$rating);
+            $vars['overalloutro'] = trans(session('product.alias').'.overall'.$rating.'outro');
             $vars['overallGraph'] = $overallGraph->fetch('HorizontalStackedBarGraph', false);
             $vars['countryGraph'] = $countryGraph->fetch('HorizontalStackedBarGraph', false);
             $vars['industryGraph'] = $industryGraph->fetch('HorizontalStackedBarGraph', false);
@@ -1725,13 +1726,14 @@ class PdfController extends Controller
 
             //Q6
             $vars['successInDx'] .= trans(session('product.alias').'.success-in-dxq6intro');
-            if ($this->getAnswerText(6, 'success-in-dx') == 'Too early to measure') {
+            $answerText = $this->getAnswerText(6, 'success-in-dx', 2);
+            if ($answerText[0] == 'Too early to measure') {
                 $vars['successInDx'] .= trans(session('product.alias').'.success-in-dxq6'.$overallRating.'a');
-            } elseif ($this->getAnswerText(6, 'success-in-dx') == 'Not very successful') {
+            } elseif ($answerText[0] == 'Not very successful') {
                 $vars['successInDx'] .= trans(session('product.alias').'.success-in-dxq6'.$overallRating.'b');
-            } elseif ($this->getAnswerText(6, 'success-in-dx') == 'Somewhat successful') {
+            } elseif ($answerText[0] == 'Somewhat successful') {
                 $vars['successInDx'] .= trans(session('product.alias').'.success-in-dxq6'.$overallRating.'c');
-            } elseif ($this->getAnswerText(6, 'success-in-dx') == 'Successful in all initiatives so far') {
+            } elseif ($answerText[0] == 'Successful in all initiatives so far') {
                 $vars['successInDx'] .= trans(session('product.alias').'.success-in-dxq6'.$overallRating.'d');
             }
 
