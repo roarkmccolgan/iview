@@ -201,7 +201,7 @@ return array(
     ',
 
     'dx-adoptionq1intro' => '
-        <p class="mt-6 mb-2 font-bold text-blue-dark">
+        <p class="mt-6 mb-2 font-bold text-blue-darkest">
             On a scale of 1 to 5, how transformed are the following areas, in your organization?
         </p>
     ',
@@ -254,7 +254,7 @@ return array(
     ',
 
     'dx-adoptionq2intro'=>'
-        <p class="mt-6 mb-2 font-bold text-blue-dark">
+        <p class="mt-6 mb-2 font-bold text-blue-darkest">
             What is IT\'s role (as viewed by business) in transforming business through digital technologies in your organization?
         </p>
         <p class="mb-2">
@@ -310,7 +310,7 @@ return array(
     ',
 
     'dx-adoptionq3intro'=>'
-        <p class="mt-6 mb-2 font-bold text-blue-dark">
+        <p class="mt-6 mb-2 font-bold text-blue-darkest">
             Which of the bands below best represent the proportion of your IT budget spend on the following areas?
         </p>
         <p class="mb-2">
@@ -411,7 +411,7 @@ return array(
     ',
 
     'dx-adoptionq4intro'=>'
-        <p class="mt-6 mb-2 font-bold text-blue-dark">
+        <p class="mt-6 mb-2 font-bold text-blue-darkest">
             Will you spend more, less, or the same in 2018 than in the previous year for the following areas?
         </p>
         <p class="mb-2">
@@ -530,7 +530,7 @@ return array(
     ',
 
     'success-in-dxq5intro'=>'
-        <p class="mt-6 mb-2 font-bold text-blue-dark">
+        <p class="mt-6 mb-2 font-bold text-blue-darkest">
             What is the typical balance in your company for digital transformation initiatives?
         </p>
         <p class="mb-2">
@@ -614,7 +614,7 @@ return array(
     ',
 
     'success-in-dxq6intro'=>'
-        <p class="mt-6 mb-2 font-bold text-blue-dark">
+        <p class="mt-6 mb-2 font-bold text-blue-darkest">
             How successful are you in your digital initiatives?
         </p>
         <p class="mb-2">
@@ -683,7 +683,7 @@ return array(
     ',
 
     'success-in-dxq7intro'=>'
-        <p class="mt-6 mb-2 font-bold text-blue-dark">
+        <p class="mt-6 mb-2 font-bold text-blue-darkest">
             At what stage is your organization today in the deployment of each of the following digital technologies or initiatives to transform your business in response to the changing customer and market needs?
         </p>
         <p class="mb-2">
@@ -801,7 +801,7 @@ return array(
     ',
 
     'connected-financial-servicesq8intro'=>'
-        <p class="mt-6 mb-2 font-bold text-blue-dark">
+        <p class="mt-6 mb-2 font-bold text-blue-darkest">
             Which statement best describes how advanced you are in delivering a connected financial service?
         </p>
         <p class="mb-2">
@@ -885,7 +885,7 @@ return array(
     ',
 
     'connected-financial-servicesq9intro'=>'
-        <p class="mt-6 mb-2 font-bold text-blue-dark">
+        <p class="mt-6 mb-2 font-bold text-blue-darkest">
             In delivering a connected financial services business, to what extent have you implemented each of the following to assess risk and ensure the right levels of security?
         </p>
         <p class="mb-2">

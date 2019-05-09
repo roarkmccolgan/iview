@@ -1325,21 +1325,29 @@ class PdfController extends Controller
                 'stroke_colour' => NULL,
                 'back_stroke_width' => 0,
                 'back_stroke_colour' => 'transparent',
-                'axis_colour' => '#333',
+                'axis_colour' => '#FFF',
+                'axis_text_colour' => '#333',
                 'axis_stroke_width' => 0,
                 'axis_overlap' => 2,
                 'axis_font' => 'sans-serif',
                 'axis_font_size' => 14,
+                'axis_font_size_h' => 10,
                 'show_divisions' => 0,
                 'show_grid_h' => 0,
                 'show_grid_v' => 1,
                 'grid_left' => 180,
                 'grid_colour' => '#c6c6c6',
                 'label_colour' => '#000',
-                'pad_top' => 40,
+                'label_colour' => '#000',
+                'pad_top' => 20,
                 'pad_right' => 20,
-                'pad_left' => 20,
+                'pad_left' => 0,
                 'pad_bottom' => 0,
+                // 'legend_entries' => [
+                //     'DX Complacent', 'DX Conformist', 'DX Trailblazer'
+                // ],
+                'legend_position' => 'outer right 0 45',
+                'legend_stroke_width' => 0,
 
                 'minimum_grid_spacing' => 20,
                 'grid_division_h' => 10,
@@ -1407,16 +1415,18 @@ class PdfController extends Controller
                     'g1',
                     trans(session('product.alias').'.'.$key),
                     'position' => 'outside top',
-                    'font_size' => 14,
+                    'font_size' => 12,
                     'colour' => '#606060',
                 ];
             })->values()->toArray();
             
 
 
-            $overallGraph = new \Goat1000\SVGGraph\SVGGraph(650, 150, $nttdataGraphSettings);
+            $overallGraph = new \Goat1000\SVGGraph\SVGGraph(650, 90, $nttdataGraphSettings);
             $overallGraph->colours($colours);
             $overallGraph->values($overallValues->toArray());
+
+            $nttdataGraphSettings['legend_entries'] = null;
 
             //Country Graph
             if($isFromBaselineRegion!==false){
@@ -1471,19 +1481,19 @@ class PdfController extends Controller
                         'g1',
                         trans(session('product.alias').'.'.$key),
                         'position' => 'outside top',
-                        'font_size' => 14,
+                        'font_size' => 12,
                         'colour' => '#606060',
                     ];
                 })->values()->toArray();
                 
 
 
-                $countryGraph = new \Goat1000\SVGGraph\SVGGraph(650, 150, $nttdataGraphSettings);
+                $countryGraph = new \Goat1000\SVGGraph\SVGGraph(650, 90, $nttdataGraphSettings);
                 $countryGraph->colours($colours);
                 //$countryGraph->values($countryValues->toArray());
                 $countryGraph->values($countryValues->map(function($item, $key){
                     return collect($item)->mapWithKeys(function($item, $key){
-                        return [wordwrap($key, 25, "\n", false) => $item];
+                        return [wordwrap($key, 20, "\n", false) => $item];
                     });
                 })->toArray());             
             }
@@ -1539,19 +1549,19 @@ class PdfController extends Controller
                     'g1',
                     trans(session('product.alias').'.'.$key),
                     'position' => 'outside top',
-                    'font_size' => 14,
+                    'font_size' => 12,
                     'colour' => '#606060',
                 ];
             })->values()->toArray();
             
 
 
-            $industryGraph = new \Goat1000\SVGGraph\SVGGraph(650, 150, $nttdataGraphSettings);
+            $industryGraph = new \Goat1000\SVGGraph\SVGGraph(650, 90, $nttdataGraphSettings);
             $industryGraph->colours($colours);
             //$industryGraph->values($industryValues->toArray());
             $industryGraph->values($industryValues->map(function($item, $key){
                 return collect($item)->mapWithKeys(function($item, $key){
-                    return [wordwrap($key, 25, "\n", false) => $item];
+                    return [wordwrap($key, 20, "\n", false) => $item];
                 });
             })->toArray());
 
@@ -1607,19 +1617,19 @@ class PdfController extends Controller
                     'g1',
                     trans(session('product.alias').'.'.$key),
                     'position' => 'outside top',
-                    'font_size' => 14,
+                    'font_size' => 12,
                     'colour' => '#606060',
                 ];
             })->values()->toArray();
             
 
 
-            $employeeGraph = new \Goat1000\SVGGraph\SVGGraph(650, 150, $nttdataGraphSettings);
+            $employeeGraph = new \Goat1000\SVGGraph\SVGGraph(650, 90, $nttdataGraphSettings);
             $employeeGraph->colours($colours);
             //$employeeGraph->values($employeeValues->toArray());
             $employeeGraph->values($employeeValues->map(function($item, $key){
                 return collect($item)->mapWithKeys(function($item, $key){
-                    return [wordwrap($key, 25, "\n", false) => $item];
+                    return [wordwrap($key, 20, "\n", false) => $item];
                 });
             })->toArray());
 

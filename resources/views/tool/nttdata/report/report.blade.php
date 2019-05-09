@@ -52,16 +52,20 @@ $manifest = json_decode($json, TRUE);
             {!!$countryGraph!!}
             {!!$industryGraph!!}
             {!!$employeeGraph!!}
+            <div class="text-right mt-4">
+	            <div class="w-4 h-4 rounded-full bg-yellow-dark inline-block align"></div>
+	            <div class="inline-block">Your Result</div>
+            </div>
         </div>
-        <div class="pb"></div>
+        {{-- <div class="pb"></div> --}}
         <div class="{{ $pdf ? 'w-5/6' : 'container' }} px-2 sm:px-0 mx-auto mb-8">
             {!!$dxAdoption!!}
         </div>
-        <div class="pb"></div>
+        {{-- <div class="pb"></div> --}}
         <div class="{{ $pdf ? 'w-5/6' : 'container' }} px-2 sm:px-0 mx-auto mb-8">
             {!!$successInDx!!}
         </div>
-        <div class="pb"></div>
+        {{-- <div class="pb"></div> --}}
         <div class="{{ $pdf ? 'w-5/6' : 'container' }} px-2 sm:px-0 mx-auto mb-8">
             {!!$connectedFinancialServices!!}
         </div>
