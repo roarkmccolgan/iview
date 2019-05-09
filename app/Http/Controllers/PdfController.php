@@ -1247,6 +1247,11 @@ class PdfController extends Controller
         } elseif (session('product.id')==10) {
             $base = config('baseline_'.session('product.id').'.overall');
             //dd(session('user'));
+            //delete
+            session(['user.country' => 'United States']);
+            session(['user.industry' => 'insurance']);
+            session(['user.employees' => '1000-4999']);
+
             $overallNumber = (int) filter_var(session('result.overall.rating'), FILTER_SANITIZE_NUMBER_INT);
             $dxAdoptionNumber =  (int) filter_var(session('result.dx-adoption.rating'), FILTER_SANITIZE_NUMBER_INT);
             $successInDxNumber =  (int) filter_var(session('result.success-in-dx.rating'), FILTER_SANITIZE_NUMBER_INT);
@@ -1273,33 +1278,350 @@ class PdfController extends Controller
                 'us'=>[
                     'United States'
                 ],
-                'we'=>[
+                'uk'=>[
                     'United Kingdom',
-                    'Germany',
-                    'Italy',
+                ],
+                'de'=>[
+                    'Germany'
+                ],
+                'it'=>[
+                    'Italy'
+                ],
+                'sp'=>[
                     'Spain'
                 ],
                 'jp'=>[
-                    'Japan'
+                    'Japan',
                 ],
-                'latam'=>[
-                    'Mexico',
-                    'Argentina',
-                    'Brazil',
+                'mx'=>[
+                    'Mexico'
+                ],
+                'ar'=>[
+                    'Argentina'
+                ],
+                'br'=>[
+                    'Brazil'
+                ],
+                'cl'=>[
                     'Chile',
+                ],
+                'co'=>[
                     'Columbia'
                 ]
             ]);
-            $isFromBaselineRegion = $countries->search(function($item, $key){
-                if(collect($item)->search(session('user.country'))){
-                    return $key;
+
+            $userCountryCode = '';
+            $isFromBaselineRegion = $countries->search(function($item, $key) use(&$userCountryCode){
+                if(collect($item)->search(session('user.country')) !== false){
+                    $userCountryCode = $key;
+                    return true;
                 }
                 return false;
             });
 
+            $nttdataGraphSettings = [
+                'title' => 'Overall Rating',
+                'back_colour' => 'transparent',
+                'stroke_colour' => NULL,
+                'back_stroke_width' => 0,
+                'back_stroke_colour' => 'transparent',
+                'axis_colour' => '#333',
+                'axis_stroke_width' => 0,
+                'axis_overlap' => 2,
+                'axis_font' => 'sans-serif',
+                'axis_font_size' => 14,
+                'show_divisions' => 0,
+                'show_grid_h' => 0,
+                'show_grid_v' => 1,
+                'grid_left' => 180,
+                'grid_colour' => '#c6c6c6',
+                'label_colour' => '#000',
+                'pad_top' => 40,
+                'pad_right' => 20,
+                'pad_left' => 20,
+                'pad_bottom' => 0,
+
+                'minimum_grid_spacing' => 20,
+                'grid_division_h' => 10,
+                'axis_max_h' => 100,
+
+                'axis_text_space' => 10,
+                'show_data_labels' => false,
+                'data_label_type' => 'plain',
+                'data_label_position' => 'top',
+            ];
+
+            $colours = [
+                '#D0DCE6',
+                '#7296B4',
+                '#145081',
+            ];
+
+            $overallValues = collect(config('baseline_'.session('product.id').'.overall.baseline-overall'))->map(function($item, $key){
+                return [
+                    'Overall Performance' => $item
+                ];
+            });
+
+            $toNow = 0;
+            $subtract = 0;
+            $overallValues->each(function($item,$key) use(&$toNow, &$subtract){
+                $toNow += $item['Overall Performance'];
+                if($key == session('result.overall.rating')){
+                    $subtract = $item['Overall Performance']/2;
+                    return false;
+                }
+            });
+            $shapVal = $toNow-$subtract;
+
+            $nttdataGraphSettings['shape'] = [
+                [
+                    'line',
+                    'x1' => 'g0',
+                    'y1' => 'g0.5',
+                    'x2' => 'g'.$shapVal,
+                    'y2' => 'g0.5',
+                    'stroke-width' => 2,
+                    'stroke' => '#e6b600',
+                    'depth' => 'above',
+                ],
+                [
+                    'circle',
+                    'cx' => 'g'.$shapVal,
+                    'cy' => 'g0.5',
+                    'r' => 10,
+                    'stroke' => '#FFF',
+                    'stroke-width' => 2,
+                    'depth' => 'above',
+                    'fill' => '#e6b600'
+                ]
+            ];
+
+            $labelToNow = 0;
+            $nttdataGraphSettings['label'] = $overallValues->map(function($item,$key) use(&$labelToNow){
+                $labelToNow += $item['Overall Performance'];
+                $subtract = $item['Overall Performance']/2;
+                $val = $labelToNow - $subtract;
+                return [
+                    'g'.$val,
+                    'g1',
+                    trans(session('product.alias').'.'.$key),
+                    'position' => 'outside top',
+                    'font_size' => 14,
+                    'colour' => '#606060',
+                ];
+            })->values()->toArray();
+            
+
+
+            $overallGraph = new \Goat1000\SVGGraph\SVGGraph(650, 150, $nttdataGraphSettings);
+            $overallGraph->colours($colours);
+            $overallGraph->values($overallValues->toArray());
+
+            //Country Graph
             if($isFromBaselineRegion!==false){
-                $geographic_block = $base['block-country-'.$countries[$isFromBaselineRegion].'-'.$overallNumber];
+                $country = session('user.country');
+                $countryValues = collect(config('baseline_'.session('product.id').'.overall.baseline-country-'.$userCountryCode))->map(function($item, $key) use($country){
+                    return [
+                        'Performance by country ('.$country.')' => $item
+                    ];
+                });
+
+                $toNow = 0;
+                $subtract = 0;
+                $countryValues->each(function($item,$key) use(&$toNow, &$subtract, $country){
+                    $toNow += $item['Performance by country ('.$country.')'];
+                    if($key == session('result.overall.rating')){
+                        $subtract = $item['Performance by country ('.$country.')']/2;
+                        return false;
+                    }
+                });
+                $shapVal = $toNow-$subtract;
+
+                $nttdataGraphSettings['shape'] = [
+                    [
+                        'line',
+                        'x1' => 'g0',
+                        'y1' => 'g0.5',
+                        'x2' => 'g'.$shapVal,
+                        'y2' => 'g0.5',
+                        'stroke-width' => 2,
+                        'stroke' => '#e6b600',
+                        'depth' => 'above',
+                    ],
+                    [
+                        'circle',
+                        'cx' => 'g'.$shapVal,
+                        'cy' => 'g0.5',
+                        'r' => 10,
+                        'stroke' => '#FFF',
+                        'stroke-width' => 2,
+                        'depth' => 'above',
+                        'fill' => '#e6b600'
+                    ]
+                ];
+
+                $labelToNow = 0;
+                $nttdataGraphSettings['label'] = $countryValues->map(function($item,$key) use(&$labelToNow, $country){
+                    $labelToNow += $item['Performance by country ('.$country.')'];
+                    $subtract = $item['Performance by country ('.$country.')']/2;
+                    $val = $labelToNow - $subtract;
+                    return [
+                        'g'.$val,
+                        'g1',
+                        trans(session('product.alias').'.'.$key),
+                        'position' => 'outside top',
+                        'font_size' => 14,
+                        'colour' => '#606060',
+                    ];
+                })->values()->toArray();
+                
+
+
+                $countryGraph = new \Goat1000\SVGGraph\SVGGraph(650, 150, $nttdataGraphSettings);
+                $countryGraph->colours($colours);
+                //$countryGraph->values($countryValues->toArray());
+                $countryGraph->values($countryValues->map(function($item, $key){
+                    return collect($item)->mapWithKeys(function($item, $key){
+                        return [wordwrap($key, 25, "\n", false) => $item];
+                    });
+                })->toArray());             
             }
+            //Industry Graph
+            $userIndustry = session('user.industry');
+            $industryValues = collect(config('baseline_'.session('product.id').'.overall.baseline-'.$userIndustry))->map(function($item, $key) use($userIndustry){
+                return [
+                    'Performance by Industry ('.ucfirst($userIndustry).')' => $item
+                ];
+            });
+
+            $toNow = 0;
+            $subtract = 0;
+            $industryValues->each(function($item,$key) use(&$toNow, &$subtract, $userIndustry){
+                $toNow += $item['Performance by Industry ('.ucfirst($userIndustry).')'];
+                if($key == session('result.overall.rating')){
+                    $subtract = $item['Performance by Industry ('.ucfirst($userIndustry).')']/2;
+                    return false;
+                }
+            });
+            $shapVal = $toNow-$subtract;
+
+            $nttdataGraphSettings['shape'] = [
+                [
+                    'line',
+                    'x1' => 'g0',
+                    'y1' => 'g0.5',
+                    'x2' => 'g'.$shapVal,
+                    'y2' => 'g0.5',
+                    'stroke-width' => 2,
+                    'stroke' => '#e6b600',
+                    'depth' => 'above',
+                ],
+                [
+                    'circle',
+                    'cx' => 'g'.$shapVal,
+                    'cy' => 'g0.5',
+                    'r' => 10,
+                    'stroke' => '#FFF',
+                    'stroke-width' => 2,
+                    'depth' => 'above',
+                    'fill' => '#e6b600'
+                ]
+            ];
+
+            $labelToNow = 0;
+            $nttdataGraphSettings['label'] = $industryValues->map(function($item,$key) use(&$labelToNow, $userIndustry){
+                $labelToNow += $item['Performance by Industry ('.ucfirst($userIndustry).')'];
+                $subtract = $item['Performance by Industry ('.ucfirst($userIndustry).')']/2;
+                $val = $labelToNow - $subtract;
+                return [
+                    'g'.$val,
+                    'g1',
+                    trans(session('product.alias').'.'.$key),
+                    'position' => 'outside top',
+                    'font_size' => 14,
+                    'colour' => '#606060',
+                ];
+            })->values()->toArray();
+            
+
+
+            $industryGraph = new \Goat1000\SVGGraph\SVGGraph(650, 150, $nttdataGraphSettings);
+            $industryGraph->colours($colours);
+            //$industryGraph->values($industryValues->toArray());
+            $industryGraph->values($industryValues->map(function($item, $key){
+                return collect($item)->mapWithKeys(function($item, $key){
+                    return [wordwrap($key, 25, "\n", false) => $item];
+                });
+            })->toArray());
+
+            //Company Size Graph
+            $userEmployees = session('user.employees');
+            $employeeValues = collect(config('baseline_'.session('product.id').'.overall.baseline-'.$userEmployees))->map(function($item, $key) use($userEmployees){
+                return [
+                    'Performance by Company Size ('.ucfirst($userEmployees).')' => $item
+                ];
+            });
+
+            $toNow = 0;
+            $subtract = 0;
+            $employeeValues->each(function($item,$key) use(&$toNow, &$subtract, $userEmployees){
+                $toNow += $item['Performance by Company Size ('.ucfirst($userEmployees).')'];
+                if($key == session('result.overall.rating')){
+                    $subtract = $item['Performance by Company Size ('.ucfirst($userEmployees).')']/2;
+                    return false;
+                }
+            });
+            $shapVal = $toNow-$subtract;
+
+            $nttdataGraphSettings['shape'] = [
+                [
+                    'line',
+                    'x1' => 'g0',
+                    'y1' => 'g0.5',
+                    'x2' => 'g'.$shapVal,
+                    'y2' => 'g0.5',
+                    'stroke-width' => 2,
+                    'stroke' => '#e6b600',
+                    'depth' => 'above',
+                ],
+                [
+                    'circle',
+                    'cx' => 'g'.$shapVal,
+                    'cy' => 'g0.5',
+                    'r' => 10,
+                    'stroke' => '#FFF',
+                    'stroke-width' => 2,
+                    'depth' => 'above',
+                    'fill' => '#e6b600'
+                ]
+            ];
+
+            $labelToNow = 0;
+            $nttdataGraphSettings['label'] = $employeeValues->map(function($item,$key) use(&$labelToNow, $userEmployees){
+                $labelToNow += $item['Performance by Company Size ('.ucfirst($userEmployees).')'];
+                $subtract = $item['Performance by Company Size ('.ucfirst($userEmployees).')']/2;
+                $val = $labelToNow - $subtract;
+                return [
+                    'g'.$val,
+                    'g1',
+                    trans(session('product.alias').'.'.$key),
+                    'position' => 'outside top',
+                    'font_size' => 14,
+                    'colour' => '#606060',
+                ];
+            })->values()->toArray();
+            
+
+
+            $employeeGraph = new \Goat1000\SVGGraph\SVGGraph(650, 150, $nttdataGraphSettings);
+            $employeeGraph->colours($colours);
+            //$employeeGraph->values($employeeValues->toArray());
+            $employeeGraph->values($employeeValues->map(function($item, $key){
+                return collect($item)->mapWithKeys(function($item, $key){
+                    return [wordwrap($key, 25, "\n", false) => $item];
+                });
+            })->toArray());
 
             $vars['introduction'] = trans(
                 session('product.alias').'.introduction',
@@ -1313,19 +1635,13 @@ class PdfController extends Controller
 
             //overall
             $rating = session('result.overall.rating');
+            $vars['overall'] = trans(session('product.alias').'.overall'.$rating);
+            $vars['overallGraph'] = $overallGraph->fetch('HorizontalStackedBarGraph', false);
+            $vars['countryGraph'] = $countryGraph->fetch('HorizontalStackedBarGraph', false);
+            $vars['industryGraph'] = $industryGraph->fetch('HorizontalStackedBarGraph', false);
+            $vars['employeeGraph'] = $employeeGraph->fetch('HorizontalStackedBarGraph', false);
             if(isset($geographic_block)){
-                $vars['overall'] = trans(
-                    session('product.alias').'.overall'.$rating,
-                    [
-                        'vertical_style' => "left: {$vertical_block[0]}mm; top: {$vertical_block[1]}mm;width: {$vertical_block[2]}mm; height: {$vertical_block[3]}mm;",
-                        'organisation_style' => "left: {$organisation_block[0]}mm; top: {$organisation_block[1]}mm;width: {$organisation_block[2]}mm; height: {$organisation_block[3]}mm;",
-                        'geographic_style' => "left: {$geographic_block[0]}mm; top: {$geographic_block[1]}mm;width: {$geographic_block[2]}mm; height: {$geographic_block[3]}mm;",
-                        'img' => 'url('.session('url').'/'.'images/tools/10/overall_graph_bg@2x-100_overall_graph_bg.jpg)'
-                    ]
-                );
-            }else{
-                $vars['overall'] = trans(
-                    session('product.alias').'.overallblank'.$rating);
+
             }
 
             //DX Adoption
@@ -1647,6 +1963,7 @@ class PdfController extends Controller
 
             $merge->addPDF(storage_path().'/nttdata-output-report_start'.$locale .'.pdf', 'all');
             $merge->addPDF(storage_path().'/nttdata-report-'.$timeStamp.'.pdf', 'all');
+            $merge->addPDF(storage_path().'/nttdata-output-report_end'.$locale .'.pdf', 'all');
 
             $merge->merge('browser', storage_path().'/reports/nttdata-report-'.$timeStamp.'.pdf', 'P');
             if (File::exists(storage_path().'/nttdata-report-'.$timeStamp.'.pdf')) {

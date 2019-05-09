@@ -102,43 +102,22 @@ return array(
     ],
     'introduction' => '
         <h2 class="text-blue-dark mb-6">YOUR RESULTS</h2>
-        <p class="mb-6">Organizations can only reap the full benefits of digital transformation if it is truly embedded within their culture, processes and technology. IDC has created the Financial Services Digital Transformation Capability Assessment Tool to help FSIs assess their readiness for their digital future. It scores FSIs on their approach to becoming digital by looking at three core elements - how far advanced you are along the DX journey, how successful your DX initiatives have been, and the steps you have taken to becoming a Connected FSI. Based on a global survey of 1,050 FSI intitutions across banking, insurance and capital markets among other, we class organizations into three levels of Digital Transformation capability: DX Complacents, DX Conformists and DX Trailblazers.
+        <p class="mb-6">Organizations can only reap the full benefits of digital transformation if it is truly embedded within their culture, processes and technology. IDC\'s Financial Services Digital Transformation Capability Assessment Tool scores FSIs on their approach to becoming digital by looking at three core elements - how far advanced you are along the DX journey, how successful your DX initiatives have been, and the steps you have taken to becoming a Connected FSI. 
         </p>
     ',
     'overallstage1'=>'
         <h2 class="leading-tight text-blue-dark mb-2 mt-6">OVERALL PERFORMANCE: Stage 1 - DX Complacent</h2>
-        <div class="w-full mb-8">
-            <div class="block relative" style="width: 172mm; height: 81.35mm; background: :img no-repeat center center;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
-                <div class="absolute border-2 border-purple border-dashed" style=":vertical_style background-color: rgba(104,33,95,0.2)"></div>
-                <div class="absolute border-2 border-purple border-dashed" style=":organisation_style background-color: rgba(104,33,95,0.2)"></div>
-                <div class="absolute border-2 border-purple border-dashed" style=":geographic_style background-color: rgba(104,33,95,0.2)"></div>
-            </div>
-        </div>
-        <p class="mb-2">This result might hurt a bit, but based on your responses to IDC\'s Financial Services DX Capability Assessment Tool, your organization has been rated at the earliest level of DX capability - Digital Transformation Digphobe. This means you are struggling with moving to a Digital Future compared to the rest of the industry and there is much to do to be where you need to be. While it may seem an unattainable goal at this point, you must look to incremental improvements and seek outside assistance where possible to to accelerate your move to a digital future.</p>
+        <p class="mb-2">Your results might hurt a bit, but based on your responses to IDC\'s Financial Services DX Capability Assessment Tool, your organization has been rated at the earliest level of DX capability - Digital Transformation Complacent. This means you are struggling with moving to a Digital Future compared to the rest of the industry and there is much to do to be where you need to be. While it may seem an unattainable goal at this point, you must look to incremental improvements and seek outside assistance where possible to to accelerate your move to a digital future.</p>
         <p class="mb-2">Your results indicate that there is plenty to do to get on the level with DX. This report will give you advice on areas to give priority to as you look to progress to the next stage of DX capability, so let\'s turn to the next page and dig into what you can do.</p>
     ',
     'overallstage2'=>'
         <h2 class="leading-tight text-blue-dark mb-2 mt-6">OVERALL PERFORMANCE: Stage 2 - DX Conformist</h2>
-        <div class="w-full mb-8">
-            <div class="block relative" style="width: 172mm; height: 81.35mm; background: :img no-repeat center center;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
-                <div class="absolute border-2 border-purple border-dashed" style=":vertical_style background-color: rgba(104,33,95,0.2)"></div>
-                <div class="absolute border-2 border-purple border-dashed" style=":organisation_style background-color: rgba(104,33,95,0.2)"></div>
-                <div class="absolute border-2 border-purple border-dashed" style=":geographic_style background-color: rgba(104,33,95,0.2)"></div>
-            </div>
-        </div>
-        <p class="mb-2">Well done! Based on your responses to IDC\'s Financial Services DX Capability Assessment Tool, your organization has been rated at the second highest level of DX capability - Digital Transformation Conformist .This means your organization is generally in line with the rest of the industry and readying itself for the digital future. While you are doing well, there is still much to do to be fully digital ready.</p>
+        <p class="mb-2">Well done on your results! Based on your responses to IDC\'s Financial Services DX Capability Assessment Tool, your organization has been rated at the second highest level of DX capability - Digital Transformation Conformist .This means your organization is generally in line with the rest of the industry and readying itself for the digital future. While you are doing well, there is still much to do to be fully digital ready.</p>
         <p class="mb-2">Your results indicate that while you are doing well, there is plenty to do to get on level terms with the best at DX in financial services. This report will give you advice on areas to give priority to as you look to progress to the next stage of DX capability, so let\'s turn to the next page and dig into what you can do.</p>
     ',
     'overallstage3'=>'
         <h2 class="leading-tight text-blue-dark mb-2 mt-6">OVERALL PERFORMANCE: Stage 3 - DX Trailblazer</h2>
-        <div class="w-full mb-8">
-            <div class="block relative" style="width: 172mm; height: 81.35mm; background: :img no-repeat center center;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
-                <div class="absolute border-2 border-purple border-dashed" style=":vertical_style background-color: rgba(104,33,95,0.2)"></div>
-                <div class="absolute border-2 border-purple border-dashed" style=":organisation_style background-color: rgba(104,33,95,0.2)"></div>
-                <div class="absolute border-2 border-purple border-dashed" style=":geographic_style background-color: rgba(104,33,95,0.2)"></div>
-            </div>
-        </div>
-        <p class="mb-2">Congratulations! Based on your responses to IDC\'s Financial Services DX Capability Assessment Tool, your organization has been rated at the highest level of DX capability - Digital Transformation Trailblazer .This means your organization is generally ahead of the industry and blazing a trail to the digital future. Always bear in mind though that you need to keep at it to stay ahead!</p>
+        <p class="mb-2">Congratulations on your results! Based on your responses to IDC\'s Financial Services DX Capability Assessment Tool, your organization has been rated at the highest level of DX capability - Digital Transformation Trailblazer .This means your organization is generally ahead of the industry and blazing a trail to the digital future. Always bear in mind though that you need to keep at it to stay ahead!</p>
         <p class="mb-2">Your results indicate that you are at the top of the pile when it comes to DX in financial services. While this is great, there may be some areas for you to pay attention to stay ahead in the game. This report will give you advice on areas to focus on, so let\'s turn to the next page and dig into what you can do.</p>
     ',
     'overallblankstage1'=>'
@@ -223,7 +202,7 @@ return array(
 
     'dx-adoptionq1intro' => '
         <p class="mt-6 mb-2 font-bold text-blue-dark">
-            Q1: On a scale of 1 to 5, how transformed are the following areas, in your organization?
+            On a scale of 1 to 5, how transformed are the following areas, in your organization?
         </p>
     ',
     'dx-adoptionq1stage1a'=>'
@@ -276,7 +255,7 @@ return array(
 
     'dx-adoptionq2intro'=>'
         <p class="mt-6 mb-2 font-bold text-blue-dark">
-            Q2: What is IT\'s role (as viewed by business) in transforming business through digital technologies in your organization?
+            What is IT\'s role (as viewed by business) in transforming business through digital technologies in your organization?
         </p>
         <p class="mb-2">
             Our research shows that FSIs that are advanced in DX view IT as an integral part of their transformation strategy. IT is considered a driver of competitive advantage in such forward looking organizations.
@@ -332,7 +311,7 @@ return array(
 
     'dx-adoptionq3intro'=>'
         <p class="mt-6 mb-2 font-bold text-blue-dark">
-            Q3: Which of the bands below best represent the proportion of your IT budget spend on the following areas?
+            Which of the bands below best represent the proportion of your IT budget spend on the following areas?
         </p>
         <p class="mb-2">
             Progress in digital transformation has a direct correlation to significant investments in the DX services.  FSIs that are advanced in DX typically have focused DX investments. They also balance this very well with their investments in traditional IT services.
@@ -433,7 +412,7 @@ return array(
 
     'dx-adoptionq4intro'=>'
         <p class="mt-6 mb-2 font-bold text-blue-dark">
-            Q4: Will you spend more, less, or the same in 2018 than in the previous year for the following areas?
+            Will you spend more, less, or the same in 2018 than in the previous year for the following areas?
         </p>
         <p class="mb-2">
             According to our research, FSIs that are advanced in their DX journey have solid plans to increase their DX investments in the next couple of years to keep up the momentum. With agile delivery models and automation becoming norm to address evolving requirements and speed to market, they plan to reduce investments in traditional business and IT consulting. Investments in BPO services are also expected to decline in the next couple of years.
@@ -552,7 +531,7 @@ return array(
 
     'success-in-dxq5intro'=>'
         <p class="mt-6 mb-2 font-bold text-blue-dark">
-            Q5: What is the typical balance in your company for digital transformation initiatives?
+            What is the typical balance in your company for digital transformation initiatives?
         </p>
         <p class="mb-2">
             An important ingredient for success in digital transformation is an organization\'s approach to implement digital projects.
@@ -636,7 +615,7 @@ return array(
 
     'success-in-dxq6intro'=>'
         <p class="mt-6 mb-2 font-bold text-blue-dark">
-            Q6: How successful are you in your digital initiatives?
+            How successful are you in your digital initiatives?
         </p>
         <p class="mb-2">
             To measure the success of digital initiatives, FSIs need to define new digital KPIs such as customer advocacy scores, return on data-related investments, business\'s ability to transform and automate processes etc. Digitally advanced organizations use their KPIs for quarterly performance reviews, strategic planning, monthly ops reviews, directing weekly activities and also for presenting them to investors. 
@@ -705,7 +684,7 @@ return array(
 
     'success-in-dxq7intro'=>'
         <p class="mt-6 mb-2 font-bold text-blue-dark">
-            Q7: At what stage is your organization today in the deployment of each of the following digital technologies or initiatives to transform your business in response to the changing customer and market needs?
+            At what stage is your organization today in the deployment of each of the following digital technologies or initiatives to transform your business in response to the changing customer and market needs?
         </p>
         <p class="mb-2">
             Our research in financial services shows that investments in Big Data and analytics, Social and collaboration tools, business through new channels and platform based ecosystem delivery provide an advantage to the FSIs that are advanced in their DX journey.
@@ -823,7 +802,7 @@ return array(
 
     'connected-financial-servicesq8intro'=>'
         <p class="mt-6 mb-2 font-bold text-blue-dark">
-            Q8: Which statement best describes how advanced you are in delivering a connected financial service?
+            Which statement best describes how advanced you are in delivering a connected financial service?
         </p>
         <p class="mb-2">
             Digital savvy organizations aspire to become connected financial services establishments for competitive advantage.
@@ -907,7 +886,7 @@ return array(
 
     'connected-financial-servicesq9intro'=>'
         <p class="mt-6 mb-2 font-bold text-blue-dark">
-            Q9: In delivering a connected financial services business, to what extent have you implemented each of the following to assess risk and ensure the right levels of security?
+            In delivering a connected financial services business, to what extent have you implemented each of the following to assess risk and ensure the right levels of security?
         </p>
         <p class="mb-2">
             Financial services organizations should employ robust methods to assess risk and ensure that the right levels of security are in place in a connected financial services model with measures such as identity management, fraud detection, cyberthreat detection, investments in next gen security etc. 

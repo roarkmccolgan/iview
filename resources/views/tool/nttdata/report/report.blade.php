@@ -47,6 +47,12 @@ $manifest = json_decode($json, TRUE);
         <div class="{{ $pdf ? 'w-5/6' : 'container' }} px-2 sm:px-0 mx-auto mb-8">
             {!!$overall!!}
         </div>
+        <div class="{{ $pdf ? 'w-5/6' : 'container' }} px-2 sm:px-0 mx-auto mb-8">
+            {!!$overallGraph!!}
+            {!!$countryGraph!!}
+            {!!$industryGraph!!}
+            {!!$employeeGraph!!}
+        </div>
         <div class="pb"></div>
         <div class="{{ $pdf ? 'w-5/6' : 'container' }} px-2 sm:px-0 mx-auto mb-8">
             {!!$dxAdoption!!}

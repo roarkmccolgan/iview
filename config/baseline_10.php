@@ -388,6 +388,142 @@ return [
         'block-country-jp-3' => [32.076, 10.76, 11.131, 15.875],
         'block-country-latam-3' => [43.537, 10.76, 11.131, 12.763],
 
+
+        'baseline-overall' => [
+            'stage1' => 35,
+            'stage2' => 46,
+            'stage3' => 19
+        ],
+        'baseline-country-us' => [
+            'stage1' => 37,
+            'stage2' => 48,
+            'stage3' => 15
+        ],
+        'baseline-country-uk' => [
+            'stage1' => 33,
+            'stage2' => 51,
+            'stage3' => 16
+        ],
+        'baseline-country-de' => [
+            'stage1' => 35,
+            'stage2' => 47,
+            'stage3' => 18
+        ],
+        'baseline-country-it' => [
+            'stage1' => 31,
+            'stage2' => 47,
+            'stage3' => 22
+        ],
+        'baseline-country-sp' => [
+            'stage1' => 43,
+            'stage2' => 45,
+            'stage3' => 12
+        ],
+        'baseline-country-jp' => [
+            'stage1' => 35,
+            'stage2' => 40,
+            'stage3' => 25
+        ],
+        'baseline-country-mx' => [
+            'stage1' => 45,
+            'stage2' => 42,
+            'stage3' => 14
+        ],
+        'baseline-country-ar' => [
+            'stage1' => 17,
+            'stage2' => 52,
+            'stage3' => 31
+        ],
+        'baseline-country-br' => [
+            'stage1' => 24,
+            'stage2' => 52,
+            'stage3' => 25
+        ],
+        'baseline-country-cl' => [
+            'stage1' => 69,
+            'stage2' => 20,
+            'stage3' => 11
+        ],
+        'baseline-country-co' => [
+            'stage1' => 63,
+            'stage2' => 34,
+            'stage3' => 3
+        ],
+        
+        'baseline-100-499' => [
+            'stage1' => 64,
+            'stage2' => 34,
+            'stage3' => 2
+        ],
+        'baseline-500-999' => [
+            'stage1' => 37,
+            'stage2' => 55,
+            'stage3' => 9
+        ],
+        'baseline-1000-4999' => [
+            'stage1' => 21,
+            'stage2' => 46,
+            'stage3' => 33
+        ],
+        'baseline-5000-9999' => [
+            'stage1' => 5,
+            'stage2' => 33,
+            'stage3' => 62
+        ],
+        'baseline-10000+' => [
+            'stage1' => 25,
+            'stage2' => 13,
+            'stage3' => 63
+        ],
+
+
+        'baseline-100-499' => [
+            'stage1' => 64,
+            'stage2' => 34,
+            'stage3' => 2
+        ],
+        'baseline-500-999' => [
+            'stage1' => 37,
+            'stage2' => 55,
+            'stage3' => 9
+        ],
+        'baseline-1000-4999' => [
+            'stage1' => 21,
+            'stage2' => 46,
+            'stage3' => 33
+        ],
+        'baseline-5000-9999' => [
+            'stage1' => 5,
+            'stage2' => 33,
+            'stage3' => 62
+        ],
+        'baseline-10000+' => [
+            'stage1' => 25,
+            'stage2' => 13,
+            'stage3' => 63
+        ],
+
+        'baseline-banking' => [
+            'stage1' => 49,
+            'stage2' => 42,
+            'stage3' => 8
+        ],
+        'baseline-insurance' => [
+            'stage1' => 32,
+            'stage2' => 53,
+            'stage3' => 16
+        ],
+        'baseline-capital-markets' => [
+            'stage1' => 32,
+            'stage2' => 43,
+            'stage3' => 25
+        ],
+        'baseline-other-fsi' => [
+            'stage1' => 20,
+            'stage2' => 45,
+            'stage3' => 35
+        ],
+
         'report-settings' => [
             'header'=>true,
             'footer'=>true,
