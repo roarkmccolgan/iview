@@ -676,6 +676,7 @@ trait GenerateReportTrait
             $rating = session('result.overall.rating');
 
             $settings = [
+                'use_iconv'=> false,
                 'back_image'=>asset('images/tools/8/comparisonbg'.session('localeUrl').'.png?id=1'),
                 'back_image_width'=> 570,
                 'back_image_height'=> 320,
@@ -863,7 +864,7 @@ trait GenerateReportTrait
             $graph->colours($colours);
             $graph->values($values);
             $graph = $graph->Fetch('HorizontalBarGraph', false);
-            
+
             $customCopy.= trans(
                 session('product.alias').'.overallintro',
                 [

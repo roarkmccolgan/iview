@@ -691,6 +691,7 @@ class PdfController extends Controller
             //overall
             $rating = session('result.overall.rating');
             $settings = [
+                'use_iconv'=> false,
                 'back_image'=>asset('images/tools/8/comparisonbg'.session('localeUrl').'.png?id=1'),
                 'back_image_width'=> 570,
                 'back_image_height'=> 320,
