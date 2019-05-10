@@ -965,8 +965,8 @@ class PdfController extends Controller
                 ],
              ];
 
-             $graphinfrastructure->colours = $colours;
-             $graphinfrastructure->Values($values);
+             $graphinfrastructure->colours($colours);
+             $graphinfrastructure->values($values);
              $graphinfrastructure = $graphinfrastructure->Fetch('HorizontalGroupedBarGraph', false);
              $customCopy.= trans(
                  session('product.alias').'.infrastructuregraph',
@@ -1043,8 +1043,8 @@ class PdfController extends Controller
                 ],
              ];
 
-            $graphintelligence->colours = $colours;
-            $graphintelligence->Values($values);
+            $graphintelligence->colours($colours);
+            $graphintelligence->values($values);
             $graphintelligence = $graphintelligence->Fetch('HorizontalGroupedBarGraph', false);
             $customCopy.= trans(
                 session('product.alias').'.intelligencegraph',
@@ -1120,8 +1120,8 @@ class PdfController extends Controller
                 ],
              ];
 
-            $graphoperations->colours = $colours;
-            $graphoperations->Values($values);
+            $graphoperations->colours($colours);
+            $graphoperations->values($values);
             $graphoperations = $graphoperations->Fetch('HorizontalGroupedBarGraph', false);
             $customCopy.= trans(
                 session('product.alias').'.operationsgraph',

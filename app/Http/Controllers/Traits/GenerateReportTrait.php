@@ -950,8 +950,8 @@ trait GenerateReportTrait
                 ],
             ];
 
-            $graphinfrastructure->colours = $colours;
-            $graphinfrastructure->Values($values);
+            $graphinfrastructure->colours($colours);
+            $graphinfrastructure->values($values);
             $graphinfrastructure = $graphinfrastructure->Fetch('HorizontalGroupedBarGraph', false);
             $customCopy.= trans(
                 session('product.alias').'.infrastructuregraph',
@@ -1028,8 +1028,8 @@ trait GenerateReportTrait
                 ],
             ];
 
-            $graphintelligence->colours = $colours;
-            $graphintelligence->Values($values);
+            $graphintelligence->colours($colours);
+            $graphintelligence->values($values);
             $graphintelligence = $graphintelligence->Fetch('HorizontalGroupedBarGraph', false);
             $customCopy.= trans(
                 session('product.alias').'.intelligencegraph',
@@ -1105,8 +1105,8 @@ trait GenerateReportTrait
                 ],
             ];
 
-            $graphoperations->colours = $colours;
-            $graphoperations->Values($values);
+            $graphoperations->colours($colours);
+            $graphoperations->values($values);
             $graphoperations = $graphoperations->Fetch('HorizontalGroupedBarGraph', false);
             $customCopy.= trans(
                 session('product.alias').'.operationsgraph',
