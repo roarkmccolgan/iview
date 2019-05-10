@@ -858,7 +858,7 @@ trait GenerateReportTrait
             $settings['back_image'] = asset('images/tools/8/'.$graphbg.'.png');
             $settings['back_image_height'] = $graphHeight;
 
-            $graph = new \SVGGraph(570, $graphHeight, $settings);
+            $graph = new \Goat1000\SVGGraph\SVGGraph(570, $graphHeight, $settings);
             $colours = [['#9E3D91'], ['#1A7ABB']];
             $graph->colours = $colours;
             $graph->Values($values);
@@ -906,7 +906,7 @@ trait GenerateReportTrait
             $settings['back_image_height'] = 138;
             $settings['axis_max_h'] = 30;
 
-            $graphinfrastructure = new \SVGGraph(570, 138, $settings);
+            $graphinfrastructure = new \Goat1000\SVGGraph\SVGGraph(570, 138, $settings);
             $base = config('baseline_'.session('product.id').'.infrastructure');
 
             $user_score = session('result.infrastructure.score');
@@ -984,7 +984,7 @@ trait GenerateReportTrait
             $settings['back_image_height'] = 138;
             $settings['axis_max_h'] = 30;
 
-            $graphintelligence = new \SVGGraph(570, 138, $settings);
+            $graphintelligence = new \Goat1000\SVGGraph\SVGGraph(570, 138, $settings);
             $base = config('baseline_'.session('product.id').'.intelligence');
 
             $user_score = session('result.intelligence.score');
@@ -1061,7 +1061,7 @@ trait GenerateReportTrait
             $settings['back_image_height'] = 138;
             $settings['axis_max_h'] = 30;
 
-            $graphoperations = new \SVGGraph(570, 138, $settings);
+            $graphoperations = new \Goat1000\SVGGraph\SVGGraph(570, 138, $settings);
             $base = config('baseline_'.session('product.id').'.operations');
 
             $user_score = session('result.operations.score');
@@ -1231,6 +1231,42 @@ trait GenerateReportTrait
             $vars['sectionCopy'] = $customCopy;
         } elseif (session('product.id')==10) {
             $base = config('baseline_'.session('product.id').'.overall');
+            $rating = session('result.overall.rating');
+            $score = session('result.overall.score');
+            $subtractStages = 0;
+            if($rating == 'stage2'){
+                $subtractStages = config('baseline_'.session('product.id').'.overall.types.stage1.high');
+            }
+            if($rating == 'stage3'){
+                $subtractStages = config('baseline_'.session('product.id').'.overall.types.stage1.high') + config('baseline_'.session('product.id').'.overall.types.stage2.high');
+            }
+            $score = $score-$subtractStages;
+            $range = config('baseline_'.session('product.id').'.overall.types.'.session('result.overall.rating'));
+            $band = $range['high'] - $range['low'];
+            $scorePercentage = ($score/$band)*100;
+            $scoreMove = 0;
+            if($scorePercentage <= 12.5){
+                $scoreMove = 7;
+            }
+            if($scorePercentage > 12.5 && $scorePercentage <= 25){
+                $scoreMove = 6;
+            }
+            if($scorePercentage > 25 && $scorePercentage <= 37.5){
+                $scoreMove = 5;
+            }
+            if($scorePercentage > 37.5 && $scorePercentage <= 50){
+                $scoreMove = 4;
+            }
+            if($scorePercentage > 50 && $scorePercentage <= 62.5){
+                $scoreMove = 3;
+            }
+            if($scorePercentage > 62.5 && $scorePercentage <= 75){
+                $scoreMove = 2;
+            }
+            if($scorePercentage > 75 && $scorePercentage <= 100){
+                $scoreMove = 1;
+            }
+            $halfMove = 0;
             //dd(session('user'));
             //delete
             session(['user.country' => 'United States']);
@@ -1358,10 +1394,11 @@ trait GenerateReportTrait
 
             $toNow = 0;
             $subtract = 0;
-            $overallValues->each(function($item,$key) use(&$toNow, &$subtract){
+            $overallValues->each(function($item,$key) use(&$toNow, &$subtract,$scoreMove,&$halfMove){
                 $toNow += $item['Overall Performance'];
                 if($key == session('result.overall.rating')){
-                    $subtract = $item['Overall Performance']/2;
+                    $subtract = ($item['Overall Performance']/8)*$scoreMove;
+                    $halfMove = ($item['Overall Performance']/2);
                     return false;
                 }
             });
@@ -1391,10 +1428,11 @@ trait GenerateReportTrait
             ];
 
             $labelToNow = 0;
-            $nttdataGraphSettings['label'] = $overallValues->map(function($item,$key) use(&$labelToNow){
+            $nttdataGraphSettings['label'] = $overallValues->map(function($item,$key) use(&$labelToNow,$scoreMove,&$halfMove){
                 $labelToNow += $item['Overall Performance'];
-                $subtract = $item['Overall Performance']/2;
-                $val = $labelToNow - $subtract;
+                $subtract = ($item['Overall Performance']/8)*$scoreMove;
+                $halfMove = ($item['Overall Performance']/2);
+                $val = $labelToNow - $halfMove;
                 return [
                     'g'.$val,
                     'g1',
@@ -1424,10 +1462,11 @@ trait GenerateReportTrait
 
                 $toNow = 0;
                 $subtract = 0;
-                $countryValues->each(function($item,$key) use(&$toNow, &$subtract, $country){
+                $countryValues->each(function($item,$key) use(&$toNow, &$subtract, $country,$scoreMove,&$halfMove){
                     $toNow += $item['Performance by country ('.$country.')'];
                     if($key == session('result.overall.rating')){
-                        $subtract = $item['Performance by country ('.$country.')']/2;
+                        $subtract = ($item['Performance by country ('.$country.')']/8)*$scoreMove;
+                        $halfMove = ($item['Performance by country ('.$country.')']/2);
                         return false;
                     }
                 });
@@ -1457,10 +1496,11 @@ trait GenerateReportTrait
                 ];
 
                 $labelToNow = 0;
-                $nttdataGraphSettings['label'] = $countryValues->map(function($item,$key) use(&$labelToNow, $country){
+                $nttdataGraphSettings['label'] = $countryValues->map(function($item,$key) use(&$labelToNow, $country,$scoreMove,&$halfMove){
                     $labelToNow += $item['Performance by country ('.$country.')'];
-                    $subtract = $item['Performance by country ('.$country.')']/2;
-                    $val = $labelToNow - $subtract;
+                    $subtract = ($item['Performance by country ('.$country.')']/8)*$scoreMove;
+                    $halfMove = ($item['Performance by country ('.$country.')']/2);
+                    $val = $labelToNow - $halfMove;
                     return [
                         'g'.$val,
                         'g1',
@@ -1492,10 +1532,11 @@ trait GenerateReportTrait
 
             $toNow = 0;
             $subtract = 0;
-            $industryValues->each(function($item,$key) use(&$toNow, &$subtract, $userIndustry){
+            $industryValues->each(function($item,$key) use(&$toNow, &$subtract, $userIndustry,$scoreMove,&$halfMove){
                 $toNow += $item['Performance by Industry ('.ucfirst($userIndustry).')'];
                 if($key == session('result.overall.rating')){
-                    $subtract = $item['Performance by Industry ('.ucfirst($userIndustry).')']/2;
+                    $subtract = ($item['Performance by Industry ('.ucfirst($userIndustry).')']/8)*$scoreMove;
+                    $halfMove = ($item['Performance by Industry ('.ucfirst($userIndustry).')']/2);
                     return false;
                 }
             });
@@ -1525,10 +1566,11 @@ trait GenerateReportTrait
             ];
 
             $labelToNow = 0;
-            $nttdataGraphSettings['label'] = $industryValues->map(function($item,$key) use(&$labelToNow, $userIndustry){
+            $nttdataGraphSettings['label'] = $industryValues->map(function($item,$key) use(&$labelToNow, $userIndustry,$scoreMove,&$halfMove){
                 $labelToNow += $item['Performance by Industry ('.ucfirst($userIndustry).')'];
-                $subtract = $item['Performance by Industry ('.ucfirst($userIndustry).')']/2;
-                $val = $labelToNow - $subtract;
+                $subtract = ($item['Performance by Industry ('.ucfirst($userIndustry).')']/8)*$scoreMove;
+                $halfMove = ($item['Performance by Industry ('.ucfirst($userIndustry).')']/2);
+                $val = $labelToNow - $halfMove;
                 return [
                     'g'.$val,
                     'g1',
@@ -1560,10 +1602,11 @@ trait GenerateReportTrait
 
             $toNow = 0;
             $subtract = 0;
-            $employeeValues->each(function($item,$key) use(&$toNow, &$subtract, $userEmployees){
+            $employeeValues->each(function($item,$key) use(&$toNow, &$subtract, $userEmployees,$scoreMove,&$halfMove){
                 $toNow += $item['Performance by Company Size ('.ucfirst($userEmployees).')'];
                 if($key == session('result.overall.rating')){
-                    $subtract = $item['Performance by Company Size ('.ucfirst($userEmployees).')']/2;
+                    $subtract = ($item['Performance by Company Size ('.ucfirst($userEmployees).')']/8)*$scoreMove;
+                    $halfMove = ($item['Performance by Company Size ('.ucfirst($userEmployees).')']/2);
                     return false;
                 }
             });
@@ -1593,10 +1636,11 @@ trait GenerateReportTrait
             ];
 
             $labelToNow = 0;
-            $nttdataGraphSettings['label'] = $employeeValues->map(function($item,$key) use(&$labelToNow, $userEmployees){
+            $nttdataGraphSettings['label'] = $employeeValues->map(function($item,$key) use(&$labelToNow, $userEmployees,$scoreMove,&$halfMove){
                 $labelToNow += $item['Performance by Company Size ('.ucfirst($userEmployees).')'];
-                $subtract = $item['Performance by Company Size ('.ucfirst($userEmployees).')']/2;
-                $val = $labelToNow - $subtract;
+                $subtract = ($item['Performance by Company Size ('.ucfirst($userEmployees).')']/8)*$scoreMove;
+                $halfMove = ($item['Performance by Company Size ('.ucfirst($userEmployees).')']/2);
+                $val = $labelToNow - $halfMove;
                 return [
                     'g'.$val,
                     'g1',
@@ -2004,59 +2048,59 @@ trait GenerateReportTrait
                 if (File::exists(storage_path().'/'.$assessment_id.'_'.$name.'.pdf')) {
                     File::delete(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
                 }
-} elseif (session('product.id')==8) {
-    if (file_exists(storage_path().'/'.$assessment_id.'_'.$name.'.pdf')) {
-        File::delete(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
-    }
-    $pdf->save(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
+            } elseif (session('product.id')==8) {
+                if (file_exists(storage_path().'/'.$assessment_id.'_'.$name.'.pdf')) {
+                    File::delete(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
+                }
+                $pdf->save(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
 
-    $merge = new \Nextek\LaraPdfMerger\PdfManage;
-    $locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
+                $merge = new \Nextek\LaraPdfMerger\PdfManage;
+                $locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
 
-    $merge->addPDF(storage_path().'/ntt_report_start'.$locale .'.pdf', 'all');
-    $merge->addPDF(storage_path().'/'.$assessment_id.'_'.$name.'.pdf', 'all');
-    $merge->addPDF(storage_path().'/ntt_report_end'.$locale .'.pdf', 'all');
+                $merge->addPDF(storage_path().'/ntt_report_start'.$locale .'.pdf', 'all');
+                $merge->addPDF(storage_path().'/'.$assessment_id.'_'.$name.'.pdf', 'all');
+                $merge->addPDF(storage_path().'/ntt_report_end'.$locale .'.pdf', 'all');
 
-    $merge->merge('file', storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf', 'P');
-    if (File::exists(storage_path().'/'.$assessment_id.'_'.$name.'.pdf')) {
-        File::delete(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
-    }
-} elseif (session('product.id')==9) {
-    //$pdf->setOption('cover',session('url').'/'.session('localeUrl').'template/'.session('template').'/report/cover');
-    $timeStamp = time();
-    //return $pdf->inline('invoice.pdf');
-    $pdf->save(storage_path().'/trend-micro-report-'.$timeStamp.'.pdf');
+                $merge->merge('file', storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf', 'P');
+                if (File::exists(storage_path().'/'.$assessment_id.'_'.$name.'.pdf')) {
+                    File::delete(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
+                }
+            } elseif (session('product.id')==9) {
+                //$pdf->setOption('cover',session('url').'/'.session('localeUrl').'template/'.session('template').'/report/cover');
+                $timeStamp = time();
+                //return $pdf->inline('invoice.pdf');
+                $pdf->save(storage_path().'/trend-micro-report-'.$timeStamp.'.pdf');
 
-    $merge = new \Nextek\LaraPdfMerger\PdfManage;
-    $locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
+                $merge = new \Nextek\LaraPdfMerger\PdfManage;
+                $locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
 
-    $merge->addPDF(storage_path().'/trend-micro_start'.$locale .'.pdf', 'all');
-    $merge->addPDF(storage_path().'/trend-micro-report-'.$timeStamp.'.pdf', 'all');
+                $merge->addPDF(storage_path().'/trend-micro_start'.$locale .'.pdf', 'all');
+                $merge->addPDF(storage_path().'/trend-micro-report-'.$timeStamp.'.pdf', 'all');
 
-    $merge->merge('file', storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf', 'P');
-    if (File::exists(storage_path().'/trend-micro-report-'.$timeStamp.'.pdf')) {
-        File::delete(storage_path().'/trend-micro-report-'.$timeStamp.'.pdf');
-    }
-} elseif (session('product.id')==10) {
-    //$pdf->setOption('cover',session('url').'/'.session('localeUrl').'template/'.session('template').'/report/cover');
-    $timeStamp = time();
-    //return $pdf->inline('invoice.pdf');
-    $pdf->save(storage_path().'/nttdata-report-'.$timeStamp.'.pdf');
+                $merge->merge('file', storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf', 'P');
+                if (File::exists(storage_path().'/trend-micro-report-'.$timeStamp.'.pdf')) {
+                    File::delete(storage_path().'/trend-micro-report-'.$timeStamp.'.pdf');
+                }
+            } elseif (session('product.id')==10) {
+                //$pdf->setOption('cover',session('url').'/'.session('localeUrl').'template/'.session('template').'/report/cover');
+                $timeStamp = time();
+                //return $pdf->inline('invoice.pdf');
+                $pdf->save(storage_path().'/nttdata-report-'.$timeStamp.'.pdf');
 
-    $merge = new \Nextek\LaraPdfMerger\PdfManage;
-    $locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
+                $merge = new \Nextek\LaraPdfMerger\PdfManage;
+                $locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
 
-    $merge->addPDF(storage_path().'/nttdata-output-report_start'.$locale .'.pdf', 'all');
-    $merge->addPDF(storage_path().'/nttdata-report-'.$timeStamp.'.pdf', 'all');
-    $merge->addPDF(storage_path().'/nttdata-output-report_end'.$locale .'.pdf', 'all');
+                $merge->addPDF(storage_path().'/nttdata-output-report_start'.$locale .'.pdf', 'all');
+                $merge->addPDF(storage_path().'/nttdata-report-'.$timeStamp.'.pdf', 'all');
+                $merge->addPDF(storage_path().'/nttdata-output-report_end'.$locale .'.pdf', 'all');
 
-    $merge->merge('file', storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf', 'P');
-    if (File::exists(storage_path().'/nttdata-report-'.$timeStamp.'.pdf')) {
-        File::delete(storage_path().'/nttdata-report-'.$timeStamp.'.pdf');
-    }
-} else {
-    return $pdf->save(storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf');
-}
+                $merge->merge('file', storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf', 'P');
+                if (File::exists(storage_path().'/nttdata-report-'.$timeStamp.'.pdf')) {
+                    File::delete(storage_path().'/nttdata-report-'.$timeStamp.'.pdf');
+                }
+            } else {
+                return $pdf->save(storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf');
+            }
         } else {
             $view = View::make('tool.'.session('template').'.report.report', $vars);
             return $view;

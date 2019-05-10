@@ -52,13 +52,16 @@ $manifest = json_decode($json, TRUE);
         
         <div class="pb"></div>
         <div class="{{ $pdf ? 'w-5/6' : 'container' }} px-2 sm:px-0 mx-auto mb-8">
-            {!!$overallGraph!!}
-            {!!$countryGraph!!}
-            {!!$industryGraph!!}
-            {!!$employeeGraph!!}
+        	<p class="mt-6 mb-2 font-bold text-blue-dark">
+	            Your result compared with your peers
+	        </p>
+            {!!$overallGraph!!}<br/>
+            {!!$countryGraph!!}<br/>
+            {!!$industryGraph!!}<br/>
+            {!!$employeeGraph!!}<br/>
             <div class="text-right mt-4">
-	            <div class="w-4 h-4 rounded-full bg-yellow-dark inline-block align"></div>
-	            <div class="inline-block">Your Result</div>
+	            <div class="w-4 h-4 rounded-full bg-yellow-dark inline-block mr-2"></div>
+	            <div class="inline-block pb-2 align-top">Your Result</div>
             </div>
         </div>
         <div class="{{ $pdf ? 'w-5/6' : 'container' }} px-2 sm:px-0 mx-auto mb-8">
