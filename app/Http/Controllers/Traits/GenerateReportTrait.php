@@ -693,7 +693,7 @@ trait GenerateReportTrait
                 'axis_colour' => '#efefef',
                 'axis_text_colour' => '#999',
                 'axis_overlap' => 2,
-                'axis_font' => 'Frutiger Neue LT W1G', 'axis_font_size' => 12,
+                'axis_font' => 'sans-serif', 'axis_font_size' => 12,
                 'bar_space' => 20,
                 'group_space' => 1,
                 'grid_colour' => 'none',
@@ -863,7 +863,7 @@ trait GenerateReportTrait
             $graph->colours($colours);
             $graph->values($values);
             $graph = $graph->Fetch('HorizontalBarGraph', false);
-
+            
             $customCopy.= trans(
                 session('product.alias').'.overallintro',
                 [
