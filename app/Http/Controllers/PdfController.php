@@ -873,7 +873,7 @@ class PdfController extends Controller
             $settings['back_image'] = asset('images/tools/8/'.$graphbg.'.png');
             $settings['back_image_height'] = $graphHeight;
 
-            $graph = new \SVGGraph(570, $graphHeight, $settings);
+            $graph = new \Goat1000\SVGGraph\SVGGraph(570, $graphHeight, $settings);
             $colours = [['#9E3D91'], ['#1A7ABB']];
             $graph->colours = $colours;
             $graph->Values($values);
@@ -921,7 +921,7 @@ class PdfController extends Controller
             $settings['back_image_height'] = 138;
             $settings['axis_max_h'] = 30;
 
-            $graphinfrastructure = new \SVGGraph(570, 138, $settings);
+            $graphinfrastructure = new \Goat1000\SVGGraph\SVGGraph(570, 138, $settings);
             $base = config('baseline_'.session('product.id').'.infrastructure');
 
             $user_score = session('result.infrastructure.score');
@@ -999,7 +999,7 @@ class PdfController extends Controller
             $settings['back_image_height'] = 138;
             $settings['axis_max_h'] = 30;
 
-            $graphintelligence = new \SVGGraph(570, 138, $settings);
+            $graphintelligence = new \Goat1000\SVGGraph\SVGGraph(570, 138, $settings);
             $base = config('baseline_'.session('product.id').'.intelligence');
 
             $user_score = session('result.intelligence.score');
@@ -1076,7 +1076,7 @@ class PdfController extends Controller
             $settings['back_image_height'] = 138;
             $settings['axis_max_h'] = 30;
 
-            $graphoperations = new \SVGGraph(570, 138, $settings);
+            $graphoperations = new \Goat1000\SVGGraph\SVGGraph(570, 138, $settings);
             $base = config('baseline_'.session('product.id').'.operations');
 
             $user_score = session('result.operations.score');
