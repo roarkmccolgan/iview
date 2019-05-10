@@ -860,8 +860,8 @@ trait GenerateReportTrait
 
             $graph = new \Goat1000\SVGGraph\SVGGraph(570, $graphHeight, $settings);
             $colours = [['#9E3D91'], ['#1A7ABB']];
-            $graph->colours = $colours;
-            $graph->Values($values);
+            $graph->colours($colours);
+            $graph->values($values);
             $graph = $graph->Fetch('HorizontalBarGraph', false);
 
             $customCopy.= trans(
