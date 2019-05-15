@@ -1283,11 +1283,7 @@ class PdfController extends Controller
                 $scoreMove = 1;
             }
             $halfMove = 0;
-            //dd(session('user'));
-            //delete
-            session(['user.country' => 'United States']);
-            session(['user.industry' => 'insurance']);
-            session(['user.employees' => '1000-4999']);
+
 
             $overallNumber = (int) filter_var(session('result.overall.rating'), FILTER_SANITIZE_NUMBER_INT);
             $dxAdoptionNumber =  (int) filter_var(session('result.dx-adoption.rating'), FILTER_SANITIZE_NUMBER_INT);
