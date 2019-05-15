@@ -56,9 +56,9 @@ $manifest = json_decode($json, TRUE);
 	            Your result compared with your peers
 	        </p>
             {!!$overallGraph!!}<br/>
-            @isset($countryGraph)
+            @if(isset($countryGraph))
 			    {!!$countryGraph!!}<br/>
-			@endisset
+			@endif
             {!!$industryGraph!!}<br/>
             {!!$employeeGraph!!}<br/>
             <div class="text-right mt-4">
