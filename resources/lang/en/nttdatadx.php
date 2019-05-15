@@ -60,7 +60,7 @@ return array(
         'body' => 'As promised, here\'s the link to download your Digital Transformation (DX) Capability Assessment report. This breaks down your results by category and helps you benchmark yourself against other organisations.',
         'link' => 'Download PDF Report',
         'link_inline' => 'View Report in your browser',
-        'extra' => 'For any further information please email <a href="mailto:Henrietta.Lacey-Gutsell@nttdata.com" subject="NTT DATA DX Assessment">henrietta.lacey-gutsell@nttdata.com</a>',
+        'extra' => 'For any further information please email <a href="mailto:NTTDATAFS@nttdata.com" subject="NTT DATA DX Assessment">NTTDATAFS@nttdata.com</a>',
         'regards' => 'Regards',
         'team' => 'The NTT DATA team'
     ],
