@@ -1353,6 +1353,7 @@ class PdfController extends Controller
             });
 
             $nttdataGraphSettings = [
+                'use_iconv'=> false,
                 'title' => 'Overall Rating',
                 'back_colour' => 'transparent',
                 'stroke_colour' => NULL,
