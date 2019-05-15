@@ -568,8 +568,8 @@ return [
             'sname'=>'required|min:2|max:255',
             'email'=>'required|email',
             'company'=>'required',
-            'employees'=>'required',
-            'industry'=>'required',
+            'extra.employees'=>'required',
+            'extra.industry'=>'required',
             'country'=>'required',
             'terms'=>'required'
         ]
