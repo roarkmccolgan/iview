@@ -1281,7 +1281,7 @@ trait GenerateReportTrait
                 'capital-markets',
                 'other-fsi'
             ]);
-            $vertical_block = $base['block-vertical-'.$verticals[$verticals->search(strtolower(session('user.industry')))].'-'.$overallNumber];
+            $vertical_block = $base['block-vertical-'.$verticals[$verticals->search(strtolower(session('user.extra.industry')))].'-'.$overallNumber];
 
             $orgsizes = collect([
                 '100-499',
@@ -1290,7 +1290,7 @@ trait GenerateReportTrait
                 '5000-9999',
                 '10000+'
             ]);
-            $organisation_block = $base['block-size-'.$orgsizes[$orgsizes->search(strtolower(session('user.employees')))].'-'.$overallNumber];
+            $organisation_block = $base['block-size-'.$orgsizes[$orgsizes->search(strtolower(session('user.extra.employees')))].'-'.$overallNumber];
 
             $countries = collect([
                 'us'=>[
@@ -1521,12 +1521,13 @@ trait GenerateReportTrait
                 })->toArray());             
             }
             //Industry Graph
-            $userIndustry = session('user.industry');
+            $userIndustry = session('user.extra.industry');
             $industryValues = collect(config('baseline_'.session('product.id').'.overall.baseline-'.$userIndustry))->map(function($item, $key) use($userIndustry){
                 return [
                     'Performance by Industry ('.ucfirst($userIndustry).')' => $item
                 ];
             });
+            return session('user');
 
             $toNow = 0;
             $subtract = 0;
@@ -1591,7 +1592,7 @@ trait GenerateReportTrait
             })->toArray());
 
             //Company Size Graph
-            $userEmployees = session('user.employees');
+            $userEmployees = session('user.extra.employees');
             $employeeValues = collect(config('baseline_'.session('product.id').'.overall.baseline-'.$userEmployees))->map(function($item, $key) use($userEmployees){
                 return [
                     'Performance by Company Size ('.ucfirst($userEmployees).')' => $item

@@ -70,7 +70,7 @@
 											{{ $t('nttdatadx.leadgen.employees') }}
 										</label>
 										<div class="inline-block relative w-full mb-2">
-											<select class="block appearance-none rounded-none w-full border py-3 px-4 pr-8" :class="[errors.employees ? 'border-red' : '']" id="employees" name="employees" @blur="hasError">
+											<select class="block appearance-none rounded-none w-full border py-3 px-4 pr-8" :class="[errors.employees ? 'border-red' : '']" id="employees" name="extra[employees]" @blur="hasError">
 												<option value="" v-html="$t('nttdatadx.leadgen.pleaseselect')"></option>
 												<option v-for="(item, key) in assessment.fields.employees.options" :value="key">{{ item }}</option>
 											</select>
@@ -87,7 +87,7 @@
 											{{ $t('nttdatadx.leadgen.industry') }}
 										</label>
 										<div class="inline-block relative w-full mb-2">
-											<select class="block appearance-none rounded-none w-full border py-3 px-4 pr-8" :class="[errors.industry ? 'border-red' : '']" id="industry" name="industry" @blur="hasError">
+											<select class="block appearance-none rounded-none w-full border py-3 px-4 pr-8" :class="[errors.industry ? 'border-red' : '']" id="industry" name="extra[industry]" @blur="hasError">
 												<option value="" v-html="$t('nttdatadx.leadgen.pleaseselect')"></option>
 												<option v-for="(item, key) in assessment.fields.industry.options" :value="key">{{ item }}</option>
 											</select>
