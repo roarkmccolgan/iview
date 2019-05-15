@@ -13,7 +13,7 @@ $manifest = json_decode($json, TRUE);
 		<title>Report</title>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 		
-		<link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="{{ asset('bundle/'.$manifest['nttdata'][1])}}">
 		<style>
 			.pb {
 				page-break-before: always;
