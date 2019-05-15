@@ -1527,7 +1527,6 @@ trait GenerateReportTrait
                     'Performance by Industry ('.ucfirst($userIndustry).')' => $item
                 ];
             });
-            return session('user');
 
             $toNow = 0;
             $subtract = 0;
