@@ -1689,7 +1689,9 @@ class PdfController extends Controller
             $vars['overall'] = trans(session('product.alias').'.overall'.$rating);
             $vars['overalloutro'] = trans(session('product.alias').'.overall'.$rating.'outro');
             $vars['overallGraph'] = $overallGraph->fetch('HorizontalStackedBarGraph', false);
-            $vars['countryGraph'] = $countryGraph->fetch('HorizontalStackedBarGraph', false);
+            if($isFromBaselineRegion!==false){
+                $vars['countryGraph'] = $countryGraph->fetch('HorizontalStackedBarGraph', false);
+            }
             $vars['industryGraph'] = $industryGraph->fetch('HorizontalStackedBarGraph', false);
             $vars['employeeGraph'] = $employeeGraph->fetch('HorizontalStackedBarGraph', false);
             if(isset($geographic_block)){
