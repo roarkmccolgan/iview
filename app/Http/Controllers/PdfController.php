@@ -1542,6 +1542,7 @@ class PdfController extends Controller
                     'Performance by Industry ('.ucfirst($userIndustry).')' => $item
                 ];
             });
+            return $industryValues;
 
             $toNow = 0;
             $subtract = 0;
