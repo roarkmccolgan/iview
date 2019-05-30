@@ -9,8 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <title>@yield('pagetitle','Databench Comparison Self-assessment Result')</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+    <title>@yield('pagetitle','Databench Comparison Self-assessment')</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 
     <!-- Favicons -->
     <link rel="shortcut icon" href="/images/favicon.ico">
@@ -36,7 +36,7 @@
     <![endif]-->
     @show
 </head>
-<body class="font-sans text-sm leading-normal text-grey-darkest">
+<body class="font-sans text-xs leading-normal text-grey-darkest">
     @yield('main')
 
     @section('pagescript')

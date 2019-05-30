@@ -6,12 +6,12 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<title>PDF Report</title>
-	<link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+	<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
 
-<div class="w-5/6 mx-auto text-right py-2 clearfix">
-	<img class="" src="{{ asset('images/tools/italyassessment/DataBench_logo_v03_final_color.png')}}" alt="" class="" style="width: 60mm;" />
+<div class="w-5/6 mx-auto text-center leading-none py-4 clearfix">
+	<img class="mx-auto" src="{{ asset('images/tools/italyassessment/DataBench_logo_v03_final_color.png')}}" alt="" class="" style="width: 120mm;" />
 </div>
 <div class="w-5/6 mx-auto border-t"></div>
 </body>

@@ -78,8 +78,9 @@ Route::group(['domain' => '{subdomain}.'.env('APP_TLD', 'idcready.net'),'middlew
     Route::group(['prefix' => 'test'], function () {
         Route::get('/chart', 'TestController@chart');
     });
-    Route::group(['prefix' => 'report'], function () {
+    Route::group(['prefix' => 'idc'], function () {
         Route::get('/', 'ItalyController@index')->middleware(['routebyurl']);
+        Route::get('/report', 'ItalyController@report')->middleware(['routebyurl']);
         Route::get('/pdf', 'ItalyController@pdf')->middleware(['routebyurl']);
     });
 

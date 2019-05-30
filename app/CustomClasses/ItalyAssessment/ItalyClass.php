@@ -1,15 +1,25 @@
 <?php
 namespace App\CustomClasses\ItalyAssessment;
 
+use App\Assessment;
+use App\Tracker;
+
 
 class ItalyClass
 {
+    public $name = 'Name';
+    public $project = 'Project';
+    public $organization = 'Organization';
+    public $email = 'email';
+    public $questions;
+    public $singleQuestions;
+    public $singleQuestionsText;
+    public $answer;
+    public $assessment;
 
-	
-	function loadHtml($respondantUuid = 'f9z3sduwbdxrbyx4')
-	{
-		//load data
-        include(app_path() . '/CustomClasses/ItalyAssessment/data.php');
+	function loadAssessment($respondantUuid, $utm = false)
+    {
+        $respondantUuid = $respondantUuid ?? 'f9z3sduwbdxrbyx4';
         
         $client = new \GuzzleHttp\Client([
             'base_uri' => 'https://selfserve.decipherinc.com/api/v1/surveys/selfserve/',
@@ -18,14 +28,17 @@ class ItalyClass
             ]
         ]);
         try {
-            $answerRequest = $client->request('GET', '21eb/180705/data', [
-                'query' => [
-                    'format' => 'json',
-                    'cond' => 'uuid=="f9z3sduwbdxrbyx4"'
-                ]
-            ]);
+            $assessment = Assessment::where('tool_id',session('product.id'))->where('uuid', $respondantUuid)->first();
+            if(!$assessment){
+                $answerRequest = $client->request('GET', '21eb/190309/data', [
+                    'query' => [
+                        'format' => 'json',
+                        'cond' => 'uuid=="'.$respondantUuid.'"'
+                    ]
+                ]);
+            }
             
-            $questionRequest = $client->request('GET', '21eb/180705/datamap', [
+            $questionRequest = $client->request('GET', '21eb/190309/datamap', [
                 'query' => [
                     'format' => 'json',
                 ]
@@ -33,31 +46,80 @@ class ItalyClass
         } catch (GuzzleHttp\Exception\RequestException $e) {
             return $e->getMessage();
         }
-        $questions = collect(json_decode($questionRequest->getBody(), true))->only('questions')->flatten(1)->filter(function($item){
+
+        $this->questions = collect(json_decode($questionRequest->getBody(), true))->only('questions')->flatten(1)->filter(function($item){
             return isset($item['variables']) && isset($item['qtitle']);
         })->pluck(['variables'])->flatten(1);
 
-        // $questions = collect($jsonQuestions)->only('questions')->flatten(1)->filter(function($item){
-        //     return isset($item['variables']) && isset($item['qtitle']);
-        // })->pluck(['variables'])->flatten(1);
-
-        //$questions = collect(json_decode(Storage::disk('local')->get('/italyFiles/questions.json'),true));
-
-        $singleQuestions = $questions->mapWithKeys(function($item){
+        $this->singleQuestions = $this->questions->mapWithKeys(function($item){
             return [$item['label'] => $item['rowTitle']];
         });
-        $singleQuestionsText = $questions->filter(function($item, $key){
+        $this->singleQuestionsText = $this->questions->filter(function($item, $key){
             return strpos($item['qlabel'], 's') === false;
         })->mapWithKeys(function($item){
             return [$item['label'] => $item['qtitle']];
         });
+        if(!$assessment){
+            $this->answer = collect(json_decode($answerRequest->getBody(), true))->first();
 
-        $answer = collect(json_decode($answerRequest->getBody(), true))->first();
-        
+            $assessment = new Assessment;
+            $assessment->tool_id = session('product.id');
+            $assessment->fname = $this->answer['q22r2'];
+            $assessment->lname = $this->answer['q22r3'];
+            $assessment->email = $this->answer['q22r4'];
+            $assessment->company = $this->answer['q22r1'];
+            $assessment->title = $this->answer['q22r6'];
+
+            $assessment->country = $this->answer['q22r5'];
+            $assessment->tel = null;
+            $assessment->referer = null;
+            $assessment->quiz = $this->answer;
+            $assessment->result = '[]';
+            $assessment->uuid = $respondantUuid;
+            $assessment->lang = session('locale') == '' ? 'en' : session('locale');
+            $assessment->save();
+            $this->assessment = $assessment;
+
+            if ($utm) {
+                $tracker = Tracker::where('tool_id', session('product.id'))
+                ->where('code', session('utm'))->first();
+                if ($tracker) {
+                    $tracker->increment('completions');
+                    $assessment->code = session('utm');
+                    $assessment->save();
+                    $trackerHit = $tracker->trackerHits()->create([
+                        'type' => 'completion',
+                    ]);
+                }
+            }
+
+        }else{
+            $this->answer = $assessment->quiz;
+            $this->assessment = $assessment;
+        }
+
+        $this->name = $this->answer['q22r2']." ".$this->answer['q22r3'];
+        $this->organization = $this->answer['q22r1'];
+        $this->email = $this->answer['q22r4'];
+
+        $this->project = $this->questions->filter(function($item, $key){
+            return $item['vgroup'] == 'q21';
+        })->pluck('values')->flatten(1)->filter(function($item){
+            return $item['value'] == $this->answer['q21'];
+        })->pluck('title')->first();
+    }
+
+    function loadHtml()
+	{
+        if(is_null($this->answer)){
+            abort(404);            
+        }
+        //load data
+        include(app_path() . '/CustomClasses/ItalyAssessment/data.php');
         //$answer =  collect(json_decode(Storage::disk('local')->get('/italyFiles/answer.json'), true));
 
-        $industry =  collect($answer)->only(array_keys($industryKeys))->filter()->keys()->first();
-        $size =  collect($answer)->only(array_keys($sizeKeys))->filter()->keys()->first();
+        $industry =  collect($this->answer)->only(array_keys($industryKeys))->filter()->keys()->first();
+        $size =  collect($this->answer)->only(array_keys($sizeKeys))->filter()->keys()->first();
         //graph settings
 
         $graphSettings = array(
@@ -73,29 +135,27 @@ class ItalyClass
             'axis_overlap' => 2,
             'axis_font' => 'system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
             'axis_font_size' => 10,
+            'axis_text_space_v' => 25,
             'show_grid' => true,
             'show_grid_h' => false,
-            'grid_colour' => '#EFEFEF',
+            'grid_colour' => '#CCC',
             'label_colour' => '#000',
             'pad_right' => 20,
             'pad_left' => 20,
             'minimum_grid_spacing' => 20,
         );
 
-        $q1question = '
-        	<h3>Q1: In which of the following areas has your company implemented or does it plan to implement Big Data and analytics initiatives?</h3>
-        ';
-        $q1intro = '
-        	<strong class="italic font-light">Overview</strong>
-        	<p class="mb-2">
-        		This question shows the level of interest in Big Data Solutions, and which use cases are the ones that see the most implementations. The focus differs by size band and industry, and the charts below are for the specific size band and industries selected.
-        	</p>
-        ';        
-
         //questionSize1
+        //
+        $q1question = '
+            <h3>Big Data and Analytics: Where are European companies investing?</h3>
+        ';
+        $q1intro = '';
+
+
         $q1Sizeset = $sizeReference['q1'][$size];
-        $q1SizeAnswers = collect($answer)->only(array_keys($q1Sizeset))->filter();
-        $q1Sizelabels = collect($singleQuestions)->filter(function($item, $key) use($q1SizeAnswers){
+        $q1SizeAnswers = collect($this->answer)->only(array_keys($q1Sizeset))->filter();
+        $q1Sizelabels = collect($this->singleQuestions)->filter(function($item, $key) use($q1SizeAnswers){
             return collect($q1SizeAnswers->keys())->contains($key);                
         });
 
@@ -112,18 +172,8 @@ class ItalyClass
         })->map(function($item, $key) use($q1GraphSizeValues){
             return [
                 [
-                    'line',
-                    'x1' => 'g0',
-                    'y1' => 'g'.(collect($q1GraphSizeValues)->keys()->search($key)+0.5),
-                    'x2' => 'g'.$item,
-                    'y2' => 'g'.(collect($q1GraphSizeValues)->keys()->search($key)+0.5),
-                    'stroke-width' => 2,
-                    'stroke' => '#842573',
-                    'depth' => 'above',
-                ],
-                [
                     'circle',
-                    'cx' => 'g'.$item,
+                    'cx' => 'g-1.5',
                     'cy' => 'g'.(collect($q1GraphSizeValues)->keys()->search($key)+0.5),
                     'r' => 10,
                     'stroke' => '#FFF',
@@ -137,41 +187,63 @@ class ItalyClass
         $graphSettings['axis_text_callback_y'] = function($value){
             return $value.'%';
         };
-        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q1GraphSizeValues)->count()*45+20, $graphSettings);
+        $graphSettings['label_h'] = 'average survey answers';
+
+        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q1GraphSizeValues)->count()*30+20, $graphSettings);
         $graph->colours($colours);
 
         $graph->values($q1GraphSizeValues);
 
         $q1SizeGraph = "
-        <div class='block mb-2'>
-        	<span class='figure'>Figure 1 – Specific size band response: areas of implementation</span>
+        <p class='mb-6 italic'>Survey question: In which of the following areas has your company implemented or does it plan to implement Big Data and Analytics (BDA) initiatives?</p>
+        <div class='block mb-4'>
+        	<span class='figure'>Specific size band response: areas of implementation of BDA initiatives</span>
         	<div class='sizegraph'>
-        		{$sizeKeys[$size]}
+        		Size band selected: <span class='font-bold'>{$sizeKeys[$size]}</span>
         	</div>
         	{$graph->fetch('HorizontalBarGraph', false)}
+            <div class='clearfix text-xs' style='width: 650px'>
+                <div class='float-right'>
+                    Your answer
+                </div>
+                <div class='float-right mr-2 w-4 h-4 leading-none rounded-full' style='background-color: #842573'>
+                </div>
+                <div class='float-right mr-8'>
+                    Average Survey Answers
+                </div>
+                <div class='float-right mr-2 w-4 h-4 leading-none' style='background-color: #c6dd64'>
+                </div>
+            </div>
         </div>";
 
         //Size band
-        $q1Sizeheader = "You selected {$q1SizeAnswers->count()} implementation areas in the {$sizeKeys[$size]} sizeband: {$q1Sizelabels->implodeLast(', ',', and ')} <br/><br/>";
+        $q1Sizeheader = "";
+        //$q1Sizeheader .= "You selected {$q1SizeAnswers->count()} implementation areas in the {$sizeKeys[$size]} sizeband: {$q1Sizelabels->implodeLast(', ',', and ')} <br><br>";
         $q1Sizebody = "";
-        $q1Sizelabels->each(function($item, $key) use(&$q1Sizebody, $size, $sizeKeys, $sizeReference, $genericReference){
+        /*$q1Sizelabels->each(function($item, $key) use(&$q1Sizebody, $size, $sizeKeys, $sizeReference, $genericReference){
             if($sizeReference['q1'][$size][$key]<4){
-                $q1Sizebody .= "<strong>{$item}</strong> is among the Top 3 implementation areas and is ranked as <strong>{$sizeReference['q1'][$size][$key]}</strong>. This shows your investment choices align with most organisations in {$sizeKeys[$size]} size band, and a suitable area for investment in Big Data Solutions.<br/>";
+                $q1Sizebody .= "<strong>{$item}</strong> is among the Top 3 implementation areas and is ranked as  <strong>{$sizeReference['q1'][$size][$key]}</strong>. This shows your investment choices align with most organisations in {$sizeKeys[$size]} size band, and a suitable area for investment in Big Data Solutions.<br>";
             }
             if($sizeReference['q1'][$size][$key]>9){
-                $q1Sizebody .= "<strong>{$item}</strong> is among the Bottom 3 implementation areas and is ranked as <strong>{$sizeReference['q1'][$size][$key]}</strong>. This suggests your investments differ from most organisations in {$sizeKeys[$size]} size band.<br/>";
+                $q1Sizebody .= "<strong>{$item}</strong> is among the Bottom 3 implementation areas and is ranked as  <strong>{$sizeReference['q1'][$size][$key]}</strong>. This suggests your investments differ from most organisations in {$sizeKeys[$size]} size band.<br>";
             }
             if($sizeReference['q1'][$size][$key]<=9 && $sizeReference['q1'][$size][$key]>=4){
-                $q1Sizebody .= "<strong>{$item}</strong> is in the middle set of implementation areas and is ranked as <strong>{$sizeReference['q1'][$size][$key]}</strong>. Your investment criteria for Big Data investment focuses slightly outside mainstream investment areas, but still picks up on those areas with interest from some Big Data users.<br/>";
+                $q1Sizebody .= "<strong>{$item}</strong> is in the middle set of implementation areas and is ranked as  <strong>{$sizeReference['q1'][$size][$key]}</strong>. Your investment criteria for Big Data investment focuses slightly outside mainstream investment areas, but still picks up on those areas with interest from some Big Data users.<br>";
             }
-            $q1Sizebody .= $genericReference['q1'][$key]."<br/><br/>";
-        });
-        $question1Size = $q1Sizeheader.$q1Sizebody;
+            //$q1Sizebody .= $genericReference['q1'][$key]."<br><br>";
+        });*/
+        $q1Sizebody .= "
+            <p class='mt-4'>
+                The green bars rank business areas according to the share of survey respondents in your company size band implementing BDA or planning to.<br>
+                The chart compares the average survey answers of your peers to your answers (violet dots).
+            </p>
+        ";
+        $question1Size = $q1Sizeheader.$q1Sizebody."<br>";
 
         //question1Industry
         $q1Industryset = $industryReference['q1'][$industry];
-        $q1IndustryAnswers = collect($answer)->only(array_keys($q1Industryset))->filter();
-        $q1Industrylabels = collect($singleQuestions)->filter(function($item, $key) use($q1IndustryAnswers){
+        $q1IndustryAnswers = collect($this->answer)->only(array_keys($q1Industryset))->filter();
+        $q1Industrylabels = collect($this->singleQuestions)->filter(function($item, $key) use($q1IndustryAnswers){
             return collect($q1IndustryAnswers->keys())->contains($key);                
         });
 
@@ -187,7 +259,7 @@ class ItalyClass
             return $q1Industrylabels->contains($key);
         })->map(function($item, $key) use($q1GraphIndustryValues){
             return [
-                [
+                /*[
                     'line',
                     'x1' => 'g0',
                     'y1' => 'g'.(collect($q1GraphIndustryValues)->keys()->search($key)+0.5),
@@ -196,10 +268,10 @@ class ItalyClass
                     'stroke-width' => 2,
                     'stroke' => '#e8ae38',
                     'depth' => 'above',
-                ],
+                ],*/
                 [
                     'circle',
-                    'cx' => 'g'.$item,
+                    'cx' => 'g-1.5', //'g'.$item
                     'cy' => 'g'.(collect($q1GraphIndustryValues)->keys()->search($key)+0.5),
                     'r' => 10,
                     'stroke' => '#FFF',
@@ -210,56 +282,68 @@ class ItalyClass
             ];
         });
         $graphSettings['shape'] = $graphIndustryUserShapes->flatten(1)->values()->toArray();
-        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q1GraphIndustryValues)->count()*45+20, $graphSettings);
+        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q1GraphIndustryValues)->count()*30+20, $graphSettings);
         $graph->colours($colours);
 
         $graph->values($q1GraphIndustryValues);
 
         $q1IndustryGraph = "
-        <div class='block mb-2 pb'>
-        	<span class='figure'>Figure 2 - Specific industry response: areas of implementation</span>
+        <p class='mb-6 italic pb'>Survey question: In which of the following areas has your company implemented or does it plan to implement Big Data and Analytics (BDA) initiatives?</p>
+        <div class='block mb-4'>
+        	<span class='figure'>Specific industry response: areas of implementation of BDA initiatives</span>
         	<div class='industrygraph'>
-        		{$industryKeys[$industry]}
+        		Industry selected: <span class='font-bold'>{$industryKeys[$industry]}</span>
         	</div>
         	{$graph->fetch('HorizontalBarGraph', false)}
+            <div class='clearfix text-xs' style='width: 650px'>
+                <div class='float-right'>
+                    Your answer
+                </div>
+                <div class='float-right mr-2 w-4 h-4 leading-none rounded-full' style='background-color: #e8ae38'>
+                </div>
+                <div class='float-right mr-8'>
+                    Average Survey Answers
+                </div>
+                <div class='float-right mr-2 w-4 h-4 leading-none' style='background-color: #2279BC'>
+                </div>
+            </div>
         </div>";
 
         //Industry
-        $q1industryHeader = "You selected {$q1IndustryAnswers->count()} implementation areas in {$industryKeys[$industry]}: {$q1Industrylabels->implodeLast(', ',', and ')}<br/><br/>";
+        $q1industryHeader = "";
+        //$q1industryHeader .= "You selected {$q1IndustryAnswers->count()} implementation areas in {$industryKeys[$industry]}: {$q1Industrylabels->implodeLast(', ',', and ')}<br><br>";
         $q1IndustryBody = "";
-        $q1Industrylabels->each(function($item, $key) use(&$q1IndustryBody, $industry, $industryKeys, $industryReference, $genericReference){
+        /*$q1Industrylabels->each(function($item, $key) use(&$q1IndustryBody, $industry, $industryKeys, $industryReference, $genericReference){
             if($industryReference['q1'][$industry][$key]<4){
-                $q1IndustryBody .= "<strong>{$item}</strong> is among the Top 3 implementation areas and is ranked as <strong>{$industryReference['q1'][$industry][$key]}</strong>. This shows your investment choices align with most organisations in {$industryKeys[$industry]}, and a suitable area for investment in Big Data Solutions.<br/>";
+                $q1IndustryBody .= "<strong>{$item}</strong> is among the Top 3 implementation areas and is ranked as  <strong>{$industryReference['q1'][$industry][$key]}</strong>. This shows your investment choices align with most organisations in {$industryKeys[$industry]}, and a suitable area for investment in Big Data Solutions.<br>";
             }
             if($industryReference['q1'][$industry][$key]>9){
-                $q1IndustryBody .= "<strong>{$item}</strong> is among the Bottom 3 implementation areas and is ranked as <strong>{$industryReference['q1'][$industry][$key]}</strong>. This suggests your investments differ from most organisations in {$industryKeys[$industry]}.<br/>";
+                $q1IndustryBody .= "<strong>{$item}</strong> is among the Bottom 3 implementation areas and is ranked as  <strong>{$industryReference['q1'][$industry][$key]}</strong>. This suggests your investments differ from most organisations in {$industryKeys[$industry]}.<br>";
             }
             if($industryReference['q1'][$industry][$key]<=9 && $industryReference['q1'][$industry][$key]>=4){
-                $q1IndustryBody .= "<strong>{$item}</strong> is in the middle set of implementation areas and is ranked as <strong>{$industryReference['q1'][$industry][$key]}</strong>. Your investment criteria for Big Data investment focuses slightly outside mainstream investment areas, but still picks up on those areas with interest from some Big Data users.<br/>";
+                $q1IndustryBody .= "<strong>{$item}</strong> is in the middle set of implementation areas and is ranked as  <strong>{$industryReference['q1'][$industry][$key]}</strong>. Your investment criteria for Big Data investment focuses slightly outside mainstream investment areas, but still picks up on those areas with interest from some Big Data users.<br>";
             }
-            $q1IndustryBody .= $genericReference['q1'][$key]."<br/><br/>";
-        });
-        $question1Industry = $q1industryHeader.$q1IndustryBody;
-
-        $q1question = '
-        	<h3>Q1: In which of the following areas has your company implemented or does it plan to implement Big Data and analytics initiatives?</h3>
-        ';
-        $q1intro = '
-        	<strong class="italic font-light">Overview</strong>
-        	<p class="mb-2">
-        		This question shows the level of interest in Big Data Solutions, and which use cases are the ones that see the most implementations. The focus differs by size band and industry, and the charts below are for the specific size band and industries selected.
-        	</p>
-        ';
+            //$q1IndustryBody .= $genericReference['q1'][$key]."<br><br>";
+        });*/
+        $q1IndustryBody .= "
+            <p class='mt-4'>
+                The blue bars rank business areas according to the share of survey respondents in your industry implementing BDA or planning to.<br/>
+                The chart compares the average survey answers of your peers to your answers (orange dots).
+            </p>
+        ";
+        $question1Industry = $q1industryHeader.$q1IndustryBody."<br>";
 
         $question1 = $q1question.$q1intro.$q1SizeGraph.$question1Size.$q1IndustryGraph.$question1Industry;
 
         //question2
-        $q2question = "Put Question here";
-        $q2intro = "Intro for question2";
+        $q2question = '
+            <h3 class="pb">Key business goals driving the adoption of BDA</h3>
+        ';
+        $q2intro = '';
 
         $q2Sizeset = $sizeReference['q2'][$size];
-        $q2SizeAnswers = collect($answer)->only(array_keys($q2Sizeset))->filter();
-        $q2Sizelabels = collect($singleQuestions)->filter(function($item, $key) use($q2SizeAnswers){
+        $q2SizeAnswers = collect($this->answer)->only(array_keys($q2Sizeset))->filter();
+        $q2Sizelabels = collect($this->singleQuestions)->filter(function($item, $key) use($q2SizeAnswers){
             return collect($q2SizeAnswers->keys())->contains($key);                
         });
 
@@ -277,7 +361,7 @@ class ItalyClass
             return $q2Sizelabels->contains($key);
         })->map(function($item, $key) use($q2GraphSizeValues){
             return [
-                [
+                /*[
                     'line',
                     'x1' => 'g0',
                     'y1' => 'g'.(collect($q2GraphSizeValues)->keys()->search($key)+0.5),
@@ -286,10 +370,10 @@ class ItalyClass
                     'stroke-width' => 2,
                     'stroke' => '#842573',
                     'depth' => 'above',
-                ],
+                ],*/
                 [
                     'circle',
-                    'cx' => 'g'.$item,
+                    'cx' => 'g-1.5',
                     'cy' => 'g'.(collect($q2GraphSizeValues)->keys()->search($key)+0.5),
                     'r' => 10,
                     'stroke' => '#FFF',
@@ -300,7 +384,7 @@ class ItalyClass
             ];
         });
         $graphSettings['shape'] = $q2GraphSizeUserShapes->flatten(1)->values()->toArray();
-        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q2GraphSizeValues)->count()*45+20, $graphSettings);
+        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q2GraphSizeValues)->count()*35+20, $graphSettings);
         $graph->colours($colours);
 
         $graph->values(collect($q2GraphSizeValues)->mapWithKeys(function($item, $key){
@@ -308,35 +392,54 @@ class ItalyClass
         })->toArray());
 
         $q2SizeGraph = "
-        <div class='block mb-2 pb'>
-        	<span class='figure'>Figure 3 - Specific size band response: Share of respondents adopting these business goals</span>
+        <p class='mb-6 italic'>Survey question: Which of the following business goals are driving adoption or consideration of Big Data and Analytics in your organisation?</p>
+        <div class='block mb-4'>
+        	<span class='figure'>Specific size band response: Share of respondents selecting these business goals</span>
         	<div class='sizegraph'>
-        		{$sizeKeys[$size]}
+        		Size band selected: <span class='font-bold'>{$sizeKeys[$size]}</span>
         	</div>
         	{$graph->fetch('HorizontalBarGraph', false)}
+            <div class='clearfix text-xs' style='width: 650px'>
+                <div class='float-right'>
+                    Your answer
+                </div>
+                <div class='float-right mr-2 w-4 h-4 leading-none rounded-full' style='background-color: #842573'>
+                </div>
+                <div class='float-right mr-8'>
+                    Average Survey Answers
+                </div>
+                <div class='float-right mr-2 w-4 h-4 leading-none' style='background-color: #c6dd64'>
+                </div>
+            </div>
         </div>";
 
-        $q2Sizeheader = "You selected {$q2SizeAnswers->count()} implementation areas in {$sizeKeys[$size]}: {$q2Sizelabels->implodeLast(', ',', and ')}<br/><br/>";
+        $q2Sizeheader = "";
+        //$q2Sizeheader .= "You selected {$q2SizeAnswers->count()} implementation areas in {$sizeKeys[$size]}: {$q2Sizelabels->implodeLast(', ',', and ')}<br><br>";
 
         $q2Sizebody = "";
-        $q2Sizelabels->each(function($item, $key) use(&$q2Sizebody, $size, $sizeKeys, $sizeReference, $genericReference){
+        /*$q2Sizelabels->each(function($item, $key) use(&$q2Sizebody, $size, $sizeKeys, $sizeReference, $genericReference){
             if($sizeReference['q2'][$size][$key]<4){
-                $q2Sizebody .= "<strong>{$item}</strong> is among the Top 3 implementation areas and is ranked as <strong>{$sizeReference['q2'][$size][$key]}</strong>. This shows your investment choices align with most organisations in {$sizeKeys[$size]}, and a suitable area for investment in Big Data Solutions.<br/>";
+                $q2Sizebody .= "<strong>{$item}</strong>&nbsp; is among the Top 3 implementation areas and is ranked as <strong>{$sizeReference['q2'][$size][$key]}</strong>. This shows your investment choices align with most organisations in {$sizeKeys[$size]}, and a suitable area for investment in Big Data Solutions.<br>";
             }
             if($sizeReference['q2'][$size][$key]>5){
-                $q2Sizebody .= "<strong>{$item}</strong> is among the Bottom 3 implementation areas and is ranked as <strong>{$sizeReference['q2'][$size][$key]}</strong>. This suggests your investments differ from most organisations in {$sizeKeys[$size]}.<br/>";
+                $q2Sizebody .= "<strong>{$item}</strong>&nbsp; is among the Bottom 3 implementation areas and is ranked as <strong>{$sizeReference['q2'][$size][$key]}</strong>. This suggests your investments differ from most organisations in {$sizeKeys[$size]}.<br>";
             }
             if($sizeReference['q2'][$size][$key]<=5 && $sizeReference['q2'][$size][$key]>=4){
-                $q2Sizebody .= "<strong>{$item}</strong> is in the middle set of implementation areas and is ranked as <strong>{$sizeReference['q2'][$size][$key]}</strong>. Your investment criteria for Big Data investment focuses slightly outside mainstream investment areas, but still picks up on those areas with interest from some Big Data users.<br/>";
+                $q2Sizebody .= "<strong>{$item}</strong>&nbsp; is in the middle set of implementation areas and is ranked as <strong>{$sizeReference['q2'][$size][$key]}</strong>. Your investment criteria for Big Data investment focuses slightly outside mainstream investment areas, but still picks up on those areas with interest from some Big Data users.<br>";
             }
-            $q2Sizebody .= $genericReference['q2'][$key]."<br/><br/>";
-        });
-
-        $questionSize2 = $q2Sizeheader.$q2Sizebody;
+            //$q2Sizebody .= $genericReference['q2'][$key]."<br><br>";
+        });*/
+        $q2Sizebody .= "
+            <p class='mt-4'>
+                The green bars provide a ranking of the business goals selected as drivers of adoption of Big Data solutions by survey respondents in your size band.<br>
+                The chart compares the average survey answers of your peers to your answers (violet dots).
+            </p>
+        ";
+        $questionSize2 = $q2Sizeheader.$q2Sizebody."<br>";
 
         $q2Industryset = $industryReference['q2'][$industry];
-        $q2IndustryAnswers = collect($answer)->only(array_keys($q2Industryset))->filter();
-        $q2Industrylabels = collect($singleQuestions)->filter(function($item, $key) use($q2IndustryAnswers){
+        $q2IndustryAnswers = collect($this->answer)->only(array_keys($q2Industryset))->filter();
+        $q2Industrylabels = collect($this->singleQuestions)->filter(function($item, $key) use($q2IndustryAnswers){
             return collect($q2IndustryAnswers->keys())->contains($key);                
         });
 
@@ -354,7 +457,7 @@ class ItalyClass
             return $q2Industrylabels->contains($key);
         })->map(function($item, $key) use($q2GraphIndustryValues){
             return [
-                [
+                /*[
                     'line',
                     'x1' => 'g0',
                     'y1' => 'g'.(collect($q2GraphIndustryValues)->keys()->search($key)+0.5),
@@ -363,10 +466,10 @@ class ItalyClass
                     'stroke-width' => 2,
                     'stroke' => '#e8ae38',
                     'depth' => 'above',
-                ],
+                ],*/
                 [
                     'circle',
-                    'cx' => 'g'.$item,
+                    'cx' => 'g-1.5',
                     'cy' => 'g'.(collect($q2GraphIndustryValues)->keys()->search($key)+0.5),
                     'r' => 10,
                     'stroke' => '#FFF',
@@ -377,7 +480,7 @@ class ItalyClass
             ];
         });
         $graphSettings['shape'] = $q2GraphIndustryUserShapes->flatten(1)->values()->toArray();
-        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q2GraphIndustryValues)->count()*45+20, $graphSettings);
+        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q2GraphIndustryValues)->count()*35+20, $graphSettings);
         $graph->colours($colours);
 
         $graph->values(collect($q2GraphIndustryValues)->mapWithKeys(function($item, $key){
@@ -385,59 +488,73 @@ class ItalyClass
         })->toArray());
 
         $q2IndustryGraph = "
-        <div class='block mb-2'>
-        	<span class='figure'>Figure 4 - Specific industry response: Share of respondents adopting these business goals</span>
+        <p class='mb-6 italic pb'>Survey question: Which of the following business goals are driving adoption or consideration of Big Data and Analytics in your organisation?</p>
+        <div class='block mb-4'>
+        	<span class='figure'>Specific industry response: Share of respondents selecting these business goals</span>
         	<div class='industrygraph'>
-        		{$industryKeys[$industry]}
+        		Industry selected: <span class='font-bold'>{$industryKeys[$industry]}</span>
         	</div>
         	{$graph->fetch('HorizontalBarGraph', false)}
+            <div class='clearfix text-xs' style='width: 650px'>
+                <div class='float-right'>
+                    Your answer
+                </div>
+                <div class='float-right mr-2 w-4 h-4 leading-none rounded-full' style='background-color: #e8ae38'>
+                </div>
+                <div class='float-right mr-8'>
+                    Average Survey Answers
+                </div>
+                <div class='float-right mr-2 w-4 h-4 leading-none' style='background-color: #2279BC'>
+                </div>
+            </div>
         </div>";
 
-        $q2Industryheader = "You selected {$q2IndustryAnswers->count()} implementation areas in {$industryKeys[$industry]}: {$q2Industrylabels->implodeLast(', ',', and ')}<br/><br/>";
+        $q2Industryheader = "";
+        //$q2Industryheader .= "You selected {$q2IndustryAnswers->count()} implementation areas in {$industryKeys[$industry]}: {$q2Industrylabels->implodeLast(', ',', and ')}<br><br>";
 
         $q2Industrybody = "";
-        $q2Industrylabels->each(function($item, $key) use(&$q2Industrybody, $industry, $industryKeys, $industryReference, $genericReference){
+        /*$q2Industrylabels->each(function($item, $key) use(&$q2Industrybody, $industry, $industryKeys, $industryReference, $genericReference){
             if($industryReference['q2'][$industry][$key]<4){
-                $q2Industrybody .= "<strong>{$item}</strong> is among the Top 3 implementation areas and is ranked as <strong>{$industryReference['q2'][$industry][$key]}</strong>. This shows your investment choices align with most organisations in {$industryKeys[$industry]}, and a suitable area for investment in Big Data Solutions.<br/>";
+                $q2Industrybody .= "<strong>{$item}</strong>&nbsp; is among the Top 3 implementation areas and is ranked as <strong>{$industryReference['q2'][$industry][$key]}</strong>. This shows your investment choices align with most organisations in {$industryKeys[$industry]}, and a suitable area for investment in Big Data Solutions.<br>";
             }
             if($industryReference['q2'][$industry][$key]>5){
-                $q2Industrybody .= "<strong>{$item}</strong> is among the Bottom 3 implementation areas and is ranked as <strong>{$industryReference['q2'][$industry][$key]}</strong>. This suggests your investments differ from most organisations in {$industryKeys[$industry]}.<br/>";
+                $q2Industrybody .= "<strong>{$item}</strong>&nbsp; is among the Bottom 3 implementation areas and is ranked as <strong>{$industryReference['q2'][$industry][$key]}</strong>. This suggests your investments differ from most organisations in {$industryKeys[$industry]}.<br>";
             }
             if($industryReference['q2'][$industry][$key]<=5 && $industryReference['q2'][$industry][$key]>=4){
-                $q2Industrybody .= "<strong>{$item}</strong> is in the middle set of implementation areas and is ranked as <strong>{$industryReference['q2'][$industry][$key]}</strong>. Your investment criteria for Big Data investment focuses slightly outside mainstream investment areas, but still picks up on those areas with interest from some Big Data users.<br/>";
+                $q2Industrybody .= "<strong>{$item}</strong>&nbsp; is in the middle set of implementation areas and is ranked as <strong>{$industryReference['q2'][$industry][$key]}</strong>. Your investment criteria for Big Data investment focuses slightly outside mainstream investment areas, but still picks up on those areas with interest from some Big Data users.<br>";
             }
-            $q2Industrybody .= $genericReference['q2'][$key]."<br/><br/>";
-        });
+            //$q2Industrybody .= $genericReference['q2'][$key]."<br><br>";
+        });*/
 
-        $questionIndustry2 = $q2Industryheader.$q2Industrybody;
+        $q2Industrybody .= "
+            <p class='mt-4'>
+                The blue bars provide a ranking of the business goals selected as drivers of adoption of Big Data solutions by survey respondents in your industry.<br>
+                The chart compares the average survey answers of your peers to your answers (orange dots). 
+            </p>
+        ";
 
-        $q2question = '
-        	<h3>Q2 Which of the following business goals are driving adoption or consideration of Big Data and analytics in your organization?</h3>
-        ';
-        $q2intro = '
-        	<strong class="italic font-light">Overview</strong>
-        	<p class="mb-2">
-        		The second question looks at the driving factors, or business goals, that are to be addressed by Big Data solutions. This shows where the purpose lies with respondents within this size band and industry. 
-        	</p>
-        ';
+        $questionIndustry2 = $q2Industryheader.$q2Industrybody."<br>";
 
         $question2 = $q2question.$q2intro.$q2SizeGraph.$questionSize2.$q2IndustryGraph.$questionIndustry2;
 
         //question4
-        
+        $q4question = '
+            <h3 class="pb">Selecting business KPIs to measure the Impact of Big Data</h3>
+        ';
+        $q4intro = '';
+
         //$q4question = $singleQuestionsText->get($q4SizeLabels->keys()->first());
-        $q4question = "Write question 4";
-        $q4intro = "intro fro q4";
 
         $q4SizeSet = $sizeReference['q4'][$size];
-        $q4SizeAnswers = collect($answer)->only(array_keys($q4SizeSet))->filter();
+        $q4SizeAnswers = collect($this->answer)->only(array_keys($q4SizeSet))->filter();
         $q4SizeAnswersSort = $q4SizeAnswers->sort()->reverse()->keys();
         $q4SizeAnswersRank = $this->rankArray($q4SizeAnswers->toArray());
-        $q4SizeLabels = collect($singleQuestions)->filter(function($item, $key) use($q4SizeAnswers){
+        $q4SizeLabels = collect($this->singleQuestions)->filter(function($item, $key) use($q4SizeAnswers){
             return collect($q4SizeAnswers->keys())->contains($key);                
         });
 
-        $q4Sizeheader = "You evaluated {$q4SizeAnswers->count()} implementation areas in the {$sizeKeys[$size]} size band: {$q4SizeLabels->implodeLast(', ',', and ')}<br/><br/>";
+        $q4Sizeheader = "";
+        //$q4Sizeheader .= "You evaluated {$q4SizeAnswers->count()} implementation areas in the {$sizeKeys[$size]} size band: {$q4SizeLabels->implodeLast(', ',', and ')}<br><br>";
 
         //q4SizeGraph
         $colours = [
@@ -455,7 +572,7 @@ class ItalyClass
 
         $q4GraphSizeUserShapes = collect($q4GraphSizeValues)->map(function($item, $key) use($q4SizeAnswersLabels, $q4GraphSizeValues){
             return [
-                [
+                /*[
                     'line',
                     'x1' => 'g0',
                     'y1' => 'g'.(collect($q4GraphSizeValues)->keys()->search($key)+0.5),
@@ -464,7 +581,7 @@ class ItalyClass
                     'stroke-width' => 2,
                     'stroke' => '#842573',
                     'depth' => 'above',
-                ],
+                ],*/
                 [
                     'circle',
                     'cx' => 'g'.($q4SizeAnswersLabels->get($key)),
@@ -481,6 +598,7 @@ class ItalyClass
         $graphSettings['shape'] = $q4GraphSizeUserShapes->flatten(1)->toArray();
         $graphSettings['grid_division_h'] = 1;
         $graphSettings['axis_max_h'] = 5;
+        $graphSettings['axis_text_space_v'] = null;
         $graphSettings['axis_text_callback_y'] = function($value){
             if($value == 1) return "Not at all\n important";
             if($value == 2) return "Slightly\n important";
@@ -488,7 +606,7 @@ class ItalyClass
             if($value == 4) return "Very\n important";
             if($value == 5) return "Extremely\n important";
         };
-        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q4GraphSizeValues)->count()*45+20, $graphSettings);
+        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q4GraphSizeValues)->count()*35+20, $graphSettings);
         $graph->colours($colours);
 
         $graph->values(collect($q4GraphSizeValues)->mapWithKeys(function($item, $key){
@@ -496,38 +614,58 @@ class ItalyClass
         })->toArray());
 
         $q4SizeGraph = "
-        <div class='block mb-2 pb'>
-        	<span class='figure'>Figure 5 - Specific size band response: importance and ranking of KPIs</span>
+        <p class='mb-6 italic'>Survey question: How important are the following business Key Performance Indicators (KPIs) for measuring the impact of your organisation’s Big Data and Analytics efforts?</p>
+        <div class='block mb-4'>
+        	<span class='figure'>Specific size band response: importance and ranking of KPIs</span>
         	<div class='sizegraph'>
-        		{$sizeKeys[$size]}
+        		Size band selected: <span class='font-bold'>{$sizeKeys[$size]}</span>
         	</div>
         	{$graph->fetch('HorizontalBarGraph', false)}
+            <div class='clearfix text-xs' style='width: 650px'>
+                <div class='float-right'>
+                    Your answer
+                </div>
+                <div class='float-right mr-2 w-4 h-4 leading-none rounded-full' style='background-color: #842573'>
+                </div>
+                <div class='float-right mr-8'>
+                    Average Survey Answers
+                </div>
+                <div class='float-right mr-2 w-4 h-4 leading-none' style='background-color: #c6dd64'>
+                </div>
+            </div>
         </div>";
 
         $q4Sizebody = "";
-        $q4SizeLabels->each(function($item, $key) use(&$q4Sizebody, $size, $sizeKeys, $sizeReference, $genericReference, $q4SizeAnswers, $q4SizeAnswersSort, $q4SizeAnswersRank){
+        /*$q4SizeLabels->each(function($item, $key) use(&$q4Sizebody, $size, $sizeKeys, $sizeReference, $genericReference, $q4SizeAnswers, $q4SizeAnswersSort, $q4SizeAnswersRank){
             $nth = $q4SizeAnswersRank[$key] == 1 ? 'most' : $this->ordinal($q4SizeAnswersRank[$key])." most";
-            $q4Sizebody .= "<strong>{$item}</strong> is the <strong>{$nth}</strong> important of your Key Performance Indicators and";
+            $q4Sizebody .= "<strong>{$item}</strong>  is the <strong>{$nth}</strong> important of your Key Performance Indicators and";
             if($q4SizeAnswers[$key] < $sizeReference['q4'][$size][$key]){
-                $q4Sizebody .= " you rated it below the average rating for all organisations in {$sizeKeys[$size]} <strong>({$sizeReference['q4'][$size][$key]})</strong>. This specific investment choice falls a little behind your peers, and you might want to consider increasing its importance within your priorities for Big Data Solutions.";
+                $q4Sizebody .= " you rated it below the average rating for all organisations in {$sizeKeys[$size]} <strong>({$sizeReference['q4'][$size][$key]})</strong>. This specific investment choice falls a little behind your peers, and you might want to consider increasing its importance within your priorities for Big Data Solutions.<br>";
             }
             if($q4SizeAnswers[$key] > $sizeReference['q4'][$size][$key]){
-                $q4Sizebody .= " you rated it the same as the average rating for all organisations in {$sizeKeys[$size]}, and this shows your views on <strong>{$item}</strong> are in line with those of the majority of other organisations.";
+                $q4Sizebody .= " you rated it the same as the average rating for all organisations in {$sizeKeys[$size]}, and this shows your views on <strong>{$item}</strong> are in line with those of the majority of other organisations.<br>";
             }
-            $q4Sizebody .= $genericReference['q4'][$key]."<br/><br/>";
-        });
+            //$q4Sizebody .= $genericReference['q4'][$key]."<br><br>";
+        });*/
+        $q4Sizebody .= "
+            <p class='mt-4'>
+                The green bars show the level of importance of business KPI measuring Big Data impacts according to survey respondents in your size band.<br>
+                The chart compares the average survey answers of your peers to your answers (violet dots).
+            </p>
+        ";
 
-        $questionSize4 = $q4Sizeheader.$q4Sizebody;
+        $questionSize4 = $q4Sizeheader.$q4Sizebody."<br>";
 
         $q4IndustrySet = $industryReference['q4'][$industry];
-        $q4IndustryAnswers = collect($answer)->only(array_keys($q4IndustrySet))->filter();
+        $q4IndustryAnswers = collect($this->answer)->only(array_keys($q4IndustrySet))->filter();
         $q4IndustryAnswersSort = $q4IndustryAnswers->sort()->reverse()->keys();
         $q4IndustryAnswersRank = $this->rankArray($q4IndustryAnswers->toArray());
-        $q4IndustryLabels = collect($singleQuestions)->filter(function($item, $key) use($q4IndustryAnswers){
+        $q4IndustryLabels = collect($this->singleQuestions)->filter(function($item, $key) use($q4IndustryAnswers){
             return collect($q4IndustryAnswers->keys())->contains($key);                
         });
 
-        $q4Industryheader = "You selected {$q4IndustryAnswers->count()} implementation areas in {$industryKeys[$industry]}: {$q4IndustryLabels->implodeLast(', ',', and ')}<br/><br/>";
+        $q4Industryheader = "";
+        //$q4Industryheader .= "You selected {$q4IndustryAnswers->count()} implementation areas in {$industryKeys[$industry]}: {$q4IndustryLabels->implodeLast(', ',', and ')}<br><br>";
 
         //q4IndustryGraph
         $colours = [
@@ -546,7 +684,7 @@ class ItalyClass
 
         $q4GraphIndustryUserShapes = collect($q4GraphIndustryValues)->map(function($item, $key) use($q4IndustryAnswersLabels, $q4GraphIndustryValues){
             return [
-                [
+                /*[
                     'line',
                     'x1' => 'g0',
                     'y1' => 'g'.(collect($q4GraphIndustryValues)->keys()->search($key)+0.5),
@@ -555,7 +693,7 @@ class ItalyClass
                     'stroke-width' => 2,
                     'stroke' => '#E6AD44',
                     'depth' => 'above',
-                ],
+                ],*/
                 [
                     'circle',
                     'cx' => 'g'.($q4IndustryAnswersLabels->get($key)),
@@ -573,7 +711,7 @@ class ItalyClass
         $graphSettings['grid_division_h'] = 1;
         $graphSettings['axis_max_h'] = 5;
 
-        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q4GraphIndustryValues)->count()*45+20, $graphSettings);
+        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q4GraphIndustryValues)->count()*35+20, $graphSettings);
         $graph->colours($colours);
 
         $graph->values(collect($q4GraphIndustryValues)->mapWithKeys(function($item, $key){
@@ -581,43 +719,53 @@ class ItalyClass
         })->toArray());
 
         $q4IndustryGraph = "
+        <p class='mb-6 italic pb'>Survey question: How important are the following business Key Performance Indicators (KPIs) for measuring the impact of your organisation’s Big Data and Analytics efforts?</p>
         <div class='block mb-2'>
-        	<span class='figure'>Figure 6 - Specific Industry response: importance and ranking of KPIs</span>
+        	<span class='figure'>Specific Industry response: importance and ranking of KPIs</span>
         	<div class='industrygraph'>
-        		{$industryKeys[$industry]}
+        		Industry selected: <span class='font-bold'>{$industryKeys[$industry]}</span>
         	</div>
         	{$graph->fetch('HorizontalBarGraph', false)}
+            <div class='clearfix text-xs' style='width: 650px'>
+                <div class='float-right'>
+                    Your answer
+                </div>
+                <div class='float-right mr-2 w-4 h-4 leading-none rounded-full' style='background-color: #e8ae38'>
+                </div>
+                <div class='float-right mr-8'>
+                    Average Survey Answers
+                </div>
+                <div class='float-right mr-2 w-4 h-4 leading-none' style='background-color: #2279BC'>
+                </div>
+            </div>
         </div>";
 
         $q4Industrybody = "";
-        $q4IndustryLabels->each(function($item, $key) use(&$q4Industrybody, $industry, $industryKeys, $industryReference, $genericReference, $q4IndustryAnswers, $q4IndustryAnswersSort, $q4IndustryAnswersRank){
+        /*$q4IndustryLabels->each(function($item, $key) use(&$q4Industrybody, $industry, $industryKeys, $industryReference, $genericReference, $q4IndustryAnswers, $q4IndustryAnswersSort, $q4IndustryAnswersRank){
             $nth = $q4IndustryAnswersRank[$key] == 1 ? 'most' : $this->ordinal($q4IndustryAnswersRank[$key])." most";
-            $q4Industrybody .= "<strong>{$item}</strong> is the <strong>{$nth}</strong> important of your Key Performance Indicators and";
+            $q4Industrybody .= "<strong>{$item}</strong>  is the <strong>{$nth}</strong> important of your Key Performance Indicators and";
             if($q4IndustryAnswers[$key] < $industryReference['q4'][$industry][$key]){
-                $q4Industrybody .= " you rated it below the average rating for all organisations in {$industryKeys[$industry]} <strong>({$industryReference['q4'][$industry][$key]})</strong>. This specific investment choice falls a little behind your peers, and you might want to consider increasing its importance within your priorities for Big Data Solutions.";
+                $q4Industrybody .= " you rated it below the average rating for all organisations in {$industryKeys[$industry]} <strong>({$industryReference['q4'][$industry][$key]})</strong>. This specific investment choice falls a little behind your peers, and you might want to consider increasing its importance within your priorities for Big Data Solutions.<br>";
             }
             if($q4IndustryAnswers[$key] > $industryReference['q4'][$industry][$key]){
-                $q4Industrybody .= " you rated it the same as the average rating for all organisations in {$industryKeys[$industry]}, and this shows your views on <strong>{$item}</strong> are in line with those of the majority of other organisations.";
+                $q4Industrybody .= " you rated it the same as the average rating for all organisations in {$industryKeys[$industry]}, and this shows your views on <strong>{$item}</strong> are in line with those of the majority of other organisations.<br>";
             }
-            $q4Industrybody .= $genericReference['q4'][$key]."<br/><br/>";
-        });
+            //$q4Industrybody .= $genericReference['q4'][$key]."<br><br>";
+        });*/
+        $q4Industrybody .= "
+            <p class='mt-4'>
+                The blue bars show the level of importance of business KPI measuring Big Data impacts according to survey respondents in your industry.<br>
+                The chart compares the average survey answers of your peers to your answers (orange dots).
+            </p>
+        ";
 
-        $questionIndustry4 = $q4Industryheader.$q4Industrybody;
-        $q4question = '
-        	<h3>Q4. How important are the following business Key Performance Indicators (KPIs) for measuring the impact of your organization\'s Big Data and analytics efforts?</h3>
-        ';
-        $q4intro = '
-        	<strong class="italic font-light">Overview</strong>
-        	<p class="mb-2">
-        		Question 4 looks at business priorities in terms of the Key Performance Indicators, and positions your organisations business needs – as evaluated by the importance of these KPI’s.  
-        	</p>
-        ';
+        $questionIndustry4 = $q4Industryheader.$q4Industrybody."<br>";
+
         $question4 = $q4question.$q4intro.$q4SizeGraph.$questionSize4.$q4IndustryGraph.$questionIndustry4;
 
         //question5
-        $q4question = "Write question 5";
-        $q4intro = "intro fro q5";
-        $q5Answer = collect($answer)->only('q5')->first();
+        //
+        /*$q5Answer = collect($this->answer)->only('q5')->first();
 
         //q5SizeGraph
         $colours = [
@@ -653,7 +801,7 @@ class ItalyClass
         $graphSettings['axis_text_callback_y'] = function($value){
             return $value.'%';
         };
-        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q5GraphSizeValues)->count()*45+20, $graphSettings);
+        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q5GraphSizeValues)->count()*30+20, $graphSettings);
         $graph->colours($colours);
 
         $graph->values(collect($q5GraphSizeValues)->mapWithKeys(function($item, $key){
@@ -662,9 +810,9 @@ class ItalyClass
 
         $q5SizeGraph = "
         <div class='block mb-2'>
-        	<span class='figure'>Figure 7 - Specific size band response: level of benefits achieved so far</span>
+        	<span class='figure'>Specific size band response: level of benefits achieved so far</span>
         	<div class='sizegraph'>
-        		{$sizeKeys[$size]}
+        		Size band selected: <span class='font-bold'>{$sizeKeys[$size]}</span>
         	</div>
         	{$graph->fetch('HorizontalBarGraph', false)}
         </div>";
@@ -686,10 +834,10 @@ class ItalyClass
         if($q5Answer == 5){
             $q5Sizebody .= "Your expectations from using Big data solutions are higher than that expected for organisations across all size bands, and also for organisations in the ";
         }
-        $q5Sizebody .= "{$sizeKeys[$size]} size band.<br/>";
-        $q5Sizebody .= "<strong>{$sizeReference['q5'][$size][$q5Answer]}</strong> of organisations in this size band gave a similar rating.<br/><br/>";
+        $q5Sizebody .= "{$sizeKeys[$size]} size band.<br>";
+        $q5Sizebody .= "<strong>{$sizeReference['q5'][$size][$q5Answer]}</strong> of organisations in this size band gave a similar rating.<br><br>";
 
-        $q5Sizebody .= $genericReference['q5']."<br/><br/>";
+        $q5Sizebody .= $genericReference['q5']."<br><br>";
 
         $questionSize5 = $q5SizeGraph.$q5Sizebody;
 
@@ -727,7 +875,7 @@ class ItalyClass
         $graphSettings['axis_text_callback_y'] = function($value){
             return $value.'%';
         };
-        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q5GraphIndustryValues)->count()*45+20, $graphSettings);
+        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q5GraphIndustryValues)->count()*30+20, $graphSettings);
         $graph->colours($colours);
 
         $graph->values(collect($q5GraphIndustryValues)->mapWithKeys(function($item, $key){
@@ -736,9 +884,9 @@ class ItalyClass
 
         $q5IndustryGraph = "
         <div class='block mb-2'>
-        	<span class='figure'>Figure 8 - Specific industry response - levels of benefit achieved so far</span>
+        	<span class='figure'>Specific industry response - levels of benefit achieved so far</span>
         	<div class='industrygraph'>
-        		{$industryKeys[$industry]}
+        		Industry selected: <span class='font-bold'>{$industryKeys[$industry]}</span>
         	</div>
         	{$graph->fetch('HorizontalBarGraph', false)}
         </div>";
@@ -760,10 +908,10 @@ class ItalyClass
         if($q5Answer == 5){
             $q5Industrybody .= "Your expectations from using Big data solutions are higher than that expected for organisations across all industries, and also for organisations in ";
         }
-        $q5Industrybody .= "{$industryKeys[$industry]}.<br/>";
-        $q5Industrybody .= "<strong>{$industryReference['q5'][$industry][$q5Answer]}</strong> of organisations in this industry gave a similar rating.<br/><br/>";
+        $q5Industrybody .= "{$industryKeys[$industry]}.<br>";
+        $q5Industrybody .= "<strong>{$industryReference['q5'][$industry][$q5Answer]}</strong> of organisations in this industry gave a similar rating.<br><br>";
 
-        $q5Industrybody .= $genericReference['q5']."<br/><br/>";
+        $q5Industrybody .= $genericReference['q5']."<br><br>";
 
         $questionIndustry5 = $q5IndustryGraph.$q5Industrybody;
         $q5question = '
@@ -775,17 +923,22 @@ class ItalyClass
         		This question positions your expectation of business benefits against those for others in your industry and size band. It is possible that your expectations are significantly lower or higher than your peers, and the responses of your peers can align your expectations better.  
         	</p>
         ';
-        $question5 = $q5question.$q5intro.$questionSize5.$questionIndustry5;
+        $question5 = $q5question.$q5intro.$questionSize5.$questionIndustry5;*/
 
         //question6
+        $q6aquestion = '
+            <h3 class="pb">Measuring the business impacts of Big Data and Analytics</h3>
+        ';
+        $q6aintro = '';
+
         $q6aset = $industryReference['q6a'][$industry];
-        $q6aAnswers = collect($answer)->only(array_keys($q6aset))->filter();
+        $q6aAnswers = collect($this->answer)->only(array_keys($q6aset))->filter();
         $q6aAnswersRank = $this->rankArray($q6aAnswers->toArray());
-        $q6alabels = collect($singleQuestions)->filter(function($item, $key) use($q6aAnswers){
+        $q6alabels = collect($this->singleQuestions)->filter(function($item, $key) use($q6aAnswers){
             return collect($q6aAnswers->keys())->contains($key);                
         });
 
-        $q6aquestion = $singleQuestionsText->get($q6alabels->keys()->first());
+        //$q6aquestion = $singleQuestionsText->get($q6alabels->keys()->first());
         $q6arankfirst = str_replace(" by", "", $q6alabels->get(collect(array_keys($q6aAnswersRank))->first()));
         $q6aranklast = str_replace(" by", "", $q6alabels->get(collect(array_keys($q6aAnswersRank))->last()));
 
@@ -806,7 +959,7 @@ class ItalyClass
 
         $q6GraphSizeUserShapes = collect($q6GraphSizeValues)->map(function($item, $key) use($q6aSizeAnswersLabels, $q6GraphSizeValues){
             return [
-                [
+                /*[
                     'line',
                     'x1' => 'g0',
                     'y1' => 'g'.(collect($q6GraphSizeValues)->keys()->search($key)+0.5),
@@ -815,7 +968,7 @@ class ItalyClass
                     'stroke-width' => 2,
                     'stroke' => '#842573',
                     'depth' => 'above',
-                ],
+                ],*/
                 [
                     'circle',
                     'cx' => 'g'.($q6aSizeAnswersLabels->get($key)),
@@ -835,8 +988,11 @@ class ItalyClass
         // };
         $graphSettings['grid_division_h'] = 1;
         $graphSettings['axis_max_h'] = null;
+        $graphSettings['axis_text_callback_y'] = function($value){
+            return $value.'%';
+        };
 
-        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q6GraphSizeValues)->count()*45+20, $graphSettings);
+        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q6GraphSizeValues)->count()*40+20, $graphSettings);
         $graph->colours($colours);
 
         $graph->values(collect($q6GraphSizeValues)->mapWithKeys(function($item, $key){
@@ -844,38 +1000,58 @@ class ItalyClass
         })->toArray());
 
         $q6aSizeGraph = "
+        <p class='mb-6 italic'>Survey question: In percentage terms, what is the actual benefit realised (what benefit do you expect to realise) from the use of Big Data and Analytics for the following business KPIs?</p>
         <div class='block mb-2'>
-        	<span class='figure'>Figure 9 - Specific size-band response: Actual benefits realised or expected.</span>
+        	<span class='figure'>Specific size-band response: Actual benefits realised or expected</span>
         	<div class='sizegraph'>
-        		{$sizeKeys[$size]}
+        		Size band selected: <span class='font-bold'>{$sizeKeys[$size]}</span>
         	</div>
         	{$graph->fetch('HorizontalBarGraph', false)}
+            <div class='clearfix text-xs' style='width: 650px'>
+                <div class='float-right'>
+                    Your answer
+                </div>
+                <div class='float-right mr-2 w-4 h-4 leading-none rounded-full' style='background-color: #842573'>
+                </div>
+                <div class='float-right mr-8'>
+                    Average Survey Answers
+                </div>
+                <div class='float-right mr-2 w-4 h-4 leading-none' style='background-color: #c6dd64'>
+                </div>
+            </div>
         </div>";
 
         //q6Size
-        $q6aSizeaheader = "You expect your biggest gain in <strong>{$q6arankfirst}</strong> and your smallest gain in  <strong>{$q6aranklast}</strong> <br/>";
+        $q6aSizeaheader = "";
+        //$q6aSizeaheader .= "You expect your biggest gain in <strong>{$q6arankfirst}</strong> and your smallest gain in  <strong>{$q6aranklast}</strong> <br>";
 
         $q6aSizebody = "";
-        $q6alabels->each(function($item, $key) use(&$q6aSizebody, $size, $sizeKeys, $sizeReference, $genericReference, $q6aAnswers){
+        /*$q6alabels->each(function($item, $key) use(&$q6aSizebody, $size, $sizeKeys, $sizeReference, $genericReference, $q6aAnswers){
             $label = trim(str_replace(['Increased','Reduced','by'], ['','',''], $item));
             $q6aSizebody .= "For {$label} ";
             if($q6aAnswers[$key] > (3 * $sizeReference['q6a'][$size][$key])){
-                $q6aSizebody .= "your expectations are much higher than the average for the {$sizeKeys[$size]} size band. This could be optimism on your part but you might want to look more carefully at your plans and business model.<br/>";
+                $q6aSizebody .= "your expectations are much higher than the average for the {$sizeKeys[$size]} size band. This could be optimism on your part but you might want to look more carefully at your plans and business model.<br>";
             }
             if($q6aAnswers[$key] > $sizeReference['q6a'][$size][$key]){
-                $q6aSizebody .= "your expectations are higher than the average for the {$sizeKeys[$size]} size band, but not by an overly optimistic amount so you have either better plans or better expectations than your peers in size.<br/>";
+                $q6aSizebody .= "your expectations are higher than the average for the {$sizeKeys[$size]} size band, but not by an overly optimistic amount so you have either better plans or better expectations than your peers in size.<br>";
             }
             if($q6aAnswers[$key] == $sizeReference['q6a'][$size][$key]){
-                $q6aSizebody .= "your expectations are similar to the average for the {$sizeKeys[$size]} size band.<br/>";
+                $q6aSizebody .= "your expectations are similar to the average for the {$sizeKeys[$size]} size band.<br>";
             }
             if($q6aAnswers[$key] < ($sizeReference['q6a'][$size][$key]) / 3){
-                $q6aSizebody .= "your expectations are much lower than the average for the {$sizeKeys[$size]} size band. You might want to reconsider your plans and review where you can make improvements in your expectations.<br/>";
+                $q6aSizebody .= "your expectations are much lower than the average for the {$sizeKeys[$size]} size band. You might want to reconsider your plans and review where you can make improvements in your expectations.<br>";
             }
             if($q6aAnswers[$key] < $sizeReference['q6a'][$size][$key]){
-                $q6aSizebody .= "your expectations are lower than the average for the {$sizeKeys[$size]} size band, but not by a significant amount. You could consider revising your planning, but you expecctations are generally in line with those of others in your industry.<br/>";
+                $q6aSizebody .= "your expectations are lower than the average for the {$sizeKeys[$size]} size band, but not by a significant amount. You could consider revising your planning, but you expectations are generally in line with those of others in your industry.<br>";
             }
-        });
-        $q6aSizebody .= "<br/>";
+        });*/
+
+        $q6aSizebody .= "
+            <p class='mt-4'>
+                The green bars show the estimated business impacts of Big Data and Analytics according to the survey respondents in your size band.<br>
+                The chart compares the average survey answers of your peers to your answers (violet dots). 
+            </p>
+        ";
 
         $question6aSize = $q6aSizeGraph.$q6aSizeaheader.$q6aSizebody;
 
@@ -896,7 +1072,7 @@ class ItalyClass
 
         $q6GraphIndustryUserShapes = collect($q6GraphIndustryValues)->map(function($item, $key) use($q6aIndustryAnswersLabels, $q6GraphIndustryValues){
             return [
-                [
+                /*[
                     'line',
                     'x1' => 'g0',
                     'y1' => 'g'.(collect($q6GraphIndustryValues)->keys()->search($key)+0.5),
@@ -905,7 +1081,7 @@ class ItalyClass
                     'stroke-width' => 2,
                     'stroke' => '#E6AD44',
                     'depth' => 'above',
-                ],
+                ],*/
                 [
                     'circle',
                     'cx' => 'g'.($q6aIndustryAnswersLabels->get($key)),
@@ -921,9 +1097,8 @@ class ItalyClass
 
         $graphSettings['shape'] = $q6GraphIndustryUserShapes->flatten(1)->toArray();
         $graphSettings['grid_division_h'] = 1;
-        $graphSettings['axis_max_h'] = 5;
 
-        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q6GraphIndustryValues)->count()*45+20, $graphSettings);
+        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q6GraphIndustryValues)->count()*40+20, $graphSettings);
         $graph->colours($colours);
 
         $graph->values(collect($q6GraphIndustryValues)->mapWithKeys(function($item, $key){
@@ -932,61 +1107,74 @@ class ItalyClass
 
         
         $q6aIndustryGraph = "
-        <div class='block mb-2'>
-        	<span class='figure'>Figure 10 - Specific industry response: Actual benefits realised or expected.</span>
+        <div class='block my-2'>
+        	<span class='figure'>Specific industry response: Actual benefits realised or expected</span>
         	<div class='industrygraph'>
-        		{$industryKeys[$industry]}
+        		Industry selected: <span class='font-bold'>{$industryKeys[$industry]}</span>
         	</div>
         	{$graph->fetch('HorizontalBarGraph', false)}
+            <div class='clearfix text-xs' style='width: 650px'>
+                <div class='float-right'>
+                    Your answer
+                </div>
+                <div class='float-right mr-2 w-4 h-4 leading-none rounded-full' style='background-color: #e8ae38'>
+                </div>
+                <div class='float-right mr-8'>
+                    Average Survey Answers
+                </div>
+                <div class='float-right mr-2 w-4 h-4 leading-none' style='background-color: #2279BC'>
+                </div>
+            </div>
         </div>";
 
         //q6aIndustry
-        $q6aIndustryaheader = "You expect your biggest gain in <strong>{$q6arankfirst}</strong> and your smallest gain in  <strong>{$q6aranklast}</strong> <br/>";
+        $q6aIndustryaheader = "";
+        //$q6aIndustryaheader = ."You expect your biggest gain in <strong>{$q6arankfirst}</strong> and your smallest gain in  <strong>{$q6aranklast}</strong> <br>";
 
         $q6aIndustrybody = "";
-        $q6alabels->each(function($item, $key) use(&$q6aIndustrybody, $industry, $industryKeys, $industryReference, $genericReference, $q6aAnswers){
+        /*$q6alabels->each(function($item, $key) use(&$q6aIndustrybody, $industry, $industryKeys, $industryReference, $genericReference, $q6aAnswers){
             $label = trim(str_replace(['Increased','Reduced','by'], ['','',''], $item));
             $q6aIndustrybody .= "For {$label} ";
             if($q6aAnswers[$key] > (3 * $industryReference['q6a'][$industry][$key])){
-                $q6aIndustrybody .= "your expectations are much higher than the average for {$industryKeys[$industry]}. This could be optimism on your part but you might want to look more carefully at your plans and business model.<br/>";
+                $q6aIndustrybody .= "your expectations are much higher than the average for {$industryKeys[$industry]}. This could be optimism on your part but you might want to look more carefully at your plans and business model.<br>";
             }
             if($q6aAnswers[$key] > $industryReference['q6a'][$industry][$key]){
-                $q6aIndustrybody .= "your expectations are higher than the average for {$industryKeys[$industry]}, but not by an overly optimistic amount so you have either better plans or better expectations than your peers in industry.<br/>";
+                $q6aIndustrybody .= "your expectations are higher than the average for {$industryKeys[$industry]}, but not by an overly optimistic amount so you have either better plans or better expectations than your peers in industry.<br>";
             }
             if($q6aAnswers[$key] == $industryReference['q6a'][$industry][$key]){
-                $q6aIndustrybody .= "your expectations are similar to the average for {$industryKeys[$industry]}.<br/>";
+                $q6aIndustrybody .= "your expectations are similar to the average for {$industryKeys[$industry]}.<br>";
             }
             if($q6aAnswers[$key] < ($industryReference['q6a'][$industry][$key]) / 3){
-                $q6aIndustrybody .= "your expectations are much lower than the average for {$industryKeys[$industry]}. You might want to reconsider your plans and review where you can make improvements in your expectations.<br/>";
+                $q6aIndustrybody .= "your expectations are much lower than the average for {$industryKeys[$industry]}. You might want to reconsider your plans and review where you can make improvements in your expectations.<br>";
             }
             if($q6aAnswers[$key] < $industryReference['q6a'][$industry][$key]){
-                $q6aIndustrybody .= "your expectations are lower than the average for {$industryKeys[$industry]}, but not by a significant amount. You could consider revising your planning, but you expecctations are generally in line with those of others in your industry.<br/>";
+                $q6aIndustrybody .= "your expectations are lower than the average for {$industryKeys[$industry]}, but not by a significant amount. You could consider revising your planning, but you expectations are generally in line with those of others in your industry.<br>";
             }
-        });
-        $q6aIndustrybody .= "<br/>";
+        });*/
+        $q6aIndustrybody .= "
+            <p class='mt-4'>
+                The blue bars show the estimated business impacts of Big Data and Analytics according to the survey respondents in your industry.<br>
+                The chart compares the average survey answers of your peers to your answers (orange dots).
+            </p>
+        ";
 
         $question6aIndustry = $q6aIndustryGraph.$q6aIndustryaheader.$q6aIndustrybody;
-
-        $q6aquestion = '
-        	<h3>Q6. In percentage terms, what is the actual benefit realised (alt: what benefit do you expect to realise) from the use of Big Data and analytics for the following business KPIs?</h3>
-        ';
-        $q6aintro = '
-        	<strong class="italic font-light">Overview</strong>
-        	<p class="mb-2">
-        		Question 6 helps you align specifically what you expect for profit, cost, and revenue against that expected by your peers in the same industry and company size band as your company. If your expectations fall below those of your peers then you have an opportunity to be more optimistic about the value you can expect to gain from your Big Data implementation. Alternatively, if you have high expectations for your return on investment, well beyond those of your peers, then you might want to reconsider the scope or scale of your project in the light of the experience of others. 
-        	</p>
-        ';
 
         $question6a = $q6aquestion.$q6aintro.$question6aSize.$question6aIndustry;
 
         //question7
+        $q7question = '
+            <h3 class="pb">How Big Data and Analytics help European organisations achieve their business impacts</h3>
+        ';
+        $q7intro = '';
+
         $q7set = $industryReference['q7'][$industry];
-        $q7Answers = collect($answer)->only(array_keys($q7set))->filter();
-        $q7labels = collect($singleQuestions)->filter(function($item, $key) use($q7Answers){
+        $q7Answers = collect($this->answer)->only(array_keys($q7set))->filter();
+        $q7labels = collect($this->singleQuestions)->filter(function($item, $key) use($q7Answers){
             return collect($q7Answers->keys())->contains($key);                
         });
 
-        $q7question = $singleQuestionsText->get($q7labels->keys()->first());
+        //$q7question = $singleQuestionsText->get($q7labels->keys()->first());
 
         //q7SizeGraph
         $colours = [
@@ -1005,7 +1193,7 @@ class ItalyClass
 
         $q7GraphSizeUserShapes = collect($q7GraphSizeValues)->map(function($item, $key) use($q7SizeAnswersLabels, $q7GraphSizeValues){
             return [
-                [
+                /*[
                     'line',
                     'x1' => 'g0',
                     'y1' => 'g'.(collect($q7GraphSizeValues)->keys()->search($key)+0.5),
@@ -1014,7 +1202,7 @@ class ItalyClass
                     'stroke-width' => 2,
                     'stroke' => '#842573',
                     'depth' => 'above',
-                ],
+                ],*/
                 [
                     'circle',
                     'cx' => 'g'.($q7SizeAnswersLabels->get($key)),
@@ -1040,7 +1228,7 @@ class ItalyClass
         $graphSettings['grid_division_h'] = 1;
         $graphSettings['axis_max_h'] = 5;
 
-        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q7GraphSizeValues)->count()*45+20, $graphSettings);
+        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q7GraphSizeValues)->count()*35+20, $graphSettings);
         $graph->colours($colours);
 
         $graph->values(collect($q7GraphSizeValues)->mapWithKeys(function($item, $key){
@@ -1048,16 +1236,29 @@ class ItalyClass
         })->toArray());
 
         $q7SizeGraph = "
+        <p class='mb-6 italic'>Survey question: To what extent has your organisation’s deployment of Big Data and Analytics impacted the ability to attain the following business KPIs?</p>
         <div class='block mb-2'>
-        	<span class='figure'>Figure 11 - Specific size-band response: impact on ability to achieve specific KPIs</span>
+        	<span class='figure'>Specific size-band response: impact on ability to achieve specific business impacts</span>
         	<div class='sizegraph'>
-        		{$sizeKeys[$size]}
+        		Size band selected: <span class='font-bold'>{$sizeKeys[$size]}</span>
         	</div>
         	{$graph->fetch('HorizontalBarGraph', false)}
+            <div class='clearfix text-xs' style='width: 650px'>
+                <div class='float-right'>
+                    Your answer
+                </div>
+                <div class='float-right mr-2 w-4 h-4 leading-none rounded-full' style='background-color: #842573'>
+                </div>
+                <div class='float-right mr-8'>
+                    Average Survey Answers
+                </div>
+                <div class='float-right mr-2 w-4 h-4 leading-none' style='background-color: #c6dd64'>
+                </div>
+            </div>
         </div>";
 
         $q7Sizebody = "";
-        $q7labels->each(function($item, $key) use(&$q7Sizebody, $size, $sizeKeys, $sizeReference, $genericReference, $q7Answers){
+        /*$q7labels->each(function($item, $key) use(&$q7Sizebody, $size, $sizeKeys, $sizeReference, $genericReference, $q7Answers){
             $q7Sizebody .= "You rated the impact of <strong>{$item}</strong>";
             if($q7Answers->get($key) < $sizeReference['q7'][$size][$key]-1){
                 $q7Sizebody .= " much lower ";
@@ -1071,7 +1272,7 @@ class ItalyClass
             if($q7Answers->get($key) > $sizeReference['q7'][$size][$key]+1){
                 $q7Sizebody .= " much higher than ";
             }
-            $q7Sizebody .= " the average rating given by organisations in the {$sizeKeys[$size]} size band.<br/>";
+            $q7Sizebody .= " the average rating given by organisations in the {$sizeKeys[$size]} size band.<br>";
             if($q7Answers->get($key) == 1){
                 $q7Sizebody .= "It is unusual for Big Data deloyments to result in an negative impact, so it would be worth investigating why you think this is the case. Causes for a negative impact can include changes to scope throughout the deployment and careful project management can reduce unnecessary scope creep.";
             }
@@ -1087,10 +1288,16 @@ class ItalyClass
             if($q7Answers->get($key) == 5){
                 $q7Sizebody .= "Your achivement or expectation of a high increase in your ability to achive your <strong>{$item}</strong> puts you ahead of most organisations, and emphasises the value of implenting a Big Data solution for this KPI";
             }
-            $q7Sizebody .= "<br/>".$genericReference['q7'][$key]."<br/><br/>";
-        });
+            //$q7Sizebody .= "<br>".$genericReference['q7'][$key]."<br><br>";
+        });*/
+        $q7Sizebody .= "
+            <p class='mt-4'>
+                The green bars show how BDA improved (or not) the achievement of selected business impacts by survey respondents in your size band.<br>
+                The chart compares the average survey answers of your peers to your answers (violet dots). 
+            </p>
+        ";
 
-        $question7Size = $q7SizeGraph.$q7Sizebody;
+        $question7Size = $q7SizeGraph.$q7Sizebody."<br>";
 
         //q7IndustryGraph
         $colours = [
@@ -1109,7 +1316,7 @@ class ItalyClass
 
         $q7GraphIndustryUserShapes = collect($q7GraphIndustryValues)->map(function($item, $key) use($q7IndustryAnswersLabels, $q7GraphIndustryValues){
             return [
-                [
+                /*[
                     'line',
                     'x1' => 'g0',
                     'y1' => 'g'.(collect($q7GraphIndustryValues)->keys()->search($key)+0.5),
@@ -1118,7 +1325,7 @@ class ItalyClass
                     'stroke-width' => 2,
                     'stroke' => '#E6AD44',
                     'depth' => 'above',
-                ],
+                ],*/
                 [
                     'circle',
                     'cx' => 'g'.($q7IndustryAnswersLabels->get($key)),
@@ -1144,7 +1351,7 @@ class ItalyClass
         $graphSettings['grid_division_h'] = 1;
         $graphSettings['axis_max_h'] = 5;
 
-        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q7GraphIndustryValues)->count()*45+20, $graphSettings);
+        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q7GraphIndustryValues)->count()*35+20, $graphSettings);
         $graph->colours($colours);
 
         $graph->values(collect($q7GraphIndustryValues)->mapWithKeys(function($item, $key){
@@ -1152,16 +1359,29 @@ class ItalyClass
         })->toArray());
 
         $q7IndustryGraph = "
-        <div class='block mb-2'>
-        	<span class='figure'>Figure 12 - specific industry response: Impact on ability to achieve specific KPIs</span>
+        <p class='mb-6 italic'>Survey question: To what extent has your organisation’s deployment of Big Data and Analytics impacted the ability to attain the following business KPIs?</p>
+        <div class='block my-2'>
+        	<span class='figure'>specific industry response: Impact on ability to achieve specific business impacts</span>
         	<div class='industrygraph'>
-        		{$industryKeys[$industry]}
+        		Industry selected: <span class='font-bold'>{$industryKeys[$industry]}</span>
         	</div>
         	{$graph->fetch('HorizontalBarGraph', false)}
+            <div class='clearfix text-xs' style='width: 650px'>
+                <div class='float-right'>
+                    Your answer
+                </div>
+                <div class='float-right mr-2 w-4 h-4 leading-none rounded-full' style='background-color: #e8ae38'>
+                </div>
+                <div class='float-right mr-8'>
+                    Average Survey Answers
+                </div>
+                <div class='float-right mr-2 w-4 h-4 leading-none' style='background-color: #2279BC'>
+                </div>
+            </div>
         </div>";
 
         $q7Industrybody = "";
-        $q7labels->each(function($item, $key) use(&$q7Industrybody, $industry, $industryKeys, $industryReference, $genericReference, $q7Answers){
+        /*$q7labels->each(function($item, $key) use(&$q7Industrybody, $industry, $industryKeys, $industryReference, $genericReference, $q7Answers){
             $q7Industrybody .= "You rated the impact of <strong>{$item}</strong>";
             if($q7Answers->get($key) < $industryReference['q7'][$industry][$key]-1){
                 $q7Industrybody .= " much lower ";
@@ -1175,7 +1395,7 @@ class ItalyClass
             if($q7Answers->get($key) > $industryReference['q7'][$industry][$key]+1){
                 $q7Industrybody .= " much higher than ";
             }
-            $q7Industrybody .= " the average rating given by organisations in {$industryKeys[$industry]}.<br/>";
+            $q7Industrybody .= " the average rating given by organisations in {$industryKeys[$industry]}.<br>";
             if($q7Answers->get($key) == 1){
                 $q7Industrybody .= "It is unusual for Big Data deloyments to result in an negative impact, so it would be worth investigating why you think this is the case. Causes for a negative impact can include changes to scope throughout the deployment and careful project management can reduce unnecessary scope creep.";
             }
@@ -1191,31 +1411,27 @@ class ItalyClass
             if($q7Answers->get($key) == 5){
                 $q7Industrybody .= "Your achivement or expectation of a high increase in your ability to achive your <strong>{$item}</strong> puts you ahead of most organisations, and emphasises the value of implenting a Big Data solution for this KPI";
             }
-            $q7Industrybody .= $genericReference['q7'][$key]."<br/><br/>";
-        });
+            //$q7Industrybody .= $genericReference['q7'][$key]."<br><br>";
+        });*/
+        $q7Industrybody .= "
+            <p class='mt-4'>
+                The blue bars show how BDA improved (or not) the achievement of selected business impacts by survey respondents in your industry.<br>
+                The chart compares the average survey answers of your peers to your answers (orange dots). 
+            </p>
+        ";
 
-        $question7Industry = $q7IndustryGraph.$q7Industrybody;
-
-        $q7question = '
-        	<h3>Q7. To what extent has your organisation\'s deployment of Big Data and analytics impacted (alt: will your organisation\'s deployment ...  be impacted) by the ability to attain the following business KPIs?</h3>
-        ';
-        $q7intro = '
-        	<strong class="italic font-light">Overview</strong>
-        	<p class="mb-2">
-        		Good business performance is driven by performance indicators, and the purpose of your big data project will be to improve your performance as measured by these indicators. Question 7 shows how your peers view the different KPI’s and sets a reference point against which you can align your expected improvement in each of the KPI’s.
-        	</p>
-        ';
+        $question7Industry = $q7IndustryGraph.$q7Industrybody."<br>";
 
         $question7 = $q7question.$q7intro.$question7Size.$question7Industry;
 
 
         //question8
         
-        $q8set = $industryReference['q8'][$industry];
+        /*$q8set = $industryReference['q8'][$industry];
 
-        $q8Answers = collect($answer)->only(array_keys($q8set))->filter();
+        $q8Answers = collect($this->answer)->only(array_keys($q8set))->filter();
 
-        $q8labels = collect($singleQuestions)->filter(function($item, $key) use($q8Answers){
+        $q8labels = collect($this->singleQuestions)->filter(function($item, $key) use($q8Answers){
             return collect($q8Answers->keys())->contains($key);                
         });
 
@@ -1315,9 +1531,9 @@ class ItalyClass
 
         $q8SizeGraph = "
         <div class='block mb-2 pb'>
-        	<span class='figure'>Figure 13 - Specific size band response: Expected improvement due to the adoption of Big Data Solutions</span>
+        	<span class='figure'>Specific size band response: Expected improvement due to the adoption of Big Data Solutions</span>
         	<div class='sizegraph'>
-        		{$sizeKeys[$size]}
+        		Size band selected: <span class='font-bold'>{$sizeKeys[$size]}</span>
         	</div>
         	{$graph->fetch('StackedBarGraph', false)}
         </div>";
@@ -1367,7 +1583,7 @@ class ItalyClass
                 $q8Sizebody .= "higher than the average rating given by {$sizeKeys[$size]} organisations.";
             }
 
-            $q8Sizebody .= "<br/><br/>";
+            $q8Sizebody .= "<br><br>";
 
             $upto = [];
             $sortedq8Answers->each(function($answerItem, $answerKey) use(&$upto, $key){
@@ -1507,9 +1723,9 @@ class ItalyClass
 
         $q8IndustryGraph = "
         <div class='block mb-2 pb'>
-        	<span class='figure'>Figure 14 - Specific industry response: Expected improvement due to the adoption of Big Data Solutions</span>
+        	<span class='figure'>Specific industry response: Expected improvement due to the adoption of Big Data Solutions</span>
         	<div class='industrygraph'>
-        		{$industryKeys[$industry]}
+        		Industry selected: <span class='font-bold'>{$industryKeys[$industry]}</span>
         	</div>
         	{$graph->fetch('StackedBarGraph', false)}
         </div>";
@@ -1559,7 +1775,7 @@ class ItalyClass
                 $q8Industrybody .= "higher than the average rating given by {$industryKeys[$industry]} organisations.";
             }
 
-            $q8Industrybody .= "<br/><br/>";
+            $q8Industrybody .= "<br><br>";
 
             $upto = [];
             $sortedq8Answers->each(function($answerItem, $answerKey) use(&$upto, $key){
@@ -1633,48 +1849,61 @@ class ItalyClass
         	</p>
         ';
 
-        $question8 = $q8question.$q8intro.$question8Size.$question8Industry;
+        $question8 = $q8question.$q8intro.$question8Size.$question8Industry;*/
 
         //question 9
-        $q9question = "Put Question here";
-        $q9intro = "Intro for question2";
+        $q9question = '
+            <h3 class="pb">Measuring the uptake of Big Data Use cases</h3>
+        ';
+        $q9intro = '';
 
         $q9Sizeset = $sizeReference['q9'][$size];
-        $q9SizeAnswers = collect($answer)->only(array_keys($q9Sizeset))->filter();
+        $q9SizeAnswers = collect($this->answer)->only(array_keys($q9Sizeset))->filter();
 
 
-        $q9SizeAnswerlabels = collect($singleQuestions)->filter(function($item, $key) use($q9SizeAnswers){
+        $q9SizeAnswerlabels = collect($this->singleQuestions)->filter(function($item, $key) use($q9SizeAnswers){
             return collect($q9SizeAnswers->keys())->contains($key);                
         });
 
         //q9SizeGraph
         $colours = [
-            '#c6dd64',
+            '#D9E89C','#ACCB32','#7CAF42',
         ];
-        $q9GraphSizeValues = collect($sizeGraphReference['q9'][$size])->mapWithKeys(function($item){
-            return [$item['label'] => $item['value']];
-        })->toArray();
+        $q9GraphSizeValues = collect($q9SourceData[$size])->mapWithKeys(function($item, $key) use($q9SizeAnswerlabels){
+            return [$key => collect($item)->filter(function($useCases, $useCaseKey) use($q9SizeAnswerlabels){
+                return $q9SizeAnswerlabels->contains($useCaseKey);
+            })->toArray()];
+        });
 
-        asort($q9GraphSizeValues);
+        //asort($q9GraphSizeValues);
+        $q9SizeAnswerValues = $q9SizeAnswers->mapWithKeys(function($item, $key) use($q9SizeAnswerlabels){
+            return [$q9SizeAnswerlabels->get($key) => $item];
+        });
 
-        $q9GraphSizeUserShapes = collect($q9GraphSizeValues)->filter(function($item, $key) use($q9SizeAnswerlabels){
-            return $q9SizeAnswerlabels->contains($key);
-        })->map(function($item, $key) use($q9GraphSizeValues, $q9SizeAnswers, $q9SizeAnswerlabels){
+        $reindex = collect($q9GraphSizeValues->get('Not interested, No Plans'))->keys();
+
+        $q9SizeAnswerValues = $reindex->mapWithKeys(function($item, $key) use($q9SizeAnswerValues){
+            return [$item => $q9SizeAnswerValues->get($item)];
+        });
+
+
+        $q9GraphSizeUserShapes = $q9SizeAnswerValues->map(function($item, $key) use($q9GraphSizeValues, $q9SizeAnswers, $q9SizeAnswerlabels, $q9AnswerKey, $q9SizeAnswerValues){
+            $x = 0;
+            if($item<=2){
+                $x = $q9GraphSizeValues[$q9AnswerKey[$item]][$key]/2;
+            }
+            if($item==3){
+                $x = $q9GraphSizeValues['Not interested, No Plans'][$key] + ($q9GraphSizeValues[$q9AnswerKey[$item]][$key]/2);
+            }
+            if($item==4){
+                $x = $q9GraphSizeValues['Not interested, No Plans'][$key] + $q9GraphSizeValues['Evaluating or Planning'][$key] + ($q9GraphSizeValues[$q9AnswerKey[$item]][$key]/2);
+            }
+            
             return [
                 [
-                    'line',
-                    'x1' => 'g0',
-                    'y1' => 'g'.(collect($q9GraphSizeValues)->keys()->search($key)+0.5),
-                    'x2' => 'g'.$q9SizeAnswers->get($q9SizeAnswerlabels->search($key)),
-                    'y2' => 'g'.(collect($q9GraphSizeValues)->keys()->search($key)+0.5),
-                    'stroke-width' => 2,
-                    'stroke' => '#842573',
-                    'depth' => 'above',
-                ],
-                [
                     'circle',
-                    'cx' => 'g'.$q9SizeAnswers->get($q9SizeAnswerlabels->search($key)),
-                    'cy' => 'g'.(collect($q9GraphSizeValues)->keys()->search($key)+0.5),
+                    'cx' => 'g'.$x,
+                    'cy' => 'g'.($q9SizeAnswerValues->keys()->search($key)).".5",
                     'r' => 8,
                     'stroke' => '#FFF',
                     'stroke-width' => 2,
@@ -1686,36 +1915,62 @@ class ItalyClass
 
         $graphSettings['shape'] = $q9GraphSizeUserShapes->flatten(1)->values()->toArray();
 
-        $graphSettings['grid_division_h'] = 1;
+        $graphSettings['grid_division_h'] = 10;
         $graphSettings['grid_division_v'] = null;
-        $graphSettings['axis_max_h'] = 5;
         $graphSettings['bar_space'] = 5;
         $graphSettings['axis_max_v'] = null;
-        $graphSettings['axis_max_h'] = 4;
+        $graphSettings['axis_max_h'] = 100;
         $graphSettings['pad_right'] = 20;
         $graphSettings['legend_entries'] = null;
+        $graphSettings['axis_text_callback_y'] = null;
+        $graphSettings['show_data_labels'] = true;
+        $graphSettings['show_axis_text_h'] = false;
+        $graphSettings['units_label'] = "%";
         $graphSettings['axis_text_callback_y'] = function($value){
-            if($value == 1) return "Using or\n implementing";
-            if($value == 2) return "Evaluating or\n planning";
-            if($value == 3) return "Interested,\n but no plans";
-            if($value == 4) return "Not interested\n and no plans";
+            return $value.'%';
         };
 
-        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q9GraphSizeValues)->count()*25+20, $graphSettings);
+        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q9SizeAnswerValues)->count()*35+20, $graphSettings);
         $graph->colours($colours);
-
-        $graph->values(collect($q9GraphSizeValues)->mapWithKeys(function($item, $key){
-            return [wordwrap($key, 40, "\n", false) => $item];
+        
+        $graph->values($q9GraphSizeValues->mapWithKeys(function($item, $key){
+            return [$key => collect($item)->mapWithKeys(function($itemItem, $keyKey){
+                return [wordwrap($keyKey, 35, "\n", false) => $itemItem];
+            })->toArray()];
         })->toArray());
 
         $q9SizeGraph = "
+        <p class='mb-6 italic'>Survey question: If we look at the following specific Big Data and Analytics Business Use Cases, what is your organisation's position on each of these?</p>
         <div class='block mb-2'>
-        	<span class='figure'>Figure 15 - Specific size-band response: Business Use Case position</span>
+        	<span class='figure'>Specific size-band response: Business Use Case position</span>
         	<div class='sizegraph'>
-        		{$sizeKeys[$size]}
+        		Size band selected: <span class='font-bold'>{$sizeKeys[$size]}</span>
         	</div>
-        	{$graph->fetch('HorizontalBarGraph', false)}
+        	{$graph->fetch('HorizontalStackedBarGraph', false)}
+            <div class='clearfix text-xs' style='width: 650px'>
+                <div class='float-right'>
+                    Your answer
+                </div>
+                <div class='float-right mr-2 w-4 h-4 leading-none rounded-full' style='background-color: #842573'>
+                </div>
+                <div class='float-right mr-4'>
+                    Using or Implementing
+                </div>
+                <div class='float-right mr-2 w-4 h-4 leading-none' style='background-color: #7CAF42'>
+                </div>
+                <div class='float-right mr-4'>
+                    Evaluating or Planning
+                </div>
+                <div class='float-right mr-2 w-4 h-4 leading-none' style='background-color: #ACCB32'>
+                </div>
+                <div class='float-right mr-4'>
+                    Not interested, No Plans
+                </div>
+                <div class='float-right mr-2 w-4 h-4 leading-none' style='background-color: #D9E89C'>
+                </div>
+            </div>
         </div>";
+        
         //{$q9SizeAnswerlabels->implodeLast(', ',', and ')}
         $plaEvaUseImp = $q9SizeAnswers->filter(function($item){
             return $item < 3 && $item > 0;
@@ -1724,16 +1979,17 @@ class ItalyClass
             return $sizeReference['q9'][$size][$key] < 11;
         });
 
-        $plaEvaUseImpTopTenLabels = collect($singleQuestions)->filter(function($item, $key) use($plaEvaUseImpTopTen){
+        $plaEvaUseImpTopTenLabels = collect($this->singleQuestions)->filter(function($item, $key) use($plaEvaUseImpTopTen){
             return collect($plaEvaUseImpTopTen->keys())->contains($key);                
         });
 
-        $q9Sizeheader = "You selected {$plaEvaUseImp->count()} use cases for planning, evaluating, using, or implementing in the {$sizeKeys[$size]} size band. ";
-        $q9Sizeheader.= "Of these, {$plaEvaUseImpTopTen->count()} are in the top 10 use cases adopted in this band:</br>";
-        $q9Sizeheader.= "{$plaEvaUseImpTopTenLabels->values()->implodeLast(', ',', and ')}.</br></br>";
+        $q9Sizeheader = "";
+        //$q9Sizeheader .= "You selected {$plaEvaUseImp->count()} use cases for planning, evaluating, using, or implementing in the {$sizeKeys[$size]} size band. ";
+        //$q9Sizeheader.= "Of these, {$plaEvaUseImpTopTen->count()} are in the top 10 use cases adopted in this band:</br>";
+        //$q9Sizeheader.= "{$plaEvaUseImpTopTenLabels->values()->implodeLast(', ',', and ')}.</br></br>";
 
         $q9Sizebody = "";
-        if(count($plaEvaUseImpTopTen)<4){
+        /*if(count($plaEvaUseImpTopTen)<4){
             $q9Sizebody .= "You have few of your use cases in the top 10 for the {$sizeKeys[$size]} size band. Whilst this is not a problem you might want to review the {$sizeKeys[$size]} size band use case list when considering future Big Data projects.";
         }
         if(count($plaEvaUseImpTopTen)>=4 && count($plaEvaUseImpTopTen)<6){
@@ -1747,87 +2003,131 @@ class ItalyClass
         }
         if(count($plaEvaUseImpTopTen) == 10){
             $q9Sizebody .= "You include all of the top 10 {$sizeKeys[$size]} size band use cases in your Big Data implementation, which gives excellent alignment between your business needs and those of your peers.";
-        }
+        }*/
+
+        $q9Sizebody .= "
+            <p class='mt-4'>
+                The green bars show the diffusion and status of implementation of Big Data Use Cases by survey respondents in your size band.<br>
+                The chart compares the average survey answers of your peers to your answers (violet dots). 
+            </p>
+        ";
 
 
         $questionSize9 = $q9Sizeheader.$q9Sizebody;
 
         $q9Industryset = $industryReference['q9'][$industry];
-        $q9IndustryAnswers = collect($answer)->only(array_keys($q9Industryset))->filter();
+        $q9IndustryAnswers = collect($this->answer)->only(array_keys($q9Industryset))->filter();
 
 
-        $q9IndustryAnswerlabels = collect($singleQuestions)->filter(function($item, $key) use($q9IndustryAnswers){
+        $q9IndustryAnswerlabels = collect($this->singleQuestions)->filter(function($item, $key) use($q9IndustryAnswers){
             return collect($q9IndustryAnswers->keys())->contains($key);                
         });
 
         //q9IndustryGraph
         $colours = [
-            '#c6dd64',
+            '#70B3E2','#4196D2','#1167A6',
         ];
-        $q9GraphIndustryValues = collect($industryGraphReference['q9'][$industry])->mapWithKeys(function($item){
-            return [$item['label'] => $item['value']];
-        })->filter()->toArray();
+        $q9GraphIndustryValues = collect($q9SourceData[$industry])->mapWithKeys(function($item, $key) use($q9IndustryAnswerlabels){
+            return [$key => collect($item)->filter(function($useCases, $useCaseKey) use($q9IndustryAnswerlabels){
+                return $q9IndustryAnswerlabels->contains($useCaseKey);
+            })->toArray()];
+        });
 
-        asort($q9GraphIndustryValues);
+        //asort($q9GraphIndustryValues);
+        
+        $q9IndustryAnswerValues = $q9IndustryAnswers->mapWithKeys(function($item, $key) use($q9IndustryAnswerlabels){
+            return [$q9IndustryAnswerlabels->get($key) => $item];
+        });
 
-        $q9GraphIndustryUserShapes = collect($q9GraphIndustryValues)->filter(function($item, $key) use($q9IndustryAnswerlabels){
-            return $q9IndustryAnswerlabels->contains($key);
-        })->map(function($item, $key) use($q9GraphIndustryValues, $q9IndustryAnswers, $q9IndustryAnswerlabels){
+        $reindex = collect($q9GraphIndustryValues->get('Not interested, No Plans'))->keys();
+
+        $q9IndustryAnswerValues = $reindex->mapWithKeys(function($item, $key) use($q9IndustryAnswerValues){
+            return [$item => $q9IndustryAnswerValues->get($item)];
+        });
+
+
+        $q9GraphIndustryUserShapes = $q9IndustryAnswerValues->map(function($item, $key) use($q9GraphIndustryValues, $q9IndustryAnswers, $q9IndustryAnswerlabels, $q9AnswerKey, $q9IndustryAnswerValues){
+            $x = 0;
+            if($item<=2){
+                $x = $q9GraphIndustryValues[$q9AnswerKey[$item]][$key]/2;
+            }
+            if($item==3){
+                $x = $q9GraphIndustryValues['Not interested, No Plans'][$key] + ($q9GraphIndustryValues[$q9AnswerKey[$item]][$key]/2);
+            }
+            if($item==4){
+                $x = $q9GraphIndustryValues['Not interested, No Plans'][$key] + $q9GraphIndustryValues['Evaluating or Planning'][$key] + ($q9GraphIndustryValues[$q9AnswerKey[$item]][$key]/2);
+            }
+            
             return [
                 [
-                    'line',
-                    'x1' => 'g0',
-                    'y1' => 'g'.(collect($q9GraphIndustryValues)->keys()->search($key)+0.5),
-                    'x2' => 'g'.$q9IndustryAnswers->get($q9IndustryAnswerlabels->search($key)),
-                    'y2' => 'g'.(collect($q9GraphIndustryValues)->keys()->search($key)+0.5),
-                    'stroke-width' => 2,
-                    'stroke' => '#842573',
-                    'depth' => 'above',
-                ],
-                [
                     'circle',
-                    'cx' => 'g'.$q9IndustryAnswers->get($q9IndustryAnswerlabels->search($key)),
-                    'cy' => 'g'.(collect($q9GraphIndustryValues)->keys()->search($key)+0.5),
+                    'cx' => 'g'.$x,
+                    'cy' => 'g'.($q9IndustryAnswerValues->keys()->search($key)).".5",
                     'r' => 8,
                     'stroke' => '#FFF',
                     'stroke-width' => 2,
                     'depth' => 'above',
-                    'fill' => '#842573'
+                    'fill' => '#e8ae38'
                 ],
             ];
         });
 
         $graphSettings['shape'] = $q9GraphIndustryUserShapes->flatten(1)->values()->toArray();
 
-        $graphSettings['grid_division_h'] = 1;
+        $graphSettings['grid_division_h'] = 10;
         $graphSettings['grid_division_v'] = null;
-        $graphSettings['axis_max_h'] = 5;
-        $graphSettings['bar_space'] = 8;
+        $graphSettings['bar_space'] = 5;
         $graphSettings['axis_max_v'] = null;
-        $graphSettings['axis_max_h'] = 4;
+        $graphSettings['axis_max_h'] = 100;
         $graphSettings['pad_right'] = 20;
         $graphSettings['legend_entries'] = null;
+        $graphSettings['axis_text_callback_y'] = null;
+        $graphSettings['show_data_labels'] = true;
+        $graphSettings['show_axis_text_h'] = false;
+        $graphSettings['units_label'] = "%";
         $graphSettings['axis_text_callback_y'] = function($value){
-            if($value == 1) return "Using or\n implementing";
-            if($value == 2) return "Evaluating or\n planning";
-            if($value == 3) return "Interested,\n but no plans";
-            if($value == 4) return "Not interested\n and no plans";
+            return $value.'%';
         };
 
-        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q9GraphIndustryValues)->count()*27+20, $graphSettings);
+        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q9IndustryAnswerValues)->count()*35+20, $graphSettings);
         $graph->colours($colours);
 
-        $graph->values(collect($q9GraphIndustryValues)->mapWithKeys(function($item, $key){
-            return [wordwrap($key, 40, "\n", false) => $item];
+        $graph->values($q9GraphIndustryValues->mapWithKeys(function($item, $key){
+            return [$key => collect($item)->mapWithKeys(function($itemItem, $keyKey){
+                return [wordwrap($keyKey, 35, "\n", false) => $itemItem];
+            })->toArray()];
         })->toArray());
 
         $q9IndustryGraph = "
+        <p class='mb-6 italic pb'>Survey question: If we look at the following specific Big Data and Analytics Business Use Cases, what is your organisation's position on each of these?</p>
         <div class='block mb-2'>
-        	<span class='figure'>Figure 16 - Specific industry response: Business Use Case position</span>
+        	<span class='figure'>Specific industry response: Business Use Case position</span>
         	<div class='industrygraph'>
-        		{$industryKeys[$industry]}
+        		Industry selected: <span class='font-bold'>{$industryKeys[$industry]}</span>
         	</div>
-        	{$graph->fetch('HorizontalBarGraph', false)}
+        	{$graph->fetch('HorizontalStackedBarGraph', false)}
+            <div class='clearfix text-xs' style='width: 650px'>
+                <div class='float-right'>
+                    Your answer
+                </div>
+                <div class='float-right mr-2 w-4 h-4 leading-none rounded-full' style='background-color: #e8ae38'>
+                </div>
+                <div class='float-right mr-4'>
+                    Using or Implementing
+                </div>
+                <div class='float-right mr-2 w-4 h-4 leading-none' style='background-color: #1167A6'>
+                </div>
+                <div class='float-right mr-4'>
+                    Evaluating or Planning
+                </div>
+                <div class='float-right mr-2 w-4 h-4 leading-none' style='background-color: #4196D2'>
+                </div>
+                <div class='float-right mr-4'>
+                    Not interested, No Plans
+                </div>
+                <div class='float-right mr-2 w-4 h-4 leading-none' style='background-color: #70B3E2'>
+                </div>
+            </div>
         </div>";
         //{$q9IndustryAnswerlabels->implodeLast(', ',', and ')}
         $plaEvaUseImp = $q9IndustryAnswers->filter(function($item){
@@ -1837,16 +2137,17 @@ class ItalyClass
             return $industryReference['q9'][$industry][$key] < 11;
         });
 
-        $plaEvaUseImpTopTenLabels = collect($singleQuestions)->filter(function($item, $key) use($plaEvaUseImpTopTen){
+        $plaEvaUseImpTopTenLabels = collect($this->singleQuestions)->filter(function($item, $key) use($plaEvaUseImpTopTen){
             return collect($plaEvaUseImpTopTen->keys())->contains($key);                
         });
 
-        $q9Industryheader = "You selected {$plaEvaUseImp->count()} use cases for planning, evaluating, using, or implementing in the {$industryKeys[$industry]}. ";
-        $q9Industryheader.= "Of these, {$plaEvaUseImpTopTen->count()} are in the top 10 use cases adopted in this industry:</br>";
-        $q9Industryheader.= "{$plaEvaUseImpTopTenLabels->values()->implodeLast(', ',', and ')}.</br></br>";
+        $q9Industryheader = "";
+        // $q9Industryheader .= "You selected {$plaEvaUseImp->count()} use cases for planning, evaluating, using, or implementing in the {$industryKeys[$industry]}. ";
+        // $q9Industryheader.= "Of these, {$plaEvaUseImpTopTen->count()} are in the top 10 use cases adopted in this industry:</br>";
+        // $q9Industryheader.= "{$plaEvaUseImpTopTenLabels->values()->implodeLast(', ',', and ')}.</br></br>";
 
         $q9Industrybody = "";
-        if(count($plaEvaUseImpTopTen)<4){
+        /*if(count($plaEvaUseImpTopTen)<4){
             $q9Industrybody .= "You have few of your use cases in the top 10 for the {$industryKeys[$industry]}. Whilst this is not a problem you might want to review the {$industryKeys[$industry]} use case list when considering future Big Data projects.";
         }
         if(count($plaEvaUseImpTopTen)>=4 && count($plaEvaUseImpTopTen)<6){
@@ -1860,26 +2161,38 @@ class ItalyClass
         }
         if(count($plaEvaUseImpTopTen) == 10){
             $q9Industrybody .= "You include all of the top 10 {$industryKeys[$industry]} use cases in your Big Data implementation, which gives excellent alignment between your business needs and those of your peers.";
-        }
+        }*/
+        $q9Industrybody .= "
+            <p class='mt-4'>
+                The blue bars show the diffusion and status of implementation of Big Data Use Cases by survey respondents in your industry.<br>
+                The chart compares the average survey answers of your peers to your answers (orange dots).
+            </p>
+        ";
 
 
         $questionIndustry9 = $q9Industryheader.$q9Industrybody;
 
-        $q9question = '
-        	<h3>Q9. If we look at the following specific Big Data and analytics business use cases, what is your organization\'s position on each of these?</h3>
-        ';
-        $q9intro = '
-        	<strong class="italic font-light">Overview</strong>
-        	<p class="mb-2">
-        		Finally, question 9 looks at the use cases given by respondents in your industry and size band, and helps you to align your specific use cases to those of your peers. The data is sorted in order of the number of respondents that selected each of the use cases, and shows your position for each of the use cases you plan to adopt for your Big Data installation. 
-        	</p>
-        ';
-
         $question9 = $q9question.$q9intro.$q9SizeGraph.$questionSize9.$q9IndustryGraph.$questionIndustry9;
 
-        $html=$question1.$question2.$question4.$question5.$question6a.$question7.$question8.$question9;
+        $html=$question1.$question2.$question4./*$question5.*/$question6a.$question7./*$question8.*/$question9;
         return $html;
 	}
+
+    public function getName(){
+        return $this->name;
+    }
+    public function getEmail(){
+        return $this->email;
+    }
+    public function getProject(){
+        return $this->project;
+    }
+    public function getOrganization(){
+        return $this->organization;
+    }
+    public function getAssessment(){
+        return $this->assessment;
+    }
 
 	private function ordinal($number) {
         $ends = array('th','st','nd','rd','th','th','th','th','th','th');
