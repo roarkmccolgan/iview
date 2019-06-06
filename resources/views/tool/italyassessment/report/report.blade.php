@@ -53,7 +53,8 @@
 	<h2 class="text-4xl font-bold leading-tight text-blue-700 uppercase mb-6">Self-Assessment Report</h2>
 	<span class="block text-lg font-bold leading-tight">{{ $name }}</span>
 	<span class="block text-lg font-bold leading-tight text-gray-600">{{ $organization }}</span>
-	<span class="block mb-6 text-lg font-bold leading-tight text-gray-600">{{ $project }}</span>
+	<span class="block text-lg font-bold leading-tight text-gray-600">{{ $project }}</span>
+	<span class="block mb-6 text-lg font-bold leading-tight text-gray-600">{{ $theDate }}</span>
 	<p class="mb-2">
 		In this customized report your answers to the DataBench Big Data survey are compared with respondents from your same industry and company size class to help you compare your Big Data business KPIs with those of your peers. This will help you gain inspiration and insights about how best to implement data-driven innovation.
 	</p>
@@ -135,7 +136,7 @@
 			</div>
 			<div class="float-left">
 				<h2 class="font-bold">Youtube</h2>
-				<a href="https://www.youtube.com/results?search_query=Databench+Project" class=""><span class="text-sm text-blue-500">DataBench Project</span></a>
+				<a href="https://www.youtube.com/channel/UCYR1nCoDp-qgGck76GM-JDg/featured" class=""><span class="text-sm text-blue-500">DataBench Project</span></a>
 			</div>
 		</div>
 	</div>

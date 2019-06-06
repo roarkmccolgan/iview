@@ -29,7 +29,7 @@
 						<h3 class="text-lg font-bold leading-tight text-gray-600 mb-4">Measuring the impact of Big Data and Analytics on business results</h3>
 						<div class="text-grey-light">
 							<p class="mb-2">
-								The DataBench Self-Assessment Tool address people who are involved, influence, or are highly knowledgeable about their organisation's approach to, and potential use of, BDA. A deep technical understanding of the use or development of Big Data systems is not required to fill in the Self-Assessment survey.
+								The DataBench Self-Assessment Tool provides organisations using or planning to use Big Data and Analytics (BDA) with the opportunity to benchmark their business performance against their peers (other companies in the same industry and same company size class). The DataBench Self-Assessment Tool addresses people who are involved, influence, or are highly knowledgeable about their organisation's approach to, and potential use of, BDA. A deep technical understanding of the use or development of Big Data systems is not required to fill in the Self-Assessment survey.
 							</p>
 							<p class="mb-2">
 								After the completion of the survey, a summary report will be automatically generated providing an analysis of your answers. The link to download the report will be emailed after the survey submission.

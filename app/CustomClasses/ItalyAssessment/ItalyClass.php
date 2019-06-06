@@ -3,7 +3,7 @@ namespace App\CustomClasses\ItalyAssessment;
 
 use App\Assessment;
 use App\Tracker;
-
+use Carbon\Carbon;
 
 class ItalyClass
 {
@@ -11,6 +11,7 @@ class ItalyClass
     public $project = 'Project';
     public $organization = 'Organization';
     public $email = 'email';
+    public $created_at = 'date';
     public $questions;
     public $singleQuestions;
     public $singleQuestionsText;
@@ -59,6 +60,7 @@ class ItalyClass
         })->mapWithKeys(function($item){
             return [$item['label'] => $item['qtitle']];
         });
+
         if(!$assessment){
             $this->answer = collect(json_decode($answerRequest->getBody(), true))->first();
 
@@ -101,6 +103,7 @@ class ItalyClass
         $this->name = $this->answer['q22r2']." ".$this->answer['q22r3'];
         $this->organization = $this->answer['q22r1'];
         $this->email = $this->answer['q22r4'];
+        $this->created_at = $this->assessment['created_at'];
 
         $this->project = $this->questions->filter(function($item, $key){
             return $item['vgroup'] == 'q21';
@@ -123,6 +126,7 @@ class ItalyClass
         //graph settings
 
         $graphSettings = array(
+            'use_iconv' => false,
             'back_colour' => '#FFF',
             'stroke_colour' => NULL,
             'back_stroke_width' => 0,
@@ -197,7 +201,7 @@ class ItalyClass
         $q1SizeGraph = "
         <p class='mb-6 italic'>Survey question: In which of the following areas has your company implemented or does it plan to implement Big Data and Analytics (BDA) initiatives?</p>
         <div class='block mb-4'>
-        	<span class='figure'>Specific size band response: areas of implementation of BDA initiatives</span>
+        	<span class='figure'>Specific size band response: Areas of implementation of BDA initiatives</span>
         	<div class='sizegraph'>
         		Size band selected: <span class='font-bold'>{$sizeKeys[$size]}</span>
         	</div>
@@ -271,7 +275,7 @@ class ItalyClass
                 ],*/
                 [
                     'circle',
-                    'cx' => 'g-1.5', //'g'.$item
+                    'cx' => 'g-2', //'g'.$item
                     'cy' => 'g'.(collect($q1GraphIndustryValues)->keys()->search($key)+0.5),
                     'r' => 10,
                     'stroke' => '#FFF',
@@ -290,7 +294,7 @@ class ItalyClass
         $q1IndustryGraph = "
         <p class='mb-6 italic pb'>Survey question: In which of the following areas has your company implemented or does it plan to implement Big Data and Analytics (BDA) initiatives?</p>
         <div class='block mb-4'>
-        	<span class='figure'>Specific industry response: areas of implementation of BDA initiatives</span>
+        	<span class='figure'>Specific industry response: Areas of implementation of BDA initiatives</span>
         	<div class='industrygraph'>
         		Industry selected: <span class='font-bold'>{$industryKeys[$industry]}</span>
         	</div>
@@ -469,7 +473,7 @@ class ItalyClass
                 ],*/
                 [
                     'circle',
-                    'cx' => 'g-1.5',
+                    'cx' => 'g-2',
                     'cy' => 'g'.(collect($q2GraphIndustryValues)->keys()->search($key)+0.5),
                     'r' => 10,
                     'stroke' => '#FFF',
@@ -616,7 +620,7 @@ class ItalyClass
         $q4SizeGraph = "
         <p class='mb-6 italic'>Survey question: How important are the following business Key Performance Indicators (KPIs) for measuring the impact of your organisation’s Big Data and Analytics efforts?</p>
         <div class='block mb-4'>
-        	<span class='figure'>Specific size band response: importance and ranking of KPIs</span>
+        	<span class='figure'>Specific size band response: Importance and ranking of KPIs</span>
         	<div class='sizegraph'>
         		Size band selected: <span class='font-bold'>{$sizeKeys[$size]}</span>
         	</div>
@@ -721,7 +725,7 @@ class ItalyClass
         $q4IndustryGraph = "
         <p class='mb-6 italic pb'>Survey question: How important are the following business Key Performance Indicators (KPIs) for measuring the impact of your organisation’s Big Data and Analytics efforts?</p>
         <div class='block mb-2'>
-        	<span class='figure'>Specific Industry response: importance and ranking of KPIs</span>
+        	<span class='figure'>Specific Industry response: Importance and ranking of KPIs</span>
         	<div class='industrygraph'>
         		Industry selected: <span class='font-bold'>{$industryKeys[$industry]}</span>
         	</div>
@@ -986,8 +990,8 @@ class ItalyClass
         // $graphSettings['axis_text_callback_y'] = function($value){
         //     return $value.'%';
         // };
-        $graphSettings['grid_division_h'] = 1;
-        $graphSettings['axis_max_h'] = null;
+        $graphSettings['grid_division_h'] = 3;
+        $graphSettings['axis_max_h'] = 15;
         $graphSettings['axis_text_callback_y'] = function($value){
             return $value.'%';
         };
@@ -1096,7 +1100,6 @@ class ItalyClass
         });
 
         $graphSettings['shape'] = $q6GraphIndustryUserShapes->flatten(1)->toArray();
-        $graphSettings['grid_division_h'] = 1;
 
         $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q6GraphIndustryValues)->count()*40+20, $graphSettings);
         $graph->colours($colours);
@@ -1107,7 +1110,7 @@ class ItalyClass
 
         
         $q6aIndustryGraph = "
-        <div class='block my-2'>
+        <div class='block my-2 mt-8'>
         	<span class='figure'>Specific industry response: Actual benefits realised or expected</span>
         	<div class='industrygraph'>
         		Industry selected: <span class='font-bold'>{$industryKeys[$industry]}</span>
@@ -1359,8 +1362,7 @@ class ItalyClass
         })->toArray());
 
         $q7IndustryGraph = "
-        <p class='mb-6 italic'>Survey question: To what extent has your organisation’s deployment of Big Data and Analytics impacted the ability to attain the following business KPIs?</p>
-        <div class='block my-2'>
+        <div class='block my-2 mt-8'>
         	<span class='figure'>specific industry response: Impact on ability to achieve specific business impacts</span>
         	<div class='industrygraph'>
         		Industry selected: <span class='font-bold'>{$industryKeys[$industry]}</span>
@@ -1919,7 +1921,7 @@ class ItalyClass
         $graphSettings['grid_division_v'] = null;
         $graphSettings['bar_space'] = 5;
         $graphSettings['axis_max_v'] = null;
-        $graphSettings['axis_max_h'] = 100;
+        $graphSettings['axis_max_h'] = 99;
         $graphSettings['pad_right'] = 20;
         $graphSettings['legend_entries'] = null;
         $graphSettings['axis_text_callback_y'] = null;
@@ -2025,7 +2027,7 @@ class ItalyClass
 
         //q9IndustryGraph
         $colours = [
-            '#70B3E2','#4196D2','#1167A6',
+            '#B1DAF5','#70B3E2','#4196D2',
         ];
         $q9GraphIndustryValues = collect($q9SourceData[$industry])->mapWithKeys(function($item, $key) use($q9IndustryAnswerlabels){
             return [$key => collect($item)->filter(function($useCases, $useCaseKey) use($q9IndustryAnswerlabels){
@@ -2078,7 +2080,7 @@ class ItalyClass
         $graphSettings['grid_division_v'] = null;
         $graphSettings['bar_space'] = 5;
         $graphSettings['axis_max_v'] = null;
-        $graphSettings['axis_max_h'] = 100;
+        $graphSettings['axis_max_h'] = 99;
         $graphSettings['pad_right'] = 20;
         $graphSettings['legend_entries'] = null;
         $graphSettings['axis_text_callback_y'] = null;
@@ -2183,6 +2185,9 @@ class ItalyClass
     }
     public function getEmail(){
         return $this->email;
+    }
+    public function getDate(){
+        return Carbon::parse($this->created_at)->toDateString();
     }
     public function getProject(){
         return $this->project;

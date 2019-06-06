@@ -124,8 +124,9 @@ class ItalyController extends Controller
         $name = $italyClass->getName();
         $project = $italyClass->getProject();
         $organization = $italyClass->getOrganization();
+        $theDate = $italyClass->getDate();
         //return view('tool.italyassessment.report.report', ['report' => $html]);
-        $pdf = PDF::loadView('tool.italyassessment.report.report', ['report'=>$html, 'name' => $name, 'project' => $project, 'organization' => $organization, 'pdf'=>true])
+        $pdf = PDF::loadView('tool.italyassessment.report.report', ['report'=>$html, 'name' => $name, 'project' => $project, 'organization' => $organization, 'theDate' => $theDate, 'pdf'=>true])
             ->setOption('margin-top', 28)
             ->setOption('margin-left', 0)
             ->setOption('margin-right', 0)
