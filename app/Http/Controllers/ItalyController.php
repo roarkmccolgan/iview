@@ -123,6 +123,9 @@ class ItalyController extends Controller
         $assessment = $italyClass->getAssessment();
         $name = $italyClass->getName();
         $project = $italyClass->getProject();
+        if($project == 'Project' || $project == 'No ICT Project'){
+            $project = false;
+        }
         $organization = $italyClass->getOrganization();
         $theDate = $italyClass->getDate();
         //return view('tool.italyassessment.report.report', ['report' => $html]);

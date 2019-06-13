@@ -991,7 +991,7 @@ class ItalyClass
         //     return $value.'%';
         // };
         $graphSettings['grid_division_h'] = 3;
-        $graphSettings['axis_max_h'] = 15;
+        $graphSettings['axis_max_h'] = null;
         $graphSettings['axis_text_callback_y'] = function($value){
             return $value.'%';
         };

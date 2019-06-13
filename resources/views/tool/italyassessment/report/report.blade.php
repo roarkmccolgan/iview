@@ -53,7 +53,7 @@
 	<h2 class="text-4xl font-bold leading-tight text-blue-700 uppercase mb-6">Self-Assessment Report</h2>
 	<span class="block text-lg font-bold leading-tight">{{ $name }}</span>
 	<span class="block text-lg font-bold leading-tight text-gray-600">{{ $organization }}</span>
-	<span class="block text-lg font-bold leading-tight text-gray-600">{{ $project }}</span>
+	@unless($project===false)<span class="block text-lg font-bold leading-tight text-gray-600">{{ $project }}</span>@endunless
 	<span class="block mb-6 text-lg font-bold leading-tight text-gray-600">{{ $theDate }}</span>
 	<p class="mb-2">
 		In this customized report your answers to the DataBench Big Data survey are compared with respondents from your same industry and company size class to help you compare your Big Data business KPIs with those of your peers. This will help you gain inspiration and insights about how best to implement data-driven innovation.

@@ -17,7 +17,7 @@ $manifest = json_decode($json, TRUE);
 <div class="w-5/6 mx-auto border-t"></div>
 <div class="w-5/6 mx-auto pt-6 clearfix">
 	<div class="clearfix w-full text-ntt-blue text-xs">
-		<img class="mb-6" src="{{ asset('images/tools/italyassessment/footer.png')}}" alt="" style="width: 168mm;" />
+		<img class="mb-6 block mx-auto" src="{{ asset('images/tools/italyassessment/footer.png')}}" alt="" style="width: 168mm;" />
 	</div>
 </div>
 </body>
