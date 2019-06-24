@@ -1,5 +1,4 @@
 <?php
-
 $industryKeys = [
     'qsectorr1' => 'Agriculture',
     'qsectorr2' => 'Business/IT Services',
@@ -10,6 +9,8 @@ $industryKeys = [
     'qsectorr7' => 'Telecom/Media',
     'qsectorr8' => 'Transport/Logistics',
     'qsectorr9' => 'Utilities/OilGas',
+    'qsectornone' => 'Other',
+    'qsectormultiple' => 'Multiple Classifications Apply'
 ];
 $sizeKeys = [
     'qsizer1' => '10-249',
@@ -35,20 +36,6 @@ $industryReference = [
         ],
         'qsectorr2' => [
             'q1r1' => 2,
-            'q1r2' => 9,
-            'q1r3' => 5,
-            'q1r4' => 3,
-            'q1r5' => 7,
-            'q1r6' => 4,
-            'q1r7' => 8,
-            'q1r8' => 10,
-            'q1r9' => 11,
-            'q1r10' => 5,
-            'q1r11' => 11,
-            'q1r12' => 1,
-        ],
-        'qsectorr3' => [
-            'q1r1' => 2,
             'q1r2' => 11,
             'q1r3' => 12,
             'q1r4' => 10,
@@ -60,6 +47,20 @@ $industryReference = [
             'q1r10' => 3,
             'q1r11' => 6,
             'q1r12' => 5,
+        ],
+        'qsectorr3' => [
+            'q1r1' => 2,
+            'q1r2' => 9,
+            'q1r3' => 5,
+            'q1r4' => 3,
+            'q1r5' => 7,
+            'q1r6' => 4,
+            'q1r7' => 8,
+            'q1r8' => 10,
+            'q1r9' => 11,
+            'q1r10' => 5,
+            'q1r11' => 11,
+            'q1r12' => 1,
         ],
         'qsectorr4' => [
             'q1r1' => 4,
@@ -158,16 +159,6 @@ $industryReference = [
             'q2r8' => 1,
         ],
         'qsectorr2' => [
-            'q2r1' => 1,
-            'q2r2' => 2,
-            'q2r3' => 3,
-            'q2r4' => 5,
-            'q2r5' => 4,
-            'q2r6' => 6,
-            'q2r7' => 8,
-            'q2r8' => 7,
-        ],
-        'qsectorr3' => [
             'q2r1' => 6,
             'q2r2' => 4,
             'q2r3' => 3,
@@ -176,6 +167,16 @@ $industryReference = [
             'q2r6' => 6,
             'q2r7' => 1,
             'q2r8' => 6,
+        ],
+        'qsectorr3' => [
+            'q2r1' => 1,
+            'q2r2' => 2,
+            'q2r3' => 3,
+            'q2r4' => 5,
+            'q2r5' => 4,
+            'q2r6' => 6,
+            'q2r7' => 8,
+            'q2r8' => 7,
         ],
         'qsectorr4' => [
             'q2r1' => 8,
@@ -249,15 +250,6 @@ $industryReference = [
             'q4r7' => 3.06,
         ],
         'qsectorr2' => [
-            'q4r1' => 2.71,
-            'q4r2' => 3.18,
-            'q4r3' => 3.83,
-            'q4r4' => 3.31,
-            'q4r5' => 3.58,
-            'q4r6' => 3.22,
-            'q4r7' => 3.28,
-        ],
-        'qsectorr3' => [
             'q4r1' => 2.94,
             'q4r2' => 3.17,
             'q4r3' => 3.65,
@@ -265,6 +257,15 @@ $industryReference = [
             'q4r5' => 3.65,
             'q4r6' => 2.87,
             'q4r7' => 3.23,
+        ],
+        'qsectorr3' => [
+            'q4r1' => 2.71,
+            'q4r2' => 3.18,
+            'q4r3' => 3.83,
+            'q4r4' => 3.31,
+            'q4r5' => 3.58,
+            'q4r6' => 3.22,
+            'q4r7' => 3.28,
         ],
         'qsectorr4' => [
             'q4r1' => 2.63,
@@ -331,17 +332,17 @@ $industryReference = [
         ],
         'qsectorr2' => [
             '1' => '0.0%',
-            '2' => '0.0%',
-            '3' => '11.5%',
-            '4' => '73.1%',
-            '5' => '14.1%',
-        ],
-        'qsectorr3' => [
-            '1' => '0.0%',
             '2' => '1.3%',
             '3' => '11.7%',
             '4' => '76.6%',
             '5' => '10.4%',
+        ],
+        'qsectorr3' => [
+            '1' => '0.0%',
+            '2' => '0.0%',
+            '3' => '11.5%',
+            '4' => '73.1%',
+            '5' => '14.1%',
         ],
         'qsectorr4' => [
             '1' => '0.0%',
@@ -393,14 +394,14 @@ $industryReference = [
             'q6ar3' => 2.94,
         ],
         'qsectorr2' => [
-            'q6ar1' => 9.85,
-            'q6ar2' => 8.54,
-            'q6ar3' => 10.79,
-        ],
-        'qsectorr3' => [
             'q6ar1' => 7.31,
             'q6ar2' => 7.56,
             'q6ar3' => 5.33,
+        ],
+        'qsectorr3' => [
+            'q6ar1' => 9.85,
+            'q6ar2' => 8.54,
+            'q6ar3' => 10.79,
         ],
         'qsectorr4' => [
             'q6ar1' => 4.79,
@@ -442,18 +443,18 @@ $industryReference = [
             'q7r5' => 3.00,
         ],
         'qsectorr2' => [
-            'q7r1' => 3.40,
-            'q7r2' => 3.69,
-            'q7r3' => 3.63,
-            'q7r4' => 3.04,
-            'q7r5' => 3.46,
-        ],
-        'qsectorr3' => [
             'q7r1' => 3.39,
             'q7r2' => 3.64,
             'q7r3' => 3.52,
             'q7r4' => 3.01,
             'q7r5' => 3.38,
+        ],
+        'qsectorr3' => [
+            'q7r1' => 3.40,
+            'q7r2' => 3.69,
+            'q7r3' => 3.63,
+            'q7r4' => 3.04,
+            'q7r5' => 3.46,
         ],
         'qsectorr4' => [
             'q7r1' => 3.12,
@@ -509,15 +510,6 @@ $industryReference = [
             'q8r7' => 3.7
         ],
         'qsectorr2' => [
-            'q8r1' => 3.33,
-            'q8r2' => 3.99,
-            'q8r3' => 4.22,
-            'q8r4' => 3.85,
-            'q8r5' => 4.26,
-            'q8r6' => 3.69,
-            'q8r7' => 3.71
-        ],
-        'qsectorr3' => [
             'q8r1' => 3.30,
             'q8r2' => 3.94,
             'q8r3' => 4.06,
@@ -525,6 +517,15 @@ $industryReference = [
             'q8r5' => 4.27,
             'q8r6' => 3.78,
             'q8r7' => 3.99
+        ],
+        'qsectorr3' => [
+            'q8r1' => 3.33,
+            'q8r2' => 3.99,
+            'q8r3' => 4.22,
+            'q8r4' => 3.85,
+            'q8r5' => 4.26,
+            'q8r6' => 3.69,
+            'q8r7' => 3.71
         ],
         'qsectorr4' => [
             'q8r1' => 3.07,
@@ -620,43 +621,6 @@ $industryReference = [
             'q9p2r35' => 11,
         ],
         'qsectorr2' => [
-            'q9p2r1' => 5,
-            'q9p2r2' => 7,
-            'q9p2r3' => 8,
-            'q9p2r4' => 4,
-            'q9p2r5' => 9,
-            'q9p2r6' => 10,
-            'q9p2r7' => 6,
-            'q9p2r8' => 2,
-            'q9p2r9' => 1,
-            'q9p2r10' => 10,
-            'q9p2r11' => 10,
-            'q9p2r12' => 10,
-            'q9p2r13' => 10,
-            'q9p2r14' => 10,
-            'q9p2r15' => 10,
-            'q9p2r16' => 10,
-            'q9p2r17' => 10,
-            'q9p2r18' => 10,
-            'q9p2r19' => 2,
-            'q9p2r20' => 10,
-            'q9p2r21' => 10,
-            'q9p2r22' => 10,
-            'q9p2r23' => 10,
-            'q9p2r24' => 10,
-            'q9p2r25' => 10,
-            'q9p2r26' => 10,
-            'q9p2r27' => 10,
-            'q9p2r28' => 10,
-            'q9p2r29' => 10,
-            'q9p2r30' => 10,
-            'q9p2r31' => 10,
-            'q9p2r32' => 10,
-            'q9p2r33' => 10,
-            'q9p2r34' => 10,
-            'q9p2r35' => 10,
-        ],
-        'qsectorr3' => [
             'q9p2r1' => 3,
             'q9p2r2' => 10,
             'q9p2r3' => 8,
@@ -692,6 +656,43 @@ $industryReference = [
             'q9p2r33' => 12,
             'q9p2r34' => 12,
             'q9p2r35' => 12,
+        ],
+        'qsectorr3' => [
+            'q9p2r1' => 5,
+            'q9p2r2' => 7,
+            'q9p2r3' => 8,
+            'q9p2r4' => 4,
+            'q9p2r5' => 9,
+            'q9p2r6' => 10,
+            'q9p2r7' => 6,
+            'q9p2r8' => 2,
+            'q9p2r9' => 1,
+            'q9p2r10' => 10,
+            'q9p2r11' => 10,
+            'q9p2r12' => 10,
+            'q9p2r13' => 10,
+            'q9p2r14' => 10,
+            'q9p2r15' => 10,
+            'q9p2r16' => 10,
+            'q9p2r17' => 10,
+            'q9p2r18' => 10,
+            'q9p2r19' => 2,
+            'q9p2r20' => 10,
+            'q9p2r21' => 10,
+            'q9p2r22' => 10,
+            'q9p2r23' => 10,
+            'q9p2r24' => 10,
+            'q9p2r25' => 10,
+            'q9p2r26' => 10,
+            'q9p2r27' => 10,
+            'q9p2r28' => 10,
+            'q9p2r29' => 10,
+            'q9p2r30' => 10,
+            'q9p2r31' => 10,
+            'q9p2r32' => 10,
+            'q9p2r33' => 10,
+            'q9p2r34' => 10,
+            'q9p2r35' => 10,
         ],
         'qsectorr4' => [
             'q9p2r1' => 3,
@@ -980,64 +981,6 @@ $industryGraphReference = [
         'qsectorr2' => [
             'q1r1' => [
                 'label' => 'Customer service and support',
-                'value' => 34.6
-            ],
-            'q1r2' => [
-                'label' => 'Engineering',
-                'value' => 21.8
-            ],
-            'q1r3' => [
-                'label' => 'Research and development (R&D)',
-                'value' => 28.2
-            ],
-            'q1r4' => [
-                'label' => 'Product innovation (new business initiatives)',
-                'value' => 30.8
-            ],
-            'q1r5' => [
-                'label' => 'Maintenance and logistics',
-                'value' => 25.6
-            ],
-            'q1r6' => [
-                'label' => 'Marketing',
-                'value' => 29.5
-            ],
-            'q1r7' => [
-                'label' => 'Finance',
-                'value' => 24.4
-            ],
-            'q1r8' => [
-                'label' => 'HR and legal',
-                'value' => 17.9
-            ],
-            'q1r9' => [
-                'label' => 'Sales',
-                'value' => 15.4
-            ],
-            'q1r10' => [
-                'label' => 'Product management',
-                'value' => 28.2
-            ],
-            'q1r11' => [
-                'label' => 'Governance, risk, and compliance',
-                'value' => 15.4
-            ],
-            'q1r12' => [
-                'label' => 'IT and data operations',
-                'value' => 61.5
-            ],
-            'q1r13' => [
-                'label' => 'Other, please specify',
-                'value' => 1.3
-            ],
-            'q1r14' => [
-                'label' => 'All the above',
-                'value' => 0.0
-            ],
-        ],
-        'qsectorr3' => [
-            'q1r1' => [
-                'label' => 'Customer service and support',
                 'value' => 48.1
             ],
             'q1r2' => [
@@ -1083,6 +1026,64 @@ $industryGraphReference = [
             'q1r12' => [
                 'label' => 'IT and data operations',
                 'value' => 31.2
+            ],
+            'q1r13' => [
+                'label' => 'Other, please specify',
+                'value' => 1.3
+            ],
+            'q1r14' => [
+                'label' => 'All the above',
+                'value' => 0.0
+            ],
+        ],
+        'qsectorr3' => [
+            'q1r1' => [
+                'label' => 'Customer service and support',
+                'value' => 34.6
+            ],
+            'q1r2' => [
+                'label' => 'Engineering',
+                'value' => 21.8
+            ],
+            'q1r3' => [
+                'label' => 'Research and development (R&D)',
+                'value' => 28.2
+            ],
+            'q1r4' => [
+                'label' => 'Product innovation (new business initiatives)',
+                'value' => 30.8
+            ],
+            'q1r5' => [
+                'label' => 'Maintenance and logistics',
+                'value' => 25.6
+            ],
+            'q1r6' => [
+                'label' => 'Marketing',
+                'value' => 29.5
+            ],
+            'q1r7' => [
+                'label' => 'Finance',
+                'value' => 24.4
+            ],
+            'q1r8' => [
+                'label' => 'HR and legal',
+                'value' => 17.9
+            ],
+            'q1r9' => [
+                'label' => 'Sales',
+                'value' => 15.4
+            ],
+            'q1r10' => [
+                'label' => 'Product management',
+                'value' => 28.2
+            ],
+            'q1r11' => [
+                'label' => 'Governance, risk, and compliance',
+                'value' => 15.4
+            ],
+            'q1r12' => [
+                'label' => 'IT and data operations',
+                'value' => 61.5
             ],
             'q1r13' => [
                 'label' => 'Other, please specify',
@@ -1484,44 +1485,6 @@ $industryGraphReference = [
         'qsectorr2' => [
             'q2r1' => [
                 'label' => 'Better understand customer behavior and expectations',
-                'value' => 0.49
-            ],
-            'q2r2' => [
-                'label' => 'Optimize our pricing strategies and go-to-market programs',
-                'value' => 0.47
-            ],
-            'q2r3' => [
-                'label' => 'Product, services, or program improvement and innovation',
-                'value' => 0.45
-            ],
-            'q2r4' => [
-                'label' => 'Improve our understanding of the market and our competitors',
-                'value' => 0.42
-            ],
-            'q2r5' => [
-                'label' => 'Improve and optimize our business processes and operations',
-                'value' => 0.44
-            ],
-            'q2r6' => [
-                'label' => 'Improve our facilities, and equipment design, maintenance, and utilization',
-                'value' => 0.40
-            ],
-            'q2r7' => [
-                'label' => 'Improve our operational, fraud, and risk management',
-                'value' => 0.32
-            ],
-            'q2r8' => [
-                'label' => 'Implement better regulatory compliance and financial controls',
-                'value' => 0.36
-            ],
-            'q2r9' => [
-                'label' => 'Other, please specify',
-                'value' => 0.01
-            ]
-        ],
-        'qsectorr3' => [
-            'q2r1' => [
-                'label' => 'Better understand customer behavior and expectations',
                 'value' => 0.39
             ],
             'q2r2' => [
@@ -1551,6 +1514,44 @@ $industryGraphReference = [
             'q2r8' => [
                 'label' => 'Implement better regulatory compliance and financial controls',
                 'value' => 0.39
+            ],
+            'q2r9' => [
+                'label' => 'Other, please specify',
+                'value' => 0.01
+            ]
+        ],
+        'qsectorr3' => [
+            'q2r1' => [
+                'label' => 'Better understand customer behavior and expectations',
+                'value' => 0.49
+            ],
+            'q2r2' => [
+                'label' => 'Optimize our pricing strategies and go-to-market programs',
+                'value' => 0.47
+            ],
+            'q2r3' => [
+                'label' => 'Product, services, or program improvement and innovation',
+                'value' => 0.45
+            ],
+            'q2r4' => [
+                'label' => 'Improve our understanding of the market and our competitors',
+                'value' => 0.42
+            ],
+            'q2r5' => [
+                'label' => 'Improve and optimize our business processes and operations',
+                'value' => 0.44
+            ],
+            'q2r6' => [
+                'label' => 'Improve our facilities, and equipment design, maintenance, and utilization',
+                'value' => 0.40
+            ],
+            'q2r7' => [
+                'label' => 'Improve our operational, fraud, and risk management',
+                'value' => 0.32
+            ],
+            'q2r8' => [
+                'label' => 'Implement better regulatory compliance and financial controls',
+                'value' => 0.36
             ],
             'q2r9' => [
                 'label' => 'Other, please specify',
@@ -1820,36 +1821,6 @@ $industryGraphReference = [
         'qsectorr2' => [
             'q4r1' => [
                 'label' => 'Cost reduction',
-                'value' => 2.71
-            ],
-            'q4r2' => [
-                'label' => 'Time efficiency',
-                'value' => 3.18
-            ],
-            'q4r3' => [
-                'label' => 'Product/service quality',
-                'value' => 3.83
-            ],
-            'q4r4' => [
-                'label' => 'Revenue growth',
-                'value' => 3.31
-            ],
-            'q4r5' => [
-                'label' => 'Customer satisfaction',
-                'value' => 3.58
-            ],
-            'q4r6' => [
-                'label' => 'Business model innovation',
-                'value' => 3.22
-            ],
-            'q4r7' => [
-                'label' => 'Number of new products/services launched',
-                'value' => 3.28
-            ],
-        ],
-        'qsectorr3' => [
-            'q4r1' => [
-                'label' => 'Cost reduction',
                 'value' => 2.94
             ],
             'q4r2' => [
@@ -1875,6 +1846,36 @@ $industryGraphReference = [
             'q4r7' => [
                 'label' => 'Number of new products/services launched',
                 'value' => 3.23
+            ],
+        ],
+        'qsectorr3' => [
+            'q4r1' => [
+                'label' => 'Cost reduction',
+                'value' => 2.71
+            ],
+            'q4r2' => [
+                'label' => 'Time efficiency',
+                'value' => 3.18
+            ],
+            'q4r3' => [
+                'label' => 'Product/service quality',
+                'value' => 3.83
+            ],
+            'q4r4' => [
+                'label' => 'Revenue growth',
+                'value' => 3.31
+            ],
+            'q4r5' => [
+                'label' => 'Customer satisfaction',
+                'value' => 3.58
+            ],
+            'q4r6' => [
+                'label' => 'Business model innovation',
+                'value' => 3.22
+            ],
+            'q4r7' => [
+                'label' => 'Number of new products/services launched',
+                'value' => 3.28
             ],
         ],
         'qsectorr4' => [
@@ -2088,28 +2089,6 @@ $industryGraphReference = [
             ],
             '2' => [
                 'label' => 'No benefits',
-                'value' => 0.0
-            ],
-            '3' => [
-                'label' => 'Low level of benefits',
-                'value' => 11.5
-            ],
-            '4' => [
-                'label' => 'Moderate level of benefits',
-                'value' => 73.1
-            ],
-            '5' => [
-                'label' => 'High level of benefits',
-                'value' => 14.1
-            ],
-        ],
-        'qsectorr3' => [
-            '1' => [
-                'label' => 'Negative benefits',
-                'value' => 0.0
-            ],
-            '2' => [
-                'label' => 'No benefits',
                 'value' => 1.3
             ],
             '3' => [
@@ -2123,6 +2102,28 @@ $industryGraphReference = [
             '5' => [
                 'label' => 'High level of benefits',
                 'value' => 10.4
+            ],
+        ],
+        'qsectorr3' => [
+            '1' => [
+                'label' => 'Negative benefits',
+                'value' => 0.0
+            ],
+            '2' => [
+                'label' => 'No benefits',
+                'value' => 0.0
+            ],
+            '3' => [
+                'label' => 'Low level of benefits',
+                'value' => 11.5
+            ],
+            '4' => [
+                'label' => 'Moderate level of benefits',
+                'value' => 73.1
+            ],
+            '5' => [
+                'label' => 'High level of benefits',
+                'value' => 14.1
             ],
         ],
         'qsectorr4' => [
@@ -2276,20 +2277,6 @@ $industryGraphReference = [
         'qsectorr2' => [
             'q6ar1' => [
                 'label' => 'Increased Profit by',
-                'value' => 9.85
-            ],
-            'q6ar2' => [
-                'label' => 'Increased Revenue by',
-                'value' => 8.54
-            ],
-            'q6ar3' => [
-                'label' => 'Reduced Cost by',
-                'value' => 10.79
-            ],
-        ],
-        'qsectorr3' => [
-            'q6ar1' => [
-                'label' => 'Increased Profit by',
                 'value' => 7.31
             ],
             'q6ar2' => [
@@ -2299,6 +2286,20 @@ $industryGraphReference = [
             'q6ar3' => [
                 'label' => 'Reduced Cost by',
                 'value' => 5.33
+            ],
+        ],
+        'qsectorr3' => [
+            'q6ar1' => [
+                'label' => 'Increased Profit by',
+                'value' => 9.85
+            ],
+            'q6ar2' => [
+                'label' => 'Increased Revenue by',
+                'value' => 8.54
+            ],
+            'q6ar3' => [
+                'label' => 'Reduced Cost by',
+                'value' => 10.79
             ],
         ],
         'qsectorr4' => [
@@ -2412,28 +2413,6 @@ $industryGraphReference = [
         'qsectorr2' => [
             'q7r1' => [
                 'label' => 'Time efficiency',
-                'value' => 3.40
-            ],
-            'q7r2' => [
-                'label' => 'Product/service quality',
-                'value' => 3.69
-            ],
-            'q7r3' => [
-                'label' => 'Customer satisfaction',
-                'value' => 3.63
-            ],
-            'q7r4' => [
-                'label' => 'Business model innovation',
-                'value' => 3.04
-            ],
-            'q7r5' => [
-                'label' => 'Number of new products or services launched',
-                'value' => 3.46
-            ],
-        ],
-        'qsectorr3' => [
-            'q7r1' => [
-                'label' => 'Time efficiency',
                 'value' => 3.39
             ],
             'q7r2' => [
@@ -2451,6 +2430,28 @@ $industryGraphReference = [
             'q7r5' => [
                 'label' => 'Number of new products or services launched',
                 'value' => 3.38
+            ],
+        ],
+        'qsectorr3' => [
+            'q7r1' => [
+                'label' => 'Time efficiency',
+                'value' => 3.40
+            ],
+            'q7r2' => [
+                'label' => 'Product/service quality',
+                'value' => 3.69
+            ],
+            'q7r3' => [
+                'label' => 'Customer satisfaction',
+                'value' => 3.63
+            ],
+            'q7r4' => [
+                'label' => 'Business model innovation',
+                'value' => 3.04
+            ],
+            'q7r5' => [
+                'label' => 'Number of new products or services launched',
+                'value' => 3.46
             ],
         ],
         'qsectorr4' => [
@@ -2620,36 +2621,6 @@ $industryGraphReference = [
         'qsectorr2' => [
             'q8r1' => [
                 'label' => 'Cost reduction',
-                'value' => 3.33
-            ],
-            'q8r2' => [
-                'label' => 'Time efficiency',
-                'value' => 3.99
-            ],
-            'q8r3' => [
-                'label' => 'Product/service quality',
-                'value' => 4.22
-            ],
-            'q8r4' => [
-                'label' => 'Revenue growth',
-                'value' => 3.85
-            ],
-            'q8r5' => [
-                'label' => 'Customer satisfaction',
-                'value' => 4.26
-            ],
-            'q8r6' => [
-                'label' => 'Business model innovation',
-                'value' => 3.69
-            ],
-            'q8r7' => [
-                'label' => 'Number of new products/services launched',
-                'value' => 3.71
-            ],
-        ],
-        'qsectorr3' => [
-            'q8r1' => [
-                'label' => 'Cost reduction',
                 'value' => 3.30
             ],
             'q8r2' => [
@@ -2675,6 +2646,36 @@ $industryGraphReference = [
             'q8r7' => [
                 'label' => 'Number of new products/services launched',
                 'value' => 3.99
+            ],
+        ],
+        'qsectorr3' => [
+            'q8r1' => [
+                'label' => 'Cost reduction',
+                'value' => 3.33
+            ],
+            'q8r2' => [
+                'label' => 'Time efficiency',
+                'value' => 3.99
+            ],
+            'q8r3' => [
+                'label' => 'Product/service quality',
+                'value' => 4.22
+            ],
+            'q8r4' => [
+                'label' => 'Revenue growth',
+                'value' => 3.85
+            ],
+            'q8r5' => [
+                'label' => 'Customer satisfaction',
+                'value' => 4.26
+            ],
+            'q8r6' => [
+                'label' => 'Business model innovation',
+                'value' => 3.69
+            ],
+            'q8r7' => [
+                'label' => 'Number of new products/services launched',
+                'value' => 3.71
             ],
         ],
         'qsectorr4' => [
@@ -3004,148 +3005,6 @@ $industryGraphReference = [
         'qsectorr2' => [
             'q9p2r1' => [
                 'label' => 'Price optimization',
-                'value' => 2.26
-            ],
-            'q9p2r2' => [
-                'label' => 'New product development',
-                'value' => 2.13
-            ],
-            'q9p2r3' => [
-                'label' => 'Risk exposure assessment',
-                'value' => 2.12
-            ],
-            'q9p2r4' => [
-                'label' => 'Regulatory intelligence',
-                'value' => 2.31
-            ],
-            'q9p2r5' => [
-                'label' => 'Customer profiling, targeting, and optimization of offers',
-                'value' => 1.96
-            ],
-            'q9p2r6' => [
-                'label' => 'Customer scoring and/or churn mitigation',
-                'value' => 0.00
-            ],
-            'q9p2r7' => [
-                'label' => 'Fraud prevention and detection',
-                'value' => 2.18
-            ],
-            'q9p2r8' => [
-                'label' => 'Product &amp; Service Recommendation systems',
-                'value' => 2.33
-            ],
-            'q9p2r9' => [
-                'label' => 'Automated Customer Service',
-                'value' => 2.36
-            ],
-            'q9p2r10' => [
-                'label' => 'Supply chain optimization',
-                'value' => 0.00
-            ],
-            'q9p2r11' => [
-                'label' => 'Predictive Maintenance',
-                'value' => 0.00
-            ],
-            'q9p2r12' => [
-                'label' => 'Inventory and service parts optimization',
-                'value' => 0.00
-            ],
-            'q9p2r13' => [
-                'label' => 'Precision agriculture',
-                'value' => 0.00
-            ],
-            'q9p2r14' => [
-                'label' => 'Yield monitoring and prediction',
-                'value' => 0.00
-            ],
-            'q9p2r15' => [
-                'label' => 'Field mapping &amp; crop scouting',
-                'value' => 0.00
-            ],
-            'q9p2r16' => [
-                'label' => 'Heavy equipment utilization',
-                'value' => 0.00
-            ],
-            'q9p2r17' => [
-                'label' => 'Cyberthreat &amp; detection',
-                'value' => 0.00
-            ],
-            'q9p2r18' => [
-                'label' => 'Usage based insurance',
-                'value' => 0.00
-            ],
-            'q9p2r19' => [
-                'label' => 'Social media analytics',
-                'value' => 2.33
-            ],
-            'q9p2r20' => [
-                'label' => 'Illness/disease diagnosis and progression',
-                'value' => 0.00
-            ],
-            'q9p2r21' => [
-                'label' => 'Personalized treatment via comprehensive evaluation of health records',
-                'value' => 0.00
-            ],
-            'q9p2r22' => [
-                'label' => 'Patient admission and re-admission predictions',
-                'value' => 0.00
-            ],
-            'q9p2r23' => [
-                'label' => 'Quality of care optimization',
-                'value' => 0.00
-            ],
-            'q9p2r24' => [
-                'label' => 'Smart warehousing',
-                'value' => 0.00
-            ],
-            'q9p2r25' => [
-                'label' => 'Asset management',
-                'value' => 0.00
-            ],
-            'q9p2r26' => [
-                'label' => 'Quality management investigation',
-                'value' => 0.00
-            ],
-            'q9p2r27' => [
-                'label' => 'Increase productivity and efficiency of DCs/warehouses',
-                'value' => 0.00
-            ],
-            'q9p2r28' => [
-                'label' => 'Intelligent Fulfillment',
-                'value' => 0.00
-            ],
-            'q9p2r29' => [
-                'label' => 'Network analytics and optimization',
-                'value' => 0.00
-            ],
-            'q9p2r30' => [
-                'label' => 'Ad Targeting',
-                'value' => 0.00
-            ],
-            'q9p2r31' => [
-                'label' => 'Scheduling optimisation',
-                'value' => 0.00
-            ],
-            'q9p2r32' => [
-                'label' => 'Connected vehicles optimization',
-                'value' => 0.00
-            ],
-            'q9p2r33' => [
-                'label' => 'Logistics and package delivery management',
-                'value' => 0.00
-            ],
-            'q9p2r34' => [
-                'label' => 'Field service optimization',
-                'value' => 0.00
-            ],
-            'q9p2r35' => [
-                'label' => 'Energy consumption analysis and prediction',
-                'value' => 0.00
-            ],
-        ],
-        'qsectorr3' => [
-            'q9p2r1' => [
-                'label' => 'Price optimization',
                 'value' => 2.29
             ],
             'q9p2r2' => [
@@ -3219,6 +3078,148 @@ $industryGraphReference = [
             'q9p2r19' => [
                 'label' => 'Social media analytics',
                 'value' => 0.00
+            ],
+            'q9p2r20' => [
+                'label' => 'Illness/disease diagnosis and progression',
+                'value' => 0.00
+            ],
+            'q9p2r21' => [
+                'label' => 'Personalized treatment via comprehensive evaluation of health records',
+                'value' => 0.00
+            ],
+            'q9p2r22' => [
+                'label' => 'Patient admission and re-admission predictions',
+                'value' => 0.00
+            ],
+            'q9p2r23' => [
+                'label' => 'Quality of care optimization',
+                'value' => 0.00
+            ],
+            'q9p2r24' => [
+                'label' => 'Smart warehousing',
+                'value' => 0.00
+            ],
+            'q9p2r25' => [
+                'label' => 'Asset management',
+                'value' => 0.00
+            ],
+            'q9p2r26' => [
+                'label' => 'Quality management investigation',
+                'value' => 0.00
+            ],
+            'q9p2r27' => [
+                'label' => 'Increase productivity and efficiency of DCs/warehouses',
+                'value' => 0.00
+            ],
+            'q9p2r28' => [
+                'label' => 'Intelligent Fulfillment',
+                'value' => 0.00
+            ],
+            'q9p2r29' => [
+                'label' => 'Network analytics and optimization',
+                'value' => 0.00
+            ],
+            'q9p2r30' => [
+                'label' => 'Ad Targeting',
+                'value' => 0.00
+            ],
+            'q9p2r31' => [
+                'label' => 'Scheduling optimisation',
+                'value' => 0.00
+            ],
+            'q9p2r32' => [
+                'label' => 'Connected vehicles optimization',
+                'value' => 0.00
+            ],
+            'q9p2r33' => [
+                'label' => 'Logistics and package delivery management',
+                'value' => 0.00
+            ],
+            'q9p2r34' => [
+                'label' => 'Field service optimization',
+                'value' => 0.00
+            ],
+            'q9p2r35' => [
+                'label' => 'Energy consumption analysis and prediction',
+                'value' => 0.00
+            ],
+        ],
+        'qsectorr3' => [
+            'q9p2r1' => [
+                'label' => 'Price optimization',
+                'value' => 2.26
+            ],
+            'q9p2r2' => [
+                'label' => 'New product development',
+                'value' => 2.13
+            ],
+            'q9p2r3' => [
+                'label' => 'Risk exposure assessment',
+                'value' => 2.12
+            ],
+            'q9p2r4' => [
+                'label' => 'Regulatory intelligence',
+                'value' => 2.31
+            ],
+            'q9p2r5' => [
+                'label' => 'Customer profiling, targeting, and optimization of offers',
+                'value' => 1.96
+            ],
+            'q9p2r6' => [
+                'label' => 'Customer scoring and/or churn mitigation',
+                'value' => 0.00
+            ],
+            'q9p2r7' => [
+                'label' => 'Fraud prevention and detection',
+                'value' => 2.18
+            ],
+            'q9p2r8' => [
+                'label' => 'Product &amp; Service Recommendation systems',
+                'value' => 2.33
+            ],
+            'q9p2r9' => [
+                'label' => 'Automated Customer Service',
+                'value' => 2.36
+            ],
+            'q9p2r10' => [
+                'label' => 'Supply chain optimization',
+                'value' => 0.00
+            ],
+            'q9p2r11' => [
+                'label' => 'Predictive Maintenance',
+                'value' => 0.00
+            ],
+            'q9p2r12' => [
+                'label' => 'Inventory and service parts optimization',
+                'value' => 0.00
+            ],
+            'q9p2r13' => [
+                'label' => 'Precision agriculture',
+                'value' => 0.00
+            ],
+            'q9p2r14' => [
+                'label' => 'Yield monitoring and prediction',
+                'value' => 0.00
+            ],
+            'q9p2r15' => [
+                'label' => 'Field mapping &amp; crop scouting',
+                'value' => 0.00
+            ],
+            'q9p2r16' => [
+                'label' => 'Heavy equipment utilization',
+                'value' => 0.00
+            ],
+            'q9p2r17' => [
+                'label' => 'Cyberthreat &amp; detection',
+                'value' => 0.00
+            ],
+            'q9p2r18' => [
+                'label' => 'Usage based insurance',
+                'value' => 0.00
+            ],
+            'q9p2r19' => [
+                'label' => 'Social media analytics',
+                'value' => 2.33
             ],
             'q9p2r20' => [
                 'label' => 'Illness/disease diagnosis and progression',
@@ -6173,71 +6174,6 @@ $q8SourceData = [
     ],
     'qsectorr2' => [
         '0%' => [
-            'Cost reduction' => 3,
-            'Time efficiency' => 4,
-            'Product/service quality' => 1,
-            'Revenue growth' => 3,
-            'Customer satisfaction' => 3,
-            'Business model innovation' => 4,
-            'Number of new products/services launched' => 5,
-        ],
-        '< 5%' => [
-            'Cost reduction' => 29,
-            'Time efficiency' => 10,
-            'Product/service quality' => 10,
-            'Revenue growth' => 17,
-            'Customer satisfaction' =>9,
-            'Business model innovation' => 13,
-            'Number of new products/services launched' => 14,
-        ],
-        '5%-9%' => [
-            'Cost reduction' => 27,
-            'Time efficiency' => 21,
-            'Product/service quality' => 15,
-            'Revenue growth' => 26,
-            'Customer satisfaction' => 18,
-            'Business model innovation' => 28,
-            'Number of new products/services launched' => 22,
-        ],
-        '10%-24%' => [
-            'Cost reduction' => 21,
-            'Time efficiency' => 26,
-            'Product/service quality' => 28,
-            'Revenue growth' => 24,
-            'Customer satisfaction' => 24,
-            'Business model innovation' => 29,
-            'Number of new products/services launched' => 31,
-        ],
-        '25%-49%' => [
-            'Cost reduction' => 14,
-            'Time efficiency' => 28,
-            'Product/service quality' => 28,
-            'Revenue growth' => 13,
-            'Customer satisfaction' => 24,
-            'Business model innovation' => 17,
-            'Number of new products/services launched' => 21,
-        ],
-        '50%+' => [
-            'Cost reduction' => 6,
-            'Time efficiency' => 12,
-            'Product/service quality' => 17,
-            'Revenue growth' => 15,
-            'Customer satisfaction' => 21,
-            'Business model innovation' => 9,
-            'Number of new products/services launched' => 8,
-        ],
-        'Dont know' => [
-            'Cost reduction' => 0,
-            'Time efficiency' => 0,
-            'Product/service quality' => 0,
-            'Revenue growth' => 3,
-            'Customer satisfaction' => 1,
-            'Business model innovation' => 0,
-            'Number of new products/services launched' => 0,
-        ]
-    ],
-    'qsectorr3' => [
-        '0%' => [
             'Cost reduction' => 4,
             'Time efficiency' => 1,
             'Product/service quality' => 1,
@@ -6299,6 +6235,71 @@ $q8SourceData = [
             'Customer satisfaction' => 3,
             'Business model innovation' => 1,
             'Number of new products/services launched' => 5,
+        ]
+    ],
+    'qsectorr3' => [
+        '0%' => [
+            'Cost reduction' => 3,
+            'Time efficiency' => 4,
+            'Product/service quality' => 1,
+            'Revenue growth' => 3,
+            'Customer satisfaction' => 3,
+            'Business model innovation' => 4,
+            'Number of new products/services launched' => 5,
+        ],
+        '< 5%' => [
+            'Cost reduction' => 29,
+            'Time efficiency' => 10,
+            'Product/service quality' => 10,
+            'Revenue growth' => 17,
+            'Customer satisfaction' =>9,
+            'Business model innovation' => 13,
+            'Number of new products/services launched' => 14,
+        ],
+        '5%-9%' => [
+            'Cost reduction' => 27,
+            'Time efficiency' => 21,
+            'Product/service quality' => 15,
+            'Revenue growth' => 26,
+            'Customer satisfaction' => 18,
+            'Business model innovation' => 28,
+            'Number of new products/services launched' => 22,
+        ],
+        '10%-24%' => [
+            'Cost reduction' => 21,
+            'Time efficiency' => 26,
+            'Product/service quality' => 28,
+            'Revenue growth' => 24,
+            'Customer satisfaction' => 24,
+            'Business model innovation' => 29,
+            'Number of new products/services launched' => 31,
+        ],
+        '25%-49%' => [
+            'Cost reduction' => 14,
+            'Time efficiency' => 28,
+            'Product/service quality' => 28,
+            'Revenue growth' => 13,
+            'Customer satisfaction' => 24,
+            'Business model innovation' => 17,
+            'Number of new products/services launched' => 21,
+        ],
+        '50%+' => [
+            'Cost reduction' => 6,
+            'Time efficiency' => 12,
+            'Product/service quality' => 17,
+            'Revenue growth' => 15,
+            'Customer satisfaction' => 21,
+            'Business model innovation' => 9,
+            'Number of new products/services launched' => 8,
+        ],
+        'Dont know' => [
+            'Cost reduction' => 0,
+            'Time efficiency' => 0,
+            'Product/service quality' => 0,
+            'Revenue growth' => 3,
+            'Customer satisfaction' => 1,
+            'Business model innovation' => 0,
+            'Number of new products/services launched' => 0,
         ]
     ],
     'qsectorr4' => [
@@ -7070,119 +7071,6 @@ $q9SourceData = [
     ],
     'qsectorr2' => [
         'Not interested, No Plans' => [
-            'Price optimization' => 35,
-            'New product development' => 36,
-            'Risk exposure assessment' => 33,
-            'Regulatory intelligence' => 41,
-            'Customer profiling, targeting, and optimization of offers' => 27,
-            'Customer scoring and/or churn mitigation' => 0,
-            'Fraud prevention and detection' => 38,
-            'Product & Service Recommendation systems' => 40,
-            'Automated Customer Service' => 47,
-            'Supply chain optimization' => 0,
-            'Predictive Maintenance' => 0,
-            'Inventory and service parts optimization' => 0,
-            'Precision agriculture' => 0,
-            'Yield monitoring and prediction' => 0,
-            'Field mapping & crop scouting' => 0,
-            'Heavy equipment utilization' => 0,
-            'Cyberthreat & detection' => 0,
-            'Usage based insurance' => 0,
-            'Social media analytics' => 38,
-            'Illness/disease diagnosis and progression' => 0,
-            'Personalized treatment via comprehensive evaluation of health records' => 0,
-            'Patient admission and re-admission predictions' => 0,
-            'Quality of care optimization' => 0,
-            'Smart warehousing' => 0,
-            'Asset management' => 0,
-            'Quality management investigation' => 0,
-            'Increase productivity and efficiency of DCs/warehouses' => 0,
-            'Intelligent Fulfillment' => 0,
-            'Network analytics and optimization' => 0,
-            'Ad Targeting' => 0,
-            'Scheduling optimisation' => 0,
-            'Connected vehicles optimization' => 0,
-            'Logistics and package delivery management' => 0,
-            'Field service optimization' => 0,
-            'Energy consumption analysis and prediction' => 0,
-        ],
-        'Evaluating or Planning' => [
-            'Price optimization' => 45,
-            'New product development' => 38,
-            'Risk exposure assessment' => 32,
-            'Regulatory intelligence' => 37,
-            'Customer profiling, targeting, and optimization of offers' => 37,
-            'Customer scoring and/or churn mitigation' => 0,
-            'Fraud prevention and detection' => 31,
-            'Product & Service Recommendation systems' => 35,
-            'Automated Customer Service' => 29,
-            'Supply chain optimization' => 0,
-            'Predictive Maintenance' => 0,
-            'Inventory and service parts optimization' => 0,
-            'Precision agriculture' => 0,
-            'Yield monitoring and prediction' => 0,
-            'Field mapping & crop scouting' => 0,
-            'Heavy equipment utilization' => 0,
-            'Cyberthreat & detection' => 0,
-            'Usage based insurance' => 0,
-            'Social media analytics' => 43,
-            'Illness/disease diagnosis and progression' => 0,
-            'Personalized treatment via comprehensive evaluation of health records' => 0,
-            'Patient admission and re-admission predictions' => 0,
-            'Quality of care optimization' => 0,
-            'Smart warehousing' => 0,
-            'Asset management' => 0,
-            'Quality management investigation' => 0,
-            'Increase productivity and efficiency of DCs/warehouses' => 0,
-            'Intelligent Fulfillment' => 0,
-            'Network analytics and optimization' => 0,
-            'Ad Targeting' => 0,
-            'Scheduling optimisation' => 0,
-            'Connected vehicles optimization' => 0,
-            'Logistics and package delivery management' => 0,
-            'Field service optimization' => 0,
-            'Energy consumption analysis and prediction' => 0,
-        ],
-        'Using or Implementing' => [
-            'Price optimization' => 21,
-            'New product development' => 26,
-            'Risk exposure assessment' => 35,
-            'Regulatory intelligence' => 22,
-            'Customer profiling, targeting, and optimization of offers' => 36,
-            'Customer scoring and/or churn mitigation' => 0,
-            'Fraud prevention and detection' => 31,
-            'Product & Service Recommendation systems' => 26,
-            'Automated Customer Service' => 23,
-            'Supply chain optimization' => 0,
-            'Predictive Maintenance' => 0,
-            'Inventory and service parts optimization' => 0,
-            'Precision agriculture' => 0,
-            'Yield monitoring and prediction' => 0,
-            'Field mapping & crop scouting' => 0,
-            'Heavy equipment utilization' => 0,
-            'Cyberthreat & detection' => 0,
-            'Usage based insurance' => 0,
-            'Social media analytics' => 19,
-            'Illness/disease diagnosis and progression' => 0,
-            'Personalized treatment via comprehensive evaluation of health records' => 0,
-            'Patient admission and re-admission predictions' => 0,
-            'Quality of care optimization' => 0,
-            'Smart warehousing' => 0,
-            'Asset management' => 0,
-            'Quality management investigation' => 0,
-            'Increase productivity and efficiency of DCs/warehouses' => 0,
-            'Intelligent Fulfillment' => 0,
-            'Network analytics and optimization' => 0,
-            'Ad Targeting' => 0,
-            'Scheduling optimisation' => 0,
-            'Connected vehicles optimization' => 0,
-            'Logistics and package delivery management' => 0,
-            'Field service optimization' => 0,
-            'Energy consumption analysis and prediction' => 0,
-        ],
-    ],
-    'qsectorr3' => [
-        'Not interested, No Plans' => [
             'Price optimization' => 40,
             'New product development' => 27,
             'Risk exposure assessment' => 31,
@@ -7276,6 +7164,119 @@ $q9SourceData = [
             'Cyberthreat & detection' => 32,
             'Usage based insurance' => 25,
             'Social media analytics' => 0,
+            'Illness/disease diagnosis and progression' => 0,
+            'Personalized treatment via comprehensive evaluation of health records' => 0,
+            'Patient admission and re-admission predictions' => 0,
+            'Quality of care optimization' => 0,
+            'Smart warehousing' => 0,
+            'Asset management' => 0,
+            'Quality management investigation' => 0,
+            'Increase productivity and efficiency of DCs/warehouses' => 0,
+            'Intelligent Fulfillment' => 0,
+            'Network analytics and optimization' => 0,
+            'Ad Targeting' => 0,
+            'Scheduling optimisation' => 0,
+            'Connected vehicles optimization' => 0,
+            'Logistics and package delivery management' => 0,
+            'Field service optimization' => 0,
+            'Energy consumption analysis and prediction' => 0,
+        ],
+    ],
+    'qsectorr3' => [
+        'Not interested, No Plans' => [
+            'Price optimization' => 35,
+            'New product development' => 36,
+            'Risk exposure assessment' => 33,
+            'Regulatory intelligence' => 41,
+            'Customer profiling, targeting, and optimization of offers' => 27,
+            'Customer scoring and/or churn mitigation' => 0,
+            'Fraud prevention and detection' => 38,
+            'Product & Service Recommendation systems' => 40,
+            'Automated Customer Service' => 47,
+            'Supply chain optimization' => 0,
+            'Predictive Maintenance' => 0,
+            'Inventory and service parts optimization' => 0,
+            'Precision agriculture' => 0,
+            'Yield monitoring and prediction' => 0,
+            'Field mapping & crop scouting' => 0,
+            'Heavy equipment utilization' => 0,
+            'Cyberthreat & detection' => 0,
+            'Usage based insurance' => 0,
+            'Social media analytics' => 38,
+            'Illness/disease diagnosis and progression' => 0,
+            'Personalized treatment via comprehensive evaluation of health records' => 0,
+            'Patient admission and re-admission predictions' => 0,
+            'Quality of care optimization' => 0,
+            'Smart warehousing' => 0,
+            'Asset management' => 0,
+            'Quality management investigation' => 0,
+            'Increase productivity and efficiency of DCs/warehouses' => 0,
+            'Intelligent Fulfillment' => 0,
+            'Network analytics and optimization' => 0,
+            'Ad Targeting' => 0,
+            'Scheduling optimisation' => 0,
+            'Connected vehicles optimization' => 0,
+            'Logistics and package delivery management' => 0,
+            'Field service optimization' => 0,
+            'Energy consumption analysis and prediction' => 0,
+        ],
+        'Evaluating or Planning' => [
+            'Price optimization' => 45,
+            'New product development' => 38,
+            'Risk exposure assessment' => 32,
+            'Regulatory intelligence' => 37,
+            'Customer profiling, targeting, and optimization of offers' => 37,
+            'Customer scoring and/or churn mitigation' => 0,
+            'Fraud prevention and detection' => 31,
+            'Product & Service Recommendation systems' => 35,
+            'Automated Customer Service' => 29,
+            'Supply chain optimization' => 0,
+            'Predictive Maintenance' => 0,
+            'Inventory and service parts optimization' => 0,
+            'Precision agriculture' => 0,
+            'Yield monitoring and prediction' => 0,
+            'Field mapping & crop scouting' => 0,
+            'Heavy equipment utilization' => 0,
+            'Cyberthreat & detection' => 0,
+            'Usage based insurance' => 0,
+            'Social media analytics' => 43,
+            'Illness/disease diagnosis and progression' => 0,
+            'Personalized treatment via comprehensive evaluation of health records' => 0,
+            'Patient admission and re-admission predictions' => 0,
+            'Quality of care optimization' => 0,
+            'Smart warehousing' => 0,
+            'Asset management' => 0,
+            'Quality management investigation' => 0,
+            'Increase productivity and efficiency of DCs/warehouses' => 0,
+            'Intelligent Fulfillment' => 0,
+            'Network analytics and optimization' => 0,
+            'Ad Targeting' => 0,
+            'Scheduling optimisation' => 0,
+            'Connected vehicles optimization' => 0,
+            'Logistics and package delivery management' => 0,
+            'Field service optimization' => 0,
+            'Energy consumption analysis and prediction' => 0,
+        ],
+        'Using or Implementing' => [
+            'Price optimization' => 21,
+            'New product development' => 26,
+            'Risk exposure assessment' => 35,
+            'Regulatory intelligence' => 22,
+            'Customer profiling, targeting, and optimization of offers' => 36,
+            'Customer scoring and/or churn mitigation' => 0,
+            'Fraud prevention and detection' => 31,
+            'Product & Service Recommendation systems' => 26,
+            'Automated Customer Service' => 23,
+            'Supply chain optimization' => 0,
+            'Predictive Maintenance' => 0,
+            'Inventory and service parts optimization' => 0,
+            'Precision agriculture' => 0,
+            'Yield monitoring and prediction' => 0,
+            'Field mapping & crop scouting' => 0,
+            'Heavy equipment utilization' => 0,
+            'Cyberthreat & detection' => 0,
+            'Usage based insurance' => 0,
+            'Social media analytics' => 19,
             'Illness/disease diagnosis and progression' => 0,
             'Personalized treatment via comprehensive evaluation of health records' => 0,
             'Patient admission and re-admission predictions' => 0,

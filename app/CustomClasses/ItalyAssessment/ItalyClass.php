@@ -52,6 +52,9 @@ class ItalyClass
             return isset($item['variables']) && isset($item['qtitle']);
         })->pluck(['variables'])->flatten(1);
 
+        // response()->json($this->questions->toArray())->send();
+        // die();
+
         $this->singleQuestions = $this->questions->mapWithKeys(function($item){
             return [$item['label'] => $item['rowTitle']];
         });
@@ -123,6 +126,8 @@ class ItalyClass
 
         $industry =  collect($this->answer)->only(array_keys($industryKeys))->filter()->keys()->first();
         $size =  collect($this->answer)->only(array_keys($sizeKeys))->filter()->keys()->first();
+        if($size == null) $size = 'qsizer1';
+        if($industry == 'qsectornone') $industry = 'qsectorr2';
         //graph settings
 
         $graphSettings = array(
@@ -167,27 +172,32 @@ class ItalyClass
         $colours = [
             '#c6dd64',
         ];
+
         $q1GraphSizeValues = collect($sizeGraphReference['q1'][$size])->mapWithKeys(function($item){
             return [$item['label'] => $item['value']];
         })->toArray();
         asort($q1GraphSizeValues);
-        $q1GraphSizeUserShapes = collect($q1GraphSizeValues)->filter(function($item, $key) use($q1Sizelabels){
-            return $q1Sizelabels->contains($key);
-        })->map(function($item, $key) use($q1GraphSizeValues){
-            return [
-                [
-                    'circle',
-                    'cx' => 'g-1.5',
-                    'cy' => 'g'.(collect($q1GraphSizeValues)->keys()->search($key)+0.5),
-                    'r' => 10,
-                    'stroke' => '#FFF',
-                    'stroke-width' => 2,
-                    'depth' => 'above',
-                    'fill' => '#842573'
-                ]
-            ];
-        });
-        $graphSettings['shape'] = $q1GraphSizeUserShapes->flatten(1)->values()->toArray();
+        if($q1SizeAnswers->count()){
+            $q1GraphSizeUserShapes = collect($q1GraphSizeValues)->filter(function($item, $key) use($q1Sizelabels){
+                return $q1Sizelabels->contains($key);
+            })->map(function($item, $key) use($q1GraphSizeValues){
+                return [
+                    [
+                        'circle',
+                        'cx' => 'g-1.5',
+                        'cy' => 'g'.(collect($q1GraphSizeValues)->keys()->search($key)+0.5),
+                        'r' => 10,
+                        'stroke' => '#FFF',
+                        'stroke-width' => 2,
+                        'depth' => 'above',
+                        'fill' => '#842573'
+                    ]
+                ];
+            });
+            $graphSettings['shape'] = $q1GraphSizeUserShapes->flatten(1)->values()->toArray();
+        }else{
+            $graphSettings['shape'] = null;
+        }
         $graphSettings['axis_text_callback_y'] = function($value){
             return $value.'%';
         };
@@ -239,7 +249,8 @@ class ItalyClass
         $q1Sizebody .= "
             <p class='mt-4'>
                 The green bars rank business areas according to the share of survey respondents in your company size band implementing BDA or planning to.<br>
-                The chart compares the average survey answers of your peers to your answers (violet dots).
+                The chart compares the average survey answers of your peers to your answers (violet dots).<br>
+                In case you did not provide any answer and/ or answered “Don’t know”, your answers (dots) are not displayed in the chart.
             </p>
         ";
         $question1Size = $q1Sizeheader.$q1Sizebody."<br>";
@@ -259,33 +270,39 @@ class ItalyClass
             return [$item['label'] => $item['value']];
         })->toArray();
         asort($q1GraphIndustryValues);
-        $graphIndustryUserShapes = collect($q1GraphIndustryValues)->filter(function($item, $key) use($q1Industrylabels){
-            return $q1Industrylabels->contains($key);
-        })->map(function($item, $key) use($q1GraphIndustryValues){
-            return [
-                /*[
-                    'line',
-                    'x1' => 'g0',
-                    'y1' => 'g'.(collect($q1GraphIndustryValues)->keys()->search($key)+0.5),
-                    'x2' => 'g'.$item,
-                    'y2' => 'g'.(collect($q1GraphIndustryValues)->keys()->search($key)+0.5),
-                    'stroke-width' => 2,
-                    'stroke' => '#e8ae38',
-                    'depth' => 'above',
-                ],*/
-                [
-                    'circle',
-                    'cx' => 'g-2', //'g'.$item
-                    'cy' => 'g'.(collect($q1GraphIndustryValues)->keys()->search($key)+0.5),
-                    'r' => 10,
-                    'stroke' => '#FFF',
-                    'stroke-width' => 2,
-                    'depth' => 'above',
-                    'fill' => '#e8ae38'
-                ]
-            ];
-        });
-        $graphSettings['shape'] = $graphIndustryUserShapes->flatten(1)->values()->toArray();
+
+        if($q1IndustryAnswers->count()){
+            $graphIndustryUserShapes = collect($q1GraphIndustryValues)->filter(function($item, $key) use($q1Industrylabels){
+                return $q1Industrylabels->contains($key);
+            })->map(function($item, $key) use($q1GraphIndustryValues){
+                return [
+                    /*[
+                        'line',
+                        'x1' => 'g0',
+                        'y1' => 'g'.(collect($q1GraphIndustryValues)->keys()->search($key)+0.5),
+                        'x2' => 'g'.$item,
+                        'y2' => 'g'.(collect($q1GraphIndustryValues)->keys()->search($key)+0.5),
+                        'stroke-width' => 2,
+                        'stroke' => '#e8ae38',
+                        'depth' => 'above',
+                    ],*/
+                    [
+                        'circle',
+                        'cx' => 'g-2', //'g'.$item
+                        'cy' => 'g'.(collect($q1GraphIndustryValues)->keys()->search($key)+0.5),
+                        'r' => 10,
+                        'stroke' => '#FFF',
+                        'stroke-width' => 2,
+                        'depth' => 'above',
+                        'fill' => '#e8ae38'
+                    ]
+                ];
+            });
+            $graphSettings['shape'] = $graphIndustryUserShapes->flatten(1)->values()->toArray();
+        }else{
+            $graphSettings['shape'] = null;
+        }
+            
         $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q1GraphIndustryValues)->count()*30+20, $graphSettings);
         $graph->colours($colours);
 
@@ -361,33 +378,38 @@ class ItalyClass
 
         asort($q2GraphSizeValues);
 
-        $q2GraphSizeUserShapes = collect($q2GraphSizeValues)->filter(function($item, $key) use($q2Sizelabels){
-            return $q2Sizelabels->contains($key);
-        })->map(function($item, $key) use($q2GraphSizeValues){
-            return [
-                /*[
-                    'line',
-                    'x1' => 'g0',
-                    'y1' => 'g'.(collect($q2GraphSizeValues)->keys()->search($key)+0.5),
-                    'x2' => 'g'.$item,
-                    'y2' => 'g'.(collect($q2GraphSizeValues)->keys()->search($key)+0.5),
-                    'stroke-width' => 2,
-                    'stroke' => '#842573',
-                    'depth' => 'above',
-                ],*/
-                [
-                    'circle',
-                    'cx' => 'g-1.5',
-                    'cy' => 'g'.(collect($q2GraphSizeValues)->keys()->search($key)+0.5),
-                    'r' => 10,
-                    'stroke' => '#FFF',
-                    'stroke-width' => 2,
-                    'depth' => 'above',
-                    'fill' => '#842573'
-                ]
-            ];
-        });
-        $graphSettings['shape'] = $q2GraphSizeUserShapes->flatten(1)->values()->toArray();
+        if($q2SizeAnswers->count()){
+            $q2GraphSizeUserShapes = collect($q2GraphSizeValues)->filter(function($item, $key) use($q2Sizelabels){
+                return $q2Sizelabels->contains($key);
+            })->map(function($item, $key) use($q2GraphSizeValues){
+                return [
+                    /*[
+                        'line',
+                        'x1' => 'g0',
+                        'y1' => 'g'.(collect($q2GraphSizeValues)->keys()->search($key)+0.5),
+                        'x2' => 'g'.$item,
+                        'y2' => 'g'.(collect($q2GraphSizeValues)->keys()->search($key)+0.5),
+                        'stroke-width' => 2,
+                        'stroke' => '#842573',
+                        'depth' => 'above',
+                    ],*/
+                    [
+                        'circle',
+                        'cx' => 'g-1.5',
+                        'cy' => 'g'.(collect($q2GraphSizeValues)->keys()->search($key)+0.5),
+                        'r' => 10,
+                        'stroke' => '#FFF',
+                        'stroke-width' => 2,
+                        'depth' => 'above',
+                        'fill' => '#842573'
+                    ]
+                ];
+            });
+            $graphSettings['shape'] = $q2GraphSizeUserShapes->flatten(1)->values()->toArray();
+        }else{
+            $graphSettings['shape'] = null;
+        }
+            
         $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q2GraphSizeValues)->count()*35+20, $graphSettings);
         $graph->colours($colours);
 
@@ -436,7 +458,8 @@ class ItalyClass
         $q2Sizebody .= "
             <p class='mt-4'>
                 The green bars provide a ranking of the business goals selected as drivers of adoption of Big Data solutions by survey respondents in your size band.<br>
-                The chart compares the average survey answers of your peers to your answers (violet dots).
+                The chart compares the average survey answers of your peers to your answers (violet dots).<br>
+                In case you did not provide any answer and/ or answered “Don’t know”, your answers (dots) are not displayed in the chart.
             </p>
         ";
         $questionSize2 = $q2Sizeheader.$q2Sizebody."<br>";
@@ -457,33 +480,37 @@ class ItalyClass
 
         asort($q2GraphIndustryValues);
 
-        $q2GraphIndustryUserShapes = collect($q2GraphIndustryValues)->filter(function($item, $key) use($q2Industrylabels){
-            return $q2Industrylabels->contains($key);
-        })->map(function($item, $key) use($q2GraphIndustryValues){
-            return [
-                /*[
-                    'line',
-                    'x1' => 'g0',
-                    'y1' => 'g'.(collect($q2GraphIndustryValues)->keys()->search($key)+0.5),
-                    'x2' => 'g'.$item,
-                    'y2' => 'g'.(collect($q2GraphIndustryValues)->keys()->search($key)+0.5),
-                    'stroke-width' => 2,
-                    'stroke' => '#e8ae38',
-                    'depth' => 'above',
-                ],*/
-                [
-                    'circle',
-                    'cx' => 'g-2',
-                    'cy' => 'g'.(collect($q2GraphIndustryValues)->keys()->search($key)+0.5),
-                    'r' => 10,
-                    'stroke' => '#FFF',
-                    'stroke-width' => 2,
-                    'depth' => 'above',
-                    'fill' => '#e8ae38'
-                ]
-            ];
-        });
-        $graphSettings['shape'] = $q2GraphIndustryUserShapes->flatten(1)->values()->toArray();
+        if($q2IndustryAnswers->count()){
+            $q2GraphIndustryUserShapes = collect($q2GraphIndustryValues)->filter(function($item, $key) use($q2Industrylabels){
+                return $q2Industrylabels->contains($key);
+            })->map(function($item, $key) use($q2GraphIndustryValues){
+                return [
+                    /*[
+                        'line',
+                        'x1' => 'g0',
+                        'y1' => 'g'.(collect($q2GraphIndustryValues)->keys()->search($key)+0.5),
+                        'x2' => 'g'.$item,
+                        'y2' => 'g'.(collect($q2GraphIndustryValues)->keys()->search($key)+0.5),
+                        'stroke-width' => 2,
+                        'stroke' => '#e8ae38',
+                        'depth' => 'above',
+                    ],*/
+                    [
+                        'circle',
+                        'cx' => 'g-2',
+                        'cy' => 'g'.(collect($q2GraphIndustryValues)->keys()->search($key)+0.5),
+                        'r' => 10,
+                        'stroke' => '#FFF',
+                        'stroke-width' => 2,
+                        'depth' => 'above',
+                        'fill' => '#e8ae38'
+                    ]
+                ];
+            });
+            $graphSettings['shape'] = $q2GraphIndustryUserShapes->flatten(1)->values()->toArray();
+        }else{
+            $graphSettings['shape'] = null;
+        }
         $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q2GraphIndustryValues)->count()*35+20, $graphSettings);
         $graph->colours($colours);
 
@@ -533,7 +560,8 @@ class ItalyClass
         $q2Industrybody .= "
             <p class='mt-4'>
                 The blue bars provide a ranking of the business goals selected as drivers of adoption of Big Data solutions by survey respondents in your industry.<br>
-                The chart compares the average survey answers of your peers to your answers (orange dots). 
+                The chart compares the average survey answers of your peers to your answers (orange dots).<br>
+                In case you did not provide any answer and/ or answered “Don’t know”, your answers (dots) are not displayed in the chart.
             </p>
         ";
 
@@ -654,7 +682,8 @@ class ItalyClass
         $q4Sizebody .= "
             <p class='mt-4'>
                 The green bars show the level of importance of business KPI measuring Big Data impacts according to survey respondents in your size band.<br>
-                The chart compares the average survey answers of your peers to your answers (violet dots).
+                The chart compares the average survey answers of your peers to your answers (violet dots).<br>
+                In case you did not provide any answer and/ or answered “Don’t know”, your answers (dots) are not displayed in the chart.
             </p>
         ";
 
@@ -759,7 +788,8 @@ class ItalyClass
         $q4Industrybody .= "
             <p class='mt-4'>
                 The blue bars show the level of importance of business KPI measuring Big Data impacts according to survey respondents in your industry.<br>
-                The chart compares the average survey answers of your peers to your answers (orange dots).
+                The chart compares the average survey answers of your peers to your answers (orange dots).<br>
+                In case you did not provide any answer and/ or answered “Don’t know”, your answers (dots) are not displayed in the chart.
             </p>
         ";
 
@@ -961,37 +991,41 @@ class ItalyClass
             return [$item['label'] => $q6aAnswers->get($key)];
         });
 
-        $q6GraphSizeUserShapes = collect($q6GraphSizeValues)->map(function($item, $key) use($q6aSizeAnswersLabels, $q6GraphSizeValues){
-            return [
-                /*[
-                    'line',
-                    'x1' => 'g0',
-                    'y1' => 'g'.(collect($q6GraphSizeValues)->keys()->search($key)+0.5),
-                    'x2' => 'g'.($q6aSizeAnswersLabels->get($key)),
-                    'y2' => 'g'.(collect($q6GraphSizeValues)->keys()->search($key)+0.5),
-                    'stroke-width' => 2,
-                    'stroke' => '#842573',
-                    'depth' => 'above',
-                ],*/
-                [
-                    'circle',
-                    'cx' => 'g'.($q6aSizeAnswersLabels->get($key)),
-                    'cy' => 'g'.(collect($q6GraphSizeValues)->keys()->search($key)+0.5),
-                    'r' => 10,
-                    'stroke' => '#FFF',
-                    'stroke-width' => 2,
-                    'depth' => 'above',
-                    'fill' => '#842573'
-                ],
-            ];
-        });
+        if($q6aAnswers->count()){
+            $q6GraphSizeUserShapes = collect($q6GraphSizeValues)->map(function($item, $key) use($q6aSizeAnswersLabels, $q6GraphSizeValues){
+                return [
+                    /*[
+                        'line',
+                        'x1' => 'g0',
+                        'y1' => 'g'.(collect($q6GraphSizeValues)->keys()->search($key)+0.5),
+                        'x2' => 'g'.($q6aSizeAnswersLabels->get($key)),
+                        'y2' => 'g'.(collect($q6GraphSizeValues)->keys()->search($key)+0.5),
+                        'stroke-width' => 2,
+                        'stroke' => '#842573',
+                        'depth' => 'above',
+                    ],*/
+                    [
+                        'circle',
+                        'cx' => 'g'.($q6aSizeAnswersLabels->get($key)),
+                        'cy' => 'g'.(collect($q6GraphSizeValues)->keys()->search($key)+0.5),
+                        'r' => 10,
+                        'stroke' => '#FFF',
+                        'stroke-width' => 2,
+                        'depth' => 'above',
+                        'fill' => '#842573'
+                    ],
+                ];
+            });
 
-        $graphSettings['shape'] = $q6GraphSizeUserShapes->flatten(1)->toArray();
+            $graphSettings['shape'] = $q6GraphSizeUserShapes->flatten(1)->toArray();            
+        }else{
+            $graphSettings['shape'] = null;
+        }
         // $graphSettings['axis_text_callback_y'] = function($value){
         //     return $value.'%';
         // };
         $graphSettings['grid_division_h'] = 3;
-        $graphSettings['axis_max_h'] = 50;
+        $graphSettings['axis_max_h'] = 20;
         $graphSettings['axis_text_callback_y'] = function($value){
             return $value.'%';
         };
@@ -1053,7 +1087,8 @@ class ItalyClass
         $q6aSizebody .= "
             <p class='mt-4'>
                 The green bars show the estimated business impacts of Big Data and Analytics according to the survey respondents in your size band.<br>
-                The chart compares the average survey answers of your peers to your answers (violet dots). 
+                The chart compares the average survey answers of your peers to your answers (violet dots).<br>
+                In case you did not provide any answer and/ or answered “Don’t know”, your answers (dots) are not displayed in the chart.
             </p>
         ";
 
@@ -1074,32 +1109,36 @@ class ItalyClass
             return [$item['label'] => $q6aAnswers->get($key)];
         });
 
-        $q6GraphIndustryUserShapes = collect($q6GraphIndustryValues)->map(function($item, $key) use($q6aIndustryAnswersLabels, $q6GraphIndustryValues){
-            return [
-                /*[
-                    'line',
-                    'x1' => 'g0',
-                    'y1' => 'g'.(collect($q6GraphIndustryValues)->keys()->search($key)+0.5),
-                    'x2' => 'g'.($q6aIndustryAnswersLabels->get($key)),
-                    'y2' => 'g'.(collect($q6GraphIndustryValues)->keys()->search($key)+0.5),
-                    'stroke-width' => 2,
-                    'stroke' => '#E6AD44',
-                    'depth' => 'above',
-                ],*/
-                [
-                    'circle',
-                    'cx' => 'g'.($q6aIndustryAnswersLabels->get($key)),
-                    'cy' => 'g'.(collect($q6GraphIndustryValues)->keys()->search($key)+0.5),
-                    'r' => 10,
-                    'stroke' => '#FFF',
-                    'stroke-width' => 2,
-                    'depth' => 'above',
-                    'fill' => '#E6AD44'
-                ],
-            ];
-        });
+        if($q6aAnswers->count()){
+            $q6GraphIndustryUserShapes = collect($q6GraphIndustryValues)->map(function($item, $key) use($q6aIndustryAnswersLabels, $q6GraphIndustryValues){
+                return [
+                    /*[
+                        'line',
+                        'x1' => 'g0',
+                        'y1' => 'g'.(collect($q6GraphIndustryValues)->keys()->search($key)+0.5),
+                        'x2' => 'g'.($q6aIndustryAnswersLabels->get($key)),
+                        'y2' => 'g'.(collect($q6GraphIndustryValues)->keys()->search($key)+0.5),
+                        'stroke-width' => 2,
+                        'stroke' => '#E6AD44',
+                        'depth' => 'above',
+                    ],*/
+                    [
+                        'circle',
+                        'cx' => 'g'.($q6aIndustryAnswersLabels->get($key)),
+                        'cy' => 'g'.(collect($q6GraphIndustryValues)->keys()->search($key)+0.5),
+                        'r' => 10,
+                        'stroke' => '#FFF',
+                        'stroke-width' => 2,
+                        'depth' => 'above',
+                        'fill' => '#E6AD44'
+                    ],
+                ];
+            });
 
-        $graphSettings['shape'] = $q6GraphIndustryUserShapes->flatten(1)->toArray();
+            $graphSettings['shape'] = $q6GraphIndustryUserShapes->flatten(1)->toArray();
+        }else{
+            $graphSettings['shape'] = null;
+        }
 
         $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q6GraphIndustryValues)->count()*40+20, $graphSettings);
         $graph->colours($colours);
@@ -1157,7 +1196,8 @@ class ItalyClass
         $q6aIndustrybody .= "
             <p class='mt-4'>
                 The blue bars show the estimated business impacts of Big Data and Analytics according to the survey respondents in your industry.<br>
-                The chart compares the average survey answers of your peers to your answers (orange dots).
+                The chart compares the average survey answers of your peers to your answers (orange dots).<br>
+                In case you did not provide any answer and/ or answered “Don’t know”, your answers (dots) are not displayed in the chart.
             </p>
         ";
 
@@ -1296,7 +1336,8 @@ class ItalyClass
         $q7Sizebody .= "
             <p class='mt-4'>
                 The green bars show how BDA improved (or not) the achievement of selected business impacts by survey respondents in your size band.<br>
-                The chart compares the average survey answers of your peers to your answers (violet dots). 
+                The chart compares the average survey answers of your peers to your answers (violet dots).<br>
+                In case you did not provide any answer and/ or answered “Don’t know”, your answers (dots) are not displayed in the chart.
             </p>
         ";
 
@@ -1362,7 +1403,8 @@ class ItalyClass
         })->toArray());
 
         $q7IndustryGraph = "
-        <div class='block my-2 mt-8'>
+        <p class='pb mb-6 italic'>Survey question: To what extent has your organisation’s deployment of Big Data and Analytics impacted the ability to attain the following business KPIs?</p>
+        <div class='block my-2'>
         	<span class='figure'>specific industry response: Impact on ability to achieve specific business impacts</span>
         	<div class='industrygraph'>
         		Industry selected: <span class='font-bold'>{$industryKeys[$industry]}</span>
@@ -1418,7 +1460,8 @@ class ItalyClass
         $q7Industrybody .= "
             <p class='mt-4'>
                 The blue bars show how BDA improved (or not) the achievement of selected business impacts by survey respondents in your industry.<br>
-                The chart compares the average survey answers of your peers to your answers (orange dots). 
+                The chart compares the average survey answers of your peers to your answers (orange dots).<br>
+                In case you did not provide any answer and/ or answered “Don’t know”, your answers (dots) are not displayed in the chart.
             </p>
         ";
 
@@ -2010,7 +2053,8 @@ class ItalyClass
         $q9Sizebody .= "
             <p class='mt-4'>
                 The green bars show the diffusion and status of implementation of Big Data Use Cases by survey respondents in your size band.<br>
-                The chart compares the average survey answers of your peers to your answers (violet dots). 
+                The chart compares the average survey answers of your peers to your answers (violet dots).<br>
+                In case you did not provide any answer and/ or answered “Don’t know”, your answers (dots) are not displayed in the chart.
             </p>
         ";
 
@@ -2167,7 +2211,8 @@ class ItalyClass
         $q9Industrybody .= "
             <p class='mt-4'>
                 The blue bars show the diffusion and status of implementation of Big Data Use Cases by survey respondents in your industry.<br>
-                The chart compares the average survey answers of your peers to your answers (orange dots).
+                The chart compares the average survey answers of your peers to your answers (orange dots).<br>
+                In case you did not provide any answer and/ or answered “Don’t know”, your answers (dots) are not displayed in the chart.
             </p>
         ";
 
