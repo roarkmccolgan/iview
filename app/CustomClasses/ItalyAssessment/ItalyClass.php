@@ -12,6 +12,7 @@ class ItalyClass
     public $organization = 'Organization';
     public $email = 'email';
     public $created_at = 'date';
+    public $completedAlready = false;
     public $questions;
     public $singleQuestions;
     public $singleQuestionsText;
@@ -29,75 +30,81 @@ class ItalyClass
             ]
         ]);
         try {
-            $assessment = Assessment::where('tool_id',session('product.id'))->where('uuid', $respondantUuid)->first();
-            if(!$assessment){
-                $answerRequest = $client->request('GET', '21eb/190309/data', [
-                    'query' => [
-                        'format' => 'json',
-                        'cond' => 'uuid=="'.$respondantUuid.'"'
-                    ]
-                ]);
-            }
-            
             $questionRequest = $client->request('GET', '21eb/190309/datamap', [
                 'query' => [
                     'format' => 'json',
                 ]
             ]);
+
+            $this->questions = collect(json_decode($questionRequest->getBody(), true))->only('questions')->flatten(1)->filter(function($item){
+                return isset($item['variables']) && isset($item['qtitle']);
+            })->pluck(['variables'])->flatten(1);
+
+            // response()->json($this->questions->toArray())->send();
+            // die();
+
+            $this->singleQuestions = $this->questions->mapWithKeys(function($item){
+                return [$item['label'] => $item['rowTitle']];
+            });
+            $this->singleQuestionsText = $this->questions->filter(function($item, $key){
+                return strpos($item['qlabel'], 's') === false;
+            })->mapWithKeys(function($item){
+                return [$item['label'] => $item['qtitle']];
+            });
+
         } catch (GuzzleHttp\Exception\RequestException $e) {
             return $e->getMessage();
         }
 
-        $this->questions = collect(json_decode($questionRequest->getBody(), true))->only('questions')->flatten(1)->filter(function($item){
-            return isset($item['variables']) && isset($item['qtitle']);
-        })->pluck(['variables'])->flatten(1);
-
-        // response()->json($this->questions->toArray())->send();
-        // die();
-
-        $this->singleQuestions = $this->questions->mapWithKeys(function($item){
-            return [$item['label'] => $item['rowTitle']];
-        });
-        $this->singleQuestionsText = $this->questions->filter(function($item, $key){
-            return strpos($item['qlabel'], 's') === false;
-        })->mapWithKeys(function($item){
-            return [$item['label'] => $item['qtitle']];
-        });
+        $assessment = Assessment::where('tool_id',session('product.id'))->where('uuid', $respondantUuid)->first();
 
         if(!$assessment){
+            $answerRequest = $client->request('GET', '21eb/190309/data', [
+                'query' => [
+                    'format' => 'json',
+                    'cond' => 'uuid=="'.$respondantUuid.'"'
+                ]
+            ]);
             $this->answer = collect(json_decode($answerRequest->getBody(), true))->first();
 
-            $assessment = new Assessment;
-            $assessment->tool_id = session('product.id');
-            $assessment->fname = $this->answer['q22r2'];
-            $assessment->lname = $this->answer['q22r3'];
-            $assessment->email = $this->answer['q22r4'];
-            $assessment->company = $this->answer['q22r1'];
-            $assessment->title = $this->answer['q22r6'];
+            $alreadyDoneAssessment = Assessment::where('tool_id',session('product.id'))->where('email', $this->answer['q22r4'])->first();
+            if($alreadyDoneAssessment){
+                $this->completedAlready = true;
+                $this->answer = $alreadyDoneAssessment->quiz;
+                $this->assessment = $alreadyDoneAssessment;
+            }else{
+                $assessment = new Assessment;
+                $assessment->tool_id = session('product.id');
+                $assessment->fname = $this->answer['q22r2'];
+                $assessment->lname = $this->answer['q22r3'];
+                $assessment->email = $this->answer['q22r4'];
+                $assessment->company = $this->answer['q22r1'];
+                $assessment->title = $this->answer['q22r6'];
 
-            $assessment->country = $this->answer['q22r5'];
-            $assessment->tel = null;
-            $assessment->referer = null;
-            $assessment->quiz = $this->answer;
-            $assessment->result = '[]';
-            $assessment->uuid = $respondantUuid;
-            $assessment->lang = session('locale') == '' ? 'en' : session('locale');
-            $assessment->save();
-            $this->assessment = $assessment;
+                $assessment->country = $this->answer['q22r5'];
+                $assessment->tel = null;
+                $assessment->referer = null;
+                $assessment->quiz = $this->answer;
+                $assessment->result = '[]';
+                $assessment->uuid = $respondantUuid;
+                $assessment->lang = session('locale') == '' ? 'en' : session('locale');
+                $assessment->save();
+                
+                $this->assessment = $assessment;
 
-            if ($utm) {
-                $tracker = Tracker::where('tool_id', session('product.id'))
-                ->where('code', session('utm'))->first();
-                if ($tracker) {
-                    $tracker->increment('completions');
-                    $assessment->code = session('utm');
-                    $assessment->save();
-                    $trackerHit = $tracker->trackerHits()->create([
-                        'type' => 'completion',
-                    ]);
+                if ($utm) {
+                    $tracker = Tracker::where('tool_id', session('product.id'))
+                    ->where('code', session('utm'))->first();
+                    if ($tracker) {
+                        $tracker->increment('completions');
+                        $assessment->code = session('utm');
+                        $assessment->save();
+                        $trackerHit = $tracker->trackerHits()->create([
+                            'type' => 'completion',
+                        ]);
+                    }
                 }
             }
-
         }else{
             $this->answer = $assessment->quiz;
             $this->assessment = $assessment;
@@ -2242,6 +2249,9 @@ class ItalyClass
     }
     public function getAssessment(){
         return $this->assessment;
+    }
+    public function getCompletedAlready(){
+        return $this->completedAlready;
     }
 
 	private function ordinal($number) {

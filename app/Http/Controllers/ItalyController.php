@@ -59,7 +59,7 @@ class ItalyController extends Controller
             }
         }
 
-        if($assessment->wasRecentlyCreated){
+        if($assessment->wasRecentlyCreated && !$italyClass->getCompletedAlready()){
             Mail::queue('tool.italyassessment.emails.echo', $data, function ($message) use ($assessment, $subject, $bcc) {
                 $message->from('notifications@mg.idcready.net', 'IDC Notifications');
                 $message->to($assessment['email'], $assessment['fname'].' '.$assessment['lname']);
@@ -107,7 +107,8 @@ class ItalyController extends Controller
                 }
             );
         }else{
-            $msg = "You were already sent an email, if you never received it and have checked your junk folder, please <a href='mailto:info@databench.eu?subject=Report Not Received' class='text-blue-800'>let us know</a>";
+            $msg = "You have either completed this assessment before or the email with a lint to your report has already been sent.<br><br>
+                You are only permitted to complete the survey once, if this is your first time and you never received your email notification and have checked your junk folder, please <a href='mailto:info@databench.eu?subject=Report Not Received' class='text-blue-800'>let us know</a>";
         }
         
         return view('tool.italyassessment.thankyou', ['msg'=>$msg ?? '', 'utm' => $utm]);
