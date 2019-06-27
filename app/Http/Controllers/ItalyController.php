@@ -22,7 +22,7 @@ class ItalyController extends Controller
         $utm = $request->utm;
         if ($utm) {
             $tracker = Tracker::where('tool_id', session('product.id'))
-                >where('code', $utm)->first();
+                ->where('code', $utm)->first();
             if ($tracker) {
                 $tracker->increment('views');
                 $trackerHit = $tracker->trackerHits()->create([
@@ -110,7 +110,7 @@ class ItalyController extends Controller
             $msg = "You were already sent an email, if you never received it and have checked your junk folder, please <a href='mailto:info@databench.eu?subject=Report Not Received' class='text-blue-800'>let us know</a>";
         }
         
-        return view('tool.italyassessment.thankyou', ['msg'=>$msg ?? '']);
+        return view('tool.italyassessment.thankyou', ['msg'=>$msg ?? '', 'utm' => $utm]);
     }
 
     public function pdf(Request $request)

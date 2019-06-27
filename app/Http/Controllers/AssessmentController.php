@@ -257,16 +257,18 @@ class AssessmentController extends Controller
                 }
             }
             unset($assessments[$assKey]['extra']);
-            foreach ($assessment['result'] as $resKey => $result) {
-                if ($resKey!='overall') {
-                    if ($result['rating']) {
-                        $assessments[$assKey][trans($tool->alias.'.'.$resKey.'.title')] = trans($tool->alias.'.'.$result['rating']);
-                    } else {
-                        $assessments[$assKey][trans($tool->alias.'.'.$resKey.'.title')] = "";
+            if(isset($assessment['result']) && $assessment['result'] != '[]'){
+                foreach ($assessment['result'] as $resKey => $result) {
+                    if ($resKey!='overall') {
+                        if ($result['rating']) {
+                            $assessments[$assKey][trans($tool->alias.'.'.$resKey.'.title')] = trans($tool->alias.'.'.$result['rating']);
+                        } else {
+                            $assessments[$assKey][trans($tool->alias.'.'.$resKey.'.title')] = "";
+                        }
                     }
                 }
+                unset($assessments[$assKey]['result']);
             }
-            unset($assessments[$assKey]['result']);
 
             if (isset($assessment['quiz']) && !is_null($assessment['quiz']) && $assessment['quiz']!='null' && (is_array($assessment['quiz']) || is_object($assessment['quiz']))) {
                 foreach ($assessment['quiz'] as $qKey => $q) {

@@ -57,8 +57,9 @@
 										@foreach($tool->urls as $url)
 											<?php
 											$langSec = $tracker->language_id !=1 ? '/'.$tracker->language->abbreviation:'';
+											$subPath = $url->sub_path ? '/'.$url->sub_path:'';
 											?>
-											<li>https://{{$url->subdomain.'.'.$url->domain.$langSec.'/?utm='.$tracker->code}}</li>
+											<li>https://{{$url->subdomain.'.'.$url->domain.$langSec.$subPath.'/?utm='.$tracker->code}}</li>
 										@endforeach
 										</ul>
 									</td>

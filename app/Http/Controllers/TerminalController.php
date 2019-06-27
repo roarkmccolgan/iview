@@ -25,7 +25,6 @@ class TerminalController extends Controller
     {
         //return Auth::user();
         $tool = $request->get('product');
-
         Analytics::setSiteId('ga:'.$tool->gapropertyid);
         $terminalQueries = Config::get('terminal.queries');
 
@@ -174,7 +173,6 @@ class TerminalController extends Controller
             }
         }
         //dd($analyticsResults);
-
         foreach ($tool->trackers as $tracker) {
             if ($analyticsResults[$tracker->code]) {
                 $tracker->setViews($analyticsResults[$tracker->code][0][0]);

@@ -63,11 +63,11 @@
 						@else
 						<input name="language" type="hidden" value="en">
 						@endif
-						<div class="col-md-12 checkbox">
+						{{-- <div class="col-md-12 checkbox">
 							<label>
 								<input name="active" type="checkbox" class="icheck" {{ !old('active') ? '':'checked' }}> Activate
 							</label>
-						</div>
+						</div> --}}
 						<div class="col-md-12">
 							<button type="submit" class="btn btn-primary">Save</button>
 							<button class="btn btn-default">Cancel</button>

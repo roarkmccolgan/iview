@@ -26,7 +26,7 @@ class AddTrackerRequest extends FormRequest
     {
         return [
             //'order_number'=>'required|unique:jobs|min:10|max:11',
-            'name'=>'required|min:5|max:255',
+            'name'=>'required|min:3|max:255',
             'code'=>'required|min:10',
         ];
     }

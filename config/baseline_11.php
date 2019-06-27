@@ -423,7 +423,7 @@ return [
             ],
         ],
         'tweet' => false,
-        'include_answers_in_download_report' => true,
+        'include_answers_in_download_report' => false,
         'notifications' => [
             'inline_report' => false
         ],
