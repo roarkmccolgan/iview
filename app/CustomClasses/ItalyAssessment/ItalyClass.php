@@ -68,6 +68,7 @@ class ItalyClass
             $this->answer = collect(json_decode($answerRequest->getBody(), true))->first();
 
             $alreadyDoneAssessment = Assessment::where('tool_id',session('product.id'))->where('email', $this->answer['q22r4'])->first();
+            
             if($alreadyDoneAssessment){
                 $this->completedAlready = true;
                 $this->answer = $alreadyDoneAssessment->quiz;
