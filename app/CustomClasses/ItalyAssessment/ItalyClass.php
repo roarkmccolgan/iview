@@ -81,6 +81,7 @@ class ItalyClass
                 $assessment->email = $this->answer['q22r4'];
                 $assessment->company = $this->answer['q22r1'];
                 $assessment->title = $this->answer['q22r6'];
+                $assessment->code = $utm;
 
                 $assessment->country = $this->answer['q22r5'];
                 $assessment->tel = null;
