@@ -11,7 +11,7 @@ $manifest = json_decode($json, TRUE);
     	<meta name="description" content="">
     	<meta name="author" content="">
 		<title>Report</title>
-		<link rel="stylesheet" href="{{ asset('bundle/'.$manifest['trendy'][1])}}">
+		<link rel="stylesheet" href="{{ asset('bundle/'.$manifest['trendy'][0])}}">
 	</head>
 	<body class="font-report font-light {{ $pdf ? 'text-xs' : '' }} text-grey-darker leading-normal">
 		@if(!$pdf)

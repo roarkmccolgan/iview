@@ -11,7 +11,7 @@ $manifest = json_decode($json, TRUE);
     	<meta name="description" content="">
     	<meta name="author" content="">
 		<title>Report</title>
-		<link rel="stylesheet" href="{{ asset('bundle/'.$manifest['antifreeze'][1])}}">
+		<link rel="stylesheet" href="{{ asset('bundle/'.$manifest['dassault'][0])}}">
 	</head>
 	<body class="font-report font-light text-xs text-grey-darker leading-normal">
 		<div class="w-5/6 mx-auto">
