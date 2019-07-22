@@ -35,6 +35,7 @@ return [
        'validation',
        'trend-micro-msp',
        'nttdatadx',
+       'dassault',
     ],
 
     /*

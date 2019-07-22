@@ -224,7 +224,7 @@ class ToolController extends Controller
         $totalQuestions = count($onlyQuestions);
         $return_visitor = $request->cookie('quiz_progress');
         $class = 'intro';
-        if ($tool->template=='nttsdwan' || $tool->template=='trendmicromssp' || $tool->template=='nttdata') {
+        if ($tool->template=='nttsdwan' || $tool->template=='trendmicromssp' || $tool->template=='nttdata' || $tool->template=='dassault') {
             $view = 'tool.'.session('template').'.assessment';
         } else {
             $view = 'tool.'.session('template').'.intro';

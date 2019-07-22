@@ -15,7 +15,7 @@ $manifest = json_decode($json, TRUE);
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <title>@yield('pagetitle',Lang::get('general.'.session('product.id').'title'))</title>
-    <link rel="stylesheet" href="{{ asset('bundle/'.$manifest['antifreeze'][1])}}">
+    <link rel="stylesheet" href="{{ asset('bundle/'.$manifest['antifreeze'][0])}}">
 
     <!-- Favicons -->
     <link rel="shortcut icon" href="/images/favicon.ico">
@@ -46,7 +46,7 @@ $manifest = json_decode($json, TRUE);
     
     @include('_layouts.footer')
     @section('pagescript')
-	<script src="{{ asset('bundle/'.$manifest['antifreeze'][0])}}"></script>
+	<script src="{{ asset('bundle/'.$manifest['antifreeze'][1])}}"></script>
     <script type="text/javascript" async=true>
         var elem = document.createElement('script');
         elem.src = 'https://quantcast.mgr.consensu.org/cmp.js';

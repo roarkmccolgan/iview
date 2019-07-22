@@ -2,10 +2,11 @@ var webpack = require('webpack');
 var path = require('path');
 var glob = require('glob');
 var CleanWebpackPlugin = require('clean-webpack-plugin');
-var ExtractTextPlugin = require("extract-text-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 var PurifyCSSPlugin = require('purifycss-webpack');
 var UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 var OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const VueLoaderPlugin = require('vue-loader/lib/plugin')
 var tailwindcss = require('tailwindcss');
 var inProduction = (process.env.NODE_ENV==='production');
 
@@ -25,7 +26,15 @@ module.exports = {
 			"babel-polyfill",
 			'./resources/assets/js/nttdata/main.js',
 			'./resources/assets/css/nttdata/main.css'
+		],
+		dassault: [
+			"babel-polyfill",
+			'./resources/assets/js/dassault/main.js',
+			'./resources/assets/css/dassault/main.css'
 		]
+	},
+	stats: {
+		children: false,
 	},
 	output: {
 		path: path.resolve(__dirname, './public/bundle'),
@@ -36,13 +45,25 @@ module.exports = {
 			{ test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" },
 			{
 				test: /\.css$/,
-				use: ExtractTextPlugin.extract({
-					fallback: "style-loader",
-					use: [
-						{ loader: 'css-loader', options: { importLoaders: 1 } },
-						'postcss-loader'
-					]
-				})
+				use: [
+					{
+						loader: MiniCssExtractPlugin.loader,
+						options: {
+				            hmr: process.env.NODE_ENV === 'development',
+				        },
+				    },
+				    'css-loader',
+				    {
+				        loader: 'postcss-loader'
+				    }
+			    ],
+				// use: ExtractTextPlugin.extract({
+				// 	fallback: "style-loader",
+				// 	use: [
+				// 		{ loader: 'css-loader', options: { importLoaders: 1 } },
+				// 		'postcss-loader'
+				// 	]
+				// })
 			},
 			{
 				test: /\.(png|jpg|gif|svg)$/,
@@ -69,7 +90,11 @@ module.exports = {
 		]
 	},
 	plugins: [
-		new ExtractTextPlugin("[name].[chunkhash].css"),
+		new VueLoaderPlugin(),
+		new MiniCssExtractPlugin({
+			path: path.resolve(__dirname, './public/bundle'),
+			filename: '[name].[chunkhash].css'
+		}),
 		new CleanWebpackPlugin(['./public/bundle'], {
 			root: __dirname,
 			verbose: true,
@@ -99,6 +124,9 @@ module.exports = {
 	    alias: {
 	      'vue$': 'vue/dist/vue.common.js' // 'vue/dist/vue.common.js' for webpack 1
 	    }
+	},
+	watchOptions: {
+	    ignored: '/node_modules'
 	}
 }
 if(inProduction){

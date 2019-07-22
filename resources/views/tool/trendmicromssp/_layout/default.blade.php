@@ -16,7 +16,7 @@ $manifest = json_decode($json, TRUE);
 
     <title>@yield('pagetitle',Lang::get('general.'.session('product.id').'title'))</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('bundle/'.$manifest['trendy'][1])}}">
+    <link rel="stylesheet" href="{{ asset('bundle/'.$manifest['trendy'][0])}}">
 
     <!-- Favicons -->
     <link rel="shortcut icon" href="images/favicon.ico">
@@ -33,7 +33,7 @@ $manifest = json_decode($json, TRUE);
     
     @include('_layouts.footer')
     @section('pagescript')
-	<script src="{{ asset('bundle/'.$manifest['trendy'][0])}}"></script>
+	<script src="{{ asset('bundle/'.$manifest['trendy'][1])}}"></script>
 	@show
 </body>
 </html>
