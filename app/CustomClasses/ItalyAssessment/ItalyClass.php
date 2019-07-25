@@ -1918,6 +1918,10 @@ class ItalyClass
         $q9SizeAnswerlabels = collect($this->singleQuestions)->filter(function($item, $key) use($q9SizeAnswers){
             return collect($q9SizeAnswers->keys())->contains($key);                
         });
+        // $test = $this->questions->filter(function($item){
+        //     return $item["vgroup"] == 'q9';
+        // });
+        // dd($test);
 
         //q9SizeGraph
         $colours = [
@@ -1940,16 +1944,15 @@ class ItalyClass
             return [$item => $q9SizeAnswerValues->get($item)];
         });
 
-
         $q9GraphSizeUserShapes = $q9SizeAnswerValues->map(function($item, $key) use($q9GraphSizeValues, $q9SizeAnswers, $q9SizeAnswerlabels, $q9AnswerKey, $q9SizeAnswerValues){
             $x = 0;
-            if($item<=2){
+            if($item>2){
                 $x = $q9GraphSizeValues[$q9AnswerKey[$item]][$key]/2;
             }
-            if($item==3){
+            if($item==2){
                 $x = $q9GraphSizeValues['Not interested, No Plans'][$key] + ($q9GraphSizeValues[$q9AnswerKey[$item]][$key]/2);
             }
-            if($item==4){
+            if($item==1){
                 $x = $q9GraphSizeValues['Not interested, No Plans'][$key] + $q9GraphSizeValues['Evaluating or Planning'][$key] + ($q9GraphSizeValues[$q9AnswerKey[$item]][$key]/2);
             }
             
@@ -1966,6 +1969,7 @@ class ItalyClass
                 ],
             ];
         });
+        //dd($q9GraphSizeUserShapes);
 
         $graphSettings['shape'] = $q9GraphSizeUserShapes->flatten(1)->values()->toArray();
 
@@ -2103,13 +2107,13 @@ class ItalyClass
 
         $q9GraphIndustryUserShapes = $q9IndustryAnswerValues->map(function($item, $key) use($q9GraphIndustryValues, $q9IndustryAnswers, $q9IndustryAnswerlabels, $q9AnswerKey, $q9IndustryAnswerValues){
             $x = 0;
-            if($item<=2){
+            if($item > 2){
                 $x = $q9GraphIndustryValues[$q9AnswerKey[$item]][$key]/2;
             }
-            if($item==3){
+            if($item == 2){
                 $x = $q9GraphIndustryValues['Not interested, No Plans'][$key] + ($q9GraphIndustryValues[$q9AnswerKey[$item]][$key]/2);
             }
-            if($item==4){
+            if($item == 1){
                 $x = $q9GraphIndustryValues['Not interested, No Plans'][$key] + $q9GraphIndustryValues['Evaluating or Planning'][$key] + ($q9GraphIndustryValues[$q9AnswerKey[$item]][$key]/2);
             }
             

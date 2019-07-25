@@ -8439,8 +8439,8 @@ $q8AnswerKey = collect([
 ]);
 
 $q9AnswerKey = collect([
-    1 => 'Not interested, No Plans',
-    2 => 'Not interested, No Plans',
-    3 => 'Evaluating or Planning',
-    4 => 'Using or Implementing',
+    1 => 'Using or Implementing',
+    2 => 'Evaluating or Planning',
+    3 => 'Not interested, No Plans',
+    4 => 'Not interested, No Plans',
 ]);
