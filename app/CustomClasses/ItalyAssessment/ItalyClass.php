@@ -2022,7 +2022,7 @@ class ItalyClass
                 <div class='float-right mr-2 w-4 h-4 leading-none' style='background-color: #ACCB32'>
                 </div>
                 <div class='float-right mr-4'>
-                    Not interested, No Plans
+                    Not interested, No Plans /<br> Interested, but No Plans
                 </div>
                 <div class='float-right mr-2 w-4 h-4 leading-none' style='background-color: #D9E89C'>
                 </div>
@@ -2182,7 +2182,7 @@ class ItalyClass
                 <div class='float-right mr-2 w-4 h-4 leading-none' style='background-color: #4196D2'>
                 </div>
                 <div class='float-right mr-4'>
-                    Not interested, No Plans
+                    Not interested, No Plans /<br> Interested, but No Plans
                 </div>
                 <div class='float-right mr-2 w-4 h-4 leading-none' style='background-color: #70B3E2'>
                 </div>
