@@ -29,7 +29,7 @@ return array(
     'email'=>[
         'subject' => 'DataBench Next Generation WAN Advisor',
         'hi' => 'Hi :Fname',
-        'body' => 'As promised, here\'s a link to download your DataBench Assessment Report.',
+        'body' => 'Thank you for taking the DataBench Survey. We\'ve noticed a bug in the survey tool which might have affected some of the reports generated.<br>Please click link below to download your updated report.',
         'link' => 'Download Report',
         'extra' => 'Once you\'ve read the report why not visit DataBench <a href="https://www.databench.eu/" style="color:#054683">www.databench.eu</a>',
         'regards' => 'Regards',
