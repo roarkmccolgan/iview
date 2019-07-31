@@ -8,7 +8,7 @@
 			class="flex:none sm:flex sm:flex-row"
 			:class="[question.optionLabels ? 'sm:flex-1' : 'sm:flex-col']"
 		>
-		<div v-for="(option, optKey) in options" :key="optKey" :data-index="optKey" :class="[question.optionLabels ? 'sm:flex-1 sm:text-center' : '']">
+		<div v-for="(option, optKey) in options" :key="option.value" :data-index="optKey" :class="[question.optionLabels ? 'sm:flex-1 sm:text-center' : '']">
 			<label class="mb-1 font-light rounded" :class="[inAnswer(option.label) ? activeClass : normalClass, question.optionLabels ? 'sm:inline-block p-2' : 'p-4']" tabindex="0" @keyup.space="$event.target.click()">
 				<input class="hidden" :type="multiple === false ? 'radio':'checkbox'" :name="multiple === false ? qname:qname+'[]'" :value="option.value" @change="selectOption(option.label, option.value, qname, $event.target.checked, option.type)">
 				<div class="flex items-center leading-none" :class="[question.optionLabels ? 'sm:flex-none' : '']">

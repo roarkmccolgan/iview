@@ -12,7 +12,7 @@
 		>
 		
 		<h2 v-show="label" :key="'head'" class="mb-2 font-light text-xl sm:text-2xl leading-tight">{{label}}</h2>
-		<div class="" v-for="(option, optKey) in options" :key="optKey" :data-index="optKey">
+		<div class="" v-for="(option, optKey) in options" :key="option.value" :data-index="optKey">
 			<label :class="inAnswer(option.label) ? activeClass : normalClass" tabindex="0" @keyup.space="$event.target.click()">
 				<input class="hidden" :type="multiple === false ? 'radio':'checkbox'" :name="multiple === false ? qname:qname+'[]'" :value="option.value" @change="selectOption(option.label, option.value, qname, $event.target.checked, option.type)">
 				<div class="flex items-baseline">
