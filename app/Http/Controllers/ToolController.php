@@ -166,6 +166,9 @@ class ToolController extends Controller
     public function run(Request $request, $subdomain)
     {
         $tool = $request->get('product');
+        if($tool->template=='nttsdwan'){
+            return view('tool.'.session('template').'.expired', ['tool'=>$tool]);
+        }
         $fields = Config::has('baseline_'.$tool->id.'.overall.default_fields') ? config('baseline_'.$tool->id.'.overall.default_fields') : config('terminal.default_fields');
         $extraFields = $tool->extra_fields()->get()->toArray();
         $languages = $tool->languages;
