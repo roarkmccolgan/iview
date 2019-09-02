@@ -1,54 +1,37 @@
 <?php
-//NTT
+//DASSAULT
 return [
     'overall' => [
         'baseline' => 27.60,
         'baseline' => 11,
 
-        'benchmark-country-fr' => 27.18,
-        'benchmark-country-de' => 27.54,
-        'benchmark-country-en' => 28.09,
+        'benchmark-country-fr' => 25.00,
+        'benchmark-country-de' => 25.00,
+        'benchmark-country-en' => 25.00,
+        'benchmark-country-us' => 25.00,
 
-        'benchmark-size-500-to-999' => 24.53,
-        'benchmark-size-1000-to-4999' => 27.63,
-        'benchmark-size-5000+' => 32.05,
+        'benchmark-size-1' => 8.00,
+        'benchmark-size-2-to-9' => 9.25,
+        'benchmark-size-10-to-49' => 16.00,
+        'benchmark-size-50-to-99' => 16.50,
+        'benchmark-size-100-to-249' => 16.50,
+        'benchmark-size-250-to-499' => 16.75,
+        'benchmark-size-500-to-999' => 17.00,
+        'benchmark-size-1000-or-more' => 0.00,
 
-        'benchmark-vertical-banking-other-financial-services' => 31.79,
-        'benchmark-vertical-insurance' => 28.99,
-        'benchmark-vertical-retail-trade' => 28.03,
-        'benchmark-vertical-wholesale-trade' => 24.88,
-        'benchmark-vertical-business-professional-services' => 26.51,
-        'benchmark-vertical-software-and-it-services' => 31.71,
-        'benchmark-vertical-telecoms' => 31.71,
-        'benchmark-vertical-media' => 26.62,
-        'benchmark-vertical-manufacturing' => 24.35,
-        'benchmark-vertical-transportation' => 27.94,
-        'benchmark-vertical-utilities-oil-gas' => 27.91,
-        'benchmark-vertical-private-education' => 24.52,
-        'benchmark-vertical-private-healthcare-service-providers' => 24.32,
-
-        'benchmark-country-fr' => 10.3,
-        'benchmark-country-de' => 10.9,
-        'benchmark-country-en' => 11.82,
-
-        'benchmark-size-500-to-999' => 8.63,
-        'benchmark-size-1000-to-4999' => 11.05,
-        'benchmark-size-5000+' => 18.42,
-
-        'benchmark-vertical-banking-other-financial-services' => 17.98,
-        'benchmark-vertical-insurance' => 13.32,
-        'benchmark-vertical-retail-trade' => 11.72,
-        'benchmark-vertical-wholesale-trade' => 8.82,
-        'benchmark-vertical-business-professional-services' => 9.73,
-        'benchmark-vertical-software-and-it-services' => 17.85,
-        'benchmark-vertical-media' => 9.79,
-        'benchmark-vertical-manufacturing' => 8.53,
-        'benchmark-vertical-transportation' => 11.57,
-        'benchmark-vertical-utilities-oil-gas' => 11.52,
-        'benchmark-vertical-private-education' => 8.62,
-        'benchmark-vertical-private-healthcare-service-providers' => 8.51,
-
-        
+        'benchmark-vertical-fsi' => 6.75,
+        'benchmark-vertical-manufacturing' => 8.00,
+        'benchmark-vertical-retail-wholesale' => 8.00,
+        'benchmark-vertical-communication' => 7.00,
+        'benchmark-vertical-media' => 7.00,
+        'benchmark-vertical-utilities' => 7.00,
+        'benchmark-vertical-transportation' => 7.00,
+        'benchmark-vertical-construction' => 7.50,
+        'benchmark-vertical-personal-services-leisure' => 8.75,
+        'benchmark-vertical-professional-services' => 10.00,
+        'benchmark-vertical-it-telecom-service-providers' => 8.50,
+        'benchmark-vertical-education' => 7.50,
+        'benchmark-vertical-healthcare' => 7.00,        
 
         'complete' => [
             'graph' => [

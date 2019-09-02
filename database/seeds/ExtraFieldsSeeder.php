@@ -12,8 +12,6 @@ class ExtraFieldsSeeder extends Seeder
      */
     public function run()
     {
-        
-
         DB::table('extra_fields')->insert([
             'tool_id' => '7',
             'name' => 'investment',

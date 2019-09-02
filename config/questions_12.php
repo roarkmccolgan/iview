@@ -27,27 +27,27 @@ return [
                         'options'=>[
                             [
                                 'label'=>'Not at all difficult',
-                                'value'=>1,
+                                'value'=>5,
                                 'checked'=>false,
                             ],
                             [
                                 'label'=>'Slightly difficult',
-                                'value'=>3,
+                                'value'=>4,
                                 'checked'=>false,
                             ],
                             [
                                 'label'=>'Moderately',
-                                'value'=>5,
+                                'value'=>3,
                                 'checked'=>false,
                             ],
                             [
                                 'label'=>'Difficult',
-                                'value'=>5,
+                                'value'=>2,
                                 'checked'=>false,
                             ],
                             [
                                 'label'=>'Very Difficult',
-                                'value'=>5,
+                                'value'=>1,
                                 'checked'=>false,
                             ]
                         ]
@@ -64,27 +64,27 @@ return [
                         'options'=>[
                             [
                                 'label'=>'Not at all difficult',
-                                'value'=>1,
+                                'value'=>5,
                                 'checked'=>false,
                             ],
                             [
                                 'label'=>'Slightly difficult',
-                                'value'=>3,
+                                'value'=>4,
                                 'checked'=>false,
                             ],
                             [
                                 'label'=>'Moderately',
-                                'value'=>5,
+                                'value'=>3,
                                 'checked'=>false,
                             ],
                             [
                                 'label'=>'Difficult',
-                                'value'=>5,
+                                'value'=>2,
                                 'checked'=>false,
                             ],
                             [
                                 'label'=>'Very Difficult',
-                                'value'=>5,
+                                'value'=>1,
                                 'checked'=>false,
                             ]
                         ]
@@ -759,7 +759,7 @@ return [
                                     ],
                                     [
                                         'label'=>'80-100%',
-                                        'value'=>5,
+                                        'value'=>4,
                                         'checked'=>false,
                                     ],
                                 ]
@@ -785,12 +785,12 @@ return [
                                     ],
                                     [
                                         'label'=>'60-79%',
-                                        'value'=>4,
+                                        'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
                                         'label'=>'80-100%',
-                                        'value'=>5,
+                                        'value'=>4,
                                         'checked'=>false,
                                     ],
                                 ]
@@ -801,12 +801,12 @@ return [
                                 'options'=>[
                                     [
                                         'label'=>'0-<20%',
-                                        'value'=>1,
+                                        'value'=>5,
                                         'checked'=>false,
                                     ],
                                     [
                                         'label'=>'20-39%',
-                                        'value'=>2,
+                                        'value'=>4,
                                         'checked'=>false,
                                     ],
                                     [
@@ -816,12 +816,12 @@ return [
                                     ],
                                     [
                                         'label'=>'60-79%',
-                                        'value'=>4,
+                                        'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
                                         'label'=>'80-100%',
-                                        'value'=>5,
+                                        'value'=>2,
                                         'checked'=>false,
                                     ],
                                 ]
@@ -832,12 +832,12 @@ return [
                                 'options'=>[
                                     [
                                         'label'=>'0-<20%',
-                                        'value'=>1,
+                                        'value'=>5,
                                         'checked'=>false,
                                     ],
                                     [
                                         'label'=>'20-39%',
-                                        'value'=>2,
+                                        'value'=>4,
                                         'checked'=>false,
                                     ],
                                     [
@@ -847,12 +847,12 @@ return [
                                     ],
                                     [
                                         'label'=>'60-79%',
-                                        'value'=>4,
+                                        'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
                                         'label'=>'80-100%',
-                                        'value'=>5,
+                                        'value'=>1,
                                         'checked'=>false,
                                     ],
                                 ]

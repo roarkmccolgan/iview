@@ -16,13 +16,11 @@
 					<h3 class="text-dassault-blue font-light leading-tight">{{ $t('dassault.sub-title') }}</h3>
 				</div>
 				<div class="flex items-center bg-white my-4 p-4 shadow-lg">
-					<div class="flex-1">
-						<div class="w-4/5" v-html="$t('dassault.landing')"></div>
+					<div class="w-3/5">
+						<div v-html="$t('dassault.landing')"></div>
 					</div>
-					<div class="">
-						<div class="text-center">
-							<router-link class="hidden sm:inline-block bg-dassault-blue hover:text-dassault-blue-light shadow-md text-white py-4 px-6 rounded no-underline" :to="'/questions/1'">{{ $t('dassault.startbut') }} <font-awesome-icon class="ml-2" :icon="icons.faArrowRight" /></router-link>
-						</div>
+					<div class="w-2/5 text-center">
+						<router-link class="hidden sm:inline-block mx-auto bg-dassault-blue hover:text-dassault-blue-light shadow-md text-white py-4 px-6 rounded no-underline" :to="'/questions/1'">{{ $t('dassault.startbut') }} <font-awesome-icon class="ml-2" :icon="icons.faArrowRight" /></router-link>
 					</div>
 				</div>
 			</div>
@@ -50,14 +48,14 @@
 				<div class="sm:w-1/2 px-3">
 					<div class="sm:flex bg-dassault-purple p-4">
 						<div class="sm:w-1/2 mr-4 mb-2 sm:mb-0">
-							<img class="block" :src="'https://dummyimage.com/268x201/fff/aaa'" alt="">
+							<img class="block shadow" :src="'/images/tools/' + assessment.tool.id + '/infobites.png'" alt="">
 						</div>
 						<div class="sm:flex sm:flex-col sm:w-1/2 text-sm">
 							<h3 class="leading-tight mb-2">{{ $t('dassault.driver-of') }}</h3>
 							<p class="mb-2 flex-grow">
 								{{ $t('dassault.an-infographic') }}
 							</p>
-							<a :href="'#'" target="_blank" class="block bg-white text-center border text-dassault-blue border-white hover:bg-white shadow py-2 px-4 rounded no-underline" @click="trackEvent('asset', 'download', 'Infographic_'+$i18n.locale)">{{ $t('dassault.download-now') }}</a>
+							<a :href="'/downloads/IDC_EUR145449199_Dassault_infobites'+ assessment.locale +'.pdf'" target="_blank" class="block bg-white text-center border text-dassault-blue border-white hover:bg-white shadow py-2 px-4 rounded no-underline" @click="trackEvent('asset', 'download', 'Infographic_'+$i18n.locale)">{{ $t('dassault.download-now') }}</a>
 						</div>
 					</div>		
 				</div>

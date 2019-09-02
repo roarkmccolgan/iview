@@ -1822,6 +1822,534 @@ class PdfController extends Controller
             $customCopy.= '<div class="spacer"></div>';
 
             $vars['sectionCopy'] = $customCopy;
+        } elseif(session('product.id')==12) { //Dassault
+            //User overall stage number and ordinal
+            $overallNumber = (int) filter_var(session('result.overall.rating'), FILTER_SANITIZE_NUMBER_INT);
+            $businessNumber =  (int) filter_var(session('result.digital-business.rating'), FILTER_SANITIZE_NUMBER_INT);
+            $designNumber =  (int) filter_var(session('result.digital-design.rating'), FILTER_SANITIZE_NUMBER_INT);
+            $deliveryNumber =  (int) filter_var(session('result.digital-delivery.rating'), FILTER_SANITIZE_NUMBER_INT);
+            
+
+            $vars['introduction'] = trans(
+                session('product.alias').'.introduction',
+                [
+                    'result'=>trans(session('product.alias').'.'.session('result.overall.rating')),
+                    'image'=>asset('images/tools/12/descriptions'.session('locale').'.png'),
+                ]
+            );
+
+            $customCopy = '';
+
+            //overall
+            $rating = session('result.overall.rating');
+            $settings = [
+                'use_iconv'=> false,
+                'back_image'=>asset('images/tools/12/comparisonbg'.session('localeUrl').'.png?id=1'),
+                'back_image_width'=> 570,
+                'back_image_height'=> 320,
+                'pad_top'=>45,
+                'pad_right'=>0,
+                'pad_bottom'=>23,
+                'pad_left'=>114,
+                'back_colour' => 'none',
+                'stroke_colour' => 'none',
+                'back_stroke_width' => 0, 'back_stroke_colour' => 'none',
+                'show_axes' => false,
+                'axis_max_h' => 30,
+                'axis_min_h' => 0,
+                'axis_stroke_width' => 1,
+                'axis_colour' => '#efefef',
+                'axis_text_colour' => '#999',
+                'axis_overlap' => 2,
+                'axis_font' => 'Frutiger Neue LT W1G', 'axis_font_size' => 12,
+                'bar_space' => 20,
+                'group_space' => 1,
+                'grid_colour' => 'none',
+                'show_data_labels' => false,
+                'data_label_colour' => 'white',
+                'data_label_font_size' => 14,
+                'data_label_outline_thickness' => 1,
+                'data_label_back_colour' => 'rgba(0,0,0,0.2)',
+                'data_label_space' => '6',
+                'label_colour' => '#000',
+
+                'link_base' => '/',
+                'link_target' => '_top',
+                'minimum_grid_spacing' => 20,
+                'structured_data' => true,
+                'structure' => [
+                    'key' => 'label',
+                    'value' => 'score',
+                    'colour' => 'colour'
+                ]
+            ];
+
+            $base = config('baseline_'.session('product.id').'.overall');
+            $comparisons = ['industry'];
+            
+            $vertical_base = $base['baseline'];
+            $verticals = [
+                'fsi' => 'Banking/insurance/financial services',
+                'manufacturing' => 'Manufacturing',
+                'retail-wholesale' => 'Retail/wholesale',
+                'communication' => 'Communication',
+                'media' => 'Media (TV, radio, press)',
+                'utilities' => 'Utilities',
+                'transportation' => 'Transportation',
+                'construction' => 'Construction',
+                'personal-services-leisure' => 'Personal services/leisure',
+                'professional-services' => 'Professional services (real estate, accountancy, advertising, business consultancy, recruitment, etc.)',
+                'it-telecom-service-providers' => 'IT/telecom service providers',
+                'education' => 'Education',
+                'healthcare' => 'Healthcare',
+            ];
+            if (collect($verticals)->contains(strtolower(session('user.extra.industry')))) {
+                $vertical_base = $base['benchmark-vertical-'.array_search(strtolower(session('user.extra.industry')), $verticals)];
+            }
+
+            $organisation_base = $base['baseline'];
+            $orgsizes = [
+                '1' => '1',
+                '2-to-9' => '2 to 9',
+                '10-to-49' => '10 to 49',
+                '50-to-99' => '50 to 99',
+                '100-to-249' => '100 to 249',
+                '250-to-499' => '250 to 499',
+                '500-to-999' => '500 to 999',
+                '1000-or-more' => '1000 or more',
+            ];
+            if (collect($orgsizes)->contains(session('user.extra.company_size'))) {
+                $comparisons[] = 'company';
+                $organisation_base = $base['benchmark-size-'.array_search(session('user.extra.company_size'), $orgsizes)];
+            }
+
+            $geographic_base = $base['baseline'];
+            $countries = ['en'=>'United Kingdom','fr'=>'France','de'=>'Germany'];
+            if (collect($countries)->contains(session('user.country'))) {
+                $comparisons[] = 'country';
+                $geographic_base = $base['benchmark-country-'.array_search(session('user.country'), $countries)];
+            }
+            $comparisons = collect($comparisons);
+
+            
+            //Mean Calculation for user
+            $user_score = 0;
+            $actual_score = session('result.overall.score');
+            switch (session('result.overall.rating')) {
+                case 'stage1':
+                    $user_score = (($actual_score - 9)*10)/18;
+                    break;
+                case 'stage2':
+                    $user_score = ((($actual_score - 27)*10)/6)+10;
+                    break;
+                case 'stage3':
+                    $user_score = ((($actual_score - 33)*10)/12)+20;
+                    break;
+            }
+            if ($user_score<0.5) {
+                $user_score = 0.5;
+            }
+            if ($user_score>9.5 && $user_score<10) {
+                $user_score = 9.5;
+            }
+            if ($user_score>=10 && $user_score<10.5) {
+                $user_score = 10.5;
+            }
+            if ($user_score>19.5 && $user_score<20) {
+                $user_score = 19.5;
+            }
+            if ($user_score>=20 && $user_score<20.5) {
+                $user_score = 20.5;
+            }
+
+            $values = [];
+            $graphbg = 'comparisonbg'.session('locale');
+            $graphHeight = 320;
+
+            if ($comparisons->count()==3) {
+                $values[] = [
+                    'label' => 'Geographic Region',
+                    'score' => $geographic_base,
+                    'colour' => '#A2BBCF'
+                ];
+                $values[] = [
+                    'label' => 'Organizasion Size',
+                    'score' => $organisation_base,
+                    'colour' => '#A2BBCF'
+                ];
+                $values[] = [
+                    'label' => 'Industry',
+                    'score' => $vertical_base,
+                    'colour' => '#A2BBCF'
+                ];
+            }
+            if ($comparisons->count()==2 && $comparisons->contains('country')) {
+                $values[] = [
+                    'label' => 'Geographic Region',
+                    'score' => $geographic_base,
+                    'colour' => '#A2BBCF'
+                ];
+                $values[] = [
+                    'label' => 'Industry',
+                    'score' => $vertical_base,
+                    'colour' => '#A2BBCF'
+                ];
+                $graphHeight = 270;
+                $graphbg = 'comparisonbg_industry_geography'.session('locale');
+            }
+            if ($comparisons->count()==2 && $comparisons->contains('company')) {
+                $values[] = [
+                    'label' => 'Organizasion Size',
+                    'score' => $organisation_base,
+                    'colour' => '#A2BBCF'
+                ];
+                $values[] = [
+                    'label' => 'Industry',
+                    'score' => $vertical_base,
+                    'colour' => '#A2BBCF'
+                ];
+                $graphHeight = 270;
+                $graphbg = 'comparisonbg_industry_company'.session('locale');
+            }
+            if ($comparisons->count()==1) {
+                $values[] = [
+                    'label' => 'Industry',
+                    'score' => $vertical_base,
+                    'colour' => '#A2BBCF'
+                ];
+                $graphHeight = 220;
+                $graphbg = 'comparisonbg_industry'.session('locale');
+            }
+
+            $values[] = [
+                    'label' => 'Peer Overall Cloud Adoption',
+                    'score' => $base['baseline'],
+                    'colour' => '#A2BBCF'
+                ];
+            $values[] = [
+                    'label' => 'Your Overall Cloud Adoption',
+                    'score' => $user_score,
+                    'colour' => '#132E44'
+                ];
+
+            $settings['back_image'] = asset('images/tools/12/'.$graphbg.'.png');
+            $settings['back_image_height'] = $graphHeight;
+
+            $graph = new \Goat1000\SVGGraph\SVGGraph(570, $graphHeight, $settings);
+            $colours = [['#A2BBCF'], ['#132E44']];
+            $graph->colours($colours);
+            $graph->values($values);
+            $graph = $graph->Fetch('HorizontalBarGraph', false);
+
+            $customCopy.= trans(
+                session('product.alias').'.overallintro',
+                [
+                    'image'=>asset('/images/tools/12/graph'.$rating.session('locale').'.png'),
+                    'icon'=>asset('/images/tools/12/overallicon.png'),
+                ]
+            );
+
+            $customCopy.= trans(
+                session('product.alias').'.overall'.$rating,
+                [
+                    'position'=>trans(session('product.alias').'.'.$rating),
+                    'stage'=>$overallNumber,
+                ]
+            );
+
+            $customCopy.= trans(
+                session('product.alias').'.overallgraph',
+                [
+                    'graph'=>$graph,
+                ]
+            );
+
+            $customCopy.= trans(session('product.alias').'.overalloutro'.$rating);
+
+            //Digital Business
+
+            $customCopy.= trans(
+                session('product.alias').'.digital-business-intro',
+                [
+                    'icon'=>asset('/images/tools/12/infrastructureicon.png')
+                ]
+            );
+
+            $customCopy.= trans(session('product.alias').'.digital-business-'.$businessNumber.'-'.$rating);
+
+            //Digital Business graph
+            /*$settings['bar_space'] = 10;
+            $settings['back_image'] = asset('images/tools/12/comparison_infrastructure'.session('locale').'.png');
+            $settings['back_image_height'] = 138;
+            $settings['axis_max_h'] = 30;
+
+            $graphinfrastructure = new \Goat1000\SVGGraph\SVGGraph(570, 138, $settings);
+            $base = config('baseline_'.session('product.id').'.infrastructure');
+
+            $user_score = session('result.infrastructure.score');
+            switch (session('result.infrastructure.rating')) {
+                case 'stage1':
+                    $user_score = (($user_score - 3)*10)/6;
+                    break;
+                case 'stage2':
+                    $user_score = ((($user_score - 9)*10)/3)+10;
+                    break;
+                case 'stage3':
+                    $user_score = ((($user_score - 11)*10)/4)+20;
+                    break;
+            }
+            if ($user_score<0.5) {
+                $user_score = 0.5;
+            }
+            if ($user_score>9.5 && $user_score<10) {
+                $user_score = 9.5;
+            }
+            if ($user_score>=10 && $user_score<10.5) {
+                $user_score = 10.5;
+            }
+            if ($user_score>19.5 && $user_score<20) {
+                $user_score = 19.5;
+            }
+            if ($user_score>=20 && $user_score<20.5) {
+                $user_score = 20.5;
+            }
+
+             $values = [
+                [
+                    'label' => 'Infrastructure Performance',
+                    'score' => $base['baseline'],
+                    'colour' => '#A2BBCF'
+                ],
+                [
+                    'label' => 'User Infrastructure Performance',
+                    'score' => $user_score,
+                    'colour' => '#132E44'
+                ],
+             ];
+
+             $graphinfrastructure->colours($colours);
+             $graphinfrastructure->values($values);
+             $graphinfrastructure = $graphinfrastructure->Fetch('HorizontalGroupedBarGraph', false);
+             $customCopy.= trans(
+                 session('product.alias').'.infrastructuregraph',
+                 [
+                    'graph' => $graphinfrastructure,
+                 ]
+             );*/
+
+            $customCopy.= trans(session('product.alias').'.question1');
+            $q1score = $this->getQuestionScoreNew(1, 'digital-business', 1);
+            $customCopy.= trans(session('product.alias').'.digital-business-'.$overallNumber.'-q1-'.$q1score);
+
+            $q2score = $this->getQuestionScoreNew(2, 'digital-business', 2);
+            $customCopy.= trans(session('product.alias').'.digital-business-'.$overallNumber.'-q2-'.$q2score);
+            
+            $q3score = $this->getQuestionScoreNew(3, 'digital-business', 3);
+            if($q3score < 2){
+                $customCopy.= trans(session('product.alias').'.digital-business-'.$overallNumber.'-q3-1');
+            }elseif($q3score == 2){
+                $customCopy.= trans(session('product.alias').'.digital-business-'.$overallNumber.'-q3-2');
+            }elseif($q3score == 3){
+                $customCopy.= trans(session('product.alias').'.digital-business-'.$overallNumber.'-q3-3');
+            }elseif($q3score >= 4){
+                $customCopy.= trans(session('product.alias').'.digital-business-'.$overallNumber.'-q3-4');
+            }
+
+            $q4score = $this->getQuestionScoreNew(4, 'digital-business', 4);
+            if($q4score < 2){
+                $customCopy.= trans(session('product.alias').'.digital-business-'.$overallNumber.'-q4-1');
+            }elseif($q4score == 2){
+                $customCopy.= trans(session('product.alias').'.digital-business-'.$overallNumber.'-q4-2');
+            }elseif($q4score == 3){
+                $customCopy.= trans(session('product.alias').'.digital-business-'.$overallNumber.'-q4-3');
+            }elseif($q4score >= 4){
+                $customCopy.= trans(session('product.alias').'.digital-business-'.$overallNumber.'-q4-4');
+            }
+
+            $customCopy.= '<div class="pb"></div>';
+
+            //Digital Design
+            $customCopy.= trans(
+                session('product.alias').'.digital-designintro',
+                [
+                    'icon'=>asset('/images/tools/12/intelligenceicon.png')
+                ]
+            );
+
+            $customCopy.= trans(session('product.alias').'.digital-design-'.$designNumber.'-'.$rating);
+
+            //Digital Design graph
+            /*$settings['back_image'] = asset('images/tools/12/comparison_intelligence'.session('locale').'.png');
+            $settings['back_image_height'] = 138;
+            $settings['axis_max_h'] = 30;
+
+            $graphintelligence = new \Goat1000\SVGGraph\SVGGraph(570, 138, $settings);
+            $base = config('baseline_'.session('product.id').'.intelligence');
+
+            $user_score = session('result.intelligence.score');
+            switch (session('result.intelligence.rating')) {
+                case 'stage1':
+                    $user_score = (($user_score - 3)*10)/6;
+                    break;
+                case 'stage2':
+                    $user_score = ((($user_score - 9)*10)/3)+10;
+                    break;
+                case 'stage3':
+                    $user_score = ((($user_score - 11)*10)/4)+20;
+                    break;
+            }
+            if ($user_score<0.5) {
+                $user_score = 0.5;
+            }
+            if ($user_score>9.5 && $user_score<10) {
+                $user_score = 9.5;
+            }
+            if ($user_score>=10 && $user_score<10.5) {
+                $user_score = 10.5;
+            }
+            if ($user_score>19.5 && $user_score<20) {
+                $user_score = 19.5;
+            }
+            if ($user_score>=20 && $user_score<20.5) {
+                $user_score = 20.5;
+            }
+
+            $values = [
+                [
+                    'label' => 'Intelligence Performance',
+                    'score' => $base['baseline'],
+                    'colour' => '#A2BBCF'
+                ],
+                [
+                    'label' => 'User Intelligence Performance',
+                    'score' => $user_score,
+                    'colour' => '#132E44'
+                ],
+             ];
+
+            $graphintelligence->colours($colours);
+            $graphintelligence->values($values);
+            $graphintelligence = $graphintelligence->Fetch('HorizontalGroupedBarGraph', false);
+            $customCopy.= trans(
+                session('product.alias').'.intelligencegraph',
+                [
+                    'graph' => $graphintelligence,
+                ]
+            );*/
+            
+            $q5score = $this->getQuestionScoreNew(5, 'digital-design', 1);
+            $customCopy.= trans(session('product.alias').'.digital-design-'.$overallNumber.'-q5-'.$q5score);
+
+            $q6score = $this->getQuestionScoreNew(6, 'digital-design', 2);
+            $customCopy.= trans(session('product.alias').'.digital-design-'.$overallNumber.'-q6-'.$q6score);
+
+            $q7score = $this->getQuestionScoreNew(7, 'digital-design', 3);
+            $customCopy.= trans(session('product.alias').'.digital-design-'.$overallNumber.'-q7-'.$q7score);
+
+            $customCopy.= '<div class="pb"></div>';
+
+            //Digital Delivery
+            $customCopy.= trans(
+                session('product.alias').'.digital-deliveryintro',
+                [
+                    'icon'=>asset('/images/tools/12/operationsicon.png')
+                ]
+            );
+
+            $customCopy.= trans(session('product.alias').'.digital-delivery-'.$deliveryNumber.'-'.$rating);
+
+            //operations graph
+            /*$settings['back_image'] = asset('images/tools/12/comparison_operations'.session('locale').'.png');
+            $settings['back_image_height'] = 138;
+            $settings['axis_max_h'] = 30;
+
+            $graphoperations = new \Goat1000\SVGGraph\SVGGraph(570, 138, $settings);
+            $base = config('baseline_'.session('product.id').'.operations');
+
+            $user_score = session('result.operations.score');
+            switch (session('result.operations.rating')) {
+                case 'stage1':
+                    $user_score = (($user_score - 3)*10)/6;
+                    break;
+                case 'stage2':
+                    $user_score = ((($user_score - 9)*10)/3)+10;
+                    break;
+                case 'stage3':
+                    $user_score = ((($user_score - 11)*10)/4)+20;
+                    break;
+            }
+            if ($user_score<0.5) {
+                $user_score = 0.5;
+            }
+            if ($user_score>9.5 && $user_score<10) {
+                $user_score = 9.5;
+            }
+            if ($user_score>=10 && $user_score<10.5) {
+                $user_score = 10.5;
+            }
+            if ($user_score>19.5 && $user_score<20) {
+                $user_score = 19.5;
+            }
+            if ($user_score>=20 && $user_score<20.5) {
+                $user_score = 20.5;
+            }
+
+            $values = [
+                [
+                    'label' => 'Operations Performance',
+                    'score' => $base['baseline'],
+                    'colour' => '#A2BBCF'
+                ],
+                [
+                    'label' => 'User Operations Performance',
+                    'score' => $user_score,
+                    'colour' => '#132E44'
+                ],
+             ];
+
+            $graphoperations->colours($colours);
+            $graphoperations->values($values);
+            $graphoperations = $graphoperations->Fetch('HorizontalGroupedBarGraph', false);
+            $customCopy.= trans(
+                session('product.alias').'.operationsgraph',
+                [
+                    'graph' => $graphoperations,
+                ]
+            );*/
+            
+            $q8score = $this->getQuestionScoreNew(8, 'digital-delivery', 1);
+            $customCopy.= trans(session('product.alias').'.digital-delivery-'.$overallNumber.'-q8-'.$q8score);
+
+            $q9score = $this->getQuestionScoreNew(9, 'digital-delivery', 2);
+            $customCopy.= trans(session('product.alias').'.digital-delivery-'.$overallNumber.'-q9-'.$q9score);
+
+            $q10score = $this->getQuestionScoreNew(10, 'digital-delivery', 3);
+            $customCopy.= trans(session('product.alias').'.digital-delivery-'.$overallNumber.'-q10-'.$q10score);
+
+            $customCopy.= '<div class="pb"></div>';
+
+            //Conclusion
+            $customCopy.= trans(
+                session('product.alias').'.conclusionintro',
+                [
+                    'icon'=>asset('/images/tools/12/conclusionicon.png')
+                ]
+            );
+
+            // $customCopy.= trans(session('product.alias').'.guidance');
+            // if ($q3score == 1 || $q3score == 2) {
+            //     $customCopy.= trans(session('product.alias').'.guidance-q3-1-2');
+            // }
+            // if ($q3score == 3 || $q3score == 4) {
+            //     $customCopy.= trans(session('product.alias').'.guidance-q3-3-4');
+            // }
+            // if ($q3score == 5) {
+            //     $customCopy.= trans(session('product.alias').'.guidance-q3-5');
+            // }
+
+            $customCopy.= '<div class="spacer"></div>';
+
+            $vars['sectionCopy'] = $customCopy;
         } else {
             foreach (config('baseline_'.session('product.id')) as $section => $values) {
                 preg_match_all('/\d+/', session('result.'.$section.'.rating'), $matches);
@@ -2008,7 +2536,22 @@ class PdfController extends Controller
         ->setOption('footer-html', session('url').'/'.session('localeUrl').'template/'.session('template').'/report/footer')
         ->setOption('footer-spacing', 2)
         ->setOption('replace', $headervars);
-        if (session('product.id')==10) {
+         if (session('product.id')==12) {
+            //$pdf->setOption('cover',session('url').'/'.session('localeUrl').'template/'.session('template').'/report/cover');
+            $timeStamp = time();
+            $pdf->save(storage_path().'/dassault-'.$timeStamp.'.pdf');
+
+            $merge = new \Nextek\LaraPdfMerger\PdfManage;
+            $locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
+
+            $merge->addPDF(storage_path().'/dassault_cover'.$locale .'.pdf', 'all');
+            $merge->addPDF(storage_path().'/dassault-'.$timeStamp.'.pdf', 'all');
+
+            $merge->merge('browser', storage_path().'/reports/dassault-'.$timeStamp.'.pdf', 'P');
+            if (File::exists(storage_path().'/dassault-'.$timeStamp.'.pdf')) {
+                File::delete(storage_path().'/dassault-'.$timeStamp.'.pdf');
+            }
+        }elseif (session('product.id')==10) {
             //$pdf->setOption('cover',session('url').'/'.session('localeUrl').'template/'.session('template').'/report/cover');
             $timeStamp = time();
             //return $pdf->inline('invoice.pdf');

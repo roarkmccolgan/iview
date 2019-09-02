@@ -11,7 +11,7 @@ $manifest = json_decode($json, TRUE);
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<title>PDF Report</title>
-	<link rel="stylesheet" href="{{ asset('bundle/'.$manifest['trendy'][1])}}">
+	<link rel="stylesheet" href="{{ asset('bundle/'.$manifest['trendy'][0])}}">
 </head>
 <body>
 <div class="w-5/6 mx-auto border-t border-grey"></div>

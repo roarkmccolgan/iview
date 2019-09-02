@@ -1,6 +1,6 @@
 @extends('tool.'.session('template').'._layout.default')
 
-@section('pagetitle', Lang::get('general.'.$tool->id.'title'))
+@section('pagetitle', Lang::get('dassault.title'))
 
 
 @section('head')

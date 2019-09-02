@@ -243,6 +243,7 @@ class ToolController extends Controller
             'utm' => session('utm'),
             'localeUrl' => session('localeUrl'),
             'result' => $request->session()->has('result') ? session('result') : null,
+            'stage' => $request->session()->has('result') ? trans(session('product.alias').'.'.session('result.overall.rating')) : null,
             ]);
 
         return view($view, compact('tool', 'return_visitor', 'class'));

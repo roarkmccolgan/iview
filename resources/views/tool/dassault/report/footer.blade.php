@@ -11,16 +11,16 @@ $manifest = json_decode($json, TRUE);
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<title>PDF Report</title>
-	<link rel="stylesheet" href="{{ asset('bundle/'.$manifest['antifreeze'][1])}}">
+	<link rel="stylesheet" href="{{ asset('bundle/'.$manifest['dassault'][0])}}">
 </head>
 <body>
-<div class="w-5/6 mx-auto border-t border-ntt-blue"></div>
+<div class="w-5/6 mx-auto border-t border-dassault-blue"></div>
 <div class="w-5/6 mx-auto pt-6 clearfix">
-	<div class="float-left w-2/3 mb-6 text-ntt-blue text-xs">
-		<strong>{{ trans('ntt-sdwan.title') }}</strong><br/> {{ trans('ntt-sdwan.sub-title') }}
+	<div class="float-left w-2/3 mb-6 text-dassault-blue text-xs">
+		<strong>{{ trans('dassault.title') }}</strong><br/> {{ trans('dassault.sub-title') }}
 	</div>
 	<div class="float-left w-1/3 mb-6 text-right">
-		<img class="" src="{{ asset('images/tools/8/ntt.png')}}" alt="" style="width: 40mm" />
+		<img class="" src="{{ asset('images/tools/12/dassault.png')}}" alt="" style="width: 40mm" />
 	</div>
 </div>
 </body>

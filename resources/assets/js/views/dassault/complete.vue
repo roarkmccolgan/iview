@@ -7,14 +7,15 @@
 		<div class="container mx-auto bg-white border-t border-b mt-6 p-8 sm:border sm:rounded shadow text-grey-darker">
 			<div class="flex flex-wrap justify-center">
 				<div class="w-full sm:w-1/2 relative">
-					<div v-html="$t('dassault.finishtxt', { image: '/images/tools/' + assessment.tool.id + '/graph' + rating  + assessment.locale +'.png'})">
-						
-					</div>
-					<div class="p-2 bg-blue-lightest" v-for="(result, key) in theResult">
-						<h4 class="mb-2">{{ key }}:</h4>
-						<div class="">Score - {{ result.score }}</div>
-						<div class="mb-4">Rating -{{ result.rating }}</div>
-					</div>					
+					<h2 class="font-light leading-tight mb-4 text-dassault-blue">{{ $t('dassault.finishtxtheading') }}</h2>
+					<p>
+						{{ $t('dassault.finishtxt1') }}: <strong class="inline font-bold text-lg text-dassault-blue">{{ stage }}</strong>
+					</p>
+					<p class="mb-2">
+						{{ $t('dassault.finishtxt'+theResult['overall'].rating) }}
+					</p>
+					<p v-html="$t('dassault.finishtxt2')"></p>
+					<img class="max-w-full" :src="'/images/tools/' + assessment.tool.id + '/report'+ assessment.locale +'.png'" alt="">
 				</div>
 				<div class="w-full sm:w-1/2">
 					<div class="sm:ml-8">
@@ -88,16 +89,49 @@
 										<div class="inline-block relative w-full mb-2">
 											<select class="block appearance-none w-full bg-grey-lighter border text-grey-darker py-3 px-4 pr-8 rounded" :class="[errors.size ? 'border-red' : '']" id="company_size" name="extra[company_size]" @blur="hasError">
 												<option value="" v-html="$t('general.pleaseselect')"></option>
-												<option value="Fewer than 500" v-html="$t('general.less-than-500')"></option>
-												<option value="500 to 999" v-html="$t('general.500-to-999')"></option>
-												<option value="1,000 to 4,999" v-html="$t('general.1000-to-4999')"></option>
-												<option value="5,000 or more" v-html="$t('general.more-than-5000')"></option>
+												<option value="1" v-html="$t('dassault.size1')"></option>
+												<option value="2 to 9" v-html="$t('dassault.size2')"></option>
+												<option value="10 to 49" v-html="$t('dassault.size3')"></option>
+												<option value="50 to 99" v-html="$t('dassault.size4')"></option>
+												<option value="100 to 249" v-html="$t('dassault.size5')"></option>
+												<option value="250 to 499" v-html="$t('dassault.size6')"></option>
+												<option value="500 to 999" v-html="$t('dassault.size7')"></option>
+												<option value="1000 or more" v-html="$t('dassault.size8')"></option>
 											</select>
 											<div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-darker">
 												<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
 											</div>
 										</div>
 										<p class="text-red text-xs italic" v-show="errors.company_size" v-html="$t('general.errorEmployees')"></p>
+									</div>
+								</div>
+								<div class="mb-6 sm:w-1/2">
+									<div class="ml-2">
+										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="industry">
+											{{ $t('general.industry') }}
+										</label>
+										<div class="inline-block relative w-full mb-2">
+											<select class="block appearance-none w-full bg-grey-lighter border text-grey-darker py-3 px-4 pr-8 rounded" :class="[errors.size ? 'border-red' : '']" id="industry" name="extra[industry]" @blur="hasError">
+												<option value="" v-html="$t('general.pleaseselect')"></option>
+												<option value="Banking/insurance/financial services" v-html="$t('dassault.industry1')"></option>
+												<option value="Manufacturing" v-html="$t('dassault.industry2')"></option>
+												<option value="Retail/wholesale" v-html="$t('dassault.industry3')"></option>
+												<option value="Communication" v-html="$t('dassault.industry4')"></option>
+												<option value="Media (TV, radio, press)" v-html="$t('dassault.industry5')"></option>
+												<option value="Utilities" v-html="$t('dassault.industry6')"></option>
+												<option value="Transportation" v-html="$t('dassault.industry7')"></option>
+												<option value="Construction" v-html="$t('dassault.industry8')"></option>
+												<option value="Personal services/leisure" v-html="$t('dassault.industry9')"></option>
+												<option value="Professional services (real estate, accountancy, advertising, business consultancy, recruitment, etc.)" v-html="$t('dassault.industry10')"></option>
+												<option value="IT/telecom service providerse" v-html="$t('dassault.industry11')"></option>
+												<option value="Education" v-html="$t('dassault.industry12')"></option>
+												<option value="Healthcare" v-html="$t('dassault.industry13')"></option>
+											</select>
+											<div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-darker">
+												<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+											</div>
+										</div>
+										<p class="text-red text-xs italic" v-show="errors.industry" v-html="$t('general.errorEmployees')"></p>
 									</div>
 								</div>
 								<div class="mb-6 sm:w-1/2">
@@ -133,8 +167,7 @@
 									</label>
 								</div>
 								<div class="mb-6 w-full">
-									<!-- <button type="submit" :disabled="isSubmitting" class="text-center block bg-dassault-blue hover:text-ntt-gold shadow-md text-white py-4 px-6 rounded no-underline" :class="[{'cursor-not-allowed':isSubmitting}]" @click.prevent="checkForErrors"><font-awesome-icon class="mr-2" :class="[{'fa-spin': isSubmitting}]" :icon="isSubmitting ? icons.faSyncAlt : icons.faEnvelope"></font-awesome-icon> {{ $t('general.send') }}</button> -->
-									<button type="submit" disabled class="text-center block bg-dassault-blue hover:text-ntt-gold shadow-md text-white py-4 px-6 rounded no-underline" :class="[{'cursor-not-allowed':isSubmitting}]" @click.prevent="checkForErrors"><font-awesome-icon class="mr-2" :class="[{'fa-spin': isSubmitting}]" :icon="isSubmitting ? icons.faSyncAlt : icons.faEnvelope"></font-awesome-icon> {{ $t('general.send') }}</button>
+									<button type="submit" :disabled="isSubmitting" class="text-center block bg-dassault-blue hover:text-ntt-gold shadow-md text-white py-4 px-6 rounded no-underline" :class="[{'cursor-not-allowed':isSubmitting}]" @click.prevent="checkForErrors"><font-awesome-icon class="mr-2" :class="[{'fa-spin': isSubmitting}]" :icon="isSubmitting ? icons.faSyncAlt : icons.faEnvelope"></font-awesome-icon> {{ $t('general.send') }}</button>
 								</div>
 							</div>
 						</form>
@@ -199,6 +232,7 @@ export default{
 				terms: false
 			},
 			theResult: this.result ? this.result : laravel.result,
+			stage: laravel.stage,
 			isSubmitting: false,
 		}
 	},

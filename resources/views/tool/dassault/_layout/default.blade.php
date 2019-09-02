@@ -14,7 +14,7 @@ $manifest = json_decode($json, TRUE);
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <title>@yield('pagetitle',Lang::get('general.'.session('product.id').'title'))</title>
+    <title>@yield('pagetitle',Lang::get('dassault.'.'title'))</title>
     <link rel="stylesheet" href="{{ asset('bundle/'.$manifest['dassault'][0])}}">
 
     <!-- Favicons -->
@@ -41,7 +41,7 @@ $manifest = json_decode($json, TRUE);
     <![endif]-->
     @show
 </head>
-<body class="min-h-screen font-sans font-light leading-normalxgit rm --cached directory  v xbsjskskjjtko                ">
+<body class="min-h-screen font-sans font-light leading-normal">
     @yield('main')
     
     @include('_layouts.footer')
