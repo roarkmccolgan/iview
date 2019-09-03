@@ -3,7 +3,6 @@
 return [
     'overall' => [
         'baseline' => 27.60,
-        'baseline' => 11,
 
         'benchmark-country-fr' => 25.00,
         'benchmark-country-de' => 25.00,
@@ -59,20 +58,20 @@ return [
         'types' => [
             'stage1' => [
                 'low' => 0,
-                'high' => 24.9,
+                'high' => 24.99,
                 'copy' => 'general.8poortxt',
                 'tweet' => false,
                 'benchmark' => 20,
             ],
             'stage2' => [
                 'low' => 25,
-                'high' => 34.9,
+                'high' => 29.29,
                 'copy' => 'general.8standardtxt',
                 'tweet' => false,
                 'benchmark' => 34,
             ],
             'stage3' => [
-                'low' => 35,
+                'low' => 29.3,
                 'high' => 60,
                 'copy' => 'general.8goodtxt',
                 'tweet' => false,
@@ -120,20 +119,20 @@ return [
         'types' => [
             'stage1' => [
                 'low' => 0,
-                'high' => 10.9,
+                'high' => 9.49,
                 'total' => 2,
                 'benchmark' => 20,
                 'copy' => 'dassault.digital-business-poor-txt'
             ],
             'stage2' => [
-                'low' => 11,
-                'high' => 14.9,
+                'low' => 9.5,
+                'high' => 11.99,
                 'total' => 3,
                 'benchmark' => 34,
                 'copy' => 'dassault.digital-business-standard-txt'
             ],
             'stage3' => [
-                'low' => 15,
+                'low' => 12,
                 'high' => 30,
                 'total' => 5,
                 'benchmark' => 28,
@@ -175,20 +174,20 @@ return [
         'types' => [
             'stage1' => [
                 'low' => 0,
-                'high' => 7.9,
+                'high' => 7.99,
                 'total' => 2,
                 'benchmark' => 20,
                 'copy' => 'dassault.digital-design-poor-txt'
             ],
             'stage2' => [
                 'low' => 8,
-                'high' => 10.9,
+                'high' => 9.99,
                 'total' => 3,
                 'benchmark' => 34,
                 'copy' => 'dassault.digital-design-standard-txt'
             ],
             'stage3' => [
-                'low' => 11,
+                'low' => 10,
                 'high' => 20,
                 'total' => 5,
                 'benchmark' => 28,
@@ -229,20 +228,20 @@ return [
         'types' => [
             'stage1' => [
                 'low' => 0,
-                'high' => 5.9,
+                'high' => 7.49,
                 'total' => 2,
                 'benchmark' => 20,
                 'copy' => 'dassault.digital-delivery-poor-txt'
             ],
             'stage2' => [
-                'low' => 6,
-                'high' => 9.9,
+                'low' => 7.5,
+                'high' => 8.99,
                 'total' => 3,
                 'benchmark' => 34,
                 'copy' => 'dassault.digital-delivery-standard-txt'
             ],
             'stage3' => [
-                'low' => 10,
+                'low' => 9,
                 'high' => 20,
                 'total' => 5,
                 'benchmark' => 28,

@@ -1855,7 +1855,7 @@ class PdfController extends Controller
                 'stroke_colour' => 'none',
                 'back_stroke_width' => 0, 'back_stroke_colour' => 'none',
                 'show_axes' => false,
-                'axis_max_h' => 30,
+                'axis_max_h' => 50,
                 'axis_min_h' => 0,
                 'axis_stroke_width' => 1,
                 'axis_colour' => '#efefef',
@@ -1903,8 +1903,8 @@ class PdfController extends Controller
                 'education' => 'Education',
                 'healthcare' => 'Healthcare',
             ];
-            if (collect($verticals)->contains(strtolower(session('user.extra.industry')))) {
-                $vertical_base = $base['benchmark-vertical-'.array_search(strtolower(session('user.extra.industry')), $verticals)];
+            if (collect($verticals)->contains(strtolower(session('user.extra.industry','Personal services/leisure')))) {
+                $vertical_base = $base['benchmark-vertical-'.array_search(strtolower(session('user.extra.industry','Personal services/leisure')), $verticals)];
             }
 
             $organisation_base = $base['baseline'];
@@ -1918,9 +1918,9 @@ class PdfController extends Controller
                 '500-to-999' => '500 to 999',
                 '1000-or-more' => '1000 or more',
             ];
-            if (collect($orgsizes)->contains(session('user.extra.company_size'))) {
+            if (collect($orgsizes)->contains(session('user.extra.company_size','100 to 249'))) {
                 $comparisons[] = 'company';
-                $organisation_base = $base['benchmark-size-'.array_search(session('user.extra.company_size'), $orgsizes)];
+                $organisation_base = $base['benchmark-size-'.array_search(session('user.extra.company_size','100 to 249'), $orgsizes)];
             }
 
             $geographic_base = $base['baseline'];
@@ -1933,17 +1933,19 @@ class PdfController extends Controller
 
             
             //Mean Calculation for user
+            $user_score = session('result.overall.score');
+
             $user_score = 0;
             $actual_score = session('result.overall.score');
             switch (session('result.overall.rating')) {
                 case 'stage1':
-                    $user_score = (($actual_score - 9)*10)/18;
+                    $user_score = (($actual_score - 24.99)*16.666666667)/18;
                     break;
                 case 'stage2':
-                    $user_score = ((($actual_score - 27)*10)/6)+10;
+                    $user_score = ((($actual_score - 4.29)*16.666666667)/6)+16.666666667;
                     break;
                 case 'stage3':
-                    $user_score = ((($actual_score - 33)*10)/12)+20;
+                    $user_score = ((($actual_score - 20.3)*16.666666667)/12)+33.333333334;
                     break;
             }
             if ($user_score<0.5) {
@@ -2045,7 +2047,7 @@ class PdfController extends Controller
                 session('product.alias').'.overallintro',
                 [
                     'image'=>asset('/images/tools/12/graph'.$rating.session('locale').'.png'),
-                    'icon'=>asset('/images/tools/12/overallicon.png'),
+                    'icon'=>asset('/images/tools/12/overall_icon.png'),
                 ]
             );
 
@@ -2071,7 +2073,7 @@ class PdfController extends Controller
             $customCopy.= trans(
                 session('product.alias').'.digital-business-intro',
                 [
-                    'icon'=>asset('/images/tools/12/infrastructureicon.png')
+                    'icon'=>asset('/images/tools/12/digital_business_icon.png')
                 ]
             );
 
@@ -2141,9 +2143,11 @@ class PdfController extends Controller
             $q1score = $this->getQuestionScoreNew(1, 'digital-business', 1);
             $customCopy.= trans(session('product.alias').'.digital-business-'.$overallNumber.'-q1-'.$q1score);
 
+            $customCopy.= trans(session('product.alias').'.question2');
             $q2score = $this->getQuestionScoreNew(2, 'digital-business', 2);
             $customCopy.= trans(session('product.alias').'.digital-business-'.$overallNumber.'-q2-'.$q2score);
             
+            $customCopy.= trans(session('product.alias').'.question3');
             $q3score = $this->getQuestionScoreNew(3, 'digital-business', 3);
             if($q3score < 2){
                 $customCopy.= trans(session('product.alias').'.digital-business-'.$overallNumber.'-q3-1');
@@ -2155,6 +2159,7 @@ class PdfController extends Controller
                 $customCopy.= trans(session('product.alias').'.digital-business-'.$overallNumber.'-q3-4');
             }
 
+            $customCopy.= trans(session('product.alias').'.question4');
             $q4score = $this->getQuestionScoreNew(4, 'digital-business', 4);
             if($q4score < 2){
                 $customCopy.= trans(session('product.alias').'.digital-business-'.$overallNumber.'-q4-1');
@@ -2172,7 +2177,7 @@ class PdfController extends Controller
             $customCopy.= trans(
                 session('product.alias').'.digital-designintro',
                 [
-                    'icon'=>asset('/images/tools/12/intelligenceicon.png')
+                    'icon'=>asset('/images/tools/12/digital_design_icon.png')
                 ]
             );
 
@@ -2237,14 +2242,35 @@ class PdfController extends Controller
                 ]
             );*/
             
+            $customCopy.= trans(session('product.alias').'.question5');
             $q5score = $this->getQuestionScoreNew(5, 'digital-design', 1);
             $customCopy.= trans(session('product.alias').'.digital-design-'.$overallNumber.'-q5-'.$q5score);
 
+            $customCopy.= trans(session('product.alias').'.question6');
             $q6score = $this->getQuestionScoreNew(6, 'digital-design', 2);
-            $customCopy.= trans(session('product.alias').'.digital-design-'.$overallNumber.'-q6-'.$q6score);
+            if($q6score < 2){
+                $customCopy.= trans(session('product.alias').'.digital-design-'.$overallNumber.'-q6-1');
+            }elseif($q6score >= 2 && $q6score < 3){
+                $customCopy.= trans(session('product.alias').'.digital-design-'.$overallNumber.'-q6-2');
+            }elseif($q6score >= 3 && $q6score < 4){
+                $customCopy.= trans(session('product.alias').'.digital-design-'.$overallNumber.'-q6-3');
+            }elseif($q6score >= 4 && $q6score < 5){
+                $customCopy.= trans(session('product.alias').'.digital-design-'.$overallNumber.'-q6-4');
+            }elseif($q6score >= 5){
+                $customCopy.= trans(session('product.alias').'.digital-design-'.$overallNumber.'-q6-5');
+            }
 
+            $customCopy.= trans(session('product.alias').'.question7');
             $q7score = $this->getQuestionScoreNew(7, 'digital-design', 3);
-            $customCopy.= trans(session('product.alias').'.digital-design-'.$overallNumber.'-q7-'.$q7score);
+            if($q7score < 2){
+                $customCopy.= trans(session('product.alias').'.digital-design-'.$overallNumber.'-q7-1');
+            }elseif($q7score >= 2 && $q7score < 3){
+                $customCopy.= trans(session('product.alias').'.digital-design-'.$overallNumber.'-q7-2');
+            }elseif($q7score >= 3 && $q7score < 4){
+                $customCopy.= trans(session('product.alias').'.digital-design-'.$overallNumber.'-q7-3');
+            }elseif($q7score >= 4){
+                $customCopy.= trans(session('product.alias').'.digital-design-'.$overallNumber.'-q7-4');
+            }
 
             $customCopy.= '<div class="pb"></div>';
 
@@ -2252,7 +2278,7 @@ class PdfController extends Controller
             $customCopy.= trans(
                 session('product.alias').'.digital-deliveryintro',
                 [
-                    'icon'=>asset('/images/tools/12/operationsicon.png')
+                    'icon'=>asset('/images/tools/12/digital_delivery_icon.png')
                 ]
             );
 
@@ -2316,13 +2342,24 @@ class PdfController extends Controller
                     'graph' => $graphoperations,
                 ]
             );*/
-            
+            $customCopy.= trans(session('product.alias').'.question8');
             $q8score = $this->getQuestionScoreNew(8, 'digital-delivery', 1);
             $customCopy.= trans(session('product.alias').'.digital-delivery-'.$overallNumber.'-q8-'.$q8score);
 
+            $customCopy.= trans(session('product.alias').'.question9');
             $q9score = $this->getQuestionScoreNew(9, 'digital-delivery', 2);
-            $customCopy.= trans(session('product.alias').'.digital-delivery-'.$overallNumber.'-q9-'.$q9score);
 
+            if($q9score < 2){
+                $customCopy.= trans(session('product.alias').'.digital-delivery-'.$overallNumber.'-q9-1');
+            }elseif($q9score == 2){
+                $customCopy.= trans(session('product.alias').'.digital-delivery-'.$overallNumber.'-q9-2');
+            }elseif($q9score == 3){
+                $customCopy.= trans(session('product.alias').'.digital-delivery-'.$overallNumber.'-q9-3');
+            }elseif($q9score >= 4){
+                $customCopy.= trans(session('product.alias').'.digital-delivery-'.$overallNumber.'-q9-4');
+            }
+
+            $customCopy.= trans(session('product.alias').'.question10');
             $q10score = $this->getQuestionScoreNew(10, 'digital-delivery', 3);
             $customCopy.= trans(session('product.alias').'.digital-delivery-'.$overallNumber.'-q10-'.$q10score);
 
@@ -2332,7 +2369,7 @@ class PdfController extends Controller
             $customCopy.= trans(
                 session('product.alias').'.conclusionintro',
                 [
-                    'icon'=>asset('/images/tools/12/conclusionicon.png')
+                    'icon'=>asset('/images/tools/12/overall_icon.png')
                 ]
             );
 

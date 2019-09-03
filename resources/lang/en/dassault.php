@@ -1,5 +1,5 @@
 <?php
-//NTT
+//DASSAULT
 return array(
     'elqFormName'=>'',
     'developedby'=>'Developed by',
@@ -184,7 +184,7 @@ return array(
     'digital-business-intro' => '
         <h2 class="w-4/5 ml-auto text-dassault-blue mb-6">Digital Business</h2>
         <div class="clearfix">
-            <div class="w-1/3 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 25mm;"></div>
+            <div class="w-1/5 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 25mm;"></div>
             <div class="w-4/5 float-left">
                 <p class="mb-2">
                     A digital native business creates and delivers innovation at speed, puts customers at the core of its existence and treats employees as its most valued asset. It interacts with its ecosystem to co-create innovation and access and share resources. To determine how digital your business is, you can look at how much of your revenue comes from digital products and services, and how much of your business relies on digital tools, how well you support your customers and employees through digital channels and how you interact with your ecosytem digitally.
@@ -379,6 +379,14 @@ return array(
         </div>
     ',
 
+    'question2' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2 font-bold text-dassault-blue-light">
+                Q2. How difficult is for your organization to adapt to your changes in staffing levels?
+            </p>
+        </div>
+    ',
+
     'digital-business-1-q2-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
@@ -487,6 +495,14 @@ return array(
         </div>
     ',
 
+    'question3' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2 font-bold text-dassault-blue-light">
+                Q3. To what extent does your organization use the following application types? 
+            </p>
+        </div>
+    ',
+
     'digital-business-1-q3-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
@@ -570,6 +586,14 @@ return array(
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 You are routinely using applications to digitise your business processes, which puts you at par with your Digital Native peers. You might want to focus on other areas of your digital business that need improvement.
+            </p>
+        </div>
+    ',
+
+    'question4' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2 font-bold text-dassault-blue-light">
+                Q4. On a scale of 1 - 5, please rate the success of the current deployment of each of the following application types at your organization? 
             </p>
         </div>
     ',
@@ -664,7 +688,7 @@ return array(
     'digital-designintro' => '
         <h2 class="w-4/5 ml-auto text-dassault-blue mb-6">DIGITAL DESIGN</h2>
         <div class="clearfix">
-            <div class="w-1/3 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 25mm;"></div>
+            <div class="w-1/5 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 25mm;"></div>
             <div class="w-4/5 float-left">
                 <p class="mb-2">
                     Digital Design is the creation of solutions  through software for viewing on a screen including applications for Computer Aided Design (CAD), Mechanical Computer Aided Engineering (CAE), Other engineering, Collaborative product data management, Production planning, or Manufacturing. Digital Design and engineering tools enable global collaboration around projects throughout the ecosystem and help to attract and retain talent. Through the use of cloud-based digital design and engineering tools, Start-ups and SMBs have access to world-class tools used by their established competitors, partners and customers, at an affordable price point and with the ability to scale driven by customer demand.
@@ -744,6 +768,14 @@ return array(
 
     'digital-designgraph'=>'
         <div class="mx-auto my-6">:graph</div>
+    ',
+
+    'question5' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2 font-bold text-dassault-blue-light">
+                Q5. Which statement best describes how your organization tends to roll out CAD/CAM applications or updates?
+            </p>
+        </div>
     ',
 
     'digital-design-1-q5-1' => '
@@ -854,35 +886,43 @@ return array(
         </div>
     ',
 
-    'digital-design-1-q6-lt6' => '
+    'question6' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2 font-bold text-dassault-blue-light">
+                Q6. What proportion of your organization\'s Digital Design application estate are the following ages since release?
+            </p>
+        </div>
+    ',
+
+    'digital-design-1-q6-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 You are using the latest versions of your digital design and engineering apps. This puts you well ahead of your Digital Improver peers. You should focus on other areas of digital business or digital delivery to improve your digital fitness.
             </p>
         </div>
     ',
-    'digital-design-1-q6-gteq6lt8' => '
+    'digital-design-1-q6-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 You are using the latest versions of your digital design and engineering apps. This puts you well ahead of your Digital Improver peers. You should focus on other areas of digital business or digital delivery to improve your digital fitness.
             </p>
         </div>
     ',
-    'digital-design-1-q6-gteq8lt10' => '
+    'digital-design-1-q6-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 You are not using the latest version of your digital design and engineering applications. This puts you at par with your Digital Improver peers. In order to stay competitive in the digital economy, attract the right employees and interact well with your ecosystem, you need to ensure that you are always on the most current version of your applications. Moving to a cloud-based solution enables you to always be on the latest version and have access to the latest innovative features of the application.
             </p>
         </div>
     ',
-    'digital-design-1-q6-gteq10lt13' => '
+    'digital-design-1-q6-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 Your digital design and engineering application is aging and you are not taking advantage of the most innovative features. This puts you at par with your Digital Improver peers. In order to stay competitive in the digital economy, attract the right employees and interact well with your ecosystem, you need to ensure that you are always on the most current version of your applications. Moving to a cloud-based solution enables you to always be on the latest version and have access to the latest innovative features of the application.
             </p>
         </div>
     ',
-    'digital-design-1-q6-gt13' => '
+    'digital-design-1-q6-5' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 Your digital design and engineering application is outdated. You are at risk of disruption by more agile competitors and you are not taking advantage of the most innovative features. This puts you at par with your Digital Improver peers. In order to stay competitive in the digital economy, attract the right employees and interact well with your ecosystem, you need to ensure that you are always on the most current version of your applications. Moving to a cloud-based solution enables you to always be on the latest version and have access to the latest innovative features of the application.
@@ -890,35 +930,35 @@ return array(
         </div>
     ',
 
-    'digital-design-2-q6-lt6' => '
+    'digital-design-2-q6-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 You are using the latest versions of your digital design and engineering apps. This puts you well ahead of your Digital Achiever peers. You should focus on other areas of digital business or digital delivery to improve your digital fitness.
             </p>
         </div>
     ',
-    'digital-design-2-q6-gteq6lt8' => '
+    'digital-design-2-q6-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 You are using the latest versions of your digital design and engineering apps. This puts you well ahead of your Digital Achiever peers. You should focus on other areas of digital business or digital delivery to improve your digital fitness.
             </p>
         </div>
     ',
-    'digital-design-2-q6-gteq8lt10' => '
+    'digital-design-2-q6-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 You are not using the latest version of your digital design and engineering applications. This puts you at par with your Digital Achiever peers. In order to stay competitive in the digital economy, attract the right employees and interact well with your ecosystem, you need to ensure that you are always on the most current version of your applications. Moving to a cloud-based solution enables you to always be on the latest version and have access to the latest innovative features of the application.
             </p>
         </div>
     ',
-    'digital-design-2-q6-gteq10lt13' => '
+    'digital-design-2-q6-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 Your digital design and engineering application is aging and you are not taking advantage of the most innovative features. This puts you behind your Digital Achiever peers. In order to stay competitive in the digital economy, attract the right employees and interact well with your ecosystem, you need to ensure that you are always on the most current version of your applications. Moving to a cloud-based solution enables you to always be on the latest version and have access to the latest innovative features of the application.
             </p>
         </div>
     ',
-    'digital-design-2-q6-gt13' => '
+    'digital-design-2-q6-5' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 Your digital design and engineering application is outdated. You are at risk of disruption by more agile competitors and you are not taking advantage of the most innovative features. This puts you far behind your Digital Improver peers. In order to stay competitive in the digital economy, attract the right employees and interact well with your ecosystem, you need to ensure that you are always on the most current version of your applications. Moving to a cloud-based solution enables you to always be on the latest version and have access to the latest innovative features of the application.
@@ -926,35 +966,35 @@ return array(
         </div>
     ',
 
-    'digital-design-3-q6-lt6' => '
+    'digital-design-3-q6-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 You are using the latest versions of your digital design and engineering apps. This puts you at par with your Digital Native peers. You should focus on other areas of digital business or digital delivery to improve your digital fitness.
             </p>
         </div>
     ',
-    'digital-design-3-q6-gteq6lt8' => '
+    'digital-design-3-q6-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 You are using the latest versions of your digital design and engineering apps. This puts you at par with your Digital Native peers. You should focus on other areas of digital business or digital delivery to improve your digital fitness.
             </p>
         </div>
     ',
-    'digital-design-3-q6-gteq8lt10' => '
+    'digital-design-3-q6-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 You are not using the latest version of your digital design and engineering applications. This puts you behind your Digital Achiever peers. In order to stay competitive in the digital economy, attract the right employees and interact well with your ecosystem, you need to ensure that you are always on the most current version of your applications. Moving to a cloud-based solution enables you to always be on the latest version and have access to the latest innovative features of the application.
             </p>
         </div>
     ',
-    'digital-design-3-q6-gteq10lt13' => '
+    'digital-design-3-q6-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 Your digital design and engineering application is aging and you are not taking advantage of the most innovative features. This puts you far behind your Digital Native peers. In order to stay competitive in the digital economy, attract the right employees and interact well with your ecosystem, you need to ensure that you are always on the most current version of your applications. Moving to a cloud-based solution enables you to always be on the latest version and have access to the latest innovative features of the application.
             </p>
         </div>
     ',
-    'digital-design-3-q6-gt13' => '
+    'digital-design-3-q6-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 Your digital design and engineering application is outdated. You are at risk of disruption by more agile competitors and you are not taking advantage of the most innovative features. This puts you far behind your Digital Native peers. In order to stay competitive in the digital economy, attract the right employees and interact well with your ecosystem, you need to ensure that you are always on the most current version of your applications. Moving to a cloud-based solution enables you to always be on the latest version and have access to the latest innovative features of the application.
@@ -962,28 +1002,36 @@ return array(
         </div>
     ',
 
-    'digital-design-1-q6-<2' => '
+    'question7' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2 font-bold text-dassault-blue-light">
+                Q7. On a scale of 1 to 5, how successfully does your Digital Design solution rate for the following? 
+            </p>
+        </div>
+    ',
+
+    'digital-design-1-q7-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 Your current digital design and engineering application does not support your digital business strategy. This puts you at par with your Digital Improver peers. You should evaluate either the latest version of your current application or an alternative application to get better reliability, performance, security, value for money, newer features, better collaboration and ecosystem integration. Having a modern digital design and engineering application solution is critical to digital business success, because collaboration internally with employees and externally with ecosystem partners requires a scalable and modern platform. You should consider moving to a cloud-based solution to improve the user experience and operational efficiency of your digital design and engineering application.
             </p>
         </div>
     ',
-    'digital-design-1-q6-=2' => '
+    'digital-design-1-q7-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 Your current digital design and engineering application does not support your digital business strategy. This puts you at par with your Digital Improver peers. You should evaluate either the latest version of your current application or an alternative application to get better reliability, performance, security, value for money, newer features, better collaboration and ecosystem integration. Having a modern digital design and engineering application solution is critical to digital business success, because collaboration internally with employees and externally with ecosystem partners requires a scalable and modern platform. You should consider moving to a cloud-based solution to improve the user experience and operational efficiency of your digital design and engineering application.
             </p>
         </div>
     ',
-    'digital-design-1-q6-=3' => '
+    'digital-design-1-q7-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 Your current digital design and engineering application supports your digital business strategy to some degree. This puts you ahead of your Digital Improver peers. To move even further ahead, you should evaluate either the latest version of your current application or an alternative application to get better reliability, performance, security, value for money, newer features, better collaboration and ecosystem integration. Having a modern digital design and engineering application solution is critical to digital business success, because collaboration internally with employees and externally with ecosystem partners requires a scalable and modern platform. You should consider moving to a cloud-based solution to improve the user experience and operational efficiency of your digital design and engineering application.
             </p>
         </div>
     ',
-    'digital-design-1-q6->=4' => '
+    'digital-design-1-q7-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 Your current digital design and engineering application supports your digital business very well. This puts you far ahead of your Digital Improver peers. You should focus on other aspects of digital business, digital design or digital delivery to improve your digital fitness.
@@ -991,28 +1039,28 @@ return array(
         </div>
     ',
 
-    'digital-design-2-q6-<2' => '
+    'digital-design-2-q7-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 Your current digital design and engineering application does not support your digital business strategy. This puts you behind your Digital Achiever peers. You should evaluate either the latest version of your current application or an alternative application to get better reliability, performance, security, value for money, newer features, better collaboration and ecosystem integration. Having a modern digital design and engineering application solution is critical to digital business success, because collaboration internally with employees and externally with ecosystem partners requires a scalable and modern platform. You should consider moving to a cloud-based solution to improve the user experience and operational efficiency of your digital design and engineering application.
             </p>
         </div>
     ',
-    'digital-design-2-q6-=2' => '
+    'digital-design-2-q7-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 Your current digital design and engineering application does not support your digital business strategy. This puts you behind your Digital Achiever peers. You should evaluate either the latest version of your current application or an alternative application to get better reliability, performance, security, value for money, newer features, better collaboration and ecosystem integration. Having a modern digital design and engineering application solution is critical to digital business success, because collaboration internally with employees and externally with ecosystem partners requires a scalable and modern platform. You should consider moving to a cloud-based solution to improve the user experience and operational efficiency of your digital design and engineering application.
             </p>
         </div>
     ',
-    'digital-design-2-q6-=3' => '
+    'digital-design-2-q7-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 Your current digital design and engineering application supports your digital business strategy to some degree. This puts you at par with your Digital Achiever peers. To move further ahead, you should evaluate either the latest version of your current application or an alternative application to get better reliability, performance, security, value for money, newer features, better collaboration and ecosystem integration. Having a modern digital design and engineering application solution is critical to digital business success, because collaboration internally with employees and externally with ecosystem partners requires a scalable and modern platform. You should consider moving to a cloud-based solution to improve the user experience and operational efficiency of your digital design and engineering application.
             </p>
         </div>
     ',
-    'digital-design-2-q6->=4' => '
+    'digital-design-2-q7-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 Your current digital design and engineering application supports your digital business very well. This puts you ahead of your Digital Achiever peers. You should focus on other aspects of digital business, digital design or digital delivery to improve your digital fitness.
@@ -1020,28 +1068,28 @@ return array(
         </div>
     ',
 
-    'digital-design-2-q6-<2' => '
+    'digital-design-3-q7-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 Your current digital design and engineering application does not support your digital business strategy. This puts you far behind your Digital Native peers. You should evaluate either the latest version of your current application or an alternative application to get better reliability, performance, security, value for money, newer features, better collaboration and ecosystem integration. Having a modern digital design and engineering application solution is critical to digital business success, because collaboration internally with employees and externally with ecosystem partners requires a scalable and modern platform. You should consider moving to a cloud-based solution to improve the user experience and operational efficiency of your digital design and engineering application.
             </p>
         </div>
     ',
-    'digital-design-2-q6-=2' => '
+    'digital-design-3-q7-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 Your current digital design and engineering application does not support your digital business strategy. This puts you far behind your Digital Native peers. You should evaluate either the latest version of your current application or an alternative application to get better reliability, performance, security, value for money, newer features, better collaboration and ecosystem integration. Having a modern digital design and engineering application solution is critical to digital business success, because collaboration internally with employees and externally with ecosystem partners requires a scalable and modern platform. You should consider moving to a cloud-based solution to improve the user experience and operational efficiency of your digital design and engineering application.
             </p>
         </div>
     ',
-    'digital-design-2-q6-=3' => '
+    'digital-design-3-q7-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 Your current digital design and engineering application supports your digital business strategy to some degree. This puts you behind your Digital Native peers. To catch up, you should evaluate either the latest version of your current application or an alternative application to get better reliability, performance, security, value for money, newer features, better collaboration and ecosystem integration. Having a modern digital design and engineering application solution is critical to digital business success, because collaboration internally with employees and externally with ecosystem partners requires a scalable and modern platform. You should consider moving to a cloud-based solution to improve the user experience and operational efficiency of your digital design and engineering application.
             </p>
         </div>
     ',
-    'digital-design-2-q6->=4' => '
+    'digital-design-3-q7-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 Your current digital design and engineering application supports your digital business very well. This puts you at par with your Digital Native peers. You should focus on other aspects of digital business, digital design or digital delivery to improve your digital fitness.
@@ -1052,7 +1100,7 @@ return array(
     'digital-deliveryintro' => '
         <h2 class="w-4/5 ml-auto text-dassault-blue mb-6">DIGITAL DELIVERY</h2>
         <div class="clearfix">
-            <div class="w-1/3 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 25mm;"></div>
+            <div class="w-1/5 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 25mm;"></div>
             <div class="w-4/5 float-left">
                 <p class="mb-2">
                     Digital Delivery is about the alignment of IT with the business. Is IT seen as an enabler of digital business strategies or is it just considered a necessary cost? Has IT embraced modern delivery tools like cloud or is everything delivered manually and with internal assets and resources? Getting IT processes and delivery models right is critical to provide the agility and flexibility that start ups and SMBs require to react quickly to changing business patterns and staffing levels, as well creating great experiences for employees, customers and ecosystem partners.
@@ -1136,6 +1184,14 @@ return array(
         <div class="mx-auto my-6">:graph</div>
     ',
 
+    'question8' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2 font-bold text-dassault-blue-light">
+                Q8. How does the Senior Management of the company view the role of IT within the business?
+            </p>
+        </div>
+    ',
+
     'digital-delivery-1-q8-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
@@ -1203,29 +1259,36 @@ return array(
         </div>
     ',
 
+    'question9' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2 font-bold text-dassault-blue-light">
+                Q9. Please indicate how your organization is primarily delivering (or plans to deliver) each of the following application types to end users?
+            </p>
+        </div>
+    ',
 
-    'digital-delivery-1-q9-<2' => '
+    'digital-delivery-1-q9-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 You are delivering most of your applications with in-house IT assets and resources. This puts you at par with your Digital Improver peers. As a start-up or SMB, you will have greater flexibility, agility and security, if you move to a cloud-based delivery model for your applications, instead of investing into in-house servers and storage. By moving to the cloud, you always have access to the latest features and functions, do not have to worry about sizing, implementing, operating and maintaining on-premise IT assets, and can scale up and down based on business demand instead of sizing the IT environment for peak performance.
             </p>
         </div>
     ',
-    'digital-delivery-1-q9-=2' => '
+    'digital-delivery-1-q9-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 You are delivering most of your applications with in-house IT assets and resources as well as managed services. This puts you at par with your Digital Improver peers. As a start-up or SMB, you will have greater flexibility, agility and security, if you move to a cloud-based delivery model for your applications, instead of investing into in-house servers and storage. By moving to the cloud, you always have access to the latest features and functions, do not have to worry about sizing, implementing, operating and maintaining on-premise IT assets, and can scale up and down based on business demand instead of sizing the IT environment for peak performance.
             </p>
         </div>
     ',
-    'digital-delivery-1-q9-=3' => '
+    'digital-delivery-1-q9-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 You are primarily delivering your applications through external providers, either managed services or cloud services. This puts you ahead of your Digital Improver peers. Depending on the service level agreements (SLAs) that you have with your managed service provider, you are some flexibilty to react to changing business requirements and to adjust the number of users up and down as needed, which is critical to digital business success. You will also have access to innovative features at a regular cadence.
             </p>
         </div>
     ',
-    'digital-delivery-1-q9->=4' => '
+    'digital-delivery-1-q9-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 You are mainly delivering your applications through a cloud-based delivery model. This puts you well ahead of your Digital Improver peers. You have continous access to the latest features and functions, can scale dynamically based on business demands and enable collobaration and innovation for your employees and with your ecoystem partners. You should look at other aspects in digital business or digital design to improve your digital fitness.
@@ -1233,28 +1296,28 @@ return array(
         </div>
     ',
 
-    'digital-delivery-2-q9-<2' => '
+    'digital-delivery-2-q9-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 You are delivering most of your applications with in-house IT assets and resources. This puts you behind your Digital Achiever peers. As a start-up or SMB, you will have greater flexibility, agility and security, if you move to a cloud-based delivery model for your applications, instead of investing into in-house servers and storage. By moving to the cloud, you always have access to the latest features and functions, do not have to worry about sizing, implementing, operating and maintaining on-premise IT assets, and can scale up and down based on business demand instead of sizing the IT environment for peak performance.
             </p>
         </div>
     ',
-    'digital-delivery-2-q9-=2' => '
+    'digital-delivery-2-q9-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 You are delivering most of your applications with in-house IT assets and resources as well as managed services. This puts you behind your Digital Achiever peers. As a start-up or SMB, you will have greater flexibility, agility and security, if you move to a cloud-based delivery model for your applications, instead of investing into in-house servers and storage. By moving to the cloud, you always have access to the latest features and functions, do not have to worry about sizing, implementing, operating and maintaining on-premise IT assets, and can scale up and down based on business demand instead of sizing the IT environment for peak performance.
             </p>
         </div>
     ',
-    'digital-delivery-2-q9-=3' => '
+    'digital-delivery-2-q9-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 You are primarily delivering your applications through external providers, either managed services or cloud services. This puts you at par with your Digital Achiever peers. Depending on the service level agreements (SLAs) that you have with your managed service provider, you are some flexibilty to react to changing business requirements and to adjust the number of users up and down as needed, which is critical to digital business success. You will also have access to innovative features at a regular cadence.
             </p>
         </div>
     ',
-    'digital-delivery-2-q9->=4' => '
+    'digital-delivery-2-q9-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 You are mainly delivering your applications through a cloud-based delivery model. This puts you ahead of your Digital Achiever peers. You have continous access to the latest features and functions, can scale dynamically based on business demands and enable collobaration and innovation for your employees and with your ecoystem partners. You should look at other aspects in digital business or digital design to improve your digital fitness.
@@ -1262,31 +1325,39 @@ return array(
         </div>
     ',
 
-    'digital-delivery-3-q9-<2' => '
+    'digital-delivery-3-q9-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 You are delivering most of your applications with in-house IT assets and resources. This puts you far behind your Digital Native peers. As a start-up or SMB, you will have greater flexibility, agility and security, if you move to a cloud-based delivery model for your applications, instead of investing into in-house servers and storage. By moving to the cloud, you always have access to the latest features and functions, do not have to worry about sizing, implementing, operating and maintaining on-premise IT assets, and can scale up and down based on business demand instead of sizing the IT environment for peak performance.
             </p>
         </div>
     ',
-    'digital-delivery-3-q9-=2' => '
+    'digital-delivery-3-q9-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 You are delivering most of your applications with in-house IT assets and resources as well as managed services. This puts you far behind your Digital Native peers. As a start-up or SMB, you will have greater flexibility, agility and security, if you move to a cloud-based delivery model for your applications, instead of investing into in-house servers and storage. By moving to the cloud, you always have access to the latest features and functions, do not have to worry about sizing, implementing, operating and maintaining on-premise IT assets, and can scale up and down based on business demand instead of sizing the IT environment for peak performance.
             </p>
         </div>
     ',
-    'digital-delivery-3-q9-=3' => '
+    'digital-delivery-3-q9-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 You are primarily delivering your applications through external providers, either managed services or cloud services. This puts you behind your Digital Native peers. Depending on the service level agreements (SLAs) that you have with your managed service provider, you are some flexibilty to react to changing business requirements and to adjust the number of users up and down as needed, which is critical to digital business success. You will also have access to innovative features at a regular cadence. If you want to be truly agile and competitive, you need to move to a cloud-based delivery model.
             </p>
         </div>
     ',
-    'digital-delivery-3-q9->=4' => '
+    'digital-delivery-3-q9-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 You are mainly delivering your applications through a cloud-based delivery model. This puts you at par with your Digital Achiever peers. You have continous access to the latest features and functions, can scale dynamically based on business demands and enable collobaration and innovation for your employees and with your ecoystem partners. You should look at other aspects in digital business or digital design to improve your digital fitness.
+            </p>
+        </div>
+    ',
+
+    'question10' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2 font-bold text-dassault-blue-light">
+                Q10. Which statement best represents your organization\'s approach to adopting Cloud services for delivering IT services or applications?
             </p>
         </div>
     ',
@@ -1403,7 +1474,7 @@ return array(
     'conclusionintro' => '
         <h2 class="w-4/5 ml-auto text-dassault-blue mb-6">CONCLUSION</h2>
         <div class="clearfix">
-            <div class="w-1/3 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 25mm;"></div>
+            <div class="w-1/5 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 25mm;"></div>
             <p class="w-4/5 float-left mb-2">
                 Thank you for taking this digital assessment. This demonstrates your ambition to succeed in your digital transformation strategies and is a good starting point to set you apart from your peers. We hope you have been able to identify the weaknesses and strength in your approach, and have some advice to make progress and develop a competitive edge. If you want to know more about the role of cloud in digital transformation in the engineering and digital design space, please check out the following report: (link)
             </p>
