@@ -812,7 +812,7 @@ class PdfController extends Controller
                     'colour' => '#9E3D91'
                 ];
                 $values[] = [
-                    'label' => 'Organizasion Size',
+                    'label' => 'Organization Size',
                     'score' => $organisation_base,
                     'colour' => '#9E3D91'
                 ];
@@ -838,7 +838,7 @@ class PdfController extends Controller
             }
             if ($comparisons->count()==2 && $comparisons->contains('company')) {
                 $values[] = [
-                    'label' => 'Organizasion Size',
+                    'label' => 'Organization Size',
                     'score' => $organisation_base,
                     'colour' => '#9E3D91'
                 ];
@@ -1841,12 +1841,13 @@ class PdfController extends Controller
             $customCopy = '';
 
             //overall
+            $base = config('baseline_'.session('product.id').'.overall');
             $rating = session('result.overall.rating');
             $settings = [
                 'use_iconv'=> false,
-                'back_image'=>asset('images/tools/12/comparisonbg'.session('localeUrl').'.png?id=1'),
+                'back_image'=>asset('images/tools/12/comparison_overall'.session('localeUrl').'.png?id=1'),
                 'back_image_width'=> 570,
-                'back_image_height'=> 320,
+                'back_image_height'=> 138,
                 'pad_top'=>45,
                 'pad_right'=>0,
                 'pad_bottom'=>23,
@@ -1855,13 +1856,14 @@ class PdfController extends Controller
                 'stroke_colour' => 'none',
                 'back_stroke_width' => 0, 'back_stroke_colour' => 'none',
                 'show_axes' => false,
-                'axis_max_h' => 50,
+                'axis_max_h' => 30,
                 'axis_min_h' => 0,
                 'axis_stroke_width' => 1,
                 'axis_colour' => '#efefef',
                 'axis_text_colour' => '#999',
                 'axis_overlap' => 2,
-                'axis_font' => 'Frutiger Neue LT W1G', 'axis_font_size' => 12,
+                
+                'axis_font_size' => 12,
                 'bar_space' => 20,
                 'group_space' => 1,
                 'grid_colour' => 'none',
@@ -1884,9 +1886,128 @@ class PdfController extends Controller
                 ]
             ];
 
-            $base = config('baseline_'.session('product.id').'.overall');
-            $comparisons = ['industry'];
+            //Mean Calculation for user
+            $user_score = session('result.overall.score');
+
+            $user_score = 0;
+            $actual_score = session('result.overall.score');
+            switch (session('result.overall.rating')) {
+                case 'stage1':
+                    $user_score = ($actual_score-11) * 10/13.99;
+                    break;
+                case 'stage2':
+                    $user_score = (($actual_score-25 ) * 10/4.29)+10;
+                    break;
+                case 'stage3':
+                    $user_score = (($actual_score-29.3) * 10/20.7)+20;
+                    break;
+            }
+
+            if ($user_score<0.5) {
+                $user_score = 0.5;
+            }
+            if ($user_score>9.5 && $user_score<10) {
+                $user_score = 9.5;
+            }
+            if ($user_score>=10 && $user_score<10.5) {
+                $user_score = 10.5;
+            }
+            if ($user_score>19.5 && $user_score<20) {
+                $user_score = 19.5;
+            }
+            if ($user_score>=20 && $user_score<20.5) {
+                $user_score = 20.5;
+            }
             
+            $values[] = [
+                'label' => 'Your Overall Cloud Adoption',
+                'score' => $user_score,
+                'colour' => '#132E44'
+            ];
+
+            $graph = new \Goat1000\SVGGraph\SVGGraph(570, 138, $settings);
+            $colours = [['#A2BBCF'], ['#132E44']];
+            $graph->colours($colours);
+            $graph->values($values);
+            $graph = $graph->Fetch('HorizontalBarGraph', false);
+
+            $customCopy.= trans(
+                session('product.alias').'.overallintro',
+                [
+                    'image'=>asset('/images/tools/12/graph'.$rating.session('locale').'.png'),
+                    'icon'=>asset('/images/tools/12/overall_icon.png'),
+                ]
+            );
+
+            $customCopy.= trans(
+                session('product.alias').'.overallgraph',
+                [
+                    'graph'=>$graph,
+                ]
+            );
+
+            $customCopy.= trans(
+                session('product.alias').'.overall'.$rating,
+                [
+                    'position'=>trans(session('product.alias').'.'.$rating),
+                    'stage'=>$overallNumber,
+                ]
+            );
+
+            $settings = [
+                'use_iconv'=> false,
+                'back_image' => null,
+                'pad_top'=> null,
+                'pad_right'=> null,
+                'pad_bottom'=> 40,
+                'pad_left'=> null,
+                'back_colour' => 'transparent',
+                'stroke_colour' => '#ccc',
+                'back_stroke_width' => 0, 'back_stroke_colour' => 'transparent',
+                'show_axes' => true,
+                'axis_max_h' => 100,
+                'axis_min_h' => 0,
+                'axis_stroke_width' => 0.5,
+                'axis_colour' => '#efefef',
+                'axis_text_colour' => '#000',
+                'axis_overlap' => 2,
+                'axis_font' => 'Frutiger Neue LT W1G', 'axis_font_size' => 13,
+                'bar_space' => 20,
+                'group_space' => 0,
+                'grid_colour' => '#efefef',
+                'grid_left' => 114,
+                'grid_division_h' => 10,
+                'show_data_labels' => true,
+                'data_label_colour' => 'black',
+                'data_label_font_size' => 14,
+                'data_label_outline_thickness' => 0,
+                'data_label_back_colour' => 'transparent',
+                'data_label_space' => '6',
+                'label_colour' => '#000',
+                'units_label' => '%',
+                'data_label_position' => 'bottom center',
+                'legend_entries' => [
+                    'Digital Improver',
+                    'Digital Achiever',
+                    'Digital Native',
+                ],
+                'legend_position' => 'outer bottom right',
+                'legend_columns' => 3,
+                'legend_stroke_width' => 0,
+                'legend_shadow_opacity' => 0,
+
+                'link_base' => '/',
+                'link_target' => '_top',
+                'minimum_grid_spacing' => 10,
+                'structured_data' => true,
+                'structure' => [
+                    'key' => 'label',
+                    'value' => ['stage1','stage2','stage3'],
+                    'colour' => ['colour1','colour2','colour3']
+                ],
+            ];
+
+            $comparisons = [];
             $vertical_base = $base['baseline'];
             $verticals = [
                 'fsi' => 'Banking/insurance/financial services',
@@ -1903,8 +2024,9 @@ class PdfController extends Controller
                 'education' => 'Education',
                 'healthcare' => 'Healthcare',
             ];
-            if (collect($verticals)->contains(strtolower(session('user.extra.industry','Personal services/leisure')))) {
-                $vertical_base = $base['benchmark-vertical-'.array_search(strtolower(session('user.extra.industry','Personal services/leisure')), $verticals)];
+            if (collect($verticals)->contains(session('user.extra.industry','Personal services/leisure'))) {
+                $comparisons[] = 'industry';
+                $vertical_base = $base['benchmark-vertical-'.array_search(session('user.extra.industry','Personal services/leisure'), $verticals)];
             }
 
             $organisation_base = $base['baseline'];
@@ -1925,142 +2047,123 @@ class PdfController extends Controller
 
             $geographic_base = $base['baseline'];
             $countries = ['en'=>'United Kingdom','fr'=>'France','de'=>'Germany'];
-            if (collect($countries)->contains(session('user.country'))) {
+            if (collect($countries)->contains(session('user.country', 'United Kingdom'))) {
                 $comparisons[] = 'country';
-                $geographic_base = $base['benchmark-country-'.array_search(session('user.country'), $countries)];
+                $geographic_base = $base['benchmark-country-'.array_search(session('user.country', 'United Kingdom'), $countries)];
             }
             $comparisons = collect($comparisons);
 
-            
-            //Mean Calculation for user
-            $user_score = session('result.overall.score');
-
-            $user_score = 0;
-            $actual_score = session('result.overall.score');
-            switch (session('result.overall.rating')) {
-                case 'stage1':
-                    $user_score = (($actual_score - 24.99)*16.666666667)/18;
-                    break;
-                case 'stage2':
-                    $user_score = ((($actual_score - 4.29)*16.666666667)/6)+16.666666667;
-                    break;
-                case 'stage3':
-                    $user_score = ((($actual_score - 20.3)*16.666666667)/12)+33.333333334;
-                    break;
-            }
-            if ($user_score<0.5) {
-                $user_score = 0.5;
-            }
-            if ($user_score>9.5 && $user_score<10) {
-                $user_score = 9.5;
-            }
-            if ($user_score>=10 && $user_score<10.5) {
-                $user_score = 10.5;
-            }
-            if ($user_score>19.5 && $user_score<20) {
-                $user_score = 19.5;
-            }
-            if ($user_score>=20 && $user_score<20.5) {
-                $user_score = 20.5;
-            }
-
             $values = [];
-            $graphbg = 'comparisonbg'.session('locale');
-            $graphHeight = 320;
+            $comparisons->each(function($item) use(&$values, &$graphHeight, $vertical_base, $organisation_base, $geographic_base){
+                switch ($item) {
+                    case 'industry':
+                        $values[] = [
+                            'label' => 'Industry',
+                            'stage1' => ceil($vertical_base[0] / (collect($vertical_base)->sum()/100)),
+                            'stage2' => ceil($vertical_base[1] / (collect($vertical_base)->sum()/100)),
+                            'stage3' => ceil($vertical_base[2] / (collect($vertical_base)->sum()/100)),
+                            'colour1' => 'rgba(17,85,130,0.3)',
+                            'colour2' => 'rgba(17,85,130,0.5)',
+                            'colour3' => 'rgba(17,85,130,0.8)',
+                        ];
+                        
+                        break;
+                    case 'company':
+                        $values[] = [
+                            'label' => "Organization Size",
+                            'stage1' => ceil($organisation_base[0] / (collect($organisation_base)->sum()/100)),
+                            'stage2' => ceil($organisation_base[1] / (collect($organisation_base)->sum()/100)),
+                            'stage3' => ceil($organisation_base[2] / (collect($organisation_base)->sum()/100)),
+                            'colour1' => 'rgba(17,85,130,0.3)',
+                            'colour2' => 'rgba(17,85,130,0.5)',
+                            'colour3' => 'rgba(17,85,130,0.8)',
+                        ];
+                        break;
+                    case 'country':
+                        $values[] = [
+                            'label' => "Country",
+                            'stage1' => ceil($geographic_base[0] / (collect($geographic_base)->sum()/100)),
+                            'stage2' => ceil($geographic_base[1] / (collect($geographic_base)->sum()/100)),
+                            'stage3' => ceil($geographic_base[2] / (collect($geographic_base)->sum()/100)),
+                            'colour1' => 'rgba(17,85,130,0.3)',
+                            'colour2' => 'rgba(17,85,130,0.5)',
+                            'colour3' => 'rgba(17,85,130,0.8)',
+                        ];
+                        break;
+                }
+            });
 
-            if ($comparisons->count()==3) {
-                $values[] = [
-                    'label' => 'Geographic Region',
-                    'score' => $geographic_base,
-                    'colour' => '#A2BBCF'
-                ];
-                $values[] = [
-                    'label' => 'Organizasion Size',
-                    'score' => $organisation_base,
-                    'colour' => '#A2BBCF'
-                ];
-                $values[] = [
-                    'label' => 'Industry',
-                    'score' => $vertical_base,
-                    'colour' => '#A2BBCF'
+
+            // $values[] = [
+            //     'label' => 'Peer Overall Cloud Adoption',
+            //     'score' => $base['baseline'],
+            //     'colour' => '#A2BBCF'
+            // ];
+
+            //$settings['back_image'] = asset('images/tools/12/'.$graphbg.'.png');
+            //$settings['back_image_height'] = $graphHeight;
+            // $values = [
+            //     [
+            //         'label' => "Vertical Comparison",
+            //         'stage1' => 30,
+            //         'stage2' => 30,
+            //         'stage3' => 30,
+            //         'colour1' => '#A2BBCF',
+            //         'colour2' => 'green',
+            //         'colour3' => 'red',
+            //     ],
+            //     [
+            //         'label' => "Company Size Comparison",
+            //         'stage1' => 30,
+            //         'stage2' => 30,
+            //         'stage3' => 30,
+            //         'colour1' => '#A2BBCF',
+            //         'colour2' => 'green',
+            //         'colour3' => 'red',
+            //     ],
+            //     [
+            //         'label' => "Industry Comparison",
+            //         'stage1' => 30,
+            //         'stage2' => 30,
+            //         'stage3' => 30,
+            //         'colour1' => '#A2BBCF',
+            //         'colour2' => 'green',
+            //         'colour3' => 'red',
+            //     ],
+            // ];
+            foreach ($values as $key => $value) {
+                $rating = session('result.overall.rating');
+                if($rating == 'stage1'){
+                    $x = $value['stage1'] / 2;
+                }
+                if($rating == 'stage2'){
+                    $x = $value['stage1'] + ($value['stage2'] / 2);
+                }
+                if($rating == 'stage3'){
+                    $x = $value['stage1'] + $value['stage2'] + ($value['stage3'] / 2);
+                }
+                $y = $key == 0 ? 0.6 : $key+1 - 0.4;
+                $settings['shape'][] = [
+                    'circle',
+                    'cx' => 'g'.$x,
+                    'cy' => 'g'.$y,
+                    'depth' => 'above',
+                    'r' => 10,
+                    'stroke-width' => 2,
+                    'stroke' => '#fff',
+                    'fill' => '#142E43'
                 ];
             }
-            if ($comparisons->count()==2 && $comparisons->contains('country')) {
-                $values[] = [
-                    'label' => 'Geographic Region',
-                    'score' => $geographic_base,
-                    'colour' => '#A2BBCF'
-                ];
-                $values[] = [
-                    'label' => 'Industry',
-                    'score' => $vertical_base,
-                    'colour' => '#A2BBCF'
-                ];
-                $graphHeight = 270;
-                $graphbg = 'comparisonbg_industry_geography'.session('locale');
-            }
-            if ($comparisons->count()==2 && $comparisons->contains('company')) {
-                $values[] = [
-                    'label' => 'Organizasion Size',
-                    'score' => $organisation_base,
-                    'colour' => '#A2BBCF'
-                ];
-                $values[] = [
-                    'label' => 'Industry',
-                    'score' => $vertical_base,
-                    'colour' => '#A2BBCF'
-                ];
-                $graphHeight = 270;
-                $graphbg = 'comparisonbg_industry_company'.session('locale');
-            }
-            if ($comparisons->count()==1) {
-                $values[] = [
-                    'label' => 'Industry',
-                    'score' => $vertical_base,
-                    'colour' => '#A2BBCF'
-                ];
-                $graphHeight = 220;
-                $graphbg = 'comparisonbg_industry'.session('locale');
-            }
-
-            $values[] = [
-                    'label' => 'Peer Overall Cloud Adoption',
-                    'score' => $base['baseline'],
-                    'colour' => '#A2BBCF'
-                ];
-            $values[] = [
-                    'label' => 'Your Overall Cloud Adoption',
-                    'score' => $user_score,
-                    'colour' => '#132E44'
-                ];
-
-            $settings['back_image'] = asset('images/tools/12/'.$graphbg.'.png');
-            $settings['back_image_height'] = $graphHeight;
-
-            $graph = new \Goat1000\SVGGraph\SVGGraph(570, $graphHeight, $settings);
+            
+            $graph = new \Goat1000\SVGGraph\SVGGraph(570, $comparisons->count()*100, $settings);
             $colours = [['#A2BBCF'], ['#132E44']];
             $graph->colours($colours);
             $graph->values($values);
-            $graph = $graph->Fetch('HorizontalBarGraph', false);
+
+            $graph = $graph->Fetch('HorizontalStackedBarGraph', false);
 
             $customCopy.= trans(
-                session('product.alias').'.overallintro',
-                [
-                    'image'=>asset('/images/tools/12/graph'.$rating.session('locale').'.png'),
-                    'icon'=>asset('/images/tools/12/overall_icon.png'),
-                ]
-            );
-
-            $customCopy.= trans(
-                session('product.alias').'.overall'.$rating,
-                [
-                    'position'=>trans(session('product.alias').'.'.$rating),
-                    'stage'=>$overallNumber,
-                ]
-            );
-
-            $customCopy.= trans(
-                session('product.alias').'.overallgraph',
+                session('product.alias').'.comparisongraph',
                 [
                     'graph'=>$graph,
                 ]

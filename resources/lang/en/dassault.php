@@ -156,6 +156,10 @@ return array(
     'overallgraph'=>'
     <div class="mx-auto my-4">:graph</div>
     ',
+    'comparisongraph'=>'
+    <div class="mb-2 text-dassault-blue mt-4 font-bold border-b">How you compare to your peers</div>
+    <div class="mx-auto my-4">:graph</div>
+    ',
     'overalloutrostage1' => '
         <div class="clearfix">
             <p class="mb-2">
