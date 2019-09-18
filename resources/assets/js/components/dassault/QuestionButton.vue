@@ -62,7 +62,7 @@ export default{
 				'block': true,
 				'text-dassault-blue': true,
 				//'bg-blue-lighter': true,
-				'hover:bg-white': true,
+				'hover:bg-blue-lightest': true,
 				'cursor-pointer': true,
 			},
 			activeClass: {

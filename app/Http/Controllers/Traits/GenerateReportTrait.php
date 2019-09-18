@@ -1819,7 +1819,7 @@ trait GenerateReportTrait
                 session('product.alias').'.introduction',
                 [
                     'result'=>trans(session('product.alias').'.'.session('result.overall.rating')),
-                    'image'=>asset('images/tools/12/descriptions'.session('locale').'.png'),
+                    'rankimg'=>asset('images/tools/12/ranking_'.$overallNumber.session('locale').'.png'),
                 ]
             );
 
@@ -1959,7 +1959,8 @@ trait GenerateReportTrait
                 'axis_font' => 'Frutiger Neue LT W1G', 'axis_font_size' => 13,
                 'bar_space' => 20,
                 'group_space' => 0,
-                'grid_colour' => '#efefef',
+                'grid_colour' => 'transparent',
+                'show_axis_text_h' => false,
                 'grid_left' => 114,
                 'grid_division_h' => 10,
                 'show_data_labels' => true,
@@ -2168,26 +2169,64 @@ trait GenerateReportTrait
             $customCopy.= trans(session('product.alias').'.digital-business-'.$businessNumber.'-'.$rating);
 
             //Digital Business graph
-            /*$settings['bar_space'] = 10;
-            $settings['back_image'] = asset('images/tools/12/comparison_infrastructure'.session('locale').'.png');
+            $settings = [
+                'pad_top'=>45,
+                'pad_right'=>0,
+                'pad_bottom'=>23,
+                'pad_left'=>114,
+                'back_colour' => 'none',
+                'stroke_colour' => 'none',
+                'back_stroke_width' => 0, 'back_stroke_colour' => 'none',
+                'show_axes' => false,
+                'axis_max_h' => 30,
+                'axis_min_h' => 0,
+                'axis_stroke_width' => 1,
+                'axis_colour' => '#efefef',
+                'axis_text_colour' => '#999',
+                'axis_overlap' => 2,
+                
+                'axis_font_size' => 12,
+                'group_space' => 1,
+                'grid_colour' => 'none',
+                'show_data_labels' => false,
+                'data_label_colour' => 'white',
+                'data_label_font_size' => 14,
+                'data_label_outline_thickness' => 1,
+                'data_label_back_colour' => 'rgba(0,0,0,0.2)',
+                'data_label_space' => '6',
+                'label_colour' => '#000',
+
+                'link_base' => '/',
+                'link_target' => '_top',
+                'minimum_grid_spacing' => 20,
+                'structured_data' => true,
+                'structure' => [
+                    'key' => 'label',
+                    'value' => 'score',
+                    'colour' => 'colour'
+                ]
+            ];
+            $settings['bar_space'] = 20;
+            $settings['back_image'] = asset('images/tools/12/comparison_business'.session('locale').'.png');
             $settings['back_image_height'] = 138;
-            $settings['axis_max_h'] = 30;
 
-            $graphinfrastructure = new \Goat1000\SVGGraph\SVGGraph(570, 138, $settings);
-            $base = config('baseline_'.session('product.id').'.infrastructure');
+            $graphbusiness = new \Goat1000\SVGGraph\SVGGraph(570, 138, $settings);
+            $base = config('baseline_'.session('product.id').'.digital-business');
 
-            $user_score = session('result.infrastructure.score');
-            switch (session('result.infrastructure.rating')) {
+            $user_score = session('result.digital-business.score');
+          
+            switch (session('result.digital-business.rating')) {
                 case 'stage1':
-                    $user_score = (($user_score - 3)*10)/6;
+                    $user_score = ($user_score-4) * (10/5.49);
                     break;
-                case 'stage2':
-                    $user_score = ((($user_score - 9)*10)/3)+10;
+                case 'stage2': 
+                    $user_score = (($user_score-9.5) * (10/2.49))+10;
                     break;
                 case 'stage3':
-                    $user_score = ((($user_score - 11)*10)/4)+20;
+                    $user_score = (($user_score-12) * (10/8))+20;
                     break;
             }
+
             if ($user_score<0.5) {
                 $user_score = 0.5;
             }
@@ -2207,25 +2246,20 @@ trait GenerateReportTrait
              $values = [
                 [
                     'label' => 'Infrastructure Performance',
-                    'score' => $base['baseline'],
-                    'colour' => '#A2BBCF'
-                ],
-                [
-                    'label' => 'User Infrastructure Performance',
                     'score' => $user_score,
                     'colour' => '#132E44'
-                ],
+                ]
              ];
 
-             $graphinfrastructure->colours($colours);
-             $graphinfrastructure->values($values);
-             $graphinfrastructure = $graphinfrastructure->Fetch('HorizontalGroupedBarGraph', false);
+             $graphbusiness->colours($colours);
+             $graphbusiness->values($values);
+             $graphbusiness = $graphbusiness->Fetch('HorizontalBarGraph', false);
              $customCopy.= trans(
-                 session('product.alias').'.infrastructuregraph',
+                 session('product.alias').'.digital-businessgraph',
                  [
-                    'graph' => $graphinfrastructure,
+                    'graph' => $graphbusiness,
                  ]
-             );*/
+             );
 
             $customCopy.= trans(session('product.alias').'.question1');
             $q1score = $this->getQuestionScoreNew(1, 'digital-business', 1);
@@ -2272,23 +2306,21 @@ trait GenerateReportTrait
             $customCopy.= trans(session('product.alias').'.digital-design-'.$designNumber.'-'.$rating);
 
             //Digital Design graph
-            /*$settings['back_image'] = asset('images/tools/12/comparison_intelligence'.session('locale').'.png');
-            $settings['back_image_height'] = 138;
-            $settings['axis_max_h'] = 30;
+            $settings['back_image'] = asset('images/tools/12/comparison_design'.session('locale').'.png');
 
-            $graphintelligence = new \Goat1000\SVGGraph\SVGGraph(570, 138, $settings);
-            $base = config('baseline_'.session('product.id').'.intelligence');
+            $graphdesign = new \Goat1000\SVGGraph\SVGGraph(570, 138, $settings);
+            $base = config('baseline_'.session('product.id').'.digital-design');
 
-            $user_score = session('result.intelligence.score');
-            switch (session('result.intelligence.rating')) {
+            $user_score = session('result.digital-design.score');
+            switch (session('result.digital-design.rating')) {
                 case 'stage1':
-                    $user_score = (($user_score - 3)*10)/6;
+                    $user_score = ($user_score-3) * (10/6.49);
                     break;
                 case 'stage2':
-                    $user_score = ((($user_score - 9)*10)/3)+10;
+                    $user_score = (($user_score-8) * (10/1.99))+10;
                     break;
                 case 'stage3':
-                    $user_score = ((($user_score - 11)*10)/4)+20;
+                    $user_score = (($user_score-10) * (10/5))+20;
                     break;
             }
             if ($user_score<0.5) {
@@ -2309,26 +2341,21 @@ trait GenerateReportTrait
 
             $values = [
                 [
-                    'label' => 'Intelligence Performance',
-                    'score' => $base['baseline'],
-                    'colour' => '#A2BBCF'
-                ],
-                [
-                    'label' => 'User Intelligence Performance',
+                    'label' => 'User Digital Design Performance',
                     'score' => $user_score,
                     'colour' => '#132E44'
                 ],
              ];
 
-            $graphintelligence->colours($colours);
-            $graphintelligence->values($values);
-            $graphintelligence = $graphintelligence->Fetch('HorizontalGroupedBarGraph', false);
+            $graphdesign->colours($colours);
+            $graphdesign->values($values);
+            $graphdesign = $graphdesign->Fetch('HorizontalBarGraph', false);
             $customCopy.= trans(
-                session('product.alias').'.intelligencegraph',
+                session('product.alias').'.digital-designgraph',
                 [
-                    'graph' => $graphintelligence,
+                    'graph' => $graphdesign,
                 ]
-            );*/
+            );
             
             $customCopy.= trans(session('product.alias').'.question5');
             $q5score = $this->getQuestionScoreNew(5, 'digital-design', 1);
@@ -2373,23 +2400,23 @@ trait GenerateReportTrait
             $customCopy.= trans(session('product.alias').'.digital-delivery-'.$deliveryNumber.'-'.$rating);
 
             //operations graph
-            /*$settings['back_image'] = asset('images/tools/12/comparison_operations'.session('locale').'.png');
+            $settings['back_image'] = asset('images/tools/12/comparison_delivery'.session('locale').'.png');
             $settings['back_image_height'] = 138;
             $settings['axis_max_h'] = 30;
 
-            $graphoperations = new \Goat1000\SVGGraph\SVGGraph(570, 138, $settings);
-            $base = config('baseline_'.session('product.id').'.operations');
+            $graphdelivery = new \Goat1000\SVGGraph\SVGGraph(570, 138, $settings);
+            $base = config('baseline_'.session('product.id').'.digital-delivery');
 
-            $user_score = session('result.operations.score');
-            switch (session('result.operations.rating')) {
+            $user_score = session('result.digital-delivery.score');
+            switch (session('result.digital-delivery.rating')) {
                 case 'stage1':
-                    $user_score = (($user_score - 3)*10)/6;
+                    $user_score = ($user_score-4) * (10/3.9);
                     break;
                 case 'stage2':
-                    $user_score = ((($user_score - 9)*10)/3)+10;
+                    $user_score = (($user_score-7.5) * (10/1.49))+10;
                     break;
                 case 'stage3':
-                    $user_score = ((($user_score - 11)*10)/4)+20;
+                    $user_score = (($user_score-9) * (10/6))+20;
                     break;
             }
             if ($user_score<0.5) {
@@ -2410,26 +2437,21 @@ trait GenerateReportTrait
 
             $values = [
                 [
-                    'label' => 'Operations Performance',
-                    'score' => $base['baseline'],
-                    'colour' => '#A2BBCF'
-                ],
-                [
-                    'label' => 'User Operations Performance',
+                    'label' => 'User Digital Delivery Performance',
                     'score' => $user_score,
                     'colour' => '#132E44'
                 ],
              ];
 
-            $graphoperations->colours($colours);
-            $graphoperations->values($values);
-            $graphoperations = $graphoperations->Fetch('HorizontalGroupedBarGraph', false);
+            $graphdelivery->colours($colours);
+            $graphdelivery->values($values);
+            $graphdelivery = $graphdelivery->Fetch('HorizontalBarGraph', false);
             $customCopy.= trans(
-                session('product.alias').'.operationsgraph',
+                session('product.alias').'.digital-deliverygraph',
                 [
-                    'graph' => $graphoperations,
+                    'graph' => $graphdelivery,
                 ]
-            );*/
+            );
             $customCopy.= trans(session('product.alias').'.question8');
             $q8score = $this->getQuestionScoreNew(8, 'digital-delivery', 1);
             $customCopy.= trans(session('product.alias').'.digital-delivery-'.$overallNumber.'-q8-'.$q8score);

@@ -11,8 +11,8 @@
 							<!-- Progress indicator -->
 							<div class="flex items-center px-4">
 								<template v-for="(question, qkey) in questions">
-									<div class="w-3 h-3 border-2 border-dassault-blue rounded-full" :class="{'bg-dassault-blue': (question == currentQuestion || question.selected)}"></div>
-									<div class="border-t-2 border-dassault-blue flex-grow" v-show="qkey !== ('q'+Object.keys(questions).length)"></div>
+									<div class="w-5 h-5 border-2 border-dassault-blue-light rounded-full" :class="{'bg-dassault-blue-light': (question == currentQuestion || question.selected)}"></div>
+									<div class="border-t-2 border-dassault-blue-light flex-grow" v-show="qkey !== ('q'+Object.keys(questions).length)"></div>
 								</template>
 							</div>
 						</div>

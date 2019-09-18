@@ -17,7 +17,7 @@ return array(
     'download-now'=>'Download Now',
 
     'title'=>'Dassault Digital Fitness Capability Assessment',
-    'sub-title'=>'How digtially fit is your business',
+    'sub-title'=>'How digtially fit is your business?',
     'landing'=>'
         <p class="mb-2">
             IDC, a global leading provider of technology market research, has developed the Digital Fitness capability assessment, sponsored by Dassault, to help start-ups and SMBs focused on Digital Design to assess their capability to cater to customers\' needs in an increasingly faster moving and competitive market.
@@ -117,9 +117,13 @@ return array(
         <p class="mb-4">The key priorities for the leading start-ups and SMBs according to the survey are related to profitability. They want to either improve profitability or become profitable, depending on the organization\'s age and stage of development. Managing profitability requires a careful balance between making the necessary investments to drive innovation and keeping costs from spiralling out of control. Aligning business and IT priorities and supporting the business strategy with a flexible IT delivery model supports the journey towards profitability. Additional priorities are increasing brand awareness and accelerating time to market. Using the latest IT applications and tools helps attract talent and create a great experience for employees, customers and partners, which in turn helps to improve brand awareness. Accelerating time to market is typically done by working with agile methods, in short sprints and by getting feedback from the market fast. A cloud-based digital platform can facilitate collaboration across geographically dispersed employees but also across the ecosystem of customer, partners and suppliers. </p>
 
         <h2 class="text-dassault-blue mb-4">RANKING EXPLANATION</h2>
-        <p class="mb-4">Based on the benchmark survey, 14.5% of respondents are digital natives, 50.5% of respondents are digital achievers and 35% of respondents are digital improvers. This distribution varies within the three categories of digital business, digital design and digital delivery, which make up the digital fitness index. Digital design is the most mature category, with 22% of respondents receiving a top score, while only 12.5% of respondents are top scorers in the digital business category, where dealing with changes in business patterns and staffing levels drive great challenges. Organizations who are better able to deal with fluctuations in business demand and staffing levels are scoring higher than organizations who are relying on rigid IT practices and hence cannot respond in an agile fashion to changing demands. The key to digital fitness is the ability to create great experiences for employees, customers and ecoystem partners through the use of digital technologies. The better an organization is equipped to do this, the better they score in the digital fitness index. </p>
-
-        <div class="pb"></div>
+        <div class="w-1/2 float-left">
+            <p class="mb-4">Based on the benchmark survey, <strong>14.5%</strong> of respondents are <strong>Digital Natives</strong>, <strong>50.5%</strong> of respondents are <strong>Digital Achievers</strong> and <strong>35%</strong> of respondents are <strong>Digital Improvers</strong>. This distribution varies within the three categories of digital business, digital design and digital delivery, which make up the digital fitness index. Digital design is the most mature category, with 22% of respondents receiving a top score, while only 12.5% of respondents are top scorers in the digital business category, where dealing with changes in business patterns and staffing levels drive great challenges. Organizations who are better able to deal with fluctuations in business demand and staffing levels are scoring higher than organizations who are relying on rigid IT practices and hence cannot respond in an agile fashion to changing demands. The key to digital fitness is the ability to create great experiences for employees, customers and ecoystem partners through the use of digital technologies. The better an organization is equipped to do this, the better they score in the digital fitness index. </p>
+        </div>
+        <div class="w-1/2 float-left">
+            <div class="m-2"><img src=":rankimg" alt=""></div>
+        </div>
+        <div class="pb clearfix"></div>
         <div class="spacer"></div>
         
     ',
@@ -154,7 +158,7 @@ return array(
         </div>
     ',
     'overallgraph'=>'
-    <div class="mx-auto my-4">:graph</div>
+    <div class="ml-8 my-4 inline-block">:graph</div>
     ',
     'comparisongraph'=>'
     <div class="mb-2 text-dassault-blue mt-4 font-bold border-b">How you compare to your peers</div>
@@ -198,6 +202,9 @@ return array(
                 </p>
             </div>
         </div>
+    ',
+    'digital-businessgraph' => '
+        <div class="ml-8 my-4 inline-block">:graph</div>
     ',
 
     'digital-business-1-stage1' => '
@@ -266,7 +273,7 @@ return array(
     ',
 
     'digital-businessgraph'=>'
-        <div class="mx-auto my-6">:graph</div>
+        <div class="ml-8 my-4 inline-block">:graph</div>
     ',
     'question1' => '
         <div class="clearfix">
@@ -703,6 +710,9 @@ return array(
             </div>
         </div>
     ',
+    'digital-designgraph' => '
+        <div class="ml-8 my-4 inline-block">:graph</div>
+    ',
 
     'digital-design-1-stage1' => '
         <div class="clearfix">
@@ -771,7 +781,7 @@ return array(
     ',
 
     'digital-designgraph'=>'
-        <div class="mx-auto my-6">:graph</div>
+        <div class="ml-8 my-4 inline-block">:graph</div>
     ',
 
     'question5' => '
@@ -998,7 +1008,7 @@ return array(
             </p>
         </div>
     ',
-    'digital-design-3-q6-4' => '
+    'digital-design-3-q6-5' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 Your digital design and engineering application is outdated. You are at risk of disruption by more agile competitors and you are not taking advantage of the most innovative features. This puts you far behind your Digital Native peers. In order to stay competitive in the digital economy, attract the right employees and interact well with your ecosystem, you need to ensure that you are always on the most current version of your applications. Moving to a cloud-based solution enables you to always be on the latest version and have access to the latest innovative features of the application.
@@ -1115,6 +1125,9 @@ return array(
             </div>
         </div>
     ',
+    'digital-deliverygraph' => '
+        <div class="ml-8 my-4 inline-block">:graph</div>
+    ',
 
     'digital-delivery-1-stage1' => '
         <div class="clearfix">
@@ -1185,7 +1198,7 @@ return array(
     ',
 
     'digital-deliverygraph'=>'
-        <div class="mx-auto my-6">:graph</div>
+        <div class="ml-8 my-4 inline-block">:graph</div>
     ',
 
     'question8' => '
@@ -1203,14 +1216,14 @@ return array(
             </p>
         </div>
     ',
-    'digital-delivery-1-q8-2' => '
+    'digital-delivery-1-q8-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 Your senior management primarily sees IT as a means to improve business efficieny. This is the first step of digital transformation, where you use IT to improve your current business processes, but it is not real transformation. This puts you ahead of your Digital Improver peers. If you want to demonstrate real transformation driven by IT, you need to support digital business innovation, through providing a modern platform for collaboration, both internally and with the external ecosystem.
             </p>
         </div>
     ',
-    'digital-delivery-1-q8-3' => '
+    'digital-delivery-1-q8-5' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 You are lucky! Your senior management sees IT as a driver for differentiation and innovation, which usually leads to a positive investment climate for modern applications and delivery models. This puts you far ahead of your Digital Improver peers. 
@@ -1226,14 +1239,14 @@ return array(
             </p>
         </div>
     ',
-    'digital-delivery-2-q8-2' => '
+    'digital-delivery-2-q8-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 Your senior management primarily sees IT as a means to improve business efficieny. This is the first step of digital transformation, where you use IT to improve your current business processes, but it is not real transformation. This puts you at par with your Digital Achiever peers. If you want to demonstrate real transformation driven by IT, you need to support digital business innovation, through providing a modern platform for collaboration, both internally and with the external ecosystem.
             </p>
         </div>
     ',
-    'digital-delivery-2-q8-3' => '
+    'digital-delivery-2-q8-5' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 You are lucky! Your senior management sees IT as a driver for differentiation and innovation, which usually leads to a positive investment climate for modern applications and delivery models. This puts you ahead of your Digital Achiever peers. 
@@ -1248,14 +1261,14 @@ return array(
             </p>
         </div>
     ',
-    'digital-delivery-3-q8-2' => '
+    'digital-delivery-3-q8-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 Your senior management primarily sees IT as a means to improve business efficieny. This is the first step of digital transformation, where you use IT to improve your current business processes, but it is not real transformation. This puts you behind your Digital Native peers. If you want to demonstrate real transformation driven by IT, you need to support digital business innovation, through providing a modern platform for collaboration, both internally and with the external ecosystem.
             </p>
         </div>
     ',
-    'digital-delivery-3-q8-3' => '
+    'digital-delivery-3-q8-5' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
                 Your senior management sees IT as a driver for differentiation and innovation, which usually leads to a positive investment climate for modern applications and delivery models. This puts you at par with your Digital Native peers. 

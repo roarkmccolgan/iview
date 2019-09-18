@@ -688,174 +688,34 @@ return [
                 'title' => 'Digital Design',
                 'questions' => [
                     'q6'=>[
-                        'type'=>'groupbutton',
-                        'calc'=>[
-                            'type'=>'average'
-                        ],
-                        'optionLabels' => [
-                            '0-<20%',
-                            '20-39%',
-                            '40-59%',
-                            '60-79%',
-                            '80-100%',
-                        ],
-                        'question'=>'What proportion of your organization\'s Digital Design application estate are the following ages since release?',
+                        'type'=>'button',
+                        'question'=>'How old since release is the version of Digital Design application that is most commonly deployed in your organisation?',
                         'name'=> 6,
                         'options'=>[
                             [
                                 'label'=>'Less than six months',
-                                'name'=> 6.1,
-                                'options'=>[
-                                    [
-                                        'label'=>'0-<20%',
-                                        'value'=>1,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'20-39%',
-                                        'value'=>2,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'40-59%',
-                                        'value'=>3,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'60-79%',
-                                        'value'=>4,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'80-100%',
-                                        'value'=>5,
-                                        'checked'=>false,
-                                    ],
-                                ]
+                                'value'=>5,
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Six months to 1 year',
-                                'name'=> 6.2,
-                                'options'=>[
-                                    [
-                                        'label'=>'0-<20%',
-                                        'value'=>1,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'20-39%',
-                                        'value'=>2,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'40-59%',
-                                        'value'=>3,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'60-79%',
-                                        'value'=>4,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'80-100%',
-                                        'value'=>4,
-                                        'checked'=>false,
-                                    ],
-                                ]
+                                'value'=>4,
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'1 to 2 years',
-                                'name'=> 6.3,
-                                'options'=>[
-                                    [
-                                        'label'=>'0-<20%',
-                                        'value'=>1,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'20-39%',
-                                        'value'=>2,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'40-59%',
-                                        'value'=>3,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'60-79%',
-                                        'value'=>3,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'80-100%',
-                                        'value'=>4,
-                                        'checked'=>false,
-                                    ],
-                                ]
+                                'value'=>3,
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'2 to 3 years',
-                                'name'=> 6.4,
-                                'options'=>[
-                                    [
-                                        'label'=>'0-<20%',
-                                        'value'=>5,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'20-39%',
-                                        'value'=>4,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'40-59%',
-                                        'value'=>3,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'60-79%',
-                                        'value'=>3,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'80-100%',
-                                        'value'=>2,
-                                        'checked'=>false,
-                                    ],
-                                ]
+                                'value'=>2,
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'3 years or more',
-                                'name'=> 6.5,
-                                'options'=>[
-                                    [
-                                        'label'=>'0-<20%',
-                                        'value'=>5,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'20-39%',
-                                        'value'=>4,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'40-59%',
-                                        'value'=>3,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'60-79%',
-                                        'value'=>2,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'80-100%',
-                                        'value'=>1,
-                                        'checked'=>false,
-                                    ],
-                                ]
+                                'value'=>1,
+                                'checked'=>false,
                             ]
                         ]
                     ]
