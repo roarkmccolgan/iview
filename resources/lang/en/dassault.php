@@ -16,11 +16,11 @@ return array(
     'an-infographic'=>'An Infographic by IDC',
     'download-now'=>'Download Now',
 
-    'title'=>'Dassault Digital Fitness Capability Assessment',
+    'title'=>'Dassault Systèmes Digital Fitness Capability Assessment',
     'sub-title'=>'How digtially fit is your business?',
     'landing'=>'
         <p class="mb-2">
-            IDC, a global leading provider of technology market research, has developed the Digital Fitness capability assessment, sponsored by Dassault, to help start-ups and SMBs focused on Digital Design to assess their capability to cater to customers\' needs in an increasingly faster moving and competitive market.
+            IDC, a global leading provider of technology market research, has developed the Digital Fitness capability assessment, sponsored by Dassault Systèmes, to help start-ups and SMBs focused on Digital Design to assess their capability to cater to customers\' needs in an increasingly faster moving and competitive market.
         </p>
         <p class="mb-2">
             This self-assessment tool is backed up by independent end-user research and IDC\'s in depth understanding of Cloud and Technology markets. Upon completion of a short survey (under 10 minutes) you will receive a custom report that benchmarks your organization\'s Digital Fitness and provides you with essential and tailored guidance to help you advance in your digital journey to better cater to the needs of your demanding customers.
@@ -101,11 +101,11 @@ return array(
         </a>',
     'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @3ds. Interested? ',// http://bit.ly/2gslXEh
     'email'=>[
-        'subject' => 'Dassault Digital Fitness Capability Assessment',
+        'subject' => 'Dassault Systèmes Digital Fitness Capability Assessment',
         'hi' => 'Hi :Fname',
-        'body' => 'As promised, here\'s a link to download your Dassault Digital Fitness Capability Assessment Report.',
+        'body' => 'As promised, here\'s a link to download your Dassault Systèmes Digital Fitness Capability Assessment Report.',
         'link' => 'Download Report',
-        'extra' => 'Once you\'ve read the report why not visit Dassault Systèmes <a href="http://www.3ds.com" style="color:#054683">3DS</a>',
+        'extra' => 'Once you\'ve read the report why not visit Dassault Systèmes <a href="https://www.3ds.com/3dexperience/cloud/" style="color:#054683">3DS</a>',
         'regards' => 'Regards',
         'team' => 'The IDC Team'
     ],
