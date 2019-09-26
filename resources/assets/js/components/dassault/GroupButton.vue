@@ -8,7 +8,7 @@
 				</div>
 			</div>
 		</div>
-		<template v-for="(options, optKey) in question.options">
+		<template v-for="(options, optKey) in question.options" v-if="checkShow(options)">
 			<transition name="fade">
 			<div class="" v-if="optKey == showOption || allAtOnce" :key="'q'+optKey">
 				<question-button :question="question" :the-options="options.options" :label="options.label" :qname="options.name" v-on:selectOption="optionSelected" :showDetails="showDetails" :answer="answer"></question-button>				
@@ -25,7 +25,7 @@ import FontAwesomeIcon from '@fortawesome/vue-fontawesome';
 import QuestionButton from './QuestionButton.vue';
 
 export default{
-	props: ['question', 'answer', 'showDetails'],
+	props: ['question', 'answer', 'showDetails', 'questions'],
 	data: function() {
 		return {
 			showOption: 0,
@@ -62,7 +62,17 @@ export default{
 			}
 			return exists;
 		},
-		
+		checkShow: function(option){
+			if(!option.show){
+				return true;
+			}
+			let check = option.show;
+			let selected = this.questions['q'+check.question].selected;
+			
+			let filtered = selected.filter(answer => answer.name == check.answer);
+			
+			return eval(`${filtered[0].value} ${check.operator} ${check.value}`);
+		}
 	},
 	events:{},
 	created: function(){

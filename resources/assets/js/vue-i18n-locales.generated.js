@@ -431,7 +431,7 @@ export default {
             "an-infographic": "An Infographic by IDC",
             "download-now": "Download Now",
             "title": "Dassault Systèmes Digital Fitness Capability Assessment",
-            "sub-title": "How digtially fit is your business?",
+            "sub-title": "How digitally fit is your business?",
             "landing": "\n        <p class=\"mb-2\">\n            IDC, a global leading provider of technology market research, has developed the Digital Fitness capability assessment, sponsored by Dassault Systèmes, to help start-ups and SMBs focused on Digital Design to assess their capability to cater to customers' needs in an increasingly faster moving and competitive market.\n        </p>\n        <p class=\"mb-2\">\n            This self-assessment tool is backed up by independent end-user research and IDC's in depth understanding of Cloud and Technology markets. Upon completion of a short survey (under 10 minutes) you will receive a custom report that benchmarks your organization's Digital Fitness and provides you with essential and tailored guidance to help you advance in your digital journey to better cater to the needs of your demanding customers.\n        </p>",
             "startbut": "Start Assessment",
             "send": "We can send you the full results directly to your mailbox",

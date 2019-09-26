@@ -408,6 +408,12 @@ return [
                                         'value'=>5,
                                         'checked'=>false,
                                     ],
+                                ],
+                                'show' => [
+                                    'question' => 3,
+                                    'answer' => 3.1,
+                                    'operator' => '>',
+                                    'value' => 2
                                 ]
                             ],
                             [
@@ -439,6 +445,12 @@ return [
                                         'value'=>5,
                                         'checked'=>false,
                                     ],
+                                ],
+                                'show' => [
+                                    'question' => 3,
+                                    'answer' => 3.2,
+                                    'operator' => '>',
+                                    'value' => 2
                                 ]
                             ],
                             [
@@ -470,6 +482,12 @@ return [
                                         'value'=>5,
                                         'checked'=>false,
                                     ],
+                                ],
+                                'show' => [
+                                    'question' => 3,
+                                    'answer' => 3.3,
+                                    'operator' => '>',
+                                    'value' => 2
                                 ]
                             ],
                             [
@@ -501,6 +519,12 @@ return [
                                         'value'=>5,
                                         'checked'=>false,
                                     ],
+                                ],
+                                'show' => [
+                                    'question' => 3,
+                                    'answer' => 3.4,
+                                    'operator' => '>',
+                                    'value' => 2
                                 ]
                             ],
                             [
@@ -532,6 +556,12 @@ return [
                                         'value'=>5,
                                         'checked'=>false,
                                     ],
+                                ],
+                                'show' => [
+                                    'question' => 3,
+                                    'answer' => 3.5,
+                                    'operator' => '>',
+                                    'value' => 2
                                 ]
                             ],
                             [
@@ -563,6 +593,12 @@ return [
                                         'value'=>5,
                                         'checked'=>false,
                                     ],
+                                ],
+                                'show' => [
+                                    'question' => 3,
+                                    'answer' => 3.6,
+                                    'operator' => '>',
+                                    'value' => 2
                                 ]
                             ],
                             [
@@ -594,6 +630,12 @@ return [
                                         'value'=>5,
                                         'checked'=>false,
                                     ],
+                                ],
+                                'show' => [
+                                    'question' => 3,
+                                    'answer' => 3.7,
+                                    'operator' => '>',
+                                    'value' => 2
                                 ]
                             ],
                             [
@@ -625,6 +667,12 @@ return [
                                         'value'=>5,
                                         'checked'=>false,
                                     ],
+                                ],
+                                'show' => [
+                                    'question' => 3,
+                                    'answer' => 3.8,
+                                    'operator' => '>',
+                                    'value' => 2
                                 ]
                             ]
                         ]
@@ -1074,8 +1122,8 @@ return [
                             'type'=>'average'
                         ],
                         'optionLabels' => [
-                            'In-house (on-premises)',
-                            'solution Managed Service Provider',
+                            'In-house (on-premises) solution',
+                            'Managed Services Provider',
                             'Public Cloud Provider service',
                         ],
                         'question'=>'Please indicate how your organization is primarily delivering (or plans to deliver) each of the following application types to end users? Select one for each',
@@ -1086,12 +1134,12 @@ return [
                                 'name'=> 9.1,
                                 'options'=>[
                                     [
-                                        'label'=>'In-house (on-premises',
+                                        'label'=>'In-house (on-premises) solution',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'solution Managed Service Provider',
+                                        'label'=>'Managed Service Provider',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
@@ -1107,12 +1155,12 @@ return [
                                 'name'=> 9.2,
                                 'options'=>[
                                     [
-                                        'label'=>'In-house (on-premises',
+                                        'label'=>'In-house (on-premises) solution',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'solution Managed Service Provider',
+                                        'label'=>'Managed Service Provider',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
@@ -1128,12 +1176,12 @@ return [
                                 'name'=> 9.3,
                                 'options'=>[
                                     [
-                                        'label'=>'In-house (on-premises',
+                                        'label'=>'In-house (on-premises) solution',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'solution Managed Service Provider',
+                                        'label'=>'Managed Service Provider',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
@@ -1149,12 +1197,12 @@ return [
                                 'name'=> 9.4,
                                 'options'=>[
                                     [
-                                        'label'=>'In-house (on-premises',
+                                        'label'=>'In-house (on-premises) solution',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'solution Managed Service Provider',
+                                        'label'=>'Managed Service Provider',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
@@ -1170,12 +1218,12 @@ return [
                                 'name'=> 9.5,
                                 'options'=>[
                                     [
-                                        'label'=>'In-house (on-premises',
+                                        'label'=>'In-house (on-premises) solution',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'solution Managed Service Provider',
+                                        'label'=>'Managed Service Provider',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
@@ -1191,12 +1239,12 @@ return [
                                 'name'=> 9.6,
                                 'options'=>[
                                     [
-                                        'label'=>'In-house (on-premises',
+                                        'label'=>'In-house (on-premises) solution',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'solution Managed Service Provider',
+                                        'label'=>'Managed Service Provider',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
@@ -1212,12 +1260,12 @@ return [
                                 'name'=> 9.7,
                                 'options'=>[
                                     [
-                                        'label'=>'In-house (on-premises',
+                                        'label'=>'In-house (on-premises) solution',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'solution Managed Service Provider',
+                                        'label'=>'Managed Service Provider',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
@@ -1233,12 +1281,12 @@ return [
                                 'name'=> 9.8,
                                 'options'=>[
                                     [
-                                        'label'=>'In-house (on-premises',
+                                        'label'=>'In-house (on-premises) solution',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'solution Managed Service Provider',
+                                        'label'=>'Managed Service Provider',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],

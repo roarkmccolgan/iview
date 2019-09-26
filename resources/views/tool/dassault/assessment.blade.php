@@ -14,8 +14,8 @@
 <div id="app" class="h-screen flex flex-col">
 	<div class="bg-white">
 	    <div class="container mx-auto px-4">
-    		<div class="w-full flex justify-between py-2 pt-4">
-    			<a class="w-48" href="https://idc.com/uk" target="_blank"><img src="{{ asset('images/dassault.svg')}}" alt=""></a>
+    		<div class="w-full flex justify-between items-center py-2 pt-4">
+    			<a class="w-1/2" href="https://idc.com/uk" target="_blank"><img src="{{ asset('images/dassault.svg')}}" alt=""></a>
     			<a class="w-48" href="https://idc.com/uk" target="_blank"><img src="{{ asset('images/idclogocolour.svg')}}" alt=""></a>
 	    	</div>
 	    </div>

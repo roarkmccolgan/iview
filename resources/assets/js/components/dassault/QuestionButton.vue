@@ -95,7 +95,7 @@ export default{
 	},
 	methods:{
 		selectOption: function(label, value, name, checked, type){
-			console.log(label, value, name, checked, type);
+			//console.log(label, value, name, checked, type);
 			var selected = {
 				question: this.question.name,
 				label: label,

@@ -16,7 +16,6 @@ return [
         'benchmark-size-100-to-249' => [14, 42, 10],
         'benchmark-size-250-to-499' => [9, 40, 18],
         'benchmark-size-500-to-999' => [3, 45, 20],
-        'benchmark-size-1000-or-more' => [],
 
         'benchmark-vertical-fsi' => [1, 19, 7],
         'benchmark-vertical-manufacturing' => [3, 21, 8],

@@ -17,7 +17,7 @@ return array(
     'download-now'=>'Download Now',
 
     'title'=>'Dassault Systèmes Digital Fitness Capability Assessment',
-    'sub-title'=>'How digtially fit is your business?',
+    'sub-title'=>'How digitally fit is your business?',
     'landing'=>'
         <p class="mb-2">
             IDC, a global leading provider of technology market research, has developed the Digital Fitness capability assessment, sponsored by Dassault Systèmes, to help start-ups and SMBs focused on Digital Design to assess their capability to cater to customers\' needs in an increasingly faster moving and competitive market.

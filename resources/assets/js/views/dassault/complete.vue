@@ -9,7 +9,7 @@
 				<div class="w-full sm:w-1/2 relative">
 					<h2 class="font-light leading-tight mb-4 text-dassault-blue">{{ $t('dassault.finishtxtheading') }}</h2>
 					<p>
-						{{ $t('dassault.finishtxt1') }}: <strong class="inline font-bold text-lg text-dassault-blue">{{ stage }}</strong>
+						{{ $t('dassault.finishtxt1') }}: <strong class="inline font-bold text-lg text-dassault-blue">{{ $t('dassault.'+result.overall.rating) }}</strong>
 					</p>
 					<p class="mb-2">
 						{{ $t('dassault.finishtxt'+theResult['overall'].rating) }}
@@ -96,6 +96,7 @@
 												<option value="100 to 249" v-html="$t('dassault.size5')"></option>
 												<option value="250 to 499" v-html="$t('dassault.size6')"></option>
 												<option value="500 to 999" v-html="$t('dassault.size7')"></option>
+												<option value="1000 or more" v-html="$t('dassault.size8')"></option>
 											</select>
 											<div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-darker">
 												<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>

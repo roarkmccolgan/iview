@@ -48,7 +48,7 @@
 					<group-opposing-slider :answer="answer" :question="currentQuestion" v-on:selectOption="selectOption" :showDetails="showDetails"></group-opposing-slider>
 				</template>
 				<template v-else-if="currentQuestion.type == 'groupbutton'">
-					<group-button :answer="answer" :question="currentQuestion" v-on:selectOption="selectOption" :showDetails="showDetails"></group-button>
+					<group-button :answer="answer" :question="currentQuestion" :questions="questions" v-on:selectOption="selectOption" :showDetails="showDetails"></group-button>
 				</template>
 			</div>
 			<div class="container mx-auto mt-4">
@@ -98,7 +98,7 @@ export default{
 			error: false,
 			errorClass: 'border-red-lighter bg-red-lightest text-red-light',
 			noticeClass: 'border-blue-light bg-blue-lighter text-dassault-blue',
-			result: []
+			result: [],
 		}
 	},
 	computed: {
@@ -162,7 +162,7 @@ export default{
 			});
 		},
 		selectOption: function(selected){
-			console.log(selected);
+			//console.log(selected);
 			//q16,16.1,"the label of the answer", true
 			if(this.isGroup){
 				// if(this.answer.length>0){
@@ -174,7 +174,7 @@ export default{
 						if(Array.isArray(this.answer[i])){
 							for (var j = this.answer[i].length - 1; j >= 0; j--) {
 								if(this.answer[i][j].name == selected[0].name){
-									console.log(this.answer[i][j].name);
+									//console.log(this.answer[i][j].name);
 									exists = i;
 								}
 							}
@@ -206,6 +206,23 @@ export default{
 					}
 					if(this.answer.length == this.currentQuestion.options.length){
 						this.showNext = true;
+					}else{
+						let numToShow = this.currentQuestion.options.length;
+						for (var i = this.currentQuestion.options.length - 1; i >= 0; i--) {
+							if(this.currentQuestion.options[i].show){
+								let check = this.currentQuestion.options[i].show;
+								let selected = this.questions['q'+check.question].selected;
+								
+								let filtered = selected.filter(answer => answer.name == check.answer);
+								
+								if(!eval(`${filtered[0].value} ${check.operator} ${check.value}`)){
+									numToShow --;
+								}
+							}
+						}
+						if(numToShow == this.answer.length){
+							this.showNext = true;
+						}
 					}
 				}
 			}else{
@@ -293,7 +310,7 @@ export default{
 		for (var q in this.questions) {
 			if (this.questions.hasOwnProperty(q)){
 				if(!this.questions[q].selected){
-					console.log('not answered '+this.questions[q].name);
+					//console.log('not answered '+this.questions[q].name);
 					this.$router.replace('/questions/'+ this.questions[q].name);
 					this.showNext = false;
 					break;
