@@ -11,7 +11,7 @@
 @stop
 
 @section('main')
-<div id="app" class="h-screen flex flex-col">
+<div id="app" class="h-screen flex flex-col relative">
 	<div class="bg-white">
 	    <div class="container mx-auto px-4">
     		<div class="w-full flex justify-between items-center py-2 pt-4">

@@ -67,6 +67,7 @@ let colors = {
   'trend-grey': 'rgb(102,102,102)',
   
   'blackblack': 'rgb(0,0,0)',
+  'black-transparent': 'rgba(0,0,0, 0.5)',
 
   'black': '#22292f',
   'grey-darkest': '#3d4852',

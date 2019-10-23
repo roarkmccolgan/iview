@@ -357,6 +357,48 @@ return [
                                     ]
                                 ]
                             ]
+                        ],
+                        'skipNext' => [
+                            [
+                                'question' => 3.1,
+                                'operator' => '<',
+                                'value' => 3
+                            ],
+                            [
+                                'question' => 3.2,
+                                'operator' => '<',
+                                'value' => 3
+                            ],
+                            [
+                                'question' => 3.3,
+                                'operator' => '<',
+                                'value' => 3
+                            ],
+                            [
+                                'question' => 3.4,
+                                'operator' => '<',
+                                'value' => 3
+                            ],
+                            [
+                                'question' => 3.5,
+                                'operator' => '<',
+                                'value' => 3
+                            ],
+                            [
+                                'question' => 3.6,
+                                'operator' => '<',
+                                'value' => 3
+                            ],
+                            [
+                                'question' => 3.7,
+                                'operator' => '<',
+                                'value' => 3
+                            ],
+                            [
+                                'question' => 3.8,
+                                'operator' => '<',
+                                'value' => 3
+                            ],    
                         ]
                     ]
                 ]
@@ -1148,6 +1190,12 @@ return [
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
+                                ],
+                                'show' => [
+                                    'question' => 3,
+                                    'answer' => 3.1,
+                                    'operator' => '>',
+                                    'value' => 1
                                 ]
                             ],
                             [
@@ -1169,6 +1217,12 @@ return [
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
+                                ],
+                                'show' => [
+                                    'question' => 3,
+                                    'answer' => 3.2,
+                                    'operator' => '>',
+                                    'value' => 1
                                 ]
                             ],
                             [
@@ -1190,6 +1244,12 @@ return [
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
+                                ],
+                                'show' => [
+                                    'question' => 3,
+                                    'answer' => 3.3,
+                                    'operator' => '>',
+                                    'value' => 1
                                 ]
                             ],
                             [
@@ -1211,6 +1271,12 @@ return [
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
+                                ],
+                                'show' => [
+                                    'question' => 3,
+                                    'answer' => 3.4,
+                                    'operator' => '>',
+                                    'value' => 1
                                 ]
                             ],
                             [
@@ -1232,6 +1298,12 @@ return [
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
+                                ],
+                                'show' => [
+                                    'question' => 3,
+                                    'answer' => 3.5,
+                                    'operator' => '>',
+                                    'value' => 1
                                 ]
                             ],
                             [
@@ -1253,6 +1325,12 @@ return [
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
+                                ],
+                                'show' => [
+                                    'question' => 3,
+                                    'answer' => 3.6,
+                                    'operator' => '>',
+                                    'value' => 1
                                 ]
                             ],
                             [
@@ -1274,6 +1352,12 @@ return [
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
+                                ],
+                                'show' => [
+                                    'question' => 3,
+                                    'answer' => 3.7,
+                                    'operator' => '>',
+                                    'value' => 1
                                 ]
                             ],
                             [
@@ -1295,6 +1379,12 @@ return [
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
+                                ],
+                                'show' => [
+                                    'question' => 3,
+                                    'answer' => 3.8,
+                                    'operator' => '>',
+                                    'value' => 1
                                 ]
                             ]
                         ]

@@ -32,18 +32,22 @@
 		<div class="container mx-auto text-white">
 			<div class="flex flex-wrap -mx-3">
 				<div class="sm:w-1/2 px-3 mb-6">
-					<div class="sm:flex bg-dassault-purple p-4">
-						<div class="sm:w-1/2 mr-4 mb-2 sm:mb-0">
-							<img class="block" :src="'/images/tools/' + assessment.tool.id + '/infobrief.png'" alt="">
-						</div>
-						<div class="sm:flex sm:flex-col sm:w-1/2 text-sm">
-							<h3 class="leading-tight mb-2">{{ $t('dassault.how-the-wan') }}</h3>
-							<p class="mb-2 flex-grow">
-								{{ $t('dassault.an-infbrief') }}
-							</p>
-							<a :href="'/downloads/IDC_EUR145478719_Dassault_Digital_Fitness_infobrief'+ assessment.locale +'.pdf'" target="_blank" class="block bg-white text-center border text-dassault-blue border-white hover:bg-white shadow py-2 px-4 rounded no-underline" @click="trackEvent('asset', 'download', 'Infobrief_'+$i18n.locale)">{{ $t('dassault.download-now') }}</a>
-						</div>
-					</div>
+					<a class="no-underline text-current" @click.prevent="showVideo = true">
+						<div class="sm:flex bg-dassault-purple p-4">
+							<div class="sm:w-1/2 mr-4 mb-2 sm:mb-0 cursor-pointer">
+								<img class="block" :src="'/images/tools/' + assessment.tool.id + '/video.png'" alt="">
+							</div>
+							<div class="sm:flex sm:flex-col sm:w-1/2 text-sm">
+								<h3 class="leading-tight mb-2">{{ $t('dassault.accellerating-success') }}</h3>
+								<p class="mb-2 flex-grow">
+									{{ $t('dassault.a-video') }}
+								</p>
+								<div class="block bg-white text-center border text-dassault-blue border-white hover:bg-white shadow py-2 px-4 rounded cursor-pointer" @click="trackEvent('asset', 'download', 'Infobrief_'+$i18n.locale)">
+									{{ $t('dassault.view-now') }}
+								</div>
+							</div>
+						</div>						
+					</a>
 				</div>
 				<div class="sm:w-1/2 px-3">
 					<div class="sm:flex bg-dassault-purple p-4">
@@ -52,7 +56,10 @@
 						</div>
 						<div class="sm:flex sm:flex-col sm:w-1/2 text-sm">
 							<h3 class="leading-tight mb-2">{{ $t('dassault.driver-of') }}</h3>
-							<p class="mb-2 flex-grow">
+							<p class="">
+								{{ $t('dassault.an-infographic-sub') }}
+							</p>
+							<p class="mb-2 flex-grow text-grey-light">
 								{{ $t('dassault.an-infographic') }}
 							</p>
 							<a :href="'/downloads/IDC_EUR145449199_Dassault_infobites'+ assessment.locale +'.pdf'" target="_blank" class="block bg-white text-center border text-dassault-blue border-white hover:bg-white shadow py-2 px-4 rounded no-underline" @click="trackEvent('asset', 'download', 'Infographic_'+$i18n.locale)">{{ $t('dassault.download-now') }}</a>
@@ -60,6 +67,18 @@
 					</div>		
 				</div>
 			</div>
+		</div>
+		<div class="fixed pin bg-black-transparent flex justify-center items-start sm:items-center z-10" v-if="showVideo">
+			<div class="w-full rounded shadow md:w-2/3 sm:mt-2" >
+				<div class="w-full relative aspect-16x9">
+					<span class="absolute text-white p-2 rounded-full cursor-pointer" style="top: -40px; right: -40px" @click="showVideo = false">Close ×</span>
+					<video class="absolute w-full" controls autoplay>
+						<source :src="'/video/tools/' + assessment.tool.id + '/3DS-Digital-Fitness-Video.mp4'"
+						type="video/mp4">
+						Sorry, your browser doesn't support embedded videos.
+					</video>
+				</div>
+			</div>		
 		</div>
 	</div>
 		
@@ -75,7 +94,8 @@ export default{
 			icons: {
 				faArrowRight: faArrowRight,
 				faGlobe: faGlobe,
-			}
+			},
+			showVideo: false
 		}
 	},
 	computed: {
@@ -95,12 +115,38 @@ export default{
 			this.$ga.event(category, action, label);
 		}
 	},
+	watch: {
+		showVideo: {
+			immediate: true,
+			handler: showVideo => {
+				if (showVideo) {
+					document.body.style.setProperty('overflow', 'hidden')
+				} else {
+					document.body.style.removeProperty('overflow')
+				}
+			}
+		}
+	},
 	created: function(){
 		for (var q in this.questions) {
 			if (this.questions.hasOwnProperty(q)){
 				delete this.questions[q].selected;
 			}
 		}
+		const listener = document.addEventListener('keydown', e => {
+			if (this.showVideo && e.keyCode === 27) {
+				this.showVideo = false
+			}
+		})
+		this.$once('hook:beforeDestroy', () => {
+			document.removeEventListener('keydown', listener)
+			document.body.style.removeProperty('overflow')
+		})
 	}
 }
 </script>
+<style scoped type="text/css">
+	.aspect-16x9 {
+	  padding-bottom: 56.25%;
+	}
+</style>

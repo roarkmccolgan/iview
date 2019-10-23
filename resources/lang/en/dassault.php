@@ -10,14 +10,18 @@ return array(
 
     'change-langauge'=>'Change language',
     'further-insight'=>'More information',
+    'accellerating-success'=>'Accelerating success in Startups and SMB Digital Engineering with Cloud',
+    'a-video'=>'A video by IDC',
     'how-the-wan'=>'Digital Fitness Infobrief',
     'an-infbrief'=>'An Infobrief by IDC',
-    'driver-of'=>'Digital Fitness Infographic',
-    'an-infographic'=>'An Infographic by IDC',
+    'driver-of'=>'Digital Fitness Infobite',
+    'an-infographic'=>'An Infobite by IDC',
+    'an-infographic-sub'=>'Learn how others in your market rank.',
     'download-now'=>'Download Now',
+    'view-now'=>'View Now',
 
-    'title'=>'Dassault Systèmes Digital Fitness Capability Assessment',
-    'sub-title'=>'How digitally fit is your business?',
+    'title'=>'Dassault Systèmes Digital Maturity Assessment',
+    'sub-title'=>'How digitally "fit" is your business?',
     'landing'=>'
         <p class="mb-2">
             IDC, a global leading provider of technology market research, has developed the Digital Fitness capability assessment, sponsored by Dassault Systèmes, to help start-ups and SMBs focused on Digital Design to assess their capability to cater to customers\' needs in an increasingly faster moving and competitive market.
@@ -76,7 +80,7 @@ return array(
         'title'=> 'Digital Delivery',
     ],
     'finishtxtheading' => '
-        Thank you for completing the IDC Digital Fitness Capability Assessment.
+        Thank you for completing the IDC Digital Maturity Assessment.
     ',
     'finishtxt1' => 'Based on your total responses, you rank as a',
     'finishtxtstage1' => '
@@ -101,9 +105,9 @@ return array(
         </a>',
     'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @3ds. Interested? ',// http://bit.ly/2gslXEh
     'email'=>[
-        'subject' => 'Dassault Systèmes Digital Fitness Capability Assessment',
+        'subject' => 'Dassault Systèmes Digital Maturity Assessment',
         'hi' => 'Hi :Fname',
-        'body' => 'As promised, here\'s a link to download your Dassault Systèmes Digital Fitness Capability Assessment Report.',
+        'body' => 'As promised, here\'s a link to download your Dassault Systèmes Digital Maturity Assessment Report.',
         'link' => 'Download Report',
         'extra' => 'Once you\'ve read the report why not visit Dassault Systèmes <a href="https://www.3ds.com/3dexperience/cloud/" style="color:#054683">3DS</a>',
         'regards' => 'Regards',
@@ -130,7 +134,7 @@ return array(
     'overallintro'=>'
         <h2 class="text-dassault-blue mb-6">OVERALL RANKING</h2>
         <p class="mb-2">
-            Startups and SMBs can only successfully compete in the global economy if they are digitally fit and take advantage of the digital technologies like digital design and engineering apps delivered from the cloud. IDC\'s Digital Fitness Assessment Tool scores startups and SMBs on their digital fitness by looking at three core elements - digital business, digital design and digital delivery. 
+            Startups and SMBs can only successfully compete in the global economy if they are digitally "fit" and take advantage of the digital technologies like digital design and engineering apps delivered from the cloud. IDC\'s Digital Fitness Assessment Tool scores startups and SMBs on their digital fitness by looking at three core elements - digital business, digital design and digital delivery. 
         </p>
     ',
     'overallstage1'=>'

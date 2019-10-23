@@ -133,7 +133,8 @@ export default{
 			if(this.saving)
 				return;
 			this.questions['q'+this.$route.params.question].selected = this.answer;
-			var nextQ = Number(this.$route.params.question)+1;
+			let nextQuestionNumber = this.gotoNextQuestionNumber();
+			var nextQ = nextQuestionNumber;
 			this.showNext = false;
 			this.showDetails = false;
 			var that = this;
@@ -291,6 +292,42 @@ export default{
 		getResults: function(){
 			var that = this;
 			return axios.post('/api/tool/get-results');
+		},
+		gotoNextQuestionNumber: function(){
+			let next = Number(this.$route.params.question)+1;
+			if(! this.questions['q'+this.$route.params.question].skipNext){
+				return next;
+			}
+			let shouldSkip = [];
+			for (var i = this.questions['q'+this.$route.params.question].skipNext.length - 1; i >= 0; i--) {
+				let name = this.questions['q'+this.$route.params.question].skipNext[i].question;
+				let operator = this.questions['q'+this.$route.params.question].skipNext[i].operator;
+				let value = this.questions['q'+this.$route.params.question].skipNext[i].value;
+
+				for (var j = this.answer.length - 1; j >= 0; j--) {
+					if(this.answer[j].name == name){
+						shouldSkip.push(eval(`${this.answer[j].value} ${operator} ${value}`));
+					}
+				}
+			}
+			if(shouldSkip.length == this.answer.length){
+				console.log('shouldskip');
+				let answer = [];
+				for (var j = this.questions['q'+next].options.length - 1; j >= 0; j--) {
+					let ansObj = {};
+					ansObj.label = 'Question option ignored';
+					ansObj.name = this.questions['q'+next].options[j].name;
+					ansObj.question = this.questions['q'+next].name;
+					ansObj.value = 0;
+					answer.push(ansObj);
+				}
+				this.questions['q'+next].selected = answer;
+				next = next+1
+			}else{
+				console.log('dontskip');
+			}
+			
+			return next;
 		}
 	},
 	filters: {

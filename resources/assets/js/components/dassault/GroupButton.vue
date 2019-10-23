@@ -30,6 +30,7 @@ export default{
 		return {
 			showOption: 0,
 			allAtOnce: true,
+			showingOne: false
 		};
 	},
 	computed: {
@@ -70,8 +71,11 @@ export default{
 			let selected = this.questions['q'+check.question].selected;
 			
 			let filtered = selected.filter(answer => answer.name == check.answer);
-			
-			return eval(`${filtered[0].value} ${check.operator} ${check.value}`);
+			let isShowinging = eval(`${filtered[0].value} ${check.operator} ${check.value}`);
+			if(isShowinging){
+				this.showingOne = isShowinging;				
+			}
+			return isShowinging;
 		}
 	},
 	events:{},
@@ -79,6 +83,7 @@ export default{
 		
 	},
 	mounted: function(){
+		
 	}
 }
 </script>
