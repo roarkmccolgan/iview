@@ -65,6 +65,11 @@ let colors = {
 
   'trend-red': 'rgb(215,25,32)',
   'trend-grey': 'rgb(102,102,102)',
+
+  'hitachi-red': 'rgb(204,0,0)',
+  'hitachi-grey-light': 'rgb(217,217,217)',
+  'hitachi-grey-medium': 'rgb(150,150,150)',
+  'hitachi-grey-dark': 'rgb(65,65,65)',
   
   'blackblack': 'rgb(0,0,0)',
   'black-transparent': 'rgba(0,0,0, 0.5)',

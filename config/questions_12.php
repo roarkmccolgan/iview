@@ -360,41 +360,49 @@ return [
                         ],
                         'skipNext' => [
                             [
+                                'q' => 'q3',
                                 'question' => 3.1,
                                 'operator' => '<',
                                 'value' => 3
                             ],
                             [
+                                'q' => 'q3',
                                 'question' => 3.2,
                                 'operator' => '<',
                                 'value' => 3
                             ],
                             [
+                                'q' => 'q3',
                                 'question' => 3.3,
                                 'operator' => '<',
                                 'value' => 3
                             ],
                             [
+                                'q' => 'q3',
                                 'question' => 3.4,
                                 'operator' => '<',
                                 'value' => 3
                             ],
                             [
+                                'q' => 'q3',
                                 'question' => 3.5,
                                 'operator' => '<',
                                 'value' => 3
                             ],
                             [
+                                'q' => 'q3',
                                 'question' => 3.6,
                                 'operator' => '<',
                                 'value' => 3
                             ],
                             [
+                                'q' => 'q3',
                                 'question' => 3.7,
                                 'operator' => '<',
                                 'value' => 3
                             ],
                             [
+                                'q' => 'q3',
                                 'question' => 3.8,
                                 'operator' => '<',
                                 'value' => 3
@@ -1151,6 +1159,56 @@ return [
                                 'value'=>5,
                                 'checked'=>false,
                             ]
+                        ],
+                        'skipNext' => [
+                            [
+                                'q' => 'q3',
+                                'question' => 3.1,
+                                'operator' => '<',
+                                'value' => 2
+                            ],
+                            [
+                                'q' => 'q3',
+                                'question' => 3.2,
+                                'operator' => '<',
+                                'value' => 2
+                            ],
+                            [
+                                'q' => 'q3',
+                                'question' => 3.3,
+                                'operator' => '<',
+                                'value' => 2
+                            ],
+                            [
+                                'q' => 'q3',
+                                'question' => 3.4,
+                                'operator' => '<',
+                                'value' => 2
+                            ],
+                            [
+                                'q' => 'q3',
+                                'question' => 3.5,
+                                'operator' => '<',
+                                'value' => 2
+                            ],
+                            [
+                                'q' => 'q3',
+                                'question' => 3.6,
+                                'operator' => '<',
+                                'value' => 2
+                            ],
+                            [
+                                'q' => 'q3',
+                                'question' => 3.7,
+                                'operator' => '<',
+                                'value' => 2
+                            ],
+                            [
+                                'q' => 'q3',
+                                'question' => 3.8,
+                                'operator' => '<',
+                                'value' => 2
+                            ],    
                         ]
                     ]
                 ]

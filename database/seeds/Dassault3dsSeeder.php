@@ -30,7 +30,7 @@ class Dassault3dsSeeder extends Seeder
         ]);
         DB::table('urls')->insert([
             'domain' => 'idcready.net',
-            'subdomain' => 'dassaultdigitalfitness',
+            'subdomain' => 'dassaultdigitalmaturity',
             'language_id' => 1,
             'urlable_id' => 12,
             'urlable_type' => 'App\Tool',
@@ -38,7 +38,7 @@ class Dassault3dsSeeder extends Seeder
         ]);
         DB::table('urls')->insert([
             'domain' => 'idcready.test',
-            'subdomain' => 'dassaultdigitalfitness',
+            'subdomain' => 'dassaultdigitalmaturity',
             'language_id' => 1,
             'urlable_id' => 12,
             'urlable_type' => 'App\Tool',

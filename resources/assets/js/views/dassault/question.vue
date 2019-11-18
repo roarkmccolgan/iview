@@ -133,34 +133,66 @@ export default{
 			if(this.saving)
 				return;
 			this.questions['q'+this.$route.params.question].selected = this.answer;
-			let nextQuestionNumber = this.gotoNextQuestionNumber();
-			var nextQ = nextQuestionNumber;
-			this.showNext = false;
-			this.showDetails = false;
-			var that = this;
-			this.saving = true;
-			this.saveAssessment().then(function (response) {
-				if(response.data == 'success'){
-					if(that.questions.hasOwnProperty('q'+nextQ)){
-						setTimeout(function () {
-							that.showDetails = true;
-							that.$router.push({ path: '/questions/'+ nextQ});
-							that.answer = [];
-							that.saving = that.error = false;
-							document.body.scrollTop = 0; // For Safari
-	    					document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-						}, 300);
-					}else{
-						that.getResults().then(function (response) {
-							if(response.data.query == 'success'){
-								that.$router.push({ name: 'complete', params:{result: response.data.result}});
+			(async () => {
+				let nextQuestionNumber = await this.gotoNextQuestionNumber();
+				var nextQ = nextQuestionNumber;
+				console.log('Next ',nextQ);
+				this.showNext = false;
+				this.showDetails = false;
+				var that = this;
+				this.saving = true;
+				this.saveAssessment().then(function (response) {
+					if(response.data == 'success'){
+						if(that.questions.hasOwnProperty('q'+nextQ)){
+							setTimeout(function () {
+								that.showDetails = true;
+								that.$router.push({ path: '/questions/'+ nextQ});
+								that.answer = [];
+								that.saving = that.error = false;
 								document.body.scrollTop = 0; // For Safari
-	    						document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-							}
-						});
+		    					document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+							}, 300);
+						}else{
+							that.getResults().then(function (response) {
+								if(response.data.query == 'success'){
+									that.$router.push({ name: 'complete', params:{result: response.data.result}});
+									document.body.scrollTop = 0; // For Safari
+		    						document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+								}
+							});
+						}
 					}
-				}
-			});
+				});
+			})()
+			//let nextQuestionNumber = this.gotoNextQuestionNumber();
+			// var nextQ = nextQuestionNumber;
+			// console.log('Next ',nextQ);
+			// this.showNext = false;
+			// this.showDetails = false;
+			// var that = this;
+			// this.saving = true;
+			// this.saveAssessment().then(function (response) {
+			// 	if(response.data == 'success'){
+			// 		if(that.questions.hasOwnProperty('q'+nextQ)){
+			// 			setTimeout(function () {
+			// 				that.showDetails = true;
+			// 				that.$router.push({ path: '/questions/'+ nextQ});
+			// 				that.answer = [];
+			// 				that.saving = that.error = false;
+			// 				document.body.scrollTop = 0; // For Safari
+	  //   					document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+			// 			}, 300);
+			// 		}else{
+			// 			that.getResults().then(function (response) {
+			// 				if(response.data.query == 'success'){
+			// 					that.$router.push({ name: 'complete', params:{result: response.data.result}});
+			// 					document.body.scrollTop = 0; // For Safari
+	  //   						document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+			// 				}
+			// 			});
+			// 		}
+			// 	}
+			// });
 		},
 		selectOption: function(selected){
 			//console.log(selected);
@@ -300,17 +332,19 @@ export default{
 			}
 			let shouldSkip = [];
 			for (var i = this.questions['q'+this.$route.params.question].skipNext.length - 1; i >= 0; i--) {
+				let question = this.questions['q'+this.$route.params.question].skipNext[i].q;
 				let name = this.questions['q'+this.$route.params.question].skipNext[i].question;
 				let operator = this.questions['q'+this.$route.params.question].skipNext[i].operator;
 				let value = this.questions['q'+this.$route.params.question].skipNext[i].value;
 
-				for (var j = this.answer.length - 1; j >= 0; j--) {
-					if(this.answer[j].name == name){
-						shouldSkip.push(eval(`${this.answer[j].value} ${operator} ${value}`));
+				for (var j = this.questions[question].selected.length - 1; j >= 0; j--) {
+					if(this.questions[question].selected[j].name == name){
+						shouldSkip.push(eval(`${this.questions[question].selected[j].value} ${operator} ${value}`));
 					}
 				}
 			}
-			if(shouldSkip.length == this.answer.length){
+
+			if(shouldSkip.length == this.questions['q'+next].options.length){
 				console.log('shouldskip');
 				let answer = [];
 				for (var j = this.questions['q'+next].options.length - 1; j >= 0; j--) {
@@ -322,12 +356,21 @@ export default{
 					answer.push(ansObj);
 				}
 				this.questions['q'+next].selected = answer;
-				next = next+1
+				return axios.post('/api/tool/save-assessment', {
+					question: 'q'+next,
+					answer: answer
+				}).then(function (response) {
+					if(response.data == 'success'){
+						return next+1;
+					}else{
+						return alert('Request Failed, please contact IDC');
+					}
+				});
+				return next;
 			}else{
 				console.log('dontskip');
+				return next;
 			}
-			
-			return next;
 		}
 	},
 	filters: {

@@ -227,7 +227,7 @@ class ToolController extends Controller
         $totalQuestions = count($onlyQuestions);
         $return_visitor = $request->cookie('quiz_progress');
         $class = 'intro';
-        if ($tool->template=='nttsdwan' || $tool->template=='trendmicromssp' || $tool->template=='nttdata' || $tool->template=='dassault') {
+        if ($tool->template=='nttsdwan' || $tool->template=='trendmicromssp' || $tool->template=='nttdata' || $tool->template=='dassault' || $tool->template=='hitachi') {
             $view = 'tool.'.session('template').'.assessment';
         } else {
             $view = 'tool.'.session('template').'.intro';
@@ -906,6 +906,13 @@ class ToolController extends Controller
                                             $norm+=$selected;
                                         }
                                         $val = ($norm/$details['calc']['value'])*count($details['selected']);
+                                    } else{
+                                        $val = 0;
+                                        foreach ($details['selected'] as $selected) {
+                                            $selected = explode('|', $selected);
+                                            $selected = $selected[1];
+                                            $val+=$selected;
+                                        }
                                     }
                                 } else {
                                     $valHold = 0;

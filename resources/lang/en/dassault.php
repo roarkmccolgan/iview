@@ -12,29 +12,29 @@ return array(
     'further-insight'=>'More information',
     'accellerating-success'=>'Accelerating success in Startups and SMB Digital Engineering with Cloud',
     'a-video'=>'A video by IDC',
-    'how-the-wan'=>'Digital Fitness Infobrief',
+    'how-the-wan'=>'Digital Maturity Infobrief',
     'an-infbrief'=>'An Infobrief by IDC',
-    'driver-of'=>'Digital Fitness Infobite',
+    'driver-of'=>'Digital Maturity Infobite',
     'an-infographic'=>'An Infobite by IDC',
     'an-infographic-sub'=>'Learn how others in your market rank.',
     'download-now'=>'Download Now',
     'view-now'=>'View Now',
 
     'title'=>'Dassault Systèmes Digital Maturity Assessment',
-    'sub-title'=>'How digitally "fit" is your business?',
+    'sub-title'=>'How digitally mature is your business?',
     'landing'=>'
         <p class="mb-2">
-            IDC, a global leading provider of technology market research, has developed the Digital Fitness capability assessment, sponsored by Dassault Systèmes, to help start-ups and SMBs focused on Digital Design to assess their capability to cater to customers\' needs in an increasingly faster moving and competitive market.
+            IDC, a global leading provider of technology market research, has developed the Digital Maturity capability assessment, sponsored by Dassault Systèmes, to help start-ups and SMBs focused on Digital Design to assess their capability to cater to customers\' needs in an increasingly faster moving and competitive market.
         </p>
         <p class="mb-2">
-            This self-assessment tool is backed up by independent end-user research and IDC\'s in depth understanding of Cloud and Technology markets. Upon completion of a short survey (under 10 minutes) you will receive a custom report that benchmarks your organization\'s Digital Fitness and provides you with essential and tailored guidance to help you advance in your digital journey to better cater to the needs of your demanding customers.
+            This self-assessment tool is backed up by independent end-user research and IDC\'s in depth understanding of Cloud and Technology markets. Upon completion of a short survey (under 10 minutes) you will receive a custom report that benchmarks your organization\'s Digital Maturity and provides you with essential and tailored guidance to help you advance in your digital journey to better cater to the needs of your demanding customers.
         </p>',
     'startbut'=>'Start Assessment',
     
     'send'=>'We can send you the full results directly to your mailbox',
     'register'=>'Register now to receive your personalized report',
     'provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
-    'byreg'=>'By registering with IDC, you accept our <a href="https://dassultdigitalfitness.idcready.net/privacy" target="_blank">Privacy Policy</a> and Dassault Systèmes, <a href="https://www.3ds.com/privacy-policy/" target="_blank">Privacy Policy</a>.',
+    'byreg'=>'By registering with IDC, you accept our <a href="https://dassultdigitalmaturity.idcready.net/privacy" target="_blank">Privacy Policy</a> and Dassault Systèmes, <a href="https://www.3ds.com/privacy-policy/" target="_blank">Privacy Policy</a>.',
     'wait'=>'While you\'re waiting why not tweet your results and see how your colleagues measure up?',
     'twitterlink'=>'https://twitter.com/home?status=Is%20your%20business%20GDPR%20ready?%20http%3A//bit.ly/2AwihN4%20%23Symantec',
     'facebooklink'=>'https://www.facebook.com/sharer/sharer.php?u=http%3A//bit.ly/2AwihN4',
@@ -93,7 +93,7 @@ return array(
         which is the highest level of three in this assessment.
     ',
     'finishtxt2' => '
-        <p class="mb-2 mt-4">Would you like the full report that provides you with essential guidance for advancing in your Digital Fitness journey? </p>
+        <p class="mb-2 mt-4">Would you like the full report that provides you with essential guidance for advancing in your Digital Maturity journey? </p>
         <p class="mb-4">We can send this directly to your mailbox. Just provide us your details and we\'ll send it to you.</p>
     ',
     'complete_thankyou' => 'Thank you :Fname,',
@@ -115,14 +115,14 @@ return array(
     ],
     'introduction' => '
         <h2 class="text-dassault-blue mb-4">INTRODUCTION</h2>
-        <p class="mb-6">Digital fitness is critical for the success of start-ups and SMBs today. Competing in the global economy for customers, investment and talent requires instant access to world-class applications and IT resources, that scale at the pace of your success. The cloud delivers this the flexibility and scale that underpins digital business success and democratises access to world-class technology, making it available and affordable for startups and SMBs alike. To assess the digital fitness of startups and SMBS, IDC has conducted a survey of 400 organisations across Germany, France, the U.K. and the U.S to understand how digital design and engineering applications are used in startup and SMB organisations. Based on the results, we have grouped the respondents into three categories, digital improver, digital achiever and digital native, to understand what sets the leaders in digital fitness apart from their competitors and which best practices we can learn from them.</p>
+        <p class="mb-6">Digital maturity is critical for the success of start-ups and SMBs today. Competing in the global economy for customers, investment and talent requires instant access to world-class applications and IT resources, that scale at the pace of your success. The cloud delivers this the flexibility and scale that underpins digital business success and democratises access to world-class technology, making it available and affordable for startups and SMBs alike. To assess the digital maturity of startups and SMBS, IDC has conducted a survey of 400 organisations across Germany, France, the U.K. and the U.S to understand how digital design and engineering applications are used in startup and SMB organisations. Based on the results, we have grouped the respondents into three categories, digital improver, digital achiever and digital native, to understand what sets the leaders in digital maturity apart from their competitors and which best practices we can learn from them.</p>
         
         <h2 class="text-dassault-blue mb-4">SURVEY HIGHLIGHTS</h2>
         <p class="mb-4">The key priorities for the leading start-ups and SMBs according to the survey are related to profitability. They want to either improve profitability or become profitable, depending on the organization\'s age and stage of development. Managing profitability requires a careful balance between making the necessary investments to drive innovation and keeping costs from spiralling out of control. Aligning business and IT priorities and supporting the business strategy with a flexible IT delivery model supports the journey towards profitability. Additional priorities are increasing brand awareness and accelerating time to market. Using the latest IT applications and tools helps attract talent and create a great experience for employees, customers and partners, which in turn helps to improve brand awareness. Accelerating time to market is typically done by working with agile methods, in short sprints and by getting feedback from the market fast. A cloud-based digital platform can facilitate collaboration across geographically dispersed employees but also across the ecosystem of customer, partners and suppliers. </p>
 
         <h2 class="text-dassault-blue mb-4">RANKING EXPLANATION</h2>
         <div class="w-1/2 float-left">
-            <p class="mb-4">Based on the benchmark survey, <strong>14.5%</strong> of respondents are <strong>Digital Natives</strong>, <strong>50.5%</strong> of respondents are <strong>Digital Achievers</strong> and <strong>35%</strong> of respondents are <strong>Digital Improvers</strong>. This distribution varies within the three categories of digital business, digital design and digital delivery, which make up the digital fitness index. Digital design is the most mature category, with 22% of respondents receiving a top score, while only 12.5% of respondents are top scorers in the digital business category, where dealing with changes in business patterns and staffing levels drive great challenges. Organizations who are better able to deal with fluctuations in business demand and staffing levels are scoring higher than organizations who are relying on rigid IT practices and hence cannot respond in an agile fashion to changing demands. The key to digital fitness is the ability to create great experiences for employees, customers and ecoystem partners through the use of digital technologies. The better an organization is equipped to do this, the better they score in the digital fitness index. </p>
+            <p class="mb-4">Based on the benchmark survey, <strong>14.5%</strong> of respondents are <strong>Digital Natives</strong>, <strong>50.5%</strong> of respondents are <strong>Digital Achievers</strong> and <strong>35%</strong> of respondents are <strong>Digital Improvers</strong>. This distribution varies within the three categories of digital business, digital design and digital delivery, which make up the digital maturity index. Digital design is the most mature category, with 22% of respondents receiving a top score, while only 12.5% of respondents are top scorers in the digital business category, where dealing with changes in business patterns and staffing levels drive great challenges. Organizations who are better able to deal with fluctuations in business demand and staffing levels are scoring higher than organizations who are relying on rigid IT practices and hence cannot respond in an agile fashion to changing demands. The key to digital maturity is the ability to create great experiences for employees, customers and ecoystem partners through the use of digital technologies. The better an organization is equipped to do this, the better they score in the digital maturity index. </p>
         </div>
         <div class="w-1/2 float-left">
             <div class="m-2"><img src=":rankimg" alt=""></div>
@@ -134,13 +134,13 @@ return array(
     'overallintro'=>'
         <h2 class="text-dassault-blue mb-6">OVERALL RANKING</h2>
         <p class="mb-2">
-            Startups and SMBs can only successfully compete in the global economy if they are digitally "fit" and take advantage of the digital technologies like digital design and engineering apps delivered from the cloud. IDC\'s Digital Fitness Assessment Tool scores startups and SMBs on their digital fitness by looking at three core elements - digital business, digital design and digital delivery. 
+            Startups and SMBs can only successfully compete in the global economy if they are digitally "fit" and take advantage of the digital technologies like digital design and engineering apps delivered from the cloud. IDC\'s Digital Maturity Assessment Tool scores startups and SMBs on their digital maturity by looking at three core elements - digital business, digital design and digital delivery. 
         </p>
     ',
     'overallstage1'=>'
         <div class="clearfix">
             <p class="mb-2 text-dassault-blue mt-4 font-bold">
-                You are at the beginning of your digital journey. Based on your responses to IDC\'s Digital Fitness Assessment Tool, your organization has been rated at the beginner level of three levels of Digital Fitness - Digital Improver.
+                You are at the beginning of your digital journey. Based on your responses to IDC\'s Digital Maturity Assessment Tool, your organization has been rated at the beginner level of three levels of Digital Maturity - Digital Improver.
             </p>
             <p class="mb-2 text-dassault-blue mt-4 font-bold">
                 This means you are only just starting with moving to a Digital Future compared to the rest of the industry and there is still much to do to be where you need to be to compete effectively over the longer term."
@@ -150,14 +150,14 @@ return array(
     'overallstage2'=>'
         <div class="clearfix">
             <p class="mb-2 text-dassault-blue mt-4 font-bold">
-                You are well under way with your digital journey. Based on your responses to IDC\'s Digital Fitness Assessment Tool, your organization has been rated at the second highest level of Digital Fitness - Digital Achiever. This means your organization is generally in line with the rest of the industry and readying itself for the digital future. While you are doing well, there is still more to do to be fully digital ready.
+                You are well under way with your digital journey. Based on your responses to IDC\'s Digital Maturity Assessment Tool, your organization has been rated at the second highest level of Digital Maturity - Digital Achiever. This means your organization is generally in line with the rest of the industry and readying itself for the digital future. While you are doing well, there is still more to do to be fully digital ready.
             </p>
         </div>
     ',
     'overallstage3'=>'
         <div class="clearfix">
             <p class="mb-2 text-dassault-blue mt-4 font-bold">
-                Congratulations! Based on your responses to IDC\'s Digital Fitness Assessment Tool, your organization has been rated at the highest level of Digital Fitness - Digital Native. This means your organization is generally ahead of the industry and blazing a trail to the digital future. Always bear in mind though that you need to keep working at this to stay ahead of the competition!
+                Congratulations! Based on your responses to IDC\'s Digital Maturity Assessment Tool, your organization has been rated at the highest level of Digital Maturity - Digital Native. This means your organization is generally ahead of the industry and blazing a trail to the digital future. Always bear in mind though that you need to keep working at this to stay ahead of the competition!
             </p>
         </div>
     ',
@@ -171,7 +171,7 @@ return array(
     'overalloutrostage1' => '
         <div class="clearfix">
             <p class="mb-2">
-                Your results indicate that there are many areas you can address to improve your Digital Fitness. This report will give you advice on areas to give priority to as you look to progress to the next stage of Digital Fitness, so let\'s turn to the next page and dig into what you can do.
+                Your results indicate that there are many areas you can address to improve your Digital Maturity. This report will give you advice on areas to give priority to as you look to progress to the next stage of Digital Maturity, so let\'s turn to the next page and dig into what you can do.
             </p>
         </div>
         <div class="pb"></div>
@@ -179,7 +179,7 @@ return array(
     'overalloutrostage2' => '
         <div class="clearfix">
             <p class="mb-2">
-                Your results indicate that while you are well under way with your digital journey, there are also areas to address to catch up with the organisations with the best digital fitness. This report will give you advice on areas to give priority to as you look to progress to the next stage of digital fitness, so let\'s turn to the next page and dig into what you can do.
+                Your results indicate that while you are well under way with your digital journey, there are also areas to address to catch up with the organisations with the best digital maturity. This report will give you advice on areas to give priority to as you look to progress to the next stage of digital maturity, so let\'s turn to the next page and dig into what you can do.
             </p>
         </div>
         <div class="pb"></div>
@@ -187,7 +187,7 @@ return array(
     'overalloutrostage3' => '
         <div class="clearfix">
             <p class="mb-2">
-                Your results indicate that you are at the top of the pile when it comes to Digital Fitness. While this is great, there may be some areas for you to pay attention to stay ahead in the game. This report will give you advice on areas to focus on, so let\'s turn to the next page and dig into what you can do.
+                Your results indicate that you are at the top of the pile when it comes to Digital Maturity. While this is great, there may be some areas for you to pay attention to stay ahead in the game. This report will give you advice on areas to focus on, so let\'s turn to the next page and dig into what you can do.
             </p>
         </div>
         <div class="pb"></div>
@@ -202,7 +202,7 @@ return array(
                     A digital native business creates and delivers innovation at speed, puts customers at the core of its existence and treats employees as its most valued asset. It interacts with its ecosystem to co-create innovation and access and share resources. To determine how digital your business is, you can look at how much of your revenue comes from digital products and services, and how much of your business relies on digital tools, how well you support your customers and employees through digital channels and how you interact with your ecosytem digitally.
                 </p>
                 <p class="mb-2">
-                    This section of the report assesses the stage of your organization\'s Digital Fitness based on how digital your business is, how you are dealing with changes in business patterns and staffing levels, which applications you are using and how you deploy them.
+                    This section of the report assesses the stage of your organization\'s Digital Maturity based on how digital your business is, how you are dealing with changes in business patterns and staffing levels, which applications you are using and how you deploy them.
                 </p>
             </div>
         </div>
@@ -214,28 +214,28 @@ return array(
     'digital-business-1-stage1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score for this section indicates that you are in line with your Digital Improver peers with respect to the progress you have made so far. You are at the beginning of your journey, so there are many areas you need to address. You can look in to individual assessment areas within this section to understand what changes you could potentially make to improve your digital fitness.
+                Your overall score for this section indicates that you are in line with your Digital Improver peers with respect to the progress you have made so far. You are at the beginning of your journey, so there are many areas you need to address. You can look in to individual assessment areas within this section to understand what changes you could potentially make to improve your digital maturity.
             </p>
         </div>
     ',
     'digital-business-1-stage2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score for this section indicates that you are ahead of your Digital Improver peers with respect to the progress you have made so far. Very well done! While keeping up with this, you must also look at aspects related to digital design and digital delivery to improve your overall digital fitness.
+                Your overall score for this section indicates that you are ahead of your Digital Improver peers with respect to the progress you have made so far. Very well done! While keeping up with this, you must also look at aspects related to digital design and digital delivery to improve your overall digital maturity.
             </p>
         </div>
     ',
     'digital-business-1-stage3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score for this section indicates that you are ahead of your Digital Improver peers with respect to the progress you have made so far. Very well done! While keeping up with this, you must also look at aspects related to digital design and digital delivery to improve your overall digital fitness.
+                Your overall score for this section indicates that you are ahead of your Digital Improver peers with respect to the progress you have made so far. Very well done! While keeping up with this, you must also look at aspects related to digital design and digital delivery to improve your overall digital maturity.
             </p>
         </div>
     ',
     'digital-business-2-stage1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score for this section indicates that you are lagging behind your Digital Achiever peers with respect to your digital business approach. Digital business is an area that you should improve to catch up with your peers,  so you must take steps to accelerate the journey now. You should look in to individual assessment areas within this section to understand what changes you could potentially make to your digital business approach to improve your digital fitness.
+                Your overall score for this section indicates that you are lagging behind your Digital Achiever peers with respect to your digital business approach. Digital business is an area that you should improve to catch up with your peers,  so you must take steps to accelerate the journey now. You should look in to individual assessment areas within this section to understand what changes you could potentially make to your digital business approach to improve your digital maturity.
             </p>
         </div>
     ',
@@ -249,7 +249,7 @@ return array(
     'digital-business-2-stage3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score in this area indicates that you are lagging behind other Digital Native peers with regards to your digital business approach. You should look in to individual assessment areas within this section to understand what changes you could potentially make to your digital business approach. You have a lot of work to do so you should act urgently to address the areas of improvement. This will help sustain your strong position with respect to your overall digital fitness.
+                Your overall score in this area indicates that you are lagging behind other Digital Native peers with regards to your digital business approach. You should look in to individual assessment areas within this section to understand what changes you could potentially make to your digital business approach. You have a lot of work to do so you should act urgently to address the areas of improvement. This will help sustain your strong position with respect to your overall digital maturity.
             </p>
         </div>
     ',
@@ -257,21 +257,21 @@ return array(
     'digital-business-3-stage1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score for this section indicates that you are ahead of your Digital Improver peers with respect to the progress you have made so far. Very well done! While keeping up with this, you must also look at aspects related to digital design and digital delivery to improve your overall digital fitness.
+                Your overall score for this section indicates that you are ahead of your Digital Improver peers with respect to the progress you have made so far. Very well done! While keeping up with this, you must also look at aspects related to digital design and digital delivery to improve your overall digital maturity.
             </p>
         </div>
     ',
     'digital-business-3-stage2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score for this section indicates that you are ahead of your Digital Achiever peers with respect to the progress you have made. Very well done on your journey so far! While keeping up with this, you must also look at aspects related to digital design and digital delivery to improve your overall digital fitness.
+                Your overall score for this section indicates that you are ahead of your Digital Achiever peers with respect to the progress you have made. Very well done on your journey so far! While keeping up with this, you must also look at aspects related to digital design and digital delivery to improve your overall digital maturity.
             </p>
         </div>
     ',
     'digital-business-3-stage3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score in this area indicates that you are in line with the digital native peers with respect to the progress you have made with regards to your digital business approach. While keeping up with this, you can look at areas of improvement if any, related to digital design and digital delivery to improve your overall digital fitness.
+                Your overall score in this area indicates that you are in line with the digital native peers with respect to the progress you have made with regards to your digital business approach. While keeping up with this, you can look at areas of improvement if any, related to digital design and digital delivery to improve your overall digital maturity.
             </p>
         </div>
     ',
@@ -289,7 +289,7 @@ return array(
     'digital-business-1-q1-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you are dealing well with fluctuations in your business. This means that you are well ahead of your Digital Improver peers in enabling your business digitally. Well done! You should now focus your efforts on other areas to improve your overall digital fitness.
+                Based on your response, you are dealing well with fluctuations in your business. This means that you are well ahead of your Digital Improver peers in enabling your business digitally. Well done! You should now focus your efforts on other areas to improve your overall digital maturity.
             </p>
         </div>
     ',
@@ -325,7 +325,7 @@ return array(
     'digital-business-2-q1-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you are dealing well with fluctuations in your business. This means that you are well ahead of your Digital Achiever peers in enabling your business digitally. Well done! You should now focus your efforts on other areas to improve your overall digital fitness.
+                Based on your response, you are dealing well with fluctuations in your business. This means that you are well ahead of your Digital Achiever peers in enabling your business digitally. Well done! You should now focus your efforts on other areas to improve your overall digital maturity.
             </p>
         </div>
     ',
@@ -361,7 +361,7 @@ return array(
     'digital-business-3-q1-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you are dealing well with fluctuations in your business. This means that you are at par with your Digital Native peers in enabling your business digitally. Well done! You should now focus your efforts on other areas to finetune your overall digital fitness.
+                Based on your response, you are dealing well with fluctuations in your business. This means that you are at par with your Digital Native peers in enabling your business digitally. Well done! You should now focus your efforts on other areas to finetune your overall digital maturity.
             </p>
         </div>
     ',
@@ -405,7 +405,7 @@ return array(
     'digital-business-1-q2-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you are dealing well with fluctuations in your staffing levels. This means that you are well ahead of your Digital Improver peers in enabling your business digitally and responding to changes in the business environment. Well done! You should now focus your efforts on other areas to improve your overall digital fitness.
+                Based on your response, you are dealing well with fluctuations in your staffing levels. This means that you are well ahead of your Digital Improver peers in enabling your business digitally and responding to changes in the business environment. Well done! You should now focus your efforts on other areas to improve your overall digital maturity.
             </p>
         </div>
     ',
@@ -441,7 +441,7 @@ return array(
     'digital-business-2-q2-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you are dealing well with fluctuations in your staffing levels. This means that you are well ahead of your Digital Achiever peers in enabling your business digitally and responding to changes in the business environment. Well done! You should now focus your efforts on other areas to improve your overall digital fitness.
+                Based on your response, you are dealing well with fluctuations in your staffing levels. This means that you are well ahead of your Digital Achiever peers in enabling your business digitally and responding to changes in the business environment. Well done! You should now focus your efforts on other areas to improve your overall digital maturity.
             </p>
         </div>
     ',
@@ -477,7 +477,7 @@ return array(
     'digital-business-3-q2-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you are dealing well with fluctuations in your staffing levels. This means that you are at par with your Digital Native peers in enabling your business digitally. Well done! You should now focus your efforts on other areas to finetune your overall digital fitness.
+                Based on your response, you are dealing well with fluctuations in your staffing levels. This means that you are at par with your Digital Native peers in enabling your business digitally. Well done! You should now focus your efforts on other areas to finetune your overall digital maturity.
             </p>
         </div>
     ',
@@ -709,7 +709,7 @@ return array(
                     Digital Design is the creation of solutions  through software for viewing on a screen including applications for Computer Aided Design (CAD), Mechanical Computer Aided Engineering (CAE), Other engineering, Collaborative product data management, Production planning, or Manufacturing. Digital Design and engineering tools enable global collaboration around projects throughout the ecosystem and help to attract and retain talent. Through the use of cloud-based digital design and engineering tools, Start-ups and SMBs have access to world-class tools used by their established competitors, partners and customers, at an affordable price point and with the ability to scale driven by customer demand.
                 </p>
                 <p class="mb-2">
-                    This section of the report assesses the stage of your organization\'s Digital Fitness based on your usage of digital design and engineering tools, how modern your application estate is and how well you are able to operate your digital design and engineering applications.
+                    This section of the report assesses the stage of your organization\'s Digital Maturity based on your usage of digital design and engineering tools, how modern your application estate is and how well you are able to operate your digital design and engineering applications.
                 </p>
             </div>
         </div>
@@ -721,21 +721,21 @@ return array(
     'digital-design-1-stage1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score for this section indicates that you are in line with your Digital Improver peers with respect to the progress you have made so far. You are at the beginning of your journey, so there are many areas you need to address. You can look in to individual assessment areas within this section to understand what changes you could potentially make to improve your digital fitness.
+                Your overall score for this section indicates that you are in line with your Digital Improver peers with respect to the progress you have made so far. You are at the beginning of your journey, so there are many areas you need to address. You can look in to individual assessment areas within this section to understand what changes you could potentially make to improve your digital maturity.
             </p>
         </div>
     ',
     'digital-design-1-stage2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score for this section indicates that you are ahead of your Digital Improver peers with respect to the progress you have made so far. Very well done! While keeping up with this, you must also look at aspects related to digital design and digital delivery to improve your overall digital fitness.
+                Your overall score for this section indicates that you are ahead of your Digital Improver peers with respect to the progress you have made so far. Very well done! While keeping up with this, you must also look at aspects related to digital design and digital delivery to improve your overall digital maturity.
             </p>
         </div>
     ',
     'digital-design-1-stage3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score for this section indicates that you are ahead of your Digital Improver peers with respect to the progress you have made so far. Very well done! While keeping up with this, you must also look at aspects related to digital business and digital delivery to improve your overall digital fitness.
+                Your overall score for this section indicates that you are ahead of your Digital Improver peers with respect to the progress you have made so far. Very well done! While keeping up with this, you must also look at aspects related to digital business and digital delivery to improve your overall digital maturity.
             </p>
         </div>
     ',
@@ -743,7 +743,7 @@ return array(
     'digital-design-2-stage1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score for this section indicates that you are lagging behind your Digital Achiever peers with respect to your digital design approach. Digital design is an area that you should improve to catch up with your peers,  so you must take steps to accelerate the journey now. You should look in to individual assessment areas within this section to understand what changes you could potentially make to your digital design approach to improve your digital fitness.
+                Your overall score for this section indicates that you are lagging behind your Digital Achiever peers with respect to your digital design approach. Digital design is an area that you should improve to catch up with your peers,  so you must take steps to accelerate the journey now. You should look in to individual assessment areas within this section to understand what changes you could potentially make to your digital design approach to improve your digital maturity.
             </p>
         </div>
     ',
@@ -757,7 +757,7 @@ return array(
     'digital-design-2-stage3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score for this section indicates that you are ahead of your Digital Achiever peers with respect to the progress you have made. Very well done on your journey so far! While keeping up with this, you must also look at aspects related to digital business and digital delivery to improve your overall digital fitness.
+                Your overall score for this section indicates that you are ahead of your Digital Achiever peers with respect to the progress you have made. Very well done on your journey so far! While keeping up with this, you must also look at aspects related to digital business and digital delivery to improve your overall digital maturity.
             </p>
         </div>
     ',
@@ -765,21 +765,21 @@ return array(
     'digital-design-3-stage1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score in this area indicates that you are lagging much behind other Digital Native peers in your digital design capabilities. You should look in to individual assessment areas within this section to understand what changes you could potentially make to your digital business approach. You have a lot of work to do so you should act urgently to address the areas of improvement. This will help you sustain your strong position with respect to your overall digital fitness.
+                Your overall score in this area indicates that you are lagging much behind other Digital Native peers in your digital design capabilities. You should look in to individual assessment areas within this section to understand what changes you could potentially make to your digital business approach. You have a lot of work to do so you should act urgently to address the areas of improvement. This will help you sustain your strong position with respect to your overall digital maturity.
             </p>
         </div>
     ',
     'digital-design-3-stage2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score in this area indicates that you are lagging behind other Digital Native peers with regards to your digital design capabilities. You should look in to individual assessment areas within this section to understand what changes you could potentially make to your digital design approach. You have a lot of work to do so you should act urgently to address the areas of improvement. This will help sustain your strong position with respect to your overall digital fitness.
+                Your overall score in this area indicates that you are lagging behind other Digital Native peers with regards to your digital design capabilities. You should look in to individual assessment areas within this section to understand what changes you could potentially make to your digital design approach. You have a lot of work to do so you should act urgently to address the areas of improvement. This will help sustain your strong position with respect to your overall digital maturity.
             </p>
         </div>
     ',
     'digital-design-3-stage3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score in this area indicates that you are in line with the digital native peers with respect to the progress you have made with regards to your digital design approach. While keeping up with this, you can look at areas of improvement if any, related to digital business and digital delivery to improve your overall digital fitness.
+                Your overall score in this area indicates that you are in line with the digital native peers with respect to the progress you have made with regards to your digital design approach. While keeping up with this, you can look at areas of improvement if any, related to digital business and digital delivery to improve your overall digital maturity.
             </p>
         </div>
     ',
@@ -827,7 +827,7 @@ return array(
     'digital-design-1-q5-5' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are using a cloud-based delivery model for your digital design and engineering applications, which puts you far ahead of your Digital Improver peers. You should focus on other areas of digital business or digital delivery to improve your digital fitness.
+                You are using a cloud-based delivery model for your digital design and engineering applications, which puts you far ahead of your Digital Improver peers. You should focus on other areas of digital business or digital delivery to improve your digital maturity.
             </p>
         </div>
     ',
@@ -863,7 +863,7 @@ return array(
     'digital-design-2-q5-5' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are using a cloud-based delivery model for your digital design and engineering applications, which puts you ahead of your Digital Achiever peers. You should focus on other areas of digital business or digital delivery to improve your digital fitness.
+                You are using a cloud-based delivery model for your digital design and engineering applications, which puts you ahead of your Digital Achiever peers. You should focus on other areas of digital business or digital delivery to improve your digital maturity.
             </p>
         </div>
     ',
@@ -899,7 +899,7 @@ return array(
     'digital-design-3-q5-5' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are using a cloud-based delivery model for your digital design and engineering applications, which puts you at par with your Digital Native peers. You should focus on other areas of digital business or digital delivery to improve your digital fitness.
+                You are using a cloud-based delivery model for your digital design and engineering applications, which puts you at par with your Digital Native peers. You should focus on other areas of digital business or digital delivery to improve your digital maturity.
             </p>
         </div>
     ',
@@ -915,14 +915,14 @@ return array(
     'digital-design-1-q6-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are using the latest versions of your digital design and engineering apps. This puts you well ahead of your Digital Improver peers. You should focus on other areas of digital business or digital delivery to improve your digital fitness.
+                You are using the latest versions of your digital design and engineering apps. This puts you well ahead of your Digital Improver peers. You should focus on other areas of digital business or digital delivery to improve your digital maturity.
             </p>
         </div>
     ',
     'digital-design-1-q6-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are using the latest versions of your digital design and engineering apps. This puts you well ahead of your Digital Improver peers. You should focus on other areas of digital business or digital delivery to improve your digital fitness.
+                You are using the latest versions of your digital design and engineering apps. This puts you well ahead of your Digital Improver peers. You should focus on other areas of digital business or digital delivery to improve your digital maturity.
             </p>
         </div>
     ',
@@ -951,14 +951,14 @@ return array(
     'digital-design-2-q6-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are using the latest versions of your digital design and engineering apps. This puts you well ahead of your Digital Achiever peers. You should focus on other areas of digital business or digital delivery to improve your digital fitness.
+                You are using the latest versions of your digital design and engineering apps. This puts you well ahead of your Digital Achiever peers. You should focus on other areas of digital business or digital delivery to improve your digital maturity.
             </p>
         </div>
     ',
     'digital-design-2-q6-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are using the latest versions of your digital design and engineering apps. This puts you well ahead of your Digital Achiever peers. You should focus on other areas of digital business or digital delivery to improve your digital fitness.
+                You are using the latest versions of your digital design and engineering apps. This puts you well ahead of your Digital Achiever peers. You should focus on other areas of digital business or digital delivery to improve your digital maturity.
             </p>
         </div>
     ',
@@ -987,14 +987,14 @@ return array(
     'digital-design-3-q6-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are using the latest versions of your digital design and engineering apps. This puts you at par with your Digital Native peers. You should focus on other areas of digital business or digital delivery to improve your digital fitness.
+                You are using the latest versions of your digital design and engineering apps. This puts you at par with your Digital Native peers. You should focus on other areas of digital business or digital delivery to improve your digital maturity.
             </p>
         </div>
     ',
     'digital-design-3-q6-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are using the latest versions of your digital design and engineering apps. This puts you at par with your Digital Native peers. You should focus on other areas of digital business or digital delivery to improve your digital fitness.
+                You are using the latest versions of your digital design and engineering apps. This puts you at par with your Digital Native peers. You should focus on other areas of digital business or digital delivery to improve your digital maturity.
             </p>
         </div>
     ',
@@ -1052,7 +1052,7 @@ return array(
     'digital-design-1-q7-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your current digital design and engineering application supports your digital business very well. This puts you far ahead of your Digital Improver peers. You should focus on other aspects of digital business, digital design or digital delivery to improve your digital fitness.
+                Your current digital design and engineering application supports your digital business very well. This puts you far ahead of your Digital Improver peers. You should focus on other aspects of digital business, digital design or digital delivery to improve your digital maturity.
             </p>
         </div>
     ',
@@ -1081,7 +1081,7 @@ return array(
     'digital-design-2-q7-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your current digital design and engineering application supports your digital business very well. This puts you ahead of your Digital Achiever peers. You should focus on other aspects of digital business, digital design or digital delivery to improve your digital fitness.
+                Your current digital design and engineering application supports your digital business very well. This puts you ahead of your Digital Achiever peers. You should focus on other aspects of digital business, digital design or digital delivery to improve your digital maturity.
             </p>
         </div>
     ',
@@ -1110,7 +1110,7 @@ return array(
     'digital-design-3-q7-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your current digital design and engineering application supports your digital business very well. This puts you at par with your Digital Native peers. You should focus on other aspects of digital business, digital design or digital delivery to improve your digital fitness.
+                Your current digital design and engineering application supports your digital business very well. This puts you at par with your Digital Native peers. You should focus on other aspects of digital business, digital design or digital delivery to improve your digital maturity.
             </p>
         </div>
     ',
@@ -1124,7 +1124,7 @@ return array(
                     Digital Delivery is about the alignment of IT with the business. Is IT seen as an enabler of digital business strategies or is it just considered a necessary cost? Has IT embraced modern delivery tools like cloud or is everything delivered manually and with internal assets and resources? Getting IT processes and delivery models right is critical to provide the agility and flexibility that start ups and SMBs require to react quickly to changing business patterns and staffing levels, as well creating great experiences for employees, customers and ecosystem partners.
                 </p>
                 <p class="mb-2">
-                    This section of the report assesses the stage of your organization\'s Digital Fitness based on your ability to deliver digital design and engineering tools, how IT is perceived by top management and if cloud-based delivery models are being used.
+                    This section of the report assesses the stage of your organization\'s Digital Maturity based on your ability to deliver digital design and engineering tools, how IT is perceived by top management and if cloud-based delivery models are being used.
                 </p>
             </div>
         </div>
@@ -1136,21 +1136,21 @@ return array(
     'digital-delivery-1-stage1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue mt-4 font-bold">
-                Your overall score for this section indicates that you are in line with your Digital Improver peers with respect to the progress you have made so far. You are at the beginning of your journey, so there are many areas you need to address. You can look in to individual assessment areas within this section to understand what changes you could potentially make to improve your digital fitness.
+                Your overall score for this section indicates that you are in line with your Digital Improver peers with respect to the progress you have made so far. You are at the beginning of your journey, so there are many areas you need to address. You can look in to individual assessment areas within this section to understand what changes you could potentially make to improve your digital maturity.
             </p>
         </div>
     ',
     'digital-delivery-1-stage2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue mt-4 font-bold">
-                Your overall score for this section indicates that you are ahead of your Digital Improver peers with respect to the progress you have made so far. Very well done! While keeping up with this, you must also look at aspects related to digital design and digital design to improve your overall digital fitness.
+                Your overall score for this section indicates that you are ahead of your Digital Improver peers with respect to the progress you have made so far. Very well done! While keeping up with this, you must also look at aspects related to digital design and digital design to improve your overall digital maturity.
             </p>
         </div>
     ',
     'digital-delivery-1-stage3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue mt-4 font-bold">
-                Your overall score for this section indicates that you are ahead of your Digital Improver peers with respect to the progress you have made so far. Very well done! While keeping up with this, you must also look at aspects related to digital business and digital design to improve your overall digital fitness.
+                Your overall score for this section indicates that you are ahead of your Digital Improver peers with respect to the progress you have made so far. Very well done! While keeping up with this, you must also look at aspects related to digital business and digital design to improve your overall digital maturity.
             </p>
         </div>
     ',
@@ -1158,21 +1158,21 @@ return array(
     'digital-delivery-2-stage1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue mt-4 font-bold">
-                Your overall score for this section indicates that you are lagging behind your Digital Achiever peers with respect to your digital delivery approach. Digital delivery is an area that you should improve to catch up with your peers,  so you must take steps to accelerate the journey now. You should look in to individual assessment areas within this section to understand what changes you could potentially make to your digital delivery approach to improve your digital fitness.
+                Your overall score for this section indicates that you are lagging behind your Digital Achiever peers with respect to your digital delivery approach. Digital delivery is an area that you should improve to catch up with your peers,  so you must take steps to accelerate the journey now. You should look in to individual assessment areas within this section to understand what changes you could potentially make to your digital delivery approach to improve your digital maturity.
             </p>
         </div>
     ',
     'digital-delivery-2-stage2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue mt-4 font-bold">
-                Your overall score in this section indicates that you are in line with your Digital Achiever peers with respect to the progress you have made in making your business digital. You are well on your way, but don\'t think of stopping just yet. You can look into individual assessment areas within this section to understand what changes you could potentially make to your digital delivery capabilities for further progress in your digital fitness.
+                Your overall score in this section indicates that you are in line with your Digital Achiever peers with respect to the progress you have made in making your business digital. You are well on your way, but don\'t think of stopping just yet. You can look into individual assessment areas within this section to understand what changes you could potentially make to your digital delivery capabilities for further progress in your digital maturity.
             </p>
         </div>
     ',
     'digital-delivery-2-stage3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue mt-4 font-bold">
-                Your overall score for this section indicates that you are ahead of your Digital Achiever peers with respect to the progress you have made. Very well done on your journey so far! While keeping up with this, you must also look at aspects related to digital business and digital design to improve your overall digital fitness.
+                Your overall score for this section indicates that you are ahead of your Digital Achiever peers with respect to the progress you have made. Very well done on your journey so far! While keeping up with this, you must also look at aspects related to digital business and digital design to improve your overall digital maturity.
             </p>
         </div>
     ',
@@ -1180,7 +1180,7 @@ return array(
     'digital-delivery-3-stage1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue mt-4 font-bold">
-                Your overall score in this area indicates that you are lagging much behind other Digital Native peers in your digital delivery. You should look in to individual assessment areas within this section to understand what changes you could potentially make to your digital business approach. You have a lot of work to do so you should act urgently to address the areas of improvement. This will help you sustain your strong position with respect to your overall digital fitness.
+                Your overall score in this area indicates that you are lagging much behind other Digital Native peers in your digital delivery. You should look in to individual assessment areas within this section to understand what changes you could potentially make to your digital business approach. You have a lot of work to do so you should act urgently to address the areas of improvement. This will help you sustain your strong position with respect to your overall digital maturity.
             </p>
         </div>
     ',
@@ -1188,7 +1188,7 @@ return array(
     'digital-delivery-3-stage2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue mt-4 font-bold">
-                Your overall score in this area indicates that you are lagging behind other Digital Native peers with regards to your digital delivery approach. You should look in to individual assessment areas within this section to understand what changes you could potentially make to your digital delivery approach. You have a lot of work to do so you should act urgently to address the areas of improvement. This will help sustain your strong position with respect to your overall digital fitness.
+                Your overall score in this area indicates that you are lagging behind other Digital Native peers with regards to your digital delivery approach. You should look in to individual assessment areas within this section to understand what changes you could potentially make to your digital delivery approach. You have a lot of work to do so you should act urgently to address the areas of improvement. This will help sustain your strong position with respect to your overall digital maturity.
             </p>
         </div>
     ',
@@ -1196,7 +1196,7 @@ return array(
     'digital-delivery-3-stage3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue mt-4 font-bold">
-                Your overall score in this area indicates that you are in line with the digital native peers with respect to the progress you have made with regards to your digital delivery approach. While keeping up with this, you can look at areas of improvement if any, related to digital business and digital design to improve your overall digital fitness.
+                Your overall score in this area indicates that you are in line with the digital native peers with respect to the progress you have made with regards to your digital delivery approach. While keeping up with this, you can look at areas of improvement if any, related to digital business and digital design to improve your overall digital maturity.
             </p>
         </div>
     ',
@@ -1312,7 +1312,7 @@ return array(
     'digital-delivery-1-q9-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are mainly delivering your applications through a cloud-based delivery model. This puts you well ahead of your Digital Improver peers. You have continous access to the latest features and functions, can scale dynamically based on business demands and enable collobaration and innovation for your employees and with your ecoystem partners. You should look at other aspects in digital business or digital design to improve your digital fitness.
+                You are mainly delivering your applications through a cloud-based delivery model. This puts you well ahead of your Digital Improver peers. You have continous access to the latest features and functions, can scale dynamically based on business demands and enable collobaration and innovation for your employees and with your ecoystem partners. You should look at other aspects in digital business or digital design to improve your digital maturity.
             </p>
         </div>
     ',
@@ -1341,7 +1341,7 @@ return array(
     'digital-delivery-2-q9-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are mainly delivering your applications through a cloud-based delivery model. This puts you ahead of your Digital Achiever peers. You have continous access to the latest features and functions, can scale dynamically based on business demands and enable collobaration and innovation for your employees and with your ecoystem partners. You should look at other aspects in digital business or digital design to improve your digital fitness.
+                You are mainly delivering your applications through a cloud-based delivery model. This puts you ahead of your Digital Achiever peers. You have continous access to the latest features and functions, can scale dynamically based on business demands and enable collobaration and innovation for your employees and with your ecoystem partners. You should look at other aspects in digital business or digital design to improve your digital maturity.
             </p>
         </div>
     ',
@@ -1370,7 +1370,7 @@ return array(
     'digital-delivery-3-q9-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are mainly delivering your applications through a cloud-based delivery model. This puts you at par with your Digital Achiever peers. You have continous access to the latest features and functions, can scale dynamically based on business demands and enable collobaration and innovation for your employees and with your ecoystem partners. You should look at other aspects in digital business or digital design to improve your digital fitness.
+                You are mainly delivering your applications through a cloud-based delivery model. This puts you at par with your Digital Achiever peers. You have continous access to the latest features and functions, can scale dynamically based on business demands and enable collobaration and innovation for your employees and with your ecoystem partners. You should look at other aspects in digital business or digital design to improve your digital maturity.
             </p>
         </div>
     ',
@@ -1407,14 +1407,14 @@ return array(
     'digital-delivery-1-q10-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You have a cloud-first strategy, which puts you well ahead of your Digital Improver peers. You should look at other aspects within digital business, digital design and digital delivery to improve your digital fitness. 
+                You have a cloud-first strategy, which puts you well ahead of your Digital Improver peers. You should look at other aspects within digital business, digital design and digital delivery to improve your digital maturity. 
             </p>
         </div>
     ',
     'digital-delivery-1-q10-5' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You have a cloud-only strategy, which puts you well ahead of your Digital Improver peers. You should look at other aspects within digital business, digital design and digital delivery to improve your digital fitness. 
+                You have a cloud-only strategy, which puts you well ahead of your Digital Improver peers. You should look at other aspects within digital business, digital design and digital delivery to improve your digital maturity. 
             </p>
         </div>
     ',
@@ -1443,14 +1443,14 @@ return array(
     'digital-delivery-2-q10-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You have a cloud-first strategy, which puts you well ahead of your Digital Achiever peers. You should look at other aspects within digital business, digital design and digital delivery to improve your digital fitness. 
+                You have a cloud-first strategy, which puts you well ahead of your Digital Achiever peers. You should look at other aspects within digital business, digital design and digital delivery to improve your digital maturity. 
             </p>
         </div>
     ',
     'digital-delivery-2-q10-5' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You have a cloud-only strategy, which puts you well ahead of your Digital Achiever peers. You should look at other aspects within digital business, digital design and digital delivery to improve your digital fitness. 
+                You have a cloud-only strategy, which puts you well ahead of your Digital Achiever peers. You should look at other aspects within digital business, digital design and digital delivery to improve your digital maturity. 
             </p>
         </div>
     ',
@@ -1479,14 +1479,14 @@ return array(
     'digital-delivery-3-q10-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You have a cloud-first strategy, which puts you at par with your Digital Native peers. You should look at other aspects within digital business, digital design and digital delivery to improve your digital fitness. 
+                You have a cloud-first strategy, which puts you at par with your Digital Native peers. You should look at other aspects within digital business, digital design and digital delivery to improve your digital maturity. 
             </p>
         </div>
     ',
     'digital-delivery-3-q10-5' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You have a cloud-only strategy, which puts you at par with your Digital Native peers. You should look at other aspects within digital business, digital design and digital delivery to improve your digital fitness. 
+                You have a cloud-only strategy, which puts you at par with your Digital Native peers. You should look at other aspects within digital business, digital design and digital delivery to improve your digital maturity. 
             </p>
         </div>
     ',

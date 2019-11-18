@@ -31,6 +31,11 @@ module.exports = {
 			"babel-polyfill",
 			'./resources/assets/js/dassault/main.js',
 			'./resources/assets/css/dassault/main.css'
+		],
+		hitachi: [
+			"babel-polyfill",
+			'./resources/assets/js/hitachi/main.js',
+			'./resources/assets/css/hitachi/main.css'
 		]
 	},
 	stats: {

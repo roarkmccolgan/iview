@@ -46,10 +46,10 @@
 						<question-slider :question="currentQuestion" :the-options="currentQuestion.options" v-on:selectOption="selectOption" :showDetails="showDetails" :qname="currentQuestion.qKey" :answer="answer"></question-slider>
 					</template>
 					<template v-else-if="currentQuestion.type == 'groupslider'">
-						<group-slider :answer="answer" :question="currentQuestion" :selectOption="selectOption" :showDetails="showDetails"></group-slider>
+						<group-slider :answer="answer" :question="currentQuestion" @selectOption="selectOption" :showDetails="showDetails"></group-slider>
 					</template>
 					<template v-else-if="currentQuestion.type == 'groupopposingslider'">
-						<group-opposing-slider :answer="answer" :question="currentQuestion" :selectOption="selectOption" :showDetails="showDetails"></group-opposing-slider>
+						<group-opposing-slider :answer="answer" :question="currentQuestion" @selectOption="selectOption" :showDetails="showDetails"></group-opposing-slider>
 					</template>
 					<template v-else-if="currentQuestion.type == 'groupbutton'">
 						<group-button :answer="answer" :question="currentQuestion" @selectOption="selectOption" :showDetails="showDetails"></group-button>
