@@ -5,7 +5,7 @@ return [
         'title' => 'Cloud migration and application modernization',
         'description' => '
             <h2 class="">Cloud migration and application modernization</h2>
-            <p class="mb-4">Firstly, we would like to understand your current approach to selling and how you structure your sales organization</p>
+            <p class="mb-4">This dimension measures the readiness of your Cloud Migration and Application modernisation strategy. We believe this is important because the drivers for cloud migration, the challenges you face in your cloud migration and application modernization journeys as well as the objectives tied to these initiatives give valuable insights into the maturity of your overall cloud strategy</p>
             ',
         'background' => 'migration.png',
         'nuggets' => [
@@ -28,7 +28,7 @@ return [
                         'name'=> 1,
                         'options'=>[
                             [
-                                'label'=>'Cost savings ',
+                                'label'=>'Cost savings',
                                 'value'=>1,
                                 'checked'=>false,
                             ],
@@ -38,7 +38,7 @@ return [
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'Responding to competitive threats and disruption ',
+                                'label'=>'Responding to competitive threats and disruption',
                                 'value'=>2,
                                 'checked'=>false,
                             ],
@@ -60,12 +60,11 @@ return [
                             'type'=>'sum'
                         ],
                         'optionLabels' => [
-                            'This is a big barrier for us, impeding our progress',
-                            'A big challenge which we are actively working through',
-                            'Still presents a small challenge, but mostly resolved',
-                            'This is a challenge we have overcome already',
+                            'Impeding progress',
+                            'Working through',
+                            'Resolved',
                         ],
-                        'question'=>'To what degree are these challenges impacting the implementation of your cloud strategy?',
+                        'question'=>'To what degree are these challenges impacting your cloud strategy?',
                         'name'=> 2,
                         'options'=>[
                             [
@@ -73,23 +72,18 @@ return [
                                 'name'=> 2.1,
                                 'options'=>[
                                     [
-                                        'label'=>'This is a big barrier for us, impeding our progress',
-                                        'value'=>3,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'A big challenge which we are actively working through',
-                                        'value'=>2,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'Still presents a small challenge, but mostly resolved',
+                                        'label'=>'Impeding progress',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'This is a challenge we have overcome already',
-                                        'value'=>0,
+                                        'label'=>'Working through',
+                                        'value'=>2,
+                                        'checked'=>false,
+                                    ],
+                                    [
+                                        'label'=>'Resolved',
+                                        'value'=>3,
                                         'checked'=>false,
                                     ]
                                 ]
@@ -99,23 +93,18 @@ return [
                                 'name'=> 2.2,
                                 'options'=>[
                                     [
-                                        'label'=>'This is a big barrier for us, impeding our progress',
-                                        'value'=>3,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'A big challenge which we are actively working through',
-                                        'value'=>2,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'Still presents a small challenge, but mostly resolved',
+                                        'label'=>'Impeding progress',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'This is a challenge we have overcome already',
-                                        'value'=>0,
+                                        'label'=>'Working through',
+                                        'value'=>2,
+                                        'checked'=>false,
+                                    ],
+                                    [
+                                        'label'=>'Resolved',
+                                        'value'=>3,
                                         'checked'=>false,
                                     ]
                                 ]
@@ -125,23 +114,18 @@ return [
                                 'name'=> 2.3,
                                 'options'=>[
                                     [
-                                        'label'=>'This is a big barrier for us, impeding our progress',
-                                        'value'=>3,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'A big challenge which we are actively working through',
-                                        'value'=>2,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'Still presents a small challenge, but mostly resolved',
+                                        'label'=>'Impeding progress',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'This is a challenge we have overcome already',
-                                        'value'=>0,
+                                        'label'=>'Working through',
+                                        'value'=>2,
+                                        'checked'=>false,
+                                    ],
+                                    [
+                                        'label'=>'Resolved',
+                                        'value'=>3,
                                         'checked'=>false,
                                     ]
                                 ]
@@ -151,23 +135,18 @@ return [
                                 'name'=> 2.4,
                                 'options'=>[
                                     [
-                                        'label'=>'This is a big barrier for us, impeding our progress',
-                                        'value'=>3,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'A big challenge which we are actively working through',
-                                        'value'=>2,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'Still presents a small challenge, but mostly resolved',
+                                        'label'=>'Impeding progress',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'This is a challenge we have overcome already',
-                                        'value'=>0,
+                                        'label'=>'Working through',
+                                        'value'=>2,
+                                        'checked'=>false,
+                                    ],
+                                    [
+                                        'label'=>'Resolved',
+                                        'value'=>3,
                                         'checked'=>false,
                                     ]
                                 ]
@@ -177,23 +156,18 @@ return [
                                 'name'=> 2.5,
                                 'options'=>[
                                     [
-                                        'label'=>'This is a big barrier for us, impeding our progress',
-                                        'value'=>3,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'A big challenge which we are actively working through',
-                                        'value'=>2,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'Still presents a small challenge, but mostly resolved',
+                                        'label'=>'Impeding progress',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'This is a challenge we have overcome already',
-                                        'value'=>0,
+                                        'label'=>'Working through',
+                                        'value'=>2,
+                                        'checked'=>false,
+                                    ],
+                                    [
+                                        'label'=>'Resolved',
+                                        'value'=>3,
                                         'checked'=>false,
                                     ]
                                 ]
@@ -203,23 +177,18 @@ return [
                                 'name'=> 2.6,
                                 'options'=>[
                                     [
-                                        'label'=>'This is a big barrier for us, impeding our progress',
-                                        'value'=>3,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'A big challenge which we are actively working through',
-                                        'value'=>2,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'Still presents a small challenge, but mostly resolved',
+                                        'label'=>'Impeding progress',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'This is a challenge we have overcome already',
-                                        'value'=>0,
+                                        'label'=>'Working through',
+                                        'value'=>2,
+                                        'checked'=>false,
+                                    ],
+                                    [
+                                        'label'=>'Resolved',
+                                        'value'=>3,
                                         'checked'=>false,
                                     ]
                                 ]
@@ -229,23 +198,18 @@ return [
                                 'name'=> 2.7,
                                 'options'=>[
                                     [
-                                        'label'=>'This is a big barrier for us, impeding our progress',
-                                        'value'=>3,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'A big challenge which we are actively working through',
-                                        'value'=>2,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'Still presents a small challenge, but mostly resolved',
+                                        'label'=>'Impeding progress',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'This is a challenge we have overcome already',
-                                        'value'=>0,
+                                        'label'=>'Working through',
+                                        'value'=>2,
+                                        'checked'=>false,
+                                    ],
+                                    [
+                                        'label'=>'Resolved',
+                                        'value'=>3,
                                         'checked'=>false,
                                     ]
                                 ]
@@ -272,7 +236,7 @@ return [
                         'name'=> 3,
                         'options'=>[
                             [
-                                'label'=>'Cloud-based API strategies that orchestrate the exchange of data across your ecosystem ',
+                                'label'=>'Automating and orchestrating the exchange of data within your ecosystem',
                                 'name'=> 3.1,
                                 'options'=>[
                                     [
@@ -293,7 +257,7 @@ return [
                                 ]
                             ],
                             [
-                                'label'=>'Implementing Agile application architectures using microservices and containers ',
+                                'label'=>'Creating IT efficiencies within the data centre, freeing up resources (HR, IT, Server storage) ',
                                 'name'=> 3.2,
                                 'options'=>[
                                     [
@@ -314,7 +278,7 @@ return [
                                 ]
                             ],
                             [
-                                'label'=>'New customer experience technologies that fully support customer and ecosystem-facing business models ',
+                                'label'=>'Developing new digital experiences that drive digital satisfaction and revenue',
                                 'name'=> 3.3,
                                 'options'=>[
                                     [
@@ -335,7 +299,7 @@ return [
                                 ]
                             ],
                             [
-                                'label'=>'An Intelligent Core based on data management, cognitive, artificial intelligence and machine learning  ',
+                                'label'=>'Implementing Agile cloud-based application architectures',
                                 'name'=> 3.4,
                                 'options'=>[
                                     [
@@ -356,7 +320,28 @@ return [
                                 ]
                             ],
                             [
-                                'label'=>'Security, regulatory compliance and data governance requirements',
+                                'label'=>'Satisfying security, regulatory compliance and data governance requirements',
+                                'name'=> 3.5,
+                                'options'=>[
+                                    [
+                                        'label'=>'Not apart of our 2-3 year strategy',
+                                        'value'=>1,
+                                        'checked'=>false,
+                                    ],
+                                    [
+                                        'label'=>'Included in the strategy but not very important right now',
+                                        'value'=>2,
+                                        'checked'=>false,
+                                    ],
+                                    [
+                                        'label'=>'An immediate priority and critical to the success of our strategy',
+                                        'value'=>3,
+                                        'checked'=>false,
+                                    ]
+                                ]
+                            ],
+                            [
+                                'label'=>'Leveraging an Intelligent Core to implement and scale artificial intelligence and machine learning ',
                                 'name'=> 3.5,
                                 'options'=>[
                                     [
@@ -390,61 +375,50 @@ return [
                             'type'=>'sum'
                         ],
                         'optionLabels' => [
-                            'This is a challenge we have overcome already',
-                            'Still presents a small challenge, but mostly resolved',
-                            'A big challenge which we are actively working through',
-                            'This is a big barrier for us, impeding our progress',
+                            'Impeding progress',
+                            'Working through',
+                            'Resolved',
                         ],
-                        'question'=>'To what degree are these challenges impacting the implementation of your cloud strategy?',
+                        'question'=>'To which degree are these cloud migration challenges faced by your organization?',
                         'name'=> 4,
                         'options'=>[
                             [
-                                'label'=>'Assessing the organizational need to move to the cloud',
+                                'label'=>'Assessing which applications and when to move them to the cloud (critical apps, volume, number of)',
                                 'name'=> 4.1,
                                 'options'=>[
                                     [
-                                        'label'=>'This is a challenge we have overcome already',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'Still presents a small challenge, but mostly resolved',
+                                        'label'=>'Impeding progress',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'A big challenge which we are actively working through',
+                                        'label'=>'Working through',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'This is a big barrier for us, impeding our progress',
+                                        'label'=>'Resolved',
                                         'value'=>3,
                                         'checked'=>false,
                                     ]
                                 ]
                             ],
                             [
-                                'label'=>'Understanding the complexity of the migration',
+                                'label'=>'Understanding the complexity of the application migration',
                                 'name'=> 4.2,
                                 'options'=>[
                                     [
-                                        'label'=>'This is a challenge we have overcome already',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'Still presents a small challenge, but mostly resolved',
+                                        'label'=>'Impeding progress',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'A big challenge which we are actively working through',
+                                        'label'=>'Working through',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'This is a big barrier for us, impeding our progress',
+                                        'label'=>'Resolved',
                                         'value'=>3,
                                         'checked'=>false,
                                     ]
@@ -455,74 +429,59 @@ return [
                                 'name'=> 4.3,
                                 'options'=>[
                                     [
-                                        'label'=>'This is a challenge we have overcome already',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'Still presents a small challenge, but mostly resolved',
+                                        'label'=>'Impeding progress',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'A big challenge which we are actively working through',
+                                        'label'=>'Working through',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'This is a big barrier for us, impeding our progress',
+                                        'label'=>'Resolved',
                                         'value'=>3,
                                         'checked'=>false,
                                     ]
                                 ]
                             ],
                             [
-                                'label'=>'lack of cloud migration skills internally',
+                                'label'=>'Defining the right migration strategy (Lift and shift, lift and transform, refactor)',
                                 'name'=> 4.4,
                                 'options'=>[
                                     [
-                                        'label'=>'This is a challenge we have overcome already',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'Still presents a small challenge, but mostly resolved',
+                                        'label'=>'Impeding progress',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'A big challenge which we are actively working through',
+                                        'label'=>'Working through',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'This is a big barrier for us, impeding our progress',
+                                        'label'=>'Resolved',
                                         'value'=>3,
                                         'checked'=>false,
                                     ]
                                 ]
                             ],
                             [
-                                'label'=>'defining the right migration strategy (Lift and shift, lift and transform, refactor)',
+                                'label'=>'Lacking cloud migration skills internally',
                                 'name'=> 4.5,
                                 'options'=>[
                                     [
-                                        'label'=>'This is a challenge we have overcome already',
-                                        'value'=>0,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'Still presents a small challenge, but mostly resolved',
+                                        'label'=>'Impeding progress',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'A big challenge which we are actively working through',
+                                        'label'=>'Working through',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'This is a big barrier for us, impeding our progress',
+                                        'label'=>'Resolved',
                                         'value'=>3,
                                         'checked'=>false,
                                     ]
@@ -539,7 +498,7 @@ return [
         'title' => 'Cloud and Multicloud Status',
         'description' => '
             <h2 class="">Cloud and Multicloud Status</h2>
-            <p class="mb-4">We would now like a better understanding of how you market your organization and its solutions, as well as how you access marketing effectiveness.</p>
+            <p class="mb-4">This dimension measures your readiness in Multicloud strategy. Multicloud and hybrid clouds are inevitable IT realities and we believe how you navigate through the complexities of multicloud and adopt the right technologies and strategies to move from accidental multicloud to intentional multicloud are critical in determining your long-term cloud strategy success</p>
         ',
         'background' => 'status.png',
         'nuggets' => [
@@ -561,27 +520,27 @@ return [
                         'name'=> 5,
                         'options'=>[
                             [
-                                'label'=>'Traditional on-premise IT',
+                                'label'=>'Improve application and IT infrastructure efficiency / performance',
                                 'value'=>1,
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'Private Cloud (define)',
+                                'label'=>'Use of one or more clouds powers growth initiatives and innovation',
                                 'value'=>2,
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'Public Cloud ',
+                                'label'=>'Manage and reduce technical debt',
                                 'value'=>2,
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'Hybrid Cloud (Define)',
+                                'label'=>'Provide customers, partners and employees with an improved digital experience',
                                 'value'=>3,
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'Multicloud ',
+                                'label'=>'Maximize the utilization of data and derive faster data-driven insights',
                                 'value'=>3,
                                 'checked'=>false,
                             ]
@@ -635,12 +594,11 @@ return [
                             'type'=>'sum'
                         ],
                         'optionLabels' => [
-                            'Still presents a small challenge, but mostly resolved',
-                            'A big challenge which we are actively working through',
-                            'This is a big barrier for us, impeding our progress',
-                            'This is a challenge we have overcome already',
+                            'Impeding progress',
+                            'Working through',
+                            'Resolved',
                         ],
-                        'question'=>'To what degree are these challenges faced around cloud operations and management ',
+                        'question'=>'To what degree are these challenges related to cloud operations and management',
                         'name'=> 7,
                         'options'=>[
                             [
@@ -648,23 +606,18 @@ return [
                                 'name'=> 7.1,
                                 'options'=>[
                                     [
-                                        'label'=>'Still presents a small challenge, but mostly resolved',
+                                        'label'=>'Impeding progress',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'A big challenge which we are actively working through',
+                                        'label'=>'Working through',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'This is a big barrier for us, impeding our progress',
+                                        'label'=>'Resolved',
                                         'value'=>3,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'This is a challenge we have overcome already',
-                                        'value'=>0,
                                         'checked'=>false,
                                     ]
                                 ]
@@ -674,49 +627,39 @@ return [
                                 'name'=> 7.2,
                                 'options'=>[
                                     [
-                                        'label'=>'Still presents a small challenge, but mostly resolved',
+                                        'label'=>'Impeding progress',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'A big challenge which we are actively working through',
+                                        'label'=>'Working through',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'This is a big barrier for us, impeding our progress',
+                                        'label'=>'Resolved',
                                         'value'=>3,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'This is a challenge we have overcome already',
-                                        'value'=>0,
                                         'checked'=>false,
                                     ]
                                 ]
                             ],
                             [
-                                'label'=>'Security, governance and regulatory compliance',
+                                'label'=>'Security, data governance and regulatory compliance',
                                 'name'=> 7.3,
                                 'options'=>[
                                     [
-                                        'label'=>'Still presents a small challenge, but mostly resolved',
+                                        'label'=>'Impeding progress',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'A big challenge which we are actively working through',
+                                        'label'=>'Working through',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'This is a big barrier for us, impeding our progress',
+                                        'label'=>'Resolved',
                                         'value'=>3,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'This is a challenge we have overcome already',
-                                        'value'=>0,
                                         'checked'=>false,
                                     ]
                                 ]
@@ -726,75 +669,60 @@ return [
                                 'name'=> 7.4,
                                 'options'=>[
                                     [
-                                        'label'=>'Still presents a small challenge, but mostly resolved',
+                                        'label'=>'Impeding progress',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'A big challenge which we are actively working through',
+                                        'label'=>'Working through',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'This is a big barrier for us, impeding our progress',
+                                        'label'=>'Resolved',
                                         'value'=>3,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'This is a challenge we have overcome already',
-                                        'value'=>0,
                                         'checked'=>false,
                                     ]
                                 ]
                             ],
                             [
-                                'label'=>'Cloud cost management while demonstrating value and ROI',
+                                'label'=>'Cloud cost containment while demonstrating value and ROI',
                                 'name'=> 7.5,
                                 'options'=>[
                                     [
-                                        'label'=>'Still presents a small challenge, but mostly resolved',
+                                        'label'=>'Impeding progress',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'A big challenge which we are actively working through',
+                                        'label'=>'Working through',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'This is a big barrier for us, impeding our progress',
+                                        'label'=>'Resolved',
                                         'value'=>3,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'This is a challenge we have overcome already',
-                                        'value'=>0,
                                         'checked'=>false,
                                     ]
                                 ]
                             ],
                             [
-                                'label'=>'Implementing a CI/CD pipeline to automate cloud operations ',
+                                'label'=>'Implementing a CI/CD pipeline to automate cloud operations (Continuous Innovation Continuous Development)',
                                 'name'=> 7.6,
                                 'options'=>[
                                     [
-                                        'label'=>'Still presents a small challenge, but mostly resolved',
+                                        'label'=>'Impeding progress',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'A big challenge which we are actively working through',
+                                        'label'=>'Working through',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'This is a big barrier for us, impeding our progress',
+                                        'label'=>'Resolved',
                                         'value'=>3,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'This is a challenge we have overcome already',
-                                        'value'=>0,
                                         'checked'=>false,
                                     ]
                                 ]
@@ -809,7 +737,7 @@ return [
         'title' => 'Realizing the value of data',
         'description' => '
             <h2 class="">Realizing the value of data</h2>
-            <p class="mb-4">Understanding your approach to delivering services is critical to accessing your capabilities as a managed services provider.</p>
+            <p class="mb-4">This dimension assesses your organization\'s attitude and culture towards data and the value you attach to it. Data-driven organizations use insights and speed of intelligence as their competitive differentiator. Your readiness and maturity in Data Value Realization strategies contribute to your overall cloud, multicloud and data-driven initiatives which are imperatives to achieving excellence in digital transformation</p>
         ',
         'background' => 'value.png',
         'nuggets' => [
@@ -846,12 +774,12 @@ return [
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'Advanced data analysis in support of business decision making',
+                                'label'=>'Analyse and activate data to support business decision making and strategy',
                                 'value'=>3,
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'Applying AI and ML to support data monetization',
+                                'label'=>'Monetising data',
                                 'value'=>3,
                                 'checked'=>false,
                             ]
@@ -872,7 +800,7 @@ return [
                             'Included in the strategy but not very important right now',
                             'An immediate priority and critical to the success of our strategy',
                         ],
-                        'question'=>'Looking at your 2-3 year strategy, please rank the importance of the following initiatives? ',
+                        'question'=>'Please indicate how critical these data driven objectives are to your data strategy / organization?',
                         'name'=> 9,
                         'options'=>[
                             [
@@ -897,7 +825,7 @@ return [
                                 ]
                             ],
                             [
-                                'label'=>'Delivering continuous insights to the business and ecosystem',
+                                'label'=>'Delivering continuous insights to the business ',
                                 'name'=> 9.2,
                                 'options'=>[
                                     [
@@ -962,27 +890,6 @@ return [
                             [
                                 'label'=>'Hiring data experts ',
                                 'name'=> 9.5,
-                                'options'=>[
-                                    [
-                                        'label'=>'Not critical to our data strategy',
-                                        'value'=>1,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'Included in the strategy but not very important right now',
-                                        'value'=>2,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'An immediate priority and critical to the success of our strategy',
-                                        'value'=>3,
-                                        'checked'=>false,
-                                    ]
-                                ]
-                            ],
-                            [
-                                'label'=>'Creating data maps for full data visability and control',
-                                'name'=> 9.6,
                                 'options'=>[
                                     [
                                         'label'=>'Not critical to our data strategy',

@@ -26,7 +26,8 @@
         "goat1000/svggraph": "^3.0",
         "barryvdh/laravel-debugbar": "~2.4",
         "martinlindhe/laravel-vue-i18n-generator": "^0.1.28",
-        "spatie/laravel-backup": "^3.0.0"
+        "spatie/laravel-backup": "^3.0.0",
+        "laravel/tinker": "<2"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

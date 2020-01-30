@@ -189,6 +189,7 @@ return [
         Barryvdh\Debugbar\ServiceProvider::class,
         MartinLindhe\VueInternationalizationGenerator\GeneratorProvider::class,
         Spatie\Backup\BackupServiceProvider::class,
+        Laravel\Tinker\TinkerServiceProvider::class,
         /*
          * My helper providers...
          */

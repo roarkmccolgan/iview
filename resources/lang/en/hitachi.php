@@ -15,7 +15,7 @@ return array(
     'sub-title'=>'Measuring the success of your cloud and data Strategy',
     'landing'=>'
         <p class="mb-2">
-            IDC, a global leading provider of technology market research, has developed the Cloud Strategy assessment, sponsored by Hitachi Vantara, to help Enterprises focused on Mastering Multicloud to assess their current Cloud Strategy, to better understand the steps they can take to increase time to value, and maximising the returns on data.
+            IDC, a global leading provider of technology market research, has developed the Cloud Strategy Assessment, sponsored by Hitachi Vantara, to help Enterprises focused on Mastering Multicloud and monetising data, to assess their current Cloud Strategy, to better understand the steps they can take to increase time to value, and maximising the returns on data.
         </p>
         <p class="mb-4">
             This self-assessment tool is backed up by independent end-user research and IDC\'s in depth understanding of Cloud and Technology markets. Upon completion of a short survey (under 10 minutes) you will receive a custom report that measures the readiness of your organization\'s Cloud Strategy and provides you with essential and tailored guidance to help you advance in your Cloud journey, and monetize your data in future.
