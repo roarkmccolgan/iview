@@ -47,6 +47,7 @@ return array(
     'size5' => '100 to 249',
     'size6' => '250 to 499',
     'size7' => '500 to 999',
+    'size8' => '1000 or more',
 
     'industry1' => 'Banking/insurance/financial services',
     'industry2' => 'Manufacturing',

@@ -96,6 +96,7 @@
 												<option value="100 to 249" v-html="$t('dassault.size5')"></option>
 												<option value="250 to 499" v-html="$t('dassault.size6')"></option>
 												<option value="500 to 999" v-html="$t('dassault.size7')"></option>
+												<option value="1000 or more" v-html="$t('dassault.size8')"></option>
 											</select>
 											<div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-darker">
 												<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
@@ -134,7 +135,7 @@
 									</div>
 								</div>
 								<div class="mb-6 sm:w-1/2">
-									<div class="ml-2">
+									<div class="">
 										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="country">
 											{{ $t('general.country') }}
 										</label>
@@ -148,6 +149,15 @@
 											</div>
 										</div>
 										<p class="text-red text-xs italic" v-show="errors.country" v-html="$t('general.errorCountry')"></p>
+									</div>
+								</div>
+								<div class="mb-6 sm:w-1/2">
+									<div class="ml-2">
+										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="city">
+											{{ $t('general.city') }}
+										</label>
+										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-2" :class="[errors.company ? 'border-red' : '']" id="city" name="extra[city]" type="text" @blur="hasError">
+										<p class="text-red text-xs italic" v-show="errors.city" v-html="$t('general.errorCity')"></p>
 									</div>
 								</div>
 								<div class="mb-6 w-full">
@@ -225,6 +235,7 @@ export default{
 				company: false,
 				position: false,
 				business: false,
+				city: false,
 				company_size: false,
 				turnover: false,
 				country: false,
