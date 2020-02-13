@@ -39,9 +39,9 @@ return array(
 
     'complete' => 'Complete!',
     'finishtxt' => '
-        <h2 class="font-bold leading-tight mb-4">Thank you for completing the IDC Managed Security Services Readiness Assessment</h2>
-        <p class="mb-4">Based on your input, your aggregate score means that you are at <strong class="font-bold text-hitachi-red">:stage</strong> in terms of your overall cloud ???.</p>
-        <p class="mb-4 mt-4">Please tell us a little about yourself and immediately receive your personalized report</p>
+        <h2 class="font-bold leading-tight mb-4">Thank you for completing the IDC Cloud Strategy Assessment, you are now one step closer to mastering Cloud and delivering value from your data.</h2>
+        <p class="mb-4">Based on your input, your aggregate score means that you are at the level of a <strong class="font-bold text-hitachi-red">:stage</strong>.</p>
+        <p class="mb-4 mt-4">Please tell us a little more about yourself to receive your personalised report.</p>
         <img src=":url/images/tools/13/report.png" alt="" class="w-5/6 mx-auto" />
     ',
     'complete_thankyou' => 'Thank you :Fname,',
