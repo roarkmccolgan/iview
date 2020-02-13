@@ -342,7 +342,7 @@ return [
                             ],
                             [
                                 'label'=>'Leveraging an Intelligent Core to implement and scale artificial intelligence and machine learning ',
-                                'name'=> 3.5,
+                                'name'=> 3.6,
                                 'options'=>[
                                     [
                                         'label'=>'Not apart of our 2-3 year strategy',
