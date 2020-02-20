@@ -20,14 +20,14 @@
         "khill/lavacharts": "~3.1",
         "laracasts/utilities": "^3.0",
         "guzzlehttp/guzzle": "^6.2",
-        "rfookune/lara-pdf-merger-php-7-2": "dev-master",
         "fideloper/proxy": "^3.3",
         "webpatser/laravel-uuid": "^2.0",
         "goat1000/svggraph": "^3.0",
         "barryvdh/laravel-debugbar": "~2.4",
         "martinlindhe/laravel-vue-i18n-generator": "^0.1.28",
         "spatie/laravel-backup": "^3.0.0",
-        "laravel/tinker": "<2"
+        "laravel/tinker": "<2",
+        "daltcore/lara-pdf-merger": "^2.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

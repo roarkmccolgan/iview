@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Lang;
 use Illuminate\Support\Facades\View;
 use Lava;
+use LynX39\LaraPdfMerger\Facades\PdfMerger;
 use PDF;
 
 require_once base_path('vendor/goat1000/svggraph/SVGGraph.php');
@@ -2950,41 +2951,44 @@ trait GenerateReportTrait
             if (session('product.id')==2) {
                 $pdf->save(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
 
-                $merge = new \Nextek\LaraPdfMerger\PdfManage;
+                $merge = PDFMerger::init();
                 $locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
 
                 $merge->addPDF(storage_path().'/fireeye_report_start'.$locale .'.pdf', 'all');
                 $merge->addPDF(storage_path().'/'.$assessment_id.'_'.$name.'.pdf', 'all');
                 $merge->addPDF(storage_path().'/fireeye_report_end'.$locale .'.pdf', 'all');
 
-                $merge->merge('file', storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf', 'P');
+                $merge->merge();
+                $merge->save(storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf');
                 if (File::exists(storage_path().'/'.$assessment_id.'_'.$name.'.pdf')) {
                     File::delete(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
                 }
             } elseif (session('product.id')==5) {
                 $pdf->save(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
 
-                $merge = new \Nextek\LaraPdfMerger\PdfManage;
+                $merge = PDFMerger::init();
                 $locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
 
                 $merge->addPDF(storage_path().'/splunk_report_start'.$locale .'.pdf', 'all');
                 $merge->addPDF(storage_path().'/'.$assessment_id.'_'.$name.'.pdf', 'all');
 
-                $merge->merge('file', storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf', 'P');
+                $merge->merge();
+                $merge->save(storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf');
                 if (File::exists(storage_path().'/'.$assessment_id.'_'.$name.'.pdf')) {
                     File::delete(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
                 }
             } /*elseif(session('product.id')==6){
 				$pdf->save(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
 
-				$merge = new \Nextek\LaraPdfMerger\PdfManage;
+				$merge = PDFMerger::init();
 				$locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
 
 				$merge->addPDF(storage_path().'/btmcafee_start'.$locale .'.pdf', 'all');
 				$merge->addPDF(storage_path().'/'.$assessment_id.'_'.$name.'.pdf', 'all');
 				$merge->addPDF(storage_path().'/btmcafee_end'.$locale .'.pdf', 'all');
 
-				$merge->merge('file', storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf', 'P');
+				$merge->merge();
+                $merge->save(storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf');
 				if(File::exists(storage_path().'/'.$assessment_id.'_'.$name.'.pdf')){
 					File::delete(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
 				}
@@ -2994,13 +2998,14 @@ trait GenerateReportTrait
                 }
                 $pdf->save(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
 
-                $merge = new \Nextek\LaraPdfMerger\PdfManage;
+                $merge = PDFMerger::init();
                 $locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
 
                 $merge->addPDF(storage_path().'/symantec_report_start'.$locale .'.pdf', 'all');
                 $merge->addPDF(storage_path().'/'.$assessment_id.'_'.$name.'.pdf', 'all');
 
-                $merge->merge('file', storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf', 'P');
+                $merge->merge();
+                $merge->save(storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf');
                 if (File::exists(storage_path().'/'.$assessment_id.'_'.$name.'.pdf')) {
                     File::delete(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
                 }
@@ -3010,14 +3015,15 @@ trait GenerateReportTrait
                 }
                 $pdf->save(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
 
-                $merge = new \Nextek\LaraPdfMerger\PdfManage;
+                $merge = PDFMerger::init();
                 $locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
 
                 $merge->addPDF(storage_path().'/ntt_report_start'.$locale .'.pdf', 'all');
                 $merge->addPDF(storage_path().'/'.$assessment_id.'_'.$name.'.pdf', 'all');
                 $merge->addPDF(storage_path().'/ntt_report_end'.$locale .'.pdf', 'all');
 
-                $merge->merge('file', storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf', 'P');
+                $merge->merge();
+                $merge->save(storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf');
                 if (File::exists(storage_path().'/'.$assessment_id.'_'.$name.'.pdf')) {
                     File::delete(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
                 }
@@ -3027,13 +3033,14 @@ trait GenerateReportTrait
                 //return $pdf->inline('invoice.pdf');
                 $pdf->save(storage_path().'/trend-micro-report-'.$timeStamp.'.pdf');
 
-                $merge = new \Nextek\LaraPdfMerger\PdfManage;
+                $merge = PDFMerger::init();
                 $locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
 
                 $merge->addPDF(storage_path().'/trend-micro_start'.$locale .'.pdf', 'all');
                 $merge->addPDF(storage_path().'/trend-micro-report-'.$timeStamp.'.pdf', 'all');
 
-                $merge->merge('file', storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf', 'P');
+                $merge->merge();
+                $merge->save(storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf');
                 if (File::exists(storage_path().'/trend-micro-report-'.$timeStamp.'.pdf')) {
                     File::delete(storage_path().'/trend-micro-report-'.$timeStamp.'.pdf');
                 }
@@ -3043,14 +3050,15 @@ trait GenerateReportTrait
                 //return $pdf->inline('invoice.pdf');
                 $pdf->save(storage_path().'/nttdata-report-'.$timeStamp.'.pdf');
 
-                $merge = new \Nextek\LaraPdfMerger\PdfManage;
+                $merge = PDFMerger::init();
                 $locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
 
                 $merge->addPDF(storage_path().'/nttdata-output-report_start'.$locale .'.pdf', 'all');
                 $merge->addPDF(storage_path().'/nttdata-report-'.$timeStamp.'.pdf', 'all');
                 $merge->addPDF(storage_path().'/nttdata-output-report_end'.$locale .'.pdf', 'all');
 
-                $merge->merge('file', storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf', 'P');
+                $merge->merge();
+                $merge->save(storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf');
                 if (File::exists(storage_path().'/nttdata-report-'.$timeStamp.'.pdf')) {
                     File::delete(storage_path().'/nttdata-report-'.$timeStamp.'.pdf');
                 }
@@ -3060,13 +3068,14 @@ trait GenerateReportTrait
                 //return $pdf->inline('invoice.pdf');
                 $pdf->save(storage_path().'/dassault-'.$timeStamp.'.pdf');
 
-                $merge = new \Nextek\LaraPdfMerger\PdfManage;
+                $merge = PDFMerger::init();
                 $locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
 
                 $merge->addPDF(storage_path().'/dassault_cover'.$locale .'.pdf', 'all');
                 $merge->addPDF(storage_path().'/dassault-'.$timeStamp.'.pdf', 'all');
 
-                $merge->merge('file', storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf', 'P');
+                $merge->merge();
+                $merge->save(storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf');
                 if (File::exists(storage_path().'/dassault-report-'.$timeStamp.'.pdf')) {
                     File::delete(storage_path().'/dassault-report-'.$timeStamp.'.pdf');
                 }
@@ -3076,14 +3085,15 @@ trait GenerateReportTrait
                 //return $pdf->inline('invoice.pdf');
                 $pdf->save(storage_path().'/hitachi-'.$timeStamp.'.pdf');
 
-                $merge = new \Nextek\LaraPdfMerger\PdfManage;
+                $pdfMerger = PDFMerger::init()
                 $locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
 
                 $merge->addPDF(storage_path().'/hitachi_cover'.$locale .'.pdf', 'all');
                 $merge->addPDF(storage_path().'/hitachi-'.$timeStamp.'.pdf', 'all');
                 $merge->addPDF(storage_path().'/hitachi_end'.$locale .'.pdf', 'all');
 
-                $merge->merge('file', storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf', 'P');
+                $merge->merge();
+                $merge->save(storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf');
                 if (File::exists(storage_path().'/hitachi-report-'.$timeStamp.'.pdf')) {
                     File::delete(storage_path().'/hitachi-report-'.$timeStamp.'.pdf');
                 }
