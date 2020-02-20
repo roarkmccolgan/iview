@@ -183,7 +183,7 @@ return array(
     ',
 
     'overallgraph'=>'
-        <div class="my-5 relative" style="width:160mm;height:75.79mm; background: url(http://hitachicloud.idcready.test/images/tools/13/comparisonbg_overall.svg) no-repeat; background-size:cover">
+        <div class="my-5 relative" style="width:160mm;height:75.79mm; background: url(https://hitachicloud.idcready.net/images/tools/13/comparisonbg_overall.svg) no-repeat; background-size:cover">
             <div class="bg-hitachi-red absolute" style="width: :overall; height: 10mm; top:15mm; left:33mm;"></div>
             <div class="bg-grey absolute" style="width: :migration; height: 10mm; top:29mm; left:33mm;"></div>
             <div class="bg-grey-dark absolute" style="width: :status; height: 10mm; top:43mm; left:33mm;"></div>
@@ -220,7 +220,7 @@ return array(
         </div>
     ',
     'migration-graph' => '
-        <div class="my-5 relative" style="width:160mm;height:61.19mm; background: url(http://hitachicloud.idcready.test/images/tools/13/comparison_migration.svg) no-repeat; background-size:cover">
+        <div class="my-5 relative" style="width:160mm;height:61.19mm; background: url(https://hitachicloud.idcready.net/images/tools/13/comparison_migration.svg) no-repeat; background-size:cover">
             <div class="bg-hitachi-red absolute" style="width: :overall; height: 10mm; top:18mm; left:33mm;"></div>
             <div class="bg-grey absolute" style="width: :migration; height: 10mm; top:37mm; left:33mm;"></div>
         </div>
@@ -609,7 +609,7 @@ return array(
         </div>
     ',
     'status-graph' => '
-        <div class="my-5 relative" style="width:160mm;height:61.19mm; background: url(http://hitachicloud.idcready.test/images/tools/13/comparison_status.svg) no-repeat; background-size:cover">
+        <div class="my-5 relative" style="width:160mm;height:61.19mm; background: url(https://hitachicloud.idcready.net/images/tools/13/comparison_status.svg) no-repeat; background-size:cover">
             <div class="bg-hitachi-red absolute" style="width: :overall; height: 10mm; top:18mm; left:33mm;"></div>
             <div class="bg-grey-dark absolute" style="width: :status; height: 10mm; top:37mm; left:33mm;"></div>
         </div>
@@ -838,7 +838,7 @@ return array(
         </div>
     ',
     'value-graph' => '
-        <div class="my-5 relative" style="width:160mm;height:61.19mm; background: url(http://hitachicloud.idcready.test/images/tools/13/comparison_value.svg) no-repeat; background-size:cover">
+        <div class="my-5 relative" style="width:160mm;height:61.19mm; background: url(https://hitachicloud.idcready.net/images/tools/13/comparison_value.svg) no-repeat; background-size:cover">
             <div class="bg-hitachi-red absolute" style="width: :overall; height: 10mm; top:18mm; left:33mm;"></div>
             <div class="bg-black absolute" style="width: :value; height: 10mm; top:37mm; left:33mm;"></div>
         </div>
