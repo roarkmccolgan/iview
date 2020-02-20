@@ -2528,14 +2528,14 @@ trait GenerateReportTrait
                 session('product.alias').'.introduction1-'.$overallNumber
             );
             $customCopy.= trans(
-                session('product.alias').'.introduction4',
+                session('product.alias').'.introduction4'
             );
             $customCopy.= trans(
                 session('product.alias').'.introduction4-'.$overallNumber
             );
             $customCopy.= '<div class="pb"></div>';
             $customCopy.= trans(
-                session('product.alias').'.introduction5',
+                session('product.alias').'.introduction5'
             );
             $customCopy.= trans(
                 session('product.alias').'.introduction6',
@@ -2543,7 +2543,7 @@ trait GenerateReportTrait
             );
             $customCopy.= '<div class="pb"></div>';
             $customCopy.= trans(
-                session('product.alias').'.introduction7',
+                session('product.alias').'.introduction7'
             );
             $customCopy.= trans(
                 session('product.alias').'.overallstage'.$overallNumber
