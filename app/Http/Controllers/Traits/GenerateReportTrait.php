@@ -2566,7 +2566,7 @@ trait GenerateReportTrait
             );
 
             $customCopy.= trans(
-                session('product.alias').'.overalloutrostage'.$overallNumber,
+                session('product.alias').'.overalloutrostage'.$overallNumber
             );
 
             //Migration
