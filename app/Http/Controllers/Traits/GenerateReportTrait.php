@@ -3085,7 +3085,7 @@ trait GenerateReportTrait
                 //return $pdf->inline('invoice.pdf');
                 $pdf->save(storage_path().'/hitachi-'.$timeStamp.'.pdf');
 
-                $pdfMerger = PDFMerger::init()
+                $merge = PDFMerger::init();
                 $locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
 
                 $merge->addPDF(storage_path().'/hitachi_cover'.$locale .'.pdf', 'all');
