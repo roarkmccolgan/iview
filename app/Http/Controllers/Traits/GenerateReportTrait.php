@@ -2497,6 +2497,272 @@ trait GenerateReportTrait
             $customCopy.= '<div class="spacer"></div>';
 
             $vars['sectionCopy'] = $customCopy;
+        } elseif (session('product.id') == 13) { //Hitachi
+            //User overall stage number and ordinal
+            $overallNumber = (int) filter_var(session('result.overall.rating'), FILTER_SANITIZE_NUMBER_INT);
+            $migrationNumber =  (int) filter_var(session('result.migration.rating'), FILTER_SANITIZE_NUMBER_INT);
+            $statusNumber =  (int) filter_var(session('result.status.rating'), FILTER_SANITIZE_NUMBER_INT);
+            $valueNumber =  (int) filter_var(session('result.value.rating'), FILTER_SANITIZE_NUMBER_INT);
+            
+
+            $vars['introduction'] = trans(
+                session('product.alias').'.introduction',
+                [
+                    'result'=>trans(session('product.alias').'.'.session('result.overall.rating')),
+                    'rankimg'=>asset('images/tools/13/ranking_'.$overallNumber.session('locale').'.png'),
+                ]
+            );
+
+            $customCopy = '';
+
+            //overall
+            $base = config('baseline_'.session('product.id').'.overall');
+            $rating = session('result.overall.rating');
+
+            $user_score = session('result.overall.score');
+
+            $customCopy.= trans(
+                session('product.alias').'.introduction1'
+            );
+            $customCopy.= trans(
+                session('product.alias').'.introduction1-'.$overallNumber
+            );
+            $customCopy.= trans(
+                session('product.alias').'.introduction4',
+            );
+            $customCopy.= trans(
+                session('product.alias').'.introduction4-'.$overallNumber
+            );
+            $customCopy.= '<div class="pb"></div>';
+            $customCopy.= trans(
+                session('product.alias').'.introduction5',
+            );
+            $customCopy.= trans(
+                session('product.alias').'.introduction6',
+                ['img' => session('url').'/'.session('localeUrl').'/images/tools/13/rankings.svg']
+            );
+            $customCopy.= '<div class="pb"></div>';
+            $customCopy.= trans(
+                session('product.alias').'.introduction7',
+            );
+            $customCopy.= trans(
+                session('product.alias').'.overallstage'.$overallNumber
+            );
+
+            $widths = [
+                1 => '21mm',
+                2 => '63mm',
+                3 => '105mm',
+            ];
+
+            $customCopy.= trans(
+                session('product.alias').'.overallgraph',
+                [
+                    'overall'=>$widths[$overallNumber],
+                    'migration'=>$widths[$migrationNumber],
+                    'status'=>$widths[$statusNumber],
+                    'value'=>$widths[$valueNumber]
+                ]
+            );
+
+            $customCopy.= trans(
+                session('product.alias').'.overalloutrostage'.$overallNumber,
+            );
+
+            //Migration
+            $customCopy.= '<div class="pb"></div>';
+            $customCopy.= trans(
+                session('product.alias').'.migration-intro',
+                [
+                    'icon'=>asset('/images/tools/13/migration_icon.png')
+                ]
+            );
+
+            $customCopy.= trans(
+                session('product.alias').'.migration-graph',
+                [
+                    'overall'=>$widths[$overallNumber],
+                    'migration' => $widths[$migrationNumber],
+                ]
+            );
+            
+            $customCopy.= trans(
+                session('product.alias').'.migration-'.$overallNumber.'-stage'.$migrationNumber
+            );
+            $customCopy.= '<div class="pb"></div>';
+            $customCopy.= trans(
+                session('product.alias').'.question1'
+            );
+
+            $q1answer = $this->getAnswerText(1, 'migration', 1);
+            if(in_array('Cost savings', $q1answer)){
+                $customCopy.= trans(session('product.alias').'.question1-a');
+            }elseif(in_array('Automation to achieve IT operational efficiencies, while reducing complexity and freeing up resources', $q1answer)){
+                $customCopy.= trans(session('product.alias').'.question1-b');
+            }elseif(in_array('Responding to competitive threats and disruption', $q1answer)){
+                $customCopy.= trans(session('product.alias').'.question1-c');
+            }elseif(in_array('Capitalize on new data-driven revenue streams and innovation', $q1answer)){
+                $customCopy.= trans(session('product.alias').'.question1-d');
+            }
+            
+            $customCopy.= trans(
+                session('product.alias').'.question2'
+            );
+            $q2score = $this->getQuestionScoreNew(2, 'migration', 2);
+            if($q2score <= 7){
+                $customCopy.= trans(session('product.alias').'.question2-'.$overallNumber.'-1');
+            }elseif($q2score >= 8 && $q2score <= 14){
+                $customCopy.= trans(session('product.alias').'.question2-'.$overallNumber.'-2');
+            }else{
+                $customCopy.= trans(session('product.alias').'.question2-'.$overallNumber.'-3');
+            }
+
+            $customCopy.= trans(
+                session('product.alias').'.question3'
+            );
+            $q3score = $this->getQuestionScoreNew(3, 'migration', 3);
+            if($q3score <= 6){
+                $customCopy.= trans(session('product.alias').'.question3-'.$overallNumber.'-1');
+            }elseif($q3score >= 7 && $q3score <= 12){
+                $customCopy.= trans(session('product.alias').'.question3-'.$overallNumber.'-2');
+            }else{
+                $customCopy.= trans(session('product.alias').'.question3-'.$overallNumber.'-3');
+            }
+
+            $customCopy.= '<div class="pb"></div>';
+            $customCopy.= trans(
+                session('product.alias').'.question4'
+            );
+            $q4score = $this->getQuestionScoreNew(3, 'migration', 3);
+            if($q4score <= 5){
+                $customCopy.= trans(session('product.alias').'.question4-'.$overallNumber.'-1');
+            }elseif($q4score >= 6 && $q4score <= 10){
+                $customCopy.= trans(session('product.alias').'.question4-'.$overallNumber.'-2');
+            }else{
+                $customCopy.= trans(session('product.alias').'.question4-'.$overallNumber.'-3');
+            }
+
+            //Status
+            $customCopy.= '<div class="pb"></div>';
+            $customCopy.= trans(
+                session('product.alias').'.status-intro',
+                [
+                    'icon'=>asset('/images/tools/13/status_icon.png')
+                ]
+            );
+
+            $customCopy.= trans(
+                session('product.alias').'.status-graph',
+                [
+                    'overall'=>$widths[$overallNumber],
+                    'status' => $widths[$statusNumber],
+                ]
+            );
+            
+            $customCopy.= trans(
+                session('product.alias').'.status-'.$overallNumber.'-stage'.$statusNumber
+            );
+
+            $customCopy.= '<div class="pb"></div>';
+            $customCopy.= trans(
+                session('product.alias').'.question5'
+            );
+            $q5answer = $this->getAnswerText(5, 'status', 1);
+            if(in_array('Traditional on-premise IT', $q5answer)){
+                $customCopy.= trans(session('product.alias').'.question5-a');
+            }elseif(in_array('Private Cloud', $q5answer)){
+                $customCopy.= trans(session('product.alias').'.question5-b');
+            }elseif(in_array('Public Cloud', $q5answer)){
+                $customCopy.= trans(session('product.alias').'.question5-c');
+            }elseif(in_array('Hybrid Cloud', $q5answer)){
+                $customCopy.= trans(session('product.alias').'.question5-d');
+            }elseif(in_array('Multicloud', $q5answer)){
+                $customCopy.= trans(session('product.alias').'.question5-e');
+            }
+
+            $customCopy.= trans(
+                session('product.alias').'.question6'
+            );
+            $q6answer = $this->getAnswerText(6, 'status', 2);
+            if(in_array('Cloud deployments greatly improve application and IT infrastructure efficiency / performance', $q6answer)){
+                $customCopy.= trans(session('product.alias').'.question6-a');
+            }elseif(in_array('Using one or more clouds powers my organization’s growth initiatives and innovation', $q6answer)){
+                $customCopy.= trans(session('product.alias').'.question6-b');
+            }elseif(in_array('It allows us to manage and reduce technical debt', $q6answer)){
+                $customCopy.= trans(session('product.alias').'.question6-c');
+            }elseif(in_array('My organization’s cloud initiatives will provide my customers, partners and employees with an improved digital experience', $q6answer)){
+                $customCopy.= trans(session('product.alias').'.question6-d');
+            }elseif(in_array('Maximize the utilization of data and derive faster data-based insights', $q6answer)){
+                $customCopy.= trans(session('product.alias').'.question6-e');
+            }
+
+            $customCopy.= trans(
+                session('product.alias').'.question7'
+            );
+            $q7score = $this->getQuestionScoreNew(3, 'migration', 3);
+            if($q7score <= 6){
+                $customCopy.= trans(session('product.alias').'.question7-1');
+            }elseif($q7score >= 7 && $q7score <= 12){
+                $customCopy.= trans(session('product.alias').'.question7-2');
+            }else{
+                $customCopy.= trans(session('product.alias').'.question7-3');
+            }
+            $customCopy.= trans(
+                session('product.alias').'.question7outro'
+            );
+
+            //Value
+            $customCopy.= '<div class="pb"></div>';
+            $customCopy.= trans(
+                session('product.alias').'.value-intro',
+                [
+                    'icon'=>asset('/images/tools/13/value_icon.png')
+                ]
+            );
+
+            $customCopy.= trans(
+                session('product.alias').'.value-graph',
+                [
+                    'overall'=>$widths[$overallNumber],
+                    'value' => $widths[$valueNumber],
+                ]
+            );
+            
+            $customCopy.= trans(
+                session('product.alias').'.value-'.$overallNumber.'-stage'.$valueNumber
+            );
+
+            $customCopy.= '<div class="pb"></div>';
+            $customCopy.= trans(
+                session('product.alias').'.question8'
+            );
+            $q8answer = $this->getAnswerText(8, 'value', 1);
+            if(in_array('Limited data visibility and classification', $q8answer)){
+                $customCopy.= trans(session('product.alias').'.question8-a');
+            }elseif(in_array('Breaking down the data silos - data consolidation', $q8answer)){
+                $customCopy.= trans(session('product.alias').'.question8-b');
+            }elseif(in_array('Data enrichment (use external data sources)', $q8answer)){
+                $customCopy.= trans(session('product.alias').'.question8-c');
+            }elseif(in_array('Analyse and activate data to support business decision making and strategy', $q8answer)){
+                $customCopy.= trans(session('product.alias').'.question8-d');
+            }elseif(in_array('Monetising data', $q8answer)){
+                $customCopy.= trans(session('product.alias').'.question8-e');
+            }
+
+            $customCopy.= trans(
+                session('product.alias').'.question9'
+            );
+
+            $q9score = $this->getQuestionScoreNew(9, 'value', 2);
+            if($q9score <= 5){
+                $customCopy.= trans(session('product.alias').'.question9-'.$overallNumber.'-1');
+            } elseif($q9score >= 6 && $q9score <= 10){
+                $customCopy.= trans(session('product.alias').'.question9-'.$overallNumber.'-2');
+            }else{
+                $customCopy.= trans(session('product.alias').'.question9-'.$overallNumber.'-3');
+            }
+
+            $vars['sectionCopy'] = $customCopy;
         } else {
             foreach (config('baseline_'.session('product.id')) as $section => $values) {
                 preg_match_all('/\d+/', session('result.'.$section.'.rating'), $matches);
@@ -2804,6 +3070,23 @@ trait GenerateReportTrait
                 if (File::exists(storage_path().'/dassault-report-'.$timeStamp.'.pdf')) {
                     File::delete(storage_path().'/dassault-report-'.$timeStamp.'.pdf');
                 }
+            } elseif (session('product.id')==13) {
+                //$pdf->setOption('cover',session('url').'/'.session('localeUrl').'template/'.session('template').'/report/cover');
+                $timeStamp = time();
+                //return $pdf->inline('invoice.pdf');
+                $pdf->save(storage_path().'/hitachi-'.$timeStamp.'.pdf');
+
+                $merge = new \Nextek\LaraPdfMerger\PdfManage;
+                $locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
+
+                $merge->addPDF(storage_path().'/hitachi_cover'.$locale .'.pdf', 'all');
+                $merge->addPDF(storage_path().'/hitachi-'.$timeStamp.'.pdf', 'all');
+                $merge->addPDF(storage_path().'/hitachi_end'.$locale .'.pdf', 'all');
+
+                $merge->merge('file', storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf', 'P');
+                if (File::exists(storage_path().'/hitachi-report-'.$timeStamp.'.pdf')) {
+                    File::delete(storage_path().'/hitachi-report-'.$timeStamp.'.pdf');
+                }
             } else {
                 return $pdf->save(storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf');
             }
@@ -2850,6 +3133,12 @@ trait GenerateReportTrait
                     }
                     $val = ($norm/$details['calc']['value'])*count($details['selected']);
                 }
+            } else{
+                $hold = 0;
+                foreach ($selected as $select) {
+                    $hold+=$select['value'];
+                }
+                $val = $hold;
             }
         } else {
             $val = $selected[0]['value'];

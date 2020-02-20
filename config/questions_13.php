@@ -56,9 +56,9 @@ return [
                 'questions' => [
                     'q2'=>[
                         'type'=>'groupbutton',
-                        'calc'=>[
-                            'type'=>'sum'
-                        ],
+                        // 'calc'=>[
+                        //     'type'=>'sum'
+                        // ],
                         'optionLabels' => [
                             'Impeding progress',
                             'Working through',
@@ -224,9 +224,9 @@ return [
                 'questions' => [
                     'q3'=>[
                         'type'=>'groupbutton',
-                        'calc'=>[
-                            'type'=>'sum'
-                        ],
+                        // 'calc'=>[
+                        //     'type'=>'sum'
+                        // ],
                         'optionLabels' => [
                             'Not apart of our 2-3 year strategy',
                             'Included in the strategy but not very important right now',
@@ -371,9 +371,9 @@ return [
                 'questions' => [
                     'q4'=>[
                         'type'=>'groupbutton',
-                        'calc'=>[
-                            'type'=>'sum'
-                        ],
+                        // 'calc'=>[
+                        //     'type'=>'sum'
+                        // ],
                         'optionLabels' => [
                             'Impeding progress',
                             'Working through',
@@ -520,27 +520,27 @@ return [
                         'name'=> 5,
                         'options'=>[
                             [
-                                'label'=>'Improve application and IT infrastructure efficiency / performance',
+                                'label'=>'Traditional on-premise IT',
                                 'value'=>1,
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'Use of one or more clouds powers growth initiatives and innovation',
+                                'label'=>'Private Cloud',
                                 'value'=>2,
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'Manage and reduce technical debt',
+                                'label'=>'Public Cloud',
                                 'value'=>2,
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'Provide customers, partners and employees with an improved digital experience',
+                                'label'=>'Hybrid Cloud',
                                 'value'=>3,
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'Maximize the utilization of data and derive faster data-driven insights',
+                                'label'=>'Multicloud',
                                 'value'=>3,
                                 'checked'=>false,
                             ]
@@ -590,9 +590,9 @@ return [
                 'questions' => [
                     'q7'=>[
                         'type'=>'groupbutton',
-                        'calc'=>[
-                            'type'=>'sum'
-                        ],
+                        // 'calc'=>[
+                        //     'type'=>'sum'
+                        // ],
                         'optionLabels' => [
                             'Impeding progress',
                             'Working through',
@@ -792,9 +792,9 @@ return [
                 'questions' => [
                     'q9'=>[
                         'type'=>'groupbutton',
-                        'calc'=>[
-                            'type'=>'sum'
-                        ],
+                        // 'calc'=>[
+                        //     'type'=>'sum'
+                        // ],
                         'optionLabels' => [
                             'Not critical to our data strategy',
                             'Included in the strategy but not very important right now',

@@ -107,6 +107,9 @@ Route::group(['domain' => '{subdomain}.'.env('APP_TLD', 'idcready.net'),'middlew
 
     Route::get('/pdf', 'PdfController@wkhtml');
     Route::get('/scoring', 'ToolController@scoring');
+    Route::get('/session', function(){
+        return session('questions');
+    });
     Route::get('/resendeloqua', 'ToolController@resendeloqua')->middleware(['routebyurl']);
     Route::get('/generateuuid', 'ToolController@generateuuid')->middleware(['routebyurl']);
     Route::get('/template/{templates}/report/header', function ($domain, $template) {

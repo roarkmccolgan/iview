@@ -1,5 +1,5 @@
 <?php
-//Trend
+//Hitachi
 return array(
     'elqFormName'=>'',
     'developedby'=>'Developed by',
@@ -31,11 +31,9 @@ return array(
     'facebooklink'=>'https://www.facebook.com/sharer/sharer.php?u=http%3A//bit.ly/2AwihN4',
     'linkedinlink'=>'https://www.linkedin.com/shareArticle?mini=true&url=http%3A//bit.ly/2AwihN4&title=Symantec%20and%20IDC%20GDPR%20Assessment&summary=Is%20your%20business%20GDPR%20ready?&source=',
 
-    'stage1' => 'Stage 1',
-    'stage2' => 'Stage 2',
-    'stage3' => 'Stage 3',
-    'stage4' => 'Stage 4',
-    'stage5' => 'Stage 5',
+    'stage1' => 'Cloud Starter',
+    'stage2' => 'Cloud Practioner',
+    'stage3' => 'Cloud Master',
 
     'complete' => 'Complete!',
     'finishtxt' => '
@@ -96,1208 +94,941 @@ return array(
         'errorAccept'=>'Please accept the Terms &amp; Conditions',
     ],
     'introduction1' => '
-        <h2 class="text-blue-dark mb-6">INTRODUCTION</h2>
-        <p class="mb-2">Thank you for taking part in IDC\'s Cloud Strategy Assesment.</p>
-
-        <p class="mb-2">The purpose of this assessment tool is to help managed security services providers (MSPs) build a profitable and sustainable MSS business, maximizing the opportunities this fast-growing market segment presents to these companies.</p>
-
-        <p class="mb-2">IDC, a leading global market intelligence and advisory firm, has leveraged substantial research and experience from leading managed security services providers (MSPs) to build a set of recommendations tailored to specific stages and elements within a managed security services business. These recommendations are contained in this report.</p>
-        <p>
-            Based on your input, your aggregate score means that you are at :result in terms of your overall MSS readiness.
-        </p>
-    ',
-    'introduction2' => '
-        <img src=":url/images/tools/13/stages.png" class="w-full sm:w-3/4 mx-auto" alt="">
-    ',
-    'introduction3' => '
-        <p class="text-blue-dark font-bold mb-2">Stage 1</p>
+        <h2 class="text-blue-dark mb-2 pt-20">Introduction</h2>
         <p class="mb-1">
-            Companies at this stage are at the very beginning of their journey to becoming an MSP. They may be new to managed services, to selling in a subscription model and/or new to the security market.
+            Cloud adoption is critical for successful IT modernization to support digital transformation initiatives. Competing in the global economy for customers, investment, and talent requires instant access to relevant data and IT resources that don\'t compromise on speed, scale, security, or costs. A well-thought-out cloud strategy and consistent execution of this strategy delivers the flexibility and scale that underpins digital business success and data transformation.
         </p>
         <p class="mb-1">
-            This is a high-growth market, which is compounded by a severe skills shortage, and presents a massive opportunity for IT solution providers. Now is a good time to reach out to relevant vendor partners (such as Trend Micro) to understand what programmes they have in place to accelerate your entry into the MSS market. 
+        To assess cloud adoption maturity, IDC has developed a Cloud Strategy Assessment tool to understand digital business ambitions, cloud strategies, and execution challenges. Based on the results, we have grouped the respondents into three categories — <strong>Cloud Starter, Cloud Practitioner, and Cloud Master</strong> - to understand what sets the masters apart from their competitors and which best practices we can learn from them in making the cloud and data transformation journey successful.
+        </p>
+    ',
+    'introduction1-1' => '
+        <p class="mb-1">
+            Based on your responses to IDC\'s Cloud Strategy Assessment, your organization has been rated at the earliest level of Cloud Strategy maturity — a <strong>Cloud Starter</strong>. This means you are at the beginning of your cloud and data-enabled journey, and there will be much to do and much to gain. Having the right guidance, leveraging industry best practices, and working with specialist vendors and partners, you will catch up quickly. You need to define a starting point, set short, mid- and long-term priorities, and start to drive incremental improvements. With the amount of potential complexity and a shortage of digital skills, seek outside assistance where possible to accelerate your move to a cloud-enabled and data-driven organization.
+        </p>
+    ',
+    'introduction1-2' => '
+        <p class="mb-1">
+            Well done on your result. Based on your responses to IDC\'s Cloud Strategy Assessment, your organization has been rated at the second highest level of cloud maturity — a <strong>Cloud Practitioner</strong>. This means your organization is generally in line with the rest of the industry and has prepared itself for the highest levels of cloud and data success. While you are doing well, there is still a bit more to do, to be fully cloud and data ready. To create a true competitive advantage, your focus must shift from a tactical approach to a more strategic, fully aligned way of thinking across all areas of the business.
+        </p>
+    ',
+    'introduction1-3' => '
+        <p class="mb-1">
+            Congratulations. Based on your responses to IDC\'s Cloud Strategy Assessment, your organization has been rated as a Cloud Master, which is the highest level of cloud maturity. This means your organization is ahead of the industry, blazing a trail in using cloud and data, as business assets, and as a key competitive differentiator. Always bear in mind, though, the world of cloud and data is highly dynamic, and you\'ll need to keep improving and evolving to consistently stay ahead.
         </p>
     ',
     'introduction4' => '
-        <p class="text-blue-dark font-bold mb-2">Stage 2</p>
         <p class="mb-1">
-            With some experience in operating managed services and/or security solutions, companies at this stage are beginning to realise the opportunities and may well be starting to incorporate recurring/subscription-based revenue into their business.
+            The key priorities for organizations accelerating their digital transformation journeys are IT modernization, successful cloud adoption, and progress in becoming data-driven. They want to use cloud and data transformation initiatives to improve efficiency, business performance, and the speed of innovation. Delivering on digital business mandates requires a well-thought-out cloud strategy and set of technologies to drive innovation, all without compromising on cost control, security, or regulatory obligations. Providing a flexible IT delivery model and relevant data at speed, while aligning with business needs, is critical. Developing a successful cloud and data strategy will form the bedrock on which to digitally transform your organization in a saleable and agile manner. 
         </p>
+    ',
+    'introduction4-1' => '
         <p class="mb-1">
-            To build on the foundation which has been laid already, it is important that companies at Stage 2 are proactively building business plans relating to sales, marketing and services transformations to support the MSS model.
+            The key priorities for organizations accelerating their digital transformation journeys are IT modernization, successful cloud adoption, and progress in becoming data-driven. They want to use cloud and data transformation initiatives to improve efficiency, business performance, and the speed of innovation. Delivering on digital business mandates requires a well-thought-out cloud strategy and set of technologies to drive innovation, all without compromising on cost control, security, or regulatory obligations. Providing a flexible IT delivery model and relevant data at speed, while aligning with business needs, is critical.
+        </p>
+        <p class="italic mb-1 text-blue-dark">
+            Developing a successful cloud and data strategy will form the bedrock on which to digitally transform your organization in a saleable and agile manner. 
+        </p>
+    ',
+    'introduction4-2' => '
+        <p class="mb-1">
+            As a <strong>Cloud Practitioner</strong>, your key priorities are to define and measure metrics to track migration and application operations in public cloud, standardize migration processes and workload evaluations, and automate operations. You also need to overcome the complexities of cloud operations to further progress and scale your cloud migration and modernization strategy. 
+        </p>
+        <p class="italic mb-1 text-blue-dark">
+            <strong>Cloud Practitioner</strong> organizations have already addressed the low-hanging fruit, seen the business benefits of the cloud strategy, and have the determination to make progress. They need to maintain the momentum and invest in transforming legacy business processes and legacy applications to graduate to the next stage.
+        </p>
+    ',
+    'introduction4-3' => '
+        <p class="mb-1">
+            As a <strong>Cloud Master</strong>, a key priority is to be cognizant of the fact that the cloud world is very dynamic and constantly evolving. Cloud Master organizations need to continuously evolve and are constantly investing in reevaluating their cloud, data, and security postures, while making incremental innovations to maintain their competitive edge. You will need to apply standard processes and automation to the broadest set of workloads possible, implement learnings and best practices from operational success across the organization, and continuously review and refine placement decisions and processes as needed over time.
         </p>
     ',
     'introduction5' => '
-        <p class="text-blue-dark font-bold mb-2">Stage 3</p>
+        <h2 class="text-blue-dark mb-2 pt-20">Ranking Explanation</h2>
         <p class="mb-1">
-            Companies at this stage are invested in their MSS business, and the emphasis should now be on improving efficiencies and driving profitability. At this stage, companies are starting to transform sales, marketing and services for MSS.
+            Organizations who view cloud as a critical technology and the foundation of their digital transformation, as opposed to just a tactical way to save costs, will be in a better position to capitalize on new digital initiatives, yield higher returns and ultimately make your cloud strategy a success. 
         </p>
-        <p class="mb-1">
-            Companies at this stage will need to address the challenge of how to accelerate transformation while still maintaining existing business. 
+        <p class="italic mb-1 text-blue-dark">
+            The key to successful digital transformation is the ability to make IT a business enabler by leveraging cloud and business data. The better an organization is in its vision, execution and overcoming challenges along the way, the higher they are in the maturity curve giving them a competitive differentiation. 
         </p>
     ',
     'introduction6' => '
-        <p class="text-blue-dark font-bold mb-2">Stage 4</p>
         <p class="mb-1">
-            Companies at Stage 4 have an embedded MSS business. Significant efforts have been made to transform the sales, marketing and services organisations within the company, with increasing automation, repeatability and growing profitability.
+            The IDC Cloud Strategy Assessment ranks organisations by three maturity levels - <strong>Cloud Starters, Cloud Practitioners and Cloud Masters</strong>.
         </p>
-        <p class="mb-1">
-            Now, the priority for these companies is to enhance and expand their MSS portfolio, innovate and differentiate to establish market leadership. 
-        </p>
+        <div class="" style="width:160mm;height:151.16mm; background: url(:img) no-repeat; background-size:cover">
     ',
-    'introduction7' => '
-        <p class="text-blue-dark font-bold mb-2">Stage 5</p>
+    'introduction7'=>'
+        <h2 class="leading-tight text-blue-dark mb-2">Your Ranking</h2>
         <p class="mb-1">
-            Companies at Stage 5 are considered mature (and market-leading) MSPs, with all business units optimised to support this model.
+            Organizations can only successfully compete in the global economy if their cloud and data-related strategies are world-class and the execution is consistent, adaptive, and takes advantage of the relevant cloud and data-enabling technologies. IDC\'s Cloud Strategy Assessment scores organizations on their cloud strategy maturity by looking at three core elements — <strong>cloud migration and application modernization, multicloud status, and data value realization.</strong>
         </p>
-        <p class="mb-1">
-            The emphasis at this stage is on retaining market leadership through a continuous innovation process and focus on profitability. 
-        </p>
-    ',
-    'introduction8' => '
-        <img src=":url/images/tools/13/trend.png" class="w-full mx-auto" alt="">
     ',
     'overallstage1'=>'
-        <h2 class="leading-tight text-blue-dark mb-2">YOUR OVERALL PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">:stage</span>
-        <p class="mb-2">Companies at this stage are at the very beginning of their journey to becoming an MSP. They may be new to managed services, to selling in a subscription model, and/or new to the security market.</p>
-        <p class="mb-2">This is a high growth market, which is compounded by severe skills shortage, and presents a massive opportunity for IT solution providers. Now is a good time to reach out to relevant vendor partners (like Trend Micro) to understand what programs they have in place to accelerate your entry into the MSS market.</p>
+        <p class="mb-2">
+            You are off to a start. You are at the beginning of your cloud journey. Based on your responses to IDC\'s Cloud Strategy Assessment, your organization has been rated at the beginner level of three levels of cloud maturity — <strong>Cloud Starter</strong>.
+        </p>
     ',
     'overallstage2'=>'
-        <h2 class="leading-tight text-blue-dark mb-1">YOUR OVERALL PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 2</span>
-        <p class="mb-2">With some experience in operating managed services and/or security solutions, companies at this stage are beginning to realize the opportunities and may well be starting to incorporate recurring/subscription-based revenue into their business.</p>
-        <p class="mb-2">To build on the foundation which has been laid already, it is important that companies at Stage 2 are proactively building business plans relating to sales, marketing, and services transformations to support the MSS model.</p>
+        <span class="block mb-2 font-bold text-grey-dark text-lg">Cloud Practitioner</span>
+        <p class="mb-2">
+            You are well under way with your cloud journey. Based on your responses to IDC\'s Cloud Strategy Assessment, your organization has been rated at the second highest level of cloud maturity — <strong>Cloud Practitioner</strong>. This means your organization is generally in line with the rest of the industry and is progressing consistently to achieve cloud excellence. While you are doing well, there is still more to do on the execution of your cloud strategy, making cloud and data a key competitive differentiator.
+        </p>
     ',
     'overallstage3'=>'
-        <h2 class="leading-tight text-blue-dark mb-1">YOUR OVERALL PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 3</span>
-        <p class="mb-2">Companies at this stage are invested in their MSS business, and the emphasis should now be on improving efficiencies and driving profitability. At this stage, companies are starting to transform sales, marketing, and services for MSS.</p>
-        <p class="mb-2">Companies at this stage will need to address the challenge of how to accelerate transformation while maintaining the existing business.</p>
+        <span class="block mb-2 font-bold text-grey-dark text-lg">Cloud Master</span>
+        <p class="mb-2">
+            Congratulations. Based on your responses to IDC\'s Cloud Strategy Assessment Tool, your organization has been rated at the highest level of cloud maturity — <strong>Cloud Master</strong>. This means your organization is among the minority that is generally ahead of the industry, becoming data driven and blazing a trail to cloud excellence. Always bear in mind that you need to continuously innovate to maintain your industry leadership.
+        </p>
     ',
-    'overallstage4'=>'
-        <h2 class="leading-tight text-blue-dark mb-1">YOUR OVERALL PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 4</span>
-        <p class="mb-2">Companies at Stage 4 have an embedded MSS business. Significant efforts have been made to transform the sales, marketing, and services organizations within the company, with increasing automation, repeatability, and growing profitability.</p>
-        <p class="mb-2">Now, the priority for these companies is to enhance and expand their MSS portfolio, innovate, and differentiate to establish market leadership.</p>
-    ',
-    'overallstage5'=>'
-        <h2 class="leading-tight text-blue-dark mb-1">YOUR OVERALL PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 5</span>
-        <p class="mb-2">Companies at Stage 5 are considered mature (and market-leading) MSPs, with all business units optimized to support this model. The emphasis at this stage is on retaining market leadership through a continuous innovation process and focus on profitability.</p>
-    ',
-    'salesstage1'=>'
-        <h2 class="leading-tight text-blue-dark mb-2">SALES PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 1</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 1 in terms of your sales readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    A horizontal sales structure, with limited specialization either in terms of industry (sector) and/or technology (e.g., security). Also tend to be product, not services, focused.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Very few organizations at this stage have dedicated sales professionals for either managed services or security.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Typically, there are no pre-sales staff dedicated to supporting the sales team in selling managed security services.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Compensation structures and incentive schemes have not been adjusted to account for recurring/subscription-based revenue models.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    There has been little attention paid to service-attach bundles (e.g., bundling a managed endpoint security service with a cloud-based productivity suite like Office 365).
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Very few companies at this stage can provide unified cloud and managed services billing to their customers (e.g., providing one bill for both product and managed services); many rely on their vendors and/or distributors to provide this billing capability.
-                </div>
-            </div>
+
+    'overallgraph'=>'
+        <div class="my-5 relative" style="width:160mm;height:75.79mm; background: url(http://hitachicloud.idcready.test/images/tools/13/comparisonbg_overall.svg) no-repeat; background-size:cover">
+            <div class="bg-hitachi-red absolute" style="width: :overall; height: 10mm; top:15mm; left:33mm;"></div>
+            <div class="bg-grey absolute" style="width: :migration; height: 10mm; top:29mm; left:33mm;"></div>
+            <div class="bg-grey-dark absolute" style="width: :status; height: 10mm; top:43mm; left:33mm;"></div>
+            <div class="bg-black absolute" style="width: :value; height: 10mm; top:57mm; left:33mm;"></div>
         </div>
-        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
-        <p class="mb-2 text-grey-dark">Now is the time to:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Embrace the opportunity to lay the right kind of foundation for an effective sales strategy and organization for MSS.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Start early in enabling your sales and pre-sales people to more confidently sell services (i.e., transition them from product sales to services sales). Start with a small group (a tiger team), train them well, and use them to help influence the broader sales team (e.g., a train-the-trainer approach).
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Identify which of your vendor partners can help you train and enable this team and ask them to help and support you.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Think about how your compensation and incentive models need to evolve as you bring recurring and subscription-based managed services to your business. Ensure that they are still lucrative for sales people who are more used to bigger upfront product and project deals.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Think about how you bill your customers; as your managed services business grows, so will features like unified billing become more important.
-                </div>
+    ',
+    'overalloutrostage1'=>'
+        <p class="font-bold mb-2">
+            Your results indicate that there are many areas to be addressed to successfully develop your cloud and data strategy. This report will give you advice on some key areas to prioritize as you look to progress to the next stage of cloud adoption. Let\'s turn to the next page and dig into the tangible actions you can take to progress.
+        </p>
+    ',
+    'overalloutrostage2'=>'
+        <p class="font-bold mb-2">
+            Your results indicate that there are many areas to be addressed to successfully develop your cloud and data strategy. This report will give you advice on some key areas to prioritize as you look to progress to the next stage of cloud adoption. Let\'s turn to the next page and dig into the tangible actions you can take to progress.
+        </p>
+    ',
+    'overalloutrostage3'=>'
+        <p class="font-bold mb-2">
+            Your results demonstrate the characteristics of an organization with a best-in-class cloud and data strategy. While this is excellent, there are always areas which may need refinement and space for new innovation, ensuring that you stay ahead in the cloud game. This report will highlight a few key areas to prioritize as you continue to master your cloud and data strategy. Let\'s turn to the next page to learn more about cloud mastery. 
+        </p>
+    ',
+    'migration-intro' => '
+        <div class="clearfix pt-20">
+            <div class="w-1/4 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 30mm;"></div>
+            <div class="w-3/4 float-left">
+                <h2 class="text-blue-dark mb-3">Cloud Migration and Application Modernization</h2>
+                <p class="mb-2">
+                    Welcome to the cloud migration and application modernization chapter of this report. IDC research shows that an effective cloud adoption and legacy application modernization strategy, built on the right fundamentals, is a critical element of a successful digital transformation strategy. A consistent and planned strategy to migrate to cloud-like, services-driven infrastructures and to transform legacy applications enables enterprisewide digital transformation. This section will assess your maturity and progress in key areas of cloud migration and application modernization and help determine where you need to focus to yield the best results.
+                </p>
+                <p class="mb-2">
+                    This section of the report assesses the status of your organization\'s cloud migration and application modernization strategy. It is based on what\'s driving your key investment decisions, the challenges you are facing, and how initiatives are being prioritized within your cloud strategy.
+                </p>
             </div>
         </div>
     ',
-    'salesstage2'=>'
-        <h2 class="leading-tight text-blue-dark mb-2">SALES PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 2</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 2 in terms of your sales readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Sales teams are structured so staff have some experience selling recurring-revenue-based services, such as cloud services or managed services.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    A pre-sales function around managed security services is beginning to build up, offering support to the sales team as they address this opportunity.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Compensation and incentive structures are beginning to transform, offering sales teams upfront compensation on any recurring business they win.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Sales teams can own customer billing around managed security services, but they do so on an annual basis.
-                </div>
-            </div>
+    'migration-graph' => '
+        <div class="my-5 relative" style="width:160mm;height:61.19mm; background: url(http://hitachicloud.idcready.test/images/tools/13/comparison_migration.svg) no-repeat; background-size:cover">
+            <div class="bg-hitachi-red absolute" style="width: :overall; height: 10mm; top:18mm; left:33mm;"></div>
+            <div class="bg-grey absolute" style="width: :migration; height: 10mm; top:37mm; left:33mm;"></div>
         </div>
-        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
-        <p class="mb-2 text-grey-dark">Now is the time to:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Bolster the initial foundations by looking to convert existing project-based business toward recurring managed services.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Take a selected team of pre-sales staff and focus them purely on managed security services, so that they build up expertise in this area.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Plan, in tandem, the transformation of compensation structures. One of the biggest challenges facing new managed services and cloud services providers is overcoming the sales person\'s perception that smaller, more frequent recurring revenue will make it more challenging to meet quotas. Think very carefully about how you incentivize for these services.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Look at ways to bring consumption-based billing to their managed security services, as more and more customers are looking for this kind of functionality.
-                </div>
+    ',
+
+    'migration-1-stage1' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2 font-bold">
+                Your overall score for this section indicates that you are in line with your Cloud Starter peers. You are at the beginning of your journey, so there are many areas you need to address. You can look into individual assessment areas within this section to understand what changes you could make to improve your cloud migration and application modernization maturity.
+            </p>
+        </div>
+    ',
+    'migration-1-stage2' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2 font-bold">
+                You will be pleased to know that your overall score for cloud migration and application modernization indicates that you are ahead of your Cloud Starter peers. Very well done. While keeping this up, you should focus on other aspects such as eliminating management complexities, adopting more automation, and seeking ways to monetize data to improve your overall cloud and data transformation capabilities.
+            </p>
+        </div>
+    ',
+    'migration-1-stage3' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2 font-bold">
+                Very well done. Your overall score for this section indicates that you are well ahead of your Cloud Starter peers. You are clearly doing something right. While keeping this up, you should explore other aspects related to security, automation, and data capitalization to improve your overall cloud, data, and digital maturity. You must identify the strengths of your cloud migration strategy and extend these principles and best practices to other areas of your cloud and data strategy.
+            </p>
+        </div>
+    ',
+
+    'migration-2-stage1' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2 font-bold">
+                In respect to your cloud migration and application modernization approach, your score indicates that you are lagging behind your Cloud Practitioner peers. Legacy application transformation and consistent cloud adoption is an area where you should improve. To catch up with your peers, take steps to address this aspect more seriously. Have a look into individual assessment areas within this section to better understand what changes you could make to improve your position.
+
+            </p>
+        </div>
+    ',
+    'migration-2-stage2' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2 font-bold">
+                In respect to your cloud migration and application modernization progress, your score for this section indicates that you are in line with your Cloud Practitioner peers. You are well on your way, but you need to maintain momentum to stay in line with your fast-moving peers. To improve further, have a look into individual assessment areas within this section to identify areas for improvement and key best practices to help you progress further.
+            </p>
+        </div>
+    ',
+    'migration-2-stage3' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2 font-bold">
+                In respect to your cloud migration and application modernization progress, your score for this section indicates that you are ahead of your Cloud Practitioner peers. Well done on your journey so far. While keeping this up, you must also look at aspects related to security, automation, and data capitalization to improve your overall cloud, data, and digital maturity levels.
+            </p>
+        </div>
+    ',
+
+    'migration-3-stage1' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2 font-bold">
+                Your overall score in this area indicates that you are lagging quite far behind other Cloud Master peers in the area of cloud migration and application modernization. You should urgently evaluate the individual assessment areas within this section to understand what changes you could make to your cloud migration approach in the short term to catch up with your peers and in the long run to keep up with them. You have a lot of work to do, so act quickly to address the areas of improvement. This will help you sustain your strong position with respect to your overall cloud maturity
+            </p>
+        </div>
+    ',
+    'migration-3-stage2' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2 font-bold">
+                Your overall score in this area indicates that you are lagging behind other Cloud Master peers with regards to your cloud adoption and application modernization approach. You should look into the individual assessment areas within this section to understand where improvements are needed and address them quickly. This area is currently showing as a weakness in your overall cloud strategy, and, if corrected, your overall success within cloud will be greatly improved.
+            </p>
+        </div>
+    ',
+    'migration-3-stage3' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2 font-bold">
+                Your overall score in this area indicates that you are in line with your Cloud Master peers with respect to the progress you have made with your cloud migration and application modernization strategy. While keeping this up, look at potential areas of improvement related to security, automation, and data capitalization — all of which will improve your overall cloud, data, and digital maturity
+            </p>
+        </div>
+    ',
+    'question1' => '
+        <div class="clearfix pt-20">
+            <div class="w-3/4 ml-auto">
+                <h4 class="mb-1 font-bold text-grey-darker">Question 1</h4>
+                <h3 class="mb-1 text-blue-dark leading-tight">What is the key driver of your cloud migration and application modernization strategy?</h3>
             </div>
         </div>
     ',
-    'salesstage3'=>'
-        <h2 class="leading-tight text-blue-dark mb-2">SALES PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 3</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 3 in terms of your sales readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Typically, companies at this stage are generally transitioning, meaning they are looking to convert to a managed services model.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Appetite for change is strong among companies at this stage, and actions are being carried out to make this happen.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Companies at this stage tend to have dedicated some specific pre-sales resource to managed security services, to support their sales teams in making the move to this model.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Companies at this stage have transformed their incentive plans to ensure the managed services opportunity is seen as lucrative. Various tactics can be deployed, and common tactics include upfront recognition, annualized recognition, quota relief, and additional incentives.
-                </div>
-            </div>
+    'question1-a' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2">
+                Focusing on cost savings as the key driver for cloud migration and application modernization efforts might initially seem like the most sensible approach … but is it? Early stage cloud adoption was often driven by the expectation to save costs when moving from a capex model on-premises to an opex model in the cloud. However, the business case in the cloud does not stack up if you are not also changing your processes so that you scale your application usage up and down according to demand. In addition, cloud as an operating model provides so many other benefits like access to innovative services and support of an agile working culture, which provide more significant advantages than "only" cost savings. To get to the next level, you should think more broadly about the benefits that a cloud and application modernization strategy can provide for your organization.        
+            </p>
         </div>
-        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
-        <p class="mb-2 text-grey-dark">Now is the time to:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Look outside the existing customer base to try and win new MSP deals with new customers, rather than focusing only on transitioning the existing base.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Bolster the pre-sales teams and ensure they have a focus on growing the MSS business, leveraging them to better support the sales teams in their efforts.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Incentivize cleverly — whether it be new logos, transitioned accounts, or attractive compensation plans.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Measure sales teams differently — start to think about incentivizing new KPIs like customer satisfaction and active usage. This ensures that customers are happy and therefore will be more likely to renew.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Think about services-attach, such as bundling a cloud-productivity suite with a managed endpoint security service. This makes life easier for the sales person as well as the customer.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Think about incorporating analytics features into your billing, e.g., real-time usage dashboards. This enables sales to understand what their customers are using to serve them better and understand their needs.
-                </div>
+    ',
+    'question1-b' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2">
+                Cloud is a great way to drive operational efficiency at the infrastructure layer, as the cloud provider manages the infrastructure for you so you can free up IT infrastructure operations staff and focus them on other tasks. However, the move to the cloud requires new skills as well, so you need to retrain your staff with cloud management capabilities or look to external resources to fill the gaps. In addition, please consider that cloud offers much more than operational efficiency and is the foundation for digital transformation. To move to the next level of cloud maturity, you might want to investigate how you can use the cloud for business model innovation and transformation, for example by opening up your data and driving new revenue streams from your data in a compliant way.       
+            </p>
+        </div>
+    ',
+    'question1-c' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2">
+                When you find that your competitors are moving to the cloud, it is an opportune moment to investigate if cloud could make sense for your organization as well. Once your competitors and even potential disruptors from outside your industry are using cloud services, they might leapfrog your organization thanks to the operational benefits and the greater innovative potential that cloud provides. To progress to the next level of cloud maturity, you should not only investigate the use of cloud as a defensive move, but really open up to the transformational potential that cloud brings and find out how you can build new products and services based on the functionality that cloud provides.       
+            </p>
+        </div>
+    ',
+    'question1-d' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2">
+                You really understand the transformational potential of moving to the cloud and you explore the cloud\'s potential to support new business models and revenue streams relating to data monetization. To stay ahead of your competitors, make sure that you constantly improve your cloud operations as well, so that your costs are under control, you can drive great operational efficiency and automation in your cloud operations, and you are compliant with relevant regulations.      
+            </p>
+        </div>
+    ',
+
+    'question2' => '
+        <div class="clearfix">
+            <div class="w-3/4 ml-auto">
+                <h4 class="mb-1 font-bold text-grey-darker">Question 2</h4>
+                <h3 class="mb-1 text-blue-dark leading-tight">To what degree are these challenges impacting your cloud strategy?</h3>
             </div>
         </div>
     ',
-    'salesstage4'=>'
-        <h2 class="leading-tight text-blue-dark mb-2">SALES PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 4</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 4 in terms of your sales readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Companies at this stage tend to have a high number of pre-sales staff dedicated to supporting sales staff pursuing MSP security opportunities.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Compensation plans for companies at this stage tend to have transitioned to offer sales staff a mix of upfront and ongoing commission, with incentives in place to encourage sales of managed services.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Sales teams at companies at this stage pay close attention to customer usage and satisfaction, enabling them to reduce churn and therefore boost profitability.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    The emphasis is typically less on transitioning and more on winning new clients for the MSP security business. 
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Sophisticated billing platforms are offered to customers, often with consumption-based billing mechanisms.
-                </div>
-            </div>
+    'question2-1-1' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2">
+                As a Cloud Starter, you are still dealing with many challenges when implementing your cloud strategy. The move to the cloud is more than a simple technology upgrade — it is transforming not only your technology platform but also your processes, your staffing requirements, your security procedures, and how you collaborate with other parts of your business. To move to the next stage of cloud maturity, you need to define the starting point for your cloud journey. Do an audit of the challenges you encounter in implementing your cloud strategy, rank them in order of importance, cost, and complexity, start with the easy ones to achieve some quick successes, and plan to address the more complex challenges. Reach out to an experienced partner for additional resources, support, and guidance.    
+            </p>
         </div>
-        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
-        <p class="mb-2 text-grey-dark">Now is the time to:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Build on the strong foundation you have developed to maximize opportunities and boost profitability.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Ensure your pre-sales teams are enabled and empowered to develop opportunities and work closely with their vendor partners.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Emphasize solution selling, i.e., tailoring managed services and solutions solutions to customer segments and needs.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Ensure your sales teams are focused on customer satisfaction, renewals, and customer success; consider creating a "customer for life" sales structure.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Focus on services-attach and creating complementary bundles to make it easier for sales people to make the connections, to cross-sell and up-sell.
-                </div>
+    ',
+    'question2-1-2' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2">
+                As a Cloud Starter, you have already tackled some important cloud challenges and are ahead of your Cloud Starter peers in this area. However, the move to the cloud is more than a simple technology upgrade — it is transforming not only your technology platform but also your processes, your staffing requirements, your security procedures, and how you collaborate with other parts of your business. To move to the next stage of cloud maturity, you need to address the more complex challenges that still lie ahead. Do an audit of the challenges that are still ahead of you when implementing your cloud strategy, rank them in order of importance, cost, and complexity, start with the easy ones to achieve some quick successes, and plan to address the more complex challenges. Reach out to an experienced partner for additional resources, support, and guidance.
+            </p>
+        </div>
+    ',
+    'question2-1-3' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2">
+                As a Cloud Starter, you have already tackled most of the important cloud challenges and are far ahead of your Cloud Starter peers. However, the move to the cloud is more than a simple technology upgrade — it is transforming not only your technology platform but also your processes, your staffing requirements, your security procedures, and how you collaborate with other parts of your business. To move to the next stage of cloud maturity, you need to address the more complex challenges that still lie ahead. Do an audit of the challenges that are still ahead of you when implementing your cloud strategy, rank them in order of importance, cost, and complexity, start with the easy ones to achieve some quick successes, and plan to address the more complex challenges. Reach out to an experienced partner for additional resources, support, and guidance.
+            </p>
+        </div>
+    ',
+    'question2-2-1' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2">
+                For a Cloud Practitioner, you are still dealing with many challenges when implementing your cloud strategy, and you are behind your Cloud Practitioner peers in this area. The move to the cloud is more than a simple technology upgrade — it is transforming not only your technology platform but also your processes, your staffing requirements, your security procedures, and how you collaborate with other parts of your business. To move to the next stage of cloud maturity, you need to define the starting point for your cloud journey. Do an audit of the challenges you encounter in implementing your cloud strategy, rank them in order of importance, cost, and complexity, start with the easy ones to achieve some quick successes, and plan to address the more complex challenges. Reach out to an experienced partner for additional resources, support, and guidance.
+            </p>
+        </div>
+    ',
+    'question2-2-2' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2">
+                As a Cloud Practitioner, you have already tackled some important cloud challenges and are on a par with your Cloud Practitioner peers. The move to the cloud is more than a simple technology upgrade — it is transforming not only your technology platform but also your processes, your staffing requirements, your security procedures, and how you collaborate with other parts of your business. To move to the next stage of cloud maturity, you need to address the more complex challenges that still lie ahead. Do an audit of the challenges you encounter in implementing your cloud strategy, rank them in order of importance, cost, and complexity, start with the easy ones to achieve some quick successes, and plan to address the more complex challenges. Reach out to an experienced partner for additional resources, support, and guidance.
+            </p>
+        </div>
+    ',
+    'question2-2-3' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2">
+                As a Cloud Practitioner, you have already tackled most of the important cloud challenges and are ahead of your Cloud Practitioner peers. However, the move to the cloud is more than a simple technology upgrade — it is transforming not only your technology platform but also your processes, your staffing requirements, your security procedures, and how you collaborate with other parts of your business. To move to the next stage of cloud maturity, you need to address the more complex challenges that still lie ahead. Do an audit of the challenges that are still ahead of you when implementing your cloud strategy, rank them in order of importance, cost, and complexity, start with the easy ones to achieve some quick successes, and plan to address the more complex challenges. Reach out to an experienced partner for additional resources, support, and guidance.
+            </p>
+        </div>
+    ',
+
+    'question2-3-1' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-1">
+                For a Cloud Master, you are surprisingly still dealing with many challenges related to the implementation of your cloud strategy and are scoring far behind your Cloud Master peers. The move to the cloud is more than a simple technology upgrade — it is actually transforming not only your technology platform but also your processes, your staffing requirements, your security procedures, and how you collaborate with other parts of your business.
+            </p>
+        </div>
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2">
+                To move to the next stage of cloud maturity, you need to define the starting point for your cloud journey. Do an audit of the challenges you encounter in implementing your cloud strategy, rank them in order of importance, cost, and complexity, start with the easy ones to achieve some quick successes, and plan to address the more complex challenges. Reach out to an experienced partner for additional resources, support, and guidance.
+            </p>
+        </div>
+    ',
+    'question2-3-2' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-1">
+                As a Cloud Master, you have already tackled some cloud challenges, but there are still many to tackle. You are scoring below your Cloud Master peers, demonstrating a higher than expected amount of challenges to overcome. The move to the cloud is more than a simple technology upgrade — it is transforming not only your technology platform but also your processes, your staffing requirements, your security procedures, and how you collaborate with other parts of your business.
+            </p>
+        </div>
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2">
+                To move to the next stage of cloud maturity, you need to address the more complex challenges that still lie ahead. Do an audit of the challenges you encounter, rank them in order of importance, cost, and complexity; start with the easy ones to achieve some quick successes and make a phased plan to address the more complex challenges. Reach out to an experienced partner for additional resources, support, and guidance.
+            </p>
+        </div>
+    ',
+    'question2-3-3' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2">
+                As a Cloud Master, you are have already tackled most of the important cloud challenges, and you are on a par with your Cloud Master peers. The move to the cloud is more than a simple technology upgrade — it is transforming not only your technology platform but also your processes, your staffing requirements, your security procedures, and how you collaborate with other parts of your business. To stay ahead of your competition, you need to keep improving and tackle arising cloud operational challenges quickly and effectively.
+            </p>
+        </div>
+    ',
+
+    'question3' => '
+        <div class="clearfix">
+            <div class="w-3/4 ml-auto">
+                <h4 class="mb-1 font-bold text-grey-darker">Question 3</h4>
+                <h3 class="mb-1 text-blue-dark leading-tight">Looking at your 2-3 year strategy, please rank the importance of the following initiatives?</h3>
             </div>
         </div>
     ',
-    'salesstage5'=>'
-        <h2 class="leading-tight text-blue-dark mb-2">SALES PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 5</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 5 in terms of your sales readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Companies at this stage are looking to tailor their MSP offerings to vertical markets, offering specific solutions to customers by industry, focus, or size.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Pre-sales teams take opportunities to vendors, working alongside the sales teams to surface business.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    At this developed stage, companies focus their sales teams on customer satisfaction, renewals, and customer success.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Companies at Stage 5 are experienced in selling services-attach, creating solutions and bundled offerings.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Stage 5 companies typically offer flexible and sophisticated billing, with features such as unified billing, real-time analytics, multivendor billing, and consumption-based billing.
-                </div>
-            </div>
+    'question3-1-1' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-1">
+               You are only prioritizing a small number of cloud-related initiatives. This is typical for Cloud Starters. A typical cloud journey starts with creating IT efficiencies within the datacenter, freeing up IT resources and satisfying security, regulatory compliance, and data governance requirements. As a next step, organizations are typically looking to implement an agile, cloud-based application architecture using microservices and containers. Finally, they are building an intelligent core to implement and scale analytics, machine learning, and artificial intelligence. To do that, they need to automate and orchestrate the exchange of data within their ecosystem to develop new digital experiences that drive customer satisfaction and revenue. 
+            </p>
+            <p class="w-3/4 ml-auto mb-2">
+               As a Cloud Starter, you are doing well to focus on a few initiatives to start with and work your way up to the more complex projects ahead.
+            </p>
         </div>
-        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
-        <p class="mb-2 text-grey-dark">Now is the time to:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Look to deepen specializations and use-case-driven solutions and ensure these are reflected in the go-to-market activities.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Ensure cross-sell, up-sell, and services-attach are incentivized and encouraged.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Invest in consultative selling frameworks, tools, and resources.
-                </div>
+    ',
+    'question3-1-2' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-1">
+                You are prioritizing a good number of cloud-related initiatives. This is better than your Cloud Starters peers. A typical cloud journey starts with creating IT efficiencies within the datacenter, freeing up IT resources and satisfying security, regulatory compliance, and data governance requirements. As a next step, organizations are typically looking to implement an agile, cloud-based application architecture using microservices and containers. Finally, they are building an intelligent core to implement and scale analytics, machine learning, and artificial intelligence. To do that, they need to automate and orchestrate the exchange of data within their ecosystem to develop new digital experiences that drive customer satisfaction and revenue. 
+            </p>
+            <p class="w-3/4 ml-auto mb-2">
+                As a Cloud Starter, you are doing well to progress on the next level of initiatives and work your way up to the more complex projects ahead.
+            </p>
+        </div>
+    ',
+    'question3-1-3' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-1">
+                You are prioritizing many cloud-related initiatives. This is far better than your Cloud Starter peers. A typical cloud journey starts with creating IT efficiencies within the datacenter, freeing up IT resources and satisfying security, regulatory compliance, and data governance requirements. As a next step, organizations are typically looking to implement an agile, cloud-based application architecture using microservices and containers. Finally, they are building an intelligent core to implement and scale analytics, machine learning, and artificial intelligence. To do that, they need to automate and orchestrate the exchange of data within their ecosystem to develop new digital experiences that drive customer satisfaction and revenue. 
+            </p>
+            <p class="w-3/4 ml-auto mb-2">
+                As a Cloud Starter, you are already addressing the more complex projects ahead.
+            </p>
+        </div>
+    ',
+    'question3-2-1' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-1">
+                You are only prioritizing a small number of cloud-related initiatives. As a Cloud Practitioner, you should have progressed further along your cloud journey. A typical cloud journey starts with creating IT efficiencies within the datacenter, freeing up IT resources and satisfying security, regulatory compliance, and data governance requirements. As a next step, organizations are typically looking to implement an agile, cloud-based application architecture using microservices and containers. Finally, they are building an intelligent core to implement and scale analytics, machine learning, and artificial intelligence. To do that, they need to automate and orchestrate the exchange of data within their ecosystem to develop new digital experiences that drive customer satisfaction and revenue. 
+            </p>
+            <p class="w-3/4 ml-auto mb-2">
+                As a Cloud Practitioner, you need to get the basics in place and quickly proceed to the more complex initiatives that are taking longer to implement, enabling you can catch up with your Cloud Practitioner peers. 
+            </p>
+        </div>
+    ',
+    'question3-2-2' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-1">
+                You are prioritizing a fair number of cloud-related initiatives. As a Cloud Practitioner, you are on a par with your peers on your cloud journey. A typical cloud journey starts with creating IT efficiencies within the datacenter, freeing up IT resources and satisfying security, regulatory compliance, and data governance requirements. As a next step, organizations are typically looking to implement an agile, cloud-based application architecture using microservices and containers. Finally, they are building an intelligent core to implement and scale analytics, machine learning, and artificial intelligence. To do that, they need to automate and orchestrate the exchange of data within their ecosystem to develop new digital experiences that drive customer satisfaction and revenue. 
+            </p>
+            <p class="w-3/4 ml-auto mb-2">
+                As a Cloud Practitioner, you have already started to address the more complex initiatives that are taking longer to implement and you are getting ready for the next big step.
+            </p>
+        </div>
+    ',
+    'question3-2-3' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-1">
+                You are prioritizing many cloud-related initiatives. As a Cloud Practitioner, you are ahead of your peers on your cloud journey. A typical cloud journey starts with creating IT efficiencies within the datacenter, freeing up IT resources and satisfying security, regulatory compliance, and data governance requirements. As a next step, organizations are typically looking to implement an agile, cloud-based application architecture using microservices and containers. Finally, they are building an intelligent core to implement and scale analytics, machine learning, and artificial intelligence. To do that, they need to automate and orchestrate the exchange of data within their ecosystem to develop new digital experiences that drive customer satisfaction and revenue. 
+            </p>
+            <p class="w-3/4 ml-auto mb-2">
+                As a Cloud Practitioner, you have already started to address the more complex initiatives that are taking longer to implement and you are getting ready for the next big step.
+            </p>
+        </div>
+    ',
+
+    'question3-3-1' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-1">
+                You are only prioritizing a small number of cloud-related initiatives. As a Cloud Master, you should have progressed much further along your cloud journey. A typical cloud journey starts with creating IT efficiencies within the datacenter, freeing up IT resources and satisfying security, regulatory compliance, and data governance requirements. As a next step, organizations are typically looking to implement an agile, cloud-based application architecture using microservices and containers. Finally, they are building an intelligent core to implement and scale analytics, machine learning, and artificial intelligence. To do that, they need to automate and orchestrate the exchange of data within their ecosystem to develop new digital experiences that drive customer satisfaction and revenue. 
+            </p>
+            <p class="w-3/4 ml-auto mb-2">
+                As a Cloud Master, you need to get the basics in place and quickly proceed to the more complex initiatives that are taking longer to implement so that you can catch up with your Cloud Master peers.
+            </p>
+        </div>
+    ',
+    'question3-3-2' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-1">
+                You are prioritizing a fair number of cloud-related initiatives. As a Cloud Master, you should have progressed further along your cloud journey. A typical cloud journey starts with creating IT efficiencies within the datacenter, freeing up IT resources and satisfying security, regulatory compliance, and data governance requirements. As a next step, organizations are typically looking to implement an agile, cloud-based application architecture using microservices and containers. Finally, they are building an intelligent core to implement and scale analytics, machine learning, and artificial intelligence. To do that, they need to automate and orchestrate the exchange of data within their ecosystem to develop new digital experiences that drive customer satisfaction and revenue.
+            </p>
+            <p class="w-3/4 ml-auto mb-2">
+                As a Cloud Master, you need to get the basics in place and quickly proceed to the more complex initiatives that are taking longer to implement so that you can catch up with your Cloud Master peers.
+            </p>
+        </div>
+    ',
+    'question3-3-3' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-1">
+                You are prioritizing a great number of cloud-related initiatives. As a Cloud Master, you are on a par with your peers on your cloud journey. A typical cloud journey starts with creating IT efficiencies within the datacenter, freeing up IT resources and satisfying security, regulatory compliance, and data governance requirements. As a next step, organizations are typically looking to implement an agile, cloud-based application architecture using microservices and containers. Finally, they are building an intelligent core to implement and scale analytics, machine learning, and artificial intelligence. To do that, they need to automate and orchestrate the exchange of data within their ecosystem to develop new digital experiences that drive customer satisfaction and revenue. 
+            </p>
+            <p class="w-3/4 ml-auto mb-2">
+                As a Cloud Master, you are already addressing the more complex initiatives that are taking longer to implement and are getting ready for the next big step.
+            </p>
+        </div>
+    ',
+
+    'question4' => '
+        <div class="clearfix">
+            <div class="w-3/4 ml-auto">
+                <h4 class="mb-1 font-bold text-grey-darker">Question 4</h4>
+                <h3 class="mb-1 text-blue-dark leading-tight">To which degree are these cloud migration challenges faced by your organization?</h3>
+                <p class="mb-1">
+                    Where to start your cloud journey and which workloads to migrate is not an easy decision. First, you need to establish if there is an organizational need to move to the cloud. While we are seeing a broader trend in the industry, with an increasing number of organizations moving to the cloud, it might not be a good fit for your organization to have every workload and application in the cloud; it all depends on your specific workloads, performance requirements, data sensitivity, regulatory compliance concerns, etc. Once you have decided that cloud is going to be part of your IT infrastructure mix, you need to determine which applications are a good fit for the cloud, which migration strategy fits to which application class, how complex the migration is going to be, and, last but not least, if you have the right cloud skills internally or if you need to select an appropriate external partner for support.
+                </p>
             </div>
         </div>
     ',
-    'marketingstage1'=>'
-        <h2 class="leading-tight text-blue-dark mb-2">MARKETING PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 1</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 1 in terms of your marketing readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    They tend to have a traditional approach to marketing, based on vendor direction and/or past successes.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    At this stage, very few companies have a formal marketing function, with the role partly taken on by other teams.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Companies at this stage typically do not target marketing campaigns at customer types, verticals, or by technology. Instead they employ wide-spanning campaigns.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    For companies at this stage, marketing campaigns are not actively or closely measured for success.
-                </div>
-            </div>
+    'question4-1-1' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2">
+                As a Cloud Starter, it is easy to get overwhelmed by the sheer size of the application landscape and the array of migration options available. Starting with an assessment of your application landscape and choosing an experienced cloud migration partner are good steps to move to the next level of maturity.
+            </p>
         </div>
-        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
-        <p class="mb-2 text-grey-dark">Now is the time to:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Embrace modern marketing, both in terms of what you create and which channels you choose to promote it.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Leverage vendor marketing initiatives but, crucially, look for ways to personalize this to your brand and customer base.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Plan for a dedicated marketing function, pinpointing individuals or teams that have showed early interest or promise in this space.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Pilot managed security services campaigns trialed to target specific customer types, and then measured closely for their effectiveness, providing a strong foundation on which to build further.
-                </div>
+    ',
+    'question4-1-2' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2">
+                As a Cloud Starter, you have already defined your starting point and understand the migration complexities of the different classes of applications. You are ahead of your Cloud Starter peers. As a next step, you need to devise a migration strategy (lift and shift, refactor, transform, etc.) for each application class and choose an experienced cloud migration partner if you don\'t have the skills in-house. 
+            </p>
+        </div>
+    ',
+    'question4-1-3' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2">
+                As a Cloud Starter, you already understand the migration complexities of the different classes of applications and have come a long way in your cloud migration journey. You are far ahead of your Cloud Starter peers.
+            </p>
+        </div>
+    ',
+    'question4-2-1' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2">
+                As a Cloud Practitioner, you are behind your peers in terms of cloud migration strategy. However, it is easy to get overwhelmed by the sheer size of the application landscape and the array of migration options available. Starting with an assessment of your application landscape and choosing an experienced cloud migration partner for support are good steps to move to the next level of maturity.
+            </p>
+        </div>
+    ',
+    'question4-2-2' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2">
+                As a Cloud Practitioner, you have already defined your starting point and understand the migration complexities of the different classes of applications. You are on a par with your peers. As a next step, you need to devise a migration strategy (lift and shift, refactor, transform, etc.) for each application class and choose an experienced cloud migration partner if you don\'t have the skills in-house. 
+            </p>
+        </div>
+    ',
+    'question4-2-3' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2">
+                As a Cloud Practitioner, you already understand the migration complexities of the different classes of applications and have come a long way in your cloud migration journey. You are ahead of your Cloud Practitioner peers.
+            </p>
+        </div>
+    ',
+
+    'question4-3-1' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2">
+                As a Cloud Master, you are far behind your peers in terms of cloud migration strategy. However, it is easy to get overwhelmed by the sheer size of the application landscape and the migration options. Starting with an assessment of your application landscape and choosing an experienced cloud migration partner are good steps to move to the next level of maturity.
+            </p>
+        </div>
+    ',
+    'question4-3-2' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2">
+                As a Cloud Master, you have defined your starting point and understand the migration complexities of the different classes of applications. However, you are behind your peers in migrating applications to the cloud. As a next step, you need to devise a migration strategy (lift and shift, refactor, transform, etc.) for each application class and choose an experienced cloud migration partner if you don\'t have the skills in-house. 
+            </p>
+        </div>
+    ',
+    'question4-3-3' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2">
+                As a Cloud Mater, you already understand the migration complexities of the different classes of applications and have come a long way in your cloud migration journey. You are on a par with your Cloud Master peers.
+            </p>
+        </div>
+    ',
+
+    'status-intro' => '
+        <div class="clearfix pt-20">
+            <div class="w-1/4 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 30mm;"></div>
+            <div class="w-3/4 float-left">
+                <h2 class="text-blue-dark mb-3"> Cloud and Multicloud Status</h2>
+                <p class="mb-2">
+                    Cloud is the launchpad for digital transformation, with 69% of organizations operating a multicloud environment today, according to IDC\'s 2019 Multicloud Survey. Given the advancements in cloud solutions and the importance of security, resilience, cost transparency, and compliance, cloud adoption is more nuanced today. 
+                </p>
+                <p class="mb-2">
+                    Successful enterprises are committed to enterprisewide IT transformation in a sustainable and compliant way, making multicloud and hybrid cloud a natural evolution. How they navigate through the multicloud complexities and develop unified monitoring, workflow management, cost management, and compliance determines their multicloud success. 
+                </p>
+                <p class="mb-2">
+                    The realization is dawning among savvy enterprises that there is no "silver bullet cloud" that answers all IT issues. Organizations therefore seek to build an interoperable, hybrid, and multicloud IT infrastructure to gain the benefit of cloud without compromising on core IT values of security, resilience, and compliance. Cloud is seen as an operating model rather than a destination.
+                </p>
+                <p class="mb-2">
+                    This section of the report assesses your organization\'s cloud and multicloud status by evaluating your cloud usage, maturity of hybrid or multicloud environments, and the objectives you have set in relation to your multicloud initiatives — that is, how aligned are your multicloud strategies with business outcomes? Lastly, it explores how well you are executing on your hybrid and multicloud strategies. 
+                </p>
             </div>
         </div>
     ',
-    'marketingstage2'=>'
-        <h2 class="leading-tight text-blue-dark mb-2">MARKETING PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 2</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 2 in terms of your marketing readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Companies at this stage are building on past successes by trialing digital marketing techniques, leveraging social media as a starting point.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    At this stage, companies are beginning to identify individuals or teams that can create a dedicated marketing function.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Companies at this stage typically begin to target certain customer types with pilot or trial campaigns.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Close measurement of trial campaigns is carried out by companies at this stage, as they look to better leverage their marketing efforts.
-                </div>
-            </div>
+    'status-graph' => '
+        <div class="my-5 relative" style="width:160mm;height:61.19mm; background: url(http://hitachicloud.idcready.test/images/tools/13/comparison_status.svg) no-repeat; background-size:cover">
+            <div class="bg-hitachi-red absolute" style="width: :overall; height: 10mm; top:18mm; left:33mm;"></div>
+            <div class="bg-grey-dark absolute" style="width: :status; height: 10mm; top:37mm; left:33mm;"></div>
         </div>
-        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
-        <p class="mb-2 text-grey-dark">Now is the time to:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Capitalize on the marketing investments you have already made, by focusing on supporting the sales cycle throughout.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Closely analyze trial/pilot digital campaigns and run again as part of a continuous improvement cycle.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Create and appropriately resource a dedicated marketing team that is focused on delivering the value proposition message for managed security services and the business benefits they deliver to customers.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Begin targeting specific buyers with a view to becoming more vertically specialized in the future.
-                </div>
+    ',
+
+    'status-1-stage1' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2 font-bold">
+                Your overall score for this section indicates that you are in line with your Cloud Starter peers when it comes to cloud and multicloud maturity. You are at the beginning of your cloud and multicloud journey, with many areas still to be addressed. You should look into individual assessment areas within this section to better understand what changes you could potentially make to improve your cloud and multicloud status.
+            </p>
+        </div>
+    ',
+    'status-1-stage2' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2 font-bold">
+                Your overall score for this section indicates that you are ahead of your Cloud Starter peers when it comes to cloud and multicloud maturity. Very well done. While keeping the momentum on these successful initiatives, there are still a few areas for development. Have a look through the next paragraphs to identify where improvements can be made to further improve your overall cloud maturity.
+            </p>
+        </div>
+    ',
+    'status-1-stage3' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2 font-bold">
+                Your overall score for this section indicates that you are well ahead of your Cloud Starter peers when it comes to cloud and multicloud maturity. Very well done. While keeping this up, you must also look at aspects related to cloud migration and data monetization to improve your overall cloud maturity.
+            </p>
+        </div>
+    ',
+    'status-2-stage1' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2 font-bold">
+                Your overall score for this section indicates that you are lagging your Cloud Practitioner peers with respect to your multicloud approach. Setting an appropriate cloud and multicloud strategy is an area where you should improve to catch up with your peers, and you must take steps to accelerate the journey now. You should look into individual assessment areas within this section to understand what changes you could make to your multicloud approach to improve your cloud maturity.
+            </p>
+        </div>
+    ',
+    'status-2-stage2' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2 font-bold">
+                Your overall score in this section indicates that you are in line with your Cloud Practitioner peers with respect to the progress you have made in cloud and multicloud adoption. You are well on your way, but don\'t think of stopping just yet. You can look into individual assessment areas within this section to understand what changes you could make to your cloud and multicloud capabilities for further progress in your cloud maturity.
+            </p>
+        </div>
+    ',
+    'status-2-stage3' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2 font-bold">
+                Your overall score for this section indicates that you are ahead of your Cloud Starter peers with respect to the progress you have made so far. Very well done. While keeping up with this, you must also look at aspects related to cloud migration and data monetization to improve your overall cloud maturity.
+            </p>
+        </div>
+    ',
+    'status-3-stage1' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2 font-bold">
+                Your overall score in this area indicates that you are lagging far behind other Cloud Master peers in relation to your cloud and multicloud capabilities. You should look into individual assessment areas within this section to understand what changes you could make to your cloud operations. You have a lot of work to do, so act urgently to address the areas of improvement. This will help you sustain or even improve your strong position with respect to your overall cloud maturity.
+            </p>
+        </div>
+    ',
+    'status-3-stage2' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2 font-bold">
+                Your overall score in this area indicates that you are lagging behind other Cloud Master peers with regards to your cloud and multicloud capabilities. You should look into individual assessment areas within this section to understand what changes you could make to your cloud approach. You have a lot of work to do and should act quickly to address the areas of improvement. This will help sustain or even improve your strong position with respect to your overall cloud maturity.
+            </p>
+        </div>
+    ',
+    'status-3-stage3' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2 font-bold">
+                Your overall score in this area indicates that you are in line with your Cloud Master peers in relation to your cloud and multicloud capabilities. While keeping up with this, you can look at areas of improvement related to cloud migration and data monetization to improve your overall cloud maturity.
+            </p>
+        </div>
+    ',
+    'question5' => '
+        <div class="clearfix pt-20">
+            <div class="w-3/4 ml-auto">
+                <h4 class="mb-1 font-bold text-grey-darker">Question 5</h4>
+                <h3 class="mb-1 text-blue-dark leading-tight">Which of these environments represents the majority (>50%) of your IT estate?</h3>
             </div>
         </div>
     ',
-    'marketingstage3'=>'
-        <h2 class="leading-tight text-blue-dark mb-2">MARKETING PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 3</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 3 in terms of your marketing readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Companies at this stage actively use digital marketing techniques to spread their content and messaging.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    These modern marketing techniques are deployed by a dedicated marketing team which itself is goaled and targeted on its marketing reach.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    At this stage, companies typically send out highly targeted messages to specific customers, by type, vertical, technology, and other metrics.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Digital campaigns of this type run by companies at this stage tend to be closely measured to determine future marketing actions.
-                </div>
-            </div>
+    'question5-a' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2">
+                Your IT environment still represents a traditional IT environment that is mostly reactive to business needs. As business needs change rapidly, there is a risk that the business views IT as a scapegoat and an inhibitor rather than a business enabler. Traditional on-premises IT is complex, hardware-driven, monolithic, and slow to respond to agile business needs. Traditional IT also forces business to adopt shadow IT practices and renders traditional security policies inadequate, exposing the business to risks. You need to strategize an IT modernization plan, using cloud to progress in your business transformation.
+            </p>
         </div>
-        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
-        <p class="mb-2 text-grey-dark">Now is the time to:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Align dedicated marketing teams with sales, so that together they can track the customer journey.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Bolster the highly targeted messages spread by this team with a strong focus on the value proposition the company offers.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    The combined marketing and sales function should begin developing messaging around business outcomes, through a highly aligned approach.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Encourage marketing teams to consider buyer personas, and how they can best be targeted. Consideration should be given to investing in, or developing, marketing measurement tools that can measure key metrics.
-                </div>
+    ',
+    'question5-b' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-1">
+                You have embraced cloud in the form of private cloud. It is a good starting point, but is it still just an extension or refresh of your traditional on-premises IT? You may be delivering IT resources slightly faster and may be benefiting from modern technologies such as software-defined infrastructure.
+            </p>
+            <p class="w-3/4 ml-auto mb-2">
+                You need to now become more proactive in your cloud usage and evaluate how expanding it to a multicloud and hybrid cloud strategy can bring modern IT benefits such as self-service and robust SLAs.
+            </p>
+        </div>
+    ',
+    'question5-c' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-1">
+                You have embraced cloud in the form of public cloud. It is a good starting point, indicating that you understand the value of cloud, but public cloud is not an answer to all your workloads. It also indicates that much of your cloud workloads may be non-mission-critical.
+            </p>
+            <p class="w-3/4 ml-auto mb-2">
+                You need to now become more proactive in extending beyond public cloud to modernizing on-premises infrastructure and applications for hybrid cloud and multicloud strategies, enabling all applications to benefit from cloud-like IT. 
+            </p>
+        </div>
+    ',
+    'question5-d' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2">
+                You are operating in a hybrid cloud environment which is a combination of public cloud services and private cloud services connected through a common control plane. You may have some new cloud-native applications in the cloud and have adopted a private cloud to boost your on-prem applications. If you want to take your strategy one step further, you can move to a higher degree of automation, API-based application network and a unified management strategy.
+            </p>
+        </div>
+    ',
+    'question5-e' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2">
+                You are operating in a multicloud environment which is a combination of several public cloud services. You are leveraging multiple cloud services and don\'t run the risk of cloud lock-in with one vendor. If you want to take your strategy one step further, you can adopt a unified hybrid cloud strategy and have a higher degree of automation, an API-based application network, and a unified management strategy for all apps across the hybrid cloud environment.
+            </p>
+        </div>
+    ',
+    'question6' => '
+        <div class="clearfix">
+            <div class="w-3/4 ml-auto">
+                <h4 class="mb-1 font-bold text-grey-darker">Question 6</h4>
+                <h3 class="mb-1 text-blue-dark leading-tight">Which one of these cloud benefits is the most vital to your business? </h3>
             </div>
         </div>
     ',
-    'marketingstage4'=>'
-        <h2 class="leading-tight text-blue-dark mb-2">MARKETING PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 4</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 4 in terms of your marketing readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Companies at Stage 4 typically combine their dedicated marketing function with sales teams, to better follow the customer journey and serve them targeted and specific content that is relevant to them. They jointly target customers based on business outcomes.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    At this stage, companies measure the marketing process and use this to refine future campaigns.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Companies at this stage have specific buying personas in mind within industry sectors, and target these accordingly.
-                </div>
-            </div>
+    'question6-a' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2">
+                You are using cloud services to see instant improvements in application and infrastructure efficiency and speed. You should also consider other areas of cloud benefits, such as speed of innovation, access to high scale and use of new cloud-based features to accelerate your digital transformation and journey to the cloud.
+            </p>
         </div>
-        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
-        <p class="mb-2 text-grey-dark">Now is the time to:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Continue to focus messaging and collateral on specific target buyers and industries but target them with information about business outcomes and value.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    The dedicated marketing team should have a continuous improvement mindset and be looking to analyze and measure the success of modern marketing campaigns on an ongoing basis.
-                </div>
+    ',
+    'question6-b' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-1">
+                You are using multiple cloud services and linking them directly to business outcomes and objectives. You should focus on things like; driving specific customer experience objectives with your cloud strategy or capitalizing on data, to gain a competitive edge
+            </p>
+        </div>
+    ',
+    'question6-c' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-1">
+                You are using cloud services for advanced reasons such as managing technical debt and ensuring innovation isn\'t slowing down, this is good. Try focusing on the next steps, such as driving specific customer experience objectives with your cloud strategy and even turn to capitalizing on data to gain a competitive edge.
+            </p>
+        </div>
+    ',
+    'question6-d' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2">
+                Your cloud usage and vision for cloud is very advanced. Good job. You are showing strong capabilities, in linking cloud services and benefits to key business objectives such as customer experience. Try focusing on the next steps, such as capitalizing on data to gain a competitive edge and focus on complementary strategies such as agile application development and DevOps. 
+            </p>
+        </div>
+    ',
+    'question6-e' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2">
+                Your cloud usage and vision for cloud is very advanced. Good job. You are showing strong capabilities around linking cloud services and benefits to key business objectives such as customer experience. Try focuing on the next steps, such as capitalizing on data to gain a competitive edge and on complementary strategies such as agile application development and DevOps. 
+            </p>
+        </div>
+    ',
+
+    'question7' => '
+        <div class="clearfix">
+            <div class="w-3/4 ml-auto">
+                <h4 class="mb-1 font-bold text-grey-darker">Question 7</h4>
+                <h3 class="mb-1 text-blue-dark leading-tight">To what degree are these challenges faced around cloud operations and management </h3>
+                <p class="mb-1">
+                    Getting cloud operations and management right is critical for running a successful cloud practice
+                </p>
             </div>
         </div>
     ',
-    'marketingstage5'=>'
-<h2 class="leading-tight text-blue-dark mb-2">MARKETING PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 5</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 5 in terms of your marketing readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Companies at this stage employ advanced digital marketing skills across their dedicated and sophisticated marketing function.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Stage 5 companies tend to have developed a fully automated marketing process, which continues to evolve based on ongoing results and successes.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    At this stage, companies\' marketing efforts are highly targeted at a defined set of verticals and business buyer personas across a portfolio of solutions that addresses business outcomes.
-                </div>
-            </div>
+    'question7-1' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2">
+                You score for this question indicates, you still face many of the early stage challenges in setting up an efficient cloud operations and management practice.
+            </p>
         </div>
-        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
-        <p class="mb-2 text-grey-dark">Now is the time to:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Expand areas of specialization, targeting a wider selection of vertical markets to target with highly focused marketing efforts.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Employ the sophisticated measurement and targeting techniques to specific customer verticals.
-                </div>
+    ',
+    'question7-2' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2">
+                Your score for this question indicates, you have moved beyond several of the early stage challenges in setting up an efficient cloud operations and management practice.
+            </p>
+        </div>
+    ',
+    'question7-3' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2">
+                Your score for this question, indicates you have moved beyond the early stage obstacles and are facing the advanced challenges in setting up an efficient cloud operations and management practice.     
+            </p>
+        </div>
+    ',
+    'question7outro' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2">
+                <strong class="text-blue-dark">To improve further</strong>, you need to ensure good visibility and control of your IT infrastructure, both on-premises and in the cloud, invest in multicloud monitoring, management, automation, and orchestration tools to reduce the need for error-prone manual tasks, set up a strong security, data governance, and regulatory compliance framework, and make sure that you manage your cloud expenses tightly. Once the foundation is in place, you can look at API management, integration, and interoperability, as well as implementing a CI/CD pipeline to automate cloud operations
+            </p>
+        </div>
+    ',
+
+    'value-intro' => '
+        <div class="clearfix pt-20">
+            <div class="w-1/4 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 30mm;"></div>
+            <div class="w-3/4 float-left">
+                <h2 class="text-blue-dark mb-3"> Realizing the value of data</h2>
+                <p class="mb-2">
+                    Data is at the heart of digital transformation and gives enterprises a competitive advantage. Data on its own doesn\'t mean anything — it is how enterprises treat it as a valuable asset, work with it, manage it, and capitalize on it that brings about the real difference. 
+                </p>
+                <p class="mb-2 text-blue-dark italic">
+                    Data-driven organizations are more confident about delivering better customer experiences and take confident business decisions. 
+                </p>
+                <p class="mb-2">
+                    Capitalizing on and monetizing data is a journey and requires organizations to consider the full data life cycle, from collection to storage to management to analytics. Is there a culture in your organization of treating data as an asset? Are IT confident of delivering the right data to the right hands at the right time without compromising on security and privacy? 
+                </p>
+                <p class="mb-0 italic text-md text-right text-blue-dark font-light">
+                    "Creating the right foundation to share, manage, and collaborate on data is critical to innovate and improve decision-making capabilities in the digital era"
+                </p>
+                <p class="mb-2 font-bold text-right">
+                    Carla Arend, IDC, 2020
+                </p>
+                <p class="mb-2 font-bold">
+                    This section of the report assesses the stage of your organization\'s data capitalization vision and strategies based on the maturity of your data-driven objectives and your progress in the data value realization journey.
+                </p>
             </div>
         </div>
     ',
-    'servicesstage1'=>'
-        <h2 class="leading-tight text-blue-dark mb-2">SERVICES PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 1</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 1 in terms of your services readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Offer a basic services catalog/portfolio of support, implementation, and monitoring services.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    In general, services are ad hoc and reactive and customized to each customer\'s needs, and there is little repeatability or automation.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Do not typically have a dedicated service desk to provide first-line support for any managed services they resell.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Only in technical certifications and industry standards in an ad hoc (reactive) manner, i.e., based on what specific customers and/or vendors demand.
-                </div>
-            </div>
+    'value-graph' => '
+        <div class="my-5 relative" style="width:160mm;height:61.19mm; background: url(http://hitachicloud.idcready.test/images/tools/13/comparison_value.svg) no-repeat; background-size:cover">
+            <div class="bg-hitachi-red absolute" style="width: :overall; height: 10mm; top:18mm; left:33mm;"></div>
+            <div class="bg-black absolute" style="width: :value; height: 10mm; top:37mm; left:33mm;"></div>
         </div>
-        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
-        <p class="mb-2 text-grey-dark">Now is the time to:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Invest in a more sophisticated services catalog and identify portfolio gaps.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    After doing a gap assessment, identify which services have both high demand and a high degree of commonality between customers with the objective of packaging these as managed services.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Invest in a service desk to offer first-line support for managed services.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Start certifying and incorporating industry minimum standards (e.g., PCI-DSS).
-                </div>
+    ',
+
+    'value-1-stage1' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2 font-bold">
+                Your overall score for this section indicates that you are in line with your Cloud Starter peers with respect to the progress you have made so far. You are at the beginning of your journey, so there are many areas you need to address. You can look into individual assessment areas within this section to understand what changes you could make to improve your cloud maturity.
+            </p>
+        </div>
+    ',
+    'value-1-stage2' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2 font-bold">
+                Your overall score for this section indicates that you are ahead of your Cloud Starter peers with respect to the progress you have made so far. Very well done. While keeping up with this, you must also look at aspects related to cloud migration and cloud operations to improve your overall cloud maturity.
+            </p>
+        </div>
+    ',
+    'value-1-stage3' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2 font-bold">
+                Your overall score for this section indicates that you are ahead of your Cloud Starter peers with respect to the progress you have made so far. Very well done. While keeping up with this, you must also look at aspects related to cloud migration and cloud operations to improve your overall cloud maturity.
+            </p>
+        </div>
+    ',
+    'value-2-stage1' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2 font-bold">
+                Your overall score for this section indicates that you are lagging behind your Cloud Practitioner peers with respect to your data monetization strategy. Realizing the value of data is an area where you should improve to catch up with your peers, so you must take steps to accelerate the journey now. You should look at individual assessment areas within this section to understand what changes you could make to your data monetization approach to improve your cloud maturity.
+            </p>
+        </div>
+    ',
+    'value-2-stage2' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2 font-bold">
+                Your overall score in this section indicates that you are in line with your Cloud Practitioner peers with respect to the progress you have made in realizing the value of your data. You are well on your way, but don\'t think of stopping just yet. You can look into individual assessment areas within this section to understand what changes you could make to your data monetization capabilities to further progress your cloud maturity.
+            </p>
+        </div>
+    ',
+    'value-2-stage3' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2 font-bold">
+                Your overall score for this section indicates that you are ahead of your Cloud Practitioner peers with respect to the progress you have made. Very well done on your journey so far. While keeping up with this, you must also look at aspects related to cloud migration and cloud operations to improve your overall cloud maturity.
+            </p>
+        </div>
+    ',
+    'value-3-stage1' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2 font-bold">
+                Your overall score in this area indicates that you are lagging far behind other Cloud Master peers in your data monetization practice. You should look into individual assessment areas within this section to understand what changes you could make to your approach to realizing the value of data. You have a lot of work to do so you should act urgently to address the areas of improvement. This will help you sustain your strong position with respect to your overall cloud maturity.
+            </p>
+        </div>
+    ',
+    'value-3-stage2' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2 font-bold">
+                Your overall score in this area indicates that you are lagging behind other Cloud Master peers with regards to your data monetization approach. You should look into individual assessment areas within this section to understand what changes you could make to your approach to realizing the value of your data. You have a lot of work to do so you should act urgently to address the areas of improvement. This will help sustain your strong position with respect to your overall cloud maturity.
+            </p>
+        </div>
+    ',
+    'value-3-stage3' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2 font-bold">
+                Your overall score in this area indicates that you are in line with the Cloud Master peers with respect to the progress you have made with regards to your data monetization approach. While keeping up with this, you can look at areas of improvement related to cloud migration and cloud operations to improve your overall cloud maturity.
+            </p>
+        </div>
+    ',
+    'question8' => '
+        <div class="clearfix pt-20">
+            <div class="w-3/4 ml-auto">
+                <h4 class="mb-1 font-bold text-grey-darker">Question 8</h4>
+                <h3 class="mb-1 text-blue-dark leading-tight">At what stage are you on your data value realization journey?</h3>
             </div>
         </div>
     ',
-    'servicesstage2'=>'
-        <h2 class="leading-tight text-blue-dark mb-2">SERVICES PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 2</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 2 in terms of your services readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Typically investing in a more comprehensive services catalog, including expanding professional services, reselling some managed services, and in the early stages of building their own managed services offerings.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    The service desk is equipped to offer basic support on the managed services according to customer demand. These services are typically ad hoc, reactive, and highly customized, and there is little repeatability or automation.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Technicians comply to the minimum technical certifications required from key vendors, and industry minimum standards (e.g., PCI-DSS) are in place.
-                </div>
-            </div>
+    'question8-a' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2">
+                Your IT environment still represents a traditional IT environment that is mostly reactive to business needs. As business needs change rapidly, there is a risk that the business views IT as a scapegoat and an inhibitor rather than a business enabler. Traditional on-premises IT is complex, hardware-driven, monolithic, and slow to respond to agile business needs. Traditional IT also forces business to adopt shadow IT practices and renders traditional security policies inadequate, exposing the business to risks. You need to strategize an IT modernization plan, using cloud to progress in your business transformation.
+            </p>
         </div>
-        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
-        <p class="mb-2 text-grey-dark">Now is the time to:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Accelerate the repeatability of these services by investing in tools for services implementation, automation, and management which are embedded in the service catalog.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Differentiate through offering first-line support for managed services via a dedicated service desk.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Move up the value chain by investing in industry and quality standards (such as ISO), building a governance program and technical certification program that encourages technicians to upcertify and even start to specialize.
-                </div>
+    ',
+    'question8-b' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-1">
+                You have embraced cloud in the form of private cloud. It is a good starting point, but is it still just an extension or refresh of your traditional on-premises IT? You may be delivering IT resources slightly faster and may be benefiting from modern technologies such as software-defined infrastructure.
+            </p>
+            <p class="w-3/4 ml-auto mb-2">
+                You need to now become more proactive in your cloud usage and evaluate how expanding it to a multicloud and hybrid cloud strategy can bring modern IT benefits such as self-service and robust SLAs.
+            </p>
+        </div>
+    ',
+    'question8-c' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-1">
+                You have embraced cloud in the form of public cloud. It is a good starting point, indicating that you understand the value of cloud, but public cloud is not an answer to all your workloads. It also indicates that much of your cloud workloads may be non-mission-critical.
+            </p>
+            <p class="w-3/4 ml-auto mb-2">
+                You need to now become more proactive in extending beyond public cloud to modernizing on-premises infrastructure and applications for hybrid cloud and multicloud strategies, enabling all applications to benefit from cloud-like IT. 
+            </p>
+        </div>
+    ',
+    'question8-d' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2">
+                You are operating in a hybrid cloud environment which is a combination of public cloud services and private cloud services connected through a common control plane. You may have some new cloud-native applications in the cloud and have adopted a private cloud to boost your on-prem applications. If you want to take your strategy one step further, you can move to a higher degree of automation, API-based application network and a unified management strategy.
+            </p>
+        </div>
+    ',
+    'question8-e' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2">
+                You are operating in a multicloud environment which is a combination of several public cloud services. You are leveraging multiple cloud services and don\'t run the risk of cloud lock-in with one vendor. If you want to take your strategy one step further, you can adopt a unified hybrid cloud strategy and have a higher degree of automation, an API-based application network, and a unified management strategy for all apps across the hybrid cloud environment.
+            </p>
+        </div>
+    ',
+    'question9' => '
+        <div class="clearfix">
+            <div class="w-3/4 ml-auto">
+                <h4 class="mb-1 font-bold text-grey-darker">Question 9</h4>
+                <h3 class="mb-1 text-blue-dark leading-tight">Please indicate how critical these data driven objectives are to your data strategy / organization?</h3>
+                <p class="mb-1">
+                    IDC research indicates that the cloud strategies and data strategies of organizations are increasingly converging. To build a great data strategy, you need to create a data map to gain visibility and control of your data, and improve the quality and speed of your data delivery so that you can use the data to create a competitive advantage. You also need to hire data experts to gain new insights from your data and deliver new data-driven revenue streams.
+                </p>
             </div>
         </div>
     ',
-    'servicesstage3'=>'
-        <h2 class="leading-tight text-blue-dark mb-2">SERVICES PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 3</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 3 in terms of your services readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Offer a comprehensive service catalog of advanced professional services, own (packaged) managed services, and managed services for resell.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Have started to invest in repeatability, automation, and management tools.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Have a fully staffed service desk with dedicated MSP professionals offering first-line support for all (or most) of the managed services through standard helpdesk services.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Adhere to industry standards, have governance processes in place, and are proactively investing in more advanced technical certifications.
-                </div>
-            </div>
-        </div>
-        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
-        <p class="mb-2 text-grey-dark">Now is the time to:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Start to incorporate more advanced services functions and features like predictive fault management and 24 x 7 global support offered through multiple channels (email, call, chat).
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Start to incorporate more advanced features such as self-provisioning and even reporting in to your service catalog.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Start to comply to industry-specific regulations and governance programs.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Differentiate through horizontal (e.g., deep security, cybersecurity, artificial intelligence) and vertical (e.g., financial services, government, healthcare) specialist certifications and reference architectures.
-                </div>
-            </div>
+    'question9-1-1' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2">
+                As a Cloud Starter, you are at the beginning of your data value realization journey. There is a long road ahead, and working with a strong partner can help to accelerate your data realization journey. 
+            </p>
         </div>
     ',
-    'servicesstage4'=>'
-        <h2 class="leading-tight text-blue-dark mb-2">SERVICES PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 4</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 4 in terms of your services readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    An extensive services portfolio of both professional and managed services that incorporates advanced features like predictive and automated fault management, 24 x 7 service desk, and self-provisioning (via a highly automated service catalog).
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Can offer multichannel 24 x 7 global support for all services and SLAs (service level agreements).
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Have a mature and embedded governance program, highly certified and specialized technicians, and are first movers in terms of adopting new industry, quality, and regulatory certifications. 
-                </div>
-            </div>
-        </div>
-        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
-        <p class="mb-2 text-grey-dark">Now is the time to:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Embed your managed services (as a services-attach) into all lines of business (including professional services).
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Invest in flexible consumption models, supporting advanced features and new routes to market (e.g., marketplaces).
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Enhance the services value proposition with sophisticated analytics, security by-design, and omni-channel 24 x 7 support, and extend this to all managed services in the portfolio.
-                </div>
-            </div>
+    'question9-1-2' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2">
+                For a Cloud Starter, you have already mastered the early challenges on your data value realization journey, so well done. Working with a strong partner can help to accelerate your data realization journey.
+            </p>
         </div>
     ',
-    'servicesstage5'=>'
-        <h2 class="leading-tight text-blue-dark mb-2">SERVICES PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 5</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 5 in terms of your MSP services readiness. Typically, organizations at this stage of their strategy maturity share the following characteristics:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Highly automated and embedded in a continuous improvement process within the services portfolio and are documented and regularly reviewed.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Security by design is embedded internally and aligned with customer processes and operations.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Regulatory and quality standard certifications are in place and can offer pre-emptive support with analytics, evidence, and recommendations.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Have deployed a continuous improvement process, creating a library of case studies, best practices, reusable tools, and reference architectures.
-                </div>
-            </div>
-        </div>
-        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
-        <p class="mb-2 text-grey-dark">Now is the time to:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Deepen relationships with customers, aligning your organization with their changing requirements.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Continue to automate your processes (ensuring that this does not detract from personal services where required), and measure and respond to fluctuations in customer satisfaction.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Focus on driving profitability across all service functions.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Continue to work closely with your vendor partners as a launch partner for innovations and new opportunities, including them in the continuous service improvement loop.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Stay ahead of the competition by continuously investing in best-in-class certification standards and deep vertical expertise.
-                </div>
-            </div>
+    'question9-1-3' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2">
+                For a Cloud Starter, you have already mastered most challenges on your data value realization journey and can focus on other aspects of cloud migration and cloud operations to improve your overall cloud maturity.
+            </p>
         </div>
     ',
-    'securitystage1'=>'
-        <h2 class="leading-tight text-blue-dark mb-2">SECURITY PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 1</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 1 in terms of your security readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    At this stage, companies have yet to embrace the high-growth security opportunity that exists in the market, and are only starting to bring security into their business.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    At this early stage, companies are yet to have honed any specific security skills and typically lack security certifications.
-                </div>
-            </div>
-        </div>
-        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
-        <p class="mb-2 text-grey-dark">Now is the time to:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Consider how to position the company to meet customers\' and prospects\' needs in the high-growth MSP area.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Consider hiring staff with security credentials to gain some expertise in this space.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Build a sales teams with experience winning security business.
-                </div>
-            </div>
+    'question9-2-1' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2">
+                Although you are a Cloud Practitioner, you are at the beginning of your data value realization journey; there is a long road ahead, and working with a strong partner can help to accelerate your data realization journey. 
+            </p>
         </div>
     ',
-    'securitystage2'=>'
-        <h2 class="leading-tight text-blue-dark mb-2">SECURITY PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 2</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 2 in terms of your security readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Companies at this stage tend to have built up their security offering over a period of about 18 months.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    At this stage, companies recognize the opportunity the security market presents to them and their customers, and are targeting it as a result.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Typically, companies have some experience and competencies in selling security, but have not yet developed these skills from a technical point of view.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Companies at this level may have some basic security certifications.
-                </div>
-            </div>
-        </div>
-        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
-        <p class="mb-2 text-grey-dark">Now is the time to:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Position security as a source of added value to customers and consider it an "armor-piercing bullet" for their business.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Consider building up technical expertise by assessing the skills profile and certifications needed to reach the customers they want to.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    An assessment of the certifications available should be undertaken by companies at this level to assess gaps in the company\'s portfolio.
-                </div>
-            </div>
+    'question9-2-2' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2">
+                As a Cloud Practitioner, you have already mastered the early challenges on your data value realization journey. Working with a strong partner can help to accelerate your data realization journey.
+            </p>
         </div>
     ',
-    'securitystage3'=>'
-        <h2 class="leading-tight text-blue-dark mb-2">SECURITY PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 3</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 3 in terms of your security readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Companies at this stage tend to have built up their security offering over a period of between 18 and 36 months.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Typically, there is strong recognition among companies at this stage of the wider growth opportunity that security offers to their business.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    At this level, many companies tend to have developed lower-value security-specific technical skills and can offer things like first-line support.
-                </div>
-            </div>
-        </div>
-        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
-        <p class="mb-2 text-grey-dark">Now is the time to:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Consider your organization\'s existing/potential differentiators in security and leverage them to accelerate growth as a security provider.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Consider how the addition of higher-value capabilities such as specialist security consulting and integration skills can enhance the value of your security proposition.
-                </div>
-            </div>
+    'question9-2-3' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2">
+                For a Cloud Practitioner, you have already mastered most challenges on your data value realization journey and can focus on other aspects of cloud migration and cloud operations to improve your overall cloud maturity.
+            </p>
         </div>
     ',
-    'securitystage4'=>'
-        <h2 class="leading-tight text-blue-dark mb-2">SECURITY PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 4</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 4 in terms of your security readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Companies at this stage tend to have built up their security offering over a period of between three to five years.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Typically, companies at this level view security as strategic to the future of their portfolio, having recognized the opportunity it presents.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    At this stage, companies complement their lower-value security technical skills (e.g., first-line support) with some higher-value offerings, such as technical consulting and security-specific technical skills.
-                </div>
-            </div>
-        </div>
-        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
-        <p class="mb-2 text-grey-dark">Now is the time to:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Focus sales teams around the outcomes security can bring to customers. This could mean maximizing workforce utilization through secure collaboration, to speed up time to market through secure cloud migration. This is essential to developing a stronger recurring security business.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Consider expanding security offering so it is an end-to-end proposition.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Invest in developing higher-value security certifications.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Ensure you have strong messaging around your position on GDPR and other regulations; this is essential for companies at this level.
-                </div>
-            </div>
+
+    'question9-3-1' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2">
+                Although you are a Cloud Master overall, you are still at the beginning of your data value realization journey, so perhaps engage a partner to get you started, as you are lagging far behind your Cloud Master peers and need to catch up quickly. 
+            </p>
         </div>
     ',
-    'securitystage5'=>'
-        <h2 class="leading-tight text-blue-dark mb-2">SECURITY PERFORMANCE</h2>
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Stage 5</span>
-        <p class="mb-2 text-grey-dark font-bold">Based on IDC\'s assessment, your organization is at Stage 5 in terms of your security readiness as an MSP. Typically, organizations at this stage share some, or all, of the following characteristics:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Companies at this stage tend to have built up their security offering over a period of more than five years.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    A key attribute of companies at this stage is that security is a central feature of their business. They typically address security as a business issue for their clients, not a technical one. This means they understand the outcomes security can offer their business.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    A full range of security skills and dedicated teams are offered typically by companies at this level. This includes advanced security architects, pre-sales architects, technical consultants, and first-line support analysts.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Companies at this stage have in-house GDPR (and other regulatory) experts and understand multicloud compliance issues.
-                </div>
-            </div>
+    'question9-3-2' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2">
+                For a Cloud Master, you have only mastered the early challenges on your data value realization journey and should look for a strong partner to accelerate your journey so that you can catch up with your Cloud Master peers. 
+            </p>
         </div>
-        <p class="mt-2 text-lg text-blue-dark font-bold">Recommendations</p>
-        <p class="mb-2 text-grey-dark">Now is the time to:</p>
-        <div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Expand on this success by entering new geographies and new partnerships, and through industry-specific propositions and new portfolio offerings. For example, companies using a security operations center (SOC) to protect their own environment ought to consider extending this expertise to support third parties, adding a new revenue stream to their security offering.
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Consider how to evolve beyond device management and log monitoring and into more advanced areas such as predictive threat analytics and even SOC management. By freeing customers\' in-house security professionals from lower-value, repeatable tasks they can focus on higher-value activities such as incident response. 
-                </div>
-            </div>
-            <div class="mb-1 clearfix">
-                <div class="w-2 mr-2 float-left"><img class="w-full" src=":url/images/tools/13/bulletgrey.png" alt=""></div>
-                <div class="w-5/6 float-left">
-                    Maintain a base of high-level accreditations to build strong trust among the customer base.
-                </div>
-            </div>
+    ',
+    'question9-3-3' => '
+        <div class="clearfix">
+            <p class="w-3/4 ml-auto mb-2">
+                For a Cloud Master, you have already mastered most challenges on your data value realization journey and can focus on other aspects of cloud migration and cloud operations to improve your overall cloud maturity.
+            </p>
         </div>
     ',
 );

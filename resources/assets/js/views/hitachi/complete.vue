@@ -99,8 +99,8 @@
 									</label>
 								</div>
 								<div class="mb-6 w-full">
-									<!-- <button type="submit" :disabled="isSubmitting" class="text-center block bg-trend-red hover:bg-white text-white hover:text-trend-red py-4 px-6 no-underline" :class="[{'cursor-not-allowed':isSubmitting}]" @click.prevent="checkForErrors"><font-awesome-icon class="mr-2" :class="[{'fa-spin': isSubmitting}]" :icon="isSubmitting ? icons.faSyncAlt : icons.faEnvelope"></font-awesome-icon> {{ $t('hitachi.leadgen.send') }}</button> -->
-									<a href="#" disabled class="text-center block bg-trend-red hover:bg-white text-white hover:text-trend-red py-4 px-6 no-underline" :class="[{'cursor-not-allowed':isSubmitting}]" @click.prevent=""><font-awesome-icon class="mr-2" :class="[{'fa-spin': isSubmitting}]" :icon="isSubmitting ? icons.faSyncAlt : icons.faEnvelope"></font-awesome-icon> {{ $t('hitachi.leadgen.send') }}</a>
+									<button type="submit" :disabled="isSubmitting" class="text-center block bg-trend-red hover:bg-white text-white hover:text-trend-red py-4 px-6 no-underline" :class="[{'cursor-not-allowed':isSubmitting}]" @click.prevent="checkForErrors"><font-awesome-icon class="mr-2" :class="[{'fa-spin': isSubmitting}]" :icon="isSubmitting ? icons.faSyncAlt : icons.faEnvelope"></font-awesome-icon> {{ $t('hitachi.leadgen.send') }}</button>
+									<!-- <a href="#" disabled class="text-center block bg-trend-red hover:bg-white text-white hover:text-trend-red py-4 px-6 no-underline" :class="[{'cursor-not-allowed':isSubmitting}]" @click.prevent=""><font-awesome-icon class="mr-2" :class="[{'fa-spin': isSubmitting}]" :icon="isSubmitting ? icons.faSyncAlt : icons.faEnvelope"></font-awesome-icon> {{ $t('hitachi.leadgen.send') }}</a> -->
 								</div>
 							</div>
 						</form>
