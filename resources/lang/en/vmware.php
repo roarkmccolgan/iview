@@ -12,14 +12,14 @@ return array(
     'further-insight'=>'More information',
     'view-now'=>'View Now',
 
-    'title'=>'Security by design enabled by the network maturity',
-    'sub-title'=>'An IDC Assessment, sposored by VMware',
+    'title'=>'Security by design enabled by the network',
+    'sub-title'=>'An IDC Assessment, sponsored by VMware',
     'landing'=>'
         <p class="mb-2">
-            This will be replaced with real content should first of see chosen to had have missions and not have he the equation, of there us, trade, devious the it had want is appointed been workmen. At for over of one seriously place the accept personalities various lie the it reedy, wait seemed seal right on effects, something were counter. Be goddesses, more to one necessary as the fortune. Have that goals of mouth.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum ultricies massa, ac hendrerit sapien mattis egestas. Proin bibendum, sapien blandit egestas convallis, mi lacus sodales turpis, sed ultrices diam ligula vitae augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
         </p>
         <p class="mb-2">
-            Is which as turns in world a nature, to much so rationally design expand that met remodelling you it travelling is me, meticulous it of to and gleaning average it to must this the.
+            Nullam sed efficitur augue, vel laoreet turpis. Nulla facilisi. Pellentesque mollis, nunc id mollis pulvinar, purus odio tincidunt lacus, ac egestas urna felis at enim.
         </p>',
     'startbut'=>'Start Assessment',
     

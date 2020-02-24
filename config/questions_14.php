@@ -32,7 +32,7 @@ return [
                             'Limited Use',
                             'Extensive use',
                         ],
-                        'question'=>'To what extent does your organization use the following application types?',
+                        'question'=>'How extensively do you currently use software-defined networking in the following areas of your network?',
                         'name'=> 1,
                         'options'=>[
                             [

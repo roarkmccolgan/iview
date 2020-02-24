@@ -21,7 +21,7 @@ class VMWareSeeder extends Seeder
         DB::table('tools')->insert([
             'id' => 14,
             'alias' => 'vmware',
-            'title' => 'Security by design enabled by the network maturity questionnaire',
+            'title' => 'Security by design enabled by the network questionnaire',
             'sub_title' => 'TBC',
             'company_id' => 15,
             'gapropertyid' => '212017601',
