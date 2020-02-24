@@ -48,6 +48,11 @@ let colors = {
 
   'idc-dark-blue': '#004B85',
   
+  'vmware-blue': 'rgb(25,147,215)',
+  'vmware-blue-bright': 'rgb(0,144,218)',
+  'vmware-green': 'rgb(115,177,71)',
+  'vmware-green-light': 'rgb(120,190,31)',
+
   'dassault-blue': 'rgb(9,84,132)',
   'dassault-blue-light': 'rgb(47,159,229)',
   'dassault-purple': 'rgb(133,140,188)',
@@ -738,6 +743,7 @@ module.exports = {
     '20': '5rem',
     '24': '6rem',
     '32': '8rem',
+    '36': '10rem',
   },
 
 

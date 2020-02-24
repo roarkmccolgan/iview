@@ -1,0 +1,36 @@
+@tailwind preflight;
+
+@tailwind components;
+@import "../webfonts/metropolis/stylesheet.css";
+
+.fade-enter-active, .fade-leave-active {
+  transition-property: opacity;
+  transition-duration: .4s;
+}
+
+.fade-enter-active {
+  /*transition-delay: .4s;*/
+}
+
+.fade-enter, .fade-leave-active {
+  opacity: 0;
+}
+
+.pb {
+	page-break-before: always;
+}
+.spacer{
+	height: 5mm;
+}
+.hrcolor{
+	background: rgb(115,190,37);
+background: linear-gradient(90deg, rgba(115,190,37,1) 0%, rgba(27,192,173,1) 22%, rgba(0,148,217,1) 51%, rgba(35,64,142,1) 79%, rgba(93,56,165,1) 100%);
+}
+/*IE10 and IE11 */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .ieflex1 {
+    flex: 0 0 auto !important;
+  }
+}
+
+@tailwind utilities;

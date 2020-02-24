@@ -37,6 +37,7 @@ return [
        'nttdatadx',
        'dassault',
        'hitachi',
+       'vmware',
     ],
 
     /*

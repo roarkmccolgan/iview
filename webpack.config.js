@@ -36,7 +36,12 @@ module.exports = {
 			"babel-polyfill",
 			'./resources/assets/js/hitachi/main.js',
 			'./resources/assets/css/hitachi/main.css'
-		]
+		],
+		vmware: [
+			"babel-polyfill",
+			'./resources/assets/js/vmware/main.js',
+			'./resources/assets/css/vmware/main.css'
+		],
 	},
 	stats: {
 		children: false,

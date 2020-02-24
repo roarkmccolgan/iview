@@ -2025,7 +2025,6 @@ trait GenerateReportTrait
                 '100-to-249' => '100 to 249',
                 '250-to-499' => '250 to 499',
                 '500-to-999' => '500 to 999',
-                '1000-or-more' => '1000 or more',
             ];
             if (collect($orgsizes)->contains(session('user.extra.company_size','100 to 249'))) {
                 $comparisons[] = 'company';
