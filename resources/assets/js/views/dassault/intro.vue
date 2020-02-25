@@ -2,7 +2,7 @@
 	<div class="flex-grow">
 		<div class="w-full bg-cover bg-center bg-no-repeat pt-12 sm:pt-24 pb-4" :style="`background-image: url('/images/tools/${assessment.tool.id}/homepage.jpg')`">
 			<div class="container mx-auto items-center mb-4 px-4 text-dassault-blue">
-				<div class="hidden sm:block flex w-full sm:w-auto mt-2 sm:mt-0" v-if="assessment.languages.length > 1">
+				<div class="hidden sm:block flex w-full sm:w-auto mt-2 sm:mt-0" v-if="assessment.languages.length > 2000">
 					<span class="inline-block mr-2 text-grey-dark text-sm"><font-awesome-icon class="ml-2" :icon="icons.faGlobe" /> {{ $t('dassault.change-langauge') }}:</span>
 					<span v-for="(lang, index) in assessment.languages">
 						<span v-if="(lang.abbreviation != 'en' && lang.abbreviation != assessment.locale) || (lang.abbreviation == 'en' && assessment.locale!='')">
