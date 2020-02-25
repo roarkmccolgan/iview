@@ -1808,7 +1808,7 @@ trait GenerateReportTrait
             $customCopy.= '<div class="spacer"></div>';
 
             $vars['sectionCopy'] = $customCopy;
-        } elseif(session('product.id') == 12) { //Dassault
+        } elseif(session('product.id') == 12) { //dassault
             //User overall stage number and ordinal
             $overallNumber = (int) filter_var(session('result.overall.rating'), FILTER_SANITIZE_NUMBER_INT);
             $businessNumber =  (int) filter_var(session('result.digital-business.rating'), FILTER_SANITIZE_NUMBER_INT);
@@ -1831,7 +1831,7 @@ trait GenerateReportTrait
             $rating = session('result.overall.rating');
             $settings = [
                 'use_iconv'=> false,
-                'back_image'=>asset('images/tools/12/comparison_overall'.session('localeUrl').'.png?id=1'),
+                'back_image'=>asset('images/tools/12/comparison_overall'.session('locale').'.png?id=1'),
                 'back_image_width'=> 570,
                 'back_image_height'=> 138,
                 'pad_top'=>45,
@@ -2947,6 +2947,9 @@ trait GenerateReportTrait
             ->setOption('footer-html', session('url').'/'.session('localeUrl').'template/'.session('template').'/report/footer')
             ->setOption('footer-spacing', 2)
             ->setOption('replace', $headervars);
+            if(env('APP_ENV') == 'production'){
+                $pdf->setOption('dpi', 300);
+            }
             if (session('product.id')==2) {
                 $pdf->save(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
 

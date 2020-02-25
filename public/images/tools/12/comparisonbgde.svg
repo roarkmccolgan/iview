@@ -1,0 +1,39 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1615.75 907.09">
+  <defs>
+    <linearGradient id="linear-gradient" x1="330.78" y1="199.28" x2="1614.87" y2="199.28" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#ccc"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="330.78" y1="341.53" x2="1614.87" y2="341.53" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="330.78" y1="483.78" x2="1614.87" y2="483.78" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-4" x1="330.78" y1="626.03" x2="1614.87" y2="626.03" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-5" x1="330.78" y1="768.28" x2="1614.87" y2="768.28" xlink:href="#linear-gradient"/>
+  </defs>
+  <title>comparisonbgde</title>
+  <line x1="322.97" y1="0.04" x2="322.97" y2="838.12" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
+  <line x1="752.97" y1="0.04" x2="752.97" y2="838.12" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
+  <line x1="1184.97" y1="0.04" x2="1184.97" y2="838.12" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
+  <text transform="translate(208.37 181.26)" style="font-size: 37px;font-family: Helvetica"><tspan style="letter-spacing: -0.091796875em">Y</tspan><tspan x="21.28" y="0">our</tspan><tspan x="-30.12" y="46">Result</tspan></text>
+  <text transform="translate(151.51 474.71)" style="font-size: 37px;font-family: Helvetica">Industry<tspan x="26.74" y="46">Result</tspan></text>
+  <text transform="translate(93.97 326.71)" style="font-size: 37px;font-family: Helvetica">IDC Survey<tspan x="-43.2" y="46">Overall Result</tspan></text>
+  <text transform="translate(42.52 618.62)" style="font-size: 37px;font-family: Helvetica">Company Size<tspan x="135.73" y="46">Result</tspan></text>
+  <text transform="translate(1177.63 889.12)" style="font-size: 32px;font-family: Helvetica"><tspan style="letter-spacing: -0.091796875em">Y</tspan><tspan x="18.41" y="0">our Organization</tspan></text>
+  <text transform="translate(153.57 757.52)" style="font-size: 37px;font-family: Helvetica">Country<tspan x="24.68" y="46">Result</tspan></text>
+  <line x1="0.37" y1="131.04" x2="1614.27" y2="131.04" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
+  <line x1="0.91" y1="273.04" x2="1614.8" y2="273.04" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
+  <line x1="0.91" y1="411.04" x2="1614.8" y2="411.04" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
+  <line x1="0.91" y1="555.04" x2="1614.8" y2="555.04" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
+  <line x1="0.91" y1="697.04" x2="1614.8" y2="697.04" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
+  <line x1="0.37" y1="838.54" x2="1614.8" y2="838.54" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
+  <text transform="translate(432.93 56.67)" style="font-size: 26.131669998168945px;fill: #999;font-family: Helvetica">DIGI<tspan x="53.72" y="0" style="letter-spacing: -0.07373267045829865em">T</tspan><tspan x="67.75" y="0">A</tspan><tspan x="85.18" y="0" style="letter-spacing: -0.036623424758810266em">L</tspan><tspan style="font-size: 36.85363006591797px;fill!: #000"><tspan x="0" y="37.56">Improver</tspan></tspan></text>
+  <text transform="translate(864.03 56.67)" style="font-size: 26.131669998168945px;fill: #999;font-family: Helvetica">DIGI<tspan x="53.72" y="0" style="letter-spacing: -0.07369529961670801em">T</tspan><tspan x="67.75" y="0" style="letter-spacing: -0.00003737084159062272em">A</tspan><tspan x="85.18" y="0" style="letter-spacing: -0.036623424758810266em">L</tspan><tspan style="font-size: 36.85363006591797px;fill!: #000"><tspan x="0" y="37.56">Achiever</tspan></tspan></text>
+  <text transform="translate(1295.12 56.67)" style="font-size: 26.131669998168945px;fill: #999;font-family: Helvetica">DIGI<tspan x="53.72" y="0" style="letter-spacing: -0.07369529961670801em">T</tspan><tspan x="67.75" y="0" style="letter-spacing: -0.00003737084159062272em">A</tspan><tspan x="85.18" y="0" style="letter-spacing: -0.03658605391721965em">L</tspan><tspan style="font-size: 36.85363006591797px;fill!: #000"><tspan x="0" y="37.56">Native</tspan></tspan></text>
+  <rect x="330.78" y="140.54" width="1284.09" height="117.48" style="opacity: 0.5;fill: url(#linear-gradient)"/>
+  <rect x="330.78" y="282.79" width="1284.09" height="117.48" style="opacity: 0.5;fill: url(#linear-gradient-2)"/>
+  <rect x="330.78" y="425.04" width="1284.09" height="117.48" style="opacity: 0.5;fill: url(#linear-gradient-3)"/>
+  <rect x="330.78" y="567.29" width="1284.09" height="117.48" style="opacity: 0.5;fill: url(#linear-gradient-4)"/>
+  <rect x="330.78" y="709.54" width="1284.09" height="117.48" style="opacity: 0.5;fill: url(#linear-gradient-5)"/>
+  <rect x="1113.87" y="856.88" width="41.67" height="41.67" style="fill: #132e44"/>
+  <text transform="translate(1511.63 889.12)" style="font-size: 32px;font-family: Helvetica">Peer</text>
+  <rect x="1458.28" y="856.54" width="41.67" height="41.67" style="fill: #a2bbcf"/>
+</svg>

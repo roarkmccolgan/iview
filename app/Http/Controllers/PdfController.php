@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Lang;
 use Illuminate\Support\Facades\View;
 use Lava;
 use PDF;
+use LynX39\LaraPdfMerger\Facades\PdfMerger;
 
 require_once base_path('vendor/goat1000/svggraph/SVGGraph.php');
 
@@ -1845,7 +1846,7 @@ class PdfController extends Controller
             $rating = session('result.overall.rating');
             $settings = [
                 'use_iconv'=> false,
-                'back_image'=>asset('images/tools/12/comparison_overall'.session('localeUrl').'.png?id=1'),
+                'back_image'=>asset('images/tools/12/comparison_overall'.session('locale').'.png?id=1'),
                 'back_image_width'=> 570,
                 'back_image_height'=> 138,
                 'pad_top'=>45,
@@ -2576,7 +2577,8 @@ class PdfController extends Controller
                     'overall'=>$widths[$overallNumber],
                     'migration'=>$widths[$migrationNumber],
                     'status'=>$widths[$statusNumber],
-                    'value'=>$widths[$valueNumber]
+                    'value'=>$widths[$valueNumber],
+                    'url'=>session('url').'/'.session('localeUrl').'/images/tools/13/comparisonbg_overall.svg'
                 ]
             );
 
@@ -2598,6 +2600,7 @@ class PdfController extends Controller
                 [
                     'overall'=>$widths[$overallNumber],
                     'migration' => $widths[$migrationNumber],
+                    'url' => session('url').'/'.session('localeUrl').'/images/tools/13/comparison_migration.svg'
                 ]
             );
             
@@ -2671,6 +2674,7 @@ class PdfController extends Controller
                 [
                     'overall'=>$widths[$overallNumber],
                     'status' => $widths[$statusNumber],
+                    'url' => session('url').'/'.session('localeUrl').'/images/tools/13/comparison_status.svg'
                 ]
             );
             
@@ -2740,6 +2744,7 @@ class PdfController extends Controller
                 [
                     'overall'=>$widths[$overallNumber],
                     'value' => $widths[$valueNumber],
+                    'url' => session('url').'/'.session('localeUrl').'/images/tools/13/comparison_value.svg'
                 ]
             );
             
@@ -2958,6 +2963,7 @@ class PdfController extends Controller
         //->setOption('viewport-size', '1280x1024')
         //->setOption('orientation', 'Landscape')
         //->setOption('dpi', 36)
+        //->setOption('dpi', 36)
         ->setOption('window-status', 'chartrendered')
         ->setOption('header-html', session('url').'/'.session('localeUrl').'template/'.session('template').'/report/header')
         ->setOption('header-spacing', $headerspacing)
@@ -2967,16 +2973,17 @@ class PdfController extends Controller
         if (session('product.id')==13) {
             //$pdf->setOption('cover',session('url').'/'.session('localeUrl').'template/'.session('template').'/report/cover');
             $timeStamp = time();
-            //$pdf->save(storage_path().'/hitachi-'.$timeStamp.'.pdf');
-            return $pdf->inline('invoice.pdf');
-            $merge = new \Nextek\LaraPdfMerger\PdfManage;
+            $pdf->save(storage_path().'/hitachi-'.$timeStamp.'.pdf');
+            //return $pdf->inline('invoice.pdf');
+            $merge = PDFMerger::init();
             $locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
 
             $merge->addPDF(storage_path().'/hitachi_cover'.$locale .'.pdf', 'all');
             $merge->addPDF(storage_path().'/hitachi-'.$timeStamp.'.pdf', 'all');
 
 
-            $merge->merge('browser', storage_path().'/reports/hitachi-'.$timeStamp.'.pdf', 'P');
+            $merge->merge();
+            $merge->save(storage_path().'/reports/hitachi-'.$timeStamp.'.pdf','browser');
             if (File::exists(storage_path().'/hitachi-'.$timeStamp.'.pdf')) {
                 File::delete(storage_path().'/hitachi-'.$timeStamp.'.pdf');
             }
@@ -2985,13 +2992,14 @@ class PdfController extends Controller
             $timeStamp = time();
             $pdf->save(storage_path().'/dassault-'.$timeStamp.'.pdf');
 
-            $merge = new \Nextek\LaraPdfMerger\PdfManage;
+            $merge = PDFMerger::init();
             $locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
 
             $merge->addPDF(storage_path().'/dassault_cover'.$locale .'.pdf', 'all');
             $merge->addPDF(storage_path().'/dassault-'.$timeStamp.'.pdf', 'all');
 
-            $merge->merge('browser', storage_path().'/reports/dassault-'.$timeStamp.'.pdf', 'P');
+            $merge->merge();
+            $merge->save(storage_path().'/reports/dassault-'.$timeStamp.'.pdf','browser');
             if (File::exists(storage_path().'/dassault-'.$timeStamp.'.pdf')) {
                 File::delete(storage_path().'/dassault-'.$timeStamp.'.pdf');
             }
@@ -3001,14 +3009,15 @@ class PdfController extends Controller
             //return $pdf->inline('invoice.pdf');
             $pdf->save(storage_path().'/nttdata-report-'.$timeStamp.'.pdf');
 
-            $merge = new \Nextek\LaraPdfMerger\PdfManage;
+            $merge = PDFMerger::init();
             $locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
 
             $merge->addPDF(storage_path().'/nttdata-output-report_start'.$locale .'.pdf', 'all');
             $merge->addPDF(storage_path().'/nttdata-report-'.$timeStamp.'.pdf', 'all');
             $merge->addPDF(storage_path().'/nttdata-output-report_end'.$locale .'.pdf', 'all');
 
-            $merge->merge('browser', storage_path().'/reports/nttdata-report-'.$timeStamp.'.pdf', 'P');
+            $merge->merge();
+            $merge->save(storage_path().'/reports/nttdata-report-'.$timeStamp.'.pdf','browser');
             if (File::exists(storage_path().'/nttdata-report-'.$timeStamp.'.pdf')) {
                 File::delete(storage_path().'/nttdata-report-'.$timeStamp.'.pdf');
             }
@@ -3018,13 +3027,14 @@ class PdfController extends Controller
             //return $pdf->inline('invoice.pdf');
             $pdf->save(storage_path().'/trend-micro-report-'.$timeStamp.'.pdf');
 
-            $merge = new \Nextek\LaraPdfMerger\PdfManage;
+            $merge = PDFMerger::init();
             $locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
 
             $merge->addPDF(storage_path().'/trend-micro_start'.$locale .'.pdf', 'all');
             $merge->addPDF(storage_path().'/trend-micro-report-'.$timeStamp.'.pdf', 'all');
 
-            $merge->merge('browser', storage_path().'/reports/trend-micro-report-'.$timeStamp.'.pdf', 'P');
+            $merge->merge();
+            $merge->save(storage_path().'/reports/trend-micro-report-'.$timeStamp.'.pdf','browser');
             if (File::exists(storage_path().'/trend-micro-report-'.$timeStamp.'.pdf')) {
                 File::delete(storage_path().'/trend-micro-report-'.$timeStamp.'.pdf');
             }
@@ -3035,13 +3045,14 @@ class PdfController extends Controller
 
 
 
-            $merge = new \Nextek\LaraPdfMerger\PdfManage;
+            $merge = PDFMerger::init();
             $locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
 
             $merge->addPDF(storage_path().'/ntt_report_start'.$locale .'.pdf', 'all');
             $merge->addPDF(storage_path().'/ntt-sdwan-report-'.$timeStamp.'.pdf', 'all');
 
-            $merge->merge('browser', storage_path().'/reports/ntt-sdwan-report-'.$timeStamp.'.pdf', 'P');
+            $merge->merge();
+            $merge->save(storage_path().'/reports/ntt-sdwan-report-'.$timeStamp.'.pdf','browser');
             if (File::exists(storage_path().'/ntt-sdwan-report-'.$timeStamp.'.pdf')) {
                 File::delete(storage_path().'/ntt-sdwan-report-'.$timeStamp.'.pdf');
             }
@@ -3051,14 +3062,15 @@ class PdfController extends Controller
         } elseif (session('product.id')==2) {
             $timeStamp = time();
             $pdf->save(storage_path().'/fireeye-report-'.$timeStamp.'.pdf');
-            $merge = new \Nextek\LaraPdfMerger\PdfManage;
+            $merge = PDFMerger::init();
             $locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
 
             $merge->addPDF(storage_path().'/fireeye_report_start'.$locale .'.pdf', 'all');
             $merge->addPDF(storage_path().'/fireeye-report-'.$timeStamp.'.pdf', 'all');
             $merge->addPDF(storage_path().'/fireeye_report_end'.$locale .'.pdf', 'all');
 
-            $merge->merge('browser', storage_path().'/fireeye-report-'.$timeStamp.'_final.pdf', 'P');
+            $merge->merge();
+            $merge->save(storage_path().'/fireeye-report-'.$timeStamp.'_final.pdf','browser');
             if (File::exists(storage_path().'/fireeye-report-'.$timeStamp.'.pdf')) {
                 File::delete(storage_path().'/fireeye-report-'.$timeStamp.'.pdf');
             }
