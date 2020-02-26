@@ -2555,7 +2555,7 @@ class PdfController extends Controller
             );
             $customCopy.= trans(
                 session('product.alias').'.introduction6',
-                ['img' => session('url').'/'.session('localeUrl').'/images/tools/13/rankings.svg']
+                ['img' => asset('/images/tools/13/rankings.svg')]
             );
             $customCopy.= '<div class="pb"></div>';
             $customCopy.= trans(
