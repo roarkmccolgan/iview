@@ -2497,7 +2497,7 @@ trait GenerateReportTrait
             $customCopy.= '<div class="spacer"></div>';
 
             $vars['sectionCopy'] = $customCopy;
-        } elseif (session('product.id') == 13) { //Hitachi
+        } elseif (session('product.id') == 13) {
             //User overall stage number and ordinal
             $overallNumber = (int) filter_var(session('result.overall.rating'), FILTER_SANITIZE_NUMBER_INT);
             $migrationNumber =  (int) filter_var(session('result.migration.rating'), FILTER_SANITIZE_NUMBER_INT);
@@ -2539,7 +2539,7 @@ trait GenerateReportTrait
             );
             $customCopy.= trans(
                 session('product.alias').'.introduction6',
-                ['img' => session('url').'/'.session('localeUrl').'/images/tools/13/rankings.svg']
+                ['img' => asset('/images/tools/13/rankings.svg')]
             );
             $customCopy.= '<div class="pb"></div>';
             $customCopy.= trans(
@@ -2561,7 +2561,8 @@ trait GenerateReportTrait
                     'overall'=>$widths[$overallNumber],
                     'migration'=>$widths[$migrationNumber],
                     'status'=>$widths[$statusNumber],
-                    'value'=>$widths[$valueNumber]
+                    'value'=>$widths[$valueNumber],
+                    'url'=>asset('/images/tools/13/comparisonbg_overall.svg')
                 ]
             );
 
@@ -2583,6 +2584,7 @@ trait GenerateReportTrait
                 [
                     'overall'=>$widths[$overallNumber],
                     'migration' => $widths[$migrationNumber],
+                    'url' => asset('/images/tools/13/comparison_migration.svg')
                 ]
             );
             
@@ -2656,6 +2658,7 @@ trait GenerateReportTrait
                 [
                     'overall'=>$widths[$overallNumber],
                     'status' => $widths[$statusNumber],
+                    'url' => asset('/images/tools/13/comparison_status.svg')
                 ]
             );
             
@@ -2725,6 +2728,7 @@ trait GenerateReportTrait
                 [
                     'overall'=>$widths[$overallNumber],
                     'value' => $widths[$valueNumber],
+                    'url' => asset('/images/tools/13/comparison_value.svg')
                 ]
             );
             
