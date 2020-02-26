@@ -2544,14 +2544,14 @@ class PdfController extends Controller
                 session('product.alias').'.introduction1-'.$overallNumber
             );
             $customCopy.= trans(
-                session('product.alias').'.introduction4',
+                session('product.alias').'.introduction4'
             );
             $customCopy.= trans(
                 session('product.alias').'.introduction4-'.$overallNumber
             );
             $customCopy.= '<div class="pb"></div>';
             $customCopy.= trans(
-                session('product.alias').'.introduction5',
+                session('product.alias').'.introduction5'
             );
             $customCopy.= trans(
                 session('product.alias').'.introduction6',
@@ -2559,7 +2559,7 @@ class PdfController extends Controller
             );
             $customCopy.= '<div class="pb"></div>';
             $customCopy.= trans(
-                session('product.alias').'.introduction7',
+                session('product.alias').'.introduction7'
             );
             $customCopy.= trans(
                 session('product.alias').'.overallstage'.$overallNumber
@@ -2583,7 +2583,7 @@ class PdfController extends Controller
             );
 
             $customCopy.= trans(
-                session('product.alias').'.overalloutrostage'.$overallNumber,
+                session('product.alias').'.overalloutrostage'.$overallNumber
             );
 
             //Migration
