@@ -2578,7 +2578,7 @@ class PdfController extends Controller
                     'migration'=>$widths[$migrationNumber],
                     'status'=>$widths[$statusNumber],
                     'value'=>$widths[$valueNumber],
-                    'url'=>session('url').'/'.session('localeUrl').'/images/tools/13/comparisonbg_overall.svg'
+                    'url'=>asset('/images/tools/13/comparisonbg_overall.svg')
                 ]
             );
 
@@ -2600,7 +2600,7 @@ class PdfController extends Controller
                 [
                     'overall'=>$widths[$overallNumber],
                     'migration' => $widths[$migrationNumber],
-                    'url' => session('url').'/'.session('localeUrl').'/images/tools/13/comparison_migration.svg'
+                    'url' => asset('/images/tools/13/comparison_migration.svg')
                 ]
             );
             
@@ -2674,7 +2674,7 @@ class PdfController extends Controller
                 [
                     'overall'=>$widths[$overallNumber],
                     'status' => $widths[$statusNumber],
-                    'url' => session('url').'/'.session('localeUrl').'/images/tools/13/comparison_status.svg'
+                    'url' => asset('/images/tools/13/comparison_status.svg')
                 ]
             );
             
@@ -2744,7 +2744,7 @@ class PdfController extends Controller
                 [
                     'overall'=>$widths[$overallNumber],
                     'value' => $widths[$valueNumber],
-                    'url' => session('url').'/'.session('localeUrl').'/images/tools/13/comparison_value.svg'
+                    'url' => asset('/images/tools/13/comparison_value.svg')
                 ]
             );
             
