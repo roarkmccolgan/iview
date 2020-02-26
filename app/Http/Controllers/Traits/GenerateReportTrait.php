@@ -2951,9 +2951,9 @@ trait GenerateReportTrait
             ->setOption('footer-html', session('url').'/'.session('localeUrl').'template/'.session('template').'/report/footer')
             ->setOption('footer-spacing', 2)
             ->setOption('replace', $headervars);
-            if(env('APP_ENV') == 'production'){
-                $pdf->setOption('dpi', 300);
-            }
+            // if(env('APP_ENV') == 'production'){
+            //     $pdf->setOption('dpi', 300);
+            // }
             if (session('product.id')==2) {
                 $pdf->save(storage_path().'/'.$assessment_id.'_'.$name.'.pdf');
 
