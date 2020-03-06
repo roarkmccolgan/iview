@@ -5,7 +5,7 @@ return [
         'title' => 'Cloud migration and application modernization',
         'description' => '
             <h2 class="">Cloud migration and application modernization</h2>
-            <p class="mb-4">This dimension measures the readiness of your Cloud Migration and Application modernisation strategy. We believe this is important because the drivers for cloud migration, the challenges you face in your cloud migration and application modernization journeys as well as the objectives tied to these initiatives give valuable insights into the maturity of your overall cloud strategy</p>
+            <p class="mb-4">This dimension measures the readiness of your Cloud Migration and Application modernisation strategy. We believe this is important because the drivers for cloud migration, the challenges you face in your cloud migration and application modernization journeys, as well as the objectives tied to these initiatives give valuable insights into the maturity of your overall cloud strategy</p>
             ',
         'background' => 'migration.png',
         'nuggets' => [
@@ -498,7 +498,7 @@ return [
         'title' => 'Cloud and Multicloud Status',
         'description' => '
             <h2 class="">Cloud and Multicloud Status</h2>
-            <p class="mb-4">This dimension measures your readiness in Multicloud strategy. Multicloud and hybrid clouds are inevitable IT realities and we believe how you navigate through the complexities of multicloud and adopt the right technologies and strategies to move from accidental multicloud to intentional multicloud are critical in determining your long-term cloud strategy success</p>
+            <p class="mb-4">This dimension measures your readiness of your Multicloud strategy. Multicloud and hybrid clouds are inevitable IT realities and we believe how you navigate through the complexities of multicloud and adopt the right technologies and strategies to move from accidental multicloud to intentional multicloud are critical in determining your long-term cloud strategy success</p>
         ',
         'background' => 'status.png',
         'nuggets' => [
@@ -557,27 +557,27 @@ return [
                         'name'=> 6,
                         'options'=>[
                             [
-                                'label'=>'Cloud deployments greatly improve application and IT infrastructure efficiency / performance',
+                                'label'=>'Improve application and IT infrastructure efficiency / performance',
                                 'value'=>1,
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'Using one or more clouds powers my organization’s growth initiatives and innovation',
+                                'label'=>'Use of one or more clouds powers growth initiatives and innovation',
                                 'value'=>2,
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'It allows us to manage and reduce technical debt',
+                                'label'=>'Manage and reduce technical debt',
                                 'value'=>2,
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'My organization’s cloud initiatives will provide my customers, partners and employees with an improved digital experience',
+                                'label'=>'Provide customers, partners and employees with an improved digital experience',
                                 'value'=>3,
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'Maximize the utilization of data and derive faster data-based insights',
+                                'label'=>'Maximize the utilization of data and derive faster data-driven insights',
                                 'value'=>3,
                                 'checked'=>false,
                             ]

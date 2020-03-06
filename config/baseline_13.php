@@ -94,20 +94,20 @@ return [
         'types' => [
             'stage1' => [
                 'low' => 0,
-                'high' => 31,
+                'high' => 28,
                 'total' => 2,
                 'benchmark' => 20,
                 'copy' => 'hitachi.migration-stage-1-txt'
             ],
             'stage2' => [
-                'low' => 32,
-                'high' => 47,
+                'low' => 29,
+                'high' => 45,
                 'total' => 3,
                 'benchmark' => 34,
                 'copy' => 'hitachi.migration-stage-2-txt'
             ],
             'stage3' => [
-                'low' => 48,
+                'low' => 46,
                 'high' => 60,
                 'total' => 5,
                 'benchmark' => 28,
@@ -144,13 +144,13 @@ return [
         'types' => [
             'stage1' => [
                 'low' => 0,
-                'high' => 13,
+                'high' => 12,
                 'total' => 2,
                 'benchmark' => 20,
                 'copy' => 'hitachi.status-stage-1-txt'
             ],
             'stage2' => [
-                'low' => 14,
+                'low' => 13,
                 'high' => 20,
                 'total' => 3,
                 'benchmark' => 34,
@@ -158,7 +158,7 @@ return [
             ],
             'stage3' => [
                 'low' => 21,
-                'high' => 25,
+                'high' => 27,
                 'total' => 5,
                 'benchmark' => 28,
                 'copy' => 'hitachi.status-stage-3-txt'
@@ -194,21 +194,21 @@ return [
         'types' => [
             'stage1' => [
                 'low' => 0,
-                'high' => 10,
+                'high' => 9,
                 'total' => 2,
                 'benchmark' => 20,
                 'copy' => 'hitachi.value-stage-1-txt'
             ],
             'stage2' => [
-                'low' => 11,
-                'high' => 15,
+                'low' => 10,
+                'high' => 14,
                 'total' => 3,
                 'benchmark' => 34,
                 'copy' => 'hitachi.value-stage-2-txt'
             ],
             'stage3' => [
                 'low' => 15,
-                'high' => 19,
+                'high' => 21,
                 'total' => 5,
                 'benchmark' => 28,
                 'copy' => 'hitachi.value-stage-3-txt'

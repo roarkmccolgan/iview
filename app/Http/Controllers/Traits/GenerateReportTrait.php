@@ -2525,13 +2525,11 @@ trait GenerateReportTrait
                 session('product.alias').'.introduction1'
             );
             $customCopy.= trans(
-                session('product.alias').'.introduction1-'.$overallNumber
-            );
-            $customCopy.= trans(
                 session('product.alias').'.introduction4'
             );
             $customCopy.= trans(
-                session('product.alias').'.introduction4-'.$overallNumber
+                session('product.alias').'.execsum',
+                ['img' => asset('/images/tools/13/pyramid.svg')]
             );
             $customCopy.= '<div class="pb"></div>';
             $customCopy.= trans(
@@ -2544,6 +2542,12 @@ trait GenerateReportTrait
             $customCopy.= '<div class="pb"></div>';
             $customCopy.= trans(
                 session('product.alias').'.introduction7'
+            );
+            $customCopy.= trans(
+                session('product.alias').'.introduction1-'.$overallNumber
+            );
+            $customCopy.= trans(
+                session('product.alias').'.introduction4-'.$overallNumber
             );
             $customCopy.= trans(
                 session('product.alias').'.overallstage'.$overallNumber

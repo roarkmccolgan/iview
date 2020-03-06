@@ -94,58 +94,32 @@ return array(
         'errorAccept'=>'Please accept the Terms &amp; Conditions',
     ],
     'introduction1' => '
-        <h2 class="text-blue-dark mb-2 pt-20">Introduction</h2>
-        <p class="mb-1">
+        <h2 class="text-blue-dark mb-2 pt-10">Introduction</h2>
+        <p class="mb-2">
             Cloud adoption is critical for successful IT modernization to support digital transformation initiatives. Competing in the global economy for customers, investment, and talent requires instant access to relevant data and IT resources that don\'t compromise on speed, scale, security, or costs. A well-thought-out cloud strategy and consistent execution of this strategy delivers the flexibility and scale that underpins digital business success and data transformation.
         </p>
-        <p class="mb-1">
+        <p class="mb-2">
         To assess cloud adoption maturity, IDC has developed a Cloud Strategy Assessment tool to understand digital business ambitions, cloud strategies, and execution challenges. Based on the results, we have grouped the respondents into three categories — <strong>Cloud Starter, Cloud Practitioner, and Cloud Master</strong> - to understand what sets the masters apart from their competitors and which best practices we can learn from them in making the cloud and data transformation journey successful.
         </p>
     ',
-    'introduction1-1' => '
-        <p class="mb-1">
-            Based on your responses to IDC\'s Cloud Strategy Assessment, your organization has been rated at the earliest level of Cloud Strategy maturity — a <strong>Cloud Starter</strong>. This means you are at the beginning of your cloud and data-enabled journey, and there will be much to do and much to gain. Having the right guidance, leveraging industry best practices, and working with specialist vendors and partners, you will catch up quickly. You need to define a starting point, set short, mid- and long-term priorities, and start to drive incremental improvements. With the amount of potential complexity and a shortage of digital skills, seek outside assistance where possible to accelerate your move to a cloud-enabled and data-driven organization.
-        </p>
-    ',
-    'introduction1-2' => '
-        <p class="mb-1">
-            Well done on your result. Based on your responses to IDC\'s Cloud Strategy Assessment, your organization has been rated at the second highest level of cloud maturity — a <strong>Cloud Practitioner</strong>. This means your organization is generally in line with the rest of the industry and has prepared itself for the highest levels of cloud and data success. While you are doing well, there is still a bit more to do, to be fully cloud and data ready. To create a true competitive advantage, your focus must shift from a tactical approach to a more strategic, fully aligned way of thinking across all areas of the business.
-        </p>
-    ',
-    'introduction1-3' => '
-        <p class="mb-1">
-            Congratulations. Based on your responses to IDC\'s Cloud Strategy Assessment, your organization has been rated as a Cloud Master, which is the highest level of cloud maturity. This means your organization is ahead of the industry, blazing a trail in using cloud and data, as business assets, and as a key competitive differentiator. Always bear in mind, though, the world of cloud and data is highly dynamic, and you\'ll need to keep improving and evolving to consistently stay ahead.
-        </p>
-    ',
     'introduction4' => '
-        <p class="mb-1">
-            The key priorities for organizations accelerating their digital transformation journeys are IT modernization, successful cloud adoption, and progress in becoming data-driven. They want to use cloud and data transformation initiatives to improve efficiency, business performance, and the speed of innovation. Delivering on digital business mandates requires a well-thought-out cloud strategy and set of technologies to drive innovation, all without compromising on cost control, security, or regulatory obligations. Providing a flexible IT delivery model and relevant data at speed, while aligning with business needs, is critical. Developing a successful cloud and data strategy will form the bedrock on which to digitally transform your organization in a saleable and agile manner. 
+        <p class="mb-2">
+            The key priorities for organizations accelerating their digital transformation journeys are IT modernization, successful cloud adoption, and progress in becoming data-driven. They want to use cloud and data transformation initiatives to improve efficiency, business performance, and the speed of innovation. Delivering on digital business mandates requires a well-thought-out cloud strategy and set of technologies to drive innovation, all without compromising on cost control, security, or regulatory obligations. Providing a flexible IT delivery model and relevant data at speed, while aligning with business needs, is critical. Developing a successful cloud and data strategy will form the bedrock on which to digitally transform your organization in a scaleable and agile manner. 
         </p>
     ',
-    'introduction4-1' => '
-        <p class="mb-1">
-            The key priorities for organizations accelerating their digital transformation journeys are IT modernization, successful cloud adoption, and progress in becoming data-driven. They want to use cloud and data transformation initiatives to improve efficiency, business performance, and the speed of innovation. Delivering on digital business mandates requires a well-thought-out cloud strategy and set of technologies to drive innovation, all without compromising on cost control, security, or regulatory obligations. Providing a flexible IT delivery model and relevant data at speed, while aligning with business needs, is critical.
+    'execsum' => '
+        <h2 class="text-blue-dark mb-2">Executive Summary</h2>
+        <p class="mb-2">
+            Now that you have completed the IDC Strategy Cloud Assessment, this customised report has been created based on your answers and will help highlight some of your organisations key strengths and potential areas for development, in relation to your Cloud Strategy. The report covers the same three key sections as the assessment - cloud migration and application modernization, multicloud status, and data value realization; making the insights focused and highly actionable.
         </p>
-        <p class="italic mb-1 text-blue-dark">
-            Developing a successful cloud and data strategy will form the bedrock on which to digitally transform your organization in a saleable and agile manner. 
+        <p class="mb-2">
+            Knowing how you score in relation to the IDC model and where improvements can be made, helps to focus your efforts, resulting in a quicker time value from your cloud and data monetisation investments.
         </p>
-    ',
-    'introduction4-2' => '
-        <p class="mb-1">
-            As a <strong>Cloud Practitioner</strong>, your key priorities are to define and measure metrics to track migration and application operations in public cloud, standardize migration processes and workload evaluations, and automate operations. You also need to overcome the complexities of cloud operations to further progress and scale your cloud migration and modernization strategy. 
-        </p>
-        <p class="italic mb-1 text-blue-dark">
-            <strong>Cloud Practitioner</strong> organizations have already addressed the low-hanging fruit, seen the business benefits of the cloud strategy, and have the determination to make progress. They need to maintain the momentum and invest in transforming legacy business processes and legacy applications to graduate to the next stage.
-        </p>
-    ',
-    'introduction4-3' => '
-        <p class="mb-1">
-            As a <strong>Cloud Master</strong>, a key priority is to be cognizant of the fact that the cloud world is very dynamic and constantly evolving. Cloud Master organizations need to continuously evolve and are constantly investing in reevaluating their cloud, data, and security postures, while making incremental innovations to maintain their competitive edge. You will need to apply standard processes and automation to the broadest set of workloads possible, implement learnings and best practices from operational success across the organization, and continuously review and refine placement decisions and processes as needed over time.
-        </p>
+        <div class="mx-auto" style="width:160mm;height:88.987mm; background: url(:img) no-repeat; background-size:cover">
     ',
     'introduction5' => '
         <h2 class="text-blue-dark mb-2 pt-20">Ranking Explanation</h2>
-        <p class="mb-1">
+        <p class="mb-2">
             Organizations who view cloud as a critical technology and the foundation of their digital transformation, as opposed to just a tactical way to save costs, will be in a better position to capitalize on new digital initiatives, yield higher returns and ultimately make your cloud strategy a success. 
         </p>
         <p class="italic mb-1 text-blue-dark">
@@ -153,15 +127,51 @@ return array(
         </p>
     ',
     'introduction6' => '
-        <p class="mb-1">
+        <p class="mb-2">
             The IDC Cloud Strategy Assessment ranks organisations by three maturity levels - <strong>Cloud Starters, Cloud Practitioners and Cloud Masters</strong>.
         </p>
-        <div class="" style="width:160mm;height:151.16mm; background: url(:img) no-repeat; background-size:cover">
+        <div class="mx-auto" style="width:160mm;height:151.16mm; background: url(:img) no-repeat; background-size:cover">
     ',
     'introduction7'=>'
         <h2 class="leading-tight text-blue-dark mb-2">Your Ranking</h2>
-        <p class="mb-1">
+        <p class="mb-2">
             Organizations can only successfully compete in the global economy if their cloud and data-related strategies are world-class and the execution is consistent, adaptive, and takes advantage of the relevant cloud and data-enabling technologies. IDC\'s Cloud Strategy Assessment scores organizations on their cloud strategy maturity by looking at three core elements — <strong>cloud migration and application modernization, multicloud status, and data value realization.</strong>
+        </p>
+    ',
+    'introduction1-1' => '
+        <p class="mb-2">
+            Based on your responses to IDC\'s Cloud Strategy Assessment, your organization has been rated at the earliest level of Cloud Strategy maturity — a <strong>Cloud Starter</strong>. This means you are at the beginning of your cloud and data-enabled journey, and there will be much to do and much to gain. Having the right guidance, leveraging industry best practices, and working with specialist vendors and partners, you will catch up quickly. You need to define a starting point, set short, mid- and long-term priorities, and start to drive incremental improvements. With the amount of potential complexity and a shortage of digital skills, seek outside assistance where possible to accelerate your move to a cloud-enabled and data-driven organization.
+        </p>
+    ',
+    'introduction1-2' => '
+        <p class="mb-2">
+            Well done on your result. Based on your responses to IDC\'s Cloud Strategy Assessment, your organization has been rated at the second highest level of cloud maturity — a <strong>Cloud Practitioner</strong>. This means your organization is generally in line with the rest of the industry and has prepared itself for the highest levels of cloud and data success. While you are doing well, there is still a bit more to do, to be fully cloud and data ready. To create a true competitive advantage, your focus must shift from a tactical approach to a more strategic, fully aligned way of thinking across all areas of the business.
+        </p>
+    ',
+    'introduction1-3' => '
+        <p class="mb-2">
+            Congratulations. Based on your responses to IDC\'s Cloud Strategy Assessment, your organization has been rated as a Cloud Master, which is the highest level of cloud maturity. This means your organization is ahead of the industry, blazing a trail in using cloud and data, as business assets, and as a key competitive differentiator. Always bear in mind, though, the world of cloud and data is highly dynamic, and you\'ll need to keep improving and evolving to consistently stay ahead.
+        </p>
+    ',
+    'introduction4-1' => '
+        <p class="mb-2">
+            The key priorities for organizations accelerating their digital transformation journeys are IT modernization, successful cloud adoption, and progress in becoming data-driven. They want to use cloud and data transformation initiatives to improve efficiency, business performance, and the speed of innovation. Delivering on digital business mandates requires a well-thought-out cloud strategy and set of technologies to drive innovation, all without compromising on cost control, security, or regulatory obligations. Providing a flexible IT delivery model and relevant data at speed, while aligning with business needs, is critical.
+        </p>
+        <p class="italic mb-1 text-blue-dark">
+            Developing a successful cloud and data strategy will form the bedrock on which to digitally transform your organization in a saleable and agile manner. 
+        </p>
+    ',
+    'introduction4-2' => '
+        <p class="mb-2">
+            As a <strong>Cloud Practitioner</strong>, your key priorities are to define and measure metrics to track migration and application operations in public cloud, standardize migration processes and workload evaluations, and automate operations. You also need to overcome the complexities of cloud operations to further progress and scale your cloud migration and modernization strategy. 
+        </p>
+        <p class="italic mb-1 text-blue-dark">
+            <strong>Cloud Practitioner</strong> organizations have already addressed the low-hanging fruit, seen the business benefits of the cloud strategy, and have the determination to make progress. They need to maintain the momentum and invest in transforming legacy business processes and legacy applications to graduate to the next stage.
+        </p>
+    ',
+    'introduction4-3' => '
+        <p class="mb-2">
+            As a <strong>Cloud Master</strong>, a key priority is to be cognizant of the fact that the cloud world is very dynamic and constantly evolving. Cloud Master organizations need to continuously evolve and are constantly investing in reevaluating their cloud, data, and security postures, while making incremental innovations to maintain their competitive edge. You will need to apply standard processes and automation to the broadest set of workloads possible, implement learnings and best practices from operational success across the organization, and continuously review and refine placement decisions and processes as needed over time.
         </p>
     ',
     'overallstage1'=>'
@@ -517,7 +527,7 @@ return array(
             <div class="w-3/4 ml-auto">
                 <h4 class="mb-1 font-bold text-grey-darker">Question 4</h4>
                 <h3 class="mb-1 text-blue-dark leading-tight">To which degree are these cloud migration challenges faced by your organization?</h3>
-                <p class="mb-1">
+                <p class="mb-2">
                     Where to start your cloud journey and which workloads to migrate is not an easy decision. First, you need to establish if there is an organizational need to move to the cloud. While we are seeing a broader trend in the industry, with an increasing number of organizations moving to the cloud, it might not be a good fit for your organization to have every workload and application in the cloud; it all depends on your specific workloads, performance requirements, data sensitivity, regulatory compliance concerns, etc. Once you have decided that cloud is going to be part of your IT infrastructure mix, you need to determine which applications are a good fit for the cloud, which migration strategy fits to which application class, how complex the migration is going to be, and, last but not least, if you have the right cloud skills internally or if you need to select an appropriate external partner for support.
                 </p>
             </div>
@@ -776,7 +786,7 @@ return array(
             <div class="w-3/4 ml-auto">
                 <h4 class="mb-1 font-bold text-grey-darker">Question 7</h4>
                 <h3 class="mb-1 text-blue-dark leading-tight">To what degree are these challenges faced around cloud operations and management </h3>
-                <p class="mb-1">
+                <p class="mb-2">
                     Getting cloud operations and management right is critical for running a successful cloud practice
                 </p>
             </div>
@@ -961,7 +971,7 @@ return array(
             <div class="w-3/4 ml-auto">
                 <h4 class="mb-1 font-bold text-grey-darker">Question 9</h4>
                 <h3 class="mb-1 text-blue-dark leading-tight">Please indicate how critical these data driven objectives are to your data strategy / organization?</h3>
-                <p class="mb-1">
+                <p class="mb-2">
                     IDC research indicates that the cloud strategies and data strategies of organizations are increasingly converging. To build a great data strategy, you need to create a data map to gain visibility and control of your data, and improve the quality and speed of your data delivery so that you can use the data to create a competitive advantage. You also need to hire data experts to gain new insights from your data and deliver new data-driven revenue streams.
                 </p>
             </div>
