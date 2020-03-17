@@ -1,6 +1,6 @@
 <template>
 	<div class="flex-grow">
-		<div class="w-full bg-cover bg-center bg-no-repeat pt-12 sm:pt-24 pb-4" :style="`background-image: url('/images/tools/${assessment.tool.id}/homepage.jpg')`">
+		<div class="w-full bg-cover bg-center bg-no-repeat pt-6 sm:py-24 pb-4" :style="`background-image: url('/images/tools/${assessment.tool.id}/homepage.jpg')`">
 			<div class="container mx-auto items-center mb-4 px-4 text-dassault-blue">
 				<div class="hidden sm:block flex w-full sm:w-auto mt-2 sm:mt-0" v-if="assessment.languages.length > 2000">
 					<span class="inline-block mr-2 text-grey-dark text-sm"><font-awesome-icon class="ml-2" :icon="icons.faGlobe" /> {{ $t('dassault.change-langauge') }}:</span>
@@ -11,12 +11,10 @@
 						</span>
 					</span>
 				</div>
-				<div class="w-full sm:w-1/2 sm:mb-24">
-					<h1 class="text-dassault-blue font-light leading-tight">{{ $t('dassault.title') }}</h1>
-					<h3 class="text-dassault-blue font-light leading-tight">{{ $t('dassault.sub-title') }}</h3>
-				</div>
 				<div class="flex flex-wrap flex-row-reverse sm:flex-no-wrap sm:flex-row items-center bg-white my-4 p-4 shadow-lg">
 					<div class="w-full sm:w-3/5">
+						<h1 class="text-dassault-blue font-bold leading-tight">{{ $t('dassault.title') }}</h1>
+						<h3 class="text-dassault-blue font-light leading-tight mb-4">{{ $t('dassault.sub-title') }}</h3>
 						<div v-html="$t('dassault.landing')"></div>
 					</div>
 					<div class="w-full sm:w-2/5 text-center my-16 sm:m-0">

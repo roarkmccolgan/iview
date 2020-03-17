@@ -32,9 +32,9 @@ class SubmitAssessmentsRequest extends FormRequest
             'sname'=>'required|min:2|max:255',
             'email'=>'required|email',
             'company'=>'required|min:2|max:255',
-            'title'=>'required|min:3|max:255',
+            'title'=>'sometimes|required|min:3|max:255',
             'country'=>'required',
-            'phone'=>'required',
+            'phone'=>'sometimes|required',
             'terms'=>'required'
         ];
         if (Config::has('baseline_'.session('product.id').'.overall.field_validation')) {

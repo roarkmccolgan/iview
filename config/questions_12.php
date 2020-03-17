@@ -1,6 +1,30 @@
 <?php
 // Dassault
 return [
+    'screener' => [
+        'title' => 'Screener',
+        'description' => '
+            <h2 class="">Understanding your Business</h2>
+            <p class="mb-4">To finalize our assessment of your business and its potential, we just need to ask you some questions on your organization’s scale and experience.</p>
+        ',
+        'ignore' => true,
+        'class' => 'sec3',
+        'display' => true,
+        'complete' => false,
+        'pages' => [
+            'page1' => [
+                'title' => 'Metrics',
+                'questions' => [
+                    'q1'=>[
+                        'type'=>'text',
+                        'validate'=>'email',
+                        'question'=>'Please provide your email address',
+                        'name'=> 1,
+                    ]
+                ]
+            ]
+        ]
+    ],
     'digital-business' => [
         'title' => 'Digital Business',
         'description' => '',
@@ -20,10 +44,10 @@ return [
             'page1' => [
                 'title' => 'Digital Business',
                 'questions' => [
-                    'q1'=>[
+                    'q2'=>[
                         'type'=>'button',
                         'question'=>'How difficult is for your organization to cope with changes in business patterns?',
-                        'name'=> 1,
+                        'name'=> 2,
                         'options'=>[
                             [
                                 'label'=>'Not at all difficult',
@@ -57,10 +81,10 @@ return [
             'page2' => [
                 'title' => 'Digital Business',
                 'questions' => [
-                    'q2'=>[
+                    'q3'=>[
                         'type'=>'button',
                         'question'=>'How difficult is for your organization to adapt to your changes in staffing levels?',
-                        'name'=> 2,
+                        'name'=> 3,
                         'options'=>[
                             [
                                 'label'=>'Not at all difficult',
@@ -94,7 +118,7 @@ return [
             'page3' => [
                 'title' => 'Digital Business',
                 'questions' => [
-                    'q3'=>[
+                    'q4'=>[
                         'type'=>'groupbutton',
                         'calc'=>[
                             'type'=>'average'
@@ -107,11 +131,11 @@ return [
                             'Yes – for most or all of the business (80% or more of workers)',
                         ],
                         'question'=>'To what extent does your organization use the following application types?',
-                        'name'=> 3,
+                        'name'=> 4,
                         'options'=>[
                             [
                                 'label'=>'Productivity (email, word processing, spreadsheets, presentations etc)',
-                                'name'=> 3.1,
+                                'name'=> 4.1,
                                 'options'=>[
                                     [
                                         'label'=>'Not using and no plans to within 12 months',
@@ -142,7 +166,7 @@ return [
                             ],
                             [
                                 'label'=>'Collaboration (File sharing, VoIP, Video Conferencing etc)',
-                                'name'=> 3.2,
+                                'name'=> 4.2,
                                 'options'=>[
                                     [
                                         'label'=>'Not using and no plans to within 12 months',
@@ -173,7 +197,7 @@ return [
                             ],
                             [
                                 'label'=>'CRM',
-                                'name'=> 3.3,
+                                'name'=> 4.3,
                                 'options'=>[
                                     [
                                         'label'=>'Not using and no plans to within 12 months',
@@ -204,7 +228,7 @@ return [
                             ],
                             [
                                 'label'=>'ERP',
-                                'name'=> 3.4,
+                                'name'=> 4.4,
                                 'options'=>[
                                     [
                                         'label'=>'Not using and no plans to within 12 months',
@@ -235,7 +259,7 @@ return [
                             ],
                             [
                                 'label'=>'Digital Design (CAD,CAE, CAM etc)',
-                                'name'=> 3.5,
+                                'name'=> 4.5,
                                 'options'=>[
                                     [
                                         'label'=>'Not using and no plans to within 12 months',
@@ -266,7 +290,7 @@ return [
                             ],
                             [
                                 'label'=>'PLM software',
-                                'name'=> 3.6,
+                                'name'=> 4.6,
                                 'options'=>[
                                     [
                                         'label'=>'Not using and no plans to within 12 months',
@@ -297,7 +321,7 @@ return [
                             ],
                             [
                                 'label'=>'Simulation software',
-                                'name'=> 3.7,
+                                'name'=> 4.7,
                                 'options'=>[
                                     [
                                         'label'=>'Not using and no plans to within 12 months',
@@ -328,7 +352,7 @@ return [
                             ],
                             [
                                 'label'=>'Analytics software',
-                                'name'=> 3.8,
+                                'name'=> 4.8,
                                 'options'=>[
                                     [
                                         'label'=>'Not using and no plans to within 12 months',
@@ -360,50 +384,50 @@ return [
                         ],
                         'skipNext' => [
                             [
-                                'q' => 'q3',
-                                'question' => 3.1,
+                                'q' => 'q4',
+                                'question' => 4.1,
                                 'operator' => '<',
                                 'value' => 3
                             ],
                             [
-                                'q' => 'q3',
-                                'question' => 3.2,
+                                'q' => 'q4',
+                                'question' => 4.2,
                                 'operator' => '<',
                                 'value' => 3
                             ],
                             [
-                                'q' => 'q3',
-                                'question' => 3.3,
+                                'q' => 'q4',
+                                'question' => 4.3,
                                 'operator' => '<',
                                 'value' => 3
                             ],
                             [
-                                'q' => 'q3',
-                                'question' => 3.4,
+                                'q' => 'q4',
+                                'question' => 4.4,
                                 'operator' => '<',
                                 'value' => 3
                             ],
                             [
-                                'q' => 'q3',
-                                'question' => 3.5,
+                                'q' => 'q4',
+                                'question' => 4.5,
                                 'operator' => '<',
                                 'value' => 3
                             ],
                             [
-                                'q' => 'q3',
-                                'question' => 3.6,
+                                'q' => 'q4',
+                                'question' => 4.6,
                                 'operator' => '<',
                                 'value' => 3
                             ],
                             [
-                                'q' => 'q3',
-                                'question' => 3.7,
+                                'q' => 'q4',
+                                'question' => 4.7,
                                 'operator' => '<',
                                 'value' => 3
                             ],
                             [
-                                'q' => 'q3',
-                                'question' => 3.8,
+                                'q' => 'q4',
+                                'question' => 4.8,
                                 'operator' => '<',
                                 'value' => 3
                             ],    
@@ -414,7 +438,7 @@ return [
             'page4' => [
                 'title' => 'Digital Business',
                 'questions' => [
-                    'q4'=>[
+                    'q5'=>[
                         'type'=>'groupbutton',
                         'calc'=>[
                             'type'=>'average'
@@ -427,11 +451,11 @@ return [
                             'Very successful',
                         ],
                         'question'=>'On a scale of 1 - 5, please rate the success of the current deployment of each of the following application types at your organization?',
-                        'name'=> 4,
+                        'name'=> 5,
                         'options'=>[
                             [
                                 'label'=>'Productivity (email, word processing, spreadsheets, presentations etc)',
-                                'name'=> 4.1,
+                                'name'=> 5.1,
                                 'options'=>[
                                     [
                                         'label'=>'Not at all successful',
@@ -460,15 +484,15 @@ return [
                                     ],
                                 ],
                                 'show' => [
-                                    'question' => 3,
-                                    'answer' => 3.1,
+                                    'question' => 4,
+                                    'answer' => 4.1,
                                     'operator' => '>',
                                     'value' => 2
                                 ]
                             ],
                             [
                                 'label'=>'Collaboration (File sharing, VoIP, Video Conferencing etc)',
-                                'name'=> 4.2,
+                                'name'=> 5.2,
                                 'options'=>[
                                     [
                                         'label'=>'Not at all successful',
@@ -497,15 +521,15 @@ return [
                                     ],
                                 ],
                                 'show' => [
-                                    'question' => 3,
-                                    'answer' => 3.2,
+                                    'question' => 4,
+                                    'answer' => 4.2,
                                     'operator' => '>',
                                     'value' => 2
                                 ]
                             ],
                             [
                                 'label'=>'CRM',
-                                'name'=> 4.3,
+                                'name'=> 5.3,
                                 'options'=>[
                                     [
                                         'label'=>'Not at all successful',
@@ -534,15 +558,15 @@ return [
                                     ],
                                 ],
                                 'show' => [
-                                    'question' => 3,
-                                    'answer' => 3.3,
+                                    'question' => 4,
+                                    'answer' => 4.3,
                                     'operator' => '>',
                                     'value' => 2
                                 ]
                             ],
                             [
                                 'label'=>'ERP',
-                                'name'=> 4.4,
+                                'name'=> 5.4,
                                 'options'=>[
                                     [
                                         'label'=>'Not at all successful',
@@ -571,15 +595,15 @@ return [
                                     ],
                                 ],
                                 'show' => [
-                                    'question' => 3,
-                                    'answer' => 3.4,
+                                    'question' => 4,
+                                    'answer' => 4.4,
                                     'operator' => '>',
                                     'value' => 2
                                 ]
                             ],
                             [
                                 'label'=>'Digital Design (CAD,CAE, CAM etc)',
-                                'name'=> 4.5,
+                                'name'=> 5.5,
                                 'options'=>[
                                     [
                                         'label'=>'Not at all successful',
@@ -608,15 +632,15 @@ return [
                                     ],
                                 ],
                                 'show' => [
-                                    'question' => 3,
-                                    'answer' => 3.5,
+                                    'question' => 4,
+                                    'answer' => 4.5,
                                     'operator' => '>',
                                     'value' => 2
                                 ]
                             ],
                             [
                                 'label'=>'PLM software',
-                                'name'=> 4.6,
+                                'name'=> 5.6,
                                 'options'=>[
                                     [
                                         'label'=>'Not at all successful',
@@ -645,15 +669,15 @@ return [
                                     ],
                                 ],
                                 'show' => [
-                                    'question' => 3,
-                                    'answer' => 3.6,
+                                    'question' => 4,
+                                    'answer' => 4.6,
                                     'operator' => '>',
                                     'value' => 2
                                 ]
                             ],
                             [
                                 'label'=>'Simulation software',
-                                'name'=> 4.7,
+                                'name'=> 5.7,
                                 'options'=>[
                                     [
                                         'label'=>'Not at all successful',
@@ -682,15 +706,15 @@ return [
                                     ],
                                 ],
                                 'show' => [
-                                    'question' => 3,
-                                    'answer' => 3.7,
+                                    'question' => 4,
+                                    'answer' => 4.7,
                                     'operator' => '>',
                                     'value' => 2
                                 ]
                             ],
                             [
                                 'label'=>'Analytics software',
-                                'name'=> 4.8,
+                                'name'=> 5.8,
                                 'options'=>[
                                     [
                                         'label'=>'Not at all successful',
@@ -719,8 +743,8 @@ return [
                                     ],
                                 ],
                                 'show' => [
-                                    'question' => 3,
-                                    'answer' => 3.8,
+                                    'question' => 4,
+                                    'answer' => 4.8,
                                     'operator' => '>',
                                     'value' => 2
                                 ]
@@ -748,10 +772,10 @@ return [
             'page1' => [
                 'title' => 'Digital Design',
                 'questions' => [
-                    'q5'=>[
+                    'q6'=>[
                         'type'=>'button',
                         'question'=>'Which statement best describes how your organization tends to roll out CAD/CAM applications or updates?',
-                        'name'=> 5,
+                        'name'=> 6,
                         'options'=>[
                             [
                                 'label'=>'Our IT department does this manually on an ad-hoc basis',
@@ -785,10 +809,10 @@ return [
             'page2' => [
                 'title' => 'Digital Design',
                 'questions' => [
-                    'q6'=>[
+                    'q7'=>[
                         'type'=>'button',
                         'question'=>'How old since release is the version of Digital Design application that is most commonly deployed in your organisation?',
-                        'name'=> 6,
+                        'name'=> 7,
                         'options'=>[
                             [
                                 'label'=>'Less than six months',
@@ -822,7 +846,7 @@ return [
             'page3' => [
                 'title' => 'Digital Design',
                 'questions' => [
-                    'q7'=>[
+                    'q8'=>[
                         'type'=>'groupbutton',
                         'calc'=>[
                             'type'=>'average'
@@ -835,11 +859,11 @@ return [
                             'Very successful',
                         ],
                         'question'=>'On a scale of 1 to 5, how successfully does your Digital Design solution rate for the following? ',
-                        'name'=> 7,
+                        'name'=> 8,
                         'options'=>[
                             [
                                 'label'=>'Reliability',
-                                'name'=> 7.1,
+                                'name'=> 8.1,
                                 'options'=>[
                                     [
                                         'label'=>'Not at all successful',
@@ -870,7 +894,7 @@ return [
                             ],
                             [
                                 'label'=>'Scalability',
-                                'name'=> 7.2,
+                                'name'=> 8.2,
                                 'options'=>[
                                     [
                                         'label'=>'Not at all successful',
@@ -901,7 +925,7 @@ return [
                             ],
                             [
                                 'label'=>'Performance',
-                                'name'=> 7.3,
+                                'name'=> 8.3,
                                 'options'=>[
                                     [
                                         'label'=>'Not at all successful',
@@ -932,7 +956,7 @@ return [
                             ],
                             [
                                 'label'=>'Industry platfom for ecosystem support',
-                                'name'=> 7.4,
+                                'name'=> 8.4,
                                 'options'=>[
                                     [
                                         'label'=>'Not at all successful',
@@ -963,7 +987,7 @@ return [
                             ],
                             [
                                 'label'=>'Value for money',
-                                'name'=> 7.5,
+                                'name'=> 8.5,
                                 'options'=>[
                                     [
                                         'label'=>'Not at all successful',
@@ -994,7 +1018,7 @@ return [
                             ],
                             [
                                 'label'=>'Manageability',
-                                'name'=> 7.6,
+                                'name'=> 8.6,
                                 'options'=>[
                                     [
                                         'label'=>'Not at all successful',
@@ -1025,7 +1049,7 @@ return [
                             ],
                             [
                                 'label'=>'Features',
-                                'name'=> 7.7,
+                                'name'=> 8.7,
                                 'options'=>[
                                     [
                                         'label'=>'Not at all successful',
@@ -1056,7 +1080,7 @@ return [
                             ],
                             [
                                 'label'=>'Collaboration',
-                                'name'=> 7.8,
+                                'name'=> 8.8,
                                 'options'=>[
                                     [
                                         'label'=>'Not at all successful',
@@ -1087,7 +1111,7 @@ return [
                             ],
                             [
                                 'label'=>'Security',
-                                'name'=> 7.9,
+                                'name'=> 8.9,
                                 'options'=>[
                                     [
                                         'label'=>'Not at all successful',
@@ -1139,10 +1163,10 @@ return [
             'page1' => [
                 'title' => 'Digital Delivery',
                 'questions' => [
-                    'q8'=>[
+                    'q9'=>[
                         'type'=>'button',
                         'question'=>'How does the Senior Management of the company view the role of IT within the business?',
-                        'name'=> 8,
+                        'name'=> 9,
                         'options'=>[
                             [
                                 'label'=>'IT is seen as a necessary cost',
@@ -1162,50 +1186,50 @@ return [
                         ],
                         'skipNext' => [
                             [
-                                'q' => 'q3',
-                                'question' => 3.1,
+                                'q' => 'q4',
+                                'question' => 4.1,
                                 'operator' => '<',
                                 'value' => 2
                             ],
                             [
-                                'q' => 'q3',
-                                'question' => 3.2,
+                                'q' => 'q4',
+                                'question' => 4.2,
                                 'operator' => '<',
                                 'value' => 2
                             ],
                             [
-                                'q' => 'q3',
-                                'question' => 3.3,
+                                'q' => 'q4',
+                                'question' => 4.3,
                                 'operator' => '<',
                                 'value' => 2
                             ],
                             [
-                                'q' => 'q3',
-                                'question' => 3.4,
+                                'q' => 'q4',
+                                'question' => 4.4,
                                 'operator' => '<',
                                 'value' => 2
                             ],
                             [
-                                'q' => 'q3',
-                                'question' => 3.5,
+                                'q' => 'q4',
+                                'question' => 4.5,
                                 'operator' => '<',
                                 'value' => 2
                             ],
                             [
-                                'q' => 'q3',
-                                'question' => 3.6,
+                                'q' => 'q4',
+                                'question' => 4.6,
                                 'operator' => '<',
                                 'value' => 2
                             ],
                             [
-                                'q' => 'q3',
-                                'question' => 3.7,
+                                'q' => 'q4',
+                                'question' => 4.7,
                                 'operator' => '<',
                                 'value' => 2
                             ],
                             [
-                                'q' => 'q3',
-                                'question' => 3.8,
+                                'q' => 'q4',
+                                'question' => 4.8,
                                 'operator' => '<',
                                 'value' => 2
                             ],    
@@ -1216,7 +1240,7 @@ return [
             'page2' => [
                 'title' => 'Digital Delivery',
                 'questions' => [
-                    'q9'=>[
+                    'q10'=>[
                         'type'=>'groupbutton',
                         'calc'=>[
                             'type'=>'average'
@@ -1227,11 +1251,11 @@ return [
                             'Public Cloud Provider service',
                         ],
                         'question'=>'Please indicate how your organization is primarily delivering (or plans to deliver) each of the following application types to end users? Select one for each',
-                        'name'=> 9,
+                        'name'=> 10,
                         'options'=>[
                             [
                                 'label'=>'Productivity (email, word processing, spreadsheets, presentations etc)',
-                                'name'=> 9.1,
+                                'name'=> 10.1,
                                 'options'=>[
                                     [
                                         'label'=>'In-house (on-premises) solution',
@@ -1250,15 +1274,15 @@ return [
                                     ]
                                 ],
                                 'show' => [
-                                    'question' => 3,
-                                    'answer' => 3.1,
+                                    'question' => 4,
+                                    'answer' => 4.1,
                                     'operator' => '>',
                                     'value' => 1
                                 ]
                             ],
                             [
                                 'label'=>'Collaboration (File sharing, VoIP, Video Conferencing etc))',
-                                'name'=> 9.2,
+                                'name'=> 10.2,
                                 'options'=>[
                                     [
                                         'label'=>'In-house (on-premises) solution',
@@ -1277,15 +1301,15 @@ return [
                                     ]
                                 ],
                                 'show' => [
-                                    'question' => 3,
-                                    'answer' => 3.2,
+                                    'question' => 4,
+                                    'answer' => 4.2,
                                     'operator' => '>',
                                     'value' => 1
                                 ]
                             ],
                             [
                                 'label'=>'CRM',
-                                'name'=> 9.3,
+                                'name'=> 10.3,
                                 'options'=>[
                                     [
                                         'label'=>'In-house (on-premises) solution',
@@ -1304,15 +1328,15 @@ return [
                                     ]
                                 ],
                                 'show' => [
-                                    'question' => 3,
-                                    'answer' => 3.3,
+                                    'question' => 4,
+                                    'answer' => 4.3,
                                     'operator' => '>',
                                     'value' => 1
                                 ]
                             ],
                             [
                                 'label'=>'ERP',
-                                'name'=> 9.4,
+                                'name'=> 10.4,
                                 'options'=>[
                                     [
                                         'label'=>'In-house (on-premises) solution',
@@ -1331,15 +1355,15 @@ return [
                                     ]
                                 ],
                                 'show' => [
-                                    'question' => 3,
-                                    'answer' => 3.4,
+                                    'question' => 4,
+                                    'answer' => 4.4,
                                     'operator' => '>',
                                     'value' => 1
                                 ]
                             ],
                             [
                                 'label'=>'Digital Design (CAD,CAE, CAM etc)',
-                                'name'=> 9.5,
+                                'name'=> 10.5,
                                 'options'=>[
                                     [
                                         'label'=>'In-house (on-premises) solution',
@@ -1358,15 +1382,15 @@ return [
                                     ]
                                 ],
                                 'show' => [
-                                    'question' => 3,
-                                    'answer' => 3.5,
+                                    'question' => 4,
+                                    'answer' => 4.5,
                                     'operator' => '>',
                                     'value' => 1
                                 ]
                             ],
                             [
                                 'label'=>'PLM software',
-                                'name'=> 9.6,
+                                'name'=> 10.6,
                                 'options'=>[
                                     [
                                         'label'=>'In-house (on-premises) solution',
@@ -1385,15 +1409,15 @@ return [
                                     ]
                                 ],
                                 'show' => [
-                                    'question' => 3,
-                                    'answer' => 3.6,
+                                    'question' => 4,
+                                    'answer' => 4.6,
                                     'operator' => '>',
                                     'value' => 1
                                 ]
                             ],
                             [
                                 'label'=>'Simulation software',
-                                'name'=> 9.7,
+                                'name'=> 10.7,
                                 'options'=>[
                                     [
                                         'label'=>'In-house (on-premises) solution',
@@ -1412,15 +1436,15 @@ return [
                                     ]
                                 ],
                                 'show' => [
-                                    'question' => 3,
-                                    'answer' => 3.7,
+                                    'question' => 4,
+                                    'answer' => 4.7,
                                     'operator' => '>',
                                     'value' => 1
                                 ]
                             ],
                             [
                                 'label'=>'Analytics software',
-                                'name'=> 9.8,
+                                'name'=> 10.8,
                                 'options'=>[
                                     [
                                         'label'=>'In-house (on-premises) solution',
@@ -1439,8 +1463,8 @@ return [
                                     ]
                                 ],
                                 'show' => [
-                                    'question' => 3,
-                                    'answer' => 3.8,
+                                    'question' => 4,
+                                    'answer' => 4.8,
                                     'operator' => '>',
                                     'value' => 1
                                 ]
@@ -1452,10 +1476,10 @@ return [
             'page3' =>[
                 'title' => 'Digital Delivery',
                 'questions' => [
-                    'q10'=>[
+                    'q11'=>[
                         'type'=>'button',
                         'question'=>'Which statement best represents your organization\'s approach to adopting Cloud services for delivering IT services or applications? [RANDOMIZE LIST]',
-                        'name'=> 10,
+                        'name'=> 11,
                         'options'=>[
                             [
                                 'label'=>'We prefer to run everything in-house',

@@ -1,0 +1,21 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 566.93 539.93">
+  <defs>
+    <clipPath id="clip-path">
+      <path d="M371.65,18.08V93A106.13,106.13,0,1,1,265.89,212.38l-74.19,9.11C203,313.42,279,380.7,371.65,380.7a181.31,181.31,0,1,0,0-362.62Z" style="fill: none"/>
+    </clipPath>
+  </defs>
+  <title>stat</title>
+  <g>
+    <path d="M265.07,199.13A106.13,106.13,0,0,1,371.2,93h.45V18.08A181.3,181.3,0,0,0,191.7,221.49l74.19-9.11A107.49,107.49,0,0,1,265.07,199.13Z" style="fill: #dfdfdf"/>
+    <g style="clip-path: url(#clip-path)">
+      <g>
+        <rect x="185.88" y="17.6" width="435.31" height="91.08" style="fill: #f0ab00"/>
+        <rect x="185.88" y="108.81" width="435.31" height="91.08" style="fill: #ed9101"/>
+        <rect x="185.88" y="200.02" width="435.31" height="91.08" style="fill: #e77801"/>
+        <rect x="185.88" y="291.23" width="435.31" height="91.08" style="fill: #e35400"/>
+      </g>
+    </g>
+  </g>
+  <text transform="translate(21.71 379.64)" style="font-size: 86px;font-family: BentonSans-Bold, BentonSans;font-weight: 700">79%</text>
+  <text transform="translate(21.71 431.78)" style="font-size: 35px;font-family: BentonSans">of business leaders are under <tspan x="0" y="42">pressure to execute a successful </tspan><tspan x="0" y="84">digital transformation</tspan></text>
+</svg>

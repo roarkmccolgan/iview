@@ -42,6 +42,11 @@ module.exports = {
 			'./resources/assets/js/vmware/main.js',
 			'./resources/assets/css/vmware/main.css'
 		],
+		sapagile: [
+			"babel-polyfill",
+			'./resources/assets/js/sapagile/main.js',
+			'./resources/assets/css/sapagile/main.css'
+		],
 	},
 	stats: {
 		children: false,

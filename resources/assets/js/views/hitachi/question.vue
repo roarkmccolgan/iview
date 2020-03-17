@@ -205,7 +205,7 @@ export default{
 			if(this.isGroup){
 				// if(this.answer.length>0){
 				if(this.currentQuestion.type == 'groupcheckbox'){
-				
+					console.log('dude');
 				}else if(this.currentQuestion.type == 'groupopposingslider'){
 					var exists = false;
 					for (var i = this.answer.length - 1; i >= 0; i--) {

@@ -2278,15 +2278,15 @@ class PdfController extends Controller
              );
 
             $customCopy.= trans(session('product.alias').'.question1');
-            $q1score = $this->getQuestionScoreNew(1, 'digital-business', 1);
+            $q1score = $this->getQuestionScoreNew(2, 'digital-business', 1);
             $customCopy.= trans(session('product.alias').'.digital-business-'.$overallNumber.'-q1-'.$q1score);
 
             $customCopy.= trans(session('product.alias').'.question2');
-            $q2score = $this->getQuestionScoreNew(2, 'digital-business', 2);
+            $q2score = $this->getQuestionScoreNew(3, 'digital-business', 2);
             $customCopy.= trans(session('product.alias').'.digital-business-'.$overallNumber.'-q2-'.$q2score);
             
             $customCopy.= trans(session('product.alias').'.question3');
-            $q3score = $this->getQuestionScoreNew(3, 'digital-business', 3);
+            $q3score = $this->getQuestionScoreNew(4, 'digital-business', 3);
             if($q3score < 2){
                 $customCopy.= trans(session('product.alias').'.digital-business-'.$overallNumber.'-q3-1');
             }elseif($q3score == 2){
@@ -2298,7 +2298,7 @@ class PdfController extends Controller
             }
 
             $customCopy.= trans(session('product.alias').'.question4');
-            $q4score = $this->getQuestionScoreNew(4, 'digital-business', 4);
+            $q4score = $this->getQuestionScoreNew(5, 'digital-business', 4);
             if($q4score < 2){
                 $customCopy.= trans(session('product.alias').'.digital-business-'.$overallNumber.'-q4-1');
             }elseif($q4score == 2){
@@ -2374,11 +2374,11 @@ class PdfController extends Controller
             );
             
             $customCopy.= trans(session('product.alias').'.question5');
-            $q5score = $this->getQuestionScoreNew(5, 'digital-design', 1);
+            $q5score = $this->getQuestionScoreNew(6, 'digital-design', 1);
             $customCopy.= trans(session('product.alias').'.digital-design-'.$overallNumber.'-q5-'.$q5score);
 
             $customCopy.= trans(session('product.alias').'.question6');
-            $q6score = $this->getQuestionScoreNew(6, 'digital-design', 2);
+            $q6score = $this->getQuestionScoreNew(7, 'digital-design', 2);
             if($q6score < 2){
                 $customCopy.= trans(session('product.alias').'.digital-design-'.$overallNumber.'-q6-1');
             }elseif($q6score >= 2 && $q6score < 3){
@@ -2392,7 +2392,7 @@ class PdfController extends Controller
             }
 
             $customCopy.= trans(session('product.alias').'.question7');
-            $q7score = $this->getQuestionScoreNew(7, 'digital-design', 3);
+            $q7score = $this->getQuestionScoreNew(8, 'digital-design', 3);
             if($q7score < 2){
                 $customCopy.= trans(session('product.alias').'.digital-design-'.$overallNumber.'-q7-1');
             }elseif($q7score >= 2 && $q7score < 3){
@@ -2469,11 +2469,11 @@ class PdfController extends Controller
                 ]
             );
             $customCopy.= trans(session('product.alias').'.question8');
-            $q8score = $this->getQuestionScoreNew(8, 'digital-delivery', 1);
+            $q8score = $this->getQuestionScoreNew(9, 'digital-delivery', 1);
             $customCopy.= trans(session('product.alias').'.digital-delivery-'.$overallNumber.'-q8-'.$q8score);
 
             $customCopy.= trans(session('product.alias').'.question9');
-            $q9score = $this->getQuestionScoreNew(9, 'digital-delivery', 2);
+            $q9score = $this->getQuestionScoreNew(10, 'digital-delivery', 2);
 
             if($q9score < 2){
                 $customCopy.= trans(session('product.alias').'.digital-delivery-'.$overallNumber.'-q9-1');
@@ -2486,7 +2486,7 @@ class PdfController extends Controller
             }
 
             $customCopy.= trans(session('product.alias').'.question10');
-            $q10score = $this->getQuestionScoreNew(10, 'digital-delivery', 3);
+            $q10score = $this->getQuestionScoreNew(11, 'digital-delivery', 3);
             $customCopy.= trans(session('product.alias').'.digital-delivery-'.$overallNumber.'-q10-'.$q10score);
 
             $customCopy.= '<div class="pb"></div>';

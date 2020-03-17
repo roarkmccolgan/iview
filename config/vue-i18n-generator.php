@@ -38,6 +38,7 @@ return [
        'dassault',
        'hitachi',
        'vmware',
+       'sapagile',
     ],
 
     /*

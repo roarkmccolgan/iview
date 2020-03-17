@@ -50,11 +50,11 @@
 										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="email">
 											{{ $t('general.email') }}
 										</label>
-										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-2" :class="[errors.email ? 'border-red' : '']" id="email" name="email" type="email" @blur="hasError">
+										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-2" :class="[errors.email ? 'border-red' : '']" id="email" name="email" type="email" @blur="hasError" :value="assessment.questions.q1.selected">
 										<p class="text-red text-xs italic" v-show="errors.email" v-html="$t('general.errorEmail')"></p>
 									</div>
 								</div>
-								<div class="mb-6 sm:w-1/2">
+								<!-- <div class="mb-6 sm:w-1/2">
 									<div class="ml-2">
 										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="tel">
 											{{ $t('general.phone') }}
@@ -62,8 +62,8 @@
 										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-2" :class="[errors.tel ? 'border-red' : '']" id="tel" name="phone" type="tel" @blur="hasError">
 										<p class="text-red text-xs italic" v-show="errors.tel" v-html="$t('general.errorPhone')"></p>
 									</div>
-								</div>
-								<div class="mb-6 sm:w-1/2">
+								</div> -->
+								<!-- <div class="mb-6 sm:w-1/2">
 									<div class="mr-2">
 										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="position">
 											{{ $t('general.title') }}
@@ -71,7 +71,7 @@
 										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-2" :class="[errors.position ? 'border-red' : '']" id="position" name="title" type="text" @blur="hasError">
 										<p class="text-red text-xs italic" v-show="errors.position" v-html="$t('general.errorTitle')"></p>
 									</div>
-								</div>
+								</div> -->
 								<div class="mb-6 sm:w-1/2">
 									<div class="ml-2">
 										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="company">
@@ -81,7 +81,7 @@
 										<p class="text-red text-xs italic" v-show="errors.company" v-html="$t('general.errorCompany')"></p>
 									</div>
 								</div>
-								<div class="mb-6 sm:w-1/2">
+								<!-- <div class="mb-6 sm:w-1/2">
 									<div class="mr-2">
 										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="company_size">
 											{{ $t('general.employees') }}
@@ -104,8 +104,8 @@
 										</div>
 										<p class="text-red text-xs italic" v-show="errors.company_size" v-html="$t('general.errorEmployees')"></p>
 									</div>
-								</div>
-								<div class="mb-6 sm:w-1/2">
+								</div> -->
+								<!-- <div class="mb-6 sm:w-1/2">
 									<div class="ml-2">
 										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="industry">
 											{{ $t('general.industry') }}
@@ -133,7 +133,7 @@
 										</div>
 										<p class="text-red text-xs italic" v-show="errors.industry" v-html="$t('general.errorEmployees')"></p>
 									</div>
-								</div>
+								</div> -->
 								<div class="mb-6 sm:w-1/2">
 									<div class="">
 										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="country">

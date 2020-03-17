@@ -73,6 +73,9 @@ return array(
     'digital-business' => [
         'title'=> 'Digital Business',
     ],
+    'screener' => [
+        'title'=> 'Screener',
+    ],
     'digital-design' => [
         'title'=> 'Digital Design',
     ],

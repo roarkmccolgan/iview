@@ -35,6 +35,9 @@
 					</div>
 				</transition>
 				
+				<template v-if="currentQuestion.type == 'text'">
+					<question-input :question="currentQuestion" @input="changeValue" :qname="currentQuestion.qKey" :answer="textAnswer"></question-input>
+				</template>
 				<template v-if="currentQuestion.type == 'button' || currentQuestion.type == 'checkbox'">
 					<question-button :question="currentQuestion" :the-options="currentQuestion.options" v-on:selectOption="selectOption" :showDetails="showDetails" :qname="currentQuestion.qKey" :answer="answer"></question-button>
 				</template>
@@ -69,6 +72,7 @@ import faArrowLeft from '@fortawesome/fontawesome-pro-regular/faArrowLeft';
 import faSpinnerThird from '@fortawesome/fontawesome-pro-regular/faSpinnerThird';
 
 //Question components
+import QuestionInput from '../../components/dassault/QuestionInput.vue';
 import QuestionButton from '../../components/dassault/QuestionButton.vue';
 import QuestionSlider from '../../components/dassault/QuestionSlider.vue';
 import GroupSlider from '../../components/dassault/GroupSlider.vue';
@@ -92,6 +96,7 @@ export default{
 			showNext: false,
 			showDetails: true,
 			answer: [],
+			textAnswer: '',
 			saving: false,
 			normalButton: 'block w-full py-4 px-4 text-center bg-dassault-blue text-white',
 			disabledButton: 'block w-full py-4 px-4 text-center bg-dassault-blue text-white opacity-50 cursor-not-allowed',
@@ -289,6 +294,14 @@ export default{
 				}
 			}
 		},
+		changeValue: function(value){
+			this.showNext = value.valid
+			if(value.valid)	{
+				this.answer = value.answer;
+			}else{
+				this.answer = '';
+			}
+		},
 		back: function(){
 			var previousQ = Number(this.$route.params.question)+1;
 			this.showDetails = false;
@@ -381,6 +394,7 @@ export default{
 	components: {
 		FontAwesomeIcon,
 		QuestionButton,
+		QuestionInput,
 		QuestionSlider,
 		GroupSlider,
 		GroupButton,
