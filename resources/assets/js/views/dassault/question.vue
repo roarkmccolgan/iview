@@ -356,8 +356,9 @@ export default{
 					}
 				}
 			}
+			let filteredShouldSkip = shouldSkip.filter(Boolean);
 
-			if(shouldSkip.length == this.questions['q'+next].options.length){
+			if(filteredShouldSkip.length == this.questions['q'+next].options.length){
 				console.log('shouldskip');
 				let answer = [];
 				for (var j = this.questions['q'+next].options.length - 1; j >= 0; j--) {
