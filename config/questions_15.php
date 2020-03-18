@@ -108,7 +108,7 @@ return [
                             '4',
                             '5 Very quickly',
                         ],
-                        'question'=>'To what extent do you make use of the following in your network/infrastructure?',
+                        'question'=>'How fast can planning changes be implemented across different departments?',
                         'name'=> 3,
                         'options'=>[
                             [
@@ -742,7 +742,7 @@ return [
                 'title' => 'People Experience (HR)',
                 'questions' => [
                     'q15'=>[
-                        'type'=>'button',
+                        'type'=>'checkbox',
                         'question'=>'How do you measure your employee performance? (Select all that apply)*',
                         'help' => '<sup>*</sup>Higher weighting on the last three areas – 2-3 – and only 1 point on the first three areas.',
                         'name'=> 15,

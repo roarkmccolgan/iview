@@ -19,6 +19,12 @@
 								<div class="border-t-2 border-sap-blue flex-grow metropolislight" v-show="qkey !== ('q'+Object.keys(questions).length)"></div>
 							</template>
 						</div>
+						<div class="flex items-center px-4 my-2 mt-4">
+							<template v-for="(section, secKey) in questionsBySection">
+								<div class="flex-1 text-center rounded h-1 overflow-hidden" :class="[section.section == currentQuestion.section ? 'bg-sap-yellow' : 'bg-grey-light',secKey == 0 ? 'ml-2 cmr' : (secKey == questionsBySection.length - 1 ? 'mr-2 cml' : 'cmx')]">
+								</div>
+							</template>
+						</div>
 					</div>
 					<div class="flex-grow block sm:hidden px-4">
 						<span class="text-sm text-grey-darker">{{ $t('general.question') | toTitle}} {{currentQuestion.name}} {{$t('general.of')}} {{totalQuestions}}</span>
@@ -129,6 +135,29 @@ export default{
 		},
 		buttonClass: function(){
 			return this.saving == true ? this.disabledButton : this.normalButton;
+		},
+		questionsBySection: function(){
+			let questions = Object.values(this.questions);
+			let result = [];
+			questions.forEach(q => {
+				var section = q.section;
+				var index = false;
+				result.forEach((r,i) =>{
+					if(r.section == section){
+						index = i;
+					}
+				});
+				if(index !== false){
+					result[index].total++
+				}else{
+					result.push({
+						section: section,
+						title: q.title,
+						total: 1
+					});
+				}
+			});
+			return result;
 		}
 	},
 	methods: {
@@ -396,3 +425,15 @@ export default{
 	}
 }
 </script>
+<style scoped>
+	.cml{
+		margin-left: 2.4rem;
+	}
+	.cmr{
+		margin-right: 2.4rem;
+	}
+	.cmx{
+		margin-left: 2.4rem;
+		margin-right: 2.4rem;
+	}
+</style>
