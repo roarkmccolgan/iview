@@ -1,9 +1,9 @@
 <template>
 	<div class="flex-grow">
-		<div class="container mx-auto bg-contain sm:bg-cover bg-top bg-no-repeat pt-36 sm:pt-18 pb-4" :style="`background-image: url('/images/tools/${assessment.tool.id}/homepage.jpg')`">
+		<div class="container mx-auto bg-contain sm:bg-cover bg-top bg-no-repeat pt-36 sm:pt-16 pb-4" :style="`background-image: url('/images/tools/${assessment.tool.id}/homepage.jpg')`">
 				<div class="w-full sm:w-1/2 sm:mb-24 p-5 sm:p-10">
-					<h1 class="text-grey-darkest metropolislight leading-tight">{{ $t('vmware.title') }}</h1>
-					<h3 class="text-grey-darkest metropolislight leading-tight">{{ $t('vmware.sub-title') }}</h3>
+					<h1 class="text-grey-darkest font-light font-sapagile text-3xl sm:text-5xl leading-none mb-2">{{ $t('vmware.title') }}</h1>
+					<h3 class="text-grey-darkest font-sapagile leading-tight">{{ $t('vmware.sub-title') }}</h3>
 				</div>
 		</div>
 		<div class="hrcolor p-1"></div>

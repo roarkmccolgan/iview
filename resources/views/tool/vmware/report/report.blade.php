@@ -15,9 +15,6 @@ $manifest = json_decode($json, TRUE);
 	</head>
 	<body class="font-report font-light text-xs text-grey-darker leading-normal">
 		<div class="w-5/6 mx-auto">
-			{!!$introduction!!}
-		</div>
-		<div class="w-5/6 mx-auto">
 			{!!$sectionCopy!!}
 		</div>
 		<script type="text/javascript">

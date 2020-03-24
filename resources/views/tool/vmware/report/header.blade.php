@@ -1,3 +1,8 @@
+<?php
+$json_url = public_path("manifest.json");
+$json = file_get_contents($json_url);
+$manifest = json_decode($json, TRUE);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,12 +11,15 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<title>PDF Report</title>
+	<link rel="stylesheet" href="{{ asset('bundle/'.$manifest['vmware'][0])}}">
 </head>
 <body>
-
-<div style="width: 83.33333%; margin: 0 auto; padding-bottom: 5mm; text-align: right;">
-	<img class="mb-6" src="{{ asset('images/tools/8/idc.png')}}" alt="" style="width: 40mm; height: 7.69mm" />
+<div class="w-5/6 mx-auto clearfix text-vmware-blue text-sm">
+	<div class="w-1/2 float-left">{{ trans('vmware.title') }}</div>
+	<div class="w-1/2 float-left text-right">
+		<img class="" src="{{ asset('images/tools/8/idc.png')}}" alt="" style="width: 40mm; height: 7.69mm" />
+	</div>
 </div>
-<div style="width: 84%; margin: 0 auto; border-top: 1px solid #274483"></div>
+<div class="w-5/6 mx-auto border-b border-grey mt-4"></div>
 </body>
 </html>

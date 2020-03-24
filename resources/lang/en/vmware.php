@@ -6,7 +6,7 @@ return array(
     'sponsoredby'=>'Sponsored by',
     'restart'=>'Restart Assessment',
     'assoc'=>'In association with',
-    'sponsors'=>'VMare',
+    'sponsors'=>'VMware',
 
     'change-langauge'=>'Change language',
     'further-insight'=>'More information',
@@ -15,13 +15,14 @@ return array(
     'title'=>'Security by design enabled by the network',
     'sub-title'=>'An IDC Assessment, sponsored by VMware',
     'landing'=>'
+        <h3>Is your Network Ready for the Digital Future?</h3>
         <p class="mb-2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum ultricies massa, ac hendrerit sapien mattis egestas. Proin bibendum, sapien blandit egestas convallis, mi lacus sodales turpis, sed ultrices diam ligula vitae augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+            IDC, a global leading provider of technology market research, has developed the secure-by-design network assessment, sponsored by WMware, to help organizations assess the state of their network as they embrace digital transformation.
         </p>
         <p class="mb-2">
-            Nullam sed efficitur augue, vel laoreet turpis. Nulla facilisi. Pellentesque mollis, nunc id mollis pulvinar, purus odio tincidunt lacus, ac egestas urna felis at enim.
+            This self-assessment tool is backed up by independent end-user research and IDC\'s in depth understanding of this market. Upon completion of a short survey (10 minutes) you will receive a custom report that benchmarks your organization\'s Network maturity and provides you with essential and tailored guidance to help you prepare for the requirements of tomorrow and plot your course to network transformation.
         </p>',
-    'startbut'=>'Start Assessment',
+    'startbut'=>'Begin assessment',
     
     'send'=>'We can send you the full results directly to your mailbox',
     'register'=>'Register now to receive your personalized report',
@@ -42,14 +43,14 @@ return array(
         'title'=> 'Security-enabled Networking',
     ],
 
-    'stage1' => 'Beginner',
-    'stage2' => 'Intermediate',
-    'stage3' => 'Advanced',
+    'stage1' => 'Network Follower',
+    'stage2' => 'Network Generalist',
+    'stage3' => 'Network Leader',
 
     'finishtxtheading' => '
-        Thank you for completing the IDC Security by design Assessment.
+        Thank you for completing the secure-by-design network assessment.
     ',
-    'finishtxt1' => 'Based on your total responses, you rank as a',
+    'finishtxt1' => 'Based on your responses, you rank as a',
     'finishtxtstage1' => '
         which is the lowest level of three in this assessment.
     ',
@@ -60,1467 +61,1360 @@ return array(
         which is the highest level of three in this assessment.
     ',
     'finishtxt2' => '
-        <p class="mb-2 mt-4">Would you like the full report that provides you with essential guidance for advancing in your security journey? </p>
-        <p class="mb-4">We can send this directly to your mailbox. Just provide us your details and we\'ll send it to you.</p>
+        <p class="mb-2 mt-4">Please tell us a little about yourself and immediately receive your personalized report including:</p>
+        <ul>
+            <li>How you compare against your peers based on industry, organizational size, and geographic region</li>
+            <li>Essential guidance on where to focus your network efforts</li>
+            <li>Why the associated business benefits will make this a business priority today</li>
+        </ul>
     ',
     'complete_thankyou' => 'Thank you :Fname,',
     'complete_body' => '
         Your custom report will arrive in your inbox soon.<br/>
         Please check in your junk folder if you don\'t receive it within 5 minutes.<br/><br/>
-        <a class="btn btn--primary" target="_blank" href="https://www.3ds.com/3dexperience/cloud/">
+        <a class="btn btn--primary" target="_blank" href="https://www.vmware.com/solutions/virtual-cloud-network.html">
             Click here for more information
         </a>',
     'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @3ds. Interested? ',// http://bit.ly/2gslXEh
     'email'=>[
-        'subject' => 'Dassault Systèmes Digital Maturity Assessment',
+        'subject' => 'VMware Digital Maturity Assessment',
         'hi' => 'Hi :Fname',
-        'body' => 'As promised, here\'s a link to download your Dassault Systèmes Digital Maturity Assessment Report.',
+        'body' => 'As promised, here\'s a link to download your VMware Digital Maturity Assessment Report.',
         'link' => 'Download Report',
-        'extra' => 'Once you\'ve read the report why not visit Dassault Systèmes <a href="https://www.3ds.com/3dexperience/cloud/" style="color:#054683">3DS</a>',
+        'extra' => 'Once you\'ve read the report why not visit VMware <a href="https://www.vmware.com/solutions/virtual-cloud-network.html" style="color:#054683">3DS</a>',
         'regards' => 'Regards',
         'team' => 'The IDC Team'
     ],
     'introduction' => '
-        <h2 class="text-dassault-blue mb-4">INTRODUCTION</h2>
-        <p class="mb-6">Digital maturity is critical for the success of start-ups and SMBs today. Competing in the global economy for customers, investment and talent requires instant access to world-class applications and IT resources, that scale at the pace of your success. The cloud delivers this the flexibility and scale that underpins digital business success and democratises access to world-class technology, making it available and affordable for startups and SMBs alike. To assess the digital maturity of startups and SMBS, IDC has conducted a survey of 400 organisations across Germany, France, the U.K. and the U.S to understand how digital design and engineering applications are used in startup and SMB organisations. Based on the results, we have grouped the respondents into three categories, digital improver, digital achiever and digital native, to understand what sets the leaders in digital maturity apart from their competitors and which best practices we can learn from them.</p>
-        
-        <h2 class="text-dassault-blue mb-4">SURVEY HIGHLIGHTS</h2>
-        <p class="mb-4">The key priorities for the leading start-ups and SMBs according to the survey are related to profitability. They want to either improve profitability or become profitable, depending on the organization\'s age and stage of development. Managing profitability requires a careful balance between making the necessary investments to drive innovation and keeping costs from spiralling out of control. Aligning business and IT priorities and supporting the business strategy with a flexible IT delivery model supports the journey towards profitability. Additional priorities are increasing brand awareness and accelerating time to market. Using the latest IT applications and tools helps attract talent and create a great experience for employees, customers and partners, which in turn helps to improve brand awareness. Accelerating time to market is typically done by working with agile methods, in short sprints and by getting feedback from the market fast. A cloud-based digital platform can facilitate collaboration across geographically dispersed employees but also across the ecosystem of customer, partners and suppliers. </p>
+        <h2 class="text-vmware-blue mb-4">INTRODUCTION</h2>
+        <p class="mb-6">Thank you for completing the VMware Secure-by-Design Network Advisor, with research and analysis by IDC. As organizations embrace digital transformation and adopt new practices such as cloud, SaaS, and IoT, it is very difficult to effectively secure their IT estate with a perimeter-based solution alone. Indeed, the sheer scale and changing nature of the threat environment mean that security breaches will happen — and this requires a new posture on security: one that is focused on near-real-time breach detection, containment, and mitigation.</p>
+        <p class="mb-4">Enterprise networks play a critical role in enabling this new security posture. New networking tools such as software-defined networking, microsegmentation, and advanced monitoring enable end-to-end visibility across the entire infrastructure and into the cloud. However, moving from an existing network state to an intelligent, secure-by-design network requires careful planning and execution.</p>
 
-        <h2 class="text-dassault-blue mb-4">RANKING EXPLANATION</h2>
-        <div class="w-1/2 float-left">
-            <p class="mb-4">Based on the benchmark survey, <strong>14.5%</strong> of respondents are <strong>Digital Natives</strong>, <strong>50.5%</strong> of respondents are <strong>Digital Achievers</strong> and <strong>35%</strong> of respondents are <strong>Digital Improvers</strong>. This distribution varies within the three categories of digital business, digital design and digital delivery, which make up the digital maturity index. Digital design is the most mature category, with 22% of respondents receiving a top score, while only 12.5% of respondents are top scorers in the digital business category, where dealing with changes in business patterns and staffing levels drive great challenges. Organizations who are better able to deal with fluctuations in business demand and staffing levels are scoring higher than organizations who are relying on rigid IT practices and hence cannot respond in an agile fashion to changing demands. The key to digital maturity is the ability to create great experiences for employees, customers and ecoystem partners through the use of digital technologies. The better an organization is equipped to do this, the better they score in the digital maturity index. </p>
-        </div>
-        <div class="w-1/2 float-left">
-            <div class="m-2"><img src=":rankimg" alt=""></div>
-        </div>
-        <div class="pb clearfix"></div>
-        <div class="spacer"></div>
-        
+        <p class="mb-4">To help organizations assess their network maturity and benchmark against peers, IDC has developed the Secure-by-Design Network Advisor Tool. This interactive self-assessment tool is built on IDC\'s in-depth understanding of enterprise networking and security markets.</p>
+
+        <p class="mb-4">The Secure-by-Design Network Advisor Tool uses a comparison framework which groups organizations into three levels of maturity, based on their approach to: </p>
+        <img src=":approach" style="width: 183.09mm; height:82.9mm" alt="">
+        <p class="mb-4">Based on your responses, this report provides an assessment of your organization\'s approach to secure-by-design networking. It also outlines essential and tailored guidance to help you plan and prepare for your network evolution. </p>        
     ',
     'overallintro'=>'
-        <h2 class="text-dassault-blue mb-6">OVERALL RANKING</h2>
+        <h2 class="text-vmware-blue mb-6">YOUR RESULTS</h2>
         <p class="mb-2">
-            Startups and SMBs can only successfully compete in the global economy if they are digitally "fit" and take advantage of the digital technologies like digital design and engineering apps delivered from the cloud. IDC\'s Digital Maturity Assessment Tool scores startups and SMBs on their digital maturity by looking at three core elements - digital business, digital design and digital delivery. 
+            Organizations can only effectively secure their IT estate in the era of digital transformation if this goes hand in hand with an evolution of their network. IDC has created the Secure-by-Design Network Advisor Tool to help organizations assess the ability of their network to deliver security by design. It scores organizations on their approach to network infrastructure, operations, and security. Based on individual responses we class organizations into three levels of maturity: Followers, Generalists, and Leaders.
         </p>
     ',
     'overallstage1'=>'
         <div class="clearfix">
-            <p class="mb-2 text-dassault-blue mt-4 font-bold">
-                You are at the beginning of your digital journey. Based on your responses to IDC\'s Digital Maturity Assessment Tool, your organization has been rated at the beginner level of three levels of Digital Maturity - Digital Improver.
+            <p class="mb-2 text-vmware-blue mt-4 font-bold">
+                Your organization has been positioned as a Network Follower (Level 1 of 3), which means your organization is generally lagging behind its peers.
             </p>
-            <p class="mb-2 text-dassault-blue mt-4 font-bold">
-                This means you are only just starting with moving to a Digital Future compared to the rest of the industry and there is still much to do to be where you need to be to compete effectively over the longer term."
+        </div>
+        <div class="my-5 relative" style="width:160mm;height:75.79mm; background: url(:url) no-repeat; background-size:cover">
+            <div class="shadow rounded bg-vmware-green absolute" style="width: :overall; height: 10mm; top:15mm; left:33mm;"></div>
+            <div class="shadow rounded bg-vmware-blue-bright absolute" style="width: :network-infrastructure; height: 10mm; top:29mm; left:33mm;"></div>
+            <div class="shadow rounded bg-vmware-blue-bright absolute" style="width: :intelligent-network-operations; height: 10mm; top:43mm; left:33mm;"></div>
+            <div class="shadow rounded bg-vmware-blue-bright absolute" style="width: :security-enabled-networking; height: 10mm; top:57mm; left:33mm;"></div>
+        </div>
+        <div class="clearfix">
+            <p class="mb-2 text-vmware-blue mt-4 font-bold">
+                These results indicate that there is plenty of room for improvement for your organization when it comes to your approach to secure-by-design networking. This report will give you advice on areas to focus on to turn your network into a driver of digital transformation.
             </p>
         </div>
     ',
     'overallstage2'=>'
         <div class="clearfix">
-            <p class="mb-2 text-dassault-blue mt-4 font-bold">
-                You are well under way with your digital journey. Based on your responses to IDC\'s Digital Maturity Assessment Tool, your organization has been rated at the second highest level of Digital Maturity - Digital Achiever. This means your organization is generally in line with the rest of the industry and readying itself for the digital future. While you are doing well, there is still more to do to be fully digital ready.
+            <p class="mb-2 text-vmware-blue mt-4 font-bold">
+                Your organization has been positioned as a Network Generalist (Level 2 of 3), which means your organization is in line with its peers overall.
             </p>
+        </div>
+        <div class="my-5 relative" style="width:160mm;height:75.79mm; background: url(:url) no-repeat; background-size:cover">
+            <div class="shadow rounded bg-vmware-green absolute" style="width: :overall; height: 10mm; top:15mm; left:33mm;"></div>
+            <div class="shadow rounded bg-vmware-blue-bright absolute" style="width: :network-infrastructure; height: 10mm; top:29mm; left:33mm;"></div>
+            <div class="shadow rounded bg-vmware-blue-bright absolute" style="width: :intelligent-network-operations; height: 10mm; top:43mm; left:33mm;"></div>
+            <div class="shadow rounded bg-vmware-blue-bright absolute" style="width: :security-enabled-networking; height: 10mm; top:57mm; left:33mm;"></div>
+        </div>
+        <div class="clearfix">
+            <p>
+                These results indicate that there is room for improvement for your organization when it comes to your approach to secure-by-design networking. This report outlines advice on areas to focus on to turn your network into a driver of digital transformation.
+            </p
         </div>
     ',
     'overallstage3'=>'
         <div class="clearfix">
-            <p class="mb-2 text-dassault-blue mt-4 font-bold">
-                Congratulations! Based on your responses to IDC\'s Digital Maturity Assessment Tool, your organization has been rated at the highest level of Digital Maturity - Digital Native. This means your organization is generally ahead of the industry and blazing a trail to the digital future. Always bear in mind though that you need to keep working at this to stay ahead of the competition!
+            <p class="mb-2 text-vmware-blue mt-4 font-bold">
+                Your organization has been positioned as a Network Leader (Level 3 of 3), which means your organization is ahead of its peers overall.
             </p>
         </div>
-    ',
-    'overallgraph'=>'
-    <div class="ml-8 my-4 inline-block">:graph</div>
-    ',
-    'comparisongraph'=>'
-    <div class="mb-2 text-dassault-blue mt-4 font-bold border-b">How you compare to your peers</div>
-    <div class="mx-auto my-4">:graph</div>
-    ',
-    'overalloutrostage1' => '
+        <div class="my-5 relative" style="width:160mm;height:75.79mm; background: url(:url) no-repeat; background-size:cover">
+            <div class="shadow rounded bg-vmware-green absolute" style="width: :overall; height: 10mm; top:15mm; left:33mm;"></div>
+            <div class="shadow rounded bg-vmware-blue-bright absolute" style="width: :network-infrastructure; height: 10mm; top:29mm; left:33mm;"></div>
+            <div class="shadow rounded bg-vmware-blue-bright absolute" style="width: :intelligent-network-operations; height: 10mm; top:43mm; left:33mm;"></div>
+            <div class="shadow rounded bg-vmware-blue-bright absolute" style="width: :security-enabled-networking; height: 10mm; top:57mm; left:33mm;"></div>
+        </div>
         <div class="clearfix">
-            <p class="mb-2">
-                Your results indicate that there are many areas you can address to improve your Digital Maturity. This report will give you advice on areas to give priority to as you look to progress to the next stage of Digital Maturity, so let\'s turn to the next page and dig into what you can do.
-            </p>
+            <p>
+                These results indicate that there are still some areas that can be improved for your organization when it comes to your approach to secure-by-design networking. This report will give you advice on areas to focus on to turn your network into a driver of digital transformation.
+            </p
         </div>
-        <div class="pb"></div>
-    ',
-    'overalloutrostage2' => '
-        <div class="clearfix">
-            <p class="mb-2">
-                Your results indicate that while you are well under way with your digital journey, there are also areas to address to catch up with the organisations with the best digital maturity. This report will give you advice on areas to give priority to as you look to progress to the next stage of digital maturity, so let\'s turn to the next page and dig into what you can do.
-            </p>
-        </div>
-        <div class="pb"></div>
-    ',
-    'overalloutrostage3' => '
-        <div class="clearfix">
-            <p class="mb-2">
-                Your results indicate that you are at the top of the pile when it comes to Digital Maturity. While this is great, there may be some areas for you to pay attention to stay ahead in the game. This report will give you advice on areas to focus on, so let\'s turn to the next page and dig into what you can do.
-            </p>
-        </div>
-        <div class="pb"></div>
     ',
 
-    'digital-business-intro' => '
-        <h2 class="w-4/5 ml-auto text-dassault-blue mb-6">Digital Business</h2>
+    'network-infrastructure-intro' => '
         <div class="clearfix">
-            <div class="w-1/5 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 25mm;"></div>
+            <div class="w-1/5 h-32 float-left">
+                <div class="bg-center bg-top bg-no-repeat mx-auto" style="background-image: url(:icon); width: 20mm; height:20mm;"></div>
+            </div>
             <div class="w-4/5 float-left">
+                <h2 class="text-vmware-blue mb-6">Network Infrastructure</h2>
                 <p class="mb-2">
-                    A digital native business creates and delivers innovation at speed, puts customers at the core of its existence and treats employees as its most valued asset. It interacts with its ecosystem to co-create innovation and access and share resources. To determine how digital your business is, you can look at how much of your revenue comes from digital products and services, and how much of your business relies on digital tools, how well you support your customers and employees through digital channels and how you interact with your ecosytem digitally.
-                </p>
-                <p class="mb-2">
-                    This section of the report assesses the stage of your organization\'s Digital Maturity based on how digital your business is, how you are dealing with changes in business patterns and staffing levels, which applications you are using and how you deploy them.
+                    Enterprise networks are a critical enabler of security by design. An organization\'s approach to purchasing, replacing, and managing network infrastructure impacts overall IT security. Best practices include taking a strategic and architectural approach to buying network solutions, actively updating network infrastructure before it reaches end of support, and adopting software-defined networking tools that enable greater network visibility.
                 </p>
             </div>
         </div>
     ',
-    'digital-businessgraph' => '
-        <div class="ml-8 my-4 inline-block">:graph</div>
-    ',
-
-    'digital-business-1-stage1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score for this section indicates that you are in line with your Digital Improver peers with respect to the progress you have made so far. You are at the beginning of your journey, so there are many areas you need to address. You can look in to individual assessment areas within this section to understand what changes you could potentially make to improve your digital maturity.
-            </p>
-        </div>
-    ',
-    'digital-business-1-stage2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score for this section indicates that you are ahead of your Digital Improver peers with respect to the progress you have made so far. Very well done! While keeping up with this, you must also look at aspects related to digital design and digital delivery to improve your overall digital maturity.
-            </p>
-        </div>
-    ',
-    'digital-business-1-stage3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score for this section indicates that you are ahead of your Digital Improver peers with respect to the progress you have made so far. Very well done! While keeping up with this, you must also look at aspects related to digital design and digital delivery to improve your overall digital maturity.
-            </p>
-        </div>
-    ',
-    'digital-business-2-stage1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score for this section indicates that you are lagging behind your Digital Achiever peers with respect to your digital business approach. Digital business is an area that you should improve to catch up with your peers,  so you must take steps to accelerate the journey now. You should look in to individual assessment areas within this section to understand what changes you could potentially make to your digital business approach to improve your digital maturity.
-            </p>
-        </div>
-    ',
-    'digital-business-2-stage2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score in this section indicates that you are in line with your Digital Achiever peers with respect to the progress you have made in making your business digital. You are well on your way, but don\'t think of stopping just yet. You can look into individual assessment areas within this section to understand what changes you could potentially make to your digital business for further progress in your digital business.
-            </p>
-        </div>
-    ',
-    'digital-business-2-stage3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score in this area indicates that you are lagging behind other Digital Native peers with regards to your digital business approach. You should look in to individual assessment areas within this section to understand what changes you could potentially make to your digital business approach. You have a lot of work to do so you should act urgently to address the areas of improvement. This will help sustain your strong position with respect to your overall digital maturity.
-            </p>
+    'network-infrastructuregraph' => '
+        <div class="my-5 relative" style="width:160mm;height:61.19mm; background: url(:url) no-repeat; background-size:cover">
+            <div class="shadow rounded bg-vmware-green absolute" style="width: :overall; height: 10mm; top:18mm; left:33mm;"></div>
+            <div class="shadow rounded bg-vmware-blue-bright absolute" style="width: :network-infrastructure; height: 10mm; top:37mm; left:33mm;"></div>
         </div>
     ',
 
-    'digital-business-3-stage1' => '
+    'network-infrastructure-1-stage1' => '
         <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score for this section indicates that you are ahead of your Digital Improver peers with respect to the progress you have made so far. Very well done! While keeping up with this, you must also look at aspects related to digital design and digital delivery to improve your overall digital maturity.
+            <p class="w-4/5 ml-auto mb-2 text-vmware-blue font-bold">
+                Based on your responses, your organization is lagging its peers when it comes to network infrastructure capabilities, which is in line with its overall performance as a Network Follower.
             </p>
         </div>
     ',
-    'digital-business-3-stage2' => '
+    'network-infrastructure-1-stage2' => '
         <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score for this section indicates that you are ahead of your Digital Achiever peers with respect to the progress you have made. Very well done on your journey so far! While keeping up with this, you must also look at aspects related to digital design and digital delivery to improve your overall digital maturity.
+            <p class="w-4/5 ml-auto mb-2 text-vmware-blue font-bold">
+                Based on your responses, your organization is ahead of its peers when it comes to network infrastructure capabilities, which means your organization is quite advanced in this area compared to its overall performance as a Network Follower.
             </p>
         </div>
     ',
-    'digital-business-3-stage3' => '
+    'network-infrastructure-1-stage3' => '
         <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score in this area indicates that you are in line with the digital native peers with respect to the progress you have made with regards to your digital business approach. While keeping up with this, you can look at areas of improvement if any, related to digital design and digital delivery to improve your overall digital maturity.
+            <p class="w-4/5 ml-auto mb-2 text-vmware-blue font-bold">
+                Based on your responses, your organization is ahead of its peers when it comes to network infrastructure capabilities, which means your organization is quite advanced in this area compared to its overall performance as a Network Follower.
+            </p>
+        </div>
+    ',
+    'network-infrastructure-2-stage1' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2 text-vmware-blue font-bold">
+                Based on your responses, your organization is lagging behind the average when it comes to network infrastructure capabilities, which means this area is less developed than its overall performance as a Network Generalist.
+            </p>
+        </div>
+    ',
+    'network-infrastructure-2-stage2' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2 text-vmware-blue font-bold">
+                Based on your responses, your organization is in line with the average when it comes to network infrastructure capabilities, which is consistent with its overall performance as a Network Generalist.
+            </p>
+        </div>
+    ',
+    'network-infrastructure-2-stage3' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2 text-vmware-blue font-bold">
+                Based on your responses, your organization is ahead of the average when it comes to network infrastructure capabilities, which means your organization is more advanced in this area compared to its overall performance as a Network Generalist.
             </p>
         </div>
     ',
 
-    'digital-businessgraph'=>'
-        <div class="ml-8 my-4 inline-block">:graph</div>
+    'network-infrastructure-3-stage1' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2 text-vmware-blue font-bold">
+                Based on your responses, your organization is lagging behind its peers when it comes to network infrastructure capabilities, which means this area is well behind its overall performance as a Network Leader.
+            </p>
+        </div>
     ',
+    'network-infrastructure-3-stage2' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2 text-vmware-blue font-bold">
+                Based on your responses, your organization is lagging behind its peers when it comes to network infrastructure capabilities, which means this area is well behind its overall performance as a Network Leader.
+            </p>
+        </div>
+    ',
+    'network-infrastructure-3-stage3' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2 text-vmware-blue font-bold">
+                Based on your responses, your organization is in line with its peers when it comes to network infrastructure capabilities, which means this area ranks behind its overall performance as a Network Leader.
+            </p>
+        </div>
+    ',
+
     'question1' => '
         <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 font-bold text-dassault-blue-light">
-                Q1. How difficult is for your organization to cope with changes in business patterns?
+            <p class="w-4/5 ml-auto mb-2 font-bold text-vmware-blue-light">
+                Q1. How extensively do you currently use software-defined networking in the following areas of your network?
             </p>
         </div>
     ',
-    'digital-business-1-q1-1' => '
+    'network-infrastructure-1-q1-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you are dealing well with fluctuations in your business. This means that you are well ahead of your Digital Improver peers in enabling your business digitally. Well done! You should now focus your efforts on other areas to improve your overall digital maturity.
+                You are in line with your overall ranking as a Network Follower, and your adoption of network virtualization tools is limited. To move to the next level you need to investigate how network virtualization tools can help you meet business objectives such as improve security and use of cloud environments.
             </p>
         </div>
     ',
-    'digital-business-1-q1-2' => '
+    'network-infrastructure-1-q1-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your business. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
+                You rank ahead of your Network Follower peers. You have adopted network virtualization tools in some areas of your network but not all. Increasing your adoption of network virtualization tools across your whole network will enable you to optimize end-to-end security and performance.
             </p>
         </div>
     ',
-    'digital-business-1-q1-3' => '
+    'network-infrastructure-1-q1-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your business. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
-            </p>
-        </div>
-    ',
-    'digital-business-1-q1-4' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your business. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
-            </p>
-        </div>
-    ',
-    'digital-business-1-q1-5' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your business. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
+                You rank far ahead of your Network Follower peers, as you have adopted network virtualization tools in most areas of your network. The next step is to add analytics and automation on top of these software-defined tools.
             </p>
         </div>
     ',
 
-    'digital-business-2-q1-1' => '
+    'network-infrastructure-2-q1-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you are dealing well with fluctuations in your business. This means that you are well ahead of your Digital Achiever peers in enabling your business digitally. Well done! You should now focus your efforts on other areas to improve your overall digital maturity.
+                You rank behind your Network Generalist peers, and your adoption of network virtualization tools is limited. To move to the next level you need to investigate how network virtualization tools can help you meet business objectives such as improving security and use of cloud.
             </p>
         </div>
     ',
-    'digital-business-2-q1-2' => '
+    'network-infrastructure-2-q1-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your business. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
+                You rank in line with your Network Generalist peers. You have adopted network virtualization tools in some areas of your network but not all. Increasing use of network virtualization tools across your whole network will enable you to optimize end-to-end security and performance.
             </p>
         </div>
     ',
-    'digital-business-2-q1-3' => '
+    'network-infrastructure-2-q1-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your business. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
-            </p>
-        </div>
-    ',
-    'digital-business-2-q1-4' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your business. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
-            </p>
-        </div>
-    ',
-    'digital-business-2-q1-5' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your business. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
+                You rank ahead of your Network Generalist peers. You have adopted network virtualization tools in most areas of your network. The next step is to add analytics and automation on top of these software-defined tools.
             </p>
         </div>
     ',
 
-    'digital-business-3-q1-1' => '
+    'network-infrastructure-3-q1-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you are dealing well with fluctuations in your business. This means that you are at par with your Digital Native peers in enabling your business digitally. Well done! You should now focus your efforts on other areas to finetune your overall digital maturity.
+                You rank behind your Network Leader peers as your adoption of network virtualization tools is limited. To move to the next level you need to investigate how network virtualization tools can help you meet business objectives like improved security and use of cloud.
             </p>
         </div>
     ',
-    'digital-business-3-q1-2' => '
+    'network-infrastructure-3-q1-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your business. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
+                You rank behind your Network Leader peers as you have adopted network virtualization tools in some areas of your network but not all. Increasing your use of network virtualization tools across your whole network will enable you to optimize end-to-end security and performance.
             </p>
         </div>
     ',
-    'digital-business-3-q1-3' => '
+    'network-infrastructure-3-q1-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your business. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
-            </p>
-        </div>
-    ',
-    'digital-business-3-q1-4' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your business. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
-            </p>
-        </div>
-    ',
-    'digital-business-3-q1-5' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your business. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
+                You rank in line with Network Leader peers as you have adopted network virtualization tools in most areas of your network. The next step is to add analytics and automation on top of these software-defined tools.
             </p>
         </div>
     ',
 
     'question2' => '
         <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 font-bold text-dassault-blue-light">
-                Q2. How difficult is for your organization to adapt to your changes in staffing levels?
+            <p class="w-4/5 ml-auto mb-2 font-bold text-vmware-blue-light">
+                Q2. How do you tend to buy your network solutions?
             </p>
         </div>
     ',
 
-    'digital-business-1-q2-1' => '
+    'network-infrastructure-1-q2-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you are dealing well with fluctuations in your staffing levels. This means that you are well ahead of your Digital Improver peers in enabling your business digitally and responding to changes in the business environment. Well done! You should now focus your efforts on other areas to improve your overall digital maturity.
+                Your score places you in line with other Network Followers, and you mostly buy network infrastructure on an ad hoc basis. To move up to the next level, you should start to develop a long-term technology road map for your network infrastructure and make purchases that are consistent with it. This will help you to improve performance, interoperability, and cost effectiveness.
             </p>
         </div>
     ',
-    'digital-business-1-q2-2' => '
+    'network-infrastructure-1-q2-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your staffing levels. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
+                Your score places you ahead of other Network Followers, and you mostly buy network infrastructure on an ad hoc basis. To move up to the next level, you should start to develop a long-term technology road map for your network infrastructure and make purchases that are consistent with it. This will help you to improve performance, interoperability, and cost effectiveness.
             </p>
         </div>
     ',
-    'digital-business-1-q2-3' => '
+    'network-infrastructure-1-q2-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your staffing levels. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
+                Your score places you ahead of other Network Followers, and you are buying network solutions strategically in some cases. The increasing strategic importance of the network should be reflected in your approach to buying network solutions, and you should try to accelerate your long-term technology road map across all network infrastructure and make purchases that are consistent with it. This will help you to improve performance, interoperability, and cost effectiveness.
             </p>
         </div>
     ',
-    'digital-business-1-q2-4' => '
+    'network-infrastructure-1-q2-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your staffing levels. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
+                Your score places you ahead of other Network Followers, and your purchasing behavior recognizes the strategic importance of the network for your business. You are already doing well, and you should aim to continuously align your network road map with the business outcomes that you want to deliver. A strategic commercial framework under which individual network elements can be dynamically allocated and adjusted as your needs evolve could further enhance your agility.
             </p>
         </div>
     ',
-    'digital-business-1-q2-5' => '
+    'network-infrastructure-1-q2-5' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your staffing levels. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
-            </p>
-        </div>
-    ',
-
-    'digital-business-2-q2-1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you are dealing well with fluctuations in your staffing levels. This means that you are well ahead of your Digital Achiever peers in enabling your business digitally and responding to changes in the business environment. Well done! You should now focus your efforts on other areas to improve your overall digital maturity.
-            </p>
-        </div>
-    ',
-    'digital-business-2-q2-2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your staffing levels. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
-            </p>
-        </div>
-    ',
-    'digital-business-2-q2-3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your staffing levels. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
-            </p>
-        </div>
-    ',
-    'digital-business-2-q2-4' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your staffing levels. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
-            </p>
-        </div>
-    ',
-    'digital-business-2-q2-5' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your staffing levels. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
+                Your score places you ahead of other Network followers, and you take a strategic and architectural approach to buying network solutions. You are already doing well, and you should aim to continuously align your network road map with the business outcomes that you want to deliver. A strategic commercial framework under which individual network elements can be dynamically allocated and adjusted as your needs evolve could further enhance your agility.
             </p>
         </div>
     ',
 
-    'digital-business-3-q2-1' => '
+    'network-infrastructure-2-q2-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you are dealing well with fluctuations in your staffing levels. This means that you are at par with your Digital Native peers in enabling your business digitally. Well done! You should now focus your efforts on other areas to finetune your overall digital maturity.
+                Your score places you behind other Network Generalists. You mostly buy network infrastructure on an ad hoc basis. To be in line with your peers you should start to develop a long-term technology road map for your network infrastructure and purchase consistently. This will help you to improve performance, interoperability, and cost effectiveness.
             </p>
         </div>
     ',
-    'digital-business-3-q2-2' => '
+    'network-infrastructure-2-q2-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your staffing levels. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
+                Your score places you behind other Network Generalists. You mostly buy network infrastructure on an ad hoc basis. To be in line with your peers you should start to develop a long-term technology road map for your network infrastructure and purchase consistently. This will help you to improve performance, interoperability, and cost effectiveness.
             </p>
         </div>
     ',
-    'digital-business-3-q2-3' => '
+    'network-infrastructure-2-q2-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your staffing levels. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
+                Your score places you in line with other Network Generalists. You are buying network solutions strategically in some cases. The increasing strategic importance of the network should be reflected in your approach to buying network solutions, and you should try to accelerate your long-term technology road map across all network infrastructure and purchase consistently with that. This will help you to improve performance, interoperability, and cost effectiveness.
             </p>
         </div>
     ',
-    'digital-business-3-q2-4' => '
+    'network-infrastructure-2-q2-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your staffing levels. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
+                Your score places you ahead of other Network Generalists. Your purchasing behavior recognizes the strategic importance of the network for your business. You are already doing well, but you could consider continuously aligning your network road map with the business outcomes that you want to deliver. A strategic commercial framework under which individual network elements can be dynamically allocated and adjusted as your needs evolve could further enhance your agility.
             </p>
         </div>
     ',
-    'digital-business-3-q2-5' => '
+    'network-infrastructure-2-q2-5' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your staffing levels. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
+                Your score places you ahead of other Network Generalists. You take a strategic and architectural approach to buying network solutions. You are already doing well, and you could consider continuously aligning your network road map with the business outcomes that you want to deliver. A strategic commercial framework under which individual network elements can be dynamically allocated and adjusted as your needs evolve could further enhance your agility.
+            </p>
+        </div>
+    ',
+
+    'network-infrastructure-3-q2-1' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2">
+                Your score places you behind other Network Leaders, and you mostly buy network infrastructure on an ad hoc basis. To be in line with your peers you should develop a long-term technology road map for your network infrastructure and purchase consistently. This will help you to improve performance, interoperability, and cost effectiveness.
+            </p>
+        </div>
+    ',
+    'network-infrastructure-3-q2-2' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2">
+                Your score places you behind other Network Leaders, and you mostly buy network infrastructure on an ad hoc basis. To be in line with your peers you should develop a long-term technology road map for your network infrastructure and purchase consistently. This will help you to improve performance, interoperability, and cost effectiveness.
+            </p>
+        </div>
+    ',
+    'network-infrastructure-3-q2-3' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2">
+                Your score places you behind other Network Leaders, though you buy network solutions strategically in some cases. The increasing strategic importance of the network should be reflected in your approach to buying network solutions, and you should try to accelerate your long-term technology road map across all network infrastructure and purchase consistently with that. This will help you to improve performance, interoperability, and cost effectiveness.
+            </p>
+        </div>
+    ',
+    'network-infrastructure-3-q2-4' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2">
+                Your score places you behind other Network Leaders, and your purchasing behavior recognizes the strategic importance of the network for your business. You are already doing well, but you could consider continuously aligning your network road map with the business outcomes that you want to deliver. A strategic commercial framework under which individual network elements can be dynamically allocated and adjusted as your needs evolve could enhance your agility.
+            </p>
+        </div>
+    ',
+    'network-infrastructure-3-q2-5' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2">
+                Your score places you behind other Network Leaders, and you take a strategic and architectural approach to buying network solutions. You are doing well, and you could consider continuously aligning your network road map with the business outcomes that you want to deliver. A strategic commercial framework under which individual network elements can be dynamically allocated and adjusted as your needs evolve could further enhance your agility.
             </p>
         </div>
     ',
 
     'question3' => '
         <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 font-bold text-dassault-blue-light">
-                Q3. To what extent does your organization use the following application types? 
+            <p class="w-4/5 ml-auto mb-2 font-bold text-vmware-blue-light">
+                Q3. Which of the following best describes your approach  to ageing network hardware?
             </p>
         </div>
     ',
 
-    'digital-business-1-q3-1' => '
+    'network-infrastructure-1-q3-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are using only a few applications to support your business processes, which is a common trait of Digital Improvers. Doing things manually wastes a lot of time and does not scale when customer demands are picking up. It frustrates your employees, because they cannot be productive and puts you on the backfoot when you are competing for talent. You should explore using more applications to improve your business processes and overall competitiveness to become a more digital business. 
+                In line with other Network Followers you tend to only replace network infrastructure when it fails. This prevents your organization from taking advantage of new networking tools that are essential for hyperconnected and multicloud environments. A more proactive approach to refreshing your network infrastructure would improve your network performance and security.
             </p>
         </div>
     ',
-    'digital-business-1-q3-2' => '
+    'network-infrastructure-1-q3-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are using only a few applications to support your business processes, which is a common trait of Digital Improvers. Doing things manually wastes a lot of time and does not scale when customer demands are picking up. It frustrates your employees, because they cannot be productive and puts you on the backfoot when you are competing for talent. You should explore using more applications to improve your business processes and overall competitiveness to become a more digital business. 
+                In line with other Network Followers you tend to run networking gear beyond its supported life, but renew it before it fails. This prevents your organization from taking advantage of new networking tools that are essential for hyperconnected and multicloud environments. A more proactive approach to refreshing your network infrastructure would improve your network performance and security.
             </p>
         </div>
     ',
-    'digital-business-1-q3-3' => '
+    'network-infrastructure-1-q3-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are using a fair amount of applications to digitise your business processes, which puts you ahead of your Digital Improver peers. You might want to focus on other areas of your digital business that need improvement.
+                In line with other Network Followers you tend to run networking gear until it is out of standard support and renew it within a few years. This prevents your organization from taking advantage of new networking tools that are essential for hyperconnected and multicloud environments. A more proactive approach to refreshing your network infrastructure would improve your network performance and security.
             </p>
         </div>
     ',
-    'digital-business-1-q3-4' => '
+    'network-infrastructure-1-q3-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are routinely using  applications to digitise your business processes, which puts you well ahead of your Digital Improver peers. You might want to focus on other areas of your digital business that need improvement.
+                Your score places you ahead of other Network Followers, and you tend to run networking gear while it is supported then renew it. This enables your organization to take advantage of new networking tools that are essential for hyperconnected and multicloud environments fairly quickly. To move up to the next level you should adopt a proactive approach to refreshing your network infrastructure.
             </p>
         </div>
     ',
-
-    'digital-business-2-q3-1' => '
+    'network-infrastructure-1-q3-5' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are using only a few applications to support your business processes, which puts you behind your Digital Achiever peers. Doing things manually wastes a lot of time and does not scale when customer demands are picking up. It frustrates your employees, because they cannot be productive and puts you on the backfoot when you are competing for talent. You should explore using more applications to improve your business processes and overall competitiveness to become a more digital business. 
-            </p>
-        </div>
-    ',
-    'digital-business-2-q3-2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are using only a few applications to support your business processes, which puts you behind your Digital Achiever peers. Doing things manually wastes a lot of time and does not scale when customer demands are picking up. It frustrates your employees, because they cannot be productive and puts you on the backfoot when you are competing for talent. You should explore using more applications to improve your business processes and overall competitiveness to become a more digital business. 
-            </p>
-        </div>
-    ',
-    'digital-business-2-q3-3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are using a fair amount of applications to digitise your business processes, which puts you at par with your Digital Achiever peers. You might want to focus on other areas of your digital business that need improvement.
-            </p>
-        </div>
-    ',
-    'digital-business-2-q3-4' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are routinely using applications to digitise your business processes, which puts you ahead of your Digital Achiever peers. You might want to focus on other areas of your digital business that need improvement.
+                Your score places you ahead of other Network Followers, and you take a proactive approach to refreshing your network infrastructure, recognizing the strategic advantage that an advanced network can bring to your business. To further develop this area you should seek to continuously align your network road map with the business outcomes that you want to deliver. A strategic commercial framework under which individual network elements can be dynamically allocated and adjusted as your needs evolve could further enhance your agility.
             </p>
         </div>
     ',
 
-    'digital-business-3-q3-1' => '
+    'network-infrastructure-2-q3-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are using only a few applications to support your business processes, which puts you far behind your Digital Native peers. Doing things manually wastes a lot of time and does not scale when customer demands are picking up. It frustrates your employees, because they cannot be productive and puts you on the backfoot when you are competing for talent. You should explore using more applications to improve your business processes and overall competitiveness to become a more digital business. 
+                Your score places you behind other Network Generalists. You tend to only replace network infrastructure when it fails. This prevents your organization from taking advantage of new networking tools that are essential for hyperconnected and multicloud environments. A more proactive approach to refreshing your network infrastructure would improve your network performance and security.
             </p>
         </div>
     ',
-    'digital-business-3-q3-2' => '
+    'network-infrastructure-2-q3-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are using only a few applications to support your business processes, which puts you far behind your Digital Native peers. Doing things manually wastes a lot of time and does not scale when customer demands are picking up. It frustrates your employees, because they cannot be productive and puts you on the backfoot when you are competing for talent. You should explore using more applications to improve your business processes and overall competitiveness to become a more digital business.  
+                Your score places you behind other Network Generalists. You tend to run networking gear beyond its supported life but renew it before it fails. This prevents your organization from taking advantage of new networking tools that are essential for hyperconnected and multicloud environments. You should adopt a more proactive approach to refreshing your network infrastructure.
             </p>
         </div>
     ',
-    'digital-business-3-q3-3' => '
+    'network-infrastructure-2-q3-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are using a fair amount of applications to support your business processes, but you are still behind your Digital Native peers. Doing things manually wastes a lot of time and does not scale when customer demands are picking up. It frustrates your employees, because they cannot be productive and puts you on the backfoot when you are competing for talent. You should explore using more applications to improve your business processes and overall competitiveness to become a more digital business. 
+                Your score places you behind other Network Generalists. You tend to run networking gear until it is out of standard support and renew it within a few years. This prevents your organization from taking advantage of new networking tools that are essential for hyperconnected and multicloud environments. A more proactive approach to refreshing your network infrastructure would improve your network performance and security.
             </p>
         </div>
     ',
-    'digital-business-3-q3-4' => '
+    'network-infrastructure-2-q3-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are routinely using applications to digitise your business processes, which puts you at par with your Digital Native peers. You might want to focus on other areas of your digital business that need improvement.
+                In line with your overall ranking as a Network Generalist, you tend to run networking gear while it is supported then renew it. This enables your organization to fairly quickly take advantage of new networking tools that are essential for hyperconnected and multicloud environments. To move up to the next level you should adopt a proactive approach to refreshing your network infrastructure.
+            </p>
+        </div>
+    ',
+    'network-infrastructure-2-q3-5' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2">
+                Your score places you ahead of other Network Generalists. You take a proactive approach to refreshing your network infrastructure, recognizing the strategic advantage that an advanced network can bring to your business. To further develop this area, you should continuously align your network road map with the business outcomes that you want to deliver. A strategic commercial framework under which individual network elements can be dynamically allocated and adjusted as your needs evolve could further enhance your agility.
+            </p>
+        </div>
+    ',
+
+    'network-infrastructure-3-q3-1' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2">
+                Your score places you behind other Network Leaders, and you tend to only replace network infrastructure when it fails. This prevents your organization from taking advantage of new networking tools that are essential for hyperconnected and multicloud environments. A more proactive approach to refreshing your network infrastructure would improve your network performance and security.
+            </p>
+        </div>
+    ',
+    'network-infrastructure-3-q3-2' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2">
+                Your score places you behind other Network Leaders, and you tend to run networking gear beyond its supported life but renew it before it fails. This prevents your organization from taking advantage of new networking tools that are essential for hyperconnected and multicloud environments. To keep up with Network Leader peers you should adopt a more proactive approach to refreshing your network infrastructure.
+            </p>
+        </div>
+    ',
+    'network-infrastructure-3-q3-3' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2">
+                Your score places you behind other Network Leaders, and you tend to run networking gear until it is out of standard support and renew it within a few years. This prevents your organization from taking advantage of new networking tools that are essential for hyperconnected and multicloud environments. A more proactive approach to refreshing your network infrastructure would improve your network performance and security.
+            </p>
+        </div>
+    ',
+    'network-infrastructure-3-q3-4' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2">
+                Behind your overall ranking as a Network Leader you tend to run networking gear while it is supported then renew it. Although this enables your organization to take advantage of new networking tools fairly quickly, some organizations are more proactive about refreshing their network infrastructure.
+            </p>
+        </div>
+    ',
+    'network-infrastructure-3-q3-5' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2">
+                In line with your ranking as a Network Leader you take a proactive approach to refreshing your network infrastructure, recognizing the strategic advantage that an advanced network can bring to your business. You should continuously align your network road map with the business outcomes that you want to deliver. A strategic commercial framework under which individual network elements can be dynamically allocated and adjusted as your needs evolve could further enhance your agility.
+            </p>
+        </div>
+    ',
+
+    'intelligent-network-operations-intro' => '
+        <div class="clearfix">
+            <div class="w-1/5 h-32 float-left">
+                <div class="bg-center bg-top bg-no-repeat mx-auto" style="background-image: url(:icon); width: 20mm; height:20mm;"></div>
+            </div>
+            <div class="w-4/5 float-left">
+                <h2 class="text-vmware-blue mb-6">Intelligent Network Operations</h2>
+                <p class="mb-2">
+                    Enterprise networks are becoming more complicated because of the increasing number of endpoints and the growing practice of using multiple and hybrid cloud environments. Legacy network infrastructure relies on manual operations which are no longer fit for purpose because of the sheer volume of network traffic and number of endpoints. Therefore, enterprises need to adopt intelligent networking tools to optimize network security and performance in the era of digital transformation.
+                </p>
+            </div>
+        </div>
+    ',
+    'intelligent-network-operationsgraph' => '
+        <div class="my-5 relative" style="width:160mm;height:61.19mm; background: url(:url) no-repeat; background-size:cover">
+            <div class="shadow rounded bg-vmware-green absolute" style="width: :overall; height: 10mm; top:18mm; left:33mm;"></div>
+            <div class="shadow rounded bg-vmware-blue-bright absolute" style="width: :intelligent-network-operations; height: 10mm; top:37mm; left:33mm;"></div>
+        </div>
+    ',
+
+    'intelligent-network-operations-1-stage1' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2 text-vmware-blue font-bold">
+                Based on your responses, your organization is behind its peers when it comes to intelligent network operations, which is consistent with its overall ranking as a Network Follower.
+            </p>
+        </div>
+    ',
+    'intelligent-network-operations-1-stage2' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2 text-vmware-blue font-bold">
+                Based on your responses, your organization is in line with its peers when it comes to intelligent network operation, which is more advanced than its overall ranking as a Network Follower.
+            </p>
+        </div>
+    ',
+    'intelligent-network-operations-1-stage3' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2 text-vmware-blue font-bold">
+                Based on your responses, your organization is ahead of its peers when it comes to intelligent network operation, which is quite advanced compared to its overall ranking as a Network Follower.
+            </p>
+        </div>
+    ',
+
+    'intelligent-network-operations-2-stage1' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2 text-vmware-blue font-bold">
+                Based on your responses, your organization is behind the average when it comes to intelligent network operations, which means this area is less developed than its overall ranking as a Network Generalist suggests.
+            </p>
+        </div>
+    ',
+    'intelligent-network-operations-2-stage2' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2 text-vmware-blue font-bold">
+                Based on your responses, your organization is in line with the average when it comes to intelligent network operations, which is consistent with its overall ranking as a Network Generalist.
+            </p>
+        </div>
+    ',
+    'intelligent-network-operations-2-stage3' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2 text-vmware-blue font-bold">
+                Based on your responses, your organization is ahead of the average when it comes to intelligent network operations, which is more advanced than its overall ranking as a Network Generalist.
+            </p>
+        </div>
+    ',
+
+    'intelligent-network-operations-3-stage1' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2 text-vmware-blue font-bold">
+                Based on your responses, your organization is behind the average when it comes to intelligent network operations, which is behind its overall ranking as a Network Leader.
+            </p>
+        </div>
+    ',
+    'intelligent-network-operations-3-stage2' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2 text-vmware-blue font-bold">
+                Based on your responses, your organization is in line with the average when it comes to intelligent network operations, which is behind its overall ranking as a Network Leader.
+            </p>
+        </div>
+    ',
+    'intelligent-network-operations-3-stage3' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2 text-vmware-blue font-bold">
+                Based on your responses, your organization is ahead of the average when it comes to intelligent network operations, which is in line with its overall ranking as a Network Leader.
             </p>
         </div>
     ',
 
     'question4' => '
         <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 font-bold text-dassault-blue-light">
-                Q4. On a scale of 1 - 5, please rate the success of the current deployment of each of the following application types at your organization? 
+            <p class="w-4/5 ml-auto mb-2 font-bold text-vmware-blue-light">
+                Q4. How do you manage your network today?
             </p>
         </div>
     ',
 
-    'digital-business-1-q4-1' => '
+    'intelligent-network-operations-1-q4-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are underutilising your applications because they have not been implemented properly. This is typical for Digital Improvers. You are at risk of loosing skills and talent because you are creating a bad user experience for your employees, because your implementation is not stable. You are also creating a bad experience for your customers and business partners, when you are not responsive because of disruptions of your business processes due to failures of your applications. Moving to a cloud based delivery model for applications provides instant access to the latest features and stable operations.
+                In line with your overall ranking as a Network Follower you take a manual approach to network configuration if and when the need arises. This is likely an increasingly tedious and time-consuming part of your operational efforts, and you need a more systematic way forward. Solutions that let you centralize and automate these tasks can help. They will certainly help you to take some complexity out of your operations, freeing up time and increasing agility in the process.
             </p>
         </div>
     ',
-    'digital-business-1-q4-2' => '
+    'intelligent-network-operations-1-q4-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are underutilising your applications because they have not been implemented properly. This is typical for Digital Improvers. You are at risk of loosing skills and talent because you are creating a bad user experience for your employees, because your implementation is not stable. You are also creating a bad experience for your customers and business partners, when you are not responsive because of disruptions of your business processes due to failures of your applications. Moving to a cloud based delivery model for applications provides instant access to the latest features and stable operations.
+                In line with your overall ranking as a Network Follower network configuration is a centralized manual process and is likely an increasingly tedious and time-consuming part of your operational efforts. Automation of these tasks can help. This will certainly help you to take some complexity out of your operations, freeing up time and increasing agility in the process.
             </p>
         </div>
     ',
-    'digital-business-1-q4-3' => '
+    'intelligent-network-operations-1-q4-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are fairly efficient at implementing  applications to digitise your business processes, which puts you well ahead of your Digital Improver peers. You might want to focus on other areas of your digital business that need improvement.
+                Your score places you ahead of other Network Followers; although network configuration is still mostly a manual process, you have automated some tasks. To move to the next level, speed up your efforts to automate configuration processes so that you can further reduce complexity, free up time, and increase agility.
             </p>
         </div>
     ',
-    'digital-business-1-q4-4' => '
+    'intelligent-network-operations-1-q4-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are very good at implementing  applications to digitise your business processes, which puts you well ahead of your Digital Improver peers. You might want to focus on other areas of your digital business that need improvement.
+                Your score places you ahead of other Network Followers; although you still perform some tasks manually, you have mostly automated your network management. To progress in this area you should explore how these remaining manual tasks can be automated. Integrating automation with policies and intelligence will put you on the road toward self-optimizing network orchestration.
+            </p>
+        </div>
+    ',
+    'intelligent-network-operations-1-q4-5' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2">
+                Your score places you far ahead of other Network Followers; self-optimizing network orchestration that integrates analytics, policies, and automation has taken a lot of complexity out of your operations. This enables you to look beyond network management and focus your efforts on other tasks and the integration between them.
             </p>
         </div>
     ',
 
-    'digital-business-2-q4-1' => '
+    'intelligent-network-operations-2-q4-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are underutilising your applications because they have not been implemented properly. This puts you far behind your Digital Achiever peers. You are at risk of loosing skills and talent because you are creating a bad user experience for your employees, because your implementation is not stable. You are also creating a bad experience for your customers and business partners, when you are not responsive because of disruptions of your business processes due to failures of your applications. Moving to a cloud based delivery model for applications provides instant access to the latest features and stable operations.
+                Your score places you behind other Network Generalists. Network configuration is a manual process that you do, if and when the need arises. This is likely an increasingly tedious and time-consuming part of your operational efforts, and you need a more systematic way forward. Solutions that let you centralize and automate these tasks can overcome this challenge. They will certainly enable you to take some complexity out of your operations, freeing up time and increasing agility in the process.
             </p>
         </div>
     ',
-    'digital-business-2-q4-2' => '
+    'intelligent-network-operations-2-q4-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are underutilising your applications because they have not been implemented properly. This puts you far behind your Digital Achiever peers. You are at risk of loosing skills and talent because you are creating a bad user experience for your employees, because your implementation is not stable. You are also creating a bad experience for your customers and business partners, when you are not responsive because of disruptions of your business processes due to failures of your applications. Moving to a cloud based delivery model for applications provides instant access to the latest features and stable operations.
+                Your score places you behind other Network Generalists. You take a centralized manual approach to network configuration. You would benefit from automating these tasks.  This will certainly help you to take some complexity out of your operations, freeing up time and increasing agility in the process.
             </p>
         </div>
     ',
-    'digital-business-2-q4-3' => '
+    'intelligent-network-operations-2-q4-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are fairly efficient at implementing  applications to digitise your business processes, which puts you at par with your Digital Achiever peers. You might want to focus on other areas of your digital business that need improvement.
+                Your score places you in line with other Network Generalists. Though network configuration is still mostly a manual process, you have automated some tasks. To move to the next level, speed up your efforts to automate configuration processes, so that you can further reduce complexity, free up time, and increase agility. 
             </p>
         </div>
     ',
-    'digital-business-2-q4-4' => '
+    'intelligent-network-operations-2-q4-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are very good at implementing  applications to digitise your business processes, which puts you ahead of your Digital Achiever peers. You might want to focus on other areas of your digital business that need improvement.
+                Your score places you ahead of other Network Generalists. Though you still perform some tasks manually, you have mostly automated your network management. To progress in this area you should explore how these remaining manual tasks can be automated. Integrating automation with policies and intelligence will put you on the road toward self-optimizing network orchestration.
+            </p>
+        </div>
+    ',
+    'intelligent-network-operations-2-q4-5' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2">
+                Your score places you far ahead of other Network Generalists. Self-optimizing network orchestration that integrates analytics, policies, and automation has taken a lot of complexity out of your operations. This enables you to look beyond network management and focus your efforts on other tasks and the integration between them.
             </p>
         </div>
     ',
 
-    'digital-business-3-q4-1' => '
+    'intelligent-network-operations-3-q4-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are underutilising your applications because they have not been implemented properly. This puts you far behind your Digital Native peers. You are at risk of loosing skills and talent because you are creating a bad user experience for your employees, because your implementation is not stable. You are also creating a bad experience for your customers and business partners, when you are not responsive because of disruptions of your business processes due to failures of your applications. Moving to a cloud based delivery model for applications provides instant access to the latest features and stable operations.
+                Your score places you behind other Network Leaders. Network configuration is a manual process that you do if and when the need arises. This is likely an increasingly tedious and time-consuming part of your operational efforts, and you need a more systematic way forward. Solutions that let you centralize and automate these tasks can overcome this challenge. They will certainly enable you to take some complexity out of your operations, freeing up time and increasing agility in the process.
             </p>
         </div>
     ',
-    'digital-business-3-q4-2' => '
+    'intelligent-network-operations-3-q4-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are underutilising your applications because they have not been implemented properly. This puts you far behind your Digital Native peers. You are at risk of loosing skills and talent because you are creating a bad user experience for your employees, because your implementation is not stable. You are also creating a bad experience for your customers and business partners, when you are not responsive because of disruptions of your business processes due to failures of your applications. Moving to a cloud based delivery model for applications provides instant access to the latest features and stable operations.
+                Your score places you behind other Network Leaders, and you take a centralized manual approach to network configuration. You would benefit from automating these tasks.This will certainly help you to take some complexity out of your operations, freeing up time and increasing agility in the process.
             </p>
         </div>
     ',
-    'digital-business-3-q4-3' => '
+    'intelligent-network-operations-3-q4-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are fairly efficient at implementing  applications to digitise your business processes. This puts you slightly behind your Digital Native peers. You are at risk of loosing skills and talent because you are creating a bad user experience for your employees, because your implementation is not stable. You are also creating a bad experience for your customers and business partners, when you are not responsive because of disruptions of your business processes due to failures of your applications. Moving to a cloud based delivery model for applications provides instant access to the latest features and stable operations.
+                Your score places you behind other Network Leaders, and though you have automated some network configuration tasks it is still mainly a manual process. Speed up your efforts to automate configuration processes, so that you can further reduce complexity, free up time, and increase agility.
             </p>
         </div>
     ',
-    'digital-business-3-q4-4' => '
+    'intelligent-network-operations-3-q4-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are very good at implementing  applications to digitise your business processes, which puts you at par with your Digital Achiever peers. You might want to focus on other areas of your digital business that need improvement.
+                In line with your Network Leader peers you have mostly automated your network management, but there are still some manual tasks left. To progress in this area you should explore how these remaining manual tasks can be automated. Integrating automation with policies and intelligence will put you on the road toward self-optimizing network orchestration.
             </p>
         </div>
     ',
-
-    'digital-designintro' => '
-        <h2 class="w-4/5 ml-auto text-dassault-blue mb-6">DIGITAL DESIGN</h2>
+    'intelligent-network-operations-3-q4-5' => '
         <div class="clearfix">
-            <div class="w-1/5 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 25mm;"></div>
-            <div class="w-4/5 float-left">
-                <p class="mb-2">
-                    Digital Design is the creation of solutions  through software for viewing on a screen including applications for Computer Aided Design (CAD), Mechanical Computer Aided Engineering (CAE), Other engineering, Collaborative product data management, Production planning, or Manufacturing. Digital Design and engineering tools enable global collaboration around projects throughout the ecosystem and help to attract and retain talent. Through the use of cloud-based digital design and engineering tools, Start-ups and SMBs have access to world-class tools used by their established competitors, partners and customers, at an affordable price point and with the ability to scale driven by customer demand.
-                </p>
-                <p class="mb-2">
-                    This section of the report assesses the stage of your organization\'s Digital Maturity based on your usage of digital design and engineering tools, how modern your application estate is and how well you are able to operate your digital design and engineering applications.
-                </p>
-            </div>
-        </div>
-    ',
-    'digital-designgraph' => '
-        <div class="ml-8 my-4 inline-block">:graph</div>
-    ',
-
-    'digital-design-1-stage1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score for this section indicates that you are in line with your Digital Improver peers with respect to the progress you have made so far. You are at the beginning of your journey, so there are many areas you need to address. You can look in to individual assessment areas within this section to understand what changes you could potentially make to improve your digital maturity.
+            <p class="w-4/5 ml-auto mb-2">
+                Your score places you in line with other Network Leaders. Self-optimizing network orchestration that integrates analytics, policies, and automation has taken a lot of complexity out of your operations. This enables you to look beyond network management, and focus your efforts on other tasks and the integration between them.
             </p>
         </div>
-    ',
-    'digital-design-1-stage2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score for this section indicates that you are ahead of your Digital Improver peers with respect to the progress you have made so far. Very well done! While keeping up with this, you must also look at aspects related to digital design and digital delivery to improve your overall digital maturity.
-            </p>
-        </div>
-    ',
-    'digital-design-1-stage3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score for this section indicates that you are ahead of your Digital Improver peers with respect to the progress you have made so far. Very well done! While keeping up with this, you must also look at aspects related to digital business and digital delivery to improve your overall digital maturity.
-            </p>
-        </div>
-    ',
-
-    'digital-design-2-stage1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score for this section indicates that you are lagging behind your Digital Achiever peers with respect to your digital design approach. Digital design is an area that you should improve to catch up with your peers,  so you must take steps to accelerate the journey now. You should look in to individual assessment areas within this section to understand what changes you could potentially make to your digital design approach to improve your digital maturity.
-            </p>
-        </div>
-    ',
-    'digital-design-2-stage2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score in this section indicates that you are in line with your Digital Achiever peers with respect to the progress you have made in digital design. You are well on your way, but don\'t think of stopping just yet. You can look into individual assessment areas within this section to understand what changes you could potentially make to your digital design capabilities for further progress in your digital business.
-            </p>
-        </div>
-    ',
-    'digital-design-2-stage3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score for this section indicates that you are ahead of your Digital Achiever peers with respect to the progress you have made. Very well done on your journey so far! While keeping up with this, you must also look at aspects related to digital business and digital delivery to improve your overall digital maturity.
-            </p>
-        </div>
-    ',
-
-    'digital-design-3-stage1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score in this area indicates that you are lagging much behind other Digital Native peers in your digital design capabilities. You should look in to individual assessment areas within this section to understand what changes you could potentially make to your digital business approach. You have a lot of work to do so you should act urgently to address the areas of improvement. This will help you sustain your strong position with respect to your overall digital maturity.
-            </p>
-        </div>
-    ',
-    'digital-design-3-stage2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score in this area indicates that you are lagging behind other Digital Native peers with regards to your digital design capabilities. You should look in to individual assessment areas within this section to understand what changes you could potentially make to your digital design approach. You have a lot of work to do so you should act urgently to address the areas of improvement. This will help sustain your strong position with respect to your overall digital maturity.
-            </p>
-        </div>
-    ',
-    'digital-design-3-stage3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score in this area indicates that you are in line with the digital native peers with respect to the progress you have made with regards to your digital design approach. While keeping up with this, you can look at areas of improvement if any, related to digital business and digital delivery to improve your overall digital maturity.
-            </p>
-        </div>
-    ',
-
-    'digital-designgraph'=>'
-        <div class="ml-8 my-4 inline-block">:graph</div>
     ',
 
     'question5' => '
         <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 font-bold text-dassault-blue-light">
-                Q5. Which statement best describes how your organization tends to roll out CAD/CAM applications or updates?
+            <p class="w-4/5 ml-auto mb-2 font-bold text-vmware-blue-light">
+                Q5. How is your network security policy managed today?
             </p>
         </div>
     ',
 
-    'digital-design-1-q5-1' => '
+    'intelligent-network-operations-1-q5-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are depending on manual processes to deliver digital design applications and upgrades, which puts you at par with your Digital Improver peers. Reliance on manual processes leads to technical debt, frustrations from the design engineers and general low responsiveness to business requirements. You need to become more proactive, leverage automation tools and cloud-based applications to increase your agility and improve your digital design capabilities.
+                Based on your overall ranking you are in line with other Network Followers. Security plays a critical role in an organization\'s strategy and operations. It is often seen as the number 1 challenge and most companies indicate they are improving network security in response to accelerating requirements. You manage your security policy on a device-by-device basis, which can be quite a strain on your resources. Doing this in a more centralized and automated manner will drive your efficiency and consistency, speed up update cycles, and reduce risk.
             </p>
         </div>
     ',
-    'digital-design-1-q5-2' => '
+    'intelligent-network-operations-1-q5-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are depending on manual processes to deliver digital design applications and upgrades, which puts you at par with your Digital Improver peers. Reliance on manual processes leads to technical debt, frustrations from the design engineers and general low responsiveness to business requirements. You need to become more proactive, leverage automation tools and cloud-based applications to increase your agility and improve your digital design capabilities.
+                Based on your overall ranking you are ahead of other Network Followers. Security plays a critical role in an organization\'s strategy and operations. It is often seen as the number 1 challenge and most companies indicate they are improving network security in response to accelerating requirements. Like many other Followers you have centralized access policy and controls, but manual tasks can be quite a strain on your resources, while longer response times to threats can leave your organization vulnerable. Doing this in a more automated and dynamic manner will drive your efficiency and consistency, speed up update cycles, and reduce risk.
             </p>
         </div>
     ',
-    'digital-design-1-q5-3' => '
+    'intelligent-network-operations-1-q5-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your IT department uses automation tools to devliver digital design applications and upgrades, which puts you ahead of your Digital Improver peers. If you want to take another step ahead, you can consider using cloud-based digital design and engineering tools, which automatically provide you the latest functionality and don\'t require any intervention from IT.
+                Based on your overall ranking you are ahead of other Network Followers. Security plays a critical role in an organization\'s strategy and operations. It is often seen as the number 1 challenge and most companies indicate they are improving network security in response to accelerating requirements. You dynamically enforce security policies across the network, yet manual tasks can be quite a strain on your resources, while longer response times to threats can leave your organization vulnerable. Solutions that combine analytics and automation to rapidly detect and contain threats will improve your efficiency and response times and reduce risk.
             </p>
         </div>
     ',
-    'digital-design-1-q5-4' => '
+    'intelligent-network-operations-1-q5-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You have outsourced the implementation and upgrades of your digital design and engineering applications to a partner, which puts you ahead of your Digital Improver peers. Depending your service level agreement (SLA) with your partner, you are getting the latest updates with a regular cadence. If you want to take your agility one step further, you can move to a cloud-based delivery model, where you are always on the latest version of the digital design and engineering application.
+                Based on your overall ranking you are ahead of other Network Followers. Security plays a critical role in an organization\'s strategy and operations. It is often seen as the number 1 challenge and most companies indicate they are improving network security in response to accelerating requirements. Your network rapidly detects and responds to contain threats, which is essential in protecting your organization\'s assets. This is quite an advanced approach; looking at solutions that combine predictive analytics and automation to automatically reconfigure policies could take your security to the next level.
             </p>
         </div>
     ',
-    'digital-design-1-q5-5' => '
+    'intelligent-network-operations-1-q5-5' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are using a cloud-based delivery model for your digital design and engineering applications, which puts you far ahead of your Digital Improver peers. You should focus on other areas of digital business or digital delivery to improve your digital maturity.
-            </p>
-        </div>
-    ',
-
-    'digital-design-2-q5-1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are depending on manual processes to deliver digital design applications and upgrades, which puts you behind your Digital Achiever peers. Reliance on manual processes leads to technical debt, frustrations from the design engineers and general low responsiveness to business requirements. You need to become more proactive, leverage automation tools and cloud-based applications to increase your agility and improve your digital design capabilities.
-            </p>
-        </div>
-    ',
-    'digital-design-2-q5-2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are depending on manual processes to deliver digital design applications and upgrades, which puts you behind your Digital Achiever peers. Reliance on manual processes leads to technical debt, frustrations from the design engineers and general low responsiveness to business requirements. You need to become more proactive, leverage automation tools and cloud-based applications to increase your agility and improve your digital design capabilities.
-            </p>
-        </div>
-    ',
-    'digital-design-2-q5-3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Your IT department uses automation tools to devliver digital design applications and upgrades, which puts you at par with your Digital Achiever peers. If you want to take another step ahead, you can consider using cloud-based digital design and engineering tools, which automatically provide you the latest functionality and don\'t require any intervention from IT.
-            </p>
-        </div>
-    ',
-    'digital-design-2-q5-4' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You have outsourced the implementation and upgrades of your digital design and engineering applications to a partner, which puts you at par with your Digital Improver peers. Depending your service level agreement (SLA) with your partner, you are getting the latest updates with a regular cadence. If you want to take your agility one step further, you can move to a cloud-based delivery model, where you are always on the latest version of the digital design and engineering application.
-            </p>
-        </div>
-    ',
-    'digital-design-2-q5-5' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are using a cloud-based delivery model for your digital design and engineering applications, which puts you ahead of your Digital Achiever peers. You should focus on other areas of digital business or digital delivery to improve your digital maturity.
+                Based on your overall ranking you are way ahead of other Network Followers. Security plays a critical role in any organization\'s strategy and operations. It is often seen as the number 1 challenge and most companies indicate they are improving network security in response to accelerating requirements. You have a security policy management that is state-of-the-art, and automatically reconfigures to prevent emerging threats with predictive analytics. Before investigating how security can be integrated more closely with the rest of your operations, you should focus on taking the rest of your network to a higher level.
             </p>
         </div>
     ',
 
-    'digital-design-3-q5-1' => '
+    'intelligent-network-operations-2-q5-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are depending on manual processes to deliver digital design applications and upgrades, which puts you far behind your Digital Native peers. Reliance on manual processes leads to technical debt, frustrations from the design engineers and general low responsiveness to business requirements. You need to become more proactive, leverage automation tools and cloud-based applications to increase your agility and improve your digital design capabilities.
+                Based on your overall ranking you are behind other Network Generalists. Security plays a critical role in an organization\'s strategy and operations. It is often seen as the number 1 challenge and most companies indicate they are improving network security in response to accelerating requirements. You manage your security policy on a device-by-device basis, which can be quite a strain on your resources. You should address this in a more centralized and automated manner, which will enable you to drive efficiency and consistency, speed up update cycles, and reduce risk.
             </p>
         </div>
     ',
-    'digital-design-3-q5-2' => '
+    'intelligent-network-operations-2-q5-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are depending on manual processes to deliver digital design applications and upgrades, which puts you far behind your Digital Native peers. Reliance on manual processes leads to technical debt, frustrations from the design engineers and general low responsiveness to business requirements. You need to become more proactive, leverage automation tools and cloud-based applications to increase your agility and improve your digital design capabilities.
+                Based on your overall ranking you are in line with other Network Generalists. Security plays a critical role in an organization\'s strategy and operations. It is often seen as the number 1 challenge and most companies indicate they are improving network security in response to accelerating requirements. You have centralized access policy and controls, but manual tasks can be quite a strain on your resources, while longer response times to threats can leave your organization vulnerable. To move to a more advanced security management level you will need to start doing this in a more automated and dynamic manner. This will drive your efficiency and consistency, speed up update cycles, and reduce risk.
             </p>
         </div>
     ',
-    'digital-design-3-q5-3' => '
+    'intelligent-network-operations-2-q5-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your IT department uses automation tools to devliver digital design applications and upgrades, which leaves you behind your Digital Native peers. You need to accelerate your journey towards modern cloud-based digital design and engineering tools to catch up with your peers.
+                Based on your overall ranking you are in line with other Network Generalists. Security plays a critical role in an organization\'s strategy and operations. It is often seen as the number 1 challenge and most companies indicate they are improving network security in response to accelerating requirements. You dynamically enforce security policies across the network, but manual tasks can be quite a strain on your resources, while longer response times to threats can leave your organization vulnerable. Solutions that combine analytics and automation to rapidly detect and contain threats will improve your efficiency and response times and reduce risk.
             </p>
         </div>
     ',
-    'digital-design-3-q5-4' => '
+    'intelligent-network-operations-2-q5-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You have outsourced the implementation and upgrades of your digital design and engineering applications to a partner, which puts you behind your Digital Improver peers. Depending your service level agreement (SLA) with your partner, you are getting the latest updates with a regular cadence. If you want to take your agility one step further, you can move to a cloud-based delivery model, where you are always on the latest version of the digital design and engineering application.
+                Based on your overall ranking you are ahead other Network Generalists. Security plays a critical role in an organization\'s strategy and operations. It is often seen as the number 1 challenge and most companies indicate they are improving network security in response to accelerating requirements. Your network rapidly detects and responds to contain threats, which is essential in protecting your organization\'s assets. Solutions that combine predictive analytics and automation to automatically reconfigure policies could take your security to the next level.
             </p>
         </div>
     ',
-    'digital-design-3-q5-5' => '
+    'intelligent-network-operations-2-q5-5' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are using a cloud-based delivery model for your digital design and engineering applications, which puts you at par with your Digital Native peers. You should focus on other areas of digital business or digital delivery to improve your digital maturity.
+                Based on your overall ranking you are ahead other Network Generalists. Security plays a critical role in an organization\'s strategy and operations. It is often seen as the number 1 challenge and most companies indicate they are improving network security in response to accelerating requirements. Your security policy management is state-of-the-art, as it automatically reconfigures to prevent emerging threats with predictive analytics. While there is scope to investigate how security can be integrated more closely with the rest of your operations, you may want to focus on improving other networking elements with a weaker ranking first.
+            </p>
+        </div>
+    ',
+
+    'intelligent-network-operations-3-q5-1' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2">
+                Based on your overall ranking you are behind other Network Leaders. Security plays a critical role in an organization\'s strategy and operations. It is often seen as the number 1 challenge and most companies indicate they are improving network security in response to accelerating requirements. You still manage your security policy on a device-by-device basis, which can be quite a strain on your resources. You will need to take action now to bring this aspect more in line with your overall network ranking. A more centralized and automated approach should enable you to drive efficiency and consistency, speed up update cycles, and reduce risk.
+            </p>
+        </div>
+    ',
+    'intelligent-network-operations-3-q5-2' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2">
+                Based on your overall ranking you are behind other Network Leaders. Security plays a critical role in an organization\'s strategy and operations. It is often seen as the number 1 challenge and most companies indicate they are improving network security in response to accelerating requirements. You have centralized access policy and controls, but manual tasks can be quite a strain on your resources, while longer response times to threats can leave your organization vulnerable. To catch up with other Network Leaders you will need to start doing this in a more automated and dynamic manner. This will drive your efficiency and consistency, speed up update cycles, and reduce risk.
+            </p>
+        </div>
+    ',
+    'intelligent-network-operations-3-q5-3' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2">
+                Based on your overall ranking you are behind other Network Leaders. Security plays a critical role in an organization\'s strategy and operations. It is often seen as the number 1 challenge and most companies indicate they are improving network security in response to accelerating requirements. You dynamically enforce security policies across the network, but manual tasks can be quite a strain on your resources, while longer response times to threats can leave your organization vulnerable. To catch up with other Network Leaders you should consider solutions that combine analytics and automation to rapidly detect and contain threats, as this will improve your efficiency and response times and reduce risk.
+            </p>
+        </div>
+    ',
+    'intelligent-network-operations-3-q5-4' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2">
+                Based on your overall ranking you are behind other Network Leaders. Security plays a critical role in an organization\'s strategy and operations. It is often seen as the number 1 challenge and most companies indicate they are improving network security in response to accelerating requirements. You have a network that rapidly detects and responds to contain threats, which is essential in protecting your organization\'s assets. Solutions that combine predictive analytics and automation to automatically reconfigure policies could take your security to the next level.
+            </p>
+        </div>
+    ',
+    'intelligent-network-operations-3-q5-5' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2">
+                Based on your overall ranking you are in line with other Network Leaders. Security plays a critical role in an organization\'s strategy and operations. It is often seen as the number 1 challenge and most companies indicate they are improving network security in response to accelerating requirements. Your security policy management, which automatically reconfigures to prevent emerging threats with predictive analytics, is state-of-the-art. However, you should not be complacent, as you will need to continuously reassess what you do and investigate how security can be integrated more closely with the rest of your network.
             </p>
         </div>
     ',
 
     'question6' => '
         <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 font-bold text-dassault-blue-light">
-                Q6. What proportion of your organization\'s Digital Design application estate are the following ages since release?
+            <p class="w-4/5 ml-auto mb-2 font-bold text-vmware-blue-light">
+                Q6. What is your approach to using network intelligence to optimize the network?
             </p>
         </div>
     ',
 
-    'digital-design-1-q6-1' => '
+    'intelligent-network-operations-1-q6-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are using the latest versions of your digital design and engineering apps. This puts you well ahead of your Digital Improver peers. You should focus on other areas of digital business or digital delivery to improve your digital maturity.
+                Your score places you in line with other Network Followers. You only respond to network problems when a report is logged, which is a reactive approach. To move to the next level you need to adopt a more proactive and structural approach to ensure that network performance and cost effectiveness keep up with growing demands. Explore network intelligence and analytics solutions that can help you understand and optimize network and application performance.
             </p>
         </div>
     ',
-    'digital-design-1-q6-2' => '
+    'intelligent-network-operations-1-q6-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are using the latest versions of your digital design and engineering apps. This puts you well ahead of your Digital Improver peers. You should focus on other areas of digital business or digital delivery to improve your digital maturity.
+                Your score places you in line with other Network Followers. You are only triggered into action by device notifications, which is a reactive approach to network optimization. To move to the next level you should pursue a more proactive and systematic approach to ensure that network performance and cost effectiveness keep up with growing demands. Explore network intelligence and analytics solutions that can help you understand and optimize network and application performance.
             </p>
         </div>
     ',
-    'digital-design-1-q6-3' => '
+    'intelligent-network-operations-1-q6-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are not using the latest version of your digital design and engineering applications. This puts you at par with your Digital Improver peers. In order to stay competitive in the digital economy, attract the right employees and interact well with your ecosystem, you need to ensure that you are always on the most current version of your applications. Moving to a cloud-based solution enables you to always be on the latest version and have access to the latest innovative features of the application.
+                Your score places you ahead of other Network Followers, and you take structural measures to optimize your network. However, you could benefit from exploring a more proactive and forward-looking approach. Predictive analytics can help you anticipate performance issues and improve optimization.
             </p>
         </div>
     ',
-    'digital-design-1-q6-4' => '
+    'intelligent-network-operations-1-q6-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your digital design and engineering application is aging and you are not taking advantage of the most innovative features. This puts you at par with your Digital Improver peers. In order to stay competitive in the digital economy, attract the right employees and interact well with your ecosystem, you need to ensure that you are always on the most current version of your applications. Moving to a cloud-based solution enables you to always be on the latest version and have access to the latest innovative features of the application.
+                Your score places you far ahead of other Network Followers in your use of predictive analytics for network optimization. Your next step is to drive performance and efficiency further by automating your optimization task as much as possible.
             </p>
         </div>
     ',
-    'digital-design-1-q6-5' => '
+    'intelligent-network-operations-1-q6-5' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your digital design and engineering application is outdated. You are at risk of disruption by more agile competitors and you are not taking advantage of the most innovative features. This puts you at par with your Digital Improver peers. In order to stay competitive in the digital economy, attract the right employees and interact well with your ecosystem, you need to ensure that you are always on the most current version of your applications. Moving to a cloud-based solution enables you to always be on the latest version and have access to the latest innovative features of the application.
-            </p>
-        </div>
-    ',
-
-    'digital-design-2-q6-1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are using the latest versions of your digital design and engineering apps. This puts you well ahead of your Digital Achiever peers. You should focus on other areas of digital business or digital delivery to improve your digital maturity.
-            </p>
-        </div>
-    ',
-    'digital-design-2-q6-2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are using the latest versions of your digital design and engineering apps. This puts you well ahead of your Digital Achiever peers. You should focus on other areas of digital business or digital delivery to improve your digital maturity.
-            </p>
-        </div>
-    ',
-    'digital-design-2-q6-3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are not using the latest version of your digital design and engineering applications. This puts you at par with your Digital Achiever peers. In order to stay competitive in the digital economy, attract the right employees and interact well with your ecosystem, you need to ensure that you are always on the most current version of your applications. Moving to a cloud-based solution enables you to always be on the latest version and have access to the latest innovative features of the application.
-            </p>
-        </div>
-    ',
-    'digital-design-2-q6-4' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Your digital design and engineering application is aging and you are not taking advantage of the most innovative features. This puts you behind your Digital Achiever peers. In order to stay competitive in the digital economy, attract the right employees and interact well with your ecosystem, you need to ensure that you are always on the most current version of your applications. Moving to a cloud-based solution enables you to always be on the latest version and have access to the latest innovative features of the application.
-            </p>
-        </div>
-    ',
-    'digital-design-2-q6-5' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Your digital design and engineering application is outdated. You are at risk of disruption by more agile competitors and you are not taking advantage of the most innovative features. This puts you far behind your Digital Improver peers. In order to stay competitive in the digital economy, attract the right employees and interact well with your ecosystem, you need to ensure that you are always on the most current version of your applications. Moving to a cloud-based solution enables you to always be on the latest version and have access to the latest innovative features of the application.
+                Your score places you far ahead of other Network Followers. You have an advanced approach to network optimization compared to your peers, and this is automated by leveraging predictive analytics. To stay ahead, you should direct your efforts to driving automation and orchestration across different network domains, such as campus, WAN, and datacenter.
             </p>
         </div>
     ',
 
-    'digital-design-3-q6-1' => '
+    'intelligent-network-operations-2-q6-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are using the latest versions of your digital design and engineering apps. This puts you at par with your Digital Native peers. You should focus on other areas of digital business or digital delivery to improve your digital maturity.
+                Your score places you behind other Network Generalists. You only respond to network problems when a report is logged, which is a reactive approach. To move to the next level you need to adopt a more proactive and systematic approach to ensure that network performance and cost effectiveness keep up with growing demands. Explore network intelligence and analytics solutions that can help you understand and optimize network and application performance.
             </p>
         </div>
     ',
-    'digital-design-3-q6-2' => '
+    'intelligent-network-operations-2-q6-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are using the latest versions of your digital design and engineering apps. This puts you at par with your Digital Native peers. You should focus on other areas of digital business or digital delivery to improve your digital maturity.
+                Your score places you behind other Network Generalists. You are only triggered into action by device notifications, which is a reactive approach to network optimization. To move to the next level you should pursue a more proactive and systematic approach to ensure that network performance and cost effectiveness keep up with growing demands. Explore network intelligence and analytics solutions that can help you understand and optimize network and application performance.
             </p>
         </div>
     ',
-    'digital-design-3-q6-3' => '
+    'intelligent-network-operations-2-q6-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are not using the latest version of your digital design and engineering applications. This puts you behind your Digital Achiever peers. In order to stay competitive in the digital economy, attract the right employees and interact well with your ecosystem, you need to ensure that you are always on the most current version of your applications. Moving to a cloud-based solution enables you to always be on the latest version and have access to the latest innovative features of the application.
+                In line with your overall ranking as a Network Generalist you take structural measures to optimize your network. However, you could benefit from exploring a more proactive and forward-looking approach. Predictive analytics can help you anticipate performance issues and improve optimization.
             </p>
         </div>
     ',
-    'digital-design-3-q6-4' => '
+    'intelligent-network-operations-2-q6-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your digital design and engineering application is aging and you are not taking advantage of the most innovative features. This puts you far behind your Digital Native peers. In order to stay competitive in the digital economy, attract the right employees and interact well with your ecosystem, you need to ensure that you are always on the most current version of your applications. Moving to a cloud-based solution enables you to always be on the latest version and have access to the latest innovative features of the application.
+                You are ahead of other Network Generalists in your use of predictive analytics to start manually optimizing your network. Your next step is to drive performance and efficiency further by automating your optimization tasks as much as possible.
             </p>
         </div>
     ',
-    'digital-design-3-q6-5' => '
+    'intelligent-network-operations-2-q6-5' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your digital design and engineering application is outdated. You are at risk of disruption by more agile competitors and you are not taking advantage of the most innovative features. This puts you far behind your Digital Native peers. In order to stay competitive in the digital economy, attract the right employees and interact well with your ecosystem, you need to ensure that you are always on the most current version of your applications. Moving to a cloud-based solution enables you to always be on the latest version and have access to the latest innovative features of the application.
+                Your score places you ahead of other Network Generalists, leveraging automated predictive analytics. To stay ahead, you should direct your efforts to driving automation and orchestration across different network domains, such as campus, WAN, and datacenter.
+            </p>
+        </div>
+    ',
+
+    'intelligent-network-operations-3-q6-1' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2">
+                Your score places you behind other Network Leaders. You only respond to network problems when a report is logged, which is a reactive approach. You need to adopt a more proactive and systematic approach to ensure that network performance and cost effectiveness keep up with growing demands. Explore network intelligence and analytics solutions that can help you understand and optimize network and application performance.
+            </p>
+        </div>
+    ',
+    'intelligent-network-operations-3-q6-2' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2">
+                Your score places you behind other Network Leaders. You are only triggered into action by device notifications, which is a reactive approach to network optimization. To keep up with your peers you should pursue a more proactive and systematic approach to ensure that network performance and cost effectiveness keep up with growing demands. Explore network intelligence and analytics solutions that can help you understand and optimize network and application performance.
+            </p>
+        </div>
+    ',
+    'intelligent-network-operations-3-q6-3' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2">
+                Your score places you behind other Network Leaders, though you take structural measures to optimize your network and would benefit from exploring a more proactive and forward-looking approach. Predictive analytics can help you anticipate performance issues and improve optimization.
+            </p>
+        </div>
+    ',
+    'intelligent-network-operations-3-q6-4' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2">
+                In line with other Network Leaders your use of predictive analytics has brought you a long way when it comes to network optimization. Your next step is to drive performance and efficiency further by automating your optimization tasks as much as possible.
+            </p>
+        </div>
+    ',
+    'intelligent-network-operations-3-q6-5' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2">
+                Your score places you in line with other Network Leaders, leveraging automated predictive analytics. To stay ahead, you should direct your efforts to driving automation and orchestration across different network domains, such as campus, WAN, and datacenter.
+            </p>
+        </div>
+    ',
+    
+    'security-enabled-networking-intro' => '
+        <div class="clearfix">
+            <div class="w-1/5 h-32 float-left">
+                <div class="bg-center bg-top bg-no-repeat mx-auto" style="background-image: url(:icon); width: 20mm; height:20mm;"></div>
+            </div>
+            <div class="w-4/5 float-left">
+                <h2 class="text-vmware-blue mb-6">Security-enabled Networking </h2>
+                <p class="mb-2">
+                    Creating a network that enables security by design across your infrastructure requires changes to tools, people, and processes. Best practices include adopting new networking tools such as microsegmentation and anomaly detection, breaking down silos between the network and security teams, and involving the security team at the inception of digital transformation projects.
+                </p>
+            </div>
+        </div>
+    ',
+    'security-enabled-networkinggraph' => '
+        <div class="my-5 relative" style="width:160mm;height:61.19mm; background: url(:url) no-repeat; background-size:cover">
+            <div class="shadow rounded bg-vmware-green absolute" style="width: :overall; height: 10mm; top:18mm; left:33mm;"></div>
+            <div class="shadow rounded bg-vmware-blue-bright absolute" style="width: :security-enabled-networking; height: 10mm; top:37mm; left:33mm;"></div>
+        </div>
+    ',
+
+    'security-enabled-networking-1-stage1' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2 text-vmware-blue mt-4 font-bold">
+                Based on your responses, your organization is behind its peers when it comes to security-enabled networking, which is consistent with its overall ranking as a Network Follower.
+            </p>
+        </div>
+    ',
+    'security-enabled-networking-1-stage2' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2 text-vmware-blue mt-4 font-bold">
+                Based on your responses, your organization is in line with its peers when it comes to security-enabled networking, which is more advanced than its overall ranking as a Network Follower.
+            </p>
+        </div>
+    ',
+    'security-enabled-networking-1-stage3' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2 text-vmware-blue mt-4 font-bold">
+                Based on your responses, your organization is ahead of its peers when it comes to security-enabled networking, which is quite advanced compared to its overall ranking as a Network Follower.
+            </p>
+        </div>
+    ',
+
+    'security-enabled-networking-2-stage1' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2 text-vmware-blue mt-4 font-bold">
+                Based on your responses, your organization is behind the average when it comes to security-enabled networking, which means this area is less developed than its overall ranking as a Network Generalist suggests.
+            </p>
+        </div>
+    ',
+    'security-enabled-networking-2-stage2' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2 text-vmware-blue mt-4 font-bold">
+                Based on your responses, your organization is in line with the average when it comes to security-enabled networking, which is consistent with its overall ranking as a Network Generalist.
+            </p>
+        </div>
+    ',
+    'security-enabled-networking-2-stage3' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2 text-vmware-blue mt-4 font-bold">
+                Based on your responses, your organization is ahead of the average when it comes to security-enabled networking, which is more advanced than its overall ranking as a Network Generalist.
+            </p>
+        </div>
+    ',
+
+    'security-enabled-networking-3-stage1' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2 text-vmware-blue mt-4 font-bold">
+                Based on your responses, your organization scores lower than the average when it comes to security-enabled networking, which is behind its overall ranking as a Network Leader.
+            </p>
+        </div>
+    ',
+
+    'security-enabled-networking-3-stage2' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2 text-vmware-blue mt-4 font-bold">
+                Based on your responses, your organization is in line with the average when it comes to security-enabled networking, which is behind its overall ranking as a Network Leader.
+            </p>
+        </div>
+    ',
+    
+    'security-enabled-networking-3-stage3' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2 text-vmware-blue mt-4 font-bold">
+                Based on your responses, your organization is ahead of the average when it comes to security-enabled networking, which is in line with its overall ranking as a Network Leader.
             </p>
         </div>
     ',
 
     'question7' => '
         <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 font-bold text-dassault-blue-light">
-                Q7. On a scale of 1 to 5, how successfully does your Digital Design solution rate for the following? 
+            <p class="w-4/5 ml-auto mb-2 font-bold text-vmware-blue-light">
+                Q7. What is the approach to security risks in your organisation?
             </p>
         </div>
     ',
 
-    'digital-design-1-q7-1' => '
+    'security-enabled-networking-1-q7-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your current digital design and engineering application does not support your digital business strategy. This puts you at par with your Digital Improver peers. You should evaluate either the latest version of your current application or an alternative application to get better reliability, performance, security, value for money, newer features, better collaboration and ecosystem integration. Having a modern digital design and engineering application solution is critical to digital business success, because collaboration internally with employees and externally with ecosystem partners requires a scalable and modern platform. You should consider moving to a cloud-based solution to improve the user experience and operational efficiency of your digital design and engineering application.
+                Based on your overall score, you are in line with other Network Followers. Network transformation introduces new risks for the organization. By failing to address new risks and focusing on defending the perimeter alone, cybersecurity can fail to effectively address new and growing risks to the organization. By concentrating on business issues and not only on security technology issues, digital risk should become part of your cybersecurity efforts, with security operations becoming a core part of overall corporate risk management.
             </p>
         </div>
     ',
-    'digital-design-1-q7-2' => '
+    'security-enabled-networking-1-q7-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your current digital design and engineering application does not support your digital business strategy. This puts you at par with your Digital Improver peers. You should evaluate either the latest version of your current application or an alternative application to get better reliability, performance, security, value for money, newer features, better collaboration and ecosystem integration. Having a modern digital design and engineering application solution is critical to digital business success, because collaboration internally with employees and externally with ecosystem partners requires a scalable and modern platform. You should consider moving to a cloud-based solution to improve the user experience and operational efficiency of your digital design and engineering application.
+                Based on your overall score, you are ahead of other Network Followers. Network transformation introduces new risks for the organization. You have taken a good first step by introducing frameworks, but you should go further and introduce digital risk as an integral part of your cybersecurity efforts and make security operations a core part of corporate risk management. This will help you toward achieving security by design at all levels of operations and teams.
             </p>
         </div>
     ',
-    'digital-design-1-q7-3' => '
+    'security-enabled-networking-1-q7-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your current digital design and engineering application supports your digital business strategy to some degree. This puts you ahead of your Digital Improver peers. To move even further ahead, you should evaluate either the latest version of your current application or an alternative application to get better reliability, performance, security, value for money, newer features, better collaboration and ecosystem integration. Having a modern digital design and engineering application solution is critical to digital business success, because collaboration internally with employees and externally with ecosystem partners requires a scalable and modern platform. You should consider moving to a cloud-based solution to improve the user experience and operational efficiency of your digital design and engineering application.
+                Based on your overall score, you are ahead of other Network Followers. Network transformation introduces new risks for the organization. You are proactive in your transformation journey toward achieving security by design at all levels of operations and teams. You should continue to drive change by implementing digital risk as part of your cybersecurity efforts to take you to the next level.
             </p>
         </div>
     ',
-    'digital-design-1-q7-4' => '
+    'security-enabled-networking-1-q7-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your current digital design and engineering application supports your digital business very well. This puts you far ahead of your Digital Improver peers. You should focus on other aspects of digital business, digital design or digital delivery to improve your digital maturity.
+                Based on your overall score, you are far ahead of other Network Followers. Your proactive approach to security demonstrates your strategic enterprisewide planning. By fully implementing security by design and making security operations a core part of corporate risk management could take your security to the next level.
+            </p>
+        </div>
+    ',
+    'security-enabled-networking-1-q7-5' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2">
+                Based on your overall score, you are far ahead of other Network Followers. You have implemented security by design at all levels of your organization with cybermitigation part of all operations and teams. Before investigating how security can be extended to the broad business objectives of your digital transformation strategy, you should focus on taking the rest of your network to a higher level.
             </p>
         </div>
     ',
 
-    'digital-design-2-q7-1' => '
+    'security-enabled-networking-2-q7-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your current digital design and engineering application does not support your digital business strategy. This puts you behind your Digital Achiever peers. You should evaluate either the latest version of your current application or an alternative application to get better reliability, performance, security, value for money, newer features, better collaboration and ecosystem integration. Having a modern digital design and engineering application solution is critical to digital business success, because collaboration internally with employees and externally with ecosystem partners requires a scalable and modern platform. You should consider moving to a cloud-based solution to improve the user experience and operational efficiency of your digital design and engineering application.
+                Based on your overall score, you are behind other Network Generalists. Network transformation introduces new risks for the organization. By failing to address new risks and focusing on defending the perimeter alone, cybersecurity can fail to effectively address new and growing risks to the organization. By concentrating on business issues and not only on security technology issues, digital risk should become part of your cybersecurity efforts, with security operations becoming a core part of overall corporate risk management.
             </p>
         </div>
     ',
-    'digital-design-2-q7-2' => '
+    'security-enabled-networking-2-q7-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your current digital design and engineering application does not support your digital business strategy. This puts you behind your Digital Achiever peers. You should evaluate either the latest version of your current application or an alternative application to get better reliability, performance, security, value for money, newer features, better collaboration and ecosystem integration. Having a modern digital design and engineering application solution is critical to digital business success, because collaboration internally with employees and externally with ecosystem partners requires a scalable and modern platform. You should consider moving to a cloud-based solution to improve the user experience and operational efficiency of your digital design and engineering application.
+                Based on your overall score, you are behind other Network Generalists. Network transformation introduces new risks for the organization. You have taken a good first step by introducing frameworks, but you should go further and introduce digital risk as an integral part of your cybersecurity efforts and make security operations a core part of corporate risk management. This will help you toward achieving security by design at all levels of operations and teams.
             </p>
         </div>
     ',
-    'digital-design-2-q7-3' => '
+    'security-enabled-networking-2-q7-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your current digital design and engineering application supports your digital business strategy to some degree. This puts you at par with your Digital Achiever peers. To move further ahead, you should evaluate either the latest version of your current application or an alternative application to get better reliability, performance, security, value for money, newer features, better collaboration and ecosystem integration. Having a modern digital design and engineering application solution is critical to digital business success, because collaboration internally with employees and externally with ecosystem partners requires a scalable and modern platform. You should consider moving to a cloud-based solution to improve the user experience and operational efficiency of your digital design and engineering application.
+                Based on your overall score, you are in line with other Network Generalists. Network transformation introduces new risks for the organization. You are proactive in your transformation journey toward achieving security by design at all levels of operations and teams. You should continue to drive change by implementing digital risk as an integral part of cybersecurity and make security operations a core part of corporate risk management. 
             </p>
         </div>
     ',
-    'digital-design-2-q7-4' => '
+    'security-enabled-networking-2-q7-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your current digital design and engineering application supports your digital business very well. This puts you ahead of your Digital Achiever peers. You should focus on other aspects of digital business, digital design or digital delivery to improve your digital maturity.
+                Based on your overall score, you are ahead of other Network Generalists. Network transformation introduces new risks for the organization. Your proactive approach to security shows your strategic enterprisewide planning. Fully aligning security with your businesses digital transformation programs is fundamental. Security by design implemented organizationwide, with security operations becoming a core part of overall corporate risk management, could also help you to take your security to the next level.
+            </p>
+        </div>
+    ',
+    'security-enabled-networking-2-q7-5' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2">
+                Based on your overall score, you are ahead of other Network Generalists. Network transformation introduces new risks for the organization. You have implemented security by design at all levels of your organization with cybermitigation part of all operations and teams. While there is scope to investigate how security can be extended to the broad business objectives of your digital transformation, you may want to focus on improving other networking elements with a weaker ranking first.
             </p>
         </div>
     ',
 
-    'digital-design-3-q7-1' => '
+    'security-enabled-networking-3-q7-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your current digital design and engineering application does not support your digital business strategy. This puts you far behind your Digital Native peers. You should evaluate either the latest version of your current application or an alternative application to get better reliability, performance, security, value for money, newer features, better collaboration and ecosystem integration. Having a modern digital design and engineering application solution is critical to digital business success, because collaboration internally with employees and externally with ecosystem partners requires a scalable and modern platform. You should consider moving to a cloud-based solution to improve the user experience and operational efficiency of your digital design and engineering application.
+                Based on your overall score, you are behind other Network Leaders. Network transformation introduces new risks for the organization. By failing to address new risks and defending the perimeter alone, cybersecurity can fail to effectively address new and growing risks to the organization. You still avoid any risks with technology, business model, or exposure, and focus on the perimeter. You will need to take action now to bring this aspect more in line with your overall more advanced network ranking.
             </p>
         </div>
     ',
-    'digital-design-3-q7-2' => '
+    'security-enabled-networking-3-q7-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your current digital design and engineering application does not support your digital business strategy. This puts you far behind your Digital Native peers. You should evaluate either the latest version of your current application or an alternative application to get better reliability, performance, security, value for money, newer features, better collaboration and ecosystem integration. Having a modern digital design and engineering application solution is critical to digital business success, because collaboration internally with employees and externally with ecosystem partners requires a scalable and modern platform. You should consider moving to a cloud-based solution to improve the user experience and operational efficiency of your digital design and engineering application.
+                Based on your overall score, you are behind other Network Leaders. Network transformation introduces new risks for the organization. You have taken a good first step by introducing frameworks, but to catch up you will need to go further and introduce digital risk as an integral part of your cybersecurity efforts and make security operations a core part of corporate risk management. This will help you toward achieving security by design at all levels of operations and teams to reach a maturity level more in line with your peers.
             </p>
         </div>
     ',
-    'digital-design-3-q7-3' => '
+    'security-enabled-networking-3-q7-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your current digital design and engineering application supports your digital business strategy to some degree. This puts you behind your Digital Native peers. To catch up, you should evaluate either the latest version of your current application or an alternative application to get better reliability, performance, security, value for money, newer features, better collaboration and ecosystem integration. Having a modern digital design and engineering application solution is critical to digital business success, because collaboration internally with employees and externally with ecosystem partners requires a scalable and modern platform. You should consider moving to a cloud-based solution to improve the user experience and operational efficiency of your digital design and engineering application.
+                Based on your overall score, you are behind other Network Leaders. Network transformation introduces new risks for the organization. You are proactive in your transformation journey toward achieving security by design at all levels of operations and teams. You should continue to drive change by implementing digital risk as an integral part of cybersecurity and make security operations a core part of corporate risk management. 
             </p>
         </div>
     ',
-    'digital-design-3-q7-4' => '
+    'security-enabled-networking-3-q7-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your current digital design and engineering application supports your digital business very well. This puts you at par with your Digital Native peers. You should focus on other aspects of digital business, digital design or digital delivery to improve your digital maturity.
+                Based on your overall score, you are in line with other Network Leaders. Your proactive approach to security shows your strategic enterprisewide planning. Fully aligning security with your business\' digital transformation programs is fundamental. Security by design implemented organizationwide, with security operations becoming a core part of overall corporate risk management, could also help you to take your security to the next level.
             </p>
         </div>
     ',
-    
-    'digital-deliveryintro' => '
-        <h2 class="w-4/5 ml-auto text-dassault-blue mb-6">DIGITAL DELIVERY</h2>
+    'security-enabled-networking-3-q7-5' => '
         <div class="clearfix">
-            <div class="w-1/5 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 25mm;"></div>
-            <div class="w-4/5 float-left">
-                <p class="mb-2">
-                    Digital Delivery is about the alignment of IT with the business. Is IT seen as an enabler of digital business strategies or is it just considered a necessary cost? Has IT embraced modern delivery tools like cloud or is everything delivered manually and with internal assets and resources? Getting IT processes and delivery models right is critical to provide the agility and flexibility that start ups and SMBs require to react quickly to changing business patterns and staffing levels, as well creating great experiences for employees, customers and ecosystem partners.
-                </p>
-                <p class="mb-2">
-                    This section of the report assesses the stage of your organization\'s Digital Maturity based on your ability to deliver digital design and engineering tools, how IT is perceived by top management and if cloud-based delivery models are being used.
-                </p>
-            </div>
-        </div>
-    ',
-    'digital-deliverygraph' => '
-        <div class="ml-8 my-4 inline-block">:graph</div>
-    ',
-
-    'digital-delivery-1-stage1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue mt-4 font-bold">
-                Your overall score for this section indicates that you are in line with your Digital Improver peers with respect to the progress you have made so far. You are at the beginning of your journey, so there are many areas you need to address. You can look in to individual assessment areas within this section to understand what changes you could potentially make to improve your digital maturity.
+            <p class="w-4/5 ml-auto mb-2">
+                Based on your overall score, you are in line with other Network Leaders. By implementing security by design at all levels of your organization, you are in a good place, but remember that security strategy is a precursor to digital risk, and that business performance and innovation should always be taken into account. Security needs to be positioned as an enabler — if not an accelerator — of digital transformation, so continue to influence the board in this regard.
             </p>
         </div>
-    ',
-    'digital-delivery-1-stage2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue mt-4 font-bold">
-                Your overall score for this section indicates that you are ahead of your Digital Improver peers with respect to the progress you have made so far. Very well done! While keeping up with this, you must also look at aspects related to digital design and digital design to improve your overall digital maturity.
-            </p>
-        </div>
-    ',
-    'digital-delivery-1-stage3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue mt-4 font-bold">
-                Your overall score for this section indicates that you are ahead of your Digital Improver peers with respect to the progress you have made so far. Very well done! While keeping up with this, you must also look at aspects related to digital business and digital design to improve your overall digital maturity.
-            </p>
-        </div>
-    ',
-
-    'digital-delivery-2-stage1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue mt-4 font-bold">
-                Your overall score for this section indicates that you are lagging behind your Digital Achiever peers with respect to your digital delivery approach. Digital delivery is an area that you should improve to catch up with your peers,  so you must take steps to accelerate the journey now. You should look in to individual assessment areas within this section to understand what changes you could potentially make to your digital delivery approach to improve your digital maturity.
-            </p>
-        </div>
-    ',
-    'digital-delivery-2-stage2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue mt-4 font-bold">
-                Your overall score in this section indicates that you are in line with your Digital Achiever peers with respect to the progress you have made in making your business digital. You are well on your way, but don\'t think of stopping just yet. You can look into individual assessment areas within this section to understand what changes you could potentially make to your digital delivery capabilities for further progress in your digital maturity.
-            </p>
-        </div>
-    ',
-    'digital-delivery-2-stage3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue mt-4 font-bold">
-                Your overall score for this section indicates that you are ahead of your Digital Achiever peers with respect to the progress you have made. Very well done on your journey so far! While keeping up with this, you must also look at aspects related to digital business and digital design to improve your overall digital maturity.
-            </p>
-        </div>
-    ',
-
-    'digital-delivery-3-stage1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue mt-4 font-bold">
-                Your overall score in this area indicates that you are lagging much behind other Digital Native peers in your digital delivery. You should look in to individual assessment areas within this section to understand what changes you could potentially make to your digital business approach. You have a lot of work to do so you should act urgently to address the areas of improvement. This will help you sustain your strong position with respect to your overall digital maturity.
-            </p>
-        </div>
-    ',
-
-    'digital-delivery-3-stage2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue mt-4 font-bold">
-                Your overall score in this area indicates that you are lagging behind other Digital Native peers with regards to your digital delivery approach. You should look in to individual assessment areas within this section to understand what changes you could potentially make to your digital delivery approach. You have a lot of work to do so you should act urgently to address the areas of improvement. This will help sustain your strong position with respect to your overall digital maturity.
-            </p>
-        </div>
-    ',
-    
-    'digital-delivery-3-stage3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue mt-4 font-bold">
-                Your overall score in this area indicates that you are in line with the digital native peers with respect to the progress you have made with regards to your digital delivery approach. While keeping up with this, you can look at areas of improvement if any, related to digital business and digital design to improve your overall digital maturity.
-            </p>
-        </div>
-    ',
-
-    'digital-deliverygraph'=>'
-        <div class="ml-8 my-4 inline-block">:graph</div>
     ',
 
     'question8' => '
         <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 font-bold text-dassault-blue-light">
-                Q8. How does the Senior Management of the company view the role of IT within the business?
+            <p class="w-4/5 ml-auto mb-2 font-bold text-vmware-blue-light">
+                Q8. To what extent do you make use of the following in your network/infrastructure?
             </p>
         </div>
     ',
 
-    'digital-delivery-1-q8-1' => '
+    'security-enabled-networking-1-q8-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your senior management sees IT as a necessary evil that does not provide any significant value or differentiation. This puts you at par with your Digital Improver peers. Unfortunately, this perception usually leads to underinvestment in digital applications and IT infrastructure, which in turn creates a bad working experience for employees and leaves IT on the backfoot with regards to reacting to business requirements. To improve your digital delivery capabilities, create a proof of concept where you react fast to a business requirement and demonstrate that you can deliver digital innovation. Moving to a cloud-based delivery model also changes the dynamics internally, as you move from a CAPEX to an OPEX model, where the operating cost is closely aligned with the changes in the business. For example, if your staff levels are fluctuating significantly throughout the year, you can adjust the number of user licenses based on your actual staffing levels, which lets you react quickly to changes in the business without a huge upfront investment.
+                You are in line with your Network Follower peers by making limited use of tools and functions like anomaly detection and network microsegmentation. To move to the next level, start investigating the value these tools can add to your business.
             </p>
         </div>
     ',
-    'digital-delivery-1-q8-3' => '
+    'security-enabled-networking-1-q8-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your senior management primarily sees IT as a means to improve business efficieny. This is the first step of digital transformation, where you use IT to improve your current business processes, but it is not real transformation. This puts you ahead of your Digital Improver peers. If you want to demonstrate real transformation driven by IT, you need to support digital business innovation, through providing a modern platform for collaboration, both internally and with the external ecosystem.
+                You are ahead of your Network Follower peers by making some use of tools and functions like anomaly detection and microsegmentation. To move to the next level you need to increase your use of these type of tools to optimize your network performance and security.
             </p>
         </div>
     ',
-    'digital-delivery-1-q8-5' => '
+    'security-enabled-networking-1-q8-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are lucky! Your senior management sees IT as a driver for differentiation and innovation, which usually leads to a positive investment climate for modern applications and delivery models. This puts you far ahead of your Digital Improver peers. 
+                You are ahead of your Network Follower peers by extensively using tools and functions like anomaly detection and microsegmentation. The next step is to automate as many of these processes as possible.
             </p>
         </div>
     ',
     
 
-    'digital-delivery-2-q8-1' => '
+    'security-enabled-networking-2-q8-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your senior management sees IT as a necessary evil that does not provide any significant value or differentiation. This puts you behind your Digital Achiever peers. Unfortunately, this perception usually leads to underinvestment in digital applications and IT infrastructure, which in turn creates a bad working experience for employees and leaves IT on the backfoot with regards to reacting to business requirements. To improve your digital delivery capabilities, create a proof of concept where you react fast to a business requirement and demonstrate that you can deliver digital innovation. Moving to a cloud-based delivery model also changes the dynamics internally, as you move from a CAPEX to an OPEX model, where the operating cost is closely aligned with the changes in the business. For example, if your staff levels are fluctuating significantly throughout the year, you can adjust the number of user licenses based on your actual staffing levels, which lets you react quickly to changes in the business without a huge upfront investment.
+                You rank behind your Network Generalist peers by making limited use of tools and functions like anomaly detection and network microsegmentation. To move to the next level start investigating the value these tools can add to your business.
             </p>
         </div>
     ',
-    'digital-delivery-2-q8-3' => '
+    'security-enabled-networking-2-q8-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your senior management primarily sees IT as a means to improve business efficieny. This is the first step of digital transformation, where you use IT to improve your current business processes, but it is not real transformation. This puts you at par with your Digital Achiever peers. If you want to demonstrate real transformation driven by IT, you need to support digital business innovation, through providing a modern platform for collaboration, both internally and with the external ecosystem.
+                You are in line with your Network Generalist peers by making some use of tools and functions like anomaly detection and microsegmentation. To move to the next level you need to increase your use of these type of tools to optimize your network performance and security.
             </p>
         </div>
     ',
-    'digital-delivery-2-q8-5' => '
+    'security-enabled-networking-2-q8-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are lucky! Your senior management sees IT as a driver for differentiation and innovation, which usually leads to a positive investment climate for modern applications and delivery models. This puts you ahead of your Digital Achiever peers. 
+                You are ahead of your Network Generalist peers by extensively using tools and functions like anomaly detection and microsegmentation. The next step is to automate more of these processes as far as possible.
             </p>
         </div>
     ',
     
-    'digital-delivery-3-q8-1' => '
+    'security-enabled-networking-3-q8-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your senior management sees IT as a necessary evil that does not provide any significant value or differentiation. This puts you far behind your Digital Native peers. Unfortunately, this perception usually leads to underinvestment in digital applications and IT infrastructure, which in turn creates a bad working experience for employees and leaves IT on the backfoot with regards to reacting to business requirements. To improve your digital delivery capabilities, create a proof of concept where you react fast to a business requirement and demonstrate that you can deliver digital innovation. Moving to a cloud-based delivery model also changes the dynamics internally, as you move from a CAPEX to an OPEX model, where the operating cost is closely aligned with the changes in the business. For example, if your staff levels are fluctuating significantly throughout the year, you can adjust the number of user licenses based on your actual staffing levels, which lets you react quickly to changes in the business without a huge upfront investment.
+                You rank behind your Network Leader peers by making limited use of tools and functions like anomaly detection and network microsegmentation. To move to the next level, start investigating the value these tools can add to your business.
             </p>
         </div>
     ',
-    'digital-delivery-3-q8-3' => '
+    'security-enabled-networking-3-q8-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your senior management primarily sees IT as a means to improve business efficieny. This is the first step of digital transformation, where you use IT to improve your current business processes, but it is not real transformation. This puts you behind your Digital Native peers. If you want to demonstrate real transformation driven by IT, you need to support digital business innovation, through providing a modern platform for collaboration, both internally and with the external ecosystem.
+                You are behind your Network Leader peers by making some use of tools and functions like anomaly detection and microsegmentation. To move to the next level you need to increase your use of these type of tools to optimize your network performance and security.
             </p>
         </div>
     ',
-    'digital-delivery-3-q8-5' => '
+    'security-enabled-networking-3-q8-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your senior management sees IT as a driver for differentiation and innovation, which usually leads to a positive investment climate for modern applications and delivery models. This puts you at par with your Digital Native peers. 
+                You are in line with your Network Leader peers, extensively using tools and functions like anomaly detection and microsegmentation. The next step is to automate more of these processes as far as possible.
             </p>
         </div>
     ',
 
     'question9' => '
         <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 font-bold text-dassault-blue-light">
-                Q9. Please indicate how your organization is primarily delivering (or plans to deliver) each of the following application types to end users?
+            <p class="w-4/5 ml-auto mb-2 font-bold text-vmware-blue-light">
+                Q9. To what extent is IT security embedded into new business initiatives in your organization? [SELECT ONE]
             </p>
         </div>
     ',
 
-    'digital-delivery-1-q9-1' => '
+    'security-enabled-networking-1-q9-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are delivering most of your applications with in-house IT assets and resources. This puts you at par with your Digital Improver peers. As a start-up or SMB, you will have greater flexibility, agility and security, if you move to a cloud-based delivery model for your applications, instead of investing into in-house servers and storage. By moving to the cloud, you always have access to the latest features and functions, do not have to worry about sizing, implementing, operating and maintaining on-premise IT assets, and can scale up and down based on business demand instead of sizing the IT environment for peak performance.
+                Your position is in line with other Network Followers. Your organization doesn\'t involve the security team in any new initiative, which may lead to costly security incidents down the line. To move to the next level it is critical to embed security into strategic projects at their inception.
             </p>
         </div>
     ',
-    'digital-delivery-1-q9-2' => '
+    'security-enabled-networking-1-q9-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are delivering most of your applications with in-house IT assets and resources as well as managed services. This puts you at par with your Digital Improver peers. As a start-up or SMB, you will have greater flexibility, agility and security, if you move to a cloud-based delivery model for your applications, instead of investing into in-house servers and storage. By moving to the cloud, you always have access to the latest features and functions, do not have to worry about sizing, implementing, operating and maintaining on-premise IT assets, and can scale up and down based on business demand instead of sizing the IT environment for peak performance.
+                Your position is in line with other Network Followers. Security is alerted to new initiatives but not explicitly involved. You should start to align business and security by involving senior non-IT executives in discussions as it is critical to embed security into strategic projects at their inception.
             </p>
         </div>
     ',
-    'digital-delivery-1-q9-3' => '
+    'security-enabled-networking-1-q9-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are primarily delivering your applications through external providers, either managed services or cloud services. This puts you ahead of your Digital Improver peers. Depending on the service level agreements (SLAs) that you have with your managed service provider, you are some flexibilty to react to changing business requirements and to adjust the number of users up and down as needed, which is critical to digital business success. You will also have access to innovative features at a regular cadence.
+                You are ahead of other Network Followers. Security is brought into initiatives, but post-release, which remains a risky strategy. You should aim to bring security into initiatives as early as possible. This increases visibility and ensures the business has a full view of the cybersecurity risk management plan. If there are any deviations between the business planned risk and the security team\'s understanding of that risk, then this can be identified and resolved early and quickly.
             </p>
         </div>
     ',
-    'digital-delivery-1-q9-4' => '
+    'security-enabled-networking-1-q9-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are mainly delivering your applications through a cloud-based delivery model. This puts you well ahead of your Digital Improver peers. You have continous access to the latest features and functions, can scale dynamically based on business demands and enable collobaration and innovation for your employees and with your ecoystem partners. You should look at other aspects in digital business or digital design to improve your digital maturity.
+                You are ahead of other Network Followers. You are bringing security in before the execution of any new initiative, and this increases visibility and ensures the business has a full view of the cybersecurity risk management plan. If there are any deviations between the business planned risk and the security team\'s understanding of that risk, then this can be identified and resolved early and quickly. This is quite an advanced approach, but you should aim to involve the security teams during the blueprint stage of any new project to ensure that business and security objectives and risk attitudes are aligned.
+            </p>
+        </div>
+    ',
+    'security-enabled-networking-1-q9-5' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2">
+                Your position is far ahead of other Network Followers. Your organization has an advanced approach to planning strategic projects, meaning there is a full alignment between business and security. Before investigating how visibility of the security situation underpins all other efforts to engage with the business, you should focus on taking the rest of your network to a higher level.
             </p>
         </div>
     ',
 
-    'digital-delivery-2-q9-1' => '
+    'security-enabled-networking-2-q9-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are delivering most of your applications with in-house IT assets and resources. This puts you behind your Digital Achiever peers. As a start-up or SMB, you will have greater flexibility, agility and security, if you move to a cloud-based delivery model for your applications, instead of investing into in-house servers and storage. By moving to the cloud, you always have access to the latest features and functions, do not have to worry about sizing, implementing, operating and maintaining on-premise IT assets, and can scale up and down based on business demand instead of sizing the IT environment for peak performance.
+                You are behind other Network Generalists. Your organization doesn\'t involve the security team in any new initiative, which may lead to costly security incidents down the line. To move to the next level, it is critical to embed security into strategic projects at their inception.
             </p>
         </div>
     ',
-    'digital-delivery-2-q9-2' => '
+    'security-enabled-networking-2-q9-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are delivering most of your applications with in-house IT assets and resources as well as managed services. This puts you behind your Digital Achiever peers. As a start-up or SMB, you will have greater flexibility, agility and security, if you move to a cloud-based delivery model for your applications, instead of investing into in-house servers and storage. By moving to the cloud, you always have access to the latest features and functions, do not have to worry about sizing, implementing, operating and maintaining on-premise IT assets, and can scale up and down based on business demand instead of sizing the IT environment for peak performance.
+                You are behind other Network Generalists. Security is alerted to new initiatives but not explicitly involved. To move to the next level you should start to align business and security by involving senior non-IT executives in discussions as it is critical to embed security into strategic projects at their inception.
             </p>
         </div>
     ',
-    'digital-delivery-2-q9-3' => '
+    'security-enabled-networking-2-q9-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are primarily delivering your applications through external providers, either managed services or cloud services. This puts you at par with your Digital Achiever peers. Depending on the service level agreements (SLAs) that you have with your managed service provider, you are some flexibilty to react to changing business requirements and to adjust the number of users up and down as needed, which is critical to digital business success. You will also have access to innovative features at a regular cadence.
+                Your position is in line with other Network Generalists. Bringing security in post-release remains a risky strategy. You should aim to embed security as early as possible in the initiative. This increases visibility and awareness of the cyberincident plan, and ensures the business has a full view of the cybersecurity risk management strategy. If there are any deviations between the business planned risk and the security team\'s understanding of that risk, then this can be identified and resolved early and quickly.
             </p>
         </div>
     ',
-    'digital-delivery-2-q9-4' => '
+    'security-enabled-networking-2-q9-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are mainly delivering your applications through a cloud-based delivery model. This puts you ahead of your Digital Achiever peers. You have continous access to the latest features and functions, can scale dynamically based on business demands and enable collobaration and innovation for your employees and with your ecoystem partners. You should look at other aspects in digital business or digital design to improve your digital maturity.
+                You are ahead of other Network Generalists by bringing security in before the execution of any new initiative. This increases visibility and awareness of the cyberincident plan and ensures that the business has a full view of the cybersecurity risk management plan. If there are any deviations between the business planned risk and the security team\'s understanding of that risk, then this can be identified and resolved early and quickly. You should aim to involve the security teams during the blueprint stage of any new project to maximize the chances that business and security objectives and risk attitudes are aligned.
+            </p>
+        </div>
+    ',
+    'security-enabled-networking-2-q9-5' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2">
+                You are ahead of most Network Generalists with an advanced approach to planning strategic projects, meaning there is full alignment between business and security. While there is scope to investigate how visibility of the security situation underpins all other efforts to engage with the business, you may want to focus on improving other networking elements with a weaker ranking first.
             </p>
         </div>
     ',
 
-    'digital-delivery-3-q9-1' => '
+    'security-enabled-networking-3-q9-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are delivering most of your applications with in-house IT assets and resources. This puts you far behind your Digital Native peers. As a start-up or SMB, you will have greater flexibility, agility and security, if you move to a cloud-based delivery model for your applications, instead of investing into in-house servers and storage. By moving to the cloud, you always have access to the latest features and functions, do not have to worry about sizing, implementing, operating and maintaining on-premise IT assets, and can scale up and down based on business demand instead of sizing the IT environment for peak performance.
+                You are behind other Network Leaders. Your organization doesn\'t involve the security team in any new initiative, which may lead to costly security incidents down the line. To move to a level more aligned with your overall ranking, it is critical to embed security into strategic projects at their inception.
             </p>
         </div>
     ',
-    'digital-delivery-3-q9-2' => '
+    'security-enabled-networking-3-q9-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are delivering most of your applications with in-house IT assets and resources as well as managed services. This puts you far behind your Digital Native peers. As a start-up or SMB, you will have greater flexibility, agility and security, if you move to a cloud-based delivery model for your applications, instead of investing into in-house servers and storage. By moving to the cloud, you always have access to the latest features and functions, do not have to worry about sizing, implementing, operating and maintaining on-premise IT assets, and can scale up and down based on business demand instead of sizing the IT environment for peak performance.
+                You are behind other Network Leaders. Security is alerted to new initiatives but not explicitly involved. You should start to align business and security by involving senior non-IT executives in discussions, as it is critical to embed security into strategic projects at their inception, which would bring you to a level more aligned with your overall ranking.
             </p>
         </div>
     ',
-    'digital-delivery-3-q9-3' => '
+    'security-enabled-networking-3-q9-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are primarily delivering your applications through external providers, either managed services or cloud services. This puts you behind your Digital Native peers. Depending on the service level agreements (SLAs) that you have with your managed service provider, you are some flexibilty to react to changing business requirements and to adjust the number of users up and down as needed, which is critical to digital business success. You will also have access to innovative features at a regular cadence. If you want to be truly agile and competitive, you need to move to a cloud-based delivery model.
+                You are behind other Network Leaders. Bringing in security post-release remains a risky strategy. To catch up, you should aim to bring security into initiatives as early as possible. This increases visibility and awareness of the cyberincident plan and ensures the business has a full view of the cybersecurity risk management strategy. If there are any deviations between the business risk expectations and the security team\'s understanding of that risk, then this can be identified and resolved early and quickly.
             </p>
         </div>
     ',
-    'digital-delivery-3-q9-4' => '
+    'security-enabled-networking-3-q9-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are mainly delivering your applications through a cloud-based delivery model. This puts you at par with your Digital Achiever peers. You have continous access to the latest features and functions, can scale dynamically based on business demands and enable collobaration and innovation for your employees and with your ecoystem partners. You should look at other aspects in digital business or digital design to improve your digital maturity.
+                You are in line with other Network Leaders by bringing security in before the execution of any new initiative; this increases visibility and awareness of the cyberincident plan, and ensures the business has a full view of the cybersecurity risk management strategy. If there are any deviations between the business risk expectations and the security team\'s understanding of that risk, then this can be identified and resolved early and quickly. But you should aim to involve the security teams during the blueprint stage of any new project to ensure business and security objectives and risk attitudes are aligned.
+            </p>
+        </div>
+    ',
+    'security-enabled-networking-3-q9-5' => '
+        <div class="clearfix">
+            <p class="w-4/5 ml-auto mb-2">
+                You are in line with other Network Leaders. Your organization has an advanced approach to planning strategic projects, meaning there is full alignment between business and security. To stay ahead, you should make sure that visibility of the security situation underpins all other efforts to engage with the business. Ensure, for example, that the business determines the risk profile of its IT systems and DX initiatives by staying aware of the current status of security; this can be achieved by having CISOs regularly reporting to the board on said security status.
             </p>
         </div>
     ',
 
-    'question10' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 font-bold text-dassault-blue-light">
-                Q10. Which statement best represents your organization\'s approach to adopting Cloud services for delivering IT services or applications?
-            </p>
-        </div>
-    ',
-
-    'digital-delivery-1-q10-1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are running all applications in-house. This puts you at par with your Digital Improver peers. To improve your digital delivery capabilities, you should consider more flexible delivery models like the cloud. Cloud-based delivery models enable you to create a better alignment with business demands, as they scale up and down as needed and don\'t require an upfront investment.
-            </p>
-        </div>
-    ',
-    'digital-delivery-1-q10-2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are running most of your applications in-house. This puts you at par with your Digital Improver peers. To improve your digital delivery capabilities, you should consider more flexible delivery models like the cloud. Cloud-based delivery models enable you to create a better alignment with business demands, as they scale up and down as needed and don\'t require an upfront investment.
-            </p>
-        </div>
-    ',
-    'digital-delivery-1-q10-3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are taking a best-fit approach as to where to place your applications and have both on-premise and cloud delivery capabilities. This puts you ahead of your Digital Improver peers. If you have a strong governance framework in place to guide your decisions about when to use the cloud and when not to use the cloud, you are on the right track. 
-            </p>
-        </div>
-    ',
-    'digital-delivery-1-q10-4' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You have a cloud-first strategy, which puts you well ahead of your Digital Improver peers. You should look at other aspects within digital business, digital design and digital delivery to improve your digital maturity. 
-            </p>
-        </div>
-    ',
-    'digital-delivery-1-q10-5' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You have a cloud-only strategy, which puts you well ahead of your Digital Improver peers. You should look at other aspects within digital business, digital design and digital delivery to improve your digital maturity. 
-            </p>
-        </div>
-    ',
-
-    'digital-delivery-2-q10-1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are running all applications in-house. This puts you behind with your Digital Achiever peers. To improve your digital delivery capabilities, you should consider more flexible delivery models like the cloud. Cloud-based delivery models enable you to create a better alignment with business demands, as they scale up and down as needed and don\'t require an upfront investment.
-            </p>
-        </div>
-    ',
-    'digital-delivery-2-q10-2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are running most of your applications in-house. This puts you behind with your Digital Achiever peers. To improve your digital delivery capabilities, you should consider more flexible delivery models like the cloud. Cloud-based delivery models enable you to create a better alignment with business demands, as they scale up and down as needed and don\'t require an upfront investment.
-            </p>
-        </div>
-    ',
-    'digital-delivery-2-q10-3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are taking a best-fit approach as to where to place your applications and have both on-premise and cloud delivery capabilities. This puts you at par with your Digital Achiever peers. If you have a strong governance framework in place to guide your decisions about when to use the cloud and when not to use the cloud, you are on the right track. 
-            </p>
-        </div>
-    ',
-    'digital-delivery-2-q10-4' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You have a cloud-first strategy, which puts you well ahead of your Digital Achiever peers. You should look at other aspects within digital business, digital design and digital delivery to improve your digital maturity. 
-            </p>
-        </div>
-    ',
-    'digital-delivery-2-q10-5' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You have a cloud-only strategy, which puts you well ahead of your Digital Achiever peers. You should look at other aspects within digital business, digital design and digital delivery to improve your digital maturity. 
-            </p>
-        </div>
-    ',
-
-    'digital-delivery-3-q10-1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are running all applications in-house. This puts you far behind with your Digital Native peers. To improve your digital delivery capabilities, you should consider more flexible delivery models like the cloud. Cloud-based delivery models enable you to create a better alignment with business demands, as they scale up and down as needed and don\'t require an upfront investment.
-            </p>
-        </div>
-    ',
-    'digital-delivery-3-q10-2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are running most of your applications in-house. This puts you far behind with your Digital Native peers. To improve your digital delivery capabilities, you should consider more flexible delivery models like the cloud. Cloud-based delivery models enable you to create a better alignment with business demands, as they scale up and down as needed and don\'t require an upfront investment.
-            </p>
-        </div>
-    ',
-    'digital-delivery-3-q10-3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are taking a best-fit approach as to where to place your applications and have both on-premise and cloud delivery capabilities. This puts you behind your Digital Native peers. If you have a strong governance framework in place to guide your decisions about when to use the cloud and when not to use the cloud, you are on the right track. 
-            </p>
-        </div>
-    ',
-    'digital-delivery-3-q10-4' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You have a cloud-first strategy, which puts you at par with your Digital Native peers. You should look at other aspects within digital business, digital design and digital delivery to improve your digital maturity. 
-            </p>
-        </div>
-    ',
-    'digital-delivery-3-q10-5' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You have a cloud-only strategy, which puts you at par with your Digital Native peers. You should look at other aspects within digital business, digital design and digital delivery to improve your digital maturity. 
-            </p>
-        </div>
-    ',
-    
 
     'conclusionintro' => '
-        <h2 class="w-4/5 ml-auto text-dassault-blue mb-6">CONCLUSION</h2>
-        <div class="clearfix">
-            <div class="w-1/5 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 25mm;"></div>
+        <div class="clearfix pb">
+            <div class="w-1/5 h-32 float-left">
+                <div class="bg-center bg-top bg-no-repeat mx-auto" style="background-image: url(:icon); width: 20mm; height:20mm;"></div>
+            </div>
             <p class="w-4/5 float-left mb-2">
-                Thank you for taking this digital assessment. This demonstrates your ambition to succeed in your digital transformation strategies and is a good starting point to set you apart from your peers. We hope you have been able to identify the weaknesses and strength in your approach, and have some advice to make progress and develop a competitive edge. If you want to know more about the role of cloud in digital transformation in the engineering and digital design space, please check out the following report: (link)
+                <h2 class="text-vmware-blue mb-6">CONCLUSION</h2>
+                Digital transformation is changing the cybersecurity landscape and exposing enterprises to more threats than ever before. A new approach to security is required, and with new networking tools enabling greater visibility, threat detection, and mitigation, the enterprise network is becoming an essential part of organizations\' security strategy.
             </p>
         </div>
     ',
 
     'guidance' => '
-        <h2 class="w-4/5 ml-auto text-dassault-blue mb-6">Essential Guidance</h2>
         <div class="clearfix">
-            <div class="w-4/5 ml-auto clearfix mb-2">
-                <div class="float-left rounded-full w-8 h-8 border border-grey-dark font-bold text-grey text-lg text-center mr-2 pt-1">1</div>
-                <p class="float-left w-5/6">
-                    You should focus on further developing a strategic roadmap for the evolution of your WAN. Assess the current status of your network, and where you want it to be in the future. Prepare a gradual migration path that leverages the existing infrastructure where possible. Hybrid architectures, cloud connectivity, local Internet break-outs and network virtualization should feature prominently on this roadmap.
-                </p>
-            </div>
-                
-        </div>
-        <div class="clearfix">
-            <div class="w-4/5 ml-auto clearfix mb-2">
-                <div class="float-left rounded-full w-8 h-8 border border-grey-dark font-bold text-grey text-lg text-center mr-2 pt-1">2</div>
-                <p class="float-left w-5/6">
-                    From an operational perspective the WAN is increasingly hampered by complexity, inefficiency and tedious processes which can make everyday tasks such as adding sites, updating policies or connecting to cloud services a real struggle. This prevents the network from delivering the desired business outcomes, like gaining agility, increasing productivity, and improving differentiation. Explore how centralization and automation can help you streamline your WAN operations.
-                </p>
-            </div>
-                
+            <p class="w-4/5 ml-auto mb-2">
+                To deliver this new security posture you need to develop a strategic road map for network evolution that demonstrates the role new networking tools can play in delivering security by design. Assess the current status of your network, and where you want it to be in the future. Prepare a gradual migration path that leverages the existing infrastructure where possible. Software-defined networking, centralized policy controls, and automation should feature prominently in this road map.
+            </p>
         </div>
     ',
-    'guidance-q3-1-2' => '
+    'guidance-1' => '
         <div class="clearfix">
-            <div class="w-4/5 ml-auto clearfix mb-2">
-                <div class="float-left rounded-full w-8 h-8 border border-grey-dark font-bold text-grey text-lg text-center mr-2 pt-1">3</div>
-                <p class="float-left w-5/6">
-                    SD-WAN has emerged as a solution that can integrate much of the above. The promise of SD-WAN is to deliver improved network and application performance, availability and visibility, particularly in a cloud environment, driving flexibility, while providing cost-effective bandwidth and reducing complexity. Start exploring today, if you haven\'t already, what benefits SD-WAN may or may not bring to your organization. 
-                </p>
-            </div>
-                
+            <p class="w-4/5 ml-auto mb-2">
+                As a Network Follower, you need to develop a more strategic approach to purchasing and operating network equipment. This should involve taking a more proactive approach to adopting new networking tools and equipment, rather than running kit until it fails, and experimenting with intelligent networking products that can centralize, virtualize, and eventually automate more of your network operation processes. These new tools will enable you to adopt a more advanced security posture, based on the assumption that breaches are inevitable, rather than relying on the outdated perimeter-based model.
+            </p>
         </div>
     ',
-    'guidance-q3-3-4' => '
+    'guidance-2' => '
         <div class="clearfix">
-            <div class="w-4/5 ml-auto clearfix mb-2">
-                <div class="float-left rounded-full w-8 h-8 border border-grey-dark font-bold text-grey text-lg text-center mr-2 pt-1">3</div>
-                <p class="float-left w-5/6">
-                    SD-WAN has emerged as a solution that can integrate much of the above. The promise of SD-WAN is to deliver improved network and application performance, availability and visibility, particularly in a cloud environment, driving flexibility, while providing cost-effective bandwidth and reducing complexity. Build on your early deployments of SD-WAN, and start plotting a roadmap toward a more widespread use of network virtualization that can help you reap the benefits in terms of flexibility and efficiency
-                </p>
-            </div>
-                
+            <p class="w-4/5 ml-auto mb-2">
+                As a Network Generalist you already view your network as an important asset and take a strategic approach to purchasing and operating your network. To become a Network Leader you need to develop a road map to migrate from legacy network equipment to software-defined, virtualized network solutions. These will enable you to upgrade your network functions and security through software updates, and provide enhanced visibility across your ICT estate.
+            </p>
         </div>
     ',
-    'guidance-q3-5' => '
+    'guidance-3' => '
         <div class="clearfix">
-            <div class="w-4/5 ml-auto clearfix mb-2">
-                <div class="float-left rounded-full w-8 h-8 border border-grey-dark font-bold text-grey text-lg text-center mr-2 pt-1">3</div>
-                <p class="float-left w-5/6">
-                    SD-WAN has emerged as a solution that can integrate much of the above. The promise of SD-WAN is to deliver improved network and application performance, availability and visibility, particularly in a cloud environment, driving flexibility, while providing cost-effective bandwidth and reducing complexity.Looking ahead, SD-WAN should go hand in hand with virtual network services . Explore how you can leverage SD-WAN as the launching pad of a more widespread use of network virtualization that can help you reap the benefits in terms of flexibility and efficiency
-                </p>
-            </div>
-                
+            <p class="w-4/5 ml-auto mb-2">
+                As a Network Leader you understand how critical your enterprise network is for delivering digital transformation. You are already using software-defined networking and analytics tools to improve your network operations and security. To build on this, you need to make sure your network and security teams work closely together and have the right skills to operate increasingly virtualized networks. This will take investment in people, tools, and training, and it is a multiyear journey. 
+            </p>
         </div>
     ',
 );

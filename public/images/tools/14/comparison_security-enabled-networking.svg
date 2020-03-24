@@ -1,0 +1,23 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1615.75 617.95">
+  <defs>
+    <linearGradient id="linear-gradient" x1="338.13" y1="227.04" x2="1614.88" y2="227.04" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#ccc"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="338.12" y1="421.04" x2="1614.87" y2="421.04" xlink:href="#linear-gradient"/>
+  </defs>
+  <title>comparison_security-enabled-networking</title>
+  <line x1="322.97" y1="0.04" x2="322.97" y2="518" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
+  <line x1="752.97" y1="0.04" x2="752.97" y2="518" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
+  <line x1="1184.97" y1="0.04" x2="1184.97" y2="518" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
+  <line x1="0.37" y1="131.04" x2="1614.27" y2="131.04" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
+  <text transform="translate(432.93 56.67)" style="font-size: 26.131669998168945px;fill: #999;font-family: Helvetica">Network<tspan style="font-size: 36.85363006591797px;fill!: #000"><tspan x="0" y="37.56">Follower</tspan></tspan></text>
+  <text transform="translate(864.03 56.67)" style="font-size: 26.131669998168945px;fill: #999;font-family: Helvetica">Network<tspan style="font-size: 36.85363006591797px;fill!: #000"><tspan x="0" y="37.56">Generalist</tspan></tspan></text>
+  <text transform="translate(1295.12 56.67)" style="font-size: 26.131669998168945px;fill: #999;font-family: Helvetica">Network<tspan style="font-size: 36.85363006591797px;fill!: #000"><tspan x="0" y="37.56">Leader</tspan></tspan></text>
+  <rect x="338.13" y="145.02" width="1276.75" height="164.05" style="opacity: 0.5;fill: url(#linear-gradient)"/>
+  <line x1="0.91" y1="324.04" x2="1614.8" y2="324.04" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
+  <text transform="translate(15.47 405.03)" style="font-size: 37px;font-family: Helvetica">Security-enabled<tspan x="92.59" y="46">Networking</tspan></text>
+  <line x1="0.91" y1="518.04" x2="1614.8" y2="518.04" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
+  <rect x="338.12" y="339.02" width="1276.75" height="164.05" style="opacity: 0.5;fill: url(#linear-gradient-2)"/>
+  <text transform="translate(175.93 211.03)" style="font-size: 37px;font-family: Helvetica">Overall<tspan x="-94.61" y="46">Performance</tspan></text>
+</svg>

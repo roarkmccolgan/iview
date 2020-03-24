@@ -630,7 +630,7 @@ return [
                 'questions' => [
                     'q9'=>[
                         'type'=>'button',
-                        'question'=>'To what extent is IT security embedded into new business initiatives in your organization?',
+                        'question'=>'To what extent is Security embedded into new business initiatives in your organization?',
                         'name'=> 9,
                         'options'=>[
                             [

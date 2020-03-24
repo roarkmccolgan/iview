@@ -1,0 +1,31 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1615.75 765.35">
+  <defs>
+    <linearGradient id="linear-gradient" x1="330.78" y1="199.28" x2="1614.87" y2="199.28" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#ccc"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="330.78" y1="341.53" x2="1614.87" y2="341.53" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="330.78" y1="483.78" x2="1614.87" y2="483.78" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-4" x1="330.78" y1="626.03" x2="1614.87" y2="626.03" xlink:href="#linear-gradient"/>
+  </defs>
+  <title>comparisonbg_overall</title>
+  <line x1="322.97" y1="0.04" x2="322.97" y2="696.54" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
+  <line x1="752.97" y1="0.04" x2="752.97" y2="696.54" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
+  <line x1="1184.97" y1="0.04" x2="1184.97" y2="696.54" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
+  <text transform="translate(220.49 181.26)" style="font-size: 31px;font-family: Helvetica"><tspan style="letter-spacing: -0.091796875em">Y</tspan><tspan x="17.83" y="0">our</tspan><tspan x="-25.23" y="37.2">Result</tspan></text>
+  <text transform="translate(28.12 472.44)" style="font-size: 31px;font-family: Helvetica">Intelligent Network<tspan x="103.37" y="37.2">Operations</tspan></text>
+  <text transform="translate(169.44 330.19)" style="font-size: 31px;font-family: Helvetica">Network<tspan x="-68.93" y="37.2">Infrastructure</tspan></text>
+  <text transform="translate(50.49 613.29)" style="font-size: 31px;font-family: Helvetica">Security-enabled<tspan x="77.58" y="37.2">Networking</tspan></text>
+  <line x1="0.37" y1="131.04" x2="1614.27" y2="131.04" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
+  <line x1="0.91" y1="273.04" x2="1614.8" y2="273.04" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
+  <line x1="0.91" y1="411.04" x2="1614.8" y2="411.04" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
+  <line x1="0.91" y1="555.04" x2="1614.8" y2="555.04" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
+  <line x1="0.91" y1="697.04" x2="1614.8" y2="697.04" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
+  <text transform="translate(432.93 56.67)" style="font-size: 26.131669998168945px;fill: #999;font-family: Helvetica">Network<tspan style="font-size: 36.85363006591797px;fill!: #000"><tspan x="0" y="37.56">Follower</tspan></tspan></text>
+  <text transform="translate(864.03 56.67)" style="font-size: 26.131669998168945px;fill: #999;font-family: Helvetica">Network<tspan style="font-size: 36.85363006591797px;fill!: #000"><tspan x="0" y="37.56">Generalist</tspan></tspan></text>
+  <text transform="translate(1295.12 56.67)" style="font-size: 26.131669998168945px;fill: #999;font-family: Helvetica">Network<tspan style="font-size: 36.85363006591797px;fill!: #000"><tspan x="0" y="37.56">Leader</tspan></tspan></text>
+  <rect x="330.78" y="140.54" width="1284.09" height="117.48" style="opacity: 0.5;fill: url(#linear-gradient)"/>
+  <rect x="330.78" y="282.79" width="1284.09" height="117.48" style="opacity: 0.5;fill: url(#linear-gradient-2)"/>
+  <rect x="330.78" y="425.04" width="1284.09" height="117.48" style="opacity: 0.5;fill: url(#linear-gradient-3)"/>
+  <rect x="330.78" y="567.29" width="1284.09" height="117.48" style="opacity: 0.5;fill: url(#linear-gradient-4)"/>
+</svg>
