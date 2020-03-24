@@ -81,7 +81,7 @@ return array(
         'hi' => 'Hi :Fname',
         'body' => 'As promised, here\'s a link to download your VMware Digital Maturity Assessment Report.',
         'link' => 'Download Report',
-        'extra' => 'Once you\'ve read the report why not visit VMware <a href="https://www.vmware.com/solutions/virtual-cloud-network.html" style="color:#054683">3DS</a>',
+        'extra' => 'Once you\'ve read the report why not visit VMware <a href="https://www.vmware.com/solutions/virtual-cloud-network.html" style="color:#054683">VMware</a>',
         'regards' => 'Regards',
         'team' => 'The IDC Team'
     ],
