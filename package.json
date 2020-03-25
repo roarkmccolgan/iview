@@ -38,6 +38,7 @@
     "vue-router": "^3.0.7",
     "vue-template-compiler": "^2.6.10",
     "webpack": "^4.35.3",
+    "webpack-bundle-analyzer": "^3.6.1",
     "webpack-cli": "^3.3.6"
   },
   "dependencies": {

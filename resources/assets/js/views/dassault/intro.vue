@@ -11,10 +11,10 @@
 						</span>
 					</span>
 				</div>
-				<div class="flex flex-wrap flex-row-reverse sm:flex-no-wrap sm:flex-row items-center bg-white my-4 p-4 shadow-lg">
+				<div class="flex flex-wrap flex-row-reverse sm:flex-no-wrap sm:flex-row items-center bg-white my-4 p-4 sm:p-10 shadow-lg">
 					<div class="w-full sm:w-3/5">
-						<h1 class="text-dassault-blue font-bold leading-tight">{{ $t('dassault.title') }}</h1>
-						<h3 class="text-dassault-blue font-light leading-tight mb-4">{{ $t('dassault.sub-title') }}</h3>
+						<!-- <h1 class="text-dassault-blue font-bold leading-none">{{ $t('dassault.title') }}</h1> -->
+						<!-- <h3 class="text-dassault-blue font-light leading-tight mb-4">{{ $t('dassault.sub-title') }}</h3> -->
 						<div v-html="$t('dassault.landing')"></div>
 					</div>
 					<div class="w-full sm:w-2/5 text-center my-16 sm:m-0">

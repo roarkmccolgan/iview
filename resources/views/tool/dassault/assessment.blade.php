@@ -18,6 +18,7 @@
     			<a class="w-1/2" href="https://idc.com/uk" target="_blank"><img src="{{ asset('images/dassault.svg')}}" alt=""></a>
     			<a class="w-48" href="https://idc.com/uk" target="_blank"><img src="{{ asset('images/idclogocolour.svg')}}" alt=""></a>
 	    	</div>
+	    	{{-- <h1 class="text-grey-dark text-2xl font-normal pl-5 leading-none">{{ trans('dassault.title') }}</h1> --}}
 	    </div>
 	</div>
 	<transition name="fade">

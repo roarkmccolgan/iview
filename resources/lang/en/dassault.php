@@ -23,11 +23,26 @@ return array(
     'title'=>'Dassault Systèmes Digital Maturity Assessment',
     'sub-title'=>'How digitally mature is your business?',
     'landing'=>'
+        <h1 class="font-bold mb-2 leading-none">Are you Ready to Launch your Digital Success?</h1>
         <p class="mb-2">
-            IDC, a global leading provider of technology market research, has developed the Digital Maturity capability assessment, sponsored by Dassault Systèmes, to help start-ups and SMBs focused on Digital Design to assess their capability to cater to customers\' needs in an increasingly faster moving and competitive market.
+            Moving to a cloud-based platform enables start-ups and SMBs like yours, to build credibility with customers, investors and partners. It enables you to attract and retain key people, as well as innovate in more cost-effective and sustainable ways.
         </p>
         <p class="mb-2">
-            This self-assessment tool is backed up by independent end-user research and IDC\'s in depth understanding of Cloud and Technology markets. Upon completion of a short survey (under 10 minutes) you will receive a custom report that benchmarks your organization\'s Digital Maturity and provides you with essential and tailored guidance to help you advance in your digital journey to better cater to the needs of your demanding customers.
+            In short, cloud platforms for digital design and engineering enable you to drive digital innovation and take your business to the next level and beyond.
+        </p>
+        <ul class="font-bold mb-4">
+            <li class="list-none">But where are you in this journey?</li>
+            <li class="list-none">How can you use digital technologies to accelerate growth and disrupt your industry?</li>
+            <li class="list-none">How well are you doing compared to the competition and where can you take the lead?</li>
+        </ul>
+        <p class="mb-2">
+            This IDC digital maturity benchmark, created in partnership with Dassault, is designed to address these questions.
+        </p>
+        <p class="mb-2">
+            By completing a short set of questions, you will learn how you compare to your peers and similar organizations across digital, design and cloud delivery metrics. This is then presented back to you in an easy to read report format, enabling you to identify areas of strength and weakness and where you can invest in order to build growth and stay ahead of the competition.
+        </p>
+        <p class="font-bold">
+            Click "Start Assessment" to begin your journey. And good luck!
         </p>',
     'startbut'=>'Start Assessment',
     
@@ -35,11 +50,12 @@ return array(
     'register'=>'Register now to receive your personalized report',
     'provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
     'byreg'=>'By registering with IDC, you accept our <a href="/privacy" target="_blank">Privacy Policy</a> and Dassault Systèmes, <a href="https://www.3ds.com/privacy-policy/" target="_blank">Privacy Policy</a>.',
+    'marketing'=>'I agree to receive marketing communications from Dassault Systèmes and its business partners according to their <a href="https://www.3ds.com/privacy-policy/" target="_blank">Privacy Policy</a>.',
     'wait'=>'While you\'re waiting why not tweet your results and see how your colleagues measure up?',
     'twitterlink'=>'https://twitter.com/home?status=Is%20your%20business%20GDPR%20ready?%20http%3A//bit.ly/2AwihN4%20%23Symantec',
     'facebooklink'=>'https://www.facebook.com/sharer/sharer.php?u=http%3A//bit.ly/2AwihN4',
     'linkedinlink'=>'https://www.linkedin.com/shareArticle?mini=true&url=http%3A//bit.ly/2AwihN4&title=Symantec%20and%20IDC%20GDPR%20Assessment&summary=Is%20your%20business%20GDPR%20ready?&source=',
-
+    'errorMarketing'=>'Please accept that you wish to receive marketing from Dassault and its business partners.',
     'size1' => '1',
     'size2' => '2 to 9',
     'size3' => '10 to 49',
@@ -1500,7 +1516,7 @@ return array(
         <div class="clearfix">
             <div class="w-1/5 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 25mm;"></div>
             <p class="w-4/5 float-left mb-2">
-                Thank you for taking this digital assessment. This demonstrates your ambition to succeed in your digital transformation strategies and is a good starting point to set you apart from your peers. We hope you have been able to identify the weaknesses and strength in your approach, and have some advice to make progress and develop a competitive edge. If you want to know more about the role of cloud in digital transformation in the engineering and digital design space, please check out the following report: (link)
+                Thank you for taking this digital assessment. This demonstrates your ambition to succeed in your digital transformation strategies and is a good starting point to set you apart from your peers. We hope you have been able to identify the weaknesses and strength in your approach, and have some advice to make progress and develop a competitive edge. If you want to know more about the role of cloud in digital transformation in the engineering and digital design space, please check out the following report: https://discover.3ds.com/your-roadmap-digital-maturity
             </p>
         </div>
     ',

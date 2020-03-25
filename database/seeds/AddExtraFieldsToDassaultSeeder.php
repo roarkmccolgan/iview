@@ -24,5 +24,19 @@ class AddExtraFieldsToDassaultSeeder extends Seeder
             'created_at' => Carbon\Carbon::now(),
             'updated_at' => Carbon\Carbon::now()
         ]);
+
+        DB::table('extra_fields')->insert([
+            'tool_id' => '12',
+            'name' => 'marketing',
+            'label' => 'Marketing',
+            'options' => '',
+            'type' => 'boolean',
+            'trans' => 'marketing',
+            'error' => 'errorMarketing',
+            'required' => 0,
+            'order' => 1,
+            'created_at' => Carbon\Carbon::now(),
+            'updated_at' => Carbon\Carbon::now()
+        ]);
     }
 }
