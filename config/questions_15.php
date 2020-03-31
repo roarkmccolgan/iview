@@ -4,20 +4,20 @@ return [
     'strategic-planning' => [
         'title' => 'Strategic Planning',
         'description' => '
-            <h1 class="font-sapagile text-2xl sm:text-5xl font-light text-sap-yellow leading-tight mb-2">Strategic Planning</h1>
+            <h1 class="font-sapagile text-2xl sm:text-5xl font-light leading-tight mb-2">Strategic Planning</h1>
+            <div class="h-1 bg-sap-green rounded-full leading-none w-24 mb-2 sm:w-48"></div>
             <p class="mb-2 text-sm sm:text-base">
                 The changing economy has created a highly dynamic external environment. Businesses need to continually adjust their strategies and ensure their business is agile and dynamic enough to keep up.
             </p>
             <p>
                 Answer the questions below to understand the level of your strategic planning agility.
             </p>',
-        'background' => false,
         'nuggets' => [
             'skills.png',
             'customer.png',
             'cocreate.png',
         ],
-        'background' => false,
+        'background' => 'green',
         'intermission' => false,
         'class' => 'sec1',
         'shuffle' => false,
@@ -244,14 +244,15 @@ return [
     'processes' => [
         'title' => 'Processes',
         'description' => '
-            <h1 class="font-sapagile text-2xl sm:text-5xl font-light text-sap-yellow leading-tight mb-2">Processes</h1>
+            <h1 class="font-sapagile text-2xl sm:text-5xl font-light leading-tight mb-2">Processes</h1>
+            <div class="h-2 bg-sap-blue rounded-full leading-none w-24 mb-2 sm:w-48"></div>
             <p class="mb-2 text-sm sm:text-base">
                 A truly agile organization has processes (or ‘ways of working’) that are both well-defined and flexible. As a result, they can accommodate unique customer requirements and fluctuations in demand, as well as drive efficiency and speed of execution
             </p>
             <p>
                 Test your company’s processes agility by completing the next set of questions.
             </p>',
-        'background' => false,
+        'background' => 'blue',
         'nuggets' => [
             'omnichannel.png',
             'boat.png',
@@ -378,14 +379,15 @@ return [
     'customer-relationships' => [
         'title' => 'Customer Relationships',
         'description' => '
-            <h1 class="font-sapagile text-2xl sm:text-5xl font-light text-sap-yellow leading-tight mb-2">Customer Relationships</h1>
+            <h1 class="font-sapagile text-2xl sm:text-5xl font-light leading-tight mb-2">Customer Relationships</h1>
+            <div class="h-2 bg-sap-purple rounded-full leading-none w-24 mb-2 sm:w-48"></div>
             <p class="mb-2 text-sm sm:text-base">
                 Customer facing employees are the best placed to understand what the customer wants and how this may be changing. Agile organizations feed this information back into the business, enabling their product and service delivery to respond quickly
             </p>
             <p>
                 Let’s explore where you are in this area.
             </p>',
-        'background' => false,
+        'background' => 'purple',
         'nuggets' => [
             'managed.png',
             'intellectual.png',
@@ -512,14 +514,15 @@ return [
     'suppliers-distributors' => [
         'title' => 'Suppliers &amp; Distributors',
         'description' => '
-            <h1 class="font-sapagile text-2xl sm:text-5xl font-light text-sap-yellow leading-tight mb-2">Suppliers &amp; Distributors</h1>
+            <h1 class="font-sapagile text-2xl sm:text-5xl font-light leading-tight mb-2">Suppliers &amp; Distributors</h1>
+            <div class="h-2 bg-sap-gray rounded-full leading-none w-24 mb-2 sm:w-48"></div>
             <p class="mb-2 text-sm sm:text-base">
                 Agile organizations can scale operations (up or down) to meet fluctuations in demand. Leveraging your suppliers and partners to provide instant scale, is an art which must be mastered to become an agile business.
             </p>
             <p>
                 The questions below explore how well you score in this area.
             </p>',
-        'background' => false,
+        'background' => 'gray',
         'nuggets' => [
             'managed.png',
             'intellectual.png',
@@ -646,14 +649,15 @@ return [
     'people-experience' => [
         'title' => 'People Experience (HR)',
         'description' => '
-            <h1 class="font-sapagile text-2xl sm:text-5xl font-light text-sap-yellow leading-tight mb-2">People Experience (HR)</h1>
+            <h1 class="font-sapagile text-2xl sm:text-5xl font-light leading-tight mb-2">People Experience (HR)</h1>
+            <div class="h-2 bg-sap-orange rounded-full leading-none w-24 mb-2 sm:w-48"></div>
             <p class="mb-2 text-sm sm:text-base">
                 End-to-end business model agility is not possible without agile people. Agile people are not possible without the supporting processes and management to enable this.
             </p>
             <p>
                 The questions below will measure how well your business enables your people to be truly agile in their work.
             </p>',
-        'background' => false,
+        'background' => 'orange',
         'nuggets' => [
             'managed.png',
             'intellectual.png',

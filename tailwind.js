@@ -54,10 +54,11 @@ let colors = {
   'vmware-green-light': 'rgb(120,190,31)',
 
   'sap-green': '#4E9F25',
-  'sap-gray': '#333333',
+  'sap-purple': '#970A82',
+  'sap-gray': '#666666',
   'sap-blue': '#007db8',
-  'sap-orange': '#f0ab00',
-  'sap-yellow': '#FBB900',
+  'sap-orange': '#E35500',
+  'sap-yellow': '#F0AB00',
 
   'dassault-blue': 'rgb(9,84,132)',
   'dassault-blue-light': 'rgb(47,159,229)',

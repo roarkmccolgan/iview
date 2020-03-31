@@ -53,5 +53,6 @@ $manifest = json_decode($json, TRUE);
     
 </style>
 	@show
+    <script src="//cdn.jsdelivr.net/npm/velocity-animate@2.0/velocity.min.js"></script>
 </body>
 </html>

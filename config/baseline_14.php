@@ -37,13 +37,13 @@ return [
             ],
             'stage2' => [
                 'low' => 25,
-                'high' => 29.29,
+                'high' => 34.99,
                 'copy' => 'general.8standardtxt',
                 'tweet' => false,
                 'benchmark' => 34,
             ],
             'stage3' => [
-                'low' => 29.3,
+                'low' => 35,
                 'high' => 60,
                 'copy' => 'general.8goodtxt',
                 'tweet' => false,
@@ -91,13 +91,13 @@ return [
         'types' => [
             'stage1' => [
                 'low' => 0,
-                'high' => 9.49,
+                'high' => 6.99,
                 'total' => 2,
                 'benchmark' => 20,
                 'copy' => 'dassault.digital-business-poor-txt'
             ],
             'stage2' => [
-                'low' => 9.5,
+                'low' => 7,
                 'high' => 11.99,
                 'total' => 3,
                 'benchmark' => 34,
@@ -146,20 +146,20 @@ return [
         'types' => [
             'stage1' => [
                 'low' => 0,
-                'high' => 7.99,
+                'high' => 6.99,
                 'total' => 2,
                 'benchmark' => 20,
                 'copy' => 'dassault.digital-design-poor-txt'
             ],
             'stage2' => [
-                'low' => 8,
-                'high' => 9.99,
+                'low' => 7,
+                'high' => 11.99,
                 'total' => 3,
                 'benchmark' => 34,
                 'copy' => 'dassault.digital-design-standard-txt'
             ],
             'stage3' => [
-                'low' => 10,
+                'low' => 12,
                 'high' => 20,
                 'total' => 5,
                 'benchmark' => 28,
@@ -200,20 +200,20 @@ return [
         'types' => [
             'stage1' => [
                 'low' => 0,
-                'high' => 7.49,
+                'high' => 6.99,
                 'total' => 2,
                 'benchmark' => 20,
                 'copy' => 'dassault.digital-delivery-poor-txt'
             ],
             'stage2' => [
-                'low' => 7.5,
-                'high' => 8.99,
+                'low' => 7,
+                'high' => 11.99,
                 'total' => 3,
                 'benchmark' => 34,
                 'copy' => 'dassault.digital-delivery-standard-txt'
             ],
             'stage3' => [
-                'low' => 9,
+                'low' => 12,
                 'high' => 20,
                 'total' => 5,
                 'benchmark' => 28,

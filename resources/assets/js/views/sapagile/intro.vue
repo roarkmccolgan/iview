@@ -4,21 +4,95 @@
 				<div class="container mx-auto">
 					<div class="w-full sm:w-1/2 sm:mb-18 p-5">
 						<h1 class="text-blackblack sm:text-white text-3xl sm:text-5xl font-sapagile font-bold leading-none mb-2">{{ $t('sapagile.title') }}</h1>
-						<h3 class="text-blackblack sm:text-white text-lg font-sapagile font-normal leading-tight mb-8">{{ $t('sapagile.sub-title') }}</h3>
-						<router-link class="block mx-auto text-center sm:inline-block w-2/3 bg-sap-blue hover:bg-sap-orange shadow-md text-white py-4 px-6 no-underline" :to="'/questions/1'">{{ $t('sapagile.startbut') }} <font-awesome-icon class="ml-2" :icon="icons.faArrowRight" /></router-link>
+						<h3 class="text-blackblack sm:text-white sm:inline-block text-xl italic font-sapagile font-normal leading-tight mb-8 sm:p-3 sm:bg-grey-darkest">{{ $t('sapagile.sub-title') }}</h3>
+						
 					</div>					
 				</div>
 		</div>
 		<div class="container mx-auto">
-			<div class="flex flex-wrap flex-row-reverse sm:flex-no-wrap sm:flex-row bg-white p-5 sm:p-10">
-					<div class="w-full sm:w-3/5">
-						<div v-html="$t('sapagile.landing')"></div>
-					</div>
-					<div class="w-full sm:w-2/5 text-center sm:m-0">
-						<img class="w-3/4 mx-auto mb-6" src="/images/tools/15/stat.svg" alt="">
-						<router-link class="block mx-auto text-center sm:inline-block w-2/3 bg-sap-blue hover:bg-sap-orange shadow-md text-white py-4 px-6 no-underline" :to="'/questions/1'">{{ $t('sapagile.startbut') }} <font-awesome-icon class="ml-2" :icon="icons.faArrowRight" /></router-link>
-					</div>
+			<div class="p-5 sm:p-10">
+				<div class="w-full text-grey-darkest" ref="holder">
+					<transition-group
+						name="staggered-slide"
+						appear
+						v-bind:css="false"
+						v-on:before-enter="beforeEnter"
+						v-on:enter="enter"
+						v-on:leave="leave"
+						class=""
+						tag="div"
+					>
+					<div v-html="$t('sapagile.landing1')" key="1" data-index="1"></div>
+					<p class="mb-2" key="2" data-index="2">
+						{{ $t('sapagile.landing-inner') }}
+						<v-popover
+							offset="16"
+							:disabled="!isEnabled"
+							placement="auto"
+							>
+							<span class="underline text-sap-blue cursor-pointer">{{ $t('sapagile.strategic-planning.title') }}</span>
+							<template slot="popover">
+								<p>
+									{{ msg['strategic-planning'] }}
+								</p>
+							</template>
+						</v-popover>, 
+						<v-popover
+							offset="16"
+							:disabled="!isEnabled"
+							placement="auto"
+							>
+							<span class="underline text-sap-blue cursor-pointer">{{ $t('sapagile.processes.title') }}</span>
+							<template slot="popover">
+								<p>
+									{{ msg['processes'] }}
+								</p>
+							</template>
+						</v-popover>, 
+						<v-popover
+							offset="16"
+							:disabled="!isEnabled"
+							placement="auto"
+							>
+							<span class="underline text-sap-blue cursor-pointer">{{ $t('sapagile.customer-relationships.title') }}</span>
+							<template slot="popover">
+								<p>
+									{{ msg['customer-relationships'] }}
+								</p>
+							</template>
+						</v-popover>, 
+						<v-popover
+							offset="16"
+							:disabled="!isEnabled"
+							placement="auto"
+							>
+							<span class="underline text-sap-blue cursor-pointer">{{ $t('sapagile.suppliers-distributors.title') }}</span>
+							<template slot="popover">
+								<p>
+									{{ msg['suppliers-distributors'] }}
+								</p>
+							</template>
+						</v-popover>, 
+						<v-popover
+							offset="16"
+							:disabled="!isEnabled"
+							placement="auto"
+							>
+							<span class="underline text-sap-blue cursor-pointer">{{ $t('sapagile.people-experience.title') }}</span>
+							<template slot="popover">
+								<p>
+									{{ msg['people-experience'] }}
+								</p>
+							</template>
+						</v-popover>, 
+					</p>
+					<div v-html="$t('sapagile.landing2')" key="3" data-index="3"></div>
+					</transition-group>
+			</div>
+			<div class="w-full mt-4 sm:mt-8">
+					<router-link class="block mx-auto text-center sm:inline-block w-2/3 sm:w-1/3 bg-sap-blue hover:bg-sap-yellow shadow-md text-white py-4 px-6 no-underline" :to="'/questions/1'">{{ $t('sapagile.startbut') }} <font-awesome-icon class="ml-2" :icon="icons.faArrowRight" /></router-link>
 				</div>
+			</div>
 		</div>
 	</div>
 		
@@ -35,11 +109,16 @@ export default{
 				faArrowRight: faArrowRight,
 				faGlobe: faGlobe,
 			},
-			showVideo: false
+			showVideo: false,
+			msg: {
+				'strategic-planning': this.$t('sapagile.strategic-planning.popup'),
+				'processes': this.$t('sapagile.processes.popup'),
+				'customer-relationships': this.$t('sapagile.customer-relationships.popup'),
+				'suppliers-distributors': this.$t('sapagile.suppliers-distributors.popup'),
+				'people-experience': this.$t('sapagile.people-experience.popup'),
+			},
+			isEnabled: true
 		}
-	},
-	computed: {
-		
 	},
 	components: {
 		FontAwesomeIcon,
@@ -53,6 +132,36 @@ export default{
 		},
 		trackEvent: function(category, action, label){
 			this.$ga.event(category, action, label);
+		},
+		beforeEnter: function (el) {
+			el.style.marginLeft = "100%";
+			el.style.opacity = 0;
+			el.style.width = window.innerWidth-200+'px';
+		},
+		enter: function (el, done) {
+			var delay = el.dataset.index * (400/3);
+			setTimeout(() => {
+				Velocity(
+					el,
+					{
+						marginLeft: 0, opacity: 1, width: this.$refs.holder.offsetWidth+'px'
+					},
+					{
+						complete: done
+					}
+				)
+			}, delay);
+		},
+		leave: function (el, done) {
+			Velocity(
+				el,
+				{
+					opacity: 0
+				},
+				{
+					complete: done
+				}
+			);
 		}
 	},
 	watch: {
@@ -81,7 +190,7 @@ export default{
 		this.$once('hook:beforeDestroy', () => {
 			document.removeEventListener('keydown', listener)
 			document.body.style.removeProperty('overflow')
-		})
+		});
 	}
 }
 </script>

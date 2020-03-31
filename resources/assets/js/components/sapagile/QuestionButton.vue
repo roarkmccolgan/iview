@@ -2,11 +2,14 @@
 	<div class="mb-2 p-2" :class="[question.optionLabels ? gridClass : 'bg-white rounded']">
 		<h2 v-show="label" :key="'head'" class="mb-2 font-light text-xl leading-tight text-sap-gray " :class="[question.optionLabels ? 'sm:w-1/4 sm:text-base' : 'sm:text-2xl']">{{label}}</h2>
 		<transition-group
-			name="fade"
+			name="staggered-slide"
 			appear
+			v-bind:css="false"
+			v-on:before-enter="beforeEnter"
+			v-on:enter="enter"
+			v-on:leave="leave"
+			:class="{'flex:none sm:flex-1 sm:flex sm:flex-row': question.type!=='button' && question.type!=='checkbox'}"
 			tag="div"
-			class="flex:none sm:flex sm:flex-row"
-			:class="[question.optionLabels ? 'sm:flex-1' : 'sm:flex-col']"
 		>
 		<div v-for="(option, optKey) in options" :key="optKey+'-key'" :data-index="optKey" :class="[question.optionLabels ? 'sm:flex-1 sm:text-center' : '']">
 			<label class="mb-1 font-light rounded" :class="[inAnswer(option.label) ? activeClass : normalClass, question.optionLabels ? 'sm:inline-block p-2' : 'p-4']" tabindex="0" @keyup.space="$event.target.click()">
@@ -20,8 +23,7 @@
 						<template v-else>
 							<font-awesome-icon :icon="icons.faSquare" v-if="!inAnswer(option.label)" />
 							<font-awesome-icon :icon="icons.faCheckSquare" v-else />
-						</template>
-							
+						</template>	
 					</div>
 					<div class="flex-grow" :class="[question.optionLabels ? 'sm:hidden' : '']">
 						<template v-if="showOther && option.type == 'other'">
@@ -71,7 +73,7 @@ export default{
 				'bg-grey-light': true,
 				'outline-none':true,
 				'cursor-pointer': true,
-			}
+			},
 		};
 	},
 	computed: {
@@ -137,6 +139,7 @@ export default{
 			return exists;
 		},
 		beforeEnter: function (el) {
+			console.log(this.radioMarginLeft);
 			el.style.marginLeft = "100%";
 			el.style.opacity = 0;
 		},
@@ -149,7 +152,7 @@ export default{
 						marginLeft: 0, opacity: 1
 					},
 					{
-						complete: done 
+						complete: done ,
 					}
 				)
 			}, delay);
@@ -161,7 +164,7 @@ export default{
 					opacity: 0
 				},
 				{
-					complete: done
+					complete: done,
 				}
 			);
 		}

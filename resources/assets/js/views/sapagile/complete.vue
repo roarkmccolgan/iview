@@ -1,19 +1,14 @@
 <template>
 	<div class="flex-grow ieflex1">
-		<div class="container mx-auto mt-2 mb-4 py-4 px-4 text-sap-blue">
+		<div class="container mx-auto mt-2 py-4 px-4 text-sap-blue">
 			<h1 class="font-sapagile font-bold text-4xl leading-tight">{{ $t('sapagile.title') }}</h1>
 			<h3 class="font-light leading-tight">{{ $t('sapagile.sub-title') }}</h3>
 		</div>
-		<div class="container mx-auto p-4">
+		<div class="container mx-auto px-4">
 			<div class="flex flex-wrap justify-center">
 				<div class="w-full sm:w-1/2 relative">
-					<h2 class="font-light leading-tight mb-4 text-sapagile-blue-bright">{{ $t('sapagile.finishtxtheading') }}</h2>
-					<p>
-						{{ $t('sapagile.finishtxt1') }}: <strong class="inline font-bold text-lg text-sap-blue">{{ $t('sapagile.'+result.overall.rating) }}</strong>
-					</p>
-					<p class="mb-2">
-						{{ $t('sapagile.finishtxt'+theResult['overall'].rating) }}
-					</p>
+					<h2 class="font-light leading-tight mb-4 text-sapagile-blue-bright" v-html="$t('sapagile.finishtxtheading')"></h2>
+					<p v-html="$t('sapagile.finishtxt1', {'result':$t('sapagile.'+result.overall.rating)})"></p>
 					<p v-html="$t('sapagile.finishtxt2')"></p>
 					<img class="max-w-full" :src="'/images/tools/' + assessment.tool.id + '/report'+ assessment.locale +'.png'" alt="">
 				</div>

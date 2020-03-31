@@ -20,7 +20,7 @@
 	    	</div>
 	    </div>
 	</div>
-	<transition name="fade">
+	<transition name="component-fade" mode="out-in">
 		<router-view></router-view>
 	</transition>
 	<div class="bg-sap-blue">
@@ -36,7 +36,6 @@
 </div>
 @stop
 @section('pagescript')
-<script src="//cdn.jsdelivr.net/npm/velocity-animate@1.5/velocity.min.js"></script>
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5aa2e64adce36f89"></script>
 @parent
 @stop

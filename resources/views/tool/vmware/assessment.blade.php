@@ -20,7 +20,7 @@
 	    	</div>
 	    </div>
 	</div>
-	<transition name="fade">
+	<transition name="fade" mode="out-in">
 		<router-view></router-view>
 	</transition>
 	<div class="container mx-auto bg-white border-t border-b mt-6 mb-4 py-4 px-4 sm:border sm:rounded text-grey-darker">

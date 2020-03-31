@@ -1,6 +1,6 @@
 <template>
 	<div class="flex flex-col justify-center">
-		<div class="hidden sm:flex sm:flex-wrap text-grey-darker" v-if="question.optionLabels">
+		<div class="hidden sm:flex sm:flex-wrap text-grey-darker p-2" v-if="question.optionLabels">
 			<div class="w-1/4">&nbsp;</div>
 			<div class="flex-1 flex mb-4">
 				<div class="text-center text-sm" :class="'w-1/'+question.optionLabels.length" v-for="option in question.optionLabels">

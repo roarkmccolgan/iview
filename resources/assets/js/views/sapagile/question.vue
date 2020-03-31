@@ -1,5 +1,5 @@
 <template>
-	<div class="flex-grow bg-grey-lighter">
+	<div class="flex-1 bg-grey-lighter">
 		<div class="flex flex-col">
 			<div class="bg-cover bg-no-repeat bg-blackblack bg-center" :style="`background-image: url(/images/tools/15/${currentQuestion.section}-bg.jpg);`">
 				<div class="container mx-auto">
@@ -21,7 +21,7 @@
 						</div>
 						<div class="flex items-center px-4 my-2 mt-4">
 							<template v-for="(section, secKey) in questionsBySection">
-								<div class="flex-1 text-center rounded h-1 overflow-hidden" :class="[section.section == currentQuestion.section ? 'bg-sap-yellow' : 'bg-grey-light',secKey == 0 ? 'ml-2 cmr' : (secKey == questionsBySection.length - 1 ? 'mr-2 cml' : 'cmx')]">
+								<div class="flex-1 text-center rounded h-1 overflow-hidden" :class="[section.section == currentQuestion.section ? `bg-sap-${currentQuestion.background}` : 'bg-grey-light',secKey == 0 ? 'ml-2 cmr' : (secKey == questionsBySection.length - 1 ? 'mr-2 cml' : 'cmx')]">
 								</div>
 							</template>
 						</div>
@@ -33,13 +33,13 @@
 			</div>
 			<div class="container mx-auto pt-2 text-grey-darkest px-4">
 				<span class="text-sm hidden sm:block sm:my-2">{{ $t('general.question') | toTitle}} {{currentQuestion.name}} {{$t('general.of')}} {{totalQuestions}} - {{ $t('sapagile.'+currentQuestion.section+'.title') }} </span>
-				<transition name="fade">
+				<transition name="fade" mode="out-in">
 					<h1 class="font-light text-2xl sm:text-3xl leading-tight" v-show="showDetails" v-html="currentQuestion.question"></h1>
 				</transition>
 			</div>
 			</div>
 			<div class="container mx-auto my-2 flex-grow">
-				<transition name="fade">
+				<transition name="fade" mode="out-in">
 					<div class="relative border p-2 text" :class="error.class" v-if="error">
 						{{error.message}}
 					</div>
@@ -62,7 +62,7 @@
 				</template>
 			</div>
 			<div class="container mx-auto mt-4">
-				<transition name="fade">
+				<transition name="fade" mode="out-in">
 					<button :class="buttonClass" v-show="showNext" @click="nextQuestion($event)">
 						<font-awesome-icon :icon="faSpinnerThird" size="2x" spin v-if="saving" /> <span v-else>{{$t('general.next')}}</span>
 					</button>
@@ -412,16 +412,16 @@ export default{
 		GroupOpposingSlider,
 	},
 	created: function(){
-		for (var q in this.questions) {
-			if (this.questions.hasOwnProperty(q)){
-				if(!this.questions[q].selected){
-					//console.log('not answered '+this.questions[q].name);
-					this.$router.replace('/questions/'+ this.questions[q].name);
-					this.showNext = false;
-					break;
-				}
-			}
-		}
+		// for (var q in this.questions) {
+		// 	if (this.questions.hasOwnProperty(q)){
+		// 		if(!this.questions[q].selected){
+		// 			//console.log('not answered '+this.questions[q].name);
+		// 			this.$router.replace('/questions/'+ this.questions[q].name);
+		// 			this.showNext = false;
+		// 			break;
+		// 		}
+		// 	}
+		// }
 	}
 }
 </script>

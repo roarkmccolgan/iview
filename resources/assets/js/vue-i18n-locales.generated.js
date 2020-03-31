@@ -1188,9 +1188,11 @@ export default {
             "further-insight": "More information",
             "view-now": "View Now",
             "title": "Click to be Agile",
-            "sub-title": "An IDC Assessment, sponsored by SAP",
-            "landing": "\n        <p class=\"mb-2\">\n            Becoming more agile will enable your business to react to change in the external environment. It will also enable you to scale operations efficiently to better meet the evolving needs of your customers. But how do you become more agile as a business?\n        </p>\n        <p class=\"mb-2\">\n            Firstly, you need to know how agile your business is today. And from there, what you can do to make change happen tomorrow.\n        </p>\n        <p class=\"mb-2\">\n            The digital economy, international competition, and changes to market needs, represent both challenges and opportunities to mid-sized, fast growing, start - up companies like yours. You have the potential to adapt to the needs of the market faster and more accurately; as well as innovate more rapidly than larger more complex organizations.  This IDC agility tool will test your businesses agility across 5 key areas:\n        </p>\n        <ul class=\"mb-2 font-bold\">\n            <li>Strategic Planning</li>\n            <li>Processes</li>\n            <li>Customer Relationships</li>\n            <li>Suppliers & Distributors </li>\n            <li>People Experience (HR)</li>\n        </ul>\n        <p class=\"mb-2\">\n            Once completed, you will get a full overview of your organizational agility with actionable recommendations. These will enable you to drive important changes to your business, ensuring the next wave of success for your organization. \n        </p>",
-            "startbut": "Are you ready?",
+            "sub-title": "The first step in your agility journey",
+            "landing1": "\n        <p class=\"mb-4 text-xl font-bold text-sap-blue leading-tight\">\n            Agile organizations are more competitive, jump on opportunities more quickly and are able to build stronger relationships with suppliers, distributors and customers.\n        </p>\n        <p class=\"mb-4 text-xl font-medium text-black leading-tight\">\n            But how do you become more agile as a business? Firstly, you need to know how agile your are today and what you need to do, to become more agile tomorrow. \n        </p>",
+            "landing-inner": "IDC’s agility tool assesses your businesses agility across 5 key areas:",
+            "landing2": "\n        <p class=\"mb-2\">\n            Once completed, you will get a full overview of your organizational agility with actionable recommendations. These will enable you to drive important changes to your business, ensuring the next wave of success for your organization.\n        </p>\n        <p>\n            This will take around 5-7 minutes to complete.\n        </p>",
+            "startbut": "Start the IDC Agility Assessment",
             "send": "We can send you the full results directly to your mailbox",
             "register": "Register now to receive your personalized report",
             "provide": "Provide us with a few details and we'll send you a link to download it.",
@@ -1200,38 +1202,40 @@ export default {
             "facebooklink": "https://www.facebook.com/sharer/sharer.php?u=http%3A//bit.ly/2AwihN4",
             "linkedinlink": "https://www.linkedin.com/shareArticle?mini=true&url=http%3A//bit.ly/2AwihN4&title=Symantec%20and%20IDC%20GDPR%20Assessment&summary=Is%20your%20business%20GDPR%20ready?&source=",
             "strategic-planning": {
-                "title": "Strategic Planning"
+                "title": "Strategic Planning",
+                "popup": "\n            Planning is the process by which your business defines its goals and how to achieve them. Planning may include defining the growth you would like to achieve for the business in the coming year and what resources you will need to make this possible. \n        "
             },
             "processes": {
-                "title": "Processes"
+                "title": "Processes",
+                "popup": "\n            A business process is a collection of related activities or tasks, performed by both people and machines. An example of process is how an order received from a customer is invoiced, then produced, through to how the order is delivered.\n        "
             },
             "customer-relationships": {
-                "title": "Customer Relationships"
+                "title": "Customer Relationships",
+                "popup": "\n            Customer relationships include the activities in which you are interacting or communicating directly with your customers. Customer facing staff play a pivotal role in the experience's consumers have, and the information you gather on customer requirements.\n        "
             },
             "suppliers-distributors": {
-                "title": "Suppliers and Distributors"
+                "title": "Suppliers and Distributors",
+                "popup": "\n            Suppliers are the providers of products or services coming into, and being consumed by, your business. Distributors are those that purchase products from you and then use or resell them. The relationship with these partners, helps identify your level of agility.\n        "
             },
             "people-experience": {
-                "title": "People Experience"
+                "title": "People Experience",
+                "popup": "\n            People Experience concerns how information is shared with employees, as well as what they encounter and observe in their roles. It also refers to how they are measured, motivated and engaged by their work and by the business.\n        "
             },
             "stage1": "Beginner",
             "stage2": "Intermediate",
             "stage3": "Advanced",
-            "finishtxtheading": "\n        Thank you for completing the Click to be Agile Assessment.\n    ",
-            "finishtxt1": "Based on your total responses, you rank as a",
-            "finishtxtstage1": "\n        which is the lowest level of three in this assessment.\n    ",
-            "finishtxtstage2": "\n        which is the middle level of three in this assessment.\n    ",
-            "finishtxtstage3": "\n        which is the highest level of three in this assessment.\n    ",
-            "finishtxt2": "\n        <p class=\"mb-2 mt-4\">Would you like the full report that provides you with essential guidance for advancing in your agility journey? </p>\n        <p class=\"mb-4\">We can send this directly to your mailbox. Just provide us your details and we'll send it to you.</p>\n    ",
+            "finishtxtheading": "\n        <span class=\"font-bold\">Thank you for completing the IDC Click to be Agile Assessment Tool, sponsored by SAP.</span><br/><br/> Now you will find out just how agile your business is!\n    ",
+            "finishtxt1": "Based on the answers you provided, IDC place your business as: <strong class=\"inline font-bold text-lg text-sap-blue\">{result}</strong> ",
+            "finishtxt2": "\n        <p class=\"mb-2 mt-4 font-bold\">But what does this mean?</p>\n        <p class=\"mb-2 mt-4\">To immediately receive a personalized report via email with a full analysis of your business agility and recommendations, please complete the registration form.</p>\n        <p class=\"mb-2 mt-4\">We will treat your information with the upmost respect, and we look forward to sharing useful insights with you! </p>\n        <p class=\"mb-2\">The privacy and the security of your information is important to us. Please read IDC privacy policies via the link below.</p>\n        <p class=\"mb-4 font-bold\">The IDC Team</p>\n    ",
             "complete_thankyou": "Thank you {Fname},",
             "complete_body": "\n        Your custom report will arrive in your inbox soon.<br/>\n        Please check in your junk folder if you don't receive it within 5 minutes.<br/><br/>\n        <a class=\"btn btn--primary\" target=\"_blank\" href=\"https://www.3ds.com/3dexperience/cloud/\">\n            Click here for more information\n        </a>",
             "complete_tweet": "I've just taken the @IDCEMEA GDPR Assessment Tool for @3ds. Interested? ",
             "email": {
-                "subject": "Dassault Systèmes Digital Maturity Assessment",
+                "subject": "IDC Click to be Agile Assessment",
                 "hi": "Hi {Fname}",
-                "body": "As promised, here's a link to download your Dassault Systèmes Digital Maturity Assessment Report.",
-                "link": "Download Report",
-                "extra": "Once you've read the report why not visit Dassault Systèmes <a href=\"https://www.3ds.com/3dexperience/cloud/\" style=\"color:#054683\">3DS</a>",
+                "body": "Thank you for completing the assessment, here is the link to download your IDC Agility Assessment Report. This breaks down your results by category and provides you with actionable recommendations.",
+                "link": "VIEW YOUR AGILITY SCORE",
+                "extra": "Feel free to share this with other departments of your organization and with you customers and partners. You can always invite them to fill in the assessment and compare answers.<br>\n            <a href=\"{url}\">{url}</a><br><br>\n            This assessment has been sponsored by SAP.<br>\n            To know more about SAP, please visit <a href=\"https://sap.com\">https://sap.com</a>",
                 "regards": "Regards",
                 "team": "The IDC Team"
             },
