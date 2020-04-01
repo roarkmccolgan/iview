@@ -27,11 +27,14 @@
 </script>
 @endif
 <div id="app" class="h-screen flex flex-col">
-	<div class="bg-white">
+	<div class="bg-blackblack">
 	    <div class="container mx-auto px-4">
-    		<div class="w-full flex justify-between py-2 pt-4">
-    			<a class="w-1/2" href="https://idc.com/uk" target="_blank"><img src="{{ asset('images/vmware.svg')}}" alt=""></a>
-    			<a class="w-48" href="https://idc.com/uk" target="_blank"><img src="{{ asset('images/idclogocolour.svg')}}" alt=""></a>
+    		<div class="w-full flex justify-between items-start py-5">
+    			<a class="w-24 sm:w-48" href="https://idc.com/uk" target="_blank"><img src="{{ asset('images/idc_logo_white.svg')}}" alt=""></a>
+    			<div class="w-16 sm:w-24 text-sm text-white leading-none">
+    				sponsored by:
+    				<a class="w-full" href="https://sap.com" target="_blank"><img class="mt-2" src="{{ asset('images/SAP_logo.svg')}}" alt=""></a>
+    			</div>
 	    	</div>
 	    </div>
 	</div>
@@ -49,12 +52,15 @@
 			</div>
 		</div>
 	</div>
-	<div class="container mx-auto bg-white border-t border-b mt-6 mb-4 py-4 px-4 sm:border sm:rounded text-grey-darker">
-		<div class="flex justify-start">
-			<div class="mr-2 pr-2 border-r text-sm"><a href="/disclaimer" target="_blank" class="no-underline text-dasssault-blue opacity-75">@lang('general.disclaimer')</a></div>
-			<div class="mr-2 pr-2 border-r text-sm"><a href="/privacy" target="_blank" class="no-underline text-dasssault-blue opacity-75">@lang('general.idcprivacy')</a></div>
-			<div class="mr-2 pr-2 border-r text-sm"><a href="/cookies" target="_blank" class="no-underline text-dasssault-blue opacity-75">@lang('general.cookiespolicylink')</a></div>
-		</div>
+	<div class="bg-sap-blue">
+		<div class="container mx-auto mt-6 mb-4 py-4 px-4">
+			<div class="flex justify-start">
+				<div class="mr-2 pr-2 border-r text-sm"><a href="{{ url(session('locale').'/restart') }}" class="no-underline text-white opacity-75"><font-awesome-icon class="mr-1" :icon="icons.faUndo"></font-awesome-icon>@lang($tool->alias.'.restart')</a></div>
+				<div class="mr-2 pr-2 border-r text-sm"><a href="/disclaimer" target="_blank" class="no-underline text-white opacity-75">@lang('general.disclaimer')</a></div>
+				<div class="mr-2 pr-2 border-r text-sm"><a href="/privacy" target="_blank" class="no-underline text-white opacity-75">@lang('general.idcprivacy')</a></div>
+				<div class="mr-2 pr-2 border-r text-sm"><a href="/cookies" target="_blank" class="no-underline text-white opacity-75">@lang('general.cookiespolicylink')</a></div>
+			</div>
+		</div>		
 	</div>
 </div>
 @stop

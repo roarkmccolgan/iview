@@ -14,9 +14,12 @@
 <div id="app" class="h-screen flex flex-col relative">
 	<div class="bg-blackblack">
 	    <div class="container mx-auto px-4">
-    		<div class="w-full flex justify-between items-center py-5">
+    		<div class="w-full flex justify-between items-start py-5">
     			<a class="w-24 sm:w-48" href="https://idc.com/uk" target="_blank"><img src="{{ asset('images/idc_logo_white.svg')}}" alt=""></a>
-    			<a class="w-16 mt-2 sm:w-24" href="https://sap.com" target="_blank"><img src="{{ asset('images/SAP_logo.svg')}}" alt=""></a>
+    			<div class="w-16 sm:w-24 text-sm text-white leading-none">
+    				sponsored by:
+    				<a class="w-full" href="https://sap.com" target="_blank"><img class="mt-2" src="{{ asset('images/SAP_logo.svg')}}" alt=""></a>
+    			</div>
 	    	</div>
 	    </div>
 	</div>

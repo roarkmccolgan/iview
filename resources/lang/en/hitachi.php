@@ -1041,4 +1041,7 @@ return array(
             </p>
         </div>
     ',
+    'conclusion' => '
+        
+    '
 );

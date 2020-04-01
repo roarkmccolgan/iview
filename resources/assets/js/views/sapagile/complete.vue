@@ -76,30 +76,23 @@
 										<p class="text-red text-xs italic" v-show="errors.company" v-html="$t('general.errorCompany')"></p>
 									</div>
 								</div>
-								<!-- <div class="mb-6 sm:w-1/2">
+								<div class="mb-6 sm:w-1/2">
 									<div class="mr-2">
-										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="company_size">
-											{{ $t('general.employees') }}
+										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="areas_interest">
+											{{ $t('sapagile.areas_interest') }}
 										</label>
 										<div class="inline-block relative w-full mb-2">
-											<select class="block appearance-none w-full bg-grey-lighter border text-grey-darker py-3 px-4 pr-8 rounded" :class="[errors.size ? 'border-red' : '']" id="company_size" name="extra[company_size]" @blur="hasError">
-												<option value="" v-html="$t('general.pleaseselect')"></option>
-												<option value="1" v-html="$t('sapagile.size1')"></option>
-												<option value="2 to 9" v-html="$t('sapagile.size2')"></option>
-												<option value="10 to 49" v-html="$t('sapagile.size3')"></option>
-												<option value="50 to 99" v-html="$t('sapagile.size4')"></option>
-												<option value="100 to 249" v-html="$t('sapagile.size5')"></option>
-												<option value="250 to 499" v-html="$t('sapagile.size6')"></option>
-												<option value="500 to 999" v-html="$t('sapagile.size7')"></option>
-												<option value="1000 or more" v-html="$t('sapagile.size8')"></option>
+											<select multiple class="block appearance-none w-full bg-grey-lighter border text-grey-darker py-3 px-4 pr-8 rounded" :class="[errors.size ? 'border-red' : '']" id="areas_interest" name="extra[areas_interest]" @blur="hasError">
+												<option :value="$t('sapagile.interest1')" v-html="$t('sapagile.interest1')"></option>
+												<option :value="$t('sapagile.interest2')" v-html="$t('sapagile.interest2')"></option>
+												<option :value="$t('sapagile.interest3')" v-html="$t('sapagile.interest3')"></option>
+												<option :value="$t('sapagile.interest4')" v-html="$t('sapagile.interest4')"></option>
+												<option :value="$t('sapagile.interest5')" v-html="$t('sapagile.interest5')"></option>
 											</select>
-											<div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-darker">
-												<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
-											</div>
 										</div>
-										<p class="text-red text-xs italic" v-show="errors.company_size" v-html="$t('general.errorEmployees')"></p>
+										<p class="text-red text-xs italic" v-show="errors.areas_interest" v-html="$t('general.errorAreasInterest')"></p>
 									</div>
-								</div> -->
+								</div>
 								<!-- <div class="mb-6 sm:w-1/2">
 									<div class="ml-2">
 										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="industry">
@@ -233,6 +226,7 @@ export default{
 				business: false,
 				city: false,
 				company_size: false,
+				areas_interest: false,
 				turnover: false,
 				country: false,
 				terms: false
@@ -274,6 +268,17 @@ export default{
 				}else{
 					this.errors[event.target.id] = false;
 				}
+			}
+			if(event.target.type == "select-multiple"){
+				let selected = [];
+				Array.prototype.forEach.call(event.target.options, opt => {
+					console.log(opt.selected);
+					if(opt.selected){
+						selected.push(opt);
+					}					
+				});
+				console.log(selected);
+				this.errors[event.target.id] = !selected.length > 0;
 			}
 
 			if(event.target.type == "checkbox"){

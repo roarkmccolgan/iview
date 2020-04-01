@@ -1196,11 +1196,17 @@ export default {
             "send": "We can send you the full results directly to your mailbox",
             "register": "Register now to receive your personalized report",
             "provide": "Provide us with a few details and we'll send you a link to download it.",
-            "byreg": "By registering with IDC, you accept our <a href=\"/privacy\" target=\"_blank\">Privacy Policy</a> and SAP, <a href=\"https://www.sap.com/about/legal/privacy.html\" target=\"_blank\">Privacy Policy</a>.",
+            "byreg": "By registering with IDC, you accept our <a href=\"/privacy\" target=\"_blank\">Privacy Policy</a>.",
             "wait": "While you're waiting why not tweet your results and see how your colleagues measure up?",
             "twitterlink": "https://twitter.com/home?status=Is%20your%20business%20GDPR%20ready?%20http%3A//bit.ly/2AwihN4%20%23Symantec",
             "facebooklink": "https://www.facebook.com/sharer/sharer.php?u=http%3A//bit.ly/2AwihN4",
             "linkedinlink": "https://www.linkedin.com/shareArticle?mini=true&url=http%3A//bit.ly/2AwihN4&title=Symantec%20and%20IDC%20GDPR%20Assessment&summary=Is%20your%20business%20GDPR%20ready?&source=",
+            "areas_interest": "Your areas of interest",
+            "interest1": "Finance &amp; Administration",
+            "interest2": "Purchase",
+            "interest3": "HR",
+            "interest4": "Production &amp; Supply chain",
+            "interest5": "Sales &amp; Marketing",
             "strategic-planning": {
                 "title": "Strategic Planning",
                 "popup": "\n            Planning is the process by which your business defines its goals and how to achieve them. Planning may include defining the growth you would like to achieve for the business in the coming year and what resources you will need to make this possible. \n        "
@@ -1226,9 +1232,9 @@ export default {
             "stage3": "Advanced",
             "finishtxtheading": "\n        <span class=\"font-bold\">Thank you for completing the IDC Click to be Agile Assessment Tool, sponsored by SAP.</span><br/><br/> Now you will find out just how agile your business is!\n    ",
             "finishtxt1": "Based on the answers you provided, IDC place your business as: <strong class=\"inline font-bold text-lg text-sap-blue\">{result}</strong> ",
-            "finishtxt2": "\n        <p class=\"mb-2 mt-4 font-bold\">But what does this mean?</p>\n        <p class=\"mb-2 mt-4\">To immediately receive a personalized report via email with a full analysis of your business agility and recommendations, please complete the registration form.</p>\n        <p class=\"mb-2 mt-4\">We will treat your information with the upmost respect, and we look forward to sharing useful insights with you! </p>\n        <p class=\"mb-2\">The privacy and the security of your information is important to us. Please read IDC privacy policies via the link below.</p>\n        <p class=\"mb-4 font-bold\">The IDC Team</p>\n    ",
+            "finishtxt2": "\n        <p class=\"mb-2 mt-4 font-bold\">But what does this mean?</p>\n        <p class=\"mb-2 mt-4\">To immediately receive a personalized report via email with a full analysis of your business agility and recommendations, please complete the registration form.</p>\n        <p class=\"mb-2 mt-4\">We will treat your information with the utmost respect, and we look forward to sharing useful insights with you! </p>\n        <p class=\"mb-2\">The privacy and the security of your information is important to us. Please read IDC privacy policies via the link below.</p>\n        <p class=\"mb-4 font-bold\">The IDC Team</p>\n    ",
             "complete_thankyou": "Thank you {Fname},",
-            "complete_body": "\n        Your custom report will arrive in your inbox soon.<br/>\n        Please check in your junk folder if you don't receive it within 5 minutes.<br/><br/>\n        <a class=\"btn btn--primary\" target=\"_blank\" href=\"https://www.3ds.com/3dexperience/cloud/\">\n            Click here for more information\n        </a>",
+            "complete_body": "\n        Your custom report will arrive in your inbox soon.<br/>\n        Please check in your junk folder if you don't receive it within 5 minutes.<br/><br/>\n        To find out more about SAP for your region, please click the relevant link below:<br>\n        <a class=\"text-sap-blue\" href=\"https://www.sap.com/africa/products/sme-business-software.html\">Africa</a><br/>\n        <a class=\"text-sap-blue\" href=\"https://www.sap.com/mena/products/sme-business-software.html\">Middle East</a><br/>\n        <a class=\"text-sap-blue\" href=\"https://www.sap.com/spain/products/sme-business-software.html\">Spain</a><br/>\n        <a class=\"text-sap-blue\" href=\"https://events.sap.com/it/sapitalia/it/feelings\">Italy</a><br/><br/>\n        <a class=\"btn btn--primary\" target=\"_blank\" href=\"https://www.sap.com/products/sme-business-software.html\">\n            Click here to visit the SAP global website\n        </a>",
             "complete_tweet": "I've just taken the @IDCEMEA GDPR Assessment Tool for @3ds. Interested? ",
             "email": {
                 "subject": "IDC Click to be Agile Assessment",
@@ -1960,7 +1966,8 @@ export default {
             "question9-2-3": "\n        <div class=\"clearfix\">\n            <p class=\"w-3/4 ml-auto mb-2\">\n                For a Cloud Practitioner, you have already mastered most challenges on your data value realization journey and can focus on other aspects of cloud migration and cloud operations to improve your overall cloud maturity.\n            </p>\n        </div>\n    ",
             "question9-3-1": "\n        <div class=\"clearfix\">\n            <p class=\"w-3/4 ml-auto mb-2\">\n                Although you are a Cloud Master overall, you are still at the beginning of your data value realization journey, so perhaps engage a partner to get you started, as you are lagging far behind your Cloud Master peers and need to catch up quickly. \n            </p>\n        </div>\n    ",
             "question9-3-2": "\n        <div class=\"clearfix\">\n            <p class=\"w-3/4 ml-auto mb-2\">\n                For a Cloud Master, you have only mastered the early challenges on your data value realization journey and should look for a strong partner to accelerate your journey so that you can catch up with your Cloud Master peers. \n            </p>\n        </div>\n    ",
-            "question9-3-3": "\n        <div class=\"clearfix\">\n            <p class=\"w-3/4 ml-auto mb-2\">\n                For a Cloud Master, you have already mastered most challenges on your data value realization journey and can focus on other aspects of cloud migration and cloud operations to improve your overall cloud maturity.\n            </p>\n        </div>\n    "
+            "question9-3-3": "\n        <div class=\"clearfix\">\n            <p class=\"w-3/4 ml-auto mb-2\">\n                For a Cloud Master, you have already mastered most challenges on your data value realization journey and can focus on other aspects of cloud migration and cloud operations to improve your overall cloud maturity.\n            </p>\n        </div>\n    ",
+            "conclusion": "\n        \n    "
         },
         "dassault": {
             "elqFormName": "",
@@ -2676,6 +2683,7 @@ export default {
             "errorTitle": "Enter your title",
             "errorPhone": "Enter your phone number",
             "errorCountry": "Please select your country",
+            "errorAreasInterest": "Please choose your areas of interest",
             "errorCity": "Please select your city",
             "errorNumber": "Please enter a valid phone number",
             "errorRelationship": "Please select Relationship Type",

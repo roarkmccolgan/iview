@@ -104,7 +104,7 @@ export default{
 			answer: [],
 			saving: false,
 			normalButton: 'block w-full py-4 px-4 text-center bg-sap-blue text-white',
-			disabledButton: 'block w-full py-4 px-4 text-center bg-sap-blue text-white opacity-50 cursor-not-allowed',
+			disabledButton: 'block w-full py-4 px-4 text-center bg-sap-blue text-white opacity-50',
 			error: false,
 			errorClass: 'border-red-lighter bg-red-lightest text-red-light',
 			noticeClass: 'border-blue-light bg-blue-lighter text-sap-blue',

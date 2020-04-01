@@ -34,11 +34,18 @@ return array(
     'send'=>'We can send you the full results directly to your mailbox',
     'register'=>'Register now to receive your personalized report',
     'provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
-    'byreg'=>'By registering with IDC, you accept our <a href="/privacy" target="_blank">Privacy Policy</a> and SAP, <a href="https://www.sap.com/about/legal/privacy.html" target="_blank">Privacy Policy</a>.',
+    'byreg'=>'By registering with IDC, you accept our <a href="/privacy" target="_blank">Privacy Policy</a>.',
     'wait'=>'While you\'re waiting why not tweet your results and see how your colleagues measure up?',
     'twitterlink'=>'https://twitter.com/home?status=Is%20your%20business%20GDPR%20ready?%20http%3A//bit.ly/2AwihN4%20%23Symantec',
     'facebooklink'=>'https://www.facebook.com/sharer/sharer.php?u=http%3A//bit.ly/2AwihN4',
     'linkedinlink'=>'https://www.linkedin.com/shareArticle?mini=true&url=http%3A//bit.ly/2AwihN4&title=Symantec%20and%20IDC%20GDPR%20Assessment&summary=Is%20your%20business%20GDPR%20ready?&source=',
+
+    'areas_interest' => 'Your areas of interest',
+    'interest1' => 'Finance &amp; Administration',
+    'interest2' => 'Purchase',
+    'interest3' => 'HR',
+    'interest4' => 'Production &amp; Supply chain',
+    'interest5' => 'Sales &amp; Marketing',
 
     'strategic-planning' => [
         'title'=> 'Strategic Planning',
@@ -82,7 +89,7 @@ return array(
     'finishtxt2' => '
         <p class="mb-2 mt-4 font-bold">But what does this mean?</p>
         <p class="mb-2 mt-4">To immediately receive a personalized report via email with a full analysis of your business agility and recommendations, please complete the registration form.</p>
-        <p class="mb-2 mt-4">We will treat your information with the upmost respect, and we look forward to sharing useful insights with you! </p>
+        <p class="mb-2 mt-4">We will treat your information with the utmost respect, and we look forward to sharing useful insights with you! </p>
         <p class="mb-2">The privacy and the security of your information is important to us. Please read IDC privacy policies via the link below.</p>
         <p class="mb-4 font-bold">The IDC Team</p>
     ',
@@ -90,8 +97,13 @@ return array(
     'complete_body' => '
         Your custom report will arrive in your inbox soon.<br/>
         Please check in your junk folder if you don\'t receive it within 5 minutes.<br/><br/>
-        <a class="btn btn--primary" target="_blank" href="https://www.3ds.com/3dexperience/cloud/">
-            Click here for more information
+        To find out more about SAP for your region, please click the relevant link below:<br>
+        <a class="text-sap-blue" href="https://www.sap.com/africa/products/sme-business-software.html">Africa</a><br/>
+        <a class="text-sap-blue" href="https://www.sap.com/mena/products/sme-business-software.html">Middle East</a><br/>
+        <a class="text-sap-blue" href="https://www.sap.com/spain/products/sme-business-software.html">Spain</a><br/>
+        <a class="text-sap-blue" href="https://events.sap.com/it/sapitalia/it/feelings">Italy</a><br/><br/>
+        <a class="btn btn--primary" target="_blank" href="https://www.sap.com/products/sme-business-software.html">
+            Click here to visit the SAP global website
         </a>',
     'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @3ds. Interested? ',// http://bit.ly/2gslXEh
     'email'=>[

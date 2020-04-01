@@ -4,7 +4,7 @@
 				<div class="container mx-auto">
 					<div class="w-full sm:w-1/2 sm:mb-18 p-5">
 						<h1 class="text-blackblack sm:text-white text-3xl sm:text-5xl font-sapagile font-bold leading-none mb-2">{{ $t('sapagile.title') }}</h1>
-						<h3 class="text-blackblack sm:text-white sm:inline-block text-xl italic font-sapagile font-normal leading-tight mb-8 sm:p-3 sm:bg-grey-darkest">{{ $t('sapagile.sub-title') }}</h3>
+						<h3 class="text-blackblack sm:text-white sm:inline-block text-3xl italic font-sapagile font-normal leading-tight mb-8">{{ $t('sapagile.sub-title') }}</h3>
 						
 					</div>					
 				</div>

@@ -2655,7 +2655,7 @@ class PdfController extends Controller
             $customCopy.= trans(
                 session('product.alias').'.question4'
             );
-            $q4score = $this->getQuestionScoreNew(3, 'migration', 3);
+            $q4score = $this->getQuestionScoreNew(4, 'migration', 4);
             if($q4score <= 5){
                 $customCopy.= trans(session('product.alias').'.question4-'.$overallNumber.'-1');
             }elseif($q4score >= 6 && $q4score <= 10){
@@ -2707,15 +2707,15 @@ class PdfController extends Controller
                 session('product.alias').'.question6'
             );
             $q6answer = $this->getAnswerText(6, 'status', 2);
-            if(in_array('Cloud deployments greatly improve application and IT infrastructure efficiency / performance', $q6answer)){
+            if(in_array('Improve application and IT infrastructure efficiency / performance', $q6answer)){
                 $customCopy.= trans(session('product.alias').'.question6-a');
-            }elseif(in_array('Using one or more clouds powers my organization’s growth initiatives and innovation', $q6answer)){
+            }elseif(in_array('Use of one or more clouds powers growth initiatives and innovation', $q6answer)){
                 $customCopy.= trans(session('product.alias').'.question6-b');
-            }elseif(in_array('It allows us to manage and reduce technical debt', $q6answer)){
+            }elseif(in_array('Manage and reduce technical debt', $q6answer)){
                 $customCopy.= trans(session('product.alias').'.question6-c');
-            }elseif(in_array('My organization’s cloud initiatives will provide my customers, partners and employees with an improved digital experience', $q6answer)){
+            }elseif(in_array('Provide customers, partners and employees with an improved digital experience', $q6answer)){
                 $customCopy.= trans(session('product.alias').'.question6-d');
-            }elseif(in_array('Maximize the utilization of data and derive faster data-based insights', $q6answer)){
+            }elseif(in_array('Maximize the utilization of data and derive faster data-driven insights', $q6answer)){
                 $customCopy.= trans(session('product.alias').'.question6-e');
             }
 
@@ -2785,6 +2785,8 @@ class PdfController extends Controller
             }else{
                 $customCopy.= trans(session('product.alias').'.question9-'.$overallNumber.'-3');
             }
+
+            //conclusion is in report end.pdf
 
             $vars['sectionCopy'] = $customCopy;
         } elseif (session('product.id') == 14) { //VMware
@@ -3265,6 +3267,7 @@ class PdfController extends Controller
 
             $merge->addPDF(storage_path().'/hitachi_cover'.$locale .'.pdf', 'all');
             $merge->addPDF(storage_path().'/hitachi-'.$timeStamp.'.pdf', 'all');
+            $merge->addPDF(storage_path().'/hitachi_end'.$locale .'.pdf', 'all');
 
 
             $merge->merge();
