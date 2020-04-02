@@ -27,12 +27,13 @@ return array(
     'send'=>'We can send you the full results directly to your mailbox',
     'register'=>'Register now to receive your personalized report',
     'provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
+    'marketing'=>'Yes, I would like to receive communications from VMware and/or its affiliates regarding products and services, newsletters, and events.',
     'byreg'=>'By registering with IDC, you accept our <a href="/privacy" target="_blank">Privacy Policy</a> and VMware, <a href="https://www.vmware.com/help/privacy.html" target="_blank">Privacy Policy</a>.',
     'wait'=>'While you\'re waiting why not tweet your results and see how your colleagues measure up?',
     'twitterlink'=>'https://twitter.com/home?status=Is%20your%20business%20GDPR%20ready?%20http%3A//bit.ly/2AwihN4%20%23Symantec',
     'facebooklink'=>'https://www.facebook.com/sharer/sharer.php?u=http%3A//bit.ly/2AwihN4',
     'linkedinlink'=>'https://www.linkedin.com/shareArticle?mini=true&url=http%3A//bit.ly/2AwihN4&title=Symantec%20and%20IDC%20GDPR%20Assessment&summary=Is%20your%20business%20GDPR%20ready?&source=',
-
+    'errorMarketing'=>'Please accept that you wish to receive marketing from VMware and/or its business partners.',
     'network-infrastructure' => [
         'title'=> 'Network Infrastructure',
     ],
