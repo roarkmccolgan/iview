@@ -49,6 +49,7 @@
 				<p class="mb-2">
 					{!! $body !!}
 				</p>
+                <div class="addthis_inline_share_toolbox"></div>
 			</div>
 		</div>
 	</div>
@@ -66,6 +67,16 @@
 </div>
 @stop
 @section('pagescript')
+<script type="text/javascript">
+var addthis_share = {
+   url: "{{ url(session('locale').'/') }}",
+   title: "IDC Click to be Agile Assessment Tool",
+   description: "What you need to do, to become more agile tomorrow",
+   media: "http://sapstaging.idcready.net/images/tools/15/homepage.jpg"
+}
+</script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e8c7466421e5661"></script>
 <script src="//cdn.jsdelivr.net/npm/velocity-animate@1.5/velocity.min.js"></script>
 @parent
 @stop

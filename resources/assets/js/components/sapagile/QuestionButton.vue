@@ -139,7 +139,6 @@ export default{
 			return exists;
 		},
 		beforeEnter: function (el) {
-			console.log(this.radioMarginLeft);
 			el.style.marginLeft = "100%";
 			el.style.opacity = 0;
 		},

@@ -46,6 +46,7 @@ return array(
     'interest3' => 'HR',
     'interest4' => 'Production &amp; Supply chain',
     'interest5' => 'Sales &amp; Marketing',
+    'interest6' => 'All of the above',
 
     'strategic-planning' => [
         'title'=> 'Strategic Planning',
@@ -78,9 +79,11 @@ return array(
         ',
     ],
 
-    'stage1' => 'Beginner',
-    'stage2' => 'Intermediate',
-    'stage3' => 'Advanced',
+    'stage1' => 'Agile Starter',
+    'stage2' => 'Agile Mover',
+    'stage3' => 'Agile Transformer',
+    'stage4' => 'Agile',
+    'stage5' => 'Agile Master',
 
     'finishtxtheading' => '
         <span class="font-bold">Thank you for completing the IDC Click to be Agile Assessment Tool, sponsored by SAP.</span><br/><br/> Now you will find out just how agile your business is!
@@ -97,14 +100,12 @@ return array(
     'complete_body' => '
         Your custom report will arrive in your inbox soon.<br/>
         Please check in your junk folder if you don\'t receive it within 5 minutes.<br/><br/>
-        To find out more about SAP for your region, please click the relevant link below:<br>
+        To find out more about SAP for your location, please click the relevant link below:<br>
         <a class="text-sap-blue" href="https://www.sap.com/africa/products/sme-business-software.html">Africa</a><br/>
         <a class="text-sap-blue" href="https://www.sap.com/mena/products/sme-business-software.html">Middle East</a><br/>
         <a class="text-sap-blue" href="https://www.sap.com/spain/products/sme-business-software.html">Spain</a><br/>
         <a class="text-sap-blue" href="https://events.sap.com/it/sapitalia/it/feelings">Italy</a><br/><br/>
-        <a class="btn btn--primary" target="_blank" href="https://www.sap.com/products/sme-business-software.html">
-            Click here to visit the SAP global website
-        </a>',
+        Share the tool ',
     'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @3ds. Interested? ',// http://bit.ly/2gslXEh
     'email'=>[
         'subject' => 'IDC Click to be Agile Assessment',

@@ -76,17 +76,17 @@ return [
                             ],
                             [
                                 'label'=>'Budgeting',
+                                'value'=>1,
+                                'checked'=>false,
+                            ],
+                            [
+                                'label'=>'Production / Operations',
                                 'value'=>2,
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'Production',
-                                'value'=>3,
-                                'checked'=>false,
-                            ],
-                            [
                                 'label'=>'HR (Headcounts – New Hiring)',
-                                'value'=>4,
+                                'value'=>2,
                                 'checked'=>false,
                             ]
                         ]
@@ -98,9 +98,9 @@ return [
                 'questions' => [
                     'q3'=>[
                         'type'=>'groupbutton',
-                        'calc'=>[
-                            'type'=>'average'
-                        ],
+                        // 'calc'=>[
+                        //     'type'=>'average'
+                        // ],
                         'optionLabels' => [
                             '1 Very slowly',
                             '2',
@@ -758,27 +758,27 @@ return [
                             ],
                             [
                                 'label'=>'Employee output (productivity measures)',
-                                'value'=>2,
+                                'value'=>1,
                                 'checked'=>false,
                             ],
                             [
                                 'label'=>'Staff turnover and absenteeism ',
-                                'value'=>3,
+                                'value'=>2,
                                 'checked'=>false,
                             ],
                             [
                                 'label'=>'Based on business and personal goals ',
-                                'value'=>4,
+                                'value'=>2,
                                 'checked'=>false,
                             ],
                             [
                                 'label'=>'Customer feedback ',
-                                'value'=>5,
+                                'value'=>3,
                                 'checked'=>false,
                             ],
                             [
                                 'label'=>'Employee Experience measures (employee happiness, employee engagement, etc.)',
-                                'value'=>6,
+                                'value'=>3,
                                 'checked'=>false,
                             ]
                         ]

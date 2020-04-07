@@ -411,6 +411,13 @@ export default{
 		GroupButton,
 		GroupOpposingSlider,
 	},
+	beforeRouteUpdate (to, from, next) {
+		let answered = this.questions['q'+ Number(to.params.question)].selected;
+		if(answered){
+			this.answer = answered;
+		}
+		next();
+	},
 	created: function(){
 		// for (var q in this.questions) {
 		// 	if (this.questions.hasOwnProperty(q)){
@@ -422,6 +429,10 @@ export default{
 		// 		}
 		// 	}
 		// }
+		let answered = this.questions['q'+ Number(this.$route.params.question)].selected;
+		if(answered){
+			console.log(answered);
+		}
 	}
 }
 </script>

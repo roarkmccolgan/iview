@@ -10,6 +10,11 @@
 					<h2 class="font-light leading-tight mb-4 text-sapagile-blue-bright" v-html="$t('sapagile.finishtxtheading')"></h2>
 					<p v-html="$t('sapagile.finishtxt1', {'result':$t('sapagile.'+result.overall.rating)})"></p>
 					<p v-html="$t('sapagile.finishtxt2')"></p>
+					<div v-for="sec, key in theResult">
+						<div class="font-bold">{{ key }}</div>
+						<div class="">score: {{ sec.score }}</div>
+						<div class="mb-4">rating: {{ sec.rating }}</div>
+					</div>
 					<img class="max-w-full" :src="'/images/tools/' + assessment.tool.id + '/report'+ assessment.locale +'.png'" alt="">
 				</div>
 				<div class="w-full sm:w-1/2">
@@ -82,13 +87,17 @@
 											{{ $t('sapagile.areas_interest') }}
 										</label>
 										<div class="inline-block relative w-full mb-2">
-											<select multiple class="block appearance-none w-full bg-grey-lighter border text-grey-darker py-3 px-4 pr-8 rounded" :class="[errors.size ? 'border-red' : '']" id="areas_interest" name="extra[areas_interest]" @blur="hasError">
+											<select class="block appearance-none w-full bg-grey-lighter border text-grey-darker py-3 px-4 pr-8 rounded" :class="[errors.size ? 'border-red' : '']" id="areas_interest" name="extra[areas_interest]" @blur="hasError">
 												<option :value="$t('sapagile.interest1')" v-html="$t('sapagile.interest1')"></option>
 												<option :value="$t('sapagile.interest2')" v-html="$t('sapagile.interest2')"></option>
 												<option :value="$t('sapagile.interest3')" v-html="$t('sapagile.interest3')"></option>
 												<option :value="$t('sapagile.interest4')" v-html="$t('sapagile.interest4')"></option>
 												<option :value="$t('sapagile.interest5')" v-html="$t('sapagile.interest5')"></option>
+												<option :value="$t('sapagile.interest6')" v-html="$t('sapagile.interest6')"></option>
 											</select>
+											<div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-darker">
+												<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+											</div>
 										</div>
 										<p class="text-red text-xs italic" v-show="errors.areas_interest" v-html="$t('general.errorAreasInterest')"></p>
 									</div>
