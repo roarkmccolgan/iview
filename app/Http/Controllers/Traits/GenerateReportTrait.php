@@ -3394,7 +3394,7 @@ trait GenerateReportTrait
             } else {
                 return $pdf->save(storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf');
             }
-        else {
+        } else {
             $view = View::make('tool.'.session('template').'.report.report', $vars);
             return $view;
         }
