@@ -12,12 +12,12 @@ return array(
     'further-insight'=>'More information',
     'view-now'=>'View Now',
 
-    'title'=>'Security by design enabled by the network',
-    'sub-title'=>'An IDC Assessment, sponsored by VMware',
+    'title'=>'VMware Digital Maturity Assessment Tool',
+    'sub-title'=>'in association with IDC',
     'landing'=>'
         <h3>Is your Network Ready for the Digital Future?</h3>
         <p class="mb-2">
-            IDC, a global leading provider of technology market research, has developed the secure-by-design network assessment, sponsored by WMware, to help organizations assess the state of their network as they embrace digital transformation.
+            IDC, a global leading provider of technology market research, has developed the secure-by-design network assessment, sponsored by VMware, to help organizations assess the state of their network as they embrace digital transformation.
         </p>
         <p class="mb-2">
             This self-assessment tool is backed up by independent end-user research and IDC\'s in depth understanding of this market. Upon completion of a short survey (10 minutes) you will receive a custom report that benchmarks your organization\'s Network maturity and provides you with essential and tailored guidance to help you prepare for the requirements of tomorrow and plot your course to network transformation.

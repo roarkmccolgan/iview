@@ -2774,6 +2774,270 @@ trait GenerateReportTrait
             //conclusion is in report end.pdf
 
             $vars['sectionCopy'] = $customCopy;
+        } elseif (session('product.id') == 14) { //VMware
+            //User overall stage number and ordinal
+            $overallNumber = (int) filter_var(session('result.overall.rating'), FILTER_SANITIZE_NUMBER_INT);
+            $infrastructureNumber =  (int) filter_var(session('result.network-infrastructure.rating'), FILTER_SANITIZE_NUMBER_INT);
+            $operationsNumber =  (int) filter_var(session('result.intelligent-network-operations.rating'), FILTER_SANITIZE_NUMBER_INT);
+            $securityNumber =  (int) filter_var(session('result.security-enabled-networking.rating'), FILTER_SANITIZE_NUMBER_INT);
+
+            $customCopy = '';
+
+            //overall
+            $base = config('baseline_'.session('product.id').'.overall');
+            $rating = session('result.overall.rating');
+
+            $user_score = session('result.overall.score');
+
+            $customCopy.= trans(
+                session('product.alias').'.introduction',
+                ['approach' => asset('/images/tools/14/approach.svg')]
+            );
+            
+            $customCopy.= '<div class="pb"></div>';
+            $widths = [
+                1 => '21mm',
+                2 => '63mm',
+                3 => '105mm',
+            ];
+
+            $customCopy.= trans(
+                session('product.alias').'.overallintro'
+            );
+            $customCopy.= trans(
+                session('product.alias').'.overallstage'.$overallNumber,
+                [
+                    'overall'=>$widths[$overallNumber],
+                    'network-infrastructure'=>$widths[$infrastructureNumber],
+                    'intelligent-network-operations'=>$widths[$operationsNumber],
+                    'security-enabled-networking'=>$widths[$securityNumber],
+                    'url'=>asset('/images/tools/14/comparisonbg_overall.svg')
+                ]
+            );
+
+
+            //network-infrastructure
+            $customCopy.= '<div class="pb"></div>';
+            $customCopy.= trans(
+                session('product.alias').'.network-infrastructure-intro',
+                [
+                    'icon'=>asset('/images/tools/14/network-infrastructure_icon.svg')
+                ]
+            );
+
+            $customCopy.= trans(
+                session('product.alias').'.network-infrastructuregraph',
+                [
+                    'overall'=>$widths[$overallNumber],
+                    'network-infrastructure' => $widths[$infrastructureNumber],
+                    'url' => asset('/images/tools/14/comparison_network-infrastructure.svg')
+                ]
+            );
+            
+            $customCopy.= trans(
+                session('product.alias').'.network-infrastructure-'.$overallNumber.'-stage'.$infrastructureNumber
+            );
+            //$customCopy.= '<div class="pb"></div>';
+            $customCopy.= trans(
+                session('product.alias').'.question1'
+            );
+
+            $q1score = $this->getQuestionScoreNew(1, 'network-infrastructure', 1);
+            if($q1score < 2.5){
+                $customCopy.= trans(session('product.alias').'.network-infrastructure-'.$overallNumber.'-q1-1');
+            }elseif($q1score >= 2.5 &&  $q1score < 3.5){
+                $customCopy.= trans(session('product.alias').'.network-infrastructure-'.$overallNumber.'-q1-2');
+            }elseif($q1score >= 3.5){
+                $customCopy.= trans(session('product.alias').'.network-infrastructure-'.$overallNumber.'-q1-3');
+            }
+            
+            $customCopy.= trans(
+                session('product.alias').'.question2'
+            );
+            $q2score = $this->getQuestionScoreNew(2, 'network-infrastructure', 2);
+            if($q2score == 1){
+                $customCopy.= trans(session('product.alias').'.network-infrastructure-'.$overallNumber.'-q2-1');
+            }elseif($q2score == 2){
+                $customCopy.= trans(session('product.alias').'.network-infrastructure-'.$overallNumber.'-q2-2');
+            }elseif($q2score == 3){
+                $customCopy.= trans(session('product.alias').'.network-infrastructure-'.$overallNumber.'-q2-3');
+            }elseif($q2score == 4){
+                $customCopy.= trans(session('product.alias').'.network-infrastructure-'.$overallNumber.'-q2-4');
+            }else{
+                $customCopy.= trans(session('product.alias').'.network-infrastructure-'.$overallNumber.'-q2-5');
+            }
+
+            $customCopy.= trans(
+                session('product.alias').'.question3'
+            );
+            $q3score = $this->getQuestionScoreNew(3, 'network-infrastructure', 3);
+            if($q3score == 1){
+                $customCopy.= trans(session('product.alias').'.network-infrastructure-'.$overallNumber.'-q3-1');
+            }elseif($q3score == 2){
+                $customCopy.= trans(session('product.alias').'.network-infrastructure-'.$overallNumber.'-q3-2');
+            }elseif($q3score == 3){
+                $customCopy.= trans(session('product.alias').'.network-infrastructure-'.$overallNumber.'-q3-3');
+            }elseif($q3score == 4){
+                $customCopy.= trans(session('product.alias').'.network-infrastructure-'.$overallNumber.'-q3-4');
+            }else{
+                $customCopy.= trans(session('product.alias').'.network-infrastructure-'.$overallNumber.'-q3-5');
+            }
+
+            //intelligent-network-operations
+            $customCopy.= '<div class="pb"></div>';
+            $customCopy.= trans(
+                session('product.alias').'.intelligent-network-operations-intro',
+                [
+                    'icon'=>asset('/images/tools/14/intelligent-network-operations_icon.svg')
+                ]
+            );
+
+            $customCopy.= trans(
+                session('product.alias').'.intelligent-network-operationsgraph',
+                [
+                    'overall'=>$widths[$overallNumber],
+                    'intelligent-network-operations' => $widths[$operationsNumber],
+                    'url' => asset('/images/tools/14/comparison_intelligent-network-operations.svg')
+                ]
+            );
+            
+            $customCopy.= trans(
+                session('product.alias').'.intelligent-network-operations-'.$overallNumber.'-stage'.$operationsNumber
+            );
+
+            //$customCopy.= '<div class="pb"></div>';
+            $customCopy.= trans(
+                session('product.alias').'.question4'
+            );
+
+            $q4score = $this->getQuestionScoreNew(4, 'intelligent-network-operations', 1);
+            if($q4score == 1){
+                $customCopy.= trans(session('product.alias').'.intelligent-network-operations-'.$overallNumber.'-q4-1');
+            }elseif($q4score == 2){
+                $customCopy.= trans(session('product.alias').'.intelligent-network-operations-'.$overallNumber.'-q4-2');
+            }elseif($q4score == 3){
+                $customCopy.= trans(session('product.alias').'.intelligent-network-operations-'.$overallNumber.'-q4-3');
+            }elseif($q4score == 4){
+                $customCopy.= trans(session('product.alias').'.intelligent-network-operations-'.$overallNumber.'-q4-4');
+            }else{
+                $customCopy.= trans(session('product.alias').'.intelligent-network-operations-'.$overallNumber.'-q4-5');
+            }
+
+            $customCopy.= trans(
+                session('product.alias').'.question5'
+            );
+            $q5score = $this->getQuestionScoreNew(5, 'intelligent-network-operations', 2);
+            if($q5score == 1){
+                $customCopy.= trans(session('product.alias').'.intelligent-network-operations-'.$overallNumber.'-q5-1');
+            }elseif($q5score == 2){
+                $customCopy.= trans(session('product.alias').'.intelligent-network-operations-'.$overallNumber.'-q5-2');
+            }elseif($q5score == 3){
+                $customCopy.= trans(session('product.alias').'.intelligent-network-operations-'.$overallNumber.'-q5-3');
+            }elseif($q5score == 4){
+                $customCopy.= trans(session('product.alias').'.intelligent-network-operations-'.$overallNumber.'-q5-4');
+            }else{
+                $customCopy.= trans(session('product.alias').'.intelligent-network-operations-'.$overallNumber.'-q5-5');
+            }
+
+            $customCopy.= trans(
+                session('product.alias').'.question6'
+            );
+            $q6score = $this->getQuestionScoreNew(6, 'intelligent-network-operations', 3);
+            if($q6score == 1){
+                $customCopy.= trans(session('product.alias').'.intelligent-network-operations-'.$overallNumber.'-q6-1');
+            }elseif($q6score == 2){
+                $customCopy.= trans(session('product.alias').'.intelligent-network-operations-'.$overallNumber.'-q6-2');
+            }elseif($q6score == 3){
+                $customCopy.= trans(session('product.alias').'.intelligent-network-operations-'.$overallNumber.'-q6-3');
+            }elseif($q6score == 4){
+                $customCopy.= trans(session('product.alias').'.intelligent-network-operations-'.$overallNumber.'-q6-4');
+            }else{
+                $customCopy.= trans(session('product.alias').'.intelligent-network-operations-'.$overallNumber.'-q6-5');
+            }
+
+            //security-enabled-networking
+            $customCopy.= '<div class="pb"></div>';
+            $customCopy.= trans(
+                session('product.alias').'.security-enabled-networking-intro',
+                [
+                    'icon'=>asset('/images/tools/14/security-enabled-networking_icon.svg')
+                ]
+            );
+
+            $customCopy.= trans(
+                session('product.alias').'.security-enabled-networkinggraph',
+                [
+                    'overall'=>$widths[$overallNumber],
+                    'security-enabled-networking' => $widths[$securityNumber],
+                    'url' => asset('/images/tools/14/comparison_security-enabled-networking.svg')
+                ]
+            );
+            
+            $customCopy.= trans(
+                session('product.alias').'.security-enabled-networking-'.$overallNumber.'-stage'.$securityNumber
+            );
+
+            //$customCopy.= '<div class="pb"></div>';
+            $customCopy.= trans(
+                session('product.alias').'.question7'
+            );
+            $q7score = $this->getQuestionScoreNew(7, 'security-enabled-networking', 1);
+            if($q7score == 1){
+                $customCopy.= trans(session('product.alias').'.security-enabled-networking-'.$overallNumber.'-q7-1');
+            }elseif($q7score == 2){
+                $customCopy.= trans(session('product.alias').'.security-enabled-networking-'.$overallNumber.'-q7-2');
+            }elseif($q7score == 3){
+                $customCopy.= trans(session('product.alias').'.security-enabled-networking-'.$overallNumber.'-q7-3');
+            }elseif($q7score == 4){
+                $customCopy.= trans(session('product.alias').'.security-enabled-networking-'.$overallNumber.'-q7-4');
+            }else{
+                $customCopy.= trans(session('product.alias').'.security-enabled-networking-'.$overallNumber.'-q7-5');
+            }
+
+            $customCopy.= trans(
+                session('product.alias').'.question8'
+            );
+
+            $q8score = $this->getQuestionScoreNew(8, 'security-enabled-networking', 2);
+            if($q8score < 2.5){
+                $customCopy.= trans(session('product.alias').'.security-enabled-networking-'.$overallNumber.'-q8-1');
+            }elseif($q8score >= 2.5 &&  $q8score < 3.5){
+                $customCopy.= trans(session('product.alias').'.security-enabled-networking-'.$overallNumber.'-q8-2');
+            }elseif($q8score >= 3.5){
+                $customCopy.= trans(session('product.alias').'.security-enabled-networking-'.$overallNumber.'-q8-3');
+            }
+
+            $customCopy.= trans(
+                session('product.alias').'.question9'
+            );
+
+            $q9score = $this->getQuestionScoreNew(9, 'security-enabled-networking', 3);
+            if($q9score == 1){
+                $customCopy.= trans(session('product.alias').'.security-enabled-networking-'.$overallNumber.'-q9-1');
+            }elseif($q9score == 2){
+                $customCopy.= trans(session('product.alias').'.security-enabled-networking-'.$overallNumber.'-q9-2');
+            }elseif($q9score == 3){
+                $customCopy.= trans(session('product.alias').'.security-enabled-networking-'.$overallNumber.'-q9-3');
+            }elseif($q9score == 4){
+                $customCopy.= trans(session('product.alias').'.security-enabled-networking-'.$overallNumber.'-q9-4');
+            }else{
+                $customCopy.= trans(session('product.alias').'.security-enabled-networking-'.$overallNumber.'-q9-5');
+            }
+
+            $customCopy.= trans(
+                session('product.alias').'.conclusionintro',
+                ['icon' => asset('/images/tools/14/conclusion_icon.svg')]
+            );
+
+            $customCopy.= trans(
+                session('product.alias').'.guidance'
+            );
+
+            $customCopy.= trans(
+                session('product.alias').'.guidance-'.$overallNumber
+            );
+
+            $vars['sectionCopy'] = $customCopy;
         } else {
             foreach (config('baseline_'.session('product.id')) as $section => $values) {
                 preg_match_all('/\d+/', session('result.'.$section.'.rating'), $matches);
@@ -3113,7 +3377,24 @@ trait GenerateReportTrait
             } else {
                 return $pdf->save(storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf');
             }
-        } else {
+        } elseif (session('product.id')==14) {
+            //$pdf->setOption('cover',session('url').'/'.session('localeUrl').'template/'.session('template').'/report/cover');
+            $timeStamp = time();
+            $pdf->save(storage_path().'/vmware-'.$timeStamp.'.pdf');
+            //return $pdf->inline('invoice.pdf');
+            $merge = PDFMerger::init();
+            $locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
+
+            $merge->addPDF(storage_path().'/vmware_cover'.$locale .'.pdf', 'all');
+            $merge->addPDF(storage_path().'/vmware-'.$timeStamp.'.pdf', 'all');
+
+
+            $merge->merge();
+            $merge->save(storage_path().'/reports/vmware-'.$timeStamp.'.pdf','browser');
+            if (File::exists(storage_path().'/vmware-'.$timeStamp.'.pdf')) {
+                File::delete(storage_path().'/vmware-'.$timeStamp.'.pdf');
+            }
+        }else {
             $view = View::make('tool.'.session('template').'.report.report', $vars);
             return $view;
         }
