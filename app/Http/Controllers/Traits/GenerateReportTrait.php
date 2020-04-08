@@ -3374,27 +3374,27 @@ trait GenerateReportTrait
                 if (File::exists(storage_path().'/hitachi-report-'.$timeStamp.'.pdf')) {
                     File::delete(storage_path().'/hitachi-report-'.$timeStamp.'.pdf');
                 }
+            } elseif (session('product.id')==14) {
+                //$pdf->setOption('cover',session('url').'/'.session('localeUrl').'template/'.session('template').'/report/cover');
+                $timeStamp = time();
+                //return $pdf->inline('invoice.pdf');
+                $pdf->save(storage_path().'/vmware-'.$timeStamp.'.pdf');
+
+                $merge = PDFMerger::init();
+                $locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
+
+                $merge->addPDF(storage_path().'/vmware_cover'.$locale .'.pdf', 'all');
+                $merge->addPDF(storage_path().'/vmware-'.$timeStamp.'.pdf', 'all');
+
+                $merge->merge();
+                $merge->save(storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf');
+                if (File::exists(storage_path().'/vmware-report-'.$timeStamp.'.pdf')) {
+                    File::delete(storage_path().'/vmware-report-'.$timeStamp.'.pdf');
+                }
             } else {
                 return $pdf->save(storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf');
             }
-        } elseif (session('product.id')==14) {
-            //$pdf->setOption('cover',session('url').'/'.session('localeUrl').'template/'.session('template').'/report/cover');
-            $timeStamp = time();
-            $pdf->save(storage_path().'/vmware-'.$timeStamp.'.pdf');
-            //return $pdf->inline('invoice.pdf');
-            $merge = PDFMerger::init();
-            $locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
-
-            $merge->addPDF(storage_path().'/vmware_cover'.$locale .'.pdf', 'all');
-            $merge->addPDF(storage_path().'/vmware-'.$timeStamp.'.pdf', 'all');
-
-
-            $merge->merge();
-            $merge->save(storage_path().'/reports/vmware-'.$timeStamp.'.pdf','browser');
-            if (File::exists(storage_path().'/vmware-'.$timeStamp.'.pdf')) {
-                File::delete(storage_path().'/vmware-'.$timeStamp.'.pdf');
-            }
-        }else {
+        else {
             $view = View::make('tool.'.session('template').'.report.report', $vars);
             return $view;
         }
