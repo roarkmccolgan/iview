@@ -1209,6 +1209,7 @@ export default {
             "interest3": "HR",
             "interest4": "Production &amp; Supply chain",
             "interest5": "Sales &amp; Marketing",
+            "interest6": "All of the above",
             "strategic-planning": {
                 "title": "Strategic Planning",
                 "popup": "\n            Planning is the process by which your business defines its goals and how to achieve them. Planning may include defining the growth you would like to achieve for the business in the coming year and what resources you will need to make this possible. \n        "
@@ -1229,14 +1230,16 @@ export default {
                 "title": "People Experience",
                 "popup": "\n            People Experience concerns how information is shared with employees, as well as what they encounter and observe in their roles. It also refers to how they are measured, motivated and engaged by their work and by the business.\n        "
             },
-            "stage1": "Beginner",
-            "stage2": "Intermediate",
-            "stage3": "Advanced",
+            "stage1": "Agile Starter",
+            "stage2": "Agile Mover",
+            "stage3": "Agile Transformer",
+            "stage4": "Agile",
+            "stage5": "Agile Master",
             "finishtxtheading": "\n        <span class=\"font-bold\">Thank you for completing the IDC Click to be Agile Assessment Tool, sponsored by SAP.</span><br/><br/> Now you will find out just how agile your business is!\n    ",
             "finishtxt1": "Based on the answers you provided, IDC place your business as: <strong class=\"inline font-bold text-lg text-sap-blue\">{result}</strong> ",
             "finishtxt2": "\n        <p class=\"mb-2 mt-4 font-bold\">But what does this mean?</p>\n        <p class=\"mb-2 mt-4\">To immediately receive a personalized report via email with a full analysis of your business agility and recommendations, please complete the registration form.</p>\n        <p class=\"mb-2 mt-4\">We will treat your information with the utmost respect, and we look forward to sharing useful insights with you! </p>\n        <p class=\"mb-2\">The privacy and the security of your information is important to us. Please read IDC privacy policies via the link below.</p>\n        <p class=\"mb-4 font-bold\">The IDC Team</p>\n    ",
             "complete_thankyou": "Thank you {Fname},",
-            "complete_body": "\n        Your custom report will arrive in your inbox soon.<br/>\n        Please check in your junk folder if you don't receive it within 5 minutes.<br/><br/>\n        To find out more about SAP for your region, please click the relevant link below:<br>\n        <a class=\"text-sap-blue\" href=\"https://www.sap.com/africa/products/sme-business-software.html\">Africa</a><br/>\n        <a class=\"text-sap-blue\" href=\"https://www.sap.com/mena/products/sme-business-software.html\">Middle East</a><br/>\n        <a class=\"text-sap-blue\" href=\"https://www.sap.com/spain/products/sme-business-software.html\">Spain</a><br/>\n        <a class=\"text-sap-blue\" href=\"https://events.sap.com/it/sapitalia/it/feelings\">Italy</a><br/><br/>\n        <a class=\"btn btn--primary\" target=\"_blank\" href=\"https://www.sap.com/products/sme-business-software.html\">\n            Click here to visit the SAP global website\n        </a>",
+            "complete_body": "\n        Your custom report will arrive in your inbox soon.<br/>\n        Please check in your junk folder if you don't receive it within 5 minutes.<br/><br/>\n        To find out more about SAP for your location, please click the relevant link below:<br>\n        <a class=\"text-sap-blue\" href=\"https://www.sap.com/africa/products/sme-business-software.html\">Africa</a><br/>\n        <a class=\"text-sap-blue\" href=\"https://www.sap.com/mena/products/sme-business-software.html\">Middle East</a><br/>\n        <a class=\"text-sap-blue\" href=\"https://www.sap.com/spain/products/sme-business-software.html\">Spain</a><br/>\n        <a class=\"text-sap-blue\" href=\"https://events.sap.com/it/sapitalia/it/feelings\">Italy</a><br/><br/>\n        Share the tool ",
             "complete_tweet": "I've just taken the @IDCEMEA GDPR Assessment Tool for @3ds. Interested? ",
             "email": {
                 "subject": "IDC Click to be Agile Assessment",

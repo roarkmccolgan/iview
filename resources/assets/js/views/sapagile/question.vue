@@ -61,7 +61,7 @@
 					<group-button :answer="answer" :question="currentQuestion" :questions="questions" v-on:selectOption="selectOption" :showDetails="showDetails"></group-button>
 				</template>
 			</div>
-			<div class="container mx-auto mt-4">
+			<div class="container mx-auto my-4 px-4">
 				<transition name="fade" mode="out-in">
 					<button :class="buttonClass" v-show="showNext" @click="nextQuestion($event)">
 						<font-awesome-icon :icon="faSpinnerThird" size="2x" spin v-if="saving" /> <span v-else>{{$t('general.next')}}</span>
@@ -103,8 +103,8 @@ export default{
 			showDetails: true,
 			answer: [],
 			saving: false,
-			normalButton: 'block w-full py-4 px-4 text-center bg-sap-blue text-white',
-			disabledButton: 'block w-full py-4 px-4 text-center bg-sap-blue text-white opacity-50',
+			normalButton: 'w-full py-4 px-4 text-center bg-sap-yellow text-blackblack sm:bg-sap-blue sm:text-white',
+			disabledButton: 'w-full py-4 px-4 text-center bg-sap-yellow text-blackblack sm:bg-sap-blue sm:text-white opacity-50',
 			error: false,
 			errorClass: 'border-red-lighter bg-red-lightest text-red-light',
 			noticeClass: 'border-blue-light bg-blue-lighter text-sap-blue',
