@@ -1264,7 +1264,7 @@ return array(
     'question9' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 font-bold text-vmware-blue-light">
-                Q9. To what extent is IT security embedded into new business initiatives in your organization? [SELECT ONE]
+                Q9. To what extent is IT security embedded into new business initiatives in your organization?
             </p>
         </div>
     ',
