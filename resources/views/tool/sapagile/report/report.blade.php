@@ -13,7 +13,7 @@ $manifest = json_decode($json, TRUE);
 		<title>Report</title>
 		<link rel="stylesheet" href="{{ asset('bundle/'.$manifest['sapagile'][0])}}">
 	</head>
-	<body class="font-report font-light text-sm text-blackblack leading-normal">
+	<body class="font-report font-light {{ App::environment('local') ? 'text-sm' : ''}} text-blackblack leading-normal">
 		{!!$sectionCopy!!}
 		<script type="text/javascript">
 			window.status = 'chartrendered';

@@ -14,13 +14,13 @@ $manifest = json_decode($json, TRUE);
 	<link rel="stylesheet" href="{{ asset('bundle/'.$manifest['sapagile'][0])}}">
 </head>
 <body>
-<div class="clearfix text-white bg-blackblack py-2 pt-4 text-sm">
+<div class="clearfix text-white bg-blackblack py-2 pt-4 {{ App::environment('local') ? 'text-sm' : ''}}">
 	<div class="w-5/6 mx-auto flex items-center justify-between">
 		<div class="whitespace-no-wrap">
 			<strong>{{ trans('sapagile.title') }}</strong> - {{ trans('sapagile.sub-title') }}
 		</div>
 		<div class="text-right flex items-center">
-			<div class="mr-12 text-gray-200">sponsored by</div>
+			<div class="mr-12 text-gray-200 whitespace-no-wrap">sponsored by</div>
 			<img class="" src="{{ asset('images/tools/15/SAP_logo.svg')}}" alt="" style="width: 20.948mm; height: 10.363mm" />
 		</div>
 	</div>

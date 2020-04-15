@@ -123,7 +123,7 @@ return [
                 'benchmark' => 28,
             ],
             'stage5' => [
-                'low' => 81.1,
+                'low' => 18.1,
                 'high' => 40,
                 'total' => 5,
                 'benchmark' => 28,
