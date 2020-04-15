@@ -13,8 +13,8 @@ $manifest = json_decode($json, TRUE);
 	<title>PDF Report</title>
 	<link rel="stylesheet" href="{{ asset('bundle/'.$manifest['sapagile'][0])}}">
 </head>
-<body>
-<div class="clearfix text-white bg-blackblack py-2 pt-4 {{ App::environment('local') ? 'text-sm' : ''}}">
+<body class="bg-blackblack">
+<div class="clearfix text-white bg-blackblack py-2 {{ App::environment('local') ? 'pt-4 text-sm' : 'pt-8'}}">
 	<div class="w-5/6 mx-auto flex items-center justify-between">
 		<div class="whitespace-no-wrap">
 			<strong>{{ trans('sapagile.title') }}</strong> - {{ trans('sapagile.sub-title') }}
