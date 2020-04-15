@@ -154,12 +154,12 @@ return array(
                             <h4 class="font-bold text-grey-darkest">This report includes:</h4>
                         </div>
                         <ul class="list-disc pl-12 text-sap-blue mt-4">
-                            <li class="mb-2"><a href="#overall" class="text-sap-blue no-underline">Your Overall Assessment</a></li>
-                            <li class="mb-2"><a href="#strategic-planning" class="text-sap-blue no-underline">Strategic Planning</a></li>
-                            <li class="mb-2"><a href="#processes" class="text-sap-blue no-underline">Processes</a></li>
-                            <li class="mb-2"><a href="#customer-relationships" class="text-sap-blue no-underline">Customer Relationships</a></li>
-                            <li class="mb-2"><a href="#suppliers-distributors" class="text-sap-blue no-underline">Suppliers & Distributors</a></li>
-                            <li class="mb-2"><a href="#people-experience" class="text-sap-blue no-underline">People Experience (HR)</a></li>
+                            <li class="mb-2">Your Overall Assessment</li>
+                            <li class="mb-2">Strategic Planning</li>
+                            <li class="mb-2">Processes</li>
+                            <li class="mb-2">Customer Relationships</li>
+                            <li class="mb-2">Suppliers & Distributors</li>
+                            <li class="mb-2">People Experience (HR)</li>
                         </ul>
                     </div>
                 </div>
@@ -168,7 +168,6 @@ return array(
     ',
     'overall-1' => '
         <div class="pb w-5/6 mx-auto">
-            <a name="overall"></a>
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Overall</h1>
             </div>
@@ -211,7 +210,6 @@ return array(
     ',
     'overall-2' => '
         <div class="pb w-5/6 mx-auto">
-            <a name="overall"></a>
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Overall</h1>
             </div>
@@ -254,7 +252,6 @@ return array(
     ',
     'overall-3' => '
         <div class="pb w-5/6 mx-auto">
-            <a name="overall"></a>
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Overall</h1>
             </div>
@@ -300,7 +297,6 @@ return array(
     ',
     'overall-4' => '
         <div class="pb w-5/6 mx-auto">
-            <a name="overall"></a>
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Overall</h1>
             </div>
@@ -349,7 +345,6 @@ return array(
     ',
     'overall-5' => '
         <div class="pb w-5/6 mx-auto">
-            <a name="overall"></a>
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Overall</h1>
             </div>
@@ -397,7 +392,6 @@ return array(
     ',
     'strategic-planning-1' => '
         <div class="pb w-5/6 mx-auto">
-            <a name="strategic-planning"></a>
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Strategic Planning</h1>
             </div>
@@ -447,7 +441,6 @@ return array(
     ',
     'strategic-planning-2' => '
         <div class="pb w-5/6 mx-auto">
-            <a name="strategic-planning"></a>
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Strategic Planning</h1>
             </div>
@@ -496,7 +489,6 @@ return array(
     ',
     'strategic-planning-3' => '
         <div class="pb w-5/6 mx-auto">
-            <a name="strategic-planning"></a>
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Strategic Planning</h1>
             </div>
@@ -544,7 +536,6 @@ return array(
     ',
     'strategic-planning-4' => '
         <div class="pb w-5/6 mx-auto">
-            <a name="strategic-planning"></a>
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Strategic Planning</h1>
             </div>
@@ -593,7 +584,6 @@ return array(
     ',
     'strategic-planning-5' => '
         <div class="pb w-5/6 mx-auto">
-            <a name="strategic-planning"></a>
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Strategic Planning</h1>
             </div>
@@ -641,7 +631,6 @@ return array(
     ',
     'processes-1' => '
         <div class="pb w-5/6 mx-auto">
-            <a name="processes"></a>
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Processes</h1>
             </div>
@@ -690,7 +679,6 @@ return array(
     ',
     'processes-2' => '
         <div class="pb w-5/6 mx-auto">
-            <a name="processes"></a>
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Processes</h1>
             </div>
@@ -742,7 +730,6 @@ return array(
     ',
     'processes-3' => '
         <div class="pb w-5/6 mx-auto">
-            <a name="processes"></a>
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Processes</h1>
             </div>
@@ -794,7 +781,6 @@ return array(
     ',
     'processes-4' => '
         <div class="pb w-5/6 mx-auto">
-            <a name="processes"></a>
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Processes</h1>
             </div>
@@ -843,7 +829,6 @@ return array(
     ',
     'processes-5' => '
         <div class="pb w-5/6 mx-auto">
-            <a name="processes"></a>
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Processes</h1>
             </div>
@@ -892,7 +877,6 @@ return array(
     ',
     'customer-relationships-1' => '
         <div class="pb w-5/6 mx-auto">
-            <a name="customer-relationships"></a>
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Customer Relationships</h1>
             </div>
@@ -941,7 +925,6 @@ return array(
     ',
     'customer-relationships-2' => '
         <div class="pb w-5/6 mx-auto">
-            <a name="customer-relationships"></a>
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Customer Relationships</h1>
             </div>
@@ -990,7 +973,6 @@ return array(
     ',
     'customer-relationships-3' => '
         <div class="pb w-5/6 mx-auto">
-            <a name="customer-relationships"></a>
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Customer Relationships</h1>
             </div>
@@ -1039,7 +1021,6 @@ return array(
     ',
     'customer-relationships-4' => '
         <div class="pb w-5/6 mx-auto">
-            <a name="customer-relationships"></a>
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Customer Relationships</h1>
             </div>
@@ -1087,7 +1068,6 @@ return array(
     ',
     'customer-relationships-5' => '
         <div class="pb w-5/6 mx-auto">
-            <a name="customer-relationships"></a>
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Customer Relationships</h1>
             </div>
@@ -1138,7 +1118,6 @@ return array(
     ',
     'suppliers-distributors-1' => '
         <div class="pb w-5/6 mx-auto">
-            <a name="suppliers-distributors"></a>
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Suppliers and Distributors</h1>
             </div>
@@ -1188,7 +1167,6 @@ return array(
     ',
     'suppliers-distributors-2' => '
         <div class="pb w-5/6 mx-auto">
-            <a name="suppliers-distributors"></a>
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Suppliers and Distributors</h1>
             </div>
@@ -1241,7 +1219,6 @@ return array(
     ',
     'suppliers-distributors-3' => '
         <div class="pb w-5/6 mx-auto">
-            <a name="suppliers-distributors"></a>
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Suppliers and Distributors</h1>
             </div>
@@ -1297,7 +1274,6 @@ return array(
     ',
     'suppliers-distributors-4' => '
         <div class="pb w-5/6 mx-auto">
-            <a name="suppliers-distributors"></a>
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Suppliers and Distributors</h1>
             </div>
@@ -1350,7 +1326,6 @@ return array(
     ',
     'suppliers-distributors-5' => '
         <div class="pb w-5/6 mx-auto">
-            <a name="suppliers-distributors"></a>
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Suppliers and Distributors</h1>
             </div>
@@ -1403,7 +1378,6 @@ return array(
     ',
     'people-experience-1' => '
         <div class="pb w-5/6 mx-auto">
-            <a name="people-experience"></a>
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">People Experience</h1>
             </div>
@@ -1455,7 +1429,6 @@ return array(
     ',
     'people-experience-2' => '
         <div class="pb w-5/6 mx-auto">
-            <a name="people-experience"></a>
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">People Experience</h1>
             </div>
@@ -1505,7 +1478,6 @@ return array(
     ',
     'people-experience-3' => '
         <div class="pb w-5/6 mx-auto">
-            <a name="people-experience"></a>
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">People Experience</h1>
             </div>
@@ -1558,7 +1530,6 @@ return array(
     ',
     'people-experience-4' => '
         <div class="pb w-5/6 mx-auto">
-            <a name="people-experience"></a>
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">People Experience</h1>
             </div>
@@ -1608,7 +1579,6 @@ return array(
     ',
     'people-experience-5' => '
         <div class="pb w-5/6 mx-auto">
-            <a name="people-experience"></a>
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">People Experience</h1>
             </div>
