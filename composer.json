@@ -27,7 +27,8 @@
         "martinlindhe/laravel-vue-i18n-generator": "0.1.46",
         "spatie/laravel-backup": "^3.0.0",
         "laravel/tinker": "<2",
-        "daltcore/lara-pdf-merger": "^2.0"
+        "daltcore/lara-pdf-merger": "^2.0",
+        "mikehaertl/php-pdftk": "^0.8.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

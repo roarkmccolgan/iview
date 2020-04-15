@@ -120,24 +120,22 @@ Route::group(['domain' => '{subdomain}.'.env('APP_TLD', 'idcready.net'),'middlew
         }
         return View::make('tool.'.$template.'.report.header');
     })->middleware(['routebyurl']);
+
     Route::get('/template/{templates}/report/cover', function ($domain, $template) {
+        $locale = App::getLocale();
+        $locale = $locale == 'en' ? '' : $locale;
+        if (view()->exists('tool.'.$template.'.report.cover'.$locale)) {
+            return View::make('tool.'.$template.'.report.cover'.$locale);
+        }
         return View::make('tool.'.$template.'.report.cover');
     })->middleware(['routebyurl']);
-    /*Route::get('/template/sublime/report/header', function(){
-		return View::make('tool.sublime.report.header');
-	});*/
+
     Route::get('/template/{template}/report/footer', function ($domain, $template) {
         $product_id = session('product.id');
         $company_alias = session('company.alias');
         $url = session('url');
         return View::make('tool.'.$template.'.report.footer', compact(['url','product_id','company_alias']));
     })->middleware(['routebyurl']);
-    /*Route::get('/template/sublime/report/footer', function(){
-		$product_id = session('product.id');
-		$company_alias = session('company.alias');
-		$url = session('url');
-		return View::make('tool.sublime.report.footer', compact(['url','product_id','company_alias']));
-	});*/
 
     Route::group(['prefix' => 'quiz'], function () {
         Route::get('/{section}/page{num}', 'ToolController@getPage');

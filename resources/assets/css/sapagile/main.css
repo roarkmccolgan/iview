@@ -10,7 +10,15 @@
 /* .component-fade-leave-active below version 2.1.8 */ {
   opacity: 0;
 }
+.clearfix:before,
+.clearfix:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
 
+.clearfix:after {
+  clear: both;
+}
 .pb {
 	page-break-before: always;
 }

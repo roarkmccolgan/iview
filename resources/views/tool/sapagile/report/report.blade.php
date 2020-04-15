@@ -11,15 +11,10 @@ $manifest = json_decode($json, TRUE);
     	<meta name="description" content="">
     	<meta name="author" content="">
 		<title>Report</title>
-		<link rel="stylesheet" href="{{ asset('bundle/'.$manifest['vmware'][0])}}">
+		<link rel="stylesheet" href="{{ asset('bundle/'.$manifest['sapagile'][0])}}">
 	</head>
-	<body class="font-report font-light text-xs text-grey-darker leading-normal">
-		<div class="w-5/6 mx-auto">
-			{!!$introduction!!}
-		</div>
-		<div class="w-5/6 mx-auto">
-			{!!$sectionCopy!!}
-		</div>
+	<body class="font-report font-light text-sm text-blackblack leading-normal">
+		{!!$sectionCopy!!}
 		<script type="text/javascript">
 			window.status = 'chartrendered';
 		</script>

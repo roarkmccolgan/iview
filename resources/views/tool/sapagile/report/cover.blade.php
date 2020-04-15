@@ -11,9 +11,14 @@ $manifest = json_decode($json, TRUE);
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<title>PDF Report</title>
-	<link rel="stylesheet" href="{{ asset('bundle/'.$manifest['vmware'][0])}}">
+	<link rel="stylesheet" href="{{ asset('bundle/'.$manifest['sapagile'][0])}}">
 </head>
 <body>
-<h1>Cover {{ $name }}</h1>
+	<div class="h-full min-h-screen bg-red-dark">
+		hey
+	</div>
+	<script type="text/javascript">
+		window.status = 'chartrendered';
+	</script>
 </body>
 </html>

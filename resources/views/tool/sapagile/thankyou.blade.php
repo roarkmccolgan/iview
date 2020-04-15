@@ -40,7 +40,7 @@
 	</div>
 	<div class="flex-grow">
 		<div class="container mx-auto py-4 px-4 text-grey-darker">
-			<h1 class="font-sapagile font-bold text-4xl leading-tight">{{ $title }}</h1>
+			<h1 class="font-sapagile font-bold text-4xl leading-tight text-blackblack">{{ $title }}</h1>
 			<h3 class="font-light leading-tight">{{ $sub_title }}</h3>
 		</div>
 		<div class="container mx-auto bg-white border-t border-b mt-6 p-8 sm:border sm:rounded shadow text-grey-darker">

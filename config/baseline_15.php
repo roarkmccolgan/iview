@@ -24,8 +24,8 @@ return [
             'color'=>'#FDD000',
             'basecolor'=>'#004386',
             'pageimage'=>false,
-            'margin-top'=>20,
-            'header-spacing'=>6
+            'margin-top'=>31,
+            'header-spacing'=>10
         ],
         'types' => [
             'stage1' => [

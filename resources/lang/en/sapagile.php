@@ -18,7 +18,7 @@ return array(
         <p class="mb-4 text-xl font-bold text-sap-blue leading-tight">
             Agile organizations are more competitive, jump on opportunities more quickly and are able to build stronger relationships with suppliers, distributors and customers.
         </p>
-        <p class="mb-4 text-xl font-medium text-black leading-tight">
+        <p class="mb-4 text-xl font-bold leading-tight text-black leading-tight">
             But how do you become more agile as a business? Firstly, you need to know how agile your are today and what you need to do, to become more agile tomorrow. 
         </p>',
     'landing-inner' => 'IDC’s agility tool assesses your businesses agility across 5 key areas:',
@@ -113,1453 +113,1523 @@ return array(
         'body' => 'Thank you for completing the assessment, here is the link to download your IDC Agility Assessment Report. This breaks down your results by category and provides you with actionable recommendations.',
         'link' => 'VIEW YOUR AGILITY SCORE',
         'extra' => 'Feel free to share this with other departments of your organization and with you customers and partners. You can always invite them to fill in the assessment and compare answers.<br>
-            <a href=":url">:url</a><br><br>
+            <a href="https://clicktobeagile.idcready.net/">https://clicktobeagile.idcready.net/</a><br><br>
             This assessment has been sponsored by SAP.<br>
             To know more about SAP, please visit <a href="https://sap.com">https://sap.com</a>',
         'regards' => 'Regards',
         'team' => 'The IDC Team'
     ],
     'introduction' => '
-        <h2 class="text-dassault-blue mb-4">INTRODUCTION</h2>
-        <p class="mb-6">Digital maturity is critical for the success of start-ups and SMBs today. Competing in the global economy for customers, investment and talent requires instant access to world-class applications and IT resources, that scale at the pace of your success. The cloud delivers this the flexibility and scale that underpins digital business success and democratises access to world-class technology, making it available and affordable for startups and SMBs alike. To assess the digital maturity of startups and SMBS, IDC has conducted a survey of 400 organisations across Germany, France, the U.K. and the U.S to understand how digital design and engineering applications are used in startup and SMB organisations. Based on the results, we have grouped the respondents into three categories, digital improver, digital achiever and digital native, to understand what sets the leaders in digital maturity apart from their competitors and which best practices we can learn from them.</p>
-        
-        <h2 class="text-dassault-blue mb-4">SURVEY HIGHLIGHTS</h2>
-        <p class="mb-4">The key priorities for the leading start-ups and SMBs according to the survey are related to profitability. They want to either improve profitability or become profitable, depending on the organization\'s age and stage of development. Managing profitability requires a careful balance between making the necessary investments to drive innovation and keeping costs from spiralling out of control. Aligning business and IT priorities and supporting the business strategy with a flexible IT delivery model supports the journey towards profitability. Additional priorities are increasing brand awareness and accelerating time to market. Using the latest IT applications and tools helps attract talent and create a great experience for employees, customers and partners, which in turn helps to improve brand awareness. Accelerating time to market is typically done by working with agile methods, in short sprints and by getting feedback from the market fast. A cloud-based digital platform can facilitate collaboration across geographically dispersed employees but also across the ecosystem of customer, partners and suppliers. </p>
-
-        <h2 class="text-dassault-blue mb-4">RANKING EXPLANATION</h2>
-        <div class="w-1/2 float-left">
-            <p class="mb-4">Based on the benchmark survey, <strong>14.5%</strong> of respondents are <strong>Digital Natives</strong>, <strong>50.5%</strong> of respondents are <strong>Digital Achievers</strong> and <strong>35%</strong> of respondents are <strong>Digital Improvers</strong>. This distribution varies within the three categories of digital business, digital design and digital delivery, which make up the digital maturity index. Digital design is the most mature category, with 22% of respondents receiving a top score, while only 12.5% of respondents are top scorers in the digital business category, where dealing with changes in business patterns and staffing levels drive great challenges. Organizations who are better able to deal with fluctuations in business demand and staffing levels are scoring higher than organizations who are relying on rigid IT practices and hence cannot respond in an agile fashion to changing demands. The key to digital maturity is the ability to create great experiences for employees, customers and ecoystem partners through the use of digital technologies. The better an organization is equipped to do this, the better they score in the digital maturity index. </p>
-        </div>
-        <div class="w-1/2 float-left">
-            <div class="m-2"><img src=":rankimg" alt=""></div>
-        </div>
-        <div class="pb clearfix"></div>
-        <div class="spacer"></div>
-        
-    ',
-    'overallintro'=>'
-        <h2 class="text-dassault-blue mb-6">OVERALL RANKING</h2>
-        <p class="mb-2">
-            Startups and SMBs can only successfully compete in the global economy if they are digitally "fit" and take advantage of the digital technologies like digital design and engineering apps delivered from the cloud. IDC\'s Digital Maturity Assessment Tool scores startups and SMBs on their digital maturity by looking at three core elements - digital business, digital design and digital delivery. 
-        </p>
-    ',
-    'overallstage1'=>'
-        <div class="clearfix">
-            <p class="mb-2 text-dassault-blue mt-4 font-bold">
-                You are at the beginning of your digital journey. Based on your responses to IDC\'s Digital Maturity Assessment Tool, your organization has been rated at the beginner level of three levels of Digital Maturity - Digital Improver.
-            </p>
-            <p class="mb-2 text-dassault-blue mt-4 font-bold">
-                This means you are only just starting with moving to a Digital Future compared to the rest of the industry and there is still much to do to be where you need to be to compete effectively over the longer term."
-            </p>
-        </div>
-    ',
-    'overallstage2'=>'
-        <div class="clearfix">
-            <p class="mb-2 text-dassault-blue mt-4 font-bold">
-                You are well under way with your digital journey. Based on your responses to IDC\'s Digital Maturity Assessment Tool, your organization has been rated at the second highest level of Digital Maturity - Digital Achiever. This means your organization is generally in line with the rest of the industry and readying itself for the digital future. While you are doing well, there is still more to do to be fully digital ready.
-            </p>
-        </div>
-    ',
-    'overallstage3'=>'
-        <div class="clearfix">
-            <p class="mb-2 text-dassault-blue mt-4 font-bold">
-                Congratulations! Based on your responses to IDC\'s Digital Maturity Assessment Tool, your organization has been rated at the highest level of Digital Maturity - Digital Native. This means your organization is generally ahead of the industry and blazing a trail to the digital future. Always bear in mind though that you need to keep working at this to stay ahead of the competition!
-            </p>
-        </div>
-    ',
-    'overallgraph'=>'
-    <div class="ml-8 my-4 inline-block">:graph</div>
-    ',
-    'comparisongraph'=>'
-    <div class="mb-2 text-dassault-blue mt-4 font-bold border-b">How you compare to your peers</div>
-    <div class="mx-auto my-4">:graph</div>
-    ',
-    'overalloutrostage1' => '
-        <div class="clearfix">
-            <p class="mb-2">
-                Your results indicate that there are many areas you can address to improve your Digital Maturity. This report will give you advice on areas to give priority to as you look to progress to the next stage of Digital Maturity, so let\'s turn to the next page and dig into what you can do.
-            </p>
-        </div>
-        <div class="pb"></div>
-    ',
-    'overalloutrostage2' => '
-        <div class="clearfix">
-            <p class="mb-2">
-                Your results indicate that while you are well under way with your digital journey, there are also areas to address to catch up with the organisations with the best digital maturity. This report will give you advice on areas to give priority to as you look to progress to the next stage of digital maturity, so let\'s turn to the next page and dig into what you can do.
-            </p>
-        </div>
-        <div class="pb"></div>
-    ',
-    'overalloutrostage3' => '
-        <div class="clearfix">
-            <p class="mb-2">
-                Your results indicate that you are at the top of the pile when it comes to Digital Maturity. While this is great, there may be some areas for you to pay attention to stay ahead in the game. This report will give you advice on areas to focus on, so let\'s turn to the next page and dig into what you can do.
-            </p>
-        </div>
-        <div class="pb"></div>
-    ',
-
-    'digital-business-intro' => '
-        <h2 class="w-4/5 ml-auto text-dassault-blue mb-6">Digital Business</h2>
-        <div class="clearfix">
-            <div class="w-1/5 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 25mm;"></div>
-            <div class="w-4/5 float-left">
-                <p class="mb-2">
-                    A digital native business creates and delivers innovation at speed, puts customers at the core of its existence and treats employees as its most valued asset. It interacts with its ecosystem to co-create innovation and access and share resources. To determine how digital your business is, you can look at how much of your revenue comes from digital products and services, and how much of your business relies on digital tools, how well you support your customers and employees through digital channels and how you interact with your ecosytem digitally.
-                </p>
-                <p class="mb-2">
-                    This section of the report assesses the stage of your organization\'s Digital Maturity based on how digital your business is, how you are dealing with changes in business patterns and staffing levels, which applications you are using and how you deploy them.
-                </p>
+        <div class="w-5/6 mx-auto">
+            <div class="h-1 overflow-hidden">
+                <h1 class="text-white">INTRODUCTION</h1>
+            </div>
+            <h2 class="font-bold text-2xl mb-2 leading-none">Congratulations!</h2>
+            <h3 class="font-bold italic text-lg mb-4 text-grey-dark">You have made your first step in your business agility journey.</h3>
+            <div class="flex items-start items-stretch">
+                <div class="w-2/3">
+                    <div class="pr-6">
+                        <p class="mb-3">
+                            In these challenging times, understanding where you are in the agility journey is a great start. By understanding where you are in this process, you can then set a course of action to redefine longer-term improvements to your business.
+                        </p>
+                        <p class="mb-3 font-bold text-sap-blue">
+                            Ultimately, you can become much better at reacting to changes in the external environment and ensuring that you evolve and get better as a business.
+                        </p>
+                        <p class="mb-24">
+                            To aid this, IDC has created a set of recommendations, based on the stages you are at across the different elements of agility. Based on the answers you provided, IDC places your business at <span class="font-bold text-sap-blue">Stage :stage</span> in its overall agility journey.<br/> IDC refer to this stage as <span class="font-bold text-sap-blue">:name</span>.
+                        </p>
+                        <p class="font-bold text-blackblack mb-2">
+                            To find out more about SAP for your location,<br/>click the relevant link:
+                        </p>
+                        <a class="text-sap-blue" href="https://www.sap.com/africa/products/sme-business-software.html" target="_blank">Africa</a> | 
+                        <a class="text-sap-blue" href="https://www.sap.com/mena/products/sme-business-software.html" target="_blank">Middle East</a> | 
+                        <a class="text-sap-blue" href="https://www.sap.com/spain/products/sme-business-software.html" target="_blank">Spain</a> | 
+                        <a class="text-sap-blue" href="https://events.sap.com/it/sapitalia/it/feelings" target="_blank">Italy</a>
+                    </div>
+                </div>
+                <div class="w-1/3 bg-grey-lighter">
+                    <div class="p-8">
+                        <div class="flex items-center">
+                            <img class="w-6 mr-2" src=":url" alt="">
+                            <h4 class="font-bold text-grey-darkest">This report includes:</h4>
+                        </div>
+                        <ul class="list-disc pl-12 text-sap-blue">
+                            <li class="mb-2">Your Overall Assessment</li>
+                            <li class="mb-2">Strategic Planning</li>
+                            <li class="mb-2">Processes</li>
+                            <li class="mb-2">Customer Relationships</li>
+                            <li class="mb-2">Suppliers & Distributors</li>
+                            <li class="mb-2">People Experience (HR)</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     ',
-    'digital-businessgraph' => '
-        <div class="ml-8 my-4 inline-block">:graph</div>
-    ',
-
-    'digital-business-1-stage1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score for this section indicates that you are in line with your Digital Improver peers with respect to the progress you have made so far. You are at the beginning of your journey, so there are many areas you need to address. You can look in to individual assessment areas within this section to understand what changes you could potentially make to improve your digital maturity.
-            </p>
-        </div>
-    ',
-    'digital-business-1-stage2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score for this section indicates that you are ahead of your Digital Improver peers with respect to the progress you have made so far. Very well done! While keeping up with this, you must also look at aspects related to digital design and digital delivery to improve your overall digital maturity.
-            </p>
-        </div>
-    ',
-    'digital-business-1-stage3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score for this section indicates that you are ahead of your Digital Improver peers with respect to the progress you have made so far. Very well done! While keeping up with this, you must also look at aspects related to digital design and digital delivery to improve your overall digital maturity.
-            </p>
-        </div>
-    ',
-    'digital-business-2-stage1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score for this section indicates that you are lagging behind your Digital Achiever peers with respect to your digital business approach. Digital business is an area that you should improve to catch up with your peers,  so you must take steps to accelerate the journey now. You should look in to individual assessment areas within this section to understand what changes you could potentially make to your digital business approach to improve your digital maturity.
-            </p>
-        </div>
-    ',
-    'digital-business-2-stage2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score in this section indicates that you are in line with your Digital Achiever peers with respect to the progress you have made in making your business digital. You are well on your way, but don\'t think of stopping just yet. You can look into individual assessment areas within this section to understand what changes you could potentially make to your digital business for further progress in your digital business.
-            </p>
-        </div>
-    ',
-    'digital-business-2-stage3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score in this area indicates that you are lagging behind other Digital Native peers with regards to your digital business approach. You should look in to individual assessment areas within this section to understand what changes you could potentially make to your digital business approach. You have a lot of work to do so you should act urgently to address the areas of improvement. This will help sustain your strong position with respect to your overall digital maturity.
-            </p>
-        </div>
-    ',
-
-    'digital-business-3-stage1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score for this section indicates that you are ahead of your Digital Improver peers with respect to the progress you have made so far. Very well done! While keeping up with this, you must also look at aspects related to digital design and digital delivery to improve your overall digital maturity.
-            </p>
-        </div>
-    ',
-    'digital-business-3-stage2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score for this section indicates that you are ahead of your Digital Achiever peers with respect to the progress you have made. Very well done on your journey so far! While keeping up with this, you must also look at aspects related to digital design and digital delivery to improve your overall digital maturity.
-            </p>
-        </div>
-    ',
-    'digital-business-3-stage3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score in this area indicates that you are in line with the digital native peers with respect to the progress you have made with regards to your digital business approach. While keeping up with this, you can look at areas of improvement if any, related to digital design and digital delivery to improve your overall digital maturity.
-            </p>
-        </div>
-    ',
-
-    'digital-businessgraph'=>'
-        <div class="ml-8 my-4 inline-block">:graph</div>
-    ',
-    'question1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 font-bold text-dassault-blue-light">
-                Q1. How difficult is for your organization to cope with changes in business patterns?
-            </p>
-        </div>
-    ',
-    'digital-business-1-q1-1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you are dealing well with fluctuations in your business. This means that you are well ahead of your Digital Improver peers in enabling your business digitally. Well done! You should now focus your efforts on other areas to improve your overall digital maturity.
-            </p>
-        </div>
-    ',
-    'digital-business-1-q1-2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your business. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
-            </p>
-        </div>
-    ',
-    'digital-business-1-q1-3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your business. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
-            </p>
-        </div>
-    ',
-    'digital-business-1-q1-4' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your business. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
-            </p>
-        </div>
-    ',
-    'digital-business-1-q1-5' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your business. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
-            </p>
-        </div>
-    ',
-
-    'digital-business-2-q1-1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you are dealing well with fluctuations in your business. This means that you are well ahead of your Digital Achiever peers in enabling your business digitally. Well done! You should now focus your efforts on other areas to improve your overall digital maturity.
-            </p>
-        </div>
-    ',
-    'digital-business-2-q1-2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your business. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
-            </p>
-        </div>
-    ',
-    'digital-business-2-q1-3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your business. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
-            </p>
-        </div>
-    ',
-    'digital-business-2-q1-4' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your business. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
-            </p>
-        </div>
-    ',
-    'digital-business-2-q1-5' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your business. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
-            </p>
-        </div>
-    ',
-
-    'digital-business-3-q1-1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you are dealing well with fluctuations in your business. This means that you are at par with your Digital Native peers in enabling your business digitally. Well done! You should now focus your efforts on other areas to finetune your overall digital maturity.
-            </p>
-        </div>
-    ',
-    'digital-business-3-q1-2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your business. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
-            </p>
-        </div>
-    ',
-    'digital-business-3-q1-3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your business. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
-            </p>
-        </div>
-    ',
-    'digital-business-3-q1-4' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your business. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
-            </p>
-        </div>
-    ',
-    'digital-business-3-q1-5' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your business. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
-            </p>
-        </div>
-    ',
-
-    'question2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 font-bold text-dassault-blue-light">
-                Q2. How difficult is for your organization to adapt to your changes in staffing levels?
-            </p>
-        </div>
-    ',
-
-    'digital-business-1-q2-1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you are dealing well with fluctuations in your staffing levels. This means that you are well ahead of your Digital Improver peers in enabling your business digitally and responding to changes in the business environment. Well done! You should now focus your efforts on other areas to improve your overall digital maturity.
-            </p>
-        </div>
-    ',
-    'digital-business-1-q2-2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your staffing levels. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
-            </p>
-        </div>
-    ',
-    'digital-business-1-q2-3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your staffing levels. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
-            </p>
-        </div>
-    ',
-    'digital-business-1-q2-4' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your staffing levels. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
-            </p>
-        </div>
-    ',
-    'digital-business-1-q2-5' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your staffing levels. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
-            </p>
-        </div>
-    ',
-
-    'digital-business-2-q2-1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you are dealing well with fluctuations in your staffing levels. This means that you are well ahead of your Digital Achiever peers in enabling your business digitally and responding to changes in the business environment. Well done! You should now focus your efforts on other areas to improve your overall digital maturity.
-            </p>
-        </div>
-    ',
-    'digital-business-2-q2-2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your staffing levels. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
-            </p>
-        </div>
-    ',
-    'digital-business-2-q2-3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your staffing levels. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
-            </p>
-        </div>
-    ',
-    'digital-business-2-q2-4' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your staffing levels. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
-            </p>
-        </div>
-    ',
-    'digital-business-2-q2-5' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your staffing levels. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
-            </p>
-        </div>
-    ',
-
-    'digital-business-3-q2-1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you are dealing well with fluctuations in your staffing levels. This means that you are at par with your Digital Native peers in enabling your business digitally. Well done! You should now focus your efforts on other areas to finetune your overall digital maturity.
-            </p>
-        </div>
-    ',
-    'digital-business-3-q2-2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your staffing levels. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
-            </p>
-        </div>
-    ',
-    'digital-business-3-q2-3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your staffing levels. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
-            </p>
-        </div>
-    ',
-    'digital-business-3-q2-4' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your staffing levels. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
-            </p>
-        </div>
-    ',
-    'digital-business-3-q2-5' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your staffing levels. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
-            </p>
-        </div>
-    ',
-
-    'question3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 font-bold text-dassault-blue-light">
-                Q3. To what extent does your organization use the following application types? 
-            </p>
-        </div>
-    ',
-
-    'digital-business-1-q3-1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are using only a few applications to support your business processes, which is a common trait of Digital Improvers. Doing things manually wastes a lot of time and does not scale when customer demands are picking up. It frustrates your employees, because they cannot be productive and puts you on the backfoot when you are competing for talent. You should explore using more applications to improve your business processes and overall competitiveness to become a more digital business. 
-            </p>
-        </div>
-    ',
-    'digital-business-1-q3-2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are using only a few applications to support your business processes, which is a common trait of Digital Improvers. Doing things manually wastes a lot of time and does not scale when customer demands are picking up. It frustrates your employees, because they cannot be productive and puts you on the backfoot when you are competing for talent. You should explore using more applications to improve your business processes and overall competitiveness to become a more digital business. 
-            </p>
-        </div>
-    ',
-    'digital-business-1-q3-3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are using a fair amount of applications to digitise your business processes, which puts you ahead of your Digital Improver peers. You might want to focus on other areas of your digital business that need improvement.
-            </p>
-        </div>
-    ',
-    'digital-business-1-q3-4' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are routinely using  applications to digitise your business processes, which puts you well ahead of your Digital Improver peers. You might want to focus on other areas of your digital business that need improvement.
-            </p>
-        </div>
-    ',
-
-    'digital-business-2-q3-1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are using only a few applications to support your business processes, which puts you behind your Digital Achiever peers. Doing things manually wastes a lot of time and does not scale when customer demands are picking up. It frustrates your employees, because they cannot be productive and puts you on the backfoot when you are competing for talent. You should explore using more applications to improve your business processes and overall competitiveness to become a more digital business. 
-            </p>
-        </div>
-    ',
-    'digital-business-2-q3-2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are using only a few applications to support your business processes, which puts you behind your Digital Achiever peers. Doing things manually wastes a lot of time and does not scale when customer demands are picking up. It frustrates your employees, because they cannot be productive and puts you on the backfoot when you are competing for talent. You should explore using more applications to improve your business processes and overall competitiveness to become a more digital business. 
-            </p>
-        </div>
-    ',
-    'digital-business-2-q3-3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are using a fair amount of applications to digitise your business processes, which puts you at par with your Digital Achiever peers. You might want to focus on other areas of your digital business that need improvement.
-            </p>
-        </div>
-    ',
-    'digital-business-2-q3-4' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are routinely using applications to digitise your business processes, which puts you ahead of your Digital Achiever peers. You might want to focus on other areas of your digital business that need improvement.
-            </p>
-        </div>
-    ',
-
-    'digital-business-3-q3-1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are using only a few applications to support your business processes, which puts you far behind your Digital Native peers. Doing things manually wastes a lot of time and does not scale when customer demands are picking up. It frustrates your employees, because they cannot be productive and puts you on the backfoot when you are competing for talent. You should explore using more applications to improve your business processes and overall competitiveness to become a more digital business. 
-            </p>
-        </div>
-    ',
-    'digital-business-3-q3-2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are using only a few applications to support your business processes, which puts you far behind your Digital Native peers. Doing things manually wastes a lot of time and does not scale when customer demands are picking up. It frustrates your employees, because they cannot be productive and puts you on the backfoot when you are competing for talent. You should explore using more applications to improve your business processes and overall competitiveness to become a more digital business.  
-            </p>
-        </div>
-    ',
-    'digital-business-3-q3-3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are using a fair amount of applications to support your business processes, but you are still behind your Digital Native peers. Doing things manually wastes a lot of time and does not scale when customer demands are picking up. It frustrates your employees, because they cannot be productive and puts you on the backfoot when you are competing for talent. You should explore using more applications to improve your business processes and overall competitiveness to become a more digital business. 
-            </p>
-        </div>
-    ',
-    'digital-business-3-q3-4' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are routinely using applications to digitise your business processes, which puts you at par with your Digital Native peers. You might want to focus on other areas of your digital business that need improvement.
-            </p>
-        </div>
-    ',
-
-    'question4' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 font-bold text-dassault-blue-light">
-                Q4. On a scale of 1 - 5, please rate the success of the current deployment of each of the following application types at your organization? 
-            </p>
-        </div>
-    ',
-
-    'digital-business-1-q4-1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are underutilising your applications because they have not been implemented properly. This is typical for Digital Improvers. You are at risk of loosing skills and talent because you are creating a bad user experience for your employees, because your implementation is not stable. You are also creating a bad experience for your customers and business partners, when you are not responsive because of disruptions of your business processes due to failures of your applications. Moving to a cloud based delivery model for applications provides instant access to the latest features and stable operations.
-            </p>
-        </div>
-    ',
-    'digital-business-1-q4-2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are underutilising your applications because they have not been implemented properly. This is typical for Digital Improvers. You are at risk of loosing skills and talent because you are creating a bad user experience for your employees, because your implementation is not stable. You are also creating a bad experience for your customers and business partners, when you are not responsive because of disruptions of your business processes due to failures of your applications. Moving to a cloud based delivery model for applications provides instant access to the latest features and stable operations.
-            </p>
-        </div>
-    ',
-    'digital-business-1-q4-3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are fairly efficient at implementing  applications to digitise your business processes, which puts you well ahead of your Digital Improver peers. You might want to focus on other areas of your digital business that need improvement.
-            </p>
-        </div>
-    ',
-    'digital-business-1-q4-4' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are very good at implementing  applications to digitise your business processes, which puts you well ahead of your Digital Improver peers. You might want to focus on other areas of your digital business that need improvement.
-            </p>
-        </div>
-    ',
-
-    'digital-business-2-q4-1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are underutilising your applications because they have not been implemented properly. This puts you far behind your Digital Achiever peers. You are at risk of loosing skills and talent because you are creating a bad user experience for your employees, because your implementation is not stable. You are also creating a bad experience for your customers and business partners, when you are not responsive because of disruptions of your business processes due to failures of your applications. Moving to a cloud based delivery model for applications provides instant access to the latest features and stable operations.
-            </p>
-        </div>
-    ',
-    'digital-business-2-q4-2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are underutilising your applications because they have not been implemented properly. This puts you far behind your Digital Achiever peers. You are at risk of loosing skills and talent because you are creating a bad user experience for your employees, because your implementation is not stable. You are also creating a bad experience for your customers and business partners, when you are not responsive because of disruptions of your business processes due to failures of your applications. Moving to a cloud based delivery model for applications provides instant access to the latest features and stable operations.
-            </p>
-        </div>
-    ',
-    'digital-business-2-q4-3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are fairly efficient at implementing  applications to digitise your business processes, which puts you at par with your Digital Achiever peers. You might want to focus on other areas of your digital business that need improvement.
-            </p>
-        </div>
-    ',
-    'digital-business-2-q4-4' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are very good at implementing  applications to digitise your business processes, which puts you ahead of your Digital Achiever peers. You might want to focus on other areas of your digital business that need improvement.
-            </p>
-        </div>
-    ',
-
-    'digital-business-3-q4-1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are underutilising your applications because they have not been implemented properly. This puts you far behind your Digital Native peers. You are at risk of loosing skills and talent because you are creating a bad user experience for your employees, because your implementation is not stable. You are also creating a bad experience for your customers and business partners, when you are not responsive because of disruptions of your business processes due to failures of your applications. Moving to a cloud based delivery model for applications provides instant access to the latest features and stable operations.
-            </p>
-        </div>
-    ',
-    'digital-business-3-q4-2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are underutilising your applications because they have not been implemented properly. This puts you far behind your Digital Native peers. You are at risk of loosing skills and talent because you are creating a bad user experience for your employees, because your implementation is not stable. You are also creating a bad experience for your customers and business partners, when you are not responsive because of disruptions of your business processes due to failures of your applications. Moving to a cloud based delivery model for applications provides instant access to the latest features and stable operations.
-            </p>
-        </div>
-    ',
-    'digital-business-3-q4-3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are fairly efficient at implementing  applications to digitise your business processes. This puts you slightly behind your Digital Native peers. You are at risk of loosing skills and talent because you are creating a bad user experience for your employees, because your implementation is not stable. You are also creating a bad experience for your customers and business partners, when you are not responsive because of disruptions of your business processes due to failures of your applications. Moving to a cloud based delivery model for applications provides instant access to the latest features and stable operations.
-            </p>
-        </div>
-    ',
-    'digital-business-3-q4-4' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are very good at implementing  applications to digitise your business processes, which puts you at par with your Digital Achiever peers. You might want to focus on other areas of your digital business that need improvement.
-            </p>
-        </div>
-    ',
-
-    'digital-designintro' => '
-        <h2 class="w-4/5 ml-auto text-dassault-blue mb-6">DIGITAL DESIGN</h2>
-        <div class="clearfix">
-            <div class="w-1/5 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 25mm;"></div>
-            <div class="w-4/5 float-left">
-                <p class="mb-2">
-                    Digital Design is the creation of solutions  through software for viewing on a screen including applications for Computer Aided Design (CAD), Mechanical Computer Aided Engineering (CAE), Other engineering, Collaborative product data management, Production planning, or Manufacturing. Digital Design and engineering tools enable global collaboration around projects throughout the ecosystem and help to attract and retain talent. Through the use of cloud-based digital design and engineering tools, Start-ups and SMBs have access to world-class tools used by their established competitors, partners and customers, at an affordable price point and with the ability to scale driven by customer demand.
-                </p>
-                <p class="mb-2">
-                    This section of the report assesses the stage of your organization\'s Digital Maturity based on your usage of digital design and engineering tools, how modern your application estate is and how well you are able to operate your digital design and engineering applications.
-                </p>
+    'overall-1' => '
+        <div class="pb w-5/6 mx-auto">
+            <div class="h-1 overflow-hidden">
+                <h1 class="text-white">Overall</h1>
+            </div>
+            <div class="flex items-start mb-4">
+                <img class="w-24 mr-4" src=":url" alt="">
+                <div class="flex-1">
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
+                    <h2 class="text-2xl leading-none font-black text-sap-blue">
+                        <span class="font-light">STAGE 1 - </span> Agile Beginner
+                    </h2>                    
+                </div>
+            </div>
+            <div class="flex items-start items-stretch">
+                <div class="w-1/2">
+                    <div class="pr-6">
+                        <p class="mb-3 font-bold leading-tight text-lg text-blackblack">
+                            The digital economy, international competition, and a need to be able to react to unforeseen forces, represent both challenges and opportunities for fast-growing start-up companies like yours.
+                        </p>
+                        <p class="mb-3 font-bold text-sap-blue">
+                            The good news is, you have the potential to adapt to market changes far more quickly than larger complex organizations. But you still need to align your business to take advantage of this. 
+                        </p>
+                        <p class="mb-3">
+                            Based on your responses to the agility measurement tool, IDC places your business at Stage 1 overall, and would refer to your organization as an <span class="font-bold text-sap-blue">Agile Beginner</span>. This is the first stage in the journey to agility, and while there may be a lot to do, you can quickly progress by focusing in on some core changes to the way you plan, manage people and processes, deal with suppliers and distributors, as well as use customer insight. 
+                        </p>
+                        
+                    </div>
+                </div>
+                <div class="w-1/2">
+                    <div class="pl-6">
+                        <p class="mb-3">
+                            Agile beginners are typically reacting to change, rather than leading change. This may result in you being too late in the process to take advantage of opportunities. At worst, it can impact your competitive advantage.
+                        </p>
+                        <p class="mb-3 italic text-sap-blue">
+                            But do not worry. The first step in the journey to agility has already been made. IDC has provided you with a breakdown of your results, as well as specific recommendations on what can be done to drive continued and successful change. 
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     ',
-    'digital-designgraph' => '
-        <div class="ml-8 my-4 inline-block">:graph</div>
-    ',
-
-    'digital-design-1-stage1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score for this section indicates that you are in line with your Digital Improver peers with respect to the progress you have made so far. You are at the beginning of your journey, so there are many areas you need to address. You can look in to individual assessment areas within this section to understand what changes you could potentially make to improve your digital maturity.
-            </p>
-        </div>
-    ',
-    'digital-design-1-stage2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score for this section indicates that you are ahead of your Digital Improver peers with respect to the progress you have made so far. Very well done! While keeping up with this, you must also look at aspects related to digital design and digital delivery to improve your overall digital maturity.
-            </p>
-        </div>
-    ',
-    'digital-design-1-stage3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score for this section indicates that you are ahead of your Digital Improver peers with respect to the progress you have made so far. Very well done! While keeping up with this, you must also look at aspects related to digital business and digital delivery to improve your overall digital maturity.
-            </p>
-        </div>
-    ',
-
-    'digital-design-2-stage1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score for this section indicates that you are lagging behind your Digital Achiever peers with respect to your digital design approach. Digital design is an area that you should improve to catch up with your peers,  so you must take steps to accelerate the journey now. You should look in to individual assessment areas within this section to understand what changes you could potentially make to your digital design approach to improve your digital maturity.
-            </p>
-        </div>
-    ',
-    'digital-design-2-stage2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score in this section indicates that you are in line with your Digital Achiever peers with respect to the progress you have made in digital design. You are well on your way, but don\'t think of stopping just yet. You can look into individual assessment areas within this section to understand what changes you could potentially make to your digital design capabilities for further progress in your digital business.
-            </p>
-        </div>
-    ',
-    'digital-design-2-stage3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score for this section indicates that you are ahead of your Digital Achiever peers with respect to the progress you have made. Very well done on your journey so far! While keeping up with this, you must also look at aspects related to digital business and digital delivery to improve your overall digital maturity.
-            </p>
-        </div>
-    ',
-
-    'digital-design-3-stage1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score in this area indicates that you are lagging much behind other Digital Native peers in your digital design capabilities. You should look in to individual assessment areas within this section to understand what changes you could potentially make to your digital business approach. You have a lot of work to do so you should act urgently to address the areas of improvement. This will help you sustain your strong position with respect to your overall digital maturity.
-            </p>
-        </div>
-    ',
-    'digital-design-3-stage2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score in this area indicates that you are lagging behind other Digital Native peers with regards to your digital design capabilities. You should look in to individual assessment areas within this section to understand what changes you could potentially make to your digital design approach. You have a lot of work to do so you should act urgently to address the areas of improvement. This will help sustain your strong position with respect to your overall digital maturity.
-            </p>
-        </div>
-    ',
-    'digital-design-3-stage3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score in this area indicates that you are in line with the digital native peers with respect to the progress you have made with regards to your digital design approach. While keeping up with this, you can look at areas of improvement if any, related to digital business and digital delivery to improve your overall digital maturity.
-            </p>
-        </div>
-    ',
-
-    'digital-designgraph'=>'
-        <div class="ml-8 my-4 inline-block">:graph</div>
-    ',
-
-    'question5' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 font-bold text-dassault-blue-light">
-                Q5. Which statement best describes how your organization tends to roll out CAD/CAM applications or updates?
-            </p>
-        </div>
-    ',
-
-    'digital-design-1-q5-1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are depending on manual processes to deliver digital design applications and upgrades, which puts you at par with your Digital Improver peers. Reliance on manual processes leads to technical debt, frustrations from the design engineers and general low responsiveness to business requirements. You need to become more proactive, leverage automation tools and cloud-based applications to increase your agility and improve your digital design capabilities.
-            </p>
-        </div>
-    ',
-    'digital-design-1-q5-2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are depending on manual processes to deliver digital design applications and upgrades, which puts you at par with your Digital Improver peers. Reliance on manual processes leads to technical debt, frustrations from the design engineers and general low responsiveness to business requirements. You need to become more proactive, leverage automation tools and cloud-based applications to increase your agility and improve your digital design capabilities.
-            </p>
-        </div>
-    ',
-    'digital-design-1-q5-3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Your IT department uses automation tools to devliver digital design applications and upgrades, which puts you ahead of your Digital Improver peers. If you want to take another step ahead, you can consider using cloud-based digital design and engineering tools, which automatically provide you the latest functionality and don\'t require any intervention from IT.
-            </p>
-        </div>
-    ',
-    'digital-design-1-q5-4' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You have outsourced the implementation and upgrades of your digital design and engineering applications to a partner, which puts you ahead of your Digital Improver peers. Depending your service level agreement (SLA) with your partner, you are getting the latest updates with a regular cadence. If you want to take your agility one step further, you can move to a cloud-based delivery model, where you are always on the latest version of the digital design and engineering application.
-            </p>
-        </div>
-    ',
-    'digital-design-1-q5-5' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are using a cloud-based delivery model for your digital design and engineering applications, which puts you far ahead of your Digital Improver peers. You should focus on other areas of digital business or digital delivery to improve your digital maturity.
-            </p>
-        </div>
-    ',
-
-    'digital-design-2-q5-1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are depending on manual processes to deliver digital design applications and upgrades, which puts you behind your Digital Achiever peers. Reliance on manual processes leads to technical debt, frustrations from the design engineers and general low responsiveness to business requirements. You need to become more proactive, leverage automation tools and cloud-based applications to increase your agility and improve your digital design capabilities.
-            </p>
-        </div>
-    ',
-    'digital-design-2-q5-2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are depending on manual processes to deliver digital design applications and upgrades, which puts you behind your Digital Achiever peers. Reliance on manual processes leads to technical debt, frustrations from the design engineers and general low responsiveness to business requirements. You need to become more proactive, leverage automation tools and cloud-based applications to increase your agility and improve your digital design capabilities.
-            </p>
-        </div>
-    ',
-    'digital-design-2-q5-3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Your IT department uses automation tools to devliver digital design applications and upgrades, which puts you at par with your Digital Achiever peers. If you want to take another step ahead, you can consider using cloud-based digital design and engineering tools, which automatically provide you the latest functionality and don\'t require any intervention from IT.
-            </p>
-        </div>
-    ',
-    'digital-design-2-q5-4' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You have outsourced the implementation and upgrades of your digital design and engineering applications to a partner, which puts you at par with your Digital Improver peers. Depending your service level agreement (SLA) with your partner, you are getting the latest updates with a regular cadence. If you want to take your agility one step further, you can move to a cloud-based delivery model, where you are always on the latest version of the digital design and engineering application.
-            </p>
-        </div>
-    ',
-    'digital-design-2-q5-5' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are using a cloud-based delivery model for your digital design and engineering applications, which puts you ahead of your Digital Achiever peers. You should focus on other areas of digital business or digital delivery to improve your digital maturity.
-            </p>
-        </div>
-    ',
-
-    'digital-design-3-q5-1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are depending on manual processes to deliver digital design applications and upgrades, which puts you far behind your Digital Native peers. Reliance on manual processes leads to technical debt, frustrations from the design engineers and general low responsiveness to business requirements. You need to become more proactive, leverage automation tools and cloud-based applications to increase your agility and improve your digital design capabilities.
-            </p>
-        </div>
-    ',
-    'digital-design-3-q5-2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are depending on manual processes to deliver digital design applications and upgrades, which puts you far behind your Digital Native peers. Reliance on manual processes leads to technical debt, frustrations from the design engineers and general low responsiveness to business requirements. You need to become more proactive, leverage automation tools and cloud-based applications to increase your agility and improve your digital design capabilities.
-            </p>
-        </div>
-    ',
-    'digital-design-3-q5-3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Your IT department uses automation tools to devliver digital design applications and upgrades, which leaves you behind your Digital Native peers. You need to accelerate your journey towards modern cloud-based digital design and engineering tools to catch up with your peers.
-            </p>
-        </div>
-    ',
-    'digital-design-3-q5-4' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You have outsourced the implementation and upgrades of your digital design and engineering applications to a partner, which puts you behind your Digital Improver peers. Depending your service level agreement (SLA) with your partner, you are getting the latest updates with a regular cadence. If you want to take your agility one step further, you can move to a cloud-based delivery model, where you are always on the latest version of the digital design and engineering application.
-            </p>
-        </div>
-    ',
-    'digital-design-3-q5-5' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are using a cloud-based delivery model for your digital design and engineering applications, which puts you at par with your Digital Native peers. You should focus on other areas of digital business or digital delivery to improve your digital maturity.
-            </p>
-        </div>
-    ',
-
-    'question6' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 font-bold text-dassault-blue-light">
-                Q6. What proportion of your organization\'s Digital Design application estate are the following ages since release?
-            </p>
-        </div>
-    ',
-
-    'digital-design-1-q6-1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are using the latest versions of your digital design and engineering apps. This puts you well ahead of your Digital Improver peers. You should focus on other areas of digital business or digital delivery to improve your digital maturity.
-            </p>
-        </div>
-    ',
-    'digital-design-1-q6-2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are using the latest versions of your digital design and engineering apps. This puts you well ahead of your Digital Improver peers. You should focus on other areas of digital business or digital delivery to improve your digital maturity.
-            </p>
-        </div>
-    ',
-    'digital-design-1-q6-3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are not using the latest version of your digital design and engineering applications. This puts you at par with your Digital Improver peers. In order to stay competitive in the digital economy, attract the right employees and interact well with your ecosystem, you need to ensure that you are always on the most current version of your applications. Moving to a cloud-based solution enables you to always be on the latest version and have access to the latest innovative features of the application.
-            </p>
-        </div>
-    ',
-    'digital-design-1-q6-4' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Your digital design and engineering application is aging and you are not taking advantage of the most innovative features. This puts you at par with your Digital Improver peers. In order to stay competitive in the digital economy, attract the right employees and interact well with your ecosystem, you need to ensure that you are always on the most current version of your applications. Moving to a cloud-based solution enables you to always be on the latest version and have access to the latest innovative features of the application.
-            </p>
-        </div>
-    ',
-    'digital-design-1-q6-5' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Your digital design and engineering application is outdated. You are at risk of disruption by more agile competitors and you are not taking advantage of the most innovative features. This puts you at par with your Digital Improver peers. In order to stay competitive in the digital economy, attract the right employees and interact well with your ecosystem, you need to ensure that you are always on the most current version of your applications. Moving to a cloud-based solution enables you to always be on the latest version and have access to the latest innovative features of the application.
-            </p>
-        </div>
-    ',
-
-    'digital-design-2-q6-1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are using the latest versions of your digital design and engineering apps. This puts you well ahead of your Digital Achiever peers. You should focus on other areas of digital business or digital delivery to improve your digital maturity.
-            </p>
-        </div>
-    ',
-    'digital-design-2-q6-2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are using the latest versions of your digital design and engineering apps. This puts you well ahead of your Digital Achiever peers. You should focus on other areas of digital business or digital delivery to improve your digital maturity.
-            </p>
-        </div>
-    ',
-    'digital-design-2-q6-3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are not using the latest version of your digital design and engineering applications. This puts you at par with your Digital Achiever peers. In order to stay competitive in the digital economy, attract the right employees and interact well with your ecosystem, you need to ensure that you are always on the most current version of your applications. Moving to a cloud-based solution enables you to always be on the latest version and have access to the latest innovative features of the application.
-            </p>
-        </div>
-    ',
-    'digital-design-2-q6-4' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Your digital design and engineering application is aging and you are not taking advantage of the most innovative features. This puts you behind your Digital Achiever peers. In order to stay competitive in the digital economy, attract the right employees and interact well with your ecosystem, you need to ensure that you are always on the most current version of your applications. Moving to a cloud-based solution enables you to always be on the latest version and have access to the latest innovative features of the application.
-            </p>
-        </div>
-    ',
-    'digital-design-2-q6-5' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Your digital design and engineering application is outdated. You are at risk of disruption by more agile competitors and you are not taking advantage of the most innovative features. This puts you far behind your Digital Improver peers. In order to stay competitive in the digital economy, attract the right employees and interact well with your ecosystem, you need to ensure that you are always on the most current version of your applications. Moving to a cloud-based solution enables you to always be on the latest version and have access to the latest innovative features of the application.
-            </p>
-        </div>
-    ',
-
-    'digital-design-3-q6-1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are using the latest versions of your digital design and engineering apps. This puts you at par with your Digital Native peers. You should focus on other areas of digital business or digital delivery to improve your digital maturity.
-            </p>
-        </div>
-    ',
-    'digital-design-3-q6-2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are using the latest versions of your digital design and engineering apps. This puts you at par with your Digital Native peers. You should focus on other areas of digital business or digital delivery to improve your digital maturity.
-            </p>
-        </div>
-    ',
-    'digital-design-3-q6-3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are not using the latest version of your digital design and engineering applications. This puts you behind your Digital Achiever peers. In order to stay competitive in the digital economy, attract the right employees and interact well with your ecosystem, you need to ensure that you are always on the most current version of your applications. Moving to a cloud-based solution enables you to always be on the latest version and have access to the latest innovative features of the application.
-            </p>
-        </div>
-    ',
-    'digital-design-3-q6-4' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Your digital design and engineering application is aging and you are not taking advantage of the most innovative features. This puts you far behind your Digital Native peers. In order to stay competitive in the digital economy, attract the right employees and interact well with your ecosystem, you need to ensure that you are always on the most current version of your applications. Moving to a cloud-based solution enables you to always be on the latest version and have access to the latest innovative features of the application.
-            </p>
-        </div>
-    ',
-    'digital-design-3-q6-5' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Your digital design and engineering application is outdated. You are at risk of disruption by more agile competitors and you are not taking advantage of the most innovative features. This puts you far behind your Digital Native peers. In order to stay competitive in the digital economy, attract the right employees and interact well with your ecosystem, you need to ensure that you are always on the most current version of your applications. Moving to a cloud-based solution enables you to always be on the latest version and have access to the latest innovative features of the application.
-            </p>
-        </div>
-    ',
-
-    'question7' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 font-bold text-dassault-blue-light">
-                Q7. On a scale of 1 to 5, how successfully does your Digital Design solution rate for the following? 
-            </p>
-        </div>
-    ',
-
-    'digital-design-1-q7-1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Your current digital design and engineering application does not support your digital business strategy. This puts you at par with your Digital Improver peers. You should evaluate either the latest version of your current application or an alternative application to get better reliability, performance, security, value for money, newer features, better collaboration and ecosystem integration. Having a modern digital design and engineering application solution is critical to digital business success, because collaboration internally with employees and externally with ecosystem partners requires a scalable and modern platform. You should consider moving to a cloud-based solution to improve the user experience and operational efficiency of your digital design and engineering application.
-            </p>
-        </div>
-    ',
-    'digital-design-1-q7-2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Your current digital design and engineering application does not support your digital business strategy. This puts you at par with your Digital Improver peers. You should evaluate either the latest version of your current application or an alternative application to get better reliability, performance, security, value for money, newer features, better collaboration and ecosystem integration. Having a modern digital design and engineering application solution is critical to digital business success, because collaboration internally with employees and externally with ecosystem partners requires a scalable and modern platform. You should consider moving to a cloud-based solution to improve the user experience and operational efficiency of your digital design and engineering application.
-            </p>
-        </div>
-    ',
-    'digital-design-1-q7-3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Your current digital design and engineering application supports your digital business strategy to some degree. This puts you ahead of your Digital Improver peers. To move even further ahead, you should evaluate either the latest version of your current application or an alternative application to get better reliability, performance, security, value for money, newer features, better collaboration and ecosystem integration. Having a modern digital design and engineering application solution is critical to digital business success, because collaboration internally with employees and externally with ecosystem partners requires a scalable and modern platform. You should consider moving to a cloud-based solution to improve the user experience and operational efficiency of your digital design and engineering application.
-            </p>
-        </div>
-    ',
-    'digital-design-1-q7-4' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Your current digital design and engineering application supports your digital business very well. This puts you far ahead of your Digital Improver peers. You should focus on other aspects of digital business, digital design or digital delivery to improve your digital maturity.
-            </p>
-        </div>
-    ',
-
-    'digital-design-2-q7-1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Your current digital design and engineering application does not support your digital business strategy. This puts you behind your Digital Achiever peers. You should evaluate either the latest version of your current application or an alternative application to get better reliability, performance, security, value for money, newer features, better collaboration and ecosystem integration. Having a modern digital design and engineering application solution is critical to digital business success, because collaboration internally with employees and externally with ecosystem partners requires a scalable and modern platform. You should consider moving to a cloud-based solution to improve the user experience and operational efficiency of your digital design and engineering application.
-            </p>
-        </div>
-    ',
-    'digital-design-2-q7-2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Your current digital design and engineering application does not support your digital business strategy. This puts you behind your Digital Achiever peers. You should evaluate either the latest version of your current application or an alternative application to get better reliability, performance, security, value for money, newer features, better collaboration and ecosystem integration. Having a modern digital design and engineering application solution is critical to digital business success, because collaboration internally with employees and externally with ecosystem partners requires a scalable and modern platform. You should consider moving to a cloud-based solution to improve the user experience and operational efficiency of your digital design and engineering application.
-            </p>
-        </div>
-    ',
-    'digital-design-2-q7-3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Your current digital design and engineering application supports your digital business strategy to some degree. This puts you at par with your Digital Achiever peers. To move further ahead, you should evaluate either the latest version of your current application or an alternative application to get better reliability, performance, security, value for money, newer features, better collaboration and ecosystem integration. Having a modern digital design and engineering application solution is critical to digital business success, because collaboration internally with employees and externally with ecosystem partners requires a scalable and modern platform. You should consider moving to a cloud-based solution to improve the user experience and operational efficiency of your digital design and engineering application.
-            </p>
-        </div>
-    ',
-    'digital-design-2-q7-4' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Your current digital design and engineering application supports your digital business very well. This puts you ahead of your Digital Achiever peers. You should focus on other aspects of digital business, digital design or digital delivery to improve your digital maturity.
-            </p>
-        </div>
-    ',
-
-    'digital-design-3-q7-1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Your current digital design and engineering application does not support your digital business strategy. This puts you far behind your Digital Native peers. You should evaluate either the latest version of your current application or an alternative application to get better reliability, performance, security, value for money, newer features, better collaboration and ecosystem integration. Having a modern digital design and engineering application solution is critical to digital business success, because collaboration internally with employees and externally with ecosystem partners requires a scalable and modern platform. You should consider moving to a cloud-based solution to improve the user experience and operational efficiency of your digital design and engineering application.
-            </p>
-        </div>
-    ',
-    'digital-design-3-q7-2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Your current digital design and engineering application does not support your digital business strategy. This puts you far behind your Digital Native peers. You should evaluate either the latest version of your current application or an alternative application to get better reliability, performance, security, value for money, newer features, better collaboration and ecosystem integration. Having a modern digital design and engineering application solution is critical to digital business success, because collaboration internally with employees and externally with ecosystem partners requires a scalable and modern platform. You should consider moving to a cloud-based solution to improve the user experience and operational efficiency of your digital design and engineering application.
-            </p>
-        </div>
-    ',
-    'digital-design-3-q7-3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Your current digital design and engineering application supports your digital business strategy to some degree. This puts you behind your Digital Native peers. To catch up, you should evaluate either the latest version of your current application or an alternative application to get better reliability, performance, security, value for money, newer features, better collaboration and ecosystem integration. Having a modern digital design and engineering application solution is critical to digital business success, because collaboration internally with employees and externally with ecosystem partners requires a scalable and modern platform. You should consider moving to a cloud-based solution to improve the user experience and operational efficiency of your digital design and engineering application.
-            </p>
-        </div>
-    ',
-    'digital-design-3-q7-4' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Your current digital design and engineering application supports your digital business very well. This puts you at par with your Digital Native peers. You should focus on other aspects of digital business, digital design or digital delivery to improve your digital maturity.
-            </p>
-        </div>
-    ',
-    
-    'digital-deliveryintro' => '
-        <h2 class="w-4/5 ml-auto text-dassault-blue mb-6">DIGITAL DELIVERY</h2>
-        <div class="clearfix">
-            <div class="w-1/5 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 25mm;"></div>
-            <div class="w-4/5 float-left">
-                <p class="mb-2">
-                    Digital Delivery is about the alignment of IT with the business. Is IT seen as an enabler of digital business strategies or is it just considered a necessary cost? Has IT embraced modern delivery tools like cloud or is everything delivered manually and with internal assets and resources? Getting IT processes and delivery models right is critical to provide the agility and flexibility that start ups and SMBs require to react quickly to changing business patterns and staffing levels, as well creating great experiences for employees, customers and ecosystem partners.
-                </p>
-                <p class="mb-2">
-                    This section of the report assesses the stage of your organization\'s Digital Maturity based on your ability to deliver digital design and engineering tools, how IT is perceived by top management and if cloud-based delivery models are being used.
-                </p>
+    'overall-2' => '
+        <div class="pb w-5/6 mx-auto">
+            <div class="h-1 overflow-hidden">
+                <h1 class="text-white">Overall</h1>
+            </div>
+            <div class="flex items-start mb-4">
+                <img class="w-24 mr-4" src=":url" alt="">
+                <div class="flex-1">
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
+                    <h2 class="text-2xl leading-none font-black text-sap-blue">
+                        <span class="font-light">STAGE 2 - </span> Agile Mover
+                    </h2>                    
+                </div>
+            </div>
+            <div class="flex items-start items-stretch">
+                <div class="w-1/2">
+                    <div class="pr-6">
+                        <p class="mb-3 font-bold leading-tight text-lg text-blackblack">
+                            The digital economy, international competition, and a need to be able to react to unforeseen forces, represent both challenges and opportunities for fast-growing start-up companies like yours.
+                        </p>
+                        <p class="mb-3 font-bold text-sap-blue">
+                            You have the potential to adapt to the needs of the market faster and more accurately, as well as innovate more rapidly than larger complex organizations.
+                        </p>
+                        <p class="mb-3">
+                            Based on your responses to the agility measurement tool, IDC places your business at Stage 2 overall, and classes your business as an <span class="font-bold text-sap-blue">Agile Mover</span>. This is the second stage in the journey to agility, and while there may still be a lot to do, you have made some progress, or have approaches in place that will make it easier to become even more agile in the future. 
+                        </p>
+                        
+                    </div>
+                </div>
+                <div class="w-1/2">
+                    <div class="pl-6">
+                        <p class="mb-3">
+                            Focusing on making changes to the way you plan, manage people and processes, deal with suppliers and distributors, and use customer insight will have real and lasting impacts on being more adaptive and flexible. This will enable your business to seize opportunities and drive competitive advantage.
+                        </p>
+                        <p class="mb-3 italic text-sap-blue">
+                            IDC has provided you with a breakdown of your results to enable you to understand where you are behind in this process, as well as specific recommendations on what can be done to drive continued and successful change. 
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     ',
-    'digital-deliverygraph' => '
-        <div class="ml-8 my-4 inline-block">:graph</div>
-    ',
-
-    'digital-delivery-1-stage1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue mt-4 font-bold">
-                Your overall score for this section indicates that you are in line with your Digital Improver peers with respect to the progress you have made so far. You are at the beginning of your journey, so there are many areas you need to address. You can look in to individual assessment areas within this section to understand what changes you could potentially make to improve your digital maturity.
-            </p>
-        </div>
-    ',
-    'digital-delivery-1-stage2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue mt-4 font-bold">
-                Your overall score for this section indicates that you are ahead of your Digital Improver peers with respect to the progress you have made so far. Very well done! While keeping up with this, you must also look at aspects related to digital design and digital design to improve your overall digital maturity.
-            </p>
-        </div>
-    ',
-    'digital-delivery-1-stage3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue mt-4 font-bold">
-                Your overall score for this section indicates that you are ahead of your Digital Improver peers with respect to the progress you have made so far. Very well done! While keeping up with this, you must also look at aspects related to digital business and digital design to improve your overall digital maturity.
-            </p>
-        </div>
-    ',
-
-    'digital-delivery-2-stage1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue mt-4 font-bold">
-                Your overall score for this section indicates that you are lagging behind your Digital Achiever peers with respect to your digital delivery approach. Digital delivery is an area that you should improve to catch up with your peers,  so you must take steps to accelerate the journey now. You should look in to individual assessment areas within this section to understand what changes you could potentially make to your digital delivery approach to improve your digital maturity.
-            </p>
-        </div>
-    ',
-    'digital-delivery-2-stage2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue mt-4 font-bold">
-                Your overall score in this section indicates that you are in line with your Digital Achiever peers with respect to the progress you have made in making your business digital. You are well on your way, but don\'t think of stopping just yet. You can look into individual assessment areas within this section to understand what changes you could potentially make to your digital delivery capabilities for further progress in your digital maturity.
-            </p>
-        </div>
-    ',
-    'digital-delivery-2-stage3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue mt-4 font-bold">
-                Your overall score for this section indicates that you are ahead of your Digital Achiever peers with respect to the progress you have made. Very well done on your journey so far! While keeping up with this, you must also look at aspects related to digital business and digital design to improve your overall digital maturity.
-            </p>
-        </div>
-    ',
-
-    'digital-delivery-3-stage1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue mt-4 font-bold">
-                Your overall score in this area indicates that you are lagging much behind other Digital Native peers in your digital delivery. You should look in to individual assessment areas within this section to understand what changes you could potentially make to your digital business approach. You have a lot of work to do so you should act urgently to address the areas of improvement. This will help you sustain your strong position with respect to your overall digital maturity.
-            </p>
-        </div>
-    ',
-
-    'digital-delivery-3-stage2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue mt-4 font-bold">
-                Your overall score in this area indicates that you are lagging behind other Digital Native peers with regards to your digital delivery approach. You should look in to individual assessment areas within this section to understand what changes you could potentially make to your digital delivery approach. You have a lot of work to do so you should act urgently to address the areas of improvement. This will help sustain your strong position with respect to your overall digital maturity.
-            </p>
-        </div>
-    ',
-    
-    'digital-delivery-3-stage3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 text-dassault-blue mt-4 font-bold">
-                Your overall score in this area indicates that you are in line with the digital native peers with respect to the progress you have made with regards to your digital delivery approach. While keeping up with this, you can look at areas of improvement if any, related to digital business and digital design to improve your overall digital maturity.
-            </p>
-        </div>
-    ',
-
-    'digital-deliverygraph'=>'
-        <div class="ml-8 my-4 inline-block">:graph</div>
-    ',
-
-    'question8' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 font-bold text-dassault-blue-light">
-                Q8. How does the Senior Management of the company view the role of IT within the business?
-            </p>
-        </div>
-    ',
-
-    'digital-delivery-1-q8-1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Your senior management sees IT as a necessary evil that does not provide any significant value or differentiation. This puts you at par with your Digital Improver peers. Unfortunately, this perception usually leads to underinvestment in digital applications and IT infrastructure, which in turn creates a bad working experience for employees and leaves IT on the backfoot with regards to reacting to business requirements. To improve your digital delivery capabilities, create a proof of concept where you react fast to a business requirement and demonstrate that you can deliver digital innovation. Moving to a cloud-based delivery model also changes the dynamics internally, as you move from a CAPEX to an OPEX model, where the operating cost is closely aligned with the changes in the business. For example, if your staff levels are fluctuating significantly throughout the year, you can adjust the number of user licenses based on your actual staffing levels, which lets you react quickly to changes in the business without a huge upfront investment.
-            </p>
-        </div>
-    ',
-    'digital-delivery-1-q8-3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Your senior management primarily sees IT as a means to improve business efficieny. This is the first step of digital transformation, where you use IT to improve your current business processes, but it is not real transformation. This puts you ahead of your Digital Improver peers. If you want to demonstrate real transformation driven by IT, you need to support digital business innovation, through providing a modern platform for collaboration, both internally and with the external ecosystem.
-            </p>
-        </div>
-    ',
-    'digital-delivery-1-q8-5' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are lucky! Your senior management sees IT as a driver for differentiation and innovation, which usually leads to a positive investment climate for modern applications and delivery models. This puts you far ahead of your Digital Improver peers. 
-            </p>
-        </div>
-    ',
-    
-
-    'digital-delivery-2-q8-1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Your senior management sees IT as a necessary evil that does not provide any significant value or differentiation. This puts you behind your Digital Achiever peers. Unfortunately, this perception usually leads to underinvestment in digital applications and IT infrastructure, which in turn creates a bad working experience for employees and leaves IT on the backfoot with regards to reacting to business requirements. To improve your digital delivery capabilities, create a proof of concept where you react fast to a business requirement and demonstrate that you can deliver digital innovation. Moving to a cloud-based delivery model also changes the dynamics internally, as you move from a CAPEX to an OPEX model, where the operating cost is closely aligned with the changes in the business. For example, if your staff levels are fluctuating significantly throughout the year, you can adjust the number of user licenses based on your actual staffing levels, which lets you react quickly to changes in the business without a huge upfront investment.
-            </p>
-        </div>
-    ',
-    'digital-delivery-2-q8-3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Your senior management primarily sees IT as a means to improve business efficieny. This is the first step of digital transformation, where you use IT to improve your current business processes, but it is not real transformation. This puts you at par with your Digital Achiever peers. If you want to demonstrate real transformation driven by IT, you need to support digital business innovation, through providing a modern platform for collaboration, both internally and with the external ecosystem.
-            </p>
-        </div>
-    ',
-    'digital-delivery-2-q8-5' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are lucky! Your senior management sees IT as a driver for differentiation and innovation, which usually leads to a positive investment climate for modern applications and delivery models. This puts you ahead of your Digital Achiever peers. 
-            </p>
-        </div>
-    ',
-    
-    'digital-delivery-3-q8-1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Your senior management sees IT as a necessary evil that does not provide any significant value or differentiation. This puts you far behind your Digital Native peers. Unfortunately, this perception usually leads to underinvestment in digital applications and IT infrastructure, which in turn creates a bad working experience for employees and leaves IT on the backfoot with regards to reacting to business requirements. To improve your digital delivery capabilities, create a proof of concept where you react fast to a business requirement and demonstrate that you can deliver digital innovation. Moving to a cloud-based delivery model also changes the dynamics internally, as you move from a CAPEX to an OPEX model, where the operating cost is closely aligned with the changes in the business. For example, if your staff levels are fluctuating significantly throughout the year, you can adjust the number of user licenses based on your actual staffing levels, which lets you react quickly to changes in the business without a huge upfront investment.
-            </p>
-        </div>
-    ',
-    'digital-delivery-3-q8-3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Your senior management primarily sees IT as a means to improve business efficieny. This is the first step of digital transformation, where you use IT to improve your current business processes, but it is not real transformation. This puts you behind your Digital Native peers. If you want to demonstrate real transformation driven by IT, you need to support digital business innovation, through providing a modern platform for collaboration, both internally and with the external ecosystem.
-            </p>
-        </div>
-    ',
-    'digital-delivery-3-q8-5' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                Your senior management sees IT as a driver for differentiation and innovation, which usually leads to a positive investment climate for modern applications and delivery models. This puts you at par with your Digital Native peers. 
-            </p>
-        </div>
-    ',
-
-    'question9' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 font-bold text-dassault-blue-light">
-                Q9. Please indicate how your organization is primarily delivering (or plans to deliver) each of the following application types to end users?
-            </p>
-        </div>
-    ',
-
-    'digital-delivery-1-q9-1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are delivering most of your applications with in-house IT assets and resources. This puts you at par with your Digital Improver peers. As a start-up or SMB, you will have greater flexibility, agility and security, if you move to a cloud-based delivery model for your applications, instead of investing into in-house servers and storage. By moving to the cloud, you always have access to the latest features and functions, do not have to worry about sizing, implementing, operating and maintaining on-premise IT assets, and can scale up and down based on business demand instead of sizing the IT environment for peak performance.
-            </p>
-        </div>
-    ',
-    'digital-delivery-1-q9-2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are delivering most of your applications with in-house IT assets and resources as well as managed services. This puts you at par with your Digital Improver peers. As a start-up or SMB, you will have greater flexibility, agility and security, if you move to a cloud-based delivery model for your applications, instead of investing into in-house servers and storage. By moving to the cloud, you always have access to the latest features and functions, do not have to worry about sizing, implementing, operating and maintaining on-premise IT assets, and can scale up and down based on business demand instead of sizing the IT environment for peak performance.
-            </p>
-        </div>
-    ',
-    'digital-delivery-1-q9-3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are primarily delivering your applications through external providers, either managed services or cloud services. This puts you ahead of your Digital Improver peers. Depending on the service level agreements (SLAs) that you have with your managed service provider, you are some flexibilty to react to changing business requirements and to adjust the number of users up and down as needed, which is critical to digital business success. You will also have access to innovative features at a regular cadence.
-            </p>
-        </div>
-    ',
-    'digital-delivery-1-q9-4' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are mainly delivering your applications through a cloud-based delivery model. This puts you well ahead of your Digital Improver peers. You have continous access to the latest features and functions, can scale dynamically based on business demands and enable collobaration and innovation for your employees and with your ecoystem partners. You should look at other aspects in digital business or digital design to improve your digital maturity.
-            </p>
-        </div>
-    ',
-
-    'digital-delivery-2-q9-1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are delivering most of your applications with in-house IT assets and resources. This puts you behind your Digital Achiever peers. As a start-up or SMB, you will have greater flexibility, agility and security, if you move to a cloud-based delivery model for your applications, instead of investing into in-house servers and storage. By moving to the cloud, you always have access to the latest features and functions, do not have to worry about sizing, implementing, operating and maintaining on-premise IT assets, and can scale up and down based on business demand instead of sizing the IT environment for peak performance.
-            </p>
-        </div>
-    ',
-    'digital-delivery-2-q9-2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are delivering most of your applications with in-house IT assets and resources as well as managed services. This puts you behind your Digital Achiever peers. As a start-up or SMB, you will have greater flexibility, agility and security, if you move to a cloud-based delivery model for your applications, instead of investing into in-house servers and storage. By moving to the cloud, you always have access to the latest features and functions, do not have to worry about sizing, implementing, operating and maintaining on-premise IT assets, and can scale up and down based on business demand instead of sizing the IT environment for peak performance.
-            </p>
-        </div>
-    ',
-    'digital-delivery-2-q9-3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are primarily delivering your applications through external providers, either managed services or cloud services. This puts you at par with your Digital Achiever peers. Depending on the service level agreements (SLAs) that you have with your managed service provider, you are some flexibilty to react to changing business requirements and to adjust the number of users up and down as needed, which is critical to digital business success. You will also have access to innovative features at a regular cadence.
-            </p>
-        </div>
-    ',
-    'digital-delivery-2-q9-4' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are mainly delivering your applications through a cloud-based delivery model. This puts you ahead of your Digital Achiever peers. You have continous access to the latest features and functions, can scale dynamically based on business demands and enable collobaration and innovation for your employees and with your ecoystem partners. You should look at other aspects in digital business or digital design to improve your digital maturity.
-            </p>
-        </div>
-    ',
-
-    'digital-delivery-3-q9-1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are delivering most of your applications with in-house IT assets and resources. This puts you far behind your Digital Native peers. As a start-up or SMB, you will have greater flexibility, agility and security, if you move to a cloud-based delivery model for your applications, instead of investing into in-house servers and storage. By moving to the cloud, you always have access to the latest features and functions, do not have to worry about sizing, implementing, operating and maintaining on-premise IT assets, and can scale up and down based on business demand instead of sizing the IT environment for peak performance.
-            </p>
-        </div>
-    ',
-    'digital-delivery-3-q9-2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are delivering most of your applications with in-house IT assets and resources as well as managed services. This puts you far behind your Digital Native peers. As a start-up or SMB, you will have greater flexibility, agility and security, if you move to a cloud-based delivery model for your applications, instead of investing into in-house servers and storage. By moving to the cloud, you always have access to the latest features and functions, do not have to worry about sizing, implementing, operating and maintaining on-premise IT assets, and can scale up and down based on business demand instead of sizing the IT environment for peak performance.
-            </p>
-        </div>
-    ',
-    'digital-delivery-3-q9-3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are primarily delivering your applications through external providers, either managed services or cloud services. This puts you behind your Digital Native peers. Depending on the service level agreements (SLAs) that you have with your managed service provider, you are some flexibilty to react to changing business requirements and to adjust the number of users up and down as needed, which is critical to digital business success. You will also have access to innovative features at a regular cadence. If you want to be truly agile and competitive, you need to move to a cloud-based delivery model.
-            </p>
-        </div>
-    ',
-    'digital-delivery-3-q9-4' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are mainly delivering your applications through a cloud-based delivery model. This puts you at par with your Digital Achiever peers. You have continous access to the latest features and functions, can scale dynamically based on business demands and enable collobaration and innovation for your employees and with your ecoystem partners. You should look at other aspects in digital business or digital design to improve your digital maturity.
-            </p>
-        </div>
-    ',
-
-    'question10' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2 font-bold text-dassault-blue-light">
-                Q10. Which statement best represents your organization\'s approach to adopting Cloud services for delivering IT services or applications?
-            </p>
-        </div>
-    ',
-
-    'digital-delivery-1-q10-1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are running all applications in-house. This puts you at par with your Digital Improver peers. To improve your digital delivery capabilities, you should consider more flexible delivery models like the cloud. Cloud-based delivery models enable you to create a better alignment with business demands, as they scale up and down as needed and don\'t require an upfront investment.
-            </p>
-        </div>
-    ',
-    'digital-delivery-1-q10-2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are running most of your applications in-house. This puts you at par with your Digital Improver peers. To improve your digital delivery capabilities, you should consider more flexible delivery models like the cloud. Cloud-based delivery models enable you to create a better alignment with business demands, as they scale up and down as needed and don\'t require an upfront investment.
-            </p>
-        </div>
-    ',
-    'digital-delivery-1-q10-3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are taking a best-fit approach as to where to place your applications and have both on-premise and cloud delivery capabilities. This puts you ahead of your Digital Improver peers. If you have a strong governance framework in place to guide your decisions about when to use the cloud and when not to use the cloud, you are on the right track. 
-            </p>
-        </div>
-    ',
-    'digital-delivery-1-q10-4' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You have a cloud-first strategy, which puts you well ahead of your Digital Improver peers. You should look at other aspects within digital business, digital design and digital delivery to improve your digital maturity. 
-            </p>
-        </div>
-    ',
-    'digital-delivery-1-q10-5' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You have a cloud-only strategy, which puts you well ahead of your Digital Improver peers. You should look at other aspects within digital business, digital design and digital delivery to improve your digital maturity. 
-            </p>
-        </div>
-    ',
-
-    'digital-delivery-2-q10-1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are running all applications in-house. This puts you behind with your Digital Achiever peers. To improve your digital delivery capabilities, you should consider more flexible delivery models like the cloud. Cloud-based delivery models enable you to create a better alignment with business demands, as they scale up and down as needed and don\'t require an upfront investment.
-            </p>
-        </div>
-    ',
-    'digital-delivery-2-q10-2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are running most of your applications in-house. This puts you behind with your Digital Achiever peers. To improve your digital delivery capabilities, you should consider more flexible delivery models like the cloud. Cloud-based delivery models enable you to create a better alignment with business demands, as they scale up and down as needed and don\'t require an upfront investment.
-            </p>
-        </div>
-    ',
-    'digital-delivery-2-q10-3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are taking a best-fit approach as to where to place your applications and have both on-premise and cloud delivery capabilities. This puts you at par with your Digital Achiever peers. If you have a strong governance framework in place to guide your decisions about when to use the cloud and when not to use the cloud, you are on the right track. 
-            </p>
-        </div>
-    ',
-    'digital-delivery-2-q10-4' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You have a cloud-first strategy, which puts you well ahead of your Digital Achiever peers. You should look at other aspects within digital business, digital design and digital delivery to improve your digital maturity. 
-            </p>
-        </div>
-    ',
-    'digital-delivery-2-q10-5' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You have a cloud-only strategy, which puts you well ahead of your Digital Achiever peers. You should look at other aspects within digital business, digital design and digital delivery to improve your digital maturity. 
-            </p>
-        </div>
-    ',
-
-    'digital-delivery-3-q10-1' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are running all applications in-house. This puts you far behind with your Digital Native peers. To improve your digital delivery capabilities, you should consider more flexible delivery models like the cloud. Cloud-based delivery models enable you to create a better alignment with business demands, as they scale up and down as needed and don\'t require an upfront investment.
-            </p>
-        </div>
-    ',
-    'digital-delivery-3-q10-2' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are running most of your applications in-house. This puts you far behind with your Digital Native peers. To improve your digital delivery capabilities, you should consider more flexible delivery models like the cloud. Cloud-based delivery models enable you to create a better alignment with business demands, as they scale up and down as needed and don\'t require an upfront investment.
-            </p>
-        </div>
-    ',
-    'digital-delivery-3-q10-3' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You are taking a best-fit approach as to where to place your applications and have both on-premise and cloud delivery capabilities. This puts you behind your Digital Native peers. If you have a strong governance framework in place to guide your decisions about when to use the cloud and when not to use the cloud, you are on the right track. 
-            </p>
-        </div>
-    ',
-    'digital-delivery-3-q10-4' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You have a cloud-first strategy, which puts you at par with your Digital Native peers. You should look at other aspects within digital business, digital design and digital delivery to improve your digital maturity. 
-            </p>
-        </div>
-    ',
-    'digital-delivery-3-q10-5' => '
-        <div class="clearfix">
-            <p class="w-4/5 ml-auto mb-2">
-                You have a cloud-only strategy, which puts you at par with your Digital Native peers. You should look at other aspects within digital business, digital design and digital delivery to improve your digital maturity. 
-            </p>
-        </div>
-    ',
-    
-
-    'conclusionintro' => '
-        <h2 class="w-4/5 ml-auto text-dassault-blue mb-6">CONCLUSION</h2>
-        <div class="clearfix">
-            <div class="w-1/5 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 25mm;"></div>
-            <p class="w-4/5 float-left mb-2">
-                Thank you for taking this digital assessment. This demonstrates your ambition to succeed in your digital transformation strategies and is a good starting point to set you apart from your peers. We hope you have been able to identify the weaknesses and strength in your approach, and have some advice to make progress and develop a competitive edge. If you want to know more about the role of cloud in digital transformation in the engineering and digital design space, please check out the following report: (link)
-            </p>
-        </div>
-    ',
-
-    'guidance' => '
-        <h2 class="w-4/5 ml-auto text-dassault-blue mb-6">Essential Guidance</h2>
-        <div class="clearfix">
-            <div class="w-4/5 ml-auto clearfix mb-2">
-                <div class="float-left rounded-full w-8 h-8 border border-grey-dark font-bold text-grey text-lg text-center mr-2 pt-1">1</div>
-                <p class="float-left w-5/6">
-                    You should focus on further developing a strategic roadmap for the evolution of your WAN. Assess the current status of your network, and where you want it to be in the future. Prepare a gradual migration path that leverages the existing infrastructure where possible. Hybrid architectures, cloud connectivity, local Internet break-outs and network virtualization should feature prominently on this roadmap.
-                </p>
+    'overall-3' => '
+        <div class="pb w-5/6 mx-auto">
+            <div class="h-1 overflow-hidden">
+                <h1 class="text-white">Overall</h1>
             </div>
-                
-        </div>
-        <div class="clearfix">
-            <div class="w-4/5 ml-auto clearfix mb-2">
-                <div class="float-left rounded-full w-8 h-8 border border-grey-dark font-bold text-grey text-lg text-center mr-2 pt-1">2</div>
-                <p class="float-left w-5/6">
-                    From an operational perspective the WAN is increasingly hampered by complexity, inefficiency and tedious processes which can make everyday tasks such as adding sites, updating policies or connecting to cloud services a real struggle. This prevents the network from delivering the desired business outcomes, like gaining agility, increasing productivity, and improving differentiation. Explore how centralization and automation can help you streamline your WAN operations.
-                </p>
+            <div class="flex items-start mb-4">
+                <img class="w-24 mr-4" src=":url" alt="">
+                <div class="flex-1">
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
+                    <h2 class="text-2xl leading-none font-black text-sap-blue">
+                        <span class="font-light">STAGE 3 - </span> Agile Transformer
+                    </h2>                    
+                </div>
             </div>
-                
+            <div class="flex items-start items-stretch">
+                <div class="w-1/2">
+                    <div class="pr-6">
+                        <p class="mb-3 font-bold leading-tight text-lg text-blackblack">
+                            The digital economy, international competition, and a need to be able to react to unforeseen forces, represent both challenges and opportunities for fast-growing start-up companies like yours.
+                        </p>
+                        <p class="mb-3 font-bold text-sap-blue">
+                            You have the potential to adapt to market forces much more quickly than other organizations like yours, as well as innovate more rapidly than larger more complex organizations. 
+                        </p>
+                        <p class="mb-3">
+                            Based on your responses to the agility measurement tool, IDC places your business at <span class="font-bold text-sap-blue">Stage 3</span> overall, and classes your organization as an <span class="font-bold text-sap-blue">Agile Transformer</span>. 
+                        </p>
+                        
+                    </div>
+                </div>
+                <div class="w-1/2">
+                    <div class="pl-6">
+                        <p class="mb-3">
+                            Your organization\'s agility journey is well underway, or you have a solid foundation from which to build ever greater agility and reactivity to change in the market and ways of doing business. 
+                        </p>
+                        <p class="mb-3">
+                            Focusing on making changes to the way you plan, manage people and processes, deal with suppliers and distributors, and use customer insight will have real and lasting impacts on being more adaptive and flexible. This will enable your business to seize opportunities and drive competitive advantage.
+                        </p>
+                        <p class="mb-3 italic text-sap-blue">
+                            IDC has provided you with a breakdown of your results to enable you to understand where you may still be behind in this process, as well as specific recommendations on what can be done to drive continued and successful change. 
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     ',
-    'guidance-q3-1-2' => '
-        <div class="clearfix">
-            <div class="w-4/5 ml-auto clearfix mb-2">
-                <div class="float-left rounded-full w-8 h-8 border border-grey-dark font-bold text-grey text-lg text-center mr-2 pt-1">3</div>
-                <p class="float-left w-5/6">
-                    SD-WAN has emerged as a solution that can integrate much of the above. The promise of SD-WAN is to deliver improved network and application performance, availability and visibility, particularly in a cloud environment, driving flexibility, while providing cost-effective bandwidth and reducing complexity. Start exploring today, if you haven\'t already, what benefits SD-WAN may or may not bring to your organization. 
-                </p>
+    'overall-4' => '
+        <div class="pb w-5/6 mx-auto">
+            <div class="h-1 overflow-hidden">
+                <h1 class="text-white">Overall</h1>
             </div>
-                
+            <div class="flex items-start mb-4">
+                <img class="w-24 mr-4" src=":url" alt="">
+                <div class="flex-1">
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
+                    <h2 class="text-2xl leading-none font-black text-sap-blue">
+                        <span class="font-light">STAGE 4 - </span> Agile Accelerator
+                    </h2>                    
+                </div>
+            </div>
+            <div class="flex items-start items-stretch">
+                <div class="w-1/2">
+                    <div class="pr-6">
+                        <p class="mb-3 font-bold leading-tight text-lg text-blackblack">
+                            The digital economy, international competition, and a need to be able to react to unforeseen forces, represent both challenges and opportunities for fast-growing start-up companies like yours.
+                        </p>
+                        <p class="mb-3 font-bold text-sap-blue">
+                            Organizations like yours can adapt and flex to meet changes in the market. This is especially true in comparison to larger, more complex organizations. 
+                        </p>
+                        <p class="mb-3">
+                            Based on your responses to the agility measurement tool, IDC places your business at <span class="font-bold text-sap-blue">Stage 4</span> overall, and classes your business as an <span class="font-bold text-sap-blue">Agile Accelerator</span>.
+                        </p>
+                        <p class="mb-3">
+                            Your organization\'s agility journey is very much advanced, but even greater levels of agility could be found if you focus on several key areas of improvement. 
+                        </p>
+                        
+                    </div>
+                </div>
+                <div class="w-1/2">
+                    <div class="pl-6">
+                        <p class="mb-3">
+                            For many, Stage 4 is one from which to continue to build agile practices and ways of doing business. Typically, Stage 4 organizations have defined information sharing processes and are well integrated between departments, customers, suppliers, and distributors. They also tend to have focused agile strategies, either within their employee-base, or as part of their planning activities.
+                        </p>
+                        <p class="mb-3">
+                            Despite your current success, focusing on making changes to the way you plan, manage people and processes, deal with suppliers and distributors, and use customer insight will have real and lasting impacts on being more adaptive and flexible. This will enable your business to seize opportunities and drive even greater levels of competitive advantage. 
+                        </p>
+                        <p class="mb-3 italic text-sap-blue">
+                            IDC has provided you with a breakdown of your results to enable you to understand where you may still be behind in this process, as well as specific recommendations on what can be done to achieve continued and successful change.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     ',
-    'guidance-q3-3-4' => '
-        <div class="clearfix">
-            <div class="w-4/5 ml-auto clearfix mb-2">
-                <div class="float-left rounded-full w-8 h-8 border border-grey-dark font-bold text-grey text-lg text-center mr-2 pt-1">3</div>
-                <p class="float-left w-5/6">
-                    SD-WAN has emerged as a solution that can integrate much of the above. The promise of SD-WAN is to deliver improved network and application performance, availability and visibility, particularly in a cloud environment, driving flexibility, while providing cost-effective bandwidth and reducing complexity. Build on your early deployments of SD-WAN, and start plotting a roadmap toward a more widespread use of network virtualization that can help you reap the benefits in terms of flexibility and efficiency
-                </p>
+    'overall-5' => '
+        <div class="pb w-5/6 mx-auto">
+            <div class="h-1 overflow-hidden">
+                <h1 class="text-white">Overall</h1>
             </div>
-                
+            <div class="flex items-start mb-4">
+                <img class="w-24 mr-4" src=":url" alt="">
+                <div class="flex-1">
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
+                    <h2 class="text-2xl leading-none font-black text-sap-blue">
+                        <span class="font-light">STAGE 5 - </span> Agile Disruptor
+                    </h2>                    
+                </div>
+            </div>
+            <div class="flex items-start items-stretch">
+                <div class="w-1/2">
+                    <div class="pr-6">
+                        <p class="mb-3 font-bold leading-tight text-lg text-blackblack">
+                            The digital economy, international competition, and a need to be able to react to unforeseen forces, represent both challenges and opportunities for fast-growing start-up companies like yours.
+                        </p>
+                        <p class="mb-3 font-bold text-sap-blue">
+                            Based on your responses to the agility measurement tool, IDC places your business at <span class="font-bold text-sap-blue">Stage 5</span> overall, and would refer to your business as an <span class="font-bold text-sap-blue">Agile Disruptor</span>. 
+                        </p>
+                        <p class="mb-3">
+                            Your organization\'s agility journey is very much advanced, and you are top of the table in terms of IDC\'s agility measurement score. This may be planned, or you simply created a business that addresses these principles. Either way, you have a solid foundation from which to build ever greater agility and reactivity to change in the market and ways of doing business.
+                        </p>
+                        <p class="mb-3">
+                            Many at Stage 5 have built a culture of agility into everything they do and have buy-in from the employee base, as well as suppliers, distributors, and customers. 
+                        </p>
+                    </div>
+                </div>
+                <div class="w-1/2">
+                    <div class="pl-6">
+                        <p class="mb-3">
+                            IDC refers to companies such as yours as Agile Disruptors because you are now able to drive change and disruption in the markets in which you operate. More specifically, you have the potential to influence the way others work with you and the way your customers purchase your goods and services. 
+                        </p>
+                        <p class="mb-3">
+                            But don\'t rest! Despite your success, continuing to make changes to the way you plan, manage people and processes, deal with suppliers and distributors, and use customer insight will have real and lasting impacts on being more adaptive and flexible. This will enable your business to seize even more opportunities and drive even greater levels of competitive advantage. If you do not, the competition will catch up with you and fast.
+                        </p>
+                        <p class="mb-3 italic text-sap-blue">
+                            IDC has provided you with a breakdown of your results so you can see if you are behind in any of the areas, along with some specific recommendations on what can be done to drive continued and successful change into the future. 
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     ',
-    'guidance-q3-5' => '
-        <div class="clearfix">
-            <div class="w-4/5 ml-auto clearfix mb-2">
-                <div class="float-left rounded-full w-8 h-8 border border-grey-dark font-bold text-grey text-lg text-center mr-2 pt-1">3</div>
-                <p class="float-left w-5/6">
-                    SD-WAN has emerged as a solution that can integrate much of the above. The promise of SD-WAN is to deliver improved network and application performance, availability and visibility, particularly in a cloud environment, driving flexibility, while providing cost-effective bandwidth and reducing complexity.Looking ahead, SD-WAN should go hand in hand with virtual network services . Explore how you can leverage SD-WAN as the launching pad of a more widespread use of network virtualization that can help you reap the benefits in terms of flexibility and efficiency
-                </p>
+    'strategic-planning-1' => '
+        <div class="pb w-5/6 mx-auto">
+            <div class="h-1 overflow-hidden">
+                <h1 class="text-white">Strategic Planning</h1>
             </div>
-                
+            <div class="flex items-start mb-4">
+                <img class="w-24 mr-4" src=":url" alt="">
+                <div class="flex-1">
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
+                    <h2 class="text-2xl leading-none font-black text-sap-blue">
+                        <span class="font-light">STAGE 1 - </span> Agile Beginner
+                    </h2>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p class="mb-2 font-bold leading-tight text-blackblack">
+                        In terms of strategic planning agility, IDC places your business at Stage 1. Below are some elements to think about, as well as recommendations on how you can improve this area of your business. 
+                    </p>
+                </div>
+            </div>
+            <div class="flex items-start items-stretch mt-6">
+                <div class="w-2/5">
+                    <div class="pr-6">
+                        <p class="mb-3">
+                            Typically, organizations at this stage involve only senior managers in this activity and plans and targets are based on past performance.
+                        </p>
+                        <p class="mb-3 font-bold text-sap-blue">
+                            IDC research shows that many organizations at this stage still view strategic planning as a reactive process. This means it is based on what has happened, rather than on what may happen in the future.
+                        </p>
+                        <p class="mb-3">
+                            Moving forward, you need to consider changes in the external business environment, as well as begin to make changes to the way you conduct and manage your planning process.
+                        </p>
+                    </div>
+                </div>
+                <div class="w-3/5">
+                    <div class="p-2 bg-grey-lighter">
+                        <h4 class="italic font-bold mb-4">Recommendations:</h4>
+                        <ol class="pl-6 text-sap-blue">
+                            <li class="mb-2">The speed of the digital economy requires regular planning sessions, not just once or twice a year.</li>
+                            <li class="mb-2">You should also involve people from all the key lines of business. So build a cross-function team of people to be part of your strategic planning.</li>
+                            <li class="mb-2">It is important to make sure that every single measure you use to assess the overall business performance (often referred to as Key Performance Indicators or KPIs) is aligned, so that all parts of the business are heading in the same direction.</li>
+                            <li class="mb-2">Investigate technologies that provide this overall view of performance. These can be very effective tools to keep the strategy up-to-date and ensure everyone is aligned and facing the same way.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    ',
+    'strategic-planning-2' => '
+        <div class="pb w-5/6 mx-auto">
+            <div class="h-1 overflow-hidden">
+                <h1 class="text-white">Strategic Planning</h1>
+            </div>
+            <div class="flex items-start mb-4">
+                <img class="w-24 mr-4" src=":url" alt="">
+                <div class="flex-1">
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
+                    <h2 class="text-2xl leading-none font-black text-sap-blue">
+                        <span class="font-light">STAGE 2 - </span> Agile Mover
+                    </h2>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p class="mb-2 font-bold leading-tight text-blackblack">
+                        In terms of strategic planning agility, IDC places your business at Stage 2. Below are some elements to think about, as well as recommendations on how you can improve this area of your business. 
+                    </p>
+                </div>
+            </div>
+            <div class="flex items-start items-stretch mt-6">
+                <div class="w-2/5">
+                    <div class="pr-6">
+                        <p class="mb-3">
+                            According to IDC research, more than half of all businesses are in the first 3 stages of strategic planning agility. 
+                        </p>
+                        <p class="mb-3 font-bold text-sap-blue">
+                            The biggest problem in this stage is typically the lack of alignment in the planning process across the different lines of business (finance, operations, HR, marketing, sales, etc.). When everyone is pulling in different directions, there is a tendency to waste resources. There is also a real difficulty in getting anything done.
+                        </p>
+                        <p class="mb-3">
+                            IDC has defined some key areas for you to focus on to make immediate and lasting improvements.
+                        </p>
+                    </div>
+                </div>
+                <div class="w-3/5">
+                    <div class="p-2 bg-grey-lighter">
+                        <h4 class="italic font-bold mb-4">Recommendations:</h4>
+                        <ol class="pl-6 text-sap-blue">
+                            <li class="mb-2">Having a single strategy across all business functions will align the entire organization towards an agreed direction of travel. To achieve this, you need to create a cross-functional board for strategic planning, one that involves Management, Finance, HR, Operations, Marketing, Sales and even wider business partners (where possible). </li>
+                            <li class="mb-2">This cross-domain board must not only use data based on past performance (such as sales, demand changes, and operations), but also market trends with a view on future opportunities that might appear on the horizon.</li>
+                            <li class="mb-2">There is also a need to invest in technologies that provide a total view of performance across the entire business. These could be ones that will eventually become better integrated and give your business a single view of what is happening day-to-day and better able to make predictions.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    ',
+    'strategic-planning-3' => '
+        <div class="pb w-5/6 mx-auto">
+            <div class="h-1 overflow-hidden">
+                <h1 class="text-white">Strategic Planning</h1>
+            </div>
+            <div class="flex items-start mb-4">
+                <img class="w-24 mr-4" src=":url" alt="">
+                <div class="flex-1">
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
+                    <h2 class="text-2xl leading-none font-black text-sap-blue">
+                        <span class="font-light">STAGE 3 - </span> Agile Transformer
+                    </h2>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p class="mb-2 font-bold leading-tight text-blackblack">
+                        In terms of strategic planning agility, IDC places your business at Stage 3. Below are some elements to think about, as well as recommendations on how you can improve this area of your business. 
+                    </p>
+                </div>
+            </div>
+            <div class="flex items-start items-stretch mt-6">
+                <div class="w-2/5">
+                    <div class="pr-6">
+                        <p class="mb-3">
+                            You are in the third stage of strategic planning and there is some work to be done here.
+                        </p>
+                        <p class="mb-3 font-bold text-sap-blue">
+                            Typically, organizations at this stage in their strategic planning agility have a single strategy across the entire company, but with a short-term focus. Only looking at monthly or quarterly sales figures could result in short-sighted executive thinking. With short-term thinking, you won\'t see disruption coming and the organization will not be able to effectively respond to it. 
+                        </p>
+                        <p class="mb-3">
+                            IDC has outlined some key areas of consideration that will help you improve strategic planning agility today.
+                        </p>
+                    </div>
+                </div>
+                <div class="w-3/5">
+                    <div class="p-2 bg-grey-lighter">
+                        <h4 class="italic font-bold mb-4">Recommendations:</h4>
+                        <ol class="pl-6 text-sap-blue">
+                            <li class="mb-2">Look at your standard measures and metrics, such as revenue, profit, and productivity. These are critical to provide an overview of the business, but they show a picture of past performance, rather than what will happen in the future. Businesses with much more agile strategic planning tend to use things like Customer Acquisition Cost (CAC) and Net Promoter Score (NPS) to show the direction of travel for their business. By looking at these, you may be able to better steer your organization towards sources of growth and away from declining markets, for example. </li>
+                            <li class="mb-2">Also look to invest in technologies that help you measure changes happening to the business in real time. Don\'t wait for weekly or monthly figures on marketing or sales activity. Look at patterns in sales over seasons or based on changes to products or deliveries, etc. These can be very effective data points to keep the strategy up-to-date and ensure everyone is aligned across different business functions. </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    ',
+    'strategic-planning-4' => '
+        <div class="pb w-5/6 mx-auto">
+            <div class="h-1 overflow-hidden">
+                <h1 class="text-white">Strategic Planning</h1>
+            </div>
+            <div class="flex items-start mb-4">
+                <img class="w-24 mr-4" src=":url" alt="">
+                <div class="flex-1">
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
+                    <h2 class="text-2xl leading-none font-black text-sap-blue">
+                        <span class="font-light">STAGE 4 - </span> Agile Accelerator
+                    </h2>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p class="mb-2 font-bold leading-tight text-blackblack">
+                        In terms of strategic planning agility, IDC places your business at Stage 4. Below are some elements to think about, as well as recommendations on how you can improve this area of your business. 
+                    </p>
+                </div>
+            </div>
+            <div class="flex items-start items-stretch mt-6">
+                <div class="w-2/5">
+                    <div class="pr-6">
+                        <p class="mb-3">
+                            Congratulations! IDC research shows that only a quarter of organizations are at this point of maturity in terms of their strategic planning agility. 
+                        </p>
+                        <p class="mb-3 font-bold text-sap-blue">
+                            Organizations at this stage are typically going through a constant planning process, rather than relying on yearly or quarterly planning cycles. Many are also involving all the various functions of the business in this process. 
+                        </p>
+                        <p class="mb-3">
+                            Moving to the most advanced stage of strategic planning requires laser focus on future opportunities, but there are some key things you can do to achieve this. 
+                        </p>
+                    </div>
+                </div>
+                <div class="w-3/5">
+                    <div class="p-2 bg-grey-lighter">
+                        <h4 class="italic font-bold mb-4">Recommendations:</h4>
+                        <ol class="pl-6 text-sap-blue">
+                            <li class="mb-2">Put in place a data strategy that integrates information from your own business and from external sources in real time. Invest in intelligent technologies that can transform vast amounts of data from customers, suppliers, market trends, and business metrics, into insights and actions. </li>
+                            <li class="mb-2">Look at becoming more disruptive! Get every single member of the company involved in the creation of ideas and their implementation, so that innovation and finding new ways of doing things and making money is part of the business culture. </li>
+                            <li class="mb-2">3. Make sure your people feel part of this overall strategy. You need to build ownership of the plan into every employee and ensure they feel part of the process, as well as part of the outcome.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    ',
+    'strategic-planning-5' => '
+        <div class="pb w-5/6 mx-auto">
+            <div class="h-1 overflow-hidden">
+                <h1 class="text-white">Strategic Planning</h1>
+            </div>
+            <div class="flex items-start mb-4">
+                <img class="w-24 mr-4" src=":url" alt="">
+                <div class="flex-1">
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
+                    <h2 class="text-2xl leading-none font-black text-sap-blue">
+                        <span class="font-light">STAGE 5 - </span> Agile Accelerator
+                    </h2>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p class="mb-2 font-bold leading-tight text-blackblack">
+                        In terms of strategic planning agility, IDC places your business at Stage 5. Below are some elements to think about, as well as recommendations on how you can improve this area of your business. 
+                    </p>
+                </div>
+            </div>
+            <div class="flex items-start items-stretch mt-6">
+                <div class="w-2/5">
+                    <div class="pr-6">
+                        <p class="mb-3">
+                            Congratulations, your business has a disruptive planning capability! Typically, disruptors have very short plan-to-execution lead times. By this we mean that they can change their direction (or element of the business) quickly and do so across all their functions.
+                        </p>
+                        <p class="mb-3 font-bold text-sap-blue">
+                            Strategic planning at this stage tends to be a continuous process that integrates changing dynamics in the market and can flex and evolve the business model accordingly.
+                        </p>
+                        <p class="mb-3">
+                            Staying ahead of the market requires highly adaptive planning in real time. IDC has outlined some key considerations you must continue to focus on. 
+                        </p>
+                    </div>
+                </div>
+                <div class="w-3/5">
+                    <div class="p-2 bg-grey-lighter">
+                        <h4 class="italic font-bold mb-4">Recommendations:</h4>
+                        <ol class="pl-6 text-sap-blue">
+                            <li class="mb-2">To future-proof your strategy, it is important to invest in intelligent technologies that integrate inputs from internal and external sources in real time. By this we mean, think of ways technology can create even better ways of understanding what may happen next and how this impacts the different departments of your business.</li>
+                            <li class="mb-2">As the pace of change in the digital economy accelerates, it is also important to drive an agile approach to changing strategy based on real-time information. This may be "microchanges" to marketing or changes to packaging, delivery, or wider product and service development.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    ',
+    'processes-1' => '
+        <div class="pb w-5/6 mx-auto">
+            <div class="h-1 overflow-hidden">
+                <h1 class="text-white">Processes</h1>
+            </div>
+            <div class="flex items-start mb-4">
+                <img class="w-24 mr-4" src=":url" alt="">
+                <div class="flex-1">
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
+                    <h2 class="text-2xl leading-none font-black text-sap-blue">
+                        <span class="font-light">STAGE 1 - </span> Agile Beginner
+                    </h2>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p class="mb-2 font-bold leading-tight text-blackblack">
+                        By assessing your approach, IDC concludes that you are at Stage 1 in your Process agility. IDC has provided some elements of consideration and recommendations specific to your business.
+                    </p>
+                    <p class="mb-2 font-bold leading-tight text-blackblack">
+                        A truly agile organization has processes (or "ways of working") that are both well-defined and flexible. As a result, they can accommodate unique customer requirements and fluctuations in demand, as well as drive efficiency and speed of execution.
+                    </p>
+                </div>
+            </div>
+            <div class="flex items-start items-stretch mt-6">
+                <div class="w-2/5">
+                    <div class="pr-6">
+                        <p class="mb-3">
+                            Typically, the biggest problem at this stage is lack of standardization across your business. And this can be damaging in the medium-term.
+                        </p>
+                        <p class="mb-3 font-bold text-sap-blue">
+                            The good news is that growing organizations and start-ups can create more integrated processes significantly faster than larger competitors. But you must act now. Below are some initial steps that you can take to improve your processes. 
+                        </p>
+                    </div>
+                </div>
+                <div class="w-3/5">
+                    <div class="p-2 bg-grey-lighter">
+                        <h4 class="italic font-bold mb-4">Recommendations:</h4>
+                        <ol class="pl-6 text-sap-blue">
+                            <li class="mb-2">Define the most important processes for your business performance and focus only on these. Making a focused start will ensure quick results and wider business buy-in. </li>
+                            <li class="mb-2">Assess the different processes that people across the organization follow to get to an outcome. Also, understand how these are different across the different functions (finance, HR, operations, distribution, etc.). This will show you where there are issues with alignment and where there are positive things you can replicate elsewhere.</li>
+                            <li class="mb-2">Map out the key steps across these processes. Focus on reducing the number of steps and documents required to achieve an outcome. Think about and explore some of the technologies you can use to make these processes more automated and easier to keep track of.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    ',
+    'processes-2' => '
+        <div class="pb w-5/6 mx-auto">
+            <div class="h-1 overflow-hidden">
+                <h1 class="text-white">Processes</h1>
+            </div>
+            <div class="flex items-start mb-4">
+                <img class="w-24 mr-4" src=":url" alt="">
+                <div class="flex-1">
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
+                    <h2 class="text-2xl leading-none font-black text-sap-blue">
+                        <span class="font-light">STAGE 2 - </span> Agile Mover
+                    </h2>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p class="mb-2 font-bold leading-tight text-blackblack">
+                        By assessing your approach, IDC concludes that you are at Stage 2 in your Process agility. IDC has provided some elements of consideration and recommendations specific to your business.
+                    </p>
+                    <p class="mb-2 font-bold leading-tight text-blackblack">
+                        A truly agile organization has processes (or "ways of working") that are both well-defined and flexible. As a result, they can accommodate unique customer requirements and fluctuations in demand, as well as drive efficiency and speed of execution.
+                    </p>
+                </div>
+            </div>
+            <div class="flex items-start items-stretch mt-6">
+                <div class="w-2/5">
+                    <div class="pr-6">
+                        <p class="mb-3">
+                            You\'ve taken the first step, but there is plenty of work to be done.
+                        </p>
+                        <p class="mb-3 font-bold text-sap-blue">
+                            Organizations at this stage have typically created some level of integration across business processes, but it is unlikely that these are fully standardized. As a result, they will be difficult to change and scale quickly (if at all). You may also struggle to share information across different departments and therefore different processes (possibly due to different systems and ways of doing things). 
+                        </p>
+                        <p class="mb-3">
+                            But there are some things you can do today to make your business far more agile.
+                        </p>
+                    </div>
+                </div>
+                <div class="w-3/5">
+                    <div class="p-2 bg-grey-lighter">
+                        <h4 class="italic font-bold mb-4">Recommendations:</h4>
+                        <ol class="pl-6 text-sap-blue">
+                            <li class="mb-2">Map out the most common places where processes meet other processes. Critically, where processes from one department or function meet another one. This is likely to be where problems are occurring and where you can make quick wins for the business. Identifying these is the first step in improving them. </li>
+                            <li class="mb-2">Make sure that different departments or functions are sharing data, specifically where those intersection points are happening. Do the different parts of the business understand what each other are doing? By focusing on this you can create much greater levels of agility, as well as anticipate changes in each other\'s ways of working.</li>
+                            <li class="mb-2">Create an approach to eliminate process bottlenecks at the intersections. Too few businesses take the time to find bottlenecks in all areas of the business, let alone try to eliminate them. Too often this is seen as operations, but many functions have the same issues and need to address them together. This is a quick win!</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    ',
+    'processes-3' => '
+        <div class="pb w-5/6 mx-auto">
+            <div class="h-1 overflow-hidden">
+                <h1 class="text-white">Processes</h1>
+            </div>
+            <div class="flex items-start mb-4">
+                <img class="w-24 mr-4" src=":url" alt="">
+                <div class="flex-1">
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
+                    <h2 class="text-2xl leading-none font-black text-sap-blue">
+                        <span class="font-light">STAGE 3 - </span> Agile Transformer
+                    </h2>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p class="mb-2 font-bold leading-tight text-blackblack">
+                        By assessing your approach, IDC concludes that you are at Stage 3 in your Process agility. IDC has provided some elements of consideration and recommendations specific to your business.
+                    </p>
+                    <p class="mb-2 font-bold leading-tight text-blackblack">
+                        A truly agile organization has processes (or "ways of working") that are both well-defined and flexible. As a result, they can accommodate unique customer requirements and fluctuations in demand, as well as drive efficiency and speed of execution.
+                    </p>
+                </div>
+            </div>
+            <div class="flex items-start items-stretch mt-6">
+                <div class="w-2/5">
+                    <div class="pr-6">
+                        <p class="mb-3">
+                            Keep going, you\'re at Stage 3 of process maturity and although you\'ve come a long way, there is still room for improvement. Addressing some key things will have big impacts on your business. 
+                        </p>
+                        <p class="mb-3 font-bold text-sap-blue">
+                            At this stage, most organizations have streamlined and standardized their business processes, but the speed of change in the digital economy requires business processes that can continuously adapt. 
+                        </p>
+                        <p class="mb-3">
+                            Here are some ideas to help drive agility in processes within your organization:
+                        </p>
+                    </div>
+                </div>
+                <div class="w-3/5">
+                    <div class="p-2 bg-grey-lighter">
+                        <h4 class="italic font-bold mb-4">Recommendations:</h4>
+                        <ol class="pl-6 text-sap-blue">
+                            <li class="mb-2">The first step towards adaptability is automation. This releases people from repetitive tasks to focus on higher value activities. Look at the processes within your organization that could be automated or at the very least streamlined. This will enable people to work on value-adding activities, such as customer engagement, innovation, or improvements. The business will also become much more adaptable to changes. In short, agility leads to even better ways of dealing with change.</li>
+                            <li class="mb-2">Evaluate how you can automate processes to improve the flow of information across the business. Making certain processes more digital means you can capture data that may lead to even more improvements. Things you didn\'t know were problems become obvious and you can address them more easily. Similarly, you can spot opportunities better and act on them.</li>
+                            <li class="mb-2">Develop process charts that could help you understand performance against certain key metrics (measurement of the business). Better still, make these charts visual, so people can see patterns and understand them more easily. This could be things like delivery times, or the delays caused by failures in processes. Share these measurements with the wider business, including all employees, not just management.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    ',
+    'processes-4' => '
+        <div class="pb w-5/6 mx-auto">
+            <div class="h-1 overflow-hidden">
+                <h1 class="text-white">Processes</h1>
+            </div>
+            <div class="flex items-start mb-4">
+                <img class="w-24 mr-4" src=":url" alt="">
+                <div class="flex-1">
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
+                    <h2 class="text-2xl leading-none font-black text-sap-blue">
+                        <span class="font-light">STAGE 4 - </span> Agile Accelerator
+                    </h2>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p class="mb-2 font-bold leading-tight text-blackblack">
+                        By assessing your approach, IDC concludes that you are at Stage 4 in your Process agility. IDC has provided some elements of consideration and recommendations specific to your business.
+                    </p>
+                    <p class="mb-2 font-bold leading-tight text-blackblack">
+                        A truly agile organization has processes (or "ways of working") that are both well-defined and flexible. As a result, they can accommodate unique customer requirements and fluctuations in demand, as well as drive efficiency and speed of execution.
+                    </p>
+                </div>
+            </div>
+            <div class="flex items-start items-stretch mt-6">
+                <div class="w-2/5">
+                    <div class="pr-6">
+                        <p class="mb-3">
+                            Organizations at this stage tend to have end-to-end automated business processes, allowing them to manage the flow of information across the whole business. This also enables them to make key decisions based on that information. 
+                        </p>
+                        <p class="mb-3 font-bold text-sap-blue">
+                            But there is always room for improvement and always the need to drive even greater competitive advantage. Delivering "innovation at scale" (constantly turning new ideas into actual business processes) will move you to the final stage. 
+                        </p>
+                    </div>
+                </div>
+                <div class="w-3/5">
+                    <div class="p-2 bg-grey-lighter">
+                        <h4 class="italic font-bold mb-4">Recommendations:</h4>
+                        <ol class="pl-6 text-sap-blue">
+                            <li class="mb-2">If you are not already doing so, assess your critical processes in relation to external factors (seasonal peaks, customer order times, external weather data, for example). Ensure that this data is not held within each of the business silos (operations, sales, marketing, distribution, etc.) but communicated across the business to be used by everyone.</li>
+                            <li class="mb-2">Explore the use of machine learning algorithms that analyze these data sets and provide next best actions in your various business processes. This may seem like a giant leap, but many technology partners will be able to provide this as a proof of concept for you to explore. Focus on one or two parts of the business and see what impact this can have. </li>
+                            <li class="mb-2">Develop process visualization charts (ways of providing visual representations of the processes happening in your business). This may highlight performance issues and where quick wins could be made. Share these charts and metrics with the wider business, including all employees, not just management.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    ',
+    'processes-5' => '
+        <div class="pb w-5/6 mx-auto">
+            <div class="h-1 overflow-hidden">
+                <h1 class="text-white">Processes</h1>
+            </div>
+            <div class="flex items-start mb-4">
+                <img class="w-24 mr-4" src=":url" alt="">
+                <div class="flex-1">
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
+                    <h2 class="text-2xl leading-none font-black text-sap-blue">
+                        <span class="font-light">STAGE 5 - </span> Agile Accelerator
+                    </h2>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p class="mb-2 font-bold leading-tight text-blackblack">
+                        By assessing your approach, IDC concludes that you are at Stage 5 in your Process agility. IDC has provided some elements of consideration and recommendations specific to your business.
+                    </p>
+                    <p class="mb-2 font-bold leading-tight text-blackblack">
+                        A truly agile organization has processes (or "ways of working") that are both well-defined and flexible. As a result, they can accommodate unique customer requirements and fluctuations in demand, as well as drive efficiency and speed of execution.
+                    </p>
+                </div>
+            </div>
+            <div class="flex items-start items-stretch mt-6">
+                <div class="w-2/5">
+                    <div class="pr-6">
+                        <p class="mb-3">
+                            You have made it to the ultimate stage of process agility. You have developed flexible, intelligent, and integrated business processes, but this is where it gets very interesting. 
+                        </p>
+                        <p class="mb-3 font-bold text-sap-blue">
+                            Although you have developed agile processes within your own organization, the next level of benefit will come from connecting these processes to your suppliers, distributors, partners, and customers. IDC has outlined some key recommendation to build even greater levels of agility. 
+                        </p>
+                    </div>
+                </div>
+                <div class="w-3/5">
+                    <div class="p-2 bg-grey-lighter">
+                        <h4 class="italic font-bold mb-4">Recommendations:</h4>
+                        <ol class="pl-6 text-sap-blue">
+                            <li class="mb-2">Develop an overview of your strategic partners, suppliers, and customers and which of your processes would benefit from even greater integration into theirs. This is about creating even more agility by being able to move with these partners as you react to changes in the business environment. </li>
+                            <li class="mb-2">Begin to innovate with your partners, suppliers, and customers. Create an environment where you share early ideas and work together to create new products and services and ways of doing business. Also, making sure this approach is agile and can move quickly as the demands of the environment change. </li>
+                            <li class="mb-2">Develop a combined technology strategy with your ecosystem. This will be essential to making this happen and will create even closer links between the organizations involved.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    ',
+    'customer-relationships-1' => '
+        <div class="pb w-5/6 mx-auto">
+            <div class="h-1 overflow-hidden">
+                <h1 class="text-white">Customer Relationships</h1>
+            </div>
+            <div class="flex items-start mb-4">
+                <img class="w-24 mr-4" src=":url" alt="">
+                <div class="flex-1">
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
+                    <h2 class="text-2xl leading-none font-black text-sap-blue">
+                        <span class="font-light">STAGE 1 - </span> Agile Beginner
+                    </h2>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p class="mb-2 font-bold leading-tight text-blackblack">
+                        In terms of Customer Relationship agility, IDC places your business at Stage 1. As a result, IDC has created a set of key recommendations specific to your business.
+                    </p>
+                    <p class="mb-2 font-bold leading-tight text-blackblack">
+                        Customer-facing employees are the best placed to understand what customers want and how this is changing. Agile organizations are very good at feeding this information back into the business, enabling product and service delivery to respond quickly.
+                    </p>
+                </div>
+            </div>
+            <div class="flex items-start items-stretch mt-6">
+                <div class="w-2/5">
+                    <div class="pr-6">
+                        <p class="mb-3">
+                            In the digital economy, customer requirements change constantly and organizations at Stage 1 tend be slow at managing this change.
+                        </p>
+                        <p class="mb-3 font-bold text-sap-blue">
+                            Adapting to changing needs is possible if you address some of these key areas, and quickly.
+                        </p>
+                    </div>
+                </div>
+                <div class="w-3/5">
+                    <div class="p-2 bg-grey-lighter">
+                        <h4 class="italic font-bold mb-4">Recommendations:</h4>
+                        <ol class="pl-6 text-sap-blue">
+                            <li class="mb-2">Start collecting data on different customer requirements. This could be demands by region or customer-type, or variations in season or by external factors. This is the first step in becoming more customer-centric. It is essential to building a foundation for greater agility and will enable you to respond more easily to customers in the future./li>
+                            <li class="mb-2">Once you have enough data, perform a financial assessment on the extra cost and effort required to add those variations to your product/service portfolio. You may feel that there is not enough demand to make these changes, but you need to understand this first, in order to make that decision. Also understand how quickly you could make these changes and whether you could do this for many customers, or just a few. </li>
+                            <li class="mb-2">Identify the critical touchpoints along the customer journey to make sure your business is outperforming competitors. How do people buy and what is their experience in this? Start asking customers for feedback and start acting on it and communicating these actions back to the customer base. You will be surprised how impactful this is! </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    ',
+    'customer-relationships-2' => '
+        <div class="pb w-5/6 mx-auto">
+            <div class="h-1 overflow-hidden">
+                <h1 class="text-white">Customer Relationships</h1>
+            </div>
+            <div class="flex items-start mb-4">
+                <img class="w-24 mr-4" src=":url" alt="">
+                <div class="flex-1">
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
+                    <h2 class="text-2xl leading-none font-black text-sap-blue">
+                        <span class="font-light">STAGE 2 - </span> Agile Mover
+                    </h2>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p class="mb-2 font-bold leading-tight text-blackblack">
+                        In terms of Customer Relationship agility, IDC places your business at Stage 2. As a result, IDC has created a set of key recommendations specific to your business.
+                    </p>
+                    <p class="mb-2 font-bold leading-tight text-blackblack">
+                        Customer-facing employees are the best placed to understand what customers want and how this is changing. Agile organizations are very good at feeding this information back into the business, enabling product and service delivery to respond quickly.
+                    </p>
+                </div>
+            </div>
+            <div class="flex items-start items-stretch mt-6">
+                <div class="w-2/5">
+                    <div class="pr-6">
+                        <p class="mb-3">
+                            You are in the second stage of customer relationship agility. Your approach might be a little slow in reacting to customer needs. Typically, organizations at this stage have some level of ability in adapting products and services to specific customer requirements. At the very least they can adjust processes to meet changing customer requirements. Often, however, the time to respond is too long and this may result in your falling behind your competition.
+                        </p>
+                        <p class="mb-3 font-bold text-sap-blue">
+                            So, what can be done? IDC has provided some key recommendations for improving customer relationship agility. 
+                        </p>
+                    </div>
+                </div>
+                <div class="w-3/5">
+                    <div class="p-2 bg-grey-lighter">
+                        <h4 class="italic font-bold mb-4">Recommendations:</h4>
+                        <ol class="pl-6 text-sap-blue">
+                            <li class="mb-2">Understand the balance between standard products and services and customized products and services. You may have a volume-based business, but ask yourself if this is a sustainable business model for the future? Create a portfolio of the most profitable products and services and align these to common customer requirements.</li>
+                            <li class="mb-2">Once you have enough data, perform a financial assessment on the extra cost and effort required to add those variations to your product/service portfolio. You may feel that there is not enough demand to make these changes, but you need to understand this first in order to make that decision.</li>
+                            <li class="mb-2">In parallel, it is important to create a central database of customer information that is used to provide visibility of customer needs to the people that work in the front and back office. Start asking customers for feedback and start acting on it.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    ',
+    'customer-relationships-3' => '
+        <div class="pb w-5/6 mx-auto">
+            <div class="h-1 overflow-hidden">
+                <h1 class="text-white">Customer Relationships</h1>
+            </div>
+            <div class="flex items-start mb-4">
+                <img class="w-24 mr-4" src=":url" alt="">
+                <div class="flex-1">
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
+                    <h2 class="text-2xl leading-none font-black text-sap-blue">
+                        <span class="font-light">STAGE 3 - </span> Agile Transformer
+                    </h2>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p class="mb-2 font-bold leading-tight text-blackblack">
+                        In terms of Customer Relationship agility, IDC places your business at Stage 3. As a result, IDC has created a set of key recommendations specific to your business.
+                    </p>
+                    <p class="mb-2 font-bold leading-tight text-blackblack">
+                        Customer-facing employees are the best placed to understand what customers want and how this is changing. Agile organizations are very good at feeding this information back into the business, enabling product and service delivery to respond quickly.
+                    </p>
+                </div>
+            </div>
+            <div class="flex items-start items-stretch mt-6">
+                <div class="w-2/5">
+                    <div class="pr-6">
+                        <p class="mb-3">
+                            You are in the third stage of customer agility and more than likely making significant improvements in this area. 
+                        </p>
+                        <p class="mb-3 font-bold text-sap-blue">
+                            Typically, organizations at this stage already have a central database of customer insight and they use it to make changes to the business based on evolving customer needs. Next, you need to be able to start responding to customer requirements as they happen. Or as IDC terms it, in real time.
+                        </p>
+                    </div>
+                </div>
+                <div class="w-3/5">
+                    <div class="p-2 bg-grey-lighter">
+                        <h4 class="italic font-bold mb-4">Recommendations:</h4>
+                        <ol class="pl-6 text-sap-blue">
+                            <li class="mb-2">In order to align the organization to respond to customer needs faster, IDC recommends that new measures should be adopted across the organization. These include things like Net Promoter Score (NPS). This is a way of assessing if a customer would recommend your business to other people. This will set a new focus on delivering and exceeding customer expectations and enable you to collect more insight on what is happening, in order to make improvements.</li>
+                            <li class="mb-2">Customer agility also demands that you create cross-domain teams that are focused on customer outcomes and improving customer experience and loyalty. Areas of the business that feel they are not customer-facing need to become part of that process and understand that they can impact the customer experience through their own actions. This will also engage employees in their work.</li>
+                            <li class="mb-2">Create dynamic dashboards surfacing key insights on the top customer trends. Communicate these trends across the wider business (and where possible to suppliers and distributors). Gather feedback and ideas on where your business can take advantage of this insight. </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    ',
+    'customer-relationships-4' => '
+        <div class="pb w-5/6 mx-auto">
+            <div class="h-1 overflow-hidden">
+                <h1 class="text-white">Customer Relationships</h1>
+            </div>
+            <div class="flex items-start mb-4">
+                <img class="w-24 mr-4" src=":url" alt="">
+                <div class="flex-1">
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
+                    <h2 class="text-2xl leading-none font-black text-sap-blue">
+                        <span class="font-light">STAGE 4 - </span> Agile Accelerator
+                    </h2>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p class="mb-2 font-bold leading-tight text-blackblack">
+                        In terms of Customer Relationship agility, IDC places your business at Stage 4. As a result, IDC has created a set of key recommendations specific to your business.
+                    </p>
+                    <p class="mb-2 font-bold leading-tight text-blackblack">
+                        Customer-facing employees are the best placed to understand what customers want and how this is changing. Agile organizations are very good at feeding this information back into the business, enabling product and service delivery to respond quickly.
+                    </p>
+                </div>
+            </div>
+            <div class="flex items-start items-stretch mt-6">
+                <div class="w-2/5">
+                    <div class="pr-6">
+                        <p class="mb-3">
+                            You have been placed at Stage 4 in your customer relationship agility. This is an advanced stage of maturity and you are on the right track. Typically, organizations at this stage are successful at responding to customer requirements in an agile way. But the pace of change in the digital economy requires real-time delivery of products, services, and experiences.
+                        </p>
+                        <p class="mb-3 font-bold text-sap-blue">
+                            As a result, there is still more that can be done to make even greater improvements. 
+                        </p>
+                    </div>
+                </div>
+                <div class="w-3/5">
+                    <div class="p-2 bg-grey-lighter">
+                        <h4 class="italic font-bold mb-4">Recommendations:</h4>
+                        <ol class="pl-6 text-sap-blue">
+                            <li class="mb-2">Making changes to products and services in real time (or because customers have requested them at the point of purchase) is a key feature of agility. Many large enterprise organizations are enabling customers to determine many additional features of the products and services they consume. This includes manufacturers as well as service providers. Moving to the next stage requires intelligent systems that analyze historic data to anticipate future customer needs, as well as manage this through finance, operations, and customer services.</li>
+                            <li class="mb-2">This should also be based on an integrated customer platform that transforms real-time data into automatic alerts and actions across the business. This requires an integrated approach to delivering on customer requirements and much better communication across your entire business.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    ',
+    'customer-relationships-5' => '
+        <div class="pb w-5/6 mx-auto">
+            <div class="h-1 overflow-hidden">
+                <h1 class="text-white">Customer Relationships</h1>
+            </div>
+            <div class="flex items-start mb-4">
+                <img class="w-24 mr-4" src=":url" alt="">
+                <div class="flex-1">
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
+                    <h2 class="text-2xl leading-none font-black text-sap-blue">
+                        <span class="font-light">STAGE 5 - </span> Agile Accelerator
+                    </h2>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p class="mb-2 font-bold leading-tight text-blackblack">
+                        In terms of Customer Relationship agility, IDC places your business at Stage 5. As a result, IDC has created a set of key recommendations specific to your business.
+                    </p>
+                    <p class="mb-2 font-bold leading-tight text-blackblack">
+                        Customer-facing employees are the best placed to understand what customers want and how this is changing. Agile organizations are very good at feeding this information back into the business, enabling product and service delivery to respond quickly.
+                    </p>
+                </div>
+            </div>
+            <div class="flex items-start items-stretch mt-6">
+                <div class="w-2/5">
+                    <div class="pr-6">
+                        <p class="mb-3">
+                            You are at Stage 5 in your customer relationship agility. 
+                        </p>
+                        <p class="mb-3 font-bold text-sap-blue">
+                            Customer requirements are the central feature of business objectives: both reacting to change and proactively challenging needs. Organizations at this stage in their customer relationships are making changes on a continuous basis and can implement these quickly and accurately.
+                        </p>
+                        <p class="mb-3">
+                            While you may have reached the most advanced stage, this is no time to relax or take your eye off the ball. There may be more that you can do.
+                        </p>
+                    </div>
+                </div>
+                <div class="w-3/5">
+                    <div class="p-2 bg-grey-lighter">
+                        <h4 class="italic font-bold mb-4">Recommendations:</h4>
+                        <ol class="pl-6 text-sap-blue">
+                            <li class="mb-2">Many large organizations are enabling customers to determine additional features of the products and services they consume. Understand how you can create more choice and customer-facing options that set you apart from the competition. This does not mean overcomplicating things. You can use intelligent systems that analyze historic data to anticipate future customer needs. </li>
+                            <li class="mb-2">This should also be based on an integrated customer platform that transforms real-time data into automatic alerts and actions across front and back office. This requires an integrated approach to delivering on customer requirements and much better communication across your entire business.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    ',
+    'suppliers-distributors-1' => '
+        <div class="pb w-5/6 mx-auto">
+            <div class="h-1 overflow-hidden">
+                <h1 class="text-white">Suppliers and Distributors</h1>
+            </div>
+            <div class="flex items-start mb-4">
+                <img class="w-24 mr-4" src=":url" alt="">
+                <div class="flex-1">
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
+                    <h2 class="text-2xl leading-none font-black text-sap-blue">
+                        <span class="font-light">STAGE 1 - </span> Agile Beginner
+                    </h2>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p class="mb-2 font-bold leading-tight text-blackblack">
+                        Based on the results you provided, you are at Stage 1 when it comes to measuring the agility in the way you work with suppliers and distributors. IDC has provided some elements of consideration and recommendations specific to your stage of agility below.
+                    </p>
+                    <p class="mb-2 font-bold leading-tight text-blackblack">
+                        Agile organizations can scale operations (up or down) to meet fluctuations in demand. Leveraging your suppliers and partners to provide instant scale is an art that must be mastered in order to become a truly agile business.
+                    </p>
+                </div>
+            </div>
+            <div class="flex items-start items-stretch mt-6">
+                <div class="w-2/5">
+                    <div class="pr-6">
+                        <p class="mb-3">
+                            Organizations at this stage typically have very transactional relationships with their suppliers and distributors. As a result, changes made with suppliers often take time to implement and cooperation is focused more on the contract, rather than on providing feedback and finding flexibility. Similarly, relationships with distributors are about providing what they demand or telling them what you have, rather than working with them in a form of partnership. 
+                        </p>
+                        <p class="mb-3 font-bold text-sap-blue">
+                            But don\'t panic. Small changes can make big differences at this stage in your agility journey.
+                        </p>
+                    </div>
+                </div>
+                <div class="w-3/5">
+                    <div class="p-2 bg-grey-lighter">
+                        <h4 class="italic font-bold mb-4">Recommendations:</h4>
+                        <ol class="pl-6 text-sap-blue">
+                            <li class="mb-2">Rethink the relationship with your suppliers and open them up to more information sharing and discussions around improvements. This will lead to understanding how you can work more flexibly together as partners in order to react to changing market dynamics. </li>
+                            <li class="mb-2">Gather and provide feedback but try not to focus only on process. Instead focus it on how cooperation could be improved to everyone\'s advantage. </li>
+                            <li class="mb-2">Create new channels for supplier communication and a database with known and existing challenges. This can be the source of projects that focus on making things better together, rather than individually.</li>
+                            <li class="mb-2">Focus on streamlining frequent challenges and work with your suppliers and distributors to establish some sort of processes and policies to reduce reaction lag. By this we mean the delay from identifying an issue to dealing with it. Reducing this (and potentially anticipating issues before them become concerns) is a key path to agility.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    ',
+    'suppliers-distributors-2' => '
+        <div class="pb w-5/6 mx-auto">
+            <div class="h-1 overflow-hidden">
+                <h1 class="text-white">Suppliers and Distributors</h1>
+            </div>
+            <div class="flex items-start mb-4">
+                <img class="w-24 mr-4" src=":url" alt="">
+                <div class="flex-1">
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
+                    <h2 class="text-2xl leading-none font-black text-sap-blue">
+                        <span class="font-light">STAGE 2 - </span> Agile Mover
+                    </h2>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p class="mb-2 font-bold leading-tight text-blackblack">
+                        Based on the results you provided, you are at Stage 2 when it comes to measuring the agility in the way you work with suppliers and distributors. IDC has provided some elements of consideration and recommendations specific to your stage of agility below.
+                    </p>
+                    <p class="mb-2 font-bold leading-tight text-blackblack">
+                        Agile organizations can scale operations (up or down) to meet fluctuations in demand. Leveraging your suppliers and partners to provide instant scale is an art that must be mastered in order to become a truly agile business.
+                    </p>
+                </div>
+            </div>
+            <div class="flex items-start items-stretch mt-6">
+                <div class="w-2/5">
+                    <div class="pr-6">
+                        <p class="mb-3">
+                            Organizations at this stage may be communicating regularly with suppliers and distributors, but it is often transactional and one dimensional. Marginal improvements to issues may happen, but there is limited structure to this, and it happens irregularly. Very few issues and concerns are formally captured to ensure they are dealt with. 
+                        </p>
+                        <p class="mb-3 font-bold text-sap-blue">
+                            Another common feature is that minimal flexibility has been built into the relationship. Speed of change is largely based on the type of change requested, with easier changes handled locally, without a uniform approach across the entire business.
+                        </p>
+                        <p class="mb-3">
+                            But do not panic. Small changes can make big differences at this stage.
+                        </p>
+                    </div>
+                </div>
+                <div class="w-3/5">
+                    <div class="p-2 bg-grey-lighter">
+                        <h4 class="italic font-bold mb-4">Recommendations:</h4>
+                        <ol class="pl-6 text-sap-blue">
+                            <li class="mb-2">Start by moving from irregular information sharing with suppliers and distributors, to one of standardized touch points and a timetable for exchange. Be the one leading the communication of business requirements and the need for flexibility. Be the example of how you want partners to behave and be clear on what you want from the relationship.</li>
+                            <li class="mb-2">Create policies and processes to increase information and insight sharing with partners involving relevant departments and stakeholders.</li>
+                            <li class="mb-2">Design frequent review points to anticipate future problems and streamline existing bottlenecks. Show the suppliers and distributors that they are central to your business and that your future is together. </li>
+                            <li class="mb-2">Investigate their ability to be agile, as well as their plans to become more flexible. You will learn from them! Share your intension and gather feedback on their reaction to it.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    ',
+    'suppliers-distributors-3' => '
+        <div class="pb w-5/6 mx-auto">
+            <div class="h-1 overflow-hidden">
+                <h1 class="text-white">Suppliers and Distributors</h1>
+            </div>
+            <div class="flex items-start mb-4">
+                <img class="w-24 mr-4" src=":url" alt="">
+                <div class="flex-1">
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
+                    <h2 class="text-2xl leading-none font-black text-sap-blue">
+                        <span class="font-light">STAGE 3 - </span> Agile Transformer
+                    </h2>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p class="mb-2 font-bold leading-tight text-blackblack">
+                        Based on the results you provided, you are at Stage 3 when it comes to measuring the agility in the way you work with suppliers and distributors. IDC has provided some elements of consideration and recommendations specific to your stage of agility below.
+                    </p>
+                    <p class="mb-2 font-bold leading-tight text-blackblack">
+                        Agile organizations can scale operations (up or down) to meet fluctuations in demand. Leveraging your suppliers and partners to provide instant scale is an art that must be mastered in order to become a truly agile business.
+                    </p>
+                </div>
+            </div>
+            <div class="flex items-start items-stretch mt-6">
+                <div class="w-2/5">
+                    <div class="pr-6">
+                        <p class="mb-3">
+                            Organizations at Stage 3 in their supplier and distributor agility are typically making some improvements and adjustments to their relationships and the way the work. 
+                        </p>
+                        <p class="mb-3">
+                            Stage 3 is often the most difficult time, when an organization is making the biggest changes and placing agility at the center of how they work with others. 
+                        </p>
+                        <p class="mb-3 font-bold text-sap-blue">
+                            A common feature is that while speed of change is helped by frequent review points, reacting to this can still be slow. As a result, change may be based on what has happened, rather than on anticipating market dynamics in the future. 
+                        </p>
+                        <p class="mb-3">
+                            In response, IDC has identified some key recommendations to address.
+                        </p>
+                    </div>
+                </div>
+                <div class="w-3/5">
+                    <div class="p-2 bg-grey-lighter">
+                        <h4 class="italic font-bold mb-4">Recommendations:</h4>
+                        <ol class="pl-6 text-sap-blue">
+                            <li class="mb-2">Move past the regular interaction and create an open informational exchange between your suppliers and your team to manage challenges and seek common opportunities.</li>
+                            <li class="mb-2">Take the first leap into real integration, starting (if you have not already) with integrating planning insights and data from demand cycles and seasonal inputs, for example. </li>
+                            <li class="mb-2">Open a channel of communication with your distributor and their customers, or with your direct customers. Involve your suppliers in these conversations.</li>
+                            <li class="mb-2">Share demand planning with suppliers to show where and when there could be changes in demand and begin sharing your intention to become more flexible and agile. Be upfront with your intention to be a truly agile business and get them onboard with your roadmap.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    ',
+    'suppliers-distributors-4' => '
+        <div class="pb w-5/6 mx-auto">
+            <div class="h-1 overflow-hidden">
+                <h1 class="text-white">Suppliers and Distributors</h1>
+            </div>
+            <div class="flex items-start mb-4">
+                <img class="w-24 mr-4" src=":url" alt="">
+                <div class="flex-1">
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
+                    <h2 class="text-2xl leading-none font-black text-sap-blue">
+                        <span class="font-light">STAGE 4 - </span> Agile Accelerator
+                    </h2>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p class="mb-2 font-bold leading-tight text-blackblack">
+                        Based on the results you provided, you are at Stage 4 when it comes to measuring the agility in the way you work with suppliers and distributors. IDC has provided some elements of consideration and recommendations specific to your stage of agility below.
+                    </p>
+                    <p class="mb-2 font-bold leading-tight text-blackblack">
+                        Agile organizations can scale operations (up or down) to meet fluctuations in demand. Leveraging your suppliers and partners to provide instant scale is an art that must be mastered in order to become a truly agile business.
+                    </p>
+                </div>
+            </div>
+            <div class="flex items-start items-stretch mt-6">
+                <div class="w-2/5">
+                    <div class="pr-6">
+                        <p class="mb-3">
+                            You are at Stage 4. This is an advanced stage of maturity in terms of supplier and distributor agility. You have made great progress. 
+                        </p>
+                        <p class="mb-3 font-bold text-sap-blue">
+                            Organizations at Stage 4 are typically sharing a lot of relevant data with their supplier and distributor network. As a result, agility and reaction times are greatly improved. For many, built-in flexibility and agility can respond to demand cycles and business conditions and shared information is used to plan flexibly around operations.
+                        </p>
+                        <p class="mb-3">
+                            But more can be done. IDC has provided some specific recommendations so that working with suppliers and distributors can support even greater agility. 
+                        </p>
+                    </div>
+                </div>
+                <div class="w-3/5">
+                    <div class="p-2 bg-grey-lighter">
+                        <h4 class="italic font-bold mb-4">Recommendations:</h4>
+                        <ol class="pl-6 text-sap-blue">
+                            <li class="mb-2">Integrated planning sessions and the use of analytics tools can help to project and incorporate fluctuations in the market. This will help your suppliers be prepared to support you when needed. This will also ensure your distributors understand when and what is coming down the line. </li>
+                            <li class="mb-2">At this level, quicker reaction times for distributors are achieved based on constant feedback and should also be based on planning insights.</li>
+                            <li class="mb-2">You may still need to fine tune and enable channels of communication and ensure the whole business is feeding and receiving this insight. </li>
+                            <li class="mb-2">Measure, improve, and pursue a continuous information loop that involves the entirety of the supply and distribution chain. Invest in policies and tools that would allow real-time reaction. This is the means of improving customer experience and minimizing disruption in order to continue to drive competitive advantage. </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    ',
+    'suppliers-distributors-5' => '
+        <div class="pb w-5/6 mx-auto">
+            <div class="h-1 overflow-hidden">
+                <h1 class="text-white">Suppliers and Distributors</h1>
+            </div>
+            <div class="flex items-start mb-4">
+                <img class="w-24 mr-4" src=":url" alt="">
+                <div class="flex-1">
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
+                    <h2 class="text-2xl leading-none font-black text-sap-blue">
+                        <span class="font-light">STAGE 5 - </span> Agile Accelerator
+                    </h2>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p class="mb-2 font-bold leading-tight text-blackblack">
+                        Based on the results you provided, you are at Stage 5 when it comes to measuring the agility in the way you work with suppliers and distributors. IDC has provided some elements of consideration and recommendations specific to your stage of agility below.
+                    </p>
+                    <p class="mb-2 font-bold leading-tight text-blackblack">
+                        Agile organizations can scale operations (up or down) to meet fluctuations in demand. Leveraging your suppliers and partners to provide instant scale is an art that must be mastered in order to become a truly agile business.
+                    </p>
+                </div>
+            </div>
+            <div class="flex items-start items-stretch mt-6">
+                <div class="w-2/5">
+                    <div class="pr-6">
+                        <p class="mb-3">
+                            You are at Stage 5 and top of the group when it comes to the agile way in which you work with your suppliers and distributors.
+                        </p>
+                        <p class="mb-3 font-bold text-sap-blue">
+                            Organizations at this stage have continuous, transparent, and proactive information exchanges with their suppliers and distributors. Many have integrated their systems and understand each other\'s businesses in depth. The speed of change at this level is near real time, with all tools allowing for the quick gathering and dissemination of information between all interested parties. 
+                        </p>
+                        <p class="mb-3">
+                            While you may be top of the class, ask yourself if the relationship with your suppliers and your distributors is the best it can be? Critically is it as transparent and proactive as you would like it to be? Think about what else you could be doing. 
+                        </p>
+                    </div>
+                </div>
+                <div class="w-3/5">
+                    <div class="p-2 bg-grey-lighter">
+                        <h4 class="italic font-bold mb-4">Recommendations:</h4>
+                        <ol class="pl-6 text-sap-blue">
+                            <li class="mb-2">Revisit and smooth over differences in deployment with suppliers. Build a culture around agility and flexibility by pointing to areas that could still be improved and ways you can work together to gain even greater agility.</li>
+                            <li class="mb-2">Focus on marginal improvements in the distribution network. Things that appear to be insignificant may add up to large-scale gains. Improve the feedback process and further reduce the time it takes for you and your partner to react.</li>
+                            <li class="mb-2">Ensure your business has an open channel of communication and can pass near-real–time requirements to the supplier network.</li>
+                            <li class="mb-2">Continue to build open and frequent communication with the distributors based on cooperation and mutual information sharing. Now focus on predictive planning to anticipate market changes and offer more flexibility to customers. This will create even greater competitive advantage.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    ',
+    'people-experience-1' => '
+        <div class="pb w-5/6 mx-auto">
+            <div class="h-1 overflow-hidden">
+                <h1 class="text-white">People Experience</h1>
+            </div>
+            <div class="flex items-start mb-4">
+                <img class="w-24 mr-4" src=":url" alt="">
+                <div class="flex-1">
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
+                    <h2 class="text-2xl leading-none font-black text-sap-blue">
+                        <span class="font-light">STAGE 1 - </span> Agile Beginner
+                    </h2>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p class="mb-2 font-bold leading-tight text-blackblack">
+                        With People Experience so critical, you will be interested to know that you are at Stage 1 in your capability. IDC has provided some key elements for consideration below.
+                    </p>
+                    <p class="mb-2 font-bold leading-tight text-blackblack">
+                        End-to-end business model agility is not possible without agile people. Agile people can only be enabled with the support of processes and management. 
+                    </p>
+                </div>
+            </div>
+            <div class="flex items-start items-stretch mt-6">
+                <div class="w-2/5">
+                    <div class="pr-6">
+                        <p class="mb-3">
+                            Organizations at Stage 1 typically lack a communication culture. For many, information remains in silos between departments and when communicated to the wider business it tends to flow down to employees, rather than up to management and decisions makers. 
+                        </p>
+                        <p class="mb-3 font-bold text-sap-blue">
+                            Organizations at this stage typically have disconnected strategies for managing people and processes. This is especially critical if they fail to plan around individual employee preferences and skills. This makes managing change impossible.
+                        </p>
+                        <p class="mb-3">
+                            The good news is, many of these issues can be addressed and resolved quickly.
+                        </p>
+                    </div>
+                </div>
+                <div class="w-3/5">
+                    <div class="p-2 bg-grey-lighter">
+                        <h4 class="italic font-bold mb-4">Recommendations:</h4>
+                        <ol class="pl-6 text-sap-blue">
+                            <li class="mb-2">Begin by creating clear channels for communication. Central to this is creating and supporting greater team collaboration. By rethinking the siloes and barriers between departments, you can open up conversations across teams to talk about improvements. This must be managed and acted on to make actual change happen. </li>
+                            <li class="mb-2">Encourage employees to talk more about the longer-term future of the business and how this can be achieved together, rather than as individual departments or functions. You may be surprised at what you learn and what hidden ideas are already in people\'s heads!</li>
+                            <li class="mb-2">Look to expand the measures you place on employees to focus on agility and flexibility. Consider what this could look like and what they should measure. Think about creating some targets that will encourage collaboration and more flexible ways of working and doing business.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    ',
+    'people-experience-2' => '
+        <div class="pb w-5/6 mx-auto">
+            <div class="h-1 overflow-hidden">
+                <h1 class="text-white">People Experience</h1>
+            </div>
+            <div class="flex items-start mb-4">
+                <img class="w-24 mr-4" src=":url" alt="">
+                <div class="flex-1">
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
+                    <h2 class="text-2xl leading-none font-black text-sap-blue">
+                        <span class="font-light">STAGE 2 - </span> Agile Mover
+                    </h2>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p class="mb-2 font-bold leading-tight text-blackblack">
+                        With People Experience so critical, you will be interested to know that you are at Stage 2 in your capability. IDC has provided some key elements for consideration below.
+                    </p>
+                    <p class="mb-2 font-bold leading-tight text-blackblack">
+                        End-to-end business model agility is not possible without agile people. Agile people can only be enabled with the support of processes and management. 
+                    </p>
+                </div>
+            </div>
+            <div class="flex items-start items-stretch mt-6">
+                <div class="w-2/5">
+                    <div class="pr-6">
+                        <p class="mb-3">
+                            Organizations at Stage 2 may have some form of communication and information sharing with employees, but it is often top down from senior management. Little information is gathered from employees on their experiences. In many cases the ideas they have on ways to improve their role and the business overall are lost or ignored.
+                        </p>
+                        <p class="mb-3 font-bold text-sap-blue">
+                            Performance evaluation is often based on manager feedback alone and little is done to encourage agile thinking or agile ways of working. The good news is, many of these issues can be addressed and resolved quickly. 
+                        </p>
+                    </div>
+                </div>
+                <div class="w-3/5">
+                    <div class="p-2 bg-grey-lighter">
+                        <h4 class="italic font-bold mb-4">Recommendations:</h4>
+                        <ol class="pl-6 text-sap-blue">
+                            <li class="mb-2">Learn from local best practices. By this we mean areas of the business where employees are engaged and work in agile and flexible ways. IDC research shows that employees working towards a common goal and being allowed the flexibility to be more creative in solving problems and producing new ideas are likely to be more engaged and productive.</li>
+                            <li class="mb-2">Put structures in place to collect feedback from internal teams on how well they are reacting to change. Specifically, how quickly can things that are problems be solved. Identifying them may be easy. Your challenge may be fixing them and making the changes stick. </li>
+                            <li class="mb-2">Integrate employee planning (the process of deciding where to focus your employees) with information from the wider market, customers, partners, and general feedback. Work with employees to find the best direction, or where the most value will be gained from their time and energy. </li>
+                            <li class="mb-2">Look to expand the performance measures you place on employees to focus on agility and flexibility.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    ',
+    'people-experience-3' => '
+        <div class="pb w-5/6 mx-auto">
+            <div class="h-1 overflow-hidden">
+                <h1 class="text-white">People Experience</h1>
+            </div>
+            <div class="flex items-start mb-4">
+                <img class="w-24 mr-4" src=":url" alt="">
+                <div class="flex-1">
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
+                    <h2 class="text-2xl leading-none font-black text-sap-blue">
+                        <span class="font-light">STAGE 3 - </span> Agile Transformer
+                    </h2>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p class="mb-2 font-bold leading-tight text-blackblack">
+                        With People Experience so critical, you will be interested to know that you are at Stage 3 in your capability. IDC has provided some key elements for consideration below.
+                    </p>
+                    <p class="mb-2 font-bold leading-tight text-blackblack">
+                        End-to-end business model agility is not possible without agile people. Agile people can only be enabled with the support of processes and management. 
+                    </p>
+                </div>
+            </div>
+            <div class="flex items-start items-stretch mt-6">
+                <div class="w-2/5">
+                    <div class="pr-6">
+                        <p class="mb-3">
+                            You are at Stage 3 of your agile people experience, and more than likely you have created cooperation and information sharing between departments. While this is great progress, you may not be fully aligned.
+                        </p>
+                        <p class="mb-3">
+                            Typically, organizations at this stage have a standard performance evaluation of employees. Inputs for this are gathered from their direct managers, but also from other colleagues.
+                        </p>
+                        <p class="mb-3 font-bold text-sap-blue">
+                            Stage three is often the most difficult time; where an organization is making the biggest changes to move into a truly agile workstyle. IDC has provided some key considerations to help you continue this transformation of your business. 
+                        </p>
+                    </div>
+                </div>
+                <div class="w-3/5">
+                    <div class="p-2 bg-grey-lighter">
+                        <h4 class="italic font-bold mb-4">Recommendations:</h4>
+                        <ol class="pl-6 text-sap-blue">
+                            <li class="mb-2">Rethink the way different departments use information about your people. One way to do this is to focus on employee experience and how this differs between departments. Identifying when people are unhappy can lead to better insights on problems. More engaged staff are more productive but are also more likely to work in ways that are agile and focused on adapting to change. </li>
+                            <li class="mb-2">Look at ways you can encourage agility between functions and roles. By this we mean how well departments work together and where there are tensions or issues. Build on the best practices already deployed. Call out examples where certain people and departments work well with one another. Expand these learnings into the wider business. </li>
+                            <li class="mb-2">Think about how you can make roles and functions more flexible. This shows employees that they can move about the business, creating much better integration of knowledge, as well as resulting in better employee retention.</li>
+                            <li class="mb-2">Work with HR and managers to get a full view of the needs and strengths of employees. Evaluate project success and customer satisfaction and how they relate to measuring employee performance. </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    ',
+    'people-experience-4' => '
+        <div class="pb w-5/6 mx-auto">
+            <div class="h-1 overflow-hidden">
+                <h1 class="text-white">People Experience</h1>
+            </div>
+            <div class="flex items-start mb-4">
+                <img class="w-24 mr-4" src=":url" alt="">
+                <div class="flex-1">
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
+                    <h2 class="text-2xl leading-none font-black text-sap-blue">
+                        <span class="font-light">STAGE 4 - </span> Agile Accelerator
+                    </h2>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p class="mb-2 font-bold leading-tight text-blackblack">
+                        With People Experience so critical, you will be interested to know that you are at Stage 4 in your capability. IDC has provided some key elements for consideration below.
+                    </p>
+                    <p class="mb-2 font-bold leading-tight text-blackblack">
+                        End-to-end business model agility is not possible without agile people. Agile people can only be enabled with the support of processes and management. 
+                    </p>
+                </div>
+            </div>
+            <div class="flex items-start items-stretch mt-6">
+                <div class="w-2/5">
+                    <div class="pr-6">
+                        <p class="mb-3">
+                            You are at Stage 4 of your agile people experience, and more than likely you have frequent communication and information sharing with employees, as well as ways of gathering feedback on a continuous basis.
+                        </p>
+                        <p class="mb-3 font-bold text-sap-blue">
+                            Organizations at this stage typically have faster reaction times to change and can easily coordinate people based on changing market needs. And while you may be well aligned between employees and management, you may still struggle to make changes to the business as quickly as you would like. IDC has provided some key considerations to help you continue this transformation of your business. 
+                        </p>
+                    </div>
+                </div>
+                <div class="w-3/5">
+                    <div class="p-2 bg-grey-lighter">
+                        <h4 class="italic font-bold mb-4">Recommendations:</h4>
+                        <ol class="pl-6 text-sap-blue">
+                            <li class="mb-2">Continue to drive a culture of sharing and collaboration and build a business that encourages and rewards agile thinking, ideas, and continuous improvements. </li>
+                            <li class="mb-2">Create a process that allows employees to access resources (people, money, time) to pursue improvements, or support being more agile as individuals, departments, and at an organizational level.</li>
+                            <li class="mb-2">Make agility a key performance indicator (KPI) for the entire workforce. Measure people on how agile they are at work, based on the way they adapt to change, how they work with others and how well they generate solutions to problems and challenges. This is a big ask of you and the business, but it is critical to making agility work. </li>
+                            <li class="mb-2">Work with HR and managers to get a full view of the needs and strengths of employees. Evaluate project success and customer satisfaction and how they relate to measuring employee performance. </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    ',
+    'people-experience-5' => '
+        <div class="pb w-5/6 mx-auto">
+            <div class="h-1 overflow-hidden">
+                <h1 class="text-white">People Experience</h1>
+            </div>
+            <div class="flex items-start mb-4">
+                <img class="w-24 mr-4" src=":url" alt="">
+                <div class="flex-1">
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
+                    <h2 class="text-2xl leading-none font-black text-sap-blue">
+                        <span class="font-light">STAGE 5 - </span> Agile Accelerator
+                    </h2>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p class="mb-2 font-bold leading-tight text-blackblack">
+                        With People Experience so critical, you will be interested to know that you are at Stage 5 in your capability. IDC has provided some key elements for consideration below.
+                    </p>
+                    <p class="mb-2 font-bold leading-tight text-blackblack">
+                        End-to-end business model agility is not possible without agile people. Agile people can only be enabled with the support of processes and management. 
+                    </p>
+                </div>
+            </div>
+            <div class="flex items-start items-stretch mt-6">
+                <div class="w-2/5">
+                    <div class="pr-6">
+                        <p class="mb-3">
+                            You are at Stage 5 in the way in which you support and develop agile employee experience. 
+                        </p>
+                        <p class="mb-3">
+                            Organizations at this stage tend to excel at communication between employees and management, as well as between individuals and departments. They have a culture of information sharing that drives business, digital, and HR transformation across all departments.  
+                        </p>
+                        <p class="mb-3 font-bold text-sap-blue">
+                            Stage 5 organizations can adjust their flexible workforce and plan for the long term as a single unit, rather than top-down management.
+                        </p>
+                        <p class="mb-3">
+                            But do not rest! There are still some critical elements you can address for even greater employee engagement that will lead to improved levels of agility and competitive advantage.
+                        </p>
+                    </div>
+                </div>
+                <div class="w-3/5">
+                    <div class="p-2 bg-grey-lighter">
+                        <h4 class="italic font-bold mb-4">Recommendations:</h4>
+                        <ol class="pl-6 text-sap-blue">
+                            <li class="mb-2">Sustain this momentum by rewarding best practices in agile ways of working and adaptability within the business.</li>
+                            <li class="mb-2">Continue to communicate the benefits of this information sharing and make this part of the company culture. </li>
+                            <li class="mb-2">Center your employee development around continuous training, development, recruitment, and specialization. Measure people performance on several fronts: agility, communication, value sharing, and teamwork. Support this through frequent 360-degree feedback mechanisms, and establish lessons learned.</li>
+                            <li class="mb-2">Look to capture knowledge from all employees and share this with the wider business. Make this knowledge capture relevant to the employee and the audience. This could be video-based, blogs, stand-up talks, or buddy-systems that encourage a student-teacher mentality. Create a culture of "every day is a school day" and "everyone knows something I don\'t know" so that people are hungry for learning and change. </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
         </div>
     ',
 );
