@@ -83,30 +83,6 @@
 									</div>
 								</div>
 								<!-- <div class="mb-6 sm:w-1/2">
-									<div class="mr-2">
-										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="company_size">
-											{{ $t('general.employees') }}
-										</label>
-										<div class="inline-block relative w-full mb-2">
-											<select class="block appearance-none w-full bg-grey-lighter border text-grey-darker py-3 px-4 pr-8 rounded" :class="[errors.size ? 'border-red' : '']" id="company_size" name="extra[company_size]" @blur="hasError">
-												<option value="" v-html="$t('general.pleaseselect')"></option>
-												<option value="1" v-html="$t('vmware.size1')"></option>
-												<option value="2 to 9" v-html="$t('vmware.size2')"></option>
-												<option value="10 to 49" v-html="$t('vmware.size3')"></option>
-												<option value="50 to 99" v-html="$t('vmware.size4')"></option>
-												<option value="100 to 249" v-html="$t('vmware.size5')"></option>
-												<option value="250 to 499" v-html="$t('vmware.size6')"></option>
-												<option value="500 to 999" v-html="$t('vmware.size7')"></option>
-												<option value="1000 or more" v-html="$t('vmware.size8')"></option>
-											</select>
-											<div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-darker">
-												<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
-											</div>
-										</div>
-										<p class="text-red text-xs italic" v-show="errors.company_size" v-html="$t('general.errorEmployees')"></p>
-									</div>
-								</div> -->
-								<!-- <div class="mb-6 sm:w-1/2">
 									<div class="ml-2">
 										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="industry">
 											{{ $t('general.industry') }}
@@ -136,7 +112,7 @@
 									</div>
 								</div> -->
 								<div class="mb-6 sm:w-1/2">
-									<div class="">
+									<div class="mr-2">
 										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="country">
 											{{ $t('general.country') }}
 										</label>
@@ -150,6 +126,36 @@
 											</div>
 										</div>
 										<p class="text-red text-xs italic" v-show="errors.country" v-html="$t('general.errorCountry')"></p>
+									</div>
+								</div>
+								<div class="mb-6 sm:w-1/2">
+									<div class="ml-2">
+										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="city">
+											{{ $t('general.city') }}
+										</label>
+
+										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-2" :class="[errors.city ? 'border-red' : '']" id="city" name="extra[city]" type="text" @blur="hasError">
+										<p class="text-red text-xs italic" v-show="errors.city" v-html="$t('general.errorCity')"></p>
+									</div>
+								</div>
+								<div class="mb-6 sm:w-1/2">
+									<div class="mr-2">
+										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="zip">
+											{{ $t('general.zip') }}
+										</label>
+
+										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-2" :class="[errors.zip ? 'border-red' : '']" id="zip" name="extra[zip]" type="text" @blur="hasError">
+										<p class="text-red text-xs italic" v-show="errors.zip" v-html="$t('general.errorZip')"></p>
+									</div>
+								</div>
+								<div class="mb-6 sm:w-1/2">
+									<div class="ml-2">
+										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="state">
+											{{ $t('general.state') }}
+										</label>
+
+										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-2" :class="[errors.state ? 'border-red' : '']" id="state" name="extra[state]" type="text" @blur="hasError">
+										<p class="text-red text-xs italic" v-show="errors.state" v-html="$t('general.errorState')"></p>
 									</div>
 								</div>
 								<!-- <div class="mb-6 sm:w-1/2">
@@ -254,6 +260,7 @@ export default{
 				position: false,
 				business: false,
 				city: false,
+				zip: false,
 				company_size: false,
 				turnover: false,
 				country: false,

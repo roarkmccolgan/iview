@@ -55,7 +55,7 @@ return [
         'report_recipients' => [
             'roarkmccolgan@gmail.com',
             'lborthwick@idc.com',
-        ],
+        ]
     ],
     'network-infrastructure' => [
         'baseline' => 8.90,
