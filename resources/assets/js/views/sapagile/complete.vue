@@ -15,6 +15,25 @@
 						<div class="">score: {{ sec.score }}</div>
 						<div class="mb-4">rating: {{ sec.rating }}</div>
 					</div>
+					<div class="flex font-bold">
+						<span class="inline-block mr-2">question;</span>
+						<span class="inline-block mr-2">section;</span>
+						<span class="inline-block mr-2">calc;</span>
+						<span class="inline-block mr-2">answers;</span>
+						<span class="inline-block mr-2">values;</span>
+						<span class="inline-block mr-2">score</span>
+					</div>
+					<div class="flex mb-8" v-for="(scores, res) in theScores">
+						<span class="inline-block mr-2">{{res}};</span>
+						<span class="inline-block mr-2" v-html="scores.section+';'"></span>
+						<span class="inline-block mr-2">{{ scores.calc }};</span>
+						<span class="inline-block mr-2" v-if="scores.answers">{{ scores.answers.join(",\n") }};</span>
+						<span class="inline-block mr-2" v-if="scores.ave">{{ scores.ave.join() }};</span>
+						<span class="inline-block mr-2" v-else-if="scores.norm">{{ scores.norm.join() }};</span>
+						<span class="inline-block mr-2" v-else-if="scores.sum">{{ scores.sum.join() }};</span>
+						<span class="inline-block mr-2" v-else>{{ scores.val }};</span>
+						<span class="inline-block mr-2">{{ scores.val }}</span>
+					</div>
 					<img class="max-w-full" :src="'/images/tools/' + assessment.tool.id + '/report'+ assessment.locale +'.png'" alt="">
 				</div>
 				<div class="w-full sm:w-1/2">
@@ -192,7 +211,7 @@ import faSquare from '@fortawesome/fontawesome-pro-regular/faSquare';
 import faCheckSquare from '@fortawesome/fontawesome-pro-regular/faCheckSquare';
 import faSyncAlt from '@fortawesome/fontawesome-pro-regular/faSyncAlt';
 export default{
-	props: ['result'],
+	props: ['result','scores'],
 	data () {
 		return {
 			assessment: laravel,
@@ -241,6 +260,7 @@ export default{
 				terms: false
 			},
 			theResult: this.result ? this.result : laravel.result,
+			theScores: this.scores ? this.scores : laravel.scores,
 			stage: laravel.stage,
 			isSubmitting: false,
 		}

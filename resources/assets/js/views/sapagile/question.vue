@@ -188,7 +188,7 @@ export default{
 						}else{
 							that.getResults().then(function (response) {
 								if(response.data.query == 'success'){
-									that.$router.push({ name: 'complete', params:{result: response.data.result}});
+									that.$router.push({ name: 'complete', params:{result: response.data.result,scores: response.data.scores}});
 									document.body.scrollTop = 0; // For Safari
 		    						document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 								}

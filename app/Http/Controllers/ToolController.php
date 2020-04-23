@@ -1230,30 +1230,38 @@ class ToolController extends Controller
         $result = [];
         $result['overall']['score'] = 0;
 
+        $scores = [];
+
         foreach ($this->quiz as $key => $value) {
             if ($key!=='screeners' && (!isset($value['ignore']) || $value['ignore']==false)) {
                 foreach ($value['pages'] as $page => $props) {
                     foreach ($props['questions'] as $q => $details) {
                         if (!isset($details['ignore']) || $details['ignore']==false) { // ignore answer
-                            if (($details['type']=='groupSlider' || $details['type']=='groupbutton') && is_array($details['selected'])) {
+                            if (($details['type']=='groupSlider' || $details['type']=='groupbutton' || $details['type']=='checkbox' || $details['type']=='groupradio' || $details['type']=='slider') && is_array($details['selected'])) {
+                                $answers = [];
                                 if (isset($details['calc'])) {
                                     if ($details['calc']['type']=='average') {
                                         $ave = [];
                                         foreach ($details['selected'] as $selected) {
                                             $ave[]=$selected['value'];
+                                            $answers[]=$selected['label'];
                                         }
                                         $val = array_sum($ave) / count($ave);
                                     } elseif ($details['calc']['type']=='normalize') {
                                         $norm = 0;
                                         foreach ($details['selected'] as $selected) {
                                             $norm+=$selected['value'];
+                                            $answers[]=$selected['label'];
                                         }
                                         $val = ($norm/$details['calc']['value'])*count($details['selected']);
                                     }
                                 } else {
                                     $valHold = 0;
+                                    $valArr = [];
                                     foreach ($details['selected'] as $selected) {
+                                        $valArr[]=$selected['value'];
                                         $valHold+=$selected['value'];
+                                        $answers[]=$selected['label'];
                                     }
                                     $val = $valHold;
                                 }
@@ -1262,6 +1270,7 @@ class ToolController extends Controller
                                     dd($value['pages']);
                                 }
                                 $val = $details['selected'][0]['value'];
+                                $answers[] = $details['selected'][0]['label'];
                             }
                             //round to 1 decimal place
                             $val = round($val, 1, PHP_ROUND_HALF_UP);
@@ -1271,6 +1280,21 @@ class ToolController extends Controller
                             } else {
                                 $result[$key]['score'] = $val;
                             }
+                            $scores[$q] = [
+                                'section' => $props['title'],
+                                'type' => $details['type'],
+                                'calc' => isset($details['calc']) ? $details['type'] : 'sum',
+                                'answers' => isset($answers) ? $answers : null,
+                                'ave' => isset($ave) ? $ave : null,
+                                'norm' => isset($norm) ? $norm : null,
+                                'sum' => isset($valArr) ? $valArr : null,
+                                'val' => $val
+                            ];
+                            unset($answers);
+                            unset($ave);
+                            unset($norm);
+                            unset($valArr);
+                            $val = 0;
                         }
                     }
                 }
@@ -1295,6 +1319,7 @@ class ToolController extends Controller
         $data = [
             'query'=>'success',
             'result'=>$result,
+            'scores'=>$scores,
         ];
 
         return response()->json($data);
