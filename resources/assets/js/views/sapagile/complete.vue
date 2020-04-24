@@ -177,6 +177,21 @@
 									</div>
 								</div> -->
 								<div class="mb-6 w-full">
+									<label :class="[marketing ? activeClass : normalClass, errors.marketing ? 'border-red bg-red-lightest' : '']" tabindex="0" @keyup.space="$event.target.click()" >
+										<input class="hidden" type="checkbox" id="marketing" name="extra[marketing]" v-model="marketing">
+										<div class="flex items-baseline">
+											<div class="mr-2 text-2xl sm:text-xl">
+												<font-awesome-icon :icon="icons.faSquare" v-if="!marketing" />
+												<font-awesome-icon :icon="icons.faCheckSquare" v-else />
+											</div>
+											<div class="flex-grow" v-html="$t('general.marketing')">
+												
+											</div>
+										</div>
+										<p class="text-red text-xs italic" v-show="errors.marketing" v-html="$t('general.errorMarketing')"></p>
+									</label>
+								</div>
+								<div class="mb-6 w-full">
 									<label :class="[terms ? activeClass : normalClass, errors.terms ? 'border-red bg-red-lightest' : '']" tabindex="0" @keyup.space="$event.target.click()" @click="checkTerms">
 										<input class="hidden" type="checkbox" id="terms" name="terms" value="terms" v-model="terms">
 										<div class="flex items-baseline">
@@ -222,6 +237,7 @@ export default{
 				faSyncAlt: faSyncAlt,
 			},
 			terms: false,
+			marketing: false,
 			normalClass: {
 				'block': true,
 				'font-light': true,
@@ -252,6 +268,7 @@ export default{
 				company: false,
 				position: false,
 				business: false,
+				marketing: false,
 				city: false,
 				company_size: false,
 				areas_interest: false,
@@ -320,8 +337,10 @@ export default{
 			}
 		},
 		checkTerms: function(){
-			console.log(document.getElementById('terms').checked);
 			this.errors.terms = !document.getElementById('terms').checked;
+		},
+		checkMarketing: function(){
+			this.errors.marketing = !document.getElementById('marketing').checked;
 		},
 		checkForErrors: function(){
 			var errors = false;

@@ -99,7 +99,8 @@ return array(
     'complete_thankyou' => 'Thank you :Fname,',
     'complete_body' => '
         Your custom report will arrive in your inbox soon.<br/>
-        Please check in your junk folder if you don\'t receive it within 5 minutes.<br/><br/>
+        Please check in your junk folder if you don\'t receive it within 5 minutes.<br/>
+        If you cannot find the link, please email IDC (<a href="mailto:podgers@idc.com">podgers@idc.com</a>) and a new link will be sent to you<br/><br/>
         To find out more about SAP for your location, please click the relevant link below:<br>
         <a class="text-sap-blue" href="https://www.sap.com/africa/products/sme-business-software.html">Africa</a><br/>
         <a class="text-sap-blue" href="https://www.sap.com/mena/products/sme-business-software.html">Middle East</a><br/>
@@ -114,8 +115,12 @@ return array(
         'link' => 'VIEW YOUR AGILITY SCORE',
         'extra' => 'Feel free to share this with other departments of your organization and with you customers and partners. You can always invite them to fill in the assessment and compare answers.<br>
             <a href="https://clicktobeagile.idcready.net/">https://clicktobeagile.idcready.net/</a><br><br>
-            This assessment has been sponsored by SAP.<br>
-            To know more about SAP, please visit <a href="https://sap.com">https://sap.com</a>',
+            This assessment has been sponsored by SAP.<br><br>
+            To find out more about SAP for your location, please click the relevant link below:<br>
+            <a class="text-sap-blue" href="https://www.sap.com/africa/products/sme-business-software.html">Africa</a><br/>
+            <a class="text-sap-blue" href="https://www.sap.com/mena/products/sme-business-software.html">Middle East</a><br/>
+            <a class="text-sap-blue" href="https://www.sap.com/spain/products/sme-business-software.html">Spain</a><br/>
+            <a class="text-sap-blue" href="https://events.sap.com/it/sapitalia/it/feelings">Italy</a><br/>',
         'regards' => 'Regards',
         'team' => 'The IDC Team'
     ],
@@ -153,7 +158,7 @@ return array(
                             <img class="w-6 mr-2" src=":url" alt="">
                             <h4 class="font-bold text-grey-darkest">This report includes:</h4>
                         </div>
-                        <ul class="list-disc pl-12 text-sap-blue mt-4">
+                        <ul class="list-disc pl-12 mt-4">
                             <li class="mb-2">Your Overall Assessment</li>
                             <li class="mb-2">Strategic Planning</li>
                             <li class="mb-2">Processes</li>
