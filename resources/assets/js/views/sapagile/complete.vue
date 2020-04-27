@@ -10,7 +10,7 @@
 					<h2 class="font-light leading-tight mb-4 text-sapagile-blue-bright" v-html="$t('sapagile.finishtxtheading')"></h2>
 					<p v-html="$t('sapagile.finishtxt1', {'result':$t('sapagile.'+result.overall.rating)})"></p>
 					<p v-html="$t('sapagile.finishtxt2')"></p>
-					<div v-for="sec, key in theResult">
+					<!-- <div v-for="sec, key in theResult">
 						<div class="font-bold">{{ key }}</div>
 						<div class="">score: {{ sec.score }}</div>
 						<div class="mb-4">rating: {{ sec.rating }}</div>
@@ -33,8 +33,8 @@
 						<span class="inline-block mr-2" v-else-if="scores.sum">{{ scores.sum.join() }};</span>
 						<span class="inline-block mr-2" v-else>{{ scores.val }};</span>
 						<span class="inline-block mr-2">{{ scores.val }}</span>
-					</div>
-					<img class="max-w-full" :src="'/images/tools/' + assessment.tool.id + '/report'+ assessment.locale +'.png'" alt="">
+					</div> -->
+					<img class="max-w-full border" :src="'/images/tools/' + assessment.tool.id + '/report'+ assessment.locale +'.png'" alt="">
 				</div>
 				<div class="w-full sm:w-1/2">
 					<div class="sm:ml-8">
@@ -177,21 +177,6 @@
 									</div>
 								</div> -->
 								<div class="mb-6 w-full">
-									<label :class="[marketing ? activeClass : normalClass, errors.marketing ? 'border-red bg-red-lightest' : '']" tabindex="0" @keyup.space="$event.target.click()" >
-										<input class="hidden" type="checkbox" id="marketing" name="extra[marketing]" v-model="marketing">
-										<div class="flex items-baseline">
-											<div class="mr-2 text-2xl sm:text-xl">
-												<font-awesome-icon :icon="icons.faSquare" v-if="!marketing" />
-												<font-awesome-icon :icon="icons.faCheckSquare" v-else />
-											</div>
-											<div class="flex-grow" v-html="$t('general.marketing')">
-												
-											</div>
-										</div>
-										<p class="text-red text-xs italic" v-show="errors.marketing" v-html="$t('general.errorMarketing')"></p>
-									</label>
-								</div>
-								<div class="mb-6 w-full">
 									<label :class="[terms ? activeClass : normalClass, errors.terms ? 'border-red bg-red-lightest' : '']" tabindex="0" @keyup.space="$event.target.click()" @click="checkTerms">
 										<input class="hidden" type="checkbox" id="terms" name="terms" value="terms" v-model="terms">
 										<div class="flex items-baseline">
@@ -204,6 +189,21 @@
 											</div>
 										</div>
 										<p class="text-red text-xs italic" v-show="errors.terms" v-html="$t('general.errorAccept')"></p>
+									</label>
+								</div>
+								<div class="mb-6 w-full">
+									<label :class="[marketing ? activeClass : normalClass, errors.marketing ? 'border-red bg-red-lightest' : '']" tabindex="0" @keyup.space="$event.target.click()" >
+										<input class="hidden" type="checkbox" id="marketing" name="extra[marketing]" v-model="marketing">
+										<div class="flex items-baseline">
+											<div class="mr-2 text-2xl sm:text-xl">
+												<font-awesome-icon :icon="icons.faSquare" v-if="!marketing" />
+												<font-awesome-icon :icon="icons.faCheckSquare" v-else />
+											</div>
+											<div class="flex-grow" v-html="$t('sapagile.marketing')">
+												
+											</div>
+										</div>
+										<p class="text-red text-xs italic" v-show="errors.marketing" v-html="$t('general.errorMarketing')"></p>
 									</label>
 								</div>
 								<div class="mb-6 w-full">

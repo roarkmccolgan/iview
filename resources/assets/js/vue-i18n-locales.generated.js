@@ -1235,6 +1235,7 @@ export default {
             "stage3": "Agile Transformer",
             "stage4": "Agile",
             "stage5": "Agile Master",
+            "marketing": "I agree to being contacted by SAP about my Agility Assessment Report",
             "finishtxtheading": "\n        <span class=\"font-bold\">Thank you for completing the IDC Click to be Agile Assessment Tool, sponsored by SAP.</span><br/><br/> Now you will find out just how agile your business is!\n    ",
             "finishtxt1": "Based on the answers you provided, IDC place your business as: <strong class=\"inline font-bold text-lg text-sap-blue\">{result}</strong> ",
             "finishtxt2": "\n        <p class=\"mb-2 mt-4 font-bold\">But what does this mean?</p>\n        <p class=\"mb-2 mt-4\">To immediately receive a personalized report via email with a full analysis of your business agility and recommendations, please complete the registration form.</p>\n        <p class=\"mb-2 mt-4\">We will treat your information with the utmost respect, and we look forward to sharing useful insights with you! </p>\n        <p class=\"mb-2\">The privacy and the security of your information is important to us. Please read IDC privacy policies via the link below.</p>\n        <p class=\"mb-4 font-bold\">The IDC Team</p>\n    ",

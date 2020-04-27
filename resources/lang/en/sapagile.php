@@ -84,6 +84,7 @@ return array(
     'stage3' => 'Agile Transformer',
     'stage4' => 'Agile',
     'stage5' => 'Agile Master',
+    'marketing' => 'I agree to being contacted by SAP about my Agility Assessment Report',
 
     'finishtxtheading' => '
         <span class="font-bold">Thank you for completing the IDC Click to be Agile Assessment Tool, sponsored by SAP.</span><br/><br/> Now you will find out just how agile your business is!
