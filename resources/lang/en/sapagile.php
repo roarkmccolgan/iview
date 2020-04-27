@@ -19,7 +19,7 @@ return array(
             Agile organizations are more competitive, jump on opportunities more quickly and are able to build stronger relationships with suppliers, distributors and customers.
         </p>
         <p class="mb-4 text-xl font-bold leading-tight text-black leading-tight">
-            But how do you become more agile as a business? Firstly, you need to know how agile your are today and what you need to do, to become more agile tomorrow. 
+            But how do you become more agile as a business? Firstly, you need to know how agile you are today. Then what needs to be done to become more agile tomorrow.
         </p>',
     'landing-inner' => 'IDC’s agility tool assesses your businesses agility across 5 key areas:',
     'landing2'=>'
