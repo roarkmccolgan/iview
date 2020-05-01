@@ -125,7 +125,7 @@ return array(
             Share via Twitter and Linkedin below:<br/><br/>
             <a style="text-decoration: none;" href="https://twitter.com/home?status=https://clicktobeagile.idcready.net I have just completed the IDC Click to be Agile Assessment Tool Sponsored by SAP">
                 <img src="https://clicktobeagile.idcready.net/images/twitter.png" style="width: 50px;"/>
-            </a><br/>
+            </a>&nbsp;&nbsp;&nbsp;
             <a style="text-decoration: none;" href="https://www.linkedin.com/shareArticle?mini=true&url=https://clicktobeagile.idcready.net&title=&summary=I have just completed the IDC Click to be Agile Assessment Tool Sponsored by SAP&source=email">
                 <img src="https://clicktobeagile.idcready.net/images/linkedin.png" style="width: 50px;"/>
             </a><br/>',
