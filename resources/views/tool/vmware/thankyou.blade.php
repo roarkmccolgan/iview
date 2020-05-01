@@ -5,6 +5,8 @@
 
 @section('head')
 @parent
+<link rel="stylesheet" href="https://www.vmware.com/content/dam/vmwaredesigns/scraper/responsive-microsites.css"/>
+<link rel="stylesheet" type="text/css" href="https://www.vmware.com/content/dam/vmwaredesigns/scraper/scrapper-footer.css"/>
 <meta name="description" content="">
 <meta name="author" content="">
 <meta name="keywords" content="">
@@ -49,16 +51,12 @@
 			</div>
 		</div>
 	</div>
-	<div class="container mx-auto bg-white border-t border-b mt-6 mb-4 py-4 px-4 sm:border sm:rounded text-grey-darker">
-		<div class="flex justify-start">
-			<div class="mr-2 pr-2 border-r text-sm"><a href="/disclaimer" target="_blank" class="no-underline text-dasssault-blue opacity-75">@lang('general.disclaimer')</a></div>
-			<div class="mr-2 pr-2 border-r text-sm"><a href="/privacy" target="_blank" class="no-underline text-dasssault-blue opacity-75">@lang('general.idcprivacy')</a></div>
-			<div class="mr-2 pr-2 border-r text-sm"><a href="/cookies" target="_blank" class="no-underline text-dasssault-blue opacity-75">@lang('general.cookiespolicylink')</a></div>
-		</div>
-	</div>
+	<div id="page-footer"></div>
 </div>
 @stop
 @section('pagescript')
 <script src="//cdn.jsdelivr.net/npm/velocity-animate@1.5/velocity.min.js"></script>
+<script type="text/javascript" src="https://www.vmware.com/bin/vmware/template/scrapper.us.js"></script>
+<script type="text/javascript" src="https://www.vmware.com/content/dam/vmwaredesigns/scraper/responsive.js"></script>
 @parent
 @stop
