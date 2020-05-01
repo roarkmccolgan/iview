@@ -1230,11 +1230,11 @@ export default {
                 "title": "People Experience",
                 "popup": "\n            People Experience concerns how information is shared with employees, as well as what they encounter and observe in their roles. It also refers to how they are measured, motivated and engaged by their work and by the business.\n        "
             },
-            "stage1": "Agile Starter",
+            "stage1": "Agile Beginner",
             "stage2": "Agile Mover",
             "stage3": "Agile Transformer",
-            "stage4": "Agile",
-            "stage5": "Agile Master",
+            "stage4": "Agile Accelerator",
+            "stage5": "Agile Disruptor",
             "marketing": "I agree to being contacted by SAP about my Agility Assessment Report",
             "finishtxtheading": "\n        <span class=\"font-bold\">Thank you for completing the IDC Click to be Agile Assessment Tool, sponsored by SAP.</span><br/><br/> Now you will find out just how agile your business is!\n    ",
             "finishtxt1": "Based on the answers you provided, IDC place your business as: <strong class=\"inline font-bold text-lg text-sap-blue\">{result}</strong> ",
@@ -1247,7 +1247,7 @@ export default {
                 "hi": "Hi {Fname}",
                 "body": "Thank you for completing the assessment, here is the link to download your IDC Agility Assessment Report. This breaks down your results by category and provides you with actionable recommendations.",
                 "link": "VIEW YOUR AGILITY SCORE",
-                "extra": "Feel free to share this with other departments of your organization and with you customers and partners. You can always invite them to fill in the assessment and compare answers.<br>\n            <a href=\"https://clicktobeagile.idcready.net/\">https://clicktobeagile.idcready.net/</a><br><br>\n            This assessment has been sponsored by SAP.<br><br>\n            To find out more about SAP for your location, please click the relevant link below:<br>\n            <a class=\"text-sap-blue\" href=\"https://www.sap.com/africa/products/sme-business-software.html\">Africa</a><br/>\n            <a class=\"text-sap-blue\" href=\"https://www.sap.com/mena/products/sme-business-software.html\">Middle East</a><br/>\n            <a class=\"text-sap-blue\" href=\"https://www.sap.com/spain/products/sme-business-software.html\">Spain</a><br/>\n            <a class=\"text-sap-blue\" href=\"https://events.sap.com/it/sapitalia/it/feelings\">Italy</a><br/>",
+                "extra": "Feel free to share this with other departments of your organization and with your customers and partners. You can always invite them to fill in the assessment and compare answers.<br>\n            <a href=\"https://clicktobeagile.idcready.net/\">https://clicktobeagile.idcready.net/</a><br><br>\n            This assessment has been sponsored by SAP.<br><br>\n            To find out more about SAP for your location, please click the relevant link below:<br>\n            <a class=\"text-sap-blue\" href=\"https://www.sap.com/africa/products/sme-business-software.html\">Africa</a><br/>\n            <a class=\"text-sap-blue\" href=\"https://www.sap.com/mena/products/sme-business-software.html\">Middle East</a><br/>\n            <a class=\"text-sap-blue\" href=\"https://www.sap.com/spain/products/sme-business-software.html\">Spain</a><br/>\n            <a class=\"text-sap-blue\" href=\"https://events.sap.com/it/sapitalia/it/feelings\">Italy</a><br/><br/>\n            Share via Twitter and Linkedin below:<br/><br/>\n            <a style=\"text-decoration: none;\" href=\"https://twitter.com/home?status=https://clicktobeagile.idcready.net I have just completed the IDC Click to be Agile Assessment Tool Sponsored by SAP\">\n                <img src=\"https://clicktobeagile.idcready.net/images/twitter.png\" style=\"width: 50px;\"/>\n            </a><br/>\n            <a style=\"text-decoration: none;\" href=\"https://www.linkedin.com/shareArticle?mini=true&url=https://clicktobeagile.idcready.net&title=&summary=I have just completed the IDC Click to be Agile Assessment Tool Sponsored by SAP&source=email\">\n                <img src=\"https://clicktobeagile.idcready.net/images/linkedin.png\" style=\"width: 50px;\"/>\n            </a><br/>",
                 "regards": "Regards",
                 "team": "The IDC Team"
             },

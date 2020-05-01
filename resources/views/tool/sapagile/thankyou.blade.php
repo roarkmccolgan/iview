@@ -71,8 +71,8 @@
 var addthis_share = {
    url: "{{ url(session('locale').'/') }}",
    title: "IDC Click to be Agile Assessment Tool",
-   description: "I just completed the IDC Click to be Agile Assessment Tool. Why not find out where your business is in its agility journey",
-   media: "http://sapstaging.idcready.net/images/tools/15/homepage.jpg"
+   description: "I have just completed the IDC Click to be Agile Assessment Tool Sponsored by SAP",
+   media: "https://clicktobeagile.idcready.net/images/tools/15/clicktobeagile.png"
 }
 </script>
 <!-- Go to www.addthis.com/dashboard to customize your tools -->

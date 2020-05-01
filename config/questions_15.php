@@ -403,7 +403,7 @@ return [
                 'questions' => [
                     'q7'=>[
                         'type'=>'button',
-                        'question'=>'How frequently do your customers change their requests and requirement?',
+                        'question'=>'How frequently do your customers change their requests and requirements?',
                         'name'=> 7,
                         'options'=>[
                             [
