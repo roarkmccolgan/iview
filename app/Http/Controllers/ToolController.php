@@ -711,7 +711,7 @@ class ToolController extends Controller
         if (App::isLocal() || $assessment['email']=='rmccolgan@idc.com') {
             $emails = ['roarkmccolgan@gmail.com'];
         } else {
-            if ($assessment->tool_id != 5) { //spunk
+            if ($assessment->tool_id != 5 && $assessment->tool_id != 15) { //spunk sapagile
                 foreach ($assessment->tool->users as $user) {
                     $emails[] = $user->email;
                 }
@@ -719,19 +719,19 @@ class ToolController extends Controller
                 $emails[] = 'roarkmccolgan@gmail.com';
             }
         }
-            $remove = [];
+        $remove = [];
         if (Config::has('baseline_'.session('product.id').'.overall.notifications.ignoreadmin')) {
             foreach (config('baseline_'.session('product.id').'.overall.notifications.ignoreadmin') as $address) {
                 $remove[] = $address;
             }
         }
-            $emails = array_diff($emails, $remove);
-            $subject = $assessment->tool->company->name.' - '.$assessment->tool->title.' Assessment completed';
-            $ratingWording = $this->howfit['overall']['rating'];
+        $emails = array_diff($emails, $remove);
+        $subject = $assessment->tool->company->name.' - '.$assessment->tool->title.' Assessment completed';
+        $ratingWording = $this->howfit['overall']['rating'];
         if (Lang::has(session('product.alias').'.'.$this->howfit['overall']['rating'])) {
             $ratingWording = $ratingWording." - ".trans(session('product.alias').'.'.$this->howfit['overall']['rating']);
         }
-            Mail::queue(
+        Mail::queue(
                 'emails.notification',
                 [
                 'companyName' => $assessment->tool->company->name,
