@@ -20,7 +20,7 @@ return array(
             IDC, a global leading provider of technology market research, has developed the secure-by-design network assessment, sponsored by VMware, to help organizations assess the state of their network as they embrace digital transformation.
         </p>
         <p class="mb-2">
-            This self-assessment tool is backed up by independent end-user research and IDC\'s in depth understanding of this market. Upon completion of a short survey (10 minutes) you will receive a custom report that benchmarks your organization\'s Network maturity and provides you with essential and tailored guidance to help you prepare for the requirements of tomorrow and plot your course to network transformation.
+            This self-assessment tool is backed up by independent end-user research and IDC\'s in depth understanding of this market. Upon completion of a short survey (10 minutes) you will receive a custom report that benchmarks your organization\'s network maturity and provides you with essential and tailored guidance to help you prepare for the requirements of tomorrow and plot your course to network transformation.
         </p>',
     'startbut'=>'Begin assessment',
     
