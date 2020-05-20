@@ -164,7 +164,7 @@ return [
                                 'name'=> 1.5,
                                 'options'=>[
                                     [
-                                        'Not using, no plans',
+                                        'label'=>'Not using, no plans',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
@@ -595,7 +595,7 @@ return [
                                 'name'=> 8.5,
                                 'options'=>[
                                     [
-                                        'Not using, no plans',
+                                        'label'=>'Not using, no plans',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
