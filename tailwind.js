@@ -48,6 +48,9 @@ let colors = {
 
   'idc-dark-blue': '#004B85',
   
+  'ibm-blue': '#0062ff',
+  'ibm-blue-light': '#5596e6',
+
   'vmware-blue': 'rgb(25,147,215)',
   'vmware-blue-bright': 'rgb(0,144,218)',
   'vmware-green': 'rgb(115,177,71)',
@@ -610,6 +613,7 @@ module.exports = {
     '4/5': '80%',
     '1/6': '16.66667%',
     '5/6': '83.33333%',
+    '1/7': '14.285714286%',
     'full': '100%',
     'screen': '100vw',
   },

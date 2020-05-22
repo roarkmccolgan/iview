@@ -227,7 +227,7 @@ class ToolController extends Controller
         $totalQuestions = count($onlyQuestions);
         $return_visitor = $request->cookie('quiz_progress');
         $class = 'intro';
-        if ($tool->template=='nttsdwan' || $tool->template=='trendmicromssp' || $tool->template=='nttdata' || $tool->template=='dassault' || $tool->template=='hitachi' || $tool->template=='vmware' || $tool->template=='sapagile') {
+        if ($tool->template=='nttsdwan' || $tool->template=='trendmicromssp' || $tool->template=='nttdata' || $tool->template=='dassault' || $tool->template=='hitachi' || $tool->template=='vmware' || $tool->template=='sapagile' || $tool->template=='ibmcloud') {
             $view = 'tool.'.session('template').'.assessment';
         } else {
             $view = 'tool.'.session('template').'.intro';
@@ -889,7 +889,7 @@ class ToolController extends Controller
                                 dd($details);
                             }
                             if (($details['type']=='checkbox' || $details['type']=='groupradio' || $details['type']=='slider') && is_array($details['selected'])) {
-                                if (isset($details['calc'])) {
+                                if (isset($details['calc']) && isset($details['calc']['type'])) {
                                     if ($details['calc']['type']=='average') {
                                         $ave = [];
                                         foreach ($details['selected'] as $selected) {
@@ -927,6 +927,14 @@ class ToolController extends Controller
                                 $val = explode('|', $details['selected']);
                                 $val = $val[1];
                             }
+                            //check for crazy normalize
+                            if (isset($details['calc']) && isset($details['calc']['min']) && isset($details['calc']['max']) && isset($details['calc']['outputmax'])) {
+                                $getMin = $val-$details['calc']['min'] == 0 ? 1 : $val-$details['calc']['min'];
+                                $val = ($getMin)*$details['calc']['outputmax']/($details['calc']['max']-$details['calc']['min']);
+                            }
+                            //round to 1 decimal place
+                            $val = round($val, 1, PHP_ROUND_HALF_UP);
+
                             if (isset($result[$section]['score'])) {
                                 $result[$section]['score'] += $val;
                             } else {
@@ -959,7 +967,7 @@ class ToolController extends Controller
                         foreach ($props['questions'] as $q => $details) {
                             if (!isset($details['ignore']) || $details['ignore']==false) { // ignore answer
                                 if (($details['type']=='checkbox' || $details['type']=='groupradio' || $details['type']=='slider' || $details['type']=='groupbutton') && is_array($details['selected'])) {
-                                    if (isset($details['calc'])) {
+                                    if (isset($details['calc']) && isset($details['calc']['type'])) {
                                         if ($details['calc']['type']=='average') {
                                             $ave = [];
                                             foreach ($details['selected'] as $selected) {
@@ -992,6 +1000,11 @@ class ToolController extends Controller
                                     }
                                     $val = explode('|', $details['selected']);
                                     $val = $val[1];
+                                }
+                                //check for crazy normalize
+                                if (isset($details['calc']) && isset($details['calc']['min']) && isset($details['calc']['max']) && isset($details['calc']['outputmax'])) {
+                                    $getMin = $val-$details['calc']['min'] == 0 ? 1 : $val-$details['calc']['min'];
+                                    $val = ($getMin)*$details['calc']['outputmax']/($details['calc']['max']-$details['calc']['min']);
                                 }
                                 //round to 1 decimal place
                                 $val = round($val, 1, PHP_ROUND_HALF_UP);
@@ -1239,7 +1252,7 @@ class ToolController extends Controller
                         if (!isset($details['ignore']) || $details['ignore']==false) { // ignore answer
                             if (($details['type']=='groupSlider' || $details['type']=='groupbutton' || $details['type']=='checkbox' || $details['type']=='groupradio' || $details['type']=='slider') && is_array($details['selected'])) {
                                 $answers = [];
-                                if (isset($details['calc'])) {
+                                if (isset($details['calc']) && isset($details['calc']['type'])) {
                                     if ($details['calc']['type']=='average') {
                                         $ave = [];
                                         foreach ($details['selected'] as $selected) {
@@ -1272,6 +1285,11 @@ class ToolController extends Controller
                                 $val = $details['selected'][0]['value'];
                                 $answers[] = $details['selected'][0]['label'];
                             }
+                            // check for crazy normalize
+                            if (isset($details['calc']) && isset($details['calc']['min']) && isset($details['calc']['max']) && isset($details['calc']['outputmax'])) {
+                                $getMin = $val-$details['calc']['min'] == 0 ? 1 : $val-$details['calc']['min'];
+                                $val = ($getMin)*$details['calc']['outputmax']/($details['calc']['max']-$details['calc']['min']);
+                            }
                             //round to 1 decimal place
                             $val = round($val, 1, PHP_ROUND_HALF_UP);
 
@@ -1283,7 +1301,8 @@ class ToolController extends Controller
                             $scores[$q] = [
                                 'section' => $props['title'],
                                 'type' => $details['type'],
-                                'calc' => isset($details['calc']) ? $details['type'] : 'sum',
+                                'calc' => isset($details['calc']) && isset($details['calc']['type']) ? $details['calc']['type'] : 'sum',
+                                'calcthing' => isset($details['calc']) && isset($details['calc']['min']) && isset($details['calc']['max']) && isset($details['calc']['outputmax']) ? $details['calc']['min']."-".$details['calc']['max']."-".$details['calc']['outputmax'] : isset($details['calc']) ." - ". isset($details['calc']['min']) ." - ". isset($details['calc']['max']) ." - ". isset($details['calc']['outputmax']),
                                 'answers' => isset($answers) ? $answers : null,
                                 'ave' => isset($ave) ? $ave : null,
                                 'norm' => isset($norm) ? $norm : null,

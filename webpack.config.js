@@ -47,6 +47,11 @@ module.exports = {
 			'./resources/assets/js/sapagile/main.js',
 			'./resources/assets/css/sapagile/main.css'
 		],
+		ibmcloud: [
+			"babel-polyfill",
+			'./resources/assets/js/ibmcloud/main.js',
+			'./resources/assets/css/ibmcloud/main.css'
+		]
 	},
 	stats: {
 		children: false,

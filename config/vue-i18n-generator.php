@@ -39,6 +39,7 @@ return [
        'hitachi',
        'vmware',
        'sapagile',
+       'ibmcloud',
     ],
 
     /*
