@@ -4,7 +4,7 @@ return [
     'move' => [
         'title' => 'Move',
         'description' => '
-            <h2 class="">Move</h2>
+            <h2 class="font-black text-yellow-light text-xl sm:text-3xl">Move</h2>
             <p class="mb-4">Building a hybrid and multicloud-based digital platform for application modernization is a key step in digital transformation, because older infrastructure approaches and applications do not provide the agility and adaptability necessary for today\'s business environment and customer expectations. Moving applications into a cloud environment, be it private cloud or public cloud, is an important step in application modernization.
             </p>
             ',
@@ -825,7 +825,7 @@ return [
                             'Keep as is',
                             'Not Decided'
                         ],
-                        'question'=>'In which type of environment do you predominately run your applications today?',
+                        'question'=>'Which application modernisation strategy have you chosen?',
                         'name'=> 4,
                         'options'=>[
                             [
@@ -1327,7 +1327,7 @@ return [
     'build' => [
         'title' => 'Build',
         'description' => '
-            <h2 class="">Build</h2>
+            <h2 class="font-black text-yellow-light text-xl sm:text-3xl">Build</h2>
             <p class="mb-2">Digital transformation is mainly done through building highly scalable digital applications in the cloud and supporting them with digitized business processes. Modern applications built in the cloud are able to leverage the benefits of the cloud to then capitalize on other innovative technologies such as AI, cognitive, next-gen security, IoT and so on to become more intuitive, dynamic and responsive.</p>
             <p class="mb-4">Many innovative services and digital features are also provided first from the cloud and developers using cloud-native tools and processes to build modern applications can leverage these new features early on to build a competitive advantage. </p>
         ',
@@ -1343,7 +1343,7 @@ return [
         'complete' => false,
         'pages' => [
             'page1' => [
-                'title' => 'Move',
+                'title' => 'Build',
                 'questions' => [
                     'q6'=>[
                         'type'=>'groupbutton',
@@ -1496,7 +1496,7 @@ return [
                 ]
             ],
             'page2' => [
-                'title' => 'Move',
+                'title' => 'Build',
                 'questions' => [
                     'q7'=>[
                         'type'=>'groupbutton',
@@ -1754,8 +1754,8 @@ return [
     'manage' => [
         'title' => 'Manage',
         'description' => '
-            <h2 class="">Manage</h2>
-            <p class="mb-2">With existing applications being moved to the cloud and new services built in the cloud, a modern infrastructure is highly dynamic. Depending on development in the application estate, workloads and data need to be integrated and shifted to the most applicable platform – depending on cost, performance, compliance etc.</p>
+            <h2 class="font-black text-yellow-light text-xl sm:text-3xl">Manage</h2>
+            <p class="mb-2">With existing applications being moved to the cloud and new services built in the cloud, a modern infrastructure is highly dynamic. Depending on development in the application estate, workloads and data need to be integrated and shifted to the most applicable platform – depending on cost, performance, compliance, etc.</p>
             <p class="mb-4">In addition to having a suitable architecture, it is paramount to have appropriate tools and processes in place to orchestrate, optimize and govern the hybrid multi-cloud environment.</p>
         ',
         'background' => 'value.png',

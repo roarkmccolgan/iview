@@ -11,7 +11,7 @@ return array(
     'change-langauge'=>'Change language',
     'download-now'=>'Download Now',
 
-    'title'=>'IDC Cloud Journey Assessment sponsored by IBM',
+    'title'=>'IDC Cloud Journey Assessment<br/>sponsored by IBM',
     'sub-title'=>'Evaluate your Cloud Journey',
     'landing'=>'
         <p class="mb-2">
@@ -39,6 +39,7 @@ return array(
     'complete' => 'Complete!',
     'finishtxt' => '
         <h2 class="font-bold leading-tight mb-4">Thank you for completing the IDC Cloud Journey Assessment</h2>
+        <p class="mb-4 font-bold">You are now one step closer to mastering cloud and becoming a more agile and resilient enterprise.</p>
         <p class="mb-4">Based on your input, your aggregate score means that you are at the level of a <strong class="font-bold text-ibm-blue">:stage</strong>.</p>
         <p class="mb-4 mt-4">Please tell us a little more about yourself to receive your personalised report.</p>
         <img src=":url/images/tools/16/report.png" alt="" class="w-5/6 mx-auto" />

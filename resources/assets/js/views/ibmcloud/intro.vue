@@ -3,7 +3,7 @@
 		<div class="bg-no-repeat bg-contain bg-right-bottom bg-blackblack" :style="`background-image: url('/images/tools/${assessment.tool.id}/ibm-cloud-products-leadspace.webp');`">
 			<div class="container mx-auto flex flex-wrap items-center mb-4 py-12 sm:py-20">
 				<div class="flex-1 text-white p-8">
-					<h1 class="font-bold leading-tight">{{ $t('ibmcloud.title') }}</h1>
+					<h1 class="font-bold leading-tight" v-html="$t('ibmcloud.title')"></h1>
 					<router-link class="inline-block font-bold uppercase text-center border border-white text-white mt-8 py-2 px-4 no-underline" :to="'/questions/1'">{{ $t('ibmcloud.startbut') }} <font-awesome-icon class="ml-2" :icon="icons.faArrowRight" /></router-link>
 				</div>
 				<div class="hidden sm:block flex w-full sm:w-auto mt-2 sm:mt-0" v-show="assessment.languages.length>1">
