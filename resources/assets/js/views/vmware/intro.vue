@@ -1,6 +1,6 @@
 <template>
 	<div class="flex-grow">
-		<div class="container mx-auto bg-contain sm:bg-cover bg-top bg-no-repeat pt-36 sm:pt-16 pb-4" :style="`background-image: url('/images/tools/${assessment.tool.id}/homepage.jpg')`">
+		<div class="container mx-auto bg-contain sm:bg-cover bg-top bg-no-repeat pt-36 sm:pt-16 pb-4" :style="`background-image: url('/images/tools/${assessment.tool.id}/homepage.jpg?id=1')`">
 				<div class="w-full sm:w-1/2 sm:mb-24 p-5 sm:p-10 sm:bg-white-transparent">
 					<h1 class="text-blackblack font-light font-sapagile text-3xl sm:text-5xl leading-none mb-2">{{ $t('vmware.title') }}</h1>
 					<h3 class="text-blackblack font-sapagile leading-tight">{{ $t('vmware.sub-title') }}</h3>
