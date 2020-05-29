@@ -1,6 +1,6 @@
 <template>
-	<div class="mb-2 p-2" :class="[question.optionLabels ? gridClass : '']">
-		<h2 v-show="label" :key="'head'" class="mb-2 text-xl leading-tight " :class="[question.optionLabels ? 'sm:w-1/4 sm:text-base' : 'sm:text-2xl']">{{label}}</h2>
+	<div class="mb-6" :class="[question.optionLabels ? gridClass : '']">
+		<h2 v-show="label" :key="'head'" class="mb-4 text-base leading-tight " :class="[question.optionLabels ? 'sm:w-1/4 sm:text-base' : 'sm:text-2xl']">{{label}}</h2>
 		<transition-group
 			name="fade"
 			appear
@@ -60,12 +60,14 @@ export default{
 			},
 			normalClass: {
 				'block': true,
-				'text-grey-dark': true,
+				'text-grey-darkest': true,
 				'hover:bg-grey-lighter': true,
 				'hover:text-ibm-blue-light': true,
 				'focus:bg-grey-lighter': true,
 				'focus:text-ibm-blue': true,
 				'cursor-pointer': true,
+				'bg-grey-lighter': true,
+				'sm:bg-transparent': true,
 				//'hover:text-ntt-data-blue': true,
 			},
 			activeClass: {

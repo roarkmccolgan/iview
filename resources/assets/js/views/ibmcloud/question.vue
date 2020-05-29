@@ -5,8 +5,8 @@
 				<intermission-component :section="currentQuestion.section | toTitle" v-on:next-step="closeIntermission()" :info="currentQuestion.intermission" v-if="showIntermission"></intermission-component>
 			</div>
 			<div class="" v-else>
-				<div class="bg-blackblack pt-4 sm:pt-8 bg-no-repeat bg-contain bg-right-bottom" style="background-image: url('/images/tools/16/ibm-cloud-products-leadspace.webp')">
-					<div class="container mx-auto">
+				<div class="bg-blackblack pt-4 sm:pt-8 bg-no-repeat bg-right-top bg-50% sm:bg-contain" style="background-image: url('/images/tools/16/ibm-cloud-products-leadspace.webp')">
+					<div class="container mx-auto px-4 sm:px-0">
 						<div class="pt-2 flex items-center">
 							<div class="">
 								<button class="inline-block border border-grey-light hover:bg-ibmcloud-blue text-white hover:text-white pt-2 pb-1 px-2 rounded no-underline" @click.prevent="back"><font-awesome-icon :icon="faArrowLeft" /></button>
@@ -15,13 +15,13 @@
 								<!-- Progress indicator -->
 								<div class="flex items-center px-4">
 									<template v-for="(question, qkey) in questions">
-										<div class="w-4 h-4 border-2 border-white rounded-full" :class="{'bg-black': (question == currentQuestion || question.selected)}"></div>
+										<div class="w-4 h-4 border-2 border-white rounded-full" :class="{'bg-ibm-blue': (question == currentQuestion || question.selected)}"></div>
 										<div class="border-t-2 border-white flex-grow" v-show="qkey !== ('q'+Object.keys(questions).length)"></div>
 									</template>
 								</div>
-								<div class="flex items-center px-4 my-2 mt-4">
+								<div class="flex items-center justify-between px-4 my-2 mt-4">
 									<template v-for="(section, secKey) in questionsBySection">
-										<div class="flex-1 text-center rounded h-1 overflow-hidden" :class="[section.section == currentQuestion.section ? `bg-yellow-light` : 'bg-grey-light',secKey == 0 ? 'ml-2 cmr' : (secKey == questionsBySection.length - 1 ? 'mr-2 cml' : 'cmx')]">
+										<div class="text-center rounded h-1 overflow-hidden" :class="[section.section == currentQuestion.section ? `bg-yellow-light` : 'bg-grey-light',secKey == 0 ? 'cmr' : (secKey == questionsBySection.length - 1 ? 'cml' : 'cmx')]" :style="`width: ${secKey == 0 || secKey == questionsBySection.length - 1 ? (section.total*8.333333333) - 4.166666666 : section.total*8.333333333}%`">
 										</div>
 									</template>
 								</div>
@@ -30,14 +30,14 @@
 								<span class="text-sm text-white leading-tight">{{currentQuestion.title | toTitle}} <br/> {{ $t('general.question') | toTitle}} {{currentQuestion.section_info.number}} {{$t('general.of')}} {{currentQuestion.section_info.total}}</span>
 							</div>
 						</div>
-						<div class="py-8 text-white" v-html="currentQuestion.description"></div>
+						<div class="py-4 sm:py-8 text-white" v-html="currentQuestion.description"></div>
 					</div>
 				</div>
-				<div class="container mx-auto py-2 flex-grow">
+				<div class="container mx-auto py-2 flex-grow px-4 sm:px-0">
 					<span class="text-sm hidden sm:block sm:my-2">{{ $t('general.question') | toTitle}} {{currentQuestion.section_info.number}} {{$t('general.of')}} {{currentQuestion.section_info.total}}</span>
 					<transition name="fade">
 						<div>
-							<h1 class="font-bold text-ibm-blue-light text-2xl sm:text-3xl leading-tight mb-6" v-show="showDetails" v-html="currentQuestion.question"></h1>
+							<h1 class="font-bold text-ibm-blue-light text-xl sm:text-3xl leading-tight mb-4" v-show="showDetails" v-html="currentQuestion.question"></h1>
 							<div class="relative border p-2 text" :class="error.class" v-if="error">
 								{{error.message}}
 							</div>							
@@ -421,13 +421,13 @@ export default{
 </script>
 <style scoped>
 	.cml{
-		margin-left: 2.4rem;
+		margin-left: 0rem;
 	}
 	.cmr{
-		margin-right: 2.4rem;
+		margin-right: 0rem;
 	}
 	.cmx{
-		margin-left: 2.4rem;
-		margin-right: 2.4rem;
+		margin-left: 0rem;
+		margin-right: 0rem;
 	}
 </style>

@@ -492,6 +492,7 @@ module.exports = {
     'auto': 'auto',
     'cover': 'cover',
     'contain': 'contain',
+    '50%': '50%',
   },
 
 

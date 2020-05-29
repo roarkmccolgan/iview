@@ -1,6 +1,6 @@
 <template>
 	<div class="flex-grow">
-		<div class="bg-no-repeat bg-contain bg-right-bottom bg-blackblack" :style="`background-image: url('/images/tools/${assessment.tool.id}/ibm-cloud-products-leadspace.webp');`">
+		<div class="bg-no-repeat bg-right-top bg-blackblack bg-50% sm:bg-contain" :style="`background-image: url('/images/tools/${assessment.tool.id}/ibm-cloud-products-leadspace.webp');`">
 			<div class="container mx-auto flex flex-wrap items-center mb-4 py-12 sm:py-20">
 				<div class="flex-1 text-white p-8">
 					<h1 class="font-bold leading-tight" v-html="$t('ibmcloud.title')"></h1>
