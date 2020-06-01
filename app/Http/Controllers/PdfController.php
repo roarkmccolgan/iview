@@ -3165,7 +3165,7 @@ class PdfController extends Controller
             $widths = [
                 1 => '36mm',
                 2 => '78mm',
-                3 => '120mm',
+                3 => '117mm',
             ];
 
             $customCopy.= trans(
