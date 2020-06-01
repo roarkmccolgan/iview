@@ -3159,7 +3159,7 @@ trait GenerateReportTrait
                     'move'=>$widths[$moveNumber],
                     'build'=>$widths[$buildNumber],
                     'manage'=>$widths[$manageNumber],
-                    'url'=>asset('/images/tools/16/comparisonbg_overall.svg')
+                    'url'=>asset('/images/tools/16/comparisonbg_overall.png')
                 ]
             );
 

@@ -188,7 +188,7 @@ return array(
                 This group is characterized by restricted use of cloud. The typical cloud use consists of standard SaaS applications and VMs deployed in a single IaaS, and there is no defined road map for modernizing the application estate.
             </p>
         </div>
-        <div class="my-5 relative" style="width:190mm;height:90mm; background: url(:url) no-repeat; background-size:cover">
+        <div class="my-5 relative w-full" style="height:312px; background: url(:url) no-repeat; background-size:cover">
             <div class="bg-ibm-blue absolute" style="width: :overall; height: 10mm; top:15mm; left:33mm;"></div>
             <div class="bg-black absolute" style="width: :move; height: 10mm; top:29mm; left:33mm;"></div>
             <div class="bg-grey-dark absolute" style="width: :build; height: 10mm; top:43mm; left:33mm;"></div>
