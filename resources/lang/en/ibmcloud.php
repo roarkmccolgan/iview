@@ -217,8 +217,8 @@ return array(
         <div class="my-5 relative" style="width:200mm;height:94.7mm; background: url(:url) no-repeat; background-size:cover">
             <div class="bg-ibm-blue absolute" style="width: :overall; height: 13mm; top:18mm; left:43mm;"></div>
             <div class="bg-black absolute" style="width: :move; height: 13mm; top:36mm; left:43mm;"></div>
-            <div class="bg-grey-dark absolute" style="width: :build; height: 13mm; top:57mm; left:43mm;"></div>
-            <div class="bg-grey absolute" style="width: :manage; height: 13mm; top:72mm; left:43mm;"></div>
+            <div class="bg-grey-dark absolute" style="width: :build; height: 13mm; top:55mm; left:43mm;"></div>
+            <div class="bg-grey absolute" style="width: :manage; height: 13mm; top:71mm; left:43mm;"></div>
         </div>
         <div class="clearfix w-4/5 ml-auto">
             <h3 class="text mb-2">Recommendations:</h3>

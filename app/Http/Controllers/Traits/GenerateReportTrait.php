@@ -3147,9 +3147,9 @@ trait GenerateReportTrait
             $customCopy.= '<div class="pb"></div>';
 
             $widths = [
-                1 => '21mm',
-                2 => '63mm',
-                3 => '105mm',
+                1 => '36mm',
+                2 => '78mm',
+                3 => '117mm',
             ];
 
             $customCopy.= trans(
