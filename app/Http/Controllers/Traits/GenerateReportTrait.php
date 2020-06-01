@@ -3612,7 +3612,7 @@ trait GenerateReportTrait
 
 
                 $merge->merge();
-                $merge->save(storage_path().'/reports/ibmcloud-'.$timeStamp.'.pdf','browser');
+                $merge->save(storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf');
                 if (File::exists(storage_path().'/ibmcloud-'.$timeStamp.'.pdf')) {
                     File::delete(storage_path().'/ibmcloud-'.$timeStamp.'.pdf');
                 }
