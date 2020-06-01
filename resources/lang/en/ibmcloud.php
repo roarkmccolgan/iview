@@ -188,7 +188,7 @@ return array(
                 This group is characterized by restricted use of cloud. The typical cloud use consists of standard SaaS applications and VMs deployed in a single IaaS, and there is no defined road map for modernizing the application estate.
             </p>
         </div>
-        <div class="my-5 relative w-full border" style="height:312px; background: url(:url) no-repeat; background-size:cover">
+        <div class="my-5 relative" style="width:160mm;height:75.79mm; background: url(:url) no-repeat; background-size:cover">
             <div class="bg-ibm-blue absolute" style="width: :overall; height: 10mm; top:15mm; left:33mm;"></div>
             <div class="bg-black absolute" style="width: :move; height: 10mm; top:29mm; left:33mm;"></div>
             <div class="bg-grey-dark absolute" style="width: :build; height: 10mm; top:43mm; left:33mm;"></div>
@@ -214,7 +214,7 @@ return array(
                 This group is characterized by considerable, but incoherent use of cloud. At least some cloud-native technologies have been adopted, and selected applications moved to the cloud, but there is no complete application modernization road map in place, nor set processes for managing workloads across multiple clouds.
             </p>
         </div>
-        <div class="my-5 relative" style="width:160mm;height:75.79mm; background: url(:url) no-repeat; background-size:cover">
+        <div class="my-5 relative w-full" style="background: url(:url) no-repeat; background-size:cover">
             <div class="bg-ibm-blue absolute" style="width: :overall; height: 10mm; top:15mm; left:33mm;"></div>
             <div class="bg-black absolute" style="width: :move; height: 10mm; top:29mm; left:33mm;"></div>
             <div class="bg-grey-dark absolute" style="width: :build; height: 10mm; top:43mm; left:33mm;"></div>
