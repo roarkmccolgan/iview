@@ -214,11 +214,11 @@ return array(
                 This group is characterized by considerable, but incoherent use of cloud. At least some cloud-native technologies have been adopted, and selected applications moved to the cloud, but there is no complete application modernization road map in place, nor set processes for managing workloads across multiple clouds.
             </p>
         </div>
-        <div class="my-5 relative" style="width:190mm;height:90mm; background: url(:url) no-repeat; background-size:cover">
-            <div class="bg-ibm-blue absolute" style="width: :overall; height: 10mm; top:15mm; left:33mm;"></div>
-            <div class="bg-black absolute" style="width: :move; height: 10mm; top:29mm; left:33mm;"></div>
-            <div class="bg-grey-dark absolute" style="width: :build; height: 10mm; top:43mm; left:33mm;"></div>
-            <div class="bg-grey absolute" style="width: :manage; height: 10mm; top:57mm; left:33mm;"></div>
+        <div class="my-5 relative" style="width:200mm;height:94.7mm; background: url(:url) no-repeat; background-size:cover">
+            <div class="bg-ibm-blue absolute" style="width: :overall; height: 10mm; top:15mm; left:38mm;"></div>
+            <div class="bg-black absolute" style="width: :move; height: 10mm; top:29mm; left:38mm;"></div>
+            <div class="bg-grey-dark absolute" style="width: :build; height: 10mm; top:43mm; left:38mm;"></div>
+            <div class="bg-grey absolute" style="width: :manage; height: 10mm; top:57mm; left:38mm;"></div>
         </div>
         <div class="clearfix w-4/5 ml-auto">
             <h3 class="text mb-2">Recommendations:</h3>
