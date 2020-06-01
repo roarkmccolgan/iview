@@ -13,7 +13,7 @@ $manifest = json_decode($json, TRUE);
 		<title>Report</title>
 		<link rel="stylesheet" href="{{ asset('bundle/'.$manifest['ibmcloud'][0])}}">
 	</head>
-	<body class="font-report font-light text-xs text-grey-darker leading-normal">
+	<body class="font-report font-light text-sm text-grey-darker leading-normal">
 		<div class="w-5/6 mx-auto">
 			{!!$sectionCopy!!}
 		</div>

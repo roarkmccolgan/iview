@@ -38,7 +38,7 @@ return array(
 
     'complete' => 'Complete!',
     'finishtxt' => '
-        <h2 class="font-bold leading-tight mb-4">Thank you for completing the IDC Cloud Journey Assessment</h2>
+        <h2 class="font-bold leading-tight mb-4">Thank you for completing the IDC Cloud Journey Assessment sponsored by IBM</h2>
         <p class="mb-4 font-bold">You are now one step closer to mastering cloud and becoming a more agile and resilient enterprise.</p>
         <p class="mb-4">Based on your input, your aggregate score means that you are at the level of a <strong class="font-bold text-ibm-blue">:stage</strong>.</p>
         <p class="mb-4 mt-4">Please tell us a little more about yourself to receive your personalised report.</p>
@@ -48,14 +48,14 @@ return array(
     'complete_body' => '
         Your custom report will arrive in your inbox soon.<br/>
         Please check in your junk folder if you don\'t receive it within 5 minutes.<br/><br/>
-        <a class="text-trend-red" target="_blank" href="https://www.ibm.com/cloud">
+        <a class="text-ibm-blue" target="_blank" href="https://www.ibm.com/cloud">
             Click here for more information
         </a>',
     'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @ntt. Interested? ',// http://bit.ly/2gslXEh
     'email'=>[
-        'subject' => 'IDC\'s Cloud Journey Assesment',
+        'subject' => 'IDC\'s Cloud Journey Assesment sponsored by IBM',
         'hi' => 'Hi :Fname',
-        'body' => 'As promised, here\'s a link to download your IDC\'s Cloud Journey Assesment Report. This breaks down your results by category and provides you with actionable recommendations.',
+        'body' => 'As promised, here\'s a link to download your IDC\'s Cloud Journey Assesment Report sponsored by IBM. This breaks down your results by category and provides you with actionable recommendations.',
         'link' => 'Download PDF Report',
         'link_inline' => 'View Report in your browser',
         'extra' => 'Once you\'ve read the report why not visit IBM <a href="https://www.ibm.com/cloud" style="color:#054683">Cloud Services</a>',

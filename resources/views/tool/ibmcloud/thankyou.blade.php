@@ -40,7 +40,7 @@
 	<div class="flex-grow">
 		<div class="container mx-auto flex flex-wrap items-center mb-4 py-12 sm:py-20">
 			<div class="flex-1 text-black p-8">
-				<h1 class="font-bold leading-tight">{{ $title }}</h1>
+				<h1 class="font-bold leading-tight">{!! $title !!}</h1>
 				<h3 class="font-light leading-tight">{{ $sub_title }}</h3>
 			</div>
 		</div>
