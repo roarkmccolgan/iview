@@ -14,8 +14,8 @@ $manifest = json_decode($json, TRUE);
 	<link rel="stylesheet" href="{{ asset('bundle/'.$manifest['ibmcloud'][0])}}">
 </head>
 <body>
-<div class="w-5/6 mx-auto pb-2 pt-4 clearfix text-black text-sm">
-	{{ trans('ibmcloud.title') }}
+<div class="w-5/6 mx-auto pb-2 pt-4 clearfix text-black text-sm text-right">
+	{!! trans('ibmcloud.title') !!}
 </div>
 <div class="w-5/6 mx-auto border-b border-grey"></div>
 </body>

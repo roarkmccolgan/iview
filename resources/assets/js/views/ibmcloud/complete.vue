@@ -81,7 +81,7 @@
 										<label class="block uppercase tracking-wide text-grey-light text-xs font-bold mb-2" for="company">
 											{{ $t('ibmcloud.leadgen.company') }}
 										</label>
-										<input class="appearance-none block w-full bg-grey-dark text-black border py-3 px-4 mb-2" :class="[errors.position ? 'border-red' : '']" id="position" name="company" type="text" @blur="hasError">
+										<input class="appearance-none block w-full bg-grey-dark text-black border py-3 px-4 mb-2" :class="[errors.position ? 'border-red' : '']" id="company" name="company" type="text" @blur="hasError">
 										<p class="text-red text-xs italic" v-show="errors.position" v-html="$t('ibmcloud.leadgen.errorCompany')"></p>
 									</div>
 								</div>
@@ -133,8 +133,8 @@
 									</label>
 								</div>
 								<div class="mb-6 w-full">
-									<!-- <button type="submit" :disabled="isSubmitting" class="text-center block bg-ibm-blue hover:bg-white text-white hover:text-blackblack py-4 px-6 no-underline" :class="[{'cursor-not-allowed':isSubmitting}]" @click.prevent="checkForErrors"><font-awesome-icon class="mr-2" :class="[{'fa-spin': isSubmitting}]" :icon="isSubmitting ? icons.faSyncAlt : icons.faEnvelope"></font-awesome-icon> {{ $t('ibmcloud.leadgen.send') }}</button> -->
-									<a href="#" disabled class="text-center block bg-ibm-blue hover:bg-white text-white hover:text-blackblack py-4 px-6 no-underline" :class="[{'cursor-not-allowed':isSubmitting}]" @click.prevent=""><font-awesome-icon class="mr-2" :class="[{'fa-spin': isSubmitting}]" :icon="isSubmitting ? icons.faSyncAlt : icons.faEnvelope"></font-awesome-icon> {{ $t('ibmcloud.leadgen.send') }}</a>
+									<button type="submit" :disabled="isSubmitting" class="text-center block bg-ibm-blue hover:bg-white text-white hover:text-blackblack py-4 px-6 no-underline" :class="[{'cursor-not-allowed':isSubmitting}]" @click.prevent="checkForErrors"><font-awesome-icon class="mr-2" :class="[{'fa-spin': isSubmitting}]" :icon="isSubmitting ? icons.faSyncAlt : icons.faEnvelope"></font-awesome-icon> {{ $t('ibmcloud.leadgen.send') }}</button>
+									<!-- <a href="#" disabled class="text-center block bg-ibm-blue hover:bg-white text-white hover:text-blackblack py-4 px-6 no-underline" :class="[{'cursor-not-allowed':isSubmitting}]" @click.prevent=""><font-awesome-icon class="mr-2" :class="[{'fa-spin': isSubmitting}]" :icon="isSubmitting ? icons.faSyncAlt : icons.faEnvelope"></font-awesome-icon> {{ $t('ibmcloud.leadgen.send') }}</a> -->
 								</div>
 							</div>
 						</form>

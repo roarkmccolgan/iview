@@ -1,0 +1,74 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 543 351">
+  <title>data_point_4</title>
+  <text transform="translate(16.02 14.7)" style="font-size: 14px;font-family: OpenSans-Bold, Open Sans;font-weight: 700">Share of Organizations Shifting Data or Workloads Of Cloud Services<tspan x="0" y="16.8">to Other Deployment Models</tspan></text>
+  <rect x="18.5" y="77" width="130.05" height="64" style="fill: #fff;stroke: #006afb;stroke-miterlimit: 10"/>
+  <rect x="18.96" y="202.5" width="130.05" height="64" style="fill: #e6e6e6;stroke: #006afb;stroke-miterlimit: 10"/>
+  <rect x="336.5" y="74.5" width="143" height="47.87" style="fill: #fff;stroke: #006afb;stroke-miterlimit: 10"/>
+  <rect x="336.5" y="133.14" width="143" height="47.87" style="fill: #e6e6e6;stroke: #006afb;stroke-miterlimit: 10"/>
+  <rect x="336.5" y="277.14" width="143" height="47.87" style="fill: #999;stroke: #006afb;stroke-miterlimit: 10"/>
+  <text transform="translate(32.09 106.01)" style="font-size: 14px;font-family: OpenSans-Bold, Open Sans;font-weight: 700">Public cloud<tspan x="0" y="16.8">services</tspan></text>
+  <text transform="translate(359.09 95.01)" style="font-size: 14px;font-family: OpenSans-Bold, Open Sans;font-weight: 700">Public cloud<tspan x="0" y="16.8">services</tspan></text>
+  <text transform="translate(32.59 229.51)" style="font-size: 14px;font-family: OpenSans-Bold, Open Sans;font-weight: 700">Hosted private<tspan x="0" y="16.8">cloud</tspan></text>
+  <text transform="translate(355.09 154.01)" style="font-size: 14px;font-family: OpenSans-Bold, Open Sans;font-weight: 700">Hosted private<tspan x="0" y="16.8">cloud</tspan></text>
+  <text transform="translate(355.09 298.01)" style="font-size: 14px;font-family: OpenSans-Bold, Open Sans;font-weight: 700">On-premises<tspan x="0" y="16.8">infrastructure</tspan></text>
+  <circle cx="185" cy="72" r="14" style="fill: #2279bc"/>
+  <circle cx="185.5" cy="109.5" r="14" style="fill: #36aec7"/>
+  <circle cx="186" cy="147" r="14" style="fill: #8ebf3f"/>
+  <circle cx="185" cy="198" r="14" style="fill: #842573"/>
+  <circle cx="185.5" cy="235.5" r="14" style="fill: #ca2e27"/>
+  <circle cx="186" cy="273" r="14" style="fill: #f3c01d"/>
+  <line x1="148.55" y1="109.5" x2="172" y2="109.5" style="fill: none;stroke: #36aec7;stroke-miterlimit: 10"/>
+  <line x1="149" y1="91" x2="177" y2="77" style="fill: none;stroke: #2279bc;stroke-miterlimit: 10"/>
+  <line x1="149" y1="130" x2="177" y2="144" style="fill: none;stroke: #8ebf3f;stroke-miterlimit: 10"/>
+  <line x1="148.55" y1="235.5" x2="172" y2="235.5" style="fill: none;stroke: #ca2e27;stroke-miterlimit: 10"/>
+  <line x1="149" y1="217" x2="177" y2="203" style="fill: none;stroke: #842573;stroke-miterlimit: 10"/>
+  <line x1="149" y1="256" x2="177" y2="270" style="fill: none;stroke: #f3c01d;stroke-miterlimit: 10"/>
+  <g>
+    <polyline points="198.5 197.5 281.5 197.5 281.5 88.5 315.44 88.5" style="fill: none;stroke: #842573;stroke-miterlimit: 10"/>
+    <polygon points="322.5 88.5 312.55 92.57 314.91 88.5 312.55 84.44 322.5 88.5" style="fill: #842573"/>
+  </g>
+  <g>
+    <polyline points="199.5 235.5 306.5 235.5 306.5 151.5 315.44 151.5" style="fill: none;stroke: #ca2e27;stroke-miterlimit: 10"/>
+    <polygon points="322.5 151.5 312.55 155.57 314.91 151.5 312.55 147.44 322.5 151.5" style="fill: #ca2e27"/>
+  </g>
+  <g>
+    <polyline points="199.5 272.5 293.5 272.5 293.5 291.5 315.44 291.5" style="fill: none;stroke: #f3c01d;stroke-miterlimit: 10"/>
+    <polygon points="322.5 291.5 312.55 295.57 314.91 291.5 312.55 287.44 322.5 291.5" style="fill: #f3c01d"/>
+  </g>
+  <g>
+    <polyline points="199.5 146.5 254.5 146.5 254.5 314.5 315.44 314.5" style="fill: none;stroke: #8ebf3f;stroke-miterlimit: 10"/>
+    <polygon points="322.5 314.5 312.55 318.57 314.91 314.5 312.55 310.44 322.5 314.5" style="fill: #8ebf3f"/>
+  </g>
+  <g>
+    <polyline points="199.5 109.5 293.5 109.5 293.5 167.5 315.44 167.5" style="fill: none;stroke: #36aec7;stroke-miterlimit: 10"/>
+    <polygon points="322.5 167.5 312.55 171.57 314.91 167.5 312.55 163.44 322.5 167.5" style="fill: #36aec7"/>
+  </g>
+  <g>
+    <polyline points="198.5 71.5 267.5 71.5 267.5 101.5 315.44 101.5" style="fill: none;stroke: #36aec7;stroke-miterlimit: 10"/>
+    <polygon points="322.5 101.5 312.55 105.57 314.91 101.5 312.55 97.44 322.5 101.5" style="fill: #36aec7"/>
+  </g>
+  <g>
+    <text transform="translate(173.54 77.3)" style="font-size: 14px;fill: #fff;font-family: OpenSans-Bold, Open Sans;font-weight: 700">16</text>
+    <text transform="translate(189.52 72.63) scale(0.58)" style="font-size: 14px;fill: #fff;font-family: OpenSans-Bold, Open Sans;font-weight: 700">%</text>
+  </g>
+  <g>
+    <text transform="translate(178.54 116.3)" style="font-size: 14px;fill: #fff;font-family: OpenSans-Bold, Open Sans;font-weight: 700">9</text>
+    <text transform="translate(186.53 111.63) scale(0.58)" style="font-size: 14px;fill: #fff;font-family: OpenSans-Bold, Open Sans;font-weight: 700">%</text>
+  </g>
+  <g>
+    <text transform="translate(178.54 153.3)" style="font-size: 14px;fill: #fff;font-family: OpenSans-Bold, Open Sans;font-weight: 700">7</text>
+    <text transform="translate(186.53 148.63) scale(0.58)" style="font-size: 14px;fill: #fff;font-family: OpenSans-Bold, Open Sans;font-weight: 700">%</text>
+  </g>
+  <g>
+    <text transform="translate(178.54 205.3)" style="font-size: 14px;fill: #fff;font-family: OpenSans-Bold, Open Sans;font-weight: 700">8</text>
+    <text transform="translate(186.53 200.63) scale(0.58)" style="font-size: 14px;fill: #fff;font-family: OpenSans-Bold, Open Sans;font-weight: 700">%</text>
+  </g>
+  <g>
+    <text transform="translate(178.54 242.3)" style="font-size: 14px;fill: #fff;font-family: OpenSans-Bold, Open Sans;font-weight: 700">8</text>
+    <text transform="translate(186.53 237.63) scale(0.58)" style="font-size: 14px;fill: #fff;font-family: OpenSans-Bold, Open Sans;font-weight: 700">%</text>
+  </g>
+  <g>
+    <text transform="translate(178.54 279.3)" style="font-size: 14px;fill: #fff;font-family: OpenSans-Bold, Open Sans;font-weight: 700">9</text>
+    <text transform="translate(186.53 274.63) scale(0.58)" style="font-size: 14px;fill: #fff;font-family: OpenSans-Bold, Open Sans;font-weight: 700">%</text>
+  </g>
+</svg>

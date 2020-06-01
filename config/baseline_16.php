@@ -52,7 +52,7 @@ return [
         'report_recipients' => [
             'roarkmccolgan@gmail.com',
             'lborthwick@idc.com',
-        ],
+        ]
     ],
     'move' => [
         'baseline' => 8.90,
@@ -93,7 +93,7 @@ return [
                 'benchmark' => 20,
             ],
             'stage2' => [
-                'low' => 4.1,
+                'low' => 40.1,
                 'high' => 75,
                 'total' => 3,
                 'benchmark' => 34,
@@ -104,6 +104,9 @@ return [
                 'total' => 5,
                 'benchmark' => 28,
             ]
+        ],
+        'normalise_using_screeners' => [
+            'calc' => "(\$result['general']['score'] / 3) + \$result[\$key]['score']"
         ]
     ],
     'build' => [
@@ -145,7 +148,7 @@ return [
                 'benchmark' => 20,
             ],
             'stage2' => [
-                'low' => 4.1,
+                'low' => 40.1,
                 'high' => 75,
                 'total' => 3,
                 'benchmark' => 34,
@@ -156,6 +159,9 @@ return [
                 'total' => 5,
                 'benchmark' => 28,
             ]
+        ],
+        'normalise_using_screeners' => [
+            'calc' => "(\$result['general']['score'] / 3) + \$result[\$key]['score']"
         ]
     ],
     'manage' => [
@@ -196,7 +202,7 @@ return [
                 'benchmark' => 20,
             ],
             'stage2' => [
-                'low' => 4.1,
+                'low' => 40.1,
                 'high' => 75,
                 'total' => 3,
                 'benchmark' => 34,
@@ -207,6 +213,9 @@ return [
                 'total' => 5,
                 'benchmark' => 28,
             ]
+        ],
+        'normalise_using_screeners' => [
+            'calc' => "(\$result['general']['score'] / 3) + \$result[\$key]['score']"
         ]
     ]
 ];

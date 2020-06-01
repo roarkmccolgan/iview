@@ -1,0 +1,106 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1615.75 617.95">
+  <defs>
+    <linearGradient id="linear-gradient" x1="338.12" y1="371.78" x2="1614.87" y2="371.78" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#ccc"/>
+    </linearGradient>
+  </defs>
+  <title>comparison_move_2</title>
+  <line x1="322.98" y1="50.04" x2="322.98" y2="567.54" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
+  <rect x="338.12" y="194.54" width="1276.75" height="354.47" style="opacity: 0.5;fill: url(#linear-gradient)"/>
+  <line x1="752.98" y1="50.04" x2="752.98" y2="567.54" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
+  <line x1="1184.98" y1="50.04" x2="1184.98" y2="567.54" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
+  <rect x="338.12" y="274.54" width="760.75" height="181" style="fill: #171717"/>
+  <text transform="translate(685.93 373.67)" style="font-size: 26.131669998168945px;fill: #fff;font-family: OpenSans, Open Sans">You are here</text>
+  <line x1="0.37" y1="181.04" x2="1614.27" y2="181.04" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
+  <text transform="translate(502.93 76.67)" style="font-size: 26.131669998168945px;fill: #999;font-family: OpenSans, Open Sans">Cloud<tspan style="font-size: 36.85363006591797px;fill!: #000"><tspan x="0" y="37.56">Experimenter</tspan></tspan></text>
+  <text transform="translate(934.03 76.67)" style="font-size: 26.131669998168945px;fill: #999;font-family: OpenSans, Open Sans">Cloud<tspan style="font-size: 36.85363006591797px;fill!: #000"><tspan x="0" y="36">Optimizer</tspan></tspan></text>
+  <text transform="translate(1345.12 76.67)" style="font-size: 26.131669998168945px;fill: #999;font-family: OpenSans, Open Sans">Cloud<tspan style="font-size: 36.85363006591797px;fill!: #000"><tspan x="0" y="36">Innovator</tspan></tspan><tspan x="0" y="72">Benefits</tspan></text>
+  <text transform="translate(106.26 382.26)" style="font-size: 72px;font-family: OpenSans-Light, Open Sans;font-weight: 300">Move</text>
+  <line x1="0.91" y1="568.04" x2="1614.8" y2="568.04" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
+  <g id="Share_cloud_cloud_computing_human_robot" data-name="Share cloud cloud computing human robot">
+    <circle cx="1289.89" cy="103.33" r="7" style="fill: #fff"/>
+    <path d="M1236.69,83.08a14,14,0,0,0,4.2.65h7v-5.6h28v5.6h7a13.83,13.83,0,0,0,5.6-1.18,14,14,0,0,0-2-26.35,11.18,11.18,0,0,0-14.26-6.84,9.78,9.78,0,0,0-1.45.63,16.78,16.78,0,0,0-31,5.79,14,14,0,0,0-3,27.3Zm11.2-21.75h28v11.2h-28Z" style="fill: #fff"/>
+    <circle cx="1243.69" cy="108.93" r="2.8" style="fill: #fff"/>
+    <path d="M1245.09,97.73a2.8,2.8,0,0,0-2.8-2.8h-11.2a2.81,2.81,0,0,0-2.8,2.8v2.8h16.8Z" style="fill: #fff"/>
+    <circle cx="1229.69" cy="108.93" r="2.8" style="fill: #fff"/>
+    <path d="M1289.89,107.53a4.2,4.2,0,1,0-4.2-4.2A4.2,4.2,0,0,0,1289.89,107.53Zm0-5.6a1.4,1.4,0,1,1-1.4,1.4A1.39,1.39,0,0,1,1289.89,101.93Z" style="fill: #006afb"/>
+    <path d="M1289.89,88V83.43A15.38,15.38,0,0,0,1287.5,55a12.58,12.58,0,0,0-16.23-6.83,18.18,18.18,0,0,0-32.72,6.3,15.39,15.39,0,0,0-3.26,29.55v4.12a4.21,4.21,0,0,0-2.8,3.95v1.4h-1.4a4.21,4.21,0,0,0-4.2,4.2v1.4h-2.8a4.21,4.21,0,0,0-4.2,4.2v16.8a4.23,4.23,0,0,0,4.2,4.2h25.2a4.21,4.21,0,0,0,4.2-4.2v-16.8a4.2,4.2,0,0,0-4.2-4.2h-2.8v-1.4a4.2,4.2,0,0,0-4.2-4.2h-1.4v-1.4a4.21,4.21,0,0,0-2.8-3.95V84.86a16.49,16.49,0,0,0,2.8.27h5.6v4.2a1.4,1.4,0,0,0,1.4,1.4h28a1.4,1.4,0,0,0,1.4-1.4v-4.2h5.6a14.92,14.92,0,0,0,4.2-.61V88a15.42,15.42,0,0,0-14,15.09l-2.73,8.19a1.42,1.42,0,0,0,1.33,1.85h4.2v4.2a1.4,1.4,0,0,0,1.4,1.4h4.2v4.2a1.4,1.4,0,0,0,1.4,1.4h11.2a1.4,1.4,0,0,0,1.4-1.4V117a15.38,15.38,0,0,0-5.6-29Zm-54.6,4.13a1.4,1.4,0,1,1,2.8,0v1.4h-2.8Zm14,9.8a1.39,1.39,0,0,1,1.4,1.4v16.8a1.4,1.4,0,0,1-1.4,1.4h-25.2a1.4,1.4,0,0,1-1.4-1.4v-16.8a1.4,1.4,0,0,1,1.4-1.4Zm-7-5.6a1.39,1.39,0,0,1,1.4,1.4v1.4h-14v-1.4a1.4,1.4,0,0,1,1.4-1.4Zm32.2-8.4h-25.2v-8.4h25.2Zm-25.2-16.8v-8.4h25.2v8.4Zm22.4,2.8v2.8h-19.6v-2.8Zm11.2,8.4h-5.6v-4.2a1.39,1.39,0,0,0-1.4-1.4h-1.4v-2.8h1.4a1.4,1.4,0,0,0,1.4-1.4V61.33a1.39,1.39,0,0,0-1.4-1.4h-28a1.4,1.4,0,0,0-1.4,1.4v11.2a1.4,1.4,0,0,0,1.4,1.4h1.4v2.8h-1.4a1.4,1.4,0,0,0-1.4,1.4v4.2h-5.6a12.6,12.6,0,0,1-1-25.15,1.39,1.39,0,0,0,1.26-1.17,15.38,15.38,0,0,1,28.42-5.31,1.39,1.39,0,0,0,1.84.53,9.8,9.8,0,0,1,13.74,5.43,1.4,1.4,0,0,0,1,.89,12.6,12.6,0,0,1-3.19,24.78Zm12.6,21a5.6,5.6,0,1,1-5.6-5.6A5.6,5.6,0,0,1,1295.49,103.33Zm-2,11.55a1.42,1.42,0,0,0-.84,1.27v5.38h-8.4v-4.2a1.39,1.39,0,0,0-1.4-1.4h-4.2v-4.2a1.39,1.39,0,0,0-1.4-1.4h-3.65l2.18-6.56a1.31,1.31,0,0,0,.07-.44,12.62,12.62,0,0,1,12.6-12.6v4.32a8.41,8.41,0,1,0,2.8,0v-4a12.6,12.6,0,0,1,2.24,23.83Z" style="fill: #006afb"/>
+    <path d="M1229.69,113.13a4.2,4.2,0,1,0-4.2-4.2A4.2,4.2,0,0,0,1229.69,113.13Zm0-5.6a1.4,1.4,0,1,1-1.4,1.4A1.39,1.39,0,0,1,1229.69,107.53Z" style="fill: #006afb"/>
+    <path d="M1243.69,113.13a4.2,4.2,0,1,0-4.2-4.2A4.2,4.2,0,0,0,1243.69,113.13Zm0-5.6a1.4,1.4,0,1,1-1.4,1.4A1.39,1.39,0,0,1,1243.69,107.53Z" style="fill: #006afb"/>
+    <rect x="1232.49" y="115.93" width="8.4" height="2.8" style="fill: #006afb"/>
+    <rect x="1226.89" y="115.93" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1243.69" y="115.93" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1256.29" y="110.33" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1264.69" y="110.33" width="2.8" height="2.8" style="fill: #006afb"/>
+    <path d="M1285.38,60.26l-.71,2.71a7,7,0,0,1-1.78,13.76v2.8a9.8,9.8,0,0,0,2.49-19.27Z" style="fill: #006afb"/>
+    <path d="M1233.89,69.73a7,7,0,0,1,6.42-7l-.23-2.79a9.8,9.8,0,0,0,.81,19.56v-2.8A7,7,0,0,1,1233.89,69.73Z" style="fill: #006afb"/>
+    <rect x="1252.09" y="65.53" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1260.49" y="65.53" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1268.89" y="65.53" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1252.09" y="82.33" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1260.49" y="82.33" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1268.89" y="82.33" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1239.49" y="40.33" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1233.89" y="40.33" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1228.29" y="40.33" width="2.8" height="2.8" style="fill: #006afb"/>
+    <path d="M1222.69,43.13h2.8v-2.8h-4.2a1.4,1.4,0,0,0-1.4,1.4v4.2h2.8Z" style="fill: #006afb"/>
+    <rect x="1219.89" y="48.73" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1219.89" y="54.33" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1219.89" y="59.93" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1219.89" y="65.53" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1219.89" y="71.13" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1219.89" y="76.73" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1219.89" y="82.33" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1219.89" y="87.93" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1219.89" y="93.53" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1281.49" y="40.33" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1287.09" y="40.33" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1292.69" y="40.33" width="2.8" height="2.8" style="fill: #006afb"/>
+    <path d="M1302.49,40.33h-4.2v2.8h2.8v2.8h2.8v-4.2A1.39,1.39,0,0,0,1302.49,40.33Z" style="fill: #006afb"/>
+    <rect x="1301.09" y="48.73" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1301.09" y="54.33" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1301.09" y="59.93" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1301.09" y="65.53" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1301.09" y="71.13" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1301.09" y="76.73" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1301.09" y="82.33" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1301.09" y="87.93" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1275.89" y="40.33" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1270.29" y="40.33" width="2.8" height="2.8" style="fill: #006afb"/>
+  </g>
+  <g id="Browser_web_cloud_computing_cloud_website" data-name="Browser web cloud computing cloud website">
+    <path d="M451.84,95.4a11.29,11.29,0,0,0-6.36-6.66V52.93h-61.6a2.81,2.81,0,0,0-2.8,2.8v8.4h56V88.75c-.32.13-.64.28-.95.44a16.78,16.78,0,0,0-31,5.79,14,14,0,0,0,1.16,28h42a14,14,0,0,0,3.56-27.53Z" style="fill: #fff"/>
+    <rect x="385.28" y="57.13" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="390.88" y="57.13" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="396.48" y="57.13" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="430.08" y="57.13" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="393.68" y="45.93" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="399.28" y="45.93" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="404.88" y="45.93" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="438.48" y="45.93" width="2.8" height="2.8" style="fill: #006afb"/>
+    <path d="M452.89,94.24a12.64,12.64,0,0,0-6-6.37V44.53a4.21,4.21,0,0,0-4.2-4.2h-50.4a4.21,4.21,0,0,0-4.2,4.2v7h-4.2a4.21,4.21,0,0,0-4.2,4.2v42a4.22,4.22,0,0,0,4.2,4.2h8.72a15.34,15.34,0,0,0,13.68,22.4h42a15.4,15.4,0,0,0,4.61-30.09Zm-62-49.71a1.4,1.4,0,0,1,1.4-1.4h50.4a1.4,1.4,0,0,1,1.4,1.4v7h-53.2Zm47.35,9.8h5.85V86.88a11.78,11.78,0,0,0-5.6,0V55.73A4.13,4.13,0,0,0,438.23,54.33Zm-55.75,1.4a1.4,1.4,0,0,1,1.4-1.4h50.4a1.4,1.4,0,0,1,1.4,1.4v7h-53.2Zm1.4,43.4a1.4,1.4,0,0,1-1.4-1.4V65.53h53.2V86.18a18.14,18.14,0,0,0-31.74,7.53,15.42,15.42,0,0,0-9.49,5.42Zm64.4,22.4h-42a12.6,12.6,0,0,1-1-25.15,1.39,1.39,0,0,0,1.26-1.17,15.37,15.37,0,0,1,28.42-5.31,1.4,1.4,0,0,0,1.85.53,9.58,9.58,0,0,1,4.51-1.1,9.79,9.79,0,0,1,9.23,6.53,1.38,1.38,0,0,0,1,.89,12.6,12.6,0,0,1-3.19,24.78Z" style="fill: #006afb"/>
+    <path d="M450.77,99.46l-.71,2.71a7,7,0,0,1-1.78,13.76v2.8a9.8,9.8,0,0,0,2.49-19.27Z" style="fill: #006afb"/>
+    <path d="M399.28,108.93a7,7,0,0,1,6.42-7l-.23-2.79a9.8,9.8,0,0,0,.81,19.56v-2.8A7,7,0,0,1,399.28,108.93Z" style="fill: #006afb"/>
+    <rect x="409.08" y="115.93" width="5.6" height="2.8" style="fill: #006afb"/>
+  </g>
+  <g id="Idea_arrow_cloud_server_creative" data-name="Idea arrow cloud server creative">
+    <path d="M836.71,122.93h42a14,14,0,0,0,3.55-27.53,11.29,11.29,0,0,0-3.64-5.08,5.61,5.61,0,0,1-9.45-2.1,11.16,11.16,0,0,0-2.62,1,16.78,16.78,0,0,0-31,5.79,11.24,11.24,0,0,0-1.63.24v15.11H822.78A14,14,0,0,0,836.71,122.93Z" style="fill: #fff"/>
+    <polygon points="866.11 78.13 866.11 83.73 868.91 83.73 880.11 83.73 882.91 83.73 882.91 78.13 874.51 78.13 866.11 78.13" style="fill: #fff"/>
+    <path d="M882.91,65.53h2.8a11.26,11.26,0,0,0-4.8-9.2l-1.61,2.3A8.43,8.43,0,0,1,882.91,65.53Z" style="fill: #006afb"/>
+    <path d="M877.7,54.79a10.8,10.8,0,0,0-3.19-.46v2.8a8.08,8.08,0,0,1,2.39.34Z" style="fill: #006afb"/>
+    <rect x="873.11" y="40.33" width="2.8" height="5.6" style="fill: #006afb"/>
+    <rect x="857.27" y="46.89" width="2.8" height="5.6" transform="translate(216.41 621.78) rotate(-45.01)" style="fill: #006afb"/>
+    <rect x="849.31" y="64.13" width="5.6" height="2.8" style="fill: #006afb"/>
+    <rect x="894.11" y="64.13" width="5.6" height="2.8" style="fill: #006afb"/>
+    <rect x="887.55" y="48.29" width="5.6" height="2.8" transform="translate(225.64 644.12) rotate(-45)" style="fill: #006afb"/>
+    <path d="M883.31,94.25a12.33,12.33,0,0,0-2.83-4.13,7,7,0,0,0,1-3.59v-1.4h1.4a1.4,1.4,0,0,0,1.4-1.4v-4.9a16.15,16.15,0,0,0,7-13.3,16.8,16.8,0,1,0-33.6,0,16.12,16.12,0,0,0,7,13.3v4.9a1.4,1.4,0,0,0,1.4,1.4h1.4v1.4a5.88,5.88,0,0,0,.07.71l-.51.17a18.17,18.17,0,0,0-31.76,3.32v-9.8h4.2a1.45,1.45,0,0,0,1.26-.8,1.38,1.38,0,0,0-.17-1.47l-11.2-14a1.43,1.43,0,0,0-2-.16s-.11.1-.16.16l-11.2,14a1.38,1.38,0,0,0-.16,1.47,1.42,1.42,0,0,0,1.26.8h4.2v28c0,.51,0,1,.07,1.54a15.35,15.35,0,0,0,15.33,13.86h42a15.39,15.39,0,0,0,4.6-30.08ZM866.57,76.73a13.45,13.45,0,0,1-6.06-11.2,14,14,0,1,1,28,0,13.46,13.46,0,0,1-6.07,11.2h-6.53v-8.4h4.2v-2.8h-11.2v2.8h4.2v8.4Zm.94,5.6v-2.8h14v2.8Zm11.2,2.8v1.4a4.2,4.2,0,0,1-8.4,0v-1.4Zm-56-7H820l8.29-10.36,8.28,10.36h-2.68a1.39,1.39,0,0,0-1.4,1.4v29.4h-8.4V79.53A1.4,1.4,0,0,0,822.71,78.13Zm56,43.4h-42a12.55,12.55,0,0,1-12.28-9.8h2.9a9.74,9.74,0,0,0,9.38,7v-2.8a7,7,0,0,1-6.39-4.2h3.59a1.4,1.4,0,0,0,1.4-1.4V96.42l.35,0a1.41,1.41,0,0,0,1.27-1.17,15.37,15.37,0,0,1,28.42-5.31,1.4,1.4,0,0,0,1.83.53c.41-.2.82-.37,1.24-.53a6.9,6.9,0,0,0,9.36,2.79,5.55,5.55,0,0,0,.81-.51A10,10,0,0,1,881,95.86a1.4,1.4,0,0,0,1,.9,12.59,12.59,0,0,1-3.2,24.77Z" style="fill: #006afb"/>
+    <path d="M881.19,99.46l-.71,2.71a7,7,0,0,1-1.77,13.76v2.8a9.79,9.79,0,0,0,2.48-19.27Z" style="fill: #006afb"/>
+    <rect x="839.51" y="115.93" width="5.6" height="2.8" style="fill: #006afb"/>
+  </g>
+  <g>
+    <line x1="1120.87" y1="365.04" x2="1173.78" y2="365.04" style="fill: none;stroke: #006afb;stroke-miterlimit: 10;stroke-width: 7px"/>
+    <polygon points="1208.87 365.04 1159.43 385.25 1171.16 365.04 1159.43 344.84 1208.87 365.04" style="fill: #006afb"/>
+  </g>
+  <text transform="translate(1240.01 278.7)" style="font-size: 24px;font-family: OpenSans, Open Sans">High business agility and <tspan x="0" y="26">resiliency due to a seamless </tspan><tspan x="0" y="52">hybrid and multicloud </tspan><tspan x="0" y="78">platform</tspan><tspan x="0" y="128">Great customer, employee, </tspan><tspan x="0" y="154">and partner experience due </tspan><tspan x="0" y="180">to modern applications</tspan></text>
+</svg>

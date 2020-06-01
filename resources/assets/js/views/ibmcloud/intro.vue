@@ -36,7 +36,7 @@ export default{
 	data () {
 		return {
 			assessment: laravel,
-			bgimage: 'landing.png',
+			bgimage: false,
 			icons: {
 				faArrowRight: faArrowRight,
 				faGlobe: faGlobe,

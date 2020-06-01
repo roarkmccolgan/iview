@@ -3114,6 +3114,114 @@ trait GenerateReportTrait
                 ]
             );
             $vars['sectionCopy'] = $customCopy;
+        } elseif(session('product.id') == 16) { //IBM
+            //User overall stage number and ordinal
+            $overallNumber = (int) filter_var(session('result.overall.rating'), FILTER_SANITIZE_NUMBER_INT);
+            $moveNumber =  (int) filter_var(session('result.move.rating'), FILTER_SANITIZE_NUMBER_INT);
+            $buildNumber =  (int) filter_var(session('result.build.rating'), FILTER_SANITIZE_NUMBER_INT);
+            $manageNumber =  (int) filter_var(session('result.manage.rating'), FILTER_SANITIZE_NUMBER_INT);
+
+            $customCopy = '';
+
+            //overall
+            $base = config('baseline_'.session('product.id').'.overall');
+            $rating = session('result.overall.rating');
+
+            $user_score = session('result.overall.score');
+
+            $customCopy.= trans(session('product.alias').'.introduction1',[
+                'url1' => asset('/images/tools/16/data_point_1.png'),
+                'url2' => asset('/images/tools/16/data_point_2.png'),
+                'url3' => asset('/images/tools/16/data_point_3.png'),
+            ]);
+            $customCopy.= '<div class="pb"></div>';
+            $customCopy.= trans(session('product.alias').'.introduction2');
+            $customCopy.= trans(session('product.alias').'.introduction3',[
+                'url' => asset('/images/tools/16/evaluating.png')
+            ]);
+            $customCopy.= '<div class="pb"></div>';
+            $customCopy.= trans(session('product.alias').'.introduction4',[
+                'url' => asset('/images/tools/16/rankings.png')
+            ]);
+
+            $customCopy.= '<div class="pb"></div>';
+
+            $widths = [
+                1 => '21mm',
+                2 => '63mm',
+                3 => '105mm',
+            ];
+
+            $customCopy.= trans(
+                session('product.alias').'.overallstage'.$overallNumber,
+                [
+                    'overall'=>$widths[$overallNumber],
+                    'move'=>$widths[$moveNumber],
+                    'build'=>$widths[$buildNumber],
+                    'manage'=>$widths[$manageNumber],
+                    'url'=>asset('/images/tools/16/comparisonbg_overall.svg')
+                ]
+            );
+
+            //move
+            $customCopy.= '<div class="pb"></div>';
+            $customCopy.= trans(
+                session('product.alias').'.move-intro',
+                [
+                    'icon'=>asset('/images/tools/16/move_icon.png')
+                ]
+            );
+
+            $customCopy.= trans(
+                session('product.alias').'.move-'.$moveNumber,
+                [
+                    'url' => asset('/images/tools/16/comparison_move_'.$moveNumber.'.png')
+                ]
+            );
+            
+            //build
+            $customCopy.= '<div class="pb"></div>';
+            $customCopy.= trans(
+                session('product.alias').'.build-intro',
+                [
+                    'icon'=>asset('/images/tools/16/build_icon.png')
+                ]
+            );
+            
+            $customCopy.= trans(
+                session('product.alias').'.build-'.$buildNumber,
+                [
+                    'url' => asset('/images/tools/16/comparison_build_'.$buildNumber.'.png')
+                ]
+            );
+
+            //manage
+            $customCopy.= '<div class="pb"></div>';
+            $customCopy.= trans(
+                session('product.alias').'.manage-intro',
+                [
+                    'icon'=> asset('/images/tools/16/manage_icon.png'),
+                    'url1'=> asset('/images/tools/16/data_point_4.png'),
+                    'url2'=> asset('/images/tools/16/data_point_5.png'),
+                ]
+            );
+
+            $customCopy.= trans(
+                session('product.alias').'.manage-'.$manageNumber,
+                [
+                    'url' => asset('/images/tools/16/comparison_manage_'.$manageNumber.'.png')
+                ]
+            );
+
+            
+            $customCopy.= trans(
+                session('product.alias').'.conclusion',
+                [
+                    'icon' => asset('/images/tools/16/conclusion_icon.png')
+                ]
+            );
+
+            $vars['sectionCopy'] = $customCopy;
         } else {
             foreach (config('baseline_'.session('product.id')) as $section => $values) {
                 preg_match_all('/\d+/', session('result.'.$section.'.rating'), $matches);
@@ -3491,6 +3599,22 @@ trait GenerateReportTrait
 
                 if (File::exists(storage_path().'/sapagile-'.$timeStamp.'.pdf')) {
                     File::delete(storage_path().'/sapagile-'.$timeStamp.'.pdf');
+                }
+            } elseif(session('product.id')==16){
+                $timeStamp = time();
+                $pdf->save(storage_path().'/ibmcloud-'.$timeStamp.'.pdf');
+                //return $pdf->inline('invoice.pdf');
+                $merge = PDFMerger::init();
+                $locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
+
+                $merge->addPDF(storage_path().'/ibmcloud_cover'.$locale .'.pdf', 'all');
+                $merge->addPDF(storage_path().'/ibmcloud-'.$timeStamp.'.pdf', 'all');
+
+
+                $merge->merge();
+                $merge->save(storage_path().'/reports/ibmcloud-'.$timeStamp.'.pdf','browser');
+                if (File::exists(storage_path().'/ibmcloud-'.$timeStamp.'.pdf')) {
+                    File::delete(storage_path().'/ibmcloud-'.$timeStamp.'.pdf');
                 }
             } else {
                 return $pdf->save(storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf');

@@ -7,7 +7,6 @@ return [
             <h2 class="font-black mt-4 sm:mt-0 text-yellow-light text-xl sm:text-3xl">General</h2>
             <p class="mb-4">To set the foundation for the assessment, we will define the IT architectures and technologies you are using.</p>
             ',
-        'ignore' => true,
         'nuggets' => [
             'skills.png',
             'customer.png',

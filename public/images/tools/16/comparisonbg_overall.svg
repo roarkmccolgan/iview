@@ -1,0 +1,113 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1615.75 765.35">
+  <defs>
+    <linearGradient id="linear-gradient" x1="330.78" y1="199.28" x2="1614.87" y2="199.28" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#ccc"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="330.78" y1="341.53" x2="1614.87" y2="341.53" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="330.78" y1="483.78" x2="1614.87" y2="483.78" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-4" x1="330.78" y1="626.03" x2="1614.87" y2="626.03" xlink:href="#linear-gradient"/>
+  </defs>
+  <title>comparisonbg_overall</title>
+  <line x1="322.97" y1="0.04" x2="322.97" y2="696.54" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
+  <line x1="752.97" y1="0.04" x2="752.97" y2="696.54" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
+  <line x1="1184.97" y1="0.04" x2="1184.97" y2="696.54" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
+  <text transform="translate(110.08 181.26)" style="font-size: 31px;font-family: OpenSans, Open Sans">Your overall<tspan x="83.89" y="37.2">Result</tspan></text>
+  <text transform="translate(209.34 492.44)" style="font-size: 31px;font-family: OpenSans, Open Sans">Build</text>
+  <text transform="translate(203.49 350.19)" style="font-size: 31px;font-family: OpenSans, Open Sans">Move</text>
+  <text transform="translate(167.26 653.29)" style="font-size: 31px;font-family: OpenSans, Open Sans">Manage</text>
+  <line x1="0.37" y1="131.04" x2="1614.27" y2="131.04" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
+  <line x1="-0.12" y1="273.04" x2="1614.8" y2="273.04" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
+  <line x1="115.38" y1="411.04" x2="1614.8" y2="411.04" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
+  <line x1="115.38" y1="555.04" x2="1614.8" y2="555.04" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
+  <line x1="115.38" y1="697.04" x2="1614.8" y2="697.04" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
+  <text transform="translate(512.93 56.67)" style="font-size: 26.131669998168945px;fill: #999;font-family: OpenSans, Open Sans">Cloud<tspan style="font-size: 36.85363006591797px;fill!: #000"><tspan x="0" y="37.56">Experimenter</tspan></tspan></text>
+  <text transform="translate(944.03 56.67)" style="font-size: 26.131669998168945px;fill: #999;font-family: OpenSans, Open Sans">Cloud<tspan style="font-size: 36.85363006591797px;fill!: #000"><tspan x="0" y="37.56">Optimizer</tspan></tspan></text>
+  <text transform="translate(1357.12 56.67)" style="font-size: 26.131669998168945px;fill: #999;font-family: OpenSans, Open Sans">Cloud<tspan style="font-size: 36.85363006591797px;fill!: #000"><tspan x="0" y="37.56">Innovator</tspan></tspan></text>
+  <rect x="330.78" y="140.54" width="1284.09" height="117.48" style="opacity: 0.5;fill: url(#linear-gradient)"/>
+  <rect x="330.78" y="282.79" width="1284.09" height="117.48" style="opacity: 0.5;fill: url(#linear-gradient-2)"/>
+  <rect x="330.78" y="425.04" width="1284.09" height="117.48" style="opacity: 0.5;fill: url(#linear-gradient-3)"/>
+  <rect x="330.78" y="567.29" width="1284.09" height="117.48" style="opacity: 0.5;fill: url(#linear-gradient-4)"/>
+  <line x1="114.88" y1="697.04" x2="114.88" y2="273.04" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
+  <text transform="translate(67.19 704.8) rotate(-90)" style="font-size: 31px;fill: gray;font-family: OpenSans, Open Sans">Individual Dimensions Score </text>
+  <g id="Share_cloud_cloud_computing_human_robot" data-name="Share cloud cloud computing human robot">
+    <circle cx="1286.9" cy="85.16" r="7" style="fill: #fff"/>
+    <path d="M1233.7,64.92a13.59,13.59,0,0,0,4.2.64h7V60h28v5.6h7a13.72,13.72,0,0,0,5.6-1.17,14,14,0,0,0-2-26.35,11.17,11.17,0,0,0-14.26-6.84,11.49,11.49,0,0,0-1.45.62,16.78,16.78,0,0,0-31,5.8,14,14,0,0,0-3,27.3Zm11.2-21.76h28v11.2h-28Z" style="fill: #fff"/>
+    <circle cx="1240.7" cy="90.76" r="2.8" style="fill: #fff"/>
+    <path d="M1242.1,79.56a2.82,2.82,0,0,0-2.8-2.8h-11.2a2.81,2.81,0,0,0-2.8,2.8v2.8h16.8Z" style="fill: #fff"/>
+    <circle cx="1226.7" cy="90.76" r="2.8" style="fill: #fff"/>
+    <path d="M1286.9,89.36a4.2,4.2,0,1,0-4.2-4.2A4.2,4.2,0,0,0,1286.9,89.36Zm0-5.6a1.4,1.4,0,1,1-1.4,1.4A1.4,1.4,0,0,1,1286.9,83.76Z" style="fill: #006afb"/>
+    <path d="M1286.9,69.83V65.27a15.38,15.38,0,0,0-2.4-28.39,12.57,12.57,0,0,0-16.22-6.83,18.33,18.33,0,0,0-15-7.89,18.13,18.13,0,0,0-17.74,14.19,15.39,15.39,0,0,0-3.26,29.55V70a4.21,4.21,0,0,0-2.8,3.94v1.4h-1.4a4.21,4.21,0,0,0-4.2,4.2V81h-2.8a4.21,4.21,0,0,0-4.2,4.2V102a4.2,4.2,0,0,0,4.2,4.2h25.2a4.21,4.21,0,0,0,4.2-4.2V85.16a4.23,4.23,0,0,0-4.2-4.2h-2.8v-1.4a4.23,4.23,0,0,0-4.2-4.2h-1.4V74a4.21,4.21,0,0,0-2.8-3.94V66.7a15.44,15.44,0,0,0,2.8.26h5.6v4.2a1.39,1.39,0,0,0,1.4,1.4h28a1.4,1.4,0,0,0,1.4-1.4V67h5.6a15,15,0,0,0,4.2-.6v3.47a15.42,15.42,0,0,0-14,15.1l-2.73,8.19a1.42,1.42,0,0,0,.19,1.26,1.35,1.35,0,0,0,1.14.58h4.2v4.2a1.39,1.39,0,0,0,1.4,1.4h4.2v4.2a1.39,1.39,0,0,0,1.4,1.4h11.2a1.4,1.4,0,0,0,1.4-1.4V98.87a15.39,15.39,0,0,0-5.6-29ZM1232.3,74a1.4,1.4,0,1,1,2.8,0v1.4h-2.8Zm14,9.8a1.4,1.4,0,0,1,1.4,1.4V102a1.4,1.4,0,0,1-1.4,1.4h-25.2a1.39,1.39,0,0,1-1.4-1.4V85.16a1.4,1.4,0,0,1,1.4-1.4Zm-7-5.6a1.4,1.4,0,0,1,1.4,1.4V81h-14v-1.4a1.4,1.4,0,0,1,1.4-1.4Zm32.2-8.4h-25.2v-8.4h25.2ZM1246.3,53v-8.4h25.2V53Zm22.4,2.8v2.8h-19.6v-2.8Zm11.2,8.4h-5.6V60a1.4,1.4,0,0,0-1.4-1.4h-1.4v-2.8h1.4a1.4,1.4,0,0,0,1.4-1.4V43.16a1.4,1.4,0,0,0-1.4-1.4h-28a1.4,1.4,0,0,0-1.4,1.4v11.2a1.39,1.39,0,0,0,1.4,1.4h1.4v2.8h-1.4a1.4,1.4,0,0,0-1.4,1.4v4.2h-5.6a12.6,12.6,0,0,1-1-25.14,1.4,1.4,0,0,0,1.26-1.18,15.38,15.38,0,0,1,28.42-5.3,1.4,1.4,0,0,0,1.85.53,9.77,9.77,0,0,1,13.18,4.15,9.67,9.67,0,0,1,.55,1.28,1.38,1.38,0,0,0,1,.88,12.6,12.6,0,0,1-3.19,24.78Zm12.6,21a5.6,5.6,0,1,1-5.6-5.6A5.6,5.6,0,0,1,1292.5,85.16Zm-2,11.55a1.4,1.4,0,0,0-.84,1.28v5.37h-8.4v-4.2a1.4,1.4,0,0,0-1.4-1.4h-4.2v-4.2a1.4,1.4,0,0,0-1.4-1.4h-3.66l2.19-6.55a2.12,2.12,0,0,0,.07-.45,12.62,12.62,0,0,1,12.6-12.6v4.33a8.4,8.4,0,1,0,2.8,0v-4a12.6,12.6,0,0,1,2.24,23.82Z" style="fill: #006afb"/>
+    <path d="M1226.7,95a4.2,4.2,0,1,0-4.2-4.2A4.2,4.2,0,0,0,1226.7,95Zm0-5.6a1.4,1.4,0,1,1-1.4,1.4A1.4,1.4,0,0,1,1226.7,89.36Z" style="fill: #006afb"/>
+    <path d="M1240.7,95a4.2,4.2,0,1,0-4.2-4.2A4.2,4.2,0,0,0,1240.7,95Zm0-5.6a1.4,1.4,0,1,1-1.4,1.4A1.4,1.4,0,0,1,1240.7,89.36Z" style="fill: #006afb"/>
+    <rect x="1229.5" y="97.76" width="8.4" height="2.8" style="fill: #006afb"/>
+    <rect x="1223.9" y="97.76" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1240.7" y="97.76" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1253.3" y="92.16" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1261.7" y="92.16" width="2.8" height="2.8" style="fill: #006afb"/>
+    <path d="M1282.38,42.1l-.71,2.71a7,7,0,0,1-1.77,13.75v2.8a9.79,9.79,0,0,0,2.48-19.26Z" style="fill: #006afb"/>
+    <path d="M1230.9,51.56a7,7,0,0,1,6.41-7l-.23-2.79a9.8,9.8,0,0,0,.82,19.55v-2.8A7,7,0,0,1,1230.9,51.56Z" style="fill: #006afb"/>
+    <rect x="1249.1" y="47.36" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1257.5" y="47.36" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1265.9" y="47.36" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1249.1" y="64.16" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1257.5" y="64.16" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1265.9" y="64.16" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1236.5" y="22.16" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1230.9" y="22.16" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1225.3" y="22.16" width="2.8" height="2.8" style="fill: #006afb"/>
+    <path d="M1219.7,25h2.8v-2.8h-4.2a1.4,1.4,0,0,0-1.4,1.4v4.2h2.8Z" style="fill: #006afb"/>
+    <rect x="1216.9" y="30.56" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1216.9" y="36.16" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1216.9" y="41.76" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1216.9" y="47.36" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1216.9" y="52.96" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1216.9" y="58.56" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1216.9" y="64.16" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1216.9" y="69.76" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1216.9" y="75.36" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1278.5" y="22.16" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1284.1" y="22.16" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1289.7" y="22.16" width="2.8" height="2.8" style="fill: #006afb"/>
+    <path d="M1299.5,22.16h-4.2V25h2.8v2.8h2.8v-4.2A1.4,1.4,0,0,0,1299.5,22.16Z" style="fill: #006afb"/>
+    <rect x="1298.1" y="30.56" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1298.1" y="36.16" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1298.1" y="41.76" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1298.1" y="47.36" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1298.1" y="52.96" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1298.1" y="58.56" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1298.1" y="64.16" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1298.1" y="69.76" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1272.9" y="22.16" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="1267.3" y="22.16" width="2.8" height="2.8" style="fill: #006afb"/>
+  </g>
+  <g id="Browser_web_cloud_computing_cloud_website" data-name="Browser web cloud computing cloud website">
+    <path d="M458.84,77.24a11.21,11.21,0,0,0-6.36-6.66V34.76h-61.6a2.82,2.82,0,0,0-2.8,2.8V46h56V70.59c-.32.13-.64.28-.95.43a16.78,16.78,0,0,0-31,5.8,14,14,0,0,0,1.16,27.94h42a14,14,0,0,0,3.56-27.52Z" style="fill: #fff"/>
+    <rect x="392.28" y="38.96" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="397.88" y="38.96" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="403.48" y="38.96" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="437.08" y="38.96" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="400.68" y="27.76" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="406.28" y="27.76" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="411.88" y="27.76" width="2.8" height="2.8" style="fill: #006afb"/>
+    <rect x="445.48" y="27.76" width="2.8" height="2.8" style="fill: #006afb"/>
+    <path d="M459.89,76.08a12.52,12.52,0,0,0-6-6.37V26.36a4.21,4.21,0,0,0-4.2-4.2h-50.4a4.23,4.23,0,0,0-4.2,4.2v7h-4.2a4.23,4.23,0,0,0-4.2,4.2v42a4.21,4.21,0,0,0,4.2,4.2h8.73a15.33,15.33,0,0,0,13.67,22.4h42a15.4,15.4,0,0,0,4.61-30.08Zm-62-49.72a1.4,1.4,0,0,1,1.4-1.4h50.4a1.4,1.4,0,0,1,1.4,1.4v7h-53.2Zm47.35,9.8h5.85V68.71a11.91,11.91,0,0,0-5.6,0V37.56A4,4,0,0,0,445.23,36.16Zm-55.75,1.4a1.4,1.4,0,0,1,1.4-1.4h50.4a1.4,1.4,0,0,1,1.4,1.4v7h-53.2Zm1.4,43.4a1.4,1.4,0,0,1-1.4-1.4V47.36h53.2V68A18.14,18.14,0,0,0,411,75.55a15.47,15.47,0,0,0-9.5,5.41Zm64.4,22.4h-42a12.6,12.6,0,0,1-1-25.14A1.4,1.4,0,0,0,413.51,77a15.38,15.38,0,0,1,28.42-5.3,1.4,1.4,0,0,0,1.85.53,9.66,9.66,0,0,1,4.5-1.11,9.81,9.81,0,0,1,9.23,6.54,1.38,1.38,0,0,0,1,.88,12.6,12.6,0,0,1-3.2,24.78Z" style="fill: #006afb"/>
+    <path d="M457.77,81.3,457.06,84a7,7,0,0,1-1.78,13.75v2.8a9.79,9.79,0,0,0,2.49-19.26Z" style="fill: #006afb"/>
+    <path d="M406.28,90.76a7,7,0,0,1,6.42-7L412.47,81a9.8,9.8,0,0,0,.81,19.55v-2.8A7,7,0,0,1,406.28,90.76Z" style="fill: #006afb"/>
+    <rect x="416.08" y="97.76" width="5.6" height="2.8" style="fill: #006afb"/>
+  </g>
+  <g id="Idea_arrow_cloud_server_creative" data-name="Idea arrow cloud server creative">
+    <path d="M843.71,104.76h42a14,14,0,0,0,3.56-27.52,11.36,11.36,0,0,0-3.64-5.08,5.6,5.6,0,0,1-9.45-2.1,11.13,11.13,0,0,0-2.62,1,16.78,16.78,0,0,0-31,5.8,11.38,11.38,0,0,0-1.64.24v15.1H829.78A14,14,0,0,0,843.71,104.76Z" style="fill: #fff"/>
+    <polygon points="873.11 59.96 873.11 65.56 875.91 65.56 887.11 65.56 889.91 65.56 889.91 59.96 881.51 59.96 873.11 59.96" style="fill: #fff"/>
+    <path d="M889.91,47.36h2.8a11.2,11.2,0,0,0-4.8-9.19l-1.6,2.3A8.41,8.41,0,0,1,889.91,47.36Z" style="fill: #006afb"/>
+    <path d="M884.7,36.63a11.1,11.1,0,0,0-3.19-.47V39a8.5,8.5,0,0,1,2.4.35Z" style="fill: #006afb"/>
+    <rect x="880.11" y="22.16" width="2.8" height="5.6" style="fill: #006afb"/>
+    <rect x="864.27" y="28.73" width="2.8" height="5.6" transform="translate(231.31 621.41) rotate(-45.01)" style="fill: #006afb"/>
+    <rect x="856.31" y="45.96" width="5.6" height="2.8" style="fill: #006afb"/>
+    <rect x="901.11" y="45.96" width="5.6" height="2.8" style="fill: #006afb"/>
+    <rect x="894.55" y="30.13" width="5.6" height="2.8" transform="translate(240.54 643.76) rotate(-45)" style="fill: #006afb"/>
+    <path d="M890.32,76.09A12.47,12.47,0,0,0,887.49,72a7,7,0,0,0,1-3.6V67h1.4a1.4,1.4,0,0,0,1.4-1.4v-4.9a16.13,16.13,0,0,0,7-13.3,16.8,16.8,0,1,0-33.6,0,16.13,16.13,0,0,0,7,13.3v4.9a1.4,1.4,0,0,0,1.4,1.4h1.4v1.4a5.85,5.85,0,0,0,.07.72l-.5.17a18.18,18.18,0,0,0-31.77,3.31v-9.8h4.2a1.4,1.4,0,0,0,1.26-.79,1.36,1.36,0,0,0-.17-1.47l-11.2-14a1.42,1.42,0,0,0-2-.16.81.81,0,0,0-.16.16L823,60.5a1.36,1.36,0,0,0-.17,1.47,1.4,1.4,0,0,0,1.26.79h4.2v28c0,.52,0,1,.07,1.54a15.34,15.34,0,0,0,15.33,13.86h42a15.39,15.39,0,0,0,4.61-30.07ZM873.57,58.56a13.44,13.44,0,0,1-6.06-11.2,14,14,0,0,1,28,0,13.44,13.44,0,0,1-6.06,11.2h-6.54v-8.4h4.2v-2.8h-11.2v2.8h4.2v8.4Zm.94,5.6v-2.8h14v2.8Zm11.2,2.8v1.4a4.2,4.2,0,1,1-8.4,0V67Zm-56-7H827l8.29-10.36L843.6,60h-2.69a1.4,1.4,0,0,0-1.4,1.4v29.4h-8.4V61.36A1.4,1.4,0,0,0,829.71,60Zm56,43.4h-42a12.54,12.54,0,0,1-12.28-9.8h2.9a9.73,9.73,0,0,0,9.38,7v-2.8a6.9,6.9,0,0,1-6.38-4.2h3.58a1.4,1.4,0,0,0,1.4-1.4V78.26l.35,0A1.4,1.4,0,0,0,843.93,77a15.38,15.38,0,0,1,28.42-5.3,1.41,1.41,0,0,0,1.84.53,11.12,11.12,0,0,1,1.23-.53A6.93,6.93,0,0,0,885.6,74,9.87,9.87,0,0,1,888,77.7a1.41,1.41,0,0,0,1,.9,12.59,12.59,0,0,1-3.21,24.76Z" style="fill: #006afb"/>
+    <path d="M888.2,81.3,887.49,84a7,7,0,0,1-1.78,13.75v2.8A9.79,9.79,0,0,0,888.2,81.3Z" style="fill: #006afb"/>
+    <rect x="846.51" y="97.76" width="5.6" height="2.8" style="fill: #006afb"/>
+  </g>
+</svg>

@@ -1017,11 +1017,16 @@ class ToolController extends Controller
                             }
                         }
                     }
-                    foreach ($this->baseline[$key]['types'] as $rating => $limits) {
-                        if ($result[$key]['score']>=$limits['low'] && $result[$key]['score']<=$limits['high']) {
-                            $result[$key]['rating'] = $rating;
-                            $result['overall']['score'] += $result[$key]['score'];
+                    if(isset($this->baseline[$key])){
+                        if(isset($this->baseline[$key]['normalise_using_screeners']['calc'])){
+                            $result[$key]['score'] = eval('return '.$baseline[$key]['normalise_using_screeners']['calc'].';');
                         }
+                        foreach ($this->baseline[$key]['types'] as $rating => $limits) {
+                            if ($result[$key]['score']>=$limits['low'] && $result[$key]['score']<=$limits['high']) {
+                                $result[$key]['rating'] = $rating;
+                                $result['overall']['score'] += $result[$key]['score'];
+                            }
+                        }                    
                     }
                 }
             }
@@ -1317,11 +1322,16 @@ class ToolController extends Controller
                         }
                     }
                 }
-                foreach ($this->baseline[$key]['types'] as $rating => $limits) {
-                    if ($result[$key]['score']>=$limits['low'] && $result[$key]['score']<=$limits['high']) {
-                        $result[$key]['rating'] = $rating;
-                        $result['overall']['score'] += $result[$key]['score'];
+                if(isset($this->baseline[$key])){
+                    if(isset($this->baseline[$key]['normalise_using_screeners']['calc'])){
+                        $result[$key]['score'] = eval('return '.$this->baseline[$key]['normalise_using_screeners']['calc'].';');
                     }
+                    foreach ($this->baseline[$key]['types'] as $rating => $limits) {
+                        if ($result[$key]['score']>=$limits['low'] && $result[$key]['score']<=$limits['high']) {
+                            $result[$key]['rating'] = $rating;
+                            $result['overall']['score'] += $result[$key]['score'];
+                        }
+                    }                    
                 }
             }
         }

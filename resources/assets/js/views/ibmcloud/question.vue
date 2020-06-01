@@ -404,7 +404,9 @@ export default{
 			if (this.questions.hasOwnProperty(q)){
 				if(!this.questions[q].selected){
 					console.log('not answered '+this.questions[q].name);
-					this.$router.replace('/questions/'+ this.questions[q].name);
+					if(this.questions[q].name !== this.currentQuestion.name){
+						this.$router.replace('/questions/'+ this.questions[q].name);						
+					}
 					this.showNext = false;
 					//addbg
 					if(this.questions[q].name == 1 && this.questions[q].background){

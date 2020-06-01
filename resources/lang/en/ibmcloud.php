@@ -96,954 +96,433 @@ return array(
         'errorAccept'=>'Please accept the Terms &amp; Conditions',
     ],
     'introduction1' => '
-        <h2 class="text-blue-dark mb-2 pt-10">Introduction</h2>
-        <p class="mb-2">
-            Cloud adoption is critical for successful IT modernization to support digital transformation initiatives. Competing in the global economy for customers, investment, and talent requires instant access to relevant data and IT resources that don\'t compromise on speed, scale, security, or costs. A well-thought-out cloud Journey and consistent execution of this Journey delivers the flexibility and scale that underpins digital business success and data transformation.
-        </p>
-        <p class="mb-2">
-        To assess cloud adoption maturity, IDC has developed a Cloud Journey Assessment tool to understand digital business ambitions, cloud strategies, and execution challenges. Based on the results, we have grouped the respondents into three categories — <strong>Cloud Starter, Cloud Practitioner, and Cloud Master</strong> - to understand what sets the masters apart from their competitors and which best practices we can learn from them in making the cloud and data transformation journey successful.
-        </p>
+        <div class="clearfix w-4/5 ml-auto">
+            <h2 class="text-ibm-blue mb-2">Market Context and Key Drivers</h2>
+            <p class="mb-2">
+                The expectations and requirements IT organisations face continue to evolve as businesses become more dedicated to and dependent on digitised business processes, customer engagements and business models.
+            </p>
+            <p class="mb-2">
+                The infrastructure transformation journey is fuelled by organisations\' digital transformation endeavours. Nordic organisations\' main business priorities are innovation, customers and cost optimisation which also top the list of expected achievements from digital transformation.
+            </p>
+        </div>
+        <div class="clearfix mt-6">
+            <div class="float-left mr-16" style="width: 45%">
+                <img class="w-full" src=":url1" alt="">
+            </div>
+            <div class="float-left" style="width: 45%">
+                <img class="w-full" src=":url2" alt="">
+            </div>
+        </div>
+        <div class="clearfix w-4/5 ml-auto mt-10">
+            <p class="mb-2">
+                Cloud adoption is high and multiple deployment models are often used. However, the use of true hybrid and multicloud architectures remains low. 
+            </p>
+        </div>
+        <div class="clearfix mt-10">
+            <div class="float-left" style="width: 55%">
+                <img class="w-full" src=":url3" alt="">
+            </div>
+            <div class="float-left" style="width: 35%">
+                <p class="mb-2">
+                    There is however, a prevalent interest, driven by the need to scale and integrate digital, which today is difficult due to challenges related to control, fragmentation, and legacy.
+                </p>  
+            </div>
+        </div>
+    ',
+    'introduction2' => '
+        <div class="clearfix w-4/5 ml-auto">
+            <h2 class="text-ibm-blue mb-2">Best in Class Cloud (Nirvana)</h2>
+            <p class="mb-2">
+                The ultimate state of a hybrid multicloud platform is one that supports existing business processes and enables innovation. It leverages cloud-native technologies like containers, micro services and APIs, spans multiple clouds and allows for fast services deployments and secure and efficient provisioning of resources.
+            </p>
+            <p class="mb-2">
+                The hybrid multicloud platform is based on open standards so that applications can seamlessly move between on-premises and public cloud environments, depending on cost, performance and regulatory compliance requirements.
+            </p>
+            <p class="mb-2">
+                Optimal use of cloud however, is more comprehensive than establishing a platform of modern technologies. Organisational structures and competencies must revolve around cloud, an application modernisation road map need to be in place, and application development processes must be agile to take advantage of the opportunities a hybrid multicloud platform provides.
+            </p>
+            <p class="mb-2">
+                The dimensions that have to mastered to reach an ultimate cloud maturity stage are: <strong class="text-black">move</strong>, <strong class="text-black">build</strong> and <strong class="text-black">manage</strong>.
+            </p>
+        </div>
+    ',
+    'introduction3' => '
+        <div class="clearfix w-4/5 ml-auto">
+            <h2 class="text-ibm-blue mb-2 mt-6">Three Dimensions of Cloud Mastery</h2>
+            <h3 class="text-ibm-blue mb-2">Move</h3>
+            <p class="mb-2">
+                Building a hybrid and multicloud-based digital platform for application modernization is a key step in digital transformation, because older infrastructure approaches and applications do not provide the agility and adaptability necessary for today\'s business environment and customer expectations. Moving applications into a cloud environment, be it private or public cloud, is an important step in application modernization. There are different strategies for application modernization that make sense for different applications. The maturity stage for this dimension is dependent on the cloud deployment model used, the chosen cloud migration strategy, and the motivation for modernizing applications.
+
+            </p>
+            <h3 class="text-ibm-blue mb-2">Build</h3>
+            <p class="mb-2">
+                Digital transformation is mainly done through digitizing business processes and supporting them with digital applications developed in the cloud. Many innovative services are also provided from the cloud first and developers are using cloud-native tools and processes. The maturity stage for this dimension is dependent on tools and processes used for cloud-native application development
+            </p>
+            <h3 class="text-ibm-blue mb-2">Manage</h3>
+            <p class="mb-2">
+                Running workloads in a cloud environment is a dynamic discipline. New services are continuously deployed, and new functionalities are made available by vendors. Moreover, prices fluctuate, regulations change, and IT security threats constantly evolve, making it essential to persistently shift workloads to the most applicable platform. The maturity stage for this dimension is dependent on the tools and processes in place as well as the motivation driving the orchestration.
+            </p>
+        </div>
+        <div class="w-full mx-auto">
+            <img class="w-full" src=":url" alt="">
+        </div>
     ',
     'introduction4' => '
-        <p class="mb-2">
-            The key priorities for organizations accelerating their digital transformation journeys are IT modernization, successful cloud adoption, and progress in becoming data-driven. They want to use cloud and data transformation initiatives to improve efficiency, business performance, and the speed of innovation. Delivering on digital business mandates requires a well-thought-out cloud Journey and set of technologies to drive innovation, all without compromising on cost control, security, or regulatory obligations. Providing a flexible IT delivery model and relevant data at speed, while aligning with business needs, is critical. Developing a successful cloud and data Journey will form the bedrock on which to digitally transform your organization in a scaleable and agile manner. 
-        </p>
-    ',
-    'execsum' => '
-        <h2 class="text-blue-dark mb-2">Executive Summary</h2>
-        <p class="mb-2">
-            Now that you have completed the IDC Journey Cloud Assessment, this customised report has been created based on your answers and will help highlight some of your organisations key strengths and potential areas for development, in relation to your Cloud Journey. The report covers the same three key sections as the assessment - cloud migration and application modernization, multicloud status, and data value realization; making the insights focused and highly actionable.
-        </p>
-        <p class="mb-2">
-            Knowing how you score in relation to the IDC model and where improvements can be made, helps to focus your efforts, resulting in a quicker time value from your cloud and data monetisation investments.
-        </p>
-        <div class="mx-auto" style="width:160mm;height:88.987mm; background: url(:img) no-repeat; background-size:cover">
-    ',
-    'introduction5' => '
-        <h2 class="text-blue-dark mb-2 pt-20">Ranking Explanation</h2>
-        <p class="mb-2">
-            Organizations who view cloud as a critical technology and the foundation of their digital transformation, as opposed to just a tactical way to save costs, will be in a better position to capitalize on new digital initiatives, yield higher returns and ultimately make your cloud Journey a success. 
-        </p>
-        <p class="italic mb-1 text-blue-dark">
-            The key to successful digital transformation is the ability to make IT a business enabler by leveraging cloud and business data. The better an organization is in its vision, execution and overcoming challenges along the way, the higher they are in the maturity curve giving them a competitive differentiation. 
-        </p>
-    ',
-    'introduction6' => '
-        <p class="mb-2">
-            The IDC Cloud Journey Assessment ranks organisations by three maturity levels - <strong>Cloud Starters, Cloud Practitioners and Cloud Masters</strong>.
-        </p>
-        <div class="mx-auto" style="width:160mm;height:151.16mm; background: url(:img) no-repeat; background-size:cover">
-    ',
-    'introduction7'=>'
-        <h2 class="leading-tight text-blue-dark mb-2">Your Ranking</h2>
-        <p class="mb-2">
-            Organizations can only successfully compete in the global economy if their cloud and data-related strategies are world-class and the execution is consistent, adaptive, and takes advantage of the relevant cloud and data-enabling technologies. IDC\'s Cloud Journey Assessment scores organizations on their cloud Journey maturity by looking at three core elements — <strong>cloud migration and application modernization, multicloud status, and data value realization.</strong>
-        </p>
-    ',
-    'introduction1-1' => '
-        <p class="mb-2">
-            Based on your responses to IDC\'s Cloud Journey Assessment, your organization has been rated at the earliest level of Cloud Journey maturity — a <strong>Cloud Starter</strong>. This means you are at the beginning of your cloud and data-enabled journey, and there will be much to do and much to gain. Having the right guidance, leveraging industry best practices, and working with specialist vendors and partners, you will catch up quickly. You need to define a starting point, set short, mid- and long-term priorities, and start to drive incremental improvements. With the amount of potential complexity and a shortage of digital skills, seek outside assistance where possible to accelerate your move to a cloud-enabled and data-driven organization.
-        </p>
-    ',
-    'introduction1-2' => '
-        <p class="mb-2">
-            Well done on your result. Based on your responses to IDC\'s Cloud Journey Assessment, your organization has been rated at the second highest level of cloud maturity — a <strong>Cloud Practitioner</strong>. This means your organization is generally in line with the rest of the industry and has prepared itself for the highest levels of cloud and data success. While you are doing well, there is still a bit more to do, to be fully cloud and data ready. To create a true competitive advantage, your focus must shift from a tactical approach to a more strategic, fully aligned way of thinking across all areas of the business.
-        </p>
-    ',
-    'introduction1-3' => '
-        <p class="mb-2">
-            Congratulations. Based on your responses to IDC\'s Cloud Journey Assessment, your organization has been rated as a Cloud Master, which is the highest level of cloud maturity. This means your organization is ahead of the industry, blazing a trail in using cloud and data, as business assets, and as a key competitive differentiator. Always bear in mind, though, the world of cloud and data is highly dynamic, and you\'ll need to keep improving and evolving to consistently stay ahead.
-        </p>
-    ',
-    'introduction4-1' => '
-        <p class="mb-2">
-            The key priorities for organizations accelerating their digital transformation journeys are IT modernization, successful cloud adoption, and progress in becoming data-driven. They want to use cloud and data transformation initiatives to improve efficiency, business performance, and the speed of innovation. Delivering on digital business mandates requires a well-thought-out cloud Journey and set of technologies to drive innovation, all without compromising on cost control, security, or regulatory obligations. Providing a flexible IT delivery model and relevant data at speed, while aligning with business needs, is critical.
-        </p>
-        <p class="italic mb-1 text-blue-dark">
-            Developing a successful cloud and data Journey will form the bedrock on which to digitally transform your organization in a saleable and agile manner. 
-        </p>
-    ',
-    'introduction4-2' => '
-        <p class="mb-2">
-            As a <strong>Cloud Practitioner</strong>, your key priorities are to define and measure metrics to track migration and application operations in public cloud, standardize migration processes and workload evaluations, and automate operations. You also need to overcome the complexities of cloud operations to further progress and scale your cloud migration and modernization Journey. 
-        </p>
-        <p class="italic mb-1 text-blue-dark">
-            <strong>Cloud Practitioner</strong> organizations have already addressed the low-hanging fruit, seen the business benefits of the cloud Journey, and have the determination to make progress. They need to maintain the momentum and invest in transforming legacy business processes and legacy applications to graduate to the next stage.
-        </p>
-    ',
-    'introduction4-3' => '
-        <p class="mb-2">
-            As a <strong>Cloud Master</strong>, a key priority is to be cognizant of the fact that the cloud world is very dynamic and constantly evolving. Cloud Master organizations need to continuously evolve and are constantly investing in reevaluating their cloud, data, and security postures, while making incremental innovations to maintain their competitive edge. You will need to apply standard processes and automation to the broadest set of workloads possible, implement learnings and best practices from operational success across the organization, and continuously review and refine placement decisions and processes as needed over time.
-        </p>
+        <div class="clearfix w-4/5 ml-auto">
+            <h2 class="text-ibm-blue mb-2">Your Ranking Overall</h2>
+            <p class="font-bold base my-2">
+                The overall cloud maturity level is decided by an organization\'s ability to leverage cloud. In addition to technology adoption, high-level maturity requires tools, processes, and organizational alignment that supports modernization of the existing application estate, development of new applications and services, and dynamic orchestration of cloud resources for continuous optimization.
+            </p>
+        </div>
+        <div class="w-5/6 ml-auto mt-10">
+            <img class="w-full" src=":url" alt="">
+        </div>
     ',
     'overallstage1'=>'
-        <p class="mb-2">
-            You are off to a start. You are at the beginning of your cloud journey. Based on your responses to IDC\'s Cloud Journey Assessment, your organization has been rated at the beginner level of three levels of cloud maturity — <strong>Cloud Starter</strong>.
-        </p>
-    ',
-    'overallstage2'=>'
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Cloud Practitioner</span>
-        <p class="mb-2">
-            You are well under way with your cloud journey. Based on your responses to IDC\'s Cloud Journey Assessment, your organization has been rated at the second highest level of cloud maturity — <strong>Cloud Practitioner</strong>. This means your organization is generally in line with the rest of the industry and is progressing consistently to achieve cloud excellence. While you are doing well, there is still more to do on the execution of your cloud Journey, making cloud and data a key competitive differentiator.
-        </p>
-    ',
-    'overallstage3'=>'
-        <span class="block mb-2 font-bold text-grey-dark text-lg">Cloud Master</span>
-        <p class="mb-2">
-            Congratulations. Based on your responses to IDC\'s Cloud Journey Assessment Tool, your organization has been rated at the highest level of cloud maturity — <strong>Cloud Master</strong>. This means your organization is among the minority that is generally ahead of the industry, becoming data driven and blazing a trail to cloud excellence. Always bear in mind that you need to continuously innovate to maintain your industry leadership.
-        </p>
-    ',
-
-    'overallgraph'=>'
+        <div class="clearfix w-4/5 ml-auto">
+            <h3 class="text-ibm-blue mb-2">Your Overall Score</h3>
+            <p class="mb-4 font-bold">
+                Based on your responses your organization is categorized as a <span class="text-ibm-blue">cloud experimenter</span>
+            </p>
+            <p class="mb-2">
+                This group is characterized by restricted use of cloud. The typical cloud use consists of standard SaaS applications and VMs deployed in a single IaaS, and there is no defined road map for modernizing the application estate.
+            </p>
+        </div>
         <div class="my-5 relative" style="width:160mm;height:75.79mm; background: url(:url) no-repeat; background-size:cover">
             <div class="bg-ibm-blue absolute" style="width: :overall; height: 10mm; top:15mm; left:33mm;"></div>
-            <div class="bg-grey absolute" style="width: :migration; height: 10mm; top:29mm; left:33mm;"></div>
-            <div class="bg-grey-dark absolute" style="width: :status; height: 10mm; top:43mm; left:33mm;"></div>
-            <div class="bg-black absolute" style="width: :value; height: 10mm; top:57mm; left:33mm;"></div>
+            <div class="bg-black absolute" style="width: :move; height: 10mm; top:29mm; left:33mm;"></div>
+            <div class="bg-grey-dark absolute" style="width: :build; height: 10mm; top:43mm; left:33mm;"></div>
+            <div class="bg-grey absolute" style="width: :manage; height: 10mm; top:57mm; left:33mm;"></div>
+        </div>
+        <div class="clearfix w-4/5 ml-auto">
+            <h3 class="text mb-2">Recommendations:</h3>
+            <p class="mb-2">
+                To move to the next level, you need to alter the perception of cloud: adopt cloud-native technologies and assess the possibilities beyond cost savings and structures and establish a road map for modernizing the application stack.
+            </p>
+            <p>
+                This will allow you to control cost better, but more importantly to support the changing business requirements efficiently and flexibly. Moreover, it will accelerate the cloud journey.
+            </p>
         </div>
     ',
-    'overalloutrostage1'=>'
-        <p class="font-bold mb-2">
-            Your results indicate that there are many areas to be addressed to successfully develop your cloud and data Journey. This report will give you advice on some key areas to prioritize as you look to progress to the next stage of cloud adoption. Let\'s turn to the next page and dig into the tangible actions you can take to progress.
-        </p>
+    'overallstage2'=>'
+        <div class="clearfix w-4/5 ml-auto">
+            <h3 class="text-ibm-blue mb-2">Your Overall Score</h3>
+            <p class="mb-4 font-bold">
+                Based on your responses, your organization is categorized as a <span class="text-ibm-blue">cloud optimizer</span>
+            </p>
+            <p class="mb-2">
+                This group is characterized by considerable, but incoherent use of cloud. At least some cloud-native technologies have been adopted, and selected applications moved to the cloud, but there is no complete application modernization road map in place, nor set processes for managing workloads across multiple clouds.
+            </p>
+        </div>
+        <div class="my-5 relative" style="width:160mm;height:75.79mm; background: url(:url) no-repeat; background-size:cover">
+            <div class="bg-ibm-blue absolute" style="width: :overall; height: 10mm; top:15mm; left:33mm;"></div>
+            <div class="bg-black absolute" style="width: :move; height: 10mm; top:29mm; left:33mm;"></div>
+            <div class="bg-grey-dark absolute" style="width: :build; height: 10mm; top:43mm; left:33mm;"></div>
+            <div class="bg-grey absolute" style="width: :manage; height: 10mm; top:57mm; left:33mm;"></div>
+        </div>
+        <div class="clearfix w-4/5 ml-auto">
+            <h3 class="text mb-2">Recommendations:</h3>
+            <p class="mb-2">
+                to move to the next level, you need to institute consistency in the approach to cloud. This means defining an architecture, setting a modernization road map for all applications, and demolishing organizational silos.
+            </p>
+            <p>
+                This will allow you to move workloads between cloud services and deployment models, making your applications more agile and cost efficient, and ultimately better support business optimization and transformation endeavors.
+            </p>
+        </div>
     ',
-    'overalloutrostage2'=>'
-        <p class="font-bold mb-2">
-            Your results indicate that there are many areas to be addressed to successfully develop your cloud and data Journey. This report will give you advice on some key areas to prioritize as you look to progress to the next stage of cloud adoption. Let\'s turn to the next page and dig into the tangible actions you can take to progress.
-        </p>
+    'overallstage3'=>'
+        <div class="clearfix w-4/5 ml-auto">
+            <h3 class="text-ibm-blue mb-2">Your Overall Score</h3>
+            <p class="mb-4 font-bold">
+                Based on your responses, your organization is categorized as a <span class="text-ibm-blue">cloud innovator</span>
+            </p>
+            <p class="mb-2">
+                This group is characterized by having a cloud-first approach to both technology and organization. Cloud is the primary platform for new applications and the modernization process of existing applications has come a long way.
+            </p>
+        </div>
+        <div class="my-5 relative" style="width:160mm;height:75.79mm; background: url(:url) no-repeat; background-size:cover">
+            <div class="bg-ibm-blue absolute" style="width: :overall; height: 10mm; top:15mm; left:33mm;"></div>
+            <div class="bg-black absolute" style="width: :move; height: 10mm; top:29mm; left:33mm;"></div>
+            <div class="bg-grey-dark absolute" style="width: :build; height: 10mm; top:43mm; left:33mm;"></div>
+            <div class="bg-grey absolute" style="width: :manage; height: 10mm; top:57mm; left:33mm;"></div>
+        </div>
+        <div class="clearfix w-4/5 ml-auto">
+            <h3 class="text mb-2">Recommendations:</h3>
+            <p class="mb-2">
+                To further improve on the already advanced use of cloud, you need to have a razor-sharp focus on new technologies and how they can be used. You also need a dynamic application road map. For example, it may be advantageous to containerize an application you have already refactored.
+            </p>
+            <p>
+                With an agile and resilient IT architecture, you will not only be able to support the business, but also drive innovation by proactively accentuating new digital business opportunities. 
+            </p>
+        </div>
     ',
-    'overalloutrostage3'=>'
-        <p class="font-bold mb-2">
-            Your results demonstrate the characteristics of an organization with a best-in-class cloud and data Journey. While this is excellent, there are always areas which may need refinement and space for new innovation, ensuring that you stay ahead in the cloud game. This report will highlight a few key areas to prioritize as you continue to master your cloud and data Journey. Let\'s turn to the next page to learn more about cloud mastery. 
-        </p>
+
+    'move-intro' => '
+        <div class="clearfix">
+            <div class="w-1/5 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 30mm;"></div>
+            <div class="w-4/5 float-left">
+                <h2 class="text-ibm-blue mb-3">Move</h2>
+                <h3 class="mb-3">Introduction and Market Context</h3>
+                <p class="mb-2">
+                    Building a hybrid and multicloud-based digital platform for application modernization is a key step in digital transformation, because older infrastructure approaches and applications do not provide the agility and adaptability necessary for today\'s business environment and customer expectations. Moving applications into a cloud environment, be it private or public cloud, is an important step in application modernization. There are different strategies for application modernization that make sense for different applications. The maturity stage for this dimension is dependent on the cloud deployment model used, the chosen cloud migration strategy, and the motivation for modernizing applications.
+
+                </p>
+                <p class="mb-2">
+                    Achieving the Cloud Innovator status will assure that your application modernization strategy is aligned with your business goals and supports your desired business outcomes. It will also help you to adapt quickly to changing market conditions by moving applications flexibly to the best cloud infrastructure, be it on-premises or in the public cloud, and to scale up and down based on market demand.
+                </p>
+            </div>
+        </div>
     ',
-    'migration-intro' => '
+
+    'move-1' => '
+        <div class="clearfix w-4/5 ml-auto">
+            <h3 class="text-ibm-blue mb-2">Your Score</h3>
+            <p class="mb-4 font-bold">
+                Based on your response, your organization is categorized as a <span class="text-ibm-blue">cloud experimenter</span>. This group is characterized by cloud usage limited to non-core applications. This group is characterized by having a cloud-first approach to both technology and organization. Cloud is the primary platform for new applications and the modernization process of existing applications has come a long way.
+            </p>
+        </div>
+        <div class="">
+            <img class="w-full" src=":url" alt="">
+        </div>
+        <div class="clearfix w-4/5 ml-auto">
+            <h3 class="text mb-2">Recommendations:</h3>
+            <p class="mb-2">
+                To move to the next level you need to understand your application landscape, classify your applications according to their cloud-readiness, and develop a cloud migration strategy for each application class. Some applications will stay on-premises in a private cloud, while others can be migrated to the public cloud. You should also consider the benefits of cloud beyond sheer cost savings, as cloud offers a great potential for innovation as well.
+            </p>
+        </div>
+    ',
+    'move-2' => '
+        <div class="clearfix w-4/5 ml-auto">
+            <h3 class="text-ibm-blue mb-2">Your Score</h3>
+            <p class="mb-4 font-bold">
+                Based on your response, your organization is categorized as a <span class="text-ibm-blue">cloud optimizer</span>. This group is characterized by wide-scale cloud usage, including some core applications.
+            </p>
+        </div>
+        <div class="">
+            <img class="w-full" src=":url" alt="">
+        </div>
+        <div class="clearfix w-4/5 ml-auto">
+            <h3 class="text mb-2">Recommendations:</h3>
+            <p class="mb-2">
+                To become a cloud innovator, you must become independent of the cloud deployment model. As a cloud innovator, you can deploy your applications where it is most efficient in terms of cost, performance, regulatory compliance, and business outcomes, and you can move them dynamically between on-premises and public cloud environments. That ensures that your applications support your digital transformation and business strategy and that you can respond swiftly and aptly to changes in market conditions.
+            </p>
+        </div>
+    ',
+    'move-3' => '
+        <div class="clearfix w-4/5 ml-auto">
+            <h3 class="text-ibm-blue mb-2">Your Score</h3>
+            <p class="mb-4 font-bold">
+                Based on your response, your organization is categorized as a <span class="text-ibm-blue">cloud innovator</span>. This group is characterized by comprehensive cloud usage and independence of cloud deployment models. You are using the cloud both to save costs but also as a platform for innovation.
+            </p>
+        </div>
+        <div class="">
+            <img class="w-full" src=":url" alt="">
+        </div>
+        <div class="clearfix w-4/5 ml-auto">
+            <h3 class="text mb-2">Recommendations:</h3>
+            <p class="mb-2">
+                To stay ahead of the competition, you need to constantly keep up to date with the new technologies and services made available from the cloud as the cloud platform evolves from virtual machines, to containers, to functions. Application architectures need to evolve accordingly so that you can adapt quickly to new technology and market developments. Your application modernization strategies need to be related to your business strategy and drive business outcomes. 
+
+            </p>
+        </div>
+    ',
+    'build-intro' => '
+        <div class="clearfix">
+            <div class="w-1/5 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 30mm;"></div>
+            <div class="w-4/5 float-left">
+                <h2 class="text-ibm-blue mb-3">Build</h2>
+                <h3 class="mb-3">Introduction</h3>
+                <p class="mb-2">
+                    Digital transformation is mainly achieved by building highly scalable digital applications in the cloud and supporting them with digitized business processes. Modern applications built in the cloud can leverage the benefits of the cloud to then capitalize on other innovative technologies such as AI, cognitive, next-gen security, IoT, and so on to become more intuitive, dynamic, and responsive. 
+                </p>
+                <p class="mb-2">
+                    Many innovative services and digital features are also provided first from the cloud, and developers using cloud-native tools and processes to build modern applications can leverage these new features early on to build a competitive advantage.
+                </p>
+                <p class="my-4 italic font-base text-black px-4 py-2 bg-grey-light">
+                    By 2021, 70% of new enterprise applications will be developed cloud-native, leveraging cloud, containers, microservices architectures, and DevOps methodologies. 
+                </p>
+                <p class="mb-2">
+                    Mastering this dimension and becoming a cloud innovator means you have the infrastructure, skills, and processes needed to build cloud-native applications at the speed and scale that the business demands. You can also access and experiment with new digital technologies and features released in the cloud and build considerable competitive advantage. IDC estimates that by 2025, about two-thirds of European organizations will become prolific software producers, and your maturity in cloud development will help you to claim a strong stake in the ground in the future.
+                </p>
+            </div>
+        </div>
+    ',
+
+    'build-1' => '
+        <div class="clearfix w-4/5 ml-auto">
+            <h3 class="text-ibm-blue mb-2">Your Score</h3>
+            <p class="mb-4 font-bold">
+                Based on your response, your organization is categorized as a <span class="text-ibm-blue">cloud experimenter</span>. This group is characterized by organizations that primarily rely on standard off-the-shelf applications and have very few cloud-native applications. 
+            </p>
+        </div>
+        <div class="">
+            <img class="w-full" src=":url" alt="">
+        </div>
+        <div class="clearfix w-4/5 ml-auto">
+            <h3 class="text mb-2">Recommendations:</h3>
+            <p class="mb-2">
+                Although you are at the beginning stage of maturity in the cloud-native area, your progress is likely to be fast and you can make up for lost ground if you plan your cloud-native application road map consistently. Consider building experience in the cloud-native world by starting with new front-end applications and sharing best practices with other business units to scale the initial low-risk efforts.
+            </p>
+        </div>
+    ',
+    'build-2' => '
+        <div class="clearfix w-4/5 ml-auto">
+            <h3 class="text-ibm-blue mb-2">Your Score</h3>
+            <p class="mb-4 font-bold">
+                Based on your response, your organization is categorized as a <span class="text-ibm-blue">cloud optimizer</span>. This group is characterized by wider cloud-native application development. However, there are still some inconsistencies, and the cloud capabilities are not enterprisewide yet 
+            </p>
+        </div>
+        <div class="">
+            <img class="w-full" src=":url" alt="">
+        </div>
+        <div class="clearfix w-4/5 ml-auto">
+            <h3 class="text mb-2">Recommendations:</h3>
+            <p class="mb-2">
+                You have kickstarted your cloud-native journey and are making good progress. To graduate to the next level, you need to identify the technology bottlenecks, challenges, and skills gap and address them as an urgent priority to scale your cloud-native capabilities. Fostering deeper collaboration between business units, developers, and infrastructure teams can help identify the challenges and effective mitigation.
+            </p>
+        </div>
+    ',
+    'build-3' => '
+        <div class="clearfix w-4/5 ml-auto">
+            <h3 class="text-ibm-blue mb-2">Your Score</h3>
+            <p class="mb-4 font-bold">
+                Based on your response, your organization is categorized as a <span class="text-ibm-blue">cloud innovator</span>. This group is characterized by wider, consistent, and repeatable cloud-native application development strategies. This group is also consistently leveraging modern features to further enhance the applications. It has a cloud-first and container-first approach to application development and has closely tied business outcomes associated with app development.
+
+            </p>
+        </div>
+        <div class="">
+            <img class="w-full" src=":url" alt="">
+        </div>
+        <div class="clearfix w-4/5 ml-auto">
+            <h3 class="text mb-2">Recommendations:</h3>
+            <p class="mb-2">
+                You are highly mature in your cloud-native application development methodologies and can demonstrate business outcomes such as accelerated speed, higher code quality, business-aligned development, use of AI/ML, and higher collaboration. But maintaining your status requires continuous efforts and continuous review of your strategies. As you are almost at the bleeding edge of using new technologies, you may need to have enough buffer to address technical debt or roll back to a more stable version of the technology.
+
+            </p>
+        </div>
+    ',
+    'manage-intro' => '
+        <div class="clearfix">
+            <div class="w-1/5 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 30mm;"></div>
+            <div class="w-4/5 float-left">
+                <h2 class="text-ibm-blue mb-3">Manage</h2>
+                <h3 class="mb-3">Introduction</h3>
+                <p class="mb-2">
+                    The optimal maturity stage in cloud management is characterized by prevalent use of cloud-native technologies in a multi/hybrid architecture. The IT organization is set up with the cloud operating model in mind and without technology domain silos. Vendor lock-in is insignificant and workloads and data can be dynamically deployed on the platform that is most feasible for supporting the business agenda. The granularity of the architecture allows for comprehensive cost optimization, but the main value is in the agility and faster time-to-market that enhances business agility and resiliency.
+                </p>
+                <p class="mb-2">
+                    Few organizations have reached this level of maturity, although cloud is perceived as a core technology for supporting business transformation and innovation and shifting workloads between platforms is prevalent.
+                </p>
+            </div>
+        </div>
+        <div class="clearfix w-4/5 ml-auto">
+            <img class="my-4" src=":url1" alt="">
+        </div>
+        <div class="clearfix w-4/5 ml-auto">
+            <p class="mb-2">
+                Cloud competency teams have been established, tools have been deployed, and processes implemented. But legacy and fragmentation have not been fully addressed and still obstruct optimal use of cloud resources and constrain the extent and pace of the business\' digital transformation journey. 
+            </p>
+        </div>
+        <div class="clearfix w-4/5 ml-auto">
+            <img class="my-4" src=":url2" alt="">
+        </div>
+    ',
+
+    'manage-1' => '
+        <div class="clearfix w-4/5 ml-auto">
+            <h3 class="text-ibm-blue mb-2">Your Score</h3>
+            <p class="mb-4 font-bold">
+                Based on your response, your company is categorized as being a <span class="text-ibm-blue">cloud experimenter</span>.
+            </p>
+            <p class="mb-2">
+                This group is characterized by having a traditional approach to the IT architecture and organization. Cloud is perceived as a place where VMs can be deployed, and the redeployment of workloads that does take place is a reactive measure to solve specific problems.
+            </p>
+        </div>
+        <div class="">
+            <img class="w-full" src=":url" alt="">
+        </div>
+        <div class="clearfix w-4/5 ml-auto">
+            <h3 class="text mb-2">Recommendations:</h3>
+            <p class="mb-2">
+                You need to embrace cloud broadly. Adoption of cloud-native technologies and architectures must be accelerated, orchestration tools adopted, and new skills acquired or developed.
+            </p>
+            <p class="mb-2">
+                This will allow you to better control cost, ensure compliance, and improve performance and resource utilization.
+            </p>
+        </div>
+    ',
+    'manage-2' => '
+        <div class="clearfix w-4/5 ml-auto">
+            <h3 class="text-ibm-blue mb-2">Your Score</h3>
+            <p class="mb-4 font-bold">
+                Based on your response, your company is categorized as being a <span class="text-ibm-blue">cloud optimizer</span>.
+            </p>
+            <p class="mb-2">
+                This group is characterized by having a strategic approach to cloud. Cloud-specific competencies are in place, and multiple clouds and deployment models are used with the ambition to establish cost-efficient high-performance infrastructure.
+            </p>
+        </div>
+        <div class="">
+            <img class="w-full" src=":url" alt="">
+        </div>
+        <div class="clearfix w-4/5 ml-auto">
+            <h3 class="text mb-2">Recommendations:</h3>
+            <p class="mb-2">
+                You should adopt a cloud-first strategy. You have to address your legacy and accelerate the application modernization journey and break down silos in both IT systems and organizational structures.
+            </p>
+            <p class="mb-2">
+                This will allow you to further optimize your costs and mitigate the risk of vendor lock-in, but more importantly better support your organization\'s business through enhanced agility and resiliency. 
+            </p>
+        </div>
+    ',
+    'manage-3' => '
+        <div class="clearfix w-4/5 ml-auto">
+            <h3 class="text-ibm-blue mb-2">Your Score</h3>
+            <p class="mb-4 font-bold">
+                Based on your response, your company is categorized as being a <span class="text-ibm-blue">cloud innovator</span>.
+            </p>
+            <p class="mb-2">
+                This group is characterized by having a cloud-first strategy and has broadly adopted a multi/hybrid cloud architecture leveraging cloud-native technologies. 
+            </p>
+            <p class="mb-2">
+                Data and workloads are deployed and shifted across multiple cloud resources to provide the optimal support for business innovation, agility, and resiliency. 
+            </p>
+        </div>
+        <div class="">
+            <img class="w-full" src=":url" alt="">
+        </div>
+        <div class="clearfix w-4/5 ml-auto">
+            <h3 class="text mb-2">Recommendations:</h3>
+            <p class="mb-2">
+                You need to stay on top of technological development and leverage the latest functionalities available. Furthermore, you should focus on cutting-edge technologies such as AI to introduce self-service and advanced automation. 
+            </p>
+            <p class="mb-2">
+                This will ensure that your organization is optimally positioned to transform, grow, and be resilient.
+            </p>
+        </div>
+    ',
+    
+    'conclusion' => '
         <div class="clearfix pt-20">
-            <div class="w-1/4 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 30mm;"></div>
-            <div class="w-3/4 float-left">
-                <h2 class="text-blue-dark mb-3">Cloud Migration and Application Modernization</h2>
+            <div class="w-1/5 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 30mm;"></div>
+            <div class="w-4/5 float-left">
+                <h2 class="text-ibm-blue mb-3">Conclusion</h2>
                 <p class="mb-2">
-                    Welcome to the cloud migration and application modernization chapter of this report. IDC research shows that an effective cloud adoption and legacy application modernization Journey, built on the right fundamentals, is a critical element of a successful digital transformation Journey. A consistent and planned Journey to migrate to cloud-like, services-driven infrastructures and to transform legacy applications enables enterprisewide digital transformation. This section will assess your maturity and progress in key areas of cloud migration and application modernization and help determine where you need to focus to yield the best results.
-                </p>
-                <p class="mb-2">
-                    This section of the report assesses the status of your organization\'s cloud migration and application modernization Journey. It is based on what\'s driving your key investment decisions, the challenges you are facing, and how initiatives are being prioritized within your cloud Journey.
-                </p>
-            </div>
-        </div>
-    ',
-    'migration-graph' => '
-        <div class="my-5 relative" style="width:160mm;height:61.19mm; background: url(:url) no-repeat; background-size:cover">
-            <div class="bg-ibm-blue absolute" style="width: :overall; height: 10mm; top:18mm; left:33mm;"></div>
-            <div class="bg-grey absolute" style="width: :migration; height: 10mm; top:37mm; left:33mm;"></div>
-        </div>
-    ',
-
-    'migration-1-stage1' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2 font-bold">
-                Your overall score for this section indicates that you are in line with your Cloud Starter peers. You are at the beginning of your journey, so there are many areas you need to address. You can look into individual assessment areas within this section to understand what changes you could make to improve your cloud migration and application modernization maturity.
-            </p>
-        </div>
-    ',
-    'migration-1-stage2' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2 font-bold">
-                You will be pleased to know that your overall score for cloud migration and application modernization indicates that you are ahead of your Cloud Starter peers. Very well done. While keeping this up, you should focus on other aspects such as eliminating management complexities, adopting more automation, and seeking ways to monetize data to improve your overall cloud and data transformation capabilities.
-            </p>
-        </div>
-    ',
-    'migration-1-stage3' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2 font-bold">
-                Very well done. Your overall score for this section indicates that you are well ahead of your Cloud Starter peers. You are clearly doing something right. While keeping this up, you should explore other aspects related to security, automation, and data capitalization to improve your overall cloud, data, and digital maturity. You must identify the strengths of your cloud migration Journey and extend these principles and best practices to other areas of your cloud and data Journey.
-            </p>
-        </div>
-    ',
-
-    'migration-2-stage1' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2 font-bold">
-                In respect to your cloud migration and application modernization approach, your score indicates that you are lagging behind your Cloud Practitioner peers. Legacy application transformation and consistent cloud adoption is an area where you should improve. To catch up with your peers, take steps to address this aspect more seriously. Have a look into individual assessment areas within this section to better understand what changes you could make to improve your position.
-
-            </p>
-        </div>
-    ',
-    'migration-2-stage2' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2 font-bold">
-                In respect to your cloud migration and application modernization progress, your score for this section indicates that you are in line with your Cloud Practitioner peers. You are well on your way, but you need to maintain momentum to stay in line with your fast-moving peers. To improve further, have a look into individual assessment areas within this section to identify areas for improvement and key best practices to help you progress further.
-            </p>
-        </div>
-    ',
-    'migration-2-stage3' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2 font-bold">
-                In respect to your cloud migration and application modernization progress, your score for this section indicates that you are ahead of your Cloud Practitioner peers. Well done on your journey so far. While keeping this up, you must also look at aspects related to security, automation, and data capitalization to improve your overall cloud, data, and digital maturity levels.
-            </p>
-        </div>
-    ',
-
-    'migration-3-stage1' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2 font-bold">
-                Your overall score in this area indicates that you are lagging quite far behind other Cloud Master peers in the area of cloud migration and application modernization. You should urgently evaluate the individual assessment areas within this section to understand what changes you could make to your cloud migration approach in the short term to catch up with your peers and in the long run to keep up with them. You have a lot of work to do, so act quickly to address the areas of improvement. This will help you sustain your strong position with respect to your overall cloud maturity
-            </p>
-        </div>
-    ',
-    'migration-3-stage2' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2 font-bold">
-                Your overall score in this area indicates that you are lagging behind other Cloud Master peers with regards to your cloud adoption and application modernization approach. You should look into the individual assessment areas within this section to understand where improvements are needed and address them quickly. This area is currently showing as a weakness in your overall cloud Journey, and, if corrected, your overall success within cloud will be greatly improved.
-            </p>
-        </div>
-    ',
-    'migration-3-stage3' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2 font-bold">
-                Your overall score in this area indicates that you are in line with your Cloud Master peers with respect to the progress you have made with your cloud migration and application modernization Journey. While keeping this up, look at potential areas of improvement related to security, automation, and data capitalization — all of which will improve your overall cloud, data, and digital maturity
-            </p>
-        </div>
-    ',
-    'question1' => '
-        <div class="clearfix pt-20">
-            <div class="w-3/4 ml-auto">
-                <h4 class="mb-1 font-bold text-grey-darker">Question 1</h4>
-                <h3 class="mb-1 text-blue-dark leading-tight">What is the key driver of your cloud migration and application modernization Journey?</h3>
-            </div>
-        </div>
-    ',
-    'question1-a' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2">
-                Focusing on cost savings as the key driver for cloud migration and application modernization efforts might initially seem like the most sensible approach … but is it? Early stage cloud adoption was often driven by the expectation to save costs when moving from a capex model on-premises to an opex model in the cloud. However, the business case in the cloud does not stack up if you are not also changing your processes so that you scale your application usage up and down according to demand. In addition, cloud as an operating model provides so many other benefits like access to innovative services and support of an agile working culture, which provide more significant advantages than "only" cost savings. To get to the next level, you should think more broadly about the benefits that a cloud and application modernization Journey can provide for your organization.        
-            </p>
-        </div>
-    ',
-    'question1-b' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2">
-                Cloud is a great way to drive operational efficiency at the infrastructure layer, as the cloud provider manages the infrastructure for you so you can free up IT infrastructure operations staff and focus them on other tasks. However, the move to the cloud requires new skills as well, so you need to retrain your staff with cloud management capabilities or look to external resources to fill the gaps. In addition, please consider that cloud offers much more than operational efficiency and is the foundation for digital transformation. To move to the next level of cloud maturity, you might want to investigate how you can use the cloud for business model innovation and transformation, for example by opening up your data and driving new revenue streams from your data in a compliant way.       
-            </p>
-        </div>
-    ',
-    'question1-c' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2">
-                When you find that your competitors are moving to the cloud, it is an opportune moment to investigate if cloud could make sense for your organization as well. Once your competitors and even potential disruptors from outside your industry are using cloud services, they might leapfrog your organization thanks to the operational benefits and the greater innovative potential that cloud provides. To progress to the next level of cloud maturity, you should not only investigate the use of cloud as a defensive move, but really open up to the transformational potential that cloud brings and find out how you can build new products and services based on the functionality that cloud provides.       
-            </p>
-        </div>
-    ',
-    'question1-d' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2">
-                You really understand the transformational potential of moving to the cloud and you explore the cloud\'s potential to support new business models and revenue streams relating to data monetization. To stay ahead of your competitors, make sure that you constantly improve your cloud operations as well, so that your costs are under control, you can drive great operational efficiency and automation in your cloud operations, and you are compliant with relevant regulations.      
-            </p>
-        </div>
-    ',
-
-    'question2' => '
-        <div class="clearfix">
-            <div class="w-3/4 ml-auto">
-                <h4 class="mb-1 font-bold text-grey-darker">Question 2</h4>
-                <h3 class="mb-1 text-blue-dark leading-tight">To what degree are these challenges impacting your cloud Journey?</h3>
-            </div>
-        </div>
-    ',
-    'question2-1-1' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2">
-                As a Cloud Starter, you are still dealing with many challenges when implementing your cloud Journey. The move to the cloud is more than a simple technology upgrade — it is transforming not only your technology platform but also your processes, your staffing requirements, your security procedures, and how you collaborate with other parts of your business. To move to the next stage of cloud maturity, you need to define the starting point for your cloud journey. Do an audit of the challenges you encounter in implementing your cloud Journey, rank them in order of importance, cost, and complexity, start with the easy ones to achieve some quick successes, and plan to address the more complex challenges. Reach out to an experienced partner for additional resources, support, and guidance.    
-            </p>
-        </div>
-    ',
-    'question2-1-2' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2">
-                As a Cloud Starter, you have already tackled some important cloud challenges and are ahead of your Cloud Starter peers in this area. However, the move to the cloud is more than a simple technology upgrade — it is transforming not only your technology platform but also your processes, your staffing requirements, your security procedures, and how you collaborate with other parts of your business. To move to the next stage of cloud maturity, you need to address the more complex challenges that still lie ahead. Do an audit of the challenges that are still ahead of you when implementing your cloud Journey, rank them in order of importance, cost, and complexity, start with the easy ones to achieve some quick successes, and plan to address the more complex challenges. Reach out to an experienced partner for additional resources, support, and guidance.
-            </p>
-        </div>
-    ',
-    'question2-1-3' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2">
-                As a Cloud Starter, you have already tackled most of the important cloud challenges and are far ahead of your Cloud Starter peers. However, the move to the cloud is more than a simple technology upgrade — it is transforming not only your technology platform but also your processes, your staffing requirements, your security procedures, and how you collaborate with other parts of your business. To move to the next stage of cloud maturity, you need to address the more complex challenges that still lie ahead. Do an audit of the challenges that are still ahead of you when implementing your cloud Journey, rank them in order of importance, cost, and complexity, start with the easy ones to achieve some quick successes, and plan to address the more complex challenges. Reach out to an experienced partner for additional resources, support, and guidance.
-            </p>
-        </div>
-    ',
-    'question2-2-1' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2">
-                For a Cloud Practitioner, you are still dealing with many challenges when implementing your cloud Journey, and you are behind your Cloud Practitioner peers in this area. The move to the cloud is more than a simple technology upgrade — it is transforming not only your technology platform but also your processes, your staffing requirements, your security procedures, and how you collaborate with other parts of your business. To move to the next stage of cloud maturity, you need to define the starting point for your cloud journey. Do an audit of the challenges you encounter in implementing your cloud Journey, rank them in order of importance, cost, and complexity, start with the easy ones to achieve some quick successes, and plan to address the more complex challenges. Reach out to an experienced partner for additional resources, support, and guidance.
-            </p>
-        </div>
-    ',
-    'question2-2-2' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2">
-                As a Cloud Practitioner, you have already tackled some important cloud challenges and are on a par with your Cloud Practitioner peers. The move to the cloud is more than a simple technology upgrade — it is transforming not only your technology platform but also your processes, your staffing requirements, your security procedures, and how you collaborate with other parts of your business. To move to the next stage of cloud maturity, you need to address the more complex challenges that still lie ahead. Do an audit of the challenges you encounter in implementing your cloud Journey, rank them in order of importance, cost, and complexity, start with the easy ones to achieve some quick successes, and plan to address the more complex challenges. Reach out to an experienced partner for additional resources, support, and guidance.
-            </p>
-        </div>
-    ',
-    'question2-2-3' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2">
-                As a Cloud Practitioner, you have already tackled most of the important cloud challenges and are ahead of your Cloud Practitioner peers. However, the move to the cloud is more than a simple technology upgrade — it is transforming not only your technology platform but also your processes, your staffing requirements, your security procedures, and how you collaborate with other parts of your business. To move to the next stage of cloud maturity, you need to address the more complex challenges that still lie ahead. Do an audit of the challenges that are still ahead of you when implementing your cloud Journey, rank them in order of importance, cost, and complexity, start with the easy ones to achieve some quick successes, and plan to address the more complex challenges. Reach out to an experienced partner for additional resources, support, and guidance.
-            </p>
-        </div>
-    ',
-
-    'question2-3-1' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-1">
-                For a Cloud Master, you are surprisingly still dealing with many challenges related to the implementation of your cloud Journey and are scoring far behind your Cloud Master peers. The move to the cloud is more than a simple technology upgrade — it is actually transforming not only your technology platform but also your processes, your staffing requirements, your security procedures, and how you collaborate with other parts of your business.
-            </p>
-        </div>
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2">
-                To move to the next stage of cloud maturity, you need to define the starting point for your cloud journey. Do an audit of the challenges you encounter in implementing your cloud Journey, rank them in order of importance, cost, and complexity, start with the easy ones to achieve some quick successes, and plan to address the more complex challenges. Reach out to an experienced partner for additional resources, support, and guidance.
-            </p>
-        </div>
-    ',
-    'question2-3-2' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-1">
-                As a Cloud Master, you have already tackled some cloud challenges, but there are still many to tackle. You are scoring below your Cloud Master peers, demonstrating a higher than expected amount of challenges to overcome. The move to the cloud is more than a simple technology upgrade — it is transforming not only your technology platform but also your processes, your staffing requirements, your security procedures, and how you collaborate with other parts of your business.
-            </p>
-        </div>
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2">
-                To move to the next stage of cloud maturity, you need to address the more complex challenges that still lie ahead. Do an audit of the challenges you encounter, rank them in order of importance, cost, and complexity; start with the easy ones to achieve some quick successes and make a phased plan to address the more complex challenges. Reach out to an experienced partner for additional resources, support, and guidance.
-            </p>
-        </div>
-    ',
-    'question2-3-3' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2">
-                As a Cloud Master, you are have already tackled most of the important cloud challenges, and you are on a par with your Cloud Master peers. The move to the cloud is more than a simple technology upgrade — it is transforming not only your technology platform but also your processes, your staffing requirements, your security procedures, and how you collaborate with other parts of your business. To stay ahead of your competition, you need to keep improving and tackle arising cloud operational challenges quickly and effectively.
-            </p>
-        </div>
-    ',
-
-    'question3' => '
-        <div class="clearfix">
-            <div class="w-3/4 ml-auto">
-                <h4 class="mb-1 font-bold text-grey-darker">Question 3</h4>
-                <h3 class="mb-1 text-blue-dark leading-tight">Looking at your 2-3 year Journey, please rank the importance of the following initiatives?</h3>
-            </div>
-        </div>
-    ',
-    'question3-1-1' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-1">
-               You are only prioritizing a small number of cloud-related initiatives. This is typical for Cloud Starters. A typical cloud journey starts with creating IT efficiencies within the datacenter, freeing up IT resources and satisfying security, regulatory compliance, and data governance requirements. As a next step, organizations are typically looking to implement an agile, cloud-based application architecture using microservices and containers. Finally, they are building an intelligent core to implement and scale analytics, machine learning, and artificial intelligence. To do that, they need to automate and orchestrate the exchange of data within their ecosystem to develop new digital experiences that drive customer satisfaction and revenue. 
-            </p>
-            <p class="w-3/4 ml-auto mb-2">
-               As a Cloud Starter, you are doing well to focus on a few initiatives to start with and work your way up to the more complex projects ahead.
-            </p>
-        </div>
-    ',
-    'question3-1-2' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-1">
-                You are prioritizing a good number of cloud-related initiatives. This is better than your Cloud Starters peers. A typical cloud journey starts with creating IT efficiencies within the datacenter, freeing up IT resources and satisfying security, regulatory compliance, and data governance requirements. As a next step, organizations are typically looking to implement an agile, cloud-based application architecture using microservices and containers. Finally, they are building an intelligent core to implement and scale analytics, machine learning, and artificial intelligence. To do that, they need to automate and orchestrate the exchange of data within their ecosystem to develop new digital experiences that drive customer satisfaction and revenue. 
-            </p>
-            <p class="w-3/4 ml-auto mb-2">
-                As a Cloud Starter, you are doing well to progress on the next level of initiatives and work your way up to the more complex projects ahead.
-            </p>
-        </div>
-    ',
-    'question3-1-3' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-1">
-                You are prioritizing many cloud-related initiatives. This is far better than your Cloud Starter peers. A typical cloud journey starts with creating IT efficiencies within the datacenter, freeing up IT resources and satisfying security, regulatory compliance, and data governance requirements. As a next step, organizations are typically looking to implement an agile, cloud-based application architecture using microservices and containers. Finally, they are building an intelligent core to implement and scale analytics, machine learning, and artificial intelligence. To do that, they need to automate and orchestrate the exchange of data within their ecosystem to develop new digital experiences that drive customer satisfaction and revenue. 
-            </p>
-            <p class="w-3/4 ml-auto mb-2">
-                As a Cloud Starter, you are already addressing the more complex projects ahead.
-            </p>
-        </div>
-    ',
-    'question3-2-1' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-1">
-                You are only prioritizing a small number of cloud-related initiatives. As a Cloud Practitioner, you should have progressed further along your cloud journey. A typical cloud journey starts with creating IT efficiencies within the datacenter, freeing up IT resources and satisfying security, regulatory compliance, and data governance requirements. As a next step, organizations are typically looking to implement an agile, cloud-based application architecture using microservices and containers. Finally, they are building an intelligent core to implement and scale analytics, machine learning, and artificial intelligence. To do that, they need to automate and orchestrate the exchange of data within their ecosystem to develop new digital experiences that drive customer satisfaction and revenue. 
-            </p>
-            <p class="w-3/4 ml-auto mb-2">
-                As a Cloud Practitioner, you need to get the basics in place and quickly proceed to the more complex initiatives that are taking longer to implement, enabling you can catch up with your Cloud Practitioner peers. 
-            </p>
-        </div>
-    ',
-    'question3-2-2' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-1">
-                You are prioritizing a fair number of cloud-related initiatives. As a Cloud Practitioner, you are on a par with your peers on your cloud journey. A typical cloud journey starts with creating IT efficiencies within the datacenter, freeing up IT resources and satisfying security, regulatory compliance, and data governance requirements. As a next step, organizations are typically looking to implement an agile, cloud-based application architecture using microservices and containers. Finally, they are building an intelligent core to implement and scale analytics, machine learning, and artificial intelligence. To do that, they need to automate and orchestrate the exchange of data within their ecosystem to develop new digital experiences that drive customer satisfaction and revenue. 
-            </p>
-            <p class="w-3/4 ml-auto mb-2">
-                As a Cloud Practitioner, you have already started to address the more complex initiatives that are taking longer to implement and you are getting ready for the next big step.
-            </p>
-        </div>
-    ',
-    'question3-2-3' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-1">
-                You are prioritizing many cloud-related initiatives. As a Cloud Practitioner, you are ahead of your peers on your cloud journey. A typical cloud journey starts with creating IT efficiencies within the datacenter, freeing up IT resources and satisfying security, regulatory compliance, and data governance requirements. As a next step, organizations are typically looking to implement an agile, cloud-based application architecture using microservices and containers. Finally, they are building an intelligent core to implement and scale analytics, machine learning, and artificial intelligence. To do that, they need to automate and orchestrate the exchange of data within their ecosystem to develop new digital experiences that drive customer satisfaction and revenue. 
-            </p>
-            <p class="w-3/4 ml-auto mb-2">
-                As a Cloud Practitioner, you have already started to address the more complex initiatives that are taking longer to implement and you are getting ready for the next big step.
-            </p>
-        </div>
-    ',
-
-    'question3-3-1' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-1">
-                You are only prioritizing a small number of cloud-related initiatives. As a Cloud Master, you should have progressed much further along your cloud journey. A typical cloud journey starts with creating IT efficiencies within the datacenter, freeing up IT resources and satisfying security, regulatory compliance, and data governance requirements. As a next step, organizations are typically looking to implement an agile, cloud-based application architecture using microservices and containers. Finally, they are building an intelligent core to implement and scale analytics, machine learning, and artificial intelligence. To do that, they need to automate and orchestrate the exchange of data within their ecosystem to develop new digital experiences that drive customer satisfaction and revenue. 
-            </p>
-            <p class="w-3/4 ml-auto mb-2">
-                As a Cloud Master, you need to get the basics in place and quickly proceed to the more complex initiatives that are taking longer to implement so that you can catch up with your Cloud Master peers.
-            </p>
-        </div>
-    ',
-    'question3-3-2' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-1">
-                You are prioritizing a fair number of cloud-related initiatives. As a Cloud Master, you should have progressed further along your cloud journey. A typical cloud journey starts with creating IT efficiencies within the datacenter, freeing up IT resources and satisfying security, regulatory compliance, and data governance requirements. As a next step, organizations are typically looking to implement an agile, cloud-based application architecture using microservices and containers. Finally, they are building an intelligent core to implement and scale analytics, machine learning, and artificial intelligence. To do that, they need to automate and orchestrate the exchange of data within their ecosystem to develop new digital experiences that drive customer satisfaction and revenue.
-            </p>
-            <p class="w-3/4 ml-auto mb-2">
-                As a Cloud Master, you need to get the basics in place and quickly proceed to the more complex initiatives that are taking longer to implement so that you can catch up with your Cloud Master peers.
-            </p>
-        </div>
-    ',
-    'question3-3-3' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-1">
-                You are prioritizing a great number of cloud-related initiatives. As a Cloud Master, you are on a par with your peers on your cloud journey. A typical cloud journey starts with creating IT efficiencies within the datacenter, freeing up IT resources and satisfying security, regulatory compliance, and data governance requirements. As a next step, organizations are typically looking to implement an agile, cloud-based application architecture using microservices and containers. Finally, they are building an intelligent core to implement and scale analytics, machine learning, and artificial intelligence. To do that, they need to automate and orchestrate the exchange of data within their ecosystem to develop new digital experiences that drive customer satisfaction and revenue. 
-            </p>
-            <p class="w-3/4 ml-auto mb-2">
-                As a Cloud Master, you are already addressing the more complex initiatives that are taking longer to implement and are getting ready for the next big step.
-            </p>
-        </div>
-    ',
-
-    'question4' => '
-        <div class="clearfix">
-            <div class="w-3/4 ml-auto">
-                <h4 class="mb-1 font-bold text-grey-darker">Question 4</h4>
-                <h3 class="mb-1 text-blue-dark leading-tight">To which degree are these cloud migration challenges faced by your organization?</h3>
-                <p class="mb-2">
-                    Where to start your cloud journey and which workloads to migrate is not an easy decision. First, you need to establish if there is an organizational need to move to the cloud. While we are seeing a broader trend in the industry, with an increasing number of organizations moving to the cloud, it might not be a good fit for your organization to have every workload and application in the cloud; it all depends on your specific workloads, performance requirements, data sensitivity, regulatory compliance concerns, etc. Once you have decided that cloud is going to be part of your IT infrastructure mix, you need to determine which applications are a good fit for the cloud, which migration Journey fits to which application class, how complex the migration is going to be, and, last but not least, if you have the right cloud skills internally or if you need to select an appropriate external partner for support.
-                </p>
-            </div>
-        </div>
-    ',
-    'question4-1-1' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2">
-                As a Cloud Starter, it is easy to get overwhelmed by the sheer size of the application landscape and the array of migration options available. Starting with an assessment of your application landscape and choosing an experienced cloud migration partner are good steps to move to the next level of maturity.
-            </p>
-        </div>
-    ',
-    'question4-1-2' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2">
-                As a Cloud Starter, you have already defined your starting point and understand the migration complexities of the different classes of applications. You are ahead of your Cloud Starter peers. As a next step, you need to devise a migration Journey (lift and shift, refactor, transform, etc.) for each application class and choose an experienced cloud migration partner if you don\'t have the skills in-house. 
-            </p>
-        </div>
-    ',
-    'question4-1-3' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2">
-                As a Cloud Starter, you already understand the migration complexities of the different classes of applications and have come a long way in your cloud migration journey. You are far ahead of your Cloud Starter peers.
-            </p>
-        </div>
-    ',
-    'question4-2-1' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2">
-                As a Cloud Practitioner, you are behind your peers in terms of cloud migration Journey. However, it is easy to get overwhelmed by the sheer size of the application landscape and the array of migration options available. Starting with an assessment of your application landscape and choosing an experienced cloud migration partner for support are good steps to move to the next level of maturity.
-            </p>
-        </div>
-    ',
-    'question4-2-2' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2">
-                As a Cloud Practitioner, you have already defined your starting point and understand the migration complexities of the different classes of applications. You are on a par with your peers. As a next step, you need to devise a migration Journey (lift and shift, refactor, transform, etc.) for each application class and choose an experienced cloud migration partner if you don\'t have the skills in-house. 
-            </p>
-        </div>
-    ',
-    'question4-2-3' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2">
-                As a Cloud Practitioner, you already understand the migration complexities of the different classes of applications and have come a long way in your cloud migration journey. You are ahead of your Cloud Practitioner peers.
-            </p>
-        </div>
-    ',
-
-    'question4-3-1' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2">
-                As a Cloud Master, you are far behind your peers in terms of cloud migration Journey. However, it is easy to get overwhelmed by the sheer size of the application landscape and the migration options. Starting with an assessment of your application landscape and choosing an experienced cloud migration partner are good steps to move to the next level of maturity.
-            </p>
-        </div>
-    ',
-    'question4-3-2' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2">
-                As a Cloud Master, you have defined your starting point and understand the migration complexities of the different classes of applications. However, you are behind your peers in migrating applications to the cloud. As a next step, you need to devise a migration Journey (lift and shift, refactor, transform, etc.) for each application class and choose an experienced cloud migration partner if you don\'t have the skills in-house. 
-            </p>
-        </div>
-    ',
-    'question4-3-3' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2">
-                As a Cloud Mater, you already understand the migration complexities of the different classes of applications and have come a long way in your cloud migration journey. You are on a par with your Cloud Master peers.
-            </p>
-        </div>
-    ',
-
-    'status-intro' => '
-        <div class="clearfix pt-20">
-            <div class="w-1/4 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 30mm;"></div>
-            <div class="w-3/4 float-left">
-                <h2 class="text-blue-dark mb-3"> Cloud and Multicloud Status</h2>
-                <p class="mb-2">
-                    Cloud is the launchpad for digital transformation, with 69% of organizations operating a multicloud environment today, according to IDC\'s 2019 Multicloud Survey. Given the advancements in cloud solutions and the importance of security, resilience, cost transparency, and compliance, cloud adoption is more nuanced today. 
-                </p>
-                <p class="mb-2">
-                    Successful enterprises are committed to enterprisewide IT transformation in a sustainable and compliant way, making multicloud and hybrid cloud a natural evolution. How they navigate through the multicloud complexities and develop unified monitoring, workflow management, cost management, and compliance determines their multicloud success. 
-                </p>
-                <p class="mb-2">
-                    The realization is dawning among savvy enterprises that there is no "silver bullet cloud" that answers all IT issues. Organizations therefore seek to build an interoperable, hybrid, and multicloud IT infrastructure to gain the benefit of cloud without compromising on core IT values of security, resilience, and compliance. Cloud is seen as an operating model rather than a destination.
-                </p>
-                <p class="mb-2">
-                    This section of the report assesses your organization\'s cloud and multicloud status by evaluating your cloud usage, maturity of hybrid or multicloud environments, and the objectives you have set in relation to your multicloud initiatives — that is, how aligned are your multicloud strategies with business outcomes? Lastly, it explores how well you are executing on your hybrid and multicloud strategies. 
-                </p>
-            </div>
-        </div>
-    ',
-    'status-graph' => '
-        <div class="my-5 relative" style="width:160mm;height:61.19mm; background: url(:url) no-repeat; background-size:cover">
-            <div class="bg-ibm-blue absolute" style="width: :overall; height: 10mm; top:18mm; left:33mm;"></div>
-            <div class="bg-grey-dark absolute" style="width: :status; height: 10mm; top:37mm; left:33mm;"></div>
-        </div>
-    ',
-
-    'status-1-stage1' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2 font-bold">
-                Your overall score for this section indicates that you are in line with your Cloud Starter peers when it comes to cloud and multicloud maturity. You are at the beginning of your cloud and multicloud journey, with many areas still to be addressed. You should look into individual assessment areas within this section to better understand what changes you could potentially make to improve your cloud and multicloud status.
-            </p>
-        </div>
-    ',
-    'status-1-stage2' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2 font-bold">
-                Your overall score for this section indicates that you are ahead of your Cloud Starter peers when it comes to cloud and multicloud maturity. Very well done. While keeping the momentum on these successful initiatives, there are still a few areas for development. Have a look through the next paragraphs to identify where improvements can be made to further improve your overall cloud maturity.
-            </p>
-        </div>
-    ',
-    'status-1-stage3' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2 font-bold">
-                Your overall score for this section indicates that you are well ahead of your Cloud Starter peers when it comes to cloud and multicloud maturity. Very well done. While keeping this up, you must also look at aspects related to cloud migration and data monetization to improve your overall cloud maturity.
-            </p>
-        </div>
-    ',
-    'status-2-stage1' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2 font-bold">
-                Your overall score for this section indicates that you are lagging your Cloud Practitioner peers with respect to your multicloud approach. Setting an appropriate cloud and multicloud Journey is an area where you should improve to catch up with your peers, and you must take steps to accelerate the journey now. You should look into individual assessment areas within this section to understand what changes you could make to your multicloud approach to improve your cloud maturity.
-            </p>
-        </div>
-    ',
-    'status-2-stage2' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2 font-bold">
-                Your overall score in this section indicates that you are in line with your Cloud Practitioner peers with respect to the progress you have made in cloud and multicloud adoption. You are well on your way, but don\'t think of stopping just yet. You can look into individual assessment areas within this section to understand what changes you could make to your cloud and multicloud capabilities for further progress in your cloud maturity.
-            </p>
-        </div>
-    ',
-    'status-2-stage3' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2 font-bold">
-                Your overall score for this section indicates that you are ahead of your Cloud Starter peers with respect to the progress you have made so far. Very well done. While keeping up with this, you must also look at aspects related to cloud migration and data monetization to improve your overall cloud maturity.
-            </p>
-        </div>
-    ',
-    'status-3-stage1' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2 font-bold">
-                Your overall score in this area indicates that you are lagging far behind other Cloud Master peers in relation to your cloud and multicloud capabilities. You should look into individual assessment areas within this section to understand what changes you could make to your cloud operations. You have a lot of work to do, so act urgently to address the areas of improvement. This will help you sustain or even improve your strong position with respect to your overall cloud maturity.
-            </p>
-        </div>
-    ',
-    'status-3-stage2' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2 font-bold">
-                Your overall score in this area indicates that you are lagging behind other Cloud Master peers with regards to your cloud and multicloud capabilities. You should look into individual assessment areas within this section to understand what changes you could make to your cloud approach. You have a lot of work to do and should act quickly to address the areas of improvement. This will help sustain or even improve your strong position with respect to your overall cloud maturity.
-            </p>
-        </div>
-    ',
-    'status-3-stage3' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2 font-bold">
-                Your overall score in this area indicates that you are in line with your Cloud Master peers in relation to your cloud and multicloud capabilities. While keeping up with this, you can look at areas of improvement related to cloud migration and data monetization to improve your overall cloud maturity.
-            </p>
-        </div>
-    ',
-    'question5' => '
-        <div class="clearfix pt-20">
-            <div class="w-3/4 ml-auto">
-                <h4 class="mb-1 font-bold text-grey-darker">Question 5</h4>
-                <h3 class="mb-1 text-blue-dark leading-tight">Which of these environments represents the majority (>50%) of your IT estate?</h3>
-            </div>
-        </div>
-    ',
-    'question5-a' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2">
-                Your IT environment still represents a traditional IT environment that is mostly reactive to business needs. As business needs change rapidly, there is a risk that the business views IT as a scapegoat and an inhibitor rather than a business enabler. Traditional on-premises IT is complex, hardware-driven, monolithic, and slow to respond to agile business needs. Traditional IT also forces business to adopt shadow IT practices and renders traditional security policies inadequate, exposing the business to risks. You need to strategize an IT modernization plan, using cloud to progress in your business transformation.
-            </p>
-        </div>
-    ',
-    'question5-b' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-1">
-                You have embraced cloud in the form of private cloud. It is a good starting point, but is it still just an extension or refresh of your traditional on-premises IT? You may be delivering IT resources slightly faster and may be benefiting from modern technologies such as software-defined infrastructure.
-            </p>
-            <p class="w-3/4 ml-auto mb-2">
-                You need to now become more proactive in your cloud usage and evaluate how expanding it to a multicloud and hybrid cloud Journey can bring modern IT benefits such as self-service and robust SLAs.
-            </p>
-        </div>
-    ',
-    'question5-c' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-1">
-                You have embraced cloud in the form of public cloud. It is a good starting point, indicating that you understand the value of cloud, but public cloud is not an answer to all your workloads. It also indicates that much of your cloud workloads may be non-mission-critical.
-            </p>
-            <p class="w-3/4 ml-auto mb-2">
-                You need to now become more proactive in extending beyond public cloud to modernizing on-premises infrastructure and applications for hybrid cloud and multicloud strategies, enabling all applications to benefit from cloud-like IT. 
-            </p>
-        </div>
-    ',
-    'question5-d' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2">
-                You are operating in a hybrid cloud environment which is a combination of public cloud services and private cloud services connected through a common control plane. You may have some new cloud-native applications in the cloud and have adopted a private cloud to boost your on-prem applications. If you want to take your Journey one step further, you can move to a higher degree of automation, API-based application network and a unified management Journey.
-            </p>
-        </div>
-    ',
-    'question5-e' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2">
-                You are operating in a multicloud environment which is a combination of several public cloud services. You are leveraging multiple cloud services and don\'t run the risk of cloud lock-in with one vendor. If you want to take your Journey one step further, you can adopt a unified hybrid cloud Journey and have a higher degree of automation, an API-based application network, and a unified management Journey for all apps across the hybrid cloud environment.
-            </p>
-        </div>
-    ',
-    'question6' => '
-        <div class="clearfix">
-            <div class="w-3/4 ml-auto">
-                <h4 class="mb-1 font-bold text-grey-darker">Question 6</h4>
-                <h3 class="mb-1 text-blue-dark leading-tight">Which one of these cloud benefits is the most vital to your business? </h3>
-            </div>
-        </div>
-    ',
-    'question6-a' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2">
-                You are using cloud services to see instant improvements in application and infrastructure efficiency and speed. You should also consider other areas of cloud benefits, such as speed of innovation, access to high scale and use of new cloud-based features to accelerate your digital transformation and journey to the cloud.
-            </p>
-        </div>
-    ',
-    'question6-b' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-1">
-                You are using multiple cloud services and linking them directly to business outcomes and objectives. You should focus on things like; driving specific customer experience objectives with your cloud Journey or capitalizing on data, to gain a competitive edge
-            </p>
-        </div>
-    ',
-    'question6-c' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-1">
-                You are using cloud services for advanced reasons such as managing technical debt and ensuring innovation isn\'t slowing down, this is good. Try focusing on the next steps, such as driving specific customer experience objectives with your cloud Journey and even turn to capitalizing on data to gain a competitive edge.
-            </p>
-        </div>
-    ',
-    'question6-d' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2">
-                Your cloud usage and vision for cloud is very advanced. Good job. You are showing strong capabilities, in linking cloud services and benefits to key business objectives such as customer experience. Try focusing on the next steps, such as capitalizing on data to gain a competitive edge and focus on complementary strategies such as agile application development and DevOps. 
-            </p>
-        </div>
-    ',
-    'question6-e' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2">
-                Your cloud usage and vision for cloud is very advanced. Good job. You are showing strong capabilities around linking cloud services and benefits to key business objectives such as customer experience. Try focuing on the next steps, such as capitalizing on data to gain a competitive edge and on complementary strategies such as agile application development and DevOps. 
-            </p>
-        </div>
-    ',
-
-    'question7' => '
-        <div class="clearfix">
-            <div class="w-3/4 ml-auto">
-                <h4 class="mb-1 font-bold text-grey-darker">Question 7</h4>
-                <h3 class="mb-1 text-blue-dark leading-tight">To what degree are these challenges faced around cloud operations and management </h3>
-                <p class="mb-2">
-                    Getting cloud operations and management right is critical for running a successful cloud practice
-                </p>
-            </div>
-        </div>
-    ',
-    'question7-1' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2">
-                You score for this question indicates, you still face many of the early stage challenges in setting up an efficient cloud operations and management practice.
-            </p>
-        </div>
-    ',
-    'question7-2' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2">
-                Your score for this question indicates, you have moved beyond several of the early stage challenges in setting up an efficient cloud operations and management practice.
-            </p>
-        </div>
-    ',
-    'question7-3' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2">
-                Your score for this question, indicates you have moved beyond the early stage obstacles and are facing the advanced challenges in setting up an efficient cloud operations and management practice.     
-            </p>
-        </div>
-    ',
-    'question7outro' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2">
-                <strong class="text-blue-dark">To improve further</strong>, you need to ensure good visibility and control of your IT infrastructure, both on-premises and in the cloud, invest in multicloud monitoring, management, automation, and orchestration tools to reduce the need for error-prone manual tasks, set up a strong security, data governance, and regulatory compliance framework, and make sure that you manage your cloud expenses tightly. Once the foundation is in place, you can look at API management, integration, and interoperability, as well as implementing a CI/CD pipeline to automate cloud operations
-            </p>
-        </div>
-    ',
-
-    'value-intro' => '
-        <div class="clearfix pt-20">
-            <div class="w-1/4 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 30mm;"></div>
-            <div class="w-3/4 float-left">
-                <h2 class="text-blue-dark mb-3"> Realizing the value of data</h2>
-                <p class="mb-2">
-                    Data is at the heart of digital transformation and gives enterprises a competitive advantage. Data on its own doesn\'t mean anything — it is how enterprises treat it as a valuable asset, work with it, manage it, and capitalize on it that brings about the real difference. 
-                </p>
-                <p class="mb-2 text-blue-dark italic">
-                    Data-driven organizations are more confident about delivering better customer experiences and take confident business decisions. 
-                </p>
-                <p class="mb-2">
-                    Capitalizing on and monetizing data is a journey and requires organizations to consider the full data life cycle, from collection to storage to management to analytics. Is there a culture in your organization of treating data as an asset? Are IT confident of delivering the right data to the right hands at the right time without compromising on security and privacy? 
-                </p>
-                <p class="mb-0 italic text-md text-right text-blue-dark font-light">
-                    "Creating the right foundation to share, manage, and collaborate on data is critical to innovate and improve decision-making capabilities in the digital era"
-                </p>
-                <p class="mb-2 font-bold text-right">
-                    Carla Arend, IDC, 2020
+                    Thank you for taking this cloud migration, application modernization, and cloud orchestration readiness assessment. This demonstrates your ambition to succeed in your digital transformation strategies and is a good starting point to set you apart from your peers. We hope you have been able to identify the weaknesses and strengths in your approach and have gained some tangible advice to help make progress, while developing a competitive edge.
                 </p>
                 <p class="mb-2 font-bold">
-                    This section of the report assesses the stage of your organization\'s data capitalization vision and strategies based on the maturity of your data-driven objectives and your progress in the data value realization journey.
+                    Final recommendations to progress in the cloud maturity journey.
                 </p>
-            </div>
-        </div>
-    ',
-    'value-graph' => '
-        <div class="my-5 relative" style="width:160mm;height:61.19mm; background: url(:url) no-repeat; background-size:cover">
-            <div class="bg-ibm-blue absolute" style="width: :overall; height: 10mm; top:18mm; left:33mm;"></div>
-            <div class="bg-black absolute" style="width: :value; height: 10mm; top:37mm; left:33mm;"></div>
-        </div>
-    ',
-
-    'value-1-stage1' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2 font-bold">
-                Your overall score for this section indicates that you are in line with your Cloud Starter peers with respect to the progress you have made so far. You are at the beginning of your journey, so there are many areas you need to address. You can look into individual assessment areas within this section to understand what changes you could make to improve your cloud maturity.
-            </p>
-        </div>
-    ',
-    'value-1-stage2' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2 font-bold">
-                Your overall score for this section indicates that you are ahead of your Cloud Starter peers with respect to the progress you have made so far. Very well done. While keeping up with this, you must also look at aspects related to cloud migration and cloud operations to improve your overall cloud maturity.
-            </p>
-        </div>
-    ',
-    'value-1-stage3' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2 font-bold">
-                Your overall score for this section indicates that you are ahead of your Cloud Starter peers with respect to the progress you have made so far. Very well done. While keeping up with this, you must also look at aspects related to cloud migration and cloud operations to improve your overall cloud maturity.
-            </p>
-        </div>
-    ',
-    'value-2-stage1' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2 font-bold">
-                Your overall score for this section indicates that you are lagging behind your Cloud Practitioner peers with respect to your data monetization Journey. Realizing the value of data is an area where you should improve to catch up with your peers, so you must take steps to accelerate the journey now. You should look at individual assessment areas within this section to understand what changes you could make to your data monetization approach to improve your cloud maturity.
-            </p>
-        </div>
-    ',
-    'value-2-stage2' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2 font-bold">
-                Your overall score in this section indicates that you are in line with your Cloud Practitioner peers with respect to the progress you have made in realizing the value of your data. You are well on your way, but don\'t think of stopping just yet. You can look into individual assessment areas within this section to understand what changes you could make to your data monetization capabilities to further progress your cloud maturity.
-            </p>
-        </div>
-    ',
-    'value-2-stage3' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2 font-bold">
-                Your overall score for this section indicates that you are ahead of your Cloud Practitioner peers with respect to the progress you have made. Very well done on your journey so far. While keeping up with this, you must also look at aspects related to cloud migration and cloud operations to improve your overall cloud maturity.
-            </p>
-        </div>
-    ',
-    'value-3-stage1' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2 font-bold">
-                Your overall score in this area indicates that you are lagging far behind other Cloud Master peers in your data monetization practice. You should look into individual assessment areas within this section to understand what changes you could make to your approach to realizing the value of data. You have a lot of work to do so you should act urgently to address the areas of improvement. This will help you sustain your strong position with respect to your overall cloud maturity.
-            </p>
-        </div>
-    ',
-    'value-3-stage2' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2 font-bold">
-                Your overall score in this area indicates that you are lagging behind other Cloud Master peers with regards to your data monetization approach. You should look into individual assessment areas within this section to understand what changes you could make to your approach to realizing the value of your data. You have a lot of work to do so you should act urgently to address the areas of improvement. This will help sustain your strong position with respect to your overall cloud maturity.
-            </p>
-        </div>
-    ',
-    'value-3-stage3' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2 font-bold">
-                Your overall score in this area indicates that you are in line with the Cloud Master peers with respect to the progress you have made with regards to your data monetization approach. While keeping up with this, you can look at areas of improvement related to cloud migration and cloud operations to improve your overall cloud maturity.
-            </p>
-        </div>
-    ',
-    'question8' => '
-        <div class="clearfix pt-20">
-            <div class="w-3/4 ml-auto">
-                <h4 class="mb-1 font-bold text-grey-darker">Question 8</h4>
-                <h3 class="mb-1 text-blue-dark leading-tight">At what stage are you on your data value realization journey?</h3>
-            </div>
-        </div>
-    ',
-    'question8-a' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2">
-                Your IT environment still represents a traditional IT environment that is mostly reactive to business needs. As business needs change rapidly, there is a risk that the business views IT as a scapegoat and an inhibitor rather than a business enabler. Traditional on-premises IT is complex, hardware-driven, monolithic, and slow to respond to agile business needs. Traditional IT also forces business to adopt shadow IT practices and renders traditional security policies inadequate, exposing the business to risks. You need to strategize an IT modernization plan, using cloud to progress in your business transformation.
-            </p>
-        </div>
-    ',
-    'question8-b' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-1">
-                You have embraced cloud in the form of private cloud. It is a good starting point, but is it still just an extension or refresh of your traditional on-premises IT? You may be delivering IT resources slightly faster and may be benefiting from modern technologies such as software-defined infrastructure.
-            </p>
-            <p class="w-3/4 ml-auto mb-2">
-                You need to now become more proactive in your cloud usage and evaluate how expanding it to a multicloud and hybrid cloud Journey can bring modern IT benefits such as self-service and robust SLAs.
-            </p>
-        </div>
-    ',
-    'question8-c' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-1">
-                You have embraced cloud in the form of public cloud. It is a good starting point, indicating that you understand the value of cloud, but public cloud is not an answer to all your workloads. It also indicates that much of your cloud workloads may be non-mission-critical.
-            </p>
-            <p class="w-3/4 ml-auto mb-2">
-                You need to now become more proactive in extending beyond public cloud to modernizing on-premises infrastructure and applications for hybrid cloud and multicloud strategies, enabling all applications to benefit from cloud-like IT. 
-            </p>
-        </div>
-    ',
-    'question8-d' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2">
-                You are operating in a hybrid cloud environment which is a combination of public cloud services and private cloud services connected through a common control plane. You may have some new cloud-native applications in the cloud and have adopted a private cloud to boost your on-prem applications. If you want to take your Journey one step further, you can move to a higher degree of automation, API-based application network and a unified management Journey.
-            </p>
-        </div>
-    ',
-    'question8-e' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2">
-                You are operating in a multicloud environment which is a combination of several public cloud services. You are leveraging multiple cloud services and don\'t run the risk of cloud lock-in with one vendor. If you want to take your Journey one step further, you can adopt a unified hybrid cloud Journey and have a higher degree of automation, an API-based application network, and a unified management Journey for all apps across the hybrid cloud environment.
-            </p>
-        </div>
-    ',
-    'question9' => '
-        <div class="clearfix">
-            <div class="w-3/4 ml-auto">
-                <h4 class="mb-1 font-bold text-grey-darker">Question 9</h4>
-                <h3 class="mb-1 text-blue-dark leading-tight">Please indicate how critical these data driven objectives are to your data Journey / organization?</h3>
+                <ul classs="list-disc ml-10">
+                    <li class="font-base text-ibm-blue-light mb-1">Adopt a cloud-first architecture leveraging containers, microservices, APIs, functions, etc.</li>
+                    <li class="font-base text-ibm-blue-light mb-1">Assess your application estate and establish a road map of which applications to modernize and how </li>
+                    <li class="font-base text-ibm-blue-light mb-1">Focus on business outcomes beyond cost and cost structures — e.g., innovation and time to market</li>
+                    <li class="font-base text-ibm-blue-light mb-1">Confront your legacy and break down existing silos in IT systems, organizational structures, and skills requirements</li>
+                    <li class="font-base text-ibm-blue-light mb-1">Embrace a continuous approach, constantly evaluating technologies, reassessing modernization road maps, and orchestrating workloads across multiple platforms</li>
+                </ul>
                 <p class="mb-2">
-                    IDC research indicates that the cloud strategies and data strategies of organizations are increasingly converging. To build a great data Journey, you need to create a data map to gain visibility and control of your data, and improve the quality and speed of your data delivery so that you can use the data to create a competitive advantage. You also need to hire data experts to gain new insights from your data and deliver new data-driven revenue streams.
+                    If you want to know more about the role of cloud, especially multicloud and hybrid cloud, in application development and modernization as well as digital transformation, please check out the following report: <a href="font-bold text-ibm-blue">http://ibmcloud.com</a>
                 </p>
             </div>
         </div>
-    ',
-    'question9-1-1' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2">
-                As a Cloud Starter, you are at the beginning of your data value realization journey. There is a long road ahead, and working with a strong partner can help to accelerate your data realization journey. 
-            </p>
-        </div>
-    ',
-    'question9-1-2' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2">
-                For a Cloud Starter, you have already mastered the early challenges on your data value realization journey, so well done. Working with a strong partner can help to accelerate your data realization journey.
-            </p>
-        </div>
-    ',
-    'question9-1-3' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2">
-                For a Cloud Starter, you have already mastered most challenges on your data value realization journey and can focus on other aspects of cloud migration and cloud operations to improve your overall cloud maturity.
-            </p>
-        </div>
-    ',
-    'question9-2-1' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2">
-                Although you are a Cloud Practitioner, you are at the beginning of your data value realization journey; there is a long road ahead, and working with a strong partner can help to accelerate your data realization journey. 
-            </p>
-        </div>
-    ',
-    'question9-2-2' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2">
-                As a Cloud Practitioner, you have already mastered the early challenges on your data value realization journey. Working with a strong partner can help to accelerate your data realization journey.
-            </p>
-        </div>
-    ',
-    'question9-2-3' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2">
-                For a Cloud Practitioner, you have already mastered most challenges on your data value realization journey and can focus on other aspects of cloud migration and cloud operations to improve your overall cloud maturity.
-            </p>
-        </div>
-    ',
-
-    'question9-3-1' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2">
-                Although you are a Cloud Master overall, you are still at the beginning of your data value realization journey, so perhaps engage a partner to get you started, as you are lagging far behind your Cloud Master peers and need to catch up quickly. 
-            </p>
-        </div>
-    ',
-    'question9-3-2' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2">
-                For a Cloud Master, you have only mastered the early challenges on your data value realization journey and should look for a strong partner to accelerate your journey so that you can catch up with your Cloud Master peers. 
-            </p>
-        </div>
-    ',
-    'question9-3-3' => '
-        <div class="clearfix">
-            <p class="w-3/4 ml-auto mb-2">
-                For a Cloud Master, you have already mastered most challenges on your data value realization journey and can focus on other aspects of cloud migration and cloud operations to improve your overall cloud maturity.
-            </p>
-        </div>
-    ',
-    'conclusion' => '
-        
     '
 );
