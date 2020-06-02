@@ -3134,8 +3134,8 @@ trait GenerateReportTrait
                 'url2' => asset('/images/tools/16/data_point_2.png'),
                 'url3' => asset('/images/tools/16/data_point_3.png'),
             ]);
-            $customCopy.= '<div class="pb"></div>';
             $customCopy.= trans(session('product.alias').'.introduction2');
+            $customCopy.= '<div class="pb"></div>';
             $customCopy.= trans(session('product.alias').'.introduction3',[
                 'url' => asset('/images/tools/16/evaluating.png')
             ]);

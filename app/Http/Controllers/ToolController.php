@@ -634,7 +634,10 @@ class ToolController extends Controller
                         $query[$fieldKey] = $settings['value'];
                         break;
                     case 'report':
-                        $query[$fieldKey] = session('url').'/'.session('localeUrl').'/download/'.$assessment->id;
+                        $query[$fieldKey] = session('url').'/'.session('localeUrl').'/download/'.$assessment->uuid;
+                        break;
+                    case 'url':
+                        $query[$fieldKey] = session('url').'/'.session('localeUrl');
                         break;
                     case 'question':
                         $selected = session('questions.'.$settings['questions'][0].'.selected');
@@ -1161,7 +1164,10 @@ class ToolController extends Controller
                             $query[$fieldKey] = $settings['value'];
                             break;
                         case 'report':
-                            $query[$fieldKey] = session('url').'/'.session('localeUrl').'download/'.$assessment->id;
+                            $query[$fieldKey] = session('url').'/'.session('localeUrl').'download/'.$assessment->uuid;
+                            break;
+                        case 'url':
+                            $query[$fieldKey] = session('url').'/'.session('localeUrl');
                             break;
                         case 'question':
                             $selected = array_get($assessment->quiz, $settings['questions'][0].'.selected');

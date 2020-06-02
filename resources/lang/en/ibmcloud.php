@@ -97,7 +97,17 @@ return array(
     ],
     'introduction1' => '
         <div class="clearfix w-4/5 ml-auto">
-            <h2 class="text-ibm-blue mb-2">Market Context and Key Drivers</h2>
+            <h2 class="text-ibm-blue mb-2">Executive Summary</h2>
+            <p class="mb-2">
+                This customized report was created based on your answers to the IDC Cloud Journey Evaluation Survey that you recently completed.
+            </p>
+            <p class="mb-2">
+                We hope that by reading the report you will not only learn how far your cloud journey has taken you, but also be inspired to set new milestones, helping you to reach the next level of cloud maturity and thereby support your organization in becoming more innovative, agile, and profitable.
+            </p>
+            <p class="mb-2">
+                The report presents your overall cloud assessment score and identifies your organization as either a <strong class="text-ibm-blue">Cloud Experimenter</strong>, <strong class="text-ibm-blue">Cloud Optimizer</strong>, or <strong class="text-ibm-blue">Cloud Innovator</strong>. It will also break down the assessment score on three dimensions that must all be mastered to unlock the full potential of the cloud: the strategy to <strong class="text-ibm-blue">move</strong> the existing application estate to the cloud; the dedication to <strong class="text-ibm-blue">build</strong> new cloud-native applications; and the ability to <strong class="text-ibm-blue">manage</strong> and orchestrate the cloud resources to continuously ensure performance, compliance, and cost efficiency.
+            </p>
+            <h2 class="text-ibm-blue mb-2 mt-6">Market Context and Key Drivers</h2>
             <p class="mb-2">
                 The expectations and requirements IT organisations face continue to evolve as businesses become more dedicated to and dependent on digitised business processes, customer engagements and business models.
             </p>
@@ -113,6 +123,7 @@ return array(
                 <img class="w-full" src=":url2" alt="">
             </div>
         </div>
+        <div class="pb"></div>
         <div class="clearfix w-4/5 ml-auto mt-10">
             <p class="mb-2">
                 Cloud adoption is high and multiple deployment models are often used. However, the use of true hybrid and multicloud architectures remains low. 
