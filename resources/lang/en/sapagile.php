@@ -118,10 +118,13 @@ return array(
             <a href="https://clicktobeagile.idcready.net/">https://clicktobeagile.idcready.net/</a><br><br>
             This assessment has been sponsored by SAP.<br><br>
             To find out more about SAP for your location, please click the relevant link below:<br>
-            <a class="text-sap-blue" href="https://www.sap.com/africa/products/sme-business-software.html">Africa</a><br/>
-            <a class="text-sap-blue" href="https://www.sap.com/mena/products/sme-business-software.html">Middle East</a><br/>
-            <a class="text-sap-blue" href="https://www.sap.com/spain/products/sme-business-software.html">Spain</a><br/>
-            <a class="text-sap-blue" href="https://events.sap.com/it/sapitalia/it/feelings">Italy</a><br/><br/>
+            <a class="text-sap-blue" href="https://www.sap.com/africa/products/sme-business-software.html">SAP.com/Africa</a><br/>
+            <a class="text-sap-blue" href="https://www.sap.com/mena/products/sme-business-software.html">SAP.com/Middle East</a><br/>
+            <a class="text-sap-blue" href="https://www.sap.com/spain/about/events.html">SAP.com/Spain</a><br/>
+            <a class="text-sap-blue" href="https://events.sap.com/it/sapitalia/it/feelings">SAP.com/Italy</a><br/>
+            <a class="text-sap-blue" href="https://www.sap.com/portugal/products/sme-business-software.html">SAP.com/Portugal</a><br/>
+            <a class="text-sap-blue" href="https://www.sap.com/turkey/products/sme-business-software.html">SAP.com/Turkey</a><br/>
+            <a class="text-sap-blue" href="https://www.sap.com/index.html">SAP.com global website</a><br/><br/>
             Share via Twitter and Linkedin below:<br/><br/>
             <a style="text-decoration: none;" href="https://twitter.com/home?status=https://clicktobeagile.idcready.net I have just completed the IDC Click to be Agile Assessment Tool Sponsored by SAP">
                 <img src="https://clicktobeagile.idcready.net/images/twitter.png" style="width: 50px;"/>
