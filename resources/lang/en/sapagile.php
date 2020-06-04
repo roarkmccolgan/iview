@@ -100,10 +100,13 @@ return array(
         Please check in your junk folder if you don\'t receive it within 5 minutes.<br/>
         If you cannot find the link, please email IDC (<a href="mailto:podgers@idc.com">podgers@idc.com</a>) and a new link will be sent to you<br/><br/>
         To find out more about SAP for your location, please click the relevant link below:<br>
-        <a class="text-sap-blue" href="https://www.sap.com/africa/products/sme-business-software.html">Africa</a><br/>
-        <a class="text-sap-blue" href="https://www.sap.com/mena/products/sme-business-software.html">Middle East</a><br/>
-        <a class="text-sap-blue" href="https://www.sap.com/spain/products/sme-business-software.html">Spain</a><br/>
-        <a class="text-sap-blue" href="https://events.sap.com/it/sapitalia/it/feelings">Italy</a><br/><br/>
+        <a class="text-sap-blue" href="https://www.sap.com/africa/products/sme-business-software.html">SAP.com/Africa</a>
+        <a class="text-sap-blue" href="https://www.sap.com/mena/products/sme-business-software.html">SAP.com/Middle East</a><br/>
+        <a class="text-sap-blue" href="https://www.sap.com/spain/about/events.html">SAP.com/Spain</a><br/>
+        <a class="text-sap-blue" href="https://events.sap.com/it/sapitalia/it/feelings">SAP.com/Italy</a><br/>
+        <a class="text-sap-blue" href="https://www.sap.com/portugal/products/sme-business-software.html">SAP.com/Portugal</a><br/>
+        <a class="text-sap-blue" href="https://www.sap.com/turkey/products/sme-business-software.html">SAP.com/Turkey</a><br/>
+        <a class="text-sap-blue" href="https://www.sap.com/index.html">SAP.com global website</a><br/><br/>
         Share the tool ',
     'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @3ds. Interested? ',// http://bit.ly/2gslXEh
     'email'=>[
