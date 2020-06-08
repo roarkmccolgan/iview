@@ -54,5 +54,6 @@ $manifest = json_decode($json, TRUE);
 </style>
 	@show
     <script src="//cdn.jsdelivr.net/npm/velocity-animate@2.0/velocity.min.js"></script>
+    <script id="tbw_pixel" type="text/javascript" src="//d26x5ounzdjojj.cloudfront.net/tbw/pixels/L9740808bfec87a70.js" tbw_site_id="L9740808bfec87a70" tbw_segment="click_to_be_agile" tbw_log="1"></script>
 </body>
 </html>
