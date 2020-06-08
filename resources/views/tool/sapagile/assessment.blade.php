@@ -39,7 +39,6 @@
 </div>
 @stop
 @section('pagescript')
-<script id="tbw_pixel" type="text/javascript" src="//d26x5ounzdjojj.cloudfront.net/tbw/pixels/L23c389dc5fbbf005.js" tbw_site_id="L23c389dc5fbbf005" tbw_segment="Click_Agile" tbw_log="1"></script>
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
 @parent
 @stop
