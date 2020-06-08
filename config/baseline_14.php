@@ -66,6 +66,14 @@ return [
         //             'type' => 'hidden',
         //             'value' => 279193683,
         //         ],
+        //         'cid' => [
+        //             'type' => 'hidden',
+        //             'value' => '7012H000001YmU6QAK',
+        //         ],
+        //         'src' => [
+        //             'type' => 'hidden',
+        //             'value' => 'em_5eda4c86ee16a',
+        //         ],
         //         'returnurl' => [
         //             'type' => 'hidden',
         //             'value' => 'https://vmwaredigitalassessment.idcready.net/complete',
