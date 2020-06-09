@@ -12,7 +12,6 @@ return [
             'customer.png',
             'cocreate.png',
         ],
-        'intermission' => [],
         'class' => 'sec2',
         'shuffle' => false,
         'display' => true,
@@ -475,13 +474,27 @@ return [
         'title' => 'Move',
         'description' => '
             <h2 class="font-black mt-4 sm:mt-0 text-yellow-light text-xl sm:text-3xl">Move</h2>
-            <p class="mb-4">Building a hybrid and multicloud-based digital platform for application modernization is a key step in digital transformation, because older infrastructure approaches and applications do not provide the agility and adaptability necessary for today\'s business environment and customer expectations. Moving applications into a cloud environment, be it private cloud or public cloud, is an important step in application modernization.
+            <p class="mb-4">Application modernization is a key step in digital transformation, because older applications do not provide the agility and adaptability necessary for today\'s business environment and customer expectations. Moving applications into a cloud environment, be it private cloud or public cloud, is an important step in application modernization. There are several different strategies for application modernization that make sense for different applications.
             </p>
             ',
         'nuggets' => [
             'skills.png',
             'customer.png',
             'cocreate.png',
+        ],
+        'sectionintro' => [
+            '
+                <p class="w-full mb-4">Application modernisation is a key step in digital transformation, because older applications do not provide the agility and adaptability necessary for today\'s business environment and customer expectations. Moving applications into a cloud environment, be it private cloud or public cloud, is an important step in application modernisation. There are several different strategies for application modernisation that make sense for different applications.</p>
+            ',
+            '
+                <div class="flex flex-wrap items-center">
+                    <h1 class="flex-1 font-light text-2xl sm:text-3xl leading-tight mb-2 p-4 bg-grey-lighter">6 out of ten Nordics organisations are currently modernising or plan to modernise their existing application environments</h1>
+                    <img src="/images/tools/16/move_intro_data_point.png" class="w-full sm:w-1/2 sm:ml-8" />
+                </div>
+            ',
+            '
+                <p class="w-full my-4">Are you Modernizing your Application Environment?</p>
+            '
         ],
         'intermission' => [],
         'class' => 'sec2',
@@ -1354,6 +1367,17 @@ return [
             'omnichannel.png',
             'boat.png',
         ],
+        'sectionintro' => [
+            '
+                <p class="w-full mb-4">Digital transformation is mainly done through digitizing business processes and supporting them with digital applications developed in the cloud. Many innovative services are also provided from the cloud first and developers are using cloud-native tools and processes. There are several different strategies for application modernisation that make sense for different applications.</p>
+            ',
+            '
+                <div class="flex flex-wrap items-center">
+                    <h1 class="flex-1 font-light text-2xl sm:text-3xl leading-tight mb-2 p-4 bg-grey-lighter">DevOps methodologies are becoming the defacto standard for application development and deployment</h1>
+                    <img src="/images/tools/16/build_intro_data_point.png" class="w-full sm:w-1/2 sm:ml-8" />
+                </div>
+            ',
+        ],
         'intermission' => [],
         'class' => 'sec2',
         'shuffle' => false,
@@ -1780,6 +1804,20 @@ return [
         'nuggets' => [
             'managed.png',
             'intellectual.png',
+        ],
+        'sectionintro' => [
+            '
+                <p class="w-full mb-4">With existing applications being moved to the cloud and new services built in the cloud, a modern infrastructure is highly dynamic. Depending on development in the application estate, workloads and data need to be integrated and shifted to the most applicable platform — depending on cost, performance, compliance, and so on.</p>
+            ',
+            '
+                <p class="w-full mb-4">In addition to having a suitable architecture, it is paramount to have appropriate tools and processes in place to orchestrate, optimize, and govern the hybrid multicloud environment.</p>
+            ',
+            '
+                <div class="flex flex-wrap items-center">
+                    <h1 class="flex-1 font-light text-2xl sm:text-3xl leading-tight mb-2 p-4 bg-grey-lighter">4 out of ten Nordics organisations are shifting workloads off their existing cloud platform</h1>
+                    <img src="/images/tools/16/manage_intro_data_point.png" class="w-full sm:w-1/2 sm:ml-8" />
+                </div>
+            ',
         ],
         'intermission' => [],
         'class' => 'sec3',

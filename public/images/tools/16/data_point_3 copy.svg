@@ -1,0 +1,91 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 483.04 291.27">
+  <title>data_point_3 copy</title>
+  <g>
+    <g>
+      <path d="M234.05,170.25,174.34,78.3a106.74,106.74,0,0,1,59.71-17.69Z" style="fill: #404040"/>
+      <path d="M234.05,170.25l-51.47,96.8a109.63,109.63,0,0,1-45.33-148.27A105.37,105.37,0,0,1,174.34,78.3Z" style="fill: gray"/>
+      <path d="M234.05,170.25l107.63-20.92A109.64,109.64,0,0,1,255,277.87c-26.15,5.09-48.87,1.69-72.39-10.82Z" style="fill: #dfdfdf"/>
+      <path d="M234.05,170.25V60.61c53.29,0,97.46,36.41,107.63,88.72Z"/>
+    </g>
+    <circle cx="233.21" cy="170.08" r="66.79" style="fill: #fff"/>
+  </g>
+  <text transform="translate(344.25 72.08)" style="font-size: 14px;fill: gray;font-family: OpenSans, Open Sans">Has started<tspan x="0" y="16.8">modernising</tspan><tspan x="0" y="33.6">the application</tspan><tspan x="0" y="50.4">environment</tspan></text>
+  <text transform="translate(344.47 48.97)" style="font-size: 29.786359786987305px;font-family: OpenSans, Open Sans">23</text>
+  <text transform="translate(378.53 39.05) scale(0.58)" style="font-size: 29.786359786987305px;font-family: OpenSans, Open Sans">%</text>
+  <text transform="translate(387.25 214.08)" style="font-size: 14px;fill: gray;font-family: OpenSans, Open Sans">Plans to start<tspan x="0" y="16.8">modernising</tspan><tspan x="0" y="33.6">in the next 18</tspan><tspan x="0" y="50.4">months</tspan></text>
+  <text transform="translate(387.47 190.97)" style="font-size: 29.786359786987305px;font-family: OpenSans, Open Sans">23</text>
+  <text transform="translate(421.53 181.05) scale(0.58)" style="font-size: 29.786359786987305px;font-family: OpenSans, Open Sans">%</text>
+  <text transform="translate(37.25 217.08)" style="font-size: 14px;fill: gray;font-family: OpenSans, Open Sans">Considers<tspan x="0" y="16.8">modernising</tspan><tspan x="0" y="33.6">the application</tspan><tspan x="0" y="50.4">environment</tspan></text>
+  <text transform="translate(37.47 193.97)" style="font-size: 29.786359786987305px;font-family: OpenSans, Open Sans">23</text>
+  <text transform="translate(71.53 184.05) scale(0.58)" style="font-size: 29.786359786987305px;font-family: OpenSans, Open Sans">%</text>
+  <text transform="translate(33.25 52.08)" style="font-size: 14px;fill: gray;font-family: OpenSans, Open Sans">No plans or<tspan x="0" y="16.8">considerations</tspan><tspan x="0" y="33.6">to start</tspan><tspan x="0" y="50.4">modernising</tspan></text>
+  <text transform="translate(33.47 28.97)" style="font-size: 29.786359786987305px;font-family: OpenSans, Open Sans">23</text>
+  <text transform="translate(67.53 19.05) scale(0.58)" style="font-size: 29.786359786987305px;font-family: OpenSans, Open Sans">%</text>
+  <g>
+    <polyline points="304.5 76.5 304.5 36.5 324.94 36.5" style="fill: none;stroke: #006afb;stroke-miterlimit: 10"/>
+    <polygon points="332 36.5 322.05 40.56 324.41 36.5 322.05 32.44 332 36.5" style="fill: #006afb"/>
+  </g>
+  <g>
+    <polyline points="326.5 254.5 359.5 254.5 359.5 182.5 375.44 182.15" style="fill: none;stroke: #006afb;stroke-miterlimit: 10"/>
+    <polygon points="382.5 182 372.64 186.28 374.91 182.16 372.46 178.15 382.5 182" style="fill: #006afb"/>
+  </g>
+  <g>
+    <polyline points="199.5 60.5 199.5 20.5 105.06 20.5" style="fill: none;stroke: #006afb;stroke-miterlimit: 10"/>
+    <polygon points="98 20.5 107.95 16.43 105.59 20.5 107.95 24.56 98 20.5" style="fill: #006afb"/>
+  </g>
+  <g>
+    <line x1="119" y1="181.5" x2="98.56" y2="181.5" style="fill: none;stroke: #006afb;stroke-miterlimit: 10"/>
+    <polygon points="91.5 181.5 101.45 177.44 99.09 181.5 101.45 185.56 91.5 181.5" style="fill: #006afb"/>
+  </g>
+  <g id="Share_cloud_cloud_computing_human_robot" data-name="Share cloud cloud computing human robot">
+    <circle cx="255.91" cy="184.58" r="4.9" style="fill: #fff"/>
+    <path d="M218.67,170.41a9.75,9.75,0,0,0,2.94.45h4.9v-3.92h19.6v3.92H251a9.65,9.65,0,0,0,3.92-.83,9.79,9.79,0,0,0-1.43-18.44,7.83,7.83,0,0,0-10-4.79,7.65,7.65,0,0,0-1,.44,11.74,11.74,0,0,0-21.71,4.06,9.8,9.8,0,0,0-2.12,19.11Zm7.84-15.23h19.6V163h-19.6Z" style="fill: #fff"/>
+    <circle cx="223.57" cy="188.5" r="1.96" style="fill: #fff"/>
+    <path d="M224.55,180.66a2,2,0,0,0-2-2h-7.84a2,2,0,0,0-2,2v2h11.76Z" style="fill: #fff"/>
+    <circle cx="213.77" cy="188.5" r="1.96" style="fill: #fff"/>
+    <path d="M255.91,187.52a2.94,2.94,0,1,0-2.94-2.94A2.94,2.94,0,0,0,255.91,187.52Zm0-3.92a1,1,0,1,1-1,1A1,1,0,0,1,255.91,183.6Z" style="fill: #006afb"/>
+    <path d="M255.91,173.85v-3.2a10.77,10.77,0,0,0-1.68-19.87A8.81,8.81,0,0,0,242.87,146,12.73,12.73,0,0,0,220,150.4a10.77,10.77,0,0,0-2.28,20.69V174a2.94,2.94,0,0,0-2,2.77v1h-1a2.94,2.94,0,0,0-2.94,2.94v1h-2a2.94,2.94,0,0,0-2.94,2.94v11.76a3,3,0,0,0,2.94,2.94h17.64a3,3,0,0,0,2.94-2.94V184.58a2.94,2.94,0,0,0-2.94-2.94h-2v-1a2.94,2.94,0,0,0-2.94-2.94h-1v-1a3,3,0,0,0-2-2.77v-2.32a11.62,11.62,0,0,0,2,.19h3.92v2.94a1,1,0,0,0,1,1h19.6a1,1,0,0,0,1-1v-2.94H251a10.51,10.51,0,0,0,2.94-.43v2.44a10.78,10.78,0,0,0-9.8,10.56l-1.91,5.73a1,1,0,0,0,.93,1.3h2.94v2.94a1,1,0,0,0,1,1H250v2.94a1,1,0,0,0,1,1h7.84a1,1,0,0,0,1-1v-4.13a10.77,10.77,0,0,0-3.92-20.32Zm-38.22,2.89a1,1,0,0,1,2,0v1h-2Zm9.8,6.86a1,1,0,0,1,1,1v11.76a1,1,0,0,1-1,1H209.85a1,1,0,0,1-1-1V184.58a1,1,0,0,1,1-1Zm-4.9-3.92a1,1,0,0,1,1,1v1h-9.8v-1a1,1,0,0,1,1-1Zm22.54-5.88H227.49v-5.88h17.64ZM227.49,162v-5.88h17.64V162Zm15.68,2v2H229.45v-2Zm7.84,5.88h-3.92v-2.94a1,1,0,0,0-1-1h-1v-2h1a1,1,0,0,0,1-1v-7.84a1,1,0,0,0-1-1h-19.6a1,1,0,0,0-1,1V163a1,1,0,0,0,1,1h1v2h-1a1,1,0,0,0-1,1v2.94h-3.92a8.82,8.82,0,0,1-.73-17.6,1,1,0,0,0,.88-.83,10.77,10.77,0,0,1,19.9-3.71,1,1,0,0,0,1.29.37,6.85,6.85,0,0,1,9.23,2.9,7.19,7.19,0,0,1,.39.9,1,1,0,0,0,.67.62A8.82,8.82,0,0,1,251,169.88Zm8.82,14.7a3.92,3.92,0,1,1-3.92-3.92A3.93,3.93,0,0,1,259.83,184.58Zm-1.37,8.08a1,1,0,0,0-.59.89v3.77H252v-2.94a1,1,0,0,0-1-1h-2.94v-2.94a1,1,0,0,0-1-1h-2.56l1.53-4.59a1.12,1.12,0,0,0,.05-.31,8.83,8.83,0,0,1,8.82-8.82v3a5.88,5.88,0,1,0,2,0V176a8.82,8.82,0,0,1,1.57,16.68Z" style="fill: #006afb"/>
+    <path d="M213.77,191.44a2.94,2.94,0,1,0-2.94-2.94A2.94,2.94,0,0,0,213.77,191.44Zm0-3.92a1,1,0,1,1-1,1A1,1,0,0,1,213.77,187.52Z" style="fill: #006afb"/>
+    <path d="M223.57,191.44a2.94,2.94,0,1,0-2.94-2.94A2.94,2.94,0,0,0,223.57,191.44Zm0-3.92a1,1,0,1,1-1,1A1,1,0,0,1,223.57,187.52Z" style="fill: #006afb"/>
+    <rect x="215.73" y="193.4" width="5.88" height="1.96" style="fill: #006afb"/>
+    <rect x="211.81" y="193.4" width="1.96" height="1.96" style="fill: #006afb"/>
+    <rect x="223.57" y="193.4" width="1.96" height="1.96" style="fill: #006afb"/>
+    <rect x="232.39" y="189.48" width="1.96" height="1.96" style="fill: #006afb"/>
+    <rect x="238.27" y="189.48" width="1.96" height="1.96" style="fill: #006afb"/>
+    <path d="M252.75,154.43l-.5,1.9A4.89,4.89,0,0,1,251,166v2a6.86,6.86,0,0,0,1.74-13.49Z" style="fill: #006afb"/>
+    <path d="M216.71,161.06a4.92,4.92,0,0,1,4.49-4.88l-.16-2a6.86,6.86,0,0,0,.57,13.69v-2A4.91,4.91,0,0,1,216.71,161.06Z" style="fill: #006afb"/>
+    <rect x="229.45" y="158.12" width="1.96" height="1.96" style="fill: #006afb"/>
+    <rect x="235.33" y="158.12" width="1.96" height="1.96" style="fill: #006afb"/>
+    <rect x="241.21" y="158.12" width="1.96" height="1.96" style="fill: #006afb"/>
+    <rect x="229.45" y="169.88" width="1.96" height="1.96" style="fill: #006afb"/>
+    <rect x="235.33" y="169.88" width="1.96" height="1.96" style="fill: #006afb"/>
+    <rect x="241.21" y="169.88" width="1.96" height="1.96" style="fill: #006afb"/>
+    <rect x="220.63" y="140.48" width="1.96" height="1.96" style="fill: #006afb"/>
+    <rect x="216.71" y="140.48" width="1.96" height="1.96" style="fill: #006afb"/>
+    <rect x="212.79" y="140.48" width="1.96" height="1.96" style="fill: #006afb"/>
+    <path d="M208.87,142.44h2v-2h-2.94a1,1,0,0,0-1,1v2.94h2Z" style="fill: #006afb"/>
+    <rect x="206.91" y="146.36" width="1.96" height="1.96" style="fill: #006afb"/>
+    <rect x="206.91" y="150.28" width="1.96" height="1.96" style="fill: #006afb"/>
+    <rect x="206.91" y="154.2" width="1.96" height="1.96" style="fill: #006afb"/>
+    <rect x="206.91" y="158.12" width="1.96" height="1.96" style="fill: #006afb"/>
+    <rect x="206.91" y="162.04" width="1.96" height="1.96" style="fill: #006afb"/>
+    <rect x="206.91" y="165.96" width="1.96" height="1.96" style="fill: #006afb"/>
+    <rect x="206.91" y="169.88" width="1.96" height="1.96" style="fill: #006afb"/>
+    <rect x="206.91" y="173.8" width="1.96" height="1.96" style="fill: #006afb"/>
+    <rect x="206.91" y="177.72" width="1.96" height="1.96" style="fill: #006afb"/>
+    <rect x="250.03" y="140.48" width="1.96" height="1.96" style="fill: #006afb"/>
+    <rect x="253.95" y="140.48" width="1.96" height="1.96" style="fill: #006afb"/>
+    <rect x="257.87" y="140.48" width="1.96" height="1.96" style="fill: #006afb"/>
+    <path d="M264.73,140.48h-2.94v2h2v2h2v-2.94A1,1,0,0,0,264.73,140.48Z" style="fill: #006afb"/>
+    <rect x="263.75" y="146.36" width="1.96" height="1.96" style="fill: #006afb"/>
+    <rect x="263.75" y="150.28" width="1.96" height="1.96" style="fill: #006afb"/>
+    <rect x="263.75" y="154.2" width="1.96" height="1.96" style="fill: #006afb"/>
+    <rect x="263.75" y="158.12" width="1.96" height="1.96" style="fill: #006afb"/>
+    <rect x="263.75" y="162.04" width="1.96" height="1.96" style="fill: #006afb"/>
+    <rect x="263.75" y="165.96" width="1.96" height="1.96" style="fill: #006afb"/>
+    <rect x="263.75" y="169.88" width="1.96" height="1.96" style="fill: #006afb"/>
+    <rect x="263.75" y="173.8" width="1.96" height="1.96" style="fill: #006afb"/>
+    <rect x="246.11" y="140.48" width="1.96" height="1.96" style="fill: #006afb"/>
+    <rect x="242.19" y="140.48" width="1.96" height="1.96" style="fill: #006afb"/>
+  </g>
+</svg>

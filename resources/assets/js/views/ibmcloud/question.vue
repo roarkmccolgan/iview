@@ -1,6 +1,8 @@
 <template>
 	<div class="flex-grow">
-		<div class="flex flex-col">
+		<intro-component :section="currentQuestion.section | toTitle" v-on:next-step="closeIntro()" :info="currentQuestion.sectionintro" v-if="showIntro"></intro-component>
+		
+		<div class="flex flex-col" v-else>
 			<div class="container mx-auto py-2" v-if="showIntermission">
 				<intermission-component :section="currentQuestion.section | toTitle" v-on:next-step="closeIntermission()" :info="currentQuestion.intermission" v-if="showIntermission"></intermission-component>
 			</div>
@@ -86,6 +88,7 @@ import GroupOpposingSlider from '../../components/ibmcloud/GroupOpposingSlider.v
 
 //import NuggetComponent from '../../components/ibmcloud/NuggetComponent.vue';
 import IntermissionComponent from '../../components/ibmcloud/IntermissionComponent.vue';
+import IntroComponent from '../../components/ibmcloud/IntroComponent.vue';
 
 export default{
 	data () {
@@ -104,6 +107,7 @@ export default{
 			showNext: false,
 			showDetails: true,
 			showIntermission: false,
+			showIntro: false,
 			answer: [],
 			saving: false,
 			normalButton: 'block w-full py-4 px-4 text-center bg-ibm-blue text-white',
@@ -164,6 +168,12 @@ export default{
 				}
 			});
 			return result;
+		},
+		currentSectionHasIntro: function(){
+			if(this.currentQuestion.section_info.is_first && this.currentQuestion.sectionintro.length){
+				return true;
+			}
+			return false;
 		}
 	},
 	methods: {
@@ -226,6 +236,9 @@ export default{
 					}
 				});
 			}
+		},
+		closeIntro: function(){
+			this.showIntro = false;
 		},
 		selectOption: function(selected){
 			console.log('here');
@@ -374,6 +387,12 @@ export default{
 			}
 		}
 	},
+	watch: {
+		currentSectionHasIntro: function(value){
+			console.log(value);
+			this.showIntro = value;
+		}
+	},
 	filters: {
 		toTitle: function(value){
 			return value.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
@@ -387,6 +406,7 @@ export default{
 		GroupButton,
 		GroupOpposingSlider,
 		IntermissionComponent,
+		IntroComponent
 	},
 	beforeRouteUpdate (to, from, next) {
 		var nextQ = this.questions['q'+ (Number(this.$route.params.question)+1)];
@@ -400,6 +420,9 @@ export default{
 		next();
 	},
 	created: function(){
+		if(this.currentSectionHasIntro){
+			this.showIntro = true;
+		}
 		for (var q in this.questions) {
 			if (this.questions.hasOwnProperty(q)){
 				if(!this.questions[q].selected){

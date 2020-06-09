@@ -207,6 +207,7 @@ class ToolController extends Controller
                     'number' => (int) substr($itemKey, 4),
                     'total' => $numberOfQuestionsInSection,
                     'is_last' => (int) substr($itemKey, 4) == $numberOfQuestionsInSection ? true : false,
+                    'is_first' => (int) substr($itemKey, 4) == 1 ? true : false,
                     'left' => $numberOfQuestionsInSection - (int) substr($itemKey, 4),
                     ];
                     $item['questions'][$qKey]['ignore'] = isset($section['ignore']) ? $section['ignore']: '';
@@ -214,6 +215,7 @@ class ToolController extends Controller
                     $item['questions'][$qKey]['background'] = isset($section['background']) ? $section['background'] : '';
                     $item['questions'][$qKey]['nuggets'] = isset($section['nuggets']) ? $section['nuggets'] : '';
                     $item['questions'][$qKey]['intermission'] = isset($section['intermission']) ? $section['intermission'] : '';
+                    $item['questions'][$qKey]['sectionintro'] = isset($section['sectionintro']) ? $section['sectionintro'] : '';
                     $item['questions'][$qKey]['complete'] = isset($section['complete']) ? $section['complete'] : '';
                     $item['questions'][$qKey]['title'] = isset($section['title']) ? $section['title'] : '';
                     $item['questions'][$qKey]['class'] = isset($section['class']) ? $section['class'] : '';

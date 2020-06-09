@@ -1,0 +1,45 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 435.04 283.27">
+  <title>manage_intro_data_point</title>
+  <g>
+    <g>
+      <path d="M224.05,160.25,164.34,68.3a106.74,106.74,0,0,1,59.71-17.69Z" style="fill: #404040"/>
+      <path d="M224.05,160.25l-51.47,96.8a109.63,109.63,0,0,1-45.33-148.27A105.37,105.37,0,0,1,164.34,68.3Z" style="fill: gray"/>
+      <path d="M224.05,160.25l107.63-20.92A109.64,109.64,0,0,1,245,267.87c-26.15,5.09-48.87,1.69-72.39-10.82Z" style="fill: #dfdfdf"/>
+      <path d="M224.05,160.25V50.61c53.29,0,97.46,36.41,107.63,88.72Z"/>
+    </g>
+    <circle cx="223.21" cy="160.08" r="66.79" style="fill: #fff"/>
+  </g>
+  <text transform="translate(334.25 62.08)" style="font-size: 14px;fill: gray;font-family: OpenSans, Open Sans">Change<tspan x="0" y="16.8">deployment</tspan></text>
+  <text transform="translate(334.47 38.97)" style="font-size: 29.786359786987305px;font-family: OpenSans, Open Sans">28</text>
+  <text transform="translate(368.53 29.05) scale(0.58)" style="font-size: 29.786359786987305px;font-family: OpenSans, Open Sans">%</text>
+  <text transform="translate(377.25 204.08)" style="font-size: 14px;fill: gray;font-family: OpenSans, Open Sans">Change<tspan x="0" y="16.8">vendor</tspan></text>
+  <text transform="translate(377.47 180.97)" style="font-size: 29.786359786987305px;font-family: OpenSans, Open Sans">11</text>
+  <text transform="translate(411.53 171.05) scale(0.58)" style="font-size: 29.786359786987305px;font-family: OpenSans, Open Sans">%</text>
+  <text transform="translate(7.25 117.08)" style="font-size: 14px;fill: gray;font-family: OpenSans, Open Sans">No change</text>
+  <text transform="translate(7.47 93.97)" style="font-size: 29.786359786987305px;font-family: OpenSans, Open Sans">61</text>
+  <text transform="translate(41.53 84.05) scale(0.58)" style="font-size: 29.786359786987305px;font-family: OpenSans, Open Sans">%</text>
+  <g>
+    <polyline points="294.5 66.5 294.5 26.5 314.94 26.5" style="fill: none;stroke: #006afb;stroke-miterlimit: 10"/>
+    <polygon points="322 26.5 312.05 30.57 314.41 26.5 312.05 22.44 322 26.5" style="fill: #006afb"/>
+  </g>
+  <g>
+    <polyline points="113.5 117.5 113.5 77.5 81.06 77.5" style="fill: none;stroke: #006afb;stroke-miterlimit: 10"/>
+    <polygon points="74 77.5 83.95 73.44 81.59 77.5 83.95 81.56 74 77.5" style="fill: #006afb"/>
+  </g>
+  <g>
+    <polyline points="316.5 244.5 349.5 244.5 349.5 172.5 365.44 172.15" style="fill: none;stroke: #006afb;stroke-miterlimit: 10"/>
+    <polygon points="372.5 172 362.64 176.28 364.91 172.16 362.46 168.15 372.5 172" style="fill: #006afb"/>
+  </g>
+  <g>
+    <path d="M223.1,174.57a.75.75,0,0,1-.74-.76l.2-3.43a.75.75,0,0,1,1.5,0l-.2,3.43A.75.75,0,0,1,223.1,174.57Z" style="fill: #006afb"/>
+    <path d="M248.27,174.57H198.14a.75.75,0,0,1,0-1.5h50.13a.75.75,0,1,1,0,1.5Z" style="fill: #006afb"/>
+    <path d="M223.21,180.92a.74.74,0,0,1-.75-.74v-6.37a.75.75,0,0,1,1.5,0v6.37A.75.75,0,0,1,223.21,180.92Z" style="fill: #006afb"/>
+    <path d="M248.27,180.92a.74.74,0,0,1-.75-.74v-6.37a.75.75,0,0,1,1.5,0v6.37A.74.74,0,0,1,248.27,180.92Z" style="fill: #006afb"/>
+    <path d="M198.14,180.92a.74.74,0,0,1-.75-.74v-6.37a.75.75,0,0,1,1.5,0v6.37A.74.74,0,0,1,198.14,180.92Z" style="fill: #006afb"/>
+    <path d="M201.21,181l-3.43,3.43-3.15-3.15c-.6,0-1.2.07-1.8.07a.75.75,0,0,0,.21.45l4.22,4.22a.74.74,0,0,0,1.05,0L203,181.4a.81.81,0,0,0,.19-.41C202.51,181,201.86,181,201.21,181Z" style="fill: #006afb"/>
+    <path d="M226.78,182l-3.43,3.43-3.15-3.15c-.6,0-1.2.07-1.8.07a.8.8,0,0,0,.2.45l4.22,4.22a.75.75,0,0,0,1.06,0l4.65-4.65a.75.75,0,0,0,.2-.41C228.08,182,227.43,182,226.78,182Z" style="fill: #006afb"/>
+    <path d="M251.64,182l-3.42,3.43-3.15-3.15c-.6,0-1.21.07-1.81.07a.75.75,0,0,0,.21.45l4.22,4.22a.75.75,0,0,0,1.06,0l4.65-4.65a.74.74,0,0,0,.19-.41C252.94,182,252.29,182,251.64,182Z" style="fill: #006afb"/>
+    <path d="M251.6,142.63c-.24-6.9-6.2-12.43-13.5-12.43a13.86,13.86,0,0,0-7.33,2.06,19.8,19.8,0,0,0-16-7.87c-10.69,0-19.41,8.14-19.65,18.24a14.1,14.1,0,0,0-9.81,13.18c0,7.72,6.61,14,14.73,14h9a14.15,14.15,0,0,1-.14-1.46c0-.33,0-.65,0-1H200c-6.75,0-12.25-5.2-12.25-11.57h0a11.7,11.7,0,0,1,8.93-11.1l.94-.26,0-1.24c0-.06,0-.12,0-.18,0-8.93,7.72-16.2,17.19-16.2a17.35,17.35,0,0,1,14.67,7.78l.72,1.11,1.05-.8a11.28,11.28,0,0,1,6.89-2.27c6.1,0,11,4.66,11,10.38a1.55,1.55,0,0,1,0,.21l-.06,1.21,1,.26a11.7,11.7,0,0,1,8.93,11.1c0,6.37-5.51,11.56-12.27,11.56h-8.81c0,.32.07.65.08,1a10.14,10.14,0,0,1,0,1.46h8.77c8.12,0,14.73-6.28,14.73-14A14.12,14.12,0,0,0,251.6,142.63Z" style="fill: #006afb"/>
+    <path d="M214.49,131.4a1.23,1.23,0,0,0-1.22-1.23c-6.76,0-12.26,4.81-12.26,10.73a1.23,1.23,0,1,0,2.46,0c0-4.55,4.39-8.27,9.8-8.27a1.23,1.23,0,0,0,1.22-1.23Z" style="fill: #006afb"/>
+  </g>
+</svg>

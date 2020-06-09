@@ -1,0 +1,16 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 401.04 291.27">
+  <title>build_intro_data_point</title>
+  <rect x="149.5" y="26.78" width="67" height="218.22" style="fill: #006afb"/>
+  <text transform="translate(161.47 58.97)" style="font-size: 29.786359786987305px;fill: #fff;font-family: OpenSans, Open Sans">44</text>
+  <text transform="translate(195.53 49.05) scale(0.58)" style="font-size: 29.786359786987305px;fill: #fff;font-family: OpenSans, Open Sans">%</text>
+  <rect x="30" y="111.91" width="67" height="133.09" style="fill: #dfdfdf"/>
+  <text transform="translate(38.47 146.97)" style="font-size: 29.786359786987305px;font-family: OpenSans, Open Sans">36</text>
+  <text transform="translate(72.53 137.05) scale(0.58)" style="font-size: 29.786359786987305px;font-family: OpenSans, Open Sans">%</text>
+  <text transform="translate(38.47 265.97)" style="font-size: 20px;font-family: OpenSans, Open Sans">2019</text>
+  <text transform="translate(158.47 265.97)" style="font-size: 20px;font-family: OpenSans, Open Sans">2021</text>
+  <text transform="translate(249 150)" style="font-size: 14px;font-family: OpenSans, Open Sans">Average share of the <tspan x="0" y="16.8">application estate </tspan><tspan x="0" y="33.6">developed and </tspan><tspan x="0" y="50.4">deployed using </tspan><tspan x="0" y="67.2">DevOps tools and </tspan><tspan x="0" y="84">processes</tspan></text>
+  <g>
+    <path d="M12.5,203.5c7.34,3.26,88.13,9.14,166.5-38.5,63.12-38.37,79.47-102.65,83.2-122.34" style="fill: none;stroke: #000;stroke-miterlimit: 10;stroke-width: 3px"/>
+    <polygon points="267.62 52.01 261.95 43.86 253.8 49.53 254.85 43.67 263 38 268.67 46.15 267.62 52.01"/>
+  </g>
+</svg>

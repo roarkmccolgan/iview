@@ -19,8 +19,20 @@ return array(
         </p>
         <p class="mb-4">
             This assessment will tell you for three categories, how far you have progressed and what the next steps on your journey are.<br/>These categories are <span class="text-ibm-blue">"Move"</span>, <span class="text-ibm-blue">"Build"</span> and <span class="text-ibm-blue">"Manage"</span>. Please click here to take the assessment.
-        </p>',
-    'startbut'=>'Start Now',
+        </p>
+        <div class="flex items-center">
+            <h3 class="font-medium text-lg w-full sm:w-1/2 p-4 bg-grey-lighter">
+                As we enter the second wave of Cloud, more organizations are progressing towards Cloud enabled and Native estates.
+            </h3>
+            <div class="sm:w-1/2">
+                <img src="/images/tools/16/data_point_6.png" alt="" class="w-full mx-auto sm:ml-10" />
+            </div>
+        </div>
+        <p class="mb-4 font-bold italic">
+            In what direction are you moving?
+        </p>
+        ',
+    'startbut'=>'Find out Now',
     
     'send'=>'We can send you the full results directly to your mailbox',
     'register'=>'Register now to receive your personalized report',

@@ -4,10 +4,10 @@
   <rect x="18" y="59" width="485" height="21" style="fill: #01010f;fill-opacity: 0.9"/>
   <rect x="18" y="91.38" width="448.26" height="21" style="fill: #01010f;fill-opacity: 0.8"/>
   <rect x="18" y="123.75" width="448.26" height="21" style="fill: #01010f;fill-opacity: 0.7000000000000001"/>
-  <rect x="18" y="156.13" width="418.86" height="21" style="fill: #01010f;fill-opacity: 0.6"/>
+  <rect x="18" y="156.13" width="418.86" height="21" style="fill: #01010f;fill-opacity: 0.6000000000000001"/>
   <rect x="18" y="188.5" width="411.52" height="21" style="fill: #01010f;fill-opacity: 0.5"/>
   <rect x="18" y="220.88" width="404.17" height="21" style="fill: #01010f;fill-opacity: 0.4"/>
-  <rect x="18" y="253.25" width="389.47" height="21" style="fill: #01010f;fill-opacity: 0.3"/>
+  <rect x="18" y="253.25" width="389.47" height="21" style="fill: #01010f;fill-opacity: 0.30000000000000004"/>
   <rect x="18" y="285.63" width="367.42" height="21" style="fill: #01010f;fill-opacity: 0.2"/>
   <rect x="18.44" y="318" width="271.89" height="21" style="fill: #01010f;fill-opacity: 0.1"/>
   <text transform="translate(24.26 75.08)" style="font-size: 14px;fill: #fff;font-family: OpenSans, Open Sans">Automation and orchestration<tspan x="0" y="32.5">Legacy infrastructure</tspan><tspan x="0" y="65">Multicloud management</tspan><tspan x="0" y="97.5">Fragmentation of monitoring and management tools</tspan><tspan style="fill!: #000"><tspan x="0" y="130">Unifed information governance and data protection</tspan><tspan x="0" y="162.5">Use of AI in infrastructure management</tspan><tspan x="0" y="195">Legacy workloads</tspan><tspan x="0" y="227.5">Data fragmentation</tspan><tspan x="0" y="260">Funding innovation and new technology</tspan></tspan></text>

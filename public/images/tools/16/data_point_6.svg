@@ -1,0 +1,34 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 463.04 125.27">
+  <title>data_point_6</title>
+  <text transform="translate(104.02 101.7)" style="font-size: 11px;font-family: OpenSans, Open Sans">Traditional</text>
+  <text transform="translate(64.47 21.97)" style="font-size: 20px;font-family: OpenSans, Open Sans">Today</text>
+  <text transform="translate(321.47 21.97)" style="font-size: 20px;font-family: OpenSans, Open Sans">In 2 years</text>
+  <line x1="225.5" y1="29.5" x2="225.08" y2="69.5" style="fill: none;stroke: #000;stroke-linecap: round;stroke-miterlimit: 10;stroke-width: 5px"/>
+  <rect x="108.64" y="39" width="112.77" height="25" style="fill: #01010f;fill-opacity: 0.9"/>
+  <rect x="229.49" y="39" width="85.62" height="25" style="fill: #01010f;fill-opacity: 0.9"/>
+  <rect x="56.49" y="39" width="52.21" height="25" style="fill: #01010f;fill-opacity: 0.6000000000000001"/>
+  <rect x="315.07" y="39" width="64.74" height="25" style="fill: #01010f;fill-opacity: 0.6000000000000001"/>
+  <rect x="6.22" y="39" width="50.12" height="25" style="fill: #c3c3c3"/>
+  <rect x="379.17" y="39" width="66.83" height="25" style="fill: #c3c3c3"/>
+  <text transform="translate(19.47 58.97)" style="font-size: 19px;fill: #fff;font-family: OpenSans, Open Sans">24</text>
+  <text transform="translate(41.2 52.64) scale(0.58)" style="font-size: 19px;fill: #fff;font-family: OpenSans, Open Sans">%</text>
+  <text transform="translate(67.47 58.97)" style="font-size: 19px;fill: #fff;font-family: OpenSans, Open Sans">25</text>
+  <text transform="translate(89.2 52.64) scale(0.58)" style="font-size: 19px;fill: #fff;font-family: OpenSans, Open Sans">%</text>
+  <text transform="translate(153.47 58.97)" style="font-size: 19px;fill: #fff;font-family: OpenSans, Open Sans">54</text>
+  <text transform="translate(175.2 52.64) scale(0.58)" style="font-size: 19px;fill: #fff;font-family: OpenSans, Open Sans">%</text>
+  <text transform="translate(257.47 58.97)" style="font-size: 19px;fill: #fff;font-family: OpenSans, Open Sans">41</text>
+  <text transform="translate(279.2 52.64) scale(0.58)" style="font-size: 19px;fill: #fff;font-family: OpenSans, Open Sans">%</text>
+  <text transform="translate(335.47 58.97)" style="font-size: 19px;fill: #fff;font-family: OpenSans, Open Sans">31</text>
+  <text transform="translate(357.2 52.64) scale(0.58)" style="font-size: 19px;fill: #fff;font-family: OpenSans, Open Sans">%</text>
+  <text transform="translate(399.47 58.97)" style="font-size: 19px;fill: #fff;font-family: OpenSans, Open Sans">32</text>
+  <text transform="translate(421.2 52.64) scale(0.58)" style="font-size: 19px;fill: #fff;font-family: OpenSans, Open Sans">%</text>
+  <rect x="81" y="91" width="14" height="14" style="fill: #01010f;fill-opacity: 0.9"/>
+  <text transform="translate(201.02 101.7)" style="font-size: 11px;font-family: OpenSans, Open Sans">Cloud enabled</text>
+  <rect x="178" y="91" width="14" height="14" style="fill: #01010f;fill-opacity: 0.6000000000000001"/>
+  <text transform="translate(309.02 101.7)" style="font-size: 11px;font-family: OpenSans, Open Sans">Cloud Native</text>
+  <rect x="286" y="91" width="14" height="14" style="fill: #c3c3c3"/>
+  <g>
+    <line x1="153" y1="13.5" x2="294.83" y2="13.5" style="fill: none;stroke: #c3c3c3;stroke-miterlimit: 10;stroke-width: 2px"/>
+    <polygon points="288.2 21.68 286.84 20.21 294.06 13.5 286.84 6.79 288.2 5.32 297 13.5 288.2 21.68" style="fill: #c3c3c3"/>
+  </g>
+</svg>

@@ -55,80 +55,80 @@ return [
         'report_recipients' => [
             'roarkmccolgan@gmail.com',
         ],
-        // 'eloqua' => [
-        //     'url' => 'https://www.vmware.com/bin/vmware/form',
-        //     'fields' => [
-        //         'elqFormName' => [
-        //             'type' => 'hidden',
-        //             'value' => '552200_REG_EXT_IDC-DG-TOOL',
-        //         ],
-        //         'elqSiteID' => [
-        //             'type' => 'hidden',
-        //             'value' => 279193683,
-        //         ],
-        //         'cid' => [
-        //             'type' => 'hidden',
-        //             'value' => '7012H000001YmU6QAK',
-        //         ],
-        //         'src' => [
-        //             'type' => 'hidden',
-        //             'value' => 'em_5eda4c86ee16a',
-        //         ],
-        //         'returnurl' => [
-        //             'type' => 'hidden',
-        //             'value' => 'https://vmwaredigitalassessment.idcready.net/complete',
-        //         ],
-        //         'refURL' => [
-        //             'type' => 'url',
-        //         ],
-        //         'language' => [
-        //             'type' => 'locale'
-        //         ],
-        //         'asset' => [
-        //             'type' => 'report'
-        //         ],
-        //         'email' => [
-        //             'type' => 'field',
-        //             'name' => 'email'
-        //         ],
-        //         'title' => [
-        //             'type' => 'field',
-        //             'name' => 'title'
-        //         ],
-        //         'zip' => [
-        //             'type' => 'field',
-        //             'name' => 'extra.zip'
-        //         ],
-        //         'country' => [
-        //             'type' => 'field',
-        //             'name' => 'country'
-        //         ],
-        //         'state' => [
-        //             'type' => 'field',
-        //             'name' => 'extra.state'
-        //         ],
-        //         'city' => [
-        //             'type' => 'field',
-        //             'name' => 'extra.city'
-        //         ],
-        //         'firstName' => [
-        //             'type' => 'field',
-        //             'name' => 'fname'
-        //         ],
-        //         'lastName' => [
-        //             'type' => 'field',
-        //             'name' => 'sname'
-        //         ],
-        //         'businessPhone' => [
-        //             'type' => 'field',
-        //             'name' => 'phone'
-        //         ],
-        //         'optin' => [
-        //             'type' => 'field',
-        //             'name' => 'marketing'
-        //         ]
-        //     ]
-        // ]
+        'eloqua' => [
+            'url' => 'https://www.vmware.com/bin/vmware/form',
+            'fields' => [
+                'elqFormName' => [
+                    'type' => 'hidden',
+                    'value' => '552200_REG_EXT_IDC-DG-TOOL',
+                ],
+                'elqSiteID' => [
+                    'type' => 'hidden',
+                    'value' => 279193683,
+                ],
+                'cid' => [
+                    'type' => 'hidden',
+                    'value' => '7012H000001YmU6QAK',
+                ],
+                'src' => [
+                    'type' => 'hidden',
+                    'value' => 'em_5eda4c86ee16a',
+                ],
+                'returnurl' => [
+                    'type' => 'hidden',
+                    'value' => 'https://vmwaredigitalassessment.idcready.net/complete',
+                ],
+                'refURL' => [
+                    'type' => 'url',
+                ],
+                'language' => [
+                    'type' => 'locale'
+                ],
+                'asset' => [
+                    'type' => 'report'
+                ],
+                'email' => [
+                    'type' => 'field',
+                    'name' => 'email'
+                ],
+                'title' => [
+                    'type' => 'field',
+                    'name' => 'title'
+                ],
+                'zip' => [
+                    'type' => 'field',
+                    'name' => 'extra.zip'
+                ],
+                'country' => [
+                    'type' => 'field',
+                    'name' => 'country'
+                ],
+                'state' => [
+                    'type' => 'field',
+                    'name' => 'extra.state'
+                ],
+                'city' => [
+                    'type' => 'field',
+                    'name' => 'extra.city'
+                ],
+                'firstName' => [
+                    'type' => 'field',
+                    'name' => 'fname'
+                ],
+                'lastName' => [
+                    'type' => 'field',
+                    'name' => 'sname'
+                ],
+                'businessPhone' => [
+                    'type' => 'field',
+                    'name' => 'phone'
+                ],
+                'optin' => [
+                    'type' => 'field',
+                    'name' => 'marketing'
+                ]
+            ]
+        ]
     ],
     'network-infrastructure' => [
         'baseline' => 8.90,

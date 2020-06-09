@@ -18,12 +18,10 @@
 			</div>			
 		</div>
 		<div class="container mx-auto my-10">
-			<div class="w-full flex items-center justify-center">
-				<div class="px-8">
-					<h3 class="font-bold leading-tight text-ibm-blue-light mb-8">{{ $t('ibmcloud.sub-title') }}</h3>
-					<div class="mb-8" v-html="$t('ibmcloud.landing')"></div>
-					<router-link class="block font-bold w-full uppercase text-center bg-ibm-blue border border-ibm-blue text-white hover:text-ibm-blue hover:bg-white py-4 px-6 no-underline sm:w-1/3" :to="'/questions/1'">{{ $t('ibmcloud.startbut') }} <font-awesome-icon class="ml-2" :icon="icons.faArrowRight" /></router-link>						
-				</div>						
+			<div class="px-8">
+				<h3 class="font-bold leading-tight text-ibm-blue-light mb-8">{{ $t('ibmcloud.sub-title') }}</h3>
+				<div class="mb-8" v-html="$t('ibmcloud.landing',{'flex':':flex','ml':':ml'})"></div>
+				<router-link class="block font-bold w-full uppercase text-center bg-ibm-blue border border-ibm-blue text-white hover:text-ibm-blue hover:bg-white py-4 px-6 no-underline sm:w-1/3" :to="'/questions/1'">{{ $t('ibmcloud.startbut') }} <font-awesome-icon class="ml-2" :icon="icons.faArrowRight" /></router-link>						
 			</div>
 		</div>
 	</div>		
