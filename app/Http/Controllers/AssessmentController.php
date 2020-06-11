@@ -30,7 +30,9 @@ class AssessmentController extends Controller
 
         $tool = $request->get('product');
         if ($user->tools->contains($tool->id) || $user->hasRole('super')) {
-            $tool->load(['assessments','company','extra_fields']);
+            $tool->load(['assessments' => function ($query) {
+                $query->orderBy('created_at', 'asc');
+            },'company','extra_fields']);
             //dd($tool);
             //return $tool;
             JavaScript::put([
@@ -150,8 +152,8 @@ class AssessmentController extends Controller
      */
     public function resend($subdomain, Assessment $assessment, Request $request)
     {
-        $bcc = $request->input('bcc');
-        if (strrpos($bcc, ';')!==false) {
+        $bcc = $request->input('bcc') ? $request->input('bcc') : null;
+        if ($bcc && strrpos($bcc, ';')!==false) {
             $bcc = array_map('trim', explode(";", $bcc));
         }
         $subject = trans(session('product.alias').'.email.subject');
@@ -163,7 +165,11 @@ class AssessmentController extends Controller
         //send mail to user
         Mail::queue('emails.echo', $data, function ($message) use ($assessment, $subject, $bcc) {
             $message->from('notifications@mg.idcready.net', 'IDC Notifications');
-            $message->to($assessment['email'], $assessment['fname'].' '.$assessment['sname'])->bcc($bcc)->subject($subject);
+            $message->to($assessment->email, $assessment->fname.' '.$assessment->sname);
+            $message->subject($subject);
+            if($bcc){
+                $message->bcc($bcc);
+            }
         });
         if ($request->ajax()) {
             $data = [

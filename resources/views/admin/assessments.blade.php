@@ -208,7 +208,9 @@
 
 @section('load')
 	App.init();
-	App.dataTables();
+	App.dataTables({
+		"ordering": [[ 3, "desc" ]]
+	});
 	$('.md-trigger').modalEffects();
 	var deleteRow = false;
 
