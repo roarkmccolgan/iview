@@ -18,7 +18,7 @@ return [
                     'q1'=>[
                         'type'=>'text',
                         'validate'=>'email',
-                        'question'=>'Please provide your email address',
+                        'question'=>'Adresse e-mail',
                         'name'=> 1,
                     ]
                 ]
@@ -26,7 +26,7 @@ return [
         ]
     ],
     'digital-business' => [
-        'title' => 'Digital Business',
+        'title' => 'Entreprise numérique',
         'description' => '',
         'background' => false,
         'nuggets' => [
@@ -42,35 +42,35 @@ return [
         'complete' => false,
         'pages' => [
             'page1' => [
-                'title' => 'Digital Business',
+                'title' => 'Entreprise numérique',
                 'questions' => [
                     'q2'=>[
                         'type'=>'button',
-                        'question'=>'How difficult is for your organization to cope with changes in business patterns?',
+                        'question'=>'Dans quelle mesure votre entreprise a-t-elle du mal à faire face aux changements de modèles commerciaux ?',
                         'name'=> 2,
                         'options'=>[
                             [
-                                'label'=>'Not at all difficult',
+                                'label'=>'Pas du tout difficile',
                                 'value'=>5,
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'Slightly difficult',
+                                'label'=>'Légèrement difficile',
                                 'value'=>4,
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'Moderately',
+                                'label'=>'Modérément',
                                 'value'=>3,
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'Difficult',
+                                'label'=>'Difficile',
                                 'value'=>2,
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'Very Difficult',
+                                'label'=>'Très difficile',
                                 'value'=>1,
                                 'checked'=>false,
                             ]
@@ -79,35 +79,35 @@ return [
                 ]
             ],
             'page2' => [
-                'title' => 'Digital Business',
+                'title' => 'Entreprise numérique',
                 'questions' => [
                     'q3'=>[
                         'type'=>'button',
-                        'question'=>'How difficult is for your organization to adapt to your changes in staffing levels?',
+                        'question'=>'Dans quelle mesure votre entreprise a-t-elle du mal à s\'adapter à vos changements de niveaux de personnel ?',
                         'name'=> 3,
                         'options'=>[
                             [
-                                'label'=>'Not at all difficult',
+                                'label'=>'Pas du tout difficile',
                                 'value'=>5,
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'Slightly difficult',
+                                'label'=>'Légèrement difficile',
                                 'value'=>4,
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'Moderately',
+                                'label'=>'Modérément',
                                 'value'=>3,
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'Difficult',
+                                'label'=>'Difficile',
                                 'value'=>2,
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'Very Difficult',
+                                'label'=>'Très difficile',
                                 'value'=>1,
                                 'checked'=>false,
                             ]
@@ -116,7 +116,7 @@ return [
                 ]
             ],
             'page3' => [
-                'title' => 'Digital Business',
+                'title' => 'Entreprise numérique',
                 'questions' => [
                     'q4'=>[
                         'type'=>'groupbutton',
@@ -124,72 +124,72 @@ return [
                             'type'=>'average'
                         ],
                         'optionLabels' => [
-                            'Not using and no plans to within 12 months',
-                            'Not using, but planning to within 12 months',
-                            'Yes – for a small proportion of the business (less than half of workforce)',
-                            'Yes – for a significant proportion of the business (more than half of workforce, but less than 80%)',
-                            'Yes – for most or all of the business (80% or more of workers)',
+                            'Ne l\'utilise pas et ne compte pas le faire d\'ici 12 mois',
+                            'Ne l\'utilise pas, mais compte le faire d\'ici 12 mois',
+                            'Oui, pour une petite partie de l\'entreprise (moins de la moitié de la main-d\'œuvre)',
+                            'Oui, pour une proportion importante de l\'entreprise (plus de la moitié de la main-d\'œuvre, mais moins de 80 %)',
+                            'Oui, pour la majeure partie ou la totalité de l\'entreprise (80 % des employés ou plus)',
                         ],
-                        'question'=>'To what extent does your organization use the following application types?',
+                        'question'=>'Dans quelle mesure votre entreprise utilise-t-elle les types d\'application suivants ?',
                         'name'=> 4,
                         'options'=>[
                             [
-                                'label'=>'Productivity (email, word processing, spreadsheets, presentations etc)',
+                                'label'=>'Productivité (e-mail, traitement de texte, feuilles de calcul, présentations, etc.)',
                                 'name'=> 4.1,
                                 'options'=>[
                                     [
-                                        'label'=>'Not using and no plans to within 12 months',
+                                        'label'=>'Ne l\'utilise pas et ne compte pas le faire d\'ici 12 mois',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Not using, but planning to within 12 months',
+                                        'label'=>'Ne l\'utilise pas, mais compte le faire d\'ici 12 mois',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Yes – for a small proportion of the business (less than half of workforce)',
+                                        'label'=>'Oui, pour une petite partie de l\'entreprise (moins de la moitié de la main-d\'œuvre)',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Yes – for a significant proportion of the business (more than half of workforce, but less than 80%)',
+                                        'label'=>'Oui, pour une proportion importante de l\'entreprise (plus de la moitié de la main-d\'œuvre, mais moins de 80 %)',
                                         'value'=>4,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Yes – for most or all of the business (80% or more of workers)',
+                                        'label'=>'Oui, pour la majeure partie ou la totalité de l\'entreprise (80 % des employés ou plus)',
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
                                 ]
                             ],
                             [
-                                'label'=>'Collaboration (File sharing, VoIP, Video Conferencing etc)',
+                                'label'=>'Collaboration (partage de fichiers, VoIP, visioconférence, etc.)',
                                 'name'=> 4.2,
                                 'options'=>[
                                     [
-                                        'label'=>'Not using and no plans to within 12 months',
+                                        'label'=>'Ne l\'utilise pas et ne compte pas le faire d\'ici 12 mois',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Not using, but planning to within 12 months',
+                                        'label'=>'Ne l\'utilise pas, mais compte le faire d\'ici 12 mois',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Yes – for a small proportion of the business (less than half of workforce)',
+                                        'label'=>'Oui, pour une petite partie de l\'entreprise (moins de la moitié de la main-d\'œuvre)',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Yes – for a significant proportion of the business (more than half of workforce, but less than 80%)',
+                                        'label'=>'Oui, pour une proportion importante de l\'entreprise (plus de la moitié de la main-d\'œuvre, mais moins de 80 %)',
                                         'value'=>4,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Yes – for most or all of the business (80% or more of workers)',
+                                        'label'=>'Oui, pour la majeure partie ou la totalité de l\'entreprise (80 % des employés ou plus)',
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
@@ -200,27 +200,27 @@ return [
                                 'name'=> 4.3,
                                 'options'=>[
                                     [
-                                        'label'=>'Not using and no plans to within 12 months',
+                                        'label'=>'Ne l\'utilise pas et ne compte pas le faire d\'ici 12 mois',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Not using, but planning to within 12 months',
+                                        'label'=>'Ne l\'utilise pas, mais compte le faire d\'ici 12 mois',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Yes – for a small proportion of the business (less than half of workforce)',
+                                        'label'=>'Oui, pour une petite partie de l\'entreprise (moins de la moitié de la main-d\'œuvre)',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Yes – for a significant proportion of the business (more than half of workforce, but less than 80%)',
+                                        'label'=>'Oui, pour une proportion importante de l\'entreprise (plus de la moitié de la main-d\'œuvre, mais moins de 80 %)',
                                         'value'=>4,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Yes – for most or all of the business (80% or more of workers)',
+                                        'label'=>'Oui, pour la majeure partie ou la totalité de l\'entreprise (80 % des employés ou plus)',
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
@@ -231,151 +231,151 @@ return [
                                 'name'=> 4.4,
                                 'options'=>[
                                     [
-                                        'label'=>'Not using and no plans to within 12 months',
+                                        'label'=>'Ne l\'utilise pas et ne compte pas le faire d\'ici 12 mois',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Not using, but planning to within 12 months',
+                                        'label'=>'Ne l\'utilise pas, mais compte le faire d\'ici 12 mois',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Yes – for a small proportion of the business (less than half of workforce)',
+                                        'label'=>'Oui, pour une petite partie de l\'entreprise (moins de la moitié de la main-d\'œuvre)',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Yes – for a significant proportion of the business (more than half of workforce, but less than 80%)',
+                                        'label'=>'Oui, pour une proportion importante de l\'entreprise (plus de la moitié de la main-d\'œuvre, mais moins de 80 %)',
                                         'value'=>4,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Yes – for most or all of the business (80% or more of workers)',
+                                        'label'=>'Oui, pour la majeure partie ou la totalité de l\'entreprise (80 % des employés ou plus)',
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
                                 ]
                             ],
                             [
-                                'label'=>'Digital Design (CAD,CAE, CAM etc)',
+                                'label'=>'Conception numérique (CAO, IAO, FAO, etc.)',
                                 'name'=> 4.5,
                                 'options'=>[
                                     [
-                                        'label'=>'Not using and no plans to within 12 months',
+                                        'label'=>'Ne l\'utilise pas et ne compte pas le faire d\'ici 12 mois',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Not using, but planning to within 12 months',
+                                        'label'=>'Ne l\'utilise pas, mais compte le faire d\'ici 12 mois',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Yes – for a small proportion of the business (less than half of workforce)',
+                                        'label'=>'Oui, pour une petite partie de l\'entreprise (moins de la moitié de la main-d\'œuvre)',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Yes – for a significant proportion of the business (more than half of workforce, but less than 80%)',
+                                        'label'=>'Oui, pour une proportion importante de l\'entreprise (plus de la moitié de la main-d\'œuvre, mais moins de 80 %)',
                                         'value'=>4,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Yes – for most or all of the business (80% or more of workers)',
+                                        'label'=>'Oui, pour la majeure partie ou la totalité de l\'entreprise (80 % des employés ou plus)',
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
                                 ]
                             ],
                             [
-                                'label'=>'PLM software',
+                                'label'=>'Logiciel PLM (gestion du cycle de vie d\'un produit)',
                                 'name'=> 4.6,
                                 'options'=>[
                                     [
-                                        'label'=>'Not using and no plans to within 12 months',
+                                        'label'=>'Ne l\'utilise pas et ne compte pas le faire d\'ici 12 mois',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Not using, but planning to within 12 months',
+                                        'label'=>'Ne l\'utilise pas, mais compte le faire d\'ici 12 mois',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Yes – for a small proportion of the business (less than half of workforce)',
+                                        'label'=>'Oui, pour une petite partie de l\'entreprise (moins de la moitié de la main-d\'œuvre)',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Yes – for a significant proportion of the business (more than half of workforce, but less than 80%)',
+                                        'label'=>'Oui, pour une proportion importante de l\'entreprise (plus de la moitié de la main-d\'œuvre, mais moins de 80 %)',
                                         'value'=>4,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Yes – for most or all of the business (80% or more of workers)',
+                                        'label'=>'Oui, pour la majeure partie ou la totalité de l\'entreprise (80 % des employés ou plus)',
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
                                 ]
                             ],
                             [
-                                'label'=>'Simulation software',
+                                'label'=>'Logiciel de simulation',
                                 'name'=> 4.7,
                                 'options'=>[
                                     [
-                                        'label'=>'Not using and no plans to within 12 months',
+                                        'label'=>'Ne l\'utilise pas et ne compte pas le faire d\'ici 12 mois',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Not using, but planning to within 12 months',
+                                        'label'=>'Ne l\'utilise pas, mais compte le faire d\'ici 12 mois',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Yes – for a small proportion of the business (less than half of workforce)',
+                                        'label'=>'Oui, pour une petite partie de l\'entreprise (moins de la moitié de la main-d\'œuvre)',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Yes – for a significant proportion of the business (more than half of workforce, but less than 80%)',
+                                        'label'=>'Oui, pour une proportion importante de l\'entreprise (plus de la moitié de la main-d\'œuvre, mais moins de 80 %)',
                                         'value'=>4,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Yes – for most or all of the business (80% or more of workers)',
+                                        'label'=>'Oui, pour la majeure partie ou la totalité de l\'entreprise (80 % des employés ou plus)',
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
                                 ]
                             ],
                             [
-                                'label'=>'Analytics software',
+                                'label'=>'Logiciel d\'analyse',
                                 'name'=> 4.8,
                                 'options'=>[
                                     [
-                                        'label'=>'Not using and no plans to within 12 months',
+                                        'label'=>'Ne l\'utilise pas et ne compte pas le faire d\'ici 12 mois',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Not using, but planning to within 12 months',
+                                        'label'=>'Ne l\'utilise pas, mais compte le faire d\'ici 12 mois',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Yes – for a small proportion of the business (less than half of workforce)',
+                                        'label'=>'Oui, pour une petite partie de l\'entreprise (moins de la moitié de la main-d\'œuvre)',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Yes – for a significant proportion of the business (more than half of workforce, but less than 80%)',
+                                        'label'=>'Oui, pour une proportion importante de l\'entreprise (plus de la moitié de la main-d\'œuvre, mais moins de 80 %)',
                                         'value'=>4,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Yes – for most or all of the business (80% or more of workers)',
+                                        'label'=>'Oui, pour la majeure partie ou la totalité de l\'entreprise (80 % des employés ou plus)',
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
@@ -436,7 +436,7 @@ return [
                 ]
             ],
             'page4' => [
-                'title' => 'Digital Business',
+                'title' => 'Entreprise numérique',
                 'questions' => [
                     'q5'=>[
                         'type'=>'groupbutton',
@@ -444,41 +444,41 @@ return [
                             'type'=>'average'
                         ],
                         'optionLabels' => [
-                            'Not at all successful',
-                            'Slightly successful',
-                            'Moderately successful',
-                            'Successful',
-                            'Very successful',
+                            'Pas du tout réussi',
+                            'Un peu réussi',
+                            'Moyennement réussi',
+                            'Réussi',
+                            'Très réussi',
                         ],
-                        'question'=>'On a scale of 1 - 5, please rate the success of the current deployment of each of the following application types at your organization?',
+                        'question'=>'Sur une échelle de 1 à 5, veuillez évaluer le succès du déploiement actuel de chacun des types d\'applications suivants au sein de votre entreprise ?',
                         'name'=> 5,
                         'options'=>[
                             [
-                                'label'=>'Productivity (email, word processing, spreadsheets, presentations etc)',
+                                'label'=>'Productivité (e-mail, traitement de texte, feuilles de calcul, présentations, etc.)',
                                 'name'=> 5.1,
                                 'options'=>[
                                     [
-                                        'label'=>'Not at all successful',
+                                        'label'=>'Pas du tout réussi',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Slightly successful',
+                                        'label'=>'Un peu réussi',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Moderately successful',
+                                        'label'=>'Moyennement réussi',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Successful',
+                                        'label'=>'Réussi',
                                         'value'=>4,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Very successful',
+                                        'label'=>'Très réussi',
                                         'value'=>5,
                                         'checked'=>false,
                                     ],
@@ -491,31 +491,31 @@ return [
                                 ]
                             ],
                             [
-                                'label'=>'Collaboration (File sharing, VoIP, Video Conferencing etc)',
+                                'label'=>'Collaboration (partage de fichiers, VoIP, visioconférence, etc.)',
                                 'name'=> 5.2,
                                 'options'=>[
                                     [
-                                        'label'=>'Not at all successful',
+                                        'label'=>'Pas du tout réussi',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Slightly successful',
+                                        'label'=>'Un peu réussi',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Moderately successful',
+                                        'label'=>'Moyennement réussi',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Successful',
+                                        'label'=>'Réussi',
                                         'value'=>4,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Very successful',
+                                        'label'=>'Très réussi',
                                         'value'=>5,
                                         'checked'=>false,
                                     ],
@@ -532,27 +532,27 @@ return [
                                 'name'=> 5.3,
                                 'options'=>[
                                     [
-                                        'label'=>'Not at all successful',
+                                        'label'=>'Pas du tout réussi',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Slightly successful',
+                                        'label'=>'Un peu réussi',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Moderately successful',
+                                        'label'=>'Moyennement réussi',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Successful',
+                                        'label'=>'Réussi',
                                         'value'=>4,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Very successful',
+                                        'label'=>'Très réussi',
                                         'value'=>5,
                                         'checked'=>false,
                                     ],
@@ -569,27 +569,27 @@ return [
                                 'name'=> 5.4,
                                 'options'=>[
                                     [
-                                        'label'=>'Not at all successful',
+                                        'label'=>'Pas du tout réussi',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Slightly successful',
+                                        'label'=>'Un peu réussi',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Moderately successful',
+                                        'label'=>'Moyennement réussi',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Successful',
+                                        'label'=>'Réussi',
                                         'value'=>4,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Very successful',
+                                        'label'=>'Très réussi',
                                         'value'=>5,
                                         'checked'=>false,
                                     ],
@@ -602,31 +602,31 @@ return [
                                 ]
                             ],
                             [
-                                'label'=>'Digital Design (CAD,CAE, CAM etc)',
+                                'label'=>'Conception numérique (CAO, IAO, FAO, etc.)',
                                 'name'=> 5.5,
                                 'options'=>[
                                     [
-                                        'label'=>'Not at all successful',
+                                        'label'=>'Pas du tout réussi',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Slightly successful',
+                                        'label'=>'Un peu réussi',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Moderately successful',
+                                        'label'=>'Moyennement réussi',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Successful',
+                                        'label'=>'Réussi',
                                         'value'=>4,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Very successful',
+                                        'label'=>'Très réussi',
                                         'value'=>5,
                                         'checked'=>false,
                                     ],
@@ -639,31 +639,31 @@ return [
                                 ]
                             ],
                             [
-                                'label'=>'PLM software',
+                                'label'=>'Logiciel PLM (gestion du cycle de vie d\'un produit)',
                                 'name'=> 5.6,
                                 'options'=>[
                                     [
-                                        'label'=>'Not at all successful',
+                                        'label'=>'Pas du tout réussi',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Slightly successful',
+                                        'label'=>'Un peu réussi',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Moderately successful',
+                                        'label'=>'Moyennement réussi',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Successful',
+                                        'label'=>'Réussi',
                                         'value'=>4,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Very successful',
+                                        'label'=>'Très réussi',
                                         'value'=>5,
                                         'checked'=>false,
                                     ],
@@ -676,31 +676,31 @@ return [
                                 ]
                             ],
                             [
-                                'label'=>'Simulation software',
+                                'label'=>'Logiciel de simulation',
                                 'name'=> 5.7,
                                 'options'=>[
                                     [
-                                        'label'=>'Not at all successful',
+                                        'label'=>'Pas du tout réussi',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Slightly successful',
+                                        'label'=>'Un peu réussi',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Moderately successful',
+                                        'label'=>'Moyennement réussi',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Successful',
+                                        'label'=>'Réussi',
                                         'value'=>4,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Very successful',
+                                        'label'=>'Très réussi',
                                         'value'=>5,
                                         'checked'=>false,
                                     ],
@@ -713,31 +713,31 @@ return [
                                 ]
                             ],
                             [
-                                'label'=>'Analytics software',
+                                'label'=>'Logiciel d\'analyse',
                                 'name'=> 5.8,
                                 'options'=>[
                                     [
-                                        'label'=>'Not at all successful',
+                                        'label'=>'Pas du tout réussi',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Slightly successful',
+                                        'label'=>'Un peu réussi',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Moderately successful',
+                                        'label'=>'Moyennement réussi',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Successful',
+                                        'label'=>'Réussi',
                                         'value'=>4,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Very successful',
+                                        'label'=>'Très réussi',
                                         'value'=>5,
                                         'checked'=>false,
                                     ],
@@ -756,7 +756,7 @@ return [
         ]
     ],
     'digital-design' => [
-        'title' => 'Digital Design',
+        'title' => 'Conception Numérique',
         'description' => '',
         'background' => false,
         'nuggets' => [
@@ -770,35 +770,35 @@ return [
         'complete' => false,
         'pages' => [
             'page1' => [
-                'title' => 'Digital Design',
+                'title' => 'Conception Numérique',
                 'questions' => [
                     'q6'=>[
                         'type'=>'button',
-                        'question'=>'Which statement best describes how your organization tends to roll out CAD/CAM applications or updates?',
+                        'question'=>'Quelle affirmation décrit le mieux la manière dont votre entreprise a tendance à déployer des applications ou des mises à jour de CAO/FAO ?',
                         'name'=> 6,
                         'options'=>[
                             [
-                                'label'=>'Our IT department does this manually on an ad-hoc basis',
+                                'label'=>'Notre service informatique effectue cette opération manuellement et de manière ponctuelle.',
                                 'value'=>1,
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'Our IT department does this manually on planned basis',
+                                'label'=>'Notre service informatique effectue cette opération manuellement sur la base planifiée.',
                                 'value'=>2,
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'Our IT department does this using automation tools',
+                                'label'=>'Notre service informatique utilise des outils d\'automatisation.',
                                 'value'=>3,
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'We have a supplier/service provider with the necessary skills or tools do this for us',
+                                'label'=>'Nous disposons d\'un fournisseur/fournisseur de services disposant des compétences ou des outils nécessaires pour y parvenir.',
                                 'value'=>4,
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'Our CAD/CAM implementation automatically upgrades and maintains our software',
+                                'label'=>'Notre mise en œuvre CAO/FAO met automatiquement à niveau et gère notre logiciel.',
                                 'value'=>5,
                                 'checked'=>false,
                             ]
@@ -807,35 +807,35 @@ return [
                 ]
             ],
             'page2' => [
-                'title' => 'Digital Design',
+                'title' => 'Conception Numérique',
                 'questions' => [
                     'q7'=>[
                         'type'=>'button',
-                        'question'=>'How old since release is the version of Digital Design application that is most commonly deployed in your organisation?',
+                        'question'=>'De quand date la version de l\'application de conception numérique la plus couramment déployée dans votre entreprise depuis sa sortie ?',
                         'name'=> 7,
                         'options'=>[
                             [
-                                'label'=>'Less than six months',
+                                'label'=>'Moins de 6 mois',
                                 'value'=>5,
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'Six months to 1 year',
+                                'label'=>'De 6 mois à 1 an',
                                 'value'=>4,
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'1 to 2 years',
+                                'label'=>'1 à 2 ans',
                                 'value'=>3,
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'2 to 3 years',
+                                'label'=>'2 à 3 ans',
                                 'value'=>2,
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'3 years or more',
+                                'label'=>'3 ans ou plus',
                                 'value'=>1,
                                 'checked'=>false,
                             ]
@@ -844,7 +844,7 @@ return [
                 ]
             ],
             'page3' => [
-                'title' => 'Digital Design',
+                'title' => 'Conception Numérique',
                 'questions' => [
                     'q8'=>[
                         'type'=>'groupbutton',
@@ -852,227 +852,227 @@ return [
                             'type'=>'average'
                         ],
                         'optionLabels' => [
-                            'Not at all successful',
-                            'Slightly successful',
-                            'Moderately successful',
-                            'Successful',
-                            'Very successful',
+                            'Pas du tout réussi',
+                            'Un peu réussi',
+                            'Moyennement réussi',
+                            'Réussi',
+                            'Très réussi',
                         ],
-                        'question'=>'On a scale of 1 to 5, how successfully does your Digital Design solution rate for the following? ',
+                        'question'=>'Comment la direction générale de l\'entreprise considère-t-elle le rôle de l\'informatique au sein de l\'entreprise ?',
                         'name'=> 8,
                         'options'=>[
                             [
-                                'label'=>'Reliability',
+                                'label'=>'Fiabilité',
                                 'name'=> 8.1,
                                 'options'=>[
                                     [
-                                        'label'=>'Not at all successful',
+                                        'label'=>'Pas du tout réussi',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Slightly successful',
+                                        'label'=>'Un peu réussi',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Moderately successful',
+                                        'label'=>'Moyennement réussi',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Successful',
+                                        'label'=>'Réussi',
                                         'value'=>4,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Very successful',
+                                        'label'=>'Très réussi',
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
                                 ]
                             ],
                             [
-                                'label'=>'Scalability',
+                                'label'=>'Évolutivité',
                                 'name'=> 8.2,
                                 'options'=>[
                                     [
-                                        'label'=>'Not at all successful',
+                                        'label'=>'Pas du tout réussi',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Slightly successful',
+                                        'label'=>'Un peu réussi',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Moderately successful',
+                                        'label'=>'Moyennement réussi',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Successful',
+                                        'label'=>'Réussi',
                                         'value'=>4,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Very successful',
+                                        'label'=>'Très réussi',
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
                                 ]
                             ],
                             [
-                                'label'=>'Performance',
+                                'label'=>'Performances',
                                 'name'=> 8.3,
                                 'options'=>[
                                     [
-                                        'label'=>'Not at all successful',
+                                        'label'=>'Pas du tout réussi',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Slightly successful',
+                                        'label'=>'Un peu réussi',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Moderately successful',
+                                        'label'=>'Moyennement réussi',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Successful',
+                                        'label'=>'Réussi',
                                         'value'=>4,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Very successful',
+                                        'label'=>'Très réussi',
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
                                 ]
                             ],
                             [
-                                'label'=>'Industry platfom for ecosystem support',
+                                'label'=>'Plate-forme industrielle pour la prise en charge de l\'écosystème',
                                 'name'=> 8.4,
                                 'options'=>[
                                     [
-                                        'label'=>'Not at all successful',
+                                        'label'=>'Pas du tout réussi',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Slightly successful',
+                                        'label'=>'Un peu réussi',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Moderately successful',
+                                        'label'=>'Moyennement réussi',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Successful',
+                                        'label'=>'Réussi',
                                         'value'=>4,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Very successful',
+                                        'label'=>'Très réussi',
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
                                 ]
                             ],
                             [
-                                'label'=>'Value for money',
+                                'label'=>'Rapport qualité/prix',
                                 'name'=> 8.5,
                                 'options'=>[
                                     [
-                                        'label'=>'Not at all successful',
+                                        'label'=>'Pas du tout réussi',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Slightly successful',
+                                        'label'=>'Un peu réussi',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Moderately successful',
+                                        'label'=>'Moyennement réussi',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Successful',
+                                        'label'=>'Réussi',
                                         'value'=>4,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Very successful',
+                                        'label'=>'Très réussi',
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
                                 ]
                             ],
                             [
-                                'label'=>'Manageability',
+                                'label'=>'Facilité de gestion',
                                 'name'=> 8.6,
                                 'options'=>[
                                     [
-                                        'label'=>'Not at all successful',
+                                        'label'=>'Pas du tout réussi',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Slightly successful',
+                                        'label'=>'Un peu réussi',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Moderately successful',
+                                        'label'=>'Moyennement réussi',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Successful',
+                                        'label'=>'Réussi',
                                         'value'=>4,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Very successful',
+                                        'label'=>'Très réussi',
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
                                 ]
                             ],
                             [
-                                'label'=>'Features',
+                                'label'=>'Caractéristiques',
                                 'name'=> 8.7,
                                 'options'=>[
                                     [
-                                        'label'=>'Not at all successful',
+                                        'label'=>'Pas du tout réussi',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Slightly successful',
+                                        'label'=>'Un peu réussi',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Moderately successful',
+                                        'label'=>'Moyennement réussi',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Successful',
+                                        'label'=>'Réussi',
                                         'value'=>4,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Very successful',
+                                        'label'=>'Très réussi',
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
@@ -1083,58 +1083,58 @@ return [
                                 'name'=> 8.8,
                                 'options'=>[
                                     [
-                                        'label'=>'Not at all successful',
+                                        'label'=>'Pas du tout réussi',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Slightly successful',
+                                        'label'=>'Un peu réussi',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Moderately successful',
+                                        'label'=>'Moyennement réussi',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Successful',
+                                        'label'=>'Réussi',
                                         'value'=>4,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Very successful',
+                                        'label'=>'Très réussi',
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
                                 ]
                             ],
                             [
-                                'label'=>'Security',
+                                'label'=>'Sécurité',
                                 'name'=> 8.9,
                                 'options'=>[
                                     [
-                                        'label'=>'Not at all successful',
+                                        'label'=>'Pas du tout réussi',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Slightly successful',
+                                        'label'=>'Un peu réussi',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Moderately successful',
+                                        'label'=>'Moyennement réussi',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Successful',
+                                        'label'=>'Réussi',
                                         'value'=>4,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Very successful',
+                                        'label'=>'Très réussi',
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
@@ -1147,7 +1147,7 @@ return [
         ]
     ],
     'digital-delivery' => [
-        'title' => 'Digital Delivery',
+        'title' => 'Livraison Numérique',
         'description' => '',
         'background' => false,
         'nuggets' => [
@@ -1161,25 +1161,25 @@ return [
         'complete' => false,
         'pages' => [
             'page1' => [
-                'title' => 'Digital Delivery',
+                'title' => 'Livraison Numérique',
                 'questions' => [
                     'q9'=>[
                         'type'=>'button',
-                        'question'=>'How does the Senior Management of the company view the role of IT within the business?',
+                        'question'=>'Comment la direction générale de l\'entreprise considère-t-elle le rôle de l\'informatique au sein de l\'entreprise ?',
                         'name'=> 9,
                         'options'=>[
                             [
-                                'label'=>'IT is seen as a necessary cost',
+                                'label'=>'L\'informatique est considérée comme un coût nécessaire.',
                                 'value'=>1,
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'IT is seen as a driver of business efficiency',
+                                'label'=>'L\'informatique est considérée comme un moteur de l\'efficacité de l\'entreprise.',
                                 'value'=>3,
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'IT is seen as a driver of competitive advantage or differentiation',
+                                'label'=>'L\'informatique est considérée comme un moteur de l\'avantage concurrentiel ou de la différenciation.',
                                 'value'=>5,
                                 'checked'=>false,
                             ]
@@ -1238,7 +1238,7 @@ return [
                 ]
             ],
             'page2' => [
-                'title' => 'Digital Delivery',
+                'title' => 'Livraison Numérique',
                 'questions' => [
                     'q10'=>[
                         'type'=>'groupbutton',
@@ -1246,29 +1246,29 @@ return [
                             'type'=>'average'
                         ],
                         'optionLabels' => [
-                            'In-house (on-premises) solution',
-                            'Managed Services Provider',
-                            'Public Cloud Provider service',
+                            'Solution interne (sur site)',
+                            'Fournisseur de service géré',
+                            'Service de fournisseur de clouds publics',
                         ],
-                        'question'=>'Please indicate how your organization is primarily delivering (or plans to deliver) each of the following application types to end users? Select one for each',
+                        'question'=>'Veuillez indiquer dans quelle mesure votre entreprise fournit (ou prévoit de fournir) chacun des types d\'applications suivants aux utilisateurs finaux. Sélectionnez une réponse pour chaque question.',
                         'name'=> 10,
                         'options'=>[
                             [
-                                'label'=>'Productivity (email, word processing, spreadsheets, presentations etc)',
+                                'label'=>'Productivité (e-mail, traitement de texte, feuilles de calcul, présentations, etc.)',
                                 'name'=> 10.1,
                                 'options'=>[
                                     [
-                                        'label'=>'In-house (on-premises) solution',
+                                        'label'=>'Solution interne (sur site)',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Managed Service Provider',
+                                        'label'=>'Fournisseur de service géré',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Public Cloud Provider service',
+                                        'label'=>'Service de fournisseur de clouds publics',
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
@@ -1281,21 +1281,21 @@ return [
                                 ]
                             ],
                             [
-                                'label'=>'Collaboration (File sharing, VoIP, Video Conferencing etc))',
+                                'label'=>'Collaboration (partage de fichiers, VoIP, visioconférence, etc.)',
                                 'name'=> 10.2,
                                 'options'=>[
                                     [
-                                        'label'=>'In-house (on-premises) solution',
+                                        'label'=>'Solution interne (sur site)',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Managed Service Provider',
+                                        'label'=>'Fournisseur de service géré',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Public Cloud Provider service',
+                                        'label'=>'Service de fournisseur de clouds publics',
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
@@ -1312,17 +1312,17 @@ return [
                                 'name'=> 10.3,
                                 'options'=>[
                                     [
-                                        'label'=>'In-house (on-premises) solution',
+                                        'label'=>'Solution interne (sur site)',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Managed Service Provider',
+                                        'label'=>'Fournisseur de service géré',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Public Cloud Provider service',
+                                        'label'=>'Service de fournisseur de clouds publics',
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
@@ -1339,17 +1339,17 @@ return [
                                 'name'=> 10.4,
                                 'options'=>[
                                     [
-                                        'label'=>'In-house (on-premises) solution',
+                                        'label'=>'Solution interne (sur site)',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Managed Service Provider',
+                                        'label'=>'Fournisseur de service géré',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Public Cloud Provider service',
+                                        'label'=>'Service de fournisseur de clouds publics',
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
@@ -1362,21 +1362,21 @@ return [
                                 ]
                             ],
                             [
-                                'label'=>'Digital Design (CAD,CAE, CAM etc)',
+                                'label'=>'Conception numérique (CAO, IAO, FAO, etc.)',
                                 'name'=> 10.5,
                                 'options'=>[
                                     [
-                                        'label'=>'In-house (on-premises) solution',
+                                        'label'=>'Solution interne (sur site)',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Managed Service Provider',
+                                        'label'=>'Fournisseur de service géré',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Public Cloud Provider service',
+                                        'label'=>'Service de fournisseur de clouds publics',
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
@@ -1389,21 +1389,21 @@ return [
                                 ]
                             ],
                             [
-                                'label'=>'PLM software',
+                                'label'=>'Logiciel PLM (gestion du cycle de vie d\'un produit)',
                                 'name'=> 10.6,
                                 'options'=>[
                                     [
-                                        'label'=>'In-house (on-premises) solution',
+                                        'label'=>'Solution interne (sur site)',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Managed Service Provider',
+                                        'label'=>'Fournisseur de service géré',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Public Cloud Provider service',
+                                        'label'=>'Service de fournisseur de clouds publics',
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
@@ -1416,21 +1416,21 @@ return [
                                 ]
                             ],
                             [
-                                'label'=>'Simulation software',
+                                'label'=>'Logiciel de simulation',
                                 'name'=> 10.7,
                                 'options'=>[
                                     [
-                                        'label'=>'In-house (on-premises) solution',
+                                        'label'=>'Solution interne (sur site)',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Managed Service Provider',
+                                        'label'=>'Fournisseur de service géré',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Public Cloud Provider service',
+                                        'label'=>'Service de fournisseur de clouds publics',
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
@@ -1443,21 +1443,21 @@ return [
                                 ]
                             ],
                             [
-                                'label'=>'Analytics software',
+                                'label'=>'Logiciel d\'analyse',
                                 'name'=> 10.8,
                                 'options'=>[
                                     [
-                                        'label'=>'In-house (on-premises) solution',
+                                        'label'=>'Solution interne (sur site)',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Managed Service Provider',
+                                        'label'=>'Fournisseur de service géré',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Public Cloud Provider service',
+                                        'label'=>'Service de fournisseur de clouds publics',
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
@@ -1474,35 +1474,35 @@ return [
                 ]
             ],
             'page3' =>[
-                'title' => 'Digital Delivery',
+                'title' => 'Livraison Numérique',
                 'questions' => [
                     'q11'=>[
                         'type'=>'button',
-                        'question'=>'Which statement best represents your organization\'s approach to adopting Cloud services for delivering IT services or applications? [RANDOMIZE LIST]',
+                        'question'=>'Quelle affirmation représente le mieux l\'approche de votre entreprise en matière d\'adoption de services cloud pour la livraison de services ou d\'applications informatiques ?',
                         'name'=> 11,
                         'options'=>[
                             [
-                                'label'=>'We prefer to run everything in-house',
+                                'label'=>'Nous préférons tout gérer en interne.',
                                 'value'=>1,
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'We prefer to run things in-house where possible, but are open to using Cloud if necessary',
+                                'label'=>'Nous préférons exécuter les tâches en interne dans la mesure du possible, mais nous sommes ouverts à l\'utilisation du cloud si nécessaire.',
                                 'value'=>3,
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'We take a balanced approach to running things in-house or in the Cloud',
+                                'label'=>'Nous adoptons une approche équilibrée pour le fonctionnement en interne ou dans le cloud.',
                                 'value'=>4,
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'We tend to run things in the Cloud, but do run things in-house if necessary',
+                                'label'=>'Nous avons tendance à exécuter les tâches dans le cloud, mais nous exécutons les applications en interne si nécessaire.',
                                 'value'=>5,
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'We prefer to use the Cloud for everything',
+                                'label'=>'Nous préférons utiliser le cloud pour tout.',
                                 'value'=>5,
                                 'checked'=>false,
                             ]

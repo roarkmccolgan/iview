@@ -42,17 +42,18 @@ return array(
         <p class="font-bold">
             Cliquez sur "débuter l’évaluation" pour commencer votre voyage. Et bonne chance!
         </p>',
-    'startbut'=>'Start Assessment',
+    'startbut'=>'Commencer l\'évaluation',
     
     'send' => 'Nous pouvons vous envoyer les résultats complets directement dans votre boîte de réception.',
     'register' => 'Inscrivez-vous dès maintenant pour recevoir votre rapport personnalisé.',
     'provide' => 'Indiquez-nous vos coordonnées et nous vous enverrons un lien pour le télécharger.',
-    'byreg'=>'J’accepte de recevoir des communications marketing de la part de Dassault Systèmes ou de ses partenaires commerciaux, en accord avec leur <a href="https://www.3ds.com/fr/politique-de-protection-des-donnees-personnelles/" target="_blank">politique de confidentialité</a>',
-    'marketing'=>'I agree to receive marketing communications from Dassault Systèmes and its business partners according to their <a href="https://www.3ds.com/privacy-policy/" target="_blank">Privacy Policy</a>.',
+    'byreg'=>'En vous enregistrant auprès d’IDC, vous acceptez la <a href="https://dassault.idcready.net/privacy" target="_blank">politique de confidentialité d’IDC</a> ainsi que la <a href="<a href="https://www.3ds.com/fr/politique-de-protection-des-donnees-personnelles/" target="_blank">" target="_blank">politique de confidentialité et d’utilisation des cookies</a> Dassault Systèmes',
+    'marketing'=>'J’accepte de recevoir des communications marketing de la part de Dassault Systèmes ou de ses partenaires commerciaux, en accord avec leur <a href="https://www.3ds.com/fr/politique-de-protection-des-donnees-personnelles/" target="_blank">politique de confidentialité</a>',
     'wait' => 'En attendant, pourquoi ne pas tweeter vos résultats et les comparer avec ceux de vos confrères ?',
     'twitterlink' => 'https://twitter.com/home?status=Is%20your%20business%20GDPR%20ready?%20http%3A//bit.ly/2AwihN4%20%23Symantec',
     'facebooklink' => 'https://www.facebook.com/sharer/sharer.php?u=http%3A//bit.ly/2AwihN4',
     'linkedinlink' => 'https://www.linkedin.com/shareArticle?mini=true&url=http%3A//bit.ly/2AwihN4&title=Symantec%20and%20IDC%20GDPR%20Assessment&summary=Is%20your%20business%20GDPR%20ready?&source=',
+    'errorMarketing'=>'Veuillez accepter que vous souhaitiez recevoir du marketing de Dassault et de ses partenaires commerciaux.',
     'size1' => 1.0,
     'size2' => '2 à 9',
     'size3' => '10 à 49',
@@ -81,7 +82,7 @@ return array(
     'stage3-finish' => 'L\'ensemble de vos réponse indique que vous vous classez en tant que <strong class="text-ntt-data-yellow">DX Trailblazer</strong>, qui est le niveau le plus élevé de cette évaluation.',
 
     'digital-business' => [
-        'title'=> 'Entreprise numérique',
+        'title'=> 'Entreprise Numérique',
     ],
     'screener' => [
         'title'=> 'Screener',
@@ -135,7 +136,7 @@ return array(
 
         <h2 class="text-dassault-blue mb-4">EXPLICATION DU CLASSEMENT</h2>
         <div class="w-1/2 float-left">
-            <p class="mb-4">D\'après l\'enquête de référence, <strong>14,5 %</strong> des personnes interrogées sont dans la catégorie <strong>« natif numérique »</strong>, <strong>50,5 %</strong> des personnes interrogées sont dans la catégorie <strong>« spécialiste du numérique »</strong> et <strong>35 %</strong> des personnes interrogées sont dans la catégorie <strong>« perfectionnement numérique »</strong>. Cette distribution varie selon les trois catégories <strong>« entreprise numérique »</strong>, <strong>« conception numérique »</strong> et <strong>« livraison numérique »</strong>, qui constituent l\'indice de maturité numérique. La Conception numérique est la catégorie la plus mature, 22 % des personnes interrogées ayant obtenu le meilleur score, tandis que seulement <strong>12,5 %</strong> des personnes interrogées sont les plus performantes de la catégorie Entreprise numérique, où la gestion des changements de modèles commerciaux et de niveaux de personnel entraîne de grandes difficultés. Les entreprises qui sont le plus à même de faire face aux fluctuations de la demande et des niveaux de personnel ont des scores plus élevés que les entreprises qui s\'appuient sur des pratiques informatiques rigides et ne peuvent donc pas répondre de manière souple à l\'évolution des demandes. La clé de la maturité numérique est la capacité à créer des expériences exceptionnelles pour les employés, les clients et les écosystèmes partenaires grâce à l\'utilisation de technologies numériques. Plus une entreprise est équipée pour cela, plus elle obtient de bons résultats dans l\'indice de maturité numérique. </p>
+            <p class="mb-4">D\'après l\'enquête de référence, <strong>14,5 %</strong> des personnes interrogées sont dans la catégorie <strong>« natif numérique »</strong>, <strong>50,5 %</strong> des personnes interrogées sont dans la catégorie <strong>« spécialiste du numérique »</strong> et <strong>35 %</strong> des personnes interrogées sont dans la catégorie <strong>« perfectionnement numérique »</strong>. Cette distribution varie selon les trois catégories <strong>« entreprise numérique »</strong>, <strong>« conception numérique »</strong> et <strong>« livraison numérique »</strong>, qui constituent l\'indice de maturité numérique. La Conception numérique est la catégorie la plus mature, 22 % des personnes interrogées ayant obtenu le meilleur score, tandis que seulement <strong>12,5 %</strong> des personnes interrogées sont les plus performantes de la catégorie Entreprise Numérique, où la gestion des changements de modèles commerciaux et de niveaux de personnel entraîne de grandes difficultés. Les entreprises qui sont le plus à même de faire face aux fluctuations de la demande et des niveaux de personnel ont des scores plus élevés que les entreprises qui s\'appuient sur des pratiques informatiques rigides et ne peuvent donc pas répondre de manière souple à l\'évolution des demandes. La clé de la maturité numérique est la capacité à créer des expériences exceptionnelles pour les employés, les clients et les écosystèmes partenaires grâce à l\'utilisation de technologies numériques. Plus une entreprise est équipée pour cela, plus elle obtient de bons résultats dans l\'indice de maturité numérique. </p>
         </div>
         <div class="w-1/2 float-left">
             <div class="m-2"><img src=":rankimg" alt=""></div>
@@ -207,7 +208,7 @@ return array(
     ',
 
     'digital-business-intro' => '
-        <h2 class="w-4/5 ml-auto text-dassault-blue mb-6">Entreprise numérique</h2>
+        <h2 class="w-4/5 ml-auto text-dassault-blue mb-6">Entreprise Numérique</h2>
         <div class="clearfix">
             <div class="w-1/5 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 25mm;"></div>
             <div class="w-4/5 float-left">
@@ -262,7 +263,7 @@ return array(
     'digital-business-2-stage3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Votre score global dans ce domaine indique que vous êtes en retard par rapport à d\'autres pairs du groupe Natif numérique en ce qui concerne votre approche de l\'entreprise numérique. Vous devez vous intéresser aux domaines d\'évaluation individuels de cette section pour comprendre les changements que vous pourriez éventuellement apporter à votre approche Entreprise numérique. Vous avez beaucoup de travail à faire. vous devez donc agir de toute urgence afin d\'aborder les domaines d\'amélioration. Cela vous aidera à maintenir une position solide par rapport à votre maturité numérique globale.
+                Votre score global dans ce domaine indique que vous êtes en retard par rapport à d\'autres pairs du groupe Natif numérique en ce qui concerne votre approche de l\'entreprise numérique. Vous devez vous intéresser aux domaines d\'évaluation individuels de cette section pour comprendre les changements que vous pourriez éventuellement apporter à votre approche Entreprise Numérique. Vous avez beaucoup de travail à faire. vous devez donc agir de toute urgence afin d\'aborder les domaines d\'amélioration. Cela vous aidera à maintenir une position solide par rapport à votre maturité numérique globale.
             </p>
         </div>
     ',
@@ -381,28 +382,28 @@ return array(
     'digital-business-3-q1-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your business. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
+                Votre réponse indique que vous éprouvez des difficultés à faire face aux fluctuations de votre activité. L\'adaptation rapide à l\'évolution des conditions commerciales est d\'une importance capitale dans l\'économie numérique. Pour mieux vous adapter à l\'évolution des conditions de l\'entreprise, vous devez examiner comment vous pouvez rendre vos processus métiers et l\'infrastructure informatique sous-jacente qui prend en charge ces processus plus flexibles. Le passage à un modèle de livraison basé sur le cloud peut faciliter l\'adaptation à la croissance ou à la décroissance en fonction de la demande de l\'entreprise.
             </p>
         </div>
     ',
     'digital-business-3-q1-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your business. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
+                Votre réponse indique que vous éprouvez des difficultés à faire face aux fluctuations de votre activité. L\'adaptation rapide à l\'évolution des conditions commerciales est d\'une importance capitale dans l\'économie numérique. Pour mieux vous adapter à l\'évolution des conditions de l\'entreprise, vous devez examiner comment vous pouvez rendre vos processus métiers et l\'infrastructure informatique sous-jacente qui prend en charge ces processus plus flexibles. Le passage à un modèle de livraison basé sur le cloud peut faciliter l\'adaptation à la croissance ou à la décroissance en fonction de la demande de l\'entreprise.
             </p>
         </div>
     ',
     'digital-business-3-q1-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your business. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
+                Votre réponse indique que vous éprouvez des difficultés à faire face aux fluctuations de votre activité. L\'adaptation rapide à l\'évolution des conditions commerciales est d\'une importance capitale dans l\'économie numérique. Pour mieux vous adapter à l\'évolution des conditions de l\'entreprise, vous devez examiner comment vous pouvez rendre vos processus métiers et l\'infrastructure informatique sous-jacente qui prend en charge ces processus plus flexibles. Le passage à un modèle de livraison basé sur le cloud peut faciliter l\'adaptation à la croissance ou à la décroissance en fonction de la demande de l\'entreprise.
             </p>
         </div>
     ',
     'digital-business-3-q1-5' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your business. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
+                Votre réponse indique que vous éprouvez des difficultés à faire face aux fluctuations de votre activité. L\'adaptation rapide à l\'évolution des conditions commerciales est d\'une importance capitale dans l\'économie numérique. Pour mieux vous adapter à l\'évolution des conditions de l\'entreprise, vous devez examiner comment vous pouvez rendre vos processus métiers et l\'infrastructure informatique sous-jacente qui prend en charge ces processus plus flexibles. Le passage à un modèle de livraison basé sur le cloud peut faciliter l\'adaptation à la croissance ou à la décroissance en fonction de la demande de l\'entreprise.
             </p>
         </div>
     ',
@@ -410,7 +411,7 @@ return array(
     'question2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 font-bold text-dassault-blue-light">
-                Q2. How difficult is for your organization to adapt to your changes in staffing levels?
+                Q2. Dans quelle mesure votre entreprise a-t-elle du mal à s\'adapter à vos changements de niveaux de personnel ?
             </p>
         </div>
     ',
@@ -418,35 +419,35 @@ return array(
     'digital-business-1-q2-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you are dealing well with fluctuations in your staffing levels. This means that you are well ahead of your Digital Improver peers in enabling your business digitally and responding to changes in the business environment. Well done! You should now focus your efforts on other areas to improve your overall digital maturity.
+                Votre réponse indique que vous gérez bien les fluctuations de vos niveaux de personnel. Cela signifie que vous êtes bien en avance sur vos pairs du groupe Novice numérique pour permettre à votre entreprise de travailler numériquement et de répondre aux changements de l\'environnement professionnel. Bravo ! Vous devez maintenant concentrer vos efforts sur d\'autres domaines afin d\'améliorer votre maturité numérique globale.
             </p>
         </div>
     ',
     'digital-business-1-q2-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your staffing levels. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
+                Votre réponse indique que vous éprouvez des difficultés à faire face aux fluctuations de vos niveaux de personnel. L\'adaptation rapide à l\'évolution des conditions commerciales est d\'une importance capitale dans l\'économie numérique. Pour mieux vous adapter à l\'évolution des conditions de l\'entreprise, vous devez examiner comment vous pouvez rendre vos processus métiers et l\'infrastructure informatique sous-jacente qui prend en charge ces processus plus flexibles. Le passage à un modèle de livraison basé sur le cloud peut faciliter l\'adaptation à la croissance ou à la décroissance en fonction de la demande de l\'entreprise.
             </p>
         </div>
     ',
     'digital-business-1-q2-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your staffing levels. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
+                Votre réponse indique que vous éprouvez des difficultés à faire face aux fluctuations de vos niveaux de personnel. L\'adaptation rapide à l\'évolution des conditions commerciales est d\'une importance capitale dans l\'économie numérique. Pour mieux vous adapter à l\'évolution des conditions de l\'entreprise, vous devez examiner comment vous pouvez rendre vos processus métiers et l\'infrastructure informatique sous-jacente qui prend en charge ces processus plus flexibles. Le passage à un modèle de livraison basé sur le cloud peut faciliter l\'adaptation à la croissance ou à la décroissance en fonction de la demande de l\'entreprise.
             </p>
         </div>
     ',
     'digital-business-1-q2-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your staffing levels. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
+                Votre réponse indique que vous éprouvez des difficultés à faire face aux fluctuations de vos niveaux de personnel. L\'adaptation rapide à l\'évolution des conditions commerciales est d\'une importance capitale dans l\'économie numérique. Pour mieux vous adapter à l\'évolution des conditions de l\'entreprise, vous devez examiner comment vous pouvez rendre vos processus métiers et l\'infrastructure informatique sous-jacente qui prend en charge ces processus plus flexibles. Le passage à un modèle de livraison basé sur le cloud peut faciliter l\'adaptation à la croissance ou à la décroissance en fonction de la demande de l\'entreprise.
             </p>
         </div>
     ',
     'digital-business-1-q2-5' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your staffing levels. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
+                Votre réponse indique que vous éprouvez des difficultés à faire face aux fluctuations de vos niveaux de personnel. L\'adaptation rapide à l\'évolution des conditions commerciales est d\'une importance capitale dans l\'économie numérique. Pour mieux vous adapter à l\'évolution des conditions de l\'entreprise, vous devez examiner comment vous pouvez rendre vos processus métiers et l\'infrastructure informatique sous-jacente qui prend en charge ces processus plus flexibles. Le passage à un modèle de livraison basé sur le cloud peut faciliter l\'adaptation à la croissance ou à la décroissance en fonction de la demande de l\'entreprise.
             </p>
         </div>
     ',
@@ -454,35 +455,35 @@ return array(
     'digital-business-2-q2-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you are dealing well with fluctuations in your staffing levels. This means that you are well ahead of your Digital Achiever peers in enabling your business digitally and responding to changes in the business environment. Well done! You should now focus your efforts on other areas to improve your overall digital maturity.
+                Votre réponse indique que vous gérez bien les fluctuations de vos niveaux de personnel. Cela signifie que vous êtes bien en avance sur vos pairs du groupe Spécialiste du numérique pour permettre à votre entreprise de travailler numériquement et de répondre aux changements de l\'environnement professionnel. Bravo ! Vous devez maintenant concentrer vos efforts sur d\'autres domaines afin d\'améliorer votre maturité numérique globale.
             </p>
         </div>
     ',
     'digital-business-2-q2-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your staffing levels. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
+                Votre réponse indique que vous éprouvez des difficultés à faire face aux fluctuations de vos niveaux de personnel. L\'adaptation rapide à l\'évolution des conditions commerciales est d\'une importance capitale dans l\'économie numérique. Pour mieux vous adapter à l\'évolution des conditions de l\'entreprise, vous devez examiner comment vous pouvez rendre vos processus métiers et l\'infrastructure informatique sous-jacente qui prend en charge ces processus plus flexibles. Le passage à un modèle de livraison basé sur le cloud peut faciliter l\'adaptation à la croissance ou à la décroissance en fonction de la demande de l\'entreprise.
             </p>
         </div>
     ',
     'digital-business-2-q2-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your staffing levels. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
+                Votre réponse indique que vous éprouvez des difficultés à faire face aux fluctuations de vos niveaux de personnel. L\'adaptation rapide à l\'évolution des conditions commerciales est d\'une importance capitale dans l\'économie numérique. Pour mieux vous adapter à l\'évolution des conditions de l\'entreprise, vous devez examiner comment vous pouvez rendre vos processus métiers et l\'infrastructure informatique sous-jacente qui prend en charge ces processus plus flexibles. Le passage à un modèle de livraison basé sur le cloud peut faciliter l\'adaptation à la croissance ou à la décroissance en fonction de la demande de l\'entreprise.
             </p>
         </div>
     ',
     'digital-business-2-q2-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your staffing levels. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
+                Votre réponse indique que vous éprouvez des difficultés à faire face aux fluctuations de vos niveaux de personnel. L\'adaptation rapide à l\'évolution des conditions commerciales est d\'une importance capitale dans l\'économie numérique. Pour mieux vous adapter à l\'évolution des conditions de l\'entreprise, vous devez examiner comment vous pouvez rendre vos processus métiers et l\'infrastructure informatique sous-jacente qui prend en charge ces processus plus flexibles. Le passage à un modèle de livraison basé sur le cloud peut faciliter l\'adaptation à la croissance ou à la décroissance en fonction de la demande de l\'entreprise.
             </p>
         </div>
     ',
     'digital-business-2-q2-5' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your staffing levels. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
+                Votre réponse indique que vous éprouvez des difficultés à faire face aux fluctuations de vos niveaux de personnel. L\'adaptation rapide à l\'évolution des conditions commerciales est d\'une importance capitale dans l\'économie numérique. Pour mieux vous adapter à l\'évolution des conditions de l\'entreprise, vous devez examiner comment vous pouvez rendre vos processus métiers et l\'infrastructure informatique sous-jacente qui prend en charge ces processus plus flexibles. Le passage à un modèle de livraison basé sur le cloud peut faciliter l\'adaptation à la croissance ou à la décroissance en fonction de la demande de l\'entreprise.
             </p>
         </div>
     ',
@@ -490,35 +491,35 @@ return array(
     'digital-business-3-q2-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you are dealing well with fluctuations in your staffing levels. This means that you are at par with your Digital Native peers in enabling your business digitally. Well done! You should now focus your efforts on other areas to finetune your overall digital maturity.
+                Votre réponse indique que vous gérez bien les fluctuations de vos niveaux de personnel. Cela signifie que vous êtes à la hauteur de vos pairs du groupe Natif numérique dans le domaine de l\'optimisation numérique de votre entreprise. Bravo ! Vous devez maintenant concentrer vos efforts sur d\'autres domaines afin d\'affiner votre maturité numérique globale.
             </p>
         </div>
     ',
     'digital-business-3-q2-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your staffing levels. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
+                Votre réponse indique que vous éprouvez des difficultés à faire face aux fluctuations de vos niveaux de personnel. L\'adaptation rapide à l\'évolution des conditions commerciales est d\'une importance capitale dans l\'économie numérique. Pour mieux vous adapter à l\'évolution des conditions de l\'entreprise, vous devez examiner comment vous pouvez rendre vos processus métiers et l\'infrastructure informatique sous-jacente qui prend en charge ces processus plus flexibles. Le passage à un modèle de livraison basé sur le cloud peut faciliter l\'adaptation à la croissance ou à la décroissance en fonction de la demande de l\'entreprise.
             </p>
         </div>
     ',
     'digital-business-3-q2-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your staffing levels. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
+                Votre réponse indique que vous éprouvez des difficultés à faire face aux fluctuations de vos niveaux de personnel. L\'adaptation rapide à l\'évolution des conditions commerciales est d\'une importance capitale dans l\'économie numérique. Pour mieux vous adapter à l\'évolution des conditions de l\'entreprise, vous devez examiner comment vous pouvez rendre vos processus métiers et l\'infrastructure informatique sous-jacente qui prend en charge ces processus plus flexibles. Le passage à un modèle de livraison basé sur le cloud peut faciliter l\'adaptation à la croissance ou à la décroissance en fonction de la demande de l\'entreprise.
             </p>
         </div>
     ',
     'digital-business-3-q2-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your staffing levels. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
+                Votre réponse indique que vous éprouvez des difficultés à faire face aux fluctuations de vos niveaux de personnel. L\'adaptation rapide à l\'évolution des conditions commerciales est d\'une importance capitale dans l\'économie numérique. Pour mieux vous adapter à l\'évolution des conditions de l\'entreprise, vous devez examiner comment vous pouvez rendre vos processus métiers et l\'infrastructure informatique sous-jacente qui prend en charge ces processus plus flexibles. Le passage à un modèle de livraison basé sur le cloud peut faciliter l\'adaptation à la croissance ou à la décroissance en fonction de la demande de l\'entreprise.
             </p>
         </div>
     ',
     'digital-business-3-q2-5' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Based on your response, you find it challenging to deal well with fluctuations in your staffing levels. Adapting swiftly to changing business conditions is of paramount importance in the digital economy. To adapt better to changing business conditions, you need to look at how you can make your business processes and the underlying IT infrastructure that supports these processes more flexible. Moving to a cloud based delivery model might make it easier to scale up and down according to business demand.
+                Votre réponse indique que vous éprouvez des difficultés à faire face aux fluctuations de vos niveaux de personnel. L\'adaptation rapide à l\'évolution des conditions commerciales est d\'une importance capitale dans l\'économie numérique. Pour mieux vous adapter à l\'évolution des conditions de l\'entreprise, vous devez examiner comment vous pouvez rendre vos processus métiers et l\'infrastructure informatique sous-jacente qui prend en charge ces processus plus flexibles. Le passage à un modèle de livraison basé sur le cloud peut faciliter l\'adaptation à la croissance ou à la décroissance en fonction de la demande de l\'entreprise.
             </p>
         </div>
     ',
@@ -526,7 +527,7 @@ return array(
     'question3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 font-bold text-dassault-blue-light">
-                Q3. To what extent does your organization use the following application types? 
+                Q3. Dans quelle mesure votre entreprise utilise-t-elle les types d\'application suivants ?
             </p>
         </div>
     ',
@@ -534,28 +535,28 @@ return array(
     'digital-business-1-q3-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are using only a few applications to support your business processes, which is a common trait of Digital Improvers. Doing things manually wastes a lot of time and does not scale when customer demands are picking up. It frustrates your employees, because they cannot be productive and puts you on the backfoot when you are competing for talent. You should explore using more applications to improve your business processes and overall competitiveness to become a more digital business. 
+                Vous n\'utilisez que quelques applications pour prendre en charge vos processus métier, ce qui est une caractéristique commune de la catégorie Novice numérique. Faire les choses manuellement fait perdre beaucoup de temps et ne permet pas de s\'adapter lorsque les demandes des clients s\'intensifient. Cela frustre vos employés, parce qu\'ils ne peuvent pas être productifs, et vous met sur le carreau lorsque vous êtes en concurrence pour recruter des talents. Vous devez envisager d\'utiliser un plus grand nombre d\'applications pour améliorer vos processus métier et votre compétitivité globale afin de devenir une entreprise plus numérique.
             </p>
         </div>
     ',
     'digital-business-1-q3-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are using only a few applications to support your business processes, which is a common trait of Digital Improvers. Doing things manually wastes a lot of time and does not scale when customer demands are picking up. It frustrates your employees, because they cannot be productive and puts you on the backfoot when you are competing for talent. You should explore using more applications to improve your business processes and overall competitiveness to become a more digital business. 
+                Vous n\'utilisez que quelques applications pour prendre en charge vos processus métier, ce qui est une caractéristique commune de la catégorie Novice numérique. Faire les choses manuellement fait perdre beaucoup de temps et ne permet pas de s\'adapter lorsque les demandes des clients s\'intensifient. Cela frustre vos employés, parce qu\'ils ne peuvent pas être productifs, et vous met sur le carreau lorsque vous êtes en concurrence pour recruter des talents. Vous devez envisager d\'utiliser un plus grand nombre d\'applications pour améliorer vos processus métier et votre compétitivité globale afin de devenir une entreprise plus numérique.
             </p>
         </div>
     ',
     'digital-business-1-q3-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are using a fair amount of applications to digitise your business processes, which puts you ahead of your Digital Improver peers. You might want to focus on other areas of your digital business that need improvement.
+                Vous utilisez une quantité suffisante d\'applications pour numériser vos processus métier, ce qui vous place devant vos pairs du groupe Novice numérique. Vous devriez peut-être vous concentrer sur d\'autres domaines de votre entreprise numérique qui doivent être améliorés..
             </p>
         </div>
     ',
     'digital-business-1-q3-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are routinely using  applications to digitise your business processes, which puts you well ahead of your Digital Improver peers. You might want to focus on other areas of your digital business that need improvement.
+                Vous utilisez régulièrement des applications pour numériser vos processus d\'entreprise, ce qui vous donne une longueur d\'avance sur vos pairs du groupe Novice numérique. Vous devriez peut-être vous concentrer sur d\'autres domaines de votre entreprise numérique qui doivent être améliorés.
             </p>
         </div>
     ',
@@ -563,28 +564,28 @@ return array(
     'digital-business-2-q3-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are using only a few applications to support your business processes, which puts you behind your Digital Achiever peers. Doing things manually wastes a lot of time and does not scale when customer demands are picking up. It frustrates your employees, because they cannot be productive and puts you on the backfoot when you are competing for talent. You should explore using more applications to improve your business processes and overall competitiveness to become a more digital business. 
+                Vous n\'utilisez que quelques applications pour prendre en charge vos processus d\'entreprise, ce qui vous place derrière vos pairs du groupe Spécialiste du numérique. Faire les choses manuellement fait perdre beaucoup de temps et ne permet pas de s\'adapter lorsque les demandes des clients s\'intensifient. Cela frustre vos employés, parce qu\'ils ne peuvent pas être productifs, et vous met sur le carreau lorsque vous êtes en concurrence pour recruter des talents. Vous devez envisager d\'utiliser un plus grand nombre d\'applications pour améliorer vos processus métier et votre compétitivité globale afin de devenir une entreprise plus numérique.
             </p>
         </div>
     ',
     'digital-business-2-q3-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are using only a few applications to support your business processes, which puts you behind your Digital Achiever peers. Doing things manually wastes a lot of time and does not scale when customer demands are picking up. It frustrates your employees, because they cannot be productive and puts you on the backfoot when you are competing for talent. You should explore using more applications to improve your business processes and overall competitiveness to become a more digital business. 
+                Vous n\'utilisez que quelques applications pour prendre en charge vos processus d\'entreprise, ce qui vous place derrière vos pairs du groupe Spécialiste du numérique. Faire les choses manuellement fait perdre beaucoup de temps et ne permet pas de s\'adapter lorsque les demandes des clients s\'intensifient. Cela frustre vos employés, parce qu\'ils ne peuvent pas être productifs, et vous met sur le carreau lorsque vous êtes en concurrence pour recruter des talents. Vous devez envisager d\'utiliser un plus grand nombre d\'applications pour améliorer vos processus métier et votre compétitivité globale afin de devenir une entreprise plus numérique.
             </p>
         </div>
     ',
     'digital-business-2-q3-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are using a fair amount of applications to digitise your business processes, which puts you at par with your Digital Achiever peers. You might want to focus on other areas of your digital business that need improvement.
+                Vous utilisez une quantité suffisante d\'applications pour numériser vos processus métier, ce qui vous place à la hauteur de vos pairs du groupe Spécialiste du numérique. Vous devriez peut-être vous concentrer sur d\'autres domaines de votre entreprise numérique qui doivent être améliorés.
             </p>
         </div>
     ',
     'digital-business-2-q3-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are routinely using applications to digitise your business processes, which puts you ahead of your Digital Achiever peers. You might want to focus on other areas of your digital business that need improvement.
+                Vous utilisez régulièrement des applications pour numériser vos processus d\'entreprise, ce qui vous place devant vos pairs du groupe Spécialiste du numérique. Vous devriez peut-être vous concentrer sur d\'autres domaines de votre entreprise numérique qui doivent être améliorés.
             </p>
         </div>
     ',
@@ -592,28 +593,28 @@ return array(
     'digital-business-3-q3-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are using only a few applications to support your business processes, which puts you far behind your Digital Native peers. Doing things manually wastes a lot of time and does not scale when customer demands are picking up. It frustrates your employees, because they cannot be productive and puts you on the backfoot when you are competing for talent. You should explore using more applications to improve your business processes and overall competitiveness to become a more digital business. 
+                Vous n\'utilisez que quelques applications pour prendre en charge vos processus métier, ce qui vous place loin derrière vos pairs du groupe Natif numérique. Faire les choses manuellement fait perdre beaucoup de temps et ne permet pas de s\'adapter lorsque les demandes des clients s\'intensifient. Cela frustre vos employés, parce qu\'ils ne peuvent pas être productifs, et vous met sur le carreau lorsque vous êtes en concurrence pour recruter des talents. Vous devez envisager d\'utiliser un plus grand nombre d\'applications pour améliorer vos processus métier et votre compétitivité globale afin de devenir une entreprise plus numérique.
             </p>
         </div>
     ',
     'digital-business-3-q3-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are using only a few applications to support your business processes, which puts you far behind your Digital Native peers. Doing things manually wastes a lot of time and does not scale when customer demands are picking up. It frustrates your employees, because they cannot be productive and puts you on the backfoot when you are competing for talent. You should explore using more applications to improve your business processes and overall competitiveness to become a more digital business.  
+                Vous n\'utilisez que quelques applications pour prendre en charge vos processus métier, ce qui vous place loin derrière vos pairs du groupe Natif numérique. Faire les choses manuellement fait perdre beaucoup de temps et ne permet pas de s\'adapter lorsque les demandes des clients s\'intensifient. Cela frustre vos employés, parce qu\'ils ne peuvent pas être productifs, et vous met sur le carreau lorsque vous êtes en concurrence pour recruter des talents. Vous devez envisager d\'utiliser un plus grand nombre d\'applications pour améliorer vos processus métier et votre compétitivité globale afin de devenir une entreprise plus numérique.
             </p>
         </div>
     ',
     'digital-business-3-q3-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are using a fair amount of applications to support your business processes, but you are still behind your Digital Native peers. Doing things manually wastes a lot of time and does not scale when customer demands are picking up. It frustrates your employees, because they cannot be productive and puts you on the backfoot when you are competing for talent. You should explore using more applications to improve your business processes and overall competitiveness to become a more digital business. 
+                Vous utilisez une quantité d\'applications suffisante pour prendre en charge vos processus métier, mais vous êtes toujours derrière vos pairs du groupe Natif numérique. Faire les choses manuellement fait perdre beaucoup de temps et ne permet pas de s\'adapter lorsque les demandes des clients s\'intensifient. Cela frustre vos employés, parce qu\'ils ne peuvent pas être productifs, et vous met sur le carreau lorsque vous êtes en concurrence pour recruter des talents. Vous devez envisager d\'utiliser un plus grand nombre d\'applications pour améliorer vos processus métier et votre compétitivité globale afin de devenir une entreprise plus numérique.
             </p>
         </div>
     ',
     'digital-business-3-q3-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are routinely using applications to digitise your business processes, which puts you at par with your Digital Native peers. You might want to focus on other areas of your digital business that need improvement.
+                Vous utilisez régulièrement des applications pour numériser vos processus d\'entreprise, ce qui vous place au niveau de vos pairs du groupe Natif numérique. Vous devriez peut-être vous concentrer sur d\'autres domaines de votre entreprise numérique qui doivent être améliorés.
             </p>
         </div>
     ',
@@ -621,7 +622,7 @@ return array(
     'question4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 font-bold text-dassault-blue-light">
-                Q4. On a scale of 1 - 5, please rate the success of the current deployment of each of the following application types at your organization? 
+                Q4. Sur une échelle de 1 à 5, veuillez évaluer le succès du déploiement actuel de chacun des types d\'applications suivants au sein de votre entreprise.
             </p>
         </div>
     ',
@@ -629,28 +630,28 @@ return array(
     'digital-business-1-q4-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are underutilising your applications because they have not been implemented properly. This is typical for Digital Improvers. You are at risk of loosing skills and talent because you are creating a bad user experience for your employees, because your implementation is not stable. You are also creating a bad experience for your customers and business partners, when you are not responsive because of disruptions of your business processes due to failures of your applications. Moving to a cloud based delivery model for applications provides instant access to the latest features and stable operations.
+                Vous sous-utilisez vos applications car elles n\'ont pas été correctement mises en œuvre. Ceci est typique de la catégorie Novice numérique. Vous risquez de perdre des compétences et des talents en créant une mauvaise expérience utilisateur pour vos employés, car votre mise en œuvre n\'est pas stable. Vous créez également une mauvaise expérience pour vos clients et vos partenaires commerciaux, lorsque vous n\'êtes pas réactif en raison des interruptions de vos processus métier dues à des défaillances de vos applications. Le passage à un modèle de distribution basé sur le cloud pour les applications offre un accès instantané aux dernières fonctionnalités et à des opérations stables.
             </p>
         </div>
     ',
     'digital-business-1-q4-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are underutilising your applications because they have not been implemented properly. This is typical for Digital Improvers. You are at risk of loosing skills and talent because you are creating a bad user experience for your employees, because your implementation is not stable. You are also creating a bad experience for your customers and business partners, when you are not responsive because of disruptions of your business processes due to failures of your applications. Moving to a cloud based delivery model for applications provides instant access to the latest features and stable operations.
+                Vous sous-utilisez vos applications car elles n\'ont pas été correctement mises en œuvre. Ceci est typique de la catégorie Novice numérique. Vous risquez de perdre des compétences et des talents en créant une mauvaise expérience utilisateur pour vos employés, car votre mise en œuvre n\'est pas stable. Vous créez également une mauvaise expérience pour vos clients et vos partenaires commerciaux, lorsque vous n\'êtes pas réactif en raison des interruptions de vos processus métier dues à des défaillances de vos applications. Le passage à un modèle de distribution basé sur le cloud pour les applications offre un accès instantané aux dernières fonctionnalités et à des opérations stables.
             </p>
         </div>
     ',
     'digital-business-1-q4-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are fairly efficient at implementing  applications to digitise your business processes, which puts you well ahead of your Digital Improver peers. You might want to focus on other areas of your digital business that need improvement.
+                Vous êtes assez efficace pour mettre en œuvre des applications afin de numériser vos processus d\'entreprise, ce qui vous donne une longueur d\'avance sur vos pairs du groupe Novice numérique. Vous devriez peut-être vous concentrer sur d\'autres domaines de votre entreprise numérique qui doivent être améliorés.
             </p>
         </div>
     ',
     'digital-business-1-q4-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are very good at implementing  applications to digitise your business processes, which puts you well ahead of your Digital Improver peers. You might want to focus on other areas of your digital business that need improvement.
+                Vous êtes très doué pour mettre en œuvre des applications afin de numériser vos processus métier, ce qui vous donne une longueur d\'avance sur vos pairs du groupe Novice numérique. Vous devriez peut-être vous concentrer sur d\'autres domaines de votre entreprise numérique qui doivent être améliorés.
             </p>
         </div>
     ',
@@ -658,28 +659,28 @@ return array(
     'digital-business-2-q4-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are underutilising your applications because they have not been implemented properly. This puts you far behind your Digital Achiever peers. You are at risk of loosing skills and talent because you are creating a bad user experience for your employees, because your implementation is not stable. You are also creating a bad experience for your customers and business partners, when you are not responsive because of disruptions of your business processes due to failures of your applications. Moving to a cloud based delivery model for applications provides instant access to the latest features and stable operations.
+                Vous sous-utilisez vos applications car elles n\'ont pas été correctement mises en œuvre. Vous êtes ainsi loin derrière vos pairs de la catégorie Spécialiste du numérique. Vous risquez de perdre des compétences et des talents en créant une mauvaise expérience utilisateur pour vos employés, car votre mise en œuvre n\'est pas stable. Vous créez également une mauvaise expérience pour vos clients et vos partenaires commerciaux, lorsque vous n\'êtes pas réactif en raison des interruptions de vos processus métier dues à des défaillances de vos applications. Le passage à un modèle de distribution basé sur le cloud pour les applications offre un accès instantané aux dernières fonctionnalités et à des opérations stables.
             </p>
         </div>
     ',
     'digital-business-2-q4-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are underutilising your applications because they have not been implemented properly. This puts you far behind your Digital Achiever peers. You are at risk of loosing skills and talent because you are creating a bad user experience for your employees, because your implementation is not stable. You are also creating a bad experience for your customers and business partners, when you are not responsive because of disruptions of your business processes due to failures of your applications. Moving to a cloud based delivery model for applications provides instant access to the latest features and stable operations.
+                Vous sous-utilisez vos applications car elles n\'ont pas été correctement mises en œuvre. Vous êtes ainsi loin derrière vos pairs de la catégorie Spécialiste du numérique. Vous risquez de perdre des compétences et des talents en créant une mauvaise expérience utilisateur pour vos employés, car votre mise en œuvre n\'est pas stable. Vous créez également une mauvaise expérience pour vos clients et vos partenaires commerciaux, lorsque vous n\'êtes pas réactif en raison des interruptions de vos processus métier dues à des défaillances de vos applications. Le passage à un modèle de distribution basé sur le cloud pour les applications offre un accès instantané aux dernières fonctionnalités et à des opérations stables.
             </p>
         </div>
     ',
     'digital-business-2-q4-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are fairly efficient at implementing  applications to digitise your business processes, which puts you at par with your Digital Achiever peers. You might want to focus on other areas of your digital business that need improvement.
+                Vous êtes assez efficace pour mettre en œuvre des applications afin de numériser vos processus d\'entreprise, ce qui vous place à la hauteur de vos pairs du groupe Spécialiste du numérique. Vous devriez peut-être vous concentrer sur d\'autres domaines de votre entreprise numérique qui doivent être améliorés.
             </p>
         </div>
     ',
     'digital-business-2-q4-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are very good at implementing  applications to digitise your business processes, which puts you ahead of your Digital Achiever peers. You might want to focus on other areas of your digital business that need improvement.
+                Vous êtes très doué pour mettre en œuvre des applications afin de numériser vos processus métier, ce qui vous place devant vos pairs du groupe Spécialiste du numérique. Vous devriez peut-être vous concentrer sur d\'autres domaines de votre entreprise numérique qui doivent être améliorés.
             </p>
         </div>
     ',
@@ -687,42 +688,42 @@ return array(
     'digital-business-3-q4-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are underutilising your applications because they have not been implemented properly. This puts you far behind your Digital Native peers. You are at risk of loosing skills and talent because you are creating a bad user experience for your employees, because your implementation is not stable. You are also creating a bad experience for your customers and business partners, when you are not responsive because of disruptions of your business processes due to failures of your applications. Moving to a cloud based delivery model for applications provides instant access to the latest features and stable operations.
+                Vous sous-utilisez vos applications car elles n\'ont pas été correctement mises en œuvre. Vous êtes ainsi loin derrière vos pairs du groupe Natif numérique. Vous risquez de perdre des compétences et des talents en créant une mauvaise expérience utilisateur pour vos employés, car votre mise en œuvre n\'est pas stable. Vous créez également une mauvaise expérience pour vos clients et vos partenaires commerciaux, lorsque vous n\'êtes pas réactif en raison des interruptions de vos processus métier dues à des défaillances de vos applications. Le passage à un modèle de distribution basé sur le cloud pour les applications offre un accès instantané aux dernières fonctionnalités et à des opérations stables.
             </p>
         </div>
     ',
     'digital-business-3-q4-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are underutilising your applications because they have not been implemented properly. This puts you far behind your Digital Native peers. You are at risk of loosing skills and talent because you are creating a bad user experience for your employees, because your implementation is not stable. You are also creating a bad experience for your customers and business partners, when you are not responsive because of disruptions of your business processes due to failures of your applications. Moving to a cloud based delivery model for applications provides instant access to the latest features and stable operations.
+                Vous sous-utilisez vos applications car elles n\'ont pas été correctement mises en œuvre. Vous êtes ainsi loin derrière vos pairs du groupe Natif numérique. Vous risquez de perdre des compétences et des talents en créant une mauvaise expérience utilisateur pour vos employés, car votre mise en œuvre n\'est pas stable. Vous créez également une mauvaise expérience pour vos clients et vos partenaires commerciaux, lorsque vous n\'êtes pas réactif en raison des interruptions de vos processus métier dues à des défaillances de vos applications. Le passage à un modèle de distribution basé sur le cloud pour les applications offre un accès instantané aux dernières fonctionnalités et à des opérations stables
             </p>
         </div>
     ',
     'digital-business-3-q4-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are fairly efficient at implementing  applications to digitise your business processes. This puts you slightly behind your Digital Native peers. You are at risk of loosing skills and talent because you are creating a bad user experience for your employees, because your implementation is not stable. You are also creating a bad experience for your customers and business partners, when you are not responsive because of disruptions of your business processes due to failures of your applications. Moving to a cloud based delivery model for applications provides instant access to the latest features and stable operations.
+                Vous êtes assez efficace pour mettre en œuvre des applications afin de numériser vos processus d\'entreprise. Cela vous place légèrement derrière vos pairs du groupe Natif numérique. Vous risquez de perdre des compétences et des talents en créant une mauvaise expérience utilisateur pour vos employés, car votre mise en œuvre n\'est pas stable. Vous créez également une mauvaise expérience pour vos clients et vos partenaires commerciaux, lorsque vous n\'êtes pas réactif en raison des interruptions de vos processus métier dues à des défaillances de vos applications. Le passage à un modèle de distribution basé sur le cloud pour les applications offre un accès instantané aux dernières fonctionnalités et à des opérations stables.
             </p>
         </div>
     ',
     'digital-business-3-q4-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are very good at implementing  applications to digitise your business processes, which puts you at par with your Digital Achiever peers. You might want to focus on other areas of your digital business that need improvement.
+                Vous êtes très doué pour mettre en œuvre des applications afin de numériser vos processus d\'entreprise, ce qui vous place à la hauteur de vos pairs du groupe Spécialiste du numérique. Vous devriez peut-être vous concentrer sur d\'autres domaines de votre entreprise numérique qui doivent être améliorés.
             </p>
         </div>
     ',
 
     'digital-designintro' => '
-        <h2 class="w-4/5 ml-auto text-dassault-blue mb-6">DIGITAL DESIGN</h2>
+        <h2 class="w-4/5 ml-auto text-dassault-blue mb-6">CONCEPTION NUMÉRIQUE</h2>
         <div class="clearfix">
             <div class="w-1/5 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 25mm;"></div>
             <div class="w-4/5 float-left">
                 <p class="mb-2">
-                    Digital Design is the creation of solutions  through software for viewing on a screen including applications for Computer Aided Design (CAD), Mechanical Computer Aided Engineering (CAE), Other engineering, Collaborative product data management, Production planning, or Manufacturing. Digital Design and engineering tools enable global collaboration around projects throughout the ecosystem and help to attract and retain talent. Through the use of cloud-based digital design and engineering tools, Start-ups and SMBs have access to world-class tools used by their established competitors, partners and customers, at an affordable price point and with the ability to scale driven by customer demand.
+                    La conception numérique consiste à créer des solutions à l\'aide de logiciels permettant une visualisation à l\'écran, tels que les applications de conception assistée par ordinateur (CAO), d\'ingénierie mécanique assistée par ordinateur (IAO), mais également d\'autres outils d\'ingénierie, de gestion collaborative des données de produit, de planification de la production et de fabrication. Les outils de conception et d\'ingénierie numériques favorisent une collaboration mondiale sur des projets dans l\'ensemble de l\'écosystème et permettent d\'attirer et de garder des talents. Grâce à l\'utilisation d\'outils de conception et d\'ingénierie numériques basés sur le cloud, les start-ups et les PME ont accès à des outils de premier ordre utilisés par leurs concurrents, partenaires et clients établis, à un prix abordable et avec la possibilité d\'évoluer en fonction de la demande des clients.
                 </p>
                 <p class="mb-2">
-                    This section of the report assesses the stage of your organization\'s Digital Maturity based on your usage of digital design and engineering tools, how modern your application estate is and how well you are able to operate your digital design and engineering applications.
+                    Cette section du rapport évalue l\'étape de la maturité numérique de votre entreprise en fonction de votre utilisation des outils de conception et d\'ingénierie numériques, la modernité de votre parc d\'applications et votre capacité à exploiter vos applications de conception et d\'ingénierie numériques.
                 </p>
             </div>
         </div>
@@ -734,21 +735,21 @@ return array(
     'digital-design-1-stage1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score for this section indicates that you are in line with your Digital Improver peers with respect to the progress you have made so far. You are at the beginning of your journey, so there are many areas you need to address. You can look in to individual assessment areas within this section to understand what changes you could potentially make to improve your digital maturity.
+                Votre score global pour cette section indique que vous êtes en phase avec vos pairs du groupe Novice numérique en ce qui concerne les progrès que vous avez réalisés jusqu\'à présent. Vous êtes au début de votre parcours, il y a donc de nombreux domaines à aborder. Vous pouvez consulter les domaines d\'évaluation individuels de cette section pour comprendre les changements que vous pourriez éventuellement apporter pour améliorer votre maturité numérique.
             </p>
         </div>
     ',
     'digital-design-1-stage2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score for this section indicates that you are ahead of your Digital Improver peers with respect to the progress you have made so far. Very well done! While keeping up with this, you must also look at aspects related to digital design and digital delivery to improve your overall digital maturity.
+                Votre score global pour cette section indique que vous êtes en avance sur vos pairs du groupe Novice numérique par rapport aux progrès que vous avez réalisés jusqu\'à présent. Très bien joué ! Tout en restant à jour, vous devez également examiner les aspects liés à la conception numérique et à la livraison numérique afin d\'améliorer votre maturité numérique globale.
             </p>
         </div>
     ',
     'digital-design-1-stage3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score for this section indicates that you are ahead of your Digital Improver peers with respect to the progress you have made so far. Very well done! While keeping up with this, you must also look at aspects related to digital business and digital delivery to improve your overall digital maturity.
+                Votre score global pour cette section indique que vous êtes en avance sur vos pairs du groupe Novice numérique par rapport aux progrès que vous avez réalisés jusqu\'à présent. Très bien joué ! Tout en restant à jour, vous devez également examiner les aspects liés à l\'entreprise numérique et à la livraison numérique afin d\'améliorer votre maturité numérique globale.
             </p>
         </div>
     ',
@@ -756,21 +757,21 @@ return array(
     'digital-design-2-stage1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score for this section indicates that you are lagging behind your Digital Achiever peers with respect to your digital design approach. Digital design is an area that you should improve to catch up with your peers,  so you must take steps to accelerate the journey now. You should look in to individual assessment areas within this section to understand what changes you could potentially make to your digital design approach to improve your digital maturity.
+                Votre score global pour cette section indique que vous êtes en retard par rapport à vos pairs du groupe Spécialiste du numérique en ce qui concerne votre approche de la conception numérique. La conception numérique est un domaine que vous devez améliorer pour rattraper vos pairs. Vous devez donc prendre des mesures pour accélérer le mouvement dès maintenant. Vous devez examiner les domaines d\'évaluation individuels de cette section pour comprendre les changements que vous pourriez éventuellement apporter à votre approche de conception numérique afin d\'améliorer votre maturité numérique.
             </p>
         </div>
     ',
     'digital-design-2-stage2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score in this section indicates that you are in line with your Digital Achiever peers with respect to the progress you have made in digital design. You are well on your way, but don\'t think of stopping just yet. You can look into individual assessment areas within this section to understand what changes you could potentially make to your digital design capabilities for further progress in your digital business.
+                Votre score global dans cette section indique que vous êtes en phase avec vos pairs du groupe Spécialiste du numérique en ce qui concerne vos progrès dans le domaine de la conception numérique. Vous avez beaucoup travaillé, mais vous ne devez pas vous arrêter maintenant. Vous pouvez consulter les domaines d\'évaluation individuels de cette section pour comprendre les changements que vous pourriez éventuellement apporter à vos capacités de conception numérique afin de progresser dans votre entreprise numérique.
             </p>
         </div>
     ',
     'digital-design-2-stage3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score for this section indicates that you are ahead of your Digital Achiever peers with respect to the progress you have made. Very well done on your journey so far! While keeping up with this, you must also look at aspects related to digital business and digital delivery to improve your overall digital maturity.
+                Votre score global pour cette section indique que vous êtes en avance sur vos pairs dans le domaine Spécialiste du numérique par rapport aux progrès que vous avez réalisés. Bravo pour votre parcours jusqu\'à présent ! Tout en restant à jour, vous devez également examiner les aspects liés à l\'entreprise numérique et à la livraison numérique afin d\'améliorer votre maturité numérique globale.
             </p>
         </div>
     ',
@@ -778,21 +779,21 @@ return array(
     'digital-design-3-stage1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score in this area indicates that you are lagging much behind other Digital Native peers in your digital design capabilities. You should look in to individual assessment areas within this section to understand what changes you could potentially make to your digital business approach. You have a lot of work to do so you should act urgently to address the areas of improvement. This will help you sustain your strong position with respect to your overall digital maturity.
+                Votre score global dans ce domaine indique que vous êtes bien en retard par rapport à d\'autres pairs du groupe Natif numérique dans vos capacités de conception numérique. Vous devez vous intéresser aux domaines d\'évaluation individuels de cette section pour comprendre les changements que vous pourriez éventuellement apporter à votre approche Entreprise Numérique. Vous avez beaucoup de travail à faire. vous devez donc agir de toute urgence afin d\'aborder les domaines d\'amélioration. Cela vous aidera à maintenir une position solide par rapport à votre maturité numérique globale.
             </p>
         </div>
     ',
     'digital-design-3-stage2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score in this area indicates that you are lagging behind other Digital Native peers with regards to your digital design capabilities. You should look in to individual assessment areas within this section to understand what changes you could potentially make to your digital design approach. You have a lot of work to do so you should act urgently to address the areas of improvement. This will help sustain your strong position with respect to your overall digital maturity.
+                Votre score global dans ce domaine indique que vous êtes en retard par rapport à d\'autres pairs du groupe Natif numérique en ce qui concerne vos capacités de conception numérique. Vous devez examiner les domaines d\'évaluation individuels de cette section pour comprendre les changements que vous pourriez éventuellement apporter à votre approche de la conception numérique. Vous avez beaucoup de travail à faire. vous devez donc agir de toute urgence afin d\'aborder les domaines d\'amélioration. Cela vous aidera à maintenir une position solide par rapport à votre maturité numérique globale.
             </p>
         </div>
     ',
     'digital-design-3-stage3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue font-bold">
-                Your overall score in this area indicates that you are in line with the digital native peers with respect to the progress you have made with regards to your digital design approach. While keeping up with this, you can look at areas of improvement if any, related to digital business and digital delivery to improve your overall digital maturity.
+                Votre score global dans ce domaine indique que vous êtes en phase avec vos pairs du groupe Natif numérique par rapport aux progrès que vous avez réalisés en ce qui concerne votre approche de la conception numérique. Tout en restant à jour, vous pouvez examiner les domaines d\'amélioration, le cas échéant, liés à l\'activité numérique et à la diffusion numérique, afin d\'améliorer votre maturité numérique globale.
             </p>
         </div>
     ',
@@ -804,7 +805,7 @@ return array(
     'question5' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 font-bold text-dassault-blue-light">
-                Q5. Which statement best describes how your organization tends to roll out CAD/CAM applications or updates?
+                Q5. Quelle affirmation décrit le mieux la manière dont votre entreprise a tendance à déployer des applications ou des mises à jour de CAO/FAO ?
             </p>
         </div>
     ',
@@ -812,35 +813,35 @@ return array(
     'digital-design-1-q5-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are depending on manual processes to deliver digital design applications and upgrades, which puts you at par with your Digital Improver peers. Reliance on manual processes leads to technical debt, frustrations from the design engineers and general low responsiveness to business requirements. You need to become more proactive, leverage automation tools and cloud-based applications to increase your agility and improve your digital design capabilities.
+                Vous dépendez des processus manuels pour fournir des applications de conception numérique et des mises à niveau, ce qui vous place à la hauteur de vos pairs du groupe Novice numérique. La dépendance vis-à-vis des processus manuels entraîne une dette technique, des frustrations des ingénieurs concepteurs et une faible réactivité générale vis-à-vis des exigences de l\'entreprise. Vous devez devenir plus proactif, tirer parti des outils d\'automatisation et des applications basées sur le cloud pour améliorer votre souplesse et vos capacités de conception numérique.
             </p>
         </div>
     ',
     'digital-design-1-q5-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are depending on manual processes to deliver digital design applications and upgrades, which puts you at par with your Digital Improver peers. Reliance on manual processes leads to technical debt, frustrations from the design engineers and general low responsiveness to business requirements. You need to become more proactive, leverage automation tools and cloud-based applications to increase your agility and improve your digital design capabilities.
+                Vous dépendez des processus manuels pour fournir des applications de conception numérique et des mises à niveau, ce qui vous place à la hauteur de vos pairs du groupe Novice numérique. La dépendance vis-à-vis des processus manuels entraîne une dette technique, des frustrations des ingénieurs concepteurs et une faible réactivité générale vis-à-vis des exigences de l\'entreprise. Vous devez devenir plus proactif, tirer parti des outils d\'automatisation et des applications basées sur le cloud pour améliorer votre souplesse et vos capacités de conception numérique.
             </p>
         </div>
     ',
     'digital-design-1-q5-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your IT department uses automation tools to devliver digital design applications and upgrades, which puts you ahead of your Digital Improver peers. If you want to take another step ahead, you can consider using cloud-based digital design and engineering tools, which automatically provide you the latest functionality and don\'t require any intervention from IT.
+                Votre service informatique utilise des outils d\'automatisation pour fournir les applications de conception numérique et les mises à niveau, ce qui vous donne une longueur d\'avance sur vos pairs du groupe Novice numérique. Si vous souhaitez prendre une autre longueur d\'avance, vous pouvez envisager d\'utiliser des outils de conception et d\'ingénierie numériques basés sur le cloud, qui vous offrent automatiquement les dernières fonctionnalités et ne nécessitent aucune intervention du service informatique.
             </p>
         </div>
     ',
     'digital-design-1-q5-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You have outsourced the implementation and upgrades of your digital design and engineering applications to a partner, which puts you ahead of your Digital Improver peers. Depending your service level agreement (SLA) with your partner, you are getting the latest updates with a regular cadence. If you want to take your agility one step further, you can move to a cloud-based delivery model, where you are always on the latest version of the digital design and engineering application.
+                Vous avez externalisé la mise en œuvre et les mises à niveau de vos applications de conception et d\'ingénierie numériques à un partenaire, ce qui vous place devant vos pairs du groupe Novice numérique. En fonction de votre contrat de niveau de service (SLA) avec votre partenaire, vous obtenez régulièrement les dernières mises à jour. Si vous souhaitez aller encore plus loin en matière de souplesse, vous pouvez passer à un modèle de livraison basé sur le cloud, où vous êtes toujours à la dernière version de l\'application de conception et d\'ingénierie numérique.
             </p>
         </div>
     ',
     'digital-design-1-q5-5' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are using a cloud-based delivery model for your digital design and engineering applications, which puts you far ahead of your Digital Improver peers. You should focus on other areas of digital business or digital delivery to improve your digital maturity.
+                Vous utilisez un modèle de diffusion basé sur le cloud pour vos applications de conception et d\'ingénierie numériques, ce qui vous place devant vos pairs du groupe Novice numérique. Vous devez vous concentrer sur d\'autres domaines de l\'entreprise numérique ou de la livraison numérique pour améliorer votre maturité numérique.
             </p>
         </div>
     ',
@@ -848,35 +849,35 @@ return array(
     'digital-design-2-q5-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are depending on manual processes to deliver digital design applications and upgrades, which puts you behind your Digital Achiever peers. Reliance on manual processes leads to technical debt, frustrations from the design engineers and general low responsiveness to business requirements. You need to become more proactive, leverage automation tools and cloud-based applications to increase your agility and improve your digital design capabilities.
+                Vous dépendez des processus manuels pour fournir des applications de conception numérique et des mises à niveau, ce qui vous place derrière vos pairs du groupe Spécialiste du numérique. La dépendance vis-à-vis des processus manuels entraîne une dette technique, des frustrations des ingénieurs concepteurs et une faible réactivité générale vis-à-vis des exigences de l\'entreprise. Vous devez devenir plus proactif, tirer parti des outils d\'automatisation et des applications basées sur le cloud pour améliorer votre souplesse et vos capacités de conception numérique.
             </p>
         </div>
     ',
     'digital-design-2-q5-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are depending on manual processes to deliver digital design applications and upgrades, which puts you behind your Digital Achiever peers. Reliance on manual processes leads to technical debt, frustrations from the design engineers and general low responsiveness to business requirements. You need to become more proactive, leverage automation tools and cloud-based applications to increase your agility and improve your digital design capabilities.
+                Vous dépendez des processus manuels pour fournir des applications de conception numérique et des mises à niveau, ce qui vous place derrière vos pairs du groupe Spécialiste du numérique. La dépendance vis-à-vis des processus manuels entraîne une dette technique, des frustrations des ingénieurs concepteurs et une faible réactivité générale vis-à-vis des exigences de l\'entreprise. Vous devez devenir plus proactif, tirer parti des outils d\'automatisation et des applications basées sur le cloud pour améliorer votre souplesse et vos capacités de conception numérique.
             </p>
         </div>
     ',
     'digital-design-2-q5-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your IT department uses automation tools to devliver digital design applications and upgrades, which puts you at par with your Digital Achiever peers. If you want to take another step ahead, you can consider using cloud-based digital design and engineering tools, which automatically provide you the latest functionality and don\'t require any intervention from IT.
+                Votre service informatique utilise des outils d\'automatisation pour livrer les applications de conception numérique et les mises à niveau, ce qui vous place à la hauteur de vos pairs du groupe Spécialiste du numérique. Si vous souhaitez prendre une autre longueur d\'avance, vous pouvez envisager d\'utiliser des outils de conception et d\'ingénierie numériques basés sur le cloud, qui vous offrent automatiquement les dernières fonctionnalités et ne nécessitent aucune intervention du service informatique.
             </p>
         </div>
     ',
     'digital-design-2-q5-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You have outsourced the implementation and upgrades of your digital design and engineering applications to a partner, which puts you at par with your Digital Improver peers. Depending your service level agreement (SLA) with your partner, you are getting the latest updates with a regular cadence. If you want to take your agility one step further, you can move to a cloud-based delivery model, where you are always on the latest version of the digital design and engineering application.
+                Vous avez externalisé la mise en œuvre et les mises à niveau de vos applications de conception et d\'ingénierie numériques à un partenaire, ce qui vous place au niveau de vos pairs du groupe Perfectionnement numérique. En fonction de votre contrat de niveau de service (SLA) avec votre partenaire, vous obtenez régulièrement les dernières mises à jour. Si vous souhaitez aller encore plus loin en matière de souplesse, vous pouvez passer à un modèle de livraison basé sur le cloud, où vous êtes toujours à la dernière version de l\'application de conception et d\'ingénierie numérique.
             </p>
         </div>
     ',
     'digital-design-2-q5-5' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are using a cloud-based delivery model for your digital design and engineering applications, which puts you ahead of your Digital Achiever peers. You should focus on other areas of digital business or digital delivery to improve your digital maturity.
+                Vous utilisez un modèle de livraison basé sur le cloud pour vos applications de conception et d\'ingénierie numériques, ce qui vous place devant vos pairs du groupe Spécialiste du numérique. Vous devez vous concentrer sur d\'autres domaines de l\'entreprise numérique ou de la livraison numérique pour améliorer votre maturité numérique.
             </p>
         </div>
     ',
@@ -884,35 +885,35 @@ return array(
     'digital-design-3-q5-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are depending on manual processes to deliver digital design applications and upgrades, which puts you far behind your Digital Native peers. Reliance on manual processes leads to technical debt, frustrations from the design engineers and general low responsiveness to business requirements. You need to become more proactive, leverage automation tools and cloud-based applications to increase your agility and improve your digital design capabilities.
+                Vous dépendez des processus manuels pour fournir des applications de conception numérique et des mises à niveau, ce qui vous place loin derrière vos pairs du groupe Natif numérique. La dépendance vis-à-vis des processus manuels entraîne une dette technique, des frustrations des ingénieurs concepteurs et une faible réactivité générale vis-à-vis des exigences de l\'entreprise. Vous devez devenir plus proactif, tirer parti des outils d\'automatisation et des applications basées sur le cloud pour améliorer votre souplesse et vos capacités de conception numérique.
             </p>
         </div>
     ',
     'digital-design-3-q5-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are depending on manual processes to deliver digital design applications and upgrades, which puts you far behind your Digital Native peers. Reliance on manual processes leads to technical debt, frustrations from the design engineers and general low responsiveness to business requirements. You need to become more proactive, leverage automation tools and cloud-based applications to increase your agility and improve your digital design capabilities.
+                Vous dépendez des processus manuels pour fournir des applications de conception numérique et des mises à niveau, ce qui vous place loin derrière vos pairs du groupe Natif numérique. La dépendance vis-à-vis des processus manuels entraîne une dette technique, des frustrations des ingénieurs concepteurs et une faible réactivité générale vis-à-vis des exigences de l\'entreprise. Vous devez devenir plus proactif, tirer parti des outils d\'automatisation et des applications basées sur le cloud pour améliorer votre souplesse et vos capacités de conception numérique.
             </p>
         </div>
     ',
     'digital-design-3-q5-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your IT department uses automation tools to devliver digital design applications and upgrades, which leaves you behind your Digital Native peers. You need to accelerate your journey towards modern cloud-based digital design and engineering tools to catch up with your peers.
+                Votre service informatique utilise des outils d\'automatisation pour livrer les applications de conception numérique et les mises à niveau, ce qui vous laisse derrière vos pairs du groupe Natif numérique. Vous devez accélérer votre transition vers des outils modernes de conception et d\'ingénierie numériques basés sur le cloud pour rattraper vos pairs.
             </p>
         </div>
     ',
     'digital-design-3-q5-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You have outsourced the implementation and upgrades of your digital design and engineering applications to a partner, which puts you behind your Digital Improver peers. Depending your service level agreement (SLA) with your partner, you are getting the latest updates with a regular cadence. If you want to take your agility one step further, you can move to a cloud-based delivery model, where you are always on the latest version of the digital design and engineering application.
+                Vous avez externalisé la mise en œuvre et les mises à niveau de vos applications de conception et d\'ingénierie numériques à un partenaire, ce qui vous place derrière vos pairs du groupe Perfectionnement numérique. En fonction de votre contrat de niveau de service (SLA) avec votre partenaire, vous obtenez régulièrement les dernières mises à jour. Si vous souhaitez aller encore plus loin en matière de souplesse, vous pouvez passer à un modèle de livraison basé sur le cloud, où vous êtes toujours à la dernière version de l\'application de conception et d\'ingénierie numérique.
             </p>
         </div>
     ',
     'digital-design-3-q5-5' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are using a cloud-based delivery model for your digital design and engineering applications, which puts you at par with your Digital Native peers. You should focus on other areas of digital business or digital delivery to improve your digital maturity.
+                Vous utilisez un modèle de livraison basé sur le cloud pour vos applications de conception et d\'ingénierie numériques, qui vous place au niveau de vos pairs du groupe Natif numérique. Vous devez vous concentrer sur d\'autres domaines de l\'entreprise numérique ou de la livraison numérique pour améliorer votre maturité numérique.
             </p>
         </div>
     ',
@@ -920,7 +921,7 @@ return array(
     'question6' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 font-bold text-dassault-blue-light">
-                Q6. What proportion of your organization\'s Digital Design application estate are the following ages since release?
+                Q6. Quelle proportion du parc d\'applications de conception numérique de votre entreprise a les âges suivants ?
             </p>
         </div>
     ',
@@ -928,35 +929,35 @@ return array(
     'digital-design-1-q6-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are using the latest versions of your digital design and engineering apps. This puts you well ahead of your Digital Improver peers. You should focus on other areas of digital business or digital delivery to improve your digital maturity.
+                Vous utilisez les dernières versions de vos applications de conception numérique et d\'ingénierie. Cela vous place devant vos pairs du groupe Novice numérique. Vous devez vous concentrer sur d\'autres domaines de l\'entreprise numérique ou de la livraison numérique pour améliorer votre maturité numérique.
             </p>
         </div>
     ',
     'digital-design-1-q6-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are using the latest versions of your digital design and engineering apps. This puts you well ahead of your Digital Improver peers. You should focus on other areas of digital business or digital delivery to improve your digital maturity.
+                Vous utilisez les dernières versions de vos applications de conception numérique et d\'ingénierie. Cela vous place devant vos pairs du groupe Novice numérique. Vous devez vous concentrer sur d\'autres domaines de l\'entreprise numérique ou de la livraison numérique pour améliorer votre maturité numérique.
             </p>
         </div>
     ',
     'digital-design-1-q6-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are not using the latest version of your digital design and engineering applications. This puts you at par with your Digital Improver peers. In order to stay competitive in the digital economy, attract the right employees and interact well with your ecosystem, you need to ensure that you are always on the most current version of your applications. Moving to a cloud-based solution enables you to always be on the latest version and have access to the latest innovative features of the application.
+                Vous n\'utilisez pas la dernière version de vos applications de conception numérique et d\'ingénierie. Vous êtes ainsi à la hauteur de vos pairs du groupe Novice numérique. Afin de rester compétitif dans l\'économie numérique, d\'attirer les bons employés et d\'interagir efficacement avec votre écosystème, vous devez vous assurer de toujours avoir la version la plus récente de vos applications. Le passage à une solution basée sur le cloud vous permet de toujours avoir la dernière version et d\'accéder aux dernières fonctionnalités innovantes de l\'application.
             </p>
         </div>
     ',
     'digital-design-1-q6-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your digital design and engineering application is aging and you are not taking advantage of the most innovative features. This puts you at par with your Digital Improver peers. In order to stay competitive in the digital economy, attract the right employees and interact well with your ecosystem, you need to ensure that you are always on the most current version of your applications. Moving to a cloud-based solution enables you to always be on the latest version and have access to the latest innovative features of the application.
+                Votre application de conception et d\'ingénierie numérique est vieillissante et vous ne tirez pas parti des fonctionnalités les plus innovantes. Vous êtes ainsi à la hauteur de vos pairs du groupe Novice numérique. Afin de rester compétitif dans l\'économie numérique, d\'attirer les bons employés et d\'interagir efficacement avec votre écosystème, vous devez vous assurer de toujours avoir la version la plus récente de vos applications. Le passage à une solution basée sur le cloud vous permet de toujours avoir la dernière version et d\'accéder aux dernières fonctionnalités innovantes de l\'application.
             </p>
         </div>
     ',
     'digital-design-1-q6-5' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your digital design and engineering application is outdated. You are at risk of disruption by more agile competitors and you are not taking advantage of the most innovative features. This puts you at par with your Digital Improver peers. In order to stay competitive in the digital economy, attract the right employees and interact well with your ecosystem, you need to ensure that you are always on the most current version of your applications. Moving to a cloud-based solution enables you to always be on the latest version and have access to the latest innovative features of the application.
+                Votre application de conception et d\'ingénierie numérique est obsolète. Vous risquez d\'être dérangé par des concurrents plus souples et vous ne tirez pas parti des fonctionnalités les plus innovantes. Vous êtes ainsi à la hauteur de vos pairs du groupe Novice numérique. Afin de rester compétitif dans l\'économie numérique, d\'attirer les bons employés et d\'interagir efficacement avec votre écosystème, vous devez vous assurer de toujours avoir la version la plus récente de vos applications. Le passage à une solution basée sur le cloud vous permet de toujours avoir la dernière version et d\'accéder aux dernières fonctionnalités innovantes de l\'application.
             </p>
         </div>
     ',
@@ -964,35 +965,35 @@ return array(
     'digital-design-2-q6-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are using the latest versions of your digital design and engineering apps. This puts you well ahead of your Digital Achiever peers. You should focus on other areas of digital business or digital delivery to improve your digital maturity.
+                Vous utilisez les dernières versions de vos applications de conception numérique et d\'ingénierie. Vous êtes ainsi bien en avance sur vos pairs du groupe Spécialiste du numérique. Vous devez vous concentrer sur d\'autres domaines de l\'entreprise numérique ou de la livraison numérique pour améliorer votre maturité numérique.
             </p>
         </div>
     ',
     'digital-design-2-q6-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are using the latest versions of your digital design and engineering apps. This puts you well ahead of your Digital Achiever peers. You should focus on other areas of digital business or digital delivery to improve your digital maturity.
+                Vous utilisez les dernières versions de vos applications de conception numérique et d\'ingénierie. Vous êtes ainsi bien en avance sur vos pairs du groupe Spécialiste du numérique. Vous devez vous concentrer sur d\'autres domaines de l\'entreprise numérique ou de la livraison numérique pour améliorer votre maturité numérique.
             </p>
         </div>
     ',
     'digital-design-2-q6-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are not using the latest version of your digital design and engineering applications. This puts you at par with your Digital Achiever peers. In order to stay competitive in the digital economy, attract the right employees and interact well with your ecosystem, you need to ensure that you are always on the most current version of your applications. Moving to a cloud-based solution enables you to always be on the latest version and have access to the latest innovative features of the application.
+                Vous n\'utilisez pas la dernière version de vos applications de conception numérique et d\'ingénierie. Vous êtes ainsi à la hauteur de vos pairs du groupe Spécialiste du numérique. Afin de rester compétitif dans l\'économie numérique, d\'attirer les bons employés et d\'interagir efficacement avec votre écosystème, vous devez vous assurer de toujours avoir la version la plus récente de vos applications. Le passage à une solution basée sur le cloud vous permet de toujours avoir la dernière version et d\'accéder aux dernières fonctionnalités innovantes de l\'application.
             </p>
         </div>
     ',
     'digital-design-2-q6-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your digital design and engineering application is aging and you are not taking advantage of the most innovative features. This puts you behind your Digital Achiever peers. In order to stay competitive in the digital economy, attract the right employees and interact well with your ecosystem, you need to ensure that you are always on the most current version of your applications. Moving to a cloud-based solution enables you to always be on the latest version and have access to the latest innovative features of the application.
+                Votre application de conception et d\'ingénierie numérique est vieillissante et vous ne tirez pas parti des fonctionnalités les plus innovantes. Cela vous place derrière vos pairs du groupe Spécialiste du numérique. Afin de rester compétitif dans l\'économie numérique, d\'attirer les bons employés et d\'interagir efficacement avec votre écosystème, vous devez vous assurer de toujours avoir la version la plus récente de vos applications. Le passage à une solution basée sur le cloud vous permet de toujours avoir la dernière version et d\'accéder aux dernières fonctionnalités innovantes de l\'application.
             </p>
         </div>
     ',
     'digital-design-2-q6-5' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your digital design and engineering application is outdated. You are at risk of disruption by more agile competitors and you are not taking advantage of the most innovative features. This puts you far behind your Digital Improver peers. In order to stay competitive in the digital economy, attract the right employees and interact well with your ecosystem, you need to ensure that you are always on the most current version of your applications. Moving to a cloud-based solution enables you to always be on the latest version and have access to the latest innovative features of the application.
+                Votre application de conception et d\'ingénierie numérique est obsolète. Vous risquez d\'être dérangé par des concurrents plus souples et vous ne tirez pas parti des fonctionnalités les plus innovantes. Cela vous place derrière vos pairs du groupe Perfectionnement numérique. Afin de rester compétitif dans l\'économie numérique, d\'attirer les bons employés et d\'interagir efficacement avec votre écosystème, vous devez vous assurer de toujours avoir la version la plus récente de vos applications. Le passage à une solution basée sur le cloud vous permet de toujours avoir la dernière version et d\'accéder aux dernières fonctionnalités innovantes de l\'application.
             </p>
         </div>
     ',
@@ -1000,35 +1001,35 @@ return array(
     'digital-design-3-q6-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are using the latest versions of your digital design and engineering apps. This puts you at par with your Digital Native peers. You should focus on other areas of digital business or digital delivery to improve your digital maturity.
+                Vous utilisez les dernières versions de vos applications de conception numérique et d\'ingénierie. Vous êtes ainsi à la hauteur de vos pairs du groupe Natif numérique. Vous devez vous concentrer sur d\'autres domaines de l\'entreprise numérique ou de la livraison numérique pour améliorer votre maturité numérique.
             </p>
         </div>
     ',
     'digital-design-3-q6-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are using the latest versions of your digital design and engineering apps. This puts you at par with your Digital Native peers. You should focus on other areas of digital business or digital delivery to improve your digital maturity.
+                Vous utilisez les dernières versions de vos applications de conception numérique et d\'ingénierie. Vous êtes ainsi à la hauteur de vos pairs du groupe Natif numérique. Vous devez vous concentrer sur d\'autres domaines de l\'entreprise numérique ou de la livraison numérique pour améliorer votre maturité numérique.
             </p>
         </div>
     ',
     'digital-design-3-q6-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are not using the latest version of your digital design and engineering applications. This puts you behind your Digital Achiever peers. In order to stay competitive in the digital economy, attract the right employees and interact well with your ecosystem, you need to ensure that you are always on the most current version of your applications. Moving to a cloud-based solution enables you to always be on the latest version and have access to the latest innovative features of the application.
+                Vous n\'utilisez pas la dernière version de vos applications de conception numérique et d\'ingénierie. Cela vous place derrière vos pairs du groupe Spécialiste du numérique. Afin de rester compétitif dans l\'économie numérique, d\'attirer les bons employés et d\'interagir efficacement avec votre écosystème, vous devez vous assurer de toujours avoir la version la plus récente de vos applications. Le passage à une solution basée sur le cloud vous permet de toujours avoir la dernière version et d\'accéder aux dernières fonctionnalités innovantes de l\'application.
             </p>
         </div>
     ',
     'digital-design-3-q6-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your digital design and engineering application is aging and you are not taking advantage of the most innovative features. This puts you far behind your Digital Native peers. In order to stay competitive in the digital economy, attract the right employees and interact well with your ecosystem, you need to ensure that you are always on the most current version of your applications. Moving to a cloud-based solution enables you to always be on the latest version and have access to the latest innovative features of the application.
+                Votre application de conception et d\'ingénierie numérique est vieillissante et vous ne tirez pas parti des fonctionnalités les plus innovantes. Vous êtes ainsi loin derrière vos pairs du groupe Natif numérique. Afin de rester compétitif dans l\'économie numérique, d\'attirer les bons employés et d\'interagir efficacement avec votre écosystème, vous devez vous assurer de toujours avoir la version la plus récente de vos applications. Le passage à une solution basée sur le cloud vous permet de toujours avoir la dernière version et d\'accéder aux dernières fonctionnalités innovantes de l\'application.
             </p>
         </div>
     ',
     'digital-design-3-q6-5' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your digital design and engineering application is outdated. You are at risk of disruption by more agile competitors and you are not taking advantage of the most innovative features. This puts you far behind your Digital Native peers. In order to stay competitive in the digital economy, attract the right employees and interact well with your ecosystem, you need to ensure that you are always on the most current version of your applications. Moving to a cloud-based solution enables you to always be on the latest version and have access to the latest innovative features of the application.
+                Votre application de conception et d\'ingénierie numérique est obsolète. Vous risquez d\'être dérangé par des concurrents plus souples et vous ne tirez pas parti des fonctionnalités les plus innovantes. Vous êtes ainsi loin derrière vos pairs du groupe Natif numérique. Afin de rester compétitif dans l\'économie numérique, d\'attirer les bons employés et d\'interagir efficacement avec votre écosystème, vous devez vous assurer de toujours avoir la version la plus récente de vos applications. Le passage à une solution basée sur le cloud vous permet de toujours avoir la dernière version et d\'accéder aux dernières fonctionnalités innovantes de l\'application.
             </p>
         </div>
     ',
@@ -1036,7 +1037,7 @@ return array(
     'question7' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 font-bold text-dassault-blue-light">
-                Q7. On a scale of 1 to 5, how successfully does your Digital Design solution rate for the following? 
+                Q7. Sur une échelle de 1 à 5, quel est le taux de réussite de votre solution de conception numérique pour les éléments suivants ?
             </p>
         </div>
     ',
@@ -1044,28 +1045,28 @@ return array(
     'digital-design-1-q7-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your current digital design and engineering application does not support your digital business strategy. This puts you at par with your Digital Improver peers. You should evaluate either the latest version of your current application or an alternative application to get better reliability, performance, security, value for money, newer features, better collaboration and ecosystem integration. Having a modern digital design and engineering application solution is critical to digital business success, because collaboration internally with employees and externally with ecosystem partners requires a scalable and modern platform. You should consider moving to a cloud-based solution to improve the user experience and operational efficiency of your digital design and engineering application.
+                Votre application de conception et d\'ingénierie numérique actuelle ne prend pas en charge votre stratégie d\'entreprise numérique. Vous êtes ainsi à la hauteur de vos pairs du groupe Novice numérique. Vous devez évaluer la dernière version de votre application actuelle ou une autre application pour obtenir une meilleure fiabilité, des performances, une sécurité accrue, un meilleur rapport qualité/prix, des fonctionnalités plus récentes, une meilleure collaboration et une meilleure intégration de l\'écosystème. La mise en place d\'une solution d\'application de conception et d\'ingénierie numérique moderne est essentielle à la réussite de l\'entreprise numérique, car la collaboration en interne avec les employés et en externe avec les partenaires de l\'écosystème nécessite une plate-forme évolutive et moderne. Vous devez envisager de passer à une solution basée sur le cloud pour améliorer l\'expérience utilisateur et l\'efficacité opérationnelle de votre application de conception et d\'ingénierie numérique.
             </p>
         </div>
     ',
     'digital-design-1-q7-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your current digital design and engineering application does not support your digital business strategy. This puts you at par with your Digital Improver peers. You should evaluate either the latest version of your current application or an alternative application to get better reliability, performance, security, value for money, newer features, better collaboration and ecosystem integration. Having a modern digital design and engineering application solution is critical to digital business success, because collaboration internally with employees and externally with ecosystem partners requires a scalable and modern platform. You should consider moving to a cloud-based solution to improve the user experience and operational efficiency of your digital design and engineering application.
+                Votre application de conception et d\'ingénierie numérique actuelle ne prend pas en charge votre stratégie d\'entreprise numérique. Vous êtes ainsi à la hauteur de vos pairs du groupe Novice numérique. Vous devez évaluer la dernière version de votre application actuelle ou une autre application pour obtenir une meilleure fiabilité, des performances, une sécurité accrue, un meilleur rapport qualité/prix, des fonctionnalités plus récentes, une meilleure collaboration et une meilleure intégration de l\'écosystème. La mise en place d\'une solution d\'application de conception et d\'ingénierie numérique moderne est essentielle à la réussite de l\'entreprise numérique, car la collaboration en interne avec les employés et en externe avec les partenaires de l\'écosystème nécessite une plate-forme évolutive et moderne. Vous devez envisager de passer à une solution basée sur le cloud pour améliorer l\'expérience utilisateur et l\'efficacité opérationnelle de votre application de conception et d\'ingénierie numérique.
             </p>
         </div>
     ',
     'digital-design-1-q7-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your current digital design and engineering application supports your digital business strategy to some degree. This puts you ahead of your Digital Improver peers. To move even further ahead, you should evaluate either the latest version of your current application or an alternative application to get better reliability, performance, security, value for money, newer features, better collaboration and ecosystem integration. Having a modern digital design and engineering application solution is critical to digital business success, because collaboration internally with employees and externally with ecosystem partners requires a scalable and modern platform. You should consider moving to a cloud-based solution to improve the user experience and operational efficiency of your digital design and engineering application.
+                Votre application de conception et d\'ingénierie numérique actuelle ne prend pas en charge votre stratégie d\'entreprise numérique. Vous êtes ainsi à la hauteur de vos pairs du groupe Novice numérique. Vous devez évaluer la dernière version de votre application actuelle ou une autre application pour obtenir une meilleure fiabilité, des performances, une sécurité accrue, un meilleur rapport qualité/prix, des fonctionnalités plus récentes, une meilleure collaboration et une meilleure intégration de l\'écosystème. La mise en place d\'une solution d\'application de conception et d\'ingénierie numérique moderne est essentielle à la réussite de l\'entreprise numérique, car la collaboration en interne avec les employés et en externe avec les partenaires de l\'écosystème nécessite une plate-forme évolutive et moderne. Vous devez envisager de passer à une solution basée sur le cloud pour améliorer l\'expérience utilisateur et l\'efficacité opérationnelle de votre application de conception et d\'ingénierie numérique.
             </p>
         </div>
     ',
     'digital-design-1-q7-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your current digital design and engineering application supports your digital business very well. This puts you far ahead of your Digital Improver peers. You should focus on other aspects of digital business, digital design or digital delivery to improve your digital maturity.
+                Votre application de conception et d\'ingénierie numérique actuelle prend très bien en charge votre entreprise numérique. Vous êtes ainsi bien en avance sur vos pairs du groupe Novice numérique. Vous devez vous concentrer sur d\'autres aspects de l\'entreprise numérique, de la conception numérique ou de la livraison numérique pour améliorer votre maturité numérique.
             </p>
         </div>
     ',
@@ -1073,28 +1074,28 @@ return array(
     'digital-design-2-q7-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your current digital design and engineering application does not support your digital business strategy. This puts you behind your Digital Achiever peers. You should evaluate either the latest version of your current application or an alternative application to get better reliability, performance, security, value for money, newer features, better collaboration and ecosystem integration. Having a modern digital design and engineering application solution is critical to digital business success, because collaboration internally with employees and externally with ecosystem partners requires a scalable and modern platform. You should consider moving to a cloud-based solution to improve the user experience and operational efficiency of your digital design and engineering application.
+                Votre application de conception et d\'ingénierie numérique actuelle ne prend pas en charge votre stratégie d\'entreprise numérique. Cela vous place derrière vos pairs du groupe Spécialiste du numérique. Vous devez évaluer la dernière version de votre application actuelle ou une autre application pour obtenir une meilleure fiabilité, des performances, une sécurité accrue, un meilleur rapport qualité/prix, des fonctionnalités plus récentes, une meilleure collaboration et une meilleure intégration de l\'écosystème. La mise en place d\'une solution d\'application de conception et d\'ingénierie numérique moderne est essentielle à la réussite de l\'entreprise numérique, car la collaboration en interne avec les employés et en externe avec les partenaires de l\'écosystème nécessite une plate-forme évolutive et moderne. Vous devez envisager de passer à une solution basée sur le cloud pour améliorer l\'expérience utilisateur et l\'efficacité opérationnelle de votre application de conception et d\'ingénierie numérique.
             </p>
         </div>
     ',
     'digital-design-2-q7-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your current digital design and engineering application does not support your digital business strategy. This puts you behind your Digital Achiever peers. You should evaluate either the latest version of your current application or an alternative application to get better reliability, performance, security, value for money, newer features, better collaboration and ecosystem integration. Having a modern digital design and engineering application solution is critical to digital business success, because collaboration internally with employees and externally with ecosystem partners requires a scalable and modern platform. You should consider moving to a cloud-based solution to improve the user experience and operational efficiency of your digital design and engineering application.
+                Votre application de conception et d\'ingénierie numérique actuelle ne prend pas en charge votre stratégie d\'entreprise numérique. Cela vous place derrière vos pairs du groupe Spécialiste du numérique. Vous devez évaluer la dernière version de votre application actuelle ou une autre application pour obtenir une meilleure fiabilité, des performances, une sécurité accrue, un meilleur rapport qualité/prix, des fonctionnalités plus récentes, une meilleure collaboration et une meilleure intégration de l\'écosystème. La mise en place d\'une solution d\'application de conception et d\'ingénierie numérique moderne est essentielle à la réussite de l\'entreprise numérique, car la collaboration en interne avec les employés et en externe avec les partenaires de l\'écosystème nécessite une plate-forme évolutive et moderne. Vous devez envisager de passer à une solution basée sur le cloud pour améliorer l\'expérience utilisateur et l\'efficacité opérationnelle de votre application de conception et d\'ingénierie numérique.
             </p>
         </div>
     ',
     'digital-design-2-q7-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your current digital design and engineering application supports your digital business strategy to some degree. This puts you at par with your Digital Achiever peers. To move further ahead, you should evaluate either the latest version of your current application or an alternative application to get better reliability, performance, security, value for money, newer features, better collaboration and ecosystem integration. Having a modern digital design and engineering application solution is critical to digital business success, because collaboration internally with employees and externally with ecosystem partners requires a scalable and modern platform. You should consider moving to a cloud-based solution to improve the user experience and operational efficiency of your digital design and engineering application.
+                Votre application de conception et d\'ingénierie numérique actuelle soutient votre stratégie d\'entreprise numérique dans une certaine mesure. Vous êtes ainsi à la hauteur de vos pairs du groupe Spécialiste du numérique. Pour aller plus loin, vous devez évaluer la dernière version de votre application actuelle ou une autre application afin d\'améliorer la fiabilité, les performances, la sécurité, le rapport qualité/prix, les nouvelles fonctionnalités, une meilleure collaboration et l\'intégration de l\'écosystème. La mise en place d\'une solution d\'application de conception et d\'ingénierie numérique moderne est essentielle à la réussite de l\'entreprise numérique, car la collaboration en interne avec les employés et en externe avec les partenaires de l\'écosystème nécessite une plate-forme évolutive et moderne. Vous devez envisager de passer à une solution basée sur le cloud pour améliorer l\'expérience utilisateur et l\'efficacité opérationnelle de votre application de conception et d\'ingénierie numérique.
             </p>
         </div>
     ',
     'digital-design-2-q7-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your current digital design and engineering application supports your digital business very well. This puts you ahead of your Digital Achiever peers. You should focus on other aspects of digital business, digital design or digital delivery to improve your digital maturity.
+                Votre application de conception et d\'ingénierie numérique actuelle prend très bien en charge votre entreprise numérique. Vous êtes ainsi en tête de vos pairs du groupe Spécialiste du numérique. Vous devez vous concentrer sur d\'autres aspects de l\'entreprise numérique, de la conception numérique ou de la livraison numérique pour améliorer votre maturité numérique.
             </p>
         </div>
     ',
@@ -1102,42 +1103,42 @@ return array(
     'digital-design-3-q7-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your current digital design and engineering application does not support your digital business strategy. This puts you far behind your Digital Native peers. You should evaluate either the latest version of your current application or an alternative application to get better reliability, performance, security, value for money, newer features, better collaboration and ecosystem integration. Having a modern digital design and engineering application solution is critical to digital business success, because collaboration internally with employees and externally with ecosystem partners requires a scalable and modern platform. You should consider moving to a cloud-based solution to improve the user experience and operational efficiency of your digital design and engineering application.
+                Votre application de conception et d\'ingénierie numérique actuelle ne prend pas en charge votre stratégie d\'entreprise numérique. Vous êtes ainsi loin derrière vos pairs du groupe Natif numérique. Vous devez évaluer la dernière version de votre application actuelle ou une autre application pour obtenir une meilleure fiabilité, des performances, une sécurité accrue, un meilleur rapport qualité/prix, des fonctionnalités plus récentes, une meilleure collaboration et une meilleure intégration de l\'écosystème. La mise en place d\'une solution d\'application de conception et d\'ingénierie numérique moderne est essentielle à la réussite de l\'entreprise numérique, car la collaboration en interne avec les employés et en externe avec les partenaires de l\'écosystème nécessite une plate-forme évolutive et moderne. Vous devez envisager de passer à une solution basée sur le cloud pour améliorer l\'expérience utilisateur et l\'efficacité opérationnelle de votre application de conception et d\'ingénierie numérique.
             </p>
         </div>
     ',
     'digital-design-3-q7-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your current digital design and engineering application does not support your digital business strategy. This puts you far behind your Digital Native peers. You should evaluate either the latest version of your current application or an alternative application to get better reliability, performance, security, value for money, newer features, better collaboration and ecosystem integration. Having a modern digital design and engineering application solution is critical to digital business success, because collaboration internally with employees and externally with ecosystem partners requires a scalable and modern platform. You should consider moving to a cloud-based solution to improve the user experience and operational efficiency of your digital design and engineering application.
+                Votre application de conception et d\'ingénierie numérique actuelle ne prend pas en charge votre stratégie d\'entreprise numérique. Vous êtes ainsi loin derrière vos pairs du groupe Natif numérique. Vous devez évaluer la dernière version de votre application actuelle ou une autre application pour obtenir une meilleure fiabilité, des performances, une sécurité accrue, un meilleur rapport qualité/prix, des fonctionnalités plus récentes, une meilleure collaboration et une meilleure intégration de l\'écosystème. La mise en place d\'une solution d\'application de conception et d\'ingénierie numérique moderne est essentielle à la réussite de l\'entreprise numérique, car la collaboration en interne avec les employés et en externe avec les partenaires de l\'écosystème nécessite une plate-forme évolutive et moderne. Vous devez envisager de passer à une solution basée sur le cloud pour améliorer l\'expérience utilisateur et l\'efficacité opérationnelle de votre application de conception et d\'ingénierie numérique.
             </p>
         </div>
     ',
     'digital-design-3-q7-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your current digital design and engineering application supports your digital business strategy to some degree. This puts you behind your Digital Native peers. To catch up, you should evaluate either the latest version of your current application or an alternative application to get better reliability, performance, security, value for money, newer features, better collaboration and ecosystem integration. Having a modern digital design and engineering application solution is critical to digital business success, because collaboration internally with employees and externally with ecosystem partners requires a scalable and modern platform. You should consider moving to a cloud-based solution to improve the user experience and operational efficiency of your digital design and engineering application.
+                Votre application de conception et d\'ingénierie numérique actuelle soutient votre stratégie d\'entreprise numérique dans une certaine mesure. Cela vous place derrière vos pairs du groupe Natif numérique. Pour rattraper votre retard, vous devez évaluer la dernière version de votre application actuelle ou une autre application pour obtenir une meilleure fiabilité, des performances, une sécurité accrue, un meilleur rapport qualité/prix, des fonctionnalités plus récentes, une meilleure collaboration et une meilleure intégration de l\'écosystème. La mise en place d\'une solution d\'application de conception et d\'ingénierie numérique moderne est essentielle à la réussite de l\'entreprise numérique, car la collaboration en interne avec les employés et en externe avec les partenaires de l\'écosystème nécessite une plate-forme évolutive et moderne. Vous devez envisager de passer à une solution basée sur le cloud pour améliorer l\'expérience utilisateur et l\'efficacité opérationnelle de votre application de conception et d\'ingénierie numérique.
             </p>
         </div>
     ',
     'digital-design-3-q7-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your current digital design and engineering application supports your digital business very well. This puts you at par with your Digital Native peers. You should focus on other aspects of digital business, digital design or digital delivery to improve your digital maturity.
+                Votre application de conception et d\'ingénierie numérique actuelle prend très bien en charge votre entreprise numérique. Vous êtes ainsi à la hauteur de vos pairs du groupe Natif numérique. Vous devez vous concentrer sur d\'autres aspects de l\'entreprise numérique, de la conception numérique ou de la livraison numérique pour améliorer votre maturité numérique.
             </p>
         </div>
     ',
     
     'digital-deliveryintro' => '
-        <h2 class="w-4/5 ml-auto text-dassault-blue mb-6">DIGITAL DELIVERY</h2>
+        <h2 class="w-4/5 ml-auto text-dassault-blue mb-6">LIVRAISON NUMÉRIQUE</h2>
         <div class="clearfix">
             <div class="w-1/5 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 25mm;"></div>
             <div class="w-4/5 float-left">
                 <p class="mb-2">
-                    Digital Delivery is about the alignment of IT with the business. Is IT seen as an enabler of digital business strategies or is it just considered a necessary cost? Has IT embraced modern delivery tools like cloud or is everything delivered manually and with internal assets and resources? Getting IT processes and delivery models right is critical to provide the agility and flexibility that start ups and SMBs require to react quickly to changing business patterns and staffing levels, as well creating great experiences for employees, customers and ecosystem partners.
+                    La livraison numérique concerne l\'alignement de l\'informatique avec l\'entreprise. L\'informatique est-elle considérée comme un vecteur de stratégies d\'entreprise numérique ou est-elle simplement considérée comme un coût nécessaire ? Le service informatique a-t-il adopté des outils de livraison modernes tels que le cloud ou tout est-il livré manuellement et avec des actifs et ressources internes ? Il est essentiel d\'obtenir des processus informatiques et des modèles de livraison adaptés pour offrir la souplesse et la flexibilité dont les start-ups et les PME ont besoin pour réagir rapidement à l\'évolution des modèles commerciaux et des niveaux de personnel, tout en créant des expériences exceptionnelles pour les employés, les clients et les partenaires de l\'écosystème.
                 </p>
                 <p class="mb-2">
-                    This section of the report assesses the stage of your organization\'s Digital Maturity based on your ability to deliver digital design and engineering tools, how IT is perceived by top management and if cloud-based delivery models are being used.
+                    Cette section du rapport évalue l\'étape de la maturité numérique de votre entreprise en fonction de votre capacité à fournir des outils de conception et d\'ingénierie numérique, de la manière dont l\'informatique est perçue par la direction et de l\'utilisation de modèles de livraison basés sur le cloud.
                 </p>
             </div>
         </div>
@@ -1149,21 +1150,21 @@ return array(
     'digital-delivery-1-stage1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue mt-4 font-bold">
-                Your overall score for this section indicates that you are in line with your Digital Improver peers with respect to the progress you have made so far. You are at the beginning of your journey, so there are many areas you need to address. You can look in to individual assessment areas within this section to understand what changes you could potentially make to improve your digital maturity.
+                Votre score global pour cette section indique que vous êtes en phase avec vos pairs du groupe Novice numérique en ce qui concerne les progrès que vous avez réalisés jusqu\'à présent. Vous êtes au début de votre parcours, il y a donc de nombreux domaines à aborder. Vous pouvez consulter les domaines d\'évaluation individuels de cette section pour comprendre les changements que vous pourriez éventuellement apporter pour améliorer votre maturité numérique.
             </p>
         </div>
     ',
     'digital-delivery-1-stage2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue mt-4 font-bold">
-                Your overall score for this section indicates that you are ahead of your Digital Improver peers with respect to the progress you have made so far. Very well done! While keeping up with this, you must also look at aspects related to digital design and digital design to improve your overall digital maturity.
+                Votre score global pour cette section indique que vous êtes en avance sur vos pairs du groupe Novice numérique par rapport aux progrès que vous avez réalisés jusqu\'à présent. Très bien joué ! Tout en restant à jour, vous devez également examiner les aspects liés à l’entreprise numérique et à la conception numérique afin d\'améliorer votre maturité numérique globale.
             </p>
         </div>
     ',
     'digital-delivery-1-stage3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue mt-4 font-bold">
-                Your overall score for this section indicates that you are ahead of your Digital Improver peers with respect to the progress you have made so far. Very well done! While keeping up with this, you must also look at aspects related to digital business and digital design to improve your overall digital maturity.
+                Votre score global pour cette section indique que vous êtes en avance sur vos pairs du groupe Novice numérique par rapport aux progrès que vous avez réalisés jusqu\'à présent. Très bien joué ! Tout en restant à jour, vous devez également examiner les aspects liés à l\'entreprise numérique et à la conception numérique afin d\'améliorer votre maturité numérique globale.
             </p>
         </div>
     ',
@@ -1171,21 +1172,21 @@ return array(
     'digital-delivery-2-stage1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue mt-4 font-bold">
-                Your overall score for this section indicates that you are lagging behind your Digital Achiever peers with respect to your digital delivery approach. Digital delivery is an area that you should improve to catch up with your peers,  so you must take steps to accelerate the journey now. You should look in to individual assessment areas within this section to understand what changes you could potentially make to your digital delivery approach to improve your digital maturity.
+                Votre score global pour cette section indique que vous êtes en retard par rapport à d\'autres pairs du groupe Spécialiste du numérique en ce qui concerne votre approche Livraison numérique. La livraison numérique est un domaine que vous devez améliorer pour rattraper vos pairs. Vous devez donc prendre des mesures pour accélérer le mouvement dès maintenant. Vous devez examiner les domaines d\'évaluation individuels de cette section pour comprendre les changements que vous pourriez éventuellement apporter à votre approche de la livraison numérique afin d\'améliorer votre maturité numérique.
             </p>
         </div>
     ',
     'digital-delivery-2-stage2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue mt-4 font-bold">
-                Your overall score in this section indicates that you are in line with your Digital Achiever peers with respect to the progress you have made in making your business digital. You are well on your way, but don\'t think of stopping just yet. You can look into individual assessment areas within this section to understand what changes you could potentially make to your digital delivery capabilities for further progress in your digital maturity.
+                Votre score global dans cette section indique que vous êtes en phase avec vos pairs dans le domaine Spécialiste du numérique par rapport aux progrès que vous avez réalisés dans le domaine de la numérisation de votre entreprise. Vous avez beaucoup travaillé, mais vous ne devez pas vous arrêter maintenant. Vous pouvez consulter les domaines d\'évaluation individuels de cette section pour comprendre les changements que vous pourriez éventuellement apporter à vos capacités de livraison numérique afin de progresser davantage dans votre maturité numérique.
             </p>
         </div>
     ',
     'digital-delivery-2-stage3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue mt-4 font-bold">
-                Your overall score for this section indicates that you are ahead of your Digital Achiever peers with respect to the progress you have made. Very well done on your journey so far! While keeping up with this, you must also look at aspects related to digital business and digital design to improve your overall digital maturity.
+                Votre score global pour cette section indique que vous êtes en avance sur vos pairs dans le domaine Spécialiste du numérique par rapport aux progrès que vous avez réalisés. Bravo pour votre parcours jusqu\'à présent ! Tout en restant à jour, vous devez également examiner les aspects liés à l\'entreprise numérique et à la conception numérique afin d\'améliorer votre maturité numérique globale.
             </p>
         </div>
     ',
@@ -1193,7 +1194,7 @@ return array(
     'digital-delivery-3-stage1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue mt-4 font-bold">
-                Your overall score in this area indicates that you are lagging much behind other Digital Native peers in your digital delivery. You should look in to individual assessment areas within this section to understand what changes you could potentially make to your digital business approach. You have a lot of work to do so you should act urgently to address the areas of improvement. This will help you sustain your strong position with respect to your overall digital maturity.
+                Votre score global dans ce domaine indique que vous êtes bien en retard par rapport à d\'autres pairs du groupe Natif numérique dans vos capacités de livraison numérique. Vous devez vous intéresser aux domaines d\'évaluation individuels de cette section pour comprendre les changements que vous pourriez éventuellement apporter à votre approche Entreprise Numérique. Vous avez beaucoup de travail à faire. vous devez donc agir de toute urgence afin d\'aborder les domaines d\'amélioration. Cela vous aidera à maintenir une position solide par rapport à votre maturité numérique globale.
             </p>
         </div>
     ',
@@ -1201,7 +1202,7 @@ return array(
     'digital-delivery-3-stage2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue mt-4 font-bold">
-                Your overall score in this area indicates that you are lagging behind other Digital Native peers with regards to your digital delivery approach. You should look in to individual assessment areas within this section to understand what changes you could potentially make to your digital delivery approach. You have a lot of work to do so you should act urgently to address the areas of improvement. This will help sustain your strong position with respect to your overall digital maturity.
+                Votre score global dans ce domaine indique que vous êtes en retard par rapport à d\'autres pairs du groupe Natif numérique en ce qui concerne votre approche de la livraison numérique. Vous devez examiner les domaines d\'évaluation individuels de cette section pour comprendre les changements que vous pourriez éventuellement apporter à votre approche de la livraison numérique. Vous avez beaucoup de travail à faire. vous devez donc agir de toute urgence afin d\'aborder les domaines d\'amélioration. Cela vous aidera à maintenir une position solide par rapport à votre maturité numérique globale.
             </p>
         </div>
     ',
@@ -1209,7 +1210,7 @@ return array(
     'digital-delivery-3-stage3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue mt-4 font-bold">
-                Your overall score in this area indicates that you are in line with the digital native peers with respect to the progress you have made with regards to your digital delivery approach. While keeping up with this, you can look at areas of improvement if any, related to digital business and digital design to improve your overall digital maturity.
+                Votre score global dans ce domaine indique que vous êtes en phase avec vos pairs du groupe Natif numérique par rapport aux progrès que vous avez réalisés en ce qui concerne votre approche de la livraison numérique. Tout en restant à jour, vous pouvez examiner les domaines d\'amélioration, le cas échéant, liés à l\'entreprise numérique et à la conception numérique, afin d\'améliorer votre maturité numérique globale.
             </p>
         </div>
     ',
@@ -1221,7 +1222,7 @@ return array(
     'question8' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 font-bold text-dassault-blue-light">
-                Q8. How does the Senior Management of the company view the role of IT within the business?
+                Q8. Comment la direction générale de l\'entreprise considère-t-elle le rôle de l\'informatique au sein de l\'entreprise ?
             </p>
         </div>
     ',
@@ -1229,21 +1230,21 @@ return array(
     'digital-delivery-1-q8-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your senior management sees IT as a necessary evil that does not provide any significant value or differentiation. This puts you at par with your Digital Improver peers. Unfortunately, this perception usually leads to underinvestment in digital applications and IT infrastructure, which in turn creates a bad working experience for employees and leaves IT on the backfoot with regards to reacting to business requirements. To improve your digital delivery capabilities, create a proof of concept where you react fast to a business requirement and demonstrate that you can deliver digital innovation. Moving to a cloud-based delivery model also changes the dynamics internally, as you move from a CAPEX to an OPEX model, where the operating cost is closely aligned with the changes in the business. For example, if your staff levels are fluctuating significantly throughout the year, you can adjust the number of user licenses based on your actual staffing levels, which lets you react quickly to changes in the business without a huge upfront investment.
+                Votre direction considère l\'informatique comme un mal nécessaire qui n\'apporte aucune valeur ni différenciation significative. Vous êtes ainsi à la hauteur de vos pairs du groupe Novice numérique. Malheureusement, cette perception conduit généralement à un sous-investissement dans les applications numériques et l\'infrastructure informatique, ce qui crée une mauvaise expérience de travail pour les employés et laisse le service informatique en arrière-plan pour répondre aux besoins de l\'entreprise. Pour améliorer vos capacités de livraison numérique, créez une démonstration de faisabilité qui vous permet de réagir rapidement aux besoins de votre entreprise et de démontrer que vous pouvez proposer des innovations numériques. Le passage à un modèle de livraison basé sur le cloud modifie également la dynamique en interne, à mesure que vous passez d\'un modèle CAPEX à un modèle OPEX, où le coût d\'exploitation est étroitement aligné sur les changements de l\'entreprise. Par exemple, si vos niveaux de personnel fluctuent de manière significative tout au long de l\'année, vous pouvez ajuster le nombre de licences utilisateur en fonction de vos niveaux de personnel réels, ce qui vous permet de réagir rapidement aux changements de l\'entreprise sans investissement initial considérable.
             </p>
         </div>
     ',
     'digital-delivery-1-q8-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your senior management primarily sees IT as a means to improve business efficieny. This is the first step of digital transformation, where you use IT to improve your current business processes, but it is not real transformation. This puts you ahead of your Digital Improver peers. If you want to demonstrate real transformation driven by IT, you need to support digital business innovation, through providing a modern platform for collaboration, both internally and with the external ecosystem.
+                Votre direction principale considère principalement l\'informatique comme un moyen d\'améliorer l\'efficacité de l\'entreprise. Il s\'agit de la première étape de la transformation numérique, où vous utilisez l\'informatique pour améliorer vos processus d\'entreprise actuels, mais ce n\'est pas une véritable transformation. Cela vous place devant vos pairs du groupe Novice numérique. Si vous souhaitez faire preuve d\'une véritable transformation basée sur l\'informatique, vous devez soutenir l\'innovation numérique de l\'entreprise en fournissant une plate-forme moderne de collaboration, à la fois en interne et avec l\'écosystème externe.
             </p>
         </div>
     ',
     'digital-delivery-1-q8-5' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are lucky! Your senior management sees IT as a driver for differentiation and innovation, which usually leads to a positive investment climate for modern applications and delivery models. This puts you far ahead of your Digital Improver peers. 
+                Vous avez de la chance ! Votre direction considère l\'informatique comme un moteur de différenciation et d\'innovation, ce qui conduit généralement à un climat d\'investissement positif pour les applications modernes et les modèles de livraison. Vous êtes ainsi bien en avance sur vos pairs du groupe Novice numérique.
             </p>
         </div>
     ',
@@ -1252,21 +1253,21 @@ return array(
     'digital-delivery-2-q8-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your senior management sees IT as a necessary evil that does not provide any significant value or differentiation. This puts you behind your Digital Achiever peers. Unfortunately, this perception usually leads to underinvestment in digital applications and IT infrastructure, which in turn creates a bad working experience for employees and leaves IT on the backfoot with regards to reacting to business requirements. To improve your digital delivery capabilities, create a proof of concept where you react fast to a business requirement and demonstrate that you can deliver digital innovation. Moving to a cloud-based delivery model also changes the dynamics internally, as you move from a CAPEX to an OPEX model, where the operating cost is closely aligned with the changes in the business. For example, if your staff levels are fluctuating significantly throughout the year, you can adjust the number of user licenses based on your actual staffing levels, which lets you react quickly to changes in the business without a huge upfront investment.
+                Votre direction considère l\'informatique comme un mal nécessaire qui n\'apporte aucune valeur ni différenciation significative. Cela vous place derrière vos pairs du groupe Spécialiste du numérique. Malheureusement, cette perception conduit généralement à un sous-investissement dans les applications numériques et l\'infrastructure informatique, ce qui crée une mauvaise expérience de travail pour les employés et laisse le service informatique en arrière-plan pour répondre aux besoins de l\'entreprise. Pour améliorer vos capacités de livraison numérique, créez une démonstration de faisabilité qui vous permet de réagir rapidement aux besoins de votre entreprise et de démontrer que vous pouvez proposer des innovations numériques. Le passage à un modèle de livraison basé sur le cloud modifie également la dynamique en interne, à mesure que vous passez d\'un modèle CAPEX à un modèle OPEX, où le coût d\'exploitation est étroitement aligné sur les changements de l\'entreprise. Par exemple, si vos niveaux de personnel fluctuent de manière significative tout au long de l\'année, vous pouvez ajuster le nombre de licences utilisateur en fonction de vos niveaux de personnel réels, ce qui vous permet de réagir rapidement aux changements de l\'entreprise sans investissement initial considérable.
             </p>
         </div>
     ',
     'digital-delivery-2-q8-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your senior management primarily sees IT as a means to improve business efficieny. This is the first step of digital transformation, where you use IT to improve your current business processes, but it is not real transformation. This puts you at par with your Digital Achiever peers. If you want to demonstrate real transformation driven by IT, you need to support digital business innovation, through providing a modern platform for collaboration, both internally and with the external ecosystem.
+                Votre direction principale considère principalement l\'informatique comme un moyen d\'améliorer l\'efficacité de l\'entreprise. Il s\'agit de la première étape de la transformation numérique, où vous utilisez l\'informatique pour améliorer vos processus d\'entreprise actuels, mais ce n\'est pas une véritable transformation. Vous êtes ainsi à la hauteur de vos pairs du groupe Spécialiste du numérique. Si vous souhaitez faire preuve d\'une véritable transformation basée sur l\'informatique, vous devez soutenir l\'innovation numérique de l\'entreprise en fournissant une plate-forme moderne de collaboration, à la fois en interne et avec l\'écosystème externe.
             </p>
         </div>
     ',
     'digital-delivery-2-q8-5' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are lucky! Your senior management sees IT as a driver for differentiation and innovation, which usually leads to a positive investment climate for modern applications and delivery models. This puts you ahead of your Digital Achiever peers. 
+                Vous avez de la chance ! Votre direction considère l\'informatique comme un moteur de différenciation et d\'innovation, ce qui conduit généralement à un climat d\'investissement positif pour les applications modernes et les modèles de livraison. Vous êtes ainsi en tête de vos pairs du groupe Spécialiste du numérique.
             </p>
         </div>
     ',
@@ -1274,21 +1275,21 @@ return array(
     'digital-delivery-3-q8-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your senior management sees IT as a necessary evil that does not provide any significant value or differentiation. This puts you far behind your Digital Native peers. Unfortunately, this perception usually leads to underinvestment in digital applications and IT infrastructure, which in turn creates a bad working experience for employees and leaves IT on the backfoot with regards to reacting to business requirements. To improve your digital delivery capabilities, create a proof of concept where you react fast to a business requirement and demonstrate that you can deliver digital innovation. Moving to a cloud-based delivery model also changes the dynamics internally, as you move from a CAPEX to an OPEX model, where the operating cost is closely aligned with the changes in the business. For example, if your staff levels are fluctuating significantly throughout the year, you can adjust the number of user licenses based on your actual staffing levels, which lets you react quickly to changes in the business without a huge upfront investment.
+                Votre direction considère l\'informatique comme un mal nécessaire qui n\'apporte aucune valeur ni différenciation significative. Vous êtes ainsi loin derrière vos pairs du groupe Natif numérique. Malheureusement, cette perception conduit généralement à un sous-investissement dans les applications numériques et l\'infrastructure informatique, ce qui crée une mauvaise expérience de travail pour les employés et laisse le service informatique en arrière-plan pour répondre aux besoins de l\'entreprise. Pour améliorer vos capacités de livraison numérique, créez une démonstration de faisabilité qui vous permet de réagir rapidement aux besoins de votre entreprise et de démontrer que vous pouvez proposer des innovations numériques. Le passage à un modèle de livraison basé sur le cloud modifie également la dynamique en interne, à mesure que vous passez d\'un modèle CAPEX à un modèle OPEX, où le coût d\'exploitation est étroitement aligné sur les changements de l\'entreprise. Par exemple, si vos niveaux de personnel fluctuent de manière significative tout au long de l\'année, vous pouvez ajuster le nombre de licences utilisateur en fonction de vos niveaux de personnel réels, ce qui vous permet de réagir rapidement aux changements de l\'entreprise sans investissement initial considérable.
             </p>
         </div>
     ',
     'digital-delivery-3-q8-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your senior management primarily sees IT as a means to improve business efficieny. This is the first step of digital transformation, where you use IT to improve your current business processes, but it is not real transformation. This puts you behind your Digital Native peers. If you want to demonstrate real transformation driven by IT, you need to support digital business innovation, through providing a modern platform for collaboration, both internally and with the external ecosystem.
+                Votre direction principale considère principalement l\'informatique comme un moyen d\'améliorer l\'efficacité de l\'entreprise. Il s\'agit de la première étape de la transformation numérique, où vous utilisez l\'informatique pour améliorer vos processus d\'entreprise actuels, mais ce n\'est pas une véritable transformation. Cela vous place derrière vos pairs du groupe Natif numérique. Si vous souhaitez faire preuve d\'une véritable transformation basée sur l\'informatique, vous devez soutenir l\'innovation numérique de l\'entreprise en fournissant une plate-forme moderne de collaboration, à la fois en interne et avec l\'écosystème externe.
             </p>
         </div>
     ',
     'digital-delivery-3-q8-5' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                Your senior management sees IT as a driver for differentiation and innovation, which usually leads to a positive investment climate for modern applications and delivery models. This puts you at par with your Digital Native peers. 
+                Votre direction considère l\'informatique comme un moteur de différenciation et d\'innovation, ce qui conduit généralement à un climat d\'investissement positif pour les applications modernes et les modèles de livraison. Vous êtes ainsi à la hauteur de vos pairs du groupe Natif numérique.
             </p>
         </div>
     ',
@@ -1296,7 +1297,7 @@ return array(
     'question9' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 font-bold text-dassault-blue-light">
-                Q9. Please indicate how your organization is primarily delivering (or plans to deliver) each of the following application types to end users?
+                Q9. Veuillez indiquer dans quelle mesure votre entreprise fournit (ou prévoit de fournir) chacun des types d\'applications suivants aux utilisateurs finaux.
             </p>
         </div>
     ',
@@ -1304,28 +1305,28 @@ return array(
     'digital-delivery-1-q9-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are delivering most of your applications with in-house IT assets and resources. This puts you at par with your Digital Improver peers. As a start-up or SMB, you will have greater flexibility, agility and security, if you move to a cloud-based delivery model for your applications, instead of investing into in-house servers and storage. By moving to the cloud, you always have access to the latest features and functions, do not have to worry about sizing, implementing, operating and maintaining on-premise IT assets, and can scale up and down based on business demand instead of sizing the IT environment for peak performance.
+                Vous fournissez la plupart de vos applications avec des actifs et des ressources informatiques internes. Vous êtes ainsi à la hauteur de vos pairs du groupe Novice numérique. En tant que start-up ou PME, vous bénéficierez d\'une plus grande flexibilité, d\'une plus grande souplesse et d\'une sécurité accrue si vous optez pour un modèle de livraison basé sur le cloud pour vos applications, au lieu d\'investir dans des serveurs et des systèmes de stockage internes. En migrant vers le cloud, vous avez toujours accès aux dernières fonctionnalités et fonctions, vous n\'avez pas à vous soucier du dimensionnement, de la mise en œuvre, de l\'exploitation et de la maintenance des ressources informatiques sur site, et vous pouvez vous adapter en fonction des fluctuations de la demande de l\'entreprise au lieu de dimensionner l\'environnement informatique pour des performances optimales.
             </p>
         </div>
     ',
     'digital-delivery-1-q9-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are delivering most of your applications with in-house IT assets and resources as well as managed services. This puts you at par with your Digital Improver peers. As a start-up or SMB, you will have greater flexibility, agility and security, if you move to a cloud-based delivery model for your applications, instead of investing into in-house servers and storage. By moving to the cloud, you always have access to the latest features and functions, do not have to worry about sizing, implementing, operating and maintaining on-premise IT assets, and can scale up and down based on business demand instead of sizing the IT environment for peak performance.
+                Vous fournissez la plupart de vos applications avec des actifs et des ressources informatiques internes, ainsi que des services gérés. Vous êtes ainsi à la hauteur de vos pairs du groupe Novice numérique. En tant que start-up ou PME, vous bénéficierez d\'une plus grande flexibilité, d\'une plus grande souplesse et d\'une sécurité accrue si vous optez pour un modèle de livraison basé sur le cloud pour vos applications, au lieu d\'investir dans des serveurs et des systèmes de stockage internes. En migrant vers le cloud, vous avez toujours accès aux dernières fonctionnalités et fonctions, vous n\'avez pas à vous soucier du dimensionnement, de la mise en œuvre, de l\'exploitation et de la maintenance des ressources informatiques sur site, et vous pouvez vous adapter en fonction des fluctuations de la demande de l\'entreprise au lieu de dimensionner l\'environnement informatique pour des performances optimales.
             </p>
         </div>
     ',
     'digital-delivery-1-q9-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are primarily delivering your applications through external providers, either managed services or cloud services. This puts you ahead of your Digital Improver peers. Depending on the service level agreements (SLAs) that you have with your managed service provider, you are some flexibilty to react to changing business requirements and to adjust the number of users up and down as needed, which is critical to digital business success. You will also have access to innovative features at a regular cadence.
+                Vous livrez principalement vos applications via des fournisseurs externes, des services gérés ou des services cloud. Cela vous place devant vos pairs du groupe Novice numérique. En fonction des contrats de niveau de service (SLA) que vous avez avec votre fournisseur de services gérés, vous êtes suffisamment flexible pour réagir à l\'évolution des besoins de l\'entreprise et pour ajuster le nombre d\'utilisateurs à la hausse ou à la baisse selon les besoins, ce qui est essentiel à la réussite de l\'entreprise numérique. Vous aurez également accès régulièrement à des fonctionnalités innovantes.
             </p>
         </div>
     ',
     'digital-delivery-1-q9-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are mainly delivering your applications through a cloud-based delivery model. This puts you well ahead of your Digital Improver peers. You have continous access to the latest features and functions, can scale dynamically based on business demands and enable collobaration and innovation for your employees and with your ecoystem partners. You should look at other aspects in digital business or digital design to improve your digital maturity.
+                Vous livrez principalement vos applications via un modèle de diffusion basé sur le cloud. Cela vous place devant vos pairs du groupe Novice numérique. Vous disposez d\'un accès permanent aux dernières fonctionnalités et fonctions, vous pouvez évoluer de manière dynamique en fonction des exigences de l\'entreprise et favoriser la collaboration et l\'innovation pour vos employés et avec vos partenaires d\'écosystème. Vous devez examiner d\'autres aspects de l\'entreprise numérique ou de la conception numérique afin d\'améliorer votre maturité numérique.
             </p>
         </div>
     ',
@@ -1333,28 +1334,28 @@ return array(
     'digital-delivery-2-q9-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are delivering most of your applications with in-house IT assets and resources. This puts you behind your Digital Achiever peers. As a start-up or SMB, you will have greater flexibility, agility and security, if you move to a cloud-based delivery model for your applications, instead of investing into in-house servers and storage. By moving to the cloud, you always have access to the latest features and functions, do not have to worry about sizing, implementing, operating and maintaining on-premise IT assets, and can scale up and down based on business demand instead of sizing the IT environment for peak performance.
+                Vous fournissez la plupart de vos applications avec des actifs et des ressources informatiques internes. Cela vous place derrière vos pairs du groupe Spécialiste du numérique. En tant que start-up ou PME, vous bénéficierez d\'une plus grande flexibilité, d\'une plus grande souplesse et d\'une sécurité accrue si vous optez pour un modèle de livraison basé sur le cloud pour vos applications, au lieu d\'investir dans des serveurs et des systèmes de stockage internes. En migrant vers le cloud, vous avez toujours accès aux dernières fonctionnalités et fonctions, vous n\'avez pas à vous soucier du dimensionnement, de la mise en œuvre, de l\'exploitation et de la maintenance des ressources informatiques sur site, et vous pouvez vous adapter en fonction des fluctuations de la demande de l\'entreprise au lieu de dimensionner l\'environnement informatique pour des performances optimales.
             </p>
         </div>
     ',
     'digital-delivery-2-q9-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are delivering most of your applications with in-house IT assets and resources as well as managed services. This puts you behind your Digital Achiever peers. As a start-up or SMB, you will have greater flexibility, agility and security, if you move to a cloud-based delivery model for your applications, instead of investing into in-house servers and storage. By moving to the cloud, you always have access to the latest features and functions, do not have to worry about sizing, implementing, operating and maintaining on-premise IT assets, and can scale up and down based on business demand instead of sizing the IT environment for peak performance.
+                Vous fournissez la plupart de vos applications avec des actifs et des ressources informatiques internes, ainsi que des services gérés. Cela vous place derrière vos pairs du groupe Spécialiste du numérique. En tant que start-up ou PME, vous bénéficierez d\'une plus grande flexibilité, d\'une plus grande souplesse et d\'une sécurité accrue si vous optez pour un modèle de livraison basé sur le cloud pour vos applications, au lieu d\'investir dans des serveurs et des systèmes de stockage internes. En migrant vers le cloud, vous avez toujours accès aux dernières fonctionnalités et fonctions, vous n\'avez pas à vous soucier du dimensionnement, de la mise en œuvre, de l\'exploitation et de la maintenance des ressources informatiques sur site, et vous pouvez vous adapter en fonction des fluctuations de la demande de l\'entreprise au lieu de dimensionner l\'environnement informatique pour des performances optimales.
             </p>
         </div>
     ',
     'digital-delivery-2-q9-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are primarily delivering your applications through external providers, either managed services or cloud services. This puts you at par with your Digital Achiever peers. Depending on the service level agreements (SLAs) that you have with your managed service provider, you are some flexibilty to react to changing business requirements and to adjust the number of users up and down as needed, which is critical to digital business success. You will also have access to innovative features at a regular cadence.
+                Vous livrez principalement vos applications via des fournisseurs externes, des services gérés ou des services cloud. Vous êtes ainsi à la hauteur de vos pairs du groupe Spécialiste du numérique. En fonction des contrats de niveau de service (SLA) que vous avez avec votre fournisseur de services gérés, vous êtes suffisamment flexible pour réagir à l\'évolution des besoins de l\'entreprise et pour ajuster le nombre d\'utilisateurs à la hausse ou à la baisse selon les besoins, ce qui est essentiel à la réussite de l\'entreprise numérique. Vous aurez également accès régulièrement à des fonctionnalités innovantes.
             </p>
         </div>
     ',
     'digital-delivery-2-q9-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are mainly delivering your applications through a cloud-based delivery model. This puts you ahead of your Digital Achiever peers. You have continous access to the latest features and functions, can scale dynamically based on business demands and enable collobaration and innovation for your employees and with your ecoystem partners. You should look at other aspects in digital business or digital design to improve your digital maturity.
+                Vous livrez principalement vos applications via un modèle de diffusion basé sur le cloud. Vous êtes ainsi en tête de vos pairs du groupe Spécialiste du numérique. Vous disposez d\'un accès permanent aux dernières fonctionnalités et fonctions, vous pouvez évoluer de manière dynamique en fonction des exigences de l\'entreprise et favoriser la collaboration et l\'innovation pour vos employés et avec vos partenaires d\'écosystème. Vous devez examiner d\'autres aspects de l\'entreprise numérique ou de la conception numérique afin d\'améliorer votre maturité numérique.
             </p>
         </div>
     ',
@@ -1362,28 +1363,28 @@ return array(
     'digital-delivery-3-q9-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are delivering most of your applications with in-house IT assets and resources. This puts you far behind your Digital Native peers. As a start-up or SMB, you will have greater flexibility, agility and security, if you move to a cloud-based delivery model for your applications, instead of investing into in-house servers and storage. By moving to the cloud, you always have access to the latest features and functions, do not have to worry about sizing, implementing, operating and maintaining on-premise IT assets, and can scale up and down based on business demand instead of sizing the IT environment for peak performance.
+                Vous fournissez la plupart de vos applications avec des actifs et des ressources informatiques internes. Vous êtes ainsi loin derrière vos pairs du groupe Natif numérique. En tant que start-up ou PME, vous bénéficierez d\'une plus grande flexibilité, d\'une plus grande souplesse et d\'une sécurité accrue si vous optez pour un modèle de livraison basé sur le cloud pour vos applications, au lieu d\'investir dans des serveurs et des systèmes de stockage internes. En migrant vers le cloud, vous avez toujours accès aux dernières fonctionnalités et fonctions, vous n\'avez pas à vous soucier du dimensionnement, de la mise en œuvre, de l\'exploitation et de la maintenance des ressources informatiques sur site, et vous pouvez vous adapter en fonction des fluctuations de la demande de l\'entreprise au lieu de dimensionner l\'environnement informatique pour des performances optimales.
             </p>
         </div>
     ',
     'digital-delivery-3-q9-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are delivering most of your applications with in-house IT assets and resources as well as managed services. This puts you far behind your Digital Native peers. As a start-up or SMB, you will have greater flexibility, agility and security, if you move to a cloud-based delivery model for your applications, instead of investing into in-house servers and storage. By moving to the cloud, you always have access to the latest features and functions, do not have to worry about sizing, implementing, operating and maintaining on-premise IT assets, and can scale up and down based on business demand instead of sizing the IT environment for peak performance.
+                Vous fournissez la plupart de vos applications avec des actifs et des ressources informatiques internes, ainsi que des services gérés. Vous êtes ainsi loin derrière vos pairs du groupe Natif numérique. En tant que start-up ou PME, vous bénéficierez d\'une plus grande flexibilité, d\'une plus grande souplesse et d\'une sécurité accrue si vous optez pour un modèle de livraison basé sur le cloud pour vos applications, au lieu d\'investir dans des serveurs et des systèmes de stockage internes. En migrant vers le cloud, vous avez toujours accès aux dernières fonctionnalités et fonctions, vous n\'avez pas à vous soucier du dimensionnement, de la mise en œuvre, de l\'exploitation et de la maintenance des ressources informatiques sur site, et vous pouvez vous adapter en fonction des fluctuations de la demande de l\'entreprise au lieu de dimensionner l\'environnement informatique pour des performances optimales.
             </p>
         </div>
     ',
     'digital-delivery-3-q9-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are primarily delivering your applications through external providers, either managed services or cloud services. This puts you behind your Digital Native peers. Depending on the service level agreements (SLAs) that you have with your managed service provider, you are some flexibilty to react to changing business requirements and to adjust the number of users up and down as needed, which is critical to digital business success. You will also have access to innovative features at a regular cadence. If you want to be truly agile and competitive, you need to move to a cloud-based delivery model.
+                Vous livrez principalement vos applications via des fournisseurs externes, des services gérés ou des services cloud. Cela vous place derrière vos pairs du groupe Natif numérique. En fonction des contrats de niveau de service (SLA) que vous avez avec votre fournisseur de services gérés, vous êtes suffisamment flexible pour réagir à l\'évolution des besoins de l\'entreprise et pour ajuster le nombre d\'utilisateurs à la hausse ou à la baisse selon les besoins, ce qui est essentiel à la réussite de l\'entreprise numérique. Vous aurez également accès régulièrement à des fonctionnalités innovantes. Si vous souhaitez être vraiment souple et compétitif, vous devez passer à un modèle de livraison basé sur le cloud.
             </p>
         </div>
     ',
     'digital-delivery-3-q9-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are mainly delivering your applications through a cloud-based delivery model. This puts you at par with your Digital Achiever peers. You have continous access to the latest features and functions, can scale dynamically based on business demands and enable collobaration and innovation for your employees and with your ecoystem partners. You should look at other aspects in digital business or digital design to improve your digital maturity.
+                Vous livrez principalement vos applications via un modèle de diffusion basé sur le cloud. Vous êtes ainsi à la hauteur de vos pairs du groupe Spécialiste du numérique. Vous disposez d\'un accès permanent aux dernières fonctionnalités et fonctions, vous pouvez évoluer de manière dynamique en fonction des exigences de l\'entreprise et favoriser la collaboration et l\'innovation pour vos employés et avec vos partenaires d\'écosystème. Vous devez examiner d\'autres aspects de l\'entreprise numérique ou de la conception numérique afin d\'améliorer votre maturité numérique.
             </p>
         </div>
     ',
@@ -1391,7 +1392,7 @@ return array(
     'question10' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 font-bold text-dassault-blue-light">
-                Q10. Which statement best represents your organization\'s approach to adopting Cloud services for delivering IT services or applications?
+                Q10. Quelle affirmation représente le mieux l\'approche de votre entreprise en matière d\'adoption de services cloud pour la livraison de services ou d\'applications informatiques ?
             </p>
         </div>
     ',
@@ -1399,35 +1400,35 @@ return array(
     'digital-delivery-1-q10-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are running all applications in-house. This puts you at par with your Digital Improver peers. To improve your digital delivery capabilities, you should consider more flexible delivery models like the cloud. Cloud-based delivery models enable you to create a better alignment with business demands, as they scale up and down as needed and don\'t require an upfront investment.
+                Vous exécutez toutes les applications en interne. Vous êtes ainsi à la hauteur de vos pairs du groupe Novice numérique. Pour améliorer vos capacités de livraison numérique, vous devez envisager des modèles de diffusion plus flexibles, comme le cloud. Les modèles de livraison basés sur le cloud vous permettent de mieux vous aligner sur les exigences de l\'entreprise, car ils évoluent en fonction des besoins et ne nécessitent pas d\'investissement initial.
             </p>
         </div>
     ',
     'digital-delivery-1-q10-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are running most of your applications in-house. This puts you at par with your Digital Improver peers. To improve your digital delivery capabilities, you should consider more flexible delivery models like the cloud. Cloud-based delivery models enable you to create a better alignment with business demands, as they scale up and down as needed and don\'t require an upfront investment.
+                Vous exécutez la plupart de vos applications en interne. Vous êtes ainsi à la hauteur de vos pairs du groupe Novice numérique. Pour améliorer vos capacités de livraison numérique, vous devez envisager des modèles de diffusion plus flexibles, comme le cloud. Les modèles de livraison basés sur le cloud vous permettent de mieux vous aligner sur les exigences de l\'entreprise, car ils évoluent en fonction des besoins et ne nécessitent pas d\'investissement initial.
             </p>
         </div>
     ',
     'digital-delivery-1-q10-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are taking a best-fit approach as to where to place your applications and have both on-premise and cloud delivery capabilities. This puts you ahead of your Digital Improver peers. If you have a strong governance framework in place to guide your decisions about when to use the cloud and when not to use the cloud, you are on the right track. 
+                Vous adoptez une approche adaptée à l\'emplacement de vos applications et disposez de fonctionnalités de livraison sur site et dans le cloud. Cela vous place devant vos pairs du groupe Novice numérique. Si vous disposez d\'un cadre de gouvernance solide pour guider vos décisions concernant l\'utilisation du cloud et le moment où vous ne l\'utilisez pas, vous êtes sur la bonne voie.
             </p>
         </div>
     ',
     'digital-delivery-1-q10-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You have a cloud-first strategy, which puts you well ahead of your Digital Improver peers. You should look at other aspects within digital business, digital design and digital delivery to improve your digital maturity. 
+                Vous disposez d\'une stratégie axée sur le cloud, qui vous donne une longueur d\'avance sur vos pairs du groupe Novice numérique. Vous devez examiner d\'autres aspects de l\'entreprise numérique, de la conception numérique et de la livraison numérique pour améliorer votre maturité numérique. 
             </p>
         </div>
     ',
     'digital-delivery-1-q10-5' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You have a cloud-only strategy, which puts you well ahead of your Digital Improver peers. You should look at other aspects within digital business, digital design and digital delivery to improve your digital maturity. 
+                Vous disposez d\'une stratégie basée sur le cloud uniquement, ce qui vous place devant vos pairs du groupe Novice numérique. Vous devez examiner d\'autres aspects de l\'entreprise numérique, de la conception numérique et de la livraison numérique pour améliorer votre maturité numérique.
             </p>
         </div>
     ',
@@ -1435,35 +1436,35 @@ return array(
     'digital-delivery-2-q10-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are running all applications in-house. This puts you behind with your Digital Achiever peers. To improve your digital delivery capabilities, you should consider more flexible delivery models like the cloud. Cloud-based delivery models enable you to create a better alignment with business demands, as they scale up and down as needed and don\'t require an upfront investment.
+                Vous exécutez toutes les applications en interne. Cela vous place derrière vos pairs du groupe Spécialiste du numérique. Pour améliorer vos capacités de livraison numérique, vous devez envisager des modèles de diffusion plus flexibles, comme le cloud. Les modèles de livraison basés sur le cloud vous permettent de mieux vous aligner sur les exigences de l\'entreprise, car ils évoluent en fonction des besoins et ne nécessitent pas d\'investissement initial.
             </p>
         </div>
     ',
     'digital-delivery-2-q10-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are running most of your applications in-house. This puts you behind with your Digital Achiever peers. To improve your digital delivery capabilities, you should consider more flexible delivery models like the cloud. Cloud-based delivery models enable you to create a better alignment with business demands, as they scale up and down as needed and don\'t require an upfront investment.
+                Vous exécutez la plupart de vos applications en interne. Cela vous place derrière vos pairs du groupe Spécialiste du numérique. Pour améliorer vos capacités de livraison numérique, vous devez envisager des modèles de diffusion plus flexibles, comme le cloud. Les modèles de livraison basés sur le cloud vous permettent de mieux vous aligner sur les exigences de l\'entreprise, car ils évoluent en fonction des besoins et ne nécessitent pas d\'investissement initial.
             </p>
         </div>
     ',
     'digital-delivery-2-q10-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are taking a best-fit approach as to where to place your applications and have both on-premise and cloud delivery capabilities. This puts you at par with your Digital Achiever peers. If you have a strong governance framework in place to guide your decisions about when to use the cloud and when not to use the cloud, you are on the right track. 
+                Vous adoptez une approche adaptée à l\'emplacement de vos applications et disposez de fonctionnalités de livraison sur site et dans le cloud. Vous êtes ainsi à la hauteur de vos pairs du groupe Spécialiste du numérique. Si vous disposez d\'un cadre de gouvernance solide pour guider vos décisions concernant l\'utilisation du cloud et le moment où vous ne l\'utilisez pas, vous êtes sur la bonne voie.
             </p>
         </div>
     ',
     'digital-delivery-2-q10-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You have a cloud-first strategy, which puts you well ahead of your Digital Achiever peers. You should look at other aspects within digital business, digital design and digital delivery to improve your digital maturity. 
+                Vous disposez d\'une stratégie axée sur le cloud, qui vous donne une longueur d\'avance sur vos pairs du groupe Spécialiste du numérique. Vous devez examiner d\'autres aspects de l\'entreprise numérique, de la conception numérique et de la livraison numérique pour améliorer votre maturité numérique.
             </p>
         </div>
     ',
     'digital-delivery-2-q10-5' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You have a cloud-only strategy, which puts you well ahead of your Digital Achiever peers. You should look at other aspects within digital business, digital design and digital delivery to improve your digital maturity. 
+                Vous disposez d\'une stratégie basée sur le cloud uniquement, ce qui vous donne une longueur d\'avance sur vos pairs du groupe Spécialiste du numérique. Vous devez examiner d\'autres aspects de l\'entreprise numérique, de la conception numérique et de la livraison numérique pour améliorer votre maturité numérique.
             </p>
         </div>
     ',
@@ -1471,35 +1472,35 @@ return array(
     'digital-delivery-3-q10-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are running all applications in-house. This puts you far behind with your Digital Native peers. To improve your digital delivery capabilities, you should consider more flexible delivery models like the cloud. Cloud-based delivery models enable you to create a better alignment with business demands, as they scale up and down as needed and don\'t require an upfront investment.
+                Vous exécutez toutes les applications en interne. Cela vous place loin derrière vos pairs du groupe Natif numérique. Pour améliorer vos capacités de livraison numérique, vous devez envisager des modèles de diffusion plus flexibles, comme le cloud. Les modèles de livraison basés sur le cloud vous permettent de mieux vous aligner sur les exigences de l\'entreprise, car ils évoluent en fonction des besoins et ne nécessitent pas d\'investissement initial.
             </p>
         </div>
     ',
     'digital-delivery-3-q10-2' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are running most of your applications in-house. This puts you far behind with your Digital Native peers. To improve your digital delivery capabilities, you should consider more flexible delivery models like the cloud. Cloud-based delivery models enable you to create a better alignment with business demands, as they scale up and down as needed and don\'t require an upfront investment.
+                Vous exécutez la plupart de vos applications en interne. Cela vous place loin derrière vos pairs du groupe Natif numérique. Pour améliorer vos capacités de livraison numérique, vous devez envisager des modèles de diffusion plus flexibles, comme le cloud. Les modèles de livraison basés sur le cloud vous permettent de mieux vous aligner sur les exigences de l\'entreprise, car ils évoluent en fonction des besoins et ne nécessitent pas d\'investissement initial.
             </p>
         </div>
     ',
     'digital-delivery-3-q10-3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You are taking a best-fit approach as to where to place your applications and have both on-premise and cloud delivery capabilities. This puts you behind your Digital Native peers. If you have a strong governance framework in place to guide your decisions about when to use the cloud and when not to use the cloud, you are on the right track. 
+                Vous adoptez une approche adaptée à l\'emplacement de vos applications et disposez de fonctionnalités de livraison sur site et dans le cloud. Cela vous place derrière vos pairs du groupe Natif numérique. Si vous disposez d\'un cadre de gouvernance solide pour guider vos décisions concernant l\'utilisation du cloud et le moment où vous ne l\'utilisez pas, vous êtes sur la bonne voie.
             </p>
         </div>
     ',
     'digital-delivery-3-q10-4' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You have a cloud-first strategy, which puts you at par with your Digital Native peers. You should look at other aspects within digital business, digital design and digital delivery to improve your digital maturity. 
+                Vous disposez d\'une stratégie axée sur le cloud, ce qui vous place à la hauteur de vos pairs du groupe Natif numérique. Vous devez examiner d\'autres aspects de l\'entreprise numérique, de la conception numérique et de la livraison numérique pour améliorer votre maturité numérique.
             </p>
         </div>
     ',
     'digital-delivery-3-q10-5' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
-                You have a cloud-only strategy, which puts you at par with your Digital Native peers. You should look at other aspects within digital business, digital design and digital delivery to improve your digital maturity. 
+                Vous disposez d\'une stratégie axée uniquement sur le cloud, ce qui vous place à la hauteur de vos pairs du groupe Natif numérique. Vous devez examiner d\'autres aspects de l\'entreprise numérique, de la conception numérique et de la livraison numérique pour améliorer votre maturité numérique. 
             </p>
         </div>
     ',
@@ -1510,18 +1511,18 @@ return array(
         <div class="clearfix">
             <div class="w-1/5 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 25mm;"></div>
             <p class="w-4/5 float-left mb-2">
-                Thank you for taking this digital assessment. This demonstrates your ambition to succeed in your digital transformation strategies and is a good starting point to set you apart from your peers. We hope you have been able to identify the weaknesses and strength in your approach, and have some advice to make progress and develop a competitive edge. If you want to know more about the role of cloud in digital transformation in the engineering and digital design space, please check out the following report: https://discover.3ds.com/your-roadmap-digital-maturity
+                Merci d\'avoir passé cette évaluation numérique. Cela démontre votre volonté de réussir dans vos stratégies de transformation numérique et constitue un bon point de départ pour vous démarquer de vos pairs. Nous espérons que vous avez été en mesure d\'identifier les faiblesses et les forces de votre approche, et que vous avez trouvé des conseils pour progresser et prendre l’avantage sur vos concurrents. Si vous souhaitez en savoir plus sur le rôle du cloud dans la transformation numérique dans l\'espace d\'ingénierie et de conception numérique, consultez le rapport suivant : (lien)
             </p>
         </div>
     ',
 
     'guidance' => '
-        <h2 class="w-4/5 ml-auto text-dassault-blue mb-6">Essential Guidance</h2>
+        <h2 class="w-4/5 ml-auto text-dassault-blue mb-6">Principes essentiels</h2>
         <div class="clearfix">
             <div class="w-4/5 ml-auto clearfix mb-2">
                 <div class="float-left rounded-full w-8 h-8 border border-grey-dark font-bold text-grey text-lg text-center mr-2 pt-1">1</div>
                 <p class="float-left w-5/6">
-                    You should focus on further developing a strategic roadmap for the evolution of your WAN. Assess the current status of your network, and where you want it to be in the future. Prepare a gradual migration path that leverages the existing infrastructure where possible. Hybrid architectures, cloud connectivity, local Internet break-outs and network virtualization should feature prominently on this roadmap.
+                    Vous devez vous concentrer sur le développement d\'une feuille de route stratégique pour l\'évolution de votre réseau étendu. Évaluez l\'état actuel de votre réseau et où vous voulez qu\'il soit à l\'avenir. Préparez un chemin de migration progressif qui exploite l\'infrastructure existante dans la mesure du possible. Les architectures hybrides, la connectivité au cloud, les ruptures de connexion Internet locales et la virtualisation du réseau doivent être mises en évidence sur cette feuille de route.
                 </p>
             </div>
                 
@@ -1530,7 +1531,7 @@ return array(
             <div class="w-4/5 ml-auto clearfix mb-2">
                 <div class="float-left rounded-full w-8 h-8 border border-grey-dark font-bold text-grey text-lg text-center mr-2 pt-1">2</div>
                 <p class="float-left w-5/6">
-                    From an operational perspective the WAN is increasingly hampered by complexity, inefficiency and tedious processes which can make everyday tasks such as adding sites, updating policies or connecting to cloud services a real struggle. This prevents the network from delivering the desired business outcomes, like gaining agility, increasing productivity, and improving differentiation. Explore how centralization and automation can help you streamline your WAN operations.
+                    Du point de vue opérationnel, le réseau étendu est de plus en plus gêné par la complexité, l\'inefficacité et les processus fastidieux qui peuvent rendre les tâches quotidiennes telles que l\'ajout de sites, la mise à jour des stratégies ou la connexion aux services cloud difficiles. Cela empêche le réseau de fournir les résultats commerciaux souhaités, tels que l\'acquisition d\'une souplesse, l\'augmentation de la productivité et l\'amélioration de la différenciation. Découvrez comment la centralisation et l\'automatisation peuvent vous aider à rationaliser vos opérations de réseau étendu.
                 </p>
             </div>
                 
@@ -1541,7 +1542,7 @@ return array(
             <div class="w-4/5 ml-auto clearfix mb-2">
                 <div class="float-left rounded-full w-8 h-8 border border-grey-dark font-bold text-grey text-lg text-center mr-2 pt-1">3</div>
                 <p class="float-left w-5/6">
-                    SD-WAN has emerged as a solution that can integrate much of the above. The promise of SD-WAN is to deliver improved network and application performance, availability and visibility, particularly in a cloud environment, driving flexibility, while providing cost-effective bandwidth and reducing complexity. Start exploring today, if you haven\'t already, what benefits SD-WAN may or may not bring to your organization. 
+                    SD-WAN est apparu comme une solution pouvant intégrer une grande partie des éléments ci-dessus. La promesse du réseau SD-WAN est d\'améliorer les performances, la disponibilité et la visibilité du réseau et des applications, en particulier dans un environnement cloud, d\'accroître la flexibilité, tout en offrant une bande passante économique et en réduisant la complexité. Commencez à explorer dès aujourd\'hui, si vous ne l\'avez pas déjà fait, les avantages que le réseau SD-WAN peut ou non apporter à votre organisation.
                 </p>
             </div>
                 
@@ -1552,7 +1553,7 @@ return array(
             <div class="w-4/5 ml-auto clearfix mb-2">
                 <div class="float-left rounded-full w-8 h-8 border border-grey-dark font-bold text-grey text-lg text-center mr-2 pt-1">3</div>
                 <p class="float-left w-5/6">
-                    SD-WAN has emerged as a solution that can integrate much of the above. The promise of SD-WAN is to deliver improved network and application performance, availability and visibility, particularly in a cloud environment, driving flexibility, while providing cost-effective bandwidth and reducing complexity. Build on your early deployments of SD-WAN, and start plotting a roadmap toward a more widespread use of network virtualization that can help you reap the benefits in terms of flexibility and efficiency
+                    SD-WAN est apparu comme une solution pouvant intégrer une grande partie des éléments ci-dessus. La promesse du réseau SD-WAN est d\'améliorer les performances, la disponibilité et la visibilité du réseau et des applications, en particulier dans un environnement cloud, d\'accroître la flexibilité, tout en offrant une bande passante économique et en réduisant la complexité. Tirez parti de vos premiers déploiements SD-WAN et commencez à tracer une feuille de route vers une utilisation plus répandue de la virtualisation du réseau qui vous permettra de profiter des avantages en termes de flexibilité et d\'efficacité.
                 </p>
             </div>
                 
@@ -1563,7 +1564,7 @@ return array(
             <div class="w-4/5 ml-auto clearfix mb-2">
                 <div class="float-left rounded-full w-8 h-8 border border-grey-dark font-bold text-grey text-lg text-center mr-2 pt-1">3</div>
                 <p class="float-left w-5/6">
-                    SD-WAN has emerged as a solution that can integrate much of the above. The promise of SD-WAN is to deliver improved network and application performance, availability and visibility, particularly in a cloud environment, driving flexibility, while providing cost-effective bandwidth and reducing complexity.Looking ahead, SD-WAN should go hand in hand with virtual network services . Explore how you can leverage SD-WAN as the launching pad of a more widespread use of network virtualization that can help you reap the benefits in terms of flexibility and efficiency
+                    SD-WAN est apparu comme une solution pouvant intégrer une grande partie des éléments ci-dessus. La promesse du réseau SD-WAN est d\'améliorer les performances, la disponibilité et la visibilité du réseau et des applications, en particulier dans un environnement cloud, d\'accroître la flexibilité, tout en offrant une bande passante économique et en réduisant la complexité. À l\'avenir, le réseau SD-WAN doit être mis à la disposition des services de réseau virtuel. Découvrez comment tirer parti du réseau SD-WAN en tant que tremplin d\'une utilisation plus répandue de la virtualisation de réseau qui peut vous aider à tirer parti des avantages en termes de flexibilité et d\'efficacité
                 </p>
             </div>
                 

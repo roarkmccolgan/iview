@@ -39,6 +39,7 @@ return array(
     'twitterlink'=>'',
     'facebooklink'=>'',
     'linkedinlink'=>'',
+    'errorMarketing'=>'Bitte akzeptieren Sie, dass Sie Marketing von Dassault und seinen Geschäftspartnern erhalten möchten.',
 
     'size1' => '1',
     'size2' => '2 bis 9',

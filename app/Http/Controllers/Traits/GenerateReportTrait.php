@@ -2273,11 +2273,12 @@ trait GenerateReportTrait
             
             $customCopy.= trans(session('product.alias').'.question3');
             $q3score = $this->getQuestionScoreNew(4, 'digital-business', 3);
+
             if($q3score < 2){
                 $customCopy.= trans(session('product.alias').'.digital-business-'.$overallNumber.'-q3-1');
-            }elseif($q3score == 2){
+            }elseif($q3score >= 2 && $q3score < 3){
                 $customCopy.= trans(session('product.alias').'.digital-business-'.$overallNumber.'-q3-2');
-            }elseif($q3score == 3){
+            }elseif($q3score >= 3 && $q3score < 4){
                 $customCopy.= trans(session('product.alias').'.digital-business-'.$overallNumber.'-q3-3');
             }elseif($q3score >= 4){
                 $customCopy.= trans(session('product.alias').'.digital-business-'.$overallNumber.'-q3-4');
@@ -2287,9 +2288,9 @@ trait GenerateReportTrait
             $q4score = $this->getQuestionScoreNew(5, 'digital-business', 4);
             if($q4score < 2){
                 $customCopy.= trans(session('product.alias').'.digital-business-'.$overallNumber.'-q4-1');
-            }elseif($q4score == 2){
+            }elseif($q4score >= 2 && $q4score < 3){
                 $customCopy.= trans(session('product.alias').'.digital-business-'.$overallNumber.'-q4-2');
-            }elseif($q4score == 3){
+            }elseif($q4score >= 3 && $q4score < 4){
                 $customCopy.= trans(session('product.alias').'.digital-business-'.$overallNumber.'-q4-3');
             }elseif($q4score >= 4){
                 $customCopy.= trans(session('product.alias').'.digital-business-'.$overallNumber.'-q4-4');
@@ -2463,9 +2464,9 @@ trait GenerateReportTrait
 
             if($q9score < 2){
                 $customCopy.= trans(session('product.alias').'.digital-delivery-'.$overallNumber.'-q9-1');
-            }elseif($q9score == 2){
+            }elseif($q9score >= 2 && $q9score < 3){
                 $customCopy.= trans(session('product.alias').'.digital-delivery-'.$overallNumber.'-q9-2');
-            }elseif($q9score == 3){
+            }elseif($q9score >= 3 && $q9score < 4){
                 $customCopy.= trans(session('product.alias').'.digital-delivery-'.$overallNumber.'-q9-3');
             }elseif($q9score >= 4){
                 $customCopy.= trans(session('product.alias').'.digital-delivery-'.$overallNumber.'-q9-4');

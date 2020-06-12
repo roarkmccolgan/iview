@@ -28,10 +28,10 @@
 			<h2 class="font-light leading-tight">{{ $t('dassault.further-insight') }}</h2>
 		</div>
 		<div class="container mx-auto text-white">
-			<div class="flex flex-wrap -mx-3">
-				<div class="sm:w-1/2 px-3 mb-6">
+			<div class="flex flex-wrap -mx-3 items-stretch">
+				<div class="sm:w-1/2 px-3 mb-6 sm:mb-0">
 					<a class="no-underline text-current" @click.prevent="showVideo = true">
-						<div class="sm:flex bg-dassault-purple p-4">
+						<div class="sm:flex bg-dassault-purple p-4 h-full">
 							<div class="sm:w-1/2 mr-4 mb-2 sm:mb-0 cursor-pointer">
 								<img class="block" :src="'/images/tools/' + assessment.tool.id + '/video.png'" alt="">
 							</div>
@@ -48,9 +48,9 @@
 					</a>
 				</div>
 				<div class="sm:w-1/2 px-3">
-					<div class="sm:flex bg-dassault-purple p-4">
+					<div class="sm:flex bg-dassault-purple p-4 h-full">
 						<div class="sm:w-1/2 mr-4 mb-2 sm:mb-0">
-							<img class="block shadow" :src="'/images/tools/' + assessment.tool.id + '/infobites.png'" alt="">
+							<img class="block shadow" :src="'/images/tools/' + assessment.tool.id + '/infobites'+ assessment.locale +'.png'" alt="">
 						</div>
 						<div class="sm:flex sm:flex-col sm:w-1/2 text-sm">
 							<h3 class="leading-tight mb-2">{{ $t('dassault.driver-of') }}</h3>

@@ -1,0 +1,21 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1615.75 391.18">
+  <defs>
+    <linearGradient id="linear-gradient" x1="338.12" y1="227.04" x2="1614.87" y2="227.04" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#ccc"/>
+    </linearGradient>
+  </defs>
+  <title>comparison_businessfr</title>
+  <line x1="322.98" y1="0.04" x2="322.98" y2="323.54" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
+  <line x1="752.98" y1="0.04" x2="752.98" y2="323.54" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
+  <line x1="1184.98" y1="0.04" x2="1184.98" y2="323.54" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
+  <text transform="translate(114.5 191.26)" style="font-size: 37px;font-family: Helvetica">Entreprise<tspan x="-12.34" y="46">Numérique</tspan><tspan x="-43.18" y="92">Performance</tspan></text>
+  <line x1="0.37" y1="131.04" x2="1614.27" y2="131.04" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
+  <line x1="0.91" y1="324.04" x2="1614.8" y2="324.04" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
+  <rect x="338.12" y="145.02" width="1276.75" height="164.05" style="opacity: 0.5;fill: url(#linear-gradient)"/>
+  <text transform="translate(1342.63 376.12)" style="font-size: 32px;font-family: Helvetica"><tspan style="letter-spacing: -0.11083984375em">T</tspan><tspan x="16" y="0">on organisation</tspan></text>
+  <rect x="1278.87" y="343.88" width="41.67" height="41.67" style="fill: #132e44"/>
+  <text transform="translate(432.93 56.67)" style="font-size: 36.85363006591797px;font-family: Helvetica">Novice<tspan style="font-size: 26.131669998168945px;fill: #999"><tspan x="0" y="37.56">numérique</tspan></tspan></text>
+  <text transform="translate(864.03 56.67)" style="font-size: 36.85363006591797px;font-family: Helvetica">Spécialiste du<tspan style="font-size: 26.131669998168945px;fill: #999"><tspan x="0" y="37.56">numérique</tspan></tspan></text>
+  <text transform="translate(1295.12 56.67)" style="font-size: 36.85363006591797px;font-family: Helvetica">Natif<tspan style="font-size: 26.131669998168945px;fill: #999"><tspan x="0" y="37.56">numérique</tspan></tspan></text>
+</svg>
