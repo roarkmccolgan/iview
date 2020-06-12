@@ -23,12 +23,28 @@ return array(
     'title'=>'Dassault Systèmes Digital Maturity Assessment',
     'sub-title'=>'Wie digital ausgereift ist Ihr Unternehmen?',
     'landing'=>'
+        <h1 class="font-bold mb-2 leading-none">Sind Sie bereit für digitalen Erfolg?</h1>
         <p class="mb-2">
-            IDC, ein weltweit führender Anbieter von Marktinformationen auf dem Gebiet der Informationstechnologie, hat ein von Dassault Systèmes gesponsertes Assessment zur digitalen Reife entwickelt, um Start-ups und KMU, die sich auf digitales Design konzentrieren, bei der Einschätzung zu unterstützen, inwieweit sie in der Lage sind, den Anforderungen der Kunden in einem zunehmend schnelleren und wettbewerbsorientierteren Markt gerecht zu werden.
+            Durch den Wechsel zu einer Cloud-basierten Plattform können Start-ups und KMUs wie Sie Ihre Kredibilität bei Kunden, Investoren und Partnern ausbauen. So können Sie in Zukunft Schlüsselpersonen von Ihrem Unternehmen überzeugen und Innovationen kostengünstiger und nachhaltiger auf den Markt bringen.
         </p>
         <p class="mb-2">
-            Dieses Self-Assessment-Tool wird durch unabhängige End-User-Umfragen und die umfangreichen Kenntnisse von IDC in den Bereichen Cloud und Technologiemärkte unterstützt. Nach Abschluss einer kurzen Umfrage (weniger als 10 Minuten) erhalten Sie einen individuellen Report, der die digitale Reife Ihres Unternehmens bewertet und Ihnen wichtige und maßgeschneiderte Hinweise bietet, die Ihnen helfen, auf Ihrem digitalen Weg weiter voranzukommen, um den Anforderungen Ihrer anspruchsvollen Kunden besser gerecht zu werden.
-        </p>',
+            Kurz gesagt: Eine Plattform für digitales Design und Engineering in der Cloud ermöglicht es Ihnen, digitale Innovationen voranzutreiben und Ihr Unternehmen auf das nächste Level zu bringen.
+        </p>
+        <ul class="font-bold mb-4">
+            <li class="list-none">Doch wo steht Ihr Unternehmen auf dieser Reise?</li>
+            <li class="list-none">Wie können Sie digitale Technologien einsetzen, um Wachstum zu beschleunigen und Ihrer Branche voraus zu sein?</li>
+            <li class="list-none">Wo stehen Sie im Vergleich zur Konkurrenz und wo haben Sie Potential die Führung zu übernehmen?</li>
+        </ul>
+        <p class="mb-2">
+            IDC und Dassault Systèmes haben ein Assessment zur digitalen Reife erstellt, welches genau diese Fragen beantwortet.
+        </p>
+        <p class="mb-2">
+            Beantworten Sie eine kurze Reihe an Fragen und erfahren Sie, wie Sie im Vergleich zu ähnlichen Organisationen in Bezug auf Digitalisierung, Design und Cloud-Bereitstellung stehen. Selbstverständlich erhalten Sie einen übersichtlichen Bericht von uns, mit dem Sie Ihre Stärken und Schwächen identifizieren und wertvolle Schlüsse ziehen können.
+        </p>
+        <p class="font-bold">
+            Mit einem Klick auf „Assessment starten“ startet Ihre Reise. Wir wünschen viel Erfolg und spannende Einblicke!
+        </p>
+    ',
     'startbut'=>'Assessment starten',
     
     'send'=>'Auf Wunsch schicken wir die vollständigen Ergebnisse direkt an Ihren Posteingang.',
