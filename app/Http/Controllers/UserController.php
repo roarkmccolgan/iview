@@ -160,7 +160,10 @@ class UserController extends Controller
         //return $request->user();
         $register_token = $request->get('register_token');
         if ($register_token!=null) {
-            $user = User::where('register_token', $register_token)->firstOrFail();
+            $user = User::where('register_token', $register_token)->first();
+            if(is_null($user)){
+                return redirect('/login')->with('message', 'Look\'s like you\'ve already registered, please log in below');
+            }
 
             $data = [
             'user' => $user,

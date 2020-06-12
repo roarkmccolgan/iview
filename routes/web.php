@@ -24,7 +24,6 @@ Route::get('/italy', 'ItalyController@index');
 Route::get('/italy_pdf', 'ItalyController@pdf');
 
 Route::group(['prefix' => 'admin', 'middleware'=>['auth']], function () {
-
     Route::get('ga', 'AnalyticsController@index');
 
     //IVIEWS
