@@ -266,7 +266,7 @@ class AssessmentController extends Controller
             if(isset($assessment['result']) && $assessment['result'] != '[]'){
                 foreach ($assessment['result'] as $resKey => $result) {
                     if ($resKey!='overall') {
-                        if ($result['rating']) {
+                        if (isset($result['rating'])) {
                             $assessments[$assKey][trans($tool->alias.'.'.$resKey.'.title')] = trans($tool->alias.'.'.$result['rating']);
                         } else {
                             $assessments[$assKey][trans($tool->alias.'.'.$resKey.'.title')] = "";

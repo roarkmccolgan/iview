@@ -30,11 +30,11 @@ return [
                         'optionLabels' => [
                             'not at all',
                             'only used for tests/pilots',
+                            'for selected applications',
                             'only for new applications',
-                            'or selected applications',
                             'for most or all applications'
                         ],
-                        'question'=>'To what extent do you use the following technologies? ',
+                        'question'=>'To what extent do you use the following technologies?',
                         'name'=> 1,
                         'options'=>[
                             [
@@ -52,12 +52,12 @@ return [
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'only for new applications',
+                                        'label'=>'for selected applications',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'for selected applications',
+                                        'label'=>'only for new applications',
                                         'value'=>4,
                                         'checked'=>false,
                                     ],
@@ -83,12 +83,12 @@ return [
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'only for new applications',
+                                        'label'=>'for selected applications',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'for selected applications',
+                                        'label'=>'only for new applications',
                                         'value'=>4,
                                         'checked'=>false,
                                     ],
@@ -114,12 +114,12 @@ return [
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'only for new applications',
+                                        'label'=>'for selected applications',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'for selected applications',
+                                        'label'=>'only for new applications',
                                         'value'=>4,
                                         'checked'=>false,
                                     ],
@@ -145,12 +145,12 @@ return [
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'only for new applications',
+                                        'label'=>'for selected applications',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'for selected applications',
+                                        'label'=>'only for new applications',
                                         'value'=>4,
                                         'checked'=>false,
                                     ],
@@ -176,12 +176,12 @@ return [
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'only for new applications',
+                                        'label'=>'for selected applications',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'for selected applications',
+                                        'label'=>'only for new applications',
                                         'value'=>4,
                                         'checked'=>false,
                                     ],
@@ -207,12 +207,12 @@ return [
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'only for new applications',
+                                        'label'=>'for selected applications',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'for selected applications',
+                                        'label'=>'only for new applications',
                                         'value'=>4,
                                         'checked'=>false,
                                     ],
@@ -244,11 +244,11 @@ return [
                             '4',
                             '5 Essential',
                         ],
-                        'question'=>'How important are the following IT deployment models for the IT strategy and vision of your company?',
+                        'question'=>'How important are the following IT deployment models for the IT strategy and vision of your company? (Scale: 1 = not at all important, 7 = essential)',
                         'name'=> 2,
                         'options'=>[
                             [
-                                'label'=>'Infrastructure as a service (IaaS) ',
+                                'label'=>'Infrastructure as a service (IaaS)',
                                 'name'=> 2.1,
                                 'options'=>[
                                     [
@@ -341,7 +341,7 @@ return [
                                 ]
                             ],
                             [
-                                'label'=>'Private cloud (on-premise or hosted)',
+                                'label'=>'Private cloud (on premises or hosted)',
                                 'name'=> 2.4,
                                 'options'=>[
                                     [

@@ -15,14 +15,17 @@ return array(
     'sub-title'=>'Evaluate your Cloud Journey',
     'landing'=>'
         <p class="mb-2">
-            Welcome to the "journey to cloud" assessment tool. As you are progressing along your cloud transformation, it will be good to take stock and see how far you have come. The first step on the cloud journey is to move applications and data into the cloud, The second step is to build your own cloud-native applications or enhance existing ones and the third step is to manage a portfolio of multiple cloud services efficiently and setting up a cloud operating model. 
+            Welcome to the "journey to cloud" assessment tool. As you progress along your cloud transformation journey, it will be good to take stock and see how far you have come. The first step on the cloud journey is to move applications and data into the cloud; the second step is to build your own cloud-native applications or enhance existing ones; and the third step is to manage a portfolio of multiple cloud services efficiently and set up a cloud operating model.
         </p>
         <p class="mb-4">
-            This assessment will tell you for three categories, how far you have progressed and what the next steps on your journey are.<br/>These categories are <span class="text-ibm-blue">"Move"</span>, <span class="text-ibm-blue">"Build"</span> and <span class="text-ibm-blue">"Manage"</span>. Please click here to take the assessment.
+            This assessment will tell you how far you have progressed and what the next steps are on your journey in three categories — <span class="text-ibm-blue">"Move,"</span> <span class="text-ibm-blue">"Build,"</span> and <span class="text-ibm-blue">"Manage."</span>.
+        </p>
+        <p class="mb-4">
+            At the end of the assessment, you will receive a customized IDC report showing how you scored, where your strengths are, and which areas require more focus.
         </p>
         <div class="flex items-center">
             <h3 class="font-medium text-lg w-full sm:w-1/2 p-4 bg-grey-lighter">
-                As we enter the second wave of Cloud, more organizations are progressing towards Cloud enabled and Native estates.
+                As we enter the second wave of cloud, more organizations are progressing toward cloud enabled and native estates.
             </h3>
             <div class="sm:w-1/2">
                 <img src="/images/tools/16/data_point_6.png" alt="" class="w-full mx-auto sm:ml-10" />
@@ -32,7 +35,7 @@ return array(
             In what direction are you moving?
         </p>
         ',
-    'startbut'=>'Find out Now',
+    'startbut'=>'Click here to start this self-assessment.',
     
     'send'=>'We can send you the full results directly to your mailbox',
     'register'=>'Register now to receive your personalized report',
