@@ -18,7 +18,7 @@ class ItalyController extends Controller
 {
     public function index(Request $request)
     {
-        $tool = $request->get('product');
+        $tool = $request->session()->get('productObject');
         $utm = $request->utm;
         if ($utm) {
             $tracker = Tracker::where('tool_id', session('product.id'))

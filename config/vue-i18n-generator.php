@@ -40,6 +40,7 @@ return [
        'vmware',
        'sapagile',
        'ibmcloud',
+       'sapagileglobal',
     ],
 
     /*

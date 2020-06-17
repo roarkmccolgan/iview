@@ -165,7 +165,7 @@ class ToolController extends Controller
  */
     public function run(Request $request, $subdomain)
     {
-        $tool = $request->get('product');
+        $tool = $request->session()->get('productObject');
         if($tool->template=='nttsdwan'){
             return view('tool.'.session('template').'.expired', ['tool'=>$tool]);
         }
@@ -229,7 +229,7 @@ class ToolController extends Controller
         $totalQuestions = count($onlyQuestions);
         $return_visitor = $request->cookie('quiz_progress');
         $class = 'intro';
-        if ($tool->template=='nttsdwan' || $tool->template=='trendmicromssp' || $tool->template=='nttdata' || $tool->template=='dassault' || $tool->template=='hitachi' || $tool->template=='vmware' || $tool->template=='sapagile' || $tool->template=='ibmcloud') {
+        if ($tool->template=='nttsdwan' || $tool->template=='trendmicromssp' || $tool->template=='nttdata' || $tool->template=='dassault' || $tool->template=='hitachi' || $tool->template=='vmware' || $tool->template=='sapagile' || $tool->template=='ibmcloud' || $tool->template=='sapagileglobal') {
             $view = 'tool.'.session('template').'.assessment';
         } else {
             $view = 'tool.'.session('template').'.intro';
@@ -561,6 +561,7 @@ class ToolController extends Controller
 
     public function postComplete(SubmitAssessmentsRequest $request)
     {
+
         $this->loadQuestions();
         $this->howfit=Session::get('result');
         $this->baseline = Session::get('baseline');
@@ -754,13 +755,27 @@ class ToolController extends Controller
                     $message->to($emails)->subject($subject);
                 }
             );
-
+        $url = '';
+        if(session('product.id') == 16){
+            switch($request->input('country')){
+                case 'Denmark':
+                case 'Norway':
+                    $url = 'https://www.ibm.com/dk-en/cloud/yourcloud';
+                    break;
+                case 'Sweden':
+                case 'Finland':
+                    $url = 'https://www.ibm.com/se-en/cloud/yourcloud';
+                    break;
+                default:
+                    $url = 'https://www.ibm.com/cloud-computing/your-cloud';
+            }
+        }
         $vars = [
         'pagetitle' => trans(session('product.alias').'.title'),
         'title' => trans(session('product.alias').'.title'),
         'sub_title' => trans(session('product.alias').'.sub-title'),
         'heading' => trans(session('product.alias').'.complete_thankyou', ['fname'=>$request->input('fname')]),
-        'body' => trans(session('product.alias').'.complete_body'),
+        'body' => trans(session('product.alias').'.complete_body', ['url'=>$url, 'tool_url'=>session('url').'/'.session('localeUrl')]),
         'tweet' => config('baseline_'.session('product.id').'.overall.tweet') ? trans(session('product.alias').'.complete_tweet', ['result'=>trans(session('product.alias').'.'.$this->howfit['overall']['rating'])]):false,
         'class' => 'trans silverStone',
         'script' => ['
@@ -772,7 +787,7 @@ class ToolController extends Controller
 
         JavaScript::put([
             'locale' => session('locale'),
-            'tool' => $request->get('product'),
+            'tool' => $request->session()->get('productObject'),
         ]);
         Session::remove('questions');
         Session::remove('quiz_complete');
@@ -1113,7 +1128,7 @@ class ToolController extends Controller
 
     public function resendeloqua(Request $request)
     {
-        $tool= $request->get('product');
+        $tool= $request->session()->get('productObject');
         $from = false;
         if ($request->has('from')) {
             $from = Carbon::parse($request->input('from'));

@@ -26,7 +26,7 @@ class UserController extends Controller
         $user = $request->user();
         $user->load(['roles']);
 
-        $tool = $request->get('product');
+        $tool = $request->session()->get('productObject');
 
         if (($user->tools->contains($tool->id) && ($user->hasRole('admin') || $user->hasRole('client'))) || $user->hasRole('super')) {
             $tool->load(['users','company','urls']);
@@ -53,7 +53,7 @@ class UserController extends Controller
      */
     public function create(Request $request)
     {
-        $tool = $request->get('product');
+        $tool = $request->session()->get('productObject');
         $tool->load(['company']);
 
         $user = $request->user();
@@ -87,7 +87,7 @@ class UserController extends Controller
      */
     public function store(AddUserRequest $request)
     {
-        $tool = $request->get('product');
+        $tool = $request->session()->get('productObject');
         $url = $tool->urls->first();
 
         $existingUser = User::where('email', $request->input('email'))->first();

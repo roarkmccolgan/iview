@@ -4,9 +4,7 @@ return [
     'general'=>[
         'title' => 'General',
         'description' => '
-            <h2 class="font-black mt-4 sm:mt-0 text-yellow-light text-xl sm:text-3xl">General</h2>
-            <p class="mb-4">To set the foundation for the assessment, we will define the IT architectures and technologies you are using.</p>
-            ',
+            <p class="">To set the foundation for the assessment, we will define the IT architectures and technologies you are using.</p>',
         'nuggets' => [
             'skills.png',
             'customer.png',
@@ -244,7 +242,7 @@ return [
                             '4',
                             '5 Essential',
                         ],
-                        'question'=>'How important are the following IT deployment models for the IT strategy and vision of your company? (Scale: 1 = not at all important, 7 = essential)',
+                        'question'=>'How important are the following IT deployment models for the IT strategy and vision of your company?',
                         'name'=> 2,
                         'options'=>[
                             [
@@ -372,7 +370,7 @@ return [
                                 ]
                             ],
                             [
-                                'label'=>'Multi cloud management (connecting and managing workloads across multiple cloud platforms)',
+                                'label'=>'Multicloud management (connecting and managing workloads across multiple cloud platforms)',
                                 'name'=> 2.5,
                                 'options'=>[
                                     [
@@ -434,7 +432,7 @@ return [
                                 ]
                             ],
                             [
-                                'label'=>'Traditional on-premise IT',
+                                'label'=>'Traditional on-premises IT',
                                 'name'=> 2.7,
                                 'options'=>[
                                     [
@@ -473,8 +471,7 @@ return [
     'move' => [
         'title' => 'Move',
         'description' => '
-            <h2 class="font-black mt-4 sm:mt-0 text-yellow-light text-xl sm:text-3xl">Move</h2>
-            <p class="mb-4">Application modernization is a key step in digital transformation, because older applications do not provide the agility and adaptability necessary for today\'s business environment and customer expectations. Moving applications into a cloud environment, be it private cloud or public cloud, is an important step in application modernization. There are several different strategies for application modernization that make sense for different applications.
+            <p class="">Application modernization is a key step in digital transformation because older applications do not provide the agility and adaptability necessary for today\'s business environment and customer expections. Moving applications into a cloud environment, be it private cloud or public cloud, is an important step in application modernization. There are several different strategies for application modernization that make sense for different applications.
             </p>
             ',
         'nuggets' => [
@@ -484,16 +481,16 @@ return [
         ],
         'sectionintro' => [
             '
-                <p class="w-full mb-4">Application modernisation is a key step in digital transformation, because older applications do not provide the agility and adaptability necessary for today\'s business environment and customer expectations. Moving applications into a cloud environment, be it private cloud or public cloud, is an important step in application modernisation. There are several different strategies for application modernisation that make sense for different applications.</p>
+                <p class="w-full mb-4">Application modernization is a key step in digital transformation because older applications do not provide the agility and adaptability necessary for today\'s business environment and cPstomer expectations. Moving applications into a cloud environment, be it private cloud or public cloud, is an important step in application modernization. There are several different strategies for application modernization that make sense for different applications.</p>
             ',
             '
                 <div class="flex flex-wrap items-center">
-                    <h1 class="flex-1 font-light text-2xl sm:text-3xl leading-tight mb-2 p-4 bg-grey-lighter">6 out of ten Nordics organisations are currently modernising or plan to modernise their existing application environments</h1>
+                    <h1 class="flex-1 font-light text-2xl sm:text-3xl leading-tight mb-2 p-4 bg-grey-lighter">6 out of 10 Nordic organizations are currently modernizing or planning to modernize their existing application environments.</h1>
                     <img src="/images/tools/16/move_intro_data_point.png" class="w-full sm:w-1/2 sm:ml-8" />
                 </div>
             ',
             '
-                <p class="w-full my-4">Are you Modernizing your Application Environment?</p>
+                <p class="w-full my-4">Are you modernizing your application environment?</p>
             '
         ],
         'intermission' => [],
@@ -513,8 +510,8 @@ return [
                             'outputmax'=>25
                         ],
                         'optionLabels' => [
-                            'Traditional IT Infrastructure',
-                            'Private Cloud',
+                            'Traditional IT infrastructure',
+                            'Private cloud',
                             'IaaS',
                             'PaaS',
                             'SaaS'
@@ -527,12 +524,12 @@ return [
                                 'name'=> 3.01,
                                 'options'=>[
                                     [
-                                        'label'=>'Traditional IT Infrastructure',
+                                        'label'=>'Traditional IT infrastructure',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Private Cloud',
+                                        'label'=>'Private cloud',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
@@ -558,12 +555,12 @@ return [
                                 'name'=> 3.02,
                                 'options'=>[
                                     [
-                                        'label'=>'Traditional IT Infrastructure',
+                                        'label'=>'Traditional IT infrastructure',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Private Cloud',
+                                        'label'=>'Private cloud',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
@@ -589,12 +586,12 @@ return [
                                 'name'=> 3.03,
                                 'options'=>[
                                     [
-                                        'label'=>'Traditional IT Infrastructure',
+                                        'label'=>'Traditional IT infrastructure',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Private Cloud',
+                                        'label'=>'Private cloud',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
@@ -620,12 +617,12 @@ return [
                                 'name'=> 3.04,
                                 'options'=>[
                                     [
-                                        'label'=>'Traditional IT Infrastructure',
+                                        'label'=>'Traditional IT infrastructure',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Private Cloud',
+                                        'label'=>'Private cloud',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
@@ -651,12 +648,12 @@ return [
                                 'name'=> 3.05,
                                 'options'=>[
                                     [
-                                        'label'=>'Traditional IT Infrastructure',
+                                        'label'=>'Traditional IT infrastructure',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Private Cloud',
+                                        'label'=>'Private cloud',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
@@ -678,16 +675,16 @@ return [
                                 ]
                             ],
                             [
-                                'label'=>'File, Content & Collaboration ',
+                                'label'=>'File, Content, and Collaboration ',
                                 'name'=> 3.06,
                                 'options'=>[
                                     [
-                                        'label'=>'Traditional IT Infrastructure',
+                                        'label'=>'Traditional IT infrastructure',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Private Cloud',
+                                        'label'=>'Private cloud',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
@@ -713,12 +710,12 @@ return [
                                 'name'=> 3.07,
                                 'options'=>[
                                     [
-                                        'label'=>'Traditional IT Infrastructure',
+                                        'label'=>'Traditional IT infrastructure',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Private Cloud',
+                                        'label'=>'Private cloud',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
@@ -744,12 +741,12 @@ return [
                                 'name'=> 3.08,
                                 'options'=>[
                                     [
-                                        'label'=>'Traditional IT Infrastructure',
+                                        'label'=>'Traditional IT infrastructure',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Private Cloud',
+                                        'label'=>'Private cloud',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
@@ -775,12 +772,12 @@ return [
                                 'name'=> 3.09,
                                 'options'=>[
                                     [
-                                        'label'=>'Traditional IT Infrastructure',
+                                        'label'=>'Traditional IT infrastructure',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Private Cloud',
+                                        'label'=>'Private cloud',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
@@ -806,12 +803,12 @@ return [
                                 'name'=> 3.10,
                                 'options'=>[
                                     [
-                                        'label'=>'Traditional IT Infrastructure',
+                                        'label'=>'Traditional IT infrastructure',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Private Cloud',
+                                        'label'=>'Private cloud',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
@@ -856,7 +853,7 @@ return [
                             'Keep as is',
                             'Not Decided'
                         ],
-                        'question'=>'Which application modernisation strategy have you chosen?',
+                        'question'=>'Which application modernization strategy have you chosen?',
                         'name'=> 4,
                         'options'=>[
                             [
@@ -1065,7 +1062,7 @@ return [
                                 ]
                             ],
                             [
-                                'label'=>'File, Content & Collaboration ',
+                                'label'=>'File, content, and collaboration',
                                 'name'=> 4.06,
                                 'options'=>[
                                     [
@@ -1305,7 +1302,7 @@ return [
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'Achieve greater business agility',
+                                'label'=>'Achieving greater business agility',
                                 'value'=>3,
                                 'checked'=>false,
                             ],
@@ -1325,7 +1322,7 @@ return [
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'Support new business models',
+                                'label'=>'Supporting new business models',
                                 'value'=>4,
                                 'checked'=>false,
                             ],
@@ -1335,17 +1332,17 @@ return [
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'Utilize innovative services only available in cloud',
+                                'label'=>'Utilizing innovative services only available in cloud',
                                 'value'=>3,
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'Automation of business processes',
+                                'label'=>'Automating of business processes',
                                 'value'=>4,
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'Generate new revenue streams based on data',
+                                'label'=>'Generating new revenue streams based on data',
                                 'value'=>4,
                                 'checked'=>false,
                             ],
@@ -1358,9 +1355,8 @@ return [
     'build' => [
         'title' => 'Build',
         'description' => '
-            <h2 class="font-black mt-4 sm:mt-0 text-yellow-light text-xl sm:text-3xl">Build</h2>
-            <p class="mb-2">Digital transformation is mainly done through building highly scalable digital applications in the cloud and supporting them with digitized business processes. Modern applications built in the cloud are able to leverage the benefits of the cloud to then capitalize on other innovative technologies such as AI, cognitive, next-gen security, IoT and so on to become more intuitive, dynamic and responsive.</p>
-            <p class="mb-4">Many innovative services and digital features are also provided first from the cloud and developers using cloud-native tools and processes to build modern applications can leverage these new features early on to build a competitive advantage. </p>
+            <p class="mb-2">Digital transformation is mainly done through digitizing business processes and supporting them with digital applications developed in the cloud.</p>
+            <p class="">Many innovative services are also provided from the cloud first and developers are using cloud-native tools and processes. There are several different strategies for application modernization that make sense for different applications. </p>
         ',
         'background' => 'status.png',
         'nuggets' => [
@@ -1369,11 +1365,12 @@ return [
         ],
         'sectionintro' => [
             '
-                <p class="w-full mb-4">Digital transformation is mainly done through digitizing business processes and supporting them with digital applications developed in the cloud. Many innovative services are also provided from the cloud first and developers are using cloud-native tools and processes. There are several different strategies for application modernisation that make sense for different applications.</p>
+                <p class="w-full mb-4">Digital transformation is mainly done through digitizing business processes and supporting them with digital applications developed in the cloud. </p>
+                <p class="w-full mb-4">Many innovative services are also provided from the cloud first and developers are using cloud-native tools and processes. There are several different strategies for application modernization that make sense for different applications.</p>
             ',
             '
                 <div class="flex flex-wrap items-center">
-                    <h1 class="flex-1 font-light text-2xl sm:text-3xl leading-tight mb-2 p-4 bg-grey-lighter">DevOps methodologies are becoming the defacto standard for application development and deployment</h1>
+                    <h1 class="flex-1 font-light text-2xl sm:text-3xl leading-tight mb-2 p-4 bg-grey-lighter">DevOps methodologies are becoming the de facto standard for application development and deployment.</h1>
                     <img src="/images/tools/16/build_intro_data_point.png" class="w-full sm:w-1/2 sm:ml-8" />
                 </div>
             ',
@@ -1395,12 +1392,12 @@ return [
                             'outputmax'=>25
                         ],
                         'optionLabels' => [
-                            'Not Relevant',
-                            'No Plans',
-                            'Planning to Use',
-                            'Already Use'
+                            'Not relevant',
+                            'No plans',
+                            'Planning to use',
+                            'Already use'
                         ],
-                        'question'=>'How do you want to enhance your applications through the use of innovative technologies?',
+                        'question'=>'How do you want to enhance your applications using innovative technologies? ',
                         'name'=> 6,
                         'options'=>[
                             [
@@ -1408,48 +1405,48 @@ return [
                                 'name'=> 6.1,
                                 'options'=>[
                                     [
-                                        'label'=>'Not Relevant',
+                                        'label'=>'Not relevant',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'No Plans',
+                                        'label'=>'No plans',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Planning to Use',
+                                        'label'=>'Planning to use',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Already Use',
+                                        'label'=>'Already use',
                                         'value'=>3,
                                         'checked'=>false,
                                     ]
                                 ]
                             ],
                             [
-                                'label'=>'Add IoT and Edge applications',
+                                'label'=>'Add IoT and edge applications',
                                 'name'=> 6.2,
                                 'options'=>[
                                     [
-                                        'label'=>'Not Relevant',
+                                        'label'=>'Not relevant',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'No Plans',
+                                        'label'=>'No plans',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Planning to Use',
+                                        'label'=>'Planning to use',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Already Use',
+                                        'label'=>'Already use',
                                         'value'=>3,
                                         'checked'=>false,
                                     ]
@@ -1460,22 +1457,22 @@ return [
                                 'name'=> 6.3,
                                 'options'=>[
                                     [
-                                        'label'=>'Not Relevant',
+                                        'label'=>'Not relevant',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'No Plans',
+                                        'label'=>'No plans',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Planning to Use',
+                                        'label'=>'Planning to use',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Already Use',
+                                        'label'=>'Already use',
                                         'value'=>3,
                                         'checked'=>false,
                                     ]
@@ -1486,22 +1483,22 @@ return [
                                 'name'=> 6.4,
                                 'options'=>[
                                     [
-                                        'label'=>'Not Relevant',
+                                        'label'=>'Not relevant',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'No Plans',
+                                        'label'=>'No plans',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Planning to Use',
+                                        'label'=>'Planning to use',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Already Use',
+                                        'label'=>'Already use',
                                         'value'=>3,
                                         'checked'=>false,
                                     ]
@@ -1512,22 +1509,22 @@ return [
                                 'name'=> 6.5,
                                 'options'=>[
                                     [
-                                        'label'=>'Not Relevant',
+                                        'label'=>'Not relevant',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'No Plans',
+                                        'label'=>'No plans',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Planning to Use',
+                                        'label'=>'Planning to use',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Already Use',
+                                        'label'=>'Already use',
                                         'value'=>3,
                                         'checked'=>false,
                                     ]
@@ -1552,13 +1549,13 @@ return [
                             '2',
                             '3',
                             '4',
-                            '5 Very Applicable'
+                            '5 Very applicable'
                         ],
-                        'question'=>'To what extent does the following approaches reflect your application strategy?',
+                        'question'=>'To what extent do the following approaches reflect your application strategy?',
                         'name'=> 7,
                         'options'=>[
                             [
-                                'label'=>'We prefer to use standard off the shelf applications',
+                                'label'=>'We prefer to use standard off-the-shelf applications',
                                 'name'=> 7.1,
                                 'options'=>[
                                     [
@@ -1582,14 +1579,14 @@ return [
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'5 Very Applicable',
+                                        'label'=>'5 Very applicable',
                                         'value'=>1,
                                         'checked'=>false,
                                     ]
                                 ]
                             ],
                             [
-                                'label'=>'We prefer to customize off the shelf standard applications',
+                                'label'=>'We prefer to customize off-the-shelf standard applications',
                                 'name'=> 7.2,
                                 'options'=>[
                                     [
@@ -1613,7 +1610,7 @@ return [
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'5 Very Applicable',
+                                        'label'=>'5 Very applicable',
                                         'value'=>3,
                                         'checked'=>false,
                                     ]
@@ -1644,7 +1641,7 @@ return [
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'5 Very Applicable',
+                                        'label'=>'5 Very applicable',
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
@@ -1675,7 +1672,7 @@ return [
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'5 Very Applicable',
+                                        'label'=>'5 Very applicable',
                                         'value'=>4,
                                         'checked'=>false,
                                     ]
@@ -1696,29 +1693,29 @@ return [
                             'outputmax'=>25
                         ],
                         'optionLabels' => [
-                            'No Plans',
-                            'Planning to Use',
-                            'Currently Using'
+                            'No plans',
+                            'Planning to use',
+                            'Currently using'
                         ],
                         'question'=>'Which methodologies and tools are you using?',
                         'name'=> 8,
                         'options'=>[
                             [
-                                'label'=>'We use Devops methodologies',
+                                'label'=>'We use DevOps methodologies',
                                 'name'=> 8.1,
                                 'options'=>[
                                     [
-                                        'label'=>'No Plans',
+                                        'label'=>'No plans',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Planning to Use',
+                                        'label'=>'Planning to use',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Currently Using',
+                                        'label'=>'Currently using',
                                         'value'=>3,
                                         'checked'=>false,
                                     ]
@@ -1729,17 +1726,17 @@ return [
                                 'name'=> 8.2,
                                 'options'=>[
                                     [
-                                        'label'=>'No Plans',
+                                        'label'=>'No plans',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Planning to Use',
+                                        'label'=>'Planning to use',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Currently Using',
+                                        'label'=>'Currently using',
                                         'value'=>3,
                                         'checked'=>false,
                                     ]
@@ -1750,17 +1747,17 @@ return [
                                 'name'=> 8.3,
                                 'options'=>[
                                     [
-                                        'label'=>'No Plans',
+                                        'label'=>'No plans',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Planning to Use',
+                                        'label'=>'Planning to use',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Currently Using',
+                                        'label'=>'Currently using',
                                         'value'=>3,
                                         'checked'=>false,
                                     ]
@@ -1771,17 +1768,17 @@ return [
                                 'name'=> 8.4,
                                 'options'=>[
                                     [
-                                        'label'=>'No Plans',
+                                        'label'=>'No plans',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Planning to Use',
+                                        'label'=>'Planning to use',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Currently Using',
+                                        'label'=>'Currently using',
                                         'value'=>3,
                                         'checked'=>false,
                                     ]
@@ -1796,9 +1793,8 @@ return [
     'manage' => [
         'title' => 'Manage',
         'description' => '
-            <h2 class="font-black mt-4 sm:mt-0 text-yellow-light text-xl sm:text-3xl">Manage</h2>
-            <p class="mb-2">With existing applications being moved to the cloud and new services built in the cloud, a modern infrastructure is highly dynamic. Depending on development in the application estate, workloads and data need to be integrated and shifted to the most applicable platform – depending on cost, performance, compliance, etc.</p>
-            <p class="mb-4">In addition to having a suitable architecture, it is paramount to have appropriate tools and processes in place to orchestrate, optimize and govern the hybrid multi-cloud environment.</p>
+            <p class="mb-2">With existing applications being moved to the cloud and new services built in the cloud, a modern infrastructure is highly dynamic. Depending on development in the application estate, workloads and data need to be integrated and shifted to the most applicable platform — depending on cost, performance, compliance, and so on.</p>
+            <p class="">In addition to having a suitable architecture, it is paramount to have appropriate tools and processes in place to orchestrate, optimize, and govern the hybrid multicloud environment.</p>
         ',
         'background' => 'value.png',
         'nuggets' => [
@@ -1814,7 +1810,7 @@ return [
             ',
             '
                 <div class="flex flex-wrap items-center">
-                    <h1 class="flex-1 font-light text-2xl sm:text-3xl leading-tight mb-2 p-4 bg-grey-lighter">4 out of ten Nordics organisations are shifting workloads off their existing cloud platform</h1>
+                    <h1 class="flex-1 font-light text-2xl sm:text-3xl leading-tight mb-2 p-4 bg-grey-lighter">4 out of 10 Nordic organizations are shifting workloads off their existing cloud platform.</h1>
                     <img src="/images/tools/16/manage_intro_data_point.png" class="w-full sm:w-1/2 sm:ml-8" />
                 </div>
             ',
@@ -1836,21 +1832,21 @@ return [
                             'outputmax'=>18.75
                         ],
                         'optionLabels' => [
-                            '1 Disagree Completely',
+                            '1 Disagree completely',
                             '2',
                             '3',
                             '4',
-                            '5 Completely Agree'
+                            '5 Completely agree'
                         ],
-                        'question'=>'To what extent do you agree to the following statements about your ability to monitor and manage workloads across the infrastructure?',
+                        'question'=>'To what extent do you agree with the following statements about your ability to monitor and manage workloads across the infrastructure?',
                         'name'=> 9,
                         'options'=>[
                             [
-                                'label'=>'There is full transparency of resource utilisation, dataflows and cost across the infrastructure',
+                                'label'=>'There is full transparency of resource utilization, dataflows, and cost across the infrastructure',
                                 'name'=> 9.1,
                                 'options'=>[
                                     [
-                                        'label'=>'1 Disagree Completely',
+                                        'label'=>'1 Disagree completely',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
@@ -1870,18 +1866,18 @@ return [
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'5 Completely Agree',
+                                        'label'=>'5 Completely agree',
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
                                 ]
                             ],
                             [
-                                'label'=>'The management platform provides a vendor agonistic cohesive "single pane of glass"',
+                                'label'=>'The management platform provides a vendor-agonistic cohesive "single pane of glass"',
                                 'name'=> 9.2,
                                 'options'=>[
                                     [
-                                        'label'=>'1 Disagree Completely',
+                                        'label'=>'1 Disagree completely',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
@@ -1901,7 +1897,7 @@ return [
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'5 Completely Agree',
+                                        'label'=>'5 Completely agree',
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
@@ -1912,7 +1908,7 @@ return [
                                 'name'=> 9.3,
                                 'options'=>[
                                     [
-                                        'label'=>'1 Disagree Completely',
+                                        'label'=>'1 Disagree completely',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
@@ -1932,7 +1928,7 @@ return [
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'5 Completely Agree',
+                                        'label'=>'5 Completely agree',
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
@@ -1943,7 +1939,7 @@ return [
                                 'name'=> 9.4,
                                 'options'=>[
                                     [
-                                        'label'=>'1 Disagree Completely',
+                                        'label'=>'1 Disagree completely',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
@@ -1963,7 +1959,7 @@ return [
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'5 Completely Agree',
+                                        'label'=>'5 Completely agree',
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
@@ -1985,7 +1981,7 @@ return [
                         ],
                         'min'=>1,
                         'max'=>3,
-                        'question'=>'What are your main decision criteria for optimising your cloud environment? Select Top 3',
+                        'question'=>'What are your main decision criteria for optimizing your cloud environment? Select top 3',
                         'name'=> 10,
                         'options'=>[
                             [
@@ -2014,7 +2010,7 @@ return [
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'Business continuity / availability',
+                                'label'=>'Business continuity/availability',
                                 'value'=>2,
                                 'checked'=>false,
                             ],
@@ -2024,17 +2020,17 @@ return [
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'Time-to-market',
+                                'label'=>'Time to market',
                                 'value'=>3,
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'Business Innovation',
+                                'label'=>'Business innovation',
                                 'value'=>3,
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'Business Agility',
+                                'label'=>'Business agility',
                                 'value'=>3,
                                 'checked'=>false,
                             ]
@@ -2088,12 +2084,12 @@ return [
                         'name'=> 12,
                         'options'=>[
                             [
-                                'label'=>'Yes, already in place; ',
+                                'label'=>'Yes, already in place',
                                 'value'=>3,
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'No, but plan to do so; ',
+                                'label'=>'No, but plan to do so',
                                 'value'=>2,
                                 'checked'=>false,
                             ],

@@ -1,5 +1,5 @@
 <?php
-//DASSAULT
+//SAP
 return array(
     'elqFormName'=>'',
     'developedby'=>'Developed by',

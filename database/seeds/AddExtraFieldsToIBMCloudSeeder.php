@@ -24,5 +24,31 @@ class AddExtraFieldsToIBMCloudSeeder extends Seeder
             'created_at' => Carbon\Carbon::now(),
             'updated_at' => Carbon\Carbon::now()
         ]);
+        DB::table('extra_fields')->insert([
+            'tool_id' => '16',
+            'name' => 'marketing_phone',
+            'label' => 'Marketing Phone',
+            'options' => '',
+            'type' => 'boolean',
+            'trans' => 'marketingPhone',
+            'error' => 'errorMarketingPhone',
+            'required' => 0,
+            'order' => 1,
+            'created_at' => Carbon\Carbon::now(),
+            'updated_at' => Carbon\Carbon::now()
+        ]);
+        DB::table('extra_fields')->insert([
+            'tool_id' => '16',
+            'name' => 'marketing_email',
+            'label' => 'Marketing Email',
+            'options' => '',
+            'type' => 'boolean',
+            'trans' => 'marketingEmail',
+            'error' => 'errorMarketingEmail',
+            'required' => 0,
+            'order' => 1,
+            'created_at' => Carbon\Carbon::now(),
+            'updated_at' => Carbon\Carbon::now()
+        ]);
     }
 }

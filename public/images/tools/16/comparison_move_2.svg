@@ -7,11 +7,11 @@
   </defs>
   <title>comparison_move_2</title>
   <line x1="322.98" y1="50.04" x2="322.98" y2="567.54" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
-  <rect x="338.12" y="194.54" width="1276.75" height="354.47" style="opacity: 0.5;fill: url(#linear-gradient)"/>
+  <rect x="338.12" y="194.54" width="1276.75" height="354.48" style="opacity: 0.5;fill: url(#linear-gradient)"/>
   <line x1="752.98" y1="50.04" x2="752.98" y2="567.54" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
   <line x1="1184.98" y1="50.04" x2="1184.98" y2="567.54" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
-  <rect x="338.12" y="274.54" width="760.75" height="181" style="fill: #171717"/>
-  <text transform="translate(685.93 373.67)" style="font-size: 26.131669998168945px;fill: #fff;font-family: OpenSans, Open Sans">You are here</text>
+  <rect x="338.12" y="274.54" width="760.75" height="181" style="fill: #353535"/>
+  <text transform="translate(685.93 373.67)" style="font-size: 26px;fill: #fff;font-family: OpenSans, Open Sans">You are here</text>
   <line x1="0.37" y1="181.04" x2="1614.27" y2="181.04" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
   <text transform="translate(502.93 76.67)" style="font-size: 26.131669998168945px;fill: #999;font-family: OpenSans, Open Sans">Cloud<tspan style="font-size: 36.85363006591797px;fill!: #000"><tspan x="0" y="37.56">Experimenter</tspan></tspan></text>
   <text transform="translate(934.03 76.67)" style="font-size: 26.131669998168945px;fill: #999;font-family: OpenSans, Open Sans">Cloud<tspan style="font-size: 36.85363006591797px;fill!: #000"><tspan x="0" y="36">Optimizer</tspan></tspan></text>
@@ -102,5 +102,5 @@
     <line x1="1120.87" y1="365.04" x2="1173.78" y2="365.04" style="fill: none;stroke: #006afb;stroke-miterlimit: 10;stroke-width: 7px"/>
     <polygon points="1208.87 365.04 1159.43 385.25 1171.16 365.04 1159.43 344.84 1208.87 365.04" style="fill: #006afb"/>
   </g>
-  <text transform="translate(1240.01 278.7)" style="font-size: 24px;font-family: OpenSans, Open Sans">High business agility and <tspan x="0" y="26">resiliency due to a seamless </tspan><tspan x="0" y="52">hybrid and multicloud </tspan><tspan x="0" y="78">platform</tspan><tspan x="0" y="128">Great customer, employee, </tspan><tspan x="0" y="154">and partner experience due </tspan><tspan x="0" y="180">to modern applications</tspan></text>
+  <text transform="translate(1240.01 254.42)" style="font-size: 26px;font-family: OpenSans, Open Sans">High business agility and <tspan x="0" y="30">resiliency due to a </tspan><tspan x="0" y="60">seamless hybrid and </tspan><tspan x="0" y="90">multicloud platform</tspan><tspan x="0" y="144">Great customer, employee, </tspan><tspan x="0" y="174">and partner experience </tspan><tspan x="0" y="204">due to modern </tspan><tspan x="0" y="234">applications</tspan></text>
 </svg>

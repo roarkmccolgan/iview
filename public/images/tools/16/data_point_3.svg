@@ -1,8 +1,8 @@
 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 414.04 310.27">
   <title>data_point_3</title>
-  <text transform="translate(10.02 14.7)" style="font-size: 14px;font-family: OpenSans-Bold, Open Sans;font-weight: 700">What type of Cloud [infrastructure] solution does<tspan x="0" y="16.8">your organization deploy?</tspan></text>
+  <text transform="translate(10.02 14.7)" style="font-size: 14px;font-family: OpenSans-Bold, Open Sans;font-weight: 700">Cloud infrastructure adoption in Nordic organisations</text>
   <circle cx="149.49" cy="170.5" r="107.5" style="fill: #2abab5"/>
-  <circle cx="265.37" cy="170.5" r="68.68" style="fill: #353535;fill-opacity: 0.30000000000000004"/>
+  <circle cx="277.78" cy="170.5" r="81.09" style="fill: #353535;fill-opacity: 0.30000000000000004"/>
   <text transform="translate(71.25 185.08)" style="font-size: 14px;font-family: OpenSans-Bold, Open Sans;font-weight: 700">Public cloud<tspan x="0" y="16.8">only</tspan></text>
   <text transform="translate(278.25 185.08)" style="font-size: 14px;font-family: OpenSans-Bold, Open Sans;font-weight: 700">Private<tspan x="0" y="16.8">cloud</tspan><tspan x="0" y="33.6">only</tspan></text>
   <text transform="translate(207.25 185.08)" style="font-size: 14px;font-family: OpenSans-Bold, Open Sans;font-weight: 700">Both</text>

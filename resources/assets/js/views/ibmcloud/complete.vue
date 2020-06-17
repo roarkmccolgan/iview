@@ -102,20 +102,31 @@
 										<p class="text-red text-xs italic" v-show="errors.country" v-html="$t('ibmcloud.leadgen.errorCountry')"></p>
 									</div>
 								</div>
-								<div class="mb-6 w-full">
-									<label :class="[marketing ? activeClass : normalClass, errors.marketing ? 'border-red bg-red-lightest' : '']" tabindex="0" @keyup.space="$event.target.click()" >
-										<input class="hidden" type="checkbox" id="marketing" name="extra[marketing]" v-model="marketing">
+								<div class="mb-6 w-full p-2 bg-white leading-tight">
+									<p v-html="$t('ibmcloud.marketing')"></p>
+									<label class="my-2" :class="[marketingPhone ? activeClass : normalClass, errors.marketingPhone ? 'border-red bg-red-lightest' : '']" tabindex="0" @keyup.space="$event.target.click()" >
+										<input class="hidden" type="checkbox" id="marketingPhone" name="extra[marketing_phone]" v-model="marketingPhone">
 										<div class="flex items-baseline">
 											<div class="mr-2 text-2xl sm:text-xl">
-												<font-awesome-icon :icon="icons.faSquare" v-if="!marketing" />
+												<font-awesome-icon :icon="icons.faSquare" v-if="!marketingPhone" />
 												<font-awesome-icon :icon="icons.faCheckSquare" v-else />
 											</div>
-											<div class="flex-grow" v-html="$t('ibmcloud.marketing')">
-												
-											</div>
+											<div class="flex-grow" v-html="$t('ibmcloud.marketing-phone')"></div>
 										</div>
-										<p class="text-red text-xs italic" v-show="errors.marketing" v-html="$t('general.errorMarketing')"></p>
+										<p class="text-red text-xs italic" v-show="errors.marketingPhone" v-html="$t('general.errorMarketingPhone')"></p>
 									</label>
+									<label class="my-2" :class="[marketingEmail ? activeClass : normalClass, errors.marketingEmail ? 'border-red bg-red-lightest' : '']" tabindex="0" @keyup.space="$event.target.click()" >
+										<input class="hidden" type="checkbox" id="marketingEmail" name="extra[marketing_email]" v-model="marketingEmail">
+										<div class="flex items-baseline">
+											<div class="mr-2 text-2xl sm:text-xl">
+												<font-awesome-icon :icon="icons.faSquare" v-if="!marketingEmail" />
+												<font-awesome-icon :icon="icons.faCheckSquare" v-else />
+											</div>
+											<div class="flex-grow" v-html="$t('ibmcloud.marketing-email')"></div>
+										</div>
+										<p class="text-red text-xs italic" v-show="errors.marketingEmail" v-html="$t('general.errorMarketingEmail')"></p>
+									</label>
+									<p class="text-sm mt-2" v-html="$t('ibmcloud.marketing-1')"></p>
 								</div>
 								<div class="mb-6 w-full">
 									<label :class="[terms ? activeClass : normalClass, errors.terms ? 'border-red bg-red-lightest' : '']" tabindex="0" @keyup.space="$event.target.click()" @click="checkTerms">
@@ -163,6 +174,8 @@ export default{
 				faSyncAlt: faSyncAlt,
 			},
 			marketing: false,
+			marketingPhone: false,
+			marketingEmail: false,
 			terms: false,
 			normalClass: {
 				'block': true,
@@ -173,8 +186,8 @@ export default{
 				'shadow': true,
 				'hover:bg-grey-dark': true,
 				'hover:text-white': true,
-				'py-4': true,
-				'px-6': true,
+				'py-2': true,
+				'px-3': true,
 				'no-underline': true
 			},
 			activeClass: {

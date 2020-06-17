@@ -28,7 +28,7 @@ class AssessmentController extends Controller
         $user = $request->user();
         $user->load(['roles']);
 
-        $tool = $request->get('product');
+        $tool = $request->session()->get('productObject');
         if ($user->tools->contains($tool->id) || $user->hasRole('super')) {
             $tool->load(['assessments' => function ($query) {
                 $query->orderBy('created_at', 'asc');
@@ -197,7 +197,7 @@ class AssessmentController extends Controller
             return $data;
         }
             //return $request->input();
-        $tool = $request->get('product');
+        $tool = $request->session()->get('productObject');
 
         if ($request->input('new')=='false') {
             $tool->load(['assessments' => function ($query) use ($request) {

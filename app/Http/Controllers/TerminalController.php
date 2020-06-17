@@ -24,7 +24,7 @@ class TerminalController extends Controller
     public function dashboard(Request $request)
     {
         //return Auth::user();
-        $tool = $request->get('product');
+        $tool = $request->session()->get('productObject');
         Analytics::setSiteId('ga:'.$tool->gapropertyid);
         $terminalQueries = Config::get('terminal.queries');
 

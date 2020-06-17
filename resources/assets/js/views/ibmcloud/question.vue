@@ -32,7 +32,19 @@
 								<span class="text-sm text-white leading-tight">{{currentQuestion.title | toTitle}} <br/> {{ $t('general.question') | toTitle}} {{currentQuestion.section_info.number}} {{$t('general.of')}} {{currentQuestion.section_info.total}}</span>
 							</div>
 						</div>
-						<div class="py-4 sm:py-8 text-white" v-html="currentQuestion.description"></div>
+						<div class="py-4 sm:py-8 text-white flex items-center">
+							<h2 class="font-black sm:mt-0 text-yellow-light text-xl sm:text-3xl">{{ currentQuestion.title }}</h2>
+							<v-popover
+								offset="16"
+								placement="right"
+								>
+								<div class="rounded-full ml-3 w-6 h-6 border leading-none p-1 font-bold overflow-hidden text-center border-white text-white cursor-pointer align-middle">?</div>
+								<template slot="popover">
+									<a v-close-popover class="block text-right mb-2">Close</a>
+									<div class="font-bold" v-html="currentQuestion.description"></div>
+								</template>
+							</v-popover>
+						</div>
 					</div>
 				</div>
 				<div class="container mx-auto py-2 flex-grow px-4 sm:px-0">

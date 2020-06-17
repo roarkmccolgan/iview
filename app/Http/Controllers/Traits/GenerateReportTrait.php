@@ -3181,7 +3181,7 @@ trait GenerateReportTrait
             );
             
             //build
-            $customCopy.= '<div class="pb"></div>';
+            $customCopy.= '<div class="mt-10"></div>';
             $customCopy.= trans(
                 session('product.alias').'.build-intro',
                 [
@@ -3213,12 +3213,29 @@ trait GenerateReportTrait
                     'url' => asset('/images/tools/16/comparison_manage_'.$manageNumber.'.png')
                 ]
             );
-
+            $url = 'https://www.ibm.com/cloud-computing/your-cloud/';
+            switch(session('user.country')){
+                case 'Denmark':
+                case 'Norway':
+                    $url = 'https://www.ibm.com/dk-en/cloud/yourcloud';
+                    break;
+                case 'Sweden':
+                case 'Finland':
+                    $url = 'https://www.ibm.com/se-en/cloud/yourcloud';
+                    break;
+            }
             
             $customCopy.= trans(
                 session('product.alias').'.conclusion',
                 [
-                    'icon' => asset('/images/tools/16/conclusion_icon.png')
+                    'icon' => asset('/images/tools/16/conclusion_icon.png'),
+                    'url' => $url,
+                    'webinar1pic' => asset('/images/tools/16/move_webinar.jpg'),
+                    'webinar2pic' => asset('/images/tools/16/build_webinar.jpg'),
+                    'webinar3pic' => asset('/images/tools/16/manage_webinar.jpg'),
+                    'webinar1url' => 'https://we.video.idc.com/secret/63252625/a14142dd1046b51ca0630df6068f2dcc',
+                    'webinar2url' => 'https://we.video.idc.com/secret/63252600/c7f991ad3aceca291d5db0c867a38e69',
+                    'webinar3url' => 'https://we.video.idc.com/secret/63252347/91d01bdb55a850d593efba972933e7fa',
                 ]
             );
 
@@ -3604,16 +3621,16 @@ trait GenerateReportTrait
             } elseif(session('product.id')==16){
                 $timeStamp = time();
                 $pdf->save(storage_path().'/ibmcloud-'.$timeStamp.'.pdf');
-                //return $pdf->inline('invoice.pdf');
-                $merge = PDFMerger::init();
+                
                 $locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
 
-                $merge->addPDF(storage_path().'/ibmcloud_cover'.$locale .'.pdf', 'all');
-                $merge->addPDF(storage_path().'/ibmcloud-'.$timeStamp.'.pdf', 'all');
+                $merge = new NewPDF([
+                    'A' => storage_path().'/ibmcloud_cover'.$locale .'.pdf',
+                    'B' => storage_path().'/ibmcloud-'.$timeStamp.'.pdf'
+                ]);
 
+                $merge->cat(1, 'end', 'A')->cat(1, 'end', 'B')->saveAs(storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf');
 
-                $merge->merge();
-                $merge->save(storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf');
                 if (File::exists(storage_path().'/ibmcloud-'.$timeStamp.'.pdf')) {
                     File::delete(storage_path().'/ibmcloud-'.$timeStamp.'.pdf');
                 }

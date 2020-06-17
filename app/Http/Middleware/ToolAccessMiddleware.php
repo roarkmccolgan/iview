@@ -17,7 +17,7 @@ class ToolAccessMiddleware
     {
         //dd('fok');
         $user = $request->user();
-        $tool = $request->get('product');
+        $tool = $request->session()->get('productObject');
         if (!$user->hasRole($super)) {
             $abort = true;
             if ($user->tools->contains($tool->id)) {

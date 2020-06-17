@@ -7,11 +7,11 @@
   </defs>
   <title>comparison_build_3</title>
   <line x1="322.98" y1="50.04" x2="322.98" y2="567.54" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
-  <rect x="338.12" y="194.54" width="1276.75" height="354.47" style="opacity: 0.5;fill: url(#linear-gradient)"/>
+  <rect x="338.12" y="194.54" width="1276.75" height="354.48" style="opacity: 0.5;fill: url(#linear-gradient)"/>
   <line x1="752.98" y1="50.04" x2="752.98" y2="567.54" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
   <line x1="1184.98" y1="50.04" x2="1184.98" y2="567.54" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
-  <rect x="338.12" y="274.54" width="1234.75" height="181" style="fill: #4d4d4d"/>
-  <text transform="translate(732.93 353.67)" style="font-size: 26.131669998168945px;fill: #fff;font-family: OpenSans, Open Sans">Congratulations, you&apos;re on top of your game —<tspan x="0" y="37.56">you&apos;ve achieved Cloud Innovator status</tspan></text>
+  <rect x="338.12" y="274.54" width="1234.75" height="181" style="fill: #262626"/>
+  <text transform="translate(732.93 353.67)" style="font-size: 26px;fill: #fff;font-family: OpenSans, Open Sans">Congratulations, you&apos;re on top of your game —<tspan x="0" y="30">you&apos;ve achieved Cloud Innovator status</tspan></text>
   <line x1="0.37" y1="181.04" x2="1614.27" y2="181.04" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
   <text transform="translate(502.93 76.67)" style="font-size: 26.131669998168945px;fill: #999;font-family: OpenSans, Open Sans">Cloud<tspan style="font-size: 36.85363006591797px;fill!: #000"><tspan x="0" y="37.56">Experimenter</tspan></tspan></text>
   <text transform="translate(934.03 76.67)" style="font-size: 26.131669998168945px;fill: #999;font-family: OpenSans, Open Sans">Cloud<tspan style="font-size: 36.85363006591797px;fill!: #000"><tspan x="0" y="36">Optimizer</tspan></tspan></text>

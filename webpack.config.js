@@ -51,6 +51,11 @@ module.exports = {
 			"babel-polyfill",
 			'./resources/assets/js/ibmcloud/main.js',
 			'./resources/assets/css/ibmcloud/main.css'
+		],
+		sapagileglobal: [
+			"babel-polyfill",
+			'./resources/assets/js/sapagileglobal/main.js',
+			'./resources/assets/css/sapagileglobal/main.css'
 		]
 	},
 	stats: {

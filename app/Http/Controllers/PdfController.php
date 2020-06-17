@@ -3197,7 +3197,7 @@ class PdfController extends Controller
             );
             
             //build
-            $customCopy.= '<div class="pb"></div>';
+            $customCopy.= '<div class="mt-10"></div>';
             $customCopy.= trans(
                 session('product.alias').'.build-intro',
                 [
@@ -3229,12 +3229,105 @@ class PdfController extends Controller
                     'url' => asset('/images/tools/16/comparison_manage_'.$manageNumber.'.png')
                 ]
             );
-
+            $url = 'https://www.ibm.com/cloud-computing/your-cloud/';
+            switch(session('user.country')){
+                case 'Denmark':
+                case 'Norway':
+                    $url = 'https://www.ibm.com/dk-en/cloud/yourcloud';
+                    break;
+                case 'Sweden':
+                case 'Finland':
+                    $url = 'https://www.ibm.com/se-en/cloud/yourcloud';
+                    break;
+            }
             
             $customCopy.= trans(
                 session('product.alias').'.conclusion',
                 [
-                    'icon' => asset('/images/tools/16/conclusion_icon.png')
+                    'icon' => asset('/images/tools/16/conclusion_icon.png'),
+                    'url' => $url,
+                    'webinar1pic' => asset('/images/tools/16/move_webinar.jpg'),
+                    'webinar2pic' => asset('/images/tools/16/build_webinar.jpg'),
+                    'webinar3pic' => asset('/images/tools/16/manage_webinar.jpg'),
+                    'webinar1url' => 'https://we.video.idc.com/secret/63252625/a14142dd1046b51ca0630df6068f2dcc',
+                    'webinar2url' => 'https://we.video.idc.com/secret/63252600/c7f991ad3aceca291d5db0c867a38e69',
+                    'webinar3url' => 'https://we.video.idc.com/secret/63252347/91d01bdb55a850d593efba972933e7fa',
+                ]
+            );
+
+            $vars['sectionCopy'] = $customCopy;
+        } else if(session('product.id') == 17){ //SAPAgileGlobal
+            //User overall stage number and ordinal
+            $overallNumber = (int) filter_var(session('result.overall.rating'), FILTER_SANITIZE_NUMBER_INT);
+            $strategicPlanningNumber =  (int) filter_var(session('result.strategic-planning.rating'), FILTER_SANITIZE_NUMBER_INT);
+            $processesNumber =  (int) filter_var(session('result.processes.rating'), FILTER_SANITIZE_NUMBER_INT);
+            $customerRelationshipsNumber =  (int) filter_var(session('result.customer-relationships.rating'), FILTER_SANITIZE_NUMBER_INT);
+            $suppliersDistributorsNumber =  (int) filter_var(session('result.suppliers-distributors.rating'), FILTER_SANITIZE_NUMBER_INT);
+            $peopleExperienceNumber =  (int) filter_var(session('result.people-experience.rating'), FILTER_SANITIZE_NUMBER_INT);
+
+            $customCopy = '';
+
+            //introduction
+            $base = config('baseline_'.session('product.id').'.overall');
+            $rating = session('result.overall.rating');
+
+            $user_score = session('result.overall.score');
+
+            $customCopy.= trans(
+                session('product.alias').'.introduction',
+                [
+                    'url' => asset('/images/tools/17/check.png'),
+                    'stage' =>  $overallNumber,
+                    'name' => trans(session('product.alias').'.'.session('result.overall.rating'))
+                ]
+            );
+
+            //overall
+            $customCopy.= trans(
+                session('product.alias').'.overall-'.$overallNumber,
+                [
+                    'url' => asset('/images/tools/17/bar_'.$overallNumber.'.png'),
+                    'company' => session('user.company', 'Your company scored')
+                ]
+            );
+            //strategic-planning
+            $customCopy.= trans(
+                session('product.alias').'.strategic-planning-'.$strategicPlanningNumber,
+                [
+                    'url' => asset('/images/tools/17/bar_'.$strategicPlanningNumber.'.png'),
+                    'company' => session('user.company', 'Your company scored')
+                ]
+            );
+            //processes
+            $customCopy.= trans(
+                session('product.alias').'.processes-'.$processesNumber,
+                [
+                    'url' => asset('/images/tools/17/bar_'.$processesNumber.'.png'),
+                    'company' => session('user.company', 'Your company scored')
+                ]
+            );
+            //customer-relationships
+            $customCopy.= trans(
+                session('product.alias').'.customer-relationships-'.$customerRelationshipsNumber,
+                [
+                    'url' => asset('/images/tools/17/bar_'.$customerRelationshipsNumber.'.png'),
+                    'company' => session('user.company', 'Your company scored')
+                ]
+            );
+            //suppliers-distributors
+            $customCopy.= trans(
+                session('product.alias').'.suppliers-distributors-'.$suppliersDistributorsNumber,
+                [
+                    'url' => asset('/images/tools/17/bar_'.$suppliersDistributorsNumber.'.png'),
+                    'company' => session('user.company', 'Your company scored')
+                ]
+            );
+            //people-experience
+            $customCopy.= trans(
+                session('product.alias').'.people-experience-'.$peopleExperienceNumber,
+                [
+                    'url' => asset('/images/tools/17/bar_'.$peopleExperienceNumber.'.png'),
+                    'company' => session('user.company', 'Your company scored')
                 ]
             );
 
@@ -3426,22 +3519,48 @@ class PdfController extends Controller
         ->setOption('footer-html', session('url').'/'.session('localeUrl').'template/'.session('template').'/report/footer')
         ->setOption('footer-spacing', 2);
         //->setOption('replace', $headervars);
-        if (session('product.id')==16) {
+        if (session('product.id')==17) {
+            //$pdf->setOption('cover', session('url').'/'.session('localeUrl').'template/'.session('template').'/report/footer');
+            $pdf->setOption('orientation', 'Landscape');
+            $pdf->setOption('margin-bottom', 20);
             $timeStamp = time();
-            $pdf->save(storage_path().'/ibmcloud-'.$timeStamp.'.pdf');
-            //return $pdf->inline('invoice.pdf');
-            $merge = PDFMerger::init();
+            $pdf->save(storage_path().'/sapagileglobal-'.$timeStamp.'.pdf');
+            // $merge = PDFMerger::init();
             $locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
 
-            $merge->addPDF(storage_path().'/ibmcloud_cover'.$locale .'.pdf', 'all');
-            $merge->addPDF(storage_path().'/ibmcloud-'.$timeStamp.'.pdf', 'all');
+            // $merge->addPDF(storage_path().'/sapagileglobal_cover'.$locale .'.pdf', 'all');
+            // $merge->addPDF(storage_path().'/sapagileglobal-'.$timeStamp.'.pdf', 'all');
 
 
-            $merge->merge();
-            $merge->save(storage_path().'/reports/ibmcloud-'.$timeStamp.'.pdf','browser');
+            // $merge->merge();
+            // $merge->save(storage_path().'/reports/sapagileglobal-'.$timeStamp.'.pdf','browser');
+            $merge = new NewPDF([
+                'A' => storage_path().'/sapagileglobal_cover'.$locale .'.pdf',
+                'B' => storage_path().'/sapagileglobal-'.$timeStamp.'.pdf'
+            ]);
+
+            $merge->cat(1, 'end', 'A')->cat(1, 'end', 'B')->saveAs(storage_path().'/reports/sapagileglobal-'.$timeStamp.'.pdf');
+
+            if (File::exists(storage_path().'/sapagileglobal-'.$timeStamp.'.pdf')) {
+                File::delete(storage_path().'/sapagileglobal-'.$timeStamp.'.pdf');
+            }
+            return response()->file(storage_path().'/reports/sapagileglobal-'.$timeStamp.'.pdf');
+        }elseif (session('product.id')==16) {
+            $timeStamp = time();
+            $pdf->save(storage_path().'/ibmcloud-'.$timeStamp.'.pdf');
+            $locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
+            
+            $merge = new NewPDF([
+                'A' => storage_path().'/ibmcloud_cover'.$locale .'.pdf',
+                'B' => storage_path().'/ibmcloud-'.$timeStamp.'.pdf'
+            ]);
+
+            $merge->cat(1, 'end', 'A')->cat(1, 'end', 'B')->saveAs(storage_path().'/reports/ibmcloud-'.$timeStamp.'.pdf');
+
             if (File::exists(storage_path().'/ibmcloud-'.$timeStamp.'.pdf')) {
                 File::delete(storage_path().'/ibmcloud-'.$timeStamp.'.pdf');
             }
+            return response()->file(storage_path().'/reports/ibmcloud-'.$timeStamp.'.pdf');
         }elseif (session('product.id')==15) {
             //$pdf->setOption('cover', session('url').'/'.session('localeUrl').'template/'.session('template').'/report/footer');
             $pdf->setOption('orientation', 'Landscape');

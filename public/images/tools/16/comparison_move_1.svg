@@ -10,8 +10,8 @@
   <rect x="338.12" y="194.54" width="1276.75" height="354.47" style="opacity: 0.5;fill: url(#linear-gradient)"/>
   <line x1="752.98" y1="50.04" x2="752.98" y2="567.54" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
   <line x1="1184.98" y1="50.04" x2="1184.98" y2="567.54" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
-  <rect x="338.12" y="274.54" width="334" height="181" style="fill: #171717"/>
-  <text transform="translate(432.93 373.67)" style="font-size: 26.131669998168945px;fill: #fff;font-family: OpenSans, Open Sans">You are here</text>
+  <rect x="338.12" y="274.54" width="334" height="181" style="fill: #353535"/>
+  <text transform="translate(432.93 373.67)" style="font-size: 26px;fill: #fff;font-family: OpenSans, Open Sans">You are here</text>
   <line x1="0.37" y1="181.04" x2="1614.27" y2="181.04" style="fill: none;stroke: gray;stroke-miterlimit: 10"/>
   <text transform="translate(502.93 76.67)" style="font-size: 26.131669998168945px;fill: #999;font-family: OpenSans, Open Sans">Cloud<tspan style="font-size: 36.85363006591797px;fill!: #000"><tspan x="0" y="37.56">Experimenter</tspan></tspan></text>
   <text transform="translate(934.03 76.67)" style="font-size: 26.131669998168945px;fill: #999;font-family: OpenSans, Open Sans">Cloud<tspan style="font-size: 36.85363006591797px;fill!: #000"><tspan x="0" y="36">Optimizer</tspan></tspan><tspan x="0" y="72">Benefits</tspan></text>
@@ -102,6 +102,6 @@
     <line x1="704.87" y1="364.54" x2="757.78" y2="364.54" style="fill: none;stroke: #006afb;stroke-miterlimit: 10;stroke-width: 7px"/>
     <polygon points="792.87 364.54 743.43 384.75 755.16 364.54 743.43 344.34 792.87 364.54" style="fill: #006afb"/>
   </g>
-  <text transform="translate(818.01 274.7)" style="font-size: 24px;font-family: OpenSans, Open Sans">Greater agility and fexibility <tspan x="0" y="26">from operating applications </tspan><tspan x="0" y="52">in a hybrid cloud model</tspan><tspan x="0" y="102">Ability to roll out and </tspan><tspan x="0" y="128">upgrade applications faster </tspan><tspan x="0" y="154">because of re-architecture or </tspan><tspan x="0" y="180">replatforming</tspan></text>
-  <text transform="translate(1230.01 338.7)" style="font-size: 24px;font-family: OpenSans, Open Sans">Additional benefts gained at <tspan x="0" y="26">the cloud innovator level</tspan></text>
+  <text transform="translate(818.01 255.86)" style="font-size: 26px;font-family: OpenSans, Open Sans">Greater agility and <tspan x="0" y="30">fexibility from operating </tspan><tspan x="0" y="60">applications in a hybrid </tspan><tspan x="0" y="90">cloud model</tspan><tspan x="0" y="144">Ability to roll out and </tspan><tspan x="0" y="174">upgrade applications faster </tspan><tspan x="0" y="204">because of rearchitecture </tspan><tspan x="0" y="234">or replatform</tspan></text>
+  <text transform="translate(1230.01 340.42)" style="font-size: 26px;font-family: OpenSans, Open Sans">Additional benefts gained <tspan x="0" y="30">at the cloud innovator level</tspan></text>
 </svg>

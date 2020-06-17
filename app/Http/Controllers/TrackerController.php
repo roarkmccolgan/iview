@@ -21,7 +21,7 @@ class TrackerController extends Controller
         $user = $request->user();
         $user->load(['roles']);
 
-        $tool = $request->get('product');
+        $tool = $request->session()->get('productObject');
 
         if ($user->tools->contains($tool->id) || $user->hasRole('super')) {
             $tool->load(['trackers.language','company','urls.language']);
@@ -42,7 +42,7 @@ class TrackerController extends Controller
      */
     public function create(Request $request)
     {
-        $tool = $request->get('product');
+        $tool = $request->session()->get('productObject');
         $tool->load(['company','languages']);
         $code=$this->generateTrackingCode();
         return view('admin.trackers_new', compact(['tool','code']));
