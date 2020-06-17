@@ -7,7 +7,7 @@
 							<h1 class="text-blackblack sm:text-white text-3xl sm:text-5xl font-sapagileglobal font-bold leading-none mb-2">{{ $t('sapagileglobal.title') }} </h1>
 							<font-awesome-icon class="ml-4" size="2x" :icon="icons.faArrowRight" /></router-link>
 						</router-link>
-						<h3 class="text-grey-darkest sm:text-white sm:inline-block text-2xl sm:text-3xl italic font-sapagileglobal font-normal leading-tight mb-2 sm:mb-8">{{ $t('sapagileglobal.sub-title') }}</h3>
+						<!-- <h3 class="text-grey-darkest sm:text-white sm:inline-block text-2xl sm:text-3xl italic font-sapagileglobal font-normal leading-tight mb-2 sm:mb-8">{{ $t('sapagileglobal.sub-title') }}</h3> -->
 					</div>					
 				</div>
 		</div>
@@ -86,7 +86,7 @@
 									{{ msg['people-experience'] }}
 								</p>
 							</template>
-						</v-popover>, 
+						</v-popover>
 					</p>
 					<div v-html="$t('sapagileglobal.landing2')" key="3" data-index="3"></div>
 					</transition-group>

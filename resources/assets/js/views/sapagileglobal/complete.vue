@@ -2,7 +2,7 @@
 	<div class="flex-grow ieflex1">
 		<div class="container mx-auto mt-2 py-4 px-4 text-sap-blue">
 			<h1 class="font-sapagileglobal font-bold text-4xl leading-tight">{{ $t('sapagileglobal.title') }}</h1>
-			<h3 class="font-light leading-tight">{{ $t('sapagileglobal.sub-title') }}</h3>
+			<!-- <h3 class="font-light leading-tight">{{ $t('sapagileglobal.sub-title') }}</h3> -->
 		</div>
 		<div class="container mx-auto px-4">
 			<div class="flex flex-wrap justify-center">
@@ -121,35 +121,7 @@
 										<p class="text-red text-xs italic" v-show="errors.areas_interest" v-html="$t('general.errorAreasInterest')"></p>
 									</div>
 								</div>
-								<!-- <div class="mb-6 sm:w-1/2">
-									<div class="ml-2">
-										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="industry">
-											{{ $t('general.industry') }}
-										</label>
-										<div class="inline-block relative w-full mb-2">
-											<select class="block appearance-none w-full bg-grey-lighter border text-grey-darker py-3 px-4 pr-8 rounded" :class="[errors.size ? 'border-red' : '']" id="industry" name="extra[industry]" @blur="hasError">
-												<option value="" v-html="$t('general.pleaseselect')"></option>
-												<option value="Banking/insurance/financial services" v-html="$t('sapagileglobal.industry1')"></option>
-												<option value="Manufacturing" v-html="$t('sapagileglobal.industry2')"></option>
-												<option value="Retail/wholesale" v-html="$t('sapagileglobal.industry3')"></option>
-												<option value="Communication" v-html="$t('sapagileglobal.industry4')"></option>
-												<option value="Media (TV, radio, press)" v-html="$t('sapagileglobal.industry5')"></option>
-												<option value="Utilities" v-html="$t('sapagileglobal.industry6')"></option>
-												<option value="Transportation" v-html="$t('sapagileglobal.industry7')"></option>
-												<option value="Construction" v-html="$t('sapagileglobal.industry8')"></option>
-												<option value="Personal services/leisure" v-html="$t('sapagileglobal.industry9')"></option>
-												<option value="Professional services (real estate, accountancy, advertising, business consultancy, recruitment, etc.)" v-html="$t('sapagileglobal.industry10')"></option>
-												<option value="IT/telecom service providerse" v-html="$t('sapagileglobal.industry11')"></option>
-												<option value="Education" v-html="$t('sapagileglobal.industry12')"></option>
-												<option value="Healthcare" v-html="$t('sapagileglobal.industry13')"></option>
-											</select>
-											<div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-darker">
-												<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
-											</div>
-										</div>
-										<p class="text-red text-xs italic" v-show="errors.industry" v-html="$t('general.errorEmployees')"></p>
-									</div>
-								</div> -->
+								
 								<div class="mb-6 sm:w-1/2">
 									<div class="">
 										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="country">
@@ -166,6 +138,31 @@
 										</div>
 										<p class="text-red text-xs italic" v-show="errors.country" v-html="$t('general.errorCountry')"></p>
 									</div>
+								</div>
+								<div class="mb-6 w-full">
+									<div class="relative">
+										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="software_related_challenges">
+											{{ $t('sapagileglobal.software_related_challenges') }}
+										</label>
+										<div class="w-full mb-2 h-48 overflow-y-scroll p-2 rounded border" :class="[notEnoughChallenges ? 'border-red bg-red-lightest' : '']">
+											<template v-for="(challenge, index) in challengesOptions">
+											<label :class="[challenges.includes($t(challenge)) ? multiActiveClass : multiNormalClass]" tabindex="0" @keyup.space="$event.target.click()">
+												<input class="hidden" type="checkbox" :id="`challenges${index}`" name="extra[software_related_challenges][]" :value="$t(challenge)" v-model="challenges">
+												<div class="flex items-baseline">
+													<div class="mr-2 text-2xl sm:text-xl">
+														<font-awesome-icon :icon="icons.faSquare" v-if="!challenges.includes($t(challenge))" />
+														<font-awesome-icon :icon="icons.faCheckSquare" v-else />
+													</div>
+													<div class="flex-grow" v-html="$t(challenge)">
+
+													</div>
+												</div>
+											</label>
+											</template>
+										</div>
+										<div class="absolute bottom-0 rounded-b pin-b w-full scrollgrad opacity-25"></div>
+									</div>
+									<p class="text-red text-xs italic" v-show="notEnoughChallenges" v-html="$t('sapagileglobal.software_related_challenges_error')"></p>
 								</div>
 								<!-- <div class="mb-6 sm:w-1/2">
 									<div class="ml-2">
@@ -238,6 +235,32 @@ export default{
 			},
 			terms: false,
 			marketing: false,
+			challengesOptions: [
+				'sapagileglobal.software_related_challenges1',
+				'sapagileglobal.software_related_challenges2',
+				'sapagileglobal.software_related_challenges3',
+				'sapagileglobal.software_related_challenges4',
+				'sapagileglobal.software_related_challenges5',
+				'sapagileglobal.software_related_challenges6',
+				'sapagileglobal.software_related_challenges7',
+				'sapagileglobal.software_related_challenges8',
+				'sapagileglobal.software_related_challenges9',
+				'sapagileglobal.software_related_challenges10',
+				'sapagileglobal.software_related_challenges11',
+				'sapagileglobal.software_related_challenges12',
+				'sapagileglobal.software_related_challenges13',
+				'sapagileglobal.software_related_challenges14',
+				'sapagileglobal.software_related_challenges15',
+				'sapagileglobal.software_related_challenges16',
+				'sapagileglobal.software_related_challenges17',
+				'sapagileglobal.software_related_challenges18',
+				'sapagileglobal.software_related_challenges19',
+				'sapagileglobal.software_related_challenges20',
+				'sapagileglobal.software_related_challenges21',
+				'sapagileglobal.software_related_challenges22',
+			],
+			challenges: [],
+			notEnoughChallenges: false,
 			normalClass: {
 				'block': true,
 				'font-light': true,
@@ -258,6 +281,23 @@ export default{
 				'shadow': true,
 				'py-4': true,
 				'px-6': true,
+				'no-underline': true
+			},
+			multiNormalClass: {
+				'block': true,
+				'font-light': true,
+				'text-grey-darker': true,
+				'hover:bg-grey-lighter': true,
+				'py-1': true,
+				'px-2': true,
+				'no-underline': true
+			},
+			multiActiveClass: {
+				'block': true,
+				'text-sap-blue': true,
+				'bg-yellow-lighter': true,
+				'py-1': true,
+				'px-2': true,
 				'no-underline': true
 			},
 			errors: {
@@ -342,6 +382,15 @@ export default{
 		checkMarketing: function(){
 			this.errors.marketing = !document.getElementById('marketing').checked;
 		},
+		checkChallenges: function(){
+			if(this.challenges.length < 3){
+				this.notEnoughChallenges = true;
+				return false;
+			}
+			this.notEnoughChallenges = false;
+
+			return true;
+		},
 		checkForErrors: function(){
 			var errors = false;
 			for (var key in this.errors) {
@@ -358,6 +407,10 @@ export default{
 					errors = true;
 					break;
 				}
+			}
+			if(!this.checkChallenges()){
+				console.log(this.notEnoughChallenges);
+				return false;
 			}
 			if(errors == false){
 				this.isSubmitting = true;

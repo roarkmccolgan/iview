@@ -65,7 +65,7 @@
 											$extra = isset($assessment->extra) ? $assessment->extra: '';
 										}
 										?>
-										<td>{{$extra!=='null' && !is_null($extra) ? (isset($extra[$field->name]) ? $extra[$field->name]:''): ''}}</td>
+										<td>{{$extra!=='null' && !is_null($extra) ? (isset($extra[$field->name]) ? (is_array($extra[$field->name]) ? implode(", ", $extra[$field->name]) : $extra[$field->name]):''): ''}}</td>
 										@endforeach
 									@endif
 									<td>{{$assessment->code}}</td>

@@ -258,6 +258,9 @@ class AssessmentController extends Controller
             if (!is_null($assessment['extra']) && $assessment['extra']!='null' && (is_array($assessment['extra']) || is_object($assessment['extra']))) {
                 foreach ($assessment['extra'] as $exKey => $extra) {
                     if (!is_null($extra)) {
+                        if(is_array($extra)){
+                            $extra = implode(",", $extra);
+                        }
                         $assessments[$assKey][ucfirst($exKey)] = $extra;
                     }
                 }

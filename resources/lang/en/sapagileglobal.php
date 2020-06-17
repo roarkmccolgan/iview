@@ -12,16 +12,16 @@ return array(
     'further-insight'=>'More information',
     'view-now'=>'View Now',
 
-    'title'=>'Assess your Business Agility',
+    'title'=>'Analyze your Business Agility',
     'sub-title'=>'The first step in your agility journey',
     'landing1'=>'
         <p class="mb-4 text-xl font-bold text-sap-blue leading-tight">
-            Agile organizations are more competitive, jump on opportunities more quickly and are able to build stronger relationships with suppliers, distributors and customers.
+            Agile small and midsize businesses are more competitive, jump on opportunities more quickly and are able to build stronger relationships with suppliers, distributors and customers.
         </p>
         <p class="mb-4 text-xl font-bold leading-tight text-black leading-tight">
             But how do you become more agile as a business? Firstly, you need to know how agile you are today. Then what needs to be done to become more agile tomorrow.
         </p>',
-    'landing-inner' => 'IDC’s agility tool assesses your businesses agility across 5 key areas:',
+    'landing-inner' => 'The IDC SME Analysis Tool assesses your businesses agility across 5 key areas:',
     'landing2'=>'
         <p class="mb-2">
             Once completed, you will get a full overview of your organizational agility with actionable recommendations. These will enable you to drive important changes to your business, ensuring the next wave of success for your organization.
@@ -29,7 +29,7 @@ return array(
         <p>
             This will take around 5-7 minutes to complete.
         </p>',
-    'startbut'=>'Assess your Business Agility',
+    'startbut'=>'Start your Analysis Now',
     
     'send'=>'We can send you the full results directly to your mailbox',
     'register'=>'Register now to receive your personalized report',
@@ -44,6 +44,32 @@ return array(
     'interest4' => 'Production &amp; Supply chain',
     'interest5' => 'Sales &amp; Marketing',
     'interest6' => 'All of the above',
+
+    'software_related_challenges' => 'Top 3 software challenges',
+    'software_related_challenges_error' => 'Please select 3 of your software challenges',
+
+    'software_related_challenges1' => 'Analytics / Business Insights',
+    'software_related_challenges2' => 'Data Visualization / accelerated trend identification',
+    'software_related_challenges3' => 'Procurement',
+    'software_related_challenges4' => 'Supply Chain Management / Alternate sourcing',
+    'software_related_challenges5' => 'Supplier Relationship Management',
+    'software_related_challenges6' => 'Inventory Management',
+    'software_related_challenges7' => 'Customer Experience Management',
+    'software_related_challenges8' => 'Customer Relationship Management',
+    'software_related_challenges9' => 'Customer – Configure Price Quote, Order Mgt, Fulfillment',
+    'software_related_challenges10' => 'Finance – Order to Cash ',
+    'software_related_challenges11' => 'Finance – Billing & Invoicing',
+    'software_related_challenges12' => 'Finance – Budgeting & Spend Management ',
+    'software_related_challenges13' => 'Finance – Close Process',
+    'software_related_challenges14' => 'HR Payroll Management / Comp Admin',
+    'software_related_challenges15' => 'HR Employee Engagement',
+    'software_related_challenges16' => 'HR Continent Workforce management',
+    'software_related_challenges17' => 'Manufacturing ',
+    'software_related_challenges18' => 'Marketing Digital Transformation & Automation',
+    'software_related_challenges19' => 'Sales Force Management',
+    'software_related_challenges20' => 'Pricing Analysis',
+    'software_related_challenges21' => 'Product/Service Innovation / R&D',
+    'software_related_challenges22' => 'Compliance / Legal / Regulations',
 
     'strategic-planning' => [
         'title'=> 'Strategic Planning',
@@ -84,7 +110,7 @@ return array(
     'marketing' => 'I agree to being contacted by SAP about my Agility Assessment Report',
 
     'finishtxtheading' => '
-        <span class="font-bold">Thank you for completing the IDC Click to be Agile Assessment Tool, sponsored by SAP.</span><br/><br/> Now you will find out just how agile your business is!
+        <span class="font-bold">Thank you for completing the IDC SME Analysis Tool, sponsored by SAP.</span><br/><br/> Now you will find out just how agile your business is!
     ',
     'finishtxt1' => 'Based on the answers you provided, IDC place your business as: <strong class="inline font-bold text-lg text-sap-blue">{result}</strong> ',
     'finishtxt2' => '
@@ -110,9 +136,9 @@ return array(
         Share the tool ',
     'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @3ds. Interested? ',// http://bit.ly/2gslXEh
     'email'=>[
-        'subject' => 'IDC Click to be Agile Assessment',
+        'subject' => 'IDC SME Analysis Tool',
         'hi' => 'Hi :Fname',
-        'body' => 'Thank you for completing the assessment, here is the link to download your IDC Agility Assessment Report. This breaks down your results by category and provides you with actionable recommendations.',
+        'body' => 'Thank you for completing the assessment, here is the link to download your IDC SME Analysis Tool Report. This breaks down your results by category and provides you with actionable recommendations.',
         'link' => 'VIEW YOUR AGILITY SCORE',
         'extra' => 'Feel free to share this with other departments of your organization and with your customers and partners. You can always invite them to fill in the assessment and compare answers.<br>
             <a href="https://clicktobeagile.idcready.net/">https://clicktobeagile.idcready.net/</a><br><br>
