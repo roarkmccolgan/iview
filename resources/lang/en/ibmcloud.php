@@ -23,7 +23,7 @@ return array(
         <p class="mb-4">
             At the end of the assessment, you will receive a customized IDC report showing how you scored, where your strengths are, and which areas require more focus.
         </p>
-        <div class="flex items-center">
+        <div class="flex flex-wrap sm:items-center">
             <h3 class="font-medium text-lg w-full sm:w-1/2 p-4 bg-grey-lighter">
                 As we enter the second wave of cloud, more organizations are progressing toward cloud enabled and native estates.
             </h3>
@@ -35,7 +35,7 @@ return array(
             In what direction are you moving?
         </p>
         ',
-    'startbut'=>'Click here to start this self-assessment.',
+    'startbut'=>'Click here to start this self-assessment',
 
     'general' => [
         'title'=> 'General',
