@@ -593,7 +593,7 @@ return array(
                     <li class="font-base text-ibm-blue-light mb-1">Embrace a continuous approach, constantly evaluating technologies, reassessing modernization road maps, and orchestrating workloads across multiple platforms</li>
                 </ul>
                 <p class="mb-2">
-                    If you want to know more about the role of cloud, especially multicloud and hybrid cloud, in application development and modernization as well as digital transformation, please check out the following report: <a href=":url" class="font-bold text-ibm-blue">click here</a>
+                    If you want to know more about the role of cloud, especially multicloud and hybrid cloud, in application development and modernization as well as digital transformation, please check out the following report: <a href=":url" class="font-bold text-ibm-blue">please click here</a>
                 </p>
             </div>
         </div>

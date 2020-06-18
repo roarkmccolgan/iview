@@ -47,7 +47,7 @@ return array(
     'send' => 'Nous pouvons vous envoyer les résultats complets directement dans votre boîte de réception.',
     'register' => 'Inscrivez-vous dès maintenant pour recevoir votre rapport personnalisé.',
     'provide' => 'Indiquez-nous vos coordonnées et nous vous enverrons un lien pour le télécharger.',
-    'byreg'=>'En vous enregistrant auprès d’IDC, vous acceptez la <a href="https://dassault.idcready.net/privacy" target="_blank">politique de confidentialité d’IDC</a> ainsi que la <a href="<a href="https://www.3ds.com/fr/politique-de-protection-des-donnees-personnelles/" target="_blank">" target="_blank">politique de confidentialité et d’utilisation des cookies</a> Dassault Systèmes',
+    'byreg'=>'En vous enregistrant auprès d’IDC, vous acceptez la <a href="https://dassault.idcready.net/privacy" target="_blank">politique de confidentialité d’IDC</a> ainsi que la <a href="<a href="https://www.3ds.com/fr/politique-de-protection-des-donnees-personnelles/" target="_blank">politique de confidentialité et d’utilisation des cookies</a> Dassault Systèmes',
     'marketing'=>'J’accepte de recevoir des communications marketing de la part de Dassault Systèmes ou de ses partenaires commerciaux, en accord avec leur <a href="https://www.3ds.com/fr/politique-de-protection-des-donnees-personnelles/" target="_blank">politique de confidentialité</a>',
     'wait' => 'En attendant, pourquoi ne pas tweeter vos résultats et les comparer avec ceux de vos confrères ?',
     'twitterlink' => 'https://twitter.com/home?status=Is%20your%20business%20GDPR%20ready?%20http%3A//bit.ly/2AwihN4%20%23Symantec',
