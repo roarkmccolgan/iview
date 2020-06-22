@@ -56,8 +56,8 @@ return array(
     'byreg'=>'By registering with IDC, you accept our <a href="/privacy" target="_blank">Privacy Policy</a> and the IBM <a href="https://www.ibm.com/privacy/us/en/" target="_blank">Privacy Policy</a>.',
     'marketing'=>'IBM may use my contact data to keep me informed of products, services and offerings:',
     'marketing-1'=>'
-        You can withdraw your marketing consent at any time by sending an email to <a href="mailto:netsupp@us.ibm.com">netsupp@us.ibm.com</a>. Also you may unsubscribe from receiving marketing emails by clicking the unsubscribe link in each such email.<br><br>
-        More information on our processing can be found in the IBM Privacy Statement. By submitting this form, I acknowledge that I have read and understand the <a href="https://www.ibm.com/privacy/us/en/" target="_blank">IBM Privacy Statement.</a>
+        You can withdraw your marketing consent at any time by submitting an <a href="http://ibm.biz/marketingoptout" target="_blank">opt-out request</a>. Also you may unsubscribe from receiving marketing emails by clicking the unsubscribe link in each such email.<br><br>
+        More information on our processing can be found in the <a href="http://ibm.com/privacy" target="_blank">IBM Privacy Statement</a>. By submitting this form, I acknowledge that I have read and understand the <a href="https://www.ibm.com/privacy/us/en/" target="_blank">IBM Privacy Statement.</a>
     ',
     'marketing-phone'=>'By Phone',
     'marketing-email'=>'By Email',
