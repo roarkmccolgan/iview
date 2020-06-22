@@ -23,12 +23,12 @@ return array(
         <p class="mb-4">
             At the end of the assessment, you will receive a customized IDC report showing how you scored, where your strengths are, and which areas require more focus.
         </p>
-        <div class="flex flex-wrap sm:items-center">
-            <h3 class="font-medium text-lg w-full sm:w-1/2 p-4 bg-grey-lighter">
+        <div class="flex flex-wrap sm!:items-center">
+            <h3 class="font-medium text-lg w-full sm!:w-1/2 p-4 bg-grey-lighter">
                 As we enter the second wave of cloud, more organizations are progressing toward cloud enabled and native estates.
             </h3>
-            <div class="sm:w-1/2">
-                <img src="/images/tools/16/data_point_6.png" alt="" class="w-full mx-auto sm:ml-10" />
+            <div class="sm!:w-1/2">
+                <img src="/images/tools/16/data_point_6.png" alt="" class="w-full mx-auto sm!:ml-10" />
             </div>
         </div>
         <p class="mb-4 font-bold italic">
