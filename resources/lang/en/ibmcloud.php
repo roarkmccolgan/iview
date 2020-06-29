@@ -102,9 +102,9 @@ return array(
         </div>',
     'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @ntt. Interested? ',// http://bit.ly/2gslXEh
     'email'=>[
-        'subject' => 'IDC\'s Cloud Journey Assesment sponsored by IBM',
+        'subject' => 'IDC\'s Cloud Journey Assessment sponsored by IBM',
         'hi' => 'Hi :Fname',
-        'body' => 'As promised, here\'s a link to download your IDC\'s Cloud Journey Assesment Report sponsored by IBM. This breaks down your results by category and provides you with actionable recommendations.',
+        'body' => 'As promised, here\'s a link to download your IDC\'s Cloud Journey Assessment Report sponsored by IBM. This breaks down your results by category and provides you with actionable recommendations.',
         'link' => 'Download PDF Report',
         'link_inline' => 'View Report in your browser',
         'extra' => 'Once you\'ve read the report why not visit IBM <a href="https://www.ibm.com/se-en/cloud/yourcloud" style="color:#054683">Cloud Services</a>',

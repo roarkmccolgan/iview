@@ -16,8 +16,8 @@
 	    <div class="container mx-auto px-4">
     		<div class="w-full flex justify-between items-start py-5">
     			<a class="w-24 sm:w-48" href="https://idc.com/uk" target="_blank"><img src="{{ asset('images/idc_logo_white.svg')}}" alt=""></a>
-    			<div class="w-16 sm:w-24 text-sm text-white leading-none">
-    				sponsored by:
+    			<div class="w-16 sm:w-24 text-sm text-white leading-none overflow-x-visible">
+    				<span class="whitespace-no-wrap">@lang('sapagile.sponsoredby'):</span>
     				<a class="w-full" href="https://sap.com" target="_blank"><img class="mt-2" src="{{ asset('images/SAP_logo.svg')}}" alt=""></a>
     			</div>
 	    	</div>

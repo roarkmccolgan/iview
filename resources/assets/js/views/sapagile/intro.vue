@@ -35,7 +35,7 @@
 							<span class="underline text-sap-blue cursor-pointer">{{ $t('sapagile.strategic-planning.title') }}</span>
 							<template slot="popover">
 								<p>
-									{{ msg['strategic-planning'] }}
+									{{ this.$t('sapagile.strategic-planning.popup') }}
 								</p>
 							</template>
 						</v-popover>, 
@@ -47,7 +47,7 @@
 							<span class="underline text-sap-blue cursor-pointer">{{ $t('sapagile.processes.title') }}</span>
 							<template slot="popover">
 								<p>
-									{{ msg['processes'] }}
+									{{ this.$t('sapagile.processes.popup') }}
 								</p>
 							</template>
 						</v-popover>, 
@@ -59,7 +59,7 @@
 							<span class="underline text-sap-blue cursor-pointer">{{ $t('sapagile.customer-relationships.title') }}</span>
 							<template slot="popover">
 								<p>
-									{{ msg['customer-relationships'] }}
+									{{ this.$t('sapagile.customer-relationships.popup') }}
 								</p>
 							</template>
 						</v-popover>, 
@@ -71,7 +71,7 @@
 							<span class="underline text-sap-blue cursor-pointer">{{ $t('sapagile.suppliers-distributors.title') }}</span>
 							<template slot="popover">
 								<p>
-									{{ msg['suppliers-distributors'] }}
+									{{ this.$t('sapagile.suppliers-distributors.popup') }}
 								</p>
 							</template>
 						</v-popover>, 
@@ -83,7 +83,7 @@
 							<span class="underline text-sap-blue cursor-pointer">{{ $t('sapagile.people-experience.title') }}</span>
 							<template slot="popover">
 								<p>
-									{{ msg['people-experience'] }}
+									{{ this.$t('sapagile.people-experience.popup') }}
 								</p>
 							</template>
 						</v-popover>, 

@@ -20,10 +20,19 @@ $manifest = json_decode($json, TRUE);
 			'processes': 'bg-sap-blue',
 			'customer-relationships': 'bg-sap-purple',
 			'suppliers-distributors': 'bg-grey',
-			'people-experience': 'bg-sap-orange'
+			'people-experience': 'bg-sap-orange',
+			'einleitung': 'bg-transparent',
+			'gesamt': 'bg-transparent',
+			'strategische-planung': 'bg-sap-green',
+			'prozesse': 'bg-sap-blue',
+			'kundenerlebnis': 'bg-sap-purple',
+			'lieferanten-und-händler': 'bg-grey',
+			'mitarbeitererlebnis': 'bg-sap-orange',
 		};
 		function string_to_slug (str) {
 			str = str.replace(' and ', '-');
+			str = str.replace(' und ', '-');
+			str = str.replace(' UND ', '-');
 			str = str.replace(' AND ', '-');
 			str = str.replace(' ', '-');
 			str = str.toLowerCase();
