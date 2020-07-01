@@ -2525,35 +2525,44 @@ trait GenerateReportTrait
             $user_score = session('result.overall.score');
 
             $customCopy.= trans(
-                session('product.alias').'.introduction1'
+                session('product.alias').'.execsum'
             );
+            $customCopy.= trans(
+                session('product.alias').'.execsum'.$overallNumber
+            );
+            $customCopy.= trans(
+                session('product.alias').'.execsumoutro'
+            );
+            $customCopy.= '<div class="pb"></div>';
+
+            $customCopy.= trans(
+                session('product.alias').'.intellicore',
+                [
+                    'url'=>url('/')
+                ]
+            );
+            $customCopy.= '<div class="pb"></div>';
+            $customCopy.= trans(
+                session('product.alias').'.introduction1',
+                [
+                    'url'=>url('/')
+                ]
+            );
+            $customCopy.= '<div class="pb"></div>';
+            $customCopy.= trans(
+                session('product.alias').'.introduction2',
+                [
+                    'url'=>url('/')
+                ]
+            );
+
+            $customCopy.= '<div class="pb"></div>';
+            $customCopy.= trans(
+                session('product.alias').'.introduction3-'.$overallNumber
+            );
+
             $customCopy.= trans(
                 session('product.alias').'.introduction4'
-            );
-            $customCopy.= trans(
-                session('product.alias').'.execsum',
-                ['img' => asset('/images/tools/13/pyramid.svg')]
-            );
-            $customCopy.= '<div class="pb"></div>';
-            $customCopy.= trans(
-                session('product.alias').'.introduction5'
-            );
-            $customCopy.= trans(
-                session('product.alias').'.introduction6',
-                ['img' => asset('/images/tools/13/rankings.svg')]
-            );
-            $customCopy.= '<div class="pb"></div>';
-            $customCopy.= trans(
-                session('product.alias').'.introduction7'
-            );
-            $customCopy.= trans(
-                session('product.alias').'.introduction1-'.$overallNumber
-            );
-            $customCopy.= trans(
-                session('product.alias').'.introduction4-'.$overallNumber
-            );
-            $customCopy.= trans(
-                session('product.alias').'.overallstage'.$overallNumber
             );
 
             $widths = [
@@ -2561,7 +2570,6 @@ trait GenerateReportTrait
                 2 => '63mm',
                 3 => '105mm',
             ];
-
             $customCopy.= trans(
                 session('product.alias').'.overallgraph',
                 [
@@ -2572,9 +2580,9 @@ trait GenerateReportTrait
                     'url'=>asset('/images/tools/13/comparisonbg_overall.svg')
                 ]
             );
-
+            
             $customCopy.= trans(
-                session('product.alias').'.overalloutrostage'.$overallNumber
+                session('product.alias').'.introduction5-'.$overallNumber
             );
 
             //Migration
@@ -2582,16 +2590,15 @@ trait GenerateReportTrait
             $customCopy.= trans(
                 session('product.alias').'.migration-intro',
                 [
-                    'icon'=>asset('/images/tools/13/migration_icon.png')
+                    'icon'=>asset('/images/tools/13/migration_icon.png'),
+                    'url'=>url('/')
                 ]
             );
 
             $customCopy.= trans(
                 session('product.alias').'.migration-graph',
                 [
-                    'overall'=>$widths[$overallNumber],
-                    'migration' => $widths[$migrationNumber],
-                    'url' => asset('/images/tools/13/comparison_migration.svg')
+                    'image'=>asset('/images/tools/13/migration_'.$migrationNumber.'.png'),
                 ]
             );
             
@@ -2613,7 +2620,13 @@ trait GenerateReportTrait
             }elseif(in_array('Capitalize on new data-driven revenue streams and innovation', $q1answer)){
                 $customCopy.= trans(session('product.alias').'.question1-d');
             }
-            
+            $customCopy.= trans(
+                session('product.alias').'.question1-image',
+                [
+                    'url'=>url('/')
+                ]
+            );
+            $customCopy.= '<div class="pb"></div>';
             $customCopy.= trans(
                 session('product.alias').'.question2'
             );
@@ -2663,9 +2676,7 @@ trait GenerateReportTrait
             $customCopy.= trans(
                 session('product.alias').'.status-graph',
                 [
-                    'overall'=>$widths[$overallNumber],
-                    'status' => $widths[$statusNumber],
-                    'url' => asset('/images/tools/13/comparison_status.svg')
+                    'image'=>asset('/images/tools/13/status_'.$statusNumber.'.png'),
                 ]
             );
             
@@ -2705,6 +2716,11 @@ trait GenerateReportTrait
             }elseif(in_array('Maximize the utilization of data and derive faster data-driven insights', $q6answer)){
                 $customCopy.= trans(session('product.alias').'.question6-e');
             }
+            $customCopy.= trans(
+                session('product.alias').'.question6-image',[
+                    'url' => url('/')
+                ]
+            );
 
             $customCopy.= trans(
                 session('product.alias').'.question7'
@@ -2733,9 +2749,7 @@ trait GenerateReportTrait
             $customCopy.= trans(
                 session('product.alias').'.value-graph',
                 [
-                    'overall'=>$widths[$overallNumber],
-                    'value' => $widths[$valueNumber],
-                    'url' => asset('/images/tools/13/comparison_value.svg')
+                    'image'=>asset('/images/tools/13/value_'.$valueNumber.'.png'),
                 ]
             );
             
@@ -2772,6 +2786,11 @@ trait GenerateReportTrait
             }else{
                 $customCopy.= trans(session('product.alias').'.question9-'.$overallNumber.'-3');
             }
+
+            $customCopy.= '<div class="pb"></div>';
+            $customCopy.= trans(
+                session('product.alias').'.conclusion'
+            );
 
             //conclusion is in report end.pdf
 
@@ -3569,7 +3588,7 @@ trait GenerateReportTrait
 
                 $merge->addPDF(storage_path().'/hitachi_cover'.$locale .'.pdf', 'all');
                 $merge->addPDF(storage_path().'/hitachi-'.$timeStamp.'.pdf', 'all');
-                $merge->addPDF(storage_path().'/hitachi_end'.$locale .'.pdf', 'all');
+                //$merge->addPDF(storage_path().'/hitachi_end'.$locale .'.pdf', 'all');
 
                 $merge->merge();
                 $merge->save(storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf');
