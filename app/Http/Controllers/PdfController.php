@@ -3633,7 +3633,7 @@ class PdfController extends Controller
 
             $merge->addPDF(storage_path().'/hitachi_cover'.$locale .'.pdf', 'all');
             $merge->addPDF(storage_path().'/hitachi-'.$timeStamp.'.pdf', 'all');
-            //$merge->addPDF(storage_path().'/hitachi_end'.$locale .'.pdf', 'all');
+            $merge->addPDF(storage_path().'/hitachi_end'.$locale .'.pdf', 'all');
 
 
             $merge->merge();

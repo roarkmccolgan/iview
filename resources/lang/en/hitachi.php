@@ -46,7 +46,7 @@ return array(
     'complete_body' => '
         Your custom report will arrive in your inbox soon.<br/>
         Please check in your junk folder if you don\'t receive it within 5 minutes.<br/><br/>
-        <a class="text-trend-red" target="_blank" href="https://www.hitachivantara.com/en-us/services/cloud-services.html">
+        <a class="text-trend-red" target="_blank" href="https://www.hitachivantara.com/go/cloud-services/">
             Click here for more information
         </a>',
     'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @ntt. Interested? ',// http://bit.ly/2gslXEh
@@ -56,7 +56,7 @@ return array(
         'body' => 'As promised, here\'s a link to download your IDC\'s Cloud Strategy Assesment Report. This breaks down your results by category and provides you with actionable recommendations.',
         'link' => 'Download PDF Report',
         'link_inline' => 'View Report in your browser',
-        'extra' => 'Once you\'ve read the report why not visit Hitachi Vantara <a href="https://www.hitachivantara.com/en-us/services/cloud-services.html" style="color:#054683">Cloud Services</a>',
+        'extra' => 'Once you\'ve read the report why not visit Hitachi Vantara <a href="https://www.hitachivantara.com/go/cloud-services/" style="color:#054683">Cloud Services</a>',
         'regards' => 'Regards',
         'team' => 'The IDC Team'
     ],
