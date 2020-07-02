@@ -70,8 +70,8 @@
 <script type="text/javascript">
 var addthis_share = {
    url: "{{ url(session('locale').'/') }}",
-   title: "IDC Click to be Agile Assessment Tool",
-   description: "I have just completed the IDC Click to be Agile Assessment Tool Sponsored by SAP",
+   title: "@lang('sapagile.full_title')",
+   description: "@lang('sapagile.social_description')",
    media: "https://clicktobeagile.idcready.net/images/tools/15/clicktobeagile.png"
 }
 </script>

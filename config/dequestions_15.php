@@ -673,7 +673,7 @@ return [
                 'questions' => [
                     'q13'=>[
                         'type'=>'button',
-                        'question'=>'Welche Aussage trifft auf die Informationsweitergabe an Mitarbeiter in Ihrem Unternehmen am besten zu?',
+                        'question'=>'Welche Aussage trifft auf die Informationsweitergabe an Mitarbeiter*innen in Ihrem Unternehmen am besten zu?',
                         'name'=> 13,
                         'options'=>[
                             [
@@ -687,17 +687,17 @@ return [
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'Jeder Mitarbeiter weiß nur das, was er wissen muss. ',
+                                'label'=>'Alle Mitarbeiter*innen wissen nur das, was sie wissen müssen.',
                                 'value'=>3,
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'Die Mitarbeiter erhalten eine Fülle von Geschäftsinformationen.',
+                                'label'=>'Die Mitarbeiter*innen erhalten eine Fülle von Geschäftsinformationen.',
                                 'value'=>4,
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'Jeder Mitarbeiter hat vollständige Transparenz über das Geschäftsgeschehen.',
+                                'label'=>'Alle Mitarbeiter*innen haben vollständige Transparenz über das Geschäftsgeschehen.',
                                 'value'=>5,
                                 'checked'=>false,
                             ]
@@ -710,7 +710,7 @@ return [
                 'questions' => [
                     'q14'=>[
                         'type'=>'button',
-                        'question'=>'Wie schnell können Sie die Mitarbeiter für neue Aufgaben einsetzen, wenn sich die geschäftlichen Anforderungen ändern?',
+                        'question'=>'Wie schnell können Sie die Mitarbeiter*innen für neue Aufgaben einsetzen, wenn sich die geschäftlichen Anforderungen ändern?',
                         'name'=> 14,
                         'options'=>[
                             [
@@ -747,7 +747,7 @@ return [
                 'questions' => [
                     'q15'=>[
                         'type'=>'checkbox',
-                        'question'=>'Wie messen Sie die Leistung Ihrer Mitarbeiter? (Bitte wählen Sie alle zutreffenden Antworten aus.)',
+                        'question'=>'Wie messen Sie die Leistung Ihrer Mitarbeiter*innen? (Bitte wählen Sie alle zutreffenden Antworten aus.)',
                         'help' => '',
                         'name'=> 15,
                         'options'=>[
@@ -767,7 +767,7 @@ return [
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'Anhand unserer geschäftlichen und der persönlichen Ziele der Mitarbeiter ',
+                                'label'=>'Anhand unserer geschäftlichen und der persönlichen Ziele der Mitarbeiter*innen',
                                 'value'=>2,
                                 'checked'=>false,
                             ],

@@ -10,7 +10,7 @@ return array(
 
     'change-langauge'=>'Change language',
     'download-now'=>'Download Now',
-
+    
     'title'=>'IDC Cloud Journey Assessment<br/>sponsored by IBM',
     'sub-title'=>'Evaluate your Cloud Journey',
     'landing'=>'

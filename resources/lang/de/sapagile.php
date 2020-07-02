@@ -11,6 +11,10 @@ return array(
     'change-langauge'=>'Sprache ändern',
     'further-insight'=>'Weitere Informationen',
     'view-now'=>'Jetzt ansehen',
+    'next'=>'weiter',
+
+    'full_title' => 'Das Agilitätstool von IDC',
+    'social_description' => 'Ich habe gerade das IDC Assessement zur Agilitätsbewertung meines Unternehmens abgeschlossen und richtig interessante Einblicke erhalten. Vielleicht wäre es für Sie interessant:',
 
     'title'=>'Mit einem Klick zu mehr Agilität',
     'sub-title'=>'Der erste Schritt auf Ihrem Weg zu mehr geschäftlicher Agilität',
@@ -34,7 +38,7 @@ return array(
     'send' => 'Wir können Ihnen die vollständigen Ergebnisse direkt an Ihre E-Mail-Adresse senden.',
     'register' => 'Jetzt für einen personalisierten Bericht registrieren',
     'provide' => 'Bitte geben Sie einige wenige Daten ein und wir werden Ihnen den Link zum Herunterladen Ihrer Ergebnisse mailen.',
-    'byreg' => 'Mit der Registrierung bei IDC akzeptieren Sie unsere Datenschutzrichtlinie.',
+    'byreg' => 'Mit der Registrierung bei IDC akzeptieren Sie unsere <a href="/privacy" target="_blank">Datenschutzrichtlinie.</a>',
     'wait' => 'Twittern Sie Ihre Ergebnisse, während Sie warten, und sehen Sie, wie Ihre Kollegen abschneiden.',
 
     'areas_interest' => 'Ihre Interessengebiete',
@@ -94,12 +98,12 @@ return array(
         <p class="mb-2">Wir nehmen den Schutz Ihrer Daten und Privatsphäre ernst. Bitte lesen Sie die Datenschutzrichtlinien von IDC über den unten stehenden Link.</p>
         <p class="mb-4 font-bold">Ihr IDC-Team</p>
     ',
-    'complete_thankyou' => 'Vielen Dank :Fname,',
+    'complete_thankyou' => 'Vielen Dank!',
     'complete_body' => '
         wir senden Ihnen in Kürze eine E-Mail mit einem Link zu Ihrem persönlichen Bericht.<br/>
         Sollten Sie die E-Mail nicht innerhalb der nächsten fünf Minuten erhalten, schauen Sie bitte in Ihrem Spam-Ordner nach.<br/>
         Wenn Sie den Link nicht finden können, senden Sie bitte eine E-Mail an IDC (<a href="mailto:podgers@idc.com">podgers@idc.com</a>). Sie erhalten dann einen neuen Link.<br/><br/>
-        Wenn Sie mehr darüber erfahren möchten, wie SAP und Partner mittelständische Unternehmen unterstützen, die Digitalisierung erfolgreich anzugehen, klicken Sie bitte auf den folgenden Link: <a target="_blank" href="www.sap.de/digitalisierung-mittelstand">Mittelständische Vorreiter</a> - Digitalisierung in Wandel der Zeit.<br/><br/>
+        Wenn Sie mehr darüber erfahren möchten, wie SAP und Partner mittelständische Unternehmen unterstützen, die Digitalisierung erfolgreich anzugehen, klicken Sie bitte auf den folgenden Link: <a target="_blank" href="http://www.sap.de/digitalisierung-mittelstand">Mittelständische Vorreiter</a> - Digitalisierung in Wandel der Zeit.<br/><br/>
         Share the tool ',
     'complete_tweet' => 'Ich habe gerade die @IDCEMEA DSGVO-Bewertung für @3ds durchgeführt. Auch interessiert? ',// http://bit.ly/2gslXEh
     'email'=>[
@@ -108,15 +112,15 @@ return array(
         'body' => 'vielen Dank, dass Sie die Bewertung durchgeführt haben. Anbei erhalten Sie den Link zum Herunterladen Ihrer IDC-Agilitätsbewertung. Diese zeigt Ihre Ergebnisse in den verschiedenen Kategorien und enthält Handlungsempfehlungen.',
         'link' => 'IHRE AGILITÄTSBEWERTUNG ANZEIGEN',
         'extra' => 'Sie können die Bewertung mit anderen Abteilungen Ihres Unternehmens, Ihren Kunden und Partnern teilen. Natürlich können Sie ihnen auch empfehlen, die Bewertung ebenfalls durchzuführen, damit sie die Ergebnisse vergleichen können.<br>
-            <a href="https://clicktobeagile.idcready.net/">https://clicktobeagile.idcready.net/</a><br><br>
+            <a href="https://clicktobeagile.idcready.net/de">https://clicktobeagile.idcready.net/de</a><br><br>
             Diese Bewertung wurde im Auftrag von SAP entwickelt.<br><br>
             Wenn Sie mehr darüber erfahren möchten, wie SAP und Partner mittelständische Unternehmen unterstützen, die Digitalisierung erfolgreich anzugehen, dann klicken Sie bitte auf den folgenden Link:<br/>
             <a class="text-sap-blue" href="www.sap.de/digitalisierung-mittelstand">Mittelständische Vorreiter - Digitalisierung in Wandel der Zeit</a><br/><br/>
             Über Twitter und LinkedIn teilen:<br/><br/>
-            <a style="text-decoration: none;" href="http://twitter.com/share?text=I have just completed the IDC Click to be Agile Assessment Tool Sponsored by SAP&url=https://clicktobeagile.idcready.net">
+            <a style="text-decoration: none;" href="http://twitter.com/share?text=Ich habe gerade herausgefunden, wie agil mein Unternehmen ist und richtig interessante Einblicke erhalten. Vielleicht wäre das auch für Sie interessant:&url=https://clicktobeagile.idcready.net/de">
                 <img src="https://clicktobeagile.idcready.net/images/twitter.png" style="width: 50px;"/>
             </a>&nbsp;&nbsp;&nbsp;
-            <a style="text-decoration: none;" href="https://www.linkedin.com/shareArticle?mini=true&url=https://clicktobeagile.idcready.net&title=&summary=I have just completed the IDC Click to be Agile Assessment Tool Sponsored by SAP&source=email">
+            <a style="text-decoration: none;" href="https://www.linkedin.com/shareArticle?mini=true&url=https://clicktobeagile.idcready.net/de&title=&summary=Ich habe gerade herausgefunden, wie agil mein Unternehmen ist und richtig interessante Einblicke erhalten. Vielleicht wäre das auch für Sie interessant:&source=email">
                 <img src="https://clicktobeagile.idcready.net/images/linkedin.png" style="width: 50px;"/>
             </a><br/>',
         'regards' => 'Mit freundlichen Grüßen',
@@ -142,7 +146,7 @@ return array(
                             Zu Ihrer Unterstützung hat IDC eine Reihe von Handlungsempfehlungen für Ihre jeweils aktuelle Agilitätsstufe in den verschiedenen Bereichen erarbeitet. Ausgehend von Ihren Antworten positioniert IDC Ihr Unternehmen auf seinem Weg zur Agilität insgesamt auf <span class="font-bold text-sap-blue">Stufe :stage</span>.<br/> IDC bezeichnet diese Stufe als <span class="font-bold text-sap-blue">:name</span>.
                         </p>
                         <p class="font-bold text-blackblack mb-2">
-                            Wenn Sie mehr darüber erfahren möchten, wie SAP und Partner mittelständische Unternehmen unterstützen, die Digitalisierung erfolgreich anzugehen, dann klicken Sie bitte auf den folgenden Link: <a href="www.sap.de/digitalisierung-mittelstand" target="_blank">Mittelständische Vorreiter - Digitalisierung in Wandel der Zeit</a>
+                            Wenn Sie mehr darüber erfahren möchten, wie SAP und Partner mittelständische Unternehmen unterstützen, die Digitalisierung erfolgreich anzugehen, dann klicken Sie bitte auf den folgenden Link: <a href="http://www.sap.de/digitalisierung-mittelstand" target="_blank">Mittelständische Vorreiter - Digitalisierung in Wandel der Zeit</a>
                         </p>
                     </div>
                 </div>
@@ -153,12 +157,12 @@ return array(
                             <h4 class="font-bold text-grey-darkest">Dieser Bericht enthält:</h4>
                         </div>
                         <ul class="list-disc pl-12 mt-4">
-                            <li class="mb-2">Ihre Gesamtbewertung</li>
-                            <li class="mb-2">Strategische Planung</li>
-                            <li class="mb-2">Prozesse</li>
-                            <li class="mb-2">Kundenbeziehungen</li>
-                            <li class="mb-2">Lieferanten und Händler</li>
-                            <li class="mb-2">Mitarbeitereinbindung (HR)</li>
+                            <li class="mb-1">Ihre Gesamtbewertung</li>
+                            <li class="mb-1">Strategische Planung</li>
+                            <li class="mb-1">Prozesse</li>
+                            <li class="mb-1">Kundenbeziehungen</li>
+                            <li class="mb-1">Lieferanten und Händler</li>
+                            <li class="mb-1">Mitarbeitereinbindung (HR)</li>
                         </ul>
                     </div>
                 </div>
@@ -166,11 +170,11 @@ return array(
         </div>
     ',
     'overall-1' => '
-        <div class="pb w-5/6 mx-auto">
+        <div class="pb w-5/6 mx-auto" style="width: 90%">
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Gesamt</h1>
             </div>
-            <div class="flex items-start mb-4">
+            <div class="flex items-start mb-2">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
                     <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
@@ -208,11 +212,11 @@ return array(
         </div>
     ',
     'overall-2' => '
-        <div class="pb w-5/6 mx-auto">
+        <div class="pb w-5/6 mx-auto" style="width: 90%">
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Gesamt</h1>
             </div>
-            <div class="flex items-start mb-4">
+            <div class="flex items-start mb-2">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
                     <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
@@ -250,11 +254,11 @@ return array(
         </div>
     ',
     'overall-3' => '
-        <div class="pb w-5/6 mx-auto">
+        <div class="pb w-5/6 mx-auto" style="width: 90%">
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Gesamt</h1>
             </div>
-            <div class="flex items-start mb-4">
+            <div class="flex items-start mb-2">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
                     <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
@@ -295,11 +299,11 @@ return array(
         </div>
     ',
     'overall-4' => '
-        <div class="pb w-5/6 mx-auto">
+        <div class="pb w-5/6 mx-auto" style="width: 90%">
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Gesamt</h1>
             </div>
-            <div class="flex items-start mb-4">
+            <div class="flex items-start mb-2">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
                     <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
@@ -342,11 +346,11 @@ return array(
         </div>
     ',
     'overall-5' => '
-        <div class="pb w-5/6 mx-auto">
+        <div class="pb w-5/6 mx-auto" style="width: 90%">
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Gesamt</h1>
             </div>
-            <div class="flex items-start mb-4">
+            <div class="flex items-start mb-2">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
                     <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
@@ -389,11 +393,11 @@ return array(
         </div>
     ',
     'strategic-planning-1' => '
-        <div class="pb w-5/6 mx-auto">
+        <div class="pb w-5/6 mx-auto" style="width: 90%">
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Strategische Planung</h1>
             </div>
-            <div class="flex items-start mb-4">
+            <div class="flex items-start mb-2">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
                     <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
@@ -427,10 +431,10 @@ return array(
                     <div class="p-2 bg-grey-lighter">
                         <h4 class="italic font-bold mb-4">Empfehlungen:</h4>
                         <ol class="pl-6 text-sap-blue">
-                            <li class="mb-2">Führen Sie regelmäßige Planungsbesprechungen durch, denn die Dynamik der digitalen Wirtschaft erfordert mehr als nur ein oder zwei diesbezügliche Meetings pro Jahr.</li>
-                            <li class="mb-2">Sie sollten auch die Mitarbeiter aus allen Schlüsselbereichen Ihres Unternehmens in die Planung einbeziehen. Stellen Sie also ein interdisziplinäres Team von Mitarbeitern zusammen und beteiligen Sie es an Ihrer strategischen Planung.</li>
-                            <li class="mb-2">Es ist wichtig, darauf zu achten, dass jede einzelne Kennzahl, die Sie zur Beurteilung der Gesamtleistung des Unternehmens nutzen (oft als Key Performance Indicator oder KPI bezeichnet), auf ein gemeinsames Unternehmensziel ausgerichtet ist.</li>
-                            <li class="mb-2">Prüfen Sie Softwarelösungen, die Ihnen diesen Gesamtüberblick über die Leistung verschaffen. Diese können sehr effektive Instrumente sein, mit denen Sie Ihre Strategie immer aktuell halten und sicherstellen, dass alle Beteiligten mit vereinten Kräften an den gemeinsamen Zielen arbeiten. </li>
+                            <li class="mb-1">Führen Sie regelmäßige Planungsbesprechungen durch, denn die Dynamik der digitalen Wirtschaft erfordert mehr als nur ein oder zwei diesbezügliche Meetings pro Jahr.</li>
+                            <li class="mb-1">Sie sollten auch die Mitarbeiter aus allen Schlüsselbereichen Ihres Unternehmens in die Planung einbeziehen. Stellen Sie also ein interdisziplinäres Team von Mitarbeitern zusammen und beteiligen Sie es an Ihrer strategischen Planung.</li>
+                            <li class="mb-1">Es ist wichtig, darauf zu achten, dass jede einzelne Kennzahl, die Sie zur Beurteilung der Gesamtleistung des Unternehmens nutzen (oft als Key Performance Indicator oder KPI bezeichnet), auf ein gemeinsames Unternehmensziel ausgerichtet ist.</li>
+                            <li class="mb-1">Prüfen Sie Softwarelösungen, die Ihnen diesen Gesamtüberblick über die Leistung verschaffen. Diese können sehr effektive Instrumente sein, mit denen Sie Ihre Strategie immer aktuell halten und sicherstellen, dass alle Beteiligten mit vereinten Kräften an den gemeinsamen Zielen arbeiten. </li>
                         </ol>
                     </div>
                 </div>
@@ -438,11 +442,11 @@ return array(
         </div>
     ',
     'strategic-planning-2' => '
-        <div class="pb w-5/6 mx-auto">
+        <div class="pb w-5/6 mx-auto" style="width: 90%">
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Strategische Planung</h1>
             </div>
-            <div class="flex items-start mb-4">
+            <div class="flex items-start mb-2">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
                     <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
@@ -476,9 +480,9 @@ return array(
                     <div class="p-2 bg-grey-lighter">
                         <h4 class="italic font-bold mb-4">Empfehlungen:</h4>
                         <ol class="pl-6 text-sap-blue">
-                            <li class="mb-2">Empfehlungen: Mit einer einheitlichen Strategie für alle Geschäftsfunktionen wird das gesamte Unternehmen auf eine gemeinsame Vorgehensweise ausgerichtet. Erreichen lässt sich dies mit der Einrichtung eines interdisziplinären Gremiums für strategische Planung, in dem die Geschäftsführung, die Finanzabteilung, das Personalwesen, die Betriebsbereiche, das Marketing, der Vertrieb und (wenn möglich) auch Geschäftspartner vertreten sind.</li>
-                            <li class="mb-2">Dieses Gremium darf nicht nur Daten auf der Grundlage vergangener Leistungen (z. B. Verkäufe, Bedarfsänderungen und Betriebsabläufe) berücksichtigen, sondern muss auch Markttrends mit Blick auf eventuelle zukünftige Chancen einbeziehen.</li>
-                            <li class="mb-2">Darüber hinaus sollte in Softwarelösungen investiert werden, die einen vollständigen Überblick über die Leistung des gesamten Unternehmens bieten. Dabei sollte auf die Integrationsfähigkeit geachtet werden, damit Sie in Ihrem Unternehmen eine einheitliche Sicht auf das Tagesgeschäft gewinnen und bessere Vorhersagen treffen können.</li>
+                            <li class="mb-1">Empfehlungen: Mit einer einheitlichen Strategie für alle Geschäftsfunktionen wird das gesamte Unternehmen auf eine gemeinsame Vorgehensweise ausgerichtet. Erreichen lässt sich dies mit der Einrichtung eines interdisziplinären Gremiums für strategische Planung, in dem die Geschäftsführung, die Finanzabteilung, das Personalwesen, die Betriebsbereiche, das Marketing, der Vertrieb und (wenn möglich) auch Geschäftspartner vertreten sind.</li>
+                            <li class="mb-1">Dieses Gremium darf nicht nur Daten auf der Grundlage vergangener Leistungen (z. B. Verkäufe, Bedarfsänderungen und Betriebsabläufe) berücksichtigen, sondern muss auch Markttrends mit Blick auf eventuelle zukünftige Chancen einbeziehen.</li>
+                            <li class="mb-1">Darüber hinaus sollte in Softwarelösungen investiert werden, die einen vollständigen Überblick über die Leistung des gesamten Unternehmens bieten. Dabei sollte auf die Integrationsfähigkeit geachtet werden, damit Sie in Ihrem Unternehmen eine einheitliche Sicht auf das Tagesgeschäft gewinnen und bessere Vorhersagen treffen können.</li>
                         </ol>
                     </div>
                 </div>
@@ -486,11 +490,11 @@ return array(
         </div>
     ',
     'strategic-planning-3' => '
-        <div class="pb w-5/6 mx-auto">
+        <div class="pb w-5/6 mx-auto" style="width: 90%">
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Strategische Planung</h1>
             </div>
-            <div class="flex items-start mb-4">
+            <div class="flex items-start mb-2">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
                     <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
@@ -524,8 +528,8 @@ return array(
                     <div class="p-2 bg-grey-lighter">
                         <h4 class="italic font-bold mb-4">Empfehlungen:</h4>
                         <ol class="pl-6 text-sap-blue">
-                            <li class="mb-2">Empfehlungen: Schauen Sie sich Ihre Standardkennzahlen an, z. B. Umsatz, Gewinn und Produktivität. Sie bieten einen guten Überblick über das Geschäft. Allerdings spiegeln Sie eher bereits erbrachte Leistungen wider und zeigen kein Bild der Zukunft. Unternehmen mit einer wesentlich agileren strategischen Planung verwenden eher Kennzahlen wie die Kundengewinnungskosten (Customer Acquisition Cost, CAC) und den Net Promoter Score (NPS), um die Richtung ihres Geschäfts aufzuzeigen. Mit der Kenntnis dieser Faktoren können Sie Ihr Unternehmen besser auf Wachstumsquellen ausrichten und von schrumpfenden Märkten abziehen.</li>
-                            <li class="mb-2">Erwägen Sie auch Investitionen in Softwarelösungen, mit denen Sie Geschäftsveränderungen in Echtzeit messen können. Warten Sie nicht auf wöchentliche oder monatliche Marketing- und Vertriebszahlen. Achten Sie auch auf Muster in den Verkäufen über mehrere Perioden hinweg und auf die Effekte von Änderungen bei Produkten, Dienstleistungen und Lieferungen. Dies können sehr effektive Datenpunkte sein, mit denen Sie Ihre Strategie aktuell halten und sicherstellen, dass jeder Funktionsbereich abgestimmt vorgeht. </li>
+                            <li class="mb-1">Empfehlungen: Schauen Sie sich Ihre Standardkennzahlen an, z. B. Umsatz, Gewinn und Produktivität. Sie bieten einen guten Überblick über das Geschäft. Allerdings spiegeln Sie eher bereits erbrachte Leistungen wider und zeigen kein Bild der Zukunft. Unternehmen mit einer wesentlich agileren strategischen Planung verwenden eher Kennzahlen wie die Kundengewinnungskosten (Customer Acquisition Cost, CAC) und den Net Promoter Score (NPS), um die Richtung ihres Geschäfts aufzuzeigen. Mit der Kenntnis dieser Faktoren können Sie Ihr Unternehmen besser auf Wachstumsquellen ausrichten und von schrumpfenden Märkten abziehen.</li>
+                            <li class="mb-1">Erwägen Sie auch Investitionen in Softwarelösungen, mit denen Sie Geschäftsveränderungen in Echtzeit messen können. Warten Sie nicht auf wöchentliche oder monatliche Marketing- und Vertriebszahlen. Achten Sie auch auf Muster in den Verkäufen über mehrere Perioden hinweg und auf die Effekte von Änderungen bei Produkten, Dienstleistungen und Lieferungen. Dies können sehr effektive Datenpunkte sein, mit denen Sie Ihre Strategie aktuell halten und sicherstellen, dass jeder Funktionsbereich abgestimmt vorgeht. </li>
                         </ol>
                     </div>
                 </div>
@@ -533,11 +537,11 @@ return array(
         </div>
     ',
     'strategic-planning-4' => '
-        <div class="pb w-5/6 mx-auto">
+        <div class="pb w-5/6 mx-auto" style="width: 90%">
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Strategische Planung</h1>
             </div>
-            <div class="flex items-start mb-4">
+            <div class="flex items-start mb-2">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
                     <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
@@ -571,9 +575,9 @@ return array(
                     <div class="p-2 bg-grey-lighter">
                         <h4 class="italic font-bold mb-4">Empfehlungen:</h4>
                         <ol class="pl-6 text-sap-blue">
-                            <li class="mb-2">Führen Sie eine Datenstrategie ein, die Informationen aus Ihrem eigenen Unternehmen und aus externen Quellen in Echtzeit integriert. Investieren Sie in intelligente Softwarelösungen, mit denen Sie aus den riesigen Datenmengen von Kunden und Lieferanten, Erkenntnisse aus Markttrends und Geschäftskennzahlen gewinnen und aus ihnen Aktionen ableiten.</li>
-                            <li class="mb-2">Denken Sie ganz neu! Verankern Sie Innovation und das Auffinden völlig neuer Abläufe und Formen des Geldverdienens fest in Ihre Unternehmenskultur. Beziehen Sie dafür jedes einzelne Mitglied Ihres Unternehmens in die Entwicklung von Ideen und deren Umsetzung ein.</li>
-                            <li class="mb-2">Stellen Sie sicher, dass Ihre Mitarbeiter sich als Teil dieser Gesamtstrategie verstehen. Jeder Mitarbeiter muss Eigenverantwortung für den Plan empfinden und sich als Teil des Prozesses und auch des Ergebnisses sehen.</li>
+                            <li class="mb-1">Führen Sie eine Datenstrategie ein, die Informationen aus Ihrem eigenen Unternehmen und aus externen Quellen in Echtzeit integriert. Investieren Sie in intelligente Softwarelösungen, mit denen Sie aus den riesigen Datenmengen von Kunden und Lieferanten, Erkenntnisse aus Markttrends und Geschäftskennzahlen gewinnen und aus ihnen Aktionen ableiten.</li>
+                            <li class="mb-1">Denken Sie ganz neu! Verankern Sie Innovation und das Auffinden völlig neuer Abläufe und Formen des Geldverdienens fest in Ihre Unternehmenskultur. Beziehen Sie dafür jedes einzelne Mitglied Ihres Unternehmens in die Entwicklung von Ideen und deren Umsetzung ein.</li>
+                            <li class="mb-1">Stellen Sie sicher, dass Ihre Mitarbeiter sich als Teil dieser Gesamtstrategie verstehen. Jeder Mitarbeiter muss Eigenverantwortung für den Plan empfinden und sich als Teil des Prozesses und auch des Ergebnisses sehen.</li>
                         </ol>
                     </div>
                 </div>
@@ -581,11 +585,11 @@ return array(
         </div>
     ',
     'strategic-planning-5' => '
-        <div class="pb w-5/6 mx-auto">
+        <div class="pb w-5/6 mx-auto" style="width: 90%">
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Strategische Planung</h1>
             </div>
-            <div class="flex items-start mb-4">
+            <div class="flex items-start mb-2">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
                     <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
@@ -619,8 +623,8 @@ return array(
                     <div class="p-2 bg-grey-lighter">
                         <h4 class="italic font-bold mb-4">Empfehlungen:</h4>
                         <ol class="pl-6 text-sap-blue">
-                            <li class="mb-2">Damit Ihre Strategie zukunftssicher wird, ist es wichtig, in intelligente Softwarelösungen zu investieren, die Planungsinput aus internen und externen Quellen in Echtzeit integrieren. Denken Sie also darüber nach, wie Sie mit Technologie ein besseres Verständnis möglicher Ereignisse und deren Auswirkungen auf Ihr Geschäft gewinnen können.</li>
-                            <li class="mb-2">Da das Tempo des Wandels in der digitalen Wirtschaft zunimmt, ist es auch wichtig, einen agilen Ansatz zur Änderung der Strategie auf Grundlage von Echtzeitinformationen zu verfolgen. Dabei kann es sich um „Mikroveränderungen“ im Marketing oder um Änderungen bei der Verpackung und Lieferung handeln, aber auch um die Erweiterung der Entwicklung von Produkten und Dienstleistungen.</li>
+                            <li class="mb-1">Damit Ihre Strategie zukunftssicher wird, ist es wichtig, in intelligente Softwarelösungen zu investieren, die Planungsinput aus internen und externen Quellen in Echtzeit integrieren. Denken Sie also darüber nach, wie Sie mit Technologie ein besseres Verständnis möglicher Ereignisse und deren Auswirkungen auf Ihr Geschäft gewinnen können.</li>
+                            <li class="mb-1">Da das Tempo des Wandels in der digitalen Wirtschaft zunimmt, ist es auch wichtig, einen agilen Ansatz zur Änderung der Strategie auf Grundlage von Echtzeitinformationen zu verfolgen. Dabei kann es sich um „Mikroveränderungen“ im Marketing oder um Änderungen bei der Verpackung und Lieferung handeln, aber auch um die Erweiterung der Entwicklung von Produkten und Dienstleistungen.</li>
                         </ol>
                     </div>
                 </div>
@@ -628,11 +632,11 @@ return array(
         </div>
     ',
     'processes-1' => '
-        <div class="pb w-5/6 mx-auto">
+        <div class="pb w-5/6 mx-auto" style="width: 90%">
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Prozesse</h1>
             </div>
-            <div class="flex items-start mb-4">
+            <div class="flex items-start mb-2">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
                     <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
@@ -651,10 +655,10 @@ return array(
                     </p>
                 </div>
             </div>
-            <div class="flex items-start items-stretch mt-6">
+            <div class="flex items-start items-stretch mt-2">
                 <div class="w-2/5">
                     <div class="pr-6">
-                        <p class="mb-3">
+                        <p class="mb-2">
                             Das größte Problem in Ihrem aktuellen Stadium ist in der Regel die mangelnde Standardisierung im Unternehmen. Diese wirkt sich mittelfristig nachteilig aus.
                         </p>
                         <p class="mb-3 font-bold text-sap-blue">
@@ -666,9 +670,9 @@ return array(
                     <div class="p-2 bg-grey-lighter">
                         <h4 class="italic font-bold mb-4">Empfehlungen:</h4>
                         <ol class="pl-6 text-sap-blue">
-                            <li class="mb-2">Bestimmen Sie die für Ihre Unternehmensleistung wichtigsten Prozesse und konzentrieren Sie sich ausschließlich auf diese. Ein zielgerichteter Start garantiert schnelle Ergebnisse und eine größere Akzeptanz im Unternehmen.</li>
-                            <li class="mb-2">Bewerten Sie die Prozesse, die die Mitarbeiter Ihres Unternehmens durchlaufen, um zu einem Ergebnis zu kommen. Verdeutlichen Sie sich auch die Unterschiede der Prozesse in den verschiedenen Funktionsbereichen (Finanzwesen, Personalwesen, Betrieb, Vertrieb usw.). Sie werden erkennen, wo die Ausrichtung nicht stimmt und wo es positive Aspekte gibt, die andere Bereiche aufgreifen könnten.</li>
-                            <li class="mb-2">Skizzieren Sie die wichtigsten Schritte dieser Prozesse. Konzentrieren Sie sich dann darauf, die Anzahl der Schritte und Dokumente zu reduzieren, die zur Erzielung eines Ergebnisses erforderlich sind. Informieren Sie sich auch über Softwarelösungen, mit denen Sie Prozesse automatisieren und einfacher nachverfolgen können. </li>
+                            <li class="mb-1">Bestimmen Sie die für Ihre Unternehmensleistung wichtigsten Prozesse und konzentrieren Sie sich ausschließlich auf diese. Ein zielgerichteter Start garantiert schnelle Ergebnisse und eine größere Akzeptanz im Unternehmen.</li>
+                            <li class="mb-1">Bewerten Sie die Prozesse, die die Mitarbeiter Ihres Unternehmens durchlaufen, um zu einem Ergebnis zu kommen. Verdeutlichen Sie sich auch die Unterschiede der Prozesse in den verschiedenen Funktionsbereichen (Finanzwesen, Personalwesen, Betrieb, Vertrieb usw.). Sie werden erkennen, wo die Ausrichtung nicht stimmt und wo es positive Aspekte gibt, die andere Bereiche aufgreifen könnten.</li>
+                            <li class="mb-1">Skizzieren Sie die wichtigsten Schritte dieser Prozesse. Konzentrieren Sie sich dann darauf, die Anzahl der Schritte und Dokumente zu reduzieren, die zur Erzielung eines Ergebnisses erforderlich sind. Informieren Sie sich auch über Softwarelösungen, mit denen Sie Prozesse automatisieren und einfacher nachverfolgen können. </li>
                         </ol>
                     </div>
                 </div>
@@ -676,11 +680,11 @@ return array(
         </div>
     ',
     'processes-2' => '
-        <div class="pb w-5/6 mx-auto">
+        <div class="pb w-5/6 mx-auto" style="width: 90%">
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Prozesse</h1>
             </div>
-            <div class="flex items-start mb-4">
+            <div class="flex items-start mb-2">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
                     <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
@@ -717,9 +721,9 @@ return array(
                     <div class="p-2 bg-grey-lighter">
                         <h4 class="italic font-bold mb-4">Empfehlungen:</h4>
                         <ol class="pl-6 text-sap-blue">
-                            <li class="mb-2">Skizzieren Sie die häufigsten Prozessschnittstellen. Achten Sie dabei besonders auf Berührungspunkte von Prozessen, die von unterschiedlichen Abteilungen verantwortet werden. An diesen Punkten treten sehr häufig Probleme auf. Sie zu erkennen, ist der erste Schritt zu Verbesserungen, die Ihrem Unternehmen schnell Vorteile bringen. Stellen Sie sicher, dass verschiedene Abteilungen oder Funktionen Daten gemeinsam nutzen, insbesondere an den Prozessberührungspunkten.</li>
-                            <li class="mb-2">Gibt es ein gemeinsames Verständnis der Arbeiten in den verschiedenen Geschäftsbereichen? Mit einer Konzentration auf diesen Aspekt können Sie bereits mehr Agilität schaffen und Veränderungen in den Arbeitsweisen der jeweils anderen besser antizipieren. Entwickeln Sie einen Ansatz zur Beseitigung von Prozessengpässen an den Schnittstellen.</li>
-                            <li class="mb-2">Zu wenige Unternehmen nehmen sich die Zeit zur Identifikation von Engpässen in allen Geschäftsbereichen – und schon gar nicht zu ihrer Beseitigung. Die Engpässe lassen sich nicht durch einen einfachen Eingriff von außen lösen, denn viele Funktionsbereiche haben die gleichen Probleme und müssen sie gemeinsam in Angriff nehmen. Die Erfolge stellen sich schnell ein.</li>
+                            <li class="mb-1">Skizzieren Sie die häufigsten Prozessschnittstellen. Achten Sie dabei besonders auf Berührungspunkte von Prozessen, die von unterschiedlichen Abteilungen verantwortet werden. An diesen Punkten treten sehr häufig Probleme auf. Sie zu erkennen, ist der erste Schritt zu Verbesserungen, die Ihrem Unternehmen schnell Vorteile bringen. Stellen Sie sicher, dass verschiedene Abteilungen oder Funktionen Daten gemeinsam nutzen, insbesondere an den Prozessberührungspunkten.</li>
+                            <li class="mb-1">Gibt es ein gemeinsames Verständnis der Arbeiten in den verschiedenen Geschäftsbereichen? Mit einer Konzentration auf diesen Aspekt können Sie bereits mehr Agilität schaffen und Veränderungen in den Arbeitsweisen der jeweils anderen besser antizipieren. Entwickeln Sie einen Ansatz zur Beseitigung von Prozessengpässen an den Schnittstellen.</li>
+                            <li class="mb-1">Zu wenige Unternehmen nehmen sich die Zeit zur Identifikation von Engpässen in allen Geschäftsbereichen – und schon gar nicht zu ihrer Beseitigung. Die Engpässe lassen sich nicht durch einen einfachen Eingriff von außen lösen, denn viele Funktionsbereiche haben die gleichen Probleme und müssen sie gemeinsam in Angriff nehmen. Die Erfolge stellen sich schnell ein.</li>
                         </ol>
                     </div>
                 </div>
@@ -727,11 +731,11 @@ return array(
         </div>
     ',
     'processes-3' => '
-        <div class="pb w-5/6 mx-auto">
+        <div class="pb w-5/6 mx-auto" style="width: 90%">
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Prozesse</h1>
             </div>
-            <div class="flex items-start mb-4">
+            <div class="flex items-start mb-2">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
                     <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
@@ -768,9 +772,9 @@ return array(
                     <div class="p-2 bg-grey-lighter">
                         <h4 class="italic font-bold mb-4">Empfehlungen:</h4>
                         <ol class="pl-6 text-sap-blue">
-                            <li class="mb-2">Der erste Schritt zur Anpassungsfähigkeit ist Automatisierung. Sie entlastet die Mitarbeiter von Routinetätigkeiten und verschafft ihnen Zeit für wichtigere Tätigkeiten, zum Beispiel im Bereich Kundenbindung, Innovation und Verbesserung, die nicht nur die Motivation stärken, sondern auch gewinnbringender für Ihr Unternehmen sind. Prüfen Sie, welche Prozesse in Ihrem Unternehmen für die Automatisierung – oder zumindest für eine Straffung – geeignet sind. Ihr Unternehmen erzielt eine bessere Anpassungsfähigkeit bezüglich Veränderungen.</li>
-                            <li class="mb-2">Agilität erhöht einfach die Möglichkeiten, mit Veränderungen erfolgreich umzugehen. Prüfen Sie, wie Sie Prozesse automatisieren und den Informationsfluss im gesamten Unternehmen optimieren können. Eine stärkere Digitalisierung bestimmter Prozesse bedeutet, dass Sie Daten erfassen, die Ihnen weitere Fortschritte bringen können. Bisher noch nicht bekannte Probleme werden aufgedeckt und können leichter gelöst werden.</li>
-                            <li class="mb-2">Ebenso erkennen Sie Chancen besser und können darauf reagieren. Entwickeln Sie Prozessdiagramme, mit denen Sie die Geschäftsleistung anhand bestimmter Schlüsselkennzahlen verstehen. Besser noch: Gestalten Sie diese Diagramme visuell, damit die Mitarbeiter Muster erkennen und schneller verstehen, zum Beispiel zu lange Lieferzeiten oder Verzögerungen aufgrund von Prozessfehlern. Kommunizieren Sie diese Kennzahlen im gesamten Unternehmen und nicht nur im Leitungskreis. </li>
+                            <li class="mb-1">Der erste Schritt zur Anpassungsfähigkeit ist Automatisierung. Sie entlastet die Mitarbeiter von Routinetätigkeiten und verschafft ihnen Zeit für wichtigere Tätigkeiten, zum Beispiel im Bereich Kundenbindung, Innovation und Verbesserung, die nicht nur die Motivation stärken, sondern auch gewinnbringender für Ihr Unternehmen sind. Prüfen Sie, welche Prozesse in Ihrem Unternehmen für die Automatisierung – oder zumindest für eine Straffung – geeignet sind. Ihr Unternehmen erzielt eine bessere Anpassungsfähigkeit bezüglich Veränderungen.</li>
+                            <li class="mb-1">Agilität erhöht einfach die Möglichkeiten, mit Veränderungen erfolgreich umzugehen. Prüfen Sie, wie Sie Prozesse automatisieren und den Informationsfluss im gesamten Unternehmen optimieren können. Eine stärkere Digitalisierung bestimmter Prozesse bedeutet, dass Sie Daten erfassen, die Ihnen weitere Fortschritte bringen können. Bisher noch nicht bekannte Probleme werden aufgedeckt und können leichter gelöst werden.</li>
+                            <li class="mb-1">Ebenso erkennen Sie Chancen besser und können darauf reagieren. Entwickeln Sie Prozessdiagramme, mit denen Sie die Geschäftsleistung anhand bestimmter Schlüsselkennzahlen verstehen. Besser noch: Gestalten Sie diese Diagramme visuell, damit die Mitarbeiter Muster erkennen und schneller verstehen, zum Beispiel zu lange Lieferzeiten oder Verzögerungen aufgrund von Prozessfehlern. Kommunizieren Sie diese Kennzahlen im gesamten Unternehmen und nicht nur im Leitungskreis. </li>
                         </ol>
                     </div>
                 </div>
@@ -778,11 +782,11 @@ return array(
         </div>
     ',
     'processes-4' => '
-        <div class="pb w-5/6 mx-auto">
+        <div class="pb w-5/6 mx-auto" style="width: 90%">
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Prozesse</h1>
             </div>
-            <div class="flex items-start mb-4">
+            <div class="flex items-start mb-2">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
                     <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
@@ -816,9 +820,9 @@ return array(
                     <div class="p-2 bg-grey-lighter">
                         <h4 class="italic font-bold mb-4">Empfehlungen:</h4>
                         <ol class="pl-6 text-sap-blue">
-                            <li class="mb-2">Beurteilen Sie, wenn nicht bereits geschehen, Ihre wichtigen Prozesse in Bezug auf externe Faktoren (z. B. saisonale Spitzen, Kundenbestellzeiten, externe Wetterdaten). Stellen Sie sicher, dass derartige Daten nicht in Datensilos der Geschäftsbereiche (Betrieb, Vertrieb, Marketing, Distribution usw.) gehalten, sondern für die unternehmensweite Verwendung an alle Mitarbeiter kommuniziert werden.</li>
-                            <li class="mb-2">Prüfen Sie den Einsatz von Algorithmen des maschinellen Lernens, die diese Datensätze analysieren und die besten nächsten Aktionen in den jeweiligen Geschäftsprozessen auslösen. Dies mag Ihnen wie ein riesiger Sprung erscheinen, aber viele Technologiepartner können Ihnen Machbarkeitsstudien vorlegen. Konzentrieren Sie sich auf ein oder zwei Bereiche Ihres Unternehmens und sehen Sie, welche Wirkung Sie dort erzielen.</li>
-                            <li class="mb-2">Entwickeln Sie Diagramme, die Ihre Prozesse visualisieren. Diese zeigen Ihnen möglicherweise, wo Leistungsprobleme bestehen und wo schnell Erfolg erzielt werden kann. Teilen Sie diese Diagramme und Kennzahlen mit dem gesamten Unternehmen und nicht nur mit dem Führungskreis. </li>
+                            <li class="mb-1">Beurteilen Sie, wenn nicht bereits geschehen, Ihre wichtigen Prozesse in Bezug auf externe Faktoren (z. B. saisonale Spitzen, Kundenbestellzeiten, externe Wetterdaten). Stellen Sie sicher, dass derartige Daten nicht in Datensilos der Geschäftsbereiche (Betrieb, Vertrieb, Marketing, Distribution usw.) gehalten, sondern für die unternehmensweite Verwendung an alle Mitarbeiter kommuniziert werden.</li>
+                            <li class="mb-1">Prüfen Sie den Einsatz von Algorithmen des maschinellen Lernens, die diese Datensätze analysieren und die besten nächsten Aktionen in den jeweiligen Geschäftsprozessen auslösen. Dies mag Ihnen wie ein riesiger Sprung erscheinen, aber viele Technologiepartner können Ihnen Machbarkeitsstudien vorlegen. Konzentrieren Sie sich auf ein oder zwei Bereiche Ihres Unternehmens und sehen Sie, welche Wirkung Sie dort erzielen.</li>
+                            <li class="mb-1">Entwickeln Sie Diagramme, die Ihre Prozesse visualisieren. Diese zeigen Ihnen möglicherweise, wo Leistungsprobleme bestehen und wo schnell Erfolg erzielt werden kann. Teilen Sie diese Diagramme und Kennzahlen mit dem gesamten Unternehmen und nicht nur mit dem Führungskreis. </li>
                         </ol>
                     </div>
                 </div>
@@ -826,11 +830,11 @@ return array(
         </div>
     ',
     'processes-5' => '
-        <div class="pb w-5/6 mx-auto">
+        <div class="pb w-5/6 mx-auto" style="width: 90%">
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Prozesse</h1>
             </div>
-            <div class="flex items-start mb-4">
+            <div class="flex items-start mb-2">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
                     <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
@@ -864,9 +868,9 @@ return array(
                     <div class="p-2 bg-grey-lighter">
                         <h4 class="italic font-bold mb-4">Empfehlungen:</h4>
                         <ol class="pl-6 text-sap-blue">
-                            <li class="mb-2">Entwickeln Sie einen Überblick über Ihre strategischen Partner, Lieferanten und Kunden sowie über die Prozesse in Ihrem Unternehmen, die von einer stärkeren Integration mit den Prozessen dieser Beteiligten profitieren würden. Das Ziel ist eine noch größere Agilität, bei der sich Ihre Partner, Lieferanten und Kunden mitbewegen, wenn Sie auf Veränderungen des Geschäftsumfelds reagieren.</li>
-                            <li class="mb-2">Beginnen Sie, Innovationen gemeinsam mit Ihren Partnern, Lieferanten und Kunden einzuführen. Schaffen Sie ein Umfeld, in dem Sie frühzeitig Ideen austauschen und gemeinsam an der Entwicklung neuer Produkte und Dienstleistungen sowie neuer Geschäftsmodelle arbeiten. Stellen Sie auch sicher, dass dieser Ansatz agil ist und schnell angepasst werden kann, wenn sich die Anforderungen des Umfelds ändern.</li>
-                            <li class="mb-2">Entwickeln Sie mit Ihrem Partnernetz eine gemeinsame Technologiestrategie. Dies ist eine wesentliche Voraussetzung für das Erreichen der Ziele und bewirkt noch engere Verbindungen zwischen den beteiligten Unternehmen.</li>
+                            <li class="mb-1">Entwickeln Sie einen Überblick über Ihre strategischen Partner, Lieferanten und Kunden sowie über die Prozesse in Ihrem Unternehmen, die von einer stärkeren Integration mit den Prozessen dieser Beteiligten profitieren würden. Das Ziel ist eine noch größere Agilität, bei der sich Ihre Partner, Lieferanten und Kunden mitbewegen, wenn Sie auf Veränderungen des Geschäftsumfelds reagieren.</li>
+                            <li class="mb-1">Beginnen Sie, Innovationen gemeinsam mit Ihren Partnern, Lieferanten und Kunden einzuführen. Schaffen Sie ein Umfeld, in dem Sie frühzeitig Ideen austauschen und gemeinsam an der Entwicklung neuer Produkte und Dienstleistungen sowie neuer Geschäftsmodelle arbeiten. Stellen Sie auch sicher, dass dieser Ansatz agil ist und schnell angepasst werden kann, wenn sich die Anforderungen des Umfelds ändern.</li>
+                            <li class="mb-1">Entwickeln Sie mit Ihrem Partnernetz eine gemeinsame Technologiestrategie. Dies ist eine wesentliche Voraussetzung für das Erreichen der Ziele und bewirkt noch engere Verbindungen zwischen den beteiligten Unternehmen.</li>
                         </ol>
                     </div>
                 </div>
@@ -874,11 +878,11 @@ return array(
         </div>
     ',
     'customer-relationships-1' => '
-        <div class="pb w-5/6 mx-auto">
+        <div class="pb w-5/6 mx-auto" style="width: 90%">
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Kundenerlebnis</h1>
             </div>
-            <div class="flex items-start mb-4">
+            <div class="flex items-start mb-2">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
                     <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
@@ -912,9 +916,9 @@ return array(
                     <div class="p-2 bg-grey-lighter">
                         <h4 class="italic font-bold mb-4">Empfehlungen:</h4>
                         <ol class="pl-6 text-sap-blue">
-                            <li class="mb-2">Erfassen Sie Daten zu den Kundenanforderungen, zum Beispiel die Nachfrage nach Regionen oder Kundentypen, saisonale Schwankungen und auch externe Faktoren. Dies ist der erste Schritt hin zu einer stärkeren Kundenorientierung. Er ist absolut notwendig. Sie schaffen sich damit die Grundlage für mehr Agilität und der damit verbundenen Fähigkeit, einfacher die Kundenwünsche zu erfüllen. Sobald Sie über genügend Daten verfügen, führen Sie eine finanzielle Bewertung der zusätzlichen Kosten und des Aufwands durch, die eine Aufnahme von Varianten in Ihr Produkt-/Dienstleistungsportfolio verursacht.</li>
-                            <li class="mb-2">Möglicherweise gehen Sie davon aus, dass die Nachfrage für solche Änderungen nicht ausreicht. Ihre Entscheidung sollte aber davon abhängen, welche Erkenntnisse Sie aus der Bewertung ziehen. Stellen Sie auch fest, wie schnell Sie diese Änderungen vornehmen können und ob sie für viele oder nur wenige Kunden möglich sind.</li>
-                            <li class="mb-2">Identifizieren Sie die wichtigen Kontaktpunkte im Kaufprozess Ihrer Kunden und stellen Sie sicher, dass Ihr Unternehmen dort besser abschneidet als die Konkurrenz. Wie kaufen Kunden und was erleben Sie dabei? Bitten Sie Ihre Kunden um Feedback, leiten Sie daraus Maßnahmen ab und teilen Sie dies Ihren Kunden mit. Sie werden überrascht sein, wie wirkungsvoll dieses Vorgehen ist.</li>
+                            <li class="mb-1">Erfassen Sie Daten zu den Kundenanforderungen, zum Beispiel die Nachfrage nach Regionen oder Kundentypen, saisonale Schwankungen und auch externe Faktoren. Dies ist der erste Schritt hin zu einer stärkeren Kundenorientierung. Er ist absolut notwendig. Sie schaffen sich damit die Grundlage für mehr Agilität und der damit verbundenen Fähigkeit, einfacher die Kundenwünsche zu erfüllen. Sobald Sie über genügend Daten verfügen, führen Sie eine finanzielle Bewertung der zusätzlichen Kosten und des Aufwands durch, die eine Aufnahme von Varianten in Ihr Produkt-/Dienstleistungsportfolio verursacht.</li>
+                            <li class="mb-1">Möglicherweise gehen Sie davon aus, dass die Nachfrage für solche Änderungen nicht ausreicht. Ihre Entscheidung sollte aber davon abhängen, welche Erkenntnisse Sie aus der Bewertung ziehen. Stellen Sie auch fest, wie schnell Sie diese Änderungen vornehmen können und ob sie für viele oder nur wenige Kunden möglich sind.</li>
+                            <li class="mb-1">Identifizieren Sie die wichtigen Kontaktpunkte im Kaufprozess Ihrer Kunden und stellen Sie sicher, dass Ihr Unternehmen dort besser abschneidet als die Konkurrenz. Wie kaufen Kunden und was erleben Sie dabei? Bitten Sie Ihre Kunden um Feedback, leiten Sie daraus Maßnahmen ab und teilen Sie dies Ihren Kunden mit. Sie werden überrascht sein, wie wirkungsvoll dieses Vorgehen ist.</li>
                         </ol>
                     </div>
                 </div>
@@ -922,11 +926,11 @@ return array(
         </div>
     ',
     'customer-relationships-2' => '
-        <div class="pb w-5/6 mx-auto">
+        <div class="pb w-5/6 mx-auto" style="width: 90%">
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Kundenerlebnis</h1>
             </div>
-            <div class="flex items-start mb-4">
+            <div class="flex items-start mb-2">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
                     <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
@@ -960,9 +964,9 @@ return array(
                     <div class="p-2 bg-grey-lighter">
                         <h4 class="italic font-bold mb-4">Empfehlungen:</h4>
                         <ol class="pl-6 text-sap-blue">
-                            <li class="mb-2">Finden Sie die Balance zwischen Standardprodukten und ‑dienstleistungen und maßgeschneiderten Angeboten. Möglicherweise betreiben Sie ein Mengengeschäft, aber haben Zweifel, ob dieses Geschäftsmodell in der Zukunft noch tragfähig ist. Erstellen Sie ein Portfolio Ihrer ertragsstärksten Produkte und Dienstleistungen und richten Sie diese auf die generellen und gängigsten Kundenanforderungen aus.</li>
-                            <li class="mb-2">Sobald Sie über genügend Daten verfügen, führen Sie eine finanzielle Bewertung der zusätzlichen Kosten und des Aufwands durch, die eine Aufnahme von Varianten in Ihr Produkt-/Dienstleistungsportfolio verursacht. Möglicherweise gehen Sie davon aus, dass die Nachfrage für solche Änderungen nicht ausreicht. Ihre Entscheidung sollte aber davon abhängen, welche Erkenntnisse Sie aus der Bewertung ziehen.</li>
-                            <li class="mb-2">Parallel dazu ist der Aufbau einer zentralen Datenbank mit Kundeninformationen wichtig. Sie dient dazu, die Kundenanforderungen für die Mitarbeiter im Front- und Backoffice sichtbar zu machen. Bitten Sie Ihre Kunden um Feedback und leiten Sie daraus Maßnahmen ab. </li>
+                            <li class="mb-1">Finden Sie die Balance zwischen Standardprodukten und ‑dienstleistungen und maßgeschneiderten Angeboten. Möglicherweise betreiben Sie ein Mengengeschäft, aber haben Zweifel, ob dieses Geschäftsmodell in der Zukunft noch tragfähig ist. Erstellen Sie ein Portfolio Ihrer ertragsstärksten Produkte und Dienstleistungen und richten Sie diese auf die generellen und gängigsten Kundenanforderungen aus.</li>
+                            <li class="mb-1">Sobald Sie über genügend Daten verfügen, führen Sie eine finanzielle Bewertung der zusätzlichen Kosten und des Aufwands durch, die eine Aufnahme von Varianten in Ihr Produkt-/Dienstleistungsportfolio verursacht. Möglicherweise gehen Sie davon aus, dass die Nachfrage für solche Änderungen nicht ausreicht. Ihre Entscheidung sollte aber davon abhängen, welche Erkenntnisse Sie aus der Bewertung ziehen.</li>
+                            <li class="mb-1">Parallel dazu ist der Aufbau einer zentralen Datenbank mit Kundeninformationen wichtig. Sie dient dazu, die Kundenanforderungen für die Mitarbeiter im Front- und Backoffice sichtbar zu machen. Bitten Sie Ihre Kunden um Feedback und leiten Sie daraus Maßnahmen ab. </li>
                         </ol>
                     </div>
                 </div>
@@ -970,11 +974,11 @@ return array(
         </div>
     ',
     'customer-relationships-3' => '
-        <div class="pb w-5/6 mx-auto">
+        <div class="pb w-5/6 mx-auto" style="width: 90%">
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Kundenerlebnis</h1>
             </div>
-            <div class="flex items-start mb-4">
+            <div class="flex items-start mb-2">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
                     <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
@@ -1008,9 +1012,9 @@ return array(
                     <div class="p-2 bg-grey-lighter">
                         <h4 class="italic font-bold mb-4">Empfehlungen:</h4>
                         <ol class="pl-6 text-sap-blue">
-                            <li class="mb-2">IDC empfiehlt für eine schnellere Ausrichtung des Geschäfts an wechselnde Kundenbedürfnisse die unternehmensweite Einführung neuer Kennzahlen. Dazu gehört der Net Promoter Score (NPS). Mit ihm lässt sich beurteilen, ob ein Kunde Ihre Produkte an andere Personen weiterempfehlen würde. So wird ein neuer Schwerpunkt auf die Erfüllung und das Übertreffen der Kundenerwartungen gelegt. Sie gewinnen außerdem bessere Einblicke in den Markt und können auf dieser Basis passende Veränderungen vornehmen.</li>
-                            <li class="mb-2">Agile Kundenbeziehungen erfordern zusätzlich die Bildung bereichsübergreifender Teams, die sich auf Kundenergebnisse, die Verbesserung der Customer Experience und die Stärkung der Kundenbindung konzentrieren. Auch Unternehmensbereiche, die nicht kundennah arbeiten, sollten Teil dieses Prozesses werden. Wenn sie ein Verständnis dafür gewinnen, dass ihr Handeln ebenfalls die Customer Experience beeinflussen kann, wird dies auch ihre Motivation steigern.</li>
-                            <li class="mb-2">ntwickeln Sie dynamische Dashboards, die tiefe Einblicke in die wichtigsten Kundentrends bieten. Kommunizieren Sie diese Trends im gesamten Unternehmen – und auch an Lieferanten und Händler, falls dies möglich ist. Sammeln Sie Feedback und Ideen, wie Ihr Unternehmen von diesen Trends profitieren kann.</li>
+                            <li class="mb-1">IDC empfiehlt für eine schnellere Ausrichtung des Geschäfts an wechselnde Kundenbedürfnisse die unternehmensweite Einführung neuer Kennzahlen. Dazu gehört der Net Promoter Score (NPS). Mit ihm lässt sich beurteilen, ob ein Kunde Ihre Produkte an andere Personen weiterempfehlen würde. So wird ein neuer Schwerpunkt auf die Erfüllung und das Übertreffen der Kundenerwartungen gelegt. Sie gewinnen außerdem bessere Einblicke in den Markt und können auf dieser Basis passende Veränderungen vornehmen.</li>
+                            <li class="mb-1">Agile Kundenbeziehungen erfordern zusätzlich die Bildung bereichsübergreifender Teams, die sich auf Kundenergebnisse, die Verbesserung der Customer Experience und die Stärkung der Kundenbindung konzentrieren. Auch Unternehmensbereiche, die nicht kundennah arbeiten, sollten Teil dieses Prozesses werden. Wenn sie ein Verständnis dafür gewinnen, dass ihr Handeln ebenfalls die Customer Experience beeinflussen kann, wird dies auch ihre Motivation steigern.</li>
+                            <li class="mb-1">ntwickeln Sie dynamische Dashboards, die tiefe Einblicke in die wichtigsten Kundentrends bieten. Kommunizieren Sie diese Trends im gesamten Unternehmen – und auch an Lieferanten und Händler, falls dies möglich ist. Sammeln Sie Feedback und Ideen, wie Ihr Unternehmen von diesen Trends profitieren kann.</li>
                         </ol>
                     </div>
                 </div>
@@ -1018,11 +1022,11 @@ return array(
         </div>
     ',
     'customer-relationships-4' => '
-        <div class="pb w-5/6 mx-auto">
+        <div class="pb w-5/6 mx-auto" style="width: 90%">
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Kundenerlebnis</h1>
             </div>
-            <div class="flex items-start mb-4">
+            <div class="flex items-start mb-2">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
                     <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
@@ -1056,8 +1060,8 @@ return array(
                     <div class="p-2 bg-grey-lighter">
                         <h4 class="italic font-bold mb-4">Empfehlungen:</h4>
                         <ol class="pl-6 text-sap-blue">
-                            <li class="mb-2">Änderungen an Produkten und Dienstleistungen in Echtzeit vorzunehmen (oder weil Kunden sie am Verkaufspunkt fordern) ist ein Schlüsselfaktor für Agilität. Viele große Unternehmen ermöglichen es ihren Kunden, zusätzliche Merkmale der von ihnen genutzten Produkte und Dienstleistungen zu bestimmen. Das betrifft sowohl Hersteller als auch Dienstleister. Der Übergang zur nächsten Agilitätsstufe erfordert intelligente Systeme, die historische Daten für die Antizipation zukünftiger Kundenbedürfnisse analysieren – und dies über die Bereiche Finanzen, Betrieb und Kundendienst hinweg.</li>
-                            <li class="mb-2">Dieser Schritt sollte außerdem auf einer integrierten Kundenplattform aufbauen, die Echtzeitdaten in automatische Warnungen und Aktionen im gesamten Unternehmen umwandelt. Erforderlich dafür sind ein integrierter Ansatz zur Erfüllung der Kundenanforderungen und eine deutlich verbesserte, unternehmensweite Kommunikation.</li>
+                            <li class="mb-1">Änderungen an Produkten und Dienstleistungen in Echtzeit vorzunehmen (oder weil Kunden sie am Verkaufspunkt fordern) ist ein Schlüsselfaktor für Agilität. Viele große Unternehmen ermöglichen es ihren Kunden, zusätzliche Merkmale der von ihnen genutzten Produkte und Dienstleistungen zu bestimmen. Das betrifft sowohl Hersteller als auch Dienstleister. Der Übergang zur nächsten Agilitätsstufe erfordert intelligente Systeme, die historische Daten für die Antizipation zukünftiger Kundenbedürfnisse analysieren – und dies über die Bereiche Finanzen, Betrieb und Kundendienst hinweg.</li>
+                            <li class="mb-1">Dieser Schritt sollte außerdem auf einer integrierten Kundenplattform aufbauen, die Echtzeitdaten in automatische Warnungen und Aktionen im gesamten Unternehmen umwandelt. Erforderlich dafür sind ein integrierter Ansatz zur Erfüllung der Kundenanforderungen und eine deutlich verbesserte, unternehmensweite Kommunikation.</li>
                         </ol>
                     </div>
                 </div>
@@ -1065,11 +1069,11 @@ return array(
         </div>
     ',
     'customer-relationships-5' => '
-        <div class="pb w-5/6 mx-auto">
+        <div class="pb w-5/6 mx-auto" style="width: 90%">
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Kundenerlebnis</h1>
             </div>
-            <div class="flex items-start mb-4">
+            <div class="flex items-start mb-2">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
                     <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
@@ -1106,8 +1110,8 @@ return array(
                     <div class="p-2 bg-grey-lighter">
                         <h4 class="italic font-bold mb-4">Empfehlungen:</h4>
                         <ol class="pl-6 text-sap-blue">
-                            <li class="mb-2">Viele große Unternehmen ermöglichen es ihren Kunden, zusätzliche Merkmale der von ihnen genutzten Produkte und Dienstleistungen zu bestimmen. Ermitteln Sie, wie Sie mehr Auswahl und kundenorientierte Optionen schaffen können, die Sie stärker von der Konkurrenz abheben. Das bedeutet nicht, mehr Komplexität in ihr Geschäft zu bringen. Intelligente Systeme ermöglichen Ihnen die Analyse historischer Daten für die Antizipation zukünftiger Kundenbedürfnisse und der Einsatz einer integrierten</li>
-                            <li class="mb-2">Kundenplattform sorgt dafür, dass Echtzeitdaten in automatische Warnungen und Aktionen im Front- und Backoffice überführt werden können. Voraussetzung dafür sind ein integrierter Ansatz zur Erfüllung der Kundenanforderungen und eine deutlich verbesserte Kommunikation im gesamten Unternehmen.</li>
+                            <li class="mb-1">Viele große Unternehmen ermöglichen es ihren Kunden, zusätzliche Merkmale der von ihnen genutzten Produkte und Dienstleistungen zu bestimmen. Ermitteln Sie, wie Sie mehr Auswahl und kundenorientierte Optionen schaffen können, die Sie stärker von der Konkurrenz abheben. Das bedeutet nicht, mehr Komplexität in ihr Geschäft zu bringen. Intelligente Systeme ermöglichen Ihnen die Analyse historischer Daten für die Antizipation zukünftiger Kundenbedürfnisse und der Einsatz einer integrierten</li>
+                            <li class="mb-1">Kundenplattform sorgt dafür, dass Echtzeitdaten in automatische Warnungen und Aktionen im Front- und Backoffice überführt werden können. Voraussetzung dafür sind ein integrierter Ansatz zur Erfüllung der Kundenanforderungen und eine deutlich verbesserte Kommunikation im gesamten Unternehmen.</li>
                         </ol>
                     </div>
                 </div>
@@ -1115,11 +1119,11 @@ return array(
         </div>
     ',
     'suppliers-distributors-1' => '
-        <div class="pb w-5/6 mx-auto">
+        <div class="pb w-5/6 mx-auto" style="width: 90%">
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Lieferanten und Händler</h1>
             </div>
-            <div class="flex items-start mb-4">
+            <div class="flex items-start mb-2">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
                     <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
@@ -1153,10 +1157,10 @@ return array(
                     <div class="p-2 bg-grey-lighter">
                         <h4 class="italic font-bold mb-4">Empfehlungen:</h4>
                         <ol class="pl-6 text-sap-blue">
-                            <li class="mb-2">Gestalten Sie die Beziehungen zu Ihren Lieferanten so, dass ein Informationsaustausch und Diskussionen über Verbesserungen leicht möglich sind. Dies erzeugt ein Verständnis dafür, wie Sie als Geschäftspartner bei Reaktionen auf die Marktdynamik flexibler zusammenarbeiten können. Sammeln und geben Sie Feedback, aber konzentrieren Sie es nicht nur auf Prozesse.</li>
-                            <li class="mb-2">Im Mittelpunkt sollte vielmehr stehen, wie die Zusammenarbeit zum Vorteil aller verbessert werden kann.</li>
-                            <li class="mb-2">Schaffen Sie neue Kanäle für die Kommunikation mit Ihren Lieferanten und erstellen Sie eine Datenbank mit den bekannten und bestehenden Herausforderungen.</li>
-                            <li class="mb-2">Diese kann zu einer Quelle für Projekte werden, bei denen Vorhaben gemeinsam realisiert werden. Konzentrieren Sie sich zunächst auf die oft auftretenden Herausforderungen und arbeiten Sie mit Ihren Lieferanten und Händlern gemeinsam an Prozessen und Richtlinien zur Reduzierung der Reaktionszeiten von der Erkennung bis zur Lösung eines Problems. Die Verkürzung dieses Zeitraums – und auch die Antizipation von Schwierigkeiten, bevor sie zu ernsten Problemen werden –ist ein entscheidender Schritt in Richtung Agilität. </li>
+                            <li class="mb-1">Gestalten Sie die Beziehungen zu Ihren Lieferanten so, dass ein Informationsaustausch und Diskussionen über Verbesserungen leicht möglich sind. Dies erzeugt ein Verständnis dafür, wie Sie als Geschäftspartner bei Reaktionen auf die Marktdynamik flexibler zusammenarbeiten können. Sammeln und geben Sie Feedback, aber konzentrieren Sie es nicht nur auf Prozesse.</li>
+                            <li class="mb-1">Im Mittelpunkt sollte vielmehr stehen, wie die Zusammenarbeit zum Vorteil aller verbessert werden kann.</li>
+                            <li class="mb-1">Schaffen Sie neue Kanäle für die Kommunikation mit Ihren Lieferanten und erstellen Sie eine Datenbank mit den bekannten und bestehenden Herausforderungen.</li>
+                            <li class="mb-1">Diese kann zu einer Quelle für Projekte werden, bei denen Vorhaben gemeinsam realisiert werden. Konzentrieren Sie sich zunächst auf die oft auftretenden Herausforderungen und arbeiten Sie mit Ihren Lieferanten und Händlern gemeinsam an Prozessen und Richtlinien zur Reduzierung der Reaktionszeiten von der Erkennung bis zur Lösung eines Problems. Die Verkürzung dieses Zeitraums – und auch die Antizipation von Schwierigkeiten, bevor sie zu ernsten Problemen werden –ist ein entscheidender Schritt in Richtung Agilität. </li>
                         </ol>
                     </div>
                 </div>
@@ -1164,11 +1168,11 @@ return array(
         </div>
     ',
     'suppliers-distributors-2' => '
-        <div class="pb w-5/6 mx-auto">
+        <div class="pb w-5/6 mx-auto" style="width: 90%">
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Lieferanten und Händler</h1>
             </div>
-            <div class="flex items-start mb-4">
+            <div class="flex items-start mb-2">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
                     <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
@@ -1205,10 +1209,10 @@ return array(
                     <div class="p-2 bg-grey-lighter">
                         <h4 class="italic font-bold mb-4">Empfehlungen:</h4>
                         <ol class="pl-6 text-sap-blue">
-                            <li class="mb-2">Beginnen Sie damit, einen strukturierten Informationsaustausch mit Ihren Lieferanten und Händlern zu etablieren. Benennen Sie dafür feste Kontaktpersonen und legen Sie einen konkreten Terminplan fest. Übernehmen Sie die Führung, wenn es um Themen wie Geschäftsanforderungen und mehr Flexibilität geht. Verhalten Sie sich so, wie Sie es von Ihren Geschäftspartnern erwarten und sprechen Sie klar an, was Sie sich von der Geschäftsbeziehung versprechen.</li>
-                            <li class="mb-2">Entwickeln Sie Richtlinien und Prozesse, die den Austausch von Informationen und Erkenntnissen mit den Partnern, unter Einbeziehung relevanter Abteilungen und Verantwortlicher, verbessern.</li>
-                            <li class="mb-2">Richten Sie Kontrollpunkte ein, um zukünftige Probleme schneller zu erkennen und bestehende Engpässe zügig zu beseitigen.</li>
-                            <li class="mb-2">Zeigen Sie Ihren Lieferanten und Händlern, dass sie für Ihr Geschäft von großer Bedeutung sind und sie eine gemeinsame Zukunft haben. Ermitteln Sie auch ihre Fähigkeit zur Agilität und ihre Pläne zu mehr Flexibilität. Sie werden von ihnen lernen. Informieren Sie Ihre Partner über Ihre Vorhaben und holen Sie ihr Feedback dazu ein. </li>
+                            <li class="mb-1">Beginnen Sie damit, einen strukturierten Informationsaustausch mit Ihren Lieferanten und Händlern zu etablieren. Benennen Sie dafür feste Kontaktpersonen und legen Sie einen konkreten Terminplan fest. Übernehmen Sie die Führung, wenn es um Themen wie Geschäftsanforderungen und mehr Flexibilität geht. Verhalten Sie sich so, wie Sie es von Ihren Geschäftspartnern erwarten und sprechen Sie klar an, was Sie sich von der Geschäftsbeziehung versprechen.</li>
+                            <li class="mb-1">Entwickeln Sie Richtlinien und Prozesse, die den Austausch von Informationen und Erkenntnissen mit den Partnern, unter Einbeziehung relevanter Abteilungen und Verantwortlicher, verbessern.</li>
+                            <li class="mb-1">Richten Sie Kontrollpunkte ein, um zukünftige Probleme schneller zu erkennen und bestehende Engpässe zügig zu beseitigen.</li>
+                            <li class="mb-1">Zeigen Sie Ihren Lieferanten und Händlern, dass sie für Ihr Geschäft von großer Bedeutung sind und sie eine gemeinsame Zukunft haben. Ermitteln Sie auch ihre Fähigkeit zur Agilität und ihre Pläne zu mehr Flexibilität. Sie werden von ihnen lernen. Informieren Sie Ihre Partner über Ihre Vorhaben und holen Sie ihr Feedback dazu ein. </li>
                         </ol>
                     </div>
                 </div>
@@ -1216,11 +1220,11 @@ return array(
         </div>
     ',
     'suppliers-distributors-3' => '
-        <div class="pb w-5/6 mx-auto">
+        <div class="pb w-5/6 mx-auto" style="width: 90%">
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Lieferanten und Händler</h1>
             </div>
-            <div class="flex items-start mb-4">
+            <div class="flex items-start mb-2">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
                     <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
@@ -1260,10 +1264,10 @@ return array(
                     <div class="p-2 bg-grey-lighter">
                         <h4 class="italic font-bold mb-4">Empfehlungen:</h4>
                         <ol class="pl-6 text-sap-blue">
-                            <li class="mb-2">Gehen Sie über die regelmäßigen Interaktionen hinaus und etablieren Sie einen offenen Informationsaustausch zwischen Ihren Lieferanten und Ihren Mitarbeitern, bei dem es um die Bewältigung von Herausforderungen und die Suche nach gemeinsamen Chancen geht.</li>
-                            <li class="mb-2">Gehen Sie den ersten großen Schritt hin zu einer wirklichen Integration und beginnen Sie, falls dies noch nicht erfolgt ist, mit der Integration von Planungserkenntnissen und wichtiger Daten, zum Beispiel Daten zu Nachfragezyklen und saisonalen Faktoren.</li>
-                            <li class="mb-2">Öffnen Sie einen Kommunikationskanal zu Ihrem Händler und dessen Kunden oder zu Ihren direkten Kunden. Beziehen Sie Ihre Lieferanten in diese Gespräche ein.</li>
-                            <li class="mb-2">Informieren Sie die Lieferanten über Ihre Bedarfsplanung und zeigen Sie ihnen damit, wo und wann es Nachfrageänderungen geben könnte. Machen Sie Ihre Intention deutlich, dass Sie sich zu einem wirklich agilen Unternehmen entwickeln wollen, und holen Sie Ihre Partner mit Ihrer Roadmap ins Boot.</li>
+                            <li class="mb-1">Gehen Sie über die regelmäßigen Interaktionen hinaus und etablieren Sie einen offenen Informationsaustausch zwischen Ihren Lieferanten und Ihren Mitarbeitern, bei dem es um die Bewältigung von Herausforderungen und die Suche nach gemeinsamen Chancen geht.</li>
+                            <li class="mb-1">Gehen Sie den ersten großen Schritt hin zu einer wirklichen Integration und beginnen Sie, falls dies noch nicht erfolgt ist, mit der Integration von Planungserkenntnissen und wichtiger Daten, zum Beispiel Daten zu Nachfragezyklen und saisonalen Faktoren.</li>
+                            <li class="mb-1">Öffnen Sie einen Kommunikationskanal zu Ihrem Händler und dessen Kunden oder zu Ihren direkten Kunden. Beziehen Sie Ihre Lieferanten in diese Gespräche ein.</li>
+                            <li class="mb-1">Informieren Sie die Lieferanten über Ihre Bedarfsplanung und zeigen Sie ihnen damit, wo und wann es Nachfrageänderungen geben könnte. Machen Sie Ihre Intention deutlich, dass Sie sich zu einem wirklich agilen Unternehmen entwickeln wollen, und holen Sie Ihre Partner mit Ihrer Roadmap ins Boot.</li>
                         </ol>
                     </div>
                 </div>
@@ -1271,11 +1275,11 @@ return array(
         </div>
     ',
     'suppliers-distributors-4' => '
-        <div class="pb w-5/6 mx-auto">
+        <div class="pb w-5/6 mx-auto" style="width: 90%">
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Lieferanten und Händler</h1>
             </div>
-            <div class="flex items-start mb-4">
+            <div class="flex items-start mb-2">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
                     <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
@@ -1312,10 +1316,10 @@ return array(
                     <div class="p-2 bg-grey-lighter">
                         <h4 class="italic font-bold mb-4">Empfehlungen:</h4>
                         <ol class="pl-6 text-sap-blue">
-                            <li class="mb-2"> Gemeinsame Planungssitzungen und der Einsatz von Analysetools helfen bei der Prognose von Marktschwankungen und ihrer Berücksichtigung. Die Lieferanten können sich anhand der Prognosen besser darauf vorbereiten, Sie im Bedarfsfall zu unterstützen und Ihre Händler wissen, was wann auf sie zukommt.</li>
-                            <li class="mb-2">Ihre Händler könnten auf Basis kontinuierlichen Feedbacks und Einbezug der Planungserkenntnisse die Reaktionszeiten weiter verkürzen.</li>
-                            <li class="mb-2">Möglicherweise müssen Sie die Kommunikationskanäle noch feiner abstimmen und sicherstellen, dass das gesamte Unternehmen seinen Beitrag zum Wissensaustausch leistet.</li>
-                            <li class="mb-2">Messen, verbessern und verfolgen Sie einen kontinuierlichen Informationskreislauf, der die gesamte Liefer- und Distributionskette einbezieht. Setzen Sie auf Richtlinien und Tools, die Reaktionen in Echtzeit ermöglichen. Diese verbessern die Customer Experience, minimieren Störungen und verschaffen Ihnen einen weiteren Wettbewerbsvorteil.</li>
+                            <li class="mb-1"> Gemeinsame Planungssitzungen und der Einsatz von Analysetools helfen bei der Prognose von Marktschwankungen und ihrer Berücksichtigung. Die Lieferanten können sich anhand der Prognosen besser darauf vorbereiten, Sie im Bedarfsfall zu unterstützen und Ihre Händler wissen, was wann auf sie zukommt.</li>
+                            <li class="mb-1">Ihre Händler könnten auf Basis kontinuierlichen Feedbacks und Einbezug der Planungserkenntnisse die Reaktionszeiten weiter verkürzen.</li>
+                            <li class="mb-1">Möglicherweise müssen Sie die Kommunikationskanäle noch feiner abstimmen und sicherstellen, dass das gesamte Unternehmen seinen Beitrag zum Wissensaustausch leistet.</li>
+                            <li class="mb-1">Messen, verbessern und verfolgen Sie einen kontinuierlichen Informationskreislauf, der die gesamte Liefer- und Distributionskette einbezieht. Setzen Sie auf Richtlinien und Tools, die Reaktionen in Echtzeit ermöglichen. Diese verbessern die Customer Experience, minimieren Störungen und verschaffen Ihnen einen weiteren Wettbewerbsvorteil.</li>
                         </ol>
                     </div>
                 </div>
@@ -1323,11 +1327,11 @@ return array(
         </div>
     ',
     'suppliers-distributors-5' => '
-        <div class="pb w-5/6 mx-auto">
+        <div class="pb w-5/6 mx-auto" style="width: 90%">
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Lieferanten und Händler</h1>
             </div>
-            <div class="flex items-start mb-4">
+            <div class="flex items-start mb-2">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
                     <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
@@ -1364,10 +1368,10 @@ return array(
                     <div class="p-2 bg-grey-lighter">
                         <h4 class="italic font-bold mb-4">Empfehlungen:</h4>
                         <ol class="pl-6 text-sap-blue">
-                            <li class="mb-2">Überdenken und klären Sie Differenzen bezüglich der Umsetzung mit den Lieferanten. Bauen Sie eine Kultur der Agilität und Flexibilität auf, indem Sie auf Bereiche hinweisen, die weiter verbessert werden können, und Wege aufzeigen, auf denen Sie gemeinsam noch mehr Agilität erreichen.</li>
-                            <li class="mb-2">Konzentrieren Sie sich auf kleinere Verbesserungen im Vertriebsnetzwerk. Auch unbedeutend erscheinende Maßnahmen können sich zu großen Gewinnen summieren.</li>
-                            <li class="mb-2">Verbessern Sie den Feedbackprozess und versuchen Sie die Reaktionszeiten, sowohl Ihre als auch die Ihrer Händler, weiter zu verkürzen. Stellen Sie sicher, dass Ihr Unternehmen über einen offenen Kommunikationskanal verfügt und Anforderungen nahezu in Echtzeit an das Lieferantennetz weitergeben kann.</li>
-                            <li class="mb-2">Bauen Sie weiterhin eine offene und regelmäßige Kommunikation mit Ihren Distributoren auf, die auf Zusammenarbeit und gegenseitigem Informationsaustausch basiert. Konzentrieren Sie sich auf eine vorausschauende Planung, die die Marktveränderungen antizipiert und bieten Sie Ihren Kunden mehr Flexibilität. Sie werden damit Ihre Wettbewerbsvorteile weiter ausbauen.</li>
+                            <li class="mb-1">Überdenken und klären Sie Differenzen bezüglich der Umsetzung mit den Lieferanten. Bauen Sie eine Kultur der Agilität und Flexibilität auf, indem Sie auf Bereiche hinweisen, die weiter verbessert werden können, und Wege aufzeigen, auf denen Sie gemeinsam noch mehr Agilität erreichen.</li>
+                            <li class="mb-1">Konzentrieren Sie sich auf kleinere Verbesserungen im Vertriebsnetzwerk. Auch unbedeutend erscheinende Maßnahmen können sich zu großen Gewinnen summieren.</li>
+                            <li class="mb-1">Verbessern Sie den Feedbackprozess und versuchen Sie die Reaktionszeiten, sowohl Ihre als auch die Ihrer Händler, weiter zu verkürzen. Stellen Sie sicher, dass Ihr Unternehmen über einen offenen Kommunikationskanal verfügt und Anforderungen nahezu in Echtzeit an das Lieferantennetz weitergeben kann.</li>
+                            <li class="mb-1">Bauen Sie weiterhin eine offene und regelmäßige Kommunikation mit Ihren Distributoren auf, die auf Zusammenarbeit und gegenseitigem Informationsaustausch basiert. Konzentrieren Sie sich auf eine vorausschauende Planung, die die Marktveränderungen antizipiert und bieten Sie Ihren Kunden mehr Flexibilität. Sie werden damit Ihre Wettbewerbsvorteile weiter ausbauen.</li>
                         </ol>
                     </div>
                 </div>
@@ -1375,11 +1379,11 @@ return array(
         </div>
     ',
     'people-experience-1' => '
-        <div class="pb w-5/6 mx-auto">
+        <div class="pb w-5/6 mx-auto" style="width: 90%">
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Mitarbeitererlebnis</h1>
             </div>
-            <div class="flex items-start mb-4">
+            <div class="flex items-start mb-2">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
                     <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
@@ -1416,9 +1420,9 @@ return array(
                     <div class="p-2 bg-grey-lighter">
                         <h4 class="italic font-bold mb-4">Empfehlungen:</h4>
                         <ol class="pl-6 text-sap-blue">
-                            <li class="mb-2">Beginnen Sie mit der Einführung klarer Kommunikationskanäle. Von zentraler Bedeutung ist dabei die Förderung einer stärkeren Zusammenarbeit von Teams. Indem Sie die Silos und Barrieren zwischen den Abteilungen abbauen, können Sie einen Dialog zwischen Teams anstoßen, bei dem über Verbesserungen gesprochen wird. Dieser Dialog muss gesteuert werden.</li>
-                            <li class="mb-2"> Ihm müssen Maßnahmen folgen, damit Veränderungen auch tatsächlich stattfinden. Ermutigen Sie Ihre Mitarbeiter, mehr über die langfristige Zukunft des Unternehmens zu sprechen und wie man diese gemeinsam gestalten kann – und nicht aus Sicht einzelner Abteilungen oder Funktionsbereiche.</li>
-                            <li class="mb-2">Sie werden erstaunt sein, wie viel Sie dabei lernen und welche guten Ideen sich bislang in den Köpfen der Mitarbeiter verborgen haben. Erweitern Sie die Bewertung der Mitarbeiter um die Punkte Agilität und Flexibilität. Überlegen Sie, wie Kennzahlen dafür aussehen könnten und was genau gemessen werden soll. Denken Sie über die Festlegung von Zielen nach, die die Zusammenarbeit und flexiblere Arbeits- und Geschäftsabläufe fördern. </li>
+                            <li class="mb-1">Beginnen Sie mit der Einführung klarer Kommunikationskanäle. Von zentraler Bedeutung ist dabei die Förderung einer stärkeren Zusammenarbeit von Teams. Indem Sie die Silos und Barrieren zwischen den Abteilungen abbauen, können Sie einen Dialog zwischen Teams anstoßen, bei dem über Verbesserungen gesprochen wird. Dieser Dialog muss gesteuert werden.</li>
+                            <li class="mb-1"> Ihm müssen Maßnahmen folgen, damit Veränderungen auch tatsächlich stattfinden. Ermutigen Sie Ihre Mitarbeiter, mehr über die langfristige Zukunft des Unternehmens zu sprechen und wie man diese gemeinsam gestalten kann – und nicht aus Sicht einzelner Abteilungen oder Funktionsbereiche.</li>
+                            <li class="mb-1">Sie werden erstaunt sein, wie viel Sie dabei lernen und welche guten Ideen sich bislang in den Köpfen der Mitarbeiter verborgen haben. Erweitern Sie die Bewertung der Mitarbeiter um die Punkte Agilität und Flexibilität. Überlegen Sie, wie Kennzahlen dafür aussehen könnten und was genau gemessen werden soll. Denken Sie über die Festlegung von Zielen nach, die die Zusammenarbeit und flexiblere Arbeits- und Geschäftsabläufe fördern. </li>
                         </ol>
                     </div>
                 </div>
@@ -1426,11 +1430,11 @@ return array(
         </div>
     ',
     'people-experience-2' => '
-        <div class="pb w-5/6 mx-auto">
+        <div class="pb w-5/6 mx-auto" style="width: 90%">
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Mitarbeitererlebnis</h1>
             </div>
-            <div class="flex items-start mb-4">
+            <div class="flex items-start mb-2">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
                     <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
@@ -1464,10 +1468,10 @@ return array(
                     <div class="p-2 bg-grey-lighter">
                         <h4 class="italic font-bold mb-4">Empfehlungen:</h4>
                         <ol class="pl-6 text-sap-blue">
-                            <li class="mb-2">Lernen Sie von eigenen Best Practices. Damit meinen wir die Bereiche Ihres Unternehmens, in denen engagierte Mitarbeiter agil und flexibel arbeiten. Studien von IDC zeigen, dass die Mitarbeiter, die auf ein gemeinsames Ziel hinarbeiten und denen die Flexibilität zugestanden wird, bei der Lösung von Problemen und der Entwicklung neuer Ideen kreativ zu sein, engagierter und produktiver sind.</li>
-                            <li class="mb-2">Schaffen Sie Strukturen, in denen Sie von Ihren Teams Feedback dazu einholen, wie gut sie auf Veränderungen reagieren. Konkret, wie schnell können Probleme gelöst werden.</li>
-                            <li class="mb-2">Probleme zu erkennen, fällt meistens leicht – die Herausforderung besteht jedoch darin, sie dauerhaft zu beheben. Integrieren Sie die Mitarbeiterplanung (den Entscheidungsprozess, woran Ihre Mitarbeiter schwerpunktmäßig arbeiten sollen) mit Informationen von Kunden, Partnern und allgemeinem Feedback.</li>
-                            <li class="mb-2">Beziehen Sie Ihre Mitarbeiter in diesen Prozess ein, damit Sie gemeinsam den besten Weg festlegen, wie sie ihre Zeit und Energie am gewinnbringendsten einsetzen können. Führen Sie zusätzliche Kennzahlen für Mitarbeiter ein, die die Agilität und Flexibilität erfassen.</li>
+                            <li class="mb-1">Lernen Sie von eigenen Best Practices. Damit meinen wir die Bereiche Ihres Unternehmens, in denen engagierte Mitarbeiter agil und flexibel arbeiten. Studien von IDC zeigen, dass die Mitarbeiter, die auf ein gemeinsames Ziel hinarbeiten und denen die Flexibilität zugestanden wird, bei der Lösung von Problemen und der Entwicklung neuer Ideen kreativ zu sein, engagierter und produktiver sind.</li>
+                            <li class="mb-1">Schaffen Sie Strukturen, in denen Sie von Ihren Teams Feedback dazu einholen, wie gut sie auf Veränderungen reagieren. Konkret, wie schnell können Probleme gelöst werden.</li>
+                            <li class="mb-1">Probleme zu erkennen, fällt meistens leicht – die Herausforderung besteht jedoch darin, sie dauerhaft zu beheben. Integrieren Sie die Mitarbeiterplanung (den Entscheidungsprozess, woran Ihre Mitarbeiter schwerpunktmäßig arbeiten sollen) mit Informationen von Kunden, Partnern und allgemeinem Feedback.</li>
+                            <li class="mb-1">Beziehen Sie Ihre Mitarbeiter in diesen Prozess ein, damit Sie gemeinsam den besten Weg festlegen, wie sie ihre Zeit und Energie am gewinnbringendsten einsetzen können. Führen Sie zusätzliche Kennzahlen für Mitarbeiter ein, die die Agilität und Flexibilität erfassen.</li>
                         </ol>
                     </div>
                 </div>
@@ -1475,11 +1479,11 @@ return array(
         </div>
     ',
     'people-experience-3' => '
-        <div class="pb w-5/6 mx-auto">
+        <div class="pb w-5/6 mx-auto" style="width: 90%">
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Mitarbeitererlebnis</h1>
             </div>
-            <div class="flex items-start mb-4">
+            <div class="flex items-start mb-2">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
                     <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
@@ -1516,10 +1520,10 @@ return array(
                     <div class="p-2 bg-grey-lighter">
                         <h4 class="italic font-bold mb-4">Empfehlungen:</h4>
                         <ol class="pl-6 text-sap-blue">
-                            <li class="mb-2">Überdenken Sie die Art und Weise, wie unterschiedliche Abteilungen Informationen über Ihre Mitarbeiter nutzen. Dabei können Sie sich auf die Employee Experience (die Mitarbeitererfahrungen; das Arbeitsklima) und deren Unterschiede in den einzelnen Abteilungen konzentrieren. Zu erkennen, wenn Mitarbeiter unzufrieden sind, kann zu besseren Einblicken in Probleme führen. Mitarbeiter mit mehr Engagement sind produktiver und zeigen mehr Agilität bei der Anpassung an Veränderungen.</li>
-                            <li class="mb-2">Suchen Sie nach Wegen, die Agilität zwischen Funktionsbereichen und Rollen zu fördern. Verbessern Sie die Zusammenarbeit der Abteilungen und erkennen Sie, wo es Spannungen und Probleme gibt. Bauen Sie auf den bereits eingeführten Best Practices auf. Suchen Sie nach Beispielen, wo bestimmte Personen und Abteilungen gut zusammenarbeiten und nutzen Sie die daraus gewonnenen Erfahrungen für andere Unternehmensbereiche</li>
-                            <li class="mb-2">Überlegen Sie, wie Sie Rollen und Funktionsbereiche flexibler gestalten können, damit die Mitarbeiter sehen, dass es für sie Weiterentwicklungsmöglichkeiten im Unternehmen gibt. Dies führt zu einer viel besseren Integration ihres Wissens und zu einer stärkeren Mitarbeiterbindung.</li>
-                            <li class="mb-2">Arbeiten Sie mit der Personalabteilung und den Vorgesetzten zusammen und verschaffen Sie sich einen vollständigen Überblick über die Bedürfnisse und Stärken der Mitarbeiter. Bewerten Sie den Projekterfolg und die Kundenzufriedenheit und wie beides mit der Messung der Mitarbeiterleistung korreliert. </li>
+                            <li class="mb-1">Überdenken Sie die Art und Weise, wie unterschiedliche Abteilungen Informationen über Ihre Mitarbeiter nutzen. Dabei können Sie sich auf die Employee Experience (die Mitarbeitererfahrungen; das Arbeitsklima) und deren Unterschiede in den einzelnen Abteilungen konzentrieren. Zu erkennen, wenn Mitarbeiter unzufrieden sind, kann zu besseren Einblicken in Probleme führen. Mitarbeiter mit mehr Engagement sind produktiver und zeigen mehr Agilität bei der Anpassung an Veränderungen.</li>
+                            <li class="mb-1">Suchen Sie nach Wegen, die Agilität zwischen Funktionsbereichen und Rollen zu fördern. Verbessern Sie die Zusammenarbeit der Abteilungen und erkennen Sie, wo es Spannungen und Probleme gibt. Bauen Sie auf den bereits eingeführten Best Practices auf. Suchen Sie nach Beispielen, wo bestimmte Personen und Abteilungen gut zusammenarbeiten und nutzen Sie die daraus gewonnenen Erfahrungen für andere Unternehmensbereiche</li>
+                            <li class="mb-1">Überlegen Sie, wie Sie Rollen und Funktionsbereiche flexibler gestalten können, damit die Mitarbeiter sehen, dass es für sie Weiterentwicklungsmöglichkeiten im Unternehmen gibt. Dies führt zu einer viel besseren Integration ihres Wissens und zu einer stärkeren Mitarbeiterbindung.</li>
+                            <li class="mb-1">Arbeiten Sie mit der Personalabteilung und den Vorgesetzten zusammen und verschaffen Sie sich einen vollständigen Überblick über die Bedürfnisse und Stärken der Mitarbeiter. Bewerten Sie den Projekterfolg und die Kundenzufriedenheit und wie beides mit der Messung der Mitarbeiterleistung korreliert. </li>
                         </ol>
                     </div>
                 </div>
@@ -1527,11 +1531,11 @@ return array(
         </div>
     ',
     'people-experience-4' => '
-        <div class="pb w-5/6 mx-auto">
+        <div class="pb w-5/6 mx-auto" style="width: 90%">
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Mitarbeitererlebnis</h1>
             </div>
-            <div class="flex items-start mb-4">
+            <div class="flex items-start mb-2">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
                     <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
@@ -1565,10 +1569,10 @@ return array(
                     <div class="p-2 bg-grey-lighter">
                         <h4 class="italic font-bold mb-4">Empfehlungen:</h4>
                         <ol class="pl-6 text-sap-blue">
-                            <li class="mb-2">Entwickeln Sie Ihre Kultur des Austauschs und der Zusammenarbeit weiter und gestalten Sie ein Unternehmen, das agiles Denken, Ideen und kontinuierliche Verbesserungen fördert und belohnt.</li>
-                            <li class="mb-2">Richten Sie einen Prozess ein, der den Mitarbeitern Zugriff auf Ressourcen (Personal, Geld, Zeit) ermöglicht, mit denen sie an Verbesserungen arbeiten können, oder unterstützen Sie die größere Agilität von Einzelnen, Abteilungen und Bereichen.</li>
-                            <li class="mb-2">Machen Sie die Agilität zu einer zentralen Leistungskennzahl (KPI) für die gesamte Belegschaft. Messen Sie die Mitarbeiter daran, wie agil sie arbeiten, wie gut sie sich an Veränderungen anpassen, wie eng sie mit anderen zusammenarbeiten und wie schnell sie Lösungen für Probleme und Herausforderungen entwickeln. Das ist eine große Aufgabe für Sie und Ihr Unternehmen, aber sie bringt Ihnen deutlich mehr Agilität.</li>
-                            <li class="mb-2">Arbeiten Sie mit der Personalabteilung und den Vorgesetzten zusammen und verschaffen Sie sich einen vollständigen Überblick über die Bedürfnisse und Stärken der Mitarbeiter. Bewerten Sie den Projekterfolg und die Kundenzufriedenheit und wie beides mit der Messung der Mitarbeiterleistung korreliert.</li>
+                            <li class="mb-1">Entwickeln Sie Ihre Kultur des Austauschs und der Zusammenarbeit weiter und gestalten Sie ein Unternehmen, das agiles Denken, Ideen und kontinuierliche Verbesserungen fördert und belohnt.</li>
+                            <li class="mb-1">Richten Sie einen Prozess ein, der den Mitarbeitern Zugriff auf Ressourcen (Personal, Geld, Zeit) ermöglicht, mit denen sie an Verbesserungen arbeiten können, oder unterstützen Sie die größere Agilität von Einzelnen, Abteilungen und Bereichen.</li>
+                            <li class="mb-1">Machen Sie die Agilität zu einer zentralen Leistungskennzahl (KPI) für die gesamte Belegschaft. Messen Sie die Mitarbeiter daran, wie agil sie arbeiten, wie gut sie sich an Veränderungen anpassen, wie eng sie mit anderen zusammenarbeiten und wie schnell sie Lösungen für Probleme und Herausforderungen entwickeln. Das ist eine große Aufgabe für Sie und Ihr Unternehmen, aber sie bringt Ihnen deutlich mehr Agilität.</li>
+                            <li class="mb-1">Arbeiten Sie mit der Personalabteilung und den Vorgesetzten zusammen und verschaffen Sie sich einen vollständigen Überblick über die Bedürfnisse und Stärken der Mitarbeiter. Bewerten Sie den Projekterfolg und die Kundenzufriedenheit und wie beides mit der Messung der Mitarbeiterleistung korreliert.</li>
                         </ol>
                     </div>
                 </div>
@@ -1576,11 +1580,11 @@ return array(
         </div>
     ',
     'people-experience-5' => '
-        <div class="pb w-5/6 mx-auto">
+        <div class="pb w-5/6 mx-auto" style="width: 90%">
             <div class="h-1 overflow-hidden">
                 <h1 class="text-white">Mitarbeitererlebnis</h1>
             </div>
-            <div class="flex items-start mb-4">
+            <div class="flex items-start mb-2">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
                     <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
@@ -1620,10 +1624,10 @@ return array(
                     <div class="p-2 bg-grey-lighter">
                         <h4 class="italic font-bold mb-4">Empfehlungen:</h4>
                         <ol class="pl-6 text-sap-blue">
-                            <li class="mb-2">Erhalten Sie die Dynamik aufrecht, indem Sie Best Practices für agile Arbeitsweisen und Anpassungsfähigkeit innerhalb des Unternehmens belohnen.</li>
-                            <li class="mb-2">Kommunizieren Sie weiterhin die Vorteile des Informationsaustauschs und integrieren Sie das Teilen von Informationen in Ihre Unternehmenskultur.</li>
-                            <li class="mb-2">Richten Sie Ihre Mitarbeiterentwicklung auf kontinuierliche Weiterbildung, Recruiting und Spezialisierung aus. Messen Sie die Leistung der Mitarbeiter auf mehreren Ebenen: Agilität, Kommunikation, Werteteilung und Teamarbeit. Unterstützen Sie dies durch regelmäßiges 360-Grad-Feedback und ziehen Sie daraus Ihre Erkenntnisse. Versuchen Sie, das Wissen aller Mitarbeiter zu erfassen und es im gesamten Unternehmen zu teilen.</li>
-                            <li class="mb-2">Sorgen Sie dafür, dass diese Wissenserfassung für die Mitarbeiter und die Zielgruppe relevant ist. Dies könnte mit Videos, Blogs und Vorträgen oder nach dem Buddy-Prinzip erfolgen, das eine Schüler-Lehrer-Mentalität fördert. Schaffen Sie eine Kultur, die den Mottos folgt „jeder Tag ist ein Tag des Lernens“ und „jeder weiß etwas, was ich nicht weiß“. Ihre Mitarbeiter werden dann hungrig nach Lernen und Veränderung.</li>
+                            <li class="mb-1">Erhalten Sie die Dynamik aufrecht, indem Sie Best Practices für agile Arbeitsweisen und Anpassungsfähigkeit innerhalb des Unternehmens belohnen.</li>
+                            <li class="mb-1">Kommunizieren Sie weiterhin die Vorteile des Informationsaustauschs und integrieren Sie das Teilen von Informationen in Ihre Unternehmenskultur.</li>
+                            <li class="mb-1">Richten Sie Ihre Mitarbeiterentwicklung auf kontinuierliche Weiterbildung, Recruiting und Spezialisierung aus. Messen Sie die Leistung der Mitarbeiter auf mehreren Ebenen: Agilität, Kommunikation, Werteteilung und Teamarbeit. Unterstützen Sie dies durch regelmäßiges 360-Grad-Feedback und ziehen Sie daraus Ihre Erkenntnisse. Versuchen Sie, das Wissen aller Mitarbeiter zu erfassen und es im gesamten Unternehmen zu teilen.</li>
+                            <li class="mb-1">Sorgen Sie dafür, dass diese Wissenserfassung für die Mitarbeiter und die Zielgruppe relevant ist. Dies könnte mit Videos, Blogs und Vorträgen oder nach dem Buddy-Prinzip erfolgen, das eine Schüler-Lehrer-Mentalität fördert. Schaffen Sie eine Kultur, die den Mottos folgt „jeder Tag ist ein Tag des Lernens“ und „jeder weiß etwas, was ich nicht weiß“. Ihre Mitarbeiter werden dann hungrig nach Lernen und Veränderung.</li>
                         </ol>
                     </div>
                 </div>

@@ -69,7 +69,7 @@ $manifest = json_decode($json, TRUE);
 </head>
 <body onload="subst()">
 <div class="swopimage w-full text-white bg-center bg-cover bg-no-repeat overflow-hidden bg-blackblack" style="height: {{ App::environment('local') ? '21mm' : '27mm'}};">
-	<div class="w-5/6 mx-auto">
+	<div class="w-5/6 mx-auto" style="width: 90%">
 		<h1 class="section font-thin uppercase text-{{ App::environment('local') ? '' : '3'}}xl pt-6">Click to be Agile</h1>
 		<div class="line w-32 overflow-hidden h-1 rounded my-2"></div>
 	</div>

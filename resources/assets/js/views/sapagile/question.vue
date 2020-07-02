@@ -64,7 +64,7 @@
 			<div class="container mx-auto my-4 px-4">
 				<transition name="fade" mode="out-in">
 					<button :class="buttonClass" v-show="showNext" @click="nextQuestion($event)">
-						<font-awesome-icon :icon="faSpinnerThird" size="2x" spin v-if="saving" /> <span v-else>{{$t('general.next')}}</span>
+						<font-awesome-icon :icon="faSpinnerThird" size="2x" spin v-if="saving" /> <span v-else>{{$t('sapagile.next')}}</span>
 					</button>
 				</transition>
 			</div>
