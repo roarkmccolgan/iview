@@ -3,7 +3,7 @@
 		<div class="flex flex-col">
 			<div class="bg-cover bg-no-repeat bg-blackblack bg-center" :style="`background-image: url(/images/tools/15/${currentQuestion.section}-bg.jpg);`">
 				<div class="container mx-auto">
-					<div class="text-white p-4 pb-8 sm:w-2/3" v-html="currentQuestion.description"></div>
+					<div class="text-white p-4 pb-8 sm:w-1/2" v-html="currentQuestion.description"></div>
 				</div>
 			</div>
 			<div class="container mx-auto mt-4 px-4">
@@ -320,6 +320,7 @@ export default{
 			var that = this;
 			setTimeout(function () {
 				that.showDetails = true;
+				that.showNext = true;
 				that.$router.go(-1);
 			}, 300);
 		},

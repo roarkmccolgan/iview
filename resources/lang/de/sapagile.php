@@ -20,10 +20,10 @@ return array(
     'sub-title'=>'Der erste Schritt auf Ihrem Weg zu mehr geschäftlicher Agilität',
     'landing1'=>'
         <p class="mb-4 text-xl font-bold text-sap-blue leading-tight">
-            Agile Unternehmen sind wettbewerbsfähiger, nutzen ihre Chancen schneller und bauen engere Beziehungen zu Lieferanten, Händler und Kunden auf.
+            Agile Unternehmen sind wettbewerbsfähiger, nutzen ihre Chancen schneller und bauen engere Beziehungen zu Lieferanten, Händlern und Kunden auf.
         </p>
         <p class="mb-4 text-xl font-bold leading-tight text-black leading-tight">
-            Wie können Sie zu so einem agilen Unternehmen werden? Zunächst einmal müssen Sie Ihren aktuellen Status genau kennen. Als nächstes ist es wichtig zu wissen, welche Maßnahmen zu mehr Agilität führen
+            Wie können Sie zu so einem agilen Unternehmen werden? Zunächst einmal müssen Sie Ihren aktuellen Status genau kennen. Als nächstes ist es wichtig zu wissen, welche Maßnahmen zu mehr Agilität führen.
         </p>',
     'landing-inner' => 'Das Agilitätstool von IDC bewertet die geschäftliche Agilität Ihres Unternehmens in fünf Schlüsselbereichen:',
     'landing2'=>'

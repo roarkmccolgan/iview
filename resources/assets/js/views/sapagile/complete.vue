@@ -268,7 +268,6 @@ export default{
 				company: false,
 				position: false,
 				business: false,
-				marketing: false,
 				city: false,
 				company_size: false,
 				areas_interest: false,

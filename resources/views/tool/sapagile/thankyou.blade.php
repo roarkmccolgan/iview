@@ -70,9 +70,9 @@
 <script type="text/javascript">
 var addthis_share = {
    url: "{{ url(session('locale').'/') }}",
-   title: "@lang('sapagile.full_title')",
+   title: "@lang('sapagile.full_title') - @lang('sapagile.social_description')",
    description: "@lang('sapagile.social_description')",
-   media: "https://clicktobeagile.idcready.net/images/tools/15/clicktobeagile.png"
+   media: "https://clicktobeagile.idcready.net/images/tools/15/clicktobeagile{{ App::getLocale() == 'en' ? '' : App::getLocale() }}.png"
 }
 </script>
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
