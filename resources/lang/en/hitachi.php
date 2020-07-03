@@ -165,7 +165,7 @@ return array(
         <p class="mb-2 font-bold italic">
             A well-thought-out cloud strategy and consistent execution of this strategy delivers the flexibility and scale that underpins digital business success and data transformation.
         </p>
-        <div class="float-right p-1 w-2/5 border font-bold text-blue-dark ml-2 mb-2">
+        <div class="float-right p-1 w-2/5 border italic font-bold text-blue-dark ml-2 mb-2">
             Cloud and data transformation initiatives improve efficiency, business performance, and the speed of innovation.
         </div>
         <p class="mb-2">
@@ -182,7 +182,7 @@ return array(
         <p class="mb-2 font-bold">
             Organizations that view cloud as a critical technology and the foundation of their digital transformation — and not just a tactical way to save costs — will be in a better position to capitalize on new digital initiatives, yield higher returns, and ultimately make cloud strategy a success.
         </p>
-        <div class="italic my-4 text-blue-dark font-bold clearfix p-2 rounded border">
+        <div class="italic my-4 text-blue-dark font-bold clearfix p-2 rounded bg-grey-lighter">
             <div class="float-left w-10 mr-3">
                 <img src=":url/images/tools/13/key.png" alt="" class="w-full" />
             </div>
@@ -197,7 +197,7 @@ return array(
         <p class="mb-2">
             The IDC Cloud Strategy Assessment ranks organisations by three maturity levels - <strong>Cloud Starters, Cloud Practitioners and Cloud Masters</strong>.
         </p>
-        <div class="mx-auto w-3/4">
+        <div class="mx-auto" style="width: 90%">
             <img src=":url/images/tools/13/rankings.png" class="w-full" />
         </div>
         <div class="text-center italic text-sm text-blue-dark">Key Differentiation Among the Three Cloud Usage Levels</div>
@@ -309,7 +309,8 @@ return array(
                 </p>
             </div>
         </div>
-        <img src=":url/images/tools/13/ww_cloud_adoption.png" alt="" class="block w-full mx-auto my-2" />
+        <div class="italic text-sm text-blue-dark">Cloud adoption trends </div>
+        <img src=":url/images/tools/13/ww_cloud_adoption.png" alt="" class="block w-5/6 mx-auto my-2" />
         <div class="clearfix">
             <p class="w-3/4 ml-auto mb-2">
                 <span class="font-bold">This section will assess your maturity and progress in key areas of cloud migration and application modernization</span> and help determine where you need to focus to get the best results. It is based on what\'s driving your key investment decisions, the challenges you are facing, and how initiatives are being prioritized within your cloud strategy.
@@ -462,7 +463,7 @@ return array(
     ',
     'question1-image' => '
         <div class="clearfix">
-            <div class="w-5/6 mx-auto">
+            <div class="w-full mx-auto">
                 <img src=":url/images/tools/13/question1.png" alt="" class="w-full my-2" />
             </div>
         </div>
@@ -944,7 +945,7 @@ return array(
                 <p class="mb-2">
                     The realization is dawning among savvy enterprises that there is no "silver bullet cloud" that answers all IT issues. <span class="font-bold italic">Organizations therefore seek to build an interoperable, hybrid, and multicloud IT infrastructure to gain the benefit of cloud without compromising on core IT values of security, resilience, and compliance. </span>
                 </p>
-                <div class="float-right p-1 w-2/5 border font-bold text-blue-dark ml-2 mb-2">
+                <div class="float-right p-1 w-2/5 border italic font-bold text-blue-dark ml-2 mb-2">
                     Cloud is seen as an operating model rather than a destination.
                 </div>
                 <p class="mb-2">
@@ -1140,6 +1141,7 @@ return array(
     'question6-image' => '
         <div class="clearfix pt-5">
             <div class="w-3/4 ml-auto">
+                <div class="italic text-sm text-blue-dark">Key Drivers for moving to a Cloud Architecture</div>
                 <img src=":url/images/tools/13/question6.png" alt="" class="w-full my-4" />
             </div>
         </div>
