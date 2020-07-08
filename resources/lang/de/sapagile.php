@@ -103,7 +103,7 @@ return array(
         wir senden Ihnen in Kürze eine E-Mail mit einem Link zu Ihrem persönlichen Bericht.<br/>
         Sollten Sie die E-Mail nicht innerhalb der nächsten fünf Minuten erhalten, schauen Sie bitte in Ihrem Spam-Ordner nach.<br/>
         Wenn Sie den Link nicht finden können, senden Sie bitte eine E-Mail an IDC (<a href="mailto:podgers@idc.com">podgers@idc.com</a>). Sie erhalten dann einen neuen Link.<br/><br/>
-        Wenn Sie mehr darüber erfahren möchten, wie SAP und Partner mittelständische Unternehmen unterstützen, die Digitalisierung erfolgreich anzugehen, klicken Sie bitte auf den folgenden Link: <a target="_blank" href="http://www.sap.de/digitalisierung-mittelstand">Mittelständische Vorreiter</a> - Digitalisierung in Wandel der Zeit.<br/><br/>
+        Wenn Sie mehr darüber erfahren möchten, wie SAP und Partner mittelständische Unternehmen unterstützen, die Digitalisierung erfolgreich anzugehen, klicken Sie bitte auf den folgenden Link: <a target="_blank" href="http://www.sap.de/digitalisierung-mittelstand">Mittelständische Vorreiter - Digitalisierung in Wandel der Zeit</a>.<br/><br/>
         Share the tool ',
     'complete_tweet' => 'Ich habe gerade die @IDCEMEA DSGVO-Bewertung für @3ds durchgeführt. Auch interessiert? ',// http://bit.ly/2gslXEh
     'email'=>[
