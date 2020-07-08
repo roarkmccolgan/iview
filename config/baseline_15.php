@@ -65,6 +65,17 @@ return [
             'roarkmccolgan@gmail.com',
             'lborthwick@idc.com',
         ],
+        '' => [
+            'fname'=>'required|min:2|max:255',
+            'sname'=>'required|min:2|max:255',
+            'email'=>'required|email',
+            'company'=>'sometimes|required|min:2|max:255',
+            'title'=>'sometimes|required|min:3|max:255',
+            'country'=>'sometimes|required',
+            'phone'=>'sometimes|required',
+            'terms'=>'required',
+            'marketing'=>'required'
+        ]
     ],
     'strategic-planning' => [
         'baseline' => 8.90,

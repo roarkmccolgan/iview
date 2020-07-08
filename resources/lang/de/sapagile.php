@@ -14,7 +14,7 @@ return array(
     'next'=>'weiter',
 
     'full_title' => 'Das Agilitätstool von IDC',
-    'social_description' => 'Ich habe gerade das IDC Assessement zur Agilitätsbewertung meines Unternehmens abgeschlossen und richtig interessante Einblicke erhalten. Vielleicht wäre es für Sie interessant:',
+    'social_description' => 'Ich habe gerade herausgefunden, wie agil mein Unternehmen ist und richtig interessante Einblicke erhalten. Vielleicht wäre das auch für Sie interessant: ',
 
     'title'=>'Mit einem Klick zu mehr Agilität',
     'sub-title'=>'Der erste Schritt auf Ihrem Weg zu mehr geschäftlicher Agilität',
@@ -117,11 +117,11 @@ return array(
             Wenn Sie mehr darüber erfahren möchten, wie SAP und Partner mittelständische Unternehmen unterstützen, die Digitalisierung erfolgreich anzugehen, dann klicken Sie bitte auf den folgenden Link:<br/>
             <a class="text-sap-blue" href="www.sap.de/digitalisierung-mittelstand">Mittelständische Vorreiter - Digitalisierung in Wandel der Zeit</a><br/><br/>
             Über Twitter und LinkedIn teilen:<br/><br/>
-            <a style="text-decoration: none;" href="http://twitter.com/share?text=Ich habe gerade herausgefunden, wie agil mein Unternehmen ist und richtig interessante Einblicke erhalten. Vielleicht wäre das auch für Sie interessant:&url=https://clicktobeagile.idcready.net/de">
-                <img src="https://clicktobeagile.idcready.net/images/twitter.png" style="width: 50px;"/>
+            <a style="text-decoration: none;" href="http://twitter.com/share?text=Ich habe gerade herausgefunden, wie agil mein Unternehmen ist und richtig interessante Einblicke erhalten. Vielleicht wäre das auch für Sie interessant: &url=https://clicktobeagile.idcready.net/de">
+                <img src="https://clicktobeagile.idcready.net/images/twitter.png" style="width: 25px;"/>
             </a>&nbsp;&nbsp;&nbsp;
             <a style="text-decoration: none;" href="https://www.linkedin.com/shareArticle?mini=true&url=https://clicktobeagile.idcready.net/de&title=&summary=Ich habe gerade herausgefunden, wie agil mein Unternehmen ist und richtig interessante Einblicke erhalten. Vielleicht wäre das auch für Sie interessant:&source=email">
-                <img src="https://clicktobeagile.idcready.net/images/linkedin.png" style="width: 50px;"/>
+                <img src="https://clicktobeagile.idcready.net/images/linkedin.png" style="width: 25px;"/>
             </a><br/>',
         'regards' => 'Mit freundlichen Grüßen',
         'team' => 'Ihr IDC-Team'

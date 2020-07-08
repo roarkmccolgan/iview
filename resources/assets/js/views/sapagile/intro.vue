@@ -86,7 +86,7 @@
 									{{ this.$t('sapagile.people-experience.popup') }}
 								</p>
 							</template>
-						</v-popover>, 
+						</v-popover>.
 					</p>
 					<div v-html="$t('sapagile.landing2')" key="3" data-index="3"></div>
 					</transition-group>
