@@ -794,6 +794,7 @@ export default {
             "errorRelationship": "Please select Relationship Type",
             "errorQualification": "Please select Partner Type",
             "errorAccept": "Bitte stimmen Sie den Geschäftsbedingungen zu, um fortzufahren",
+            "errorMarketing": "Bitte stimmen Sie zu, kontaktiert zu werden, um fortzufahren",
             "ranking": "Ranking"
         }
     },
