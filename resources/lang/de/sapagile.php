@@ -148,7 +148,11 @@ return array(
                         </p>
                         <p class="font-bold text-blackblack mb-2">
                             Wenn Sie mehr darüber erfahren möchten, wie SAP und Partner mittelständische Unternehmen unterstützen, die Digitalisierung erfolgreich anzugehen, dann klicken Sie auf die folgenden Links:<br/>
-                            <a class="text-sap-blue" href="http://www.sap.de/digitalisierung-mittelstand">Digitalisierung und strategische Planung</a> | <a class="text-sap-blue" href="https://discover.sap.com/das-intelligente-unternehmen-fuer-den-mittelstand/de-de/wachstum.html" target="_blank">Innovationsplattformen und Datenstrategie</a> | <a class="text-sap-blue" href="https://discover.sap.com/das-intelligente-unternehmen-fuer-den-mittelstand/de-de/kunden.html" target="_blank">Kundenerlebnis</a> | <a class="text-sap-blue" href="https://discover.sap.com/das-intelligente-unternehmen-fuer-den-mittelstand/de-de/hr-management.html" target="_blank">Mitarbeitererlebnis</a> | <a class="text-sap-blue" href="https://discover.sap.com/das-intelligente-unternehmen-fuer-den-mittelstand/de-de/digitale-lieferkette.html" target="_blank">Digitale Lieferkette & Prozessinnovation</a>.<br/><br/>
+                            <a class="text-sap-blue" href="http://www.sap.de/digitalisierung-mittelstand">Digitalisierung und strategische Planung</a><br/>
+                            <a class="text-sap-blue" href="https://discover.sap.com/das-intelligente-unternehmen-fuer-den-mittelstand/de-de/wachstum.html" target="_blank">Innovationsplattformen und Datenstrategie</a><br/>
+                            <a class="text-sap-blue" href="https://discover.sap.com/das-intelligente-unternehmen-fuer-den-mittelstand/de-de/kunden.html" target="_blank">Kundenerlebnis</a><br/>
+                            <a class="text-sap-blue" href="https://discover.sap.com/das-intelligente-unternehmen-fuer-den-mittelstand/de-de/hr-management.html" target="_blank">Mitarbeitererlebnis</a><br/>
+                            <a class="text-sap-blue" href="https://discover.sap.com/das-intelligente-unternehmen-fuer-den-mittelstand/de-de/digitale-lieferkette.html" target="_blank">Digitale Lieferkette & Prozessinnovation</a>.<br/>
                         </p>
                     </div>
                 </div>
