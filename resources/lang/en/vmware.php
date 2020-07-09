@@ -12,16 +12,24 @@ return array(
     'further-insight'=>'More information',
     'view-now'=>'View Now',
 
-    'title'=>'VMware Digital Maturity Assessment Tool',
+    'title'=>'Vmware Network Security Assessment',
     'sub-title'=>'in association with IDC',
     'landing'=>'
-        <h3>Is your Network Ready for the Digital Future?</h3>
-        <p class="mb-2">
-            IDC, a global leading provider of technology market research, has developed the secure-by-design network assessment, sponsored by VMware, to help organizations assess the state of their network as they embrace digital transformation.
+        <h3 class="text-2xl text-blackblack sm!:text-xl font-medium mb-2">Is your Network Ready and Secure for the Digital Future?</h3>
+        <p class="mb-4">
+            Understand the state of your network, via a brief assessment (5 minutes)<br/> and you will receive:
         </p>
-        <p class="mb-2">
-            This self-assessment tool is backed up by independent end-user research and IDC\'s in depth understanding of this market. Upon completion of a short survey (10 minutes) you will receive a custom report that benchmarks your organization\'s network maturity and provides you with essential and tailored guidance to help you prepare for the requirements of tomorrow and plot your course to network transformation.
-        </p>',
+        <div class="flex">
+            <div class="w-1/3">
+                <img src="/images/tools/14/report_sample.png" class="">
+            </div>
+            <ul class="list-disc flex-1 sm!:mt-10">
+                <li class="mb-1 font-medium">A custom report to download and share</li>
+                <li class="mb-1 font-medium">Tailored guidance on where to focus your network efforts for the future</li>
+                <li class="mb-1 font-medium">IDC ranking on network readiness and security</li>
+            </ul>
+        </div>
+        ',
     'startbut'=>'Begin assessment',
     
     'send'=>'We can send you the full results directly to your mailbox',
@@ -51,7 +59,7 @@ return array(
     'finishtxtheading' => '
         Thank you for completing the secure-by-design network assessment.
     ',
-    'finishtxt1' => 'Based on your responses, you rank as a',
+    'finishtxt1' => 'Based on your responses, you rank as a:',
     'finishtxtstage1' => '
         which is the lowest level of three in this assessment.
     ',
@@ -62,12 +70,7 @@ return array(
         which is the highest level of three in this assessment.
     ',
     'finishtxt2' => '
-        <p class="mb-2 mt-4">Please tell us a little about yourself and immediately receive your personalized report including:</p>
-        <ul>
-            <li>How you compare against your peers based on industry, organizational size, and geographic region</li>
-            <li>Essential guidance on where to focus your network efforts</li>
-            <li>Why the associated business benefits will make this a business priority today</li>
-        </ul>
+        <p class="mb-2 mt-4">Please tell us a little about yourself and immediately receive your personalized report.</p>
     ',
     'complete_thankyou' => 'Thank you :Fname,',
     'complete_body' => '
@@ -78,9 +81,9 @@ return array(
         </a>',
     'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @3ds. Interested? ',// http://bit.ly/2gslXEh
     'email'=>[
-        'subject' => 'VMware Digital Maturity Assessment',
+        'subject' => 'Vmware Network Security Assessment',
         'hi' => 'Hi :Fname',
-        'body' => 'As promised, here\'s a link to download your VMware Digital Maturity Assessment Report.',
+        'body' => 'As promised, here\'s a link to download your Vmware Network Security Assessment Report.',
         'link' => 'Download Report',
         'extra' => 'Once you\'ve read the report why not visit <a href="https://www.vmware.com/solutions/virtual-cloud-network.html" style="color:#054683">VMware</a>',
         'regards' => 'Regards',
@@ -1380,7 +1383,7 @@ return array(
 
     'conclusionintro' => '
         <div class="clearfix pb">
-            <div class="w-1/5 h-32 float-left">
+            <div class="w-1/5 h-48 float-left">
                 <div class="bg-center bg-top bg-no-repeat mx-auto" style="background-image: url(:icon); width: 20mm; height:20mm;"></div>
             </div>
             <p class="w-4/5 float-left mb-2">

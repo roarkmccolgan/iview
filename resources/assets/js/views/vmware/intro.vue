@@ -2,18 +2,18 @@
 	<div class="flex-grow">
 		<div class="container mx-auto bg-contain sm:bg-cover bg-top bg-no-repeat pt-36 sm:pt-16 pb-4" :style="`background-image: url('/images/tools/${assessment.tool.id}/homepage.jpg?id=1')`">
 				<div class="w-full sm:w-1/2 sm:mb-24 p-5 sm:p-10 sm:bg-white-transparent">
-					<h1 class="text-blackblack font-light font-sapagile text-3xl sm:text-5xl leading-none mb-2">{{ $t('vmware.title') }}</h1>
-					<h3 class="text-blackblack font-sapagile leading-tight">{{ $t('vmware.sub-title') }}</h3>
+					<h1 class="text-blackblack font-light font-vmware text-3xl sm:text-5xl leading-none mb-2">{{ $t('vmware.title') }}</h1>
+					<h3 class="text-blackblack font-vmware leading-tight">{{ $t('vmware.sub-title') }}</h3>
 				</div>
 		</div>
 		<div class="hrcolor p-1"></div>
 		<div class="container mx-auto">
-			<div class="flex flex-wrap flex-row-reverse sm:flex-no-wrap sm:flex-row items-center bg-white  p-5 sm:p-10 sm:shadow-lg">
+			<div class="flex flex-wrap flex-row-reverse sm:flex-no-wrap sm:flex-row items-center bg-white p-5 sm:p-10 sm:pb-16 sm:shadow-lg">
 					<div class="w-full sm:w-3/5">
 						<div v-html="$t('vmware.landing')"></div>
 					</div>
-					<div class="w-full sm:w-2/5 text-center my-16 sm:m-0">
-						<router-link class="sm:inline-block mx-auto bg-vmware-green hover:bg-vmware-green-light shadow-md text-white py-4 px-6 rounded no-underline" :to="'/questions/1'">{{ $t('vmware.startbut') }} <font-awesome-icon class="ml-2" :icon="icons.faArrowRight" /></router-link>
+					<div class="w-full mt-5 sm:w-2/5 sm:m-0 text-center">
+						<router-link class="inline-block text-xl mx-auto bg-vmware-green hover:bg-vmware-green-light shadow-md text-white py-4 px-6 rounded no-underline" :to="'/questions/1'">{{ $t('vmware.startbut') }} <font-awesome-icon class="ml-2" :icon="icons.faArrowRight" /></router-link>
 					</div>
 				</div>
 		</div>

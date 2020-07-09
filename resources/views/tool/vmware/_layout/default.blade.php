@@ -77,7 +77,7 @@ $manifest = json_decode($json, TRUE);
     <![endif]-->
     @show
 </head>
-<body class="min-h-screen font-sans font-light leading-normal">
+<body class="min-h-screen font-vmware text-grey-darkest font-light leading-normal">
     @yield('main')
     
     @include('_layouts.footer')

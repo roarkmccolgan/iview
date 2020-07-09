@@ -2878,7 +2878,7 @@ class PdfController extends Controller
                 session('product.alias').'.question1'
             );
 
-            $q1score = $this->getQuestionScoreNew(1, 'network-infrastructure', 1);
+            $q1score = $this->getQuestionScoreNew(4, 'network-infrastructure', 1); //only changed number for vmware!!!!!!
             if($q1score < 2.5){
                 $customCopy.= trans(session('product.alias').'.network-infrastructure-'.$overallNumber.'-q1-1');
             }elseif($q1score >= 2.5 &&  $q1score < 3.5){
@@ -2890,7 +2890,7 @@ class PdfController extends Controller
             $customCopy.= trans(
                 session('product.alias').'.question2'
             );
-            $q2score = $this->getQuestionScoreNew(2, 'network-infrastructure', 2);
+            $q2score = $this->getQuestionScoreNew(5, 'network-infrastructure', 2); //only changed number for vmware!!!!!!
             if($q2score == 1){
                 $customCopy.= trans(session('product.alias').'.network-infrastructure-'.$overallNumber.'-q2-1');
             }elseif($q2score == 2){
@@ -2906,7 +2906,7 @@ class PdfController extends Controller
             $customCopy.= trans(
                 session('product.alias').'.question3'
             );
-            $q3score = $this->getQuestionScoreNew(3, 'network-infrastructure', 3);
+            $q3score = $this->getQuestionScoreNew(6, 'network-infrastructure', 3); //only changed number for vmware!!!!!!
             if($q3score == 1){
                 $customCopy.= trans(session('product.alias').'.network-infrastructure-'.$overallNumber.'-q3-1');
             }elseif($q3score == 2){
@@ -2946,7 +2946,7 @@ class PdfController extends Controller
                 session('product.alias').'.question4'
             );
 
-            $q4score = $this->getQuestionScoreNew(4, 'intelligent-network-operations', 1);
+            $q4score = $this->getQuestionScoreNew(1, 'intelligent-network-operations', 1); //only changed number for vmware!!!!!!
             if($q4score == 1){
                 $customCopy.= trans(session('product.alias').'.intelligent-network-operations-'.$overallNumber.'-q4-1');
             }elseif($q4score == 2){
@@ -2962,7 +2962,7 @@ class PdfController extends Controller
             $customCopy.= trans(
                 session('product.alias').'.question5'
             );
-            $q5score = $this->getQuestionScoreNew(5, 'intelligent-network-operations', 2);
+            $q5score = $this->getQuestionScoreNew(2, 'intelligent-network-operations', 2); //only changed number for vmware!!!!!!
             if($q5score == 1){
                 $customCopy.= trans(session('product.alias').'.intelligent-network-operations-'.$overallNumber.'-q5-1');
             }elseif($q5score == 2){
@@ -2978,7 +2978,7 @@ class PdfController extends Controller
             $customCopy.= trans(
                 session('product.alias').'.question6'
             );
-            $q6score = $this->getQuestionScoreNew(6, 'intelligent-network-operations', 3);
+            $q6score = $this->getQuestionScoreNew(3, 'intelligent-network-operations', 3); //only changed number for vmware!!!!!!
             if($q6score == 1){
                 $customCopy.= trans(session('product.alias').'.intelligent-network-operations-'.$overallNumber.'-q6-1');
             }elseif($q6score == 2){

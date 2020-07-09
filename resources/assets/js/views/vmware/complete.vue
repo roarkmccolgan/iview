@@ -10,13 +10,13 @@
 				<div class="w-full sm:w-1/2 relative">
 					<h2 class="font-light leading-tight mb-4 text-vmware-blue-bright">{{ $t('vmware.finishtxtheading') }}</h2>
 					<p>
-						{{ $t('vmware.finishtxt1') }}: <strong class="inline font-bold text-lg text-vmware-green">{{ $t('vmware.'+result.overall.rating) }}</strong>
+						{{ $t('vmware.finishtxt1') }} <strong class="inline font-bold text-lg text-vmware-green">{{ $t('vmware.'+result.overall.rating) }}</strong>
 					</p>
 					<p class="mb-2">
 						{{ $t('vmware.finishtxt'+theResult['overall'].rating) }}
 					</p>
-					<p v-html="$t('vmware.finishtxt2')"></p>
-					<img class="max-w-full" :src="'/images/tools/' + assessment.tool.id + '/report'+ assessment.locale +'.png'" alt="">
+					<p class="mb-4" v-html="$t('vmware.finishtxt2')"></p>
+					<img class="sm:w-2/3 mx-auto block" :src="'/images/tools/' + assessment.tool.id + '/report_sample'+ assessment.locale +'.png'" alt="">
 				</div>
 				<div class="w-full sm:w-1/2">
 					<div class="sm:ml-8">
