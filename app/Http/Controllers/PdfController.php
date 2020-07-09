@@ -2540,6 +2540,9 @@ class PdfController extends Controller
             $user_score = session('result.overall.score');
 
             $customCopy.= trans(
+                session('product.alias').'.toc'
+            );
+            $customCopy.= trans(
                 session('product.alias').'.execsum'
             );
             $customCopy.= trans(
@@ -2592,7 +2595,8 @@ class PdfController extends Controller
                     'migration'=>$widths[$migrationNumber],
                     'status'=>$widths[$statusNumber],
                     'value'=>$widths[$valueNumber],
-                    'url'=>asset('/images/tools/13/comparisonbg_overall.svg')
+                    'url'=>asset('/images/tools/13/comparisonbg_overall.svg'),
+                    'ranking'=>trans(session('product.alias').'.stage'.$overallNumber),
                 ]
             );
             
@@ -2641,7 +2645,6 @@ class PdfController extends Controller
                     'url'=>url('/')
                 ]
             );
-            $customCopy.= '<div class="pb"></div>';
             $customCopy.= trans(
                 session('product.alias').'.question2'
             );
@@ -2654,6 +2657,7 @@ class PdfController extends Controller
                 $customCopy.= trans(session('product.alias').'.question2-'.$overallNumber.'-3');
             }
 
+            $customCopy.= '<div class="pb"></div>';
             $customCopy.= trans(
                 session('product.alias').'.question3'
             );
@@ -2665,8 +2669,6 @@ class PdfController extends Controller
             }else{
                 $customCopy.= trans(session('product.alias').'.question3-'.$overallNumber.'-3');
             }
-
-            $customCopy.= '<div class="pb"></div>';
             $customCopy.= trans(
                 session('product.alias').'.question4'
             );
@@ -3624,23 +3626,23 @@ class PdfController extends Controller
                 File::delete(storage_path().'/vmware-'.$timeStamp.'.pdf');
             }
         }elseif (session('product.id')==13) {
-            //$pdf->setOption('cover',session('url').'/'.session('localeUrl').'template/'.session('template').'/report/cover');
             $timeStamp = time();
             $pdf->save(storage_path().'/hitachi-'.$timeStamp.'.pdf');
-            //return $pdf->inline('invoice.pdf');
-            $merge = PDFMerger::init();
             $locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
+            
+            $merge = new NewPDF([
+                'A' => storage_path().'/hitachi_cover'.$locale .'.pdf',
+                'B' => storage_path().'/hitachi-'.$timeStamp.'.pdf',
+                'C' => storage_path().'/hitachi_end'.$locale.'.pdf',
+            ]);
 
-            $merge->addPDF(storage_path().'/hitachi_cover'.$locale .'.pdf', 'all');
-            $merge->addPDF(storage_path().'/hitachi-'.$timeStamp.'.pdf', 'all');
-            $merge->addPDF(storage_path().'/hitachi_end'.$locale .'.pdf', 'all');
+            $merge->cat(1, 'end', 'A')->cat(1, 'end', 'B')->cat(1, 'end', 'C')->saveAs(storage_path().'/reports/hitachi-'.$timeStamp.'.pdf');
 
-
-            $merge->merge();
-            $merge->save(storage_path().'/reports/hitachi-'.$timeStamp.'.pdf','browser');
             if (File::exists(storage_path().'/hitachi-'.$timeStamp.'.pdf')) {
                 File::delete(storage_path().'/hitachi-'.$timeStamp.'.pdf');
             }
+            return response()->file(storage_path().'/reports/hitachi-'.$timeStamp.'.pdf');
+
         } elseif (session('product.id')==12) {
             //$pdf->setOption('cover',session('url').'/'.session('localeUrl').'template/'.session('template').'/report/cover');
             $timeStamp = time();
