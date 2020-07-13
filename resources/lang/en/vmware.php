@@ -12,7 +12,7 @@ return array(
     'further-insight'=>'More information',
     'view-now'=>'View Now',
 
-    'title'=>'Vmware Network Security Assessment',
+    'title'=>'VMware Network Security Assessment',
     'sub-title'=>'in association with IDC',
     'landing'=>'
         <h3 class="text-2xl text-blackblack sm!:text-xl font-medium mb-2">Is your Network Ready and Secure for the Digital Future?</h3>
@@ -81,9 +81,9 @@ return array(
         </a>',
     'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @3ds. Interested? ',// http://bit.ly/2gslXEh
     'email'=>[
-        'subject' => 'Vmware Network Security Assessment',
+        'subject' => 'VMware Network Security Assessment',
         'hi' => 'Hi :Fname',
-        'body' => 'As promised, here\'s a link to download your Vmware Network Security Assessment Report.',
+        'body' => 'As promised, here\'s a link to download your VMware Network Security Assessment Report.',
         'link' => 'Download Report',
         'extra' => 'Once you\'ve read the report why not visit <a href="https://www.vmware.com/solutions/virtual-cloud-network.html" style="color:#054683">VMware</a>',
         'regards' => 'Regards',
