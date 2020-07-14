@@ -3729,11 +3729,7 @@ trait GenerateReportTrait
                 if (File::exists(storage_path().'/ibmcloud-'.$timeStamp.'.pdf')) {
                     File::delete(storage_path().'/ibmcloud-'.$timeStamp.'.pdf');
                 }
-            } else {
-                return $pdf->save(storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf');
-            }
-        } elseif(session('product.id')==17){
-                //$pdf->setOption('cover', session('url').'/'.session('localeUrl').'template/'.session('template').'/report/footer');
+            } elseif(session('product.id')==17){
                 $pdf->setOption('orientation', 'Landscape');
                 $pdf->setOption('margin-bottom', 20);
                 $timeStamp = time();
@@ -3758,6 +3754,9 @@ trait GenerateReportTrait
                     File::delete(storage_path().'/sapagileglobal-'.$timeStamp.'.pdf');
                 }
             } else {
+                return $pdf->save(storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf');
+            }
+        } else {
             $view = View::make('tool.'.session('template').'.report.report', $vars);
             return $view;
         }
