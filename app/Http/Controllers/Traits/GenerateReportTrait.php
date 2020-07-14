@@ -3261,6 +3261,82 @@ trait GenerateReportTrait
             );
 
             $vars['sectionCopy'] = $customCopy;
+        } else if(session('product.id') == 17) { //SAPAgileGlobal
+            //User overall stage number and ordinal
+            $overallNumber = (int) filter_var(session('result.overall.rating'), FILTER_SANITIZE_NUMBER_INT);
+            $strategicPlanningNumber =  (int) filter_var(session('result.strategic-planning.rating'), FILTER_SANITIZE_NUMBER_INT);
+            $processesNumber =  (int) filter_var(session('result.processes.rating'), FILTER_SANITIZE_NUMBER_INT);
+            $customerRelationshipsNumber =  (int) filter_var(session('result.customer-relationships.rating'), FILTER_SANITIZE_NUMBER_INT);
+            $suppliersDistributorsNumber =  (int) filter_var(session('result.suppliers-distributors.rating'), FILTER_SANITIZE_NUMBER_INT);
+            $peopleExperienceNumber =  (int) filter_var(session('result.people-experience.rating'), FILTER_SANITIZE_NUMBER_INT);
+
+            $customCopy = '';
+
+            //introduction
+            $base = config('baseline_'.session('product.id').'.overall');
+            $rating = session('result.overall.rating');
+
+            $user_score = session('result.overall.score');
+
+            $customCopy.= trans(
+                session('product.alias').'.introduction',
+                [
+                    'url' => asset('/images/tools/17/check.png'),
+                    'stage' =>  $overallNumber,
+                    'name' => trans(session('product.alias').'.'.session('result.overall.rating'))
+                ]
+            );
+
+            //overall
+            $customCopy.= trans(
+                session('product.alias').'.overall-'.$overallNumber,
+                [
+                    'url' => asset('/images/tools/17/bar_'.$overallNumber.'.png'),
+                    'company' => session('user.company', 'Your company scored')
+                ]
+            );
+            //strategic-planning
+            $customCopy.= trans(
+                session('product.alias').'.strategic-planning-'.$strategicPlanningNumber,
+                [
+                    'url' => asset('/images/tools/17/bar_'.$strategicPlanningNumber.'.png'),
+                    'company' => session('user.company', 'Your company scored')
+                ]
+            );
+            //processes
+            $customCopy.= trans(
+                session('product.alias').'.processes-'.$processesNumber,
+                [
+                    'url' => asset('/images/tools/17/bar_'.$processesNumber.'.png'),
+                    'company' => session('user.company', 'Your company scored')
+                ]
+            );
+            //customer-relationships
+            $customCopy.= trans(
+                session('product.alias').'.customer-relationships-'.$customerRelationshipsNumber,
+                [
+                    'url' => asset('/images/tools/17/bar_'.$customerRelationshipsNumber.'.png'),
+                    'company' => session('user.company', 'Your company scored')
+                ]
+            );
+            //suppliers-distributors
+            $customCopy.= trans(
+                session('product.alias').'.suppliers-distributors-'.$suppliersDistributorsNumber,
+                [
+                    'url' => asset('/images/tools/17/bar_'.$suppliersDistributorsNumber.'.png'),
+                    'company' => session('user.company', 'Your company scored')
+                ]
+            );
+            //people-experience
+            $customCopy.= trans(
+                session('product.alias').'.people-experience-'.$peopleExperienceNumber,
+                [
+                    'url' => asset('/images/tools/17/bar_'.$peopleExperienceNumber.'.png'),
+                    'company' => session('user.company', 'Your company scored')
+                ]
+            );
+
+            $vars['sectionCopy'] = $customCopy;
         } else {
             foreach (config('baseline_'.session('product.id')) as $section => $values) {
                 preg_match_all('/\d+/', session('result.'.$section.'.rating'), $matches);
@@ -3656,7 +3732,32 @@ trait GenerateReportTrait
             } else {
                 return $pdf->save(storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf');
             }
-        } else {
+        } elseif(session('product.id')==17){
+                //$pdf->setOption('cover', session('url').'/'.session('localeUrl').'template/'.session('template').'/report/footer');
+                $pdf->setOption('orientation', 'Landscape');
+                $pdf->setOption('margin-bottom', 20);
+                $timeStamp = time();
+                $pdf->save(storage_path().'/sapagileglobal-'.$timeStamp.'.pdf');
+                // $merge = PDFMerger::init();
+                $locale = App::getLocale() == 'en' ? '' : '_'.App::getLocale();
+
+                // $merge->addPDF(storage_path().'/sapagileglobal_cover'.$locale .'.pdf', 'all');
+                // $merge->addPDF(storage_path().'/sapagileglobal-'.$timeStamp.'.pdf', 'all');
+
+
+                // $merge->merge();
+                // $merge->save(storage_path().'/reports/sapagileglobal-'.$timeStamp.'.pdf','browser');
+                $merge = new NewPDF([
+                    'A' => storage_path().'/sapagileglobal_cover'.$locale .'.pdf',
+                    'B' => storage_path().'/sapagileglobal-'.$timeStamp.'.pdf'
+                ]);
+
+                $merge->cat(1, 'end', 'A')->cat(1, 'end', 'B')->saveAs(storage_path().'/reports/'.$assessment_id.'_'.$name.'.pdf');
+
+                if (File::exists(storage_path().'/sapagileglobal-'.$timeStamp.'.pdf')) {
+                    File::delete(storage_path().'/sapagileglobal-'.$timeStamp.'.pdf');
+                }
+            } else {
             $view = View::make('tool.'.session('template').'.report.report', $vars);
             return $view;
         }
