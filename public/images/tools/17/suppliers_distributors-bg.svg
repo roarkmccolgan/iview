@@ -6,6 +6,10 @@
     <clipPath id="clip-path-2">
       <rect id="SVGID-2" data-name="SVGID" x="-11" y="-5.58" width="852.8" height="104.35" style="fill: none"/>
     </clipPath>
+    <linearGradient id="linear-gradient" x1="-5" y1="45.77" x2="633" y2="45.77" gradientUnits="userSpaceOnUse">
+      <stop offset="0.44"/>
+      <stop offset="1" stop-opacity="0"/>
+    </linearGradient>
     <clipPath id="clip-path-3">
       <rect x="697.23" y="31.83" width="85.04" height="29.63" style="fill: none"/>
     </clipPath>
@@ -16,13 +20,14 @@
       <rect x="-5" y="-282.58" width="846.8" height="104.35" style="fill: none"/>
     </clipPath>
   </defs>
-  <title>intro_banner</title>
+  <title>suppliers_distributors-bg</title>
   <g style="clip-path: url(#clip-path)">
     <image width="1200" height="801" transform="translate(-11.11 -32.8) scale(0.72)" xlink:href="../../../../../../Dropbox/IDC/SAP%20Agility%20Global%20Tool/_res/people-orange.png"/>
   </g>
   <g style="clip-path: url(#clip-path-2)">
     <image width="1200" height="797" transform="translate(-16.11 -258.68) scale(0.73)" xlink:href="../../../../../../Dropbox/IDC/SAP%20Agility%20Global%20Tool/_res/supplier_gray.png"/>
   </g>
+  <rect x="-5" y="-11.23" width="638" height="114" style="opacity: 0.3;fill: url(#linear-gradient)"/>
   <g>
     <path d="M738.35,35c0-2-2.18-1.43-2.18-2,0-.24.05-.3.27-.3,1,0,2,.11,3,.11s1.67-.11,2.51-.11c.43,0,.51.06.51.27,0,.65-1.94,0-1.94,2.05V49.5c0,1.83,2.4,1.21,2.4,2,0,.19-.08.27-.54.27-.62,0-1.78-.11-2.94-.11-1.64,0-2.21.11-2.58.11s-.57-.14-.57-.41c0-.78,2.1.11,2.1-2.56V35Z" style="fill: #fff"/>
     <g style="clip-path: url(#clip-path-3)">

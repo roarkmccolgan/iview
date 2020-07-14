@@ -1,0 +1,32 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 841.89 93.54">
+  <defs>
+    <clipPath id="clip-path">
+      <rect x="-5" y="287.42" width="846.8" height="104.35" style="fill: none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect x="-5.11" y="141.77" width="852.11" height="112" style="fill: none"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect id="SVGID" x="210" y="-11.23" width="634" height="114" style="fill: none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" y1="45.77" x2="638" y2="45.77" gradientUnits="userSpaceOnUse">
+      <stop offset="0.44"/>
+      <stop offset="1" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="-490" y1="45.77" x2="148" y2="45.77" gradientTransform="translate(980)" xlink:href="#linear-gradient"/>
+  </defs>
+  <title>overall_banner</title>
+  <g style="clip-path: url(#clip-path)">
+    <image width="1200" height="899" transform="translate(-8.24 21.31) scale(0.71)" xlink:href="../../../../../../Dropbox/IDC/SAP%20Agility%20Global%20Tool/_res/processes_blue.png"/>
+  </g>
+  <g style="clip-path: url(#clip-path-2)">
+    <image width="1200" height="800" transform="translate(-11.01 -124.2) scale(0.72)" xlink:href="../../../../../../Dropbox/IDC/SAP%20Agility%20Global%20Tool/_res/strategic_green.png"/>
+  </g>
+  <g>
+    <g style="clip-path: url(#clip-path-3)">
+      <image width="6140" height="2362" transform="matrix(-0.1, 0, 0, 0.1, 846.97, -58.53)" xlink:href="../../../../../../Dropbox/IDC/SAP%20Agility%20Global%20Tool/_res/wetransfer-e1738d/ImageLibrary_8_20200707_1803/282833_GettyImages-615428378.jpg"/>
+    </g>
+    <rect y="-11.23" width="638" height="114" style="fill: url(#linear-gradient)"/>
+  </g>
+  <rect x="490" y="-11.23" width="638" height="114" transform="translate(1618 91.54) rotate(180)" style="fill: url(#linear-gradient-2)"/>
+</svg>

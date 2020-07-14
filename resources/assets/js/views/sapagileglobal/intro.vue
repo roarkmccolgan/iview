@@ -1,15 +1,17 @@
 <template>
 	<div class="flex-grow">
-		<div class="mx-auto bg-contain sm:bg-cover bg-top bg-no-repeat pt-32 sm:pt-12 sm:pb-4" :style="`background-image: url('/images/tools/${assessment.tool.id}/homepage.jpg')`">
-				<div class="container mx-auto">
-					<div class="w-full sm:w-1/2 sm:mb-18 px-5">
-						<router-link class="flex items-center no-underline text-blackblack sm:text-white hover:text-sap-yellow" :to="'/questions/1'">
-							<h1 class="text-blackblack sm:text-white text-3xl sm:text-5xl font-sapagileglobal font-bold leading-none mb-2">{{ $t('sapagileglobal.title') }} </h1>
-							<font-awesome-icon class="ml-4" size="2x" :icon="icons.faArrowRight" /></router-link>
-						</router-link>
-						<!-- <h3 class="text-grey-darkest sm:text-white sm:inline-block text-2xl sm:text-3xl italic font-sapagileglobal font-normal leading-tight mb-2 sm:mb-8">{{ $t('sapagileglobal.sub-title') }}</h3> -->
-					</div>					
-				</div>
+		<div class="bg-blackblack">
+			<div class="max-w-5xl mx-auto bg-contain sm:bg-cover bg-top bg-no-repeat pt-32 sm:pt-12 sm:pb-4" :style="`background-image: url('/images/tools/${assessment.tool.id}/homepage.jpg')`">
+					<div class="container mx-auto">
+						<div class="w-full sm:w-1/2 sm:mb-18 px-5">
+							<router-link class="flex items-center no-underline text-blackblack sm:text-white hover:text-sap-yellow" :to="'/questions/1'">
+								<h1 class="text-blackblack sm:text-white text-3xl sm:text-5xl font-sapagileglobal font-bold leading-none mb-2">{{ $t('sapagileglobal.title') }} </h1>
+								<font-awesome-icon class="ml-4" size="2x" :icon="icons.faArrowRight" /></router-link>
+							</router-link>
+							<!-- <h3 class="text-grey-darkest sm:text-white sm:inline-block text-2xl sm:text-3xl italic font-sapagileglobal font-normal leading-tight mb-2 sm:mb-8">{{ $t('sapagileglobal.sub-title') }}</h3> -->
+						</div>					
+					</div>
+			</div>			
 		</div>
 		<div class="container mx-auto">
 			<div class="p-5 sm:p-10">
