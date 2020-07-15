@@ -125,14 +125,7 @@ return array(
         Your custom report will arrive in your inbox soon.<br/>
         Please check in your junk folder if you don\'t receive it within 5 minutes.<br/>
         If you cannot find the link, please email IDC (<a href="mailto:podgers@idc.com">podgers@idc.com</a>) and a new link will be sent to you<br/><br/>
-        To find out more about SAP for your location, please click the relevant link below:<br>
-        <a class="text-sap-blue" href="https://www.sap.com/africa/products/sme-business-software.html">SAP.com/Africa</a><br/>
-        <a class="text-sap-blue" href="https://www.sap.com/mena/products/sme-business-software.html">SAP.com/Middle East</a><br/>
-        <a class="text-sap-blue" href="https://www.sap.com/spain/about/events.html">SAP.com/Spain</a><br/>
-        <a class="text-sap-blue" href="https://events.sap.com/it/sapitalia/it/feelings">SAP.com/Italy</a><br/>
-        <a class="text-sap-blue" href="https://www.sap.com/portugal/products/sme-business-software.html">SAP.com/Portugal</a><br/>
-        <a class="text-sap-blue" href="https://www.sap.com/turkey/products/sme-business-software.html">SAP.com/Turkey</a><br/>
-        <a class="text-sap-blue" href="https://www.sap.com/index.html">SAP.com global website</a><br/><br/>
+        To find out more about SAP, <a class="text-sap-blue" href="https://www.sap.com/index.html">click here.</a><br/><br/>
         Share the tool ',
     'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @3ds. Interested? ',// http://bit.ly/2gslXEh
     'email'=>[
@@ -143,14 +136,7 @@ return array(
         'extra' => 'Feel free to share this with other departments of your organization and with your customers and partners. You can always invite them to fill in the assessment and compare answers.<br>
             <a href="https://clicktobeagile.idcready.net/">https://clicktobeagile.idcready.net/</a><br><br>
             This assessment has been sponsored by SAP.<br><br>
-            To find out more about SAP for your location, please click the relevant link below:<br>
-            <a class="text-sap-blue" href="https://www.sap.com/africa/products/sme-business-software.html">SAP.com/Africa</a><br/>
-            <a class="text-sap-blue" href="https://www.sap.com/mena/products/sme-business-software.html">SAP.com/Middle East</a><br/>
-            <a class="text-sap-blue" href="https://www.sap.com/spain/about/events.html">SAP.com/Spain</a><br/>
-            <a class="text-sap-blue" href="https://events.sap.com/it/sapitalia/it/feelings">SAP.com/Italy</a><br/>
-            <a class="text-sap-blue" href="https://www.sap.com/portugal/products/sme-business-software.html">SAP.com/Portugal</a><br/>
-            <a class="text-sap-blue" href="https://www.sap.com/turkey/products/sme-business-software.html">SAP.com/Turkey</a><br/>
-            <a class="text-sap-blue" href="https://www.sap.com/index.html">SAP.com global website</a><br/><br/>
+            To find out more about SAP, <a class="text-sap-blue" href="https://www.sap.com/index.html">click here.</a><br/><br/>
             Share via Twitter and Linkedin below:<br/><br/>
             <a style="text-decoration: none;" href="http://twitter.com/share?text=I have just completed the IDC Click to be Agile Assessment Tool Sponsored by SAP&url=https://clicktobeagile.idcready.net">
                 <img src="https://clicktobeagile.idcready.net/images/twitter.png" style="width: 50px;"/>
