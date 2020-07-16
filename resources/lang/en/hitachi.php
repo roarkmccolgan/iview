@@ -97,6 +97,7 @@ return array(
         <div class="mb-5">
             <h3 class="text-blue-dark mb-2">Table of Contents</h3>
             <ul class="list-disc text-blue-dark">
+                <li class="mb-1">Executive Summary</li>
                 <li class="mb-1">The Intelligent Core Powers Business Processes of the Future</li>
                 <li class="mb-1">Introduction</li>
                 <li class="mb-1">Ranking Explanation</li>
@@ -111,7 +112,7 @@ return array(
     'execsum' => '
         <h2 class="text-blue-dark mb-2 pt-10">Executive Summary</h2>
         <p class="mb-2">
-            Thank you for taking the net step to your cloud Journey and completing the IDC Cloud Strategy Assessment.  Based on your answers, this report will highlight some of your organization\'s key strengths and potential areas for development in relation to your cloud strategy.
+            Thank you for taking the next step to your cloud Journey and completing the IDC Cloud Strategy Assessment.  Based on your answers, this report will highlight some of your organization\'s key strengths and potential areas for development in relation to your cloud strategy.
         </p>
         <p class="mb-2">
             The IDC Cloud Strategy Assessment ranks organizations by three maturity levels — <span class="font-bold">Cloud Starter, Cloud Practitioner, and Cloud Master</span>. Organizations must strive to master all three dimensions to realize the true value of cloud and data.
@@ -159,7 +160,8 @@ return array(
         <p class="mb-2">
             The foundational services do not go away. IT governance, a modern architecture and applications, integration, and development services are the enablers of this new digital platform.
         </p>
-        <img src=":url/images/tools/13/intelligent_core.png" alt="" class="block w-5/6 mx-auto my-4" />
+        <div class="text-center italic font-bold text-blue-dark">IDC\'s Digital Platform</div>
+        <img src=":url/images/tools/13/intelligent_core.png" alt="" class="block w-5/6 mx-auto mb-4" />
         <p class="font-bold mb-1">The Digital Platform Improves Processes</p>
         <p class="mb-2">
             Internal data is collected through connected assets, employees, connected processes, and other data streams. This data circulates through the data core, in turn transforming the data into insights. Those insights circle back into the organization as improved internal processes.
@@ -182,16 +184,22 @@ return array(
         <p class="mb-2 font-bold italic">
             A well-thought-out cloud strategy and consistent execution of this strategy delivers the flexibility and scale that underpins digital business success and data transformation.
         </p>
-        <div class="float-right p-1 w-2/5 border italic font-bold text-blue-dark ml-2 mb-2">
+        <div class="float-right p-1 w-2/5 border rounded italic font-bold text-blue-dark ml-2 mb-2">
             Cloud and data transformation initiatives improve efficiency, business performance, and the speed of innovation.
         </div>
         <p class="mb-2">
             <span class="font-bold">The key priorities for organizations accelerating their digital transformation journeys are IT modernization, successful cloud adoption, and progress in becoming data driven.</span> They want to use cloud and data transformation initiatives to improve efficiency, business performance, and the speed of innovation. Delivering on digital business mandates requires a well-thought-out cloud strategy and set of technologies to drive innovation, all without compromising on cost control, security, or regulatory obligations. Providing a flexible IT delivery model and relevant data at speed, while aligning with business needs, is critical. 
         </p>
-        <p class="mb-2 font-bold italic">
+        <p class="mb-4 font-bold italic">
             Developing a successful cloud and data strategy will be the bedrock on which to digitally transform your organization in a scalable and agile manner.
         </p>
-        <img src=":url/images/tools/13/top_priorities.png" alt="" class="block w-5/6 mx-auto my-4" />
+        <div class="text-center italic font-bold text-blue-dark">
+            Organizations top Digital Transformation (DX) priorities<br/> based on its Digital Transformation vision, strategy and roadmap
+        </div>
+        <div class="text-xs text-gray-dark mb-4">
+            <img src=":url/images/tools/13/top_priorities.png" alt="" class="w-full" />
+            Source: IDC DX Leaders’ Survey 2019; Europe, N=400
+        </div>
     ',
     
     'introduction2' => '
@@ -209,17 +217,19 @@ return array(
         <p class="mb-2 font-bold italic">
             The better an organization is in its vision, execution, and ability to overcome challenges along the way, the higher it is in the maturity curve — giving it a competitive differentiation.
         </p>
-        <p class="mb-2">
+        <p class="mb-4">
             The IDC Cloud Strategy Assessment ranks organizations by three maturity levels — <span class="font-bold">Cloud Starter, Cloud Practitioner, and Cloud Master</span>. Organizations must strive to master all three dimensions to realize the true value of cloud and data.
         </p>
-        <div class="mx-auto" style="width: 90%">
-            <img src=":url/images/tools/13/rankings.png" class="w-full" />
+        <div class="text-center italic font-bold text-blue-dark mb-2">
+            Key Differentiation Among the Three Cloud Usage Levels
         </div>
-        <div class="text-center italic text-sm text-blue-dark mb-4">Key Differentiation Among the Three Cloud Usage Levels</div>
+        <div class="text-xs text-gray-dark mb-4 mx-auto" style="width: 85%">
+            <img src=":url/images/tools/13/rankings.png" alt="" class="w-full" />
+        </div>
         <p class="mb-2 font-bold italic">
             Organizations can only successfully compete in the global economy if their cloud and data-related strategies are world-class and the execution is consistent and adaptive, and takes advantage of the relevant cloud and data-enabling technologies. 
         </p>
-        <p class="mb-2 font-blue-dark text-lg italic">
+        <p class="mb-2 mt-4 font-thin text-blue-dark text-xl italic leading-tight text-center">
             IDC predicts that by 2022, 50% of global GDP will come from digital services and products. 
         </p>
     ',
@@ -298,8 +308,8 @@ return array(
         </p>
         <div class="clearfix">
             <div class="float-left w-1/3 mr-3">
+                <div class="text-center italic font-bold text-blue-dark">Figure 4: Key Priorities for Organizations Accelerating Their Digital Transformation Journeys</div>
                 <img src=":url/images/tools/13/key_priorities.png" alt="" class="w-full" />
-                <div class="text-center italic text-sm text-blue-dark">Figure 4: Key Priorities for Organizations Accelerating Their Digital Transformation Journeys/div>
             </div>
             <div class="float left">
                 <p class="mb-2">
@@ -326,8 +336,13 @@ return array(
                 </p>
             </div>
         </div>
-        <img src=":url/images/tools/13/ww_cloud_adoption.png" alt="" class="block w-5/6 mx-auto mt-6" />
-        <div class="text-center italic text-sm text-blue-dark mb-6">Cloud adoption trends</div>
+        <div class="text-center italic font-bold text-blue-dark">
+            Cloud adoption trends
+        </div>
+        <div class="text-xs text-gray-dark mb-6">
+            <img src=":url/images/tools/13/ww_cloud_adoption.png" alt="" class="block w-full" />
+            Source: IDC Semiannual Software Tracker, 1H19
+        </div>
         <div class="clearfix">
             <p class="mb-2">
                 <span class="font-bold">This section will assess your maturity and progress in key areas of cloud migration and application modernization</span> and help determine where you need to focus to get the best results. It is based on what\'s driving your key investment decisions, the challenges you are facing, and how initiatives are being prioritized within your cloud strategy.
@@ -335,7 +350,7 @@ return array(
         </div>
     ',
     'migration-graph' => '
-        <img src=":image" alt="" class="block w-5/6 mx-auto my-4" />
+        <img src=":image" alt="" class="block mx-auto my-4" style="width: 85%" />
     ',
 
     'migration-1-stage1' => '
@@ -480,7 +495,10 @@ return array(
     ',
     'question1-image' => '
         <div class="clearfix my-6">
-            <div class="w-full mx-auto">
+            <div class="text-center italic font-bold text-blue-dark">
+                Key Benefits of Application Modernization
+            </div>
+            <div class="w-5/6 mx-auto">
                 <img src=":url/images/tools/13/question1.png" alt="" class="w-full" />
             </div>
         </div>
@@ -963,7 +981,7 @@ return array(
             <p class="mb-2">
                 The realization is dawning among savvy enterprises that there is no "silver bullet cloud" that answers all IT issues. <span class="font-bold italic">Organizations therefore seek to build an interoperable, hybrid, and multicloud IT infrastructure to gain the benefit of cloud without compromising on core IT values of security, resilience, and compliance. </span>
             </p>
-            <div class="float-right p-1 w-1/5 border italic text-blue-dark ml-6 mb-2">
+            <div class="float-right p-1 w-2/5 border rounded italic text-blue-dark ml-6 mb-2">
                 Cloud is seen as an operating model rather than a destination.
             </div>
             <p class="mb-2">
@@ -979,7 +997,7 @@ return array(
 
     ',
     'status-graph' => '
-        <img src=":image" alt="" class="block w-5/6 mx-auto my-4" />
+        <img src=":image" alt="" class="block mx-auto my-4" style="width: 85%" />
     ',
 
     'status-1-stage1' => '
@@ -1158,9 +1176,11 @@ return array(
 
     'question6-image' => '
         <div class="clearfix pt-5">
-            <div class="w-3/4 mx-auto">
-                <div class="italic text-sm text-blue-dark">Key Drivers for moving to a Cloud Architecture</div>
-                <img src=":url/images/tools/13/question6.png" alt="" class="w-full my-4" />
+            <div class="text-center italic font-bold text-blue-dark mb-2">
+                Key Drivers for moving to a Cloud Architecture
+            </div>
+            <div class="mx-auto" style="width: 85%">
+                <img src=":url/images/tools/13/question6.png" alt="" class="w-full mb-4" />
             </div>
         </div>
     ',
@@ -1246,7 +1266,7 @@ return array(
 
     ',
     'value-graph' => '
-        <img src=":image" alt="" class="block w-5/6 mx-auto my-4" />
+        <img src=":image" alt="" class="block mx-auto my-4" style="width: 85%" />
     ',
 
     'value-1-stage1' => '

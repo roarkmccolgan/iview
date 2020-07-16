@@ -167,12 +167,8 @@ return array(
                             To aid this, IDC has created a set of recommendations, based on the stages you are at across the different elements of agility. Based on the answers you provided, IDC places your business at <span class="font-bold text-sap-blue">Stage :stage</span> in its overall agility journey.<br/> IDC refer to this stage as <span class="font-bold text-sap-blue">:name</span>.
                         </p>
                         <p class="font-bold text-blackblack mb-2">
-                            To find out more about SAP, <a class="text-sap-blue" href="https://www.sap.com/index.html">click here.</a>.
+                            To find out more about SAP, <a class="text-sap-blue" href="https://www.sap.com/index.html">click here</a>.
                         </p>
-                        <a class="text-sap-blue" href="https://www.sap.com/africa/products/sme-business-software.html" target="_blank">Africa</a> | 
-                        <a class="text-sap-blue" href="https://www.sap.com/mena/products/sme-business-software.html" target="_blank">Middle East</a> | 
-                        <a class="text-sap-blue" href="https://www.sap.com/spain/products/sme-business-software.html" target="_blank">Spain</a> | 
-                        <a class="text-sap-blue" href="https://events.sap.com/it/sapitalia/it/feelings" target="_blank">Italy</a>
                     </div>
                 </div>
                 <div class="w-1/3 bg-grey-lighter">
