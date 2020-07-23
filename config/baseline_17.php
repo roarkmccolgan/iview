@@ -60,7 +60,7 @@ return [
             ]
         ],
         'tweet' => false,
-        'include_answers_in_download_report' => false,
+        'include_answers_in_download_report' => true,
         'report_recipients' => [
             'roarkmccolgan@gmail.com',
             'lborthwick@idc.com',

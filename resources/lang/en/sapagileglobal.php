@@ -125,7 +125,7 @@ return array(
         Your custom report will arrive in your inbox soon.<br/>
         Please check in your junk folder if you don\'t receive it within 5 minutes.<br/>
         If you cannot find the link, please email IDC (<a href="mailto:podgers@idc.com">podgers@idc.com</a>) and a new link will be sent to you<br/><br/>
-        To find out more about SAP, <a class="text-sap-blue" href="https://www.sap.com/index.html">click here.</a><br/><br/>
+        To find out more about SAP, <a class="text-sap-blue" href="https://www.sap.com/sme">click here.</a><br/><br/>
         Share the tool ',
     'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @3ds. Interested? ',// http://bit.ly/2gslXEh
     'email'=>[
@@ -134,15 +134,15 @@ return array(
         'body' => 'Thank you for completing the assessment, here is the link to download your IDC SME Analysis Tool Report. This breaks down your results by category and provides you with actionable recommendations.',
         'link' => 'VIEW YOUR AGILITY SCORE',
         'extra' => 'Feel free to share this with other departments of your organization and with your customers and partners. You can always invite them to fill in the assessment and compare answers.<br>
-            <a href="https://clicktobeagile.idcready.net/">https://clicktobeagile.idcready.net/</a><br><br>
+            <a href="https://accessyourbusinessagility.idcready.net/">https://accessyourbusinessagility.idcready.net/</a><br><br>
             This assessment has been sponsored by SAP.<br><br>
-            To find out more about SAP, <a class="text-sap-blue" href="https://www.sap.com/index.html">click here.</a><br/><br/>
+            To find out more about SAP, <a class="text-sap-blue" href="https://www.sap.com/sme">click here.</a><br/><br/>
             Share via Twitter and Linkedin below:<br/><br/>
-            <a style="text-decoration: none;" href="http://twitter.com/share?text=I have just completed the IDC Click to be Agile Assessment Tool Sponsored by SAP&url=https://clicktobeagile.idcready.net">
-                <img src="https://clicktobeagile.idcready.net/images/twitter.png" style="width: 50px;"/>
+            <a style="text-decoration: none;" href="http://twitter.com/share?text=I have just completed the IDC Click to be Agile Assessment Tool Sponsored by SAP&url=https://accessyourbusinessagility.idcready.net">
+                <img src="https://accessyourbusinessagility.idcready.net/images/twitter.png" style="width: 50px;"/>
             </a>&nbsp;&nbsp;&nbsp;
-            <a style="text-decoration: none;" href="https://www.linkedin.com/shareArticle?mini=true&url=https://clicktobeagile.idcready.net&title=&summary=I have just completed the IDC Click to be Agile Assessment Tool Sponsored by SAP&source=email">
-                <img src="https://clicktobeagile.idcready.net/images/linkedin.png" style="width: 50px;"/>
+            <a style="text-decoration: none;" href="https://www.linkedin.com/shareArticle?mini=true&url=https://accessyourbusinessagility.idcready.net&title=&summary=I have just completed the IDC Click to be Agile Assessment Tool Sponsored by SAP&source=email">
+                <img src="https://accessyourbusinessagility.idcready.net/images/linkedin.png" style="width: 50px;"/>
             </a><br/>',
         'regards' => 'Regards',
         'team' => 'The IDC Team'
@@ -167,7 +167,7 @@ return array(
                             To aid this, IDC has created a set of recommendations, based on the stages you are at across the different elements of agility. Based on the answers you provided, IDC places your business at <span class="font-bold text-sap-blue">Stage :stage</span> in its overall agility journey.<br/> IDC refer to this stage as <span class="font-bold text-sap-blue">:name</span>.
                         </p>
                         <p class="font-bold text-blackblack mb-2">
-                            To find out more about SAP, <a class="text-sap-blue" href="https://www.sap.com/index.html">click here</a>.
+                            To find out more about SAP, <a class="text-sap-blue" href="https://www.sap.com/sme">click here</a>.
                         </p>
                     </div>
                 </div>
