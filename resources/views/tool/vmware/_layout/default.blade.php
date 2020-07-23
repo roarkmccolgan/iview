@@ -36,42 +36,7 @@ $manifest = json_decode($json, TRUE);
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/images/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <script type="text/javascript">
-        (function (id) {
-            function append(scriptid, url, async) {
-                var d = document, sn = 'script', f = d.getElementsByTagName(sn)[0];
-                if (!f) f = d.head;
-                var s = d.createElement(sn);
-                s.async = true;
-                s.id = scriptid;
-                s.src = url;
-                f.parentNode.insertBefore(s, f);
-            }
-            function getRootDomain() {
-                var parts = window.location.hostname.split('.');
-                if (parts.length === 2) rootDomain = parts[0];
-                else if (parts.length > 2) {
-                        // see if the next to last value is a common tld
-                    var part = parts[parts.length - 2];
-                    if (part === 'com' || part === 'co') {
-                        rootDomain = parts[parts.length - 3];
-                    } else {
-                        rootDomain = part;
-                    }}
-                    return rootDomain; }
-                    window.evidon = {};
-                    window.evidon.id = id;
-                    var cdn = '//c.evidon.com/', rootDomain = getRootDomain(), noticecdn = cdn + 'sitenotice/';
-                    append('evidon-notice', noticecdn + 'evidon-sitenotice-tag.js', false);
-                    append('evidon-location', cdn + 'geo/country.js', true);
-                    append('evidon-themes', noticecdn + id + '/snthemes.js', true);
-                    if (rootDomain) append('evidon-settings', noticecdn + id + '/' + rootDomain + '/settings.js', true);
-                    window.evidon.priorConsentCallback = function () {
-                        // Add the tags which need to wait for prior consent here.  
-                        // This should be all your advertising tags and probably most of your social and tracking tags.
-                    }
-                })(4478);
-            </script>
+    
 	<!--[if lt IE 9]> HTML5Shiv
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -83,10 +48,23 @@ $manifest = json_decode($json, TRUE);
     @include('_layouts.footer')
     @section('pagescript')
 	<script src="{{ asset('bundle/'.$manifest['vmware'][1])}}"></script>
-    <script type="text/javascript" async=true></script>
-<style>
-    
-</style>
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#edeff5",
+          "text": "#838391"
+        },
+        "button": {
+          "background": "#4b81e8"
+        }
+      },
+      "content": {
+        "href": "/cookies"
+      }
+    });
+    </script>
 	@show
 </body>
 </html>
