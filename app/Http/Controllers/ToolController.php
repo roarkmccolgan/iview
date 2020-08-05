@@ -1,6 +1,5 @@
 <?php namespace App\Http\Controllers;
 
-use JavaScript;
 use App\Assessment;
 use App\Company;
 use App\Http\Controllers\Controller;
@@ -8,6 +7,7 @@ use App\Http\Controllers\Traits\GenerateReportTrait;
 use App\Http\Requests;
 use App\Http\Requests\CreateToolRequest;
 use App\Http\Requests\SubmitAssessmentsRequest;
+use App\Jobs\SendCrmRequest;
 use App\Jobs\SendEloquaRequest;
 use App\Language;
 use App\Tool;
@@ -23,6 +23,7 @@ use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\View;
+use JavaScript;
 use Lava;
 use Log;
 use Uuid;
@@ -1305,6 +1306,7 @@ class ToolController extends Controller
     private function prepareMrsRequest($mrs, $request, $uuid){
         //send guzzle request
         $url = $mrs['url'];
+        $auth = isset($mrs['auth']) ? [$mrs['auth']['username'],$mrs['auth']['password']] : '[]';
         $query = [];
 
         foreach ($mrs['fields'] as $fieldKey => $settings) {
@@ -1321,19 +1323,33 @@ class ToolController extends Controller
                             $query[$fieldKey][] = [
                                 'question_type' => $groupSettings['question_type'],
                                 'question_name' => $groupSettings['question_name'],
-                                'answer' => $groupSettings['answer'] == 'report' ? session('url').'/'.session('locale').'/download/'.$uuid : $request->input($groupSettings['answer'])
+                                'answer' => $groupSettings['answer'] == 'report' ? session('url').'/'.session('locale').'/download/'.$uuid : (is_null($request->input($groupSettings['answer'])) ? "" : $request->input($groupSettings['answer']))
                             ];
                         }
                     }
                     //$query[$fieldKey] = $settings['value'];
                     break;
                 case 'object':
-                    $object = $settings['value'];
-                    foreach($object as $objKey => $value){
-                        if($objKey == 'specific_delivery_methods'){
-                            foreach($value as $key => $val){
-                                $object[$objKey][$key] = $request->input($val) == 'on' ? 'permission' : 'unchanged';
+                    $object = [];
+                    foreach($settings['value'] as $objKey => $value){
+                        if(is_array($value)){
+                            foreach($value as $subObjKey => $subValue){
+                                if(is_array($subValue)){
+                                    foreach($subValue as $key => $val){
+                                        if(is_array($val)){
+                                            foreach($val as $subSubKey => $subSubVal){
+                                                $object[$objKey][$subObjKey][$key][$subSubKey] = $request->input($subSubVal) == 'on' ? 'permission' : 'unchanged';
+                                            }
+                                        }else{
+                                            $object[$objKey][$subObjKey][$key] = $val;
+                                        }
+                                    }
+                                }else{
+                                    $object[$objKey][$subObjKey] = $subValue;
+                                }
                             }
+                        } else{
+                            $object[$objKey] = $value;
                         }
                     }
                     $query[$fieldKey] = $object;
@@ -1341,7 +1357,6 @@ class ToolController extends Controller
             }
 
         }
-        //dd(json_encode($query));
-        $this->dispatch(new SendEloquaRequest($url, $query));
+        $this->dispatch(new SendCrmRequest($url, $query, 'POST', ['Content-Type' => 'application/json'], $auth));
     }
 }

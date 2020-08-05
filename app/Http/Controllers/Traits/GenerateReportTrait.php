@@ -2793,6 +2793,12 @@ trait GenerateReportTrait
             $customCopy.= trans(
                 session('product.alias').'.conclusion'
             );
+            $customCopy.= trans(
+                session('product.alias').'.conclusion'.$overallNumber
+            );
+            $customCopy.= trans(
+                session('product.alias').'.consclusion_end'
+            );
 
             //conclusion is in report end.pdf
 

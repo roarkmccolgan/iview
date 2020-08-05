@@ -1480,11 +1480,45 @@ return array(
                 <p class="mb-2 font-bold text-blue-dark">
                     Final recommendations to progress to the next level of maturity.
                 </p>
+            </div>
+        </div>',
+    'conclusion1' => '
+        <div class="clearfix">
+            <div>
                 <ul class="mb-2 list-disc">
-                    <li class="text-blue-dark italic mb-1">Define the starting point for your cloud journey. </li>
-                    <li class="text-blue-dark italic mb-1">Do an audit of the challenges you encounter in implementing your cloud strategy, rank them in order of importance, cost, and complexity, start with the easy ones to achieve some quick successes, and plan to address the more complex challenges. </li>
+                    <li class="text-blue-dark italic mb-1">Assess your current and future business goals, and understand how cloud adoption can help support them. This understanding is critical to plan a proactive cloud transition program that is tightly aligned with your individual business objectives, executive vision, and workforce culture.</li>
+                    <li class="text-blue-dark italic mb-1">Do an audit of the challenges you encounter in implementing your cloud strategy, rank them in order of importance, cost, and complexity, start with the easy ones to achieve some quick successes, and plan to address the more complex challenges.</li>
                     <li class="text-blue-dark italic mb-1">Reach out to an experienced partner for additional resources, support, and guidance.</li>
                 </ul>
+            </div>
+        </div>
+    ',
+    'conclusion2' => '
+        <div class="clearfix">
+            <div>
+                <ul class="mb-2 list-disc">
+                    <li class="text-blue-dark italic mb-1">Assess the legacy application landscape and plan your application modernization strategy to make them cloud-native, responsive, and agile.</li>
+                    <li class="text-blue-dark italic mb-1">Use a consistent cloud strategy as the foundation for modern practices such as DevOps and automation, with a laser focus on business value, and address real pain points.</li>
+                    <li class="text-blue-dark italic mb-1">AI-enhanced automation into integration and testing processes is the key to overcoming implementation skill gaps and accelerating time to market for new products and services while reducing undue reliance on experts.</li>
+                    <li class="text-blue-dark italic mb-1">Unify the existing multicloud components to break down the data silos and standardize operational and business process.</li>
+                </ul>
+            </div>
+        </div>
+    ',
+    'conclusion3' => '
+        <div class="clearfix">
+            <div>
+                <ul class="mb-2 list-disc">
+                    <li class="text-blue-dark italic mb-1">Ensure continuous and consistent core application modernization to make IT the competitive differentiator and driver of new revenue streams.</li>
+                    <li class="text-blue-dark italic mb-1">Consider extending DevOps and automation capabilities across complex and highly rigid environments for enterprisewide culture change and continuous cloud-driven innovation.</li>
+                    <li class="text-blue-dark italic mb-1">Reduce organizational complexity by adopting a DataOps approach that aligns people, processes, and technology to enable the rapid, automated, and secure management of data to increase the velocity of innovation.</li>
+                </ul>
+            </div>
+        </div>
+    ',
+    'consclusion_end' => '
+        <div class="clearfix">
+            <div>
                 <p class="mb-2">
                     As you plan your digital strategy, and work on aligning technology investments to business outcomes, you need to work with a partner to modernize your digital core — to build agile applications and infrastructure to power innovative business models. This includes planning a road map for cloud migration and application modernization, leading to business transformation. To learn more about optimizing cloud to accelerate digital innovation, please click here: <a href="https://www.hitachivantara.com/go/cloud-services/">https://www.hitachivantara.com/go/cloud-services/</a>
                 </p>
