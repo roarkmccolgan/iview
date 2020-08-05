@@ -2601,7 +2601,10 @@ class PdfController extends Controller
             );
             
             $customCopy.= trans(
-                session('product.alias').'.introduction5-'.$overallNumber
+                session('product.alias').'.introduction5-'.$overallNumber,
+                [
+                    'url'=>url('/')
+                ]
             );
 
             //Migration
