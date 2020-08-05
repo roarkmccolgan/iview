@@ -309,7 +309,7 @@ return array(
         <div class="clearfix">
             <div class="float-left w-1/3 mr-3">
                 <div class="text-center italic font-bold text-blue-dark">Figure 4: Key Priorities for Organizations Accelerating Their Digital Transformation Journeys</div>
-                <img src=":url/images/tools/13/key_priorities.png" alt="" class="w-full" />
+                <img src=":url/images/tools/13/key_priorities.png?id=2" alt="" class="w-full" />
             </div>
             <div class="float left">
                 <p class="mb-2">
