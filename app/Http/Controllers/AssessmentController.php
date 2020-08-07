@@ -210,7 +210,9 @@ class AssessmentController extends Controller
         }
             //$assessments = Assessment::find(28);
 
-        $tool->assessments()->update(['downloaded' => 1]);
+        $tool->assessments->each(function($assessment){
+          $assessment->update(['downloaded' => 1]);
+        });
 
 
         //columsn to download
@@ -225,11 +227,12 @@ class AssessmentController extends Controller
                 $item->quiz = collect($item->quiz)->flatmap(function ($quiz) use ($item) {
                     return collect($quiz['pages'])->flatmap(function ($pages) use ($item) {
                         return collect($pages['questions'])->flatmap(function ($question, $key) use ($item) {
+                            $newKey = $key." - ".$question['question'];
                             if (isset($question['selected'])) {
-                                return collect([$key=>$question['selected']]);
+                                return collect([$newKey=>$question['selected']]);
                             }
                             Log::info('answer not captured: '.$item->id.'\n '.$question['question']);
-                            return collect([$key=>'answer not captured ']);
+                            return collect([$newKey=>'answer not captured ']);
                         });
                     });
                 });
