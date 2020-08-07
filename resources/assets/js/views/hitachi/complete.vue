@@ -5,11 +5,11 @@
 			<div class="flex flex-wrap justify-center">
 				<div class="w-full sm:w-1/2 relative">
 					<div class="" v-html="$t('hitachi.finishtxt', { stage: $t('hitachi.'+rating)})"></div>
-					<div v-for="sec, key in theResult">
+					<!-- <div v-for="sec, key in theResult">
 						<div class="font-bold">{{ key }}</div>
 						<div class="">score: {{ sec.score }}</div>
 						<div class="mb-4">rating: {{ sec.rating }}</div>
-					</div>
+					</div> -->
 				</div>
 				<div class="w-full sm:w-1/2">
 					<div class="sm:ml-8">
