@@ -268,7 +268,7 @@ return array(
     ',
 
     'introduction5-1' => '
-        <h2 class="leading-tight text-black mb-2">Initial Recommendations:</h2>
+        <h2 class="leading-tight text-blue-dark mb-2">Initial Recommendations:</h2>
         <p class="mb-2">
             With the right guidance, leveraging industry best practices, and working with specialist vendors and partners, you will catch up quickly.
         </p>
@@ -279,7 +279,7 @@ return array(
         </ol>
     ',
     'introduction5-2' => '
-        <h2 class="leading-tight text-black mb-2">Initial Recommendations:</h2>
+        <h2 class="leading-tight text-blue-dark mb-2">Initial Recommendations:</h2>
         <p class="mb-2">
             While you are doing well, there is still a bit more to do to be fully cloud and data ready. As a Cloud Practitioner, your key priorities should be to:
         </p>
@@ -294,7 +294,7 @@ return array(
         </p>
     ',
     'introduction5-3' => '
-        <h2 class="leading-tight text-black mb-2">Initial Recommendations:</h2>
+        <h2 class="leading-tight text-blue-dark mb-2">Initial Recommendations:</h2>
         <p class="mb-2">
             As a Cloud Master, a key priority is to be cognizant of the fact that the cloud world is very dynamic and constantly evolving. Cloud Master organizations need to:
         </p>
