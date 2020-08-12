@@ -125,19 +125,19 @@ return array(
         </ol>
     ',
     'execsum1' => '
-        <h3 class="font-bold text-blue-dark text-lg">You Have Achieved Cloud Starter Status</h3>
+        <h3 class="font-bold text-blue-dark mb-2">You Have Achieved Cloud Starter Status</h3>
         <p class="mb-2">
             Based on your responses to IDC\'s Cloud Strategy Assessment, your organization has been rated at the earliest level of cloud strategy maturity — <span class="font-bold">Cloud Starter</span>. This means you are at the beginning of your cloud and data-enabled journey, and there will be much to do and much to gain. 
         </p>
     ',
     'execsum2' => '
-        <h3 class="font-bold text-blue-dark text-lg">You Have Achieved Cloud Practitioner Status</h3>
+        <h3 class="font-bold text-blue-dark mb-2">You Have Achieved Cloud Practitioner Status</h3>
         <p class="mb-2">
             Based on your responses to IDC\'s Cloud Strategy Assessment, your organization has been rated at the second highest level of cloud maturity — a <span class="font-bold">Cloud Practitioner</span>. This means your organization is generally in line with the rest of the industry and has prepared itself for the highest levels of cloud and data success.
         </p>
     ',
     'execsum3' => '
-        <h3 class="font-bold text-blue-dark text-lg">You Have Achieved Cloud Master Status</h3>
+        <h3 class="font-bold text-blue-dark mb-2">You Have Achieved Cloud Master Status</h3>
         <p class="mb-2">
             Based on your responses to IDC\'s Cloud Strategy Assessment, your organization has been rated as a <span class="font-bold">Cloud Master</span>, which is the highest level of cloud maturity. This means your organization is ahead of the industry, blazing a trail in using cloud and data, as business assets, and as a key competitive differentiator.
         </p>
