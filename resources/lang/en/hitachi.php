@@ -46,7 +46,7 @@ return array(
     'complete_body' => '
         Your custom report will arrive in your inbox soon.<br/>
         Please check in your junk folder if you don\'t receive it within 5 minutes.<br/><br/>
-        <a class="text-trend-red" target="_blank" href="https://www.hitachivantara.com/go/cloud-services/">
+        <a class="text-trend-red" target="_blank" href="https://www.hitachivantara.com/go/hitachi-consulting/services/digital-modernization.html">
             Click here for more information
         </a>',
     'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @ntt. Interested? ',// http://bit.ly/2gslXEh
@@ -56,7 +56,7 @@ return array(
         'body' => 'As promised, here\'s a link to download your IDC\'s Cloud Strategy Assesment Report. This breaks down your results by category and provides you with actionable recommendations.',
         'link' => 'Download PDF Report',
         'link_inline' => 'View Report in your browser',
-        'extra' => 'Once you\'ve read the report why not visit Hitachi Vantara <a href="https://www.hitachivantara.com/go/cloud-services/" style="color:#054683">Cloud Services</a>',
+        'extra' => 'Once you\'ve read the report why not visit Hitachi Vantara <a href="https://www.hitachivantara.com/go/hitachi-consulting/services/digital-modernization.html" style="color:#054683">Cloud Services</a>',
         'regards' => 'Regards',
         'team' => 'The IDC Team'
     ],
@@ -118,23 +118,26 @@ return array(
             The IDC Cloud Strategy Assessment ranks organizations by three maturity levels — <span class="font-bold">Cloud Starter, Cloud Practitioner, and Cloud Master</span>. Organizations must strive to master all three dimensions to realize the true value of cloud and data.
         </p>
         <p class="mb-2">The report will:</p>
-        <ol class="list-disc ml-4 mb-2">
+        <ol class="list-disc ml-4 mb-6">
             <li class="mb-1">Share insights across these same three key sections as the IDC Cloud Strategy Assessment — <span class="font-bold">cloud migration and application modernization, multicloud status, and data value realization.</span> It breaks out the specifics of each dimension, with tangible advice on how to progress to the next stage of cloud adoption — making the insights focused and highly actionable. </li>
             <li class="mb-1">Help you understand what sets the Cloud Masters apart from their peers and competitors.</li>
             <li class="mb-1">Suggest which best practices can help make your cloud and data transformation journey successful.</li>
         </ol>
     ',
     'execsum1' => '
+        <h3 class="font-bold text-blue-dark text-lg">You Have Achieved Cloud Starter Status</h3>
         <p class="mb-2">
             Based on your responses to IDC\'s Cloud Strategy Assessment, your organization has been rated at the earliest level of cloud strategy maturity — <span class="font-bold">Cloud Starter</span>. This means you are at the beginning of your cloud and data-enabled journey, and there will be much to do and much to gain. 
         </p>
     ',
     'execsum2' => '
+        <h3 class="font-bold text-blue-dark text-lg">You Have Achieved Cloud Practitioner Status</h3>
         <p class="mb-2">
             Based on your responses to IDC\'s Cloud Strategy Assessment, your organization has been rated at the second highest level of cloud maturity — a <span class="font-bold">Cloud Practitioner</span>. This means your organization is generally in line with the rest of the industry and has prepared itself for the highest levels of cloud and data success.
         </p>
     ',
     'execsum3' => '
+        <h3 class="font-bold text-blue-dark text-lg">You Have Achieved Cloud Master Status</h3>
         <p class="mb-2">
             Based on your responses to IDC\'s Cloud Strategy Assessment, your organization has been rated as a <span class="font-bold">Cloud Master</span>, which is the highest level of cloud maturity. This means your organization is ahead of the industry, blazing a trail in using cloud and data, as business assets, and as a key competitive differentiator.
         </p>
@@ -235,19 +238,19 @@ return array(
     ',
     'introduction3-1' => '
         <a name="ranking2"></a>
-        <h2 class="leading-tight text-blue-dark mb-2">Your Ranking: <span class="font-black text-grey-dark text-lg">Cloud Starter</span></h2>
+        <h2 class="leading-tight text-blue-dark mb-2">Your Ranking: <span class="font-black text-grey-dark text-lg">Cloud Master</span></h2>
         <p class="mb-2">
             Based on your responses to IDC\'s Cloud Strategy Assessment, your organization has been rated at the earliest level of cloud strategy maturity — <span class="font-bold">Cloud Starter</span>. This means you are at the beginning of your cloud and data-enabled journey, and there will be much to do and much to gain.
         </p>
     ',
     'introduction3-2' => '
-        <h2 class="leading-tight text-blue-dark mb-2">Your Ranking: <span class="font-black text-grey-dark text-lg">Cloud Starter</span></h2>
+        <h2 class="leading-tight text-blue-dark mb-2">Your Ranking: <span class="font-black text-grey-dark text-lg">Cloud Practitioner</span></h2>
         <p class="mb-2">
             Well done. Based on your responses to IDC\'s Cloud Strategy Assessment, your organization has been rated at the second highest level of cloud maturity — <span class="font-bold">Cloud Practitioner</span>. This means your organization is generally in line with the rest of the industry and has prepared itself for the highest levels of cloud and data success. While you are doing well, there is still a bit more to do to be fully cloud and data ready. To create a true competitive advantage, your focus must shift from a tactical approach to a more strategic, fully aligned way of thinking across all areas of the business.
         </p>
     ',
     'introduction3-3' => '
-        <h2 class="leading-tight text-blue-dark mb-2">Your Ranking: <span class="font-black text-grey-dark text-lg">Cloud Starter</span></h2>
+        <h2 class="leading-tight text-blue-dark mb-2">Your Ranking: <span class="font-black text-grey-dark text-lg">Cloud Master</span></h2>
         <p class="mb-2">
             Based on your responses to IDC\'s Cloud Strategy Assessment, your organization has been rated as a <span class="font-bold">Cloud Master</span>, which is the highest level of cloud maturity. This means your organization is ahead of the industry, blazing a trail in using cloud and data, as business assets and as a key competitive differentiator. Bear in mind, though, that the world of cloud and data is highly dynamic, and you\'ll need to keep improving and evolving to stay ahead.
         </p>
@@ -864,11 +867,11 @@ return array(
     ',
     'question4-1-1' => '
         <div class="clearfix">
-            <div class="">
+            <div class="font-bold">
                 <p class="mb-2">
                     As a Cloud Starter, it is easy to get overwhelmed by the sheer size of the application landscape and the array of migration options available. 
                 </p>
-                <p class="font-bold">
+                <p class="">
                     Starting with an assessment of your application landscape and choosing an experienced cloud migration partner are good steps to move to the next level of maturity.
                 </p>
             </div>
@@ -876,11 +879,11 @@ return array(
     ',
     'question4-1-2' => '
         <div class="clearfix">
-            <div class="">
+            <div class="font-bold">
                 <p class="mb-2">
                     As a Cloud Starter, you have already defined your starting point and understand the migration complexities of the different classes of applications. You are ahead of your Cloud Starter peers. 
                 </p>
-                <p class="font-bold">
+                <p class="">
                     As a next step, you need to devise a migration strategy (lift and shift, refactor, transform, etc.) for each application class and choose an experienced cloud migration partner if you don\'t have the skills in-house. 
                 </p>
             </div>
@@ -888,7 +891,7 @@ return array(
     ',
     'question4-1-3' => '
         <div class="clearfix">
-            <div class="">
+            <div class="font-bold">
                 <p class="mb-2">
                     As a Cloud Starter, you already understand the migration complexities of the different classes of applications and have come a long way in your cloud migration journey. You are far ahead of your Cloud Starter peers.
                 </p>
@@ -897,11 +900,11 @@ return array(
     ',
     'question4-2-1' => '
         <div class="clearfix">
-            <div class="">
+            <div class="font-bold">
                 <p class="mb-2">
                     As a Cloud Practitioner, you are behind your peers in terms of cloud migration strategy. However, it is easy to get overwhelmed by the sheer size of the application landscape and the array of migration options available. 
                 </p>
-                <p class="font-bold">
+                <p class="">
                     Starting with an assessment of your application landscape and choosing an experienced cloud migration partner for support are good steps to move to the next level of maturity.
                 </p>
             </div>
@@ -909,11 +912,11 @@ return array(
     ',
     'question4-2-2' => '
         <div class="clearfix">
-            <div class="">
+            <div class="font-bold">
                 <p class="mb-2">
                     As a Cloud Practitioner, you have already defined your starting point and understand the migration complexities of the different classes of applications. You are on a par with your peers. 
                 </p>
-                <p class="font-bold">
+                <p class="">
                     As a next step, you need to devise a migration strategy (lift and shift, refactor, transform, etc.) for each application class and choose an experienced cloud migration partner if you don\'t have the skills in-house. 
                 </p>
             </div>
@@ -921,7 +924,7 @@ return array(
     ',
     'question4-2-3' => '
         <div class="clearfix">
-            <div class="">
+            <div class="font-bold">
                 <p class="mb-2">
                     As a Cloud Practitioner, you already understand the migration complexities of the different classes of applications and have come a long way in your cloud migration journey. You are ahead of your Cloud Practitioner peers.
                 </p>
@@ -931,11 +934,11 @@ return array(
 
     'question4-3-1' => '
         <div class="clearfix">
-            <div class="">
+            <div class="font-bold">
                 <p class="mb-2">
                     As a Cloud Master, you are far behind your peers in terms of cloud migration strategy. However, it is easy to get overwhelmed by the sheer size of the application landscape and the migration options. 
                 </p>
-                <p class="font-bold">
+                <p class="">
                     Starting with an assessment of your application landscape and choosing an experienced cloud migration partner are good steps to move to the next level of maturity.
                 </p>
             </div>
@@ -943,11 +946,11 @@ return array(
     ',
     'question4-3-2' => '
         <div class="clearfix">
-            <div class="">
+            <div class="font-bold">
                 <p class="mb-2">
                     As a Cloud Master, you have defined your starting point and understand the migration complexities of the different classes of applications. However, you are behind your peers in migrating applications to the cloud.
                 </p>
-                <p class="font-bold">
+                <p class="">
                     As a next step, you need to devise a migration strategy (lift and shift, refactor, transform, etc.) for each application class and choose an experienced cloud migration partner if you don\'t have the skills in-house. 
                 </p>
             </div>
@@ -955,9 +958,9 @@ return array(
     ',
     'question4-3-3' => '
         <div class="clearfix">
-            <div class="">
+            <div class="font-bold">
                 <p class="mb-2">
-                    As a Cloud Mater, you already understand the migration complexities of the different classes of applications and have come a long way in your cloud migration journey. You are on a par with your Cloud Master peers.
+                    As a Cloud Master, you already understand the migration complexities of the different classes of applications and have come a long way in your cloud migration journey. You are on a par with your Cloud Master peers.
                 </p>
             </div>
         </div>
@@ -1485,6 +1488,9 @@ return array(
     'conclusion1' => '
         <div class="clearfix">
             <div>
+                <p class="mb-2 font-bold text-blue-dark">
+                    Final recommendations to progress to the next level of maturity.
+                </p>
                 <ul class="mb-2 list-disc">
                     <li class="mb-1">Assess your current and future business goals, and understand how cloud adoption can help support them. This understanding is critical to plan a proactive cloud transition program that is tightly aligned with your individual business objectives, executive vision, and workforce culture.</li>
                     <li class="mb-1">Do an audit of the challenges you encounter in implementing your cloud strategy, rank them in order of importance, cost, and complexity, start with the easy ones to achieve some quick successes, and plan to address the more complex challenges.</li>
@@ -1496,6 +1502,9 @@ return array(
     'conclusion2' => '
         <div class="clearfix">
             <div>
+                <p class="mb-2 font-bold text-blue-dark">
+                    Final recommendations to progress to the next level of maturity.
+                </p>
                 <ul class="mb-2 list-disc">
                     <li class="mb-1">Assess the legacy application landscape and plan your application modernization strategy to make them cloud-native, responsive, and agile.</li>
                     <li class="mb-1">Use a consistent cloud strategy as the foundation for modern practices such as DevOps and automation, with a laser focus on business value, and address real pain points.</li>
@@ -1508,6 +1517,9 @@ return array(
     'conclusion3' => '
         <div class="clearfix">
             <div>
+                <p class="mb-2 font-bold text-blue-dark">
+                    Final recommendations
+                </p>
                 <ul class="mb-2 list-disc">
                     <li class="mb-1">Ensure continuous and consistent core application modernization to make IT the competitive differentiator and driver of new revenue streams.</li>
                     <li class="mb-1">Consider extending DevOps and automation capabilities across complex and highly rigid environments for enterprisewide culture change and continuous cloud-driven innovation.</li>
@@ -1520,7 +1532,7 @@ return array(
         <div class="clearfix">
             <div>
                 <p class="mb-2">
-                    As you plan your digital strategy, and work on aligning technology investments to business outcomes, you need to work with a partner to modernize your digital core — to build agile applications and infrastructure to power innovative business models. This includes planning a road map for cloud migration and application modernization, leading to business transformation. To learn more about optimizing cloud to accelerate digital innovation, please click here: <a href="https://www.hitachivantara.com/go/cloud-services/">https://www.hitachivantara.com/go/cloud-services/</a>
+                    As you plan your digital strategy, and work on aligning technology investments to business outcomes, you need to work with a partner to modernize your digital core — to build agile applications and infrastructure to power innovative business models. This includes planning a road map for cloud migration and application modernization, leading to business transformation. To learn more about optimizing cloud to accelerate digital innovation, please click here: <a href="https://www.hitachivantara.com/go/hitachi-consulting/services/digital-modernization.html">https://www.hitachivantara.com/go/hitachi-consulting/services/digital-modernization.html</a>
                 </p>
             </div>
         </div>
