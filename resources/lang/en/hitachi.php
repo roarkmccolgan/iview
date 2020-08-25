@@ -11,7 +11,7 @@ return array(
     'change-langauge'=>'Change language',
     'download-now'=>'Download Now',
 
-    'title'=>'IDC\'s Cloud Strategy Assesment',
+    'title'=>'IDC\'s Cloud Strategy Assessment',
     'sub-title'=>'Measuring the success of your cloud and data Strategy',
     'landing'=>'
         <p class="mb-2">
@@ -51,9 +51,9 @@ return array(
         </a>',
     'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @ntt. Interested? ',// http://bit.ly/2gslXEh
     'email'=>[
-        'subject' => 'IDC\'s Cloud Strategy Assesment',
+        'subject' => 'IDC\'s Cloud Strategy Assessment',
         'hi' => 'Hi :Fname',
-        'body' => 'As promised, here\'s a link to download your IDC\'s Cloud Strategy Assesment Report. This breaks down your results by category and provides you with actionable recommendations.',
+        'body' => 'As promised, here\'s a link to download your IDC\'s Cloud Strategy Assessment Report. This breaks down your results by category and provides you with actionable recommendations.',
         'link' => 'Download PDF Report',
         'link_inline' => 'View Report in your browser',
         'extra' => 'Once you\'ve read the report why not visit Hitachi Vantara <a href="https://www.hitachivantara.com/go/hitachi-consulting/services/digital-modernization.html" style="color:#054683">Cloud Services</a>',
@@ -112,16 +112,16 @@ return array(
     'execsum' => '
         <h2 class="text-blue-dark mb-2 pt-10">Executive Summary</h2>
         <p class="mb-2">
-            Thank you for taking the next step to your cloud Journey and completing the IDC Cloud Strategy Assessment.  Based on your answers, this report will highlight some of your organization\'s key strengths and potential areas for development in relation to your cloud strategy.
+            Thank you for taking the next step on your cloud journey and completing the IDC Cloud Strategy Assessment.  Based on your answers, this report will highlight some of your organization\'s key strengths and potential areas for development in relation to your cloud strategy.
         </p>
         <p class="mb-2">
             The IDC Cloud Strategy Assessment ranks organizations by three maturity levels — <span class="font-bold">Cloud Starter, Cloud Practitioner, and Cloud Master</span>. Organizations must strive to master all three dimensions to realize the true value of cloud and data.
         </p>
         <p class="mb-2">The report will:</p>
         <ol class="list-disc ml-4 mb-6">
-            <li class="mb-1">Share insights across these same three key sections as the IDC Cloud Strategy Assessment — <span class="font-bold">cloud migration and application modernization, multicloud status, and data value realization.</span> It breaks out the specifics of each dimension, with tangible advice on how to progress to the next stage of cloud adoption — making the insights focused and highly actionable. </li>
-            <li class="mb-1">Help you understand what sets the Cloud Masters apart from their peers and competitors.</li>
-            <li class="mb-1">Suggest which best practices can help make your cloud and data transformation journey successful.</li>
+            <li class="mb-1">Share insights across these same three key sections as the IDC Cloud Strategy Assessment — <span class="font-bold">cloud migration and application modernization, multicloud status, and data value realization</span>. It breaks out the specifics of each dimension, with tangible advice on how to progress to the next stage of cloud adoption — making the insights focused and highly actionable. </li>
+            <li class="mb-1">Help you understand what sets the Cloud Masters apart from their peers and competitors</li>
+            <li class="mb-1">Suggest which best practices can help make your cloud and data transformation journey successful</li>
         </ol>
     ',
     'execsum1' => '
@@ -139,7 +139,7 @@ return array(
     'execsum3' => '
         <h3 class="font-bold text-blue-dark mb-2">You Have Achieved Cloud Master Status</h3>
         <p class="mb-2">
-            Based on your responses to IDC\'s Cloud Strategy Assessment, your organization has been rated as a <span class="font-bold">Cloud Master</span>, which is the highest level of cloud maturity. This means your organization is ahead of the industry, blazing a trail in using cloud and data, as business assets, and as a key competitive differentiator.
+            Based on your responses to IDC\'s Cloud Strategy Assessment, your organization has been rated as a <span class="font-bold">Cloud Master</span>, which is the highest level of cloud maturity. This means your organization is ahead of the industry, blazing a trail in using cloud and data as business assets and as a key competitive differentiator.
         </p>
     ',
     'execsumoutro' => '
@@ -147,7 +147,7 @@ return array(
             The better an organization is in its vision, execution, and ability to overcome challenges along the way, the higher it is in the maturity curve — giving it a competitive differentiation.
         </p>
         <p class="mb-2">
-            <span class="font-bold">Knowing how you score in relation to the IDC model and where improvements can be made helps to focus your efforts — resulting in quicker time to value from your cloud and data transformation investments.</span> Read the complete report to get a better understanding of your organization\'s cloud maturity stage and what steps to take.
+            <span class="font-bold">Knowing how you score in relation to the IDC model and where improvements can be made helps to focus your efforts — resulting in quicker time to value from your cloud and data transformation investments</span>. Read the complete report to get a better understanding of your organization\'s cloud maturity stage and what steps to take.
         </p>
     ',
 
@@ -158,7 +158,7 @@ return array(
             <span class="font-bold">The graphic below represents IDC\'s model for the new digital platform</span> — we believe this is the essential foundation on which to launch and scale your digital transformation (DX) initiatives.
         </p>
         <p class="mb-2">
-            <span class="font-bold">The digital platform is built on a multicloud architecture and places data at the heart of a platform.</span>&nbsp;&nbsp;This spans IT, digital, and business domains, and starts with an "intelligent core" that holds the code that enables you to turn data into insights and tools.
+            <span class="font-bold">The digital platform is built on a multicloud architecture and places data at the heart of a platform</span>.&nbsp;&nbsp;This spans IT, digital, and business domains, and starts with an "intelligent core" that holds the code that enables you to turn data into insights and tools.
         </p>
         <p class="mb-2">
             The foundational services do not go away. IT governance, a modern architecture and applications, integration, and development services are the enablers of this new digital platform.
@@ -167,11 +167,11 @@ return array(
         <img src=":url/images/tools/13/intelligent_core.png" alt="" class="block w-5/6 mx-auto mb-4" />
         <p class="font-bold mb-1">The Digital Platform Improves Processes</p>
         <p class="mb-2">
-            Internal data is collected through connected assets, employees, connected processes, and other data streams. This data circulates through the data core, in turn transforming the data into insights. Those insights circle back into the organization as improved internal processes.
+            Internal data is collected through connected assets, employees, processes, and other data streams. This data circulates through the data core, in turn transforming the data into insights. Those insights circle back into the organization as improved internal processes.
         </p>
         <p class="font-bold mb-1">The Digital Platform Improves Engagement</p>
         <p class="mb-2">
-            Data from external processes enters through engagements with customers and their devices, bots, AR/VR devices, connected vehicles, and other technologies. As this data circulates through the intelligent core, it is transformed into actions that can be taken to improve engagements with the ecosystem.
+            Data from external processes enters through engagements with customers and their devices, bots, augmented reality/virtual reality (AR/VR) devices, connected vehicles, and other technologies. As this data circulates through the intelligent core, it is transformed into actions that can be taken to improve engagements with the ecosystem.
         </p>
         <p class="mb-2">
             The digital platform is built on a modern architecture, leveraging cloud-native applications, containers, and microservices, with data feeding the intelligent core — producing the intelligence that enables business speed, agility, and resilience.
@@ -187,21 +187,18 @@ return array(
         <p class="mb-2 font-bold">
             A well-thought-out cloud strategy and consistent execution of this strategy delivers the flexibility and scale that underpins digital business success and data transformation.
         </p>
-        <div class="float-right p-1 w-2/5 border rounded font-bold text-blue-dark ml-2 mb-2">
-            Cloud and data transformation initiatives improve efficiency, business performance, and the speed of innovation.
-        </div>
         <p class="mb-2">
-            <span class="font-bold">The key priorities for organizations accelerating their digital transformation journeys are IT modernization, successful cloud adoption, and progress in becoming data driven.</span> They want to use cloud and data transformation initiatives to improve efficiency, business performance, and the speed of innovation. Delivering on digital business mandates requires a well-thought-out cloud strategy and set of technologies to drive innovation, all without compromising on cost control, security, or regulatory obligations. Providing a flexible IT delivery model and relevant data at speed, while aligning with business needs, is critical. 
+            <span class="font-bold">The key priorities for organizations accelerating their digital transformation journeys are IT modernization, successful cloud adoption, and progress in becoming data-driven</span>. They want to use cloud and data transformation initiatives to improve efficiency, business performance, and the speed of innovation. Delivering on digital business mandates requires a well-thought-out cloud strategy and set of technologies to drive innovation, all without compromising on cost control, security, or regulatory obligations. Providing a flexible IT delivery model and relevant data at speed, while aligning with business needs, is critical. 
         </p>
         <p class="mb-4 font-bold">
-            Developing a successful cloud and data strategy will be the bedrock on which to digitally transform your organization in a scalable and agile manner.
+            Developing a successful cloud and data strategy will be the bedrock to digitally transform your organization in a scalable and agile manner.
         </p>
         <div class="text-center font-bold text-blue-dark">
-            Organizations top Digital Transformation (DX) priorities<br/> based on its Digital Transformation vision, strategy and roadmap
+            Organizations\' Top DX Priorities Based on DX Vision, Strategy, and Road Map
         </div>
         <div class="text-xs text-gray-dark mb-4">
             <img src=":url/images/tools/13/top_priorities.png" alt="" class="w-full" />
-            Source: IDC DX Leaders’ Survey 2019; Europe, N=400
+            Source: IDC DX Leaders\' Survey 2019; Europe, n = 400
         </div>
     ',
     
@@ -238,7 +235,7 @@ return array(
     ',
     'introduction3-1' => '
         <a name="ranking2"></a>
-        <h2 class="leading-tight text-blue-dark mb-2">Your Ranking: <span class="font-black text-grey-dark text-lg">Cloud Master</span></h2>
+        <h2 class="leading-tight text-blue-dark mb-2">Your Ranking: <span class="font-black text-grey-dark text-lg">Cloud Starter</span></h2>
         <p class="mb-2">
             Based on your responses to IDC\'s Cloud Strategy Assessment, your organization has been rated at the earliest level of cloud strategy maturity — <span class="font-bold">Cloud Starter</span>. This means you are at the beginning of your cloud and data-enabled journey, and there will be much to do and much to gain.
         </p>
@@ -276,9 +273,9 @@ return array(
             With the right guidance, leveraging industry best practices, and working with specialist vendors and partners, you will catch up quickly.
         </p>
         <ol class="list-disc ml-4 mb-2">
-            <li class="mb-1">You need to define a starting point and set short, mid- and long-term priorities.</li>
-            <li class="mb-1">Start to drive incremental improvements. </li>
-            <li class="mb-1">With the amount of potential complexity and a shortage of digital skills, seek outside assistance where possible to accelerate your move to a cloud-enabled and data-driven organization.</li>
+            <li class="mb-1">Define a starting point and set short, mid- and long-term priorities</li>
+            <li class="mb-1">Start to drive incremental improvements</li>
+            <li class="mb-1">With the amount of potential complexity and a shortage of digital skills, seek outside assistance where possible to accelerate your move to a cloud-enabled and data-driven organization</li>
         </ol>
     ',
     'introduction5-2' => '
@@ -311,7 +308,7 @@ return array(
         </p>
         <div class="clearfix">
             <div class="float-left w-1/3 mr-3">
-                <div class="text-center font-bold text-blue-dark">Figure 4: Key Priorities for Organizations Accelerating Their Digital Transformation Journeys</div>
+                <div class="text-center font-bold text-blue-dark">Key Priorities for Organizations Accelerating Their Digital Transformation Journeys</div>
                 <img src=":url/images/tools/13/key_priorities.png?id=2" alt="" class="w-full" />
             </div>
             <div class="float left">
@@ -319,10 +316,10 @@ return array(
                     Organizations are using cloud and data transformation initiatives to improve efficiency, business performance, and the speed of innovation.
                 </p>
                 <p class="mb-2">
-                    Delivering on digital business mandates requires a well-thought-out cloud strategy and set of technologies to drive innovation, all without compromising on cost control, security, or regulatory obligations. <span class="font-bold">Providing a flexible IT delivery model and relevant data at speed, while aligning with business needs, is critical.</span>
+                    Delivering on digital business mandates requires a well-thought-out cloud strategy and set of technologies to drive innovation, all without compromising on cost control, security, or regulatory obligations. <span class="font-bold">Providing a flexible IT delivery model and relevant data at speed, while aligning with business needs, is critical</span>.
                 </p>
                 <p class="mb-2">
-                    Developing a successful cloud and data strategy will form the bedrock on which to digitally transform your organization in a scalable and agile manner.
+                    Developing a successful cloud and data strategy will form the bedrock to digitally transform your organization in a scalable and agile manner.
                 </p>
             </div>
         </div>
@@ -335,12 +332,12 @@ return array(
             <div class="w-3/4 float-left">
                 <h2 class="text-blue-dark mb-3">Cloud Migration and Application Modernization</h2>
                 <p class="mb-2">
-                    Welcome to the cloud migration and application modernization chapter of this report. <span class="font-bold">IDC research shows that an effective cloud adoption and legacy application modernization strategy, built on the right fundamentals, is a critical element of a successful digital transformation strategy. A consistent and planned strategy to migrate to cloud-like, services-driven infrastructures and to transform legacy applications enables enterprisewide digital transformation.</span>
+                    Welcome to the cloud migration and application modernization chapter of this report. <span class="font-bold">IDC research shows that an effective cloud adoption and legacy application modernization strategy, built on the right fundamentals, is a critical element of a successful digital transformation strategy. A consistent and planned strategy to migrate to cloud-like, services-driven infrastructures and to transform legacy applications enables enterprisewide digital transformation</span>.
                 </p>
             </div>
         </div>
         <div class="text-center font-bold text-blue-dark">
-            Cloud adoption trends
+            Cloud Adoption Trends
         </div>
         <div class="text-xs text-gray-dark mb-6">
             <img src=":url/images/tools/13/ww_cloud_adoption.png" alt="" class="block w-full" />
@@ -348,7 +345,7 @@ return array(
         </div>
         <div class="clearfix">
             <p class="mb-2">
-                <span class="font-bold">This section will assess your maturity and progress in key areas of cloud migration and application modernization</span> and help determine where you need to focus to get the best results. It is based on what\'s driving your key investment decisions, the challenges you are facing, and how initiatives are being prioritized within your cloud strategy.
+                <span class="font-bold">This section will assess your maturity and progress in key areas of cloud migration and application modernization</span>, and help determine where you need to focus to get the best results. It is based on what\'s driving your key investment decisions, the challenges you are facing, and how initiatives are being prioritized within your cloud strategy.
             </p>
         </div>
     ',
@@ -471,14 +468,14 @@ return array(
     'question1-a' => '
         <div class="clearfix">
             <p class="mb-2">
-                Focusing on cost savings as the key driver for cloud migration and application modernization efforts might initially seem like the most sensible approach … but is it? Early stage cloud adoption was often driven by the expectation to save costs when moving from a capex model on-premises to an opex model in the cloud. However, the business case in the cloud does not stack up if you are not also changing your processes so that you scale your application usage up and down according to demand. In addition, <span class="font-bold">cloud as an operating model provides so many other benefits like access to innovative services and support of an agile working culture, which provide more significant advantages than "only" cost savings. To get to the next level, you should think more broadly about the benefits that a cloud and application modernization strategy can provide for your organization.  </span>
+                Focusing on cost savings as the key driver for cloud migration and application modernization efforts might initially seem like the most sensible approach, but is it? Early stage cloud adoption was often driven by the expectation to save costs when moving from a capex model on premises to an opex model in the cloud. However, the business case in the cloud does not stack up if you are not also changing your processes so that you scale your application usage up and down according to demand. In addition, <span class="font-bold">cloud as an operating model provides so many other benefits like access to innovative services and support of an agile working culture, which provide more significant advantages than "only" cost savings. To get to the next level, you should think more broadly about the benefits that a cloud and application modernization strategy can provide for your organization.  </span>
             </p>
         </div>
     ',
     'question1-b' => '
         <div class="clearfix">
             <p class="mb-2">
-                Cloud is a great way to drive operational efficiency at the infrastructure layer, as the cloud provider manages the infrastructure for you so you can free up IT infrastructure operations staff and focus them on other tasks. However, the move to the cloud requires new skills as well, so you need to retrain your staff with cloud management capabilities or look to external resources to fill the gaps. In addition, please consider that <span class="font-bold">cloud offers much more than operational efficiency and is the foundation for digital transformation. To move to the next level of cloud maturity, you might want to investigate how you can use the cloud for business model innovation and transformation, for example by opening up your data and driving new revenue streams from your data in a compliant way.</span> 
+                Cloud is a great way to drive operational efficiency at the infrastructure layer, as the cloud provider manages the infrastructure for you so you can free up IT infrastructure operations staff and focus them on other tasks. However, the move to the cloud requires new skills as well, so you need to retrain your staff with cloud management capabilities or look to external resources to fill the gaps. In addition, please consider that <span class="font-bold">cloud offers much more than operational efficiency and is the foundation for digital transformation. To move to the next level of cloud maturity, you might want to investigate how you can use the cloud for business model innovation and transformation, for example by opening up your data and driving new revenue streams from your data in a compliant way</span>. 
             </p>
         </div>
     ',
@@ -519,16 +516,16 @@ return array(
         <div class="clearfix">
             <div class="">
                 <p class="mb-2">
-                    As a Cloud Starter, you are still dealing with many challenges when implementing your cloud strategy. <span class="font-bold">The move to the cloud is more than a simple technology upgrade — it is transforming not only your technology platform but also your processes, your staffing requirements, your security procedures, and how you collaborate with other parts of your business.</span>
+                    As a Cloud Starter, you are still dealing with many challenges when implementing your cloud strategy. <span class="font-bold">The move to the cloud is more than a simple technology upgrade — it is transforming not only your technology platform but also your processes, your staffing requirements, your security procedures, and how you collaborate with other parts of your business</span>.
                 </p>
-                <p class="font-bold">Recommendation:</p>
+                <p class="font-bold">Recommendations:</p>
                 <p class="mb-2">
                     To move to the next stage of cloud maturity, you need to:
                 </p>
                 <ul class="mb-2 list-disc">
-                    <li>Define the starting point for your cloud journey.</li>
-                    <li>Do an audit of the challenges you encounter in implementing your cloud strategy, rank them in order of importance, cost, and complexity, start with the easy ones to achieve some quick successes, and plan to address the more complex challenges.</li>
-                    <li>Reach out to an experienced partner for additional resources, support, and guidance.</li>
+                    <li>Define the starting point for your cloud journey</li>
+                    <li>Do an audit of the challenges you encounter in implementing your cloud strategy, rank them in order of importance, cost, and complexity, start with the easy ones to achieve some quick successes, and plan to address the more complex challenges</li>
+                    <li>Reach out to an experienced partner for additional resources, support, and guidance</li>
                 </ul>
             </div>
         </div>
@@ -539,14 +536,14 @@ return array(
                 <p class="mb-2">
                     As a Cloud Starter, you have already tackled some important cloud challenges and are ahead of your Cloud Starter peers in this area. The move to the cloud is more than a simple technology upgrade — it is transforming not only your technology platform but also your processes, your staffing requirements, your security procedures, and how you collaborate with other parts of your business.
                 </p>
-                <p class="font-bold">Recommendation:</p>
+                <p class="font-bold">Recommendations:</p>
                 <p class="mb-2">
                     To move to the next stage of cloud maturity, you need to:
                 </p>
                 <ul class="mb-2 list-disc">
-                   <li>Define the starting point for your cloud journey.</li>
-                   <li>Do an audit of the challenges you encounter in implementing your cloud strategy, rank them in order of importance, cost, and complexity, start with the easy ones to achieve some quick successes, and plan to address the more complex challenges.</li>
-                   <li>Reach out to an experienced partner for additional resources, support, and guidance.</li>
+                   <li>Define the starting point for your cloud journey</li>
+                   <li>Do an audit of the challenges you encounter in implementing your cloud strategy, rank them in order of importance, cost, and complexity, start with the easy ones to achieve some quick successes, and plan to address the more complex challenges</li>
+                   <li>Reach out to an experienced partner for additional resources, support, and guidance</li>
                 </ul>
             </div>
         </div>
@@ -557,14 +554,14 @@ return array(
                 <p class="mb-2">
                     As a Cloud Starter, you have already tackled most of the important cloud challenges and are far ahead of your Cloud Starter peers. The move to the cloud is more than a simple technology upgrade — it is transforming not only your technology platform but also your processes, your staffing requirements, your security procedures, and how you collaborate with other parts of your business. 
                 </p>
-                <p class="font-bold">Recommendation:</p>
+                <p class="font-bold">Recommendations:</p>
                 <p class="mb-2">
                     To move to the next stage of cloud maturity, you need to:
                 </p>
                 <ul class="mb-2 list-disc">
-                    <li>Define the starting point for your cloud journey.</li>
-                    <li>Do an audit of the challenges you encounter in implementing your cloud strategy, rank them in order of importance, cost, and complexity, start with the easy ones to achieve some quick successes, and plan to address the more complex challenges.</li>
-                    <li>Reach out to an experienced partner for additional resources, support, and guidance.</li>
+                    <li>Define the starting point for your cloud journey</li>
+                    <li>Do an audit of the challenges you encounter in implementing your cloud strategy, rank them in order of importance, cost, and complexity, start with the easy ones to achieve some quick successes, and plan to address the more complex challenges</li>
+                    <li>Reach out to an experienced partner for additional resources, support, and guidance</li>
                 </ul>
             </div>
         </div>
@@ -575,14 +572,14 @@ return array(
                 <p class="mb-2">
                     For a Cloud Practitioner, you are still dealing with many challenges when implementing your cloud strategy, and you are behind your Cloud Practitioner peers in this area. The move to the cloud is more than a simple technology upgrade — it is transforming not only your technology platform but also your processes, your staffing requirements, your security procedures, and how you collaborate with other parts of your business. 
                 </p>
-                <p class="font-bold">Recommendation:</p>
+                <p class="font-bold">Recommendations:</p>
                 <p class="mb-2">
                     To move to the next stage of cloud maturity, you need to:
                 </p>
                 <ul class="mb-2 list-disc">
-                    <li>Define the starting point for your cloud journey. </li>
-                    <li>Do an audit of the challenges you encounter in implementing your cloud strategy, rank them in order of importance, cost, and complexity, start with the easy ones to achieve some quick successes, and plan to address the more complex challenges. </li>
-                    <li>Reach out to an experienced partner for additional resources, support, and guidance.</li>
+                    <li>Define the starting point for your cloud journey </li>
+                    <li>Do an audit of the challenges you encounter in implementing your cloud strategy, rank them in order of importance, cost, and complexity, start with the easy ones to achieve some quick successes, and plan to address the more complex challenges </li>
+                    <li>Reach out to an experienced partner for additional resources, support, and guidance</li>
                 </ul>
             </div>
         </div>
@@ -593,14 +590,14 @@ return array(
                 <p class="mb-2">
                     As a Cloud Practitioner, you have already tackled some important cloud challenges and are on a par with your Cloud Practitioner peers. The move to the cloud is more than a simple technology upgrade — it is transforming not only your technology platform but also your processes, your staffing requirements, your security procedures, and how you collaborate with other parts of your business. 
                 </p>
-                <p class="font-bold">Recommendation:</p>
+                <p class="font-bold">Recommendations:</p>
                 <p class="mb-2">
                     To move to the next stage of cloud maturity, you need to:
                 </p>
                 <ul class="mb-2 list-disc">
-                    <li>Define the starting point for your cloud journey. </li>
-                    <li>Do an audit of the challenges you encounter in implementing your cloud strategy, rank them in order of importance, cost, and complexity, start with the easy ones to achieve some quick successes, and plan to address the more complex challenges. </li>
-                    <li>Reach out to an experienced partner for additional resources, support, and guidance.</li>
+                    <li>Define the starting point for your cloud journey </li>
+                    <li>Do an audit of the challenges you encounter in implementing your cloud strategy, rank them in order of importance, cost, and complexity, start with the easy ones to achieve some quick successes, and plan to address the more complex challenges </li>
+                    <li>Reach out to an experienced partner for additional resources, support, and guidance</li>
                 </ul>
             </div>
         </div>
@@ -611,14 +608,14 @@ return array(
                 <p class="mb-2">
                     As a Cloud Practitioner, you have already tackled most of the important cloud challenges and are ahead of your Cloud Practitioner peers. The move to the cloud is more than a simple technology upgrade — it is transforming not only your technology platform but also your processes, your staffing requirements, your security procedures, and how you collaborate with other parts of your business.
                 </p>
-                <p class="font-bold">Recommendation:</p>
+                <p class="font-bold">Recommendations:</p>
                 <p class="mb-2">
                     To move to the next stage of cloud maturity, you need to:
                 </p>
                 <ul class="mb-2 list-disc">
-                    <li>Define the starting point for your cloud journey. </li>
-                    <li>Do an audit of the challenges you encounter in implementing your cloud strategy, rank them in order of importance, cost, and complexity, start with the easy ones to achieve some quick successes, and plan to address the more complex challenges. </li>
-                    <li>Reach out to an experienced partner for additional resources, support, and guidance.</li>
+                    <li>Define the starting point for your cloud journey </li>
+                    <li>Do an audit of the challenges you encounter in implementing your cloud strategy, rank them in order of importance, cost, and complexity, start with the easy ones to achieve some quick successes, and plan to address the more complex challenges </li>
+                    <li>Reach out to an experienced partner for additional resources, support, and guidance</li>
                 </ul>
             </div>
         </div>
@@ -630,14 +627,14 @@ return array(
                 <p class="mb-2">
                     For a Cloud Master, you are surprisingly still dealing with many challenges related to the implementation of your cloud strategy and are scoring far behind your Cloud Master peers. The move to the cloud is more than a simple technology upgrade — it is transforming not only your technology platform but also your processes, your staffing requirements, your security procedures, and how you collaborate with other parts of your business. 
                 </p>
-                <p class="font-bold">Recommendation:</p>
+                <p class="font-bold">Recommendations:</p>
                 <p class="mb-2">
                     To move to the next stage of cloud maturity, you need to:
                 </p>
                 <ul class="mb-2 list-disc">
-                    <li>Define the starting point for your cloud journey. </li>
-                    <li>Do an audit of the challenges you encounter in implementing your cloud strategy, rank them in order of importance, cost, and complexity, start with the easy ones to achieve some quick successes, and plan to address the more complex challenges. </li>
-                    <li>Reach out to an experienced partner for additional resources, support, and guidance.</li>
+                    <li>Define the starting point for your cloud journey </li>
+                    <li>Do an audit of the challenges you encounter in implementing your cloud strategy, rank them in order of importance, cost, and complexity, start with the easy ones to achieve some quick successes, and plan to address the more complex challenges </li>
+                    <li>Reach out to an experienced partner for additional resources, support, and guidance</li>
                 </ul>
             </div>
         </div>
@@ -648,14 +645,14 @@ return array(
                 <p class="mb-2">
                     As a Cloud Master, you have already tackled some cloud challenges, but there are still many to tackle. You are scoring below your Cloud Master peers, demonstrating a higher than expected amount of challenges to overcome. The move to the cloud is more than a simple technology upgrade — it is transforming not only your technology platform but also your processes, your staffing requirements, your security procedures, and how you collaborate with other parts of your business. 
                 </p>
-                <p class="font-bold">Recommendation:</p>
+                <p class="font-bold">Recommendations:</p>
                 <p class="mb-2">
                     To move to the next stage of cloud maturity, you need to:
                 </p>
                 <ul class="mb-2 list-disc">
-                    <li>Define the starting point for your cloud journey.</li>
-                    <li>Do an audit of the challenges you encounter in implementing your cloud strategy, rank them in order of importance, cost, and complexity, start with the easy ones to achieve some quick successes, and plan to address the more complex challenges.</li>
-                    <li>Reach out to an experienced partner for additional resources, support, and guidance.</li>
+                    <li>Define the starting point for your cloud journey</li>
+                    <li>Do an audit of the challenges you encounter in implementing your cloud strategy, rank them in order of importance, cost, and complexity, start with the easy ones to achieve some quick successes, and plan to address the more complex challenges</li>
+                    <li>Reach out to an experienced partner for additional resources, support, and guidance</li>
                 </ul>
             </div>
         </div>
@@ -664,7 +661,7 @@ return array(
         <div class="clearfix">
             <div class="">
                 <p class="mb-2">
-                    As a Cloud Master, you are have already tackled most of the important cloud challenges, and you are on a par with your Cloud Master peers. <span class="font-bold">The move to the cloud is more than a simple technology upgrade — it is transforming not only your technology platform but also your processes, your staffing requirements, your security procedures, and how you collaborate with other parts of your business.</span> To stay ahead of your competition, you need to keep improving and tackle arising cloud operational challenges quickly and effectively.
+                    As a Cloud Master, you are have already tackled most of the important cloud challenges, and you are on a par with your Cloud Master peers. <span class="font-bold">The move to the cloud is more than a simple technology upgrade — it is transforming not only your technology platform but also your processes, your staffing requirements, your security procedures, and how you collaborate with other parts of your business</span>. To stay ahead of your competition, you need to keep improving and tackle arising cloud operational challenges quickly and effectively.
                 </p>
             </div>
         </div>
@@ -674,7 +671,7 @@ return array(
         <div class="clearfix mt-5">
             <div class="">
                 <h4 class="mb-1 font-bold text-grey-darker">Question 3</h4>
-                <h3 class="mb-1 text-blue-dark leading-tight">Looking at your 2-3 year strategy, please rank the importance of the following initiatives?</h3>
+                <h3 class="mb-1 text-blue-dark leading-tight">Looking at your two- to three-year strategy, please rank the importance of the following initiatives.</h3>
             </div>
         </div>
     ',
@@ -687,7 +684,7 @@ return array(
                 <p class="font-bold">Looking forward:</p>
                 <ul class="mb-2 list-disc">
                     <li>As a next step, organizations are typically looking to implement an agile, cloud-based application architecture using microservices and containers. </li>
-                    <li>Finally, they are building an intelligent core to implement and scale analytics, machine learning, and artificial intelligence. </li>
+                    <li>Finally, they are building an intelligent core to implement and scale analytics, machine learning (ML), and artificial intelligence (AI). </li>
                     <li>To do that, they need to automate and orchestrate the exchange of data within their ecosystem to develop new digital experiences that drive customer satisfaction and revenue. </li>
                 </ul>
                 <p class="mb-2 font-bold">
@@ -705,7 +702,7 @@ return array(
                 <p class="font-bold">Looking forward:</p>
                 <ul class="mb-2 list-disc">
                     <li>As a next step, organizations are typically looking to implement an agile, cloud-based application architecture using microservices and containers. </li>
-                    <li>Finally, they are building an intelligent core to implement and scale analytics, machine learning, and artificial intelligence. </li>
+                    <li>Finally, they are building an intelligent core to implement and scale analytics, machine learning (ML), and artificial intelligence (AI). </li>
                     <li>To do that, they need to automate and orchestrate the exchange of data within their ecosystem to develop new digital experiences that drive customer satisfaction and revenue. </li>
                 </ul>
                 <p class="mb-2 font-bold">
@@ -723,7 +720,7 @@ return array(
                 <p class="font-bold">Looking forward:</p>
                 <ul class="mb-2 list-disc">
                     <li>As a next step, organizations are typically looking to implement an agile, cloud-based application architecture using microservices and containers. </li>
-                    <li>Finally, they are building an intelligent core to implement and scale analytics, machine learning, and artificial intelligence. </li>
+                    <li>Finally, they are building an intelligent core to implement and scale analytics, machine learning (ML), and artificial intelligence (AI). </li>
                     <li>To do that, they need to automate and orchestrate the exchange of data within their ecosystem to develop new digital experiences that drive customer satisfaction and revenue. </li>
                 </ul>
                 <p class="mb-2 font-bold">
@@ -741,7 +738,7 @@ return array(
                 <p class="font-bold">Looking forward:</p>
                 <ul class="mb-2 list-disc">
                     <li>As a next step, organizations are typically looking to implement an agile, cloud-based application architecture using microservices and containers. </li>
-                    <li>Finally, they are building an intelligent core to implement and scale analytics, machine learning, and artificial intelligence. </li>
+                    <li>Finally, they are building an intelligent core to implement and scale analytics, machine learning (ML), and artificial intelligence (AI). </li>
                     <li>To do that, they need to automate and orchestrate the exchange of data within their ecosystem to develop new digital experiences that drive customer satisfaction and revenue. </li>
                 </ul>
                 <p class="mb-2 font-bold">
@@ -759,7 +756,7 @@ return array(
                 <p class="font-bold">Looking forward:</p>
                 <ul class="mb-2 list-disc">
                     <li>As a next step, organizations are typically looking to implement an agile, cloud-based application architecture using microservices and containers. </li>
-                    <li>Finally, they are building an intelligent core to implement and scale analytics, machine learning, and artificial intelligence.</li>
+                    <li>Finally, they are building an intelligent core to implement and scale analytics, machine learning (ML), and artificial intelligence (AI)</li>
                     <li>To do that, they need to automate and orchestrate the exchange of data within their ecosystem to develop new digital experiences that drive customer satisfaction and revenue. </li>
                 </ul>
                 <p class="mb-2 font-bold">
@@ -777,7 +774,7 @@ return array(
                 <p class="font-bold">Looking forward:</p>
                 <ul class="mb-2 list-disc">
                     <li>As a next step, organizations are typically looking to implement an agile, cloud-based application architecture using microservices and containers. </li>
-                    <li>Finally, they are building an intelligent core to implement and scale analytics, machine learning, and artificial intelligence. </li>
+                    <li>Finally, they are building an intelligent core to implement and scale analytics, machine learning (ML), and artificial intelligence (AI). </li>
                     <li>To do that, they need to automate and orchestrate the exchange of data within their ecosystem to develop new digital experiences that drive customer satisfaction and revenue. </li>
                 </ul>
                 <p class="mb-2 font-bold">
@@ -796,7 +793,7 @@ return array(
                 <p class="font-bold">Looking forward:</p>
                 <ul class="mb-2 list-disc">
                     <li>As a next step, organizations are typically looking to implement an agile, cloud-based application architecture using microservices and containers. </li>
-                    <li>Finally, they are building an intelligent core to implement and scale analytics, machine learning, and artificial intelligence. </li>
+                    <li>Finally, they are building an intelligent core to implement and scale analytics, machine learning (ML), and artificial intelligence (AI). </li>
                     <li>To do that, they need to automate and orchestrate the exchange of data within their ecosystem to develop new digital experiences that drive customer satisfaction and revenue. </li>
                 </ul>
                 <p class="mb-2 font-bold">
@@ -814,7 +811,7 @@ return array(
                 <p class="font-bold">Looking forward:</p>
                 <ul class="mb-2 list-disc">
                     <li>As a next step, organizations are typically looking to implement an agile, cloud-based application architecture using microservices and containers. </li>
-                    <li>Finally, they are building an intelligent core to implement and scale analytics, machine learning, and artificial intelligence. </li>
+                    <li>Finally, they are building an intelligent core to implement and scale analytics, machine learning (ML), and artificial intelligence (AI). </li>
                     <li>To do that, they need to automate and orchestrate the exchange of data within their ecosystem to develop new digital experiences that drive customer satisfaction and revenue. </li>
                 </ul>
                 <p class="mb-2 font-bold">
@@ -832,7 +829,7 @@ return array(
                 <p class="font-bold">Looking forward:</p>
                 <ul class="mb-2 list-disc">
                     <li>As a next step, organizations are typically looking to implement an agile, cloud-based application architecture using microservices and containers. </li>
-                    <li>Finally, they are building an intelligent core to implement and scale analytics, machine learning, and artificial intelligence. </li>
+                    <li>Finally, they are building an intelligent core to implement and scale analytics, machine learning (ML), and artificial intelligence (AI). </li>
                     <li>To do that, they need to automate and orchestrate the exchange of data within their ecosystem to develop new digital experiences that drive customer satisfaction and revenue. </li>
                 </ul>
                 <p class="mb-2 font-bold">
@@ -1144,35 +1141,35 @@ return array(
     'question6-a' => '
         <div class="clearfix">
             <p class=" mb-2">
-                You are using cloud services to see instant improvements in application and infrastructure efficiency and speed. You should also consider other areas of <span class="font-bold">cloud benefits, such as speed of innovation, access to high scale and use of new cloud-based features to accelerate your digital transformation and journey to the cloud.</span>
+                You are using cloud services to see instant improvements in application and infrastructure efficiency and speed. You should also consider other areas of <span class="font-bold">cloud benefits, such as speed of innovation, access to high scale and use of new cloud-based features to accelerate your digital transformation and journey to the cloud</span>.
             </p>
         </div>
     ',
     'question6-b' => '
         <div class="clearfix">
             <p class=" mb-2">
-                You are using multiple cloud services and linking them directly to business outcomes and objectives. <span class="font-bold">You should focus on things like; driving specific customer experience objectives with your cloud strategy or capitalizing on data, to gain a competitive edge.</span>
+                You are using multiple cloud services and linking them directly to business outcomes and objectives. <span class="font-bold">You should focus on things like; driving specific customer experience objectives with your cloud strategy or capitalizing on data, to gain a competitive edge</span>.
             </p>
         </div>
     ',
     'question6-c' => '
         <div class="clearfix">
             <p class=" mb-1">
-                You are using cloud services for advanced reasons such as managing technical debt and ensuring innovation isn\'t slowing down, this is good. <span class="font-bold">Try focusing on the next steps, such as driving specific customer experience objectives with your cloud strategy and even turn to capitalizing on data to gain a competitive edge.</span>      
+                You are using cloud services for advanced reasons such as managing technical debt and ensuring innovation isn\'t slowing down, this is good. <span class="font-bold">Try focusing on the next steps, such as driving specific customer experience objectives with your cloud strategy and even turn to capitalizing on data to gain a competitive edge</span>.      
             </p>
         </div>
     ',
     'question6-d' => '
         <div class="clearfix">
             <p class=" mb-2">
-                Your cloud usage and vision for cloud is very advanced. Good job. You are showing strong capabilities, in linking cloud services and benefits to key business objectives such as customer experience. <span class="font-bold">Try focusing on the next steps, such as capitalizing on data to gain a competitive edge and focus on complementary strategies such as agile application development and DevOps.</span>       
+                Your cloud usage and vision for cloud is very advanced. Good job. You are showing strong capabilities, in linking cloud services and benefits to key business objectives such as customer experience. <span class="font-bold">Try focusing on the next steps, such as capitalizing on data to gain a competitive edge and focus on complementary strategies such as agile application development and DevOps</span>.       
             </p>
         </div>
     ',
     'question6-e' => '
         <div class="clearfix">
             <p class=" mb-2">
-                Your cloud usage and vision for cloud is very advanced. Good job. You are showing strong capabilities around linking cloud services and benefits to key business objectives such as customer experience. <span class="font-bold">Try focuing on the next steps, such as capitalizing on data to gain a competitive edge and on complementary strategies such as agile application development and DevOps.</span>       
+                Your cloud usage and vision for cloud is very advanced. Good job. You are showing strong capabilities around linking cloud services and benefits to key business objectives such as customer experience. <span class="font-bold">Try focuing on the next steps, such as capitalizing on data to gain a competitive edge and on complementary strategies such as agile application development and DevOps</span>.       
             </p>
         </div>
     ',
@@ -1180,7 +1177,7 @@ return array(
     'question6-image' => '
         <div class="clearfix pt-5">
             <div class="text-center font-bold text-blue-dark mb-2">
-                Key Drivers for moving to a Cloud Architecture
+                Key Drivers for Moving to a Cloud Architecture
             </div>
             <div class="mx-auto" style="width: 85%">
                 <img src=":url/images/tools/13/question6.png" alt="" class="w-full mb-4" />
@@ -1192,9 +1189,9 @@ return array(
         <div class="clearfix">
             <div class="">
                 <h4 class="mb-1 font-bold text-grey-darker">Question 7</h4>
-                <h3 class="mb-1 text-blue-dark leading-tight">To what degree are these challenges faced around cloud operations and management </h3>
+                <h3 class="mb-1 text-blue-dark leading-tight">To what degree are these challenges faced around cloud operations and management?</h3>
                 <p class="mb-2">
-                    Getting cloud operations and management right is critical for running a successful cloud practice
+                    Getting cloud operations and management right is critical for running a successful cloud practice.
                 </p>
             </div>
         </div>
@@ -1202,28 +1199,28 @@ return array(
     'question7-1' => '
         <div class="clearfix">
             <p class=" mb-2">
-                You score for this question indicates, you still face many of the early stage challenges in setting up an efficient cloud operations and management practice.       
+                Your score for this question indicates you still face many of the early stage challenges in setting up an efficient cloud operations and management practice.       
             </p>
         </div>
     ',
     'question7-2' => '
         <div class="clearfix">
             <p class=" mb-2">
-                Your score for this question indicates, you have moved beyond several of the early stage challenges in setting up an efficient cloud operations and management practice.        
+                Your score for this question indicates you have moved beyond several of the early stage challenges in setting up an efficient cloud operations and management practice.        
             </p>
         </div>
     ',
     'question7-3' => '
         <div class="clearfix">
             <p class=" mb-2">
-                Your score for this question, indicates you have moved beyond the early stage obstacles and are facing the advanced challenges in setting up an efficient cloud operations and management practice.     
+                Your score for this question indicates you have moved beyond the early stage obstacles and are facing the advanced challenges in setting up an efficient cloud operations and management practice.     
             </p>
         </div>
     ',
     'question7outro' => '
         <div class="clearfix">
             <p class=" mb-2">
-                <strong class="font-bold">To improve further</strong>, you need to ensure good visibility and control of your IT infrastructure, both on premises and in the cloud; <span class="font-bold">invest in multicloud monitoring, management, automation, and orchestration tools to reduce the need for error-prone manual tasks; set up a strong security, data governance, and regulatory compliance framework; and make sure that you manage your cloud expenses tightly.</span>
+                <strong class="font-bold">To improve further</strong>, you need to ensure good visibility and control of your IT infrastructure, both on premises and in the cloud; <span class="font-bold">invest in multicloud monitoring, management, automation, and orchestration tools to reduce the need for error-prone manual tasks; set up a strong security, data governance, and regulatory compliance framework; and make sure that you manage your cloud expenses tightly</span>.
             </p>
             <p class=" mb-2">
                 Once the foundation is in place, you can look at API management, integration, and interoperability, as well as implementing a CI/CD pipeline to automate cloud operations.
@@ -1237,7 +1234,7 @@ return array(
         <div class="clearfix">
             <div class="w-1/4 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 30mm;"></div>
             <div class="w-3/4 float-left">
-                <h2 class="text-blue-dark mb-3"> Realizing the value of data</h2>
+                <h2 class="text-blue-dark mb-3">Realizing the Value of Data</h2>
                 <p class="mb-2 font-bold">
                     Data is at the heart of digital transformation and gives enterprises a competitive advantage.
                 </p>
@@ -1251,15 +1248,15 @@ return array(
                 Data-driven organizations are more confident about delivering better customer experiences and take confident business decisions.
             </p>
             <p class="mb-2">
-                Capitalizing on and monetizing data is a journey and requires organizations to consider the full data life cycle, from collection to storage to management to analytics
+                Capitalizing on and monetizing data is a journey and requires organizations to consider the full data life cycle, from collection to storage to management to analytics.
             </p>
             <p class="mb-2">
                 Is there a culture in your organization of treating data as an asset? Are IT confident of delivering the right data to the right hands at the right time without compromising on security and privacy?
             </p>
-            <p class="mb-0 text-md text-right text-blue-dark font-light">
-                "Creating the right foundation to share, manage, and collaborate on data is critical to innovate and improve decision-making capabilities in the digital era"
+            <p class="mb-0 text-md text-blue-dark font-light">
+                "Creating the right foundation to share, manage, and collaborate on data is critical to innovate and improve decision-making capabilities in the digital era."
             </p>
-            <p class="mb-2 font-bold text-right">
+            <p class="mb-2 font-bold">
                 Carla Arend, IDC, 2020
             </p>
             <p class="mb-2 font-bold">
@@ -1357,7 +1354,7 @@ return array(
     'question8-b' => '
         <div class="clearfix">
             <p class=" mb-2">
-                Your organization is still in the very early stages of the data value realization journey. <span class="font-bold">There is a real opportunity to turn data into insights and develop a competitive edge.</span> But it is a multiyear, multidimensional journey. 
+                Your organization is still in the very early stages of the data value realization journey. <span class="font-bold">There is a real opportunity to turn data into insights and develop a competitive edge</span>. But it is a multiyear, multidimensional journey. 
             </p>
             <p class=" mb-2 font-bold">
                 As a first step, you should leverage the unified view of all your data and then progress to the next steps such as analytics.
@@ -1370,7 +1367,7 @@ return array(
                 You have made a really good start in your data value realization journey. Well done. <span class="font-bold">You have a real opportunity to turn data into insights and develop a competitive edge</span>. But it is a multiyear, multidimensional journey. 
             </p>
             <p class=" mb-2 font-bold">
-                As a next step, you should leverage the combination of internal and external data sources and then progress to the next steps such as analytics and beyond that to AI and ML-based data strategies.
+                As a next step, you should leverage the combination of internal and external data sources and then progress to the next steps such as analytics and beyond that to AI- and ML-based data strategies.
             </p>
         </div>
     ',
@@ -1398,7 +1395,7 @@ return array(
         <div class="clearfix">
             <div class="pt-10">
                 <h4 class="mb-1 font-bold text-grey-darker">Question 9</h4>
-                <h3 class="mb-1 text-blue-dark leading-tight">Please indicate how critical these data driven objectives are to your data strategy / organization?</h3>
+                <h3 class="mb-1 text-blue-dark leading-tight">Please indicate how critical these data-driven objectives are to your data strategy/organization.</h3>
                 <p class="mb-2">
                     IDC research indicates that the cloud strategies and data strategies of organizations are increasingly converging. 
                 </p>
@@ -1476,25 +1473,22 @@ return array(
         <a name="recommendations"></a>
         <div class="clearfix">
             <div class="">
-                <h2 class="text-blue-dark mb-2">Recommendation</h2>
+                <h2 class="text-blue-dark mb-2">Recommendations</h2>
                 <p class="mb-2">
                     Thank you for taking this cloud migration, application modernization, and data capitalization maturity test. This demonstrates your ambition to succeed in your digital transformation strategies and is a good starting point to set you apart from your peers. We hope you have been able to identify the weaknesses and strengths in your approach, and have gained some tangible advice to help make progress, while developing a competitive edge. 
                 </p>
                 <p class="mb-2 font-bold text-blue-dark">
-                    Final recommendations to progress to the next level of maturity.
+                    Final recommendations to progress to the next level of maturity:
                 </p>
             </div>
         </div>',
     'conclusion1' => '
         <div class="clearfix">
             <div>
-                <p class="mb-2 font-bold text-blue-dark">
-                    Final recommendations to progress to the next level of maturity.
-                </p>
                 <ul class="mb-2 list-disc">
-                    <li class="mb-1">Assess your current and future business goals, and understand how cloud adoption can help support them. This understanding is critical to plan a proactive cloud transition program that is tightly aligned with your individual business objectives, executive vision, and workforce culture.</li>
-                    <li class="mb-1">Do an audit of the challenges you encounter in implementing your cloud strategy, rank them in order of importance, cost, and complexity, start with the easy ones to achieve some quick successes, and plan to address the more complex challenges.</li>
-                    <li class="mb-1">Reach out to an experienced partner for additional resources, support, and guidance.</li>
+                    <li class="mb-1">Assess your current and future business goals, and understand how cloud adoption can help support them; this understanding is critical to plan a proactive cloud transition program that is tightly aligned with your individual business objectives, executive vision, and workforce culture</li>
+                    <li class="mb-1">Do an audit of the challenges you encounter in implementing your cloud strategy, rank them in order of importance, cost, and complexity, start with the easy ones to achieve some quick successes, and plan to address the more complex challenges</li>
+                    <li class="mb-1">Reach out to an experienced partner for additional resources, support, and guidance</li>
                 </ul>
             </div>
         </div>
@@ -1502,14 +1496,11 @@ return array(
     'conclusion2' => '
         <div class="clearfix">
             <div>
-                <p class="mb-2 font-bold text-blue-dark">
-                    Final recommendations to progress to the next level of maturity.
-                </p>
                 <ul class="mb-2 list-disc">
-                    <li class="mb-1">Assess the legacy application landscape and plan your application modernization strategy to make them cloud-native, responsive, and agile.</li>
-                    <li class="mb-1">Use a consistent cloud strategy as the foundation for modern practices such as DevOps and automation, with a laser focus on business value, and address real pain points.</li>
-                    <li class="mb-1">AI-enhanced automation into integration and testing processes is the key to overcoming implementation skill gaps and accelerating time to market for new products and services while reducing undue reliance on experts.</li>
-                    <li class="mb-1">Unify the existing multicloud components to break down the data silos and standardize operational and business process.</li>
+                    <li class="mb-1">Assess the legacy application landscape and plan your application modernization strategy to make them cloud-native, responsive, and agile</li>
+                    <li class="mb-1">Use a consistent cloud strategy as the foundation for modern practices such as DevOps and automation, with a laser focus on business value, and address real pain points</li>
+                    <li class="mb-1">AI-enhanced automation into integration and testing processes is the key to overcoming implementation skill gaps and accelerating time to market for new products and services while reducing undue reliance on experts</li>
+                    <li class="mb-1">Unify the existing multicloud components to break down the data silos and standardize operational and business process</li>
                 </ul>
             </div>
         </div>
@@ -1521,9 +1512,9 @@ return array(
                     Final recommendations
                 </p>
                 <ul class="mb-2 list-disc">
-                    <li class="mb-1">Ensure continuous and consistent core application modernization to make IT the competitive differentiator and driver of new revenue streams.</li>
-                    <li class="mb-1">Consider extending DevOps and automation capabilities across complex and highly rigid environments for enterprisewide culture change and continuous cloud-driven innovation.</li>
-                    <li class="mb-1">Reduce organizational complexity by adopting a DataOps approach that aligns people, processes, and technology to enable the rapid, automated, and secure management of data to increase the velocity of innovation.</li>
+                    <li class="mb-1">Ensure continuous and consistent core application modernization to make IT the competitive differentiator and driver of new revenue streams</li>
+                    <li class="mb-1">Consider extending DevOps and automation capabilities across complex and highly rigid environments for enterprisewide culture change and continuous cloud-driven innovation</li>
+                    <li class="mb-1">Reduce organizational complexity by adopting a DataOps approach that aligns people, processes, and technology to enable the rapid, automated, and secure management of data to increase the velocity of innovation</li>
                 </ul>
             </div>
         </div>
