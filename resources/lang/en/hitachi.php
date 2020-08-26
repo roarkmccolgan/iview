@@ -307,9 +307,9 @@ return array(
             By 2022, the financial impact of the IT skills gap will grow to $775 billion worldwide, from $302 billion in 2019, as a result of delayed release of products/service, missed revenue, or increased cost. (IDC FutureScape IT and Business Services Predictions for 2020)
         </p>
         <div class="clearfix">
-            <div class="float-left w-1/2 mr-3">
+            <div class="float-left mr-3" style="width: 40%">
                 <div class="text-center font-bold text-blue-dark">Key Priorities for Organizations Accelerating Their Digital Transformation Journeys</div>
-                <img src=":url/images/tools/13/key_priorities.png?id=2" alt="" class="w-full" />
+                <img src=":url/images/tools/13/key_priorities.png?id=3" alt="" class="w-full" />
             </div>
             <div class="float left">
                 <p class="mb-2">
