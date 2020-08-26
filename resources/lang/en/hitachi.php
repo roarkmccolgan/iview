@@ -155,7 +155,7 @@ return array(
         <a name="core"></a>
         <h2 class="text-blue-dark mb-2">The Intelligent Core Powers Business Processes of the Future</h2>
         <p class="mb-2">
-            <span class="font-bold">The graphic below represents IDC\'s model for the new digital platform</span> — we believe this is the essential foundation on which to launch and scale your digital transformation (DX) initiatives.
+            <span class="font-bold">The graphic below represents IDC\'s model for the new digital platform</span>&nbsp;&nbsp;— we believe this is the essential foundation on which to launch and scale your digital transformation (DX) initiatives.
         </p>
         <p class="mb-2">
             <span class="font-bold">The digital platform is built on a multicloud architecture and places data at the heart of a platform</span>.&nbsp;&nbsp;This spans IT, digital, and business domains, and starts with an "intelligent core" that holds the code that enables you to turn data into insights and tools.
@@ -307,7 +307,7 @@ return array(
             By 2022, the financial impact of the IT skills gap will grow to $775 billion worldwide, from $302 billion in 2019, as a result of delayed release of products/service, missed revenue, or increased cost. (IDC FutureScape IT and Business Services Predictions for 2020)
         </p>
         <div class="clearfix">
-            <div class="float-left w-1/3 mr-3">
+            <div class="float-left w-1/2 mr-3">
                 <div class="text-center font-bold text-blue-dark">Key Priorities for Organizations Accelerating Their Digital Transformation Journeys</div>
                 <img src=":url/images/tools/13/key_priorities.png?id=2" alt="" class="w-full" />
             </div>
@@ -661,7 +661,7 @@ return array(
         <div class="clearfix">
             <div class="">
                 <p class="mb-2">
-                    As a Cloud Master, you are have already tackled most of the important cloud challenges, and you are on a par with your Cloud Master peers. <span class="font-bold">The move to the cloud is more than a simple technology upgrade — it is transforming not only your technology platform but also your processes, your staffing requirements, your security procedures, and how you collaborate with other parts of your business</span>. To stay ahead of your competition, you need to keep improving and tackle arising cloud operational challenges quickly and effectively.
+                    As a Cloud Master, you have already tackled most of the important cloud challenges, and you are on a par with your Cloud Master peers. <span class="font-bold">The move to the cloud is more than a simple technology upgrade — it is transforming not only your technology platform, but also your processes, your staffing requirements, your security procedures, and how you collaborate with other parts of your business</span>. To stay ahead of your competition, you need to keep improving and tackle arising cloud operational challenges quickly and effectively.
                 </p>
             </div>
         </div>
@@ -857,7 +857,7 @@ return array(
                     <li>Which applications are a good fit for the cloud</li>
                     <li>Which migration strategy fits to which application class</li>
                     <li>How complex the migration is going to be</li>
-                    <li>And, last but not least, if you have the right cloud skills internally or if you need to select an appropriate external partner for support</li>
+                    <li>If you have the right cloud skills internally or if you need to select an appropriate external partner for support</li>
                 </ul>
             </div>
         </div>
@@ -1169,7 +1169,7 @@ return array(
     'question6-e' => '
         <div class="clearfix">
             <p class=" mb-2">
-                Your cloud usage and vision for cloud is very advanced. Good job. You are showing strong capabilities around linking cloud services and benefits to key business objectives such as customer experience. <span class="font-bold">Try focuing on the next steps, such as capitalizing on data to gain a competitive edge and on complementary strategies such as agile application development and DevOps</span>.       
+                Your cloud usage and vision for cloud is very advanced. Good job. You are showing strong capabilities around linking cloud services and benefits to key business objectives such as customer experience. <span class="font-bold">Try focusing on the next steps, such as capitalizing on data to gain a competitive edge and on complementary strategies such as agile application development and DevOps</span>.       
             </p>
         </div>
     ',
@@ -1220,7 +1220,7 @@ return array(
     'question7outro' => '
         <div class="clearfix">
             <p class=" mb-2">
-                <strong class="font-bold">To improve further</strong>, you need to ensure good visibility and control of your IT infrastructure, both on premises and in the cloud; <span class="font-bold">invest in multicloud monitoring, management, automation, and orchestration tools to reduce the need for error-prone manual tasks; set up a strong security, data governance, and regulatory compliance framework; and make sure that you manage your cloud expenses tightly</span>.
+                <strong class="font-bold">To improve further</strong>, you need to ensure good visibility and control of your IT infrastructure, both on premises and in the cloud;&nbsp;<span class="font-bold">invest in multicloud monitoring, management, automation, and orchestration tools to reduce the need for error-prone manual tasks; set up a strong security, data governance, and regulatory compliance framework; and make sure that you manage your cloud expenses tightly</span>.
             </p>
             <p class=" mb-2">
                 Once the foundation is in place, you can look at API management, integration, and interoperability, as well as implementing a CI/CD pipeline to automate cloud operations.
@@ -1477,14 +1477,14 @@ return array(
                 <p class="mb-2">
                     Thank you for taking this cloud migration, application modernization, and data capitalization maturity test. This demonstrates your ambition to succeed in your digital transformation strategies and is a good starting point to set you apart from your peers. We hope you have been able to identify the weaknesses and strengths in your approach, and have gained some tangible advice to help make progress, while developing a competitive edge. 
                 </p>
-                <p class="mb-2 font-bold text-blue-dark">
-                    Final recommendations to progress to the next level of maturity:
-                </p>
             </div>
         </div>',
     'conclusion1' => '
         <div class="clearfix">
             <div>
+                <p class="mb-2 font-bold text-blue-dark">
+                    Final recommendations to progress to the next level of maturity:
+                </p>
                 <ul class="mb-2 list-disc">
                     <li class="mb-1">Assess your current and future business goals, and understand how cloud adoption can help support them; this understanding is critical to plan a proactive cloud transition program that is tightly aligned with your individual business objectives, executive vision, and workforce culture</li>
                     <li class="mb-1">Do an audit of the challenges you encounter in implementing your cloud strategy, rank them in order of importance, cost, and complexity, start with the easy ones to achieve some quick successes, and plan to address the more complex challenges</li>
@@ -1496,6 +1496,9 @@ return array(
     'conclusion2' => '
         <div class="clearfix">
             <div>
+                <p class="mb-2 font-bold text-blue-dark">
+                    Final recommendations to progress to the next level of maturity:
+                </p>
                 <ul class="mb-2 list-disc">
                     <li class="mb-1">Assess the legacy application landscape and plan your application modernization strategy to make them cloud-native, responsive, and agile</li>
                     <li class="mb-1">Use a consistent cloud strategy as the foundation for modern practices such as DevOps and automation, with a laser focus on business value, and address real pain points</li>

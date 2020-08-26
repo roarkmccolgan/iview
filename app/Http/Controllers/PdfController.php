@@ -2595,7 +2595,7 @@ class PdfController extends Controller
                     'migration'=>$widths[$migrationNumber],
                     'status'=>$widths[$statusNumber],
                     'value'=>$widths[$valueNumber],
-                    'url'=>asset('/images/tools/13/comparisonbg_overall.svg'),
+                    'url'=>asset('/images/tools/13/comparisonbg_overall.png'),
                     'ranking'=>trans(session('product.alias').'.stage'.$overallNumber),
                 ]
             );
