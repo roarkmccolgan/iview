@@ -11,7 +11,7 @@ use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Facades\Log;
 
-class SendCrmRequest
+class SendCrmRequest implements ShouldQueue
 {
     use SerializesModels;
 
@@ -51,7 +51,7 @@ class SendCrmRequest
             ]);
             $code = $response->getStatusCode();
             Log::info($code);
-            Log::info(print_r(json_decode($response->getBody())));
+            Log::info(print_r(json_decode($response->getBody()),true));
         } catch (RequestException $e) {
             Log::info(json_encode($this->query));
             $mailer->send('emails.error', ['process'=>'Guzzle', 'reason'=>$e->getMessage(), 'time'=>date('l jS \of F Y h:i:s A')], function ($message) {

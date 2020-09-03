@@ -205,6 +205,26 @@ return [
                             'question_type' => 'TEXT',
                             'question_name' => 'DOC_URL',
                             'answer' => 'report',
+                        ],
+                        [
+                            'question_type' => 'TEXT',
+                            'question_name' => 'Q_Overall',
+                            'answer' => 'overall',
+                        ],
+                        [
+                            'question_type' => 'TEXT',
+                            'question_name' => 'Q_Move',
+                            'answer' => 'move',
+                        ],
+                        [
+                            'question_type' => 'TEXT',
+                            'question_name' => 'Q_Build',
+                            'answer' => 'build',
+                        ],
+                        [
+                            'question_type' => 'TEXT',
+                            'question_name' => 'Q_Manage',
+                            'answer' => 'manage',
                         ]
                     ],                
                 ],

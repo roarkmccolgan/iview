@@ -1320,6 +1320,13 @@ class ToolController extends Controller
                             $query[$fieldKey][$groupKey] = $groupSettings['value'] == 'datetime' ? Carbon::now()->toDateTimeString() : $groupSettings['value'];
                         }
                         if(isset($groupSettings['question_type'])){
+                            if($groupSettings['answer'] == 'report'){
+                                $answer = session('url').'/'.session('locale').'/download/'.$uuid;
+                            }elseif($groupSettings['answer'] == 'overall' || $groupSettings['answer'] == 'move' || $groupSettings['answer'] == 'build' || $groupSettings['answer'] == 'manage'){
+                                $answer = trans(session('product.alias').'.'.session('result.'.$groupSettings['answer'].'.rating'));
+                            }else{
+                                $answer = is_null($request->input($groupSettings['answer'])) ? "" : $request->input($groupSettings['answer']);
+                            }
                             $query[$fieldKey][] = [
                                 'question_type' => $groupSettings['question_type'],
                                 'question_name' => $groupSettings['question_name'],
