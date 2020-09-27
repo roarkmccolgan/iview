@@ -5,7 +5,7 @@
 			<div class="flex flex-wrap justify-center">
 				<div class="w-full sm:w-1/2 relative">
 					<div class="" v-html="$t('ibmcloud.finishtxt', { stage: $t('ibmcloud.'+rating)})"></div>
-					<div v-for="sec, key in theResult">
+					<!-- <div v-for="sec, key in theResult">
 						<div class="font-bold">{{ key }}</div>
 						<div class="">score: {{ sec.score }}</div>
 						<div class="mb-4">rating: {{ sec.rating }}</div>
@@ -28,7 +28,7 @@
 						<span class="inline-block mr-2" v-else-if="scores.sum">{{ scores.sum.join() }};</span>
 						<span class="inline-block mr-2" v-else>{{ scores.val }};</span>
 						<span class="inline-block mr-2">{{ scores.val }}</span>
-					</div>
+					</div> -->
 				</div>
 				<div class="w-full sm:w-1/2">
 					<div class="sm:ml-8">
