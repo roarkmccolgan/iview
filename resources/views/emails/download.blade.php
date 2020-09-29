@@ -204,6 +204,7 @@ ul li, ol li {
 							</tr>
 							@endif
 						</table>
+						<a style="color: #ccc; text-decoration: none;" href="{{ session('url').'/'.session('locale').'/download/'.$assessment->uuid.'?browser=true' }}">{{ session('url').'/'.session('locale').'/download/'.$assessment->uuid.'?browser=true' }}</a><br>
 						@if(Lang::has(session('product.alias').'.email.extra'))
 						<p>{!!trans(session('product.alias').'.email.extra')!!}</p>
 						@endif

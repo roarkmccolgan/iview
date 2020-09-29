@@ -301,7 +301,6 @@ export default{
 				}
 			}else{
 				if(this.currentQuestion.type !== 'checkbox'){
-					console.log('not');
 					var currentLength =this.answer.length;
 					var exists = false;
 					for (var i = this.answer.length - 1; i >= 0; i--) {
@@ -309,14 +308,17 @@ export default{
 							exists = i;
 						}
 					}
+					console.log(exists);
 					if(exists!==false){
+						console.log('exists');
 						this.answer.splice(exists, 1);
 						if(this.answer.length==0) this.showNext = false;
-						if(currentLength==0) {
+						if(this.answer.length==0) {
 							this.answer.push(selected);
 							this.showNext = true;
 						}
 					}else{
+						console.log('not exists');
 						this.answer = [];
 						if(currentLength==0) {
 							this.answer.push(selected);
