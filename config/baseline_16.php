@@ -56,7 +56,7 @@ return [
                 'username' => 'C-S0UP897@nomail.relay.ibm.com',
                 'password' => 'NewPass37xxIDC!',
             ],
-            'url' => 'https://connect-preprod.ibm.com/MRSaaS/cloud/preview/captureTransaction',
+            'url' => 'https://connect.ibm.com/MRSaaS/cloud/prod/captureTransaction',
             'method' => 'POST',
             'fields' => [
                 'channel_name' => [

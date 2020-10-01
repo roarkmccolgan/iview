@@ -58,6 +58,7 @@ class SendCrmRequest implements ShouldQueue
                 $message->to('roarkmccolgan@gmail.com', 'Roark McColgan')->subject('Error on '. isset($this->url) ? $this->url : $this->query['elqFormName']);
             });
         } catch (ServerException $e) {
+            Log::info($e->getMessage());
             Log::info(json_encode($this->query));
             $mailer->send('emails.error', ['process'=>'Guzzle', 'reason'=>$e->getMessage(), 'time'=>date('l jS \of F Y h:i:s A')], function ($message) {
                 $message->to('roarkmccolgan@gmail.com', 'Roark McColgan')->subject('Error on '. isset($this->url) ? $this->url : $this->query['elqFormName']);

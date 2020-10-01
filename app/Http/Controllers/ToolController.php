@@ -706,14 +706,14 @@ class ToolController extends Controller
             switch($request->input('country')){
                 case 'DK':
                 case 'NO':
-                    $url = 'https://www.ibm.com/dk-en/cloud/yourcloud';
+                    $url = 'https://www.ibm.com/se-en/cloud/yourcloud?utm_medium=Email&utm_source=External&utm_content=000039UZ&utm_term=10013943&utm_id=LP-IDC-Survey-email&cm_mmc=Email_External-_-Unlock+Cloud+and+AI_Technology+Transformation-_-INO_INO-_-LP-IDC-Survey-email&cm_mmca1=000039UZ&cm_mmca2=10013943';
                     break;
                 case 'SE':
                 case 'FI':
-                    $url = 'https://www.ibm.com/se-en/cloud/yourcloud';
+                    $url = 'https://www.ibm.com/se-en/cloud/yourcloud?utm_medium=Email&utm_source=External&utm_content=000039UZ&utm_term=10013943&utm_id=LP-IDC-Survey-email&cm_mmc=Email_External-_-Unlock+Cloud+and+AI_Technology+Transformation-_-INO_INO-_-LP-IDC-Survey-email&cm_mmca1=000039UZ&cm_mmca2=10013943';
                     break;
                 default:
-                    $url = 'https://www.ibm.com/cloud-computing/your-cloud';
+                    $url = 'https://www.ibm.com/se-en/cloud/yourcloud?utm_medium=Email&utm_source=External&utm_content=000039UZ&utm_term=10013943&utm_id=LP-IDC-Survey-email&cm_mmc=Email_External-_-Unlock+Cloud+and+AI_Technology+Transformation-_-INO_INO-_-LP-IDC-Survey-email&cm_mmca1=000039UZ&cm_mmca2=10013943';
             }
         }
         $vars = [

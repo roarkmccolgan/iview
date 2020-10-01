@@ -107,7 +107,15 @@ return array(
         'body' => 'As promised, here\'s a link to download your IDC\'s Cloud Journey Assessment Report sponsored by IBM. This breaks down your results by category and provides you with actionable recommendations.',
         'link' => 'Download PDF Report',
         'link_inline' => 'View Report in your browser',
-        'extra' => 'Once you\'ve read the report why not visit IBM <a href="https://www.ibm.com/se-en/cloud/yourcloud" style="color:#054683">Cloud Services</a>',
+        'extra' => '
+            Once you\'ve read the report why not visit IBM <a href="https://www.ibm.com/se-en/cloud/yourcloud?utm_medium=Email&utm_source=External&utm_content=000039UZ&utm_term=10013943&utm_id=LP-IDC-Survey-email&cm_mmc=Email_External-_-Unlock+Cloud+and+AI_Technology+Transformation-_-INO_INO-_-LP-IDC-Survey-email&cm_mmca1=000039UZ&cm_mmca2=10013943">Click here</a><br/><br/>
+            If you would like to contact someone directly about your Cloud Journey please contact Matthias Grip using the details below:<br/><br/>
+            <strong>Matthias Grip</strong><br>
+            Business Development Specialist - Infrastructure Services Nordics<br/>
+            Linkedin: <a href="www.linkedin.com/in/matthias-grip/">www.linkedin.com/in/matthias-grip/</a><br/>
+            Phone: <a href="tel:+4687936069">+46-8 79 360 69</a><br/>
+            E-mail: <a href="mailto:Matthias.Grip@ibm.com">Matthias.Grip@ibm.com</a>
+        ',
         'regards' => 'Regards',
         'team' => 'The IDC Team'
     ],
@@ -121,6 +129,7 @@ return array(
         'industry'=>'Industry',
         'country'=>'Country',
         'phone'=>'Phone Number',
+        'phone_code'=>'Country Code',
         'title'=>'Job Title',
         'send'=>'Send',
         'location'=>'Where are you based',
@@ -140,6 +149,7 @@ return array(
         'errorSell'=>'Please select an option.',
         'errorTitle'=>'Enter your title',
         'errorPhone'=>'Enter your phone number',
+        'errorPhoneCode'=>'Enter your country dialing code',
         'errorCountry'=>'Please select your country',
         'errorNumber'=>'Please enter a valid phone number',
         'errorAccept'=>'Please accept the Terms &amp; Conditions',
