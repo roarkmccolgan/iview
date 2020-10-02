@@ -85,6 +85,11 @@
 										<div class="inline-block relative">
 											<select class="block appearance-none w-full bg-grey-dark border text-black border py-3 px-4 mb-2" :class="[errors.phone_code ? 'border-red' : '']" v-model="phone_code" ref="phone_code" id="phone_code" name="phone_code" @blur="hasError">
 												<option value="" v-html="$t('ibmcloud.leadgen.pleaseselect')"></option>
+												<option data-countryCode="DK" value="45">Denmark (+45)</option>
+												<option data-countryCode="FI" value="358">Finland (+358)</option>
+												<option data-countryCode="NO" value="47">Norway (+47)</option>
+												<option data-countryCode="SE" value="46">Sweden (+46)</option>
+												<option value="">-----</option>
 												<option data-countryCode="DZ" value="213">Algeria (+213)</option>
 												<option data-countryCode="AD" value="376">Andorra (+376)</option>
 												<option data-countryCode="AO" value="244">Angola (+244)</option>
@@ -132,7 +137,6 @@
 												<option data-countryCode="CY" value="90">Cyprus - North (+90)</option>
 												<option data-countryCode="CY" value="357">Cyprus - South (+357)</option>
 												<option data-countryCode="CZ" value="420">Czech Republic (+420)</option>
-												<option data-countryCode="DK" value="45">Denmark (+45)</option>
 												<option data-countryCode="DJ" value="253">Djibouti (+253)</option>
 												<option data-countryCode="DM" value="1809">Dominica (+1809)</option>
 												<option data-countryCode="DO" value="1809">Dominican Republic (+1809)</option>
@@ -146,7 +150,6 @@
 												<option data-countryCode="FK" value="500">Falkland Islands (+500)</option>
 												<option data-countryCode="FO" value="298">Faroe Islands (+298)</option>
 												<option data-countryCode="FJ" value="679">Fiji (+679)</option>
-												<option data-countryCode="FI" value="358">Finland (+358)</option>
 												<option data-countryCode="FR" value="33">France (+33)</option>
 												<option data-countryCode="GF" value="594">French Guiana (+594)</option>
 												<option data-countryCode="PF" value="689">French Polynesia (+689)</option>
@@ -229,7 +232,6 @@
 												<option data-countryCode="NU" value="683">Niue (+683)</option>
 												<option data-countryCode="NF" value="672">Norfolk Islands (+672)</option>
 												<option data-countryCode="NP" value="670">Northern Marianas (+670)</option>
-												<option data-countryCode="NO" value="47">Norway (+47)</option>
 												<option data-countryCode="OM" value="968">Oman (+968)</option>
 												<option data-countryCode="PK" value="92">Pakistan (+92)</option>
 												<option data-countryCode="PW" value="680">Palau (+680)</option>
@@ -267,7 +269,6 @@
 												<option data-countryCode="SR" value="597">Suriname (+597)</option>
 												<option data-countryCode="SD" value="249">Sudan (+249)</option>
 												<option data-countryCode="SZ" value="268">Swaziland (+268)</option>
-												<option data-countryCode="SE" value="46">Sweden (+46)</option>
 												<option data-countryCode="CH" value="41">Switzerland (+41)</option>
 												<option data-countryCode="TW" value="886">Taiwan (+886)</option>
 												<option data-countryCode="TJ" value="992">Tajikistan (+992)</option>

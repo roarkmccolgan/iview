@@ -109,10 +109,10 @@ return array(
         'link_inline' => 'View Report in your browser',
         'extra' => '
             Once you\'ve read the report why not visit IBM <a href="https://www.ibm.com/se-en/cloud/yourcloud?utm_medium=Email&utm_source=External&utm_content=000039UZ&utm_term=10013943&utm_id=LP-IDC-Survey-email&cm_mmc=Email_External-_-Unlock+Cloud+and+AI_Technology+Transformation-_-INO_INO-_-LP-IDC-Survey-email&cm_mmca1=000039UZ&cm_mmca2=10013943">Click here</a><br/><br/>
-            If you would like to contact someone directly about your Cloud Journey please contact Matthias Grip using the details below:<br/><br/>
+            If you would like to contact someone directly about your Cloud Journey please contact Matthias Grip at IBM using the details below:<br/><br/>
             <strong>Matthias Grip</strong><br>
-            Business Development Specialist - Infrastructure Services Nordics<br/>
-            Linkedin: <a href="www.linkedin.com/in/matthias-grip/">www.linkedin.com/in/matthias-grip/</a><br/>
+            Business Development Specialist - Infrastructure Services, IBM Nordics<br/>
+            Linkedin: <a href="https://www.linkedin.com/in/matthias-grip/">www.linkedin.com/in/matthias-grip/</a><br/>
             Phone: <a href="tel:+4687936069">+46-8 79 360 69</a><br/>
             E-mail: <a href="mailto:Matthias.Grip@ibm.com">Matthias.Grip@ibm.com</a>
         ',
