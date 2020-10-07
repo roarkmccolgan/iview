@@ -56,6 +56,11 @@ module.exports = {
 			"babel-polyfill",
 			'./resources/assets/js/sapagileglobal/main.js',
 			'./resources/assets/css/sapagileglobal/main.css'
+		],
+		snow: [
+			"babel-polyfill",
+			'./resources/assets/js/snow/main.js',
+			'./resources/assets/css/snow/main.css'
 		]
 	},
 	stats: {

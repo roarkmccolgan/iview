@@ -141,6 +141,30 @@ Route::group(['domain' => '{subdomain}.'.env('APP_TLD', 'idcready.net'),'middlew
         Route::post('/{section}/page{num}', 'ToolController@savePage');
 
         Route::get('/complete', 'ToolController@getComplete');
+        Route::get('/thankyou', function(){
+            $url = '';
+            $vars = [
+            'pagetitle' => trans(session('product.alias').'.title'),
+            'title' => trans(session('product.alias').'.title'),
+            'sub_title' => trans(session('product.alias').'.sub-title'),
+            'heading' => trans(session('product.alias').'.complete_thankyou', ['fname'=> 'John Doe' ]),
+            'body' => trans(session('product.alias').'.complete_body', ['url'=>$url, 'tool_url'=>session('url').'/'.session('localeUrl')]),
+            'tweet' => config('baseline_'.session('product.id').'.overall.tweet') ? trans(session('product.alias').'.complete_tweet', ['result'=>trans(session('product.alias').'.'.$this->howfit['overall']['rating'])]):false,
+            'class' => 'trans silverStone',
+            'script' => ['
+                ga(\'send\', \'event\', \'Assessments\', \''.session('utm').'\');
+            '],
+            'utm' => session('utm'),
+            ];
+
+            JavaScript::put([
+                'locale' => session('locale'),
+                'tool' => session()->get('productObject'),
+            ]);
+            Session::remove('questions');
+            Session::remove('quiz_complete');
+            return View::make('tool.'.session('template').'.thankyou', $vars);
+        });
         Route::post('/complete', 'ToolController@postComplete')->middleware(['routebyurl']);
         Route::get('/download', 'ToolController@fakeDownload');
     });

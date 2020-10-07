@@ -85,6 +85,10 @@ let colors = {
   'hitachi-grey-light': 'rgb(217,217,217)',
   'hitachi-grey-medium': 'rgb(150,150,150)',
   'hitachi-grey-dark': 'rgb(65,65,65)',
+
+  'snow-dark': '#2A3E40',
+  'snow-light': '#84B4A1',
+  'snow-gray': '#F7F7F7',
   
   'blackblack': 'rgb(0,0,0)',
   'black-transparent': 'rgba(0,0,0, 0.5)',
@@ -277,13 +281,16 @@ module.exports = {
       'Helvetica Neue',
       'sans-serif',
     ],
-    'sans': [
-      'Frutiger Neue LT W1G',
+    'snow': [
+      'Gilroy-Bold ☞',
       '-apple-system',
       'BlinkMacSystemFont',
       'Segoe UI',
       'Helvetica Neue',
       'sans-serif',
+    ],
+    'sans': [
+      'system-ui', 'BlinkMacSystemFont', '-apple-system', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'sans-serif'
     ],
     'serif': [
       'Constantia',

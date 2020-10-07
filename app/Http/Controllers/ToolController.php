@@ -230,7 +230,7 @@ class ToolController extends Controller
         $totalQuestions = count($onlyQuestions);
         $return_visitor = $request->cookie('quiz_progress');
         $class = 'intro';
-        if ($tool->template=='nttsdwan' || $tool->template=='trendmicromssp' || $tool->template=='nttdata' || $tool->template=='dassault' || $tool->template=='hitachi' || $tool->template=='vmware' || $tool->template=='sapagile' || $tool->template=='ibmcloud' || $tool->template=='sapagileglobal') {
+        if ($tool->template=='nttsdwan' || $tool->template=='trendmicromssp' || $tool->template=='nttdata' || $tool->template=='dassault' || $tool->template=='hitachi' || $tool->template=='vmware' || $tool->template=='sapagile' || $tool->template=='ibmcloud' || $tool->template=='sapagileglobal' || $tool->template=='snow') {
             $view = 'tool.'.session('template').'.assessment';
         } else {
             $view = 'tool.'.session('template').'.intro';
