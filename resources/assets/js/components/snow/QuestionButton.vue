@@ -2,11 +2,14 @@
 	<div class="py-2" :class="[question.optionLabels ? gridClass : '']">
 		<h2 v-show="label" :key="'head'" class="text-base leading-tight " :class="[question.optionLabels ? 'mb-4 sm:mb-0 sm:w-1/4 sm:text-base' : 'sm:text-2xl']">{{label}}</h2>
 		<transition-group
-			name="fade"
+			name="staggered-slide"
 			appear
+			v-bind:css="false"
+			v-on:before-enter="beforeEnter"
+			v-on:enter="enter"
+			v-on:leave="leave"
+			:class="{'flex:none sm:flex-1 sm:flex sm:flex-row': question.type!=='button' && question.type!=='checkbox'}"
 			tag="div"
-			class="flex:none sm:flex sm:flex-row"
-			:class="[question.optionLabels ? 'sm:flex-1' : 'sm:flex-col']"
 		>
 		<div v-for="(option, optKey) in options" :key="optKey+'-key'" :data-index="optKey" :class="[question.optionLabels ? 'sm:flex-1 sm:text-center' : '']">
 			<label class="font-light rounded focus:outline-none" :class="[inAnswer(option.label) ? activeClass : normalClass, question.optionLabels ? 'sm:inline-block p-2' : 'p-4']" tabindex="0" @keyup.space="$event.target.click()">
