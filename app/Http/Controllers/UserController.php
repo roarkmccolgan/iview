@@ -203,7 +203,7 @@ class UserController extends Controller
             foreach ($user->tools as $tool) {
                 $tool->load(['company','urls']);
 
-                $redirect = 'http://'.$tool->urls->first()->subdomain.'.'.$tool->urls->first()->domain.'/admin';
+                $redirect = env('APP_PROTOCOL').$tool->urls->last()->subdomain.'.'.$tool->urls->first()->domain.'/admin';
             }
             return redirect($redirect);
 
