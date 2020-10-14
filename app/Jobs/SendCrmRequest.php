@@ -49,6 +49,7 @@ class SendCrmRequest implements ShouldQueue
                 'headers' => $this->headers,
                 'auth' => $this->auth
             ]);
+            Log::info(json_encode($this->query));
             $code = $response->getStatusCode();
             Log::info($code);
             Log::info(print_r(json_decode($response->getBody()),true));
