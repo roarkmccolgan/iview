@@ -3279,9 +3279,9 @@ class PdfController extends Controller
                     'webinar1pic' => asset('/images/tools/16/move_webinar.jpg'),
                     'webinar2pic' => asset('/images/tools/16/build_webinar.jpg'),
                     'webinar3pic' => asset('/images/tools/16/manage_webinar.jpg'),
-                    'webinar1url' => 'https://we.video.idc.com/secret/63252625/a14142dd1046b51ca0630df6068f2dcc',
-                    'webinar2url' => 'https://we.video.idc.com/secret/63252600/c7f991ad3aceca291d5db0c867a38e69',
-                    'webinar3url' => 'https://we.video.idc.com/secret/63252347/91d01bdb55a850d593efba972933e7fa',
+                    'webinar1url' => 'https://we.video.idc.com/secret/64551171/1d1121f4976070820ad77864bc91449c',
+                    'webinar2url' => 'https://we.video.idc.com/secret/64551121/afbe259cfd808666f21eb99e9322318f',
+                    'webinar3url' => 'https://we.video.idc.com/secret/64551150/a2dab1679408246ac14911272aae6dfa',
                 ]
             );
 

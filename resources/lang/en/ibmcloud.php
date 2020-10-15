@@ -87,15 +87,15 @@ return array(
         </a><br/><br/>
         To learn more about Move, Build, and Manage, why not watch one of these IDC webinars?<br><br>
         <div class="flex flex-wrap mt-5">
-            <a href="https://we.video.idc.com/secret/63252625/a14142dd1046b51ca0630df6068f2dcc" target="_blank" class="block w-full sm:flex-1 border p-2 rounded mb-2 sm:mb-0 shadow mr-4">
+            <a href="https://we.video.idc.com/secret/64551171/1d1121f4976070820ad77864bc91449c" target="_blank" class="block w-full sm:flex-1 border p-2 rounded mb-2 sm:mb-0 shadow mr-4">
                 <img src=":tool_url/images/tools/16/move_webinar.jpg" alt="" class="w-full mb-2" />
                 <h5 class="text-lg text-ibm-blue mb-2">Move webinar</h5>
             </a>
-            <a href="https://we.video.idc.com/secret/63252600/c7f991ad3aceca291d5db0c867a38e69" target="_blank" class="block w-full sm:flex-1 border p-2 rounded mb-2 sm:mb-0 shadow mr-4">
+            <a href="https://we.video.idc.com/secret/64551121/afbe259cfd808666f21eb99e9322318f" target="_blank" class="block w-full sm:flex-1 border p-2 rounded mb-2 sm:mb-0 shadow mr-4">
                 <img src=":tool_url/images/tools/16/build_webinar.jpg" alt="" class="w-full mb-2" />
                 <h5 class="text-lg text-ibm-blue mb-2">Build webinar</h5>
             </a>
-            <a href="https://we.video.idc.com/secret/63252347/91d01bdb55a850d593efba972933e7fa" target="_blank" class="block w-full sm:flex-1 border p-2 rounded mb-2 sm:mb-0 shadow">
+            <a href="https://we.video.idc.com/secret/64551150/a2dab1679408246ac14911272aae6dfa" target="_blank" class="block w-full sm:flex-1 border p-2 rounded mb-2 sm:mb-0 shadow">
                 <img src=":tool_url/images/tools/16/manage_webinar.jpg" alt="" class="w-full mb-2" />
                 <h5 class="text-lg text-ibm-blue mb-2">Manage webinar</h5>
             </a>
