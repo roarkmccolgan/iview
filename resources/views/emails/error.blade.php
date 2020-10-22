@@ -178,7 +178,7 @@
     </head>
     <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
     <p style="color:#242638 !important;	display:block; font-family:'Avenir', arial; font-size:14px; font-style:normal; font-weight:normal; line-height:120%; letter-spacing:normal; margin-top:0; margin-right:0; margin-bottom:15px; margin-left:0;text-align:left;">
-    	<strong>An Error on HP TECH QUIZ</strong><br/><br/>
+    	<strong>An Error on System</strong><br/><br/>
         process: <strong>{{$process}}</strong><br/>
         message: <strong>{{$reason}}</strong><br/>
         time: <strong>{{$time}}</strong><br/>

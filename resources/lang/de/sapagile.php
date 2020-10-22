@@ -41,6 +41,7 @@ return array(
     'byreg' => 'Mit der Registrierung bei IDC akzeptieren Sie unsere <a href="/privacy" target="_blank">Datenschutzrichtlinie.</a>',
     'wait' => 'Twittern Sie Ihre Ergebnisse, während Sie warten, und sehen Sie, wie Ihre Kollegen abschneiden.',
 
+    'errorPhone'=>'Bitte Telefonnummer eingeben (+00112223333..)',
     'areas_interest' => 'Ihre Interessengebiete',
     'interest1' => 'Finanzwesen und Administration',
     'interest2' => 'Einkauf',

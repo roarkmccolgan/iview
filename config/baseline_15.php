@@ -60,11 +60,158 @@ return [
             ]
         ],
         'tweet' => false,
+        'offer_code' => [
+            'stage1' => 'OD-00147930',
+            'stage2' => 'OD-00147928',
+            'stage3' => 'OD-00147929',
+            'stage4' => 'OD-00147931',
+            'stage5' => '',
+        ],
+        'offer_title' => [
+            'stage1' => 'IDC SME Analysis Tool. The first step in your agility journey/Agile Beginner',
+            'stage2' => 'IDC SME Analysis Tool. The first step in your agility journey/Agile Mover',
+            'stage3' => 'IDC SME Analysis Tool. The first step in your agility journey /Agile Transformer',
+            'stage4' => 'IDC SME Analysis Tool. The first step in your agility journey /Agile Accelerator',
+            'stage5' => 'IDC SME Analysis Tool. The first step in your agility journey /Agile Disruptor',
+        ],
         'include_answers_in_download_report' => true,
         'report_recipients' => [
-            'roarkmccolgan@gmail.com',
-            'lborthwick@idc.com',
+            'roarkmccolgan@gmail.com'
         ],
+        // 'crmrequest' => [
+        //     'url' => 'https://inbound.msights.com/api/response',
+        //     'method' => 'POST',
+        //     'authType' => 'basic',
+        //     'headers' => [
+        //         'Content-Type' => 'application/x-www-form-urlencoded'
+        //     ],
+        //     'body' => 'form_params',
+        //     'fields' => [
+        //         'user' => [
+        //             'type' => 'hidden',
+        //             'value' => 'agilitytool@idc.com',
+        //         ],
+        //         'password' => [
+        //             'type' => 'hidden',
+        //             'value' => '4g1L1tyt00L',
+        //         ],
+        //         'vendor_email' => [
+        //             'type' => 'hidden',
+        //             'value' => 'agilitytool@idc.com',
+        //         ],
+        //         'vendor' => [
+        //             'type' => 'hidden',
+        //             'value' => 'IDC GMS',
+        //         ],
+        //         'publisher' => [
+        //             'type' => 'hidden',
+        //             'value' => 'IDC RESEARCH INC',
+        //         ],
+        //         'publisher' => [
+        //             'type' => 'hidden',
+        //             'value' => 'media_property',
+        //         ],
+        //         'site_name' => [
+        //             'type' => 'hidden',
+        //             'value' => 'IDC GMS',
+        //         ],
+        //         'tactic_wbs' => [
+        //             'type' => 'hidden',
+        //             'value' => 'CRM-DE20-SME-WEB_CO1IDC',
+        //         ],
+        //         'campaign_manager' => [
+        //             'type' => 'hidden',
+        //             'value' => 'Julie Rosche',
+        //         ],
+        //         'format' => [
+        //             'type' => 'hidden',
+        //             'value' => 'sap_NA_industry',
+        //         ],
+        //         'date' => [
+        //             'type' => 'date',
+        //         ],
+        //         'comments' => [
+        //             'type' => 'all_questions_and_answers',
+        //         ],
+        //         'offer_code' => [
+        //             'type' => 'result',
+        //             'config' => 'baseline_15.overall.offer_code',
+        //             'session' => 'overall_rating'
+        //         ],
+        //         'offer_title' => [
+        //             'type' => 'result',
+        //             'config' => 'baseline_15.overall.offer_title',
+        //             'session' => 'overall_rating'
+        //         ],
+        //         'addr1' => [
+        //             'type' => 'hidden',
+        //             'value' => 'n/a',
+        //         ],
+        //         'addr2' => [
+        //             'type' => 'hidden',
+        //             'value' => 'n/a',
+        //         ],
+        //         'city' => [
+        //             'type' => 'hidden',
+        //             'value' => 'n/a',
+        //         ],
+        //         'state' => [
+        //             'type' => 'hidden',
+        //             'value' => 'n/a',
+        //         ],
+        //         'zip' => [
+        //             'type' => 'hidden',
+        //             'value' => 'n/a',
+        //         ],
+        //         'company' => [
+        //             'type' => 'field',
+        //             'name' => 'company'
+        //         ],
+        //         'country' => [
+        //             'type' => 'field',
+        //             'name' => 'country'
+        //         ],
+        //         'fname' => [
+        //             'type' => 'field',
+        //             'name' => 'fname'
+        //         ],
+        //         'lname' => [
+        //             'type' => 'field',
+        //             'name' => 'sname'
+        //         ],
+        //         'title' => [
+        //             'type' => 'field',
+        //             'name' => 'title'
+        //         ],
+        //         'phone' => [
+        //             'type' => 'field',
+        //             'name' => 'phone'
+        //         ],
+        //         'email' => [
+        //             'type' => 'field',
+        //             'name' => 'email'
+        //         ],
+        //         'site_form_url' => [
+        //             'type' => 'report'
+        //         ],
+        //         'companysize' => [
+        //             'type' => 'hidden',
+        //             'value' => 'n/a'
+        //         ],
+        //         'industry' => [
+        //             'type' => 'field',
+        //             'name' => 'extra.areas_interest'
+        //         ],
+        //         'optin_email_or_phone' => [
+        //             'type' => 'field',
+        //             'name' => 'extra.marketing',
+        //             'transform' => [
+        //                 'on' => 'yes',
+        //                 'off' => 'no',
+        //             ],
+        //         ],
+        //     ]
+        // ],
         '' => [
             'fname'=>'required|min:2|max:255',
             'sname'=>'required|min:2|max:255',

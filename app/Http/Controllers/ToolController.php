@@ -629,6 +629,10 @@ class ToolController extends Controller
         if ($mrs) { //!App::isLocal() &&
             $this->prepareMrsRequest($mrs, $request, $assessment->uuid);
         }
+        $crm = config('baseline_'.session('product.id').'.overall.crmrequest', false);
+        if ($crm) { //!App::isLocal() &&
+            $this->prepareCrmRequest($crm, $request, $assessment->uuid);
+        }
         $subject = trans(session('product.alias').'.email.subject');
         $assessment->uuid = (string)$assessment->uuid;
         $inline = false;
@@ -1239,6 +1243,112 @@ class ToolController extends Controller
 
         return response()->json($data);
     }
+    private function prepareCrmRequest($fieldMapping, $request, $reportUuid){
+        //send guzzle request
+        //dd($request->all());
+        $url = $fieldMapping['url'];
+        $auth = isset($fieldMapping['auth']) ? [$fieldMapping['auth']['username'],$fieldMapping['auth']['password']] : '[]';
+        $body = isset($fieldMapping['body']) ? $fieldMapping['body'] : 'body';
+        $headers = isset($fieldMapping['headers']) ? $fieldMapping['headers'] : '[]';
+
+        foreach ($fieldMapping['fields'] as $fieldKey => $settings) {
+            switch ($settings['type']) {
+                case 'locale':
+                    $query[$fieldKey] = $currentLocal;
+                    break;
+                case 'hidden':
+                    $query[$fieldKey] = $settings['value'];
+                    break;
+                case 'date':
+                    $query[$fieldKey] = date('Y-m-d');
+                    break;
+                case 'all_questions_and_answers':
+                    $text = '';
+                    foreach ($this->quiz as $key => $value) {
+                        foreach ($value['pages'] as $page => $props) {
+                            foreach ($props['questions'] as $q => $details) {
+                                $text.= $q." - ".$details['question']."\n";
+                                if (!isset($details['ignore']) || $details['ignore']==false) { // ignore answer
+                                    if (($details['type']=='groupSlider' || $details['type']=='groupbutton' || $details['type']=='checkbox' || $details['type']=='groupradio' || $details['type']=='slider') && is_array($details['selected'])) {
+                                        foreach ($details['selected'] as $select) {
+                                            foreach($details['options'] as $option){
+                                                if(isset($option['name']) && $select['name'] == $option['name']){
+                                                    $text.= $select['name']." - ".$option['label'].":\n";
+                                                }
+                                            }
+                                            $text.= $select['label']."\n";
+                                        }
+                                    } else {
+                                        $text.= $details['selected'][0]['label']."\n";
+                                    }
+                                }
+                            }
+                        }                        
+                    }
+                    $query[$fieldKey] = $text;
+                    break;
+                case 'result':
+                    $result = $this->howfit['overall']['rating'];
+                    $config = '';
+                    if($settings['config']){
+                        $config = config($settings['config'].'.'.$result);
+                    }
+                    $query[$fieldKey] = $config;
+                    break;
+                case 'field':
+                    if(isset($settings['transform'])){
+                        $query[$fieldKey] = $settings['transform'][$request->input($settings['name'])];
+                    }else{
+                        $query[$fieldKey] = $request->input($settings['name']);
+                    }
+                    break;
+                case 'report':
+                    $query[$fieldKey] = session('url').'/'.session('localeUrl').'/download/'.$reportUuid;
+                    break;
+                case 'url':
+                    $query[$fieldKey] = session('url').'/'.session('localeUrl');
+                    break;
+                case 'question':
+                    $selected = session('questions.'.$settings['questions'][0].'.selected');
+                    $val = explode('|', $selected);
+                    $val = $val[1];
+                    $query[$fieldKey] = $val;
+                    break;
+                case 'questionlabel':
+                    $selected = session('questions.'.$settings['questions'][0].'.selected');
+                    $label = explode('|', $selected);
+                    $label = $label[0];
+                    $query[$fieldKey] = $label;
+                    break;
+                case 'calculation':
+                    $results = [];
+                    foreach ($settings['questions'] as $key => $question) {
+                        $selected = session('questions.'.$question.'.selected');
+                        $val = explode('|', $selected);
+                        $val = $val[1];
+                        $results[]=$val;
+                    }
+                    $answer = 0;
+                    switch ($settings['formula']) {
+                        case 'multiply':
+                            $answer = array_product($results);
+                            break;
+                        case 'add':
+                            $answer = array_sum($results);
+                            break;
+                    }
+                    $query[$fieldKey] = $answer;
+                    break;
+            }
+        }
+        if ($request->session()->has('queryparam')) {
+            foreach (session('queryparam') as $key => $value) {
+                $query[$key] = $value;
+            }
+        }
+        //dd($query);
+        $this->dispatch(new SendCrmRequest($url, $query, 'POST', $headers, $auth, $body));
+    }
 
     private function prepareEloquaRequest($eloqua, $request){
         //send guzzle request
@@ -1248,6 +1358,9 @@ class ToolController extends Controller
             switch ($settings['type']) {
                 case 'locale':
                     $query[$fieldKey] = $currentLocal;
+                    break;
+                case 'date':
+                    $query[$fieldKey] = date('Y-m-d');
                     break;
                 case 'field':
                     $query[$fieldKey] = $request->input($settings['name']);

@@ -98,7 +98,7 @@ return [
                     'value' => [
                         'asset_id' => [
                             'type' => 'hidden',
-                            'value' => 'OV77998',
+                            'value' => 'ov77998',
                         ],
                         'vcpi' => [
                             'type' => 'hidden',

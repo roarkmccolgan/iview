@@ -79,7 +79,7 @@
 											{{ $t('general.phone') }}
 										</label>
 										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-2" :class="[errors.tel ? 'border-red' : '']" id="tel" name="phone" type="tel" @blur="hasError">
-										<p class="text-red text-xs italic" v-show="errors.tel" v-html="$t('general.errorPhone')"></p>
+										<p class="text-red text-xs italic" v-show="errors.tel" v-html="$t('sapagile.errorPhone')"></p>
 									</div>
 								</div>
 								<div class="mb-6 sm:w-1/2">
@@ -300,12 +300,8 @@ export default{
 				}
 			}
 			if(event.target.type == "tel"){
-				var numIntegers = event.target.value.replace(/[^0-9]/g,"").length;
-				if(event.target.value == '' || numIntegers < 5){
-					this.errors[event.target.id] = true;
-				}else{
-					this.errors[event.target.id] = false;
-				}
+				const regEx = /^\+?[1-9]\d{1,14}$/;
+    			this.errors[event.target.id] = regEx.test(event.target.value);
 			}
 			
 			if(event.target.type == "select-one"){
