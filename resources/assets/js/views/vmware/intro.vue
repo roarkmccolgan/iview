@@ -20,7 +20,7 @@
 		<div class="container mx-auto">
 			<div class="bg-white p-5 sm:p-10 sm:pb-16 sm:shadow-lg">
 				<h3 class="text-blackblack font-vmware leading-tight mb-2">Don't miss this event</h3>
-				<a href="https://www.vmware.com/content/microsites/en/modern-network-events.html" target="_blank" class="block mx-auto"><img src="/images/tools/14/emea-modern-network-header.jpg" alt=""></a>
+				<a href="https://www.vmware.com/uk/modern-network.html?src=wb_5f9291c33ee93&cid=7012H000001YpXM" target="_blank" class="block mx-auto"><img src="/images/tools/14/emea-modern-network-header.jpg" alt=""></a>
 			</div>
 		</div>
 	</div>
