@@ -15,19 +15,21 @@ return array(
     'title'=>'VMware Network Security Assessment',
     'sub-title'=>'in association with IDC',
     'landing'=>'
-        <h3 class="text-2xl text-blackblack sm!:text-xl font-medium mb-2">Is your Network Ready and Secure for the Digital Future?</h3>
-        <p class="mb-4">
-            Understand the state of your network, via a brief assessment (5 minutes)<br/> and you will receive:
-        </p>
+        <h3 class="text-2xl text-blackblack sm!:text-xl font-medium mb-4">Is your Network Ready and Secure for the Digital Future?</h3>
         <div class="flex">
             <div class="w-1/3">
                 <img src="/images/tools/14/report_sample.png" class="">
             </div>
-            <ul class="list-disc flex-1 sm!:mt-10">
-                <li class="mb-1 font-medium">A custom report to download and share</li>
-                <li class="mb-1 font-medium">Tailored guidance on where to focus your network efforts for the future</li>
-                <li class="mb-1 font-medium">IDC ranking on network readiness and security</li>
-            </ul>
+            <div class="flex-1 pl-2">
+                Understand the state of your network, via a brief assessment (5 minutes) and you will receive:
+                <ul class="list-disc mt-2">
+                    <li class="mb-1 font-medium">A custom report to download and share</li>
+                    <li class="mb-1 font-medium">Tailored guidance on where to focus your network efforts for the future</li>
+                    <li class="mb-1 font-medium">IDC ranking on network readiness and security</li>
+                </ul>
+                <h4 class="text-blackblack font-medium leading-tight mb-2 mt-6">Also, don\'t forget to register for this event:</h4>
+                <a href="https://www.vmware.com/uk/modern-network.html?src=wb_5f9291c33ee93&cid=7012H000001YpXM" target="_blank" class="block mx-auto"><img src="/images/tools/14/emea-modern-network-header.jpg" width="85%" alt=""></a>
+            </div>
         </div>
         ',
     'startbut'=>'Begin assessment',

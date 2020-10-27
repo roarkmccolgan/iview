@@ -10,18 +10,12 @@
 		<div class="container mx-auto">
 			<div class="flex flex-wrap flex-row-reverse sm:flex-no-wrap sm:flex-row items-center bg-white p-5 sm:p-10 sm:pb-16 sm:shadow-lg">
 					<div class="w-full sm:w-3/5">
-						<div v-html="$t('vmware.landing')"></div>
+						<div class="mb-2" v-html="$t('vmware.landing')"></div>
 					</div>
 					<div class="w-full mt-5 sm:w-2/5 sm:m-0 text-center">
 						<router-link class="inline-block text-xl mx-auto bg-vmware-green hover:bg-vmware-green-light shadow-md text-white py-4 px-6 rounded no-underline" :to="'/questions/1'">{{ $t('vmware.startbut') }} <font-awesome-icon class="ml-2" :icon="icons.faArrowRight" /></router-link>
 					</div>
 				</div>
-		</div>
-		<div class="container mx-auto">
-			<div class="bg-white p-5 sm:p-10 sm:pb-16 sm:shadow-lg">
-				<h3 class="text-blackblack font-vmware leading-tight mb-2">Don't miss this event</h3>
-				<a href="https://www.vmware.com/uk/modern-network.html?src=wb_5f9291c33ee93&cid=7012H000001YpXM" target="_blank" class="block mx-auto"><img src="/images/tools/14/emea-modern-network-header.jpg" alt=""></a>
-			</div>
 		</div>
 	</div>
 		

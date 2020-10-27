@@ -41,6 +41,7 @@ return array(
     'byreg'=>'By registering with IDC, you accept our <a href="/privacy" target="_blank">Privacy Policy</a>.',
     'wait'=>'While you\'re waiting why not tweet your results and see how your colleagues measure up?',
 
+    'errorPhone'=>'Please enter a valid phone number (+00112223333)',
     'areas_interest' => 'Your areas of interest',
     'interest1' => 'Finance &amp; Administration',
     'interest2' => 'Purchase',

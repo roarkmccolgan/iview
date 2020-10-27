@@ -300,8 +300,8 @@ export default{
 				}
 			}
 			if(event.target.type == "tel"){
-				const regEx = /^\+?[1-9]\d{1,14}$/;
-    			this.errors[event.target.id] = regEx.test(event.target.value);
+				const regEx = /^\+[1-9]\d{10,14}$/;
+    			this.errors[event.target.id] = !regEx.test(event.target.value);
 			}
 			
 			if(event.target.type == "select-one"){
