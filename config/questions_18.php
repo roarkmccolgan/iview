@@ -6,20 +6,7 @@ return [
         'description' => '
             <p class=""></p>',
         'nuggets' => [],
-        'sectionintro' => [
-            '
-                <p class="w-full mb-4">ServiceNow gives you the power to make work, work better—no matter the circumstances. So employees can be productive, wherever they are. And customers can get what they need, when they need it.</p>
-            ',
-            '
-                <div class="flex flex-wrap items-center">
-                    <h1 class="flex-1 font-light text-2xl sm:text-3xl leading-tight mb-2 p-4 bg-grey-lighter">Awesome Statistic and accompanying graph to bring it home</h1>
-                    <img src="/images/tools/18/demo_graph.jpg" class="w-full sm:w-1/3 sm:ml-8" />
-                </div>
-            ',
-            '
-                <p class="w-full my-4">Question to user to pique interest?</p>
-            '
-        ],
+        'sectionintro' => false,
         'class' => 'sec2',
         'shuffle' => false,
         'display' => true,
@@ -151,17 +138,13 @@ return [
         ],
         'sectionintro' => [
             '
-                <p class="w-full mb-4">ServiceNow gives you the power to make work, work better—no matter the circumstances. So employees can be productive, wherever they are. And customers can get what they need, when they need it.</p>
-            ',
-            '
                 <div class="flex flex-wrap items-center">
-                    <h1 class="flex-1 font-light text-2xl sm:text-3xl leading-tight mb-2 p-4 bg-grey-lighter">Awesome Statistic and accompanying graph to bring it home</h1>
-                    <img src="/images/tools/18/demo_graph.jpg" class="w-full sm:w-1/3 sm:ml-8" />
+                    <h1 class="flex-1 font-bold leading-tight text-snow-dark text-2xl sm:text-3xl mb-2 p-4 bg-snow-gray">
+                        65% of organizations at more advanced stages of agility are already recovering or returning to growth.<br/> Just 20% of less agile organizations can say the same.
+                    </h1>
+                    <img src="/images/tools/18/nugget_graph_1.svg" class="w-full sm:w-1/3 sm:ml-8" />
                 </div>
             ',
-            '
-                <p class="w-full my-4">Question to user to pique interest?</p>
-            '
         ],
         'intermission' => [],
         'class' => 'sec2',
@@ -290,17 +273,13 @@ return [
         ],
         'sectionintro' => [
             '
-                <p class="w-full mb-4">ServiceNow gives you the power to make work, work better—no matter the circumstances. So employees can be productive, wherever they are. And customers can get what they need, when they need it.</p>
-            ',
-            '
                 <div class="flex flex-wrap items-center">
-                    <h1 class="flex-1 font-light text-2xl sm:text-3xl leading-tight mb-2 p-4 bg-grey-lighter">Awesome Statistic and accompanying graph to bring it home</h1>
-                    <img src="/images/tools/18/demo_graph.jpg" class="w-full sm:w-1/3 sm:ml-8" />
+                    <h1 class="flex-1 font-bold leading-tight text-snow-dark text-2xl sm:text-3xl mb-2 p-4 bg-snow-gray">
+                        65% of organizations at more advanced stages of agility are already recovering or returning to growth.<br/> Just 20% of less agile organizations can say the same.
+                    </h1>
+                    <img src="/images/tools/18/nugget_graph_1.svg" class="w-full sm:w-1/3 sm:ml-8" />
                 </div>
             ',
-            '
-                <p class="w-full my-4">Question to user to pique interest?</p>
-            '
         ],
         'intermission' => [],
         'class' => 'sec2',
@@ -397,17 +376,13 @@ return [
         ],
         'sectionintro' => [
             '
-                <p class="w-full mb-4">ServiceNow gives you the power to make work, work better—no matter the circumstances. So employees can be productive, wherever they are. And customers can get what they need, when they need it.</p>
-            ',
-            '
                 <div class="flex flex-wrap items-center">
-                    <h1 class="flex-1 font-light text-2xl sm:text-3xl leading-tight mb-2 p-4 bg-grey-lighter">Awesome Statistic and accompanying graph to bring it home</h1>
-                    <img src="/images/tools/18/demo_graph.jpg" class="w-full sm:w-1/3 sm:ml-8" />
+                    <h1 class="flex-1 font-bold leading-tight text-snow-dark text-2xl sm:text-3xl mb-2 p-4 bg-snow-gray">
+                        65% of organizations at more advanced stages of agility are already recovering or returning to growth.<br/> Just 20% of less agile organizations can say the same.
+                    </h1>
+                    <img src="/images/tools/18/nugget_graph_1.svg" class="w-full sm:w-1/3 sm:ml-8" />
                 </div>
             ',
-            '
-                <p class="w-full my-4">Question to user to pique interest?</p>
-            '
         ],
         'intermission' => [],
         'class' => 'sec2',
@@ -536,17 +511,13 @@ return [
         ],
         'sectionintro' => [
             '
-                <p class="w-full mb-4">ServiceNow gives you the power to make work, work better—no matter the circumstances. So employees can be productive, wherever they are. And customers can get what they need, when they need it.</p>
-            ',
-            '
                 <div class="flex flex-wrap items-center">
-                    <h1 class="flex-1 font-light text-2xl sm:text-3xl leading-tight mb-2 p-4 bg-grey-lighter">Awesome Statistic and accompanying graph to bring it home</h1>
-                    <img src="/images/tools/18/demo_graph.jpg" class="w-full sm:w-1/3 sm:ml-8" />
+                    <h1 class="flex-1 font-bold leading-tight text-snow-dark text-2xl sm:text-3xl mb-2 p-4 bg-snow-gray">
+                        65% of organizations at more advanced stages of agility are already recovering or returning to growth.<br/> Just 20% of less agile organizations can say the same.
+                    </h1>
+                    <img src="/images/tools/18/nugget_graph_1.svg" class="w-full sm:w-1/3 sm:ml-8" />
                 </div>
             ',
-            '
-                <p class="w-full my-4">Question to user to pique interest?</p>
-            '
         ],
         'intermission' => [],
         'class' => 'sec2',
