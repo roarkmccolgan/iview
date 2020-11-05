@@ -42,6 +42,7 @@ return [
        'ibmcloud',
        'sapagileglobal',
        'snow',
+       'redhat',
     ],
 
     /*

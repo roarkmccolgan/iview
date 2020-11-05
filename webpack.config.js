@@ -61,6 +61,11 @@ module.exports = {
 			"babel-polyfill",
 			'./resources/assets/js/snow/main.js',
 			'./resources/assets/css/snow/main.css'
+		],
+		redhat: [
+			"babel-polyfill",
+			'./resources/assets/js/redhat/main.js',
+			'./resources/assets/css/redhat/main.css'
 		]
 	},
 	stats: {

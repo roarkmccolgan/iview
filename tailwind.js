@@ -89,6 +89,11 @@ let colors = {
   'snow-dark': '#2A3E40',
   'snow-light': '#84B4A1',
   'snow-gray': '#F7F7F7',
+
+  'redhat': '#EE0000',
+  'redhat-dark': '#BE0000',
+  'redhat-gray': '#AAAAAA',
+  'redhat-gray-light': '#F0F0F0',
   
   'blackblack': 'rgb(0,0,0)',
   'black-transparent': 'rgba(0,0,0, 0.5)',
@@ -283,6 +288,14 @@ module.exports = {
     ],
     'snow': [
       'Gilroy-Bold ☞',
+      '-apple-system',
+      'BlinkMacSystemFont',
+      'Segoe UI',
+      'Helvetica Neue',
+      'sans-serif',
+    ],
+    'redhat': [
+      'Noto Sans',
       '-apple-system',
       'BlinkMacSystemFont',
       'Segoe UI',

@@ -230,7 +230,7 @@ class ToolController extends Controller
         $totalQuestions = count($onlyQuestions);
         $return_visitor = $request->cookie('quiz_progress');
         $class = 'intro';
-        if ($tool->template=='nttsdwan' || $tool->template=='trendmicromssp' || $tool->template=='nttdata' || $tool->template=='dassault' || $tool->template=='hitachi' || $tool->template=='vmware' || $tool->template=='sapagile' || $tool->template=='ibmcloud' || $tool->template=='sapagileglobal' || $tool->template=='snow') {
+        if ($tool->template=='nttsdwan' || $tool->template=='trendmicromssp' || $tool->template=='nttdata' || $tool->template=='dassault' || $tool->template=='hitachi' || $tool->template=='vmware' || $tool->template=='sapagile' || $tool->template=='ibmcloud' || $tool->template=='sapagileglobal' || $tool->template=='snow' || $tool->template=='redhat') {
             $view = 'tool.'.session('template').'.assessment';
         } else {
             $view = 'tool.'.session('template').'.intro';
@@ -1145,7 +1145,7 @@ class ToolController extends Controller
                 foreach ($value['pages'] as $page => $props) {
                     foreach ($props['questions'] as $q => $details) {
                         if (!isset($details['ignore']) || $details['ignore']==false) { // ignore answer
-                            if (($details['type']=='groupSlider' || $details['type']=='groupbutton' || $details['type']=='checkbox' || $details['type']=='groupradio' || $details['type']=='slider') && is_array($details['selected'])) {
+                            if (($details['type']=='groupSlider' || $details['type']=='groupbutton' || $details['type']=='checkbox' || $details['type']=='groupradio' || $details['type']=='opposingslider') && is_array($details['selected'])) {
                                 $answers = [];
                                 if (isset($details['calc']) && isset($details['calc']['type'])) {
                                     if ($details['calc']['type']=='average') {
@@ -1174,8 +1174,8 @@ class ToolController extends Controller
                                     $val = $valHold;
                                 }
                             } else {
-                                if (!isset($details['selected'])) {
-                                    dd($value['pages']);
+                                if (!isset($details['selected']) || !isset($details['selected'][0]['value']) || !isset($details['selected'][0]['label'])) {
+                                    dd($details['selected']);
                                 }
                                 $val = $details['selected'][0]['value'];
                                 $answers[] = $details['selected'][0]['label'];
