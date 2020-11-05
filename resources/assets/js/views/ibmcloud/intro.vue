@@ -21,7 +21,10 @@
 			<div class="px-8">
 				<h3 class="font-bold leading-tight text-ibm-blue-light mb-8">{{ $t('ibmcloud.sub-title') }}</h3>
 				<div class="mb-8" v-html="$t('ibmcloud.landing')"></div>
-				<router-link class="block font-bold w-full uppercase text-center bg-ibm-blue border border-ibm-blue text-white hover:text-ibm-blue hover:bg-white py-4 px-6 no-underline sm:w-1/3" :to="'/questions/1'">{{ $t('ibmcloud.startbut') }} <font-awesome-icon class="ml-2" :icon="icons.faArrowRight" /></router-link>						
+				<router-link class="block font-bold w-full uppercase text-center bg-ibm-blue border border-ibm-blue text-white hover:text-ibm-blue hover:bg-white py-4 px-6 no-underline sm:w-1/3" :to="'/questions/1'">{{ $t('ibmcloud.startbut') }} <font-awesome-icon class="ml-2" :icon="icons.faArrowRight" /></router-link>
+				<p class="my-8 text-black">
+					if you have any questions for IBM, please <a class="text-ibm-blue" href="mailto:Matthias.Grip@ibm.com">click here</a> to email Matthias Grip, Business Development Specialist - Infrastructure Services, IBM Nordics
+				</p>
 			</div>
 		</div>
 	</div>		
