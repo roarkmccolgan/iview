@@ -10,6 +10,7 @@ use App\Http\Requests\SubmitAssessmentsRequest;
 use App\Jobs\SendCrmRequest;
 use App\Jobs\SendEloquaRequest;
 use App\Language;
+use App\Services\PdfMonkeyService;
 use App\Tool;
 use App\Tracker;
 use App\Url;
@@ -778,31 +779,52 @@ class ToolController extends Controller
         $inline = $request->has('browser') && $request->input('browser')!=false ? true : false;
         $update = $request->has('update') && $request->input('update')==false ? false : true;
 
-        $assessment = Assessment::where('uuid', $uuid)->firstOrFail();
+        $assessment = Assessment::with('tool')->where('uuid', $uuid)->firstOrFail();
         $request->session()->put('questions', $assessment->quiz);
         $request->session()->put('result', $assessment->result);
         $request->session()->put('user', collect($assessment->toArray())->only(['fname','lname','email','company','country','referer','tel','downloaded','extra','fetched','title','uuid','lang']));
         $reportName = str_slug($assessment->fname.'_'.$assessment->lname.'_'.session('product.title').'_Assessment', '-');
+        $filename = $assessment->id.'_'.str_slug($assessment->fname.'_'.$assessment->lname.'_'.$assessment->tool->title.'_Assessment', '-').'.pdf';
+
         if ($update) {
             $assessment->update(['fetched' => 1]);
         }
         
         if ($assessment->tool_id==session('product.id')) {
-            if (!$inline) {
-                $filename = $assessment->id.'_'.str_slug($assessment->fname.'_'.$assessment->lname.'_'.$assessment->tool->title.'_Assessment', '-').'.pdf';
-                $downloadName = str_slug($assessment->id.'-'.session('product.title').'-report', '-').'.pdf';
-                $this->wkhtml($assessment->id, $reportName);
-                $headers = [
-                    'Content-Type: application/pdf',
-                ];
-                return response()->download(storage_path().'/reports/'.$filename, $downloadName, $headers);
-            } else {
-                return $this->wkhtml($assessment->id, $reportName, $inline);
+            if($assessment->tool_id == 18){ //snow
+                //$pdfMonkey = new PdfMonkeyService();
+                //$body = $pdfMonkey->queueDocument($assessment->pdf_key, $filename);
+                JavaScript::put([
+                    'locale' => session('locale'),
+                    'tool' => $assessment->tool
+                ]);
+                return view('tool.'.session('template').'.downloadreport', [
+                    'pagetitle' => trans($assessment->tool->alias.'.title'),
+                    'utm' => $assessment->code ? $assessment->code : 'default',
+                    'uuid' => $uuid,
+                ]);
+            }else{
+                if (!$inline) {
+                    $downloadName = str_slug($assessment->id.'-'.session('product.title').'-report', '-').'.pdf';
+                    $this->wkhtml($assessment->id, $reportName);
+                    $headers = [
+                        'Content-Type: application/pdf',
+                    ];
+                    return response()->download(storage_path().'/reports/'.$filename, $downloadName, $headers);
+                } else {
+                    return $this->wkhtml($assessment->id, $reportName, $inline);
+                }                
             }
         } else {
             Log::error("Report does not exist for tool id ".session('product.id')." http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
             abort(404, 'The page you requested does not exist');
         }
+    }
+    public function checkForDocument(Request $request, $subdomain, $uuid)
+    {
+        // $pdfMonkey = new PdfMonkeyService();
+        // $body = $pdfMonkey->checkIfDocumentRenderedAndGetUrl($assessment->pdf_key, $filename);
+        return response()->json(['hey' => 'dudu']);
     }
     public function getReport(Request $request, $subdomain, $uuid)
     {

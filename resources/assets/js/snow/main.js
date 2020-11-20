@@ -37,6 +37,7 @@ new Vue({
 		FontAwesomeIcon
 	},
 	mounted: function(){
+		console.log(location.href);
 		this.$i18n.locale = window.laravel.locale=="" ? "en": window.laravel.locale;
 	}
 });

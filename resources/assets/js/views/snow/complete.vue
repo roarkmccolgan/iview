@@ -5,7 +5,7 @@
 			<div class="flex flex-wrap justify-center">
 				<div class="w-full sm:w-1/2 relative">
 					<div class="text-snow-dark" v-html="$t('snow.finishtxt', { stage: $t('snow.'+rating)})"></div>
-					<div v-for="sec, key in theResult">
+					<!--div v-for="sec, key in theResult">
 						<div class="font-bold">{{ key }}</div>
 						<div class="">score: {{ sec.score }}</div>
 						<div class="mb-4">rating: {{ sec.rating }}</div>
@@ -28,7 +28,8 @@
 						<span class="inline-block mr-2" v-else-if="scores.sum">{{ scores.sum.join() }};</span>
 						<span class="inline-block mr-2" v-else>{{ scores.val }};</span>
 						<span class="inline-block mr-2">{{ scores.val }}</span>
-					</div>
+					</div-->
+					<form id="mktoForm_4585" class=""></form>
 				</div>
 				<div class="w-full sm:w-1/2">
 					<div class="sm:ml-8">
@@ -45,7 +46,7 @@
 										<label class="block uppercase tracking-wide text-snow-dark text-xs font-bold mb-2" for="fname">
 											{{ $t('snow.leadgen.fname') }}
 										</label>
-										<input class="appearance-none block w-full bg-white text-black border py-3 px-4 mb-2" :class="[errors.fname ? 'border-red' : '']" type="text" id="fname" name="fname" @blur="hasError">
+										<input class="appearance-none block w-full bg-white text-black border py-3 px-4 mb-2" :class="[errors.fname ? 'border-red' : '']" type="text" id="fname" name="fname" v-model="fname" @blur="hasError">
 										<p class="text-red text-xs italic" v-show="errors.fname" v-html="$t('snow.leadgen.errorFname')"></p>
 									</div>
 								</div>
@@ -54,7 +55,7 @@
 										<label class="block uppercase tracking-wide text-snow-dark text-xs font-bold mb-2" for="sname">
 											{{ $t('snow.leadgen.sname') }}
 										</label>
-										<input class="appearance-none block w-full bg-white text-black border py-3 px-4 mb-2" :class="[errors.sname ? 'border-red' : '']" id="sname" name="sname" type="text" @blur="hasError">
+										<input class="appearance-none block w-full bg-white text-black border py-3 px-4 mb-2" :class="[errors.sname ? 'border-red' : '']" id="sname" name="sname" v-model="sname" type="text" @blur="hasError">
 										<p class="text-red text-xs italic" v-show="errors.sname" v-html="$t('snow.leadgen.errorSname')"></p>
 									</div>
 								</div>
@@ -63,16 +64,16 @@
 										<label class="block uppercase tracking-wide text-snow-dark text-xs font-bold mb-2" for="email">
 											{{ $t('snow.leadgen.email') }}
 										</label>
-										<input class="appearance-none block w-full bg-white text-black border py-3 px-4 mb-2" :class="[errors.email ? 'border-red' : '']" id="email" name="email" type="email" @blur="hasError">
+										<input class="appearance-none block w-full bg-white text-black border py-3 px-4 mb-2" :class="[errors.email ? 'border-red' : '']" id="email" name="email" v-model="email" type="email" @blur="hasError">
 										<p class="text-red text-xs italic" v-show="errors.email" v-html="$t('snow.leadgen.errorEmail')"></p>
 									</div>
 								</div>
 								<div class="mb-6 sm:w-1/2">
 									<div class="sm:ml-2">
-										<label class="block uppercase tracking-wide text-snow-dark text-xs font-bold mb-2" for="position">
+										<label class="block uppercase tracking-wide text-snow-dark text-xs font-bold mb-2" for="title">
 											{{ $t('snow.leadgen.title') }}
 										</label>
-										<input class="appearance-none block w-full bg-white text-black border py-3 px-4 mb-2" :class="[errors.title ? 'border-red' : '']" id="title" name="title" type="text" @blur="hasError">
+										<input class="appearance-none block w-full bg-white text-black border py-3 px-4 mb-2" :class="[errors.title ? 'border-red' : '']" id="title" name="title" v-model="title" type="text" @blur="hasError">
 										<p class="text-red text-xs italic" v-show="errors.title" v-html="$t('snow.leadgen.errorTitle')"></p>
 									</div>
 								</div>
@@ -81,7 +82,7 @@
 										<label class="block uppercase tracking-wide text-snow-dark text-xs font-bold mb-2" for="tel">
 											{{ $t('snow.leadgen.phone') }}
 										</label>
-										<input class="appearance-none block w-full bg-white text-black border py-3 px-4 mb-2" :class="[errors.tel ? 'border-red' : '']" id="tel" name="phone" type="tel" @blur="hasError">
+										<input class="appearance-none block w-full bg-white text-black border py-3 px-4 mb-2" :class="[errors.tel ? 'border-red' : '']" id="tel" name="phone" v-model="phone" type="tel" @blur="hasError">
 										<p class="text-red text-xs italic" v-show="errors.tel" v-html="$t('snow.leadgen.errorPhone')"></p>
 									</div>
 								</div>
@@ -90,8 +91,25 @@
 										<label class="block uppercase tracking-wide text-snow-dark text-xs font-bold mb-2" for="company">
 											{{ $t('snow.leadgen.company') }}
 										</label>
-										<input class="appearance-none block w-full bg-white text-black border py-3 px-4 mb-2" :class="[errors.company ? 'border-red' : '']" id="company" name="company" type="text" @blur="hasError">
+										<input class="appearance-none block w-full bg-white text-black border py-3 px-4 mb-2" :class="[errors.company ? 'border-red' : '']" id="company" v-model="company" name="company" type="text" @blur="hasError">
 										<p class="text-red text-xs italic" v-show="errors.company" v-html="$t('snow.leadgen.errorCompany')"></p>
+									</div>
+								</div>
+								<div class="mb-6 sm:w-1/2">
+									<div class="sm:mr-2">
+										<label class="block uppercase tracking-wide text-snow-dark text-xs font-bold mb-2" for="industry">
+											{{ $t('snow.leadgen.industry') }}
+										</label>
+										<div class="inline-block relative w-full mb-2">
+											<select class="block appearance-none rounded-none w-full bg-white border text-snow-dark py-3 px-4 pr-8" :class="[errors.industry ? 'border-red' : '']" id="industry" name="extra[industry]" v-model="industry" @blur="hasError">
+												<option value="" v-html="$t('snow.leadgen.pleaseselect')"></option>
+												<option v-for="(item, key) in assessment.fields.industry.options" :value="key">{{ item }}</option>
+											</select>
+											<div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-snow-dark">
+												<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+											</div>
+										</div>
+										<p class="text-red text-xs italic" v-show="errors.industry" v-html="$t('snow.leadgen.errorIndustry')"></p>
 									</div>
 								</div>
 								<div class="mb-6 sm:w-1/2">
@@ -100,7 +118,7 @@
 											{{ $t('snow.leadgen.country') }}
 										</label>
 										<div class="inline-block relative w-full mb-2">
-											<select class="block appearance-none rounded-none w-full bg-white border text-snow-dark py-3 px-4 pr-8" :class="[errors.country ? 'border-red' : '']" id="country" name="country" @blur="hasError">
+											<select class="block appearance-none rounded-none w-full bg-white border text-snow-dark py-3 px-4 pr-8" :class="[errors.country ? 'border-red' : '']" id="country" name="country" v-model="country" @blur="hasError">
 												<option value="" v-html="$t('snow.leadgen.pleaseselect')"></option>
 												<option v-for="(item, key) in assessment.fields.country.options" :value="key">{{ item }}</option>
 											</select>
@@ -109,6 +127,40 @@
 											</div>
 										</div>
 										<p class="text-red text-xs italic" v-show="errors.country" v-html="$t('snow.leadgen.errorCountry')"></p>
+									</div>
+								</div>
+								<div class="mb-6 sm:w-1/2">
+									<div class="sm:ml-2" v-if="country && assessment.fields.state[country]">
+										<label class="block uppercase tracking-wide text-snow-dark text-xs font-bold mb-2" for="state">
+											{{ $t('snow.leadgen.state') }}
+										</label>
+										<div class="inline-block relative w-full mb-2">
+											<select class="block appearance-none rounded-none w-full bg-white border text-snow-dark py-3 px-4 pr-8" :class="[errors.state ? 'border-red' : '']" id="state" name="extra[state]" v-model="state" @blur="hasError">
+												<option value="" v-html="$t('snow.leadgen.pleaseselect')"></option>
+												<option v-for="(item, key) in assessment.fields.state[country]" :value="key">{{ item }}</option>
+											</select>
+											<div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-snow-dark">
+												<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+											</div>
+										</div>
+										<p class="text-red text-xs italic" v-show="errors.state" v-html="$t('snow.leadgen.errorState')"></p>
+									</div>
+								</div>
+								<div class="mb-6 sm:w-1/2">
+									<div class="sm:mr-2">
+										<label class="block uppercase tracking-wide text-snow-dark text-xs font-bold mb-2" for="interested_in">
+											{{ $t('snow.leadgen.interested_in') }}
+										</label>
+										<div class="inline-block relative w-full mb-2">
+											<select class="block appearance-none rounded-none w-full bg-white border text-snow-dark py-3 px-4 pr-8" :class="[errors.interested_in ? 'border-red' : '']" id="interested_in" name="extra[interested_in]" v-model="interested_in" @blur="hasError">
+												<option value="" v-html="$t('snow.leadgen.pleaseselect')"></option>
+												<option v-for="(item, key) in assessment.fields.interested_in.options" :value="key">{{ item }}</option>
+											</select>
+											<div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-snow-dark">
+												<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+											</div>
+										</div>
+										<p class="text-red text-xs italic" v-show="errors.interested_in" v-html="$t('snow.leadgen.errorinterested_in')"></p>
 									</div>
 								</div>
 								<div class="mb-6 w-full p-2 bg-white leading-tight">
@@ -152,8 +204,8 @@
 									</label>
 								</div>
 								<div class="mb-6 w-full">
-									<!-- <button type="submit" :disabled="isSubmitting" class="text-center block bg-snow-dark hover:bg-snow-light text-white hover:text-blackblack py-4 px-6 no-underline" :class="[{'cursor-not-allowed':isSubmitting}]" @click.prevent="checkForErrors"><font-awesome-icon class="mr-2" :class="[{'fa-spin': isSubmitting}]" :icon="isSubmitting ? icons.faSyncAlt : icons.faEnvelope"></font-awesome-icon> {{ $t('snow.leadgen.send') }}</button> -->
-									<a href="/quiz/thankyou" class="text-center block bg-snow-dark hover:bg-snow-light text-white hover:text-blackblack py-4 px-6 no-underline" :class="[{'cursor-not-allowed':isSubmitting}]"><font-awesome-icon class="mr-2" :class="[{'fa-spin': isSubmitting}]" :icon="isSubmitting ? icons.faSyncAlt : icons.faEnvelope"></font-awesome-icon> {{ $t('snow.leadgen.send') }}</a>
+									<button type="submit" :disabled="isSubmitting" class="text-center block bg-snow-dark hover:bg-snow-light text-white hover:text-blackblack py-4 px-6 no-underline" :class="[{'cursor-not-allowed':isSubmitting}]" @click.prevent="checkForErrors"><font-awesome-icon class="mr-2" :class="[{'fa-spin': isSubmitting}]" :icon="isSubmitting ? icons.faSyncAlt : icons.faEnvelope"></font-awesome-icon> {{ $t('snow.leadgen.send') }}</button>
+									<!--a href="/quiz/thankyou" class="text-center block bg-snow-dark hover:bg-snow-light text-white hover:text-blackblack py-4 px-6 no-underline" :class="[{'cursor-not-allowed':isSubmitting}]"><font-awesome-icon class="mr-2" :class="[{'fa-spin': isSubmitting}]" :icon="isSubmitting ? icons.faSyncAlt : icons.faEnvelope"></font-awesome-icon> {{ $t('snow.leadgen.send') }}</a-->
 								</div>
 							</div>
 						</form>
@@ -213,15 +265,29 @@ export default{
 				sname: false,
 				email: false,
 				tel: false,
+				industry: false,
 				company: false,
 				title: false,
 				country: false,
 				terms: false,
-				marketing: false
+				marketing: false,
+				interested_in: false,
 			},
 			theResult: this.result ? this.result : laravel.result,
 			theScores: this.scores ? this.scores : laravel.scores,
 			isSubmitting: false,
+			fname: null,
+			sname: null,
+			email: null,
+			title: null,
+			phone: null,
+			company: null,
+			industry: null,
+			country: null,
+			state: null,
+			interested_in: null,
+			checkingInterval: null,
+			marketoForm: null,
 		}
 	},
 	computed: {
@@ -251,7 +317,7 @@ export default{
 			}
 			
 			if(event.target.type == "select-one"){
-				if(event.target.options[event.target.selectedIndex].value == '' || event.target.options[event.target.selectedIndex].value == null || event.target.options[event.target.selectedIndex].value == "null"){
+				if(event.target.selectedIndex == -1 || event.target.options[event.target.selectedIndex].value == '' || event.target.options[event.target.selectedIndex].value == null || event.target.options[event.target.selectedIndex].value == "null"){
 					this.errors[event.target.id] = true;
 				}else{
 					this.errors[event.target.id] = false;
@@ -294,6 +360,36 @@ export default{
 			}
 			if(errors == false){
 				this.isSubmitting = true;
+				// if(this.marketoForm){
+				// 	let theDate = new Date();
+				// 	let dateFormat = theDate.toLocaleDateString("en-UK",{ month: '2-digit' }) +"/"+ theDate.toLocaleDateString("en-UK",{ day: '2-digit' }) +"/"+ theDate.toLocaleDateString("en-UK",{ year: 'numeric' });
+				// 	let vals = {
+				// 		Email: this.email,
+				// 		FirstName: this.fname,
+				// 		LastName: this.sname,
+				// 		Phone: this.phone,
+				// 		personCompanyInput: this.company,
+				// 		Title: this.title,
+				// 		Country: this.country,
+				// 		State: this.state,
+				// 		pMCFComment: JSON.stringify(this.result),
+				// 		pMCFDeliveryCampaignID: 40361,
+				// 		pMCFMemberStatus: 'Registered',
+				// 		explicitConsentDate: dateFormat,
+				// 		explicitConsentSource: "IDC Self-Assessment Campaign",
+				// 		pMCFIamInterestedin: this.interested_in,
+				// 	};
+				// 	console.log(vals);
+				// 	this.marketoForm.loadForm("//app-ab44.marketo.com", "489-OJL-092", 4585, form => {
+				// 		form.vals(vals);
+				// 		form.onSuccess(function(values, followUpUrl) {
+				// 			console.log('success');
+				// 			console.log(formSuccess);
+				// 			return false;
+				// 		});
+				// 		form.submit();
+				// 	});
+				// }
 				document.getElementById('leadForm').submit();
 			}
 		}
@@ -301,6 +397,19 @@ export default{
 	components: {
 		FontAwesomeIcon,
 	},
-	created: function(){}
+	mounted: function(){
+		let marketoFormScript = document.createElement('script')
+		marketoFormScript.setAttribute('src', '//app-ab44.marketo.com/js/forms2/js/forms2.min.js')
+		document.head.appendChild(marketoFormScript)
+	},
+	created: function(){
+		
+		this.checkingInterval = setInterval(() => {
+			if(window.MktoForms2){
+				this.marketoForm = window.MktoForms2;
+				clearInterval(this.checkingInterval);
+			}
+		}, 500)
+	},
 }
 </script>

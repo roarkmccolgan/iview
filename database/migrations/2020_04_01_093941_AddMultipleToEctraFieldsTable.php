@@ -25,6 +25,8 @@ class AddMultipleToEctraFieldsTable extends Migration
      */
     public function down()
     {
-        $table->dropColumn('multiple');
+        Schema::table('extra_fields', function (Blueprint $table) {
+            $table->dropColumn('multiple');
+        });
     }
 }

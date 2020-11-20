@@ -1,0 +1,161 @@
+<?php
+
+namespace App\Services;
+
+use GuzzleHttp\Exception\RequestException;
+use GuzzleHttp\Exception\ServerException;
+use Illuminate\Support\Facades\Log;
+
+class PdfMonkeyService
+{
+	public function genrateBody($assessment)
+	{
+		$tool = $assessment->tool;
+		$result = $assessment->result;
+		$extra = $assessment->extra;
+		$quiz = $assessment->quiz;
+		$industry = $extra['industry'];
+
+	    if($assessment->tool_id == 18) { //snow
+	    	$body = [
+	    		'url' => url('/images/tools/18/'), 
+	    		'cover' => url('/images/tools/18/report_cover.png'), 
+	    		'agility_image' => url('/images/tools/18/agility.svg'), 
+	    		'5levels' => url('/images/tools/18/5levels.svg'), 
+	    		'legend' => url('/images/tools/18/graphs/legend.svg'),
+	    		'intro' => trans($tool->alias.'.intro.'.$industry),
+	    		'overall' => [
+	    			'result' => $result['overall']['rating'],
+	    			'stage' => trans($tool->alias.'.'.$result['overall']['rating']),
+	    			'graph' => url('/images/tools/18/graphs/'.$industry.'_overall.svg'),
+	    			'para1' => trans($tool->alias.'.overall.para1'),
+	    			'graphic_stat' => trans($tool->alias.'.overall.'.$industry),
+	    			'source' => trans($tool->alias.'.overall.source', ['industry' => trans($tool->alias.'.industry.'.$industry)]),
+	    			'para2' => trans($tool->alias.'.overall.'.$result['overall']['rating'])
+	    		],
+	    		'sections' => []
+	    	];
+	    	foreach(config('baseline_'.$tool->id) as $secKey => $sec) {
+	    		if($secKey !== 'overall'){
+	    			$rating = $result[$secKey]['rating'];
+	    			$section = [
+	    				'title' => trans($tool->alias.'.'.$secKey.'.title'),
+	    				'color' => trans($tool->alias.'.'.$secKey.'.color'),
+	    				'result' => $rating,
+	    				'graph' => url('/images/tools/18/graphs/'.$industry.'_'.$secKey.'.svg'),
+	    				'stage' => trans($tool->alias.'.'.$rating),
+	    				'para1' => trans($tool->alias.'.'.$secKey.'.common1'),
+	    				'para2' => trans($tool->alias.'.'.$secKey.'.para1', ['stage' => trans($tool->alias.'.'.$rating), 'industry' => trans($tool->alias.'.industry.'.$industry)]),
+	    				'graphic_stat' => trans($tool->alias.'.overall.'.$industry),
+	    				'source' => trans($tool->alias.'.overall.source', ['industry' => trans($tool->alias.'.industry.'.$industry)]),
+	    				'para3' => trans($tool->alias.'.'.$secKey.'.common2'),
+	    				'stage_heading' => trans($tool->alias.'.'.$secKey.'.'.$rating.'.title'),
+	    				'stage_para' => trans($tool->alias.'.'.$secKey.'.'.$rating.'.para'),
+	    				'recommendations' => trans($tool->alias.'.'.$secKey.'.'.$rating.'.recommendations')
+	    			];
+	    			$body['sections'][] = $section;
+	    		}
+	    	}
+	    }
+	    return $body;
+	}
+    public function generateDocument($body, $templateId, $status = 'draft')
+    {
+    	$headers = [
+    		'Authorization' => 'Bearer ' . env('PDFMONKEY_KEY'),        
+    		'Accept'        => 'application/json',
+    	];
+
+    	$data = [
+    		'document_template_id' => $templateId,
+    		'payload' => $body,
+    		'status' => $status
+    	];
+
+
+        $client = new \GuzzleHttp\Client();
+        try {
+            $response = $client->request('POST', env('PDFMONEKY_URL'), [
+                'body' => json_encode($data),
+                'headers' => $headers,
+            ]);
+           
+            Log::info(print_r(json_decode($response->getBody()),true));
+            return json_decode($response->getBody());
+        } catch (RequestException $e) {
+            Log::info(json_encode($body));
+            Log::info(print_r($e->getMessage(), true));
+            Log::info('request');
+        } catch (ServerException $e) {
+            Log::info('server');
+            Log::info($e->getMessage());
+            Log::info(json_encode($body));
+        }
+    }
+
+    public function queueDocument($documentId, $filename, $status = 'pending')
+    {
+    	$headers = [
+    		'Authorization' => 'Bearer ' . env('PDFMONKEY_KEY'),        
+    		'Accept'        => 'application/json',
+    	];
+
+    	$data = [
+    		'document' => [
+	    		'meta' => [
+	    			'_filename' => $filename
+	    		],
+	    		'status' => $status
+    		]
+    	];
+
+
+        $client = new \GuzzleHttp\Client();
+        try {
+            $response = $client->request('PUT', env('PDFMONEKY_URL').'/'.$documentId, [
+                'body' => json_encode($data),
+                'headers' => $headers,
+            ]);
+           
+            Log::info(print_r(json_decode($response->getBody()),true));
+            return json_decode($response->getBody());
+        } catch (RequestException $e) {
+            Log::info(json_encode($body));
+            Log::info(print_r($e->getMessage(), true));
+            Log::info('request');
+        } catch (ServerException $e) {
+            Log::info('server');
+            Log::info($e->getMessage());
+            Log::info(json_encode($body));
+        }
+    }
+
+    public function checkIfDocumentRenderedAndGetUrl($documentId)
+    {
+    	$headers = [
+    		'Authorization' => 'Bearer ' . env('PDFMONKEY_KEY'),        
+    		'Accept'        => 'application/json',
+    	];
+
+        $client = new \GuzzleHttp\Client();
+        try {
+            $response = $client->request('get', env('PDFMONEKY_URL').'/'.$documentId, [
+                'headers' => $headers,
+            ]);
+            $responseArray = json_decode($response->getBody());
+            Log::info(print_r($responseArray,true));
+            if($responseArray['document']['status'] == 'success'){
+            	return $responseArray['download_url'];
+            }
+            return false;
+        } catch (RequestException $e) {
+            Log::info(json_encode($body));
+            Log::info(print_r($e->getMessage(), true));
+            Log::info('request');
+        } catch (ServerException $e) {
+            Log::info('server');
+            Log::info($e->getMessage());
+            Log::info(json_encode($body));
+        }
+    }
+}

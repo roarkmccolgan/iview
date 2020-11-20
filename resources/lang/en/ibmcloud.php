@@ -15,7 +15,7 @@ return array(
     'sub-title'=>'Evaluate your Cloud Journey',
     'landing'=>'
         <p class="mb-2">
-            Welcome to the "journey to cloud" assessment tool. As you progress along your cloud transformation journey, it will be good to take stock and see how far you have come. The first step on the cloud journey is to move applications and data into the cloud; the second step is to build your own cloud-native applications or enhance existing ones; and the third step is to manage a portfolio of multiple cloud services efficiently and set up a cloud operating model.
+            Welcome to the "journey to cloud" assessment tool. As you progress along your cloud transformation journey, it will be good to take stock and see how far you have come. There are several ways to get started and all journeys are individual but there are 3 areas you should consider: move applications and data into the cloud, build your own cloud-native applications or enhance existing ones and manage a portfolio of multiple cloud services efficiently and set up a cloud operating model.
         </p>
         <p class="mb-4">
             This assessment will tell you how far you have progressed and what the next steps are on your journey in three categories — <span class="text-ibm-blue">"Move,"</span> <span class="text-ibm-blue">"Build,"</span> and <span class="text-ibm-blue">"Manage."</span>.

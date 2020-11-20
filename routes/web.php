@@ -90,6 +90,7 @@ Route::group(['domain' => '{subdomain}.'.env('APP_TLD', 'idcready.net'),'middlew
     }]);
 
     Route::get('/download/{uuid}', 'ToolController@getDownload')->middleware(['routebyurl']);
+    Route::get('/download/{uuid}/checkfordocument', 'ToolController@checkForDocument')->middleware(['routebyurl']);
     Route::get('/sendapology/{uuid}', 'ToolController@sendApology')->middleware(['routebyurl']);
     Route::get('/report/{uuid}', 'ToolController@getReport')->middleware(['routebyurl']);
 

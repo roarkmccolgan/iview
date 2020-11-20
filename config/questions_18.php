@@ -214,7 +214,7 @@ return [
                             ],
                             [
                                 'label'=>'We identify skills gaps throughout the year and tap into flexible resources continuously.',
-                                'value'=>4,
+                                'value'=>5,
                                 'checked'=>false,
                             ]
                         ]
@@ -275,9 +275,9 @@ return [
             '
                 <div class="flex flex-wrap items-center">
                     <h1 class="flex-1 font-bold leading-tight text-snow-dark text-2xl sm:text-3xl mb-2 p-4 bg-snow-gray">
-                        65% of organizations at more advanced stages of agility are already recovering or returning to growth.<br/> Just 20% of less agile organizations can say the same.
+                        44% of organizations at the early stages of agility are yet to digitized employee-facing processes, which remain slow, manual, and are often based on email and phone communication.
                     </h1>
-                    <img src="/images/tools/18/nugget_graph_1.svg" class="w-full sm:w-1/3 sm:ml-8" />
+                    <img src="/images/tools/18/nugget_graph_2.svg" class="w-full sm:w-1/3 sm:ml-8" />
                 </div>
             ',
         ],
@@ -378,9 +378,9 @@ return [
             '
                 <div class="flex flex-wrap items-center">
                     <h1 class="flex-1 font-bold leading-tight text-snow-dark text-2xl sm:text-3xl mb-2 p-4 bg-snow-gray">
-                        65% of organizations at more advanced stages of agility are already recovering or returning to growth.<br/> Just 20% of less agile organizations can say the same.
+                        Organizations further along in their agility journey, place greater emphasis on the need to accelerate product and service releases. Time to market is a fundamental measure of agile success.
                     </h1>
-                    <img src="/images/tools/18/nugget_graph_1.svg" class="w-full sm:w-1/3 sm:ml-8" />
+                    <img src="/images/tools/18/nugget_graph_3.svg" class="w-full sm:w-1/3 sm:ml-8" />
                 </div>
             ',
         ],
@@ -513,9 +513,9 @@ return [
             '
                 <div class="flex flex-wrap items-center">
                     <h1 class="flex-1 font-bold leading-tight text-snow-dark text-2xl sm:text-3xl mb-2 p-4 bg-snow-gray">
-                        65% of organizations at more advanced stages of agility are already recovering or returning to growth.<br/> Just 20% of less agile organizations can say the same.
+                        57% of organizations researched by IDC, reported Workflow Automation Software as the top technology area for improving agility.
                     </h1>
-                    <img src="/images/tools/18/nugget_graph_1.svg" class="w-full sm:w-1/3 sm:ml-8" />
+                    <img src="/images/tools/18/nugget_graph_4.svg" class="w-full sm:w-1/3 sm:ml-8" />
                 </div>
             ',
         ],
