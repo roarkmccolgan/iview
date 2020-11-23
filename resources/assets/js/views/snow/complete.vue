@@ -360,36 +360,36 @@ export default{
 			}
 			if(errors == false){
 				this.isSubmitting = true;
-				// if(this.marketoForm){
-				// 	let theDate = new Date();
-				// 	let dateFormat = theDate.toLocaleDateString("en-UK",{ month: '2-digit' }) +"/"+ theDate.toLocaleDateString("en-UK",{ day: '2-digit' }) +"/"+ theDate.toLocaleDateString("en-UK",{ year: 'numeric' });
-				// 	let vals = {
-				// 		Email: this.email,
-				// 		FirstName: this.fname,
-				// 		LastName: this.sname,
-				// 		Phone: this.phone,
-				// 		personCompanyInput: this.company,
-				// 		Title: this.title,
-				// 		Country: this.country,
-				// 		State: this.state,
-				// 		pMCFComment: JSON.stringify(this.result),
-				// 		pMCFDeliveryCampaignID: 40361,
-				// 		pMCFMemberStatus: 'Registered',
-				// 		explicitConsentDate: dateFormat,
-				// 		explicitConsentSource: "IDC Self-Assessment Campaign",
-				// 		pMCFIamInterestedin: this.interested_in,
-				// 	};
-				// 	console.log(vals);
-				// 	this.marketoForm.loadForm("//app-ab44.marketo.com", "489-OJL-092", 4585, form => {
-				// 		form.vals(vals);
-				// 		form.onSuccess(function(values, followUpUrl) {
-				// 			console.log('success');
-				// 			console.log(formSuccess);
-				// 			return false;
-				// 		});
-				// 		form.submit();
-				// 	});
-				// }
+				if(this.marketoForm){
+					let theDate = new Date();
+					let dateFormat = theDate.toLocaleDateString("en-UK",{ month: '2-digit' }) +"/"+ theDate.toLocaleDateString("en-UK",{ day: '2-digit' }) +"/"+ theDate.toLocaleDateString("en-UK",{ year: 'numeric' });
+					let vals = {
+						Email: this.email,
+						FirstName: this.fname,
+						LastName: this.sname,
+						Phone: this.phone,
+						personCompanyInput: this.company,
+						Title: this.title,
+						Country: this.country,
+						State: this.state,
+						pMCFComment: JSON.stringify(this.result),
+						pMCFDeliveryCampaignID: 40361,
+						pMCFMemberStatus: 'Registered',
+						explicitConsentDate: dateFormat,
+						explicitConsentSource: "IDC Self-Assessment Campaign",
+						pMCFIamInterestedin: this.interested_in,
+					};
+					console.log(vals);
+					this.marketoForm.loadForm("//app-ab44.marketo.com", "489-OJL-092", 4585, form => {
+						form.vals(vals);
+						form.onSuccess(function(values, followUpUrl) {
+							console.log('success');
+							console.log(formSuccess);
+							return false;
+						});
+						form.submit();
+					});
+				}
 				document.getElementById('leadForm').submit();
 			}
 		}

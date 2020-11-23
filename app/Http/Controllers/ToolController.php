@@ -604,6 +604,18 @@ class ToolController extends Controller
         $assessment->save();
         $tracker = false;
 
+        if($assessment->tool_id == 18){ //snow
+            $pdfMonkey = new PdfMonkeyService();
+            $body = $pdfMonkey->generateBody($assessment);
+            $response = $pdfMonkey->generateDocument($body, '3323A7EE-62FE-43CC-B8E9-8D3D08E8098C');
+            if($response && $response->document->status == 'draft'){
+                $assessment->pdf_key = $response->document->id;
+                $assessment->save();
+            }else{
+                dd();
+            }
+        }
+
         //check UTM
         if ($request->session()->has('utm')) {
             $tracker = Tracker::where('tool_id', session('product.id'))
@@ -641,8 +653,8 @@ class ToolController extends Controller
             $inline = config('baseline_'.session('product.id').'.overall.notifications.inline_report');
         }
         $viewData = [
-        'assessment'=>$assessment,
-        'inline'=>$inline,
+            'assessment'=>$assessment,
+            'inline'=>$inline,
         ];
         $data['html'] =  View::make('emails.download', $viewData)->render();
 
@@ -792,17 +804,20 @@ class ToolController extends Controller
         
         if ($assessment->tool_id==session('product.id')) {
             if($assessment->tool_id == 18){ //snow
-                //$pdfMonkey = new PdfMonkeyService();
-                //$body = $pdfMonkey->queueDocument($assessment->pdf_key, $filename);
-                JavaScript::put([
-                    'locale' => session('locale'),
-                    'tool' => $assessment->tool
-                ]);
-                return view('tool.'.session('template').'.downloadreport', [
-                    'pagetitle' => trans($assessment->tool->alias.'.title'),
-                    'utm' => $assessment->code ? $assessment->code : 'default',
-                    'uuid' => $uuid,
-                ]);
+                $pdfMonkey = new PdfMonkeyService();
+                $body = $pdfMonkey->queueDocument($assessment->pdf_key, $filename);
+                if($body){
+                    JavaScript::put([
+                        'locale' => session('locale'),
+                        'tool' => $assessment->tool
+                    ]);
+
+                    return view('tool.'.session('template').'.downloadreport', [
+                        'pagetitle' => trans($assessment->tool->alias.'.title'),
+                        'utm' => $assessment->code ? $assessment->code : 'default',
+                        'uuid' => $uuid,
+                    ]);                    
+                }
             }else{
                 if (!$inline) {
                     $downloadName = str_slug($assessment->id.'-'.session('product.title').'-report', '-').'.pdf';
@@ -820,11 +835,15 @@ class ToolController extends Controller
             abort(404, 'The page you requested does not exist');
         }
     }
-    public function checkForDocument(Request $request, $subdomain, $uuid)
+    public function checkForDocument(Request $request, $uuid)
     {
-        // $pdfMonkey = new PdfMonkeyService();
-        // $body = $pdfMonkey->checkIfDocumentRenderedAndGetUrl($assessment->pdf_key, $filename);
-        return response()->json(['hey' => 'dudu']);
+        $assessment = Assessment::with('tool')->where('uuid', $uuid)->firstOrFail();
+        $pdfMonkey = new PdfMonkeyService();
+        $body = $pdfMonkey->checkIfDocumentRenderedAndGetUrl($assessment->pdf_key);//$assessment->pdf_key
+        return response()->json([
+            'result' => 'success',
+            'body' => $body->document
+        ]);
     }
     public function getReport(Request $request, $subdomain, $uuid)
     {

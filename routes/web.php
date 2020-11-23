@@ -173,15 +173,7 @@ Route::group(['domain' => '{subdomain}.'.env('APP_TLD', 'idcready.net'),'middlew
 
 
 Route::group(['prefix' => 'api'], function () {
-    /*Route::bind('assessment', function ($value) {
-		return App\Assessment::findOrFail($value);
-	});
-	Route::bind('tracker', function ($value) {
-		return App\Tracker::findOrFail($value);
-	});
-	Route::bind('user', function ($value) {
-	m_returnstatus(conn, identifier) App\User::findOrFail($value);
-	});*/
+    
     //API
     Route::get('languages', function ($iviewId) {
         return App\Language::all();
@@ -225,4 +217,6 @@ Route::group(['prefix' => 'api'], function () {
         }
         return $columns;
     });
+
+    Route::get('/download/{uuid}/checkfordocument', 'ToolController@checkForDocument');
 });

@@ -37,15 +37,9 @@
 	    	</div>
 	    </div>
 	</div>
-	<div class="flex-1"  >
-		<div class="flex items-center justify-center">
-			<div class="text-center">
-				<img class="" src="{{ asset('images/loading.gif') }}" class="mx-auto">
-				<h1 class="font-bold leading-tight">Generating your report</h1>
-				<span class="">@{{ message }}</span>
-			</div>
-		</div>
-	</div>
+	<transition name="fade">
+		<router-view></router-view>
+	</transition>
 	<div class="bg-snow-gray pt-6">
 		<div class="max-w-4xl mx-auto mb-4 py-4 px-4 text-snow-dark">
 			<div class="flex justify-start">

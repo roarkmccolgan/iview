@@ -1489,7 +1489,7 @@ export default {
             },
             "structural": {
                 "title": "Organizational Structure",
-                "color": "putple",
+                "color": "purple",
                 "common1": [
                     "Hierarchical and inflexible organizational structures have their merits in some organizations, but today's disruptive market environment places even greater emphasis and reward on fluid, adaptable, and flexible structures.",
                     "Innovation, engagement, productivity, and efficiency flourish in the absence of silos and barriers, while sharing information and responsibilities drive agility. Agile organizations are typically supported by frequent and comprehensive feedback loops, baked into the processes and structures of the organization. These can have an enormous influence on your organization's ability to achieve its goals and stay ahead of the competition."
@@ -1873,6 +1873,13 @@ export default {
                 "errorNumber": "Please enter a valid phone number",
                 "errorAccept": "Please accept the Terms &amp; Conditions"
             },
+            "report": {
+                "generating": "Generating your report",
+                "ready": "Report ready",
+                "regenerate": "Link expired",
+                "readySentence": "Your report should automatically download, if not please <a href=\"{url}\" target=\"_blank\">click here</a><br/><br/><span class=\"text-grey-dark italic\">You may close this window once downloaded</span>",
+                "regenerateSentence": "Please reload the page to renerate, or close the window if you already have your report."
+            },
             "intro": {
                 "banking": [
                     "For the banking sector, agility has become a central feature for injecting speed, flexibility, and customer centricity. It enables banks to accelerate transformation, nurture innovation, and respond to the needs of the market. ",
@@ -1914,6 +1921,8 @@ export default {
                     "The following figure shows you where your organization sits in the context of your industry. The core components of agility — speed and adaptability — enable you to plot your organization and understand the progression and road map for change. "
                 ],
                 "banking": "47% of banking organizations are in the first two stages of agility.",
+                "insurance": "47% of banking organizations are in the first two stages of agility.",
+                "media": "47% of banking organizations are in the first two stages of agility.",
                 "Government": "83% of government organizations are in the first three stages of agility.",
                 "Healthcare": "84% of healthcare organizations are in the first three stages of agility.",
                 "Manufacturing": "76% of manufacturing organizations are in the first stages of agility.",

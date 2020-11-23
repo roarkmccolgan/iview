@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Log;
 
 class PdfMonkeyService
 {
-	public function genrateBody($assessment)
+	public function generateBody($assessment)
 	{
 		$tool = $assessment->tool;
 		$result = $assessment->result;
@@ -33,7 +33,8 @@ class PdfMonkeyService
 	    			'source' => trans($tool->alias.'.overall.source', ['industry' => trans($tool->alias.'.industry.'.$industry)]),
 	    			'para2' => trans($tool->alias.'.overall.'.$result['overall']['rating'])
 	    		],
-	    		'sections' => []
+	    		'sections' => [],
+	    		'recommendations' => trans($tool->alias.'.recommendations')
 	    	];
 	    	foreach(config('baseline_'.$tool->id) as $secKey => $sec) {
 	    		if($secKey !== 'overall'){
@@ -63,12 +64,12 @@ class PdfMonkeyService
     {
     	$headers = [
     		'Authorization' => 'Bearer ' . env('PDFMONKEY_KEY'),        
-    		'Accept'        => 'application/json',
+    		'Content-Type'        => 'application/json',
     	];
 
     	$data = [
     		'document_template_id' => $templateId,
-    		'payload' => $body,
+    		'payload' => json_encode($body),
     		'status' => $status
     	];
 
@@ -83,13 +84,19 @@ class PdfMonkeyService
             Log::info(print_r(json_decode($response->getBody()),true));
             return json_decode($response->getBody());
         } catch (RequestException $e) {
+            Log::info('request');
+            Log::info(print_r(json_encode($data), true));
+            Log::info(print_r($headers, true));
             Log::info(json_encode($body));
             Log::info(print_r($e->getMessage(), true));
-            Log::info('request');
+            return false;
         } catch (ServerException $e) {
             Log::info('server');
+            Log::info(print_r($data, true));
+            Log::info(print_r($headers, true));
             Log::info($e->getMessage());
             Log::info(json_encode($body));
+            return false;
         }
     }
 
@@ -97,7 +104,7 @@ class PdfMonkeyService
     {
     	$headers = [
     		'Authorization' => 'Bearer ' . env('PDFMONKEY_KEY'),        
-    		'Accept'        => 'application/json',
+    		'Content-Type'        => 'application/json',
     	];
 
     	$data = [
@@ -120,13 +127,17 @@ class PdfMonkeyService
             Log::info(print_r(json_decode($response->getBody()),true));
             return json_decode($response->getBody());
         } catch (RequestException $e) {
-            Log::info(json_encode($body));
-            Log::info(print_r($e->getMessage(), true));
             Log::info('request');
+            Log::info(json_encode($data));
+            Log::info($documentId);
+            Log::info(print_r($e->getMessage(), true));
+            return false;
         } catch (ServerException $e) {
             Log::info('server');
+            Log::info(json_encode($data));
+            Log::info($documentId);
             Log::info($e->getMessage());
-            Log::info(json_encode($body));
+            return false;
         }
     }
 
@@ -134,7 +145,7 @@ class PdfMonkeyService
     {
     	$headers = [
     		'Authorization' => 'Bearer ' . env('PDFMONKEY_KEY'),        
-    		'Accept'        => 'application/json',
+    		'Content-Type'        => 'application/json',
     	];
 
         $client = new \GuzzleHttp\Client();
@@ -142,12 +153,8 @@ class PdfMonkeyService
             $response = $client->request('get', env('PDFMONEKY_URL').'/'.$documentId, [
                 'headers' => $headers,
             ]);
-            $responseArray = json_decode($response->getBody());
-            Log::info(print_r($responseArray,true));
-            if($responseArray['document']['status'] == 'success'){
-            	return $responseArray['download_url'];
-            }
-            return false;
+            $responseObject = json_decode($response->getBody());
+            return $responseObject;
         } catch (RequestException $e) {
             Log::info(json_encode($body));
             Log::info(print_r($e->getMessage(), true));

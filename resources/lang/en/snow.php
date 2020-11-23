@@ -163,6 +163,13 @@ return array(
         'errorNumber'=>'Please enter a valid phone number',
         'errorAccept'=>'Please accept the Terms &amp; Conditions',
     ],
+    'report' => [
+        'generating' => 'Generating your report',
+        'ready' => 'Report ready',
+        'regenerate' => 'Link expired',
+        'readySentence' => 'Your report should automatically download, if not please <a href=":url" target="_blank">click here</a><br/><br/><span class="text-grey-dark italic">You may close this window once downloaded</span>',
+        'regenerateSentence' => 'Please reload the page to renerate, or close the window if you already have your report.',
+    ],
     'intro' => [
         'banking' => [
             'For the banking sector, agility has become a central feature for injecting speed, flexibility, and customer centricity. It enables banks to accelerate transformation, nurture innovation, and respond to the needs of the market. ',
@@ -619,5 +626,10 @@ return array(
                 'Push learnings from your established digital design and implementation approach out to ecosystem partners. This should include joint academies and staff exchange programs.'
             ]
         ],
+    ],
+    'recommendations' => [
+        'Establish a formal cross-functional working group, in charge of regularly reviewing strategy and budget. Ensure inputs from wider elements of the organization are included and actively brought into the change process.',
+        'Forecast how future trends can impact the organization and leverage these forecasts to complement past data in the planning sessions. ',
+        'Periodically analyse organizational performance to discover process issues and bottlenecks that need to be solved. Communicate this to the distributed teams to ensure organization-wide buy-in and shared responsibility.'
     ]
 );
