@@ -52,10 +52,11 @@
     "vue-cookies": "^1.7.0",
     "vue-flag-icon": "^1.0.6",
     "vue-i18n": "^7.8.1",
-    "vue-slider-component": "^2.8.16"
+    "vue-slider-component": "^2.8.16",
+    "vue-social-sharing": "^3.0.3"
   },
-    "browserslist": [
-        "defaults",
-        "Chrome >= 13"
-    ]
+  "browserslist": [
+    "defaults",
+    "Chrome >= 13"
+  ]
 }

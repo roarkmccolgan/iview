@@ -81,7 +81,7 @@ return array(
     'finishtxt' => '
         <h2 class="font-snow text-4xl font-normal leading-normal mb-4 text-snow-dark">Congratulations</h2>
         <p class="mb-4 font-bold">Thank you for completing the IDC Agility Assessment Tool, sponsored by ServiceNow. Now you will find out just how agile your business is!</p>
-        <p class="mb-6">Based on the answers you provided, IDC place your business at <strong class="font-bold text-2xl text-snow-light">:stage</strong>. But what does this mean?</p>
+        <p class="mb-6">Based on the answers you provided, IDC place your business at <br/><strong class="font-bold text-lg text-snow-light">:stage</strong>. But what does this mean?</p>
         <p class="mb-4">To immediately receive a personalized report via email with a full analysis of your organization’s agility, benchmark against industry peers and receive personalized recommendations, please complete the registration form.</p>
         <p class="mb-4">We will treat your information with the upmost respect, and we look forward to sharing useful insights with you!</p>
         <p class="mb-4">
@@ -118,9 +118,9 @@ return array(
         'link_inline' => 'View Report in your browser',
         'extra' => '
             Feel free to share this with other departments of your organization and with you customers and partners. You can always invite them to fill in the assessment and compare answers.<br/><br/>
-            <a href="'.url('/').'">'.url('/').'</a><br/>
+            <a href="'.url('/').'">'.url('/').'</a><br/><br/>
             This assessment has been sponsored by ServiceNow.<br/>
-            To know more about how ServiceNow can support you in your Agility journey to drive positive outcomes for customers, employees and shareholders, please visit <a href="https://www.servicenow.com/new.html">https://www.servicenow.com/new.html</a><br/>
+            To know more about how ServiceNow can support you in your Agility journey to drive positive outcomes for customers, employees and shareholders, please visit <a href="https://www.servicenow.com/new.html">https://www.servicenow.com/new.html</a><br/><br/>
         ',
         'regards' => 'Regards',
         'team' => 'The IDC Team'
@@ -213,13 +213,14 @@ return array(
         'para1' => [
             'The following figure shows you where your organization sits in the context of your industry. The core components of agility — speed and adaptability — enable you to plot your organization and understand the progression and road map for change. '
         ],
-        'banking' => '47% of banking organizations are in the first two stages of agility.',
-        'insurance' => '47% of banking organizations are in the first two stages of agility.',
-        'media' => '47% of banking organizations are in the first two stages of agility.',
-        'Government' => '83% of government organizations are in the first three stages of agility.',
-        'Healthcare' => '84% of healthcare organizations are in the first three stages of agility.',
-        'Manufacturing' => '76% of manufacturing organizations are in the first stages of agility.',
-        'Telco' => '79% of telcos are in the first three stages of agility.',
+        'banking' => '24% of banking organizations are in the advanced stages of agility.',
+        'insurance' => '30% of insurance organizations are in the advanced stages of agility.',
+        'media' => '20% of media organizations are in the advanced stages of agility',
+        'government' => '18% of government organizations are in the advance stages of agility.',
+        'healthcare' => '16% of healthcare organizations are in the advanced stages of agility.',
+        'process_manufacturing' => '24% of manufacturing organizations are in the advanced stages of agility.',
+        'discrete_manufacturing' => '24% of manufacturing organizations are in the advanced stages of agility.',
+        'telecommunications' => '21% of telecoms organizations are in the advanced stages of agility',
         'source' => 'IDC Agility Assessment Benchmark for :industry Industry Europe',
         'stage1' => [
             'Organizations at this stage in their agility journey are fixed in their structure, strategy, and budgeting cycles. Typically, leadership does not place enough emphasis on creating an agile culture and must do more to promote organizationwide collaboration. Processes are yet to be fully standardized and documented, preventing some departments from innovating at scale. ',

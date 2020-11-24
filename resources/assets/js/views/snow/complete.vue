@@ -163,29 +163,17 @@
 										<p class="text-red text-xs italic" v-show="errors.interested_in" v-html="$t('snow.leadgen.errorinterested_in')"></p>
 									</div>
 								</div>
-								<div class="mb-6 w-full p-2 bg-white leading-tight">
-									<p v-html="$t('snow.marketing')"></p>
-									<label class="my-2" :class="[marketingPhone ? activeClass : normalClass, errors.marketingPhone ? 'border-red bg-red-lightest' : '']" tabindex="0" @keyup.space="$event.target.click()" >
-										<input class="hidden" type="checkbox" id="marketingPhone" name="extra[marketing_phone]" v-model="marketingPhone">
+								<div class="mb-6 w-full">
+									<label class="my-2" :class="[marketing ? activeClass : normalClass, errors.marketing ? 'border-red bg-red-lightest' : '']" tabindex="0" @keyup.space="$event.target.click()" @click="checkMarketing">
+										<input class="hidden" type="checkbox" id="marketing" name="extra[marketing]" v-model="marketing">
 										<div class="flex items-baseline">
 											<div class="mr-2 text-2xl sm:text-xl">
-												<font-awesome-icon :icon="icons.faSquare" v-if="!marketingPhone" />
+												<font-awesome-icon :icon="icons.faSquare" v-if="!marketing" />
 												<font-awesome-icon :icon="icons.faCheckSquare" v-else />
 											</div>
-											<div class="flex-grow" v-html="$t('snow.marketing-phone')"></div>
+											<div class="flex-grow" v-html="$t('snow.marketing')"></div>
 										</div>
-										<p class="text-red text-xs italic" v-show="errors.marketingPhone" v-html="$t('general.errorMarketingPhone')"></p>
-									</label>
-									<label class="my-2" :class="[marketingEmail ? activeClass : normalClass, errors.marketingEmail ? 'border-red bg-red-lightest' : '']" tabindex="0" @keyup.space="$event.target.click()" >
-										<input class="hidden" type="checkbox" id="marketingEmail" name="extra[marketing_email]" v-model="marketingEmail">
-										<div class="flex items-baseline">
-											<div class="mr-2 text-2xl sm:text-xl">
-												<font-awesome-icon :icon="icons.faSquare" v-if="!marketingEmail" />
-												<font-awesome-icon :icon="icons.faCheckSquare" v-else />
-											</div>
-											<div class="flex-grow" v-html="$t('snow.marketing-email')"></div>
-										</div>
-										<p class="text-red text-xs italic" v-show="errors.marketingEmail" v-html="$t('general.errorMarketingEmail')"></p>
+										<p class="text-red text-xs italic" v-show="errors.marketing" v-html="$t('general.errorMarketing')"></p>
 									</label>
 								</div>
 								<div class="mb-6 w-full">
@@ -382,11 +370,11 @@ export default{
 					console.log(vals);
 					this.marketoForm.loadForm("//app-ab44.marketo.com", "489-OJL-092", 4585, form => {
 						form.vals(vals);
-						form.onSuccess(function(values, followUpUrl) {
-							console.log('success');
-							console.log(formSuccess);
-							return false;
-						});
+						// form.onSuccess(function(values, followUpUrl) {
+						// 	console.log('success');
+						// 	console.log(formSuccess);
+						// 	return false;
+						// });
 						form.submit();
 					});
 				}

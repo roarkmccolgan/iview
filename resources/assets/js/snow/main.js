@@ -7,6 +7,7 @@ import VueAnalytics from 'vue-analytics';
 
 import FontAwesomeIcon from '@fortawesome/vue-fontawesome';
 import faUndo from '@fortawesome/fontawesome-pro-regular/faUndo';
+import { ShareNetwork } from '../../../../node_modules/vue-social-sharing/dist/vue-social-sharing'
 
 import { VPopover, VClosePopover } from 'v-tooltip'
 Vue.directive('close-popover', VClosePopover)
@@ -34,7 +35,8 @@ new Vue({
 		}
 	},
 	components:{
-		FontAwesomeIcon
+		FontAwesomeIcon,
+		ShareNetwork
 	},
 	mounted: function(){
 		console.log(location.href);

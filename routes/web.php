@@ -169,6 +169,9 @@ Route::group(['domain' => '{subdomain}.'.env('APP_TLD', 'idcready.net'),'middlew
         Route::post('/complete', 'ToolController@postComplete')->middleware(['routebyurl']);
         Route::get('/download', 'ToolController@fakeDownload');
     });
+    Route::group(['prefix' => 'questions'], function () {
+        Route::get('/{num}', 'ToolController@getPage');
+    });
 });
 
 

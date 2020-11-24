@@ -22,7 +22,7 @@
 					</slot>
 					</transition-group>
 				</div>
-				<a href="#" class="inline-block bg-snow-dark text-white mt-6 py-4 px-6 no-underline" @click="$emit('next-step')">Now let's assess your '{{ section }}' status</a>
+				<a href="#" class="inline-block bg-snow-dark text-white mt-6 py-4 px-6 no-underline" @click.prevent="$emit('next-step')">Now let's assess your '{{ section }}' status</a>
 			</div>
 			
 		</div>
