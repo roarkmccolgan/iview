@@ -29,7 +29,7 @@
 						<span class="inline-block mr-2" v-else>{{ scores.val }};</span>
 						<span class="inline-block mr-2">{{ scores.val }}</span>
 					</div-->
-					<form id="mktoForm_4585" class=""></form>
+					<form id="mktoForm_4585" class="hidden"></form>
 				</div>
 				<div class="w-full sm:w-1/2">
 					<div class="sm:ml-8">
@@ -370,11 +370,11 @@ export default{
 					console.log(vals);
 					this.marketoForm.loadForm("//app-ab44.marketo.com", "489-OJL-092", 4585, form => {
 						form.vals(vals);
-						// form.onSuccess(function(values, followUpUrl) {
-						// 	console.log('success');
-						// 	console.log(formSuccess);
-						// 	return false;
-						// });
+						form.onSuccess(function(values, followUpUrl) {
+							console.log('success');
+							console.log('formSuccess');
+							return false;
+						});
 						form.submit();
 					});
 				}
