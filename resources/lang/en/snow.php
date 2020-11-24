@@ -106,7 +106,7 @@ return array(
             </a>
             <a href="https://www.servicenow.com/now-platform/latest-release.html" target="_blank" class="no-underline block w-full sm:flex-1 border p-2 rounded mb-2 sm:mb-0 shadow">
                 <img src=":tool_url/images/tools/18/new_link.jpg" alt="" class="w-full mb-2" />
-                <h5 class="text-lg text-snow-dark mb-2">Latest Now platoform innovations</h5>
+                <h5 class="text-lg text-snow-dark mb-2">Latest Now platform innovations</h5>
             </a>
         </div>',
     'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @ntt. Interested? ',// http://bit.ly/2gslXEh
