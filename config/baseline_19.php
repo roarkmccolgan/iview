@@ -543,6 +543,7 @@ return [
                 'col' => 12,
             ]
         ],
+        'pdf_monkey_template' => 'B46BEA66-9178-40CD-AE67-57519B86D0A6'
     ],
     'automate' => [
         'baseline' => 8.90,

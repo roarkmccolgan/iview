@@ -14,9 +14,9 @@ class PdfMonkeyService
 		$result = $assessment->result;
 		$extra = $assessment->extra;
 		$quiz = $assessment->quiz;
-		$industry = $extra['industry'];
 
 	    if($assessment->tool_id == 18) { //snow
+    		$industry = $extra['industry'];
 	    	$body = [
 	    		'url' => url('/images/tools/18/'), 
 	    		'cover' => url('/images/tools/18/report_cover.png'), 
@@ -58,6 +58,43 @@ class PdfMonkeyService
 	    		}
 	    	}
 	    }
+        if($assessment->tool_id == 19) { //redhat
+            $body = [
+                'url' => url('/images/tools/19/'), 
+                'cover' => url('/images/tools/19/report_cover.png'), 
+                'width' => [
+                    'stage1' => 15,
+                    'stage2' => 45,
+                    'stage3' => 65
+                ],
+                'overall' => [
+                    'result' => $result['overall']['rating'],
+                    'stage' => trans($tool->alias.'.'.$result['overall']['rating']),
+                    'para1' => trans($tool->alias.'.overall.'.$result['overall']['rating'].'.para1'),
+                    'para2' => trans($tool->alias.'.overall.'.$result['overall']['rating'].'.para2'),
+                    'recommendations' => trans($tool->alias.'.overall.'.$result['overall']['rating'].'.recommendations')
+                ],
+                'sections' => [],
+                'recommendations' => trans($tool->alias.'.recommendations')
+            ];
+            foreach(config('baseline_'.$tool->id) as $secKey => $sec) {
+                if($secKey !== 'overall'){
+                    $rating = $result[$secKey]['rating'];
+                    $section = [
+                        'title' => trans($tool->alias.'.'.$secKey.'.title'),
+                        'color' => trans($tool->alias.'.'.$secKey.'.color'),
+                        'result' => $rating,
+                        'graph' => $secKey.'_'.$rating.'.svg',
+                        'stage' => trans($tool->alias.'.'.$rating),
+                        'top' => trans($tool->alias.'.'.$secKey.'.top'),
+                        'para1' => trans($tool->alias.'.'.$secKey.'.para1'),
+                        'para2' => trans($tool->alias.'.'.$secKey.'.'.$rating.'.para2'),
+                        'recommendations' => trans($tool->alias.'.'.$secKey.'.'.$rating.'.recommendations')
+                    ];
+                    $body['sections'][] = $section;
+                }
+            }
+        }
 	    return $body;
 	}
     public function generateDocument($body, $templateId, $status = 'draft')

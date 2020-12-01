@@ -218,6 +218,7 @@ class ToolController extends Controller
                     $item['questions'][$qKey]['nuggets'] = isset($section['nuggets']) ? $section['nuggets'] : '';
                     $item['questions'][$qKey]['intermission'] = isset($section['intermission']) ? $section['intermission'] : '';
                     $item['questions'][$qKey]['sectionintro'] = isset($section['sectionintro']) ? $section['sectionintro'] : '';
+                    $item['questions'][$qKey]['sectionintrobutton'] = isset($section['sectionintrobutton']) ? $section['sectionintrobutton'] : '';
                     $item['questions'][$qKey]['complete'] = isset($section['complete']) ? $section['complete'] : '';
                     $item['questions'][$qKey]['title'] = isset($section['title']) ? $section['title'] : '';
                     $item['questions'][$qKey]['class'] = isset($section['class']) ? $section['class'] : '';
@@ -604,10 +605,11 @@ class ToolController extends Controller
         $assessment->save();
         $tracker = false;
 
-        if($assessment->tool_id == 18){ //snow
+        if($assessment->tool_id == 18 || $assessment->tool_id == 19){ //snow // redhat
             $pdfMonkey = new PdfMonkeyService();
             $body = $pdfMonkey->generateBody($assessment);
-            $response = $pdfMonkey->generateDocument($body, '3323A7EE-62FE-43CC-B8E9-8D3D08E8098C');
+            //dd($body);
+            $response = $pdfMonkey->generateDocument($body, $this->baseline['overall']['pdf_monkey_template']);
             if($response && $response->document->status == 'draft'){
                 $assessment->pdf_key = $response->document->id;
                 $assessment->save();

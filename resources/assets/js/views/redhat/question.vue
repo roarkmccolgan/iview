@@ -1,6 +1,6 @@
 <template>
 	<div class="flex-grow">
-		<intro-component :section="currentQuestion.section | toTitle" v-on:next-step="closeIntro()" :info="currentQuestion.sectionintro" v-if="showIntro"></intro-component>
+		<intro-component :section="currentQuestion.section | toTitle" :title="currentQuestion.title" :button-title="currentQuestion.sectionintrobutton" v-on:next-step="closeIntro()" :info="currentQuestion.sectionintro" v-if="showIntro"></intro-component>
 		
 		<div class="flex flex-col" v-else>
 			<div class="container mx-auto py-2" v-if="showIntermission">
@@ -197,6 +197,11 @@ export default{
 			event.target.blur();
 			if(this.saving)
 				return;
+			var currentLength = this.answer.length;
+			if(currentLength < this.minimum){
+				this.showError('minmax', this.lang.multimaxierror);
+				return;
+			}
 			this.questions['q'+this.$route.params.question].selected = this.answer;
 			var nextQ = Number(this.$route.params.question)+1;
 			this.showNext = false;
@@ -331,7 +336,6 @@ export default{
 						}
 					}
 				}else if(this.currentQuestion.type === 'checkbox'){
-					var currentLength = this.answer.length;
 					var exists = false;
 					for (var i = this.answer.length - 1; i >= 0; i--) {
 						if(this.answer[i].name == selected.name && this.answer[i].label == selected.label){
@@ -344,16 +348,19 @@ export default{
 						if(this.answer.length==0){
 							this.showNext = false;
 						}
+						var currentLength = this.answer.length;
 						if(currentLength <= this.maximum && currentLength >= this.minimum){
 							this.error = false;
 						}
 					}else{
 						console.log('not exists');
-						if(currentLength==0 || (currentLength+1 <= this.maximum && currentLength+1 >= this.minimum)) {
+						var currentLength = this.answer.length;
+						if(currentLength==0 || currentLength+1 <= this.maximum) {
 							this.answer.push(selected);
 							this.showNext = true;
 							this.error = false;
 						}else{
+							console.log(currentLength+1);
 							this.showError('minmax', this.lang.multimaxierror);
 						}
 					}

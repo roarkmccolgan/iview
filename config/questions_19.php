@@ -20,8 +20,68 @@ return [
                 'questions' => [
                     'q1'=>[
                         'type'=>'checkbox',
-                        'question'=>'What is the role of software development and delivery capability in supporting the overall direction of your organization and its rollout of digital products and services? (Select all that apply)',
+                        'ignore' => true,
+                        'question'=>'Which of the following will be your organization\'s top 3 priorities for the next 12 months?',
                         'name'=> 1,
+                        'min' => 3,
+                        'max' => 3,
+                        'options'=>[
+                            [
+                                'label'=>'Business operations resiliency programs',
+                                'value'=>1,
+                                'checked'=>false,
+                            ],
+                            [
+                                'label'=>'Digital trust programs',
+                                'value'=>2,
+                                'checked'=>false,
+                            ],
+                            [
+                                'label'=>'Data programs to gain insights into our business operations, products and/or ecosystems',
+                                'value'=>4,
+                                'checked'=>false,
+                            ],
+                            [
+                                'label'=>'Software development capabilities to drive product/experience innovation',
+                                'value'=>3,
+                                'checked'=>false,
+                            ],
+                            [
+                                'label'=>'Workplace transformation programs',
+                                'value'=>3,
+                                'checked'=>false,
+                            ],
+                            [
+                                'label'=>'Digital infrastructure resiliency programs',
+                                'value'=>3,
+                                'checked'=>false,
+                            ],
+                            [
+                                'label'=>'Connectivity programs to connect workforce, operations and partners',
+                                'value'=>3,
+                                'checked'=>false,
+                            ],
+                            [
+                                'label'=>'Participation in new digital ecosystems',
+                                'value'=>3,
+                                'checked'=>false,
+                            ],
+                            [
+                                'label'=>'Customer experience programs',
+                                'value'=>3,
+                                'checked'=>false,
+                            ],
+                        ]
+                    ]
+                ]
+            ],
+            'page2' => [
+                'title' => 'General',
+                'questions' => [
+                    'q2'=>[
+                        'type'=>'checkbox',
+                        'question'=>'What is the role of software development and delivery capability in supporting the overall direction of your organization and its rollout of digital products and services? (Select all that apply)',
+                        'name'=> 2,
                         'options'=>[
                             [
                                 'label'=>'To re-engineer software processes related to core products (e.g., core banking, core manufacturing, core public sector,',
@@ -47,13 +107,13 @@ return [
                     ]
                 ]
             ],
-            'page2' => [
+            'page3' => [
                 'title' => 'General',
                 'questions' => [
-                    'q2'=>[
+                    'q3'=>[
                         'type'=>'button',
                         'question'=>'What best describes your organization\'s current approach to software development and delivery and how do you expect this to change in two years?',
-                        'name'=> 2,
+                        'name'=> 3,
                         'options'=>[
                             [
                                 'label'=>'Pockets of software dev activity as and when needed — no formal structure or approach (ad-hoc)',
@@ -84,16 +144,18 @@ return [
                     ]
                 ]
             ],
-            'page3' => [
+            'page4' => [
                 'title' => 'General',
                 'questions' => [
-                    'q3'=>[
+                    'q4'=>[
                         'type'=>'checkbox',
-                        'question'=>'What is the role of software development and delivery capability in supporting the overall direction of your organization and its rollout of digital products and services? (Select all that apply)',
-                        'name'=> 3,
+                        'question'=>'How does your company plan to approach software development and delivery to drive digital innovation? (select 2)',
+                        'min' => 2,
+                        'max' => 2,
+                        'name'=> 4,
                         'options'=>[
                             [
-                                'label'=>'Expand internal development capabilities',
+                                'label'=>'Expand internal development capabilities ',
                                 'value'=>2,
                                 'checked'=>false,
                             ],
@@ -115,40 +177,14 @@ return [
                         ]
                     ]
                 ]
-            ],
-            'page4' => [
-                'title' => 'General',
-                'questions' => [
-                    'q4'=>[
-                        'type'=>'opposingslider',
-                        'optionLabels' => [
-                            'Private Cloud',
-                            'Public Cloud',
-                        ],
-                        'question'=>'Thinking about your company\'s cloud native app development and deployment activities, what percentage are done on public cloud platforms versus private cloud platforms?',
-                        'name'=> 4,
-                        'options'=>[
-                            [
-                                'type' => 'percentage',
-                                'label'=>'Private Cloud',
-                                'name'=> 4.1,
-                            ],
-                            [
-                                'type' => 'percentage',
-                                'label'=>'Public Cloud',
-                                'name'=> 4.2,
-                            ],
-                        ]
-                    ]
-                ]
             ]
         ]
     ],
     'automate' => [
-        'title' => 'Automate',
+        'title' => 'Automation',
         'description' => '
             <p class="">
-                At the core of digital innovation success is the need for automation to drive velocity, consistency, and quality at scale. However, manual processes remain the clear bottleneck in app delivery. This makes automation the top priority to support organizational ambitions to deliver software-based digital innovation — not only to deliver apps, including cloud-native apps, via hybrid and multicloud environments, but also to accelerate plans for ERP cloud migration via intelligent applications, connectors, and platforms. Organizations must look at how they unite, integrate, and measure end-to-end activities and performance across the entire app delivery pipeline.
+                At the core of digital innovation success is the need for automation to drive velocity, consistency, and quality at scale. However, manual processes remain the clear bottleneck in app delivery. This makes automation the top priority to support digital innovation ambitions.
             </p>
             ',
         'nuggets' => [
@@ -158,7 +194,7 @@ return [
         ],
         'sectionintro' => [
             '
-                <p class="w-full mb-4">At the core of digital innovation success is the need for automation to drive velocity, consistency, and quality at scale. However, manual processes remain the clear bottleneck in app delivery. This makes automation the top priority to support organizational ambitions to deliver software-based digital innovation — not only to deliver apps, including cloud-native apps, via hybrid and multicloud environments, but also to accelerate plans for ERP cloud migration via intelligent applications, connectors, and platforms. Organizations must look at how they unite, integrate, and measure end-to-end activities and performance across the entire app delivery pipeline.</p>
+                <p class="w-full mb-4">At the core of digital innovation success is the need for automation to drive velocity, consistency, and quality at scale. However, manual processes remain the clear bottleneck in app delivery. This makes automation the top priority to support digital innovation ambitions.</p>
             ',
             '
                 <div class="flex flex-wrap items-center">
@@ -167,11 +203,9 @@ return [
                     </h1>
                     <img src="/images/tools/19/automate_intro_data_point.svg" class="w-full sm:w-1/2 sm:ml-8" />
                 </div>
-            ',
-            '
-                <p class="w-full my-4">How are you leveraging automation in your digital innovation journey?</p>
             '
         ],
+        'sectionintrobutton' => 'How are you leveraging automation in your digital innovation journey?',
         'intermission' => [],
         'class' => 'sec2',
         'shuffle' => false,
@@ -179,7 +213,7 @@ return [
         'complete' => false,
         'pages' => [
             'page1' => [
-                'title' => 'Automate',
+                'title' => 'Automation',
                 'questions' => [
                     'q5'=>[
                         'type'=>'button',
@@ -211,7 +245,7 @@ return [
                 ]
             ],
             'page2' => [
-                'title' => 'Automate',
+                'title' => 'Automation',
                 'questions' => [
                     'q6'=>[
                         'type'=>'button',
@@ -253,7 +287,7 @@ return [
                 ]
             ],
             'page3' => [
-                'title' => 'Automate',
+                'title' => 'Automation',
                 'questions' => [
                     'q7'=>[
                         'type'=>'button',
@@ -288,6 +322,53 @@ return [
                         ]
                     ]
                 ]
+            ],
+            'page4' => [
+                'title' => 'Automation',
+                'questions' => [
+                    'q8'=>[
+                        'type'=>'slider',
+                        'question'=>'Please estimate the percentage of your application estate that is  developed and deployed using a DevOps methodology.',
+                        'name'=> 8,
+                        'options'=>[
+                            [
+                                'label'=>'0%',
+                                'value'=>0,
+                                'checked'=>false,
+                            ],
+                            [
+                                'label'=>'1% - 20%',
+                                'value'=>1,
+                                'checked'=>false,
+                            ],
+                            [
+                                'label'=>'21% - 30%',
+                                'value'=>2,
+                                'checked'=>false,
+                            ],
+                            [
+                                'label'=>'31% - 40%',
+                                'value'=>3,
+                                'checked'=>false,
+                            ],
+                            [
+                                'label'=>'41% - 50%',
+                                'value'=>5,
+                                'checked'=>false,
+                            ],
+                            [
+                                'label'=>'51% - 75%',
+                                'value'=>7,
+                                'checked'=>false,
+                            ],
+                            [
+                                'label'=>'76% - 100%',
+                                'value'=>9,
+                                'checked'=>false,
+                            ]
+                        ]
+                    ]
+                ]
             ]
         ]
     ],
@@ -295,7 +376,7 @@ return [
         'title' => 'Hybrid Cloud',
         'description' => '
             <p class="mb-2">
-                Hybrid cloud enables organizations to maximize the return on their investments in existing IT infrastructure and ensure that organizations can seamlessly connect complex and heterogeneous estates of data, applications, and tooling. Hybrid cloud also injects flexibility into the digital infrastructure via partial or total cloudification of IT assets that would otherwise prove hard to modernize. Hybridizing the IT estate also helps organizations to maintain their digital autonomy and avoid becoming dependent on one vendor or another. 
+                Hybrid cloud enables organizations to maximize the return on their investments in existing IT infrastructure and ensure that organizations can seamlessly connect complex and heterogeneous estates of data, applications, and tooling.
             </p>
         ',
         'background' => false,
@@ -306,19 +387,17 @@ return [
         'sectionintro' => [
             '
                 <p class="w-full mb-4">
-                    Hybrid cloud maximizes return on IT investments, increases flexibility in the IT estate, and ensures cloud autonomy.
+                    Hybrid cloud enables organizations to maximize the return on their investments in existing IT infrastructure and ensure that organizations can seamlessly connect complex and heterogeneous estates of data, applications, and tooling.
                 </p>
             ',
             '
                 <div class="flex flex-wrap items-center">
-                    <h1 class="flex-1 font-light text-2xl sm:text-3xl leading-tight mb-2 p-4 bg-grey-lighter">DevOps methodologies are becoming the de facto standard for application development and deployment.</h1>
+                    <h1 class="flex-1 font-light text-2xl sm:text-3xl leading-tight mb-2 p-4 bg-grey-lighter">Hybrid cloud maximizes return on IT investments, increases flexibility in the IT estate, and ensures cloud autonomy.</h1>
                     <img src="/images/tools/19/hybrid_intro_data_point.svg" class="w-full sm:w-1/2 sm:ml-8" />
                 </div>
-            ',
-            '
-                <p class="w-full my-4">Where is your organization on the cloud journey?</p>
             '
         ],
+        'sectionintrobutton' => 'Where is your organization on the cloud journey?',
         'intermission' => [],
         'class' => 'sec2',
         'shuffle' => false,
@@ -328,10 +407,10 @@ return [
             'page1' => [
                 'title' => 'Hybrid Cloud',
                 'questions' => [
-                    'q8'=>[
+                    'q9'=>[
                         'type'=>'button',
                         'question'=>'In which phase of the cloud journey are you?',
-                        'name'=> 8,
+                        'name'=> 9,
                         'options'=>[
                             [
                                 'label'=>'single cloud',
@@ -355,10 +434,10 @@ return [
             'page2' => [
                 'title' => 'Hybrid Cloud',
                 'questions' => [
-                    'q9'=>[
+                    'q10'=>[
                         'type'=>'button',
                         'question'=>'Which option best describes how IT currently delivers your workloads?',
-                        'name'=> 9,
+                        'name'=> 10,
                         'options'=>[
                             [
                                 'label'=>'On-premises/Traditional IT',
@@ -392,10 +471,10 @@ return [
             'page3' => [
                 'title' => 'Hybrid Cloud',
                 'questions' => [
-                    'q10'=>[
+                    'q11'=>[
                         'type'=>'button',
                         'question'=>'Which of the following statements best describes your organization’s hybrid-cloud automation and orchestration processes?',
-                        'name'=> 9,
+                        'name'=> 11,
                         'options'=>[
                             [
                                 'label'=>'Individual teams reliant on limited provisioning capabilities',
@@ -426,13 +505,51 @@ return [
                     ]
                 ]
             ],
+            'page4' => [
+                'title' => 'Hybrid Cloud',
+                'questions' => [
+                    'q12'=>[
+                        'type'=>'button',
+                        'ignore' => true,
+                        'question'=>'What\'s most challenging when executing in a hybrid cloud environment?',
+                        'name'=> 12,
+                        'options'=>[
+                            [
+                                'label'=>'Data protection',
+                                'value'=>1,
+                                'checked'=>false,
+                            ],
+                            [
+                                'label'=>'Security and compliance',
+                                'value'=>2,
+                                'checked'=>false,
+                            ],
+                            [
+                                'label'=>'Integration and orchestration',
+                                'value'=>3,
+                                'checked'=>false,
+                            ],
+                            [
+                                'label'=>'Workload location optimization',
+                                'value'=>4,
+                                'checked'=>false,
+                            ],
+                            [
+                                'label'=>'Workload migration and repatriation',
+                                'value'=>5,
+                                'checked'=>false,
+                            ]
+                        ]
+                    ]
+                ]
+            ]
         ]
     ],
     'native' => [
         'title' => 'Cloud Native',
         'description' => '
             <p class="mb-2">
-                Cloud native changes the cadence at which digital functionality is built and released, altering the competitive context in which organizations compete for customers and/or contribute value-add within networked ecosystems. Because of its intrinsic characteristics, cloud native provides the strategic and tactical background for organizations to rethink the format of their application delivery value chains, including organizational design, application infrastructure assets, and delivery culture
+                Cloud native changes the cadence at which digital functionality is built and released, altering the competitive context in which organizations compete for customers and/or contribute value-add within networked ecosystems.
             </p>
         ',
         'background' => false,
@@ -443,7 +560,7 @@ return [
         'sectionintro' => [
             '
                 <p class="w-full mb-4">
-                    Cloud native changes the cadence at which digital functionality is built and released, altering the competitive context in which organizations compete for customers and/or contribute value-add within networked ecosystems. Because of its intrinsic characteristics, cloud native provides the strategic and tactical background for organizations to rethink the format of their application delivery value chains, including organizational design, application infrastructure assets, and delivery culture.
+                    Cloud native changes the cadence at which digital functionality is built and released, altering the competitive context in which organizations compete for customers and/or contribute value-add within networked ecosystems.
                 </p>
             ',
             '
@@ -451,11 +568,9 @@ return [
                     <h1 class="flex-1 font-light text-2xl sm:text-3xl leading-tight mb-2 p-4 bg-grey-lighter">Cloud native shifts requirements to compete in a hyperagile, digital world.</h1>
                     <img src="/images/tools/19/native_intro_data_point.svg" class="w-full sm:w-1/2 sm:ml-8" />
                 </div>
-            ',
-            '
-                <p class="w-full my-4">How is cloud-native making YOU more agile?</p>
             '
         ],
+        'sectionintrobutton' => 'How is cloud native making you more agile?',
         'intermission' => [],
         'class' => 'sec3',
         'shuffle' => false,
@@ -465,13 +580,110 @@ return [
             'page1' => [
                 'title' => 'Cloud Native',
                 'questions' => [
-                    'q11'=>[
-                        'type'=>'slider',
-                        'question'=>'Relative to your total estate of custom-built applications running in a cloud environment, please estimate the percentage of apps built/deployed using cloud native development.',
-                        'name'=> 11,
+                    'q13'=>[
+                        'type'=>'button',
+                        'question'=>'What best describes/will describe the scale at which your organization does (or plans to do) cloud native app development?',
+                        'name'=> 13,
                         'options'=>[
                             [
-                                'label'=>'0% - 4%',
+                                'label'=>'Only in the innovation Incubator',
+                                'value'=>1,
+                                'checked'=>false,
+                            ],
+                            [
+                                'label'=>'There are siloed initiatives across the organization taking place in isolation',
+                                'value'=>2,
+                                'checked'=>false,
+                            ],
+                            [
+                                'label'=>'There are integrated initiatives across parts of the organization',
+                                'value'=>4,
+                                'checked'=>false,
+                            ],
+                            [
+                                'label'=>'There\'s a well governed and joined up approach across the entire organization',
+                                'value'=>5,
+                                'checked'=>false,
+                            ]
+                        ]
+                    ]
+                ]
+            ],
+            'page2' => [
+                'title' => 'Cloud Native',
+                'questions' => [
+                    'q14'=>[
+                        'type'=>'checkbox',
+                        'ignore' => true,
+                        'question'=>'What are the biggest challenges with regards to adoption of cloud-native app development? [Rank the top 3]',
+                        'min' => 3,
+                        'max' => 3,
+                        'name'=> 14,
+                        'options'=>[
+                            [
+                                'label'=>'Getting the framework architecture right',
+                                'value'=>0,
+                                'checked'=>false,
+                            ],
+                            [
+                                'label'=>'Changing the organizational model',
+                                'value'=>0,
+                                'checked'=>false,
+                            ],
+                            [
+                                'label'=>'Ensuring the right level of governance',
+                                'value'=>0,
+                                'checked'=>false,
+                            ],
+                            [
+                                'label'=>'Enforcing security and operations observability',
+                                'value'=>0,
+                                'checked'=>false,
+                            ],
+                            [
+                                'label'=>'Integration within the existing landscape',
+                                'value'=>0,
+                                'checked'=>false,
+                            ],
+                            [
+                                'label'=>'Perceived complexity and business disruption',
+                                'value'=>0,
+                                'checked'=>false,
+                            ],
+                            [
+                                'label'=>'Cost',
+                                'value'=>0,
+                                'checked'=>false,
+                            ],
+                            [
+                                'label'=>'Lack of adequate skills',
+                                'value'=>0,
+                                'checked'=>false,
+                            ],
+                            [
+                                'label'=>'Vision and understanding the benefits',
+                                'value'=>0,
+                                'checked'=>false,
+                            ],
+                            [
+                                'label'=>'1 None of the above',
+                                'value'=>0,
+                                'checked'=>false,
+                            ],
+                        ]
+                    ]
+                ]
+            ],
+            'page3' => [
+                'title' => 'Cloud Native',
+                'questions' => [
+                    'q15'=>[
+                        'type'=>'slider',
+                        'question'=>'Relative to your total estate of custom-built applications running in a cloud environment, please estimate the percentage of apps built/deployed using cloud native development.',
+                        'name'=> 15,
+                        'options'=>[
+                            [
+                                'label'=>'0%-4%',
                                 'value'=>0,
                                 'checked'=>false,
                             ],
@@ -509,62 +721,16 @@ return [
                     ]
                 ]
             ],
-            'page2' => [
+            'page4' => [
                 'title' => 'Cloud Native',
                 'questions' => [
-                    'q12'=>[
-                        'type'=>'slider',
-                        'question'=>'Please estimate the percentage of your application estate that is  developed and deployed using a DevOps methodology.',
-                        'name'=> 12,
-                        'options'=>[
-                            [
-                                'label'=>'0% (None)',
-                                'value'=>0,
-                                'checked'=>false,
-                            ],
-                            [
-                                'label'=>'1 – 20%',
-                                'value'=>1,
-                                'checked'=>false,
-                            ],
-                            [
-                                'label'=>'21% – 30%',
-                                'value'=>2,
-                                'checked'=>false,
-                            ],
-                            [
-                                'label'=>'31% – 40%',
-                                'value'=>3,
-                                'checked'=>false,
-                            ],
-                            [
-                                'label'=>'41% – 50%',
-                                'value'=>5,
-                                'checked'=>false,
-                            ],
-                            [
-                                'label'=>'51% – 75%',
-                                'value'=>7,
-                                'checked'=>false,
-                            ],
-                            [
-                                'label'=>'76% – 100%',
-                                'value'=>9,
-                                'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
-            ],
-            'page3' => [
-                'title' => 'Cloud Native',
-                'questions' => [
-                    'q13'=>[
+                    'q16'=>[
                         'type'=>'checkbox',
-                        'question'=>'Which of the following areas are your top 2 investment priorities to enhance your organization\'s container use? [select up to 3]',
+                        'ignore' => true,
+                        'question'=>'What are the biggest challenges with regards to adoption of cloud-native app development? [Select up to 3]',
                         'min' => 1,
                         'max' => 3,
-                        'name'=> 13,
+                        'name'=> 16,
                         'options'=>[
                             [
                                 'label'=>'CI/CD system adoption',
@@ -607,7 +773,7 @@ return [
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'Other; please specify',
+                                'label'=>'Other',
                                 'value'=>0,
                                 'checked'=>false,
                             ],

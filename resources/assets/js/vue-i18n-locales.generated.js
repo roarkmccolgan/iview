@@ -2996,12 +2996,12 @@ export default {
             "change-langauge": "Change language",
             "download-now": "Download Now",
             "title": "Digital Innovation Assessment",
+            "intro-title": "Welcome to the digital innovation<br/> assessment tool",
             "sub-title": "Evaluating your software development and delivery capabilities",
-            "intro": "\n        Welcome to the \"Digital Innovation\" assessment tool.<br/>\n        The European economy is now digitally driven, making digital dominance and capabilities critical. Now more than ever creating customer value is tied to an organization's ability to develop, deploy, and run high-quality apps or digital products and services at speed.\n    ",
-            "landing-1": "\n        <p class=\"mb-4 px-5\">\n            Every organization must learn to navigate the complexities of designing and mapping out modern app delivery agendas. Learning to operate like a software company is the goal. Let's be clear: moving at the speed of a digital native requires transformation at scale — no easy task. Organizations must work on aligning capabilities to lay the foundation for digital innovation excellence and redesign the app delivery function. \n        </p>\n    ",
-            "landing-2": "\n        To support both operational resiliency and digital response, one in two organizations prioritizes software dev capabilities to drive digital innovation. This represents a shift to a unified and business aligned software dev strategy.\n    ",
-            "landing-3": "\n        Let's evaluate your software development and delivery capabilities.\n    ",
-            "startbut": "Start this self-assessment",
+            "intro": "\n        The European economy is now digitally driven, making digital dominance and capabilities critical. Now more than ever creating customer value is tied to an organization's ability to develop, deploy, and run high-quality apps or digital products and services at speed.\n    ",
+            "landing-1": "\n        To support both operational resiliency and digital response, one in two organizations prioritizes software dev capabilities to drive digital innovation. This represents a shift to a unified and business aligned software dev strategy.\n    ",
+            "landing-2": "\n        Three core pillars underlie digital innovation success and readiness: 1) automation, 2) hybrid cloud strategies and 3) cloud native architectures.\n    ",
+            "startbut": "Learn to operate like a software company",
             "general": {
                 "title": "General"
             },

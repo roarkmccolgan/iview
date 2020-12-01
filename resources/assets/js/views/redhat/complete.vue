@@ -5,7 +5,7 @@
 			<div class="flex flex-wrap justify-center">
 				<div class="w-full sm:w-1/2 relative">
 					<div class="" v-html="$t('redhat.finishtxt', { stage: $t('redhat.'+rating)})"></div>
-					<!-- <div v-for="sec, key in theResult">
+					<div v-for="sec, key in theResult">
 						<div class="font-bold">{{ key }}</div>
 						<div class="">score: {{ sec.score }}</div>
 						<div class="mb-4">rating: {{ sec.rating }}</div>
@@ -28,7 +28,7 @@
 						<span class="inline-block mr-2" v-else-if="scores.sum">{{ scores.sum.join() }};</span>
 						<span class="inline-block mr-2" v-else>{{ scores.val }};</span>
 						<span class="inline-block mr-2">{{ scores.val }}</span>
-					</div> -->
+					</div>
 				</div>
 				<div class="w-full sm:w-1/2">
 					<div class="sm:ml-8">
@@ -143,8 +143,8 @@
 									</label>
 								</div>
 								<div class="mb-6 w-full">
-									<!-- <button type="submit" :disabled="isSubmitting" class="text-center w-full block bg-redhat hover:bg-redhat-dark text-white hover:text-white py-4 px-6 no-underline" :class="[{'cursor-not-allowed':isSubmitting}]" @click.prevent="checkForErrors"><font-awesome-icon class="mr-2" :class="[{'fa-spin': isSubmitting}]" :icon="isSubmitting ? icons.faSyncAlt : icons.faEnvelope"></font-awesome-icon> {{ $t('redhat.leadgen.send') }}</button> -->
-									<a href="/quiz/thankyou" class="text-center block bg-redhat hover:bg-redhat-dark text-white hover:text-white py-4 px-6 no-underline" :class="[{'cursor-not-allowed':isSubmitting}]"><font-awesome-icon class="mr-2" :class="[{'fa-spin': isSubmitting}]" :icon="isSubmitting ? icons.faSyncAlt : icons.faEnvelope"></font-awesome-icon> {{ $t('snow.leadgen.send') }}</a>
+									<button type="submit" :disabled="isSubmitting" class="text-center w-full block bg-redhat hover:bg-redhat-dark text-white hover:text-white py-4 px-6 no-underline" :class="[{'cursor-not-allowed':isSubmitting}]" @click.prevent="checkForErrors"><font-awesome-icon class="mr-2" :class="[{'fa-spin': isSubmitting}]" :icon="isSubmitting ? icons.faSyncAlt : icons.faEnvelope"></font-awesome-icon> {{ $t('redhat.leadgen.send') }}</button>
+									<!-- <a href="/quiz/thankyou" class="text-center block bg-redhat hover:bg-redhat-dark text-white hover:text-white py-4 px-6 no-underline" :class="[{'cursor-not-allowed':isSubmitting}]"><font-awesome-icon class="mr-2" :class="[{'fa-spin': isSubmitting}]" :icon="isSubmitting ? icons.faSyncAlt : icons.faEnvelope"></font-awesome-icon> {{ $t('snow.leadgen.send') }}</a> -->
 								</div>
 							</div>
 						</form>

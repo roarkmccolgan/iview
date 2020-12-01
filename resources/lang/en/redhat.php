@@ -12,23 +12,18 @@ return array(
     'download-now'=>'Download Now',
     
     'title'=>'Digital Innovation Assessment',
+    'intro-title'=>'Welcome to the digital innovation<br/> assessment tool',
     'sub-title'=>'Evaluating your software development and delivery capabilities',
     'intro'=>'
-        Welcome to the "Digital Innovation" assessment tool.<br/>
         The European economy is now digitally driven, making digital dominance and capabilities critical. Now more than ever creating customer value is tied to an organization\'s ability to develop, deploy, and run high-quality apps or digital products and services at speed.
     ',
     'landing-1'=>'
-        <p class="mb-4 px-5">
-            Every organization must learn to navigate the complexities of designing and mapping out modern app delivery agendas. Learning to operate like a software company is the goal. Let\'s be clear: moving at the speed of a digital native requires transformation at scale — no easy task. Organizations must work on aligning capabilities to lay the foundation for digital innovation excellence and redesign the app delivery function. 
-        </p>
-    ',
-    'landing-2'=>'
         To support both operational resiliency and digital response, one in two organizations prioritizes software dev capabilities to drive digital innovation. This represents a shift to a unified and business aligned software dev strategy.
     ',
-    'landing-3'=>'
-        Let\'s evaluate your software development and delivery capabilities.
+    'landing-2'=>'
+        Three core pillars underlie digital innovation success and readiness: 1) automation, 2) hybrid cloud strategies and 3) cloud native architectures.
     ',
-    'startbut'=>'Start this self-assessment',
+    'startbut'=>'Learn to operate like a software company',
 
     'general' => [
         'title'=> 'General',
@@ -53,9 +48,9 @@ return array(
     'facebooklink'=>'https://www.facebook.com/sharer/sharer.php?u=http%3A//bit.ly/2AwihN4',
     'linkedinlink'=>'https://www.linkedin.com/shareArticle?mini=true&url=http%3A//bit.ly/2AwihN4&title=Symantec%20and%20IDC%20GDPR%20Assessment&summary=Is%20your%20business%20GDPR%20ready?&source=',
 
-    'stage1' => 'Experimenter',
-    'stage2' => 'Optimiser',
-    'stage3' => 'Innovator',
+    'stage1' => 'Digital innovation experimenter',
+    'stage2' => 'Digital innovation optimizer',
+    'stage3' => 'Digital innovation innovator',
 
     'complete' => 'Complete!',
     'finishtxt' => '
@@ -120,487 +115,159 @@ return array(
         'errorNumber'=>'Please enter a valid phone number',
         'errorAccept'=>'Please accept the Terms &amp; Conditions',
     ],
-    'introduction1' => '
-        <div class="clearfix">
-            <div class="w-3/4 ml-auto">
-                <h2 class="text-redhat mb-2">Executive Summary</h2>
-                <p class="mb-2">
-                    This customized report is based on your answers to the IDC Digital Innovation Assessment that you recently completed.
-                </p>
-                <p class="mb-2">
-                    We hope that by reading the report you will not only learn how far your cloud journey has taken you, but also inspire you to set new milestones and help you reach the next level of cloud maturity and thereby help your organization become more innovative, agile, and profitable.
-                </p>
-                <p class="mb-2">
-                    The report presents your overall cloud assessment score and identifies your organization as a <strong class="text-redhat">Cloud Experimenter</strong>, a <strong class="text-redhat">Cloud Optimizer</strong>, or a <strong class="text-redhat">Cloud Innovator</strong>. It also breaks down the assessment score in three dimensions that all must be mastered to unlock the full potential of the cloud — the strategy to <strong class="text-gray-800">move</strong> the existing application estate to the cloud, the dedication to <strong class="text-gray-800">build</strong> new cloud-native applications, and the ability to <strong class="text-gray-800">manage</strong> and orchestrate the cloud resources to continuously ensure performance, compliance, and cost efficiency.
-                </p>
-            </div>
-        </div>
-        <div class="clearfix">
-            <div class="mt-32 w-1/4 float-left p-1 text-redhat-light italic leading-tight">
-                Nordic organisations\' main business priorities are innovation, customers and cost optimisation
-            </div>
-            <div class="w-3/4 float-left">
-                <h2 class="text-redhat mb-2 mt-6">Market Context and Key Drivers</h2>
-                <p class="mb-2">
-                    The expectations and requirements IT organizations face continue to evolve as businesses become more dedicated to and dependent on digitized business processes, customer engagements, and business models. 
-                </p>
-                <p class="mb-2">
-                    The infrastructure transformation journey is fuelled by organizations\' digital transformation endeavors. <strong class="text-gray-800">Nordic organizations\' main business priorities are innovation, customers, and cost optimization</strong>, which also top the list of expected achievements from digital transformation.
-                </p>
-            </div>
-        </div>
-        <div class="clearfix w-3/4 ml-auto">
-            <img class="w-3/4 mx-auto" src=":url1" alt="">
-            <p class="mb-2">
-                Cloud adoption is high and multiple deployment models are often used. However, the use of true hybrid and multicloud architectures remains low.
-            </p>
-        </div>
-        <div class="clearfix">
-            <div class="w-1/4 float-left p-1 text-redhat-light italic leading-tight">
-                There is a prevalent interest in true hybrid and multicloud architectures
-            </div>
-            <div class="w-3/4 float-left">
-                <img class="w-3/4 mx-auto" src=":url3" alt="">
-            </div>
-        </div>
-    ',
-    'introduction2' => '
-        <div class="clearfix w-3/4 ml-auto">
-            <h2 class="text-redhat mb-2">Best-in-Class Cloud (Nirvana)</h2>
-            <p class="mb-2">
-                The ultimate state of a hybrid multicloud platform is one that <strong class="text-gray-800">supports existing business processes and enables innovation</strong>. It leverages cloud-native technologies like containers, microservices, and APIs, spans <strong class="text-gray-800">multiple clouds</strong>, and enables fast service deployment and secure and efficient <strong class="text-gray-800">provisioning of resources</strong>.
-            </p>
-            <p class="mb-2">
-                The hybrid multicloud platform is based on open standards so that applications can seamlessly move between on-premises and public cloud environments, depending on <strong class="text-gray-800">cost, performance, and regulatory compliance requirements.</strong>
-            </p>
-            <p class="mb-2">
-                Optimal use of cloud, however, is more comprehensive than establishing a platform of modern technologies. Organizational structures and competencies must revolve around cloud, while an <strong class="text-gray-800">application modernization road map</strong> needs to be in place and application development processes must be agile to take advantage of the <strong class="text-gray-800">opportunities a hybrid multicloud platform provides.</strong>
-            </p>
-            <p class="mb-2">
-                The dimensions that have to be mastered to reach an ultimate cloud maturity stage are <strong class="text-gray-800">move, build, and manage</strong>.
-            </p>
-        </div>
-    ',
-    'introduction3' => '
-        <div class="clearfix w-3/4 ml-auto">
-            <h2 class="text-redhat mb-2 mt-6">Three Dimensions of Cloud Mastery</h2>
-            <h3 class="text-redhat mb-2">Move</h3>
-            <p class="mb-2">
-                Building a hybrid and multicloud-based digital platform for application modernization is a key step in digital transformation because older infrastructure approaches and applications do not provide the agility and adaptability necessary for today\'s business environment and customer expectations. Moving applications into a <strong class="text-gray-800">cloud environment</strong>, be it private or public cloud, is an important step in <br><strong class="text-gray-800">application modernization</strong>. There are different strategies for application modernization that make sense for different applications. The maturity stage for this dimension is dependent on the cloud deployment model used, the chosen cloud migration strategy, and the motivation for modernizing applications.
-
-            </p>
-            <h3 class="text-redhat mb-2">Build</h3>
-            <p class="mb-2">
-                Digital transformation is mainly done through <strong class="text-gray-800">digitizing business processes</strong> and supporting them with digital <strong class="text-gray-800">applications developed in the cloud</strong>. Many innovative services are also provided from the cloud first and developers are using cloud-native tools and processes. The maturity stage for this dimension is dependent on tools and processes used for <strong class="text-gray-800">cloud-native application development.</strong>
-            </p>
-            <h3 class="text-redhat mb-2">Manage</h3>
-            <p class="mb-2">
-                Running workloads in a cloud environment is a <strong class="text-gray-800">dynamic discipline.</strong> New services are continuously deployed, and new functionalities are made available by vendors. Moreover, prices fluctuate, regulations change, and IT security threats constantly evolve, making it essential to <strong class="text-gray-800">persistently shift workloads</strong> to the most applicable platform. The maturity stage for this dimension is dependent on the tools and processes in place as well as the <strong class="text-gray-800">motivation driving the orchestration.</strong>
-            </p>
-        </div>
-        <div class="w-full mx-auto">
-            <img class="w-full" src=":url" alt="">
-        </div>
-    ',
-    'introduction4' => '
-        <div class="clearfix w-3/4 ml-auto">
-            <h2 class="text-redhat mb-2">Your Ranking Overall</h2>
-            <p class="font-bold base my-2">
-                The overall cloud maturity level is decided by an organization\'s ability to leverage cloud. In addition to technology adoption, high-level maturity requires tools, processes, and organizational alignment that supports modernization of the existing application estate, development of new applications and services, and dynamic orchestration of cloud resources for continuous optimization.
-            </p>
-        </div>
-        <div class="w-5/6 ml-auto mt-10">
-            <img class="w-full" src=":url" alt="">
-        </div>
-    ',
-    'overallstage1'=>'
-        <div class="clearfix w-3/4 ml-auto">
-            <h3 class="text-redhat mb-2">Your Overall Score</h3>
-            <p class="mb-4 font-bold">
-                Based on your responses, your organization is categorized as a <span class="text-redhat">Cloud Experimenter</span>
-            </p>
-            <p class="mb-2">
-                This group is characterized by restricted use of cloud. The typical cloud use consists of standard SaaS applications and VMs deployed in a single IaaS, and there is no defined road map for modernizing the application estate.
-            </p>
-        </div>
-        <div class="my-5 relative" style="width:160mm;height:75.79mm; background: url(:url) no-repeat; background-size:cover">
-            <div class="bg-redhat absolute" style="width: :overall; height: 10mm; top:15mm; left:33mm;"></div>
-            <div class="bg-black absolute" style="width: :move; height: 10mm; top:29mm; left:33mm;"></div>
-            <div class="bg-grey-dark absolute" style="width: :build; height: 10mm; top:43mm; left:33mm;"></div>
-            <div class="bg-grey absolute" style="width: :manage; height: 10mm; top:57mm; left:33mm;"></div>
-        </div>
-        <div class="clearfix w-3/4 ml-auto">
-            <h3 class="text mb-2">Recommendations:</h3>
-            <p class="mb-2">
-                To move to the next level, you need to alter the perception of cloud: adopt cloud-native technologies and assess the possibilities beyond cost savings and structures and establish a road map for modernizing the application stack.
-            </p>
-            <p>
-                This will enable you to control cost better, but more importantly to support the changing business requirements efficiently and flexibly. Moreover, it will accelerate the cloud journey.
-            </p>
-        </div>
-    ',
-    'overallstage2'=>'
-        <div class="clearfix w-3/4 ml-auto">
-            <h3 class="text-redhat mb-2">Your Overall Score</h3>
-            <p class="mb-4 font-bold">
-                Based on your responses, your organization is categorized as a <span class="text-redhat">Cloud Optimizer</span>
-            </p>
-            <p class="mb-2">
-                This group is characterized by considerable, but incoherent, use of cloud. At least some cloud-native technologies have been adopted and selected applications moved to the cloud, but there is no complete application modernization road map in place, nor are there set processes for managing workloads across multiple clouds.
-            </p>
-        </div>
-        <div class="my-5 relative" style="width:200mm;height:94.7mm; background: url(:url) no-repeat; background-size:cover">
-            <div class="bg-redhat absolute" style="width: :overall; height: 13mm; top:18mm; left:43mm;"></div>
-            <div class="bg-black absolute" style="width: :move; height: 13mm; top:36mm; left:43mm;"></div>
-            <div class="bg-grey-dark absolute" style="width: :build; height: 13mm; top:53.5mm; left:43mm;"></div>
-            <div class="bg-grey absolute" style="width: :manage; height: 13mm; top:71mm; left:43mm;"></div>
-        </div>
-        <div class="clearfix w-3/4 ml-auto">
-            <h3 class="text mb-2">Recommendations:</h3>
-            <p class="mb-2">
-                To move to the next level, you need to institute consistency in the approach to cloud. This means defining an architecture, setting a modernization road map for all applications, and demolishing organizational silos.
-            </p>
-            <p>
-                This will enable you to move workloads between cloud services and deployment models, making your applications more agile and cost efficient, and ultimately to better support business optimization and transformation endeavors.
-            </p>
-        </div>
-    ',
-    'overallstage3'=>'
-        <div class="clearfix w-3/4 ml-auto">
-            <h3 class="text-redhat mb-2">Your Overall Score</h3>
-            <p class="mb-4 font-bold">
-                Based on your responses, your organization is categorized as a <span class="text-redhat">Cloud Innovator</span>
-            </p>
-            <p class="mb-2">
-                This group is characterized by having a cloud-first approach to both technology and organization. Cloud is the primary platform for new applications, and the modernization process of existing applications has come a long way.
-            </p>
-        </div>
-        <div class="my-5 relative" style="width:160mm;height:75.79mm; background: url(:url) no-repeat; background-size:cover">
-            <div class="bg-redhat absolute" style="width: :overall; height: 10mm; top:15mm; left:33mm;"></div>
-            <div class="bg-black absolute" style="width: :move; height: 10mm; top:29mm; left:33mm;"></div>
-            <div class="bg-grey-dark absolute" style="width: :build; height: 10mm; top:43mm; left:33mm;"></div>
-            <div class="bg-grey absolute" style="width: :manage; height: 10mm; top:57mm; left:33mm;"></div>
-        </div>
-        <div class="clearfix w-3/4 ml-auto">
-            <h3 class="text mb-2">Recommendations:</h3>
-            <p class="mb-2">
-                To further improve on the already advanced use of cloud, you need to have a razor-sharp focus on new technologies and how they can be used. You also need a dynamic application road map. For example, it may be advantageous to containerize an application you have already refactored.
-            </p>
-            <p>
-                With an agile and resilient IT architecture, you will not only be able to support the business, but also drive innovation by proactively accentuating new digital business opportunities.
-            </p>
-        </div>
-    ',
-
-    'move-intro' => '
-        <div class="clearfix">
-            <div class="w-1/4 float-left">
-                <img class="block mx-auto" src=":icon" alt="" style="width: 30mm;">
-                <div class="mt-20 p-1 pr-5 text-redhat-light italic leading-tight">Moving applications into a cloud environment, be it private or public cloud, is an important step in application modernization</div>
-            </div>
-            <div class="w-3/4 float-left">
-                <h2 class="text-redhat mb-3">Move</h2>
-                <h3 class="mb-3">Introduction and Market Context</h3>
-                <p class="mb-2">
-                    Building a hybrid and multicloud-based digital platform for application modernization is a <strong class="text-gray-800">key step in digital transformation</strong> because older infrastructure approaches and applications do not provide the agility and adaptability necessary for today\'s business environment and customer expectations. <strong class="text-gray-800">Moving applications into a cloud environment, be it private or public cloud, is an important step in application modernization.</strong> There are different strategies for application modernization that make sense for different applications. The maturity stage for this dimension is dependent on the cloud deployment model used, the chosen cloud migration strategy, and the motivation for modernizing applications.
-
-                </p>
-            </div>
-        </div>
-        <div class="clearfix">
-            <div class="w-3/4 ml-auto">
-                <p class="mb-2">
-                    Achieving the Cloud Innovator status will assure that your application modernization <strong class="text-gray-800">strategy is aligned with your business goals</strong> and supports your desired business outcomes. It will also help you to adapt quickly to changing market conditions by moving applications flexibly to the best cloud infrastructure, be it on-premises or in the public cloud, and to <strong class="text-gray-800">scale up and down based on market demand.</strong>
-                </p>
-            </div>
-        </div>
-    ',
-
-    'move-1' => '
-        <div class="clearfix w-3/4 ml-auto">
-            <h3 class="text-redhat mb-2">Your Score</h3>
-            <p class="mb-4 font-bold">
-                Based on your response, your organization is categorized as a <span class="text-redhat">Cloud Experimenter</span>. This group is characterized by cloud usage limited to non-core applications. 
-            </p>
-        </div>
-        <div class="">
-            <img class="w-full" src=":url" alt="">
-        </div>
-        <div class="clearfix w-3/4 ml-auto">
-            <h3 class="text mb-2">Recommendations:</h3>
-            <p class="mb-2">
-                To move to the next level: You need to understand your application landscape, classify your applications according to their cloud-readiness, and develop a cloud migration strategy for each application class. Some applications will stay on premises in a private cloud, while others can be migrated to the public cloud. You should also consider the benefits of cloud beyond sheer cost savings, as cloud offers great potential for innovation as well.
-            </p>
-        </div>
-    ',
-    'move-2' => '
-        <div class="clearfix w-3/4 ml-auto">
-            <h3 class="text-redhat mb-2">Your Score</h3>
-            <p class="mb-4 font-bold">
-                Based on your response, your organization is categorized as a <span class="text-redhat">Cloud Optimizer</span>. This group is characterized by wide-scale cloud usage, including some core applications.
-            </p>
-        </div>
-        <div class="">
-            <img class="w-full" src=":url" alt="">
-        </div>
-        <div class="clearfix w-3/4 ml-auto">
-            <h3 class="text mb-2">Recommendations:</h3>
-            <p class="mb-2">
-                To move to the next level: To become a Cloud Innovator, you must become independent of the cloud deployment model. As a Cloud Innovator, you can deploy your applications where it is most efficient in terms of cost, performance, regulatory compliance, and business outcomes, and you can move them dynamically between on-premises and public cloud environments. That ensures that your applications support your digital transformation and business strategy and that you can respond swiftly and aptly to changes in market conditions.
-
-            </p>
-        </div>
-    ',
-    'move-3' => '
-        <div class="clearfix w-3/4 ml-auto">
-            <h3 class="text-redhat mb-2">Your Score</h3>
-            <p class="mb-4 font-bold">
-                Based on your response, your organization is categorized as a <span class="text-redhat">Cloud Innovator</span>. This group is characterized by comprehensive cloud usage and independence of cloud deployment models. You are using the cloud both to save costs but also as a platform for innovation.
-            </p>
-        </div>
-        <div class="">
-            <img class="w-full" src=":url" alt="">
-        </div>
-        <div class="clearfix w-3/4 ml-auto">
-            <h3 class="text mb-2">Recommendations:</h3>
-            <p class="mb-2">
-                To disrupt/innovate more: To stay ahead of the competition, you need to constantly keep up to date with the new technologies and services made available from the cloud as the cloud platform evolves from virtual machines, to containers, to functions. Application architectures need to evolve accordingly so that you can adapt quickly to new technology and market developments. Your application modernization strategies need to be related to your business strategy and drive business outcomes.
-
-            </p>
-        </div>
-    ',
-    'build-intro' => '
-        <div class="clearfix">
-            <div class="w-1/4 float-left">
-                <img class="block mx-auto" src=":icon" alt="" style="width: 30mm;">
-                <div class="mt-20 p-1 pr-5 text-redhat-light italic leading-tight">Modern applications built in the cloud can leverage the benefits of the cloud to then capitalize on other innovative technologies such as AI</div>
-            </div>
-            <div class="w-3/4 float-left">
-                <h2 class="text-redhat mb-3">Build</h2>
-                <h3 class="mb-3">Introduction and Market Context</h3>
-                <p class="mb-2">
-                    Digital transformation is mainly achieved by building <strong class="text-gray-800">highly scalable digital applications</strong> in the cloud and supporting them with digitized business processes. Modern applications built in the cloud can <strong class="text-gray-800">leverage the benefits of the cloud</strong> to then capitalize on other innovative technologies such as AI, cognitive, next-gen security, IoT, and so on to become more <strong class="text-gray-800">intuitive, dynamic, and responsive.</strong>
-                </p>
-                <p class="mb-2">
-                    Many innovative services and digital features are also provided <strong class="text-gray-800">first from the cloud</strong>, and developers using cloud-native tools and processes to build modern applications can leverage these new features early on to <strong class="text-gray-800">build a competitive advantage.</strong>
-                </p>
-                <p class="my-4 italic font-base text-black px-4 py-2 bg-grey-light">
-                    By 2021, 70% of new enterprise applications will be developed cloud-native, leveraging cloud, containers, microservices architectures, and DevOps methodologies.
-                </p>
-            </div>
-        </div>
-        <div class="clearfix">
-            <div class="w-1/4 float-left p-1 pr-5 text-redhat-light italic leading-tight">
-                IDC estimates that by 2025, about two-thirds of European organizations will become prolific software producers, and your maturity in cloud development will help you to claim a strong stake in the ground in the future.
-            </div>
-            <div class="w-3/4 float-left">
-                <p class="mb-2">
-                    Mastering this dimension and becoming a <strong class="text-gray-800">Cloud Innovator</strong> means you have the infrastructure, skills, and processes needed to build <strong class="text-gray-800">cloud-native applications at the speed</strong> and scale that the business demands. You can also access and experiment with new digital technologies and features released in the cloud and build <strong class="text-gray-800">considerable competitive advantage.</strong> IDC estimates that by 2025, about two-thirds of European organizations will become prolific software producers, and your maturity in cloud development will help you to claim a strong stake in the ground in the future.
-                </p>
-            </div>
-        </div>
-    ',
-
-    'build-1' => '
-        <div class="clearfix w-3/4 ml-auto">
-            <h3 class="text-redhat mb-2">Your Score</h3>
-            <p class="mb-4 font-bold">
-                Based on your response, your organization is categorized as a <span class="text-redhat">Cloud Experimenter</span>. This group is characterized by organizations that primarily rely on standard off-the-shelf applications and have very few cloud-native applications.
-            </p>
-        </div>
-        <div class="">
-            <img class="w-full" src=":url" alt="">
-        </div>
-        <div class="clearfix w-3/4 ml-auto">
-            <h3 class="text mb-2">Recommendations:</h3>
-            <p class="mb-2">
-                To move to the next level: Although you are at the beginning stage of maturity in the cloud-native area, your progress is likely to be fast and you can make up for lost ground if you plan your cloud-native application road map consistently. Consider building experience in the cloud-native world by starting with new front-end applications and sharing best practices with other business units to scale the initial low-risk efforts.
-            </p>
-        </div>
-    ',
-    'build-2' => '
-        <div class="clearfix w-3/4 ml-auto">
-            <h3 class="text-redhat mb-2">Your Score</h3>
-            <p class="mb-4 font-bold">
-                Based on your response, your organization is categorized as a <span class="text-redhat">Cloud Optimizer</span>. This group is characterized by wider cloud-native application development. However, there are still some inconsistencies, and the cloud capabilities are not yet enterprisewide.
-            </p>
-        </div>
-        <div class="">
-            <img class="w-full" src=":url" alt="">
-        </div>
-        <div class="clearfix w-3/4 ml-auto">
-            <h3 class="text mb-2">Recommendations:</h3>
-            <p class="mb-2">
-                To move to the next level: You have kickstarted your cloud-native journey and are making good progress. To graduate to the next level, you need to identify the technology bottlenecks, challenges, and skills gaps, and address them as an urgent priority to scale your cloud-native capabilities. Fostering deeper collaboration between business units, developers, and infrastructure teams can help identify the challenges and effective mitigation.
-            </p>
-        </div>
-    ',
-    'build-3' => '
-        <div class="clearfix w-3/4 ml-auto">
-            <h3 class="text-redhat mb-2">Your Score</h3>
-            <p class="mb-4 font-bold">
-                Based on your response, your organization is categorized as a <span class="text-redhat">Cloud Innovator</span>. This group is characterized by wider, consistent, and repeatable cloud-native application development strategies. This group is also consistently leveraging modern features to further enhance the applications. It has a cloud-first and container-first approach to application development and has closely tied business outcomes associated with app development.
-
-            </p>
-        </div>
-        <div class="">
-            <img class="w-full" src=":url" alt="">
-        </div>
-        <div class="clearfix w-3/4 ml-auto">
-            <h3 class="text mb-2">Recommendations:</h3>
-            <p class="mb-2">
-                To disrupt/innovate more: You are highly mature in your cloud-native application development methodologies and can demonstrate business outcomes such as accelerated speed, higher code quality, business-aligned development, use of AI/ML, and higher collaboration. But maintaining your status requires continuous efforts and continuous review of your strategies. As you are almost at the bleeding edge of using new technologies, you may need to have enough buffer to address technical debt or roll back to a more stable version of the technology. 
-
-            </p>
-        </div>
-    ',
-    'manage-intro' => '
-        <div class="clearfix">
-            <div class="w-1/4 float-left">
-                <img class="block mx-auto" src=":icon" alt="" style="width: 30mm;">
-                <div class="mt-10 p-1 pr-5 text-redhat-light italic leading-tight">The granularity of the architecture allows for comprehensive cost optimization, but the main value is in the agility and faster time-to-market that enhances business agility and resiliency.</div>
-            </div>
-            <div class="w-3/4 float-left">
-                <h2 class="text-redhat mb-3">Manage</h2>
-                <h3 class="mb-3">Introduction and Market Context</h3>
-                <p class="mb-2">
-                    The optimal maturity stage in cloud management is characterized by <strong class="text-gray-800">prevalent use of cloud-native technologies</strong> in a multi/hybrid architecture. The IT organization is set up with the cloud operating model in mind and <strong class="text-gray-800">without technology domain silos.</strong> Vendor lock-in is insignificant and workloads and data can be dynamically deployed on the platform that is most feasible for <strong class="text-gray-800">supporting the business</strong> agenda. The granularity of the architecture enables comprehensive cost optimization, but the main value is in the agility and faster time to market that enhances business agility and resiliency.
-                </p>
-                <p class="mb-2">
-                    Few organizations have reached this level of maturity, although cloud is perceived as a <strong class="text-gray-800">core technology</strong> for <strong class="text-gray-800">supporting business transformation</strong> and innovation and shifting workloads between platforms is prevalent.
-                </p>
-            </div>
-        </div>
-        <div class="clearfix w-3/4 ml-auto">
-            <img class="my-4" src=":url1" alt="">
-        </div>
-        <div class="clearfix">
-            <div class="w-1/4 float-left">
-                <div class="p-1 pr-5 text-redhat-light italic leading-tight">legacy and fragmentation have not been fully addressed and still obstruct optimal use of cloud resources and constrain the extent and pace of the business\' digital transformation journey</div>
-            </div>
-            <div class="w-3/4 float-left">
-                <p class="mb-2">
-                    Cloud competency teams have been established, tools have been deployed, and processes implemented. But legacy and fragmentation have not been fully addressed and still obstruct optimal use of cloud resources and constrain the extent and pace of the business\' digital transformation journey. 
-                </p>
-            </div>
-        </div>
-        <div class="clearfix w-3/4 ml-auto">
-            <img class="my-4" src=":url2" alt="">
-        </div>
-    ',
-
-    'manage-1' => '
-        <div class="clearfix w-3/4 ml-auto">
-            <h3 class="text-redhat mb-2">Your Score</h3>
-            <p class="mb-4 font-bold">
-                Based on your response, your company is categorized as being a <span class="text-redhat">Cloud Experimenter</span>.
-            </p>
-            <p class="mb-2">
-                This group is characterized by having a traditional approach to the IT architecture and organization. Cloud is perceived as a place where VMs can be deployed, and the redeployment of workloads that does take place is a reactive measure to solve specific problems.
-            </p>
-        </div>
-        <div class="">
-            <img class="w-full" src=":url" alt="">
-        </div>
-        <div class="clearfix w-3/4 ml-auto">
-            <h3 class="text mb-2">Recommendations:</h3>
-            <p class="mb-2">
-                To move to the next level: You need to embrace cloud broadly. Adoption of cloud-native technologies and architectures must be accelerated, orchestration tools adopted, and new skills acquired or developed. This will enable you to better control cost, ensure compliance, and improve performance and resource utilization.
-            </p>
-        </div>
-    ',
-    'manage-2' => '
-        <div class="clearfix w-3/4 ml-auto">
-            <h3 class="text-redhat mb-2">Your Score</h3>
-            <p class="mb-4 font-bold">
-                Based on your response, your company is categorized as being a <span class="text-redhat">Cloud Optimizer</span>.
-            </p>
-            <p class="mb-2">
-                This group is characterized by having a strategic approach to cloud. Cloud-specific competencies are in place, and multiple clouds and deployment models are used with the ambition to establish cost-efficient high-performance infrastructure.
-            </p>
-        </div>
-        <div class="">
-            <img class="w-full" src=":url" alt="">
-        </div>
-        <div class="clearfix w-3/4 ml-auto">
-            <h3 class="text mb-2">Recommendations:</h3>
-            <p class="mb-2">
-                To move to the next level: You should adopt a cloud-first strategy. You have to address your legacy and accelerate the application modernization journey and break down silos in both IT systems and organizational structures. This will enable you to further optimize your costs and mitigate the risk of vendor lock-in, but more importantly better support your organization\'s business through enhanced agility and resiliency. 
-            </p>
-        </div>
-    ',
-    'manage-3' => '
-        <div class="clearfix w-3/4 ml-auto">
-            <h3 class="text-redhat mb-2">Your Score</h3>
-            <p class="mb-4 font-bold">
-                Based on your response, your company is categorized as being a <span class="text-redhat">Cloud Innovator</span>.
-            </p>
-            <p class="mb-2">
-                This group is characterized by having a cloud-first strategy and has broadly adopted a multi/hybrid cloud architecture leveraging cloud-native technologies. Data and workloads are deployed and shifted across multiple cloud resources to provide the optimal support for business innovation, agility, and resiliency.
-            </p>
-        </div>
-        <div class="">
-            <img class="w-full" src=":url" alt="">
-        </div>
-        <div class="clearfix w-3/4 ml-auto">
-            <h3 class="text mb-2">Recommendations:</h3>
-            <p class="mb-2">
-                To further improve in supporting the business agenda: You need to stay on top of technological development and leverage the latest functionalities available. Furthermore, you should focus on cutting-edge technologies such as AI to introduce self-service and advanced automation. This will ensure that your organization is optimally positioned to transform, grow, and be resilient.
-            </p>
-        </div>
-    ',
-    
-    'conclusion' => '
-        <div class="clearfix pt-10">
-            <div class="w-1/4 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 30mm;"></div>
-            <div class="w-3/4 float-left">
-                <h2 class="text-redhat mb-3">Conclusion</h2>
-                <p class="mb-2">
-                    Thank you for taking this cloud migration, application modernization, and cloud orchestration readiness assessment. This demonstrates your ambition to succeed in your digital transformation strategies, and is a good starting point to set you apart from your peers. We hope you have been able to identify the weaknesses and strengths in your approach and have gained some tangible advice to help make progress, while developing a competitive edge.
-                </p>
-                <p class="mb-2 font-bold">
-                    Final recommendations to progress in the cloud maturity journey: 
-                </p>
-                <ul classs="list-disc ml-10">
-                    <li class="font-base text-redhat-light mb-1">Adopt a cloud-first architecture leveraging containers, microservices, APIs, functions, etc.</li>
-                    <li class="font-base text-redhat-light mb-1">Assess your application estate and establish a road map of which applications to modernize and how </li>
-                    <li class="font-base text-redhat-light mb-1">Focus on business outcomes beyond cost and cost structures, such as innovation and time to market</li>
-                    <li class="font-base text-redhat-light mb-1">Confront your legacy and break down existing silos in IT systems, organizational structures, and skills requirements</li>
-                    <li class="font-base text-redhat-light mb-1">Embrace a continuous approach, constantly evaluating technologies, reassessing modernization road maps, and orchestrating workloads across multiple platforms</li>
-                </ul>
-                <p class="mb-2">
-                    If you want to know more about the role of cloud, especially multicloud and hybrid cloud, in application development and modernization as well as digital transformation, please check out the following report: <a href=":url" class="font-bold text-redhat">please click here</a>
-                </p>
-            </div>
-        </div>
-        <p class="mb-2 font-bold mt-5">
-            To learn more about Move, Build, and Manage, why not watch one of these IDC webinars?
-        </p>
-        <div class="clearfix">
-            <div class="w-1/3 float-left">
-                <a href=":webinar1url" class="block p-1 no-underline">
-                    <div class="p-2 border rounded">
-                        <img class="w-full mb-2" src=":webinar1pic" alt="" />
-                        <p class="text-redhat font-bold">Move Webinar</p>
-                    </div>
-                </a>
-            </div>
-            <div class="w-1/3 float-left">
-                <a href=":webinar2url" class="block p-1 no-underline">
-                    <div class="p-2 border rounded">
-                        <img class="w-full mb-2" src=":webinar2pic" alt="" />
-                        <p class="text-redhat font-bold">Build Webinar</p>
-                    </div>
-                </a>
-            </div>
-            <div class="w-1/3 float-left">
-                <a href=":webinar3url" class="block p-1 no-underline">
-                    <div class="p-2 border rounded">
-                        <img class="w-full mb-2" src=":webinar3pic" alt="" />
-                        <p class="text-redhat font-bold">Manage Webinar</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    '
+    'overall' => [
+        'stage1' => [
+            'para1' => [
+                'Based on your responses your organization is categorized as a <span class="font-bold">digital innovation experimenter</span>. '
+            ],
+            'para2' => [
+                'This group is characterized by limited penetration of automation where projects tend to be siloed, resulting in narrow reuse and low level of best-practice sharing across teams. Most automation initiatives are driven by a cost optimization rationale, and specific working routines are automated in an opportunistic manner without a unified strategy or central direction. Cloud operations remain largely underdeveloped and the strategy is led by technical considerations related to simple, mostly manual service provisioning. Cloud-native app development projects materialize in an uncoordinated fashion, with low levels of reuse and collaboration across teams.'
+            ],
+            'recommendations' => [
+                'To move to the next level you will need to design a consistent automation strategy and execute on it making use of agile and DevOps practices in a more systematic fashion. You will also need to diversify your expertise in cloud operations, moving closer to a model that involves management, monitoring, and control across a series of cloud estates. To grow the maturity of your cloud-native app development capabilities, you will need to start integrating various siloed programs and drive a culture of coordination and cooperation across groups. These will enable you to build cohesive automation programs, increase your comfort in managing cloud complexity, and help drive synergies, consistency, and expertise sharing across your cloud-native app development initiatives.'
+            ]
+        ],
+        'stage2' => [
+            'para1' => [
+                'Based on your responses your organization is categorized as a <span class="font-bold">digital innovation optimizer</span>.'
+            ],
+            'para2' => [
+                'This group is characterized by consistent use of automation across development and operations, agile methods in software delivery, and widespread use of DevOps practices. Cloud strategy is coordinated across multiple parts of the organization, and involves management, monitoring, and control across a series of cloud estates with an eye on IT agility. The approach to cloud-native app development is defined by cohesive and integrated programs across multiple parts of the organization.'
+            ],
+            'recommendations' => [
+                'To move to the next level you will need to build an automation-first mentality across the organization, where programs are driven under a unified strategy and centered on clear business mandates and KPIs. You will need to mature your continuous integration and delivery processes, where DevOps automation runs deep within the organization, including industrialized models around agile techniques. You will also need to drive a 360-degree observability and intelligent monitoring strategy over cloud operations, while control, governance, and security need to have automation at the center. Cloud-native app development becomes driven at a strategic level across the entire organization while development culture needs to mature to accommodate hyper-agility/speed. These will enable you to drive a business-led approach to automation, ensuring high digital competitiveness on the back of a mature cloud infrastructure delivery and systemic synergies in cloud-native app development.'
+            ]
+        ],
+        'stage3' => [
+            'para1' => [
+                'Based on your responses your organization is categorized as a <span class="font-bold">digital innovation innovator</span>. '
+            ],
+            'para2' => [
+                'This group is characterized by an automation-first mentality, where programs are driven under a unified strategy and centered on clear business mandates and KPIs. Continuous integration and delivery is highly mature, and DevOps automation runs deep within the organization, including industrialized models around agile techniques. There is 360-degree observability and intelligent monitoring over cloud operations, while control, governance, and security make heavy use of automation. Cloud autonomy is achieved, with minimal strategic dependence on vendors and technologies. Cloud-native app development is driven at a strategic level across the entire organization while development culture matures around hyper-agility/speed.'
+            ],
+            'recommendations' => [
+                'To sharpen your digital innovation excellence, you need to increase the penetration of machine-learning technologies and techniques within your automation programs and in the management of your cloud estates. You should also start to experiment with machine-learning-assisted software development. This will enable your organization to compete head-to-head with the most advanced digital natives.'
+            ]
+        ]
+    ],
+    'automate' => [
+        'title' => 'Automation',
+        'color' => 'green',
+        'top' => '102',
+        'para1' => [
+            'Fast and automated product deployments combined with autonomous infrastructure and self-healing operations have created an environment that delights customers and differentiates the business. The maturity stage for this dimension is dependent on a unified automation strategy that leverages multicloud-based technologies for integrated process automation combined with predictive analytics and systemic agile processes. Software delivery (DevOps) teams have moved beyond simply scaling up the automation of traditional dev, test, and production environments. Modern, reusable architecture accelerates development and integration with new content types (AI/ML, IoT, etc.), and operational environments scale and adapt simultaneously based on performance thresholds and business triggers. This equates to an automation strategy with clearly defined business objectives and KPIs. ',
+            '70% of European organizations invest in continuous delivery and integration to accelerate software delivery.',
+            'Achieving digital innovation innovator status will secure your business productivity competitiveness against peers and from here your ability to push out differentiated digital value (digital products and services). Your unified automation strategy will underpin cross-team collaboration models, ensure automation consistency, and drive a culture of reuse. It will also help you drive a culture of discipline and a policy-driven approach to security, governance, and compliance — enabling the organization to take advantage of leading-edge innovation.'
+        ],
+        'stage1' => [
+            'para2' => [
+                'Based on your response your organization is categorized as a <span class="font-bold">digital innovation experimenter</span>.',
+                'This group is characterized by limited process documentation with low deploy, test, or release automation. Singular automation projects prevail where the core focus is cost reduction. This results in a siloed automation strategy with limited learning and reuse across teams. The deployment process is primarily manual, and overall there is a low level of change management controls with only some automated scripting.'
+            ],
+            'recommendations' => [
+                'To move to the next level you need to adopt automation reuse across projects and create a jointly developed backlog between development and operations teams. Focus on capturing the flow of work across the software delivery value stream and use this to identify optimal areas of process integration. As you mature your DevOps automation capabilities look to create unified software delivery/DevOps teams with shared responsibilities, goals, and objectives. Start to introduce and build visualization dashboards to help drive communications and measure progress with metrics. Aim to create automated development and deployment processes that use self-service portals created by operations teams. ',
+            ]
+        ],
+        'stage2' => [
+            'para2' => [
+                'Based on your response your organization is categorized as a <span class="font-bold">digital innovation optimizer</span>.',
+                'This group is characterized by automated infrastructure and application provisioning, as well as self-service portal usage. There is an end-to-end automated deployment process, and automation tools are used across both development and operations teams, with increasing agile adoption for continuous delivery. Automation now spans across all testing functions, and there is a clear shift to an integrated and unified automation strategy, with best practice identification and increasing levels of reuse. However, business involvement remains limited.'
+            ],
+            'recommendations' => [
+                'To move to the next level and become a digital innovation innovator you must work toward a unified and consistent automation strategy that unites, integrates, and measures end-to-end activities and performance. Start to explore more advanced testing techniques such as model-based testing and behavior-driven development (BDD). Establish integrated automated processes between development and operations teams and be sure to document a singular automation strategy. Align DevOps teams with the business on common business value KPIs and drivers that will be used to measure success. Importantly, create an automation culture that is obsessive about optimizing the flow of work.',
+            ]
+        ],
+        'stage3' => [
+            'para2' => [
+                'Based on your response your organization is categorized as a <span class="font-bold">digital innovation innovator</span>.',
+                'This group is characterized by fully automated workload migrations, application-aware analytics-driven infrastructure provisioning, and policy-driven automation. There is use of hybrid cloud-based technologies for DevOps automation, combined with predictive analytics and systemic agile processes. There is a high level of maturity in continuous integration and delivery with automated build and release management. Organizations operate a unified automation strategy with clear business objectives and KPIs.'
+            ],
+            'recommendations' => [
+                'To disrupt/innovate more and to stay ahead of the competition you need to exploit AI-driven technologies for test automation and IT operations (i.e., AIOps). Make sure security and security validation are ingrained into DevOps/delivery teams and are always considered a principal release requirement. Adopt declarative infrastructure and distributed architectures to accelerate the adoption of event-driven applications. Control and track costs using cloud and distributed architectures that enable delivery/DevOps teams to monitor granular consumption usage to improve cost efficiency. Analyze outcomes with extensive application-driven analytics.',
+            ]
+        ],
+    ],
+    'hybrid' => [
+        'title' => 'Hybrid Cloud',
+        'color' => 'green',
+        'top' => '152',
+        'para1' => [
+            'Hybrid cloud is a key dimension in the modernization plans of any organization with a complex IT landscape. Hybrid cloud helps organizations to transition their IT delivery in a phased fashion, binding mission-critical IT estates and new-value IT assets. The maturity stage for this dimension relies on the approach to strategizing around cloud value in the business and depends on the level of cloud complexity handled by an organization, the penetration of automation and intelligent management in the cloud operations, and governance and data control.'.
+            'One in two European organizations is prioritizing a hybrid cloud strategy to accelerate software delivery in 2021.',
+            'Mastering this dimension and becoming a digital innovation innovator means you have future-proofed your organization\'s digital resilience by laying the foundation for intelligent architecture that supports seamless integration, security, portability, and controls. You are also able to maximize the ROI of existing IT investments and drive a fluid data-led organization by orchestrating all data assets and ensuring data compliance. You will have shifted to a connected cloud architecture that enables you to implement consistent policies, configurations, and security across diverse clouds using intelligent observability, AI/ML, and automation to standardize operations regardless of cloud location or owner.'
+        ],
+        'stage1' => [
+            'para2' => [
+                'Based on your response your organization is categorized as a <span class="font-bold">digital innovation experimenter</span>.',
+                'This group is characterized by single cloud usage, and individual teams are reliant on limited provisioning capabilities. There is the reuse of select templates across multiple teams and projects, but observability, monitoring, and control are limited or at a low level. Manual management and provisioning is common, and the cloud strategy is focused on technical elements of IT provisioning/management.'
+            ],
+            'recommendations' => [
+                'To move to the next level start to experiment with multiple cloud providers and have a balanced multicloud strategy. You will also have to plan for a coordinated approach to provisioning, configuration, and orchestration, infusing automation where possible. This will enable you to increase the level of agility and efficiency in your IT estate and increase the level of observability and control across multiple cloud environments. You should also start to enable your development teams to self-serve to help increase delivery velocity.',
+            ]
+        ],
+        'stage2' => [
+            'para2' => [
+                'Based on your response your organization is categorized as a <span class="font-bold">digital innovation optimizer</span>.',
+                'This group is characterized by a multicloud strategy (use of multiple public cloud providers and one or more private clouds with varying degrees of interoperability). There is standardization of container orchestration, automated infrastructure provisioning, and dev self-service. Provisioning, configuration, and orchestration is coordinated and integrated across on-premises and public cloud infrastructures.',
+                'Observability and control takes place across multiple cloud environments, but there is no central control pane. Automated provisioning and monitoring is prevalent, but this lacks intelligent management mechanisms. Overall the cloud strategy is centered on IT agility and efficiency.'
+            ],
+            'recommendations' => [
+                'To move to the next level and become a digital innovation innovator you must build 360-degree observability that looks across all cloud operations including fluid unified infrastructure. You will also need to invest in more automation to enable proactive monitoring and intelligent provisioning across all cloud and non-cloud estates. This will enable you to transition to a cloud strategy centered on business outcomes and business agility, as well as evolving your organization toward a highly dynamic architecture.',
+            ]
+        ],
+        'stage3' => [
+            'para2' => [
+                'Based on your response your organization is categorized as a <span class="font-bold">digital innovation innovator</span>.',
+                'This group is characterized by use of vendor-agnostic integrated tools ("single pane of glass"), a fluid unified infrastructure with unified management and governance, and a highly dynamic, fully automated workload portability capability. There is 360-degree observability and control, with intelligent provisioning and monitoring. There is automation and orchestration across public, private, and non-cloud technologies. The overall cloud strategy is centered on business outcomes, business agility, and pace of innovation.'
+            ],
+            'recommendations' => [
+                'To disrupt/innovate more and to stay ahead of the competition you need to plan for full digital autonomy where the risk of vendor dependency is minimal. Continue to pursue full integration capabilities across cloud and non-cloud landscapes, with the end goal to create a fully connected cloud architecture. Ensure your edge strategy is not developing as a side project but is an integral component of your hybrid cloud strategy. ',
+            ]
+        ],
+    ],
+    'native' => [
+        'title' => 'Cloud Native',
+        'color' => 'green',
+        'top' => '200',
+        'para1' => [
+            'Cloud native introduces a series of competitive advantages that shift the paradigm in the way organizations deliver digital innovation to their end customers. Firstly, it enables organizations to move very fast, with developers\' precious time freed up to do actual development, as opposed to being caught up in undifferentiated roles and routines such as code maintenance or environment provisioning. This enables organizations to add digital value and this in turn provides a better service for the final customer. Being cloud native also enables organizations to operate in new business frameworks, with the models evolving away from long-cycle, rigid product/service market releases toward perpetual, iterative innovation.',
+            'By 2024, net-new production-grade cloud-native apps will increase to 70% from 10% of all apps in 2020.',
+            'Because it changes the cadence at which organizations compete in the marketplace, there is an arms race to ensure capabilities are in place to support the business over the next decade. Most mature organizations are already prioritizing a cloud-native-first approach when creating net-new digital functionality. Nonetheless, as organizations expand into cloud native, a number of challenges emerge, including:'
+        ],
+        'stage1' => [
+            'para2' => [
+                'Based on your response your organization is categorized as a <span class="font-bold">digital innovation experimenter</span>.',
+                'This group is characterized by siloed or small-scale cloud-native app development taking place across the organization. The approach to incorporate cloud-native-first principles in development is mostly ad hoc/opportunistic, as is the use of CI/CD across projects. There is generally a low level of security integration and governance across dev operations, while open source engagement, reuse, and collaboration across dev teams is mostly sporadic.',
+                'Provisioning of the dev environment is largely manual, and DevOps coordination and engagement is fairly casual.'
+            ],
+            'recommendations' => [
+                'To move to the next level you will need to align cloud-native plans and activities with an integrated strategy to drive value across multiple parts of the organization. You should plan to operationalize security, governance, and DevOps at scale across the delivery chain, while transitioning to more automated infrastructure provisioning. This will enable you to enhance productivity both at an individual development team level and at an organizational level, better cope with complexity, and ensure governance, security, and compliance. ',
+            ]
+        ],
+        'stage2' => [
+            'para2' => [
+                'Based on your response your organization is categorized as a <span class="font-bold">digital innovation optimizer</span>.',
+                'This group has an integrated and joined-up approach to onboard cloud-native-first development across parts of software dev operations. Security and governance are operationalized across most pieces of software delivery, but not yet strategically integrated. The organization has shifted to policy-driven reuse and a collaboration-driven dev culture, while engagement with open source is defined by an authorized approach. On-demand infrastructure provisioning is also operationalized, while DevOps takes place in a repeatable and governed fashion.'
+            ],
+            'recommendations' => [
+                'To move to the next level you will need to bring together all stakeholders within the organization and enforce a joined approach that unifies all cloud-native initiatives spanning the entire software development operations. You will also have to design your organizational flows to support a development culture based on hyper-speed and open code. This will enable you to industrialize cloud-native app delivery and facilitate at-scale iterative product/service development business models. It will also ensure your organization future-proofs its capabilities to compete with digital disruptors. ',
+            ]
+        ],
+        'stage3' => [
+            'para2' => [
+                'Based on your response your organization is categorized as a <span class="font-bold">digital innovation innovator</span>.',
+                'This group is characterized by a cloud-native app dev–first approach across the entire software development operations (microservices- and container-platform-first approach). Delivery is well orchestrated, governed, and joined up across the entire organization. CI/CD pipelines and/or value stream management practices are in place, as is security by design. The development culture is set up for hyper-speed, while embracing open code. Default delivery is DevOps-centric, as is self-service, on-demand infrastructure provisioning.'
+            ],
+            'recommendations' => [
+                'To further augment capabilities to support the business agenda you need to ensure your environments and code are highly portable to drive vendor and platform autonomy. You should look at options that enable you to further increase the velocity and productivity of your dev and delivery teams, including technologies such as machine learning, and at options that further industrialize code modernization and replatforming. This will ensure your organization is well placed to compete against the most disruptive market competitors and galvanize an even more accelerated transformation of the application estate.',
+            ]
+        ],
+    ],
+    'recommendations' => [
+        'Adopt a cloud-first architecture leveraging containers, microservices, APIs, functions, etc.',
+        'Assess your application estate and establish a road map for which applications to modernize and how ',
+        'Focus on business outcomes beyond cost and cost structures — e.g., innovation and time to market ',
+        'Confront your legacy and break down existing silos in IT systems, organizational structures, and skills requirements ',
+        'Embrace a continuous approach, constantly evaluating technologies, reassessing modernization road maps, and orchestrating workloads across multiple platforms '
+    ]    
 );
