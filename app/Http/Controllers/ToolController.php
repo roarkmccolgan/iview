@@ -805,7 +805,7 @@ class ToolController extends Controller
         }
         
         if ($assessment->tool_id==session('product.id')) {
-            if($assessment->tool_id == 18){ //snow
+            if($assessment->tool_id == 18 || $assessment->tool_id == 19){ //snow //redhat
                 $pdfMonkey = new PdfMonkeyService();
                 $body = $pdfMonkey->queueDocument($assessment->pdf_key, $filename);
                 if($body){

@@ -78,7 +78,7 @@ class PdfMonkeyService
                 'recommendations' => trans($tool->alias.'.recommendations')
             ];
             foreach(config('baseline_'.$tool->id) as $secKey => $sec) {
-                if($secKey !== 'overall'){
+                if($secKey !== 'overall' && $secKey !== 'general'){
                     $rating = $result[$secKey]['rating'];
                     $section = [
                         'title' => trans($tool->alias.'.'.$secKey.'.title'),

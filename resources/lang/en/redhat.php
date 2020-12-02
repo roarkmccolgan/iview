@@ -42,7 +42,7 @@ return array(
     'register'=>'Register now to receive your personalized report',
     'provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
     'byreg'=>'By registering with IDC, you accept our <a href="/privacy" target="_blank">Privacy Policy</a> and the Red Hat <a href="https://www.redhat.com/en/about/privacy-policy" target="_blank">Privacy Policy</a>.',
-    'marketing'=>'RedHat may use my contact data to keep me informed of products, services and offerings.',
+    'marketing'=>'Red Hat may use my contact data to keep me informed of products, services and offerings.',
     'wait'=>'While you\'re waiting why not tweet your results and see how your colleagues measure up?',
     'twitterlink'=>'https://twitter.com/home?status=Is%20your%20business%20GDPR%20ready?%20http%3A//bit.ly/2AwihN4%20%23Symantec',
     'facebooklink'=>'https://www.facebook.com/sharer/sharer.php?u=http%3A//bit.ly/2AwihN4',
@@ -55,7 +55,6 @@ return array(
     'complete' => 'Complete!',
     'finishtxt' => '
         <h2 class="font-bold leading-tight mb-4">Thank you for completing the IDC Digital Innovation Assessment.</h2>
-        <p class="mb-4 font-bold">You are now one step closer to mastering software development and delivery capabilities.</p>
         <p class="mb-4">Based on your input, your aggregate score means you are at the level of an <strong class="font-bold text-redhat">:stage</strong>.</p>
         <p class="mb-4 mt-4">Please tell us a little more about yourself to receive your personalized report.</p>
         <img src=":url/images/tools/19/report.png" alt="" class="w-5/6 mx-auto border" />
@@ -69,9 +68,9 @@ return array(
         </a><br/>',
     'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @ntt. Interested? ',// http://bit.ly/2gslXEh
     'email'=>[
-        'subject' => 'IDC\'s Cloud Journey Assessment sponsored by Red Hat',
+        'subject' => 'IDC\'s Digital Innovation Assessment sponsored by Red Hat',
         'hi' => 'Hi :Fname',
-        'body' => 'As promised, here\'s a link to download your IDC\'s Cloud Journey Assessment Report sponsored by Red Hat. This breaks down your results by category and provides you with actionable recommendations.',
+        'body' => 'As promised, here\'s a link to download your IDC\'s Digital Innovation Assessment Report sponsored by Red Hat. This breaks down your results by category and provides you with actionable recommendations.',
         'link' => 'Download PDF Report',
         'link_inline' => 'View Report in your browser',
         'extra' => '
