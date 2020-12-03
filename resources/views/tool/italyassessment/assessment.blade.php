@@ -36,7 +36,7 @@
 							</p>
 						</div>
 						<div class="mt-8">
-							<a href="http://survey.idc.com/survey/selfserve/21eb/190309?utm={{$utm}}" class="hidden sm:block text-center bg-blue-800 text-white font-bold hover:bg-blue-600 shadow-md rounded py-4 px-6 no-underline">Start</a>
+							<a href="https://survey.idc.com/survey/selfserve/21eb/190309?utm={{$utm}}" class="hidden sm:block text-center bg-blue-800 text-white font-bold hover:bg-blue-600 shadow-md rounded py-4 px-6 no-underline">Start</a>
 						</div>
 					</div>
 				</div>
