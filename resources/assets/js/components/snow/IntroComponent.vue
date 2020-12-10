@@ -2,7 +2,7 @@
 		<div>
 			<div class="bg-snow-gray pt-4 sm:pt-8">
 				<div class="container mx-auto px-4 sm:px-0 py-20">
-					<h2 class="font-snow text-snow-dark text-xl sm:text-5xl leading-tight">{{ section }}</h2>
+					<h2 class="font-snow text-snow-dark text-xl sm:text-5xl leading-tight">Now let’s assess your {{ section }} agility</h2>
 				</div>
 			</div>
 			<div class="container mx-auto px-4 sm:px-0">
@@ -22,7 +22,7 @@
 					</slot>
 					</transition-group>
 				</div>
-				<a href="#" class="inline-block bg-snow-dark text-white mt-6 py-4 px-6 no-underline" @click.prevent="$emit('next-step')">Now let's assess your '{{ section }}' status</a>
+				<a href="#" class="inline-block bg-snow-dark text-white mt-6 py-4 px-6 no-underline" @click.prevent="$emit('next-step')">Next <font-awesome-icon class="ml-2" :icon="icons.faArrowRight" /></a>
 			</div>
 			
 		</div>
@@ -30,6 +30,7 @@
 <script>
 import FontAwesomeIcon from '@fortawesome/vue-fontawesome';
 import faCheckCircle from '@fortawesome/fontawesome-pro-regular/faCheckCircle';
+import faArrowRight from '@fortawesome/fontawesome-pro-regular/faArrowRight';
 
 export default{
 	props: ['section','info','intro'],
@@ -38,6 +39,7 @@ export default{
 			showOther: false,
 			icons:{
 				check: faCheckCircle,
+				faArrowRight: faArrowRight,
 			},
 			stats: this.info
 		};
@@ -47,7 +49,8 @@ export default{
 	},
 	components: {
 		FontAwesomeIcon,
-		faCheckCircle
+		faCheckCircle,
+		faArrowRight
 	},
 	methods:{
 		beforeEnter: function (el) {

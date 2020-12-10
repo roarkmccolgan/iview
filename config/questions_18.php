@@ -140,7 +140,7 @@ return [
             '
                 <div class="flex flex-wrap items-center">
                     <h1 class="flex-1 font-bold leading-tight text-snow-dark text-2xl sm:text-3xl mb-2 p-4 bg-snow-gray">
-                        65% of organizations at more advanced stages of agility are already recovering or returning to growth.<br/> Just 20% of less agile organizations can say the same.
+                        65% of organizations at synchronized and agile stage are already recovering from the pandemic or returning to grow. Just 30% of static and disconnected organizations can say the same
                     </h1>
                     <img src="/images/tools/18/nugget_graph_1.svg" class="w-full sm:w-1/3 sm:ml-8" />
                 </div>
@@ -275,7 +275,7 @@ return [
             '
                 <div class="flex flex-wrap items-center">
                     <h1 class="flex-1 font-bold leading-tight text-snow-dark text-2xl sm:text-3xl mb-2 p-4 bg-snow-gray">
-                        44% of organizations at the early stages of agility are yet to digitized employee-facing processes, which remain slow, manual, and are often based on email and phone communication.
+                        44% of organizations at the early stages of agility are yet to digitize employee-facing processes, which remain slow, manual, and are often based on email and phone communication.
                     </h1>
                     <img src="/images/tools/18/nugget_graph_2.svg" class="w-full sm:w-1/3 sm:ml-8" />
                 </div>

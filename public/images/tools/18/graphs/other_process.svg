@@ -1,0 +1,17 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511 271">
+  <title>other_process</title>
+  <g style="opacity: 0.1">
+    <polyline points="62.96 198.01 162.87 123.68 258.48 162.9 353.01 116.69 448.38 198.01" style="fill: none;stroke: #304041;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.25px"/>
+  </g>
+  <polyline points="62.96 188.01 162.87 113.68 258.48 152.9 353.01 106.69 448.38 188.01" style="fill: none;stroke: #304041;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.25px"/>
+  <text transform="translate(31.57 174.01)" style="font-size: 19.918540954589844px;fill: #314041;font-family: OpenSans-Bold, Open Sans;font-weight: 700">9%</text>
+  <circle cx="62.96" cy="188.01" r="6.06" style="fill: #fff;stroke: #304041;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.25px"/>
+  <text transform="translate(142.53 100.01)" style="font-size: 19.918540954589844px;fill: #314041;font-family: OpenSans-Bold, Open Sans;font-weight: 700">31%</text>
+  <circle cx="162.87" cy="113.68" r="6.06" style="fill: #fff;stroke: #304041;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.25px"/>
+  <text transform="translate(238.62 181.52)" style="font-size: 19.918540954589844px;fill: #314041;font-family: OpenSans-Bold, Open Sans;font-weight: 700">19%</text>
+  <circle cx="258.48" cy="152.9" r="6.06" style="fill: #fff;stroke: #304041;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.25px"/>
+  <text transform="translate(332.67 92.97)" style="font-size: 19.918540954589844px;fill: #314041;font-family: OpenSans-Bold, Open Sans;font-weight: 700">32%</text>
+  <circle cx="353.01" cy="106.69" r="6.06" style="fill: #fff;stroke: #304041;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.25px"/>
+  <text transform="translate(439.66 174.01)" style="font-size: 19.918540954589844px;fill: #314041;font-family: OpenSans-Bold, Open Sans;font-weight: 700">9%</text>
+  <circle cx="448.38" cy="188.01" r="6.06" style="fill: #fff;stroke: #304041;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2.25px"/>
+</svg>

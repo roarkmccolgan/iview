@@ -11,7 +11,7 @@ return array(
     'change-langauge'=>'Change language',
     'download-now'=>'Download Now',
     
-    'title'=>'IDC Agility Framework',
+    'title'=>'IDC Business Agility Framework',
     'sub-title'=>'Sponsored by ServiceNow',
     'landing-intro'=>'
         Agility requires accurate and timely information, the ability to process and act on that information, and the capability to coordinate a response. Those that get this right quickly become more competitive, take advantage of opportunities and technologies more quickly, and build stronger relationships with partners, customers and employees.
@@ -24,10 +24,10 @@ return array(
             More specifically, what needs to be done in order to accelerate the journey to even greater agility tomorrow?
         </p>
         <p class="mb-2">
-            IDC\'s agility self-assessment tool targets 5 core measures of agility: <strong>Leadership</strong>, <strong>Organization</strong>, <strong>Process</strong>, <strong>Portfolio</strong>, and <strong>Technology Architecture</strong>. Powered by extensive research of 800 EMEA organizations, the outputs of the tool benchmark your organization and where you sit in your agility journey.
+            IDC\'s agility self-assessment tool targets 5 core measures of agility: <strong>Leadership</strong>, <strong>Organization</strong>, <strong>Process</strong>, <strong>Portfolio</strong>, and <strong>Technology Architecture</strong>. Powered by extensive research of over 870 leaders of EMEA organizations, the outputs of the tool benchmark your organization and where you sit in your agility journey.
         </p>
         <p class="mb-2">
-            A customized report then highlights specific recommendations and a roadmap for change, enabling you to target practical and tangible initiatives, use cases and technologies, and build towards a more agile future.
+            By answering 14 questions across the 5 core measurement areas above, you will receive a customized report that highlights specific recommendations and a roadmap or change. This will enable you to target practical and tangible initiatives use cases and technologies, and build towards a more agile future.
         </p>
         ',
     'startbut'=>'Take the assessment now',
@@ -67,6 +67,7 @@ return array(
     'stage5' => 'Level 5 - Agile',
 
     'industry' => [
+        'other' => 'Other',
         'banking' => 'Banking',
         'insurance' => 'Insurance',
         'government' => 'Government',
@@ -83,7 +84,7 @@ return array(
         <p class="mb-4 font-bold">Thank you for completing the IDC Agility Assessment Tool, sponsored by ServiceNow. Now you will find out just how agile your business is!</p>
         <p class="mb-6">Based on the answers you provided, IDC place your business at <br/><strong class="font-bold text-lg text-snow-light">:stage</strong>. But what does this mean?</p>
         <p class="mb-4">To immediately receive a personalized report via email with a full analysis of your organization’s agility, benchmark against industry peers and receive personalized recommendations, please complete the registration form.</p>
-        <p class="mb-4">We will treat your information with the upmost respect, and we look forward to sharing useful insights with you!</p>
+        <p class="mb-4">We will treat your information with the upmost respect <span class="font-bold">and confidentiality</span>, and we look forward to sharing useful insights with you!</p>
         <p class="mb-4">
             The privacy and the security of your information is important to us. Please read IDC privacy policies via the link below.
             <a href="/privacy" target="_blank">Privacy Policy</a>
@@ -113,14 +114,14 @@ return array(
     'email'=>[
         'subject' => 'IDC\'s Agility Framwork Assessment sponsored by ServiceNow',
         'hi' => 'Hi :Fname',
-        'body' => 'Thank you for completing the assessment, here is the link to download your IDC Agility Assessment Report. This shows you where you are on your agility journey, breaks down your results by dimension, and benchmark your organization against your industry peers. In the report, you will also find actionable recommendations that can help you build a more agile future.',
+        'body' => 'Thank you for completing the assessment, here is the link to download your IDC Agility Assessment Report. This shows you where you are on your agility journey, breaks down your results by dimension, and benchmarks your organization against your industry peers. In the report, you will also find actionable recommendations that can help you build a more agile future.',
         'link' => 'VIEW YOUR AGILITY SCORE',
         'link_inline' => 'View Report in your browser',
         'extra' => '
             Feel free to share this with other departments of your organization and with you customers and partners. You can always invite them to fill in the assessment and compare answers.<br/><br/>
             <a href="'.url('/').'">'.url('/').'</a><br/><br/>
             This assessment has been sponsored by ServiceNow.<br/>
-            To know more about how ServiceNow can support you in your Agility journey to drive positive outcomes for customers, employees and shareholders, please visit <a href="https://www.servicenow.com/new.html">https://www.servicenow.com/new.html</a><br/><br/>
+            To know more about how ServiceNow can support you in your Agility journey to drive positive outcomes for customers, employees and shareholders, please visit <a href="https://www.servicenow.co.uk/">www.servicenow.co.uk</a><br/><br/>
         ',
         'regards' => 'Regards',
         'team' => 'The IDC Team'
@@ -173,6 +174,7 @@ return array(
         'regenerateSentence' => 'Please reload the page to renerate, or close the window if you already have your report.',
     ],
     'intro' => [
+        'other' => [],
         'banking' => [
             'For the banking sector, agility has become a central feature for injecting speed, flexibility, and customer centricity. It enables banks to accelerate transformation, nurture innovation, and respond to the needs of the market. ',
             'Ignoring risk and compliance, however, can put the entire organization in jeopardy; and the cost of business as usual is becoming increasingly prohibitive. It is simply not enough to rely on legacy processes, workflows, and applications to address the new expectations of customers, regulators, and the ecosystem. Now is the time for banks to focus on agile capabilities and an agile future. ',
@@ -213,6 +215,7 @@ return array(
         'para1' => [
             'The following figure shows you where your organization sits in the context of your industry. The core components of agility — speed and adaptability — enable you to plot your organization and understand the progression and road map for change. '
         ],
+        'other' => '21% of organizations are in the advanced stages of agility.',
         'banking' => '24% of banking organizations are in the advanced stages of agility.',
         'insurance' => '30% of insurance organizations are in the advanced stages of agility.',
         'media' => '20% of media organizations are in the advanced stages of agility',
@@ -221,7 +224,7 @@ return array(
         'process_manufacturing' => '24% of manufacturing organizations are in the advanced stages of agility.',
         'discrete_manufacturing' => '24% of manufacturing organizations are in the advanced stages of agility.',
         'telecommunications' => '21% of telecoms organizations are in the advanced stages of agility',
-        'source' => 'IDC Agility Assessment Benchmark for :industry Industry Europe',
+        'source' => 'IDC Agility Assessment Benchmark for :industry Europe',
         'stage1' => [
             'Organizations at this stage in their agility journey are fixed in their structure, strategy, and budgeting cycles. Typically, leadership does not place enough emphasis on creating an agile culture and must do more to promote organizationwide collaboration. Processes are yet to be fully standardized and documented, preventing some departments from innovating at scale. ',
             'Product and service development can be slow and incremental as a result. From a technology architecture perspective, the stack is deeply anchored to on-premises legacy systems and there is limited automation or implementation of an agile software development strategy.'

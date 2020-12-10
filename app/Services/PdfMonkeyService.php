@@ -23,14 +23,14 @@ class PdfMonkeyService
 	    		'agility_image' => url('/images/tools/18/agility.svg'), 
 	    		'5levels' => url('/images/tools/18/5levels.svg'), 
 	    		'legend' => url('/images/tools/18/graphs/legend.svg'),
-	    		'intro' => trans($tool->alias.'.intro.'.$industry),
+	    		'intro' => array_key_exists($industry, trans($tool->alias.'.intro')) ? trans($tool->alias.'.intro.'.$industry) : [],
 	    		'overall' => [
 	    			'result' => $result['overall']['rating'],
 	    			'stage' => trans($tool->alias.'.'.$result['overall']['rating']),
 	    			'graph' => url('/images/tools/18/graphs/'.$industry.'_overall.svg'),
 	    			'para1' => trans($tool->alias.'.overall.para1'),
 	    			'graphic_stat' => trans($tool->alias.'.overall.'.$industry),
-	    			'source' => trans($tool->alias.'.overall.source', ['industry' => trans($tool->alias.'.industry.'.$industry)]),
+	    			'source' => trans($tool->alias.'.overall.source', ['industry' => trans($tool->alias.'.industry.'.$industry).' industry']),
 	    			'para2' => trans($tool->alias.'.overall.'.$result['overall']['rating'])
 	    		],
 	    		'sections' => [],

@@ -433,6 +433,17 @@ export default{
 		}
 		next();
 	},
+	beforeRouteUpdate (to, from, next) {
+		console.log(this.$route.params.question);
+			if (this.questions.hasOwnProperty(this.$route.params.question)){
+				if(this.questions[this.$route.params.question].selected){
+					console.log('selected', this.questions[this.$route.params.question].selected);
+				}else{
+					console.log('not answwww');
+				}
+			}
+		next();
+	},
 	created: function(){
 		if(this.currentSectionHasIntro){
 			this.showIntro = true;
