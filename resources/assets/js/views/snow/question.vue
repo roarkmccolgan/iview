@@ -301,7 +301,6 @@ export default{
 				}
 			}else{
 				if(this.currentQuestion.type !== 'checkbox'){
-					var currentLength =this.answer.length;
 					var exists = false;
 					for (var i = this.answer.length - 1; i >= 0; i--) {
 						if(this.answer[i].name == selected.name){
@@ -318,11 +317,13 @@ export default{
 							this.showNext = true;
 						}
 					}else{
-						console.log('not exists');
+						console.log('not exists radio');
 						this.answer = [];
-						if(currentLength==0) {
-							this.answer.push(selected);
-							this.showNext = true;
+						if(this.answer.length==0) {
+							this.$nextTick(function () {
+								this.answer.push(selected);
+								this.showNext = true;
+							});
 						}
 					}
 				}else if(this.currentQuestion.type === 'checkbox'){
@@ -423,25 +424,16 @@ export default{
 		IntroComponent
 	},
 	beforeRouteUpdate (to, from, next) {
-		var nextQ = this.questions['q'+ (Number(this.$route.params.question)+1)];
-		if(nextQ){
-			if(nextQ.background){
-				this.setBackgroundImage(nextQ.background);
-			}else{
-				this.setBackgroundImage(false);
-			}
-		}
-		next();
-	},
-	beforeRouteUpdate (to, from, next) {
-		console.log(this.$route.params.question);
-			if (this.questions.hasOwnProperty(this.$route.params.question)){
-				if(this.questions[this.$route.params.question].selected){
-					console.log('selected', this.questions[this.$route.params.question].selected);
-				}else{
-					console.log('not answwww');
+		console.log(this.questions);
+		if (this.questions.hasOwnProperty('q'+to.params.question)){
+			if(this.questions['q'+to.params.question].selected){
+				for (var i = this.questions['q'+to.params.question].selected.length - 1; i >= 0; i--) {
+					console.log('adding anser ' + this.questions['q'+to.params.question].selected[i].name);
+					this.selectOption(this.questions['q'+to.params.question].selected[i]);
+					//this.key++;
 				}
 			}
+		}
 		next();
 	},
 	created: function(){

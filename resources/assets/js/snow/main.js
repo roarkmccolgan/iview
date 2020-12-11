@@ -13,14 +13,14 @@ import { VPopover, VClosePopover } from 'v-tooltip'
 Vue.directive('close-popover', VClosePopover)
 Vue.component('v-popover', VPopover)
 
-Vue.use(VueAnalytics, {
-	id: 'UA-156016-34',
-	router,
-	debug: {
-		enabled: process.env.NODE_ENV!=='production'
-    //enabled: false
-}
-})
+// Vue.use(VueAnalytics, {
+// 	id: 'UA-156016-34',
+// 	router,
+// 	debug: {
+// 		enabled: process.env.NODE_ENV!=='production'
+//     //enabled: false
+// }
+// })
 
 new Vue({
 	el: '#app',
