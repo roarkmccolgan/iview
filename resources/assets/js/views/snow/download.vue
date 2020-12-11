@@ -10,8 +10,8 @@
 	</div>
 </template>
 <script>
-import FontAwesomeIcon from '@fortawesome/vue-fontawesome';
-import faSyncAlt from '@fortawesome/fontawesome-pro-regular/faSyncAlt';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import faSyncAlt from '@fortawesome/pro-regular-svg-icons/faSyncAlt';
 export default{
 	props: [],
 	data () {

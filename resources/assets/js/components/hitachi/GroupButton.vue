@@ -21,7 +21,7 @@
 	</div>
 </template>
 <script>
-import FontAwesomeIcon from '@fortawesome/vue-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import QuestionButton from '../../components/hitachi/QuestionButton.vue';
 
 export default{

@@ -258,6 +258,7 @@ return [
     'tooldomain' => [
         'idcready.net',
         'idcready.test',
+        'iview.test',
     ],
     'template' => 'default',
 

@@ -28,8 +28,8 @@
 		</div>
 </template>
 <script>
-import FontAwesomeIcon from '@fortawesome/vue-fontawesome';
-import faCheckCircle from '@fortawesome/fontawesome-pro-regular/faCheckCircle';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { faCheckCircle } from '@fortawesome/pro-regular-svg-icons/faCheckCircle';
 
 export default{
 	props: ['section','info','intro'],

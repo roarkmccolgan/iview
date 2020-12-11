@@ -28,9 +28,9 @@
 		</div>
 </template>
 <script>
-import FontAwesomeIcon from '@fortawesome/vue-fontawesome';
-import faCheckCircle from '@fortawesome/fontawesome-pro-regular/faCheckCircle';
-import faArrowRight from '@fortawesome/fontawesome-pro-regular/faArrowRight';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { faCheckCircle } from '@fortawesome/pro-regular-svg-icons/faCheckCircle';
+import { faArrowRight } from '@fortawesome/pro-regular-svg-icons/faArrowRight';
 
 export default{
 	props: ['section','info','intro'],

@@ -12,8 +12,8 @@ import { VPopover, VClosePopover } from 'v-tooltip'
 Vue.directive('close-popover', VClosePopover)
 Vue.component('v-popover', VPopover)
 
-import FontAwesomeIcon from '@fortawesome/vue-fontawesome';
-import faUndo from '@fortawesome/fontawesome-pro-regular/faUndo';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import faUndo from '@fortawesome/pro-regular-svg-icons/faUndo';
 
 Vue.use(VueAnalytics, {
   id: 'UA-156016-34',

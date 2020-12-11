@@ -14,7 +14,7 @@
 				<div class="flex items-baseline">
 					<div class="mr-2 text-2xl sm:text-xl">
 						<font-awesome-icon :icon="icons.faCircle" v-show="currentAnswer != option.label" /> 
-						<font-awesome-icon :icon="icons.faDotCircle" v-show="currentAnswer == option.label" />
+						<font-awesome-icon key="b" :icon="icons.faDotCircle" v-show="currentAnswer == option.label" />
 					</div>
 					<div class="flex-grow">
 						<template v-if="showOther && option.type == 'other'">
@@ -29,9 +29,9 @@
 </div>
 </template>
 <script>
-import FontAwesomeIcon from '@fortawesome/vue-fontawesome';
-import faCircle from '@fortawesome/fontawesome-pro-regular/faCircle';
-import faDotCircle from '@fortawesome/fontawesome-pro-regular/faDotCircle';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { faCircle } from '@fortawesome/pro-regular-svg-icons/faCircle';
+import { faDotCircle } from '@fortawesome/pro-regular-svg-icons/faDotCircle';
 export default{
 	props: ['question','showDetails', 'answer'],
 	data: function() {

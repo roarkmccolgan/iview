@@ -58,19 +58,19 @@
 						</div>
 					</transition>
 					<template v-if="currentQuestion.type == 'button' || currentQuestion.type == 'checkbox'">
-						<question-button :question="currentQuestion" :the-options="currentQuestion.options" v-on:selectOption="selectOption" :showDetails="showDetails" :qname="currentQuestion.qKey" :answer="answer"></question-button>
+						<question-button :key="key" :question="currentQuestion" :the-options="currentQuestion.options" v-on:selectOption="selectOption" :showDetails="showDetails" :qname="currentQuestion.qKey" :answer="answer"></question-button>
 					</template>
 					<template v-else-if="currentQuestion.type == 'slider'">
-						<question-slider :question="currentQuestion" :the-options="currentQuestion.options" v-on:selectOption="selectOption" :showDetails="showDetails" :qname="currentQuestion.qKey" :answer="answer"></question-slider>
+						<question-slider :key="key" :question="currentQuestion" :the-options="currentQuestion.options" v-on:selectOption="selectOption" :showDetails="showDetails" :qname="currentQuestion.qKey" :answer="answer"></question-slider>
 					</template>
 					<template v-else-if="currentQuestion.type == 'groupSlider'">
-						<group-slider :answer="answer" :question="currentQuestion" @selectOption="selectOption" :showDetails="showDetails"></group-slider>
+						<group-slider :key="key" :answer="answer" :question="currentQuestion" @selectOption="selectOption" :showDetails="showDetails"></group-slider>
 					</template>
 					<template v-else-if="currentQuestion.type == 'groupopposingslider'">
-						<group-opposing-slider :answer="answer" :question="currentQuestion" @selectOption="selectOption" :showDetails="showDetails"></group-opposing-slider>
+						<group-opposing-slider :key="key" :answer="answer" :question="currentQuestion" @selectOption="selectOption" :showDetails="showDetails"></group-opposing-slider>
 					</template>
 					<template v-else-if="currentQuestion.type == 'groupbutton'">
-						<group-button :answer="answer" :question="currentQuestion" @selectOption="selectOption" :showDetails="showDetails"></group-button>
+						<group-button :key="key" :answer="answer" :question="currentQuestion" @selectOption="selectOption" :showDetails="showDetails"></group-button>
 					</template>
 				</div>
 				<div class="container mx-auto mt-4">
@@ -87,9 +87,9 @@
 </template>
 
 <script>
-import FontAwesomeIcon from '@fortawesome/vue-fontawesome';
-import faArrowLeft from '@fortawesome/fontawesome-pro-regular/faArrowLeft';
-import faSpinnerThird from '@fortawesome/fontawesome-pro-regular/faSpinnerThird';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { faArrowLeft } from '@fortawesome/pro-regular-svg-icons/faArrowLeft';
+import { faSpinnerThird } from '@fortawesome/pro-regular-svg-icons/faSpinnerThird';
 
 //Question components
 import QuestionButton from '../../components/snow/QuestionButton.vue';
@@ -128,6 +128,7 @@ export default{
 			errorClass: 'border-red-lighter bg-red-lightest text-red-light',
 			noticeClass: 'border-blue-light bg-blue-lighter text-snow-dark',
 			result: [],
+			key: 1,
 		}
 	},
 	computed: {
@@ -301,7 +302,6 @@ export default{
 				}
 			}else{
 				if(this.currentQuestion.type !== 'checkbox'){
-					var currentLength =this.answer.length;
 					var exists = false;
 					for (var i = this.answer.length - 1; i >= 0; i--) {
 						if(this.answer[i].name == selected.name){
@@ -318,9 +318,10 @@ export default{
 							this.showNext = true;
 						}
 					}else{
-						console.log('not exists');
+						console.log('not exists radio');
 						this.answer = [];
-						if(currentLength==0) {
+						console.log(selected);
+						if(this.answer.length==0) {
 							this.answer.push(selected);
 							this.showNext = true;
 						}
@@ -405,6 +406,9 @@ export default{
 		currentSectionHasIntro: function(value){
 			console.log(value);
 			this.showIntro = value;
+		},
+		answer: function (val) {
+			console.log('fokok');
 		}
 	},
 	filters: {
@@ -423,28 +427,19 @@ export default{
 		IntroComponent
 	},
 	beforeRouteUpdate (to, from, next) {
-		var nextQ = this.questions['q'+ (Number(this.$route.params.question)+1)];
-		if(nextQ){
-			if(nextQ.background){
-				this.setBackgroundImage(nextQ.background);
-			}else{
-				this.setBackgroundImage(false);
+		if (this.questions.hasOwnProperty('q'+to.params.question)){
+			if(this.questions['q'+to.params.question].selected){
+				for (var i = this.questions['q'+to.params.question].selected.length - 1; i >= 0; i--) {
+					console.log('adding anser ' + this.questions['q'+to.params.question].selected[i].name);
+					this.selectOption(this.questions['q'+to.params.question].selected[i]);
+					//this.key++;
+				}
 			}
 		}
 		next();
 	},
-	beforeRouteUpdate (to, from, next) {
-		console.log(this.$route.params.question);
-			if (this.questions.hasOwnProperty(this.$route.params.question)){
-				if(this.questions[this.$route.params.question].selected){
-					console.log('selected', this.questions[this.$route.params.question].selected);
-				}else{
-					console.log('not answwww');
-				}
-			}
-		next();
-	},
 	created: function(){
+		console.log('created');
 		if(this.currentSectionHasIntro){
 			this.showIntro = true;
 		}

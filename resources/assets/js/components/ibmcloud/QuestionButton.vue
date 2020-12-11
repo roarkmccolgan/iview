@@ -14,8 +14,8 @@
 				<div class="flex items-center leading-none" :class="[question.optionLabels ? 'sm:flex-none' : '']">
 					<div class="text-2xl sm:text-xl mr-2" :class="[question.optionLabels ? 'sm:mr-0' : '']">
 						<template v-if="multiple === false">
-							<font-awesome-icon :icon="icons.faCircle" v-if="!inAnswer(option.label)" /> 
-							<font-awesome-icon :icon="icons.faDotCircle" v-else />
+							<font-awesome-icon key="a" :icon="icons.faCircle" v-if="!inAnswer(option.label)" /> 
+							<font-awesome-icon key="b" :icon="icons.faDotCircle" v-else />
 						</template>
 						<template v-else>
 							<font-awesome-icon :icon="icons.faSquare" v-if="!inAnswer(option.label)" />
@@ -36,11 +36,11 @@
 </div>
 </template>
 <script>
-import FontAwesomeIcon from '@fortawesome/vue-fontawesome';
-import faCircle from '@fortawesome/fontawesome-pro-regular/faCircle';
-import faDotCircle from '@fortawesome/fontawesome-pro-regular/faDotCircle';
-import faSquare from '@fortawesome/fontawesome-pro-regular/faSquare';
-import faCheckSquare from '@fortawesome/fontawesome-pro-regular/faCheckSquare';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { faCircle } from '@fortawesome/pro-regular-svg-icons/faCircle';
+import { faDotCircle } from '@fortawesome/pro-regular-svg-icons/faDotCircle';
+import { faSquare } from '@fortawesome/pro-regular-svg-icons/faSquare';
+import { faCheckSquare } from '@fortawesome/pro-regular-svg-icons/faCheckSquare';
 
 export default{
 	props: ['question', 'theOptions', 'showDetails', 'answer', 'label', 'qname'],

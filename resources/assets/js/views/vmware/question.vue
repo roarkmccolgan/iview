@@ -66,9 +66,9 @@
 </template>
 
 <script>
-import FontAwesomeIcon from '@fortawesome/vue-fontawesome';
-import faArrowLeft from '@fortawesome/fontawesome-pro-regular/faArrowLeft';
-import faSpinnerThird from '@fortawesome/fontawesome-pro-regular/faSpinnerThird';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { faArrowLeft } from '@fortawesome/pro-regular-svg-icons/faArrowLeft';
+import { faSpinnerThird } from '@fortawesome/pro-regular-svg-icons/faSpinnerThird';
 
 //Question components
 import QuestionButton from '../../components/vmware/QuestionButton.vue';

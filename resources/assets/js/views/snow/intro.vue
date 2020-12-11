@@ -34,7 +34,9 @@
 		</div>
 		<div class="py-12">
 			<div class="max-w-4xl mx-auto sm:my-10 flex flex-col-reverse sm:flex-row">
-				<img class="w-full sm:w-1/4" :src="`/images/tools/${assessment.tool.id}/report_sample.png`" alt="">
+				<div class="sm:w-1/4 sm:h-auto">
+					<img class="w-full" :src="`/images/tools/${assessment.tool.id}/report_sample.png`" alt="">					
+				</div>
 				<div class="px-8 sm:flex-1 sm:ml-12">
 					<div class="mb-8 text-snow-dark" v-html="$t('snow.landing')"></div>
 					<router-link class="block w-full font-bold uppercase text-center border border-snow-dark text-snow-dark mt-8 py-2 px-4 no-underline" :to="'/questions/1'">{{ $t('snow.startbut') }} <font-awesome-icon class="ml-2" :icon="icons.faArrowRight" /></router-link>						
@@ -44,9 +46,9 @@
 	</div>		
 </template>
 <script>
-import FontAwesomeIcon from '@fortawesome/vue-fontawesome';
-import faArrowRight from '@fortawesome/fontawesome-pro-regular/faArrowRight';
-import faGlobe from '@fortawesome/fontawesome-pro-regular/faGlobe';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { faArrowRight } from '@fortawesome/pro-regular-svg-icons/faArrowRight';
+import { faGlobe } from '@fortawesome/pro-regular-svg-icons/faGlobe';
 export default{
 	data () {
 		return {

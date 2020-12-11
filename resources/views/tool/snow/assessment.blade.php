@@ -28,6 +28,7 @@
 @stop
 
 @section('main')
+<script src="http://localhost:8098"></script>
 <div id="app" class="h-screen flex flex-col">
 	<div class="bg-white">
 	    <div class="max-w-4xl mx-auto px-4 flex items-center justify-between">

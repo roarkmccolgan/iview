@@ -6,7 +6,7 @@
 	</div>
 </template>
 <script>
-import FontAwesomeIcon from '@fortawesome/vue-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import QuestionButton from '../components/QuestionButton.vue';
 
 export default{

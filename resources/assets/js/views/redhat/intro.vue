@@ -16,9 +16,9 @@
 	</div>		
 </template>
 <script>
-import FontAwesomeIcon from '@fortawesome/vue-fontawesome';
-import faArrowRight from '@fortawesome/fontawesome-pro-regular/faArrowRight';
-import faGlobe from '@fortawesome/fontawesome-pro-regular/faGlobe';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { faArrowRight } from '@fortawesome/pro-regular-svg-icons/faArrowRight';
+import faGlobe from '@fortawesome/pro-regular-svg-icons/faGlobe';
 export default{
 	data () {
 		return {

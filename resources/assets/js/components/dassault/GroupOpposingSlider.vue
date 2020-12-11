@@ -7,7 +7,7 @@
 	</div>
 </template>
 <script>
-import FontAwesomeIcon from '@fortawesome/vue-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import OpposingSlider from './OpposingSlider.vue';
 
 export default{
