@@ -67,7 +67,7 @@ return array(
     'stage5' => 'Level 5 - Agile',
 
     'industry' => [
-        'other' => 'Other',
+        'other' => '',
         'banking' => 'Banking',
         'insurance' => 'Insurance',
         'government' => 'Government',

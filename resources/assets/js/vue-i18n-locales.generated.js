@@ -1789,6 +1789,7 @@ export default {
             "stage4": "Level 4 - Synchronized",
             "stage5": "Level 5 - Agile",
             "industry": {
+                "other": "",
                 "banking": "Banking",
                 "insurance": "Insurance",
                 "government": "Government",
@@ -1861,6 +1862,7 @@ export default {
                 "regenerateSentence": "Please reload the page to renerate, or close the window if you already have your report."
             },
             "intro": {
+                "other": [],
                 "banking": [
                     "For the banking sector, agility has become a central feature for injecting speed, flexibility, and customer centricity. It enables banks to accelerate transformation, nurture innovation, and respond to the needs of the market. ",
                     "Ignoring risk and compliance, however, can put the entire organization in jeopardy; and the cost of business as usual is becoming increasingly prohibitive. It is simply not enough to rely on legacy processes, workflows, and applications to address the new expectations of customers, regulators, and the ecosystem. Now is the time for banks to focus on agile capabilities and an agile future. "
@@ -1900,6 +1902,7 @@ export default {
                 "para1": [
                     "The following figure shows you where your organization sits in the context of your industry. The core components of agility — speed and adaptability — enable you to plot your organization and understand the progression and road map for change. "
                 ],
+                "other": "21% of organizations are in the advanced stages of agility.",
                 "banking": "24% of banking organizations are in the advanced stages of agility.",
                 "insurance": "30% of insurance organizations are in the advanced stages of agility.",
                 "media": "20% of media organizations are in the advanced stages of agility",
@@ -1908,7 +1911,7 @@ export default {
                 "process_manufacturing": "24% of manufacturing organizations are in the advanced stages of agility.",
                 "discrete_manufacturing": "24% of manufacturing organizations are in the advanced stages of agility.",
                 "telecommunications": "21% of telecoms organizations are in the advanced stages of agility",
-                "source": "IDC Agility Assessment Benchmark for {industry} Industry Europe",
+                "source": "IDC Agility Assessment Benchmark for {industry} Europe",
                 "stage1": [
                     "Organizations at this stage in their agility journey are fixed in their structure, strategy, and budgeting cycles. Typically, leadership does not place enough emphasis on creating an agile culture and must do more to promote organizationwide collaboration. Processes are yet to be fully standardized and documented, preventing some departments from innovating at scale. ",
                     "Product and service development can be slow and incremental as a result. From a technology architecture perspective, the stack is deeply anchored to on-premises legacy systems and there is limited automation or implementation of an agile software development strategy."
