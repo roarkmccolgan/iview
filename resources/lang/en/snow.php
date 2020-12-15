@@ -32,19 +32,19 @@ return array(
         ',
     'startbut'=>'Take the assessment now',
 
-    'leadership' => [
-        'title'=> 'Leadership Vision for Agility',
+    'leadership-intro' => [
+        'title'=> 'Leadership Vision Agility',
     ],
-    'structural' => [
+    'structural-intro' => [
         'title'=> 'Structural Agility',
     ],
-    'process' => [
+    'process-intro' => [
         'title'=> 'Process Agility',
     ],
-    'portfolio' => [
+    'portfolio-intro' => [
         'title'=> 'Portfolio Agility',
     ],
-    'technology' => [
+    'technology-intro' => [
         'title'=> 'Technology Architecture ',
     ],
     
@@ -101,10 +101,10 @@ return array(
                 <img src=":tool_url/images/tools/18/agile_link.jpg" alt="" class="w-full mb-2" />
                 <h5 class="text-lg text-snow-dark mb-2">Power agility and resilience</h5>
             </a>
-            <a href="https://www.servicenow.com/now-at-work.html" target="_blank" class="no-underline block w-full sm:flex-1 border p-2 rounded mb-2 sm:mb-0 shadow mr-4">
+            <!--a href="https://www.servicenow.com/now-at-work.html" target="_blank" class="no-underline block w-full sm:flex-1 border p-2 rounded mb-2 sm:mb-0 shadow mr-4">
                 <img src=":tool_url/images/tools/18/leaders_link.jpg" alt="" class="w-full mb-2" />
                 <h5 class="text-lg text-snow-dark mb-2">Now at work 2020</h5>
-            </a>
+            </a-->
             <a href="https://www.servicenow.com/now-platform/latest-release.html" target="_blank" class="no-underline block w-full sm:flex-1 border p-2 rounded mb-2 sm:mb-0 shadow">
                 <img src=":tool_url/images/tools/18/new_link.jpg" alt="" class="w-full mb-2" />
                 <h5 class="text-lg text-snow-dark mb-2">Latest Now platform innovations</h5>
@@ -121,7 +121,7 @@ return array(
             Feel free to share this with other departments of your organization and with you customers and partners. You can always invite them to fill in the assessment and compare answers.<br/><br/>
             <a href="'.url('/').'">'.url('/').'</a><br/><br/>
             This assessment has been sponsored by ServiceNow.<br/>
-            To know more about how ServiceNow can support you in your Agility journey to drive positive outcomes for customers, employees and shareholders, please visit <a href="https://www.servicenow.co.uk/">www.servicenow.co.uk</a><br/><br/>
+            To know more about how ServiceNow can support you in your Agility journey to drive positive outcomes for customers, employees and shareholders, please visit <a href="https://www.servicenow.co.uk/" target="blank">www.servicenow.co.uk</a><br/><br/>
         ',
         'regards' => 'Regards',
         'team' => 'The IDC Team'

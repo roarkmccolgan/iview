@@ -28,47 +28,47 @@ return [
                         'options'=>[
                             [
                                 'label'=>'Business operations resiliency programs',
-                                'value'=>1,
+                                'value'=>0,
                                 'checked'=>false,
                             ],
                             [
                                 'label'=>'Digital trust programs',
-                                'value'=>2,
+                                'value'=>0,
                                 'checked'=>false,
                             ],
                             [
                                 'label'=>'Data programs to gain insights into our business operations, products and/or ecosystems',
-                                'value'=>4,
+                                'value'=>0,
                                 'checked'=>false,
                             ],
                             [
                                 'label'=>'Software development capabilities to drive product/experience innovation',
-                                'value'=>3,
+                                'value'=>0,
                                 'checked'=>false,
                             ],
                             [
                                 'label'=>'Workplace transformation programs',
-                                'value'=>3,
+                                'value'=>0,
                                 'checked'=>false,
                             ],
                             [
                                 'label'=>'Digital infrastructure resiliency programs',
-                                'value'=>3,
+                                'value'=>0,
                                 'checked'=>false,
                             ],
                             [
                                 'label'=>'Connectivity programs to connect workforce, operations and partners',
-                                'value'=>3,
+                                'value'=>0,
                                 'checked'=>false,
                             ],
                             [
                                 'label'=>'Participation in new digital ecosystems',
-                                'value'=>3,
+                                'value'=>0,
                                 'checked'=>false,
                             ],
                             [
                                 'label'=>'Customer experience programs',
-                                'value'=>3,
+                                'value'=>0,
                                 'checked'=>false,
                             ],
                         ]
@@ -616,7 +616,6 @@ return [
                         'type'=>'checkbox',
                         'ignore' => true,
                         'question'=>'What are the biggest challenges with regards to adoption of cloud-native app development? [Rank the top 3]',
-                        'min' => 3,
                         'max' => 3,
                         'name'=> 14,
                         'options'=>[
@@ -666,7 +665,7 @@ return [
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'1 None of the above',
+                                'label'=>'None of the above',
                                 'value'=>0,
                                 'checked'=>false,
                             ],

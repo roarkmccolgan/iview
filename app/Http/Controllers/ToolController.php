@@ -735,6 +735,9 @@ class ToolController extends Controller
                     $url = 'https://www.ibm.com/se-en/cloud/yourcloud?utm_medium=Email&utm_source=External&utm_content=000039UZ&utm_term=10013943&utm_id=LP-IDC-Survey-email&cm_mmc=Email_External-_-Unlock+Cloud+and+AI_Technology+Transformation-_-INO_INO-_-LP-IDC-Survey-email&cm_mmca1=000039UZ&cm_mmca2=10013943';
             }
         }
+        if(session('product.id') == 19){
+            $url = "https://www.redhat.com/en/services/consulting/hybrid-cloud";
+        }
         $vars = [
         'pagetitle' => trans(session('product.alias').'.title'),
         'title' => trans(session('product.alias').'.title'),

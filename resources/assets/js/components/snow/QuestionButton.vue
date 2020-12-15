@@ -13,7 +13,7 @@
 		>
 		<div v-for="(option, optKey) in options" :key="optKey+'-key'" :data-index="optKey" :class="[question.optionLabels ? 'sm:flex-1 sm:text-center' : '']">
 			<label class="font-light rounded focus:outline-none" :class="[inAnswer(option.label) ? activeClass : normalClass, question.optionLabels ? 'sm:inline-block p-2' : 'p-4']" tabindex="0" @keyup.space="$event.target.click()">
-				<input class="hidden" :type="multiple === false ? 'radio':'checkbox'" :name="multiple === false ? qname:qname+'[]'" :value="option.value" @input="selectOption(option.label, option.value, qname, $event.target.checked, option.type)">
+				<input class="hidden" :type="multiple === false ? 'radio':'checkbox'" :name="multiple === false ? qname:qname+'[]'" :value="option.value" @click="selectOption(option.label, option.value, qname, $event.target.checked, option.type)">
 				<div class="flex items-center leading-none" :class="[question.optionLabels ? 'sm:flex-none' : '']">
 					<div class="text-2xl sm:text-xl mr-2" :class="[question.optionLabels ? 'sm:mr-0' : '']">
 						<template v-if="multiple === false">

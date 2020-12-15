@@ -80,7 +80,8 @@
 			</div>
 		</div>		
 	</div>
-	<script type="text/javascript">
+</div>
+<script type="text/javascript">
 _linkedin_partner_id = "15678";
 window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
 window._linkedin_data_partner_ids.push(_linkedin_partner_id);
@@ -93,7 +94,6 @@ s.parentNode.insertBefore(b, s);})();
 </script>
 
 <noscript><img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=15678&fmt=gif" /></noscript>
-</div>
 @stop
 @section('pagescript')
 <script src="//cdn.jsdelivr.net/npm/velocity-animate@1.5/velocity.min.js"></script>

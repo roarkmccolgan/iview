@@ -117,7 +117,7 @@ export default{
 				of: 'of',
 				question: 'question',
 				next: 'Next',
-				multimaxierror: 'Please select a minimum of #number# and maximum of #max# to continue'
+				multimaxierror: 'Please select #number#'
 			},
 			questionInfo: laravel.questionInfo,
 			showNext: false,

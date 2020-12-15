@@ -6,7 +6,7 @@
 					<h1 class="font-snow text-3xl sm:text-4xl leading-tight" v-html="$t('snow.title')"></h1>
 					<h2 class="text-base mb-6 text-snow-light" v-html="$t('snow.sub-title')"></h2>
 					<p class="sm:w-1/2 sm:text-lg" v-html="$t('snow.landing-intro')"></p>
-					<div class=" my-4 p-4 sm:flex space-x-12 font-bold sm:w-1/2">
+					<div class=" my-4 p-4 sm:flex sm:justify-between space-x-12 font-bold sm:w-1/2">
 						<div class="mt-4 sm:mt-0 sm:w-2/5">
 							<img src="/images/tools/18/72.svg" class="w-32 sm:w-32 sm:h-32 sm:ml-4 mr-2" alt="">
 							<p class="text-snow-dark text-sm flex-1 leading-tight">72% of organizations consider agility to be of strategic importance to their future success.</p>
