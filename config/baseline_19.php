@@ -30,19 +30,19 @@ return [
         'types' => [
             'stage1' => [
                 'low' => 0,
-                'high' => 37.6,
+                'high' => 21.9,
                 'tweet' => false,
                 'benchmark' => 20,
             ],
             'stage2' => [
-                'low' => 37.7,
-                'high' => 70.5,
+                'low' => 22,
+                'high' => 41.1,
                 'tweet' => false,
                 'benchmark' => 34,
             ],
             'stage3' => [
-                'low' => 70.6,
-                'high' => 110,
+                'low' => 41.2,
+                'high' => 55,
                 'tweet' => false,
                 'benchmark' => 28,
             ]
@@ -384,19 +384,19 @@ return [
         'types' => [
             'stage1' => [
                 'low' => 0,
-                'high' => 7.9,
+                'high' => 9.1,
                 'total' => 2,
                 'benchmark' => 20,
             ],
             'stage2' => [
-                'low' => 8,
-                'high' => 14.81,
+                'low' => 9.2,
+                'high' => 17.1,
                 'total' => 3,
                 'benchmark' => 34,
             ],
             'stage3' => [
-                'low' => 14.82,
-                'high' => 20,
+                'low' => 17.2,
+                'high' => 23,
                 'total' => 5,
                 'benchmark' => 28,
             ]
@@ -439,19 +439,19 @@ return [
         'types' => [
             'stage1' => [
                 'low' => 0,
-                'high' => 5.5,
+                'high' => 6.7,
                 'total' => 2,
                 'benchmark' => 20,
             ],
             'stage2' => [
-                'low' => 5.6,
-                'high' => 10.31,
+                'low' => 6.8,
+                'high' => 12.6,
                 'total' => 3,
                 'benchmark' => 34,
             ],
             'stage3' => [
-                'low' => 10.32,
-                'high' => 14,
+                'low' => 12.7,
+                'high' => 17,
                 'total' => 5,
                 'benchmark' => 28,
             ]
@@ -493,18 +493,18 @@ return [
         'types' => [
             'stage1' => [
                 'low' => 0,
-                'high' => 5.5,
+                'high' => 6.1,
                 'total' => 2,
                 'benchmark' => 20,
             ],
             'stage2' => [
-                'low' => 5.6,
-                'high' => 10.31,
+                'low' => 6.2,
+                'high' => 11.44,
                 'total' => 3,
                 'benchmark' => 34,
             ],
             'stage3' => [
-                'low' => 10.32,
+                'low' =>11.45,
                 'high' => 16,
                 'total' => 5,
                 'benchmark' => 28,

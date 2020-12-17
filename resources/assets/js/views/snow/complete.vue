@@ -113,6 +113,23 @@
 									</div>
 								</div>
 								<div class="mb-6 sm:w-1/2">
+									<div class="sm:ml-2">
+										<label class="block uppercase tracking-wide text-snow-dark text-xs font-bold mb-2" for="interested_in">
+											{{ $t('snow.leadgen.interested_in') }}
+										</label>
+										<div class="inline-block relative w-full mb-2">
+											<select class="block appearance-none rounded-none w-full bg-white border text-snow-dark py-3 px-4 pr-8" :class="[errors.interested_in ? 'border-red' : '']" id="interested_in" name="extra[interested_in]" v-model="interested_in" @blur="hasError">
+												<option value="" v-html="$t('snow.leadgen.pleaseselect')"></option>
+												<option v-for="(item, key) in assessment.fields.interested_in.options" :value="key">{{ item }}</option>
+											</select>
+											<div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-snow-dark">
+												<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+											</div>
+										</div>
+										<p class="text-red text-xs italic" v-show="errors.interested_in" v-html="$t('snow.leadgen.errorinterested_in')"></p>
+									</div>
+								</div>
+								<div class="mb-6 sm:w-1/2">
 									<div class="sm:mr-2">
 										<label class="block uppercase tracking-wide text-snow-dark text-xs font-bold mb-2" for="country">
 											{{ $t('snow.leadgen.country') }}
@@ -144,23 +161,6 @@
 											</div>
 										</div>
 										<p class="text-red text-xs italic" v-show="errors.state" v-html="$t('snow.leadgen.errorState')"></p>
-									</div>
-								</div>
-								<div class="mb-6 sm:w-1/2">
-									<div class="sm:mr-2">
-										<label class="block uppercase tracking-wide text-snow-dark text-xs font-bold mb-2" for="interested_in">
-											{{ $t('snow.leadgen.interested_in') }}
-										</label>
-										<div class="inline-block relative w-full mb-2">
-											<select class="block appearance-none rounded-none w-full bg-white border text-snow-dark py-3 px-4 pr-8" :class="[errors.interested_in ? 'border-red' : '']" id="interested_in" name="extra[interested_in]" v-model="interested_in" @blur="hasError">
-												<option value="" v-html="$t('snow.leadgen.pleaseselect')"></option>
-												<option v-for="(item, key) in assessment.fields.interested_in.options" :value="key">{{ item }}</option>
-											</select>
-											<div class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-snow-dark">
-												<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
-											</div>
-										</div>
-										<p class="text-red text-xs italic" v-show="errors.interested_in" v-html="$t('snow.leadgen.errorinterested_in')"></p>
 									</div>
 								</div>
 								<div class="mb-6 w-full">

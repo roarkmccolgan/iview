@@ -1,6 +1,6 @@
 <template>
 	<div class="flex-grow">
-		<intro-component :section="currentQuestion.title | toTitle" v-on:next-step="closeIntro()" :info="currentQuestion.sectionintro" v-if="showIntro"></intro-component>
+		<intro-component :section="$t('snow.'+currentQuestion.section+'-intro.title') | toTitle" v-on:next-step="closeIntro()" :info="currentQuestion.sectionintro" v-if="showIntro"></intro-component>
 		
 		<div class="flex flex-col" v-else>
 			<div class="container mx-auto py-2" v-if="showIntermission">
@@ -320,10 +320,11 @@ export default{
 					}else{
 						console.log('not exists radio');
 						this.answer = [];
-						console.log(selected);
 						if(this.answer.length==0) {
-							this.answer.push(selected);
-							this.showNext = true;
+							this.$nextTick(function () {
+								this.answer.push(selected);
+								this.showNext = true;
+							});
 						}
 					}
 				}else if(this.currentQuestion.type === 'checkbox'){
@@ -427,6 +428,10 @@ export default{
 		IntroComponent
 	},
 	beforeRouteUpdate (to, from, next) {
+<<<<<<< HEAD
+=======
+		console.log(this.questions);
+>>>>>>> 5f2df56b1815e97e2a8c1630818a180ec153abb1
 		if (this.questions.hasOwnProperty('q'+to.params.question)){
 			if(this.questions['q'+to.params.question].selected){
 				for (var i = this.questions['q'+to.params.question].selected.length - 1; i >= 0; i--) {

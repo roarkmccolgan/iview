@@ -18,8 +18,13 @@ Vue.component('v-popover', VPopover)
 // 	router,
 // 	debug: {
 // 		enabled: process.env.NODE_ENV!=='production'
+<<<<<<< HEAD
 // 	},
 // 	//enabled: false
+=======
+//     //enabled: false
+// }
+>>>>>>> 5f2df56b1815e97e2a8c1630818a180ec153abb1
 // })
 
 new Vue({

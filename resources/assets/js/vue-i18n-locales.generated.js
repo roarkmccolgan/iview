@@ -1411,6 +1411,184 @@ export default {
             "landing-intro": "\n        Agility requires accurate and timely information, the ability to process and act on that information, and the capability to coordinate a response. Those that get this right quickly become more competitive, take advantage of opportunities and technologies more quickly, and build stronger relationships with partners, customers and employees.\n        ",
             "landing": "\n        <h3 class=\"text-3xl font-snow\">\n            How agile is your business today? \n        </h3>\n        <p class=\"mb-4 leading-loose font-bold\">\n            More specifically, what needs to be done in order to accelerate the journey to even greater agility tomorrow?\n        </p>\n        <p class=\"mb-2\">\n            IDC's agility self-assessment tool targets 5 core measures of agility: <strong>Leadership</strong>, <strong>Organization</strong>, <strong>Process</strong>, <strong>Portfolio</strong>, and <strong>Technology Architecture</strong>. Powered by extensive research of over 870 leaders of EMEA organizations, the outputs of the tool benchmark your organization and where you sit in your agility journey.\n        </p>\n        <p class=\"mb-2\">\n            By answering 14 questions across the 5 core measurement areas above, you will receive a customized report that highlights specific recommendations and a roadmap or change. This will enable you to target practical and tangible initiatives use cases and technologies, and build towards a more agile future.\n        </p>\n        ",
             "startbut": "Take the assessment now",
+            "leadership-intro": {
+                "title": "Leadership Vision Agility"
+            },
+            "structural-intro": {
+                "title": "Structural Agility"
+            },
+            "process-intro": {
+                "title": "Process Agility"
+            },
+            "portfolio-intro": {
+                "title": "Portfolio Agility"
+            },
+            "technology-intro": {
+                "title": "Technology Architecture "
+            },
+            "send": "We can send you the full results directly to your mailbox",
+            "register": "Register now to receive your personalized report",
+            "provide": "Provide us with a few details and we'll send you a link to download it.",
+            "byreg": "By registering with IDC, you accept our <a href=\"/privacy\" target=\"_blank\">Privacy Policy</a> and the ServiceNow <a href=\"https://www.servicenow.com/privacy-statement.html\" target=\"_blank\">Privacy Policy</a>.",
+            "marketing": "ServiceNow may use my contact data to keep me informed of products, services and offerings.",
+            "marketing-phone": "By Phone",
+            "marketing-email": "By Email",
+            "wait": "While you're waiting why not tweet your results and see how your colleagues measure up?",
+            "twitterlink": "https://twitter.com/home?status=Is%20your%20business%20GDPR%20ready?%20http%3A//bit.ly/2AwihN4%20%23Symantec",
+            "facebooklink": "https://www.facebook.com/sharer/sharer.php?u=http%3A//bit.ly/2AwihN4",
+            "linkedinlink": "https://www.linkedin.com/shareArticle?mini=true&url=http%3A//bit.ly/2AwihN4&title=Symantec%20and%20IDC%20GDPR%20Assessment&summary=Is%20your%20business%20GDPR%20ready?&source=",
+            "stage1": "Level 1 - Static",
+            "stage2": "Level 2 - Disconnected",
+            "stage3": "Level 3 - In motion",
+            "stage4": "Level 4 - Synchronized",
+            "stage5": "Level 5 - Agile",
+            "industry": {
+                "other": "",
+                "banking": "Banking",
+                "insurance": "Insurance",
+                "government": "Government",
+                "healthcare": "Healthcare",
+                "process_manufacturing": "Process manufacturing",
+                "discrete_manufacturing": "Discrete manufacturing",
+                "telecommunications": "Telecommunications",
+                "media": "Media"
+            },
+            "complete": "Complete!",
+            "finishtxt": "\n        <h2 class=\"font-snow text-4xl font-normal leading-normal mb-4 text-snow-dark\">Congratulations</h2>\n        <p class=\"mb-4 font-bold\">Thank you for completing the IDC Agility Assessment Tool, sponsored by ServiceNow. Now you will find out just how agile your business is!</p>\n        <p class=\"mb-6\">Based on the answers you provided, IDC place your business at <br/><strong class=\"font-bold text-lg text-snow-light\">{stage}</strong>. But what does this mean?</p>\n        <p class=\"mb-4\">To immediately receive a personalized report via email with a full analysis of your organization’s agility, benchmark against industry peers and receive personalized recommendations, please complete the registration form.</p>\n        <p class=\"mb-4\">We will treat your information with the upmost respect <span class=\"font-bold\">and confidentiality</span>, and we look forward to sharing useful insights with you!</p>\n        <p class=\"mb-4\">\n            The privacy and the security of your information is important to us. Please read IDC privacy policies via the link below.\n            <a href=\"/privacy\" target=\"_blank\">Privacy Policy</a>\n        </p>\n        <img src=\"{url}/images/tools/18/report_sample.png\" alt=\"\" class=\"w-5/6 mx-auto\" />\n    ",
+            "complete_thankyou": "Thank you {Fname},",
+            "complete_body": "\n        Your custom report will arrive in your inbox soon.<br/>\n        Please check in your junk folder if you don't receive it within 5 minutes.<br/><br/>\n        To learn more about ServiceNow take a look at the resources below:<br><br>\n        <div class=\"flex flex-wrap mt-5\">\n            <a href=\"https://www.blogs.servicenow.com/2020/partner-integrations-in-now-platform-paris-release.html\" target=\"_blank\" class=\"no-underline block w-full sm{flex}-1 border p-2 rounded mb-2 sm{mb}-0 shadow mr-4\">\n                <img src=\"{tool_url}/images/tools/18/agile_link.jpg\" alt=\"\" class=\"w-full mb-2\" />\n                <h5 class=\"text-lg text-snow-dark mb-2\">Power agility and resilience</h5>\n            </a>\n            <!--a href=\"https://www.servicenow.com/now-at-work.html\" target=\"_blank\" class=\"no-underline block w-full sm{flex}-1 border p-2 rounded mb-2 sm{mb}-0 shadow mr-4\">\n                <img src=\"{tool_url}/images/tools/18/leaders_link.jpg\" alt=\"\" class=\"w-full mb-2\" />\n                <h5 class=\"text-lg text-snow-dark mb-2\">Now at work 2020</h5>\n            </a-->\n            <a href=\"https://www.servicenow.com/now-platform/latest-release.html\" target=\"_blank\" class=\"no-underline block w-full sm{flex}-1 border p-2 rounded mb-2 sm{mb}-0 shadow\">\n                <img src=\"{tool_url}/images/tools/18/new_link.jpg\" alt=\"\" class=\"w-full mb-2\" />\n                <h5 class=\"text-lg text-snow-dark mb-2\">Latest Now platform innovations</h5>\n            </a>\n        </div>",
+            "complete_tweet": "I've just taken the @IDCEMEA GDPR Assessment Tool for @ntt. Interested? ",
+            "email": {
+                "subject": "IDC's Agility Framwork Assessment sponsored by ServiceNow",
+                "hi": "Hi {Fname}",
+                "body": "Thank you for completing the assessment, here is the link to download your IDC Agility Assessment Report. This shows you where you are on your agility journey, breaks down your results by dimension, and benchmarks your organization against your industry peers. In the report, you will also find actionable recommendations that can help you build a more agile future.",
+                "link": "VIEW YOUR AGILITY SCORE",
+                "link_inline": "View Report in your browser",
+                "extra": "\n            Feel free to share this with other departments of your organization and with you customers and partners. You can always invite them to fill in the assessment and compare answers.<br/><br/>\n            <a href=\"http://idcready.test\">http://idcready.test</a><br/><br/>\n            This assessment has been sponsored by ServiceNow.<br/>\n            To know more about how ServiceNow can support you in your Agility journey to drive positive outcomes for customers, employees and shareholders, please visit <a href=\"https://www.servicenow.co.uk/\" target=\"blank\">www.servicenow.co.uk</a><br/><br/>\n        ",
+                "regards": "Regards",
+                "team": "The IDC Team"
+            },
+            "leadgen": {
+                "fname": "First Name",
+                "sname": "Last Name",
+                "email": "Email Address",
+                "company": "Company Name",
+                "employees": "Number of employees",
+                "turnover": "Turnover",
+                "industry": "Industry",
+                "country": "Country",
+                "state": "State",
+                "phone": "Phone Number",
+                "phone_code": "Country Code",
+                "title": "Job Title",
+                "send": "Send",
+                "interested_in": "Your interest",
+                "location": "Where are you based",
+                "locations": "How many locations do you have",
+                "company_type": "Describe your company",
+                "partner": "Are you a Trend Micro partner",
+                "sell": "Do you sell these solutions",
+                "pleaseselect": "Please select",
+                "errorFname": "Enter your name",
+                "errorSname": "Enter your surname",
+                "errorEmail": "Enter a valid email address",
+                "errorCompany": "Enter your company name",
+                "errorState": "Select your state",
+                "errorinterested_in": "Please select an interest.",
+                "errorIndustry": "Please select your industry.",
+                "errorLocation": "Please select an option.",
+                "errorLocations": "Please select an option.",
+                "errorCompanyType": "Please select an option.",
+                "errorPartner": "Please select an option.",
+                "errorSell": "Please select an option.",
+                "errorTitle": "Enter your title",
+                "errorPhone": "Enter your phone number",
+                "errorPhoneCode": "Enter your country dialing code",
+                "errorCountry": "Please select your country",
+                "errorNumber": "Please enter a valid phone number",
+                "errorAccept": "Please accept the Terms &amp; Conditions"
+            },
+            "report": {
+                "generating": "Generating your report",
+                "ready": "Report ready",
+                "regenerate": "Link expired",
+                "readySentence": "Your report should automatically download, if not please <a href=\"{url}\" target=\"_blank\">click here</a><br/><br/><span class=\"text-grey-dark italic\">You may close this window once downloaded</span>",
+                "regenerateSentence": "Please reload the page to renerate, or close the window if you already have your report."
+            },
+            "intro": {
+                "other": [],
+                "banking": [
+                    "For the banking sector, agility has become a central feature for injecting speed, flexibility, and customer centricity. It enables banks to accelerate transformation, nurture innovation, and respond to the needs of the market. ",
+                    "Ignoring risk and compliance, however, can put the entire organization in jeopardy; and the cost of business as usual is becoming increasingly prohibitive. It is simply not enough to rely on legacy processes, workflows, and applications to address the new expectations of customers, regulators, and the ecosystem. Now is the time for banks to focus on agile capabilities and an agile future. "
+                ],
+                "insurance": [
+                    "Insurance organizations are facing major challenges from changing customer and market expectations, new competitors, and the rapidly changing risk and regulatory environment. New entrants bring digital capabilities and innovations into the insurance landscape, while the impacts of the pandemic and wider pressures from claims and business disruption create an increasingly turbulent landscape.",
+                    "Insurers are under pressure to adapt and meet customer expectations in the digital era, while managing and balancing their risk portfolio. They must balance stability with agility, while navigating changes in regulations across multiple departments and business functions. Agility must be addressed in all aspects of technology, systems, and processes as insurers deal with huge volumes of customer inquiries and claims, as well as the overall transformation of their organization. "
+                ],
+                "government": [
+                    "The rapid pace of change facing government officials globally has illuminated the need for a highly responsive capability to deliver citizen services. This is regardless of the internal or external forces affecting that service delivery. By adopting a platform-based citizen-centric approach, governments are well positioned to respond to these changes. This enables government officials to deliver efficient, trusted, highly response, inclusive, and convenient (ETHIC) public services. ",
+                    "In the early stages of the COVID-19 crisis, many government organizations showed remarkable agility and responsiveness. As such, Government agencies have focused on building responsiveness and resilience to deal with future events and agility is fundamental to their future strategies."
+                ],
+                "healthcare": [
+                    "With the COVID-19 outbreak, healthcare organizations have seen years of transformation condensed into a few months. In the next normal, healthcare will constantly be dealing with uncertainty and cannot be caught unprepared again.  ",
+                    "The lessons learned during the crisis are a catalyst for digital transformation and are setting a new vision for the healthcare enterprise. This vision implies that resilience is not enough — high-quality care must be provided to all patients, regardless of the situation. Ensuring care continuity and greater patient value, during the toughest and most unprecedent times, will require healthcare organizations to have speed, responsiveness, and ultimately agility as a key pillar of their strategy. Now is the time for healthcare providers to focus on agile capabilities and an agile future."
+                ],
+                "process_manufacturing": [
+                    "Manufacturing companies will have to prepare themselves to succeed in the \"next normal.\" Those that innovate on an ongoing basis — staying relevant to changing customer demands, while putting customer experience first — will thrive. To do so, they will need to increase efficiencies of both enterprise and shop-floor activities, at the same time improving operational resilience and adaptability and bringing their business closer to those of their suppliers and customers. This must happen, despite any potential economic or environmental disruptions.",
+                    "Agility is therefore a central theme for manufacturing companies. This not only involves the transformation of a manufacturer's own operations, but also the transformation of the end-to-end value chains that span both internal operations and across their external ecosystems. Now is the time to focus on agile capabilities and an agile future."
+                ],
+                "discrete_manufacturing": [
+                    "Manufacturing companies will have to prepare themselves to succeed in the \"next normal.\" Those that innovate on an ongoing basis — staying relevant to changing customer demands, while putting customer experience first — will thrive. To do so, they will need to increase efficiencies of both enterprise and shop-floor activities, at the same time improving operational resilience and adaptability and bringing their business closer to those of their suppliers and customers. This must happen, despite any potential economic or environmental disruptions.",
+                    "Agility is therefore a central theme for manufacturing companies. This not only involves the transformation of a manufacturer's own operations, but also the transformation of the end-to-end value chains that span both internal operations and across their external ecosystems. Now is the time to focus on agile capabilities and an agile future."
+                ],
+                "telecommunications": [
+                    "Telecom service providers are in the midst of a multiyear transition. Many are moving from risk-averse, capital-intensive engineering organizations to innovation-focused, software-based digital platform and ecosystem players. ",
+                    "The changes required to their organizational structures, culture, and approach to technology deployment are considerable. Yet telco players can effectively make these changes if they embrace agility and understand the core principle involved. Many are already applying agile practices in discrete parts of the business; the challenge now is to make complex telco organizations agile and  end to end, and focus the entire business on agile capabilities and an agile future while keeping the customer at the center. "
+                ],
+                "media": [
+                    "In a world where volatility is becoming the norm, and customers are changing their behaviors and expectations, agility is becoming an imperative for media companies that want to escape the survival mode and become future proof. ",
+                    "To position themselves to thrive in the next normal, media companies will need to reevaluate existing organizational culture, processes, and operations, and adapt to take advantage of long-lasting changes in content production, customer preferences, and working models. ",
+                    "Faster experimentation, diversification, new revenue streams, and digital business models will be key to unlocking future opportunities. Only agile companies that have fluid leadership, organization, processes, portfolio agility and technology architectures will be able to quickly pivot and reboot for the future. "
+                ],
+                "para1": "Measuring your responses, IDC places your organization at {stage} in its overall agility journey. You can also see where your organization sits in comparison to your peers in the {industry} sector."
+            },
+            "overall": {
+                "para1": [
+                    "The following figure shows you where your organization sits in the context of your industry. The core components of agility — speed and adaptability — enable you to plot your organization and understand the progression and road map for change. "
+                ],
+                "other": "21% of organizations are in the advanced stages of agility.",
+                "banking": "24% of banking organizations are in the advanced stages of agility.",
+                "insurance": "30% of insurance organizations are in the advanced stages of agility.",
+                "media": "20% of media organizations are in the advanced stages of agility",
+                "government": "18% of government organizations are in the advance stages of agility.",
+                "healthcare": "16% of healthcare organizations are in the advanced stages of agility.",
+                "process_manufacturing": "24% of manufacturing organizations are in the advanced stages of agility.",
+                "discrete_manufacturing": "24% of manufacturing organizations are in the advanced stages of agility.",
+                "telecommunications": "21% of telecoms organizations are in the advanced stages of agility",
+                "source": "IDC Agility Assessment Benchmark for {industry} Europe",
+                "stage1": [
+                    "Organizations at this stage in their agility journey are fixed in their structure, strategy, and budgeting cycles. Typically, leadership does not place enough emphasis on creating an agile culture and must do more to promote organizationwide collaboration. Processes are yet to be fully standardized and documented, preventing some departments from innovating at scale. ",
+                    "Product and service development can be slow and incremental as a result. From a technology architecture perspective, the stack is deeply anchored to on-premises legacy systems and there is limited automation or implementation of an agile software development strategy."
+                ],
+                "stage2": [
+                    "Organizations at this stage in their agility journey understand the need for collaboration, which is often praised by leadership. Despite this, leadership tends to invest in reaction to bottlenecks and the organization runs mainly on stable structures and processes, which are siloed in functions such as HR, finance, and operations. ",
+                    "Collaboration is encouraged, but mainly at a business unit level using standardized processes. In response, new offerings are launched irregularly based on unstructured market insights. The technology architecture is evolving, but too often is represented by what IDC terms \"islands of innovation\" in the cloud. These are initiatives that are not always linked to \"core\" systems and results in automation only really being present in patches of the IT function. "
+                ],
+                "stage3": [
+                    "Organizations at this stage in their agility journey are often bound by a set of fixed and recurring schedules of strategic and budget reviews. These determine change and in many ways company culture.",
+                    "Knowledge sharing is widely encouraged, and teams are defined across products and services, with standardized process-flow between departments. In response, new products are launched frequently but slowly, incorporating customer and external environment inputs periodically. ",
+                    "A side-car model (advanced digital stack being coupled to traditional \"core\" architecture and systems) characterizes the technology architecture and automation is applied to some key internal processes."
+                ],
+                "stage4": [
+                    "For organizations at this stage in their agility journey, periodic insights support frequent review of strategy and budgets and new initiatives are easily funded and encouraged to \"fail fast.\"",
+                    "Leadership is focused on building a much more dynamic set of processes, having implemented some integration of operational and strategic agility, such as objectives and key results. Middle managers are encouraged to rethink staffing and processes, bringing together diverse teams and expertise, with measures becoming much more defined by behaviors, as well as by core metrics.",
+                    "Real-time information exchange enables process handovers between functions, and an incremental approach to product/service delivery is emerging. From a technology perspective, the digital stack and an integrated \"core\" coexist and continuously communicate, and automation is applied across all teams. "
+                ],
+                "stage5": [
+                    "Organizations at this stage in their agility have reached the pinnacle of agile capability and outcomes. Here, leadership redefines budgets and strategy constantly to drive innovation. An \"open\" workforce is both fluid and flexible, and can be expanded to contractors and partners, depending on needs and emerging skills gaps. Servant leadership invests in autonomous organizations where teams are self-formed and autonomously ruled. ",
+                    "The product and service development teams leverage a network of suppliers, academia, partners, and competitors, and the resulting knowledge sharing overcomes corporate boundaries and extends to the ecosystem. Processes are digitized and automated to enable self-service in support of self-forming teams, and sophisticated automation fluidly shifts from APIs, RPA, and workflow management."
+                ]
+            },
             "leadership": {
                 "title": "Leadership Vision",
                 "color": "green",
@@ -1771,166 +1949,6 @@ export default {
                         "Push learnings from your established digital design and implementation approach out to ecosystem partners. This should include joint academies and staff exchange programs."
                     ]
                 }
-            },
-            "send": "We can send you the full results directly to your mailbox",
-            "register": "Register now to receive your personalized report",
-            "provide": "Provide us with a few details and we'll send you a link to download it.",
-            "byreg": "By registering with IDC, you accept our <a href=\"/privacy\" target=\"_blank\">Privacy Policy</a> and the ServiceNow <a href=\"https://www.servicenow.com/privacy-statement.html\" target=\"_blank\">Privacy Policy</a>.",
-            "marketing": "ServiceNow may use my contact data to keep me informed of products, services and offerings.",
-            "marketing-phone": "By Phone",
-            "marketing-email": "By Email",
-            "wait": "While you're waiting why not tweet your results and see how your colleagues measure up?",
-            "twitterlink": "https://twitter.com/home?status=Is%20your%20business%20GDPR%20ready?%20http%3A//bit.ly/2AwihN4%20%23Symantec",
-            "facebooklink": "https://www.facebook.com/sharer/sharer.php?u=http%3A//bit.ly/2AwihN4",
-            "linkedinlink": "https://www.linkedin.com/shareArticle?mini=true&url=http%3A//bit.ly/2AwihN4&title=Symantec%20and%20IDC%20GDPR%20Assessment&summary=Is%20your%20business%20GDPR%20ready?&source=",
-            "stage1": "Level 1 - Static",
-            "stage2": "Level 2 - Disconnected",
-            "stage3": "Level 3 - In motion",
-            "stage4": "Level 4 - Synchronized",
-            "stage5": "Level 5 - Agile",
-            "industry": {
-                "banking": "Banking",
-                "insurance": "Insurance",
-                "government": "Government",
-                "healthcare": "Healthcare",
-                "process_manufacturing": "Process manufacturing",
-                "discrete_manufacturing": "Discrete manufacturing",
-                "telecommunications": "Telecommunications",
-                "media": "Media"
-            },
-            "complete": "Complete!",
-            "finishtxt": "\n        <h2 class=\"font-snow text-4xl font-normal leading-normal mb-4 text-snow-dark\">Congratulations</h2>\n        <p class=\"mb-4 font-bold\">Thank you for completing the IDC Agility Assessment Tool, sponsored by ServiceNow. Now you will find out just how agile your business is!</p>\n        <p class=\"mb-6\">Based on the answers you provided, IDC place your business at <br/><strong class=\"font-bold text-lg text-snow-light\">{stage}</strong>. But what does this mean?</p>\n        <p class=\"mb-4\">To immediately receive a personalized report via email with a full analysis of your organization’s agility, benchmark against industry peers and receive personalized recommendations, please complete the registration form.</p>\n        <p class=\"mb-4\">We will treat your information with the upmost respect <span class=\"font-bold\">and confidentiality</span>, and we look forward to sharing useful insights with you!</p>\n        <p class=\"mb-4\">\n            The privacy and the security of your information is important to us. Please read IDC privacy policies via the link below.\n            <a href=\"/privacy\" target=\"_blank\">Privacy Policy</a>\n        </p>\n        <img src=\"{url}/images/tools/18/report_sample.png\" alt=\"\" class=\"w-5/6 mx-auto\" />\n    ",
-            "complete_thankyou": "Thank you {Fname},",
-            "complete_body": "\n        Your custom report will arrive in your inbox soon.<br/>\n        Please check in your junk folder if you don't receive it within 5 minutes.<br/><br/>\n        To learn more about ServiceNow take a look at the resources below:<br><br>\n        <div class=\"flex flex-wrap mt-5\">\n            <a href=\"https://www.blogs.servicenow.com/2020/partner-integrations-in-now-platform-paris-release.html\" target=\"_blank\" class=\"no-underline block w-full sm{flex}-1 border p-2 rounded mb-2 sm{mb}-0 shadow mr-4\">\n                <img src=\"{tool_url}/images/tools/18/agile_link.jpg\" alt=\"\" class=\"w-full mb-2\" />\n                <h5 class=\"text-lg text-snow-dark mb-2\">Power agility and resilience</h5>\n            </a>\n            <a href=\"https://www.servicenow.com/now-at-work.html\" target=\"_blank\" class=\"no-underline block w-full sm{flex}-1 border p-2 rounded mb-2 sm{mb}-0 shadow mr-4\">\n                <img src=\"{tool_url}/images/tools/18/leaders_link.jpg\" alt=\"\" class=\"w-full mb-2\" />\n                <h5 class=\"text-lg text-snow-dark mb-2\">Now at work 2020</h5>\n            </a>\n            <a href=\"https://www.servicenow.com/now-platform/latest-release.html\" target=\"_blank\" class=\"no-underline block w-full sm{flex}-1 border p-2 rounded mb-2 sm{mb}-0 shadow\">\n                <img src=\"{tool_url}/images/tools/18/new_link.jpg\" alt=\"\" class=\"w-full mb-2\" />\n                <h5 class=\"text-lg text-snow-dark mb-2\">Latest Now platform innovations</h5>\n            </a>\n        </div>",
-            "complete_tweet": "I've just taken the @IDCEMEA GDPR Assessment Tool for @ntt. Interested? ",
-            "email": {
-                "subject": "IDC's Agility Framwork Assessment sponsored by ServiceNow",
-                "hi": "Hi {Fname}",
-                "body": "Thank you for completing the assessment, here is the link to download your IDC Agility Assessment Report. This shows you where you are on your agility journey, breaks down your results by dimension, and benchmarks your organization against your industry peers. In the report, you will also find actionable recommendations that can help you build a more agile future.",
-                "link": "VIEW YOUR AGILITY SCORE",
-                "link_inline": "View Report in your browser",
-                "extra": "\n            Feel free to share this with other departments of your organization and with you customers and partners. You can always invite them to fill in the assessment and compare answers.<br/><br/>\n            <a href=\"http://idcready.test\">http://idcready.test</a><br/><br/>\n            This assessment has been sponsored by ServiceNow.<br/>\n            To know more about how ServiceNow can support you in your Agility journey to drive positive outcomes for customers, employees and shareholders, please visit <a href=\"https://www.servicenow.co.uk/\">www.servicenow.co.uk</a><br/><br/>\n        ",
-                "regards": "Regards",
-                "team": "The IDC Team"
-            },
-            "leadgen": {
-                "fname": "First Name",
-                "sname": "Last Name",
-                "email": "Email Address",
-                "company": "Company Name",
-                "employees": "Number of employees",
-                "turnover": "Turnover",
-                "industry": "Industry",
-                "country": "Country",
-                "state": "State",
-                "phone": "Phone Number",
-                "phone_code": "Country Code",
-                "title": "Job Title",
-                "send": "Send",
-                "interested_in": "Your interest",
-                "location": "Where are you based",
-                "locations": "How many locations do you have",
-                "company_type": "Describe your company",
-                "partner": "Are you a Trend Micro partner",
-                "sell": "Do you sell these solutions",
-                "pleaseselect": "Please select",
-                "errorFname": "Enter your name",
-                "errorSname": "Enter your surname",
-                "errorEmail": "Enter a valid email address",
-                "errorCompany": "Enter your company name",
-                "errorState": "Select your state",
-                "errorinterested_in": "Please select an interest.",
-                "errorIndustry": "Please select your industry.",
-                "errorLocation": "Please select an option.",
-                "errorLocations": "Please select an option.",
-                "errorCompanyType": "Please select an option.",
-                "errorPartner": "Please select an option.",
-                "errorSell": "Please select an option.",
-                "errorTitle": "Enter your title",
-                "errorPhone": "Enter your phone number",
-                "errorPhoneCode": "Enter your country dialing code",
-                "errorCountry": "Please select your country",
-                "errorNumber": "Please enter a valid phone number",
-                "errorAccept": "Please accept the Terms &amp; Conditions"
-            },
-            "report": {
-                "generating": "Generating your report",
-                "ready": "Report ready",
-                "regenerate": "Link expired",
-                "readySentence": "Your report should automatically download, if not please <a href=\"{url}\" target=\"_blank\">click here</a><br/><br/><span class=\"text-grey-dark italic\">You may close this window once downloaded</span>",
-                "regenerateSentence": "Please reload the page to renerate, or close the window if you already have your report."
-            },
-            "intro": {
-                "banking": [
-                    "For the banking sector, agility has become a central feature for injecting speed, flexibility, and customer centricity. It enables banks to accelerate transformation, nurture innovation, and respond to the needs of the market. ",
-                    "Ignoring risk and compliance, however, can put the entire organization in jeopardy; and the cost of business as usual is becoming increasingly prohibitive. It is simply not enough to rely on legacy processes, workflows, and applications to address the new expectations of customers, regulators, and the ecosystem. Now is the time for banks to focus on agile capabilities and an agile future. "
-                ],
-                "insurance": [
-                    "Insurance organizations are facing major challenges from changing customer and market expectations, new competitors, and the rapidly changing risk and regulatory environment. New entrants bring digital capabilities and innovations into the insurance landscape, while the impacts of the pandemic and wider pressures from claims and business disruption create an increasingly turbulent landscape.",
-                    "Insurers are under pressure to adapt and meet customer expectations in the digital era, while managing and balancing their risk portfolio. They must balance stability with agility, while navigating changes in regulations across multiple departments and business functions. Agility must be addressed in all aspects of technology, systems, and processes as insurers deal with huge volumes of customer inquiries and claims, as well as the overall transformation of their organization. "
-                ],
-                "government": [
-                    "The rapid pace of change facing government officials globally has illuminated the need for a highly responsive capability to deliver citizen services. This is regardless of the internal or external forces affecting that service delivery. By adopting a platform-based citizen-centric approach, governments are well positioned to respond to these changes. This enables government officials to deliver efficient, trusted, highly response, inclusive, and convenient (ETHIC) public services. ",
-                    "In the early stages of the COVID-19 crisis, many government organizations showed remarkable agility and responsiveness. As such, Government agencies have focused on building responsiveness and resilience to deal with future events and agility is fundamental to their future strategies."
-                ],
-                "healthcare": [
-                    "With the COVID-19 outbreak, healthcare organizations have seen years of transformation condensed into a few months. In the next normal, healthcare will constantly be dealing with uncertainty and cannot be caught unprepared again.  ",
-                    "The lessons learned during the crisis are a catalyst for digital transformation and are setting a new vision for the healthcare enterprise. This vision implies that resilience is not enough — high-quality care must be provided to all patients, regardless of the situation. Ensuring care continuity and greater patient value, during the toughest and most unprecedent times, will require healthcare organizations to have speed, responsiveness, and ultimately agility as a key pillar of their strategy. Now is the time for healthcare providers to focus on agile capabilities and an agile future."
-                ],
-                "process_manufacturing": [
-                    "Manufacturing companies will have to prepare themselves to succeed in the \"next normal.\" Those that innovate on an ongoing basis — staying relevant to changing customer demands, while putting customer experience first — will thrive. To do so, they will need to increase efficiencies of both enterprise and shop-floor activities, at the same time improving operational resilience and adaptability and bringing their business closer to those of their suppliers and customers. This must happen, despite any potential economic or environmental disruptions.",
-                    "Agility is therefore a central theme for manufacturing companies. This not only involves the transformation of a manufacturer's own operations, but also the transformation of the end-to-end value chains that span both internal operations and across their external ecosystems. Now is the time to focus on agile capabilities and an agile future."
-                ],
-                "discrete_manufacturing": [
-                    "Manufacturing companies will have to prepare themselves to succeed in the \"next normal.\" Those that innovate on an ongoing basis — staying relevant to changing customer demands, while putting customer experience first — will thrive. To do so, they will need to increase efficiencies of both enterprise and shop-floor activities, at the same time improving operational resilience and adaptability and bringing their business closer to those of their suppliers and customers. This must happen, despite any potential economic or environmental disruptions.",
-                    "Agility is therefore a central theme for manufacturing companies. This not only involves the transformation of a manufacturer's own operations, but also the transformation of the end-to-end value chains that span both internal operations and across their external ecosystems. Now is the time to focus on agile capabilities and an agile future."
-                ],
-                "telecommunications": [
-                    "Telecom service providers are in the midst of a multiyear transition. Many are moving from risk-averse, capital-intensive engineering organizations to innovation-focused, software-based digital platform and ecosystem players. ",
-                    "The changes required to their organizational structures, culture, and approach to technology deployment are considerable. Yet telco players can effectively make these changes if they embrace agility and understand the core principle involved. Many are already applying agile practices in discrete parts of the business; the challenge now is to make complex telco organizations agile and  end to end, and focus the entire business on agile capabilities and an agile future while keeping the customer at the center. "
-                ],
-                "media": [
-                    "In a world where volatility is becoming the norm, and customers are changing their behaviors and expectations, agility is becoming an imperative for media companies that want to escape the survival mode and become future proof. ",
-                    "To position themselves to thrive in the next normal, media companies will need to reevaluate existing organizational culture, processes, and operations, and adapt to take advantage of long-lasting changes in content production, customer preferences, and working models. ",
-                    "Faster experimentation, diversification, new revenue streams, and digital business models will be key to unlocking future opportunities. Only agile companies that have fluid leadership, organization, processes, portfolio agility and technology architectures will be able to quickly pivot and reboot for the future. "
-                ],
-                "para1": "Measuring your responses, IDC places your organization at {stage} in its overall agility journey. You can also see where your organization sits in comparison to your peers in the {industry} sector."
-            },
-            "overall": {
-                "para1": [
-                    "The following figure shows you where your organization sits in the context of your industry. The core components of agility — speed and adaptability — enable you to plot your organization and understand the progression and road map for change. "
-                ],
-                "banking": "24% of banking organizations are in the advanced stages of agility.",
-                "insurance": "30% of insurance organizations are in the advanced stages of agility.",
-                "media": "20% of media organizations are in the advanced stages of agility",
-                "government": "18% of government organizations are in the advance stages of agility.",
-                "healthcare": "16% of healthcare organizations are in the advanced stages of agility.",
-                "process_manufacturing": "24% of manufacturing organizations are in the advanced stages of agility.",
-                "discrete_manufacturing": "24% of manufacturing organizations are in the advanced stages of agility.",
-                "telecommunications": "21% of telecoms organizations are in the advanced stages of agility",
-                "source": "IDC Agility Assessment Benchmark for {industry} Industry Europe",
-                "stage1": [
-                    "Organizations at this stage in their agility journey are fixed in their structure, strategy, and budgeting cycles. Typically, leadership does not place enough emphasis on creating an agile culture and must do more to promote organizationwide collaboration. Processes are yet to be fully standardized and documented, preventing some departments from innovating at scale. ",
-                    "Product and service development can be slow and incremental as a result. From a technology architecture perspective, the stack is deeply anchored to on-premises legacy systems and there is limited automation or implementation of an agile software development strategy."
-                ],
-                "stage2": [
-                    "Organizations at this stage in their agility journey understand the need for collaboration, which is often praised by leadership. Despite this, leadership tends to invest in reaction to bottlenecks and the organization runs mainly on stable structures and processes, which are siloed in functions such as HR, finance, and operations. ",
-                    "Collaboration is encouraged, but mainly at a business unit level using standardized processes. In response, new offerings are launched irregularly based on unstructured market insights. The technology architecture is evolving, but too often is represented by what IDC terms \"islands of innovation\" in the cloud. These are initiatives that are not always linked to \"core\" systems and results in automation only really being present in patches of the IT function. "
-                ],
-                "stage3": [
-                    "Organizations at this stage in their agility journey are often bound by a set of fixed and recurring schedules of strategic and budget reviews. These determine change and in many ways company culture.",
-                    "Knowledge sharing is widely encouraged, and teams are defined across products and services, with standardized process-flow between departments. In response, new products are launched frequently but slowly, incorporating customer and external environment inputs periodically. ",
-                    "A side-car model (advanced digital stack being coupled to traditional \"core\" architecture and systems) characterizes the technology architecture and automation is applied to some key internal processes."
-                ],
-                "stage4": [
-                    "For organizations at this stage in their agility journey, periodic insights support frequent review of strategy and budgets and new initiatives are easily funded and encouraged to \"fail fast.\"",
-                    "Leadership is focused on building a much more dynamic set of processes, having implemented some integration of operational and strategic agility, such as objectives and key results. Middle managers are encouraged to rethink staffing and processes, bringing together diverse teams and expertise, with measures becoming much more defined by behaviors, as well as by core metrics.",
-                    "Real-time information exchange enables process handovers between functions, and an incremental approach to product/service delivery is emerging. From a technology perspective, the digital stack and an integrated \"core\" coexist and continuously communicate, and automation is applied across all teams. "
-                ],
-                "stage5": [
-                    "Organizations at this stage in their agility have reached the pinnacle of agile capability and outcomes. Here, leadership redefines budgets and strategy constantly to drive innovation. An \"open\" workforce is both fluid and flexible, and can be expanded to contractors and partners, depending on needs and emerging skills gaps. Servant leadership invests in autonomous organizations where teams are self-formed and autonomously ruled. ",
-                    "The product and service development teams leverage a network of suppliers, academia, partners, and competitors, and the resulting knowledge sharing overcomes corporate boundaries and extends to the ecosystem. Processes are digitized and automated to enable self-service in support of self-forming teams, and sophisticated automation fluidly shifts from APIs, RPA, and workflow management."
-                ]
             },
             "recommendations": [
                 "Establish a formal cross-functional working group, in charge of regularly reviewing strategy and budget. Ensure inputs from wider elements of the organization are included and actively brought into the change process.",
