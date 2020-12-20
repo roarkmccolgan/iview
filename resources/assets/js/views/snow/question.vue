@@ -428,10 +428,6 @@ export default{
 		IntroComponent
 	},
 	beforeRouteUpdate (to, from, next) {
-<<<<<<< HEAD
-=======
-		console.log(this.questions);
->>>>>>> 5f2df56b1815e97e2a8c1630818a180ec153abb1
 		if (this.questions.hasOwnProperty('q'+to.params.question)){
 			if(this.questions['q'+to.params.question].selected){
 				for (var i = this.questions['q'+to.params.question].selected.length - 1; i >= 0; i--) {

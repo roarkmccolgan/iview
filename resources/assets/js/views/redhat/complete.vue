@@ -157,7 +157,7 @@
 </template>
 <script>
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import faEnvelope from '@fortawesome/pro-regular-svg-icons/faEnvelope';
+import { faEnvelope } from '@fortawesome/pro-regular-svg-icons/faEnvelope';
 import { faSquare } from '@fortawesome/pro-regular-svg-icons/faSquare';
 import { faCheckSquare } from '@fortawesome/pro-regular-svg-icons/faCheckSquare';
 import faSyncAlt from '@fortawesome/pro-regular-svg-icons/faSyncAlt';

@@ -18,8 +18,8 @@
 							<font-awesome-icon key="b" :icon="icons.faDotCircle" v-else />
 						</template>
 						<template v-else>
-							<font-awesome-icon :icon="icons.faSquare" v-if="!inAnswer(option.label)" />
-							<font-awesome-icon :icon="icons.faCheckSquare" v-else />
+							<font-awesome-icon key="a" :icon="icons.faSquare" v-if="!inAnswer(option.label)" />
+							<font-awesome-icon key="b" :icon="icons.faCheckSquare" v-else />
 						</template>
 							
 					</div>
