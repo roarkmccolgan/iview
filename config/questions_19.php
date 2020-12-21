@@ -413,12 +413,12 @@ return [
                         'name'=> 9,
                         'options'=>[
                             [
-                                'label'=>'single cloud',
+                                'label'=>'Single cloud',
                                 'value'=>1,
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'multiple clouds (use of multiple public cloud providers and one or more private clouds with varying degrees of interoperability)',
+                                'label'=>'Multiple clouds (use of multiple public cloud providers and one or more private clouds with varying degrees of interoperability)',
                                 'value'=>3,
                                 'checked'=>false,
                             ],

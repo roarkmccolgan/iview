@@ -3197,6 +3197,13 @@ export default {
                 "errorNumber": "Please enter a valid phone number",
                 "errorAccept": "Please accept the Terms &amp; Conditions"
             },
+            "report": {
+                "generating": "Generating your report",
+                "ready": "Report ready",
+                "regenerate": "Link expired",
+                "readySentence": "Your report should automatically download, if not please <a href=\"{url}\" target=\"_blank\">click here</a><br/><br/><span class=\"text-grey-dark italic\">You may close this window once downloaded</span>",
+                "regenerateSentence": "Please reload the page to renerate, or close the window if you already have your report."
+            },
             "overall": {
                 "stage1": {
                     "para1": [

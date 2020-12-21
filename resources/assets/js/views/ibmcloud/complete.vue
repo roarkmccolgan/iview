@@ -348,8 +348,8 @@
 										<input class="hidden" type="checkbox" id="marketingPhone" name="extra[marketing_phone]" v-model="marketingPhone">
 										<div class="flex items-baseline">
 											<div class="mr-2 text-2xl sm:text-xl">
-												<font-awesome-icon :icon="icons.faSquare" v-if="!marketingPhone" />
-												<font-awesome-icon :icon="icons.faCheckSquare" v-else />
+												<font-awesome-icon key="A" :icon="icons.faSquare" v-if="!marketingPhone" />
+												<font-awesome-icon key="B" :icon="icons.faCheckSquare" v-else />
 											</div>
 											<div class="flex-grow" v-html="$t('ibmcloud.marketing-phone')"></div>
 										</div>
@@ -359,8 +359,8 @@
 										<input class="hidden" type="checkbox" id="marketingEmail" name="extra[marketing_email]" v-model="marketingEmail">
 										<div class="flex items-baseline">
 											<div class="mr-2 text-2xl sm:text-xl">
-												<font-awesome-icon :icon="icons.faSquare" v-if="!marketingEmail" />
-												<font-awesome-icon :icon="icons.faCheckSquare" v-else />
+												<font-awesome-icon key="C" :icon="icons.faSquare" v-if="!marketingEmail" />
+												<font-awesome-icon key="D" :icon="icons.faCheckSquare" v-else />
 											</div>
 											<div class="flex-grow" v-html="$t('ibmcloud.marketing-email')"></div>
 										</div>
@@ -373,8 +373,8 @@
 										<input class="hidden" type="checkbox" id="terms" name="terms" black value="terms" v-model="terms">
 										<div class="flex items-baseline">
 											<div class="mr-2 text-2xl sm:text-xl">
-												<font-awesome-icon :icon="icons.faSquare" v-if="!terms" />
-												<font-awesome-icon :icon="icons.faCheckSquare" v-else />
+												<font-awesome-icon key="E" :icon="icons.faSquare" v-if="!terms" />
+												<font-awesome-icon key="F" :icon="icons.faCheckSquare" v-else />
 											</div>
 											<div class="flex-grow" v-html="$t('ibmcloud.byreg')">
 												

@@ -88,8 +88,8 @@
 										<input class="hidden" type="checkbox" id="terms" name="terms" black value="terms" v-model="terms">
 										<div class="flex items-baseline">
 											<div class="mr-2 text-2xl sm:text-xl">
-												<font-awesome-icon :icon="icons.faSquare" v-if="!terms" />
-												<font-awesome-icon :icon="icons.faCheckSquare" v-else />
+												<font-awesome-icon key="A" :icon="icons.faSquare" v-if="!terms" />
+												<font-awesome-icon key="B" :icon="icons.faCheckSquare" v-else />
 											</div>
 											<div class="flex-grow" v-html="$t('hitachi.byreg')">
 												
