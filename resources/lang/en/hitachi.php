@@ -32,7 +32,7 @@ return array(
     'linkedinlink'=>'https://www.linkedin.com/shareArticle?mini=true&url=http%3A//bit.ly/2AwihN4&title=Symantec%20and%20IDC%20GDPR%20Assessment&summary=Is%20your%20business%20GDPR%20ready?&source=',
 
     'stage1' => 'Cloud Starter',
-    'stage2' => 'Cloud Practioner',
+    'stage2' => 'Cloud Practitioner',
     'stage3' => 'Cloud Master',
 
     'complete' => 'Complete!',

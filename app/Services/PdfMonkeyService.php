@@ -87,6 +87,8 @@ class PdfMonkeyService
                         'graph' => $secKey.'_'.$rating.'.svg',
                         'stage' => trans($tool->alias.'.'.$rating),
                         'top' => trans($tool->alias.'.'.$secKey.'.top'),
+                        'side' => trans($tool->alias.'.'.$secKey.'.side'),
+                        'side2' => trans($tool->alias.'.'.$secKey.'.side2'),
                         'para1' => trans($tool->alias.'.'.$secKey.'.para1'),
                         'para2' => trans($tool->alias.'.'.$secKey.'.'.$rating.'.para2'),
                         'recommendations' => trans($tool->alias.'.'.$secKey.'.'.$rating.'.recommendations')
