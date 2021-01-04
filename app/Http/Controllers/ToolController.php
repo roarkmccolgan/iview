@@ -646,7 +646,13 @@ class ToolController extends Controller
         }
         $crm = config('baseline_'.session('product.id').'.overall.crmrequest', false);
         if ($crm) { //!App::isLocal() &&
-            $this->prepareCrmRequest($crm, $request, $assessment->uuid);
+            if(isset($crm['only'])){
+                if($assessment[$crm['only']['field']] == $crm['only']['value']){
+                    $this->prepareCrmRequest($crm, $request, $assessment->uuid);
+                }
+            } else {
+                $this->prepareCrmRequest($crm, $request, $assessment->uuid);                
+            }
         }
         $subject = trans(session('product.alias').'.email.subject');
         $assessment->uuid = (string)$assessment->uuid;

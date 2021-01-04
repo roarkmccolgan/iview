@@ -79,6 +79,10 @@ return [
             'roarkmccolgan@gmail.com'
         ],
         'crmrequest' => [
+            'only' => [
+                'field' => 'country',
+                'value' => 'Germany',
+            ],
             'url' => 'https://inbound.msights.com/api/response',
             'method' => 'POST',
             'authType' => 'basic',
