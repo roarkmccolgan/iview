@@ -80,8 +80,9 @@ return [
         ],
         'crmrequest' => [
             'only' => [
-                'field' => 'country',
-                'value' => 'Germany',
+                // 'field' => 'country',
+                // 'value' => 'Germany',
+                'local' => 'de'
             ],
             'url' => 'https://inbound.msights.com/api/response',
             'method' => 'POST',

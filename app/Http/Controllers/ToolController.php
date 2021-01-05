@@ -647,6 +647,16 @@ class ToolController extends Controller
         $crm = config('baseline_'.session('product.id').'.overall.crmrequest', false);
         if ($crm) { //!App::isLocal() &&
             if(isset($crm['only'])){
+                if(isset($crm['only']['field'])){
+                    if($assessment[$crm['only']['field']] == $crm['only']['value']){
+                        $this->prepareCrmRequest($crm, $request, $assessment->uuid);
+                    }                    
+                }
+                if(isset($crm['only']['locale'])){
+                    if(App::getLocale() == $crm['only']['locale']){
+                        $this->prepareCrmRequest($crm, $request, $assessment->uuid);
+                    }                    
+                }
                 if($assessment[$crm['only']['field']] == $crm['only']['value']){
                     $this->prepareCrmRequest($crm, $request, $assessment->uuid);
                 }
