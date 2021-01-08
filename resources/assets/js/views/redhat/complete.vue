@@ -211,8 +211,7 @@ export default{
 				company: false,
 				title: false,
 				country: false,
-				terms: false,
-				marketing: false
+				terms: false
 			},
 			theResult: this.result ? this.result : laravel.result,
 			theScores: this.scores ? this.scores : laravel.scores,

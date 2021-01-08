@@ -615,7 +615,7 @@ return [
                     'q14'=>[
                         'type'=>'checkbox',
                         'ignore' => true,
-                        'question'=>'What are the biggest challenges with regards to adoption of cloud-native app development? [Rank the top 3]',
+                        'question'=>'What are the biggest challenges with regards to adoption of cloud-native app development? [Select the top 3]',
                         'max' => 3,
                         'name'=> 14,
                         'options'=>[
