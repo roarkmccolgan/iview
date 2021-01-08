@@ -43,6 +43,7 @@ return [
        'sapagileglobal',
        'snow',
        'redhat',
+       'dassaultlean',
     ],
 
     /*

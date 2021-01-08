@@ -66,6 +66,11 @@ module.exports = {
 			"babel-polyfill",
 			'./resources/assets/js/redhat/main.js',
 			'./resources/assets/css/redhat/main.css'
+		],
+		dassaultlean: [
+			"babel-polyfill",
+			'./resources/assets/js/dassaultlean/main.js',
+			'./resources/assets/css/dassaultlean/main.css'
 		]
 	},
 	stats: {

@@ -5,13 +5,6 @@ require('../vendor/fa-light.js');
 import router from './routes';
 import VueAnalytics from 'vue-analytics';
 
-import Vue from 'vue'
-import { VPopover, VClosePopover } from 'v-tooltip'
-
-//Vue.directive('tooltip', VTooltip)
-Vue.directive('close-popover', VClosePopover)
-Vue.component('v-popover', VPopover)
-
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { faUndo } from '@fortawesome/pro-regular-svg-icons/faUndo';
 
