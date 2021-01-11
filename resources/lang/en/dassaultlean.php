@@ -25,19 +25,21 @@ return array(
     'landing'=>'
         <h1 class="font-bold mb-2 leading-none">How lean is your business?</h1>
         <p class="mb-2">
-            Praesent malesuada sodales sapien, at laoreet ante malesuada id. Morbi ullamcorper volutpat orci, et molestie augue vulputate vitae. Vestibulum at urna dui.
+            The disruption caused by COVID-19 will have a long-lasting impact on all industries, but manufacturers have needed to adapt the most. While there are workers that have stayed on site, many have shifted to remote work, a limited practice within manufacturing historically. Keeping these remote employees engaged, productive, and connected has been a struggle for many.
         </p>
         <p class="mb-2">
-            Sed tortor quam, suscipit et urna quis, porta efficitur diam. In fringilla, nibh nec convallis dictum, dolor arcu interdum mi, id rutrum nisi erat mollis orci.
+            Lean principles have been a proven driver behind manufacturing improvements for decades, however these methodologies have been applied in silos. Lean skills are not something that can be taught overnight and newer employees are not as familiar with the concepts. Manufacturers need to take advantage of lean across their business, improving how employees work and collaborate with each other no matter their location.
         </p>
         <ul class="font-bold mb-4">
-            <li class="list-none">Donec magna ex, maximus ut lectus vitae, sagittis ornare arcu</li>
-            <li class="list-none">Proin sapien ligula</li>
-            <li class="list-none">Magna in lacinia erat sapien vitae magna</li>
+            <li class="list-none">But where are you on your lean journey?</li>
+            <li class="list-none">How can you use digital technologies to maximize employee performance?</li>
+            <li class="list-none">How well are you doing compared to the competition and where can you take the lead?</li>
+            <li class="list-none">What are the benefits of enabling a hybrid workforce?</li>
+            <li class="list-none">This IDC digital maturity benchmark, created in partnership with Dassault, is designed to address these questions.</li>
         </ul>
         
         <p class="mb-2">
-            By completing a short set of questions, you will be presented with an easy to read report format, enabling you to identify areas of strength and weakness and where you can invest in order to build growth and stay ahead of the competition.
+            By completing a short set of questions, you will learn how you compare to your peers based upon IDC research. This is then presented back to you in an easy to read report format, enabling you to identify areas of strength and weakness and where you can invest in order to mature and stay ahead of the competition.
         </p>
         <p class="font-bold">
             Click "Start Assessment" to begin your journey. And good luck!
@@ -105,20 +107,28 @@ return array(
         'title'=> 'Digital Delivery',
     ],
     'finishtxtheading' => '
-        Thank you for completing the IDC Lean3D Assessment.
+        Thank you for completing the IDC Lean Maturity Assessment.
     ',
     'finishtxt1' => 'Based on your total responses, you rank as a',
     'finishtxtstage1' => '
-        which is the lowest level of three in this assessment.
+        Lean Laggard which is the lowest level in IDC\'s lean assessment framework. Your company has ground to make up but there are steps you can take to start driving immediate improvements.
     ',
     'finishtxtstage2' => '
-        which is the middle level of three in this assessment.
+        Lean Follower which is middle of the pack in IDC\'s lean assessment framework. Your company is keeping pace with most of the industry but there is still room for improvement to become a leader.
     ',
     'finishtxtstage3' => '
-        which is the highest level of three in this assessment.
+        Lean Leader which is the highest level in IDC\'s lean assessment framework. While your company is performing well further embracing lean will allow you to stay ahead of your peers.
     ',
     'finishtxt2' => '
-        <p class="mb-2 mt-4">Would you like the full report that provides you with essential guidance for advancing in your Digital Maturity journey? </p>
+        <p class="mb-2 mt-4">Based upon your assessment your company is least mature when it comes to</p>
+        <ul class="font-bold mb-4">
+            <li class="list-none"><span class="font-bold">engaging employees</span> – building better team relationships despite physical or organizational barriers.</li>
+            <li class="list-none"><span class="font-bold">revealing insights</span> – visualizing content and data within a digital lean framework to enhance communication/collaboration during virtual/physical meetings</li>
+            <li class="list-none"><span class="font-bold">driving improvements</span> – making "Lean thinking" a standard part of business, teams and culture to make continuous improvement</li>
+        </ul>
+    ',
+    'finishtxt3' => '
+        <p class="mb-2 mt-4">Would you like the full report that provides you with essential guidance for advancing your Lean journey and the benefits of such an approach?</p>
         <p class="mb-4">We can send this directly to your mailbox. Just provide us your details and we\'ll send it to you.</p>
     ',
     'complete_thankyou' => 'Thank you :Fname,',

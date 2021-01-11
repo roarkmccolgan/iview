@@ -10,7 +10,8 @@
 					<p class="mb-2">
 						{{ $t('dassaultlean.finishtxt'+theResult['overall'].rating) }}
 					</p>
-					<p v-html="$t('dassaultlean.finishtxt2')"></p>
+					<!-- <div class="mb-2" v-html="$t('dassaultlean.finishtxt2')"></div> -->
+					<p v-html="$t('dassaultlean.finishtxt3')"></p>
 					<img class="max-w-full" :src="'/images/tools/' + assessment.tool.id + '/report'+ assessment.locale +'.png'" alt="">
 				</div>
 				<div class="w-full sm:w-1/2">
