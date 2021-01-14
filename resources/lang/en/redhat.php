@@ -49,7 +49,7 @@ return array(
     'linkedinlink'=>'https://www.linkedin.com/shareArticle?mini=true&url=http%3A//bit.ly/2AwihN4&title=Symantec%20and%20IDC%20GDPR%20Assessment&summary=Is%20your%20business%20GDPR%20ready?&source=',
 
     'stage1' => 'Digital Innovation Experimenter',
-    'stage2' => 'Digital Innovation Optimiser',
+    'stage2' => 'Digital Innovation Optimizer',
     'stage3' => 'Digital Innovation Innovator',
 
     'complete' => 'Complete!',
@@ -135,7 +135,7 @@ return array(
         ],
         'stage2' => [
             'para1' => [
-                'Based on your responses your organization is categorized as a <span class="font-bold">Digital Innovation Optimiser</span>.'
+                'Based on your responses your organization is categorized as a <span class="font-bold">Digital Innovation Optimizer</span>.'
             ],
             'para2' => [
                 'This group is characterized by consistent use of automation across development and operations, agile methods in software delivery, and widespread use of DevOps practices. Cloud strategy is coordinated across multiple parts of the organization, and involves management, monitoring, and control across a series of cloud estates with an eye on IT agility. The approach to cloud-native app development is defined by cohesive and integrated programs across multiple parts of the organization.'
@@ -160,8 +160,8 @@ return array(
         'title' => 'Automation',
         'color' => 'green',
         'top' => '102',
-        'side' => 'The maturity stage for this dimension is dependent on a unified automation strategy',
-        'side2' => 'Software delivery (DevOps) teams have moved beyond simply scaling up the automation of traditional dev, test, and production environments',
+        'side' => 'The maturity stage for this dimension is dependent on a unified automation strategy.',
+        'side2' => 'Software delivery (DevOps) teams have moved beyond simply scaling up the automation of traditional dev, test, and production environments.',
         'para1' => [
             'Fast and automated product deployments combined with autonomous infrastructure and self-healing operations have created an environment that delights customers and differentiates the business. The maturity stage for this dimension is dependent on a unified automation strategy that leverages multicloud-based technologies for integrated process automation combined with predictive analytics and systemic agile processes. Software delivery (DevOps) teams have moved beyond simply scaling up the automation of traditional dev, test, and production environments. Modern, reusable architecture accelerates development and integration with new content types (AI/ML, IoT, etc.), and operational environments scale and adapt simultaneously based on performance thresholds and business triggers. This equates to an automation strategy with clearly defined business objectives and KPIs. ',
             '70% of European organizations invest in continuous delivery and integration to accelerate software delivery.',
@@ -178,7 +178,7 @@ return array(
         ],
         'stage2' => [
             'para2' => [
-                'Based on your response your organization is categorized as a <span class="font-bold">Digital Innovation Optimiser</span>.',
+                'Based on your response your organization is categorized as a <span class="font-bold">Digital Innovation Optimizer</span>.',
                 'This group is characterized by automated infrastructure and application provisioning, as well as self-service portal usage. There is an end-to-end automated deployment process, and automation tools are used across both development and operations teams, with increasing agile adoption for continuous delivery. Automation now spans across all testing functions, and there is a clear shift to an integrated and unified automation strategy, with best practice identification and increasing levels of reuse. However, business involvement remains limited.'
             ],
             'recommendations' => [
@@ -199,8 +199,8 @@ return array(
         'title' => 'Hybrid Cloud',
         'color' => 'green',
         'top' => '152',
-        'side' => 'key dimension in the modernization plans of any organization with a complex IT landscape',
-        'side2' => 'One in two European organizations is prioritizing a hybrid cloud strategy to accelerate software delivery in 2021',
+        'side' => 'Hybrid cloud is a key dimension in the modernization plans of any organization with a complex IT landscape.',
+        'side2' => 'One in two European organizations is prioritizing a hybrid cloud strategy to accelerate software delivery in 2021.',
         'para1' => [
             'Hybrid cloud is a key dimension in the modernization plans of any organization with a complex IT landscape. Hybrid cloud helps organizations to transition their IT delivery in a phased fashion, binding mission-critical IT estates and new-value IT assets. The maturity stage for this dimension relies on the approach to strategizing around cloud value in the business and depends on the level of cloud complexity handled by an organization, the penetration of automation and intelligent management in the cloud operations, and governance and data control.'.
             ' One in two European organizations is prioritizing a hybrid cloud strategy to accelerate software delivery in 2021.',
@@ -217,7 +217,7 @@ return array(
         ],
         'stage2' => [
             'para2' => [
-                'Based on your response your organization is categorized as a <span class="font-bold">Digital Innovation Optimiser</span>.',
+                'Based on your response your organization is categorized as a <span class="font-bold">Digital Innovation Optimizer</span>.',
                 'This group is characterized by a multicloud strategy (use of multiple public cloud providers and one or more private clouds with varying degrees of interoperability). There is standardization of container orchestration, automated infrastructure provisioning, and dev self-service. Provisioning, configuration, and orchestration is coordinated and integrated across on-premises and public cloud infrastructures.',
                 'Observability and control takes place across multiple cloud environments, but there is no central control pane. Automated provisioning and monitoring is prevalent, but this lacks intelligent management mechanisms. Overall the cloud strategy is centered on IT agility and efficiency.'
             ],
@@ -239,12 +239,12 @@ return array(
         'title' => 'Cloud Native',
         'color' => 'green',
         'top' => '200',
-        'side' => 'Competitive advantages that shift the paradigm in the way organizations deliver digital innovation',
-        'side2' => 'Developers\' precious time freed up to do actual development',
+        'side' => 'Competitive advantages that shift the paradigm in the way organizations deliver digital innovation.',
+        'side2' => 'Developers\' precious time freed up to do actual development.',
         'para1' => [
             'Cloud native introduces a series of competitive advantages that shift the paradigm in the way organizations deliver digital innovation to their end customers. Firstly, it enables organizations to move very fast, with developers\' precious time freed up to do actual development, as opposed to being caught up in undifferentiated roles and routines such as code maintenance or environment provisioning. This enables organizations to add digital value and this in turn provides a better service for the final customer. Being cloud native also enables organizations to operate in new business frameworks, with the models evolving away from long-cycle, rigid product/service market releases toward perpetual, iterative innovation.',
             'By 2024, net-new production-grade cloud-native apps will increase to 70% from 10% of all apps in 2020.',
-            'Because it changes the cadence at which organizations compete in the marketplace, there is an arms race to ensure capabilities are in place to support the business over the next decade. Most mature organizations are already prioritizing a cloud-native-first approach when creating net-new digital functionality. Nonetheless, as organizations expand into cloud native, a number of challenges emerge, including:'
+            'Because it changes the cadence at which organizations compete in the marketplace, there is an arms race to ensure capabilities are in place to support the business over the next decade. Most mature organizations are already prioritizing a cloud-native-first approach when creating net-new digital functionality. Nonetheless, as organizations expand into cloud native, a number of challenges emerge.'
         ],
         'stage1' => [
             'para2' => [
@@ -258,7 +258,7 @@ return array(
         ],
         'stage2' => [
             'para2' => [
-                'Based on your response your organization is categorized as a <span class="font-bold">Digital Innovation Optimiser</span>.',
+                'Based on your response your organization is categorized as a <span class="font-bold">Digital Innovation Optimizer</span>.',
                 'This group has an integrated and joined-up approach to onboard cloud-native-first development across parts of software dev operations. Security and governance are operationalized across most pieces of software delivery, but not yet strategically integrated. The organization has shifted to policy-driven reuse and a collaboration-driven dev culture, while engagement with open source is defined by an authorized approach. On-demand infrastructure provisioning is also operationalized, while DevOps takes place in a repeatable and governed fashion.'
             ],
             'recommendations' => [

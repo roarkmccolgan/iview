@@ -13,7 +13,7 @@ return [
         'background' => false,
         'intermission' => false,
         'class' => 'sec1',
-        'shuffle' => true,
+        'shuffle' => false,
         'display' => true,
         'complete' => false,
         'pages' => [
@@ -56,7 +56,7 @@ return [
                             'Very effective',
                             'Highly effective',
                         ],
-                        'question'=>'To what extent does your organization use the following application types?',
+                        'question'=>'How effective is your organization in supporting a hybrid workforce in the following areas? (i.e. a workforce that includes onsite, home/remote, field and contract/gig workers)?',
                         'name'=> 2,
                         'options'=>[
                             [
@@ -438,7 +438,7 @@ return [
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'We use visual content and data within a digital lean framework that spans all groups, including our ecosystem',
+                                        'label'=>'We use visual content and data within a digital lean framework that spans all groups, including our industry ecosystem',
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
