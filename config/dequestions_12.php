@@ -1239,7 +1239,7 @@ return [
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Service durch Public Cloud Anbieter',
+                                        'label'=>'Managed-Service-Anbieter',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
@@ -1266,7 +1266,7 @@ return [
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Service durch Public Cloud Anbieter',
+                                        'label'=>'Managed-Service-Anbieter',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
@@ -1293,7 +1293,7 @@ return [
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Service durch Public Cloud Anbieter',
+                                        'label'=>'Managed-Service-Anbieter',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
@@ -1320,7 +1320,7 @@ return [
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Service durch Public Cloud Anbieter',
+                                        'label'=>'Managed-Service-Anbieter',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
@@ -1347,7 +1347,7 @@ return [
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Service durch Public Cloud Anbieter',
+                                        'label'=>'Managed-Service-Anbieter',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
@@ -1374,7 +1374,7 @@ return [
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Service durch Public Cloud Anbieter',
+                                        'label'=>'Managed-Service-Anbieter',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
@@ -1401,7 +1401,7 @@ return [
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Service durch Public Cloud Anbieter',
+                                        'label'=>'Managed-Service-Anbieter',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
@@ -1428,7 +1428,7 @@ return [
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Service durch Public Cloud Anbieter',
+                                        'label'=>'Managed-Service-Anbieter',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
