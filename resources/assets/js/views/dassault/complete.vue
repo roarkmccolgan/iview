@@ -50,7 +50,7 @@
 										<label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="email">
 											{{ $t('general.email') }}
 										</label>
-										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-2" :class="[errors.email ? 'border-red' : '']" id="email" name="email" type="email" @blur="hasError" :value="assessment.questions.q1.selected">
+										<input class="appearance-none block w-full bg-grey-lighter text-grey-darker border rounded py-3 px-4 mb-2" :class="[errors.email ? 'border-red' : '']" id="email" name="email" type="email" @blur="hasError" :value="Array.isArray(assessment.questions.q1.selected) ? '' : assessment.questions.q1.selected">
 										<p class="text-red text-xs italic" v-show="errors.email" v-html="$t('general.errorEmail')"></p>
 									</div>
 								</div>
@@ -165,8 +165,8 @@
 										<input class="hidden" type="checkbox" id="marketing" name="extra[marketing]" v-model="marketing">
 										<div class="flex items-baseline">
 											<div class="mr-2 text-2xl sm:text-xl">
-												<font-awesome-icon :icon="icons.faSquare" v-if="!marketing" />
-												<font-awesome-icon :icon="icons.faCheckSquare" v-else />
+												<font-awesome-icon key="a" :icon="icons.faSquare" v-if="!marketing" />
+												<font-awesome-icon key="b" :icon="icons.faCheckSquare" v-else />
 											</div>
 											<div class="flex-grow" v-html="$t('dassault.marketing')">
 												
@@ -180,8 +180,8 @@
 										<input class="hidden" type="checkbox" id="terms" name="terms" value="terms" v-model="terms">
 										<div class="flex items-baseline">
 											<div class="mr-2 text-2xl sm:text-xl">
-												<font-awesome-icon :icon="icons.faSquare" v-if="!terms" />
-												<font-awesome-icon :icon="icons.faCheckSquare" v-else />
+												<font-awesome-icon key="a" :icon="icons.faSquare" v-if="!terms" />
+												<font-awesome-icon key="b" :icon="icons.faCheckSquare" v-else />
 											</div>
 											<div class="flex-grow" v-html="$t('dassault.byreg')">
 												
@@ -191,7 +191,9 @@
 									</label>
 								</div>
 								<div class="mb-6 w-full">
-									<button type="submit" :disabled="isSubmitting" class="text-center block bg-dassault-blue hover:text-ntt-gold shadow-md text-white py-4 px-6 rounded no-underline" :class="[{'cursor-not-allowed':isSubmitting}]" @click.prevent="checkForErrors"><font-awesome-icon class="mr-2" :class="[{'fa-spin': isSubmitting}]" :icon="isSubmitting ? icons.faSyncAlt : icons.faEnvelope"></font-awesome-icon> {{ $t('general.send') }}</button>
+									<button type="submit" :disabled="isSubmitting" class="text-center block bg-dassault-blue hover:text-ntt-gold shadow-md text-white py-4 px-6 rounded no-underline" :class="[{'cursor-not-allowed':isSubmitting}]" @click.prevent="checkForErrors">
+										<font-awesome-icon class="mr-2" :class="[{'fa-spin': isSubmitting}]" :icon="isSubmitting ? icons.faSyncAlt : icons.faEnvelope"></font-awesome-icon> {{ $t('general.send') }}
+									</button>
 								</div>
 							</div>
 						</form>
@@ -204,10 +206,10 @@
 </template>
 <script>
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import faEnvelope from '@fortawesome/pro-regular-svg-icons/faEnvelope';
+import { faEnvelope } from '@fortawesome/pro-regular-svg-icons/faEnvelope';
 import { faSquare } from '@fortawesome/pro-regular-svg-icons/faSquare';
 import { faCheckSquare } from '@fortawesome/pro-regular-svg-icons/faCheckSquare';
-import faSyncAlt from '@fortawesome/pro-regular-svg-icons/faSyncAlt';
+import { faSyncAlt } from '@fortawesome/pro-regular-svg-icons/faSyncAlt';
 export default{
 	props: ['result'],
 	data () {

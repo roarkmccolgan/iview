@@ -27,17 +27,17 @@ return [
                         'options'=>[
                             [
                                 'label'=>'Small increase in people working remotely (0-50% increase)',
-                                'value'=>5,
+                                'value'=>0,
                                 'checked'=>false,
                             ],
                             [
                                 'label'=>'Considerable increase in people working remotely (50-100% increase)',
-                                'value'=>4,
+                                'value'=>0,
                                 'checked'=>false,
                             ],
                             [
                                 'label'=>'Large increase in people working remotely (100-200%)',
-                                'value'=>3,
+                                'value'=>0,
                                 'checked'=>false,
                             ],
                         ]
@@ -163,6 +163,16 @@ return [
                         'type'=>'checkbox',
                         'question'=>'What skillsets are lacking the most among your workforce? Select all that apply',
                         'name'=> 3,
+                        'calc' => [
+                            'type' => 'qty',
+                            'between' => [
+                                '1-1' => 5, 
+                                '2-3' => 4, 
+                                '4-5' => 3, 
+                                '6-7' => 2, 
+                                '8-9' => 1, 
+                            ],
+                        ],
                         'options'=>[
                             [
                                 'label'=>'Digital literacy (ability to use digital technology)',
@@ -220,6 +230,16 @@ return [
                         'type'=>'checkbox',
                         'question'=>'Which functional areas of your businesses have had the hardest time adapting to hybrid work models? Select all that apply',
                         'name'=> 4,
+                        'calc' => [
+                            'type' => 'qty',
+                            'between' => [
+                                '1-1' => 5, 
+                                '3-4' => 4, 
+                                '5-6' => 3, 
+                                '7-9' => 2, 
+                                '10-12' => 1, 
+                            ],
+                        ],
                         'options'=>[
                             [
                                 'label'=>'Customer service',
@@ -292,6 +312,16 @@ return [
                         'type'=>'checkbox',
                         'question'=>'How are you currently using technology to maximize employee performance? Select all that apply',
                         'name'=> 5,
+                        'calc' => [
+                            'type' => 'qty',
+                            'between' => [
+                                '1-1' => 1, 
+                                '2-2' => 2, 
+                                '3-3' => 3, 
+                                '4-4' => 4, 
+                                '5-5' => 5, 
+                            ],
+                        ],
                         'options'=>[
                             [
                                 'label'=>'Automate low-value / manual tasks to improve worker productivity',
@@ -332,42 +362,42 @@ return [
                         'options'=>[
                             [
                                 'label'=>'Greater ability to attract talent due to geography neutrality',
-                                'value'=>1,
+                                'value'=>0,
                                 'checked'=>false,
                             ],
                             [
                                 'label'=>'Higher employee retention',
-                                'value'=>2,
+                                'value'=>0,
                                 'checked'=>false,
                             ],
                             [
                                 'label'=>'Higher employee productivity',
-                                'value'=>3,
+                                'value'=>0,
                                 'checked'=>false,
                             ],
                             [
                                 'label'=>'Improved employee experience',
-                                'value'=>3,
+                                'value'=>0,
                                 'checked'=>false,
                             ],
                             [
                                 'label'=>'Reduced absenteeism',
-                                'value'=>2,
+                                'value'=>0,
                                 'checked'=>false,
                             ],
                             [
                                 'label'=>'Reduction in costs (travel, real estate/facility, etc.)',
-                                'value'=>3,
+                                'value'=>0,
                                 'checked'=>false,
                             ],
                             [
                                 'label'=>'Improved employee health and safety',
-                                'value'=>3,
+                                'value'=>0,
                                 'checked'=>false,
                             ],
                             [
                                 'label'=>'Shift in leadership style to one focused on outcomes',
-                                'value'=>2,
+                                'value'=>0,
                                 'checked'=>false,
                             ],
                         ]
@@ -388,27 +418,27 @@ return [
                                 'options'=>[
                                     [
                                         'label'=>'We are in the process of upgrading our digital collaboration tools',
-                                        'value'=>1,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'We have digital collaboration tools, but use them on an ad-hoc basis',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'We collaborate digitally within workgroups, but not regularly with other workgroups',
-                                        'value'=>3,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'Digital collaboration technology and processes are in place across domain within the company, infrequently among global teams and outside the company',
+                                        'label'=>'We have digital collaboration tools, but use them on an ad-hoc basis',
                                         'value'=>4,
                                         'checked'=>false,
                                     ],
                                     [
+                                        'label'=>'We collaborate digitally within workgroups, but not regularly with other workgroups',
+                                        'value'=>6,
+                                        'checked'=>false,
+                                    ],
+                                    [
+                                        'label'=>'Digital collaboration technology and processes are in place across domain within the company, infrequently among global teams and outside the company',
+                                        'value'=>8,
+                                        'checked'=>false,
+                                    ],
+                                    [
                                         'label'=>'Digital collaboration technology and processes are in place across the company, extended globally and outside the company',
-                                        'value'=>5,
+                                        'value'=>10,
                                         'checked'=>false,
                                     ]
                                 ]
@@ -419,27 +449,27 @@ return [
                                 'options'=>[
                                     [
                                         'label'=>'We do not use visual content nor do we possess a digital lean framework',
-                                        'value'=>1,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'Visual content and a digital lean framework are used, but only within engineering/R&D and operations teams',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'We are extending the use of visual content and a digital lean framework to groups outside R&D / operations',
-                                        'value'=>3,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'We use visual content and data within a digital lean framework that spans multiple groups',
+                                        'label'=>'Visual content and a digital lean framework are used, but only within engineering/R&D and operations teams',
                                         'value'=>4,
                                         'checked'=>false,
                                     ],
                                     [
+                                        'label'=>'We are extending the use of visual content and a digital lean framework to groups outside R&D / operations',
+                                        'value'=>6,
+                                        'checked'=>false,
+                                    ],
+                                    [
+                                        'label'=>'We use visual content and data within a digital lean framework that spans multiple groups',
+                                        'value'=>8,
+                                        'checked'=>false,
+                                    ],
+                                    [
                                         'label'=>'We use visual content and data within a digital lean framework that spans all groups, including our industry ecosystem',
-                                        'value'=>5,
+                                        'value'=>10,
                                         'checked'=>false,
                                     ]
                                 ]
@@ -450,27 +480,27 @@ return [
                                 'options'=>[
                                     [
                                         'label'=>'We don\'t know how to utilize lean principles as part of decision making and have a limited ability to monitor metrics/KPIs',
-                                        'value'=>1,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'We utilize lean principles on an ad-hoc basis to set priorities and drive improvements in metrics/KPIs that vary by location',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'We utilize lean principles often (monthly) to set priorities and drive improvements in standardized metrics/KPIs',
-                                        'value'=>3,
-                                        'checked'=>false,
-                                    ],
-                                    [
-                                        'label'=>'We utilize lean principles regularly (weekly) to set priorities and drive enterprise-wide improvements in standardized metrics/KPIs)',
+                                        'label'=>'We utilize lean principles on an ad-hoc basis to set priorities and drive improvements in metrics/KPIs that vary by location',
                                         'value'=>4,
                                         'checked'=>false,
                                     ],
                                     [
+                                        'label'=>'We utilize lean principles often (monthly) to set priorities and drive improvements in standardized metrics/KPIs',
+                                        'value'=>6,
+                                        'checked'=>false,
+                                    ],
+                                    [
+                                        'label'=>'We utilize lean principles regularly (weekly) to set priorities and drive enterprise-wide improvements in standardized metrics/KPIs)',
+                                        'value'=>8,
+                                        'checked'=>false,
+                                    ],
+                                    [
                                         'label'=>'We utilize lean principles as part of day-to-day decision making to drive enterprise-wide improvements in standardized metrics/KPIs ',
-                                        'value'=>5,
+                                        'value'=>10,
                                         'checked'=>false,
                                     ]
                                 ]

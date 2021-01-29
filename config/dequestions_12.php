@@ -22,7 +22,7 @@ return [
                 'questions' => [
                     'q1'=>[
                         'type'=>'button',
-                        'question'=>'Wie schwierig ist es für Ihr Unternehmen, mit veränderten Geschäftsmustern umzugehen?',
+                        'question'=>'Wie schwierig ist es für Ihr Unternehmen mit der Veränderung von Marktbedingungen umzugehen?',
                         'name'=> 1,
                         'options'=>[
                             [
@@ -59,7 +59,7 @@ return [
                 'questions' => [
                     'q2'=>[
                         'type'=>'button',
-                        'question'=>'Wie schwierig ist es für Ihr Unternehmen, sich an Ihre personellen Veränderungen anzupassen?',
+                        'question'=>'Wie schwierig ist es für Ihr Unternehmen mit personellen Veränderungen umzugehen?',
                         'name'=> 2,
                         'options'=>[
                             [
@@ -106,7 +106,7 @@ return [
                             'Ja – für einen erheblichen Teil des Unternehmens (mehr als die Hälfte der Belegschaft, aber weniger als 80 %)',
                             'Ja – für die meisten oder alle Geschäftsbereiche (80 % oder mehr der Belegschaft)',
                         ],
-                        'question'=>'In welchem Umfang verwendet Ihr Unternehmen die folgenden Anwendungstypen?',
+                        'question'=>'Verwenden Sie bereits digitale Tools für die genannten Bereiche oder planen Sie die Einführung? ',
                         'name'=> 3,
                         'options'=>[
                             [
@@ -141,7 +141,7 @@ return [
                                 ]
                             ],
                             [
-                                'label'=>'Collaboration (Dateifreigabe, VoIP, Videokonferenzen usw.)',
+                                'label'=>'Zusammenarbeit im Team (Dateifreigabe, VoIP, Videokonferenzen usw.)',
                                 'name'=> 3.2,
                                 'options'=>[
                                     [
@@ -426,7 +426,7 @@ return [
                             'Erfolgreich',
                             'Sehr erfolgreich',
                         ],
-                        'question'=>'Bewerten Sie auf einer Skala von 1 bis 5 den Erfolg der aktuellen Bereitstellung der folgenden Anwendungstypen in Ihrem Unternehmen?',
+                        'question'=>'Auf einer Skala von 1 bis 5: Wie bewerten Sie den Erfolg der aktuell in Ihrem Unternehmen eingesetzten Technologien?',
                         'name'=> 4,
                         'options'=>[
                             [
@@ -467,7 +467,7 @@ return [
                                 ]
                             ],
                             [
-                                'label'=>'Collaboration (Dateifreigabe, VoIP, Videokonferenzen usw.)',
+                                'label'=>'Zusammenarbeit im Team (Dateifreigabe, Videokonferenzen usw.)',
                                 'name'=> 4.2,
                                 'options'=>[
                                     [
@@ -750,7 +750,7 @@ return [
                 'questions' => [
                     'q5'=>[
                         'type'=>'button',
-                        'question'=>'Welche Aussage beschreibt am besten, wie Ihr Unternehmen normalerweise CAD/CAM-Anwendungen oder -Updates einführt?',
+                        'question'=>'Welche Aussage beschreibt am besten, wie die Einführung oder das Update von CAD/CAM-Anwendungen in Ihrem Unternehmen gehandhabt wird?',
                         'name'=> 5,
                         'options'=>[
                             [
@@ -787,7 +787,7 @@ return [
                 'questions' => [
                     'q6'=>[
                         'type'=>'button',
-                        'question'=>'Wie alt ist die Version der Digital Design-Anwendung, die in Ihrem Unternehmen am häufigsten bereitgestellt wird?',
+                        'question'=>'Wie lange setzen sie die aktuelle Version der „Digital Design“-Anwendung, die in Ihrem Unternehmen am häufigsten bereitgestellt wird, bereits ein? ',
                         'name'=> 6,
                         'options'=>[
                             [
@@ -811,7 +811,7 @@ return [
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'3 Jahre oder älter',
+                                'label'=>'3 Jahre oder länger',
                                 'value'=>1,
                                 'checked'=>false,
                             ]
@@ -828,13 +828,13 @@ return [
                             'type'=>'average'
                         ],
                         'optionLabels' => [
-                            'Überhaupt nicht erfolgreich',
-                            'Etwas erfolgreich',
-                            'Mäßig erfolgreich',
-                            'Erfolgreich',
-                            'Sehr erfolgreich',
+                            'Sehr unzufrieden',
+                            'Eher unzufrieden',
+                            'Weder unzufrieden noch zufrieden',
+                            'Eher zufrieden',
+                            'Sehr zufrieden',
                         ],
-                        'question'=>'Auf einer Skala von 1 bis 5: Wie erfolgreich bewerten Sie Ihre Digital Design-Lösung für folgende Bereiche?',
+                        'question'=>'Wie zufrieden sind Sie mit der im Bereich „Digital Design“ eingesetzten Lösung in Bezug auf: ',
                         'name'=> 7,
                         'options'=>[
                             [
@@ -842,27 +842,27 @@ return [
                                 'name'=> 7.1,
                                 'options'=>[
                                     [
-                                        'label'=>'Überhaupt nicht erfolgreich',
+                                        'label'=>'Sehr unzufrieden',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Etwas erfolgreich',
+                                        'label'=>'Eher unzufrieden',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Mäßig erfolgreich',
+                                        'label'=>'Weder unzufrieden noch zufrieden',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Erfolgreich',
+                                        'label'=>'Eher zufrieden',
                                         'value'=>4,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Sehr erfolgreich',
+                                        'label'=>'Sehr zufrieden',
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
@@ -873,120 +873,120 @@ return [
                                 'name'=> 7.2,
                                 'options'=>[
                                     [
-                                        'label'=>'Überhaupt nicht erfolgreich',
+                                        'label'=>'Sehr unzufrieden',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Etwas erfolgreich',
+                                        'label'=>'Eher unzufrieden',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Mäßig erfolgreich',
+                                        'label'=>'Weder unzufrieden noch zufrieden',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Erfolgreich',
+                                        'label'=>'Eher zufrieden',
                                         'value'=>4,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Sehr erfolgreich',
+                                        'label'=>'Sehr zufrieden',
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
                                 ]
                             ],
                             [
-                                'label'=>'Performance',
+                                'label'=>'Leistung',
                                 'name'=> 7.3,
                                 'options'=>[
                                     [
-                                        'label'=>'Überhaupt nicht erfolgreich',
+                                        'label'=>'Sehr unzufrieden',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Etwas erfolgreich',
+                                        'label'=>'Eher unzufrieden',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Mäßig erfolgreich',
+                                        'label'=>'Weder unzufrieden noch zufrieden',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Erfolgreich',
+                                        'label'=>'Eher zufrieden',
                                         'value'=>4,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Sehr erfolgreich',
+                                        'label'=>'Sehr zufrieden',
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
                                 ]
                             ],
                             [
-                                'label'=>'Industry platfom for ecosystem Branchenplattform für Ökosystemunterstützung',
+                                'label'=>'Plattform zur Interaktion mit allen Projektbeteiligen',
                                 'name'=> 7.4,
                                 'options'=>[
                                     [
-                                        'label'=>'Überhaupt nicht erfolgreich',
+                                        'label'=>'Sehr unzufrieden',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Etwas erfolgreich',
+                                        'label'=>'Eher unzufrieden',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Mäßig erfolgreich',
+                                        'label'=>'Weder unzufrieden noch zufrieden',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Erfolgreich',
+                                        'label'=>'Eher zufrieden',
                                         'value'=>4,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Sehr erfolgreich',
+                                        'label'=>'Sehr zufrieden',
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
                                 ]
                             ],
                             [
-                                'label'=>'Value for Preis-Leistungs-Verhältnis',
+                                'label'=>'Preis-Leistungs-Verhältnis',
                                 'name'=> 7.5,
                                 'options'=>[
                                     [
-                                        'label'=>'Überhaupt nicht erfolgreich',
+                                        'label'=>'Sehr unzufrieden',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Etwas erfolgreich',
+                                        'label'=>'Eher unzufrieden',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Mäßig erfolgreich',
+                                        'label'=>'Weder unzufrieden noch zufrieden',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Erfolgreich',
+                                        'label'=>'Eher zufrieden',
                                         'value'=>4,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Sehr erfolgreich',
+                                        'label'=>'Sehr zufrieden',
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
@@ -997,27 +997,27 @@ return [
                                 'name'=> 7.6,
                                 'options'=>[
                                     [
-                                        'label'=>'Überhaupt nicht erfolgreich',
+                                        'label'=>'Sehr unzufrieden',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Etwas erfolgreich',
+                                        'label'=>'Eher unzufrieden',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Mäßig erfolgreich',
+                                        'label'=>'Weder unzufrieden noch zufrieden',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Erfolgreich',
+                                        'label'=>'Eher zufrieden',
                                         'value'=>4,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Sehr erfolgreich',
+                                        'label'=>'Sehr zufrieden',
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
@@ -1028,27 +1028,27 @@ return [
                                 'name'=> 7.7,
                                 'options'=>[
                                     [
-                                        'label'=>'Überhaupt nicht erfolgreich',
+                                        'label'=>'Sehr unzufrieden',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Etwas erfolgreich',
+                                        'label'=>'Eher unzufrieden',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Mäßig erfolgreich',
+                                        'label'=>'Weder unzufrieden noch zufrieden',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Erfolgreich',
+                                        'label'=>'Eher zufrieden',
                                         'value'=>4,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Sehr erfolgreich',
+                                        'label'=>'Sehr zufrieden',
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
@@ -1059,27 +1059,27 @@ return [
                                 'name'=> 7.8,
                                 'options'=>[
                                     [
-                                        'label'=>'Überhaupt nicht erfolgreich',
+                                        'label'=>'Sehr unzufrieden',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Etwas erfolgreich',
+                                        'label'=>'Eher unzufrieden',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Mäßig erfolgreich',
+                                        'label'=>'Weder unzufrieden noch zufrieden',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Erfolgreich',
+                                        'label'=>'Eher zufrieden',
                                         'value'=>4,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Sehr erfolgreich',
+                                        'label'=>'Sehr zufrieden',
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
@@ -1090,27 +1090,27 @@ return [
                                 'name'=> 7.9,
                                 'options'=>[
                                     [
-                                        'label'=>'Überhaupt nicht erfolgreich',
+                                        'label'=>'Sehr unzufrieden',
                                         'value'=>1,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Etwas erfolgreich',
+                                        'label'=>'Eher unzufrieden',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Mäßig erfolgreich',
+                                        'label'=>'Weder unzufrieden noch zufrieden',
                                         'value'=>3,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Erfolgreich',
+                                        'label'=>'Eher zufrieden',
                                         'value'=>4,
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Sehr erfolgreich',
+                                        'label'=>'Sehr zufrieden',
                                         'value'=>5,
                                         'checked'=>false,
                                     ]
@@ -1141,7 +1141,7 @@ return [
                 'questions' => [
                     'q8'=>[
                         'type'=>'button',
-                        'question'=>'Wie sieht das Senior Management des Unternehmens die Rolle der IT innerhalb des Unternehmens?',
+                        'question'=>'Welchen Stellenwert hat die IT im Unternehmen?',
                         'name'=> 8,
                         'options'=>[
                             [
@@ -1226,7 +1226,7 @@ return [
                             'Managed-Service-Anbieter',
                             'Service durch Public Cloud Anbieter',
                         ],
-                        'question'=>'Bitte geben Sie an, wie Ihr Unternehmen den End-Usern die folgenden Anwendungstypen hauptsächlich bereitstellt (oder die Bereitstellung plant)? Wählen Sie jeweils eine Option aus',
+                        'question'=>'Wie werden die einzelnen Anwendungen der IT den Anwendern der jeweiligen Funktionsbereiche zur Verfügung gestellt?',
                         'name'=> 9,
                         'options'=>[
                             [
@@ -1257,7 +1257,7 @@ return [
                                 ]
                             ],
                             [
-                                'label'=>'Collaboration (Dateifreigabe, VoIP, Videokonferenzen usw.)',
+                                'label'=>'Zusammenarbeit im Team (Dateifreigabe, Videokonferenzen usw.)',
                                 'name'=> 9.2,
                                 'options'=>[
                                     [
@@ -1454,7 +1454,7 @@ return [
                 'questions' => [
                     'q10'=>[
                         'type'=>'button',
-                        'question'=>'Welche Aussage passt am besten zum Ansatz Ihres Unternehmens, Cloud-Services für die Bereitstellung von IT-Services oder -Anwendungen zu übernehmen?',
+                        'question'=>'Welche Art der Softwarebereitstellung wird in Ihrem Unternehmen bevorzugt?',
                         'name'=> 10,
                         'options'=>[
                             [

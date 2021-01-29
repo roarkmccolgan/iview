@@ -23,34 +23,35 @@ return array(
     'title'=>'Dassault Systèmes Digital Maturity Assessment',
     'sub-title'=>'Wie digital ausgereift ist Ihr Unternehmen?',
     'landing'=>'
-        <h1 class="font-bold mb-2 leading-none">Sind Sie bereit für digitalen Erfolg?</h1>
+        <h1 class="font-bold mb-2 leading-none">„Digital Improver“, „Digital Native“ oder sogar „Digital Leader“? Starten Sie Ihr Self-Assessment.</h1>
         <p class="mb-2">
-            Durch den Wechsel zu einer Cloud-basierten Plattform können Start-ups und KMUs wie Sie Ihre Kredibilität bei Kunden, Investoren und Partnern ausbauen. So können Sie in Zukunft Schlüsselpersonen von Ihrem Unternehmen überzeugen und Innovationen kostengünstiger und nachhaltiger auf den Markt bringen.
+            Kunden und Interessenten, Investoren und Geschäftspartner erwarten daten- und faktenbasierte Präsentationen der angebotenen Produkte und Services. Gerade kleinere und mittelständische Unternehmen sowie Startups kennen das aus Ihren Pitches und nutzen schon häufig Cloud-basierte Plattformen. 
         </p>
         <p class="mb-2">
-            Kurz gesagt: Eine Plattform für digitales Design und Engineering in der Cloud ermöglicht es Ihnen, digitale Innovationen voranzutreiben und Ihr Unternehmen auf das nächste Level zu bringen.
+            Kurz gesagt, eine Plattform für digitales Design und Engineering in der Cloud ermöglicht es digitalen Vorreitern, Innovationen schneller voranzutreiben und ihr Unternehmen auf das nächste Level zu bringen. Dabei stellen sich Fragen wie:
         </p>
         <ul class="font-bold mb-4">
-            <li class="list-none">Doch wo steht Ihr Unternehmen auf dieser Reise?</li>
-            <li class="list-none">Wie können Sie digitale Technologien einsetzen, um Wachstum zu beschleunigen und Ihrer Branche voraus zu sein?</li>
-            <li class="list-none">Wo stehen Sie im Vergleich zur Konkurrenz und wo haben Sie Potential die Führung zu übernehmen?</li>
+            <li class="list-none">Auf welchem digitalen Level bewegt sich Ihr Unternehmen bereits?</li>
+            <li class="list-none">Wie können Sie digitale Technologien einsetzen, um das Wachstum zu beschleunigen und Ihrer Branche voraus zu sein?</li>
+            <li class="list-none">Wo stehen Sie im Vergleich zur Konkurrenz und in welchen Bereichen haben Sie Potential die Führung zu übernehmen?</li>
         </ul>
         <p class="mb-2">
-            IDC und Dassault Systèmes haben ein Assessment zur digitalen Reife erstellt, welches genau diese Fragen beantwortet.
+            IDC und Dassault Systèmes haben ein Assessment zur digitalen Reife erstellt, welches diese Fragen beantwortet.
         </p>
         <p class="mb-2">
-            Beantworten Sie eine kurze Reihe an Fragen und erfahren Sie, wie Sie im Vergleich zu ähnlichen Organisationen in Bezug auf Digitalisierung, Design und Cloud-Bereitstellung stehen. Selbstverständlich erhalten Sie einen übersichtlichen Bericht von uns, mit dem Sie Ihre Stärken und Schwächen identifizieren und wertvolle Schlüsse ziehen können.
+            Nach einer kurzen Reihe an Fragen erfahren Sie, wie Sie im Vergleich zu ähnlichen Organisationen in Bezug auf Digitalisierung, Design und Cloud-Bereitstellung stehen. Sie erhalten einen übersichtlichen Bericht, mit dem Sie Ihre Stärken und Schwächen identifizieren und wertvolle Schlüsse ziehen können.
         </p>
         <p class="font-bold">
-            Mit einem Klick auf „Assessment starten“ startet Ihre Reise. Wir wünschen viel Erfolg und spannende Einblicke!
+            Starten Sie jetzt Ihr Self-Assessment. Wir wünschen viel Erfolg und spannende Einblicke!
         </p>
     ',
     'startbut'=>'Assessment starten',
     
     'send'=>'Auf Wunsch schicken wir die vollständigen Ergebnisse direkt an Ihren Posteingang.',
-    'register'=>'Registrieren Sie sich jetzt, um Ihren personalisierten Report zu erhalten',
+    'register'=>'Den ausführlichen Ergebnisbericht erhalten Sie durch das Ausfüllen des Formulars ',
     'provide'=>'Nach der Angabe weniger Details, schicken wir Ihnen gerne einen Link zum Herunterladen des Reports.',
-    'byreg'=>'Durch die Registrierung bei IDC erklären Sie sich mit unserer <a href="/privacy" target="_blank">Datenschutzrichtlinie</a> und der <a href="https://www.3ds.com/privacy-policy/" target="_blank">Datenschutzrichtlinie</a> von Dassault Systèmes einverstanden.',
+    'marketing'=>'Ich bin damit einverstanden, Marketingmitteilungen von Dassault Systèmes und seinen Geschäftspartnern gemäß deren <a href="https://www.3ds.com/privacy-policy/" target="_blank">Datenschutzrichtlinien</a> zu erhalten.',
+    'byreg'=>'Ich bin mit der <a href="/privacy" target="_blank">Datenschutzrichtlinie</a> von IDC und der <a href="https://www.3ds.com/privacy-policy/" target="_blank">Datenschutzrichtlinie</a> von Dassault Systèmes einverstanden',
     'wait'=>'Während Sie auf Ihre Ergebnisse warten, können Sie diese per Twitter veröffentlichen und andere Resultate einsehen.',
     'twitterlink'=>'',
     'facebooklink'=>'',
@@ -99,7 +100,7 @@ return array(
     'finishtxtheading' => '
         Vielen Dank für Ihre Teilnahme am IDC Digital Maturity Assessment.
     ',
-    'finishtxt1' => 'Basierend auf der Gesamtheit Ihrer Antworten werden Sie als',
+    'finishtxt1' => 'Basierend auf der Gesamtheit Ihrer Antworten werden Sie als: ',
     'finishtxtstage1' => '
         Das ist die niedrigste der drei Stufen in diesem Assessment.
     ',
@@ -110,8 +111,8 @@ return array(
          Das ist die höchste der drei Stufen in diesem Assessment.
     ',
     'finishtxt2' => '
-        <p class="mb-2 mt-4"> Möchten Sie den vollständigen Report erhalten, der Ihnen wichtige Hinweise bietet, wie Sie die digitale Reife Ihres Unternehmens weiter voranbringen können? </p>
-        <p class="mb-4">Wir senden Ihnen diesen sehr gerne direkt an Ihre E-Mail-Adresse. Geben Sie dazu einfach Ihre Kontaktdaten an und erhalten Sie den Report.</p>
+        <p class="mb-2 mt-4"> Möchten Sie erfahren, wie Sie die digitale Reife Ihres Unternehmens weiter voranbringen können? Dann fordern Sie jetzt den vollständigen Ergebnisbericht an. </p>
+        <p class="mb-4">Wir senden Ihnen diesen sehr gerne direkt an Ihre E-Mail-Adresse. Nutzen Sie für die Eingabe der Empfängerdaten das folgende Formular.</p>
     ',
     'complete_thankyou' => 'Vielen Dank :Fname,',
     'complete_body' => '

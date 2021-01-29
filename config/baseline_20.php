@@ -30,21 +30,21 @@ return [
         'types' => [
             'stage1' => [
                 'low' => 0,
-                'high' => 24.99,
+                'high' => 29,
                 'copy' => 'general.8poortxt',
                 'tweet' => false,
                 'benchmark' => 20,
             ],
             'stage2' => [
-                'low' => 25,
-                'high' => 29.29,
+                'low' => 30,
+                'high' => 47,
                 'copy' => 'general.8standardtxt',
                 'tweet' => false,
                 'benchmark' => 34,
             ],
             'stage3' => [
-                'low' => 29.3,
-                'high' => 60,
+                'low' => 48,
+                'high' => 65,
                 'copy' => 'general.8goodtxt',
                 'tweet' => false,
                 'benchmark' => 28,
@@ -89,21 +89,21 @@ return [
         'types' => [
             'stage1' => [
                 'low' => 0,
-                'high' => 9.49,
+                'high' => 29,
                 'total' => 2,
                 'benchmark' => 20,
                 'copy' => 'dassault.digital-business-poor-txt'
             ],
             'stage2' => [
-                'low' => 9.5,
-                'high' => 11.99,
+                'low' => 30,
+                'high' => 47,
                 'total' => 3,
                 'benchmark' => 34,
                 'copy' => 'dassault.digital-business-standard-txt'
             ],
             'stage3' => [
-                'low' => 12,
-                'high' => 30,
+                'low' => 48,
+                'high' => 60,
                 'total' => 5,
                 'benchmark' => 28,
                 'copy' => 'dassault.digital-business-good-txt'

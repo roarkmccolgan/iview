@@ -169,50 +169,18 @@ export default{
 					}
 				});
 			})()
-			//let nextQuestionNumber = this.gotoNextQuestionNumber();
-			// var nextQ = nextQuestionNumber;
-			// console.log('Next ',nextQ);
-			// this.showNext = false;
-			// this.showDetails = false;
-			// var that = this;
-			// this.saving = true;
-			// this.saveAssessment().then(function (response) {
-			// 	if(response.data == 'success'){
-			// 		if(that.questions.hasOwnProperty('q'+nextQ)){
-			// 			setTimeout(function () {
-			// 				that.showDetails = true;
-			// 				that.$router.push({ path: '/questions/'+ nextQ});
-			// 				that.answer = [];
-			// 				that.saving = that.error = false;
-			// 				document.body.scrollTop = 0; // For Safari
-	  //   					document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-			// 			}, 300);
-			// 		}else{
-			// 			that.getResults().then(function (response) {
-			// 				if(response.data.query == 'success'){
-			// 					that.$router.push({ name: 'complete', params:{result: response.data.result}});
-			// 					document.body.scrollTop = 0; // For Safari
-	  //   						document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-			// 				}
-			// 			});
-			// 		}
-			// 	}
-			// });
 		},
 		selectOption: function(selected){
-			//console.log(selected);
-			//q16,16.1,"the label of the answer", true
 			if(this.isGroup){
-				// if(this.answer.length>0){
 				if(this.currentQuestion.type == 'groupcheckbox'){
-				
+					console.log('dude');
 				}else if(this.currentQuestion.type == 'groupopposingslider'){
 					var exists = false;
 					for (var i = this.answer.length - 1; i >= 0; i--) {
 						if(Array.isArray(this.answer[i])){
 							for (var j = this.answer[i].length - 1; j >= 0; j--) {
 								if(this.answer[i][j].name == selected[0].name){
-									//console.log(this.answer[i][j].name);
+									console.log(this.answer[i][j].name);
 									exists = i;
 								}
 							}
@@ -244,52 +212,61 @@ export default{
 					}
 					if(this.answer.length == this.currentQuestion.options.length){
 						this.showNext = true;
-					}else{
-						let numToShow = this.currentQuestion.options.length;
-						for (var i = this.currentQuestion.options.length - 1; i >= 0; i--) {
-							if(this.currentQuestion.options[i].show){
-								let check = this.currentQuestion.options[i].show;
-								let selected = this.questions['q'+check.question].selected;
-								
-								let filtered = selected.filter(answer => answer.name == check.answer);
-								
-								if(!eval(`${filtered[0].value} ${check.operator} ${check.value}`)){
-									numToShow --;
-								}
-							}
-						}
-						if(numToShow == this.answer.length){
-							this.showNext = true;
-						}
 					}
 				}
 			}else{
-				var currentLength =this.answer.length;
-				var exists = false;
-				for (var i = this.answer.length - 1; i >= 0; i--) {
-					if(this.answer[i].name == selected.name){
-						exists = i;
+				if(this.currentQuestion.type !== 'checkbox'){
+					var exists = false;
+					for (var i = this.answer.length - 1; i >= 0; i--) {
+						if(this.answer[i].name == selected.name){
+							exists = i;
+						}
 					}
-				}
-				if(exists!==false){
-					if(this.currentQuestion.type !== 'checkbox' || (this.currentQuestion.type === 'checkbox' && this.answer[exists].label == selected.label)){
+					console.log(exists);
+					if(exists!==false){
+						console.log('exists');
 						this.answer.splice(exists, 1);
 						if(this.answer.length==0) this.showNext = false;
-					}
-					if(currentLength==0 || (currentLength+1 <= this.maximum && currentLength+1 >= this.minimum)) {
-						this.answer.push(selected);
-						this.showNext = true;
-						this.error = false;
+						if(this.answer.length==0) {
+							this.answer.push(selected);
+							this.showNext = true;
+						}
 					}else{
-						this.showError('minmax', this.lang.multimaxierror);
+						console.log('not exists radio');
+						this.answer = [];
+						if(this.answer.length==0) {
+							this.$nextTick(function () {
+								this.answer.push(selected);
+								this.showNext = true;
+							});
+						}
 					}
-				}else{
-					this.answer = [];
-					if(currentLength==0 || (currentLength+1 <= this.maximum && currentLength+1 >= this.minimum)) {
-						this.answer.push(selected);
-						this.showNext = true;
+				}else if(this.currentQuestion.type === 'checkbox'){
+					var currentLength = this.answer.length;
+					var exists = false;
+					for (var i = this.answer.length - 1; i >= 0; i--) {
+						if(this.answer[i].name == selected.name && this.answer[i].label == selected.label){
+							exists = i;
+						}
+					}
+					if(exists!==false){
+						console.log('exists');
+						this.answer.splice(exists, 1);
+						if(this.answer.length==0){
+							this.showNext = false;
+						}
+						if(currentLength <= this.maximum && currentLength >= this.minimum){
+							this.error = false;
+						}
 					}else{
-						this.showError('minmax', this.lang.multimaxierror);
+						console.log('not exists');
+						if(currentLength==0 || (currentLength+1 <= this.maximum && currentLength+1 >= this.minimum)) {
+							this.answer.push(selected);
+							this.showNext = true;
+							this.error = false;
+						}else{
+							this.showError('minmax', this.lang.multimaxierror);
+						}
 					}
 				}
 			}

@@ -35,7 +35,7 @@ return array(
             <li class="list-none">How can you use digital technologies to maximize employee performance?</li>
             <li class="list-none">How well are you doing compared to the competition and where can you take the lead?</li>
             <li class="list-none">What are the benefits of enabling a hybrid workforce?</li>
-            <li class="list-none">This IDC digital maturity benchmark, created in partnership with Dassault, is designed to address these questions.</li>
+            <li class="list-none">This IDC digital maturity benchmark, created in partnership with Dassault Systèmes, is designed to address these questions.</li>
         </ul>
         
         <p class="mb-2">
@@ -57,7 +57,7 @@ return array(
     'send'=>'We can send you the full results directly to your mailbox',
     'register'=>'Register now to receive the full IDC report on enabling better business outcomes through digital collaboration and the application of lean principles',
     'provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
-    'byreg'=>'By registering with IDC, you accept our <a href="/privacy" target="_blank">Privacy Policy</a> and Dassault Systèmes, <a href="https://www.3ds.com/privacy-policy/" target="_blank">Privacy Policy</a>.',
+    'byreg'=>'<sup class="text-red-dark">*</sup> By registering with IDC, you accept our <a href="/privacy" target="_blank">Privacy Policy</a> and Dassault Systèmes, <a href="https://www.3ds.com/privacy-policy/" target="_blank">Privacy Policy</a>.',
     'marketing'=>'I agree to receive marketing communications from Dassault Systèmes and its business partners according to their <a href="https://www.3ds.com/privacy-policy/" target="_blank">Privacy Policy</a>.',
     'wait'=>'While you\'re waiting why not tweet your results and see how your colleagues measure up?',
     'twitterlink'=>'https://twitter.com/home?status=Is%20your%20business%20GDPR%20ready?%20http%3A//bit.ly/2AwihN4%20%23Symantec',
@@ -87,7 +87,7 @@ return array(
     'industry12' => 'Education',
     'industry13' => 'Healthcare',
 
-    'stage1' => 'Lead Laggard',
+    'stage1' => 'Lean Laggard',
     'stage2' => 'Lean Follower',
     'stage3' => 'Lean Leader',
     'stage1-finish' => 'Based on your total responses, you rank as a <strong class="text-ntt-data-yellow">Improver</strong>, which is the entry level in this assessment.',

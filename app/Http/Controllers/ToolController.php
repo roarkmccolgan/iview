@@ -938,6 +938,16 @@ class ToolController extends Controller
                                             $norm+=$selected;
                                         }
                                         $val = ($norm/$details['calc']['value'])*count($details['selected']);
+                                    } elseif ($details['calc']['type']=='qty') {
+                                        $norm = 0;
+                                        $total = count($details['selected']);
+                                        foreach($details['calc']['between'] as $bet => $value){
+                                            list($min, $max) = explode('-',$bet);
+                                            if($total >= $min && $total <= $max){
+                                                $val = $value;
+                                                break;
+                                            }
+                                        }
                                     } else{
                                         $val = 0;
                                         foreach ($details['selected'] as $selected) {
@@ -1008,6 +1018,16 @@ class ToolController extends Controller
                                                 $ave[]=$selected;
                                             }
                                             $val = array_sum($ave) / count($ave);
+                                        } elseif ($details['calc']['type']=='qty') {
+                                            $norm = 0;
+                                            $total = count($details['selected']);
+                                            foreach($details['calc']['between'] as $bet => $value){
+                                                list($min, $max) = explode('-',$bet);
+                                                if($total >= $min && $total <= $max){
+                                                    $val = $value;
+                                                    break;
+                                                }
+                                            }
                                         } elseif ($details['calc']['type']=='normalize') {
                                             $norm = 0;
                                             foreach ($details['selected'] as $selected) {
@@ -1217,6 +1237,16 @@ class ToolController extends Controller
                                             $answers[]=$selected['label'];
                                         }
                                         $val = array_sum($ave) / count($ave);
+                                    } elseif ($details['calc']['type']=='qty') {
+                                        $norm = 0;
+                                        $total = count($details['selected']);
+                                        foreach($details['calc']['between'] as $bet => $value){
+                                            list($min, $max) = explode('-',$bet);
+                                            if($total >= $min && $total <= $max){
+                                                $val = $value;
+                                                break;
+                                            }
+                                        }
                                     } elseif ($details['calc']['type']=='normalize') {
                                         $norm = 0;
                                         foreach ($details['selected'] as $selected) {
