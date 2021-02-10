@@ -11,11 +11,11 @@ return array(
     'change-langauge'=>'Changer la langue',
     'download-now'=>'Télécharger',
     
-    'title'=>'Cadre IDC d\agilité des entreprises',
+    'title'=>'Cadre IDC d\'agilité des entreprises',
     'sub-title'=>'Sponsorisé par ServiceNow',
     'landing-intro'=>'
 
-        L\agilité exige des informations précises en temps réel, ainsi que la capacité de les traiter et de coordonner une réponse adéquate. Ceux qui parviennent le plus rapidement à faire preuve de cette agilité deviennent plus compétitifs, bénéficient plus vite des opportunités et des technologies disponibles et établissent des relations durables avec leurs partenaires, clients et employés.
+        L\'agilité exige des informations précises en temps réel, ainsi que la capacité de les traiter et de coordonner une réponse adéquate. Ceux qui parviennent le plus rapidement à faire preuve de cette agilité deviennent plus compétitifs, bénéficient plus vite des opportunités et des technologies disponibles et établissent des relations durables avec leurs partenaires, clients et employés.
     ',
     'stat1'=>'72 % des entreprises estiment que l\'agilité est un facteur stratégique pour leur réussite future.',
     'stat2'=>'79 % des entreprises en sont encore aux premières étapes de leur parcours vers l\'agilité',
@@ -24,7 +24,7 @@ return array(
     ',
     'landing'=>'
         <h3 class="text-3xl font-snow">
-            Quel est le degré d\agilité de votre entreprise aujourd\hui ? 
+            Quel est le degré d\'agilité de votre entreprise aujourd\'hui ? 
         </h3>
         <p class="mb-4 leading-loose font-bold">
             Plus précisément, que faut-il faire pour accélérer la transition vers une plus grande agilité à venir ?
@@ -58,7 +58,7 @@ return array(
     'register'=>'Inscrivez-vous dès maintenant pour recevoir votre rapport personnalisé.',
     'provide'=>'Indiquez-nous vos coordonnées et nous vous enverrons un lien pour le télécharger.',
     'byreg'=>'By registering with IDC, you accept our <a href="/privacy" target="_blank">Privacy Policy</a> and the ServiceNow <a href="https://www.servicenow.com/privacy-statement.html" target="_blank">Privacy Policy</a>.',
-    'marketing'=>'ServiceNow peut utiliser mes coordonnées pour m\informer de ses produits, services et offres.',
+    'marketing'=>'ServiceNow peut utiliser mes coordonnées pour m\'informer de ses produits, services et offres.',
     'marketing-phone'=>'Par téléphone',
     'marketing-email'=>'Par e-mail',
     'wait'=>'While you\'re waiting why not tweet your results and see how your colleagues measure up?',
@@ -79,7 +79,7 @@ return array(
         'government' => 'Administrations',
         'healthcare' => 'Santé',
         'process_manufacturing' => 'Fabrication de type processus',
-        'discrete_manufacturing' => 'Industrie d\assemblage',
+        'discrete_manufacturing' => 'Industrie d\'assemblage',
         'telecommunications' => 'Télécommunications',
         'media' => 'Médias',
     ],
@@ -87,14 +87,14 @@ return array(
     'complete' => 'CTerminé !',
     'finishtxt' => '
         <h2 class="font-snow text-4xl font-normal leading-normal mb-4 text-snow-dark">Félicitations</h2>
-        <p class="mb-4 font-bold">Nous vous remercions d\avoir renseigné l\outil IDC d\évaluation de l\agilité, sponsorisé par ServiceNow. Vous allez maintenant découvrir le degré d\agilité de votre enreprise !!</p>
-        <p class="mb-6">D\après les réponses que vous avez fournies, IDC place votre entreprise au stade <br/><strong class="font-bold text-lg text-snow-light">:stage</strong>. À quoi correspond ce résultat ? </p>
-        <p class="mb-4">Veuillez remplir le formulaire d\inscription pour recevoir immédiatement un rapport personnalisé par e-mail avec une analyse complète de l\agilité de votre organisation, vous situer par rapport aux autres entreprises et recevoir des recommandations personnalisées.
+        <p class="mb-4 font-bold">Nous vous remercions d\'avoir renseigné l\'outil IDC d\'évaluation de l\'agilité, sponsorisé par ServiceNow. Vous allez maintenant découvrir le degré d\'agilité de votre enreprise !!</p>
+        <p class="mb-6">D\'après les réponses que vous avez fournies, IDC place votre entreprise au stade <br/><strong class="font-bold text-lg text-snow-light">:stage</strong>. À quoi correspond ce résultat ? </p>
+        <p class="mb-4">Veuillez remplir le formulaire d\'inscription pour recevoir immédiatement un rapport personnalisé par e-mail avec une analyse complète de l\'agilité de votre organisation, vous situer par rapport aux autres entreprises et recevoir des recommandations personnalisées.
 Nous traiterons vos informations avec le plus grand soin *et dans la plus stricte confidentialité*, et nous nous réjouissons de partager avec vous des recommandations utiles !
 </p>
         <p class="mb-4">
             
-La confidentialité et la sécurité de vos informations sont importantes à nos yeux. Veuillez consultez les politiques de confidentialité d\IDC en cliquant sur le lien ci-dessous.
+La confidentialité et la sécurité de vos informations sont importantes à nos yeux. Veuillez consultez les politiques de confidentialité d\'IDC en cliquant sur le lien ci-dessous.
 
             <a href="/privacy" target="_blank">Privacy Policy</a>
         </p>
@@ -121,27 +121,27 @@ La confidentialité et la sécurité de vos informations sont importantes à nos
         </div>',
     'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @ntt. Interested? ',// http://bit.ly/2gslXEh
     'email'=>[
-        'subject' => 'Évaluation IDC du cadre d\agilité sponsorisée par ServiceNow',
+        'subject' => 'Évaluation IDC du cadre d\'agilité sponsorisée par ServiceNow',
         'hi' => 'Bonjour :Fname',
-        'body' => 'Merci d\avoir effectué l\évaluation. Voici le lien qui vous permettra de télécharger votre rapport d\évaluation IDC de l\agilité. Ce rapport vous montre votre position dans votre parcours vers l\agilité, détaille vos résultats par dimension et situe votre entreprise par rapport aux autres. Il contient également des recommandations concrètes qui peuvent vous aider à construire un avenir plus agile.',
-        'link' => 'AFFICHEZ VOTRE SCORE D\AGILITÉ',
+        'body' => 'Merci d\'avoir effectué l\'évaluation. Voici le lien qui vous permettra de télécharger votre rapport d\'évaluation IDC de l\'agilité. Ce rapport vous montre votre position dans votre parcours vers l\'agilité, détaille vos résultats par dimension et situe votre entreprise par rapport aux autres. Il contient également des recommandations concrètes qui peuvent vous aider à construire un avenir plus agile.',
+        'link' => 'AFFICHEZ VOTRE SCORE D\'AGILITÉ',
         'link_inline' => 'Affichez le rapport dans votre navigateur',
         'extra' => '
-            N\hésitez pas à partager vos résultats avec d\autres services de votre entreprise et avec vos clients et partenaires. Vous pouvez toujours les inviter à remplir l\évaluation et à comparer les réponses.<br/><br/>
+            N\'hésitez pas à partager vos résultats avec d\'autres services de votre entreprise et avec vos clients et partenaires. Vous pouvez toujours les inviter à remplir l\'évaluation et à comparer les réponses.<br/><br/>
             <a href="'.url('/').'">'.url('/').'</a><br/><br/>
             Cette évaluation a été sponsorisée par ServiceNow.<br/>
-            Pour en savoir plus sur la manière dont ServiceNow peut vous aider dans votre parcours vers l\agilité pour obtenir des résultats positifs avec vos clients, employés et actionnaires, rendez-vous sur le site <a href="https://www.servicenow.co.uk/" target="blank">www.servicenow.co.uk</a><br/><br/>
+            Pour en savoir plus sur la manière dont ServiceNow peut vous aider dans votre parcours vers l\'agilité pour obtenir des résultats positifs avec vos clients, employés et actionnaires, rendez-vous sur le site <a href="https://www.servicenow.co.uk/" target="blank">www.servicenow.co.uk</a><br/><br/>
         ',
         'regards' => 'Cordialement,',
-        'team' => 'L\équipe IDC'
+        'team' => 'L\'équipe IDC'
     ],
     'leadgen'=>[
         'fname'=>'Prénom',
         'sname'=>'Nom',
         'email'=>'Adresse e-mail',
         'company'=>'Nom de la société',
-        'employees'=>'Nombre d\employés',
-        'turnover'=>'Chiffre d\affaires',
+        'employees'=>'Nombre d\'employés',
+        'turnover'=>'Chiffre d\'affaires',
         'industry'=>'Secteur',
         'country'=>'Pays',
         'state'=>'État',
@@ -149,7 +149,7 @@ La confidentialité et la sécurité de vos informations sont importantes à nos
         'phone_code'=>'Indicatif du pays',
         'title'=>'Poste',
         'send'=>'Envoyer',
-        'interested_in'=>'Centres d\intérêt',
+        'interested_in'=>'Centres d\'intérêt',
         'location'=>'Où êtes-vous basé ?',
         'locations'=>'Combien de sites possédez-vous ?',
         'company_type'=>'Décrivez votre entreprise',
@@ -161,8 +161,8 @@ La confidentialité et la sécurité de vos informations sont importantes à nos
         'errorEmail'=>'Saisissez votre nom',
         'errorCompany'=>'Saisissez le nom de votre société',
         'errorState'=>'Sélectionnez votre état',
-        'errorinterested_in'=>'PSélectionnez un centre d\intérêt.',
-        'errorIndustry'=>'Sélectionnez votre secteur d\activité.',
+        'errorinterested_in'=>'PSélectionnez un centre d\'intérêt.',
+        'errorIndustry'=>'Sélectionnez votre secteur d\'activité.',
         'errorLocation'=>'Sélectionnez une option.',
         'errorLocations'=>'Sélectionnez une option.',
         'errorCompanyType'=>'Sélectionnez une option.',
@@ -170,7 +170,7 @@ La confidentialité et la sécurité de vos informations sont importantes à nos
         'errorSell'=>'Sélectionnez une option.',
         'errorTitle'=>'Saisissez votre poste',
         'errorPhone'=>'Saisissez votre numéro de téléphone',
-        'errorPhoneCode'=>'Saisissez l\indicatif de votre pays',
+        'errorPhoneCode'=>'Saisissez l\'indicatif de votre pays',
         'errorCountry'=>'Sélectionnez votre pays',
         'errorNumber'=>'Saisissez un numéro de téléphone valide',
         'errorAccept'=>'Veuillez accepter les conditions générales',
@@ -588,7 +588,7 @@ La confidentialité et la sécurité de vos informations sont importantes à nos
                 'Les avantages du DevOps en matière  de délai de mise sur le marché et d\'amélioration de la qualité des logiciels sont reconnus dans l\'ensemble de l\'entreprise, et vos équipes des opérations informatiques cherchent des moyens d\'innover en parallèle pour fournir des ressources plus rapidement dans le "cœur fondamental". Pour vous concentrer sur vos prochaines étapes vers un avenir plus agile, IDC a formulé des recommandations clés pour une plus grande agilité de l\'architecture technologique.'
             ],
             'recommendations' => [
-                'La vitesse est décisive, mais pour progresser, vous devez commencer par définir une application d\entreprise, une plateforme et une stratégie d\'intégration de données uniques autour de l\'adaptabilité. Tous les membres de l\'entreprise, et pas seulement les développeurs, doivent disposer des outils nécessaires pour adapter leurs flux de travail.',
+                'La vitesse est décisive, mais pour progresser, vous devez commencer par définir une application d\'entreprise, une plateforme et une stratégie d\'intégration de données uniques autour de l\'adaptabilité. Tous les membres de l\'entreprise, et pas seulement les développeurs, doivent disposer des outils nécessaires pour adapter leurs flux de travail.',
                 'Rassemblez les développeurs et les équipes des opérations informatiques, en établissant une feuille de route pour migrer de plus en plus la gestion des systèmes informatiques vers la responsabilité du DevOps, tout en maintenant la gouvernance.',
                 'Passez de l\'analyse à la proactivité axée sur les informations. Vous devez chercher à lancer des fonctions logicielles qui déclenchent de manière proactive des interactions avec les employés et les clients en fonction des renseignements recueillis. Le lien entre les référentiels de données ne doit pas rencontrer d\'obstacles.'
             ]

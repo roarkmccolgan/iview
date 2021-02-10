@@ -560,7 +560,7 @@ return array(
                 'Perché possiate concentrarvi sui prossimi passi verso un futuro più agile al fine di raggiungere una maggiore agilità dell\'architettura tecnologica, IDC ha delineato alcune raccomandazioni chiave.',
             ],
             'recommendations' => [
-                'Iniziate un percorso finalizzato alla creazione di applicazioni per migliorare l\esperienza dell\'utente. Questo è un buon punto di partenza per il processo complessivo della vostra strategia di agilità. Assicuratevi che queste applicazioni siano sicure e integrate con i sistemi core.',
+                'Iniziate un percorso finalizzato alla creazione di applicazioni per migliorare l\'esperienza dell\'utente. Questo è un buon punto di partenza per il processo complessivo della vostra strategia di agilità. Assicuratevi che queste applicazioni siano sicure e integrate con i sistemi core.',
                 'Iniziate a esplorare le tecnologie open source per automatizzare lo sviluppo, i test e la configurazione dell\'infrastruttura.',
                 'Create una roadmap per automatizzare i processi di gestione dei servizi IT, come ad esempio i ticket e la risoluzione dei problemi IT, come modo per ottenere risultati rapidi e avviare il processo di trasformazione verso l\'agilità dell\'organizzazione.'
             ]
@@ -598,7 +598,7 @@ return array(
             'recommendations' => [
                 'Create una cultura dell\'automazione che sia ossessiva nell\'ottimizzazione del flusso di lavoro. A tale scopo è necessario compiere i passi finali verso una catena di strumenti coerente, dall\'automazione dei flussi di lavoro ai programmi senza codice alla gestione delle API.',
                 'Standardizzate un approccio di progettazione e implementazione per la creazione di "cicli di feedback digitale", creando informazioni approfondite da tali sistemi e apportando modifiche e miglioramenti nei processi.',
-                'Allineate i team DevOps orientati ai prodotti all\'interno dell\organizzazione con Key Performance Indicators e fattori comuni che verranno utilizzati per misurare il successo. In questo modo, non solo potranno creare funzionalità su richiesta e gestire la capacità di conseguenza, ma anche immaginare e proporre capacità di cambiamento aziendale al resto dell\'organizzazione.'
+                'Allineate i team DevOps orientati ai prodotti all\'interno dell\'organizzazione con Key Performance Indicators e fattori comuni che verranno utilizzati per misurare il successo. In questo modo, non solo potranno creare funzionalità su richiesta e gestire la capacità di conseguenza, ma anche immaginare e proporre capacità di cambiamento aziendale al resto dell\'organizzazione.'
             ]
         ],
         'stage5' => [
