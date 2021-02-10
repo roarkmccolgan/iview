@@ -56,6 +56,8 @@ return array(
         'body' => 'As promised, here\'s a link to download your IDC\'s Cloud Strategy Assessment Report. This breaks down your results by category and provides you with actionable recommendations.',
         'link' => 'Download PDF Report',
         'link_inline' => 'View Report in your browser',
+        'dont_see_text' => 'If you don\'t see the button above,',
+        'dont_see_link' => 'Click here to download the report',
         'extra' => 'Once you\'ve read the report why not visit Hitachi Vantara <a href="https://www.hitachivantara.com/go/hitachi-consulting/services/digital-modernization.html" style="color:#054683">Cloud Services</a>',
         'regards' => 'Regards',
         'team' => 'The IDC Team'

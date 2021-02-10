@@ -19,9 +19,9 @@ class PdfMonkeyService
     		$industry = $extra['industry'];
 	    	$body = [
 	    		'url' => url('/images/tools/18/'), 
-	    		'cover' => url('/images/tools/18/report_cover.png'), 
-	    		'agility_image' => url('/images/tools/18/agility.svg'), 
-	    		'5levels' => url('/images/tools/18/5levels.svg'), 
+	    		'cover' => url('/images/tools/18/report_cover'.session('locale').'.png'), 
+	    		'agility_image' => url('/images/tools/18/agility'.session('locale').'.svg'), 
+	    		'5levels' => url('/images/tools/18/5levels'.session('locale').'.svg'), 
 	    		'legend' => url('/images/tools/18/graphs/legend.svg'),
 	    		'intro' => array_key_exists($industry, trans($tool->alias.'.intro')) ? trans($tool->alias.'.intro.'.$industry) : [],
 	    		'overall' => [
@@ -61,7 +61,7 @@ class PdfMonkeyService
         if($assessment->tool_id == 19) { //redhat
             $body = [
                 'url' => url('/images/tools/19/'), 
-                'cover' => url('/images/tools/19/report_cover.png'), 
+                'cover' => url('/images/tools/19/report_cover'.session('locale').'.png'), 
                 'width' => [
                     'stage1' => 15,
                     'stage2' => 45,

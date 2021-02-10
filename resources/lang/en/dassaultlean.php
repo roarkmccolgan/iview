@@ -144,6 +144,8 @@ return array(
         'hi' => 'Hi :Fname',
         'body' => 'As promised, here\'s a link to download your Dassault Systèmes Digital Maturity Assessment Report.',
         'link' => 'Download Report',
+        'dont_see_text' => 'If you don\'t see the button above,',
+        'dont_see_link' => 'Click here to download the report',
         'extra' => 'Once you\'ve read the report why not visit Dassault Systèmes <a href="https://www.3ds.com/3dexperience/cloud/" style="color:#054683">3DS</a>',
         'regards' => 'Regards',
         'team' => 'The IDC Team'

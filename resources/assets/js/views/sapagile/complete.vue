@@ -8,7 +8,7 @@
 			<div class="flex flex-wrap justify-center">
 				<div class="w-full sm:w-1/2 relative">
 					<h2 class="font-light leading-tight mb-4 text-sapagile-blue-bright" v-html="$t('sapagile.finishtxtheading')"></h2>
-					<p v-html="$t('sapagile.finishtxt1', {'result':$t('sapagile.'+result.overall.rating)})"></p>
+					<p v-html="$t('sapagile.finishtxt1', {'result':$t('sapagile.'+theResult.overall.rating)})"></p>
 					<p v-html="$t('sapagile.finishtxt2')"></p>
 					<!-- <div v-for="sec, key in theResult">
 						<div class="font-bold">{{ key }}</div>
@@ -207,7 +207,8 @@
 									</label>
 								</div>
 								<div class="mb-6 w-full">
-									<button type="submit" :disabled="isSubmitting" class="text-center block bg-sap-blue shadow-md text-white py-4 px-6 no-underline" :class="[{'cursor-not-allowed':isSubmitting}]" @click.prevent="checkForErrors"><font-awesome-icon class="mr-2" :class="[{'fa-spin': isSubmitting}]" :icon="isSubmitting ? icons.faSyncAlt : icons.faEnvelope"></font-awesome-icon> {{ $t('general.send') }}</button>
+									<button type="submit" :disabled="isSubmitting" class="text-center block bg-sap-blue shadow-md text-white py-4 px-6 no-underline" :class="[{'cursor-not-allowed':isSubmitting}]" @click.prevent="checkForErrors">
+										<font-awesome-icon class="mr-2" :class="[{'fa-spin': isSubmitting}]" :icon="isSubmitting ? icons.faSyncAlt : icons.faEnvelope" :key="isSubmitting ? 1 : 2"></font-awesome-icon> {{ $t('general.send') }}</button>
 									<!-- <a href="#" :disabled="true" class="text-center block bg-sap-blue shadow-md text-white py-4 px-6 no-underline" :class="[{'cursor-not-allowed':isSubmitting}]" @click.prevent="checkForErrors"><font-awesome-icon class="mr-2" :class="[{'fa-spin': isSubmitting}]" :icon="isSubmitting ? icons.faSyncAlt : icons.faEnvelope"></font-awesome-icon> {{ $t('general.send') }}</a> -->
 								</div>
 							</div>
@@ -221,10 +222,10 @@
 </template>
 <script>
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import faEnvelope from '@fortawesome/pro-regular-svg-icons/faEnvelope';
+import { faEnvelope } from '@fortawesome/pro-regular-svg-icons/faEnvelope';
 import { faSquare } from '@fortawesome/pro-regular-svg-icons/faSquare';
 import { faCheckSquare } from '@fortawesome/pro-regular-svg-icons/faCheckSquare';
-import faSyncAlt from '@fortawesome/pro-regular-svg-icons/faSyncAlt';
+import { faSyncAlt } from '@fortawesome/pro-regular-svg-icons/faSyncAlt';
 export default{
 	props: ['result','scores'],
 	data () {

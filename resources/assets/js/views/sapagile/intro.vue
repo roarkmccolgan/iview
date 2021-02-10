@@ -92,7 +92,7 @@
 					</transition-group>
 			</div>
 			<div class="w-full mt-4 sm:mt-8">
-					<router-link class="block mx-auto text-center sm:inline-block w-2/3 sm:w-1/3 bg-sap-blue hover:bg-sap-yellow shadow-md text-white py-4 px-6 no-underline" :to="'/questions/1'">{{ $t('sapagile.startbut') }} <font-awesome-icon class="ml-2" :icon="icons.faArrowRight" /></router-link>
+					<router-link class="block mx-auto text-center sm:inline-block w-2/3 sm:w-1/3 bg-sap-blue hover:bg-sap-yellow shadow-md text-white py-4 px-6 no-underline" :to="getLangURL($i18n.locale) + 'questions/1'">{{ $t('sapagile.startbut') }} <font-awesome-icon class="ml-2" :icon="icons.faArrowRight" /></router-link>
 				</div>
 			</div>
 		</div>
@@ -127,10 +127,10 @@ export default{
 	},
 	methods: {
 		getLangURL: function(lang){
-			if(lang == 'en'){
-				return '';
+			if(lang == 'en' || lang == ''){
+				return '/';
 			}
-			return '/' + lang;
+			return '/' + lang + '/';
 		},
 		trackEvent: function(category, action, label){
 			this.$ga.event(category, action, label);

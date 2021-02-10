@@ -9,37 +9,36 @@
 					<div class=" my-4 p-4 sm:flex sm:justify-between space-x-12 font-bold sm:w-1/2">
 						<div class="mt-4 sm:mt-0 sm:w-2/5">
 							<img src="/images/tools/18/72.svg" class="w-32 sm:w-32 sm:h-32 sm:ml-4 mr-2" alt="">
-							<p class="text-snow-dark text-sm flex-1 leading-tight">72% of organizations consider agility to be of strategic importance to their future success.</p>
+							<p class="text-snow-dark text-sm flex-1 leading-tight" v-html="$t('snow.stat1')"></p>
 						</div>
 						<div class="mt-4 sm:mt-0 sm:w-2/5">
 							<img src="/images/tools/18/79.svg" class="w-32 sm:w-32 sm:h-32 sm:ml-4 mr-2" alt="">
-							<p class="text-snow-dark text-sm flex-1 leading-tight">79% of organizations are still at the early stages in their agility journey</p>
+							<p class="text-snow-dark text-sm flex-1 leading-tight" v-html="$t('snow.stat2')"></p>
 						</div>
 					</div>
-					<div class="sm:w-1/2 sm:text-lg mb-4">
-						So where does your organization sit? And critically, how does this compare to other organizations in your sector?
+					<div class="sm:w-1/2 sm:text-lg mb-4" v-html="$t('snow.landing-intro2')">
 					</div>
-					<router-link class="inline-block font-bold uppercase text-center bg-snow-dark border-2 border-snow-dark text-white hover:text-snow-dark hover:bg-white py-4 px-6 no-underline" :to="'/questions/1'">{{ $t('snow.startbut') }} <font-awesome-icon class="ml-2" :icon="icons.faArrowRight" /></router-link>
+					<router-link class="inline-block font-bold uppercase text-center bg-snow-dark border-2 border-snow-dark text-white hover:text-snow-dark hover:bg-white py-4 px-6 no-underline" :to="getLangURL($i18n.locale) + 'questions/1'">{{ $t('snow.startbut') }} <font-awesome-icon class="ml-2" :icon="icons.faArrowRight" /></router-link>
 				</div>
-				<div class="hidden sm:block flex w-full sm:w-auto mt-2 sm:mt-0" v-show="assessment.languages.length>1">
+				<!-- <div class="hidden sm:block flex w-full sm:w-auto mt-2 sm:mt-0" v-show="assessment.languages.length>1">
 					<span class="inline-block mr-2 text-grey-dark text-sm"><font-awesome-icon class="ml-2" :icon="icons.faGlobe" /> {{ $t('snow.change-langauge') }}:</span>
 					<span v-for="(lang, index) in assessment.languages">
-						<span v-if="(lang.abbreviation != 'en' && lang.abbreviation != assessment.locale) || (lang.abbreviation == 'en' && assessment.locale!='')">
+						<span v-if="(lang.abbreviation != 'en' && lang.abbreviation != $i18n.locale || (lang.abbreviation == 'en' && assessment.locale!='')">
 							<a :href="getLangURL(lang.abbreviation) + '/restart'" class="text-snow-dark" :title="lang.name">{{ lang.abbreviation.toUpperCase() }}</a>
 							<span class="inline-block mx-1" v-if="Object.keys(assessment.languages).length != index+1 ">|</span>
 						</span>
 					</span>
-				</div>
+				</div> -->
 			</div>			
 		</div>
 		<div class="py-12">
 			<div class="max-w-4xl mx-auto sm:my-10 flex flex-col-reverse sm:flex-row">
 				<div class="sm:w-1/4 sm:h-auto">
-					<img class="w-full" :src="`/images/tools/${assessment.tool.id}/report_sample.png`" alt="">					
+					<img class="w-full" :src="`/images/tools/${assessment.tool.id}/report_sample${assessment.locale}.png`" alt="">					
 				</div>
 				<div class="px-8 sm:flex-1 sm:ml-12">
 					<div class="mb-8 text-snow-dark" v-html="$t('snow.landing')"></div>
-					<router-link class="block w-full font-bold uppercase text-center border border-snow-dark text-snow-dark mt-8 py-2 px-4 no-underline" :to="'/questions/1'">{{ $t('snow.startbut') }} <font-awesome-icon class="ml-2" :icon="icons.faArrowRight" /></router-link>						
+					<router-link class="block w-full font-bold uppercase text-center border border-snow-dark text-snow-dark mt-8 py-2 px-4 no-underline" :to="getLangURL($i18n.locale) + 'questions/1'">{{ $t('snow.startbut') }} <font-awesome-icon class="ml-2" :icon="icons.faArrowRight" /></router-link>						
 				</div>
 			</div>			
 		</div>
@@ -68,10 +67,10 @@ export default{
 	},
 	methods: {
 		getLangURL: function(lang){
-			if(lang == 'en'){
-				return '';
+			if(lang == 'en' || lang == ''){
+				return '/';
 			}
-			return '/' + lang;
+			return '/' + lang + '/';
 		},
 		trackEvent: function(category, action, label){
 			this.$ga.event(category, action, label);

@@ -119,6 +119,8 @@ return array(
         'hi' => 'Hi :Fname',
         'body' => 'Thank you for completing the assessment, here is the link to download your IDC Agility Assessment Report. This breaks down your results by category and provides you with actionable recommendations.',
         'link' => 'VIEW YOUR AGILITY SCORE',
+        'dont_see_text' => 'If you don\'t see the button above,',
+        'dont_see_link' => 'Click here to download the report',
         'extra' => 'Feel free to share this with other departments of your organization and with your customers and partners. You can always invite them to fill in the assessment and compare answers.<br>
             <a href="https://clicktobeagile.idcready.net/">https://clicktobeagile.idcready.net/</a><br><br>
             This assessment has been sponsored by SAP.<br><br>

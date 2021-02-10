@@ -100,7 +100,7 @@ return array(
     'finishtxtheading' => '
         Vielen Dank für Ihre Teilnahme am IDC Digital Maturity Assessment.
     ',
-    'finishtxt1' => 'Basierend auf der Gesamtheit Ihrer Antworten werden Sie als: ',
+    'finishtxt1' => 'Basierend auf der Gesamtheit Ihrer Antworten werden Sie eingestuft als: ',
     'finishtxtstage1' => '
         Das ist die niedrigste der drei Stufen in diesem Assessment.
     ',
@@ -127,6 +127,8 @@ return array(
         'hi' => 'Hallo :Fname',
         'body' => 'wie versprochen finden Sie hier einen Link zum Herunterladen Ihres Dassault Systèmes Digital Maturity Assessment Reports.',
         'link' => 'Report herunterladen',
+        'dont_see_text' => 'Wenn Sie die Schaltfläche oben nicht sehen,',
+        'dont_see_link' => 'klicken Sie hier, um den Bericht herunterzuladen',
         'extra' => 'Nachdem Sie den Report gelesen haben, sollten Sie <a href="https://www.3ds.com/3dexperience/cloud/" style="color:#054683">Dassault Systèmes 3DS</a> besuchen.',
         'regards' => 'Mit freundlichen Grüßen,',
         'team' => 'Das IDC-Team'

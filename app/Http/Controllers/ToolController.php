@@ -22,6 +22,7 @@ use Illuminate\Support\Facades\Lang;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\View;
 use JavaScript;
@@ -652,13 +653,15 @@ class ToolController extends Controller
                         $this->prepareCrmRequest($crm, $request, $assessment->uuid);
                     }                    
                 }
-                if(isset($crm['only']['locale'])){
-                    if(App::getLocale() == $crm['only']['locale']){
+                if($crm['only']){
+                    if(isset($crm['only']['locale'])){
+                        if(App::getLocale() == $crm['only']['locale']){
+                            $this->prepareCrmRequest($crm, $request, $assessment->uuid);
+                        }                    
+                    }
+                    if(isset($crm['only']['field']) && $assessment[$crm['only']['field']] == $crm['only']['value']){
                         $this->prepareCrmRequest($crm, $request, $assessment->uuid);
                     }                    
-                }
-                if($assessment[$crm['only']['field']] == $crm['only']['value']){
-                    $this->prepareCrmRequest($crm, $request, $assessment->uuid);
                 }
             } else {
                 $this->prepareCrmRequest($crm, $request, $assessment->uuid);                
@@ -846,7 +849,7 @@ class ToolController extends Controller
                     $headers = [
                         'Content-Type: application/pdf',
                     ];
-                    return response()->download(storage_path().'/reports/'.$filename, $downloadName, $headers);
+                    return response()->download(storage_path().'/reports/'.$filename, $downloadName);
                 } else {
                     return $this->wkhtml($assessment->id, $reportName, $inline);
                 }                

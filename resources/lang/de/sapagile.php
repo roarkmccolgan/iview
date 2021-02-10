@@ -113,6 +113,8 @@ return array(
         'hi' => 'Hallo :Fname',
         'body' => 'vielen Dank, dass Sie die Bewertung durchgeführt haben. Anbei erhalten Sie den Link zum Herunterladen Ihrer IDC-Agilitätsbewertung. Diese zeigt Ihre Ergebnisse in den verschiedenen Kategorien und enthält Handlungsempfehlungen.',
         'link' => 'IHRE AGILITÄTSBEWERTUNG ANZEIGEN',
+        'dont_see_text' => 'Wenn Sie die Schaltfläche oben nicht sehen,',
+        'dont_see_link' => 'klicken Sie hier, um den Bericht herunterzuladen',
         'extra' => 'Sie können die Bewertung mit anderen Abteilungen Ihres Unternehmens, Ihren Kunden und Partnern teilen. Natürlich können Sie ihnen auch empfehlen, die Bewertung ebenfalls durchzuführen, damit sie die Ergebnisse vergleichen können.<br>
             <a href="https://clicktobeagile.idcready.net/de">https://clicktobeagile.idcready.net/de</a><br><br>
             Diese Bewertung wurde im Auftrag von SAP entwickelt.<br><br>

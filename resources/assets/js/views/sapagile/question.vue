@@ -179,7 +179,9 @@ export default{
 						if(that.questions.hasOwnProperty('q'+nextQ)){
 							setTimeout(function () {
 								that.showDetails = true;
-								that.$router.push({ path: '/questions/'+ nextQ});
+								let path = that.$i18n.locale == 'en' ? `/questions/${nextQ}` : `/${that.$i18n.locale}/questions/${nextQ}`;
+								console.log(path);
+								that.$router.push({ path: path});
 								that.answer = [];
 								that.saving = that.error = false;
 								document.body.scrollTop = 0; // For Safari
@@ -188,7 +190,9 @@ export default{
 						}else{
 							that.getResults().then(function (response) {
 								if(response.data.query == 'success'){
-									that.$router.push({ name: 'complete', params:{result: response.data.result,scores: response.data.scores}});
+									let name = that.$i18n.locale == 'en' ? 'complete' : 'completelocale';
+									let params = that.$i18n.locale == 'en' ? {  name: name, params: {result: response.data.result,scores: response.data.scores}} : {  name: name, params: {lang: that.$i18n.locale, result: response.data.result,scores: response.data.scores}};
+									that.$router.push(params);
 									document.body.scrollTop = 0; // For Safari
 		    						document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 								}
@@ -397,6 +401,12 @@ export default{
 				console.log('dontskip');
 				return next;
 			}
+		},
+		getLangURL: function(lang){
+			if(lang == 'en'){
+				return '/';
+			}
+			return '/' + lang + '/';
 		}
 	},
 	filters: {

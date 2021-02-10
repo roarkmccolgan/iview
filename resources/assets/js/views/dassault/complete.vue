@@ -9,7 +9,7 @@
 				<div class="w-full sm:w-1/2 relative">
 					<h2 class="font-light leading-tight mb-4 text-dassault-blue">{{ $t('dassault.finishtxtheading') }}</h2>
 					<p>
-						{{ $t('dassault.finishtxt1') }}: <strong class="inline font-bold text-lg text-dassault-blue">{{ $t('dassault.'+result.overall.rating) }}</strong>
+						{{ $t('dassault.finishtxt1') }} <strong class="inline font-bold text-lg text-dassault-blue">{{ $t('dassault.'+result.overall.rating) }}</strong>
 					</p>
 					<p class="mb-2">
 						{{ $t('dassault.finishtxt'+theResult['overall'].rating) }}

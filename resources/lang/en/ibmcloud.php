@@ -107,6 +107,8 @@ return array(
         'body' => 'As promised, here\'s a link to download your IDC\'s Cloud Journey Assessment Report sponsored by IBM. This breaks down your results by category and provides you with actionable recommendations.',
         'link' => 'Download PDF Report',
         'link_inline' => 'View Report in your browser',
+        'dont_see_text' => 'If you don\'t see the button above,',
+        'dont_see_link' => 'Click here to download the report',
         'extra' => '
             Once you\'ve read the report why not visit IBM <a href="https://www.ibm.com/se-en/cloud/yourcloud?utm_medium=Email&utm_source=External&utm_content=000039UZ&utm_term=10013943&utm_id=LP-IDC-Survey-email&cm_mmc=Email_External-_-Unlock+Cloud+and+AI_Technology+Transformation-_-INO_INO-_-LP-IDC-Survey-email&cm_mmca1=000039UZ&cm_mmca2=10013943">Click here</a><br/><br/>
             If you would like to contact someone directly about your Cloud Journey please contact Matthias Grip at IBM using the details below:<br/><br/>

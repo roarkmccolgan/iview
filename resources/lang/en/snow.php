@@ -16,6 +16,9 @@ return array(
     'landing-intro'=>'
         Agility requires accurate and timely information, the ability to process and act on that information, and the capability to coordinate a response. Those that get this right quickly become more competitive, take advantage of opportunities and technologies more quickly, and build stronger relationships with partners, customers and employees.
         ',
+    'stat1'=>'72% of organizations consider agility to be of strategic importance to their future success.',
+    'stat2'=>'79% of organizations are still at the early stages in their agility journey',
+    'landing-intro2'=>'So where does your organization sit? And critically, how does this compare to other organizations in your sector?',
     'landing'=>'
         <h3 class="text-3xl font-snow">
             How agile is your business today? 
@@ -98,15 +101,15 @@ return array(
         To learn more about ServiceNow take a look at the resources below:<br><br>
         <div class="flex flex-wrap mt-5">
             <a href="https://www.blogs.servicenow.com/2020/partner-integrations-in-now-platform-paris-release.html" target="_blank" class="no-underline block w-full sm:flex-1 border p-2 rounded mb-2 sm:mb-0 shadow mr-4">
-                <img src=":tool_url/images/tools/18/agile_link.jpg" alt="" class="w-full mb-2" />
+                <img src="'.asset('images/tools/18/agile_link.jpg').'" alt="" class="w-full mb-2" />
                 <h5 class="text-lg text-snow-dark mb-2">Power agility and resilience</h5>
             </a>
             <!--a href="https://www.servicenow.com/now-at-work.html" target="_blank" class="no-underline block w-full sm:flex-1 border p-2 rounded mb-2 sm:mb-0 shadow mr-4">
-                <img src=":tool_url/images/tools/18/leaders_link.jpg" alt="" class="w-full mb-2" />
+                <img src="'.asset('images/tools/18/leaders_link.jpg').'" alt="" class="w-full mb-2" />
                 <h5 class="text-lg text-snow-dark mb-2">Now at work 2020</h5>
             </a-->
             <a href="https://www.servicenow.com/now-platform/latest-release.html" target="_blank" class="no-underline block w-full sm:flex-1 border p-2 rounded mb-2 sm:mb-0 shadow">
-                <img src=":tool_url/images/tools/18/new_link.jpg" alt="" class="w-full mb-2" />
+                <img src="'.asset('images/tools/18/new_link.jpg').'" alt="" class="w-full mb-2" />
                 <h5 class="text-lg text-snow-dark mb-2">Latest Now platform innovations</h5>
             </a>
         </div>',
@@ -117,6 +120,8 @@ return array(
         'body' => 'Thank you for completing the assessment, here is the link to download your IDC Agility Assessment Report. This shows you where you are on your agility journey, breaks down your results by dimension, and benchmarks your organization against your industry peers. In the report, you will also find actionable recommendations that can help you build a more agile future.',
         'link' => 'VIEW YOUR AGILITY SCORE',
         'link_inline' => 'View Report in your browser',
+        'dont_see_text' => 'If you don\'t see the button above,',
+        'dont_see_link' => 'Click here to download the report',
         'extra' => '
             Feel free to share this with other departments of your organization and with you customers and partners. You can always invite them to fill in the assessment and compare answers.<br/><br/>
             <a href="'.url('/').'">'.url('/').'</a><br/><br/>

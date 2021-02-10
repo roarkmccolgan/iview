@@ -87,6 +87,8 @@ return array(
         'hi' => 'Hi :Fname',
         'body' => 'As promised, here\'s a link to download your VMware Network Security Assessment Report.',
         'link' => 'Download Report',
+        'dont_see_text' => 'If you don\'t see the button above,',
+        'dont_see_link' => 'Click here to download the report',
         'extra' => 'Once you\'ve read the report why not visit <a href="https://www.vmware.com/solutions/virtual-cloud-network.html" style="color:#054683">VMware</a>',
         'regards' => 'Regards',
         'team' => 'The IDC Team'

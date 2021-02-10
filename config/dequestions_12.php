@@ -421,7 +421,7 @@ return [
                         ],
                         'optionLabels' => [
                             'Überhaupt nicht erfolgreich',
-                            'Etwas erfolgreich',
+                            'Wenig erfolgreich',
                             'Mäßig erfolgreich',
                             'Erfolgreich',
                             'Sehr erfolgreich',
@@ -439,7 +439,7 @@ return [
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Etwas erfolgreich',
+                                        'label'=>'Wenig erfolgreich',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
@@ -476,7 +476,7 @@ return [
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Etwas erfolgreich',
+                                        'label'=>'Wenig erfolgreich',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
@@ -513,7 +513,7 @@ return [
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Etwas erfolgreich',
+                                        'label'=>'Wenig erfolgreich',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
@@ -550,7 +550,7 @@ return [
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Etwas erfolgreich',
+                                        'label'=>'Wenig erfolgreich',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
@@ -587,7 +587,7 @@ return [
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Etwas erfolgreich',
+                                        'label'=>'Wenig erfolgreich',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
@@ -624,7 +624,7 @@ return [
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Etwas erfolgreich',
+                                        'label'=>'Wenig erfolgreich',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
@@ -661,7 +661,7 @@ return [
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Etwas erfolgreich',
+                                        'label'=>'Wenig erfolgreich',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],
@@ -698,7 +698,7 @@ return [
                                         'checked'=>false,
                                     ],
                                     [
-                                        'label'=>'Etwas erfolgreich',
+                                        'label'=>'Wenig erfolgreich',
                                         'value'=>2,
                                         'checked'=>false,
                                     ],

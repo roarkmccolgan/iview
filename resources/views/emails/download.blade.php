@@ -193,18 +193,18 @@ ul li, ol li {
 						<table>
 							<tr>
 								<td class="padding">
-									<p><a href="{{ session('url').session('localeUrl').'/download/'.$assessment->uuid }}" class="btn-primary" style="color:#FFF">{{trans(session('product.alias').'.email.link')}}</a></p>
+									<p><a href="{{ session('url').'/'.session('localeUrl').'download/'.$assessment->uuid }}" class="btn-primary" style="color:#FFF">{{trans(session('product.alias').'.email.link')}}</a></p>
 								</td>
 							</tr>
 							@if(isset($inline) && $inline!=false)
 							<tr>
 								<td class="padding">
-									<p><a href="{{ session('url').session('localeUrl').'/download/'.$assessment->uuid.'?browser=true' }}" class="btn-primary" style="color:#FFF">{{trans(session('product.alias').'.email.link_inline')}}</a></p>
+									<p><a href="{{ session('url').'/'.session('localeUrl').'download/'.$assessment->uuid.'?browser=true' }}" class="btn-primary" style="color:#FFF">{{trans(session('product.alias').'.email.link_inline')}}</a></p>
 								</td>
 							</tr>
 							@endif
 						</table>
-						<p>If you don't see the button above, <a href="{{ session('url').session('localeUrl').'/download/'.$assessment->uuid }}">Click here to download the report</a></p>
+						<p>{!!trans(session('product.alias').'.email.dont_see_text')!!}<a href="{{ session('url').session('localeUrl').'download/'.$assessment->uuid }}">{!!trans(session('product.alias').'.email.dont_see_link')!!}</a></p>
 						@if(Lang::has(session('product.alias').'.email.extra'))
 						<p>{!!trans(session('product.alias').'.email.extra')!!}</p>
 						@endif
