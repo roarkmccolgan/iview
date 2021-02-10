@@ -83,7 +83,7 @@ return array(
     ],
 
     'stage1' => 'Principiante en agilidad',
-    'stage1' => 'Impulsora de agilidad',
+    'stage2' => 'Impulsora de agilidad',
     'stage3' => 'Transformadora de agilidad',
     'stage4' => 'Aceleradora de agilidad',
     'stage5' => 'Disruptiva de agilidad',

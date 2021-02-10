@@ -5383,7 +5383,8 @@ export default {
                 "title": "Experiencia con el personal",
                 "popup": "\n            La experiencia con el personal se refiere a la forma de compartir la información con los empleados, así como a sus opiniones y observaciones sobre sus puestos de trabajo. También se refiere a cómo se evalúan, cómo se motivan y al nivel de compromiso de los empleados con el trabajo y la empresa.  \n        "
             },
-            "stage1": "Impulsora de agilidad",
+            "stage1": "Principiante en agilidad",
+            "stage2": "Impulsora de agilidad",
             "stage3": "Transformadora de agilidad",
             "stage4": "Aceleradora de agilidad",
             "stage5": "Disruptiva de agilidad",
