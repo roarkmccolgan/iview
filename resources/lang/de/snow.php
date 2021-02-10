@@ -39,18 +39,23 @@ return array(
 
     'leadership-intro' => [
         'title'=> 'Agilität als Führungsvision ',
+        'now_lets' => 'Bewerten Sie die Agilität Ihrer Leadership Vision'
     ],
     'structural-intro' => [
         'title'=> 'Agile Strukturen',
+        'now_lets' => 'Bewerten Sie Ihre strukturelle Agilität'
     ],
     'process-intro' => [
         'title'=> 'Agile Prozesse',
+        'now_lets' => 'Bewerten Sie Ihre Prozess-Agilität'
     ],
     'portfolio-intro' => [
         'title'=> 'Portfolio-Agilität',
+        'now_lets' => 'Bewerten Sie Ihre Portfolio-Agilität'
     ],
     'technology-intro' => [
         'title'=> 'Technologiearchitektur',
+        'now_lets' => 'Bewerten Sie Ihre Technologie-Architektur'
     ],
     
     'send'=>'Die vollständigen Ergebnisse können wir Ihnen direkt zuschicken',

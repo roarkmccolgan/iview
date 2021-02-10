@@ -2,7 +2,7 @@
 		<div>
 			<div class="bg-snow-gray pt-4 sm:pt-8">
 				<div class="container mx-auto px-4 sm:px-0 py-20">
-					<h2 class="font-snow text-snow-dark text-xl sm:text-5xl leading-tight">Now let's assess your {{ section }}</h2>
+					<h2 class="font-snow text-snow-dark text-xl sm:text-5xl leading-tight">{{ section }}</h2>
 				</div>
 			</div>
 			<div class="container mx-auto px-4 sm:px-0">

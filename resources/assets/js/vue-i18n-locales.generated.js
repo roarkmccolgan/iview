@@ -205,19 +205,24 @@ export default {
             "landing": "\r\n        <h3 class=\"text-3xl font-snow\">\r\n            Wie agil ist Ihr Unternehmen heute? \r\n        </h3>\r\n        <p class=\"mb-4 leading-loose font-bold\">\r\n            Und wie können Sie noch schneller noch agiler werden?\r\n        </p>\r\n        <p class=\"mb-2\">\r\n            Das Selbsteinschätzungstool von IDC deckt fünf Hauptaspekte von Agilität ab: *Führungsstärke*, *Organisation*, *Prozess*, *Portfolio* und *Technologiearchitektur*. Anhand Ihrer Ergebnisse und einer umfassenden Umfrage unter mehr als 870 Führungskräften von EMEA-Unternehmen erfahren Sie, wo Ihr Unternehmen in Sachen Agilität steht.\r\n        </p>\r\n        <p class=\"mb-2\">\r\n            Wenn Sie 14 Fragen aus den oben genannten fünf Bereichen beantworten, erhalten Sie einen individuellen Bericht mit speziellen Empfehlungen und einer Roadmap bzw. Änderungsvorschlägen. Auf Basis von Anwendungsfällen und Technologien können Sie somit praxisorientierte und konkrete Initiativen anstoßen und für eine agilere Zukunft sorgen.\r\n        </p>\r\n        ",
             "startbut": "Führen Sie jetzt die Bewertung durch",
             "leadership-intro": {
-                "title": "Agilität als Führungsvision "
+                "title": "Agilität als Führungsvision ",
+                "now_lets": "Bewerten Sie die Agilität Ihrer Leadership Vision"
             },
             "structural-intro": {
-                "title": "Agile Strukturen"
+                "title": "Agile Strukturen",
+                "now_lets": "Bewerten Sie Ihre strukturelle Agilität"
             },
             "process-intro": {
-                "title": "Agile Prozesse"
+                "title": "Agile Prozesse",
+                "now_lets": "Bewerten Sie Ihre Prozess-Agilität"
             },
             "portfolio-intro": {
-                "title": "Portfolio-Agilität"
+                "title": "Portfolio-Agilität",
+                "now_lets": "Bewerten Sie Ihre Portfolio-Agilität"
             },
             "technology-intro": {
-                "title": "Technologiearchitektur"
+                "title": "Technologiearchitektur",
+                "now_lets": "Bewerten Sie Ihre Technologie-Architektur"
             },
             "send": "Die vollständigen Ergebnisse können wir Ihnen direkt zuschicken",
             "register": "Registrieren Sie sich jetzt, um Ihren personalisierten Bericht zu erhalten",
@@ -1989,19 +1994,24 @@ export default {
             "landing": "\n        <h3 class=\"text-3xl font-snow\">\n            How agile is your business today? \n        </h3>\n        <p class=\"mb-4 leading-loose font-bold\">\n            More specifically, what needs to be done in order to accelerate the journey to even greater agility tomorrow?\n        </p>\n        <p class=\"mb-2\">\n            IDC's agility self-assessment tool targets 5 core measures of agility: <strong>Leadership</strong>, <strong>Organization</strong>, <strong>Process</strong>, <strong>Portfolio</strong>, and <strong>Technology Architecture</strong>. Powered by extensive research of over 870 leaders of EMEA organizations, the outputs of the tool benchmark your organization and where you sit in your agility journey.\n        </p>\n        <p class=\"mb-2\">\n            By answering 14 questions across the 5 core measurement areas above, you will receive a customized report that highlights specific recommendations and a roadmap or change. This will enable you to target practical and tangible initiatives use cases and technologies, and build towards a more agile future.\n        </p>\n        ",
             "startbut": "Take the assessment now",
             "leadership-intro": {
-                "title": "Leadership Vision Agility"
+                "title": "Leadership Vision Agility",
+                "now_lets": "Now let's assess your Leadership Vision Agility"
             },
             "structural-intro": {
-                "title": "Structural Agility"
+                "title": "Structural Agility",
+                "now_lets": "Now let's assess your Structural Agility"
             },
             "process-intro": {
-                "title": "Process Agility"
+                "title": "Process Agility",
+                "now_lets": "Now let's assess your Process Agility"
             },
             "portfolio-intro": {
-                "title": "Portfolio Agility"
+                "title": "Portfolio Agility",
+                "now_lets": "Now let's assess your Portfolio Agility"
             },
             "technology-intro": {
-                "title": "Technology Architecture "
+                "title": "Technology Architecture ",
+                "now_lets": "Now let's assess your Technology Architecture"
             },
             "send": "We can send you the full results directly to your mailbox",
             "register": "Register now to receive your personalized report",
@@ -4787,19 +4797,24 @@ export default {
             "landing": "\r\n        <h3 class=\"text-3xl font-snow\">\r\n            ¿Cómo es de ágil su empresa a día de hoy? \r\n        </h3>\r\n        <p class=\"mb-4 leading-loose font-bold\">\r\n            Más concretamente, ¿qué es necesario hacer para acelerar el itinerario hacia una agilidad aún mayor en el futuro?\r\n        </p>\r\n        <p class=\"mb-2\">\r\n            Más concretamente, ¿qué es necesario hacer para acelerar el itinerario hacia una agilidad aún mayor en el futuro? <strong>Leadership</strong>, <strong>Organization</strong>, <strong>Process</strong>, <strong>Portfolio</strong>, and <strong>Technology Architecture</strong>. Sobre la base de un amplio estudio realizado entre más de 870 líderes de organizaciones de la región de EMEA, los resultados de la herramienta permiten evaluar su organización y dónde se encuentra en el itinerario hacia la agilidad.\r\n        </p>\r\n        <p class=\"mb-2\">\r\n            Tras responder a 14 preguntas sobre las 5 áreas de medición principales mencionadas anteriormente, recibirá un informe donde se destacan recomendaciones específicas y un plan estratégico o cambio. Esto le permitirá impulsar iniciativas, tecnologías y casos de uso prácticos y tangibles, además de avanzar hacia un futuro más ágil.\r\n        </p>\r\n        ",
             "startbut": "Realice la evaluación ahora",
             "leadership-intro": {
-                "title": "Visión de liderazgo para la agilidad"
+                "title": "Visión de liderazgo para la agilidad",
+                "now_lets": "Evaluemos ahora su Agilidad de Visión de Liderazgo"
             },
             "structural-intro": {
-                "title": "Agilidad estructural"
+                "title": "Agilidad estructural",
+                "now_lets": "Evaluemos ahora su Agilidad Estructural"
             },
             "process-intro": {
-                "title": "Agilidad de procesos"
+                "title": "Agilidad de procesos",
+                "now_lets": "Evaluemos ahora su Agilidad de Procesos"
             },
             "portfolio-intro": {
-                "title": "Agilidad de la cartera de productos"
+                "title": "Agilidad de la cartera de productos",
+                "now_lets": "Evaluemos ahora su Agilidad de Cartera"
             },
             "technology-intro": {
-                "title": "Arquitectura tecnológica  "
+                "title": "Arquitectura tecnológica  ",
+                "now_lets": "Evaluemos ahora su Arquitectura Tecnológica"
             },
             "send": "Podemos enviarle los resultados completos directamente a su correo electrónico",
             "register": "Regístrese ahora para recibir su informe personalizado",
@@ -5775,13 +5790,13 @@ export default {
             "sponsors": "ServiceNow",
             "change-langauge": "Changer la langue",
             "download-now": "Télécharger",
-            "title": "Cadre IDC d\\agilité des entreprises",
+            "title": "Cadre IDC d'agilité des entreprises",
             "sub-title": "Sponsorisé par ServiceNow",
-            "landing-intro": "\n\n        L\\agilité exige des informations précises en temps réel, ainsi que la capacité de les traiter et de coordonner une réponse adéquate. Ceux qui parviennent le plus rapidement à faire preuve de cette agilité deviennent plus compétitifs, bénéficient plus vite des opportunités et des technologies disponibles et établissent des relations durables avec leurs partenaires, clients et employés.\n    ",
+            "landing-intro": "\n\n        L'agilité exige des informations précises en temps réel, ainsi que la capacité de les traiter et de coordonner une réponse adéquate. Ceux qui parviennent le plus rapidement à faire preuve de cette agilité deviennent plus compétitifs, bénéficient plus vite des opportunités et des technologies disponibles et établissent des relations durables avec leurs partenaires, clients et employés.\n    ",
             "stat1": "72 % des entreprises estiment que l'agilité est un facteur stratégique pour leur réussite future.",
             "stat2": "79 % des entreprises en sont encore aux premières étapes de leur parcours vers l'agilité",
             "landing-intro2": "\n        Où se positionne votre entreprise ? Et surtout, comment est son positionnement par rapport aux autres entreprises de votre secteur ?\n    ",
-            "landing": "\n        <h3 class=\"text-3xl font-snow\">\n            Quel est le degré d\\agilité de votre entreprise aujourd\\hui ? \n        </h3>\n        <p class=\"mb-4 leading-loose font-bold\">\n            Plus précisément, que faut-il faire pour accélérer la transition vers une plus grande agilité à venir ?\n        </p>\n        <p class=\"mb-2\">\n            L'outil IDC d'auto-évaluation de l'agilité cible cinq mesures fondamentales de l'agilité : <strong>Leadership</strong>, <strong>Organization</strong>, <strong>Process</strong>, <strong>Portfolio</strong>, et <strong>Technology Architecture</strong>. Grâce à des recherches approfondies menées auprès de plus de 870 dirigeants d'entreprises EMEA, les résultats de l'outil servent de référence pour votre entreprise et pour votre position dans votre parcours vers l'agilité.\n        </p>\n        <p class=\"mb-2\">\n            En répondant à 14 questions associées aux cinq mesures fondamentales ci-dessus, vous recevrez un rapport personnalisé mettant en évidence des recommandations spécifiques et une feuille de route pour votre transformation. Ce rapport vous permettra de cibler des initiatives pratiques et tangibles, des cas d'utilisation et des technologies, et de vous orienter vers un avenir plus agile.\n        </p>\n        ",
+            "landing": "\n        <h3 class=\"text-3xl font-snow\">\n            Quel est le degré d'agilité de votre entreprise aujourd'hui ? \n        </h3>\n        <p class=\"mb-4 leading-loose font-bold\">\n            Plus précisément, que faut-il faire pour accélérer la transition vers une plus grande agilité à venir ?\n        </p>\n        <p class=\"mb-2\">\n            L'outil IDC d'auto-évaluation de l'agilité cible cinq mesures fondamentales de l'agilité : <strong>Leadership</strong>, <strong>Organization</strong>, <strong>Process</strong>, <strong>Portfolio</strong>, et <strong>Technology Architecture</strong>. Grâce à des recherches approfondies menées auprès de plus de 870 dirigeants d'entreprises EMEA, les résultats de l'outil servent de référence pour votre entreprise et pour votre position dans votre parcours vers l'agilité.\n        </p>\n        <p class=\"mb-2\">\n            En répondant à 14 questions associées aux cinq mesures fondamentales ci-dessus, vous recevrez un rapport personnalisé mettant en évidence des recommandations spécifiques et une feuille de route pour votre transformation. Ce rapport vous permettra de cibler des initiatives pratiques et tangibles, des cas d'utilisation et des technologies, et de vous orienter vers un avenir plus agile.\n        </p>\n        ",
             "startbut": "Passez l'évaluation dès maintenant",
             "leadership-intro": {
                 "title": "Vision du leadership pour l'agilité"
@@ -5802,7 +5817,7 @@ export default {
             "register": "Inscrivez-vous dès maintenant pour recevoir votre rapport personnalisé.",
             "provide": "Indiquez-nous vos coordonnées et nous vous enverrons un lien pour le télécharger.",
             "byreg": "By registering with IDC, you accept our <a href=\"/privacy\" target=\"_blank\">Privacy Policy</a> and the ServiceNow <a href=\"https://www.servicenow.com/privacy-statement.html\" target=\"_blank\">Privacy Policy</a>.",
-            "marketing": "ServiceNow peut utiliser mes coordonnées pour m\\informer de ses produits, services et offres.",
+            "marketing": "ServiceNow peut utiliser mes coordonnées pour m'informer de ses produits, services et offres.",
             "marketing-phone": "Par téléphone",
             "marketing-email": "Par e-mail",
             "wait": "While you're waiting why not tweet your results and see how your colleagues measure up?",
@@ -5821,32 +5836,32 @@ export default {
                 "government": "Administrations",
                 "healthcare": "Santé",
                 "process_manufacturing": "Fabrication de type processus",
-                "discrete_manufacturing": "Industrie d\\assemblage",
+                "discrete_manufacturing": "Industrie d'assemblage",
                 "telecommunications": "Télécommunications",
                 "media": "Médias"
             },
             "complete": "CTerminé !",
-            "finishtxt": "\n        <h2 class=\"font-snow text-4xl font-normal leading-normal mb-4 text-snow-dark\">Félicitations</h2>\n        <p class=\"mb-4 font-bold\">Nous vous remercions d\\avoir renseigné l\\outil IDC d\\évaluation de l\\agilité, sponsorisé par ServiceNow. Vous allez maintenant découvrir le degré d\\agilité de votre enreprise !!</p>\n        <p class=\"mb-6\">D\\après les réponses que vous avez fournies, IDC place votre entreprise au stade <br/><strong class=\"font-bold text-lg text-snow-light\">{stage}</strong>. À quoi correspond ce résultat ? </p>\n        <p class=\"mb-4\">Veuillez remplir le formulaire d\\inscription pour recevoir immédiatement un rapport personnalisé par e-mail avec une analyse complète de l\\agilité de votre organisation, vous situer par rapport aux autres entreprises et recevoir des recommandations personnalisées.\nNous traiterons vos informations avec le plus grand soin *et dans la plus stricte confidentialité*, et nous nous réjouissons de partager avec vous des recommandations utiles !\n</p>\n        <p class=\"mb-4\">\n            \nLa confidentialité et la sécurité de vos informations sont importantes à nos yeux. Veuillez consultez les politiques de confidentialité d\\IDC en cliquant sur le lien ci-dessous.\n\n            <a href=\"/privacy\" target=\"_blank\">Privacy Policy</a>\n        </p>\n        <img src=\"{url}/images/tools/18/report_sample.png\" alt=\"\" class=\"w-5/6 mx-auto\" />\n    ",
+            "finishtxt": "\n        <h2 class=\"font-snow text-4xl font-normal leading-normal mb-4 text-snow-dark\">Félicitations</h2>\n        <p class=\"mb-4 font-bold\">Nous vous remercions d'avoir renseigné l'outil IDC d'évaluation de l'agilité, sponsorisé par ServiceNow. Vous allez maintenant découvrir le degré d'agilité de votre enreprise !!</p>\n        <p class=\"mb-6\">D'après les réponses que vous avez fournies, IDC place votre entreprise au stade <br/><strong class=\"font-bold text-lg text-snow-light\">{stage}</strong>. À quoi correspond ce résultat ? </p>\n        <p class=\"mb-4\">Veuillez remplir le formulaire d'inscription pour recevoir immédiatement un rapport personnalisé par e-mail avec une analyse complète de l'agilité de votre organisation, vous situer par rapport aux autres entreprises et recevoir des recommandations personnalisées.\nNous traiterons vos informations avec le plus grand soin *et dans la plus stricte confidentialité*, et nous nous réjouissons de partager avec vous des recommandations utiles !\n</p>\n        <p class=\"mb-4\">\n            \nLa confidentialité et la sécurité de vos informations sont importantes à nos yeux. Veuillez consultez les politiques de confidentialité d'IDC en cliquant sur le lien ci-dessous.\n\n            <a href=\"/privacy\" target=\"_blank\">Privacy Policy</a>\n        </p>\n        <img src=\"{url}/images/tools/18/report_sample.png\" alt=\"\" class=\"w-5/6 mx-auto\" />\n    ",
             "complete_thankyou": "Merci, {Fname},",
             "complete_body": "\n        Vous allez bientôt recevoir votre rapport personnalisé.<br/>\n        Veuillez vérifier votre courrier indésirable si vous ne le recevez pas dans les cinq minutes..<br/><br/>\n        Pour en savoir plus sur ServiceNow, consultez les ressources ci-dessous:<br><br>\n        <div class=\"flex flex-wrap mt-5\">\n            <a href=\"https://www.blogs.servicenow.com/2020/partner-integrations-in-now-platform-paris-release.html\" target=\"_blank\" class=\"no-underline block w-full sm{flex}-1 border p-2 rounded mb-2 sm{mb}-0 shadow mr-4\">\n                <img src=\"{tool_url}/images/tools/18/agile_link.jpg\" alt=\"\" class=\"w-full mb-2\" />\n                <h5 class=\"text-lg text-snow-dark mb-2\">Agilité et résilience énergétiques</h5>\n            </a>\n            <!--a href=\"https://www.servicenow.com/now-at-work.html\" target=\"_blank\" class=\"no-underline block w-full sm{flex}-1 border p-2 rounded mb-2 sm{mb}-0 shadow mr-4\">\n                <img src=\"{tool_url}/images/tools/18/leaders_link.jpg\" alt=\"\" class=\"w-full mb-2\" />\n                <h5 class=\"text-lg text-snow-dark mb-2\">Now at work 2020</h5>\n            </a-->\n            <a href=\"https://www.servicenow.com/now-platform/latest-release.html\" target=\"_blank\" class=\"no-underline block w-full sm{flex}-1 border p-2 rounded mb-2 sm{mb}-0 shadow\">\n                <img src=\"{tool_url}/images/tools/18/new_link.jpg\" alt=\"\" class=\"w-full mb-2\" />\n                <h5 class=\"text-lg text-snow-dark mb-2\">Dernières innovations pour Now Platform</h5>\n            </a>\n        </div>",
             "complete_tweet": "I've just taken the @IDCEMEA GDPR Assessment Tool for @ntt. Interested? ",
             "email": {
-                "subject": "Évaluation IDC du cadre d\\agilité sponsorisée par ServiceNow",
+                "subject": "Évaluation IDC du cadre d'agilité sponsorisée par ServiceNow",
                 "hi": "Bonjour {Fname}",
-                "body": "Merci d\\avoir effectué l\\évaluation. Voici le lien qui vous permettra de télécharger votre rapport d\\évaluation IDC de l\\agilité. Ce rapport vous montre votre position dans votre parcours vers l\\agilité, détaille vos résultats par dimension et situe votre entreprise par rapport aux autres. Il contient également des recommandations concrètes qui peuvent vous aider à construire un avenir plus agile.",
-                "link": "AFFICHEZ VOTRE SCORE D\\AGILITÉ",
+                "body": "Merci d'avoir effectué l'évaluation. Voici le lien qui vous permettra de télécharger votre rapport d'évaluation IDC de l'agilité. Ce rapport vous montre votre position dans votre parcours vers l'agilité, détaille vos résultats par dimension et situe votre entreprise par rapport aux autres. Il contient également des recommandations concrètes qui peuvent vous aider à construire un avenir plus agile.",
+                "link": "AFFICHEZ VOTRE SCORE D'AGILITÉ",
                 "link_inline": "Affichez le rapport dans votre navigateur",
-                "extra": "\n            N\\hésitez pas à partager vos résultats avec d\\autres services de votre entreprise et avec vos clients et partenaires. Vous pouvez toujours les inviter à remplir l\\évaluation et à comparer les réponses.<br/><br/>\n            <a href=\"http://idcready.test\">http://idcready.test</a><br/><br/>\n            Cette évaluation a été sponsorisée par ServiceNow.<br/>\n            Pour en savoir plus sur la manière dont ServiceNow peut vous aider dans votre parcours vers l\\agilité pour obtenir des résultats positifs avec vos clients, employés et actionnaires, rendez-vous sur le site <a href=\"https://www.servicenow.co.uk/\" target=\"blank\">www.servicenow.co.uk</a><br/><br/>\n        ",
+                "extra": "\n            N'hésitez pas à partager vos résultats avec d'autres services de votre entreprise et avec vos clients et partenaires. Vous pouvez toujours les inviter à remplir l'évaluation et à comparer les réponses.<br/><br/>\n            <a href=\"http://idcready.test\">http://idcready.test</a><br/><br/>\n            Cette évaluation a été sponsorisée par ServiceNow.<br/>\n            Pour en savoir plus sur la manière dont ServiceNow peut vous aider dans votre parcours vers l'agilité pour obtenir des résultats positifs avec vos clients, employés et actionnaires, rendez-vous sur le site <a href=\"https://www.servicenow.co.uk/\" target=\"blank\">www.servicenow.co.uk</a><br/><br/>\n        ",
                 "regards": "Cordialement,",
-                "team": "L\\équipe IDC"
+                "team": "L'équipe IDC"
             },
             "leadgen": {
                 "fname": "Prénom",
                 "sname": "Nom",
                 "email": "Adresse e-mail",
                 "company": "Nom de la société",
-                "employees": "Nombre d\\employés",
-                "turnover": "Chiffre d\\affaires",
+                "employees": "Nombre d'employés",
+                "turnover": "Chiffre d'affaires",
                 "industry": "Secteur",
                 "country": "Pays",
                 "state": "État",
@@ -5854,7 +5869,7 @@ export default {
                 "phone_code": "Indicatif du pays",
                 "title": "Poste",
                 "send": "Envoyer",
-                "interested_in": "Centres d\\intérêt",
+                "interested_in": "Centres d'intérêt",
                 "location": "Où êtes-vous basé ?",
                 "locations": "Combien de sites possédez-vous ?",
                 "company_type": "Décrivez votre entreprise",
@@ -5866,8 +5881,8 @@ export default {
                 "errorEmail": "Saisissez votre nom",
                 "errorCompany": "Saisissez le nom de votre société",
                 "errorState": "Sélectionnez votre état",
-                "errorinterested_in": "PSélectionnez un centre d\\intérêt.",
-                "errorIndustry": "Sélectionnez votre secteur d\\activité.",
+                "errorinterested_in": "PSélectionnez un centre d'intérêt.",
+                "errorIndustry": "Sélectionnez votre secteur d'activité.",
                 "errorLocation": "Sélectionnez une option.",
                 "errorLocations": "Sélectionnez une option.",
                 "errorCompanyType": "Sélectionnez une option.",
@@ -5875,7 +5890,7 @@ export default {
                 "errorSell": "Sélectionnez une option.",
                 "errorTitle": "Saisissez votre poste",
                 "errorPhone": "Saisissez votre numéro de téléphone",
-                "errorPhoneCode": "Saisissez l\\indicatif de votre pays",
+                "errorPhoneCode": "Saisissez l'indicatif de votre pays",
                 "errorCountry": "Sélectionnez votre pays",
                 "errorNumber": "Saisissez un numéro de téléphone valide",
                 "errorAccept": "Veuillez accepter les conditions générales"
@@ -6291,7 +6306,7 @@ export default {
                         "Les avantages du DevOps en matière  de délai de mise sur le marché et d'amélioration de la qualité des logiciels sont reconnus dans l'ensemble de l'entreprise, et vos équipes des opérations informatiques cherchent des moyens d'innover en parallèle pour fournir des ressources plus rapidement dans le \"cœur fondamental\". Pour vous concentrer sur vos prochaines étapes vers un avenir plus agile, IDC a formulé des recommandations clés pour une plus grande agilité de l'architecture technologique."
                     ],
                     "recommendations": [
-                        "La vitesse est décisive, mais pour progresser, vous devez commencer par définir une application d\\entreprise, une plateforme et une stratégie d'intégration de données uniques autour de l'adaptabilité. Tous les membres de l'entreprise, et pas seulement les développeurs, doivent disposer des outils nécessaires pour adapter leurs flux de travail.",
+                        "La vitesse est décisive, mais pour progresser, vous devez commencer par définir une application d'entreprise, une plateforme et une stratégie d'intégration de données uniques autour de l'adaptabilité. Tous les membres de l'entreprise, et pas seulement les développeurs, doivent disposer des outils nécessaires pour adapter leurs flux de travail.",
                         "Rassemblez les développeurs et les équipes des opérations informatiques, en établissant une feuille de route pour migrer de plus en plus la gestion des systèmes informatiques vers la responsabilité du DevOps, tout en maintenant la gouvernance.",
                         "Passez de l'analyse à la proactivité axée sur les informations. Vous devez chercher à lancer des fonctions logicielles qui déclenchent de manière proactive des interactions avec les employés et les clients en fonction des renseignements recueillis. Le lien entre les référentiels de données ne doit pas rencontrer d'obstacles."
                     ]
@@ -6853,19 +6868,24 @@ export default {
             "landing": "\r\n        <h3 class=\"text-3xl font-snow\">\r\n            Quanto è agile la vostra azienda oggi? \r\n        </h3>\r\n        <p class=\"mb-4 leading-loose font-bold\">\r\n            Nello specifico, cosa è necessario fare per accelerare il percorso verso una maggiore agilità in futuro?\r\n        </p>\r\n        <p class=\"mb-2\">\r\n            Lo strumento di autovalutazione dell'agilità di IDC si concentra su 5 parametri fondamentali di agilità: <strong>Leadership</strong>, <strong>Organization</strong>, <strong>Process</strong>, <strong>Portfolio</strong>, and <strong>Technology Architecture</strong>. Basati su una ricerca approfondita, condotta su oltre 870 leader di organizzazioni EMEA, i risultati dello strumento sono un punto di riferimento per la vostra organizzazione e per il vostro percorso verso l'agilità.\r\n        </p>\r\n        <p class=\"mb-2\">\r\n            Rispondendo alle 14 domande delle 5 aree di misurazione principali sopra riportate, riceverete un report personalizzato in cui sono evidenziate le raccomandazioni specifiche insieme a una roadmap o al cambiamento consigliato. Ciò vi consentirà di individuare casi d'uso e tecnologie per iniziative pratiche e tangibili e di costruire un futuro più agile.\r\n        </p>\r\n        ",
             "startbut": "Eseguite subito la valutazione",
             "leadership-intro": {
-                "title": "Visione della leadership per l'agilità"
+                "title": "Visione della leadership per l'agilità",
+                "now_lets": "Adesso esaminiamo la tua visione della leadership per l’agilita’"
             },
             "structural-intro": {
-                "title": "Agilità strutturale"
+                "title": "Agilità strutturale",
+                "now_lets": "Adesso esaminiamo la tua agilita’ strutturale"
             },
             "process-intro": {
-                "title": "Agilità dei processi"
+                "title": "Agilità dei processi",
+                "now_lets": "Adesso esaminiamo la tua agilita’ dei processi  "
             },
             "portfolio-intro": {
-                "title": "Agilità del portafoglio"
+                "title": "Agilità del portafoglio",
+                "now_lets": "Adesso esaminiamo la tua agilita’ del portafoglio"
             },
             "technology-intro": {
-                "title": "Architettura tecnologica"
+                "title": "Architettura tecnologica",
+                "now_lets": "Adesso esaminiamo la tua architettura technologica"
             },
             "send": "Possiamo inviare i risultati completi direttamente al vostro indirizzo e-mail",
             "register": "Registratevi subito per ricevere il vostro report personalizzato",
@@ -7336,7 +7356,7 @@ export default {
                         "Perché possiate concentrarvi sui prossimi passi verso un futuro più agile al fine di raggiungere una maggiore agilità dell'architettura tecnologica, IDC ha delineato alcune raccomandazioni chiave."
                     ],
                     "recommendations": [
-                        "Iniziate un percorso finalizzato alla creazione di applicazioni per migliorare l\\esperienza dell'utente. Questo è un buon punto di partenza per il processo complessivo della vostra strategia di agilità. Assicuratevi che queste applicazioni siano sicure e integrate con i sistemi core.",
+                        "Iniziate un percorso finalizzato alla creazione di applicazioni per migliorare l'esperienza dell'utente. Questo è un buon punto di partenza per il processo complessivo della vostra strategia di agilità. Assicuratevi che queste applicazioni siano sicure e integrate con i sistemi core.",
                         "Iniziate a esplorare le tecnologie open source per automatizzare lo sviluppo, i test e la configurazione dell'infrastruttura.",
                         "Create una roadmap per automatizzare i processi di gestione dei servizi IT, come ad esempio i ticket e la risoluzione dei problemi IT, come modo per ottenere risultati rapidi e avviare il processo di trasformazione verso l'agilità dell'organizzazione."
                     ]
@@ -7374,7 +7394,7 @@ export default {
                     "recommendations": [
                         "Create una cultura dell'automazione che sia ossessiva nell'ottimizzazione del flusso di lavoro. A tale scopo è necessario compiere i passi finali verso una catena di strumenti coerente, dall'automazione dei flussi di lavoro ai programmi senza codice alla gestione delle API.",
                         "Standardizzate un approccio di progettazione e implementazione per la creazione di \"cicli di feedback digitale\", creando informazioni approfondite da tali sistemi e apportando modifiche e miglioramenti nei processi.",
-                        "Allineate i team DevOps orientati ai prodotti all'interno dell\\organizzazione con Key Performance Indicators e fattori comuni che verranno utilizzati per misurare il successo. In questo modo, non solo potranno creare funzionalità su richiesta e gestire la capacità di conseguenza, ma anche immaginare e proporre capacità di cambiamento aziendale al resto dell'organizzazione."
+                        "Allineate i team DevOps orientati ai prodotti all'interno dell'organizzazione con Key Performance Indicators e fattori comuni che verranno utilizzati per misurare il successo. In questo modo, non solo potranno creare funzionalità su richiesta e gestire la capacità di conseguenza, ma anche immaginare e proporre capacità di cambiamento aziendale al resto dell'organizzazione."
                     ]
                 },
                 "stage5": {

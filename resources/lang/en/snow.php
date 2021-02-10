@@ -37,18 +37,23 @@ return array(
 
     'leadership-intro' => [
         'title'=> 'Leadership Vision Agility',
+        'now_lets' => 'Now let\'s assess your Leadership Vision Agility'
     ],
     'structural-intro' => [
         'title'=> 'Structural Agility',
+        'now_lets' => 'Now let\'s assess your Structural Agility'
     ],
     'process-intro' => [
         'title'=> 'Process Agility',
+        'now_lets' => 'Now let\'s assess your Process Agility'
     ],
     'portfolio-intro' => [
         'title'=> 'Portfolio Agility',
+        'now_lets' => 'Now let\'s assess your Portfolio Agility'
     ],
     'technology-intro' => [
         'title'=> 'Technology Architecture ',
+        'now_lets' => 'Now let\'s assess your Technology Architecture'
     ],
     
     'send'=>'We can send you the full results directly to your mailbox',

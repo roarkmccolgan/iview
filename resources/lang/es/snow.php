@@ -39,18 +39,23 @@ return array(
 
     'leadership-intro' => [
         'title'=> 'Visión de liderazgo para la agilidad',
+        'now_lets' => 'Evaluemos ahora su Agilidad de Visión de Liderazgo'
     ],
     'structural-intro' => [
         'title'=> 'Agilidad estructural',
+        'now_lets' => 'Evaluemos ahora su Agilidad Estructural'
     ],
     'process-intro' => [
         'title'=> 'Agilidad de procesos',
+        'now_lets' => 'Evaluemos ahora su Agilidad de Procesos'
     ],
     'portfolio-intro' => [
         'title'=> 'Agilidad de la cartera de productos',
+        'now_lets' => 'Evaluemos ahora su Agilidad de Cartera'
     ],
     'technology-intro' => [
         'title'=> 'Arquitectura tecnológica  ',
+        'now_lets' => 'Evaluemos ahora su Arquitectura Tecnológica'
     ],
     
     'send'=>'Podemos enviarle los resultados completos directamente a su correo electrónico',

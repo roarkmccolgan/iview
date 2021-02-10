@@ -1,6 +1,6 @@
 <template>
 	<div class="flex-grow">
-		<intro-component :section="$t('snow.'+currentQuestion.section+'-intro.title') | toTitle" v-on:next-step="closeIntro()" :info="currentQuestion.sectionintro" v-if="showIntro"></intro-component>
+		<intro-component :section="$t('snow.'+currentQuestion.section+'-intro.now_lets') | toTitle" v-on:next-step="closeIntro()" :info="currentQuestion.sectionintro" v-if="showIntro"></intro-component>
 		
 		<div class="flex flex-col" v-else>
 			<div class="container mx-auto py-2" v-if="showIntermission">
