@@ -9,9 +9,9 @@ class Other extends Model
     protected $fillable = [
         'label',
         'value',
-        'placeholder'
+        'placeholder',
     ];
-    
+
     public function question()
     {
         return $this->belongsTo('App\questions');
