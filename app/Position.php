@@ -9,7 +9,7 @@ class Position extends Model
     protected $fillable = [
         'label',
     ];
-    
+
     public function option()
     {
         return $this->belongsTo(\App\Options::class);
