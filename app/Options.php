@@ -15,6 +15,6 @@ class Options extends Model
     
     public function questions()
     {
-        return this->belongsTo('App\questions');
+        return $this->belongsTo('App\questions');
     }
 }

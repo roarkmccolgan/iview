@@ -1,63 +1,21 @@
 {
   "private": true,
   "scripts": {
-    "prod": "gulp --mode production",
-    "dev": "gulp watch --mode development",
-    "webdev": "webpack --mode development",
-    "webprod": "NODE_ENV=production webpack --progress --mode production",
-    "webwatch": "npm run webdev -- --watch --hide-modules --progress --mode development"
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch-poll": "npm run watch -- --watch-poll",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
-    "babel-preset-env": "^1.7.0",
-    "bootstrap-sass": "^3.4.1",
-    "clean-webpack-plugin": "^0.1.19",
-    "css-loader": "^3.4.2",
-    "file-loader": "^1.1.11",
-    "gulp": "^4.0.2",
-    "jquery": "^3.4.1",
-    "laravel-elixir": "^6.0.0-14",
-    "laravel-elixir-vue-2": "^0.3.0",
-    "laravel-elixir-webpack-official": "^1.0.2",
-    "latest": "^0.2.0",
-    "lodash": "^4.17.15",
-    "mini-css-extract-plugin": "^0.8.2",
-    "optimize-css-assets-webpack-plugin": "^5.0.3",
-    "postcss-loader": "^2.1.6",
-    "purify-css": "^1.2.5",
-    "purifycss-webpack": "^0.7.0",
-    "style-loader": "^0.19.1",
-    "tailwindcss": "^0.7.4",
-    "uglifyjs-webpack-plugin": "^1.3.0",
-    "vue": "^2.6.11",
-    "vue-loader": "^15.9.1",
-    "vue-resource": "^1.0.3",
-    "vue-router": "^3.1.6",
-    "vue-template-compiler": "^2.6.11",
-    "webpack": "^4.42.1",
-    "webpack-bundle-analyzer": "^3.6.1",
-    "webpack-cli": "^3.3.11"
-  },
-  "dependencies": {
-    "@fortawesome/fontawesome-pro": "file:../../Dropbox/_web/font-awesome/fortawesome-fontawesome-pro-5.15.1.tar",
-    "@fortawesome/fontawesome-svg-core": "^1.2.32",
-    "@fortawesome/pro-regular-svg-icons": "file:../../Dropbox/_web/font-awesome/fortawesome-pro-regular-svg-icons-5.15.1.tar",
-    "@fortawesome/vue-fontawesome": "^2.0.0",
-    "ajv": "^6.12.0",
-    "autotrack": "^2.4.1",
-    "axios": "^0.19.2",
-    "babel-polyfill": "^6.26.0",
-    "v-tooltip": "^2.0.3",
-    "vue-analytics": "^5.22.1",
-    "vue-cookies": "^1.7.0",
-    "vue-flag-icon": "^1.0.6",
-    "vue-i18n": "^7.8.1",
-    "vue-slider-component": "^2.8.16",
-    "vue-social-sharing": "^3.0.3"
-  },
-  "browserslist": [
-    "defaults",
-    "Chrome >= 13"
-  ]
+    "axios": "^0.15.3",
+    "bootstrap-sass": "^3.3.7",
+    "cross-env": "^3.2.3",
+    "jquery": "^3.1.1",
+    "laravel-mix": "0.*",
+    "lodash": "^4.17.4",
+    "vue": "^2.1.10"
+  }
 }
