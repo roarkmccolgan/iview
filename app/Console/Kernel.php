@@ -1,11 +1,12 @@
-<?php namespace App\Console;
+<?php
+
+namespace App\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 
 class Kernel extends ConsoleKernel
 {
-
     /**
      * The Artisan commands provided by your application.
      *
@@ -14,7 +15,7 @@ class Kernel extends ConsoleKernel
     protected $commands = [
         'App\Console\Commands\Inspire',
         'App\Console\Commands\UpdateTrackingViews',
-        'App\Console\Commands\CommandSendReports'
+        'App\Console\Commands\CommandSendReports',
     ];
 
     /**
@@ -34,6 +35,7 @@ class Kernel extends ConsoleKernel
         $schedule->command('backup:clean')->daily()->at('01:00');
         $schedule->command('backup:run')->daily()->at('02:00');
     }
+
     /**
      * Register the Closure based commands for the application.
      *

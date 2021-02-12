@@ -1,6 +1,7 @@
 <?php
+
 //GDPR
-return array(
+return [
     'title' => 'IDC\'s GDPR Assessment:  Endpoint Readiness',
     'sub-title' => 'Introduction',
     'stage1' => 'Stage 1: Time to Research',
@@ -11,7 +12,7 @@ return array(
     'complete_body' => 'Your custom report will arrive in your inbox soon.<br/>
 Please check in your junk folder if you don\'t receive it within 5 minutes.<br/>
 While you\'re waiting why not share your results and see how your followers measure up?',
-    'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Readiness Assessment Tool for @HP. Interested in your own readiness? http://bit.ly/2tBunUh',// http://bit.ly/2gslXEh
+    'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Readiness Assessment Tool for @HP. Interested in your own readiness? http://bit.ly/2tBunUh', // http://bit.ly/2gslXEh
     'email'=>[
         'subject' => 'IDC\'s GDPR Readiness Assessment',
         'hi' => 'Hi :Fname',
@@ -19,7 +20,7 @@ While you\'re waiting why not share your results and see how your followers meas
         'link' => 'Download Report',
         'extra' => 'Once you\'ve digested the report why not visit <a href="http://www.hp.com/thewolf" style="color:#0096D6">HP</a>',
         'regards' => 'Regards',
-        'team' => 'The IDC Team'
+        'team' => 'The IDC Team',
     ],
     'introduction' => '
         <p>
@@ -44,7 +45,7 @@ While you\'re waiting why not share your results and see how your followers meas
         </p>
     ',
     'introduction-image' => 'mainimage.jpg',
-    'overall' => array(
+    'overall' => [
         'title'=>'Overall Readiness',
         'hidetitle'=>'false',
         'pageimage'=>'overall.jpg',
@@ -152,9 +153,9 @@ While you\'re waiting why not share your results and see how your followers meas
             <p>
                 The point about GDPR compliance is that it is a lifestyle change, not a crash diet. Continuous compliance is the norm, so you can\'t now relax. One area that you need to keep on top of is the notion of state of the art. While organisations are not obliged to deploy state-of-the-art technologies and processes, you need to know what these are, to decide whether to use them. Have a process of regularly reviewing state of the art in print technology and management processes — we suggest at least every six months. This keeps you on your toes, but it also sends a message to your suppliers that you are looking for continuous improvement in their capabilities.
             </p>
-        '
-    ),
-    'leadership-and-general-obligations' => array(
+        ',
+    ],
+    'leadership-and-general-obligations' => [
         'title'=>'Leadership and General Obligations',
         'pageimage'=>'leadership-and-general-obligations.jpg',
         'pb'=>'pb',
@@ -242,9 +243,9 @@ While you\'re waiting why not share your results and see how your followers meas
             <p>
                 Give yourself a pat on the back. Your organisation would be considered GDPR compliant now, but there is an opportunity to overachieve and maximise the benefits of your hard work. To ensure your organisation stays ahead of the game by doing even more than what is required for GDPR compliance, you can differentiate and distinguish your organisation by going above and beyond this regulation to further mitigate risks and avoid data breaches.
             </p>
-        '
-    ),
-    'data-rights-and-standards' => array(
+        ',
+    ],
+    'data-rights-and-standards' => [
         'title'=> 'Data rights and standards',
         'pageimage'=>'data-rights-and-standards.jpg',
         'pb'=>'pb',
@@ -320,9 +321,9 @@ While you\'re waiting why not share your results and see how your followers meas
             <p>
                 There is an opportunity to overachieve and to ensure your organisation stays ahead of the game by doing even more than what is required for GDPR compliance. You can differentiate and distinguish your organisation by going above and beyond this regulation to further mitigate risks and avoid data breaches.
             </p>
-        '
-    ),
-    'security' => array(
+        ',
+    ],
+    'security' => [
         'title'=> 'Security',
         'pageimage'=>'security.jpg',
         'pb'=>'pb',
@@ -413,6 +414,6 @@ While you\'re waiting why not share your results and see how your followers meas
             <p>
                 Remember: security threats are constantly evolving and secure today does not necessarily mean secure tomorrow. Breaches are likely, and process failures will happen. When these moments of truth occur, you can continue to demonstrate good practice in the way that you respond. Catching breaches early with good detection capability is a big plus, as is having a robust and tested incident response plan. Regulators understand that breaches happen, but are looking at how you react to determine what sanctions, if any, to levy.
             </p>
-        '
-    )
-);
+        ',
+    ],
+];

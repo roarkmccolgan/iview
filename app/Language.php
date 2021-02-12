@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Language extends Model
 {
     /**
-     * Get URL of Language
+     * Get URL of Language.
      * @return [type] [description]
      */
     public function url()
@@ -16,7 +16,7 @@ class Language extends Model
     }
 
     /**
-     * Get Tool of Language
+     * Get Tool of Language.
      * @return [type] [description]
      */
     public function tools()
@@ -25,7 +25,7 @@ class Language extends Model
     }
 
     /**
-     * Get Trackers of Language
+     * Get Trackers of Language.
      * @return [type] [description]
      */
     public function trackers()

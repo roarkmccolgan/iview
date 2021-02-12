@@ -1,6 +1,7 @@
 <?php
+
 //SAP Global
-return array(
+return [
     'elqFormName'=>'',
     'developedby'=>'Developed by',
     'sponsoredby'=>'Sponsored by',
@@ -30,7 +31,7 @@ return array(
             This will take around 5-7 minutes to complete.
         </p>',
     'startbut'=>'Start your Analysis Now',
-    
+
     'send'=>'We can send you the full results directly to your mailbox',
     'register'=>'Register now to receive your personalized report',
     'provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
@@ -128,7 +129,7 @@ return array(
         If you cannot find the link, please email IDC (<a href="mailto:podgers@idc.com">podgers@idc.com</a>) and a new link will be sent to you<br/><br/>
         To find out more about SAP, <a class="text-sap-blue" href="https://www.sap.com/sme">click here.</a><br/><br/>
         Share the tool ',
-    'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @3ds. Interested? ',// http://bit.ly/2gslXEh
+    'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @3ds. Interested? ', // http://bit.ly/2gslXEh
     'email'=>[
         'subject' => 'IDC SME Analysis Tool',
         'hi' => 'Hi :Fname',
@@ -148,7 +149,7 @@ return array(
                 <img src="https://accessyourbusinessagility.idcready.net/images/linkedin.png" style="width: 50px;"/>
             </a><br/>',
         'regards' => 'Regards',
-        'team' => 'The IDC Team'
+        'team' => 'The IDC Team',
     ],
     'introduction' => '
         <div class="w-5/6 mx-auto">
@@ -1659,4 +1660,4 @@ return array(
             </div>
         </div>
     ',
-);
+];

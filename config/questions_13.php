@@ -1,4 +1,5 @@
 <?php
+
 // Hitachi
 return [
     'migration' => [
@@ -46,10 +47,10 @@ return [
                                 'label'=>'Capitalize on new data-driven revenue streams and innovation',
                                 'value'=>3,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Cloud migration and application modernization',
@@ -85,8 +86,8 @@ return [
                                         'label'=>'Resolved',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Assessing and modernizing applications to get the benefits of the cloud',
@@ -106,8 +107,8 @@ return [
                                         'label'=>'Resolved',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Security concerns and digital trust',
@@ -127,8 +128,8 @@ return [
                                         'label'=>'Resolved',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Concerns about scalability and agility',
@@ -148,8 +149,8 @@ return [
                                         'label'=>'Resolved',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Attracting and retaining the right technical skills',
@@ -169,8 +170,8 @@ return [
                                         'label'=>'Resolved',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Adopting DevOps based processes ',
@@ -190,8 +191,8 @@ return [
                                         'label'=>'Resolved',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Reducing technical debt',
@@ -211,13 +212,13 @@ return [
                                         'label'=>'Resolved',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
-                            
-                        ]
-                    ]
-                ]
+
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Cloud migration and application modernization',
@@ -253,8 +254,8 @@ return [
                                         'label'=>'An immediate priority and critical to the success of our strategy',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Creating IT efficiencies within the data centre, freeing up resources (HR, IT, Server storage) ',
@@ -274,8 +275,8 @@ return [
                                         'label'=>'An immediate priority and critical to the success of our strategy',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Developing new digital experiences that drive digital satisfaction and revenue',
@@ -295,8 +296,8 @@ return [
                                         'label'=>'An immediate priority and critical to the success of our strategy',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Implementing Agile cloud-based application architectures',
@@ -316,8 +317,8 @@ return [
                                         'label'=>'An immediate priority and critical to the success of our strategy',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Satisfying security, regulatory compliance and data governance requirements',
@@ -337,8 +338,8 @@ return [
                                         'label'=>'An immediate priority and critical to the success of our strategy',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Leveraging an Intelligent Core to implement and scale artificial intelligence and machine learning ',
@@ -358,13 +359,13 @@ return [
                                         'label'=>'An immediate priority and critical to the success of our strategy',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
-                            
-                        ]
-                    ]
-                ]
+
+                        ],
+                    ],
+                ],
             ],
             'page4' => [
                 'title' => 'Cloud migration and application modernization',
@@ -400,8 +401,8 @@ return [
                                         'label'=>'Resolved',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Understanding the complexity of the application migration',
@@ -421,8 +422,8 @@ return [
                                         'label'=>'Resolved',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Choosing the right cloud migration partner or advisor',
@@ -442,8 +443,8 @@ return [
                                         'label'=>'Resolved',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Defining the right migration strategy (Lift and shift, lift and transform, refactor)',
@@ -463,8 +464,8 @@ return [
                                         'label'=>'Resolved',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Lacking cloud migration skills internally',
@@ -484,15 +485,15 @@ return [
                                         'label'=>'Resolved',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
-                            
-                        ]
-                    ]
-                ]
-            ]
-        ]
+
+                        ],
+                    ],
+                ],
+            ],
+        ],
     ],
     'status' => [
         'title' => 'Cloud and Multicloud Status',
@@ -543,10 +544,10 @@ return [
                                 'label'=>'Multicloud',
                                 'value'=>3,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Cloud and Multicloud Status',
@@ -580,10 +581,10 @@ return [
                                 'label'=>'Maximize the utilization of data and derive faster data-driven insights',
                                 'value'=>3,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Cloud and Multicloud Status',
@@ -619,8 +620,8 @@ return [
                                         'label'=>'Resolved',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Multicloud monitoring, management, automation and orchestration',
@@ -640,8 +641,8 @@ return [
                                         'label'=>'Resolved',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Security, data governance and regulatory compliance',
@@ -661,8 +662,8 @@ return [
                                         'label'=>'Resolved',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'API management, integration and interoperability',
@@ -682,8 +683,8 @@ return [
                                         'label'=>'Resolved',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Cloud cost containment while demonstrating value and ROI',
@@ -703,8 +704,8 @@ return [
                                         'label'=>'Resolved',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Implementing a CI/CD pipeline to automate cloud operations (Continuous Innovation Continuous Development)',
@@ -724,14 +725,14 @@ return [
                                         'label'=>'Resolved',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
-                        ]
-                    ]
-                ]
+                        ],
+                    ],
+                ],
             ],
-        ]
+        ],
     ],
     'value' => [
         'title' => 'Realizing the value of data',
@@ -782,10 +783,10 @@ return [
                                 'label'=>'Monetising data',
                                 'value'=>3,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Realizing the value of data',
@@ -821,8 +822,8 @@ return [
                                         'label'=>'An immediate priority and critical to the success of our strategy',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Delivering continuous insights to the business ',
@@ -842,8 +843,8 @@ return [
                                         'label'=>'An immediate priority and critical to the success of our strategy',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Using data to give us an competitive advantage',
@@ -863,8 +864,8 @@ return [
                                         'label'=>'An immediate priority and critical to the success of our strategy',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Delivering new data driven revenue streams',
@@ -884,8 +885,8 @@ return [
                                         'label'=>'An immediate priority and critical to the success of our strategy',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Hiring data experts ',
@@ -905,14 +906,14 @@ return [
                                         'label'=>'An immediate priority and critical to the success of our strategy',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
-                            
-                        ]
-                    ]
-                ]
-            ]
-        ]
-    ]
+
+                        ],
+                    ],
+                ],
+            ],
+        ],
+    ],
 ];

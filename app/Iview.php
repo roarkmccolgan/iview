@@ -1,10 +1,11 @@
-<?php namespace App;
+<?php
+
+namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
 class Iview extends Model
 {
-
     protected $fillable = [
         'title',
         'alias',
@@ -13,11 +14,11 @@ class Iview extends Model
         'company_id',
         'template_id',
         'start_date',
-        'end_date'
+        'end_date',
     ];
 
     protected $dates = ['start_date'];
-    
+
     public function company()
     {
         return $this->belongsTo('App\Company');

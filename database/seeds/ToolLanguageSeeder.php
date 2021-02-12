@@ -13,33 +13,33 @@ class ToolLanguageSeeder extends Seeder
     {
         DB::table('language_tool')->insert([ //english Sage
             'tool_id' => 1,
-            'language_id' => 1
+            'language_id' => 1,
         ]);
         DB::table('language_tool')->insert([ //english FireEye
             'tool_id' => 2,
-            'language_id' => 1
+            'language_id' => 1,
         ]);
         DB::table('language_tool')->insert([ //english Redhat
             'tool_id' => 3,
-            'language_id' => 1
+            'language_id' => 1,
         ]);
 
         DB::table('language_tool')->insert([ //french Sage
             'tool_id' => 1,
-            'language_id' => 34
+            'language_id' => 34,
         ]);
 
         DB::table('language_tool')->insert([ //spanish FireEye
             'tool_id' => 2,
-            'language_id' => 27
+            'language_id' => 27,
         ]);
         DB::table('language_tool')->insert([ //german FireEye
             'tool_id' => 2,
-            'language_id' => 23
+            'language_id' => 23,
         ]);
         DB::table('language_tool')->insert([ //german FireEye
             'tool_id' => 2,
-            'language_id' => 34
+            'language_id' => 34,
         ]);
     }
 }

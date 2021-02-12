@@ -11,11 +11,11 @@ class Url extends Model
         'subdomain',
         'language_id',
         'urlable_id',
-        'urlable_type'
+        'urlable_type',
     ];
 
     /**
-     * Get language of URL
+     * Get language of URL.
      * @return [type] [description]
      */
     public function language()

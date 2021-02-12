@@ -2,8 +2,8 @@
 
 namespace App\Http\Requests;
 
-use Illuminate\Foundation\Http\FormRequest;
 use App\Http\Requests\Request;
+use Illuminate\Foundation\Http\FormRequest;
 
 class CreateReportRequest extends FormRequest
 {
@@ -28,7 +28,7 @@ class CreateReportRequest extends FormRequest
             'title'=>'required',
             'iview_id'=>'required',
             'connection'=>'required',
-            'table'=>'required'
+            'table'=>'required',
         ];
     }
 }

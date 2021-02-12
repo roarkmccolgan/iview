@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Database\Seeder;
 use Carbon\Carbon;
+use Illuminate\Database\Seeder;
 
 class SplunkSeeder extends Seeder
 {
@@ -36,11 +36,11 @@ class SplunkSeeder extends Seeder
         ]);
         DB::table('language_tool')->insert([ //english Splunk
             'tool_id' => 5,
-            'language_id' => 1
+            'language_id' => 1,
         ]);
         DB::table('tool_user')->insert([
             'tool_id' => 5,
-            'user_id' => 1 //roark
+            'user_id' => 1, //roark
         ]);
 
         DB::table('extra_fields')->insert([
@@ -50,21 +50,21 @@ class SplunkSeeder extends Seeder
             'trans' => 'qualification',
             'error' => 'errorQualification',
             'options' => json_encode([
-                "qual1"=>"Consulting",
-                "qual2"=> "ISV",
-                "qual3"=> "Hardware Vendor",
-                "qual4"=> "Software Vendor",
-                "qual5"=> "System Integrator",
-                "qual6"=> "Cloud Service Provider",
-                "qual7"=> "Distributor",
-                "qual8"=> "Value Added Reseller",
-                "qual9"=> "Managed Service Provider",
-                "qual10"=> "Hosting Provider"
+                'qual1'=>'Consulting',
+                'qual2'=> 'ISV',
+                'qual3'=> 'Hardware Vendor',
+                'qual4'=> 'Software Vendor',
+                'qual5'=> 'System Integrator',
+                'qual6'=> 'Cloud Service Provider',
+                'qual7'=> 'Distributor',
+                'qual8'=> 'Value Added Reseller',
+                'qual9'=> 'Managed Service Provider',
+                'qual10'=> 'Hosting Provider',
             ]),
             'required' => 1,
             'required' => 2,
             'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now()
+            'updated_at' => Carbon::now(),
         ]);
     }
 }

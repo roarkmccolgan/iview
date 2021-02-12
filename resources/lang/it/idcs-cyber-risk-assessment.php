@@ -1,6 +1,7 @@
 <?php
+
 //fireeye
-return array(
+return [
     'stage1' => 'Ad-hoc',
     'stage2' => 'Opportunistico',
     'stage3' => 'Ripetibile',
@@ -66,11 +67,11 @@ Se otterrai un punteggio in linea o in vantaggio in tutte le sezioni, a breve po
                 Possiamo inviarti il rapporto completo nella tua casella di posta elettronica.<br/>
                 È sufficiente fornirci il tuo nome e l\'indirizzo email per ricevere un collegamento utile per scaricare il rapporto.
             </p>
-        '
+        ',
     ],
     'complete_thankyou' => 'Grazie :Fname,',
     'complete_body' => 'A breve riceverai il tuo rapporto personalizzato nella casella di posta. Durante l\'attesa, condividi su Twitter i tuoi risultati e a confrontarli con quelli dei tuoi follower.',
-    'complete_tweet' => 'Ho appena compilato il Cyber Risk Readiness Assessment sponsorizzato da Fireeye, e il risultato è livello Repeatable. Vuoi saperne di più?',// http://bit.ly/2g8WN1d
+    'complete_tweet' => 'Ho appena compilato il Cyber Risk Readiness Assessment sponsorizzato da Fireeye, e il risultato è livello Repeatable. Vuoi saperne di più?', // http://bit.ly/2g8WN1d
     'email'=>[
         'subject' => 'IDC Report',
         'hi' => 'Salve :Fname',
@@ -81,12 +82,12 @@ Se otterrai un punteggio in linea o in vantaggio in tutte le sezioni, a breve po
         'link' => 'Scarica il rapporto',
         'extra' => 'Dopo aver digerito il rapporto perché non visitare <a href="http://www.fireeye.com" style="color:#E66B6B">FireEye</a>',
         'regards' => 'Saluti',
-        'team' => 'The IDC Team'
+        'team' => 'The IDC Team',
     ],
     'introduction_title' => 'Sommario del Report personalizzato e Classifica delle performance generali',
     'performancerankingbycategory' => 'Classifica delle performance per categoria',
     'introduction-image' => 'report.jpg',
-    'overall' => array(
+    'overall' => [
         'title'=>'Il Vostro livello di preparazione generale per la sicurezza',
         'graph-title'=>'Comparazione generale',
         'image'=>'',
@@ -131,9 +132,9 @@ Se otterrai un punteggio in linea o in vantaggio in tutte le sezioni, a breve po
             <p>
                 Ti trovi in vantaggio rispetto alla maggioranza delle aziende e fai parte del 5% delle migliori aziende per quanto riguarda le capacità legate ai rischi informatici. Essendo un leader, dovrai continuare a migliorare in diversi settori per ridurre ulteriormente l\'eventualità di una violazione informatica.
             </p>
-        '
-    ),
-    'cyber-risk-management-and-the-business' => array(
+        ',
+    ],
+    'cyber-risk-management-and-the-business' => [
         'title'=>'Cyber Risk Management e il Business',
         'image'=>'cloud-vision-and-strategy.jpg',
         'pb'=>'pb',
@@ -167,9 +168,9 @@ Se otterrai un punteggio in linea o in vantaggio in tutte le sezioni, a breve po
             <p>
                 Eccellente! Stai ottenendo un rendimento superiore alla concorrenza per la gestione del rischio informatico, ma per restare in posizione di vantaggio devi rivalutare il modo in cui svolgi le principali operazioni.
             </p>
-        '
-    ),
-    'cyber-risk-management-operations-and-defence' => array(
+        ',
+    ],
+    'cyber-risk-management-operations-and-defence' => [
         'title'=> 'Cyber Risk Management e la Difesa',
         'image'=>'processes-and-skill-sets.jpg',
         'pb'=>'pb',
@@ -202,9 +203,9 @@ Se otterrai un punteggio in linea o in vantaggio in tutte le sezioni, a breve po
             <p>
                 Sei il migliore! Stai ottenendo un rendimento superiore alla concorrenza in quest\'area della gestione del rischio informatico, ma devi cercare sempre nuovi metodi per migliorare seguendo i nuovi approcci.
             </p>
-        '
-    ),
-    'cyber-risk-management-breach-detection-and-remediation' => array(
+        ',
+    ],
+    'cyber-risk-management-breach-detection-and-remediation' => [
         'title'=> 'Cyber Risk Management Breach Detection e Remediation',
         'image'=>'business-mix.jpg',
         'pb'=>'pb',
@@ -237,8 +238,8 @@ Se otterrai un punteggio in linea o in vantaggio in tutte le sezioni, a breve po
             <p>
                 Ottimo lavoro. Sei in vantaggio rispetto ai concorrenti in termini di gestione del rischio informatico del tuo business. Stai operando in maniera efficace nella gestione del rischio informatico, ma devi rivalutare continuamente le sue azioni.
             </p>
-        '
-    ),
+        ',
+    ],
     'questions' => [
         'q1'=>[
             'behind' => '
@@ -255,7 +256,7 @@ Se otterrai un punteggio in linea o in vantaggio in tutte le sezioni, a breve po
                 <p>
                     Ricorda: tecnologie e funzionalità sono in sviluppo continuo e occorre rivalutarne continuamente oggetto e metodi di utilizzo.
                 </p>
-            '
+            ',
         ],
         'q2'=>[
             'behind' => '
@@ -272,7 +273,7 @@ Se otterrai un punteggio in linea o in vantaggio in tutte le sezioni, a breve po
                 <p>
                     Anche se gran parte della sua dedizione al miglioramento della gestione del rischio aziendale può riguardare altri settori, devi continuare ad adottare e ottimizzare le sue funzionalità avanzate legate a policy, gestione, automazione e orchestrazione.
                 </p>
-            '
+            ',
         ],
         'q3'=>[
             'behind' => '
@@ -289,7 +290,7 @@ Se otterrai un punteggio in linea o in vantaggio in tutte le sezioni, a breve po
                 <p>
                     Per diventare leader devi continuare a superare i suoi limiti.  Cerca di individuare i punti in cui è possibile scendere a compromessi, ferma la necessità di proteggere in maniera assoluta e continua i "tesori di famiglia", per individuare nuove opportunità di sviluppo. 
                 </p>
-            '
+            ',
         ],
         'q4'=>[
             'behind' => '
@@ -306,7 +307,7 @@ Se otterrai un punteggio in linea o in vantaggio in tutte le sezioni, a breve po
                 <p>
                     Sei all\'avanguardia per quanto riguarda le modalità di gestione del rischio delle violazioni di sicurezza e la pianificazione delle risposte in caso di violazione. Tuttavia, per fare un ulteriore passo avanti, devi pensare a come sfruttare l\'assicurazione sui rischi informatici non solo per ridurre i costi potenziali di una violazione, ma anche per ottenere l\'eccellenza aziendale, facendola diventare una fonte potenziale di vantaggio competitivo nella gestione dei dati dei clienti.
                 </p>
-            '
+            ',
         ],
         'q5'=>[
             'behind' => '
@@ -323,7 +324,7 @@ Se otterrai un punteggio in linea o in vantaggio in tutte le sezioni, a breve po
                 <p>
                     Prendi in considerazione i modi per integrare la gestione dei rischi informatici nello sviluppo di nuove opportunità di business al fine di ottenere un\'identificazione e una gestione proattiva del rischio informatico e raggiungere gli obiettivi aziendali.
                 </p>
-            '
+            ',
         ],
         'q6'=>[
             'behind' => '
@@ -340,7 +341,7 @@ Se otterrai un punteggio in linea o in vantaggio in tutte le sezioni, a breve po
                 <p>
                     Per portare questa situazione al livello successivo, studia il modo in cui gli specialisti nel campo di rischi, conformità e sicurezza a livello dirigenziale e inferiore possono contribuire positivamente a questo processo. Utilizza al meglio i servizi delle terze parti per misurare le best practice.
                 </p>
-            '
+            ',
         ],
         'q7'=>[
             'behind' => '
@@ -357,7 +358,7 @@ Se otterrai un punteggio in linea o in vantaggio in tutte le sezioni, a breve po
                 <p>
                     Valuta il modo in cui trasformare la sicurezza nell\'elemento chiave della pianificazione delle nuove iniziative. Inoltre, rendi la sicurezza una priorità assoluta durante l\'intero ciclo di sviluppo, test e implementazione dei progetti e per l\'attività di business quotidiana.
                 </p>
-            '
+            ',
         ],
         'q8'=>[
             'behind' => '
@@ -374,7 +375,7 @@ Se otterrai un punteggio in linea o in vantaggio in tutte le sezioni, a breve po
                 <p>
                     Per ottenere un miglioramento continuo, promuovi l\'investimento nella sicurezza come elemento in grado di aiutare l\'azienda a raggiungere gli obiettivi di business e supportare la crescita in termini di redditività e ricavi.
                 </p>
-            '
+            ',
         ],
         'q9'=>[
             'behind' => '
@@ -391,7 +392,7 @@ Se otterrai un punteggio in linea o in vantaggio in tutte le sezioni, a breve po
                 <p>
                     Per passare al livello successivo è importante valutare i metodi per aumentare al massimo il punto d\'incrocio fra sicurezza fisica e IT attraverso l\'utilizzo di tecniche di autenticazione biometrica.
                 </p>
-            '
+            ',
         ],
         'q10'=>[
             'behind' => '
@@ -408,7 +409,7 @@ Se otterrai un punteggio in linea o in vantaggio in tutte le sezioni, a breve po
                 <p>
                     Prendi in considerazione i metodi utili alla tua organizzazione per diventare leader nella gestione delle best practice e un leader del settore. Questo elemento può offrire un vantaggio competitivo rispetto alle aziende concorrenti.
                 </p>
-            '
+            ',
         ],
         'q11'=>[
             'behind' => '
@@ -425,7 +426,7 @@ Se otterrai un punteggio in linea o in vantaggio in tutte le sezioni, a breve po
                 <p>
                     Per ottenere ulteriori miglioramenti, devi comprendere il modo in cui stai sfruttando le tecnologie all\'avanguardia e le stai implementando mediante approcci al processo decisionale basati sul rischio. Ciò consentirà di ridurre l\'eventualità di potenziali sanzioni nell\'ambito del GDPR e potrebbe anche diventare la base per un vantaggio competitivo.
                 </p>
-            '
+            ',
         ],
         'q12'=>[
             'behind' => '
@@ -442,7 +443,7 @@ Se otterrai un punteggio in linea o in vantaggio in tutte le sezioni, a breve po
                 <p>
                     Per ottenere un miglioramento, valuta come utilizzare il reporting continuo in maniera più avanzata di una semplice dashboard, rendendolo un elemento in grado di favorire il processo decisionale a livello di business attraverso funzionalità operative integrate.
                 </p>
-            '
+            ',
         ],
         'q13'=>[
             'behind' => '
@@ -459,7 +460,7 @@ Se otterrai un punteggio in linea o in vantaggio in tutte le sezioni, a breve po
                 <p>
                     Per ottenere un miglioramento, valuta come utilizzare il reporting continuo in maniera più avanzata di una semplice dashboard, rendendolo un elemento in grado di favorire il processo decisionale a livello di business attraverso funzionalità operative integrate.
                 </p>
-            '
+            ',
         ],
         'q14'=>[
             'behind' => '
@@ -476,7 +477,7 @@ Se otterrai un punteggio in linea o in vantaggio in tutte le sezioni, a breve po
                 <p>
                     Per avanzare ulteriormente nella gestione del rischio informatico, è importante valutare il modo in cui automatizzare e integrare ulteriori elementi in una suite di gestione completa per creare un reparto IT molto più agile.
                 </p>
-            '
+            ',
         ],
         'q15'=>[
             'behind' => '
@@ -493,7 +494,7 @@ Se otterrai un punteggio in linea o in vantaggio in tutte le sezioni, a breve po
                 <p>
                     Per diventare un\'azienda all\'avanguardia, valuta le operazioni necessarie per automatizzare e orchestrare i processi in maniera completa per ottenere una maggiore agilità, qualità e conformità della gestione dei rischi informatici.
                 </p>
-            '
+            ',
         ],
         'q16'=>[
             'behind' => '
@@ -510,7 +511,7 @@ Se otterrai un punteggio in linea o in vantaggio in tutte le sezioni, a breve po
                 <p>
                     Piuttosto che dedicarsi alle sole opportunità per aumentare l\'automazione, non devi trascurare l\'elemento umano dell\'equazione. Per ottenere l\'impatto più elevato devi scoprire come utilizzare le iniziative di automazione in corso come complemento del personale di sicurezza e aumentare l\'efficacia del personale attraverso il miglioramento delle competenze, permettendogli così di dedicarsi ad attività più avanzate.
                 </p>
-            '
+            ',
         ],
         'q17'=>[
             'behind' => '
@@ -527,7 +528,7 @@ Se otterrai un punteggio in linea o in vantaggio in tutte le sezioni, a breve po
                 <p>
                     Per sviluppare ulteriormente il quadro, devi prendere in considerazione l\'impatto potenziale offerto dai MSSP, che possono implementare la gestione di dispositivi e strumenti di sicurezza in motori di correlazione basati sui big data e presentare queste informazioni in dashboard di gestione utili per ottimizzare il processo decisionale mediante una serie di informazioni relative al cambiamento dell\'atteggiamento di sicurezza in tempo reale.
                 </p>
-            '
+            ',
         ],
         'q25'=>[
             'behind' => '
@@ -544,7 +545,7 @@ Se otterrai un punteggio in linea o in vantaggio in tutte le sezioni, a breve po
                 <p>
                     Sei un leader in termini di approccio per l\'utilizzo dei MSSP, che utilizzi in maniera intensa e in modo equilibrato come canale di erogazione complementare alle risorse interne. Per ottenere ulteriori miglioramenti, valuta se utilizzare i MSSP per ottimizzare ulteriormente le operazioni e l\'implementazione delle best practice.
                 </p>
-            '
+            ',
         ],
         'q18'=>[
             'behind' => '
@@ -561,7 +562,7 @@ Se otterrai un punteggio in linea o in vantaggio in tutte le sezioni, a breve po
                 <p>
                     L\'intelligenza artificiale e l\'euristica sono tecnologie in continua maturazione che consigliamo di implementare per continuare la ricerca della leadership.
                 </p>
-            '
+            ',
         ],
         'q19'=>[
             'behind' => '
@@ -578,7 +579,7 @@ Se otterrai un punteggio in linea o in vantaggio in tutte le sezioni, a breve po
                 <p>
                     La raccolta di informazioni, i sistemi "trappola" e i tentativi di violazione dei suoi sistemi da parte di squadre di esperti sono procedure standard per operazioni di sicurezza più ampie, mature ed avanzate, che consigliamo di implementare.
                 </p>
-            '
+            ',
         ],
         'q20'=>[
             'behind' => '
@@ -595,7 +596,7 @@ Se otterrai un punteggio in linea o in vantaggio in tutte le sezioni, a breve po
                 <p>
                     Le funzionalità di rimedio automatizzato basate sul mchine-learning stanno maturando rapidamente ed è consigliabile implementarle.
                 </p>
-            '
+            ',
         ],
         'q21'=>[
             'behind' => '
@@ -612,7 +613,7 @@ Se otterrai un punteggio in linea o in vantaggio in tutte le sezioni, a breve po
                 <p>
                     La conoscenza dell\'atteggiamento dei partner e della catena di fornitura estesa della sua azienda è un altro elemento importante per la gestione della trasmissione delle vulnerabilità di sicurezza dalle terze parti e delle nuove regole di responsabilità congiunta introdotte dal regolamento GDPR.
                 </p>
-            '
+            ',
         ],
         'q23'=>[
             'behind' => '
@@ -629,7 +630,7 @@ Se otterrai un punteggio in linea o in vantaggio in tutte le sezioni, a breve po
                 <p>
                     È fondamentale convalidare la sicurezza delle terze parti anche negli ambienti più avanzati, in cui le valutazioni autonome possono causare una certa superficialità. La convalida continua è ormai uno standard che è possibile automatizzare in maniera quasi completa. A causa della rapidità del cambiamento del panorama delle minacce, occorre eseguire test di penetrazione basati sui servizi almeno ogni sei mesi. L\'esecuzione di test a intervalli meno frequenti aumenta i rischi per la sua organizzazione.
                 </p>
-            '
+            ',
         ],
         'q24'=>[
             'behind' => '
@@ -646,7 +647,7 @@ Se otterrai un punteggio in linea o in vantaggio in tutte le sezioni, a breve po
                 <p>
                     Con l\'aumento della frequenza e pericolosità degli attacchi informatici, la capacità di rilevare e rispondere in maniera adeguata a una violazione diventerà un elemento chiave di abilitazione per i leader dell\'economia digitale. È importante dedicarsi all\'aderenza alle best practice superando gli standard di conformità e ottenendo revisioni esterne a ciclo continuo dei settori più efficaci e lacunosi della tua azienda.
                 </p>
-            '
+            ',
         ],
-    ]
-);
+    ],
+];

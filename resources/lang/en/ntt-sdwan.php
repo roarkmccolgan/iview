@@ -1,6 +1,7 @@
 <?php
+
 //NTT
-return array(
+return [
     'elqFormName'=>'',
     'developedby'=>'Developed by',
     'sponsoredby'=>'Sponsored by',
@@ -27,7 +28,7 @@ return array(
             This self-assessment tool is backed up by independent end-user research and IDC\'s in depth understanding of this market. Upon completion of a short survey (10 minutes) you will receive a custom report that benchmarks your organization\'s WAN and provides you with essential and tailored guidance to help you prepare for the requirements of tomorrow and plot your course to a Next Generation WAN.
         </p>',
     'startbut'=>'Start Assessment',
-    
+
     'send'=>'We can send you the full results directly to your mailbox',
     'register'=>'Register now to receive your personalized report',
     'provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
@@ -67,7 +68,7 @@ return array(
         <a class="btn btn--primary" target="_blank" href="http://www.ntt.com/en/services/network/software-defined-network.html">
             Click here for more information
         </a>',
-    'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @ntt. Interested? ',// http://bit.ly/2gslXEh
+    'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @ntt. Interested? ', // http://bit.ly/2gslXEh
     'email'=>[
         'subject' => 'NTT Communications Next Generation WAN Advisor',
         'hi' => 'Hi :Fname',
@@ -75,7 +76,7 @@ return array(
         'link' => 'Download Report',
         'extra' => 'Once you\'ve read the report why not visit NTT Communications <a href="http://www.ntt.com/en/services/network/software-defined-network.html" style="color:#054683">SD-WAN content hub</a>',
         'regards' => 'Regards',
-        'team' => 'The IDC Team'
+        'team' => 'The IDC Team',
     ],
     'introduction' => '
         <h2 class="text-ntt-blue mb-6">INTRODUCTION</h2>
@@ -802,7 +803,7 @@ return array(
             </p>
         </div>
     ',
-    
+
     'operations-3-stage3' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2 text-ntt-blue mt-4 font-bold">
@@ -1095,4 +1096,4 @@ return array(
                 
         </div>
     ',
-);
+];

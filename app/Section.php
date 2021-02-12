@@ -10,7 +10,7 @@ class Section extends Model
         'name',
         'alias',
         'class',
-        'display'
+        'display',
     ];
 
     public function questions()

@@ -1,6 +1,7 @@
 <?php
+
 //fireeye
-return array(
+return [
     'stage1' => 'Ad hoc',
     'stage2' => 'Oportunista',
     'stage3' => 'Repetible',
@@ -65,11 +66,11 @@ return array(
                 Podemos enviarle el informe completo directamente a su bandeja de entrada.
                 Tan solo facilítenos su nombre y correo electrónico, y le enviaremos un enlace para descargarlo.
             </p>
-        '
+        ',
     ],
     'complete_thankyou' => 'Muchas gracias :Fname,',
     'complete_body' => 'Su informe personalizado llegará a su bandeja de entrada en breve. Mientras espera, ¿por qué no tuitea sus resultados y los compara con los de sus seguidores?',
-    'complete_tweet' => 'Acabo de realizar la evaluación de preparación para el riesgo cibernético de @IDCUKI patrocinada por @fireeye, estamos en la fase Repetible. ¿Está interesado?',// http://bit.ly/2g8WN1d
+    'complete_tweet' => 'Acabo de realizar la evaluación de preparación para el riesgo cibernético de @IDCUKI patrocinada por @fireeye, estamos en la fase Repetible. ¿Está interesado?', // http://bit.ly/2g8WN1d
     'email'=>[
         'subject' => 'IDC Report',
         'hi' => 'Estimado :Fname',
@@ -80,12 +81,12 @@ return array(
         'link' => 'Descargar informe',
         'extra' => 'Una vez que haya digerido el informe, por qué no visitar <a href="http://www.fireeye.com" style="color:#E66B6B">FireEye</a>',
         'regards' => 'Regards',
-        'team' => 'The IDC Team'
+        'team' => 'The IDC Team',
     ],
     'introduction_title' => 'Resumen ejecutivo del informe y ranking de rendimiento general personalizado',
     'introduction' => '',
     'introduction-image' => 'report.jpg',
-    'overall' => array(
+    'overall' => [
         'title'=>'Su preparación general en seguridad',
         'graph-title'=>'Cómo se compara su organización en términos generales',
         'image'=>'',
@@ -130,9 +131,9 @@ return array(
             <p>
                 Se encuentra muy por delante del resto y en el 5 % más alto en lo que respecta a las capacidades frente a riesgos informáticos. Aunque se encuentra en una posición de liderazgo, siempre hay trabajo por hacer y todavía puede seguir mejorando en diversas áreas para seguir reduciendo la probabilidad de sufrir un fallo de seguridad.
             </p>
-        '
-    ),
-    'cyber-risk-management-and-the-business' => array(
+        ',
+    ],
+    'cyber-risk-management-and-the-business' => [
         'title'=>'Gestión del riesgo cibernético y los negocios',
         'image'=>'cloud-vision-and-strategy.jpg',
         'pb'=>'pb',
@@ -165,9 +166,9 @@ return array(
             <p>
                 ¡Excelente demostración! Está por delante de sus colegas en esta área de gestión de riesgos informáticos, pero no debe dejar de evaluar la forma de hacer las cosas para mantenerse.
             </p>
-        '
-    ),
-    'cyber-risk-management-operations-and-defence' => array(
+        ',
+    ],
+    'cyber-risk-management-operations-and-defence' => [
         'title'=> 'Operaciones de gestión del riesgo cibernético y defensa',
         'image'=>'processes-and-skill-sets.jpg',
         'pb'=>'pb',
@@ -200,9 +201,9 @@ return array(
             <p>
                 ¡El mejor de la clase! Está por delante de sus colegas en esta área de gestión de riesgos informáticos, pero no debe dejar de evaluar la forma de hacer mejor las cosas para mantenerse.
             </p>
-        '
-    ),
-    'cyber-risk-management-breach-detection-and-remediation' => array(
+        ',
+    ],
+    'cyber-risk-management-breach-detection-and-remediation' => [
         'title'=> 'Cyber Risk Management Breach Detection and Remediation',
         'image'=>'business-mix.jpg',
         'pb'=>'pb',
@@ -235,8 +236,8 @@ return array(
             <p>
                 ¡Fantástico! Está por delante de sus colegas en lo que respecta a la gestión de riesgos informáticos conjuntamente con la empresa. Lo está haciendo muy bien en esta área de la gestión de los riesgos informáticos, pero no debe dormirse en los laureles ni dejar nunca de revaluar sus actividades.
             </p>
-        '
-    ),
+        ',
+    ],
     'questions' => [
         'q1'=>[
             'behind' => '
@@ -253,7 +254,7 @@ return array(
                 <p>
                     Tenga en cuenta que las tecnologías y capacidades están en constante evolución y es preciso que revalúe periódicamente sus actividades y las formas de llevarlas a cabo.
                 </p>
-            '
+            ',
         ],
         'q2'=>[
             'behind' => '
@@ -270,7 +271,7 @@ return array(
                 <p>
                     Aunque una gran parte de su enfoque de mejora en gestión de riesgos informáticos puede estar en otra parte, es preciso que continúe adoptando y optimizando capacidades avanzadas en el ámbito de las políticas, la gestión y la automatización, y la orquestación.
                 </p>
-            '
+            ',
         ],
         'q3'=>[
             'behind' => '
@@ -287,7 +288,7 @@ return array(
                 <p>
                     Si desea estar verdaderamente a la última, debe seguir forzando los límites.  Luche por encontrar puntos de compromiso, sin olvidar que las "joyas de la corona" deben permanecer absolutamente protegidas a toda costa, a fin de encontrar nuevas oportunidades de desarrollo.
                 </p>
-            '
+            ',
         ],
         'q4'=>[
             'behind' => '
@@ -304,7 +305,7 @@ return array(
                 <p>
                     Su modo de gestionar el riesgo de fallos de seguridad y planificar sus respuestas en caso de fallo de seguridad es muy previsor. Sin embargo, como siguiente paso, piense en cómo se podría aprovechar un seguro de riesgos informáticos no solo para reducir los costes de un posible fallo de seguridad, sino también como motor para la excelencia, lo que podría convertir la forma de gestionar los datos de los clientes en una ventaja competitiva.
                 </p>
-            '
+            ',
         ],
         'q5'=>[
             'behind' => '
@@ -321,7 +322,7 @@ return array(
                 <p>
                     Considere cómo se podría integrar la gestión de riesgos informáticos en el desarrollo de nuevas prioridades comerciales con el fin de garantizar una identificación y gestión proactiva de los riesgos informáticos con miras a facilitar el cumplimiento de los objetivos de la empresa.
                 </p>
-            '
+            ',
         ],
         'q6'=>[
             'behind' => '
@@ -338,7 +339,7 @@ return array(
                 <p>
                     A fin de reforzar este marco de trabajo, considere de qué forma podrían los especialistas en riesgos, cumplimiento y seguridad, tanto a nivel de junta directiva como de empleado, contribuir de forma positiva a este proceso. Haga un uso eficaz de terceros para evaluar las buenas prácticas.
                 </p>
-            '
+            ',
         ],
         'q7'=>[
             'behind' => '
@@ -355,7 +356,7 @@ return array(
                 <p>
                     Piense en cómo puede la seguridad convertirse en protagonista durante la planificación de nuevas iniciativas. Por otra parte, asegúrese de que la seguridad siga siendo una de las prioridades principales desde el principio hasta el final de las fases de desarrollo, pruebas e implementación de los proyectos, así como en el curso de la actividad empresarial cotidiana.
                 </p>
-            '
+            ',
         ],
         'q8'=>[
             'behind' => '
@@ -372,7 +373,7 @@ return array(
                 <p>
                     Si desea seguir mejorando, considere a las inversiones en seguridad como el facilitador que impulsa a la empresa a alcanzar los objetivos de negocio y que favorece el aumento de los ingresos y la rentabilidad.
                 </p>
-            '
+            ',
         ],
         'q9'=>[
             'behind' => '
@@ -389,7 +390,7 @@ return array(
                 <p>
                     Para pasar al siguiente nivel, considere cómo maximizar el punto en el que se entrecruzan la seguridad física y la seguridad informática a través del uso de técnicas de autenticación biométrica.
                 </p>
-            '
+            ',
         ],
         'q10'=>[
             'behind' => '
@@ -406,7 +407,7 @@ return array(
                 <p>
                     Piense en cómo su organización puede llegar a ser no solo un referente en cuanto a la gestión de buenas prácticas, sino un líder de pensamiento para la industria por derecho propio. Esto podría llegar a proporcionar una ventaja competitiva frente a empresas similares.
                 </p>
-            '
+            ',
         ],
         'q11'=>[
             'behind' => '
@@ -423,7 +424,7 @@ return array(
                 <p>
                     Si desea seguir mejorando, analice de qué modo la elaboración de informes continuos puede servir de algo más que de mero panel de indicadores y convertirse en un facilitador para la toma de decisiones empresariales a través de una funcionalidad operativa integrada.
                 </p>
-            '
+            ',
         ],
         'q12'=>[
             'behind' => '
@@ -440,7 +441,7 @@ return array(
                 <p>
                     Si desea seguir mejorando, analice de qué modo la elaboración de informes continuos puede servir de algo más que de mero panel de indicadores y convertirse en un facilitador para la toma de decisiones empresariales a través de una funcionalidad operativa integrada.
                 </p>
-            '
+            ',
         ],
         'q13'=>[
             'behind' => '
@@ -457,7 +458,7 @@ return array(
                 <p>
                     Si desea seguir mejorando, analice de qué modo la elaboración de informes continuos puede servir de algo más que de mero panel de indicadores y convertirse en un facilitador para la toma de decisiones empresariales a través de una funcionalidad operativa integrada.
                 </p>
-            '
+            ',
         ],
         'q14'=>[
             'behind' => '
@@ -474,7 +475,7 @@ return array(
                 <p>
                     Si desea seguir avanzando en la gestión de riesgos informáticos, considere cómo puede aumentar el grado de automatización e integración de los elementos en el paquete de gestión de extremo a extremo para ayudarle a impulsar un departamento de TI más ágil.
                 </p>
-            '
+            ',
         ],
         'q15'=>[
             'behind' => '
@@ -491,7 +492,7 @@ return array(
                 <p>
                     Para estar verdaderamente en primera línea, considere qué medidas se pueden tomar para, en lo posible, automatizar y orquestar los procesos de extremo a extremo con el fin de llevar la gestión de riesgos informáticos con agilidad, calidad y garantía de cumplimiento.
                 </p>
-            '
+            ',
         ],
         'q16'=>[
             'behind' => '
@@ -508,7 +509,7 @@ return array(
                 <p>
                     En lugar de centrarse simplemente en la oportunidad de incrementar el grado de automatización, no se olvide del componente humano de la ecuación. Para lograr un mayor impacto, analice cómo podrían utilizarse las iniciativas de automatización que pretende llevar a cabo para servir de complemento a su personal de seguridad, con objeto de ampliar sus conocimientos para mejorar su eficacia como trabajadores en la realización de tareas más avanzadas.
                 </p>
-            '
+            ',
         ],
         'q17'=>[
             'behind' => '
@@ -525,7 +526,7 @@ return array(
                 <p>
                     Para ir más lejos todavía, valore el impacto que pueden tener los PSSG. Los PSSG pueden alimentar la gestión de herramientas y dispositivos de seguridad en motores de correlación de datos masivos (big data) y presentar esta información a través de paneles de indicadores de gestión, lo que le ayuda a tomar decisiones al tener conocimiento de la posición sobre seguridad en tiempo real.
                 </p>
-            '
+            ',
         ],
         'q25'=>[
             'behind' => '
@@ -542,7 +543,7 @@ return array(
                 <p>
                     Usted es un líder en lo que respecta a su enfoque sobre el uso de PSSG, ya que hace un uso frecuente y equilibrado de ellos como canal de distribución complementario al de los recursos internos. Con el fin de seguir progresando, trate de ampliar su uso de PSSG para lograr avances en la implementación de buenas prácticas y en las operaciones.
                 </p>
-            '
+            ',
         ],
         'q18'=>[
             'behind' => '
@@ -559,7 +560,7 @@ return array(
                 <p>
                     La inteligencia artificial y la heurística están en proceso de maduración, por lo que debería implementarlas, si no lo está haciendo ya, para continuar con la búsqueda del liderazgo.
                 </p>
-            '
+            ',
         ],
         'q19'=>[
             'behind' => '
@@ -576,7 +577,7 @@ return array(
                 <p>
                     Los sistemas Honeypot (sistema de señuelos)/de recogida de inteligencia y los equipos tigre se están convirtiendo en práctica estándar para operaciones de seguridad relevantes, maduras y avanzadas, por lo que debería implementarlas si no lo está haciendo ya.
                 </p>
-            '
+            ',
         ],
         'q20'=>[
             'behind' => '
@@ -593,7 +594,7 @@ return array(
                 <p>
                     Las capacidades de corrección automatizada basadas en el aprendizaje automático están madurando rápidamente, por lo que debería implementarlas si no lo está haciendo ya.
                 </p>
-            '
+            ',
         ],
         'q21'=>[
             'behind' => '
@@ -610,7 +611,7 @@ return array(
                 <p>
                     Comprender la posición de la cadena ampliada de suministro o socios también es fundamental, tanto desde la perspectiva de heredar las vulnerabilidades de terceros en materia de seguridad como desde las nuevas normas de responsabilidad conjunta que están contempladas en el RGPD.
                 </p>
-            '
+            ',
         ],
         'q23'=>[
             'behind' => '
@@ -627,7 +628,7 @@ return array(
                 <p>
                     Hoy en día es esencial que se lleve a cabo la validación de la seguridad por parte de terceros, incluso en entornos avanzados en los que "corregir sus propios deberes" pueda llevar al exceso de confianza. En la actualidad, la validación continua es la práctica habitual, aunque muchas de estas tareas ya pueden automatizarse. Deben hacerse pruebas de penetración basadas en servicios cada seis meses como mínimo debido a la velocidad a la que cambia el panorama de amenazas. Si las pruebas se realizan con menor frecuencia, su organización correrá un mayor riesgo.
                 </p>
-            '
+            ',
         ],
         'q24'=>[
             'behind' => '
@@ -644,7 +645,7 @@ return array(
                 <p>
                     Dado que los ataques informáticos son cada vez más habilidosos y frecuentes, tener la capacidad de detectar un fallo de seguridad y responder de manera adecuada será uno de los facilitadores indispensables para un líder de la economía digital. Esfuércese en seguir persiguiendo las buenas prácticas por encima de cualquier norma de cumplimiento y asegúrese de seguir obteniendo evaluaciones externas de sus fortalezas y debilidades.
                 </p>
-            '
+            ',
         ],
-    ]
-);
+    ],
+];

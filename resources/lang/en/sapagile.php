@@ -1,6 +1,7 @@
 <?php
+
 //SAP
-return array(
+return [
     'elqFormName'=>'',
     'developedby'=>'Developed by',
     'sponsoredby'=>'Sponsored by',
@@ -34,7 +35,7 @@ return array(
             This will take around 5-7 minutes to complete.
         </p>',
     'startbut'=>'Start the IDC Agility Assessment',
-    
+
     'send'=>'We can send you the full results directly to your mailbox',
     'register'=>'Register now to receive your personalized report',
     'provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
@@ -113,7 +114,7 @@ return array(
         <a class="text-sap-blue" href="https://www.sap.com/turkey/products/sme-business-software.html">SAP.com/Turkey</a><br/>
         <a class="text-sap-blue" href="https://www.sap.com/index.html">SAP.com global website</a><br/><br/>
         Share the tool ',
-    'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @3ds. Interested? ',// http://bit.ly/2gslXEh
+    'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @3ds. Interested? ', // http://bit.ly/2gslXEh
     'email'=>[
         'subject' => 'IDC Click to be Agile Assessment',
         'hi' => 'Hi :Fname',
@@ -140,7 +141,7 @@ return array(
                 <img src="https://clicktobeagile.idcready.net/images/linkedin.png" style="width: 50px;"/>
             </a><br/>',
         'regards' => 'Regards',
-        'team' => 'The IDC Team'
+        'team' => 'The IDC Team',
     ],
     'introduction' => '
         <div class="w-5/6 mx-auto">
@@ -1655,4 +1656,4 @@ return array(
             </div>
         </div>
     ',
-);
+];

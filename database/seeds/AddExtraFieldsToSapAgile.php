@@ -19,17 +19,17 @@ class AddExtraFieldsToSapAgile extends Seeder
             'trans' => 'areas_interest',
             'error' => 'errorAreaInterest',
             'options' => json_encode([
-                "finance_administration" => "Finance &amp; Administration",
-                "purchase" => "Purchase",
-                "hr" => "HR",
-                "production_supply_chain" => "Production &amp; Supply chain",
-                "sales_marketing" => "Sales &amp; Marketing"
+                'finance_administration' => 'Finance &amp; Administration',
+                'purchase' => 'Purchase',
+                'hr' => 'HR',
+                'production_supply_chain' => 'Production &amp; Supply chain',
+                'sales_marketing' => 'Sales &amp; Marketing',
             ]),
             'required' => 1,
             'multiple' => 1,
             'order' => 1,
             'created_at' => \Carbon\Carbon::now(),
-            'updated_at' => \Carbon\Carbon::now()
+            'updated_at' => \Carbon\Carbon::now(),
         ]);
     }
 }

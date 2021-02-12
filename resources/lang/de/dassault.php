@@ -1,6 +1,7 @@
 <?php
+
 //DASSAULT
-return array(
+return [
     'elqFormName'=>'',
     'developedby'=>'Entwickelt von',
     'sponsoredby'=>'Gesponsert von',
@@ -46,7 +47,7 @@ return array(
         </p>
     ',
     'startbut'=>'Assessment starten',
-    
+
     'send'=>'Auf Wunsch schicken wir die vollständigen Ergebnisse direkt an Ihren Posteingang.',
     'register'=>'Den ausführlichen Ergebnisbericht erhalten Sie durch das Ausfüllen des Formulars ',
     'provide'=>'Nach der Angabe weniger Details, schicken wir Ihnen gerne einen Link zum Herunterladen des Reports.',
@@ -121,7 +122,7 @@ return array(
         <a class="btn btn--primary" target="_blank" href="https://www.3ds.com/3dexperience/cloud/">
             Klicken Sie hier, um weitere Informationen zu erhalten
         </a>',
-    'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @3ds. Interested? ',// http://bit.ly/2gslXEh
+    'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @3ds. Interested? ', // http://bit.ly/2gslXEh
     'email'=>[
         'subject' => 'Dassault Systèmes Digital Maturity Assessment',
         'hi' => 'Hallo :Fname',
@@ -131,7 +132,7 @@ return array(
         'dont_see_link' => 'klicken Sie hier, um den Bericht herunterzuladen',
         'extra' => 'Nachdem Sie den Report gelesen haben, sollten Sie <a href="https://www.3ds.com/3dexperience/cloud/" style="color:#054683">Dassault Systèmes 3DS</a> besuchen.',
         'regards' => 'Mit freundlichen Grüßen,',
-        'team' => 'Das IDC-Team'
+        'team' => 'Das IDC-Team',
     ],
     'introduction' => '
         <h2 class="text-dassault-blue mb-4">EINFÜHRUNG</h2>
@@ -1134,7 +1135,7 @@ return array(
             </p>
         </div>
     ',
-    
+
     'digital-deliveryintro' => '
         <h2 class="w-4/5 ml-auto text-dassault-blue mb-6">DIGITAL DELIVERY</h2>
         <div class="clearfix">
@@ -1212,7 +1213,7 @@ return array(
             </p>
         </div>
     ',
-    
+
     'digital-delivery-3-stage3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue mt-4 font-bold">
@@ -1254,7 +1255,6 @@ return array(
             </p>
         </div>
     ',
-    
 
     'digital-delivery-2-q8-1' => '
         <div class="clearfix">
@@ -1277,7 +1277,7 @@ return array(
             </p>
         </div>
     ',
-    
+
     'digital-delivery-3-q8-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
@@ -1510,7 +1510,6 @@ return array(
             </p>
         </div>
     ',
-    
 
     'conclusionintro' => '
         <h2 class="w-4/5 ml-auto text-dassault-blue mb-6">FAZIT</h2>
@@ -1576,4 +1575,4 @@ return array(
                 
         </div>
     ',
-);
+];

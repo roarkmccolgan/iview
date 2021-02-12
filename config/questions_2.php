@@ -1,4 +1,5 @@
 <?php
+
 return [
     'screeners' => [
         'title' => 'Demographics',
@@ -19,37 +20,37 @@ return [
                             [
                                 'label'=>'France',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Germany',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'United Kingdom',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Spain',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Italy',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Other',
                                 'value'=>0,
-                                'checked'=>false
-                            ]
+                                'checked'=>false,
+                            ],
                         ],
-                        'other'=>'Other|0|Your country'
-                    ]
-                ]
+                        'other'=>'Other|0|Your country',
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Screeners',
@@ -62,31 +63,31 @@ return [
                             [
                                 'label'=>'Less than 1000',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'1000-2499',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'2500-4999',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'5000-9999',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'10000 or more',
                                 'value'=>1,
-                                'checked'=>false
-                            ]
-                        ]
-                    ]
-                ]
+                                'checked'=>false,
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Screeners',
@@ -99,75 +100,75 @@ return [
                             [
                                 'label'=>'Financial services',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Manufacturing',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Telecommunications services (including hosters, xSPs and Cloud Service Providers)',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Education',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Healthcare',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Media',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Transport, distribution and logistics',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Retail and Wholesale',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'IT consulting and IT-related professional services',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Non-IT consulting and other professional services (accounting, legal, advertising, real estate, recruitment, business consulting, etc.) ',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Central or Local Government, or Public services',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Utilities - Electricity, Gas, Water',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Other',
                                 'value'=>1,
                                 'checked'=>false,
-                                'other' => true
-                            ]
+                                'other' => true,
+                            ],
                         ],
-                        'other'=>'Other|1|Please Specify Industry'
-                    ]
-                ]
-            ]
-        ]
+                        'other'=>'Other|1|Please Specify Industry',
+                    ],
+                ],
+            ],
+        ],
     ],
     'cyber-risk-management-and-the-business' => [
         'title' => 'Cyber Risk Management and the Business',
@@ -193,7 +194,7 @@ return [
                                     'stage3' => 'behind',
                                     'stage4' => 'behind',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'An enabler of business efficiency',
@@ -205,7 +206,7 @@ return [
                                     'stage3' => 'inline',
                                     'stage4' => 'inline',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'A driver of competitive advantage or differentiation',
@@ -217,11 +218,11 @@ return [
                                     'stage3' => 'ahead',
                                     'stage4' => 'ahead',
                                     'stage5' => 'inline',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]/*,
+                                ],
+                            ],
+                        ],
+                    ],
+                ], /*,
                 'report' => array(
                     'text'=>'IDC estimates that ~45% of all new servers sold in Europe in 2016 will be virtualized. Excluding non suitable environments such as tower machines or High Performance Computing, >70% of the new servers were virtualized. ',
                     'image'=>'img/techfit_icons_Q-B1.png'
@@ -245,7 +246,7 @@ return [
                                     'stage3' => 'behind',
                                     'stage4' => 'behind',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'We are generally OK with requests around existing applications or services, but struggle with requests for new or enhance',
@@ -257,7 +258,7 @@ return [
                                     'stage3' => 'inline',
                                     'stage4' => 'behind',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'We are generally OK with requests both for existing applications and services, and new or enhanced services.',
@@ -269,7 +270,7 @@ return [
                                     'stage3' => 'inline',
                                     'stage4' => 'inline',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'We are very good at delivery on most or all requests.',
@@ -281,11 +282,11 @@ return [
                                     'stage3' => 'ahead',
                                     'stage4' => 'ahead',
                                     'stage5' => 'inline',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Cyber Risk Management and the Business',
@@ -305,7 +306,7 @@ return [
                                     'stage3' => 'behind',
                                     'stage4' => 'behind',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'We tend to avoid risks, but will take some risks where there is a very good justification.',
@@ -317,7 +318,7 @@ return [
                                     'stage3' => 'behind',
                                     'stage4' => 'behind',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'We are wary of risks, but will take them where we can see a clear business benefit.',
@@ -329,7 +330,7 @@ return [
                                     'stage3' => 'inline',
                                     'stage4' => 'inline',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'We will take on risk readily to help the business develop.',
@@ -341,7 +342,7 @@ return [
                                     'stage3' => 'ahead',
                                     'stage4' => 'inline',
                                     'stage5' => 'inline',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'We actively take on and manage risk to help the business develop.',
@@ -353,11 +354,11 @@ return [
                                     'stage3' => 'ahead',
                                     'stage4' => 'ahead',
                                     'stage5' => 'inline',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page4' => [
                 'title' => 'Cyber Risk Management and the Business',
@@ -368,7 +369,7 @@ return [
                         'name'=>'q4',
                         'calc'=>[
                             'type'=>'average',
-                            'value'=>false
+                            'value'=>false,
                         ],
                         'options'=>[
                             [
@@ -385,7 +386,7 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'inline',
                                             'stage5' => 'inline',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Don\'t have, but planned',
@@ -397,7 +398,7 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No, and no plans',
@@ -409,9 +410,9 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Proactive detection (solutions that are able to identify unknown threats through techniques such as behavioural analytics and machine learning, as opposed to being reliant on blocking known threats through the use of signatures)',
@@ -427,7 +428,7 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'inline',
                                             'stage5' => 'inline',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Don\'t have, but planned',
@@ -439,7 +440,7 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No, and no plans',
@@ -451,9 +452,9 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Response plan',
@@ -469,7 +470,7 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'inline',
                                             'stage5' => 'inline',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Don\'t have, but planned',
@@ -481,7 +482,7 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No, and no plans',
@@ -493,9 +494,9 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Internal communications plan',
@@ -511,7 +512,7 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'inline',
                                             'stage5' => 'inline',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Don\'t have, but planned',
@@ -523,7 +524,7 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No, and no plans',
@@ -535,9 +536,9 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'External communications and public relations plan',
@@ -553,7 +554,7 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'inline',
                                             'stage5' => 'inline',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Don\'t have, but planned',
@@ -565,7 +566,7 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No, and no plans',
@@ -577,9 +578,9 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Breach notification plan',
@@ -595,7 +596,7 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'inline',
                                             'stage5' => 'inline',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Don\'t have, but planned',
@@ -607,7 +608,7 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No, and no plans',
@@ -619,9 +620,9 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Breach remediation plan',
@@ -637,7 +638,7 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'inline',
                                             'stage5' => 'inline',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Don\'t have, but planned',
@@ -649,7 +650,7 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No, and no plans',
@@ -661,9 +662,9 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Cyber risk insurance',
@@ -679,7 +680,7 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'inline',
                                             'stage5' => 'inline',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Don\'t have, but planned',
@@ -691,7 +692,7 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No, and no plans',
@@ -703,19 +704,19 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
-                                    ]
-                                ]
-                            ]
-                        ]
-                    ]
+                                        ],
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
                 ]
                 /*,
                 'report' => array(
                     'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
                     'image'=>'img/techfit_icons_Q-A1.png'
                 )*/,
-                'report' => false
+                'report' => false,
             ],
             'page5' => [
                 'title' => 'Cyber Risk Management and the Business',
@@ -735,7 +736,7 @@ return [
                                     'stage3' => 'behind',
                                     'stage4' => 'behind',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'It is typically delegated to IT or senior management',
@@ -747,7 +748,7 @@ return [
                                     'stage3' => 'behind',
                                     'stage4' => 'behind',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'It is shared between IT and various lines of business.',
@@ -759,7 +760,7 @@ return [
                                     'stage3' => 'inline',
                                     'stage4' => 'inline',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'It is shared between IT and senior management.',
@@ -771,7 +772,7 @@ return [
                                     'stage3' => 'inline',
                                     'stage4' => 'inline',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'It is shared between IT, senior management, and various lines of business.',
@@ -783,11 +784,11 @@ return [
                                     'stage3' => 'ahead',
                                     'stage4' => 'inline',
                                     'stage5' => 'inline',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page6' => [
                 'title' => 'Cyber Risk Management and the Business',
@@ -798,7 +799,7 @@ return [
                         'name'=>'q6',
                         'calc'=>[
                             'type'=>'normalize',
-                            'value'=>5
+                            'value'=>5,
                         ],
                         'options'=>[
                             [
@@ -815,7 +816,7 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'inline',
                                             'stage5' => 'inline',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -827,9 +828,9 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'CFO',
@@ -845,7 +846,7 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'inline',
                                             'stage5' => 'inline',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -857,9 +858,9 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'COO',
@@ -875,7 +876,7 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'inline',
                                             'stage5' => 'inline',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -887,9 +888,9 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Non-executive board-level risk/compliance/security focused member',
@@ -905,7 +906,7 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'inline',
                                             'stage5' => 'inline',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -917,9 +918,9 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Executive board-level risk/compliance/security focused member',
@@ -935,7 +936,7 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'inline',
                                             'stage5' => 'inline',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -947,9 +948,9 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Dedicated risk/compliance/security role (non-board)',
@@ -965,7 +966,7 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'inline',
                                             'stage5' => 'inline',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -977,18 +978,18 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
-                                    ]
-                                ]
-                            ]
-                        ]
-                    ]
+                                        ],
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
                 ]/*,
                 'report' => array(
                     'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
                     'image'=>'img/techfit_icons_Q-A1.png'
                 )*/,
-                'report' => false
+                'report' => false,
             ],
             'page7' => [
                 'title' => 'Cyber Risk Management and the Business',
@@ -1008,7 +1009,7 @@ return [
                                     'stage3' => 'ahead',
                                     'stage4' => 'ahead',
                                     'stage5' => 'inline',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'During planning',
@@ -1020,7 +1021,7 @@ return [
                                     'stage3' => 'inline',
                                     'stage4' => 'inline',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'At the beginning of implementation',
@@ -1032,7 +1033,7 @@ return [
                                     'stage3' => 'inline',
                                     'stage4' => 'behind',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'During implementation',
@@ -1044,7 +1045,7 @@ return [
                                     'stage3' => 'behind',
                                     'stage4' => 'behind',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'When something goes wrong',
@@ -1056,11 +1057,11 @@ return [
                                     'stage3' => 'behind',
                                     'stage4' => 'behind',
                                     'stage5' => 'behind',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page8' => [
                 'title' => 'Cyber Risk Management and the Business',
@@ -1080,7 +1081,7 @@ return [
                                     'stage3' => 'behind',
                                     'stage4' => 'behind',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Tight, barely covering essential operations',
@@ -1092,7 +1093,7 @@ return [
                                     'stage3' => 'behind',
                                     'stage4' => 'behind',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Good for core operations, but tight for new initiatives',
@@ -1104,7 +1105,7 @@ return [
                                     'stage3' => 'inline',
                                     'stage4' => 'behind',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Good for core operations, and for new initiatives where the value is clear',
@@ -1116,7 +1117,7 @@ return [
                                     'stage3' => 'ahead',
                                     'stage4' => 'inline',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Readily available across the board with a good business case, even for experimental development',
@@ -1128,13 +1129,13 @@ return [
                                     'stage3' => 'ahead',
                                     'stage4' => 'ahead',
                                     'stage5' => 'inline',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
-        ]
+        ],
     ],
     'cyber-risk-management-operations-and-defence' => [
         'title' => 'Cyber Risk Management Operations and Defence',
@@ -1151,7 +1152,7 @@ return [
                         'name'=>'q9',
                         'calc'=>[
                             'type'=>'average',
-                            'value'=>false
+                            'value'=>false,
                         ],
                         'options'=>[
                             [
@@ -1170,7 +1171,7 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1182,7 +1183,7 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1194,7 +1195,7 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1206,7 +1207,7 @@ return [
                                             'stage3' => 'ahead',
                                             'stage4' => 'inline',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1218,9 +1219,9 @@ return [
                                             'stage3' => 'ahead',
                                             'stage4' => 'ahead',
                                             'stage5' => 'inline',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Prebooked appointments',
@@ -1238,7 +1239,7 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1250,7 +1251,7 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1262,7 +1263,7 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1274,7 +1275,7 @@ return [
                                             'stage3' => 'ahead',
                                             'stage4' => 'inline',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1286,9 +1287,9 @@ return [
                                             'stage3' => 'ahead',
                                             'stage4' => 'ahead',
                                             'stage5' => 'inline',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>' Identity verification',
@@ -1306,7 +1307,7 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1318,7 +1319,7 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1330,7 +1331,7 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1342,7 +1343,7 @@ return [
                                             'stage3' => 'ahead',
                                             'stage4' => 'inline',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1354,9 +1355,9 @@ return [
                                             'stage3' => 'ahead',
                                             'stage4' => 'ahead',
                                             'stage5' => 'inline',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Man-traps to enter/exit',
@@ -1374,7 +1375,7 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1386,7 +1387,7 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1398,7 +1399,7 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1410,7 +1411,7 @@ return [
                                             'stage3' => 'ahead',
                                             'stage4' => 'inline',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1422,9 +1423,9 @@ return [
                                             'stage3' => 'ahead',
                                             'stage4' => 'ahead',
                                             'stage5' => 'inline',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Biometric authentication',
@@ -1442,7 +1443,7 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1454,7 +1455,7 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1466,7 +1467,7 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1478,7 +1479,7 @@ return [
                                             'stage3' => 'ahead',
                                             'stage4' => 'inline',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1490,9 +1491,9 @@ return [
                                             'stage3' => 'ahead',
                                             'stage4' => 'ahead',
                                             'stage5' => 'inline',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'CCTV monitoring',
@@ -1510,7 +1511,7 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1522,7 +1523,7 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1534,7 +1535,7 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1546,7 +1547,7 @@ return [
                                             'stage3' => 'ahead',
                                             'stage4' => 'inline',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1558,9 +1559,9 @@ return [
                                             'stage3' => 'ahead',
                                             'stage4' => 'ahead',
                                             'stage5' => 'inline',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Man-shadowing (staff and visitors must work in pairs or be accompanied)',
@@ -1578,7 +1579,7 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1590,7 +1591,7 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1602,7 +1603,7 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1614,7 +1615,7 @@ return [
                                             'stage3' => 'ahead',
                                             'stage4' => 'inline',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1626,9 +1627,9 @@ return [
                                             'stage3' => 'ahead',
                                             'stage4' => 'ahead',
                                             'stage5' => 'inline',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Change authorization, approval, and logging',
@@ -1646,7 +1647,7 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1658,7 +1659,7 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1670,7 +1671,7 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1682,7 +1683,7 @@ return [
                                             'stage3' => 'ahead',
                                             'stage4' => 'inline',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1694,18 +1695,18 @@ return [
                                             'stage3' => 'ahead',
                                             'stage4' => 'ahead',
                                             'stage5' => 'inline',
-                                        ]
-                                    ]
-                                ]
-                            ]
-                        ]
-                    ]
+                                        ],
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
                 ]/*,
                 'report' => array(
                     'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
                     'image'=>'img/techfit_icons_Q-A1.png'
                 )*/,
-                'report' => false
+                'report' => false,
             ],
             'page2' => [
                 'title' => 'Cyber Risk Management Operations and Defence',
@@ -1725,7 +1726,7 @@ return [
                                     'stage3' => 'behind',
                                     'stage4' => 'behind',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'We do this on an informal basis internally.',
@@ -1737,7 +1738,7 @@ return [
                                     'stage3' => 'behind',
                                     'stage4' => 'behind',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'We do this on a formal basis (using standards) using our general skills.',
@@ -1749,7 +1750,7 @@ return [
                                     'stage3' => 'inline',
                                     'stage4' => 'behind',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'We do this on a formal basis (using standards) internally using expert skills.',
@@ -1761,7 +1762,7 @@ return [
                                     'stage3' => 'ahead',
                                     'stage4' => 'inline',
                                     'stage5' => 'inline',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'We use an external expert assessor (using standards).',
@@ -1773,11 +1774,11 @@ return [
                                     'stage3' => 'ahead',
                                     'stage4' => 'ahead',
                                     'stage5' => 'inline',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Cyber Risk Management Operations and Defence',
@@ -1788,7 +1789,7 @@ return [
                         'name'=>'q11',
                         'calc'=>[
                             'type'=>'average',
-                            'value'=>false
+                            'value'=>false,
                         ],
                         'options'=>[
                             [
@@ -1807,7 +1808,7 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1819,7 +1820,7 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1831,7 +1832,7 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1843,7 +1844,7 @@ return [
                                             'stage3' => 'ahead',
                                             'stage4' => 'inline',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1855,9 +1856,9 @@ return [
                                             'stage3' => 'ahead',
                                             'stage4' => 'ahead',
                                             'stage5' => 'inline',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Assessment of capabilities and gaps',
@@ -1875,7 +1876,7 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1887,7 +1888,7 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1899,7 +1900,7 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1911,7 +1912,7 @@ return [
                                             'stage3' => 'ahead',
                                             'stage4' => 'inline',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1923,9 +1924,9 @@ return [
                                             'stage3' => 'ahead',
                                             'stage4' => 'ahead',
                                             'stage5' => 'inline',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Implementation planning',
@@ -1943,7 +1944,7 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1955,7 +1956,7 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1967,7 +1968,7 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1979,7 +1980,7 @@ return [
                                             'stage3' => 'ahead',
                                             'stage4' => 'inline',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1991,9 +1992,9 @@ return [
                                             'stage3' => 'ahead',
                                             'stage4' => 'ahead',
                                             'stage5' => 'inline',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Implementation execution',
@@ -2011,7 +2012,7 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -2023,7 +2024,7 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -2035,7 +2036,7 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -2047,7 +2048,7 @@ return [
                                             'stage3' => 'ahead',
                                             'stage4' => 'inline',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -2059,9 +2060,9 @@ return [
                                             'stage3' => 'ahead',
                                             'stage4' => 'ahead',
                                             'stage5' => 'inline',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Continuous improvement/best practice beyond the GDPR itself (beyond the regulations)',
@@ -2079,7 +2080,7 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -2091,7 +2092,7 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -2103,7 +2104,7 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -2115,7 +2116,7 @@ return [
                                             'stage3' => 'ahead',
                                             'stage4' => 'inline',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -2127,9 +2128,9 @@ return [
                                             'stage3' => 'ahead',
                                             'stage4' => 'ahead',
                                             'stage5' => 'inline',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Understanding mitigation of penalties based on early detection/remediation',
@@ -2147,7 +2148,7 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -2159,7 +2160,7 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -2171,7 +2172,7 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -2183,7 +2184,7 @@ return [
                                             'stage3' => 'ahead',
                                             'stage4' => 'inline',
                                             'stage5' => 'behind',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -2195,18 +2196,18 @@ return [
                                             'stage3' => 'ahead',
                                             'stage4' => 'ahead',
                                             'stage5' => 'inline',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
-                        ]
-                    ]
+                        ],
+                    ],
                 ]/*,
                 'report' => array(
                     'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
                     'image'=>'img/techfit_icons_Q-A1.png'
                 )*/,
-                'report' => false
+                'report' => false,
             ],
             'page4' => [
                 'title' => 'Cyber Risk Management Operations and Defence',
@@ -2226,7 +2227,7 @@ return [
                                     'stage3' => 'behind',
                                     'stage4' => 'behind',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'We mostly buy tactically as issues arise but have some strategic purchasing.',
@@ -2238,7 +2239,7 @@ return [
                                     'stage3' => 'behind',
                                     'stage4' => 'behind',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'We have a balance of tactical versus strategic purchasing.',
@@ -2250,7 +2251,7 @@ return [
                                     'stage3' => 'inline',
                                     'stage4' => 'behind',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'We mostly buy strategically but will buy tactically if we have an issue.',
@@ -2262,7 +2263,7 @@ return [
                                     'stage3' => 'ahead',
                                     'stage4' => 'inline',
                                     'stage5' => 'inline',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'We tend to buy strategically across the board.',
@@ -2274,11 +2275,11 @@ return [
                                     'stage3' => 'ahead',
                                     'stage4' => 'ahead',
                                     'stage5' => 'inline',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page5' => [
                 'title' => 'Cyber Risk Management Operations and Defence',
@@ -2298,7 +2299,7 @@ return [
                                     'stage3' => 'behind',
                                     'stage4' => 'behind',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Ad hoc if asked',
@@ -2310,7 +2311,7 @@ return [
                                     'stage3' => 'behind',
                                     'stage4' => 'behind',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Annually',
@@ -2322,7 +2323,7 @@ return [
                                     'stage3' => 'inline',
                                     'stage4' => 'behind',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Quarterly',
@@ -2334,7 +2335,7 @@ return [
                                     'stage3' => 'inline',
                                     'stage4' => 'inline',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Monthly',
@@ -2346,7 +2347,7 @@ return [
                                     'stage3' => 'ahead',
                                     'stage4' => 'inline',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Weekly',
@@ -2358,7 +2359,7 @@ return [
                                     'stage3' => 'ahead',
                                     'stage4' => 'ahead',
                                     'stage5' => 'inline',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Daily',
@@ -2370,7 +2371,7 @@ return [
                                     'stage3' => 'ahead',
                                     'stage4' => 'ahead',
                                     'stage5' => 'inline',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Hourly',
@@ -2382,7 +2383,7 @@ return [
                                     'stage3' => 'ahead',
                                     'stage4' => 'ahead',
                                     'stage5' => 'inline',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Continuously',
@@ -2394,11 +2395,11 @@ return [
                                     'stage3' => 'ahead',
                                     'stage4' => 'ahead',
                                     'stage5' => 'ahead',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page6' => [
                 'title' => 'Cyber Risk Management Operations and Defence',
@@ -2418,7 +2419,7 @@ return [
                                     'stage3' => 'behind',
                                     'stage4' => 'behind',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'We mainly use \'out-of-the-box\' tools from our security suppliers.',
@@ -2430,7 +2431,7 @@ return [
                                     'stage3' => 'behind',
                                     'stage4' => 'behind',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'We use a combination of specialized management tools with some \'out-of-the-box\' tools.',
@@ -2442,7 +2443,7 @@ return [
                                     'stage3' => 'inline',
                                     'stage4' => 'behind',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'We mainly use specialized security management tools.',
@@ -2454,7 +2455,7 @@ return [
                                     'stage3' => 'inline',
                                     'stage4' => 'inline',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'We use an end-to-end security management suite.',
@@ -2466,7 +2467,7 @@ return [
                                     'stage3' => 'ahead',
                                     'stage4' => 'ahead',
                                     'stage5' => 'inline',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'We use a certified partner to help us manage our IT security infrastructure.',
@@ -2478,11 +2479,11 @@ return [
                                     'stage3' => 'ahead',
                                     'stage4' => 'ahead',
                                     'stage5' => 'inline',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page7' => [
                 'title' => 'Cyber Risk Management Operations and Defence',
@@ -2502,7 +2503,7 @@ return [
                                     'stage3' => 'behind',
                                     'stage4' => 'behind',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Mainly manual processes with a small amount of automation',
@@ -2514,7 +2515,7 @@ return [
                                     'stage3' => 'behind',
                                     'stage4' => 'behind',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'A good balance of automation and manual processes',
@@ -2526,7 +2527,7 @@ return [
                                     'stage3' => 'inline',
                                     'stage4' => 'inline',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Mainly automation with a small amount of manual processes',
@@ -2538,7 +2539,7 @@ return [
                                     'stage3' => 'ahead',
                                     'stage4' => 'ahead',
                                     'stage5' => 'inline',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Automation across the board',
@@ -2550,11 +2551,11 @@ return [
                                     'stage3' => 'ahead',
                                     'stage4' => 'ahead',
                                     'stage5' => 'inline',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page8' => [
                 'title' => 'Cyber Risk Management Operations and Defence',
@@ -2574,7 +2575,7 @@ return [
                                     'stage3' => 'behind',
                                     'stage4' => 'behind',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Decrease it a little',
@@ -2586,7 +2587,7 @@ return [
                                     'stage3' => 'behind',
                                     'stage4' => 'behind',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Stay the same',
@@ -2598,7 +2599,7 @@ return [
                                     'stage3' => 'inline',
                                     'stage4' => 'inline',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Increase it a little',
@@ -2610,7 +2611,7 @@ return [
                                     'stage3' => 'ahead',
                                     'stage4' => 'ahead',
                                     'stage5' => 'inline',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Increase it a lot',
@@ -2622,11 +2623,11 @@ return [
                                     'stage3' => 'ahead',
                                     'stage4' => 'ahead',
                                     'stage5' => 'ahead',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page9' => [
                 'title' => 'Cyber Risk Management Operations and Defence',
@@ -2637,7 +2638,7 @@ return [
                         'name'=>'q17',
                         'calc'=>[
                             'type'=>'normalize',
-                            'value'=>5
+                            'value'=>5,
                         ],
                         'options'=>[
                             [
@@ -2654,7 +2655,7 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'inline',
                                             'stage5' => 'inline',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -2666,9 +2667,9 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'IPS/IDS (intrusion detection/protection)',
@@ -2684,7 +2685,7 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'inline',
                                             'stage5' => 'inline',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -2696,9 +2697,9 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Vulnerability management',
@@ -2714,7 +2715,7 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'inline',
                                             'stage5' => 'inline',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -2726,9 +2727,9 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Micro segmentation (fine-grained separation and isolation of traffic between specified hosts or domains)',
@@ -2744,7 +2745,7 @@ return [
                                             'stage3' => 'ahead',
                                             'stage4' => 'ahead',
                                             'stage5' => 'inline',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -2756,9 +2757,9 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'inline',
                                             'stage5' => 'behind',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Unified security management (data and information interchange between devices and tools),',
@@ -2774,7 +2775,7 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'inline',
                                             'stage5' => 'inline',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -2786,9 +2787,9 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Third-party professional security service (pre-sales/design/implementation)',
@@ -2804,7 +2805,7 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'inline',
                                             'stage5' => 'inline',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -2816,13 +2817,13 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
-                        ]
+                        ],
                     ],
-                ]
+                ],
             ],
             'page10' => [
                 'title' => 'Cyber Risk Management Operations and Defence',
@@ -2842,7 +2843,7 @@ return [
                                     'stage3' => 'behind',
                                     'stage4' => 'behind',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'We use them in a limited fashion, but prefer to do things in-house.',
@@ -2854,7 +2855,7 @@ return [
                                     'stage3' => 'behind',
                                     'stage4' => 'behind',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'We use them in a balanced way.',
@@ -2866,7 +2867,7 @@ return [
                                     'stage3' => 'inline',
                                     'stage4' => 'inline',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'We prefer to use them over doing things in-house.',
@@ -2878,7 +2879,7 @@ return [
                                     'stage3' => 'ahead',
                                     'stage4' => 'inline',
                                     'stage5' => 'inline',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'We use them extensively wherever possible.',
@@ -2890,13 +2891,13 @@ return [
                                     'stage3' => 'ahead',
                                     'stage4' => 'ahead',
                                     'stage5' => 'inline',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
     ],
     'cyber-risk-management-breach-detection-and-remediation' => [
         'title' => 'Cyber Risk Management Breach Detection and Remediation',
@@ -2926,7 +2927,7 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'inline',
                                             'stage5' => 'inline',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -2938,9 +2939,9 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Real-time analytics',
@@ -2956,7 +2957,7 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'inline',
                                             'stage5' => 'inline',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -2968,9 +2969,9 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Advanced threat protection/sandboxing',
@@ -2986,7 +2987,7 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'inline',
                                             'stage5' => 'inline',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -2998,9 +2999,9 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'AI/heuristics',
@@ -3016,7 +3017,7 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'inline',
                                             'stage5' => 'inline',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3028,9 +3029,9 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Malware detection',
@@ -3046,7 +3047,7 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'inline',
                                             'stage5' => 'inline',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3058,11 +3059,11 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
-                        ]
+                        ],
                     ],
                 ]
                 /*,
@@ -3070,7 +3071,7 @@ return [
                     'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
                     'image'=>'img/techfit_icons_Q-A1.png'
                 )*/,
-                'report' => false
+                'report' => false,
             ],
             'page2' => [
                 'title' => 'Cyber Risk Management Breach Detection and Remediation',
@@ -3094,7 +3095,7 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'inline',
                                             'stage5' => 'inline',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3106,9 +3107,9 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Forensic logging and analysis',
@@ -3124,7 +3125,7 @@ return [
                                             'stage3' => 'ahead',
                                             'stage4' => 'inline',
                                             'stage5' => 'inline',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3136,9 +3137,9 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Failover/system recovery',
@@ -3154,7 +3155,7 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'inline',
                                             'stage5' => 'inline',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3166,9 +3167,9 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Tiger/go teams',
@@ -3184,7 +3185,7 @@ return [
                                             'stage3' => 'ahead',
                                             'stage4' => 'ahead',
                                             'stage5' => 'inline',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3196,9 +3197,9 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'inline',
                                             'stage5' => 'behind',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'External incident response partner',
@@ -3214,7 +3215,7 @@ return [
                                             'stage3' => 'ahead',
                                             'stage4' => 'inline',
                                             'stage5' => 'inline',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3226,11 +3227,11 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
-                        ]
+                        ],
                     ],
                 ]
                 /*,
@@ -3238,7 +3239,7 @@ return [
                     'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
                     'image'=>'img/techfit_icons_Q-A1.png'
                 )*/,
-                'report' => false
+                'report' => false,
             ],
             'page3' => [
                 'title' => 'Cyber Risk Management Breach Detection and Remediation',
@@ -3262,7 +3263,7 @@ return [
                                             'stage3' => 'ahead',
                                             'stage4' => 'ahead',
                                             'stage5' => 'inline',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3274,9 +3275,9 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'inline',
                                             'stage5' => 'behind',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Policy updates',
@@ -3292,7 +3293,7 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'inline',
                                             'stage5' => 'inline',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3304,9 +3305,9 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Disaster recovery policy',
@@ -3322,7 +3323,7 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'inline',
                                             'stage5' => 'inline',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3334,9 +3335,9 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'External disaster recovery providers',
@@ -3352,7 +3353,7 @@ return [
                                             'stage3' => 'ahead',
                                             'stage4' => 'inline',
                                             'stage5' => 'inline',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3364,9 +3365,9 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Compromise assessments',
@@ -3382,7 +3383,7 @@ return [
                                             'stage3' => 'ahead',
                                             'stage4' => 'inline',
                                             'stage5' => 'inline',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3394,19 +3395,19 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
-                        ]
-                    ]
+                        ],
+                    ],
                 ]
                 /*,
                 'report' => array(
                     'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
                     'image'=>'img/techfit_icons_Q-A1.png'
                 )*/,
-                'report' => false
+                'report' => false,
             ],
             'page4' => [
                 'title' => 'Cyber Risk Management Breach Detection and Remediation',
@@ -3430,7 +3431,7 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'inline',
                                             'stage5' => 'inline',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3442,9 +3443,9 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Understand potential scale of exposure',
@@ -3460,7 +3461,7 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'inline',
                                             'stage5' => 'inline',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3472,9 +3473,9 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Done a data assessment of critical data',
@@ -3490,7 +3491,7 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'inline',
                                             'stage5' => 'inline',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3502,9 +3503,9 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Understand posture of extended supply chain or partners',
@@ -3520,7 +3521,7 @@ return [
                                             'stage3' => 'ahead',
                                             'stage4' => 'inline',
                                             'stage5' => 'inline',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3532,9 +3533,9 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Developed a security breach response plan',
@@ -3550,7 +3551,7 @@ return [
                                             'stage3' => 'inline',
                                             'stage4' => 'inline',
                                             'stage5' => 'inline',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3562,19 +3563,19 @@ return [
                                             'stage3' => 'behind',
                                             'stage4' => 'behind',
                                             'stage5' => 'behind',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
-                        ]
-                    ]
+                        ],
+                    ],
                 ]
                 /*,
                 'report' => array(
                     'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
                     'image'=>'img/techfit_icons_Q-A1.png'
                 )*/,
-                'report' => false
+                'report' => false,
             ],
             'page5' => [
                 'title' => 'Cyber Risk Management Breach Detection and Remediation',
@@ -3594,7 +3595,7 @@ return [
                                     'stage3' => 'behind',
                                     'stage4' => 'behind',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Every few years',
@@ -3606,7 +3607,7 @@ return [
                                     'stage3' => 'behind',
                                     'stage4' => 'behind',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Every year',
@@ -3618,7 +3619,7 @@ return [
                                     'stage3' => 'behind',
                                     'stage4' => 'behind',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Every 6 months',
@@ -3630,7 +3631,7 @@ return [
                                     'stage3' => 'inline',
                                     'stage4' => 'behind',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Every quarter',
@@ -3642,7 +3643,7 @@ return [
                                     'stage3' => 'ahead',
                                     'stage4' => 'inline',
                                     'stage5' => 'inline',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Monthly',
@@ -3654,7 +3655,7 @@ return [
                                     'stage3' => 'ahead',
                                     'stage4' => 'ahead',
                                     'stage5' => 'inline',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Weekly',
@@ -3666,7 +3667,7 @@ return [
                                     'stage3' => 'ahead',
                                     'stage4' => 'ahead',
                                     'stage5' => 'inline',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Continuously',
@@ -3678,11 +3679,11 @@ return [
                                     'stage3' => 'ahead',
                                     'stage4' => 'ahead',
                                     'stage5' => 'ahead',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page6' => [
                 'title' => 'Cyber Risk Management Breach Detection and Remediation',
@@ -3702,7 +3703,7 @@ return [
                                     'stage3' => 'behind',
                                     'stage4' => 'behind',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Every few years',
@@ -3714,7 +3715,7 @@ return [
                                     'stage3' => 'behind',
                                     'stage4' => 'behind',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Every year',
@@ -3726,7 +3727,7 @@ return [
                                     'stage3' => 'behind',
                                     'stage4' => 'behind',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Every 6 months',
@@ -3738,7 +3739,7 @@ return [
                                     'stage3' => 'inline',
                                     'stage4' => 'behind',
                                     'stage5' => 'behind',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Every quarter',
@@ -3750,7 +3751,7 @@ return [
                                     'stage3' => 'ahead',
                                     'stage4' => 'inline',
                                     'stage5' => 'inline',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Monthly',
@@ -3762,7 +3763,7 @@ return [
                                     'stage3' => 'ahead',
                                     'stage4' => 'ahead',
                                     'stage5' => 'inline',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Weekly',
@@ -3774,7 +3775,7 @@ return [
                                     'stage3' => 'ahead',
                                     'stage4' => 'ahead',
                                     'stage5' => 'inline',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Continuously',
@@ -3786,12 +3787,12 @@ return [
                                     'stage3' => 'ahead',
                                     'stage4' => 'ahead',
                                     'stage5' => 'ahead',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
-        ]
-    ]
+        ],
+    ],
 ];

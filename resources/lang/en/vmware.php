@@ -1,6 +1,7 @@
 <?php
+
 //DASSAULT
-return array(
+return [
     'elqFormName'=>'',
     'developedby'=>'Developed by',
     'sponsoredby'=>'Sponsored by',
@@ -33,7 +34,7 @@ return array(
         </div>
         ',
     'startbut'=>'Begin assessment',
-    
+
     'send'=>'We can send you the full results directly to your mailbox',
     'register'=>'Register now to receive your personalized report',
     'provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
@@ -81,7 +82,7 @@ return array(
         <a class="btn btn--primary" target="_blank" href="https://www.vmware.com/solutions/virtual-cloud-network.html">
             Click here for more information
         </a>',
-    'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @3ds. Interested? ',// http://bit.ly/2gslXEh
+    'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @3ds. Interested? ', // http://bit.ly/2gslXEh
     'email'=>[
         'subject' => 'VMware Network Security Assessment',
         'hi' => 'Hi :Fname',
@@ -91,7 +92,7 @@ return array(
         'dont_see_link' => 'Click here to download the report',
         'extra' => 'Once you\'ve read the report why not visit <a href="https://www.vmware.com/solutions/virtual-cloud-network.html" style="color:#054683">VMware</a>',
         'regards' => 'Regards',
-        'team' => 'The IDC Team'
+        'team' => 'The IDC Team',
     ],
     'introduction' => '
         <h2 class="text-vmware-blue mb-4">INTRODUCTION</h2>
@@ -988,7 +989,7 @@ return array(
             </p>
         </div>
     ',
-    
+
     'security-enabled-networking-intro' => '
         <div class="clearfix">
             <div class="w-1/5 h-32 float-left">
@@ -1068,7 +1069,7 @@ return array(
             </p>
         </div>
     ',
-    
+
     'security-enabled-networking-3-stage3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-vmware-blue mt-4 font-bold">
@@ -1222,7 +1223,6 @@ return array(
             </p>
         </div>
     ',
-    
 
     'security-enabled-networking-2-q8-1' => '
         <div class="clearfix">
@@ -1245,7 +1245,7 @@ return array(
             </p>
         </div>
     ',
-    
+
     'security-enabled-networking-3-q8-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
@@ -1384,7 +1384,6 @@ return array(
         </div>
     ',
 
-
     'conclusionintro' => '
         <div class="clearfix pb">
             <div class="w-1/5 h-48 float-left">
@@ -1425,4 +1424,4 @@ return array(
             </p>
         </div>
     ',
-);
+];

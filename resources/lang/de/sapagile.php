@@ -1,6 +1,7 @@
 <?php
+
 //SAP
-return array(
+return [
     'elqFormName'=>'',
     'developedby'=>'Entwickelt von',
     'sponsoredby'=>'Im Auftrag von',
@@ -34,7 +35,7 @@ return array(
             Das Beantworten der Fragen dauert nur fünf bis sieben Minuten.
         </p>',
     'startbut' => 'IDC-Agilitätsbewertung starten',
-    
+
     'send' => 'Wir können Ihnen die vollständigen Ergebnisse direkt an Ihre E-Mail-Adresse senden.',
     'register' => 'Jetzt für einen personalisierten Bericht registrieren',
     'provide' => 'Bitte geben Sie einige wenige Daten ein und wir werden Ihnen den Link zum Herunterladen Ihrer Ergebnisse mailen.',
@@ -107,7 +108,7 @@ return array(
         Wenn Sie mehr darüber erfahren möchten, wie SAP und Partner mittelständische Unternehmen unterstützen, die Digitalisierung erfolgreich anzugehen, klicken Sie auf die folgenden Links: <br/>
             <a class="text-sap-blue" href="http://www.sap.de/digitalisierung-mittelstand">Digitalisierung und strategische Planung</a> | <a class="text-sap-blue" href="https://discover.sap.com/das-intelligente-unternehmen-fuer-den-mittelstand/de-de/wachstum.html" target="_blank">Innovationsplattformen und Datenstrategie</a> | <a class="text-sap-blue" href="https://discover.sap.com/das-intelligente-unternehmen-fuer-den-mittelstand/de-de/kunden.html" target="_blank">Kundenerlebnis</a> | <a class="text-sap-blue" href="https://discover.sap.com/das-intelligente-unternehmen-fuer-den-mittelstand/de-de/hr-management.html" target="_blank">Mitarbeitererlebnis</a> | <a class="text-sap-blue" href="https://discover.sap.com/das-intelligente-unternehmen-fuer-den-mittelstand/de-de/digitale-lieferkette.html" target="_blank">Digitale Lieferkette & Prozessinnovation</a>.<br/><br/>
         Share the tool ',
-    'complete_tweet' => 'Ich habe gerade die @IDCEMEA DSGVO-Bewertung für @3ds durchgeführt. Auch interessiert? ',// http://bit.ly/2gslXEh
+    'complete_tweet' => 'Ich habe gerade die @IDCEMEA DSGVO-Bewertung für @3ds durchgeführt. Auch interessiert? ', // http://bit.ly/2gslXEh
     'email'=>[
         'subject' => 'Mit einem Klick zur IDC-Agilitätsbewertung',
         'hi' => 'Hallo :Fname',
@@ -128,7 +129,7 @@ return array(
                 <img src="https://clicktobeagile.idcready.net/images/linkedin.png" style="width: 25px;"/>
             </a><br/>',
         'regards' => 'Mit freundlichen Grüßen',
-        'team' => 'Ihr IDC-Team'
+        'team' => 'Ihr IDC-Team',
     ],
     'introduction' => '
         <div class="w-5/6 mx-auto">
@@ -1643,4 +1644,4 @@ return array(
             </div>
         </div>
     ',
-);
+];

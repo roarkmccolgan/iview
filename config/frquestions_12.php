@@ -1,4 +1,5 @@
 <?php
+
 // Dassault
 return [
     'screener' => [
@@ -20,10 +21,10 @@ return [
                         'validate'=>'email',
                         'question'=>'Adresse e-mail',
                         'name'=> 1,
-                    ]
-                ]
-            ]
-        ]
+                    ],
+                ],
+            ],
+        ],
     ],
     'digital-business' => [
         'title' => 'Entreprise numérique',
@@ -73,10 +74,10 @@ return [
                                 'label'=>'Très difficile',
                                 'value'=>1,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Entreprise numérique',
@@ -110,10 +111,10 @@ return [
                                 'label'=>'Très difficile',
                                 'value'=>1,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Entreprise numérique',
@@ -121,7 +122,7 @@ return [
                     'q4'=>[
                         'type'=>'groupbutton',
                         'calc'=>[
-                            'type'=>'average'
+                            'type'=>'average',
                         ],
                         'optionLabels' => [
                             'Ne l\'utilise pas et ne compte pas le faire d\'ici 12 mois',
@@ -161,8 +162,8 @@ return [
                                         'label'=>'Oui, pour la majeure partie ou la totalité de l\'entreprise (80 % des employés ou plus)',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Collaboration (partage de fichiers, VoIP, visioconférence, etc.)',
@@ -192,8 +193,8 @@ return [
                                         'label'=>'Oui, pour la majeure partie ou la totalité de l\'entreprise (80 % des employés ou plus)',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'CRM',
@@ -223,8 +224,8 @@ return [
                                         'label'=>'Oui, pour la majeure partie ou la totalité de l\'entreprise (80 % des employés ou plus)',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'ERP',
@@ -254,8 +255,8 @@ return [
                                         'label'=>'Oui, pour la majeure partie ou la totalité de l\'entreprise (80 % des employés ou plus)',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Conception numérique (CAO, IAO, FAO, etc.)',
@@ -285,8 +286,8 @@ return [
                                         'label'=>'Oui, pour la majeure partie ou la totalité de l\'entreprise (80 % des employés ou plus)',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Logiciel PLM (gestion du cycle de vie d\'un produit)',
@@ -316,8 +317,8 @@ return [
                                         'label'=>'Oui, pour la majeure partie ou la totalité de l\'entreprise (80 % des employés ou plus)',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Logiciel de simulation',
@@ -347,8 +348,8 @@ return [
                                         'label'=>'Oui, pour la majeure partie ou la totalité de l\'entreprise (80 % des employés ou plus)',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Logiciel d\'analyse',
@@ -378,62 +379,62 @@ return [
                                         'label'=>'Oui, pour la majeure partie ou la totalité de l\'entreprise (80 % des employés ou plus)',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
-                            ]
+                                    ],
+                                ],
+                            ],
                         ],
                         'skipNext' => [
                             [
                                 'q' => 'q4',
                                 'question' => 4.1,
                                 'operator' => '<',
-                                'value' => 3
+                                'value' => 3,
                             ],
                             [
                                 'q' => 'q4',
                                 'question' => 4.2,
                                 'operator' => '<',
-                                'value' => 3
+                                'value' => 3,
                             ],
                             [
                                 'q' => 'q4',
                                 'question' => 4.3,
                                 'operator' => '<',
-                                'value' => 3
+                                'value' => 3,
                             ],
                             [
                                 'q' => 'q4',
                                 'question' => 4.4,
                                 'operator' => '<',
-                                'value' => 3
+                                'value' => 3,
                             ],
                             [
                                 'q' => 'q4',
                                 'question' => 4.5,
                                 'operator' => '<',
-                                'value' => 3
+                                'value' => 3,
                             ],
                             [
                                 'q' => 'q4',
                                 'question' => 4.6,
                                 'operator' => '<',
-                                'value' => 3
+                                'value' => 3,
                             ],
                             [
                                 'q' => 'q4',
                                 'question' => 4.7,
                                 'operator' => '<',
-                                'value' => 3
+                                'value' => 3,
                             ],
                             [
                                 'q' => 'q4',
                                 'question' => 4.8,
                                 'operator' => '<',
-                                'value' => 3
-                            ],    
-                        ]
-                    ]
-                ]
+                                'value' => 3,
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page4' => [
                 'title' => 'Entreprise numérique',
@@ -441,7 +442,7 @@ return [
                     'q5'=>[
                         'type'=>'groupbutton',
                         'calc'=>[
-                            'type'=>'average'
+                            'type'=>'average',
                         ],
                         'optionLabels' => [
                             'Pas du tout réussi',
@@ -487,8 +488,8 @@ return [
                                     'question' => 4,
                                     'answer' => 4.1,
                                     'operator' => '>',
-                                    'value' => 2
-                                ]
+                                    'value' => 2,
+                                ],
                             ],
                             [
                                 'label'=>'Collaboration (partage de fichiers, VoIP, visioconférence, etc.)',
@@ -524,8 +525,8 @@ return [
                                     'question' => 4,
                                     'answer' => 4.2,
                                     'operator' => '>',
-                                    'value' => 2
-                                ]
+                                    'value' => 2,
+                                ],
                             ],
                             [
                                 'label'=>'CRM',
@@ -561,8 +562,8 @@ return [
                                     'question' => 4,
                                     'answer' => 4.3,
                                     'operator' => '>',
-                                    'value' => 2
-                                ]
+                                    'value' => 2,
+                                ],
                             ],
                             [
                                 'label'=>'ERP',
@@ -598,8 +599,8 @@ return [
                                     'question' => 4,
                                     'answer' => 4.4,
                                     'operator' => '>',
-                                    'value' => 2
-                                ]
+                                    'value' => 2,
+                                ],
                             ],
                             [
                                 'label'=>'Conception numérique (CAO, IAO, FAO, etc.)',
@@ -635,8 +636,8 @@ return [
                                     'question' => 4,
                                     'answer' => 4.5,
                                     'operator' => '>',
-                                    'value' => 2
-                                ]
+                                    'value' => 2,
+                                ],
                             ],
                             [
                                 'label'=>'Logiciel PLM (gestion du cycle de vie d\'un produit)',
@@ -672,8 +673,8 @@ return [
                                     'question' => 4,
                                     'answer' => 4.6,
                                     'operator' => '>',
-                                    'value' => 2
-                                ]
+                                    'value' => 2,
+                                ],
                             ],
                             [
                                 'label'=>'Logiciel de simulation',
@@ -709,8 +710,8 @@ return [
                                     'question' => 4,
                                     'answer' => 4.7,
                                     'operator' => '>',
-                                    'value' => 2
-                                ]
+                                    'value' => 2,
+                                ],
                             ],
                             [
                                 'label'=>'Logiciel d\'analyse',
@@ -746,14 +747,14 @@ return [
                                     'question' => 4,
                                     'answer' => 4.8,
                                     'operator' => '>',
-                                    'value' => 2
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
+                                    'value' => 2,
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
     ],
     'digital-design' => [
         'title' => 'Conception Numérique',
@@ -801,10 +802,10 @@ return [
                                 'label'=>'Notre mise en œuvre CAO/FAO met automatiquement à niveau et gère notre logiciel.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Conception Numérique',
@@ -838,10 +839,10 @@ return [
                                 'label'=>'3 ans ou plus',
                                 'value'=>1,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Conception Numérique',
@@ -849,7 +850,7 @@ return [
                     'q8'=>[
                         'type'=>'groupbutton',
                         'calc'=>[
-                            'type'=>'average'
+                            'type'=>'average',
                         ],
                         'optionLabels' => [
                             'Pas du tout réussi',
@@ -889,8 +890,8 @@ return [
                                         'label'=>'Très réussi',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Évolutivité',
@@ -920,8 +921,8 @@ return [
                                         'label'=>'Très réussi',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Performances',
@@ -951,8 +952,8 @@ return [
                                         'label'=>'Très réussi',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Plate-forme industrielle pour la prise en charge de l\'écosystème',
@@ -982,8 +983,8 @@ return [
                                         'label'=>'Très réussi',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Rapport qualité/prix',
@@ -1013,8 +1014,8 @@ return [
                                         'label'=>'Très réussi',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Facilité de gestion',
@@ -1044,8 +1045,8 @@ return [
                                         'label'=>'Très réussi',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Caractéristiques',
@@ -1075,8 +1076,8 @@ return [
                                         'label'=>'Très réussi',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Collaboration',
@@ -1106,8 +1107,8 @@ return [
                                         'label'=>'Très réussi',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Sécurité',
@@ -1137,14 +1138,14 @@ return [
                                         'label'=>'Très réussi',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
-        ]
+        ],
     ],
     'digital-delivery' => [
         'title' => 'Livraison Numérique',
@@ -1182,60 +1183,60 @@ return [
                                 'label'=>'L\'informatique est considérée comme un moteur de l\'avantage concurrentiel ou de la différenciation.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
+                            ],
                         ],
                         'skipNext' => [
                             [
                                 'q' => 'q4',
                                 'question' => 4.1,
                                 'operator' => '<',
-                                'value' => 2
+                                'value' => 2,
                             ],
                             [
                                 'q' => 'q4',
                                 'question' => 4.2,
                                 'operator' => '<',
-                                'value' => 2
+                                'value' => 2,
                             ],
                             [
                                 'q' => 'q4',
                                 'question' => 4.3,
                                 'operator' => '<',
-                                'value' => 2
+                                'value' => 2,
                             ],
                             [
                                 'q' => 'q4',
                                 'question' => 4.4,
                                 'operator' => '<',
-                                'value' => 2
+                                'value' => 2,
                             ],
                             [
                                 'q' => 'q4',
                                 'question' => 4.5,
                                 'operator' => '<',
-                                'value' => 2
+                                'value' => 2,
                             ],
                             [
                                 'q' => 'q4',
                                 'question' => 4.6,
                                 'operator' => '<',
-                                'value' => 2
+                                'value' => 2,
                             ],
                             [
                                 'q' => 'q4',
                                 'question' => 4.7,
                                 'operator' => '<',
-                                'value' => 2
+                                'value' => 2,
                             ],
                             [
                                 'q' => 'q4',
                                 'question' => 4.8,
                                 'operator' => '<',
-                                'value' => 2
-                            ],    
-                        ]
-                    ]
-                ]
+                                'value' => 2,
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Livraison Numérique',
@@ -1243,7 +1244,7 @@ return [
                     'q10'=>[
                         'type'=>'groupbutton',
                         'calc'=>[
-                            'type'=>'average'
+                            'type'=>'average',
                         ],
                         'optionLabels' => [
                             'Solution interne (sur site)',
@@ -1271,14 +1272,14 @@ return [
                                         'label'=>'Service de fournisseur de clouds publics',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
+                                    ],
                                 ],
                                 'show' => [
                                     'question' => 4,
                                     'answer' => 4.1,
                                     'operator' => '>',
-                                    'value' => 1
-                                ]
+                                    'value' => 1,
+                                ],
                             ],
                             [
                                 'label'=>'Collaboration (partage de fichiers, VoIP, visioconférence, etc.)',
@@ -1298,14 +1299,14 @@ return [
                                         'label'=>'Service de fournisseur de clouds publics',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
+                                    ],
                                 ],
                                 'show' => [
                                     'question' => 4,
                                     'answer' => 4.2,
                                     'operator' => '>',
-                                    'value' => 1
-                                ]
+                                    'value' => 1,
+                                ],
                             ],
                             [
                                 'label'=>'CRM',
@@ -1325,14 +1326,14 @@ return [
                                         'label'=>'Service de fournisseur de clouds publics',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
+                                    ],
                                 ],
                                 'show' => [
                                     'question' => 4,
                                     'answer' => 4.3,
                                     'operator' => '>',
-                                    'value' => 1
-                                ]
+                                    'value' => 1,
+                                ],
                             ],
                             [
                                 'label'=>'ERP',
@@ -1352,14 +1353,14 @@ return [
                                         'label'=>'Service de fournisseur de clouds publics',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
+                                    ],
                                 ],
                                 'show' => [
                                     'question' => 4,
                                     'answer' => 4.4,
                                     'operator' => '>',
-                                    'value' => 1
-                                ]
+                                    'value' => 1,
+                                ],
                             ],
                             [
                                 'label'=>'Conception numérique (CAO, IAO, FAO, etc.)',
@@ -1379,14 +1380,14 @@ return [
                                         'label'=>'Service de fournisseur de clouds publics',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
+                                    ],
                                 ],
                                 'show' => [
                                     'question' => 4,
                                     'answer' => 4.5,
                                     'operator' => '>',
-                                    'value' => 1
-                                ]
+                                    'value' => 1,
+                                ],
                             ],
                             [
                                 'label'=>'Logiciel PLM (gestion du cycle de vie d\'un produit)',
@@ -1406,14 +1407,14 @@ return [
                                         'label'=>'Service de fournisseur de clouds publics',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
+                                    ],
                                 ],
                                 'show' => [
                                     'question' => 4,
                                     'answer' => 4.6,
                                     'operator' => '>',
-                                    'value' => 1
-                                ]
+                                    'value' => 1,
+                                ],
                             ],
                             [
                                 'label'=>'Logiciel de simulation',
@@ -1433,14 +1434,14 @@ return [
                                         'label'=>'Service de fournisseur de clouds publics',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
+                                    ],
                                 ],
                                 'show' => [
                                     'question' => 4,
                                     'answer' => 4.7,
                                     'operator' => '>',
-                                    'value' => 1
-                                ]
+                                    'value' => 1,
+                                ],
                             ],
                             [
                                 'label'=>'Logiciel d\'analyse',
@@ -1460,18 +1461,18 @@ return [
                                         'label'=>'Service de fournisseur de clouds publics',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
+                                    ],
                                 ],
                                 'show' => [
                                     'question' => 4,
                                     'answer' => 4.8,
                                     'operator' => '>',
-                                    'value' => 1
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                    'value' => 1,
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' =>[
                 'title' => 'Livraison Numérique',
@@ -1505,11 +1506,11 @@ return [
                                 'label'=>'Nous préférons utiliser le cloud pour tout.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
-    ]
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
+    ],
 ];

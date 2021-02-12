@@ -1,6 +1,7 @@
 <?php
+
 //DASSAULT Lean
-return array(
+return [
     'elqFormName'=>'',
     'developedby'=>'Developed by',
     'sponsoredby'=>'Sponsored by',
@@ -53,7 +54,7 @@ return array(
         'readySentence' => 'Your report should automatically download, if not please <a href=":url" target="_blank">click here</a><br/><br/><span class="text-grey-dark italic">You may close this window once downloaded</span>',
         'regenerateSentence' => 'Please reload the page to renerate, or close the window if you already have your report.',
     ],
-    
+
     'send'=>'We can send you the full results directly to your mailbox',
     'register'=>'Register now to receive the full IDC report on enabling better business outcomes through digital collaboration and the application of lean principles',
     'provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
@@ -138,7 +139,7 @@ return array(
         <a class="btn btn--primary" target="_blank" href="https://www.3ds.com/3dexperience/cloud/">
             Click here for more information
         </a>',
-    'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @3ds. Interested? ',// http://bit.ly/2gslXEh
+    'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @3ds. Interested? ', // http://bit.ly/2gslXEh
     'email'=>[
         'subject' => 'Dassault Systèmes Digital Maturity Assessment',
         'hi' => 'Hi :Fname',
@@ -148,7 +149,7 @@ return array(
         'dont_see_link' => 'Click here to download the report',
         'extra' => 'Once you\'ve read the report why not visit Dassault Systèmes <a href="https://www.3ds.com/3dexperience/cloud/" style="color:#054683">3DS</a>',
         'regards' => 'Regards',
-        'team' => 'The IDC Team'
+        'team' => 'The IDC Team',
     ],
     'introduction' => '
         <h2 class="text-dassault-blue mb-4">INTRODUCTION</h2>
@@ -1151,7 +1152,7 @@ return array(
             </p>
         </div>
     ',
-    
+
     'digital-deliveryintro' => '
         <h2 class="w-4/5 ml-auto text-dassault-blue mb-6">DIGITAL DELIVERY</h2>
         <div class="clearfix">
@@ -1229,7 +1230,7 @@ return array(
             </p>
         </div>
     ',
-    
+
     'digital-delivery-3-stage3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue mt-4 font-bold">
@@ -1271,7 +1272,6 @@ return array(
             </p>
         </div>
     ',
-    
 
     'digital-delivery-2-q8-1' => '
         <div class="clearfix">
@@ -1294,7 +1294,7 @@ return array(
             </p>
         </div>
     ',
-    
+
     'digital-delivery-3-q8-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
@@ -1527,7 +1527,6 @@ return array(
             </p>
         </div>
     ',
-    
 
     'conclusionintro' => '
         <h2 class="w-4/5 ml-auto text-dassault-blue mb-6">CONCLUSION</h2>
@@ -1593,4 +1592,4 @@ return array(
                 
         </div>
     ',
-);
+];

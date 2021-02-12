@@ -1,6 +1,6 @@
 <?php
 
-return array(
+return [
 
     //FireEye Cloud id 2
     '2elqFormName'=>'',
@@ -21,15 +21,15 @@ Completa lo strumento di valutazione del rischio informatico di IDC per ulterior
 </p>',
     '2startbut'=>'Inizia valutazione',
     'adhoc'=>'Ad-Hoc', //reactive
-    'adhoctxt'=>"Organizations at this stage in their cloud maturity process tend to be providing cloud at the request of their customers, or as a vendor reseller. As a result, fees are derived from referrals or from resale, and organizations are generally focused on project revenues, rather than longer-term recurring revenue streams. Organizations at this stage in their cloud strategy are yet to embrace a cloud future and as a result may struggle to generate profits in this area. There is no defined vision for cloud, but there is time to make this transition if key decision makers act now.",
+    'adhoctxt'=>'Organizations at this stage in their cloud maturity process tend to be providing cloud at the request of their customers, or as a vendor reseller. As a result, fees are derived from referrals or from resale, and organizations are generally focused on project revenues, rather than longer-term recurring revenue streams. Organizations at this stage in their cloud strategy are yet to embrace a cloud future and as a result may struggle to generate profits in this area. There is no defined vision for cloud, but there is time to make this transition if key decision makers act now.',
     'opportunistic'=>'Opportunistic',
-    'opportunistictxt'=>"Organizations at this stage in their cloud maturity are beginning to develop and deliver cloud-specific business models. Typically, this is not granular enough to account for different product lines or individual P&L, and is often unmanaged and untargeted. With measurement limited, there is little in the way of automation, whether it is process, methodology, or sale and delivery. While businesses at this stage of maturity are beginning to build cloud sales functions and cloud-based marketing, revenue still comes from resale of on-premise solutions. Despite this, recurring revenue growth is outpacing traditional business.",
+    'opportunistictxt'=>'Organizations at this stage in their cloud maturity are beginning to develop and deliver cloud-specific business models. Typically, this is not granular enough to account for different product lines or individual P&L, and is often unmanaged and untargeted. With measurement limited, there is little in the way of automation, whether it is process, methodology, or sale and delivery. While businesses at this stage of maturity are beginning to build cloud sales functions and cloud-based marketing, revenue still comes from resale of on-premise solutions. Despite this, recurring revenue growth is outpacing traditional business.',
     'repeatable'=>'Repeatable',
-    'repeatabletxt'=>"Organizations at this stage in their cloud maturity have a solid cloud business plan in place and are developing product-specific strategies, including professional services. Investments in cloud have been made and, more critically, investments are planned for the next two to three years. Organizations are beginning to monitor and target cloud-based revenues separately from license and other revenues. Many are also creating reusable processes and beginning to automate key functions. Marketing efforts are showing signs of sophistication, yet many organizations still need to migrate away from traditional marketing approaches. Organizations at this stage are likely to have established a well-structured technology roadmap and have started investing in cloud infrastructure, tools, and management technology. ",
+    'repeatabletxt'=>'Organizations at this stage in their cloud maturity have a solid cloud business plan in place and are developing product-specific strategies, including professional services. Investments in cloud have been made and, more critically, investments are planned for the next two to three years. Organizations are beginning to monitor and target cloud-based revenues separately from license and other revenues. Many are also creating reusable processes and beginning to automate key functions. Marketing efforts are showing signs of sophistication, yet many organizations still need to migrate away from traditional marketing approaches. Organizations at this stage are likely to have established a well-structured technology roadmap and have started investing in cloud infrastructure, tools, and management technology. ',
     'managed'=>'Managed',
-    'managedtxt'=>"Organizations at this stage in their cloud maturity have developed in-depth planning across different cloud products, solutions, and architectures. This includes go-to-market strategies and sophisticated sales enablement. Many have established a portfolio of cloud offerings and related services, mainly through dedicated cloud sales, implementation, and support functions. Typically, organizations at this stage of their maturity can execute across multiple cloud architectures and have identified areas of specialism. This also enables them to measure and assess recurring revenues, and most have established tools and methodologies to drive efficiencies in implementation. This ensures renewals and the optimization of solutions.",
+    'managedtxt'=>'Organizations at this stage in their cloud maturity have developed in-depth planning across different cloud products, solutions, and architectures. This includes go-to-market strategies and sophisticated sales enablement. Many have established a portfolio of cloud offerings and related services, mainly through dedicated cloud sales, implementation, and support functions. Typically, organizations at this stage of their maturity can execute across multiple cloud architectures and have identified areas of specialism. This also enables them to measure and assess recurring revenues, and most have established tools and methodologies to drive efficiencies in implementation. This ensures renewals and the optimization of solutions.',
     'optimised'=>'Optimised',
-    'optimisedtxt'=>"For organizations at this stage in their maturity, cloud defines the investment and decision making in their future business direction. They are also fully committed to a recurring revenue business model. All aspects of the business are focused on a broad set of KPIs, from customer adoption and growth targets, to satisfaction levels and renewal rates. All systems and processes are designed to optimize cloud profitability and many have fully automated cloud processes to deliver economies of scale. Critically, there is an emphasis on selling solutions, as well as developing and maximizing internal IP.",
+    'optimisedtxt'=>'For organizations at this stage in their maturity, cloud defines the investment and decision making in their future business direction. They are also fully committed to a recurring revenue business model. All aspects of the business are focused on a broad set of KPIs, from customer adoption and growth targets, to satisfaction levels and renewal rates. All systems and processes are designed to optimize cloud profitability and many have fully automated cloud processes to deliver economies of scale. Critically, there is an emphasis on selling solutions, as well as developing and maximizing internal IP.',
     '2byreg'=>'Registrandovi con IDC, accettate i termini e le condizioni della nostra <a href="/privacy" target="_blank">informativa sulla privacy</a> e di quella di <a href="https://www.fireeye.com/company/privacy.html" target="_blank">FireEye</a>. Le informazioni raccolte saranno condivise con FireEye a fini di marketing diretto.',
    //Symantec 7
     '7elqFormName'=>'',
@@ -51,20 +51,20 @@ Completa lo strumento di valutazione del rischio informatico di IDC per ulterior
     '7startbut'=>'Inizia qui',
 
     '7poor'=>'Fase 1 - Avvio', //reactive
-    '7poortxt'=>"Grazie per aver completato la valutazione GDPR di IDC.<br/>Questo report fornirà raccomandazioni sulle prossime tappe del percorso verso la conformità GDPR.",
+    '7poortxt'=>'Grazie per aver completato la valutazione GDPR di IDC.<br/>Questo report fornirà raccomandazioni sulle prossime tappe del percorso verso la conformità GDPR.',
     '7poortweet' => "I took the @symantec GDPR Assessment and it's shown me where I can improve. Interested?",
     '7standard'=>'Fase 2 - Accelerazione',
-    '7standardtxt'=>"Grazie per aver completato la valutazione GDPR di IDC.<br/>Questo report fornirà raccomandazioni sulle prossime tappe del percorso verso la conformità GDPR.",
-    '7standardtweet' => "I took the @symantec GDPR Assessment and my company is on the right track. See how your business does... http://bit.ly/1Y6JAqa",
+    '7standardtxt'=>'Grazie per aver completato la valutazione GDPR di IDC.<br/>Questo report fornirà raccomandazioni sulle prossime tappe del percorso verso la conformità GDPR.',
+    '7standardtweet' => 'I took the @symantec GDPR Assessment and my company is on the right track. See how your business does... http://bit.ly/1Y6JAqa',
     '7good'=>'Fase 3 - Implementazione',
-    '7goodtxt'=>"Grazie per aver completato la valutazione GDPR di IDC.<br/>Questo report fornirà raccomandazioni sulle prossime tappe del percorso verso la conformità GDPR.",
-    '7goodtweet' => "I took the @symantec GDPR Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    '7goodtxt'=>'Grazie per aver completato la valutazione GDPR di IDC.<br/>Questo report fornirà raccomandazioni sulle prossime tappe del percorso verso la conformità GDPR.',
+    '7goodtweet' => 'I took the @symantec GDPR Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa',
     '7aspirational'=>'Fase 4 - Ottimizzazione',
-    '7aspirationaltxt'=>"Grazie per aver completato la valutazione GDPR di IDC.<br/>Questo report fornirà raccomandazioni sulle prossime tappe del percorso verso la conformità GDPR.",
-    '7aspirationaltweet' => "I took the @symantec GDPR Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    '7aspirationaltxt'=>'Grazie per aver completato la valutazione GDPR di IDC.<br/>Questo report fornirà raccomandazioni sulle prossime tappe del percorso verso la conformità GDPR.',
+    '7aspirationaltweet' => 'I took the @symantec GDPR Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa',
     '7best'=>'Fase 5 - Consolidamento',
-    '7besttxt'=>"Grazie per aver completato la valutazione GDPR di IDC.<br/>Questo report fornirà raccomandazioni sulle prossime tappe del percorso verso la conformità GDPR.",
-    '7besttweet' => "I took the @symantec GDPR Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    '7besttxt'=>'Grazie per aver completato la valutazione GDPR di IDC.<br/>Questo report fornirà raccomandazioni sulle prossime tappe del percorso verso la conformità GDPR.',
+    '7besttweet' => 'I took the @symantec GDPR Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa',
     '7send'=>'We can send you the full results directly to your mailbox',
     '7fullreport'=>'per diventare conformi al GDPR',
     '7provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
@@ -73,7 +73,6 @@ Completa lo strumento di valutazione del rischio informatico di IDC per ulterior
     '7twitterlink'=>'https://twitter.com/home?status=Is%20your%20business%20GDPR%20ready?%20http%3A//bit.ly/2AwihN4%20%23Symantec',
     '7facebooklink'=>'https://www.facebook.com/sharer/sharer.php?u=http%3A//bit.ly/2AwihN4',
     '7linkedinlink'=>'https://www.linkedin.com/shareArticle?mini=true&url=http%3A//bit.ly/2AwihN4&title=Symantec%20and%20IDC%20GDPR%20Assessment&summary=Is%20your%20business%20GDPR%20ready?&source=',
-
 
     //general
     'next'=>'Seguente',
@@ -131,5 +130,5 @@ Completa lo strumento di valutazione del rischio informatico di IDC per ulterior
     'errorRelationship'=>'Please select Relationship Type',
     'errorQualification'=>'Please select Partner Type',
     'errorAccept'=>'Accetta termini e condizioni per continuare',
-    'ranking'=>'Ranking'
-);
+    'ranking'=>'Ranking',
+];

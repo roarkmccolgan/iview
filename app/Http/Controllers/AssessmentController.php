@@ -32,14 +32,16 @@ class AssessmentController extends Controller
         if ($user->tools->contains($tool->id) || $user->hasRole('super')) {
             $tool->load(['assessments' => function ($query) {
                 $query->orderBy('created_at', 'asc');
-            },'company','extra_fields']);
+            }, 'company', 'extra_fields']);
             //dd($tool);
             //return $tool;
             JavaScript::put([
-                'foo' => 'bar'
+                'foo' => 'bar',
                 ]);
+
             return view('admin.assessments', compact('tool'));
         }
+
         return redirect('/login')->with('status', 'Insufficient Privilages!');
     }
 
@@ -108,13 +110,13 @@ class AssessmentController extends Controller
     public function delete($subdomain, Assessment $assessment, Request $request)
     {
         $loggedInUser = $request->user();
-        if ($loggedInUser->hasAnyRole(['client','admin','super'])) {
+        if ($loggedInUser->hasAnyRole(['client', 'admin', 'super'])) {
             if (isset($assessment->code)) {
                 $tracker = Tracker::where('code', $assessment->code)->first();
-                if ($tracker->views>0) {
+                if ($tracker->views > 0) {
                     $tracker->decrement('views');
                 }
-                if ($tracker->completions>0) {
+                if ($tracker->completions > 0) {
                     $tracker->decrement('completions');
                 }
 
@@ -134,10 +136,12 @@ class AssessmentController extends Controller
             }
             if ($request->ajax()) {
                 $data = [
-                    'result'=>'success'
+                    'result'=>'success',
                 ];
+
                 return $data;
             }
+
             return redirect('/admin/assessments')->with('status', 'Assessment deleted!');
         }
         abort(403, 'Access denied');
@@ -153,31 +157,33 @@ class AssessmentController extends Controller
     public function resend($subdomain, Assessment $assessment, Request $request)
     {
         $bcc = $request->input('bcc') ? $request->input('bcc') : null;
-        if ($bcc && strrpos($bcc, ';')!==false) {
-            $bcc = array_map('trim', explode(";", $bcc));
+        if ($bcc && strrpos($bcc, ';') !== false) {
+            $bcc = array_map('trim', explode(';', $bcc));
         }
         $subject = trans(session('product.alias').'.email.subject');
         $viewData = [
             'assessment'=>$assessment,
         ];
-        $data['html'] =  View::make('emails.download', $viewData)->render();
+        $data['html'] = View::make('emails.download', $viewData)->render();
 
         //send mail to user
         Mail::queue('emails.echo', $data, function ($message) use ($assessment, $subject, $bcc) {
             $message->from('notifications@mg.idcready.net', 'IDC Notifications');
             $message->to($assessment->email, $assessment->fname.' '.$assessment->sname);
             $message->subject($subject);
-            if($bcc){
+            if ($bcc) {
                 $message->bcc($bcc);
             }
         });
         if ($request->ajax()) {
             $data = [
                 'result'=>'success',
-                'bcc'=>$bcc
+                'bcc'=>$bcc,
             ];
+
             return $data;
         }
+
         return redirect('/admin/assessments')->with('status', 'Assessment Resent!');
     }
 
@@ -192,14 +198,15 @@ class AssessmentController extends Controller
         //$assessment->destroy();
         if ($request->ajax()) {
             $data = [
-                'result'=>'success'
+                'result'=>'success',
             ];
+
             return $data;
         }
-            //return $request->input();
+        //return $request->input();
         $tool = $request->session()->get('productObject');
 
-        if ($request->input('new')=='false') {
+        if ($request->input('new') == 'false') {
             $tool->load(['assessments' => function ($query) use ($request) {
                 $query->whereBetween('created_at', [Carbon::parse($request->input('dateFrom')), Carbon::parse($request->input('dateTo'))->addYear()]);
             }]);
@@ -208,14 +215,12 @@ class AssessmentController extends Controller
                 $query->where('downloaded', false);
             }]);
         }
-            //$assessments = Assessment::find(28);
+        //$assessments = Assessment::find(28);
 
         $tool->assessments()->update(['downloaded' => 1]);
 
-
         //columsn to download
-        $chosenColumns = ['id','created_at','fname','lname','email','company','title','country','tel','referer','code','rating','extra','result'];
-
+        $chosenColumns = ['id', 'created_at', 'fname', 'lname', 'email', 'company', 'title', 'country', 'tel', 'referer', 'code', 'rating', 'extra', 'result'];
 
         //if client wants all answers to be sent.
         $cleanresults = $tool->assessments;
@@ -229,6 +234,7 @@ class AssessmentController extends Controller
                                 return collect([$key=>$question['selected']]);
                             }
                             Log::info('answer not captured: '.$item->id.'\n '.$question['question']);
+
                             return collect([$key=>'answer not captured ']);
                         });
                     });
@@ -238,6 +244,7 @@ class AssessmentController extends Controller
                     $itemLang = $item->lang == 'en' ? '/' : '/'.$item->lang;
                 }
                 $item->report = session('url').$itemLang.'/download/'.$item->uuid.'?update=false';
+
                 return collect($item);
             });
             $chosenColumns[] = 'quiz';
@@ -253,44 +260,44 @@ class AssessmentController extends Controller
         $cols = 0;
         foreach ($assessments as $assKey => $assessment) {
             if (is_null($telNum)) {
-                $telNum = array_search("tel", array_keys($assessment));
+                $telNum = array_search('tel', array_keys($assessment));
             }
-            if (!is_null($assessment['extra']) && $assessment['extra']!='null' && (is_array($assessment['extra']) || is_object($assessment['extra']))) {
+            if (! is_null($assessment['extra']) && $assessment['extra'] != 'null' && (is_array($assessment['extra']) || is_object($assessment['extra']))) {
                 foreach ($assessment['extra'] as $exKey => $extra) {
-                    if (!is_null($extra)) {
-                        if(is_array($extra)){
-                            $extra = implode(",", $extra);
+                    if (! is_null($extra)) {
+                        if (is_array($extra)) {
+                            $extra = implode(',', $extra);
                         }
                         $assessments[$assKey][ucfirst($exKey)] = $extra;
                     }
                 }
             }
             unset($assessments[$assKey]['extra']);
-            if(isset($assessment['result']) && $assessment['result'] != '[]'){
+            if (isset($assessment['result']) && $assessment['result'] != '[]') {
                 foreach ($assessment['result'] as $resKey => $result) {
-                    if ($resKey!='overall') {
+                    if ($resKey != 'overall') {
                         if (isset($result['rating'])) {
                             $assessments[$assKey][trans($tool->alias.'.'.$resKey.'.title')] = trans($tool->alias.'.'.$result['rating']);
                         } else {
-                            $assessments[$assKey][trans($tool->alias.'.'.$resKey.'.title')] = "";
+                            $assessments[$assKey][trans($tool->alias.'.'.$resKey.'.title')] = '';
                         }
                     }
                 }
                 unset($assessments[$assKey]['result']);
             }
 
-            if (isset($assessment['quiz']) && !is_null($assessment['quiz']) && $assessment['quiz']!='null' && (is_array($assessment['quiz']) || is_object($assessment['quiz']))) {
+            if (isset($assessment['quiz']) && ! is_null($assessment['quiz']) && $assessment['quiz'] != 'null' && (is_array($assessment['quiz']) || is_object($assessment['quiz']))) {
                 foreach ($assessment['quiz'] as $qKey => $q) {
                     if (is_array($q)) {
                         $num = 1;
 
                         foreach ($q as $key => $value) {
                             if (is_array($value)) {
-                                $newKey = strpos($key, 'q') === false ? 'q'.str_replace(".", "_", $value['name']) : $value['name'];
+                                $newKey = strpos($key, 'q') === false ? 'q'.str_replace('.', '_', $value['name']) : $value['name'];
                                 $assessments[$assKey][$newKey] = $value['label'];
                                 $num++;
                             } else {
-                                $newKey = strpos($key, 'q') === false ? $qKey.'_'.$num : str_replace(".", "_", $key);
+                                $newKey = strpos($key, 'q') === false ? $qKey.'_'.$num : str_replace('.', '_', $key);
                                 //echo $newKey;
                                 $assessments[$assKey][$newKey] = substr($value, 0, stripos($value, '|'));
                                 $num++;
@@ -298,14 +305,13 @@ class AssessmentController extends Controller
                         }
                     } else {
                         $assessments[$assKey][$qKey] = substr($q, 0, stripos($q, '|'));
-                        ;
                     }
                 }
                 unset($assessments[$assKey]['quiz']);
             }
             $cols = count($assessments[$assKey]) > $cols ? count($assessments[$assKey]) : $cols;
         }
-        
+
         $alphas = range('A', 'Z');
 
         Excel::create(str_slug($tool->title.' '.$tool->sub_title), function ($excel) use ($assessments, $cols, $alphas, $telNum) {
@@ -318,13 +324,13 @@ class AssessmentController extends Controller
                     $cells->setFont([
                         //'family'     => 'Calibri',
                         //'size'       => '14',
-                        'bold'       =>  true
+                        'bold'       =>  true,
                         ]);
                 });
                 $sheet->freezeFirstRow();
                 /*$sheet->setColumnFormat(array(
-	                $alphas[$telNum+1] => '[<=9999999]###-####;(###) ###-####'
-	                ));*/
+                    $alphas[$telNum+1] => '[<=9999999]###-####;(###) ###-####'
+                    ));*/
             });
         })->export('xls');
 

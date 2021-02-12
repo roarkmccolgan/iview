@@ -30,6 +30,7 @@ class ItalyController extends Controller
                 ]);
             }
         }
+
         return view('tool.italyassessment.assessment', ['tool' => $tool, 'utm' => $utm]);
     }
 
@@ -42,14 +43,14 @@ class ItalyController extends Controller
         $assessment = $italyClass->getAssessment();
 
         //send email
-        $subject = "DataBench Self-Assessment Report";
+        $subject = 'DataBench Self-Assessment Report';
         $inline = false;
-        
+
         $viewData = [
             'assessment'=>$assessment,
             'inline'=>$inline,
         ];
-        $data['html'] =  View::make('tool.italyassessment.emails.download', $viewData)->render();
+        $data['html'] = View::make('tool.italyassessment.emails.download', $viewData)->render();
 
         //send mail to user (and BCC if exists)
         $bcc = [];
@@ -59,11 +60,11 @@ class ItalyController extends Controller
             }
         }
 
-        if($assessment->wasRecentlyCreated && !$italyClass->getCompletedAlready()){
+        if ($assessment->wasRecentlyCreated && ! $italyClass->getCompletedAlready()) {
             Mail::queue('tool.italyassessment.emails.echo', $data, function ($message) use ($assessment, $subject, $bcc) {
                 $message->from('notifications@mg.idcready.net', 'IDC Notifications');
                 $message->to($assessment['email'], $assessment['fname'].' '.$assessment['lname']);
-                if (!empty($bcc)) {
+                if (! empty($bcc)) {
                     $message->bcc($bcc);
                 }
                 $message->subject($subject);
@@ -71,7 +72,7 @@ class ItalyController extends Controller
 
             //send mail to notification people
             $emails = [];
-            if (App::isLocal() || $assessment['email']=='rmccolgan@idc.com') {
+            if (App::isLocal() || $assessment['email'] == 'rmccolgan@idc.com') {
                 $emails = ['roarkmccolgan@gmail.com'];
             } else {
                 if ($assessment->tool_id != 5) { //spunk
@@ -90,7 +91,7 @@ class ItalyController extends Controller
             }
             $emails = array_diff($emails, $remove);
             $subject = $assessment->tool->title.' Completed';
-            
+
             Mail::queue(
                 'tool.italyassessment.emails.notification',
                 [
@@ -106,11 +107,11 @@ class ItalyController extends Controller
                     $message->to($emails)->subject($subject);
                 }
             );
-        }else{
+        } else {
             $msg = "You have either completed this assessment before or the email with a lint to your report has already been sent.<br><br>
                 You are only permitted to complete the survey once, if this is your first time and you never received your email notification and have checked your junk folder, please <a href='mailto:info@databench.eu?subject=Report Not Received' class='text-blue-800'>let us know</a>";
         }
-        
+
         return view('tool.italyassessment.thankyou', ['msg'=>$msg ?? '', 'utm' => $utm]);
     }
 
@@ -124,7 +125,7 @@ class ItalyController extends Controller
         $assessment = $italyClass->getAssessment();
         $name = $italyClass->getName();
         $project = $italyClass->getProject();
-        if($project == 'Project' || $project == 'No ICT Project'){
+        if ($project == 'Project' || $project == 'No ICT Project') {
             $project = false;
         }
         $organization = $italyClass->getOrganization();
@@ -139,8 +140,8 @@ class ItalyController extends Controller
             ->setOption('header-spacing', 8)
             ->setOption('footer-html', session('url').'/'.session('localeUrl').'template/'.session('template').'/report/footer')
             ->setOption('footer-spacing', 2);
-            //->setOption('replace', $headervars);
-            
+        //->setOption('replace', $headervars);
+
         return $pdf->inline($assessment->tool->title.'.pdf');
     }
 }

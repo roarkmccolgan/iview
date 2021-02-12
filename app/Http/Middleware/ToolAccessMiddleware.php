@@ -18,7 +18,7 @@ class ToolAccessMiddleware
         //dd('fok');
         $user = $request->user();
         $tool = $request->session()->get('productObject');
-        if (!$user->hasRole($super)) {
+        if (! $user->hasRole($super)) {
             $abort = true;
             if ($user->tools->contains($tool->id)) {
                 foreach ($requiredRoles as $role) {
@@ -31,7 +31,7 @@ class ToolAccessMiddleware
                 abort(403);
             }
         }
-        
+
         return $next($request);
     }
 }

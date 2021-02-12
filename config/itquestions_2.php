@@ -1,4 +1,5 @@
 <?php
+
 return [
     'screeners' => [
         'title' => 'Informazioni demografiche',
@@ -19,37 +20,37 @@ return [
                             [
                                 'label'=>'Francia',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Germania',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Regno Unito',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Spagna',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Italia',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Altro',
                                 'value'=>0,
-                                'checked'=>false
-                            ]
+                                'checked'=>false,
+                            ],
                         ],
-                        'other'=>'Altro|0|Your country'
-                    ]
-                ]
+                        'other'=>'Altro|0|Your country',
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Informazioni demografiche',
@@ -62,31 +63,31 @@ return [
                             [
                                 'label'=>'Meno di 1000',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'1000-2499',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'2500-4999',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'5000-9999',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'10000 o più',
                                 'value'=>1,
-                                'checked'=>false
-                            ]
-                        ]
-                    ]
-                ]
+                                'checked'=>false,
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Informazioni demografiche',
@@ -99,75 +100,75 @@ return [
                             [
                                 'label'=>'Servizi finanziari',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Produzione',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Servizi di telecomunicazioni (compresi hoster, xSPs e fornitori di servizi cloud)',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Istruzione',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Assistenza sanitaria',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Media, Informazione',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Trasporto, distribuzione e logistica',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Commercio al dettaglio/all\'ingrosso',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Consulenza IT e relativi servizi professionali',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Consulenza non-IT e altri servizi professionali (di contabilità, legali, pubblicitari, immobiliari, di ricerca personale/risorse umane, di consulenza aziendale, ecc.)',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Amministrazione centrale o locale, o servizi pubblici',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Utenze - elettricità, gas, acqua',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Altro',
                                 'value'=>1,
                                 'checked'=>false,
-                                'other' => true
-                            ]
+                                'other' => true,
+                            ],
                         ],
-                        'other'=>'Altro|1|Specificare'
-                    ]
-                ]
-            ]
-        ]
+                        'other'=>'Altro|1|Specificare',
+                    ],
+                ],
+            ],
+        ],
     ],
     'cyber-risk-management-and-the-business' => [
         'title' => 'Cyber Risk Management e il Business',
@@ -193,7 +194,7 @@ return [
                                     'stage3' => 'In ritardo',
                                     'stage4' => 'In ritardo',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Un attivatore di efficienza aziendale',
@@ -205,7 +206,7 @@ return [
                                     'stage3' => 'In linea',
                                     'stage4' => 'In linea',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Un fattore di vantaggio competitivo o differenziazione',
@@ -217,11 +218,11 @@ return [
                                     'stage3' => 'In vantaggio',
                                     'stage4' => 'In vantaggio',
                                     'stage5' => 'In linea',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]/*,
+                                ],
+                            ],
+                        ],
+                    ],
+                ], /*,
                 'report' => array(
                     'text'=>'IDC estimates that ~45% of all new servers sold in Europe in 2016 will be virtualized. Excluding non suitable environments such as tower machines or High Performance Computing, >70% of the new servers were virtualized. ',
                     'image'=>'img/techfit_icons_Q-B1.png'
@@ -245,7 +246,7 @@ return [
                                     'stage3' => 'In ritardo',
                                     'stage4' => 'In ritardo',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'In generale gestiamo bene le richieste relative ad applicazioni o servizi esistenti, ma abbiamo difficoltà con le richieste di servizi nuovi o avanzati.',
@@ -257,7 +258,7 @@ return [
                                     'stage3' => 'In linea',
                                     'stage4' => 'In ritardo',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'In generale gestiamo bene le richieste relative sia ad applicazioni e servizi esistenti sia a servizi nuovi o avanzati.',
@@ -269,7 +270,7 @@ return [
                                     'stage3' => 'In linea',
                                     'stage4' => 'In linea',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Riusciamo molto bene a gestire tutte o la maggior parte delle richieste.',
@@ -281,11 +282,11 @@ return [
                                     'stage3' => 'In vantaggio',
                                     'stage4' => 'In vantaggio',
                                     'stage5' => 'In linea',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Cyber Risk Management e il Business',
@@ -305,7 +306,7 @@ return [
                                     'stage3' => 'In ritardo',
                                     'stage4' => 'In ritardo',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Tendiamo a evitare i rischi, a meno che ci sia una buona giustificazione.',
@@ -317,7 +318,7 @@ return [
                                     'stage3' => 'In ritardo',
                                     'stage4' => 'In ritardo',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Siamo molto attenti a non correre rischi, a meno che non possiamo trarne un chiaro vantaggio aziendale.',
@@ -329,7 +330,7 @@ return [
                                     'stage3' => 'In linea',
                                     'stage4' => 'In linea',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Correremmo prontamente il rischio per aiutare lo sviluppo dell\'azienda.',
@@ -341,7 +342,7 @@ return [
                                     'stage3' => 'In vantaggio',
                                     'stage4' => 'In linea',
                                     'stage5' => 'In linea',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Ci assumiamo e gestiamo attivamente i rischi per aiutare lo sviluppo dell\'azienda.',
@@ -353,11 +354,11 @@ return [
                                     'stage3' => 'In vantaggio',
                                     'stage4' => 'In vantaggio',
                                     'stage5' => 'In linea',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page4' => [
                 'title' => 'Cyber Risk Management e il Business',
@@ -368,7 +369,7 @@ return [
                         'name'=>'q4',
                         'calc'=>[
                             'type'=>'average',
-                            'value'=>false
+                            'value'=>false,
                         ],
                         'options'=>[
                             [
@@ -385,7 +386,7 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In linea',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non in atto ma previsto',
@@ -397,7 +398,7 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non in atto e non previsto',
@@ -409,9 +410,9 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Rilevamento proattivo (soluzioni in grado di identificare minacce sconosciute tramite tecniche quali l’analisi comportamentale e machine learning, rispetto al blocco delle sole minacce conosciute tramite l’uso di signature)',
@@ -427,7 +428,7 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In linea',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non in atto ma previsto',
@@ -439,7 +440,7 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non in atto e non previsto',
@@ -451,9 +452,9 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Pianificazione della risposta',
@@ -469,7 +470,7 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In linea',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non in atto ma previsto',
@@ -481,7 +482,7 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non in atto e non previsto',
@@ -493,9 +494,9 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Pianificazione della comunicazione interna',
@@ -511,7 +512,7 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In linea',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non in atto ma previsto',
@@ -523,7 +524,7 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non in atto e non previsto',
@@ -535,9 +536,9 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Pianificazione delle comunicazioni esterne e pubbliche relazioni',
@@ -553,7 +554,7 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In linea',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non in atto ma previsto',
@@ -565,7 +566,7 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non in atto e non previsto',
@@ -577,9 +578,9 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Pianificazione della notifica delle violazioni',
@@ -595,7 +596,7 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In linea',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non in atto ma previsto',
@@ -607,7 +608,7 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non in atto e non previsto',
@@ -619,9 +620,9 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Pianificazione del rimedio alle violazioni',
@@ -637,7 +638,7 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In linea',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non in atto ma previsto',
@@ -649,7 +650,7 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non in atto e non previsto',
@@ -661,9 +662,9 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Assicurazione contro i rischi informatici',
@@ -679,7 +680,7 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In linea',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non in atto ma previsto',
@@ -691,7 +692,7 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non in atto e non previsto',
@@ -703,19 +704,19 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
-                                    ]
-                                ]
-                            ]
-                        ]
-                    ]
+                                        ],
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
                 ]
                 /*,
                 'report' => array(
                     'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
                     'image'=>'img/techfit_icons_Q-A1.png'
                 )*/,
-                'report' => false
+                'report' => false,
             ],
             'page5' => [
                 'title' => 'Cyber Risk Management e il Business',
@@ -735,7 +736,7 @@ return [
                                     'stage3' => 'In ritardo',
                                     'stage4' => 'In ritardo',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'In genere è delegato all\'IT.',
@@ -747,7 +748,7 @@ return [
                                     'stage3' => 'In ritardo',
                                     'stage4' => 'In ritardo',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'È condiviso tra IT e altre linee di business.',
@@ -759,7 +760,7 @@ return [
                                     'stage3' => 'In linea',
                                     'stage4' => 'In linea',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'È condiviso tra IT e senior management.',
@@ -771,7 +772,7 @@ return [
                                     'stage3' => 'In linea',
                                     'stage4' => 'In linea',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'È condiviso tra IT, senior management e altre linee di business.',
@@ -783,11 +784,11 @@ return [
                                     'stage3' => 'In vantaggio',
                                     'stage4' => 'In linea',
                                     'stage5' => 'In linea',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page6' => [
                 'title' => 'Cyber Risk Management e il Business',
@@ -798,7 +799,7 @@ return [
                         'name'=>'q6',
                         'calc'=>[
                             'type'=>'normalize',
-                            'value'=>5
+                            'value'=>5,
                         ],
                         'options'=>[
                             [
@@ -815,7 +816,7 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In linea',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -827,9 +828,9 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Direttore Finanziario',
@@ -845,7 +846,7 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In linea',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -857,9 +858,9 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Direttore Operativo',
@@ -875,7 +876,7 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In linea',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -887,9 +888,9 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Membro non esecutivo del consiglio per la sicurezza/compliance/rischio',
@@ -905,7 +906,7 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In linea',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -917,9 +918,9 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Membro esecutivo del consiglio per la sicurezza/compliance/rischio',
@@ -935,7 +936,7 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In linea',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -947,9 +948,9 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Ruolo dedicato a sicurezza/compliance/rischio (esterno al consiglio)',
@@ -965,7 +966,7 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In linea',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -977,18 +978,18 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
-                                    ]
-                                ]
-                            ]
-                        ]
-                    ]
+                                        ],
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
                 ]/*,
                 'report' => array(
                     'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
                     'image'=>'img/techfit_icons_Q-A1.png'
                 )*/,
-                'report' => false
+                'report' => false,
             ],
             'page7' => [
                 'title' => 'Cyber Risk Management e il Business',
@@ -1008,7 +1009,7 @@ return [
                                     'stage3' => 'In vantaggio',
                                     'stage4' => 'In vantaggio',
                                     'stage5' => 'In linea',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Durante la pianificazione',
@@ -1020,7 +1021,7 @@ return [
                                     'stage3' => 'In linea',
                                     'stage4' => 'In linea',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'All\'inizio dell\'attuazione',
@@ -1032,7 +1033,7 @@ return [
                                     'stage3' => 'In linea',
                                     'stage4' => 'In ritardo',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Durante l\'attuazione',
@@ -1044,7 +1045,7 @@ return [
                                     'stage3' => 'In ritardo',
                                     'stage4' => 'In ritardo',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Quando qualcosa va storto',
@@ -1056,11 +1057,11 @@ return [
                                     'stage3' => 'In ritardo',
                                     'stage4' => 'In ritardo',
                                     'stage5' => 'In ritardo',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page8' => [
                 'title' => 'Cyber Risk Management e il Business',
@@ -1080,7 +1081,7 @@ return [
                                     'stage3' => 'In ritardo',
                                     'stage4' => 'In ritardo',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Limitato, a malapena copre le operazioni essenziali',
@@ -1092,7 +1093,7 @@ return [
                                     'stage3' => 'In ritardo',
                                     'stage4' => 'In ritardo',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Buono per le operazioni di base, ma limitato per le nuove iniziative',
@@ -1104,7 +1105,7 @@ return [
                                     'stage3' => 'In linea',
                                     'stage4' => 'In ritardo',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Buono per le operazioni di base e per le nuove iniziative in cui il valore è ben determinato',
@@ -1116,7 +1117,7 @@ return [
                                     'stage3' => 'In vantaggio',
                                     'stage4' => 'In linea',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Prontamente disponibile su tutta la linea con un buon business case, anche per lo sviluppo sperimentale',
@@ -1128,13 +1129,13 @@ return [
                                     'stage3' => 'In vantaggio',
                                     'stage4' => 'In vantaggio',
                                     'stage5' => 'In linea',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
-        ]
+        ],
     ],
     'cyber-risk-management-operations-and-defence' => [
         'title' => 'Cyber Risk Management e la Difesa',
@@ -1151,7 +1152,7 @@ return [
                         'name'=>'q9',
                         'calc'=>[
                             'type'=>'average',
-                            'value'=>false
+                            'value'=>false,
                         ],
                         'options'=>[
                             [
@@ -1170,7 +1171,7 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1182,7 +1183,7 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1194,7 +1195,7 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1206,7 +1207,7 @@ return [
                                             'stage3' => 'In vantaggio',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1218,9 +1219,9 @@ return [
                                             'stage3' => 'In vantaggio',
                                             'stage4' => 'In vantaggio',
                                             'stage5' => 'In linea',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Appuntamenti prenotati in anticipo',
@@ -1238,7 +1239,7 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1250,7 +1251,7 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1262,7 +1263,7 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1274,7 +1275,7 @@ return [
                                             'stage3' => 'In vantaggio',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1286,9 +1287,9 @@ return [
                                             'stage3' => 'In vantaggio',
                                             'stage4' => 'In vantaggio',
                                             'stage5' => 'In linea',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>' Verifica dell\'identità',
@@ -1306,7 +1307,7 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1318,7 +1319,7 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1330,7 +1331,7 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1342,7 +1343,7 @@ return [
                                             'stage3' => 'In vantaggio',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1354,9 +1355,9 @@ return [
                                             'stage3' => 'In vantaggio',
                                             'stage4' => 'In vantaggio',
                                             'stage5' => 'In linea',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Accesso controllato con due porte autobloccanti in entrata/uscita (Man-trap)',
@@ -1374,7 +1375,7 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1386,7 +1387,7 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1398,7 +1399,7 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1410,7 +1411,7 @@ return [
                                             'stage3' => 'In vantaggio',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1422,9 +1423,9 @@ return [
                                             'stage3' => 'In vantaggio',
                                             'stage4' => 'In vantaggio',
                                             'stage5' => 'In linea',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Autenticazione biometrica',
@@ -1442,7 +1443,7 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1454,7 +1455,7 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1466,7 +1467,7 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1478,7 +1479,7 @@ return [
                                             'stage3' => 'In vantaggio',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1490,9 +1491,9 @@ return [
                                             'stage3' => 'In vantaggio',
                                             'stage4' => 'In vantaggio',
                                             'stage5' => 'In linea',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Monitoraggio con telecamere a circuito chiuso',
@@ -1510,7 +1511,7 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1522,7 +1523,7 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1534,7 +1535,7 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1546,7 +1547,7 @@ return [
                                             'stage3' => 'In vantaggio',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1558,9 +1559,9 @@ return [
                                             'stage3' => 'In vantaggio',
                                             'stage4' => 'In vantaggio',
                                             'stage5' => 'In linea',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Man-shadowing (personale e visitatori devono lavorare in coppia o essere accompagnati)',
@@ -1578,7 +1579,7 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1590,7 +1591,7 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1602,7 +1603,7 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1614,7 +1615,7 @@ return [
                                             'stage3' => 'In vantaggio',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1626,9 +1627,9 @@ return [
                                             'stage3' => 'In vantaggio',
                                             'stage4' => 'In vantaggio',
                                             'stage5' => 'In linea',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Modifica di autorizzazione, approvazione e registrazione',
@@ -1646,7 +1647,7 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1658,7 +1659,7 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1670,7 +1671,7 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1682,7 +1683,7 @@ return [
                                             'stage3' => 'In vantaggio',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1694,18 +1695,18 @@ return [
                                             'stage3' => 'In vantaggio',
                                             'stage4' => 'In vantaggio',
                                             'stage5' => 'In linea',
-                                        ]
-                                    ]
-                                ]
-                            ]
-                        ]
-                    ]
+                                        ],
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
                 ]/*,
                 'report' => array(
                     'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
                     'image'=>'img/techfit_icons_Q-A1.png'
                 )*/,
-                'report' => false
+                'report' => false,
             ],
             'page2' => [
                 'title' => 'Cyber Risk Management e la Difesa',
@@ -1725,7 +1726,7 @@ return [
                                     'stage3' => 'In ritardo',
                                     'stage4' => 'In ritardo',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Ce ne occupiamo in modo informale internamente.',
@@ -1737,7 +1738,7 @@ return [
                                     'stage3' => 'In ritardo',
                                     'stage4' => 'In ritardo',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Ce ne occupiamo formalmente (seguendo degli standard) utilizzando le nostre competenze generali.',
@@ -1749,7 +1750,7 @@ return [
                                     'stage3' => 'In linea',
                                     'stage4' => 'In ritardo',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Ce ne occupiamo formalmente (seguendo degli standard) utilizzando le competenze interne di esperti.',
@@ -1761,7 +1762,7 @@ return [
                                     'stage3' => 'In vantaggio',
                                     'stage4' => 'In linea',
                                     'stage5' => 'In linea',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Facciamo uso di un valutatore esperto esterno (seguendo gli standard).',
@@ -1773,11 +1774,11 @@ return [
                                     'stage3' => 'In vantaggio',
                                     'stage4' => 'In vantaggio',
                                     'stage5' => 'In linea',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Cyber Risk Management e la Difesa',
@@ -1788,7 +1789,7 @@ return [
                         'name'=>'q11',
                         'calc'=>[
                             'type'=>'average',
-                            'value'=>false
+                            'value'=>false,
                         ],
                         'options'=>[
                             [
@@ -1807,7 +1808,7 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1819,7 +1820,7 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1831,7 +1832,7 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1843,7 +1844,7 @@ return [
                                             'stage3' => 'In vantaggio',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1855,9 +1856,9 @@ return [
                                             'stage3' => 'In vantaggio',
                                             'stage4' => 'In vantaggio',
                                             'stage5' => 'In linea',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Valutazione delle capacità e delle lacune',
@@ -1875,7 +1876,7 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1887,7 +1888,7 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1899,7 +1900,7 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1911,7 +1912,7 @@ return [
                                             'stage3' => 'In vantaggio',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1923,9 +1924,9 @@ return [
                                             'stage3' => 'In vantaggio',
                                             'stage4' => 'In vantaggio',
                                             'stage5' => 'In linea',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Pianificazione dell\'attuazione',
@@ -1943,7 +1944,7 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1955,7 +1956,7 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1967,7 +1968,7 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1979,7 +1980,7 @@ return [
                                             'stage3' => 'In vantaggio',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1991,9 +1992,9 @@ return [
                                             'stage3' => 'In vantaggio',
                                             'stage4' => 'In vantaggio',
                                             'stage5' => 'In linea',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Esecuzione dell\'attuazione',
@@ -2011,7 +2012,7 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -2023,7 +2024,7 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -2035,7 +2036,7 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -2047,7 +2048,7 @@ return [
                                             'stage3' => 'In vantaggio',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -2059,9 +2060,9 @@ return [
                                             'stage3' => 'In vantaggio',
                                             'stage4' => 'In vantaggio',
                                             'stage5' => 'In linea',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Miglioramento continuo/migliori prassi al di là del GDPR (al di là delle norme)',
@@ -2079,7 +2080,7 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -2091,7 +2092,7 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -2103,7 +2104,7 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -2115,7 +2116,7 @@ return [
                                             'stage3' => 'In vantaggio',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -2127,9 +2128,9 @@ return [
                                             'stage3' => 'In vantaggio',
                                             'stage4' => 'In vantaggio',
                                             'stage5' => 'In linea',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Comprensione la mitigazione delle sanzioni sulla base di individuazione/rimedio precoci',
@@ -2147,7 +2148,7 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -2159,7 +2160,7 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -2171,7 +2172,7 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -2183,7 +2184,7 @@ return [
                                             'stage3' => 'In vantaggio',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In ritardo',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -2195,18 +2196,18 @@ return [
                                             'stage3' => 'In vantaggio',
                                             'stage4' => 'In vantaggio',
                                             'stage5' => 'In linea',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
-                        ]
-                    ]
+                        ],
+                    ],
                 ]/*,
                 'report' => array(
                     'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
                     'image'=>'img/techfit_icons_Q-A1.png'
                 )*/,
-                'report' => false
+                'report' => false,
             ],
             'page4' => [
                 'title' => 'Cyber Risk Management e la Difesa',
@@ -2226,7 +2227,7 @@ return [
                                     'stage3' => 'In ritardo',
                                     'stage4' => 'In ritardo',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Il più delle volte acquistiamo tatticamente all\'insorgere dei problemi, ma a volte facciamo acquisti strategici.',
@@ -2238,7 +2239,7 @@ return [
                                     'stage3' => 'In ritardo',
                                     'stage4' => 'In ritardo',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Facciamo equamente acquisti tattici e strategici.',
@@ -2250,7 +2251,7 @@ return [
                                     'stage3' => 'In linea',
                                     'stage4' => 'In ritardo',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Il più delle volte acquistiamo strategicamente ma compreremmo tatticamente qualora sorgesse un problema.',
@@ -2262,7 +2263,7 @@ return [
                                     'stage3' => 'In vantaggio',
                                     'stage4' => 'In linea',
                                     'stage5' => 'In linea',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Tendiamo ad acquistare strategicamente su tutta la linea.',
@@ -2274,11 +2275,11 @@ return [
                                     'stage3' => 'In vantaggio',
                                     'stage4' => 'In vantaggio',
                                     'stage5' => 'In linea',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page5' => [
                 'title' => 'Cyber Risk Management e la Difesa',
@@ -2298,7 +2299,7 @@ return [
                                     'stage3' => 'In ritardo',
                                     'stage4' => 'In ritardo',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Ad hoc se richiesta',
@@ -2310,7 +2311,7 @@ return [
                                     'stage3' => 'In ritardo',
                                     'stage4' => 'In ritardo',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Annualmente',
@@ -2322,7 +2323,7 @@ return [
                                     'stage3' => 'In linea',
                                     'stage4' => 'In ritardo',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Trimestralmente',
@@ -2334,7 +2335,7 @@ return [
                                     'stage3' => 'In linea',
                                     'stage4' => 'In linea',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Mensilmente',
@@ -2346,7 +2347,7 @@ return [
                                     'stage3' => 'In vantaggio',
                                     'stage4' => 'In linea',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Settimanalmente',
@@ -2358,7 +2359,7 @@ return [
                                     'stage3' => 'In vantaggio',
                                     'stage4' => 'In vantaggio',
                                     'stage5' => 'In linea',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Giornalmente',
@@ -2370,7 +2371,7 @@ return [
                                     'stage3' => 'In vantaggio',
                                     'stage4' => 'In vantaggio',
                                     'stage5' => 'In linea',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Ogni ora',
@@ -2382,7 +2383,7 @@ return [
                                     'stage3' => 'In vantaggio',
                                     'stage4' => 'In vantaggio',
                                     'stage5' => 'In linea',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Continuamente',
@@ -2394,11 +2395,11 @@ return [
                                     'stage3' => 'In vantaggio',
                                     'stage4' => 'In vantaggio',
                                     'stage5' => 'In vantaggio',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page6' => [
                 'title' => 'Cyber Risk Management e la Difesa',
@@ -2418,7 +2419,7 @@ return [
                                     'stage3' => 'In ritardo',
                                     'stage4' => 'In ritardo',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Usiamo principalmente strumenti pre-configurati dei nostri fornitori di sicurezza.',
@@ -2430,7 +2431,7 @@ return [
                                     'stage3' => 'In ritardo',
                                     'stage4' => 'In ritardo',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Usiamo una combinazione di strumenti di gestione specializzati con alcuni strumenti pre-configurati',
@@ -2442,7 +2443,7 @@ return [
                                     'stage3' => 'In linea',
                                     'stage4' => 'In ritardo',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Usiamo principalmente strumenti di gestione della sicurezza specializzati.',
@@ -2454,7 +2455,7 @@ return [
                                     'stage3' => 'In linea',
                                     'stage4' => 'In linea',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Usiamo una suite di gestione della sicurezza end-to-end.',
@@ -2466,7 +2467,7 @@ return [
                                     'stage3' => 'In vantaggio',
                                     'stage4' => 'In vantaggio',
                                     'stage5' => 'In linea',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Ci affidiamo a un partner certificato che ci aiuta a gestire l\'infrastruttura della sicurezza IT.',
@@ -2478,11 +2479,11 @@ return [
                                     'stage3' => 'In vantaggio',
                                     'stage4' => 'In vantaggio',
                                     'stage5' => 'In linea',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page7' => [
                 'title' => 'Cyber Risk Management e la Difesa',
@@ -2502,7 +2503,7 @@ return [
                                     'stage3' => 'In ritardo',
                                     'stage4' => 'In ritardo',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Principalmente processi manuali con una quantità minima di automazione',
@@ -2514,7 +2515,7 @@ return [
                                     'stage3' => 'In ritardo',
                                     'stage4' => 'In ritardo',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Buon equilibrio tra processi di automazione e manuali',
@@ -2526,7 +2527,7 @@ return [
                                     'stage3' => 'In linea',
                                     'stage4' => 'In linea',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Principalmente automazione con una quantità minima di processi manuali',
@@ -2538,7 +2539,7 @@ return [
                                     'stage3' => 'In vantaggio',
                                     'stage4' => 'In vantaggio',
                                     'stage5' => 'In linea',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Automazione su tutta la linea',
@@ -2550,11 +2551,11 @@ return [
                                     'stage3' => 'In vantaggio',
                                     'stage4' => 'In vantaggio',
                                     'stage5' => 'In linea',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page8' => [
                 'title' => 'Cyber Risk Management e la Difesa',
@@ -2574,7 +2575,7 @@ return [
                                     'stage3' => 'In ritardo',
                                     'stage4' => 'In ritardo',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Diminuirlo un po',
@@ -2586,7 +2587,7 @@ return [
                                     'stage3' => 'In ritardo',
                                     'stage4' => 'In ritardo',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Lasciarlo invariato',
@@ -2598,7 +2599,7 @@ return [
                                     'stage3' => 'In linea',
                                     'stage4' => 'In linea',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Aumentarlo un po',
@@ -2610,7 +2611,7 @@ return [
                                     'stage3' => 'In vantaggio',
                                     'stage4' => 'In vantaggio',
                                     'stage5' => 'In linea',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Aumentarlo di molto',
@@ -2622,11 +2623,11 @@ return [
                                     'stage3' => 'In vantaggio',
                                     'stage4' => 'In vantaggio',
                                     'stage5' => 'In vantaggio',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page9' => [
                 'title' => 'Cyber Risk Management e la Difesa',
@@ -2637,7 +2638,7 @@ return [
                         'name'=>'q17',
                         'calc'=>[
                             'type'=>'normalize',
-                            'value'=>5
+                            'value'=>5,
                         ],
                         'options'=>[
                             [
@@ -2654,7 +2655,7 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In linea',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -2666,9 +2667,9 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'IPS/IDS (Rilevamento/protezione dell\'intrusione)',
@@ -2684,7 +2685,7 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In linea',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -2696,9 +2697,9 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Gestione delle vulnerabilità',
@@ -2714,7 +2715,7 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In linea',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -2726,9 +2727,9 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Micro segmentazione (separazione precisa e isolamento del traffico tra host o domini specificati)',
@@ -2744,7 +2745,7 @@ return [
                                             'stage3' => 'In vantaggio',
                                             'stage4' => 'In vantaggio',
                                             'stage5' => 'In linea',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -2756,9 +2757,9 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In ritardo',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Gestione della sicurezza unificata (scambio di dati e informazioni tra dispositivi e strumenti),',
@@ -2774,7 +2775,7 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In linea',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -2786,9 +2787,9 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Servizio di sicurezza professionale di terze parti (prevendita/progettazione/attuazione)',
@@ -2804,7 +2805,7 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In linea',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -2816,13 +2817,13 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
-                        ]
+                        ],
                     ],
-                ]
+                ],
             ],
             'page10' => [
                 'title' => 'Cyber Risk Management e la Difesa',
@@ -2842,7 +2843,7 @@ return [
                                     'stage3' => 'In ritardo',
                                     'stage4' => 'In ritardo',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Li usiamo in modo limitato, ma preferiamo fare le cose internamente.',
@@ -2854,7 +2855,7 @@ return [
                                     'stage3' => 'In ritardo',
                                     'stage4' => 'In ritardo',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Li usiamo in modo equilibrato.',
@@ -2866,7 +2867,7 @@ return [
                                     'stage3' => 'In linea',
                                     'stage4' => 'In linea',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Li preferiamo al fare le cose internamente.',
@@ -2878,7 +2879,7 @@ return [
                                     'stage3' => 'In vantaggio',
                                     'stage4' => 'In linea',
                                     'stage5' => 'In linea',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Li usiamo ampiamente per quanto possibile.',
@@ -2890,13 +2891,13 @@ return [
                                     'stage3' => 'In vantaggio',
                                     'stage4' => 'In vantaggio',
                                     'stage5' => 'In linea',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
     ],
     'cyber-risk-management-breach-detection-and-remediation' => [
         'title' => 'Cyber Risk Management Breach Detection e Remediation',
@@ -2926,7 +2927,7 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In linea',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -2938,9 +2939,9 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Analisi in tempo reale',
@@ -2956,7 +2957,7 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In linea',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -2968,9 +2969,9 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Protezione avanzata delle minacce/sandboxing',
@@ -2986,7 +2987,7 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In linea',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -2998,9 +2999,9 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'IA/euristica',
@@ -3016,7 +3017,7 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In linea',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3028,9 +3029,9 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Scansione malware',
@@ -3046,7 +3047,7 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In linea',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3058,11 +3059,11 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
-                        ]
+                        ],
                     ],
                 ]
                 /*,
@@ -3070,7 +3071,7 @@ return [
                     'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
                     'image'=>'img/techfit_icons_Q-A1.png'
                 )*/,
-                'report' => false
+                'report' => false,
             ],
             'page2' => [
                 'title' => 'Cyber Risk Management Breach Detection e Remediation',
@@ -3094,7 +3095,7 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In linea',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3106,9 +3107,9 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Registrazione e analisi forense',
@@ -3124,7 +3125,7 @@ return [
                                             'stage3' => 'In vantaggio',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In linea',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3136,9 +3137,9 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Failover/ripristino del sistema',
@@ -3154,7 +3155,7 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In linea',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3166,9 +3167,9 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Tiger/go teams',
@@ -3184,7 +3185,7 @@ return [
                                             'stage3' => 'In vantaggio',
                                             'stage4' => 'In vantaggio',
                                             'stage5' => 'In linea',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3196,9 +3197,9 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In ritardo',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Partner esterno di risposta agli incidenti',
@@ -3214,7 +3215,7 @@ return [
                                             'stage3' => 'In vantaggio',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In linea',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3226,11 +3227,11 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
-                        ]
+                        ],
                     ],
                 ]
                 /*,
@@ -3238,7 +3239,7 @@ return [
                     'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
                     'image'=>'img/techfit_icons_Q-A1.png'
                 )*/,
-                'report' => false
+                'report' => false,
             ],
             'page3' => [
                 'title' => 'Cyber Risk Management Breach Detection e Remediation',
@@ -3262,7 +3263,7 @@ return [
                                             'stage3' => 'In vantaggio',
                                             'stage4' => 'In vantaggio',
                                             'stage5' => 'In linea',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3274,9 +3275,9 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In ritardo',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Aggiornamenti dei criteri',
@@ -3292,7 +3293,7 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In linea',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3304,9 +3305,9 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Criterio di ripristino dei guasti',
@@ -3322,7 +3323,7 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In linea',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3334,9 +3335,9 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Fornitori esterni di ripristino dei guasti',
@@ -3352,7 +3353,7 @@ return [
                                             'stage3' => 'In vantaggio',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In linea',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3364,9 +3365,9 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Verifica Stato Compromissione',
@@ -3382,7 +3383,7 @@ return [
                                             'stage3' => 'In vantaggio',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In linea',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3394,19 +3395,19 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
-                        ]
-                    ]
+                        ],
+                    ],
                 ]
                 /*,
                 'report' => array(
                     'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
                     'image'=>'img/techfit_icons_Q-A1.png'
                 )*/,
-                'report' => false
+                'report' => false,
             ],
             'page4' => [
                 'title' => 'Cyber Risk Management Breach Detection e Remediation',
@@ -3430,7 +3431,7 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In linea',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3442,9 +3443,9 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Ha compreso la potenziale scala di esposizione',
@@ -3460,7 +3461,7 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In linea',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3472,9 +3473,9 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Ha eseguito una valutazione dei dati critici',
@@ -3490,7 +3491,7 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In linea',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3502,9 +3503,9 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Ha compreso la postura di sicurezza della supply chain estesa o dei partner',
@@ -3520,7 +3521,7 @@ return [
                                             'stage3' => 'In vantaggio',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In linea',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3532,9 +3533,9 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Ha messo a punto un piano di risposta alle violazioni della sicurezza',
@@ -3550,7 +3551,7 @@ return [
                                             'stage3' => 'In linea',
                                             'stage4' => 'In linea',
                                             'stage5' => 'In linea',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3562,19 +3563,19 @@ return [
                                             'stage3' => 'In ritardo',
                                             'stage4' => 'In ritardo',
                                             'stage5' => 'In ritardo',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
-                        ]
-                    ]
+                        ],
+                    ],
                 ]
                 /*,
                 'report' => array(
                     'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
                     'image'=>'img/techfit_icons_Q-A1.png'
                 )*/,
-                'report' => false
+                'report' => false,
             ],
             'page5' => [
                 'title' => 'Cyber Risk Management Breach Detection e Remediation',
@@ -3594,7 +3595,7 @@ return [
                                     'stage3' => 'In ritardo',
                                     'stage4' => 'In ritardo',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'A distanza di pochi anni',
@@ -3606,7 +3607,7 @@ return [
                                     'stage3' => 'In ritardo',
                                     'stage4' => 'In ritardo',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Ogni anno',
@@ -3618,7 +3619,7 @@ return [
                                     'stage3' => 'In ritardo',
                                     'stage4' => 'In ritardo',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Ogni 6 mesi',
@@ -3630,7 +3631,7 @@ return [
                                     'stage3' => 'In linea',
                                     'stage4' => 'In ritardo',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Ogni trimestre',
@@ -3642,7 +3643,7 @@ return [
                                     'stage3' => 'In vantaggio',
                                     'stage4' => 'In linea',
                                     'stage5' => 'In linea',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Mensilmente',
@@ -3654,7 +3655,7 @@ return [
                                     'stage3' => 'In vantaggio',
                                     'stage4' => 'In vantaggio',
                                     'stage5' => 'In linea',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Settimanalmente',
@@ -3666,7 +3667,7 @@ return [
                                     'stage3' => 'In vantaggio',
                                     'stage4' => 'In vantaggio',
                                     'stage5' => 'In linea',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Continuamente',
@@ -3678,11 +3679,11 @@ return [
                                     'stage3' => 'In vantaggio',
                                     'stage4' => 'In vantaggio',
                                     'stage5' => 'In vantaggio',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page6' => [
                 'title' => 'Cyber Risk Management Breach Detection e Remediation',
@@ -3702,7 +3703,7 @@ return [
                                     'stage3' => 'In ritardo',
                                     'stage4' => 'In ritardo',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'A distanza di pochi anni',
@@ -3714,7 +3715,7 @@ return [
                                     'stage3' => 'In ritardo',
                                     'stage4' => 'In ritardo',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Ogni anno',
@@ -3726,7 +3727,7 @@ return [
                                     'stage3' => 'In ritardo',
                                     'stage4' => 'In ritardo',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Ogni 6 mesi',
@@ -3738,7 +3739,7 @@ return [
                                     'stage3' => 'In linea',
                                     'stage4' => 'In ritardo',
                                     'stage5' => 'In ritardo',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Ogni trimestre',
@@ -3750,7 +3751,7 @@ return [
                                     'stage3' => 'In vantaggio',
                                     'stage4' => 'In linea',
                                     'stage5' => 'In linea',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Mensilmente',
@@ -3762,7 +3763,7 @@ return [
                                     'stage3' => 'In vantaggio',
                                     'stage4' => 'In vantaggio',
                                     'stage5' => 'In linea',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Settimanalmente',
@@ -3774,7 +3775,7 @@ return [
                                     'stage3' => 'In vantaggio',
                                     'stage4' => 'In vantaggio',
                                     'stage5' => 'In linea',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Continuamente',
@@ -3786,12 +3787,12 @@ return [
                                     'stage3' => 'In vantaggio',
                                     'stage4' => 'In vantaggio',
                                     'stage5' => 'In vantaggio',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
-        ]
-    ]
+        ],
+    ],
 ];

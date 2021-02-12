@@ -40,7 +40,7 @@ class SendReports extends Job implements ShouldQueue, SelfHandling
         foreach ($users as $user) {
             Mail::send('emails.report', ['tool'=>$tool], function ($m) use ($file, $user, $tool) {
                 $m->to($user)->subject($tool->title.' Assessment Report');
-                $m->attach($file->store("xls", false, true)['full']);
+                $m->attach($file->store('xls', false, true)['full']);
             });
         }
     }

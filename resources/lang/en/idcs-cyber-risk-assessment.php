@@ -1,6 +1,7 @@
 <?php
+
 //fireeye
-return array(
+return [
     'stage1' => 'Ad-Hoc',
     'stage2' => 'Opportunistic',
     'stage3' => 'Repeatable',
@@ -66,11 +67,11 @@ If you achieve a rating of in-line or ahead in all sections, you are ready to be
                 We can send you the full report directly to your mailbox.<br/>
                 Just provide us your name and email and we\'ll send you a link to download it.
             </p>
-        '
+        ',
     ],
     'complete_thankyou' => 'Thank you :Fname,',
     'complete_body' => 'Your custom report will arrive in your inbox soon, while you\'re waiting, why not tweet your results and see how your followers do?',
-    'complete_tweet' => 'I\'ve just taken the @IDCUKI Cyber Risk Readiness Assessment Sponsored by @fireeye, we\'re at :result. Interested?',// http://bit.ly/2g8WN1d
+    'complete_tweet' => 'I\'ve just taken the @IDCUKI Cyber Risk Readiness Assessment Sponsored by @fireeye, we\'re at :result. Interested?', // http://bit.ly/2g8WN1d
     'email'=>[
         'subject' => 'IDC Report',
         'hi' => 'Hi :Fname',
@@ -81,13 +82,13 @@ If you achieve a rating of in-line or ahead in all sections, you are ready to be
         'link' => 'Download Report',
         'extra' => 'Once you\'ve digested the report why not visit <a href="http://www.fireeye.com" style="color:#E66B6B">FireEye</a>',
         'regards' => 'Regards',
-        'team' => 'The IDC Team'
+        'team' => 'The IDC Team',
     ],
     'introduction_title' => 'Custom report summary and overall performance ranking',
     'performancerankingbycategory' => 'Performance Ranking By Category',
     'introduction' => '',
     'introduction-image' => 'report.jpg',
-    'overall' => array(
+    'overall' => [
         'title'=>'Your overall security readiness',
         'graph-title'=>'How you compare overall',
         'image'=>'',
@@ -132,9 +133,9 @@ If you achieve a rating of in-line or ahead in all sections, you are ready to be
             <p>
                 You are way ahead of the mainstream and in the top 5% of companies when it comes to Cyber Risk capabilities. While you are one of the leaders, the work never stops and you can still look to improve in various areas to keep reducing the likelihood of a data breach.
             </p>
-        '
-    ),
-    'cyber-risk-management-and-the-business' => array(
+        ',
+    ],
+    'cyber-risk-management-and-the-business' => [
         'title'=>'Cyber Risk Management and the Business',
         'image'=>'cloud-vision-and-strategy.jpg',
         'pb'=>'pb',
@@ -167,9 +168,9 @@ If you achieve a rating of in-line or ahead in all sections, you are ready to be
             <p>
                 Excellent showing! You are performing ahead of your peers in this area of Cyber Risk management but should still be reassessing how you do things to keep ahead of the game.
             </p>
-        '
-    ),
-    'cyber-risk-management-operations-and-defence' => array(
+        ',
+    ],
+    'cyber-risk-management-operations-and-defence' => [
         'title'=> 'Cyber Risk Management Operations and Defence',
         'image'=>'processes-and-skill-sets.jpg',
         'pb'=>'pb',
@@ -202,9 +203,9 @@ If you achieve a rating of in-line or ahead in all sections, you are ready to be
             <p>
                 Top of the class! You are performing ahead of your peers in this area of Cyber Risk management but can always find ways to improve over time as new approaches emerge.
             </p>
-        '
-    ),
-    'cyber-risk-management-breach-detection-and-remediation' => array(
+        ',
+    ],
+    'cyber-risk-management-breach-detection-and-remediation' => [
         'title'=> 'Cyber Risk Management Breach Detection and Remediation',
         'image'=>'business-mix.jpg',
         'pb'=>'pb',
@@ -237,8 +238,8 @@ If you achieve a rating of in-line or ahead in all sections, you are ready to be
             <p>
                 Top job! You are ahead of your peers when it comes to managing Cyber Risk in conjunction with the business. You are performing very well in this area of Cyber Risk management but should not become complacent and continually reassess what you do.
             </p>
-        '
-    ),
+        ',
+    ],
     'questions' => [
         'q1'=>[
             'behind' => '
@@ -255,7 +256,7 @@ If you achieve a rating of in-line or ahead in all sections, you are ready to be
                 <p>
                     Keep in mind that technologies and capabiltiies are always moving on and you should regularly re-assess what you do and how you do it
                 </p>
-            '
+            ',
         ],
         'q2'=>[
             'behind' => '
@@ -272,7 +273,7 @@ If you achieve a rating of in-line or ahead in all sections, you are ready to be
                 <p>
                     While much of your focus on improving Cyber Risk Managament can be elsewhere, you should continue to adopt and optimise advanced capabilities around policy, management and automation & orchestration.
                 </p>
-            '
+            ',
         ],
         'q3'=>[
             'behind' => '
@@ -289,7 +290,7 @@ If you achieve a rating of in-line or ahead in all sections, you are ready to be
                 <p>
                     In order to be truly leading edge you must continue to push the boundaries.  Work to establish where compromises can be made, bearing in mind the \'crown jewels\' that must absolutely remain locked down at all costs, in order to find new opportunities for development. 
                 </p>
-            '
+            ',
         ],
         'q4'=>[
             'behind' => '
@@ -306,7 +307,7 @@ If you achieve a rating of in-line or ahead in all sections, you are ready to be
                 <p>
                     You are forward thinking in how you manage the risk of security breaches and plan your responses in the event of a breach. However, as a next step, consider how cyber risk insurance can be harnessed not only to mitigate the potential costs of a breach, but also as a driver for excellence - and thus it becomes a potential source of competitive advantage in how customer data is handled.
                 </p>
-            '
+            ',
         ],
         'q5'=>[
             'behind' => '
@@ -323,7 +324,7 @@ If you achieve a rating of in-line or ahead in all sections, you are ready to be
                 <p>
                     Consider how cyber risk management can be embedded within the development of new business priorities in order to ensure the proactive identification and management of cyber risk with a view to facilitating business goals.
                 </p>
-            '
+            ',
         ],
         'q6'=>[
             'behind' => '
@@ -340,7 +341,7 @@ If you achieve a rating of in-line or ahead in all sections, you are ready to be
                 <p>
                     In order to take this framework to the next level, consider how specialists in the fields of risk, compliance and security both in the board room and below it can make a positive contribution to this process. Make effective use of third parties to gauge best practice.
                 </p>
-            '
+            ',
         ],
         'q7'=>[
             'behind' => '
@@ -357,7 +358,7 @@ If you achieve a rating of in-line or ahead in all sections, you are ready to be
                 <p>
                     Consider how security can become a leading voice in the planning of new initiatives. Further, ensure that security remains a top priority right through the development, testing and implementation of projects, and for ongoing \'business as usual\'.
                 </p>
-            '
+            ',
         ],
         'q8'=>[
             'behind' => '
@@ -374,7 +375,7 @@ If you achieve a rating of in-line or ahead in all sections, you are ready to be
                 <p>
                     In order to strive for further improvement, position security investment as the enabler that is driving the enterprise to achieve business goals and supporting growth in both revenue and profitability.
                 </p>
-            '
+            ',
         ],
         'q9'=>[
             'behind' => '
@@ -391,7 +392,7 @@ If you achieve a rating of in-line or ahead in all sections, you are ready to be
                 <p>
                     To move to the next level, consider how to maximise the cross-over point between IT and physical security through the use of biometric authentication techniques.
                 </p>
-            '
+            ',
         ],
         'q10'=>[
             'behind' => '
@@ -408,7 +409,7 @@ If you achieve a rating of in-line or ahead in all sections, you are ready to be
                 <p>
                     Consider how your organisation can become not just a leader in the management of best practice, but a thought leader for the industry in your own right. This even become a source of competitive advantage against your peers.
                 </p>
-            '
+            ',
         ],
         'q11'=>[
             'behind' => '
@@ -425,7 +426,7 @@ If you achieve a rating of in-line or ahead in all sections, you are ready to be
                 <p>
                     In order to target further improvements, make clear how you are harnessing \'state of the art\' technologies and implementing them using risk-based approaches to decision-making. This will not only help to mitigate against the potential for fines under GDPR, but could also become a source of competitive advantage.
                 </p>
-            '
+            ',
         ],
         'q12'=>[
             'behind' => '
@@ -442,7 +443,7 @@ If you achieve a rating of in-line or ahead in all sections, you are ready to be
                 <p>
                     In order to strive for improvement, consider how continuous reporting can act as more than a mere dashboard, but become a driver of business-level decision-making through an integrated operations capability.
                 </p>
-            '
+            ',
         ],
         'q13'=>[
             'behind' => '
@@ -459,7 +460,7 @@ If you achieve a rating of in-line or ahead in all sections, you are ready to be
                 <p>
                     In order to strive for improvement, consider how continuous reporting can act as more than a mere dashboard, but become a driver of business-level decision-making through an integrated operations capability.
                 </p>
-            '
+            ',
         ],
         'q14'=>[
             'behind' => '
@@ -476,7 +477,7 @@ If you achieve a rating of in-line or ahead in all sections, you are ready to be
                 <p>
                     In order to strive for further advances in Cyber Risk Management, consider how further elements can be automated and integrated within the end-to-end management suite, helping to drive a more agilie IT department.
                 </p>
-            '
+            ',
         ],
         'q15'=>[
             'behind' => '
@@ -493,7 +494,7 @@ If you achieve a rating of in-line or ahead in all sections, you are ready to be
                 <p>
                     To become truly cutting edge, consider what steps can be taken to automate and orchestrate processes end-to-end wherever possible to drive Cyber Risk Management with agility, quality and compliance.
                 </p>
-            '
+            ',
         ],
         'q16'=>[
             'behind' => '
@@ -510,7 +511,7 @@ If you achieve a rating of in-line or ahead in all sections, you are ready to be
                 <p>
                     Rather than simply focus on the opportunity to increase automation, do not forget the human element of the equation. To add the most impact, look to how the automation initiatives that you are pursuing can be used to complement your security personnel, making them more effective workers through upskilling them to perform more advanced tasks.
                 </p>
-            '
+            ',
         ],
         'q17'=>[
             'behind' => '
@@ -527,7 +528,7 @@ If you achieve a rating of in-line or ahead in all sections, you are ready to be
                 <p>
                     In order to push the envelop further, consider the impact that MSSPs can play. MSSPs can feed the management of security tools and devices into big-data-powered correlation engines and to present this information back through management dashboards, helping to drive decision-making through awareness of the changing security posture in real-time.
                 </p>
-            '
+            ',
         ],
         'q25'=>[
             'behind' => '
@@ -544,7 +545,7 @@ If you achieve a rating of in-line or ahead in all sections, you are ready to be
                 <p>
                     You are a leader in terms of your approach to the use of MSSPs, using them extensively and using them in a balanced way as a complementary delivery channel compared to in-house resources. In order to strive for further advances, look to enhance your use of MSSPs to achieve advances in best practice implementation and operations.
                 </p>
-            '
+            ',
         ],
         'q18'=>[
             'behind' => '
@@ -561,7 +562,7 @@ If you achieve a rating of in-line or ahead in all sections, you are ready to be
                 <p>
                     Artifical intelligence and heuristics are maturing , and you should implement these if not already doing so in order to continue the quest for leadership.
                 </p>
-            '
+            ',
         ],
         'q19'=>[
             'behind' => '
@@ -578,7 +579,7 @@ If you achieve a rating of in-line or ahead in all sections, you are ready to be
                 <p>
                     Honeypot/intelligence gathering and Tiger teams are becoming standard practice for large, mature and advanced security operations, and you should implement these if not already doing so.
                 </p>
-            '
+            ',
         ],
         'q20'=>[
             'behind' => '
@@ -595,7 +596,7 @@ If you achieve a rating of in-line or ahead in all sections, you are ready to be
                 <p>
                     Machine learning-based automated remediation capabilities are quickly maturing, and you should implement these if not already doing so.
                 </p>
-            '
+            ',
         ],
         'q21'=>[
             'behind' => '
@@ -612,7 +613,7 @@ If you achieve a rating of in-line or ahead in all sections, you are ready to be
                 <p>
                     Understanding the posture of your extended supply chain or partners is an essential next step, both from a perspective of inheriting security vulnerabilities from third parties, and from the new joint iability rules introduced by GDPR.
                 </p>
-            '
+            ',
         ],
         'q23'=>[
             'behind' => '
@@ -629,7 +630,7 @@ If you achieve a rating of in-line or ahead in all sections, you are ready to be
                 <p>
                     These days it\'s essential that third party validation of security is undertaken, even in advanced environments where \'marking your own homework\' can lead to complacency. Continuous validation is now the expected standard, though much of this can now be automated. Services-based penetration tests should be conducted at least every six months, because the threat landscape is changing so quickly. Testing less frequently is putting your organisation at greater risk.
                 </p>
-            '
+            ',
         ],
         'q24'=>[
             'behind' => '
@@ -646,7 +647,7 @@ If you achieve a rating of in-line or ahead in all sections, you are ready to be
                 <p>
                     With cyber attacks increasing in capability and frequency, being able to detect and respond adequately to a breach will be a key enabler of a leader in the digital economy. Focus on continuing to chase best practice beyond any compliance standards and make sure you keep getting external reviews of your strengths and weaknesses.
                 </p>
-            '
+            ',
         ],
-    ]
-);
+    ],
+];

@@ -147,7 +147,7 @@ class languageTableSeeder extends Seeder
             ['name' => 'Xhosa', 'abbreviation' => 'xh'],
             ['name' => 'Yoruba', 'abbreviation' => 'yo'],
             ['name' => 'Chinese', 'abbreviation' => 'zh'],
-            ['name' => 'Zulu', 'abbreviation' => 'zu']
+            ['name' => 'Zulu', 'abbreviation' => 'zu'],
         ];
 
         DB::table('languages')->insert($languages);

@@ -1,4 +1,5 @@
 <?php
+
 // SAP Agile
 return [
     'strategic-planning' => [
@@ -56,10 +57,10 @@ return [
                                 'label'=>'Sehr zufrieden',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Strategische Planung',
@@ -88,10 +89,10 @@ return [
                                 'label'=>'Personalwesen (Personalbestand – Neueinstellungen)',
                                 'value'=>2,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Strategische Planung',
@@ -138,9 +139,9 @@ return [
                                     [
                                         'label'=>'5 Sehr schnell',
                                         'value'=>5,
-                                        'checked'=>false
-                                    ]
-                                ]
+                                        'checked'=>false,
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Budgetplanung',
@@ -169,9 +170,9 @@ return [
                                     [
                                         'label'=>'5 Sehr schnell',
                                         'value'=>5,
-                                        'checked'=>false
-                                    ]
-                                ]
+                                        'checked'=>false,
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Produktion',
@@ -200,9 +201,9 @@ return [
                                     [
                                         'label'=>'5 Sehr schnell',
                                         'value'=>5,
-                                        'checked'=>false
-                                    ]
-                                ]
+                                        'checked'=>false,
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Personalwesen (Personalbestand – Neueinstellungen)',
@@ -231,15 +232,15 @@ return [
                                     [
                                         'label'=>'5 Sehr schnell',
                                         'value'=>5,
-                                        'checked'=>false
-                                    ]
-                                ]
+                                        'checked'=>false,
+                                    ],
+                                ],
                             ],
                         ],
-                    ]
-                ]
-            ]
-        ]
+                    ],
+                ],
+            ],
+        ],
     ],
     'processes' => [
         'title' => 'Prozesse',
@@ -295,10 +296,10 @@ return [
                                 'label'=>'Unsere Prozesse lassen sich flexibel an wechselnde Anforderungen anpassen.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Prozesse',
@@ -332,10 +333,10 @@ return [
                                 'label'=>'Einfach',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Prozesse',
@@ -369,12 +370,12 @@ return [
                                 'label'=>'Ständig und mit einem klar definierten Zweck',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
-        ]
+        ],
     ],
     'customer-relationships' => [
         'title' => 'Kundenerlebnis',
@@ -430,10 +431,10 @@ return [
                                 'label'=>'Sehr oft',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Kundenerlebnis',
@@ -467,10 +468,10 @@ return [
                                 'label'=>'Sehr einfach',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' =>[
                 'title' => 'Kundenerlebnis',
@@ -504,12 +505,12 @@ return [
                                 'label'=>'Sehr schnell',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
     ],
     'suppliers-distributors' => [
         'title' => 'Lieferanten und Händler',
@@ -565,10 +566,10 @@ return [
                                 'label'=>'Unsere Systeme sind integriert.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Lieferanten und Händler',
@@ -602,10 +603,10 @@ return [
                                 'label'=>'Unsere Systeme sind integriert.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' =>[
                 'title' => 'Lieferanten und Händler',
@@ -639,12 +640,12 @@ return [
                                 'label'=>'Sehr schnell',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
     ],
     'people-experience' => [
         'title' => 'Mitarbeitererlebnis',
@@ -700,10 +701,10 @@ return [
                                 'label'=>'Alle Mitarbeiter*innen haben vollständige Transparenz über das Geschäftsgeschehen.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Mitarbeitererlebnis',
@@ -737,10 +738,10 @@ return [
                                 'label'=>'Sehr schnell',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' =>[
                 'title' => 'Mitarbeitererlebnis',
@@ -780,11 +781,11 @@ return [
                                 'label'=>'Anhand von Kennzahlen zum Mitarbeitererlebnis (Employee Experience; Mitarbeiterzufriedenheit und ‑motivation usw.)',
                                 'value'=>3,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
-    ]
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
+    ],
 ];

@@ -8,7 +8,7 @@ class TrackerHits extends Model
 {
     protected $fillable = [
         'tracker_id',
-        'type'
+        'type',
     ];
 
     public function tracker()

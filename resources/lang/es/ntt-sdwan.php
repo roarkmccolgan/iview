@@ -1,6 +1,7 @@
 <?php
+
 //NTT
-return array(
+return [
     'elqFormName'=>'',
     'developedby'=>'Developed by',
     'sponsoredby'=>'Sponsored by',
@@ -15,7 +16,7 @@ return array(
     'driver-of'=>'SD-WAN: Un impulsor de Transformacion Digital',
     'an-infographic'=>'Un Infografico de IDC',
     'download-now'=>'Descargarlo ahora',
-    
+
     'title'=>'Asesor de red WAN de próxima generación de NTT Communications',
     'sub-title'=>'Con la investigación y el análisis de IDC',
     'landing'=>'
@@ -27,7 +28,7 @@ return array(
             Esta herramienta de autoevaluación está respaldada por una investigación independiente del usuario final y por el profundo conocimiento que IDC tiene de este mercado. Tras completar una breve encuesta (10 minutos), recibirá un informe personalizado con una evaluación de la red WAN de su organización que le proporciona una orientación esencial y personalizada para ayudarle a prepararse para las exigencias del mañana y a marcar el rumbo hacia una red WAN de próxima generación.
         </p>',
     'startbut'=>'Iniciar evaluación',
-    
+
     'send'=>'We can send you the full results directly to your mailbox',
     'register'=>'Registrese ahora para recibir un informe personalizado',
     'provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
@@ -58,7 +59,7 @@ return array(
         <a class="btn btn--primary" target="_blank" href="http://www.ntt.com/en/services/network/software-defined-network.html">
             Haga click aqui para mas informacionn
         </a>',
-    'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @ntt. Interested? ',// http://bit.ly/2gslXEh
+    'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @ntt. Interested? ', // http://bit.ly/2gslXEh
     'email'=>[
         'subject' => 'NTT Communications Next Generation WAN Advisor',
         'hi' => 'Hola, :Fname',
@@ -66,7 +67,7 @@ return array(
         'link' => 'Descargar informe',
         'extra' => 'Una vez haya leído el informe, ¿por qué no visita <a href="http://www.ntt.com/en/services/network/software-defined-network.html" style="color:#054683">SD-WAN content hub</a>?',
         'regards' => 'Atentamente',
-        'team' => 'El equipo de IDC'
+        'team' => 'El equipo de IDC',
     ],
     'email_apology'=>[
         'subject' => 'NTT Communications Next Generation WAN Advisor',
@@ -77,7 +78,7 @@ return array(
         'link' => 'Descargar informe',
         'extra' => 'Lamentamos las molestias causadas. En caso de que tenga alguna otra incidencia con respecto a esta herramienta de evaluación, no dude en ponerse en contacto conmigo directamente mandando un correo electrónico a <a href="mailto:abuss@idc.com" style="color:#054683">abuss@idc.com</a>',
         'regards' => 'Saludos cordiales',
-        'team' => 'Andrew Buss<br/>Director de consultoría, IDC Europa'
+        'team' => 'Andrew Buss<br/>Director de consultoría, IDC Europa',
     ],
     'introduction' => '
         <h2 class="text-ntt-blue mb-2">INTRODUCCIÓN</h2>
@@ -804,7 +805,7 @@ return array(
             </p>
         </div>
     ',
-    
+
     'operations-3-stage3' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2 text-ntt-blue mt-4 font-bold">
@@ -1097,4 +1098,4 @@ return array(
                 
         </div>
     ',
-);
+];

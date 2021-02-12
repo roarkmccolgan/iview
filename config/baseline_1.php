@@ -1,4 +1,5 @@
 <?php
+
 //sage
 return [
     'overall' => [
@@ -113,9 +114,9 @@ return [
                 'copy' => 'general.timetoacceleratetxt',
                 'tweet' => false,
                 'benchmark' => 4,
-            ]
+            ],
         ],
-        'tweet' => false
+        'tweet' => false,
     ],
     'cloud-vision-and-strategy' => [
         'baseline' => 15.363,
@@ -161,8 +162,8 @@ return [
                 'high' => 20,
                 'total' => 5,
                 'benchmark' => 6,
-            ]
-        ]
+            ],
+        ],
     ],
     'process-and-skill-sets' => [
         'baseline' => 24.046,
@@ -208,11 +209,11 @@ return [
                 'high' => 20,
                 'total' => 6,
                 'benchmark' => 8,
-            ]
-        ]
+            ],
+        ],
     ],
     'marketing' => [
-        'baseline' => 10,917,
+        'baseline' => 10, 917,
         'report-settings' => [
             'header'=>true,
             'footer'=>true,
@@ -255,11 +256,11 @@ return [
                 'high' => 20,
                 'total' => 4,
                 'benchmark' => 8,
-            ]
-        ]
+            ],
+        ],
     ],
     'sales' => [
-        'baseline' => 10,917,
+        'baseline' => 10, 917,
         'report-settings' => [
             'header'=>true,
             'footer'=>true,
@@ -302,11 +303,11 @@ return [
                 'high' => 20,
                 'total' => 4,
                 'benchmark' => 8,
-            ]
-        ]
+            ],
+        ],
     ],
     'business-mix' => [
-        'baseline' => 10,917,
+        'baseline' => 10, 917,
         'report-settings' => [
             'header'=>true,
             'footer'=>true,
@@ -349,7 +350,7 @@ return [
                 'high' => 20,
                 'total' => 4,
                 'benchmark' => 1,
-            ]
-        ]
-    ]
+            ],
+        ],
+    ],
 ];

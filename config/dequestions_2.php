@@ -1,4 +1,5 @@
 <?php
+
 return [
     'screeners' => [
         'title' => 'Demografien',
@@ -19,37 +20,37 @@ return [
                             [
                                 'label'=>'Frankreich',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Deutschland',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Großbritannien',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Spanien',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Italien',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Sonstige',
                                 'value'=>0,
-                                'checked'=>false
-                            ]
+                                'checked'=>false,
+                            ],
                         ],
-                        'other'=>'Sonstige|0|Your country'
-                    ]
-                ]
+                        'other'=>'Sonstige|0|Your country',
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Demografien',
@@ -62,31 +63,31 @@ return [
                             [
                                 'label'=>'Weniger als 1000',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'1000-2499',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'2500-4999',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'5000-9999',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'10000 oder mehr',
                                 'value'=>1,
-                                'checked'=>false
-                            ]
-                        ]
-                    ]
-                ]
+                                'checked'=>false,
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Demografien',
@@ -99,75 +100,75 @@ return [
                             [
                                 'label'=>'Finanzdienstleistungen',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Produktion',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Telekommunikationsdienste (einschließlich Hoster, xSPs und Cloud-Dienstanbieter)',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Bildungswesen',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Gesundheitswesen',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Medien',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Transport, Distribution und Logistik',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Einzelhandel und Großhandel',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'IT-Beratung und IT-bezogene professionelle Dienstleistungen',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Unternehmensdienstleistungen (z.B. Buchhaltung, Recht, Werbung, Immobilien, Personaleinstellung, Unternehmensberatung usw.)',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Öffentliche Verwaltung oder öffentliche Dienstleistungen',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Versorgungsunternehmen - Strom, Gas, Wasser',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Sonstiges',
                                 'value'=>1,
                                 'checked'=>false,
-                                'other' => true
-                            ]
+                                'other' => true,
+                            ],
                         ],
-                        'other'=>'Sonstiges|1| Bitte angeben'
-                    ]
-                ]
-            ]
-        ]
+                        'other'=>'Sonstiges|1| Bitte angeben',
+                    ],
+                ],
+            ],
+        ],
     ],
     'cyber-risk-management-and-the-business' => [
         'title' => 'Cyber Risk Management und das Business',
@@ -193,7 +194,7 @@ return [
                                     'stage3' => 'Im unteren Bereich',
                                     'stage4' => 'Im unteren Bereich',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Wegbereiter für Unternehmenseffizienz',
@@ -205,7 +206,7 @@ return [
                                     'stage3' => 'Im Mittelfeld',
                                     'stage4' => 'Im Mittelfeld',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Treiber für Wettbewerbsvorteile oder Differenzierung',
@@ -217,11 +218,11 @@ return [
                                     'stage3' => 'Im Spitzenfeld',
                                     'stage4' => 'Im Spitzenfeld',
                                     'stage5' => 'Im Mittelfeld',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]/*,
+                                ],
+                            ],
+                        ],
+                    ],
+                ], /*,
                 'report' => array(
                     'text'=>'IDC estimates that ~45% of all new servers sold in Europe in 2016 will be virtualized. Excluding non suitable environments such as tower machines or High Performance Computing, >70% of the new servers were virtualized. ',
                     'image'=>'img/techfit_icons_Q-B1.png'
@@ -245,7 +246,7 @@ return [
                                     'stage3' => 'Im unteren Bereich',
                                     'stage4' => 'Im unteren Bereich',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Wir kommen mit der Bearbeitung von Anfragen in Bezug auf bestehende Anwendungen oder Dienste gewöhnlich zurecht, kämpfen aber mit Anfragen für neue oder erweiterte Dienste.',
@@ -257,7 +258,7 @@ return [
                                     'stage3' => 'Im Mittelfeld',
                                     'stage4' => 'Im unteren Bereich',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Wir kommen gewöhnlich mit der Bearbeitung von Anfragen für bestehende Anwendungen und Dienste sowie auch nach neuen oder zusätzlichen Diensten zurecht.',
@@ -269,7 +270,7 @@ return [
                                     'stage3' => 'Im Mittelfeld',
                                     'stage4' => 'Im Mittelfeld',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Wir sind sehr gut bei der Lieferung für die meisten oder alle Anfragen.',
@@ -281,11 +282,11 @@ return [
                                     'stage3' => 'Im Spitzenfeld',
                                     'stage4' => 'Im Spitzenfeld',
                                     'stage5' => 'Im Mittelfeld',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Cyber Risk Management und das Business',
@@ -305,7 +306,7 @@ return [
                                     'stage3' => 'Im unteren Bereich',
                                     'stage4' => 'Im unteren Bereich',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Wir neigen dazu, Risiken zu vermeiden, aber gehen einige Risiken ein, wenn es eine sehr gute Begründung gibt.',
@@ -317,7 +318,7 @@ return [
                                     'stage3' => 'Im unteren Bereich',
                                     'stage4' => 'Im unteren Bereich',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Wir nehmen uns vor Risiken in Acht, gehen sie jedoch ein, wenn wir einen klaren geschäftlichen Nutzen sehen.',
@@ -329,7 +330,7 @@ return [
                                     'stage3' => 'Im Mittelfeld',
                                     'stage4' => 'Im Mittelfeld',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Wir gehen gerne ein Risiko ein, wenn es der Entwicklung des Geschäfts dient.',
@@ -341,7 +342,7 @@ return [
                                     'stage3' => 'Im Spitzenfeld',
                                     'stage4' => 'Im Mittelfeld',
                                     'stage5' => 'Im Mittelfeld',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Wir gehen Risiken aktiv ein und managen sie, um der Geschäftsentwicklung zu helfen.',
@@ -353,11 +354,11 @@ return [
                                     'stage3' => 'Im Spitzenfeld',
                                     'stage4' => 'Im Spitzenfeld',
                                     'stage5' => 'Im Mittelfeld',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page4' => [
                 'title' => 'Cyber Risk Management und das Business',
@@ -368,7 +369,7 @@ return [
                         'name'=>'q4',
                         'calc'=>[
                             'type'=>'average',
-                            'value'=>false
+                            'value'=>false,
                         ],
                         'options'=>[
                             [
@@ -385,7 +386,7 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Haben wir nicht, wir planen es',
@@ -397,7 +398,7 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nein und wir planen es auch nicht',
@@ -409,9 +410,9 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Proaktive Erkennung (solutions that are able to identify unknown threats through techniques such as behavioural analytics and machine learning, as opposed to being reliant on blocking known threats through the use of signatures)',
@@ -427,7 +428,7 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Haben wir nicht, wir planen es',
@@ -439,7 +440,7 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nein und wir planen es auch nicht',
@@ -451,9 +452,9 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Reaktionsplan',
@@ -469,7 +470,7 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Haben wir nicht, wir planen es',
@@ -481,7 +482,7 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nein und wir planen es auch nicht',
@@ -493,9 +494,9 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Interner Kommunikationsplan',
@@ -511,7 +512,7 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Haben wir nicht, wir planen es',
@@ -523,7 +524,7 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nein und wir planen es auch nicht',
@@ -535,9 +536,9 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Externer Kommunikations- und PR-Plan',
@@ -553,7 +554,7 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Haben wir nicht, wir planen es',
@@ -565,7 +566,7 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nein und wir planen es auch nicht',
@@ -577,9 +578,9 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Breach Notification plan',
@@ -595,7 +596,7 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Haben wir nicht, wir planen es',
@@ -607,7 +608,7 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nein und wir planen es auch nicht',
@@ -619,9 +620,9 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Breach Remediation plan',
@@ -637,7 +638,7 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Haben wir nicht, wir planen es',
@@ -649,7 +650,7 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nein und wir planen es auch nicht',
@@ -661,9 +662,9 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Cyber-Risikoversicherung',
@@ -679,7 +680,7 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Haben wir nicht, wir planen es',
@@ -691,7 +692,7 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nein und wir planen es auch nicht',
@@ -703,19 +704,19 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
-                                    ]
-                                ]
-                            ]
-                        ]
-                    ]
+                                        ],
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
                 ]
                 /*,
                 'report' => array(
                     'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
                     'image'=>'img/techfit_icons_Q-A1.png'
                 )*/,
-                'report' => false
+                'report' => false,
             ],
             'page5' => [
                 'title' => 'Cyber Risk Management und das Business',
@@ -735,7 +736,7 @@ return [
                                     'stage3' => 'Im unteren Bereich',
                                     'stage4' => 'Im unteren Bereich',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Es wird gewöhnlich an die IT-Abteilung delegiert.',
@@ -747,7 +748,7 @@ return [
                                     'stage3' => 'Im unteren Bereich',
                                     'stage4' => 'Im unteren Bereich',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Es wird zwischen der IT-Abteilung und verschiedenen Fachbereichen aufgeteilt.',
@@ -759,7 +760,7 @@ return [
                                     'stage3' => 'Im Mittelfeld',
                                     'stage4' => 'Im Mittelfeld',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Es wird zwischen der IT-Abteilung und der Geschäftsleitung aufgeteilt.',
@@ -771,7 +772,7 @@ return [
                                     'stage3' => 'Im Mittelfeld',
                                     'stage4' => 'Im Mittelfeld',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Es wird zwischen der IT-Abteilung, Geschäftsleitung und verschiedenen Fachbereichen aufgeteilt.',
@@ -783,11 +784,11 @@ return [
                                     'stage3' => 'Im Spitzenfeld',
                                     'stage4' => 'Im Mittelfeld',
                                     'stage5' => 'Im Mittelfeld',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page6' => [
                 'title' => 'Cyber Risk Management und das Business',
@@ -798,7 +799,7 @@ return [
                         'name'=>'q6',
                         'calc'=>[
                             'type'=>'normalize',
-                            'value'=>5
+                            'value'=>5,
                         ],
                         'options'=>[
                             [
@@ -815,7 +816,7 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nein',
@@ -827,9 +828,9 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'CFO',
@@ -845,7 +846,7 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nein',
@@ -857,9 +858,9 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'COO',
@@ -875,7 +876,7 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nein',
@@ -887,9 +888,9 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Mitglied, das sich auf Risiko/Einhaltung der Vorschriften/Sicherheit (nicht Vorstandsebene) konzentriert',
@@ -905,7 +906,7 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nein',
@@ -917,9 +918,9 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Mitglied auf Vorstandsebene, das sich auf Risiko/Einhaltung der Vorschriften/Sicherheit konzentriert',
@@ -935,7 +936,7 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nein',
@@ -947,9 +948,9 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Spezielle Rolle für Risiko/Einhaltung von Vorschriften/Sicherheit (nicht Vorstand)',
@@ -965,7 +966,7 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nein',
@@ -977,18 +978,18 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
-                                    ]
-                                ]
-                            ]
-                        ]
-                    ]
+                                        ],
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
                 ]/*,
                 'report' => array(
                     'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
                     'image'=>'img/techfit_icons_Q-A1.png'
                 )*/,
-                'report' => false
+                'report' => false,
             ],
             'page7' => [
                 'title' => 'Cyber Risk Management und das Business',
@@ -1008,7 +1009,7 @@ return [
                                     'stage3' => 'Im Spitzenfeld',
                                     'stage4' => 'Im Spitzenfeld',
                                     'stage5' => 'Im Mittelfeld',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Während der Planung',
@@ -1020,7 +1021,7 @@ return [
                                     'stage3' => 'Im Mittelfeld',
                                     'stage4' => 'Im Mittelfeld',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Zu Beginn der Umsetzung',
@@ -1032,7 +1033,7 @@ return [
                                     'stage3' => 'Im Mittelfeld',
                                     'stage4' => 'Im unteren Bereich',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Während der Umsetzung',
@@ -1044,7 +1045,7 @@ return [
                                     'stage3' => 'Im unteren Bereich',
                                     'stage4' => 'Im unteren Bereich',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Wenn etwas schiefgeht',
@@ -1056,11 +1057,11 @@ return [
                                     'stage3' => 'Im unteren Bereich',
                                     'stage4' => 'Im unteren Bereich',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page8' => [
                 'title' => 'Cyber Risk Management und das Business',
@@ -1080,7 +1081,7 @@ return [
                                     'stage3' => 'Im unteren Bereich',
                                     'stage4' => 'Im unteren Bereich',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Knapp, deckt kaum das wesentliche operative Geschäft ab',
@@ -1092,7 +1093,7 @@ return [
                                     'stage3' => 'Im unteren Bereich',
                                     'stage4' => 'Im unteren Bereich',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Genug für das Kerngeschäft, aber zu gering für neue Initiativen',
@@ -1104,7 +1105,7 @@ return [
                                     'stage3' => 'Im Mittelfeld',
                                     'stage4' => 'Im unteren Bereich',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Genug für das Kerngeschäft und für neue Initiativen, wenn der Wert klar ist',
@@ -1116,7 +1117,7 @@ return [
                                     'stage3' => 'Im Spitzenfeld',
                                     'stage4' => 'Im Mittelfeld',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Mit einem guten Geschäftsszenario auf ganzer Linie umfassend verfügbar, auch für experimentelle Szenarien',
@@ -1128,13 +1129,13 @@ return [
                                     'stage3' => 'Im Spitzenfeld',
                                     'stage4' => 'Im Spitzenfeld',
                                     'stage5' => 'Im Mittelfeld',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
-        ]
+        ],
     ],
     'cyber-risk-management-operations-and-defence' => [
         'title' => 'Cyber Risk Management Operations und Abwehr',
@@ -1151,7 +1152,7 @@ return [
                         'name'=>'q9',
                         'calc'=>[
                             'type'=>'average',
-                            'value'=>false
+                            'value'=>false,
                         ],
                         'options'=>[
                             [
@@ -1170,7 +1171,7 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1182,7 +1183,7 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1194,7 +1195,7 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1206,7 +1207,7 @@ return [
                                             'stage3' => 'Im Spitzenfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1218,9 +1219,9 @@ return [
                                             'stage3' => 'Im Spitzenfeld',
                                             'stage4' => 'Im Spitzenfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Vereinbarte Termine',
@@ -1238,7 +1239,7 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1250,7 +1251,7 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1262,7 +1263,7 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1274,7 +1275,7 @@ return [
                                             'stage3' => 'Im Spitzenfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1286,9 +1287,9 @@ return [
                                             'stage3' => 'Im Spitzenfeld',
                                             'stage4' => 'Im Spitzenfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Identitätsnachweis',
@@ -1306,7 +1307,7 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1318,7 +1319,7 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1330,7 +1331,7 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1342,7 +1343,7 @@ return [
                                             'stage3' => 'Im Spitzenfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1354,9 +1355,9 @@ return [
                                             'stage3' => 'Im Spitzenfeld',
                                             'stage4' => 'Im Spitzenfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Schleuse zum Eintreten/Austreten',
@@ -1374,7 +1375,7 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1386,7 +1387,7 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1398,7 +1399,7 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1410,7 +1411,7 @@ return [
                                             'stage3' => 'Im Spitzenfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1422,9 +1423,9 @@ return [
                                             'stage3' => 'Im Spitzenfeld',
                                             'stage4' => 'Im Spitzenfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Biometrische Authentifizierung',
@@ -1442,7 +1443,7 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1454,7 +1455,7 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1466,7 +1467,7 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1478,7 +1479,7 @@ return [
                                             'stage3' => 'Im Spitzenfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1490,9 +1491,9 @@ return [
                                             'stage3' => 'Im Spitzenfeld',
                                             'stage4' => 'Im Spitzenfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'CCTV-Überwachung',
@@ -1510,7 +1511,7 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1522,7 +1523,7 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1534,7 +1535,7 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1546,7 +1547,7 @@ return [
                                             'stage3' => 'Im Spitzenfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1558,9 +1559,9 @@ return [
                                             'stage3' => 'Im Spitzenfeld',
                                             'stage4' => 'Im Spitzenfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Begleit-Pflicht (Mitarbeiter und Besucher müssen paarweise arbeiten oder begleitet werden)',
@@ -1578,7 +1579,7 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1590,7 +1591,7 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1602,7 +1603,7 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1614,7 +1615,7 @@ return [
                                             'stage3' => 'Im Spitzenfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1626,9 +1627,9 @@ return [
                                             'stage3' => 'Im Spitzenfeld',
                                             'stage4' => 'Im Spitzenfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Änderungsberechtigung, Genehmigung und Protokollierung',
@@ -1646,7 +1647,7 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1658,7 +1659,7 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1670,7 +1671,7 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1682,7 +1683,7 @@ return [
                                             'stage3' => 'Im Spitzenfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1694,18 +1695,18 @@ return [
                                             'stage3' => 'Im Spitzenfeld',
                                             'stage4' => 'Im Spitzenfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
-                                    ]
-                                ]
-                            ]
-                        ]
-                    ]
+                                        ],
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
                 ]/*,
                 'report' => array(
                     'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
                     'image'=>'img/techfit_icons_Q-A1.png'
                 )*/,
-                'report' => false
+                'report' => false,
             ],
             'page2' => [
                 'title' => 'Cyber Risk Management Operations und Abwehr',
@@ -1725,7 +1726,7 @@ return [
                                     'stage3' => 'Im unteren Bereich',
                                     'stage4' => 'Im unteren Bereich',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Wir setzen sie intern auf informeller Basis um.',
@@ -1737,7 +1738,7 @@ return [
                                     'stage3' => 'Im unteren Bereich',
                                     'stage4' => 'Im unteren Bereich',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Wir setzen sie mithilfe unserer allgemeinen Fähigkeiten auf einer formellen Basis (mithilfe von Standards) um.',
@@ -1749,7 +1750,7 @@ return [
                                     'stage3' => 'Im Mittelfeld',
                                     'stage4' => 'Im unteren Bereich',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Wir setzen sie mithilfe von Experten auf einer formellen Basis (mithilfe von Standards) um.',
@@ -1761,7 +1762,7 @@ return [
                                     'stage3' => 'Im Spitzenfeld',
                                     'stage4' => 'Im Mittelfeld',
                                     'stage5' => 'Im Mittelfeld',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Wir verwenden einen externen Gutachter (mithilfe von Standards).',
@@ -1773,11 +1774,11 @@ return [
                                     'stage3' => 'Im Spitzenfeld',
                                     'stage4' => 'Im Spitzenfeld',
                                     'stage5' => 'Im Mittelfeld',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Cyber Risk Management Operations und Abwehr',
@@ -1788,7 +1789,7 @@ return [
                         'name'=>'q11',
                         'calc'=>[
                             'type'=>'average',
-                            'value'=>false
+                            'value'=>false,
                         ],
                         'options'=>[
                             [
@@ -1807,7 +1808,7 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1819,7 +1820,7 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1831,7 +1832,7 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1843,7 +1844,7 @@ return [
                                             'stage3' => 'Im Spitzenfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1855,9 +1856,9 @@ return [
                                             'stage3' => 'Im Spitzenfeld',
                                             'stage4' => 'Im Spitzenfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Bewertung der Fähigkeiten und Lücken',
@@ -1875,7 +1876,7 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1887,7 +1888,7 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1899,7 +1900,7 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1911,7 +1912,7 @@ return [
                                             'stage3' => 'Im Spitzenfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1923,9 +1924,9 @@ return [
                                             'stage3' => 'Im Spitzenfeld',
                                             'stage4' => 'Im Spitzenfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Umsetzungsplanung',
@@ -1943,7 +1944,7 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1955,7 +1956,7 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1967,7 +1968,7 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1979,7 +1980,7 @@ return [
                                             'stage3' => 'Im Spitzenfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1991,9 +1992,9 @@ return [
                                             'stage3' => 'Im Spitzenfeld',
                                             'stage4' => 'Im Spitzenfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Umsetzung der Ausführung',
@@ -2011,7 +2012,7 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -2023,7 +2024,7 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -2035,7 +2036,7 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -2047,7 +2048,7 @@ return [
                                             'stage3' => 'Im Spitzenfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -2059,9 +2060,9 @@ return [
                                             'stage3' => 'Im Spitzenfeld',
                                             'stage4' => 'Im Spitzenfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Kontinuierliche Verbesserung/Best Practice über die GDPR (über die Vorschriften) hinaus',
@@ -2079,7 +2080,7 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -2091,7 +2092,7 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -2103,7 +2104,7 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -2115,7 +2116,7 @@ return [
                                             'stage3' => 'Im Spitzenfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -2127,9 +2128,9 @@ return [
                                             'stage3' => 'Im Spitzenfeld',
                                             'stage4' => 'Im Spitzenfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Verständnis der Strafmilderung  basierend auf Früherkennung/Mängelbeseitigung',
@@ -2147,7 +2148,7 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -2159,7 +2160,7 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -2171,7 +2172,7 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -2183,7 +2184,7 @@ return [
                                             'stage3' => 'Im Spitzenfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -2195,18 +2196,18 @@ return [
                                             'stage3' => 'Im Spitzenfeld',
                                             'stage4' => 'Im Spitzenfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
-                        ]
-                    ]
+                        ],
+                    ],
                 ]/*,
                 'report' => array(
                     'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
                     'image'=>'img/techfit_icons_Q-A1.png'
                 )*/,
-                'report' => false
+                'report' => false,
             ],
             'page4' => [
                 'title' => 'Cyber Risk Management Operations und Abwehr',
@@ -2226,7 +2227,7 @@ return [
                                     'stage3' => 'Im unteren Bereich',
                                     'stage4' => 'Im unteren Bereich',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Wir kaufen hauptsächlich taktisch ein, wenn Probleme auftreten, aber wir haben auch einige strategische Einkäufe.',
@@ -2238,7 +2239,7 @@ return [
                                     'stage3' => 'Im unteren Bereich',
                                     'stage4' => 'Im unteren Bereich',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Wir haben ein ausgewogenes Verhältnis von taktischem und strategischem Einkauf.',
@@ -2250,7 +2251,7 @@ return [
                                     'stage3' => 'Im Mittelfeld',
                                     'stage4' => 'Im unteren Bereich',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Wir kaufen vor allem strategisch, kaufen aber taktisch, wenn wir ein Problem haben.',
@@ -2262,7 +2263,7 @@ return [
                                     'stage3' => 'Im Spitzenfeld',
                                     'stage4' => 'Im Mittelfeld',
                                     'stage5' => 'Im Mittelfeld',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Wir neigen dazu, ausschließlich strategisch zu kaufen.',
@@ -2274,11 +2275,11 @@ return [
                                     'stage3' => 'Im Spitzenfeld',
                                     'stage4' => 'Im Spitzenfeld',
                                     'stage5' => 'Im Mittelfeld',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page5' => [
                 'title' => 'Cyber Risk Management Operations und Abwehr',
@@ -2298,7 +2299,7 @@ return [
                                     'stage3' => 'Im unteren Bereich',
                                     'stage4' => 'Im unteren Bereich',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Ad-hoc, wenn erforderlich',
@@ -2310,7 +2311,7 @@ return [
                                     'stage3' => 'Im unteren Bereich',
                                     'stage4' => 'Im unteren Bereich',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Jährlich',
@@ -2322,7 +2323,7 @@ return [
                                     'stage3' => 'Im Mittelfeld',
                                     'stage4' => 'Im unteren Bereich',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Vierteljährlich',
@@ -2334,7 +2335,7 @@ return [
                                     'stage3' => 'Im Mittelfeld',
                                     'stage4' => 'Im Mittelfeld',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Monatlich',
@@ -2346,7 +2347,7 @@ return [
                                     'stage3' => 'Im Spitzenfeld',
                                     'stage4' => 'Im Mittelfeld',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Wöchentlich',
@@ -2358,7 +2359,7 @@ return [
                                     'stage3' => 'Im Spitzenfeld',
                                     'stage4' => 'Im Spitzenfeld',
                                     'stage5' => 'Im Mittelfeld',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Täglich',
@@ -2370,7 +2371,7 @@ return [
                                     'stage3' => 'Im Spitzenfeld',
                                     'stage4' => 'Im Spitzenfeld',
                                     'stage5' => 'Im Mittelfeld',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Stündlich',
@@ -2382,7 +2383,7 @@ return [
                                     'stage3' => 'Im Spitzenfeld',
                                     'stage4' => 'Im Spitzenfeld',
                                     'stage5' => 'Im Mittelfeld',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Fortlaufend',
@@ -2394,11 +2395,11 @@ return [
                                     'stage3' => 'Im Spitzenfeld',
                                     'stage4' => 'Im Spitzenfeld',
                                     'stage5' => 'Im Spitzenfeld',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page6' => [
                 'title' => 'Cyber Risk Management Operations und Abwehr',
@@ -2418,7 +2419,7 @@ return [
                                     'stage3' => 'Im unteren Bereich',
                                     'stage4' => 'Im unteren Bereich',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Wir verwenden hauptsächlich &quot;serienmäßige&quot; Programme von unseren Sicherheitslieferanten.',
@@ -2430,7 +2431,7 @@ return [
                                     'stage3' => 'Im unteren Bereich',
                                     'stage4' => 'Im unteren Bereich',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Wir verwenden eine Kombination von spezialisierten Management-Programmen und einigen &quot;serienmäßigen&quot; Programmen.',
@@ -2442,7 +2443,7 @@ return [
                                     'stage3' => 'Im Mittelfeld',
                                     'stage4' => 'Im unteren Bereich',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Wir verwenden hauptsächlich spezialisierte Sicherheitsmanagement-Programme.',
@@ -2454,7 +2455,7 @@ return [
                                     'stage3' => 'Im Mittelfeld',
                                     'stage4' => 'Im Mittelfeld',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Wir verwenden eine End-to-End-Sicherheitsmanagement-Suite.',
@@ -2466,7 +2467,7 @@ return [
                                     'stage3' => 'Im Spitzenfeld',
                                     'stage4' => 'Im Spitzenfeld',
                                     'stage5' => 'Im Mittelfeld',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Wir verwenden einen zertifizierten Partner, der uns bei der Verwaltung unserer IT-Sicherheitsinfrastruktur hilft.',
@@ -2478,11 +2479,11 @@ return [
                                     'stage3' => 'Im Spitzenfeld',
                                     'stage4' => 'Im Spitzenfeld',
                                     'stage5' => 'Im Mittelfeld',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page7' => [
                 'title' => 'Cyber Risk Management Operations und Abwehr',
@@ -2502,7 +2503,7 @@ return [
                                     'stage3' => 'Im unteren Bereich',
                                     'stage4' => 'Im unteren Bereich',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Hauptsächlich manuelle Prozesse mit einem geringen Ausmaß an Automatisierung',
@@ -2514,7 +2515,7 @@ return [
                                     'stage3' => 'Im unteren Bereich',
                                     'stage4' => 'Im unteren Bereich',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Ein gutes Gleichgewicht von Automatisierung und manuellen Prozessen',
@@ -2526,7 +2527,7 @@ return [
                                     'stage3' => 'Im Mittelfeld',
                                     'stage4' => 'Im Mittelfeld',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Vor allem Automatisierung mit einem geringen Anteil an manuellen Prozessen',
@@ -2538,7 +2539,7 @@ return [
                                     'stage3' => 'Im Spitzenfeld',
                                     'stage4' => 'Im Spitzenfeld',
                                     'stage5' => 'Im Mittelfeld',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Ausschließlich Automatisierung',
@@ -2550,11 +2551,11 @@ return [
                                     'stage3' => 'Im Spitzenfeld',
                                     'stage4' => 'Im Spitzenfeld',
                                     'stage5' => 'Im Mittelfeld',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page8' => [
                 'title' => 'Cyber Risk Management Operations und Abwehr',
@@ -2574,7 +2575,7 @@ return [
                                     'stage3' => 'Im unteren Bereich',
                                     'stage4' => 'Im unteren Bereich',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Sie etwas verringern',
@@ -2586,7 +2587,7 @@ return [
                                     'stage3' => 'Im unteren Bereich',
                                     'stage4' => 'Im unteren Bereich',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Sie soll gleich bleiben',
@@ -2598,7 +2599,7 @@ return [
                                     'stage3' => 'Im Mittelfeld',
                                     'stage4' => 'Im Mittelfeld',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Sie etwas erhöhen',
@@ -2610,7 +2611,7 @@ return [
                                     'stage3' => 'Im Spitzenfeld',
                                     'stage4' => 'Im Spitzenfeld',
                                     'stage5' => 'Im Mittelfeld',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Sie stark erhöhen',
@@ -2622,11 +2623,11 @@ return [
                                     'stage3' => 'Im Spitzenfeld',
                                     'stage4' => 'Im Spitzenfeld',
                                     'stage5' => 'Im Spitzenfeld',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page9' => [
                 'title' => 'Cyber Risk Management Operations und Abwehr',
@@ -2637,7 +2638,7 @@ return [
                         'name'=>'q17',
                         'calc'=>[
                             'type'=>'normalize',
-                            'value'=>5
+                            'value'=>5,
                         ],
                         'options'=>[
                             [
@@ -2654,7 +2655,7 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nein',
@@ -2666,9 +2667,9 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'IPS/IDS (Einbruchmeldung/Schutz)',
@@ -2684,7 +2685,7 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nein',
@@ -2696,9 +2697,9 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Schwachstellen-Management',
@@ -2714,7 +2715,7 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nein',
@@ -2726,9 +2727,9 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Micro-Segmentierung (feinkörnige Trennung und Isolierung des Traffics zwischen angegebenen Hosts oder Domains)',
@@ -2744,7 +2745,7 @@ return [
                                             'stage3' => 'Im Spitzenfeld',
                                             'stage4' => 'Im Spitzenfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nein',
@@ -2756,9 +2757,9 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Einheitliches Sicherheitsmanagement (Daten- und Informationsaustausch zwischen den Geräten und Programmen),',
@@ -2774,7 +2775,7 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nein',
@@ -2786,9 +2787,9 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Professionelle Security Services Dritter  (MSS) (Pre-Sales/Design/Umsetzung)',
@@ -2804,7 +2805,7 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nein',
@@ -2816,13 +2817,13 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
-                        ]
+                        ],
                     ],
-                ]
+                ],
             ],
             'page10' => [
                 'title' => 'Cyber Risk Management Operations und Abwehr',
@@ -2842,7 +2843,7 @@ return [
                                     'stage3' => 'Im unteren Bereich',
                                     'stage4' => 'Im unteren Bereich',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Wir nutzen es in einer begrenzt, bevorzugen aber die Dinge intern zu erledigen.',
@@ -2854,7 +2855,7 @@ return [
                                     'stage3' => 'Im unteren Bereich',
                                     'stage4' => 'Im unteren Bereich',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Wir nutzen es in ausgewogener Art und Weise.',
@@ -2866,7 +2867,7 @@ return [
                                     'stage3' => 'Im Mittelfeld',
                                     'stage4' => 'Im Mittelfeld',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Wir bevorzugen es, das Angebot zu nutzen, statt die Dinge intern zu erledigen.',
@@ -2878,7 +2879,7 @@ return [
                                     'stage3' => 'Im Spitzenfeld',
                                     'stage4' => 'Im Mittelfeld',
                                     'stage5' => 'Im Mittelfeld',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Wir nutzen es umfassend, wann immer möglich.',
@@ -2890,13 +2891,13 @@ return [
                                     'stage3' => 'Im Spitzenfeld',
                                     'stage4' => 'Im Spitzenfeld',
                                     'stage5' => 'Im Mittelfeld',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
     ],
     'cyber-risk-management-breach-detection-and-remediation' => [
         'title' => 'Cyber Risk Management Breach Detection und Beseitigung',
@@ -2926,7 +2927,7 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nein',
@@ -2938,9 +2939,9 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Echtzeit-Analysen',
@@ -2956,7 +2957,7 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nein',
@@ -2968,9 +2969,9 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Erweiterter Bedrohungsschutz/Sandboxing',
@@ -2986,7 +2987,7 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nein',
@@ -2998,9 +2999,9 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'AI/Heuristik',
@@ -3016,7 +3017,7 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nein',
@@ -3028,9 +3029,9 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Malware Scanning',
@@ -3046,7 +3047,7 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nein',
@@ -3058,11 +3059,11 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
-                        ]
+                        ],
                     ],
                 ]
                 /*,
@@ -3070,7 +3071,7 @@ return [
                     'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
                     'image'=>'img/techfit_icons_Q-A1.png'
                 )*/,
-                'report' => false
+                'report' => false,
             ],
             'page2' => [
                 'title' => 'Cyber Risk Management Breach Detection und Beseitigung',
@@ -3094,7 +3095,7 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nein',
@@ -3106,9 +3107,9 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Forensische Protokollierung und Analyse',
@@ -3124,7 +3125,7 @@ return [
                                             'stage3' => 'Im Spitzenfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nein',
@@ -3136,9 +3137,9 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Failover/Systemwiederherstellung',
@@ -3154,7 +3155,7 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nein',
@@ -3166,9 +3167,9 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Tiger/Go-Teams',
@@ -3184,7 +3185,7 @@ return [
                                             'stage3' => 'Im Spitzenfeld',
                                             'stage4' => 'Im Spitzenfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nein',
@@ -3196,9 +3197,9 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Externe Incident Response Partner',
@@ -3214,7 +3215,7 @@ return [
                                             'stage3' => 'Im Spitzenfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nein',
@@ -3226,11 +3227,11 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
-                        ]
+                        ],
                     ],
                 ]
                 /*,
@@ -3238,7 +3239,7 @@ return [
                     'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
                     'image'=>'img/techfit_icons_Q-A1.png'
                 )*/,
-                'report' => false
+                'report' => false,
             ],
             'page3' => [
                 'title' => 'Cyber Risk Management Breach Detection und Beseitigung',
@@ -3262,7 +3263,7 @@ return [
                                             'stage3' => 'Im Spitzenfeld',
                                             'stage4' => 'Im Spitzenfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nein',
@@ -3274,9 +3275,9 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Richtlinienaktualisierungen',
@@ -3292,7 +3293,7 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nein',
@@ -3304,9 +3305,9 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Richtlinienaktualisierungen',
@@ -3322,7 +3323,7 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nein',
@@ -3334,9 +3335,9 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Externe Anbieter für Wiederherstellung nach Absturz',
@@ -3352,7 +3353,7 @@ return [
                                             'stage3' => 'Im Spitzenfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nein',
@@ -3364,9 +3365,9 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Gefährdungsbewertung',
@@ -3382,7 +3383,7 @@ return [
                                             'stage3' => 'Im Spitzenfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nein',
@@ -3394,19 +3395,19 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
-                        ]
-                    ]
+                        ],
+                    ],
                 ]
                 /*,
                 'report' => array(
                     'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
                     'image'=>'img/techfit_icons_Q-A1.png'
                 )*/,
-                'report' => false
+                'report' => false,
             ],
             'page4' => [
                 'title' => 'Cyber Risk Management Breach Detection und Beseitigung',
@@ -3430,7 +3431,7 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nein',
@@ -3442,9 +3443,9 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Verstehen des möglichen Ausmaßes des Schadenumfangs',
@@ -3460,7 +3461,7 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nein',
@@ -3472,9 +3473,9 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Eine Bewertung kritischer Daten',
@@ -3490,7 +3491,7 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nein',
@@ -3502,9 +3503,9 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Verstehen der Reaktion der Lieferanten oder Partner',
@@ -3520,7 +3521,7 @@ return [
                                             'stage3' => 'Im Spitzenfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nein',
@@ -3532,9 +3533,9 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Entwicklung eines Reaktionsplans für Sicherheitsverletzung',
@@ -3550,7 +3551,7 @@ return [
                                             'stage3' => 'Im Mittelfeld',
                                             'stage4' => 'Im Mittelfeld',
                                             'stage5' => 'Im Mittelfeld',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nein',
@@ -3562,19 +3563,19 @@ return [
                                             'stage3' => 'Im unteren Bereich',
                                             'stage4' => 'Im unteren Bereich',
                                             'stage5' => 'Im unteren Bereich',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
-                        ]
-                    ]
+                        ],
+                    ],
                 ]
                 /*,
                 'report' => array(
                     'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
                     'image'=>'img/techfit_icons_Q-A1.png'
                 )*/,
-                'report' => false
+                'report' => false,
             ],
             'page5' => [
                 'title' => 'Cyber Risk Management Breach Detection und Beseitigung',
@@ -3594,7 +3595,7 @@ return [
                                     'stage3' => 'Im unteren Bereich',
                                     'stage4' => 'Im unteren Bereich',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Alle paar Jahre',
@@ -3606,7 +3607,7 @@ return [
                                     'stage3' => 'Im unteren Bereich',
                                     'stage4' => 'Im unteren Bereich',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Jährlich',
@@ -3618,7 +3619,7 @@ return [
                                     'stage3' => 'Im unteren Bereich',
                                     'stage4' => 'Im unteren Bereich',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Alle 6 Monate',
@@ -3630,7 +3631,7 @@ return [
                                     'stage3' => 'Im Mittelfeld',
                                     'stage4' => 'Im unteren Bereich',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Jedes Quartal',
@@ -3642,7 +3643,7 @@ return [
                                     'stage3' => 'Im Spitzenfeld',
                                     'stage4' => 'Im Mittelfeld',
                                     'stage5' => 'Im Mittelfeld',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Monatlich',
@@ -3654,7 +3655,7 @@ return [
                                     'stage3' => 'Im Spitzenfeld',
                                     'stage4' => 'Im Spitzenfeld',
                                     'stage5' => 'Im Mittelfeld',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Wöchentlich',
@@ -3666,7 +3667,7 @@ return [
                                     'stage3' => 'Im Spitzenfeld',
                                     'stage4' => 'Im Spitzenfeld',
                                     'stage5' => 'Im Mittelfeld',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Fortlaufend',
@@ -3678,11 +3679,11 @@ return [
                                     'stage3' => 'Im Spitzenfeld',
                                     'stage4' => 'Im Spitzenfeld',
                                     'stage5' => 'Im Spitzenfeld',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page6' => [
                 'title' => 'Cyber Risk Management Breach Detection und Beseitigung',
@@ -3702,7 +3703,7 @@ return [
                                     'stage3' => 'Im unteren Bereich',
                                     'stage4' => 'Im unteren Bereich',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Alle paar Jahre',
@@ -3714,7 +3715,7 @@ return [
                                     'stage3' => 'Im unteren Bereich',
                                     'stage4' => 'Im unteren Bereich',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Jährlich',
@@ -3726,7 +3727,7 @@ return [
                                     'stage3' => 'Im unteren Bereich',
                                     'stage4' => 'Im unteren Bereich',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Alle 6 Monate',
@@ -3738,7 +3739,7 @@ return [
                                     'stage3' => 'Im Mittelfeld',
                                     'stage4' => 'Im unteren Bereich',
                                     'stage5' => 'Im unteren Bereich',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Jedes Quartal',
@@ -3750,7 +3751,7 @@ return [
                                     'stage3' => 'Im Spitzenfeld',
                                     'stage4' => 'Im Mittelfeld',
                                     'stage5' => 'Im Mittelfeld',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Monatlich',
@@ -3762,7 +3763,7 @@ return [
                                     'stage3' => 'Im Spitzenfeld',
                                     'stage4' => 'Im Spitzenfeld',
                                     'stage5' => 'Im Mittelfeld',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Wöchentlich',
@@ -3774,7 +3775,7 @@ return [
                                     'stage3' => 'Im Spitzenfeld',
                                     'stage4' => 'Im Spitzenfeld',
                                     'stage5' => 'Im Mittelfeld',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Fortlaufend',
@@ -3786,12 +3787,12 @@ return [
                                     'stage3' => 'Im Spitzenfeld',
                                     'stage4' => 'Im Spitzenfeld',
                                     'stage5' => 'Im Spitzenfeld',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
-        ]
-    ]
+        ],
+    ],
 ];

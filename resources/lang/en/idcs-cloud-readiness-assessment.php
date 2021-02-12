@@ -1,6 +1,7 @@
 <?php
+
 //Redhat
-return array(
+return [
     'title' => 'IDC\'s Cloud Readiness Assessment',
     'sub-title' => 'Advancing your maturity',
     'stage1' => 'Stage 1: Passive',
@@ -12,7 +13,7 @@ return array(
     'complete_body' => 'Your custom report will arrive in your inbox soon.<br/>
 Please check in your junk folder if you don\'t receive it within 5 minutes.<br/>
 While you\'re waiting why not share your results and see how your followers measure up?',
-    'complete_tweet' => 'I\'ve just taken the @IDCEMEA Cloud Readiness Assessment Tool for @RedHatNews. Interested in your own readiness? http://bit.ly/2gslXEh',// http://bit.ly/2gslXEh
+    'complete_tweet' => 'I\'ve just taken the @IDCEMEA Cloud Readiness Assessment Tool for @RedHatNews. Interested in your own readiness? http://bit.ly/2gslXEh', // http://bit.ly/2gslXEh
     'email'=>[
         'subject' => 'IDC Cloud Readiness Assessment',
         'hi' => 'Hi :Fname',
@@ -20,7 +21,7 @@ While you\'re waiting why not share your results and see how your followers meas
         'link' => 'Download Report',
         'extra' => 'Once you\'ve digested the report why not visit <a href="http://www.redhat.com" style="color:#024886">Red Hat</a>',
         'regards' => 'Regards',
-        'team' => 'The IDC Team'
+        'team' => 'The IDC Team',
     ],
     'introduction' => '
         <p>
@@ -37,7 +38,7 @@ While you\'re waiting why not share your results and see how your followers meas
         </p>
     ',
     'introduction-image' => 'report1.jpg',
-    'overall' => array(
+    'overall' => [
         'title'=>'Your Overall Cloud Readiness Assessment is at',
         'hidetitle'=>'true',
         'image'=>'',
@@ -95,9 +96,9 @@ While you\'re waiting why not share your results and see how your followers meas
             <p>
                 Service providers are in a position to offer any form of cloud architecture to customers and must ensure that the expertise and intellectual property generated in this process is maximized in full. As a result, service providers in this category are already moving at full speed. Now, they must look to maximize their leadership position and drive long-term profitability.
             </p>
-        '
-    ),
-    'cloud-vision-and-strategy' => array(
+        ',
+    ],
+    'cloud-vision-and-strategy' => [
         'title'=>'Cloud Vision and Strategy',
         'image'=>'cloud-vision-and-strategy.jpg',
         'pb'=>'pb',
@@ -191,9 +192,9 @@ While you\'re waiting why not share your results and see how your followers meas
             <p>
                 At this stage of maturity, your competition will be fierce, as well as sophisticated. It is now critical to differentiate through solutions that provide business value to your clients by directly addressing and solving business issues. This solution-driven culture should be embedded across all business units — sales, marketing, operations, and technical, with the resources to support this it.
             </p>
-        '
-    ),
-    'processes-and-skill-sets' => array(
+        ',
+    ],
+    'processes-and-skill-sets' => [
         'title'=> 'Processes and Skill-Sets',
         'image'=>'processes-and-skill-sets.jpg',
         'pb'=>'pb',
@@ -288,9 +289,9 @@ While you\'re waiting why not share your results and see how your followers meas
             <p>
                 Automation should be applied to all business functions, enabling your organization to monitor usage, optimize customer utilization and cloud service delivery, and streamline and maximize sales processes. At this stage, you should be building capabilities to support broader digital transformation objectives. This includes areas such as digital, integration, and business process. Building deeper specialization with strategic vendors is also recommended as you look to differentiate through innovative solutions.
             </p>
-        '
-    ),
-    'business-mix' => array(
+        ',
+    ],
+    'business-mix' => [
         'title'=> 'Business Mix',
         'image'=>'business-mix.jpg',
         'pb'=>'pb',
@@ -401,9 +402,9 @@ While you\'re waiting why not share your results and see how your followers meas
             <p>
                 3rd Platform digital technologies (including mobile, cloud, Big Data analytics, and social) and associated services should also be investigated and wrapped into your offerings. This includes incorporating Innovation Accelerators such as artificial intelligence, cognitive computing, and robotics. Further actions include developing your current routes to market and scaling your existing business models. Also consider licensing solutions to other partners and expanding alternative channels.
             </p>
-        '
-    ),
-    'sales-and-marketing' => array(
+        ',
+    ],
+    'sales-and-marketing' => [
         'title'=> 'Sales and Marketing',
         'image'=>'',
         'pb'=>'pb',
@@ -518,6 +519,6 @@ While you\'re waiting why not share your results and see how your followers meas
             <p>
                 You must also continue to drive alignment between sales and marketing capability. Marketing should function as an extended sales arm, and should have the same access to training. This will ensure messaging is consistent. Equally, the sales maturity of your organization needs to leverage a combination of digital, social, and content-driven approaches. This includes customer analytics and the targeting of individuals with specific messaging. Tight alignment between marketing and sales is critical in the digital age and will be a key differentiator in a competitive marketplace.
             </p>
-        '
-    )
-);
+        ',
+    ],
+];

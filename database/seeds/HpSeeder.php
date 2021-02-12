@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Database\Seeder;
 use Carbon\Carbon;
+use Illuminate\Database\Seeder;
 
 class HpSeeder extends Seeder
 {
@@ -36,11 +36,11 @@ class HpSeeder extends Seeder
         ]);
         DB::table('language_tool')->insert([ //english HPGDPR
             'tool_id' => 4,
-            'language_id' => 1
+            'language_id' => 1,
         ]);
         DB::table('tool_user')->insert([
             'tool_id' => 4,
-            'user_id' => 1 //roark
+            'user_id' => 1, //roark
         ]);
     }
 }

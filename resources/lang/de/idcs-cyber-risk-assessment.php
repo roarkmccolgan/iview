@@ -1,6 +1,7 @@
 <?php
+
 //fireeye
-return array(
+return [
     'stage1' => 'Ad-hoc',
     'stage2' => 'Opportunistic',
     'stage3' => 'Repeatable',
@@ -66,11 +67,11 @@ Falls Sie in allen Bereichen entweder im Mittel- oder im Spitzenfeld liegen, wer
                 Wir können Ihnen den vollständigen Bericht direkt zusenden.<br/>
                 Geben Sie einfach Ihren Namen und Ihre E-Mail-Adresse an und wir senden Ihnen einen Link zum Herunterladen des Berichts.
             </p>
-        '
+        ',
     ],
     'complete_thankyou' => 'Vielen Dank :Fname,',
     'complete_body' => 'Ihr individueller Bericht ist schon bald in Ihrem Postfach. Warum twittern Sie Ihre Ergebnisse nicht in der Zwischenzeit, um herauszufinden, wie gut Sie im Vergleich zu Ihren Followern abschneiden?',
-    'complete_tweet' => 'Ich habe gerade das @IDCUKI Cyber Risk Readiness Assessment gesponsert von @fireeye durchgeführt, wir sind auf Repeatable. Interessiert?',// http://bit.ly/2g8WN1d
+    'complete_tweet' => 'Ich habe gerade das @IDCUKI Cyber Risk Readiness Assessment gesponsert von @fireeye durchgeführt, wir sind auf Repeatable. Interessiert?', // http://bit.ly/2g8WN1d
     'email'=>[
         'subject' => 'IDC Report',
         'hi' => 'Hallo :Fname',
@@ -81,12 +82,12 @@ Falls Sie in allen Bereichen entweder im Mittel- oder im Spitzenfeld liegen, wer
         'link' => 'Bericht herunterladen',
         'extra' => 'Besuchen Sie uns auf <a href="http://www.fireeye.com" style="color:#E66B6B">FireEye</a> um mehr zum Thema Cyber-Risiko zu erfahren',
         'regards' => 'Regards',
-        'team' => 'The IDC Team'
+        'team' => 'The IDC Team',
     ],
     'introduction_title' => 'Zusammenfassung des Kundenreports und allgemeines Performance Ranking',
     'introduction' => '',
     'introduction-image' => 'report.jpg',
-    'overall' => array(
+    'overall' => [
         'title'=>'Ihre allgemeine Security Readiness',
         'graph-title'=>'Wie Sie allgemein abschneiden/Ihr Ergebnis',
         'image'=>'',
@@ -131,9 +132,9 @@ Falls Sie in allen Bereichen entweder im Mittel- oder im Spitzenfeld liegen, wer
             <p>
                 Sie schneiden deutlich besser ab als die Mehrheit und gehören zu den besten 5 % der Unternehmen, was die Widerstandsfähigkeit gegenüber Cyber-Risiken betrifft. Sie gehören zwar zu den Besten, doch die Arbeit hört nie auf. Sie können immer noch Verbesserungen in verschiedenen Bereichen vornehmen, um die Wahrscheinlichkeit einer Datenverletzung zu mindern.
             </p>
-        '
-    ),
-    'cyber-risk-management-and-the-business' => array(
+        ',
+    ],
+    'cyber-risk-management-and-the-business' => [
         'title'=>'Cyber Risk Management und das Business',
         'image'=>'cloud-vision-and-strategy.jpg',
         'pb'=>'pb',
@@ -166,9 +167,9 @@ Falls Sie in allen Bereichen entweder im Mittel- oder im Spitzenfeld liegen, wer
             <p>
                 Hervorragende Leistung! In diesem Bereich des Cyber-Risikomanagements liegen Sie im Spitzenfeld, sollten jedoch trotzdem evaluieren, wie Sie Ihre Spitzenposition beibehalten können.
             </p>
-        '
-    ),
-    'cyber-risk-management-operations-and-defence' => array(
+        ',
+    ],
+    'cyber-risk-management-operations-and-defence' => [
         'title'=> 'Cyber Risk Management Operations und Abwehr',
         'image'=>'processes-and-skill-sets.jpg',
         'pb'=>'pb',
@@ -201,9 +202,9 @@ Falls Sie in allen Bereichen entweder im Mittel- oder im Spitzenfeld liegen, wer
             <p>
                 Spitzenreiter! In diesem Bereich des Cyber-Risikomanagements liegen Sie im Spitzenfeld. Sie können im Laufe der Zeit jedoch immer wieder Verbesserungen vornehmen, wenn neue Ansätze aufkommen.
             </p>
-        '
-    ),
-    'cyber-risk-management-breach-detection-and-remediation' => array(
+        ',
+    ],
+    'cyber-risk-management-breach-detection-and-remediation' => [
         'title'=> 'Cyber Risk Management Breach Detection und Beseitigung',
         'image'=>'business-mix.jpg',
         'pb'=>'pb',
@@ -236,8 +237,8 @@ Falls Sie in allen Bereichen entweder im Mittel- oder im Spitzenfeld liegen, wer
             <p>
                 Tolle Leistung! Beim Management von Cyber-Risiken in Zusammenarbeit mit dem operativen Geschäft liegen Sie im Spitzenfeld. In diesem Bereich des Cyber-Risikomanagements schneiden Sie sehr gut ab. Sie sollten sich jedoch nicht darauf ausruhen und Ihre Vorgehensweise kontinuierlich überprüfen.
             </p>
-        '
-    ),
+        ',
+    ],
     'questions' => [
         'q1'=>[
             'behind' => '
@@ -254,7 +255,7 @@ Falls Sie in allen Bereichen entweder im Mittel- oder im Spitzenfeld liegen, wer
                 <p>
                     Beachten Sie, dass sich Technologien und Funktionen ständig weiterentwickeln und Sie regelmäßig neu bewerten sollten, was wie zu tun ist.
                 </p>
-            '
+            ',
         ],
         'q2'=>[
             'behind' => '
@@ -271,7 +272,7 @@ Falls Sie in allen Bereichen entweder im Mittel- oder im Spitzenfeld liegen, wer
                 <p>
                     Bei der Verbesserung des Cyber-Risikomanagements können Sie sich auf andere Bereiche konzentrieren, aber Sie sollten trotzdem weiterhin fortschrittliche Methoden für Richtlinien, Management, Automatisierung und Orchestrierung anwenden und optimieren.
                 </p>
-            '
+            ',
         ],
         'q3'=>[
             'behind' => '
@@ -288,7 +289,7 @@ Falls Sie in allen Bereichen entweder im Mittel- oder im Spitzenfeld liegen, wer
                 <p>
                     Um ein wirklich führendes Unternehmen zu sein, müssen Sie ständig Grenzen erweitern.  Finden Sie heraus, wo Kompromisse möglich sind, um neue Entwicklungschancen zu erkennen. Denken Sie dabei aber immer an die essentiellen Werte Ihres Unternehmens, die um jeden Preis vor Angriffen geschützt werden müssen. 
                 </p>
-            '
+            ',
         ],
         'q4'=>[
             'behind' => '
@@ -305,7 +306,7 @@ Falls Sie in allen Bereichen entweder im Mittel- oder im Spitzenfeld liegen, wer
                 <p>
                     Beim Management des Risikos für Sicherheitsverletzungen gehen Sie zukunftsorientiert vor und planen Ihre Maßnahmen für den Fall eines Sicherheitsverstoßes. Als nächsten Schritt sollten Sie jedoch darüber nachdenken, wie Sie die Cyber-Risikoabsicherung nicht nur zur Senkung der potenziellen Kosten eines Sicherheitsverstoßes einsetzen können, sondern auch als treibenden Faktor für Exzellenz. So wird sie zum potenziellen Wettbewerbsvorteil beim Umgang mit Kundendaten.
                 </p>
-            '
+            ',
         ],
         'q5'=>[
             'behind' => '
@@ -322,7 +323,7 @@ Falls Sie in allen Bereichen entweder im Mittel- oder im Spitzenfeld liegen, wer
                 <p>
                     Überlegen Sie, wie das Cyber-Risikomanagement in die Entwicklung neuer Geschäftsprioritäten miteinbezogen werden kann, damit sichergestellt ist, dass Cyber-Risiken proaktiv identifiziert und gesteuert und gleichzeitig geschäftliche Ziele unterstützt werden.
                 </p>
-            '
+            ',
         ],
         'q6'=>[
             'behind' => '
@@ -339,7 +340,7 @@ Falls Sie in allen Bereichen entweder im Mittel- oder im Spitzenfeld liegen, wer
                 <p>
                     Um dieses Framework auf die nächste Stufe zu heben, überlegen Sie, wie Spezialisten aus den Bereichen Risiko, Compliance und Sicherheit sowohl auf der obersten Führungsebene als auch darunter einen positiven Beitrag zu diesem Prozess leisten können. Setzen Sie Dritte effektiv ein, um Best Practices zu beurteilen.
                 </p>
-            '
+            ',
         ],
         'q7'=>[
             'behind' => '
@@ -356,7 +357,7 @@ Falls Sie in allen Bereichen entweder im Mittel- oder im Spitzenfeld liegen, wer
                 <p>
                     Überlegen Sie, wie Sicherheitsbeauftragte eine führende Rolle bei der Planung neuer Initiativen übernehmen können. Sorgen Sie außerdem dafür, dass Sicherheit während der gesamten Entwicklungs-, Test- und Umsetzungsphase von Projekten und im anhaltenden „Alltagsgeschäft“ eine Hauptpriorität bleibt.
                 </p>
-            '
+            ',
         ],
         'q8'=>[
             'behind' => '
@@ -373,7 +374,7 @@ Falls Sie in allen Bereichen entweder im Mittel- oder im Spitzenfeld liegen, wer
                 <p>
                     Um weitere Verbesserungen zu erzielen, sollten Sie Sicherheitsinvestitionen als Grundvoraussetzung ansehen, die es Unternehmen ermöglicht, Geschäftsziele zu erreichen und sowohl die Erträge als auch die Rentabilität zu erhöhen.
                 </p>
-            '
+            ',
         ],
         'q9'=>[
             'behind' => '
@@ -390,7 +391,7 @@ Falls Sie in allen Bereichen entweder im Mittel- oder im Spitzenfeld liegen, wer
                 <p>
                     Um die nächste Stufe zu erreichen, überlegen Sie, wie Sie die Überschneidungen zwischen IT- und physischer Sicherheit durch den Einsatz biometrischer Authentifizierungsmethoden maximieren können.
                 </p>
-            '
+            ',
         ],
         'q10'=>[
             'behind' => '
@@ -407,7 +408,7 @@ Falls Sie in allen Bereichen entweder im Mittel- oder im Spitzenfeld liegen, wer
                 <p>
                     Überlegen Sie, wie Ihre Organisation nicht nur ein Spitzenreiter beim Management von Best Practices werden kann, sondern auch ein selbstständiger Vordenker für die gesamte Branche. Sie können sich damit sogar einen Wettbewerbsvorteil gegenüber vergleichbaren Unternehmen verschaffen.
                 </p>
-            '
+            ',
         ],
         'q11'=>[
             'behind' => '
@@ -424,7 +425,7 @@ Falls Sie in allen Bereichen entweder im Mittel- oder im Spitzenfeld liegen, wer
                 <p>
                     Um weitere Verbesserungen anzustreben, müssen Sie deutlich machen, wie Sie modernste Technologien nutzen und anhand von risikobasierten Ansätzen für die Entscheidungsfindung heranziehen. Das verringert nicht nur das Potenzial für Strafen nach der Datenschutz-Grundverordnung sondern könnte auch zu einem Wettbewerbsvorteil führen.
                 </p>
-            '
+            ',
         ],
         'q12'=>[
             'behind' => '
@@ -441,7 +442,7 @@ Falls Sie in allen Bereichen entweder im Mittel- oder im Spitzenfeld liegen, wer
                 <p>
                     Überlegen Sie wie kontinuierliche Berichterstattung über eine einfache Übersicht hinaus und dank integrierter operativer Kenntnisse als treibender Faktor für die geschäftliche Entscheidungsfindung genutzt werden kann, um weitere Verbesserungen zu erzielen.
                 </p>
-            '
+            ',
         ],
         'q13'=>[
             'behind' => '
@@ -458,7 +459,7 @@ Falls Sie in allen Bereichen entweder im Mittel- oder im Spitzenfeld liegen, wer
                 <p>
                     Überlegen Sie wie kontinuierliche Berichterstattung über eine einfache Übersicht hinaus und dank integrierter operativer Kenntnisse als treibender Faktor für die geschäftliche Entscheidungsfindung genutzt werden kann, um weitere Verbesserungen zu erzielen.
                 </p>
-            '
+            ',
         ],
         'q14'=>[
             'behind' => '
@@ -475,7 +476,7 @@ Falls Sie in allen Bereichen entweder im Mittel- oder im Spitzenfeld liegen, wer
                 <p>
                     Um weitere Fortschritte beim Cyber-Risikomanagement zu erzielen, müssen Sie überlegen, wie weitere Elemente automatisiert und innerhalb der End-to-End-Management-Suite integriert werden können, sodass die Entwicklung einer agileren IT-Abteilung gefördert wird.
                 </p>
-            '
+            ',
         ],
         'q15'=>[
             'behind' => '
@@ -492,7 +493,7 @@ Falls Sie in allen Bereichen entweder im Mittel- oder im Spitzenfeld liegen, wer
                 <p>
                     Um wirklich ein Spitzenreiter zu werden, sollten Sie überlegen, welche Schritte ergriffen werden können, um Prozesse wo möglich durchgängig zu automatisieren und zu orchestrieren und das Cyber-Risikomanagement durch Agilität, Qualität und Compliance voranzutreiben.
                 </p>
-            '
+            ',
         ],
         'q16'=>[
             'behind' => '
@@ -509,7 +510,7 @@ Falls Sie in allen Bereichen entweder im Mittel- oder im Spitzenfeld liegen, wer
                 <p>
                     Konzentrieren Sie sich nicht einfach auf die Chance für eine höhere Automatisierung, sondern berücksichtigen Sie auch den Faktor Mensch. Um die größte Wirkung zu erzielen, müssen Sie analysieren, wie die von Ihnen verfolgten Automatisierungsinitiativen Ihre Sicherheitsmitarbeiter ergänzen können. Gleichzeitig sollten Sie Ihre Mitarbeiter fortbilden, damit sie effektiver arbeiten und schwierigere Aufgaben ausführen können.
                 </p>
-            '
+            ',
         ],
         'q17'=>[
             'behind' => '
@@ -526,7 +527,7 @@ Falls Sie in allen Bereichen entweder im Mittel- oder im Spitzenfeld liegen, wer
                 <p>
                     Um alle Möglichkeiten auszureizen, sollten Sie berücksichtigen, welchen Beitrag MSS-Anbieter leisten können. MSS-Anbieter können die Daten für das Management von Sicherheitstools und -geräten in von Big Data angetriebene Correlation Engines eingeben und die ausgegebenen Daten dann in Management-Dashboards anzeigen. Das hilft, die Entscheidungsfindung voranzubringen, da Informationen über die sich verändernde Sicherheitslage in Echtzeit zur Verfügung stehen.
                 </p>
-            '
+            ',
         ],
         'q25'=>[
             'behind' => '
@@ -543,7 +544,7 @@ Falls Sie in allen Bereichen entweder im Mittel- oder im Spitzenfeld liegen, wer
                 <p>
                     Was Ihren Ansatz zur Zusammenarbeit mit MSS-Anbietern betrifft, sind Sie ein Spitzenreiter. Sie nutzen das Angebot in großem Umfang und auf ausgewogene Weise ein als einen komplementären Bereitstellungskanal gegenüber internen Ressourcen darstellen. Sie sollten versuchen, den Einsatz von MSS zu optimieren, um bei der Einführung und Umsetzung von Best Practices Fortschritte zu erzielen.
                 </p>
-            '
+            ',
         ],
         'q18'=>[
             'behind' => '
@@ -560,7 +561,7 @@ Falls Sie in allen Bereichen entweder im Mittel- oder im Spitzenfeld liegen, wer
                 <p>
                     Künstliche Intelligenz und Heuristik entwickeln sich weiter und Sie sollten diese Verfahren anwenden, wenn Sie dies nicht bereits tun, um weiterhin eine Führungsrolle anzustreben.
                 </p>
-            '
+            ',
         ],
         'q19'=>[
             'behind' => '
@@ -577,7 +578,7 @@ Falls Sie in allen Bereichen entweder im Mittel- oder im Spitzenfeld liegen, wer
                 <p>
                     Honeypot/Informationsgewinnung über Angreifer und Tiger Teams entwickeln sich zu Standardverfahren großer, ausgereifter und fortschrittlicher Sicherheitsmaßnahmen und Sie sollten sie anwenden, falls Sie dies noch nicht tun.
                 </p>
-            '
+            ',
         ],
         'q20'=>[
             'behind' => '
@@ -594,7 +595,7 @@ Falls Sie in allen Bereichen entweder im Mittel- oder im Spitzenfeld liegen, wer
                 <p>
                     Automatisierte Problembehebungsfunktionen, die auf maschinellem Lernen basieren, entwickeln sich schnell weiter. Sie sollten sie verwenden, falls Sie dies noch nicht tun.
                 </p>
-            '
+            ',
         ],
         'q21'=>[
             'behind' => '
@@ -611,7 +612,7 @@ Falls Sie in allen Bereichen entweder im Mittel- oder im Spitzenfeld liegen, wer
                 <p>
                     Ein wichtiger nächster Schritt ist, dass Sie die Lage im geschäftlichen Umfeld (Lieferkette und Partner) kennen, sowohl hinsichtlich der Übernahme der Sicherheitslücken von Dritten als auch bezüglich der neuen Mithaftungsvorschriften, die mit der Datenschutz-Grundverordnung eingeführt werden.
                 </p>
-            '
+            ',
         ],
         'q23'=>[
             'behind' => '
@@ -628,7 +629,7 @@ Falls Sie in allen Bereichen entweder im Mittel- oder im Spitzenfeld liegen, wer
                 <p>
                     Heutzutage ist es unerlässlich, dass Dritte eine Sicherheitsüberprüfung durchführen – selbst in fortschrittlichen Umgebungen, wo die „Beurteilung der eigenen Hausaufgaben“ zu Nachlässigkeiten führen kann. Die laufende Überprüfung ist nun das erwartete Standardverfahren. Viele Schritte davon können jetzt automatisiert werden. Penetrationstests durch Dritte sollten mindestens alle sechs Monate durchgeführt werden, weil sich die Bedrohungslandschaft so schnell ändert. Wenn Sie die Tests weniger häufiger durchführen, ist Ihr Unternehmen einem höheren Risiko ausgesetzt.
                 </p>
-            '
+            ',
         ],
         'q24'=>[
             'behind' => '
@@ -645,7 +646,7 @@ Falls Sie in allen Bereichen entweder im Mittel- oder im Spitzenfeld liegen, wer
                 <p>
                     Da Cyber-Angriffe immer kompetenter und häufiger durchgeführt werden, gehört es zu den entscheidenden Fähigkeiten von Spitzenreitern in der digitalen Wirtschaft, einen Sicherheitsverstoß zu erkennen und angemessen darauf zu reagieren. Konzentrieren Sie sich darauf, weiterhin Best Practices umzusetzen, die über alle Compliance-Standards hinausgehen, und sorgen Sie dafür, dass Ihre Stärken und Schwächen kontinuierlich von externen Spezialisten bewertet werden.
                 </p>
-            '
+            ',
         ],
-    ]
-);
+    ],
+];

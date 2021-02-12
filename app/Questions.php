@@ -10,7 +10,7 @@ class Questions extends Model
         'question',
         'name',
         'type',
-        'option_id'
+        'option_id',
     ];
 
     public function options()

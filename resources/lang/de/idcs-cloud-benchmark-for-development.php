@@ -1,6 +1,7 @@
 <?php
+
 //sage
-return array(
+return [
     'title' => 'Von der Cloud profitieren',
     'sub-title' => 'So steigern Sie Ihren Reifegrad',
     'stage1' => 'Phase 1: Der Zeitpunkt, tätig zu werden',
@@ -18,7 +19,7 @@ return array(
     ',
     'complete_thankyou' => 'Vielen Dank :Fname,',
     'complete_body' => 'Ihr benutzerdefinierter Bericht wird bald in Ihrem Posteingang ankommen',
-    'complete_tweet' => 'I\'ve just taken the Cloud Development Assessment Sponsored by @Sage %26 @IDCUKI, we\'re at :result. Interested?',// http://bit.ly/2g8WN1d
+    'complete_tweet' => 'I\'ve just taken the Cloud Development Assessment Sponsored by @Sage %26 @IDCUKI, we\'re at :result. Interested?', // http://bit.ly/2g8WN1d
     'email'=>[
         'subject' => 'IDC-Bericht',
         'hi' => 'Hallo :Fname',
@@ -29,10 +30,10 @@ return array(
         'link' => 'Bericht herunterladen',
         'extra' => 'Sobald Sie den Bericht verarbeitet haben, warum besuchen Sie nicht <a href="http://www.sage.com" style="color:#024886">Sage</a>',
         'regards' => 'Grüße',
-        'team' => 'Das IDC-Team'
+        'team' => 'Das IDC-Team',
     ],
     'introduction-image' => 'report1.jpg',
-    'overall' => array(
+    'overall' => [
         'title'=>'Cloud-Reifegrad insgesamt',
         'image'=>'',
         'introduction' => '
@@ -82,9 +83,9 @@ return array(
             <p>
                 Der folgende Bericht bietet einen detaillierten Einblick in die verschiedenen Bereiche Ihrer Cloud-Strategie und die erzielten Fortschritte. Zudem enthält er Tipps zu Verbesserungen in diesen Bereichen Ihres Geschäfts.
             </p>
-        '
-    ),
-    'cloud-vision-and-strategy' => array(
+        ',
+    ],
+    'cloud-vision-and-strategy' => [
         'title'=>'Cloud-Strategie und -Vision',
         'pageimage'=>'',
         'stage1'=>'
@@ -223,8 +224,8 @@ Fokus auf der Entwicklung geistigem Eigentum:
             Sorgen Sie für geschäftlichen Mehrwert, indem Sie Lösungen für Geschäftsprobleme anbieten. Ihre strategische Planung sollte sich ganz darauf konzentrieren, welche Geschäftsprobleme Sie für Ihre Kunden lösen möchten.
         </p>
         ',
-    ),
-    'process-and-skill-sets' => array(
+    ],
+    'process-and-skill-sets' => [
         'title'=>'Prozesse und Kompetenzen',
         'pageimage'=>'process-and-skill-sets.jpg',
         'stage1'=>'
@@ -385,8 +386,8 @@ Fokus auf der Entwicklung geistigem Eigentum:
             In dieser Phase sollten Ihre Prioritäten und Ihre Schulungspläne darauf abzielen, Fähigkeiten für die unternehmensweite digitale Transformation zu entwickeln. Dazu gehören u. a Bereiche wie Integrations-, Geschäfts- und digitale Prozesse.
         </p>
         ',
-    ),
-    'marketing' => array(
+    ],
+    'marketing' => [
         'title'=>'Marketing',
         'pageimage' => '',
         'stage1'=>'
@@ -544,8 +545,8 @@ Fokus auf der Entwicklung geistigem Eigentum:
             Unterstützen Sie Vordenker und strategische Berater und machen Sie sie zu Botschaftern Ihres Unternehmens. Beginnen Sie damit, Botschafter nicht nur in Ihrem Unternehmen zu ermitteln, anzuwerben und aufzubauen, sondern auch in den Medien, in der Analysten-Community, bei Partnern und am besten auch unter Ihren Kunden.
         </p>
         ',
-    ),
-    'sales' => array(
+    ],
+    'sales' => [
         'title'=>'Vertrieb',
         'pageimage'=>'sales.jpg',
         'stage1'=>'
@@ -722,8 +723,8 @@ Fokus auf der Entwicklung geistigem Eigentum:
             Also critical at this stage is embedding your cloud capabilities into a broader digital transformation proposition. This incorporates a breadth of digital technologies, such as mobility, social, Big Data analytics, next-gen security, and the Internet of Things (IoT).
         </p>
         ',
-    ),
-    'business-mix' => array(
+    ],
+    'business-mix' => [
         'title'=>'Business Mix',
         'pageimage' => '',
         'stage1'=>'
@@ -922,5 +923,5 @@ wobei besonderes Augenmerk auf die Unterstützung und Entwicklung ganzheitlicher
             Evaluieren Sie die Vermarktungswege und Geschäftsmodelle, die eine effiziente Skalierung ermöglichen, und ziehen Sie in Betracht, Lizenzen für Lösungen an Partner zu vergeben. Darüber hinaus sollten Sie alternative Kanäle und Partnerschaften erweitern, die die geografische Ausweitung des Geschäfts mit spezifischen Lösungen ermöglichen.
         </p>
         ',
-    ),
-);
+    ],
+];

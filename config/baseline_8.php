@@ -1,4 +1,5 @@
 <?php
+
 //NTT
 return [
     'overall' => [
@@ -48,8 +49,6 @@ return [
         'benchmark-vertical-private-education' => 8.62,
         'benchmark-vertical-private-healthcare-service-providers' => 8.51,
 
-        
-
         'complete' => [
             'graph' => [
                 'label' => 'Stage',
@@ -57,10 +56,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -71,7 +70,7 @@ return [
             'basecolor'=>'#004386',
             'pageimage'=>false,
             'margin-top'=>20,
-            'header-spacing'=>6
+            'header-spacing'=>6,
         ],
         'types' => [
             'stage1' => [
@@ -94,7 +93,7 @@ return [
                 'copy' => 'general.8goodtxt',
                 'tweet' => false,
                 'benchmark' => 28,
-            ]
+            ],
         ],
         'tweet' => false,
         'include_answers_in_download_report' => true,
@@ -118,10 +117,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -140,28 +139,28 @@ return [
                 'high' => 8.9,
                 'total' => 2,
                 'benchmark' => 20,
-                'copy' => 'ntt-sdwan.infrastructure-poor-txt'
+                'copy' => 'ntt-sdwan.infrastructure-poor-txt',
             ],
             'stage2' => [
                 'low' => 9,
                 'high' => 10.9,
                 'total' => 3,
                 'benchmark' => 34,
-                'copy' => 'ntt-sdwan.infrastructure-standard-txt'
+                'copy' => 'ntt-sdwan.infrastructure-standard-txt',
             ],
             'stage3' => [
                 'low' => 11,
                 'high' => 15,
                 'total' => 5,
                 'benchmark' => 28,
-                'copy' => 'ntt-sdwan.infrastructure-good-txt'
-            ]
-        ]
+                'copy' => 'ntt-sdwan.infrastructure-good-txt',
+            ],
+        ],
     ],
     'intelligence' => [
         'baseline' => 9.28,
         'baseline' => 10.93,
-        
+
         'baseline_stage1' => 2.5,
         'baseline_stage2' => 7.5,
         'baseline_stage3' => 13.5,
@@ -173,10 +172,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -195,23 +194,23 @@ return [
                 'high' => 8.9,
                 'total' => 2,
                 'benchmark' => 20,
-                'copy' => 'ntt-sdwan.intelligence-poor-txt'
+                'copy' => 'ntt-sdwan.intelligence-poor-txt',
             ],
             'stage2' => [
                 'low' => 9,
                 'high' => 10.9,
                 'total' => 3,
                 'benchmark' => 34,
-                'copy' => 'ntt-sdwan.intelligence-standard-txt'
+                'copy' => 'ntt-sdwan.intelligence-standard-txt',
             ],
             'stage3' => [
                 'low' => 11,
                 'high' => 15,
                 'total' => 5,
                 'benchmark' => 28,
-                'copy' => 'ntt-sdwan.intelligence-good-txt'
-            ]
-        ]
+                'copy' => 'ntt-sdwan.intelligence-good-txt',
+            ],
+        ],
     ],
     'operations' => [
         'baseline' => 9.42,
@@ -227,10 +226,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -249,22 +248,22 @@ return [
                 'high' => 5.9,
                 'total' => 2,
                 'benchmark' => 20,
-                'copy' => 'ntt-sdwan.operations-poor-txt'
+                'copy' => 'ntt-sdwan.operations-poor-txt',
             ],
             'stage2' => [
                 'low' => 6,
                 'high' => 10.9,
                 'total' => 3,
                 'benchmark' => 34,
-                'copy' => 'ntt-sdwan.operations-standard-txt'
+                'copy' => 'ntt-sdwan.operations-standard-txt',
             ],
             'stage3' => [
                 'low' => 11,
                 'high' => 15,
                 'total' => 5,
                 'benchmark' => 28,
-                'copy' => 'ntt-sdwan.operations-good-txt'
-            ]
-        ]
-    ]
+                'copy' => 'ntt-sdwan.operations-good-txt',
+            ],
+        ],
+    ],
 ];

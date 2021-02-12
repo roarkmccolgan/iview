@@ -1,19 +1,19 @@
-<?php namespace App\Http\Controllers;
+<?php
 
-use App\Http\Requests;
-use App\Http\Controllers\Controller;
+namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use Analytics;
+use App\Http\Controllers\Controller;
+use App\Http\Requests;
 use Carbon\Carbon;
 use Config;
 use DB;
+use Illuminate\Http\Request;
 
 class AnalyticsController extends Controller
 {
-    
     protected $mailer;
-    
+
     public function __construct()
     {
         $this->mailer = 'hello';
@@ -27,14 +27,14 @@ class AnalyticsController extends Controller
     public function index()
     {
         $terminal = Config::get('terminal.iviews');
-        
+
         //Config::set('laravel-analytics.siteId', 'ga:'.$terminal['dellstorage']['en']['projectId']);
         $leads = $this->getLeads($terminal['dellstorage']['en']['conection'], $terminal['dellstorage']['en']['table']);
         echo 'ga:'.$terminal['dellstorage']['en']['projectId'];
         foreach ($leads as $user) {
             var_dump($user);
         }
-        
+
         $queries = [
             'total_results'=>[
                 'metrics'       => 'ga:sessions,ga:newUsers,ga:users,ga:bounceRate,ga:avgSessionDuration,ga:pageviews,ga:pageviewsPerSession,ga:percentNewSessions',
@@ -90,7 +90,7 @@ class AnalyticsController extends Controller
                 'dimensions'    => 'ga:source',
                 'sort'          => '-ga:sessions',
                 'max-results'   => 10,
-                'filters'       => 'ga:source!=devbox','ga:source!=localhost',
+                'filters'       => 'ga:source!=devbox', 'ga:source!=localhost',
             ],
             'event_results'=>[
                 'metrics'       => 'ga:sessions',
@@ -98,12 +98,12 @@ class AnalyticsController extends Controller
                 'sort'          => '-ga:sessions',
                 'max-results'   => false,
                 'filters'       => false,
-            ]
+            ],
         ];
-        
+
         $startDate = Carbon::now()->subMonth();
         $endDate = Carbon::now();
-        
+
         foreach ($queries as $key => $query) {
             $other = [];
             if ($query['dimensions']) {
@@ -118,23 +118,22 @@ class AnalyticsController extends Controller
             if ($query['filters']) {
                 $other['filters'] = $query['filters'];
             }
-            
+
             $$key = Analytics::performQuery($startDate, $endDate, $query['metrics'], $other);
-            
-            echo "<pre>";
-            echo $key.":<br/>";
+
+            echo '<pre>';
+            echo $key.':<br/>';
             print_r($$key->getRows());
-            echo "</pre>";
+            echo '</pre>';
         }
         //return Analytics::getVisitorsAndPageViews(7)->toArray();
     }
-    
-    
+
     private function getLeads($connection, $table)
     {
         $users = DB::connection($connection)->table($table)->get();
         //$colums = Schema::connection($connection)->getColumnListing($table);
-        
+
         return compact('users');
     }
 }

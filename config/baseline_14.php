@@ -1,4 +1,5 @@
 <?php
+
 //VMWARE
 return [
     'overall' => [
@@ -11,10 +12,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -25,7 +26,7 @@ return [
             'basecolor'=>'#004386',
             'pageimage'=>false,
             'margin-top'=>20,
-            'header-spacing'=>6
+            'header-spacing'=>6,
         ],
         'types' => [
             'stage1' => [
@@ -48,7 +49,7 @@ return [
                 'copy' => 'general.8goodtxt',
                 'tweet' => false,
                 'benchmark' => 28,
-            ]
+            ],
         ],
         'tweet' => false,
         'include_answers_in_download_report' => true,
@@ -145,10 +146,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -167,28 +168,28 @@ return [
                 'high' => 6.99,
                 'total' => 2,
                 'benchmark' => 20,
-                'copy' => 'dassault.digital-business-poor-txt'
+                'copy' => 'dassault.digital-business-poor-txt',
             ],
             'stage2' => [
                 'low' => 7,
                 'high' => 11.99,
                 'total' => 3,
                 'benchmark' => 34,
-                'copy' => 'dassault.digital-business-standard-txt'
+                'copy' => 'dassault.digital-business-standard-txt',
             ],
             'stage3' => [
                 'low' => 12,
                 'high' => 30,
                 'total' => 5,
                 'benchmark' => 28,
-                'copy' => 'dassault.digital-business-good-txt'
-            ]
-        ]
+                'copy' => 'dassault.digital-business-good-txt',
+            ],
+        ],
     ],
     'intelligent-network-operations' => [
         'baseline' => 9.28,
         'baseline' => 10.93,
-        
+
         'baseline_stage1' => 2.5,
         'baseline_stage2' => 7.5,
         'baseline_stage3' => 13.5,
@@ -200,10 +201,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -222,23 +223,23 @@ return [
                 'high' => 6.99,
                 'total' => 2,
                 'benchmark' => 20,
-                'copy' => 'dassault.digital-design-poor-txt'
+                'copy' => 'dassault.digital-design-poor-txt',
             ],
             'stage2' => [
                 'low' => 7,
                 'high' => 11.99,
                 'total' => 3,
                 'benchmark' => 34,
-                'copy' => 'dassault.digital-design-standard-txt'
+                'copy' => 'dassault.digital-design-standard-txt',
             ],
             'stage3' => [
                 'low' => 12,
                 'high' => 20,
                 'total' => 5,
                 'benchmark' => 28,
-                'copy' => 'dassault.digital-design-good-txt'
-            ]
-        ]
+                'copy' => 'dassault.digital-design-good-txt',
+            ],
+        ],
     ],
     'security-enabled-networking' => [
         'baseline' => 9.42,
@@ -254,10 +255,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -276,22 +277,22 @@ return [
                 'high' => 6.99,
                 'total' => 2,
                 'benchmark' => 20,
-                'copy' => 'dassault.digital-delivery-poor-txt'
+                'copy' => 'dassault.digital-delivery-poor-txt',
             ],
             'stage2' => [
                 'low' => 7,
                 'high' => 11.99,
                 'total' => 3,
                 'benchmark' => 34,
-                'copy' => 'dassault.digital-delivery-standard-txt'
+                'copy' => 'dassault.digital-delivery-standard-txt',
             ],
             'stage3' => [
                 'low' => 12,
                 'high' => 20,
                 'total' => 5,
                 'benchmark' => 28,
-                'copy' => 'dassault.digital-delivery-good-txt'
-            ]
-        ]
-    ]
+                'copy' => 'dassault.digital-delivery-good-txt',
+            ],
+        ],
+    ],
 ];

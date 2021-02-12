@@ -10,7 +10,7 @@ class Assessment extends Model
     use SoftDeletes;
 
     protected $fillable = [
-        'fname', 'lname', 'email', 'company','title', 'tel', 'score', 'rating', 'quiz', 'result', 'downloaded', 'extra', 'fetched'
+        'fname', 'lname', 'email', 'company', 'title', 'tel', 'score', 'rating', 'quiz', 'result', 'downloaded', 'extra', 'fetched',
     ];
     protected $casts = [
         'extra' => 'array',
@@ -18,7 +18,7 @@ class Assessment extends Model
         'result' => 'array',
         'uuid' => 'string',
     ];
-    
+
     public function tool()
     {
         return $this->belongsTo('App\Tool');

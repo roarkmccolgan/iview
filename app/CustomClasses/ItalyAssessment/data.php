@@ -1,4 +1,5 @@
 <?php
+
 $industryKeys = [
     'qsectorr1' => 'Agriculture',
     'qsectorr2' => 'Business/IT Services',
@@ -10,7 +11,7 @@ $industryKeys = [
     'qsectorr8' => 'Transport/Logistics',
     'qsectorr9' => 'Utilities/OilGas',
     'qsectornone' => 'Other',
-    'qsectormultiple' => 'Multiple Classifications Apply'
+    'qsectormultiple' => 'Multiple Classifications Apply',
 ];
 $sizeKeys = [
     'qsizer1' => '10-249',
@@ -507,7 +508,7 @@ $industryReference = [
             'q8r4' => 3.88,
             'q8r5' => 3.63,
             'q8r6' => 3.75,
-            'q8r7' => 3.7
+            'q8r7' => 3.7,
         ],
         'qsectorr2' => [
             'q8r1' => 3.30,
@@ -516,7 +517,7 @@ $industryReference = [
             'q8r4' => 4.21,
             'q8r5' => 4.27,
             'q8r6' => 3.78,
-            'q8r7' => 3.99
+            'q8r7' => 3.99,
         ],
         'qsectorr3' => [
             'q8r1' => 3.33,
@@ -525,7 +526,7 @@ $industryReference = [
             'q8r4' => 3.85,
             'q8r5' => 4.26,
             'q8r6' => 3.69,
-            'q8r7' => 3.71
+            'q8r7' => 3.71,
         ],
         'qsectorr4' => [
             'q8r1' => 3.07,
@@ -534,7 +535,7 @@ $industryReference = [
             'q8r4' => 3.69,
             'q8r5' => 3.81,
             'q8r6' => 3.36,
-            'q8r7' => 3.44
+            'q8r7' => 3.44,
         ],
         'qsectorr5' => [
             'q8r1' => 3.13,
@@ -543,7 +544,7 @@ $industryReference = [
             'q8r4' => 3.87,
             'q8r5' => 3.70,
             'q8r6' => 3.53,
-            'q8r7' => 3.52
+            'q8r7' => 3.52,
         ],
         'qsectorr6' => [
             'q8r1' => 3.35,
@@ -552,7 +553,7 @@ $industryReference = [
             'q8r4' => 4.18,
             'q8r5' => 4.16,
             'q8r6' => 3.59,
-            'q8r7' => 3.89
+            'q8r7' => 3.89,
         ],
         'qsectorr7' => [
             'q8r1' => 3.30,
@@ -561,7 +562,7 @@ $industryReference = [
             'q8r4' => 4.07,
             'q8r5' => 4.48,
             'q8r6' => 3.48,
-            'q8r7' => 4.44
+            'q8r7' => 4.44,
         ],
         'qsectorr8' => [
             'q8r1' => 3.26,
@@ -570,7 +571,7 @@ $industryReference = [
             'q8r4' => 4.02,
             'q8r5' => 3.97,
             'q8r6' => 3.77,
-            'q8r7' => 3.77
+            'q8r7' => 3.77,
         ],
         'qsectorr9' => [
             'q8r1' => 3.20,
@@ -579,7 +580,7 @@ $industryReference = [
             'q8r4' => 3.96,
             'q8r5' => 4.39,
             'q8r6' => 3.55,
-            'q8r7' => 3.93
+            'q8r7' => 3.93,
         ],
     ],
     'q9' => [
@@ -916,530 +917,530 @@ $industryReference = [
             'q9p2r34' => 11,
             'q9p2r35' => 10,
         ],
-    ]
+    ],
 ];
 $industryGraphReference = [
     'q1' => [
         'qsectorr1' => [
             'q1r1' => [
                 'label' => 'Customer service and support',
-                'value' => 30.8
+                'value' => 30.8,
             ],
             'q1r2' => [
                 'label' => 'Engineering',
-                'value' => 26.2
+                'value' => 26.2,
             ],
             'q1r3' => [
                 'label' => 'Research and development (R&D)',
-                'value' => 21.5
+                'value' => 21.5,
             ],
             'q1r4' => [
                 'label' => 'Product innovation (new business initiatives)',
-                'value' => 27.7
+                'value' => 27.7,
             ],
             'q1r5' => [
                 'label' => 'Maintenance and logistics',
-                'value' => 7.7
+                'value' => 7.7,
             ],
             'q1r6' => [
                 'label' => 'Marketing',
-                'value' => 38.5
+                'value' => 38.5,
             ],
             'q1r7' => [
                 'label' => 'Finance',
-                'value' => 21.5
+                'value' => 21.5,
             ],
             'q1r8' => [
                 'label' => 'HR and legal',
-                'value' => 12.3
+                'value' => 12.3,
             ],
             'q1r9' => [
                 'label' => 'Sales',
-                'value' => 30.8
+                'value' => 30.8,
             ],
             'q1r10' => [
                 'label' => 'Product management',
-                'value' => 29.2
+                'value' => 29.2,
             ],
             'q1r11' => [
                 'label' => 'Governance, risk, and compliance',
-                'value' => 16.9
+                'value' => 16.9,
             ],
             'q1r12' => [
                 'label' => 'IT and data operations',
-                'value' => 15.4
+                'value' => 15.4,
             ],
             'q1r13' => [
                 'label' => 'Other, please specify',
-                'value' => 0.0
+                'value' => 0.0,
             ],
             'q1r14' => [
                 'label' => 'All the above',
-                'value' => 0.0
+                'value' => 0.0,
             ],
         ],
         'qsectorr2' => [
             'q1r1' => [
                 'label' => 'Customer service and support',
-                'value' => 48.1
+                'value' => 48.1,
             ],
             'q1r2' => [
                 'label' => 'Engineering',
-                'value' => 14.3
+                'value' => 14.3,
             ],
             'q1r3' => [
                 'label' => 'Research and development (R&D)',
-                'value' => 13.0
+                'value' => 13.0,
             ],
             'q1r4' => [
                 'label' => 'Product innovation (new business initiatives)',
-                'value' => 15.6
+                'value' => 15.6,
             ],
             'q1r5' => [
                 'label' => 'Maintenance and logistics',
-                'value' => 18.2
+                'value' => 18.2,
             ],
             'q1r6' => [
                 'label' => 'Marketing',
-                'value' => 32.5
+                'value' => 32.5,
             ],
             'q1r7' => [
                 'label' => 'Finance',
-                'value' => 53.2
+                'value' => 53.2,
             ],
             'q1r8' => [
                 'label' => 'HR and legal',
-                'value' => 22.1
+                'value' => 22.1,
             ],
             'q1r9' => [
                 'label' => 'Sales',
-                'value' => 29.9
+                'value' => 29.9,
             ],
             'q1r10' => [
                 'label' => 'Product management',
-                'value' => 32.5
+                'value' => 32.5,
             ],
             'q1r11' => [
                 'label' => 'Governance, risk, and compliance',
-                'value' => 29.9
+                'value' => 29.9,
             ],
             'q1r12' => [
                 'label' => 'IT and data operations',
-                'value' => 31.2
+                'value' => 31.2,
             ],
             'q1r13' => [
                 'label' => 'Other, please specify',
-                'value' => 1.3
+                'value' => 1.3,
             ],
             'q1r14' => [
                 'label' => 'All the above',
-                'value' => 0.0
+                'value' => 0.0,
             ],
         ],
         'qsectorr3' => [
             'q1r1' => [
                 'label' => 'Customer service and support',
-                'value' => 34.6
+                'value' => 34.6,
             ],
             'q1r2' => [
                 'label' => 'Engineering',
-                'value' => 21.8
+                'value' => 21.8,
             ],
             'q1r3' => [
                 'label' => 'Research and development (R&D)',
-                'value' => 28.2
+                'value' => 28.2,
             ],
             'q1r4' => [
                 'label' => 'Product innovation (new business initiatives)',
-                'value' => 30.8
+                'value' => 30.8,
             ],
             'q1r5' => [
                 'label' => 'Maintenance and logistics',
-                'value' => 25.6
+                'value' => 25.6,
             ],
             'q1r6' => [
                 'label' => 'Marketing',
-                'value' => 29.5
+                'value' => 29.5,
             ],
             'q1r7' => [
                 'label' => 'Finance',
-                'value' => 24.4
+                'value' => 24.4,
             ],
             'q1r8' => [
                 'label' => 'HR and legal',
-                'value' => 17.9
+                'value' => 17.9,
             ],
             'q1r9' => [
                 'label' => 'Sales',
-                'value' => 15.4
+                'value' => 15.4,
             ],
             'q1r10' => [
                 'label' => 'Product management',
-                'value' => 28.2
+                'value' => 28.2,
             ],
             'q1r11' => [
                 'label' => 'Governance, risk, and compliance',
-                'value' => 15.4
+                'value' => 15.4,
             ],
             'q1r12' => [
                 'label' => 'IT and data operations',
-                'value' => 61.5
+                'value' => 61.5,
             ],
             'q1r13' => [
                 'label' => 'Other, please specify',
-                'value' => 1.3
+                'value' => 1.3,
             ],
             'q1r14' => [
                 'label' => 'All the above',
-                'value' => 0.0
+                'value' => 0.0,
             ],
         ],
         'qsectorr4' => [
             'q1r1' => [
                 'label' => 'Customer service and support',
-                'value' => 29.8
+                'value' => 29.8,
             ],
             'q1r2' => [
                 'label' => 'Engineering',
-                'value' => 20.2
+                'value' => 20.2,
             ],
             'q1r3' => [
                 'label' => 'Research and development (R&D)',
-                'value' => 26.2
+                'value' => 26.2,
             ],
             'q1r4' => [
                 'label' => 'Product innovation (new business initiatives)',
-                'value' => 16.7
+                'value' => 16.7,
             ],
             'q1r5' => [
                 'label' => 'Maintenance and logistics',
-                'value' => 38.1
+                'value' => 38.1,
             ],
             'q1r6' => [
                 'label' => 'Marketing',
-                'value' => 22.6
+                'value' => 22.6,
             ],
             'q1r7' => [
                 'label' => 'Finance',
-                'value' => 28.6
+                'value' => 28.6,
             ],
             'q1r8' => [
                 'label' => 'HR and legal',
-                'value' => 14.3
+                'value' => 14.3,
             ],
             'q1r9' => [
                 'label' => 'Sales',
-                'value' => 27.4
+                'value' => 27.4,
             ],
             'q1r10' => [
                 'label' => 'Product management',
-                'value' => 32.1
+                'value' => 32.1,
             ],
             'q1r11' => [
                 'label' => 'Governance, risk, and compliance',
-                'value' => 26.2
+                'value' => 26.2,
             ],
             'q1r12' => [
                 'label' => 'IT and data operations',
-                'value' => 34.5
+                'value' => 34.5,
             ],
             'q1r13' => [
                 'label' => 'Other, please specify',
-                'value' => 0.0
+                'value' => 0.0,
             ],
             'q1r14' => [
                 'label' => 'All the above',
-                'value' => 1.2
+                'value' => 1.2,
             ],
         ],
         'qsectorr5' => [
             'q1r1' => [
                 'label' => 'Customer service and support',
-                'value' => 29.2
+                'value' => 29.2,
             ],
             'q1r2' => [
                 'label' => 'Engineering',
-                'value' => 32.6
+                'value' => 32.6,
             ],
             'q1r3' => [
                 'label' => 'Research and development (R&D)',
-                'value' => 27.0
+                'value' => 27.0,
             ],
             'q1r4' => [
                 'label' => 'Product innovation (new business initiatives)',
-                'value' => 24.7
+                'value' => 24.7,
             ],
             'q1r5' => [
                 'label' => 'Maintenance and logistics',
-                'value' => 37.1
+                'value' => 37.1,
             ],
             'q1r6' => [
                 'label' => 'Marketing',
-                'value' => 30.3
+                'value' => 30.3,
             ],
             'q1r7' => [
                 'label' => 'Finance',
-                'value' => 18.0
+                'value' => 18.0,
             ],
             'q1r8' => [
                 'label' => 'HR and legal',
-                'value' => 14.6
+                'value' => 14.6,
             ],
             'q1r9' => [
                 'label' => 'Sales',
-                'value' => 23.6
+                'value' => 23.6,
             ],
             'q1r10' => [
                 'label' => 'Product management',
-                'value' => 43.8
+                'value' => 43.8,
             ],
             'q1r11' => [
                 'label' => 'Governance, risk, and compliance',
-                'value' => 19.1
+                'value' => 19.1,
             ],
             'q1r12' => [
                 'label' => 'IT and data operations',
-                'value' => 33.7
+                'value' => 33.7,
             ],
             'q1r13' => [
                 'label' => 'Other, please specify',
-                'value' => 3.4
+                'value' => 3.4,
             ],
             'q1r14' => [
                 'label' => 'All the above',
-                'value' => 0.0
+                'value' => 0.0,
             ],
         ],
         'qsectorr6' => [
             'q1r1' => [
                 'label' => 'Customer service and support',
-                'value' => 36.1
+                'value' => 36.1,
             ],
             'q1r2' => [
                 'label' => 'Engineering',
-                'value' => 14.5
+                'value' => 14.5,
             ],
             'q1r3' => [
                 'label' => 'Research and development (R&D)',
-                'value' => 22.9
+                'value' => 22.9,
             ],
             'q1r4' => [
                 'label' => 'Product innovation (new business initiatives)',
-                'value' => 24.1
+                'value' => 24.1,
             ],
             'q1r5' => [
                 'label' => 'Maintenance and logistics',
-                'value' => 33.7
+                'value' => 33.7,
             ],
             'q1r6' => [
                 'label' => 'Marketing',
-                'value' => 54.2
+                'value' => 54.2,
             ],
             'q1r7' => [
                 'label' => 'Finance',
-                'value' => 25.3
+                'value' => 25.3,
             ],
             'q1r8' => [
                 'label' => 'HR and legal',
-                'value' => 20.5
+                'value' => 20.5,
             ],
             'q1r9' => [
                 'label' => 'Sales',
-                'value' => 51.8
+                'value' => 51.8,
             ],
             'q1r10' => [
                 'label' => 'Product management',
-                'value' => 39.8
+                'value' => 39.8,
             ],
             'q1r11' => [
                 'label' => 'Governance, risk, and compliance',
-                'value' => 19.3
+                'value' => 19.3,
             ],
             'q1r12' => [
                 'label' => 'IT and data operations',
-                'value' => 24.1
+                'value' => 24.1,
             ],
             'q1r13' => [
                 'label' => 'Other, please specify',
-                'value' => 1.2
+                'value' => 1.2,
             ],
             'q1r14' => [
                 'label' => 'All the above',
-                'value' => 0.0
+                'value' => 0.0,
             ],
         ],
         'qsectorr7' => [
             'q1r1' => [
                 'label' => 'Customer service and support',
-                'value' => 48.1
+                'value' => 48.1,
             ],
             'q1r2' => [
                 'label' => 'Engineering',
-                'value' => 3.7
+                'value' => 3.7,
             ],
             'q1r3' => [
                 'label' => 'Research and development (R&D)',
-                'value' => 22.2
+                'value' => 22.2,
             ],
             'q1r4' => [
                 'label' => 'Product innovation (new business initiatives)',
-                'value' => 25.9
+                'value' => 25.9,
             ],
             'q1r5' => [
                 'label' => 'Maintenance and logistics',
-                'value' => 25.9
+                'value' => 25.9,
             ],
             'q1r6' => [
                 'label' => 'Marketing',
-                'value' => 63.0
+                'value' => 63.0,
             ],
             'q1r7' => [
                 'label' => 'Finance',
-                'value' => 37.0
+                'value' => 37.0,
             ],
             'q1r8' => [
                 'label' => 'HR and legal',
-                'value' => 7.4
+                'value' => 7.4,
             ],
             'q1r9' => [
                 'label' => 'Sales',
-                'value' => 14.8
+                'value' => 14.8,
             ],
             'q1r10' => [
                 'label' => 'Product management',
-                'value' => 29.6
+                'value' => 29.6,
             ],
             'q1r11' => [
                 'label' => 'Governance, risk, and compliance',
-                'value' => 14.8
+                'value' => 14.8,
             ],
             'q1r12' => [
                 'label' => 'IT and data operations',
-                'value' => 37.0
+                'value' => 37.0,
             ],
             'q1r13' => [
                 'label' => 'Other, please specify',
-                'value' => 0.0
+                'value' => 0.0,
             ],
             'q1r14' => [
                 'label' => 'All the above',
-                'value' => 0.0
+                'value' => 0.0,
             ],
         ],
         'qsectorr8' => [
             'q1r1' => [
                 'label' => 'Customer service and support',
-                'value' => 27.3
+                'value' => 27.3,
             ],
             'q1r2' => [
                 'label' => 'Engineering',
-                'value' => 22.7
+                'value' => 22.7,
             ],
             'q1r3' => [
                 'label' => 'Research and development (R&D)',
-                'value' => 22.7
+                'value' => 22.7,
             ],
             'q1r4' => [
                 'label' => 'Product innovation (new business initiatives)',
-                'value' => 30.3
+                'value' => 30.3,
             ],
             'q1r5' => [
                 'label' => 'Maintenance and logistics',
-                'value' => 39.4
+                'value' => 39.4,
             ],
             'q1r6' => [
                 'label' => 'Marketing',
-                'value' => 33.3
+                'value' => 33.3,
             ],
             'q1r7' => [
                 'label' => 'Finance',
-                'value' => 27.3
+                'value' => 27.3,
             ],
             'q1r8' => [
                 'label' => 'HR and legal',
-                'value' => 16.7
+                'value' => 16.7,
             ],
             'q1r9' => [
                 'label' => 'Sales',
-                'value' => 37.9
+                'value' => 37.9,
             ],
             'q1r10' => [
                 'label' => 'Product management',
-                'value' => 28.8
+                'value' => 28.8,
             ],
             'q1r11' => [
                 'label' => 'Governance, risk, and compliance',
-                'value' => 16.7
+                'value' => 16.7,
             ],
             'q1r12' => [
                 'label' => 'IT and data operations',
-                'value' => 34.8
+                'value' => 34.8,
             ],
             'q1r13' => [
                 'label' => 'Other, please specify',
-                'value' => 0.0
+                'value' => 0.0,
             ],
             'q1r14' => [
                 'label' => 'All the above',
-                'value' => 0.0
+                'value' => 0.0,
             ],
         ],
         'qsectorr9' => [
             'q1r1' => [
                 'label' => 'Customer service and support',
-                'value' => 26.8
+                'value' => 26.8,
             ],
             'q1r2' => [
                 'label' => 'Engineering',
-                'value' => 26.8
+                'value' => 26.8,
             ],
             'q1r3' => [
                 'label' => 'Research and development (R&D)',
-                'value' => 26.8
+                'value' => 26.8,
             ],
             'q1r4' => [
                 'label' => 'Product innovation (new business initiatives)',
-                'value' => 21.1
+                'value' => 21.1,
             ],
             'q1r5' => [
                 'label' => 'Maintenance and logistics',
-                'value' => 25.4
+                'value' => 25.4,
             ],
             'q1r6' => [
                 'label' => 'Marketing',
-                'value' => 22.5
+                'value' => 22.5,
             ],
             'q1r7' => [
                 'label' => 'Finance',
-                'value' => 26.8
+                'value' => 26.8,
             ],
             'q1r8' => [
                 'label' => 'HR and legal',
-                'value' => 18.3
+                'value' => 18.3,
             ],
             'q1r9' => [
                 'label' => 'Sales',
-                'value' => 21.1
+                'value' => 21.1,
             ],
             'q1r10' => [
                 'label' => 'Product management',
-                'value' => 21.1
+                'value' => 21.1,
             ],
             'q1r11' => [
                 'label' => 'Governance, risk, and compliance',
-                'value' => 18.3
+                'value' => 18.3,
             ],
             'q1r12' => [
                 'label' => 'IT and data operations',
-                'value' => 25.4
+                'value' => 25.4,
             ],
             'q1r13' => [
                 'label' => 'Other, please specify',
-                'value' => 1.4
+                'value' => 1.4,
             ],
             'q1r14' => [
                 'label' => 'All the above',
-                'value' => 0.0
+                'value' => 0.0,
             ],
         ],
     ],
@@ -1447,615 +1448,615 @@ $industryGraphReference = [
         'qsectorr1' => [
             'q2r1' => [
                 'label' => 'Better understand customer behavior and expectations',
-                'value' => 0.31
+                'value' => 0.31,
             ],
             'q2r2' => [
                 'label' => 'Optimize our pricing strategies and go-to-market programs',
-                'value' => 0.35
+                'value' => 0.35,
             ],
             'q2r3' => [
                 'label' => 'Product, services, or program improvement and innovation',
-                'value' => 0.37
+                'value' => 0.37,
             ],
             'q2r4' => [
                 'label' => 'Improve our understanding of the market and our competitors',
-                'value' => 0.38
+                'value' => 0.38,
             ],
             'q2r5' => [
                 'label' => 'Improve and optimize our business processes and operations',
-                'value' => 0.31
+                'value' => 0.31,
             ],
             'q2r6' => [
                 'label' => 'Improve our facilities, and equipment design, maintenance, and utilization',
-                'value' => 0.34
+                'value' => 0.34,
             ],
             'q2r7' => [
                 'label' => 'Improve our operational, fraud, and risk management',
-                'value' => 0.25
+                'value' => 0.25,
             ],
             'q2r8' => [
                 'label' => 'Implement better regulatory compliance and financial controls',
-                'value' => 0.42
+                'value' => 0.42,
             ],
             'q2r9' => [
                 'label' => 'Other, please specify',
-                'value' => 0.00
-            ]
+                'value' => 0.00,
+            ],
         ],
         'qsectorr2' => [
             'q2r1' => [
                 'label' => 'Better understand customer behavior and expectations',
-                'value' => 0.39
+                'value' => 0.39,
             ],
             'q2r2' => [
                 'label' => 'Optimize our pricing strategies and go-to-market programs',
-                'value' => 0.42
+                'value' => 0.42,
             ],
             'q2r3' => [
                 'label' => 'Product, services, or program improvement and innovation',
-                'value' => 0.43
+                'value' => 0.43,
             ],
             'q2r4' => [
                 'label' => 'Improve our understanding of the market and our competitors',
-                'value' => 0.42
+                'value' => 0.42,
             ],
             'q2r5' => [
                 'label' => 'Improve and optimize our business processes and operations',
-                'value' => 0.47
+                'value' => 0.47,
             ],
             'q2r6' => [
                 'label' => 'Improve our facilities, and equipment design, maintenance, and utilization',
-                'value' => 0.39
+                'value' => 0.39,
             ],
             'q2r7' => [
                 'label' => 'Improve our operational, fraud, and risk management',
-                'value' => 0.52
+                'value' => 0.52,
             ],
             'q2r8' => [
                 'label' => 'Implement better regulatory compliance and financial controls',
-                'value' => 0.39
+                'value' => 0.39,
             ],
             'q2r9' => [
                 'label' => 'Other, please specify',
-                'value' => 0.01
-            ]
+                'value' => 0.01,
+            ],
         ],
         'qsectorr3' => [
             'q2r1' => [
                 'label' => 'Better understand customer behavior and expectations',
-                'value' => 0.49
+                'value' => 0.49,
             ],
             'q2r2' => [
                 'label' => 'Optimize our pricing strategies and go-to-market programs',
-                'value' => 0.47
+                'value' => 0.47,
             ],
             'q2r3' => [
                 'label' => 'Product, services, or program improvement and innovation',
-                'value' => 0.45
+                'value' => 0.45,
             ],
             'q2r4' => [
                 'label' => 'Improve our understanding of the market and our competitors',
-                'value' => 0.42
+                'value' => 0.42,
             ],
             'q2r5' => [
                 'label' => 'Improve and optimize our business processes and operations',
-                'value' => 0.44
+                'value' => 0.44,
             ],
             'q2r6' => [
                 'label' => 'Improve our facilities, and equipment design, maintenance, and utilization',
-                'value' => 0.40
+                'value' => 0.40,
             ],
             'q2r7' => [
                 'label' => 'Improve our operational, fraud, and risk management',
-                'value' => 0.32
+                'value' => 0.32,
             ],
             'q2r8' => [
                 'label' => 'Implement better regulatory compliance and financial controls',
-                'value' => 0.36
+                'value' => 0.36,
             ],
             'q2r9' => [
                 'label' => 'Other, please specify',
-                'value' => 0.01
-            ]
+                'value' => 0.01,
+            ],
         ],
         'qsectorr4' => [
             'q2r1' => [
                 'label' => 'Better understand customer behavior and expectations',
-                'value' => 0.36
+                'value' => 0.36,
             ],
             'q2r2' => [
                 'label' => 'Optimize our pricing strategies and go-to-market programs',
-                'value' => 0.43
+                'value' => 0.43,
             ],
             'q2r3' => [
                 'label' => 'Product, services, or program improvement and innovation',
-                'value' => 0.44
+                'value' => 0.44,
             ],
             'q2r4' => [
                 'label' => 'Improve our understanding of the market and our competitors',
-                'value' => 0.42
+                'value' => 0.42,
             ],
             'q2r5' => [
                 'label' => 'Improve and optimize our business processes and operations',
-                'value' => 0.44
+                'value' => 0.44,
             ],
             'q2r6' => [
                 'label' => 'Improve our facilities, and equipment design, maintenance, and utilization',
-                'value' => 0.42
+                'value' => 0.42,
             ],
             'q2r7' => [
                 'label' => 'Improve our operational, fraud, and risk management',
-                'value' => 0.37
+                'value' => 0.37,
             ],
             'q2r8' => [
                 'label' => 'Implement better regulatory compliance and financial controls',
-                'value' => 0.46
+                'value' => 0.46,
             ],
             'q2r9' => [
                 'label' => 'Other, please specify',
-                'value' => 0.00
-            ]
+                'value' => 0.00,
+            ],
         ],
         'qsectorr5' => [
             'q2r1' => [
                 'label' => 'Better understand customer behavior and expectations',
-                'value' => 0.39
+                'value' => 0.39,
             ],
             'q2r2' => [
                 'label' => 'Optimize our pricing strategies and go-to-market programs',
-                'value' => 0.39
+                'value' => 0.39,
             ],
             'q2r3' => [
                 'label' => 'Product, services, or program improvement and innovation',
-                'value' => 0.40
+                'value' => 0.40,
             ],
             'q2r4' => [
                 'label' => 'Improve our understanding of the market and our competitors',
-                'value' => 0.48
+                'value' => 0.48,
             ],
             'q2r5' => [
                 'label' => 'Improve and optimize our business processes and operations',
-                'value' => 0.47
+                'value' => 0.47,
             ],
             'q2r6' => [
                 'label' => 'Improve our facilities, and equipment design, maintenance, and utilization',
-                'value' => 0.48
+                'value' => 0.48,
             ],
             'q2r7' => [
                 'label' => 'Improve our operational, fraud, and risk management',
-                'value' => 0.45
+                'value' => 0.45,
             ],
             'q2r8' => [
                 'label' => 'Implement better regulatory compliance and financial controls',
-                'value' => 0.30
+                'value' => 0.30,
             ],
             'q2r9' => [
                 'label' => 'Other, please specify',
-                'value' => 0.01
-            ]
+                'value' => 0.01,
+            ],
         ],
         'qsectorr6' => [
             'q2r1' => [
                 'label' => 'Better understand customer behavior and expectations',
-                'value' => 0.49
+                'value' => 0.49,
             ],
             'q2r2' => [
                 'label' => 'Optimize our pricing strategies and go-to-market programs',
-                'value' => 0.47
+                'value' => 0.47,
             ],
             'q2r3' => [
                 'label' => 'Product, services, or program improvement and innovation',
-                'value' => 0.41
+                'value' => 0.41,
             ],
             'q2r4' => [
                 'label' => 'Improve our understanding of the market and our competitors',
-                'value' => 0.45
+                'value' => 0.45,
             ],
             'q2r5' => [
                 'label' => 'Improve and optimize our business processes and operations',
-                'value' => 0.57
+                'value' => 0.57,
             ],
             'q2r6' => [
                 'label' => 'Improve our facilities, and equipment design, maintenance, and utilization',
-                'value' => 0.42
+                'value' => 0.42,
             ],
             'q2r7' => [
                 'label' => 'Improve our operational, fraud, and risk management',
-                'value' => 0.41
+                'value' => 0.41,
             ],
             'q2r8' => [
                 'label' => 'Implement better regulatory compliance and financial controls',
-                'value' => 0.36
+                'value' => 0.36,
             ],
             'q2r9' => [
                 'label' => 'Other, please specify',
-                'value' => 0.00
-            ]
+                'value' => 0.00,
+            ],
         ],
         'qsectorr7' => [
             'q2r1' => [
                 'label' => 'Better understand customer behavior and expectations',
-                'value' => 0.37
+                'value' => 0.37,
             ],
             'q2r2' => [
                 'label' => 'Optimize our pricing strategies and go-to-market programs',
-                'value' => 0.48
+                'value' => 0.48,
             ],
             'q2r3' => [
                 'label' => 'Product, services, or program improvement and innovation',
-                'value' => 0.37
+                'value' => 0.37,
             ],
             'q2r4' => [
                 'label' => 'Improve our understanding of the market and our competitors',
-                'value' => 0.63
+                'value' => 0.63,
             ],
             'q2r5' => [
                 'label' => 'Improve and optimize our business processes and operations',
-                'value' => 0.44
+                'value' => 0.44,
             ],
             'q2r6' => [
                 'label' => 'Improve our facilities, and equipment design, maintenance, and utilization',
-                'value' => 0.30
+                'value' => 0.30,
             ],
             'q2r7' => [
                 'label' => 'Improve our operational, fraud, and risk management',
-                'value' => 0.41
+                'value' => 0.41,
             ],
             'q2r8' => [
                 'label' => 'Implement better regulatory compliance and financial controls',
-                'value' => 0.44
+                'value' => 0.44,
             ],
             'q2r9' => [
                 'label' => 'Other, please specify',
-                'value' => 0.00
-            ]
+                'value' => 0.00,
+            ],
         ],
         'qsectorr8' => [
             'q2r1' => [
                 'label' => 'Better understand customer behavior and expectations',
-                'value' => 0.39
+                'value' => 0.39,
             ],
             'q2r2' => [
                 'label' => 'Optimize our pricing strategies and go-to-market programs',
-                'value' => 0.41
+                'value' => 0.41,
             ],
             'q2r3' => [
                 'label' => 'Product, services, or program improvement and innovation',
-                'value' => 0.41
+                'value' => 0.41,
             ],
             'q2r4' => [
                 'label' => 'Improve our understanding of the market and our competitors',
-                'value' => 0.48
+                'value' => 0.48,
             ],
             'q2r5' => [
                 'label' => 'Improve and optimize our business processes and operations',
-                'value' => 0.44
+                'value' => 0.44,
             ],
             'q2r6' => [
                 'label' => 'Improve our facilities, and equipment design, maintenance, and utilization',
-                'value' => 0.29
+                'value' => 0.29,
             ],
             'q2r7' => [
                 'label' => 'Improve our operational, fraud, and risk management',
-                'value' => 0.39
+                'value' => 0.39,
             ],
             'q2r8' => [
                 'label' => 'Implement better regulatory compliance and financial controls',
-                'value' => 0.39
+                'value' => 0.39,
             ],
             'q2r9' => [
                 'label' => 'Other, please specify',
-                'value' => 0.00
-            ]
+                'value' => 0.00,
+            ],
         ],
         'qsectorr9' => [
             'q2r1' => [
                 'label' => 'Better understand customer behavior and expectations',
-                'value' => 0.31
+                'value' => 0.31,
             ],
             'q2r2' => [
                 'label' => 'Optimize our pricing strategies and go-to-market programs',
-                'value' => 0.38
+                'value' => 0.38,
             ],
             'q2r3' => [
                 'label' => 'Product, services, or program improvement and innovation',
-                'value' => 0.48
+                'value' => 0.48,
             ],
             'q2r4' => [
                 'label' => 'Improve our understanding of the market and our competitors',
-                'value' => 0.32
+                'value' => 0.32,
             ],
             'q2r5' => [
                 'label' => 'Improve and optimize our business processes and operations',
-                'value' => 0.41
+                'value' => 0.41,
             ],
             'q2r6' => [
                 'label' => 'Improve our facilities, and equipment design, maintenance, and utilization',
-                'value' => 0.31
+                'value' => 0.31,
             ],
             'q2r7' => [
                 'label' => 'Improve our operational, fraud, and risk management',
-                'value' => 0.31
+                'value' => 0.31,
             ],
             'q2r8' => [
                 'label' => 'Implement better regulatory compliance and financial controls',
-                'value' => 0.39
+                'value' => 0.39,
             ],
             'q2r9' => [
                 'label' => 'Other, please specify',
-                'value' => 0.00
-            ]
+                'value' => 0.00,
+            ],
         ],
     ],
     'q4' => [
         'qsectorr1' => [
             'q4r1' => [
                 'label' => 'Cost reduction',
-                'value' => 2.60
+                'value' => 2.60,
             ],
             'q4r2' => [
                 'label' => 'Time efficiency',
-                'value' => 2.98
+                'value' => 2.98,
             ],
             'q4r3' => [
                 'label' => 'Product/service quality',
-                'value' => 3.11
+                'value' => 3.11,
             ],
             'q4r4' => [
                 'label' => 'Revenue growth',
-                'value' => 3.11
+                'value' => 3.11,
             ],
             'q4r5' => [
                 'label' => 'Customer satisfaction',
-                'value' => 3.23
+                'value' => 3.23,
             ],
             'q4r6' => [
                 'label' => 'Business model innovation',
-                'value' => 2.77
+                'value' => 2.77,
             ],
             'q4r7' => [
                 'label' => 'Number of new products/services launched',
-                'value' => 3.06
+                'value' => 3.06,
             ],
         ],
         'qsectorr2' => [
             'q4r1' => [
                 'label' => 'Cost reduction',
-                'value' => 2.94
+                'value' => 2.94,
             ],
             'q4r2' => [
                 'label' => 'Time efficiency',
-                'value' => 3.17
+                'value' => 3.17,
             ],
             'q4r3' => [
                 'label' => 'Product/service quality',
-                'value' => 3.65
+                'value' => 3.65,
             ],
             'q4r4' => [
                 'label' => 'Revenue growth',
-                'value' => 3.21
+                'value' => 3.21,
             ],
             'q4r5' => [
                 'label' => 'Customer satisfaction',
-                'value' => 3.65
+                'value' => 3.65,
             ],
             'q4r6' => [
                 'label' => 'Business model innovation',
-                'value' => 2.87
+                'value' => 2.87,
             ],
             'q4r7' => [
                 'label' => 'Number of new products/services launched',
-                'value' => 3.23
+                'value' => 3.23,
             ],
         ],
         'qsectorr3' => [
             'q4r1' => [
                 'label' => 'Cost reduction',
-                'value' => 2.71
+                'value' => 2.71,
             ],
             'q4r2' => [
                 'label' => 'Time efficiency',
-                'value' => 3.18
+                'value' => 3.18,
             ],
             'q4r3' => [
                 'label' => 'Product/service quality',
-                'value' => 3.83
+                'value' => 3.83,
             ],
             'q4r4' => [
                 'label' => 'Revenue growth',
-                'value' => 3.31
+                'value' => 3.31,
             ],
             'q4r5' => [
                 'label' => 'Customer satisfaction',
-                'value' => 3.58
+                'value' => 3.58,
             ],
             'q4r6' => [
                 'label' => 'Business model innovation',
-                'value' => 3.22
+                'value' => 3.22,
             ],
             'q4r7' => [
                 'label' => 'Number of new products/services launched',
-                'value' => 3.28
+                'value' => 3.28,
             ],
         ],
         'qsectorr4' => [
             'q4r1' => [
                 'label' => 'Cost reduction',
-                'value' => 2.63
+                'value' => 2.63,
             ],
             'q4r2' => [
                 'label' => 'Time efficiency',
-                'value' => 3.07
+                'value' => 3.07,
             ],
             'q4r3' => [
                 'label' => 'Product/service quality',
-                'value' => 3.31
+                'value' => 3.31,
             ],
             'q4r4' => [
                 'label' => 'Revenue growth',
-                'value' => 3.08
+                'value' => 3.08,
             ],
             'q4r5' => [
                 'label' => 'Customer satisfaction',
-                'value' => 3.27
+                'value' => 3.27,
             ],
             'q4r6' => [
                 'label' => 'Business model innovation',
-                'value' => 2.76
+                'value' => 2.76,
             ],
             'q4r7' => [
                 'label' => 'Number of new products/services launched',
-                'value' => 3.01
+                'value' => 3.01,
             ],
         ],
         'qsectorr5' => [
             'q4r1' => [
                 'label' => 'Cost reduction',
-                'value' => 3.00
+                'value' => 3.00,
             ],
             'q4r2' => [
                 'label' => 'Time efficiency',
-                'value' => 3.20
+                'value' => 3.20,
             ],
             'q4r3' => [
                 'label' => 'Product/service quality',
-                'value' => 3.43
+                'value' => 3.43,
             ],
             'q4r4' => [
                 'label' => 'Revenue growth',
-                'value' => 3.31
+                'value' => 3.31,
             ],
             'q4r5' => [
                 'label' => 'Customer satisfaction',
-                'value' => 3.30
+                'value' => 3.30,
             ],
             'q4r6' => [
                 'label' => 'Business model innovation',
-                'value' => 3.03
+                'value' => 3.03,
             ],
             'q4r7' => [
                 'label' => 'Number of new products/services launched',
-                'value' => 3.03
+                'value' => 3.03,
             ],
         ],
         'qsectorr6' => [
             'q4r1' => [
                 'label' => 'Cost reduction',
-                'value' => 2.82
+                'value' => 2.82,
             ],
             'q4r2' => [
                 'label' => 'Time efficiency',
-                'value' => 3.27
+                'value' => 3.27,
             ],
             'q4r3' => [
                 'label' => 'Product/service quality',
-                'value' => 3.64
+                'value' => 3.64,
             ],
             'q4r4' => [
                 'label' => 'Revenue growth',
-                'value' => 3.11
+                'value' => 3.11,
             ],
             'q4r5' => [
                 'label' => 'Customer satisfaction',
-                'value' => 3.55
+                'value' => 3.55,
             ],
             'q4r6' => [
                 'label' => 'Business model innovation',
-                'value' => 3.33
+                'value' => 3.33,
             ],
             'q4r7' => [
                 'label' => 'Number of new products/services launched',
-                'value' => 3.11
+                'value' => 3.11,
             ],
         ],
         'qsectorr7' => [
             'q4r1' => [
                 'label' => 'Cost reduction',
-                'value' => 2.78
+                'value' => 2.78,
             ],
             'q4r2' => [
                 'label' => 'Time efficiency',
-                'value' => 3.67
+                'value' => 3.67,
             ],
             'q4r3' => [
                 'label' => 'Product/service quality',
-                'value' => 4.15
+                'value' => 4.15,
             ],
             'q4r4' => [
                 'label' => 'Revenue growth',
-                'value' => 3.26
+                'value' => 3.26,
             ],
             'q4r5' => [
                 'label' => 'Customer satisfaction',
-                'value' => 3.78
+                'value' => 3.78,
             ],
             'q4r6' => [
                 'label' => 'Business model innovation',
-                'value' => 3.07
+                'value' => 3.07,
             ],
             'q4r7' => [
                 'label' => 'Number of new products/services launched',
-                'value' => 3.07
+                'value' => 3.07,
             ],
         ],
         'qsectorr8' => [
             'q4r1' => [
                 'label' => 'Cost reduction',
-                'value' => 2.94
+                'value' => 2.94,
             ],
             'q4r2' => [
                 'label' => 'Time efficiency',
-                'value' => 3.14
+                'value' => 3.14,
             ],
             'q4r3' => [
                 'label' => 'Product/service quality',
-                'value' => 3.44
+                'value' => 3.44,
             ],
             'q4r4' => [
                 'label' => 'Revenue growth',
-                'value' => 3.17
+                'value' => 3.17,
             ],
             'q4r5' => [
                 'label' => 'Customer satisfaction',
-                'value' => 3.33
+                'value' => 3.33,
             ],
             'q4r6' => [
                 'label' => 'Business model innovation',
-                'value' => 3.14
+                'value' => 3.14,
             ],
             'q4r7' => [
                 'label' => 'Number of new products/services launched',
-                'value' => 3.08
+                'value' => 3.08,
             ],
         ],
         'qsectorr9' => [
             'q4r1' => [
                 'label' => 'Cost reduction',
-                'value' => 2.80
+                'value' => 2.80,
             ],
             'q4r2' => [
                 'label' => 'Time efficiency',
-                'value' => 3.21
+                'value' => 3.21,
             ],
             'q4r3' => [
                 'label' => 'Product/service quality',
-                'value' => 3.32
+                'value' => 3.32,
             ],
             'q4r4' => [
                 'label' => 'Revenue growth',
-                'value' => 3.35
+                'value' => 3.35,
             ],
             'q4r5' => [
                 'label' => 'Customer satisfaction',
-                'value' => 3.42
+                'value' => 3.42,
             ],
             'q4r6' => [
                 'label' => 'Business model innovation',
-                'value' => 2.76
+                'value' => 2.76,
             ],
             'q4r7' => [
                 'label' => 'Number of new products/services launched',
-                'value' => 2.85
+                'value' => 2.85,
             ],
         ],
     ],
@@ -2063,199 +2064,199 @@ $industryGraphReference = [
         'qsectorr1' => [
             '1' => [
                 'label' => 'Negative benefits',
-                'value' => 0.0
+                'value' => 0.0,
             ],
             '2' => [
                 'label' => 'No benefits',
-                'value' => 1.5
+                'value' => 1.5,
             ],
             '3' => [
                 'label' => 'Low level of benefits',
-                'value' => 27.7
+                'value' => 27.7,
             ],
             '4' => [
                 'label' => 'Moderate level of benefits',
-                'value' => 67.7
+                'value' => 67.7,
             ],
             '5' => [
                 'label' => 'High level of benefits',
-                'value' => 3.1
+                'value' => 3.1,
             ],
         ],
         'qsectorr2' => [
             '1' => [
                 'label' => 'Negative benefits',
-                'value' => 0.0
+                'value' => 0.0,
             ],
             '2' => [
                 'label' => 'No benefits',
-                'value' => 1.3
+                'value' => 1.3,
             ],
             '3' => [
                 'label' => 'Low level of benefits',
-                'value' => 11.7
+                'value' => 11.7,
             ],
             '4' => [
                 'label' => 'Moderate level of benefits',
-                'value' => 76.6
+                'value' => 76.6,
             ],
             '5' => [
                 'label' => 'High level of benefits',
-                'value' => 10.4
+                'value' => 10.4,
             ],
         ],
         'qsectorr3' => [
             '1' => [
                 'label' => 'Negative benefits',
-                'value' => 0.0
+                'value' => 0.0,
             ],
             '2' => [
                 'label' => 'No benefits',
-                'value' => 0.0
+                'value' => 0.0,
             ],
             '3' => [
                 'label' => 'Low level of benefits',
-                'value' => 11.5
+                'value' => 11.5,
             ],
             '4' => [
                 'label' => 'Moderate level of benefits',
-                'value' => 73.1
+                'value' => 73.1,
             ],
             '5' => [
                 'label' => 'High level of benefits',
-                'value' => 14.1
+                'value' => 14.1,
             ],
         ],
         'qsectorr4' => [
             '1' => [
                 'label' => 'Negative benefits',
-                'value' => 0.0
+                'value' => 0.0,
             ],
             '2' => [
                 'label' => 'No benefits',
-                'value' => 3.6
+                'value' => 3.6,
             ],
             '3' => [
                 'label' => 'Low level of benefits',
-                'value' => 33.3
+                'value' => 33.3,
             ],
             '4' => [
                 'label' => 'Moderate level of benefits',
-                'value' => 58.3
+                'value' => 58.3,
             ],
             '5' => [
                 'label' => 'High level of benefits',
-                'value' => 3.6
+                'value' => 3.6,
             ],
         ],
         'qsectorr5' => [
             '1' => [
                 'label' => 'Negative benefits',
-                'value' => 0.0
+                'value' => 0.0,
             ],
             '2' => [
                 'label' => 'No benefits',
-                'value' => 2.2
+                'value' => 2.2,
             ],
             '3' => [
                 'label' => 'Low level of benefits',
-                'value' => 14.6
+                'value' => 14.6,
             ],
             '4' => [
                 'label' => 'Moderate level of benefits',
-                'value' => 66.3
+                'value' => 66.3,
             ],
             '5' => [
                 'label' => 'High level of benefits',
-                'value' => 14.6
+                'value' => 14.6,
             ],
         ],
         'qsectorr6' => [
             '1' => [
                 'label' => 'Negative benefits',
-                'value' => 0.0
+                'value' => 0.0,
             ],
             '2' => [
                 'label' => 'No benefits',
-                'value' => 6.0
+                'value' => 6.0,
             ],
             '3' => [
                 'label' => 'Low level of benefits',
-                'value' => 9.6
+                'value' => 9.6,
             ],
             '4' => [
                 'label' => 'Moderate level of benefits',
-                'value' => 73.5
+                'value' => 73.5,
             ],
             '5' => [
                 'label' => 'High level of benefits',
-                'value' => 10.8
+                'value' => 10.8,
             ],
         ],
         'qsectorr7' => [
             '1' => [
                 'label' => 'Negative benefits',
-                'value' => 0.0
+                'value' => 0.0,
             ],
             '2' => [
                 'label' => 'No benefits',
-                'value' => 7.4
+                'value' => 7.4,
             ],
             '3' => [
                 'label' => 'Low level of benefits',
-                'value' => 3.7
+                'value' => 3.7,
             ],
             '4' => [
                 'label' => 'Moderate level of benefits',
-                'value' => 85.2
+                'value' => 85.2,
             ],
             '5' => [
                 'label' => 'High level of benefits',
-                'value' => 3.7
+                'value' => 3.7,
             ],
         ],
         'qsectorr8' => [
             '1' => [
                 'label' => 'Negative benefits',
-                'value' => 1.5
+                'value' => 1.5,
             ],
             '2' => [
                 'label' => 'No benefits',
-                'value' => 1.5
+                'value' => 1.5,
             ],
             '3' => [
                 'label' => 'Low level of benefits',
-                'value' => 24.2
+                'value' => 24.2,
             ],
             '4' => [
                 'label' => 'Moderate level of benefits',
-                'value' => 53.0
+                'value' => 53.0,
             ],
             '5' => [
                 'label' => 'High level of benefits',
-                'value' => 18.2
+                'value' => 18.2,
             ],
         ],
         'qsectorr9' => [
             '1' => [
                 'label' => 'Negative benefits',
-                'value' => 0.0
+                'value' => 0.0,
             ],
             '2' => [
                 'label' => 'No benefits',
-                'value' => 4.2
+                'value' => 4.2,
             ],
             '3' => [
                 'label' => 'Low level of benefits',
-                'value' => 19.7
+                'value' => 19.7,
             ],
             '4' => [
                 'label' => 'Moderate level of benefits',
-                'value' => 66.2
+                'value' => 66.2,
             ],
             '5' => [
                 'label' => 'High level of benefits',
-                'value' => 9.9
+                'value' => 9.9,
             ],
         ],
     ],
@@ -2263,127 +2264,127 @@ $industryGraphReference = [
         'qsectorr1' => [
             'q6ar1' => [
                 'label' => 'Increased Profit by',
-                'value' => 4.77
+                'value' => 4.77,
             ],
             'q6ar2' => [
                 'label' => 'Increased Revenue by',
-                'value' => 3.75
+                'value' => 3.75,
             ],
             'q6ar3' => [
                 'label' => 'Reduced Cost by',
-                'value' => 2.94
+                'value' => 2.94,
             ],
         ],
         'qsectorr2' => [
             'q6ar1' => [
                 'label' => 'Increased Profit by',
-                'value' => 7.31
+                'value' => 7.31,
             ],
             'q6ar2' => [
                 'label' => 'Increased Revenue by',
-                'value' => 7.56
+                'value' => 7.56,
             ],
             'q6ar3' => [
                 'label' => 'Reduced Cost by',
-                'value' => 5.33
+                'value' => 5.33,
             ],
         ],
         'qsectorr3' => [
             'q6ar1' => [
                 'label' => 'Increased Profit by',
-                'value' => 9.85
+                'value' => 9.85,
             ],
             'q6ar2' => [
                 'label' => 'Increased Revenue by',
-                'value' => 8.54
+                'value' => 8.54,
             ],
             'q6ar3' => [
                 'label' => 'Reduced Cost by',
-                'value' => 10.79
+                'value' => 10.79,
             ],
         ],
         'qsectorr4' => [
             'q6ar1' => [
                 'label' => 'Increased Profit by',
-                'value' => 4.79
+                'value' => 4.79,
             ],
             'q6ar2' => [
                 'label' => 'Increased Revenue by',
-                'value' => 4.61
+                'value' => 4.61,
             ],
             'q6ar3' => [
                 'label' => 'Reduced Cost by',
-                'value' => 4.38
+                'value' => 4.38,
             ],
         ],
         'qsectorr5' => [
             'q6ar1' => [
                 'label' => 'Increased Profit by',
-                'value' => 7.14
+                'value' => 7.14,
             ],
             'q6ar2' => [
                 'label' => 'Increased Revenue by',
-                'value' => 7.07
+                'value' => 7.07,
             ],
             'q6ar3' => [
                 'label' => 'Reduced Cost by',
-                'value' => 7.00
+                'value' => 7.00,
             ],
         ],
         'qsectorr6' => [
             'q6ar1' => [
                 'label' => 'Increased Profit by',
-                'value' => 7.46
+                'value' => 7.46,
             ],
             'q6ar2' => [
                 'label' => 'Increased Revenue by',
-                'value' => 7.43
+                'value' => 7.43,
             ],
             'q6ar3' => [
                 'label' => 'Reduced Cost by',
-                'value' => 5.00
+                'value' => 5.00,
             ],
         ],
         'qsectorr7' => [
             'q6ar1' => [
                 'label' => 'Increased Profit by',
-                'value' => 7.24
+                'value' => 7.24,
             ],
             'q6ar2' => [
                 'label' => 'Increased Revenue by',
-                'value' => 6.65
+                'value' => 6.65,
             ],
             'q6ar3' => [
                 'label' => 'Reduced Cost by',
-                'value' => 6.10
+                'value' => 6.10,
             ],
         ],
         'qsectorr8' => [
             'q6ar1' => [
                 'label' => 'Increased Profit by',
-                'value' => 5.96
+                'value' => 5.96,
             ],
             'q6ar2' => [
                 'label' => 'Increased Revenue by',
-                'value' => 8.09
+                'value' => 8.09,
             ],
             'q6ar3' => [
                 'label' => 'Reduced Cost by',
-                'value' => 5.27
+                'value' => 5.27,
             ],
         ],
         'qsectorr9' => [
             'q6ar1' => [
                 'label' => 'Increased Profit by',
-                'value' => 6.13
+                'value' => 6.13,
             ],
             'q6ar2' => [
                 'label' => 'Increased Revenue by',
-                'value' => 5.47
+                'value' => 5.47,
             ],
             'q6ar3' => [
                 'label' => 'Reduced Cost by',
-                'value' => 4.57
+                'value' => 4.57,
             ],
         ],
     ],
@@ -2391,199 +2392,199 @@ $industryGraphReference = [
         'qsectorr1' => [
             'q7r1' => [
                 'label' => 'Time efficiency',
-                'value' => 3.14
+                'value' => 3.14,
             ],
             'q7r2' => [
                 'label' => 'Product/service quality',
-                'value' => 3.02
+                'value' => 3.02,
             ],
             'q7r3' => [
                 'label' => 'Customer satisfaction',
-                'value' => 3.28
+                'value' => 3.28,
             ],
             'q7r4' => [
                 'label' => 'Business model innovation',
-                'value' => 2.85
+                'value' => 2.85,
             ],
             'q7r5' => [
                 'label' => 'Number of new products or services launched',
-                'value' => 3.00
+                'value' => 3.00,
             ],
         ],
         'qsectorr2' => [
             'q7r1' => [
                 'label' => 'Time efficiency',
-                'value' => 3.39
+                'value' => 3.39,
             ],
             'q7r2' => [
                 'label' => 'Product/service quality',
-                'value' => 3.64
+                'value' => 3.64,
             ],
             'q7r3' => [
                 'label' => 'Customer satisfaction',
-                'value' => 3.52
+                'value' => 3.52,
             ],
             'q7r4' => [
                 'label' => 'Business model innovation',
-                'value' => 3.01
+                'value' => 3.01,
             ],
             'q7r5' => [
                 'label' => 'Number of new products or services launched',
-                'value' => 3.38
+                'value' => 3.38,
             ],
         ],
         'qsectorr3' => [
             'q7r1' => [
                 'label' => 'Time efficiency',
-                'value' => 3.40
+                'value' => 3.40,
             ],
             'q7r2' => [
                 'label' => 'Product/service quality',
-                'value' => 3.69
+                'value' => 3.69,
             ],
             'q7r3' => [
                 'label' => 'Customer satisfaction',
-                'value' => 3.63
+                'value' => 3.63,
             ],
             'q7r4' => [
                 'label' => 'Business model innovation',
-                'value' => 3.04
+                'value' => 3.04,
             ],
             'q7r5' => [
                 'label' => 'Number of new products or services launched',
-                'value' => 3.46
+                'value' => 3.46,
             ],
         ],
         'qsectorr4' => [
             'q7r1' => [
                 'label' => 'Time efficiency',
-                'value' => 3.12
+                'value' => 3.12,
             ],
             'q7r2' => [
                 'label' => 'Product/service quality',
-                'value' => 3.36
+                'value' => 3.36,
             ],
             'q7r3' => [
                 'label' => 'Customer satisfaction',
-                'value' => 3.43
+                'value' => 3.43,
             ],
             'q7r4' => [
                 'label' => 'Business model innovation',
-                'value' => 3.12
+                'value' => 3.12,
             ],
             'q7r5' => [
                 'label' => 'Number of new products or services launched',
-                'value' => 3.08
+                'value' => 3.08,
             ],
         ],
         'qsectorr5' => [
             'q7r1' => [
                 'label' => 'Time efficiency',
-                'value' => 3.15
+                'value' => 3.15,
             ],
             'q7r2' => [
                 'label' => 'Product/service quality',
-                'value' => 3.46
+                'value' => 3.46,
             ],
             'q7r3' => [
                 'label' => 'Customer satisfaction',
-                'value' => 3.29
+                'value' => 3.29,
             ],
             'q7r4' => [
                 'label' => 'Business model innovation',
-                'value' => 3.04
+                'value' => 3.04,
             ],
             'q7r5' => [
                 'label' => 'Number of new products or services launched',
-                'value' => 3.02
+                'value' => 3.02,
             ],
         ],
         'qsectorr6' => [
             'q7r1' => [
                 'label' => 'Time efficiency',
-                'value' => 3.28
+                'value' => 3.28,
             ],
             'q7r2' => [
                 'label' => 'Product/service quality',
-                'value' => 3.53
+                'value' => 3.53,
             ],
             'q7r3' => [
                 'label' => 'Customer satisfaction',
-                'value' => 3.63
+                'value' => 3.63,
             ],
             'q7r4' => [
                 'label' => 'Business model innovation',
-                'value' => 3.11
+                'value' => 3.11,
             ],
             'q7r5' => [
                 'label' => 'Number of new products or services launched',
-                'value' => 3.36
+                'value' => 3.36,
             ],
         ],
         'qsectorr7' => [
             'q7r1' => [
                 'label' => 'Time efficiency',
-                'value' => 3.89
+                'value' => 3.89,
             ],
             'q7r2' => [
                 'label' => 'Product/service quality',
-                'value' => 3.81
+                'value' => 3.81,
             ],
             'q7r3' => [
                 'label' => 'Customer satisfaction',
-                'value' => 3.78
+                'value' => 3.78,
             ],
             'q7r4' => [
                 'label' => 'Business model innovation',
-                'value' => 3.04
+                'value' => 3.04,
             ],
             'q7r5' => [
                 'label' => 'Number of new products or services launched',
-                'value' => 3.41
+                'value' => 3.41,
             ],
         ],
         'qsectorr8' => [
             'q7r1' => [
                 'label' => 'Time efficiency',
-                'value' => 3.50
+                'value' => 3.50,
             ],
             'q7r2' => [
                 'label' => 'Product/service quality',
-                'value' => 3.41
+                'value' => 3.41,
             ],
             'q7r3' => [
                 'label' => 'Customer satisfaction',
-                'value' => 3.59
+                'value' => 3.59,
             ],
             'q7r4' => [
                 'label' => 'Business model innovation',
-                'value' => 3.06
+                'value' => 3.06,
             ],
             'q7r5' => [
                 'label' => 'Number of new products or services launched',
-                'value' => 3.05
+                'value' => 3.05,
             ],
         ],
         'qsectorr9' => [
             'q7r1' => [
                 'label' => 'Time efficiency',
-                'value' => 3.23
+                'value' => 3.23,
             ],
             'q7r2' => [
                 'label' => 'Product/service quality',
-                'value' => 3.34
+                'value' => 3.34,
             ],
             'q7r3' => [
                 'label' => 'Customer satisfaction',
-                'value' => 3.42
+                'value' => 3.42,
             ],
             'q7r4' => [
                 'label' => 'Business model innovation',
-                'value' => 3.04
+                'value' => 3.04,
             ],
             'q7r5' => [
                 'label' => 'Number of new products or services launched',
-                'value' => 3.10
+                'value' => 3.10,
             ],
         ],
     ],
@@ -2591,271 +2592,271 @@ $industryGraphReference = [
         'qsectorr1' => [
             'q8r1' => [
                 'label' => 'Cost reduction',
-                'value' => 2.94
+                'value' => 2.94,
             ],
             'q8r2' => [
                 'label' => 'Time efficiency',
-                'value' => 3.69
+                'value' => 3.69,
             ],
             'q8r3' => [
                 'label' => 'Product/service quality',
-                'value' => 3.54
+                'value' => 3.54,
             ],
             'q8r4' => [
                 'label' => 'Revenue growth',
-                'value' => 3.88
+                'value' => 3.88,
             ],
             'q8r5' => [
                 'label' => 'Customer satisfaction',
-                'value' => 3.63
+                'value' => 3.63,
             ],
             'q8r6' => [
                 'label' => 'Business model innovation',
-                'value' => 3.75
+                'value' => 3.75,
             ],
             'q8r7' => [
                 'label' => 'Number of new products/services launched',
-                'value' => 3.72
+                'value' => 3.72,
             ],
         ],
         'qsectorr2' => [
             'q8r1' => [
                 'label' => 'Cost reduction',
-                'value' => 3.30
+                'value' => 3.30,
             ],
             'q8r2' => [
                 'label' => 'Time efficiency',
-                'value' => 3.94
+                'value' => 3.94,
             ],
             'q8r3' => [
                 'label' => 'Product/service quality',
-                'value' => 4.06
+                'value' => 4.06,
             ],
             'q8r4' => [
                 'label' => 'Revenue growth',
-                'value' => 4.21
+                'value' => 4.21,
             ],
             'q8r5' => [
                 'label' => 'Customer satisfaction',
-                'value' => 4.27
+                'value' => 4.27,
             ],
             'q8r6' => [
                 'label' => 'Business model innovation',
-                'value' => 3.78
+                'value' => 3.78,
             ],
             'q8r7' => [
                 'label' => 'Number of new products/services launched',
-                'value' => 3.99
+                'value' => 3.99,
             ],
         ],
         'qsectorr3' => [
             'q8r1' => [
                 'label' => 'Cost reduction',
-                'value' => 3.33
+                'value' => 3.33,
             ],
             'q8r2' => [
                 'label' => 'Time efficiency',
-                'value' => 3.99
+                'value' => 3.99,
             ],
             'q8r3' => [
                 'label' => 'Product/service quality',
-                'value' => 4.22
+                'value' => 4.22,
             ],
             'q8r4' => [
                 'label' => 'Revenue growth',
-                'value' => 3.85
+                'value' => 3.85,
             ],
             'q8r5' => [
                 'label' => 'Customer satisfaction',
-                'value' => 4.26
+                'value' => 4.26,
             ],
             'q8r6' => [
                 'label' => 'Business model innovation',
-                'value' => 3.69
+                'value' => 3.69,
             ],
             'q8r7' => [
                 'label' => 'Number of new products/services launched',
-                'value' => 3.71
+                'value' => 3.71,
             ],
         ],
         'qsectorr4' => [
             'q8r1' => [
                 'label' => 'Cost reduction',
-                'value' => 3.07
+                'value' => 3.07,
             ],
             'q8r2' => [
                 'label' => 'Time efficiency',
-                'value' => 3.65
+                'value' => 3.65,
             ],
             'q8r3' => [
                 'label' => 'Product/service quality',
-                'value' => 3.70
+                'value' => 3.70,
             ],
             'q8r4' => [
                 'label' => 'Revenue growth',
-                'value' => 3.69
+                'value' => 3.69,
             ],
             'q8r5' => [
                 'label' => 'Customer satisfaction',
-                'value' => 3.81
+                'value' => 3.81,
             ],
             'q8r6' => [
                 'label' => 'Business model innovation',
-                'value' => 3.36
+                'value' => 3.36,
             ],
             'q8r7' => [
                 'label' => 'Number of new products/services launched',
-                'value' => 3.44
+                'value' => 3.44,
             ],
         ],
         'qsectorr5' => [
             'q8r1' => [
                 'label' => 'Cost reduction',
-                'value' => 3.13
+                'value' => 3.13,
             ],
             'q8r2' => [
                 'label' => 'Time efficiency',
-                'value' => 3.67
+                'value' => 3.67,
             ],
             'q8r3' => [
                 'label' => 'Product/service quality',
-                'value' => 4.03
+                'value' => 4.03,
             ],
             'q8r4' => [
                 'label' => 'Revenue growth',
-                'value' => 3.87
+                'value' => 3.87,
             ],
             'q8r5' => [
                 'label' => 'Customer satisfaction',
-                'value' => 3.70
+                'value' => 3.70,
             ],
             'q8r6' => [
                 'label' => 'Business model innovation',
-                'value' => 3.53
+                'value' => 3.53,
             ],
             'q8r7' => [
                 'label' => 'Number of new products/services launched',
-                'value' => 3.52
+                'value' => 3.52,
             ],
         ],
         'qsectorr6' => [
             'q8r1' => [
                 'label' => 'Cost reduction',
-                'value' => 3.35
+                'value' => 3.35,
             ],
             'q8r2' => [
                 'label' => 'Time efficiency',
-                'value' => 3.57
+                'value' => 3.57,
             ],
             'q8r3' => [
                 'label' => 'Product/service quality',
-                'value' => 4.20
+                'value' => 4.20,
             ],
             'q8r4' => [
                 'label' => 'Revenue growth',
-                'value' => 4.18
+                'value' => 4.18,
             ],
             'q8r5' => [
                 'label' => 'Customer satisfaction',
-                'value' => 4.16
+                'value' => 4.16,
             ],
             'q8r6' => [
                 'label' => 'Business model innovation',
-                'value' => 3.59
+                'value' => 3.59,
             ],
             'q8r7' => [
                 'label' => 'Number of new products/services launched',
-                'value' => 3.89
+                'value' => 3.89,
             ],
         ],
         'qsectorr7' => [
             'q8r1' => [
                 'label' => 'Cost reduction',
-                'value' => 3.30
+                'value' => 3.30,
             ],
             'q8r2' => [
                 'label' => 'Time efficiency',
-                'value' => 4.33
+                'value' => 4.33,
             ],
             'q8r3' => [
                 'label' => 'Product/service quality',
-                'value' => 4.67
+                'value' => 4.67,
             ],
             'q8r4' => [
                 'label' => 'Revenue growth',
-                'value' => 4.07
+                'value' => 4.07,
             ],
             'q8r5' => [
                 'label' => 'Customer satisfaction',
-                'value' => 4.48
+                'value' => 4.48,
             ],
             'q8r6' => [
                 'label' => 'Business model innovation',
-                'value' => 3.48
+                'value' => 3.48,
             ],
             'q8r7' => [
                 'label' => 'Number of new products/services launched',
-                'value' => 4.44
+                'value' => 4.44,
             ],
         ],
         'qsectorr8' => [
             'q8r1' => [
                 'label' => 'Cost reduction',
-                'value' => 3.26
+                'value' => 3.26,
             ],
             'q8r2' => [
                 'label' => 'Time efficiency',
-                'value' => 3.83
+                'value' => 3.83,
             ],
             'q8r3' => [
                 'label' => 'Product/service quality',
-                'value' => 4.11
+                'value' => 4.11,
             ],
             'q8r4' => [
                 'label' => 'Revenue growth',
-                'value' => 4.02
+                'value' => 4.02,
             ],
             'q8r5' => [
                 'label' => 'Customer satisfaction',
-                'value' => 3.97
+                'value' => 3.97,
             ],
             'q8r6' => [
                 'label' => 'Business model innovation',
-                'value' => 3.77
+                'value' => 3.77,
             ],
             'q8r7' => [
                 'label' => 'Number of new products/services launched',
-                'value' => 3.77
+                'value' => 3.77,
             ],
         ],
         'qsectorr9' => [
             'q8r1' => [
                 'label' => 'Cost reduction',
-                'value' => 3.20
+                'value' => 3.20,
             ],
             'q8r2' => [
                 'label' => 'Time efficiency',
-                'value' => 3.94
+                'value' => 3.94,
             ],
             'q8r3' => [
                 'label' => 'Product/service quality',
-                'value' => 4.13
+                'value' => 4.13,
             ],
             'q8r4' => [
                 'label' => 'Revenue growth',
-                'value' => 3.96
+                'value' => 3.96,
             ],
             'q8r5' => [
                 'label' => 'Customer satisfaction',
-                'value' => 4.39
+                'value' => 4.39,
             ],
             'q8r6' => [
                 'label' => 'Business model innovation',
-                'value' => 3.55
+                'value' => 3.55,
             ],
             'q8r7' => [
                 'label' => 'Number of new products/services launched',
-                'value' => 3.93
+                'value' => 3.93,
             ],
         ],
     ],
@@ -2863,1282 +2864,1282 @@ $industryGraphReference = [
         'qsectorr1' => [
             'q9p2r1' => [
                 'label' => 'Price optimization',
-                'value' => 2.20
+                'value' => 2.20,
             ],
             'q9p2r2' => [
                 'label' => 'New product development',
-                'value' => 2.40
+                'value' => 2.40,
             ],
             'q9p2r3' => [
                 'label' => 'Risk exposure assessment',
-                'value' => 2.45
+                'value' => 2.45,
             ],
             'q9p2r4' => [
                 'label' => 'Regulatory intelligence',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r5' => [
                 'label' => 'Customer profiling, targeting, and optimization of offers',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r6' => [
                 'label' => 'Customer scoring and/or churn mitigation',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r7' => [
                 'label' => 'Fraud prevention and detection',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r8' => [
                 'label' => 'Product &amp; Service Recommendation systems',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r9' => [
                 'label' => 'Automated Customer Service',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r10' => [
                 'label' => 'Supply chain optimization',
-                'value' => 2.43
+                'value' => 2.43,
             ],
             'q9p2r11' => [
                 'label' => 'Predictive Maintenance',
-                'value' => 2.28
+                'value' => 2.28,
             ],
             'q9p2r12' => [
                 'label' => 'Inventory and service parts optimization',
-                'value' => 2.17
+                'value' => 2.17,
             ],
             'q9p2r13' => [
                 'label' => 'Precision agriculture',
-                'value' => 2.46
+                'value' => 2.46,
             ],
             'q9p2r14' => [
                 'label' => 'Yield monitoring and prediction',
-                'value' => 2.35
+                'value' => 2.35,
             ],
             'q9p2r15' => [
                 'label' => 'Field mapping &amp; crop scouting',
-                'value' => 2.20
+                'value' => 2.20,
             ],
             'q9p2r16' => [
                 'label' => 'Heavy equipment utilization',
-                'value' => 2.45
+                'value' => 2.45,
             ],
             'q9p2r17' => [
                 'label' => 'Cyberthreat &amp; detection',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r18' => [
                 'label' => 'Usage based insurance',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r19' => [
                 'label' => 'Social media analytics',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r20' => [
                 'label' => 'Illness/disease diagnosis and progression',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r21' => [
                 'label' => 'Personalized treatment via comprehensive evaluation of health records',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r22' => [
                 'label' => 'Patient admission and re-admission predictions',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r23' => [
                 'label' => 'Quality of care optimization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r24' => [
                 'label' => 'Smart warehousing',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r25' => [
                 'label' => 'Asset management',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r26' => [
                 'label' => 'Quality management investigation',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r27' => [
                 'label' => 'Increase productivity and efficiency of DCs/warehouses',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r28' => [
                 'label' => 'Intelligent Fulfillment',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r29' => [
                 'label' => 'Network analytics and optimization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r30' => [
                 'label' => 'Ad Targeting',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r31' => [
                 'label' => 'Scheduling optimisation',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r32' => [
                 'label' => 'Connected vehicles optimization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r33' => [
                 'label' => 'Logistics and package delivery management',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r34' => [
                 'label' => 'Field service optimization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r35' => [
                 'label' => 'Energy consumption analysis and prediction',
-                'value' => 0.00
+                'value' => 0.00,
             ],
         ],
         'qsectorr2' => [
             'q9p2r1' => [
                 'label' => 'Price optimization',
-                'value' => 2.29
+                'value' => 2.29,
             ],
             'q9p2r2' => [
                 'label' => 'New product development',
-                'value' => 2.00
+                'value' => 2.00,
             ],
             'q9p2r3' => [
                 'label' => 'Risk exposure assessment',
-                'value' => 2.06
+                'value' => 2.06,
             ],
             'q9p2r4' => [
                 'label' => 'Regulatory intelligence',
-                'value' => 2.09
+                'value' => 2.09,
             ],
             'q9p2r5' => [
                 'label' => 'Customer profiling, targeting, and optimization of offers',
-                'value' => 1.95
+                'value' => 1.95,
             ],
             'q9p2r6' => [
                 'label' => 'Customer scoring and/or churn mitigation',
-                'value' => 2.17
+                'value' => 2.17,
             ],
             'q9p2r7' => [
                 'label' => 'Fraud prevention and detection',
-                'value' => 2.06
+                'value' => 2.06,
             ],
             'q9p2r8' => [
                 'label' => 'Product &amp; Service Recommendation systems',
-                'value' => 2.32
+                'value' => 2.32,
             ],
             'q9p2r9' => [
                 'label' => 'Automated Customer Service',
-                'value' => 2.32
+                'value' => 2.32,
             ],
             'q9p2r10' => [
                 'label' => 'Supply chain optimization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r11' => [
                 'label' => 'Predictive Maintenance',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r12' => [
                 'label' => 'Inventory and service parts optimization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r13' => [
                 'label' => 'Precision agriculture',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r14' => [
                 'label' => 'Yield monitoring and prediction',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r15' => [
                 'label' => 'Field mapping &amp; crop scouting',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r16' => [
                 'label' => 'Heavy equipment utilization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r17' => [
                 'label' => 'Cyberthreat &amp; detection',
-                'value' => 2.13
+                'value' => 2.13,
             ],
             'q9p2r18' => [
                 'label' => 'Usage based insurance',
-                'value' => 2.21
+                'value' => 2.21,
             ],
             'q9p2r19' => [
                 'label' => 'Social media analytics',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r20' => [
                 'label' => 'Illness/disease diagnosis and progression',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r21' => [
                 'label' => 'Personalized treatment via comprehensive evaluation of health records',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r22' => [
                 'label' => 'Patient admission and re-admission predictions',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r23' => [
                 'label' => 'Quality of care optimization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r24' => [
                 'label' => 'Smart warehousing',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r25' => [
                 'label' => 'Asset management',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r26' => [
                 'label' => 'Quality management investigation',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r27' => [
                 'label' => 'Increase productivity and efficiency of DCs/warehouses',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r28' => [
                 'label' => 'Intelligent Fulfillment',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r29' => [
                 'label' => 'Network analytics and optimization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r30' => [
                 'label' => 'Ad Targeting',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r31' => [
                 'label' => 'Scheduling optimisation',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r32' => [
                 'label' => 'Connected vehicles optimization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r33' => [
                 'label' => 'Logistics and package delivery management',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r34' => [
                 'label' => 'Field service optimization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r35' => [
                 'label' => 'Energy consumption analysis and prediction',
-                'value' => 0.00
+                'value' => 0.00,
             ],
         ],
         'qsectorr3' => [
             'q9p2r1' => [
                 'label' => 'Price optimization',
-                'value' => 2.26
+                'value' => 2.26,
             ],
             'q9p2r2' => [
                 'label' => 'New product development',
-                'value' => 2.13
+                'value' => 2.13,
             ],
             'q9p2r3' => [
                 'label' => 'Risk exposure assessment',
-                'value' => 2.12
+                'value' => 2.12,
             ],
             'q9p2r4' => [
                 'label' => 'Regulatory intelligence',
-                'value' => 2.31
+                'value' => 2.31,
             ],
             'q9p2r5' => [
                 'label' => 'Customer profiling, targeting, and optimization of offers',
-                'value' => 1.96
+                'value' => 1.96,
             ],
             'q9p2r6' => [
                 'label' => 'Customer scoring and/or churn mitigation',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r7' => [
                 'label' => 'Fraud prevention and detection',
-                'value' => 2.18
+                'value' => 2.18,
             ],
             'q9p2r8' => [
                 'label' => 'Product &amp; Service Recommendation systems',
-                'value' => 2.33
+                'value' => 2.33,
             ],
             'q9p2r9' => [
                 'label' => 'Automated Customer Service',
-                'value' => 2.36
+                'value' => 2.36,
             ],
             'q9p2r10' => [
                 'label' => 'Supply chain optimization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r11' => [
                 'label' => 'Predictive Maintenance',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r12' => [
                 'label' => 'Inventory and service parts optimization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r13' => [
                 'label' => 'Precision agriculture',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r14' => [
                 'label' => 'Yield monitoring and prediction',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r15' => [
                 'label' => 'Field mapping &amp; crop scouting',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r16' => [
                 'label' => 'Heavy equipment utilization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r17' => [
                 'label' => 'Cyberthreat &amp; detection',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r18' => [
                 'label' => 'Usage based insurance',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r19' => [
                 'label' => 'Social media analytics',
-                'value' => 2.33
+                'value' => 2.33,
             ],
             'q9p2r20' => [
                 'label' => 'Illness/disease diagnosis and progression',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r21' => [
                 'label' => 'Personalized treatment via comprehensive evaluation of health records',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r22' => [
                 'label' => 'Patient admission and re-admission predictions',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r23' => [
                 'label' => 'Quality of care optimization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r24' => [
                 'label' => 'Smart warehousing',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r25' => [
                 'label' => 'Asset management',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r26' => [
                 'label' => 'Quality management investigation',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r27' => [
                 'label' => 'Increase productivity and efficiency of DCs/warehouses',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r28' => [
                 'label' => 'Intelligent Fulfillment',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r29' => [
                 'label' => 'Network analytics and optimization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r30' => [
                 'label' => 'Ad Targeting',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r31' => [
                 'label' => 'Scheduling optimisation',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r32' => [
                 'label' => 'Connected vehicles optimization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r33' => [
                 'label' => 'Logistics and package delivery management',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r34' => [
                 'label' => 'Field service optimization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r35' => [
                 'label' => 'Energy consumption analysis and prediction',
-                'value' => 0.00
+                'value' => 0.00,
             ],
         ],
         'qsectorr4' => [
             'q9p2r1' => [
                 'label' => 'Price optimization',
-                'value' => 2.40
+                'value' => 2.40,
             ],
             'q9p2r2' => [
                 'label' => 'New product development',
-                'value' => 2.44
+                'value' => 2.44,
             ],
             'q9p2r3' => [
                 'label' => 'Risk exposure assessment',
-                'value' => 2.30
+                'value' => 2.30,
             ],
             'q9p2r4' => [
                 'label' => 'Regulatory intelligence',
-                'value' => 2.23
+                'value' => 2.23,
             ],
             'q9p2r5' => [
                 'label' => 'Customer profiling, targeting, and optimization of offers',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r6' => [
                 'label' => 'Customer scoring and/or churn mitigation',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r7' => [
                 'label' => 'Fraud prevention and detection',
-                'value' => 2.17
+                'value' => 2.17,
             ],
             'q9p2r8' => [
                 'label' => 'Product &amp; Service Recommendation systems',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r9' => [
                 'label' => 'Automated Customer Service',
-                'value' => 2.32
+                'value' => 2.32,
             ],
             'q9p2r10' => [
                 'label' => 'Supply chain optimization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r11' => [
                 'label' => 'Predictive Maintenance',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r12' => [
                 'label' => 'Inventory and service parts optimization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r13' => [
                 'label' => 'Precision agriculture',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r14' => [
                 'label' => 'Yield monitoring and prediction',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r15' => [
                 'label' => 'Field mapping &amp; crop scouting',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r16' => [
                 'label' => 'Heavy equipment utilization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r17' => [
                 'label' => 'Cyberthreat &amp; detection',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r18' => [
                 'label' => 'Usage based insurance',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r19' => [
                 'label' => 'Social media analytics',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r20' => [
                 'label' => 'Illness/disease diagnosis and progression',
-                'value' => 2.43
+                'value' => 2.43,
             ],
             'q9p2r21' => [
                 'label' => 'Personalized treatment via comprehensive evaluation of health records',
-                'value' => 2.35
+                'value' => 2.35,
             ],
             'q9p2r22' => [
                 'label' => 'Patient admission and re-admission predictions',
-                'value' => 2.37
+                'value' => 2.37,
             ],
             'q9p2r23' => [
                 'label' => 'Quality of care optimization',
-                'value' => 2.25
+                'value' => 2.25,
             ],
             'q9p2r24' => [
                 'label' => 'Smart warehousing',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r25' => [
                 'label' => 'Asset management',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r26' => [
                 'label' => 'Quality management investigation',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r27' => [
                 'label' => 'Increase productivity and efficiency of DCs/warehouses',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r28' => [
                 'label' => 'Intelligent Fulfillment',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r29' => [
                 'label' => 'Network analytics and optimization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r30' => [
                 'label' => 'Ad Targeting',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r31' => [
                 'label' => 'Scheduling optimisation',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r32' => [
                 'label' => 'Connected vehicles optimization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r33' => [
                 'label' => 'Logistics and package delivery management',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r34' => [
                 'label' => 'Field service optimization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r35' => [
                 'label' => 'Energy consumption analysis and prediction',
-                'value' => 0.00
+                'value' => 0.00,
             ],
         ],
         'qsectorr5' => [
             'q9p2r1' => [
                 'label' => 'Price optimization',
-                'value' => 2.24
+                'value' => 2.24,
             ],
             'q9p2r2' => [
                 'label' => 'New product development',
-                'value' => 2.20
+                'value' => 2.20,
             ],
             'q9p2r3' => [
                 'label' => 'Risk exposure assessment',
-                'value' => 2.62
+                'value' => 2.62,
             ],
             'q9p2r4' => [
                 'label' => 'Regulatory intelligence',
-                'value' => 2.34
+                'value' => 2.34,
             ],
             'q9p2r5' => [
                 'label' => 'Customer profiling, targeting, and optimization of offers',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r6' => [
                 'label' => 'Customer scoring and/or churn mitigation',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r7' => [
                 'label' => 'Fraud prevention and detection',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r8' => [
                 'label' => 'Product &amp; Service Recommendation systems',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r9' => [
                 'label' => 'Automated Customer Service',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r10' => [
                 'label' => 'Supply chain optimization',
-                'value' => 2.28
+                'value' => 2.28,
             ],
             'q9p2r11' => [
                 'label' => 'Predictive Maintenance',
-                'value' => 2.29
+                'value' => 2.29,
             ],
             'q9p2r12' => [
                 'label' => 'Inventory and service parts optimization',
-                'value' => 2.47
+                'value' => 2.47,
             ],
             'q9p2r13' => [
                 'label' => 'Precision agriculture',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r14' => [
                 'label' => 'Yield monitoring and prediction',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r15' => [
                 'label' => 'Field mapping &amp; crop scouting',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r16' => [
                 'label' => 'Heavy equipment utilization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r17' => [
                 'label' => 'Cyberthreat &amp; detection',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r18' => [
                 'label' => 'Usage based insurance',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r19' => [
                 'label' => 'Social media analytics',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r20' => [
                 'label' => 'Illness/disease diagnosis and progression',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r21' => [
                 'label' => 'Personalized treatment via comprehensive evaluation of health records',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r22' => [
                 'label' => 'Patient admission and re-admission predictions',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r23' => [
                 'label' => 'Quality of care optimization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r24' => [
                 'label' => 'Smart warehousing',
-                'value' => 2.45
+                'value' => 2.45,
             ],
             'q9p2r25' => [
                 'label' => 'Asset management',
-                'value' => 2.40
+                'value' => 2.40,
             ],
             'q9p2r26' => [
                 'label' => 'Quality management investigation',
-                'value' => 2.34
+                'value' => 2.34,
             ],
             'q9p2r27' => [
                 'label' => 'Increase productivity and efficiency of DCs/warehouses',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r28' => [
                 'label' => 'Intelligent Fulfillment',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r29' => [
                 'label' => 'Network analytics and optimization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r30' => [
                 'label' => 'Ad Targeting',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r31' => [
                 'label' => 'Scheduling optimisation',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r32' => [
                 'label' => 'Connected vehicles optimization',
-                'value' => 2.60
+                'value' => 2.60,
             ],
             'q9p2r33' => [
                 'label' => 'Logistics and package delivery management',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r34' => [
                 'label' => 'Field service optimization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r35' => [
                 'label' => 'Energy consumption analysis and prediction',
-                'value' => 0.00
+                'value' => 0.00,
             ],
         ],
         'qsectorr6' => [
             'q9p2r1' => [
                 'label' => 'Price optimization',
-                'value' => 2.14
+                'value' => 2.14,
             ],
             'q9p2r2' => [
                 'label' => 'New product development',
-                'value' => 2.23
+                'value' => 2.23,
             ],
             'q9p2r3' => [
                 'label' => 'Risk exposure assessment',
-                'value' => 2.53
+                'value' => 2.53,
             ],
             'q9p2r4' => [
                 'label' => 'Regulatory intelligence',
-                'value' => 2.46
+                'value' => 2.46,
             ],
             'q9p2r5' => [
                 'label' => 'Customer profiling, targeting, and optimization of offers',
-                'value' => 2.22
+                'value' => 2.22,
             ],
             'q9p2r6' => [
                 'label' => 'Customer scoring and/or churn mitigation',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r7' => [
                 'label' => 'Fraud prevention and detection',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r8' => [
                 'label' => 'Product &amp; Service Recommendation systems',
-                'value' => 2.30
+                'value' => 2.30,
             ],
             'q9p2r9' => [
                 'label' => 'Automated Customer Service',
-                'value' => 2.54
+                'value' => 2.54,
             ],
             'q9p2r10' => [
                 'label' => 'Supply chain optimization',
-                'value' => 2.22
+                'value' => 2.22,
             ],
             'q9p2r11' => [
                 'label' => 'Predictive Maintenance',
-                'value' => 2.59
+                'value' => 2.59,
             ],
             'q9p2r12' => [
                 'label' => 'Inventory and service parts optimization',
-                'value' => 2.45
+                'value' => 2.45,
             ],
             'q9p2r13' => [
                 'label' => 'Precision agriculture',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r14' => [
                 'label' => 'Yield monitoring and prediction',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r15' => [
                 'label' => 'Field mapping &amp; crop scouting',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r16' => [
                 'label' => 'Heavy equipment utilization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r17' => [
                 'label' => 'Cyberthreat &amp; detection',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r18' => [
                 'label' => 'Usage based insurance',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r19' => [
                 'label' => 'Social media analytics',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r20' => [
                 'label' => 'Illness/disease diagnosis and progression',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r21' => [
                 'label' => 'Personalized treatment via comprehensive evaluation of health records',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r22' => [
                 'label' => 'Patient admission and re-admission predictions',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r23' => [
                 'label' => 'Quality of care optimization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r24' => [
                 'label' => 'Smart warehousing',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r25' => [
                 'label' => 'Asset management',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r26' => [
                 'label' => 'Quality management investigation',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r27' => [
                 'label' => 'Increase productivity and efficiency of DCs/warehouses',
-                'value' => 2.14
+                'value' => 2.14,
             ],
             'q9p2r28' => [
                 'label' => 'Intelligent Fulfillment',
-                'value' => 2.34
+                'value' => 2.34,
             ],
             'q9p2r29' => [
                 'label' => 'Network analytics and optimization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r30' => [
                 'label' => 'Ad Targeting',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r31' => [
                 'label' => 'Scheduling optimisation',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r32' => [
                 'label' => 'Connected vehicles optimization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r33' => [
                 'label' => 'Logistics and package delivery management',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r34' => [
                 'label' => 'Field service optimization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r35' => [
                 'label' => 'Energy consumption analysis and prediction',
-                'value' => 0.00
+                'value' => 0.00,
             ],
         ],
         'qsectorr7' => [
             'q9p2r1' => [
                 'label' => 'Price optimization',
-                'value' => 2.11
+                'value' => 2.11,
             ],
             'q9p2r2' => [
                 'label' => 'New product development',
-                'value' => 2.26
+                'value' => 2.26,
             ],
             'q9p2r3' => [
                 'label' => 'Risk exposure assessment',
-                'value' => 2.37
+                'value' => 2.37,
             ],
             'q9p2r4' => [
                 'label' => 'Regulatory intelligence',
-                'value' => 2.48
+                'value' => 2.48,
             ],
             'q9p2r5' => [
                 'label' => 'Customer profiling, targeting, and optimization of offers',
-                'value' => 1.67
+                'value' => 1.67,
             ],
             'q9p2r6' => [
                 'label' => 'Customer scoring and/or churn mitigation',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r7' => [
                 'label' => 'Fraud prevention and detection',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r8' => [
                 'label' => 'Product &amp; Service Recommendation systems',
-                'value' => 2.15
+                'value' => 2.15,
             ],
             'q9p2r9' => [
                 'label' => 'Automated Customer Service',
-                'value' => 2.56
+                'value' => 2.56,
             ],
             'q9p2r10' => [
                 'label' => 'Supply chain optimization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r11' => [
                 'label' => 'Predictive Maintenance',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r12' => [
                 'label' => 'Inventory and service parts optimization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r13' => [
                 'label' => 'Precision agriculture',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r14' => [
                 'label' => 'Yield monitoring and prediction',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r15' => [
                 'label' => 'Field mapping &amp; crop scouting',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r16' => [
                 'label' => 'Heavy equipment utilization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r17' => [
                 'label' => 'Cyberthreat &amp; detection',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r18' => [
                 'label' => 'Usage based insurance',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r19' => [
                 'label' => 'Social media analytics',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r20' => [
                 'label' => 'Illness/disease diagnosis and progression',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r21' => [
                 'label' => 'Personalized treatment via comprehensive evaluation of health records',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r22' => [
                 'label' => 'Patient admission and re-admission predictions',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r23' => [
                 'label' => 'Quality of care optimization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r24' => [
                 'label' => 'Smart warehousing',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r25' => [
                 'label' => 'Asset management',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r26' => [
                 'label' => 'Quality management investigation',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r27' => [
                 'label' => 'Increase productivity and efficiency of DCs/warehouses',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r28' => [
                 'label' => 'Intelligent Fulfillment',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r29' => [
                 'label' => 'Network analytics and optimization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r30' => [
                 'label' => 'Ad Targeting',
-                'value' => 2.30
+                'value' => 2.30,
             ],
             'q9p2r31' => [
                 'label' => 'Scheduling optimisation',
-                'value' => 2.19
+                'value' => 2.19,
             ],
             'q9p2r32' => [
                 'label' => 'Connected vehicles optimization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r33' => [
                 'label' => 'Logistics and package delivery management',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r34' => [
                 'label' => 'Field service optimization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r35' => [
                 'label' => 'Energy consumption analysis and prediction',
-                'value' => 0.00
+                'value' => 0.00,
             ],
         ],
         'qsectorr8' => [
             'q9p2r1' => [
                 'label' => 'Price optimization',
-                'value' => 2.27
+                'value' => 2.27,
             ],
             'q9p2r2' => [
                 'label' => 'New product development',
-                'value' => 2.33
+                'value' => 2.33,
             ],
             'q9p2r3' => [
                 'label' => 'Risk exposure assessment',
-                'value' => 2.42
+                'value' => 2.42,
             ],
             'q9p2r4' => [
                 'label' => 'Regulatory intelligence',
-                'value' => 2.38
+                'value' => 2.38,
             ],
             'q9p2r5' => [
                 'label' => 'Customer profiling, targeting, and optimization of offers',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r6' => [
                 'label' => 'Customer scoring and/or churn mitigation',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r7' => [
                 'label' => 'Fraud prevention and detection',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r8' => [
                 'label' => 'Product &amp; Service Recommendation systems',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r9' => [
                 'label' => 'Automated Customer Service',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r10' => [
                 'label' => 'Supply chain optimization',
-                'value' => 2.42
+                'value' => 2.42,
             ],
             'q9p2r11' => [
                 'label' => 'Predictive Maintenance',
-                'value' => 2.32
+                'value' => 2.32,
             ],
             'q9p2r12' => [
                 'label' => 'Inventory and service parts optimization',
-                'value' => 2.23
+                'value' => 2.23,
             ],
             'q9p2r13' => [
                 'label' => 'Precision agriculture',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r14' => [
                 'label' => 'Yield monitoring and prediction',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r15' => [
                 'label' => 'Field mapping &amp; crop scouting',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r16' => [
                 'label' => 'Heavy equipment utilization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r17' => [
                 'label' => 'Cyberthreat &amp; detection',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r18' => [
                 'label' => 'Usage based insurance',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r19' => [
                 'label' => 'Social media analytics',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r20' => [
                 'label' => 'Illness/disease diagnosis and progression',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r21' => [
                 'label' => 'Personalized treatment via comprehensive evaluation of health records',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r22' => [
                 'label' => 'Patient admission and re-admission predictions',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r23' => [
                 'label' => 'Quality of care optimization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r24' => [
                 'label' => 'Smart warehousing',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r25' => [
                 'label' => 'Asset management',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r26' => [
                 'label' => 'Quality management investigation',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r27' => [
                 'label' => 'Increase productivity and efficiency of DCs/warehouses',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r28' => [
                 'label' => 'Intelligent Fulfillment',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r29' => [
                 'label' => 'Network analytics and optimization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r30' => [
                 'label' => 'Ad Targeting',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r31' => [
                 'label' => 'Scheduling optimisation',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r32' => [
                 'label' => 'Connected vehicles optimization',
-                'value' => 2.50
+                'value' => 2.50,
             ],
             'q9p2r33' => [
                 'label' => 'Logistics and package delivery management',
-                'value' => 2.20
+                'value' => 2.20,
             ],
             'q9p2r34' => [
                 'label' => 'Field service optimization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r35' => [
                 'label' => 'Energy consumption analysis and prediction',
-                'value' => 0.00
+                'value' => 0.00,
             ],
         ],
         'qsectorr9' => [
             'q9p2r1' => [
                 'label' => 'Price optimization',
-                'value' => 2.42
+                'value' => 2.42,
             ],
             'q9p2r2' => [
                 'label' => 'New product development',
-                'value' => 2.49
+                'value' => 2.49,
             ],
             'q9p2r3' => [
                 'label' => 'Risk exposure assessment',
-                'value' => 2.42
+                'value' => 2.42,
             ],
             'q9p2r4' => [
                 'label' => 'Regulatory intelligence',
-                'value' => 2.25
+                'value' => 2.25,
             ],
             'q9p2r5' => [
                 'label' => 'Customer profiling, targeting, and optimization of offers',
-                'value' => 2.44
+                'value' => 2.44,
             ],
             'q9p2r6' => [
                 'label' => 'Customer scoring and/or churn mitigation',
-                'value' => 2.54
+                'value' => 2.54,
             ],
             'q9p2r7' => [
                 'label' => 'Fraud prevention and detection',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r8' => [
                 'label' => 'Product &amp; Service Recommendation systems',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r9' => [
                 'label' => 'Automated Customer Service',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r10' => [
                 'label' => 'Supply chain optimization',
-                'value' => 2.41
+                'value' => 2.41,
             ],
             'q9p2r11' => [
                 'label' => 'Predictive Maintenance',
-                'value' => 2.20
+                'value' => 2.20,
             ],
             'q9p2r12' => [
                 'label' => 'Inventory and service parts optimization',
-                'value' => 2.62
+                'value' => 2.62,
             ],
             'q9p2r13' => [
                 'label' => 'Precision agriculture',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r14' => [
                 'label' => 'Yield monitoring and prediction',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r15' => [
                 'label' => 'Field mapping &amp; crop scouting',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r16' => [
                 'label' => 'Heavy equipment utilization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r17' => [
                 'label' => 'Cyberthreat &amp; detection',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r18' => [
                 'label' => 'Usage based insurance',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r19' => [
                 'label' => 'Social media analytics',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r20' => [
                 'label' => 'Illness/disease diagnosis and progression',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r21' => [
                 'label' => 'Personalized treatment via comprehensive evaluation of health records',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r22' => [
                 'label' => 'Patient admission and re-admission predictions',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r23' => [
                 'label' => 'Quality of care optimization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r24' => [
                 'label' => 'Smart warehousing',
-                'value' => 2.60
+                'value' => 2.60,
             ],
             'q9p2r25' => [
                 'label' => 'Asset management',
-                'value' => 2.40
+                'value' => 2.40,
             ],
             'q9p2r26' => [
                 'label' => 'Quality management investigation',
-                'value' => 2.20
+                'value' => 2.20,
             ],
             'q9p2r27' => [
                 'label' => 'Increase productivity and efficiency of DCs/warehouses',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r28' => [
                 'label' => 'Intelligent Fulfillment',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r29' => [
                 'label' => 'Network analytics and optimization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r30' => [
                 'label' => 'Ad Targeting',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r31' => [
                 'label' => 'Scheduling optimisation',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r32' => [
                 'label' => 'Connected vehicles optimization',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r33' => [
                 'label' => 'Logistics and package delivery management',
-                'value' => 0.00
+                'value' => 0.00,
             ],
             'q9p2r34' => [
                 'label' => 'Field service optimization',
-                'value' => 2.27
+                'value' => 2.27,
             ],
             'q9p2r35' => [
                 'label' => 'Energy consumption analysis and prediction',
-                'value' => 2.39
+                'value' => 2.39,
             ],
         ],
-    ]
+    ],
 ];
 
 $sizeReference = [
@@ -4549,240 +4550,240 @@ $sizeReference = [
             'q9p2r34' => 17,
             'q9p2r35' => 6,
         ],
-    ]
+    ],
 ];
 $sizeGraphReference = [
     'q1' => [
         'qsizer1' => [
             'q1r1' => [
                 'label' => 'Customer service and support',
-                'value' => 26.4
+                'value' => 26.4,
             ],
             'q1r2' => [
                 'label' => 'Engineering',
-                'value' => 24.3
+                'value' => 24.3,
             ],
             'q1r3' => [
                 'label' => 'Research and development (R&D)',
-                'value' => 17.6
+                'value' => 17.6,
             ],
             'q1r4' => [
                 'label' => 'Product innovation (new business initiatives)',
-                'value' => 24.3
+                'value' => 24.3,
             ],
             'q1r5' => [
                 'label' => 'Maintenance and logistics',
-                'value' => 25.7
+                'value' => 25.7,
             ],
             'q1r6' => [
                 'label' => 'Marketing',
-                'value' => 34.5
+                'value' => 34.5,
             ],
             'q1r7' => [
                 'label' => 'Finance',
-                'value' => 23.0
+                'value' => 23.0,
             ],
             'q1r8' => [
                 'label' => 'HR and legal',
-                'value' => 12.8
+                'value' => 12.8,
             ],
             'q1r9' => [
                 'label' => 'Sales',
-                'value' => 31.8
+                'value' => 31.8,
             ],
             'q1r10' => [
                 'label' => 'Product management',
-                'value' => 33.1
+                'value' => 33.1,
             ],
             'q1r11' => [
                 'label' => 'Governance, risk, and compliance',
-                'value' => 21.6
+                'value' => 21.6,
             ],
             'q1r12' => [
                 'label' => 'IT and data operations',
-                'value' => 33.8
+                'value' => 33.8,
             ],
             'q1r13' => [
                 'label' => 'Other, please specify',
-                'value' => 2.0
+                'value' => 2.0,
             ],
             'q1r14' => [
                 'label' => 'All the above',
-                'value' => 0.0
+                'value' => 0.0,
             ],
         ],
         'qsizer2' => [
             'q1r1' => [
                 'label' => 'Customer service and support',
-                'value' => 34.6
+                'value' => 34.6,
             ],
             'q1r2' => [
                 'label' => 'Engineering',
-                'value' => 25.7
+                'value' => 25.7,
             ],
             'q1r3' => [
                 'label' => 'Research and development (R&D)',
-                'value' => 26.3
+                'value' => 26.3,
             ],
             'q1r4' => [
                 'label' => 'Product innovation (new business initiatives)',
-                'value' => 22.9
+                'value' => 22.9,
             ],
             'q1r5' => [
                 'label' => 'Maintenance and logistics',
-                'value' => 29.6
+                'value' => 29.6,
             ],
             'q1r6' => [
                 'label' => 'Marketing',
-                'value' => 34.1
+                'value' => 34.1,
             ],
             'q1r7' => [
                 'label' => 'Finance',
-                'value' => 25.1
+                'value' => 25.1,
             ],
             'q1r8' => [
                 'label' => 'HR and legal',
-                'value' => 19.0
+                'value' => 19.0,
             ],
             'q1r9' => [
                 'label' => 'Sales',
-                'value' => 30.7
+                'value' => 30.7,
             ],
             'q1r10' => [
                 'label' => 'Product management',
-                'value' => 30.2
+                'value' => 30.2,
             ],
             'q1r11' => [
                 'label' => 'Governance, risk, and compliance',
-                'value' => 18.4
+                'value' => 18.4,
             ],
             'q1r12' => [
                 'label' => 'IT and data operations',
-                'value' => 32.4
+                'value' => 32.4,
             ],
             'q1r13' => [
                 'label' => 'Other, please specify',
-                'value' => 1.1
+                'value' => 1.1,
             ],
             'q1r14' => [
                 'label' => 'All the above',
-                'value' => 0.0
+                'value' => 0.0,
             ],
         ],
         'qsizer3' => [
             'q1r1' => [
                 'label' => 'Customer service and support',
-                'value' => 38.0
+                'value' => 38.0,
             ],
             'q1r2' => [
                 'label' => 'Engineering',
-                'value' => 21.8
+                'value' => 21.8,
             ],
             'q1r3' => [
                 'label' => 'Research and development (R&D)',
-                'value' => 17.9
+                'value' => 17.9,
             ],
             'q1r4' => [
                 'label' => 'Product innovation (new business initiatives)',
-                'value' => 21.2
+                'value' => 21.2,
             ],
             'q1r5' => [
                 'label' => 'Maintenance and logistics',
-                'value' => 23.5
+                'value' => 23.5,
             ],
             'q1r6' => [
                 'label' => 'Marketing',
-                'value' => 41.3
+                'value' => 41.3,
             ],
             'q1r7' => [
                 'label' => 'Finance',
-                'value' => 27.4
+                'value' => 27.4,
             ],
             'q1r8' => [
                 'label' => 'HR and legal',
-                'value' => 17.9
+                'value' => 17.9,
             ],
             'q1r9' => [
                 'label' => 'Sales',
-                'value' => 29.6
+                'value' => 29.6,
             ],
             'q1r10' => [
                 'label' => 'Product management',
-                'value' => 30.2
+                'value' => 30.2,
             ],
             'q1r11' => [
                 'label' => 'Governance, risk, and compliance',
-                'value' => 16.8
+                'value' => 16.8,
             ],
             'q1r12' => [
                 'label' => 'IT and data operations',
-                'value' => 35.8
+                'value' => 35.8,
             ],
             'q1r13' => [
                 'label' => 'Other, please specify',
-                'value' => 0.0
+                'value' => 0.0,
             ],
             'q1r14' => [
                 'label' => 'All the above',
-                'value' => 0.0
+                'value' => 0.0,
             ],
         ],
         'qsizer4' => [
             'q1r1' => [
                 'label' => 'Customer service and support',
-                'value' => 37.1
+                'value' => 37.1,
             ],
             'q1r2' => [
                 'label' => 'Engineering',
-                'value' => 17.0
+                'value' => 17.0,
             ],
             'q1r3' => [
                 'label' => 'Research and development (R&D)',
-                'value' => 30.4
+                'value' => 30.4,
             ],
             'q1r4' => [
                 'label' => 'Product innovation (new business initiatives)',
-                'value' => 24.2
+                'value' => 24.2,
             ],
             'q1r5' => [
                 'label' => 'Maintenance and logistics',
-                'value' => 33.5
+                'value' => 33.5,
             ],
             'q1r6' => [
                 'label' => 'Marketing',
-                'value' => 30.9
+                'value' => 30.9,
             ],
             'q1r7' => [
                 'label' => 'Finance',
-                'value' => 33.0
+                'value' => 33.0,
             ],
             'q1r8' => [
                 'label' => 'HR and legal',
-                'value' => 16.5
+                'value' => 16.5,
             ],
             'q1r9' => [
                 'label' => 'Sales',
-                'value' => 20.1
+                'value' => 20.1,
             ],
             'q1r10' => [
                 'label' => 'Product management',
-                'value' => 35.1
+                'value' => 35.1,
             ],
             'q1r11' => [
                 'label' => 'Governance, risk, and compliance',
-                'value' => 20.1
+                'value' => 20.1,
             ],
             'q1r12' => [
                 'label' => 'IT and data operations',
-                'value' => 33.0
+                'value' => 33.0,
             ],
             'q1r13' => [
                 'label' => 'Other, please specify',
-                'value' => 1.0
+                'value' => 1.0,
             ],
             'q1r14' => [
                 'label' => 'All the above',
-                'value' => 0.5
+                'value' => 0.5,
             ],
         ],
     ],
@@ -4790,365 +4791,365 @@ $sizeGraphReference = [
         'qsizer1' => [
             'q2r1' => [
                 'label' => 'Better understand customer behavior and expectations',
-                'value' => 0.36
+                'value' => 0.36,
             ],
             'q2r2' => [
                 'label' => 'Optimize our pricing strategies and go-to-market programs',
-                'value' => 0.36
+                'value' => 0.36,
             ],
             'q2r3' => [
                 'label' => 'Product, services, or program improvement and innovation',
-                'value' => 0.42
+                'value' => 0.42,
             ],
             'q2r4' => [
                 'label' => 'Improve our understanding of the market and our competitors',
-                'value' => 0.43
+                'value' => 0.43,
             ],
             'q2r5' => [
                 'label' => 'Improve and optimize our business processes and operations',
-                'value' => 0.45
+                'value' => 0.45,
             ],
             'q2r6' => [
                 'label' => 'Improve our facilities, and equipment design, maintenance, and utilization',
-                'value' => 0.45
+                'value' => 0.45,
             ],
             'q2r7' => [
                 'label' => 'Improve our operational, fraud, and risk management',
-                'value' => 0.31
+                'value' => 0.31,
             ],
             'q2r8' => [
                 'label' => 'Implement better regulatory compliance and financial controls',
-                'value' => 0.38
+                'value' => 0.38,
             ],
             'q2r9' => [
                 'label' => 'Other, please specify',
-                'value' => 0.00
-            ]
+                'value' => 0.00,
+            ],
         ],
         'qsizer2' => [
             'q2r1' => [
                 'label' => 'Better understand customer behavior and expectations',
-                'value' => 0.37
+                'value' => 0.37,
             ],
             'q2r2' => [
                 'label' => 'Optimize our pricing strategies and go-to-market programs',
-                'value' => 0.42
+                'value' => 0.42,
             ],
             'q2r3' => [
                 'label' => 'Product, services, or program improvement and innovation',
-                'value' => 0.43
+                'value' => 0.43,
             ],
             'q2r4' => [
                 'label' => 'Improve our understanding of the market and our competitors',
-                'value' => 0.42
+                'value' => 0.42,
             ],
             'q2r5' => [
                 'label' => 'Improve and optimize our business processes and operations',
-                'value' => 0.46
+                'value' => 0.46,
             ],
             'q2r6' => [
                 'label' => 'Improve our facilities, and equipment design, maintenance, and utilization',
-                'value' => 0.33
+                'value' => 0.33,
             ],
             'q2r7' => [
                 'label' => 'Improve our operational, fraud, and risk management',
-                'value' => 0.41
+                'value' => 0.41,
             ],
             'q2r8' => [
                 'label' => 'Implement better regulatory compliance and financial controls',
-                'value' => 0.34
+                'value' => 0.34,
             ],
             'q2r9' => [
                 'label' => 'Other, please specify',
-                'value' => 0.01
-            ]
+                'value' => 0.01,
+            ],
         ],
         'qsizer3' => [
             'q2r1' => [
                 'label' => 'Better understand customer behavior and expectations',
-                'value' => 0.41
+                'value' => 0.41,
             ],
             'q2r2' => [
                 'label' => 'Optimize our pricing strategies and go-to-market programs',
-                'value' => 0.41
+                'value' => 0.41,
             ],
             'q2r3' => [
                 'label' => 'Product, services, or program improvement and innovation',
-                'value' => 0.36
+                'value' => 0.36,
             ],
             'q2r4' => [
                 'label' => 'Improve our understanding of the market and our competitors',
-                'value' => 0.41
+                'value' => 0.41,
             ],
             'q2r5' => [
                 'label' => 'Improve and optimize our business processes and operations',
-                'value' => 0.38
+                'value' => 0.38,
             ],
             'q2r6' => [
                 'label' => 'Improve our facilities, and equipment design, maintenance, and utilization',
-                'value' => 0.42
+                'value' => 0.42,
             ],
             'q2r7' => [
                 'label' => 'Improve our operational, fraud, and risk management',
-                'value' => 0.39
+                'value' => 0.39,
             ],
             'q2r8' => [
                 'label' => 'Implement better regulatory compliance and financial controls',
-                'value' => 0.41
+                'value' => 0.41,
             ],
             'q2r9' => [
                 'label' => 'Other, please specify',
-                'value' => 0.01
-            ]
+                'value' => 0.01,
+            ],
         ],
         'qsizer4' => [
             'q2r1' => [
                 'label' => 'Better understand customer behavior and expectations',
-                'value' => 0.41
+                'value' => 0.41,
             ],
             'q2r2' => [
                 'label' => 'Optimize our pricing strategies and go-to-market programs',
-                'value' => 0.43
+                'value' => 0.43,
             ],
             'q2r3' => [
                 'label' => 'Product, services, or program improvement and innovation',
-                'value' => 0.45
+                'value' => 0.45,
             ],
             'q2r4' => [
                 'label' => 'Improve our understanding of the market and our competitors',
-                'value' => 0.46
+                'value' => 0.46,
             ],
             'q2r5' => [
                 'label' => 'Improve and optimize our business processes and operations',
-                'value' => 0.48
+                'value' => 0.48,
             ],
             'q2r6' => [
                 'label' => 'Improve our facilities, and equipment design, maintenance, and utilization',
-                'value' => 0.37
+                'value' => 0.37,
             ],
             'q2r7' => [
                 'label' => 'Improve our operational, fraud, and risk management',
-                'value' => 0.39
+                'value' => 0.39,
             ],
             'q2r8' => [
                 'label' => 'Implement better regulatory compliance and financial controls',
-                'value' => 0.41
+                'value' => 0.41,
             ],
             'q2r9' => [
                 'label' => 'Other, please specify',
-                'value' => 0.01
-            ]
+                'value' => 0.01,
+            ],
         ],
     ],
     'q4' => [
         'qsizer1' => [
             'q4r1' => [
                 'label' => 'Cost reduction',
-                'value' => 2.95
+                'value' => 2.95,
             ],
             'q4r2' => [
                 'label' => 'Time efficiency',
-                'value' => 3.03
+                'value' => 3.03,
             ],
             'q4r3' => [
                 'label' => 'Product/service quality',
-                'value' => 3.09
+                'value' => 3.09,
             ],
             'q4r4' => [
                 'label' => 'Revenue growth',
-                'value' => 3.07
+                'value' => 3.07,
             ],
             'q4r5' => [
                 'label' => 'Customer satisfaction',
-                'value' => 3.15
+                'value' => 3.15,
             ],
             'q4r6' => [
                 'label' => 'Business model innovation',
-                'value' => 2.82
+                'value' => 2.82,
             ],
             'q4r7' => [
                 'label' => 'Increase in the number of NEW products or services launched',
-                'value' => 2.94
-            ]
+                'value' => 2.94,
+            ],
         ],
         'qsizer2' => [
             'q4r1' => [
                 'label' => 'Cost reduction',
-                'value' => 2.77
+                'value' => 2.77,
             ],
             'q4r2' => [
                 'label' => 'Time efficiency',
-                'value' => 3.06
+                'value' => 3.06,
             ],
             'q4r3' => [
                 'label' => 'Product/service quality',
-                'value' => 3.26
+                'value' => 3.26,
             ],
             'q4r4' => [
                 'label' => 'Revenue growth',
-                'value' => 3.26
+                'value' => 3.26,
             ],
             'q4r5' => [
                 'label' => 'Customer satisfaction',
-                'value' => 3.45
+                'value' => 3.45,
             ],
             'q4r6' => [
                 'label' => 'Business model innovation',
-                'value' => 3.04
+                'value' => 3.04,
             ],
             'q4r7' => [
                 'label' => 'Increase in the number of NEW products or services launched',
-                'value' => 3.06
-            ]
+                'value' => 3.06,
+            ],
         ],
         'qsizer3' => [
             'q4r1' => [
                 'label' => 'Cost reduction',
-                'value' => 2.77
+                'value' => 2.77,
             ],
             'q4r2' => [
                 'label' => 'Time efficiency',
-                'value' => 3.23
+                'value' => 3.23,
             ],
             'q4r3' => [
                 'label' => 'Product/service quality',
-                'value' => 3.67
+                'value' => 3.67,
             ],
             'q4r4' => [
                 'label' => 'Revenue growth',
-                'value' => 3.30
+                'value' => 3.30,
             ],
             'q4r5' => [
                 'label' => 'Customer satisfaction',
-                'value' => 3.46
+                'value' => 3.46,
             ],
             'q4r6' => [
                 'label' => 'Business model innovation',
-                'value' => 3.05
+                'value' => 3.05,
             ],
             'q4r7' => [
                 'label' => 'Increase in the number of NEW products or services launched',
-                'value' => 3.21
-            ]
+                'value' => 3.21,
+            ],
         ],
         'qsizer4' => [
             'q4r1' => [
                 'label' => 'Cost reduction',
-                'value' => 2.71
+                'value' => 2.71,
             ],
             'q4r2' => [
                 'label' => 'Time efficiency',
-                'value' => 3.41
+                'value' => 3.41,
             ],
             'q4r3' => [
                 'label' => 'Product/service quality',
-                'value' => 3.88
+                'value' => 3.88,
             ],
             'q4r4' => [
                 'label' => 'Revenue growth',
-                'value' => 3.21
+                'value' => 3.21,
             ],
             'q4r5' => [
                 'label' => 'Customer satisfaction',
-                'value' => 3.68
+                'value' => 3.68,
             ],
             'q4r6' => [
                 'label' => 'Business model innovation',
-                'value' => 3.07
+                'value' => 3.07,
             ],
             'q4r7' => [
                 'label' => 'Increase in the number of NEW products or services launched',
-                'value' => 3.12
-            ]
+                'value' => 3.12,
+            ],
         ],
     ],
     'q5' => [
         'qsizer1' => [
             '1' => [
                 'label' => 'Negative benefits',
-                'value' => 0.0
+                'value' => 0.0,
             ],
             '2' => [
                 'label' => 'No benefits',
-                'value' => 4.1
+                'value' => 4.1,
             ],
             '3' => [
                 'label' => 'Low level of benefits',
-                'value' => 25.7
+                'value' => 25.7,
             ],
             '4' => [
                 'label' => 'Moderate level of benefits',
-                'value' => 60.1
+                'value' => 60.1,
             ],
             '5' => [
                 'label' => 'High level of benefits',
-                'value' => 8.8
+                'value' => 8.8,
             ],
         ],
         'qsizer2' => [
             '1' => [
                 'label' => 'Negative benefits',
-                'value' => 0.6
+                'value' => 0.6,
             ],
             '2' => [
                 'label' => 'No benefits',
-                'value' => 5.0
+                'value' => 5.0,
             ],
             '3' => [
                 'label' => 'Low level of benefits',
-                'value' => 30.7
+                'value' => 30.7,
             ],
             '4' => [
                 'label' => 'Moderate level of benefits',
-                'value' => 55.3
+                'value' => 55.3,
             ],
             '5' => [
                 'label' => 'High level of benefits',
-                'value' => 7.3
+                'value' => 7.3,
             ],
         ],
         'qsizer3' => [
             '1' => [
                 'label' => 'Negative benefits',
-                'value' => 0.0
+                'value' => 0.0,
             ],
             '2' => [
                 'label' => 'No benefits',
-                'value' => 1.7
+                'value' => 1.7,
             ],
             '3' => [
                 'label' => 'Low level of benefits',
-                'value' => 10.6
+                'value' => 10.6,
             ],
             '4' => [
                 'label' => 'Moderate level of benefits',
-                'value' => 79.3
+                'value' => 79.3,
             ],
             '5' => [
                 'label' => 'High level of benefits',
-                'value' => 8.4
+                'value' => 8.4,
             ],
         ],
         'qsizer4' => [
             '1' => [
                 'label' => 'Negative benefits',
-                'value' => 0.0
+                'value' => 0.0,
             ],
             '2' => [
                 'label' => 'No benefits',
-                'value' => 0.5
+                'value' => 0.5,
             ],
             '3' => [
                 'label' => 'Low level of benefits',
-                'value' => 5.2
+                'value' => 5.2,
             ],
             '4' => [
                 'label' => 'Moderate level of benefits',
-                'value' => 78.9
+                'value' => 78.9,
             ],
             '5' => [
                 'label' => 'High level of benefits',
-                'value' => 14.9
+                'value' => 14.9,
             ],
         ],
     ],
@@ -5156,57 +5157,57 @@ $sizeGraphReference = [
         'qsizer1' => [
             'q6ar1' => [
                 'label' => 'Increased Profit by',
-                'value' => 6.83
+                'value' => 6.83,
             ],
             'q6ar2' => [
                 'label' => 'Increased Revenue by',
-                'value' => 6.98
+                'value' => 6.98,
             ],
             'q6ar3' => [
                 'label' => 'Reduced Cost by',
-                'value' => 7.37
+                'value' => 7.37,
             ],
         ],
         'qsizer2' => [
             'q6ar1' => [
                 'label' => 'Increased Profit by',
-                'value' => 5.50
+                'value' => 5.50,
             ],
             'q6ar2' => [
                 'label' => 'Increased Revenue by',
-                'value' => 5.27
+                'value' => 5.27,
             ],
             'q6ar3' => [
                 'label' => 'Reduced Cost by',
-                'value' => 4.63
+                'value' => 4.63,
             ],
         ],
         'qsizer3' => [
             'q6ar1' => [
                 'label' => 'Increased Profit by',
-                'value' => 6.97
+                'value' => 6.97,
             ],
             'q6ar2' => [
                 'label' => 'Increased Revenue by',
-                'value' => 6.89
+                'value' => 6.89,
             ],
             'q6ar3' => [
                 'label' => 'Reduced Cost by',
-                'value' => 5.09
+                'value' => 5.09,
             ],
         ],
         'qsizer4' => [
             'q6ar1' => [
                 'label' => 'Increased Profit by',
-                'value' => 7.32
+                'value' => 7.32,
             ],
             'q6ar2' => [
                 'label' => 'Increased Revenue by',
-                'value' => 6.85
+                'value' => 6.85,
             ],
             'q6ar3' => [
                 'label' => 'Reduced Cost by',
-                'value' => 5.75
+                'value' => 5.75,
             ],
         ],
     ],
@@ -5214,89 +5215,89 @@ $sizeGraphReference = [
         'qsizer1' => [
             'q7r1' => [
                 'label' => 'Time efficiency',
-                'value' => 3.03
+                'value' => 3.03,
             ],
             'q7r2' => [
                 'label' => 'Product/service quality',
-                'value' => 3.18
+                'value' => 3.18,
             ],
             'q7r3' => [
                 'label' => 'Customer satisfaction',
-                'value' => 3.28
+                'value' => 3.28,
             ],
             'q7r4' => [
                 'label' => 'Business model innovation',
-                'value' => 2.97
+                'value' => 2.97,
             ],
             'q7r5' => [
                 'label' => 'Number of new products or services launched',
-                'value' => 2.93
+                'value' => 2.93,
             ],
         ],
         'qsizer2' => [
             'q7r1' => [
                 'label' => 'Time efficiency',
-                'value' => 3.24
+                'value' => 3.24,
             ],
             'q7r2' => [
                 'label' => 'Product/service quality',
-                'value' => 3.25
+                'value' => 3.25,
             ],
             'q7r3' => [
                 'label' => 'Customer satisfaction',
-                'value' => 3.52
+                'value' => 3.52,
             ],
             'q7r4' => [
                 'label' => 'Business model innovation',
-                'value' => 3.09
+                'value' => 3.09,
             ],
             'q7r5' => [
                 'label' => 'Number of new products or services launched',
-                'value' => 3.17
+                'value' => 3.17,
             ],
         ],
         'qsizer3' => [
             'q7r1' => [
                 'label' => 'Time efficiency',
-                'value' => 3.37
+                'value' => 3.37,
             ],
             'q7r2' => [
                 'label' => 'Product/service quality',
-                'value' => 3.58
+                'value' => 3.58,
             ],
             'q7r3' => [
                 'label' => 'Customer satisfaction',
-                'value' => 3.48
+                'value' => 3.48,
             ],
             'q7r4' => [
                 'label' => 'Business model innovation',
-                'value' => 3.08
+                'value' => 3.08,
             ],
             'q7r5' => [
                 'label' => 'Number of new products or services launched',
-                'value' => 3.32
+                'value' => 3.32,
             ],
         ],
         'qsizer4' => [
             'q7r1' => [
                 'label' => 'Time efficiency',
-                'value' => 3.51
+                'value' => 3.51,
             ],
             'q7r2' => [
                 'label' => 'Product/service quality',
-                'value' => 3.81
+                'value' => 3.81,
             ],
             'q7r3' => [
                 'label' => 'Customer satisfaction',
-                'value' => 3.66
+                'value' => 3.66,
             ],
             'q7r4' => [
                 'label' => 'Business model innovation',
-                'value' => 3.05
+                'value' => 3.05,
             ],
             'q7r5' => [
                 'label' => 'Number of new products or services launched',
-                'value' => 3.33
+                'value' => 3.33,
             ],
         ],
     ],
@@ -5304,120 +5305,120 @@ $sizeGraphReference = [
         'qsizer1' => [
             'q8r1' => [
                 'label' => 'Cost reduction',
-                'value' => 3.16
+                'value' => 3.16,
             ],
             'q8r2' => [
                 'label' => 'Time efficiency',
-                'value' => 3.52
+                'value' => 3.52,
             ],
             'q8r3' => [
                 'label' => 'Product/service quality',
-                'value' => 3.52
+                'value' => 3.52,
             ],
             'q8r4' => [
                 'label' => 'Revenue growth',
-                'value' => 3.78
+                'value' => 3.78,
             ],
             'q8r5' => [
                 'label' => 'Customer satisfaction',
-                'value' => 3.57
+                'value' => 3.57,
             ],
             'q8r6' => [
                 'label' => 'Business model innovation',
-                'value' => 3.34
+                'value' => 3.34,
             ],
             'q8r7' => [
                 'label' => 'Number of new products/services launched',
-                'value' => 3.34
+                'value' => 3.34,
             ],
         ],
         'qsizer2' => [
             'q8r1' => [
                 'label' => 'Cost reduction',
-                'value' => 3.22
+                'value' => 3.22,
             ],
             'q8r2' => [
                 'label' => 'Time efficiency',
-                'value' => 3.63
+                'value' => 3.63,
             ],
             'q8r3' => [
                 'label' => 'Product/service quality',
-                'value' => 3.96
+                'value' => 3.96,
             ],
             'q8r4' => [
                 'label' => 'Revenue growth',
-                'value' => 3.90
+                'value' => 3.90,
             ],
             'q8r5' => [
                 'label' => 'Customer satisfaction',
-                'value' => 3.96
+                'value' => 3.96,
             ],
             'q8r6' => [
                 'label' => 'Business model innovation',
-                'value' => 3.70
+                'value' => 3.70,
             ],
             'q8r7' => [
                 'label' => 'Number of new products/services launched',
-                'value' => 3.77
+                'value' => 3.77,
                 ],                ],
         'qsizer3' => [
             'q8r1' => [
                 'label' => 'Cost reduction',
-                'value' => 3.24
+                'value' => 3.24,
             ],
             'q8r2' => [
                 'label' => 'Time efficiency',
-                'value' => 3.91
+                'value' => 3.91,
             ],
             'q8r3' => [
                 'label' => 'Product/service quality',
-                'value' => 4.13
+                'value' => 4.13,
             ],
             'q8r4' => [
                 'label' => 'Revenue growth',
-                'value' => 4.03
+                'value' => 4.03,
             ],
             'q8r5' => [
                 'label' => 'Customer satisfaction',
-                'value' => 4.12
+                'value' => 4.12,
             ],
             'q8r6' => [
                 'label' => 'Business model innovation',
-                'value' => 3.59
+                'value' => 3.59,
             ],
             'q8r7' => [
                 'label' => 'Number of new products/services launched',
-                'value' => 3.92
+                'value' => 3.92,
             ],
         ],
         'qsizer4' => [
             'q8r1' => [
                 'label' => 'Cost reduction',
-                'value' => 3.10
+                'value' => 3.10,
             ],
             'q8r2' => [
                 'label' => 'Time efficiency',
-                'value' => 4.09
+                'value' => 4.09,
             ],
             'q8r3' => [
                 'label' => 'Product/service quality',
-                'value' => 4.55
+                'value' => 4.55,
             ],
             'q8r4' => [
                 'label' => 'Revenue growth',
-                'value' => 4.06
+                'value' => 4.06,
             ],
             'q8r5' => [
                 'label' => 'Customer satisfaction',
-                'value' => 4.47
+                'value' => 4.47,
             ],
             'q8r6' => [
                 'label' => 'Business model innovation',
-                'value' => 3.74
+                'value' => 3.74,
             ],
             'q8r7' => [
                 'label' => 'Number of new products/services launched',
-                'value' => 4.03
+                'value' => 4.03,
                 ],
         ],
     ],
@@ -5425,572 +5426,572 @@ $sizeGraphReference = [
         'qsizer1' => [
             'q9p2r1' => [
                 'label' => 'Price optimization',
-                'value' => 2.14
+                'value' => 2.14,
             ],
             'q9p2r2' => [
                 'label' => 'New product development',
-                'value' => 2.46
+                'value' => 2.46,
             ],
             'q9p2r3' => [
                 'label' => 'Risk exposure assessment',
-                'value' => 2.44
+                'value' => 2.44,
             ],
             'q9p2r4' => [
                 'label' => 'Regulatory intelligence',
-                'value' => 2.36
+                'value' => 2.36,
             ],
             'q9p2r5' => [
                 'label' => 'Customer profiling, targeting, and optimization of offers',
-                'value' => 2.11
+                'value' => 2.11,
             ],
             'q9p2r6' => [
                 'label' => 'Customer scoring and/or churn mitigation',
-                'value' => 2.35
+                'value' => 2.35,
             ],
             'q9p2r7' => [
                 'label' => 'Fraud prevention and detection',
-                'value' => 2.33
+                'value' => 2.33,
             ],
             'q9p2r8' => [
                 'label' => 'Product &amp; Service Recommendation systems',
-                'value' => 2.28
+                'value' => 2.28,
             ],
             'q9p2r9' => [
                 'label' => 'Automated Customer Service',
-                'value' => 2.52
+                'value' => 2.52,
             ],
             'q9p2r10' => [
                 'label' => 'Supply chain optimization',
-                'value' => 2.37
+                'value' => 2.37,
             ],
             'q9p2r11' => [
                 'label' => 'Predictive Maintenance',
-                'value' => 2.16
+                'value' => 2.16,
             ],
             'q9p2r12' => [
                 'label' => 'Inventory and service parts optimization',
-                'value' => 2.34
+                'value' => 2.34,
             ],
             'q9p2r13' => [
                 'label' => 'Precision agriculture',
-                'value' => 2.20
+                'value' => 2.20,
             ],
             'q9p2r14' => [
                 'label' => 'Yield monitoring and prediction',
-                'value' => 2.37
+                'value' => 2.37,
             ],
             'q9p2r15' => [
                 'label' => 'Field mapping &amp; crop scouting',
-                'value' => 2.00
+                'value' => 2.00,
             ],
             'q9p2r16' => [
                 'label' => 'Heavy equipment utilization',
-                'value' => 2.33
+                'value' => 2.33,
             ],
             'q9p2r17' => [
                 'label' => 'Cyberthreat &amp; detection',
-                'value' => 2.46
+                'value' => 2.46,
             ],
             'q9p2r18' => [
                 'label' => 'Usage based insurance',
-                'value' => 2.20
+                'value' => 2.20,
             ],
             'q9p2r19' => [
                 'label' => 'Social media analytics',
-                'value' => 2.00
+                'value' => 2.00,
             ],
             'q9p2r20' => [
                 'label' => 'Illness/disease diagnosis and progression',
-                'value' => 2.64
+                'value' => 2.64,
             ],
             'q9p2r21' => [
                 'label' => 'Personalized treatment via comprehensive evaluation of health records',
-                'value' => 2.55
+                'value' => 2.55,
             ],
             'q9p2r22' => [
                 'label' => 'Patient admission and re-admission predictions',
-                'value' => 2.45
+                'value' => 2.45,
             ],
             'q9p2r23' => [
                 'label' => 'Quality of care optimization',
-                'value' => 2.36
+                'value' => 2.36,
             ],
             'q9p2r24' => [
                 'label' => 'Smart warehousing',
-                'value' => 2.80
+                'value' => 2.80,
             ],
             'q9p2r25' => [
                 'label' => 'Asset management',
-                'value' => 2.75
+                'value' => 2.75,
             ],
             'q9p2r26' => [
                 'label' => 'Quality management investigation',
-                'value' => 2.50
+                'value' => 2.50,
             ],
             'q9p2r27' => [
                 'label' => 'Increase productivity and efficiency of DCs/warehouses',
-                'value' => 1.67
+                'value' => 1.67,
             ],
             'q9p2r28' => [
                 'label' => 'Intelligent Fulfillment',
-                'value' => 2.50
+                'value' => 2.50,
             ],
             'q9p2r29' => [
                 'label' => 'Network analytics and optimization',
-                'value' => 2.29
+                'value' => 2.29,
             ],
             'q9p2r30' => [
                 'label' => 'Ad Targeting',
-                'value' => 1.50
+                'value' => 1.50,
             ],
             'q9p2r31' => [
                 'label' => 'Scheduling optimisation',
-                'value' => 2.00
+                'value' => 2.00,
             ],
             'q9p2r32' => [
                 'label' => 'Connected vehicles optimization',
-                'value' => 2.83
+                'value' => 2.83,
             ],
             'q9p2r33' => [
                 'label' => 'Logistics and package delivery management',
-                'value' => 2.35
+                'value' => 2.35,
             ],
             'q9p2r34' => [
                 'label' => 'Field service optimization',
-                'value' => 2.24
+                'value' => 2.24,
             ],
             'q9p2r35' => [
                 'label' => 'Energy consumption analysis and prediction',
-                'value' => 2.12
+                'value' => 2.12,
             ],
         ],
         'qsizer2' => [
             'q9p2r1' => [
                 'label' => 'Price optimization',
-                'value' => 2.38
+                'value' => 2.38,
             ],
             'q9p2r2' => [
                 'label' => 'New product development',
-                'value' => 2.46
+                'value' => 2.46,
             ],
             'q9p2r3' => [
                 'label' => 'Risk exposure assessment',
-                'value' => 2.41
+                'value' => 2.41,
             ],
             'q9p2r4' => [
                 'label' => 'Regulatory intelligence',
-                'value' => 2.32
+                'value' => 2.32,
             ],
             'q9p2r5' => [
                 'label' => 'Customer profiling, targeting, and optimization of offers',
-                'value' => 2.19
+                'value' => 2.19,
             ],
             'q9p2r6' => [
                 'label' => 'Customer scoring and/or churn mitigation',
-                'value' => 2.34
+                'value' => 2.34,
             ],
             'q9p2r7' => [
                 'label' => 'Fraud prevention and detection',
-                'value' => 2.29
+                'value' => 2.29,
             ],
             'q9p2r8' => [
                 'label' => 'Product &amp; Service Recommendation systems',
-                'value' => 2.37
+                'value' => 2.37,
             ],
             'q9p2r9' => [
                 'label' => 'Automated Customer Service',
-                'value' => 2.25
+                'value' => 2.25,
             ],
             'q9p2r10' => [
                 'label' => 'Supply chain optimization',
-                'value' => 2.42
+                'value' => 2.42,
             ],
             'q9p2r11' => [
                 'label' => 'Predictive Maintenance',
-                'value' => 2.34
+                'value' => 2.34,
             ],
             'q9p2r12' => [
                 'label' => 'Inventory and service parts optimization',
-                'value' => 2.43
+                'value' => 2.43,
             ],
             'q9p2r13' => [
                 'label' => 'Precision agriculture',
-                'value' => 2.65
+                'value' => 2.65,
             ],
             'q9p2r14' => [
                 'label' => 'Yield monitoring and prediction',
-                'value' => 2.30
+                'value' => 2.30,
             ],
             'q9p2r15' => [
                 'label' => 'Field mapping &amp; crop scouting',
-                'value' => 2.40
+                'value' => 2.40,
             ],
             'q9p2r16' => [
                 'label' => 'Heavy equipment utilization',
-                'value' => 2.40
+                'value' => 2.40,
             ],
             'q9p2r17' => [
                 'label' => 'Cyberthreat &amp; detection',
-                'value' => 2.21
+                'value' => 2.21,
             ],
             'q9p2r18' => [
                 'label' => 'Usage based insurance',
-                'value' => 2.25
+                'value' => 2.25,
             ],
             'q9p2r19' => [
                 'label' => 'Social media analytics',
-                'value' => 2.30
+                'value' => 2.30,
             ],
             'q9p2r20' => [
                 'label' => 'Illness/disease diagnosis and progression',
-                'value' => 2.43
+                'value' => 2.43,
             ],
             'q9p2r21' => [
                 'label' => 'Personalized treatment via comprehensive evaluation of health records',
-                'value' => 2.10
+                'value' => 2.10,
             ],
             'q9p2r22' => [
                 'label' => 'Patient admission and re-admission predictions',
-                'value' => 2.43
+                'value' => 2.43,
             ],
             'q9p2r23' => [
                 'label' => 'Quality of care optimization',
-                'value' => 2.27
+                'value' => 2.27,
             ],
             'q9p2r24' => [
                 'label' => 'Smart warehousing',
-                'value' => 2.76
+                'value' => 2.76,
             ],
             'q9p2r25' => [
                 'label' => 'Asset management',
-                'value' => 2.12
+                'value' => 2.12,
             ],
             'q9p2r26' => [
                 'label' => 'Quality management investigation',
-                'value' => 2.59
+                'value' => 2.59,
             ],
             'q9p2r27' => [
                 'label' => 'Increase productivity and efficiency of DCs/warehouses',
-                'value' => 2.75
+                'value' => 2.75,
             ],
             'q9p2r28' => [
                 'label' => 'Intelligent Fulfillment',
-                'value' => 2.52
+                'value' => 2.52,
             ],
             'q9p2r29' => [
                 'label' => 'Network analytics and optimization',
-                'value' => 2.47
+                'value' => 2.47,
             ],
             'q9p2r30' => [
                 'label' => 'Ad Targeting',
-                'value' => 1.67
+                'value' => 1.67,
             ],
             'q9p2r31' => [
                 'label' => 'Scheduling optimisation',
-                'value' => 2.00
+                'value' => 2.00,
             ],
             'q9p2r32' => [
                 'label' => 'Connected vehicles optimization',
-                'value' => 2.67
+                'value' => 2.67,
             ],
             'q9p2r33' => [
                 'label' => 'Logistics and package delivery management',
-                'value' => 2.11
+                'value' => 2.11,
             ],
             'q9p2r34' => [
                 'label' => 'Field service optimization',
-                'value' => 2.17
+                'value' => 2.17,
             ],
             'q9p2r35' => [
                 'label' => 'Energy consumption analysis and prediction',
-                'value' => 2.57
+                'value' => 2.57,
             ],
         ],
         'qsizer3' => [
             'q9p2r1' => [
                 'label' => 'Price optimization',
-                'value' => 2.23
+                'value' => 2.23,
             ],
             'q9p2r2' => [
                 'label' => 'New product development',
-                'value' => 2.13
+                'value' => 2.13,
             ],
             'q9p2r3' => [
                 'label' => 'Risk exposure assessment',
-                'value' => 2.30
+                'value' => 2.30,
             ],
             'q9p2r4' => [
                 'label' => 'Regulatory intelligence',
-                'value' => 2.32
+                'value' => 2.32,
             ],
             'q9p2r5' => [
                 'label' => 'Customer profiling, targeting, and optimization of offers',
-                'value' => 1.97
+                'value' => 1.97,
             ],
             'q9p2r6' => [
                 'label' => 'Customer scoring and/or churn mitigation',
-                'value' => 2.24
+                'value' => 2.24,
             ],
             'q9p2r7' => [
                 'label' => 'Fraud prevention and detection',
-                'value' => 2.04
+                'value' => 2.04,
             ],
             'q9p2r8' => [
                 'label' => 'Product &amp; Service Recommendation systems',
-                'value' => 2.25
+                'value' => 2.25,
             ],
             'q9p2r9' => [
                 'label' => 'Automated Customer Service',
-                'value' => 2.44
+                'value' => 2.44,
             ],
             'q9p2r10' => [
                 'label' => 'Supply chain optimization',
-                'value' => 2.23
+                'value' => 2.23,
             ],
             'q9p2r11' => [
                 'label' => 'Predictive Maintenance',
-                'value' => 2.37
+                'value' => 2.37,
             ],
             'q9p2r12' => [
                 'label' => 'Inventory and service parts optimization',
-                'value' => 2.33
+                'value' => 2.33,
             ],
             'q9p2r13' => [
                 'label' => 'Precision agriculture',
-                'value' => 2.86
+                'value' => 2.86,
             ],
             'q9p2r14' => [
                 'label' => 'Yield monitoring and prediction',
-                'value' => 2.36
+                'value' => 2.36,
             ],
             'q9p2r15' => [
                 'label' => 'Field mapping &amp; crop scouting',
-                'value' => 2.21
+                'value' => 2.21,
             ],
             'q9p2r16' => [
                 'label' => 'Heavy equipment utilization',
-                'value' => 2.79
+                'value' => 2.79,
             ],
             'q9p2r17' => [
                 'label' => 'Cyberthreat &amp; detection',
-                'value' => 2.11
+                'value' => 2.11,
             ],
             'q9p2r18' => [
                 'label' => 'Usage based insurance',
-                'value' => 2.00
+                'value' => 2.00,
             ],
             'q9p2r19' => [
                 'label' => 'Social media analytics',
-                'value' => 2.25
+                'value' => 2.25,
             ],
             'q9p2r20' => [
                 'label' => 'Illness/disease diagnosis and progression',
-                'value' => 2.20
+                'value' => 2.20,
             ],
             'q9p2r21' => [
                 'label' => 'Personalized treatment via comprehensive evaluation of health records',
-                'value' => 2.30
+                'value' => 2.30,
             ],
             'q9p2r22' => [
                 'label' => 'Patient admission and re-admission predictions',
-                'value' => 2.50
+                'value' => 2.50,
             ],
             'q9p2r23' => [
                 'label' => 'Quality of care optimization',
-                'value' => 2.20
+                'value' => 2.20,
             ],
             'q9p2r24' => [
                 'label' => 'Smart warehousing',
-                'value' => 2.07
+                'value' => 2.07,
             ],
             'q9p2r25' => [
                 'label' => 'Asset management',
-                'value' => 2.03
+                'value' => 2.03,
             ],
             'q9p2r26' => [
                 'label' => 'Quality management investigation',
-                'value' => 2.41
+                'value' => 2.41,
             ],
             'q9p2r27' => [
                 'label' => 'Increase productivity and efficiency of DCs/warehouses',
-                'value' => 2.00
+                'value' => 2.00,
             ],
             'q9p2r28' => [
                 'label' => 'Intelligent Fulfillment',
-                'value' => 2.45
+                'value' => 2.45,
             ],
             'q9p2r29' => [
                 'label' => 'Network analytics and optimization',
-                'value' => 2.47
+                'value' => 2.47,
             ],
             'q9p2r30' => [
                 'label' => 'Ad Targeting',
-                'value' => 2.33
+                'value' => 2.33,
             ],
             'q9p2r31' => [
                 'label' => 'Scheduling optimisation',
-                'value' => 2.44
+                'value' => 2.44,
             ],
             'q9p2r32' => [
                 'label' => 'Connected vehicles optimization',
-                'value' => 2.17
+                'value' => 2.17,
             ],
             'q9p2r33' => [
                 'label' => 'Logistics and package delivery management',
-                'value' => 2.40
+                'value' => 2.40,
             ],
             'q9p2r34' => [
                 'label' => 'Field service optimization',
-                'value' => 2.44
+                'value' => 2.44,
             ],
             'q9p2r35' => [
                 'label' => 'Energy consumption analysis and prediction',
-                'value' => 2.25
+                'value' => 2.25,
             ],
         ],
         'qsizer4' => [
             'q9p2r1' => [
                 'label' => 'Price optimization',
-                'value' => 2.34
+                'value' => 2.34,
             ],
             'q9p2r2' => [
                 'label' => 'New product development',
-                'value' => 2.10
+                'value' => 2.10,
             ],
             'q9p2r3' => [
                 'label' => 'Risk exposure assessment',
-                'value' => 2.39
+                'value' => 2.39,
             ],
             'q9p2r4' => [
                 'label' => 'Regulatory intelligence',
-                'value' => 2.21
+                'value' => 2.21,
             ],
             'q9p2r5' => [
                 'label' => 'Customer profiling, targeting, and optimization of offers',
-                'value' => 1.92
+                'value' => 1.92,
             ],
             'q9p2r6' => [
                 'label' => 'Customer scoring and/or churn mitigation',
-                'value' => 2.09
+                'value' => 2.09,
             ],
             'q9p2r7' => [
                 'label' => 'Fraud prevention and detection',
-                'value' => 2.08
+                'value' => 2.08,
             ],
             'q9p2r8' => [
                 'label' => 'Product &amp; Service Recommendation systems',
-                'value' => 2.24
+                'value' => 2.24,
             ],
             'q9p2r9' => [
                 'label' => 'Automated Customer Service',
-                'value' => 2.26
+                'value' => 2.26,
             ],
             'q9p2r10' => [
                 'label' => 'Supply chain optimization',
-                'value' => 2.33
+                'value' => 2.33,
             ],
             'q9p2r11' => [
                 'label' => 'Predictive Maintenance',
-                'value' => 2.33
+                'value' => 2.33,
             ],
             'q9p2r12' => [
                 'label' => 'Inventory and service parts optimization',
-                'value' => 2.30
+                'value' => 2.30,
             ],
             'q9p2r13' => [
                 'label' => 'Precision agriculture',
-                'value' => 1.00
+                'value' => 1.00,
             ],
             'q9p2r14' => [
                 'label' => 'Yield monitoring and prediction',
-                'value' => 3.00
+                'value' => 3.00,
             ],
             'q9p2r15' => [
                 'label' => 'Field mapping &amp; crop scouting',
-                'value' => 4.00
+                'value' => 4.00,
             ],
             'q9p2r16' => [
                 'label' => 'Heavy equipment utilization',
-                'value' => 2.00
+                'value' => 2.00,
             ],
             'q9p2r17' => [
                 'label' => 'Cyberthreat &amp; detection',
-                'value' => 1.82
+                'value' => 1.82,
             ],
             'q9p2r18' => [
                 'label' => 'Usage based insurance',
-                'value' => 2.43
+                'value' => 2.43,
             ],
             'q9p2r19' => [
                 'label' => 'Social media analytics',
-                'value' => 2.75
+                'value' => 2.75,
             ],
             'q9p2r20' => [
                 'label' => 'Illness/disease diagnosis and progression',
-                'value' => 2.42
+                'value' => 2.42,
             ],
             'q9p2r21' => [
                 'label' => 'Personalized treatment via comprehensive evaluation of health records',
-                'value' => 2.67
+                'value' => 2.67,
             ],
             'q9p2r22' => [
                 'label' => 'Patient admission and re-admission predictions',
-                'value' => 1.83
+                'value' => 1.83,
             ],
             'q9p2r23' => [
                 'label' => 'Quality of care optimization',
-                'value' => 2.08
+                'value' => 2.08,
             ],
             'q9p2r24' => [
                 'label' => 'Smart warehousing',
-                'value' => 2.43
+                'value' => 2.43,
             ],
             'q9p2r25' => [
                 'label' => 'Asset management',
-                'value' => 2.71
+                'value' => 2.71,
             ],
             'q9p2r26' => [
                 'label' => 'Quality management investigation',
-                'value' => 1.96
+                'value' => 1.96,
             ],
             'q9p2r27' => [
                 'label' => 'Increase productivity and efficiency of DCs/warehouses',
-                'value' => 2.18
+                'value' => 2.18,
             ],
             'q9p2r28' => [
                 'label' => 'Intelligent Fulfillment',
-                'value' => 2.09
+                'value' => 2.09,
             ],
             'q9p2r29' => [
                 'label' => 'Network analytics and optimization',
-                'value' => 2.00
+                'value' => 2.00,
             ],
             'q9p2r30' => [
                 'label' => 'Ad Targeting',
-                'value' => 2.54
+                'value' => 2.54,
             ],
             'q9p2r31' => [
                 'label' => 'Scheduling optimisation',
-                'value' => 2.08
+                'value' => 2.08,
             ],
             'q9p2r32' => [
                 'label' => 'Connected vehicles optimization',
-                'value' => 2.44
+                'value' => 2.44,
             ],
             'q9p2r33' => [
                 'label' => 'Logistics and package delivery management',
-                'value' => 1.94
+                'value' => 1.94,
             ],
             'q9p2r34' => [
                 'label' => 'Field service optimization',
-                'value' => 2.27
+                'value' => 2.27,
             ],
             'q9p2r35' => [
                 'label' => 'Energy consumption analysis and prediction',
-                'value' => 2.60
+                'value' => 2.60,
             ],
         ],
-    ]
+    ],
 ];
 $genericReference = [
     'q1' => [
@@ -6030,15 +6031,15 @@ $genericReference = [
     'q6a' => [
         'q6ar1' => 'This is the least popular Key Performance Indicator anong all industries, although anecdotal evidence suggested this is one of the key drivers among organisations considering Big Data Solutions. Cost Reduction, together with efficiency improvements, can contribute significantly towards profitability but the biggest value that Big Data solutions can offer is towards transforming businesses to become more digitally focused. This requires more than simply looking using data to delvier new products though, and needs a willingness to transform at the highest level.',
         'q6ar2' => 'This is one of the middle-ground Key Performance Indicators, ranked fourth overall across all industries. As with Cost Reduction, anecdotal evidence suggests efficiency is one of the driving factors for implementation of big data solutions and this can contribute substantially to improved performance and profitability.',
-        'q6ar3' => 'This is the most popular Key Performance Indicator across all industries and a good area to focus. This will contribute towards cost reduction as Big Data Solutions are able to identify potential issues with products early in manufacture, but also get consistent and realistic overall feedback for services as they are delivered in the field. Improvements in existing products and services are more easily identified through manufacturing and client feedback.',                
+        'q6ar3' => 'This is the most popular Key Performance Indicator across all industries and a good area to focus. This will contribute towards cost reduction as Big Data Solutions are able to identify potential issues with products early in manufacture, but also get consistent and realistic overall feedback for services as they are delivered in the field. Improvements in existing products and services are more easily identified through manufacturing and client feedback.',
     ],
     'q7' => [
         'q7r1' => 'Time Efficiency is ranked in the middle in terms of the extent to which Big Data solutions can impact the achivement of the performance indicator - when considering the responses of all organisations. Overall, most organisations expect a little more than a slight increase in ability to achive the KPI. Hwever, improvements in efficiency is one  of the key reasons until now that organisations have considered implementing Big Data solutions. Despite this middle-ranging expectation, Big Data solutions should be considered when implementing changes to improve efficiency in the organisation.',
         'q7r2' => 'This is the second highest in terms of the ability of Big Data solutions to impact the ability to achieve the KPI, with only Customer Satisfaction giving a higher contribtion, when considering the responses of all organisations. Product or service quality can contribute significantly to digital transformation in the organisation, with Big Data solutions used to guide product development along the lines of customer feedback.',
         'q7r3' => 'This performance indicator is ranked the highest across all organisations in terms of the ability for Big Data solutions to help the achievement of the KPI. The average organisation expects close to a moderate increase in the ability to achive the KPI. and customer satisfaction itself. Customer Satisfaction is a key driver towards digital transformation and big data solutions are a sginificant contributor to implementing improved customer satisfaction.',
         'q7r4' => 'While Business Model Innovation is ranked the lowest of the KPI\'s in the ability of Big Data solutions to impact the achivement of the KPI, they still give a slight increase in the ability to achieve the performance indicator. Business Model innovation is one of the biggest outcomes from implementing a Digital Transformation solution, so should be seriously considered as an objective and performance indicator for measuring the impact of implementing a Big Data solution.',
-        'q7r5' => 'This is another of the more significant contributing factors towards digital transformation, and should be seriously considered as a key performance indicator for Big Data implementations.  While Big Data solutions only make a slight increase in the KPI, the feedback and understanding gained from analysis of customer activity, and preferences identified in product or service features can make very notable improvements in profitability, revenue, and competitiveness by enabling more customisation of products and services to tie in eisting customers.',                
-    ]
+        'q7r5' => 'This is another of the more significant contributing factors towards digital transformation, and should be seriously considered as a key performance indicator for Big Data implementations.  While Big Data solutions only make a slight increase in the KPI, the feedback and understanding gained from analysis of customer activity, and preferences identified in product or service features can make very notable improvements in profitability, revenue, and competitiveness by enabling more customisation of products and services to tie in eisting customers.',
+    ],
 ];
 
 $q8TotalResponses = [
@@ -6104,7 +6105,7 @@ $q8TotalResponses = [
         '25%-49%' => 21,
         '50%+' => 9,
         'Dont know' => 2,
-    ]
+    ],
 ];
 $q8SourceData = [
     'qsectorr1' => [
@@ -6170,7 +6171,7 @@ $q8SourceData = [
             'Customer satisfaction' => 0,
             'Business model innovation' => 2,
             'Number of new products/services launched' => 0,
-        ]
+        ],
     ],
     'qsectorr2' => [
         '0%' => [
@@ -6235,7 +6236,7 @@ $q8SourceData = [
             'Customer satisfaction' => 3,
             'Business model innovation' => 1,
             'Number of new products/services launched' => 5,
-        ]
+        ],
     ],
     'qsectorr3' => [
         '0%' => [
@@ -6300,7 +6301,7 @@ $q8SourceData = [
             'Customer satisfaction' => 1,
             'Business model innovation' => 0,
             'Number of new products/services launched' => 0,
-        ]
+        ],
     ],
     'qsectorr4' => [
         '0%' => [
@@ -6365,7 +6366,7 @@ $q8SourceData = [
             'Customer satisfaction' => 1,
             'Business model innovation' => 1,
             'Number of new products/services launched' => 2,
-        ]
+        ],
     ],
     'qsectorr5' => [
         '0%' => [
@@ -6430,7 +6431,7 @@ $q8SourceData = [
             'Customer satisfaction' => 4,
             'Business model innovation' => 4,
             'Number of new products/services launched' => 4,
-        ]
+        ],
     ],
     'qsectorr6' => [
         '0%' => [
@@ -6495,7 +6496,7 @@ $q8SourceData = [
             'Customer satisfaction' => 1,
             'Business model innovation' => 1,
             'Number of new products/services launched' => 4,
-        ]
+        ],
     ],
     'qsectorr7' => [
         '0%' => [
@@ -6560,7 +6561,7 @@ $q8SourceData = [
             'Customer satisfaction' => 0,
             'Business model innovation' => 0,
             'Number of new products/services launched' => 2,
-        ]
+        ],
     ],
     'qsectorr8' => [
         '0%' => [
@@ -6625,7 +6626,7 @@ $q8SourceData = [
             'Customer satisfaction' => 0,
             'Business model innovation' => 2,
             'Number of new products/services launched' => 2,
-        ]
+        ],
     ],
     'qsectorr9' => [
         '0%' => [
@@ -6690,7 +6691,7 @@ $q8SourceData = [
             'Customer satisfaction' => 6,
             'Business model innovation' => 6,
             'Number of new products/services launched' => 6,
-        ]
+        ],
     ],
     'qsizer1' => [
         '0%' => [
@@ -6755,7 +6756,7 @@ $q8SourceData = [
             'Customer satisfaction' => 1,
             'Business model innovation' => 2,
             'Number of new products/services launched' => 2,
-        ]
+        ],
     ],
     'qsizer2' => [
         '0%' => [
@@ -6820,7 +6821,7 @@ $q8SourceData = [
             'Customer satisfaction' => 2,
             'Business model innovation' => 3,
             'Number of new products/services launched' => 2,
-        ]
+        ],
     ],
     'qsizer3' => [
         '0%' => [
@@ -6885,7 +6886,7 @@ $q8SourceData = [
             'Customer satisfaction' => 1,
             'Business model innovation' => 1,
             'Number of new products/services launched' => 1,
-        ]
+        ],
     ],
     'qsizer4' => [
         '0%' => [
@@ -6950,9 +6951,9 @@ $q8SourceData = [
             'Customer satisfaction' => 4,
             'Business model innovation' => 2,
             'Number of new products/services launched' => 6,
-        ]
+        ],
     ],
-    
+
 ];
 
 $q9SourceData = [
@@ -8426,7 +8427,6 @@ $q9SourceData = [
         ],
     ],
 ];
-
 
 $q8AnswerKey = collect([
     1 => '0%',

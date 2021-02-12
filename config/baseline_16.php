@@ -1,4 +1,5 @@
 <?php
+
 //IBM
 return [
     'overall' => [
@@ -11,10 +12,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -25,7 +26,7 @@ return [
             'basecolor'=>'#004386',
             'pageimage'=>false,
             'margin-top'=>31,
-            'header-spacing'=>10
+            'header-spacing'=>10,
         ],
         'types' => [
             'stage1' => [
@@ -45,11 +46,11 @@ return [
                 'high' => 320,
                 'tweet' => false,
                 'benchmark' => 28,
-            ]
+            ],
         ],
         'tweet' => false,
         'report_recipients' => [
-            'roarkmccolgan@gmail.com'
+            'roarkmccolgan@gmail.com',
         ],
         'mrs' => [
             'auth' => [
@@ -77,7 +78,7 @@ return [
                         'user_transaction_date' => [
                             'type' => 'hidden',
                             'value' => 'datetime',
-                        ]
+                        ],
                     ],
                 ],
                 'current_launch_context' => [
@@ -225,8 +226,8 @@ return [
                             'question_type' => 'TEXT',
                             'question_name' => 'Q_Manage',
                             'answer' => 'manage',
-                        ]
-                    ],                
+                        ],
+                    ],
                 ],
                 'privacy' => [
                     'type' => 'object',
@@ -235,16 +236,16 @@ return [
                         'preferences' => [
                             [
                                 'pref_asset_id' => 'mo82085',
-                                'preference_code' => 'IBM',                                
+                                'preference_code' => 'IBM',
                                 'specific_delivery_methods' => [
                                     'email' => 'extra.marketing_email',
                                     'phone' => 'extra.marketing_phone',
-                                ]
-                            ]
+                                ],
+                            ],
                         ],
-                    ]
-                ]
-            ]
+                    ],
+                ],
+            ],
         ],
         'default_fields' =>[
             'fname' => [
@@ -553,7 +554,7 @@ return [
                 'error' => 'errorCountry',
                 'required' => true,
                 'col' => 12,
-            ]
+            ],
         ],
     ],
     'move' => [
@@ -571,10 +572,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -605,16 +606,16 @@ return [
                 'high' => 120,
                 'total' => 5,
                 'benchmark' => 28,
-            ]
+            ],
         ],
         'normalise_using_screeners' => [
-            'calc' => "(\$result['general']['score'] / 3) + \$result[\$key]['score']"
-        ]
+            'calc' => "(\$result['general']['score'] / 3) + \$result[\$key]['score']",
+        ],
     ],
     'build' => [
         'baseline' => 9.28,
         'baseline' => 10.93,
-        
+
         'baseline_stage1' => 2.5,
         'baseline_stage2' => 7.5,
         'baseline_stage3' => 13.5,
@@ -626,10 +627,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -660,11 +661,11 @@ return [
                 'high' => 120,
                 'total' => 5,
                 'benchmark' => 28,
-            ]
+            ],
         ],
         'normalise_using_screeners' => [
-            'calc' => "(\$result['general']['score'] / 3) + \$result[\$key]['score']"
-        ]
+            'calc' => "(\$result['general']['score'] / 3) + \$result[\$key]['score']",
+        ],
     ],
     'manage' => [
         'baseline' => 9.42,
@@ -680,10 +681,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -714,10 +715,10 @@ return [
                 'high' => 120,
                 'total' => 5,
                 'benchmark' => 28,
-            ]
+            ],
         ],
         'normalise_using_screeners' => [
-            'calc' => "(\$result['general']['score'] / 3) + \$result[\$key]['score']"
-        ]
-    ]
+            'calc' => "(\$result['general']['score'] / 3) + \$result[\$key]['score']",
+        ],
+    ],
 ];

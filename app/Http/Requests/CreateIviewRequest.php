@@ -1,11 +1,12 @@
-<?php namespace App\Http\Requests;
+<?php
 
-use Illuminate\Foundation\Http\FormRequest;
+namespace App\Http\Requests;
+
 use App\Http\Requests\Request;
+use Illuminate\Foundation\Http\FormRequest;
 
 class CreateIviewRequest extends FormRequest
 {
-
     /**
      * Determine if the user is authorized to make this request.
      *
@@ -34,8 +35,9 @@ class CreateIviewRequest extends FormRequest
             'language'=>'required',
         ];
     }
+
     /**
-     * Add custom messages to validation rules
+     * Add custom messages to validation rules.
      * @return array
      */
     public function messages()

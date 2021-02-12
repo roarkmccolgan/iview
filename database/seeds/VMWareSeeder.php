@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Database\Seeder;
 use Carbon\Carbon;
+use Illuminate\Database\Seeder;
 
 class VMWareSeeder extends Seeder
 {
@@ -46,11 +46,11 @@ class VMWareSeeder extends Seeder
         ]);
         DB::table('language_tool')->insert([ //english NTT
             'tool_id' => 14,
-            'language_id' => 1
+            'language_id' => 1,
         ]);
         DB::table('tool_user')->insert([
             'tool_id' => 14,
-            'user_id' => 1 //roark
+            'user_id' => 1, //roark
         ]);
 
         /*DB::table('extra_fields')->insert([

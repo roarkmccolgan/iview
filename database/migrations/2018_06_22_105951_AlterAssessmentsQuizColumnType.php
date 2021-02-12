@@ -13,7 +13,7 @@ class AlterAssessmentsQuizColumnType extends Migration
      */
     public function up()
     {
-        DB::statement("ALTER TABLE assessments MODIFY quiz mediumblob NULL;");
+        DB::statement('ALTER TABLE assessments MODIFY quiz mediumblob NULL;');
     }
 
     /**
@@ -23,6 +23,6 @@ class AlterAssessmentsQuizColumnType extends Migration
      */
     public function down()
     {
-        DB::statement("ALTER TABLE assessments MODIFY quiz blob NULL;");
+        DB::statement('ALTER TABLE assessments MODIFY quiz blob NULL;');
     }
 }

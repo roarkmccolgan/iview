@@ -2,8 +2,8 @@
 
 namespace App\Http\Requests;
 
-use Illuminate\Foundation\Http\FormRequest;
 use App\Http\Requests\Request;
+use Illuminate\Foundation\Http\FormRequest;
 
 class AddTrackerRequest extends FormRequest
 {
@@ -14,7 +14,7 @@ class AddTrackerRequest extends FormRequest
      */
     public function authorize()
     {
-        return $this->user()->hasRole(['super','admin','client']);
+        return $this->user()->hasRole(['super', 'admin', 'client']);
     }
 
     /**

@@ -1,6 +1,7 @@
 <?php
+
 return [
-	'relationship'=>'Relationship with Red Hat',
+    'relationship'=>'Relationship with Red Hat',
     'rel1'=>'CCSP',
     'rel2'=>'Red Hat Ready Business Partner',
     'rel3'=>'Red Hat Advanced Business Partner',
@@ -12,7 +13,7 @@ return [
     'rel9'=>'Distributor',
     'rel10'=>'Not a partner yet',
     'errorRelationship'=>'Please select Relationship Type',
-    
+
     'qualification'=>'Partner Type',
     'qual1' => 'Consulting',
     'qual2' => 'ISV',
@@ -27,16 +28,16 @@ return [
     'errorQualification'=>'Please select Partner Type',
 
     'investment'=>'IT investment priorities for the next 12 months',
-    "invest1"=>"IT Infrastructure",
-    "invest2"=> "Storage systems",
-    "invest3"=> "IT Security controls",
-    "invest4"=> "Systems Management",
-    "invest5"=> "Automation and Orchestration",
-    "invest6"=> "Application Development (DevOps/Containers etc)",
-    "invest7"=> "Workforce Mobility",
-    "invest8"=> "Customer Experience",
-    "invest9"=> "Enterprise Applications (ERP/CRM/SCM/HCM etc)",
-    "invest10"=> "GDPR compliance",
+    'invest1'=>'IT Infrastructure',
+    'invest2'=> 'Storage systems',
+    'invest3'=> 'IT Security controls',
+    'invest4'=> 'Systems Management',
+    'invest5'=> 'Automation and Orchestration',
+    'invest6'=> 'Application Development (DevOps/Containers etc)',
+    'invest7'=> 'Workforce Mobility',
+    'invest8'=> 'Customer Experience',
+    'invest9'=> 'Enterprise Applications (ERP/CRM/SCM/HCM etc)',
+    'invest10'=> 'GDPR compliance',
     'errorInvestment'=>'Please select investment priorities',
 
     'zipcode' => 'Postcode/Zip code',

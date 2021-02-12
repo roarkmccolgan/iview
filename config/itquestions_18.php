@@ -1,4 +1,5 @@
 <?php
+
 // Snow
 return [
     'leadership'=>[
@@ -44,10 +45,10 @@ return [
                                 'label'=>'La leadership ridefinisce costantemente la strategia per promuovere l\'innovazione e consentire il cambiamento costante.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Leadership Vision for Agility',
@@ -81,10 +82,10 @@ return [
                                 'label'=>'La leadership ridefinisce costantemente l\'allocazione del budget, in base a requisiti in continua evoluzione.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Leadership Vision for Agility',
@@ -118,12 +119,12 @@ return [
                                 'label'=>'Il team di leadership identifica in modo proattivo i flussi di lavoro che richiedono maggiore agilità e assegna il budget in modo da consentire processi migliori.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
-        ]
+        ],
     ],
     'structural' => [
         'title' => 'Agilità strutturale',
@@ -184,10 +185,10 @@ return [
                                 'label'=>'I team vengono creati spontaneamente dai dipendenti in tutte le aree funzionali in tempo reale in base alle necessità.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Agilità strutturale',
@@ -216,10 +217,10 @@ return [
                                 'label'=>'Identifichiamo le lacune nelle competenze nel corso dell\'anno e assegniamo continuamente risorse in modo flessibile.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Agilità strutturale',
@@ -253,12 +254,12 @@ return [
                                 'label'=>'La gestione delle conoscenze e la collaborazione sono KPI formali che si estendono ai partner esterni.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
     ],
     'process' => [
         'title' => 'Agilità dei processi',
@@ -320,10 +321,10 @@ return [
                                 'label'=>'I processi principali sono standardizzati e automatizzati e i dipendenti possono creare nuovi processi tramite il self-service.',
                                 'value'=>7.5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Agilità dei processi',
@@ -357,12 +358,12 @@ return [
                                 'label'=>'I processi dell\'organizzazione sono completamente digitalizzati e possono essere creati o modificati dinamicamente.',
                                 'value'=>7.5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
     ],
     'portfolio' => [
         'title' => 'Agilità del portafoglio',
@@ -423,10 +424,10 @@ return [
                                 'label'=>'Vengono lanciati prodotti nelle versioni minime realizzabili entro qualche mese dall\'ideazione e poi vengono sviluppati o abbandonati in base al feedback dei clienti in un flusso costante.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Agilità del portafoglio',
@@ -455,10 +456,10 @@ return [
                                 'label'=>'Molto rapidamente e non è necessario migliorare la velocità',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Agilità del portafoglio',
@@ -492,12 +493,12 @@ return [
                                 'label'=>'Integriamo le idee innovative provenienti da una rete esterna nelle nostre rapide iterazioni dei prodotti per accelerare la sperimentazione.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
     ],
     'technology' => [
         'title' => 'Architettura tecnologica',
@@ -558,10 +559,10 @@ return [
                                 'label'=>'Una piattaforma digitale integrata basata su sistemi intelligenti.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Architettura tecnologica',
@@ -595,10 +596,10 @@ return [
                                 'label'=>'Siamo molto più avanti delle altre aziende del settore.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Architettura tecnologica',
@@ -632,11 +633,11 @@ return [
                                 'label'=>'Utilizzo di tecnologie basate su cloud per l\'automazione integrata dei processi e i flussi di lavoro dei processi personalizzati, combinati con analisi predittiva e processi sistemici flessibili.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
-    ]
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
+    ],
 ];

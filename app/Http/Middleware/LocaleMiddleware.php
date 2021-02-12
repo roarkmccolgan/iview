@@ -16,9 +16,10 @@ class LocaleMiddleware
      */
     public function handle($request, Closure $next)
     {
-        if (defined("LOCALE")) {
-            App::setLocale(constant("LOCALE"));
+        if (defined('LOCALE')) {
+            App::setLocale(constant('LOCALE'));
         }
+
         return $next($request);
     }
 }

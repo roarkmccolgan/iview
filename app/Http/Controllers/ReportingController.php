@@ -1,4 +1,6 @@
-<?php namespace App\Http\Controllers;
+<?php
+
+namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
@@ -9,7 +11,6 @@ use Illuminate\Http\Request;
 
 class ReportingController extends Controller
 {
-
     /**
      * Display a listing of the resource.
      *
@@ -33,6 +34,7 @@ class ReportingController extends Controller
         if ($iviews->isEmpty()) {
             return redirect('/admin/iviews/create')->with('message', 'No Companies or iViews exist, please create one first');
         }
+
         return view('reporting.create', compact('iviews'));
     }
 
@@ -43,8 +45,8 @@ class ReportingController extends Controller
      */
     public function store(CreateReportRequest $request)
     {
-        if (!$request->has('company_id')) {
-            $company = Company::create(['name'=>$request->input('new_company'),'logo'=>'','colours'=>$request->input('colours')]);
+        if (! $request->has('company_id')) {
+            $company = Company::create(['name'=>$request->input('new_company'), 'logo'=>'', 'colours'=>$request->input('colours')]);
             $company_id = $company->id;
         } else {
             $company_id = $request->input('company_id');
@@ -57,13 +59,12 @@ class ReportingController extends Controller
             'gapropertyid'=>$request->input('gapropertyid'),
             'company_id'=>$company_id,
             'start_date'=>Carbon::createFromFormat('d-m-Y', $request->input('start_date')),
-            'end_date'=>Carbon::createFromFormat('d-m-Y', $request->input('start_date'))->addMonths($request->input('duration'))->toDateTimeString()
+            'end_date'=>Carbon::createFromFormat('d-m-Y', $request->input('start_date'))->addMonths($request->input('duration'))->toDateTimeString(),
         ]);
 
         foreach ($request->input('language') as $lang_id) {
-            $url = URL::create(['domain'=>$request->input('domain'),'subdomain'=>$request->input('subdomain'),'language_id'=>$lang_id,'iview_id'=>$iview->id]);
+            $url = URL::create(['domain'=>$request->input('domain'), 'subdomain'=>$request->input('subdomain'), 'language_id'=>$lang_id, 'iview_id'=>$iview->id]);
         }
-
 
         //$input = $request->all();
         return redirect('/iviews');

@@ -1,6 +1,7 @@
 <?php
+
 //SPLUNK French
-return array(
+return [
     'title' => 'L\'évaluation d\'IDC en ce qui concerne la sécurite',
     'sub-title' => 'Votre entreprise est-elle en sécurité ?',
     'stage1' => 'Étape 1 : Mauvaise',
@@ -14,7 +15,7 @@ return array(
         <a class="btn btn--primary" target="_blank" href="https://www.splunk.com/en_us/solutions/solution-areas/security-and-fraud/security-investigation.html">
             Cliquez ici pour plus d\'informations
         </a>',
-    'complete_tweet' => 'I\'ve just taken the @IDCEMEA Security Assessment Tool for @splunk. Interested? ',// http://bit.ly/2gslXEh
+    'complete_tweet' => 'I\'ve just taken the @IDCEMEA Security Assessment Tool for @splunk. Interested? ', // http://bit.ly/2gslXEh
     'email'=>[
         'subject' => 'IDC\'s Security Assessment',
         'hi' => 'Madame, Monsieur,  :Fname',
@@ -23,7 +24,7 @@ return array(
         'link' => 'Télécharger le rapport',
         'extra' => 'Une fois que vous aurez analysé ce rapport, pourquoi ne pas rendre visite à <a href="https://www.splunk.com/en_us/solutions/solution-areas/security-and-fraud/security-investigation.html" style="color:#65A637">Splunk</a> ?',
         'regards' => 'Cordialement,',
-        'team' => 'L’équipe IDC'
+        'team' => 'L’équipe IDC',
     ],
     'introduction' => '
         <h2>Résultats globaux</h2>
@@ -155,16 +156,16 @@ return array(
             <li>Interopérabilité ouverte – Nous ne savons pas ce que demain nous apportera et être bloqué avec des interfaces propriétaires entravera votre capacité à sécuriser votre parc informatique au fil de ses évolutions et changements. Recherchez des solutions qui s’intègrent bien en  pile et prennent en charge une expansion via des API et interfaces ouvertes, bien définies et stables.</li>
         </ul>
     ',
-    'overall' => array(
+    'overall' => [
         'title'=>'Votre évaluation générale:',
         'hidetitle'=>'true',
         'image'=>'',
         'stage1'=>'',
         'stage2'=>'',
         'stage3'=>'',
-        'stage4'=>''
-    ),
-    'security-strategy' => array(
+        'stage4'=>'',
+    ],
+    'security-strategy' => [
         'title'=>'Security Strategy',
         'image'=>'security-strategy.jpg',
         'pb'=>'pb',
@@ -172,9 +173,9 @@ return array(
         'stage2'=>'',
         'stage3'=>'',
         'stage4'=>'',
-        'stage5'=>''
-    ),
-    'incident-detection' => array(
+        'stage5'=>'',
+    ],
+    'incident-detection' => [
         'title'=> 'Data rights and standards',
         'image'=>'incident-detection.jpg',
         'pb'=>'pb',
@@ -182,9 +183,9 @@ return array(
         'stage2'=>'',
         'stage3'=>'',
         'stage4'=>'',
-        'stage5'=>''
-    ),
-    'incident-response' => array(
+        'stage5'=>'',
+    ],
+    'incident-response' => [
         'title'=> 'incident-response',
         'image'=>'incident-response.jpg',
         'pb'=>'pb',
@@ -192,6 +193,6 @@ return array(
         'stage2'=>'',
         'stage3'=>'',
         'stage4'=>'',
-        'stage5'=>''
-    )
-);
+        'stage5'=>'',
+    ],
+];

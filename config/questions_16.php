@@ -1,4 +1,5 @@
 <?php
+
 // IBM
 return [
     'general'=>[
@@ -23,14 +24,14 @@ return [
                         'calc'=>[
                             'min'=>6,
                             'max'=>28,
-                            'outputmax'=>37.5
+                            'outputmax'=>37.5,
                         ],
                         'optionLabels' => [
                             'not at all',
                             'only used for tests/pilots',
                             'for selected applications',
                             'only for new applications',
-                            'for most or all applications'
+                            'for most or all applications',
                         ],
                         'question'=>'To what extent do you use the following technologies?',
                         'name'=> 1,
@@ -63,8 +64,8 @@ return [
                                         'label'=>'for most or all applications',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Microservices',
@@ -94,8 +95,8 @@ return [
                                         'label'=>'for most or all applications',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'APIs ',
@@ -125,8 +126,8 @@ return [
                                         'label'=>'for most or all applications',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Serverless functions',
@@ -156,8 +157,8 @@ return [
                                         'label'=>'for most or all applications',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Virtual machines',
@@ -187,8 +188,8 @@ return [
                                         'label'=>'for most or all applications',
                                         'value'=>2,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Bare metal servers',
@@ -218,12 +219,12 @@ return [
                                         'label'=>'for most or all applications',
                                         'value'=>2,
                                         'checked'=>false,
-                                    ]
-                                ]
-                            ],                            
-                        ]
-                    ]
-                ]
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'General',
@@ -233,7 +234,7 @@ return [
                         'calc'=>[
                             'min'=>7,
                             'max'=>35,
-                            'outputmax'=>37.5
+                            'outputmax'=>37.5,
                         ],
                         'optionLabels' => [
                             '1 Not at all important',
@@ -273,8 +274,8 @@ return [
                                         'label'=>'5 Essential',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Software as a service (SaaS)',
@@ -304,8 +305,8 @@ return [
                                         'label'=>'5 Essential',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Platform as a service (PaaS)',
@@ -335,8 +336,8 @@ return [
                                         'label'=>'5 Essential',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Private cloud (on premises or hosted)',
@@ -366,8 +367,8 @@ return [
                                         'label'=>'5 Essential',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Multicloud management (connecting and managing workloads across multiple cloud platforms)',
@@ -397,8 +398,8 @@ return [
                                         'label'=>'5 Essential',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Hybrid cloud architecture (connection between private cloud and public cloud environments)',
@@ -428,8 +429,8 @@ return [
                                         'label'=>'5 Essential',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Traditional on-premises IT',
@@ -459,14 +460,14 @@ return [
                                         'label'=>'5 Essential',
                                         'value'=>1,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
-                        ]
-                    ]
-                ]
+                        ],
+                    ],
+                ],
             ],
-        ]
+        ],
     ],
     'move' => [
         'title' => 'Move',
@@ -491,7 +492,7 @@ return [
             ',
             '
                 <p class="w-full my-4">Are you modernizing your application environment?</p>
-            '
+            ',
         ],
         'intermission' => [],
         'class' => 'sec2',
@@ -507,14 +508,14 @@ return [
                         'calc'=>[
                             'min'=>10,
                             'max'=>50,
-                            'outputmax'=>25
+                            'outputmax'=>25,
                         ],
                         'optionLabels' => [
                             'Traditional IT infrastructure',
                             'Private cloud',
                             'IaaS',
                             'PaaS',
-                            'SaaS'
+                            'SaaS',
                         ],
                         'question'=>'In which type of environment do you predominately run your applications today?',
                         'name'=> 3,
@@ -547,8 +548,8 @@ return [
                                         'label'=>'SaaS',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'CRM',
@@ -578,8 +579,8 @@ return [
                                         'label'=>'SaaS',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'HCM',
@@ -609,8 +610,8 @@ return [
                                         'label'=>'SaaS',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Industry-specific applications',
@@ -640,8 +641,8 @@ return [
                                         'label'=>'SaaS',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Custom-built applications',
@@ -671,8 +672,8 @@ return [
                                         'label'=>'SaaS',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'File, Content, and Collaboration ',
@@ -702,8 +703,8 @@ return [
                                         'label'=>'SaaS',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Big Data/analytics',
@@ -733,8 +734,8 @@ return [
                                         'label'=>'SaaS',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Relational databases',
@@ -764,8 +765,8 @@ return [
                                         'label'=>'SaaS',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Non-relational databases',
@@ -795,8 +796,8 @@ return [
                                         'label'=>'SaaS',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Disaster recovery/secondary storage',
@@ -826,13 +827,13 @@ return [
                                         'label'=>'SaaS',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
-                            
-                        ]
-                    ]
-                ]
+
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Move',
@@ -842,7 +843,7 @@ return [
                         'calc'=>[
                             'min'=>10,
                             'max'=>50,
-                            'outputmax'=>25
+                            'outputmax'=>25,
                         ],
                         'optionLabels' => [
                             'Rehost',
@@ -851,7 +852,7 @@ return [
                             'Rebuild',
                             'Replace',
                             'Keep as is',
-                            'Not Decided'
+                            'Not Decided',
                         ],
                         'question'=>'Which application modernization strategy have you chosen?',
                         'name'=> 4,
@@ -894,8 +895,8 @@ return [
                                         'label'=>'Not Decided',
                                         'value'=>1,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'CRM',
@@ -935,8 +936,8 @@ return [
                                         'label'=>'Not Decided',
                                         'value'=>1,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'HCM',
@@ -976,8 +977,8 @@ return [
                                         'label'=>'Not Decided',
                                         'value'=>1,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Industry-specific applications',
@@ -1017,8 +1018,8 @@ return [
                                         'label'=>'Not Decided',
                                         'value'=>1,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Custom-built applications',
@@ -1058,8 +1059,8 @@ return [
                                         'label'=>'Not Decided',
                                         'value'=>1,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'File, content, and collaboration',
@@ -1099,8 +1100,8 @@ return [
                                         'label'=>'Not Decided',
                                         'value'=>1,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Big Data/analytics',
@@ -1140,8 +1141,8 @@ return [
                                         'label'=>'Not Decided',
                                         'value'=>1,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Relational databases',
@@ -1181,8 +1182,8 @@ return [
                                         'label'=>'Not Decided',
                                         'value'=>1,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Non-relational databases',
@@ -1222,8 +1223,8 @@ return [
                                         'label'=>'Not Decided',
                                         'value'=>1,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Disaster recovery/secondary storage',
@@ -1263,13 +1264,13 @@ return [
                                         'label'=>'Not Decided',
                                         'value'=>1,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
-                            
-                        ]
-                    ]
-                ]
+
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Move',
@@ -1279,7 +1280,7 @@ return [
                         'calc'=>[
                             'min'=>3,
                             'max'=>12,
-                            'outputmax'=>25
+                            'outputmax'=>25,
                         ],
                         'min'=>1,
                         'max'=>3,
@@ -1346,11 +1347,11 @@ return [
                                 'value'=>4,
                                 'checked'=>false,
                             ],
-                        ]
-                    ]
-                ]
-            ]
-        ]
+                        ],
+                    ],
+                ],
+            ],
+        ],
     ],
     'build' => [
         'title' => 'Build',
@@ -1389,13 +1390,13 @@ return [
                         'calc'=>[
                             'min'=>5,
                             'max'=>15,
-                            'outputmax'=>25
+                            'outputmax'=>25,
                         ],
                         'optionLabels' => [
                             'Not relevant',
                             'No plans',
                             'Planning to use',
-                            'Already use'
+                            'Already use',
                         ],
                         'question'=>'How do you want to enhance your applications using innovative technologies? ',
                         'name'=> 6,
@@ -1423,8 +1424,8 @@ return [
                                         'label'=>'Already use',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Add IoT and edge applications',
@@ -1449,8 +1450,8 @@ return [
                                         'label'=>'Already use',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Add blockchain capabilities',
@@ -1475,8 +1476,8 @@ return [
                                         'label'=>'Already use',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'AR/VR',
@@ -1501,8 +1502,8 @@ return [
                                         'label'=>'Already use',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Intelligent process automation (IPA)',
@@ -1527,12 +1528,12 @@ return [
                                         'label'=>'Already use',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Build',
@@ -1542,14 +1543,14 @@ return [
                         'calc'=>[
                             'min'=>4,
                             'max'=>17,
-                            'outputmax'=>25
+                            'outputmax'=>25,
                         ],
                         'optionLabels' => [
                             '1 Not at all applicable',
                             '2',
                             '3',
                             '4',
-                            '5 Very applicable'
+                            '5 Very applicable',
                         ],
                         'question'=>'To what extent do the following approaches reflect your application strategy?',
                         'name'=> 7,
@@ -1582,8 +1583,8 @@ return [
                                         'label'=>'5 Very applicable',
                                         'value'=>1,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'We prefer to customize off-the-shelf standard applications',
@@ -1613,8 +1614,8 @@ return [
                                         'label'=>'5 Very applicable',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'We prefer to build our own applications',
@@ -1644,8 +1645,8 @@ return [
                                         'label'=>'5 Very applicable',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'We have outsourced application development',
@@ -1675,12 +1676,12 @@ return [
                                         'label'=>'5 Very applicable',
                                         'value'=>4,
                                         'checked'=>false,
-                                    ]
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Build',
@@ -1690,12 +1691,12 @@ return [
                         'calc'=>[
                             'min'=>4,
                             'max'=>12,
-                            'outputmax'=>25
+                            'outputmax'=>25,
                         ],
                         'optionLabels' => [
                             'No plans',
                             'Planning to use',
-                            'Currently using'
+                            'Currently using',
                         ],
                         'question'=>'Which methodologies and tools are you using?',
                         'name'=> 8,
@@ -1718,8 +1719,8 @@ return [
                                         'label'=>'Currently using',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'We run a CI/CD pipeline',
@@ -1739,8 +1740,8 @@ return [
                                         'label'=>'Currently using',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'We do value stream management',
@@ -1760,8 +1761,8 @@ return [
                                         'label'=>'Currently using',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'We are running a software development factory',
@@ -1781,14 +1782,14 @@ return [
                                         'label'=>'Currently using',
                                         'value'=>3,
                                         'checked'=>false,
-                                    ]
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
-        ]
+        ],
     ],
     'manage' => [
         'title' => 'Manage',
@@ -1829,14 +1830,14 @@ return [
                         'calc'=>[
                             'min'=>4,
                             'max'=>20,
-                            'outputmax'=>18.75
+                            'outputmax'=>18.75,
                         ],
                         'optionLabels' => [
                             '1 Disagree completely',
                             '2',
                             '3',
                             '4',
-                            '5 Completely agree'
+                            '5 Completely agree',
                         ],
                         'question'=>'To what extent do you agree with the following statements about your ability to monitor and manage workloads across the infrastructure?',
                         'name'=> 9,
@@ -1869,8 +1870,8 @@ return [
                                         'label'=>'5 Completely agree',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'The management platform provides a vendor-agonistic cohesive "single pane of glass"',
@@ -1900,8 +1901,8 @@ return [
                                         'label'=>'5 Completely agree',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Compute and storage resources are automatically provisioned depending on application use',
@@ -1931,8 +1932,8 @@ return [
                                         'label'=>'5 Completely agree',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Workloads and data repositories are dynamically deployed to the most feasible platforms',
@@ -1962,12 +1963,12 @@ return [
                                         'label'=>'5 Completely agree',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Manage',
@@ -1977,7 +1978,7 @@ return [
                         'calc'=>[
                             'min'=>3,
                             'max'=>9,
-                            'outputmax'=>18.75
+                            'outputmax'=>18.75,
                         ],
                         'min'=>1,
                         'max'=>3,
@@ -2033,10 +2034,10 @@ return [
                                 'label'=>'Business agility',
                                 'value'=>3,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Manage',
@@ -2046,7 +2047,7 @@ return [
                         'calc'=>[
                             'min'=>1,
                             'max'=>3,
-                            'outputmax'=>18.75
+                            'outputmax'=>18.75,
                         ],
                         'question'=>'Which of the following best describes your current operating model for IT',
                         'name'=> 11,
@@ -2065,10 +2066,10 @@ return [
                                 'label'=>'We have transformed our IT organization to match the cloud operating model',
                                 'value'=>3,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page4' => [
                 'title' => 'Manage',
@@ -2078,7 +2079,7 @@ return [
                         'calc'=>[
                             'min'=>1,
                             'max'=>3,
-                            'outputmax'=>18.75
+                            'outputmax'=>18.75,
                         ],
                         'question'=>'Have you set up a cloud center of excellence to ensure that the cloud strategy and processes are implemented across all parts of the organization?',
                         'name'=> 12,
@@ -2097,11 +2098,11 @@ return [
                                 'label'=>'No, and no plans',
                                 'value'=>1,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
-    ]
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
+    ],
 ];

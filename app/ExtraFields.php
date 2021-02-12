@@ -20,10 +20,11 @@ class ExtraFields extends Model
         'error',
         'options',
         'required',
-        'order'
+        'order',
     ];
+
     /**
-     * Repurn report settings that own this notification
+     * Repurn report settings that own this notification.
      * @return [type] [description]
      */
     public function tool()

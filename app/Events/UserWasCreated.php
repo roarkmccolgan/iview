@@ -4,8 +4,8 @@ namespace App\Events;
 
 use App\Events\Event;
 use App\Tool;
-use App\User;
 use App\Url;
+use App\User;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 use Illuminate\Queue\SerializesModels;
 

@@ -1,4 +1,5 @@
 <?php
+
 //DASSAULT
 return [
     'overall' => [
@@ -11,10 +12,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -25,7 +26,7 @@ return [
             'basecolor'=>'#004386',
             'pageimage'=>false,
             'margin-top'=>20,
-            'header-spacing'=>6
+            'header-spacing'=>6,
         ],
         'types' => [
             'stage1' => [
@@ -48,11 +49,11 @@ return [
                 'copy' => 'general.8goodtxt',
                 'tweet' => false,
                 'benchmark' => 28,
-            ]
+            ],
         ],
         'tweet' => false,
         'report_recipients' => [
-            'roarkmccolgan@gmail.com'
+            'roarkmccolgan@gmail.com',
         ],
     ],
     'business' => [
@@ -70,10 +71,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -92,22 +93,22 @@ return [
                 'high' => 29,
                 'total' => 2,
                 'benchmark' => 20,
-                'copy' => 'dassault.digital-business-poor-txt'
+                'copy' => 'dassault.digital-business-poor-txt',
             ],
             'stage2' => [
                 'low' => 30,
                 'high' => 47,
                 'total' => 3,
                 'benchmark' => 34,
-                'copy' => 'dassault.digital-business-standard-txt'
+                'copy' => 'dassault.digital-business-standard-txt',
             ],
             'stage3' => [
                 'low' => 48,
                 'high' => 60,
                 'total' => 5,
                 'benchmark' => 28,
-                'copy' => 'dassault.digital-business-good-txt'
-            ]
-        ]
-    ]
+                'copy' => 'dassault.digital-business-good-txt',
+            ],
+        ],
+    ],
 ];

@@ -1,6 +1,7 @@
 <?php
+
 //Symantec
-return array(
+return [
     'title' => 'Valutazione della preparazione GDPR di IDC',
     'sub-title' => 'La preparazione GDPR della vostra azienda',
     'stage1' => 'Fase 1: Avvio',
@@ -15,7 +16,7 @@ return array(
         <a class="btn btn--primary" target="_blank" href="https://www.symantec.com/it/it/campaigns/data-privacy">
             Fate clic qui per ulteriori informazioni
         </a>',
-    'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @symantec. Interested? ',// http://bit.ly/2gslXEh
+    'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @symantec. Interested? ', // http://bit.ly/2gslXEh
     'email'=>[
         'subject' => 'Valutazione della preparazione GDPR di IDC e Symantec',
         'hi' => 'Salve :Fname',
@@ -23,7 +24,7 @@ return array(
         'link' => 'Scarica report',
         'extra' => 'Una volta letto il report, vi preghiamo di visitare il sito <a href="https://www.symantec.com/it/it/campaigns/data-privacy" style="color:#FDBB30">Web Symantec</a>',
         'regards' => 'Cordiali saluti',
-        'team' => 'Il team di IDC'
+        'team' => 'Il team di IDC',
     ],
     'introduction' => '
         <h2>Risultati della valutazione della preparazione GDPR complessiva</h2>
@@ -108,7 +109,6 @@ return array(
             Il vostro punteggio di preparazione è ostacolato in modo significativo dalla mancanza di una taskforce di conformità interfunzionale o di un consiglio di amministrazione che abbracci più parti interessate nella vostra organizzazione.  L\'impegno di tutte le parti interessate rilevanti è un fattore di successo critico in qualsiasi programma GDPR e la mancanza di un approccio così coordinato limita in modo significativo il successo finale di qualsiasi attività di conformità. Prendete in considerazione il riesame di questa situazione il più presto possibile. Un approccio al GDPR a compartimenti stagni è improbabile che soddisfi alcuni dei principi fondamentali richiesti dalla nuova legislazione.
         </p>
     ',
-
 
     'dataawarenessintro'=>'
         <h2>Consapevolezza dei dati</h2>
@@ -233,7 +233,7 @@ return array(
             Le vostre risposte indicano che vi trovate ad affrontare i requisiti più avanzati del GDPR. Questo è probabilmente un riflesso del vostro avanzato stato di preparazione. Probabilmente, vi starete concentrando sull\'ampliamento dei processi di governance dei dati al cloud e agli ambienti mobili. Tuttavia, dovete assicurarvi di aver risolto alcuni livelli base, come la gestione dei consensi, l\'anonimizzazione o la pseudonimizzazione dei dati e la formazione del personale sui nuovi rischi e obblighi.
         </p>
     ',
-    
+
     'risk_q112'=>'
         <p>
             Il vostro punteggio indica che siete scettici riguardo al cloud. Si tratta di una posizione di prudenza che si può riflettere nella sete di rischio della vostra azienda. Abbastanza giusto. Tuttavia, potreste essere privi della flessibilità e dell\'agilità offerte dal cloud. Inoltre, è perfettamente possibile essere compatibili con il GDPR mentre si utilizzano i servizi cloud. I provider di servizi cloud sono consapevoli dei loro obblighi e molti di loro offrono contratti pronti per il GDPR, nel senso che lo spostamento dei dati sul cloud potrebbe far avanzare, anziché ostacolare, la vostra attività di conformità. Un aspetto su cui vale la pena indagare.
@@ -249,7 +249,6 @@ return array(
             La vostra risposta indica un approccio maturo al cloud e alla protezione dei dati. Ciò può implicare l\'adattamento dei servizi cloud esistenti per assicurarvi che siano aderenti alle nuove normative. Oppure può darsi che vi siate già accertati che l\'utilizzo del cloud sia conforme e che non necessiti di ulteriori modifiche. Se questo è vero, va tutto bene: siete in anticipo sui tempi. Ma un avvertimento: le conseguenze dell\'uso errato del cloud, ad esempio presupponendo che i provider di servizi cloud possano assumersi delle responsabilità (e non possono), potrebbero essere gravi. Assicuratevi di rivedere i contratti relativi al cloud e che essi siano pronti per il GDPR.
         </p>
     ',
-
 
     'riskstage1or2_q10lt15'=>'
         <p>
@@ -314,16 +313,16 @@ return array(
     ',
 
     /*'introduction-image' => 'report1.jpg',*/
-    'overall' => array(
+    'overall' => [
         'title'=>'Risultati della valutazione della preparazione GDPR complessiva',
         'hidetitle'=>'true',
         'image'=>'',
         'stage1'=>'',
         'stage2'=>'',
         'stage3'=>'',
-        'stage4'=>''
-    ),
-    'security-strategy' => array(
+        'stage4'=>'',
+    ],
+    'security-strategy' => [
         'title'=>'Security Strategy',
         'image'=>'security-strategy.jpg',
         'pb'=>'pb',
@@ -331,9 +330,9 @@ return array(
         'stage2'=>'',
         'stage3'=>'',
         'stage4'=>'',
-        'stage5'=>''
-    ),
-    'incident-detection' => array(
+        'stage5'=>'',
+    ],
+    'incident-detection' => [
         'title'=> 'Data rights and standards',
         'image'=>'incident-detection.jpg',
         'pb'=>'pb',
@@ -341,9 +340,9 @@ return array(
         'stage2'=>'',
         'stage3'=>'',
         'stage4'=>'',
-        'stage5'=>''
-    ),
-    'incident-response' => array(
+        'stage5'=>'',
+    ],
+    'incident-response' => [
         'title'=> 'incident-response',
         'image'=>'incident-response.jpg',
         'pb'=>'pb',
@@ -351,6 +350,6 @@ return array(
         'stage2'=>'',
         'stage3'=>'',
         'stage4'=>'',
-        'stage5'=>''
-    )
-);
+        'stage5'=>'',
+    ],
+];

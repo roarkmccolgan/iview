@@ -22,7 +22,7 @@ class AddExtraFieldsToIBMCloudSeeder extends Seeder
             'required' => 0,
             'order' => 1,
             'created_at' => Carbon\Carbon::now(),
-            'updated_at' => Carbon\Carbon::now()
+            'updated_at' => Carbon\Carbon::now(),
         ]);
         DB::table('extra_fields')->insert([
             'tool_id' => '16',
@@ -35,7 +35,7 @@ class AddExtraFieldsToIBMCloudSeeder extends Seeder
             'required' => 0,
             'order' => 1,
             'created_at' => Carbon\Carbon::now(),
-            'updated_at' => Carbon\Carbon::now()
+            'updated_at' => Carbon\Carbon::now(),
         ]);
         DB::table('extra_fields')->insert([
             'tool_id' => '16',
@@ -48,7 +48,7 @@ class AddExtraFieldsToIBMCloudSeeder extends Seeder
             'required' => 0,
             'order' => 1,
             'created_at' => Carbon\Carbon::now(),
-            'updated_at' => Carbon\Carbon::now()
+            'updated_at' => Carbon\Carbon::now(),
         ]);
     }
 }

@@ -1,4 +1,5 @@
 <?php
+
 // Snow
 return [
     'leadership'=>[
@@ -44,10 +45,10 @@ return [
                                 'label'=>'Leadership redefines strategy constantly to drive innovation and enable constant change.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Leadership Vision for Agility',
@@ -81,10 +82,10 @@ return [
                                 'label'=>'Leadership redefines budget allocation constantly, based on changing requirements.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Leadership Vision for Agility',
@@ -118,12 +119,12 @@ return [
                                 'label'=>'The leadership team proactively identifies workflows requiring more agility and allocates budgets to enable better processes.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
-        ]
+        ],
     ],
     'structural' => [
         'title' => 'Structural Agility',
@@ -184,10 +185,10 @@ return [
                                 'label'=>'Teams are spontaneously created by employees across functional areas in real time as the need arises.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Structural Agility',
@@ -216,10 +217,10 @@ return [
                                 'label'=>'We identify skills gaps throughout the year and tap into flexible resources continuously.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Structural Agility',
@@ -253,12 +254,12 @@ return [
                                 'label'=>'Knowledge management and collaboration are formal KPIs and extend to external partners.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
     ],
     'process' => [
         'title' => 'Process Agility',
@@ -319,10 +320,10 @@ return [
                                 'label'=>'Core processes are standardized and automated, enabling new processes to be created by employees through self-service.',
                                 'value'=>7.5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Process Agility',
@@ -356,12 +357,12 @@ return [
                                 'label'=>'Business processes are fully digitized and can be dynamically created or adjusted.',
                                 'value'=>7.5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
     ],
     'portfolio' => [
         'title' => 'Portfolio Agility',
@@ -422,10 +423,10 @@ return [
                                 'label'=>'Minimum Viable Products are introduced within months from ideation and expanded or phased out based on customer feedback in a constant flow.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Portfolio Agility',
@@ -454,10 +455,10 @@ return [
                                 'label'=>'Very quickly and there is no need for improvement',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Portfolio Agility',
@@ -491,12 +492,12 @@ return [
                                 'label'=>'We embed innovative ideas from an external network into our rapid product iterations in order to fail fast.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
     ],
     'technology' => [
         'title' => 'Technology Architecture',
@@ -557,10 +558,10 @@ return [
                                 'label'=>'An integrated digital platform with intelligent systems at its core.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Technology Architecture',
@@ -594,10 +595,10 @@ return [
                                 'label'=>'Well ahead of our peers.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Technology Architecture',
@@ -631,11 +632,11 @@ return [
                                 'label'=>'Use of cloud-based technologies for integrated process automation and custom process workflows, combined with predictive analytics and systemic agile processes.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
-    ]
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
+    ],
 ];

@@ -1,6 +1,6 @@
 <?php
 
-return array(
+return [
     //Sage Cloud id 1
     '1elqFormName'=>'',
     '1restart'=>'Volver a empezar la evaluación',
@@ -11,27 +11,26 @@ return array(
     '1landing'=>'<h2>Avanzando en su desarrollo</h2><p>Cloud Benchmark for Development de IDC permite posicionar a tu empresa comparándola con más de 500 organizaciones similares en los EE.UU. y Europa, y te proporciona una guía esencial en el desarrollo de tu negocio en la nube.</p>',
     '1startbut'=>'Empezar aquí',
     'timetoact'=>'Fase 1: Momento de actuar', //reactive
-    'timetoacttxt'=>"En esta fase de adopción de la nube, las organizaciones tienden a proporcionar la nube a petición de sus clientes o por ser distribuidores de un proveedor. En consecuencia, los ingresos proceden de la prescripción o de la distribución. Las organizaciones, por lo general, están centradas en los ingresos de proyectos concretos en vez de en generar flujos de ingresos recurrentes a más largo plazo. Todavía tienen que encaminarse hacia un futuro en la nube y, como resultado, deben esforzarse en generar ingresos en esa área. No tienen definida una estrategia para la nube, pero es el momento de que los responsables de la toma de decisiones actúen para que se lleve ya a cabo la transición.",
+    'timetoacttxt'=>'En esta fase de adopción de la nube, las organizaciones tienden a proporcionar la nube a petición de sus clientes o por ser distribuidores de un proveedor. En consecuencia, los ingresos proceden de la prescripción o de la distribución. Las organizaciones, por lo general, están centradas en los ingresos de proyectos concretos en vez de en generar flujos de ingresos recurrentes a más largo plazo. Todavía tienen que encaminarse hacia un futuro en la nube y, como resultado, deben esforzarse en generar ingresos en esa área. No tienen definida una estrategia para la nube, pero es el momento de que los responsables de la toma de decisiones actúen para que se lleve ya a cabo la transición.',
     'timetoacttweet' => "I took the @FireEye Agil-IT-y Assessment and it's shown me where I can improve. Interested? http://bit.ly/1Y6JAqa",
     'timetocommite'=>'Fase 2: Momento de comprometerse',
-    'timetocommitetxt'=>"En esta fase de adopción de la nube, las organizaciones empiezan a desarrollar y a proporcionar modelos de negocio específicos en la nube. En general, no son lo suficientemente detallados como para tener en cuenta las distintas líneas de productos o su contribución en la facturación, y no suelen estar gestionados ni tener un objetivo específico. Pocos indicadores y métricas, la casi ausencia de automatización de los procesos, falta de metodología y la venta o prestación de servicios es escasa. Aunque en esta fase las empresas empiezan a consolidar las funciones comerciales y de marketing en la nube, los ingresos siguen procediendo de la venta de soluciones on-premise. A pesar de ello, los ingresos recurrentes superan a los del modelo de negocio tradicional.",
-    'timetocommitetweet' => "I took the @FireEye Agil-IT-y Assessment and my company is on the right track. See how your business does... http://bit.ly/1Y6JAqa",
+    'timetocommitetxt'=>'En esta fase de adopción de la nube, las organizaciones empiezan a desarrollar y a proporcionar modelos de negocio específicos en la nube. En general, no son lo suficientemente detallados como para tener en cuenta las distintas líneas de productos o su contribución en la facturación, y no suelen estar gestionados ni tener un objetivo específico. Pocos indicadores y métricas, la casi ausencia de automatización de los procesos, falta de metodología y la venta o prestación de servicios es escasa. Aunque en esta fase las empresas empiezan a consolidar las funciones comerciales y de marketing en la nube, los ingresos siguen procediendo de la venta de soluciones on-premise. A pesar de ello, los ingresos recurrentes superan a los del modelo de negocio tradicional.',
+    'timetocommitetweet' => 'I took the @FireEye Agil-IT-y Assessment and my company is on the right track. See how your business does... http://bit.ly/1Y6JAqa',
     'timetoinvest'=>'Fase 3: Momento de invertir',
-    'timetoinvesttxt'=>"En esta fase, las organizaciones disponen de un sólido plan de negocio en la nube y están desarrollando estrategias específicas para los productos, que incluye los servicios profesionales. Han invertido en la nube y, lo que es más importante, tienen planes de inversión para los dos o tres próximos años. Asimismo, están empezando a supervisar y a establecer objetivos distintos para los ingresos basados en la nube, de forma independiente de los ingresos por licencias o de otro tipo. Muchas empresas también están creando procesos que sean reutilizables y están empezando a automatizar las funciones clave. Las estrategias de marketing muestran signos de perfeccionamiento, aunque muchas organizaciones aún necesitan abandonar los planteamientos de marketing tradicional. En esta fase, es probable que las organizaciones hayan establecido un roadmap bien estructurado sobre tecnología y que hayan empezado a invertir en infraestructura, herramientas y tecnología de gestión para la nube.",
-    'timetoinvesttweet' => "I took the @FireEye Agil-IT-y Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    'timetoinvesttxt'=>'En esta fase, las organizaciones disponen de un sólido plan de negocio en la nube y están desarrollando estrategias específicas para los productos, que incluye los servicios profesionales. Han invertido en la nube y, lo que es más importante, tienen planes de inversión para los dos o tres próximos años. Asimismo, están empezando a supervisar y a establecer objetivos distintos para los ingresos basados en la nube, de forma independiente de los ingresos por licencias o de otro tipo. Muchas empresas también están creando procesos que sean reutilizables y están empezando a automatizar las funciones clave. Las estrategias de marketing muestran signos de perfeccionamiento, aunque muchas organizaciones aún necesitan abandonar los planteamientos de marketing tradicional. En esta fase, es probable que las organizaciones hayan establecido un roadmap bien estructurado sobre tecnología y que hayan empezado a invertir en infraestructura, herramientas y tecnología de gestión para la nube.',
+    'timetoinvesttweet' => 'I took the @FireEye Agil-IT-y Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa',
     'timetorefine'=>'Fase 4: Momento de mejorar',
-    'timetorefinetxt'=>"En esta fase de adopción de la nube, las organizaciones han desarrollado una planificación exhaustiva en diferentes productos, soluciones y arquitecturas para la nube. Esto incluye las estrategias de mercado y el conjunto de tareas para mejorar la ejecución de actividades de venta. Muchas organizaciones han abierto un abanico de ofertas en la nube y de servicios relacionados, principalmente dedicados a las ventas, implementaciones y funciones de soporte específicas para la nube. Normalmente, llegados a esta fase, las organizaciones pueden ejecutar varias arquitecturas en la nube y han identificado las áreas de especialización, lo que también les permite medir y evaluar los ingresos recurrentes. La mayoría ha establecido herramientas y metodologías para conseguir implementaciones más eficientes. Con ello se garantiza las renovaciones y la optimización de las soluciones.",
-    'timetorefinetweet' => "I took the @FireEye Agil-IT-y Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    'timetorefinetxt'=>'En esta fase de adopción de la nube, las organizaciones han desarrollado una planificación exhaustiva en diferentes productos, soluciones y arquitecturas para la nube. Esto incluye las estrategias de mercado y el conjunto de tareas para mejorar la ejecución de actividades de venta. Muchas organizaciones han abierto un abanico de ofertas en la nube y de servicios relacionados, principalmente dedicados a las ventas, implementaciones y funciones de soporte específicas para la nube. Normalmente, llegados a esta fase, las organizaciones pueden ejecutar varias arquitecturas en la nube y han identificado las áreas de especialización, lo que también les permite medir y evaluar los ingresos recurrentes. La mayoría ha establecido herramientas y metodologías para conseguir implementaciones más eficientes. Con ello se garantiza las renovaciones y la optimización de las soluciones.',
+    'timetorefinetweet' => 'I took the @FireEye Agil-IT-y Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa',
     'timetoaccelerate'=>'Fase 5: Momento de acelerar',
-    'timetoacceleratetxt'=>"Para las organizaciones que se encuentran en esta fase, la nube determina la inversión y la toma de decisiones relativas a la futura orientación de sus negocios. También están firmemente decididas a apostar por un modelo de negocio de ingresos recurrentes. Todos los aspectos del negocio se centran en un amplio conjunto de KPIs, desde los objetivos de captación de clientes y de crecimiento hasta los niveles de satisfacción y los porcentajes de renovación. Todos los sistemas y procesos están diseñados para optimizar la rentabilidad de la nube.Muchas organizaciones tienen procesos en la nube totalmente automatizados para ofrecer economías de escala. Esencialmente, se hace hincapié en la venta de soluciones, así como en el desarrollo y la optimización de la propiedad intelectual interna.",
-    'timetoacceleratetweet' => "I took the @FireEye Agil-IT-y Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    'timetoacceleratetxt'=>'Para las organizaciones que se encuentran en esta fase, la nube determina la inversión y la toma de decisiones relativas a la futura orientación de sus negocios. También están firmemente decididas a apostar por un modelo de negocio de ingresos recurrentes. Todos los aspectos del negocio se centran en un amplio conjunto de KPIs, desde los objetivos de captación de clientes y de crecimiento hasta los niveles de satisfacción y los porcentajes de renovación. Todos los sistemas y procesos están diseñados para optimizar la rentabilidad de la nube.Muchas organizaciones tienen procesos en la nube totalmente automatizados para ofrecer economías de escala. Esencialmente, se hace hincapié en la venta de soluciones, así como en el desarrollo y la optimización de la propiedad intelectual interna.',
+    'timetoacceleratetweet' => 'I took the @FireEye Agil-IT-y Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa',
     '1send'=>'We can send you the full results directly to your mailbox',
     '1fullreport'=>'Para ver el informe completo, que incluye una guía imprescindible acerca del desarrollo de tu negocio en la nube, solo tienes que rellenar tus datos. ',
     '1provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
     '1byreg'=>'
     Al registrarse con IDC, acepta nuestra <a href="/privacy" target="_blank">Política de Privacidad</a> y la <a href="https://www.google.co.uk/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjP8fDawoHPAhXoJMAKHdT2DtAQFgg0MAA&url=http%3A%2F%2Fwww.sage.co.uk%2Flegal-and-site-information%2Fprivacy-and-cookies&usg=AFQjCNFd91qZtBFeQnqGlV1iRzsj-nh5Og&bvm=bv.131783435,d.ZGg" target="_blank">Política de Privacidad de Sage</a>. La información que recopileamos se compartirá con Sage para realizar acciones de marketing directo. ',
     '1wait'=>'While you\'re waiting why not tweet your results and see how your colleagues measure up?',
-
 
     //FireEye Cloud id 2
     '2elqFormName'=>'',
@@ -53,15 +52,15 @@ Complete la Herramienta de Evaluación de riesgos informáticos de IDC para sabe
     '2startbut'=>'Comenzar evaluación',
     '2changelang'=>'cambiar idioma',
     'adhoc'=>'Ad hoc', //reactive
-    'adhoctxt'=>"Gracias por completar la Evaluación de riesgos informáticos de IDC. Según el total de respuestas que ha facilitado, su grado de preparación es Ad-hoc, el grado más bajo de los cinco niveles de la evaluación. Su empresa está comprendida en el 10% más bajo de las empresas del ranking y tiene muchas áreas que mejorar. Su empresa y sus datos corren un grave riesgo si no toman medidas urgentes para mejorar, además están expuestos a posibles sanciones y multas del sector y de la legislación pertinente en caso de que algún fallo de seguridad conlleve la pérdida de información personal o confidencial.",
+    'adhoctxt'=>'Gracias por completar la Evaluación de riesgos informáticos de IDC. Según el total de respuestas que ha facilitado, su grado de preparación es Ad-hoc, el grado más bajo de los cinco niveles de la evaluación. Su empresa está comprendida en el 10% más bajo de las empresas del ranking y tiene muchas áreas que mejorar. Su empresa y sus datos corren un grave riesgo si no toman medidas urgentes para mejorar, además están expuestos a posibles sanciones y multas del sector y de la legislación pertinente en caso de que algún fallo de seguridad conlleve la pérdida de información personal o confidencial.',
     'opportunistic'=>'Oportunista',
-    'opportunistictxt'=>"Gracias por completar la Evaluación de riesgos informáticos de IDC. Según las respuestas que ha facilitado, su grado de preparación es Oportunista, el segundo grado más bajo de los cinco niveles de preparación existentes. Su empresa está comprendida en el 20% más bajo de las empresas del ranking y tiene muchas áreas que mejorar. Su negocio y sus datos corren peligro si no toma medidas urgentes para mejorar. Están expuestos a posibles sanciones y multas del sector y de la legislación pertinente en caso de que algún fallo de seguridad conlleve la pérdida de información personal o confidencial.",
+    'opportunistictxt'=>'Gracias por completar la Evaluación de riesgos informáticos de IDC. Según las respuestas que ha facilitado, su grado de preparación es Oportunista, el segundo grado más bajo de los cinco niveles de preparación existentes. Su empresa está comprendida en el 20% más bajo de las empresas del ranking y tiene muchas áreas que mejorar. Su negocio y sus datos corren peligro si no toma medidas urgentes para mejorar. Están expuestos a posibles sanciones y multas del sector y de la legislación pertinente en caso de que algún fallo de seguridad conlleve la pérdida de información personal o confidencial.',
     'repeatable'=>'Repetible',
-    'repeatabletxt'=>"Gracias por completar la Evaluación de riesgos informáticos de IDC. Según las respuestas que ha facilitado, su grado de preparación es Repetible, el grado medio de los cinco niveles de preparación existentes. Por lo general, se encuentra en un término medio en lo que respecta a las capacidades frente a riesgos informáticos, pero todavía tiene mucho margen de mejora para reducir las posibles penalizaciones o sanciones asociadas a fallos de seguridad.",
+    'repeatabletxt'=>'Gracias por completar la Evaluación de riesgos informáticos de IDC. Según las respuestas que ha facilitado, su grado de preparación es Repetible, el grado medio de los cinco niveles de preparación existentes. Por lo general, se encuentra en un término medio en lo que respecta a las capacidades frente a riesgos informáticos, pero todavía tiene mucho margen de mejora para reducir las posibles penalizaciones o sanciones asociadas a fallos de seguridad.',
     'managed'=>'Gestionado',
-    'managedtxt'=>"Gracias por completar la Evaluación de riesgos informáticos de IDC. Según las respuestas que ha facilitado, su grado de preparación es Gestionado, el segundo grado más alto de los cinco niveles de preparación existentes. Se encuentra por delante del resto y en el 20 % más alto en lo que respecta a las capacidades frente a riesgos informáticos, pero todavía tiene mucho margen de mejora para reducir las posibles penalizaciones o sanciones asociadas a fallos de seguridad.",
+    'managedtxt'=>'Gracias por completar la Evaluación de riesgos informáticos de IDC. Según las respuestas que ha facilitado, su grado de preparación es Gestionado, el segundo grado más alto de los cinco niveles de preparación existentes. Se encuentra por delante del resto y en el 20 % más alto en lo que respecta a las capacidades frente a riesgos informáticos, pero todavía tiene mucho margen de mejora para reducir las posibles penalizaciones o sanciones asociadas a fallos de seguridad.',
     'optimised'=>'Optimizado',
-    'optimisedtxt'=>"Gracias por completar la Evaluación de riesgos informáticos de IDC. Según las respuestas que ha facilitado, su grado de preparación es Optimizado, el grado más alto de los cinco niveles de preparación existentes. Se encuentra muy por delante del resto y en el 5 % más alto en lo que respecta a las capacidades frente a riesgos informáticos. Aunque se encuentra en una posición de liderazgo, siempre hay trabajo por hacer y usted todavía puede seguir mejorando en diversas áreas para seguir reduciendo la probabilidad de sufrir un fallo de seguridad.",
+    'optimisedtxt'=>'Gracias por completar la Evaluación de riesgos informáticos de IDC. Según las respuestas que ha facilitado, su grado de preparación es Optimizado, el grado más alto de los cinco niveles de preparación existentes. Se encuentra muy por delante del resto y en el 5 % más alto en lo que respecta a las capacidades frente a riesgos informáticos. Aunque se encuentra en una posición de liderazgo, siempre hay trabajo por hacer y usted todavía puede seguir mejorando en diversas áreas para seguir reduciendo la probabilidad de sufrir un fallo de seguridad.',
     '2byreg'=>'Al inscribirse en IDC, acepta nuestra <a href="/privacy" target="_blank">Política de privacidad</a> y la Política de privacidad de <a href="https://www.fireeye.com/company/privacy.html" target="_blank">FireEye</a>. La información que recopilamos se compartirá con FireEye con el fin de llevar a cabo actividades de marketing directo.',
 
     //general
@@ -102,15 +101,15 @@ Complete la Herramienta de Evaluación de riesgos informáticos de IDC para sabe
     'education' => 'Education privada',
     'healthcare' => 'Proveedor de servicios de salud privada',
 
-    'less-than-100m'=>"Menos de €100 millones ",
-    '100m-250m'=>"€100-250 millon",
-    '250m-1b'=>"€250 milon - €1 mil millones ",
-    'more-than-1b'=>"Mas de €1 mil millones",
+    'less-than-100m'=>'Menos de €100 millones ',
+    '100m-250m'=>'€100-250 millon',
+    '250m-1b'=>'€250 milon - €1 mil millones ',
+    'more-than-1b'=>'Mas de €1 mil millones',
 
-    'less-than-500'=>"Menos de 500",
-    '500-to-999'=>"Entre 500 y 999",
-    '1000-to-4999'=>"Entre 1,000 y 4,999",
-    'more-than-5000'=>"5,000 o mas",
+    'less-than-500'=>'Menos de 500',
+    '500-to-999'=>'Entre 500 y 999',
+    '1000-to-4999'=>'Entre 1,000 y 4,999',
+    'more-than-5000'=>'5,000 o mas',
 
     'disclaimer'=>'Cláusula de exención de responsabilidad',
     'idcprivacy'=>'Política de Privacidad de IDC',
@@ -139,7 +138,7 @@ Complete la Herramienta de Evaluación de riesgos informáticos de IDC para sabe
     'qual8' => 'Value Added Reseller',
     'qual9' => 'Managed Service Provider',
     'qual10' => 'Hosting Provider',
-    
+
     'terms'=>'Acepto las condiciones',
     'accept'=>'Acepto las condiciones',
     'required'=>'Obligatorio',
@@ -160,5 +159,5 @@ Complete la Herramienta de Evaluación de riesgos informáticos de IDC para sabe
     'errorRelationship'=>'Please select Relationship Type',
     'errorQualification'=>'Please select Partner Type',
     'errorAccept'=>'Acepte los términos y condiciones para continuar.',
-    'ranking'=>'Clasificación'
-);
+    'ranking'=>'Clasificación',
+];

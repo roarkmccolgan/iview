@@ -22,7 +22,7 @@ class AddExtraFieldsToVmwareAgain extends Seeder
             'required' => 1,
             'order' => 1,
             'created_at' => Carbon\Carbon::now(),
-            'updated_at' => Carbon\Carbon::now()
+            'updated_at' => Carbon\Carbon::now(),
         ]);
 
         DB::table('extra_fields')->insert([
@@ -36,7 +36,7 @@ class AddExtraFieldsToVmwareAgain extends Seeder
             'required' => 1,
             'order' => 1,
             'created_at' => Carbon\Carbon::now(),
-            'updated_at' => Carbon\Carbon::now()
+            'updated_at' => Carbon\Carbon::now(),
         ]);
 
         DB::table('extra_fields')->insert([
@@ -50,7 +50,7 @@ class AddExtraFieldsToVmwareAgain extends Seeder
             'required' => 0,
             'order' => 1,
             'created_at' => Carbon\Carbon::now(),
-            'updated_at' => Carbon\Carbon::now()
+            'updated_at' => Carbon\Carbon::now(),
         ]);
     }
 }

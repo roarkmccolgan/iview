@@ -20,6 +20,7 @@ class TestController extends Controller
         // Additional logic depending on the chart approach
         //return view('test.chart', ['chart' => $chart]); exit();
         $pdf = PDF::loadView('test.chart', ['chart' => $chart])->setOption('javascript-delay', 2000);
+
         return $pdf->inline('invoice.pdf');
         //return PDF::loadFile('http://www.goat1000.com/svggraph.php')->setOption('javascript-delay',10000)->setOption('load-error-handling','ignore')->inline('github.pdf');
     }

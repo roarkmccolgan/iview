@@ -44,18 +44,17 @@ class UpdateTrackingViews extends Command
 
         $trackers = $tools->each(function ($tool, $toolkey) {
             return $tool->trackers->each(function ($tracker) use ($tool) {
-
                 $startDate = $tool->start_date;
                 $endDate = Carbon::now();
                 $langString = '';
-                if ($tracker->language_id!=1) {
+                if ($tracker->language_id != 1) {
                     $abb = $tracker->language->abbreviation;
                     $langString = ';ga:landingPagePath=@?/'.$abb;
                 }
                 $metrics = 'ga:users';
                 $other = [
                     // 'dimensions'    => 'ga:pagePath',
-                    'filters'       => 'ga:landingPagePath=@?utm='.$tracker->code.$langString
+                    'filters'       => 'ga:landingPagePath=@?utm='.$tracker->code.$langString,
                 ];
 
                 Analytics::setSiteId('ga:'.$tool->gapropertyid);
@@ -65,10 +64,10 @@ class UpdateTrackingViews extends Command
                     $tracker->views = $results[0][0];
                     $tracker->save();
                 }
-                $this->info($tool->alias."\n".$tracker->name." (".$tracker->code."): ".$results[0][0]."\n\n");
+                $this->info($tool->alias."\n".$tracker->name.' ('.$tracker->code.'): '.$results[0][0]."\n\n");
             });
         });
-        
+
         $this->info('Complete');
     }
 }

@@ -1,4 +1,5 @@
 <?php
+
 return [
     'screeners' => [
         'title' => 'Demografía',
@@ -19,37 +20,37 @@ return [
                             [
                                 'label'=>'Francia',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Alemania',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Reino Unido',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'España',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Italia',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Otro',
                                 'value'=>0,
-                                'checked'=>false
-                            ]
+                                'checked'=>false,
+                            ],
                         ],
-                        'other'=>'Otro|0|Tu país'
-                    ]
-                ]
+                        'other'=>'Otro|0|Tu país',
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Screeners',
@@ -62,31 +63,31 @@ return [
                             [
                                 'label'=>'Menos de 1000',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'1000-2499',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'2500-4999',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'5000-9999',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'10000 o más',
                                 'value'=>1,
-                                'checked'=>false
-                            ]
-                        ]
-                    ]
-                ]
+                                'checked'=>false,
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Screeners',
@@ -99,75 +100,75 @@ return [
                             [
                                 'label'=>'Servicios financieros',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Manufactura',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Servicios de telecomunicaciones (incluidos proveedores de alojamiento, xSPs y proveedores de servicios en la nube)',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Educación',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Asistencia médica',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Medios de comunicación',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Transporte, distribución y logística',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Venta minorista/mayorista',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Consultoría de TI y servicios profesionales relacionados con las TI',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Consultoría no de TI y otros servicios profesionales (contables, jurídicos, publicitarios, bienes raíces, contratación, consultoría empresarial, etc.)',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Gobierno central o local, o servicios públicos',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Servicios públicos – electricidad, gas, agua',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Otro',
                                 'value'=>1,
                                 'checked'=>false,
-                                'other' => true
-                            ]
+                                'other' => true,
+                            ],
                         ],
-                        'other'=>'Otro|1|Por favor, especifique'
-                    ]
-                ]
-            ]
-        ]
+                        'other'=>'Otro|1|Por favor, especifique',
+                    ],
+                ],
+            ],
+        ],
     ],
     'cyber-risk-management-and-the-business' => [
         'title' => 'Gestión del riesgo cibernético y los negocios',
@@ -193,7 +194,7 @@ return [
                                     'stage3' => 'Rezagado',
                                     'stage4' => 'Rezagado',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Un facilitador de la eficiencia empresarial',
@@ -205,7 +206,7 @@ return [
                                     'stage3' => 'Al mismo nivel',
                                     'stage4' => 'Al mismo nivel',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Un motor de ventajas competitivas o diferenciación',
@@ -217,11 +218,11 @@ return [
                                     'stage3' => 'Adelantado',
                                     'stage4' => 'Adelantado',
                                     'stage5' => 'Al mismo nivel',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]/*,
+                                ],
+                            ],
+                        ],
+                    ],
+                ], /*,
                 'report' => array(
                     'text'=>'IDC estimates that ~45% of all new servers sold in Europe in 2016 will be virtualized. Excluding non suitable environments such as tower machines or High Performance Computing, >70% of the new servers were virtualized. ',
                     'image'=>'img/techfit_icons_Q-B1.png'
@@ -245,7 +246,7 @@ return [
                                     'stage3' => 'Rezagado',
                                     'stage4' => 'Rezagado',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'En general no tenemos problemas con las solicitudes relativas a aplicaciones o servicios existentes, pero las solicitudes de servicios nuevos o mejorados nos plantean problemas.',
@@ -257,7 +258,7 @@ return [
                                     'stage3' => 'Al mismo nivel',
                                     'stage4' => 'Rezagado',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'En general no tenemos problemas, ni en cuanto a las solicitudes sobre aplicaciones y servicios existentes ni sobre servicios nuevos o mejorados.',
@@ -269,7 +270,7 @@ return [
                                     'stage3' => 'Al mismo nivel',
                                     'stage4' => 'Al mismo nivel',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Estamos al tanto y solucionamos todas o la mayor parte de las solicitudes.',
@@ -281,11 +282,11 @@ return [
                                     'stage3' => 'Adelantado',
                                     'stage4' => 'Adelantado',
                                     'stage5' => 'Al mismo nivel',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Gestión del riesgo cibernético y los negocios',
@@ -305,7 +306,7 @@ return [
                                     'stage3' => 'Rezagado',
                                     'stage4' => 'Rezagado',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Tenemos tendencia a evitar riesgos, pero corremos algunos riesgos si hay una justificación muy buena.',
@@ -317,7 +318,7 @@ return [
                                     'stage3' => 'Rezagado',
                                     'stage4' => 'Rezagado',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Somos precavidos con los riesgos, pero los corremos si vemos un claro beneficio empresarial.',
@@ -329,7 +330,7 @@ return [
                                     'stage3' => 'Al mismo nivel',
                                     'stage4' => 'Al mismo nivel',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'No tenemos inconveniente en correr riesgos para ayudar al desarrollo de la empresa.',
@@ -341,7 +342,7 @@ return [
                                     'stage3' => 'Adelantado',
                                     'stage4' => 'Al mismo nivel',
                                     'stage5' => 'Al mismo nivel',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Corremos y gestionamos riesgos activamente para ayudar al desarrollo de la empresa.',
@@ -353,11 +354,11 @@ return [
                                     'stage3' => 'Adelantado',
                                     'stage4' => 'Adelantado',
                                     'stage5' => 'Al mismo nivel',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page4' => [
                 'title' => 'Gestión del riesgo cibernético y los negocios',
@@ -368,7 +369,7 @@ return [
                         'name'=>'q4',
                         'calc'=>[
                             'type'=>'average',
-                            'value'=>false
+                            'value'=>false,
                         ],
                         'options'=>[
                             [
@@ -385,7 +386,7 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No lo tenemos, pero está previsto implantarlo',
@@ -397,7 +398,7 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No, prevemos implantarlo',
@@ -409,9 +410,9 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Detección proactiva',
@@ -427,7 +428,7 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No lo tenemos, pero está previsto implantarlo',
@@ -439,7 +440,7 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No, prevemos implantarlo',
@@ -451,9 +452,9 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Plan de respuesta',
@@ -469,7 +470,7 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No lo tenemos, pero está previsto implantarlo',
@@ -481,7 +482,7 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No, prevemos implantarlo',
@@ -493,9 +494,9 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Plan de comunicaciones internas',
@@ -511,7 +512,7 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No lo tenemos, pero está previsto implantarlo',
@@ -523,7 +524,7 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No, prevemos implantarlo',
@@ -535,9 +536,9 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Plan de comunicaciones externas y relaciones públicas',
@@ -553,7 +554,7 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No lo tenemos, pero está previsto implantarlo',
@@ -565,7 +566,7 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No, prevemos implantarlo',
@@ -577,9 +578,9 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Plan de notificación de fallos de seguridad',
@@ -595,7 +596,7 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No lo tenemos, pero está previsto implantarlo',
@@ -607,7 +608,7 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No, prevemos implantarlo',
@@ -619,9 +620,9 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Plan de medidas correctivas de fallos de seguridad',
@@ -637,7 +638,7 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No lo tenemos, pero está previsto implantarlo',
@@ -649,7 +650,7 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No, prevemos implantarlo',
@@ -661,9 +662,9 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Seguro de riesgos informáticos',
@@ -679,7 +680,7 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No lo tenemos, pero está previsto implantarlo',
@@ -691,7 +692,7 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No, prevemos implantarlo',
@@ -703,19 +704,19 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
-                                    ]
-                                ]
-                            ]
-                        ]
-                    ]
+                                        ],
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
                 ]
                 /*,
                 'report' => array(
                     'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
                     'image'=>'img/techfit_icons_Q-A1.png'
                 )*/,
-                'report' => false
+                'report' => false,
             ],
             'page5' => [
                 'title' => 'Gestión del riesgo cibernético y los negocios',
@@ -735,7 +736,7 @@ return [
                                     'stage3' => 'Rezagado',
                                     'stage4' => 'Rezagado',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Por lo general se delega en TI.',
@@ -747,7 +748,7 @@ return [
                                     'stage3' => 'Rezagado',
                                     'stage4' => 'Rezagado',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Es compartido entre TI y varias líneas de negocio.',
@@ -759,7 +760,7 @@ return [
                                     'stage3' => 'Al mismo nivel',
                                     'stage4' => 'Al mismo nivel',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Es compartido entre TI y la alta dirección.',
@@ -771,7 +772,7 @@ return [
                                     'stage3' => 'Al mismo nivel',
                                     'stage4' => 'Al mismo nivel',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Es compartido entre TI, la alta dirección y varias líneas de negocio.',
@@ -783,11 +784,11 @@ return [
                                     'stage3' => 'Adelantado',
                                     'stage4' => 'Al mismo nivel',
                                     'stage5' => 'Al mismo nivel',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page6' => [
                 'title' => 'Gestión del riesgo cibernético y los negocios',
@@ -798,7 +799,7 @@ return [
                         'name'=>'q6',
                         'calc'=>[
                             'type'=>'normalize',
-                            'value'=>5
+                            'value'=>5,
                         ],
                         'options'=>[
                             [
@@ -815,7 +816,7 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -827,9 +828,9 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'CFO (Responsable de finanzas)',
@@ -845,7 +846,7 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -857,9 +858,9 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'COO (Responsable de operaciones)',
@@ -875,7 +876,7 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -887,9 +888,9 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Miembro no ejecutivo de nivel de la junta centrado en riesgos/cumplimiento de la normativa/seguridad',
@@ -905,7 +906,7 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -917,9 +918,9 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Miembro ejecutivo de nivel de la junta centrado en riesgos/cumplimiento de la normativa/seguridad',
@@ -935,7 +936,7 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -947,9 +948,9 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Cargo específico de riesgos/cumplimiento de la normativa/seguridad (que no es miembro de la junta directiva)',
@@ -965,7 +966,7 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -977,18 +978,18 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
-                                    ]
-                                ]
-                            ]
-                        ]
-                    ]
+                                        ],
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
                 ]/*,
                 'report' => array(
                     'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
                     'image'=>'img/techfit_icons_Q-A1.png'
                 )*/,
-                'report' => false
+                'report' => false,
             ],
             'page7' => [
                 'title' => 'Gestión del riesgo cibernético y los negocios',
@@ -1008,7 +1009,7 @@ return [
                                     'stage3' => 'Adelantado',
                                     'stage4' => 'Adelantado',
                                     'stage5' => 'Al mismo nivel',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Durante la planificación',
@@ -1020,7 +1021,7 @@ return [
                                     'stage3' => 'Al mismo nivel',
                                     'stage4' => 'Al mismo nivel',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Al comienzo de la ejecución',
@@ -1032,7 +1033,7 @@ return [
                                     'stage3' => 'Al mismo nivel',
                                     'stage4' => 'Rezagado',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Durante la ejecución',
@@ -1044,7 +1045,7 @@ return [
                                     'stage3' => 'Rezagado',
                                     'stage4' => 'Rezagado',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Cuando hay algún problema',
@@ -1056,11 +1057,11 @@ return [
                                     'stage3' => 'Rezagado',
                                     'stage4' => 'Rezagado',
                                     'stage5' => 'Rezagado',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page8' => [
                 'title' => 'Gestión del riesgo cibernético y los negocios',
@@ -1080,7 +1081,7 @@ return [
                                     'stage3' => 'Rezagado',
                                     'stage4' => 'Rezagado',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Ajustado, apenas cubre las operaciones esenciales',
@@ -1092,7 +1093,7 @@ return [
                                     'stage3' => 'Rezagado',
                                     'stage4' => 'Rezagado',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Bueno para las operaciones básicas, pero ajustado para las nuevas iniciativas
@@ -1105,7 +1106,7 @@ return [
                                     'stage3' => 'Al mismo nivel',
                                     'stage4' => 'Rezagado',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Bueno para las operaciones básicas, y para las nuevas iniciativas en las que el valor es claro',
@@ -1117,7 +1118,7 @@ return [
                                     'stage3' => 'Adelantado',
                                     'stage4' => 'Al mismo nivel',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Fácilmente disponible en toda la organización, con una buena propuesta de proyecto, incluso para desarrollo experimental',
@@ -1129,13 +1130,13 @@ return [
                                     'stage3' => 'Adelantado',
                                     'stage4' => 'Adelantado',
                                     'stage5' => 'Al mismo nivel',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
-        ]
+        ],
     ],
     'cyber-risk-management-operations-and-defence' => [
         'title' => 'Operaciones de gestión del riesgo cibernético y defensa',
@@ -1152,7 +1153,7 @@ return [
                         'name'=>'q9',
                         'calc'=>[
                             'type'=>'average',
-                            'value'=>false
+                            'value'=>false,
                         ],
                         'options'=>[
                             [
@@ -1171,7 +1172,7 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1183,7 +1184,7 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1195,7 +1196,7 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1207,7 +1208,7 @@ return [
                                             'stage3' => 'Adelantado',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1219,9 +1220,9 @@ return [
                                             'stage3' => 'Adelantado',
                                             'stage4' => 'Adelantado',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Citas concertadas previamente',
@@ -1239,7 +1240,7 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1251,7 +1252,7 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1263,7 +1264,7 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1275,7 +1276,7 @@ return [
                                             'stage3' => 'Adelantado',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1287,9 +1288,9 @@ return [
                                             'stage3' => 'Adelantado',
                                             'stage4' => 'Adelantado',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>' Verificación de la identidad',
@@ -1307,7 +1308,7 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1319,7 +1320,7 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1331,7 +1332,7 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1343,7 +1344,7 @@ return [
                                             'stage3' => 'Adelantado',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1355,9 +1356,9 @@ return [
                                             'stage3' => 'Adelantado',
                                             'stage4' => 'Adelantado',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Controles de entrada y de salida',
@@ -1375,7 +1376,7 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1387,7 +1388,7 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1399,7 +1400,7 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1411,7 +1412,7 @@ return [
                                             'stage3' => 'Adelantado',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1423,9 +1424,9 @@ return [
                                             'stage3' => 'Adelantado',
                                             'stage4' => 'Adelantado',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Autenticación biométrica',
@@ -1443,7 +1444,7 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1455,7 +1456,7 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1467,7 +1468,7 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1479,7 +1480,7 @@ return [
                                             'stage3' => 'Adelantado',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1491,9 +1492,9 @@ return [
                                             'stage3' => 'Adelantado',
                                             'stage4' => 'Adelantado',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Supervisión por circuito cerrado de televisión',
@@ -1511,7 +1512,7 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1523,7 +1524,7 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1535,7 +1536,7 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1547,7 +1548,7 @@ return [
                                             'stage3' => 'Adelantado',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1559,9 +1560,9 @@ return [
                                             'stage3' => 'Adelantado',
                                             'stage4' => 'Adelantado',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Acompañamiento (el personal y los visitantes deben trabajar en parejas o ir acompañados)',
@@ -1579,7 +1580,7 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1591,7 +1592,7 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1603,7 +1604,7 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1615,7 +1616,7 @@ return [
                                             'stage3' => 'Adelantado',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1627,9 +1628,9 @@ return [
                                             'stage3' => 'Adelantado',
                                             'stage4' => 'Adelantado',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Cambio de autorización, aprobación y registro',
@@ -1647,7 +1648,7 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1659,7 +1660,7 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1671,7 +1672,7 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1683,7 +1684,7 @@ return [
                                             'stage3' => 'Adelantado',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1695,18 +1696,18 @@ return [
                                             'stage3' => 'Adelantado',
                                             'stage4' => 'Adelantado',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
-                                    ]
-                                ]
-                            ]
-                        ]
-                    ]
+                                        ],
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
                 ]/*,
                 'report' => array(
                     'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
                     'image'=>'img/techfit_icons_Q-A1.png'
                 )*/,
-                'report' => false
+                'report' => false,
             ],
             'page2' => [
                 'title' => 'Operaciones de gestión del riesgo cibernético y defensa',
@@ -1726,7 +1727,7 @@ return [
                                     'stage3' => 'Rezagado',
                                     'stage4' => 'Rezagado',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Lo hacemos internamente de manera informal.',
@@ -1738,7 +1739,7 @@ return [
                                     'stage3' => 'Rezagado',
                                     'stage4' => 'Rezagado',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Lo hacemos de manera formal (utilizando estándares) utilizando nuestros conocimientos generales.',
@@ -1750,7 +1751,7 @@ return [
                                     'stage3' => 'Al mismo nivel',
                                     'stage4' => 'Rezagado',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Lo hacemos de manera formal (utilizando estándares) internamente utilizando conocimientos de expertos.',
@@ -1762,7 +1763,7 @@ return [
                                     'stage3' => 'Adelantado',
                                     'stage4' => 'Al mismo nivel',
                                     'stage5' => 'Al mismo nivel',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Utilizamos un asesor experto externo (utilizando estándares).',
@@ -1774,11 +1775,11 @@ return [
                                     'stage3' => 'Adelantado',
                                     'stage4' => 'Adelantado',
                                     'stage5' => 'Al mismo nivel',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Operaciones de gestión del riesgo cibernético y defensa',
@@ -1789,7 +1790,7 @@ return [
                         'name'=>'q11',
                         'calc'=>[
                             'type'=>'average',
-                            'value'=>false
+                            'value'=>false,
                         ],
                         'options'=>[
                             [
@@ -1808,7 +1809,7 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1820,7 +1821,7 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1832,7 +1833,7 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1844,7 +1845,7 @@ return [
                                             'stage3' => 'Adelantado',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1856,9 +1857,9 @@ return [
                                             'stage3' => 'Adelantado',
                                             'stage4' => 'Adelantado',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Evaluación de las capacidades y carencias',
@@ -1876,7 +1877,7 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1888,7 +1889,7 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1900,7 +1901,7 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1912,7 +1913,7 @@ return [
                                             'stage3' => 'Adelantado',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1924,9 +1925,9 @@ return [
                                             'stage3' => 'Adelantado',
                                             'stage4' => 'Adelantado',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Planificación de la implantación',
@@ -1944,7 +1945,7 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1956,7 +1957,7 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1968,7 +1969,7 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1980,7 +1981,7 @@ return [
                                             'stage3' => 'Adelantado',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1992,9 +1993,9 @@ return [
                                             'stage3' => 'Adelantado',
                                             'stage4' => 'Adelantado',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Ejecución de la implantación',
@@ -2012,7 +2013,7 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -2024,7 +2025,7 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -2036,7 +2037,7 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -2048,7 +2049,7 @@ return [
                                             'stage3' => 'Adelantado',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -2060,9 +2061,9 @@ return [
                                             'stage3' => 'Adelantado',
                                             'stage4' => 'Adelantado',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Mejora continua/buenas prácticas más allá de la propia GDPR (más allá de la normativa)',
@@ -2080,7 +2081,7 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -2092,7 +2093,7 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -2104,7 +2105,7 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -2116,7 +2117,7 @@ return [
                                             'stage3' => 'Adelantado',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -2128,9 +2129,9 @@ return [
                                             'stage3' => 'Adelantado',
                                             'stage4' => 'Adelantado',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Comprensión de la mitigación de las sanciones basada en la detección/correción tempranas',
@@ -2148,7 +2149,7 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -2160,7 +2161,7 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -2172,7 +2173,7 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -2184,7 +2185,7 @@ return [
                                             'stage3' => 'Adelantado',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Rezagado',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -2196,18 +2197,18 @@ return [
                                             'stage3' => 'Adelantado',
                                             'stage4' => 'Adelantado',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
-                        ]
-                    ]
+                        ],
+                    ],
                 ]/*,
                 'report' => array(
                     'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
                     'image'=>'img/techfit_icons_Q-A1.png'
                 )*/,
-                'report' => false
+                'report' => false,
             ],
             'page4' => [
                 'title' => 'Operaciones de gestión del riesgo cibernético y defensa',
@@ -2227,7 +2228,7 @@ return [
                                     'stage3' => 'Rezagado',
                                     'stage4' => 'Rezagado',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'En general compramos tácticamente a medida que surgen problemas, pero hacemos algunas compras estratégicas.',
@@ -2239,7 +2240,7 @@ return [
                                     'stage3' => 'Rezagado',
                                     'stage4' => 'Rezagado',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Tenemos un equilibrio entre compras tácticas y compras estratégicas.',
@@ -2251,7 +2252,7 @@ return [
                                     'stage3' => 'Al mismo nivel',
                                     'stage4' => 'Rezagado',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'En general compramos estratégicamente, pero compramos tácticamente si surge un problema.',
@@ -2263,7 +2264,7 @@ return [
                                     'stage3' => 'Adelantado',
                                     'stage4' => 'Al mismo nivel',
                                     'stage5' => 'Al mismo nivel',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Tenemos tendencia a comprar estratégicamente en todos los ámbitos.',
@@ -2275,11 +2276,11 @@ return [
                                     'stage3' => 'Adelantado',
                                     'stage4' => 'Adelantado',
                                     'stage5' => 'Al mismo nivel',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page5' => [
                 'title' => 'Operaciones de gestión del riesgo cibernético y defensa',
@@ -2299,7 +2300,7 @@ return [
                                     'stage3' => 'Rezagado',
                                     'stage4' => 'Rezagado',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Puntualmente, si lo pide',
@@ -2311,7 +2312,7 @@ return [
                                     'stage3' => 'Rezagado',
                                     'stage4' => 'Rezagado',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Anualmente',
@@ -2323,7 +2324,7 @@ return [
                                     'stage3' => 'Al mismo nivel',
                                     'stage4' => 'Rezagado',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Trimestralmente',
@@ -2335,7 +2336,7 @@ return [
                                     'stage3' => 'Al mismo nivel',
                                     'stage4' => 'Al mismo nivel',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Mensualmente',
@@ -2347,7 +2348,7 @@ return [
                                     'stage3' => 'Adelantado',
                                     'stage4' => 'Al mismo nivel',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Semanalmente',
@@ -2359,7 +2360,7 @@ return [
                                     'stage3' => 'Adelantado',
                                     'stage4' => 'Adelantado',
                                     'stage5' => 'Al mismo nivel',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Diariamente',
@@ -2371,7 +2372,7 @@ return [
                                     'stage3' => 'Adelantado',
                                     'stage4' => 'Adelantado',
                                     'stage5' => 'Al mismo nivel',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Cada hora',
@@ -2383,7 +2384,7 @@ return [
                                     'stage3' => 'Adelantado',
                                     'stage4' => 'Adelantado',
                                     'stage5' => 'Al mismo nivel',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Continuamente',
@@ -2395,11 +2396,11 @@ return [
                                     'stage3' => 'Adelantado',
                                     'stage4' => 'Adelantado',
                                     'stage5' => 'Adelantado',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page6' => [
                 'title' => 'Operaciones de gestión del riesgo cibernético y defensa',
@@ -2419,7 +2420,7 @@ return [
                                     'stage3' => 'Rezagado',
                                     'stage4' => 'Rezagado',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Utilizamos principalmente herramientas estándar de nuestros proveedores de seguridad.',
@@ -2431,7 +2432,7 @@ return [
                                     'stage3' => 'Rezagado',
                                     'stage4' => 'Rezagado',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Utilizamos una combinación de herramientas especializadas de gestión y algunas herramientas estándar.',
@@ -2443,7 +2444,7 @@ return [
                                     'stage3' => 'Al mismo nivel',
                                     'stage4' => 'Rezagado',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Utilizamos principalmente herramientas especializadas de gestión de la seguridad.',
@@ -2455,7 +2456,7 @@ return [
                                     'stage3' => 'Al mismo nivel',
                                     'stage4' => 'Al mismo nivel',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Utilizamos una suite de gestión de seguridad de principio a fin.',
@@ -2467,7 +2468,7 @@ return [
                                     'stage3' => 'Adelantado',
                                     'stage4' => 'Adelantado',
                                     'stage5' => 'Al mismo nivel',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Utilizamos un socio certificado para ayudarnos a administrar nuestra infraestructura de seguridad de TI.',
@@ -2479,11 +2480,11 @@ return [
                                     'stage3' => 'Adelantado',
                                     'stage4' => 'Adelantado',
                                     'stage5' => 'Al mismo nivel',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page7' => [
                 'title' => 'Operaciones de gestión del riesgo cibernético y defensa',
@@ -2503,7 +2504,7 @@ return [
                                     'stage3' => 'Rezagado',
                                     'stage4' => 'Rezagado',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Principalmente procesos manuales con una pequeña parte de automatización',
@@ -2515,7 +2516,7 @@ return [
                                     'stage3' => 'Rezagado',
                                     'stage4' => 'Rezagado',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Un buen equilibrio entre procesos de automatización y procesos manuales',
@@ -2527,7 +2528,7 @@ return [
                                     'stage3' => 'Al mismo nivel',
                                     'stage4' => 'Al mismo nivel',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Principalmente automatización, con una pequeña parte de procesos manuales',
@@ -2539,7 +2540,7 @@ return [
                                     'stage3' => 'Adelantado',
                                     'stage4' => 'Adelantado',
                                     'stage5' => 'Al mismo nivel',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Automatización en todos los ámbitos',
@@ -2551,11 +2552,11 @@ return [
                                     'stage3' => 'Adelantado',
                                     'stage4' => 'Adelantado',
                                     'stage5' => 'Al mismo nivel',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page8' => [
                 'title' => 'Operaciones de gestión del riesgo cibernético y defensa',
@@ -2575,7 +2576,7 @@ return [
                                     'stage3' => 'Rezagado',
                                     'stage4' => 'Rezagado',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Reducirla un poco',
@@ -2587,7 +2588,7 @@ return [
                                     'stage3' => 'Rezagado',
                                     'stage4' => 'Rezagado',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Dejarla igual',
@@ -2599,7 +2600,7 @@ return [
                                     'stage3' => 'Al mismo nivel',
                                     'stage4' => 'Al mismo nivel',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Aumentarla un poco',
@@ -2611,7 +2612,7 @@ return [
                                     'stage3' => 'Adelantado',
                                     'stage4' => 'Adelantado',
                                     'stage5' => 'Al mismo nivel',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Aumentarla mucho',
@@ -2623,11 +2624,11 @@ return [
                                     'stage3' => 'Adelantado',
                                     'stage4' => 'Adelantado',
                                     'stage5' => 'Adelantado',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page9' => [
                 'title' => 'Operaciones de gestión del riesgo cibernético y defensa',
@@ -2638,7 +2639,7 @@ return [
                         'name'=>'q17',
                         'calc'=>[
                             'type'=>'normalize',
-                            'value'=>5
+                            'value'=>5,
                         ],
                         'options'=>[
                             [
@@ -2655,7 +2656,7 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -2667,9 +2668,9 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'IPS/IDS (detección de intrusiones/protección contra intrusiones)',
@@ -2685,7 +2686,7 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -2697,9 +2698,9 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Administración de vulnerabilidades',
@@ -2715,7 +2716,7 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -2727,9 +2728,9 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Micro segmentación (separación y aislamiento detallados del tráfico entre servidores o dominios específicos)',
@@ -2745,7 +2746,7 @@ return [
                                             'stage3' => 'Adelantado',
                                             'stage4' => 'Adelantado',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -2757,9 +2758,9 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Rezagado',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Gestión unificada de la seguridad (intercambio de datos e información entre dispositivos y herramientas),',
@@ -2775,7 +2776,7 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -2787,9 +2788,9 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Servicio profesional de seguridad de terceros (pre-venta/diseño/implantación)',
@@ -2805,7 +2806,7 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -2817,13 +2818,13 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
-                        ]
+                        ],
                     ],
-                ]
+                ],
             ],
             'page10' => [
                 'title' => 'Operaciones de gestión del riesgo cibernético y defensa',
@@ -2843,7 +2844,7 @@ return [
                                     'stage3' => 'Rezagado',
                                     'stage4' => 'Rezagado',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Los utilizamos de una manera limitada, pero preferimos hacer las cosas internamente.',
@@ -2855,7 +2856,7 @@ return [
                                     'stage3' => 'Rezagado',
                                     'stage4' => 'Rezagado',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Los utilizamos de una manera equilibrada.',
@@ -2867,7 +2868,7 @@ return [
                                     'stage3' => 'Al mismo nivel',
                                     'stage4' => 'Al mismo nivel',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Preferimos utilizarlos antes que hacer las cosas internamente.',
@@ -2879,7 +2880,7 @@ return [
                                     'stage3' => 'Adelantado',
                                     'stage4' => 'Al mismo nivel',
                                     'stage5' => 'Al mismo nivel',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Los utilizamos ampliamente siempre que es posible.',
@@ -2891,13 +2892,13 @@ return [
                                     'stage3' => 'Adelantado',
                                     'stage4' => 'Adelantado',
                                     'stage5' => 'Al mismo nivel',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
     ],
     'cyber-risk-management-breach-detection-and-remediation' => [
         'title' => 'Detección y reparación de brechas en la gestión de riesgos cibernéticos',
@@ -2927,7 +2928,7 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -2939,9 +2940,9 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Análisis en tiempo real',
@@ -2957,7 +2958,7 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -2969,9 +2970,9 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Protección avanzada contra amenazas/entorno controlado',
@@ -2987,7 +2988,7 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -2999,9 +3000,9 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'IA/heurística',
@@ -3017,7 +3018,7 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3029,9 +3030,9 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Escaneo de malware',
@@ -3047,7 +3048,7 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3059,11 +3060,11 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
-                        ]
+                        ],
                     ],
                 ]
                 /*,
@@ -3071,7 +3072,7 @@ return [
                     'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
                     'image'=>'img/techfit_icons_Q-A1.png'
                 )*/,
-                'report' => false
+                'report' => false,
             ],
             'page2' => [
                 'title' => 'Detección y reparación de brechas en la gestión de riesgos cibernéticos',
@@ -3095,7 +3096,7 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3107,9 +3108,9 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Monitor de procesos de registro y análisis',
@@ -3125,7 +3126,7 @@ return [
                                             'stage3' => 'Adelantado',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3137,9 +3138,9 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Recuperación de fallos/recuperación del sistema',
@@ -3155,7 +3156,7 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3167,9 +3168,9 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Equipos tigre/adelante (Tiger/go)',
@@ -3185,7 +3186,7 @@ return [
                                             'stage3' => 'Adelantado',
                                             'stage4' => 'Adelantado',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3197,9 +3198,9 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Rezagado',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Socio externo de respuesta a incidentes',
@@ -3215,7 +3216,7 @@ return [
                                             'stage3' => 'Adelantado',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3227,11 +3228,11 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
-                        ]
+                        ],
                     ],
                 ]
                 /*,
@@ -3239,7 +3240,7 @@ return [
                     'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
                     'image'=>'img/techfit_icons_Q-A1.png'
                 )*/,
-                'report' => false
+                'report' => false,
             ],
             'page3' => [
                 'title' => 'Detección y reparación de brechas en la gestión de riesgos cibernéticos',
@@ -3263,7 +3264,7 @@ return [
                                             'stage3' => 'Adelantado',
                                             'stage4' => 'Adelantado',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3275,9 +3276,9 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Rezagado',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Actualizaciones de la política',
@@ -3293,7 +3294,7 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3305,9 +3306,9 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Política de recuperación ante desastres',
@@ -3323,7 +3324,7 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3335,9 +3336,9 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Proveedores externos de recuperación ante desastres',
@@ -3353,7 +3354,7 @@ return [
                                             'stage3' => 'Adelantado',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3365,9 +3366,9 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Evaluaciones de compromiso',
@@ -3383,7 +3384,7 @@ return [
                                             'stage3' => 'Adelantado',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3395,19 +3396,19 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
-                        ]
-                    ]
+                        ],
+                    ],
                 ]
                 /*,
                 'report' => array(
                     'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
                     'image'=>'img/techfit_icons_Q-A1.png'
                 )*/,
-                'report' => false
+                'report' => false,
             ],
             'page4' => [
                 'title' => 'Detección y reparación de brechas en la gestión de riesgos cibernéticos',
@@ -3431,7 +3432,7 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3443,9 +3444,9 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Comprenden la escala potencial de la exposición',
@@ -3461,7 +3462,7 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3473,9 +3474,9 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Han realizado una evaluación de datos de los datos críticos',
@@ -3491,7 +3492,7 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3503,9 +3504,9 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Comprenden la postura de la cadena ampliada de suministro o socios',
@@ -3521,7 +3522,7 @@ return [
                                             'stage3' => 'Adelantado',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3533,9 +3534,9 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Han desarrollado un plan de respuesta ante fallos en la seguridad',
@@ -3551,7 +3552,7 @@ return [
                                             'stage3' => 'Al mismo nivel',
                                             'stage4' => 'Al mismo nivel',
                                             'stage5' => 'Al mismo nivel',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'No',
@@ -3563,19 +3564,19 @@ return [
                                             'stage3' => 'Rezagado',
                                             'stage4' => 'Rezagado',
                                             'stage5' => 'Rezagado',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
-                        ]
-                    ]
+                        ],
+                    ],
                 ]
                 /*,
                 'report' => array(
                     'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
                     'image'=>'img/techfit_icons_Q-A1.png'
                 )*/,
-                'report' => false
+                'report' => false,
             ],
             'page5' => [
                 'title' => 'Detección y reparación de brechas en la gestión de riesgos cibernéticos',
@@ -3595,7 +3596,7 @@ return [
                                     'stage3' => 'Rezagado',
                                     'stage4' => 'Rezagado',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Cada pocos años',
@@ -3607,7 +3608,7 @@ return [
                                     'stage3' => 'Rezagado',
                                     'stage4' => 'Rezagado',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Cada año',
@@ -3619,7 +3620,7 @@ return [
                                     'stage3' => 'Rezagado',
                                     'stage4' => 'Rezagado',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Cada 6 meses',
@@ -3631,7 +3632,7 @@ return [
                                     'stage3' => 'Al mismo nivel',
                                     'stage4' => 'Rezagado',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Cada trimestre',
@@ -3643,7 +3644,7 @@ return [
                                     'stage3' => 'Adelantado',
                                     'stage4' => 'Al mismo nivel',
                                     'stage5' => 'Al mismo nivel',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Mensualmente',
@@ -3655,7 +3656,7 @@ return [
                                     'stage3' => 'Adelantado',
                                     'stage4' => 'Adelantado',
                                     'stage5' => 'Al mismo nivel',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Semanalmente',
@@ -3667,7 +3668,7 @@ return [
                                     'stage3' => 'Adelantado',
                                     'stage4' => 'Adelantado',
                                     'stage5' => 'Al mismo nivel',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Continuamente',
@@ -3679,11 +3680,11 @@ return [
                                     'stage3' => 'Adelantado',
                                     'stage4' => 'Adelantado',
                                     'stage5' => 'Adelantado',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page6' => [
                 'title' => 'Detección y reparación de brechas en la gestión de riesgos cibernéticos',
@@ -3703,7 +3704,7 @@ return [
                                     'stage3' => 'Rezagado',
                                     'stage4' => 'Rezagado',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Cada pocos años',
@@ -3715,7 +3716,7 @@ return [
                                     'stage3' => 'Rezagado',
                                     'stage4' => 'Rezagado',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Cada año',
@@ -3727,7 +3728,7 @@ return [
                                     'stage3' => 'Rezagado',
                                     'stage4' => 'Rezagado',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Cada 6 meses',
@@ -3739,7 +3740,7 @@ return [
                                     'stage3' => 'Al mismo nivel',
                                     'stage4' => 'Rezagado',
                                     'stage5' => 'Rezagado',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Cada trimestre',
@@ -3751,7 +3752,7 @@ return [
                                     'stage3' => 'Adelantado',
                                     'stage4' => 'Al mismo nivel',
                                     'stage5' => 'Al mismo nivel',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Mensualmente',
@@ -3763,7 +3764,7 @@ return [
                                     'stage3' => 'Adelantado',
                                     'stage4' => 'Adelantado',
                                     'stage5' => 'Al mismo nivel',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Semanalmente',
@@ -3775,7 +3776,7 @@ return [
                                     'stage3' => 'Adelantado',
                                     'stage4' => 'Adelantado',
                                     'stage5' => 'Al mismo nivel',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Continuamente',
@@ -3787,12 +3788,12 @@ return [
                                     'stage3' => 'Adelantado',
                                     'stage4' => 'Adelantado',
                                     'stage5' => 'Adelantado',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
-        ]
-    ]
+        ],
+    ],
 ];

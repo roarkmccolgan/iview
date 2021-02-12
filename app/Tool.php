@@ -14,7 +14,7 @@ class Tool extends Model
         'company_id',
         'template_id',
         'start_date',
-        'end_date'
+        'end_date',
     ];
 
     protected $dates = ['start_date'];
@@ -58,6 +58,7 @@ class Tool extends Model
     {
         return $this->belongsToMany('App\Language');
     }
+
     public function sections()
     {
         return $this->hasMany('App\Section');

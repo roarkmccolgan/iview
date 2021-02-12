@@ -1,6 +1,7 @@
 <?php
+
 //NTT
-return array(
+return [
     'elqFormName'=>'',
     'developedby'=>'Developed by',
     'sponsoredby'=>'Sponsored by',
@@ -27,7 +28,7 @@ return array(
             Dieses Selbsteinschätzungstool wird durch unabhängige Benutzerumfragen und der umfangreichen Marktkenntnis von IDC unterstützt. Nach Abschluss einer kurzen Umfrage (10 Minuten) erhalten Sie einen benutzerdefinierten Bericht, der das WAN Ihres Unternehmens bewertet. Der Bericht bietet eine wichtige und maßgeschneiderte Beratung, um Ihnen bei der Vorbereitung auf zukünftige Anforderungen zu helfen und die Einführung eines WAN der nächsten Generation zu planen.
         </p>',
     'startbut'=>'Bewertung beginnen',
-    
+
     'send'=>'We can send you the full results directly to your mailbox',
     'register'=>'Registrieren Sie sich jetzt, um einen personalisierten Report zu erhalten.',
     'provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
@@ -58,7 +59,7 @@ return array(
         <a class="btn btn--primary" target="_blank" href="https://www.eu.ntt.com/de/services/network/software-defined-network.html">
             Klicken Sie hier, um mehr Informationen zu erhalten. 
         </a>',
-    'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @ntt. Interested? ',// http://bit.ly/2gslXEh
+    'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @ntt. Interested? ', // http://bit.ly/2gslXEh
     'email'=>[
         'subject' => 'NTT Communications Next Generation WAN Advisor',
         'hi' => 'Hallo :Fname',
@@ -66,7 +67,7 @@ return array(
         'link' => 'Bericht herunterladen',
         'extra' => 'Nachdem Sie den Bericht gelesen haben, sollten Sie <a href="http://www.ntt.com/en/services/network/software-defined-network.html" style="color:#054683">NTT Communications</a> besuchen.',
         'regards' => 'Mit freundlichen Grüßen',
-        'team' => 'Das IDC-Team'
+        'team' => 'Das IDC-Team',
     ],
     'email_apology'=>[
         'subject' => 'NTT Communications Next Generation WAN Advisor',
@@ -77,7 +78,7 @@ return array(
         'link' => 'Bericht herunterladen',
         'extra' => 'Wir entschuldigen uns für eventuell entstandene Unannehmlichkeiten. Falls Sie weitere Probleme in Bezug auf das Bewertungs-Tool haben sollten, setzen Sie sich bitte direkt mit mir in Verbindung, unter <a href="mailto:abuss@idc.com" style="color:#054683">abuss@idc.com</a>',
         'regards' => 'Beste Grüße',
-        'team' => 'Andrew Buss<br/>Consulting Director, IDC Europe'
+        'team' => 'Andrew Buss<br/>Consulting Director, IDC Europe',
     ],
     'introduction' => '
         <h2 class="text-ntt-blue mb-3">EINFÜHRUNG</h2>
@@ -805,7 +806,7 @@ return array(
             </p>
         </div>
     ',
-    
+
     'operations-3-stage3' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2 text-ntt-blue mt-4 font-bold">
@@ -1098,4 +1099,4 @@ return array(
                 
         </div>
     ',
-);
+];

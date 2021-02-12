@@ -15,9 +15,8 @@ use JavaScript;
 
 class TerminalController extends Controller
 {
-
     /**
-     * Show the product dashboard
+     * Show the product dashboard.
      *
      * @return Response
      */
@@ -30,7 +29,7 @@ class TerminalController extends Controller
 
         Carbon::setToStringFormat('m-d-Y');
         $startDate = Carbon::now()->subMonth();
-        
+
         if ($startDate->lt($tool->start_date)) {
             $startDate = $tool->start_date;
         }
@@ -49,7 +48,7 @@ class TerminalController extends Controller
         }
 
         $completionRange = collect($dateRange)->map(function ($item, $key) {
-            return [$item,0];
+            return [$item, 0];
         });
 
         $tool->load(
@@ -60,7 +59,7 @@ class TerminalController extends Controller
             },
             'assessments' => function ($query) use ($startDate, $endDate) {
                 $query->whereDate('created_at', '>=', $startDate)->whereDate('created_at', '<=', $endDate);
-            }],
+            }, ],
             'urls'
         );
 
@@ -76,16 +75,16 @@ class TerminalController extends Controller
         }
 
         //make a full array of each day with count of assessments per day
-        $completionDates=[];
+        $completionDates = [];
         foreach ($dateRange as $theDay) {
-            $completionDates[] = [Carbon::parse($theDay)->format('d'),count(array_keys($assessmentDates, $theDay))];
+            $completionDates[] = [Carbon::parse($theDay)->format('d'), count(array_keys($assessmentDates, $theDay))];
         }
 
         $trackerQueries = [];
 
         foreach ($tool->trackers as $tracker) {
             $langString = '';
-            if ($tracker->language_id!=1) {
+            if ($tracker->language_id != 1) {
                 $abb = $tracker->language->abbreviation;
                 $langString = ';ga:landingPagePath=@/'.$abb.'/';
             }
@@ -99,14 +98,14 @@ class TerminalController extends Controller
             $completions = 0;
 
             foreach ($tracker->TrackerHits as $stats) {
-                if ($stats->type=='completion') {
+                if ($stats->type == 'completion') {
                     $completions++;
                 }
             }
             $tracker->setCompletions($completions);
         }
         //dd($trackerQueries);
-        
+
         $terminalQueries = array_merge($terminalQueries, $trackerQueries);
 
         $analyticsResults = [];
@@ -145,26 +144,26 @@ class TerminalController extends Controller
             $frAdd = 22;
             if ($normalizeStart->between($startDate, $endDate) && $normalizeEnd->between($startDate, $endDate)) {
                 foreach ($tool->trackers as $tracker) {
-                    if ($tracker->language_id==1 && $tracker->code=='hlIkPxqRrK') {
-                        if (!isset($analyticsResults[$tracker->code])) {
+                    if ($tracker->language_id == 1 && $tracker->code == 'hlIkPxqRrK') {
+                        if (! isset($analyticsResults[$tracker->code])) {
                             $analyticsResults[$tracker->code] = [[0]];
                         }
                         $analyticsResults[$tracker->code][0][0] += $enAdd;
                     }
-                    if ($tracker->language_id==23 && $tracker->code=='fdbXy1vYTW') {
-                        if (!isset($analyticsResults[$tracker->code])) {
+                    if ($tracker->language_id == 23 && $tracker->code == 'fdbXy1vYTW') {
+                        if (! isset($analyticsResults[$tracker->code])) {
                             $analyticsResults[$tracker->code] = [[0]];
                         }
                         $analyticsResults[$tracker->code][0][0] += $deAdd;
                     }
-                    if ($tracker->language_id==27 && $tracker->code=='a6etnMN9VP') {
-                        if (!isset($analyticsResults[$tracker->code])) {
+                    if ($tracker->language_id == 27 && $tracker->code == 'a6etnMN9VP') {
+                        if (! isset($analyticsResults[$tracker->code])) {
                             $analyticsResults[$tracker->code] = [[0]];
                         }
                         $analyticsResults[$tracker->code][0][0] += $esAdd;
                     }
-                    if ($tracker->language_id==34 && $tracker->code=='zXLpqJDEqj') {
-                        if (!isset($analyticsResults[$tracker->code])) {
+                    if ($tracker->language_id == 34 && $tracker->code == 'zXLpqJDEqj') {
+                        if (! isset($analyticsResults[$tracker->code])) {
                             $analyticsResults[$tracker->code] = [[0]];
                         }
                         $analyticsResults[$tracker->code][0][0] += $frAdd;
@@ -189,11 +188,11 @@ class TerminalController extends Controller
                             $tracker->save();
                         }
                     }
-                    
+
                 }
             }
         }
-        
+
         if($analyticsResults['utm_completes']){
             foreach ($analyticsResults['utm_completes'] as $key => $value) {
                 foreach ($tool->trackers as $trakKey => $tracker) {
@@ -209,16 +208,15 @@ class TerminalController extends Controller
 
         $daily_total = 0;
 
-        
         foreach ($analyticsResults['daily_results'] as $key => $value) {
             $correctDateFormat = Carbon::createFromFormat('Ymd', $value[0])->format('j');
             $analyticsResults['daily_results'][$key][0] = $correctDateFormat;
-            $daily_total+=$value[1];
+            $daily_total += $value[1];
         }
         $complete_total = 0;
         foreach ($analyticsResults['complete_results'] as $key => $value) {
             $analyticsResults['complete_results'][$key][0] = Carbon::createFromFormat('Ymd', $value[0])->format('j');
-            $complete_total+=$value[1];
+            $complete_total += $value[1];
         }
 
         $alltime_total = Assessment::where('tool_id', $tool->id)->count();
@@ -240,7 +238,7 @@ class TerminalController extends Controller
             'daily_results' => $analyticsResults['daily_results'],
             'country_results' => $analyticsResults['country_results'],
             'device_results' => $analyticsResults['device_results'],
-            'complete_results' => $completionDates,//$analyticsResults['complete_results']
+            'complete_results' => $completionDates, //$analyticsResults['complete_results']
             'utm_views' => $analyticsResults['utm_views'],
             'utm_completes' => $analyticsResults['utm_completes'],
             'referrers_results' => $analyticsResults['referrers_results'],

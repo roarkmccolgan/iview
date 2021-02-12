@@ -1,4 +1,5 @@
 <?php
+
 //6 BT McAfee
 return [
     'screeners' => [
@@ -262,9 +263,9 @@ return [
                             'Yemen' => 'Yemen',
                             'Zambia' => 'Zambia',
                             'Zimbabwe' => 'Zimbabwe',
-                        ]
-                    ]
-                ]
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Demographics',
@@ -277,23 +278,23 @@ return [
                             [
                                 'label'=>'Fewer than 4,999',
                                 'value'=>0,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'5,000 to 9,999',
                                 'value'=>0,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'10,000 or more',
                                 'value'=>0,
-                                'checked'=>false
-                            ]
-                        ]
-                    ]
-                ]
+                                'checked'=>false,
+                            ],
+                        ],
+                    ],
+                ],
             ],
-        ]
+        ],
     ],
     'general-approach-to-it' => [
         'title' => 'Approach to IT',
@@ -341,8 +342,8 @@ return [
                                         'label'=>'5',
                                         'value'=>2.5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Automation of security processes',
@@ -374,8 +375,8 @@ return [
                                         'label'=>'5',
                                         'value'=>2.5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Proactive insight into evolving threats',
@@ -407,8 +408,8 @@ return [
                                         'label'=>'5',
                                         'value'=>2.5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Use of threat intelligence',
@@ -440,8 +441,8 @@ return [
                                         'label'=>'5',
                                         'value'=>2.5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Automated Unified Intelligence',
@@ -473,12 +474,12 @@ return [
                                         'label'=>'5',
                                         'value'=>2.5,
                                         'checked'=>false,
-                                    ]
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Approach to IT',
@@ -506,8 +507,8 @@ return [
                                         'label'=>'Not using not planning to',
                                         'value'=>0,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Artificial intelligence/machine learning',
@@ -527,8 +528,8 @@ return [
                                         'label'=>'Not using not planning to',
                                         'value'=>0,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Real-time analytics',
@@ -548,8 +549,8 @@ return [
                                         'label'=>'Not using not planning to',
                                         'value'=>0,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Heuristics',
@@ -569,8 +570,8 @@ return [
                                         'label'=>'Not using not planning to',
                                         'value'=>0,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Active threat hunting',
@@ -590,18 +591,18 @@ return [
                                         'label'=>'Not using not planning to',
                                         'value'=>0,
                                         'checked'=>false,
-                                    ]
-                                ]
-                            ]
-                        ]
-                    ]
-                ]/*,
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
+                ], /*,
                 'report' => array(
                     'text'=>'Solid business decisions should be data-driven. However, as many as 40% of your small and midsize business peers don\'t measure their business results at all. Leapfrog opportunity! ',
                     'image'=>'img/techfit_icons_Q-A1.png'
                 )*/
-            ]
-        ]
+            ],
+        ],
     ],
     'integration' => [
         'title' => 'Integration',
@@ -622,31 +623,31 @@ return [
                             [
                                 'label'=>'Ad hoc investment with no broad plan or strategic consideration',
                                 'value'=>2.5,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'We plan to fill security gaps as they are deemed necessary',
                                 'value'=>5,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'We have repeatable security processes in place that support the business',
                                 'value'=>7.5,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'We have a well-managed security strategy that maps the direction at least for the next two years',
                                 'value'=>10,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'We have defined security as a core strategic investment with specified outcomes',
                                 'value'=>12.5,
-                                'checked'=>false
-                            ]
-                        ]
-                    ]
-                ]/*,
+                                'checked'=>false,
+                            ],
+                        ],
+                    ],
+                ], /*,
                 'report' => array(
                     'text'=>'Solid business decisions should be data-driven. However, as many as 40% of your small and midsize business peers don\'t measure their business results at all. Leapfrog opportunity! ',
                     'image'=>'img/techfit_icons_Q-A1.png'
@@ -663,33 +664,33 @@ return [
                             [
                                 'label'=>'We prioritize standalone point products regardless of integration concerns',
                                 'value'=>2.5,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'We tend to buy standalone point products but also look to integration if it makes sense',
                                 'value'=>5,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'We are evenly balanced between products that work together and standalone point products',
                                 'value'=>7.5,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'We tend to buy products that work well together but still buy standalone point products',
                                 'value'=>10,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'We give a priority to management and integration and buy products that work well together',
                                 'value'=>12.5,
-                                'checked'=>false
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
+                                'checked'=>false,
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
     ],
     'automation' => [
         'title' => 'Automation',
@@ -710,31 +711,31 @@ return [
                             [
                                 'label'=>'Manual processes across the board',
                                 'value'=>1.25,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Mainly manual processes with a small amount of automation',
                                 'value'=>2.5,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'A good balance of automation and manual processes',
                                 'value'=>3.75,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Mainly automation with a small amount of manual processes',
                                 'value'=>5,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Automation across the board',
                                 'value'=>6.25,
-                                'checked'=>false
-                            ]
-                        ]
-                    ]
-                ]/*,
+                                'checked'=>false,
+                            ],
+                        ],
+                    ],
+                ], /*,
                 'report' => array(
                     'text'=>'Archiving should be integrated in overall data protection workflow, IDC believes. In several industries (e.g. healthcare), long-term archiving is mandatory. With file sizes esp. for video exploding, storage assets often need rethinking.',
                     'image'=>'img/techfit_icons_Q-C1.png'
@@ -751,31 +752,31 @@ return [
                             [
                                 'label'=>'Decrease it a lot',
                                 'value'=>1.25,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Decrease it a little',
                                 'value'=>2.5,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Stay the same',
                                 'value'=>3.75,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Increase it a little',
                                 'value'=>5,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Increase it a lot',
                                 'value'=>6.25,
-                                'checked'=>false
-                            ]
-                        ]
-                    ]
-                ]
+                                'checked'=>false,
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Automation',
@@ -826,36 +827,36 @@ return [
                             [
                                 'label'=>'Security policy deployment',
                                 'value'=>1.25,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Security management',
                                 'value'=>1.25,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Endpoint protection',
                                 'value'=>1.25,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Identity and access management',
                                 'value'=>1.25,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Web security',
                                 'value'=>1.25,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'None of the above',
                                 'value'=>0,
-                                'checked'=>false
-                            ]
-                        ]
-                    ]
-                ]
+                                'checked'=>false,
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page4' => [
                 'title' => 'Automation',
@@ -906,38 +907,38 @@ return [
                             [
                                 'label'=>'Software updates and patching',
                                 'value'=>1.25,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Data security',
                                 'value'=>1.25,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Network security',
                                 'value'=>1.25,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Messaging security',
                                 'value'=>1.25,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Vulnerability management',
                                 'value'=>1.25,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'None of the above',
                                 'value'=>0,
-                                'checked'=>false
-                            ]
-                        ]
-                    ]
-                ]
+                                'checked'=>false,
+                            ],
+                        ],
+                    ],
+                ],
             ],
-        ]
+        ],
     ],
     'unified-intelligence' => [
         'title' => 'Unified Intelligence',
@@ -985,8 +986,8 @@ return [
                                         'label'=>'5',
                                         'value'=>2.78,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'We do multi-way sharing of information',
@@ -1018,8 +1019,8 @@ return [
                                         'label'=>'5',
                                         'value'=>2.78,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'We have automated policy updates based on information from global threat insight services',
@@ -1051,12 +1052,12 @@ return [
                                         'label'=>'5',
                                         'value'=>2.78,
                                         'checked'=>false,
-                                    ]
-                                ]
-                            ]
-                        ]
-                    ]
-                ]/*,
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
+                ], /*,
                 'report' => array(
                     'text'=>'Archiving should be integrated in overall data protection workflow, IDC believes. In several industries (e.g. healthcare), long-term archiving is mandatory. With file sizes esp. for video exploding, storage assets often need rethinking.',
                     'image'=>'img/techfit_icons_Q-C1.png'
@@ -1073,31 +1074,31 @@ return [
                             [
                                 'label'=>'Not using and no plans to use',
                                 'value'=>1.76,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Not using but plan to use in the next two years',
                                 'value'=>3.33,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Currently piloting this',
                                 'value'=>5,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Use in limited areas in production',
                                 'value'=>6.67,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Use extensively in production',
                                 'value'=>8.33,
-                                'checked'=>false
-                            ]
-                        ]
-                    ]
-                ]/*,
+                                'checked'=>false,
+                            ],
+                        ],
+                    ],
+                ], /*,
                 'report' => array(
                     'text'=>'Archiving should be integrated in overall data protection workflow, IDC believes. In several industries (e.g. healthcare), long-term archiving is mandatory. With file sizes esp. for video exploding, storage assets often need rethinking.',
                     'image'=>'img/techfit_icons_Q-C1.png'
@@ -1168,62 +1169,62 @@ return [
                             [
                                 'label'=>'NGFW/UTM (next generation firewall/unified threat management)',
                                 'value'=>0.83,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'IDP (intrusion detection and prevention)',
                                 'value'=>0.83,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'SIEM (security information and event management)',
                                 'value'=>0.83,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Endpoint security',
                                 'value'=>0.83,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'NAC (network access control)',
                                 'value'=>0.83,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Analytics',
                                 'value'=>0.83,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Machine learning',
                                 'value'=>0.83,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Threat intelligence reports and feeds',
                                 'value'=>0.83,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Sandboxing',
                                 'value'=>0.83,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Web gateway',
                                 'value'=>0.83,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'None',
                                 'value'=>0,
-                                'checked'=>false
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
-    ]
+                                'checked'=>false,
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
+    ],
 ];

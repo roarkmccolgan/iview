@@ -2,8 +2,8 @@
 
 namespace App\Http\Requests;
 
-use Illuminate\Foundation\Http\FormRequest;
 use App\Http\Requests\Request;
+use Illuminate\Foundation\Http\FormRequest;
 
 class CreateToolRequest extends FormRequest
 {
@@ -37,7 +37,7 @@ class CreateToolRequest extends FormRequest
     }
 
     /**
-     * Add custom messages to validation rules
+     * Add custom messages to validation rules.
      * @return array
      */
     public function messages()

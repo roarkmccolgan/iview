@@ -10,6 +10,7 @@ require_once base_path('vendor/goat1000/svggraph/SVGGraph.php');
 class generateReport
 {
     protected $tool;
+
     /**
      * Initializes the class.
      *
@@ -26,7 +27,7 @@ class generateReport
         $tool->load('assessments');
 
         //columsn to download
-        $chosenColumns = ['id','created_at','fname','lname','email','company','title','country','tel','referer','code','rating','extra','result'];
+        $chosenColumns = ['id', 'created_at', 'fname', 'lname', 'email', 'company', 'title', 'country', 'tel', 'referer', 'code', 'rating', 'extra', 'result'];
 
         $cleanresults = $tool->assessments;
 
@@ -39,6 +40,7 @@ class generateReport
                                 return collect([$key=>$question['selected']]);
                             }
                             Log::info('answer not captured: '.$item->id.'\n '.$question['question']);
+
                             return collect([$key=>'answer not captured ']);
                         });
                     });
@@ -48,6 +50,7 @@ class generateReport
                     $itemLang = $item->lang == 'en' ? '/' : '/'.$item->lang;
                 }
                 $item->report = session('url').$itemLang.'/download/'.$item->uuid.'?update=false';
+
                 return collect($item);
             });
             $chosenColumns[] = 'quiz';
@@ -63,39 +66,39 @@ class generateReport
         $cols = 0;
         foreach ($assessments as $assKey => $assessment) {
             if (is_null($telNum)) {
-                $telNum = array_search("tel", array_keys($assessment));
+                $telNum = array_search('tel', array_keys($assessment));
             }
-            if (!is_null($assessment['extra']) && $assessment['extra']!='null' && (is_array($assessment['extra']) || is_object($assessment['extra']))) {
+            if (! is_null($assessment['extra']) && $assessment['extra'] != 'null' && (is_array($assessment['extra']) || is_object($assessment['extra']))) {
                 foreach ($assessment['extra'] as $exKey => $extra) {
-                    if (!is_null($extra)) {
+                    if (! is_null($extra)) {
                         $assessments[ucfirst($assKey)][$exKey] = $extra;
                     }
                 }
             }
             unset($assessments[$assKey]['extra']);
             foreach ($assessment['result'] as $resKey => $result) {
-                if ($resKey!='overall') {
+                if ($resKey != 'overall') {
                     if ($result['rating']) {
                         $assessments[$assKey][trans($tool->alias.'.'.$resKey.'.title')] = trans($tool->alias.'.'.$result['rating']);
                     } else {
-                        $assessments[$assKey][trans($tool->alias.'.'.$resKey.'.title')] = "";
+                        $assessments[$assKey][trans($tool->alias.'.'.$resKey.'.title')] = '';
                     }
                 }
             }
             unset($assessments[$assKey]['result']);
 
-            if (isset($assessment['quiz']) && !is_null($assessment['quiz']) && $assessment['quiz']!='null' && (is_array($assessment['quiz']) || is_object($assessment['quiz']))) {
+            if (isset($assessment['quiz']) && ! is_null($assessment['quiz']) && $assessment['quiz'] != 'null' && (is_array($assessment['quiz']) || is_object($assessment['quiz']))) {
                 foreach ($assessment['quiz'] as $qKey => $q) {
                     if (is_array($q)) {
                         $num = 1;
 
                         foreach ($q as $key => $value) {
                             if (is_array($value)) {
-                                $newKey = strpos($key, 'q') === false ? 'q'.str_replace(".", "_", $value['name']) : $value['name'];
+                                $newKey = strpos($key, 'q') === false ? 'q'.str_replace('.', '_', $value['name']) : $value['name'];
                                 $assessments[$assKey][$newKey] = $value['label'];
                                 $num++;
                             } else {
-                                $newKey = strpos($key, 'q') === false ? $qKey.'_'.$num : str_replace(".", "_", $key);
+                                $newKey = strpos($key, 'q') === false ? $qKey.'_'.$num : str_replace('.', '_', $key);
                                 //echo $newKey;
                                 $assessments[$assKey][$newKey] = substr($value, 0, stripos($value, '|'));
                                 $num++;
@@ -103,14 +106,13 @@ class generateReport
                         }
                     } else {
                         $assessments[$assKey][$qKey] = substr($q, 0, stripos($q, '|'));
-                        ;
                     }
                 }
                 unset($assessments[$assKey]['quiz']);
             }
             $cols = count($assessments[$assKey]) > $cols ? count($assessments[$assKey]) : $cols;
         }
-        
+
         $alphas = range('A', 'Z');
 
         $file = Excel::create(str_slug($tool->title.' '.$tool->sub_title), function ($excel) use ($assessments, $cols, $alphas, $telNum) {
@@ -123,7 +125,7 @@ class generateReport
                     $cells->setFont([
                         //'family'     => 'Calibri',
                         //'size'       => '14',
-                        'bold'       =>  true
+                        'bold'       =>  true,
                         ]);
                 });
                 $sheet->freezeFirstRow();

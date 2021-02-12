@@ -10,6 +10,7 @@ class Page extends Model
     {
         return $this->hasMany('App\Questions');
     }
+
     public function sections()
     {
         return $this->belongsTo('App\Section');

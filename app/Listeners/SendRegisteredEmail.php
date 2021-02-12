@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\View;
 class SendRegisteredEmail implements ShouldQueue
 {
     use InteractsWithQueue;
+
     /**
      * Create the event listener.
      *
@@ -35,9 +36,9 @@ class SendRegisteredEmail implements ShouldQueue
         $viewData = [
             'user'=>$user,
             'tool'=>$tool,
-            'url'=>$url
+            'url'=>$url,
         ];
-        $data['html'] =  View::make('emails.registered', $viewData)->render();
+        $data['html'] = View::make('emails.registered', $viewData)->render();
         Mail::queue('emails.echo', $data, function ($message) use ($user) {
             $message->from('notifications@mg.idcready.net', 'IDC Notifications');
             $message->to($user->email, $user->name)->subject(trans('email.register_subject'));

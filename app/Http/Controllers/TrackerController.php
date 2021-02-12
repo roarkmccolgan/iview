@@ -24,13 +24,15 @@ class TrackerController extends Controller
         $tool = $request->session()->get('productObject');
 
         if ($user->tools->contains($tool->id) || $user->hasRole('super')) {
-            $tool->load(['trackers.language','company','urls.language']);
-            
+            $tool->load(['trackers.language', 'company', 'urls.language']);
+
             JavaScript::put([
-                'foo' => 'bar'
+                'foo' => 'bar',
             ]);
+
             return view('admin.trackers', compact('tool'));
         }
+
         return redirect('/login')->with('status', 'Insufficient Privilages!');
     }
 
@@ -43,9 +45,10 @@ class TrackerController extends Controller
     public function create(Request $request)
     {
         $tool = $request->session()->get('productObject');
-        $tool->load(['company','languages']);
-        $code=$this->generateTrackingCode();
-        return view('admin.trackers_new', compact(['tool','code']));
+        $tool->load(['company', 'languages']);
+        $code = $this->generateTrackingCode();
+
+        return view('admin.trackers_new', compact(['tool', 'code']));
     }
 
     /**
@@ -57,7 +60,8 @@ class TrackerController extends Controller
     public function store(AddTrackerRequest $request)
     {
         $tracker = Tracker::create($request->except(['_token']));
-        return redirect('admin/tracking')->with('status', ['type'=>'success','message'=>'Tracker Created']);
+
+        return redirect('admin/tracking')->with('status', ['type'=>'success', 'message'=>'Tracker Created']);
     }
 
     /**
@@ -106,10 +110,12 @@ class TrackerController extends Controller
         $tracker->delete();
         if ($request->ajax()) {
             $data = [
-                'result'=>'success'
+                'result'=>'success',
             ];
+
             return $data;
         }
+
         return redirect('/admin/trackers')->with('status', 'Tracker Deleted!');
     }
 
@@ -124,10 +130,11 @@ class TrackerController extends Controller
                 $randomString .= $characters[rand(0, $charactersLength - 1)];
             }
             $max--;
-            if ($max==0) {
+            if ($max == 0) {
                 dd('toomuch');
             }
         } while (Tracker::where('code', $randomString)->first());
+
         return $randomString;
     }
 }

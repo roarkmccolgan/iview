@@ -1,4 +1,5 @@
 <?php
+
 //HPGDPR
 return [
     'overall' => [
@@ -15,7 +16,7 @@ return [
             'hide-title-bar'=> true,
             'hide-rating'=>true,
             'page-offset'=> 2,
-            'header-spacing'=>0
+            'header-spacing'=>0,
         ],
         'types' => [
             'stage1' => [
@@ -45,10 +46,10 @@ return [
                 'copy' => 'general.4optimisedtxt',
                 'tweet' => false,
                 'benchmark' => 21,
-            ]
+            ],
         ],
         'tweet' => true,
-        'include_answers_in_download_report' => true
+        'include_answers_in_download_report' => true,
     ],
     'leadership-and-general-obligations' => [
         'baseline' => 15.363,
@@ -91,8 +92,8 @@ return [
                 'high' => 30,
                 'total' => 5,
                 'benchmark' => 13,
-            ]
-        ]
+            ],
+        ],
     ],
     'data-rights-and-standards' => [
         'baseline' => 24.046,
@@ -135,11 +136,11 @@ return [
                 'high' => 31,
                 'total' => 6,
                 'benchmark' => 17,
-            ]
-        ]
+            ],
+        ],
     ],
     'security' => [
-        'baseline' => 10,917,
+        'baseline' => 10, 917,
         'report-settings' => [
             'header'=>true,
             'footer'=>true,
@@ -179,7 +180,7 @@ return [
                 'high' => 31,
                 'total' => 4,
                 'benchmark' => 11,
-            ]
-        ]
-    ]
+            ],
+        ],
+    ],
 ];

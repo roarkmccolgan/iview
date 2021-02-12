@@ -1,4 +1,5 @@
 <?php
+
 // Dassault
 return [
     'business' => [
@@ -40,9 +41,9 @@ return [
                                 'value'=>0,
                                 'checked'=>false,
                             ],
-                        ]
-                    ]
-                ]
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Business',
@@ -87,8 +88,8 @@ return [
                                         'label'=>'Highly effective',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Education/Training',
@@ -118,8 +119,8 @@ return [
                                         'label'=>'Highly effective',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Technology',
@@ -149,12 +150,12 @@ return [
                                         'label'=>'Highly effective',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                         ],
-                    ]
-                ]
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Business',
@@ -166,11 +167,11 @@ return [
                         'calc' => [
                             'type' => 'qty',
                             'between' => [
-                                '1-1' => 5, 
-                                '2-3' => 4, 
-                                '4-5' => 3, 
-                                '6-7' => 2, 
-                                '8-9' => 1, 
+                                '1-1' => 5,
+                                '2-3' => 4,
+                                '4-5' => 3,
+                                '6-7' => 2,
+                                '8-9' => 1,
                             ],
                         ],
                         'options'=>[
@@ -219,9 +220,9 @@ return [
                                 'value'=>1,
                                 'checked'=>false,
                             ],
-                        ]
-                    ]
-                ]
+                        ],
+                    ],
+                ],
             ],
             'page4' => [
                 'title' => 'Business',
@@ -233,11 +234,11 @@ return [
                         'calc' => [
                             'type' => 'qty',
                             'between' => [
-                                '1-1' => 5, 
-                                '3-4' => 4, 
-                                '5-6' => 3, 
-                                '7-9' => 2, 
-                                '10-12' => 1, 
+                                '1-1' => 5,
+                                '3-4' => 4,
+                                '5-6' => 3,
+                                '7-9' => 2,
+                                '10-12' => 1,
                             ],
                         ],
                         'options'=>[
@@ -301,9 +302,9 @@ return [
                                 'value'=>1,
                                 'checked'=>false,
                             ],
-                        ]
-                    ]
-                ]
+                        ],
+                    ],
+                ],
             ],
             'page5' => [
                 'title' => 'Business',
@@ -315,11 +316,11 @@ return [
                         'calc' => [
                             'type' => 'qty',
                             'between' => [
-                                '1-1' => 1, 
-                                '2-2' => 2, 
-                                '3-3' => 3, 
-                                '4-4' => 4, 
-                                '5-5' => 5, 
+                                '1-1' => 1,
+                                '2-2' => 2,
+                                '3-3' => 3,
+                                '4-4' => 4,
+                                '5-5' => 5,
                             ],
                         ],
                         'options'=>[
@@ -348,9 +349,9 @@ return [
                                 'value'=>2,
                                 'checked'=>false,
                             ],
-                        ]
-                    ]
-                ]
+                        ],
+                    ],
+                ],
             ],
             'page6' => [
                 'title' => 'Business',
@@ -400,9 +401,9 @@ return [
                                 'value'=>0,
                                 'checked'=>false,
                             ],
-                        ]
-                    ]
-                ]
+                        ],
+                    ],
+                ],
             ],
             'page7' => [
                 'title' => 'Business',
@@ -440,8 +441,8 @@ return [
                                         'label'=>'Digital collaboration technology and processes are in place across the company, extended globally and outside the company',
                                         'value'=>10,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Reveal – Utilize visualization of content (3D product Designs, assets, processes) and data within a digital lean framework to enhance communication/collaboration during virtual/ physical meetings ',
@@ -471,8 +472,8 @@ return [
                                         'label'=>'We use visual content and data within a digital lean framework that spans all groups, including our industry ecosystem',
                                         'value'=>10,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Improve – Make "Lean thinking" a standard part of business, teams and culture to drive improvements',
@@ -502,13 +503,13 @@ return [
                                         'label'=>'We utilize lean principles as part of day-to-day decision making to drive enterprise-wide improvements in standardized metrics/KPIs ',
                                         'value'=>10,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                         ],
-                    ]
-                ]
-            ]
-        ]
-    ]
+                    ],
+                ],
+            ],
+        ],
+    ],
 ];

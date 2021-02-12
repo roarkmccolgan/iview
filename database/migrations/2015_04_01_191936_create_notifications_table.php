@@ -1,11 +1,10 @@
 <?php
 
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
 
 class CreateNotificationsTable extends Migration
 {
-
     /**
      * Run the migrations.
      *
@@ -20,7 +19,6 @@ class CreateNotificationsTable extends Migration
             $table->string('last_name');
             $table->string('email');
             $table->tinyInteger('default')->default(0);
-
 
             $table->timestamps();
 

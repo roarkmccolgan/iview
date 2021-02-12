@@ -1,9 +1,10 @@
 <?php
+
 //sage
-return array(
+return [
     'title' => 'Capitalize on Cloud',
     'sub-title' => 'Advancing your Maturity',
-	'stage1' => 'Stage 1: Time to Act',
+    'stage1' => 'Stage 1: Time to Act',
     'stage2' => 'Stage 2: Time to Commit',
     'stage3' => 'Stage 3: Time to Invest',
     'stage4' => 'Stage 4: Time to Refine',
@@ -18,7 +19,7 @@ return array(
     ',
     'complete_thankyou' => 'Thank you :Fname,',
     'complete_body' => 'Your custom report will arrive in your inbox soon',
-    'complete_tweet' => 'I\'ve just taken the Cloud Development Assessment Sponsored by @Sage %26 @IDCUKI, we\'re at :result. Interested?',// http://bit.ly/2g8WN1d
+    'complete_tweet' => 'I\'ve just taken the Cloud Development Assessment Sponsored by @Sage %26 @IDCUKI, we\'re at :result. Interested?', // http://bit.ly/2g8WN1d
     'email'=>[
         'subject' => 'IDC Report',
         'hi' => 'Hi :Fname',
@@ -29,10 +30,10 @@ return array(
         'link' => 'Download Report',
         'extra' => 'Once you\'ve digested the report why not visit <a href="http://www.sage.com" style="color:#024886">Sage</a>',
         'regards' => 'Regards',
-        'team' => 'The IDC Team'
+        'team' => 'The IDC Team',
     ],
     'introduction-image' => 'report1.jpg',
-    'overall' => array(
+    'overall' => [
         'title'=>'Overall Cloud Maturity',
         'image'=>'',
         'introduction' => '
@@ -82,9 +83,9 @@ return array(
             <p>
                 The following report provides you with a more detailed understanding of the different areas of your cloud strategy and the progress you are making. It also provides you with some guidance on improvements within these areas of your business.
             </p>
-        '
-    ),
-    'cloud-vision-and-strategy' => array(
+        ',
+    ],
+    'cloud-vision-and-strategy' => [
         'title'=>'Cloud Strategy and Vision',
         'pageimage'=>'',
         'stage1'=>'
@@ -222,8 +223,8 @@ return array(
             Provide business value to clients by offering solutions to business issues. All of your strategic planning activities should focus on what business issues you are looking to solve for your customers.
         </p>
         ',
-    ),
-    'process-and-skill-sets' => array(
+    ],
+    'process-and-skill-sets' => [
         'title'=>'Processes and Skill-Sets',
         'pageimage'=>'process-and-skill-sets.jpg',
         'stage1'=>'
@@ -384,8 +385,8 @@ return array(
             At this stage, your priority and training plans should be focused on building capabilities to support broader digital transformation objectives. This includes areas such as digital, integration, and business processes.
         </p>
         ',
-    ),
-    'marketing' => array(
+    ],
+    'marketing' => [
         'title'=>'Marketing Capabilities',
         'pageimage' => '',
         'stage1'=>'
@@ -543,8 +544,8 @@ return array(
             Evolve thought leadership and strategic advisory to evangelism. Start to recruit, identify, and nurture evangelists internally (within your own organization) and externally, within the media, analyst community, within partners, and ideally within your own customer base.
         </p>
         ',
-    ),
-    'sales' => array(
+    ],
+    'sales' => [
         'title'=>'Sales',
         'pageimage'=>'sales.jpg',
         'stage1'=>'
@@ -721,8 +722,8 @@ return array(
             Also critical at this stage is embedding your cloud capabilities into a broader digital transformation proposition. This incorporates a breadth of digital technologies, such as mobility, social, Big Data analytics, next-gen security, and the Internet of Things (IoT).
         </p>
         ',
-    ),
-    'business-mix' => array(
+    ],
+    'business-mix' => [
         'title'=>'Business Mix',
         'pageimage' => '',
         'stage1'=>'
@@ -920,5 +921,5 @@ return array(
             Assess routes to market and business models that enable efficient scaling, consider licensing solutions to other partners, and expand alternative channels and partnerships that enable geo-expansion of specific solutions.
         </p>
         ',
-    ),
-);
+    ],
+];

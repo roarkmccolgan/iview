@@ -1,6 +1,7 @@
 <?php
+
 //DASSAULT
-return array(
+return [
     'elqFormName' => null,
     'developedby' => 'Développé par',
     'sponsoredby' => 'Sponsorisé par',
@@ -43,7 +44,7 @@ return array(
             Cliquez sur "débuter l’évaluation" pour commencer votre voyage. Et bonne chance!
         </p>',
     'startbut'=>'Commencer l\'évaluation',
-    
+
     'send' => 'Nous pouvons vous envoyer les résultats complets directement dans votre boîte de réception.',
     'register' => 'Inscrivez-vous dès maintenant pour recevoir votre rapport personnalisé.',
     'provide' => 'Indiquez-nous vos coordonnées et nous vous enverrons un lien pour le télécharger.',
@@ -117,7 +118,7 @@ return array(
         <a class="btn btn--primary" target="_blank" href="https://www.3ds.com/3dexperience/cloud/">
             Cliquez ici pour plus d\'informations
         </a>',
-    'complete_tweet' => 'Je viens de me procurer l\'outil d\'évaluation du RGPD @IDCEMEA pour @3ds. Cela vous intéresse ?',// http://bit.ly/2gslXEh
+    'complete_tweet' => 'Je viens de me procurer l\'outil d\'évaluation du RGPD @IDCEMEA pour @3ds. Cela vous intéresse ?', // http://bit.ly/2gslXEh
     'email'=>[
         'subject' => 'Test de maturité numérique de Dassault Systèmes',
         'hi' => 'Bonjour :Fname',
@@ -125,7 +126,7 @@ return array(
         'link' => 'Télécharger le rapport',
         'extra' => 'Après avoir lu ce rapport, pourquoi ne pas consulter le site Web <a href="https://www.3ds.com/3dexperience/cloud/" style="color:#054683">Dassault Systèmes 3DS</a> ?',
         'regards' => 'Cordialement',
-        'team' => 'L\'équipe IDC'
+        'team' => 'L\'équipe IDC',
     ],
     'introduction' => '
         <h2 class="text-dassault-blue mb-4">INTRODUCTION</h2>
@@ -1128,7 +1129,7 @@ return array(
             </p>
         </div>
     ',
-    
+
     'digital-deliveryintro' => '
         <h2 class="w-4/5 ml-auto text-dassault-blue mb-6">LIVRAISON NUMÉRIQUE</h2>
         <div class="clearfix">
@@ -1206,7 +1207,7 @@ return array(
             </p>
         </div>
     ',
-    
+
     'digital-delivery-3-stage3' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2 text-dassault-blue mt-4 font-bold">
@@ -1248,7 +1249,6 @@ return array(
             </p>
         </div>
     ',
-    
 
     'digital-delivery-2-q8-1' => '
         <div class="clearfix">
@@ -1271,7 +1271,7 @@ return array(
             </p>
         </div>
     ',
-    
+
     'digital-delivery-3-q8-1' => '
         <div class="clearfix">
             <p class="w-4/5 ml-auto mb-2">
@@ -1504,7 +1504,6 @@ return array(
             </p>
         </div>
     ',
-    
 
     'conclusionintro' => '
         <h2 class="w-4/5 ml-auto text-dassault-blue mb-6">CONCLUSION</h2>
@@ -1570,4 +1569,4 @@ return array(
                 
         </div>
     ',
-);
+];
