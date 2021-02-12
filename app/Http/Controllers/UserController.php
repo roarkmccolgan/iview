@@ -114,7 +114,7 @@ class UserController extends Controller
                 $user->changePassword = 0;
             }
             $user->save();
-            Event::fire(new UserWasCreated($user, $tool, $url));
+            event(new UserWasCreated($user, $tool, $url));
         }
 
         return redirect('admin/users')->with('status', ['type'=>'success', 'message'=>'User Created']);
