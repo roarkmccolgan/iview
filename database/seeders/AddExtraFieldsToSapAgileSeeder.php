@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Database\Seeders\AddExtraFieldsToSapAgile;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class AddExtraFieldsToSapAgileSeeder extends Seeder
 {
