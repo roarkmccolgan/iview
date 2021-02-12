@@ -13,9 +13,9 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        'App\Console\Commands\Inspire',
-        'App\Console\Commands\UpdateTrackingViews',
-        'App\Console\Commands\CommandSendReports',
+        \App\Console\Commands\Inspire::class,
+        \App\Console\Commands\UpdateTrackingViews::class,
+        \App\Console\Commands\CommandSendReports::class,
     ];
 
     /**

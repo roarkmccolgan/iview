@@ -12,7 +12,7 @@ class Language extends Model
      */
     public function url()
     {
-        return $this->hasMany('App\Url');
+        return $this->hasMany(\App\Url::class);
     }
 
     /**
@@ -21,7 +21,7 @@ class Language extends Model
      */
     public function tools()
     {
-        return $this->hasMany('App\Tool');
+        return $this->hasMany(\App\Tool::class);
     }
 
     /**
@@ -30,6 +30,6 @@ class Language extends Model
      */
     public function trackers()
     {
-        return $this->belongsToMany('App\Tracker');
+        return $this->belongsToMany(\App\Tracker::class);
     }
 }

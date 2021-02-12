@@ -13,8 +13,8 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        'App\Events\UserWasCreated' => [
-            'App\Listeners\SendRegisteredEmail',
+        \App\Events\UserWasCreated::class => [
+            \App\Listeners\SendRegisteredEmail::class,
         ],
     ];
 

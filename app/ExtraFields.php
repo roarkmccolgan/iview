@@ -29,6 +29,6 @@ class ExtraFields extends Model
      */
     public function tool()
     {
-        return $this->belongsTo('App\Tool');
+        return $this->belongsTo(\App\Tool::class);
     }
 }

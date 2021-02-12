@@ -27,7 +27,7 @@ class RedHatSeeder extends Seeder
             'subdomain' => 'digitalinnovationstaging',
             'language_id' => 1,
             'urlable_id' => 19,
-            'urlable_type' => 'App\Tool',
+            'urlable_type' => \App\Tool::class,
             'created_at' => Carbon::now(),
         ]);
         DB::table('urls')->insert([
@@ -35,7 +35,7 @@ class RedHatSeeder extends Seeder
             'subdomain' => 'digitalinnovationstaging',
             'language_id' => 1,
             'urlable_id' => 19,
-            'urlable_type' => 'App\Tool',
+            'urlable_type' => \App\Tool::class,
             'created_at' => Carbon::now(),
         ]);
         DB::table('language_tool')->insert([ //english NTT

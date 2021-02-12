@@ -15,6 +15,6 @@ class Section extends Model
 
     public function questions()
     {
-        return $this->hasMany('App\Questions');
+        return $this->hasMany(\App\Questions::class);
     }
 }

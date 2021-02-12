@@ -14,17 +14,17 @@ class Tracker extends Model
 
     public function tool()
     {
-        return $this->belongsTo('App\Tool');
+        return $this->belongsTo(\App\Tool::class);
     }
 
     public function language()
     {
-        return $this->belongsTo('App\Language');
+        return $this->belongsTo(\App\Language::class);
     }
 
     public function TrackerHits()
     {
-        return $this->hasMany('App\TrackerHits');
+        return $this->hasMany(\App\TrackerHits::class);
     }
 
     public function getViews()

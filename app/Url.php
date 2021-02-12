@@ -20,7 +20,7 @@ class Url extends Model
      */
     public function language()
     {
-        return $this->belongsTo('App\Language');
+        return $this->belongsTo(\App\Language::class);
     }
 
     /**

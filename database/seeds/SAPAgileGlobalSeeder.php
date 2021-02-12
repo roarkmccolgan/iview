@@ -33,7 +33,7 @@ class SAPAgileGlobalSeeder extends Seeder
             'subdomain' => 'assessyouragilitystaging',
             'language_id' => 1,
             'urlable_id' => 17,
-            'urlable_type' => 'App\Tool',
+            'urlable_type' => \App\Tool::class,
             'created_at' => Carbon::now(),
         ]);
         DB::table('urls')->insert([
@@ -41,7 +41,7 @@ class SAPAgileGlobalSeeder extends Seeder
             'subdomain' => 'assessyouragilitystaging',
             'language_id' => 1,
             'urlable_id' => 17,
-            'urlable_type' => 'App\Tool',
+            'urlable_type' => \App\Tool::class,
             'created_at' => Carbon::now(),
         ]);
         DB::table('language_tool')->insert([ //english NTT

@@ -15,6 +15,6 @@ class Questions extends Model
 
     public function options()
     {
-        return $this->hasMany('App\Options');
+        return $this->hasMany(\App\Options::class);
     }
 }

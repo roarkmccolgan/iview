@@ -33,7 +33,7 @@ class User extends Authenticatable
      */
     public function tools()
     {
-        return $this->belongsToMany('App\Tool');
+        return $this->belongsToMany(\App\Tool::class);
     }
 
     /**
@@ -41,6 +41,6 @@ class User extends Authenticatable
      */
     public function iviews()
     {
-        return $this->belongsToMany('App\Iview');
+        return $this->belongsToMany(\App\Iview::class);
     }
 }

@@ -17,11 +17,11 @@ class Report extends Model
 
     public function iview()
     {
-        return $this->belongsTo('App\Iview');
+        return $this->belongsTo(\App\Iview::class);
     }
 
     public function notifications()
     {
-        return $this->hasMany('App\Notification');
+        return $this->hasMany(\App\Notification::class);
     }
 }

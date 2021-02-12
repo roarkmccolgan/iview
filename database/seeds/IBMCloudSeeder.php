@@ -33,7 +33,7 @@ class IBMCloudSeeder extends Seeder
             'subdomain' => 'ibmcloudstaging',
             'language_id' => 1,
             'urlable_id' => 16,
-            'urlable_type' => 'App\Tool',
+            'urlable_type' => \App\Tool::class,
             'created_at' => Carbon::now(),
         ]);
         DB::table('urls')->insert([
@@ -41,7 +41,7 @@ class IBMCloudSeeder extends Seeder
             'subdomain' => 'ibmcloud',
             'language_id' => 1,
             'urlable_id' => 16,
-            'urlable_type' => 'App\Tool',
+            'urlable_type' => \App\Tool::class,
             'created_at' => Carbon::now(),
         ]);
         DB::table('language_tool')->insert([ //english NTT

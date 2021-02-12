@@ -33,7 +33,7 @@ class TrendMicroMSSPSeeder extends Seeder
             'subdomain' => 'msp',
             'language_id' => 1,
             'urlable_id' => 9,
-            'urlable_type' => 'App\Tool',
+            'urlable_type' => \App\Tool::class,
             'created_at' => Carbon::now(),
         ]);
         DB::table('urls')->insert([
@@ -41,7 +41,7 @@ class TrendMicroMSSPSeeder extends Seeder
             'subdomain' => 'msp',
             'language_id' => 1,
             'urlable_id' => 9,
-            'urlable_type' => 'App\Tool',
+            'urlable_type' => \App\Tool::class,
             'created_at' => Carbon::now(),
         ]);
         DB::table('urls')->insert([
@@ -49,7 +49,7 @@ class TrendMicroMSSPSeeder extends Seeder
             'subdomain' => 'trend',
             'language_id' => 1,
             'urlable_id' => 9,
-            'urlable_type' => 'App\Tool',
+            'urlable_type' => \App\Tool::class,
             'created_at' => Carbon::now(),
         ]);
         DB::table('urls')->insert([
@@ -57,7 +57,7 @@ class TrendMicroMSSPSeeder extends Seeder
             'subdomain' => 'trend',
             'language_id' => 1,
             'urlable_id' => 9,
-            'urlable_type' => 'App\Tool',
+            'urlable_type' => \App\Tool::class,
             'created_at' => Carbon::now(),
         ]);
         DB::table('language_tool')->insert([ //english Trend

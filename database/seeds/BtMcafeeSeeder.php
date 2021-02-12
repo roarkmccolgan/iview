@@ -33,7 +33,7 @@ class BtMcafeeSeeder extends Seeder
             'subdomain' => 'securebusiness',
             'language_id' => 1,
             'urlable_id' => 6,
-            'urlable_type' => 'App\Tool',
+            'urlable_type' => \App\Tool::class,
             'created_at' => Carbon::now(),
         ]);
         DB::table('language_tool')->insert([ //english Splunk

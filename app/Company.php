@@ -12,11 +12,11 @@ class Company extends Model
 
     public function iviews()
     {
-        return $this->hasMany('App\Iview');
+        return $this->hasMany(\App\Iview::class);
     }
 
     public function tools()
     {
-        return $this->hasMany('App\Tool');
+        return $this->hasMany(\App\Tool::class);
     }
 }

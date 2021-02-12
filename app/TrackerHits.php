@@ -13,6 +13,6 @@ class TrackerHits extends Model
 
     public function tracker()
     {
-        return $this->belongsTo('App\Tracker');
+        return $this->belongsTo(\App\Tracker::class);
     }
 }

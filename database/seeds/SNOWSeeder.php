@@ -33,7 +33,7 @@ class SNOWSeeder extends Seeder
             'subdomain' => 'servicenow',
             'language_id' => 1,
             'urlable_id' => 18,
-            'urlable_type' => 'App\Tool',
+            'urlable_type' => \App\Tool::class,
             'created_at' => Carbon::now(),
         ]);
         DB::table('urls')->insert([
@@ -41,7 +41,7 @@ class SNOWSeeder extends Seeder
             'subdomain' => 'servicenow',
             'language_id' => 1,
             'urlable_id' => 18,
-            'urlable_type' => 'App\Tool',
+            'urlable_type' => \App\Tool::class,
             'created_at' => Carbon::now(),
         ]);
         DB::table('language_tool')->insert([ //english NTT
