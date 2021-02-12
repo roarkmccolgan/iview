@@ -177,21 +177,21 @@ return [
         /*
          * Third Party Service Providers...
          */
-        Collective\Html\HtmlServiceProvider::class,
-        Maatwebsite\Excel\ExcelServiceProvider::class,
-        Spatie\LaravelAnalytics\LaravelAnalyticsServiceProvider::class,
-        Laravelista\Ekko\EkkoServiceProvider::class,
-        Spatie\Permission\PermissionServiceProvider::class,
-        Barryvdh\Snappy\ServiceProvider::class,
-        Khill\Lavacharts\Laravel\LavachartsServiceProvider::class,
-        Laracasts\Utilities\JavaScript\JavaScriptServiceProvider::class,
+        // Collective\Html\HtmlServiceProvider::class,
+        // Maatwebsite\Excel\ExcelServiceProvider::class,
+        // Spatie\LaravelAnalytics\LaravelAnalyticsServiceProvider::class,
+        // Laravelista\Ekko\EkkoServiceProvider::class,
+        // Spatie\Permission\PermissionServiceProvider::class,
+        // Barryvdh\Snappy\ServiceProvider::class,
+        // Khill\Lavacharts\Laravel\LavachartsServiceProvider::class,
+        // Laracasts\Utilities\JavaScript\JavaScriptServiceProvider::class,
         //Nextek\LaraPdfMerger\PdfMergerServiceProvider::class,
-        LynX39\LaraPdfMerger\PdfMergerServiceProvider::class,
-        Fideloper\Proxy\TrustedProxyServiceProvider::class,
-        Barryvdh\Debugbar\ServiceProvider::class,
-        MartinLindhe\VueInternationalizationGenerator\GeneratorProvider::class,
-        Spatie\Backup\BackupServiceProvider::class,
-        Laravel\Tinker\TinkerServiceProvider::class,
+        //LynX39\LaraPdfMerger\PdfMergerServiceProvider::class,
+        //Fideloper\Proxy\TrustedProxyServiceProvider::class,
+        //Barryvdh\Debugbar\ServiceProvider::class,
+        //MartinLindhe\VueInternationalizationGenerator\GeneratorProvider::class,
+        //Spatie\Backup\BackupServiceProvider::class,
+        //Laravel\Tinker\TinkerServiceProvider::class,
         /*
          * My helper providers...
          */
