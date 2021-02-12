@@ -43,8 +43,8 @@ Route::group(['prefix' => 'admin', 'middleware'=>['auth']], function () {
     Route::get('reporting', 'ReportingController@index');
     Route::get('reporting/create', 'ReportingController@create');
 });
-Route::group(['domain' => '{subdomain}.'.env('APP_TLD', 'idcready.net'),'middleware'=>['locale']], function ($subdomain) {
-    Route::group(['prefix' => 'admin','middleware'=>['auth','routebyurl','toolaccess:super,admin,client,local']], function () {
+Route::group(['domain' => '{subdomain}.'.env('APP_TLD', 'idcready.net'), 'middleware'=>['locale']], function ($subdomain) {
+    Route::group(['prefix' => 'admin', 'middleware'=>['auth', 'routebyurl', 'toolaccess:super,admin,client,local']], function () {
         Route::get('/', 'TerminalController@dashboard');
         Route::post('/', 'TerminalController@dashboard');
         Route::get('/assessments', 'AssessmentController@index');
@@ -84,8 +84,8 @@ Route::group(['domain' => '{subdomain}.'.env('APP_TLD', 'idcready.net'),'middlew
     });
 
     //default en routes
-    Route::get('/', 'ToolController@run')->middleware(['routebyurl','reloadquestions']);
-    Route::get('/restart', ['middleware' => ['routebyurl','reloadquestions'], function () {
+    Route::get('/', 'ToolController@run')->middleware(['routebyurl', 'reloadquestions']);
+    Route::get('/restart', ['middleware' => ['routebyurl', 'reloadquestions'], function () {
         return redirect('/'.session('localeUrl'));
     }]);
 
@@ -102,12 +102,13 @@ Route::group(['domain' => '{subdomain}.'.env('APP_TLD', 'idcready.net'),'middlew
     });
     Route::get('/disclaimer', function () {
         $extra = Lang::has(session('product.alias').'.disclaimer-extra') ? trans(session('product.alias').'.disclaimer-extra') : '';
-        return View::make('legal.disclaimer', ['extra'=> $extra ]);
+
+        return View::make('legal.disclaimer', ['extra'=> $extra]);
     });
 
     Route::get('/pdf', 'PdfController@wkhtml');
     Route::get('/scoring', 'ToolController@scoring');
-    Route::get('/session', function(){
+    Route::get('/session', function () {
         return session('questions');
     });
     Route::get('/resendeloqua', 'ToolController@resendeloqua')->middleware(['routebyurl']);
@@ -118,6 +119,7 @@ Route::group(['domain' => '{subdomain}.'.env('APP_TLD', 'idcready.net'),'middlew
         if (view()->exists('tool.'.$template.'.report.header'.$locale)) {
             return View::make('tool.'.$template.'.report.header'.$locale);
         }
+
         return View::make('tool.'.$template.'.report.header');
     })->middleware(['routebyurl']);
 
@@ -127,6 +129,7 @@ Route::group(['domain' => '{subdomain}.'.env('APP_TLD', 'idcready.net'),'middlew
         if (view()->exists('tool.'.$template.'.report.cover'.$locale)) {
             return View::make('tool.'.$template.'.report.cover'.$locale);
         }
+
         return View::make('tool.'.$template.'.report.cover');
     })->middleware(['routebyurl']);
 
@@ -134,7 +137,8 @@ Route::group(['domain' => '{subdomain}.'.env('APP_TLD', 'idcready.net'),'middlew
         $product_id = session('product.id');
         $company_alias = session('company.alias');
         $url = session('url');
-        return View::make('tool.'.$template.'.report.footer', compact(['url','product_id','company_alias']));
+
+        return View::make('tool.'.$template.'.report.footer', compact(['url', 'product_id', 'company_alias']));
     })->middleware(['routebyurl']);
 
     Route::group(['prefix' => 'quiz'], function () {
@@ -142,15 +146,15 @@ Route::group(['domain' => '{subdomain}.'.env('APP_TLD', 'idcready.net'),'middlew
         Route::post('/{section}/page{num}', 'ToolController@savePage');
 
         Route::get('/complete', 'ToolController@getComplete');
-        Route::get('/thankyou', function(){
+        Route::get('/thankyou', function () {
             $url = '';
             $vars = [
             'pagetitle' => trans(session('product.alias').'.title'),
             'title' => trans(session('product.alias').'.title'),
             'sub_title' => trans(session('product.alias').'.sub-title'),
-            'heading' => trans(session('product.alias').'.complete_thankyou', ['fname'=> 'John Doe' ]),
+            'heading' => trans(session('product.alias').'.complete_thankyou', ['fname'=> 'John Doe']),
             'body' => trans(session('product.alias').'.complete_body', ['url'=>$url, 'tool_url'=>session('url').'/'.session('localeUrl')]),
-            'tweet' => config('baseline_'.session('product.id').'.overall.tweet') ? trans(session('product.alias').'.complete_tweet', ['result'=>trans(session('product.alias').'.'.$this->howfit['overall']['rating'])]):false,
+            'tweet' => config('baseline_'.session('product.id').'.overall.tweet') ? trans(session('product.alias').'.complete_tweet', ['result'=>trans(session('product.alias').'.'.$this->howfit['overall']['rating'])]) : false,
             'class' => 'trans silverStone',
             'script' => ['
                 ga(\'send\', \'event\', \'Assessments\', \''.session('utm').'\');
@@ -164,6 +168,7 @@ Route::group(['domain' => '{subdomain}.'.env('APP_TLD', 'idcready.net'),'middlew
             ]);
             Session::remove('questions');
             Session::remove('quiz_complete');
+
             return View::make('tool.'.session('template').'.thankyou', $vars);
         });
         Route::post('/complete', 'ToolController@postComplete')->middleware(['routebyurl']);
@@ -175,9 +180,8 @@ Route::group(['domain' => '{subdomain}.'.env('APP_TLD', 'idcready.net'),'middlew
     Route::get('/complete', 'ToolController@run')->middleware(['routebyurl']);
 });
 
-
 Route::group(['prefix' => 'api'], function () {
-    
+
     //API
     Route::get('languages', function ($iviewId) {
         return App\Language::all();
@@ -194,8 +198,9 @@ Route::group(['prefix' => 'api'], function () {
         $iview = App\iview::find($iviewId);
         $urls = [];
         foreach ($iview->urls as $url) {
-            $urls[] = ['value'=>$url->id,'text'=>$url->subdomain.".".$url->domain];
+            $urls[] = ['value'=>$url->id, 'text'=>$url->subdomain.'.'.$url->domain];
         }
+
         return $urls;
     });
     Route::get('results/{section}', 'ToolController@getCalcResults');
@@ -209,6 +214,7 @@ Route::group(['prefix' => 'api'], function () {
                 $tables[] = $name;
             }
         }
+
         return $tables;
     });
 
@@ -217,8 +223,9 @@ Route::group(['prefix' => 'api'], function () {
         Config::set('database.fetch', PDO::FETCH_ASSOC);
         $allcolumns = DB::connection(Request::input('connection'))->select('DESCRIBE '.Request::input('table_name'));
         foreach ($allcolumns as $column) {
-            $columns[]=$column['Field'];
+            $columns[] = $column['Field'];
         }
+
         return $columns;
     });
 

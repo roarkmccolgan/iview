@@ -1,4 +1,5 @@
 <?php
+
 // Snow
 return [
     'leadership'=>[
@@ -44,10 +45,10 @@ return [
                                 'label'=>'La dirección redefine la estrategia constantemente para impulsar la innovación y posibilitar un cambio constante.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Visión de liderazgo para la agilidad',
@@ -81,10 +82,10 @@ return [
                                 'label'=>'La dirección redefine constantemente la asignación del presupuesto en función de los cambios en los requisitos.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Visión de liderazgo para la agilidad',
@@ -118,12 +119,12 @@ return [
                                 'label'=>'El equipo directivo identifica de forma proactiva los flujos de trabajo que requieren más agilidad y asigna presupuestos para habilitar mejores procesos.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
-        ]
+        ],
     ],
     'structural' => [
         'title' => 'Agilidad estructural',
@@ -184,10 +185,10 @@ return [
                                 'label'=>'Los equipos son creados espontáneamente por los empleados de las distintas áreas funcionales en tiempo real cuando surge la necesidad.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Agilidad estructural',
@@ -216,10 +217,10 @@ return [
                                 'label'=>'Identificamos las carencias de competencias a lo largo del año y recurrimos a recursos de forma continua y flexible.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Agilidad estructural',
@@ -253,12 +254,12 @@ return [
                                 'label'=>'La gestión del conocimiento y la colaboración son KPI formales y se extienden a socios externos.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
     ],
     'process' => [
         'title' => 'Agilidad de procesos',
@@ -319,10 +320,10 @@ return [
                                 'label'=>'Los procesos básicos están normalizados y automatizados, lo que permite a los empleados crear nuevos procesos de manera autónoma.',
                                 'value'=>7.5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Agilidad de procesos',
@@ -356,12 +357,12 @@ return [
                                 'label'=>'Los procesos empresariales están completamente digitalizados y se pueden crear o ajustar dinámicamente.',
                                 'value'=>7.5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
     ],
     'portfolio' => [
         'title' => 'Agilidad de la cartera de productos',
@@ -422,10 +423,10 @@ return [
                                 'label'=>'Los productos viables mínimos se introducen en cuestión de meses a partir de su concepción y se amplían o retiran en función de las opiniones de los clientes en un flujo constante.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Agilidad de la cartera de productos',
@@ -454,10 +455,10 @@ return [
                                 'label'=>'Muy rápido y no hay necesidad de mejorar',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Agilidad de la cartera de productos',
@@ -491,12 +492,12 @@ return [
                                 'label'=>'Integramos ideas innovadoras de una red externa en nuestras rápidas iteraciones de productos para seguir un modelo de tipo «fracaso rápido».',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
     ],
     'technology' => [
         'title' => 'Arquitectura tecnológica',
@@ -557,10 +558,10 @@ return [
                                 'label'=>'Una plataforma digital integrada con sistemas inteligentes en su núcleo.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Arquitectura tecnológica',
@@ -594,10 +595,10 @@ return [
                                 'label'=>'Vamos muy por delante de nuestros homólogos.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Arquitectura tecnológica',
@@ -631,11 +632,11 @@ return [
                                 'label'=>'Uso de tecnologías basadas en la nube para promover la automatización de procesos integrados y flujos de trabajo de procesos personalizados, combinados con análisis predictivos y procesos sistémicos ágiles.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
-    ]
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
+    ],
 ];

@@ -22,7 +22,7 @@ class AddExtraFieldsToVmwareSeeder extends Seeder
             'required' => 0,
             'order' => 1,
             'created_at' => Carbon\Carbon::now(),
-            'updated_at' => Carbon\Carbon::now()
+            'updated_at' => Carbon\Carbon::now(),
         ]);
     }
 }

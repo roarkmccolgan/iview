@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Auth;
 class RoleMiddleware
 {
     private $loginPage = '/login';
+
     /**
      * Handle an incoming request.
      *
@@ -21,7 +22,7 @@ class RoleMiddleware
             return redirect($loginPage);
         }
         $abort = true;
-        
+
         foreach ($roles as $role) {
             if ($request->user()->hasRole($role)) {
                 $abort = false;

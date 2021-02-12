@@ -1,9 +1,10 @@
 <?php
+
 //NTT Data
 return [
     'overall' => [
         'baseline' => 27.60,
-        
+
         'complete' => [
             'graph' => [
                 'label' => 'Stage',
@@ -11,10 +12,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'default_fields' => [
             'fname' => [
@@ -319,7 +320,7 @@ return [
                     'banking' => 'Banking',
                     'insurance' => 'Insurance',
                     'capital-markets' => 'Capital markets',
-                    'other-fsi' => 'Other FSI'
+                    'other-fsi' => 'Other FSI',
                 ],
                 'error' => 'errorIndustry',
                 'required' => true,
@@ -338,7 +339,7 @@ return [
                 'error' => 'errorCompanySize',
                 'required' => true,
                 'col' => 12,
-            ]
+            ],
         ],
         'block-vertical-banking-1' => [124.255, 36.211, 11.131, 26.965],
         'block-vertical-insurance-1' => [135.717, 44.443, 11.131, 18.733],
@@ -388,140 +389,138 @@ return [
         'block-country-jp-3' => [32.076, 10.76, 11.131, 15.875],
         'block-country-latam-3' => [43.537, 10.76, 11.131, 12.763],
 
-
         'baseline-overall' => [
             'stage1' => 35,
             'stage2' => 46,
-            'stage3' => 19
+            'stage3' => 19,
         ],
         'baseline-country-us' => [
             'stage1' => 37,
             'stage2' => 48,
-            'stage3' => 15
+            'stage3' => 15,
         ],
         'baseline-country-uk' => [
             'stage1' => 33,
             'stage2' => 51,
-            'stage3' => 16
+            'stage3' => 16,
         ],
         'baseline-country-de' => [
             'stage1' => 35,
             'stage2' => 47,
-            'stage3' => 18
+            'stage3' => 18,
         ],
         'baseline-country-it' => [
             'stage1' => 31,
             'stage2' => 47,
-            'stage3' => 22
+            'stage3' => 22,
         ],
         'baseline-country-sp' => [
             'stage1' => 43,
             'stage2' => 45,
-            'stage3' => 12
+            'stage3' => 12,
         ],
         'baseline-country-jp' => [
             'stage1' => 35,
             'stage2' => 40,
-            'stage3' => 25
+            'stage3' => 25,
         ],
         'baseline-country-mx' => [
             'stage1' => 45,
             'stage2' => 42,
-            'stage3' => 14
+            'stage3' => 14,
         ],
         'baseline-country-ar' => [
             'stage1' => 17,
             'stage2' => 52,
-            'stage3' => 31
+            'stage3' => 31,
         ],
         'baseline-country-br' => [
             'stage1' => 24,
             'stage2' => 52,
-            'stage3' => 25
+            'stage3' => 25,
         ],
         'baseline-country-cl' => [
             'stage1' => 69,
             'stage2' => 20,
-            'stage3' => 11
+            'stage3' => 11,
         ],
         'baseline-country-co' => [
             'stage1' => 63,
             'stage2' => 34,
-            'stage3' => 3
+            'stage3' => 3,
         ],
-        
-        'baseline-100-499' => [
-            'stage1' => 64,
-            'stage2' => 34,
-            'stage3' => 2
-        ],
-        'baseline-500-999' => [
-            'stage1' => 37,
-            'stage2' => 55,
-            'stage3' => 9
-        ],
-        'baseline-1000-4999' => [
-            'stage1' => 21,
-            'stage2' => 46,
-            'stage3' => 33
-        ],
-        'baseline-5000-9999' => [
-            'stage1' => 5,
-            'stage2' => 33,
-            'stage3' => 62
-        ],
-        'baseline-10000+' => [
-            'stage1' => 25,
-            'stage2' => 13,
-            'stage3' => 63
-        ],
-
 
         'baseline-100-499' => [
             'stage1' => 64,
             'stage2' => 34,
-            'stage3' => 2
+            'stage3' => 2,
         ],
         'baseline-500-999' => [
             'stage1' => 37,
             'stage2' => 55,
-            'stage3' => 9
+            'stage3' => 9,
         ],
         'baseline-1000-4999' => [
             'stage1' => 21,
             'stage2' => 46,
-            'stage3' => 33
+            'stage3' => 33,
         ],
         'baseline-5000-9999' => [
             'stage1' => 5,
             'stage2' => 33,
-            'stage3' => 62
+            'stage3' => 62,
         ],
         'baseline-10000+' => [
             'stage1' => 25,
             'stage2' => 13,
-            'stage3' => 63
+            'stage3' => 63,
+        ],
+
+        'baseline-100-499' => [
+            'stage1' => 64,
+            'stage2' => 34,
+            'stage3' => 2,
+        ],
+        'baseline-500-999' => [
+            'stage1' => 37,
+            'stage2' => 55,
+            'stage3' => 9,
+        ],
+        'baseline-1000-4999' => [
+            'stage1' => 21,
+            'stage2' => 46,
+            'stage3' => 33,
+        ],
+        'baseline-5000-9999' => [
+            'stage1' => 5,
+            'stage2' => 33,
+            'stage3' => 62,
+        ],
+        'baseline-10000+' => [
+            'stage1' => 25,
+            'stage2' => 13,
+            'stage3' => 63,
         ],
 
         'baseline-banking' => [
             'stage1' => 49,
             'stage2' => 42,
-            'stage3' => 8
+            'stage3' => 8,
         ],
         'baseline-insurance' => [
             'stage1' => 32,
             'stage2' => 53,
-            'stage3' => 16
+            'stage3' => 16,
         ],
         'baseline-capital-markets' => [
             'stage1' => 32,
             'stage2' => 43,
-            'stage3' => 25
+            'stage3' => 25,
         ],
         'baseline-other-fsi' => [
             'stage1' => 20,
             'stage2' => 45,
-            'stage3' => 35
+            'stage3' => 35,
         ],
 
         'report-settings' => [
@@ -533,7 +532,7 @@ return [
             'basecolor'=>'#004386',
             'pageimage'=>false,
             'margin-top'=>20,
-            'header-spacing'=>6
+            'header-spacing'=>6,
         ],
         'types' => [
             'stage1' => [
@@ -561,7 +560,7 @@ return [
         'tweet' => false,
         'include_answers_in_download_report' => true,
         'notifications' => [
-            'inline_report' => false
+            'inline_report' => false,
         ],
         'field_validation' => [
             'fname'=>'required|min:2|max:255',
@@ -571,8 +570,8 @@ return [
             'extra.employees'=>'required',
             'extra.industry'=>'required',
             'country'=>'required',
-            'terms'=>'required'
-        ]
+            'terms'=>'required',
+        ],
     ],
     'dx-adoption' => [
         'baseline' => 8.90,
@@ -584,10 +583,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -606,23 +605,23 @@ return [
                 'high' =>12.4,
                 'total' => 2,
                 'benchmark' => 20,
-                'copy' => 'nttdatadx.sales-stage-1-txt'
+                'copy' => 'nttdatadx.sales-stage-1-txt',
             ],
             'stage2' => [
                 'low' => 12.5,
                 'high' => 14.4,
                 'total' => 3,
                 'benchmark' => 34,
-                'copy' => 'nttdatadx.sales-stage-2-txt'
+                'copy' => 'nttdatadx.sales-stage-2-txt',
             ],
             'stage3' => [
                 'low' => 14.5,
                 'high' => 25,
                 'total' => 5,
                 'benchmark' => 28,
-                'copy' => 'nttdatadx.sales-stage-3-txt'
+                'copy' => 'nttdatadx.sales-stage-3-txt',
             ],
-        ]
+        ],
     ],
     'success-in-dx' => [
         'baseline' => 8.90,
@@ -634,10 +633,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -656,23 +655,23 @@ return [
                 'high' => 9.7,
                 'total' => 2,
                 'benchmark' => 20,
-                'copy' => 'nttdatadx.marketing-stage-1-txt'
+                'copy' => 'nttdatadx.marketing-stage-1-txt',
             ],
             'stage2' => [
                 'low' => 9.8,
                 'high' => 11.8,
                 'total' => 3,
                 'benchmark' => 34,
-                'copy' => 'nttdatadx.marketing-stage-2-txt'
+                'copy' => 'nttdatadx.marketing-stage-2-txt',
             ],
             'stage3' => [
                 'low' => 11.9,
                 'high' => 18,
                 'total' => 5,
                 'benchmark' => 28,
-                'copy' => 'nttdatadx.marketing-stage-3-txt'
+                'copy' => 'nttdatadx.marketing-stage-3-txt',
             ],
-        ]
+        ],
     ],
     'connected-financial-services' => [
         'baseline' => 8.90,
@@ -684,10 +683,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -706,22 +705,22 @@ return [
                 'high' => 5.3,
                 'total' => 2,
                 'benchmark' => 20,
-                'copy' => 'nttdatadx.services-stage-1-txt'
+                'copy' => 'nttdatadx.services-stage-1-txt',
             ],
             'stage2' => [
                 'low' => 5.4,
                 'high' => 6.4,
                 'total' => 3,
                 'benchmark' => 34,
-                'copy' => 'nttdatadx.services-stage-2-txt'
+                'copy' => 'nttdatadx.services-stage-2-txt',
             ],
             'stage3' => [
                 'low' => 6.5,
                 'high' => 12,
                 'total' => 5,
                 'benchmark' => 28,
-                'copy' => 'nttdatadx.services-stage-3-txt'
+                'copy' => 'nttdatadx.services-stage-3-txt',
             ],
-        ]
-    ]
+        ],
+    ],
 ];

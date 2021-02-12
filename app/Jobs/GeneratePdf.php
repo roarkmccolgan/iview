@@ -10,7 +10,6 @@ use Illuminate\Queue\SerializesModels;
 
 class GeneratePdf implements ShouldQueue
 {
-
     use InteractsWithQueue, Queueable, SerializesModels;
 
     public $assessment;
@@ -35,7 +34,7 @@ class GeneratePdf implements ShouldQueue
     {
         $body = $pdfMokey->genrateBody($assessment);
         $templateId = config('baseline_'.$this->assessment->tool_id.'.overall.pdf_monkey_template');
-        
+
         $response = $pdfMokey->generateDocument($body, $templateId);
         $this->assessment->pdf_key = $response['document']['id'];
         $this->assessment->save();

@@ -1,9 +1,10 @@
 <?php
+
 //ITALY
 return [
     'overall' => [
         'baseline' => 27.60,
-        
+
         'complete' => [
             'graph' => [
                 'label' => 'Stage',
@@ -11,10 +12,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'default_fields' => [
             'fname' => [
@@ -319,7 +320,7 @@ return [
                     'banking' => 'Banking',
                     'insurance' => 'Insurance',
                     'capital-markets' => 'Capital markets',
-                    'other-fsi' => 'Other FSI'
+                    'other-fsi' => 'Other FSI',
                 ],
                 'error' => 'errorIndustry',
                 'required' => true,
@@ -338,7 +339,7 @@ return [
                 'error' => 'errorCompanySize',
                 'required' => true,
                 'col' => 12,
-            ]
+            ],
         ],
         'block-vertical-banking-1' => [124.255, 36.211, 11.131, 26.965],
         'block-vertical-insurance-1' => [135.717, 44.443, 11.131, 18.733],
@@ -397,7 +398,7 @@ return [
             'basecolor'=>'#004386',
             'pageimage'=>false,
             'margin-top'=>20,
-            'header-spacing'=>6
+            'header-spacing'=>6,
         ],
         'types' => [
             'stage1' => [
@@ -425,7 +426,7 @@ return [
         'tweet' => false,
         'include_answers_in_download_report' => false,
         'notifications' => [
-            'inline_report' => false
+            'inline_report' => false,
         ],
         'field_validation' => [
             'fname'=>'required|min:2|max:255',
@@ -433,8 +434,8 @@ return [
             'email'=>'required|email',
             'title'=>'required|min:3|max:255',
             'country'=>'required',
-            'terms'=>'required'
-        ]
+            'terms'=>'required',
+        ],
     ],
     'dx-adoption' => [
         'baseline' => 8.90,
@@ -446,10 +447,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -468,23 +469,23 @@ return [
                 'high' =>12.4,
                 'total' => 2,
                 'benchmark' => 20,
-                'copy' => 'nttdatadx.sales-stage-1-txt'
+                'copy' => 'nttdatadx.sales-stage-1-txt',
             ],
             'stage2' => [
                 'low' => 12.5,
                 'high' => 14.4,
                 'total' => 3,
                 'benchmark' => 34,
-                'copy' => 'nttdatadx.sales-stage-2-txt'
+                'copy' => 'nttdatadx.sales-stage-2-txt',
             ],
             'stage3' => [
                 'low' => 14.5,
                 'high' => 25,
                 'total' => 5,
                 'benchmark' => 28,
-                'copy' => 'nttdatadx.sales-stage-3-txt'
+                'copy' => 'nttdatadx.sales-stage-3-txt',
             ],
-        ]
+        ],
     ],
     'success-in-dx' => [
         'baseline' => 8.90,
@@ -496,10 +497,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -518,23 +519,23 @@ return [
                 'high' => 9.7,
                 'total' => 2,
                 'benchmark' => 20,
-                'copy' => 'nttdatadx.marketing-stage-1-txt'
+                'copy' => 'nttdatadx.marketing-stage-1-txt',
             ],
             'stage2' => [
                 'low' => 9.8,
                 'high' => 11.8,
                 'total' => 3,
                 'benchmark' => 34,
-                'copy' => 'nttdatadx.marketing-stage-2-txt'
+                'copy' => 'nttdatadx.marketing-stage-2-txt',
             ],
             'stage3' => [
                 'low' => 11.9,
                 'high' => 18,
                 'total' => 5,
                 'benchmark' => 28,
-                'copy' => 'nttdatadx.marketing-stage-3-txt'
+                'copy' => 'nttdatadx.marketing-stage-3-txt',
             ],
-        ]
+        ],
     ],
     'connected-financial-services' => [
         'baseline' => 8.90,
@@ -546,10 +547,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -568,22 +569,22 @@ return [
                 'high' => 5.3,
                 'total' => 2,
                 'benchmark' => 20,
-                'copy' => 'nttdatadx.services-stage-1-txt'
+                'copy' => 'nttdatadx.services-stage-1-txt',
             ],
             'stage2' => [
                 'low' => 5.4,
                 'high' => 6.4,
                 'total' => 3,
                 'benchmark' => 34,
-                'copy' => 'nttdatadx.services-stage-2-txt'
+                'copy' => 'nttdatadx.services-stage-2-txt',
             ],
             'stage3' => [
                 'low' => 6.5,
                 'high' => 12,
                 'total' => 5,
                 'benchmark' => 28,
-                'copy' => 'nttdatadx.services-stage-3-txt'
+                'copy' => 'nttdatadx.services-stage-3-txt',
             ],
-        ]
-    ]
+        ],
+    ],
 ];

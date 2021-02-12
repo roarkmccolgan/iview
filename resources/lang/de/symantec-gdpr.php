@@ -1,6 +1,7 @@
 <?php
+
 //Symantec
-return array(
+return [
     'title' => 'IDCs Bewertungstool zum Stand der Vorbereitung auf die EU-DSGVO (EU-Datenschutzgrundverordnung)',
     'sub-title' => 'Stand der Vorbereitungen auf EU-DSGVO in Ihrem Unternehmen',
     'stage1' => 'Stadium 1- Initiierung',
@@ -15,7 +16,7 @@ return array(
         <a class="btn btn--primary" target="_blank" href="https://www.symantec.com/de/de/campaigns/data-privacy">
             Für mehr Informationen hier klicken
         </a>',
-    'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @symantec. Interested? ',// http://bit.ly/2gslXEh
+    'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @symantec. Interested? ', // http://bit.ly/2gslXEh
     'email'=>[
         'subject' => 'IDCs Bewertungstool zum Stand der Vorbereitung auf die EU-DSGVO',
         'hi' => 'Hi :Fname',
@@ -23,7 +24,7 @@ return array(
         'link' => 'Report herunterladen',
         'extra' => 'Und im Anschluss an die Lektüre gesuchen Sie gern <a href="https://www.symantec.com/de/de/campaigns/data-privacy" style="color:#FDBB30">Symantec!</a>',
         'regards' => 'Mit freundlichen Grüßen',
-        'team' => 'Das IDC-Team'
+        'team' => 'Das IDC-Team',
     ],
     'introduction' => '
         <h2>Ihr Gesamt-Bewertungsresultat zur EU-DSGVO-Vorbereitung</h2>
@@ -108,7 +109,6 @@ return array(
             Der Stand Ihrer Vorbereitungen wurde erheblich schlechter bedwertet, weil Ihnen eine funktionsübergreifende Compliance-Task-Force oder ein Steuerungsgremium fehlt, das die unterschiedlichen Interessenträger in Ihrem Unternehmen einschließt. Das Engagement aller relevanten Interessenträger ist ein kritischer Erfolgsfaktor für jedes Programm zur Umsetzung der EU-DSGVO. Das Fehlen einer solchen koordinierten Herangehensweise begrenzt substantiell den letzlichen Erfolg aller Compliance-Aktivitäten. Denken Sie darüber nach, diese Situation so schnell wie möglich zu ändern. Eine Silo-Herangehensweise an die EU-DSGVO wird sehr wahrscheinlich nicht alle grundlegenden Prinzipien der neuen Gesetzgebung erfüllen können.
         </p>
     ',
-
 
     'dataawarenessintro'=>'
         <h2>Datenbewusstsein (Data Awareness)</h2>
@@ -233,7 +233,7 @@ return array(
             Ihre Antworten zeigen, dass Sie durch die komplexeren Anforderungen der EU-DSGVO herausgefordert werden. Das reflektiert wahrscheinlich den aktuellen Stand Ihrer Vorbereitungen. Sie fokussieren sich in Zukunft auf Themen wie die Reaktionsplanung auf Sicherheitszwischenfälle und die Ausdehnung der Datenmanagement- und Datensteuerungsprozesse auf die Cloud und mobile Umgebungen. Stellen Sie jedoch sicher, dass Sie einige grundlegende Themen wie das Einwilligungsmanagement, die Anonymiwierung oder Pseudonymisierung der Daten und die Weiterbildung der Mitarbeiter zu den neuen Risiken und Pflichten tatsächlich abgeschlossen haben.
         </p>
     ',
-    
+
     'risk_q112'=>'
         <p>
             Ihre Bewertung legt nahe, dass Sie zu den Cloud-Skeptikern gehören. Das ist eine Position der Vorsicht und spiegelt die geringe Risikobereitschaft Ihres Unternehmens wieder. Allerdings werden Sie so nicht von der Flexibilität und Agilität der Cloud profitieren. Außerdem ist es sehr gut möglich, die Regeln der EU-DSGVO einzuhalten und gleichzeitig Cloud-Services zu nutzen. Cloud-Serviceprovider kennen ihre Pflichten und viele bieten EU-DSGVO-konforme Vertragsgestaltungen an. Deshalb kann es Ihre Konformitätsbemühungen eher befördern als behindern, wenn Sie Daten in die Cloud verschieben. Sie sollten sich darüber informieren.
@@ -249,7 +249,6 @@ return array(
             Ihre Antwort zeigt, dass Sie hinsichtlich Cloud-Nutzung und Datenschutz einen hohen Reifegrad erreicht haben. Dazu kann die Anpassung bestehener Cloud-Services gehören, um sicherzustellen, dass sie konform zu den neuen Regeln sind. Oder dass Sie bereits sichergestellt haben, dass Ihre Form der Cloud-Nutzung rechtskonform ist und nicht weiter verändert werden muss. Wenn das stimmt, dann ist das großartig: Sie sind den meisten weit voraus. Aber seien Sie gewarnt: Die Konsequenzen einer falschen Cloud-Nutzung, beispielsweise durch die Annahme, dass der Cloud-Provider die volle rechtliche Verantwortung übernehmen kann (das kann er nicht), können schwerwiegend sein. Sorgen Sie dafür, dass Ihre Cloud-Verträge durchgesehen und gründlich auf EU-DSGVO-Konformität geprüft werden.
         </p>
     ',
-
 
     'riskstage1or2_q10lt15'=>'
         <p>
@@ -314,16 +313,16 @@ return array(
     ',
 
     /*'introduction-image' => 'report1.jpg',*/
-    'overall' => array(
+    'overall' => [
         'title'=>'Gemäß Ihren Antworten bei der vorangegangenen Sicherheitsbewertung befinden Sie sich in',
         'hidetitle'=>'true',
         'image'=>'',
         'stage1'=>'',
         'stage2'=>'',
         'stage3'=>'',
-        'stage4'=>''
-    ),
-    'security-strategy' => array(
+        'stage4'=>'',
+    ],
+    'security-strategy' => [
         'title'=>'Security Strategy',
         'image'=>'security-strategy.jpg',
         'pb'=>'pb',
@@ -331,9 +330,9 @@ return array(
         'stage2'=>'',
         'stage3'=>'',
         'stage4'=>'',
-        'stage5'=>''
-    ),
-    'incident-detection' => array(
+        'stage5'=>'',
+    ],
+    'incident-detection' => [
         'title'=> 'Data rights and standards',
         'image'=>'incident-detection.jpg',
         'pb'=>'pb',
@@ -341,9 +340,9 @@ return array(
         'stage2'=>'',
         'stage3'=>'',
         'stage4'=>'',
-        'stage5'=>''
-    ),
-    'incident-response' => array(
+        'stage5'=>'',
+    ],
+    'incident-response' => [
         'title'=> 'incident-response',
         'image'=>'incident-response.jpg',
         'pb'=>'pb',
@@ -351,6 +350,6 @@ return array(
         'stage2'=>'',
         'stage3'=>'',
         'stage4'=>'',
-        'stage5'=>''
-    )
-);
+        'stage5'=>'',
+    ],
+];

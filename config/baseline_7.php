@@ -1,4 +1,5 @@
 <?php
+
 //Symantec
 return [
     'overall' => [
@@ -14,10 +15,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -29,7 +30,7 @@ return [
             'basecolor'=>'#d3d8e0',
             'pageimage'=>false,
             'margin-top'=>48,
-            'header-spacing'=>0
+            'header-spacing'=>0,
         ],
         'types' => [
             'stage1' => [
@@ -66,7 +67,7 @@ return [
                 'copy' => 'general.7besttxt',
                 'tweet' => false,
                 'benchmark' => 5,
-            ]
+            ],
         ],
         'tweet' => false,
         'include_answers_in_download_report' => true,
@@ -95,10 +96,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -119,36 +120,36 @@ return [
                 'high' => 47,
                 'total' => 2,
                 'benchmark' => 20,
-                'copy' => 'general.6integration-poor-txt'
+                'copy' => 'general.6integration-poor-txt',
             ],
             'stage2' => [
                 'low' => 48,
                 'high' => 67,
                 'total' => 3,
                 'benchmark' => 34,
-                'copy' => 'general.6integration-standard-txt'
+                'copy' => 'general.6integration-standard-txt',
             ],
             'stage3' => [
                 'low' => 1000,
                 'high' => 1001,
                 'total' => 5,
                 'benchmark' => 28,
-                'copy' => 'general.6integration-good-txt'
+                'copy' => 'general.6integration-good-txt',
             ],
             'stage4' => [
                 'low' => 68,
                 'high' => 84,
                 'total' => 5,
                 'benchmark' => 12,
-                'copy' => 'general.6integration-aspirational-txt'
+                'copy' => 'general.6integration-aspirational-txt',
             ],
             'stage5' => [
                 'low' => 1002,
                 'high' => 1003,
                 'total' => 5,
                 'benchmark' => 5,
-                'copy' => 'general.6integration-best-txt'
-            ]
-        ]
-    ]
+                'copy' => 'general.6integration-best-txt',
+            ],
+        ],
+    ],
 ];

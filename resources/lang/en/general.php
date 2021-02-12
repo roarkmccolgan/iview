@@ -1,6 +1,6 @@
 <?php
 
-return array(
+return [
 
     //Sage Cloud id 1
     '1elqFormName'=>'',
@@ -12,20 +12,20 @@ return array(
     '1landing'=>'<h2>Advancing your Maturity</h2><p>IDC\'s Cloud Benchmark for Development enables you to position your business in relation to over 500 similar organizations across the U.S. and Europe, and provides you with some essential guidance in the development of your cloud business.</p>',
     '1startbut'=>'Start Here',
     'timetoact'=>'Stage 1: Time to Act', //reactive
-    'timetoacttxt'=>"Organizations at this stage in their cloud maturity process tend to be providing cloud at the request of their customers, or as a vendor reseller. As a result, fees are derived from referrals or from resale, and organizations are generally focused on project revenues, rather than longer-term recurring revenue streams. Organizations at this stage in their cloud strategy are yet to embrace a cloud future and as a result may struggle to generate profits in this area. There is no defined vision for cloud, but there is time to make this transition if key decision makers act now.",
+    'timetoacttxt'=>'Organizations at this stage in their cloud maturity process tend to be providing cloud at the request of their customers, or as a vendor reseller. As a result, fees are derived from referrals or from resale, and organizations are generally focused on project revenues, rather than longer-term recurring revenue streams. Organizations at this stage in their cloud strategy are yet to embrace a cloud future and as a result may struggle to generate profits in this area. There is no defined vision for cloud, but there is time to make this transition if key decision makers act now.',
     'timetoacttweet' => "I took the @FireEye Agil-IT-y Assessment and it's shown me where I can improve. Interested? http://bit.ly/1Y6JAqa",
     'timetocommite'=>'Stage 2: Time to Commit',
-    'timetocommitetxt'=>"Organizations at this stage in their cloud maturity are beginning to develop and deliver cloud-specific business models. Typically, this is not granular enough to account for different product lines or individual P&L, and is often unmanaged and untargeted. With measurement limited, there is little in the way of automation, whether it is process, methodology, or sale and delivery. While businesses at this stage of maturity are beginning to build cloud sales functions and cloud-based marketing, revenue still comes from resale of on-premise solutions. Despite this, recurring revenue growth is outpacing traditional business.",
-    'timetocommitetweet' => "I took the @FireEye Agil-IT-y Assessment and my company is on the right track. See how your business does... http://bit.ly/1Y6JAqa",
+    'timetocommitetxt'=>'Organizations at this stage in their cloud maturity are beginning to develop and deliver cloud-specific business models. Typically, this is not granular enough to account for different product lines or individual P&L, and is often unmanaged and untargeted. With measurement limited, there is little in the way of automation, whether it is process, methodology, or sale and delivery. While businesses at this stage of maturity are beginning to build cloud sales functions and cloud-based marketing, revenue still comes from resale of on-premise solutions. Despite this, recurring revenue growth is outpacing traditional business.',
+    'timetocommitetweet' => 'I took the @FireEye Agil-IT-y Assessment and my company is on the right track. See how your business does... http://bit.ly/1Y6JAqa',
     'timetoinvest'=>'Stage 3: Time to Invest',
-    'timetoinvesttxt'=>"Organizations at this stage in their cloud maturity have a solid cloud business plan in place and are developing product-specific strategies, including professional services. Investments in cloud have been made and, more critically, investments are planned for the next two to three years. Organizations are beginning to monitor and target cloud-based revenues separately from license and other revenues. Many are also creating reusable processes and beginning to automate key functions. Marketing efforts are showing signs of sophistication, yet many organizations still need to migrate away from traditional marketing approaches. Organizations at this stage are likely to have established a well-structured technology roadmap and have started investing in cloud infrastructure, tools, and management technology. ",
-    'timetoinvesttweet' => "I took the @FireEye Agil-IT-y Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    'timetoinvesttxt'=>'Organizations at this stage in their cloud maturity have a solid cloud business plan in place and are developing product-specific strategies, including professional services. Investments in cloud have been made and, more critically, investments are planned for the next two to three years. Organizations are beginning to monitor and target cloud-based revenues separately from license and other revenues. Many are also creating reusable processes and beginning to automate key functions. Marketing efforts are showing signs of sophistication, yet many organizations still need to migrate away from traditional marketing approaches. Organizations at this stage are likely to have established a well-structured technology roadmap and have started investing in cloud infrastructure, tools, and management technology. ',
+    'timetoinvesttweet' => 'I took the @FireEye Agil-IT-y Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa',
     'timetorefine'=>'Stage 4: Time to Refine',
-    'timetorefinetxt'=>"Organizations at this stage in their cloud maturity have developed in-depth planning across different cloud products, solutions, and architectures. This includes go-to-market strategies and sophisticated sales enablement. Many have established a portfolio of cloud offerings and related services, mainly through dedicated cloud sales, implementation, and support functions. Typically, organizations at this stage of their maturity can execute across multiple cloud architectures and have identified areas of specialism. This also enables them to measure and assess recurring revenues, and most have established tools and methodologies to drive efficiencies in implementation. This ensures renewals and the optimization of solutions.",
-    'timetorefinetweet' => "I took the @FireEye Agil-IT-y Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    'timetorefinetxt'=>'Organizations at this stage in their cloud maturity have developed in-depth planning across different cloud products, solutions, and architectures. This includes go-to-market strategies and sophisticated sales enablement. Many have established a portfolio of cloud offerings and related services, mainly through dedicated cloud sales, implementation, and support functions. Typically, organizations at this stage of their maturity can execute across multiple cloud architectures and have identified areas of specialism. This also enables them to measure and assess recurring revenues, and most have established tools and methodologies to drive efficiencies in implementation. This ensures renewals and the optimization of solutions.',
+    'timetorefinetweet' => 'I took the @FireEye Agil-IT-y Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa',
     'timetoaccelerate'=>'Stage 5: Time to Accelerate',
-    'timetoacceleratetxt'=>"For organizations at this stage in their maturity, cloud defines the investment and decision making in their future business direction. They are also fully committed to a recurring revenue business model. All aspects of the business are focused on a broad set of KPIs, from customer adoption and growth targets, to satisfaction levels and renewal rates. All systems and processes are designed to optimize cloud profitability and many have fully automated cloud processes to deliver economies of scale. Critically, there is an emphasis on selling solutions, as well as developing and maximizing internal IP.",
-    'timetoacceleratetweet' => "I took the @FireEye Agil-IT-y Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    'timetoacceleratetxt'=>'For organizations at this stage in their maturity, cloud defines the investment and decision making in their future business direction. They are also fully committed to a recurring revenue business model. All aspects of the business are focused on a broad set of KPIs, from customer adoption and growth targets, to satisfaction levels and renewal rates. All systems and processes are designed to optimize cloud profitability and many have fully automated cloud processes to deliver economies of scale. Critically, there is an emphasis on selling solutions, as well as developing and maximizing internal IP.',
+    'timetoacceleratetweet' => 'I took the @FireEye Agil-IT-y Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa',
     '1send'=>'We can send you the full results directly to your mailbox',
     '1fullreport'=>'For the full report with essential guidance in the development of your cloud business, just fill in your details.',
     '1provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
@@ -52,20 +52,20 @@ Complete the IDC Cyber Risk Assessment Tool to find out more about how ready you
     '2startbut'=>'Get Started',
     '2changelang'=>'change language',
     'adhoc'=>'Ad-Hoc', //reactive
-    'adhoctxt'=>"Organizations at this stage in their cloud maturity process tend to be providing cloud at the request of their customers, or as a vendor reseller. As a result, fees are derived from referrals or from resale, and organizations are generally focused on project revenues, rather than longer-term recurring revenue streams. Organizations at this stage in their cloud strategy are yet to embrace a cloud future and as a result may struggle to generate profits in this area. There is no defined vision for cloud, but there is time to make this transition if key decision makers act now.",
+    'adhoctxt'=>'Organizations at this stage in their cloud maturity process tend to be providing cloud at the request of their customers, or as a vendor reseller. As a result, fees are derived from referrals or from resale, and organizations are generally focused on project revenues, rather than longer-term recurring revenue streams. Organizations at this stage in their cloud strategy are yet to embrace a cloud future and as a result may struggle to generate profits in this area. There is no defined vision for cloud, but there is time to make this transition if key decision makers act now.',
     'adhoctweet' => "I took the @FireEye Agil-IT-y Assessment and it's shown me where I can improve. Interested? http://bit.ly/1Y6JAqa",
     'opportunistic'=>'Opportunistic',
-    'opportunistictxt'=>"Organizations at this stage in their cloud maturity are beginning to develop and deliver cloud-specific business models. Typically, this is not granular enough to account for different product lines or individual P&L, and is often unmanaged and untargeted. With measurement limited, there is little in the way of automation, whether it is process, methodology, or sale and delivery. While businesses at this stage of maturity are beginning to build cloud sales functions and cloud-based marketing, revenue still comes from resale of on-premise solutions. Despite this, recurring revenue growth is outpacing traditional business.",
-    'opportunistictweet' => "I took the @FireEye Agil-IT-y Assessment and my company is on the right track. See how your business does... http://bit.ly/1Y6JAqa",
+    'opportunistictxt'=>'Organizations at this stage in their cloud maturity are beginning to develop and deliver cloud-specific business models. Typically, this is not granular enough to account for different product lines or individual P&L, and is often unmanaged and untargeted. With measurement limited, there is little in the way of automation, whether it is process, methodology, or sale and delivery. While businesses at this stage of maturity are beginning to build cloud sales functions and cloud-based marketing, revenue still comes from resale of on-premise solutions. Despite this, recurring revenue growth is outpacing traditional business.',
+    'opportunistictweet' => 'I took the @FireEye Agil-IT-y Assessment and my company is on the right track. See how your business does... http://bit.ly/1Y6JAqa',
     'repeatable'=>'Repeatable',
-    'repeatabletxt'=>"Organizations at this stage in their cloud maturity have a solid cloud business plan in place and are developing product-specific strategies, including professional services. Investments in cloud have been made and, more critically, investments are planned for the next two to three years. Organizations are beginning to monitor and target cloud-based revenues separately from license and other revenues. Many are also creating reusable processes and beginning to automate key functions. Marketing efforts are showing signs of sophistication, yet many organizations still need to migrate away from traditional marketing approaches. Organizations at this stage are likely to have established a well-structured technology roadmap and have started investing in cloud infrastructure, tools, and management technology. ",
-    'repeatabletweet' => "I took the @FireEye Agil-IT-y Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    'repeatabletxt'=>'Organizations at this stage in their cloud maturity have a solid cloud business plan in place and are developing product-specific strategies, including professional services. Investments in cloud have been made and, more critically, investments are planned for the next two to three years. Organizations are beginning to monitor and target cloud-based revenues separately from license and other revenues. Many are also creating reusable processes and beginning to automate key functions. Marketing efforts are showing signs of sophistication, yet many organizations still need to migrate away from traditional marketing approaches. Organizations at this stage are likely to have established a well-structured technology roadmap and have started investing in cloud infrastructure, tools, and management technology. ',
+    'repeatabletweet' => 'I took the @FireEye Agil-IT-y Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa',
     'managed'=>'Managed',
-    'managedtxt'=>"Organizations at this stage in their cloud maturity have developed in-depth planning across different cloud products, solutions, and architectures. This includes go-to-market strategies and sophisticated sales enablement. Many have established a portfolio of cloud offerings and related services, mainly through dedicated cloud sales, implementation, and support functions. Typically, organizations at this stage of their maturity can execute across multiple cloud architectures and have identified areas of specialism. This also enables them to measure and assess recurring revenues, and most have established tools and methodologies to drive efficiencies in implementation. This ensures renewals and the optimization of solutions.",
-    'managedtweet' => "I took the @FireEye Agil-IT-y Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    'managedtxt'=>'Organizations at this stage in their cloud maturity have developed in-depth planning across different cloud products, solutions, and architectures. This includes go-to-market strategies and sophisticated sales enablement. Many have established a portfolio of cloud offerings and related services, mainly through dedicated cloud sales, implementation, and support functions. Typically, organizations at this stage of their maturity can execute across multiple cloud architectures and have identified areas of specialism. This also enables them to measure and assess recurring revenues, and most have established tools and methodologies to drive efficiencies in implementation. This ensures renewals and the optimization of solutions.',
+    'managedtweet' => 'I took the @FireEye Agil-IT-y Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa',
     'optimised'=>'Optimised',
-    'optimisedtxt'=>"For organizations at this stage in their maturity, cloud defines the investment and decision making in their future business direction. They are also fully committed to a recurring revenue business model. All aspects of the business are focused on a broad set of KPIs, from customer adoption and growth targets, to satisfaction levels and renewal rates. All systems and processes are designed to optimize cloud profitability and many have fully automated cloud processes to deliver economies of scale. Critically, there is an emphasis on selling solutions, as well as developing and maximizing internal IP.",
-    'optimisedtweet' => "I took the @FireEye Agil-IT-y Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    'optimisedtxt'=>'For organizations at this stage in their maturity, cloud defines the investment and decision making in their future business direction. They are also fully committed to a recurring revenue business model. All aspects of the business are focused on a broad set of KPIs, from customer adoption and growth targets, to satisfaction levels and renewal rates. All systems and processes are designed to optimize cloud profitability and many have fully automated cloud processes to deliver economies of scale. Critically, there is an emphasis on selling solutions, as well as developing and maximizing internal IP.',
+    'optimisedtweet' => 'I took the @FireEye Agil-IT-y Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa',
     '2send'=>'We can send you the full results directly to your mailbox',
     '2fullreport'=>'Would you like the full report that provides you with some essential guidance in the development of your cloud business.?',
     '2provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
@@ -122,7 +122,7 @@ Complete the IDC Cyber Risk Assessment Tool to find out more about how ready you
         <li class="icon growth">Your company takes a longer-term perspective on business planning</li>
         <li class="icon revenue">Cloud forms the architecture of all solutions</li>
     </ul>',
-    
+
     '3processes-and-skill-sets-passive-txt' => '
     <ul>
         <li class="icon target">Cloud is an emerging element of your business</li>
@@ -163,7 +163,7 @@ Complete the IDC Cyber Risk Assessment Tool to find out more about how ready you
         <li class="icon growth">Business is taking on or looking to take on larger-scale projects</li>
         <li class="icon revenue">Proactive support recommends improvement</li>
     </ul>',
-    
+
     '3business-mix-passive-txt' => '
     <ul>
         <li class="icon target">You are yet to make significant investments in cloud technologies</li>
@@ -205,7 +205,7 @@ Complete the IDC Cyber Risk Assessment Tool to find out more about how ready you
         <li class="icon growth">OpenStack enhanced by automation tools</li>
         <li class="icon revenue">Billing on an hourly basis, across all cloud solutions and via a dashboard</li>
     </ul>',
-    
+
     '3sales-and-marketing-passive-txt' => '
     <ul>
         <li class="icon target">You have a limited number of sales people focused on cloud</li>
@@ -249,20 +249,20 @@ Complete the IDC Cyber Risk Assessment Tool to find out more about how ready you
     </ul>',
 
     'stage1'=>'Stage 1: Passive', //reactive
-    'passivetxt'=>"Organizations at this stage in their cloud maturity process tend to be providing cloud at the request of their customers, or as a vendor reseller. As a result, fees are derived from referrals or from resale, and organizations are generally focused on project revenues, rather than longer-term recurring revenue streams. Organizations at this stage in their cloud strategy are yet to embrace a cloud future and as a result may struggle to generate profits in this area. There is no defined vision for cloud, but there is time to make this transition if key decision makers act now.",
+    'passivetxt'=>'Organizations at this stage in their cloud maturity process tend to be providing cloud at the request of their customers, or as a vendor reseller. As a result, fees are derived from referrals or from resale, and organizations are generally focused on project revenues, rather than longer-term recurring revenue streams. Organizations at this stage in their cloud strategy are yet to embrace a cloud future and as a result may struggle to generate profits in this area. There is no defined vision for cloud, but there is time to make this transition if key decision makers act now.',
     'passivetweet' => "I took the @FireEye Agil-IT-y Assessment and it's shown me where I can improve. Interested? http://bit.ly/1Y6JAqa",
     'stage2'=>'Stage 2: Tentative',
-    'tentativetxt'=>"Organizations at this stage in their cloud maturity are beginning to develop and deliver cloud-specific business models. Typically, this is not granular enough to account for different product lines or individual P&L, and is often unmanaged and untargeted. With measurement limited, there is little in the way of automation, whether it is process, methodology, or sale and delivery. While businesses at this stage of maturity are beginning to build cloud sales functions and cloud-based marketing, revenue still comes from resale of on-premise solutions. Despite this, recurring revenue growth is outpacing traditional business.",
-    'tentativetweet' => "I took the @FireEye Agil-IT-y Assessment and my company is on the right track. See how your business does... http://bit.ly/1Y6JAqa",
+    'tentativetxt'=>'Organizations at this stage in their cloud maturity are beginning to develop and deliver cloud-specific business models. Typically, this is not granular enough to account for different product lines or individual P&L, and is often unmanaged and untargeted. With measurement limited, there is little in the way of automation, whether it is process, methodology, or sale and delivery. While businesses at this stage of maturity are beginning to build cloud sales functions and cloud-based marketing, revenue still comes from resale of on-premise solutions. Despite this, recurring revenue growth is outpacing traditional business.',
+    'tentativetweet' => 'I took the @FireEye Agil-IT-y Assessment and my company is on the right track. See how your business does... http://bit.ly/1Y6JAqa',
     'stage3'=>'Stage 3: Commited',
-    'committedtxt'=>"Organizations at this stage in their cloud maturity have a solid cloud business plan in place and are developing product-specific strategies, including professional services. Investments in cloud have been made and, more critically, investments are planned for the next two to three years. Organizations are beginning to monitor and target cloud-based revenues separately from license and other revenues. Many are also creating reusable processes and beginning to automate key functions. Marketing efforts are showing signs of sophistication, yet many organizations still need to migrate away from traditional marketing approaches. Organizations at this stage are likely to have established a well-structured technology roadmap and have started investing in cloud infrastructure, tools, and management technology. ",
-    'commitedtweet' => "I took the @FireEye Agil-IT-y Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    'committedtxt'=>'Organizations at this stage in their cloud maturity have a solid cloud business plan in place and are developing product-specific strategies, including professional services. Investments in cloud have been made and, more critically, investments are planned for the next two to three years. Organizations are beginning to monitor and target cloud-based revenues separately from license and other revenues. Many are also creating reusable processes and beginning to automate key functions. Marketing efforts are showing signs of sophistication, yet many organizations still need to migrate away from traditional marketing approaches. Organizations at this stage are likely to have established a well-structured technology roadmap and have started investing in cloud infrastructure, tools, and management technology. ',
+    'commitedtweet' => 'I took the @FireEye Agil-IT-y Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa',
     'stage4'=>'Stage 4: Accelerating',
-    'acceleratingtxt'=>"Organizations at this stage in their cloud maturity have developed in-depth planning across different cloud products, solutions, and architectures. This includes go-to-market strategies and sophisticated sales enablement. Many have established a portfolio of cloud offerings and related services, mainly through dedicated cloud sales, implementation, and support functions. Typically, organizations at this stage of their maturity can execute across multiple cloud architectures and have identified areas of specialism. This also enables them to measure and assess recurring revenues, and most have established tools and methodologies to drive efficiencies in implementation. This ensures renewals and the optimization of solutions.",
-    'acceleratingtweet' => "I took the @FireEye Agil-IT-y Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    'acceleratingtxt'=>'Organizations at this stage in their cloud maturity have developed in-depth planning across different cloud products, solutions, and architectures. This includes go-to-market strategies and sophisticated sales enablement. Many have established a portfolio of cloud offerings and related services, mainly through dedicated cloud sales, implementation, and support functions. Typically, organizations at this stage of their maturity can execute across multiple cloud architectures and have identified areas of specialism. This also enables them to measure and assess recurring revenues, and most have established tools and methodologies to drive efficiencies in implementation. This ensures renewals and the optimization of solutions.',
+    'acceleratingtweet' => 'I took the @FireEye Agil-IT-y Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa',
     'stage5'=>'Stage 5: Fullspeed',
-    'fullspeedtxt'=>"For organizations at this stage in their maturity, cloud defines the investment and decision making in their future business direction. They are also fully committed to a recurring revenue business model. All aspects of the business are focused on a broad set of KPIs, from customer adoption and growth targets, to satisfaction levels and renewal rates. All systems and processes are designed to optimize cloud profitability and many have fully automated cloud processes to deliver economies of scale. Critically, there is an emphasis on selling solutions, as well as developing and maximizing internal IP.",
-    'fullspeedtweet' => "I took the @FireEye Agil-IT-y Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    'fullspeedtxt'=>'For organizations at this stage in their maturity, cloud defines the investment and decision making in their future business direction. They are also fully committed to a recurring revenue business model. All aspects of the business are focused on a broad set of KPIs, from customer adoption and growth targets, to satisfaction levels and renewal rates. All systems and processes are designed to optimize cloud profitability and many have fully automated cloud processes to deliver economies of scale. Critically, there is an emphasis on selling solutions, as well as developing and maximizing internal IP.',
+    'fullspeedtweet' => 'I took the @FireEye Agil-IT-y Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa',
     '3send'=>'We can send you the full results directly to your mailbox',
     '3fullreport'=>'For the full custom report with essential guidance in taking your cloud business to the next level, fill in a few details and we\'ll send you a link to download it.',
     '3provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
@@ -288,13 +288,13 @@ Complete the IDC Cyber Risk Assessment Tool to find out more about how ready you
     '4initialtweet' => "I took the @HP GDPR Assessment and it's shown me where I can improve. Interested?",
     '4defined'=>'Defined',
     '4definedtxt'=>'',
-    '4definedtweet' => "I took the @HP GDPR Assessment and my company is on the right track. See how your business does... http://bit.ly/1Y6JAqa",
+    '4definedtweet' => 'I took the @HP GDPR Assessment and my company is on the right track. See how your business does... http://bit.ly/1Y6JAqa',
     '4managed'=>'Managed',
     '4managedtxt'=>'',
-    '4managedtweet' => "I took the @HP GDPR Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    '4managedtweet' => 'I took the @HP GDPR Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa',
     '4optimised'=>'Optimised',
     '4optimisedtxt'=>'',
-    '4optimisedtweet' => "I took the @HP GDPR Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    '4optimisedtweet' => 'I took the @HP GDPR Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa',
     '4send'=>'We can send you the full results directly to your mailbox',
     '4fullreport'=>'
         <div style="float: left; width: 48%; margin-right: 20px;">
@@ -354,40 +354,40 @@ Complete the IDC Cyber Risk Assessment Tool to find out more about how ready you
     '5subreporttitle' => 'You are in the <span class="color--primary">:percent%</span>, whose :section is at <span class="color--primary">:result</span>',
 
     '5poor'=>'Poor', //reactive
-    '5poortxt'=>"Organizations at this stage tend to have no perceived risk of a breach. Security is reactive and there is no incident response plan in place. 
+    '5poortxt'=>'Organizations at this stage tend to have no perceived risk of a breach. Security is reactive and there is no incident response plan in place. 
 Organizations at this stage are often in crisis security mode and in denial of breaches. 
-Resourcing of incident response is unplanned and mostly from internal resources",
+Resourcing of incident response is unplanned and mostly from internal resources',
     '5poortweet' => "I took the @splunk Security Assessment and it's shown me where I can improve. Interested?",
     '5standard'=>'Standard',
-    '5standardtxt'=>"Organizations at this stage tend to have limited resources to find breaches. There is a basic incident response partner, but are used on an ad hoc basis.
+    '5standardtxt'=>'Organizations at this stage tend to have limited resources to find breaches. There is a basic incident response partner, but are used on an ad hoc basis.
 Resourcing for incident response is planned, mostly using internal resources. 
-Solutions to detect incidents are mainly solutions and processes developed in-house. ",
-    '5standardtweet' => "I took the @splunk Security Assessment and my company is on the right track. See how your business does... http://bit.ly/1Y6JAqa",
+Solutions to detect incidents are mainly solutions and processes developed in-house. ',
+    '5standardtweet' => 'I took the @splunk Security Assessment and my company is on the right track. See how your business does... http://bit.ly/1Y6JAqa',
     '5good'=>'Good',
-    '5goodtxt'=>"Organizations at this stage recognize that this is an era of inevitable breach. There is an incident response partner on call with prepaid blocks of time. 
+    '5goodtxt'=>'Organizations at this stage recognize that this is an era of inevitable breach. There is an incident response partner on call with prepaid blocks of time. 
 Formal cyber-readiness plans are in place, but not often tested. Resourcing for incident response is planned using both internal and external resources. 
 Basic analytics are drawn from SIEM feeds and there is some integration between security products, probably custom-built. 
-Good understanding of risk posture",
-    '5goodtweet' => "I took the @splunk Security Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+Good understanding of risk posture',
+    '5goodtweet' => 'I took the @splunk Security Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa',
     '5aspirational'=>'',
-    '5aspirationaltxt'=>"Organizations at this stage assumes breach. There are a panel of incident response specialists on call. 
+    '5aspirationaltxt'=>'Organizations at this stage assumes breach. There are a panel of incident response specialists on call. 
 There is a formal incident response plan that is tested annually. 
 Resourcing for incident response is planned using mainly external resources. 
-Incident response plans are standardized and based on formal processes and run books.",
-    '5aspirationaltweet' => "I took the @splunk Security Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+Incident response plans are standardized and based on formal processes and run books.',
+    '5aspirationaltweet' => 'I took the @splunk Security Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa',
     '5best'=>'Best',
-    '5besttxt'=>"Organizations at this stage are proactive breach hunters. They focus on best practices and continuous improvement. 
+    '5besttxt'=>'Organizations at this stage are proactive breach hunters. They focus on best practices and continuous improvement. 
 An incident response plan is in place and tested regularly. This is supported by a retained incident response team (either in-house or third party). Legal agreements are in place to share incident response data. 
 Resourcing for incident response is planned using internal staff and external resources on retainer with regular planning meetings. 
 A unified and integrated security management solution provides the organization with a holistic view of security. 
-Risk is a key driver for assessment and mitigation processes.",
-    '5besttweet' => "I took the @splunk Security Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+Risk is a key driver for assessment and mitigation processes.',
+    '5besttweet' => 'I took the @splunk Security Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa',
     '5send'=>'We can send you the full results directly to your mailbox',
     '5fullreport'=>'For the full report with essential guidance to get your businesses security in check, just fill in your details.',
     '5provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
     '5byreg'=>'By registering with IDC, you accept our <a href="/privacy" target="_blank">Privacy Policy</a> and <a href="https://www.splunk.com/en_us/legal/privacy/privacy-policy.html" target="_blank">Splunk\'s Privacy Policy</a> The information we collect will be shared with Splunk for the purpose of direct marketing',
     '5wait'=>'While you\'re waiting why not tweet your results and see how your colleagues measure up?',
-    
+
     '5aheadglobal'=>'ahead of the global leaders',
     '5inlineglobal'=>'Inline with the global leaders',
     '5behindglobal'=>'behind the global leaders',
@@ -416,64 +416,64 @@ Risk is a key driver for assessment and mitigation processes.",
     '6subreporttitle' => 'You are at <span class="color--primary">:result</span>',
 
     '6Foundation'=>'Foundation', //reactive
-    '6Foundationtxt'=>"
-        <p class=\"mt--1\">
+    '6Foundationtxt'=>'
+        <p class="mt--1">
             Thank you for completing the assessment.<br/>
                 Tell us a little about yourself to receive a personalised report that includes:
         </p>
-        <ul style=\"list-style: disc; padding-left: 1.5em;\">
+        <ul style="list-style: disc; padding-left: 1.5em;">
             <li>How you compare against your peers based on organisational size and geographic region</li>
             <li>Where to prioritiseyour security operations efforts with essential guidance</li>
         </ul>
 
-    ",
+    ',
     '6Foundationtweet' => "I took the @splunk Security Assessment and it's shown me where I can improve. Interested?",
     '6Developing'=>'Developing',
-    '6Developingtxt'=>"
-        <p class=\"mt--1\">
+    '6Developingtxt'=>'
+        <p class="mt--1">
             Thank you for completing the assessment.<br/>
                 Tell us a little about yourself to receive a personalised report that includes:
         </p>
-        <ul style=\"list-style: disc; padding-left: 1.5em;\">
+        <ul style="list-style: disc; padding-left: 1.5em;">
             <li>How you compare against your peers based on organisational size and geographic region</li>
             <li>Where to prioritiseyour security operations efforts with essential guidance</li>
         </ul>
 
-    ",
-    '6Developingtweet' => "I took the @splunk Security Assessment and my company is on the right track. See how your business does... http://bit.ly/1Y6JAqa",
+    ',
+    '6Developingtweet' => 'I took the @splunk Security Assessment and my company is on the right track. See how your business does... http://bit.ly/1Y6JAqa',
     '6Good'=>'Good',
-    '6Goodtxt'=>"
-        <p class=\"mt--1\">
+    '6Goodtxt'=>'
+        <p class="mt--1">
             Thank you for completing the assessment.<br/>
                 Tell us a little about yourself to receive a personalised report that includes:
         </p>
-        <ul style=\"list-style: disc; padding-left: 1.5em;\">
+        <ul style="list-style: disc; padding-left: 1.5em;">
             <li>How you compare against your peers based on organisational size and geographic region</li>
             <li>Where to prioritiseyour security operations efforts with essential guidance</li>
         </ul>
 
-    ",
-    '6Goodtweet' => "I took the @splunk Security Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    ',
+    '6Goodtweet' => 'I took the @splunk Security Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa',
     '6Aspirational'=>'Aspirational',
-    '6Aspirationaltxt'=>"
-        <p class=\"mt--1\">
+    '6Aspirationaltxt'=>'
+        <p class="mt--1">
             Thank you for completing the assessment.<br/>
                 Tell us a little about yourself to receive a personalised report that includes:
         </p>
-        <ul style=\"list-style: disc; padding-left: 1.5em;\">
+        <ul style="list-style: disc; padding-left: 1.5em;">
             <li>How you compare against your peers based on organisational size and geographic region</li>
             <li>Where to prioritiseyour security operations efforts with essential guidance</li>
         </ul>
 
-    ",
-    '6Aspirationaltweet' => "I took the @splunk Security Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    ',
+    '6Aspirationaltweet' => 'I took the @splunk Security Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa',
     '6Best'=>'Best',
-    '6Besttxt'=>"Organizations at this stage are proactive breach hunters. They focus on best practices and continuous improvement. 
+    '6Besttxt'=>'Organizations at this stage are proactive breach hunters. They focus on best practices and continuous improvement. 
 An incident response plan is in place and tested regularly. This is supported by a retained incident response team (either in-house or third party). Legal agreements are in place to share incident response data. 
 Resourcing for incident response is planned using internal staff and external resources on retainer with regular planning meetings. 
 A unified and integrated security management solution provides the organization with a holistic view of security. 
-Risk is a key driver for assessment and mitigation processes.",
-    '6Besttweet' => "I took the @splunk Security Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+Risk is a key driver for assessment and mitigation processes.',
+    '6Besttweet' => 'I took the @splunk Security Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa',
     '6send'=>'We can send you the full results directly to your mailbox',
     '6fullreport'=>'For the full report with essential guidance to get your businesses security in check, just fill in your details.',
     '6provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
@@ -504,16 +504,16 @@ Risk is a key driver for assessment and mitigation processes.",
     '7poortweet' => "I took the @symantec GDPR Assessment and it's shown me where I can improve. Interested?",
     '7standard'=>'Stage 2 - Time to Accelerate',
     '7standardtxt'=>"Thank you for completing IDC's GDPR Assessment.<br/>This report will provide you with recommendations about the next stages of your journey to GDPR compliance.",
-    '7standardtweet' => "I took the @symantec GDPR Assessment and my company is on the right track. See how your business does... http://bit.ly/1Y6JAqa",
+    '7standardtweet' => 'I took the @symantec GDPR Assessment and my company is on the right track. See how your business does... http://bit.ly/1Y6JAqa',
     '7good'=>'Stage 3 - Time to Something',
     '7goodtxt'=>"Thank you for completing IDC's GDPR Assessment.<br/>This report will provide you with recommendations about the next stages of your journey to GDPR compliance.",
-    '7goodtweet' => "I took the @symantec GDPR Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    '7goodtweet' => 'I took the @symantec GDPR Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa',
     '7aspirational'=>'Stage 4 - Time to Optimize',
     '7aspirationaltxt'=>"Thank you for completing IDC's GDPR Assessment.<br/>This report will provide you with recommendations about the next stages of your journey to GDPR compliance.",
-    '7aspirationaltweet' => "I took the @symantec GDPR Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    '7aspirationaltweet' => 'I took the @symantec GDPR Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa',
     '7best'=>'Stage 1 - Time to Chill',
     '7besttxt'=>"Thank you for completing IDC's GDPR Assessment.<br/>This report will provide you with recommendations about the next stages of your journey to GDPR compliance.",
-    '7besttweet' => "I took the @symantec GDPR Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa",
+    '7besttweet' => 'I took the @symantec GDPR Assessment and my company looks well placed to succeed in the future. See how you do... http://bit.ly/1Y6JAqa',
     '7send'=>'We can send you the full results directly to your mailbox',
     '7fullreport'=>'Please complete the form below and we will send you the full report.',
     '7provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
@@ -598,15 +598,15 @@ Risk is a key driver for assessment and mitigation processes.",
     'education' => 'Private education',
     'healthcare' => 'Private healthcare service providers',
 
-    'less-than-100m'=>"Less than €100 million",
-    '100m-250m'=>"€100-250 million",
-    '250m-1b'=>"€250 million - €1 billion",
-    'more-than-1b'=>"More than €1 billion",
+    'less-than-100m'=>'Less than €100 million',
+    '100m-250m'=>'€100-250 million',
+    '250m-1b'=>'€250 million - €1 billion',
+    'more-than-1b'=>'More than €1 billion',
 
-    'less-than-500'=>"Fewer than 500",
-    '500-to-999'=>"500 to 999",
-    '1000-to-4999'=>"1,000 to 4,999",
-    'more-than-5000'=>"5,000 or more",
+    'less-than-500'=>'Fewer than 500',
+    '500-to-999'=>'500 to 999',
+    '1000-to-4999'=>'1,000 to 4,999',
+    'more-than-5000'=>'5,000 or more',
 
     'allrights' => 'All Rights Reserved',
     'introduction' => 'Introduction',
@@ -649,7 +649,7 @@ Risk is a key driver for assessment and mitigation processes.",
     'qual8' => 'Value Added Reseller',
     'qual9' => 'Managed Service Provider',
     'qual10' => 'Hosting Provider',
-    
+
     'terms'=>'Terms &amp; Conditions',
     'accept'=>'I accept the terms',
     'required'=>'Required',
@@ -679,5 +679,5 @@ Risk is a key driver for assessment and mitigation processes.",
     'errorRelationship'=>'Please select Relationship Type',
     'errorQualification'=>'Please select Partner Type',
     'errorAccept'=>'Please accept the Terms &amp; Conditions',
-    'ranking'=>'Ranking'
-);
+    'ranking'=>'Ranking',
+];

@@ -10,11 +10,11 @@ class Section extends Model
         'name',
         'alias',
         'class',
-        'display'
+        'display',
     ];
 
     public function questions()
     {
-        return $this->hasMany('App\Questions');
+        return $this->hasMany(\App\Questions::class);
     }
 }

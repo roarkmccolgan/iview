@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
 
 class AddLanguageIdToTrackerTable extends Migration
 {
@@ -14,7 +14,7 @@ class AddLanguageIdToTrackerTable extends Migration
     {
         Schema::table('trackers', function ($table) {
             $table->integer('language_id')->unsigned()->default(1);
-            
+
             $table->foreign('language_id')
                   ->references('id')
                   ->on('languages');

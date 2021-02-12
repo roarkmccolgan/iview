@@ -1,4 +1,5 @@
 <?php
+
 // Snow
 return [
     'leadership'=>[
@@ -44,10 +45,10 @@ return [
                                 'label'=>'Le leadership redéfinit constamment la stratégie pour stimuler l\'innovation et permettre un changement constant.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Vision du leadership pour l\'agilité',
@@ -81,10 +82,10 @@ return [
                                 'label'=>'Le leadership redéfinit constamment l\'attribution budgétaire, en fonction de l\'évolution des besoins.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Vision du leadership pour l\'agilité',
@@ -118,12 +119,12 @@ return [
                                 'label'=>'Le leadership identifie de manière proactive les flux de travail nécessitant plus d\'agilité et attribue des budgets pour améliorer les processus.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
-        ]
+        ],
     ],
     'structural' => [
         'title' => 'Agilité structurelle',
@@ -184,10 +185,10 @@ return [
                                 'label'=>'Les équipes sont créées spontanément par les employés dans les différents domaines fonctionnels en temps réel au fur et à mesure des besoins.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Agilité structurelle',
@@ -216,10 +217,10 @@ return [
                                 'label'=>'Nous identifions les lacunes en matière de compétences tout au long de l\'année et nous nous appuyons en permanence sur des ressources flexibles.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Agilité structurelle',
@@ -253,12 +254,12 @@ return [
                                 'label'=>'La gestion des connaissances et la collaboration sont des indicateurs clés de performance formels et s\'étendent aux partenaires externes.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
     ],
     'process' => [
         'title' => 'Agilité des processus',
@@ -319,10 +320,10 @@ return [
                                 'label'=>'Les processus de base sont normalisés et automatisés, ce qui permet aux employés de créer de nouveaux processus par le biais du libre-service.',
                                 'value'=>7.5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Agilité des processus',
@@ -356,12 +357,12 @@ return [
                                 'label'=>'Les processus métier sont entièrement numérisés et peuvent être créés ou ajustés de manière dynamique.',
                                 'value'=>7.5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
     ],
     'portfolio' => [
         'title' => 'Agilité du portefeuille',
@@ -422,10 +423,10 @@ return [
                                 'label'=>'Les produits minimum viables sont introduits dans les mois qui suivent la conceptualisation et développés ou écartés progressivement en fonction des retours des clients dans un flux constant.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Agilité du portefeuille',
@@ -454,10 +455,10 @@ return [
                                 'label'=>'Très rapidement sans besoin d\'amélioration',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Agilité du portefeuille',
@@ -491,12 +492,12 @@ return [
                                 'label'=>'Nous intégrons des idées innovantes issues d\'un réseau externe à nos itérations de produits rapides afin d\'accélérer le choix pour le développement.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
     ],
     'technology' => [
         'title' => 'Architecture technologique',
@@ -557,10 +558,10 @@ return [
                                 'label'=>'Une plate-forme numérique intégrée avec des systèmes intelligents au cœur de ses activités.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Architecture technologique',
@@ -594,10 +595,10 @@ return [
                                 'label'=>'Bien au-dessus.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Architecture technologique',
@@ -631,11 +632,11 @@ return [
                                 'label'=>'Utilisation de technologies basées sur le cloud pour l\'automatisation intégrée des processus et des flux de travail des processus personnalisés, associés à l\'analyse prédictive et aux processus agiles systémiques.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
-    ]
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
+    ],
 ];

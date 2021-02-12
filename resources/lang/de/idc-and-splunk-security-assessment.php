@@ -1,6 +1,7 @@
 <?php
+
 //SPLUNK
-return array(
+return [
     'title' => 'IDC\s Security Assessment',
     'sub-title' => 'Wie sicher ist Ihr Unternehmen?',
     'stage1' => 'Stufe 1: Schlecht',
@@ -14,7 +15,7 @@ return array(
         <a class="btn btn--primary" target="_blank" href="https://www.splunk.com/en_us/solutions/solution-areas/security-and-fraud/security-investigation.html">
             Klicken Sie hier für weitere Informationen
         </a>',
-    'complete_tweet' => 'I\'ve just taken the @IDCEMEA Security Assessment Tool for @splunk. Interested? ',// http://bit.ly/2gslXEh
+    'complete_tweet' => 'I\'ve just taken the @IDCEMEA Security Assessment Tool for @splunk. Interested? ', // http://bit.ly/2gslXEh
     'email'=>[
         'subject' => 'IDC\'s Security Assessment',
         'hi' => 'Sehr geehrte(r) :Fname',
@@ -23,7 +24,7 @@ return array(
         'link' => 'Bericht herunterladen',
         'extra' => 'Nachdem Sie den Bericht gelesen haben, sollten Sie <a href="https://www.splunk.com/en_us/solutions/solution-areas/security-and-fraud/security-investigation.html" style="color:#65A637">Splunk besuchen</a>.',
         'regards' => 'Mit freundlichen Grüßen, ',
-        'team' => 'Das IDC-Team'
+        'team' => 'Das IDC-Team',
     ],
     'introduction' => '
         <h2>Gesamtergebnis</h2>
@@ -157,16 +158,16 @@ return array(
     ',
 
     /*'introduction-image' => 'report1.jpg',*/
-    'overall' => array(
+    'overall' => [
         'title'=>'Ihre Gesamtbewertung des Security Assessments befindet sich auf:',
         'hidetitle'=>'true',
         'image'=>'',
         'stage1'=>'',
         'stage2'=>'',
         'stage3'=>'',
-        'stage4'=>''
-    ),
-    'security-strategy' => array(
+        'stage4'=>'',
+    ],
+    'security-strategy' => [
         'title'=>'Sicherheitsstrategie',
         'image'=>'security-strategy.jpg',
         'pb'=>'pb',
@@ -174,9 +175,9 @@ return array(
         'stage2'=>'',
         'stage3'=>'',
         'stage4'=>'',
-        'stage5'=>''
-    ),
-    'incident-detection' => array(
+        'stage5'=>'',
+    ],
+    'incident-detection' => [
         'title'=> 'Vorfallserkennung',
         'image'=>'incident-detection.jpg',
         'pb'=>'pb',
@@ -184,9 +185,9 @@ return array(
         'stage2'=>'',
         'stage3'=>'',
         'stage4'=>'',
-        'stage5'=>''
-    ),
-    'incident-response' => array(
+        'stage5'=>'',
+    ],
+    'incident-response' => [
         'title'=> 'Vorfallsreaktion',
         'image'=>'incident-response.jpg',
         'pb'=>'pb',
@@ -194,6 +195,6 @@ return array(
         'stage2'=>'',
         'stage3'=>'',
         'stage4'=>'',
-        'stage5'=>''
-    )
-);
+        'stage5'=>'',
+    ],
+];

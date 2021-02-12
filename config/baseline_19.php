@@ -1,4 +1,5 @@
 <?php
+
 //REDHAT
 return [
     'overall' => [
@@ -11,10 +12,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -25,7 +26,7 @@ return [
             'basecolor'=>'#004386',
             'pageimage'=>false,
             'margin-top'=>31,
-            'header-spacing'=>10
+            'header-spacing'=>10,
         ],
         'types' => [
             'stage1' => [
@@ -45,11 +46,11 @@ return [
                 'high' => 55,
                 'tweet' => false,
                 'benchmark' => 28,
-            ]
+            ],
         ],
         'tweet' => false,
         'report_recipients' => [
-            'roarkmccolgan@gmail.com'
+            'roarkmccolgan@gmail.com',
         ],
         'default_fields' =>[
             'fname' => [
@@ -346,9 +347,9 @@ return [
                 'error' => 'errorCountry',
                 'required' => true,
                 'col' => 12,
-            ]
+            ],
         ],
-        'pdf_monkey_template' => 'B46BEA66-9178-40CD-AE67-57519B86D0A6'
+        'pdf_monkey_template' => 'B46BEA66-9178-40CD-AE67-57519B86D0A6',
     ],
     'automate' => [
         'baseline' => 8.90,
@@ -365,10 +366,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -399,16 +400,16 @@ return [
                 'high' => 23,
                 'total' => 5,
                 'benchmark' => 28,
-            ]
+            ],
         ],
         'normalise_using_screeners' => [
-            'calc' => "((\$result['general']['score'])*0.25) + ((\$result[\$key]['score'])*0.75)"
-        ]
+            'calc' => "((\$result['general']['score'])*0.25) + ((\$result[\$key]['score'])*0.75)",
+        ],
     ],
     'hybrid' => [
         'baseline' => 9.28,
         'baseline' => 10.93,
-        
+
         'baseline_stage1' => 2.5,
         'baseline_stage2' => 7.5,
         'baseline_stage3' => 13.5,
@@ -420,10 +421,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -454,11 +455,11 @@ return [
                 'high' => 17,
                 'total' => 5,
                 'benchmark' => 28,
-            ]
+            ],
         ],
         'normalise_using_screeners' => [
-            'calc' => "((\$result['general']['score'])*0.25) + ((\$result[\$key]['score'])*0.75)"
-        ]
+            'calc' => "((\$result['general']['score'])*0.25) + ((\$result[\$key]['score'])*0.75)",
+        ],
     ],
     'native' => [
         'baseline' => 9.42,
@@ -474,10 +475,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -508,10 +509,10 @@ return [
                 'high' => 16,
                 'total' => 5,
                 'benchmark' => 28,
-            ]
+            ],
         ],
         'normalise_using_screeners' => [
-            'calc' => "((\$result['general']['score'])*0.25) + ((\$result[\$key]['score'])*0.75)"
-        ]
-    ]
+            'calc' => "((\$result['general']['score'])*0.25) + ((\$result[\$key]['score'])*0.75)",
+        ],
+    ],
 ];

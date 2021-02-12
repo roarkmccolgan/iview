@@ -1,4 +1,5 @@
 <?php
+
 //7 Symanted GDPR
 return [
     'gdpr' => [
@@ -20,31 +21,31 @@ return [
                             [
                                 'label'=>'Nous ne savons pas ce qu\'est le GDPR et comment il va nous affecter',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Nous commençons juste à prendre connaissance des exigences associées au GDPR',
                                 'value'=>2,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Nous voulons être suffisamment en conformité au GDPR pour éviter des audits et des amendes',
                                 'value'=>3,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Nous avons l\'intention d\'utiliser notre conformité au GDPR comme un différenciateur concurrentiel',
                                 'value'=>4,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Nous sommes déjà en conformité et vendons ou partageons nos meilleures pratiques',
                                 'value'=>5,
-                                'checked'=>false
-                            ]
-                        ]
-                    ]
-                ]
+                                'checked'=>false,
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'GDPR',
@@ -60,41 +61,41 @@ return [
                             [
                                 'label'=>'Évaluer et classer correctement les données',
                                 'value'=>0,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Identifier les applications qui utilisent des données relevant du GDPR',
                                 'value'=>0,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Effectuer une analyse du flux de données',
                                 'value'=>0,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Examiner et améliorer la gestion des identités et des accès',
                                 'value'=>0,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Établir des processus de documentation conformes aux exigences de responsabilité',
                                 'value'=>0,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Communication interne/formation des employés',
                                 'value'=>0,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Introduire la protection des données dès la conception et par défaut',
                                 'value'=>0,
-                                'checked'=>false
-                            ]
-                        ]
-                    ]
-                ]
+                                'checked'=>false,
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'GDPR',
@@ -111,51 +112,51 @@ return [
                                 'label'=>'Portabilité des données',
                                 'hint'=>'Nécessité de fournir sur demande des données dans un format lisible par une machine',
                                 'value'=>0,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Réviser la demande d\'accès aux données d\'une personne',
                                 'value'=>0,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Fournir une notification de violation de données dans les 72 heures suivant la détection',
                                 'value'=>0,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Protection des données dès la conception et par défaut',
                                 'value'=>0,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Chiffrement et/ou pseudonymisation de données',
                                 'value'=>0,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Définir ce que « à la pointe de la technologie » signifie pour notre entreprise',
                                 'value'=>0,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Définir des cas d\'utilisation des données et de gestion du consentement',
                                 'value'=>0,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Adopter le profilage client en conformité au GDPR',
                                 'value'=>0,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Gérer les fournisseurs de Cloud, applications de Cloud et transferts internationaux de données.',
                                 'value'=>0,
-                                'checked'=>false
-                            ]
-                        ]
-                    ]
-                ]
+                                'checked'=>false,
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page4' => [
                 'title' => 'GDPR',
@@ -169,35 +170,35 @@ return [
                                 'label'=>'Pas sûr du tout',
                                 'hint'=>'Nous pourrions trouver moins de 20 % des instances',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Peu sûr',
                                 'hint'=>'Nous pourrions trouver plus de 20 % des instances',
                                 'value'=>2,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Moyennement sûr',
                                 'hint'=>'Nous pourrions trouver plus de 40 % des instances',
                                 'value'=>3,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Très sûr',
                                 'hint'=>'Nous pourrions trouver plus de 60 % des instances',
                                 'value'=>4,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Entièrement sûr',
                                 'hint'=>'Nous pourrions trouver toutes les instances',
                                 'value'=>5,
-                                'checked'=>false
-                            ]
-                        ]
-                    ]
-                ]
+                                'checked'=>false,
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page5' => [
                 'title' => 'GDPR',
@@ -221,8 +222,8 @@ return [
                                         'label'=>'Non',
                                         'value'=>1,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Nous connaissons nos informations non structurées',
@@ -238,8 +239,8 @@ return [
                                         'label'=>'Non',
                                         'value'=>2,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Nous connaissons nos données non pertinentes',
@@ -255,8 +256,8 @@ return [
                                         'label'=>'Non',
                                         'value'=>2,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Nous savons qui est propriétaire des données et qui peut y accéder',
@@ -271,8 +272,8 @@ return [
                                         'label'=>'Non',
                                         'value'=>1,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Nous savons combien de temps nous devons conserver les données',
@@ -287,8 +288,8 @@ return [
                                         'label'=>'Non',
                                         'value'=>1,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Nous savons quand nous devons/pouvons supprimer des données',
@@ -303,8 +304,8 @@ return [
                                         'label'=>'Non',
                                         'value'=>1,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Nous savons quel règlement s\'applique aux catégories particulières de données',
@@ -319,8 +320,8 @@ return [
                                         'label'=>'Non',
                                         'value'=>2,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Nous connaissons toutes les copies de nos données personnelles en notre possession',
@@ -336,13 +337,13 @@ return [
                                         'label'=>'Non',
                                         'value'=>2,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
-                           
-                        ]
-                    ]
-                ]
+
+                        ],
+                    ],
+                ],
             ],
             'page6' => [
                 'title' => 'GDPR',
@@ -356,36 +357,36 @@ return [
                             [
                                 'label'=>'Il nous empêchera complètement d\'utiliser le Cloud',
                                 'value'=>2,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Il faudra passer aux fournisseurs ou centres de données de Cloud nationaux',
                                 'value'=>3,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Il faudra passer aux centres de données de Cloud régionaux (en Europe) mais pas nationaux',
                                 'value'=>3,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Nous n\'utilisons pas les services Cloud',
                                 'value'=>2,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Nous allons continuer à utiliser les services Cloud mais allons améliorer notre protection des données (par exemple, via des processus, prévention de pertes de données ou tokenisation)',
                                 'value'=>4,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Aucun impact : nous allons continuer à utiliser les services de Cloud comme avant',
                                 'value'=>4,
-                                'checked'=>false
-                            ]
-                        ]
-                    ]
-                ]
+                                'checked'=>false,
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page7' => [
                 'title' => 'GDPR',
@@ -399,26 +400,26 @@ return [
                             [
                                 'label'=>'Oui, l\'équipe est entièrement créée',
                                 'value'=>4,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Oui, l\'équipe est en cours de création mais pas encore totalement mise en place',
                                 'value'=>3,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Non, mais cela est prévu dans les 12 mois à venir',
                                 'value'=>2,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Non',
                                 'value'=>1,
-                                'checked'=>false
-                            ]
-                        ]
-                    ]
-                ]
+                                'checked'=>false,
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page8' => [
                 'title' => 'GDPR',
@@ -458,8 +459,8 @@ return [
                                         'label'=>'5',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'La loi sur les recours collectifs nous inquiète',
@@ -491,8 +492,8 @@ return [
                                         'label'=>'5',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'La notification obligatoire de violation nous inquiète',
@@ -524,8 +525,8 @@ return [
                                         'label'=>'5',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'La suspension des activités de traitement des données par le régulateur nous inquiète',
@@ -557,8 +558,8 @@ return [
                                         'label'=>'5',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Les risques d\'atteinte à la réputation pour non-conformité nous inquiètent',
@@ -590,12 +591,12 @@ return [
                                         'label'=>'5',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page9' => [
                 'title' => 'GDPR',
@@ -610,37 +611,37 @@ return [
                             [
                                 'label'=>'Manque de connaissances sur la conformité au GDPR',
                                 'value'=>2,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Manque de budget',
                                 'value'=>2,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Ressources limitées',
                                 'value'=>3,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Priorités contradictoires',
                                 'value'=>3,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Collaboration insuffisante entre l\'équipe de conformité au GDPR et les autres acteurs',
                                 'value'=>4,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Fragmentation ou manque d\'intégration des Big Data, rapports et portefeuille de solutions d\'analyse',
                                 'value'=>4,
-                                'checked'=>false
-                            ]
-                        ]
-                    ]
-                ]
+                                'checked'=>false,
+                            ],
+                        ],
+                    ],
+                ],
             ],
         ],
-    ]
+    ],
 ];

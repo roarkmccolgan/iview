@@ -1,4 +1,5 @@
 <?php
+
 // VMware
 return [
     'intelligent-network-operations' => [
@@ -47,10 +48,10 @@ return [
                                 'label'=>'We have self-optimizing network orchestration that integrates analytics, policies, automation',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Intelligent Network Operations',
@@ -84,10 +85,10 @@ return [
                                 'label'=>'Automatic reconfiguration to prevent emerging threats with predictive analytics. ',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Intelligent Network Operations',
@@ -121,12 +122,12 @@ return [
                                 'label'=>'Automated optimization based on predictive analytics',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
-        ]
+        ],
     ],
     'network-infrastructure' => [
         'title' => 'Network Infrastructure',
@@ -150,7 +151,7 @@ return [
                     'q4'=>[
                         'type'=>'groupbutton',
                         'calc'=>[
-                            'type'=>'average'
+                            'type'=>'average',
                         ],
                         'optionLabels' => [
                             'No Plans',
@@ -189,9 +190,9 @@ return [
                                     [
                                         'label'=>'Extensive use',
                                         'value'=>5,
-                                        'checked'=>false
-                                    ]
-                                ]
+                                        'checked'=>false,
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Campus network',
@@ -220,9 +221,9 @@ return [
                                     [
                                         'label'=>'Extensive use',
                                         'value'=>5,
-                                        'checked'=>false
-                                    ]
-                                ]
+                                        'checked'=>false,
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Wide Area Network',
@@ -251,9 +252,9 @@ return [
                                     [
                                         'label'=>'Extensive use',
                                         'value'=>5,
-                                        'checked'=>false
-                                    ]
-                                ]
+                                        'checked'=>false,
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Server virtualization platform',
@@ -282,9 +283,9 @@ return [
                                     [
                                         'label'=>'Extensive use',
                                         'value'=>5,
-                                        'checked'=>false
-                                    ]
-                                ]
+                                        'checked'=>false,
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Top-of-Rack networking',
@@ -313,13 +314,13 @@ return [
                                     [
                                         'label'=>'Extensive use',
                                         'value'=>5,
-                                        'checked'=>false
-                                    ]
-                                ]
+                                        'checked'=>false,
+                                    ],
+                                ],
                             ],
                         ],
-                    ]
-                ]
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Network Infrastructure',
@@ -353,10 +354,10 @@ return [
                                 'label'=>'We take a strategic and archictural approach to buying network solutions',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Network Infrastructure',
@@ -390,12 +391,12 @@ return [
                                 'label'=>'We actively update the network even though it is supported to take advantage of improvements in speed, efficiency, management or security',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
     ],
     'security-enabled-networking' => [
         'title' => 'Security-enabled Networking',
@@ -443,10 +444,10 @@ return [
                                 'label'=>'Security by design fully implemented at all levels with cyber mitigation part of all operations and teams',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Security-enabled Networking',
@@ -454,7 +455,7 @@ return [
                     'q8'=>[
                         'type'=>'groupbutton',
                         'calc'=>[
-                            'type'=>'average'
+                            'type'=>'average',
                         ],
                         'optionLabels' => [
                             'No Plans',
@@ -493,9 +494,9 @@ return [
                                     [
                                         'label'=>'Extensive use',
                                         'value'=>5,
-                                        'checked'=>false
-                                    ]
-                                ]
+                                        'checked'=>false,
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Real-time network traffic analysis',
@@ -524,9 +525,9 @@ return [
                                     [
                                         'label'=>'Extensive use',
                                         'value'=>5,
-                                        'checked'=>false
-                                    ]
-                                ]
+                                        'checked'=>false,
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Anomaly detection',
@@ -555,9 +556,9 @@ return [
                                     [
                                         'label'=>'Extensive use',
                                         'value'=>5,
-                                        'checked'=>false
-                                    ]
-                                ]
+                                        'checked'=>false,
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Application aware traffic inspection',
@@ -586,9 +587,9 @@ return [
                                     [
                                         'label'=>'Extensive use',
                                         'value'=>5,
-                                        'checked'=>false
-                                    ]
-                                ]
+                                        'checked'=>false,
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Network microsegmentation',
@@ -617,13 +618,13 @@ return [
                                     [
                                         'label'=>'Extensive use',
                                         'value'=>5,
-                                        'checked'=>false
-                                    ]
-                                ]
+                                        'checked'=>false,
+                                    ],
+                                ],
                             ],
                         ],
-                    ]
-                ]
+                    ],
+                ],
             ],
             'page3' =>[
                 'title' => 'Security-enabled Networking',
@@ -657,11 +658,11 @@ return [
                                 'label'=>'Security is involved in the planning, initiation, and assessment for all new developments',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
-    ]
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
+    ],
 ];

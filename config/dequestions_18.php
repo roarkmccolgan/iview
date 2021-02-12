@@ -1,4 +1,5 @@
 <?php
+
 // Snow
 return [
     'leadership'=>[
@@ -44,10 +45,10 @@ return [
                                 'label'=>'Die Unternehmensführung definiert die Strategie ständig neu, um Innovation zu fördern und einen ständigen Wandel zu ermöglichen.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Leadership Vision for Agility',
@@ -81,10 +82,10 @@ return [
                                 'label'=>'Die Unternehmensführung definiert die Budgetzuweisung basierend auf sich ändernden Anforderungen ständig neu.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Leadership Vision for Agility',
@@ -118,12 +119,12 @@ return [
                                 'label'=>'Die Unternehmensführung identifiziert proaktiv Workflows, die mehr Agilität erfordern, und weist Budgets zu, um bessere Prozesse zu ermöglichen.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
-        ]
+        ],
     ],
     'structural' => [
         'title' => 'Strukturelle Agilität',
@@ -184,10 +185,10 @@ return [
                                 'label'=>'Teams werden je nach Bedarf spontan von Mitarbeitern über Funktionsbereiche hinweg in Echtzeit gebildet.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Structural Agility',
@@ -216,10 +217,10 @@ return [
                                 'label'=>'Wir identifizieren das ganze Jahr über Qualifikationslücken und nutzen kontinuierlich flexible Ressourcen.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Structural Agility',
@@ -253,12 +254,12 @@ return [
                                 'label'=>'Wissensmanagement und Zusammenarbeit sind offizielle KPIs und erstrecken sich auch auf externe Partner.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
     ],
     'process' => [
         'title' => 'Prozessbezogene Agilität',
@@ -319,10 +320,10 @@ return [
                                 'label'=>'Die Kernprozesse sind standardisiert und automatisiert, so dass Mitarbeiter über Selfservices neue Prozesse erstellen können.',
                                 'value'=>7.5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Process Agility',
@@ -356,12 +357,12 @@ return [
                                 'label'=>'Geschäftsprozesse sind vollständig digitalisiert und können dynamisch erstellt oder angepasst werden.',
                                 'value'=>7.5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
     ],
     'portfolio' => [
         'title' => 'Portfolio-Agilität',
@@ -422,10 +423,10 @@ return [
                                 'label'=>'Minimal funktionsfähige Iterationen von Produkten werden innerhalb weniger Monaten nach der Ideenfindung veröffentlicht und auf der Grundlage von Kundenfeedback konstant erweitert oder eingestellt.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Portfolio Agility',
@@ -454,10 +455,10 @@ return [
                                 'label'=>'Sehr schnell und es gibt keinen Verbesserungsbedarf.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Portfolio Agility',
@@ -491,12 +492,12 @@ return [
                                 'label'=>'Wir integrieren innovative Ideen aus einem externen Netzwerk in unsere schnellen Produktiterationen, um einen Fail-Fast-Ansatz zu verfolgen.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
     ],
     'technology' => [
         'title' => 'Technologiearchitektur',
@@ -557,10 +558,10 @@ return [
                                 'label'=>'Eine integrierte digitale Plattform mit intelligenten Systemen im Kern.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Technology Architecture',
@@ -594,10 +595,10 @@ return [
                                 'label'=>'Wir liegen weit vor unseren Mitbewerbern.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Technology Architecture',
@@ -631,11 +632,11 @@ return [
                                 'label'=>'Einsatz von cloudbasierten Technologien für integrierte Prozessautomatisierung und individuelle Prozess-Workflows, kombiniert mit vorausschauenden Analysen und systemischen agilen Prozessen.',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
-    ]
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
+    ],
 ];

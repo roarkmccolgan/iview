@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Database\Seeder;
 use Carbon\Carbon;
+use Illuminate\Database\Seeder;
 
 class RedHatSeeder extends Seeder
 {
@@ -27,7 +27,7 @@ class RedHatSeeder extends Seeder
             'subdomain' => 'digitalinnovationstaging',
             'language_id' => 1,
             'urlable_id' => 19,
-            'urlable_type' => 'App\Tool',
+            'urlable_type' => \App\Tool::class,
             'created_at' => Carbon::now(),
         ]);
         DB::table('urls')->insert([
@@ -35,16 +35,16 @@ class RedHatSeeder extends Seeder
             'subdomain' => 'digitalinnovationstaging',
             'language_id' => 1,
             'urlable_id' => 19,
-            'urlable_type' => 'App\Tool',
+            'urlable_type' => \App\Tool::class,
             'created_at' => Carbon::now(),
         ]);
         DB::table('language_tool')->insert([ //english NTT
             'tool_id' => 19,
-            'language_id' => 1
+            'language_id' => 1,
         ]);
         DB::table('tool_user')->insert([
             'tool_id' => 19,
-            'user_id' => 1 //roark
+            'user_id' => 1, //roark
         ]);
 
         /*DB::table('extra_fields')->insert([

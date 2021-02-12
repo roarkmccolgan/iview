@@ -1,6 +1,7 @@
 <?php
+
 //fireeye
-return array(
+return [
     'stage1' => 'Ad hoc',
     'stage2' => 'Opportuniste',
     'stage3' => 'Reproductible',
@@ -66,11 +67,11 @@ Si vous obtenez une note satisfaisante ou supérieure dans toutes les sections, 
                 Nous pouvons vous envoyer le rapport complet directement par e-mail.<br/>
                 Veuillez simplement nous fournir votre nom et votre adresse e-mail afin de recevoir un lien pour pouvoir le télécharger.
             </p>
-        '
+        ',
     ],
     'complete_thankyou' => 'Merci :Fname,',
     'complete_body' => 'Votre rapport personnalisé vous sera envoyé par e-mail très bientôt. En attendant, pourquoi ne pas tweeter vos résultats pour les comparer à ceux de vos abonnés?',
-    'complete_tweet' => 'Je viens de participer au test d’évaluation cyber-risque @IDCUK sponsorisé par @fireeye. Nous sommes à un niveau de maturité répétable. Intéressé ?',// http://bit.ly/2g8WN1d
+    'complete_tweet' => 'Je viens de participer au test d’évaluation cyber-risque @IDCUK sponsorisé par @fireeye. Nous sommes à un niveau de maturité répétable. Intéressé ?', // http://bit.ly/2g8WN1d
     'email'=>[
         'subject' => 'IDC Report',
         'hi' => 'Bonjour :Fname',
@@ -81,12 +82,12 @@ Si vous obtenez une note satisfaisante ou supérieure dans toutes les sections, 
         'link' => 'Télécharger le rapport',
         'extra' => 'Une fois que vous avez digéré le rapport pourquoi ne pas visiter <a href="http://www.fireeye.com" style="color:#E66B6B">FireEye</a>',
         'regards' => 'Regards',
-        'team' => 'The IDC Team'
+        'team' => 'The IDC Team',
     ],
     'introduction_title' => 'Résumé du rapport personnalisé et classement de la performance globale',
     'introduction' => '',
     'introduction-image' => 'report.jpg',
-    'overall' => array(
+    'overall' => [
         'title'=>'Votre approche globale de sécurité',
         'graph-title'=>'Comment vous situez globalement',
         'image'=>'',
@@ -131,9 +132,9 @@ Si vous obtenez une note satisfaisante ou supérieure dans toutes les sections, 
             <p>
                 Vous êtes bien au-dessus de la moyenne et vous faites partie des 5 % d’entreprises situées à ce niveau en termes de capacités de gestion du cyber-risque. Bien que vous fassiez partie des meilleurs, le travail n\'est jamais totalement terminé et vous pouvez toujours envisager des améliorations dans divers domaines afin de réduire toute violation éventuelle des données.
             </p>
-        '
-    ),
-    'cyber-risk-management-and-the-business' => array(
+        ',
+    ],
+    'cyber-risk-management-and-the-business' => [
         'title'=>'Gestion des cyber-risques et de l’activité',
         'image'=>'cloud-vision-and-strategy.jpg',
         'pb'=>'pb',
@@ -166,9 +167,9 @@ Si vous obtenez une note satisfaisante ou supérieure dans toutes les sections, 
             <p>
                 Excellent ! Vous vous situez bien au-dessus de vos pairs dans ce domaine de la gestion du cyber-risque, mais vous devriez tout de même réexaminer vos procédures pour garder une longueur d’avance.
             </p>
-        '
-    ),
-    'cyber-risk-management-operations-and-defence' => array(
+        ',
+    ],
+    'cyber-risk-management-operations-and-defence' => [
         'title'=> 'Gestion des cyber-risques : mise en œuvre et protection',
         'image'=>'processes-and-skill-sets.jpg',
         'pb'=>'pb',
@@ -201,9 +202,9 @@ Si vous obtenez une note satisfaisante ou supérieure dans toutes les sections, 
             <p>
                 En tête de classement ! Vous vous situez bien au-dessus de vos pairs dans ce domaine de la gestion du cyber-risque, mais vous devriez toujours envisager d’autres moyens de vous améliorer à mesure qu’apparaissent de nouvelles approches.
             </p>
-        '
-    ),
-    'cyber-risk-management-breach-detection-and-remediation' => array(
+        ',
+    ],
+    'cyber-risk-management-breach-detection-and-remediation' => [
         'title'=> 'Gestion des cyber-risques : détection des brèches et résolution',
         'image'=>'business-mix.jpg',
         'pb'=>'pb',
@@ -236,8 +237,8 @@ Si vous obtenez une note satisfaisante ou supérieure dans toutes les sections, 
             <p>
                Excellent ! Vous vous situez bien au-dessus de vos pairs en termes de gestion du cyber-risque lié à votre activité. Vous affichez une excellente performance en gestion du cyber-risque mais vous ne devriez pas vous reposer sur vos lauriers, et il est recommandé de réévaluer continuellement ce que vous faites.
             </p>
-        '
-    ),
+        ',
+    ],
     'questions' => [
         'q1'=>[
             'behind' => '
@@ -255,7 +256,7 @@ Si vous obtenez une note satisfaisante ou supérieure dans toutes les sections, 
                 <p>
                     Gardez à l’esprit que les technologies et les capacités sont en constante évolution et que vous devriez réévaluer régulièrement ce que vous faites et comment vous le faites.
                 </p>
-            '
+            ',
         ],
         'q2'=>[
             'behind' => '
@@ -272,7 +273,7 @@ Si vous obtenez une note satisfaisante ou supérieure dans toutes les sections, 
                 <p>
                     Bien que vos efforts d’amélioration de la gestion du cyber-risque puissent s’appliquer à d’autres domaines, vous devriez continuer à adopter et à optimiser des capacités avancées en termes de stratégie, de gestion, d’automatisation et d’orchestration.
                 </p>
-            '
+            ',
         ],
         'q3'=>[
             'behind' => '
@@ -289,7 +290,7 @@ Si vous obtenez une note satisfaisante ou supérieure dans toutes les sections, 
                 <p>
                     Pour conserver votre avance, vous devez continuer à repousser les limites.  Efforcez-vous d’identifier les domaines où des compromis sont possibles, en gardant à l’esprit que vos actifs stratégiques doivent absolument rester sous votre contrôle, afin de trouver de nouvelles opportunités de développement.
                 </p>
-            '
+            ',
         ],
         'q4'=>[
             'behind' => '
@@ -306,7 +307,7 @@ Si vous obtenez une note satisfaisante ou supérieure dans toutes les sections, 
                 <p>
                     Vous avez une longueur d’avance en termes de gestion des risques d’atteinte à la sécurité et de planification de vos réponses en cas d’attaque. Toutefois, pour l\'étape suivante, cherchez comment maximiser votre assurance cybercriminalité pour limiter les coûts potentiels d’une violation de données, mais également pour qu’elle devienne un moteur d’excellence – et une source potentielle d’avantage concurrentiel au niveau du traitement des données de clients.
                 </p>
-            '
+            ',
         ],
         'q5'=>[
             'behind' => '
@@ -323,7 +324,7 @@ Si vous obtenez une note satisfaisante ou supérieure dans toutes les sections, 
                 <p>
                     Envisagez comment intégrer la gestion du cyber-risque dans le développement de nouvelles priorités commerciales afin de vous assurer de l’identification et de la gestion proactives du cyber-risque en vue de faciliter les objectifs de l’entreprise.
                 </p>
-            '
+            ',
         ],
         'q6'=>[
             'behind' => '
@@ -340,7 +341,7 @@ Si vous obtenez une note satisfaisante ou supérieure dans toutes les sections, 
                 <p>
                     Afin d’élargir votre cadre de travail, déterminez comment les spécialistes du risque, de la conformité et de la sécurité du Conseil d’administration et de l’entreprise dans son ensemble peuvent apporter une contribution positive au processus. Faites appel de manière efficace aux prestataires externes pour évaluer les meilleures pratiques.
                 </p>
-            '
+            ',
         ],
         'q7'=>[
             'behind' => '
@@ -357,7 +358,7 @@ Si vous obtenez une note satisfaisante ou supérieure dans toutes les sections, 
                 <p>
                     Déterminez en quoi la sécurité peut devenir un élément majeur dans la planification de nouvelles initiatives. Ensuite, assurez-vous que la sécurité demeure l’une des priorités tout au long du développement, de la phase de test à l’implémentation des projets, et ce, pour l’ensemble de votre activité.
                 </p>
-            '
+            ',
         ],
         'q8'=>[
             'behind' => '
@@ -374,7 +375,7 @@ Si vous obtenez une note satisfaisante ou supérieure dans toutes les sections, 
                 <p>
                     Pour parvenir à mettre en œuvre des améliorations supplémentaires, positionnez l’investissement en sécurité comme un instrument qui favorisera la réalisation des objectifs commerciaux de l’entreprise tout en soutenant la croissance du chiffre d’affaires et de la rentabilité.
                 </p>
-            '
+            ',
         ],
         'q9'=>[
             'behind' => '
@@ -391,7 +392,7 @@ Si vous obtenez une note satisfaisante ou supérieure dans toutes les sections, 
                 <p>
                     Pour atteindre le niveau suivant, déterminez comment maximiser le point d’intersection entre l’informatique et la sécurité physique à l’aide de techniques d’identification biométrique.
                 </p>
-            '
+            ',
         ],
         'q10'=>[
             'behind' => '
@@ -408,7 +409,7 @@ Si vous obtenez une note satisfaisante ou supérieure dans toutes les sections, 
                 <p>
                     Déterminez de quelle manière votre organisation peut devenir non seulement un leader dans la gestion des meilleures pratiques, mais également un chef de file au sein de votre industrie. Cette démarche peut même devenir un avantage concurrentiel par rapport à vos pairs.
                 </p>
-            '
+            ',
         ],
         'q11'=>[
             'behind' => '
@@ -425,7 +426,7 @@ Si vous obtenez une note satisfaisante ou supérieure dans toutes les sections, 
                 <p>
                     Afin de cibler des améliorations supplémentaires, définissez clairement dans quelle mesure vous maîtrisez les technologies « de pointe » et les implémentez à l’aide d’approches basées sur le risque dans votre processus décisionnel. Cette démarche permettra non seulement de limiter votre exposition aux pénalités au titre du règlement général sur la protection des données, mais pourrait également devenir un avantage concurrentiel.
                 </p>
-            '
+            ',
         ],
         'q12'=>[
             'behind' => '
@@ -442,7 +443,7 @@ Si vous obtenez une note satisfaisante ou supérieure dans toutes les sections, 
                 <p>
                     Pour parvenir à vous améliorer, envisagez en quoi le reporting en continu peut devenir plus qu’un simple tableau de bord mais plutôt un moteur dans le processus décisionnel au niveau de l’entreprise par le biais d’une capacité opérationnelle intégrée.
                 </p>
-            '
+            ',
         ],
         'q13'=>[
             'behind' => '
@@ -459,7 +460,7 @@ Si vous obtenez une note satisfaisante ou supérieure dans toutes les sections, 
                 <p>
                     Pour parvenir à vous améliorer, envisagez en quoi le reporting en continu peut devenir plus qu’un simple tableau de bord mais plutôt un moteur dans le processus décisionnel au niveau de l’entreprise par le biais d’une capacité opérationnelle intégrée.
                 </p>
-            '
+            ',
         ],
         'q14'=>[
             'behind' => '
@@ -476,7 +477,7 @@ Si vous obtenez une note satisfaisante ou supérieure dans toutes les sections, 
                 <p>
                     Pour parvenir à des développements supplémentaires dans votre Gestion du cyber-risque, envisagez dans quelle mesure d’autres éléments peuvent être automatisés et intégrés dans une suite de gestion de bout en bout, pour favoriser l’agilité du service informatique.
                 </p>
-            '
+            ',
         ],
         'q15'=>[
             'behind' => '
@@ -493,7 +494,7 @@ Si vous obtenez une note satisfaisante ou supérieure dans toutes les sections, 
                 <p>
                     Pour réellement faire partie des meilleurs, envisagez les mesures pouvant être prises pour automatiser et orchestrer les processus de bout en bout chaque fois que cela est possible afin de piloter la Gestion du cyber-risque en termes d’agilité, de qualité et de conformité.
                 </p>
-            '
+            ',
         ],
         'q16'=>[
             'behind' => '
@@ -510,7 +511,7 @@ Si vous obtenez une note satisfaisante ou supérieure dans toutes les sections, 
                 <p>
                     Plutôt que simplement vous concentrer sur le potentiel d’extension de l’automatisation, pensez à inclure l’élément humain dans l’équation. Pour renforcer leur impact, déterminez en quoi les initiatives d’automatisation que vous voulez mettre en œuvre peuvent servir à compléter l’action du personnel de sécurité, et améliorer l’efficacité professionnelle de celui-ci en lui permettant de développer ses compétences par le biais de tâches plus complexes.
                 </p>
-            '
+            ',
         ],
         'q17'=>[
             'behind' => '
@@ -527,7 +528,7 @@ Si vous obtenez une note satisfaisante ou supérieure dans toutes les sections, 
                 <p>
                     Pour innover dans ce domaine, considérez l’impact que peuvent avoir les MSSP. Les MSSP peuvent analyser la gestion des outils et des dispositifs de sécurité à l’aide de moteurs de corrélation alimentés par le Big Data et présenter l’information reçue par le biais de tableaux de bord de gestion, en facilitant le pilotage du processus décisionnel par une meilleure compréhension de la nécessité de modifier le positionnement de sécurité en temps réel.
                 </p>
-            '
+            ',
         ],
         'q25'=>[
             'behind' => '
@@ -544,7 +545,7 @@ Si vous obtenez une note satisfaisante ou supérieure dans toutes les sections, 
                 <p>
                     Vous êtes un leader en termes d’approche de votre utilisation des MSSP, car vous y faites largement appel et vous les utilisez de manière équilibrée en tant que canal de prestations complémentaires à vos ressources internes. Pour parvenir à des développements supplémentaires, envisagez d’améliorer votre utilisation des MSSP afin de progresser dans l’implémentation et les opérations liées aux meilleures pratiques.
                 </p>
-            '
+            ',
         ],
         'q18'=>[
             'behind' => '
@@ -561,7 +562,7 @@ Si vous obtenez une note satisfaisante ou supérieure dans toutes les sections, 
                 <p>
                     L’intelligence artificielle et l’heuristique arrivent à maturation. Vous devriez les implémenter, si ce n’est déjà fait, pour pouvoir continuer à viser le leadership.
                 </p>
-            '
+            ',
         ],
         'q19'=>[
             'behind' => '
@@ -578,7 +579,7 @@ Si vous obtenez une note satisfaisante ou supérieure dans toutes les sections, 
                 <p>
                     Les Honeypot/la collecte de renseignements et les équipes d’intervention deviennent des pratiques standard pour les opérations de sécurité de haut volume, matures et avancées, et vous devriez les implémenter si ce n’est déjà fait.
                 </p>
-            '
+            ',
         ],
         'q20'=>[
             'behind' => '
@@ -595,7 +596,7 @@ Si vous obtenez une note satisfaisante ou supérieure dans toutes les sections, 
                 <p>
                     Les capacités de remédiation basées sur le Machine Learning arrivent rapidement à maturation, et vous devriez les implémenter si ce n’est déjà fait.
                 </p>
-            '
+            ',
         ],
         'q21'=>[
             'behind' => '
@@ -612,7 +613,7 @@ Si vous obtenez une note satisfaisante ou supérieure dans toutes les sections, 
                 <p>
                     Comprendre le positionnement de l\'étendu de votre réseau de chaîne d’approvisionnement ou de partenariat constitue une prochaine étape essentielle, que ce soit au niveau des vulnérabilités de sécurité héritées d’une tierce partie, ou des nouvelles règles de responsabilité conjointe introduites par le règlement général sur la protection des données.
                 </p>
-            '
+            ',
         ],
         'q23'=>[
             'behind' => '
@@ -629,7 +630,7 @@ Si vous obtenez une note satisfaisante ou supérieure dans toutes les sections, 
                 <p>
                     Aujourd’hui, il est essentiel d’établir une validation de sécurité par des tierces parties et ce, même dans les environnements évolués au sein desquels l’auto-évaluation de votre approche peut mener à une certaine complaisance. La validation en continu est désormais une norme attendue, bien qu’elle puisse en grande partie être automatisée. Des tests d’intrusion par service devraient être effectués au moins tous les six mois, en raison de l’évolution rapide de la menace. Une fréquence de test moins élevée met en danger votre organisation.
                 </p>
-            '
+            ',
         ],
         'q24'=>[
             'behind' => '
@@ -646,7 +647,7 @@ Si vous obtenez une note satisfaisante ou supérieure dans toutes les sections, 
                 <p>
                     Avec des cyber-attaques toujours plus agressives et fréquentes, être capable de détecter et de répondre de manière adéquate à une violation de données deviendra un marqueur clé du leadership dans l’économie numérique. Concentrez-vous sur la mise en œuvre continue des meilleures pratiques au-delà des normes de conformité et veillez à poursuivre les évaluations externes de vos forces et de vos faiblesses.
                 </p>
-            '
+            ',
         ],
-    ]
-);
+    ],
+];

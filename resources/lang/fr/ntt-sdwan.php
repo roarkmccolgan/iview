@@ -1,6 +1,7 @@
 <?php
+
 //NTT
-return array(
+return [
     'elqFormName'=>'',
     'developedby'=>'Developed by',
     'sponsoredby'=>'Sponsored by',
@@ -27,7 +28,7 @@ return array(
             Cet outil d\'auto-évaluation est complété par une recherche indépendante sur les utilisateurs finaux  et une profonde compréhension du marché de la part d\'IDC. Au terme d\'un bref questionnaire (10 minutes), vous recevrez un rapport personnalisé qui évalue votre réseau WAN et qui vous fournit des conseils sur mesure et essentiels pour vous aider à vous préparer aux exigences de demain et planifier votre stratégie en matière de réseau WAN de nouvelle génération.
         </p>',
     'startbut'=>'Commencer l\'évaluation',
-    
+
     'send'=>'We can send you the full results directly to your mailbox',
     'register'=>'Enregistrez-vous pour recevoir votre rapport personnalisé',
     'provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
@@ -59,7 +60,7 @@ return array(
         <a class="btn btn--primary" target="_blank" href="http://www.ntt.com/en/services/network/software-defined-network.html">
             Cliquez ici pour plus d\'informations
         </a>',
-    'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @ntt. Interested? ',// http://bit.ly/2gslXEh
+    'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @ntt. Interested? ', // http://bit.ly/2gslXEh
     'email'=>[
         'subject' => 'Outil de conseil pour un WAN de dernière génération, NTT Communications',
         'hi' => 'Bonjour :Fname',
@@ -67,7 +68,7 @@ return array(
         'link' => 'Télécharger le rapport',
         'extra' => 'Après avoir lu le rapport, n\'hésitez pas à vous rendre sur le site <a href="http://www.ntt.com/en/services/network/software-defined-network.html" style="color:#054683">SD-WAN content hub</a>',
         'regards' => 'Cordialement',
-        'team' => 'L\'équipe IDC'
+        'team' => 'L\'équipe IDC',
     ],
     'email_apology'=>[
         'subject' => 'Outil de conseil pour un WAN de dernière génération, NTT Communications',
@@ -78,7 +79,7 @@ return array(
         'link' => 'Télécharger le rapport',
         'extra' => 'Nous nous excusons de la gêne occasionnée. Si vous avez d\'autres questions concernant l\'outil d\'évaluation, n\'hésitez pas à me contacter à <a href="mailto:abuss@idc.com" style="color:#054683">abuss@idc.com</a>',
         'regards' => 'Cordialement',
-        'team' => 'Andrew Buss<br/>directeur conseil, IDC Europe.'
+        'team' => 'Andrew Buss<br/>directeur conseil, IDC Europe.',
     ],
     'introduction' => '
         <h2 class="text-ntt-blue mb-2">INTRODUCTION</h2>
@@ -805,7 +806,7 @@ return array(
             </p>
         </div>
     ',
-    
+
     'operations-3-stage3' => '
         <div class="clearfix">
             <p class="w-2/3 ml-auto mb-2 text-ntt-blue mt-4 font-bold">
@@ -1098,4 +1099,4 @@ return array(
                 
         </div>
     ',
-);
+];

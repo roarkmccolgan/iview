@@ -1,4 +1,5 @@
 <?php
+
 return [
     'screeners' => [
         'title' => 'Données démographiques',
@@ -19,37 +20,37 @@ return [
                             [
                                 'label'=>'France',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Allemagne',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Royaume­Uni',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Espagne',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Italie',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Autre',
                                 'value'=>0,
-                                'checked'=>false
-                            ]
+                                'checked'=>false,
+                            ],
                         ],
-                        'other'=>'Autre|0|Votre pays'
-                    ]
-                ]
+                        'other'=>'Autre|0|Votre pays',
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Données démographiques',
@@ -62,31 +63,31 @@ return [
                             [
                                 'label'=>'Moins de 1000',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'1000-2499',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'2500-4999',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'5000-9999',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'10000 ou plus',
                                 'value'=>1,
-                                'checked'=>false
-                            ]
-                        ]
-                    ]
-                ]
+                                'checked'=>false,
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Données démographiques',
@@ -99,75 +100,75 @@ return [
                             [
                                 'label'=>'Services financiers',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Fabrication',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Services de télécommunications (y compris hébergeurs, xSP, et fournisseurs de services cloud)',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Éducation',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Santé',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Médias',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Transport, distribution et logistique',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Vente au détail/en gros',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Conseil informatique et services professionnels autour de l\'informatique',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Conseil autre qu\'informatique et autres services professionnels (comptabilité, juridiques, publicité, immobilier, recrutement, conseil aux entreprises, etc.) ',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Administration centrale ou locale, ou services publics',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Services d’utilité publique – électricité, gaz, eau',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Autre',
                                 'value'=>1,
                                 'checked'=>false,
-                                'other' => true
-                            ]
+                                'other' => true,
+                            ],
                         ],
-                        'other'=>'Autre|1|Précisez'
-                    ]
-                ]
-            ]
-        ]
+                        'other'=>'Autre|1|Précisez',
+                    ],
+                ],
+            ],
+        ],
     ],
     'cyber-risk-management-and-the-business' => [
         'title' => 'Gestion des cyber-risques et de l’activité',
@@ -193,7 +194,7 @@ return [
                                     'stage3' => 'Inférieur',
                                     'stage4' => 'Inférieur',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Un facteur d\'efficacité opérationnelle',
@@ -205,7 +206,7 @@ return [
                                     'stage3' => 'Satisfaisant',
                                     'stage4' => 'Satisfaisant',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Un moteur d\'avantage ou de différenciation concurrentielle',
@@ -217,11 +218,11 @@ return [
                                     'stage3' => 'Supérieur',
                                     'stage4' => 'Supérieur',
                                     'stage5' => 'Satisfaisant',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]/*,
+                                ],
+                            ],
+                        ],
+                    ],
+                ], /*,
                 'report' => array(
                     'text'=>'IDC estimates that ~45% of all new servers sold in Europe in 2016 will be virtualized. Excluding non suitable environments such as tower machines or High Performance Computing, >70% of the new servers were virtualized. ',
                     'image'=>'img/techfit_icons_Q-B1.png'
@@ -245,7 +246,7 @@ return [
                                     'stage3' => 'Inférieur',
                                     'stage4' => 'Inférieur',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Nous sommes généralement à l\'aise avec des demandes autour des applications ou des services existants, mais avons du mal avec les demandes de services nouveaux ou améliorés.',
@@ -257,7 +258,7 @@ return [
                                     'stage3' => 'Satisfaisant',
                                     'stage4' => 'Inférieur',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Nous sommes généralement à l\'aise avec toutes les demandes : applications et services existants et services nouveaux ou améliorés.',
@@ -269,7 +270,7 @@ return [
                                     'stage3' => 'Satisfaisant',
                                     'stage4' => 'Satisfaisant',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Nous sommes très bons à répondre à la plupart des demandes, ou même à toutes.',
@@ -281,11 +282,11 @@ return [
                                     'stage3' => 'Supérieur',
                                     'stage4' => 'Supérieur',
                                     'stage5' => 'Satisfaisant',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Gestion des cyber-risques et de l’activité',
@@ -305,7 +306,7 @@ return [
                                     'stage3' => 'Inférieur',
                                     'stage4' => 'Inférieur',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Nous cherchons à éviter les risques, mais nous prendrons des risques s\'ils sont très justifiés.',
@@ -317,7 +318,7 @@ return [
                                     'stage3' => 'Inférieur',
                                     'stage4' => 'Inférieur',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Nous nous méfions des risques, mais nous les prendrons dans les cas où nous pourrons voir un avantage commercial clair.',
@@ -329,7 +330,7 @@ return [
                                     'stage3' => 'Satisfaisant',
                                     'stage4' => 'Satisfaisant',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Nous prendrons des risques facilement pour aider l\'entreprise à se développer.',
@@ -341,7 +342,7 @@ return [
                                     'stage3' => 'Supérieur',
                                     'stage4' => 'Satisfaisant',
                                     'stage5' => 'Satisfaisant',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Nous prenons des risques et les gérons activement pour aider l\'entreprise à se développer.',
@@ -353,11 +354,11 @@ return [
                                     'stage3' => 'Supérieur',
                                     'stage4' => 'Supérieur',
                                     'stage5' => 'Satisfaisant',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page4' => [
                 'title' => 'Gestion des cyber-risques et de l’activité',
@@ -368,7 +369,7 @@ return [
                         'name'=>'q4',
                         'calc'=>[
                             'type'=>'average',
-                            'value'=>false
+                            'value'=>false,
                         ],
                         'options'=>[
                             [
@@ -385,7 +386,7 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Satisfaisant',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nous ne l\'avons pas, mais c\'est en projet',
@@ -397,7 +398,7 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non, et pas de projet',
@@ -409,9 +410,9 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Détection proactive',
@@ -427,7 +428,7 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Satisfaisant',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nous ne l\'avons pas, mais c\'est en projet',
@@ -439,7 +440,7 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non, et pas de projet',
@@ -451,9 +452,9 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Plan de réaction',
@@ -469,7 +470,7 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Satisfaisant',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nous ne l\'avons pas, mais c\'est en projet',
@@ -481,7 +482,7 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non, et pas de projet',
@@ -493,9 +494,9 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Plan de communications internes',
@@ -511,7 +512,7 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Satisfaisant',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nous ne l\'avons pas, mais c\'est en projet',
@@ -523,7 +524,7 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non, et pas de projet',
@@ -535,9 +536,9 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Plan de communications externes et relations publiques',
@@ -553,7 +554,7 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Satisfaisant',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nous ne l\'avons pas, mais c\'est en projet',
@@ -565,7 +566,7 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non, et pas de projet',
@@ -577,9 +578,9 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Plan de notification de transgression',
@@ -595,7 +596,7 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Satisfaisant',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nous ne l\'avons pas, mais c\'est en projet',
@@ -607,7 +608,7 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non, et pas de projet',
@@ -619,9 +620,9 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Plan de restauration après transgression',
@@ -637,7 +638,7 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Satisfaisant',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nous ne l\'avons pas, mais c\'est en projet',
@@ -649,7 +650,7 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non, et pas de projet',
@@ -661,9 +662,9 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Assurance contre le cyber-risque',
@@ -679,7 +680,7 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Satisfaisant',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Nous ne l\'avons pas, mais c\'est en projet',
@@ -691,7 +692,7 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non, et pas de projet',
@@ -703,19 +704,19 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
-                                    ]
-                                ]
-                            ]
-                        ]
-                    ]
+                                        ],
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
                 ]
                 /*,
                 'report' => array(
                     'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
                     'image'=>'img/techfit_icons_Q-A1.png'
                 )*/,
-                'report' => false
+                'report' => false,
             ],
             'page5' => [
                 'title' => 'Gestion des cyber-risques et de l’activité',
@@ -735,7 +736,7 @@ return [
                                     'stage3' => 'Inférieur',
                                     'stage4' => 'Inférieur',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Elle est généralement déléguée à l\'informatique.',
@@ -747,7 +748,7 @@ return [
                                     'stage3' => 'Inférieur',
                                     'stage4' => 'Inférieur',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Elle est partagée entre l\'informatique et divers secteurs d\'activité.',
@@ -759,7 +760,7 @@ return [
                                     'stage3' => 'Satisfaisant',
                                     'stage4' => 'Satisfaisant',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Elle est partagée entre l\'informatique et la direction.',
@@ -771,7 +772,7 @@ return [
                                     'stage3' => 'Satisfaisant',
                                     'stage4' => 'Satisfaisant',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Elle est partagée entre l\'informatique, la direction, et divers secteurs d\'activité.',
@@ -783,11 +784,11 @@ return [
                                     'stage3' => 'Supérieur',
                                     'stage4' => 'Satisfaisant',
                                     'stage5' => 'Satisfaisant',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page6' => [
                 'title' => 'Gestion des cyber-risques et de l’activité',
@@ -798,7 +799,7 @@ return [
                         'name'=>'q6',
                         'calc'=>[
                             'type'=>'normalize',
-                            'value'=>5
+                            'value'=>5,
                         ],
                         'options'=>[
                             [
@@ -815,7 +816,7 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Satisfaisant',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non',
@@ -827,9 +828,9 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Directeur financier',
@@ -845,7 +846,7 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Satisfaisant',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non',
@@ -857,9 +858,9 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Directeur de l\'exploitation',
@@ -875,7 +876,7 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Satisfaisant',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non',
@@ -887,9 +888,9 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Administrateur non exécutif missionné pour les questions risque/conformité/sécurité',
@@ -905,7 +906,7 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Satisfaisant',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non',
@@ -917,9 +918,9 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Administrateur exécutif missionné pour les questions risque/conformité/sécurité',
@@ -935,7 +936,7 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Satisfaisant',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non',
@@ -947,9 +948,9 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Fonction dédiée risque/conformité/sécurité (non au niveau du conseil d\'administration)',
@@ -965,7 +966,7 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Satisfaisant',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non',
@@ -977,18 +978,18 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
-                                    ]
-                                ]
-                            ]
-                        ]
-                    ]
+                                        ],
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
                 ]/*,
                 'report' => array(
                     'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
                     'image'=>'img/techfit_icons_Q-A1.png'
                 )*/,
-                'report' => false
+                'report' => false,
             ],
             'page7' => [
                 'title' => 'Gestion des cyber-risques et de l’activité',
@@ -1008,7 +1009,7 @@ return [
                                     'stage3' => 'Supérieur',
                                     'stage4' => 'Supérieur',
                                     'stage5' => 'Satisfaisant',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Au cours de la planification',
@@ -1020,7 +1021,7 @@ return [
                                     'stage3' => 'Satisfaisant',
                                     'stage4' => 'Satisfaisant',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Au début du développement',
@@ -1032,7 +1033,7 @@ return [
                                     'stage3' => 'Satisfaisant',
                                     'stage4' => 'Inférieur',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Au cours du développement',
@@ -1044,7 +1045,7 @@ return [
                                     'stage3' => 'Inférieur',
                                     'stage4' => 'Inférieur',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Quand quelque chose va mal',
@@ -1056,11 +1057,11 @@ return [
                                     'stage3' => 'Inférieur',
                                     'stage4' => 'Inférieur',
                                     'stage5' => 'Inférieur',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page8' => [
                 'title' => 'Gestion des cyber-risques et de l’activité',
@@ -1080,7 +1081,7 @@ return [
                                     'stage3' => 'Inférieur',
                                     'stage4' => 'Inférieur',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Serré, couvrant à peine les opérations essentielles',
@@ -1092,7 +1093,7 @@ return [
                                     'stage3' => 'Inférieur',
                                     'stage4' => 'Inférieur',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Bon pour les opérations de base, mais serré pour de nouvelles initiatives',
@@ -1104,7 +1105,7 @@ return [
                                     'stage3' => 'Satisfaisant',
                                     'stage4' => 'Inférieur',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Bon pour les opérations de base, et pour les nouvelles initiatives dont la valeur est claire',
@@ -1116,7 +1117,7 @@ return [
                                     'stage3' => 'Supérieur',
                                     'stage4' => 'Satisfaisant',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Dans l\'ensemble, facilement disponible avec une bonne analyse de rentabilité, même pour un développement expérimental',
@@ -1128,13 +1129,13 @@ return [
                                     'stage3' => 'Supérieur',
                                     'stage4' => 'Supérieur',
                                     'stage5' => 'Satisfaisant',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
-        ]
+        ],
     ],
     'cyber-risk-management-operations-and-defence' => [
         'title' => 'Gestion des cyber-risques : mise en œuvre et protection',
@@ -1151,7 +1152,7 @@ return [
                         'name'=>'q9',
                         'calc'=>[
                             'type'=>'average',
-                            'value'=>false
+                            'value'=>false,
                         ],
                         'options'=>[
                             [
@@ -1170,7 +1171,7 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1182,7 +1183,7 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1194,7 +1195,7 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1206,7 +1207,7 @@ return [
                                             'stage3' => 'Supérieur',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1218,9 +1219,9 @@ return [
                                             'stage3' => 'Supérieur',
                                             'stage4' => 'Supérieur',
                                             'stage5' => 'Satisfaisant',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Rendez-vous préalables',
@@ -1238,7 +1239,7 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1250,7 +1251,7 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1262,7 +1263,7 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1274,7 +1275,7 @@ return [
                                             'stage3' => 'Supérieur',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1286,9 +1287,9 @@ return [
                                             'stage3' => 'Supérieur',
                                             'stage4' => 'Supérieur',
                                             'stage5' => 'Satisfaisant',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Vérification d\'identité',
@@ -1306,7 +1307,7 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1318,7 +1319,7 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1330,7 +1331,7 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1342,7 +1343,7 @@ return [
                                             'stage3' => 'Supérieur',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1354,9 +1355,9 @@ return [
                                             'stage3' => 'Supérieur',
                                             'stage4' => 'Supérieur',
                                             'stage5' => 'Satisfaisant',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Sas de sécurité pour l\'entrée/la sortie',
@@ -1374,7 +1375,7 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1386,7 +1387,7 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1398,7 +1399,7 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1410,7 +1411,7 @@ return [
                                             'stage3' => 'Supérieur',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1422,9 +1423,9 @@ return [
                                             'stage3' => 'Supérieur',
                                             'stage4' => 'Supérieur',
                                             'stage5' => 'Satisfaisant',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Biométrie',
@@ -1442,7 +1443,7 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1454,7 +1455,7 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1466,7 +1467,7 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1478,7 +1479,7 @@ return [
                                             'stage3' => 'Supérieur',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1490,9 +1491,9 @@ return [
                                             'stage3' => 'Supérieur',
                                             'stage4' => 'Supérieur',
                                             'stage5' => 'Satisfaisant',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Vidéosurveillance',
@@ -1510,7 +1511,7 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1522,7 +1523,7 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1534,7 +1535,7 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1546,7 +1547,7 @@ return [
                                             'stage3' => 'Supérieur',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1558,9 +1559,9 @@ return [
                                             'stage3' => 'Supérieur',
                                             'stage4' => 'Supérieur',
                                             'stage5' => 'Satisfaisant',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Accompagnement permanent (membres du personnel et visiteurs doivent travailler en paires ou être accompagnés).',
@@ -1578,7 +1579,7 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1590,7 +1591,7 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1602,7 +1603,7 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1614,7 +1615,7 @@ return [
                                             'stage3' => 'Supérieur',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1626,9 +1627,9 @@ return [
                                             'stage3' => 'Supérieur',
                                             'stage4' => 'Supérieur',
                                             'stage5' => 'Satisfaisant',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Modification des autorisations, approbations et enregistrements',
@@ -1646,7 +1647,7 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1658,7 +1659,7 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1670,7 +1671,7 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1682,7 +1683,7 @@ return [
                                             'stage3' => 'Supérieur',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1694,18 +1695,18 @@ return [
                                             'stage3' => 'Supérieur',
                                             'stage4' => 'Supérieur',
                                             'stage5' => 'Satisfaisant',
-                                        ]
-                                    ]
-                                ]
-                            ]
-                        ]
-                    ]
+                                        ],
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
                 ]/*,
                 'report' => array(
                     'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
                     'image'=>'img/techfit_icons_Q-A1.png'
                 )*/,
-                'report' => false
+                'report' => false,
             ],
             'page2' => [
                 'title' => 'Gestion des cyber-risques : mise en œuvre et protection',
@@ -1725,7 +1726,7 @@ return [
                                     'stage3' => 'Inférieur',
                                     'stage4' => 'Inférieur',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Nous le faisons en interne sur une base informelle.',
@@ -1737,7 +1738,7 @@ return [
                                     'stage3' => 'Inférieur',
                                     'stage4' => 'Inférieur',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Nous le faisons sur une base formelle (avec des standards) en utilisant nos compétences générales.',
@@ -1749,7 +1750,7 @@ return [
                                     'stage3' => 'Satisfaisant',
                                     'stage4' => 'Inférieur',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Nous le faisons en interne sur une base formelle (avec des normes) en utilisant des compétences d\'experts.',
@@ -1761,7 +1762,7 @@ return [
                                     'stage3' => 'Supérieur',
                                     'stage4' => 'Satisfaisant',
                                     'stage5' => 'Satisfaisant',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Nous utilisons un expert externe pour évaluation (en utilisant des normes).',
@@ -1773,11 +1774,11 @@ return [
                                     'stage3' => 'Supérieur',
                                     'stage4' => 'Supérieur',
                                     'stage5' => 'Satisfaisant',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Gestion des cyber-risques : mise en œuvre et protection',
@@ -1788,7 +1789,7 @@ return [
                         'name'=>'q11',
                         'calc'=>[
                             'type'=>'average',
-                            'value'=>false
+                            'value'=>false,
                         ],
                         'options'=>[
                             [
@@ -1807,7 +1808,7 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1819,7 +1820,7 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1831,7 +1832,7 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1843,7 +1844,7 @@ return [
                                             'stage3' => 'Supérieur',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1855,9 +1856,9 @@ return [
                                             'stage3' => 'Supérieur',
                                             'stage4' => 'Supérieur',
                                             'stage5' => 'Satisfaisant',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Évaluation des capacités et des lacunes',
@@ -1875,7 +1876,7 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1887,7 +1888,7 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1899,7 +1900,7 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1911,7 +1912,7 @@ return [
                                             'stage3' => 'Supérieur',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1923,9 +1924,9 @@ return [
                                             'stage3' => 'Supérieur',
                                             'stage4' => 'Supérieur',
                                             'stage5' => 'Satisfaisant',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Planification de la mise en oeuvre',
@@ -1943,7 +1944,7 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -1955,7 +1956,7 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -1967,7 +1968,7 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -1979,7 +1980,7 @@ return [
                                             'stage3' => 'Supérieur',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -1991,9 +1992,9 @@ return [
                                             'stage3' => 'Supérieur',
                                             'stage4' => 'Supérieur',
                                             'stage5' => 'Satisfaisant',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Mise en oeuvre',
@@ -2011,7 +2012,7 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -2023,7 +2024,7 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -2035,7 +2036,7 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -2047,7 +2048,7 @@ return [
                                             'stage3' => 'Supérieur',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -2059,9 +2060,9 @@ return [
                                             'stage3' => 'Supérieur',
                                             'stage4' => 'Supérieur',
                                             'stage5' => 'Satisfaisant',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Amélioration continue/meilleures pratiques au-delà du RGPD lui-même (au-delà de la réglementation)',
@@ -2079,7 +2080,7 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -2091,7 +2092,7 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -2103,7 +2104,7 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -2115,7 +2116,7 @@ return [
                                             'stage3' => 'Supérieur',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -2127,9 +2128,9 @@ return [
                                             'stage3' => 'Supérieur',
                                             'stage4' => 'Supérieur',
                                             'stage5' => 'Satisfaisant',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Compréhension de la réduction des conséquences par une détection/restauration au plus tôt.',
@@ -2147,7 +2148,7 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'2',
@@ -2159,7 +2160,7 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'3',
@@ -2171,7 +2172,7 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'4',
@@ -2183,7 +2184,7 @@ return [
                                             'stage3' => 'Supérieur',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Inférieur',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'5',
@@ -2195,18 +2196,18 @@ return [
                                             'stage3' => 'Supérieur',
                                             'stage4' => 'Supérieur',
                                             'stage5' => 'Satisfaisant',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
-                        ]
-                    ]
+                        ],
+                    ],
                 ]/*,
                 'report' => array(
                     'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
                     'image'=>'img/techfit_icons_Q-A1.png'
                 )*/,
-                'report' => false
+                'report' => false,
             ],
             'page4' => [
                 'title' => 'Gestion des cyber-risques : mise en œuvre et protection',
@@ -2226,7 +2227,7 @@ return [
                                     'stage3' => 'Inférieur',
                                     'stage4' => 'Inférieur',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Nos achats sont la plupart du temps tactiques lorsque des problèmes surviennent, mais nous faisons quelques achats stratégiques.',
@@ -2238,7 +2239,7 @@ return [
                                     'stage3' => 'Inférieur',
                                     'stage4' => 'Inférieur',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Nos achats tactiques et nos achats stratégiques sont équilibrés.',
@@ -2250,7 +2251,7 @@ return [
                                     'stage3' => 'Satisfaisant',
                                     'stage4' => 'Inférieur',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Nos achats sont la plupart du temps stratégiques, mais nous ferons des achats tactiques en cas de problème.',
@@ -2262,7 +2263,7 @@ return [
                                     'stage3' => 'Supérieur',
                                     'stage4' => 'Satisfaisant',
                                     'stage5' => 'Satisfaisant',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Nos achats sont plutôt toujours stratégiques.',
@@ -2274,11 +2275,11 @@ return [
                                     'stage3' => 'Supérieur',
                                     'stage4' => 'Supérieur',
                                     'stage5' => 'Satisfaisant',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page5' => [
                 'title' => 'Gestion des cyber-risques : mise en œuvre et protection',
@@ -2298,7 +2299,7 @@ return [
                                     'stage3' => 'Inférieur',
                                     'stage4' => 'Inférieur',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'À la demande',
@@ -2310,7 +2311,7 @@ return [
                                     'stage3' => 'Inférieur',
                                     'stage4' => 'Inférieur',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Annuellement',
@@ -2322,7 +2323,7 @@ return [
                                     'stage3' => 'Satisfaisant',
                                     'stage4' => 'Inférieur',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Tous les trimestres',
@@ -2334,7 +2335,7 @@ return [
                                     'stage3' => 'Satisfaisant',
                                     'stage4' => 'Satisfaisant',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Mensuellement',
@@ -2346,7 +2347,7 @@ return [
                                     'stage3' => 'Supérieur',
                                     'stage4' => 'Satisfaisant',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Toutes les semaines',
@@ -2358,7 +2359,7 @@ return [
                                     'stage3' => 'Supérieur',
                                     'stage4' => 'Supérieur',
                                     'stage5' => 'Satisfaisant',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Chaque jour',
@@ -2370,7 +2371,7 @@ return [
                                     'stage3' => 'Supérieur',
                                     'stage4' => 'Supérieur',
                                     'stage5' => 'Satisfaisant',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Chaque heure',
@@ -2382,7 +2383,7 @@ return [
                                     'stage3' => 'Supérieur',
                                     'stage4' => 'Supérieur',
                                     'stage5' => 'Satisfaisant',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'De façon continue',
@@ -2394,11 +2395,11 @@ return [
                                     'stage3' => 'Supérieur',
                                     'stage4' => 'Supérieur',
                                     'stage5' => 'Supérieur',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page6' => [
                 'title' => 'Gestion des cyber-risques : mise en œuvre et protection',
@@ -2418,7 +2419,7 @@ return [
                                     'stage3' => 'Inférieur',
                                     'stage4' => 'Inférieur',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Nous utilisons principalement des outils « clé en main » de nos fournisseurs de sécurité.',
@@ -2430,7 +2431,7 @@ return [
                                     'stage3' => 'Inférieur',
                                     'stage4' => 'Inférieur',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Nous utilisons une combinaison d\'outils de gestion spécialisés avec quelques outils « clé en main ».',
@@ -2442,7 +2443,7 @@ return [
                                     'stage3' => 'Satisfaisant',
                                     'stage4' => 'Inférieur',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Nous utilisons principalement des outils spécialisés pour la gestion de la sécurité.',
@@ -2454,7 +2455,7 @@ return [
                                     'stage3' => 'Satisfaisant',
                                     'stage4' => 'Satisfaisant',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Nous utilisons une suite de gestion de la sécurité de bout en bout.',
@@ -2466,7 +2467,7 @@ return [
                                     'stage3' => 'Supérieur',
                                     'stage4' => 'Supérieur',
                                     'stage5' => 'Satisfaisant',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Nous utilisons un partenaire certifié pour nous aider à gérer notre infrastructure de sécurité informatique.',
@@ -2478,11 +2479,11 @@ return [
                                     'stage3' => 'Supérieur',
                                     'stage4' => 'Supérieur',
                                     'stage5' => 'Satisfaisant',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page7' => [
                 'title' => 'Gestion des cyber-risques : mise en œuvre et protection',
@@ -2502,7 +2503,7 @@ return [
                                     'stage3' => 'Inférieur',
                                     'stage4' => 'Inférieur',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Principalement des procédures manuelles avec un peu d\'automatisation',
@@ -2514,7 +2515,7 @@ return [
                                     'stage3' => 'Inférieur',
                                     'stage4' => 'Inférieur',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Un bon équilibre entre automatisation et procédures manuelles',
@@ -2526,7 +2527,7 @@ return [
                                     'stage3' => 'Satisfaisant',
                                     'stage4' => 'Satisfaisant',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Principalement automatisation avec quelques procédures manuelles',
@@ -2538,7 +2539,7 @@ return [
                                     'stage3' => 'Supérieur',
                                     'stage4' => 'Supérieur',
                                     'stage5' => 'Satisfaisant',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Automatisation totale',
@@ -2550,11 +2551,11 @@ return [
                                     'stage3' => 'Supérieur',
                                     'stage4' => 'Supérieur',
                                     'stage5' => 'Satisfaisant',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page8' => [
                 'title' => 'Gestion des cyber-risques : mise en œuvre et protection',
@@ -2574,7 +2575,7 @@ return [
                                     'stage3' => 'Inférieur',
                                     'stage4' => 'Inférieur',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Légère diminution',
@@ -2586,7 +2587,7 @@ return [
                                     'stage3' => 'Inférieur',
                                     'stage4' => 'Inférieur',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Stabilité',
@@ -2598,7 +2599,7 @@ return [
                                     'stage3' => 'Satisfaisant',
                                     'stage4' => 'Satisfaisant',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Légère augmentation',
@@ -2610,7 +2611,7 @@ return [
                                     'stage3' => 'Supérieur',
                                     'stage4' => 'Supérieur',
                                     'stage5' => 'Satisfaisant',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Augmentation importante',
@@ -2622,11 +2623,11 @@ return [
                                     'stage3' => 'Supérieur',
                                     'stage4' => 'Supérieur',
                                     'stage5' => 'Supérieur',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page9' => [
                 'title' => 'Gestion des cyber-risques : mise en œuvre et protection',
@@ -2637,7 +2638,7 @@ return [
                         'name'=>'q17',
                         'calc'=>[
                             'type'=>'normalize',
-                            'value'=>5
+                            'value'=>5,
                         ],
                         'options'=>[
                             [
@@ -2655,7 +2656,7 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Satisfaisant',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non',
@@ -2667,9 +2668,9 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'IPS/IDS (détection d\'intrusion/protection)',
@@ -2685,7 +2686,7 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Satisfaisant',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non',
@@ -2697,9 +2698,9 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Gestion de la vulnérabilité',
@@ -2715,7 +2716,7 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Satisfaisant',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non',
@@ -2727,9 +2728,9 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Micro segmentation (séparation à grains fins et isolement du trafic entre des hôtes ou domaines spécifiés)',
@@ -2745,7 +2746,7 @@ return [
                                             'stage3' => 'Supérieur',
                                             'stage4' => 'Supérieur',
                                             'stage5' => 'Satisfaisant',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non',
@@ -2757,9 +2758,9 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Inférieur',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Gestion de la sécurité unifiée (échange de données et d\'informations entre machines et outils).',
@@ -2775,7 +2776,7 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Satisfaisant',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non',
@@ -2787,9 +2788,9 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Service professionnel tierce partie de sécurité (avant-vente/conception/mise en oeuvre)',
@@ -2805,7 +2806,7 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Satisfaisant',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non',
@@ -2817,13 +2818,13 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
-                        ]
+                        ],
                     ],
-                ]
+                ],
             ],
             'page10' => [
                 'title' => 'Gestion des cyber-risques : mise en œuvre et protection',
@@ -2843,7 +2844,7 @@ return [
                                     'stage3' => 'Inférieur',
                                     'stage4' => 'Inférieur',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Nous les utilisons de façon limitée, mais nous préférons agir en interne.',
@@ -2855,7 +2856,7 @@ return [
                                     'stage3' => 'Inférieur',
                                     'stage4' => 'Inférieur',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Nous les utilisons de façon équilibrée.',
@@ -2867,7 +2868,7 @@ return [
                                     'stage3' => 'Satisfaisant',
                                     'stage4' => 'Satisfaisant',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Nous préférons les utiliser plutôt que d\'agir en interne.',
@@ -2879,7 +2880,7 @@ return [
                                     'stage3' => 'Supérieur',
                                     'stage4' => 'Satisfaisant',
                                     'stage5' => 'Satisfaisant',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Nous les utilisons intensivement autant que possible.',
@@ -2891,13 +2892,13 @@ return [
                                     'stage3' => 'Supérieur',
                                     'stage4' => 'Supérieur',
                                     'stage5' => 'Satisfaisant',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
     ],
     'cyber-risk-management-breach-detection-and-remediation' => [
         'title' => 'Gestion des cyber-risques : détection des brèches et résolution',
@@ -2927,7 +2928,7 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Satisfaisant',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non',
@@ -2939,9 +2940,9 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Analyses en temps réel',
@@ -2957,7 +2958,7 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Satisfaisant',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non',
@@ -2969,9 +2970,9 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Protection avancée contre les menaces/bac à sable',
@@ -2987,7 +2988,7 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Satisfaisant',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non',
@@ -2999,9 +3000,9 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Intelligence artificielle/heuristique',
@@ -3017,7 +3018,7 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Satisfaisant',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non',
@@ -3029,9 +3030,9 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Recherche des logiciels malveillants',
@@ -3047,7 +3048,7 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Satisfaisant',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non',
@@ -3059,11 +3060,11 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
-                        ]
+                        ],
                     ],
                 ]
                 /*,
@@ -3071,7 +3072,7 @@ return [
                     'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
                     'image'=>'img/techfit_icons_Q-A1.png'
                 )*/,
-                'report' => false
+                'report' => false,
             ],
             'page2' => [
                 'title' => 'Gestion des cyber-risques : détection des brèches et résolution',
@@ -3095,7 +3096,7 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Satisfaisant',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non',
@@ -3107,9 +3108,9 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Enregistrement et analyse criminalistiques',
@@ -3125,7 +3126,7 @@ return [
                                             'stage3' => 'Supérieur',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Satisfaisant',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non',
@@ -3137,9 +3138,9 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Basculement/restauration du système',
@@ -3155,7 +3156,7 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Satisfaisant',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non',
@@ -3167,9 +3168,9 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Équipes tigre/d\'intervention',
@@ -3185,7 +3186,7 @@ return [
                                             'stage3' => 'Supérieur',
                                             'stage4' => 'Supérieur',
                                             'stage5' => 'Satisfaisant',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non',
@@ -3197,9 +3198,9 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Inférieur',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Partenaire externe pour réaction à un incident',
@@ -3215,7 +3216,7 @@ return [
                                             'stage3' => 'Supérieur',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Satisfaisant',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non',
@@ -3227,11 +3228,11 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
-                        ]
+                        ],
                     ],
                 ]
                 /*,
@@ -3239,7 +3240,7 @@ return [
                     'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
                     'image'=>'img/techfit_icons_Q-A1.png'
                 )*/,
-                'report' => false
+                'report' => false,
             ],
             'page3' => [
                 'title' => 'Gestion des cyber-risques : détection des brèches et résolution',
@@ -3263,7 +3264,7 @@ return [
                                             'stage3' => 'Supérieur',
                                             'stage4' => 'Supérieur',
                                             'stage5' => 'Satisfaisant',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non',
@@ -3275,9 +3276,9 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Inférieur',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Politique de mise à jour',
@@ -3293,7 +3294,7 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Satisfaisant',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non',
@@ -3305,9 +3306,9 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Politique de reprise d\'activité',
@@ -3323,7 +3324,7 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Satisfaisant',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non',
@@ -3335,9 +3336,9 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Fournisseurs externes de reprise d\'activité',
@@ -3353,7 +3354,7 @@ return [
                                             'stage3' => 'Supérieur',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Satisfaisant',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non',
@@ -3365,9 +3366,9 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Évaluations de compromis',
@@ -3383,7 +3384,7 @@ return [
                                             'stage3' => 'Supérieur',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Satisfaisant',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non',
@@ -3395,19 +3396,19 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
-                        ]
-                    ]
+                        ],
+                    ],
                 ]
                 /*,
                 'report' => array(
                     'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
                     'image'=>'img/techfit_icons_Q-A1.png'
                 )*/,
-                'report' => false
+                'report' => false,
             ],
             'page4' => [
                 'title' => 'Gestion des cyber-risques : détection des brèches et résolution',
@@ -3431,7 +3432,7 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Satisfaisant',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non',
@@ -3443,9 +3444,9 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Comprendre l\'ampleur de l\'exposition potentielle',
@@ -3461,7 +3462,7 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Satisfaisant',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non',
@@ -3473,9 +3474,9 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Avoir évalué les données critiques',
@@ -3491,7 +3492,7 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Satisfaisant',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non',
@@ -3503,9 +3504,9 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Comprendre le positionnement de la chaîne logistique étendue ou des partenaires',
@@ -3521,7 +3522,7 @@ return [
                                             'stage3' => 'Supérieur',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Satisfaisant',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non',
@@ -3533,9 +3534,9 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Avoir élaboré un plan de réaction à une transgression de sécurité',
@@ -3551,7 +3552,7 @@ return [
                                             'stage3' => 'Satisfaisant',
                                             'stage4' => 'Satisfaisant',
                                             'stage5' => 'Satisfaisant',
-                                        ]
+                                        ],
                                     ],
                                     [
                                         'label'=>'Non',
@@ -3563,19 +3564,19 @@ return [
                                             'stage3' => 'Inférieur',
                                             'stage4' => 'Inférieur',
                                             'stage5' => 'Inférieur',
-                                        ]
-                                    ]
-                                ]
+                                        ],
+                                    ],
+                                ],
                             ],
-                        ]
-                    ]
+                        ],
+                    ],
                 ]
                 /*,
                 'report' => array(
                     'text'=>'56% of Western European SMBs see IT as making an important contribution to business objectives. Cost reduction is West European SMBs’ top business priority in 2014.',
                     'image'=>'img/techfit_icons_Q-A1.png'
                 )*/,
-                'report' => false
+                'report' => false,
             ],
             'page5' => [
                 'title' => 'Gestion des cyber-risques : détection des brèches et résolution',
@@ -3595,7 +3596,7 @@ return [
                                     'stage3' => 'Inférieur',
                                     'stage4' => 'Inférieur',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'À quelques années d\'intervalle',
@@ -3607,7 +3608,7 @@ return [
                                     'stage3' => 'Inférieur',
                                     'stage4' => 'Inférieur',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Tous les ans',
@@ -3619,7 +3620,7 @@ return [
                                     'stage3' => 'Inférieur',
                                     'stage4' => 'Inférieur',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Tous les 6 mois',
@@ -3631,7 +3632,7 @@ return [
                                     'stage3' => 'Satisfaisant',
                                     'stage4' => 'Inférieur',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Tous les trimestres',
@@ -3643,7 +3644,7 @@ return [
                                     'stage3' => 'Supérieur',
                                     'stage4' => 'Satisfaisant',
                                     'stage5' => 'Satisfaisant',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Mensuellement',
@@ -3655,7 +3656,7 @@ return [
                                     'stage3' => 'Supérieur',
                                     'stage4' => 'Supérieur',
                                     'stage5' => 'Satisfaisant',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Toutes les semaines',
@@ -3667,7 +3668,7 @@ return [
                                     'stage3' => 'Supérieur',
                                     'stage4' => 'Supérieur',
                                     'stage5' => 'Satisfaisant',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'De façon continue',
@@ -3679,11 +3680,11 @@ return [
                                     'stage3' => 'Supérieur',
                                     'stage4' => 'Supérieur',
                                     'stage5' => 'Supérieur',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page6' => [
                 'title' => 'Gestion des cyber-risques : détection des brèches et résolution',
@@ -3703,7 +3704,7 @@ return [
                                     'stage3' => 'Inférieur',
                                     'stage4' => 'Inférieur',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'À quelques années d\'intervalle',
@@ -3715,7 +3716,7 @@ return [
                                     'stage3' => 'Inférieur',
                                     'stage4' => 'Inférieur',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Tous les ans',
@@ -3727,7 +3728,7 @@ return [
                                     'stage3' => 'Inférieur',
                                     'stage4' => 'Inférieur',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Tous les 6 mois',
@@ -3739,7 +3740,7 @@ return [
                                     'stage3' => 'Satisfaisant',
                                     'stage4' => 'Inférieur',
                                     'stage5' => 'Inférieur',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Tous les trimestres',
@@ -3751,7 +3752,7 @@ return [
                                     'stage3' => 'Supérieur',
                                     'stage4' => 'Satisfaisant',
                                     'stage5' => 'Satisfaisant',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Mensuellement',
@@ -3763,7 +3764,7 @@ return [
                                     'stage3' => 'Supérieur',
                                     'stage4' => 'Supérieur',
                                     'stage5' => 'Satisfaisant',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'Toutes les semaines',
@@ -3775,7 +3776,7 @@ return [
                                     'stage3' => 'Supérieur',
                                     'stage4' => 'Supérieur',
                                     'stage5' => 'Satisfaisant',
-                                ]
+                                ],
                             ],
                             [
                                 'label'=>'De façon continue',
@@ -3787,12 +3788,12 @@ return [
                                     'stage3' => 'Supérieur',
                                     'stage4' => 'Supérieur',
                                     'stage5' => 'Supérieur',
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
-        ]
-    ]
+        ],
+    ],
 ];

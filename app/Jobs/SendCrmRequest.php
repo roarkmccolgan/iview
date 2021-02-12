@@ -61,20 +61,20 @@ class SendCrmRequest implements ShouldQueue
             Log::info(json_encode($this->query));
             $code = $response->getStatusCode();
             Log::info($code);
-            Log::info(print_r(json_decode($response->getBody()),true));
+            Log::info(print_r(json_decode($response->getBody()), true));
         } catch (RequestException $e) {
             Log::info(json_encode($this->query));
             Log::info(print_r($e->getMessage(), true));
             Log::info('request');
             $mailer->send('emails.error', ['process'=>'Guzzle', 'reason'=>$e->getMessage(), 'time'=>date('l jS \of F Y h:i:s A')], function ($message) {
-                $message->to('roarkmccolgan@gmail.com', 'Roark McColgan')->subject('Error on '. isset($this->url) ? $this->url : $this->query['elqFormName']);
+                $message->to('roarkmccolgan@gmail.com', 'Roark McColgan')->subject('Error on '.isset($this->url) ? $this->url : $this->query['elqFormName']);
             });
         } catch (ServerException $e) {
             Log::info('server');
             Log::info($e->getMessage());
             Log::info(json_encode($this->query));
             $mailer->send('emails.error', ['process'=>'Guzzle', 'reason'=>$e->getMessage(), 'time'=>date('l jS \of F Y h:i:s A')], function ($message) {
-                $message->to('roarkmccolgan@gmail.com', 'Roark McColgan')->subject('Error on '. isset($this->url) ? $this->url : $this->query['elqFormName']);
+                $message->to('roarkmccolgan@gmail.com', 'Roark McColgan')->subject('Error on '.isset($this->url) ? $this->url : $this->query['elqFormName']);
             });
         }
     }

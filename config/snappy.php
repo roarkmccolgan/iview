@@ -2,7 +2,6 @@
 
 return [
 
-
     'pdf' => [
         'enabled' => true,
         'binary'  => env('WKHTMLTOPDFANDIMAGEDIR').'wkhtmltopdf',
@@ -17,6 +16,5 @@ return [
         'options' => [],
         'env'     => [],
     ],
-
 
 ];

@@ -1,4 +1,5 @@
 <?php
+
 // Trend
 return [
     'sales' => [
@@ -34,7 +35,7 @@ return [
             ',
             '
                 <p class="w-full my-4">It also has implications for how you go to market&hellip;</p>
-            '
+            ',
         ],
         'class' => 'sec2',
         'shuffle' => true,
@@ -73,10 +74,10 @@ return [
                                 'label'=>'Vast majority of our business is MSS, with sales teams looking to tailor solutions to customers.',
                                 'value'=>6.25,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Sales',
@@ -110,10 +111,10 @@ return [
                                 'label'=>'Our pre-sales team create opportunities for our vendor partners and provide bespoke, specific managed services offerings to customers.',
                                 'value'=>6.25,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Sales',
@@ -147,10 +148,10 @@ return [
                                 'label'=>'We pay ongoing commission, as well as incentivise KPIs on customer satisfaction, renewals and growth.',
                                 'value'=>6.25,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page4' => [
                 'title' => 'Sales',
@@ -184,12 +185,12 @@ return [
                                 'label'=>'Our billing platform offers a single bill to customers combining multiple vendor solutions, displayed in real time',
                                 'value'=>6.25,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
     ],
     'marketing' => [
         'title' => 'Marketing',
@@ -221,7 +222,7 @@ return [
             ',
             '
                 <p class="w-full my-4">Next - let\'s think about services.</p>
-            '
+            ',
         ],
         'class' => 'sec2',
         'shuffle' => true,
@@ -260,10 +261,10 @@ return [
                                 'label'=>'We have a sophisticated marketing function with a dedicated team of specialists, using digital media throughout the buyer journey.',
                                 'value'=>8.33,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Marketing',
@@ -297,10 +298,10 @@ return [
                                 'label'=>'We have developed a fully automated marketing process that continues to evolve based on ongoing results and successes.',
                                 'value'=>8.33,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Marketing',
@@ -334,12 +335,12 @@ return [
                                 'label'=>'Marketing is highly targeted at a defined set of verticals and personas across a portfolio of solutions that address business outcomes.',
                                 'value'=>8.33,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
-        ]
+        ],
     ],
     'services' => [
         'title' => 'Services',
@@ -371,7 +372,7 @@ return [
             ',
             '
                 <p class="w-full my-4">You’re almost done, but first, let’s talk about security&hellip;</p>
-            '
+            ',
         ],
         'class' => 'sec3',
         'shuffle' => true,
@@ -410,10 +411,10 @@ return [
                                 'label'=>'We offer complex and specialized professional and managed services, which are aligned and deeply embedded across the business. Our advanced service catalogue enables flexible consumption models through its advanced features.',
                                 'value'=>8.33,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Services',
@@ -447,10 +448,10 @@ return [
                                 'label'=>'We offer pre-emptive support based on sophisticated analytics on top of a fully staffed service desk from which we offer omni-channel 24 x 7 support for all (or most) of our managed services, which are secure-by-design.',
                                 'value'=>8.33,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Services',
@@ -484,12 +485,12 @@ return [
                                 'label'=>'On top of our range of certifications, we have a mature and embedded governance programme and our technicians are highly certified (vendor certifications) with multiple specialisations. We have a library of of case studies, best practice, reusable tools and reference architectures.',
                                 'value'=>8.33,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
-        ]
+        ],
     ],
     'security' => [
         'title' => 'Security',
@@ -524,7 +525,7 @@ return [
             ',
             '
                 <p class="w-full my-4">You\'re almost there. Just some background questions to understand your business a little more&hellip;</p>
-            '
+            ',
         ],
         'class' => 'sec3',
         'shuffle' => true,
@@ -563,10 +564,10 @@ return [
                                 'label'=>'We have a full range of security skills and personnel (pre-sales architects, technical consultants, first-line support analysts).',
                                 'value'=>8.33,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Security',
@@ -600,10 +601,10 @@ return [
                                 'label'=>'Security is a central feature of our business and where we see the greatest potential for growth in the coming years',
                                 'value'=>8.33,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Security',
@@ -637,12 +638,12 @@ return [
                                 'label'=>'We have a full range of security architects, security specialists and GDPR experts in-house and we understand compliance relating to multicloud.',
                                 'value'=>8.33,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
-        ]
+        ],
     ],
     'metrics' => [
         'title' => 'Metrics',
@@ -692,10 +693,10 @@ return [
                                 'label'=>'Over £500M',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Metrics',
@@ -734,10 +735,10 @@ return [
                                 'label'=>'More than 1,000 staff',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Metrics',
@@ -771,8 +772,8 @@ return [
                                 'label'=>'Significant growth',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
+                            ],
+                        ],
                     ],
                     'q17'=>[
                         'type'=>'slider',
@@ -808,8 +809,8 @@ return [
                                 'label'=>'5+ years',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
+                            ],
+                        ],
                     ],
                     'q18'=>[
                         'type'=>'slider',
@@ -845,11 +846,11 @@ return [
                                 'label'=>'5+ years',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
-        ]
-    ]
+        ],
+    ],
 ];

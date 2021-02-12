@@ -1,4 +1,5 @@
 <?php
+
 // SAP Agile
 return [
     'strategic-planning' => [
@@ -57,10 +58,10 @@ return [
                                 'label'=>'Estoy muy satisfecho',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Planificación estratégica',
@@ -89,10 +90,10 @@ return [
                                 'label'=>'RR. HH. (plantilla, nueva contratación)',
                                 'value'=>2,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Planificación estratégica',
@@ -139,9 +140,9 @@ return [
                                     [
                                         'label'=>'5 Muy rápidamente',
                                         'value'=>5,
-                                        'checked'=>false
-                                    ]
-                                ]
+                                        'checked'=>false,
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Presupuestos',
@@ -170,9 +171,9 @@ return [
                                     [
                                         'label'=>'5 Muy rápidamente',
                                         'value'=>5,
-                                        'checked'=>false
-                                    ]
-                                ]
+                                        'checked'=>false,
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Producción',
@@ -201,9 +202,9 @@ return [
                                     [
                                         'label'=>'5 Muy rápidamente',
                                         'value'=>5,
-                                        'checked'=>false
-                                    ]
-                                ]
+                                        'checked'=>false,
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'RR. HH. (plantilla, nueva contratación)',
@@ -232,15 +233,15 @@ return [
                                     [
                                         'label'=>'5 Muy rápidamente',
                                         'value'=>5,
-                                        'checked'=>false
-                                    ]
-                                ]
+                                        'checked'=>false,
+                                    ],
+                                ],
                             ],
                         ],
-                    ]
-                ]
-            ]
-        ]
+                    ],
+                ],
+            ],
+        ],
     ],
     'processes' => [
         'title' => 'Procesos',
@@ -296,10 +297,10 @@ return [
                                 'label'=>'Son flexibles para adaptarse a los cambios en los requisitos',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Procesos',
@@ -333,10 +334,10 @@ return [
                                 'label'=>'Es fácil cambiarlos',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Procesos',
@@ -370,12 +371,12 @@ return [
                                 'label'=>'Constantemente y con un objetivo claro',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
-        ]
+        ],
     ],
     'customer-relationships' => [
         'title' => 'Relaciones con los clientes',
@@ -431,10 +432,10 @@ return [
                                 'label'=>'Con mucha frecuencia',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Relaciones con los clientes',
@@ -468,10 +469,10 @@ return [
                                 'label'=>'Le es muy fácil adaptarse',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' =>[
                 'title' => 'Relaciones con los clientes',
@@ -505,12 +506,12 @@ return [
                                 'label'=>'Realizamos los cambios muy rápidamente',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
     ],
     'suppliers-distributors' => [
         'title' => 'Proveedores y distribuidores',
@@ -566,10 +567,10 @@ return [
                                 'label'=>'Disponemos de sistemas integrados',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Proveedores y distribuidores',
@@ -603,10 +604,10 @@ return [
                                 'label'=>'Disponemos de sistemas integrados',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' =>[
                 'title' => 'Proveedores y distribuidores',
@@ -640,12 +641,12 @@ return [
                                 'label'=>'Muy rápidamente',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
     ],
     'people-experience' => [
         'title' => 'Experiencia con el personal (RR. HH.)',
@@ -701,10 +702,10 @@ return [
                                 'label'=>'Hay una transparencia total de la empresa en relación con los empleados',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Experiencia con el personal (RR. HH.)',
@@ -738,10 +739,10 @@ return [
                                 'label'=>'Muy rápidamente',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' =>[
                 'title' => 'Experiencia con el personal (RR. HH.)',
@@ -781,11 +782,11 @@ return [
                                 'label'=>'Cuantificación de la experiencia de los empleados (satisfacción de los empleados, compromiso de los empleados, etc.)',
                                 'value'=>3,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
-    ]
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
+    ],
 ];

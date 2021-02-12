@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Database\Seeder;
 use Carbon\Carbon;
+use Illuminate\Database\Seeder;
 
 class IBMCloudSeeder extends Seeder
 {
@@ -33,7 +33,7 @@ class IBMCloudSeeder extends Seeder
             'subdomain' => 'ibmcloudstaging',
             'language_id' => 1,
             'urlable_id' => 16,
-            'urlable_type' => 'App\Tool',
+            'urlable_type' => \App\Tool::class,
             'created_at' => Carbon::now(),
         ]);
         DB::table('urls')->insert([
@@ -41,16 +41,16 @@ class IBMCloudSeeder extends Seeder
             'subdomain' => 'ibmcloud',
             'language_id' => 1,
             'urlable_id' => 16,
-            'urlable_type' => 'App\Tool',
+            'urlable_type' => \App\Tool::class,
             'created_at' => Carbon::now(),
         ]);
         DB::table('language_tool')->insert([ //english NTT
             'tool_id' => 16,
-            'language_id' => 1
+            'language_id' => 1,
         ]);
         DB::table('tool_user')->insert([
             'tool_id' => 16,
-            'user_id' => 1 //roark
+            'user_id' => 1, //roark
         ]);
 
         /*DB::table('extra_fields')->insert([

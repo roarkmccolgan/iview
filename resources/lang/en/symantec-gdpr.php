@@ -1,6 +1,7 @@
 <?php
+
 //Symantec
-return array(
+return [
     'title' => 'Symantec GDPR Assessment',
     'sub-title' => 'Your businesses\' GDPR readiness',
     'stage1' => 'Stage 1: Time to Initiate',
@@ -9,7 +10,7 @@ return array(
     'stage4' => 'Stage 4: Time to Optimize',
     'stage5' => 'Stage 5: Time to Chill',
     'gdpr' => [
-        'title' => 'GDPR'
+        'title' => 'GDPR',
     ],
     'complete_thankyou' => 'Thank you :Fname,',
     'complete_body' => '
@@ -18,7 +19,7 @@ return array(
         <a class="btn btn--primary" target="_blank" href="https://www.symantec.com/en/uk/campaigns/data-privacy">
             Click here for more information
         </a>',
-    'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @symantec. Interested? ',// http://bit.ly/2gslXEh
+    'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @symantec. Interested? ', // http://bit.ly/2gslXEh
     'email'=>[
         'subject' => 'IDC and Symantec GDPR Readiness Assessment',
         'hi' => 'Hi :Fname',
@@ -26,7 +27,7 @@ return array(
         'link' => 'Download Report',
         'extra' => 'Once you\'ve read the report why not visit <a href="https://www.symantec.com/en/uk/campaigns/data-privacy" style="color:#FDBB30">Symantec</a>',
         'regards' => 'Regards',
-        'team' => 'The IDC Team'
+        'team' => 'The IDC Team',
     ],
     'introduction' => '
         <h2>Your overall GDPR Readiness Assessment Result</h2>
@@ -111,7 +112,6 @@ return array(
             Your readiness score is held back significantly by the lack of a cross functional compliance task force or governance board that spans multiple stakeholders in your organization. The engagement of all relevant stakeholders is a critical success factor in any GDPR program, and the lack of such a coordinated approach limits substantially the ultimate success of any compliance activity. Consider revisiting this situation as soon as possible. A silo approach to GDPR is unlikely to fulfil some of the fundamental principles required by the new legislation.
         </p>
     ',
-
 
     'dataawarenessintro'=>'
         <h2>Data Awareness</h2>
@@ -236,7 +236,7 @@ return array(
             Your responses indicate that you are challenged by the more advance requirements of GDPR. This is most likely a reflection of your advanced state of readiness. You’ll be focusing on things like incident response planning and extending data governance processes to cloud and mobile environments. However, make sure you have already solved some of the foundation layers like consent management, anonymization or pseudonymisation of data, and training staff on new risk and obligations.
         </p>
     ',
-    
+
     'risk_q112'=>'
         <p>
             Your score indicates that you are a cloud sceptic. This is a cautious position, and it may reflect your business’s appetite for risk. Fair enough. However, you may be missing out on the flexibility and agility offered by cloud. Further, it is perfectly possible to be compliant with GDPR while using cloud services. Cloud service providers are aware of their obligations, and many are offering GDPR-ready contracts, meaning that moving data to the cloud could advance – rather than hinder – your compliance activities. Something worth investigating.
@@ -252,7 +252,6 @@ return array(
             Your response indicates a mature approach to cloud and data protection. This may involve adapting existing cloud services to make sure they adhere to the new regulations. Or it may be that you have already made sure your cloud usage is compliant, and needs no further changes. If this is true then great: you’re ahead of the game. But a word of warning: the consequences of getting cloud usage wrong – for example by assuming cloud providers can absorb liability (they can’t) – could be severe. Make sure you have reviewed your cloud contracts and that they are GDPR-ready.
         </p>
     ',
-
 
     'riskstage1or2_q10lt15'=>'
         <p>
@@ -317,16 +316,16 @@ return array(
     ',
 
     /*'introduction-image' => 'report1.jpg',*/
-    'overall' => array(
+    'overall' => [
         'title'=>'Your Overall GDPR Readiness is at',
         'hidetitle'=>'true',
         'image'=>'',
         'stage1'=>'',
         'stage2'=>'',
         'stage3'=>'',
-        'stage4'=>''
-    ),
-    'security-strategy' => array(
+        'stage4'=>'',
+    ],
+    'security-strategy' => [
         'title'=>'Security Strategy',
         'image'=>'security-strategy.jpg',
         'pb'=>'pb',
@@ -334,9 +333,9 @@ return array(
         'stage2'=>'',
         'stage3'=>'',
         'stage4'=>'',
-        'stage5'=>''
-    ),
-    'incident-detection' => array(
+        'stage5'=>'',
+    ],
+    'incident-detection' => [
         'title'=> 'Data rights and standards',
         'image'=>'incident-detection.jpg',
         'pb'=>'pb',
@@ -344,9 +343,9 @@ return array(
         'stage2'=>'',
         'stage3'=>'',
         'stage4'=>'',
-        'stage5'=>''
-    ),
-    'incident-response' => array(
+        'stage5'=>'',
+    ],
+    'incident-response' => [
         'title'=> 'incident-response',
         'image'=>'incident-response.jpg',
         'pb'=>'pb',
@@ -354,6 +353,6 @@ return array(
         'stage2'=>'',
         'stage3'=>'',
         'stage4'=>'',
-        'stage5'=>''
-    )
-);
+        'stage5'=>'',
+    ],
+];

@@ -1,9 +1,9 @@
 <?php
 
-use Illuminate\Database\Seeder;
 use Carbon\Carbon;
+use Illuminate\Database\Seeder;
 
-class ItalyAssessmentSeeder extends Seeder
+class ItlayAssessmentSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -33,7 +33,7 @@ class ItalyAssessmentSeeder extends Seeder
             'subdomain' => 'databenchbigdata',
             'language_id' => 1,
             'urlable_id' => 11,
-            'urlable_type' => 'App\Tool',
+            'urlable_type' => \App\Tool::class,
             'created_at' => Carbon::now(),
         ]);
         DB::table('urls')->insert([
@@ -41,16 +41,16 @@ class ItalyAssessmentSeeder extends Seeder
             'subdomain' => 'databenchbigdata',
             'language_id' => 1,
             'urlable_id' => 10,
-            'urlable_type' => 'App\Tool',
+            'urlable_type' => \App\Tool::class,
             'created_at' => Carbon::now(),
         ]);
         DB::table('language_tool')->insert([ //english
             'tool_id' => 11,
-            'language_id' => 1
+            'language_id' => 1,
         ]);
         DB::table('tool_user')->insert([
             'tool_id' => 11,
-            'user_id' => 1 //roark
+            'user_id' => 1, //roark
         ]);
 
         /*DB::table('extra_fields')->insert([

@@ -1,4 +1,5 @@
 <?php
+
 //5 SPLUNK
 return [
     'screeners' => [
@@ -21,23 +22,23 @@ return [
                             [
                                 'label'=>'500 bis 999',
                                 'value'=>0,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'1.000 bis 2.499',
                                 'value'=>0,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'2.500 oder mehr',
                                 'value'=>0,
-                                'checked'=>false
-                            ]
-                        ]
-                    ]
-                ]
+                                'checked'=>false,
+                            ],
+                        ],
+                    ],
+                ],
             ],
-        ]
+        ],
     ],
     'security-strategy' => [
         'title' => 'Sicherheitsstrategie',
@@ -58,31 +59,31 @@ return [
                             [
                                 'label'=>'Spontane Investitionen ohne umfassenden Plan oder strategische Erwägungen',
                                 'value'=>2,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Wir planen, Sicherheitslücken auszuräumen, wenn es als notwendig erachtet wird',
                                 'value'=>4,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Wir haben wiederholbare Sicherheitsverfahren, die das Unternehmen unterstützen',
                                 'value'=>6,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Wir haben eine gut gemanagte Sicherheitsstrategie, die eine Richtung mindestens für die nächsten zwei Jahre vorgibt',
                                 'value'=>8,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Wir haben Sicherheit als strategische Kerninvestition mit spezifizierten Ergebnissen definiert',
                                 'value'=>10,
-                                'checked'=>false
-                            ]
-                        ]
-                    ]
-                ]/*,
+                                'checked'=>false,
+                            ],
+                        ],
+                    ],
+                ], /*,
                 'report' => array(
                     'text'=>'Solid business decisions should be data-driven. However, as many as 40% of your small and midsize business peers don\'t measure their business results at all. Leapfrog opportunity! ',
                     'image'=>'img/techfit_icons_Q-A1.png'
@@ -126,8 +127,8 @@ return [
                                         'label'=>'5',
                                         'value'=>1.11,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Beiträge von unabhängigen Anbietern und staatlichen Quellen',
@@ -159,8 +160,8 @@ return [
                                         'label'=>'5',
                                         'value'=>1.11,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Bedürfnis, unsere internen Ressourcen und Kompetenzen zu erhöhen',
@@ -192,8 +193,8 @@ return [
                                         'label'=>'5',
                                         'value'=>1.11,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Compliance-Anforderungen, z. B. Datenschutz-Grundverordnung, ISO2700x oder PCI DSS',
@@ -225,8 +226,8 @@ return [
                                         'label'=>'5',
                                         'value'=>1.11,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Geschäftsinitiativen wie digitaler Wandel und Internet of Things (IoT)',
@@ -258,8 +259,8 @@ return [
                                         'label'=>'5',
                                         'value'=>1.11,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Einführung von Cloud-Services',
@@ -291,8 +292,8 @@ return [
                                         'label'=>'5',
                                         'value'=>1.11,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Auflagen der Cyber-Versicherung',
@@ -324,8 +325,8 @@ return [
                                         'label'=>'5',
                                         'value'=>1.11,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Eine strategische Entscheidung, einige oder alle unserer Sicherheitsvorkehrungen auszulagern',
@@ -357,8 +358,8 @@ return [
                                         'label'=>'5',
                                         'value'=>1.11,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Ein kürzlicher Sicherheitsvorfall',
@@ -390,12 +391,12 @@ return [
                                         'label'=>'5',
                                         'value'=>1.11,
                                         'checked'=>false,
-                                    ]
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Sicherheitsstrategie',
@@ -408,37 +409,37 @@ return [
                             [
                                 'label'=>'Wir wissen nicht, was den Stand der Technik ausmacht',
                                 'value'=>2,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Unser bestehender Anbieter sagt uns, was der Stand der Technik ist',
                                 'value'=>4,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Unsere internen Fachkräfte definieren den Stand der Technik',
                                 'value'=>6,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Wir definieren den Stand der Technik mithilfe externer Quellen, z. B. nationaler kompetenter Stellen (CESG/NCSC in GB oder BSI in Deutschland) und/oder Branchenstandards (z. B. ISO, NIST und SANS)',
                                 'value'=>8,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Wir definieren den Stand der Technik mithilfe unabhängiger Fachkräfte oder Berater',
                                 'value'=>10,
-                                'checked'=>false
-                            ]
-                        ]
-                    ]
-                ]/*,
+                                'checked'=>false,
+                            ],
+                        ],
+                    ],
+                ], /*,
                 'report' => array(
                     'text'=>'Solid business decisions should be data-driven. However, as many as 40% of your small and midsize business peers don\'t measure their business results at all. Leapfrog opportunity! ',
                     'image'=>'img/techfit_icons_Q-A1.png'
                 )*/
-            ]
-        ]
+            ],
+        ],
     ],
     'incident-detection' => [
         'title' => 'Vorfallserkennung',
@@ -486,8 +487,8 @@ return [
                                         'label'=>'5',
                                         'value'=>1.5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Künstliche Intelligenz',
@@ -519,8 +520,8 @@ return [
                                         'label'=>'5',
                                         'value'=>1.5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Sicherheitsanalyse, u. a. Verhaltensanalyse und Anomalieerkennung',
@@ -552,8 +553,8 @@ return [
                                         'label'=>'5',
                                         'value'=>1.5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Sandboxing',
@@ -585,8 +586,8 @@ return [
                                         'label'=>'5',
                                         'value'=>1.5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Erweiterte Authentifizierungssysteme, u. a. Mehrfaktorauthentifizierung und Biometrie',
@@ -618,8 +619,8 @@ return [
                                         'label'=>'5',
                                         'value'=>1.5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Echtzeitanalyse',
@@ -651,8 +652,8 @@ return [
                                         'label'=>'5',
                                         'value'=>1.5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Heuristik',
@@ -684,8 +685,8 @@ return [
                                         'label'=>'5',
                                         'value'=>1.5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Threat-Intelligence-Services',
@@ -717,8 +718,8 @@ return [
                                         'label'=>'5',
                                         'value'=>1.5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Endpunktschutz der nächsten Generation (signaturfrei)',
@@ -750,8 +751,8 @@ return [
                                         'label'=>'5',
                                         'value'=>1.5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Proaktive Risikoerkennung (die Annahme, dass Ihre Umgebung bereits angegriffen wurde und Sie proaktiv nach dem Eindringling suchen müssen)',
@@ -783,8 +784,8 @@ return [
                                         'label'=>'5',
                                         'value'=>1.5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Forensik und Vorfallsuntersuchungssysteme',
@@ -816,8 +817,8 @@ return [
                                         'label'=>'5',
                                         'value'=>1.5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Dediziertes Sicherheitsoperationsteam',
@@ -849,8 +850,8 @@ return [
                                         'label'=>'5',
                                         'value'=>1.5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Sicherheitsvorfalls- und -ereignismanagement',
@@ -882,12 +883,12 @@ return [
                                         'label'=>'5',
                                         'value'=>1.5,
                                         'checked'=>false,
-                                    ]
-                                ]
-                            ]
-                        ]
-                    ]
-                ]/*,
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
+                ], /*,
                 'report' => array(
                     'text'=>'Archiving should be integrated in overall data protection workflow, IDC believes. In several industries (e.g. healthcare), long-term archiving is mandatory. With file sizes esp. for video exploding, storage assets often need rethinking.',
                     'image'=>'img/techfit_icons_Q-C1.png'
@@ -905,41 +906,41 @@ return [
                             [
                                 'label'=>'Keine',
                                 'value'=>0,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Weniger als 10',
                                 'value'=>4.9,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Zwischen 10 und 49',
                                 'value'=>29.5,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Zwischen 50 und 99',
                                 'value'=>74.5,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Zwischen 100 und 499',
                                 'value'=>299.5,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Zwischen 500 und 999',
                                 'value'=>749.5,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'1.000 oder mehr',
                                 'value'=>2000,
-                                'checked'=>false
-                            ]
-                        ]
-                    ]
-                ]
+                                'checked'=>false,
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Vorfallserkennung',
@@ -979,8 +980,8 @@ return [
                                         'label'=>'5',
                                         'value'=>3.75,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Vorfallsreaktionsplattform und unterstützende Technologie',
@@ -1012,8 +1013,8 @@ return [
                                         'label'=>'5',
                                         'value'=>3.75,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Vorfallsreaktionsteams (Mitarbeiter)',
@@ -1045,8 +1046,8 @@ return [
                                         'label'=>'5',
                                         'value'=>3.75,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Unabhängige Vorfallsreaktionsservices',
@@ -1078,14 +1079,14 @@ return [
                                         'label'=>'5',
                                         'value'=>3.75,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
-                        ]
-                    ]
-                ]
+                        ],
+                    ],
+                ],
             ],
-        ]
+        ],
     ],
     'incident-response' => [
         'title' => 'Vorfallsreaktion',
@@ -1106,31 +1107,31 @@ return [
                             [
                                 'label'=>'Wird nicht verwendet und ist nicht geplant',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Wird nicht verwendet, ist aber in den nächsten zwei Jahren geplant',
                                 'value'=>2,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Pilotprojekt läuft',
                                 'value'=>3,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'In beschränkten Bereichen in Verwendung',
                                 'value'=>4,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Weitläufig in Verwendung',
                                 'value'=>5,
-                                'checked'=>false
-                            ]
-                        ]
-                    ]
-                ]/*,
+                                'checked'=>false,
+                            ],
+                        ],
+                    ],
+                ], /*,
                 'report' => array(
                     'text'=>'Archiving should be integrated in overall data protection workflow, IDC believes. In several industries (e.g. healthcare), long-term archiving is mandatory. With file sizes esp. for video exploding, storage assets often need rethinking.',
                     'image'=>'img/techfit_icons_Q-C1.png'
@@ -1147,31 +1148,31 @@ return [
                             [
                                 'label'=>'Wir haben keine festgelegten Reaktionen auf Vorfälle',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Wir haben ein allgemein formuliertes Vorfallsreaktionsverfahren, das den Gesamtansatz bei Vorfällen definiert',
                                 'value'=>2,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Wir haben ein detailliertes Run-Book für Vorfallsarten, das unsere Reaktion definiert',
                                 'value'=>3,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Wir haben einen gemanagten Vorfallsreaktionsplan, der unsere Reaktion auf Vorfälle definiert',
                                 'value'=>4,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Wir haben eine Vorfallsreaktionsplattform, die das Verfahren der Vorfallsreaktion automatisiert',
                                 'value'=>5,
-                                'checked'=>false
-                            ]
-                        ]
-                    ]
-                ]
+                                'checked'=>false,
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Vorfallsreaktion',
@@ -1185,31 +1186,31 @@ return [
                             [
                                 'label'=>'1',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'2 oder 3',
                                 'value'=>2.5,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'4 oder 5',
                                 'value'=>4.5,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'6 bis 9',
                                 'value'=>7.5,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'10 oder mehr',
                                 'value'=>15,
-                                'checked'=>false
-                            ]
-                        ]
-                    ]
-                ]
+                                'checked'=>false,
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page4' => [
                 'title' => 'Vorfallsreaktion',
@@ -1222,41 +1223,41 @@ return [
                             [
                                 'label'=>'Weniger als 1 Stunde',
                                 'value'=>5,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'1-2 Stunden',
                                 'value'=>5,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'2-4 Stunden',
                                 'value'=>4,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'4-8 Stunden',
                                 'value'=>4,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'9-12 Stunden',
                                 'value'=>3,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'13–20 Stunden',
                                 'value'=>2,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Mehr als 20 Stunden',
                                 'value'=>1,
-                                'checked'=>false
-                            ]
-                        ]
-                    ]
-                ]
+                                'checked'=>false,
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page5' => [
                 'title' => 'Vorfallsreaktion',
@@ -1269,31 +1270,31 @@ return [
                             [
                                 'label'=>'Wir sind völlig überwältigt',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Wir hetzen von einem Notfall zum nächsten',
                                 'value'=>2,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Wir werden in der Regel damit fertig, aber manchmal nur mit Mühen',
                                 'value'=>3,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Wir werden meistens damit fertig, aber es gibt heikle Momente',
                                 'value'=>4,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Wir werden gut damit fertig',
                                 'value'=>5,
-                                'checked'=>false
-                            ]
-                        ]
-                    ]
-                ]
+                                'checked'=>false,
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page6' => [
                 'title' => 'Vorfallsreaktion',
@@ -1306,31 +1307,31 @@ return [
                             [
                                 'label'=>'Wir haben in der Regel nicht genug Informationen, um Maßnahmen zu ergreifen',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Wir erfassen Informationen, die uns eine allgemeine Richtung weisen',
                                 'value'=>2,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Wir erfassen genug Informationen, um vernünftige Maßnahmen zu ergreifen',
                                 'value'=>3,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Wir erfassen ausreichende Informationen, die uns angemessene Maßnahmen erkennen lassen',
                                 'value'=>4,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Wir erfassen detaillierte Informationen, die uns ein entschlossenes Handeln ermöglichen',
                                 'value'=>5,
-                                'checked'=>false
-                            ]
-                        ]
-                    ]
-                ]
+                                'checked'=>false,
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page7' => [
                 'title' => 'Vorfallsreaktion',
@@ -1343,32 +1344,32 @@ return [
                             [
                                 'label'=>'Automatisierte Richtlinienupdates (z. B. Firewall-Regeln, die als Reaktion auf neue Risiken aktualisiert werden)',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Run-Books',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Kommunikationsplan',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Richtlinie zur Notfallwiederherstellung',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Tiger/Go-Teams',
                                 'value'=>1,
-                                'checked'=>false
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
-    ]
+                                'checked'=>false,
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
+    ],
 ];

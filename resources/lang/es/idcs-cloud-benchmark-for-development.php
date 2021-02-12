@@ -1,6 +1,7 @@
 <?php
+
 //sage
-return array(
+return [
     'title' => 'Saca el m&aacute;ximo partido a la nube',
     'sub-title' => 'Avanzando en su desarrollo',
     'stage1' => 'Fase 1: Momento de actuar',
@@ -18,7 +19,7 @@ return array(
     ',
     'complete_thankyou' => 'Gracias :Fname,',
     'complete_body' => 'Tu informe personalizado llegará pronto a tu bandeja de entrada',
-    'complete_tweet' => 'I\'ve just taken the Cloud Development Assessment Sponsored by @Sage %26 @IDCUKI, we\'re at :result. Interested?',// http://bit.ly/2g8WN1d
+    'complete_tweet' => 'I\'ve just taken the Cloud Development Assessment Sponsored by @Sage %26 @IDCUKI, we\'re at :result. Interested?', // http://bit.ly/2g8WN1d
     'email'=>[
         'subject' => 'Informe de IDC',
         'hi' => 'Hola :Fname',
@@ -29,10 +30,10 @@ return array(
         'link' => 'Descargar el informe',
         'extra' => 'Una vez que hayas leído el informe, ¿por qué no visitas <a href="http://www.sage.es/" style="color:#024886">Sage</a>?',
         'regards' => 'Atentamente',
-        'team' => 'El equipo de IDC'
+        'team' => 'El equipo de IDC',
     ],
     'introduction-image' => 'report1.jpg',
-    'overall' => array(
+    'overall' => [
         'title'=>'Adopción general de la nube',
         'image'=>'',
         'introduction' => '
@@ -82,9 +83,9 @@ return array(
             <p>
                 En el siguiente informe se proporciona una explicación más detallada de las diferentes áreas de tu estrategia para la nube y de tu progreso. También se ofrece orientación para mejorar dichas áreas de tu negocio.
             </p>
-        '
-    ),
-    'cloud-vision-and-strategy' => array(
+        ',
+    ],
+    'cloud-vision-and-strategy' => [
         'title'=>'Estrategia y plan para la nube',
         'pageimage'=>'',
         'stage1'=>'
@@ -222,8 +223,8 @@ return array(
             Proporciona propuestas de valor a los clientes ofreciendo soluciones que resuelven la problemáticade negocio. Todas las actividades de planificación estratégica deben centrarse en solucionar problemas de negocio a tus clientes.
         </p>
         ',
-    ),
-    'process-and-skill-sets' => array(
+    ],
+    'process-and-skill-sets' => [
         'title'=>'Procesos y conocimientos técnicos',
         'pageimage'=>'process-and-skill-sets.jpg',
         'stage1'=>'
@@ -380,8 +381,8 @@ return array(
             En esta fase, tus iniciativas yplanes de formación deben centrarse en la especialización para alcanzar objetivos de transformación digital más amplios, incluidos los procesos digitales, de integración y de negocio.
         </p>
         ',
-    ),
-    'marketing' => array(
+    ],
+    'marketing' => [
         'title'=>'Funciones de marketing',
         'pageimage' => '',
         'stage1'=>'
@@ -539,8 +540,8 @@ return array(
             Conduce el liderazgo de opinión y el asesoramiento estratégico hacia la «evangelización». Empieza a contratar, identificar y formar a «evangelizadores» internos (dentro de tu propia organización) y externos, en los medios de comunicación, la comunidad de analistas, los Partners y, de preferencia, en tu cartera de clientes.
         </p>
         ',
-    ),
-    'sales' => array(
+    ],
+    'sales' => [
         'title'=>'Sales',
         'pageimage'=>'sales.jpg',
         'stage1'=>'
@@ -717,8 +718,8 @@ return array(
             Also critical at this stage is embedding your cloud capabilities into a broader digital transformation proposition. This incorporates a breadth of digital technologies, such as mobility, social, Big Data analytics, next-gen security, and the Internet of Things (IoT).
         </p-->
         ',
-    ),
-    'business-mix' => array(
+    ],
+    'business-mix' => [
         'title'=>'Mix de negocio',
         'pageimage' => '',
         'stage1'=>'
@@ -916,5 +917,5 @@ Recomendaciones"
             Evalúa las rutas hacia modelos de mercado y de negocio que permitan una escalabilidad eficaz, considera la posibilidad de tener otros Partners que puedan vender las licencias de las soluciones y amplía tu red de Partners para expandirte geográficamente.
         </p>
         ',
-    ),
-);
+    ],
+];

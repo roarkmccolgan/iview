@@ -1,4 +1,5 @@
 <?php
+
 //Sap Agility Global
 return [
     'overall' => [
@@ -11,10 +12,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -25,7 +26,7 @@ return [
             'basecolor'=>'#004386',
             'pageimage'=>false,
             'margin-top'=>31,
-            'header-spacing'=>10
+            'header-spacing'=>10,
         ],
         'types' => [
             'stage1' => [
@@ -57,7 +58,7 @@ return [
                 'high' => 100,
                 'tweet' => false,
                 'benchmark' => 28,
-            ]
+            ],
         ],
         'tweet' => false,
         'include_answers_in_download_report' => true,
@@ -81,10 +82,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -127,13 +128,13 @@ return [
                 'high' => 40,
                 'total' => 5,
                 'benchmark' => 28,
-            ]
-        ]
+            ],
+        ],
     ],
     'processes' => [
         'baseline' => 9.28,
         'baseline' => 10.93,
-        
+
         'baseline_stage1' => 2.5,
         'baseline_stage2' => 7.5,
         'baseline_stage3' => 13.5,
@@ -145,10 +146,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -191,8 +192,8 @@ return [
                 'high' => 20,
                 'total' => 5,
                 'benchmark' => 28,
-            ]
-        ]
+            ],
+        ],
     ],
     'customer-relationships' => [
         'baseline' => 9.42,
@@ -208,10 +209,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -254,8 +255,8 @@ return [
                 'high' => 20,
                 'total' => 5,
                 'benchmark' => 28,
-            ]
-        ]
+            ],
+        ],
     ],
     'suppliers-distributors' => [
         'baseline' => 9.42,
@@ -271,10 +272,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -317,8 +318,8 @@ return [
                 'high' => 20,
                 'total' => 5,
                 'benchmark' => 28,
-            ]
-        ]
+            ],
+        ],
     ],
     'people-experience' => [
         'baseline' => 9.42,
@@ -334,10 +335,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -380,7 +381,7 @@ return [
                 'high' => 30,
                 'total' => 5,
                 'benchmark' => 28,
-            ]
-        ]
-    ]
+            ],
+        ],
+    ],
 ];

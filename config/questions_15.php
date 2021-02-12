@@ -1,4 +1,5 @@
 <?php
+
 // SAP Agile
 return [
     'strategic-planning' => [
@@ -56,10 +57,10 @@ return [
                                 'label'=>'Very satisfied',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Strategic Planning',
@@ -88,10 +89,10 @@ return [
                                 'label'=>'HR (Headcounts – New Hiring)',
                                 'value'=>2,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Strategic Planning',
@@ -138,9 +139,9 @@ return [
                                     [
                                         'label'=>'5 Very quickly',
                                         'value'=>5,
-                                        'checked'=>false
-                                    ]
-                                ]
+                                        'checked'=>false,
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Budgeting',
@@ -169,9 +170,9 @@ return [
                                     [
                                         'label'=>'5 Very quickly',
                                         'value'=>5,
-                                        'checked'=>false
-                                    ]
-                                ]
+                                        'checked'=>false,
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Production',
@@ -200,9 +201,9 @@ return [
                                     [
                                         'label'=>'5 Very quickly',
                                         'value'=>5,
-                                        'checked'=>false
-                                    ]
-                                ]
+                                        'checked'=>false,
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'HR (Headcounts – New Hiring)',
@@ -231,15 +232,15 @@ return [
                                     [
                                         'label'=>'5 Very quickly',
                                         'value'=>5,
-                                        'checked'=>false
-                                    ]
-                                ]
+                                        'checked'=>false,
+                                    ],
+                                ],
                             ],
                         ],
-                    ]
-                ]
-            ]
-        ]
+                    ],
+                ],
+            ],
+        ],
     ],
     'processes' => [
         'title' => 'Processes',
@@ -295,10 +296,10 @@ return [
                                 'label'=>'Flexible to changing requirements',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Processes',
@@ -332,10 +333,10 @@ return [
                                 'label'=>'Easily changed',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Processes',
@@ -369,12 +370,12 @@ return [
                                 'label'=>'Constantly and with a clear purpose',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
-        ]
+        ],
     ],
     'customer-relationships' => [
         'title' => 'Customer Relationships',
@@ -430,10 +431,10 @@ return [
                                 'label'=>'Very often',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Customer Relationships',
@@ -467,10 +468,10 @@ return [
                                 'label'=>'Very easy to adapt',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' =>[
                 'title' => 'Customer Relationships',
@@ -504,12 +505,12 @@ return [
                                 'label'=>'We make these changes very quickly',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
     ],
     'suppliers-distributors' => [
         'title' => 'Suppliers &amp; Distributors',
@@ -565,10 +566,10 @@ return [
                                 'label'=>'We have integrated systems',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Suppliers &amp; Distributors',
@@ -602,10 +603,10 @@ return [
                                 'label'=>'We have integrated systems',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' =>[
                 'title' => 'Suppliers &amp; Distributors',
@@ -639,12 +640,12 @@ return [
                                 'label'=>'Very quickly',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
     ],
     'people-experience' => [
         'title' => 'People Experience (HR)',
@@ -700,10 +701,10 @@ return [
                                 'label'=>'There is full transparency of the business with all employees',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'People Experience (HR)',
@@ -737,10 +738,10 @@ return [
                                 'label'=>'Very quickly',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' =>[
                 'title' => 'People Experience (HR)',
@@ -780,11 +781,11 @@ return [
                                 'label'=>'Employee Experience measures (employee happiness, employee engagement, etc.)',
                                 'value'=>3,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
-    ]
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
+    ],
 ];

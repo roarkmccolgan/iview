@@ -1,6 +1,7 @@
 <?php
+
 //BTMcAfee
-return array(
+return [
     'title' => 'IDC\s Security Assessment',
     'sub-title' => 'How ready is your businesses\' security ',
     'stage1' => 'Stage 1: Foundation',
@@ -15,7 +16,7 @@ return array(
         <a class="btn btn--primary" target="_blank" href="https://www.bt.com/security">
             Click here for more information
         </a>',
-    'complete_tweet' => 'I\'ve just taken the @IDCEMEA Security Assessment Tool for @splunk. Interested? ',// http://bit.ly/2gslXEh
+    'complete_tweet' => 'I\'ve just taken the @IDCEMEA Security Assessment Tool for @splunk. Interested? ', // http://bit.ly/2gslXEh
     'email'=>[
         'subject' => 'IDC\'s Security Assessment',
         'hi' => 'Hi :Fname',
@@ -23,7 +24,7 @@ return array(
         'link' => 'Download Report',
         'extra' => '',
         'regards' => 'Regards',
-        'team' => 'The IDC Team'
+        'team' => 'The IDC Team',
     ],
     'introduction' => '
         <div class="spacer"></div>
@@ -148,7 +149,7 @@ return array(
     <p>
         You can improve the effectiveness of your security operation by applying more advanced security capabilities. High on your list should be using cloud-based security solutions to secure both on-premise infrastructure and public cloud services. These are now mature and can substantially increase your security posture: the idea that cloud is inherently insecure is out of date. DDoS protection is regarded as a standard capability today, so consider commissioning a service to deliver better availability assurance.
     </p>',
-   
+
     'summary' => '
         <div class="pb"></div>
         <div class="spacer"></div>
@@ -195,16 +196,16 @@ return array(
     ',
 
     /*'introduction-image' => 'report1.jpg',*/
-    'overall' => array(
+    'overall' => [
         'title'=>'Your Overall Security Assessment is at',
         'hidetitle'=>'true',
         'image'=>'',
         'stage1'=>'',
         'stage2'=>'',
         'stage3'=>'',
-        'stage4'=>''
-    ),
-    'general-approach-to-it' => array(
+        'stage4'=>'',
+    ],
+    'general-approach-to-it' => [
         'title'=>'Approach to IT',
         'image'=>'security-strategy.jpg',
         'pb'=>'pb',
@@ -212,9 +213,9 @@ return array(
         'stage2'=>'',
         'stage3'=>'',
         'stage4'=>'',
-        'stage5'=>''
-    ),
-    'integration' => array(
+        'stage5'=>'',
+    ],
+    'integration' => [
         'title'=> 'Integration',
         'image'=>'incident-detection.jpg',
         'pb'=>'pb',
@@ -222,9 +223,9 @@ return array(
         'stage2'=>'',
         'stage3'=>'',
         'stage4'=>'',
-        'stage5'=>''
-    ),
-    'automation' => array(
+        'stage5'=>'',
+    ],
+    'automation' => [
         'title'=> 'Automation',
         'image'=>'incident-response.jpg',
         'pb'=>'pb',
@@ -232,9 +233,9 @@ return array(
         'stage2'=>'',
         'stage3'=>'',
         'stage4'=>'',
-        'stage5'=>''
-    ),
-    'unified-intelligence' => array(
+        'stage5'=>'',
+    ],
+    'unified-intelligence' => [
         'title'=> 'Unified Intelligence',
         'image'=>'incident-response.jpg',
         'pb'=>'pb',
@@ -242,6 +243,6 @@ return array(
         'stage2'=>'',
         'stage3'=>'',
         'stage4'=>'',
-        'stage5'=>''
-    )
-);
+        'stage5'=>'',
+    ],
+];

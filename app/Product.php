@@ -7,8 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class Product extends Model
 {
     protected $fillable = [
-        'product'
+        'product',
     ];
+
     /**
      * Get all of the owning photo models.
      */

@@ -17,14 +17,14 @@ class AppServiceProvider extends ServiceProvider
         Collection::macro('implodeLast', function ($value, $glue = null, $lastGlue = null) {
             /** @var Collection $collection */
             $collection = $this;
-            $first      = $collection->first();
+            $first = $collection->first();
 
             if (\is_array($first) || \is_object($first)) {
                 return $collection->pluck($value)->implodeLast($glue, $lastGlue);
             }
 
             if ($collection->count() >= 2) {
-                return $collection->slice(0, -1)->implode($value) . $glue . $collection->last();
+                return $collection->slice(0, -1)->implode($value).$glue.$collection->last();
             }
 
             return implode($value, $collection->all());

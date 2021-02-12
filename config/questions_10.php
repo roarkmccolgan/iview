@@ -1,4 +1,5 @@
 <?php
+
 // NTTDATADX
 return [
     'dx-adoption' => [
@@ -23,7 +24,7 @@ return [
                     'q1'=>[
                         'type'=>'groupbutton',
                         'calc'=>[
-                            'type'=>'average'
+                            'type'=>'average',
                         ],
                         'optionLabels' => [
                             'Transformation not yet begun',
@@ -69,8 +70,8 @@ return [
                                         'label'=>'Not applicable',
                                         'value'=>0,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Digital/online Channel',
@@ -105,8 +106,8 @@ return [
                                         'label'=>'Not applicable',
                                         'value'=>0,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Mobile Channel',
@@ -141,8 +142,8 @@ return [
                                         'label'=>'Not applicable',
                                         'value'=>0,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'New data driven services through Open APIs',
@@ -177,8 +178,8 @@ return [
                                         'label'=>'Not applicable',
                                         'value'=>0,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Virtual/Augmented channel (e.g., chat bots, robo advisors)',
@@ -213,8 +214,8 @@ return [
                                         'label'=>'Not applicable',
                                         'value'=>0,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Personalized products and services (e.g., usage based/pay as you use products enabled by Internet of Things)',
@@ -249,8 +250,8 @@ return [
                                         'label'=>'Not applicable',
                                         'value'=>0,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Digital marketing (e.g., targeted offerings through digital channels enabled by data and analytics)',
@@ -285,8 +286,8 @@ return [
                                         'label'=>'Not applicable',
                                         'value'=>0,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Using AI/analytics to identify opportunities for monetization',
@@ -321,12 +322,12 @@ return [
                                         'label'=>'Not applicable',
                                         'value'=>0,
                                         'checked'=>false,
-                                    ]
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'DX Adoption',
@@ -350,10 +351,10 @@ return [
                                 'label'=>'Driver of competitive advantage',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'DX Adoption',
@@ -361,7 +362,7 @@ return [
                     'q3'=>[
                         'type'=>'groupbutton',
                         'calc'=>[
-                            'type'=>'average'
+                            'type'=>'average',
                         ],
                         'optionLabels' => [
                             'None',
@@ -407,8 +408,8 @@ return [
                                         'label'=>'40% and above',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Digital Transformation/New IT Initiatives - e.g., modern front office, New channels, personalized offerings',
@@ -443,12 +444,12 @@ return [
                                         'label'=>'40% and above',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page4' => [
                 'title' => 'DX Adoption',
@@ -456,7 +457,7 @@ return [
                     'q4'=>[
                         'type'=>'groupbutton',
                         'calc'=>[
-                            'type'=>'average'
+                            'type'=>'average',
                         ],
                         'optionLabels' => [
                             'Decrease by more than 10%',
@@ -502,8 +503,8 @@ return [
                                         'label'=>'Not applicable',
                                         'value'=>0,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'IT outsourcing services',
@@ -538,8 +539,8 @@ return [
                                         'label'=>'Not applicable',
                                         'value'=>0,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'IT maintenance, support, or training services',
@@ -574,8 +575,8 @@ return [
                                         'label'=>'Not applicable',
                                         'value'=>0,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Business Consulting',
@@ -610,8 +611,8 @@ return [
                                         'label'=>'Not applicable',
                                         'value'=>0,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Business Process Outsourcing',
@@ -646,14 +647,14 @@ return [
                                         'label'=>'Not applicable',
                                         'value'=>0,
                                         'checked'=>false,
-                                    ]
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
     ],
     'success-in-dx' => [
         'title' => 'Success in DX',
@@ -701,10 +702,10 @@ return [
                                 'label'=>'All or almost all strategic enterprise wide DX initiatives',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Success in DX',
@@ -733,10 +734,10 @@ return [
                                 'label'=>'Successful in all initiatives so far',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Success in DX',
@@ -744,7 +745,7 @@ return [
                     'q7'=>[
                         'type'=>'groupbutton',
                         'calc'=>[
-                            'type'=>'average'
+                            'type'=>'average',
                         ],
                         'optionLabels' => [
                             'Not considered yet',
@@ -784,8 +785,8 @@ return [
                                         'label'=>'In production enterprise wide',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Social media',
@@ -815,8 +816,8 @@ return [
                                         'label'=>'In production enterprise wide',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Mobile devices and mobile applications',
@@ -846,8 +847,8 @@ return [
                                         'label'=>'In production enterprise wide',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Next Gen Security',
@@ -877,8 +878,8 @@ return [
                                         'label'=>'In production enterprise wide',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Internet of Things',
@@ -908,8 +909,8 @@ return [
                                         'label'=>'In production enterprise wide',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Cognitive/AI and Cognitive RPA',
@@ -939,8 +940,8 @@ return [
                                         'label'=>'In production enterprise wide',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Open APIs',
@@ -970,8 +971,8 @@ return [
                                         'label'=>'In production enterprise wide',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Platform based financial services solutions',
@@ -1001,8 +1002,8 @@ return [
                                         'label'=>'In production enterprise wide',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Digital marketing tools',
@@ -1032,8 +1033,8 @@ return [
                                         'label'=>'In production enterprise wide',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'DevOps and agile methodologies',
@@ -1063,14 +1064,14 @@ return [
                                         'label'=>'In production enterprise wide',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
-        ]
+        ],
     ],
     'connected-financial-services' => [
         'title' => 'Connected Financial Services',
@@ -1118,10 +1119,10 @@ return [
                                 'label'=>'We are very advanced in delivering a connected financial services business',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Connected Financial Services',
@@ -1129,7 +1130,7 @@ return [
                     'q9'=>[
                         'type'=>'groupbutton',
                         'calc'=>[
-                            'type'=>'average'
+                            'type'=>'average',
                         ],
                         'optionLabels' => [
                             'We do not have this in place currently',
@@ -1157,8 +1158,8 @@ return [
                                         'label'=>' We employ this extensively in our organization',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Data enhanced identity management',
@@ -1178,8 +1179,8 @@ return [
                                         'label'=>' We employ this extensively in our organization',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Fraud detection and prevention solutions',
@@ -1199,8 +1200,8 @@ return [
                                         'label'=>' We employ this extensively in our organization',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Cyberthreat detection and prevention solution',
@@ -1220,8 +1221,8 @@ return [
                                         'label'=>' We employ this extensively in our organization',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Risk based communications monitoring analysis (staff and customers)',
@@ -1241,8 +1242,8 @@ return [
                                         'label'=>' We employ this extensively in our organization',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Risk based transaction monitoring analysis (staff and customers)',
@@ -1262,8 +1263,8 @@ return [
                                         'label'=>' We employ this extensively in our organization',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Investments in Next-Gen Security',
@@ -1283,8 +1284,8 @@ return [
                                         'label'=>' We employ this extensively in our organization',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Regulatory compliance reporting',
@@ -1304,13 +1305,13 @@ return [
                                         'label'=>' We employ this extensively in our organization',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
-    ]
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
+    ],
 ];

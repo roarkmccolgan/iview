@@ -12,6 +12,6 @@ class Position extends Model
     
     public function option()
     {
-        return this->belongsTo('App\Options')
+        return $this->belongsTo(\App\Options::class)
     }
 }

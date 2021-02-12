@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Database\Seeder;
 use Carbon\Carbon;
+use Illuminate\Database\Seeder;
 
 class SNOWSeeder extends Seeder
 {
@@ -33,7 +33,7 @@ class SNOWSeeder extends Seeder
             'subdomain' => 'servicenow',
             'language_id' => 1,
             'urlable_id' => 18,
-            'urlable_type' => 'App\Tool',
+            'urlable_type' => \App\Tool::class,
             'created_at' => Carbon::now(),
         ]);
         DB::table('urls')->insert([
@@ -41,16 +41,16 @@ class SNOWSeeder extends Seeder
             'subdomain' => 'servicenow',
             'language_id' => 1,
             'urlable_id' => 18,
-            'urlable_type' => 'App\Tool',
+            'urlable_type' => \App\Tool::class,
             'created_at' => Carbon::now(),
         ]);
         DB::table('language_tool')->insert([ //english NTT
             'tool_id' => 18,
-            'language_id' => 1
+            'language_id' => 1,
         ]);
         DB::table('tool_user')->insert([
             'tool_id' => 18,
-            'user_id' => 1 //roark
+            'user_id' => 1, //roark
         ]);
 
         /*DB::table('extra_fields')->insert([

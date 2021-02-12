@@ -2,19 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
-use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Http\Requests;
+use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
-
     public function __construct()
     {
-
         $this->middleware('url');
     }
+
     /**
      * Display a listing of the resource.
      *
@@ -22,15 +20,15 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $product  = explode('\\', config('app.product.type'));
+        $product = explode('\\', config('app.product.type'));
         $product = $product[1];
-        $config =[
+        $config = [
             $product,
             config('app.locale'),
             config('app.url'),
             config('app.host'),
             config('app.analytics'),
-            config('app.template')
+            config('app.template'),
         ];
         //return $config;
 

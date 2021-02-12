@@ -2,8 +2,8 @@
 
 namespace App;
 
-use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
 use Spatie\Permission\Traits\HasRoles;
 
 class User extends Authenticatable
@@ -33,7 +33,7 @@ class User extends Authenticatable
      */
     public function tools()
     {
-        return $this->belongsToMany('App\Tool');
+        return $this->belongsToMany(\App\Tool::class);
     }
 
     /**
@@ -41,6 +41,6 @@ class User extends Authenticatable
      */
     public function iviews()
     {
-        return $this->belongsToMany('App\Iview');
+        return $this->belongsToMany(\App\Iview::class);
     }
 }

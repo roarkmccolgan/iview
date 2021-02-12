@@ -1,4 +1,5 @@
 <?php
+
 //5 SPLUNK
 return [
     'screeners' => [
@@ -21,23 +22,23 @@ return [
                             [
                                 'label'=>'de 500 à 999',
                                 'value'=>0,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'de 1 000 à 2 499',
                                 'value'=>0,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'2 500 ou plus',
                                 'value'=>0,
-                                'checked'=>false
-                            ]
-                        ]
-                    ]
-                ]
+                                'checked'=>false,
+                            ],
+                        ],
+                    ],
+                ],
             ],
-        ]
+        ],
     ],
     'security-strategy' => [
         'title' => 'Stratégie de sécurité',
@@ -58,31 +59,31 @@ return [
                             [
                                 'label'=>'Investissement ponctuel sans stratégie générale',
                                 'value'=>2,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Nous prévoyons de combler certaines lacunes sécuritaires',
                                 'value'=>4,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Nous avons des processus répétés en place qui soutiennent l’activité',
                                 'value'=>6,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Nous possédons une stratégie de sécurité bien gérée qui donne la marche à suivre pour les deux prochaines années au minimum',
                                 'value'=>8,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Nous avons défini la sécurité comme un investissement stratégique fondamental avec des résultats spécifiés',
                                 'value'=>10,
-                                'checked'=>false
-                            ]
-                        ]
-                    ]
-                ]/*,
+                                'checked'=>false,
+                            ],
+                        ],
+                    ],
+                ], /*,
                 'report' => array(
                     'text'=>'Solid business decisions should be data-driven. However, as many as 40% of your small and midsize business peers don\'t measure their business results at all. Leapfrog opportunity! ',
                     'image'=>'img/techfit_icons_Q-A1.png'
@@ -126,8 +127,8 @@ return [
                                         'label'=>'5',
                                         'value'=>1.11,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Informations de fournisseurs tiers et sources gouvernementales',
@@ -159,8 +160,8 @@ return [
                                         'label'=>'5',
                                         'value'=>1.11,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Besoin d’accroître nos ressources internes et notre éventail de compétences',
@@ -192,8 +193,8 @@ return [
                                         'label'=>'5',
                                         'value'=>1.11,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Exigences de conformité telles que GDPR, ISO2700x ou PCI DSS',
@@ -225,8 +226,8 @@ return [
                                         'label'=>'5',
                                         'value'=>1.11,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Initiatives commerciales telles que la transformation numérique et l’Internet des objets',
@@ -258,8 +259,8 @@ return [
                                         'label'=>'5',
                                         'value'=>1.11,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Adoption des services Cloud',
@@ -291,8 +292,8 @@ return [
                                         'label'=>'5',
                                         'value'=>1.11,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Exigences de cyber-assurance',
@@ -324,8 +325,8 @@ return [
                                         'label'=>'5',
                                         'value'=>1.11,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Une décision stratégique d’externaliser tout ou partie de notre sécurité',
@@ -357,8 +358,8 @@ return [
                                         'label'=>'5',
                                         'value'=>1.11,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Une violation ou faille récente',
@@ -390,12 +391,12 @@ return [
                                         'label'=>'5',
                                         'value'=>1.11,
                                         'checked'=>false,
-                                    ]
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Stratégie de sécurité',
@@ -408,37 +409,37 @@ return [
                             [
                                 'label'=>'Nous n’avons pas d’avis ou de compréhension défini de ce qui est à la pointe de la technologie',
                                 'value'=>2,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Nos fournisseurs actuels nous indiquent ce qui est à la pointe de la technologie',
                                 'value'=>4,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Nous recourons à des experts externes pour définir ce qui est à la pointe de la technologie',
                                 'value'=>6,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Nous recourons à des sources externes telles que des autorités nationales compétentes (CESG/NCSC au Royaume-Uni, BSI en Allemagne, etc.) et/ou des normes sectorielles (comme ISO, NIST et SANS) pour définir ce qui est à la pointe de la technologie',
                                 'value'=>8,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Nous recourons à des spécialistes ou consultants externes pour définir ce qui est à la pointe de la technologie',
                                 'value'=>10,
-                                'checked'=>false
-                            ]
-                        ]
-                    ]
-                ]/*,
+                                'checked'=>false,
+                            ],
+                        ],
+                    ],
+                ], /*,
                 'report' => array(
                     'text'=>'Solid business decisions should be data-driven. However, as many as 40% of your small and midsize business peers don\'t measure their business results at all. Leapfrog opportunity! ',
                     'image'=>'img/techfit_icons_Q-A1.png'
                 )*/
-            ]
-        ]
+            ],
+        ],
     ],
     'incident-detection' => [
         'title' => 'Détection des incidents',
@@ -486,8 +487,8 @@ return [
                                         'label'=>'5',
                                         'value'=>1.5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Intelligence artificielle',
@@ -519,8 +520,8 @@ return [
                                         'label'=>'5',
                                         'value'=>1.5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Analyse de sécurité, y compris analyse comportementale et détection d’anomalies',
@@ -552,8 +553,8 @@ return [
                                         'label'=>'5',
                                         'value'=>1.5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Sandbox',
@@ -585,8 +586,8 @@ return [
                                         'label'=>'5',
                                         'value'=>1.5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Systèmes d’authentification avancés, y compris authentification multifacteurs et biométrie',
@@ -618,8 +619,8 @@ return [
                                         'label'=>'5',
                                         'value'=>1.5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Analyse en temps réel',
@@ -651,8 +652,8 @@ return [
                                         'label'=>'5',
                                         'value'=>1.5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Heuristique',
@@ -684,8 +685,8 @@ return [
                                         'label'=>'5',
                                         'value'=>1.5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Service de renseignement sur les menaces',
@@ -717,8 +718,8 @@ return [
                                         'label'=>'5',
                                         'value'=>1.5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Solution NextGen de sécurité du poste de travail (sans signature)',
@@ -750,8 +751,8 @@ return [
                                         'label'=>'5',
                                         'value'=>1.5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Recherche proactive des menaces (selon la supposition suivante : si son environnement fait déjà face à des violations, on recherche l’intrus de manière proactive).)</small>',
@@ -783,8 +784,8 @@ return [
                                         'label'=>'5',
                                         'value'=>1.5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Systèmes d’analyse et d’enquête sur les incidents',
@@ -816,8 +817,8 @@ return [
                                         'label'=>'5',
                                         'value'=>1.5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Équipe d’activité de sécurité dédiée (SOC)',
@@ -849,8 +850,8 @@ return [
                                         'label'=>'5',
                                         'value'=>1.5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Gestion des événements et des incidents de sécurité (SIEM)',
@@ -882,12 +883,12 @@ return [
                                         'label'=>'5',
                                         'value'=>1.5,
                                         'checked'=>false,
-                                    ]
-                                ]
-                            ]
-                        ]
-                    ]
-                ]/*,
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
+                ], /*,
                 'report' => array(
                     'text'=>'Archiving should be integrated in overall data protection workflow, IDC believes. In several industries (e.g. healthcare), long-term archiving is mandatory. With file sizes esp. for video exploding, storage assets often need rethinking.',
                     'image'=>'img/techfit_icons_Q-C1.png'
@@ -905,41 +906,41 @@ return [
                             [
                                 'label'=>'Aucune',
                                 'value'=>0,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Moins de 10',
                                 'value'=>4.9,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Entre 10 et 49',
                                 'value'=>29.5,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Entre 50 et 99',
                                 'value'=>74.5,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Entre 100 et 499',
                                 'value'=>299.5,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Entre 500 et 999',
                                 'value'=>749.5,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'1 000 ou plus',
                                 'value'=>2000,
-                                'checked'=>false
-                            ]
-                        ]
-                    ]
-                ]
+                                'checked'=>false,
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Détection des incidents',
@@ -979,8 +980,8 @@ return [
                                         'label'=>'5',
                                         'value'=>3.75,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Plate-forme de réponse aux incidents et technologie connexe',
@@ -1012,8 +1013,8 @@ return [
                                         'label'=>'5',
                                         'value'=>3.75,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Équipes de réponse aux incidents (personnes)',
@@ -1045,8 +1046,8 @@ return [
                                         'label'=>'5',
                                         'value'=>3.75,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Services externes de réponse aux incidents',
@@ -1078,14 +1079,14 @@ return [
                                         'label'=>'5',
                                         'value'=>3.75,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
-                        ]
-                    ]
-                ]
+                        ],
+                    ],
+                ],
             ],
-        ]
+        ],
     ],
     'incident-response' => [
         'title' => 'Réponse aux incidents',
@@ -1106,31 +1107,31 @@ return [
                             [
                                 'label'=>'N’en utilise pas et ne prévoie pas d’en utiliser',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'N’en utilise pas, mais prévoie d’en utiliser une dans les deux ans',
                                 'value'=>2,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'En cours de test',
                                 'value'=>3,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Utilisation dans des domaines limités de la production',
                                 'value'=>4,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Large utilisation dans la production',
                                 'value'=>5,
-                                'checked'=>false
-                            ]
-                        ]
-                    ]
-                ]/*,
+                                'checked'=>false,
+                            ],
+                        ],
+                    ],
+                ], /*,
                 'report' => array(
                     'text'=>'Archiving should be integrated in overall data protection workflow, IDC believes. In several industries (e.g. healthcare), long-term archiving is mandatory. With file sizes esp. for video exploding, storage assets often need rethinking.',
                     'image'=>'img/techfit_icons_Q-C1.png'
@@ -1147,31 +1148,31 @@ return [
                             [
                                 'label'=>'Nous n’avons pas de réponse définie aux incidents',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Nous possédons un large processus de réponse aux incidents qui définit l’approche globale des incidents',
                                 'value'=>2,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Nous possédons un manuel de procédures détaillé pour les types d’incidents qui définit notre réponse',
                                 'value'=>3,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Nous possédons un plan de réponse aux incidents géré qui définit notre réaction aux incidents',
                                 'value'=>4,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Nous disposons d’une plate-forme de gestion des réponses aux incidents qui automatise le processus de réaction aux incidents',
                                 'value'=>5,
-                                'checked'=>false
-                            ]
-                        ]
-                    ]
-                ]
+                                'checked'=>false,
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Réponse aux incidents',
@@ -1185,31 +1186,31 @@ return [
                             [
                                 'label'=>'1',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'2 ou 3',
                                 'value'=>2.5,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'4 ou 5',
                                 'value'=>4.5,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'6 à 9',
                                 'value'=>7.5,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'10 ou plus',
                                 'value'=>15,
-                                'checked'=>false
-                            ]
-                        ]
-                    ]
-                ]
+                                'checked'=>false,
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page4' => [
                 'title' => 'Réponse aux incidents',
@@ -1222,41 +1223,41 @@ return [
                             [
                                 'label'=>'Moins d’1 heure',
                                 'value'=>5,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'1 à 2 heures',
                                 'value'=>5,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'2 à 4 heures',
                                 'value'=>4,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'4 à 8 heures',
                                 'value'=>4,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'9 à 12 heures',
                                 'value'=>3,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'13 à 20 heures',
                                 'value'=>2,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Plus de 20 heures',
                                 'value'=>1,
-                                'checked'=>false
-                            ]
-                        ]
-                    ]
-                ]
+                                'checked'=>false,
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page5' => [
                 'title' => 'Réponse aux incidents',
@@ -1269,31 +1270,31 @@ return [
                             [
                                 'label'=>'Nous sommes complètement débordés',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Nous parons en permanence au plus pressé',
                                 'value'=>2,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Nous gérons habituellement, mais nous luttons quelquefois',
                                 'value'=>3,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Nous gérons la plupart du temps, avec quelques moments de stress',
                                 'value'=>4,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Nous gérons assez tranquillement',
                                 'value'=>5,
-                                'checked'=>false
-                            ]
-                        ]
-                    ]
-                ]
+                                'checked'=>false,
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page6' => [
                 'title' => 'Réponse aux incidents',
@@ -1306,31 +1307,31 @@ return [
                             [
                                 'label'=>'Nous avons généralement assez d’informations pour prendre des mesures',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Nous collectons des informations qui nous envoient dans la bonne direction',
                                 'value'=>2,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Nous collectons suffisamment d’informations pour prendre des mesures adéquates',
                                 'value'=>3,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Nous collectons suffisamment d’informations en vue de mesures appropriées',
                                 'value'=>4,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Nous collectons des informations détaillées qui nous permettent de prendre des mesures déterminantes',
                                 'value'=>5,
-                                'checked'=>false
-                            ]
-                        ]
-                    ]
-                ]
+                                'checked'=>false,
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page7' => [
                 'title' => 'Réponse aux incidents',
@@ -1343,32 +1344,32 @@ return [
                             [
                                 'label'=>'Mises à jour automatisées de la politique (par ex. des règles de pare-feu mises à jour en réponse à l’émergence d’une nouvelle menace)',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Manuels de procédures',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Plan de communication',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Politique de reprise après sinistre',
                                 'value'=>1,
-                                'checked'=>false
+                                'checked'=>false,
                             ],
                             [
                                 'label'=>'Équipes d’intervention',
                                 'value'=>1,
-                                'checked'=>false
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
-    ]
+                                'checked'=>false,
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
+    ],
 ];

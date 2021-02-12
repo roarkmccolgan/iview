@@ -1,6 +1,7 @@
 <?php
+
 //Hitachi
-return array(
+return [
     'elqFormName'=>'',
     'developedby'=>'Developed by',
     'sponsoredby'=>'Sponsored by',
@@ -21,7 +22,7 @@ return array(
             This self-assessment tool is backed up by independent end-user research and IDC\'s in depth understanding of Cloud and Technology markets. Upon completion of a short survey (under 10 minutes) you will receive a custom report that measures the readiness of your organization\'s Cloud Strategy and provides you with essential and tailored guidance to help you advance in your Cloud journey, and monetize your data in future.
         </p>',
     'startbut'=>'Start Assessment',
-    
+
     'send'=>'We can send you the full results directly to your mailbox',
     'register'=>'Register now to receive your personalized report',
     'provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
@@ -49,7 +50,7 @@ return array(
         <a class="text-trend-red" target="_blank" href="https://www.hitachivantara.com/go/hitachi-consulting/services/digital-modernization.html">
             Click here for more information
         </a>',
-    'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @ntt. Interested? ',// http://bit.ly/2gslXEh
+    'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @ntt. Interested? ', // http://bit.ly/2gslXEh
     'email'=>[
         'subject' => 'IDC\'s Cloud Strategy Assessment',
         'hi' => 'Hi :Fname',
@@ -60,7 +61,7 @@ return array(
         'dont_see_link' => 'Click here to download the report',
         'extra' => 'Once you\'ve read the report why not visit Hitachi Vantara <a href="https://www.hitachivantara.com/go/hitachi-consulting/services/digital-modernization.html" style="color:#054683">Cloud Services</a>',
         'regards' => 'Regards',
-        'team' => 'The IDC Team'
+        'team' => 'The IDC Team',
     ],
     'leadgen'=>[
         'fname'=>'First Name',
@@ -203,7 +204,7 @@ return array(
             Source: IDC DX Leaders\' Survey 2019; Europe, n = 400
         </div>
     ',
-    
+
     'introduction2' => '
         <a name="ranking1"></a>
         <h2 class="text-blue-dark mb-2">Ranking Explanation</h2>
@@ -326,7 +327,7 @@ return array(
             </div>
         </div>
     ',
-    
+
     'migration-intro' => '
         <a name="migration"></a>
         <div class="clearfix">
@@ -1532,5 +1533,5 @@ return array(
                 </p>
             </div>
         </div>
-    '
-);
+    ',
+];

@@ -1,6 +1,7 @@
 <?php
+
 //Trend
-return array(
+return [
     'elqFormName'=>'',
     'developedby'=>'Developed by',
     'sponsoredby'=>'Sponsored by',
@@ -24,7 +25,7 @@ return array(
             Simply answer some quick-fire questions on how you currently approach sales, marketing, services and security, to receive a personalized assessment and set of key recommendations on taking your business to the next level.
         </p>',
     'startbut'=>'Let\'s Go!',
-    
+
     'send'=>'We can send you the full results directly to your mailbox',
     'register'=>'Register now to receive your personalized report',
     'provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
@@ -54,7 +55,7 @@ return array(
         <a class="text-trend-red" target="_blank" href="http://trendmicro.com">
             Click here for more information
         </a>',
-    'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @ntt. Interested? ',// http://bit.ly/2gslXEh
+    'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @ntt. Interested? ', // http://bit.ly/2gslXEh
     'email'=>[
         'subject' => 'Trend Micro MSP Readiness Tool by IDC',
         'hi' => 'Hi :Fname',
@@ -63,7 +64,7 @@ return array(
         'link_inline' => 'View Report in your browser',
         'extra' => 'Once you\'ve read the report why not visit Trend Micro <a href="https://www.trendmicro.com/en_gb/partners/managed-service-provider.html" style="color:#054683">Managed Service Providers</a>',
         'regards' => 'Regards',
-        'team' => 'The IDC Team'
+        'team' => 'The IDC Team',
     ],
     'leadgen'=>[
         'fname'=>'First Name',
@@ -1303,4 +1304,4 @@ return array(
             </div>
         </div>
     ',
-);
+];

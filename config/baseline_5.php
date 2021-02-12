@@ -1,4 +1,5 @@
 <?php
+
 //SPLUNK
 return [
     'overall' => [
@@ -26,10 +27,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -40,7 +41,7 @@ return [
             'color'=>'#6AB361',
             'pageimage'=>false,
             'margin-top'=>48,
-            'header-spacing'=>0
+            'header-spacing'=>0,
         ],
         'types' => [
             'stage1' => [
@@ -77,85 +78,85 @@ return [
                 'copy' => 'general.5besttxt',
                 'tweet' => false,
                 'benchmark' => 21,
-            ]
+            ],
         ],
         'tweet' => false,
         'eloqua' => [
             'url' => 'https://s1528.t.eloqua.com/e/f2',
             'fields' => [
                 'Language' => [
-                    'type' => 'locale'
+                    'type' => 'locale',
                 ],
                 'FirstName' => [
                     'type' => 'field',
-                    'name' => 'fname'
+                    'name' => 'fname',
                 ],
                 'LastName' => [
                     'type' => 'field',
-                    'name' => 'sname'
+                    'name' => 'sname',
                 ],
                 'Email' => [
                     'type' => 'field',
-                    'name' => 'email'
+                    'name' => 'email',
                 ],
                 'Company' => [
                     'type' => 'field',
-                    'name' => 'company'
+                    'name' => 'company',
                 ],
                 'Title' => [
                     'type' => 'field',
-                    'name' => 'title'
+                    'name' => 'title',
                 ],
                 'Phone' => [
                     'type' => 'field',
-                    'name' => 'phone'
+                    'name' => 'phone',
                 ],
                 'Country' => [
                     'type' => 'field',
-                    'name' => 'country'
+                    'name' => 'country',
                 ],
                 'postal' => [
                     'type' => 'field',
-                    'name' => 'extra.zip'
+                    'name' => 'extra.zip',
                 ],
                 'state' => [
                     'type' => 'field',
-                    'name' => 'extra.stateprov'
+                    'name' => 'extra.stateprov',
                 ],
                 'CompanySize' => [
                     'type' => 'questionlabel',
                     'questions' => [
-                        'screeners.pages.page1.questions.s1'
+                        'screeners.pages.page1.questions.s1',
                     ],
                 ],
                 'IncidencedetectionA9' => [
                     'type' => 'question',
                     'questions' => [
-                        'incident-detection.pages.page2.questions.q5'
+                        'incident-detection.pages.page2.questions.q5',
                     ],
                 ],
                 'IncidenceresponseA11a' => [
                     'type' => 'question',
                     'questions' => [
-                        'incident-response.pages.page3.questions.q9'
-                    ]
+                        'incident-response.pages.page3.questions.q9',
+                    ],
                 ],
                 'IncidenceresponseA11b' => [
                     'type' => 'question',
                     'questions' => [
-                        'incident-response.pages.page4.questions.q10'
-                    ]
+                        'incident-response.pages.page4.questions.q10',
+                    ],
                 ],
                 'Incidenceresponse' => [
                     'type' => 'calculation',
                     'questions' => [
                         'incident-response.pages.page3.questions.q9',
-                        'incident-response.pages.page4.questions.q10'
+                        'incident-response.pages.page4.questions.q10',
                     ],
-                    'formula' => 'multiply'
+                    'formula' => 'multiply',
                 ],
                 'outputreport' => [
-                    'type' => 'report'
+                    'type' => 'report',
                 ],
                 'elqFormName' => [
                     'type' => 'hidden',
@@ -164,9 +165,9 @@ return [
                 'elqSiteID' => [
                     'type' => 'hidden',
                     'value' => 1528,
-                ]
-            ]
-        ]
+                ],
+            ],
+        ],
     ],
     'security-strategy' => [
         'baseline' => 15.363,
@@ -192,10 +193,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -215,37 +216,37 @@ return [
                 'high' => 10.8,
                 'total' => 2,
                 'benchmark' => 1,
-                'copy' => 'general.5security-strategy-poor-txt'
+                'copy' => 'general.5security-strategy-poor-txt',
             ],
             'stage2' => [
                 'low' => 10.9,
                 'high' => 15.6,
                 'total' => 3,
                 'benchmark' => 16,
-                'copy' => 'general.5security-strategy-standard-txt'
+                'copy' => 'general.5security-strategy-standard-txt',
             ],
             'stage3' => [
                 'low' => 15.7,
                 'high' => 20.4,
                 'total' => 5,
                 'benchmark' => 34,
-                'copy' => 'general.5security-strategy-good-txt'
+                'copy' => 'general.5security-strategy-good-txt',
             ],
             'stage4' => [
                 'low' => 20.5,
                 'high' => 25.2,
                 'total' => 5,
                 'benchmark' => 43,
-                'copy' => 'general.5security-strategy-aspirational-txt'
+                'copy' => 'general.5security-strategy-aspirational-txt',
             ],
             'stage5' => [
                 'low' => 25.3,
                 'high' => 50,
                 'total' => 5,
                 'benchmark' => 6,
-                'copy' => 'general.5security-strategy-best-txt'
-            ]
-        ]
+                'copy' => 'general.5security-strategy-best-txt',
+            ],
+        ],
     ],
     'incident-detection' => [
         'baseline' => 24.046,
@@ -271,10 +272,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -294,40 +295,40 @@ return [
                 'high' => 11.6,
                 'total' => 3,
                 'benchmark' => 27,
-                'copy' => 'general.5incident-detection-poor-txt'
+                'copy' => 'general.5incident-detection-poor-txt',
             ],
             'stage2' => [
                 'low' => 11.7,
                 'high' => 16.2,
                 'total' => 4,
                 'benchmark' => 27,
-                'copy' => 'general.5incident-detection-standard-txt'
+                'copy' => 'general.5incident-detection-standard-txt',
             ],
             'stage3' => [
                 'low' => 16.3,
                 'high' => 20.8,
                 'total' => 6,
                 'benchmark' => 28,
-                'copy' => 'general.5incident-detection-good-txt'
+                'copy' => 'general.5incident-detection-good-txt',
             ],
             'stage4' => [
                 'low' => 20.9,
                 'high' => 25.4,
                 'total' => 6,
                 'benchmark' => 15,
-                'copy' => 'general.5incident-detection-aspirational-txt'
+                'copy' => 'general.5incident-detection-aspirational-txt',
             ],
             'stage5' => [
                 'low' => 25.6,
                 'high' => 40,
                 'total' => 5,
                 'benchmark' => 3,
-                'copy' => 'general.5incident-detection-best-txt'
-            ]
-        ]
+                'copy' => 'general.5incident-detection-best-txt',
+            ],
+        ],
     ],
     'incident-response' => [
-        'baseline' => 10,917,
+        'baseline' => 10, 917,
         'benchmark-country-en' => 3,
         'benchmark-country-fr' => 3,
         'benchmark-country-de' => 3,
@@ -350,10 +351,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -373,36 +374,36 @@ return [
                 'high' => 10,
                 'total' => 1,
                 'benchmark' => 2,
-                'copy' => 'general.5incident-detection-poor-txt'
+                'copy' => 'general.5incident-detection-poor-txt',
             ],
             'stage2' => [
                 'low' => 10.1,
                 'high' => 15,
                 'total' => 2,
                 'benchmark' => 13,
-                'copy' => 'general.5incident-detection-standard-txt'
+                'copy' => 'general.5incident-detection-standard-txt',
             ],
             'stage3' => [
                 'low' => 15.1,
                 'high' => 20,
                 'total' => 4,
                 'benchmark' => 37,
-                'copy' => 'general.5incident-detection-good-txt'
+                'copy' => 'general.5incident-detection-good-txt',
             ],
             'stage4' => [
                 'low' => 20.1,
                 'high' => 25,
                 'total' => 4,
                 'benchmark' => 30,
-                'copy' => 'general.5incident-detection-aspirational-txt'
+                'copy' => 'general.5incident-detection-aspirational-txt',
             ],
             'stage5' => [
                 'low' => 25.1,
                 'high' => 30,
                 'total' => 5,
                 'benchmark' => 19,
-                'copy' => 'general.5incident-detection-best-txt'
-            ]
-        ]
-    ]
+                'copy' => 'general.5incident-detection-best-txt',
+            ],
+        ],
+    ],
 ];

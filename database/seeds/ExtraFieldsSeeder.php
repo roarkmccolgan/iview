@@ -19,21 +19,21 @@ class ExtraFieldsSeeder extends Seeder
             'trans' => 'investment',
             'error' => 'errorInvestment',
             'options' => json_encode([
-                "invest1"=>"IT Infrastructure",
-                "invest2"=> "Storage systems",
-                "invest3"=> "IT Security controls",
-                "invest4"=> "Systems Management",
-                "invest5"=> "Automation and Orchestration",
-                "invest6"=> "Application Development (DevOps/Containers etc)",
-                "invest7"=> "Workforce Mobility",
-                "invest8"=> "Customer Experience",
-                "invest9"=> "Enterprise Applications (ERP/CRM/SCM/HCM etc)",
-                "invest10"=> "GDPR compliance"
+                'invest1'=>'IT Infrastructure',
+                'invest2'=> 'Storage systems',
+                'invest3'=> 'IT Security controls',
+                'invest4'=> 'Systems Management',
+                'invest5'=> 'Automation and Orchestration',
+                'invest6'=> 'Application Development (DevOps/Containers etc)',
+                'invest7'=> 'Workforce Mobility',
+                'invest8'=> 'Customer Experience',
+                'invest9'=> 'Enterprise Applications (ERP/CRM/SCM/HCM etc)',
+                'invest10'=> 'GDPR compliance',
             ]),
             'required' => 1,
             'order' => 2,
             'created_at' => Carbon::now(),
-            'updated_at' => Carbon::now()
+            'updated_at' => Carbon::now(),
         ]);
     }
 }

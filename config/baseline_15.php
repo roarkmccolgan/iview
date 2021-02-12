@@ -1,4 +1,5 @@
 <?php
+
 //Sap Agility
 return [
     'overall' => [
@@ -11,10 +12,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -25,7 +26,7 @@ return [
             'basecolor'=>'#004386',
             'pageimage'=>false,
             'margin-top'=>26,
-            'header-spacing'=>5
+            'header-spacing'=>5,
         ],
         'types' => [
             'stage1' => [
@@ -57,7 +58,7 @@ return [
                 'high' => 100,
                 'tweet' => false,
                 'benchmark' => 28,
-            ]
+            ],
         ],
         'tweet' => false,
         'offer_code' => [
@@ -76,19 +77,19 @@ return [
         ],
         'include_answers_in_download_report' => true,
         'report_recipients' => [
-            'roarkmccolgan@gmail.com'
+            'roarkmccolgan@gmail.com',
         ],
         'crmrequest' => [
             'only' => [
                 // 'field' => 'country',
                 // 'value' => 'Germany',
-                'local' => 'de'
+                'local' => 'de',
             ],
             'url' => 'https://inbound.msights.com/api/response',
             'method' => 'POST',
             'authType' => 'basic',
             'headers' => [
-                'Content-Type' => 'application/x-www-form-urlencoded'
+                'Content-Type' => 'application/x-www-form-urlencoded',
             ],
             'body' => 'form_params',
             'fields' => [
@@ -137,12 +138,12 @@ return [
                 'offer_code' => [
                     'type' => 'result',
                     'config' => 'baseline_15.overall.offer_code',
-                    'session' => 'overall_rating'
+                    'session' => 'overall_rating',
                 ],
                 'offer_title' => [
                     'type' => 'result',
                     'config' => 'baseline_15.overall.offer_title',
-                    'session' => 'overall_rating'
+                    'session' => 'overall_rating',
                 ],
                 'addr1' => [
                     'type' => 'hidden',
@@ -166,42 +167,42 @@ return [
                 ],
                 'company' => [
                     'type' => 'field',
-                    'name' => 'company'
+                    'name' => 'company',
                 ],
                 'country' => [
                     'type' => 'field',
-                    'name' => 'country'
+                    'name' => 'country',
                 ],
                 'fname' => [
                     'type' => 'field',
-                    'name' => 'fname'
+                    'name' => 'fname',
                 ],
                 'lname' => [
                     'type' => 'field',
-                    'name' => 'sname'
+                    'name' => 'sname',
                 ],
                 'title' => [
                     'type' => 'field',
-                    'name' => 'title'
+                    'name' => 'title',
                 ],
                 'phone' => [
                     'type' => 'field',
-                    'name' => 'phone'
+                    'name' => 'phone',
                 ],
                 'email' => [
                     'type' => 'field',
-                    'name' => 'email'
+                    'name' => 'email',
                 ],
                 'site_form_url' => [
-                    'type' => 'report'
+                    'type' => 'report',
                 ],
                 'companysize' => [
                     'type' => 'hidden',
-                    'value' => '10 - 50000'
+                    'value' => '10 - 50000',
                 ],
                 'industry' => [
                     'type' => 'field',
-                    'name' => 'extra.areas_interest'
+                    'name' => 'extra.areas_interest',
                 ],
                 'optin_email_or_phone' => [
                     'type' => 'field',
@@ -211,7 +212,7 @@ return [
                         'off' => 'N',
                     ],
                 ],
-            ]
+            ],
         ],
         '' => [
             'fname'=>'required|min:2|max:255',
@@ -222,8 +223,8 @@ return [
             'country'=>'sometimes|required',
             'phone'=>'sometimes|required',
             'terms'=>'required',
-            'marketing'=>'required'
-        ]
+            'marketing'=>'required',
+        ],
     ],
     'strategic-planning' => [
         'baseline' => 8.90,
@@ -240,10 +241,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -286,13 +287,13 @@ return [
                 'high' => 40,
                 'total' => 5,
                 'benchmark' => 28,
-            ]
-        ]
+            ],
+        ],
     ],
     'processes' => [
         'baseline' => 9.28,
         'baseline' => 10.93,
-        
+
         'baseline_stage1' => 2.5,
         'baseline_stage2' => 7.5,
         'baseline_stage3' => 13.5,
@@ -304,10 +305,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -350,8 +351,8 @@ return [
                 'high' => 20,
                 'total' => 5,
                 'benchmark' => 28,
-            ]
-        ]
+            ],
+        ],
     ],
     'customer-relationships' => [
         'baseline' => 9.42,
@@ -367,10 +368,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -413,8 +414,8 @@ return [
                 'high' => 20,
                 'total' => 5,
                 'benchmark' => 28,
-            ]
-        ]
+            ],
+        ],
     ],
     'suppliers-distributors' => [
         'baseline' => 9.42,
@@ -430,10 +431,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -476,8 +477,8 @@ return [
                 'high' => 20,
                 'total' => 5,
                 'benchmark' => 28,
-            ]
-        ]
+            ],
+        ],
     ],
     'people-experience' => [
         'baseline' => 9.42,
@@ -493,10 +494,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -539,7 +540,7 @@ return [
                 'high' => 30,
                 'total' => 5,
                 'benchmark' => 28,
-            ]
-        ]
-    ]
+            ],
+        ],
+    ],
 ];

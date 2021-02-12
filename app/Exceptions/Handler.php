@@ -1,12 +1,13 @@
-<?php namespace App\Exceptions;
+<?php
 
-use Illuminate\Auth\AuthenticationException;
+namespace App\Exceptions;
+
 use Exception;
+use Illuminate\Auth\AuthenticationException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 
 class Handler extends ExceptionHandler
 {
-
     /**
      * A list of the exception types that should not be reported.
      *
@@ -16,7 +17,7 @@ class Handler extends ExceptionHandler
         \Illuminate\Auth\AuthenticationException::class,
         \Illuminate\Auth\Access\AuthorizationException::class,
         \Illuminate\Validation\ValidationException::class,
-        'Symfony\Component\HttpKernel\Exception\HttpException'
+        'Symfony\Component\HttpKernel\Exception\HttpException',
     ];
 
     /**
@@ -42,10 +43,12 @@ class Handler extends ExceptionHandler
     public function render($request, Exception $e)
     {
         if ($e instanceof TokenMismatchException) {
-            return redirect('/')->with('csrf_error', "Opps! Your session expired, please start again");
+            return redirect('/')->with('csrf_error', 'Opps! Your session expired, please start again');
         }
+
         return parent::render($request, $e);
     }
+
     /**
      * Convert an authentication exception into an unauthenticated response.
      *

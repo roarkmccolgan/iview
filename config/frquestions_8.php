@@ -1,4 +1,5 @@
 <?php
+
 // NTT SDWAN
 return [
     'infrastructure' => [
@@ -14,7 +15,7 @@ return [
                     'q1'=>[
                         'type'=>'groupbutton',
                         'calc'=>[
-                            'type'=>'average'
+                            'type'=>'average',
                         ],
                         'question'=>'Utilisez-vous l\'un des éléments suivants dans votre solution WAN ?',
                         'name'=> 1,
@@ -37,8 +38,8 @@ return [
                                         'label'=>'Oui',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Architecture active-active avec plusieurs connexions par site',
@@ -58,8 +59,8 @@ return [
                                         'label'=>'Oui',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Connectivité privée aux principaux fournisseurs de cloud public',
@@ -79,8 +80,8 @@ return [
                                         'label'=>'Oui',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Architecture hybride qui intègre des réseaux privés et des réseaux sur Internet public',
@@ -100,8 +101,8 @@ return [
                                         'label'=>'Oui',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Bande passante à la demande',
@@ -121,12 +122,12 @@ return [
                                         'label'=>'Oui',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Infrastructure',
@@ -160,10 +161,10 @@ return [
                                 'label'=>'Nous suivons une approche stratégique et architecturale pour l\'achat de solutions WAN',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Infrastructure',
@@ -197,12 +198,12 @@ return [
                                 'label'=>'L\'utilise - déploiement étendu',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
-        ]
+        ],
     ],
     'intelligence' => [
         'title' => 'Intelligence',
@@ -217,7 +218,7 @@ return [
                     'q4'=>[
                         'type'=>'groupbutton',
                         'calc'=>[
-                            'type'=>'average'
+                            'type'=>'average',
                         ],
                         'question'=>'Utilisez-vous l\'un des services WAN intelligents suivants ?',
                         'name'=> 4,
@@ -240,8 +241,8 @@ return [
                                         'label'=>'Oui',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Optimisation WAN',
@@ -261,8 +262,8 @@ return [
                                         'label'=>'Oui',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Gestion des performances applicatives',
@@ -282,8 +283,8 @@ return [
                                         'label'=>'Oui',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Surveillance en temps réel/visibilité',
@@ -303,8 +304,8 @@ return [
                                         'label'=>'Oui',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Fonctionnalité de replay pour la visibilité des performances des applications ou du réseau ou pour le dépannage',
@@ -324,12 +325,12 @@ return [
                                         'label'=>'Oui',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
-                        ]
-                    ]
-                ]
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Intelligence',
@@ -363,10 +364,10 @@ return [
                                 'label'=>'Optimisation automatique basée sur l\'analyse prédictive',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Intelligence',
@@ -400,12 +401,12 @@ return [
                                 'label'=>'Notre réseau peut s\'adapter automatiquement pour assurer la performance des applications et l\'expérience utilisateur basée sur les SLA',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
-        ]
+        ],
     ],
     'operations' => [
         'title' => 'Opérations',
@@ -420,7 +421,7 @@ return [
                     'q7'=>[
                         'type'=>'groupbutton',
                         'calc'=>[
-                            'type'=>'average'
+                            'type'=>'average',
                         ],
                         'question'=>'Est-il facile d\'effectuer les opérations suivantes sur votre WAN ?',
                         'name'=> 7,
@@ -443,8 +444,8 @@ return [
                                         'label'=>'Tout à fait courant et facile',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Fourniture de nouvelles fonctions réseau',
@@ -464,8 +465,8 @@ return [
                                         'label'=>'Tout à fait courant et facile',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Mise à jour des politiques/paramètres de réseau ou de sécurité',
@@ -485,8 +486,8 @@ return [
                                         'label'=>'Tout à fait courant et facile',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Ajout ou modification d\'une connexion à un fournisseur de cloud public',
@@ -506,8 +507,8 @@ return [
                                         'label'=>'Tout à fait courant et facile',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Se connecter à des partenaires ou clients',
@@ -527,12 +528,12 @@ return [
                                         'label'=>'Tout à fait courant et facile',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Opérations',
@@ -566,10 +567,10 @@ return [
                                 'label'=>'Nous avons une orchestration réseau avec automatisation optimisée qui intègre les politiques, l\'analyse, l\'automatisation',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Opérations',
@@ -603,11 +604,11 @@ return [
                                 'label'=>'Reconfiguration automatique pour prévenir les menaces émergentes en faisant appel à l\'analyse prédictive. ',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
-        ]
-    ]
+        ],
+    ],
 ];

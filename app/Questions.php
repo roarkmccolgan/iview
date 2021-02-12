@@ -10,11 +10,11 @@ class Questions extends Model
         'question',
         'name',
         'type',
-        'option_id'
+        'option_id',
     ];
 
     public function options()
     {
-        return $this->hasMany('App\Options');
+        return $this->hasMany(\App\Options::class);
     }
 }

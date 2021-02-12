@@ -1,6 +1,7 @@
 <?php
+
 //IBM
-return array(
+return [
     'elqFormName'=>'',
     'developedby'=>'Developed by',
     'sponsoredby'=>'Sponsored by',
@@ -10,7 +11,7 @@ return array(
 
     'change-langauge'=>'Change language',
     'download-now'=>'Download Now',
-    
+
     'title'=>'IDC Cloud Journey Assessment<br/>sponsored by IBM',
     'sub-title'=>'Evaluate your Cloud Journey',
     'landing'=>'
@@ -49,7 +50,7 @@ return array(
     'manage' => [
         'title'=> 'Manage',
     ],
-    
+
     'send'=>'We can send you the full results directly to your mailbox',
     'register'=>'Register now to receive your personalized report',
     'provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
@@ -100,7 +101,7 @@ return array(
                 <h5 class="text-lg text-ibm-blue mb-2">Manage webinar</h5>
             </a>
         </div>',
-    'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @ntt. Interested? ',// http://bit.ly/2gslXEh
+    'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @ntt. Interested? ', // http://bit.ly/2gslXEh
     'email'=>[
         'subject' => 'IDC\'s Cloud Journey Assessment sponsored by IBM',
         'hi' => 'Hi :Fname',
@@ -119,7 +120,7 @@ return array(
             E-mail: <a href="mailto:Matthias.Grip@ibm.com">Matthias.Grip@ibm.com</a>
         ',
         'regards' => 'Regards',
-        'team' => 'The IDC Team'
+        'team' => 'The IDC Team',
     ],
     'leadgen'=>[
         'fname'=>'First Name',
@@ -585,7 +586,7 @@ return array(
             </p>
         </div>
     ',
-    
+
     'conclusion' => '
         <div class="clearfix pt-10">
             <div class="w-1/4 float-left"><img class="block mx-auto" src=":icon" alt="" style="width: 30mm;"></div>
@@ -638,5 +639,5 @@ return array(
                 </a>
             </div>
         </div>
-    '
-);
+    ',
+];

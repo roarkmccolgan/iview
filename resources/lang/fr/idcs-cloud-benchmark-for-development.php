@@ -1,6 +1,7 @@
 <?php
+
 //sage
-return array(
+return [
     'title' => 'Tirez profit du Cloud',
     'sub-title' => 'Gagn&eacute; en maturit&eacute;',
     'stage1' => 'Étape 1 : Il faut agir',
@@ -19,7 +20,7 @@ return array(
 
     'complete_thankyou' => 'Merci :Fname,',
     'complete_body' => 'Votre rapport personnalisé arrivera bientôt dans votre boîte mail',
-    'complete_tweet' => 'I\'ve just taken the Cloud Development Assessment Sponsored by @Sage %26 @IDCUKI, we\'re at :result. Interested?',// http://bit.ly/2g8WN1d
+    'complete_tweet' => 'I\'ve just taken the Cloud Development Assessment Sponsored by @Sage %26 @IDCUKI, we\'re at :result. Interested?', // http://bit.ly/2g8WN1d
     'email'=>[
         'subject' => 'Rapport IDC',
         'hi' => 'Bonjour :Fname',
@@ -30,10 +31,10 @@ return array(
         'link' => 'Télécharger le rapport',
         'extra' => 'Une fois le rapport assimilé, pourquoi ne pas visiter <a href="http://www.sage.com" style="color:#024886">Sage</a>',
         'regards' => 'Cordialement',
-        'team' => 'L\'équipe IDC'
+        'team' => 'L\'équipe IDC',
     ],
     'introduction-image' => 'report1.jpg',
-    'overall' => array(
+    'overall' => [
         'title'=>'Vous vous situez à l\'&eacute;tape : ',
         'image'=>'',
         'introduction' => '
@@ -83,9 +84,9 @@ return array(
             <p>
                 The following report provides you with a more detailed understanding of the different areas of your cloud strategy and the progress you are making. It also provides you with some guidance on improvements within these areas of your business.
             </p>
-        '
-    ),
-    'cloud-vision-and-strategy' => array(
+        ',
+    ],
+    'cloud-vision-and-strategy' => [
         'title'=>'Strat&eacute;gie et vision cloud',
         'pageimage'=>'',
         'pb'=>'pb',
@@ -224,8 +225,8 @@ return array(
                 Renforcez la valeur ajoutée pour vos clients en leur offrant des solutions à leurs problèmes. Vos activités de planification stratégique doivent se concentrer essentiellement sur les problèmes que vous souhaitez résoudre pour vos clients.
             </p>
         ',
-    ),
-    'process-and-skill-sets' => array(
+    ],
+    'process-and-skill-sets' => [
         'title'=>'Processus et comp&eacute;tences',
         'pageimage'=>'process-and-skill-sets.jpg',
         'pb'=>'pb',
@@ -387,8 +388,8 @@ return array(
                 À cette étape, votre priorité et vos plans de formation doivent être ciblés sur le développement de compétences pour supporter des objectifs de transformation numérique. Ceci inclut des domaines tels que les processus numériques, d\'intégration et commerciaux.
             </p>
         ',
-    ),
-    'marketing' => array(
+    ],
+    'marketing' => [
         'title'=>'Comp&eacute;tences marketing',
         'pageimage' => '',
         'pb'=>'pb',
@@ -547,8 +548,8 @@ return array(
                 Transformez les leaders éclairés et conseillers stratégiques en représentants. Commencez à recruter, identifier et encourager les représentants en interne (au sein de votre propre entreprise) et à l\'externe (média, communauté des analystes, entre partenaires et idéalement au sein de votre base de clients).
             </p>
         ',
-    ),
-    'sales' => array(
+    ],
+    'sales' => [
         'title'=>'Ventes',
         'pageimage'=>'sales.jpg',
         'pb'=>'pb',
@@ -726,8 +727,8 @@ return array(
                 Also critical at this stage is embedding your cloud Compétences into a broader Transformation numérique proposition. This incorporates a breadth of digital technologies, such as mobility, social, Big Data analytics, next-gen security, and the Internet of Things (IoT).
             </p>
         ',
-    ),
-    'business-mix' => array(
+    ],
+    'business-mix' => [
         'title'=>'Diversification des activit&eacute;s',
         'pageimage' => '',
         'pb'=>'pb',
@@ -926,5 +927,5 @@ return array(
                 Évaluez les voies d\'accès au marché et les business models qui permettent une évolution efficace, prenez en compte des solutions de licence pour d\'autres partenaires et augmentez les canaux et partenariats alternatifs permettant l\'expansion géographique de solutions spécifiques.
             </p>
         ',
-    ),
-);
+    ],
+];

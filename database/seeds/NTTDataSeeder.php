@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Database\Seeder;
 use Carbon\Carbon;
+use Illuminate\Database\Seeder;
 
 class NTTDataSeeder extends Seeder
 {
@@ -33,7 +33,7 @@ class NTTDataSeeder extends Seeder
             'subdomain' => 'nttdatadx',
             'language_id' => 1,
             'urlable_id' => 10,
-            'urlable_type' => 'App\Tool',
+            'urlable_type' => \App\Tool::class,
             'created_at' => Carbon::now(),
         ]);
         DB::table('urls')->insert([
@@ -41,16 +41,16 @@ class NTTDataSeeder extends Seeder
             'subdomain' => 'nttdatadx',
             'language_id' => 1,
             'urlable_id' => 10,
-            'urlable_type' => 'App\Tool',
+            'urlable_type' => \App\Tool::class,
             'created_at' => Carbon::now(),
         ]);
         DB::table('language_tool')->insert([ //english Trend
             'tool_id' => 10,
-            'language_id' => 1
+            'language_id' => 1,
         ]);
         DB::table('tool_user')->insert([
             'tool_id' => 10,
-            'user_id' => 1 //roark
+            'user_id' => 1, //roark
         ]);
 
         /*DB::table('extra_fields')->insert([

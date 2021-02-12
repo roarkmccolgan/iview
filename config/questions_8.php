@@ -1,4 +1,5 @@
 <?php
+
 // NTT SDWAN
 return [
     'infrastructure' => [
@@ -14,7 +15,7 @@ return [
                     'q1'=>[
                         'type'=>'groupbutton',
                         'calc'=>[
-                            'type'=>'average'
+                            'type'=>'average',
                         ],
                         'question'=>'Do you use any of the following in your WAN solution?',
                         'name'=> 1,
@@ -37,8 +38,8 @@ return [
                                         'label'=>'Yes',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Active-active architecture with multiple connections per site',
@@ -58,8 +59,8 @@ return [
                                         'label'=>'Yes',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Private connectivity to key public cloud providers',
@@ -79,8 +80,8 @@ return [
                                         'label'=>'Yes',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Hybrid architecture that integrates private and public Internet based networks',
@@ -100,8 +101,8 @@ return [
                                         'label'=>'Yes',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Bandwidth on demand',
@@ -121,12 +122,12 @@ return [
                                         'label'=>'Yes',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Infrastructure',
@@ -160,10 +161,10 @@ return [
                                 'label'=>'We take a strategic and archictural approach to buying WAN solutions',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Infrastructure',
@@ -197,12 +198,12 @@ return [
                                 'label'=>'Using - Extensive Deployment',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
-        ]
+        ],
     ],
     'intelligence' => [
         'title' => 'Intelligence',
@@ -217,7 +218,7 @@ return [
                     'q4'=>[
                         'type'=>'groupbutton',
                         'calc'=>[
-                            'type'=>'average'
+                            'type'=>'average',
                         ],
                         'question'=>'Do you use any of the following intelligent WAN services?',
                         'name'=> 4,
@@ -240,8 +241,8 @@ return [
                                         'label'=>'Yes',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'WAN optimization',
@@ -261,8 +262,8 @@ return [
                                         'label'=>'Yes',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Application performance management',
@@ -282,8 +283,8 @@ return [
                                         'label'=>'Yes',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Real-time monitoring/visibility',
@@ -303,8 +304,8 @@ return [
                                         'label'=>'Yes',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Replay functionality for network or application performance visibility or troubleshooting',
@@ -324,12 +325,12 @@ return [
                                         'label'=>'Yes',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
-                        ]
-                    ]
-                ]
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Intelligence',
@@ -363,10 +364,10 @@ return [
                                 'label'=>'Automated optimization based on predictive analytics',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Intelligence',
@@ -400,12 +401,12 @@ return [
                                 'label'=>'Our network can automatically adapt to ensure app performance and user experience based on SLAs',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
-        ]
+        ],
     ],
     'operations' => [
         'title' => 'Operations',
@@ -420,7 +421,7 @@ return [
                     'q7'=>[
                         'type'=>'groupbutton',
                         'calc'=>[
-                            'type'=>'average'
+                            'type'=>'average',
                         ],
                         'question'=>'How easy is it to do the following on your current WAN?',
                         'name'=> 7,
@@ -443,8 +444,8 @@ return [
                                         'label'=>'Quite routine and easy',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Provision new network functions',
@@ -464,8 +465,8 @@ return [
                                         'label'=>'Quite routine and easy',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Update networking or security policies/settings',
@@ -485,8 +486,8 @@ return [
                                         'label'=>'Quite routine and easy',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Add or change a connection to a public cloud provider',
@@ -506,8 +507,8 @@ return [
                                         'label'=>'Quite routine and easy',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
+                                    ],
+                                ],
                             ],
                             [
                                 'label'=>'Connect to partners or customers',
@@ -527,12 +528,12 @@ return [
                                         'label'=>'Quite routine and easy',
                                         'value'=>5,
                                         'checked'=>false,
-                                    ]
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
+                                    ],
+                                ],
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Operations',
@@ -566,10 +567,10 @@ return [
                                 'label'=>'We have self-optimizing network orchestration that integrates analytics, policies, automation',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Operations',
@@ -603,11 +604,11 @@ return [
                                 'label'=>'Automatic reconfiguration to prevent emerging threats with predictive analytics. ',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
-        ]
-    ]
+        ],
+    ],
 ];

@@ -1,6 +1,7 @@
 <?php
+
 //Italy
-return array(
+return [
     'developedby'=>'Developed by',
     'sponsoredby'=>'Sponsored by',
     'restart'=>'Restart Assessment',
@@ -25,7 +26,7 @@ return array(
         <a class="btn btn--primary" target="_blank" href="http://www.ntt.com/en/services/network/software-defined-network.html">
             Click here for more information
         </a>',
-    'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @ntt. Interested? ',// http://bit.ly/2gslXEh
+    'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @ntt. Interested? ', // http://bit.ly/2gslXEh
     'email'=>[
         'subject' => 'DataBench Next Generation WAN Advisor',
         'hi' => 'Hi :Fname',
@@ -33,6 +34,6 @@ return array(
         'link' => 'Download Report',
         'extra' => 'Once you\'ve read the report why not visit DataBench <a href="https://www.databench.eu/" style="color:#054683">www.databench.eu</a>',
         'regards' => 'Regards',
-        'team' => 'The IDC Team'
-    ]
-);
+        'team' => 'The IDC Team',
+    ],
+];

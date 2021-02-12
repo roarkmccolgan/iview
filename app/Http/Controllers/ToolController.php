@@ -1,4 +1,6 @@
-<?php namespace App\Http\Controllers;
+<?php
+
+namespace App\Http\Controllers;
 
 use App\Assessment;
 use App\Company;
@@ -34,37 +36,37 @@ class ToolController extends Controller
 {
     use GenerateReportTrait;
 
-    var $numSections = false;
-    var $quiz = false;
-    var $menu = false;
-    var $baseline = false;
-    var $userid;
-    var $result = false;
-    var $report;
+    public $numSections = false;
+    public $quiz = false;
+    public $menu = false;
+    public $baseline = false;
+    public $userid;
+    public $result = false;
+    public $report;
 
     public function __construct(Request $request)
     {
-       
+
         //only reload questions if tool is ntt
     }
 
     public function loadQuestions()
     {
-        $this->quiz=session('questions');
-        if (!$this->quiz) {
+        $this->quiz = session('questions');
+        if (! $this->quiz) {
             return redirect('/');
         }
-        $this->numSections=count($this->quiz);
+        $this->numSections = count($this->quiz);
         $temp = [];
         foreach ($this->quiz as $key => $value) {
-            $temp[$key]['display']=isset($value['display']) ? $value['display']:true;
-            $temp[$key]['numpages']=count($value['pages']);
-            $temp[$key]['class']=isset($value['class']) ? $value['class']:'sec1';
-            $temp[$key]['complete']=isset($value['complete']) ? $value['complete']:false;
-            $temp[$key]['title']=isset($value['title']) ? $value['title']:false;
+            $temp[$key]['display'] = isset($value['display']) ? $value['display'] : true;
+            $temp[$key]['numpages'] = count($value['pages']);
+            $temp[$key]['class'] = isset($value['class']) ? $value['class'] : 'sec1';
+            $temp[$key]['complete'] = isset($value['complete']) ? $value['complete'] : false;
+            $temp[$key]['title'] = isset($value['title']) ? $value['title'] : false;
             $i = 1;
             foreach ($value['pages'] as $pkey => $page) {
-                $temp[$key]['pages'][$pkey]['done'] = isset($page['done'])? true : false;
+                $temp[$key]['pages'][$pkey]['done'] = isset($page['done']) ? true : false;
                 $temp[$key]['pages'][$pkey]['progress'] = $i.'/'.$temp[$key]['numpages'];
                 $i++;
             }
@@ -72,104 +74,105 @@ class ToolController extends Controller
         $this->menu = $temp;
     }
 
-
-
-
-/**
- * List all Tools
- * @return view
- */
+    /**
+     * List all Tools.
+     * @return view
+     */
     public function index()
     {
-
         $companies = Company::has('tools')->get();
+
         return view('tool.index', compact('companies'));
     }
 
-/**
- * Create New Tool
- * @return view
- */
+    /**
+     * Create New Tool.
+     * @return view
+     */
     public function create()
     {
         $companies = Company::all();
         $languages = Language::pluck('name', 'id');
-        return view('tool.create', compact(['companies','languages']));
+
+        return view('tool.create', compact(['companies', 'languages']));
     }
 
-/**
- * Show Tool
- * @return view
- */
+    /**
+     * Show Tool.
+     * @return view
+     */
     public function show(Tool $tool)
     {
         return view('tool.show', compact(['tool']));
     }
-/**
- * Save a new Tool
- * @param  CreateIviewRequest $request
- * @return Response
- */
 
+    /**
+     * Save a new Tool.
+     * @param  CreateIviewRequest $request
+     * @return Response
+     */
     public function store(CreateToolRequest $request)
     {
-        if (!$request->has('company_id')) {
-            $company = Company::create(['name'=>$request->input('new_company'),'logo'=>'','colours'=>$request->input('colours')]);
+        if (! $request->has('company_id')) {
+            $company = Company::create(['name'=>$request->input('new_company'), 'logo'=>'', 'colours'=>$request->input('colours')]);
             $company_id = $company->id;
         } else {
             $company_id = $request->input('company_id');
         }
 
-            $tool = Tool::create([
+        $tool = Tool::create([
             'title'=>$request->input('title'),
             'alias'=>str_slug($request->input('title')),
             'sub_title'=>$request->input('sub_title'),
             'gapropertyid'=>$request->input('gapropertyid'),
             'company_id'=>$company_id,
             'start_date'=>Carbon::createFromFormat('d-m-Y', $request->input('start_date')),
-            'end_date'=>Carbon::createFromFormat('d-m-Y', $request->input('start_date'))->addMonths($request->input('duration'))->toDateTimeString()
+            'end_date'=>Carbon::createFromFormat('d-m-Y', $request->input('start_date'))->addMonths($request->input('duration'))->toDateTimeString(),
             ]);
 
         foreach ($request->input('language') as $lang_id) {
-            $url = $tool->urls()->create(['domain'=>$request->input('domain'),'subdomain'=>$request->input('subdomain'),'language_id'=>$lang_id]);
+            $url = $tool->urls()->create(['domain'=>$request->input('domain'), 'subdomain'=>$request->input('subdomain'), 'language_id'=>$lang_id]);
         }
-
 
         //$input = $request->all();
         return redirect('/admin/tools');
     }
 
-/**
- * Tool Questions
- * @return view
- */
+    /**
+     * Tool Questions.
+     * @return view
+     */
     public function questions(Tool $tool)
     {
         $tool->load(['sections.questions']);
+
         return view('questions.create', compact(['tool']));
-    }/**
- * Store Questions
- * @return view
- */
+    }
+
+    /**
+     * Store Questions.
+     * @return view
+     */
     public function storequestions(Request $request, Tool $tool)
     {
         return $request->all();
         $tool->load(['sections.questions']);
+
         return view('questions.create', compact(['tool']));
     }
 
-///////
-//TOOl STUFF
-///////
+    ///////
+    //TOOl STUFF
+    ///////
 
-/**
- * show intro
- * @return view
- */
+    /**
+     * show intro.
+     * @return view
+     */
     public function run(Request $request, $subdomain)
     {
         $tool = $request->session()->get('productObject');
-        if($tool->template=='nttsdwan'){
+        if ($tool->template == 'nttsdwan') {
             return view('tool.'.session('template').'.expired', ['tool'=>$tool]);
         }
         $fields = Config::has('baseline_'.$tool->id.'.overall.default_fields') ? config('baseline_'.$tool->id.'.overall.default_fields') : config('terminal.default_fields');
@@ -213,7 +216,7 @@ class ToolController extends Controller
                     'is_first' => (int) substr($itemKey, 4) == 1 ? true : false,
                     'left' => $numberOfQuestionsInSection - (int) substr($itemKey, 4),
                     ];
-                    $item['questions'][$qKey]['ignore'] = isset($section['ignore']) ? $section['ignore']: '';
+                    $item['questions'][$qKey]['ignore'] = isset($section['ignore']) ? $section['ignore'] : '';
                     $item['questions'][$qKey]['description'] = isset($section['description']) ? $section['description'] : '';
                     $item['questions'][$qKey]['background'] = isset($section['background']) ? $section['background'] : '';
                     $item['questions'][$qKey]['nuggets'] = isset($section['nuggets']) ? $section['nuggets'] : '';
@@ -227,19 +230,20 @@ class ToolController extends Controller
                     $item['questions'][$qKey]['page'] = substr($itemKey, 4);
                     $item['questions'][$qKey]['qKey'] = $qKey;
                 }
+
                 return $item['questions'];
             });
         });
         $totalQuestions = count($onlyQuestions);
         $return_visitor = $request->cookie('quiz_progress');
         $class = 'intro';
-        if ($tool->template=='nttsdwan' || $tool->template=='trendmicromssp' || $tool->template=='nttdata' || $tool->template=='dassault' || $tool->template=='hitachi' || $tool->template=='vmware' || $tool->template=='sapagile' || $tool->template=='ibmcloud' || $tool->template=='sapagileglobal' || $tool->template=='snow' || $tool->template=='redhat' || $tool->template=='dassaultlean') {
+        if ($tool->template == 'nttsdwan' || $tool->template == 'trendmicromssp' || $tool->template == 'nttdata' || $tool->template == 'dassault' || $tool->template == 'hitachi' || $tool->template == 'vmware' || $tool->template == 'sapagile' || $tool->template == 'ibmcloud' || $tool->template == 'sapagileglobal' || $tool->template == 'snow' || $tool->template == 'redhat' || $tool->template == 'dassaultlean') {
             $view = 'tool.'.session('template').'.assessment';
         } else {
             $view = 'tool.'.session('template').'.intro';
         }
 
-            JavaScript::put([
+        JavaScript::put([
             'tool' => $tool,
             'languages' => $languages,
             'fields' => $fields,
@@ -257,13 +261,12 @@ class ToolController extends Controller
 
     public function getPage($subdomain, $section = false, $page = false)
     {
-
-        if ($section===false || $page===false) {
+        if ($section === false || $page === false) {
             return redirect('/');
         }
         $this->loadQuestions();
         //dd($this->quiz);
-        if (!isset($this->quiz[$section]['pages']['page'.$page])) {
+        if (! isset($this->quiz[$section]['pages']['page'.$page])) {
             return redirect('/');
         }
 
@@ -273,36 +276,35 @@ class ToolController extends Controller
         $script = false;
         foreach ($sectionQuestions['questions'] as $number => $question) {
             if (isset($question['script'])) {
-                $script[]=$question['script'];
+                $script[] = $question['script'];
             }
         }
         $currentLocal = App::getLocale();
-        $localQuestions = $currentLocal=='en' ? '' : $currentLocal;
+        $localQuestions = $currentLocal == 'en' ? '' : $currentLocal;
         $btnsize = '-small';
-        if ($localQuestions=='es') {
+        if ($localQuestions == 'es') {
             $btnsize = '-small lang';
         }
-    
+
         $vars = [
         'questions' => $sectionQuestions['questions'],
         'heading' => $sectionQuestions['title'],
-        'report' => isset($sectionQuestions['report']) ? $sectionQuestions['report']:false,
+        'report' => isset($sectionQuestions['report']) ? $sectionQuestions['report'] : false,
         'menu' => $this->menu,
         'class' => $data['class'],
-        'icon' => isset($data['icon']) ? $data['icon']:false,
+        'icon' => isset($data['icon']) ? $data['icon'] : false,
         'section'=>$section,
         'page'=>$page,
         'script'=>$script,
-        'btnsize'=>$btnsize
+        'btnsize'=>$btnsize,
         ];
         //return $sectionQuestions['questions'];
         return view('tool.'.session('template').'.question', $vars);
     }
 
-
     public function savePage(Request $request, $subdomain, $section = false, $page = false)
     {
-        if ($section===false || $page===false) {
+        if ($section === false || $page === false) {
             return redirect('/');
         }
         $input = $request->except('_token');
@@ -310,21 +312,21 @@ class ToolController extends Controller
         session(['questions.'.$section.'.pages.page'.$page.'.questions.'.$input['question'].'.selected' => $input['answer']]);
         session(['questions.'.$section.'.pages.page'.$page.'.done' => true]);
         //dd(session('questions'));
-    
-        if ($request->session()->has('questions.'.$section.'.pages.page'.($page+1))) {
+
+        if ($request->session()->has('questions.'.$section.'.pages.page'.($page + 1))) {
             //$this->getPage($section,$page+1);
             //return Redirect::to('quiz/'.$section.'/page'.($page+1))->withCookie($cookie);
-            return redirect('/'.session('localeUrl').'quiz/'.$section.'/page'.($page+1));
+            return redirect('/'.session('localeUrl').'quiz/'.$section.'/page'.($page + 1));
         } else {
             session(['questions.'.$section.'.complete' => true]);
             $questions = session('questions');
-            while (key($questions) !== $section  && key($questions) !== null) {
+            while (key($questions) !== $section && key($questions) !== null) {
                 next($questions);
             }
             next($questions);
 
             //check if there is a mini report
-            if (null !== session('questions.'.$section.'.sub-report') && session('questions.'.$section.'.sub-report')!==false) {
+            if (null !== session('questions.'.$section.'.sub-report') && session('questions.'.$section.'.sub-report') !== false) {
                 $color = '#939598';
                 if (Config::has('baseline_'.session('product.id').'.'.$section.'.report-settings.basecolor')) {
                     $color = config('baseline_'.session('product.id').'.'.$section.'.report-settings.basecolor');
@@ -333,17 +335,17 @@ class ToolController extends Controller
                 if (config('baseline_'.session('product.id').'.'.$section.'.complete.graph')) {
                     $graph = config('baseline_'.session('product.id').'.'.$section.'.complete.graph');
                     $chartSettings = [
-                    'title' => null,//trans(session('product.alias').'.completecopy.graphtitle')
+                    'title' => null, //trans(session('product.alias').'.completecopy.graphtitle')
                     'backgroundColor' => [
-                        'fill'=>'transparent'
+                        'fill'=>'transparent',
                     ],
                     'vAxis' => [
                         'baselineColor'=>'none',
                         'gridlines'=> [
-                            'color'=> 'none'
+                            'color'=> 'none',
                         ],
                         'format' => '#\'%\'',
-                        'ticks'=> [0, 10, 20, 30, 40, 50]
+                        'ticks'=> [0, 10, 20, 30, 40, 50],
                     ],
                     'hAxis' => [
                         'textStyle' => [
@@ -357,30 +359,30 @@ class ToolController extends Controller
                             /*'auraColor' => '#d799ae',*/
                             // The transparency of the text.
                             /*'opacity' => 0.8*/
-                        ]
+                        ],
                     ],
                     'colors' => [$color],
                     'chartArea' => ['width'=>'90%', 'height'=>'80%'],
-                    'legend' => [ 'position' => "none" ],
+                    'legend' => ['position' => 'none'],
                     /*'events' => [
-						'ready' => 'chartReady'
-					],*/
+                        'ready' => 'chartReady'
+                    ],*/
                     'annotations'=>[
                         'stem'=>[
-                            'color'=>'transparent'
+                            'color'=>'transparent',
                         ],
                         'textStyle'=>[
                             /*'fontName'=> 'Times-Roman',
-							*/'fontSize'=> 14,
+                            */'fontSize'=> 14,
                             /*'bold'=> true,
-							'italic'=> true,*/
+                            'italic'=> true,*/
                             // The color of the text.
                             'color'=> '#000000',
                             // The color of the text outline.
                             // 'auraColor'=> '#d799ae',
                             // The transparency of the text.
                             /*'opacity'=> 0.8*/
-                        ]
+                        ],
                     ],
                     /*'isStacked' => true,*/
                     //As a percent, "33%"
@@ -394,18 +396,18 @@ class ToolController extends Controller
                     }
                     $sectionGraph->addColumns([
                     ['string', $graph['label']],
-                    ['number', 'Value',$format ? $format: null],
+                    ['number', 'Value', $format ? $format : null],
                     ]);
                     $sectionGraph->addRoleColumn('string', 'style');
                     $sectionGraph->addRoleColumn('string', 'annotation');
 
                     foreach (config('baseline_'.session('product.id').'.'.$section.'.types') as $stage => $params) {
-                            $val = $params[$graph['data']];
-                            $sectionGraph->addRow([
+                        $val = $params[$graph['data']];
+                        $sectionGraph->addRow([
                                 trans(session('product.alias').'.'.$stage),
                                 $val,
-                                session('result.'.$section.'.rating')==$stage? config('baseline_'.session('product.id').'.overall.report-settings.color'):null,
-                                $val."%"
+                                session('result.'.$section.'.rating') == $stage ? config('baseline_'.session('product.id').'.overall.report-settings.color') : null,
+                                $val.'%',
                             ]);
                     }
 
@@ -421,18 +423,19 @@ class ToolController extends Controller
                 $heading = trans('general.'.session('product.id').'subreporttitle', [
                 'percent'=>array_key_exists('benchmark', $this->baseline[$section]['types'][$this->result[$section]['rating']]) ? $this->baseline[$section]['types'][$this->result[$section]['rating']]['benchmark'] : 0,
                 'result'=>trans(session('product.alias').'.'.$this->result[$section]['rating']),
-                'section'=> $title
+                'section'=> $title,
                 ]);
                 $graph = $graph;
-                $icon = isset($data['icon']) ? $data['icon']:false;
+                $icon = isset($data['icon']) ? $data['icon'] : false;
                 $ratingClass = 'icon '.$section;
                 $ratingcopy = trans($this->baseline[$section]['types'][$this->result[$section]['rating']]['copy']);
-                $next = (key($questions)==null) ? '/'.session('localeUrl').'quiz/complete': '/'.session('localeUrl').'quiz/'.key($questions).'/page1'; //fix this so a report can be provided at any stage?
-                return view('tool.'.session('template').'.sectionresult', compact(['menu','page','title','section','rating','heading','graph','icon','ratingClass','ratingcopy','next']));
+                $next = (key($questions) == null) ? '/'.session('localeUrl').'quiz/complete' : '/'.session('localeUrl').'quiz/'.key($questions).'/page1'; //fix this so a report can be provided at any stage?
+
+                return view('tool.'.session('template').'.sectionresult', compact(['menu', 'page', 'title', 'section', 'rating', 'heading', 'graph', 'icon', 'ratingClass', 'ratingcopy', 'next']));
             }
             //dd(session('questions'));
             //else do carry on or complete
-            if (key($questions)==null) {
+            if (key($questions) == null) {
                 return redirect('/'.session('localeUrl').'quiz/complete');
             }
 
@@ -446,9 +449,9 @@ class ToolController extends Controller
         $this->calcResults();
         //dd(session('result'));
         $currentLocal = App::getLocale();
-        $localQuestions = $currentLocal=='en' ? '' : $currentLocal;
+        $localQuestions = $currentLocal == 'en' ? '' : $currentLocal;
         $btnclass = '';
-        if ($localQuestions=='es' || $localQuestions=='fr' || $localQuestions=='de' || $localQuestions=='it') {
+        if ($localQuestions == 'es' || $localQuestions == 'fr' || $localQuestions == 'de' || $localQuestions == 'it') {
             $btnclass = 'lang';
         }
         $graph = false;
@@ -459,17 +462,17 @@ class ToolController extends Controller
                 $color = config('baseline_'.session('product.id').'.overall.report-settings.basecolor');
             }
             $chartSettings = [
-            'title' => null,//trans(session('product.alias').'.completecopy.graphtitle')
+            'title' => null, //trans(session('product.alias').'.completecopy.graphtitle')
             'backgroundColor' => [
-                'fill'=>'transparent'
+                'fill'=>'transparent',
             ],
             'vAxis' => [
                 'baselineColor'=>'none',
                 'gridlines'=> [
-                    'color'=> 'none'
+                    'color'=> 'none',
                 ],
                 'format' => '#\'%\'',
-                'ticks'=> [0, 10, 20, 30, 40, 50]
+                'ticks'=> [0, 10, 20, 30, 40, 50],
             ],
             'hAxis' => [
                 'textStyle' => [
@@ -483,30 +486,30 @@ class ToolController extends Controller
                     /*'auraColor' => '#d799ae',*/
                     // The transparency of the text.
                     /*'opacity' => 0.8*/
-                ]
+                ],
             ],
             'colors' => [$color],
             'chartArea' => ['width'=>'90%', 'height'=>'80%'],
-            'legend' => [ 'position' => "none" ],
+            'legend' => ['position' => 'none'],
             /*'events' => [
-				'ready' => 'chartReady'
-			],*/
+                'ready' => 'chartReady'
+            ],*/
             'annotations'=>[
                 'stem'=>[
-                    'color'=>'transparent'
+                    'color'=>'transparent',
                 ],
                 'textStyle'=>[
                     /*'fontName'=> 'Times-Roman',
-					*/'fontSize'=> 14,
+                    */'fontSize'=> 14,
                     /*'bold'=> true,
-					'italic'=> true,*/
+                    'italic'=> true,*/
                     // The color of the text.
                     'color'=> '#000000',
                     // The color of the text outline.
                     // 'auraColor'=> '#d799ae',
                     // The transparency of the text.
                     /*'opacity'=> 0.8*/
-                ]
+                ],
             ],
             /*'isStacked' => true,*/
             //As a percent, "33%"
@@ -520,23 +523,23 @@ class ToolController extends Controller
             }
             $completeGraph->addColumns([
             ['string', $graph['label']],
-            ['number', 'Value',$format ? $format: null],
+            ['number', 'Value', $format ? $format : null],
             ]);
             $completeGraph->addRoleColumn('string', 'style');
             $completeGraph->addRoleColumn('string', 'annotation');
 
             foreach (config('baseline_'.session('product.id').'.overall.types') as $stage => $params) {
-                    $val = $params[$graph['data']];
-                    $stagename = trans(session('product.alias').'.'.$stage);
-                if (session('product.id')==7) { //symantec
-                    $stagename = explode(": ", $stagename);
+                $val = $params[$graph['data']];
+                $stagename = trans(session('product.alias').'.'.$stage);
+                if (session('product.id') == 7) { //symantec
+                    $stagename = explode(': ', $stagename);
                     $stagename = $stagename[0];
                 }
-                    $completeGraph->addRow([
-                        $stagename,/*substr_replace($stagename, ':', strpos($stagename, ':'), 1)*/
+                $completeGraph->addRow([
+                        $stagename, /*substr_replace($stagename, ':', strpos($stagename, ':'), 1)*/
                         $val,
-                        session('result.overall.rating')==$stage? config('baseline_'.session('product.id').'.overall.report-settings.color'):null,
-                        $val."%"
+                        session('result.overall.rating') == $stage ? config('baseline_'.session('product.id').'.overall.report-settings.color') : null,
+                        $val.'%',
                     ]);
             }
 
@@ -557,7 +560,7 @@ class ToolController extends Controller
             'quiz' => $this->quiz,
             'source' => session('source'),
             'btnclass'=>$btnclass,
-            'extra_fields'=>count($extraFields) > 0 ? $extraFields:false,
+            'extra_fields'=>count($extraFields) > 0 ? $extraFields : false,
         ];
 
         return view('tool.'.session('template').'.complete', $vars);
@@ -565,16 +568,15 @@ class ToolController extends Controller
 
     public function postComplete(SubmitAssessmentsRequest $request)
     {
-
         $this->loadQuestions();
-        $this->howfit=Session::get('result');
+        $this->howfit = Session::get('result');
         $this->baseline = Session::get('baseline');
 
         Session::put('user', $request->except('_token'));
 
         //update source
         $currentLocal = App::getLocale();
-        $localQuestions = $currentLocal=='en' ? '' : $currentLocal;
+        $localQuestions = $currentLocal == 'en' ? '' : $currentLocal;
         $source = [];
         if (is_array(session('source'))) {
             foreach (session('source') as $sKey => $sValue) {
@@ -606,15 +608,15 @@ class ToolController extends Controller
         $assessment->save();
         $tracker = false;
 
-        if($assessment->tool_id == 18 || $assessment->tool_id == 19){ //snow // redhat
+        if ($assessment->tool_id == 18 || $assessment->tool_id == 19) { //snow // redhat
             $pdfMonkey = new PdfMonkeyService();
             $body = $pdfMonkey->generateBody($assessment);
             //dd($body);
             $response = $pdfMonkey->generateDocument($body, $this->baseline['overall']['pdf_monkey_template']);
-            if($response && $response->document->status == 'draft'){
+            if ($response && $response->document->status == 'draft') {
                 $assessment->pdf_key = $response->document->id;
                 $assessment->save();
-            }else{
+            } else {
                 dd();
             }
         }
@@ -647,28 +649,28 @@ class ToolController extends Controller
         }
         $crm = config('baseline_'.session('product.id').'.overall.crmrequest', false);
         if ($crm) { //!App::isLocal() &&
-            if(isset($crm['only'])){
-                if(isset($crm['only']['field'])){
-                    if($assessment[$crm['only']['field']] == $crm['only']['value']){
+            if (isset($crm['only'])) {
+                if (isset($crm['only']['field'])) {
+                    if ($assessment[$crm['only']['field']] == $crm['only']['value']) {
                         $this->prepareCrmRequest($crm, $request, $assessment->uuid);
-                    }                    
-                }
-                if($crm['only']){
-                    if(isset($crm['only']['locale'])){
-                        if(App::getLocale() == $crm['only']['locale']){
-                            $this->prepareCrmRequest($crm, $request, $assessment->uuid);
-                        }                    
                     }
-                    if(isset($crm['only']['field']) && $assessment[$crm['only']['field']] == $crm['only']['value']){
+                }
+                if ($crm['only']) {
+                    if (isset($crm['only']['locale'])) {
+                        if (App::getLocale() == $crm['only']['locale']) {
+                            $this->prepareCrmRequest($crm, $request, $assessment->uuid);
+                        }
+                    }
+                    if (isset($crm['only']['field']) && $assessment[$crm['only']['field']] == $crm['only']['value']) {
                         $this->prepareCrmRequest($crm, $request, $assessment->uuid);
-                    }                    
+                    }
                 }
             } else {
-                $this->prepareCrmRequest($crm, $request, $assessment->uuid);                
+                $this->prepareCrmRequest($crm, $request, $assessment->uuid);
             }
         }
         $subject = trans(session('product.alias').'.email.subject');
-        $assessment->uuid = (string)$assessment->uuid;
+        $assessment->uuid = (string) $assessment->uuid;
         $inline = false;
         if (Config::has('baseline_'.session('product.id').'.overall.notifications.inline_report')) {
             $inline = config('baseline_'.session('product.id').'.overall.notifications.inline_report');
@@ -677,7 +679,7 @@ class ToolController extends Controller
             'assessment'=>$assessment,
             'inline'=>$inline,
         ];
-        $data['html'] =  View::make('emails.download', $viewData)->render();
+        $data['html'] = View::make('emails.download', $viewData)->render();
 
         //send mail to user (and BCC if exists)
         $bcc = [];
@@ -690,7 +692,7 @@ class ToolController extends Controller
         Mail::queue('emails.echo', $data, function ($message) use ($assessment, $subject, $bcc) {
             $message->from('notifications@mg.idcready.net', 'IDC Notifications');
             $message->to($assessment['email'], $assessment['fname'].' '.$assessment['lname']);
-            if (!empty($bcc)) {
+            if (! empty($bcc)) {
                 $message->bcc($bcc);
             }
             $message->subject($subject);
@@ -698,7 +700,7 @@ class ToolController extends Controller
 
         //send mail to notification people
         $emails = [];
-        if (App::isLocal() || $assessment['email']=='rmccolgan@idc.com') {
+        if (App::isLocal() || $assessment['email'] == 'rmccolgan@idc.com') {
             $emails = ['roarkmccolgan@gmail.com'];
         } else {
             if ($assessment->tool_id != 5 && $assessment->tool_id != 15) { //spunk sapagile
@@ -719,7 +721,7 @@ class ToolController extends Controller
         $subject = $assessment->tool->company->name.' - '.$assessment->tool->title.' Assessment completed';
         $ratingWording = $this->howfit['overall']['rating'];
         if (Lang::has(session('product.alias').'.'.$this->howfit['overall']['rating'])) {
-            $ratingWording = $ratingWording." - ".trans(session('product.alias').'.'.$this->howfit['overall']['rating']);
+            $ratingWording = $ratingWording.' - '.trans(session('product.alias').'.'.$this->howfit['overall']['rating']);
         }
         Mail::queue(
                 'emails.notification',
@@ -732,7 +734,7 @@ class ToolController extends Controller
                 'company'=>$request->input('company'),
                 'phone'=>$request->input('phone'),
                 'score'=>$this->howfit['overall']['score'],
-                'rating'=> $ratingWording
+                'rating'=> $ratingWording,
                 ],
                 function ($message) use ($emails, $subject) {
                     $message->from('notifications@mg.idcready.net', 'IDC Notifications');
@@ -740,8 +742,8 @@ class ToolController extends Controller
                 }
             );
         $url = '';
-        if(session('product.id') == 16){
-            switch($request->input('country')){
+        if (session('product.id') == 16) {
+            switch ($request->input('country')) {
                 case 'DK':
                 case 'NO':
                     $url = 'https://www.ibm.com/se-en/cloud/yourcloud?utm_medium=Email&utm_source=External&utm_content=000039UZ&utm_term=10013943&utm_id=LP-IDC-Survey-email&cm_mmc=Email_External-_-Unlock+Cloud+and+AI_Technology+Transformation-_-INO_INO-_-LP-IDC-Survey-email&cm_mmca1=000039UZ&cm_mmca2=10013943';
@@ -754,8 +756,8 @@ class ToolController extends Controller
                     $url = 'https://www.ibm.com/se-en/cloud/yourcloud?utm_medium=Email&utm_source=External&utm_content=000039UZ&utm_term=10013943&utm_id=LP-IDC-Survey-email&cm_mmc=Email_External-_-Unlock+Cloud+and+AI_Technology+Transformation-_-INO_INO-_-LP-IDC-Survey-email&cm_mmca1=000039UZ&cm_mmca2=10013943';
             }
         }
-        if(session('product.id') == 19){
-            $url = "https://www.redhat.com/en/services/consulting/hybrid-cloud";
+        if (session('product.id') == 19) {
+            $url = 'https://www.redhat.com/en/services/consulting/hybrid-cloud';
         }
         $vars = [
         'pagetitle' => trans(session('product.alias').'.title'),
@@ -763,13 +765,13 @@ class ToolController extends Controller
         'sub_title' => trans(session('product.alias').'.sub-title'),
         'heading' => trans(session('product.alias').'.complete_thankyou', ['fname'=>$request->input('fname')]),
         'body' => trans(session('product.alias').'.complete_body', ['url'=>$url, 'tool_url'=>session('url').'/'.session('localeUrl')]),
-        'tweet' => config('baseline_'.session('product.id').'.overall.tweet') ? trans(session('product.alias').'.complete_tweet', ['result'=>trans(session('product.alias').'.'.$this->howfit['overall']['rating'])]):false,
+        'tweet' => config('baseline_'.session('product.id').'.overall.tweet') ? trans(session('product.alias').'.complete_tweet', ['result'=>trans(session('product.alias').'.'.$this->howfit['overall']['rating'])]) : false,
         'class' => 'trans silverStone',
         'script' => ['
 		ga(\'send\', \'event\', \'Assessments\', \''.session('utm').'\');
 		'],
         'utm' => session('utm'),
-        'quiz' => $this->quiz
+        'quiz' => $this->quiz,
         ];
 
         JavaScript::put([
@@ -778,6 +780,7 @@ class ToolController extends Controller
         ]);
         Session::remove('questions');
         Session::remove('quiz_complete');
+
         return View::make('tool.'.session('template').'.thankyou', $vars);
     }
 
@@ -787,122 +790,129 @@ class ToolController extends Controller
         $assessment = Assessment::where('uuid', $uuid)->firstOrFail();
         App::setLocale($assessment->lang);
         $subject = trans(session('product.alias').'.email_apology.subject');
-        $assessment->uuid = (string)$assessment->uuid;
-        
-        $newLocale = $assessment->lang=='en' || $assessment->lang=='' ? '' : $assessment->lang;
+        $assessment->uuid = (string) $assessment->uuid;
+
+        $newLocale = $assessment->lang == 'en' || $assessment->lang == '' ? '' : $assessment->lang;
         session(['locale'=>$newLocale]);
         $viewData = [
             'assessment'=>$assessment,
             'inline'=>$inline,
         ];
-        $data['html'] =  View::make('emails.apology', $viewData)->render();
+        $data['html'] = View::make('emails.apology', $viewData)->render();
 
         //send mail to user (and BCC if exists)
-        $bcc = ['kgaffney@idc.com','abuss@idc.com','nadamson@idc.com'];
+        $bcc = ['kgaffney@idc.com', 'abuss@idc.com', 'nadamson@idc.com'];
         Mail::queue('emails.echo', $data, function ($message) use ($assessment, $subject, $bcc) {
             $message->from('notifications@mg.idcready.net', 'IDC Notifications');
             $message->to($assessment['email'], $assessment['fname'].' '.$assessment['lname']);
-            if (!empty($bcc)) {
+            if (! empty($bcc)) {
                 $message->bcc($bcc);
             }
             $message->subject($subject);
         });
+
         return 'Success, apology sent to '.$assessment['email'];
     }
 
     public function getDownload(Request $request, $subdomain, $uuid)
     {
-        $inline = $request->has('browser') && $request->input('browser')!=false ? true : false;
-        $update = $request->has('update') && $request->input('update')==false ? false : true;
+        $inline = $request->has('browser') && $request->input('browser') != false ? true : false;
+        $update = $request->has('update') && $request->input('update') == false ? false : true;
 
         $assessment = Assessment::with('tool')->where('uuid', $uuid)->firstOrFail();
         $request->session()->put('questions', $assessment->quiz);
         $request->session()->put('result', $assessment->result);
-        $request->session()->put('user', collect($assessment->toArray())->only(['fname','lname','email','company','country','referer','tel','downloaded','extra','fetched','title','uuid','lang']));
+        $request->session()->put('user', collect($assessment->toArray())->only(['fname', 'lname', 'email', 'company', 'country', 'referer', 'tel', 'downloaded', 'extra', 'fetched', 'title', 'uuid', 'lang']));
         $reportName = str_slug($assessment->fname.'_'.$assessment->lname.'_'.session('product.title').'_Assessment', '-');
         $filename = $assessment->id.'_'.str_slug($assessment->fname.'_'.$assessment->lname.'_'.$assessment->tool->title.'_Assessment', '-').'.pdf';
 
         if ($update) {
             $assessment->update(['fetched' => 1]);
         }
-        
-        if ($assessment->tool_id==session('product.id')) {
-            if($assessment->tool_id == 18 || $assessment->tool_id == 19){ //snow //redhat
+
+        if ($assessment->tool_id == session('product.id')) {
+            if ($assessment->tool_id == 18 || $assessment->tool_id == 19) { //snow //redhat
                 $pdfMonkey = new PdfMonkeyService();
                 $body = $pdfMonkey->queueDocument($assessment->pdf_key, $filename);
-                if($body){
+                if ($body) {
                     JavaScript::put([
                         'locale' => session('locale'),
-                        'tool' => $assessment->tool
+                        'tool' => $assessment->tool,
                     ]);
 
                     return view('tool.'.session('template').'.downloadreport', [
                         'pagetitle' => trans($assessment->tool->alias.'.title'),
                         'utm' => $assessment->code ? $assessment->code : 'default',
                         'uuid' => $uuid,
-                    ]);                    
+                    ]);
                 }
-            }else{
-                if (!$inline) {
+            } else {
+                if (! $inline) {
                     $downloadName = str_slug($assessment->id.'-'.session('product.title').'-report', '-').'.pdf';
                     $this->wkhtml($assessment->id, $reportName);
                     $headers = [
                         'Content-Type: application/pdf',
                     ];
+
                     return response()->download(storage_path().'/reports/'.$filename, $downloadName);
                 } else {
                     return $this->wkhtml($assessment->id, $reportName, $inline);
-                }                
+                }
             }
         } else {
-            Log::error("Report does not exist for tool id ".session('product.id')." http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
+            Log::error('Report does not exist for tool id '.session('product.id')." http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
             abort(404, 'The page you requested does not exist');
         }
     }
+
     public function checkForDocument(Request $request, $uuid)
     {
         $assessment = Assessment::with('tool')->where('uuid', $uuid)->firstOrFail();
         $pdfMonkey = new PdfMonkeyService();
-        $body = $pdfMonkey->checkIfDocumentRenderedAndGetUrl($assessment->pdf_key);//$assessment->pdf_key
+        $body = $pdfMonkey->checkIfDocumentRenderedAndGetUrl($assessment->pdf_key); //$assessment->pdf_key
+
         return response()->json([
             'result' => 'success',
-            'body' => $body->document
+            'body' => $body->document,
         ]);
     }
+
     public function getReport(Request $request, $subdomain, $uuid)
     {
         $assessment = Assessment::where('uuid', $uuid)->firstOrFail();
         $assessment->update(['fetched' => 1]);
-        
-        if ($assessment->tool_id==session('product.id')) {
+
+        if ($assessment->tool_id == session('product.id')) {
             $request->session()->put('questions', $assessment->quiz);
             $request->session()->put('result', $assessment->result);
 
             $reportName = str_slug($assessment->fname.'_'.$assessment->lname.'_'.session('product.title').'_Assessment', '-');
             $view = $this->wkhtml($assessment->id, $reportName, 'html');
+
             return $view;
         } else {
-            Log::error("Report does not exist for tool id ".session('product.id')." http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
+            Log::error('Report does not exist for tool id '.session('product.id')." http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
             abort(404, 'The page you requested does not exist');
         }
     }
 
     public function fakeDownload($tool)
     {
-
-        if ($tool=='fireeye') {
-            $file= storage_path().'/reports/FireEye_Assessment_Report.pdf';
-            $filename = "FireEye_Assessment_Report.pdf";
+        if ($tool == 'fireeye') {
+            $file = storage_path().'/reports/FireEye_Assessment_Report.pdf';
+            $filename = 'FireEye_Assessment_Report.pdf';
         } else {
-            $file= storage_path().'/reports/SAGE_Assessment_Report.pdf';
-            $filename = "SAGE_Assessment_Report.pdf";
+            $file = storage_path().'/reports/SAGE_Assessment_Report.pdf';
+            $filename = 'SAGE_Assessment_Report.pdf';
         }
 
         $headers = [
             'Content-Type: application/pdf',
         ];
+
         return response()->download($file, $filename, $headers);
     }
+
     public function getCalcResults($section = false)
     {
         $this->loadQuestions();
@@ -915,48 +925,48 @@ class ToolController extends Controller
         $result = [];
         $result['overall']['score'] = 0;
 
-        if ($section!==false) {
+        if ($section !== false) {
             foreach ($this->quiz[$section]['pages'] as $page => $props) {
-                if (!isset($this->quiz[$section]['ignore']) || $this->quiz[$section]['ignore']==false) {
+                if (! isset($this->quiz[$section]['ignore']) || $this->quiz[$section]['ignore'] == false) {
                     foreach ($props['questions'] as $q => $details) {
-                        if (!isset($details['ignore']) || $details['ignore']==false) { // ignore answer
-                            if (!isset($details['selected'])) {
+                        if (! isset($details['ignore']) || $details['ignore'] == false) { // ignore answer
+                            if (! isset($details['selected'])) {
                                 dd($details);
                             }
-                            if (($details['type']=='checkbox' || $details['type']=='groupradio' || $details['type']=='slider') && is_array($details['selected'])) {
+                            if (($details['type'] == 'checkbox' || $details['type'] == 'groupradio' || $details['type'] == 'slider') && is_array($details['selected'])) {
                                 if (isset($details['calc']) && isset($details['calc']['type'])) {
-                                    if ($details['calc']['type']=='average') {
+                                    if ($details['calc']['type'] == 'average') {
                                         $ave = [];
                                         foreach ($details['selected'] as $selected) {
                                             $selected = explode('|', $selected);
                                             $selected = $selected[1];
-                                            $ave[]=$selected;
+                                            $ave[] = $selected;
                                         }
                                         $val = array_sum($ave) / count($ave);
-                                    } elseif ($details['calc']['type']=='normalize') {
+                                    } elseif ($details['calc']['type'] == 'normalize') {
                                         $norm = 0;
                                         foreach ($details['selected'] as $selected) {
                                             $selected = explode('|', $selected);
                                             $selected = $selected[1];
-                                            $norm+=$selected;
+                                            $norm += $selected;
                                         }
-                                        $val = ($norm/$details['calc']['value'])*count($details['selected']);
-                                    } elseif ($details['calc']['type']=='qty') {
+                                        $val = ($norm / $details['calc']['value']) * count($details['selected']);
+                                    } elseif ($details['calc']['type'] == 'qty') {
                                         $norm = 0;
                                         $total = count($details['selected']);
-                                        foreach($details['calc']['between'] as $bet => $value){
-                                            list($min, $max) = explode('-',$bet);
-                                            if($total >= $min && $total <= $max){
+                                        foreach ($details['calc']['between'] as $bet => $value) {
+                                            list($min, $max) = explode('-', $bet);
+                                            if ($total >= $min && $total <= $max) {
                                                 $val = $value;
                                                 break;
                                             }
                                         }
-                                    } else{
+                                    } else {
                                         $val = 0;
                                         foreach ($details['selected'] as $selected) {
                                             $selected = explode('|', $selected);
                                             $selected = $selected[1];
-                                            $val+=$selected;
+                                            $val += $selected;
                                         }
                                     }
                                 } else {
@@ -964,7 +974,7 @@ class ToolController extends Controller
                                     foreach ($details['selected'] as $selected) {
                                         $selected = explode('|', $selected);
                                         $selected = $selected[1];
-                                        $valHold+=$selected;
+                                        $valHold += $selected;
                                     }
                                     $val = $valHold;
                                 }
@@ -974,8 +984,8 @@ class ToolController extends Controller
                             }
                             //check for crazy normalize
                             if (isset($details['calc']) && isset($details['calc']['min']) && isset($details['calc']['max']) && isset($details['calc']['outputmax'])) {
-                                $getMin = $val-$details['calc']['min'] == 0 ? 1 : $val-$details['calc']['min'];
-                                $val = ($getMin)*$details['calc']['outputmax']/($details['calc']['max']-$details['calc']['min']);
+                                $getMin = $val - $details['calc']['min'] == 0 ? 1 : $val - $details['calc']['min'];
+                                $val = ($getMin) * $details['calc']['outputmax'] / ($details['calc']['max'] - $details['calc']['min']);
                             }
                             //round to 1 decimal place
                             $val = round($val, 1, PHP_ROUND_HALF_UP);
@@ -988,7 +998,7 @@ class ToolController extends Controller
                         }
                     }
                     foreach ($this->baseline[$section]['types'] as $rating => $limits) {
-                        if ($result[$section]['score']>=$limits['low'] && $result[$section]['score']<=$limits['high']) {
+                        if ($result[$section]['score'] >= $limits['low'] && $result[$section]['score'] <= $limits['high']) {
                             $result[$section]['rating'] = $rating;
                             $result['overall']['score'] += $result[$section]['score'];
                         }
@@ -996,61 +1006,61 @@ class ToolController extends Controller
                 }
             }
             foreach ($this->baseline['overall']['types'] as $rating => $limits) {
-                if ($result['overall']['score']>=$limits['low'] && $result['overall']['score']<=$limits['high']) {
+                if ($result['overall']['score'] >= $limits['low'] && $result['overall']['score'] <= $limits['high']) {
                     $result['overall']['rating'] = $rating;
                 }
             }
         } else {
             foreach ($this->quiz as $key => $value) {
-                if ($key!=='screeners' && (!isset($value['ignore']) || $value['ignore']==false)) {
-                    if (!is_array($value['pages']) && !is_object($value['pages'])) {
+                if ($key !== 'screeners' && (! isset($value['ignore']) || $value['ignore'] == false)) {
+                    if (! is_array($value['pages']) && ! is_object($value['pages'])) {
                         Log::info('Section '.$key.' pages', $value['pages']);
                         Log::info('Quiz', $this->quiz);
                         abort(500, 'An internal error has occured, we have documented it and will correct it prompty. ');
                     }
                     foreach ($value['pages'] as $page => $props) {
                         foreach ($props['questions'] as $q => $details) {
-                            if (!isset($details['ignore']) || $details['ignore']==false) { // ignore answer
-                                if (($details['type']=='checkbox' || $details['type']=='groupradio' || $details['type']=='slider' || $details['type']=='groupbutton') && is_array($details['selected'])) {
+                            if (! isset($details['ignore']) || $details['ignore'] == false) { // ignore answer
+                                if (($details['type'] == 'checkbox' || $details['type'] == 'groupradio' || $details['type'] == 'slider' || $details['type'] == 'groupbutton') && is_array($details['selected'])) {
                                     if (isset($details['calc']) && isset($details['calc']['type'])) {
-                                        if ($details['calc']['type']=='average') {
+                                        if ($details['calc']['type'] == 'average') {
                                             $ave = [];
                                             foreach ($details['selected'] as $selected) {
                                                 $selected = explode('|', $selected);
                                                 $selected = $selected[1];
-                                                $ave[]=$selected;
+                                                $ave[] = $selected;
                                             }
                                             $val = array_sum($ave) / count($ave);
-                                        } elseif ($details['calc']['type']=='qty') {
+                                        } elseif ($details['calc']['type'] == 'qty') {
                                             $norm = 0;
                                             $total = count($details['selected']);
-                                            foreach($details['calc']['between'] as $bet => $value){
-                                                list($min, $max) = explode('-',$bet);
-                                                if($total >= $min && $total <= $max){
+                                            foreach ($details['calc']['between'] as $bet => $value) {
+                                                list($min, $max) = explode('-', $bet);
+                                                if ($total >= $min && $total <= $max) {
                                                     $val = $value;
                                                     break;
                                                 }
                                             }
-                                        } elseif ($details['calc']['type']=='normalize') {
+                                        } elseif ($details['calc']['type'] == 'normalize') {
                                             $norm = 0;
                                             foreach ($details['selected'] as $selected) {
                                                 $selected = explode('|', $selected);
                                                 $selected = $selected[1];
-                                                $norm+=$selected;
+                                                $norm += $selected;
                                             }
-                                            $val = ($norm/$details['calc']['value'])*count($details['selected']);
+                                            $val = ($norm / $details['calc']['value']) * count($details['selected']);
                                         }
                                     } else {
                                         $valHold = 0;
                                         foreach ($details['selected'] as $selected) {
                                             $selected = explode('|', $selected);
                                             $selected = $selected[1];
-                                            $valHold+=$selected;
+                                            $valHold += $selected;
                                         }
                                         $val = $valHold;
                                     }
                                 } else {
-                                    if (!isset($details['selected'])) {
+                                    if (! isset($details['selected'])) {
                                         dd($value['pages']);
                                     }
                                     $val = explode('|', $details['selected']);
@@ -1058,8 +1068,8 @@ class ToolController extends Controller
                                 }
                                 //check for crazy normalize
                                 if (isset($details['calc']) && isset($details['calc']['min']) && isset($details['calc']['max']) && isset($details['calc']['outputmax'])) {
-                                    $getMin = $val-$details['calc']['min'] == 0 ? 1 : $val-$details['calc']['min'];
-                                    $val = ($getMin)*$details['calc']['outputmax']/($details['calc']['max']-$details['calc']['min']);
+                                    $getMin = $val - $details['calc']['min'] == 0 ? 1 : $val - $details['calc']['min'];
+                                    $val = ($getMin) * $details['calc']['outputmax'] / ($details['calc']['max'] - $details['calc']['min']);
                                 }
                                 //round to 1 decimal place
                                 $val = round($val, 1, PHP_ROUND_HALF_UP);
@@ -1072,21 +1082,21 @@ class ToolController extends Controller
                             }
                         }
                     }
-                    if(isset($this->baseline[$key])){
-                        if(isset($this->baseline[$key]['normalise_using_screeners']['calc'])){
+                    if (isset($this->baseline[$key])) {
+                        if (isset($this->baseline[$key]['normalise_using_screeners']['calc'])) {
                             $result[$key]['score'] = eval('return '.$baseline[$key]['normalise_using_screeners']['calc'].';');
                         }
                         foreach ($this->baseline[$key]['types'] as $rating => $limits) {
-                            if ($result[$key]['score']>=$limits['low'] && $result[$key]['score']<=$limits['high']) {
+                            if ($result[$key]['score'] >= $limits['low'] && $result[$key]['score'] <= $limits['high']) {
                                 $result[$key]['rating'] = $rating;
                                 $result['overall']['score'] += $result[$key]['score'];
                             }
-                        }                    
+                        }
                     }
                 }
             }
             foreach ($this->baseline['overall']['types'] as $rating => $limits) {
-                if ($result['overall']['score']>=$limits['low'] && $result['overall']['score']<=$limits['high']) {
+                if ($result['overall']['score'] >= $limits['low'] && $result['overall']['score'] <= $limits['high']) {
                     $result['overall']['rating'] = $rating;
                 }
             }
@@ -1119,18 +1129,18 @@ class ToolController extends Controller
                 foreach ($question as $key => $option) {
                     if (isset($option['options'])) {
                         foreach ($option['options'] as $optoptkey => $optopt) {
-                            $optoptvals[]=$optopt['value'];
+                            $optoptvals[] = $optopt['value'];
                         }
                     } else {
-                        $optvals[]=$option['value'];
+                        $optvals[] = $option['value'];
                     }
 
-                    if (!empty($optvals)) {
+                    if (! empty($optvals)) {
                         $min = min($optvals);
                         $max = max($optvals);
                     } else {
-                        $min+= min($optoptvals);
-                        $max+= max($optoptvals);
+                        $min += min($optoptvals);
+                        $max += max($optoptvals);
                     }
                 }
                 $sections[$seckey][$qkey]['min'] = $min;
@@ -1160,10 +1170,9 @@ class ToolController extends Controller
         return $final;
     }
 
-
     public function resendeloqua(Request $request)
     {
-        $tool= $request->session()->get('productObject');
+        $tool = $request->session()->get('productObject');
         $from = false;
         if ($request->has('from')) {
             $from = Carbon::parse($request->input('from'));
@@ -1175,13 +1184,14 @@ class ToolController extends Controller
         } else {
             $tool->load('assessments');
         }
-       
+
         $url = $eloqua['url'];
         $currentLocal = App::getLocale();
         $eloqua = config('baseline_'.session('product.id').'.overall.eloqua', false);
         foreach ($tool->assessments as $assessment) {
             $this->prepareEloquaRequest($eloqua, $assessment);
         }
+
         return 'Dispatched eloqua requests to the queue';
     }
 
@@ -1212,6 +1222,7 @@ class ToolController extends Controller
                 }
             }
         }
+
         return response()->json('success');
     }
 
@@ -1226,50 +1237,50 @@ class ToolController extends Controller
         $scores = [];
 
         foreach ($this->quiz as $key => $value) {
-            if ($key!=='screeners' && (!isset($value['ignore']) || $value['ignore']==false)) {
+            if ($key !== 'screeners' && (! isset($value['ignore']) || $value['ignore'] == false)) {
                 foreach ($value['pages'] as $page => $props) {
                     foreach ($props['questions'] as $q => $details) {
-                        if (!isset($details['ignore']) || $details['ignore']==false) { // ignore answer
-                            if (($details['type']=='groupSlider' || $details['type']=='groupbutton' || $details['type']=='checkbox' || $details['type']=='groupradio' || $details['type']=='opposingslider') && is_array($details['selected'])) {
+                        if (! isset($details['ignore']) || $details['ignore'] == false) { // ignore answer
+                            if (($details['type'] == 'groupSlider' || $details['type'] == 'groupbutton' || $details['type'] == 'checkbox' || $details['type'] == 'groupradio' || $details['type'] == 'opposingslider') && is_array($details['selected'])) {
                                 $answers = [];
                                 if (isset($details['calc']) && isset($details['calc']['type'])) {
-                                    if ($details['calc']['type']=='average') {
+                                    if ($details['calc']['type'] == 'average') {
                                         $ave = [];
                                         foreach ($details['selected'] as $selected) {
-                                            $ave[]=$selected['value'];
-                                            $answers[]=$selected['label'];
+                                            $ave[] = $selected['value'];
+                                            $answers[] = $selected['label'];
                                         }
                                         $val = array_sum($ave) / count($ave);
-                                    } elseif ($details['calc']['type']=='qty') {
+                                    } elseif ($details['calc']['type'] == 'qty') {
                                         $norm = 0;
                                         $total = count($details['selected']);
-                                        foreach($details['calc']['between'] as $bet => $value){
-                                            list($min, $max) = explode('-',$bet);
-                                            if($total >= $min && $total <= $max){
+                                        foreach ($details['calc']['between'] as $bet => $value) {
+                                            list($min, $max) = explode('-', $bet);
+                                            if ($total >= $min && $total <= $max) {
                                                 $val = $value;
                                                 break;
                                             }
                                         }
-                                    } elseif ($details['calc']['type']=='normalize') {
+                                    } elseif ($details['calc']['type'] == 'normalize') {
                                         $norm = 0;
                                         foreach ($details['selected'] as $selected) {
-                                            $norm+=$selected['value'];
-                                            $answers[]=$selected['label'];
+                                            $norm += $selected['value'];
+                                            $answers[] = $selected['label'];
                                         }
-                                        $val = ($norm/$details['calc']['value'])*count($details['selected']);
+                                        $val = ($norm / $details['calc']['value']) * count($details['selected']);
                                     }
                                 } else {
                                     $valHold = 0;
                                     $valArr = [];
                                     foreach ($details['selected'] as $selected) {
-                                        $valArr[]=$selected['value'];
-                                        $valHold+=$selected['value'];
-                                        $answers[]=$selected['label'];
+                                        $valArr[] = $selected['value'];
+                                        $valHold += $selected['value'];
+                                        $answers[] = $selected['label'];
                                     }
                                     $val = $valHold;
                                 }
                             } else {
-                                if (!isset($details['selected']) || !isset($details['selected'][0]['value']) || !isset($details['selected'][0]['label'])) {
+                                if (! isset($details['selected']) || ! isset($details['selected'][0]['value']) || ! isset($details['selected'][0]['label'])) {
                                     dd($details['selected']);
                                 }
                                 $val = $details['selected'][0]['value'];
@@ -1277,8 +1288,8 @@ class ToolController extends Controller
                             }
                             // check for crazy normalize
                             if (isset($details['calc']) && isset($details['calc']['min']) && isset($details['calc']['max']) && isset($details['calc']['outputmax'])) {
-                                $getMin = $val-$details['calc']['min'] == 0 ? 1 : $val-$details['calc']['min'];
-                                $val = ($getMin)*$details['calc']['outputmax']/($details['calc']['max']-$details['calc']['min']);
+                                $getMin = $val - $details['calc']['min'] == 0 ? 1 : $val - $details['calc']['min'];
+                                $val = ($getMin) * $details['calc']['outputmax'] / ($details['calc']['max'] - $details['calc']['min']);
                             }
                             //round to 1 decimal place
                             $val = round($val, 1, PHP_ROUND_HALF_UP);
@@ -1292,12 +1303,12 @@ class ToolController extends Controller
                                 'section' => $props['title'],
                                 'type' => $details['type'],
                                 'calc' => isset($details['calc']) && isset($details['calc']['type']) ? $details['calc']['type'] : 'sum',
-                                'calcthing' => isset($details['calc']) && isset($details['calc']['min']) && isset($details['calc']['max']) && isset($details['calc']['outputmax']) ? $details['calc']['min']."-".$details['calc']['max']."-".$details['calc']['outputmax'] : isset($details['calc']) ." - ". isset($details['calc']['min']) ." - ". isset($details['calc']['max']) ." - ". isset($details['calc']['outputmax']),
+                                'calcthing' => isset($details['calc']) && isset($details['calc']['min']) && isset($details['calc']['max']) && isset($details['calc']['outputmax']) ? $details['calc']['min'].'-'.$details['calc']['max'].'-'.$details['calc']['outputmax'] : isset($details['calc']).' - '.isset($details['calc']['min']).' - '.isset($details['calc']['max']).' - '.isset($details['calc']['outputmax']),
                                 'answers' => isset($answers) ? $answers : null,
                                 'ave' => isset($ave) ? $ave : null,
                                 'norm' => isset($norm) ? $norm : null,
                                 'sum' => isset($valArr) ? $valArr : null,
-                                'val' => $val
+                                'val' => $val,
                             ];
                             unset($answers);
                             unset($ave);
@@ -1307,21 +1318,21 @@ class ToolController extends Controller
                         }
                     }
                 }
-                if(isset($this->baseline[$key])){
-                    if(isset($this->baseline[$key]['normalise_using_screeners']['calc'])){
+                if (isset($this->baseline[$key])) {
+                    if (isset($this->baseline[$key]['normalise_using_screeners']['calc'])) {
                         $result[$key]['score'] = eval('return '.$this->baseline[$key]['normalise_using_screeners']['calc'].';');
                     }
                     foreach ($this->baseline[$key]['types'] as $rating => $limits) {
-                        if ($result[$key]['score']>=$limits['low'] && $result[$key]['score']<=$limits['high']) {
+                        if ($result[$key]['score'] >= $limits['low'] && $result[$key]['score'] <= $limits['high']) {
                             $result[$key]['rating'] = $rating;
                             $result['overall']['score'] += $result[$key]['score'];
                         }
-                    }                    
+                    }
                 }
             }
         }
         foreach ($this->baseline['overall']['types'] as $rating => $limits) {
-            if ($result['overall']['score']>=$limits['low'] && $result['overall']['score']<=$limits['high']) {
+            if ($result['overall']['score'] >= $limits['low'] && $result['overall']['score'] <= $limits['high']) {
                 $result['overall']['rating'] = $rating;
             }
         }
@@ -1338,11 +1349,13 @@ class ToolController extends Controller
 
         return response()->json($data);
     }
-    private function prepareCrmRequest($fieldMapping, $request, $reportUuid){
+
+    private function prepareCrmRequest($fieldMapping, $request, $reportUuid)
+    {
         //send guzzle request
         //dd($request->all());
         $url = $fieldMapping['url'];
-        $auth = isset($fieldMapping['auth']) ? [$fieldMapping['auth']['username'],$fieldMapping['auth']['password']] : '[]';
+        $auth = isset($fieldMapping['auth']) ? [$fieldMapping['auth']['username'], $fieldMapping['auth']['password']] : '[]';
         $body = isset($fieldMapping['body']) ? $fieldMapping['body'] : 'body';
         $headers = isset($fieldMapping['headers']) ? $fieldMapping['headers'] : '[]';
 
@@ -1362,38 +1375,38 @@ class ToolController extends Controller
                     foreach ($this->quiz as $key => $value) {
                         foreach ($value['pages'] as $page => $props) {
                             foreach ($props['questions'] as $q => $details) {
-                                $text.= $q." - ".$details['question']."\n";
-                                if (!isset($details['ignore']) || $details['ignore']==false) { // ignore answer
-                                    if (($details['type']=='groupSlider' || $details['type']=='groupbutton' || $details['type']=='checkbox' || $details['type']=='groupradio' || $details['type']=='slider') && is_array($details['selected'])) {
+                                $text .= $q.' - '.$details['question']."\n";
+                                if (! isset($details['ignore']) || $details['ignore'] == false) { // ignore answer
+                                    if (($details['type'] == 'groupSlider' || $details['type'] == 'groupbutton' || $details['type'] == 'checkbox' || $details['type'] == 'groupradio' || $details['type'] == 'slider') && is_array($details['selected'])) {
                                         foreach ($details['selected'] as $select) {
-                                            foreach($details['options'] as $option){
-                                                if(isset($option['name']) && $select['name'] == $option['name']){
-                                                    $text.= $select['name']." - ".$option['label'].":\n";
+                                            foreach ($details['options'] as $option) {
+                                                if (isset($option['name']) && $select['name'] == $option['name']) {
+                                                    $text .= $select['name'].' - '.$option['label'].":\n";
                                                 }
                                             }
-                                            $text.= $select['label']."\n";
+                                            $text .= $select['label']."\n";
                                         }
                                     } else {
-                                        $text.= $details['selected'][0]['label']."\n";
+                                        $text .= $details['selected'][0]['label']."\n";
                                     }
                                 }
                             }
-                        }                        
+                        }
                     }
                     $query[$fieldKey] = $text;
                     break;
                 case 'result':
                     $result = $this->howfit['overall']['rating'];
                     $config = '';
-                    if($settings['config']){
+                    if ($settings['config']) {
                         $config = config($settings['config'].'.'.$result);
                     }
                     $query[$fieldKey] = $config;
                     break;
                 case 'field':
-                    if(isset($settings['transform'])){
+                    if (isset($settings['transform'])) {
                         $query[$fieldKey] = $settings['transform'][$request->input($settings['name'])];
-                    }else{
+                    } else {
                         $query[$fieldKey] = $request->input($settings['name']);
                     }
                     break;
@@ -1421,7 +1434,7 @@ class ToolController extends Controller
                         $selected = session('questions.'.$question.'.selected');
                         $val = explode('|', $selected);
                         $val = $val[1];
-                        $results[]=$val;
+                        $results[] = $val;
                     }
                     $answer = 0;
                     switch ($settings['formula']) {
@@ -1445,7 +1458,8 @@ class ToolController extends Controller
         $this->dispatch(new SendCrmRequest($url, $query, 'POST', $headers, $auth, $body));
     }
 
-    private function prepareEloquaRequest($eloqua, $request){
+    private function prepareEloquaRequest($eloqua, $request)
+    {
         //send guzzle request
         $url = $eloqua['url'];
 
@@ -1487,7 +1501,7 @@ class ToolController extends Controller
                         $selected = session('questions.'.$question.'.selected');
                         $val = explode('|', $selected);
                         $val = $val[1];
-                        $results[]=$val;
+                        $results[] = $val;
                     }
                     $answer = 0;
                     switch ($settings['formula']) {
@@ -1511,10 +1525,11 @@ class ToolController extends Controller
         $this->dispatch(new SendEloquaRequest($url, $query));
     }
 
-    private function prepareMrsRequest($mrs, $request, $uuid){
+    private function prepareMrsRequest($mrs, $request, $uuid)
+    {
         //send guzzle request
         $url = $mrs['url'];
-        $auth = isset($mrs['auth']) ? [$mrs['auth']['username'],$mrs['auth']['password']] : '[]';
+        $auth = isset($mrs['auth']) ? [$mrs['auth']['username'], $mrs['auth']['password']] : '[]';
         $query = [];
 
         foreach ($mrs['fields'] as $fieldKey => $settings) {
@@ -1524,21 +1539,21 @@ class ToolController extends Controller
                     break;
                 case 'array':
                     foreach ($settings['value'] as $groupKey => $groupSettings) {
-                        if(isset($groupSettings['type'])){
+                        if (isset($groupSettings['type'])) {
                             $query[$fieldKey][$groupKey] = $groupSettings['value'] == 'datetime' ? Carbon::now()->toDateTimeString() : $groupSettings['value'];
                         }
-                        if(isset($groupSettings['question_type'])){
-                            if($groupSettings['answer'] == 'report'){
+                        if (isset($groupSettings['question_type'])) {
+                            if ($groupSettings['answer'] == 'report') {
                                 $answer = session('url').'/'.session('locale').'/download/'.$uuid;
-                            }elseif($groupSettings['answer'] == 'overall' || $groupSettings['answer'] == 'move' || $groupSettings['answer'] == 'build' || $groupSettings['answer'] == 'manage'){
+                            } elseif ($groupSettings['answer'] == 'overall' || $groupSettings['answer'] == 'move' || $groupSettings['answer'] == 'build' || $groupSettings['answer'] == 'manage') {
                                 $answer = trans(session('product.alias').'.'.session('result.'.$groupSettings['answer'].'.rating'));
-                            }else{
-                                $answer = is_null($request->input($groupSettings['answer'])) ? "" : $request->input($groupSettings['answer']);
+                            } else {
+                                $answer = is_null($request->input($groupSettings['answer'])) ? '' : $request->input($groupSettings['answer']);
                             }
                             $query[$fieldKey][] = [
                                 'question_type' => $groupSettings['question_type'],
                                 'question_name' => $groupSettings['question_name'],
-                                'answer' => $groupSettings['answer'] == 'report' ? session('url').'/'.session('locale').'/download/'.$uuid : (is_null($request->input($groupSettings['answer'])) ? "" : $request->input($groupSettings['answer']))
+                                'answer' => $groupSettings['answer'] == 'report' ? session('url').'/'.session('locale').'/download/'.$uuid : (is_null($request->input($groupSettings['answer'])) ? '' : $request->input($groupSettings['answer'])),
                             ];
                         }
                     }
@@ -1546,31 +1561,30 @@ class ToolController extends Controller
                     break;
                 case 'object':
                     $object = [];
-                    foreach($settings['value'] as $objKey => $value){
-                        if(is_array($value)){
-                            foreach($value as $subObjKey => $subValue){
-                                if(is_array($subValue)){
-                                    foreach($subValue as $key => $val){
-                                        if(is_array($val)){
-                                            foreach($val as $subSubKey => $subSubVal){
+                    foreach ($settings['value'] as $objKey => $value) {
+                        if (is_array($value)) {
+                            foreach ($value as $subObjKey => $subValue) {
+                                if (is_array($subValue)) {
+                                    foreach ($subValue as $key => $val) {
+                                        if (is_array($val)) {
+                                            foreach ($val as $subSubKey => $subSubVal) {
                                                 $object[$objKey][$subObjKey][$key][$subSubKey] = $request->input($subSubVal) == 'on' ? 'permission' : 'unchanged';
                                             }
-                                        }else{
+                                        } else {
                                             $object[$objKey][$subObjKey][$key] = $val;
                                         }
                                     }
-                                }else{
+                                } else {
                                     $object[$objKey][$subObjKey] = $subValue;
                                 }
                             }
-                        } else{
+                        } else {
                             $object[$objKey] = $value;
                         }
                     }
                     $query[$fieldKey] = $object;
                     break;
             }
-
         }
         $this->dispatch(new SendCrmRequest($url, $query, 'POST', ['Content-Type' => 'application/json'], $auth));
     }

@@ -1,9 +1,10 @@
 <?php
+
 //Trend MSP
 return [
     'overall' => [
         'baseline' => 27.60,
-        
+
         'complete' => [
             'graph' => [
                 'label' => 'Stage',
@@ -11,10 +12,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -25,7 +26,7 @@ return [
             'basecolor'=>'#004386',
             'pageimage'=>false,
             'margin-top'=>20,
-            'header-spacing'=>6
+            'header-spacing'=>6,
         ],
         'types' => [
             'stage1' => [
@@ -62,12 +63,12 @@ return [
                 'copy' => 'trend-micro-msp.stage5txt',
                 'tweet' => false,
                 'benchmark' => 28,
-            ]
+            ],
         ],
         'tweet' => false,
         'include_answers_in_download_report' => true,
         'notifications' => [
-            'inline_report' => true
+            'inline_report' => true,
         ],
         'field_validation' => [
             'fname'=>'required|min:2|max:255',
@@ -76,8 +77,8 @@ return [
             'title'=>'required|min:3|max:255',
             'country'=>'required',
             'company'=>'required',
-            'terms'=>'required'
-        ]
+            'terms'=>'required',
+        ],
     ],
     'sales' => [
         'baseline' => 8.90,
@@ -89,10 +90,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -111,37 +112,37 @@ return [
                 'high' => 7,
                 'total' => 2,
                 'benchmark' => 20,
-                'copy' => 'trend-micro-msp.sales-stage-1-txt'
+                'copy' => 'trend-micro-msp.sales-stage-1-txt',
             ],
             'stage2' => [
                 'low' => 7.01,
                 'high' => 11.5,
                 'total' => 3,
                 'benchmark' => 34,
-                'copy' => 'trend-micro-msp.sales-stage-2-txt'
+                'copy' => 'trend-micro-msp.sales-stage-2-txt',
             ],
             'stage3' => [
                 'low' => 11.51,
                 'high' => 16,
                 'total' => 5,
                 'benchmark' => 28,
-                'copy' => 'trend-micro-msp.sales-stage-3-txt'
+                'copy' => 'trend-micro-msp.sales-stage-3-txt',
             ],
             'stage4' => [
                 'low' => 16.01,
                 'high' => 20.5,
                 'total' => 5,
                 'benchmark' => 28,
-                'copy' => 'trend-micro-msp.sales-stage-4-txt'
+                'copy' => 'trend-micro-msp.sales-stage-4-txt',
             ],
             'stage5' => [
                 'low' => 20.51,
                 'high' => 30,
                 'total' => 5,
                 'benchmark' => 28,
-                'copy' => 'trend-micro-msp.sales-stage-5-txt'
-            ]
-        ]
+                'copy' => 'trend-micro-msp.sales-stage-5-txt',
+            ],
+        ],
     ],
     'marketing' => [
         'baseline' => 8.90,
@@ -153,10 +154,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -175,37 +176,37 @@ return [
                 'high' => 7,
                 'total' => 2,
                 'benchmark' => 20,
-                'copy' => 'trend-micro-msp.marketing-stage-1-txt'
+                'copy' => 'trend-micro-msp.marketing-stage-1-txt',
             ],
             'stage2' => [
                 'low' => 7.01,
                 'high' => 11.5,
                 'total' => 3,
                 'benchmark' => 34,
-                'copy' => 'trend-micro-msp.marketing-stage-2-txt'
+                'copy' => 'trend-micro-msp.marketing-stage-2-txt',
             ],
             'stage3' => [
                 'low' => 11.51,
                 'high' => 16,
                 'total' => 5,
                 'benchmark' => 28,
-                'copy' => 'trend-micro-msp.marketing-stage-3-txt'
+                'copy' => 'trend-micro-msp.marketing-stage-3-txt',
             ],
             'stage4' => [
                 'low' => 16.01,
                 'high' => 20.5,
                 'total' => 5,
                 'benchmark' => 28,
-                'copy' => 'trend-micro-msp.marketing-stage-4-txt'
+                'copy' => 'trend-micro-msp.marketing-stage-4-txt',
             ],
             'stage5' => [
                 'low' => 20.51,
                 'high' => 30,
                 'total' => 5,
                 'benchmark' => 28,
-                'copy' => 'trend-micro-msp.marketing-stage-5-txt'
-            ]
-        ]
+                'copy' => 'trend-micro-msp.marketing-stage-5-txt',
+            ],
+        ],
     ],
     'services' => [
         'baseline' => 8.90,
@@ -217,10 +218,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -239,37 +240,37 @@ return [
                 'high' => 7,
                 'total' => 2,
                 'benchmark' => 20,
-                'copy' => 'trend-micro-msp.services-stage-1-txt'
+                'copy' => 'trend-micro-msp.services-stage-1-txt',
             ],
             'stage2' => [
                 'low' => 7.01,
                 'high' => 11.5,
                 'total' => 3,
                 'benchmark' => 34,
-                'copy' => 'trend-micro-msp.services-stage-2-txt'
+                'copy' => 'trend-micro-msp.services-stage-2-txt',
             ],
             'stage3' => [
                 'low' => 11.51,
                 'high' => 16,
                 'total' => 5,
                 'benchmark' => 28,
-                'copy' => 'trend-micro-msp.services-stage-3-txt'
+                'copy' => 'trend-micro-msp.services-stage-3-txt',
             ],
             'stage4' => [
                 'low' => 16.01,
                 'high' => 20.5,
                 'total' => 5,
                 'benchmark' => 28,
-                'copy' => 'trend-micro-msp.services-stage-4-txt'
+                'copy' => 'trend-micro-msp.services-stage-4-txt',
             ],
             'stage5' => [
                 'low' => 20.51,
                 'high' => 30,
                 'total' => 5,
                 'benchmark' => 28,
-                'copy' => 'trend-micro-msp.services-stage-5-txt'
-            ]
-        ]
+                'copy' => 'trend-micro-msp.services-stage-5-txt',
+            ],
+        ],
     ],
     'security' => [
         'baseline' => 8.90,
@@ -281,10 +282,10 @@ return [
                 'format'=>[
                     'type'=>'NumberFormat',
                     'format'=>[
-                        'suffix' => '%'
-                    ]
+                        'suffix' => '%',
+                    ],
                 ],
-            ]
+            ],
         ],
         'report-settings' => [
             'header'=>true,
@@ -303,36 +304,36 @@ return [
                 'high' => 7,
                 'total' => 2,
                 'benchmark' => 20,
-                'copy' => 'trend-micro-msp.security-stage-1-txt'
+                'copy' => 'trend-micro-msp.security-stage-1-txt',
             ],
             'stage2' => [
                 'low' => 7.01,
                 'high' => 11.5,
                 'total' => 3,
                 'benchmark' => 34,
-                'copy' => 'trend-micro-msp.security-stage-2-txt'
+                'copy' => 'trend-micro-msp.security-stage-2-txt',
             ],
             'stage3' => [
                 'low' => 11.51,
                 'high' => 16,
                 'total' => 5,
                 'benchmark' => 28,
-                'copy' => 'trend-micro-msp.security-stage-3-txt'
+                'copy' => 'trend-micro-msp.security-stage-3-txt',
             ],
             'stage4' => [
                 'low' => 16.01,
                 'high' => 20.5,
                 'total' => 5,
                 'benchmark' => 28,
-                'copy' => 'trend-micro-msp.security-stage-4-txt'
+                'copy' => 'trend-micro-msp.security-stage-4-txt',
             ],
             'stage5' => [
                 'low' => 20.51,
                 'high' => 30,
                 'total' => 5,
                 'benchmark' => 28,
-                'copy' => 'trend-micro-msp.security-stage-5-txt'
-            ]
-        ]
+                'copy' => 'trend-micro-msp.security-stage-5-txt',
+            ],
+        ],
     ],
 ];

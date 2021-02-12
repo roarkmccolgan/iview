@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Database\Seeder;
 use Carbon\Carbon;
+use Illuminate\Database\Seeder;
 
 class TrendMicroMSSPSeeder extends Seeder
 {
@@ -33,7 +33,7 @@ class TrendMicroMSSPSeeder extends Seeder
             'subdomain' => 'msp',
             'language_id' => 1,
             'urlable_id' => 9,
-            'urlable_type' => 'App\Tool',
+            'urlable_type' => \App\Tool::class,
             'created_at' => Carbon::now(),
         ]);
         DB::table('urls')->insert([
@@ -41,7 +41,7 @@ class TrendMicroMSSPSeeder extends Seeder
             'subdomain' => 'msp',
             'language_id' => 1,
             'urlable_id' => 9,
-            'urlable_type' => 'App\Tool',
+            'urlable_type' => \App\Tool::class,
             'created_at' => Carbon::now(),
         ]);
         DB::table('urls')->insert([
@@ -49,7 +49,7 @@ class TrendMicroMSSPSeeder extends Seeder
             'subdomain' => 'trend',
             'language_id' => 1,
             'urlable_id' => 9,
-            'urlable_type' => 'App\Tool',
+            'urlable_type' => \App\Tool::class,
             'created_at' => Carbon::now(),
         ]);
         DB::table('urls')->insert([
@@ -57,16 +57,16 @@ class TrendMicroMSSPSeeder extends Seeder
             'subdomain' => 'trend',
             'language_id' => 1,
             'urlable_id' => 9,
-            'urlable_type' => 'App\Tool',
+            'urlable_type' => \App\Tool::class,
             'created_at' => Carbon::now(),
         ]);
         DB::table('language_tool')->insert([ //english Trend
             'tool_id' => 9,
-            'language_id' => 1
+            'language_id' => 1,
         ]);
         DB::table('tool_user')->insert([
             'tool_id' => 9,
-            'user_id' => 1 //roark
+            'user_id' => 1, //roark
         ]);
 
         /*DB::table('extra_fields')->insert([

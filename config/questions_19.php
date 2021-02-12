@@ -1,4 +1,5 @@
 <?php
+
 // REDHAT
 return [
     'general'=>[
@@ -71,9 +72,9 @@ return [
                                 'value'=>0,
                                 'checked'=>false,
                             ],
-                        ]
-                    ]
-                ]
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'General',
@@ -103,9 +104,9 @@ return [
                                 'value'=>3,
                                 'checked'=>false,
                             ],
-                        ]
-                    ]
-                ]
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'General',
@@ -139,10 +140,10 @@ return [
                                 'label'=>'Unified software dev capability across the entire organization with full alignment to the business strategy (capability is founded on reuse, automation, integration, and self-service)',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page4' => [
                 'title' => 'General',
@@ -174,11 +175,11 @@ return [
                                 'value'=>3,
                                 'checked'=>false,
                             ],
-                        ]
-                    ]
-                ]
-            ]
-        ]
+                        ],
+                    ],
+                ],
+            ],
+        ],
     ],
     'automate' => [
         'title' => 'Automation',
@@ -203,7 +204,7 @@ return [
                     </h1>
                     <img src="/images/tools/19/automate_intro_data_point.svg" class="w-full sm:w-1/2 sm:ml-8" />
                 </div>
-            '
+            ',
         ],
         'sectionintrobutton' => 'How are you leveraging automation in your digital innovation journey?',
         'intermission' => [],
@@ -239,10 +240,10 @@ return [
                                 'label'=>'To underpin new custom application product innovations in areas such as mobile, AR/VR, IoT, edge computing',
                                 'value'=>3,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Automation',
@@ -281,10 +282,10 @@ return [
                                 'label'=>'Not doing DevOps',
                                 'value'=>0,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Automation',
@@ -318,10 +319,10 @@ return [
                                 'label'=>'Continuous integration with automated build and release management',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page4' => [
                 'title' => 'Automation',
@@ -365,12 +366,12 @@ return [
                                 'label'=>'76% - 100%',
                                 'value'=>9,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
     ],
     'hybrid' => [
         'title' => 'Hybrid Cloud',
@@ -395,7 +396,7 @@ return [
                     <h1 class="flex-1 font-light text-2xl sm:text-3xl leading-tight mb-2 p-4 bg-grey-lighter">Hybrid cloud maximizes return on IT investments, increases flexibility in the IT estate, and ensures cloud autonomy.</h1>
                     <img src="/images/tools/19/hybrid_intro_data_point.svg" class="w-full sm:w-1/2 sm:ml-8" />
                 </div>
-            '
+            ',
         ],
         'sectionintrobutton' => 'Where is your organization on the cloud journey?',
         'intermission' => [],
@@ -426,10 +427,10 @@ return [
                                 'label'=>'Hybrid clouds (when all public clouds and private clouds of an organisation can be managed as a single unified infrastructure)',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Hybrid Cloud',
@@ -463,10 +464,10 @@ return [
                                 'label'=>'Not applicable/ Not used',
                                 'value'=>1,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Hybrid Cloud',
@@ -500,10 +501,10 @@ return [
                                 'label'=>'Application aware analytics driven infrastructure provisioning, automation, and orchestration across public and private',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page4' => [
                 'title' => 'Hybrid Cloud',
@@ -538,12 +539,12 @@ return [
                                 'label'=>'Workload migration and repatriation',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+        ],
     ],
     'native' => [
         'title' => 'Cloud Native',
@@ -568,7 +569,7 @@ return [
                     <h1 class="flex-1 font-light text-2xl sm:text-3xl leading-tight mb-2 p-4 bg-grey-lighter">Cloud native shifts requirements to compete in a hyperagile, digital world.</h1>
                     <img src="/images/tools/19/native_intro_data_point.svg" class="w-full sm:w-1/2 sm:ml-8" />
                 </div>
-            '
+            ',
         ],
         'sectionintrobutton' => 'How is cloud native making you more agile?',
         'intermission' => [],
@@ -604,10 +605,10 @@ return [
                                 'label'=>'There\'s a well governed and joined up approach across the entire organization',
                                 'value'=>5,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page2' => [
                 'title' => 'Cloud Native',
@@ -669,9 +670,9 @@ return [
                                 'value'=>0,
                                 'checked'=>false,
                             ],
-                        ]
-                    ]
-                ]
+                        ],
+                    ],
+                ],
             ],
             'page3' => [
                 'title' => 'Cloud Native',
@@ -715,10 +716,10 @@ return [
                                 'label'=>'above 75%',
                                 'value'=>8,
                                 'checked'=>false,
-                            ]
-                        ]
-                    ]
-                ]
+                            ],
+                        ],
+                    ],
+                ],
             ],
             'page4' => [
                 'title' => 'Cloud Native',
@@ -776,10 +777,10 @@ return [
                                 'value'=>0,
                                 'checked'=>false,
                             ],
-                        ]
-                    ]
-                ]
-            ]
-        ]
-    ]
+                        ],
+                    ],
+                ],
+            ],
+        ],
+    ],
 ];

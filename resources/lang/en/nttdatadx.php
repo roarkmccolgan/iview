@@ -1,6 +1,7 @@
 <?php
+
 //NTTDATA
-return array(
+return [
     'elqFormName'=>'',
     'developedby'=>'Developed by',
     'sponsoredby'=>'Sponsored by',
@@ -21,7 +22,7 @@ return array(
             This self-assessment tool is backed up by independent end-user research and IDC\'s in depth understanding of the FSI market. Upon completion of a short survey (10 minutes) you will receive a custom report that benchmarks your organization\'s DX capability and provides you with essential and tailored guidance to help you advance in your digital journey to cater to the needs of a financial services landscape that is ever-evolving and increasingly open and connected.
         </p>',
     'startbut'=>'Start Assessment',
-    
+
     'send'=>'We can send you the full results directly to your mailbox',
     'register'=>'Register now to receive your personalized report',
     'provide'=>'Provide us with a few details and we\'ll send you a link to download it.',
@@ -53,7 +54,7 @@ return array(
         <a class="text-ntt-data-yellow" target="_blank" href="https://nttdata.com">
             Click here for more information
         </a>',
-    'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @ntt. Interested? ',// http://bit.ly/2gslXEh
+    'complete_tweet' => 'I\'ve just taken the @IDCEMEA GDPR Assessment Tool for @ntt. Interested? ', // http://bit.ly/2gslXEh
     'email'=>[
         'subject' => 'IDC Digital Transformation (DX) Capability Assessment - Sponsored by NTT DATA',
         'hi' => 'Hi :Fname',
@@ -62,7 +63,7 @@ return array(
         'link_inline' => 'View Report in your browser',
         'extra' => 'For any further information please email <a href="mailto:NTTDATAFS@nttdata.com" subject="NTT DATA DX Assessment">NTTDATAFS@nttdata.com</a>',
         'regards' => 'Regards',
-        'team' => 'The NTT DATA team'
+        'team' => 'The NTT DATA team',
     ],
     'leadgen'=>[
         'fname'=>'First Name',
@@ -247,7 +248,7 @@ return array(
             Based on your response, you have transformed most of your digital channels to improve customer engagement and attract new revenues. This means that you are well ahead of your DX Complacent peers in transforming engagement. Well done! You should now focus your efforts on other areas to improve your overall Digital Transformation DX capability.
         </p>
     ',
-    
+
     'dx-adoptionq1stage2a'=>'
         <p class="mb-2">
             Your score indicates that you are either exploring your options or have just started modernizing some of the digital channels to improve customer engagement and attract new revenues. This means you are lagging behind your DX Conformist peers in this area. To advance in the digital transformation journey, you need to look to modernize all your points of engagement with the customer and explore new channels to improve outreach.  
@@ -263,7 +264,7 @@ return array(
             Your score indicates that you have transformed most of your digital channels to improve customer engagement and attract new revenues. This means that you are ahead of your DX Conformist peers in transforming customer engagement. This sounds great. You should now focus on other areas to improve your overall Digital Transformation DX capability.
         </p>
     ',
-    
+
     'dx-adoptionq1stage3a'=>'
         <p class="mb-2">
             Your score indicates that you are in the process of modernizing multiple digital channels to improve customer engagement and attract new revenues. This means that you are lagging behind most of your DX Trailblazer peers in transforming customer engagement. To sustain your place among the DX Trailblazers, you need to urgently look to modernize all your points of engagement with the customer and explore new channels to improve outreach.
@@ -405,7 +406,7 @@ return array(
             Your investment bands indicate that you are ahead of your DX Conformist peers with respect to your investments in DX services. You are in a great position as far as this important criteria for DX progress is concerned so keep it up!
         </p>
     ',
-    
+
     'dx-adoptionq3stage3a'=>'
         <p class="mb-2">
             Your investment bands indicate that you are lagging behind other DX Conformist peers with respect to your investments in IT services. Your organisation remains exposed to a degree of risk as setting your investment priorities right is important for you to keep up the progress you made in your DX journey so far as well as make further advancements.
@@ -460,7 +461,7 @@ return array(
             Your investment bands indicate that you are well ahead of your DX Complacent peers with respect to your investments in traditional IT and Business Consulting and Outsourcing services. You appear to be doing the right things in terms of your investment priorities.
         </p>
     ',
-    
+
     'dx-adoptionq4stage2a'=>'
         <p class="mb-2">
             Your investment bands indicate that you are lagging behind other DX Conformist peers with respect to your investments in in traditional IT and Business Consulting and Outsourcing services.  You must revisit your traditional IT outsourcing priorities and explore opportunities to allocate budget for cognitive enabled automation and other digital initiatives to move ahead in your DX journey.
@@ -476,7 +477,7 @@ return array(
             Your investment bands indicate that you are ahead of your DX Conformist peers with respect to your investments in in traditional IT and Business Consulting and Outsourcing services.  You must continue to explore opportunities to allocate budget for cognitive enabled automation and other digital initiatives to move ahead in your DX journey.
         </p>
     ',
-    
+
     'dx-adoptionq4stage3a'=>'
         <p class="mb-2">
             Your investment bands indicate that you are lagging behind other DX trailblazers with respect to your investments in in traditional IT and Business Consulting and Outsourcing services.  You must revisit your traditional IT outsourcing priorities urgently and explore opportunities to allocate budget for cognitive enabled automation and other digital initiatives to move ahead in your DX journey.
@@ -762,7 +763,7 @@ return array(
             Your investment bands indicate that you are in line with most of the DX Trailblazers with respect to your investments in these technologies. You can continue to focus on these areas to keep up the leadership position you have in the market leveraging these technologies.
         </p>
     ',
-    
+
     'connected-financial-servicesstage1stage1'=>'
         <h3 class="leading-tight text-blue-darker text-lg mb-4 mt-4">CONNECTED FINANCIAL SERVICES</h3>
         <p class="mb-2">Connected financial services bring together businesses and products with the help of a digital platform where diverse stakeholders (both internal and external) collaborate to deliver value-oriented and personalized offerings to customers through a partnership network approach. In this section, we look in to the progress you made in establishing a connected financial services business and your overall approach to risk management while doing so as this is vital to build loyalty and trust among your customers and partners.</p>
@@ -964,4 +965,4 @@ return array(
             Your score indicates that you have employed some of these measures currently. This means you are in line with other DX Trailblazers and is following a mature approach to risk management in connected financial services. 
         </p>
     ',
-);
+];

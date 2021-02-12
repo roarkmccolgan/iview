@@ -1,4 +1,5 @@
 <?php
+
 namespace App\CustomClasses\ItalyAssessment;
 
 use App\Assessment;
@@ -19,61 +20,60 @@ class ItalyClass
     public $answer;
     public $assessment;
 
-	function loadAssessment($respondantUuid, $utm = false)
+    public function loadAssessment($respondantUuid, $utm = false)
     {
         $respondantUuid = $respondantUuid ?? 'f9z3sduwbdxrbyx4';
-        
+
         $client = new \GuzzleHttp\Client([
             'base_uri' => 'https://selfserve.decipherinc.com/api/v1/surveys/selfserve/',
             'headers' => [
                 'x-apikey' => 'um2mzvqjs4zjhqn5e9xvp2a6bnybkyq6h01degmgn68qdwkqq4en77vwn0bnxv9v',
-            ]
+            ],
         ]);
         try {
             $questionRequest = $client->request('GET', '21eb/190309/datamap', [
                 'query' => [
                     'format' => 'json',
-                ]
+                ],
             ]);
 
-            $this->questions = collect(json_decode($questionRequest->getBody(), true))->only('questions')->flatten(1)->filter(function($item){
+            $this->questions = collect(json_decode($questionRequest->getBody(), true))->only('questions')->flatten(1)->filter(function ($item) {
                 return isset($item['variables']) && isset($item['qtitle']);
             })->pluck(['variables'])->flatten(1);
 
             // response()->json($this->questions->toArray())->send();
             // die();
 
-            $this->singleQuestions = $this->questions->mapWithKeys(function($item){
+            $this->singleQuestions = $this->questions->mapWithKeys(function ($item) {
                 return [$item['label'] => $item['rowTitle']];
             });
-            $this->singleQuestionsText = $this->questions->filter(function($item, $key){
+            $this->singleQuestionsText = $this->questions->filter(function ($item, $key) {
                 return strpos($item['qlabel'], 's') === false;
-            })->mapWithKeys(function($item){
+            })->mapWithKeys(function ($item) {
                 return [$item['label'] => $item['qtitle']];
             });
-
         } catch (GuzzleHttp\Exception\RequestException $e) {
             return $e->getMessage();
         }
 
-        $assessment = Assessment::where('tool_id',session('product.id'))->where('uuid', $respondantUuid)->first();
+        $assessment = Assessment::where('tool_id', session('product.id'))->where('uuid', $respondantUuid)->first();
 
-        if(!$assessment){
+        if (! $assessment) {
             $answerRequest = $client->request('GET', '21eb/190309/data', [
                 'query' => [
                     'format' => 'json',
-                    'cond' => 'uuid=="'.$respondantUuid.'"'
-                ]
+                    'cond' => 'uuid=="'.$respondantUuid.'"',
+                ],
             ]);
             $this->answer = collect(json_decode($answerRequest->getBody(), true))->first();
 
-            $alreadyDoneAssessment = Assessment::where('tool_id',session('product.id'))->where('email', $this->answer['q22r4'])->first();
-            
-            if($alreadyDoneAssessment){
+            $alreadyDoneAssessment = Assessment::where('tool_id', session('product.id'))->where('email', $this->answer['q22r4'])->first();
+
+            if ($alreadyDoneAssessment) {
                 $this->completedAlready = true;
                 $this->answer = $alreadyDoneAssessment->quiz;
                 $this->assessment = $alreadyDoneAssessment;
-            }else{
+            } else {
                 $assessment = new Assessment;
                 $assessment->tool_id = session('product.id');
                 $assessment->fname = $this->answer['q22r2'];
@@ -91,7 +91,7 @@ class ItalyClass
                 $assessment->uuid = $respondantUuid;
                 $assessment->lang = session('locale') == '' ? 'en' : session('locale');
                 $assessment->save();
-                
+
                 $this->assessment = $assessment;
 
                 if ($utm) {
@@ -107,47 +107,51 @@ class ItalyClass
                     }
                 }
             }
-        }else{
+        } else {
             $this->answer = $assessment->quiz;
             $this->assessment = $assessment;
         }
 
-        $this->name = $this->answer['q22r2']." ".$this->answer['q22r3'];
+        $this->name = $this->answer['q22r2'].' '.$this->answer['q22r3'];
         $this->organization = $this->answer['q22r1'];
         $this->email = $this->answer['q22r4'];
         $this->created_at = $this->assessment['created_at'];
 
-        $this->project = $this->questions->filter(function($item, $key){
+        $this->project = $this->questions->filter(function ($item, $key) {
             return $item['vgroup'] == 'q21';
-        })->pluck('values')->flatten(1)->filter(function($item){
+        })->pluck('values')->flatten(1)->filter(function ($item) {
             return $item['value'] == $this->answer['q21'];
         })->pluck('title')->first();
     }
 
-    function loadHtml()
-	{
-        if(is_null($this->answer)){
-            abort(404);            
+    public function loadHtml()
+    {
+        if (is_null($this->answer)) {
+            abort(404);
         }
         //load data
-        include(app_path() . '/CustomClasses/ItalyAssessment/data.php');
+        include app_path().'/CustomClasses/ItalyAssessment/data.php';
         //$answer =  collect(json_decode(Storage::disk('local')->get('/italyFiles/answer.json'), true));
 
-        $industry =  collect($this->answer)->only(array_keys($industryKeys))->filter()->keys()->first();
-        $size =  collect($this->answer)->only(array_keys($sizeKeys))->filter()->keys()->first();
-        if($size == null) $size = 'qsizer1';
-        if($industry == 'qsectornone') $industry = 'qsectorr2';
+        $industry = collect($this->answer)->only(array_keys($industryKeys))->filter()->keys()->first();
+        $size = collect($this->answer)->only(array_keys($sizeKeys))->filter()->keys()->first();
+        if ($size == null) {
+            $size = 'qsizer1';
+        }
+        if ($industry == 'qsectornone') {
+            $industry = 'qsectorr2';
+        }
         //graph settings
 
-        $graphSettings = array(
+        $graphSettings = [
             'use_iconv' => false,
             'back_colour' => '#FFF',
-            'stroke_colour' => NULL,
+            'stroke_colour' => null,
             'back_stroke_width' => 0,
             'back_stroke_colour' => '#EFEFEF',
 
             'grid_division_h' => 10,
-            
+
             'axis_colour' => '#FFF',
             'axis_text_colour' => '#000',
             'axis_overlap' => 2,
@@ -161,7 +165,7 @@ class ItalyClass
             'pad_right' => 20,
             'pad_left' => 20,
             'minimum_grid_spacing' => 20,
-        );
+        ];
 
         //questionSize1
         //
@@ -170,11 +174,10 @@ class ItalyClass
         ';
         $q1intro = '';
 
-
         $q1Sizeset = $sizeReference['q1'][$size];
         $q1SizeAnswers = collect($this->answer)->only(array_keys($q1Sizeset))->filter();
-        $q1Sizelabels = collect($this->singleQuestions)->filter(function($item, $key) use($q1SizeAnswers){
-            return collect($q1SizeAnswers->keys())->contains($key);                
+        $q1Sizelabels = collect($this->singleQuestions)->filter(function ($item, $key) use ($q1SizeAnswers) {
+            return collect($q1SizeAnswers->keys())->contains($key);
         });
 
         //q1SizeGraph
@@ -182,37 +185,37 @@ class ItalyClass
             '#c6dd64',
         ];
 
-        $q1GraphSizeValues = collect($sizeGraphReference['q1'][$size])->mapWithKeys(function($item){
+        $q1GraphSizeValues = collect($sizeGraphReference['q1'][$size])->mapWithKeys(function ($item) {
             return [$item['label'] => $item['value']];
         })->toArray();
         asort($q1GraphSizeValues);
-        if($q1SizeAnswers->count()){
-            $q1GraphSizeUserShapes = collect($q1GraphSizeValues)->filter(function($item, $key) use($q1Sizelabels){
+        if ($q1SizeAnswers->count()) {
+            $q1GraphSizeUserShapes = collect($q1GraphSizeValues)->filter(function ($item, $key) use ($q1Sizelabels) {
                 return $q1Sizelabels->contains($key);
-            })->map(function($item, $key) use($q1GraphSizeValues){
+            })->map(function ($item, $key) use ($q1GraphSizeValues) {
                 return [
                     [
                         'circle',
                         'cx' => 'g-1.5',
-                        'cy' => 'g'.(collect($q1GraphSizeValues)->keys()->search($key)+0.5),
+                        'cy' => 'g'.(collect($q1GraphSizeValues)->keys()->search($key) + 0.5),
                         'r' => 10,
                         'stroke' => '#FFF',
                         'stroke-width' => 2,
                         'depth' => 'above',
-                        'fill' => '#842573'
-                    ]
+                        'fill' => '#842573',
+                    ],
                 ];
             });
             $graphSettings['shape'] = $q1GraphSizeUserShapes->flatten(1)->values()->toArray();
-        }else{
+        } else {
             $graphSettings['shape'] = null;
         }
-        $graphSettings['axis_text_callback_y'] = function($value){
+        $graphSettings['axis_text_callback_y'] = function ($value) {
             return $value.'%';
         };
         $graphSettings['label_h'] = 'average survey answers';
 
-        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q1GraphSizeValues)->count()*30+20, $graphSettings);
+        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q1GraphSizeValues)->count() * 30 + 20, $graphSettings);
         $graph->colours($colours);
 
         $graph->values($q1GraphSizeValues);
@@ -240,9 +243,9 @@ class ItalyClass
         </div>";
 
         //Size band
-        $q1Sizeheader = "";
+        $q1Sizeheader = '';
         //$q1Sizeheader .= "You selected {$q1SizeAnswers->count()} implementation areas in the {$sizeKeys[$size]} sizeband: {$q1Sizelabels->implodeLast(', ',', and ')} <br><br>";
-        $q1Sizebody = "";
+        $q1Sizebody = '';
         /*$q1Sizelabels->each(function($item, $key) use(&$q1Sizebody, $size, $sizeKeys, $sizeReference, $genericReference){
             if($sizeReference['q1'][$size][$key]<4){
                 $q1Sizebody .= "<strong>{$item}</strong> is among the Top 3 implementation areas and is ranked as  <strong>{$sizeReference['q1'][$size][$key]}</strong>. This shows your investment choices align with most organisations in {$sizeKeys[$size]} size band, and a suitable area for investment in Big Data Solutions.<br>";
@@ -262,28 +265,28 @@ class ItalyClass
                 In case you did not provide any answer and/ or answered “Don’t know”, your answers (dots) are not displayed in the chart.
             </p>
         ";
-        $question1Size = $q1Sizeheader.$q1Sizebody."<br>";
+        $question1Size = $q1Sizeheader.$q1Sizebody.'<br>';
 
         //question1Industry
         $q1Industryset = $industryReference['q1'][$industry];
         $q1IndustryAnswers = collect($this->answer)->only(array_keys($q1Industryset))->filter();
-        $q1Industrylabels = collect($this->singleQuestions)->filter(function($item, $key) use($q1IndustryAnswers){
-            return collect($q1IndustryAnswers->keys())->contains($key);                
+        $q1Industrylabels = collect($this->singleQuestions)->filter(function ($item, $key) use ($q1IndustryAnswers) {
+            return collect($q1IndustryAnswers->keys())->contains($key);
         });
 
         //q1IndustryGraph
         $colours = [
             '#2279BC',
         ];
-        $q1GraphIndustryValues = collect($industryGraphReference['q1'][$industry])->mapWithKeys(function($item){
+        $q1GraphIndustryValues = collect($industryGraphReference['q1'][$industry])->mapWithKeys(function ($item) {
             return [$item['label'] => $item['value']];
         })->toArray();
         asort($q1GraphIndustryValues);
 
-        if($q1IndustryAnswers->count()){
-            $graphIndustryUserShapes = collect($q1GraphIndustryValues)->filter(function($item, $key) use($q1Industrylabels){
+        if ($q1IndustryAnswers->count()) {
+            $graphIndustryUserShapes = collect($q1GraphIndustryValues)->filter(function ($item, $key) use ($q1Industrylabels) {
                 return $q1Industrylabels->contains($key);
-            })->map(function($item, $key) use($q1GraphIndustryValues){
+            })->map(function ($item, $key) use ($q1GraphIndustryValues) {
                 return [
                     /*[
                         'line',
@@ -298,21 +301,21 @@ class ItalyClass
                     [
                         'circle',
                         'cx' => 'g-2', //'g'.$item
-                        'cy' => 'g'.(collect($q1GraphIndustryValues)->keys()->search($key)+0.5),
+                        'cy' => 'g'.(collect($q1GraphIndustryValues)->keys()->search($key) + 0.5),
                         'r' => 10,
                         'stroke' => '#FFF',
                         'stroke-width' => 2,
                         'depth' => 'above',
-                        'fill' => '#e8ae38'
-                    ]
+                        'fill' => '#e8ae38',
+                    ],
                 ];
             });
             $graphSettings['shape'] = $graphIndustryUserShapes->flatten(1)->values()->toArray();
-        }else{
+        } else {
             $graphSettings['shape'] = null;
         }
-            
-        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q1GraphIndustryValues)->count()*30+20, $graphSettings);
+
+        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q1GraphIndustryValues)->count() * 30 + 20, $graphSettings);
         $graph->colours($colours);
 
         $graph->values($q1GraphIndustryValues);
@@ -340,9 +343,9 @@ class ItalyClass
         </div>";
 
         //Industry
-        $q1industryHeader = "";
+        $q1industryHeader = '';
         //$q1industryHeader .= "You selected {$q1IndustryAnswers->count()} implementation areas in {$industryKeys[$industry]}: {$q1Industrylabels->implodeLast(', ',', and ')}<br><br>";
-        $q1IndustryBody = "";
+        $q1IndustryBody = '';
         /*$q1Industrylabels->each(function($item, $key) use(&$q1IndustryBody, $industry, $industryKeys, $industryReference, $genericReference){
             if($industryReference['q1'][$industry][$key]<4){
                 $q1IndustryBody .= "<strong>{$item}</strong> is among the Top 3 implementation areas and is ranked as  <strong>{$industryReference['q1'][$industry][$key]}</strong>. This shows your investment choices align with most organisations in {$industryKeys[$industry]}, and a suitable area for investment in Big Data Solutions.<br>";
@@ -361,7 +364,7 @@ class ItalyClass
                 The chart compares the average survey answers of your peers to your answers (orange dots).
             </p>
         ";
-        $question1Industry = $q1industryHeader.$q1IndustryBody."<br>";
+        $question1Industry = $q1industryHeader.$q1IndustryBody.'<br>';
 
         $question1 = $q1question.$q1intro.$q1SizeGraph.$question1Size.$q1IndustryGraph.$question1Industry;
 
@@ -373,24 +376,24 @@ class ItalyClass
 
         $q2Sizeset = $sizeReference['q2'][$size];
         $q2SizeAnswers = collect($this->answer)->only(array_keys($q2Sizeset))->filter();
-        $q2Sizelabels = collect($this->singleQuestions)->filter(function($item, $key) use($q2SizeAnswers){
-            return collect($q2SizeAnswers->keys())->contains($key);                
+        $q2Sizelabels = collect($this->singleQuestions)->filter(function ($item, $key) use ($q2SizeAnswers) {
+            return collect($q2SizeAnswers->keys())->contains($key);
         });
 
         //q2SizeGraph
         $colours = [
             '#c6dd64',
         ];
-        $q2GraphSizeValues = collect($sizeGraphReference['q2'][$size])->mapWithKeys(function($item){
-            return [$item['label'] => $item['value']*100];
+        $q2GraphSizeValues = collect($sizeGraphReference['q2'][$size])->mapWithKeys(function ($item) {
+            return [$item['label'] => $item['value'] * 100];
         })->toArray();
 
         asort($q2GraphSizeValues);
 
-        if($q2SizeAnswers->count()){
-            $q2GraphSizeUserShapes = collect($q2GraphSizeValues)->filter(function($item, $key) use($q2Sizelabels){
+        if ($q2SizeAnswers->count()) {
+            $q2GraphSizeUserShapes = collect($q2GraphSizeValues)->filter(function ($item, $key) use ($q2Sizelabels) {
                 return $q2Sizelabels->contains($key);
-            })->map(function($item, $key) use($q2GraphSizeValues){
+            })->map(function ($item, $key) use ($q2GraphSizeValues) {
                 return [
                     /*[
                         'line',
@@ -405,24 +408,24 @@ class ItalyClass
                     [
                         'circle',
                         'cx' => 'g-1.5',
-                        'cy' => 'g'.(collect($q2GraphSizeValues)->keys()->search($key)+0.5),
+                        'cy' => 'g'.(collect($q2GraphSizeValues)->keys()->search($key) + 0.5),
                         'r' => 10,
                         'stroke' => '#FFF',
                         'stroke-width' => 2,
                         'depth' => 'above',
-                        'fill' => '#842573'
-                    ]
+                        'fill' => '#842573',
+                    ],
                 ];
             });
             $graphSettings['shape'] = $q2GraphSizeUserShapes->flatten(1)->values()->toArray();
-        }else{
+        } else {
             $graphSettings['shape'] = null;
         }
-            
-        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q2GraphSizeValues)->count()*35+20, $graphSettings);
+
+        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q2GraphSizeValues)->count() * 35 + 20, $graphSettings);
         $graph->colours($colours);
 
-        $graph->values(collect($q2GraphSizeValues)->mapWithKeys(function($item, $key){
+        $graph->values(collect($q2GraphSizeValues)->mapWithKeys(function ($item, $key) {
             return [wordwrap($key, 35, "\n", false) => $item];
         })->toArray());
 
@@ -448,10 +451,10 @@ class ItalyClass
             </div>
         </div>";
 
-        $q2Sizeheader = "";
+        $q2Sizeheader = '';
         //$q2Sizeheader .= "You selected {$q2SizeAnswers->count()} implementation areas in {$sizeKeys[$size]}: {$q2Sizelabels->implodeLast(', ',', and ')}<br><br>";
 
-        $q2Sizebody = "";
+        $q2Sizebody = '';
         /*$q2Sizelabels->each(function($item, $key) use(&$q2Sizebody, $size, $sizeKeys, $sizeReference, $genericReference){
             if($sizeReference['q2'][$size][$key]<4){
                 $q2Sizebody .= "<strong>{$item}</strong>&nbsp; is among the Top 3 implementation areas and is ranked as <strong>{$sizeReference['q2'][$size][$key]}</strong>. This shows your investment choices align with most organisations in {$sizeKeys[$size]}, and a suitable area for investment in Big Data Solutions.<br>";
@@ -471,28 +474,28 @@ class ItalyClass
                 In case you did not provide any answer and/ or answered “Don’t know”, your answers (dots) are not displayed in the chart.
             </p>
         ";
-        $questionSize2 = $q2Sizeheader.$q2Sizebody."<br>";
+        $questionSize2 = $q2Sizeheader.$q2Sizebody.'<br>';
 
         $q2Industryset = $industryReference['q2'][$industry];
         $q2IndustryAnswers = collect($this->answer)->only(array_keys($q2Industryset))->filter();
-        $q2Industrylabels = collect($this->singleQuestions)->filter(function($item, $key) use($q2IndustryAnswers){
-            return collect($q2IndustryAnswers->keys())->contains($key);                
+        $q2Industrylabels = collect($this->singleQuestions)->filter(function ($item, $key) use ($q2IndustryAnswers) {
+            return collect($q2IndustryAnswers->keys())->contains($key);
         });
 
         //q2IndustryGraph
         $colours = [
             '#2279BC',
         ];
-        $q2GraphIndustryValues = collect($industryGraphReference['q2'][$industry])->mapWithKeys(function($item){
-            return [$item['label'] => $item['value']*100];
+        $q2GraphIndustryValues = collect($industryGraphReference['q2'][$industry])->mapWithKeys(function ($item) {
+            return [$item['label'] => $item['value'] * 100];
         })->toArray();
 
         asort($q2GraphIndustryValues);
 
-        if($q2IndustryAnswers->count()){
-            $q2GraphIndustryUserShapes = collect($q2GraphIndustryValues)->filter(function($item, $key) use($q2Industrylabels){
+        if ($q2IndustryAnswers->count()) {
+            $q2GraphIndustryUserShapes = collect($q2GraphIndustryValues)->filter(function ($item, $key) use ($q2Industrylabels) {
                 return $q2Industrylabels->contains($key);
-            })->map(function($item, $key) use($q2GraphIndustryValues){
+            })->map(function ($item, $key) use ($q2GraphIndustryValues) {
                 return [
                     /*[
                         'line',
@@ -507,23 +510,23 @@ class ItalyClass
                     [
                         'circle',
                         'cx' => 'g-2',
-                        'cy' => 'g'.(collect($q2GraphIndustryValues)->keys()->search($key)+0.5),
+                        'cy' => 'g'.(collect($q2GraphIndustryValues)->keys()->search($key) + 0.5),
                         'r' => 10,
                         'stroke' => '#FFF',
                         'stroke-width' => 2,
                         'depth' => 'above',
-                        'fill' => '#e8ae38'
-                    ]
+                        'fill' => '#e8ae38',
+                    ],
                 ];
             });
             $graphSettings['shape'] = $q2GraphIndustryUserShapes->flatten(1)->values()->toArray();
-        }else{
+        } else {
             $graphSettings['shape'] = null;
         }
-        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q2GraphIndustryValues)->count()*35+20, $graphSettings);
+        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q2GraphIndustryValues)->count() * 35 + 20, $graphSettings);
         $graph->colours($colours);
 
-        $graph->values(collect($q2GraphIndustryValues)->mapWithKeys(function($item, $key){
+        $graph->values(collect($q2GraphIndustryValues)->mapWithKeys(function ($item, $key) {
             return [wordwrap($key, 35, "\n", false) => $item];
         })->toArray());
 
@@ -549,10 +552,10 @@ class ItalyClass
             </div>
         </div>";
 
-        $q2Industryheader = "";
+        $q2Industryheader = '';
         //$q2Industryheader .= "You selected {$q2IndustryAnswers->count()} implementation areas in {$industryKeys[$industry]}: {$q2Industrylabels->implodeLast(', ',', and ')}<br><br>";
 
-        $q2Industrybody = "";
+        $q2Industrybody = '';
         /*$q2Industrylabels->each(function($item, $key) use(&$q2Industrybody, $industry, $industryKeys, $industryReference, $genericReference){
             if($industryReference['q2'][$industry][$key]<4){
                 $q2Industrybody .= "<strong>{$item}</strong>&nbsp; is among the Top 3 implementation areas and is ranked as <strong>{$industryReference['q2'][$industry][$key]}</strong>. This shows your investment choices align with most organisations in {$industryKeys[$industry]}, and a suitable area for investment in Big Data Solutions.<br>";
@@ -574,7 +577,7 @@ class ItalyClass
             </p>
         ";
 
-        $questionIndustry2 = $q2Industryheader.$q2Industrybody."<br>";
+        $questionIndustry2 = $q2Industryheader.$q2Industrybody.'<br>';
 
         $question2 = $q2question.$q2intro.$q2SizeGraph.$questionSize2.$q2IndustryGraph.$questionIndustry2;
 
@@ -590,28 +593,28 @@ class ItalyClass
         $q4SizeAnswers = collect($this->answer)->only(array_keys($q4SizeSet))->filter();
         $q4SizeAnswersSort = $q4SizeAnswers->sort()->reverse()->keys();
         $q4SizeAnswersRank = $this->rankArray($q4SizeAnswers->toArray());
-        $q4SizeLabels = collect($this->singleQuestions)->filter(function($item, $key) use($q4SizeAnswers){
-            return collect($q4SizeAnswers->keys())->contains($key);                
+        $q4SizeLabels = collect($this->singleQuestions)->filter(function ($item, $key) use ($q4SizeAnswers) {
+            return collect($q4SizeAnswers->keys())->contains($key);
         });
 
-        $q4Sizeheader = "";
+        $q4Sizeheader = '';
         //$q4Sizeheader .= "You evaluated {$q4SizeAnswers->count()} implementation areas in the {$sizeKeys[$size]} size band: {$q4SizeLabels->implodeLast(', ',', and ')}<br><br>";
 
         //q4SizeGraph
         $colours = [
             '#c6dd64',
         ];
-        $q4GraphSizeValues = collect($sizeGraphReference['q4'][$size])->mapWithKeys(function($item){
+        $q4GraphSizeValues = collect($sizeGraphReference['q4'][$size])->mapWithKeys(function ($item) {
             return [$item['label'] => $item['value']];
         })->toArray();
 
         asort($q4GraphSizeValues);
 
-        $q4SizeAnswersLabels = collect($sizeGraphReference['q4'][$size])->mapWithKeys(function($item, $key) use($q4SizeAnswers){
+        $q4SizeAnswersLabels = collect($sizeGraphReference['q4'][$size])->mapWithKeys(function ($item, $key) use ($q4SizeAnswers) {
             return [$item['label'] => $q4SizeAnswers->get($key)];
         });
 
-        $q4GraphSizeUserShapes = collect($q4GraphSizeValues)->map(function($item, $key) use($q4SizeAnswersLabels, $q4GraphSizeValues){
+        $q4GraphSizeUserShapes = collect($q4GraphSizeValues)->map(function ($item, $key) use ($q4SizeAnswersLabels, $q4GraphSizeValues) {
             return [
                 /*[
                     'line',
@@ -626,12 +629,12 @@ class ItalyClass
                 [
                     'circle',
                     'cx' => 'g'.($q4SizeAnswersLabels->get($key)),
-                    'cy' => 'g'.(collect($q4GraphSizeValues)->keys()->search($key)+0.5),
+                    'cy' => 'g'.(collect($q4GraphSizeValues)->keys()->search($key) + 0.5),
                     'r' => 10,
                     'stroke' => '#FFF',
                     'stroke-width' => 2,
                     'depth' => 'above',
-                    'fill' => '#842573'
+                    'fill' => '#842573',
                 ],
             ];
         });
@@ -640,17 +643,27 @@ class ItalyClass
         $graphSettings['grid_division_h'] = 1;
         $graphSettings['axis_max_h'] = 5;
         $graphSettings['axis_text_space_v'] = null;
-        $graphSettings['axis_text_callback_y'] = function($value){
-            if($value == 1) return "Not at all\n important";
-            if($value == 2) return "Slightly\n important";
-            if($value == 3) return "Moderately\n important";
-            if($value == 4) return "Very\n important";
-            if($value == 5) return "Extremely\n important";
+        $graphSettings['axis_text_callback_y'] = function ($value) {
+            if ($value == 1) {
+                return "Not at all\n important";
+            }
+            if ($value == 2) {
+                return "Slightly\n important";
+            }
+            if ($value == 3) {
+                return "Moderately\n important";
+            }
+            if ($value == 4) {
+                return "Very\n important";
+            }
+            if ($value == 5) {
+                return "Extremely\n important";
+            }
         };
-        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q4GraphSizeValues)->count()*35+20, $graphSettings);
+        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q4GraphSizeValues)->count() * 35 + 20, $graphSettings);
         $graph->colours($colours);
 
-        $graph->values(collect($q4GraphSizeValues)->mapWithKeys(function($item, $key){
+        $graph->values(collect($q4GraphSizeValues)->mapWithKeys(function ($item, $key) {
             return [wordwrap($key, 35, "\n", false) => $item];
         })->toArray());
 
@@ -676,7 +689,7 @@ class ItalyClass
             </div>
         </div>";
 
-        $q4Sizebody = "";
+        $q4Sizebody = '';
         /*$q4SizeLabels->each(function($item, $key) use(&$q4Sizebody, $size, $sizeKeys, $sizeReference, $genericReference, $q4SizeAnswers, $q4SizeAnswersSort, $q4SizeAnswersRank){
             $nth = $q4SizeAnswersRank[$key] == 1 ? 'most' : $this->ordinal($q4SizeAnswersRank[$key])." most";
             $q4Sizebody .= "<strong>{$item}</strong>  is the <strong>{$nth}</strong> important of your Key Performance Indicators and";
@@ -696,35 +709,34 @@ class ItalyClass
             </p>
         ";
 
-        $questionSize4 = $q4Sizeheader.$q4Sizebody."<br>";
+        $questionSize4 = $q4Sizeheader.$q4Sizebody.'<br>';
 
         $q4IndustrySet = $industryReference['q4'][$industry];
         $q4IndustryAnswers = collect($this->answer)->only(array_keys($q4IndustrySet))->filter();
         $q4IndustryAnswersSort = $q4IndustryAnswers->sort()->reverse()->keys();
         $q4IndustryAnswersRank = $this->rankArray($q4IndustryAnswers->toArray());
-        $q4IndustryLabels = collect($this->singleQuestions)->filter(function($item, $key) use($q4IndustryAnswers){
-            return collect($q4IndustryAnswers->keys())->contains($key);                
+        $q4IndustryLabels = collect($this->singleQuestions)->filter(function ($item, $key) use ($q4IndustryAnswers) {
+            return collect($q4IndustryAnswers->keys())->contains($key);
         });
 
-        $q4Industryheader = "";
+        $q4Industryheader = '';
         //$q4Industryheader .= "You selected {$q4IndustryAnswers->count()} implementation areas in {$industryKeys[$industry]}: {$q4IndustryLabels->implodeLast(', ',', and ')}<br><br>";
 
         //q4IndustryGraph
         $colours = [
             '#287BB9',
         ];
-        $q4GraphIndustryValues = collect($industryGraphReference['q4'][$industry])->mapWithKeys(function($item){
+        $q4GraphIndustryValues = collect($industryGraphReference['q4'][$industry])->mapWithKeys(function ($item) {
             return [$item['label'] => $item['value']];
         })->toArray();
 
-
         asort($q4GraphIndustryValues);
 
-        $q4IndustryAnswersLabels = collect($industryGraphReference['q4'][$industry])->mapWithKeys(function($item, $key) use($q4IndustryAnswers){
+        $q4IndustryAnswersLabels = collect($industryGraphReference['q4'][$industry])->mapWithKeys(function ($item, $key) use ($q4IndustryAnswers) {
             return [$item['label'] => $q4IndustryAnswers->get($key)];
         });
 
-        $q4GraphIndustryUserShapes = collect($q4GraphIndustryValues)->map(function($item, $key) use($q4IndustryAnswersLabels, $q4GraphIndustryValues){
+        $q4GraphIndustryUserShapes = collect($q4GraphIndustryValues)->map(function ($item, $key) use ($q4IndustryAnswersLabels, $q4GraphIndustryValues) {
             return [
                 /*[
                     'line',
@@ -739,12 +751,12 @@ class ItalyClass
                 [
                     'circle',
                     'cx' => 'g'.($q4IndustryAnswersLabels->get($key)),
-                    'cy' => 'g'.(collect($q4GraphIndustryValues)->keys()->search($key)+0.5),
+                    'cy' => 'g'.(collect($q4GraphIndustryValues)->keys()->search($key) + 0.5),
                     'r' => 10,
                     'stroke' => '#FFF',
                     'stroke-width' => 2,
                     'depth' => 'above',
-                    'fill' => '#E6AD44'
+                    'fill' => '#E6AD44',
                 ],
             ];
         });
@@ -753,10 +765,10 @@ class ItalyClass
         $graphSettings['grid_division_h'] = 1;
         $graphSettings['axis_max_h'] = 5;
 
-        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q4GraphIndustryValues)->count()*35+20, $graphSettings);
+        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q4GraphIndustryValues)->count() * 35 + 20, $graphSettings);
         $graph->colours($colours);
 
-        $graph->values(collect($q4GraphIndustryValues)->mapWithKeys(function($item, $key){
+        $graph->values(collect($q4GraphIndustryValues)->mapWithKeys(function ($item, $key) {
             return [wordwrap($key, 35, "\n", false) => $item];
         })->toArray());
 
@@ -782,7 +794,7 @@ class ItalyClass
             </div>
         </div>";
 
-        $q4Industrybody = "";
+        $q4Industrybody = '';
         /*$q4IndustryLabels->each(function($item, $key) use(&$q4Industrybody, $industry, $industryKeys, $industryReference, $genericReference, $q4IndustryAnswers, $q4IndustryAnswersSort, $q4IndustryAnswersRank){
             $nth = $q4IndustryAnswersRank[$key] == 1 ? 'most' : $this->ordinal($q4IndustryAnswersRank[$key])." most";
             $q4Industrybody .= "<strong>{$item}</strong>  is the <strong>{$nth}</strong> important of your Key Performance Indicators and";
@@ -802,7 +814,7 @@ class ItalyClass
             </p>
         ";
 
-        $questionIndustry4 = $q4Industryheader.$q4Industrybody."<br>";
+        $questionIndustry4 = $q4Industryheader.$q4Industrybody.'<br>';
 
         $question4 = $q4question.$q4intro.$q4SizeGraph.$questionSize4.$q4IndustryGraph.$questionIndustry4;
 
@@ -861,7 +873,7 @@ class ItalyClass
         </div>";
 
         $q5Sizebody = "";
-        
+
         if($q5Answer == 1){
             $q5Sizebody .= "Your expectations from using Big data solutions are considerably below that expected for organisations across all size bands, and also for organisations in the ";
         }
@@ -935,7 +947,7 @@ class ItalyClass
         </div>";
 
         $q5Industrybody = "";
-        
+
         if($q5Answer == 1){
             $q5Industrybody .= "Your expectations from using Big data solutions are considerably below that expected for organisations across all industries, and also for organisations in ";
         }
@@ -963,7 +975,7 @@ class ItalyClass
         $q5intro = '
         	<strong class="italic font-light">Overview</strong>
         	<p class="mb-2">
-        		This question positions your expectation of business benefits against those for others in your industry and size band. It is possible that your expectations are significantly lower or higher than your peers, and the responses of your peers can align your expectations better.  
+        		This question positions your expectation of business benefits against those for others in your industry and size band. It is possible that your expectations are significantly lower or higher than your peers, and the responses of your peers can align your expectations better.
         	</p>
         ';
         $question5 = $q5question.$q5intro.$questionSize5.$questionIndustry5;*/
@@ -977,31 +989,30 @@ class ItalyClass
         $q6aset = $industryReference['q6a'][$industry];
         $q6aAnswers = collect($this->answer)->only(array_keys($q6aset))->filter();
         $q6aAnswersRank = $this->rankArray($q6aAnswers->toArray());
-        $q6alabels = collect($this->singleQuestions)->filter(function($item, $key) use($q6aAnswers){
-            return collect($q6aAnswers->keys())->contains($key);                
+        $q6alabels = collect($this->singleQuestions)->filter(function ($item, $key) use ($q6aAnswers) {
+            return collect($q6aAnswers->keys())->contains($key);
         });
 
         //$q6aquestion = $singleQuestionsText->get($q6alabels->keys()->first());
-        $q6arankfirst = str_replace(" by", "", $q6alabels->get(collect(array_keys($q6aAnswersRank))->first()));
-        $q6aranklast = str_replace(" by", "", $q6alabels->get(collect(array_keys($q6aAnswersRank))->last()));
+        $q6arankfirst = str_replace(' by', '', $q6alabels->get(collect(array_keys($q6aAnswersRank))->first()));
+        $q6aranklast = str_replace(' by', '', $q6alabels->get(collect(array_keys($q6aAnswersRank))->last()));
 
         //q6aSizeGraph
         $colours = [
             '#c6dd64',
         ];
-        $q6GraphSizeValues = collect($sizeGraphReference['q6a'][$size])->mapWithKeys(function($item){
+        $q6GraphSizeValues = collect($sizeGraphReference['q6a'][$size])->mapWithKeys(function ($item) {
             return [$item['label'] => $item['value']];
         })->toArray();
 
-
         asort($q6GraphSizeValues);
 
-        $q6aSizeAnswersLabels = collect($sizeGraphReference['q6a'][$size])->mapWithKeys(function($item, $key) use($q6aAnswers){
+        $q6aSizeAnswersLabels = collect($sizeGraphReference['q6a'][$size])->mapWithKeys(function ($item, $key) use ($q6aAnswers) {
             return [$item['label'] => $q6aAnswers->get($key)];
         });
 
-        if($q6aAnswers->count()){
-            $q6GraphSizeUserShapes = collect($q6GraphSizeValues)->map(function($item, $key) use($q6aSizeAnswersLabels, $q6GraphSizeValues){
+        if ($q6aAnswers->count()) {
+            $q6GraphSizeUserShapes = collect($q6GraphSizeValues)->map(function ($item, $key) use ($q6aSizeAnswersLabels, $q6GraphSizeValues) {
                 return [
                     /*[
                         'line',
@@ -1016,18 +1027,18 @@ class ItalyClass
                     [
                         'circle',
                         'cx' => 'g'.($q6aSizeAnswersLabels->get($key)),
-                        'cy' => 'g'.(collect($q6GraphSizeValues)->keys()->search($key)+0.5),
+                        'cy' => 'g'.(collect($q6GraphSizeValues)->keys()->search($key) + 0.5),
                         'r' => 10,
                         'stroke' => '#FFF',
                         'stroke-width' => 2,
                         'depth' => 'above',
-                        'fill' => '#842573'
+                        'fill' => '#842573',
                     ],
                 ];
             });
 
-            $graphSettings['shape'] = $q6GraphSizeUserShapes->flatten(1)->toArray();            
-        }else{
+            $graphSettings['shape'] = $q6GraphSizeUserShapes->flatten(1)->toArray();
+        } else {
             $graphSettings['shape'] = null;
         }
         // $graphSettings['axis_text_callback_y'] = function($value){
@@ -1035,14 +1046,14 @@ class ItalyClass
         // };
         $graphSettings['grid_division_h'] = 3;
         $graphSettings['axis_max_h'] = 20;
-        $graphSettings['axis_text_callback_y'] = function($value){
+        $graphSettings['axis_text_callback_y'] = function ($value) {
             return $value.'%';
         };
 
-        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q6GraphSizeValues)->count()*40+20, $graphSettings);
+        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q6GraphSizeValues)->count() * 40 + 20, $graphSettings);
         $graph->colours($colours);
 
-        $graph->values(collect($q6GraphSizeValues)->mapWithKeys(function($item, $key){
+        $graph->values(collect($q6GraphSizeValues)->mapWithKeys(function ($item, $key) {
             return [wordwrap($key, 35, "\n", false) => $item];
         })->toArray());
 
@@ -1069,10 +1080,10 @@ class ItalyClass
         </div>";
 
         //q6Size
-        $q6aSizeaheader = "";
+        $q6aSizeaheader = '';
         //$q6aSizeaheader .= "You expect your biggest gain in <strong>{$q6arankfirst}</strong> and your smallest gain in  <strong>{$q6aranklast}</strong> <br>";
 
-        $q6aSizebody = "";
+        $q6aSizebody = '';
         /*$q6alabels->each(function($item, $key) use(&$q6aSizebody, $size, $sizeKeys, $sizeReference, $genericReference, $q6aAnswers){
             $label = trim(str_replace(['Increased','Reduced','by'], ['','',''], $item));
             $q6aSizebody .= "For {$label} ";
@@ -1107,19 +1118,18 @@ class ItalyClass
         $colours = [
             '#287BB9',
         ];
-        $q6GraphIndustryValues = collect($industryGraphReference['q6a'][$industry])->mapWithKeys(function($item){
+        $q6GraphIndustryValues = collect($industryGraphReference['q6a'][$industry])->mapWithKeys(function ($item) {
             return [$item['label'] => $item['value']];
         })->toArray();
 
-
         asort($q6GraphIndustryValues);
 
-        $q6aIndustryAnswersLabels = collect($industryGraphReference['q6a'][$industry])->mapWithKeys(function($item, $key) use($q6aAnswers){
+        $q6aIndustryAnswersLabels = collect($industryGraphReference['q6a'][$industry])->mapWithKeys(function ($item, $key) use ($q6aAnswers) {
             return [$item['label'] => $q6aAnswers->get($key)];
         });
 
-        if($q6aAnswers->count()){
-            $q6GraphIndustryUserShapes = collect($q6GraphIndustryValues)->map(function($item, $key) use($q6aIndustryAnswersLabels, $q6GraphIndustryValues){
+        if ($q6aAnswers->count()) {
+            $q6GraphIndustryUserShapes = collect($q6GraphIndustryValues)->map(function ($item, $key) use ($q6aIndustryAnswersLabels, $q6GraphIndustryValues) {
                 return [
                     /*[
                         'line',
@@ -1134,29 +1144,28 @@ class ItalyClass
                     [
                         'circle',
                         'cx' => 'g'.($q6aIndustryAnswersLabels->get($key)),
-                        'cy' => 'g'.(collect($q6GraphIndustryValues)->keys()->search($key)+0.5),
+                        'cy' => 'g'.(collect($q6GraphIndustryValues)->keys()->search($key) + 0.5),
                         'r' => 10,
                         'stroke' => '#FFF',
                         'stroke-width' => 2,
                         'depth' => 'above',
-                        'fill' => '#E6AD44'
+                        'fill' => '#E6AD44',
                     ],
                 ];
             });
 
             $graphSettings['shape'] = $q6GraphIndustryUserShapes->flatten(1)->toArray();
-        }else{
+        } else {
             $graphSettings['shape'] = null;
         }
 
-        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q6GraphIndustryValues)->count()*40+20, $graphSettings);
+        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q6GraphIndustryValues)->count() * 40 + 20, $graphSettings);
         $graph->colours($colours);
 
-        $graph->values(collect($q6GraphIndustryValues)->mapWithKeys(function($item, $key){
+        $graph->values(collect($q6GraphIndustryValues)->mapWithKeys(function ($item, $key) {
             return [wordwrap($key, 35, "\n", false) => $item];
         })->toArray());
 
-        
         $q6aIndustryGraph = "
         <div class='block my-2 mt-8'>
         	<span class='figure'>Specific industry response: Actual benefits realised or expected</span>
@@ -1179,10 +1188,10 @@ class ItalyClass
         </div>";
 
         //q6aIndustry
-        $q6aIndustryaheader = "";
+        $q6aIndustryaheader = '';
         //$q6aIndustryaheader = ."You expect your biggest gain in <strong>{$q6arankfirst}</strong> and your smallest gain in  <strong>{$q6aranklast}</strong> <br>";
 
-        $q6aIndustrybody = "";
+        $q6aIndustrybody = '';
         /*$q6alabels->each(function($item, $key) use(&$q6aIndustrybody, $industry, $industryKeys, $industryReference, $genericReference, $q6aAnswers){
             $label = trim(str_replace(['Increased','Reduced','by'], ['','',''], $item));
             $q6aIndustrybody .= "For {$label} ";
@@ -1222,8 +1231,8 @@ class ItalyClass
 
         $q7set = $industryReference['q7'][$industry];
         $q7Answers = collect($this->answer)->only(array_keys($q7set))->filter();
-        $q7labels = collect($this->singleQuestions)->filter(function($item, $key) use($q7Answers){
-            return collect($q7Answers->keys())->contains($key);                
+        $q7labels = collect($this->singleQuestions)->filter(function ($item, $key) use ($q7Answers) {
+            return collect($q7Answers->keys())->contains($key);
         });
 
         //$q7question = $singleQuestionsText->get($q7labels->keys()->first());
@@ -1232,18 +1241,17 @@ class ItalyClass
         $colours = [
             '#c6dd64',
         ];
-        $q7GraphSizeValues = collect($sizeGraphReference['q7'][$size])->mapWithKeys(function($item){
+        $q7GraphSizeValues = collect($sizeGraphReference['q7'][$size])->mapWithKeys(function ($item) {
             return [$item['label'] => $item['value']];
         })->toArray();
 
-
         asort($q7GraphSizeValues);
 
-        $q7SizeAnswersLabels = collect($sizeGraphReference['q7'][$size])->mapWithKeys(function($item, $key) use($q7Answers){
+        $q7SizeAnswersLabels = collect($sizeGraphReference['q7'][$size])->mapWithKeys(function ($item, $key) use ($q7Answers) {
             return [$item['label'] => $q7Answers->get($key)];
         });
 
-        $q7GraphSizeUserShapes = collect($q7GraphSizeValues)->map(function($item, $key) use($q7SizeAnswersLabels, $q7GraphSizeValues){
+        $q7GraphSizeUserShapes = collect($q7GraphSizeValues)->map(function ($item, $key) use ($q7SizeAnswersLabels, $q7GraphSizeValues) {
             return [
                 /*[
                     'line',
@@ -1258,32 +1266,44 @@ class ItalyClass
                 [
                     'circle',
                     'cx' => 'g'.($q7SizeAnswersLabels->get($key)),
-                    'cy' => 'g'.(collect($q7GraphSizeValues)->keys()->search($key)+0.5),
+                    'cy' => 'g'.(collect($q7GraphSizeValues)->keys()->search($key) + 0.5),
                     'r' => 10,
                     'stroke' => '#FFF',
                     'stroke-width' => 2,
                     'depth' => 'above',
-                    'fill' => '#842573'
+                    'fill' => '#842573',
                 ],
             ];
         });
 
         $graphSettings['shape'] = $q7GraphSizeUserShapes->flatten(1)->toArray();
-        $graphSettings['axis_text_callback_y'] = function($value){
-            if($value == 0) return "";
-            if($value == 1) return "Decrease";
-            if($value == 2) return "No\n Change";
-            if($value == 3) return "Slight\n Increase";
-            if($value == 4) return "Moderate\n Increase";
-            if($value == 5) return "High\n Increase";
+        $graphSettings['axis_text_callback_y'] = function ($value) {
+            if ($value == 0) {
+                return '';
+            }
+            if ($value == 1) {
+                return 'Decrease';
+            }
+            if ($value == 2) {
+                return "No\n Change";
+            }
+            if ($value == 3) {
+                return "Slight\n Increase";
+            }
+            if ($value == 4) {
+                return "Moderate\n Increase";
+            }
+            if ($value == 5) {
+                return "High\n Increase";
+            }
         };
         $graphSettings['grid_division_h'] = 1;
         $graphSettings['axis_max_h'] = 5;
 
-        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q7GraphSizeValues)->count()*35+20, $graphSettings);
+        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q7GraphSizeValues)->count() * 35 + 20, $graphSettings);
         $graph->colours($colours);
 
-        $graph->values(collect($q7GraphSizeValues)->mapWithKeys(function($item, $key){
+        $graph->values(collect($q7GraphSizeValues)->mapWithKeys(function ($item, $key) {
             return [wordwrap($key, 35, "\n", false) => $item];
         })->toArray());
 
@@ -1309,7 +1329,7 @@ class ItalyClass
             </div>
         </div>";
 
-        $q7Sizebody = "";
+        $q7Sizebody = '';
         /*$q7labels->each(function($item, $key) use(&$q7Sizebody, $size, $sizeKeys, $sizeReference, $genericReference, $q7Answers){
             $q7Sizebody .= "You rated the impact of <strong>{$item}</strong>";
             if($q7Answers->get($key) < $sizeReference['q7'][$size][$key]-1){
@@ -1350,24 +1370,23 @@ class ItalyClass
             </p>
         ";
 
-        $question7Size = $q7SizeGraph.$q7Sizebody."<br>";
+        $question7Size = $q7SizeGraph.$q7Sizebody.'<br>';
 
         //q7IndustryGraph
         $colours = [
             '#287BB9',
         ];
-        $q7GraphIndustryValues = collect($industryGraphReference['q7'][$industry])->mapWithKeys(function($item){
+        $q7GraphIndustryValues = collect($industryGraphReference['q7'][$industry])->mapWithKeys(function ($item) {
             return [$item['label'] => $item['value']];
         })->toArray();
 
-
         asort($q7GraphIndustryValues);
 
-        $q7IndustryAnswersLabels = collect($industryGraphReference['q7'][$industry])->mapWithKeys(function($item, $key) use($q7Answers){
+        $q7IndustryAnswersLabels = collect($industryGraphReference['q7'][$industry])->mapWithKeys(function ($item, $key) use ($q7Answers) {
             return [$item['label'] => $q7Answers->get($key)];
         });
 
-        $q7GraphIndustryUserShapes = collect($q7GraphIndustryValues)->map(function($item, $key) use($q7IndustryAnswersLabels, $q7GraphIndustryValues){
+        $q7GraphIndustryUserShapes = collect($q7GraphIndustryValues)->map(function ($item, $key) use ($q7IndustryAnswersLabels, $q7GraphIndustryValues) {
             return [
                 /*[
                     'line',
@@ -1382,32 +1401,44 @@ class ItalyClass
                 [
                     'circle',
                     'cx' => 'g'.($q7IndustryAnswersLabels->get($key)),
-                    'cy' => 'g'.(collect($q7GraphIndustryValues)->keys()->search($key)+0.5),
+                    'cy' => 'g'.(collect($q7GraphIndustryValues)->keys()->search($key) + 0.5),
                     'r' => 10,
                     'stroke' => '#FFF',
                     'stroke-width' => 2,
                     'depth' => 'above',
-                    'fill' => '#E6AD44'
+                    'fill' => '#E6AD44',
                 ],
             ];
         });
 
         $graphSettings['shape'] = $q7GraphIndustryUserShapes->flatten(1)->toArray();
-        $graphSettings['axis_text_callback_y'] = function($value){
-            if($value == 0) return "";
-            if($value == 1) return "Decrease";
-            if($value == 2) return "No\n Change";
-            if($value == 3) return "Slight\n Increase";
-            if($value == 4) return "Moderate\n Increase";
-            if($value == 5) return "High\n Increase";
+        $graphSettings['axis_text_callback_y'] = function ($value) {
+            if ($value == 0) {
+                return '';
+            }
+            if ($value == 1) {
+                return 'Decrease';
+            }
+            if ($value == 2) {
+                return "No\n Change";
+            }
+            if ($value == 3) {
+                return "Slight\n Increase";
+            }
+            if ($value == 4) {
+                return "Moderate\n Increase";
+            }
+            if ($value == 5) {
+                return "High\n Increase";
+            }
         };
         $graphSettings['grid_division_h'] = 1;
         $graphSettings['axis_max_h'] = 5;
 
-        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q7GraphIndustryValues)->count()*35+20, $graphSettings);
+        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q7GraphIndustryValues)->count() * 35 + 20, $graphSettings);
         $graph->colours($colours);
 
-        $graph->values(collect($q7GraphIndustryValues)->mapWithKeys(function($item, $key){
+        $graph->values(collect($q7GraphIndustryValues)->mapWithKeys(function ($item, $key) {
             return [wordwrap($key, 35, "\n", false) => $item];
         })->toArray());
 
@@ -1433,7 +1464,7 @@ class ItalyClass
             </div>
         </div>";
 
-        $q7Industrybody = "";
+        $q7Industrybody = '';
         /*$q7labels->each(function($item, $key) use(&$q7Industrybody, $industry, $industryKeys, $industryReference, $genericReference, $q7Answers){
             $q7Industrybody .= "You rated the impact of <strong>{$item}</strong>";
             if($q7Answers->get($key) < $industryReference['q7'][$industry][$key]-1){
@@ -1474,19 +1505,18 @@ class ItalyClass
             </p>
         ";
 
-        $question7Industry = $q7IndustryGraph.$q7Industrybody."<br>";
+        $question7Industry = $q7IndustryGraph.$q7Industrybody.'<br>';
 
         $question7 = $q7question.$q7intro.$question7Size.$question7Industry;
 
-
         //question8
-        
+
         /*$q8set = $industryReference['q8'][$industry];
 
         $q8Answers = collect($this->answer)->only(array_keys($q8set))->filter();
 
         $q8labels = collect($this->singleQuestions)->filter(function($item, $key) use($q8Answers){
-            return collect($q8Answers->keys())->contains($key);                
+            return collect($q8Answers->keys())->contains($key);
         });
 
         $q8question = $singleQuestionsText->get($q8labels->keys()->first());
@@ -1914,9 +1944,8 @@ class ItalyClass
         $q9Sizeset = $sizeReference['q9'][$size];
         $q9SizeAnswers = collect($this->answer)->only(array_keys($q9Sizeset))->filter();
 
-
-        $q9SizeAnswerlabels = collect($this->singleQuestions)->filter(function($item, $key) use($q9SizeAnswers){
-            return collect($q9SizeAnswers->keys())->contains($key);                
+        $q9SizeAnswerlabels = collect($this->singleQuestions)->filter(function ($item, $key) use ($q9SizeAnswers) {
+            return collect($q9SizeAnswers->keys())->contains($key);
         });
         // $test = $this->questions->filter(function($item){
         //     return $item["vgroup"] == 'q9';
@@ -1925,47 +1954,47 @@ class ItalyClass
 
         //q9SizeGraph
         $colours = [
-            '#D9E89C','#ACCB32','#7CAF42',
+            '#D9E89C', '#ACCB32', '#7CAF42',
         ];
-        $q9GraphSizeValues = collect($q9SourceData[$size])->mapWithKeys(function($item, $key) use($q9SizeAnswerlabels){
-            return [$key => collect($item)->filter(function($useCases, $useCaseKey) use($q9SizeAnswerlabels){
+        $q9GraphSizeValues = collect($q9SourceData[$size])->mapWithKeys(function ($item, $key) use ($q9SizeAnswerlabels) {
+            return [$key => collect($item)->filter(function ($useCases, $useCaseKey) use ($q9SizeAnswerlabels) {
                 return $q9SizeAnswerlabels->contains($useCaseKey);
             })->toArray()];
         });
 
         //asort($q9GraphSizeValues);
-        $q9SizeAnswerValues = $q9SizeAnswers->mapWithKeys(function($item, $key) use($q9SizeAnswerlabels){
+        $q9SizeAnswerValues = $q9SizeAnswers->mapWithKeys(function ($item, $key) use ($q9SizeAnswerlabels) {
             return [$q9SizeAnswerlabels->get($key) => $item];
         });
 
         $reindex = collect($q9GraphSizeValues->get('Not interested, No Plans'))->keys();
 
-        $q9SizeAnswerValues = $reindex->mapWithKeys(function($item, $key) use($q9SizeAnswerValues){
+        $q9SizeAnswerValues = $reindex->mapWithKeys(function ($item, $key) use ($q9SizeAnswerValues) {
             return [$item => $q9SizeAnswerValues->get($item)];
         });
 
-        $q9GraphSizeUserShapes = $q9SizeAnswerValues->map(function($item, $key) use($q9GraphSizeValues, $q9SizeAnswers, $q9SizeAnswerlabels, $q9AnswerKey, $q9SizeAnswerValues){
+        $q9GraphSizeUserShapes = $q9SizeAnswerValues->map(function ($item, $key) use ($q9GraphSizeValues, $q9SizeAnswers, $q9SizeAnswerlabels, $q9AnswerKey, $q9SizeAnswerValues) {
             $x = 0;
-            if($item>2){
-                $x = $q9GraphSizeValues[$q9AnswerKey[$item]][$key]/2;
+            if ($item > 2) {
+                $x = $q9GraphSizeValues[$q9AnswerKey[$item]][$key] / 2;
             }
-            if($item==2){
-                $x = $q9GraphSizeValues['Not interested, No Plans'][$key] + ($q9GraphSizeValues[$q9AnswerKey[$item]][$key]/2);
+            if ($item == 2) {
+                $x = $q9GraphSizeValues['Not interested, No Plans'][$key] + ($q9GraphSizeValues[$q9AnswerKey[$item]][$key] / 2);
             }
-            if($item==1){
-                $x = $q9GraphSizeValues['Not interested, No Plans'][$key] + $q9GraphSizeValues['Evaluating or Planning'][$key] + ($q9GraphSizeValues[$q9AnswerKey[$item]][$key]/2);
+            if ($item == 1) {
+                $x = $q9GraphSizeValues['Not interested, No Plans'][$key] + $q9GraphSizeValues['Evaluating or Planning'][$key] + ($q9GraphSizeValues[$q9AnswerKey[$item]][$key] / 2);
             }
-            
+
             return [
                 [
                     'circle',
                     'cx' => 'g'.$x,
-                    'cy' => 'g'.($q9SizeAnswerValues->keys()->search($key)).".5",
+                    'cy' => 'g'.($q9SizeAnswerValues->keys()->search($key)).'.5',
                     'r' => 8,
                     'stroke' => '#FFF',
                     'stroke-width' => 2,
                     'depth' => 'above',
-                    'fill' => '#842573'
+                    'fill' => '#842573',
                 ],
             ];
         });
@@ -1983,16 +2012,16 @@ class ItalyClass
         $graphSettings['axis_text_callback_y'] = null;
         $graphSettings['show_data_labels'] = true;
         $graphSettings['show_axis_text_h'] = false;
-        $graphSettings['units_label'] = "%";
-        $graphSettings['axis_text_callback_y'] = function($value){
+        $graphSettings['units_label'] = '%';
+        $graphSettings['axis_text_callback_y'] = function ($value) {
             return $value.'%';
         };
 
-        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q9SizeAnswerValues)->count()*35+20, $graphSettings);
+        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q9SizeAnswerValues)->count() * 35 + 20, $graphSettings);
         $graph->colours($colours);
-        
-        $graph->values($q9GraphSizeValues->mapWithKeys(function($item, $key){
-            return [$key => collect($item)->mapWithKeys(function($itemItem, $keyKey){
+
+        $graph->values($q9GraphSizeValues->mapWithKeys(function ($item, $key) {
+            return [$key => collect($item)->mapWithKeys(function ($itemItem, $keyKey) {
                 return [wordwrap($keyKey, 35, "\n", false) => $itemItem];
             })->toArray()];
         })->toArray());
@@ -2028,25 +2057,25 @@ class ItalyClass
                 </div>
             </div>
         </div>";
-        
+
         //{$q9SizeAnswerlabels->implodeLast(', ',', and ')}
-        $plaEvaUseImp = $q9SizeAnswers->filter(function($item){
+        $plaEvaUseImp = $q9SizeAnswers->filter(function ($item) {
             return $item < 3 && $item > 0;
         });
-        $plaEvaUseImpTopTen = $plaEvaUseImp->filter(function($item,$key) use($sizeReference, $size){
+        $plaEvaUseImpTopTen = $plaEvaUseImp->filter(function ($item, $key) use ($sizeReference, $size) {
             return $sizeReference['q9'][$size][$key] < 11;
         });
 
-        $plaEvaUseImpTopTenLabels = collect($this->singleQuestions)->filter(function($item, $key) use($plaEvaUseImpTopTen){
-            return collect($plaEvaUseImpTopTen->keys())->contains($key);                
+        $plaEvaUseImpTopTenLabels = collect($this->singleQuestions)->filter(function ($item, $key) use ($plaEvaUseImpTopTen) {
+            return collect($plaEvaUseImpTopTen->keys())->contains($key);
         });
 
-        $q9Sizeheader = "";
+        $q9Sizeheader = '';
         //$q9Sizeheader .= "You selected {$plaEvaUseImp->count()} use cases for planning, evaluating, using, or implementing in the {$sizeKeys[$size]} size band. ";
         //$q9Sizeheader.= "Of these, {$plaEvaUseImpTopTen->count()} are in the top 10 use cases adopted in this band:</br>";
         //$q9Sizeheader.= "{$plaEvaUseImpTopTenLabels->values()->implodeLast(', ',', and ')}.</br></br>";
 
-        $q9Sizebody = "";
+        $q9Sizebody = '';
         /*if(count($plaEvaUseImpTopTen)<4){
             $q9Sizebody .= "You have few of your use cases in the top 10 for the {$sizeKeys[$size]} size band. Whilst this is not a problem you might want to review the {$sizeKeys[$size]} size band use case list when considering future Big Data projects.";
         }
@@ -2071,62 +2100,59 @@ class ItalyClass
             </p>
         ";
 
-
         $questionSize9 = $q9Sizeheader.$q9Sizebody;
 
         $q9Industryset = $industryReference['q9'][$industry];
         $q9IndustryAnswers = collect($this->answer)->only(array_keys($q9Industryset))->filter();
 
-
-        $q9IndustryAnswerlabels = collect($this->singleQuestions)->filter(function($item, $key) use($q9IndustryAnswers){
-            return collect($q9IndustryAnswers->keys())->contains($key);                
+        $q9IndustryAnswerlabels = collect($this->singleQuestions)->filter(function ($item, $key) use ($q9IndustryAnswers) {
+            return collect($q9IndustryAnswers->keys())->contains($key);
         });
 
         //q9IndustryGraph
         $colours = [
-            '#B1DAF5','#70B3E2','#4196D2',
+            '#B1DAF5', '#70B3E2', '#4196D2',
         ];
-        $q9GraphIndustryValues = collect($q9SourceData[$industry])->mapWithKeys(function($item, $key) use($q9IndustryAnswerlabels){
-            return [$key => collect($item)->filter(function($useCases, $useCaseKey) use($q9IndustryAnswerlabels){
+        $q9GraphIndustryValues = collect($q9SourceData[$industry])->mapWithKeys(function ($item, $key) use ($q9IndustryAnswerlabels) {
+            return [$key => collect($item)->filter(function ($useCases, $useCaseKey) use ($q9IndustryAnswerlabels) {
                 return $q9IndustryAnswerlabels->contains($useCaseKey);
             })->toArray()];
         });
 
         //asort($q9GraphIndustryValues);
-        
-        $q9IndustryAnswerValues = $q9IndustryAnswers->mapWithKeys(function($item, $key) use($q9IndustryAnswerlabels){
+
+        $q9IndustryAnswerValues = $q9IndustryAnswers->mapWithKeys(function ($item, $key) use ($q9IndustryAnswerlabels) {
             return [$q9IndustryAnswerlabels->get($key) => $item];
         });
 
         $reindex = collect($q9GraphIndustryValues->get('Not interested, No Plans'))->keys();
 
-        $q9IndustryAnswerValues = $reindex->mapWithKeys(function($item, $key) use($q9IndustryAnswerValues){
+        $q9IndustryAnswerValues = $reindex->mapWithKeys(function ($item, $key) use ($q9IndustryAnswerValues) {
             return [$item => $q9IndustryAnswerValues->get($item)];
         });
 
-
-        $q9GraphIndustryUserShapes = $q9IndustryAnswerValues->map(function($item, $key) use($q9GraphIndustryValues, $q9IndustryAnswers, $q9IndustryAnswerlabels, $q9AnswerKey, $q9IndustryAnswerValues){
+        $q9GraphIndustryUserShapes = $q9IndustryAnswerValues->map(function ($item, $key) use ($q9GraphIndustryValues, $q9IndustryAnswers, $q9IndustryAnswerlabels, $q9AnswerKey, $q9IndustryAnswerValues) {
             $x = 0;
-            if($item > 2){
-                $x = $q9GraphIndustryValues[$q9AnswerKey[$item]][$key]/2;
+            if ($item > 2) {
+                $x = $q9GraphIndustryValues[$q9AnswerKey[$item]][$key] / 2;
             }
-            if($item == 2){
-                $x = $q9GraphIndustryValues['Not interested, No Plans'][$key] + ($q9GraphIndustryValues[$q9AnswerKey[$item]][$key]/2);
+            if ($item == 2) {
+                $x = $q9GraphIndustryValues['Not interested, No Plans'][$key] + ($q9GraphIndustryValues[$q9AnswerKey[$item]][$key] / 2);
             }
-            if($item == 1){
-                $x = $q9GraphIndustryValues['Not interested, No Plans'][$key] + $q9GraphIndustryValues['Evaluating or Planning'][$key] + ($q9GraphIndustryValues[$q9AnswerKey[$item]][$key]/2);
+            if ($item == 1) {
+                $x = $q9GraphIndustryValues['Not interested, No Plans'][$key] + $q9GraphIndustryValues['Evaluating or Planning'][$key] + ($q9GraphIndustryValues[$q9AnswerKey[$item]][$key] / 2);
             }
-            
+
             return [
                 [
                     'circle',
                     'cx' => 'g'.$x,
-                    'cy' => 'g'.($q9IndustryAnswerValues->keys()->search($key)).".5",
+                    'cy' => 'g'.($q9IndustryAnswerValues->keys()->search($key)).'.5',
                     'r' => 8,
                     'stroke' => '#FFF',
                     'stroke-width' => 2,
                     'depth' => 'above',
-                    'fill' => '#e8ae38'
+                    'fill' => '#e8ae38',
                 ],
             ];
         });
@@ -2143,16 +2169,16 @@ class ItalyClass
         $graphSettings['axis_text_callback_y'] = null;
         $graphSettings['show_data_labels'] = true;
         $graphSettings['show_axis_text_h'] = false;
-        $graphSettings['units_label'] = "%";
-        $graphSettings['axis_text_callback_y'] = function($value){
+        $graphSettings['units_label'] = '%';
+        $graphSettings['axis_text_callback_y'] = function ($value) {
             return $value.'%';
         };
 
-        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q9IndustryAnswerValues)->count()*35+20, $graphSettings);
+        $graph = new \Goat1000\SVGGraph\SVGGraph(650, collect($q9IndustryAnswerValues)->count() * 35 + 20, $graphSettings);
         $graph->colours($colours);
 
-        $graph->values($q9GraphIndustryValues->mapWithKeys(function($item, $key){
-            return [$key => collect($item)->mapWithKeys(function($itemItem, $keyKey){
+        $graph->values($q9GraphIndustryValues->mapWithKeys(function ($item, $key) {
+            return [$key => collect($item)->mapWithKeys(function ($itemItem, $keyKey) {
                 return [wordwrap($keyKey, 35, "\n", false) => $itemItem];
             })->toArray()];
         })->toArray());
@@ -2189,23 +2215,23 @@ class ItalyClass
             </div>
         </div>";
         //{$q9IndustryAnswerlabels->implodeLast(', ',', and ')}
-        $plaEvaUseImp = $q9IndustryAnswers->filter(function($item){
+        $plaEvaUseImp = $q9IndustryAnswers->filter(function ($item) {
             return $item < 3 && $item > 0;
         });
-        $plaEvaUseImpTopTen = $plaEvaUseImp->filter(function($item,$key) use($industryReference, $industry){
+        $plaEvaUseImpTopTen = $plaEvaUseImp->filter(function ($item, $key) use ($industryReference, $industry) {
             return $industryReference['q9'][$industry][$key] < 11;
         });
 
-        $plaEvaUseImpTopTenLabels = collect($this->singleQuestions)->filter(function($item, $key) use($plaEvaUseImpTopTen){
-            return collect($plaEvaUseImpTopTen->keys())->contains($key);                
+        $plaEvaUseImpTopTenLabels = collect($this->singleQuestions)->filter(function ($item, $key) use ($plaEvaUseImpTopTen) {
+            return collect($plaEvaUseImpTopTen->keys())->contains($key);
         });
 
-        $q9Industryheader = "";
+        $q9Industryheader = '';
         // $q9Industryheader .= "You selected {$plaEvaUseImp->count()} use cases for planning, evaluating, using, or implementing in the {$industryKeys[$industry]}. ";
         // $q9Industryheader.= "Of these, {$plaEvaUseImpTopTen->count()} are in the top 10 use cases adopted in this industry:</br>";
         // $q9Industryheader.= "{$plaEvaUseImpTopTenLabels->values()->implodeLast(', ',', and ')}.</br></br>";
 
-        $q9Industrybody = "";
+        $q9Industrybody = '';
         /*if(count($plaEvaUseImpTopTen)<4){
             $q9Industrybody .= "You have few of your use cases in the top 10 for the {$industryKeys[$industry]}. Whilst this is not a problem you might want to review the {$industryKeys[$industry]} use case list when considering future Big Data projects.";
         }
@@ -2229,57 +2255,75 @@ class ItalyClass
             </p>
         ";
 
-
         $questionIndustry9 = $q9Industryheader.$q9Industrybody;
 
         $question9 = $q9question.$q9intro.$q9SizeGraph.$questionSize9.$q9IndustryGraph.$questionIndustry9;
 
-        $html=$question1.$question2.$question4./*$question5.*/$question6a.$question7./*$question8.*/$question9;
-        return $html;
-	}
+        $html = $question1.$question2.$question4./*$question5.*/$question6a.$question7./*$question8.*/$question9;
 
-    public function getName(){
+        return $html;
+    }
+
+    public function getName()
+    {
         return $this->name;
     }
-    public function getEmail(){
+
+    public function getEmail()
+    {
         return $this->email;
     }
-    public function getDate(){
+
+    public function getDate()
+    {
         return Carbon::parse($this->created_at)->toDateString();
     }
-    public function getProject(){
+
+    public function getProject()
+    {
         return $this->project;
     }
-    public function getOrganization(){
+
+    public function getOrganization()
+    {
         return $this->organization;
     }
-    public function getAssessment(){
+
+    public function getAssessment()
+    {
         return $this->assessment;
     }
-    public function getCompletedAlready(){
+
+    public function getCompletedAlready()
+    {
         return $this->completedAlready;
     }
 
-	private function ordinal($number) {
-        $ends = array('th','st','nd','rd','th','th','th','th','th','th');
-        if ((($number % 100) >= 11) && (($number%100) <= 13))
-            return $number. 'th';
-        else
-            return $number. $ends[$number % 10];
+    private function ordinal($number)
+    {
+        $ends = ['th', 'st', 'nd', 'rd', 'th', 'th', 'th', 'th', 'th', 'th'];
+        if ((($number % 100) >= 11) && (($number % 100) <= 13)) {
+            return $number.'th';
+        } else {
+            return $number.$ends[$number % 10];
+        }
     }
-    private function rankArray($array) {
+
+    private function rankArray($array)
+    {
         arsort($array);
         $rank = [];
         $occurrences = array_count_values($array);
         $i = 0;
         $currRank = 0;
-        foreach($array as $key => $value) {
-            if( $value != $currRank){
-                $i = array_search($key,array_keys($array))+1;
+        foreach ($array as $key => $value) {
+            if ($value != $currRank) {
+                $i = array_search($key, array_keys($array)) + 1;
                 $currRank = $value;
             }
             $rank[$key] = $i;
         }
+
         return $rank;
     }
 }

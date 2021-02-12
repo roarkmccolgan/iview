@@ -14,6 +14,6 @@ class Other extends Model
     
     public function question()
     {
-        return this->belongsTo('App\questions')
+        return $this->belongsTo('App\questions')
     }
 }
