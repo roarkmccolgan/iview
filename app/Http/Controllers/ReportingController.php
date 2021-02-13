@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Support\Str;
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
 use App\Http\Requests\CreateReportRequest;
 use App\Iview;
 use App\Report;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class ReportingController extends Controller
 {

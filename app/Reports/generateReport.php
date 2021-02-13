@@ -2,8 +2,8 @@
 
 namespace App\Reports;
 
-use Illuminate\Support\Str;
 use App\Tool;
+use Illuminate\Support\Str;
 use Maatwebsite\Excel\Facades\Excel;
 
 require_once base_path('vendor/goat1000/svggraph/SVGGraph.php');

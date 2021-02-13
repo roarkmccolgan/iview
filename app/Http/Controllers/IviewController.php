@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Support\Str;
 use App\Company;
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
@@ -12,6 +11,7 @@ use App\language;
 use App\Url;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class IviewController extends Controller
 {

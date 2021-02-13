@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers\Traits;
 
-use Illuminate\Support\Str;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Lang;
 use Illuminate\Support\Facades\View;
+use Illuminate\Support\Str;
 use Lava;
 use LynX39\LaraPdfMerger\Facades\PdfMerger;
 use mikehaertl\pdftk\Pdf as NewPDF;
