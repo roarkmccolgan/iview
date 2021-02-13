@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\View;
+use Illuminate\Support\Str;
 use JavaScript;
 
 class AssessmentController extends Controller
@@ -130,7 +131,7 @@ class AssessmentController extends Controller
                 }
             }
             $assessment->delete();
-            $name = str_slug($assessment->fname.'_'.$assessment->lname.'_'.$assessment->tool->title.'_Assessment');
+            $name = Str::slug($assessment->fname.'_'.$assessment->lname.'_'.$assessment->tool->title.'_Assessment');
             if (File::exists(storage_path().'/reports/'.$assessment->id.'_'.$name.'.pdf')) {
                 File::delete(storage_path().'/reports/'.$assessment->id.'_'.$name.'.pdf');
             }
@@ -314,7 +315,7 @@ class AssessmentController extends Controller
 
         $alphas = range('A', 'Z');
 
-        Excel::create(str_slug($tool->title.' '.$tool->sub_title), function ($excel) use ($assessments, $cols, $alphas, $telNum) {
+        Excel::create(Str::slug($tool->title.' '.$tool->sub_title), function ($excel) use ($assessments, $cols, $alphas, $telNum) {
             $excel->sheet('Assessments', function ($sheet) use ($assessments, $cols, $alphas, $telNum) {
                 $sheet->setOrientation('landscape');
                 $sheet->fromArray($assessments);

@@ -17,7 +17,7 @@
                                     <img class="footer-logo" src="{{asset('css/idc/idc-logo-new.svg')}}" alt="">
                                 </div>
                                 <div class="col-xs-5 col-xs-offset-3 col-sm-3 col-sm-offset-6 col-md-3 col-md-offset-7 ">
-                                    <img class="footer-logo" src="{{asset('css/'.str_slug(session('company.name')).'/'.str_slug(session('company.name')).'-logo.svg')}}" alt="">
+                                    <img class="footer-logo" src="{{asset('css/'.Str::slug(session('company.name')).'/'.Str::slug(session('company.name')).'-logo.svg')}}" alt="">
                                 </div>
                             </div>
                         </div>

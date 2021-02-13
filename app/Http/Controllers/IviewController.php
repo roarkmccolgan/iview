@@ -11,6 +11,7 @@ use App\language;
 use App\Url;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class IviewController extends Controller
 {
@@ -53,7 +54,7 @@ class IviewController extends Controller
 
         $iview = iView::create([
             'title'=>$request->input('title'),
-            'alias'=>str_slug($request->input('title')),
+            'alias'=>Str::slug($request->input('title')),
             'sub_title'=>$request->input('sub_title'),
             'gapropertyid'=>$request->input('gapropertyid'),
             'company_id'=>$company_id,

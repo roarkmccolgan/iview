@@ -3,6 +3,7 @@
 namespace App\Reports;
 
 use App\Tool;
+use Illuminate\Support\Str;
 use Maatwebsite\Excel\Facades\Excel;
 
 require_once base_path('vendor/goat1000/svggraph/SVGGraph.php');
@@ -115,7 +116,7 @@ class generateReport
 
         $alphas = range('A', 'Z');
 
-        $file = Excel::create(str_slug($tool->title.' '.$tool->sub_title), function ($excel) use ($assessments, $cols, $alphas, $telNum) {
+        $file = Excel::create(Str::slug($tool->title.' '.$tool->sub_title), function ($excel) use ($assessments, $cols, $alphas, $telNum) {
             $excel->sheet('Assessments', function ($sheet) use ($assessments, $cols, $alphas, $telNum) {
                 $sheet->setOrientation('landscape');
                 $sheet->fromArray($assessments);

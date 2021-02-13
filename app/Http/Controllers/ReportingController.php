@@ -8,6 +8,7 @@ use App\Http\Requests\CreateReportRequest;
 use App\Iview;
 use App\Report;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class ReportingController extends Controller
 {
@@ -54,7 +55,7 @@ class ReportingController extends Controller
 
         $iview = iView::create([
             'title'=>$request->input('title'),
-            'alias'=>str_slug($request->input('title')),
+            'alias'=>Str::slug($request->input('title')),
             'sub_title'=>$request->input('sub_title'),
             'gapropertyid'=>$request->input('gapropertyid'),
             'company_id'=>$company_id,
