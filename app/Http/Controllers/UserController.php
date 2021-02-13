@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Str;
 use App\Events\UserWasCreated;
 use App\Http\Requests;
 use App\Http\Requests\AddUserRequest;
@@ -98,7 +99,7 @@ class UserController extends Controller
         if ($existingUser) {
             $existingUser->tools()->attach($tool->id);
         } else {
-            $password = Hash::make(str_random(8));
+            $password = Hash::make(Str::random(8));
             $user = User::create([
                 'name' => $request->input('name'),
                 'email' => $request->input('email'),
@@ -108,7 +109,7 @@ class UserController extends Controller
             $user->assignRole($request->input('role'));
 
             if (config('terminal.settings.resetpassword_at_first_login')) {
-                $register_token = $code = str_random(10);
+                $register_token = $code = Str::random(10);
                 $user->register_token = $register_token;
             } else {
                 $user->changePassword = 0;

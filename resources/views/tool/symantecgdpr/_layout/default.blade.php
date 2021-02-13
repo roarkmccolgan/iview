@@ -46,7 +46,7 @@
                             <div class="col-xs-3 col-xs-offset-5 col-sm-3 col-sm-offset-6 col-md-2 col-md-offset-8">
                                 
                                 <span class="type--fine-print">{{Lang::get('general.'.session('product.id').'sponsoredby')}}</span>
-                                <img class="footer-logo" src="{{asset('css/'.str_slug(session('company.name')).'/'.str_slug(session('company.name')).'-logo.svg')}}" alt="">
+                                <img class="footer-logo" src="{{asset('css/'.Str::slug(session('company.name')).'/'.Str::slug(session('company.name')).'-logo.svg')}}" alt="">
                                 
                             </div>
                         </div>

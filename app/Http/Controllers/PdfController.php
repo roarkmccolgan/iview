@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Str;
 use App\Http\Requests;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
@@ -131,11 +132,11 @@ class PdfController extends Controller
             //country benchmark by language
             $overallcountrynumber = config('baseline_'.session('product.id').'.overall.benchmark-country-'.$locale);
             if ($number > $overallcountrynumber) {
-                $overalllang = $number - $overallcountrynumber.' '.str_plural('level', $number - $overallcountrynumber).' ahead of the global leaders';
+                $overalllang = $number - $overallcountrynumber.' '.Str::plural('level', $number - $overallcountrynumber).' ahead of the global leaders';
             } elseif ($number == $overallcountrynumber) {
                 $overalllang = 'Inline with the global leaders';
             } else {
-                $overalllang = $overallcountrynumber - $number.' '.str_plural('level', $overallcountrynumber - $number).' behind the global leaders';
+                $overalllang = $overallcountrynumber - $number.' '.Str::plural('level', $overallcountrynumber - $number).' behind the global leaders';
             }
 
             //company size benchmark by language
@@ -144,11 +145,11 @@ class PdfController extends Controller
             $demographicsizeanswer = str_replace(' ', '-', $demographicsizeanswer[0]);
             $overallsizenumber = config('baseline_'.session('product.id').'.overall.benchmark-size-'.$demographicsizeanswer);
             if ($number > $overallsizenumber) {
-                $overallsize = $number - $overallsizenumber.' '.str_plural('level', $number - $overallsizenumber).' ahead of the leaders in companies of the same size';
+                $overallsize = $number - $overallsizenumber.' '.Str::plural('level', $number - $overallsizenumber).' ahead of the leaders in companies of the same size';
             } elseif ($number == $overallsizenumber) {
                 $overallsize = 'Inline with the leaders in companies of the same size';
             } else {
-                $overallsize = $overallsizenumber - $number.' '.str_plural('level', $overallsizenumber - $number).' behind the leaders in companies of the same size';
+                $overallsize = $overallsizenumber - $number.' '.Str::plural('level', $overallsizenumber - $number).' behind the leaders in companies of the same size';
             }
 
             //bar widths
@@ -335,11 +336,11 @@ class PdfController extends Controller
             $overallcountrynumber = config('baseline_'.session('product.id').'.overall.benchmark-country-'.$region);
 
             if ($number > $overallcountrynumber) {
-                $overalllang = $number - $overallcountrynumber.' '.str_plural('level', $number - $overallcountrynumber).' ahead of the global leaders';
+                $overalllang = $number - $overallcountrynumber.' '.Str::plural('level', $number - $overallcountrynumber).' ahead of the global leaders';
             } elseif ($number == $overallcountrynumber) {
                 $overalllang = 'Inline with the global leaders';
             } else {
-                $overalllang = $overallcountrynumber - $number.' '.str_plural('level', $overallcountrynumber - $number).' behind the global leaders';
+                $overalllang = $overallcountrynumber - $number.' '.Str::plural('level', $overallcountrynumber - $number).' behind the global leaders';
             }
 
             //company size benchmark by language
@@ -351,11 +352,11 @@ class PdfController extends Controller
             $overallsizenumber = config('baseline_'.session('product.id').'.overall.benchmark-size-'.$demographicsizeanswer);
 
             if ($number > $overallsizenumber) {
-                $overallsize = $number - $overallsizenumber.' '.str_plural('level', $number - $overallsizenumber).' ahead of the leaders in companies of the same size';
+                $overallsize = $number - $overallsizenumber.' '.Str::plural('level', $number - $overallsizenumber).' ahead of the leaders in companies of the same size';
             } elseif ($number == $overallsizenumber) {
                 $overallsize = 'Inline with the leaders in companies of the same size';
             } else {
-                $overallsize = $overallsizenumber - $number.' '.str_plural('level', $overallsizenumber - $number).' behind the leaders in companies of the same size';
+                $overallsize = $overallsizenumber - $number.' '.Str::plural('level', $overallsizenumber - $number).' behind the leaders in companies of the same size';
             }
 
             //bar widths

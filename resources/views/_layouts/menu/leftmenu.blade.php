@@ -12,7 +12,7 @@
 			<li class="{{ Ekko::isActiveURL('/admin/tools/create') }}"><a href="{{URL('/admin/tools/create')}}">New Tool</a></li>
 			@if(isset($tools))
 				@foreach($tools as $tool)
-					<li class="{{ Ekko::isActiveURL('/admin/tools/'.$tool->id) }}"><a href="{{URL('/admin/tools/'.$tool->id)}}">{{str_limit($tool->company->name.': '.$tool->title, 28)}}</a></li>
+					<li class="{{ Ekko::isActiveURL('/admin/tools/'.$tool->id) }}"><a href="{{URL('/admin/tools/'.$tool->id)}}">{{Str::limit($tool->company->name.': '.$tool->title, 28)}}</a></li>
 				@endforeach
 			@endif
 		</ul>

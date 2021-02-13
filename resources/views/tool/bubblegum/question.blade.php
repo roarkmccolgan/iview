@@ -19,7 +19,7 @@
                                     <img class="footer-logo" src="{{asset('css/idc/idc-logo.svg')}}" alt="">
                                 </div>
                                 <div class="col-xs-4 col-xs-offset-4 col-sm-3 col-sm-offset-6 col-md-2 col-md-offset-8 ">
-                                    <img class="footer-logo" src="{{asset('css/'.str_slug(session('company.name')).'/'.str_slug(session('company.name')).'-logo.svg')}}" alt="">
+                                    <img class="footer-logo" src="{{asset('css/'.Str::slug(session('company.name')).'/'.Str::slug(session('company.name')).'-logo.svg')}}" alt="">
                                 </div>
                             </div>
                         </div>

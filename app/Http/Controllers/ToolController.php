@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Str;
 use App\Assessment;
 use App\Company;
 use App\Http\Controllers\Controller;
@@ -122,7 +123,7 @@ class ToolController extends Controller
 
         $tool = Tool::create([
             'title'=>$request->input('title'),
-            'alias'=>str_slug($request->input('title')),
+            'alias'=>Str::slug($request->input('title')),
             'sub_title'=>$request->input('sub_title'),
             'gapropertyid'=>$request->input('gapropertyid'),
             'company_id'=>$company_id,
@@ -636,7 +637,7 @@ class ToolController extends Controller
         }
 
         //generate report
-        //$filename = str_slug($assessment->fname.'_'.$assessment->lname.'_'.session('product.title').'_Assessment', '-');
+        //$filename = Str::slug($assessment->fname.'_'.$assessment->lname.'_'.session('product.title').'_Assessment', '-');
         //$this->wkhtml($assessment->id,$filename);
 
         $eloqua = config('baseline_'.session('product.id').'.overall.eloqua', false);
@@ -823,8 +824,8 @@ class ToolController extends Controller
         $request->session()->put('questions', $assessment->quiz);
         $request->session()->put('result', $assessment->result);
         $request->session()->put('user', collect($assessment->toArray())->only(['fname', 'lname', 'email', 'company', 'country', 'referer', 'tel', 'downloaded', 'extra', 'fetched', 'title', 'uuid', 'lang']));
-        $reportName = str_slug($assessment->fname.'_'.$assessment->lname.'_'.session('product.title').'_Assessment', '-');
-        $filename = $assessment->id.'_'.str_slug($assessment->fname.'_'.$assessment->lname.'_'.$assessment->tool->title.'_Assessment', '-').'.pdf';
+        $reportName = Str::slug($assessment->fname.'_'.$assessment->lname.'_'.session('product.title').'_Assessment', '-');
+        $filename = $assessment->id.'_'.Str::slug($assessment->fname.'_'.$assessment->lname.'_'.$assessment->tool->title.'_Assessment', '-').'.pdf';
 
         if ($update) {
             $assessment->update(['fetched' => 1]);
@@ -848,7 +849,7 @@ class ToolController extends Controller
                 }
             } else {
                 if (! $inline) {
-                    $downloadName = str_slug($assessment->id.'-'.session('product.title').'-report', '-').'.pdf';
+                    $downloadName = Str::slug($assessment->id.'-'.session('product.title').'-report', '-').'.pdf';
                     $this->wkhtml($assessment->id, $reportName);
                     $headers = [
                         'Content-Type: application/pdf',
@@ -886,7 +887,7 @@ class ToolController extends Controller
             $request->session()->put('questions', $assessment->quiz);
             $request->session()->put('result', $assessment->result);
 
-            $reportName = str_slug($assessment->fname.'_'.$assessment->lname.'_'.session('product.title').'_Assessment', '-');
+            $reportName = Str::slug($assessment->fname.'_'.$assessment->lname.'_'.session('product.title').'_Assessment', '-');
             $view = $this->wkhtml($assessment->id, $reportName, 'html');
 
             return $view;
