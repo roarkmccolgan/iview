@@ -154,7 +154,7 @@ Complete la Herramienta de Evaluación de riesgos informáticos de IDC para sabe
     'errorEmployees'=>'Seleccione una opción.',
     'errorTurnover'=>'Seleccione una opción.',
     'errorIndustry'=>'Seleccione una opción.',
-    'errorCountry'=>'Escriba el su país',
+    'errorCountry'=>'Escriba su país',
     'errorNumber'=>'Escriba su número de teléfono',
     'errorPhone'=>'Escriba su número de teléfono',
     'errorRelationship'=>'Please select Relationship Type',

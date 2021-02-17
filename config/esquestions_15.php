@@ -269,7 +269,7 @@ return [
                 'questions' => [
                     'q4'=>[
                         'type'=>'button',
-                        'question'=>'butt¿Cómo describiría los procesos de su empresa?',
+                        'question'=>'¿Cómo describiría los procesos de su empresa?',
                         'name'=> 4,
                         'options'=>[
                             [

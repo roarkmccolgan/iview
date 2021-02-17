@@ -39,7 +39,7 @@ return array(
     'send'=>'Podemos enviarle los resultados completos directamente a su correo electrónico',
     'register'=>'Regístrese ahora para recibir su informe personalizado',
     'provide'=>'Facilítenos algunos datos y le enviaremos un enlace para que lo descargue.',
-    'byreg'=>'Al registrarse en IDC, acepta nuestra <a href="/privacy" target="_blank">olítica de privacidad</a>.',
+    'byreg'=>'Al registrarse en IDC, acepta nuestra <a href="/privacy" target="_blank">política de privacidad</a>.',
     'wait'=>'Mientras espera, ¿por qué no tuitea sus resultados y descubre cómo se comparan con los resultados de sus compañeros?',
 
     'errorPhone'=>'Please enter a valid phone number (+00112223333)',
@@ -160,7 +160,7 @@ return array(
                              En definitiva, le permite responder mucho mejor a los cambios en el entorno externo y garantizar un mejor desarrollo como empresa.
                         </p>
                         <p class="mb-24">
-                            TPara ayudarle, IDC ha elaborado una serie de recomendaciones basadas en la etapa en la que se encuentra según los distintos elementos que conforman la agilidad. Según sus respuestas, IDC sitúa su empresa en la etapa <span class="font-bold text-sap-blue">Stage :stage</span> del camino hacia la agilidad.<br/> IDC denomina esta etapa <span class="font-bold text-sap-blue">:name</span>.
+                            Para ayudarle, IDC ha elaborado una serie de recomendaciones basadas en la etapa en la que se encuentra según los distintos elementos que conforman la agilidad. Según sus respuestas, IDC sitúa su empresa en la etapa <span class="font-bold text-sap-blue">Stage :stage</span> del camino hacia la agilidad.<br/> IDC denomina esta etapa <span class="font-bold text-sap-blue">:name</span>.
                         </p>
                         <p class="font-bold text-blackblack mb-2">
                              Para obtener más información sobre SAP para su ubicación,<br/>click the relevant link:
@@ -388,7 +388,7 @@ return array(
                             La economía digital, la competencia internacional y la necesidad de responder a los imprevistos representan a la vez desafíos y oportunidades para las startups de rápido crecimiento como la suya.
                         </p>
                         <p class="mb-3 font-bold text-sap-blue">
-                            En función de las respuestas que ha introducido en la herramienta de evaluación de la agilidad, IDC sitúa su empresa en la <span class="font-bold text-sap-blue">Etapa 5</span> e la evaluación general y la considera una <span class="font-bold text-sap-blue">Disruptiva de agilidad</span>. 
+                            En función de las respuestas que ha introducido en la herramienta de evaluación de la agilidad, IDC sitúa su empresa en la <span class="font-bold text-sap-blue">Etapa 5</span> de la evaluación general y la considera una <span class="font-bold text-sap-blue">Disruptiva de agilidad</span>. 
                         </p>
                         <p class="mb-3">
                              Ya está en una etapa muy avanzada del camino hacia la agilidad y en las primeras posiciones en términos de puntuación de la evaluación de la agilidad de IDC. Puede que fuera algo planificado o que simplemente creó una empresa que se ajusta a estos principios. En cualquier caso, dispone de una base sólida desde la que puede ganar aún más agilidad y capacidad de respuesta al cambio en el mercado y en la manera de hacer negocios. 
@@ -1258,7 +1258,7 @@ return array(
             <div>
                 <div>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
-                        BEn función de sus resultados, se encuentra en la Etapa 3 en términos de agilidad en las relaciones con los proveedores y distribuidores. A continuación, IDC le proporciona algunos elementos que debe tener en cuenta y recomendaciones específicas para esta etapa en el proceso hacia la agilidad. 
+                        En función de sus resultados, se encuentra en la Etapa 3 en términos de agilidad en las relaciones con los proveedores y distribuidores. A continuación, IDC le proporciona algunos elementos que debe tener en cuenta y recomendaciones específicas para esta etapa en el proceso hacia la agilidad. 
                     </p>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
                         Las organizaciones ágiles pueden adaptar las operaciones (ampliarlas o reducirlas) para satisfacer las fluctuaciones en la demanda. Gestionar los proveedores y los socios para poder adaptarse de inmediato es un arte que debe dominar si quiere convertirse en una empresa realmente ágil.
@@ -1376,7 +1376,7 @@ return array(
                 <div class="w-2/5">
                     <div class="pr-6">
                         <p class="mb-3">
-                            YEstá en la etapa 5, es decir, en el máximo nivel de agilidad en términos de relaciones con los proveedores y distribuidores. 
+                            Está en la etapa 5, es decir, en el máximo nivel de agilidad en términos de relaciones con los proveedores y distribuidores. 
                         </p>
                         <p class="mb-3 font-bold text-sap-blue">
                             Las organizaciones que se encuentran en esta etapa intercambian información de forma continua, transparente y proactiva con sus proveedores y distribuidores. Muchas disponen de sistemas integrados y de un alto nivel de conocimiento de las distintas empresas. La velocidad de cambio en esta etapa es prácticamente en tiempo real, ya que todas las herramientas permiten recopilar y transferir rápidamente la información entre todas las partes interesadas. 
@@ -1442,7 +1442,7 @@ return array(
                     <div class="p-2 bg-grey-lighter">
                         <h4 class="italic font-bold mb-4">Recomendaciones:</h4>
                         <ol class="pl-6 text-sap-blue">
-                            <li class="mb-2">mpiece a crear canales de comunicación claros. Céntrese en crear e impulsar una mayor colaboración entre equipos. Replantee los silos y las barreras entre departamentos para potenciar las conversaciones entre equipos y determinar así posibles mejoras. Gestione y controle este proceso para lograr cambios reales. </li>
+                            <li class="mb-2">Empiece a crear canales de comunicación claros. Céntrese en crear e impulsar una mayor colaboración entre equipos. Replantee los silos y las barreras entre departamentos para potenciar las conversaciones entre equipos y determinar así posibles mejoras. Gestione y controle este proceso para lograr cambios reales. </li>
                             <li class="mb-2">Anime a los empleados a conversar más sobre el futuro a largo plazo de la empresa y sobre cómo alcanzar los objetivos conjuntamente, y no como departamentos o funciones individuales. ¡Seguro que le sorprenderá todo lo que puede aprender!</li>
                             <li class="mb-2">Amplíe las medidas para que los empleados se centren en la agilidad y la flexibilidad. Analice cuál podría ser la situación y qué debería cuantificarse. Piense en definir algunos objetivos que fomenten la colaboración y la flexibilidad en la manera de trabajar y de hacer negocios.</li>
                         </ol>
@@ -1621,7 +1621,7 @@ return array(
                         La experiencia con el personal es esencial, por lo que le interesará saber que se encuentra en la Etapa 5 en relación con esta área. A continuación, IDC le proporciona algunos elementos clave que debe tener en cuenta.
                     </p>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
-                        E Un modelo empresarial integral no puede ser ágil si las personas no lo son. Y las personas no pueden ser ágiles si no están respaldadas por los procesos ni la dirección adecuados. 
+                        Un modelo empresarial integral no puede ser ágil si las personas no lo son. Y las personas no pueden ser ágiles si no están respaldadas por los procesos ni la dirección adecuados. 
                     </p>
                 </div>
             </div>
