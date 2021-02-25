@@ -11,13 +11,13 @@ return array(
     'change-langauge'=>'Alterar língua',
     'further-insight'=>'Mais informações',
     'view-now'=>'Ver agora',
-    'next'=>'Next',
+    'next'=>'Próximo',
 
-    'full_title' => 'IDC Click to be Agile Assessment Tool',
-    'social_description' => 'I have just completed the IDC Click to be Agile Assessment Tool – I have got interesting insights. Perhaps it would be interesting for you:',
+    'full_title' => 'IDC Click to be Ágil Assessment Tool',
+    'social_description' => 'I have just completed the IDC Click to be Ágil Assessment Tool – I have got interesting insights. Perhaps it would be interesting for you:',
 
     'title'=>'Clicar para ser ágil',
-    'sub-title'=>'O primeira passo do seu percurso de agilidade',
+    'sub-title'=>'O primeiro passo do seu percurso de agilidade',
     'landing1'=>'
         <p class="mb-4 text-xl font-bold text-sap-blue leading-tight">
              As empresas ágeis são mais competitivas, agarram mais depressa as oportunidades e constroem relações mais fortes com fornecedores, distribuidores e clientes.
@@ -25,7 +25,7 @@ return array(
         <p class="mb-4 text-xl font-bold leading-tight text-black leading-tight">
             Mas como é que uma empresa se torna mais ágil? Em primeiro lugar, é fundamental conhecer o seu grau de agilidade atual. Em seguida, o que é necessário fazer para se tornar mais ágil no futuro.
         </p>',
-    'landing-inner' => 'IA ferramenta de agilidade da IDC avalia a agilidade da sua empresa em 5 áreas essenciais:',
+    'landing-inner' => 'A ferramenta de agilidade da IDC avalia a agilidade da sua empresa em 5 áreas essenciais:',
     'landing2'=>'
         <p class="mb-2">
             Uma vez concluída, terá uma ideia geral sobre a agilidade da sua empresa com recomendações passíveis de ação. Estas permitir-lhe-ão introduzir mudanças importantes na sua empresa, assegurando a próxima vaga de sucesso.
@@ -75,17 +75,17 @@ return array(
         ',
     ],
     'people-experience' => [
-        'title'=> 'Experiência das pessoas',
+        'title'=> 'Experiência dos colaboradores',
         'popup'=> '
-             A Experiência das pessoas diz respeito ao modo como as informações são partilhadas com os colaboradores, bem como ao que estes encontram e observam no exercício das suas funções. Refere-se ainda ao modo como são avaliados, motivados e interessados no trabalho e na atividade. 
+             A Experiência dos colaboradores diz respeito ao modo como as informações são partilhadas com os colaboradores, bem como ao que estes encontram e observam no exercício das suas funções. Refere-se ainda ao modo como são avaliados, motivados e interessados no trabalho e na atividade. 
         ',
     ],
 
-    'stage1' => 'Principiante Agile',
-    'stage2' => 'Impulsionador Agile',
-    'stage3' => 'Transformador Agile',
-    'stage4' => 'Acelerador Agile',
-    'stage5' => 'Disruptor Agile',
+    'stage1' => 'Principiante Ágil',
+    'stage2' => 'Impulsionador Ágil',
+    'stage3' => 'Transformador Ágil',
+    'stage4' => 'Acelerador Ágil',
+    'stage5' => 'Disruptor Ágil',
     'marketing' => 'Aceito ser contactado pela SAP sobre o meu Relatório de Avaliação de Agilidade',
 
     'finishtxtheading' => '
@@ -94,9 +94,9 @@ return array(
     'finishtxt1' => 'Com base nas suas respostas, a IDC posiciona a sua empresa como: <strong class="inline font-bold text-lg text-sap-blue">{result}</strong> ',
     'finishtxt2' => '
         <p class="mb-2 mt-4 font-bold">Mas o que quer isto dizer?</p>
-        <p class="mb-2 mt-4">T Para receber imediatamente um relatório personalizado, por email, com uma análise completa da agilidade da sua empresa e algumas recomendações, preencha o formulário de registo.</p>
+        <p class="mb-2 mt-4">Para receber imediatamente um relatório personalizado, por email, com uma análise completa da agilidade da sua empresa e algumas recomendações, preencha o formulário de registo.</p>
         <p class="mb-2 mt-4">Trataremos as suas informações com o máximo respeito, ficando a aguardar a oportunidade para partilhar consigo observações úteis. </p>
-        <p class="mb-2">A privacidade e a segurança das suas informações são importantes para nós. Leia as políticas de privacidade da IDC através da ligação abaixo.</p>
+        <p class="mb-2">A privacidade e a segurança das suas informações são importantes para nós. Leia as <a href="/privacy" target="_blank">políticas de privacidade</a> da IDC através da ligação abaixo.</p>
         <p class="mb-4 font-bold">A equipa da IDC</p>
     ',
     'complete_thankyou' => 'Obrigado: Primeiro nome,',
@@ -115,7 +115,7 @@ return array(
         Partilhar a ferramenta ',
     'complete_tweet' => 'Acabo de responder à ferramenta de avaliação @IDCEMEA GDPR para @3ds. Interessado?  ',// http://bit.ly/2gslXEh
     'email'=>[
-        'subject' => 'IDC Click to be Agile Assessment',
+        'subject' => 'IDC Click to be Ágil Assessment',
         'hi' => 'Hi :Fname',
         'body' => 'Thank you for completing the assessment, here is the link to download your IDC Agility Assessment Report. This breaks down your results by category and provides you with actionable recommendations.',
         'link' => 'VIEW YOUR AGILITY SCORE',
@@ -131,10 +131,10 @@ return array(
             <a class="text-sap-blue" href="https://www.sap.com/turkey/products/sme-business-software.html">SAP.com/Turkey</a><br/>
             <a class="text-sap-blue" href="https://www.sap.com/index.html">SAP.com global website</a><br/><br/>
             Share via Twitter and Linkedin below:<br/><br/>
-            <a style="text-decoration: none;" href="http://twitter.com/share?text=I have just completed the IDC Click to be Agile Assessment Tool – I have got interesting insights. Perhaps it would be interesting for you:&url=https://clicktobeagile.idcready.net">
+            <a style="text-decoration: none;" href="http://twitter.com/share?text=I have just completed the IDC Click to be Ágil Assessment Tool – I have got interesting insights. Perhaps it would be interesting for you:&url=https://clicktobeagile.idcready.net">
                 <img src="https://clicktobeagile.idcready.net/images/twitter.png" style="width: 50px;"/>
             </a>&nbsp;&nbsp;&nbsp;
-            <a style="text-decoration: none;" href="https://www.linkedin.com/shareArticle?mini=true&url=https://clicktobeagile.idcready.net&title=&summary=I have just completed the IDC Click to be Agile Assessment Tool – I have got interesting insights. Perhaps it would be interesting for you:&source=email">
+            <a style="text-decoration: none;" href="https://www.linkedin.com/shareArticle?mini=true&url=https://clicktobeagile.idcready.net&title=&summary=I have just completed the IDC Click to be Ágil Assessment Tool – I have got interesting insights. Perhaps it would be interesting for you:&source=email">
                 <img src="https://clicktobeagile.idcready.net/images/linkedin.png" style="width: 50px;"/>
             </a><br/>',
         'regards' => 'Regards',
@@ -613,7 +613,7 @@ return array(
                 <div class="flex-1">
                     <h3 class="text-xl mb-2 leading-none text-blackblack">:da empresa</h3>
                     <h2 class="text-2xl leading-none font-black text-sap-blue">
-                        <span class="font-light">FASE 5 - </span> Disruptor Agile
+                        <span class="font-light">FASE 5 - </span> Disruptor Ágil
                     </h2>
                 </div>
             </div>
@@ -858,7 +858,7 @@ return array(
                 <div class="flex-1">
                     <h3 class="text-xl mb-2 leading-none text-blackblack">:da empresa</h3>
                     <h2 class="text-2xl leading-none font-black text-sap-blue">
-                        <span class="font-light">FASE 5 - </span> Disruptor Agile
+                        <span class="font-light">FASE 5 - </span> Disruptor Ágil
                     </h2>
                 </div>
             </div>
@@ -1097,7 +1097,7 @@ return array(
                 <div class="flex-1">
                     <h3 class="text-xl mb-2 leading-none text-blackblack">:da empresa</h3>
                     <h2 class="text-2xl leading-none font-black text-sap-blue">
-                        <span class="font-light">FASE 5 - </span> Disruptor Agile
+                        <span class="font-light">FASE 5 - </span> Disruptor Ágil
                     </h2>
                 </div>
             </div>
@@ -1355,7 +1355,7 @@ return array(
                 <div class="flex-1">
                     <h3 class="text-xl mb-2 leading-none text-blackblack">:da empresa</h3>
                     <h2 class="text-2xl leading-none font-black text-sap-blue">
-                        <span class="font-light">FASE 5 - </span> Acelerador Agile
+                        <span class="font-light">FASE 5 - </span> Acelerador Ágil
                     </h2>
                 </div>
             </div>
@@ -1400,7 +1400,7 @@ return array(
     'people-experience-1' => '
         <div class="pb w-5/6 mx-auto">
             <div class="h-1 overflow-hidden">
-                <h1 class="text-white">Experiência das pessoas</h1>
+                <h1 class="text-white">Experiência dos colaboradores</h1>
             </div>
             <div class="flex items-start mb-4">
                 <img class="w-24 mr-4" src=":url" alt="">
@@ -1414,7 +1414,7 @@ return array(
             <div>
                 <div>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
-                        Perante a importância da Experiência das pessoas, há de ter interesse em saber que se encontra na Fase 1 da sua capacidade. A IDC indicou abaixo alguns elementos importantes a ter em conta.
+                        Perante a importância da Experiência dos colaboradores, há de ter interesse em saber que se encontra na Fase 1 da sua capacidade. A IDC indicou abaixo alguns elementos importantes a ter em conta.
                     </p>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
                         A agilidade de um modelo de negócio completo não é possível sem pessoas ágeis. Só é possível capacitar pessoas ágeis com o apoio dos processos e da gestão. 
@@ -1451,7 +1451,7 @@ return array(
     'people-experience-2' => '
         <div class="pb w-5/6 mx-auto">
             <div class="h-1 overflow-hidden">
-                <h1 class="text-white">Experiência das pessoas</h1>
+                <h1 class="text-white">Experiência dos colaboradores</h1>
             </div>
             <div class="flex items-start mb-4">
                 <img class="w-24 mr-4" src=":url" alt="">
@@ -1465,7 +1465,7 @@ return array(
             <div>
                 <div>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
-                        Perante a importância da Experiência das pessoas, há de ter interesse em saber que se encontra na Fase 2 da sua capacidade. A IDC indicou abaixo alguns elementos importantes a ter em conta.
+                        Perante a importância da Experiência dos colaboradores, há de ter interesse em saber que se encontra na Fase 2 da sua capacidade. A IDC indicou abaixo alguns elementos importantes a ter em conta.
                     </p>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
                         A agilidade de um modelo de negócio completo não é possível sem pessoas ágeis. Só é possível capacitar pessoas ágeis com o apoio dos processos e da gestão. 
@@ -1500,7 +1500,7 @@ return array(
     'people-experience-3' => '
         <div class="pb w-5/6 mx-auto">
             <div class="h-1 overflow-hidden">
-                <h1 class="text-white">Experiência das pessoas</h1>
+                <h1 class="text-white">Experiência dos colaboradores</h1>
             </div>
             <div class="flex items-start mb-4">
                 <img class="w-24 mr-4" src=":url" alt="">
@@ -1514,7 +1514,7 @@ return array(
             <div>
                 <div>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
-                        Perante a importância da Experiência das pessoas, há de ter interesse em saber que se encontra na Fase 3 da sua capacidade. A IDC indicou abaixo alguns elementos importantes a ter em conta.
+                        Perante a importância da Experiência dos colaboradores, há de ter interesse em saber que se encontra na Fase 3 da sua capacidade. A IDC indicou abaixo alguns elementos importantes a ter em conta.
                     </p>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
                         A agilidade de um modelo de negócio completo não é possível sem pessoas ágeis. Só é possível capacitar pessoas ágeis com o apoio dos processos e da gestão. 
@@ -1552,7 +1552,7 @@ return array(
     'people-experience-4' => '
         <div class="pb w-5/6 mx-auto">
             <div class="h-1 overflow-hidden">
-                <h1 class="text-white">Experiência das pessoas</h1>
+                <h1 class="text-white">Experiência dos colaboradores</h1>
             </div>
             <div class="flex items-start mb-4">
                 <img class="w-24 mr-4" src=":url" alt="">
@@ -1566,7 +1566,7 @@ return array(
             <div>
                 <div>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
-                        Perante a importância da Experiência das pessoas, há de ter interesse em saber que se encontra na Fase 4 da sua capacidade. A IDC indicou abaixo alguns elementos importantes a ter em conta.
+                        Perante a importância da Experiência dos colaboradores, há de ter interesse em saber que se encontra na Fase 4 da sua capacidade. A IDC indicou abaixo alguns elementos importantes a ter em conta.
                     </p>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
                         A agilidade de um modelo de negócio completo não é possível sem pessoas ágeis. Só é possível capacitar pessoas ágeis com o apoio dos processos e da gestão. 
@@ -1601,21 +1601,21 @@ return array(
     'people-experience-5' => '
         <div class="pb w-5/6 mx-auto">
             <div class="h-1 overflow-hidden">
-                <h1 class="text-white">Experiência das pessoas</h1>
+                <h1 class="text-white">Experiência dos colaboradores</h1>
             </div>
             <div class="flex items-start mb-4">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
                     <h3 class="text-xl mb-2 leading-none text-blackblack">:da empresa</h3>
                     <h2 class="text-2xl leading-none font-black text-sap-blue">
-                        <span class="font-light">FASE 5 - </span> Disruptor Agile
+                        <span class="font-light">FASE 5 - </span> Disruptor Ágil
                     </h2>
                 </div>
             </div>
             <div>
                 <div>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
-                        Perante a importância da Experiência das pessoas, há de ter interesse em saber que se encontra na Fase 5 da sua capacidade. A IDC indicou abaixo alguns elementos importantes a ter em conta.
+                        Perante a importância da Experiência dos colaboradores, há de ter interesse em saber que se encontra na Fase 5 da sua capacidade. A IDC indicou abaixo alguns elementos importantes a ter em conta.
                     </p>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
                         A agilidade de um modelo de negócio completo não é possível sem pessoas ágeis. Só é possível capacitar pessoas ágeis com o apoio dos processos e da gestão. 

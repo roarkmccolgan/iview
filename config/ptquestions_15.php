@@ -174,7 +174,7 @@ return [
                                 ]
                             ],
                             [
-                                'label'=>'Production',
+                                'label'=>'Produção/Operações',
                                 'name'=> 3.3,
                                 'options'=>[
                                     [
@@ -677,7 +677,7 @@ return [
                         'name'=> 13,
                         'options'=>[
                             [
-                                'label'=>'VMuito raramente ',
+                                'label'=>'Muito raramente ',
                                 'value'=>1,
                                 'checked'=>false,
                             ],

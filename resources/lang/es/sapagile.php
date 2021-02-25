@@ -87,7 +87,7 @@ return array(
     'stage3' => 'Transformadora de agilidad',
     'stage4' => 'Aceleradora de agilidad',
     'stage5' => 'Disruptiva de agilidad',
-    'marketing' => 'Acepto que SAP se ponga en contacto conmigo en relación con el informe de evaluación de la agilidad.',
+    'marketing' => 'Acepto que IDC pueda compartir mis datos personales con SAP España, de acuerdo con su Política de privacidad <a href="https://www.sap.com/spain/about/legal/privacy.html" target="_blank">aquí</a>.',
 
     'finishtxtheading' => '
         <span class="font-bold">Gracias por completar la herramienta de evaluación Click to be Agile de IDC, patrocinada por SAP.</span><br/><br/> ¡Ahora descubrirá cuál es el nivel de agilidad de su empresa!

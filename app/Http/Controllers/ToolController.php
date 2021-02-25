@@ -1388,6 +1388,11 @@ class ToolController extends Controller
                     if($settings['config']){
                         $config = config($settings['config'].'.'.$result);
                     }
+                    if($settings['checkforcode']){
+                        if($tracker){
+                            $config = config($settings['checkforcode'].'.'.$tracker.'.'.$result, config($settings['config'].'.'.$result));
+                        }
+                    }
                     $query[$fieldKey] = $config;
                     break;
                 case 'field':
