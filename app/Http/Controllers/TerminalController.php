@@ -12,6 +12,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Config;
 use JavaScript;
+use Spatie\Analytics\Period;
 
 class TerminalController extends Controller
 {
@@ -25,7 +26,7 @@ class TerminalController extends Controller
     {
         //return Auth::user();
         $tool = $request->session()->get('productObject');
-        Analytics::setSiteId('ga:'.$tool->gapropertyid);
+        Analytics::setViewId('ga:'.$tool->gapropertyid);
         $terminalQueries = Config::get('terminal.queries');
 
         Carbon::setToStringFormat('m-d-Y');
@@ -127,7 +128,7 @@ class TerminalController extends Controller
             if ($query['filters']) {
                 $other['filters'] = $query['filters'];
             }
-            $$key = Analytics::performQuery($startDate, $endDate, $query['metrics'], $other);
+            $$key = Analytics::performQuery(Period::create($startDate, $endDate), $query['metrics'], $other);
             $analyticsResults[$key] = $$key->getRows();
 
             //delay quesry for a second if more than 10 queries are made

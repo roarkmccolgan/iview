@@ -6,7 +6,7 @@ import router from './routes';
 import VueAnalytics from 'vue-analytics';
 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import faUndo from '@fortawesome/pro-regular-svg-icons/faUndo';
+import { faUndo } from '@fortawesome/pro-regular-svg-icons/faUndo';
 
 Vue.use(VueAnalytics, {
 	id: 'UA-156016-34',

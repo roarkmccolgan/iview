@@ -618,7 +618,7 @@ class ToolController extends Controller
                 dd();
             }
         }
-
+        $redirect = false;
         //check UTM
         if ($request->session()->has('utm')) {
             $tracker = Tracker::where('tool_id', session('product.id'))
@@ -630,6 +630,9 @@ class ToolController extends Controller
                 $trackerHit = $tracker->trackerHits()->create([
                 'type' => 'completion',
                 ]);
+                if($assessment->tool_id == 15 && $tracker->code == 'nSfXJtB2Er'){
+                    $redirect = 'http://agilebrain.idcinteractive.test?agilebrain=nSfXJtB2Er';
+                }
             }
         }
 
@@ -775,6 +778,7 @@ class ToolController extends Controller
         JavaScript::put([
             'locale' => session('locale'),
             'tool' => $request->session()->get('productObject'),
+            'redirect' => $redirect,
         ]);
         Session::remove('questions');
         Session::remove('quiz_complete');

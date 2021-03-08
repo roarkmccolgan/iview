@@ -18,8 +18,8 @@ class CreateToolsTable extends Migration
             $table->string('title');
             $table->string('sub_title')->nullable();
             $table->integer('company_id')->unsigned();
-            $table->timestamp('start_date');
-            $table->timestamp('end_date');
+            $table->dateTime('start_date');
+            $table->dateTime('end_date');
             $table->string('gapropertyid');
             $table->string('template')->default('default');
             $table->boolean('active')->default(1);
