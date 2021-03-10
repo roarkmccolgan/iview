@@ -104,6 +104,16 @@ return array(
         Your custom report will arrive in your inbox soon.<br/>
         Please check in your junk folder if you don\'t receive it within 5 minutes.<br/>
         If you cannot find the link, please email IDC (<a href="mailto:podgers@idc.com">podgers@idc.com</a>) and a new link will be sent to you<br/><br/>
+        <div class="my-4 flex my-2 bg-grey-lighter p-4">
+                <div class="w-1/4 mr-8">
+                    <a href="https://agilebrain.idcinteractive.net?agilebrain=nSfXJtB2Er" target="_blank" class="no-underline text-black"><img src="/images/tools/15/agile_brain_certificate.png"></a>
+                </div>
+                <a href="https://agilebrain.idcinteractive.net?agilebrain=nSfXJtB2Er" target="_blank" class="inline-block w-1/2 no-underline text-black">
+                    <h3 class="text-black no-underline font-bold mb-2">SAP Agile Business Brain</h3>
+                    By completing your assessment, you have automatically developed part of your <span class="font-bold">\'Agile Business Brain\'</span>.<br/>
+                    Complete the rest of your agile business brain by clicking here and earn your agile brain certificate.                    
+                </a>
+        </div>
         To find out more about SAP for your location, please click the relevant link below:<br>
         <a class="text-sap-blue" href="https://www.sap.com/africa/products/sme-business-software.html">SAP.com/Africa</a><br/>
         <a class="text-sap-blue" href="https://www.sap.com/mena/products/sme-business-software.html">SAP.com/Middle East</a><br/>

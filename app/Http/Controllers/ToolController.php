@@ -631,7 +631,7 @@ class ToolController extends Controller
                 'type' => 'completion',
                 ]);
                 if($assessment->tool_id == 15 && $tracker->code == 'nSfXJtB2Er'){
-                    $redirect = 'http://agilebrain.idcinteractive.test?agilebrain=nSfXJtB2Er';
+                    $redirect = 'https://agilebrain.idcinteractive.net?agilebrain=nSfXJtB2Er';
                 }
             }
         }

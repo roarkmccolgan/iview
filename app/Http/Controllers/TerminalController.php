@@ -26,7 +26,7 @@ class TerminalController extends Controller
     {
         //return Auth::user();
         $tool = $request->session()->get('productObject');
-        Analytics::setViewId('ga:'.$tool->gapropertyid);
+        Analytics::setViewId($tool->gapropertyid);
         $terminalQueries = Config::get('terminal.queries');
 
         Carbon::setToStringFormat('m-d-Y');
