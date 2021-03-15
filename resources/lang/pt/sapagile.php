@@ -195,7 +195,7 @@ return array(
             <div class="flex items-start mb-4">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
-                    <h3 class="text-xl mb-2 leading-none text-blackblack">:da empresa</h3>
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
                     <h2 class="text-2xl leading-none font-black text-sap-blue">
                         <span class="font-light">FASE 1 - </span> Principiante Ágil
                     </h2>                    
@@ -237,7 +237,7 @@ return array(
             <div class="flex items-start mb-4">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
-                    <h3 class="text-xl mb-2 leading-none text-blackblack">:da empresa</h3>
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
                     <h2 class="text-2xl leading-none font-black text-sap-blue">
                         <span class="font-light">FASE 2 - </span> Impulsionador Ágil
                     </h2>                    
@@ -279,7 +279,7 @@ return array(
             <div class="flex items-start mb-4">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
-                    <h3 class="text-xl mb-2 leading-none text-blackblack">:da empresa</h3>
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
                     <h2 class="text-2xl leading-none font-black text-sap-blue">
                         <span class="font-light">FASE 3 - </span> Transformador Ágil
                     </h2>                    
@@ -324,7 +324,7 @@ return array(
             <div class="flex items-start mb-4">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
-                    <h3 class="text-xl mb-2 leading-none text-blackblack">:da empresa</h3>
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
                     <h2 class="text-2xl leading-none font-black text-sap-blue">
                         <span class="font-light">FASE 4 - </span> Acelerador Ágil
                     </h2>                    
@@ -372,7 +372,7 @@ return array(
             <div class="flex items-start mb-4">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
-                    <h3 class="text-xl mb-2 leading-none text-blackblack">:da empresa</h3>
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
                     <h2 class="text-2xl leading-none font-black text-sap-blue">
                         <span class="font-light">FASE 5 - </span> Disruptor Ágil
                     </h2>                    
@@ -419,7 +419,7 @@ return array(
             <div class="flex items-start mb-4">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
-                    <h3 class="text-xl mb-2 leading-none text-blackblack">:da empresa</h3>
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
                     <h2 class="text-2xl leading-none font-black text-sap-blue">
                         <span class="font-light">FASE 1 - </span> Principiante Ágil
                     </h2>
@@ -468,7 +468,7 @@ return array(
             <div class="flex items-start mb-4">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
-                    <h3 class="text-xl mb-2 leading-none text-blackblack">:da empresa</h3>
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
                     <h2 class="text-2xl leading-none font-black text-sap-blue">
                         <span class="font-light">FASE 2 - </span> Impulsionador Ágil
                     </h2>
@@ -516,7 +516,7 @@ return array(
             <div class="flex items-start mb-4">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
-                    <h3 class="text-xl mb-2 leading-none text-blackblack">:da empresa</h3>
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
                     <h2 class="text-2xl leading-none font-black text-sap-blue">
                         <span class="font-light">FASE 3 - </span> Transformador Ágil
                     </h2>
@@ -563,7 +563,7 @@ return array(
             <div class="flex items-start mb-4">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
-                    <h3 class="text-xl mb-2 leading-none text-blackblack">:da empresa</h3>
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
                     <h2 class="text-2xl leading-none font-black text-sap-blue">
                         <span class="font-light">FASE 4 - </span> Acelerador Ágil
                     </h2>
@@ -611,7 +611,7 @@ return array(
             <div class="flex items-start mb-4">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
-                    <h3 class="text-xl mb-2 leading-none text-blackblack">:da empresa</h3>
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
                     <h2 class="text-2xl leading-none font-black text-sap-blue">
                         <span class="font-light">FASE 5 - </span> Disruptor Ágil
                     </h2>
@@ -658,7 +658,7 @@ return array(
             <div class="flex items-start mb-4">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
-                    <h3 class="text-xl mb-2 leading-none text-blackblack">:da empresa</h3>
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
                     <h2 class="text-2xl leading-none font-black text-sap-blue">
                         <span class="font-light">FASE 1 - </span> Principiante Ágil
                     </h2>
@@ -706,7 +706,7 @@ return array(
             <div class="flex items-start mb-4">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
-                    <h3 class="text-xl mb-2 leading-none text-blackblack">:da empresa</h3>
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
                     <h2 class="text-2xl leading-none font-black text-sap-blue">
                         <span class="font-light">FASE 2 - </span> Impulsionador Ágil
                     </h2>
@@ -757,7 +757,7 @@ return array(
             <div class="flex items-start mb-4">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
-                    <h3 class="text-xl mb-2 leading-none text-blackblack">:da empresa</h3>
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
                     <h2 class="text-2xl leading-none font-black text-sap-blue">
                         <span class="font-light">FASE 3 - </span> Transformador Ágil
                     </h2>
@@ -808,7 +808,7 @@ return array(
             <div class="flex items-start mb-4">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
-                    <h3 class="text-xl mb-2 leading-none text-blackblack">:da empresa</h3>
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
                     <h2 class="text-2xl leading-none font-black text-sap-blue">
                         <span class="font-light">FASE 4 - </span> Acelerador Ágil
                     </h2>
@@ -856,7 +856,7 @@ return array(
             <div class="flex items-start mb-4">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
-                    <h3 class="text-xl mb-2 leading-none text-blackblack">:da empresa</h3>
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
                     <h2 class="text-2xl leading-none font-black text-sap-blue">
                         <span class="font-light">FASE 5 - </span> Disruptor Ágil
                     </h2>
@@ -904,7 +904,7 @@ return array(
             <div class="flex items-start mb-4">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
-                    <h3 class="text-xl mb-2 leading-none text-blackblack">:da empresa</h3>
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
                     <h2 class="text-2xl leading-none font-black text-sap-blue">
                         <span class="font-light">FASE 1 - </span> Principiante Ágil 
                     </h2>
@@ -952,7 +952,7 @@ return array(
             <div class="flex items-start mb-4">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
-                    <h3 class="text-xl mb-2 leading-none text-blackblack">:da empresa</h3>
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
                     <h2 class="text-2xl leading-none font-black text-sap-blue">
                         <span class="font-light">FASE 2 - </span> Impulsionador Ágil
                     </h2>
@@ -1000,7 +1000,7 @@ return array(
             <div class="flex items-start mb-4">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
-                    <h3 class="text-xl mb-2 leading-none text-blackblack">:da empresa</h3>
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
                     <h2 class="text-2xl leading-none font-black text-sap-blue">
                         <span class="font-light">FASE 3 - </span> Transformador Ágil
                     </h2>
@@ -1048,7 +1048,7 @@ return array(
             <div class="flex items-start mb-4">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
-                    <h3 class="text-xl mb-2 leading-none text-blackblack">:da empresa</h3>
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
                     <h2 class="text-2xl leading-none font-black text-sap-blue">
                         <span class="font-light">FASE 4 - </span> Acelerador Ágil 
                     </h2>
@@ -1095,7 +1095,7 @@ return array(
             <div class="flex items-start mb-4">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
-                    <h3 class="text-xl mb-2 leading-none text-blackblack">:da empresa</h3>
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
                     <h2 class="text-2xl leading-none font-black text-sap-blue">
                         <span class="font-light">FASE 5 - </span> Disruptor Ágil
                     </h2>
@@ -1145,7 +1145,7 @@ return array(
             <div class="flex items-start mb-4">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
-                    <h3 class="text-xl mb-2 leading-none text-blackblack">:da empresa</h3>
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
                     <h2 class="text-2xl leading-none font-black text-sap-blue">
                         <span class="font-light">FASE 1 - </span> Principiante Ágil
                     </h2>
@@ -1194,7 +1194,7 @@ return array(
             <div class="flex items-start mb-4">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
-                    <h3 class="text-xl mb-2 leading-none text-blackblack">:da empresa</h3>
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
                     <h2 class="text-2xl leading-none font-black text-sap-blue">
                         <span class="font-light">FASE 2 - </span> Impulsionador Ágil
                     </h2>
@@ -1246,7 +1246,7 @@ return array(
             <div class="flex items-start mb-4">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
-                    <h3 class="text-xl mb-2 leading-none text-blackblack">:da empresa</h3>
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
                     <h2 class="text-2xl leading-none font-black text-sap-blue">
                         <span class="font-light">FASE 3 - </span> Transformador Ágil
                     </h2>
@@ -1301,7 +1301,7 @@ return array(
             <div class="flex items-start mb-4">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
-                    <h3 class="text-xl mb-2 leading-none text-blackblack">:da empresa</h3>
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
                     <h2 class="text-2xl leading-none font-black text-sap-blue">
                         <span class="font-light">FASE 4 - </span> Acelerador Ágil
                     </h2>
@@ -1353,7 +1353,7 @@ return array(
             <div class="flex items-start mb-4">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
-                    <h3 class="text-xl mb-2 leading-none text-blackblack">:da empresa</h3>
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
                     <h2 class="text-2xl leading-none font-black text-sap-blue">
                         <span class="font-light">FASE 5 - </span> Acelerador Ágil
                     </h2>
@@ -1405,7 +1405,7 @@ return array(
             <div class="flex items-start mb-4">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
-                    <h3 class="text-xl mb-2 leading-none text-blackblack">:da empresa</h3>
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
                     <h2 class="text-2xl leading-none font-black text-sap-blue">
                         <span class="font-light">FASE 1 - </span> Principiante Ágil
                     </h2>
@@ -1456,7 +1456,7 @@ return array(
             <div class="flex items-start mb-4">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
-                    <h3 class="text-xl mb-2 leading-none text-blackblack">:da empresa</h3>
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
                     <h2 class="text-2xl leading-none font-black text-sap-blue">
                         <span class="font-light">FASE 2 - </span> Impulsionador Ágil
                     </h2>
@@ -1505,7 +1505,7 @@ return array(
             <div class="flex items-start mb-4">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
-                    <h3 class="text-xl mb-2 leading-none text-blackblack">:da empresa</h3>
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
                     <h2 class="text-2xl leading-none font-black text-sap-blue">
                         <span class="font-light">FASE 3 - </span> Transformador Ágil
                     </h2>
@@ -1557,7 +1557,7 @@ return array(
             <div class="flex items-start mb-4">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
-                    <h3 class="text-xl mb-2 leading-none text-blackblack">:da empresa</h3>
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
                     <h2 class="text-2xl leading-none font-black text-sap-blue">
                         <span class="font-light">FASE 4 - </span> Acelerador Ágil
                     </h2>
@@ -1606,7 +1606,7 @@ return array(
             <div class="flex items-start mb-4">
                 <img class="w-24 mr-4" src=":url" alt="">
                 <div class="flex-1">
-                    <h3 class="text-xl mb-2 leading-none text-blackblack">:da empresa</h3>
+                    <h3 class="text-xl mb-2 leading-none text-blackblack">:company</h3>
                     <h2 class="text-2xl leading-none font-black text-sap-blue">
                         <span class="font-light">FASE 5 - </span> Disruptor Ágil
                     </h2>
