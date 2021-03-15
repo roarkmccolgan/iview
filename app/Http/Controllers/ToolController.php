@@ -653,21 +653,21 @@ class ToolController extends Controller
             if(isset($crm['only'])){
                 if(isset($crm['only']['field'])){
                     if($assessment[$crm['only']['field']] == $crm['only']['value']){
-                        $this->prepareCrmRequest($crm, $request, $assessment->uuid);
+                        $this->prepareCrmRequest($crm, $request, $assessment->uuid, $tracker);
                     }                    
                 }
                 if($crm['only']){
                     if(isset($crm['only']['locale'])){
                         if(App::getLocale() == $crm['only']['locale']){
-                            $this->prepareCrmRequest($crm, $request, $assessment->uuid);
+                            $this->prepareCrmRequest($crm, $request, $assessment->uuid, $tracker);
                         }                    
                     }
                     if(isset($crm['only']['field']) && $assessment[$crm['only']['field']] == $crm['only']['value']){
-                        $this->prepareCrmRequest($crm, $request, $assessment->uuid);
+                        $this->prepareCrmRequest($crm, $request, $assessment->uuid, $tracker);
                     }                    
                 }
             } else {
-                $this->prepareCrmRequest($crm, $request, $assessment->uuid);                
+                $this->prepareCrmRequest($crm, $request, $assessment->uuid, $tracker);
             }
         }
         $subject = trans(session('product.alias').'.email.subject');
@@ -1342,7 +1342,7 @@ class ToolController extends Controller
 
         return response()->json($data);
     }
-    private function prepareCrmRequest($fieldMapping, $request, $reportUuid){
+    private function prepareCrmRequest($fieldMapping, $request, $reportUuid, $tracker = false){
         //send guzzle request
         //dd($request->all());
         $url = $fieldMapping['url'];
