@@ -14,7 +14,7 @@ return array(
     'next'=>'Próximo',
 
     'full_title' => 'IDC Click to be Ágil Assessment Tool',
-    'social_description' => 'I have just completed the IDC Click to be Ágil Assessment Tool – I have got interesting insights. Perhaps it would be interesting for you:',
+    'social_description' => 'Acabei de completar IDC Click to be Ágil Assessment Tool – Eu tenho percepções interessantes. Talvez seja interessante para você:',
 
     'title'=>'Clicar para ser ágil',
     'sub-title'=>'O primeiro passo do seu percurso de agilidade',
@@ -96,49 +96,37 @@ return array(
         <p class="mb-2 mt-4 font-bold">Mas o que quer isto dizer?</p>
         <p class="mb-2 mt-4">Para receber imediatamente um relatório personalizado, por email, com uma análise completa da agilidade da sua empresa e algumas recomendações, preencha o formulário de registo.</p>
         <p class="mb-2 mt-4">Trataremos as suas informações com o máximo respeito, ficando a aguardar a oportunidade para partilhar consigo observações úteis. </p>
-        <p class="mb-2">A privacidade e a segurança das suas informações são importantes para nós. Leia as <a href="/privacy" target="_blank">políticas de privacidade</a> da IDC através da ligação abaixo.</p>
+        <p class="mb-2">A privacidade e a segurança das suas informações são importantes para nós. Leia as <a href="/privacy" target="_blank">políticas de privacidade</a> da IDC.</p>
         <p class="mb-4 font-bold">A equipa da IDC</p>
     ',
-    'complete_thankyou' => 'Obrigado: Primeiro nome,',
+    'complete_thankyou' => 'Obrigado: :Fname,',
     'complete_body' => '
         O seu relatório personalizado chegará brevemente à sua caixa de correio.<br/>
         Se não o receber dentro de 5 minutos, verifique a pasta de spam.<br/>
-        Se mesmo assim não conseguir encontrar a ligação, envie um email para a IDC  (<a href="mailto:podgers@idc.com">podgers@idc.com</a>) e ser-lhe-á enviada uma nova ligação.<br/><br/>
-        Para saber mais sobre a SAP para a sua localização, clique na ligação correspondente abaixo:<br>
-        <a class="text-sap-blue" href="https://www.sap.com/africa/products/sme-business-software.html">SAP.com/África</a><br/>
-        <a class="text-sap-blue" href="https://www.sap.com/mena/products/sme-business-software.html">SAP.com/Médio Oriente</a><br/>
-        <a class="text-sap-blue" href="https://www.sap.com/spain/about/events.html">SAP.com/Espanha</a><br/>
-        <a class="text-sap-blue" href="https://events.sap.com/it/sapitalia/it/feelings">SAP.com/Itália</a><br/>
-        <a class="text-sap-blue" href="https://www.sap.com/portugal/products/sme-business-software.html">SAP.com/Portugal</a><br/>
-        <a class="text-sap-blue" href="https://www.sap.com/turkey/products/sme-business-software.html">SAP.com/Turkey</a><br/>
-        <a class="text-sap-blue" href="https://www.sap.com/index.html">SAP.com global website</a><br/><br/>
+        Se mesmo assim não conseguir encontrar o email, envie um email para a IDC  (<a href="mailto:podgers@idc.com">podgers@idc.com</a>) e ser-lhe-á enviado novamente.<br/><br/>
+        Para saber mais sobre a SAP Portugal, clique no link abaixo:<br>
+        <a class="text-sap-blue" href="https://www.sap.com/portugal/products/sme-business-software.html">SAP.com/Portugal</a><br/><br/>
         Partilhar a ferramenta ',
     'complete_tweet' => 'Acabo de responder à ferramenta de avaliação @IDCEMEA GDPR para @3ds. Interessado?  ',// http://bit.ly/2gslXEh
     'email'=>[
         'subject' => 'IDC Click to be Ágil Assessment',
-        'hi' => 'Hi :Fname',
-        'body' => 'Thank you for completing the assessment, here is the link to download your IDC Agility Assessment Report. This breaks down your results by category and provides you with actionable recommendations.',
-        'link' => 'VIEW YOUR AGILITY SCORE',
-        'extra' => 'Feel free to share this with other departments of your organization and with your customers and partners. You can always invite them to fill in the assessment and compare answers.<br>
+        'hi' => 'Olá, :Fname',
+        'body' => 'Obrigado por completar a avaliação; eis a ligação para transferir o seu relatório de avaliação de agilidade da IDC. Este relatório divide os seus resultados por categoria e apresenta-lhe recomendações passíveis de ação.',
+        'link' => 'VEJA A SUA PONTUAÇÃO DE AGILIDADE',
+        'extra' => 'Não hesite em partilhá-la com outros departamentos da sua organização e com os seus clientes e parceiros. Pode sempre convidá-los para preencher a avaliação e comparar as respostas. https://clicktobeagile.idcready.net/pt.<br>
             <a href="https://clicktobeagile.idcready.net/">https://clicktobeagile.idcready.net/</a><br><br>
-            This assessment has been sponsored by SAP.<br><br>
-            To find out more about SAP for your location, please click the relevant link below:<br>
-            <a class="text-sap-blue" href="https://www.sap.com/africa/products/sme-business-software.html">SAP.com/Africa</a><br/>
-            <a class="text-sap-blue" href="https://www.sap.com/mena/products/sme-business-software.html">SAP.com/Middle East</a><br/>
-            <a class="text-sap-blue" href="https://www.sap.com/spain/about/events.html">SAP.com/Spain</a><br/>
-            <a class="text-sap-blue" href="https://events.sap.com/it/sapitalia/it/feelings">SAP.com/Italy</a><br/>
-            <a class="text-sap-blue" href="https://www.sap.com/portugal/products/sme-business-software.html">SAP.com/Portugal</a><br/>
-            <a class="text-sap-blue" href="https://www.sap.com/turkey/products/sme-business-software.html">SAP.com/Turkey</a><br/>
-            <a class="text-sap-blue" href="https://www.sap.com/index.html">SAP.com global website</a><br/><br/>
-            Share via Twitter and Linkedin below:<br/><br/>
-            <a style="text-decoration: none;" href="http://twitter.com/share?text=I have just completed the IDC Click to be Ágil Assessment Tool – I have got interesting insights. Perhaps it would be interesting for you:&url=https://clicktobeagile.idcready.net">
+            Esta avaliação foi apoiada pela SAP.<br><br>
+            Para saber mais sobre a SAP Portugal, clique no link abaixo:<br>
+            <a class="text-sap-blue" href="https://www.sap.com/portugal/products/sme-business-software.html">SAP.com/Portugal</a><br/><br/>
+            Partilhe através do Twitter e do LinkedIn abaixo:<br/><br/>
+            <a style="text-decoration: none;" href="http://twitter.com/share?text=Acabei de completar IDC Click to be Ágil Assessment Tool – Eu tenho percepções interessantes. Talvez seja interessante para você:&url=https://clicktobeagile.idcready.net/pt">
                 <img src="https://clicktobeagile.idcready.net/images/twitter.png" style="width: 50px;"/>
             </a>&nbsp;&nbsp;&nbsp;
-            <a style="text-decoration: none;" href="https://www.linkedin.com/shareArticle?mini=true&url=https://clicktobeagile.idcready.net&title=&summary=I have just completed the IDC Click to be Ágil Assessment Tool – I have got interesting insights. Perhaps it would be interesting for you:&source=email">
+            <a style="text-decoration: none;" href="https://www.linkedin.com/shareArticle?mini=true&url=https://clicktobeagile.idcready.net/pt&title=&summary=Acabei de completar IDC Click to be Ágil Assessment Tool – Eu tenho percepções interessantes. Talvez seja interessante para você:&source=email">
                 <img src="https://clicktobeagile.idcready.net/images/linkedin.png" style="width: 50px;"/>
             </a><br/>',
-        'regards' => 'Regards',
-        'team' => 'The IDC Team'
+        'regards' => 'Os nossos melhores cumprimentos',
+        'team' => 'A equipa da IDC'
     ],
     'introduction' => '
         <div class="w-5/6 mx-auto">
@@ -180,7 +168,7 @@ return array(
                             <li class="mb-2">Processos</li>
                             <li class="mb-2">CRelações com Clientes</li>
                             <li class="mb-2">Fornecedores e Distribuidores</li>
-                            <li class="mb-2">Experiência das Pessoas (RH) </li>
+                            <li class="mb-2">Experiência dos colaboradores (RH) </li>
                         </ul>
                     </div>
                 </div>

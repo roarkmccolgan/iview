@@ -647,7 +647,7 @@ return [
         ]
     ],
     'people-experience' => [
-        'title' => 'Experiência das pessoas (RH)',
+        'title' => 'Experiência dos colaboradores (RH)',
         'description' => '
             <h1 class="font-sapagile text-2xl sm:text-5xl font-light leading-tight mb-2">Experiência das pessoas (RH)</h1>
             <div class="h-2 bg-sap-orange rounded-full leading-none w-24 mb-2 sm:w-48"></div>
@@ -710,7 +710,7 @@ return [
                 'questions' => [
                     'q14'=>[
                         'type'=>'button',
-                        'question'=>'Com que rapidez é capaz de redirecionar o seu pessoal com base na evolução das necessidades da empresa?',
+                        'question'=>'Com que rapidez é capaz de redirecionar o seu colaboradores com base na evolução das necessidades da empresa?',
                         'name'=> 14,
                         'options'=>[
                             [
@@ -762,7 +762,7 @@ return [
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'Rotatividade e absentismo do pessoal ',
+                                'label'=>'Rotatividade e absentismo dos colaboradores',
                                 'value'=>2,
                                 'checked'=>false,
                             ],
@@ -772,12 +772,12 @@ return [
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'Retorno de opinião dos clientes ',
+                                'label'=>'Opinião por parte dos clientes',
                                 'value'=>3,
                                 'checked'=>false,
                             ],
                             [
-                                'label'=>'Avaliação da experiência dos colaboradores (satisfação dos colaboradores, empenhamento dos colaboradores, etc.)',
+                                'label'=>'Avaliação da experiência dos colaboradores (satisfação dos colaboradores, empenho dos colaboradores, etc.)',
                                 'value'=>3,
                                 'checked'=>false,
                             ]

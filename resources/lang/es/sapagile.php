@@ -208,7 +208,7 @@ return array(
                 <div class="w-1/2">
                     <div class="pr-6">
                         <p class="mb-3 font-bold leading-tight text-lg text-blackblack">
-                            La economía digital, la competencia internacional y la necesidad de responder a los imprevistos representan a la vez desafíos y oportunidades para las startups de rápido crecimiento como la suya.
+                            La economía digital, la competencia internacional y la necesidad de responder a los imprevistos representan a la vez desafíos y oportunidades para las empresas de rápido crecimiento como lo suya.
                         </p>
                         <p class="mb-3 font-bold text-sap-blue">
                             La buena noticia es que tiene el potencial necesario para adaptarse a los cambios en el mercado mucho más rápidamente que otras organizaciones más grandes y complejas. Pero todavía necesita ajustar su empresa para aprovechar su potencial.  
@@ -1032,7 +1032,7 @@ return array(
                 </div>
                 <div class="w-3/5">
                     <div class="p-2 bg-grey-lighter">
-                        <h4 class="italic font-bold mb-4">Recommendations:</h4>
+                        <h4 class="italic font-bold mb-4">Recomendaciones:</h4>
                         <ol class="pl-6 text-sap-blue">
                             <li class="mb-2">Para que la empresa pueda responder a las necesidades de los clientes más rápidamente, IDC recomienda adoptar nuevas medidas en toda la organización. Entre estas se encuentran la puntuación neta del promotor (NPS). Se trata de una manera de valorar si un cliente recomendaría su empresa a otras personas. Plantea un nuevo enfoque en la satisfacción y superación de las expectativas de los clientes, y le permite recopilar más información sobre lo que está ocurriendo con el objetivo de mejorar.</li>
                             <li class="mb-2">Para lograr unas relaciones ágiles con los clientes, también debe crear equipos multidisciplinarios que se centren en los resultados de los clientes y mejoren su experiencia y fidelidad. Las áreas empresariales que sienten que no están en contacto directo con los clientes deben formar parte de este proceso y comprender que pueden influir en la experiencia del cliente a través de sus propias acciones. De este modo, también aumentará el compromiso de los empleados.</li>
