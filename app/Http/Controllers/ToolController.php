@@ -1389,10 +1389,10 @@ class ToolController extends Controller
                 case 'result':
                     $result = $this->howfit['overall']['rating'];
                     $config = '';
-                    if($settings['config']){
+                    if(isset($settings['config'])){
                         $config = config($settings['config'].'.'.$result);
                     }
-                    if($settings['checkforcode']){
+                    if(isset($settings['checkforcode'])){
                         if($tracker){
                             $config = config($settings['checkforcode'].'.'.$tracker.'.'.$result, config($settings['config'].'.'.$result));
                         }
