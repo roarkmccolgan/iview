@@ -653,18 +653,15 @@ class ToolController extends Controller
             if(isset($crm['only'])){
                 if(isset($crm['only']['field'])){
                     if($assessment[$crm['only']['field']] == $crm['only']['value']){
-                        $this->prepareCrmRequest($crm, $request, $assessment->uuid, $tracker);
+                        $this->prepareCrmRequest($crm, $request, $assessment->uuid);
                     }                    
                 }
-                if($crm['only']){
-                    if(isset($crm['only']['locale'])){
-                        if(App::getLocale() == $crm['only']['locale']){
-                            $this->prepareCrmRequest($crm, $request, $assessment->uuid, $tracker);
-                        }                    
-                    }
-                    if(isset($crm['only']['field']) && $assessment[$crm['only']['field']] == $crm['only']['value']){
-                        $this->prepareCrmRequest($crm, $request, $assessment->uuid, $tracker);
+                elseif(isset($crm['only']['locale'])){
+                    if(App::getLocale() == $crm['only']['locale']){
+                        $this->prepareCrmRequest($crm, $request, $assessment->uuid);
                     }                    
+                }elseif(isset($crm['only']['tracker']) && $crm['only']['tracker'] && $tracker){
+                    $this->prepareCrmRequest($crm, $request, $assessment->uuid, $tracker);
                 }
             } else {
                 $this->prepareCrmRequest($crm, $request, $assessment->uuid, $tracker);
