@@ -655,7 +655,7 @@ return [
                 A agilidade de um modelo de negócio completo não é possível sem pessoas ágeis. Não são possíveis pessoas ágeis se os processos de apoio e a gestão não o permitirem.
             </p>
             <p>
-                As perguntas seguintes avaliam até que ponto a sua empresa permite que o seu pessoal seja verdadeiramente ágil no seu trabalho.
+                As perguntas seguintes avaliam até que ponto a sua empresa permite que os seus colaboradores sejam verdadeiramente ágeis no seu trabalho.
             </p>',
         'background' => 'orange',
         'nuggets' => [

@@ -3,7 +3,7 @@
 return array(
     'elqFormName'=>'',
     'developedby'=>'Elaborado por',
-    'sponsoredby'=>'Apoiado por',
+    'sponsoredby'=>'Patrocinado por',
     'restart'=>'Reiniciar avaliação',
     'assoc'=>'Em associação com',
     'sponsors'=>'SAP',
@@ -99,7 +99,7 @@ return array(
         <p class="mb-2">A privacidade e a segurança das suas informações são importantes para nós. Leia as <a href="/privacy" target="_blank">políticas de privacidade</a> da IDC.</p>
         <p class="mb-4 font-bold">A equipa da IDC</p>
     ',
-    'complete_thankyou' => 'Obrigado: :Fname,',
+    'complete_thankyou' => 'Obrigado :Fname,',
     'complete_body' => '
         O seu relatório personalizado chegará brevemente à sua caixa de correio.<br/>
         Se não o receber dentro de 5 minutos, verifique a pasta de spam.<br/>
@@ -109,24 +109,23 @@ return array(
         Partilhar a ferramenta ',
     'complete_tweet' => 'Acabo de responder à ferramenta de avaliação @IDCEMEA GDPR para @3ds. Interessado?  ',// http://bit.ly/2gslXEh
     'email'=>[
-        'subject' => 'IDC Click to be Ágil Assessment',
-        'hi' => 'Olá, :Fname',
-        'body' => 'Obrigado por completar a avaliação; eis a ligação para transferir o seu relatório de avaliação de agilidade da IDC. Este relatório divide os seus resultados por categoria e apresenta-lhe recomendações passíveis de ação.',
-        'link' => 'VEJA A SUA PONTUAÇÃO DE AGILIDADE',
-        'extra' => 'Não hesite em partilhá-la com outros departamentos da sua organização e com os seus clientes e parceiros. Pode sempre convidá-los para preencher a avaliação e comparar as respostas. https://clicktobeagile.idcready.net/pt.<br>
-            <a href="https://clicktobeagile.idcready.net/">https://clicktobeagile.idcready.net/</a><br><br>
-            Esta avaliação foi apoiada pela SAP.<br><br>
-            Para saber mais sobre a SAP Portugal, clique no link abaixo:<br>
-            <a class="text-sap-blue" href="https://www.sap.com/portugal/products/sme-business-software.html">SAP.com/Portugal</a><br/><br/>
+        'subject' => 'Avaliação IDC - Clicar para ser Ágil',
+        'hi' => 'Olá :Fname,',
+        'body' => 'Obrigado por completar a avaliação de agilidade da IDC. Em baixo, poderá encontrar o link para fazer download do seu relatório. Este relatório divide os seus resultados por categoria e apresenta-lhe recomendações de medidas a tomar para que a sua organização se torne mais ágil.',
+        'link' => 'Aceda ao seu relatório personalizado',
+        'extra' => 'Se não consegue visualizar o botão acima, por favor clique <a href="https://clicktobeagile.idcready.net/">aqui/pt</a>.<br/><br/>
+            Não hesite em partilhar os resultados com outros departamentos da sua organização, clientes ou parceiros de negócio. Pode também convidá-los a preencher a avaliação e comparar resultados<br/>
             Partilhe através do Twitter e do LinkedIn abaixo:<br/><br/>
+            <a class="text-sap-blue" href="https://www.sap.com/portugal/products/sme-business-software.html">SAP.com/Portugal</a><br/><br/>
+            Partilhe através do Twitter e LinkedIn::<br/>
             <a style="text-decoration: none;" href="http://twitter.com/share?text=Acabei de completar IDC Click to be Ágil Assessment Tool – Eu tenho percepções interessantes. Talvez seja interessante para você:&url=https://clicktobeagile.idcready.net/pt">
                 <img src="https://clicktobeagile.idcready.net/images/twitter.png" style="width: 50px;"/>
             </a>&nbsp;&nbsp;&nbsp;
             <a style="text-decoration: none;" href="https://www.linkedin.com/shareArticle?mini=true&url=https://clicktobeagile.idcready.net/pt&title=&summary=Acabei de completar IDC Click to be Ágil Assessment Tool – Eu tenho percepções interessantes. Talvez seja interessante para você:&source=email">
                 <img src="https://clicktobeagile.idcready.net/images/linkedin.png" style="width: 50px;"/>
             </a><br/>',
-        'regards' => 'Os nossos melhores cumprimentos',
-        'team' => 'A equipa da IDC'
+        'regards' => 'Os nossos melhores cumprimentos,',
+        'team' => 'A equipa da IDC e SAP Portugal'
     ],
     'introduction' => '
         <div class="w-5/6 mx-auto">
