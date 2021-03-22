@@ -649,7 +649,7 @@ return [
     'people-experience' => [
         'title' => 'Experiência dos colaboradores (RH)',
         'description' => '
-            <h1 class="font-sapagile text-2xl sm:text-5xl font-light leading-tight mb-2">Experiência das pessoas (RH)</h1>
+            <h1 class="font-sapagile text-2xl sm:text-5xl font-light leading-tight mb-2">Experiência dos colaboradores (RH)</h1>
             <div class="h-2 bg-sap-orange rounded-full leading-none w-24 mb-2 sm:w-48"></div>
             <p class="mb-2 text-sm sm:text-base">
                 A agilidade de um modelo de negócio completo não é possível sem pessoas ágeis. Não são possíveis pessoas ágeis se os processos de apoio e a gestão não o permitirem.
@@ -669,7 +669,7 @@ return [
         'complete' => false,
         'pages' => [
             'page1' => [
-                'title' => 'Experiência das pessoas (RH)',
+                'title' => 'Experiência dos colaboradores (RH)',
                 'questions' => [
                     'q13'=>[
                         'type'=>'button',
@@ -706,7 +706,7 @@ return [
                 ]
             ],
             'page2' => [
-                'title' => 'Experiência das pessoas (RH)',
+                'title' => 'Experiência dos colaboradores (RH)',
                 'questions' => [
                     'q14'=>[
                         'type'=>'button',
@@ -743,7 +743,7 @@ return [
                 ]
             ],
             'page3' =>[
-                'title' => 'Experiência das pessoas (RH)',
+                'title' => 'Experiência dos colaboradores (RH)',
                 'questions' => [
                     'q15'=>[
                         'type'=>'checkbox',
