@@ -20,7 +20,7 @@ $manifest = json_decode($json, TRUE);
 			<strong>{{ trans('sapagile.title') }}</strong> - {{ trans('sapagile.sub-title') }}
 		</div>
 		<div class="text-right flex items-center">
-			<div class="mr-12 text-gray-200 whitespace-no-wrap">sponsored by</div>
+			<div class="mr-12 text-gray-200 whitespace-no-wrap">{{ trans('sapagile.sponsoredby') }}</div>
 			<img class="" src="{{ asset('images/tools/15/SAP_logo.svg')}}" alt="" style="width: 20.948mm; height: 10.363mm" />
 		</div>
 	</div>

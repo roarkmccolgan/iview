@@ -138,21 +138,18 @@ return array(
                 <div class="w-2/3">
                     <div class="pr-6">
                         <p class="mb-3">
-                            Nestes tempos difíceis, é um bom começo compreender em que ponto está no seu percurso de agilidade. Ao entender em que fase está neste processo, pode definir um plano de ação para redefinir melhorias de longo prazo para a sua empresa.
+                            Nestes tempos difíceis, é um bom começo compreender em que ponto está no seu percurso de agilidade. Ao entender em que fase está neste processo, pode definir um plano de ação para redefinir melhorias a longo prazo para a sua organização.
                         </p>
                         <p class="mb-3 font-bold text-sap-blue">
-                             Em última análise, pode tornar-se muito melhor a reagir às mudanças no ambiente externo e a garantir que evolui e melhora enquanto empresa. 
+                             Em última análise, pode tornar-se muito melhor a reagir às mudanças externas e a garantir que evolui e melhora enquanto empresa. 
                         </p>
                         <p class="mb-24">
-                            Para ajudar nesse processo, a IDC criou um conjunto de recomendações, com base nas fases em que se encontra a nível dos diferentes elementos de agilidade. Tendo em conta as suas respostas, a IDC coloca a sua empresa na fase: <span class="font-bold text-sap-blue">Stage :stage</span> fase no seu percurso geral de agilidade.<br/> A IDC designa esta fase como <span class="font-bold text-sap-blue">:name</span>.
+                            Para ajudar nesse processo, a IDC criou um conjunto de recomendações, com base nas fases em que se encontra a nível dos diferentes elementos de agilidade. Tendo em conta as suas respostas, a IDC coloca a sua empresa na fase: <span class="font-bold text-sap-blue">Fase :stage</span> fase no seu percurso geral de agilidade.<br/> A IDC designa esta fase como <span class="font-bold text-sap-blue">:name</span>.
                         </p>
                         <p class="font-bold text-blackblack mb-2">
-                            Para saber mais sobre a SAP para a sua localização,<br/>clique na ligação correspondente:
+                            Para saber mais sobre a SAP Portugal, clique aqui:
                         </p>
-                        <a class="text-sap-blue" href="https://www.sap.com/africa/products/sme-business-software.html" target="_blank">África</a> | 
-                        <a class="text-sap-blue" href="https://www.sap.com/mena/products/sme-business-software.html" target="_blank"> Médio Oriente</a> | 
-                        <a class="text-sap-blue" href="https://www.sap.com/spain/products/sme-business-software.html" target="_blank">Espanha</a> | 
-                        <a class="text-sap-blue" href="https://events.sap.com/it/sapitalia/it/feelings" target="_blank">Itália</a>
+                        <a class="text-sap-blue" href="https://sap.com/portugal" target="_blank">sap.com/portugal</a>
                     </div>
                 </div>
                 <div class="w-1/3 bg-grey-lighter">
@@ -163,11 +160,11 @@ return array(
                         </div>
                         <ul class="list-disc pl-12 mt-4">
                             <li class="mb-2">Avaliação Geral</li>
-                            <li class="mb-2">de Planeamento Estratégico</li>
+                            <li class="mb-2">Planeamento Estratégico</li>
                             <li class="mb-2">Processos</li>
-                            <li class="mb-2">CRelações com Clientes</li>
+                            <li class="mb-2">Relações com Clientes</li>
                             <li class="mb-2">Fornecedores e Distribuidores</li>
-                            <li class="mb-2">Experiência dos colaboradores (RH) </li>
+                            <li class="mb-2">Experiência dos Colaboradores</li>
                         </ul>
                     </div>
                 </div>
@@ -198,7 +195,7 @@ return array(
                             A boa notícia é que tem potencial para se adaptar às mudanças do mercado muito mais rapidamente do que organizações maiores e mais complexas. No entanto, continua a precisar de introduzir alguns ajustes na sua empresa para tirar o máximo partido deste facto. 
                         </p>
                         <p class="mb-3">
-                            Com base nas suas respostas à ferramenta de medição de agilidade, a IDC coloca a sua empresa na Fase 1 geral e considera a sua organização como um <span class="font-bold text-sap-blue">Principiante Ágil</span>. Trata-se da primeira etapa do percurso para a agilidade e, embora possa haver muito a fazer, pode progredir rapidamente, concentrando-se em algumas mudanças essenciais na forma como planeia, faz a gestão das pessoas e processos, lida com fornecedores e distribuidores, bem como a forma como aplica a visão do cliente. 
+                            Com base nas suas respostas à avaliação de agilidade, a IDC coloca a sua empresa na Fase 1 e considera a sua organização como um <span class="font-bold text-sap-blue">Principiante Ágil</span>. Trata-se da primeira etapa do percurso para a agilidade e, embora possa haver muito a fazer, pode progredir rapidamente, concentrando-se em algumas mudanças essenciais na forma como planeia, faz a gestão dos colaboradores e processos, lida com fornecedores e distribuidores, bem como a forma como aplica a visão do cliente. 
                         </p>
                         
                     </div>
@@ -206,10 +203,10 @@ return array(
                 <div class="w-1/2">
                     <div class="pl-6">
                         <p class="mb-3">
-                            Os Principiantes Ágeis normalmente reagem às mudanças, em vez de conduzirem as mudanças. Por conseguinte, poderá atrasar-se no processo de aproveitamento das oportunidades. Na pior das hipóteses, pode influenciar a sua vantagem competitiva.
+                            Os Principiantes Ágeis normalmente reagem às mudanças, em vez de conduzirem as mudanças. Por consequência, poderá atrasar-se no processo de aproveitamento das oportunidades. Na pior das hipóteses, pode influenciar a sua vantagem competitiva.
                         </p>
                         <p class="mb-3 italic text-sap-blue">
-                            Mas não se preocupe. O primeiro passo no percurso para a agilidade já foi dado. A IDC apresentou-lhe uma análise dos resultados, além de recomendações específicas sobre o que pode ser feito para impulsionar uma mudança contínua e eficaz. 
+                            Mas não se preocupe. O primeiro passo no percurso para a agilidade já foi dado. A IDC apresenta-lhe uma análise dos resultados, além de recomendações específicas sobre o que pode ser feito para impulsionar uma mudança contínua e eficaz. 
                         </p>
                     </div>
                 </div>
@@ -240,7 +237,7 @@ return array(
                             Tem potencial para se adaptar às necessidades do mercado mais depressa e mais corretamente, assim como para inovar mais rapidamente do que organizações maiores e mais complexas.
                         </p>
                         <p class="mb-3">
-                             Com base nas suas respostas à ferramenta de medição de agilidade, a IDC coloca a sua empresa na Fase 2 geral e considera a sua organização como um <span class="font-bold text-sap-blue"> Impulsionador Ágil</span>. Trata-se da segunda etapa do percurso para a agilidade e, embora ainda possa haver muito a fazer, realizou alguns progressos ou adotou abordagens que o ajudarão a tornar-se ainda mais ágil no futuro. 
+                             Com base nas suas respostas à avaliação de agilidade, a IDC coloca a sua empresa na Fase 2 e considera a sua organização como um <span class="font-bold text-sap-blue"> Impulsionador Ágil</span>. Trata-se da segunda etapa do percurso para a agilidade e, embora ainda possa haver muito a fazer, realizou alguns progressos ou adotou abordagens que o ajudarão a tornar-se ainda mais ágil no futuro. 
                         </p>
                         
                     </div>
@@ -248,7 +245,7 @@ return array(
                 <div class="w-1/2">
                     <div class="pl-6">
                         <p class="mb-3">
-                            Se se concentrar em algumas mudanças essenciais na forma como planeia, faz a gestão das pessoas e processos, lida com fornecedores e distribuidores e aplica a visão do cliente, obterá impactos reais e duradouros em termos de uma atitude mais adaptativa e flexível. A sua empresa poderá, assim, agarrar as oportunidades e obter uma vantagem competitiva.
+                            Se se concentrar em algumas mudanças essenciais na forma como planeia, faz a gestão dos colaboradores e processos, lida com fornecedores e distribuidores e aplica a visão do cliente, obterá impactos reais e duradouros em termos de uma atitude mais flexível. A sua empresa poderá, assim, agarrar as oportunidades e obter uma vantagem competitiva.
                         </p>
                         <p class="mb-3 italic text-sap-blue">
                              A IDC apresentou-lhe uma análise dos seus resultados para que possa compreender o atraso que leva neste processo, além de recomendações específicas sobre o que pode ser feito para impulsionar uma mudança contínua e eficaz. 
@@ -282,7 +279,7 @@ return array(
                             Tem potencial para se adaptar às necessidades do mercado muito mais depressa do que outras organizações como a sua, assim como para inovar mais rapidamente do que organizações maiores e mais complexas. 
                         </p>
                         <p class="mb-3">
-                            Com base nas suas respostas à ferramenta de medição de agilidade, a IDC coloca a sua empresa na <span class="font-bold text-sap-blue">Fase 3</span> geral e classifica a sua organização como um <span class="font-bold text-sap-blue">Transformador Ágil</span>. 
+                            Com base nas suas respostas à avaliação de agilidade, a IDC coloca a sua empresa na <span class="font-bold text-sap-blue">Fase 3</span> e classifica a sua organização como <span class="font-bold text-sap-blue">Tranformadora Ágil</span>. 
                         </p>
                         
                     </div>
@@ -293,10 +290,10 @@ return array(
                             O percurso de agilidade da sua empresa está em andamento ou possui alicerces sólidos a partir dos quais pode criar maior agilidade e reatividade às mudanças no mercado e a formas de conduzir o negócio. 
                         </p>
                         <p class="mb-3">
-                            Se se concentrar em algumas mudanças essenciais na forma como planeia, faz a gestão das pessoas e processos, lida com fornecedores e distribuidores e aplica a visão do cliente, obterá impactos reais e duradouros em termos de uma atitude mais adaptativa e flexível. A sua empresa poderá, assim, agarrar as oportunidades e obter uma vantagem competitiva.
+                            Se se concentrar em algumas mudanças essenciais na forma como planeia, faz a gestão dos colaboradores e processos, lida com fornecedores e distribuidores e aplica a visão do cliente, obterá impactos reais e duradouros em termos de uma atitude mais flexível. A sua empresa poderá, assim, agarrar as oportunidades e obter uma vantagem competitiva.
                         </p>
                         <p class="mb-3 italic text-sap-blue">
-                            A IDC apresentou-lhe uma análise dos seus resultados para permitir-lhe compreender em que aspetos pode ainda estar atrasado neste processo, além de recomendações específicas sobre o que pode ser feito para impulsionar uma mudança contínua e eficaz. 
+                            A IDC apresenta-lhe uma análise dos seus resultados para lhe permitir compreender em que aspetos pode ainda estar atrasado neste processo, além de recomendações específicas sobre o que pode ser feito para impulsionar uma mudança contínua e eficaz. 
                         </p>
                     </div>
                 </div>
@@ -327,7 +324,7 @@ return array(
                             As organizações como a sua podem adaptar-se e ser flexíveis para responder às mudanças no mercado. É particularmente este o caso ao comparar-se a organizações maiores e mais complexas. 
                         </p>
                         <p class="mb-3">
-                            Com base nas suas respostas à ferramenta de medição de agilidade, a IDC coloca a sua empresa na <span class="font-bold text-sap-blue">Fase 4</span> geral e considera a sua organização como um <span class="font-bold text-sap-blue">Acelerador Ágil</span>.
+                            Com base nas suas respostas à avaliação de agilidade, a IDC coloca a sua empresa na <span class="font-bold text-sap-blue">Fase 4</span> e considera a sua organização como um <span class="font-bold text-sap-blue">Acelerador Ágil</span>.
                         </p>
                         <p class="mb-3">
                             O percurso de agilidade da sua empresa está muito avançado, mas pode encontrar níveis ainda maiores de agilidade se se concentrar em várias áreas de melhoria fundamentais. 
@@ -341,10 +338,10 @@ return array(
                             Para muitos, é a partir da Fase 4 que se continua a desenvolver práticas e formas ágeis de conduzir os negócios. Normalmente, as organizações na Fase 4 definiram processos de partilha de informação e estão bem integradas entre departamentos, clientes, fornecedores e distribuidores. Regra geral, têm também estratégias ágeis específicas, seja no âmbito da sua base de colaboradores ou das suas atividades de planeamento. 
                         </p>
                         <p class="mb-3">
-                            Apesar do seu sucesso presente, se se concentrar em introduzir algumas mudanças na forma como planeia, faz a gestão das pessoas e processos, lida com fornecedores e distribuidores e aplica a visão do cliente, obterá impactos reais e duradouros em termos de uma atitude mais adaptativa e flexível. A sua empresa poderá, assim, agarrar as oportunidades e obter níveis ainda maiores em termos de vantagens competitivas. 
+                            Apesar do seu sucesso presente, se se concentrar em introduzir algumas mudanças na forma como planeia, faz a gestão dos colaboradores e processos, lida com fornecedores e distribuidores e aplica a visão do cliente, obterá impactos reais e duradouros em termos de uma atitude mais adaptativa e flexível. A sua empresa poderá, assim, agarrar as oportunidades e obter níveis ainda maiores em termos de vantagens competitivas. 
                         </p>
                         <p class="mb-3 italic text-sap-blue">
-                            A IDC apresentou-lhe uma análise dos seus resultados para lhe permitir compreender em que aspetos pode ainda estar atrasado neste processo, além de recomendações específicas sobre o que pode ser feito para alcançar uma mudança contínua e eficaz.
+                            A IDC apresenta-lhe uma análise dos seus resultados para lhe permitir compreender em que aspetos pode ainda estar atrasado neste processo, além de recomendações específicas sobre o que pode ser feito para alcançar uma mudança contínua e eficaz.
                         </p>
                     </div>
                 </div>
@@ -372,7 +369,7 @@ return array(
                             A economia digital, a concorrência internacional e a necessidade de ser capaz de reagir a forças imprevisíveis representam desafios e oportunidades para novas empresas em rápido crescimento, como a sua.
                         </p>
                         <p class="mb-3 font-bold text-sap-blue">
-                            Com base nas suas respostas à ferramenta de medição de agilidade, a IDC coloca a sua empresa na <span class="font-bold text-sap-blue">Fase 5</span> geral e considera a sua organização como um <span class="font-bold text-sap-blue">Disruptor Ágil</span>. 
+                            Com base nas suas respostas à avaliação de agilidade, a IDC coloca a sua empresa na <span class="font-bold text-sap-blue">Fase 5</span> e considera a sua organização como um <span class="font-bold text-sap-blue">Disruptor Ágil</span>. 
                         </p>
                         <p class="mb-3">
                             O percurso de agilidade da sua organização está muito avançado e figura no topo da tabela em termos da pontuação de avaliação de agilidade da IDC. Isto poderá estar nos seus planos, ou criou simplesmente uma empresa que se pauta por estes princípios. De qualquer forma, possui alicerces sólidos a partir dos quais pode criar maior agilidade e reatividade às mudanças no mercado e a formas de conduzir o negócio.
@@ -388,10 +385,10 @@ return array(
                             A IDC considera as empresas como a sua como Disruptores Ágeis porque é agora capaz de promover mudanças e disrupção nos mercados em que opera. Mais especificamente, tem o potencial de influenciar a forma como os outros trabalham consigo e a forma como os seus clientes adquirem os seus produtos e serviços. 
                         </p>
                         <p class="mb-3">
-                            Mas não durma à sombra dos louros conquistados! Apesar do seu sucesso, se continuar a introduzir mudanças na forma como planeia, faz a gestão das pessoas e processos, lida com fornecedores e distribuidores e aplica a visão do cliente, obterá impactos reais e duradouros em termos de uma atitude mais adaptativa e flexível. A sua empresa poderá, assim, agarrar ainda mais oportunidades e obter níveis ainda maiores em termos de vantagem competitiva. Se não o fizer, a concorrência não tardará a pôr-se a par.
+                            Mas não durma à sombra dos louros conquistados! Apesar do seu sucesso, se continuar a introduzir mudanças na forma como planeia, faz a gestão dos colaboradores e processos, lida com fornecedores e distribuidores e aplica a visão do cliente, obterá impactos reais e duradouros em termos de uma atitude mais flexível. A sua empresa poderá, assim, agarrar ainda mais oportunidades e obter níveis ainda maiores em termos de vantagem competitiva. Se não o fizer, a concorrência não tardará em alcançar o mesmo nível.
                         </p>
                         <p class="mb-3 italic text-sap-blue">
-                            A IDC apresentou-lhe uma análise dos seus resultados para que possa perceber se leva algum atraso em determinadas áreas, juntamente com algumas recomendações específicas sobre o que pode ser feito para impulsionar uma mudança contínua e eficaz no futuro. 
+                            A IDC apresenta-lhe uma análise dos seus resultados para que possa perceber se está em falta em determinadas áreas, juntamente com algumas recomendações específicas sobre o que pode ser feito para impulsionar uma mudança contínua e eficaz no futuro. 
                         </p>
                     </div>
                 </div>
@@ -423,7 +420,7 @@ return array(
                 <div class="w-2/5">
                     <div class="pr-6">
                         <p class="mb-3">
-                             Normalmente, as organizações nesta fase apenas envolvem as chefias superiores nesta atividade e os planos e as metas baseiam-se no desempenho passado.
+                             Normalmente, as organizações nesta fase envolvem apenas as chefias superiores nesta atividade e os planos e as metas baseiam-se no desempenho passado.
                         </p>
                         <p class="mb-3 font-bold text-sap-blue">
                             A investigação da IDC indica que muitas organizações nesta fase ainda consideram o planeamento estratégico como um processo reativo. Tal significa que se baseiam no que aconteceu e não no que pode acontecer no futuro.
@@ -486,9 +483,9 @@ return array(
                     <div class="p-2 bg-grey-lighter">
                         <h4 class="italic font-bold mb-4">Recomendações:</h4>
                         <ol class="pl-6 text-sap-blue">
-                            <li class="mb-2">A adoção de uma estratégia única em todas as funções empresariais aproximará toda a organização no sentido do percurso definido conjuntamente. Para o conseguir, é necessário criar um órgão multifuncional para o planeamento estratégico, que envolva a Gestão, as Finanças, os RH, as Operações, o Marketing, as Vendas e ainda mais parceiros de negócios (quando possível). </li>
+                            <li class="mb-2">A adoção de uma estratégia única em todas as funções empresariais aproximará toda a organização no sentido do percurso definido conjuntamente. Para o conseguir, é necessário criar um órgão multifuncional para o planeamento estratégico, que envolva a Gestão, as Finanças, os RH, as Operações, o Marketing, as Vendas mais parceiros de negócios (quando possível). </li>
                             <li class="mb-2">Este órgão transversal não deve apenas usar os dados baseados no desempenho passado (como vendas, mudanças em termos de procura e operações), mas também tendências de mercado com vista a oportunidades futuras que possam surgir no horizonte.</li>
-                            <li class="mb-2">Existe também uma necessidade de investir em tecnologias que proporcionem uma visão abrangente do desempenho de toda a empresa. São estas que poderão vir a integrar-se melhor na sua empresa, possibilitando uma visão única do que está a acontecer no dia a dia, tornado-se mais apta a fazer previsões.</li>
+                            <li class="mb-2">Existe também uma necessidade de investir em tecnologias que proporcionem uma visão abrangente do desempenho de toda a empresa. São estas que poderão vir a integrar-se melhor na sua empresa, possibilitando uma visão única do que está a acontecer no dia a dia, tornado-se mais apto a fazer previsões.</li>
                         </ol>
                     </div>
                 </div>
@@ -523,7 +520,7 @@ return array(
                             Encontra-se na terceira fase do planeamento estratégico e há aqui algum trabalho a fazer.
                         </p>
                         <p class="mb-3 font-bold text-sap-blue">
-                            Normalmente, as organizações nesta fase de agilidade de planeamento estratégico têm uma estratégia única para toda a empresa, mas com um foco a curto prazo. Considerar apenas os indicadores de vendas mensais ou trimestrais pode resultar num raciocínio executivo pouco esclarecido. Se raciocinar a curto prazo, não será capaz de prever perturbações e a empresa não será capaz de lhes responder com eficácia.  
+                            Normalmente, as organizações nesta fase de agilidade de planeamento estratégico têm uma estratégia única para toda a empresa, mas com um foco a curto prazo. Considerar apenas os indicadores de vendas mensais ou trimestrais pode resultar num raciocínio executivo pouco esclarecedor. Se pensar a curto prazo, não será capaz de prever mudanças e a empresa não será capaz de lhes responder com eficácia.  
                         </p>
                         <p class="mb-3">
                             A IDC descreveu algumas áreas fundamentais a considerar que o ajudarão a melhorar desde já a agilidade do planeamento estratégico. 
@@ -534,8 +531,8 @@ return array(
                     <div class="p-2 bg-grey-lighter">
                         <h4 class="italic font-bold mb-4">Recomendações:</h4>
                         <ol class="pl-6 text-sap-blue">
-                            <li class="mb-2">Analise as suas medidas e métricas básicas, como receitas, lucros e produtividade. Estas são essenciais para proporcionar uma visão geral da empresa, mas mostram uma imagem do desempenho passado e não do que acontecerá no futuro. As empresas com um planeamento estratégico muito mais ágil utilizam normalmente indicadores como o Custo de Aquisição de Clientes (CAC) e o Net Promoter Score (NPS) para mostrar o rumo a seguir pela sua empresa. Tendo em conta estes indicadores, poderá orientar melhor a sua organização no sentido de fatores de crescimento e afastá-la de mercados em declínio, por exemplo. </li>
-                            <li class="mb-2">Procure também investir em tecnologias que ajudem a medir as mudanças que ocorrem na empresa em tempo real. Não espere por números semanais ou mensais sobre marketing ou atividade de vendas. Analise os padrões de vendas ao longo das estações ou com base em mudanças em matéria de produtos ou entregas, etc. Estes podem ser pontos de dados extremamente eficazes para manter a estratégia atualizada e assegurar que todos estejam em sintonia ao nível das diferentes funções empresariais. </li>
+                            <li class="mb-2">Analise as suas medidas e métricas básicas, como receitas, lucros e produtividade. Estas são essenciais para proporcionar uma visão geral da empresa, mas mostram uma imagem do desempenho passado e não do que acontecerá no futuro. As empresas com um planeamento estratégico mais ágil utilizam normalmente indicadores como o Custo de Aquisição de Clientes (CAC) e o Net Promoter Score (NPS) para mostrar o rumo a seguir pela sua empresa. Tendo em conta estes indicadores, poderá orientar melhor a sua organização no sentido do crescimento e afastá-la de mercados em declínio, por exemplo. </li>
+                            <li class="mb-2">Procure também investir em tecnologias que ajudem a medir as mudanças que ocorrem na empresa em tempo real. Não espere por números semanais ou mensais sobre marketing ou atividade de vendas. Analise os padrões de vendas ao longo das estações ou com base em mudanças em matéria-prima de produtos ou entregas, etc. Estes podem ser dados extremamente eficazes para manter a estratégia atualizada e assegurar que todos estejam em sintonia ao nível das diferentes funções empresariais. </li>
                         </ol>
                     </div>
                 </div>
@@ -559,7 +556,7 @@ return array(
             <div>
                 <div>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
-                        Em termos de agilidade no planeamento estratégico, a IDC coloca a sua empresa na Fase 4. Apresentamos abaixo alguns elementos a considerar, bem como recomendações sobre como pode melhorar esta área da sua empresa. 
+                        Em termos de agilidade no planeamento estratégico, a IDC coloca a sua empresa na Fase 4. Apresentamos abaixo alguns elementos a considerar, bem como recomendações sobre como pode melhorar esta área da sua organização. 
                     </p>
                 </div>
             </div>
@@ -570,7 +567,7 @@ return array(
                             Parabéns! A investigação da IDC indica que apenas um quarto das organizações está neste ponto de maturidade em termos de agilidade de planeamento estratégico. 
                         </p>
                         <p class="mb-3 font-bold text-sap-blue">
-                            As organizações nesta fase estão normalmente a passar por um processo de planeamento permanente em lugar de dependerem de ciclos de planeamento anuais ou trimestrais. Muitas estão igualmente a envolver neste processo as várias funções da empresa. 
+                            As organizações nesta fase estão normalmente a passar por um processo de planeamento permanente em vez de dependerem de ciclos de planeamento anuais ou trimestrais. Muitas estão igualmente a envolver neste processo as várias funções da empresa. 
                         </p>
                         <p class="mb-3">
                             A transição para a fase mais avançada de planeamento estratégico requer uma atenção absoluta às oportunidades futuras, mas existem algumas ações importantes que pode realizar para alcançar este objetivo. 
@@ -583,7 +580,7 @@ return array(
                         <ol class="pl-6 text-sap-blue">
                             <li class="mb-2">Aplique uma estratégia de dados que integre informações da sua própria empresa e de fontes externas em tempo real. Invista em tecnologias inteligentes capazes de transformar  em conhecimento e ações, grandes volumes de dados de clientes, fornecedores, tendências de mercado e métricas empresariais. </li>
                             <li class="mb-2">Procure tornar-se mais disruptor! Envolva cada membro da empresa na criação de ideias e na sua implementação, para que a inovação e a descoberta de novas formas de fazer as coisas e de ganhar dinheiro façam parte da cultura empresarial. </li>
-                            <li class="mb-2">3. 3. Certifique-se de que o seu pessoal se sente parte desta estratégia geral. É necessário que todos os colaboradores incorporem a apropriação do plano, garantindo que se sintam parte do processo, bem como do resultado. </li>
+                            <li class="mb-2">Certifique-se de que todos os colaboradores se sentem parte desta estratégia geral. É necessário que todos os colaboradores incorporem a apropriação do plano, garantindo que se sintam parte do processo, bem como do resultado. </li>
                         </ol>
                     </div>
                 </div>
@@ -615,13 +612,13 @@ return array(
                 <div class="w-2/5">
                     <div class="pr-6">
                         <p class="mb-3">
-                             Parabéns, a sua empresa tem uma capacidade de planeamento disruptiva! Normalmente, os disruptores têm prazos do plano à execução muito curtos. Queremos com isto dizer que podem mudar de direção (ou alterar algum elemento da atividade) rapidamente e fazê-lo a nível de todas as suas funções.
+                             Parabéns, a sua empresa tem uma capacidade de planeamento disruptiva! Normalmente, os disruptores têm prazos do plano à execução muito curtos. Queremos com isto dizer que podem mudar de direção (ou alterar algum elemento da atividade) rapidamente e fazê-lo em de todas as suas funções.
                         </p>
                         <p class="mb-3 font-bold text-sap-blue">
                             O planeamento estratégico nesta fase tende a ser um processo contínuo que integra as evoluções da dinâmica do mercado e pode flexibilizar e desenvolver o modelo de negócios em conformidade. 
                         </p>
                         <p class="mb-3">
-                            Manter-se à frente do mercado requer um planeamento altamente adaptável em tempo real. A IDC descreveu algumas considerações importantes nas quais deve continuar a concentrar-se.  
+                            Manter-se à frente do mercado requer um planeamento altamente flaxível em tempo real. A IDC descreveu algumas considerações importantes nas quais deve continuar a concentrar-se.  
                         </p>
                     </div>
                 </div>
@@ -654,7 +651,7 @@ return array(
             <div>
                 <div>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
-                        Ao avaliar a sua abordagem, a IDC conclui que se encontra na Fase 1 na sua agilidade de processos. A IDC indicou alguns elementos a ter em conta e algumas recomendações específicas para a sua empresa.
+                        Ao avaliar a sua abordagem, a IDC conclui que se encontra na Fase 1 na sua agilidade de processos. A IDC indica-lhe alguns elementos a ter em conta e algumas recomendações específicas para a sua empresa.
                     </p>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
                         Uma organização verdadeiramente ágil possui processos (ou “métodos de trabalho”) que são bem definidos e flexíveis. Como resultado, podem dar resposta a requisitos exclusivos dos clientes e às flutuações da procura, bem como aumentar a eficiência e a rapidez de execução.
@@ -665,7 +662,7 @@ return array(
                 <div class="w-2/5">
                     <div class="pr-6">
                         <p class="mb-3">
-                            Normalmente, nesta fase, o maior problema é a falta de uniformização na sua empresa. Tal pode ser prejudicial a médio prazo..
+                            Normalmente, nesta fase, o maior problema é a falta de uniformização na sua empresa. Tal pode ser prejudicial a médio prazo.
                         </p>
                         <p class="mb-3 font-bold text-sap-blue">
                             A boa notícia é que as organizações e as novas empresas em crescimento podem criar processos mais integrados, significativamente mais rápidos do que os seus concorrentes de maior dimensão. Mas é necessário agir desde já. Em seguida indicamos alguns passos iniciais que podem melhorar os seus processos. 
@@ -702,7 +699,7 @@ return array(
             <div>
                 <div>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
-                        Ao avaliar a sua abordagem, a IDC conclui que se encontra na Fase 2 na sua agilidade de processos. A IDC indicou alguns elementos a ter em conta e algumas recomendações específicas para a sua empresa.
+                        Ao avaliar a sua abordagem, a IDC conclui que se encontra na Fase 2 na sua agilidade de processos. A IDC indica-lhe alguns elementos a ter em conta e algumas recomendações específicas para a sua empresa.
                     </p>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
                         Uma organização verdadeiramente ágil possui processos (ou “métodos de trabalho”) que são bem definidos e flexíveis. Como resultado, podem dar resposta a requisitos exclusivos dos clientes e às flutuações da procura, bem como aumentar a eficiência e a rapidez de execução. 
@@ -753,7 +750,7 @@ return array(
             <div>
                 <div>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
-                        Ao avaliar a sua abordagem, a IDC conclui que se encontra na Fase 3 na sua agilidade de processos. A IDC indicou alguns elementos a ter em conta e algumas recomendações específicas para a sua empresa.
+                        Ao avaliar a sua abordagem, a IDC conclui que se encontra na Fase 3 na sua agilidade de processos. A IDC indica-lhe alguns elementos a ter em conta e algumas recomendações específicas para a sua empresa.
                     </p>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
                         Uma organização verdadeiramente ágil possui processos (ou “métodos de trabalho”) que são bem definidos e flexíveis. Como resultado, podem dar resposta a requisitos exclusivos dos clientes e às flutuações da procura, bem como aumentar a eficiência e a rapidez de execução.
@@ -764,19 +761,19 @@ return array(
                 <div class="w-2/5">
                     <div class="pr-6">
                         <p class="mb-3">
-                            Continue, encontra-se na Fase 3 de maturidade de processos e, embora tenha percorrido um longo caminho, ainda há margem para melhorar. A resolução de alguns aspetos importantes terá um grande impacto na sua atividade. 
+                            Encontra-se na Fase 3 de maturidade de processos e, embora tenha percorrido um longo caminho, ainda há margem para melhorar. A resolução de alguns aspetos importantes terá um grande impacto na sua atividade. 
                         </p>
                         <p class="mb-3 font-bold text-sap-blue">
                             Nesta fase, a maioria das organizações simplificou e uniformizou os seus processos de negócio, mas a rapidez das mudanças na economia digital requer processos de negócio que possam adaptar-se continuamente. 
                         </p>
                         <p class="mb-3">
-                            Eis algumas ideias para ajudar a impulsionar a agilidade de processos na sua organização:
+                            Eis algumas ideias para ajudar a impulsionar a agilidade de processos na sua organização.
                         </p>
                     </div>
                 </div>
                 <div class="w-3/5">
                     <div class="p-2 bg-grey-lighter">
-                        <h4 class="italic font-bold mb-4">Recomendações:</h4>
+                        <h4 class="italic font-bold mb-2">Recomendações:</h4>
                         <ol class="pl-6 text-sap-blue">
                             <li class="mb-2">O primeiro passo para a adaptabilidade é a automatização. Tal permite libertar as pessoas de tarefas repetitivas para se concentrarem em atividades de maior valor. Identifique os processos na sua organização que possam ser automatizados ou, pelo menos, simplificados. Deste modo, será possível as pessoas trabalharem em atividades de valor acrescentado, como as interações com os clientes, a inovação ou melhorias. A empresa tornar-se-á também muito mais adaptável às mudanças. Em suma, a agilidade resulta em formas melhores de lidar com a mudança</li>
                             <li class="mb-2">Avalie de que modo pode automatizar os processos para melhorar o fluxo de informações em toda a empresa. Tornar determinados processos mais digitais significa que pode adquirir dados que podem resultar ainda em mais melhorias. Aspetos que não sabia que eram problemas tornam-se evidentes e pode resolvê-los com mais facilidade. Do mesmo modo, pode mais facilmente identificar oportunidades e agir de acordo com elas.</li>
@@ -804,7 +801,7 @@ return array(
             <div>
                 <div>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
-                        Ao avaliar a sua abordagem, a IDC conclui que se encontra na Fase 4 na sua agilidade de processos. A IDC indicou alguns elementos a ter em conta e algumas recomendações específicas para a sua empresa.
+                        Ao avaliar a sua abordagem, a IDC conclui que se encontra na Fase 4 na sua agilidade de processos. A IDC indica-lhe alguns elementos a ter em conta e algumas recomendações específicas para a sua empresa.
                     </p>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
                         Uma organização verdadeiramente ágil possui processos (ou “métodos de trabalho”) que são bem definidos e flexíveis. Como resultado, podem dar resposta a requisitos exclusivos dos clientes e às flutuações da procura, bem como aumentar a eficiência e a rapidez de execução. 
@@ -815,7 +812,7 @@ return array(
                 <div class="w-2/5">
                     <div class="pr-6">
                         <p class="mb-3">
-                            As organizações nesta fase possuem, normalmente, processos de negócio automatizados de ponta a ponta, que lhes permitem gerir o fluxo de informações em toda a empresa. Permitem-lhes ainda tomar decisões importantes com base nessas informações. 
+                            As organizações nesta fase possuem, normalmente, processos de negócio automatizados de ponta-a-ponta, que lhes permitem gerir o fluxo de informações em toda a empresa. Permitem-lhes ainda tomar decisões importantes com base nessas informações. 
                         </p>
                         <p class="mb-3 font-bold text-sap-blue">
                             Mas há sempre margem para melhorias e a necessidade de impulsionar uma vantagem competitiva ainda maior. A concretização de “inovação à escala” (transformar constantemente novas ideias em processos de negócio reais) levá-lo-á à fase final. 
@@ -828,7 +825,7 @@ return array(
                         <ol class="pl-6 text-sap-blue">
                             <li class="mb-2">Se ainda não está a fazê-lo, avalie os seus processos críticos em relação a fatores externos (picos sazonais, períodos de encomendas dos clientes, dados meteorológicos externos, por exemplo). Certifique-se de que estes dados não permanecem isolados em cada um dos departamentos de atividade (operações, vendas, marketing, distribuição, etc.), mas sim comunicados em toda a empresa para serem utilizados​ por todos.</li>
                             <li class="mb-2">Explore o uso de algoritmos de aprendizagem automática que analisam estes conjuntos de dados e apresentam as melhores ações a seguir nos seus vários processos de negócio. Embora possa parecer um salto gigantesco, há muitos parceiros tecnológicos capazes de pôr em prática esta evolução como uma prova de conceito para que possa explorá-la. Centre-se num ou dois aspetos da atividade e veja o impacto que pode ter. </li>
-                            <li class="mb-2">Desenvolva mapas de visualização de processos (formas de apresentar representações visuais dos processos que ocorrem na sua empresa). Pode, assim, pôr em evidência problemas de desempenho e as áreas em que é possível obter ganhos rápidos. Partilhe estes mapas com toda a empresa, incluindo todos os colaboradores e não apenas com as chefias.</li>
+                            <li class="mb-2">Desenvolva mapas de visualização de processos (formas de apresentar representações visuais dos processos que ocorrem na sua empresa). Pode, assim, colocar em evidência problemas de desempenho e as áreas em que é possível obter ganhos rápidos. Partilhe estes mapas com toda a empresa, incluindo todos os colaboradores e não apenas com as chefias.</li>
                         </ol>
                     </div>
                 </div>
@@ -852,7 +849,7 @@ return array(
             <div>
                 <div>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
-                        Ao avaliar a sua abordagem, a IDC conclui que se encontra na Fase 5 na sua agilidade de processos. A IDC indicou alguns elementos a ter em conta e algumas recomendações específicas para a sua empresa.
+                        Ao avaliar a sua abordagem, a IDC conclui que se encontra na Fase 5 na sua agilidade de processos. A IDC indica-lhe alguns elementos a ter em conta e algumas recomendações específicas para a sua empresa.
                     </p>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
                          Uma organização verdadeiramente ágil possui processos (ou “métodos de trabalho”) que são bem definidos e flexíveis. Como resultado, podem dar resposta a requisitos exclusivos dos clientes e às flutuações da procura, bem como aumentar a eficiência e a rapidez de execução.
@@ -922,7 +919,7 @@ return array(
                     <div class="p-2 bg-grey-lighter">
                         <h4 class="italic font-bold mb-4">Recomendações:</h4>
                         <ol class="pl-6 text-sap-blue">
-                            <li class="mb-2">Comece a recolher dados sobre as diferentes necessidades dos clientes. Podem ser exigências por região ou tipo de cliente ou variações sazonais ou de acordo com fatores externos. Este é o primeiro passo para ter uma maior orientação para o cliente. É essencial lançar as bases para uma maior agilidade que lhe permitirá responder com mais facilidade aos clientes no futuro./li>
+                            <li class="mb-2">Comece a recolher dados sobre as diferentes necessidades dos clientes. Podem ser exigências por região ou tipo de cliente ou variações sazonais ou de acordo com fatores externos. Este é o primeiro passo para ter uma maior orientação para o cliente. É essencial lançar as bases para uma maior agilidade que lhe permitirá responder com mais facilidade aos clientes no futuro.</li>
                             <li class="mb-2">Assim que tiver dados suficientes, proceda a uma avaliação financeira do custo adicional e do esforço necessário para adicionar essas variações ao seu portefólio de produtos/serviços. Poderá considerar que não há procura suficiente para introduzir estas mudanças, mas é imperativo determinar antes de mais se assim é, a fim de tomar essa decisão. Além disso, deve compreender com que rapidez pode introduzir estas mudanças e se pode fazê-lo em relação a um grande número de clientes ou apenas em relação a alguns. </li>
                             <li class="mb-2">Identifique os pontos de contacto críticos ao longo do percurso do cliente para garantir que a sua empresa tem um desempenho melhor do que a concorrência. De que modo as pessoas compram e qual é a sua experiência nesta matéria? Comece por pedir a opinião dos clientes e atue de acordo com a mesma, comunicando as suas ações à base de clientes. Há de ficar surpreendido com o impacto deste procedimento! </li>
                         </ol>
@@ -962,7 +959,7 @@ return array(
                             Encontra-se na segunda fase de agilidade nas relações com os clientes. A sua abordagem pode ser um pouco lenta a reagir às necessidades dos clientes. Normalmente, as organizações nesta fase têm uma certa capacidade para adaptar os produtos e os serviços a necessidades específicas dos clientes. No mínimo, podem ajustar os processos para atender à evolução das necessidades dos clientes. Muitas vezes, contudo, o tempo de resposta é demasiado longo, o que pode ter como resultado que fique atrás da concorrência.
                         </p>
                         <p class="mb-3 font-bold text-sap-blue">
-                            Neste caso, o que pode ser feito? A IDC indicou algumas recomendações importantes para melhorar a agilidade nas relações com os clientes. 
+                            Neste caso, o que pode ser feito? A IDC indica-lhe algumas recomendações importantes para melhorar a agilidade nas relações com os clientes. 
                         </p>
                     </div>
                 </div>
@@ -970,7 +967,7 @@ return array(
                     <div class="p-2 bg-grey-lighter">
                         <h4 class="italic font-bold mb-4">Recomendações:</h4>
                         <ol class="pl-6 text-sap-blue">
-                            <li class="mb-2">Compreenda o equilíbrio entre produtos e serviços normalizados e produtos e serviços personalizados. A sua atividade pode basear-se no volume, mas deve interrogar-se sobre se este modelo de negócio é sustentável para o futuro. Crie um portefólio dos produtos e serviços mais lucrativos e torne-os mais consonantes com as necessidades comuns dos clientes.</li>
+                            <li class="mb-2">Compreenda o equilíbrio entre produtos e serviços regulares e produtos e serviços personalizados. A sua atividade pode basear-se no volume, mas deve interrogar-se sobre se este modelo de negócio é sustentável para o futuro. Crie um portefólio dos produtos e serviços mais lucrativos e torne-os mais consonantes com as necessidades comuns dos clientes.</li>
                             <li class="mb-2">Assim que tiver dados suficientes, proceda a uma avaliação financeira do custo adicional e do esforço necessário para adicionar essas variações ao seu portefólio de produtos/serviços. Poderá considerar que não há procura suficiente para introduzir estas mudanças, mas é imperativo determinar antes de mais se assim é, a fim de tomar essa decisão.</li>
                             <li class="mb-2">Paralelamente, é importante criar uma base de dados central de informações dos clientes que seja utilizada para proporcionar visibilidade sobre as necessidades dos clientes às pessoas que trabalham na linha da frente e na retaguarda da empresa. Comece por pedir a opinião dos clientes e comece a atuar de acordo com a mesma.</li>
                         </ol>
@@ -1044,7 +1041,7 @@ return array(
             <div>
                 <div>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
-                        m termos de agilidade nas relações com os clientes, a IDC coloca a sua empresa na Fase 4. Como resultado, a IDC criou um conjunto de recomendações específicas para a sua empresa.
+                        Em termos de agilidade nas relações com os clientes, a IDC coloca a sua empresa na Fase 4. Como resultado, a IDC criou um conjunto de recomendações específicas para a sua empresa.
                     </p>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
                          Os colaboradores que lidam diretamente com os clientes estão em melhor posição para compreender o que desejam e como esses desejos evoluem. As organizações ágeis são muito eficazes a incorporar estas informações na atividade, permitindo que a entrega de produtos e serviços dê uma resposta rápida.
@@ -1141,7 +1138,7 @@ return array(
             <div>
                 <div>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
-                        Com base nos resultados que apresentou, encontra-se na Fase 1 quando se trata de medir a agilidade na forma como trabalha com fornecedores e distribuidores. A IDC indicou abaixo alguns elementos a ter em conta e algumas recomendações específicas para a sua fase de agilidade.
+                        Com base nos resultados que apresentou, encontra-se na Fase 1 quando se trata de medir a agilidade na forma como trabalha com fornecedores e distribuidores. A IDC indica-lhe abaixo alguns elementos a ter em conta e algumas recomendações específicas para a sua fase de agilidade.
                     </p>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
                         As organizações ágeis podem dimensionar as suas operações à escala (ampliando-a ou reduzindo-a) a fim de responder às flutuações da procura. A alavancagem dos fornecedores e dos parceiros para obter uma escala instantânea é uma arte que deve ser dominada para uma empresa se tornar verdadeiramente ágil.
@@ -1152,7 +1149,7 @@ return array(
                 <div class="w-2/5">
                     <div class="pr-6">
                         <p class="mb-3">
-                            As organizações nesta fase têm normalmente relações muito transacionais com os seus fornecedores e distribuidores. Como resultado, as mudanças a nível de fornecedores demoram muitas vezes tempo a realizarem-se e a cooperação baseia-se mais na relação contratual do que no retorno de opiniões e na procura de flexibilidade. Da mesma forma, as relações com os distribuidores consistem em fornecer o que eles exigem ou em informá-los sobre o que a empresa tem e não em trabalhar com eles em parceria. 
+                            As organizações nesta fase têm normalmente relações muito transacionais com os seus fornecedores e distribuidores. Como resultado, as mudanças a nível de fornecedores demoram muitas vezes tempo a realizarem-se e a cooperação baseia-se mais na relação contratual do que em opiniões e na procura de flexibilidade. Da mesma forma, as relações com os distribuidores consistem em fornecer o que eles exigem ou em informá-los sobre o que a empresa tem e não em trabalhar com eles em parceria. 
                         </p>
                         <p class="mb-3 font-bold text-sap-blue">
                             Mas não entre em pânico. As pequenas mudanças podem fazer grandes diferenças nesta fase do seu percurso de agilidade. 
@@ -1190,7 +1187,7 @@ return array(
             <div>
                 <div>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
-                        Com base nos resultados que apresentou, encontra-se na Fase 2 quando se trata de medir a agilidade na forma como trabalha com fornecedores e distribuidores. A IDC indicou abaixo alguns elementos a ter em conta e algumas recomendações específicas para a sua fase de agilidade.
+                        Com base nos resultados que apresentou, encontra-se na Fase 2 quando se trata de medir a agilidade na forma como trabalha com fornecedores e distribuidores. A IDC indica-lhe abaixo alguns elementos a ter em conta e algumas recomendações específicas para a sua fase de agilidade.
                     </p>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
                         As organizações ágeis podem dimensionar as suas operações à escala (ampliando-a ou reduzindo-a) a fim de responder às flutuações da procura. A alavancagem dos fornecedores e dos parceiros para obter uma escala instantânea é uma arte que deve ser dominada para uma empresa se tornar verdadeiramente ágil.
@@ -1216,8 +1213,8 @@ return array(
                         <h4 class="italic font-bold mb-4">Recomendações:</h4>
                         <ol class="pl-6 text-sap-blue">
                             <li class="mb-2">Comece por transitar da partilha irregular de informações com fornecedores e distribuidores para um dos pontos de contacto normais e um calendário para essa troca de informações. Assuma a liderança da comunicação das exigências da empresa e da necessidade de flexibilidade. Dê o exemplo relativamente ao comportamento que deseja dos parceiros e seja claro sobre o que espera da relação.</li>
-                            <li class="mb-2">Crie políticas e processos para reforçar a partilha de informações e perceções com os parceiros, envolvendo os departamentos e as partes interessadas pertinentes.</li>
-                            <li class="mb-2">Crie pontos de análise frequentes para prever problemas futuros e agilizar os estrangulamentos existentes. Mostre aos fornecedores e distribuidores que são essenciais para a sua empresa e que o futuro desta passa por eles. </li>
+                            <li class="mb-2">Crie políticas e processos para reforçar a partilha de informações e perceções com os parceiros, envolvendo os departamentos e as partes interessadas.</li>
+                            <li class="mb-2">Crie pontos de análise frequentes para prever problemas futuros e agilizar os obstáculos existentes. Mostre aos fornecedores e distribuidores que são essenciais para a sua empresa e que o futuro desta passa por eles. </li>
                             <li class="mb-2">Averigue a sua capacidade para serem ágeis, bem como os seus planos para se tornarem mais flexíveis. Irá aprender com eles! Comunique a sua intenção e procure saber como eles reagem.</li>
                         </ol>
                     </div>
@@ -1242,7 +1239,7 @@ return array(
             <div>
                 <div>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
-                        Com base nos resultados que apresentou, encontra-se na Fase 3 quando se trata de medir a agilidade na forma como trabalha com fornecedores e distribuidores. A IDC indicou abaixo alguns elementos a ter em conta e algumas recomendações específicas para a sua fase de agilidade.
+                        Com base nos resultados que apresentou, encontra-se na Fase 3 quando se trata de medir a agilidade na forma como trabalha com fornecedores e distribuidores. A IDC indica-lhe abaixo alguns elementos a ter em conta e algumas recomendações específicas para a sua fase de agilidade.
                     </p>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
                         As organizações ágeis podem dimensionar as suas operações à escala (ampliando-a ou reduzindo-a) a fim de responder às flutuações da procura. A alavancagem dos fornecedores e dos parceiros para obter uma escala instantânea é uma arte que deve ser dominada para uma empresa se tornar verdadeiramente ágil.
@@ -1253,13 +1250,13 @@ return array(
                 <div class="w-2/5">
                     <div class="pr-6">
                         <p class="mb-3">
-                            As organizações na Fase 3 de agilidade com fornecedores e distribuidores estão normalmente a realizar algumas melhorias e ajustamentos nas suas relações e métodos de trabalho. 
+                            As organizações na Fase 3 de agilidade com fornecedores e distribuidores estão normalmente a realizar algumas melhorias e ajustes nas suas relações e métodos de trabalho. 
                         </p>
                         <p class="mb-3">
                             A Fase 3 é muitas vezes o período mais difícil, quando uma organização está a introduzir as maiores mudanças e a colocar a agilidade no centro da sua colaboração com terceiros. 
                         </p>
                         <p class="mb-3 font-bold text-sap-blue">
-                            Uma característica comum é que, embora os pontos de análise frequentes contribuam para a rapidez da mudança, a reação aos mesmos ainda pode ser lenta. Como resultado, a mudança pode basear-se no que aconteceu, em lugar de prever a dinâmica do mercado no futuro. 
+                            Uma característica comum é que, embora os pontos de análise frequentes contribuam para a rapidez da mudança, a reação aos mesmos ainda pode ser lenta. Como resultado, a mudança pode basear-se no que aconteceu, em vez de prever a dinâmica do mercado no futuro. 
                         </p>
                         <p class="mb-3">
                             Em resposta, a IDC identificou algumas recomendações importantes a considerar.
@@ -1271,9 +1268,9 @@ return array(
                         <h4 class="italic font-bold mb-4">Recomendações:</h4>
                         <ol class="pl-6 text-sap-blue">
                             <li class="mb-2">Vá mais além da interação regular e promova o intercâmbio aberto de informações entre os seus fornecedores e a sua equipa para gerir desafios e procurar oportunidades comuns.</li>
-                            <li class="mb-2">Dê o primeiro salto para a integração real, começando (se ainda não o fez) pela integração de ideias de planeamento e dados sobre os ciclos de procura e aportes sazonais, por exemplo. </li>
+                            <li class="mb-2">Dê o primeiro passo para a integração real, começando (se ainda não o fez) pela integração de ideias de planeamento e dados sobre os ciclos de procura e aportes sazonais, por exemplo. </li>
                             <li class="mb-2">Abra um canal de comunicação com o seu distribuidor e os clientes deste ou com os seus clientes diretos. Envolva os seus fornecedores nestas conversas.</li>
-                            <li class="mb-2">Partilhe o planeamento da procura com os fornecedores para mostrar em que áreas e em que momentos podem ser introduzidas mudanças a nível de procura e comece a partilhar a sua intenção de se tornar mais flexível e ágil. Seja frontal a respeito da sua intenção de ser uma empresa verdadeiramente ágil e consiga a sua adesão ao roteiro que preparou.</li>
+                            <li class="mb-2">Partilhe o planeamento da procura com os fornecedores para mostrar em que áreas e em que momentos podem ser introduzidas mudanças a nível de procura e comece a partilhar a sua intenção de se tornar mais flexível e ágil. Seja frontal a respeito da sua intenção de ser uma empresa verdadeiramente ágil e consiga a sua adesão ao plano que preparou.</li>
                         </ol>
                     </div>
                 </div>
@@ -1297,7 +1294,7 @@ return array(
             <div>
                 <div>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
-                        BCom base nos resultados que apresentou, encontra-se na Fase 4 quando se trata de medir a agilidade na forma como trabalha com fornecedores e distribuidores. A IDC indicou abaixo alguns elementos a ter em conta e algumas recomendações específicas para a sua fase de agilidade.
+                        Com base nos resultados que apresentou, encontra-se na Fase 4 quando se trata de medir a agilidade na forma como trabalha com fornecedores e distribuidores. A IDC indica-lhe abaixo alguns elementos a ter em conta e algumas recomendações específicas para a sua fase de agilidade.
                     </p>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
                         As organizações ágeis podem dimensionar as suas operações à escala (ampliando-a ou reduzindo-a) a fim de responder às flutuações da procura. A alavancagem dos fornecedores e dos parceiros para obter uma escala instantânea é uma arte que deve ser dominada para uma empresa se tornar verdadeiramente ágil.
@@ -1314,7 +1311,7 @@ return array(
                             As organizações na Fase 4 partilham normalmente muitos dados relevantes com a sua rede de fornecedores e distribuidores. Como resultado, a agilidade e os tempos de reação melhoram substancialmente. Para muitos, a flexibilidade e a agilidade integradas podem responder aos ciclos de procura e às condições da atividade e as informações partilhadas são utilizadas para planear com flexibilidade as operações.
                         </p>
                         <p class="mb-3">
-                            Mas há mais que pode ser feito. A IDC indicou algumas recomendações específicas para que a colaboração com fornecedores e distribuidores possa apoiar uma agilidade ainda maior. 
+                            Mas há mais que pode ser feito. A IDC indica-lhe algumas recomendações específicas para que a colaboração com fornecedores e distribuidores possa apoiar uma agilidade ainda maior. 
                         </p>
                     </div>
                 </div>
@@ -1322,10 +1319,10 @@ return array(
                     <div class="p-2 bg-grey-lighter">
                         <h4 class="italic font-bold mb-4">Recomendações:</h4>
                         <ol class="pl-6 text-sap-blue">
-                            <li class="mb-2">A integração de sessões de planeamento e a adoção de ferramentas analíticas podem ajudar a projetar e incorporar as flutuações do mercado. Tal ajudará os seus fornecedores a estarem preparados para apoiá-lo quando necessário. Garantirá igualmente que os seus distribuidores entendam o que está na calha e quando. </li>
-                            <li class="mb-2">A este nível, alcançam-se tempos de reação mais rápidos para os distribuidores, com base no retorno permanente de opiniões, que também devem basear-se em perceções de planeamento. </li>
+                            <li class="mb-2">A integração de sessões de planeamento e a adoção de ferramentas analíticas podem ajudar a projetar e incorporar as flutuações do mercado. Tal ajudará os seus fornecedores a estarem preparados para apoiá-lo quando necessário. Garantirá igualmente que os seus distribuidores entendam o que está no plano e quando. </li>
+                            <li class="mb-2">A este nível, alcançam-se tempos de reação mais rápidos para os distribuidores, com base na resposta constante às opiniões, que também devem basear-se em perceções de planeamento. </li>
                             <li class="mb-2">Pode ainda precisar de aperfeiçoar e ativar canais de comunicação, bem como assegurar que toda a empresa apresente e receba estas perceções. </li>
-                            <li class="mb-2">Avalie, melhore e procure um ciclo contínuo de informações que envolva toda a cadeia de abastecimento e distribuição. Invista em políticas e ferramentas que permitam uma reação em tempo real. Trata-se da forma de melhorar a experiência do cliente e minimizar as perturbações para continuar a gerar vantagem competitiva. </li>
+                            <li class="mb-2">Avalie, melhore e procure um ciclo contínuo de informações que envolva toda a cadeia de abastecimento e distribuição. Invista em políticas e ferramentas que permitam uma reação em tempo real. Trata-se da forma de melhorar a experiência do cliente e minimizar as falhas para continuar a gerar vantagem competitiva. </li>
                         </ol>
                     </div>
                 </div>
@@ -1349,7 +1346,7 @@ return array(
             <div>
                 <div>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
-                        Com base nos resultados que apresentou, encontra-se na Fase 5 quando se trata de medir a agilidade na forma como trabalha com fornecedores e distribuidores. A IDC indicou abaixo alguns elementos a ter em conta e algumas recomendações específicas para a sua fase de agilidade.
+                        Com base nos resultados que apresentou, encontra-se na Fase 5 quando se trata de medir a agilidade na forma como trabalha com fornecedores e distribuidores. A IDC indica-lhe abaixo alguns elementos a ter em conta e algumas recomendações específicas para a sua fase de agilidade.
                     </p>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
                         As organizações ágeis podem dimensionar as suas operações à escala (ampliando-a ou reduzindo-a) a fim de responder às flutuações da procura. A alavancagem dos fornecedores e dos parceiros para obter uma escala instantânea é uma arte que deve ser dominada para uma empresa se tornar verdadeiramente ágil.
@@ -1401,7 +1398,7 @@ return array(
             <div>
                 <div>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
-                        Perante a importância da Experiência dos colaboradores, há de ter interesse em saber que se encontra na Fase 1 da sua capacidade. A IDC indicou abaixo alguns elementos importantes a ter em conta.
+                        Perante a importância da Experiência dos colaboradores, há de ter interesse em saber que se encontra na Fase 1 da sua capacidade. A IDC indica-lhe abaixo alguns elementos importantes a ter em conta.
                     </p>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
                         A agilidade de um modelo de negócio completo não é possível sem pessoas ágeis. Só é possível capacitar pessoas ágeis com o apoio dos processos e da gestão. 
@@ -1412,10 +1409,10 @@ return array(
                 <div class="w-2/5">
                     <div class="pr-6">
                         <p class="mb-3">
-                            As organizações na Fase 1 carecem, normalmente, de uma cultura de comunicação. Para muitas, as informações permanecem isoladas a nível dos departamentos e, quando comunicadas a toda a empresa, têm tendência para fluir num sentido descendente para os colaboradores e não num sentido ascendente para as chefias e os decisores. 
+                            As organizações na Fase 1 carecem, normalmente, de uma cultura de comunicação. Para muitas, as informações permanecem isoladas a nível dos departamentos e, quando comunicadas a toda a empresa, têm tendência para fluir num sentido descendente para os colaboradores e não num sentido ascendente para as chefias e decisores. 
                         </p>
                         <p class="mb-3 font-bold text-sap-blue">
-                            As organizações nesta fase normalmente têm estratégias desligadas para gerir as pessoas e os processos. Este aspeto é especialmente crítico se não planearem em torno das preferências e competências dos colaboradores individuais. Assim, a gestão da mudança torna-se impossível.
+                            As organizações nesta fase normalmente não têm estratégias para gerir as pessoas e os processos. Este aspeto é especialmente crítico se não planearem em torno das preferências e competências dos colaboradores individualmente. Assim, a gestão da mudança torna-se impossível.
                         </p>
                         <p class="mb-3">
                             A boa notícia é que muitos desses problemas podem ser tratados e resolvidos rapidamente.
@@ -1452,7 +1449,7 @@ return array(
             <div>
                 <div>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
-                        Perante a importância da Experiência dos colaboradores, há de ter interesse em saber que se encontra na Fase 2 da sua capacidade. A IDC indicou abaixo alguns elementos importantes a ter em conta.
+                        Perante a importância da Experiência dos Colaboradores, há de ter interesse em saber que se encontra na Fase 2 da sua capacidade. A IDC indica-lhe abaixo alguns elementos importantes a ter em conta.
                     </p>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
                         A agilidade de um modelo de negócio completo não é possível sem pessoas ágeis. Só é possível capacitar pessoas ágeis com o apoio dos processos e da gestão. 
@@ -1463,10 +1460,10 @@ return array(
                 <div class="w-2/5">
                     <div class="pr-6">
                         <p class="mb-3">
-                            Poderá haver nas organizações da Fase 2 alguma forma de comunicação e partilha de informações com os colaboradores, mas muitas vezes processa-se de cima para baixo a partir das chefias superiores. São recolhidas poucas informações junto dos colaboradores sobre as suas experiências. Em muitos casos, as suas ideias sobre formas de melhorar as suas funções e a atividade da empresa, em geral, são esquecidas ou ignoradas.
+                            Poderá haver nas organizações que se encontram na Fase 2 alguma forma de comunicação e partilha de informações com os colaboradores, mas muitas vezes processa-se de cima para baixo a partir das chefias superiores. São recolhidas poucas informações junto dos colaboradores sobre as suas experiências. Em muitos casos, as suas ideias sobre formas de melhorar as suas funções e a atividade da empresa, em geral, são esquecidas ou ignoradas.
                         </p>
                         <p class="mb-3 font-bold text-sap-blue">
-                            A avaliação do desempenho baseia-se muitas vezes apenas no retorno de opinião das chefias e pouco se faz para estimular o raciocínio ágil ou formas ágeis de trabalhar. A boa notícia é que muitos desses problemas podem ser tratados e resolvidos rapidamente. 
+                            A avaliação do desempenho baseia-se muitas vezes apenas na opinião das chefias e pouco se faz para estimular o raciocínio ágil ou formas ágeis de trabalhar. A boa notícia é que muitos desses problemas podem ser tratados e resolvidos rapidamente. 
                         </p>
                     </div>
                 </div>
@@ -1501,7 +1498,7 @@ return array(
             <div>
                 <div>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
-                        Perante a importância da Experiência dos colaboradores, há de ter interesse em saber que se encontra na Fase 3 da sua capacidade. A IDC indicou abaixo alguns elementos importantes a ter em conta.
+                        Perante a importância da Experiência dos Colaboradores, há de ter interesse em saber que se encontra na Fase 3 da sua capacidade. A IDC indica-lhe abaixo alguns elementos importantes a ter em conta.
                     </p>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
                         A agilidade de um modelo de negócio completo não é possível sem pessoas ágeis. Só é possível capacitar pessoas ágeis com o apoio dos processos e da gestão. 
@@ -1512,13 +1509,13 @@ return array(
                 <div class="w-2/5">
                     <div class="pr-6">
                         <p class="mb-3">
-                            Encontra-se na Fase 3 da sua experiência com pessoas ágeis e é muito provável que tenha criado cooperação e partilha de informações entre departamentos. Embora represente um progresso considerável, pode não corresponder a um pleno alinhamento.
+                            Encontra-se na Fase 3 da sua experiência com colaboradores ágeis e é muito provável que tenha criado cooperação e partilha de informações entre departamentos. Embora represente um progresso considerável, pode não corresponder a um pleno alinhamento.
                         </p>
                         <p class="mb-3">
                             Normalmente, as organizações nesta fase têm uma avaliação de desempenho uniformizada dos colaboradores. Esta fundamenta-se nos contributos dos seus superiores hierárquicos, mas também de outros colegas.
                         </p>
                         <p class="mb-3 font-bold text-sap-blue">
-                             A Fase 3 é muitas vezes o período mais difícil, quando uma organização está a fazer as maiores mudanças para transitar para um estilo de trabalho verdadeiramente ágil. A IDC indicou algumas considerações importantes para ajudá-lo a continuar esta transformação da sua empresa. 
+                             A Fase 3 é muitas vezes o período mais difícil, quando uma organização está a fazer as maiores mudanças para transitar para um estilo de trabalho verdadeiramente ágil. A IDC indica-lhe algumas considerações importantes para ajudá-lo a continuar esta transformação da sua empresa. 
                         </p>
                     </div>
                 </div>
@@ -1526,9 +1523,9 @@ return array(
                     <div class="p-2 bg-grey-lighter">
                         <h4 class="italic font-bold mb-4">Recomendações:</h4>
                         <ol class="pl-6 text-sap-blue">
-                            <li class="mb-2">Repense a maneira como os diferentes departamentos utilizam as informações sobre o seu pessoal. Uma forma de o fazer é centrar-se na experiência dos colaboradores e como esta difere entre departamentos. Identificar quando as pessoas se sentem descontentes pode resultar numa melhor compreensão dos problemas. Uma equipa mais empenhada é mais produtiva, mas também tem mais probabilidade de trabalhar de formas ágeis e voltadas para a adaptação às mudanças. </li>
+                            <li class="mb-2">Repense a maneira como os diferentes departamentos utilizam as informações sobre os seus colaboradores. Uma forma de o fazer é centrar-se na experiência dos colaboradores e como esta difere entre departamentos. Identificar quando as pessoas se sentem descontentes pode resultar numa melhor compreensão dos problemas. Uma equipa mais empenhada é mais produtiva, mas também tem mais probabilidade de trabalhar de formas ágeis e voltadas para a adaptação às mudanças. </li>
                             <li class="mb-2">Procure formas de estimular a agilidade entre cargos e funções. Referimo-nos à boa colaboração entre os departamentos e às áreas em que há tensões ou problemas. Baseie-se nas melhores práticas já adotadas. Cite exemplos de uma boa colaboração entre determinadas pessoas e departamentos. Alargue estes ensinamentos a toda a empresa. </li>
-                            <li class="mb-2">TPense de que modo pode tornar os cargos e as funções mais flexíveis. Mostrará assim aos colaboradores que podem ter liberdade de movimento dentro da empresa, criando uma integração muito melhor dos conhecimentos, além de resultar numa melhor retenção dos colaboradores.</li>
+                            <li class="mb-2">Pense de que modo pode tornar os cargos e as funções mais flexíveis. Mostrará assim aos colaboradores que podem ter liberdade de movimento dentro da empresa, criando uma integração muito melhor dos conhecimentos, além de resultar numa melhor retenção dos colaboradores.</li>
                             <li class="mb-2">Trabalhe com o departamento de RH e os gestores para obter uma visão integral das necessidades e pontos fortes dos colaboradores. Avalie o sucesso do projeto e a satisfação dos clientes, bem como a forma como se relacionam com a medição do desempenho dos colaboradores.</li>
                         </ol>
                     </div>
@@ -1553,7 +1550,7 @@ return array(
             <div>
                 <div>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
-                        Perante a importância da Experiência dos colaboradores, há de ter interesse em saber que se encontra na Fase 4 da sua capacidade. A IDC indicou abaixo alguns elementos importantes a ter em conta.
+                        Perante a importância da Experiência dos Colaboradores, há de ter interesse em saber que se encontra na Fase 4 da sua capacidade. A IDC indica-lhe abaixo alguns elementos importantes a ter em conta.
                     </p>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
                         A agilidade de um modelo de negócio completo não é possível sem pessoas ágeis. Só é possível capacitar pessoas ágeis com o apoio dos processos e da gestão. 
@@ -1564,10 +1561,10 @@ return array(
                 <div class="w-2/5">
                     <div class="pr-6">
                         <p class="mb-3">
-                            ncontra-se na Fase 4 da sua experiência com pessoas ágeis e é muito provável que tenha criado canais de comunicação e partilha de informações frequentes com os colaboradores, assim como formas de recolher continuamente opiniões.
+                            Encontra-se na Fase 4 da sua experiência com colaboradores ágeis e é muito provável que tenha criado canais de comunicação e partilha de informações frequentes com os colaboradores, assim como formas de recolher continuamente opiniões.
                         </p>
                         <p class="mb-3 font-bold text-sap-blue">
-                            As organizações nesta fase têm normalmente tempos de reação mais rápidos à mudança e são capazes de coordenar facilmente as pessoas com base na evolução das necessidades do mercado. E, embora os colaboradores e a gestão possam estar em sintonia, é possível que ainda sinta dificuldades em introduzir mudanças na empresa com a rapidez que pretende. A IDC indicou algumas considerações importantes para ajudá-lo a continuar esta transformação da sua empresa. 
+                            As organizações nesta fase têm normalmente tempos de reação mais rápidos à mudança e são capazes de coordenar facilmente as pessoas com base na evolução das necessidades do mercado. E, embora os colaboradores e a gestão possam estar em sintonia, é possível que ainda sinta dificuldades em introduzir mudanças na empresa com a rapidez que pretende. A IDC indica-lhe algumas considerações importantes para ajudá-lo a continuar esta transformação da sua empresa. 
                         </p>
                     </div>
                 </div>
@@ -1576,9 +1573,9 @@ return array(
                         <h4 class="italic font-bold mb-4">Recomendações:</h4>
                         <ol class="pl-6 text-sap-blue">
                             <li class="mb-2">Continue a promover uma cultura de partilha e colaboração e a construir uma empresa que incentive e recompense o pensamento ágil, as ideias e as melhorias contínuas. </li>
-                            <li class="mb-2">Crie um processo que permita aos colaboradores aceder a recursos (pessoas, dinheiro, tempo) para perseguir melhorias ou a apoio para serem mais ágeis enquanto pessoas individuais, departamentos e a nível organizativo.</li>
+                            <li class="mb-2">Crie um processo que permita aos colaboradores aceder a recursos (pessoas, dinheiro, tempo) para conseguirem o apoio necessário para serem mais ágeis enquanto pessoas individuais, departamentos e a nível organizacional.</li>
                             <li class="mb-2">Torne a agilidade num indicador-chave de desempenho (KPI) para toda a força de trabalho. Avalie a agilidade das pessoas no trabalho, com base na forma como se adaptam às mudanças, como trabalham com outras pessoas e como geram soluções para problemas e desafios. Trata-se de uma importante exigência que lhe é feita, bem como à sua empresa, mas que é fundamental para que a agilidade funcione. </li>
-                            <li class="mb-2">WTrabalhe com o departamento de RH e os gestores para obter uma visão integral das necessidades e pontos fortes dos colaboradores. Avalie o sucesso do projeto e a satisfação dos clientes, bem como a forma como se relacionam com a medição do desempenho dos colaboradores. </li>
+                            <li class="mb-2">Trabalhe com o departamento de RH e os gestores para obter uma visão integral das necessidades e pontos fortes dos colaboradores. Avalie o sucesso do projeto e a satisfação dos clientes, bem como a forma como se relacionam com a medição do desempenho dos colaboradores. </li>
                         </ol>
                     </div>
                 </div>
@@ -1602,7 +1599,7 @@ return array(
             <div>
                 <div>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
-                        Perante a importância da Experiência dos colaboradores, há de ter interesse em saber que se encontra na Fase 5 da sua capacidade. A IDC indicou abaixo alguns elementos importantes a ter em conta.
+                        Perante a importância da Experiência dos colaboradores, há de ter interesse em saber que se encontra na Fase 5 da sua capacidade. A IDC indica-lhe abaixo alguns elementos importantes a ter em conta.
                     </p>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
                         A agilidade de um modelo de negócio completo não é possível sem pessoas ágeis. Só é possível capacitar pessoas ágeis com o apoio dos processos e da gestão. 
