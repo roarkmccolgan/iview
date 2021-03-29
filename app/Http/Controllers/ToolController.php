@@ -662,6 +662,14 @@ class ToolController extends Controller
                 }elseif(isset($crm['only']['tracker']) && $crm['only']['tracker'] && $tracker){
                     $this->prepareCrmRequest($crm, $request, $assessment->uuid, $tracker);
                 }
+            }elseif(isset($crm['region']) && count($crm['region'])){
+                foreach($crm['region'] as $key => $countries){
+                    foreach($countries as $country){
+                        if($assessment['country'] == $country){
+                             $this->prepareCrmRequest($crm, $request, $assessment->uuid);
+                        }
+                    }
+                }
             } else {
                 $this->prepareCrmRequest($crm, $request, $assessment->uuid, $tracker);
             }
