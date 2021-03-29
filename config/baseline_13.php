@@ -59,12 +59,12 @@ return [
             'fname'=>'required|min:2|max:255',
             'sname'=>'required|min:2|max:255',
             'email'=>'required|email',
-            'tel'=>'required|email',
+            'phone'=>'required',
             'title'=>'required|min:3|max:255',
             'country'=>'required',
             'company'=>'required',
             'terms'=>'required'
-        ]
+        ],
     ],
     'migration' => [
         'baseline' => 8.90,

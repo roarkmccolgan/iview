@@ -565,7 +565,6 @@ class ToolController extends Controller
 
     public function postComplete(SubmitAssessmentsRequest $request)
     {
-
         $this->loadQuestions();
         $this->howfit=Session::get('result');
         $this->baseline = Session::get('baseline');
