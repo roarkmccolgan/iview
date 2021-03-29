@@ -626,8 +626,8 @@ return array(
                     <div class="p-2 bg-grey-lighter">
                         <h4 class="italic font-bold mb-4">Recomendações:</h4>
                         <ol class="pl-6 text-sap-blue">
-                            <li class="mb-2">Para preparar uma estratégia que resista ao tempo, é importante investir em tecnologias inteligentes que integrem contributos de fontes internas e externas em tempo real. Queremos com isto dizer que deve pensar em formas de a tecnologia criar processos ainda mais eficazes de entender o que pode acontecer a seguir e como tal afeta os diferentes departamentos da sua empresa.</li>
-                            <li class="mb-2">À medida que o ritmo da mudança na economia digital acelera, é também importante impulsionar uma abordagem ágil para alterar a estratégia com base em informações em tempo real. Esta poderá consistir em “micromudanças” em termos de marketing ou em mudanças em matéria de embalagens, entrega ou do desenvolvimento mais alargado de produtos e serviços.</li>
+                            <li class="mb-2">Para preparar uma estratégia que resista ao tempo, é importante investir em tecnologias inteligentes que integrem dados de fontes internas e externas em tempo real. Isto quer dizer que deve pensar em formas da tecnologia criar processos ainda mais eficazes para prever o que pode acontecer a seguir e, como tal, influenciar os diferentes departamentos da sua empresa.</li>
+                            <li class="mb-2">À medida que o ritmo da mudança na economia digital acelera, é também importante impulsionar uma abordagem ágil para alterar a estratégia com base em informações em tempo real. Esta poderá consistir em "micro-mudanças" como por exemplo, em termos de marketing ou de máteria-primas dos produtos, entrega ou do desenvolvimento de novos produtos e serviços.</li>
                         </ol>
                     </div>
                 </div>
@@ -871,7 +871,7 @@ return array(
                     <div class="p-2 bg-grey-lighter">
                         <h4 class="italic font-bold mb-4">Recomendações:</h4>
                         <ol class="pl-6 text-sap-blue">
-                            <li class="mb-2">Desenvolva uma visão geral dos seus parceiros, fornecedores e clientes estratégicos e de quais dos seus processos beneficiariam de uma integração ainda maior dos mesmos. Trata-se de criar ainda mais agilidade ao conseguir avançar em conjunto com estes parceiros à medida que reage às mudanças no ambiente empresarial.  </li>
+                            <li class="mb-2">Desenvolva uma visão geral dos seus parceiros, fornecedores e clientes estratégicos e quais dos seus processos beneficiariam de uma integração ainda maior. Trata-se de criar ainda mais agilidade ao conseguir avançar em conjunto com estes parceiros à medida que reage às mudanças empresariais.  </li>
                             <li class="mb-2">Comece a inovar com os seus parceiros, fornecedores e clientes. Crie um ambiente em que partilha ideias desde o início e trabalhe em conjunto para criar novos produtos e serviços e formas de fazer negócio. Além disso, certifique-se de que esta abordagem é ágil e capaz de avançar rapidamente, acompanhando a evolução das exigências conjunturais. </li>
                             <li class="mb-2">Desenvolva uma estratégia tecnológica combinada com o seu ecossistema. Esta será fundamental para alcançar este objetivo e criará ligações ainda mais estreitas entre as organizações envolvidas.</li>
                         </ol>
@@ -1105,7 +1105,7 @@ return array(
                             As necessidades dos clientes constituem a característica central dos objetivos de negócio: reagir às mudanças e questionar proativamente as necessidades. As organizações nesta fase das relações com os clientes estão continuamente a introduzir mudanças e podem implementá-las com rapidez e rigor.
                         </p>
                         <p class="mb-3">
-                            Embora possa ter atingido a fase mais avançada, não é o momento de descansar sobre os louros ou de perder de vista os objetivos. Talvez haja muito mais que pode fazer.
+                            Embora possa ter atingido a fase mais avançada, não é o momento de descansar ou de perder de vista os objetivos. Talvez haja muito mais que pode fazer.
                         </p>
                     </div>
                 </div>
@@ -1363,7 +1363,7 @@ return array(
                             As organizações nesta fase têm normalmente intercâmbios de informações contínuos, transparentes e proativos com os seus fornecedores e distribuidores. Muitas integraram os seus sistemas e compreendem profundamente as atividades umas das outras. A rapidez da mudança a este nível dá-se quase em tempo real, sendo que todas as ferramentas permitem a recolha e a disseminação de informações rapidamente entre todas as partes interessadas. 
                         </p>
                         <p class="mb-3">
-                            Apesar de ser o primeiro do grupo, pergunte a si mesmo se a relação com os seus fornecedores e distribuidores é a melhor possível. Mais importante ainda, é tão transparente e proativa quanto gostaria que fosse? Pense no que mais poderia fazer. 
+                            Apesar de estar no nível 5, pergunte a si mesmo se a relação com os seus fornecedores e distribuidores é a melhor possível. Mais importante ainda, é tão transparente e proativa quanto gostaria que fosse? Pense no que mais poderia fazer. 
                         </p>
                     </div>
                 </div>
@@ -1599,7 +1599,7 @@ return array(
             <div>
                 <div>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
-                        Perante a importância da Experiência dos colaboradores, há de ter interesse em saber que se encontra na Fase 5 da sua capacidade. A IDC indica-lhe abaixo alguns elementos importantes a ter em conta.
+                        Perante a importância da Experiência dos Colaboradores, há de ter interesse em saber que se encontra na Fase 5 da sua capacidade. A IDC indica-lhe abaixo alguns elementos importantes a ter em conta.
                     </p>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
                         A agilidade de um modelo de negócio completo não é possível sem pessoas ágeis. Só é possível capacitar pessoas ágeis com o apoio dos processos e da gestão. 
@@ -1610,16 +1610,16 @@ return array(
                 <div class="w-2/5">
                     <div class="pr-6">
                         <p class="mb-3">
-                            YEncontra-se na Fase 5 na forma como apoia e desenvolve uma experiência ágil dos colaboradores. 
+                            Encontra-se na Fase 5 na forma como apoia e desenvolve uma experiência ágil dos colaboradores. 
                         </p>
                         <p class="mb-3">
-                            As organizações nesta fase distinguem-se normalmente na comunicação entre os colaboradores e a chefia, bem como entre pessoas e departamentos. Têm uma cultura de partilha de informações que impulsiona a transformação da atividade, digital e dos RH em todos os departamentos.  
+                            As organizações nesta fase distinguem-se normalmente na comunicação entre os colaboradores e a chefia, bem como entre pessoas e departamentos. Tem uma cultura de partilha de informações que impulsiona a transformação da atividade, digital e dos RH em todos os departamentos.  
                         </p>
                         <p class="mb-3 font-bold text-sap-blue">
                             As organizações na Fase 5 podem adaptar a sua força de trabalho flexível e planear a longo prazo como uma única unidade, ao invés de aplicar práticas de gestão de sentido descendente.
                         </p>
                         <p class="mb-3">
-                            Mas não descanse sobre os louros! Ainda existem alguns elementos críticos que pode abordar para conseguir um empenhamento ainda maior entre os colaboradores, o que levará a melhores níveis de agilidade e vantagem competitiva.
+                            No entanto, ainda existem alguns elementos críticos que pode abordar para conseguir um empenho ainda maior entre os colaboradores, o que levará a melhores níveis de agilidade e vantagem competitiva.
                         </p>
                     </div>
                 </div>
@@ -1629,8 +1629,8 @@ return array(
                         <ol class="pl-6 text-sap-blue">
                             <li class="mb-2">Sustente esta dinâmica recompensando as melhores práticas em matéria de agilidade de trabalho e adaptabilidade na empresa.</li>
                             <li class="mb-2">Continue a comunicar os benefícios desta partilha de informações e torne-a parte da cultura da empresa. </li>
-                            <li class="mb-2">Centralize o desenvolvimento dos seus colaboradores em torno da formação, desenvolvimento, recrutamento e especialização contínuos. Avalie o desempenho das pessoas em várias frentes: agilidade, comunicação, partilha de valores e trabalho em equipa. Crie mecanismos frequentes e completos de retorno de opinião para apoiar este objetivo e defina os ensinamentos colhidos.</li>
-                            <li class="mb-2">Procure captar conhecimentos de todos os colaboradores e partilhá-los com a empresa em geral. Torne esta aquisição de conhecimentos relevante para o colaborador e o público. Pode basear-se em vídeos, blogues, conversas ou sistemas de camaradagem que estimulem uma mentalidade de aluno-professor. Crie uma cultura de “todos os dias são dias de escola” e “todas as pessoas sabem algo que eu não sei” para que as pessoas sintam desejo de aprender e mudar. </li>
+                            <li class="mb-2">Centralize o desenvolvimento dos seus colaboradores em torno da formação, desenvolvimento, recrutamento e especialização contínuos. Avalie o desempenho das pessoas em várias frentes: agilidade, comunicação, partilha de valores e trabalho em equipa. Crie mecanismos frequentes e completos de satisfação dos colaboradores para apoiar este objetivo e defina as aprendizagens recolhidas.</li>
+                            <li class="mb-2">Procure captar conhecimentos de todos os colaboradores e partilhá-los com a empresa em geral. Torne esta aquisição de conhecimentos relevante para o colaborador e o público. Pode basear-se em vídeos, blogues, conversas ou sistemas de camaradagem que estimulem uma mentalidade de aluno-mentor. Crie uma cultura de “todos os dias são dias de aprendizagem” e “todas as pessoas sabem algo que eu não sei” para que as pessoas sintam desejo de aprender e mudar. </li>
                         </ol>
                     </div>
                 </div>

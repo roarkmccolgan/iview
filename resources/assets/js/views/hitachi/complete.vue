@@ -50,11 +50,11 @@
 								</div>
 								<div class="mb-6 sm:w-1/2">
 									<div class="sm:ml-2">
-										<label class="block uppercase tracking-wide text-grey-light text-xs font-bold mb-2" for="tel">
+										<label class="block uppercase tracking-wide text-grey-light text-xs font-bold mb-2" for="phone">
 											{{ $t('hitachi.leadgen.phone') }}
 										</label>
-										<input class="appearance-none block w-full bg-grey-dark text-black border py-3 px-4 mb-2" :class="[errors.tel ? 'border-red' : '']" id="tel" name="phone" type="tel" @blur="hasError">
-										<p class="text-red text-xs italic" v-show="errors.tel" v-html="$t('hitachi.leadgen.errorPhone')"></p>
+										<input class="appearance-none block w-full bg-grey-dark text-black border py-3 px-4 mb-2" :class="[errors.phone ? 'border-red' : '']" id="phone" name="phone" type="tel" @blur="hasError">
+										<p class="text-red text-xs italic" v-show="errors.phone" v-html="$t('hitachi.leadgen.errorPhone')"></p>
 									</div>
 								</div>
 								<div class="mb-6 sm:w-1/2">
@@ -165,7 +165,7 @@ export default{
 				fname: false,
 				sname: false,
 				email: false,
-				tel: false,
+				phone: false,
 				company: false,
 				title: false,
 				country: false,
