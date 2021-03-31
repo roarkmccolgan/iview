@@ -3,7 +3,7 @@
 return array(
     'elqFormName'=>'',
     'developedby'=>'Desarrollada por',
-    'sponsoredby'=>'Patrocinada por',
+    'sponsoredby'=>'Patrocinado por',
     'restart'=>'Volver a empezar la evaluación',
     'assoc'=>'En asociación con',
     'sponsors'=>'SAP',
@@ -160,15 +160,11 @@ return array(
                              En definitiva, le permite responder mucho mejor a los cambios en el entorno externo y garantizar un mejor desarrollo como empresa.
                         </p>
                         <p class="mb-24">
-                            Para ayudarle, IDC ha elaborado una serie de recomendaciones basadas en la etapa en la que se encuentra según los distintos elementos que conforman la agilidad. Según sus respuestas, IDC sitúa su empresa en la etapa <span class="font-bold text-sap-blue">Stage :stage</span> del camino hacia la agilidad.<br/> IDC denomina esta etapa <span class="font-bold text-sap-blue">:name</span>.
+                            Para ayudarle, IDC ha elaborado una serie de recomendaciones basadas en la etapa en la que se encuentra según los distintos elementos que conforman la agilidad. Según sus respuestas, IDC sitúa su empresa en la <span class="font-bold text-sap-blue">etapa :stage</span> del camino hacia la agilidad.<br/> IDC denomina esta etapa <span class="font-bold text-sap-blue">:name</span>.
                         </p>
                         <p class="font-bold text-blackblack mb-2">
-                             Para obtener más información sobre SAP para su ubicación,<br/>click the relevant link:
+                             Para obtener más información sobre SAP en España, haga <a class="text-sap-blue" href="https://www.sap.com/spain/products/sme-business-software.html" target="_blank">click aquí</a>.
                         </p>
-                        <a class="text-sap-blue" href="https://www.sap.com/africa/products/sme-business-software.html" target="_blank">África</a> | 
-                        <a class="text-sap-blue" href="https://www.sap.com/mena/products/sme-business-software.html" target="_blank">Oriente Medio</a> | 
-                        <a class="text-sap-blue" href="https://www.sap.com/spain/products/sme-business-software.html" target="_blank">España</a> | 
-                        <a class="text-sap-blue" href="https://events.sap.com/it/sapitalia/it/feelings" target="_blank">Italia</a>
                     </div>
                 </div>
                 <div class="w-1/3 bg-grey-lighter">
@@ -250,7 +246,7 @@ return array(
                 <div class="w-1/2">
                     <div class="pr-6">
                         <p class="mb-3 font-bold leading-tight text-lg text-blackblack">
-                            La economía digital, la competencia internacional y la necesidad de responder a los imprevistos representan a la vez desafíos y oportunidades para las startups de rápido crecimiento como la suya.
+                            La economía digital, la competencia internacional y la necesidad de responder a los imprevistos representan a la vez desafíos y oportunidades para las empresas de rápido crecimiento como la suya.
                         </p>
                         <p class="mb-3 font-bold text-sap-blue">
                              Tiene el potencial necesario para adaptarse a los cambios en el mercado más rápidamente y con mayor precisión, así como para innovar a más velocidad que otras organizaciones más grandes y complejas. 
@@ -292,7 +288,7 @@ return array(
                 <div class="w-1/2">
                     <div class="pr-6">
                         <p class="mb-3 font-bold leading-tight text-lg text-blackblack">
-                            La economía digital, la competencia internacional y la necesidad de responder a los imprevistos representan a la vez desafíos y oportunidades para las startups de rápido crecimiento como la suya.
+                            La economía digital, la competencia internacional y la necesidad de responder a los imprevistos representan a la vez desafíos y oportunidades para las empresas de rápido crecimiento como la suya.
                         </p>
                         <p class="mb-3 font-bold text-sap-blue">
                             Tiene el potencial necesario para adaptarse a los cambios en el mercado mucho más rápidamente que otras organizaciones como la suya, así como para innovar a más velocidad que otras organizaciones más grandes y complejas. 
@@ -306,7 +302,7 @@ return array(
                 <div class="w-1/2">
                     <div class="pl-6">
                         <p class="mb-3">
-                            a está en una etapa avanzada del camino hacia la agilidad o dispone de una base sólida desde la que puede ganar aún más agilidad y capacidad de respuesta ante los cambios en el mercado y en la manera de hacer negocios. 
+                            Ya está en una etapa avanzada del camino hacia la agilidad o dispone de una base sólida desde la que puede ganar aún más agilidad y capacidad de respuesta ante los cambios en el mercado y en la manera de hacer negocios. 
                         </p>
                         <p class="mb-3">
                             Si se centra en los cambios relacionados con la planificación, la gestión de personas y procesos, el trato con proveedores y distribuidores y el uso de la información del cliente, podrá mejorar de forma real y duradera su capacidad de adaptación y su flexibilidad. En consecuencia, su empresa podrá aprovechar las oportunidades e impulsar la ventaja competitiva.
@@ -337,7 +333,7 @@ return array(
                 <div class="w-1/2">
                     <div class="pr-6">
                         <p class="mb-3 font-bold leading-tight text-lg text-blackblack">
-                            La economía digital, la competencia internacional y la necesidad de responder a los imprevistos representan a la vez desafíos y oportunidades para las startups de rápido crecimiento como la suya. 
+                            La economía digital, la competencia internacional y la necesidad de responder a los imprevistos representan a la vez desafíos y oportunidades para las empresas de rápido crecimiento como la suya. 
                         </p>
                         <p class="mb-3 font-bold text-sap-blue">
                             Las organizaciones como la suya pueden adaptarse con flexibilidad a los cambios en el mercado. Esto es especialmente cierto en comparación con otras organizaciones más grandes y complejas.  
@@ -385,7 +381,7 @@ return array(
                 <div class="w-1/2">
                     <div class="pr-6">
                         <p class="mb-3 font-bold leading-tight text-lg text-blackblack">
-                            La economía digital, la competencia internacional y la necesidad de responder a los imprevistos representan a la vez desafíos y oportunidades para las startups de rápido crecimiento como la suya.
+                            La economía digital, la competencia internacional y la necesidad de responder a los imprevistos representan a la vez desafíos y oportunidades para las empresas de rápido crecimiento como la suya.
                         </p>
                         <p class="mb-3 font-bold text-sap-blue">
                             En función de las respuestas que ha introducido en la herramienta de evaluación de la agilidad, IDC sitúa su empresa en la <span class="font-bold text-sap-blue">Etapa 5</span> de la evaluación general y la considera una <span class="font-bold text-sap-blue">Disruptiva de agilidad</span>. 
@@ -504,7 +500,7 @@ return array(
                         <ol class="pl-6 text-sap-blue">
                             <li class="mb-2">Si implementa una única estrategia para todas las funciones empresariales podrá orientar toda la empresa hacia la dirección acordada. Para ello, debe crear una junta multidisciplinaria para la planificación estratégica que incluya el departamento de dirección, finanzas, RR. HH., operaciones, marketing, ventas e incluso socios empresariales (siempre que sea posible). </li>
                             <li class="mb-2">Esta junta multidisciplinaria no debe utilizar únicamente datos basados en un rendimiento anterior (como las ventas, los cambios en las demanda y las operaciones), sino que también debe basarse en las tendencias del mercado para obtener una visión de las futuras oportunidades que pueden surgir.</li>
-                            <li class="mb-2">TAsimismo, existe la necesidad de invertir en tecnologías que ofrezcan una visión global del rendimiento en toda la empresa. Estas tecnologías podrían integrarse mejor y proporcionar a la empresa una única visión de lo que sucede en el día a día con el objetivo de realizar mejores predicciones.</li>
+                            <li class="mb-2">Asimismo, existe la necesidad de invertir en tecnologías que ofrezcan una visión global del rendimiento en toda la empresa. Estas tecnologías podrían integrarse mejor y proporcionar a la empresa una única visión de lo que sucede en el día a día con el objetivo de realizar mejores predicciones.</li>
                         </ol>
                     </div>
                 </div>
@@ -586,7 +582,7 @@ return array(
                             ¡Felicidades! Según los estudios de IDC, solo un cuarto de las empresas se encuentra en este punto en términos de agilidad en la planificación estratégica. 
                         </p>
                         <p class="mb-3 font-bold text-sap-blue">
-                            as organizaciones de esta etapa suelen someterse a un proceso de planificación constante, en lugar de basarse en ciclos de planificación anuales o trimestrales. En muchas de ellas, todas las funciones empresariales también están implicadas en este proceso. 
+                            Las organizaciones de esta etapa suelen someterse a un proceso de planificación constante, en lugar de basarse en ciclos de planificación anuales o trimestrales. En muchas de ellas, todas las funciones empresariales también están implicadas en este proceso. 
                         </p>
                         <p class="mb-3">
                              Para pasar a la etapa más avanzada de la planificación estratégica se requiere un enfoque detallado en las oportunidades futuras, pero hay algunos puntos clave que debe tener en cuenta para lograrlo. 
@@ -599,7 +595,7 @@ return array(
                         <ol class="pl-6 text-sap-blue">
                             <li class="mb-2">Implemente una estrategia de datos que integre la información de su propia empresa y la información de fuentes externas en tiempo real. Invierta en tecnologías inteligentes que puedan transformar grandes cantidades de datos de clientes, proveedores, tendencias de mercado y métricas empresariales en información y acciones. </li>
                             <li class="mb-2">¡Intente ser más disruptivo! Implique a cada uno de los miembros de la empresa en la creación de ideas y su implementación, de modo que la innovación y las nuevas maneras de hacer las cosas y de ganar dinero pasen a formar parte de la cultura de la empresa. </li>
-                            <li class="mb-2">3. 3. Asegúrese de que su personal se siente parte de esta estrategia global. Necesita que cada empleado se haga responsable del plan y que se implique en el proceso y, por consiguiente, en los resultados.</li>
+                            <li class="mb-2">Asegúrese de que su personal se siente parte de esta estrategia global. Necesita que cada empleado se haga responsable del plan y que se implique en el proceso y, por consiguiente, en los resultados.</li>
                         </ol>
                     </div>
                 </div>
@@ -684,7 +680,7 @@ return array(
                             Por lo general, el principal problema en esta etapa es la falta de estandarización en la empresa, algo que puede resultar perjudicial a corto plazo. 
                         </p>
                         <p class="mb-3 font-bold text-sap-blue">
-                             La buena noticia es que las organizaciones y startups en crecimiento son capaces de crear procesos más integrados con mucha más rapidez que sus competidores más grandes. Pero debe actuar ahora. A continuación le mostramos algunos pasos que puede seguir para mejorar sus procesos. 
+                             La buena noticia es que las organizaciones y empresas en crecimiento son capaces de crear procesos más integrados con mucha más rapidez que sus competidores más grandes. Pero debe actuar ahora. A continuación le mostramos algunos pasos que puede seguir para mejorar sus procesos. 
                         </p>
                     </div>
                 </div>
@@ -902,7 +898,7 @@ return array(
     'customer-relationships-1' => '
         <div class="pb w-5/6 mx-auto">
             <div class="h-1 overflow-hidden">
-                <h1 class="text-white">CRelaciones con los clientes</h1>
+                <h1 class="text-white">Relaciones con los clientes</h1>
             </div>
             <div class="flex items-start mb-4">
                 <img class="w-24 mr-4" src=":url" alt="">
@@ -938,7 +934,7 @@ return array(
                     <div class="p-2 bg-grey-lighter">
                         <h4 class="italic font-bold mb-4">Recomendaciones:</h4>
                         <ol class="pl-6 text-sap-blue">
-                            <li class="mb-2">Empiece a recopilar datos sobre los diferentes requisitos de los clientes. Puede tratarse de demandas por región o tipo de cliente o de variaciones por temporada o factores externos. Este es el primer paso para centrarse más en los clientes. Es esencial construir una base que le permita ganar agilidad y responder más fácilmente a los clientes en el futuro./li>
+                            <li class="mb-2">Empiece a recopilar datos sobre los diferentes requisitos de los clientes. Puede tratarse de demandas por región o tipo de cliente o de variaciones por temporada o factores externos. Este es el primer paso para centrarse más en los clientes. Es esencial construir una base que le permita ganar agilidad y responder más fácilmente a los clientes en el futuro.</li>
                             <li class="mb-2">Cuando disponga de datos suficientes, realice una evaluación financiera sobre los costes y esfuerzos adicionales necesarios para añadir estas variaciones a su cartera de productos o servicios. Puede parecer que no hay suficiente demanda para justificar estos cambios, pero primero debe comprobarlo para tomar la decisión adecuada. También debe saber con cuánta rapidez podría efectuar los cambios y si podría implementarlos para muchos clientes o solo para unos cuantos. </li>
                             <li class="mb-2">Identifique los puntos de contacto críticos en el recorrido de compra del cliente para asegurarse de que su empresa se sitúa por delante de la competencia. ¿Cómo es el proceso de compra y la experiencia de los clientes? Empiece a preguntar la opinión a los clientes y actúe en consecuencia, comunicando estas acciones a la base de clientes. ¡Los resultados le sorprenderán! </li>
                         </ol>
@@ -1217,7 +1213,7 @@ return array(
                 <div class="w-2/5">
                     <div class="pr-6">
                         <p class="mb-3">
-                            Las organizaciones que se encuentran esta etapa están en contacto regularmente con sus proveedores y distribuidores, pero esta comunicación suele estar basada en el contrato y ser unidimensional. Pueden producirse pequeñas mejoras, pero la estructura es limitada y, la frecuencia, irregular. Se recopilan formalmente muy pocos problemas para garantizar su resolución. 
+                            Las organizaciones que se encuentran en esta etapa están en contacto regularmente con sus proveedores y distribuidores, pero esta comunicación suele estar basada en el contrato y ser unidimensional. Pueden producirse pequeñas mejoras, pero la estructura es limitada y, la frecuencia, irregular. Se recopilan formalmente muy pocos problemas para garantizar su resolución. 
                         </p>
                         <p class="mb-3 font-bold text-sap-blue">
                             Otra característica común es que en este tipo de relación la flexibilidad es mínima. La velocidad de cambio se basa en gran medida en el tipo de cambio solicitado, con una gestión local de los cambios más sencillos y sin un enfoque uniforme en toda la empresa.
@@ -1232,7 +1228,7 @@ return array(
                         <h4 class="italic font-bold mb-4">Recomendaciones:</h4>
                         <ol class="pl-6 text-sap-blue">
                             <li class="mb-2">Empiece pasando de un intercambio irregular de la información con proveedores y distribuidores a una serie de puntos de contacto estandarizados y un programa de intercambio específico. Potencie la comunicación de los requisitos empresariales y la necesidad de flexibilidad. Dé ejemplo cuando se relacione con sus socios y sea claro a la hora de expresar qué es lo que desea obtener de esa relación.</li>
-                            <li class="mb-2">Cree directrices y procesos para impulsar el uso compartido de la información con los socios, implicando a los departamentos y a las partes interesadas que corresponda..</li>
+                            <li class="mb-2">Cree directrices y procesos para impulsar el uso compartido de la información con los socios, implicando a los departamentos y a las partes interesadas que corresponda.</li>
                             <li class="mb-2">Diseñe puntos de revisión frecuentes para anticiparse a futuros problemas y optimizar los cuellos de botella existentes. Demuestre a los proveedores y distribuidores que son esenciales para su empresa y que deben encarar el futuro conjuntamente. </li>
                             <li class="mb-2">Analice cuál es su nivel de agilidad y qué planes tienen para ganar flexibilidad: sin duda, podrá aprender de ellos. Manifieste su intención y extraiga información de su reacción.</li>
                         </ol>
@@ -1340,7 +1336,7 @@ return array(
                         <ol class="pl-6 text-sap-blue">
                             <li class="mb-2">Las sesiones de planificación integradas y el uso de herramientas analíticas pueden ayudarle a predecir y adaptarse a las fluctuaciones en el mercado. De este modo, los proveedores estarán preparados para ofrecerle soporte cuando lo necesite, y los distribuidores, a su vez, podrán conocer los pasos que están por llegar. </li>
                             <li class="mb-2">En esta etapa, los distribuidores logran rápidos tiempos de respuesta gracias a un intercambio constante, que también debería basarse en la información sobre la planificación.</li>
-                            <li class="mb-2">YPuede que aún necesite perfeccionar y activar los canales de comunicación y garantizar que se está intercambiando esta información en toda la empresa. </li>
+                            <li class="mb-2">Puede que aún necesite perfeccionar y activar los canales de comunicación y garantizar que se está intercambiando esta información en toda la empresa. </li>
                             <li class="mb-2">Analice, mejore y busque un ciclo de información continuo que implique a toda la cadena de suministro y distribución. Invierta en directrices y herramientas que permitan una respuesta en tiempo real. Esta es la manera de mejorar la experiencia del cliente y de minimizar la disrupción con el objetivo de seguir ganando ventaja competitiva. </li>
                         </ol>
                     </div>
@@ -1420,7 +1416,7 @@ return array(
                         La experiencia con el personal es esencial, por lo que le interesará saber que se encuentra en la Etapa 1 en relación con esta área. A continuación, IDC le proporciona algunos elementos clave que debe tener en cuenta.
                     </p>
                     <p class="mb-2 font-bold leading-tight text-blackblack">
-                        La experiencia con el personal es esencial, por lo que le interesará saber que se encuentra en la Etapa 1 en relación con esta área. A continuación, IDC le proporciona algunos elementos clave que debe tener en cuenta. 
+                        La experiencia con el personal es esencial, por lo que le interesará saber qué se encuentra en la Etapa 1 en relación con esta área. A continuación, IDC le proporciona algunos elementos clave que debe tener en cuenta. 
                     </p>
                 </div>
             </div>
@@ -1431,7 +1427,7 @@ return array(
                             Por lo general, las organizaciones que se encuentran en la etapa 1 carecen de una cultura de la comunicación. En muchas de ellas, la información está retenida en silos entre los departamentos y, cuando se comunica a toda la empresa, tiende a llegar a los empleados, pero no a la dirección ni a los responsables de la toma de decisiones. 
                         </p>
                         <p class="mb-3 font-bold text-sap-blue">
-                            Las organizaciones que es encuentran en esta etapa suelen implementar estrategias desconectadas para gestionar el personal y los procesos. Esto resulta especialmente crítico cuando se planifica en función de las preferencias y habilidades de un empleado concreto. En consecuencia, resulta imposible gestionar los cambios.
+                            Las organizaciones que se encuentran en esta etapa suelen implementar estrategias desconectadas para gestionar el personal y los procesos. Esto resulta especialmente crítico cuando se planifica en función de las preferencias y habilidades de un empleado concreto. En consecuencia, resulta imposible gestionar los cambios.
                         </p>
                         <p class="mb-3">
                             La buena noticia es que muchos de estos problemas se pueden resolver rápidamente.
@@ -1592,7 +1588,7 @@ return array(
                         <h4 class="italic font-bold mb-4">Recomendaciones:</h4>
                         <ol class="pl-6 text-sap-blue">
                             <li class="mb-2">Siga fomentando una cultura del uso compartido y de la colaboración y construyendo una empresa que impulse y premie el pensamiento ágil, las ideas y las mejoras continuas. </li>
-                            <li class="mb-2">ree un proceso que permita a los empleados acceder a los recursos (personal, tiempo y dinero) con el objetivo de buscar mejoras o impulse la agilidad en el ámbito individual, departamental y organizativo.</li>
+                            <li class="mb-2">Cree un proceso que permita a los empleados acceder a los recursos (personal, tiempo y dinero) con el objetivo de buscar mejoras o impulse la agilidad en el ámbito individual, departamental y organizativo.</li>
                             <li class="mb-2">Convierta la agilidad en un indicador de rendimiento clave (KPI, por sus siglas en inglés) para todo el personal. Valore la agilidad del personal en el puesto de trabajo, en función de su adaptación al cambio, de cómo trabajan con los demás y de cómo obtienen soluciones cuando surgen problemas y desafíos. Sin duda, se trata de un cometido exigente para usted y la empresa, pero es esencial si desea ganar agilidad. </li>
                             <li class="mb-2">Trabaje con el departamento de RR. HH. y con la dirección para obtener una visión completa de las necesidades y las fortalezas de los empleados. Evalúe el éxito de un proyecto y la satisfacción de los clientes y cómo puede relacionarlos con la evaluación del rendimiento de los empleados.  </li>
                         </ol>
