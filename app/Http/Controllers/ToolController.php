@@ -662,12 +662,10 @@ class ToolController extends Controller
                 }elseif(isset($crm['only']['tracker']) && $crm['only']['tracker'] && $tracker){
                     $this->prepareCrmRequest($crm, $request, $assessment->uuid, $tracker);
                 }
-            }elseif(isset($crm['region']) && count($crm['region'])){
-                foreach($crm['region'] as $key => $countries){
-                    foreach($countries as $country){
-                        if($assessment['country'] == $country){
-                             $this->prepareCrmRequest($crm, $request, $assessment->uuid);
-                        }
+            }elseif(isset($crm['country']) && count($crm['country'])){
+                foreach($crm['country'] as $country => $region){
+                    if($assessment['country'] == $country){
+                         $this->prepareCrmRequest($crm, $request, $assessment->uuid);
                     }
                 }
             } else {
@@ -1397,8 +1395,9 @@ class ToolController extends Controller
                         $config = config($settings['config'].'.'.$result);
                     }
                     if(isset($settings['checkforcode'])){
-                        if($tracker){
-                            $config = config($settings['checkforcode'].'.'.$tracker.'.'.$result, config($settings['config'].'.'.$result));
+                        if(isset($fieldMapping['country'])){
+                            $code = $fieldMapping['country'][$request->country];
+                            $config = config($settings['checkforcode'].'.'.$code.'.'.$result, config($settings['config'].'.'.$result));                            
                         }
                     }
                     $query[$fieldKey] = $config;
@@ -1454,7 +1453,6 @@ class ToolController extends Controller
                 $query[$key] = $value;
             }
         }
-        //dd($query);
         $this->dispatch(new SendCrmRequest($url, $query, 'POST', $headers, $auth, $body));
     }
 
