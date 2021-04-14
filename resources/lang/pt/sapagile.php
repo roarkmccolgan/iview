@@ -113,11 +113,13 @@ return array(
         'hi' => 'Olá :Fname,',
         'body' => 'Obrigado por completar a avaliação de agilidade da IDC. Em baixo, poderá encontrar o link para fazer download do seu relatório. Este relatório divide os seus resultados por categoria e apresenta-lhe recomendações de medidas a tomar para que a sua organização se torne mais ágil.',
         'link' => 'Aceda ao seu relatório personalizado',
-        'extra' => 'Se não consegue visualizar o botão acima, por favor clique <a href="https://clicktobeagile.idcready.net/">aqui/pt</a>.<br/><br/>
-            Não hesite em partilhar os resultados com outros departamentos da sua organização, clientes ou parceiros de negócio. Pode também convidá-los a preencher a avaliação e comparar resultados<br/>
-            Partilhe através do Twitter e do LinkedIn abaixo:<br/><br/>
+        'dont_see_text' => 'Se não consegue visualizar o botão acima,',
+        'dont_see_link' => 'por favor clique aqui',
+        'extra' => 'Não hesite em partilhar os resultados com outros departamentos da sua organização, clientes ou parceiros de negócio. Pode também convidá-los a preencher a <a href="https://clicktobeagile.idcready.net/pt">avaliação</a> e comparar resultados<br/>
+            <a href="https://clicktobeagile.idcready.net/pt">https://clicktobeagile.idcready.net/pt</a><br><br>
+            Esta avaliação foi patrocinada pela SAP. Para saber mais sobre a SAP, clique no link abaixo:
             <a class="text-sap-blue" href="https://www.sap.com/portugal/products/sme-business-software.html">SAP.com/Portugal</a><br/><br/>
-            Partilhe através do Twitter e LinkedIn::<br/>
+            Partilhe através do Twitter e LinkedIn:<br/><br/>
             <a style="text-decoration: none;" href="http://twitter.com/share?text=Acabei de completar IDC Click to be Ágil Assessment Tool – Eu tenho percepções interessantes. Talvez seja interessante para você:&url=https://clicktobeagile.idcready.net/pt">
                 <img src="https://clicktobeagile.idcready.net/images/twitter.png" style="width: 50px;"/>
             </a>&nbsp;&nbsp;&nbsp;
