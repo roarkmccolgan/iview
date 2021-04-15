@@ -204,7 +204,7 @@ ul li, ol li {
 							</tr>
 							@endif
 						</table>
-						<p>{!!trans(session('product.alias').'.email.dont_see_text')!!}<a href="{{ session('url').session('localeUrl').'download/'.$assessment->uuid }}">{!!trans(session('product.alias').'.email.dont_see_link')!!}</a></p>
+						<p>{!!trans(session('product.alias').'.email.dont_see_text')!!} <a href="{{ session('url').session('localeUrl').'download/'.$assessment->uuid }}">{!!trans(session('product.alias').'.email.dont_see_link')!!}</a></p>
 						@if(Lang::has(session('product.alias').'.email.extra'))
 						<p>{!!trans(session('product.alias').'.email.extra')!!}</p>
 						@endif
