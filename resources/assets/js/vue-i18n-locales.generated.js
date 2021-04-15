@@ -7594,7 +7594,7 @@ export default {
             "complete_tweet": "Acabo de responder à ferramenta de avaliação @IDCEMEA GDPR para @3ds. Interessado?  ",
             "email": {
                 "subject": "Avaliação IDC - Clicar para ser Ágil",
-                "hi": "Olá {Fname},",
+                "hi": "Olá {Fname}",
                 "body": "Obrigado por completar a avaliação de agilidade da IDC. Em baixo, poderá encontrar o link para fazer download do seu relatório. Este relatório divide os seus resultados por categoria e apresenta-lhe recomendações de medidas a tomar para que a sua organização se torne mais ágil.",
                 "link": "Aceda ao seu relatório personalizado",
                 "dont_see_text": "Se não consegue visualizar o botão acima,",
