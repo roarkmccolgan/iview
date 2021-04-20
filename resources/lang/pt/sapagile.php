@@ -113,18 +113,18 @@ return array(
         'hi' => 'Olá :Fname',
         'body' => 'Obrigado por completar a avaliação de agilidade da IDC. Em baixo, poderá encontrar o link para fazer download do seu relatório. Este relatório divide os seus resultados por categoria e apresenta-lhe recomendações de medidas a tomar para que a sua organização se torne mais ágil.',
         'link' => 'Aceda ao seu relatório personalizado',
-        'dont_see_text' => 'Se não consegue visualizar o botão acima,',
-        'dont_see_link' => 'por favor clique aqui',
+        'dont_see_text' => 'Se não consegue visualizar o botão acima, por favor clique',
+        'dont_see_link' => 'aqui',
         'extra' => 'Não hesite em partilhar os resultados com outros departamentos da sua organização, clientes ou parceiros de negócio. Pode também convidá-los a preencher a <a href="https://clicktobeagile.idcready.net/pt">avaliação</a> e comparar resultados.<br/>
             <a href="https://clicktobeagile.idcready.net/pt">https://clicktobeagile.idcready.net/pt</a><br><br>
-            Esta avaliação foi patrocinada pela SAP. Para saber mais sobre a SAP, clique no link abaixo:
+            Esta avaliação foi patrocinada pela SAP. Para saber mais sobre a SAP, clique no link abaixo:<br/>
             <a class="text-sap-blue" href="https://www.sap.com/portugal/products/sme-business-software.html">SAP.com/Portugal</a><br/><br/>
             Partilhe através do Twitter e LinkedIn:<br/><br/>
             <a style="text-decoration: none;" href="http://twitter.com/share?text=Acabei de completar IDC Click to be Ágil Assessment Tool – Eu tenho percepções interessantes. Talvez seja interessante para você:&url=https://clicktobeagile.idcready.net/pt">
-                <img src="https://clicktobeagile.idcready.net/images/twitter.png" style="width: 50px;"/>
+                <img src="https://clicktobeagile.idcready.net/images/twitter.png" width="50" height="50"/>
             </a>&nbsp;&nbsp;&nbsp;
             <a style="text-decoration: none;" href="https://www.linkedin.com/shareArticle?mini=true&url=https://clicktobeagile.idcready.net/pt&title=&summary=Acabei de completar IDC Click to be Ágil Assessment Tool – Eu tenho percepções interessantes. Talvez seja interessante para você:&source=email">
-                <img src="https://clicktobeagile.idcready.net/images/linkedin.png" style="width: 50px;"/>
+                <img src="https://clicktobeagile.idcready.net/images/linkedin.png" width="50" height="50"/>
             </a><br/>',
         'regards' => 'Os nossos melhores cumprimentos,',
         'team' => 'A equipa da IDC e SAP Portugal'
@@ -146,7 +146,7 @@ return array(
                              Em última análise, pode tornar-se muito melhor a reagir às mudanças externas e a garantir que evolui e melhora enquanto empresa. 
                         </p>
                         <p class="mb-24">
-                            Para ajudar nesse processo, a IDC criou um conjunto de recomendações, com base nas fases em que se encontra a nível dos diferentes elementos de agilidade. Tendo em conta as suas respostas, a IDC coloca a sua empresa na fase: <span class="font-bold text-sap-blue">Fase :stage</span> fase no seu percurso geral de agilidade.<br/> A IDC designa esta fase como <span class="font-bold text-sap-blue">:name</span>.
+                            Para ajudar nesse processo, a IDC criou um conjunto de recomendações, com base nas fases em que se encontra a nível dos diferentes elementos de agilidade. Tendo em conta as suas respostas, a IDC coloca a sua empresa na: <span class="font-bold text-sap-blue">Fase :stage</span> no seu percurso geral de agilidade.<br/> A IDC designa esta fase como <span class="font-bold text-sap-blue">:name</span>.
                         </p>
                         <p class="font-bold text-blackblack mb-2">
                             Para saber mais sobre a SAP Portugal, clique aqui:
@@ -250,7 +250,7 @@ return array(
                             Se se concentrar em algumas mudanças essenciais na forma como planeia, faz a gestão dos colaboradores e processos, lida com fornecedores e distribuidores e aplica a visão do cliente, obterá impactos reais e duradouros em termos de uma atitude mais flexível. A sua empresa poderá, assim, agarrar as oportunidades e obter uma vantagem competitiva.
                         </p>
                         <p class="mb-3 italic text-sap-blue">
-                             A IDC apresentou-lhe uma análise dos seus resultados para que possa compreender o atraso que leva neste processo, além de recomendações específicas sobre o que pode ser feito para impulsionar uma mudança contínua e eficaz. 
+                             A IDC apresenta-lhe uma análise dos seus resultados para que possa compreender o atraso que leva neste processo, além de recomendações específicas sobre o que pode ser feito para impulsionar uma mudança contínua e eficaz. 
                         </p>
                     </div>
                 </div>
@@ -485,7 +485,7 @@ return array(
                     <div class="p-2 bg-grey-lighter">
                         <h4 class="italic font-bold mb-4">Recomendações:</h4>
                         <ol class="pl-6 text-sap-blue">
-                            <li class="mb-2">A adoção de uma estratégia única em todas as funções empresariais aproximará toda a organização no sentido do percurso definido conjuntamente. Para o conseguir, é necessário criar um órgão multifuncional para o planeamento estratégico, que envolva a Gestão, as Finanças, os RH, as Operações, o Marketing, as Vendas mais parceiros de negócios (quando possível). </li>
+                            <li class="mb-2">A adoção de uma estratégia única em todas as funções empresariais aproximará toda a organização no sentido do percurso definido conjuntamente. Para o conseguir, é necessário criar um órgão multifuncional para o planeamento estratégico, que envolva a Gestão, as Finanças, os RH, as Operações, o Marketing, as Vendas e parceiros de negócios (quando possível). </li>
                             <li class="mb-2">Este órgão transversal não deve apenas usar os dados baseados no desempenho passado (como vendas, mudanças em termos de procura e operações), mas também tendências de mercado com vista a oportunidades futuras que possam surgir no horizonte.</li>
                             <li class="mb-2">Existe também uma necessidade de investir em tecnologias que proporcionem uma visão abrangente do desempenho de toda a empresa. São estas que poderão vir a integrar-se melhor na sua empresa, possibilitando uma visão única do que está a acontecer no dia a dia, tornado-se mais apto a fazer previsões.</li>
                         </ol>

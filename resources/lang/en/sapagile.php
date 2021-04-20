@@ -144,10 +144,10 @@ return array(
             <a class="text-sap-blue" href="https://www.sap.com/index.html">SAP.com global website</a><br/><br/>
             Share via Twitter and Linkedin below:<br/><br/>
             <a style="text-decoration: none;" href="http://twitter.com/share?text=I have just completed the IDC Click to be Agile Assessment Tool – I have got interesting insights. Perhaps it would be interesting for you:&url=https://clicktobeagile.idcready.net">
-                <img src="https://clicktobeagile.idcready.net/images/twitter.png" style="width: 50px;"/>
+                <img src="https://clicktobeagile.idcready.net/images/twitter.png" width="50" height="50"/>
             </a>&nbsp;&nbsp;&nbsp;
             <a style="text-decoration: none;" href="https://www.linkedin.com/shareArticle?mini=true&url=https://clicktobeagile.idcready.net&title=&summary=I have just completed the IDC Click to be Agile Assessment Tool – I have got interesting insights. Perhaps it would be interesting for you:&source=email">
-                <img src="https://clicktobeagile.idcready.net/images/linkedin.png" style="width: 50px;"/>
+                <img src="https://clicktobeagile.idcready.net/images/linkedin.png" width="50" height="50"/>
             </a><br/>',
         'regards' => 'Regards',
         'team' => 'The IDC Team'

@@ -105,14 +105,8 @@ return array(
          Recibirá su informe personalizado en breve en su bandeja de entrada.<br/>
         Revise la carpeta de correo no deseado si no lo recibe en 5 minutos.<br/>
         Si no encuentra el enlace, escriba un correo electrónico a IDC (<a href="mailto:podgers@idc.com">podgers@idc.com</a>) y le enviaremos un nuevo enlace.<br/><br/>
-        Para obtener más información sobre SAP en su ubicación, haga clic en el enlace que corresponda:<br>
-        <a class="text-sap-blue" href="https://www.sap.com/africa/products/sme-business-software.html">SAP.com/África</a><br/>
-        <a class="text-sap-blue" href="https://www.sap.com/mena/products/sme-business-software.html">SAP.com/Oriente Medio</a><br/>
-        <a class="text-sap-blue" href="https://www.sap.com/spain/about/events.html">SAP.com/España</a><br/>
-        <a class="text-sap-blue" href="https://events.sap.com/it/sapitalia/it/feelings">SAP.com/Italia </a><br/>
-        <a class="text-sap-blue" href="https://www.sap.com/portugal/products/sme-business-software.html">SAP.com/Portugal</a><br/>
-        <a class="text-sap-blue" href="https://www.sap.com/turkey/products/sme-business-software.html">SAP.com/Turkey</a><br/>
-        <a class="text-sap-blue" href="https://www.sap.com/index.html">SAP.com global website</a><br/><br/>
+        Para obtener más información sobre SAP, haga clic en el enlace siguiente :<br>
+        <a class="text-sap-blue" href="https://www.sap.com/spain/products/sme-business-software.html">Software de gestión para pymes | SAP</a><br/><br/>
         Compartir la herramienta ',
     'complete_tweet' => 'Acabo de utilizar la herramienta de evaluación del RGPD de @IDCEMEA para @3ds. ¿Está interesado?  ',// http://bit.ly/2gslXEh
     'email'=>[
@@ -125,20 +119,14 @@ return array(
         'extra' => 'No dude en compartirlo con otros departamentos de su empresa, clientes y socios. Puede invitarles en cualquier momento a completar la evaluación para comparar sus respuestas.<br>
             <a href="https://clicktobeagile.idcready.net/es/">https://clicktobeagile.idcready.net/es/</a><br><br>
             Esta evaluación está patrocinada por SAP.<br><br>
-            Para obtener más información sobre SAP en su ubicación, haga clic en el enlace correspondiente:<br>
-            <a class="text-sap-blue" href="https://www.sap.com/africa/products/sme-business-software.html">SAP.com/Africa</a><br/>
-            <a class="text-sap-blue" href="https://www.sap.com/mena/products/sme-business-software.html">SAP.com/Middle East</a><br/>
-            <a class="text-sap-blue" href="https://www.sap.com/spain/about/events.html">SAP.com/Spain</a><br/>
-            <a class="text-sap-blue" href="https://events.sap.com/it/sapitalia/it/feelings">SAP.com/Italy</a><br/>
-            <a class="text-sap-blue" href="https://www.sap.com/portugal/products/sme-business-software.html">SAP.com/Portugal</a><br/>
-            <a class="text-sap-blue" href="https://www.sap.com/turkey/products/sme-business-software.html">SAP.com/Turkey</a><br/>
-            <a class="text-sap-blue" href="https://www.sap.com/index.html">SAP.com global website</a><br/><br/>
+            Para obtener más información sobre SAP, haga clic en el enlace siguiente :<br>
+            <a class="text-sap-blue" href="https://www.sap.com/spain/products/sme-business-software.html">Software de gestión para pymes | SAP</a><br/><br/>
             Share via Twitter and Linkedin below:<br/><br/>
             <a style="text-decoration: none;" href="http://twitter.com/share?text=I have just completed the IDC Click to be Agile Assessment Tool – I have got interesting insights. Perhaps it would be interesting for you:&url=https://clicktobeagile.idcready.net">
-                <img src="https://clicktobeagile.idcready.net/images/twitter.png" style="width: 50px;"/>
+                <img src="https://clicktobeagile.idcready.net/images/twitter.png"  width="50" height="50"/>
             </a>&nbsp;&nbsp;&nbsp;
             <a style="text-decoration: none;" href="https://www.linkedin.com/shareArticle?mini=true&url=https://clicktobeagile.idcready.net&title=&summary=I have just completed the IDC Click to be Agile Assessment Tool – I have got interesting insights. Perhaps it would be interesting for you:&source=email">
-                <img src="https://clicktobeagile.idcready.net/images/linkedin.png" style="width: 50px;"/>
+                <img src="https://clicktobeagile.idcready.net/images/linkedin.png"  width="50" height="50"/>
             </a><br/>',
         'regards' => 'Regards',
         'team' => 'The IDC Team'
