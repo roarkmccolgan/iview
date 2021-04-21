@@ -120,10 +120,10 @@ return array(
             Esta avaliação foi patrocinada pela SAP. Para saber mais sobre a SAP, clique no link abaixo:<br/>
             <a class="text-sap-blue" href="https://www.sap.com/portugal/products/sme-business-software.html">SAP.com/Portugal</a><br/><br/>
             Partilhe através do Twitter e LinkedIn:<br/><br/>
-            <a style="text-decoration: none;" href="http://twitter.com/share?text=Acabei de completar IDC Click to be Ágil Assessment Tool – Eu tenho percepções interessantes. Talvez seja interessante para você:&url=https://clicktobeagile.idcready.net/pt">
+            <a style="text-decoration: none;" href="http://twitter.com/share?text=Acabei de completar a avaliação “Clicar para ser Ágil” da IDC com resultados muito interessantes. Quão ágil é a sua organização? Experimente também.&url=https://clicktobeagile.idcready.net/pt">
                 <img src="https://clicktobeagile.idcready.net/images/twitter.png" width="50" height="50"/>
             </a>&nbsp;&nbsp;&nbsp;
-            <a style="text-decoration: none;" href="https://www.linkedin.com/shareArticle?mini=true&url=https://clicktobeagile.idcready.net/pt&title=&summary=Acabei de completar IDC Click to be Ágil Assessment Tool – Eu tenho percepções interessantes. Talvez seja interessante para você:&source=email">
+            <a style="text-decoration: none;" href="https://www.linkedin.com/shareArticle?mini=true&url=https://clicktobeagile.idcready.net/pt&title=&summary=Acabei de completar a avaliação “Clicar para ser Ágil” da IDC com resultados muito interessantes. Quão ágil é a sua organização? Experimente também.&source=email">
                 <img src="https://clicktobeagile.idcready.net/images/linkedin.png" width="50" height="50"/>
             </a><br/>',
         'regards' => 'Os nossos melhores cumprimentos,',
@@ -281,7 +281,7 @@ return array(
                             Tem potencial para se adaptar às necessidades do mercado muito mais depressa do que outras organizações como a sua, assim como para inovar mais rapidamente do que organizações maiores e mais complexas. 
                         </p>
                         <p class="mb-3">
-                            Com base nas suas respostas à avaliação de agilidade, a IDC coloca a sua empresa na <span class="font-bold text-sap-blue">Fase 3</span> e classifica a sua organização como <span class="font-bold text-sap-blue">Tranformadora Ágil</span>. 
+                            Com base nas suas respostas à avaliação de agilidade, a IDC coloca a sua empresa na <span class="font-bold text-sap-blue">Fase 3</span> e classifica a sua organização como u <span class="font-bold text-sap-blue">Tranformadora Ágil</span>. 
                         </p>
                         
                     </div>
