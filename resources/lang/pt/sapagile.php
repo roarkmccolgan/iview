@@ -115,7 +115,7 @@ return array(
         'link' => 'Aceda ao seu relatório personalizado',
         'dont_see_text' => 'Se não consegue visualizar o botão acima, por favor clique',
         'dont_see_link' => 'aqui',
-        'extra' => 'Não hesite em partilhar os resultados com outros departamentos da sua organização, clientes ou parceiros de negócio. Pode também convidá-los a preencher a <a href="https://clicktobeagile.idcready.net/pt">avaliação</a> e comparar resultados.<br/>
+        'extra' => 'Não hesite em partilhar os resultados com outros departamentos da sua organização, clientes ou parceiros de negócio. Pode também convidá-los a preencher a avaliação e comparar resultados.<br/>
             <a href="https://clicktobeagile.idcready.net/pt">https://clicktobeagile.idcready.net/pt</a><br><br>
             Esta avaliação foi patrocinada pela SAP. Para saber mais sobre a SAP, clique no link abaixo:<br/>
             <a class="text-sap-blue" href="https://www.sap.com/portugal/products/sme-business-software.html">SAP.com/Portugal</a><br/><br/>
