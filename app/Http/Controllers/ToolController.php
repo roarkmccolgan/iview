@@ -1346,7 +1346,6 @@ class ToolController extends Controller
     }
     private function prepareCrmRequest($fieldMapping, $request, $reportUuid, $tracker = false){
         //send guzzle request
-        //dd($request->all());
         $url = $fieldMapping['url'];
         $auth = isset($fieldMapping['auth']) ? [$fieldMapping['auth']['username'],$fieldMapping['auth']['password']] : '[]';
         $body = isset($fieldMapping['body']) ? $fieldMapping['body'] : 'body';
@@ -1398,6 +1397,15 @@ class ToolController extends Controller
                         if(isset($fieldMapping['country'])){
                             $code = $fieldMapping['country'][$request->country];
                             $config = config($settings['checkforcode'].'.'.$code.'.'.$result, config($settings['config'].'.'.$result));                            
+                        }
+                    }
+                    $query[$fieldKey] = $config;
+                    break;
+                case 'mapping':
+                    if(isset($settings['checkforcode'])){
+                        if(isset($fieldMapping['country'])){
+                            $code = $fieldMapping['country'][$request->country];
+                            $config = config($settings['checkforcode'].'.'.$code.'.'.$settings['key']);                            
                         }
                     }
                     $query[$fieldKey] = $config;

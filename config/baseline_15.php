@@ -68,11 +68,11 @@ return [
             'stage5' => 'OD-00150471',
         ],
         'offer_title' => [
-            'stage1' => 'IDC Click2BeAgile. The first step in your agility journey / Agile Disruptor',
-            'stage2' => 'IDC Click2BeAgile. The first step in your agility journey / Agile Beginner',
+            'stage1' => 'IDC Click2BeAgile. The first step in your agility journey / Agile Beginner',
+            'stage2' => 'IDC Click2BeAgile. The first step in your agility journey / Agile Mover',
             'stage3' => 'IDC Click2BeAgile. The first step in your agility journey / Agile Transformer',
-            'stage4' => 'IDC Click2BeAgile. The first step in your agility journey / Agile Mover',
-            'stage5' => 'IDC Click2BeAgile. The first step in your agility journey / Agile Accelerator',
+            'stage4' => 'IDC Click2BeAgile. The first step in your agility journey / Agile Accelerator',
+            'stage5' => 'IDC Click2BeAgile. The first step in your agility journey / Agile Disruptor',
         ],
         'include_answers_in_download_report' => true,
         'report_recipients' => [
@@ -167,10 +167,10 @@ return [
                     'type' => 'hidden',
                     'value' => 'IDC GMS',
                 ],
-                'tactic_wbs' => [
-                    'type' => 'hidden',
-                    'value' => 'CRM-XU21-GEB-VEAFC2B',
-                ],
+                // 'tactic_wbs' => [
+                //     'type' => 'hidden',
+                //     'value' => 'CRM-XU21-GEB-VEAFC2B',
+                // ],
                 'campaign_manager' => [
                     'type' => 'hidden',
                     'value' => 'Silvia Santos',
@@ -184,6 +184,11 @@ return [
                 ],
                 'comments' => [
                     'type' => 'all_questions_and_answers',
+                ],
+                'tactic_wbs' => [
+                    'type' => 'mapping',
+                    'key' => 'tactic',
+                    'checkforcode' => 'baseline_15.overall.msights',
                 ],
                 'offer_code' => [
                     'type' => 'result',
@@ -267,46 +272,52 @@ return [
         ],
         'msights' => [
             'africa' => [
-                'stage1' => 'OD-00150493',
-                'stage2' => 'OD-00150490',
-                'stage3' => 'OD-00150491',
-                'stage4' => 'OD-00150489',
-                'stage5' => 'OD-00150492'
+                'stage1' => 'OD-00150491',
+                'stage2' => 'OD-00150493',
+                'stage3' => 'OD-00150492',
+                'stage4' => 'OD-00150490',
+                'stage5' => 'OD-00150489',
+                'tactic' => 'CRM-XU21-GEB-VEAFC2B',
             ],
             'menanorth' => [
-                'stage1' => 'OD-00150500',
+                'stage1' => 'OD-00150501',
                 'stage2' => 'OD-00150503',
-                'stage3' => 'OD-00150501',
-                'stage4' => 'OD-00150502',
-                'stage5' => 'OD-00150499'
+                'stage3' => 'OD-00150502',
+                'stage4' => 'OD-00150500',
+                'stage5' => 'OD-00150499',
+                'tactic' => 'CRM-XU21-GEB-VEMNC2B',
             ],
             'menasouth' => [
-                'stage1' => 'OD-00150497',
-                'stage2' => 'OD-00150496',
-                'stage3' => 'OD-00150494',
-                'stage4' => 'OD-00150498',
-                'stage5' => 'OD-00150495'
+                'stage1' => 'OD-00150496',
+                'stage2' => 'OD-00150498',
+                'stage3' => 'OD-00150497',
+                'stage4' => 'OD-00150495',
+                'stage5' => 'OD-00150494',
+                'tactic' => 'CRM-XU21-GEB-VEMSC2B',
             ],
             'portugal' => [
-                'stage1' => 'OD-00150512',
-                'stage2' => 'OD-00150509',
-                'stage3' => 'OD-00150511',
+                'stage1' => 'OD-00150511',
+                'stage2' => 'OD-00150513',
+                'stage3' => 'OD-00150512',
                 'stage4' => 'OD-00150510',
-                'stage5' => 'OD-00150513'
+                'stage5' => 'OD-00150509',
+                'tactic' => 'CRM-XU21-GEB-VEPTC2B',
             ],
             'spain' => [
-                'stage1' => 'OD-00150505',
+                'stage1' => 'OD-00150506',
                 'stage2' => 'OD-00150508',
-                'stage3' => 'OD-00150504',
-                'stage4' => 'OD-00150507',
-                'stage5' => 'OD-00150506'
+                'stage3' => 'OD-00150507',
+                'stage4' => 'OD-00150505',
+                'stage5' => 'OD-00150504',
+                'tactic' => 'CRM-XU21-GEB-VEESC2B',
             ],
             'greece' => [
                 'stage1' => 'OD-00150623',
-                'stage2' => 'OD-00150624',
-                'stage3' => 'OD-00150622',
-                'stage4' => 'OD-00150621',
-                'stage5' => 'OD-00150625'
+                'stage2' => 'OD-00150621',
+                'stage3' => 'OD-00150625',
+                'stage4' => 'OD-00150622',
+                'stage5' => 'OD-00150624',
+                'tactic' => 'CRM-XU21-GEB-VEGRC2B',
             ]
         ],
         '' => [
