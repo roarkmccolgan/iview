@@ -146,7 +146,7 @@ return array(
                              Em última análise, pode tornar-se muito melhor a reagir às mudanças externas e a garantir que evolui e melhora enquanto empresa. 
                         </p>
                         <p class="mb-24">
-                            Para ajudar nesse processo, a IDC criou um conjunto de recomendações, com base nas fases em que se encontra a nível dos diferentes elementos de agilidade. Tendo em conta as suas respostas, a IDC coloca a sua empresa na fase <span class="font-bold text-sap-blue">Fase :stage</span> fase no seu percurso geral de agilidade.<br/> A IDC designa esta fase como <span class="font-bold text-sap-blue">:name</span>.
+                            Para ajudar nesse processo, a IDC criou um conjunto de recomendações, com base nas fases em que se encontra a nível dos diferentes elementos de agilidade. Tendo em conta as suas respostas, a IDC coloca a sua empresa na <span class="font-bold text-sap-blue">:stage</span> no seu percurso geral de agilidade.<br/> A IDC designa esta fase como <span class="font-bold text-sap-blue">:name</span>.
                         </p>
                         <p class="font-bold text-blackblack mb-2">
                             Para saber mais sobre a SAP Portugal, clique aqui:

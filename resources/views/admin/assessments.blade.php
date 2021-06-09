@@ -36,6 +36,7 @@
 									<th>Company</th>
 									<th>Country</th>
 									<th>Email</th>
+									<th>Lang</th>
 									@if($tool->extra_fields)
 										@foreach($tool->extra_fields as $fieldKey=>$field)
 										<th>{{ucfirst($field->name)}}</th>
@@ -56,6 +57,7 @@
 									<td>{{$assessment->company}}</td>
 									<td>{{$assessment->country}}</td>
 									<td><a href="mailto:{{$assessment->email}}">{{$assessment->email}}</a></td>
+									<td>{{$assessment->lang}}</td>
 									@if($tool->extra_fields)
 										@foreach($tool->extra_fields as $fieldKey=>$field)
 										<?php
