@@ -14,12 +14,29 @@ return array(
     'title'=>'IDC\'s Cloud Strategy Assessment',
     'sub-title'=>'Measuring the success of your cloud and data Strategy',
     'landing'=>'
-        <p class="mb-2">
-            IDC, a global leading provider of technology market research, has developed the Cloud Strategy Assessment, sponsored by Hitachi Vantara, to help Enterprises focused on Mastering Multicloud and monetising data, to assess their current Cloud Strategy, to better understand the steps they can take to increase time to value, and maximising the returns on data.
+        <p class="mb-2 text-lg font-bold mb-4">
+            A well-thought-out cloud strategy lays the foundation for becoming a successful data-driven, digital enterprise.
         </p>
-        <p class="mb-4">
-            This self-assessment tool is backed up by independent end-user research and IDC\'s in depth understanding of Cloud and Technology markets. Upon completion of a short survey (under 10 minutes) you will receive a custom report that measures the readiness of your organization\'s Cloud Strategy and provides you with essential and tailored guidance to help you advance in your Cloud journey, and monetize your data in future.
-        </p>',
+        <div class="mb-4">
+            <p class="font-bold mb-4">Take this IDC assessment to find out where you’re at and what you need to do:</p>
+            <ul class="list-disc ml-8">
+                <li class="mb-2">Measure your organization’s maturity level across 3 key dimensions including cloud migration, application modernization, cloud and data modernization.</li>
+                <li class="mb-2">Receive a customized report with your strengths, areas for development and actionable recommendations that will help you advance to the next level in your cloud journey.</li>
+            </ul>
+        </div>',
+    'landing2'=>'
+        <p class="mb-2 text-lg font-bold mb-4">
+            Take the assessment and get free, personalized and independent advice from IDC.
+        </p>
+        <div class="mb-4">
+            <p class="font-bold mb-4">Your Personalized IDC Assessment Report:</p>
+            <ul class="list-disc ml-8">
+                <li class="mb-2">14 pages of IDC insight and data</li>
+                <li class="mb-2">Challenges that you and your peers are likely to encounter</li>
+                <li class="mb-2">Recommendations on how you can take your organization forward</li>
+                <li class="mb-2">Plus further learning resources</li>
+            </ul>
+        </div>',
     'startbut'=>'Start Assessment',
     
     'send'=>'We can send you the full results directly to your mailbox',

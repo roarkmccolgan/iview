@@ -687,7 +687,7 @@ return array(
     'processes-2' => '
         <div class="pb w-5/6 mx-auto">
             <div class="h-1 overflow-hidden">
-                <h1 class="text-white">Processes</h1>
+                <h1 class="text-white">Processos</h1>
             </div>
             <div class="flex items-start mb-4">
                 <img class="w-24 mr-4" src=":url" alt="">

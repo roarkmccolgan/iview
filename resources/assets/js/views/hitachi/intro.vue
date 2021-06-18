@@ -1,7 +1,8 @@
 <template>
 	<div class="flex-grow">
-		<div class="container mx-auto flex flex-wrap items-center mb-4 py-12 sm:py-20 bg-no-repeat bg-cover bg-right-bottom" :style="`background-image: url('/images/tools/${assessment.tool.id}/cloud-ser-hero-banner-desk.jpg');`">
-			<div class="flex-1 text-white p-8">
+		<div class="relative container mx-auto flex flex-wrap items-center mb-4 py-12 sm:py-20 bg-no-repeat bg-cover bg-right-bottom" :style="`background-image: url('/images/tools/${assessment.tool.id}/cloud-ser-hero-banner-desk.png');`">
+			<div class="absolute pin opacity-50 z-10 bg-black sm:hidden"></div>
+			<div class="relative flex-1 text-white p-8 z-20">
 				<h1 class="font-bold leading-tight">{{ $t('hitachi.title') }}</h1>
 				<h3 class="font-light leading-tight">{{ $t('hitachi.sub-title') }}</h3>
 				<router-link class="inline-block font-bold uppercase text-center border border-white text-white mt-8 py-2 px-4 no-underline" :to="'/questions/1'">{{ $t('hitachi.startbut') }} <font-awesome-icon class="ml-2" :icon="icons.faArrowRight" /></router-link>
@@ -20,19 +21,32 @@
 			<div class="flex flex-wrap justify-center">
 				<div class="w-full sm:w-1/3">
 					<div class="p-4 sm:p-8 sm:flex sm:flex-col sm:h-full sm:mr-4">
-						<img :src="`/images/tools/${assessment.tool.id}/er-overview.png`" alt="">
+						<img :src="`/images/tools/${assessment.tool.id}/sections.svg`" alt="">
 					</div>
 				</div>
 				<div class="w-full sm:w-2/3 flex items-center justify-center">
-					<div class="px-8">
+					<div class="p-8">
 						<div class="mb-8" v-html="$t('hitachi.landing')"></div>
-						<router-link class="block font-bold w-full uppercase ml-auto text-center bg-hitachi-red border border-hitachi-red text-white hover:text-hitachi-red hover:bg-white py-4 px-6 no-underline sm:w-1/3" :to="'/questions/1'">{{ $t('hitachi.startbut') }} <font-awesome-icon class="ml-2" :icon="icons.faArrowRight" /></router-link>						
+						<router-link class="block font-bold w-full uppercase text-center bg-hitachi-red border border-hitachi-red text-white hover:text-hitachi-red hover:bg-white py-4 px-6 no-underline sm:w-1/3" :to="'/questions/1'">{{ $t('hitachi.startbut') }} <font-awesome-icon class="ml-2" :icon="icons.faArrowRight" /></router-link>						
 						</div>						
+				</div>
+			</div>
+			<div class="flex flex-wrap justify-center bg-grey-lighter">
+				<div class="w-full sm:w-1/2 flex">
+					<div class="p-8">
+						<div class="mb-8" v-html="$t('hitachi.landing2')"></div>
+						<router-link class="block font-bold w-full uppercase text-center bg-hitachi-red border border-hitachi-red text-white hover:text-hitachi-red hover:bg-white py-4 px-6 no-underline sm:w-1/2" :to="'/questions/1'">{{ $t('hitachi.startbut') }} <font-awesome-icon class="ml-2" :icon="icons.faArrowRight" /></router-link>						
+					</div>						
+				</div>
+				<div class="w-full sm:w-1/2">
+					<div class="p-4 sm:p-8 sm:flex sm:flex-col sm:h-full sm:mr-4">
+						<img :src="`/images/tools/${assessment.tool.id}/report_sample.png`" alt="">
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+</div>
 		
 </template>
 <script>
